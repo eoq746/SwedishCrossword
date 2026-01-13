@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svenskt Korsord</title>
+    <title>Svenskt Korsord - Dagligt Korsord</title>
     <style>
         :root {
             --cell-size: 36px;
@@ -72,6 +72,12 @@
             margin: 0 10px;
         }
 
+        .generation-date {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
         /* Main layout: Grid on left, Clues on right */
         .main-layout {
             display: flex;
@@ -106,7 +112,6 @@
             border: 3px solid var(--border-color);
             background: var(--border-color);
             gap: 1px;
-            /* Remove flex properties - let it size naturally */
         }
 
         .grid-row {
@@ -235,7 +240,7 @@
             margin-bottom: 10px;
         }
 
-        /* Clues section - matches grid height with scrollable content */
+        /* Clues section */
         .clues-section {
             background: white;
             border-radius: 12px;
@@ -246,7 +251,6 @@
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            /* Use JavaScript to set max-height based on grid section */
             max-height: var(--clues-max-height, 600px);
         }
 
@@ -416,7 +420,7 @@
                 padding: 10px;
             }
             
-            .controls, .timer, .puzzle-info {
+            .controls, .timer, .puzzle-info, .generation-date {
                 display: none;
             }
             
@@ -450,16 +454,17 @@
                 <span id="info-words"></span>
                 <span id="info-fill"></span>
             </div>
+            <div class="generation-date" id="generation-date"></div>
         </header>
 
         <div id="loading" class="loading">
             <div class="loading-spinner"></div>
-            <p>Laddar korsord...</p>
+            <p>Laddar dagens korsord...</p>
         </div>
 
         <div class="main-layout" id="main-layout" style="display: none;">
             <div class="grid-section">
-                <h2>Korsord</h2>
+                <h2>Dagens Korsord</h2>
                 <div class="timer" id="timer">00:00</div>
                 <div class="crossword-grid" id="crossword-grid"></div>
                 <div class="controls">
@@ -492,11 +497,13 @@
     </div>
 
     <script>
+        // Default puzzle data (used if puzzle.json fails to load)
         let puzzleData = {
             width: 11,
             height: 11,
             wordCount: 2,
             fillPercentage: 10.0,
+            createdAt: null,
             cells: [
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
@@ -520,11 +527,17 @@
 
         async function loadPuzzle() {
             try {
+                // Try to load puzzle.json from the same directory
                 const response = await fetch('puzzle.json');
                 if (response.ok) {
                     puzzleData = await response.json();
+                    console.log('Loaded puzzle from puzzle.json');
+                } else {
+                    console.log('puzzle.json not found, using default puzzle');
                 }
-            } catch (e) { console.log('Using default puzzle'); }
+            } catch (e) { 
+                console.log('Error loading puzzle.json, using default puzzle:', e);
+            }
             init();
         }
 
@@ -532,6 +545,7 @@
             document.getElementById('loading').style.display = 'none';
             document.getElementById('main-layout').style.display = 'flex';
             
+            // Display puzzle info
             if (puzzleData.wordCount) {
                 document.getElementById('puzzle-info').style.display = 'inline-block';
                 document.getElementById('info-size').textContent = `?? ${puzzleData.width}×${puzzleData.height}`;
@@ -539,9 +553,18 @@
                 document.getElementById('info-fill').textContent = `?? ${puzzleData.fillPercentage}%`;
             }
             
+            // Display generation date if available
+            if (puzzleData.createdAt) {
+                document.getElementById('generation-date').textContent = `??? Genererat: ${puzzleData.createdAt}`;
+            } else {
+                // Show today's date as fallback
+                const today = new Date().toLocaleDateString('sv-SE');
+                document.getElementById('generation-date').textContent = `??? ${today}`;
+            }
+            
             renderGrid();
             renderClues();
-            syncCluesHeight(); // Sync heights after rendering
+            syncCluesHeight();
             startTimer();
             updateStats();
             
@@ -550,7 +573,6 @@
         }
 
         function syncCluesHeight() {
-            // Match clues section height to grid section height
             const gridSection = document.querySelector('.grid-section');
             const cluesSection = document.querySelector('.clues-section');
             if (gridSection && cluesSection) {

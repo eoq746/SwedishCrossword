@@ -9,6 +9,14 @@ internal class Program
     static async Task Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+        // Check for command-line arguments for headless operation
+        if (args.Length > 0 && args[0] == "--generate-for-web")
+        {
+            await GenerateForWebHeadless();
+            return;
+        }
+
         Console.WriteLine("🇸🇪 Svenskt Korsord Generator");
         Console.WriteLine("============================");
 
@@ -95,6 +103,111 @@ internal class Program
             Console.WriteLine($"❌ Kritiskt fel: {ex.Message}");
             Console.WriteLine("Programmet avslutas.");
         }
+    }
+
+    /// <summary>
+    /// Generates a crossword for web deployment without user interaction.
+    /// Used by GitHub Actions for automated daily generation.
+    /// </summary>
+    private static async Task GenerateForWebHeadless()
+    {
+        Console.WriteLine("🌐 Generating crossword for web (headless mode)...");
+        Console.WriteLine($"📅 Generation time: {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC");
+        Console.WriteLine();
+
+        try
+        {
+            // Initialize services
+            var dictionary = new SwedishDictionary();
+            var validator = new GridValidator();
+            var generator = new CrosswordGenerator(dictionary, validator);
+            var clueGenerator = new ClueGenerator();
+            var printService = new PrintService(clueGenerator);
+
+            Console.WriteLine($"📚 Dictionary loaded: {dictionary.WordCount:N0} words");
+
+            if (dictionary.WordCount == 0)
+            {
+                Console.WriteLine("⚠️  No words in dictionary, generation may fail");
+            }
+
+            // Generate a medium-sized puzzle for web display
+            var options = CrosswordGenerationOptions.Medium;
+            Console.WriteLine($"🎯 Generating {options.Width}x{options.Height} puzzle...");
+
+            var startTime = DateTime.Now;
+            var puzzle = await generator.GenerateAsync(options);
+            var duration = DateTime.Now - startTime;
+
+            Console.WriteLine();
+            Console.WriteLine("✅ Crossword generated successfully!");
+            Console.WriteLine($"⏱️  Time: {duration.TotalSeconds:F1} seconds");
+            Console.WriteLine($"📊 Fill percentage: {puzzle.Statistics.FillPercentage:F1}%");
+            Console.WriteLine($"📝 Words: {puzzle.Statistics.WordCount}");
+            Console.WriteLine();
+
+            // Determine output path - try multiple locations
+            var wwwrootPath = FindWwwrootPath();
+            Console.WriteLine($"📁 Output directory: {wwwrootPath}");
+
+            if (!Directory.Exists(wwwrootPath))
+            {
+                Directory.CreateDirectory(wwwrootPath);
+                Console.WriteLine($"📁 Created output directory");
+            }
+
+            // Save JSON data
+            var jsonPath = Path.Combine(wwwrootPath, "puzzle.json");
+            await printService.SaveAsJsonAsync(puzzle, jsonPath);
+            Console.WriteLine($"💾 JSON saved: {jsonPath}");
+
+            // Verify the file was created
+            if (File.Exists(jsonPath))
+            {
+                var fileInfo = new FileInfo(jsonPath);
+                Console.WriteLine($"✅ File verified: {fileInfo.Length} bytes");
+            }
+            else
+            {
+                Console.WriteLine("❌ Error: JSON file was not created!");
+                Environment.Exit(1);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("🎉 Web generation complete!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Error during generation: {ex.Message}");
+            Console.WriteLine(ex.StackTrace);
+            Environment.Exit(1);
+        }
+    }
+
+    /// <summary>
+    /// Finds the wwwroot path, checking multiple possible locations
+    /// </summary>
+    private static string FindWwwrootPath()
+    {
+        // Try relative to current directory first (when running from project root)
+        var paths = new[]
+        {
+            "SwedishCrossword/wwwroot",
+            "wwwroot",
+            Path.Combine(AppContext.BaseDirectory, "wwwroot"),
+            Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "wwwroot"),
+        };
+
+        foreach (var path in paths)
+        {
+            if (Directory.Exists(path))
+            {
+                return Path.GetFullPath(path);
+            }
+        }
+
+        // Default to creating it in current directory
+        return Path.GetFullPath("SwedishCrossword/wwwroot");
     }
 
     private static async Task GeneratePuzzle(
