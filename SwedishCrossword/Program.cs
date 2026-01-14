@@ -17,7 +17,7 @@ internal class Program
             return;
         }
 
-        Console.WriteLine("🇸🇪 Svenskt Korsord Generator");
+        Console.WriteLine("Svenskt Korsord Generator");
         Console.WriteLine("============================");
 
         try
@@ -88,7 +88,7 @@ internal class Program
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"❌ Fel: {ex.Message}");
+                    Console.WriteLine($"Fel: {ex.Message}");
                     Console.WriteLine("Försöker igen...");
                 }
 
@@ -100,7 +100,7 @@ internal class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"❌ Kritiskt fel: {ex.Message}");
+            Console.WriteLine($"Kritiskt fel: {ex.Message}");
             Console.WriteLine("Programmet avslutas.");
         }
     }
@@ -111,8 +111,8 @@ internal class Program
     /// </summary>
     private static async Task GenerateForWebHeadless()
     {
-        Console.WriteLine("🌐 Generating crossword for web (headless mode)...");
-        Console.WriteLine($"📅 Generation time: {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC");
+        Console.WriteLine("Generating crossword for web (headless mode)...");
+        Console.WriteLine($"Generation time: {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC");
         Console.WriteLine();
 
         try
@@ -124,61 +124,61 @@ internal class Program
             var clueGenerator = new ClueGenerator();
             var printService = new PrintService(clueGenerator);
 
-            Console.WriteLine($"📚 Dictionary loaded: {dictionary.WordCount:N0} words");
+            Console.WriteLine($"Dictionary loaded: {dictionary.WordCount:N0} words");
 
             if (dictionary.WordCount == 0)
             {
-                Console.WriteLine("⚠️  No words in dictionary, generation may fail");
+                Console.WriteLine("Warning: No words in dictionary, generation may fail");
             }
 
             // Generate a medium-sized puzzle for web display
             var options = CrosswordGenerationOptions.Medium;
-            Console.WriteLine($"🎯 Generating {options.Width}x{options.Height} puzzle...");
+            Console.WriteLine($"Generating {options.Width}x{options.Height} puzzle...");
 
             var startTime = DateTime.Now;
             var puzzle = await generator.GenerateAsync(options);
             var duration = DateTime.Now - startTime;
 
             Console.WriteLine();
-            Console.WriteLine("✅ Crossword generated successfully!");
-            Console.WriteLine($"⏱️  Time: {duration.TotalSeconds:F1} seconds");
-            Console.WriteLine($"📊 Fill percentage: {puzzle.Statistics.FillPercentage:F1}%");
-            Console.WriteLine($"📝 Words: {puzzle.Statistics.WordCount}");
+            Console.WriteLine("Crossword generated successfully!");
+            Console.WriteLine($"Time: {duration.TotalSeconds:F1} seconds");
+            Console.WriteLine($"Fill percentage: {puzzle.Statistics.FillPercentage:F1}%");
+            Console.WriteLine($"Words: {puzzle.Statistics.WordCount}");
             Console.WriteLine();
 
             // Determine output path - try multiple locations
             var wwwrootPath = FindWwwrootPath();
-            Console.WriteLine($"📁 Output directory: {wwwrootPath}");
+            Console.WriteLine($"Output directory: {wwwrootPath}");
 
             if (!Directory.Exists(wwwrootPath))
             {
                 Directory.CreateDirectory(wwwrootPath);
-                Console.WriteLine($"📁 Created output directory");
+                Console.WriteLine($"Created output directory");
             }
 
             // Save JSON data
             var jsonPath = Path.Combine(wwwrootPath, "puzzle.json");
             await printService.SaveAsJsonAsync(puzzle, jsonPath);
-            Console.WriteLine($"💾 JSON saved: {jsonPath}");
+            Console.WriteLine($"JSON saved: {jsonPath}");
 
             // Verify the file was created
             if (File.Exists(jsonPath))
             {
                 var fileInfo = new FileInfo(jsonPath);
-                Console.WriteLine($"✅ File verified: {fileInfo.Length} bytes");
+                Console.WriteLine($"File verified: {fileInfo.Length} bytes");
             }
             else
             {
-                Console.WriteLine("❌ Error: JSON file was not created!");
+                Console.WriteLine("Error: JSON file was not created!");
                 Environment.Exit(1);
             }
 
             Console.WriteLine();
-            Console.WriteLine("🎉 Web generation complete!");
+            Console.WriteLine("Web generation complete!");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"❌ Error during generation: {ex.Message}");
+            Console.WriteLine($"Error during generation: {ex.Message}");
             Console.WriteLine(ex.StackTrace);
             Environment.Exit(1);
         }
@@ -216,7 +216,7 @@ internal class Program
         CrosswordGenerationOptions options,
         string difficulty)
     {
-        Console.WriteLine($"🎯 Genererar {difficulty.ToLower()} korsord ({options.Width}x{options.Height})...");
+        Console.WriteLine($"Genererar {difficulty.ToLower()} korsord ({options.Width}x{options.Height})...");
         Console.WriteLine("Detta kan ta en stund...");
         Console.WriteLine();
 
@@ -224,11 +224,11 @@ internal class Program
         var puzzle = await generator.GenerateAsync(options);
         var duration = DateTime.Now - startTime;
 
-        Console.WriteLine("✅ Korsord genererat!");
-        Console.WriteLine($"⏱️  Tid: {duration.TotalSeconds:F1} sekunder");
-        Console.WriteLine($"🔄 Försök: {puzzle.GenerationAttempts:N0}");
-        Console.WriteLine($"📊 Fyllnadsgrad: {puzzle.Statistics.FillPercentage:F1}%");
-        Console.WriteLine($"📝 Ord: {puzzle.Statistics.WordCount}");
+        Console.WriteLine("Korsord genererat!");
+        Console.WriteLine($"Tid: {duration.TotalSeconds:F1} sekunder");
+        Console.WriteLine($"Forsok: {puzzle.GenerationAttempts:N0}");
+        Console.WriteLine($"Fyllnadsgrad: {puzzle.Statistics.FillPercentage:F1}%");
+        Console.WriteLine($"Ord: {puzzle.Statistics.WordCount}");
         Console.WriteLine();
 
         // Print the puzzle
@@ -242,7 +242,7 @@ internal class Program
         {
             var fileName = $"korsord-{difficulty.ToLower()}-{DateTime.Now:yyyyMMdd-HHmmss}.txt";
             await printService.SaveToFileAsync(puzzle, fileName, printOptions);
-            Console.WriteLine($"💾 Sparat som: {fileName}");
+            Console.WriteLine($"Sparat som: {fileName}");
         }
     }
 
@@ -251,14 +251,14 @@ internal class Program
         PrintService printService,
         CrosswordGenerationOptions options)
     {
-        Console.WriteLine("🌐 Genererar korsord för webben...");
+        Console.WriteLine("Genererar korsord for webben...");
         Console.WriteLine();
 
         var puzzle = await generator.GenerateAsync(options);
 
-        Console.WriteLine("✅ Korsord genererat!");
-        Console.WriteLine($"📊 Fyllnadsgrad: {puzzle.Statistics.FillPercentage:F1}%");
-        Console.WriteLine($"📝 Ord: {puzzle.Statistics.WordCount}");
+        Console.WriteLine("Korsord genererat!");
+        Console.WriteLine($"Fyllnadsgrad: {puzzle.Statistics.FillPercentage:F1}%");
+        Console.WriteLine($"Ord: {puzzle.Statistics.WordCount}");
         Console.WriteLine();
 
         // Ensure wwwroot directory exists
@@ -277,13 +277,13 @@ internal class Program
         // Save JSON data
         var jsonPath = Path.Combine(wwwrootPath, "puzzle.json");
         await printService.SaveAsJsonAsync(puzzle, jsonPath);
-        Console.WriteLine($"💾 JSON sparad: {jsonPath}");
+        Console.WriteLine($"JSON sparad: {jsonPath}");
 
         // Also save HTML with embedded data
         var htmlPath = Path.Combine(wwwrootPath, "puzzle.html");
         var html = GenerateStandaloneHtml(puzzle, printService);
         await File.WriteAllTextAsync(htmlPath, html, new UTF8Encoding(false));
-        Console.WriteLine($"🌐 HTML sparad: {htmlPath}");
+        Console.WriteLine($"HTML sparad: {htmlPath}");
 
         Console.WriteLine();
         Console.WriteLine("För att spela korsordet, öppna filen i en webbläsare:");
@@ -369,39 +369,94 @@ internal class Program
         .clue-item:hover { background: #f3f4f6; }
         .clue-item.active { background: var(--word-highlight); border-left: 3px solid var(--accent-color); }
         .clue-number { font-weight: bold; color: var(--accent-color); margin-right: 6px; }
-        @media (max-width: 1100px) { .main-layout { flex-direction: column; align-items: center; } .clues-section { min-width: auto; max-width: 100%; width: 100%; max-height: none !important; } }
+        .leaderboard-section { background: white; border-radius: 12px; padding: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); min-width: 280px; max-width: 320px; display: flex; flex-direction: column; overflow: hidden; }
+        .leaderboard-section h2 { color: #333; font-size: 1.1rem; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #f59e0b; flex-shrink: 0; text-align: center; }
+        .leaderboard-list { list-style: none; flex: 1; overflow-y: auto; min-height: 0; }
+        .leaderboard-item { display: flex; align-items: center; padding: 8px 10px; margin-bottom: 4px; border-radius: 6px; background: #f9fafb; font-size: 0.9rem; }
+        .leaderboard-item.current-user { background: #fef3c7; border: 1px solid #f59e0b; }
+        .leaderboard-item:nth-child(1) { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .leaderboard-item:nth-child(2) { background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); }
+        .leaderboard-item:nth-child(3) { background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%); }
+        .leaderboard-rank { font-weight: bold; color: #374151; width: 28px; text-align: center; flex-shrink: 0; }
+        .leaderboard-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0 8px; color: #1f2937; }
+        .leaderboard-time { font-weight: 600; color: var(--accent-color); flex-shrink: 0; }
+        .leaderboard-empty { text-align: center; color: #9ca3af; padding: 20px; font-size: 0.85rem; }
+        .leaderboard-date { text-align: center; font-size: 0.75rem; color: #6b7280; margin-top: 8px; padding-top: 8px; border-top: 1px solid #e5e7eb; }
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: white; border-radius: 12px; padding: 24px; max-width: 400px; width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
+        .modal h3 { color: #1f2937; margin-bottom: 8px; font-size: 1.3rem; }
+        .modal p { color: #6b7280; margin-bottom: 16px; font-size: 0.9rem; }
+        .modal-time { font-size: 2rem; font-weight: bold; color: var(--accent-color); margin-bottom: 16px; }
+        .modal input[type="text"] { width: 100%; padding: 10px 14px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem; margin-bottom: 16px; outline: none; }
+        .modal input[type="text"]:focus { border-color: var(--accent-color); }
+        .modal-buttons { display: flex; gap: 10px; justify-content: center; }
+        .modal-buttons .btn { padding: 10px 20px; font-size: 0.9rem; }
+        @media (max-width: 1100px) { .main-layout { flex-direction: column; align-items: center; } .clues-section, .leaderboard-section { min-width: auto; max-width: 100%; width: 100%; max-height: none !important; } }
         @media (max-width: 600px) { :root { --cell-size: 28px; } .clues-columns { flex-direction: column; } }
     </style>
 </head>
 <body>
     <div class="container">
-        <header><h1>🇸🇪 Svenskt Korsord</h1><p>Klicka på en ruta och skriv • Mellanslag byter riktning</p></header>
+        <header><h1>Svenskt Korsord</h1><p>Klicka pa en ruta och skriv - Mellanslag byter riktning</p></header>
         <div class="main-layout">
             <div class="grid-section">
                 <h2>Korsord</h2>
                 <div class="timer" id="timer">00:00</div>
                 <div class="crossword-grid" id="crossword-grid"></div>
                 <div class="controls">
-                    <button class="btn btn-primary" onclick="checkAnswers()">✓ Kontrollera</button>
-                    <button class="btn btn-secondary" onclick="clearGrid()">🗑️ Rensa</button>
-                    <button class="btn btn-success" onclick="showSolution()">👁️ Visa lösning</button>
+                    <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
+                    <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
+                    <button class="btn btn-success" onclick="showSolution()">Visa losning</button>
                 </div>
                 <div class="stats" id="stats"></div>
             </div>
             <div class="clues-section">
-                <h2>Ledtrådar</h2>
+                <h2>Ledtradar</h2>
                 <div class="clues-columns">
-                    <div class="clue-column"><div class="clue-direction"><h3>Vågrätt →</h3><ul class="clue-list" id="across-clues"></ul></div></div>
-                    <div class="clue-column"><div class="clue-direction"><h3>Lodrätt ↓</h3><ul class="clue-list" id="down-clues"></ul></div></div>
+                    <div class="clue-column"><div class="clue-direction"><h3>Vagratt</h3><ul class="clue-list" id="across-clues"></ul></div></div>
+                    <div class="clue-column"><div class="clue-direction"><h3>Lodratt</h3><ul class="clue-list" id="down-clues"></ul></div></div>
                 </div>
+            </div>
+            <div class="leaderboard-section">
+                <h2>Topplista</h2>
+                <ul class="leaderboard-list" id="leaderboard-list"><li class="leaderboard-empty">Ingen har klarat korsordet an...</li></ul>
+                <div class="leaderboard-date" id="leaderboard-date"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="username-modal">
+        <div class="modal">
+            <h3>Grattis!</h3>
+            <p>Du loste korsordet!</p>
+            <div class="modal-time" id="modal-time">00:00</div>
+            <p>Ange ditt namn for topplistan:</p>
+            <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="submitScore()">Spara</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Hoppa over</button>
             </div>
         </div>
     </div>
     <script>
         const puzzleData = {};
-        let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across';
-        function init() { renderGrid(); renderClues(); syncCluesHeight(); startTimer(); updateStats(); window.addEventListener('resize', syncCluesHeight); }
-        function syncCluesHeight() { const g = document.querySelector('.grid-section'), c = document.querySelector('.clues-section'); if (g && c) c.style.maxHeight = g.offsetHeight + 'px'; }
+        let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across', currentPuzzleDate = null, hasSubmittedScore = false;
+        function getLeaderboardKey() { return `crossword-leaderboard-${currentPuzzleDate || 'default'}`; }
+        function loadLeaderboard() { try { const d = localStorage.getItem(getLeaderboardKey()); return d ? JSON.parse(d) : []; } catch(e) { return []; } }
+        function saveLeaderboard(lb) { try { localStorage.setItem(getLeaderboardKey(), JSON.stringify(lb)); } catch(e) {} }
+        function addToLeaderboard(name, time) { const lb = loadLeaderboard(); lb.push({name, time, timestamp: Date.now()}); lb.sort((a,b) => a.time - b.time); const t = lb.slice(0,10); saveLeaderboard(t); return t; }
+        function escapeHtml(t) { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; }
+        function renderLeaderboard() {
+            const list = document.getElementById('leaderboard-list'), lb = loadLeaderboard(), dateEl = document.getElementById('leaderboard-date');
+            if (currentPuzzleDate) dateEl.textContent = `Korsord: ${currentPuzzleDate}`; else dateEl.textContent = '';
+            if (lb.length === 0) { list.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet an...</li>'; return; }
+            list.innerHTML = lb.map((e,i) => { const isCurrent = e.timestamp && (Date.now() - e.timestamp < 5000); return `<li class="leaderboard-item ${isCurrent ? 'current-user' : ''}"><span class="leaderboard-rank">${i+1}.</span><span class="leaderboard-name">${escapeHtml(e.name)}</span><span class="leaderboard-time">${formatTime(e.time)}</span></li>`; }).join('');
+        }
+        function showUsernameModal() { if (hasSubmittedScore) return; document.getElementById('modal-time').textContent = formatTime(seconds); document.getElementById('username-modal').classList.add('active'); const saved = localStorage.getItem('crossword-username') || ''; document.getElementById('username-input').value = saved; document.getElementById('username-input').focus(); }
+        function closeModal() { document.getElementById('username-modal').classList.remove('active'); }
+        function submitScore() { let name = document.getElementById('username-input').value.trim(); if (!name) name = 'Anonym'; localStorage.setItem('crossword-username', name); addToLeaderboard(name, seconds); hasSubmittedScore = true; closeModal(); renderLeaderboard(); }
+        function init() { currentPuzzleDate = puzzleData.createdAt ? puzzleData.createdAt.split(' ')[0] : new Date().toISOString().split('T')[0]; renderGrid(); renderClues(); renderLeaderboard(); syncCluesHeight(); startTimer(); updateStats(); window.addEventListener('resize', syncCluesHeight); document.getElementById('username-input')?.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); submitScore(); } }); }
+        function syncCluesHeight() { const g = document.querySelector('.grid-section'), c = document.querySelector('.clues-section'), l = document.querySelector('.leaderboard-section'); if (g) { const h = g.offsetHeight + 'px'; if (c) c.style.maxHeight = h; if (l) l.style.maxHeight = h; } }
         function renderGrid() {
             const grid = document.getElementById('crossword-grid'); grid.innerHTML = '';
             for (let row = 0; row < puzzleData.height; row++) {
@@ -452,12 +507,12 @@ internal class Program
         function checkAnswers() {
             const inputs = document.querySelectorAll('.cell:not(.blocked) input'); let correct = 0, total = inputs.length, filled = 0;
             inputs.forEach(input => { const cell = input.parentElement; cell.classList.remove('correct', 'incorrect', 'empty-warning'); const v = input.value.toUpperCase(); if (v) { filled++; if (v === input.dataset.answer) { correct++; cell.classList.add('correct'); } else { cell.classList.add('incorrect'); } } else { cell.classList.add('empty-warning'); } });
-            if (filled === total && correct === total) { puzzleSolved = true; stopTimer(); inputs.forEach(i => i.parentElement.classList.remove('empty-warning')); setTimeout(() => alert(`🎉 Grattis! Du löste korsordet på ${formatTime(seconds)}!`), 100); }
-            else if (filled < total) { alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`); }
-            else { alert(`${filled - correct} bokstäver är felaktiga. Försök igen!`); }
+            if (filled === total && correct === total) { puzzleSolved = true; stopTimer(); inputs.forEach(i => i.parentElement.classList.remove('empty-warning')); setTimeout(() => showUsernameModal(), 100); }
+            else if (filled < total) { alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda ar korrekta.`); }
+            else { alert(`${filled - correct} bokstaver ar felaktiga. Forsok igen!`); }
         }
         function clearGrid() { if (confirm('Rensa alla svar?')) { document.querySelectorAll('.cell:not(.blocked) input').forEach(i => { i.value = ''; i.parentElement.classList.remove('correct', 'incorrect', 'empty-warning'); }); updateStats(); } }
-        function showSolution() { if (confirm('Visa lösningen?')) { document.querySelectorAll('.cell:not(.blocked) input').forEach(i => { i.value = i.dataset.answer; i.parentElement.classList.remove('empty-warning', 'incorrect'); i.parentElement.classList.add('correct'); }); puzzleSolved = true; stopTimer(); updateStats(); } }
+        function showSolution() { if (confirm('Visa losningen?')) { document.querySelectorAll('.cell:not(.blocked) input').forEach(i => { i.value = i.dataset.answer; i.parentElement.classList.remove('empty-warning', 'incorrect'); i.parentElement.classList.add('correct'); }); puzzleSolved = true; stopTimer(); updateStats(); hasSubmittedScore = true; } }
         function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); } }, 1000); }
         function stopTimer() { clearInterval(timerInterval); }
         function formatTime(s) { return `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`; }
@@ -473,60 +528,60 @@ internal class Program
     {
         if (dictionary.WordCount == 0)
         {
-            Console.WriteLine("📊 Ordlistestatistik");
+            Console.WriteLine("Ordlistestatistik");
             Console.WriteLine("==================");
             Console.WriteLine();
-            Console.WriteLine("❌ Ordlistan är tom!");
+            Console.WriteLine("Ordlistan ar tom!");
             Console.WriteLine();
-            Console.WriteLine("För att ladda ord, välj alternativ 5 'Importera ord från Lexin (ISOF)'");
-            Console.WriteLine($"Förväntad sökväg: {LexinWordImporter.GetJsonFilePath()}");
+            Console.WriteLine("For att ladda ord, valj alternativ 5 'Importera ord fran Lexin (ISOF)'");
+            Console.WriteLine($"Forvantad sokvag: {LexinWordImporter.GetJsonFilePath()}");
             return;
         }
         
         var stats = dictionary.GetStatistics();
         
-        Console.WriteLine("📊 Ordlistestatistik");
+        Console.WriteLine("Ordlistestatistik");
         Console.WriteLine("==================");
         Console.WriteLine($"Totalt antal ord: {stats.TotalWords:N0}");
         Console.WriteLine($"Kategorier: {stats.Categories.Count}");
-        Console.WriteLine($"Genomsnittlig längd: {stats.AverageLength:F1} bokstäver");
-        Console.WriteLine($"Längdspann: {stats.MinLength}-{stats.MaxLength} bokstäver");
-        Console.WriteLine($"Datakälla: {LexinWordImporter.GetJsonFilePath()}");
+        Console.WriteLine($"Genomsnittlig langd: {stats.AverageLength:F1} bokstaver");
+        Console.WriteLine($"Langdspann: {stats.MinLength}-{stats.MaxLength} bokstaver");
+        Console.WriteLine($"Datakalla: {LexinWordImporter.GetJsonFilePath()}");
         Console.WriteLine();
 
-        Console.WriteLine("📈 Fördelning per svårighetsgrad:");
+        Console.WriteLine("Fordelning per svarighetsgrad:");
         foreach (var difficulty in stats.DifficultyDistribution.OrderBy(d => d.Key))
         {
             Console.WriteLine($"  {difficulty.Key}: {difficulty.Value:N0} ord");
         }
         Console.WriteLine();
 
-        Console.WriteLine("🏷️  Största kategorier:");
+        Console.WriteLine("Storsta kategorier:");
         foreach (var category in stats.Categories.OrderByDescending(c => c.Value).Take(10))
         {
             Console.WriteLine($"  {category.Key}: {category.Value:N0} ord");
         }
         Console.WriteLine();
 
-        Console.WriteLine("📏 Fördelning per längd:");
+        Console.WriteLine("Fordelning per langd:");
         foreach (var length in stats.LengthDistribution.OrderBy(l => l.Key))
         {
-            var bar = new string('█', Math.Min(50, length.Value / 50 + 1));
-            Console.WriteLine($"  {length.Key,2} bokstäver: {length.Value,5:N0} ord {bar}");
+            var bar = new string('#', Math.Min(50, length.Value / 50 + 1));
+            Console.WriteLine($"  {length.Key,2} bokstaver: {length.Value,5:N0} ord {bar}");
         }
     }
 
     private static async Task ImportFromLexin()
     {
-        Console.WriteLine("🔄 Lexin Import (ISOF Svenska Ordbok)");
+        Console.WriteLine("Lexin Import (ISOF Svenska Ordbok)");
         Console.WriteLine("=====================================");
         Console.WriteLine();
         Console.WriteLine("Detta kommer att:");
         Console.WriteLine("  1. Ladda ner Lexin XML-filen (28 MB) om den inte finns");
         Console.WriteLine("  2. Parsa XML och extrahera ord med definitioner");
-        Console.WriteLine("  3. Exportera till JSON för snabb laddning");
+        Console.WriteLine("  3. Exportera till JSON for snabb laddning");
         Console.WriteLine();
-        Console.Write("Vill du fortsätta? (j/n): ");
+        Console.Write("Vill du fortsatta? (j/n): ");
 
         if (Console.ReadLine()?.ToLower() != "j")
         {
@@ -546,12 +601,12 @@ internal class Program
             LexinWordImporter.PrintStatistics(words);
             
             Console.WriteLine();
-            Console.WriteLine("✅ Import klar!");
-            Console.WriteLine("   Starta om programmet för att använda de nya orden.");
+            Console.WriteLine("Import klar!");
+            Console.WriteLine("   Starta om programmet for att anvanda de nya orden.");
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"❌ Import misslyckades: {ex.Message}");
+            Console.WriteLine($"Import misslyckades: {ex.Message}");
             
             if (ex.InnerException != null)
             {

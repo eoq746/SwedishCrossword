@@ -83,7 +83,7 @@
             display: flex;
             gap: 20px;
             justify-content: center;
-            align-items: flex-start; /* Align to top, not stretch */
+            align-items: flex-start;
             flex: 1;
             min-height: 0;
             overflow: hidden;
@@ -97,7 +97,6 @@
             flex-shrink: 0;
             display: flex;
             flex-direction: column;
-            /* Grid section sizes to its content */
         }
 
         .grid-section h2 {
@@ -377,6 +376,176 @@
             100% { transform: rotate(360deg); }
         }
 
+        /* Leaderboard section */
+        .leaderboard-section {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            min-width: 280px;
+            max-width: 320px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            max-height: var(--clues-max-height, 600px);
+        }
+
+        .leaderboard-section h2 {
+            color: #333;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #f59e0b;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .leaderboard-list {
+            list-style: none;
+            flex: 1;
+            overflow-y: auto;
+            min-height: 0;
+        }
+
+        .leaderboard-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 10px;
+            margin-bottom: 4px;
+            border-radius: 6px;
+            background: #f9fafb;
+            font-size: 0.9rem;
+        }
+
+        .leaderboard-item.current-user {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+        }
+
+        .leaderboard-item:nth-child(1) {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+
+        .leaderboard-item:nth-child(2) {
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        }
+
+        .leaderboard-item:nth-child(3) {
+            background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+        }
+
+        .leaderboard-rank {
+            font-weight: bold;
+            color: #374151;
+            width: 28px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .leaderboard-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 0 8px;
+            color: #1f2937;
+        }
+
+        .leaderboard-time {
+            font-weight: 600;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .leaderboard-empty {
+            text-align: center;
+            color: #9ca3af;
+            padding: 20px;
+            font-size: 0.85rem;
+        }
+
+        .leaderboard-date {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        /* Modal styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .modal h3 {
+            color: #1f2937;
+            margin-bottom: 8px;
+            font-size: 1.3rem;
+        }
+
+        .modal p {
+            color: #6b7280;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        .modal-time {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 16px;
+        }
+
+        .modal input[type="text"] {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .modal input[type="text"]:focus {
+            border-color: var(--accent-color);
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .modal-buttons .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
         /* Responsive: stack on smaller screens */
         @media (max-width: 1100px) {
             .main-layout {
@@ -384,7 +553,7 @@
                 align-items: center;
             }
             
-            .clues-section {
+            .clues-section, .leaderboard-section {
                 min-width: auto;
                 max-width: 100%;
                 width: 100%;
@@ -409,7 +578,7 @@
                 min-width: auto;
             }
 
-            .clues-section {
+            .clues-section, .leaderboard-section {
                 min-width: auto;
             }
         }
@@ -420,7 +589,7 @@
                 padding: 10px;
             }
             
-            .controls, .timer, .puzzle-info, .generation-date {
+            .controls, .timer, .puzzle-info, .generation-date, .leaderboard-section {
                 display: none;
             }
             
@@ -447,8 +616,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>???? Svenskt Korsord</h1>
-            <p>Klicka på en ruta och skriv bokstäver • Mellanslag byter riktning • Piltangenter navigerar</p>
+            <h1>Svenskt Korsord</h1>
+            <p>Klicka pa en ruta och skriv bokstaver - Mellanslag byter riktning - Piltangenter navigerar</p>
             <div class="puzzle-info" id="puzzle-info" style="display: none;">
                 <span id="info-size"></span>
                 <span id="info-words"></span>
@@ -468,30 +637,53 @@
                 <div class="timer" id="timer">00:00</div>
                 <div class="crossword-grid" id="crossword-grid"></div>
                 <div class="controls">
-                    <button class="btn btn-primary" onclick="checkAnswers()">? Kontrollera</button>
-                    <button class="btn btn-secondary" onclick="clearGrid()">??? Rensa</button>
-                    <button class="btn btn-success" onclick="showSolution()">??? Visa lösning</button>
-                    <button class="btn btn-secondary" onclick="printPuzzle()">??? Skriv ut</button>
+                    <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
+                    <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
+                    <button class="btn btn-success" onclick="showSolution()">Visa losning</button>
+                    <button class="btn btn-secondary" onclick="printPuzzle()">Skriv ut</button>
                 </div>
                 <div class="stats" id="stats"></div>
             </div>
 
             <div class="clues-section">
-                <h2>Ledtrådar</h2>
+                <h2>Ledtradar</h2>
                 <div class="clues-columns">
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Vågrätt ?</h3>
+                            <h3>Vagratt</h3>
                             <ul class="clue-list" id="across-clues"></ul>
                         </div>
                     </div>
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Lodrätt ?</h3>
+                            <h3>Lodratt</h3>
                             <ul class="clue-list" id="down-clues"></ul>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h2>Topplista</h2>
+                <ul class="leaderboard-list" id="leaderboard-list">
+                    <li class="leaderboard-empty">Ingen har klarat korsordet an...</li>
+                </ul>
+                <div class="leaderboard-date" id="leaderboard-date"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Username Modal -->
+    <div class="modal-overlay" id="username-modal">
+        <div class="modal">
+            <h3>Grattis!</h3>
+            <p>Du loste korsordet!</p>
+            <div class="modal-time" id="modal-time">00:00</div>
+            <p>Ange ditt namn for topplistan:</p>
+            <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="submitScore()">Spara</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Hoppa over</button>
             </div>
         </div>
     </div>
@@ -511,19 +703,141 @@
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [{num: 1, letter: 'K'}, {letter: 'A'}, {num: 2, letter: 'L'}, {letter: 'S'}, {letter: 'O'}, {letter: 'N'}, {letter: 'G'}, {letter: 'E'}, {letter: 'R'}, null, null],
-                [null, null, {letter: 'Ö'}, null, null, null, null, null, null, null, null],
+                [null, null, {letter: 'O'}, null, null, null, null, null, null, null, null],
                 [null, null, {letter: 'V'}, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
             ],
             clues: {
-                across: [{ number: 1, clue: "Underkläder för män", answer: "KALSONGER" }],
-                down: [{ number: 2, clue: "Träd med gröna blad", answer: "LÖV" }]
+                across: [{ number: 1, clue: "Underklader for man", answer: "KALSONGER" }],
+                down: [{ number: 2, clue: "Trad med grona blad", answer: "LOV" }]
             }
         };
 
         let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across';
+        let currentPuzzleDate = null;
+        let hasSubmittedScore = false;
+
+        // Leaderboard functions
+        function getLeaderboardKey() {
+            return `crossword-leaderboard-${currentPuzzleDate || 'default'}`;
+        }
+
+        function loadLeaderboard() {
+            try {
+                const data = localStorage.getItem(getLeaderboardKey());
+                return data ? JSON.parse(data) : [];
+            } catch (e) {
+                console.error('Error loading leaderboard:', e);
+                return [];
+            }
+        }
+
+        function saveLeaderboard(leaderboard) {
+            try {
+                localStorage.setItem(getLeaderboardKey(), JSON.stringify(leaderboard));
+            } catch (e) {
+                console.error('Error saving leaderboard:', e);
+            }
+        }
+
+        function addToLeaderboard(username, timeSeconds) {
+            const leaderboard = loadLeaderboard();
+            leaderboard.push({
+                name: username,
+                time: timeSeconds,
+                timestamp: Date.now()
+            });
+            // Sort by time (fastest first)
+            leaderboard.sort((a, b) => a.time - b.time);
+            // Keep top 10
+            const trimmed = leaderboard.slice(0, 10);
+            saveLeaderboard(trimmed);
+            return trimmed;
+        }
+
+        function renderLeaderboard() {
+            const list = document.getElementById('leaderboard-list');
+            const leaderboard = loadLeaderboard();
+            const dateEl = document.getElementById('leaderboard-date');
+            
+            if (currentPuzzleDate) {
+                dateEl.textContent = `Korsord: ${currentPuzzleDate}`;
+            } else {
+                dateEl.textContent = '';
+            }
+
+            if (leaderboard.length === 0) {
+                list.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet an...</li>';
+                return;
+            }
+
+            list.innerHTML = leaderboard.map((entry, index) => {
+                const isCurrentUser = entry.timestamp && (Date.now() - entry.timestamp < 5000);
+                return `
+                    <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}">
+                        <span class="leaderboard-rank">${index + 1}.</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
+                        <span class="leaderboard-time">${formatTime(entry.time)}</span>
+                    </li>
+                `;
+            }).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showUsernameModal() {
+            if (hasSubmittedScore) return;
+            document.getElementById('modal-time').textContent = formatTime(seconds);
+            document.getElementById('username-modal').classList.add('active');
+            
+            // Try to get saved username
+            const savedName = localStorage.getItem('crossword-username') || '';
+            document.getElementById('username-input').value = savedName;
+            document.getElementById('username-input').focus();
+            document.getElementById('username-input').select();
+        }
+
+        function closeModal() {
+            document.getElementById('username-modal').classList.remove('active');
+        }
+
+        function submitScore() {
+            const input = document.getElementById('username-input');
+            let username = input.value.trim();
+            
+            if (!username) {
+                username = 'Anonym';
+            }
+            
+            // Save username for next time
+            localStorage.setItem('crossword-username', username);
+            
+            // Add to leaderboard
+            addToLeaderboard(username, seconds);
+            hasSubmittedScore = true;
+            
+            closeModal();
+            renderLeaderboard();
+        }
+
+        // Handle Enter key in username input
+        document.addEventListener('DOMContentLoaded', () => {
+            const usernameInput = document.getElementById('username-input');
+            if (usernameInput) {
+                usernameInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        submitScore();
+                    }
+                });
+            }
+        });
 
         async function loadPuzzle() {
             try {
@@ -545,25 +859,33 @@
             document.getElementById('loading').style.display = 'none';
             document.getElementById('main-layout').style.display = 'flex';
             
+            // Set puzzle date for leaderboard
+            if (puzzleData.createdAt) {
+                currentPuzzleDate = puzzleData.createdAt.split(' ')[0]; // Get just the date part
+            } else {
+                currentPuzzleDate = new Date().toISOString().split('T')[0];
+            }
+            
             // Display puzzle info
             if (puzzleData.wordCount) {
                 document.getElementById('puzzle-info').style.display = 'inline-block';
-                document.getElementById('info-size').textContent = `?? ${puzzleData.width}×${puzzleData.height}`;
-                document.getElementById('info-words').textContent = `?? ${puzzleData.wordCount} ord`;
-                document.getElementById('info-fill').textContent = `?? ${puzzleData.fillPercentage}%`;
+                document.getElementById('info-size').textContent = `${puzzleData.width}x${puzzleData.height}`;
+                document.getElementById('info-words').textContent = `${puzzleData.wordCount} ord`;
+                document.getElementById('info-fill').textContent = `${puzzleData.fillPercentage}%`;
             }
             
             // Display generation date if available
             if (puzzleData.createdAt) {
-                document.getElementById('generation-date').textContent = `??? Genererat: ${puzzleData.createdAt}`;
+                document.getElementById('generation-date').textContent = `Genererat: ${puzzleData.createdAt}`;
             } else {
                 // Show today's date as fallback
                 const today = new Date().toLocaleDateString('sv-SE');
-                document.getElementById('generation-date').textContent = `??? ${today}`;
+                document.getElementById('generation-date').textContent = today;
             }
             
             renderGrid();
             renderClues();
+            renderLeaderboard();
             syncCluesHeight();
             startTimer();
             updateStats();
@@ -575,9 +897,11 @@
         function syncCluesHeight() {
             const gridSection = document.querySelector('.grid-section');
             const cluesSection = document.querySelector('.clues-section');
-            if (gridSection && cluesSection) {
+            const leaderboardSection = document.querySelector('.leaderboard-section');
+            if (gridSection) {
                 const gridHeight = gridSection.offsetHeight;
-                cluesSection.style.maxHeight = gridHeight + 'px';
+                if (cluesSection) cluesSection.style.maxHeight = gridHeight + 'px';
+                if (leaderboardSection) leaderboardSection.style.maxHeight = gridHeight + 'px';
             }
         }
 
@@ -740,11 +1064,12 @@
             if (filled === total && correct === total) {
                 puzzleSolved = true; stopTimer();
                 inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
-                setTimeout(() => alert(`?? Grattis! Du löste korsordet på ${formatTime(seconds)}!`), 100);
+                // Show username modal instead of alert
+                setTimeout(() => showUsernameModal(), 100);
             } else if (filled < total) {
-                alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`);
+                alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda ar korrekta.`);
             } else {
-                alert(`${filled - correct} bokstäver är felaktiga. Försök igen!`);
+                alert(`${filled - correct} bokstaver ar felaktiga. Forsok igen!`);
             }
         }
 
@@ -759,13 +1084,15 @@
         }
 
         function showSolution() {
-            if (confirm('Vill du visa lösningen?')) {
+            if (confirm('Vill du visa losningen?')) {
                 document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
                     input.value = input.dataset.answer;
                     input.parentElement.classList.remove('empty-warning', 'incorrect');
                     input.parentElement.classList.add('correct');
                 });
                 puzzleSolved = true; stopTimer(); updateStats();
+                // Don't show modal when using "show solution" - that's cheating!
+                hasSubmittedScore = true;
             }
         }
 
