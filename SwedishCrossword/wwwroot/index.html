@@ -617,7 +617,7 @@
     <div class="container">
         <header>
             <h1>Svenskt Korsord</h1>
-            <p>Klicka pa en ruta och skriv bokstaver - Mellanslag byter riktning - Piltangenter navigerar</p>
+            <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Piltangenter navigerar</p>
             <div class="puzzle-info" id="puzzle-info" style="display: none;">
                 <span id="info-size"></span>
                 <span id="info-words"></span>
@@ -639,24 +639,24 @@
                 <div class="controls">
                     <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
                     <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
-                    <button class="btn btn-success" onclick="showSolution()">Visa losning</button>
+                    <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
                     <button class="btn btn-secondary" onclick="printPuzzle()">Skriv ut</button>
                 </div>
                 <div class="stats" id="stats"></div>
             </div>
 
             <div class="clues-section">
-                <h2>Ledtradar</h2>
+                <h2>Ledtrådar</h2>
                 <div class="clues-columns">
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Vagratt</h3>
+                            <h3>Vågrätt</h3>
                             <ul class="clue-list" id="across-clues"></ul>
                         </div>
                     </div>
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Lodratt</h3>
+                            <h3>Lodrätt</h3>
                             <ul class="clue-list" id="down-clues"></ul>
                         </div>
                     </div>
@@ -666,7 +666,7 @@
             <div class="leaderboard-section">
                 <h2>Topplista</h2>
                 <ul class="leaderboard-list" id="leaderboard-list">
-                    <li class="leaderboard-empty">Ingen har klarat korsordet an...</li>
+                    <li class="leaderboard-empty">Ingen har klarat korsordet än...</li>
                 </ul>
                 <div class="leaderboard-date" id="leaderboard-date"></div>
             </div>
@@ -677,18 +677,53 @@
     <div class="modal-overlay" id="username-modal">
         <div class="modal">
             <h3>Grattis!</h3>
-            <p>Du loste korsordet!</p>
+            <p>Du löste korsordet!</p>
             <div class="modal-time" id="modal-time">00:00</div>
-            <p>Ange ditt namn for topplistan:</p>
+            <p>Ange ditt namn för topplistan:</p>
             <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
             <div class="modal-buttons">
                 <button class="btn btn-primary" onclick="submitScore()">Spara</button>
-                <button class="btn btn-secondary" onclick="closeModal()">Hoppa over</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
             </div>
         </div>
     </div>
 
     <script>
+        /*
+         * JSONBIN.IO CONFIGURATION
+         * ========================
+         * To enable shared leaderboard across all users:
+         * 
+         * 1. Go to https://jsonbin.io and create a free account
+         * 2. Create a new bin with initial content: {"scores":{}}
+         * 3. Copy the Bin ID and paste it below as JSONBIN_BIN_ID
+         * 4. Go to API Keys, create a new key with read/update permissions
+         * 5. Copy the API key and paste it below as JSONBIN_API_KEY
+         * 6. Make sure the bin is set to PUBLIC for reading
+         * 
+         * Note: The API key will be visible in the browser. For production,
+         * consider using a serverless function as a proxy.
+         */
+        const JSONBIN_BIN_ID = '696799ccd0ea881f406b7a50';
+        const JSONBIN_API_KEY = '$2a$10$eNnJ1Ti0brIK1jZbG1l8GOryEn8.rIbHOpSNAjH45v2zhMaJyx6Gu';
+        const JSONBIN_ENABLED = JSONBIN_BIN_ID && JSONBIN_API_KEY;
+
+        /*
+         * ANTI-CHEAT CONFIGURATION
+         * ========================
+         * These settings help prevent cheating on the leaderboard.
+         */
+        const ANTI_CHEAT = {
+            // Minimum seconds required to complete (based on ~2 letters per second for fast typers)
+            minTimePerCell: 0.3,
+            // Maximum time between inputs to count as "human" (ms) - detects paste/automation
+            maxInputInterval: 50,
+            // Minimum unique input events required (prevents single paste)
+            minInputEvents: 5,
+            // Enable/disable anti-cheat (set to false for testing)
+            enabled: true
+        };
+
         // Default puzzle data (used if puzzle.json fails to load)
         let puzzleData = {
             width: 11,
@@ -703,82 +738,371 @@
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [{num: 1, letter: 'K'}, {letter: 'A'}, {num: 2, letter: 'L'}, {letter: 'S'}, {letter: 'O'}, {letter: 'N'}, {letter: 'G'}, {letter: 'E'}, {letter: 'R'}, null, null],
-                [null, null, {letter: 'O'}, null, null, null, null, null, null, null, null],
+                [null, null, {letter: 'Ö'}, null, null, null, null, null, null, null, null],
                 [null, null, {letter: 'V'}, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
                 [null, null, null, null, null, null, null, null, null, null, null],
             ],
             clues: {
-                across: [{ number: 1, clue: "Underklader for man", answer: "KALSONGER" }],
-                down: [{ number: 2, clue: "Trad med grona blad", answer: "LOV" }]
+                across: [{ number: 1, clue: "Underkläder för män", answer: "KALSONGER" }],
+                down: [{ number: 2, clue: "Träd med gröna blad", answer: "LÖV" }]
             }
         };
 
         let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across';
         let currentPuzzleDate = null;
         let hasSubmittedScore = false;
+        let remoteLeaderboardCache = null;
 
-        // Leaderboard functions
+        // Anti-cheat tracking variables
+        let inputEvents = [];
+        let puzzleStartTime = null;
+        let puzzleHash = null;
+        let usedShowSolution = false;
+        let suspiciousActivity = [];
+
+        // Generate a simple hash of the puzzle for verification
+        function generatePuzzleHash() {
+            let str = '';
+            for (let row = 0; row < puzzleData.height; row++) {
+                for (let col = 0; col < puzzleData.width; col++) {
+                    const cell = puzzleData.cells[row]?.[col];
+                    str += cell ? cell.letter : '#';
+                }
+            }
+            // Simple hash function
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash;
+            }
+            return hash.toString(36);
+        }
+
+        // Track input events for anti-cheat analysis
+        function trackInput(row, col, value) {
+            const now = Date.now();
+            inputEvents.push({
+                time: now,
+                row,
+                col,
+                value,
+                interval: inputEvents.length > 0 ? now - inputEvents[inputEvents.length - 1].time : 0
+            });
+        }
+
+        // Analyze input pattern for suspicious activity
+        function analyzeInputPattern() {
+            if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
+            
+            const reasons = [];
+            const cellCount = countCells();
+            
+            // Check 1: Minimum time threshold
+            const minTime = cellCount * ANTI_CHEAT.minTimePerCell;
+            if (seconds < minTime) {
+                reasons.push(`För snabb: ${seconds}s < ${Math.round(minTime)}s minimum`);
+            }
+            
+            // Check 2: Too few input events (suggests paste or automation)
+            if (inputEvents.length < ANTI_CHEAT.minInputEvents) {
+                reasons.push(`För få inmatningar: ${inputEvents.length} < ${ANTI_CHEAT.minInputEvents}`);
+            }
+            
+            // Check 3: Suspiciously fast consecutive inputs
+            const fastInputs = inputEvents.filter(e => e.interval > 0 && e.interval < ANTI_CHEAT.maxInputInterval);
+            if (fastInputs.length > cellCount * 0.5) {
+                reasons.push(`Misstänkt automatisering: ${fastInputs.length} snabba inmatningar`);
+            }
+            
+            // Check 4: Used show solution
+            if (usedShowSolution) {
+                reasons.push('Använde "Visa lösning"');
+            }
+            
+            // Check 5: All inputs at exactly the same interval (bot pattern)
+            if (inputEvents.length > 10) {
+                const intervals = inputEvents.slice(1).map(e => e.interval);
+                const avgInterval = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+                const variance = intervals.reduce((sum, i) => sum + Math.pow(i - avgInterval, 2), 0) / intervals.length;
+                if (variance < 100 && avgInterval < 200) {
+                    reasons.push('Misstänkt bot: konstant inmatningshastighet');
+                }
+            }
+            
+            return {
+                valid: reasons.length === 0,
+                reasons
+            };
+        }
+
+        // Count fillable cells
+        function countCells() {
+            let count = 0;
+            for (let row = 0; row < puzzleData.height; row++) {
+                for (let col = 0; col < puzzleData.width; col++) {
+                    if (puzzleData.cells[row]?.[col] !== null) count++;
+                }
+            }
+            return count;
+        }
+
+        // Create a signed score entry
+        function createScoreEntry(username, timeSeconds) {
+            const entry = {
+                name: username,
+                time: timeSeconds,
+                timestamp: Date.now(),
+                puzzleHash: puzzleHash,
+                inputCount: inputEvents.length,
+                // Simple signature to detect tampering
+                sig: btoa(JSON.stringify({
+                    n: username.substring(0, 3),
+                    t: timeSeconds,
+                    h: puzzleHash,
+                    c: inputEvents.length
+                })).substring(0, 16)
+            };
+            return entry;
+        }
+
+        // Validate a score entry
+        function validateScoreEntry(entry) {
+            if (!entry.sig || !entry.puzzleHash) return true; // Legacy entries
+            
+            try {
+                const expectedSig = btoa(JSON.stringify({
+                    n: entry.name.substring(0, 3),
+                    t: entry.time,
+                    h: entry.puzzleHash,
+                    c: entry.inputCount || 0
+                })).substring(0, 16);
+                return entry.sig === expectedSig;
+            } catch {
+                return false;
+            }
+        }
+
+        // Leaderboard key for localStorage
         function getLeaderboardKey() {
             return `crossword-leaderboard-${currentPuzzleDate || 'default'}`;
         }
 
-        function loadLeaderboard() {
+        // Load leaderboard from localStorage (fallback/cache)
+        function loadLocalLeaderboard() {
             try {
                 const data = localStorage.getItem(getLeaderboardKey());
-                return data ? JSON.parse(data) : [];
+                const leaderboard = data ? JSON.parse(data) : [];
+                // Filter out invalid entries
+                return leaderboard.filter(validateScoreEntry);
             } catch (e) {
-                console.error('Error loading leaderboard:', e);
+                console.error('Error loading local leaderboard:', e);
                 return [];
             }
         }
 
-        function saveLeaderboard(leaderboard) {
+        // Save leaderboard to localStorage
+        function saveLocalLeaderboard(leaderboard) {
             try {
                 localStorage.setItem(getLeaderboardKey(), JSON.stringify(leaderboard));
             } catch (e) {
-                console.error('Error saving leaderboard:', e);
+                console.error('Error saving local leaderboard:', e);
             }
         }
 
-        function addToLeaderboard(username, timeSeconds) {
-            const leaderboard = loadLeaderboard();
-            leaderboard.push({
-                name: username,
-                time: timeSeconds,
-                timestamp: Date.now()
-            });
-            // Sort by time (fastest first)
-            leaderboard.sort((a, b) => a.time - b.time);
-            // Keep top 10
-            const trimmed = leaderboard.slice(0, 10);
-            saveLeaderboard(trimmed);
-            return trimmed;
+        // Fetch leaderboard from JSONBin.io
+        async function fetchRemoteLeaderboard() {
+            if (!JSONBIN_ENABLED) return null;
+            
+            try {
+                const response = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
+                    headers: {
+                        'X-Access-Key': JSONBIN_API_KEY
+                    }
+                });
+                
+                if (!response.ok) {
+                    console.warn('Failed to fetch remote leaderboard:', response.status);
+                    return null;
+                }
+                
+                const data = await response.json();
+                const scores = data.record?.scores || {};
+                const leaderboard = scores[currentPuzzleDate] || [];
+                // Filter out invalid entries
+                return leaderboard.filter(validateScoreEntry);
+            } catch (e) {
+                console.error('Error fetching remote leaderboard:', e);
+                return null;
+            }
         }
 
-        function renderLeaderboard() {
+        // Save leaderboard to JSONBin.io
+        async function saveRemoteLeaderboard(leaderboard) {
+            if (!JSONBIN_ENABLED) return false;
+            
+            try {
+                // First, get current data
+                const getResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
+                    headers: {
+                        'X-Access-Key': JSONBIN_API_KEY
+                    }
+                });
+                
+                let allScores = {};
+                if (getResponse.ok) {
+                    const data = await getResponse.json();
+                    allScores = data.record?.scores || {};
+                }
+                
+                // Update scores for current date
+                allScores[currentPuzzleDate] = leaderboard;
+                
+                // Clean up old entries (keep last 7 days)
+                const cutoffDate = new Date();
+                cutoffDate.setDate(cutoffDate.getDate() - 7);
+                const cutoffStr = cutoffDate.toISOString().split('T')[0];
+                
+                for (const date of Object.keys(allScores)) {
+                    if (date < cutoffStr) {
+                        delete allScores[date];
+                    }
+                }
+                
+                // Save updated data
+                const putResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Access-Key': JSONBIN_API_KEY
+                    },
+                    body: JSON.stringify({ scores: allScores })
+                });
+                
+                if (!putResponse.ok) {
+                    console.warn('Failed to save remote leaderboard:', putResponse.status);
+                    return false;
+                }
+                
+                return true;
+            } catch (e) {
+                console.error('Error saving remote leaderboard:', e);
+                return false;
+            }
+        }
+
+        // Load leaderboard (remote first, then local fallback)
+        async function loadLeaderboard() {
+            // Try remote first
+            if (JSONBIN_ENABLED && !remoteLeaderboardCache) {
+                const remote = await fetchRemoteLeaderboard();
+                if (remote !== null) {
+                    remoteLeaderboardCache = remote;
+                    // Sync to local storage
+                    saveLocalLeaderboard(remote);
+                    return remote;
+                }
+            }
+            
+            if (remoteLeaderboardCache) {
+                return remoteLeaderboardCache;
+            }
+            
+            // Fall back to local
+            return loadLocalLeaderboard();
+        }
+
+        // Add score to leaderboard with anti-cheat validation
+        async function addToLeaderboard(username, timeSeconds) {
+            // Validate the submission
+            const validation = analyzeInputPattern();
+            
+            if (!validation.valid) {
+                console.warn('Anti-cheat validation failed:', validation.reasons);
+                // Still allow local save but mark as suspicious
+                suspiciousActivity = validation.reasons;
+            }
+            
+            // Get current leaderboard
+            let leaderboard = await loadLeaderboard();
+            
+            // Create signed entry
+            const entry = createScoreEntry(username, timeSeconds);
+            
+            // Mark suspicious entries
+            if (!validation.valid) {
+                entry.flagged = true;
+                entry.reasons = validation.reasons;
+            }
+            
+            // Add new entry
+            leaderboard.push(entry);
+            
+            // Sort by time (fastest first), but put flagged entries at the end
+            leaderboard.sort((a, b) => {
+                if (a.flagged && !b.flagged) return 1;
+                if (!a.flagged && b.flagged) return -1;
+                return a.time - b.time;
+            });
+            
+            // Keep top 10 (excluding flagged if we have enough clean entries)
+            const cleanEntries = leaderboard.filter(e => !e.flagged);
+            const flaggedEntries = leaderboard.filter(e => e.flagged);
+            
+            if (cleanEntries.length >= 10) {
+                leaderboard = cleanEntries.slice(0, 10);
+            } else {
+                leaderboard = [...cleanEntries, ...flaggedEntries].slice(0, 10);
+            }
+            
+            // Save locally first (immediate feedback)
+            saveLocalLeaderboard(leaderboard);
+            remoteLeaderboardCache = leaderboard;
+            
+            // Try to save remotely (async, don't wait)
+            if (JSONBIN_ENABLED && validation.valid) {
+                saveRemoteLeaderboard(leaderboard).then(success => {
+                    if (!success) {
+                        console.warn('Remote save failed, score saved locally only');
+                    }
+                });
+            }
+            
+            return leaderboard;
+        }
+
+        async function renderLeaderboard() {
             const list = document.getElementById('leaderboard-list');
-            const leaderboard = loadLeaderboard();
             const dateEl = document.getElementById('leaderboard-date');
             
+            // Show loading state
+            if (JSONBIN_ENABLED && !remoteLeaderboardCache) {
+                list.innerHTML = '<li class="leaderboard-empty">Laddar topplista...</li>';
+            }
+            
+            const leaderboard = await loadLeaderboard();
+            
             if (currentPuzzleDate) {
-                dateEl.textContent = `Korsord: ${currentPuzzleDate}`;
+                const modeText = JSONBIN_ENABLED ? ' (delad)' : ' (lokal)';
+                dateEl.textContent = `Korsord: ${currentPuzzleDate}${modeText}`;
             } else {
                 dateEl.textContent = '';
             }
 
             if (leaderboard.length === 0) {
-                list.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet an...</li>';
+                list.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet än...</li>';
                 return;
             }
 
             list.innerHTML = leaderboard.map((entry, index) => {
                 const isCurrentUser = entry.timestamp && (Date.now() - entry.timestamp < 5000);
+                const isFlagged = entry.flagged;
                 return `
-                    <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}">
+                    <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                         <span class="leaderboard-rank">${index + 1}.</span>
-                        <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? ' ⚠️' : ''}</span>
                         <span class="leaderboard-time">${formatTime(entry.time)}</span>
                     </li>
                 `;
@@ -793,8 +1117,28 @@
 
         function showUsernameModal() {
             if (hasSubmittedScore) return;
+            
+            // Check for anti-cheat violations
+            const validation = analyzeInputPattern();
+            
             document.getElementById('modal-time').textContent = formatTime(seconds);
             document.getElementById('username-modal').classList.add('active');
+            
+            // Show warning if suspicious
+            const modalContent = document.querySelector('.modal');
+            let warningEl = document.getElementById('cheat-warning');
+            
+            if (!validation.valid) {
+                if (!warningEl) {
+                    warningEl = document.createElement('p');
+                    warningEl.id = 'cheat-warning';
+                    warningEl.style.cssText = 'color: #dc2626; font-size: 0.8rem; margin-top: -10px; margin-bottom: 10px;';
+                    modalContent.insertBefore(warningEl, document.getElementById('username-input'));
+                }
+                warningEl.textContent = 'Misstänkt aktivitet upptäckt. Ditt resultat kan markeras.';
+            } else if (warningEl) {
+                warningEl.remove();
+            }
             
             // Try to get saved username
             const savedName = localStorage.getItem('crossword-username') || '';
@@ -807,7 +1151,7 @@
             document.getElementById('username-modal').classList.remove('active');
         }
 
-        function submitScore() {
+        async function submitScore() {
             const input = document.getElementById('username-input');
             let username = input.value.trim();
             
@@ -819,11 +1163,11 @@
             localStorage.setItem('crossword-username', username);
             
             // Add to leaderboard
-            addToLeaderboard(username, seconds);
+            await addToLeaderboard(username, seconds);
             hasSubmittedScore = true;
             
             closeModal();
-            renderLeaderboard();
+            await renderLeaderboard();
         }
 
         // Handle Enter key in username input
@@ -852,12 +1196,19 @@
             } catch (e) { 
                 console.log('Error loading puzzle.json, using default puzzle:', e);
             }
-            init();
+            await init();
         }
 
-        function init() {
+        async function init() {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('main-layout').style.display = 'flex';
+            
+            // Initialize anti-cheat
+            puzzleStartTime = Date.now();
+            puzzleHash = generatePuzzleHash();
+            inputEvents = [];
+            usedShowSolution = false;
+            suspiciousActivity = [];
             
             // Set puzzle date for leaderboard
             if (puzzleData.createdAt) {
@@ -885,7 +1236,7 @@
             
             renderGrid();
             renderClues();
-            renderLeaderboard();
+            await renderLeaderboard();
             syncCluesHeight();
             startTimer();
             updateStats();
@@ -969,8 +1320,18 @@
         }
 
         function handleInput(e) {
+            const cell = e.target.parentElement;
+            const row = parseInt(cell.dataset.row);
+            const col = parseInt(cell.dataset.col);
+            
             e.target.value = e.target.value.toUpperCase();
             e.target.parentElement.classList.remove('empty-warning');
+            
+            // Track input for anti-cheat
+            if (e.target.value) {
+                trackInput(row, col, e.target.value);
+            }
+            
             if (e.target.value) moveInDirection(e.target);
             updateStats();
         }
@@ -1067,9 +1428,9 @@
                 // Show username modal instead of alert
                 setTimeout(() => showUsernameModal(), 100);
             } else if (filled < total) {
-                alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda ar korrekta.`);
+                alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`);
             } else {
-                alert(`${filled - correct} bokstaver ar felaktiga. Forsok igen!`);
+                alert(`${filled - correct} bokstäver är felaktiga. Försök igen!`);
             }
         }
 
@@ -1079,19 +1440,22 @@
                     input.value = '';
                     input.parentElement.classList.remove('correct', 'incorrect', 'empty-warning');
                 });
+                // Reset anti-cheat tracking on clear
+                inputEvents = [];
                 updateStats();
             }
         }
 
         function showSolution() {
-            if (confirm('Vill du visa losningen?')) {
+            if (confirm('Vill du visa lösningen?')) {
                 document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
                     input.value = input.dataset.answer;
                     input.parentElement.classList.remove('empty-warning', 'incorrect');
                     input.parentElement.classList.add('correct');
                 });
                 puzzleSolved = true; stopTimer(); updateStats();
-                // Don't show modal when using "show solution" - that's cheating!
+                // Mark as cheated - no leaderboard entry allowed
+                usedShowSolution = true;
                 hasSubmittedScore = true;
             }
         }
