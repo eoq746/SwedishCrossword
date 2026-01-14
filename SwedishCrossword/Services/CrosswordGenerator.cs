@@ -102,21 +102,30 @@ public class CrosswordGenerator
             .ToList();
 
         // Phase 3: Smart anchor word selection with randomness
-        if (!PlaceAnchorWordsWithValidation(grid, sortedWords, candidateWords, options))
+        // Track used word texts to prevent duplicates
+        var usedWordTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        
+        if (!PlaceAnchorWordsWithValidation(grid, sortedWords, candidateWords, options, usedWordTexts))
         {
             return null;
         }
 
         // Phase 4: Main adaptive word placement
         var placedWords = grid.Words.ToHashSet();
-        await PlaceWordsAdaptivelyWithValidation(grid, sortedWords, placedWords, options, cancellationToken);
+        // Sync usedWordTexts with already placed words
+        foreach (var word in placedWords)
+        {
+            usedWordTexts.Add(word.Text);
+        }
+        
+        await PlaceWordsAdaptivelyWithValidation(grid, sortedWords, placedWords, usedWordTexts, options, cancellationToken);
 
         // Phase 5: Multi-pass gap filling - try to fill remaining gaps
         var gapFillingPasses = 3;
         for (int pass = 1; pass <= gapFillingPasses; pass++)
         {
             var beforeFill = grid.GetStats().FilledCells;
-            await FillGapsAsync(grid, candidateWords, placedWords, options, cancellationToken);
+            await FillGapsAsync(grid, candidateWords, placedWords, usedWordTexts, options, cancellationToken);
             var afterFill = grid.GetStats().FilledCells;
             
             if (afterFill == beforeFill)
@@ -124,7 +133,7 @@ public class CrosswordGenerator
         }
 
         // Phase 6: Final short word pass - try 2-3 letter words in remaining gaps
-        await FillWithShortWordsAsync(grid, candidateWords, placedWords, options, cancellationToken);
+        await FillWithShortWordsAsync(grid, candidateWords, placedWords, usedWordTexts, options, cancellationToken);
 
         // Phase 7: Validation
         var stats = grid.GetStats();
@@ -152,7 +161,7 @@ public class CrosswordGenerator
             return null;
         }
         
-        ReportGenerationResults(validation);
+        ReportGenerationResults(validation, usedWordTexts.Count);
         grid.FillEmptyCellsWithAsterisks();
         
         return grid;
@@ -290,7 +299,7 @@ public class CrosswordGenerator
     /// Attempts to fill gaps with matching words
     /// </summary>
     private async Task FillGapsAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords, 
-        CrosswordGenerationOptions options, CancellationToken cancellationToken)
+        HashSet<string> usedWordTexts, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
         var gaps = FindGaps(grid, 2, 8);
         
@@ -304,9 +313,10 @@ public class CrosswordGenerator
         {
             if (cancellationToken.IsCancellationRequested) break;
             
-            // Find words that could fit this gap with randomness
+            // Find words that could fit this gap with randomness, excluding already used words
             var fittingWords = candidateWords
                 .Except(placedWords)
+                .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
                 .Where(w => w.Length == gap.Length)
                 .Select(w => new { Word = w, Score = ScoreWordForGap(w, grid, gap) + _random.NextDouble() * 2 })
                 .OrderByDescending(w => w.Score)
@@ -322,6 +332,7 @@ public class CrosswordGenerator
                 if (grid.TryPlaceWordWithValidation(word, gap.Row, gap.Col, gap.Direction, _dictionary, options.RejectInvalidWords))
                 {
                     placedWords.Add(word);
+                    usedWordTexts.Add(word.Text); // Track the word text
                     break;
                 }
             }
@@ -357,12 +368,13 @@ public class CrosswordGenerator
     /// Final pass: try to fill remaining small gaps with 2-3 letter words
     /// </summary>
     private async Task FillWithShortWordsAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords,
-        CrosswordGenerationOptions options, CancellationToken cancellationToken)
+        HashSet<string> usedWordTexts, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
         var shortWords = candidateWords
             .Except(placedWords)
+            .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
             .Where(w => w.Length >= 2 && w.Length <= 4)
-            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOUÅÄÖ".Contains(c)) + _random.NextDouble() * 2 })
+            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOU???".Contains(c)) + _random.NextDouble() * 2 })
             .OrderByDescending(w => w.Score)
             .Select(w => w.Word)
             .ToList();
@@ -378,6 +390,9 @@ public class CrosswordGenerator
         {
             if (cancellationToken.IsCancellationRequested) break;
             
+            // Skip if this word text was used in a previous iteration
+            if (usedWordTexts.Contains(word.Text)) continue;
+            
             var intersections = grid.GetPossibleIntersections(word)
                 .OrderBy(_ => _random.Next()) // Randomize intersection order
                 .Take(5)
@@ -388,6 +403,7 @@ public class CrosswordGenerator
                 if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                 {
                     placedWords.Add(word);
+                    usedWordTexts.Add(word.Text); // Track the word text
                     break;
                 }
             }
@@ -400,13 +416,15 @@ public class CrosswordGenerator
 
     #region Improved Anchor Selection
 
-    private bool PlaceAnchorWordsWithValidation(CrosswordGrid grid, List<Word> sortedWords, List<Word> allWords, CrosswordGenerationOptions options)
+    private bool PlaceAnchorWordsWithValidation(CrosswordGrid grid, List<Word> sortedWords, List<Word> allWords, 
+        CrosswordGenerationOptions options, HashSet<string> usedWordTexts)
     {
         var placed = 0;
 
         // Select first anchor word: combine letter scoring with actual intersection potential + randomness
         var anchorCandidates = allWords
             .Where(w => w.Length >= 5 && w.Length <= Math.Min(10, options.Width - 2))
+            .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude already used words
             .Select(w => new
             {
                 Word = w,
@@ -419,7 +437,10 @@ public class CrosswordGenerator
         // Randomly select from top candidates (weighted towards higher scores)
         var bestAnchor = anchorCandidates.Count > 0
             ? anchorCandidates[_random.Next(Math.Min(3, anchorCandidates.Count))].Word
-            : sortedWords.First();
+            : sortedWords.FirstOrDefault(w => !usedWordTexts.Contains(w.Text));
+
+        if (bestAnchor == null)
+            return false;
 
         var centerRow = options.Height / 2;
         var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2);
@@ -427,13 +448,14 @@ public class CrosswordGenerator
         if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords))
         {
             placed++;
+            usedWordTexts.Add(bestAnchor.Text);
         }
 
         // Second anchor - find word with best intersection potential with first, with randomness
         if (placed > 0 && sortedWords.Count > 1)
         {
             var candidateSecondWords = allWords
-                .Where(w => w != bestAnchor)
+                .Where(w => w != bestAnchor && !usedWordTexts.Contains(w.Text)) // Exclude already used words
                 .Where(w => w.Text.Any(c => bestAnchor.Text.Contains(c)))
                 .Select(w => new
                 {
@@ -464,6 +486,7 @@ public class CrosswordGenerator
                     if (grid.TryPlaceWordWithValidation(secondWord, row, col, direction, _dictionary, options.RejectInvalidWords))
                     {
                         placed++;
+                        usedWordTexts.Add(secondWord.Text);
                         break;
                     }
                 }
@@ -629,7 +652,7 @@ public class CrosswordGenerator
     #region Adaptive Placement with Direction Balancing
 
     private async Task PlaceWordsAdaptivelyWithValidation(CrosswordGrid grid, List<Word> sortedWords, 
-        HashSet<Word> placedWords, CrosswordGenerationOptions options, CancellationToken cancellationToken)
+        HashSet<Word> placedWords, HashSet<string> usedWordTexts, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
         const int maxConsecutiveFailures = 50;
         const int maxPlacementAttempts = 2000;
@@ -646,6 +669,7 @@ public class CrosswordGenerator
         {
             var availableWords = sortedWords
                 .Except(placedWords)
+                .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
                 .Where(w => w.Length == currentTargetLength || 
                            (currentTargetLength >= 5 && w.Length >= currentTargetLength - 1 && w.Length <= currentTargetLength + 1))
                 .Where(w => !triedWords.Contains(w.Text))
@@ -696,6 +720,7 @@ public class CrosswordGenerator
                     if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                     {
                         placedWords.Add(word);
+                        usedWordTexts.Add(word.Text); // Track the word text
                         placed = true;
                         consecutiveFailures = 0;
                         break;
@@ -711,6 +736,7 @@ public class CrosswordGenerator
                     if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                     {
                         placedWords.Add(word);
+                        usedWordTexts.Add(word.Text); // Track the word text
                         placed = true;
                         consecutiveFailures = 0;
                         requireIntersections = true;
@@ -900,7 +926,7 @@ public class CrosswordGenerator
         return score;
     }
 
-    private void ReportGenerationResults(CrosswordValidationResult validation)
+    private void ReportGenerationResults(CrosswordValidationResult validation, int usedWordCount)
     {
         if (validation.ValidAccidentalWords.Any())
         {
@@ -911,6 +937,8 @@ public class CrosswordGenerator
         {
             Console.WriteLine($"KRITISKT: {validation.InvalidAccidentalWords.Count} ogiltiga ord hittades");
         }
+
+        Console.WriteLine($"Använda ord: {usedWordCount}");
     }
 
     private IEnumerable<Word> GetCandidateWords(CrosswordGenerationOptions options)
