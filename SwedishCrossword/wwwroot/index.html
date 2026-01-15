@@ -341,10 +341,21 @@
             border-left: 3px solid var(--accent-color);
         }
 
-        .clue-number {
+        .clue-item.filled {
+            color: #6b7280;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .clue-item.filled::after {
+            content: ' ✓';
+            color: #16a34a;
+            text-decoration: none;
             font-weight: bold;
-            color: var(--accent-color);
-            margin-right: 6px;
+        }
+
+        .clue-item.filled .clue-number {
+            color: #16a34a;
         }
 
         .stats {
@@ -1462,6 +1473,7 @@
             
             if (e.target.value) moveInDirection(e.target);
             updateStats();
+            updateClueFilledStatus();
         }
 
         function handleKeyDown(e) {
@@ -1571,6 +1583,7 @@
                 // Reset anti-cheat tracking on clear
                 inputEvents = [];
                 updateStats();
+                updateClueFilledStatus();
             }
         }
 
@@ -1582,6 +1595,7 @@
                     input.parentElement.classList.add('correct');
                 });
                 puzzleSolved = true; stopTimer(); updateStats();
+                updateClueFilledStatus();
                 // Mark as cheated - no leaderboard entry allowed
                 usedShowSolution = true;
                 hasSubmittedScore = true;
@@ -1597,7 +1611,72 @@
             document.getElementById('stats').textContent = `${filled}/${inputs.length} rutor ifyllda (${Math.round(filled/inputs.length*100)}%)`;
         }
 
-        document.addEventListener('DOMContentLoaded', loadPuzzle);
+        // Check if all cells for a word are filled and update the clue indicator
+        function updateClueFilledStatus() {
+            // Check across clues
+            (puzzleData.clues.across || []).forEach(clue => {
+                const isFilled = isWordFilled(clue.number, 'across');
+                const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
+                if (clueItem) {
+                    clueItem.classList.toggle('filled', isFilled);
+                    const fillIndicator = clueItem.querySelector('.fill-indicator') || document.createElement('span');
+                    fillIndicator.className = 'fill-indicator';
+                    fillIndicator.textContent = isFilled ? '✓' : '';
+                    clueItem.appendChild(fillIndicator);
+                }
+            });
+
+            // Check down clues
+            (puzzleData.clues.down || []).forEach(clue => {
+                const isFilled = isWordFilled(clue.number, 'down');
+                const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
+                if (clueItem) {
+                    clueItem.classList.toggle('filled', isFilled);
+                    const fillIndicator = clueItem.querySelector('.fill-indicator') || document.createElement('span');
+                    fillIndicator.className = 'fill-indicator';
+                    fillIndicator.textContent = isFilled ? '✓' : '';
+                    clueItem.appendChild(fillIndicator);
+                }
+            });
+        }
+
+        function isWordFilled(number, direction) {
+            const cells = getWordCells(number, direction);
+            return cells && cells.every(cell => {
+                const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
+                return input && input.value.toUpperCase() === input.dataset.answer;
+            });
+        }
+
+        function getWordCells(number, direction) {
+            const clue = (puzzleData.clues[direction] || []).find(c => c.number === number);
+            if (!clue) return null;
+            
+            const cells = [];
+            let row = 0, col = 0;
+            outer: for (row = 0; row < puzzleData.height; row++) {
+                for (col = 0; col < puzzleData.width; col++) {
+                    if (puzzleData.cells[row]?.[col]?.num === number) {
+                        // Found the starting cell of the word
+                        break outer;
+                    }
+                }
+            }
+            
+            if (direction === 'across') {
+                for (let c = col; c < puzzleData.width; c++) {
+                    if (puzzleData.cells[row]?.[c] === null) break;
+                    cells.push({ row, col: c });
+                }
+            } else {
+                for (let r = row; r < puzzleData.height; r++) {
+                    if (puzzleData.cells[r]?.[col] === null) break;
+                    cells.push({ row: r, col });
+                }
+            }
+            
+            return cells;
+        }
     </script>
 </body>
 </html>
