@@ -1331,7 +1331,16 @@
             } catch (e) { 
                 console.log('Error loading puzzle.json, using default puzzle:', e);
             }
-            await init();
+            
+            // Always call init, even if puzzle loading failed
+            try {
+                await init();
+            } catch (initError) {
+                console.error('Error during init:', initError);
+                // Force show the UI even if there's an error
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('main-layout').style.display = 'flex';
+            }
         }
 
         async function init() {
@@ -1619,10 +1628,6 @@
                 const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
                 if (clueItem) {
                     clueItem.classList.toggle('filled', isFilled);
-                    const fillIndicator = clueItem.querySelector('.fill-indicator') || document.createElement('span');
-                    fillIndicator.className = 'fill-indicator';
-                    fillIndicator.textContent = isFilled ? '✓' : '';
-                    clueItem.appendChild(fillIndicator);
                 }
             });
 
@@ -1632,51 +1637,53 @@
                 const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
                 if (clueItem) {
                     clueItem.classList.toggle('filled', isFilled);
-                    const fillIndicator = clueItem.querySelector('.fill-indicator') || document.createElement('span');
-                    fillIndicator.className = 'fill-indicator';
-                    fillIndicator.textContent = isFilled ? '✓' : '';
-                    clueItem.appendChild(fillIndicator);
                 }
             });
         }
 
+        // Check if all cells for a specific word have any value (not necessarily correct)
         function isWordFilled(number, direction) {
             const cells = getWordCells(number, direction);
-            return cells && cells.every(cell => {
+            if (!cells || cells.length === 0) return false;
+            
+            return cells.every(cell => {
                 const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
-                return input && input.value.toUpperCase() === input.dataset.answer;
+                return input && input.value.trim() !== ''; // Just check if filled, not if correct
             });
         }
 
         function getWordCells(number, direction) {
-            const clue = (puzzleData.clues[direction] || []).find(c => c.number === number);
-            if (!clue) return null;
+            // Find the starting cell for this clue number
+            let startRow = -1, startCol = -1;
             
-            const cells = [];
-            let row = 0, col = 0;
-            outer: for (row = 0; row < puzzleData.height; row++) {
-                for (col = 0; col < puzzleData.width; col++) {
+            outer: for (let row = 0; row < puzzleData.height; row++) {
+                for (let col = 0; col < puzzleData.width; col++) {
                     if (puzzleData.cells[row]?.[col]?.num === number) {
-                        // Found the starting cell of the word
+                        startRow = row;
+                        startCol = col;
                         break outer;
                     }
                 }
             }
             
+            if (startRow < 0) return null;
+            
+            const cells = [];
             if (direction === 'across') {
-                for (let c = col; c < puzzleData.width; c++) {
-                    if (puzzleData.cells[row]?.[c] === null) break;
-                    cells.push({ row, col: c });
+                for (let c = startCol; c < puzzleData.width; c++) {
+                    if (puzzleData.cells[startRow]?.[c] === null) break;
+                    cells.push({ row: startRow, col: c });
                 }
             } else {
-                for (let r = row; r < puzzleData.height; r++) {
-                    if (puzzleData.cells[r]?.[col] === null) break;
-                    cells.push({ row: r, col });
+                for (let r = startRow; r < puzzleData.height; r++) {
+                    if (puzzleData.cells[r]?.[startCol] === null) break;
+                    cells.push({ row: r, col: startCol });
                 }
             }
             
             return cells;
         }
+        document.addEventListener('DOMContentLoaded', loadPuzzle);
     </script>
 </body>
 </html>
