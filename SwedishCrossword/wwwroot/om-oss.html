@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Oss - Svenskt Korsord</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .tagline {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            color: #374151;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h3 {
+            color: #1f2937;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            background: #1d4ed8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #6b7280;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Om Svenskt Korsord</h1>
+        <p class="tagline">Dagliga svenska korsord – gratis och roligt!</p>
+
+        <p>Välkommen till Svenskt Korsord, din destination för dagliga korsordspussel på svenska. Vi erbjuder ett nytt, unikt korsord varje dag som är speciellt designat för att utmana och underhålla svenska korsordsentusiaster.</p>
+
+        <h2>Vår Vision</h2>
+        <p>Vi tror att korsord är mer än bara tidsfördriv – det är mental träning, ordkunskap och glädje i ett. Vårt mål är att göra högkvalitativa svenska korsord tillgängliga för alla, helt gratis.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">??</div>
+                <h3>Dagliga Pussel</h3>
+                <p>Ett nytt korsord genereras automatiskt varje dag vid midnatt.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">????</div>
+                <h3>100% Svenska</h3>
+                <p>Alla ord och ledtrådar är på svenska, med stöd för Å, Ä och Ö.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">??</div>
+                <h3>Topplista</h3>
+                <p>Tävla mot andra spelare och se vem som löser korsordet snabbast.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">??</div>
+                <h3>Responsiv Design</h3>
+                <p>Spela på dator, surfplatta eller mobil – det fungerar överallt.</p>
+            </div>
+        </div>
+
+        <h2>Hur Det Fungerar</h2>
+        <p>Våra korsord genereras automatiskt med hjälp av en avancerad algoritm som:</p>
+        <ul>
+            <li>Väljer ord från en omfattande svensk ordlista</li>
+            <li>Skapar ledtrådar baserade på ordets betydelse</li>
+            <li>Kontrollerar att alla bildade ord är giltiga svenska ord</li>
+            <li>Optimerar layouten för bästa spelupplevelse</li>
+        </ul>
+
+        <h2>Funktioner</h2>
+        <ul>
+            <li><strong>Tangentbordsnavigering:</strong> Använd piltangenter för att navigera och mellanslag för att byta riktning</li>
+            <li><strong>Automatisk validering:</strong> Kontrollera dina svar när som helst</li>
+            <li><strong>Tidtagning:</strong> Se hur snabbt du kan lösa korsordet</li>
+            <li><strong>Delad topplista:</strong> Jämför din tid med andra spelare</li>
+        </ul>
+
+        <h2>Tekniken Bakom</h2>
+        <p>Svenskt Korsord är byggt med modern webbteknik och drivs av:</p>
+        <ul>
+            <li>.NET för korsordsgenerering</li>
+            <li>GitHub Actions för daglig automatisk publicering</li>
+            <li>GitHub Pages för snabb och pålitlig hosting</li>
+            <li>Responsiv HTML/CSS/JavaScript för spelupplevelsen</li>
+        </ul>
+
+        <h2>Kontakta Oss</h2>
+        <p>Har du förslag, feedback eller frågor? Vi vill gärna höra från dig! Besök vår <a href="kontakt.html">kontaktsida</a> för att komma i kontakt med oss.</p>
+
+        <a href="index.html" class="back-link">? Spela dagens korsord</a>
+
+        <footer>
+            <a href="index.html">Spela Korsord</a>
+            <a href="om-oss.html">Om oss</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="integritetspolicy.html">Integritetspolicy</a>
+            <p style="margin-top: 15px;">© 2025 Svenskt Korsord. Alla rättigheter förbehållna.</p>
+            <p style="margin-top: 5px; font-size: 0.75rem; opacity: 0.8;">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a></p>
+        </footer>
+    </div>
+</body>
+</html>

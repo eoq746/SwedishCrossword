@@ -131,8 +131,8 @@ internal class Program
                 Console.WriteLine("Warning: No words in dictionary, generation may fail");
             }
 
-            // Generate a medium-sized puzzle for web display
-            var options = CrosswordGenerationOptions.Medium;
+            // Generate a hard-sized puzzle for web display
+            var options = CrosswordGenerationOptions.Hard;
             Console.WriteLine($"Generating {options.Width}x{options.Height} puzzle...");
 
             var startTime = DateTime.Now;

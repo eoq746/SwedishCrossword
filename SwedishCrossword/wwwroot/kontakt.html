@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Svenskt Korsord</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .tagline {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .contact-card {
+            background: #f9fafb;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .contact-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-card p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .contact-card a {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            color: #1f2937;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: #6b7280;
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            background: #1d4ed8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #6b7280;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kontakta Oss</h1>
+        <p class="tagline">Vi vill gärna höra från dig!</p>
+
+        <p>Har du frågor, förslag eller feedback om Svenskt Korsord? Vi uppskattar all kontakt och gör vårt bästa för att svara så snart som möjligt.</p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">??</div>
+                <h3>E-post</h3>
+                <p>För allmänna frågor och feedback:</p>
+                <p><a href="mailto:kontakt@svensktkorsord.se">kontakt@svensktkorsord.se</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">??</div>
+                <h3>Rapportera Problem</h3>
+                <p>Hittat en bugg eller fel?</p>
+                <p><a href="https://github.com/eoq746/SwedishCrossword/issues" target="_blank" rel="noopener">GitHub Issues</a></p>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Vanliga Frågor</h2>
+
+            <div class="faq-item">
+                <h3>När uppdateras korsordet?</h3>
+                <p>Ett nytt korsord genereras automatiskt varje dag vid midnatt (UTC). Om du vill ha ett nytt pussel, kom tillbaka imorgon!</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Kan jag spela gamla korsord?</h3>
+                <p>Just nu erbjuder vi endast dagens korsord. Vi planerar att lägga till ett arkiv med tidigare pussel i framtiden.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Hur fungerar topplistan?</h3>
+                <p>När du löser korsordet kan du ange ditt namn för att visas på topplistan. Topplistan visar de 10 snabbaste tiderna för dagens korsord och delas mellan alla spelare.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Varför markeras mitt resultat med en varning?</h3>
+                <p>Vi har ett anti-fusk-system som upptäcker misstänkt aktivitet som extremt snabba tider eller användning av utvecklarverktyg. Om ditt resultat markeras kan det bero på detta.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Fungerar sidan på mobilen?</h3>
+                <p>Ja! Svenskt Korsord är responsivt designat och fungerar på datorer, surfplattor och mobiltelefoner.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Kan jag föreslå nya ord eller ledtrådar?</h3>
+                <p>Absolut! Skicka gärna förslag till oss via e-post eller GitHub. Vi uppskattar alla bidrag som kan förbättra ordlistan.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Är tjänsten gratis?</h3>
+                <p>Ja, Svenskt Korsord är helt gratis att använda. Vi visar annonser för att täcka våra driftskostnader.</p>
+            </div>
+        </div>
+
+        <h2>Feedback</h2>
+        <p>Din feedback är värdefull för oss! Berätta gärna vad du tycker om:</p>
+        <ul style="color: #374151; margin-left: 20px; margin-bottom: 20px;">
+            <li>Svårighetsgraden på korsordet</li>
+            <li>Kvaliteten på ledtrådarna</li>
+            <li>Användarvänligheten på webbplatsen</li>
+            <li>Nya funktioner du skulle vilja se</li>
+        </ul>
+
+        <a href="index.html" class="back-link">? Spela dagens korsord</a>
+
+        <footer>
+            <a href="index.html">Spela Korsord</a>
+            <a href="om-oss.html">Om oss</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="integritetspolicy.html">Integritetspolicy</a>
+            <p style="margin-top: 15px;">© 2025 Svenskt Korsord. Alla rättigheter förbehållna.</p>
+            <p style="margin-top: 5px; font-size: 0.75rem; opacity: 0.8;">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a></p>
+        </footer>
+    </div>
+</body>
+</html>

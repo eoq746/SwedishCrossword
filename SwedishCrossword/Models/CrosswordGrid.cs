@@ -105,6 +105,27 @@ public class CrosswordGrid
                 {
                     isValid = false;
                 }
+                
+                // Also reject if any accidental word would duplicate an existing intentional word's text
+                // This prevents the same word appearing twice in the puzzle
+                if (isValid)
+                {
+                    var existingWordTexts = _words
+                        .Where(w => w.Id != word.Id) // Exclude the word we just placed
+                        .Select(w => w.Text.ToUpperInvariant())
+                        .ToHashSet(StringComparer.OrdinalIgnoreCase);
+                    
+                    var duplicateAccidentalWords = accidentalWords
+                        .Where(a => a.IsValidSwedishWord == true)
+                        .Where(a => existingWordTexts.Contains(a.Text.ToUpperInvariant()))
+                        .ToList();
+                    
+                    if (duplicateAccidentalWords.Any())
+                    {
+                        // This placement would create an accidental word that duplicates an existing word
+                        isValid = false;
+                    }
+                }
             }
 
             if (isValid)
@@ -577,7 +598,7 @@ public class CrosswordGrid
             {
                 accWord.IsValidSwedishWord = dictionary.IsValidWord(accWord.Text);
                 
-                // If valid, get clue from dictionary and mark for potential inclusion
+                // If valid, get clue from dictionary and mark for inclusion
                 if (accWord.IsValidSwedishWord == true)
                 {
                     var dictionaryWords = dictionary.AllWords.Where(w => 
@@ -588,14 +609,16 @@ public class CrosswordGrid
                         var dictWord = dictionaryWords.First();
                         accWord.ClueFromDictionary = dictWord.Clue;
                         
-                        // Check if this accidental word doesn't conflict with intentional words
+                        // Check if this accidental word doesn't conflict with intentional words at same position
                         bool isAlreadyIntentional = Words.Any(w => 
                             w.StartRow == accWord.StartRow && 
                             w.StartColumn == accWord.StartCol && 
                             w.Direction == accWord.Direction &&
                             w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
 
-                        // Mark for inclusion if it's truly accidental (not intentionally placed)
+                        // Mark for inclusion if it's truly accidental (not intentionally placed at same position)
+                        // Note: We no longer filter by word text duplication here because
+                        // TryPlaceWordWithValidation now prevents duplicate word texts during placement
                         if (!isAlreadyIntentional)
                         {
                             accWord.ShouldIncludeInPuzzle = true;
@@ -905,7 +928,7 @@ public class CrosswordGrid
         
         foreach (var accWord in validAccidentalWords)
         {
-            // Only include if it's not already a placed intentional word
+            // Only include if it's not already a placed intentional word at the same position
             bool isAlreadyIntentional = Words.Any(w => 
                 w.StartRow == accWord.StartRow && 
                 w.StartColumn == accWord.StartCol && 
