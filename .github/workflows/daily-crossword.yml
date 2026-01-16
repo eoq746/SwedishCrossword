@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: gh-pages
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
@@ -50,6 +52,12 @@ jobs:
           mkdir -p _site
           cp SwedishCrossword/wwwroot/index.html _site/
           cp SwedishCrossword/wwwroot/puzzle.json _site/ 2>/dev/null || echo "puzzle.json not found, will use default"
+          # Copy additional pages for AdSense compliance
+          cp SwedishCrossword/wwwroot/om-oss.html _site/
+          cp SwedishCrossword/wwwroot/kontakt.html _site/
+          cp SwedishCrossword/wwwroot/integritetspolicy.html _site/
+          # Copy CNAME file for custom domain
+          cp SwedishCrossword/wwwroot/CNAME _site/
           # Add a .nojekyll file to prevent Jekyll processing
           touch _site/.nojekyll
           echo "Contents of _site:"

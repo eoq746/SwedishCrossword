@@ -102,7 +102,7 @@ public class CrosswordGenerator
             .ToList();
 
         // Phase 3: Smart anchor word selection with randomness
-        // Track used word texts to prevent duplicates
+        // Track used word texts to prevent duplicates - use case-insensitive comparison for robustness
         var usedWordTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         
         if (!PlaceAnchorWordsWithValidation(grid, sortedWords, candidateWords, options, usedWordTexts))

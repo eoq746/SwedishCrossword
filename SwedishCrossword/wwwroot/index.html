@@ -341,10 +341,21 @@
             border-left: 3px solid var(--accent-color);
         }
 
-        .clue-number {
+        .clue-item.filled {
+            color: #6b7280;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .clue-item.filled::after {
+            content: ' ✓';
+            color: #16a34a;
+            text-decoration: none;
             font-weight: bold;
-            color: var(--accent-color);
-            margin-right: 6px;
+        }
+
+        .clue-item.filled .clue-number {
+            color: #16a34a;
         }
 
         .stats {
@@ -455,6 +466,7 @@
             font-weight: 600;
             color: var(--accent-color);
             flex-shrink: 0;
+            pointer-events: none;
         }
 
         .leaderboard-empty {
@@ -546,69 +558,107 @@
             font-size: 0.9rem;
         }
 
+        /* Site footer */
+        .site-footer {
+            text-align: center;
+            padding: 15px 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .site-footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            margin: 0 12px;
+            transition: color 0.2s;
+        }
+
+        .site-footer a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .site-footer .copyright {
+            margin-top: 8px;
+            opacity: 0.7;
+        }
+
+        .site-footer .license {
+            margin-top: 5px;
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .site-footer .license a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         /* Responsive: stack on smaller screens */
         @media (max-width: 1100px) {
             .main-layout {
                 flex-direction: column;
-                align-items: center;
-            }
-            
-            .clues-section, .leaderboard-section {
-                min-width: auto;
-                max-width: 100%;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            :root {
-                --cell-size: 28px;
-            }
-            
-            header h1 {
-                font-size: 1.6rem;
-            }
-            
-            .clues-columns {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .clue-column {
-                min-width: auto;
+                gap: 10px;
             }
 
-            .clues-section, .leaderboard-section {
-                min-width: auto;
-            }
-        }
-
-        @media print {
-            body {
-                background: white;
-                padding: 10px;
-            }
-            
-            .controls, .timer, .puzzle-info, .generation-date, .leaderboard-section {
-                display: none;
-            }
-            
             .grid-section, .clues-section {
-                box-shadow: none;
-                break-inside: avoid;
+                width: 100%;
+                max-width: none;
             }
 
-            .cell input {
-                border: none;
+            .clues-section {
+                display: none; /* Hide clues by default on small screens */
             }
 
-            .clue-list {
-                max-height: none;
-                overflow: visible;
+            .leaderboard-section {
+                width: 100%;
+                max-width: none;
+                position: relative;
+                order: -1; /* Move leaderboard to top on small screens */
             }
 
-            .main-layout {
-                gap: 15px;
+            .site-footer {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            .timer {
+                font-size: 1.5rem;
+            }
+
+            .grid-section h2, .clues-section h2, .leaderboard-section h2 {
+                font-size: 1.25rem;
+            }
+
+            .clue-item {
+                font-size: 0.9rem;
+                padding: 8px 10px;
+            }
+
+            .leaderboard-item {
+                font-size: 0.9rem;
+                padding: 10px 12px;
+            }
+
+            .modal {
+                padding: 20px;
+            }
+
+            .modal h3 {
+                font-size: 1.2rem;
+            }
+
+            .modal input[type="text"] {
+                padding: 8px 12px;
+            }
+
+            .modal-buttons .btn {
+                padding: 8px 16px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -640,7 +690,6 @@
                     <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
                     <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
                     <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
-                    <button class="btn btn-secondary" onclick="printPuzzle()">Skriv ut</button>
                 </div>
                 <div class="stats" id="stats"></div>
             </div>
@@ -671,22 +720,55 @@
                 <div class="leaderboard-date" id="leaderboard-date"></div>
             </div>
         </div>
-    </div>
 
-    <!-- Username Modal -->
-    <div class="modal-overlay" id="username-modal">
-        <div class="modal">
-            <h3>Grattis!</h3>
-            <p>Du löste korsordet!</p>
-            <div class="modal-time" id="modal-time">00:00</div>
-            <p>Ange ditt namn för topplistan:</p>
-            <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
-            <div class="modal-buttons">
-                <button class="btn btn-primary" onclick="submitScore()">Spara</button>
-                <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
+        <!-- Site Footer -->
+        <footer class="site-footer">
+            <nav>
+                <a href="om-oss.html">Om oss</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="integritetspolicy.html">Integritetspolicy</a>
+            </nav>
+            <p class="copyright">© 2025 Svenskt Korsord. Alla rättigheter förbehållna.</p>
+            <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a></p>
+        </footer>
+
+        <!-- Username Modal -->
+        <div class="modal-overlay" id="username-modal">
+            <div class="modal">
+                <h3>Grattis!</h3>
+                <p>Du löste korsordet!</p>
+                <div class="modal-time" id="modal-time">00:00</div>
+                <p>Ange ditt namn för topplistan:</p>
+                <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
+                <div class="modal-buttons">
+                    <button class="btn btn-primary" onclick="submitScore()">Spara</button>
+                    <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- DevTools detection library -->
+    <script type="module">
+        import devtools from 'https://cdn.jsdelivr.net/npm/devtools-detect@4.0.2/+esm';
+        
+        // Make devtools state available globally
+        window.devtoolsDetect = devtools;
+        
+        // Listen for devtools state changes
+        window.addEventListener('devtoolschange', event => {
+            if (event.detail.isOpen && !window.devToolsOpenedDuringSession) {
+                window.devToolsOpenedDuringSession = true;
+                console.log('DevTools opened - flagged for anti-cheat');
+            }
+        });
+        
+        // Initial check
+        if (devtools.isOpen) {
+            window.devToolsOpenedDuringSession = true;
+            console.log('DevTools was already open on page load');
+        }
+    </script>
 
     <script>
         /*
@@ -761,6 +843,46 @@
         let puzzleHash = null;
         let usedShowSolution = false;
         let suspiciousActivity = [];
+        
+        // DevTools detection flag (shared with ES module above)
+        // Initialize from window in case the module already set it
+        let devToolsOpenedDuringSession = window.devToolsOpenedDuringSession || false;
+        
+        // Sync the global variable for the ES module to update
+        Object.defineProperty(window, 'devToolsOpenedDuringSession', {
+            get() { return devToolsOpenedDuringSession; },
+            set(value) { devToolsOpenedDuringSession = value; }
+        });
+
+        // Fallback DevTools detection (in case ES module doesn't load)
+        // Uses size-based detection as backup
+        const devToolsDetector = {
+            isOpen: false,
+            
+            check() {
+                const widthThreshold = window.outerWidth - window.innerWidth > 160;
+                const heightThreshold = window.outerHeight - window.innerHeight > 160;
+                
+                if (
+                    !(heightThreshold && widthThreshold) &&
+                    (widthThreshold || heightThreshold)
+                ) {
+                    if (!this.isOpen) {
+                        this.isOpen = true;
+                        devToolsOpenedDuringSession = true;
+                    }
+                } else {
+                    this.isOpen = false;
+                }
+            },
+            
+            startMonitoring() {
+                // Check periodically as fallback
+                setInterval(() => this.check(), 1000);
+                window.addEventListener('resize', () => this.check());
+                this.check();
+            }
+        };
 
         // Generate a simple hash of the puzzle for verification
         function generatePuzzleHash() {
@@ -832,6 +954,11 @@
                 }
             }
             
+            // Check 6: DevTools was opened during the session
+            if (devToolsOpenedDuringSession) {
+                reasons.push('DevTools öppnades under sessionen');
+            }
+            
             return {
                 valid: reasons.length === 0,
                 reasons
@@ -885,9 +1012,12 @@
             }
         }
 
-        // Leaderboard key for localStorage
+        // Leaderboard key for localStorage - includes puzzle hash for uniqueness
         function getLeaderboardKey() {
-            return `crossword-leaderboard-${currentPuzzleDate || 'default'}`;
+            // Use both date and puzzle hash to ensure unique leaderboards per puzzle
+            // This prevents local puzzles from showing the published puzzle's leaderboard
+            const hashSuffix = puzzleHash ? `-${puzzleHash}` : '';
+            return `crossword-leaderboard-${currentPuzzleDate || 'default'}${hashSuffix}`;
         }
 
         // Load leaderboard from localStorage (fallback/cache)
@@ -930,7 +1060,9 @@
                 
                 const data = await response.json();
                 const scores = data.record?.scores || {};
-                const leaderboard = scores[currentPuzzleDate] || [];
+                // Use the full leaderboard key (date + hash) to get the correct leaderboard
+                const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
+                const leaderboard = scores[leaderboardKey] || [];
                 // Filter out invalid entries
                 return leaderboard.filter(validateScoreEntry);
             } catch (e) {
@@ -957,17 +1089,20 @@
                     allScores = data.record?.scores || {};
                 }
                 
-                // Update scores for current date
-                allScores[currentPuzzleDate] = leaderboard;
+                // Use the full leaderboard key (date + hash) to store the correct leaderboard
+                const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
+                allScores[leaderboardKey] = leaderboard;
                 
                 // Clean up old entries (keep last 7 days)
                 const cutoffDate = new Date();
                 cutoffDate.setDate(cutoffDate.getDate() - 7);
                 const cutoffStr = cutoffDate.toISOString().split('T')[0];
                 
-                for (const date of Object.keys(allScores)) {
-                    if (date < cutoffStr) {
-                        delete allScores[date];
+                for (const key of Object.keys(allScores)) {
+                    // Extract date from key (format: "YYYY-MM-DD-hash")
+                    const dateMatch = key.match(/^(\d{4}-\d{2}-\d{2})/);
+                    if (dateMatch && dateMatch[1] < cutoffStr) {
+                        delete allScores[key];
                     }
                 }
                 
@@ -1196,7 +1331,16 @@
             } catch (e) { 
                 console.log('Error loading puzzle.json, using default puzzle:', e);
             }
-            await init();
+            
+            // Always call init, even if puzzle loading failed
+            try {
+                await init();
+            } catch (initError) {
+                console.error('Error during init:', initError);
+                // Force show the UI even if there's an error
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('main-layout').style.display = 'flex';
+            }
         }
 
         async function init() {
@@ -1209,6 +1353,10 @@
             inputEvents = [];
             usedShowSolution = false;
             suspiciousActivity = [];
+            devToolsOpenedDuringSession = false;
+            
+            // Start DevTools detection
+            devToolsDetector.startMonitoring();
             
             // Set puzzle date for leaderboard
             if (puzzleData.createdAt) {
@@ -1334,6 +1482,7 @@
             
             if (e.target.value) moveInDirection(e.target);
             updateStats();
+            updateClueFilledStatus();
         }
 
         function handleKeyDown(e) {
@@ -1443,6 +1592,7 @@
                 // Reset anti-cheat tracking on clear
                 inputEvents = [];
                 updateStats();
+                updateClueFilledStatus();
             }
         }
 
@@ -1454,18 +1604,11 @@
                     input.parentElement.classList.add('correct');
                 });
                 puzzleSolved = true; stopTimer(); updateStats();
+                updateClueFilledStatus();
                 // Mark as cheated - no leaderboard entry allowed
                 usedShowSolution = true;
                 hasSubmittedScore = true;
             }
-        }
-
-        function printPuzzle() {
-            const inputs = document.querySelectorAll('.cell:not(.blocked) input');
-            const values = Array.from(inputs).map(i => i.value);
-            inputs.forEach(i => i.value = '');
-            window.print();
-            inputs.forEach((i, idx) => i.value = values[idx]);
         }
 
         function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); } }, 1000); }
@@ -1477,6 +1620,69 @@
             document.getElementById('stats').textContent = `${filled}/${inputs.length} rutor ifyllda (${Math.round(filled/inputs.length*100)}%)`;
         }
 
+        // Check if all cells for a word are filled and update the clue indicator
+        function updateClueFilledStatus() {
+            // Check across clues
+            (puzzleData.clues.across || []).forEach(clue => {
+                const isFilled = isWordFilled(clue.number, 'across');
+                const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
+                if (clueItem) {
+                    clueItem.classList.toggle('filled', isFilled);
+                }
+            });
+
+            // Check down clues
+            (puzzleData.clues.down || []).forEach(clue => {
+                const isFilled = isWordFilled(clue.number, 'down');
+                const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
+                if (clueItem) {
+                    clueItem.classList.toggle('filled', isFilled);
+                }
+            });
+        }
+
+        // Check if all cells for a specific word have any value (not necessarily correct)
+        function isWordFilled(number, direction) {
+            const cells = getWordCells(number, direction);
+            if (!cells || cells.length === 0) return false;
+            
+            return cells.every(cell => {
+                const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
+                return input && input.value.trim() !== ''; // Just check if filled, not if correct
+            });
+        }
+
+        function getWordCells(number, direction) {
+            // Find the starting cell for this clue number
+            let startRow = -1, startCol = -1;
+            
+            outer: for (let row = 0; row < puzzleData.height; row++) {
+                for (let col = 0; col < puzzleData.width; col++) {
+                    if (puzzleData.cells[row]?.[col]?.num === number) {
+                        startRow = row;
+                        startCol = col;
+                        break outer;
+                    }
+                }
+            }
+            
+            if (startRow < 0) return null;
+            
+            const cells = [];
+            if (direction === 'across') {
+                for (let c = startCol; c < puzzleData.width; c++) {
+                    if (puzzleData.cells[startRow]?.[c] === null) break;
+                    cells.push({ row: startRow, col: c });
+                }
+            } else {
+                for (let r = startRow; r < puzzleData.height; r++) {
+                    if (puzzleData.cells[r]?.[startCol] === null) break;
+                    cells.push({ row: r, col: startCol });
+                }
+            }
+            
+            return cells;
+        }
         document.addEventListener('DOMContentLoaded', loadPuzzle);
     </script>
 </body>

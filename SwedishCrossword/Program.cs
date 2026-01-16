@@ -131,8 +131,8 @@ internal class Program
                 Console.WriteLine("Warning: No words in dictionary, generation may fail");
             }
 
-            // Generate a medium-sized puzzle for web display
-            var options = CrosswordGenerationOptions.Medium;
+            // Generate a hard-sized puzzle for web display
+            var options = CrosswordGenerationOptions.Hard;
             Console.WriteLine($"Generating {options.Width}x{options.Height} puzzle...");
 
             var startTime = DateTime.Now;
@@ -297,18 +297,68 @@ internal class Program
         // Read the template HTML and inject the puzzle data
         var html = GetWebTemplate();
         
-        // Replace the sample puzzleData with the real data
-        var dataPlaceholder = "const puzzleData = {";
-        var dataEndMarker = "};";
+        // Find and replace the puzzleData variable declaration
+        // The pattern is: "let puzzleData = {" followed by a complex object ending with "};"
+        // We need to find the matching closing brace
+        const string dataStart = "let puzzleData = {";
+
+        var startIndex = html.IndexOf(dataStart);
         
-        var startIndex = html.IndexOf(dataPlaceholder);
         if (startIndex >= 0)
         {
-            var endIndex = html.IndexOf(dataEndMarker, startIndex);
-            if (endIndex >= 0)
+            // Find the matching closing brace by counting braces
+            var braceCount = 0;
+            var inString = false;
+            var escapeNext = false;
+            var searchStart = startIndex + dataStart.Length - 1; // Start at the opening brace
+            var endIndex = -1;
+            
+            for (int i = searchStart; i < html.Length; i++)
             {
-                endIndex += dataEndMarker.Length;
-                html = html[..startIndex] + "const puzzleData = " + json + ";" + html[(endIndex)..];
+                var c = html[i];
+                
+                if (escapeNext)
+                {
+                    escapeNext = false;
+                    continue;
+                }
+                
+                if (c == '\\' && inString)
+                {
+                    escapeNext = true;
+                    continue;
+                }
+                
+                if (c == '"' || c == '\'')
+                {
+                    inString = !inString;
+                    continue;
+                }
+                
+                if (!inString)
+                {
+                    if (c == '{') braceCount++;
+                    else if (c == '}')
+                    {
+                        braceCount--;
+                        if (braceCount == 0)
+                        {
+                            // Found the matching closing brace
+                            // Look for the semicolon after it
+                            endIndex = i + 1;
+                            if (endIndex < html.Length && html[endIndex] == ';')
+                            {
+                                endIndex++; // Include the semicolon
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if (endIndex > startIndex)
+            {
+                html = html[..startIndex] + "const puzzleData = " + json + ";" + html[endIndex..];
             }
         }
         
@@ -339,7 +389,6 @@ internal class Program
                 
                 // The index.html loads puzzle.json via fetch, but for standalone HTML
                 // we need to replace the loadPuzzle function to use embedded data.
-                // Find and replace the async loadPuzzle function
                 html = ConvertToStandaloneTemplate(html);
                 return html;
             }
@@ -357,22 +406,46 @@ internal class Program
     private static string ConvertToStandaloneTemplate(string html)
     {
         // Replace the loadPuzzle function that fetches JSON with one that uses embedded data
-        const string originalLoadPuzzle = "async function loadPuzzle()";
-        const string newLoadPuzzle = @"async function loadPuzzle() {
-            // Standalone mode - puzzleData is embedded in the HTML
-            await init();
-        }
+        // Find the async function loadPuzzle() { ... } block and replace the body
+        const string originalFunctionStart = "async function loadPuzzle() {";
+        var funcStart = html.IndexOf(originalFunctionStart);
         
-        async function _originalLoadPuzzle()";
-
-        if (html.Contains(originalLoadPuzzle))
+        if (funcStart >= 0)
         {
-            html = html.Replace(originalLoadPuzzle, newLoadPuzzle);
+            // Find the matching closing brace for the function
+            var braceCount = 0;
+            var foundFirst = false;
+            var funcEnd = -1;
+            
+            for (int i = funcStart + originalFunctionStart.Length - 1; i < html.Length; i++)
+            {
+                var c = html[i];
+                if (c == '{')
+                {
+                    braceCount++;
+                    foundFirst = true;
+                }
+                else if (c == '}')
+                {
+                    braceCount--;
+                    if (foundFirst && braceCount == 0)
+                    {
+                        funcEnd = i + 1;
+                        break;
+                    }
+                }
+            }
+            
+            if (funcEnd > funcStart)
+            {
+                // Replace the entire function with a simple version that just calls init()
+                const string newFunction = @"async function loadPuzzle() {
+            // Standalone mode - puzzleData is already embedded in the HTML
+            await init();
+        }";
+                html = html[..funcStart] + newFunction + html[funcEnd..];
+            }
         }
-
-        // Also need to ensure puzzleData is not initialized as a let with default value
-        // Change "let puzzleData = {" to "const puzzleData = {" for the embedded version
-        html = html.Replace("let puzzleData = {", "const puzzleData = {");
 
         return html;
     }
