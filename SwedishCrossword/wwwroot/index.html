@@ -772,24 +772,14 @@
 
     <script>
         /*
-         * JSONBIN.IO CONFIGURATION
-         * ========================
-         * To enable shared leaderboard across all users:
-         * 
-         * 1. Go to https://jsonbin.io and create a free account
-         * 2. Create a new bin with initial content: {"scores":{}}
-         * 3. Copy the Bin ID and paste it below as JSONBIN_BIN_ID
-         * 4. Go to API Keys, create a new key with read/update permissions
-         * 5. Copy the API key and paste it below as JSONBIN_API_KEY
-         * 6. Make sure the bin is set to PUBLIC for reading
-         * 
-         * Note: The API key will be visible in the browser. For production,
-         * consider using a serverless function as a proxy.
+         * LEADERBOARD CONFIGURATION
+         * =========================
+         * Uses Cloudflare Worker proxy to securely access JSONBin.io
+         * API keys are stored as environment variables in the worker.
          */
-        const JSONBIN_BIN_ID = '696799ccd0ea881f406b7a50';
-        const JSONBIN_API_KEY = '$2a$10$eNnJ1Ti0brIK1jZbG1l8GOryEn8.rIbHOpSNAjH45v2zhMaJyx6Gu';
-        const JSONBIN_ENABLED = JSONBIN_BIN_ID && JSONBIN_API_KEY;
-
+        const LEADERBOARD_PROXY_URL = 'https://leaderboard-proxy.joakim-bergstrom.workers.dev';
+        const LEADERBOARD_ENABLED = true;
+        
         /*
          * ANTI-CHEAT CONFIGURATION
          * ========================
@@ -1042,16 +1032,12 @@
             }
         }
 
-        // Fetch leaderboard from JSONBin.io
+        // Fetch leaderboard from Cloudflare Worker proxy
         async function fetchRemoteLeaderboard() {
-            if (!JSONBIN_ENABLED) return null;
+            if (!LEADERBOARD_ENABLED) return null;
             
             try {
-                const response = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
-                    headers: {
-                        'X-Access-Key': JSONBIN_API_KEY
-                    }
-                });
+                const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
                 
                 if (!response.ok) {
                     console.warn('Failed to fetch remote leaderboard:', response.status);
@@ -1059,7 +1045,7 @@
                 }
                 
                 const data = await response.json();
-                const scores = data.record?.scores || {};
+                const scores = data.scores || {};
                 // Use the full leaderboard key (date + hash) to get the correct leaderboard
                 const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
                 const leaderboard = scores[leaderboardKey] || [];
@@ -1071,22 +1057,18 @@
             }
         }
 
-        // Save leaderboard to JSONBin.io
+        // Save leaderboard via Cloudflare Worker proxy
         async function saveRemoteLeaderboard(leaderboard) {
-            if (!JSONBIN_ENABLED) return false;
+            if (!LEADERBOARD_ENABLED) return false;
             
             try {
                 // First, get current data
-                const getResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
-                    headers: {
-                        'X-Access-Key': JSONBIN_API_KEY
-                    }
-                });
+                const getResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
                 
                 let allScores = {};
                 if (getResponse.ok) {
                     const data = await getResponse.json();
-                    allScores = data.record?.scores || {};
+                    allScores = data.scores || {};
                 }
                 
                 // Use the full leaderboard key (date + hash) to store the correct leaderboard
@@ -1106,12 +1088,11 @@
                     }
                 }
                 
-                // Save updated data
-                const putResponse = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`, {
+                // Save updated data via proxy
+                const putResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`, {
                     method: 'PUT',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'X-Access-Key': JSONBIN_API_KEY
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ scores: allScores })
                 });
@@ -1131,7 +1112,7 @@
         // Load leaderboard (remote first, then local fallback)
         async function loadLeaderboard() {
             // Try remote first
-            if (JSONBIN_ENABLED && !remoteLeaderboardCache) {
+            if (LEADERBOARD_ENABLED && !remoteLeaderboardCache) {
                 const remote = await fetchRemoteLeaderboard();
                 if (remote !== null) {
                     remoteLeaderboardCache = remote;
@@ -1197,7 +1178,7 @@
             remoteLeaderboardCache = leaderboard;
             
             // Try to save remotely (async, don't wait)
-            if (JSONBIN_ENABLED && validation.valid) {
+            if (LEADERBOARD_ENABLED && validation.valid) {
                 saveRemoteLeaderboard(leaderboard).then(success => {
                     if (!success) {
                         console.warn('Remote save failed, score saved locally only');
@@ -1213,14 +1194,14 @@
             const dateEl = document.getElementById('leaderboard-date');
             
             // Show loading state
-            if (JSONBIN_ENABLED && !remoteLeaderboardCache) {
+            if (LEADERBOARD_ENABLED && !remoteLeaderboardCache) {
                 list.innerHTML = '<li class="leaderboard-empty">Laddar topplista...</li>';
             }
             
             const leaderboard = await loadLeaderboard();
             
             if (currentPuzzleDate) {
-                const modeText = JSONBIN_ENABLED ? ' (delad)' : ' (lokal)';
+                const modeText = LEADERBOARD_ENABLED ? ' (delad)' : ' (lokal)';
                 dateEl.textContent = `Korsord: ${currentPuzzleDate}${modeText}`;
             } else {
                 dateEl.textContent = '';
