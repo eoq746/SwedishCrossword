@@ -96,8 +96,8 @@ public class CrosswordGenerator
         // Phase 2: Analyze word connectivity and sort strategically with randomness
         var wordAnalysis = AnalyzeWordConnectivity(candidateWords);
         var sortedWords = wordAnalysis
-            .OrderByDescending(w => w.ConnectivityScore + _random.NextDouble() * 5) // Add randomness to ordering
-            .ThenBy(w => w.Word.Length + _random.Next(-1, 2)) // Slight length variation
+            .OrderByDescending(w => w.ConnectivityScore + _random.NextDouble() * 20) // Increased from 5 to 20 for more shuffling
+            .ThenBy(w => w.Word.Length + _random.Next(-2, 3)) // Increased length variation
             .Select(w => w.Word)
             .ToList();
 
@@ -303,9 +303,9 @@ public class CrosswordGenerator
     {
         var gaps = FindGaps(grid, 2, 8);
         
-        // Shuffle gaps slightly for variety
-        gaps = gaps.OrderBy(g => g.HasIntersections * 10 + _random.Next(5))
-                   .ThenByDescending(g => g.Length)
+        // Shuffle gaps more aggressively for variety
+        gaps = gaps.OrderBy(g => g.HasIntersections * 10 + _random.Next(15)) // Increased from 5 to 15
+                   .ThenByDescending(g => g.Length + _random.Next(-1, 2)) // Add length randomness
                    .Reverse()
                    .ToList();
         
@@ -313,19 +313,19 @@ public class CrosswordGenerator
         {
             if (cancellationToken.IsCancellationRequested) break;
             
-            // Find words that could fit this gap with randomness, excluding already used words
+            // Find words that could fit this gap with more randomness, excluding already used words
             var fittingWords = candidateWords
                 .Except(placedWords)
                 .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
                 .Where(w => w.Length == gap.Length)
-                .Select(w => new { Word = w, Score = ScoreWordForGap(w, grid, gap) + _random.NextDouble() * 2 })
+                .Select(w => new { Word = w, Score = ScoreWordForGap(w, grid, gap) + _random.NextDouble() * 5 }) // Increased from 2 to 5
                 .OrderByDescending(w => w.Score)
-                .Take(15) // More candidates
+                .Take(20) // Increased from 15 to 20 candidates
                 .Select(w => w.Word)
                 .ToList();
 
-            // Pick from top candidates with some randomness
-            var wordsToTry = fittingWords.Take(5).OrderBy(_ => _random.Next()).Concat(fittingWords.Skip(5)).Take(10);
+            // Pick from top candidates with more randomness
+            var wordsToTry = fittingWords.Take(8).OrderBy(_ => _random.Next()).Concat(fittingWords.Skip(8)).Take(12); // Increased from 5/10 to 8/12
             
             foreach (var word in wordsToTry)
             {
@@ -374,15 +374,15 @@ public class CrosswordGenerator
             .Except(placedWords)
             .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
             .Where(w => w.Length >= 2 && w.Length <= 4)
-            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOU???".Contains(c)) + _random.NextDouble() * 2 })
+            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOUÅÄÖ".Contains(c)) + _random.NextDouble() * 4 }) // Increased from 2 to 4
             .OrderByDescending(w => w.Score)
             .Select(w => w.Word)
             .ToList();
         
-        // Shuffle the order slightly for variety
-        var shuffledWords = shortWords.Take(20).OrderBy(_ => _random.Next())
-                                      .Concat(shortWords.Skip(20))
-                                      .Take(60)
+        // Shuffle the order more aggressively for variety
+        var shuffledWords = shortWords.Take(30).OrderBy(_ => _random.Next()) // Increased from 20 to 30
+                                      .Concat(shortWords.Skip(30))
+                                      .Take(80) // Increased from 60 to 80
                                       .ToList();
         
         // Find all possible intersections for short words
@@ -395,7 +395,7 @@ public class CrosswordGenerator
             
             var intersections = grid.GetPossibleIntersections(word)
                 .OrderBy(_ => _random.Next()) // Randomize intersection order
-                .Take(5)
+                .Take(8) // Increased from 5 to 8
                 .ToList();
             
             foreach (var (row, col, direction, _, _, _) in intersections)
@@ -428,22 +428,22 @@ public class CrosswordGenerator
             .Select(w => new
             {
                 Word = w,
-                Score = ScoreAnchorWordWithIntersectionPotential(w, allWords) + _random.NextDouble() * 8 // Add randomness
+                Score = ScoreAnchorWordWithIntersectionPotential(w, allWords) + _random.NextDouble() * 15 // Increased from 8 to 15
             })
             .OrderByDescending(w => w.Score)
-            .Take(5) // Take top 5 candidates
+            .Take(8) // Increased from 5 to 8 candidates
             .ToList();
 
-        // Randomly select from top candidates (weighted towards higher scores)
+        // Randomly select from top candidates (more random selection)
         var bestAnchor = anchorCandidates.Count > 0
-            ? anchorCandidates[_random.Next(Math.Min(3, anchorCandidates.Count))].Word
+            ? anchorCandidates[_random.Next(Math.Min(5, anchorCandidates.Count))].Word // Increased from 3 to 5
             : sortedWords.FirstOrDefault(w => !usedWordTexts.Contains(w.Text));
 
         if (bestAnchor == null)
             return false;
 
-        var centerRow = options.Height / 2;
-        var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2);
+        var centerRow = options.Height / 2 + _random.Next(-1, 2); // Add slight row variation
+        var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2 + _random.Next(-1, 2)); // Add slight column variation
         
         if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords))
         {
@@ -460,18 +460,18 @@ public class CrosswordGenerator
                 .Select(w => new
                 {
                     Word = w,
-                    Score = ScoreSecondAnchorWithIntersectionPotential(w, bestAnchor, allWords) + _random.NextDouble() * 5
+                    Score = ScoreSecondAnchorWithIntersectionPotential(w, bestAnchor, allWords) + _random.NextDouble() * 12 // Increased from 5 to 12
                 })
                 .OrderByDescending(w => w.Score)
                 .Select(w => w.Word)
-                .Take(15) // More candidates for variety
+                .Take(20) // Increased from 15 to 20 candidates
                 .ToList();
 
-            // Shuffle the top candidates slightly
+            // Shuffle the top candidates more aggressively
             if (candidateSecondWords.Count > 3)
             {
-                var topPart = candidateSecondWords.Take(5).OrderBy(_ => _random.Next()).ToList();
-                candidateSecondWords = topPart.Concat(candidateSecondWords.Skip(5)).ToList();
+                var topPart = candidateSecondWords.Take(8).OrderBy(_ => _random.Next()).ToList(); // Increased from 5 to 8
+                candidateSecondWords = topPart.Concat(candidateSecondWords.Skip(8)).ToList();
             }
             
             foreach (var secondWord in candidateSecondWords)

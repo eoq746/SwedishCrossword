@@ -837,13 +837,19 @@
         let suspiciousActivity = [];
         
         // DevTools detection flag (shared with ES module above)
-        // Initialize from window in case the module already set it
+        // Check if the ES module already set the flag before this script ran
         let devToolsOpenedDuringSession = window.devToolsOpenedDuringSession || false;
         
         // Sync the global variable for the ES module to update
+        // Use a backing variable to preserve state
         Object.defineProperty(window, 'devToolsOpenedDuringSession', {
             get() { return devToolsOpenedDuringSession; },
-            set(value) { devToolsOpenedDuringSession = value; }
+            set(value) { 
+                devToolsOpenedDuringSession = value;
+                if (value) {
+                    console.log('DevTools detection flag set to true');
+                }
+            }
         });
 
         // Fallback DevTools detection (in case ES module doesn't load)
@@ -920,7 +926,7 @@
                 reasons.push(`För snabb: ${seconds}s < ${Math.round(minTime)}s minimum`);
             }
             
-            // Check 2: Too few input events (suggests paste or automation)
+            // Check 2: Too few input events (suggests paste/automation)
             if (inputEvents.length < ANTI_CHEAT.minInputEvents) {
                 reasons.push(`För få inmatningar: ${inputEvents.length} < ${ANTI_CHEAT.minInputEvents}`);
             }
@@ -947,7 +953,9 @@
             }
             
             // Check 6: DevTools was opened during the session
-            if (devToolsOpenedDuringSession) {
+            // Read from window to ensure we get the latest value from both detection methods
+            const devToolsWasOpened = window.devToolsOpenedDuringSession || devToolsOpenedDuringSession;
+            if (devToolsWasOpened) {
                 reasons.push('DevTools öppnades under sessionen');
             }
             

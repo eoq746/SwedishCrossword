@@ -63,6 +63,12 @@ public class CrosswordGrid
         if (!CanPlaceWord(word, startRow, startCol, direction))
             return false;
 
+        // DUPLICATE CHECK: Reject if this exact word text is already placed
+        if (_words.Any(w => w.Text.Equals(word.Text, StringComparison.OrdinalIgnoreCase)))
+        {
+            return false; // This word text is already in the puzzle
+        }
+
         // CONNECTIVITY CHECK: If this is not the first word, ensure it connects to existing words
         if (_words.Count > 0 && !WouldConnectToExistingWords(word, startRow, startCol, direction))
         {
