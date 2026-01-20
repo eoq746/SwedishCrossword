@@ -6,7 +6,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ABBÉ",
+    "Word": "ABBE",
     "Clue": "(fransk) katolsk präst",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -354,12 +354,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "VETENSKAPSAKADEMIEN",
-    "Clue": "Sammansatt ord med akademi",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "AKADEMISK",
     "Clue": "Universitets-",
     "Category": "Adjektiv",
@@ -570,7 +564,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ALLÉ",
+    "Word": "ALLE",
     "Clue": "Väg med planterade träd på båda sidor",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -1218,7 +1212,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ARMÉ",
+    "Word": "ARME",
     "Clue": "Alla militära förband (i ett land) som strider på marken",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -3456,7 +3450,7 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "BLASÉ",
+    "Word": "BLASE",
     "Clue": "Blaserad",
     "Category": "Allmänt",
     "Difficulty": "Easy"
@@ -4645,9 +4639,9 @@
   },
   {
     "Word": "KORTBYXOR",
-    "Clue": "Sammansatt ord med byxa",
+    "Clue": "Shorts",
     "Category": "Substantiv",
-    "Difficulty": "Medium"
+    "Difficulty": "Easy"
   },
   {
     "Word": "BÅG",
@@ -5695,13 +5689,13 @@
   },
   {
     "Word": "FÖRSVARSDEPARTEMENTET",
-    "Clue": "Sammansatt ord med departement",
+    "Clue": "De ansvarar för frågor om totalförsvaret",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
     "Word": "UTRIKESDEPARTEMENTET",
-    "Clue": "Sammansatt ord med departement",
+    "Clue": "De ansvarar för Sveriges utrikes-, bistånds- och handelspolitik",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -7249,7 +7243,7 @@
   },
   {
     "Word": "NATIONALENCYKLOPEDIN",
-    "Clue": "Sammansatt ord med encyklopedi",
+    "Clue": "NE",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -7608,7 +7602,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "EUROPÉ",
+    "Word": "EUROPE",
     "Clue": "Person från Europa",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -7639,7 +7633,7 @@
   },
   {
     "Word": "JOHANNESEVANGELIET",
-    "Clue": "Sammansatt ord med evangelium",
+    "Clue": "Helig skrift i NT",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -7951,7 +7945,7 @@
   },
   {
     "Word": "NIAGARAFALLEN",
-    "Clue": "Sammansatt ord med fall",
+    "Clue": "Naturlig sevärdhet på gränsen mellan USA och Kanada",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -8370,7 +8364,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FILÉ",
+    "Word": "FILE",
     "Clue": "Benfritt stycke av kött eller fisk",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -8594,12 +8588,6 @@
   {
     "Word": "FJÄRD",
     "Clue": "Öppet vatten (i en skärgård), särskilt på Sveriges ostkust",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "RIDDARHOLMSFJÄRDEN",
-    "Clue": "Sammansatt ord med fjärd",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -8916,7 +8904,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FOAJÉ",
+    "Word": "FOAJE",
     "Clue": "Gemensamt rum innanför entré",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -9270,7 +9258,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FROTTÉ",
+    "Word": "FROTTE",
     "Clue": "Ett tyg med täta små öglor",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -9342,7 +9330,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FRÄLSNINGSARMÉN",
+    "Word": "FRÄLSNINGSARMEN",
     "Clue": "Ett internationellt frikyrkligt samfund",
     "Category": "Allmänt",
     "Difficulty": "Hard"
@@ -11262,7 +11250,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "GELÉ",
+    "Word": "GELE",
     "Clue": "Stelnad (genomskinlig) massa av saft eller spad",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -16668,7 +16656,7 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "KOMMUNIKÉ",
+    "Word": "KOMMUNIKE",
     "Clue": "Meddelande till allmänheten",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -17904,7 +17892,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "KUPÉ",
+    "Word": "KUPE",
     "Clue": "Sluten avdelning i en järnvägsvagn (ofta för ungefär sex personer)",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -21229,13 +21217,13 @@
   },
   {
     "Word": "MONOGAMI",
-    "Clue": "Sammansatt ord med mono-",
+    "Clue": "Engifte",
     "Category": "Allmänt",
     "Difficulty": "Medium"
   },
   {
     "Word": "MONOLOG",
-    "Clue": "Sammansatt ord med mono-",
+    "Clue": "Envägskommunikation",
     "Category": "Allmänt",
     "Difficulty": "Medium"
   },
@@ -21354,7 +21342,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "MOSKÉ",
+    "Word": "MOSKE",
     "Clue": "Muslimsk gudstjänstlokal",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -22003,7 +21991,7 @@
   },
   {
     "Word": "NATIONALMUSEUM",
-    "Clue": "Sammansatt ord med national-",
+    "Clue": "Konstnärlig myndighet",
     "Category": "Allmänt",
     "Difficulty": "Medium"
   },
@@ -23598,7 +23586,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "PASSÉ",
+    "Word": "PASSE",
     "Clue": "Föråldrad, omodern",
     "Category": "Allmänt",
     "Difficulty": "Easy"
@@ -24463,13 +24451,13 @@
   },
   {
     "Word": "NORDPOLEN",
-    "Clue": "Sammansatt ord med pol",
+    "Clue": "Latitud 90° N",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
     "Word": "SYDPOLEN",
-    "Clue": "Sammansatt ord med pol",
+    "Clue": "Latitud 90° S",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -24553,7 +24541,7 @@
   },
   {
     "Word": "POLYGAMI",
-    "Clue": "Sammansatt ord med poly-",
+    "Clue": "Månggifte",
     "Category": "Allmänt",
     "Difficulty": "Medium"
   },
@@ -25248,7 +25236,7 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "PROTEGÉ",
+    "Word": "PROTEGE",
     "Clue": "Skyddsling",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -26550,7 +26538,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "RENOMMÉ",
+    "Word": "RENOMME",
     "Clue": "Anseende, rykte",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -26784,7 +26772,7 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "RESUMÉ",
+    "Word": "RESUME",
     "Clue": "(kort) sammanfattning, översikt",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -33078,7 +33066,7 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "SUCCÉ",
+    "Word": "SUCCE",
     "Clue": "Stor framgång (hos publik)",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -33126,7 +33114,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "SUFFLÉ",
+    "Word": "SUFFLE",
     "Clue": "En maträtt som blir hög och luftig",
     "Category": "Substantiv",
     "Difficulty": "Easy"
@@ -35886,7 +35874,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "TURNÉ",
+    "Word": "TURNE",
     "Clue": "Rundresa (av artist, politiker e.d.) med framträdanden på bestämda platser",
     "Category": "Substantiv",
     "Difficulty": "Medium"
@@ -36870,7 +36858,7 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "VARIETÉ",
+    "Word": "VARIETE",
     "Clue": "Uppträdande av artister (ofta på krog)",
     "Category": "Substantiv",
     "Difficulty": "Easy"

@@ -1,4 +1,4 @@
-using SwedishCrossword.Models;
+Ôªøusing SwedishCrossword.Models;
 
 namespace SwedishCrossword.Services;
 
@@ -15,7 +15,8 @@ public class CrosswordGenerator
     {
         _dictionary = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         _validator = validator ?? throw new ArgumentNullException(nameof(validator));
-        _random = new Random();
+        // Use a more random seed combining time with a unique value
+        _random = new Random(Guid.NewGuid().GetHashCode());
     }
 
     /// <summary>
@@ -40,7 +41,7 @@ public class CrosswordGenerator
                 
                 if (result != null)
                 {
-                    Console.WriteLine($"Korsord genererat efter {attempts} fˆrsˆk ({result.GetStats().FillPercentage:F1}% fyllnad)");
+                    Console.WriteLine($"Korsord genererat efter {attempts} f√∂rs√∂k ({result.GetStats().FillPercentage:F1}% fyllnad)");
                     if (validationRejections > 0)
                     {
                         Console.WriteLine($"    {validationRejections} korsord avvisades p.g.a. ogiltiga ord under generering");
@@ -54,7 +55,7 @@ public class CrosswordGenerator
             }
             catch (Exception ex)
             {
-                Console.WriteLine($" Fˆrsˆk {attempts} misslyckades: {ex.GetType().Name}: {ex.Message}");
+                Console.WriteLine($" F√∂rs√∂k {attempts} misslyckades: {ex.GetType().Name}: {ex.Message}");
                 if (ex.InnerException != null)
                 {
                     Console.WriteLine($"    Inre fel: {ex.InnerException.Message}");
@@ -67,7 +68,7 @@ public class CrosswordGenerator
 
             if (attempts % 50 == 0 || (attempts > 20 && attempts % 25 == 0 && validationRejections > attempts * 0.8))
             {
-                Console.WriteLine($" Fˆrsˆk {attempts}/{maxAttempts}... ({validationRejections} avvisade fˆr ogiltiga ord, {(double)validationRejections/attempts*100:F0}% avvisningsfrekvens)");
+                Console.WriteLine($" F√∂rs√∂k {attempts}/{maxAttempts}... ({validationRejections} avvisade f√∂r ogiltiga ord, {(double)validationRejections/attempts*100:F0}% avvisningsfrekvens)");
             }
 
             await Task.Delay(5, cancellationToken);
@@ -75,10 +76,10 @@ public class CrosswordGenerator
 
         var rejectionRate = (double)validationRejections / attempts * 100;
         var message = validationRejections > 0 
-            ? $" Kunde inte generera giltigt korsord efter {maxAttempts} fˆrsˆk.\n" +
-              $"    {validationRejections} av {attempts} fˆrsˆk avvisades fˆr ogiltiga ord ({rejectionRate:F1}% avvisningsfrekvens)\n" +
-              $"    Hˆg avvisningsfrekvens kan indikera fˆr strikta valideringsregler eller fˆr liten ordlista"
-            : $" Kunde inte generera korsord efter {maxAttempts} fˆrsˆk\n" +
+            ? $" Kunde inte generera giltigt korsord efter {maxAttempts} f√∂rs√∂k.\n" +
+              $"    {validationRejections} av {attempts} f√∂rs√∂k avvisades f√∂r ogiltiga ord ({rejectionRate:F1}% avvisningsfrekvens)\n" +
+              $"    H√∂g avvisningsfrekvens kan indikera f√∂r strikta valideringsregler eller f√∂r liten ordlista"
+            : $" Kunde inte generera korsord efter {maxAttempts} f√∂rs√∂k\n" +
               $"    Inga ord kunde placeras - kontrollera ordlista och generationsalternativ";
             
         throw new InvalidOperationException(message);
@@ -359,7 +360,7 @@ public class CrosswordGenerator
         }
         
         // Bonus for common letters
-        score += word.Text.Count(c => "AEIOU≈ƒ÷RNSTL".Contains(c)) * 0.3;
+        score += word.Text.Count(c => "AEIOU√Ö√Ñ√ñRNSTL".Contains(c)) * 0.3;
         
         return score;
     }
@@ -374,7 +375,7 @@ public class CrosswordGenerator
             .Except(placedWords)
             .Where(w => !usedWordTexts.Contains(w.Text)) // Exclude words with same text
             .Where(w => w.Length >= 2 && w.Length <= 4)
-            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOU≈ƒ÷".Contains(c)) + _random.NextDouble() * 4 }) // Increased from 2 to 4
+            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOU√Ö√Ñ√ñ".Contains(c)) + _random.NextDouble() * 4 }) // Increased from 2 to 4
             .OrderByDescending(w => w.Score)
             .Select(w => w.Word)
             .ToList();
@@ -508,7 +509,7 @@ public class CrosswordGenerator
         // Part 1: Letter-based scoring (original approach, reduced weight)
         score += word.Text.Count(c => "AEIOU".Contains(c)) * 1.5;  // Vowels (reduced from 3)
         score += word.Text.Count(c => "RNSTL".Contains(c)) * 1.0;  // Common consonants (reduced from 2)
-        score += word.Text.Count(c => "≈ƒ÷".Contains(c)) * 0.5;    // Swedish-specific (reduced from 1)
+        score += word.Text.Count(c => "√Ö√Ñ√ñ".Contains(c)) * 0.5;    // Swedish-specific (reduced from 1)
         
         // Length bonus (prefer 6-9 for better intersection potential)
         if (word.Length >= 6 && word.Length <= 9)
@@ -560,7 +561,7 @@ public class CrosswordGenerator
         double score = 0;
         score += word.Text.Count(c => "AEIOU".Contains(c)) * 3;
         score += word.Text.Count(c => "RNSTL".Contains(c)) * 2;
-        score += word.Text.Count(c => "≈ƒ÷".Contains(c)) * 1;
+        score += word.Text.Count(c => "√Ö√Ñ√ñ".Contains(c)) * 1;
         if (word.Length >= 5 && word.Length <= 8)
             score += 5;
         score += word.Text.Distinct().Count() * 0.5;
@@ -607,8 +608,8 @@ public class CrosswordGenerator
             {
                 Word = word,
                 ConnectivityScore = connectivityScore,
-                VowelCount = word.Text.Count(c => "AEIOU≈ƒ÷".Contains(c)),
-                CommonLetterCount = word.Text.Count(c => "RNSTLKAEIOU≈ƒ÷".Contains(c))
+                VowelCount = word.Text.Count(c => "AEIOU√Ö√Ñ√ñ".Contains(c)),
+                CommonLetterCount = word.Text.Count(c => "RNSTLKAEIOU√Ö√Ñ√ñ".Contains(c))
             });
         }
 
@@ -640,9 +641,14 @@ public class CrosswordGenerator
 
         score += targetWord.Text.Count(c => "RNSTL".Contains(c)) * 0.5;
         score += targetWord.Text.Count(c => "AEIOU".Contains(c)) * 0.3;
-        score += targetWord.Text.Count(c => "≈ƒ÷".Contains(c)) * 0.2;
+        score += targetWord.Text.Count(c => "√Ö√Ñ√ñ".Contains(c)) * 0.2;
 
         if (targetWord.Length > 8) score *= 0.8;
+        
+        // Heavy penalty for rare long words (14+) to prevent disproportionate usage
+        // Distribution: 14=27, 15=8, 16=5, 17=2, 18=2, 19=2, 20=2, 21=1 words
+        if (targetWord.Length >= 14) score *= 0.15;  // 85% penalty for 14+ letter words
+        if (targetWord.Length >= 16) score *= 0.2;   // Additional 80% penalty (total ~97%)
         
         return score;
     }
@@ -674,7 +680,7 @@ public class CrosswordGenerator
                            (currentTargetLength >= 5 && w.Length >= currentTargetLength - 1 && w.Length <= currentTargetLength + 1))
                 .Where(w => !triedWords.Contains(w.Text))
                 .OrderBy(w => Math.Abs(w.Length - currentTargetLength))
-                .ThenByDescending(w => w.Text.Count(c => "AEIOU≈ƒ÷".Contains(c)))
+                .ThenByDescending(w => w.Text.Count(c => "AEIOU√Ö√Ñ√ñ".Contains(c)))
                 .ToList();
 
             if (!availableWords.Any())
@@ -835,11 +841,16 @@ public class CrosswordGenerator
         {
             var intersectionCount = grid.GetPossibleIntersections(word).Count();
             score += intersectionCount * 3;
-            score += word.Text.Count(c => "AEIOU≈ƒ÷".Contains(c)) * 0.5;
+            score += word.Text.Count(c => "AEIOU√Ö√Ñ√ñ".Contains(c)) * 0.5;
             score += word.Text.Count(c => "RNSTL".Contains(c)) * 0.3;
         }
         
         if (word.Length > 10) score -= 2;
+        
+        // Heavy penalty for rare long words (14+) to prevent disproportionate usage
+        if (word.Length >= 14) score -= 10;
+        if (word.Length >= 16) score -= 15;
+        
         score += _random.NextDouble() * 0.5;
         
         return score;
@@ -938,7 +949,7 @@ public class CrosswordGenerator
             Console.WriteLine($"KRITISKT: {validation.InvalidAccidentalWords.Count} ogiltiga ord hittades");
         }
 
-        Console.WriteLine($"Anv‰nda ord: {usedWordCount}");
+        Console.WriteLine($"Anv√§nda ord: {usedWordCount}");
     }
 
     private IEnumerable<Word> GetCandidateWords(CrosswordGenerationOptions options)
@@ -1109,7 +1120,7 @@ public class CrosswordPuzzle
 
         if (across.Count > 0)
         {
-            result.AppendLine("V≈GRƒTT:");
+            result.AppendLine("V√ÖGR√ÑTT:");
             foreach (var word in across.OrderBy(w => w.Number))
             {
                 result.AppendLine($"{word.Number,2}. {word.Clue}");
@@ -1119,7 +1130,7 @@ public class CrosswordPuzzle
         if (down.Count > 0)
         {
             if (across.Count > 0) result.AppendLine();
-            result.AppendLine("LODRƒTT:");
+            result.AppendLine("LODR√ÑTT:");
             foreach (var word in down.OrderBy(w => w.Number))
             {
                 result.AppendLine($"{word.Number,2}. {word.Clue}");

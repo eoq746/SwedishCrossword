@@ -261,193 +261,257 @@ internal class Program
         Console.WriteLine($"Ord: {puzzle.Statistics.WordCount}");
         Console.WriteLine();
 
-        // Ensure wwwroot directory exists
+        // Find the bin output wwwroot directory
         var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
-        if (!Directory.Exists(wwwrootPath))
-        {
-            // Try relative path from project
-            wwwrootPath = "wwwroot";
-        }
         
         if (!Directory.Exists(wwwrootPath))
         {
             Directory.CreateDirectory(wwwrootPath);
         }
 
-        // Save JSON data
+        // Save puzzle.json to a temp file first, then atomically replace
         var jsonPath = Path.Combine(wwwrootPath, "puzzle.json");
-        await printService.SaveAsJsonAsync(puzzle, jsonPath);
+        var tempJsonPath = Path.GetTempFileName();
+        await printService.SaveAsJsonAsync(puzzle, tempJsonPath);
+        CopyAndReplace(tempJsonPath, jsonPath);
         Console.WriteLine($"JSON sparad: {jsonPath}");
 
-        // Also save HTML with embedded data
-        var htmlPath = Path.Combine(wwwrootPath, "puzzle.html");
-        var html = GenerateStandaloneHtml(puzzle, printService);
-        await File.WriteAllTextAsync(htmlPath, html, new UTF8Encoding(false));
-        Console.WriteLine($"HTML sparad: {htmlPath}");
+        // Copy files from source wwwroot to output directory
+        var sourceWwwroot = FindSourceWwwroot();
+        if (sourceWwwroot != null)
+        {
+            // Files to copy from source wwwroot
+            var filesToCopy = new[]
+            {
+                "index.html",
+                "om-oss.html",
+                "kontakt.html",
+                "integritetspolicy.html",
+                "ads.txt",
+                "CNAME",
+                "favicon.ico",
+                "favicon-16x16.png",
+                "favicon-32x32.png",
+                "apple-touch-icon.png",
+                "android-chrome-192x192.png",
+                "android-chrome-512x512.png",
+                "site.webmanifest"
+            };
+
+            foreach (var fileName in filesToCopy)
+            {
+                var sourcePath = Path.Combine(sourceWwwroot, fileName);
+                if (File.Exists(sourcePath))
+                {
+                    var outputPath = Path.Combine(wwwrootPath, fileName);
+                    CopyAndReplace(sourcePath, outputPath);
+                    Console.WriteLine($"Kopierad: {fileName}");
+                }
+            }
+        }
 
         Console.WriteLine();
-        Console.WriteLine("För att spela korsordet, öppna filen i en webbläsare:");
-        Console.WriteLine($"   file:///{Path.GetFullPath(htmlPath).Replace('\\', '/')}");
-    }
-
-    private static string GenerateStandaloneHtml(CrosswordPuzzle puzzle, PrintService printService)
-    {
-        var json = printService.GenerateJsonForWeb(puzzle);
         
-        // Read the template HTML and inject the puzzle data
-        var html = GetWebTemplate();
-        
-        // Find and replace the puzzleData variable declaration
-        // The pattern is: "let puzzleData = {" followed by a complex object ending with "};"
-        // We need to find the matching closing brace
-        const string dataStart = "let puzzleData = {";
-
-        var startIndex = html.IndexOf(dataStart);
-        
-        if (startIndex >= 0)
+        // Ask if user wants to start a local web server
+        Console.Write("Vill du starta en lokal webbserver? (j/n): ");
+        if (Console.ReadLine()?.ToLower() == "j")
         {
-            // Find the matching closing brace by counting braces
-            var braceCount = 0;
-            var inString = false;
-            var escapeNext = false;
-            var searchStart = startIndex + dataStart.Length - 1; // Start at the opening brace
-            var endIndex = -1;
-            
-            for (int i = searchStart; i < html.Length; i++)
-            {
-                var c = html[i];
-                
-                if (escapeNext)
-                {
-                    escapeNext = false;
-                    continue;
-                }
-                
-                if (c == '\\' && inString)
-                {
-                    escapeNext = true;
-                    continue;
-                }
-                
-                if (c == '"' || c == '\'')
-                {
-                    inString = !inString;
-                    continue;
-                }
-                
-                if (!inString)
-                {
-                    if (c == '{') braceCount++;
-                    else if (c == '}')
-                    {
-                        braceCount--;
-                        if (braceCount == 0)
-                        {
-                            // Found the matching closing brace
-                            // Look for the semicolon after it
-                            endIndex = i + 1;
-                            if (endIndex < html.Length && html[endIndex] == ';')
-                            {
-                                endIndex++; // Include the semicolon
-                            }
-                            break;
-                        }
-                    }
-                }
-            }
-            
-            if (endIndex > startIndex)
-            {
-                html = html[..startIndex] + "const puzzleData = " + json + ";" + html[endIndex..];
-            }
+            await StartLocalWebServer(wwwrootPath);
         }
-        
-        return html;
+        else
+        {
+            Console.WriteLine();
+            Console.WriteLine("För att spela korsordet, starta en webbserver manuellt:");
+            Console.WriteLine($"   cd \"{Path.GetFullPath(wwwrootPath)}\"");
+            Console.WriteLine("   http-server .");
+            Console.WriteLine("   Öppna sedan: http://localhost:8080/");
+        }
     }
 
     /// <summary>
-    /// Gets the HTML template by reading from wwwroot/index.html.
-    /// This avoids code duplication by using the same template file that's deployed to GitHub Pages.
+    /// Copies a file to the destination, using atomic replace if the destination exists.
     /// </summary>
-    private static string GetWebTemplate()
+    private static void CopyAndReplace(string sourcePath, string destinationPath)
     {
-        // Try to find index.html in various locations
-        var paths = new[]
-        {
-            "SwedishCrossword/wwwroot/index.html",
-            "wwwroot/index.html",
-            Path.Combine(AppContext.BaseDirectory, "wwwroot", "index.html"),
-            Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "wwwroot", "index.html"),
-        };
+        ArgumentException.ThrowIfNullOrWhiteSpace(sourcePath);
+        ArgumentException.ThrowIfNullOrWhiteSpace(destinationPath);
 
-        foreach (var path in paths)
+        if (!File.Exists(sourcePath))
         {
-            if (File.Exists(path))
-            {
-                Console.WriteLine($"Using template from: {Path.GetFullPath(path)}");
-                var html = File.ReadAllText(path);
-                
-                // The index.html loads puzzle.json via fetch, but for standalone HTML
-                // we need to replace the loadPuzzle function to use embedded data.
-                html = ConvertToStandaloneTemplate(html);
-                return html;
-            }
+            throw new FileNotFoundException("Source file not found", sourcePath);
         }
 
-        throw new FileNotFoundException(
-            "Could not find index.html template. Searched paths:\n" + 
-            string.Join("\n", paths.Select(p => $"  - {Path.GetFullPath(p)}")));
+        var destinationDir = Path.GetDirectoryName(destinationPath);
+        if (!string.IsNullOrEmpty(destinationDir) && !Directory.Exists(destinationDir))
+        {
+            Directory.CreateDirectory(destinationDir);
+        }
+
+        if (File.Exists(destinationPath))
+        {
+            // Use atomic replace when destination exists
+            var tempPath = destinationPath + ".tmp";
+            File.Copy(sourcePath, tempPath, overwrite: true);
+            File.Replace(tempPath, destinationPath, destinationBackupFileName: null);
+        }
+        else
+        {
+            // Simple copy when destination doesn't exist
+            File.Copy(sourcePath, destinationPath, overwrite: true);
+        }
     }
 
     /// <summary>
-    /// Converts the index.html (which loads puzzle.json via fetch) to a standalone template
-    /// that works with embedded puzzle data.
+    /// Finds the source wwwroot directory by walking up from the executable location
     /// </summary>
-    private static string ConvertToStandaloneTemplate(string html)
+    private static string? FindSourceWwwroot()
     {
-        // Replace the loadPuzzle function that fetches JSON with one that uses embedded data
-        // Find the async function loadPuzzle() { ... } block and replace the body
-        const string originalFunctionStart = "async function loadPuzzle() {";
-        var funcStart = html.IndexOf(originalFunctionStart);
-        
-        if (funcStart >= 0)
+        var dir = new DirectoryInfo(AppContext.BaseDirectory);
+
+        while (dir != null)
         {
-            // Find the matching closing brace for the function
-            var braceCount = 0;
-            var foundFirst = false;
-            var funcEnd = -1;
-            
-            for (int i = funcStart + originalFunctionStart.Length - 1; i < html.Length; i++)
+            // Skip bin/obj directories
+            if (!dir.FullName.Contains(Path.DirectorySeparatorChar + "bin" + Path.DirectorySeparatorChar) && 
+                !dir.FullName.Contains(Path.DirectorySeparatorChar + "obj" + Path.DirectorySeparatorChar) &&
+                !dir.FullName.EndsWith(Path.DirectorySeparatorChar + "bin") &&
+                !dir.FullName.EndsWith(Path.DirectorySeparatorChar + "obj"))
             {
-                var c = html[i];
-                if (c == '{')
+                var candidate = Path.Combine(dir.FullName, "wwwroot");
+                if (Directory.Exists(candidate) && File.Exists(Path.Combine(candidate, "index.html")))
                 {
-                    braceCount++;
-                    foundFirst = true;
-                }
-                else if (c == '}')
-                {
-                    braceCount--;
-                    if (foundFirst && braceCount == 0)
-                    {
-                        funcEnd = i + 1;
-                        break;
-                    }
+                    return candidate;
                 }
             }
-            
-            if (funcEnd > funcStart)
+
+            dir = dir.Parent;
+        }
+
+        return null;
+    }
+
+    private static async Task<bool> TryStartHttpServer(string workingDirectory)
+    {
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
             {
-                // Replace the entire function with a simple version that just calls init()
-                const string newFunction = @"async function loadPuzzle() {
-            // Standalone mode - puzzleData is already embedded in the HTML
-            await init();
-        }";
-                html = html[..funcStart] + newFunction + html[funcEnd..];
+                FileName = "cmd.exe",
+                Arguments = "/c http-server .",
+                WorkingDirectory = workingDirectory,
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                CreateNoWindow = false
+            };
+
+            using var process = System.Diagnostics.Process.Start(psi);
+            if (process != null)
+            {
+                Console.WriteLine("http-server startad. Tryck Ctrl+C för att avsluta.");
+                await process.WaitForExitAsync();
+                return true;
+            }
+        }
+        catch (System.ComponentModel.Win32Exception)
+        {
+            // http-server not found, try Python
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Fel vid start av http-server: {ex.Message}");
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Starts a local HTTP server to serve the crossword files.
+    /// Tries http-server (npm) first, then falls back to Python.
+    /// </summary>
+    private static async Task StartLocalWebServer(string wwwrootPath)
+    {
+        var fullPath = Path.GetFullPath(wwwrootPath);
+        const string url = "http://localhost:8080";
+        
+        Console.WriteLine();
+        Console.WriteLine("Startar lokal webbserver...");
+        Console.WriteLine($"Mapp: {fullPath}");
+        Console.WriteLine($"URL: {url}");
+        Console.WriteLine();
+        Console.WriteLine("Tryck Ctrl+C för att stoppa servern.");
+        Console.WriteLine();
+
+        // Try to open the browser
+        try
+        {
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            };
+            System.Diagnostics.Process.Start(psi);
+        }
+        catch
+        {
+            Console.WriteLine($"Kunde inte öppna webbläsaren automatiskt. Öppna {url} manuellt.");
+        }
+
+        // Try http-server first (npm package)
+        if (await TryStartHttpServer(fullPath))
+        {
+            return;
+        }
+
+        // Try Python as fallback
+        if (await TryStartPythonServer(fullPath))
+        {
+            return;
+        }
+        
+        Console.WriteLine("Kunde inte starta någon webbserver.");
+        Console.WriteLine("Installera http-server: npm install -g http-server");
+        Console.WriteLine("Eller använd Python: python -m http.server 8080");
+    }
+
+    private static async Task<bool> TryStartPythonServer(string workingDirectory)
+    {
+        // Try python first, then python3 (Linux/Mac)
+        var pythonCommands = new[] { "python", "python3", "py" };
+
+        foreach (var python in pythonCommands)
+        {
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = python,
+                    Arguments = "-m http.server 8080",
+                    WorkingDirectory = workingDirectory,
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    CreateNoWindow = false
+                };
+
+                using var process = System.Diagnostics.Process.Start(psi);
+                if (process != null)
+                {
+                    Console.WriteLine($"{python} http.server startad. Tryck Ctrl+C för att avsluta.");
+                    await process.WaitForExitAsync();
+                    return true;
+                }
+            }
+            catch (System.ComponentModel.Win32Exception)
+            {
+                // This python command not found, try next
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Fel vid start av {python}: {ex.Message}");
             }
         }
 
-        return html;
+        return false;
     }
 
     private static void ShowDictionaryStats(SwedishDictionary dictionary)
