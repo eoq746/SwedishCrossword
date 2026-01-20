@@ -480,6 +480,15 @@
             pointer-events: none;
         }
 
+        .flag-icon {
+            cursor: help;
+            margin-left: 4px;
+        }
+
+        .flag-icon[title] {
+            position: relative;
+        }
+
         .leaderboard-empty {
             text-align: center;
             color: #9ca3af;
@@ -855,6 +864,7 @@
         let puzzleHash = null;
         let usedShowSolution = false;
         let suspiciousActivity = [];
+        let HAS_VIEWED_SOLUTION = false; // Tracked via server-side IP
         
         // DevTools detection flag (shared with ES module above)
         // Check if the ES module already set the flag before this script ran
@@ -933,6 +943,42 @@
             });
         }
 
+        // Track when user views the solution (server-side IP tracking)
+        async function trackSolutionView() {
+            if (!LEADERBOARD_ENABLED || !puzzleHash) return;
+            
+            try {
+                await fetch(`${LEADERBOARD_PROXY_URL}/viewed-solution`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ puzzleHash })
+                });
+            } catch (e) {
+                console.warn('Failed to track solution view:', e);
+            }
+        }
+
+        // Check if current user (by IP) has viewed the solution before
+        async function checkIfViewedSolution() {
+            if (!LEADERBOARD_ENABLED || !puzzleHash) return false;
+            
+            try {
+                const response = await fetch(`${LEADERBOARD_PROXY_URL}/check-solution-viewed`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ puzzleHash })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    return data.viewed;
+                }
+            } catch (e) {
+                console.warn('Failed to check solution view status:', e);
+            }
+            return false;
+        }
+
         // Analyze input pattern for suspicious activity
         function analyzeInputPattern() {
             if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
@@ -973,10 +1019,15 @@
             }
             
             // Check 6: DevTools was opened during the session
-            // Read from window to ensure we get the latest value from both detection methods
             const devToolsWasOpened = window.devToolsOpenedDuringSession || devToolsOpenedDuringSession;
             if (devToolsWasOpened) {
                 reasons.push('DevTools öppnades under sessionen');
+            }
+            
+            // Check 7: Previously viewed solution (checked via server-side IP tracking)
+            
+            if (HAS_VIEWED_SOLUTION) {
+                reasons.push('Lösningen visades tidigare från denna IP');
             }
             
             return {
@@ -1163,6 +1214,7 @@
         // Add score to leaderboard with anti-cheat validation
         async function addToLeaderboard(username, timeSeconds) {
             // Validate the submission
+            HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
             const validation = analyzeInputPattern();
             
             if (!validation.valid) {
@@ -1245,10 +1297,11 @@
             list.innerHTML = leaderboard.map((entry, index) => {
                 const isCurrentUser = entry.timestamp && (Date.now() - entry.timestamp < 5000);
                 const isFlagged = entry.flagged;
+                const flagTooltip = isFlagged && entry.reasons ? entry.reasons.join('\n') : '';
                 return `
                     <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                         <span class="leaderboard-rank">${index + 1}.</span>
-                        <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? ' ⚠️' : ''}</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}"> ⚠️</span>` : ''}</span>
                         <span class="leaderboard-time">${formatTime(entry.time)}</span>
                     </li>
                 `;
@@ -1261,10 +1314,11 @@
             return div.innerHTML;
         }
 
-        function showUsernameModal() {
+        async function showUsernameModal() {
             if (hasSubmittedScore) return;
             
             // Check for anti-cheat violations
+            HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
             const validation = analyzeInputPattern();
             
             document.getElementById('modal-time').textContent = formatTime(seconds);
@@ -1705,6 +1759,7 @@
                 // Mark as cheated - no leaderboard entry allowed
                 usedShowSolution = true;
                 hasSubmittedScore = true;
+                trackSolutionView();
             }
         }
 

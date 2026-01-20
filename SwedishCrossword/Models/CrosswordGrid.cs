@@ -495,6 +495,14 @@ public class CrosswordGrid
     }
 
     /// <summary>
+    /// Gets all placed word texts as a case-insensitive HashSet for duplicate checking
+    /// </summary>
+    public HashSet<string> GetPlacedWordTexts()
+    {
+        return _words.Select(w => w.Text).ToHashSet(StringComparer.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
     /// Gets words organized by direction
     /// </summary>
     public (List<Word> Across, List<Word> Down) GetWordsByDirection()

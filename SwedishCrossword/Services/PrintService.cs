@@ -153,7 +153,7 @@ public class PrintService
     {
         var sb = new StringBuilder();
         var cellWidth = 5;
-        var cellHeight = 2; // Two lines per cell for better spacing
+        //var cellHeight = 2; // Two lines per cell for better spacing
 
         // Top border
         sb.Append("+");
