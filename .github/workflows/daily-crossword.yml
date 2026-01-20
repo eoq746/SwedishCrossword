@@ -58,8 +58,8 @@ jobs:
           cp SwedishCrossword/wwwroot/integritetspolicy.html _site/
           # Copy favicon and icons
           cp SwedishCrossword/wwwroot/favicon.ico _site/
-          cp SwedishCrossword/wwwroot/favicon.16x16.png _site/
-          cp SwedishCrossword/wwwroot/favicon.32x32.png _site/
+          cp SwedishCrossword/wwwroot/favicon-16x16.png _site/
+          cp SwedishCrossword/wwwroot/favicon-32x32.png _site/
           cp SwedishCrossword/wwwroot/apple-touch-icon.png _site/
           cp SwedishCrossword/wwwroot/android-chrome-192x192.png _site/
           cp SwedishCrossword/wwwroot/android-chrome-512x512.png _site/
