@@ -39,6 +39,16 @@ public class SwedishDictionary
                 Console.WriteLine($"Lexin dictionary not found at: {lexinJsonPath}");
                 Console.WriteLine("Run 'Import from Lexin' option to download and import words.");
             }
+
+            // Try to load synonym pair words (if they've been imported)
+            var synonymJsonPath = SynonymPairImporter.GetJsonFilePath();
+            if (File.Exists(synonymJsonPath))
+            {
+                var countBefore = WordCount;
+                LoadWordsFromFile(synonymJsonPath);
+                var synonymsAdded = WordCount - countBefore;
+                Console.WriteLine($"Loaded synonym pairs: {synonymsAdded} additional words");
+            }
         }
 
         Console.WriteLine($"Total words loaded: {WordCount}");

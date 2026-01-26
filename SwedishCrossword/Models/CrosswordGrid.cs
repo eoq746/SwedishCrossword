@@ -64,9 +64,11 @@ public class CrosswordGrid
             return false;
 
         // DUPLICATE CHECK: Reject if this exact word text is already placed
-        if (_words.Any(w => w.Text.Equals(word.Text, StringComparison.OrdinalIgnoreCase)))
+        var wordTextUpper = word.Text.ToUpperInvariant();
+        foreach (var existingWord in _words)
         {
-            return false; // This word text is already in the puzzle
+            if (existingWord.Text.Equals(wordTextUpper, StringComparison.OrdinalIgnoreCase))
+                return false; // This word text is already in the puzzle
         }
 
         // CONNECTIVITY CHECK: If this is not the first word, ensure it connects to existing words
@@ -104,32 +106,36 @@ public class CrosswordGrid
             {
                 // Use enhanced detection that checks all potentially affected areas
                 var accidentalWords = DetectAccidentalWordsNear(startRow, startCol, direction, word.Length, dictionary);
-                var invalidWords = accidentalWords.Where(w => w.IsValidSwedishWord == false).ToList();
                 
-                // Reject if we created any invalid accidental words
-                if (invalidWords.Any())
+                // Check for invalid accidental words
+                foreach (var accWord in accidentalWords)
                 {
-                    isValid = false;
+                    if (accWord.IsValidSwedishWord == false)
+                    {
+                        isValid = false;
+                        break;
+                    }
                 }
                 
-                // Also reject if any accidental word would duplicate an existing intentional word's text
-                // This prevents the same word appearing twice in the puzzle
+                // Also check for duplicate accidental words if still valid
                 if (isValid)
                 {
-                    var existingWordTexts = _words
-                        .Where(w => w.Id != word.Id) // Exclude the word we just placed
-                        .Select(w => w.Text.ToUpperInvariant())
-                        .ToHashSet(StringComparer.OrdinalIgnoreCase);
-                    
-                    var duplicateAccidentalWords = accidentalWords
-                        .Where(a => a.IsValidSwedishWord == true)
-                        .Where(a => existingWordTexts.Contains(a.Text.ToUpperInvariant()))
-                        .ToList();
-                    
-                    if (duplicateAccidentalWords.Any())
+                    // Build HashSet of existing word texts (excluding the word we just placed)
+                    var existingWordTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                    foreach (var w in _words)
                     {
-                        // This placement would create an accidental word that duplicates an existing word
-                        isValid = false;
+                        if (w.Id != word.Id)
+                            existingWordTexts.Add(w.Text);
+                    }
+                    
+                    // Check if any valid accidental word duplicates an existing word
+                    foreach (var accWord in accidentalWords)
+                    {
+                        if (accWord.IsValidSwedishWord == true && existingWordTexts.Contains(accWord.Text))
+                        {
+                            isValid = false;
+                            break;
+                        }
                     }
                 }
             }
@@ -912,6 +918,7 @@ public class CrosswordGrid
         };
 
         // If we have a dictionary and found valid accidental words, renumber to include them
+        // This ensures the AccidentalWord instances in the result have proper PuzzleNumber values
         if (dictionary != null && result.ValidAccidentalWords.Any(w => w.ShouldIncludeInPuzzle))
         {
             RenumberCluesIncludingAccidental(result.ValidAccidentalWords);

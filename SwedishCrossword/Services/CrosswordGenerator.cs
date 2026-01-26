@@ -30,6 +30,20 @@ public class CrosswordGenerator
         var maxAttempts = options.MaxAttempts;
         var validationRejections = 0;
 
+        // Pre-compute candidate words and their analysis ONCE outside the retry loop
+        var candidateWords = GetCandidateWords(options).ToList();
+        if (candidateWords.Count == 0)
+        {
+            throw new InvalidOperationException("No suitable words found for the specified criteria");
+        }
+        
+        // Analyze word connectivity once - this is expensive and results don't change between attempts
+        var wordAnalysis = AnalyzeWordConnectivity(candidateWords);
+        var sortedAnalysis = wordAnalysis
+            .OrderByDescending(w => w.ConnectivityScore)
+            .ThenBy(w => w.Word.Length)
+            .ToList();
+
         while (attempts < maxAttempts && !cancellationToken.IsCancellationRequested)
         {
             attempts++;
@@ -37,7 +51,7 @@ public class CrosswordGenerator
             try
             {
                 var grid = new CrosswordGrid(options.Width, options.Height);
-                var result = await TryGenerateSmartPuzzleAsync(grid, options, cancellationToken);
+                var result = await TryGenerateSmartPuzzleAsync(grid, candidateWords, sortedAnalysis, options, cancellationToken);
                 
                 if (result != null)
                 {
@@ -85,22 +99,19 @@ public class CrosswordGenerator
         throw new InvalidOperationException(message);
     }
 
-    private async Task<CrosswordGrid?> TryGenerateSmartPuzzleAsync(CrosswordGrid grid, CrosswordGenerationOptions options, CancellationToken cancellationToken)
+    private async Task<CrosswordGrid?> TryGenerateSmartPuzzleAsync(CrosswordGrid grid, List<Word> candidateWords, List<WordAnalysis> sortedAnalysis, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
-        // Phase 1: Get and analyze candidate words
-        var candidateWords = GetCandidateWords(options).ToList();
-        if (candidateWords.Count == 0)
+        // Randomize pick from top candidates instead of randomizing scores
+        // This creates variety between attempts while reusing the pre-computed analysis
+        var sortedWords = new List<Word>(sortedAnalysis.Count);
+        var remaining = new List<WordAnalysis>(sortedAnalysis);
+        while (remaining.Count > 0)
         {
-            throw new InvalidOperationException("No suitable words found for the specified criteria");
+            var pickRange = Math.Min(5, remaining.Count);
+            var pickIndex = _random.Next(pickRange);
+            sortedWords.Add(remaining[pickIndex].Word);
+            remaining.RemoveAt(pickIndex);
         }
-
-        // Phase 2: Analyze word connectivity and sort strategically with randomness
-        var wordAnalysis = AnalyzeWordConnectivity(candidateWords);
-        var sortedWords = wordAnalysis
-            .OrderByDescending(w => w.ConnectivityScore + _random.NextDouble() * 20)
-            .ThenBy(w => w.Word.Length + _random.Next(-2, 3))
-            .Select(w => w.Word)
-            .ToList();
 
         // Phase 3: Smart anchor word selection with randomness
         // Track placed words with their scores for debugging
@@ -116,12 +127,16 @@ public class CrosswordGenerator
         
         await PlaceWordsAdaptivelyWithValidation(grid, sortedWords, placedWords, options, placedWordScores, cancellationToken);
 
+        // Derive gap filling parameters from grid dimensions
+        var maxGapLength = Math.Max(grid.Width, grid.Height) - 2; // Allow gaps up to grid size minus margins
+        var maxBridgeLength = Math.Min(maxGapLength, 10); // Cap bridges at 10 for performance
+
         // Phase 5: Multi-pass gap filling
-        var gapFillingPasses = 3;
+        var gapFillingPasses = 10;
         for (int pass = 1; pass <= gapFillingPasses; pass++)
         {
             var beforeFill = grid.GetStats().FilledCells;
-            await FillGapsAsync(grid, candidateWords, placedWords, options, placedWordScores, cancellationToken);
+            await FillGapsAsync(grid, candidateWords, placedWords, options, placedWordScores, maxGapLength, cancellationToken);
             var afterFill = grid.GetStats().FilledCells;
             
             if (afterFill == beforeFill)
@@ -131,7 +146,30 @@ public class CrosswordGenerator
         // Phase 6: Final short word pass
         await FillWithShortWordsAsync(grid, candidateWords, placedWords, options, placedWordScores, cancellationToken);
 
-        // Phase 7: Validation
+        // Phase 7: Bridge filling - find words that connect existing letters vertically/horizontally
+        for (int pass = 1; pass <= 5; pass++)
+        {
+            var beforeFill = grid.GetStats().FilledCells;
+            await FillBridgeOpportunitiesAsync(grid, candidateWords, placedWords, options, placedWordScores, maxBridgeLength, cancellationToken);
+            var afterFill = grid.GetStats().FilledCells;
+            
+            if (afterFill == beforeFill)
+                break;
+        }
+
+        // Phase 8: Another gap filling pass after bridges
+        for (int pass = 1; pass <= 5; pass++)
+        {
+            var beforeFill = grid.GetStats().FilledCells;
+            await FillGapsAsync(grid, candidateWords, placedWords, options, placedWordScores, maxGapLength, cancellationToken);
+            await FillWithShortWordsAsync(grid, candidateWords, placedWords, options, placedWordScores, cancellationToken);
+            var afterFill = grid.GetStats().FilledCells;
+            
+            if (afterFill == beforeFill)
+                break;
+        }
+
+        // Phase 9: Validation
         var stats = grid.GetStats();
         var minWords = Math.Max(3, grid.Width / 4);
         
@@ -172,7 +210,7 @@ public class CrosswordGenerator
     {
         var gaps = new List<GridGap>();
         
-        // Find horizontal gaps
+        // Find horizontal gaps (consecutive empty cells)
         for (int row = 0; row < grid.Height; row++)
         {
             int gapStart = -1;
@@ -181,7 +219,6 @@ public class CrosswordGenerator
             for (int col = 0; col <= grid.Width; col++)
             {
                 bool isEmpty = col < grid.Width && !grid.GetCell(row, col).HasLetter && !grid.GetCell(row, col).IsBlocked;
-                bool hasIntersection = col < grid.Width && HasAdjacentLetterPerpendicular(grid, row, col, Direction.Across);
                 
                 if (isEmpty)
                 {
@@ -192,7 +229,6 @@ public class CrosswordGenerator
                 {
                     if (gapLength >= minLength && gapLength <= maxLength)
                     {
-                        // Check if gap is bounded properly (not adjacent to letters in same direction)
                         bool leftBounded = gapStart == 0 || grid.GetCell(row, gapStart - 1).HasLetter || grid.GetCell(row, gapStart - 1).IsBlocked;
                         bool rightBounded = gapStart + gapLength >= grid.Width || grid.GetCell(row, gapStart + gapLength).HasLetter || grid.GetCell(row, gapStart + gapLength).IsBlocked;
                         
@@ -214,7 +250,7 @@ public class CrosswordGenerator
             }
         }
         
-        // Find vertical gaps
+        // Find vertical gaps (consecutive empty cells)
         for (int col = 0; col < grid.Width; col++)
         {
             int gapStart = -1;
@@ -295,16 +331,28 @@ public class CrosswordGenerator
     /// Attempts to fill gaps with matching words
     /// </summary>
     private async Task FillGapsAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords, 
-        CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores, CancellationToken cancellationToken)
+        CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores, int maxGapLength, CancellationToken cancellationToken)
     {
-        var gaps = FindGaps(grid, 2, 8);
+        // minLength=2 because shortest Swedish words are 2 letters (e.g., "ÅL", "ÖL")
+        var gaps = FindGaps(grid, minLength: 2, maxLength: maxGapLength);
         
-        gaps = gaps.OrderBy(g => g.HasIntersections * 10 + _random.Next(15))
-                   .ThenByDescending(g => g.Length + _random.Next(-1, 2))
-                   .Reverse()
-                   .ToList();
+        // Sort deterministically, then shuffle top candidates
+        var sortedGaps = gaps.OrderByDescending(g => g.HasIntersections * 10)
+                             .ThenByDescending(g => g.Length)
+                             .ToList();
         
-        foreach (var gap in gaps)
+        // Randomize pick order from sorted gaps
+        var shuffledGaps = new List<GridGap>();
+        var remainingGaps = sortedGaps.ToList();
+        while (remainingGaps.Count > 0)
+        {
+            var pickRange = Math.Min(3, remainingGaps.Count);
+            var pickIndex = _random.Next(pickRange);
+            shuffledGaps.Add(remainingGaps[pickIndex]);
+            remainingGaps.RemoveAt(pickIndex);
+        }
+        
+        foreach (var gap in shuffledGaps)
         {
             if (cancellationToken.IsCancellationRequested) break;
             
@@ -314,19 +362,29 @@ public class CrosswordGenerator
                 .Except(placedWords)
                 .Where(w => !usedWordTexts.Contains(w.Text))
                 .Where(w => w.Length == gap.Length)
-                .Select(w => new { Word = w, Score = ScoreWordForGap(w, grid, gap) + _random.NextDouble() * 5 })
+                .Select(w => new { Word = w, Score = ScoreWordForGap(w, grid, gap) })
                 .OrderByDescending(w => w.Score)
                 .Take(20)
                 .ToList();
 
-            var wordsToTry = fittingWords.Take(8).OrderBy(_ => _random.Next()).Concat(fittingWords.Skip(8)).Take(12);
-            
-            foreach (var scoredWord in wordsToTry)
+            // Randomize pick index from top candidates instead of randomizing scores
+            var wordsToTry = new List<(Word Word, double Score)>();
+            var remainingWords = fittingWords.ToList();
+            var tryCount = Math.Min(12, remainingWords.Count);
+            for (int i = 0; i < tryCount && remainingWords.Count > 0; i++)
             {
-                if (grid.TryPlaceWordWithValidation(scoredWord.Word, gap.Row, gap.Col, gap.Direction, _dictionary, options.RejectInvalidWords))
+                var pickRange = Math.Min(4, remainingWords.Count);
+                var pickIndex = _random.Next(pickRange);
+                wordsToTry.Add((remainingWords[pickIndex].Word, remainingWords[pickIndex].Score));
+                remainingWords.RemoveAt(pickIndex);
+            }
+            
+            foreach (var (word, score) in wordsToTry)
+            {
+                if (grid.TryPlaceWordWithValidation(word, gap.Row, gap.Col, gap.Direction, _dictionary, options.RejectInvalidWords))
                 {
-                    placedWords.Add(scoredWord.Word);
-                    placedWordScores[scoredWord.Word.Text] = scoredWord.Score;
+                    placedWords.Add(word);
+                    placedWordScores[word.Text] = score;
                     break;
                 }
             }
@@ -359,46 +417,70 @@ public class CrosswordGenerator
     }
 
     /// <summary>
-    /// Final pass: try to fill remaining small gaps with 2-3 letter words
+    /// Final pass: try to fill remaining small gaps with 2-4 letter words
     /// </summary>
     private async Task FillWithShortWordsAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords,
         CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores, CancellationToken cancellationToken)
     {
         var usedWordTexts = grid.GetPlacedWordTexts();
+        var placedWordTexts = new HashSet<string>(placedWords.Select(w => w.Text));
         
-        var shortWords = candidateWords
-            .Except(placedWords)
-            .Where(w => !usedWordTexts.Contains(w.Text))
-            .Where(w => w.Length >= 2 && w.Length <= 4)
-            .Select(w => new { Word = w, Score = w.Text.Count(c => "AEIOUÅÄÖ".Contains(c)) + _random.NextDouble() * 4 })
-            .OrderByDescending(w => w.Score)
-            .ToList();
+        // Score and filter in single pass, pre-allocate capacity
+        var shortWords = new List<(Word Word, double Score)>(100);
+        foreach (var w in candidateWords)
+        {
+            if (w.Length < 2 || w.Length > 4) continue;
+            if (placedWordTexts.Contains(w.Text)) continue;
+            if (usedWordTexts.Contains(w.Text)) continue;
+            
+            var score = (double)CountVowels(w.Text);
+            shortWords.Add((w, score));
+        }
         
-        // Shuffle the order more aggressively for variety
-        var shuffledWords = shortWords.Take(30).OrderBy(_ => _random.Next())
-                                      .Concat(shortWords.Skip(30))
-                                      .Take(80)
-                                      .ToList();
+        // Sort by score descending
+        shortWords.Sort((a, b) => b.Score.CompareTo(a.Score));
+        
+        // Randomize pick index from top candidates instead of randomizing scores
+        var shuffledWords = new List<(Word Word, double Score)>(80);
+        var remaining = shortWords.Count > 80 ? shortWords.GetRange(0, 80) : shortWords;
+        var remainingList = new List<(Word Word, double Score)>(remaining);
+        
+        while (remainingList.Count > 0 && shuffledWords.Count < 80)
+        {
+            var pickRange = Math.Min(5, remainingList.Count);
+            var pickIndex = _random.Next(pickRange);
+            shuffledWords.Add(remainingList[pickIndex]);
+            remainingList.RemoveAt(pickIndex);
+        }
         
         // Find all possible intersections for short words
-        foreach (var scoredWord in shuffledWords)
+        foreach (var (word, score) in shuffledWords)
         {
             if (cancellationToken.IsCancellationRequested) break;
             
             // Skip if this word text was placed in a previous iteration
-            if (grid.GetPlacedWordTexts().Contains(scoredWord.Word.Text)) continue;
+            if (usedWordTexts.Contains(word.Text)) continue;
             
-            var intersections = grid.GetPossibleIntersections(scoredWord.Word)
-                .OrderBy(_ => _random.Next())
-                .Take(8)
-                .ToList();
+            var intersections = grid.GetPossibleIntersections(word).Take(15).ToList();
+            if (intersections.Count == 0) continue;
             
-            foreach (var (row, col, direction, _, _, _) in intersections)
+            // Randomize pick index from intersections
+            var shuffledIntersections = new List<(int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex)>(8);
+            while (intersections.Count > 0 && shuffledIntersections.Count < 8)
             {
-                if (grid.TryPlaceWordWithValidation(scoredWord.Word, row, col, direction, _dictionary, options.RejectInvalidWords))
+                var pickIndex = _random.Next(intersections.Count);
+                shuffledIntersections.Add(intersections[pickIndex]);
+                intersections.RemoveAt(pickIndex);
+            }
+            
+            foreach (var (row, col, direction, _, _, _) in shuffledIntersections)
+            {
+                if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                 {
-                    placedWords.Add(scoredWord.Word);
-                    placedWordScores[scoredWord.Word.Text] = scoredWord.Score;
+                    placedWords.Add(word);
+                    placedWordTexts.Add(word.Text);
+                    usedWordTexts.Add(word.Text);
+                    placedWordScores[word.Text] = score;
                     break;
                 }
             }
@@ -407,250 +489,189 @@ public class CrosswordGenerator
         }
     }
 
-    #endregion
-
-    #region Improved Anchor Selection
-
-    private bool PlaceAnchorWordsWithValidation(CrosswordGrid grid, List<Word> sortedWords, List<Word> allWords, 
-        CrosswordGenerationOptions options)
+    /// <summary>
+    /// Finds vertical bridge opportunities - columns where existing letters from horizontal words
+    /// could be connected by placing a vertical word that uses those letters.
+    /// For example: if row 5 has 'K' at col 10 and row 7 has 'N' at col 10, 
+    /// we could place "KAN" vertically starting at row 5, col 10.
+    /// </summary>
+    private List<VerticalBridgeOpportunity> FindVerticalBridgeOpportunities(CrosswordGrid grid, int minLength = 2, int maxLength = 8)
     {
-        var placed = 0;
-        var usedWordTexts = grid.GetPlacedWordTexts();
-
-        // Select first anchor word: combine letter scoring with actual intersection potential + randomness
-        var anchorCandidates = allWords
-            .Where(w => w.Length >= 5 && w.Length <= Math.Min(10, options.Width - 2))
-            .Where(w => !usedWordTexts.Contains(w.Text))
-            .Select(w => new
-            {
-                Word = w,
-                Score = ScoreAnchorWordWithIntersectionPotential(w, allWords) + _random.NextDouble() * 15
-            })
-            .OrderByDescending(w => w.Score)
-            .Take(8)
-            .ToList();
-
-        // Randomly select from top candidates (more random selection)
-        var bestAnchor = anchorCandidates.Count > 0
-            ? anchorCandidates[_random.Next(Math.Min(5, anchorCandidates.Count))].Word
-            : sortedWords.FirstOrDefault(w => !usedWordTexts.Contains(w.Text));
-
-        if (bestAnchor == null)
-            return false;
-
-        var centerRow = options.Height / 2 + _random.Next(-1, 2);
-        var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2 + _random.Next(-1, 2));
+        var opportunities = new List<VerticalBridgeOpportunity>();
         
-        if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords))
+        for (int col = 0; col < grid.Width; col++)
         {
-            placed++;
-            usedWordTexts = grid.GetPlacedWordTexts(); // Refresh after placement
-        }
-
-        // Second anchor - find word with best intersection potential with first, with randomness
-        if (placed > 0 && sortedWords.Count > 1)
-        {
-            var candidateSecondWords = allWords
-                .Where(w => w != bestAnchor && !usedWordTexts.Contains(w.Text))
-                .Where(w => w.Text.Any(c => bestAnchor.Text.Contains(c)))
-                .Select(w => new
-                {
-                    Word = w,
-                    Score = ScoreSecondAnchorWithIntersectionPotential(w, bestAnchor, allWords) + _random.NextDouble() * 12
-                })
-                .OrderByDescending(w => w.Score)
-                .Select(w => w.Word)
-                .Take(20)
-                .ToList();
-
-            // Shuffle the top candidates more aggressively
-            if (candidateSecondWords.Count > 3)
-            {
-                var topPart = candidateSecondWords.Take(8).OrderBy(_ => _random.Next()).ToList();
-                candidateSecondWords = topPart.Concat(candidateSecondWords.Skip(8)).ToList();
-            }
+            // Scan down the column to find sequences that include existing letters
+            // We want to find: letter -> (empty or letter)* -> letter patterns
             
-            foreach (var secondWord in candidateSecondWords)
+            int startRow = -1;
+            var pattern = new List<(int Row, char? Letter)>();
+            
+            for (int row = 0; row <= grid.Height; row++)
             {
-                var intersections = grid.GetPossibleIntersections(secondWord)
-                    .OrderByDescending(i => ScoreAnchorIntersection(i, grid) + _random.NextDouble() * 0.5)
-                    .Take(5)
-                    .ToList();
+                bool isEnd = row >= grid.Height;
+                bool hasLetter = !isEnd && grid.GetCell(row, col).HasLetter;
+                bool isBlocked = !isEnd && grid.GetCell(row, col).IsBlocked;
+                bool isEmpty = !isEnd && !hasLetter && !isBlocked;
                 
-                foreach (var (row, col, direction, _, _, _) in intersections)
+                if (isBlocked || isEnd)
                 {
-                    if (grid.TryPlaceWordWithValidation(secondWord, row, col, direction, _dictionary, options.RejectInvalidWords))
+                    // End of potential sequence - evaluate what we collected
+                    if (pattern.Count >= minLength && pattern.Count <= maxLength)
                     {
-                        placed++;
-                        break;
+                        // Check if this pattern has at least 2 existing letters with gaps between them
+                        var letters = pattern.Where(p => p.Letter.HasValue).ToList();
+                        var empties = pattern.Where(p => !p.Letter.HasValue).ToList();
+                        
+                        if (letters.Count >= 2 && empties.Count >= 1)
+                        {
+                            // This is a bridge opportunity!
+                            opportunities.Add(new VerticalBridgeOpportunity
+                            {
+                                Col = col,
+                                StartRow = startRow,
+                                Length = pattern.Count,
+                                Pattern = pattern.Select(p => p.Letter).ToList(),
+                                ExistingLetterCount = letters.Count,
+                                EmptyCellCount = empties.Count
+                            });
+                        }
                     }
+                    
+                    // Reset for next sequence
+                    startRow = -1;
+                    pattern.Clear();
                 }
-                
-                if (placed > 1) break;
-            }
-        }
-
-        return placed > 0;
-    }
-
-    /// <summary>
-    /// Scores anchor word using hybrid approach: letter quality + actual intersection potential
-    /// </summary>
-    private double ScoreAnchorWordWithIntersectionPotential(Word word, List<Word> allWords)
-    {
-        double score = 0;
-        
-        // Part 1: Letter-based scoring (original approach, reduced weight)
-        score += word.Text.Count(c => "AEIOU".Contains(c)) * 1.5;  // Vowels (reduced from 3)
-        score += word.Text.Count(c => "RNSTL".Contains(c)) * 1.0;  // Common consonants (reduced from 2)
-        score += word.Text.Count(c => "ÅÄÖ".Contains(c)) * 0.5;    // Swedish-specific (reduced from 1)
-        
-        // Length bonus (prefer 6-9 for better intersection potential)
-        if (word.Length >= 6 && word.Length <= 9)
-            score += 3;
-        else if (word.Length >= 5 && word.Length <= 8)
-            score += 2;
-        
-        // Unique letters bonus
-        score += word.Text.Distinct().Count() * 0.5;
-        
-        // Part 2: Actual intersection potential (NEW - major factor)
-        var intersectionPotential = CalculateIntersectionPotential(word, allWords);
-        score += intersectionPotential / 500.0;  // Normalize to reasonable range (typical values 15000-21000)
-        
-        return score;
-    }
-
-    /// <summary>
-    /// Calculates how many other words can intersect with this word
-    /// </summary>
-    private int CalculateIntersectionPotential(Word word, List<Word> allWords)
-    {
-        int total = 0;
-        foreach (var letter in word.Text.Distinct())
-        {
-            total += allWords.Count(other => other.Text != word.Text && other.Text.Contains(letter));
-        }
-        return total;
-    }
-
-    private double ScoreSecondAnchorWithIntersectionPotential(Word word, Word firstAnchor, List<Word> allWords)
-    {
-        double score = ScoreAnchorWordWithIntersectionPotential(word, allWords);
-        
-        // Bonus for having multiple shared letters with first anchor
-        var sharedLetters = word.Text.Intersect(firstAnchor.Text).Count();
-        score += sharedLetters * 3;
-        
-        // Additional bonus for different unique letters (more grid coverage)
-        var newLetters = word.Text.Except(firstAnchor.Text).Distinct().Count();
-        score += newLetters * 1.5;
-        
-        return score;
-    }
-
-    // Keep original for backwards compatibility but mark as deprecated
-    private double ScoreAnchorWord(Word word)
-    {
-        double score = 0;
-        score += word.Text.Count(c => "AEIOU".Contains(c)) * 3;
-        score += word.Text.Count(c => "RNSTL".Contains(c)) * 2;
-        score += word.Text.Count(c => "ÅÄÖ".Contains(c)) * 1;
-        if (word.Length >= 5 && word.Length <= 8)
-            score += 5;
-        score += word.Text.Distinct().Count() * 0.5;
-        return score;
-    }
-
-    private double ScoreSecondAnchor(Word word, Word firstAnchor)
-    {
-        double score = ScoreAnchorWord(word);
-        var sharedLetters = word.Text.Intersect(firstAnchor.Text).Count();
-        score += sharedLetters * 3;
-        return score;
-    }
-
-    private double ScoreAnchorIntersection((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid)
-    {
-        var (row, col, direction, _, myIndex, _) = intersection;
-        
-        double score = 1.0;
-        
-        // Prefer intersections near the middle of the word
-        var distanceFromMiddle = Math.Abs(myIndex - intersection.IntersectingWord.Length / 2.0);
-        score += (5 - distanceFromMiddle) * 0.5;
-        
-        // Prefer positions near center of grid
-        var centerDistance = Math.Abs(row - grid.Height / 2.0) + Math.Abs(col - grid.Width / 2.0);
-        score -= centerDistance * 0.1;
-        
-        return score;
-    }
-
-    #endregion
-
-    #region Word Analysis
-
-    private List<WordAnalysis> AnalyzeWordConnectivity(List<Word> words)
-    {
-        var analysis = new List<WordAnalysis>();
-        
-        foreach (var word in words)
-        {
-            var connectivityScore = CalculateConnectivityScore(word, words);
-            analysis.Add(new WordAnalysis
-            {
-                Word = word,
-                ConnectivityScore = connectivityScore,
-                VowelCount = word.Text.Count(c => "AEIOUÅÄÖ".Contains(c)),
-                CommonLetterCount = word.Text.Count(c => "RNSTLKAEIOUÅÄÖ".Contains(c))
-            });
-        }
-
-        return analysis;
-    }
-
-    private double CalculateConnectivityScore(Word targetWord, List<Word> allWords)
-    {
-        var score = 0.0;
-        var letterFreq = new Dictionary<char, int>();
-        
-        foreach (var c in targetWord.Text)
-        {
-            letterFreq[c] = letterFreq.GetValueOrDefault(c, 0) + 1;
-        }
-
-        foreach (var otherWord in allWords)
-        {
-            if (otherWord == targetWord) continue;
-            
-            foreach (var c in targetWord.Text)
-            {
-                if (otherWord.Text.Contains(c))
+                else if (hasLetter || isEmpty)
                 {
-                    score += 1.0 / Math.Sqrt(letterFreq[c]);
+                    if (startRow == -1) startRow = row;
+                    
+                    char? letter = hasLetter ? grid.GetCell(row, col).Letter : null;
+                    pattern.Add((row, letter));
                 }
             }
         }
-
-        score += targetWord.Text.Count(c => "RNSTL".Contains(c)) * 0.5;
-        score += targetWord.Text.Count(c => "AEIOU".Contains(c)) * 0.3;
-        score += targetWord.Text.Count(c => "ÅÄÖ".Contains(c)) * 0.2;
-
-        // Penalty for words longer than 10 (prefer medium-length words)
-        if (targetWord.Length > 10) score *= 0.6;
-        if (targetWord.Length > 12) score *= 0.5;
         
-        // Severe penalty for rare long words (14+) - make them almost never selected
-        if (targetWord.Length >= 14) score *= 0.05;  // 95% penalty
-        if (targetWord.Length >= 16) score *= 0.05;  // Additional 95% penalty (total ~99.75%)
+        // Also find horizontal bridge opportunities
+        for (int row = 0; row < grid.Height; row++)
+        {
+            int startCol = -1;
+            var pattern = new List<(int Col, char? Letter)>();
+            
+            for (int col = 0; col <= grid.Width; col++)
+            {
+                bool isEnd = col >= grid.Width;
+                bool hasLetter = !isEnd && grid.GetCell(row, col).HasLetter;
+                bool isBlocked = !isEnd && grid.GetCell(row, col).IsBlocked;
+                bool isEmpty = !isEnd && !hasLetter && !isBlocked;
+                
+                if (isBlocked || isEnd)
+                {
+                    if (pattern.Count >= minLength && pattern.Count <= maxLength)
+                    {
+                        var letters = pattern.Where(p => p.Letter.HasValue).ToList();
+                        var empties = pattern.Where(p => !p.Letter.HasValue).ToList();
+                        
+                        if (letters.Count >= 2 && empties.Count >= 1)
+                        {
+                            opportunities.Add(new VerticalBridgeOpportunity
+                            {
+                                Col = startCol,
+                                StartRow = row,
+                                Length = pattern.Count,
+                                Pattern = pattern.Select(p => p.Letter).ToList(),
+                                ExistingLetterCount = letters.Count,
+                                EmptyCellCount = empties.Count,
+                                IsHorizontal = true
+                            });
+                        }
+                    }
+                    
+                    startCol = -1;
+                    pattern.Clear();
+                }
+                else if (hasLetter || isEmpty)
+                {
+                    if (startCol == -1) startCol = col;
+                    
+                    char? letter = hasLetter ? grid.GetCell(row, col).Letter : null;
+                    pattern.Add((col, letter));
+                }
+            }
+        }
         
-        return score;
+        // Sort by most existing letters (best bridge opportunities first)
+        return opportunities
+            .OrderByDescending(o => o.ExistingLetterCount)
+            .ThenBy(o => o.EmptyCellCount)
+            .ToList();
     }
 
-    #endregion
+    /// <summary>
+    /// Attempts to fill bridge opportunities with matching words
+    /// </summary>
+    private async Task FillBridgeOpportunitiesAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords,
+        CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores, int maxBridgeLength, CancellationToken cancellationToken)
+    {
+        // minLength=2 because shortest Swedish words are 2 letters
+        var opportunities = FindVerticalBridgeOpportunities(grid, minLength: 2, maxLength: maxBridgeLength);
+        
+        if (opportunities.Count == 0) return;
+        
+        var usedWordTexts = grid.GetPlacedWordTexts();
+        var placedWordTexts = new HashSet<string>(placedWords.Select(w => w.Text));
+        
+        foreach (var opportunity in opportunities.Take(50)) // Limit to avoid too much processing
+        {
+            if (cancellationToken.IsCancellationRequested) break;
+            
+            // Build a regex-like pattern for matching words
+            // e.g., pattern [K, null, N] matches words like "KAN", "KEN", "KON"
+            var matchingWords = FindWordsMatchingPattern(candidateWords, opportunity.Pattern, placedWordTexts, usedWordTexts);
+            
+            if (matchingWords.Count == 0) continue;
+            
+            // Shuffle and try top candidates
+            var wordsToTry = matchingWords.Take(10).ToList();
+            for (int i = 0; i < wordsToTry.Count && i < 5; i++)
+            {
+                var swapIdx = i + _random.Next(Math.Min(3, wordsToTry.Count - i));
+                if (swapIdx != i)
+                {
+                    (wordsToTry[i], wordsToTry[swapIdx]) = (wordsToTry[swapIdx], wordsToTry[i]);
+                }
+            }
+            
+            foreach (var word in wordsToTry.Take(5))
+            {
+                var direction = opportunity.IsHorizontal ? Direction.Across : Direction.Down;
+                var row = opportunity.IsHorizontal ? opportunity.StartRow : opportunity.StartRow;
+                var col = opportunity.IsHorizontal ? opportunity.Col : opportunity.Col;
+                
+                if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
+                {
+                    placedWords.Add(word);
+                    placedWordTexts.Add(word.Text);
+                    usedWordTexts.Add(word.Text);
+                    placedWordScores[word.Text] = opportunity.ExistingLetterCount * 10; // Score based on bridge quality
+                    break;
+                }
+            }
+            
+            await Task.Yield();
+        }
+    }
 
-    #region Adaptive Placement with Direction Balancing
+    private static int CountVowels(string text)
+    {
+        int count = 0;
+        foreach (var c in text)
+        {
+            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+                count++;
+        }
+        return count;
+    }
 
     private async Task PlaceWordsAdaptivelyWithValidation(CrosswordGrid grid, List<Word> sortedWords, 
         HashSet<Word> placedWords, CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores, CancellationToken cancellationToken)
@@ -663,6 +684,9 @@ public class CrosswordGenerator
         var consecutiveFailures = 0;
         var triedWords = new HashSet<string>();
         bool requireIntersections = placedWords.Count > 0;
+        
+        // Pre-compute placed word texts for faster lookup
+        var placedWordTexts = new HashSet<string>(placedWords.Select(w => w.Text));
 
         while (placementAttempts < maxPlacementAttempts && 
                currentTargetLength >= options.MinWordLength && 
@@ -670,17 +694,19 @@ public class CrosswordGenerator
         {
             var usedWordTexts = grid.GetPlacedWordTexts();
             
+            // Combine all filters into a single Where clause and avoid multiple enumerations
+            var lengthMin = currentTargetLength >= 5 ? currentTargetLength - 2 : currentTargetLength;
             var availableWords = sortedWords
-                .Except(placedWords)
-                .Where(w => !usedWordTexts.Contains(w.Text))
-                .Where(w => w.Length == currentTargetLength || 
-                           (currentTargetLength >= 5 && w.Length >= currentTargetLength - 1 && w.Length <= currentTargetLength + 1))
-                .Where(w => !triedWords.Contains(w.Text))
+                .Where(w => !placedWordTexts.Contains(w.Text) 
+                         && !usedWordTexts.Contains(w.Text)
+                         && !triedWords.Contains(w.Text)
+                         && w.Length >= lengthMin && w.Length <= currentTargetLength)
                 .OrderBy(w => Math.Abs(w.Length - currentTargetLength))
-                .ThenByDescending(w => w.Text.Count(c => "AEIOUÅÄÖ".Contains(c)))
+                .ThenByDescending(w => CountVowels(w.Text))
+                .Take(50)  // Limit early to avoid processing too many words
                 .ToList();
 
-            if (!availableWords.Any())
+            if (availableWords.Count == 0)
             {
                 currentTargetLength--;
                 consecutiveFailures = 0;
@@ -716,12 +742,25 @@ public class CrosswordGenerator
                     .Take(15)
                     .ToList();
 
-                foreach (var scoredIntersection in intersections)
+                // Randomize pick index from top intersections
+                var intersectionsToTry = new List<ScoredIntersection>(8);
+                var remainingCount = intersections.Count;
+                for (int i = 0; i < 8 && remainingCount > 0; i++)
+                {
+                    var pickRange = Math.Min(3, remainingCount);
+                    var pickIndex = _random.Next(pickRange);
+                    intersectionsToTry.Add(intersections[pickIndex]);
+                    intersections.RemoveAt(pickIndex);
+                    remainingCount--;
+                }
+
+                foreach (var scoredIntersection in intersectionsToTry)
                 {
                     var (row, col, direction, _, _, _) = scoredIntersection.Intersection;
                     if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                     {
                         placedWords.Add(word);
+                        placedWordTexts.Add(word.Text);
                         placedWordScores[word.Text] = wordScore;
                         placed = true;
                         consecutiveFailures = 0;
@@ -738,6 +777,7 @@ public class CrosswordGenerator
                     if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
                     {
                         placedWords.Add(word);
+                        placedWordTexts.Add(word.Text);
                         placedWordScores[word.Text] = wordScore;
                         placed = true;
                         consecutiveFailures = 0;
@@ -762,12 +802,120 @@ public class CrosswordGenerator
         }
 
         // Report results
-        if (placedWords.Any())
+        if (placedWords.Count > 0)
         {
             var finalStats = grid.GetStats();
             var avgWordLength = placedWords.Average(w => w.Length);
             Console.WriteLine($"Adaptiv placering: {finalStats.FillPercentage:F1}% fyllnad, {placedWords.Count} ord (snitt: {avgWordLength:F1})");
         }
+    }
+    
+    private (Word? Word, double Score) SelectBestWordWithDirectionBalanceAndScore(List<Word> availableWords, CrosswordGrid grid, bool requireIntersections)
+    {
+        if (availableWords.Count == 0) return (null, 0);
+
+        var preferredDirection = GetPreferredDirection(grid);
+        
+        // Score deterministically - limit to first 25 words
+        var count = Math.Min(25, availableWords.Count);
+        var scored = new List<(Word Word, int IntersectionCount, int PreferredCount, double Score)>(count);
+        
+        for (int i = 0; i < count; i++)
+        {
+            var word = availableWords[i];
+            int intersectionCount = 0;
+            int preferredDirectionIntersections = 0;
+            
+            if (requireIntersections)
+            {
+                foreach (var intersection in grid.GetPossibleIntersections(word))
+                {
+                    intersectionCount++;
+                    if (intersection.Direction == preferredDirection)
+                        preferredDirectionIntersections++;
+                }
+                
+                // Skip words with no intersections when required
+                if (intersectionCount == 0) continue;
+            }
+            else
+            {
+                intersectionCount = 1;
+            }
+            
+            var score = CalculateAdaptiveWordScore(word, intersectionCount, requireIntersections) 
+                      + preferredDirectionIntersections * 2;
+            
+            scored.Add((word, intersectionCount, preferredDirectionIntersections, score));
+        }
+
+        if (scored.Count == 0) return (null, 0);
+        
+        // Sort by score descending
+        scored.Sort((a, b) => b.Score.CompareTo(a.Score));
+
+        // Randomize pick index from top candidates
+        var pickRange = Math.Min(4, scored.Count);
+        var pickIndex = _random.Next(pickRange);
+        var selected = scored[pickIndex];
+        return (selected.Word, selected.Score);
+    }
+
+    private double CalculateAdaptiveWordScore(Word word, int intersectionCount, bool requireIntersections)
+    {
+        var score = 0.0;
+        var length = word.Length;
+        
+        // Moderate length bonus - prefer medium-length words (5-10)
+        if (length >= 5 && length <= 10)
+            score += length * 1.5;
+        else if (length < 5)
+            score += length * 1.0;
+        else
+            score += 15.0; // Cap the length bonus at 10 letters (10 * 1.5)
+        
+        if (requireIntersections)
+        {
+            // Use passed intersection count instead of recomputing
+            score += (intersectionCount / (double)length) * 10;
+            
+            // Count vowels and common consonants in single pass
+            foreach (var c in word.Text)
+            {
+                if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+                    score += 0.5;
+                else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                    score += 0.3;
+            }
+        }
+        
+        // Heavy penalty for rare long words (15+) - consistent with CalculateConnectivityScore
+        if (length >= 15) score *= 0.05;  // 95% penalty for 15+ letter words
+        if (length >= 16) score *= 0.05;  // Additional 95% penalty (total ~99.75%)
+
+        return score;
+    }
+
+    private double ScoreIntersectionAdaptive((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid, int wordLength)
+    {
+        var (row, col, direction, intersectingWord, myIndex, theirIndex) = intersection;
+        
+        var score = 1.0;
+        var sharedLetter = intersectingWord.GetCharAt(theirIndex);
+        
+        // Use pattern matching instead of string.Contains
+        if (sharedLetter is 'A' or 'E' or 'I' or 'O' or 'U') score += 0.5;
+        else if (sharedLetter is 'R' or 'N' or 'S' or 'T' or 'L') score += 0.3;
+        
+        var distanceFromEnd = Math.Min(myIndex, wordLength - myIndex - 1);
+        score += distanceFromEnd * 0.2;
+        
+        var surroundingWords = CountNearbyWords(grid, row, col, 3);
+        score -= surroundingWords * 0.15;
+        
+        if (intersectingWord.Length >= 6) score += 0.4;
+        
+        return score;
     }
 
     private Direction GetPreferredDirection(CrosswordGrid grid)
@@ -777,49 +925,6 @@ public class CrosswordGenerator
         
         // Return the direction we need more of
         return acrossCount <= downCount ? Direction.Across : Direction.Down;
-    }
-
-    private (Word? Word, double Score) SelectBestWordWithDirectionBalanceAndScore(List<Word> availableWords, CrosswordGrid grid, bool requireIntersections)
-    {
-        if (!availableWords.Any()) return (null, 0);
-
-        var preferredDirection = GetPreferredDirection(grid);
-        
-        var scored = availableWords.Take(25).Select(word =>
-        {
-            var intersections = requireIntersections ? grid.GetPossibleIntersections(word).ToList() : [];
-            var preferredDirectionIntersections = intersections.Count(i => i.Direction == preferredDirection);
-            
-            return new
-            {
-                Word = word,
-                IntersectionCount = requireIntersections ? intersections.Count : 1,
-                PreferredDirectionCount = preferredDirectionIntersections,
-                Score = CalculateAdaptiveWordScore(word, grid, requireIntersections) 
-                      + preferredDirectionIntersections * 2
-                      + _random.NextDouble() * 3
-            };
-        })
-        .Where(w => !requireIntersections || w.IntersectionCount > 0)
-        .OrderByDescending(w => w.Score)
-        .ToList();
-
-        // Pick from top candidates with some randomness
-        if (scored.Count > 3)
-        {
-            var pickIndex = _random.NextDouble() < 0.7 ? 0 : _random.Next(1, Math.Min(4, scored.Count));
-            var selected = scored[pickIndex];
-            return (selected.Word, selected.Score);
-        }
-
-        var first = scored.FirstOrDefault();
-        return first != null ? (first.Word, first.Score) : (null, 0);
-    }
-
-    private Word? SelectBestWordWithDirectionBalance(List<Word> availableWords, CrosswordGrid grid, bool requireIntersections)
-    {
-        var (word, _) = SelectBestWordWithDirectionBalanceAndScore(availableWords, grid, requireIntersections);
-        return word;
     }
 
     private double ScoreIntersectionWithDirectionBonus(
@@ -835,59 +940,331 @@ public class CrosswordGenerator
         return score;
     }
 
-    private double CalculateAdaptiveWordScore(Word word, CrosswordGrid grid, bool requireIntersections)
+    #endregion
+
+    #region Word Analysis
+
+    private List<WordAnalysis> AnalyzeWordConnectivity(List<Word> words)
+    {
+        var analysis = new List<WordAnalysis>(words.Count);
+        
+        foreach (var word in words)
+        {
+            var (connectivityScore, vowelCount, commonLetterCount) = CalculateConnectivityScore(word, words);
+            analysis.Add(new WordAnalysis
+            {
+                Word = word,
+                ConnectivityScore = connectivityScore,
+                VowelCount = vowelCount,
+                CommonLetterCount = commonLetterCount
+            });
+        }
+
+        return analysis;
+    }
+
+    private (double Score, int VowelCount, int CommonLetterCount) CalculateConnectivityScore(Word targetWord, List<Word> allWords)
     {
         var score = 0.0;
+        var letterFreq = new Dictionary<char, int>();
+        int vowelCount = 0;
+        int commonLetterCount = 0;
         
-        // Moderate length bonus - prefer medium-length words (5-10)
-        if (word.Length >= 5 && word.Length <= 10)
-            score += word.Length * 1.5;
-        else if (word.Length < 5)
-            score += word.Length * 1.0;
-        else
-            score += 10 * 1.5; // Cap the length bonus at 10 letters
-        
-        if (requireIntersections)
+        // Single pass through the word to build frequency map and count letter types
+        foreach (var c in targetWord.Text)
         {
-            var intersectionCount = grid.GetPossibleIntersections(word).Count();
-            // Normalize intersection bonus by word length to not favor long words
-            score += (intersectionCount / (double)word.Length) * 10;
-            score += word.Text.Count(c => "AEIOUÅÄÖ".Contains(c)) * 0.5;
-            score += word.Text.Count(c => "RNSTL".Contains(c)) * 0.3;
+            letterFreq[c] = letterFreq.GetValueOrDefault(c, 0) + 1;
+            
+            // Count vowels and common letters in same pass
+            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+            {
+                vowelCount++;
+                commonLetterCount++;
+                
+                if (c is 'A' or 'E' or 'I' or 'O' or 'U')
+                    score += 0.3;
+                else
+                    score += 0.2;
+            }
+            else if (c is 'R' or 'N' or 'S' or 'T' or 'L' or 'K')
+            {
+                commonLetterCount++;
+                if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                    score += 0.5;
+            }
+        }
+
+        foreach (var otherWord in allWords)
+        {
+            if (otherWord == targetWord) continue;
+            
+            foreach (var kvp in letterFreq)
+            {
+                if (otherWord.Text.Contains(kvp.Key))
+                {
+                    score += kvp.Value / Math.Sqrt(kvp.Value);
+                }
+            }
+        }
+
+        if (targetWord.Length >= 15) score *= 0.05;
+        if (targetWord.Length >= 16) score *= 0.05;
+        
+        return (score, vowelCount, commonLetterCount);
+    }
+
+    #endregion
+
+    #region Anchor Word Selection
+
+    private bool PlaceAnchorWordsWithValidation(CrosswordGrid grid, List<Word> sortedWords, List<Word> allWords, 
+        CrosswordGenerationOptions options)
+    {
+        var placed = 0;
+        var usedWordTexts = grid.GetPlacedWordTexts();
+        
+        var maxAnchorLength = Math.Min(14, options.Width);
+        var minAnchorLength = Math.Max(1, maxAnchorLength - 3);
+        
+        var filteredCandidates = new List<Word>(100);
+        foreach (var w in allWords)
+        {
+            if (w.Length >= minAnchorLength && w.Length <= maxAnchorLength && !usedWordTexts.Contains(w.Text))
+                filteredCandidates.Add(w);
+        }
+
+        var anchorCandidates = new List<(Word Word, double Score)>(filteredCandidates.Count);
+        foreach (var w in filteredCandidates)
+        {
+            var score = ScoreAnchorWordWithIntersectionPotential(w, allWords);
+            anchorCandidates.Add((w, score));
         }
         
-        // Penalty for words longer than 10
-        if (word.Length > 10) score *= 0.7;
+        anchorCandidates.Sort((a, b) => b.Score.CompareTo(a.Score));
         
-        // Heavy penalty for rare long words (14+) to prevent disproportionate usage
-        if (word.Length >= 14) score *= 0.1;  // 90% penalty for 14+ letter words
-        if (word.Length >= 16) score *= 0.1;  // Additional 90% penalty (total 99%)
-        
-        // Reduced randomness to not override penalties
-        score += _random.NextDouble() * 3;
+        Word? bestAnchor = null;
+        if (anchorCandidates.Count > 0)
+        {
+            var pickIndex = _random.Next(Math.Min(5, Math.Min(8, anchorCandidates.Count)));
+            bestAnchor = anchorCandidates[pickIndex].Word;
+        }
+        else
+        {
+            bestAnchor = sortedWords.FirstOrDefault(w => !usedWordTexts.Contains(w.Text));
+        }
 
+        if (bestAnchor == null)
+            return false;
+
+        var centerRow = options.Height / 2 + _random.Next(-1, 2);
+        var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2 + _random.Next(-1, 2));
+        
+        if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords))
+        {
+            placed++;
+            usedWordTexts = grid.GetPlacedWordTexts();
+        }
+
+        if (placed > 0 && sortedWords.Count > 1)
+        {
+            var anchorLetters = new HashSet<char>(bestAnchor.Text);
+            
+            var filteredSecondCandidates = new List<Word>(100);
+            foreach (var w in allWords)
+            {
+                if (w.Length < minAnchorLength || w.Length > maxAnchorLength) continue;
+                if (w == bestAnchor || usedWordTexts.Contains(w.Text)) continue;
+                
+                bool hasSharedLetter = false;
+                foreach (var c in w.Text)
+                {
+                    if (anchorLetters.Contains(c))
+                    {
+                        hasSharedLetter = true;
+                        break;
+                    }
+                }
+                if (hasSharedLetter)
+                    filteredSecondCandidates.Add(w);
+            }
+
+            var candidateSecondWords = new List<(Word Word, double Score)>(filteredSecondCandidates.Count);
+            foreach (var w in filteredSecondCandidates)
+            {
+                var score = ScoreSecondAnchorWithIntersectionPotential(w, bestAnchor, allWords);
+                candidateSecondWords.Add((w, score));
+            }
+            
+            candidateSecondWords.Sort((a, b) => b.Score.CompareTo(a.Score));
+            var topCount = Math.Min(20, candidateSecondWords.Count);
+
+            var shuffledCandidates = new List<Word>(topCount);
+            for (int i = 0; i < topCount; i++)
+            {
+                shuffledCandidates.Add(candidateSecondWords[i].Word);
+            }
+            
+            for (int i = 0; i < shuffledCandidates.Count && i < 20; i++)
+            {
+                var pickRange = Math.Min(4, shuffledCandidates.Count - i);
+                if (pickRange > 1)
+                {
+                    var swapIndex = i + _random.Next(pickRange);
+                    if (swapIndex != i)
+                    {
+                        (shuffledCandidates[i], shuffledCandidates[swapIndex]) = (shuffledCandidates[swapIndex], shuffledCandidates[i]);
+                    }
+                }
+            }
+            
+            foreach (var secondWord in shuffledCandidates)
+            {
+                var intersections = grid.GetPossibleIntersections(secondWord)
+                    .Select(i => (Intersection: i, Score: ScoreAnchorIntersection(i, grid)))
+                    .OrderByDescending(x => x.Score)
+                    .Take(8)
+                    .ToList();
+                
+                var intersectionsToTry = new List<(int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex)>(5);
+                var remainingCount = intersections.Count;
+                for (int i = 0; i < 5 && remainingCount > 0; i++)
+                {
+                    var pickRange = Math.Min(3, remainingCount);
+                    var pickIndex = _random.Next(pickRange);
+                    intersectionsToTry.Add(intersections[pickIndex].Intersection);
+                    intersections.RemoveAt(pickIndex);
+                    remainingCount--;
+                }
+                
+                foreach (var (row, col, direction, _, _, _) in intersectionsToTry)
+                {
+                    if (grid.TryPlaceWordWithValidation(secondWord, row, col, direction, _dictionary, options.RejectInvalidWords))
+                    {
+                        placed++;
+                        break;
+                    }
+                }
+                
+                if (placed > 1) break;
+            }
+        }
+
+        return placed > 0;
+    }
+
+    private double ScoreAnchorWordWithIntersectionPotential(Word word, List<Word> allWords)
+    {
+        double score = 0;
+        
+        var uniqueLetters = new HashSet<char>();
+        foreach (var c in word.Text)
+        {
+            uniqueLetters.Add(c);
+            
+            if (c is 'A' or 'E' or 'I' or 'O' or 'U')
+                score += 1.5;
+            else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                score += 1.0;
+            else if (c is 'Å' or 'Ä' or 'Ö')
+                score += 0.5;
+        }
+        
+        if (word.Length >= 6 && word.Length <= 9)
+            score += 3;
+        else if (word.Length >= 5 && word.Length <= 8)
+            score += 2;
+        
+        score += uniqueLetters.Count * 0.5;
+        
+        var intersectionPotential = CalculateIntersectionPotential(word.Text, uniqueLetters, allWords);
+        score += intersectionPotential / 500.0;
+        
+        if (word.Length >= 15) score *= 0.05;
+        if (word.Length >= 16) score *= 0.05;
+        
         return score;
     }
 
-    private double ScoreIntersectionAdaptive((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid, int wordLength)
+    private static int CalculateIntersectionPotential(string wordText, HashSet<char> uniqueLetters, List<Word> allWords)
     {
-        var (row, col, direction, intersectingWord, myIndex, theirIndex) = intersection;
+        int total = 0;
+        foreach (var letter in uniqueLetters)
+        {
+            foreach (var other in allWords)
+            {
+                if (other.Text != wordText && other.Text.Contains(letter))
+                {
+                    total++;
+                }
+            }
+        }
+        return total;
+    }
+
+    private double ScoreSecondAnchorWithIntersectionPotential(Word word, Word firstAnchor, List<Word> allWords)
+    {
+        double score = ScoreAnchorWordWithIntersectionPotential(word, allWords);
         
-        var score = 1.0;
-        var sharedLetter = intersectingWord.GetCharAt(theirIndex);
+        var sharedLetters = word.Text.Intersect(firstAnchor.Text).Count();
+        score += sharedLetters * 3;
         
-        if ("AEIOU".Contains(sharedLetter)) score += 0.5;
-        if ("RNSTL".Contains(sharedLetter)) score += 0.3;
-        
-        var distanceFromEnd = Math.Min(myIndex, wordLength - myIndex - 1);
-        score += distanceFromEnd * 0.2;
-        
-        var surroundingWords = CountNearbyWords(grid, row, col, 3);
-        score -= surroundingWords * 0.15;
-        
-        if (intersectingWord.Length >= 6) score += 0.4;
+        var newLetters = word.Text.Except(firstAnchor.Text).Distinct().Count();
+        score += newLetters * 1.5;
         
         return score;
+    }
+
+    private double ScoreAnchorIntersection((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid)
+    {
+        var (row, col, direction, _, myIndex, _) = intersection;
+        
+        double score = 1.0;
+        
+        var distanceFromMiddle = Math.Abs(myIndex - intersection.IntersectingWord.Length / 2.0);
+        score += (5 - distanceFromMiddle) * 0.5;
+        
+        var centerDistance = Math.Abs(row - grid.Height / 2.0) + Math.Abs(col - grid.Width / 2.0);
+        score -= centerDistance * 0.1;
+        
+        return score;
+    }
+
+    #endregion
+
+    #region Pattern Matching
+
+    /// <summary>
+    /// Finds words that match a pattern with some letters fixed and some as wildcards
+    /// </summary>
+    private List<Word> FindWordsMatchingPattern(List<Word> candidateWords, List<char?> pattern, 
+        HashSet<string> placedWordTexts, HashSet<string> usedWordTexts)
+    {
+        var matches = new List<Word>();
+        var patternLength = pattern.Count;
+        
+        foreach (var word in candidateWords)
+        {
+            if (word.Length != patternLength) continue;
+            if (placedWordTexts.Contains(word.Text)) continue;
+            if (usedWordTexts.Contains(word.Text)) continue;
+            
+            bool isMatch = true;
+            for (int i = 0; i < patternLength; i++)
+            {
+                if (pattern[i].HasValue && word.Text[i] != pattern[i].Value)
+                {
+                    isMatch = false;
+                    break;
+                }
+            }
+            
+            if (isMatch)
+            {
+                matches.Add(word);
+            }
+        }
+        
+        return matches;
     }
 
     #endregion
@@ -1015,6 +1392,17 @@ public class CrosswordGenerator
         public int HasIntersections { get; set; }
     }
 
+    private class VerticalBridgeOpportunity
+    {
+        public int Col { get; set; }
+        public int StartRow { get; set; }
+        public int Length { get; set; }
+        public List<char?> Pattern { get; set; } = new();
+        public int ExistingLetterCount { get; set; }
+        public int EmptyCellCount { get; set; }
+        public bool IsHorizontal { get; set; } = false;
+    }
+
     #endregion
 }
 
@@ -1051,7 +1439,7 @@ public class CrosswordGenerationOptions
         Height = 15,
         MinWordLength = 1,
         MaxWordLength = 15,
-        TargetFillPercentage = 45.0,
+        TargetFillPercentage = 65.0,
         Difficulty = null,
         MaxAttempts = 80,
         RejectInvalidWords = true
@@ -1059,11 +1447,11 @@ public class CrosswordGenerationOptions
 
     public static CrosswordGenerationOptions Hard => new()
     {
-        Width = 19,
-        Height = 19,
+        Width = 17,
+        Height = 17,
         MinWordLength = 1,
-        MaxWordLength = 19,
-        TargetFillPercentage = 45.0,
+        MaxWordLength = 17,
+        TargetFillPercentage = 65.0,
         Difficulty = null,
         MaxAttempts = 120,
         RejectInvalidWords = true
@@ -1100,21 +1488,13 @@ public class CrosswordPuzzle
         CreatedAt = DateTime.Now;
         Statistics = grid.GetStats();
         
-        // Validate with dictionary if provided to properly number accidental words
-        if (dictionary != null)
-        {
-            Grid.IncludeValidAccidentalWords(dictionary);
-            ValidationResult = Grid.ValidateCrossword(dictionary);
-        }
-        else
-        {
-            ValidationResult = Grid.ValidateCrossword();
-        }
+        // Validate with dictionary if provided - this will detect accidental words,
+        // mark valid ones for inclusion, and assign proper PuzzleNumber values
+        ValidationResult = Grid.ValidateCrossword(dictionary);
     }
 
     public void UpdateValidation(SwedishDictionary dictionary)
     {
-        Grid.IncludeValidAccidentalWords(dictionary);
         ValidationResult = Grid.ValidateCrossword(dictionary);
     }
 

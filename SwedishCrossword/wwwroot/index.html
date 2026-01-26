@@ -801,7 +801,8 @@
         const PRODUCTION_ENVIRONMENTS = [
             'https://svensktkorsord.se',
             'www.svensktkorsord.se',
-            'https://eoq746.github.io'
+            'https://eoq746.github.io',
+            'svensktkorsord.se'
         ];
 
         const LEADERBOARD_PROXY_URL = 'https://leaderboard-proxy.joakim-bergstrom.workers.dev';
@@ -1514,7 +1515,7 @@
             (puzzleData.clues.across || []).forEach(clue => {
                 const li = document.createElement('li');
                 li.className = 'clue-item';
-                li.innerHTML = `<span class="clue-number">${clue.number}.</span>${clue.clue}`;
+                li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
                 li.dataset.number = clue.number;
                 li.dataset.direction = 'across';
                 li.addEventListener('click', () => focusClue(clue.number, 'across'));
@@ -1524,7 +1525,7 @@
             (puzzleData.clues.down || []).forEach(clue => {
                 const li = document.createElement('li');
                 li.className = 'clue-item';
-                li.innerHTML = `<span class="clue-number">${clue.number}.</span>${clue.clue}`;
+                li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
                 li.dataset.number = clue.number;
                 li.dataset.direction = 'down';
                 li.addEventListener('click', () => focusClue(clue.number, 'down'));
@@ -1582,6 +1583,12 @@
             const col = parseInt(cell.dataset.col);
 
             const key = e.key;
+
+            // Prevent browser undo/redo from interfering with crossword behavior
+            if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+                return;
+            }
 
             // Backspace
             if (key === 'Backspace') {

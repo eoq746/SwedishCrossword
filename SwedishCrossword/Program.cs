@@ -41,7 +41,8 @@ internal class Program
                 Console.WriteLine("3. Generera svårt korsord (19x19) - alla svårighetsgrader");
                 Console.WriteLine("4. Visa ordlistestatistik");
                 Console.WriteLine("5. Importera ord från Lexin (ISOF)");
-                Console.WriteLine("6. Generera korsord för webben");
+                Console.WriteLine("6. Importera synonympar (Folkets synonymlexikon)");
+                Console.WriteLine("7. Generera korsord för webben");
                 Console.WriteLine("0. Avsluta");
                 Console.WriteLine();
                 Console.Write("Ditt val: ");
@@ -74,6 +75,10 @@ internal class Program
                             break;
 
                         case "6":
+                            await ImportSynonymPairs();
+                            break;
+
+                        case "7":
                             await GenerateForWeb(generator, printService, CrosswordGenerationOptions.Hard);
                             break;
 
@@ -589,6 +594,72 @@ internal class Program
             
             Console.WriteLine();
             LexinWordImporter.PrintStatistics(words);
+            
+            Console.WriteLine();
+            Console.WriteLine("Import klar!");
+            Console.WriteLine("   Starta om programmet för att använda de nya orden.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Import misslyckades: {ex.Message}");
+            
+            if (ex.InnerException != null)
+            {
+                Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");
+            }
+        }
+    }
+
+    private static async Task ImportSynonymPairs()
+    {
+        Console.WriteLine("Synonympar Import (Folkets synonymlexikon)");
+        Console.WriteLine("============================================");
+        Console.WriteLine();
+        Console.WriteLine("Detta kommer att:");
+        Console.WriteLine("  1. Parsa synpairs.xml och extrahera synonympar");
+        Console.WriteLine("  2. Skapa två ordposter per par (ord1->ord2, ord2->ord1)");
+        Console.WriteLine("  3. Exportera till JSON för snabb laddning");
+        Console.WriteLine();
+        Console.WriteLine($"Förväntad XML-fil: {SynonymPairImporter.GetXmlFilePath()}");
+        Console.WriteLine();
+
+        if (!File.Exists(SynonymPairImporter.GetXmlFilePath()))
+        {
+            Console.WriteLine("VARNING: synpairs.xml hittades inte!");
+            Console.WriteLine("Ladda ner filen från: http://lexikon.nada.kth.se/synlex.html");
+            Console.WriteLine($"Och placera den i: {Path.GetDirectoryName(SynonymPairImporter.GetXmlFilePath())}");
+            return;
+        }
+
+        Console.Write("Ange minsta konfidensnivå (1.0-5.0, standard 3.0): ");
+        var levelInput = Console.ReadLine();
+        var minLevel = 3.0;
+        if (!string.IsNullOrWhiteSpace(levelInput) && double.TryParse(levelInput, 
+            System.Globalization.NumberStyles.Float, 
+            System.Globalization.CultureInfo.InvariantCulture, out var parsedLevel))
+        {
+            minLevel = Math.Clamp(parsedLevel, 1.0, 5.0);
+        }
+
+        Console.WriteLine();
+        Console.Write($"Vill du importera synonympar med nivå >= {minLevel:F1}? (j/n): ");
+
+        if (Console.ReadLine()?.ToLower() != "j")
+        {
+            Console.WriteLine("Import avbruten.");
+            return;
+        }
+
+        Console.WriteLine();
+
+        var importer = new SynonymPairImporter();
+        
+        try
+        {
+            var words = await importer.ImportAndExportAsync(minLevel: minLevel);
+            
+            Console.WriteLine();
+            SynonymPairImporter.PrintStatistics(words);
             
             Console.WriteLine();
             Console.WriteLine("Import klar!");
