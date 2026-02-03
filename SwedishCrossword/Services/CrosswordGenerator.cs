@@ -1642,50 +1642,9 @@ public class CrosswordPuzzle
         ValidationResult = Grid.ValidateCrossword(dictionary);
     }
 
-    public void UpdateValidation(SwedishDictionary dictionary)
-    {
-        ValidationResult = Grid.ValidateCrossword(dictionary);
-    }
-
     public (List<Word> Across, List<Word> Down) GetClues()
     {
         return Grid.GetWordsByDirection();
     }
 
-    public string ToPuzzleString()
-    {
-        return Grid.ToDisplayString(showNumbers: true, showSolution: false);
-    }
-
-    public string ToSolutionString()
-    {
-        return Grid.ToDisplayString(showNumbers: true, showSolution: true);
-    }
-
-    public string GetCluesString()
-    {
-        var (across, down) = GetClues();
-        var result = new System.Text.StringBuilder();
-
-        if (across.Count > 0)
-        {
-            result.AppendLine("VÅGRÄTT:");
-            foreach (var word in across.OrderBy(w => w.Number))
-            {
-                result.AppendLine($"{word.Number,2}. {word.Clue}");
-            }
-        }
-
-        if (down.Count > 0)
-        {
-            if (across.Count > 0) result.AppendLine();
-            result.AppendLine("LODRÄTT:");
-            foreach (var word in down.OrderBy(w => w.Number))
-            {
-                result.AppendLine($"{word.Number,2}. {word.Clue}");
-            }
-        }
-
-        return result.ToString();
-    }
 }
