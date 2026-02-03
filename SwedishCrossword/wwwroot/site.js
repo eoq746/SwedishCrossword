@@ -767,22 +767,19 @@ function handleKeyDown(e) {
             e.target.value = '';
             updateStats();
             updateClueFilledStatus();
-            moveBackInDirection(e.target);
-        } else {
-            moveBackInDirection(e.target);
         }
+        // Always move back on backspace (whether cell was empty or not)
+        moveBackInDirection(e.target);
         e.preventDefault();
         return;
     }
 
     if (key === 'Delete') {
+        // Delete only clears current cell, does not move
         if (e.target.value) {
             e.target.value = '';
             updateStats();
             updateClueFilledStatus();
-            moveInDirection(e.target);
-        } else {
-            moveInDirection(e.target);
         }
         e.preventDefault();
         return;

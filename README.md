@@ -47,19 +47,23 @@ SwedishCrosswords/
 |   |   |-- index.html             # Main crossword player
 |   |   |-- site.js                # Game logic and leaderboard
 |   |   |-- site.min.css           # Responsive styles
-|   |   |-- puzzle.json            # Generated puzzle data
 |   |   |-- om-oss.html            # About page
 |   |   |-- kontakt.html           # Contact page
 |   |   |-- integritetspolicy.html # Privacy policy
 |   |   |-- sitemap.xml            # SEO sitemap
 |   |   |-- robots.txt             # Crawler directives
-|   |   +-- ads.txt                # Google AdSense verification
+|   |   |-- ads.txt                # Google AdSense verification
+|   |   |-- site.webmanifest       # PWA manifest
+|   |   +-- CNAME                  # Custom domain config
 |   +-- Program.cs                 # CLI entry point
 |-- SwedishCrossword.Tests/        # TUnit test project
-|   |-- SwedishCrosswordTests.cs   # Core functionality tests
-|   |-- DictionaryLoadingTests.cs  # Dictionary validation
-|   |-- SwedishCharacterTests.cs   # Unicode handling tests
-|   +-- FillPercentageBenchmark.cs # Performance benchmarks
+|   |-- GridCellTests.cs           # Grid cell model tests
+|   |-- WordTests.cs               # Word model tests
+|   |-- CrosswordGridTests.cs      # Grid functionality tests
+|   |-- SwedishDictionaryTests.cs  # Dictionary validation tests
+|   |-- GridValidatorTests.cs      # Puzzle validation tests
+|   |-- AccidentalWordTests.cs     # Bonus word detection tests
+|   +-- PrintServiceTests.cs       # Output formatting tests
 +-- .github/workflows/             # GitHub Actions
     +-- daily-crossword.yml        # Daily puzzle generation & deployment
 ```
@@ -106,11 +110,12 @@ dotnet test SwedishCrossword.Tests
 ```
 
 The test suite includes:
-- Dictionary loading and validation tests
+- Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
-- Word duplication prevention tests
-- Fill percentage benchmarks
+- Dictionary loading and validation tests
+- Puzzle validation and bonus word tests
+- Print service output tests
 
 ## Algorithm Highlights
 
