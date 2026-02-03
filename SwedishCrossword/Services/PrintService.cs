@@ -727,17 +727,39 @@ public class PrintService
     }
 
     /// <summary>
-    /// Gets all clues including valid accidental words that should be included
+    /// Gets all clues from both intentional words and valid accidental words.
+    /// Filters out intentional words that have been superseded (extended) by accidental words.
     /// </summary>
     private (List<object> Across, List<object> Down) GetAllClues(CrosswordPuzzle puzzle)
     {
         var across = new List<object>();
         var down = new List<object>();
         
-        // Add intentional words (filter out any with invalid number)
+        // Get the set of valid accidental words that should be included
+        var includedAccidentalWords = puzzle.ValidationResult?.ValidAccidentalWords?
+            .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0)
+            .ToList() ?? new List<AccidentalWord>();
+        
+        // Add intentional words (filter out any with invalid number and those superseded by accidental words)
         foreach (var word in puzzle.Grid.Words)
         {
             if (word.Number <= 0) continue; // Skip words without valid numbers
+            
+            // Check if this intentional word has been superseded by an accidental word
+            // This happens when an accidental word starts at the same position, has the same direction,
+            // and the accidental word's text starts with this word's text (meaning it extended the word)
+            bool isSuperseded = includedAccidentalWords.Any(accWord =>
+                accWord.StartRow == word.StartRow &&
+                accWord.StartCol == word.StartColumn &&
+                accWord.Direction == word.Direction &&
+                accWord.Text.StartsWith(word.Text, StringComparison.OrdinalIgnoreCase) &&
+                accWord.Text.Length > word.Text.Length);
+            
+            if (isSuperseded)
+            {
+                // Skip this word - it has been extended by an accidental word
+                continue;
+            }
             
             if (word.Direction == Direction.Across)
                 across.Add(word);
@@ -747,16 +769,12 @@ public class PrintService
         
         // Add valid accidental words that should be included as clues
         // Only include those with valid PuzzleNumber (> 0) to prevent clue 0 bug
-        if (puzzle.ValidationResult?.ValidAccidentalWords != null)
+        foreach (var accWord in includedAccidentalWords)
         {
-            foreach (var accWord in puzzle.ValidationResult.ValidAccidentalWords
-                .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0))
-            {
-                if (accWord.Direction == Direction.Across)
-                    across.Add(accWord);
-                else
-                    down.Add(accWord);
-            }
+            if (accWord.Direction == Direction.Across)
+                across.Add(accWord);
+            else
+                down.Add(accWord);
         }
         
         return (across, down);

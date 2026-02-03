@@ -479,7 +479,7 @@ async function renderLeaderboard() {
         return `
             <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                 <span class="leaderboard-rank">${index + 1}.</span>
-                <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}"> ??</span>` : ''}</span>
+                <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
                 <span class="leaderboard-time">${formatTime(entry.time)}</span>
             </li>
         `;
