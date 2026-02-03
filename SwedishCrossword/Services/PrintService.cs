@@ -734,9 +734,11 @@ public class PrintService
         var across = new List<object>();
         var down = new List<object>();
         
-        // Add intentional words
+        // Add intentional words (filter out any with invalid number)
         foreach (var word in puzzle.Grid.Words)
         {
+            if (word.Number <= 0) continue; // Skip words without valid numbers
+            
             if (word.Direction == Direction.Across)
                 across.Add(word);
             else
@@ -744,9 +746,11 @@ public class PrintService
         }
         
         // Add valid accidental words that should be included as clues
+        // Only include those with valid PuzzleNumber (> 0) to prevent clue 0 bug
         if (puzzle.ValidationResult?.ValidAccidentalWords != null)
         {
-            foreach (var accWord in puzzle.ValidationResult.ValidAccidentalWords.Where(w => w.ShouldIncludeInPuzzle))
+            foreach (var accWord in puzzle.ValidationResult.ValidAccidentalWords
+                .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0))
             {
                 if (accWord.Direction == Direction.Across)
                     across.Add(accWord);

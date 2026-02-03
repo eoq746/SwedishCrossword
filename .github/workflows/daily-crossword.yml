@@ -36,11 +36,36 @@ jobs:
           dotnet-version: '10.0.x'
           dotnet-quality: 'preview'
 
+      - name: Verify Data files exist
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Checking for dictionary files..."
+          ls -la SwedishCrossword/Data/ || echo "Data directory not found!"
+          if [ -f "SwedishCrossword/Data/lexin-words.json" ]; then
+            echo "lexin-words.json found ($(wc -c < SwedishCrossword/Data/lexin-words.json) bytes)"
+          else
+            echo "ERROR: lexin-words.json not found!"
+          fi
+          if [ -f "SwedishCrossword/Data/synonym-words.json" ]; then
+            echo "synonym-words.json found ($(wc -c < SwedishCrossword/Data/synonym-words.json) bytes)"
+          else
+            echo "ERROR: synonym-words.json not found!"
+          fi
+
       - name: Restore dependencies
         run: dotnet restore SwedishCrossword/SwedishCrossword.csproj
 
       - name: Build
         run: dotnet build SwedishCrossword/SwedishCrossword.csproj --configuration Release --no-restore
+
+      - name: Restore word analysis cache
+        uses: actions/cache@v4
+        with:
+          path: SwedishCrossword/.cache
+          key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json') }}
+
+      - name: Set cache env
+        run: echo "SWEDISH_CROSSWORD_CACHE_PATH=SwedishCrossword/.cache" >> $GITHUB_ENV
 
       - name: Generate crossword
         run: dotnet run --project SwedishCrossword/SwedishCrossword.csproj --configuration Release -- --generate-for-web
@@ -51,11 +76,16 @@ jobs:
         run: |
           mkdir -p _site
           cp SwedishCrossword/wwwroot/index.html _site/
+          cp SwedishCrossword/wwwroot/site.min.css _site/
+          cp SwedishCrossword/wwwroot/site.js _site/
           cp SwedishCrossword/wwwroot/puzzle.json _site/ 2>/dev/null || echo "puzzle.json not found, will use default"
           # Copy additional pages for AdSense compliance
           cp SwedishCrossword/wwwroot/om-oss.html _site/
           cp SwedishCrossword/wwwroot/kontakt.html _site/
           cp SwedishCrossword/wwwroot/integritetspolicy.html _site/
+          # Copy SEO files
+          cp SwedishCrossword/wwwroot/sitemap.xml _site/
+          cp SwedishCrossword/wwwroot/robots.txt _site/
           # Copy favicon and icons
           cp SwedishCrossword/wwwroot/favicon.ico _site/
           cp SwedishCrossword/wwwroot/favicon-16x16.png _site/

@@ -118,10 +118,21 @@ internal class Program
     {
         Console.WriteLine("Generating crossword for web (headless mode)...");
         Console.WriteLine($"Generation time: {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss} UTC");
+        Console.WriteLine($"Working directory: {Environment.CurrentDirectory}");
+        Console.WriteLine($"Base directory: {AppContext.BaseDirectory}");
         Console.WriteLine();
 
         try
         {
+            // Print data file locations for debugging
+            var lexinPath = LexinWordImporter.GetJsonFilePath();
+            var synonymPath = SynonymPairImporter.GetJsonFilePath();
+            Console.WriteLine($"Lexin dictionary path: {lexinPath}");
+            Console.WriteLine($"Lexin file exists: {File.Exists(lexinPath)}");
+            Console.WriteLine($"Synonym dictionary path: {synonymPath}");
+            Console.WriteLine($"Synonym file exists: {File.Exists(synonymPath)}");
+            Console.WriteLine();
+
             // Initialize services
             var dictionary = new SwedishDictionary();
             var validator = new GridValidator();
@@ -133,7 +144,18 @@ internal class Program
 
             if (dictionary.WordCount == 0)
             {
-                Console.WriteLine("Warning: No words in dictionary, generation may fail");
+                Console.WriteLine("ERROR: No words in dictionary!");
+                Console.WriteLine("The crossword cannot be generated without words.");
+                Console.WriteLine();
+                Console.WriteLine("Ensure the Data directory contains:");
+                Console.WriteLine($"  - {Path.GetFileName(lexinPath)}");
+                Console.WriteLine($"  - {Path.GetFileName(synonymPath)}");
+                Environment.Exit(1);
+            }
+
+            if (dictionary.WordCount < 1000)
+            {
+                Console.WriteLine($"WARNING: Only {dictionary.WordCount} words loaded. Expected 50,000+");
             }
 
             // Generate a hard-sized puzzle for web display
@@ -289,9 +311,13 @@ internal class Program
             var filesToCopy = new[]
             {
                 "index.html",
+                "site.min.css",
+                "site.js",
                 "om-oss.html",
                 "kontakt.html",
                 "integritetspolicy.html",
+                "sitemap.xml",
+                "robots.txt",
                 "ads.txt",
                 "CNAME",
                 "favicon.ico",

@@ -1,0 +1,1274 @@
+/*
+ * LEADERBOARD CONFIGURATION
+ * =========================
+ * Uses Cloudflare Worker proxy to securely access JSONBin.io
+ * API keys are stored as environment variables in the worker.
+ */
+
+const PRODUCTION_HOSTNAMES = [
+    'svensktkorsord.se',
+    'www.svensktkorsord.se',
+    'eoq746.github.io'
+];
+
+const LEADERBOARD_PROXY_URL = 'https://leaderboard-proxy.joakim-bergstrom.workers.dev';
+
+const currentHost = window.location.hostname;
+
+const LEADERBOARD_ENABLED = PRODUCTION_HOSTNAMES.includes(currentHost);
+
+/*
+ * ANTI-CHEAT CONFIGURATION
+ * ========================
+ * These settings help prevent cheating on the leaderboard.
+ */
+const ANTI_CHEAT = {
+    // Minimum seconds required to complete (based on ~2 letters per seconds for fast typers)
+    minTimePerCell: 0.3,
+    // Maximum time between inputs to count as "human" (ms) - detects paste/automation
+    maxInputInterval: 50,
+    // Minimum unique input events required (prevents single paste)
+    minInputEvents: 5,
+    // Enable/disable anti-cheat (set to false for testing)
+    enabled: true
+};
+
+// Default puzzle data (used if puzzle.json fails to load)
+let puzzleData = {
+    width: 11,
+    height: 11,
+    wordCount: 2,
+    fillPercentage: 10.0,
+    createdAt: null,
+    cells: [
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [{num: 1, letter: 'K'}, {letter: 'A'}, {num: 2, letter: 'L'}, {letter: 'S'}, {letter: 'O'}, {letter: 'N'}, {letter: 'G'}, {letter: 'E'}, {letter: 'R'}, null, null],
+        [null, null, {letter: 'Ö'}, null, null, null, null, null, null, null, null],
+        [null, null, {letter: 'V'}, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null, null, null],
+    ],
+    clues: {
+        across: [{ number: 1, clue: "Underkläder för män", answer: "KALSONGER" }],
+        down: [{ number: 2, clue: "Träd med gröna blad", answer: "LÖV" }]
+    }
+};
+
+let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across';
+let currentPuzzleDate = null;
+let hasSubmittedScore = false;
+let remoteLeaderboardCache = null;
+
+// Anti-cheat tracking variables
+let inputEvents = [];
+let puzzleStartTime = null;
+let puzzleHash = null;
+let usedShowSolution = false;
+let suspiciousActivity = [];
+let HAS_VIEWED_SOLUTION = false; // Tracked via server-side IP
+
+// DevTools detection flag (shared with ES module above)
+// Check if the ES module already set the flag before this script ran
+let devToolsOpenedDuringSession = window.devToolsOpenedDuringSession || false;
+
+// Sync the global variable for the ES module to update
+// Use a backing variable to preserve state
+Object.defineProperty(window, 'devToolsOpenedDuringSession', {
+    get() { return devToolsOpenedDuringSession; },
+    set(value) { 
+        devToolsOpenedDuringSession = value;
+        if (value) {
+            console.log('DevTools detection flag set to true');
+        }
+    }
+});
+
+// Fallback DevTools detection (in case ES module doesn't load)
+// Uses size-based detection as backup
+const devToolsDetector = {
+    isOpen: false,
+    
+    check() {
+        const widthThreshold = window.outerWidth - window.innerWidth > 160;
+        const heightThreshold = window.outerHeight - window.innerHeight > 160;
+        
+        if (
+            !(heightThreshold && widthThreshold) &&
+            (widthThreshold || heightThreshold)
+        ) {
+            if (!this.isOpen) {
+                this.isOpen = true;
+                devToolsOpenedDuringSession = true;
+            }
+        } else {
+            this.isOpen = false;
+        }
+    },
+    
+    startMonitoring() {
+        // Check periodically as fallback
+        setInterval(() => this.check(), 1000);
+        window.addEventListener('resize', () => this.check());
+        this.check();
+    }
+};
+
+// Generate a simple hash of the puzzle for verification
+function generatePuzzleHash() {
+    let str = '';
+    for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            const cell = puzzleData.cells[row]?.[col];
+            str += cell ? cell.letter : '#';
+        }
+    }
+    // Simple hash function
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        hash = hash & hash;
+    }
+    return hash.toString(36);
+}
+
+// Track input events for anti-cheat analysis
+function trackInput(row, col, value) {
+    const now = Date.now();
+    inputEvents.push({
+        time: now,
+        row,
+        col,
+        value,
+        interval: inputEvents.length > 0 ? now - inputEvents[inputEvents.length - 1].time : 0
+    });
+}
+
+// Track when user views the solution (server-side IP tracking)
+async function trackSolutionView() {
+    if (!LEADERBOARD_ENABLED || !puzzleHash) return;
+    
+    try {
+        await fetch(`${LEADERBOARD_PROXY_URL}/viewed-solution`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ puzzleHash })
+        });
+    } catch (e) {
+        console.warn('Failed to track solution view:', e);
+    }
+}
+
+// Check if current user (by IP) has viewed the solution before
+async function checkIfViewedSolution() {
+    if (!LEADERBOARD_ENABLED || !puzzleHash) return false;
+    
+    try {
+        const response = await fetch(`${LEADERBOARD_PROXY_URL}/check-solution-viewed`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ puzzleHash })
+        });
+        
+        if (response.ok) {
+            const data = await response.json();
+            return data.viewed;
+        }
+    } catch (e) {
+        console.warn('Failed to check solution view status:', e);
+    }
+    return false;
+}
+
+// Analyze input pattern for suspicious activity
+function analyzeInputPattern() {
+    if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
+    
+    const reasons = [];
+    const cellCount = countCells();
+    
+    // Check 1: Minimum time threshold
+    const minTime = cellCount * ANTI_CHEAT.minTimePerCell;
+    if (seconds < minTime) {
+        reasons.push(`För snabb: ${seconds}s < ${Math.round(minTime)}s minimum`);
+    }
+
+    // Check 2: Too few input events (suggests paste/automation)
+    if (inputEvents.length < ANTI_CHEAT.minInputEvents) {
+        reasons.push(`För få inmatningar: ${inputEvents.length} < ${ANTI_CHEAT.minInputEvents}`);
+    }
+
+    // Check 3: Suspiciously fast consecutive inputs
+    const fastInputs = inputEvents.filter(e => e.interval > 0 && e.interval < ANTI_CHEAT.maxInputInterval);
+    if (fastInputs.length > cellCount * 0.5) {
+        reasons.push(`Misstänkt automatisering: ${fastInputs.length} snabba inmatningar`);
+    }
+
+    // Check 4: Used show solution
+    if (usedShowSolution) {
+        reasons.push('Använde "Visa lösning"');
+    }
+
+    // Check 5: All inputs at exactly the same interval (bot pattern)
+    if (inputEvents.length > 10) {
+        const intervals = inputEvents.slice(1).map(e => e.interval);
+        const avgInterval = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+        const variance = intervals.reduce((sum, i) => sum + Math.pow(i - avgInterval, 2), 0) / intervals.length;
+        if (variance < 100 && avgInterval < 200) {
+            reasons.push('Misstänkt bot: konstant inmatningshastighet');
+        }
+    }
+
+    // Check 6: DevTools was opened during the session
+    const devToolsWasOpened = window.devToolsOpenedDuringSession || devToolsOpenedDuringSession;
+    if (devToolsWasOpened) {
+        reasons.push('DevTools öppnades under sessionen');
+    }
+
+    // Check 7: Previously viewed solution (checked via server-side IP tracking)
+    
+    if (HAS_VIEWED_SOLUTION) {
+        reasons.push('Lösningen visades tidigare från denna IP');
+    }
+
+    return {
+        valid: reasons.length === 0,
+        reasons
+    };
+}
+
+// Count fillable cells
+function countCells() {
+    let count = 0;
+    for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            if (puzzleData.cells[row]?.[col] !== null) count++;
+        }
+    }
+    return count;
+}
+
+// Create a signed score entry
+function createScoreEntry(username, timeSeconds) {
+    const entry = {
+        name: username,
+        time: timeSeconds,
+        timestamp: Date.now(),
+        puzzleHash: puzzleHash,
+        inputCount: inputEvents.length,
+        // Simple signature to detect tampering
+        sig: btoa(JSON.stringify({
+            n: username.substring(0, 3),
+            t: timeSeconds,
+            h: puzzleHash,
+            c: inputEvents.length
+        })).substring(0, 16)
+    };
+    return entry;
+}
+
+// Validate a score entry
+function validateScoreEntry(entry) {
+    if (!entry.sig || !entry.puzzleHash) return true; // Legacy entries
+    
+    try {
+        const expectedSig = btoa(JSON.stringify({
+            n: entry.name.substring(0, 3),
+            t: entry.time,
+            h: entry.puzzleHash,
+            c: entry.inputCount || 0
+        })).substring(0, 16);
+        return entry.sig === expectedSig;
+    } catch {
+        return false;
+    }
+}
+
+// Leaderboard key for localStorage - includes puzzle hash for uniqueness
+function getLeaderboardKey() {
+    const hashSuffix = puzzleHash ? `-${puzzleHash}` : '';
+    return `crossword-leaderboard-${currentPuzzleDate || 'default'}${hashSuffix}`;
+}
+
+// Load leaderboard from localStorage (fallback/cache)
+function loadLocalLeaderboard() {
+    try {
+        const data = localStorage.getItem(getLeaderboardKey());
+        const leaderboard = data ? JSON.parse(data) : [];
+        return leaderboard.filter(validateScoreEntry);
+    } catch (e) {
+        console.error('Error loading local leaderboard:', e);
+        return [];
+    }
+}
+
+// Save leaderboard to localStorage
+function saveLocalLeaderboard(leaderboard) {
+    try {
+        localStorage.setItem(getLeaderboardKey(), JSON.stringify(leaderboard));
+    } catch (e) {
+        console.error('Error saving local leaderboard:', e);
+    }
+}
+
+// Fetch leaderboard from Cloudflare Worker proxy
+async function fetchRemoteLeaderboard() {
+    if (!LEADERBOARD_ENABLED) return null;
+    
+    try {
+        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
+        
+        if (!response.ok) {
+            console.warn('Failed to fetch remote leaderboard:', response.status);
+            return null;
+        }
+        
+        const data = await response.json();
+        const scores = data.scores || {};
+        const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
+        const leaderboard = scores[leaderboardKey] || [];
+        return leaderboard.filter(validateScoreEntry);
+    } catch (e) {
+        console.error('Error fetching remote leaderboard:', e);
+        return null;
+    }
+}
+
+// Save leaderboard via Cloudflare Worker proxy
+async function saveRemoteLeaderboard(leaderboard) {
+    if (!LEADERBOARD_ENABLED) return false;
+    
+    try {
+        const getResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
+        
+        let allScores = {};
+        if (getResponse.ok) {
+            const data = await getResponse.json();
+            allScores = data.scores || {};
+        }
+        
+        const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
+        allScores[leaderboardKey] = leaderboard;
+        
+        const cutoffDate = new Date();
+        cutoffDate.setDate(cutoffDate.getDate() - 7);
+        const cutoffStr = cutoffDate.toISOString().split('T')[0];
+        
+        for (const key of Object.keys(allScores)) {
+            const dateMatch = key.match(/^(\d{4}-\d{2}-\d{2})/);
+            if (dateMatch && dateMatch[1] < cutoffStr) {
+                delete allScores[key];
+            }
+        }
+        
+        const putResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ scores: allScores })
+        });
+        
+        if (!putResponse.ok) {
+            console.warn('Failed to save remote leaderboard:', putResponse.status);
+            return false;
+        }
+        
+        return true;
+    } catch (e) {
+        console.error('Error saving remote leaderboard:', e);
+        return false;
+    }
+}
+
+// Load leaderboard (remote first, then local fallback)
+async function loadLeaderboard() {
+    if (LEADERBOARD_ENABLED && !remoteLeaderboardCache) {
+        const remote = await fetchRemoteLeaderboard();
+        if (remote !== null) {
+            remoteLeaderboardCache = remote;
+            saveLocalLeaderboard(remote);
+            return remote;
+        }
+    }
+    
+    if (remoteLeaderboardCache) return remoteLeaderboardCache;
+    return loadLocalLeaderboard();
+}
+
+// Add score to leaderboard with anti-cheat validation
+async function addToLeaderboard(username, timeSeconds) {
+    HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
+    const validation = analyzeInputPattern();
+    
+    if (!validation.valid) {
+        console.warn('Anti-cheat validation failed:', validation.reasons);
+        suspiciousActivity = validation.reasons;
+    }
+
+    let leaderboard = await loadLeaderboard();
+
+    const entry = createScoreEntry(username, timeSeconds);
+
+    if (!validation.valid) {
+        entry.flagged = true;
+        entry.reasons = validation.reasons;
+    }
+
+    leaderboard.push(entry);
+
+    leaderboard.sort((a, b) => {
+        if (a.flagged && !b.flagged) return 1;
+        if (!a.flagged && b.flagged) return -1;
+        return a.time - b.time;
+    });
+
+    const cleanEntries = leaderboard.filter(e => !e.flagged);
+    const flaggedEntries = leaderboard.filter(e => e.flagged);
+
+    if (cleanEntries.length >= 10) {
+        leaderboard = cleanEntries.slice(0, 10);
+    } else {
+        leaderboard = [...cleanEntries, ...flaggedEntries].slice(0, 10);
+    }
+
+    saveLocalLeaderboard(leaderboard);
+    remoteLeaderboardCache = leaderboard;
+
+    if (LEADERBOARD_ENABLED && validation.valid) {
+        saveRemoteLeaderboard(leaderboard).then(success => {
+            if (!success) console.warn('Remote save failed, score saved locally only');
+        });
+    }
+
+    return leaderboard;
+}
+
+async function renderLeaderboard() {
+    const list = document.getElementById('leaderboard-list');
+    const dateEl = document.getElementById('leaderboard-date');
+
+    // Clear existing content to prevent duplicates
+    list.innerHTML = '';
+
+    if (LEADERBOARD_ENABLED && !remoteLeaderboardCache) {
+        list.innerHTML = '<li class="leaderboard-empty">Laddar topplista...</li>';
+    }
+
+    const leaderboard = await loadLeaderboard();
+
+    if (currentPuzzleDate) {
+        const modeText = LEADERBOARD_ENABLED ? ' (delad)' : ' (lokal)';
+        dateEl.textContent = `Korsord: ${currentPuzzleDate}${modeText}`;
+    } else dateEl.textContent = '';
+
+    if (!leaderboard || leaderboard.length === 0) {
+        list.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet än...</li>';
+        return;
+    }
+
+    list.innerHTML = leaderboard.map((entry, index) => {
+        const isCurrentUser = entry.timestamp && (Date.now() - entry.timestamp < 5000);
+        const isFlagged = entry.flagged;
+        const flagTooltip = isFlagged && entry.reasons ? entry.reasons.join('\n') : '';
+        return `
+            <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
+                <span class="leaderboard-rank">${index + 1}.</span>
+                <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}"> ??</span>` : ''}</span>
+                <span class="leaderboard-time">${formatTime(entry.time)}</span>
+            </li>
+        `;
+    }).join('');
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+async function showUsernameModal() {
+    if (hasSubmittedScore) return;
+    
+    HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
+    const validation = analyzeInputPattern();
+    
+    document.getElementById('modal-time').textContent = formatTime(seconds);
+    document.getElementById('username-modal').classList.add('active');
+    
+    const modalContent = document.querySelector('.modal');
+    let warningEl = document.getElementById('cheat-warning');
+    
+    if (!validation.valid) {
+        if (!warningEl) {
+            warningEl = document.createElement('p');
+            warningEl.id = 'cheat-warning';
+            warningEl.style.cssText = 'color: #dc2626; font-size: 0.8rem; margin-top: -10px; margin-bottom: 10px;';
+            modalContent.insertBefore(warningEl, document.getElementById('username-input'));
+        }
+        warningEl.textContent = 'Misstänkt aktivitet upptäckts. Ditt resultat kan markeras.';
+    } else if (warningEl) {
+        warningEl.remove();
+    }
+
+    const savedName = localStorage.getItem('crossword-username') || '';
+    document.getElementById('username-input').value = savedName;
+    document.getElementById('username-input').focus();
+    document.getElementById('username-input').select();
+}
+
+function closeModal() {
+    document.getElementById('username-modal').classList.remove('active');
+}
+
+async function submitScore() {
+    const input = document.getElementById('username-input');
+    let username = input.value.trim();
+    
+    if (!username) username = 'Anonym';
+
+    localStorage.setItem('crossword-username', username);
+
+    await addToLeaderboard(username, seconds);
+    hasSubmittedScore = true;
+
+    closeModal();
+    await renderLeaderboard();
+}
+
+// Handle Enter key in username input
+document.addEventListener('DOMContentLoaded', () => {
+    const usernameInput = document.getElementById('username-input');
+    if (usernameInput) {
+        usernameInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                submitScore();
+            }
+        });
+    }
+});
+
+async function loadPuzzle() {
+    try {
+        const response = await fetch('puzzle.json');
+        if (response.ok) {
+            puzzleData = await response.json();
+            console.log('Loaded puzzle from puzzle.json');
+        } else {
+            console.log('puzzle.json not found, using default puzzle');
+        }
+    } catch (e) { 
+        console.log('Error loading puzzle.json, using default puzzle:', e);
+    }
+    
+    try {
+        await init();
+    } catch (initError) {
+        console.error('Error during init:', initError);
+        document.getElementById('loading').style.display = 'none';
+        // Clear inline display so CSS media queries control layout
+        document.getElementById('main-layout').style.display = '';
+    }
+}
+
+async function init() {
+    document.getElementById('loading').style.display = 'none';
+    // Let CSS determine the appropriate layout (do not force 'flex' which overrides media queries)
+    document.getElementById('main-layout').style.display = '';
+    
+    puzzleStartTime = Date.now();
+    puzzleHash = generatePuzzleHash();
+    inputEvents = [];
+    usedShowSolution = false;
+    suspiciousActivity = [];
+    devToolsOpenedDuringSession = false;
+    
+    devToolsDetector.startMonitoring();
+    
+    if (puzzleData.createdAt) {
+        currentPuzzleDate = puzzleData.createdAt.split(' ')[0];
+    } else {
+        currentPuzzleDate = new Date().toISOString().split('T')[0];
+    }
+    
+    if (puzzleData.wordCount) {
+        document.getElementById('puzzle-info').style.display = 'inline-block';
+        document.getElementById('info-size').textContent = `${puzzleData.width}x${puzzleData.height}`;
+        document.getElementById('info-words').textContent = `${puzzleData.wordCount} ord`;
+        document.getElementById('info-fill').textContent = `${puzzleData.fillPercentage}%`;
+    }
+    
+    if (puzzleData.createdAt) {
+        document.getElementById('generation-date').textContent = `Genererat: ${puzzleData.createdAt}`;
+    } else {
+        const today = new Date().toLocaleDateString('sv-SE');
+        document.getElementById('generation-date').textContent = today;
+    }
+    
+    renderGrid();
+    renderClues();
+    await renderLeaderboard();
+    syncCluesHeight();
+    startTimer();
+    updateStats();
+    
+    window.addEventListener('resize', syncCluesHeight);
+}
+
+function syncCluesHeight() {
+    const gridSection = document.querySelector('.grid-section');
+    const cluesSection = document.querySelector('.clues-section');
+    const leaderboardSection = document.querySelector('.leaderboard-section');
+
+    // Only adjust when using wide layout; CSS handles heights now
+    const isWide = window.matchMedia('(min-width:1100px)').matches;
+    if (!gridSection) return;
+
+    if (isWide) {
+        // Remove any inline styles to let CSS Grid align heights
+        if (cluesSection) { cluesSection.style.maxHeight = ''; cluesSection.style.height = '100%'; }
+        if (leaderboardSection) { leaderboardSection.style.maxHeight = ''; leaderboardSection.style.height = '100%'; }
+    } else {
+        // On small screens remove enforced heights so sections flow naturally
+        if (cluesSection) { cluesSection.style.maxHeight = ''; cluesSection.style.height = ''; }
+        if (leaderboardSection) { leaderboardSection.style.maxHeight = ''; leaderboardSection.style.height = ''; }
+    }
+}
+
+// Call syncCluesHeight on resize also
+window.addEventListener('resize', syncCluesHeight);
+
+function renderGrid() {
+    const grid = document.getElementById('crossword-grid');
+    grid.innerHTML = '';
+
+    // Expose number of cols/rows to CSS so --cell-size can be computed
+    grid.style.setProperty('--cols', puzzleData.width);
+    grid.style.setProperty('--rows', puzzleData.height);
+
+    // Ensure grid uses CSS Grid layout; remove any leftover row wrappers
+    grid.classList.remove('using-rows');
+
+    for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            const cellData = puzzleData.cells[row]?.[col];
+            const cellDiv = document.createElement('div');
+            cellDiv.className = 'cell';
+            cellDiv.dataset.row = row;
+            cellDiv.dataset.col = col;
+            if (cellData === null) {
+                cellDiv.classList.add('blocked');
+            } else {
+                if (cellData.num) {
+                    const numSpan = document.createElement('span');
+                    numSpan.className = 'number';
+                    numSpan.textContent = cellData.num;
+                    cellDiv.appendChild(numSpan);
+                }
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.maxLength = 1;
+                input.dataset.answer = cellData.letter;
+                input.addEventListener('input', handleInput);
+                input.addEventListener('keydown', handleKeyDown);
+                input.addEventListener('focus', () => handleFocus(row, col));
+                cellDiv.appendChild(input);
+            }
+            grid.appendChild(cellDiv);
+        }
+    }
+
+    // After rendering, ensure grid dimensions fit by forcing a reflow and updating clue heights
+    requestAnimationFrame(() => {
+        updateStats();
+        updateClueFilledStatus();
+        syncCluesHeight();
+    });
+}
+
+function renderClues() {
+    const acrossContainer = document.getElementById('across-clues');
+    const downContainer = document.getElementById('down-clues');
+    acrossContainer.innerHTML = '';
+    downContainer.innerHTML = '';
+
+    // Filter out clues with invalid numbers (0 or missing)
+    const validAcrossClues = (puzzleData.clues.across || []).filter(clue => clue.number > 0);
+    const validDownClues = (puzzleData.clues.down || []).filter(clue => clue.number > 0);
+
+    validAcrossClues.forEach(clue => {
+        const li = document.createElement('li');
+        li.className = 'clue-item';
+        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
+        li.dataset.number = clue.number;
+        li.dataset.direction = 'across';
+        li.addEventListener('click', () => focusClue(clue.number, 'across'));
+        acrossContainer.appendChild(li);
+    });
+
+    validDownClues.forEach(clue => {
+        const li = document.createElement('li');
+        li.className = 'clue-item';
+        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
+        li.dataset.number = clue.number;
+        li.dataset.direction = 'down';
+        li.addEventListener('click', () => focusClue(clue.number, 'down'));
+        downContainer.appendChild(li);
+    });
+}
+
+function isValidSwedishLetter(value) {
+    if (value === "") return true; // tomt är okej
+    return /^[A-Za-zåäöÅÄÖ]$/.test(value);
+}
+
+function handleInput(e) {
+    const cell = e.target.parentElement;
+    const row = parseInt(cell.dataset.row);
+    const col = parseInt(cell.dataset.col);
+    
+    let val = e.target.value;
+
+    if (val.length > 1) val = val.charAt(0);
+
+    if (!isValidSwedishLetter(val)) {
+        e.target.value = "";
+        return;
+    }
+
+    if (val) e.target.value = val.toUpperCase(); else e.target.value = "";
+
+    e.target.parentElement.classList.remove('empty-warning');
+    
+    if (e.target.value) trackInput(row, col, e.target.value);
+    
+    if (e.target.value) moveInDirection(e.target);
+    updateStats();
+    updateClueFilledStatus();
+}
+
+function handleKeyDown(e) {
+    const cell = e.target.parentElement;
+    const row = parseInt(cell.dataset.row);
+    const col = parseInt(cell.dataset.col);
+
+    const key = e.key;
+
+    if (e.ctrlKey || e.metaKey) { e.preventDefault(); return; }
+
+    if (key === 'Backspace') {
+        if (e.target.value) {
+            e.target.value = '';
+            updateStats();
+            updateClueFilledStatus();
+            moveBackInDirection(e.target);
+        } else {
+            moveBackInDirection(e.target);
+        }
+        e.preventDefault();
+        return;
+    }
+
+    if (key === 'Delete') {
+        if (e.target.value) {
+            e.target.value = '';
+            updateStats();
+            updateClueFilledStatus();
+            moveInDirection(e.target);
+        } else {
+            moveInDirection(e.target);
+        }
+        e.preventDefault();
+        return;
+    }
+
+    switch (key) {
+        case 'ArrowRight': currentDirection = 'across'; moveTo(row, col + 1); e.preventDefault(); return;
+        case 'ArrowLeft': currentDirection = 'across'; moveTo(row, col - 1); e.preventDefault(); return;
+        case 'ArrowDown': currentDirection = 'down'; moveTo(row + 1, col); e.preventDefault(); return;
+        case 'ArrowUp': currentDirection = 'down'; moveTo(row - 1, col); e.preventDefault(); return;
+        case ' ':
+            currentDirection = currentDirection === 'across' ? 'down' : 'across';
+            handleFocus(row, col);
+            e.preventDefault();
+            return;
+    }
+
+    if (/^[A-Za-zåäöÅÄÖ]$/.test(key)) { e.target.value = ''; return; }
+
+    e.preventDefault();
+}
+
+function handleFocus(row, col) {
+    const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+    if (cell) {
+        const input = cell.querySelector('input');
+        if (input) { input.dataset.previousValue = input.value; setTimeout(() => input.select(), 0); }
+    }
+    highlightWord(row, col);
+    highlightClue(row, col);
+
+    // On mobile, ensure focused cell is visible above the on-screen keyboard
+    // Use a small timeout to allow the keyboard to appear and layout to change
+    setTimeout(() => {
+        if (cell && typeof cell.scrollIntoView === 'function') {
+            // Compute a scroll margin so the cell isn't obscured by the keyboard or fixed timers
+            const headerOffset = (document.querySelector('.grid-header')?.offsetHeight || 0) + 8;
+            const bottomOffset = 120; // heuristic space for keyboard
+            // Try to scroll the closest scrollable ancestor
+            let el = cell;
+            while (el && el !== document.body) {
+                const overflowY = window.getComputedStyle(el).overflowY;
+                if ((overflowY === 'auto' || overflowY === 'scroll') && el.clientHeight < el.scrollHeight) {
+                    // Scroll within this container to reveal the cell with padding
+                    const cellTop = cell.offsetTop;
+                    const target = Math.max(0, cellTop - 8);
+                    el.scrollTo({ top: target, behavior: 'smooth' });
+                    return;
+                }
+                el = el.parentElement;
+            }
+            // Fallback to window scrolling with offsets
+            const rect = cell.getBoundingClientRect();
+            const absoluteTop = rect.top + window.pageYOffset;
+            const viewportHeight = window.innerHeight;
+            const desiredTop = absoluteTop - headerOffset - 8;
+            // If cell would be covered by keyboard, scroll
+            if (rect.bottom > viewportHeight - bottomOffset || rect.top < headerOffset) {
+                window.scrollTo({ top: desiredTop, behavior: 'smooth' });
+            }
+        }
+
+        // Also ensure the active clue is visible in its scroll container
+        const activeClue = document.querySelector('.clue-item.active');
+        if (activeClue) {
+            const container = activeClue.closest('.clue-list');
+            if (container) {
+                const rect = activeClue.getBoundingClientRect();
+                const contRect = container.getBoundingClientRect();
+                if (rect.top < contRect.top || rect.bottom > contRect.bottom) {
+                    const target = activeClue.offsetTop - container.offsetTop - 8;
+                    container.scrollTo({ top: target, behavior: 'smooth' });
+                }
+            }
+        }
+    }, 300);
+}
+
+function highlightWord(row, col) {
+    document.querySelectorAll('.cell.word-highlight').forEach(c => c.classList.remove('word-highlight'));
+    if (currentDirection === 'across') {
+        let startCol = col;
+        while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
+        for (let c = startCol; c < puzzleData.width && puzzleData.cells[row]?.[c] !== null; c++) {
+            document.querySelector(`.cell[data-row="${row}"][data-col="${c}"]`)?.classList.add('word-highlight');
+        }
+    } else {
+        let startRow = row;
+        while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
+        for (let r = startRow; r < puzzleData.height && puzzleData.cells[r]?.[col] !== null; r++) {
+            document.querySelector(`.cell[data-row="${r}"][data-col="${col}"]`)?.classList.add('word-highlight');
+        }
+    }
+}
+
+function moveTo(row, col) {
+    if (row < 0 || row >= puzzleData.height || col < 0 || col >= puzzleData.width) return false;
+    if (puzzleData.cells[row]?.[col] === null) return false;
+    const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+    if (cell && !cell.classList.contains('blocked')) { cell.querySelector('input')?.focus(); return true; }
+    return false;
+}
+
+function moveInDirection(input) {
+    const cell = input.parentElement;
+    const row = parseInt(cell.dataset.row), col = parseInt(cell.dataset.col);
+    currentDirection === 'across' ? moveTo(row, col + 1) : moveTo(row + 1, col);
+}
+
+function moveBackInDirection(input) {
+    const cell = input.parentElement;
+    const row = parseInt(cell.dataset.row), col = parseInt(cell.dataset.col);
+    currentDirection === 'across' ? moveTo(row, col - 1) : moveTo(row - 1, col);
+}
+
+function focusClue(number, direction) {
+    currentDirection = direction;
+    for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            if (puzzleData.cells[row]?.[col]?.num === number) { moveTo(row, col); return; }
+        }
+    }
+}
+
+function highlightClue(row, col) {
+    document.querySelectorAll('.clue-item').forEach(item => item.classList.remove('active'));
+    const cellData = puzzleData.cells[row]?.[col];
+    if (cellData?.num) {
+        const clueItem = document.querySelector(`.clue-item[data-number="${cellData.num}"][data-direction="${currentDirection}"]`);
+        if (clueItem) {
+            clueItem.classList.add('active');
+            // Prefer scrolling the nearest scrollable .clue-list container so the page doesn't jump
+            const listContainer = clueItem.closest('.clue-list');
+            if (listContainer) {
+                // compute target scroll position relative to the container
+                const target = clueItem.offsetTop - listContainer.offsetTop - 8;
+                // smooth scroll within the container
+                listContainer.scrollTo({ top: target, behavior: 'smooth' });
+            } else {
+                // Fallback: scroll the element into view (may scroll the page)
+                clueItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+    }
+}
+
+function checkAnswers() {
+    const inputs = document.querySelectorAll('.cell:not(.blocked) input');
+    let correct = 0, total = inputs.length, filled = 0;
+    inputs.forEach(input => {
+        const cell = input.parentElement;
+        cell.classList.remove('correct', 'incorrect', 'empty-warning');
+        const value = input.value.toUpperCase();
+        if (value) {
+            filled++;
+            if (value === input.dataset.answer) { correct++; cell.classList.add('correct'); }
+            else { cell.classList.add('incorrect'); }
+        } else { cell.classList.add('empty-warning'); }
+    });
+    if (filled === total && correct === total) {
+        puzzleSolved = true; stopTimer();
+        inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
+        setTimeout(() => showUsernameModal(), 100);
+    } else if (filled < total) {
+        alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`);
+    } else {
+        alert(`${filled - correct} bokstäver är felaktiga. Försök igen!`);
+    }
+}
+
+function clearGrid() {
+    if (confirm('Vill du rensa alla svar?')) {
+        document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
+            input.value = '';
+            input.parentElement.classList.remove('correct', 'incorrect', 'empty-warning');
+        });
+        inputEvents = [];
+        updateStats();
+        updateClueFilledStatus();
+    }
+}
+
+function showSolution() {
+    if (confirm('Vill du visa lösningen?')) {
+        document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
+            input.value = input.dataset.answer;
+            input.parentElement.classList.remove('empty-warning', 'incorrect');
+            input.parentElement.classList.add('correct');
+        });
+        puzzleSolved = true; stopTimer(); updateStats();
+        updateClueFilledStatus();
+        usedShowSolution = true;
+        hasSubmittedScore = true;
+        trackSolutionView();
+    }
+}
+
+function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); } }, 1000); }
+function stopTimer() { clearInterval(timerInterval); }
+function formatTime(s) { return `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`; }
+function updateStats() {
+    const inputs = document.querySelectorAll('.cell:not(.blocked) input');
+    const filled = Array.from(inputs).filter(i => i.value).length;
+    document.getElementById('stats').textContent = `${filled}/${inputs.length} rutor ifyllda (${Math.round(filled/inputs.length*100)}%)`;
+}
+
+function updateClueFilledStatus() {
+    // Filter out clues with invalid numbers (0 or missing)
+    (puzzleData.clues.across || []).filter(clue => clue.number > 0).forEach(clue => {
+        const isFilled = isWordFilled(clue.number, 'across');
+        const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
+        if (clueItem) clueItem.classList.toggle('filled', isFilled);
+    });
+
+    (puzzleData.clues.down || []).filter(clue => clue.number > 0).forEach(clue => {
+        const isFilled = isWordFilled(clue.number, 'down');
+        const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
+        if (clueItem) clueItem.classList.toggle('filled', isFilled);
+    });
+}
+
+function isWordFilled(number, direction) {
+    const cells = getWordCells(number, direction);
+    if (!cells || cells.length === 0) return false;
+    return cells.every(cell => {
+        const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
+        return input && input.value.trim() !== '';
+    });
+}
+
+function getWordCells(number, direction) {
+    let startRow = -1, startCol = -1;
+    outer: for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            if (puzzleData.cells[row]?.[col]?.num === number) { startRow = row; startCol = col; break outer; }
+        }
+    }
+    if (startRow < 0) return null;
+    const cells = [];
+    if (direction === 'across') {
+        for (let c = startCol; c < puzzleData.width; c++) {
+            if (puzzleData.cells[startRow]?.[c] === null) break;
+            cells.push({ row: startRow, col: c });
+        }
+    } else {
+        for (let r = startRow; r < puzzleData.height; r++) {
+            if (puzzleData.cells[r]?.[startCol] === null) break;
+            cells.push({ row: r, col: startCol });
+        }
+    }
+    return cells;
+}
+
+// Compute and set a pixel-precise --cell-size based on container and its children
+function computeCellSize() {
+    const grid = document.getElementById('crossword-grid');
+    const gridSection = document.querySelector('.grid-section');
+    const mainLayout = document.getElementById('main-layout');
+    const gridArea = document.querySelector('.grid-inner .grid-area') || gridSection;
+    if (!grid || !gridSection || !puzzleData) return;
+
+    const cols = Math.max(1, puzzleData.width || parseInt(getComputedStyle(grid).getPropertyValue('--cols')) || 11);
+    const rows = Math.max(1, puzzleData.height || parseInt(getComputedStyle(grid).getPropertyValue('--rows')) || 11);
+
+    // Determine layout mode
+    const isLandscape = window.matchMedia('(max-width:1100px) and (orientation: landscape)').matches;
+    const isDesktop = window.matchMedia('(min-width:1100px)').matches;
+
+    // In portrait, prefer measuring the full grid section (non-media/default layout)
+    const measureArea = isLandscape ? gridArea : gridSection;
+
+    // Compute measured sizes from measureArea (the area the grid should fill)
+    let areaWidth = Math.max(40, measureArea.clientWidth);
+    let areaHeight = Math.max(40, measureArea.clientHeight);
+
+    // On desktop, compute available height from viewport minus header/footer/padding
+    if (isDesktop) {
+        const header = document.querySelector('header');
+        const footer = document.querySelector('.site-footer');
+        const siteContainer = document.querySelector('.site-container');
+        
+        const headerHeight = header ? header.offsetHeight : 0;
+        const footerHeight = footer ? footer.offsetHeight : 0;
+        const containerPadding = siteContainer ? 
+            parseFloat(getComputedStyle(siteContainer).paddingTop) + 
+            parseFloat(getComputedStyle(siteContainer).paddingBottom) : 56;
+        
+        // Calculate available height for the grid section
+        const viewportHeight = window.innerHeight;
+        const reservedHeight = headerHeight + footerHeight + containerPadding + 80; // 80 for margins/spacing
+        areaHeight = Math.max(200, viewportHeight - reservedHeight);
+        
+        // Width is constrained by the grid column in the CSS grid layout
+        // Use the actual grid section width
+        areaWidth = Math.max(200, gridSection.clientWidth - 40); // 40 for padding
+    }
+
+    // Account for any elements inside the measureArea (e.g., .stats, .grid-header) that consume vertical space
+    let insideReserved = 0;
+    const statsEl = document.querySelector('.stats');
+    const gridHeader = document.querySelector('.grid-header');
+    const controlsEl = document.querySelector('.grid-inner .controls');
+    
+    if (statsEl && measureArea.contains(statsEl) && !isDesktop) {
+        insideReserved += statsEl.offsetHeight;
+    }
+    if (gridHeader && gridSection.contains(gridHeader)) {
+        insideReserved += gridHeader.offsetHeight + 12; // 12 for margin
+    }
+    if (controlsEl && gridSection.contains(controlsEl) && isDesktop) {
+        insideReserved += controlsEl.offsetHeight + 16; // 16 for margin
+    }
+
+    // Read grid element's extra chrome (border + padding) so we can translate between outer and content sizes
+    const gridStyle = window.getComputedStyle(grid);
+    const borderX = (parseFloat(gridStyle.borderLeftWidth) || 0) + (parseFloat(gridStyle.borderRightWidth) || 0);
+    const borderY = (parseFloat(gridStyle.borderTopWidth) || 0) + (parseFloat(gridStyle.borderBottomWidth) || 0);
+    const padX = (parseFloat(gridStyle.paddingLeft) || 0) + (parseFloat(gridStyle.paddingRight) || 0);
+    const padY = (parseFloat(gridStyle.paddingTop) || 0) + (parseFloat(gridStyle.paddingBottom) || 0);
+    const extraX = borderX + padX;
+    const extraY = borderY + padY;
+
+    // Safety margin: smaller in landscape to maximize grid, moderate on desktop
+    const safety = isLandscape ? 0 : (isDesktop ? 8 : 6);
+
+    // Effective outer-space for the grid element inside measureArea
+    const maxOuterW = Math.max(40, areaWidth - safety);
+    const maxOuterH = Math.max(40, areaHeight - safety - insideReserved);
+
+    // Content area available for cells = outer minus grid chrome
+    const contentAvailW = Math.max(20, maxOuterW - extraX);
+    const contentAvailH = Math.max(20, maxOuterH - extraY);
+
+    const gap = 1; // px between cells as used in CSS
+
+    // Candidate cell sizes as floats to allow fine-grained fit
+    const cellByWidthFloat = (contentAvailW - (cols - 1) * gap) / cols;
+    const cellByHeightFloat = (contentAvailH - (rows - 1) * gap) / rows;
+
+    // sensible clamps - larger max on desktop
+    const minCell = 12;
+    const maxCell = isDesktop ? 80 : 64;
+
+    // Choose the largest fractional cell that fits both dimensions
+    let chosen = Math.min(cellByWidthFloat, cellByHeightFloat, maxCell);
+    if (!isFinite(chosen) || chosen < minCell) chosen = minCell;
+    chosen = Math.max(minCell, Math.min(chosen, maxCell));
+
+    // Apply the computed size
+    grid.style.setProperty('--cell-size', chosen + 'px');
+
+    // Compute desired outer sizes (content + chrome)
+    const totalContentW = chosen * cols + (cols - 1) * gap;
+    const totalContentH = chosen * rows + (rows - 1) * gap;
+    const desiredOuterW = totalContentW + extraX;
+    const desiredOuterH = totalContentH + extraY;
+
+    // Clamp to available outer space
+    const finalW = Math.min(desiredOuterW, maxOuterW);
+    const finalH = Math.min(desiredOuterH, maxOuterH);
+
+    // Set explicit outer size so the grid visually fills measureArea as much as possible
+    // On desktop, let the grid size naturally based on cell size
+    grid.style.boxSizing = 'border-box';
+    if (isDesktop) {
+        grid.style.width = 'auto';
+        grid.style.height = 'auto';
+    } else {
+        grid.style.width = finalW + 'px';
+        grid.style.height = finalH + 'px';
+    }
+}
+
+// Move timer between header and controls depending on layout (landscape => controls)
+function updateTimerPosition() {
+    const timer = document.getElementById('timer');
+    const controls = document.querySelector('.grid-inner .controls');
+    const header = document.querySelector('.grid-header');
+    if (!timer || !controls || !header) return;
+
+    const isLandscape = window.matchMedia('(max-width:1100px) and (orientation: landscape)').matches;
+    if (isLandscape) {
+        if (!controls.contains(timer)) {
+            // move timer into controls at the top
+            controls.insertBefore(timer, controls.firstChild);
+            timer.classList.add('timer-in-controls');
+        }
+    } else {
+        if (!header.contains(timer)) {
+            // move timer back to header (append at end)
+            header.appendChild(timer);
+            timer.classList.remove('timer-in-controls');
+        }
+    }
+}
+
+// Ensure computeCellSize runs on resize and after rendering
+(function(){
+    const onResize = () => {
+        computeCellSize();
+        syncCluesHeight();
+        updateTimerPosition();
+    };
+    window.addEventListener('resize', onResize);
+    window.addEventListener('orientationchange', onResize);
+})();
+
+// Ensure initial compute once DOM is stable
+setTimeout(() => { computeCellSize(); updateTimerPosition(); }, 120);
+
+document.addEventListener('DOMContentLoaded', loadPuzzle);
+
+// Toggle handling for mobile panels
+(function(){
+  const cluesToggle = document.getElementById('clues-toggle');
+  const leaderboardToggle = document.getElementById('leaderboard-toggle');
+  const introToggle = document.getElementById('intro-toggle');
+
+  const updateVisibility = () => {
+    const isSmall = window.matchMedia('(max-width:1100px)').matches;
+    if (!isSmall) {
+      document.body.classList.remove('show-leaderboard');
+      document.body.classList.remove('show-intro');
+      document.body.classList.remove('hide-clues');
+    }
+    if (cluesToggle) cluesToggle.style.display = isSmall ? 'inline-block' : 'none';
+    if (leaderboardToggle) leaderboardToggle.style.display = isSmall ? 'inline-block' : 'none';
+    if (introToggle) introToggle.style.display = isSmall ? 'inline-block' : 'none';
+
+    // Default: clues visible on mobile unless hide-clues is set
+    if (isSmall && !document.body.classList.contains('hide-clues')) {
+      cluesToggle && cluesToggle.setAttribute('aria-expanded', 'true');
+    }
+    // Reflect intro toggle state
+    if (introToggle) {
+      introToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-intro')));
+    }
+    if (leaderboardToggle) {
+      leaderboardToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-leaderboard')));
+    }
+  };
+
+  if (cluesToggle) cluesToggle.addEventListener('click', () => {
+    document.body.classList.toggle('hide-clues');
+    const cluesVisible = !document.body.classList.contains('hide-clues');
+    // When clues become visible, close leaderboard and intro to prioritize clues
+    if (cluesVisible) {
+      document.body.classList.remove('show-leaderboard');
+      document.body.classList.remove('show-intro');
+    } else {
+      // When clues are hidden, also ensure intro and leaderboard are closed
+      document.body.classList.remove('show-leaderboard');
+      document.body.classList.remove('show-intro');
+    }
+    cluesToggle.setAttribute('aria-expanded', String(cluesVisible));
+  });
+
+  if (leaderboardToggle) leaderboardToggle.addEventListener('click', () => {
+    const nowShown = !document.body.classList.contains('show-leaderboard');
+    document.body.classList.toggle('show-leaderboard');
+    // hide clues when leaderboard shown
+    if (document.body.classList.contains('show-leaderboard')) document.body.classList.add('hide-clues');
+    leaderboardToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-leaderboard')));
+  });
+
+  if (introToggle) introToggle.addEventListener('click', () => {
+    // Toggle the class that CSS checks to show the intro on mobile
+    document.body.classList.toggle('show-intro');
+    // when intro is shown, hide clues and leaderboard to prioritize intro
+    if (document.body.classList.contains('show-intro')) {
+      document.body.classList.add('hide-clues');
+      document.body.classList.remove('show-leaderboard');
+    }
+    introToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-intro')));
+  });
+
+  window.addEventListener('resize', updateVisibility);
+  document.addEventListener('DOMContentLoaded', updateVisibility);
+
+  // After puzzle completion and modal close, show leaderboard on small screens
+  const originalClose = window.closeModal;
+  window.closeModal = function(){
+    originalClose && originalClose();
+    if (puzzleSolved && window.matchMedia('(max-width:1100px)').matches){
+      document.body.classList.add('show-leaderboard');
+      if (leaderboardToggle) leaderboardToggle.setAttribute('aria-expanded','true');
+    }
+  };
+})();

@@ -1,4 +1,7 @@
-﻿using SwedishCrossword.Models;
+﻿using System.Security.Cryptography;
+using System.Text;
+using SwedishCrossword.Models;
+using System.Text.Json;
 
 namespace SwedishCrossword.Services;
 
@@ -10,6 +13,17 @@ public class CrosswordGenerator
     private readonly SwedishDictionary _dictionary;
     private readonly GridValidator _validator;
     private readonly Random _random;
+
+    // Cache for word analysis to avoid recomputing when word list hasn't changed
+    private readonly object _analysisCacheLock = new();
+    private string? _cachedWordsFingerprint;
+    private List<WordAnalysis>? _cachedWordAnalysis;
+
+    private const string CacheFileName = "wordAnalysisCache.json";
+
+    private record WordAnalysisDto(string Text, double ConnectivityScore, int VowelCount, int CommonLetterCount);
+
+    private record CacheFilePayload(string Fingerprint, List<WordAnalysisDto> Entries);
 
     public CrosswordGenerator(SwedishDictionary dictionary, GridValidator validator)
     {
@@ -944,23 +958,158 @@ public class CrosswordGenerator
 
     #region Word Analysis
 
-    private List<WordAnalysis> AnalyzeWordConnectivity(List<Word> words)
+    private string GetCacheDirectory()
     {
-        var analysis = new List<WordAnalysis>(words.Count);
-        
-        foreach (var word in words)
+        // Allow overriding cache location via environment variable for CI/workflows
+        var env = Environment.GetEnvironmentVariable("SWEDISH_CROSSWORD_CACHE_PATH");
+        if (!string.IsNullOrWhiteSpace(env))
         {
-            var (connectivityScore, vowelCount, commonLetterCount) = CalculateConnectivityScore(word, words);
-            analysis.Add(new WordAnalysis
+            try
             {
-                Word = word,
-                ConnectivityScore = connectivityScore,
-                VowelCount = vowelCount,
-                CommonLetterCount = commonLetterCount
-            });
+                // Expand leading ~ to user profile if present
+                if (env.StartsWith("~"))
+                {
+                    var home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                    env = Path.Combine(home, env.TrimStart('~').TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
+                }
+
+                return Path.GetFullPath(env);
+            }
+            catch
+            {
+                // Fall back to default if expansion fails
+            }
         }
 
-        return analysis;
+        // Default to LocalApplicationData/SwedishCrossword
+        return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SwedishCrossword");
+    }
+
+    private string GetCacheFilePath()
+    {
+        var dir = GetCacheDirectory();
+        return Path.Combine(dir, CacheFileName);
+    }
+
+    private List<WordAnalysis>? LoadAnalysisFromDisk(string fingerprint, List<Word> words)
+    {
+        try
+        {
+            var filePath = GetCacheFilePath();
+            if (!File.Exists(filePath)) return null;
+
+            var json = File.ReadAllText(filePath);
+            var payload = JsonSerializer.Deserialize<CacheFilePayload>(json);
+            if (payload == null) return null;
+            if (payload.Fingerprint != fingerprint) return null;
+
+            // Map DTOs back to WordAnalysis using the provided words list
+            var wordMap = words.ToDictionary(w => w.Text, StringComparer.OrdinalIgnoreCase);
+            var result = new List<WordAnalysis>(payload.Entries.Count);
+            foreach (var dto in payload.Entries)
+            {
+                if (!wordMap.TryGetValue(dto.Text, out var word))
+                {
+                    // A word from cache is missing from current word list - cache invalid
+                    return null;
+                }
+
+                result.Add(new WordAnalysis
+                {
+                    Word = word,
+                    ConnectivityScore = dto.ConnectivityScore,
+                    VowelCount = dto.VowelCount,
+                    CommonLetterCount = dto.CommonLetterCount
+                });
+            }
+
+            return result;
+        }
+        catch
+        {
+            // If any IO/deserialization error occurs, ignore and let caller recompute
+            return null;
+        }
+    }
+
+    private void SaveAnalysisToDisk(string fingerprint, List<WordAnalysis> analysis)
+    {
+        try
+        {
+            var dir = GetCacheDirectory();
+            Directory.CreateDirectory(dir);
+            var filePath = Path.Combine(dir, CacheFileName);
+
+            var dtos = analysis.Select(a => new WordAnalysisDto(a.Word.Text, a.ConnectivityScore, a.VowelCount, a.CommonLetterCount)).ToList();
+            var payload = new CacheFilePayload(fingerprint, dtos);
+            var json = JsonSerializer.Serialize(payload, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, json);
+        }
+        catch
+        {
+            // Ignore disk errors - caching should be best-effort
+        }
+    }
+
+    private List<WordAnalysis> AnalyzeWordConnectivity(List<Word> words)
+    {
+        ArgumentNullException.ThrowIfNull(words);
+
+        // Compute fingerprint first (cheap relative to full analysis)
+        var fingerprint = ComputeWordsFingerprint(words);
+
+        lock (_analysisCacheLock)
+        {
+            if (fingerprint == _cachedWordsFingerprint && _cachedWordAnalysis != null)
+            {
+                // Return a copy to avoid accidental external mutation
+                return new List<WordAnalysis>(_cachedWordAnalysis);
+            }
+
+            // Try load from disk cache before computing
+            var disk = LoadAnalysisFromDisk(fingerprint, words);
+            if (disk != null)
+            {
+                _cachedWordsFingerprint = fingerprint;
+                _cachedWordAnalysis = new List<WordAnalysis>(disk);
+                return new List<WordAnalysis>(_cachedWordAnalysis);
+            }
+
+            var analysis = new List<WordAnalysis>(words.Count);
+            foreach (var word in words)
+            {
+                var (connectivityScore, vowelCount, commonLetterCount) = CalculateConnectivityScore(word, words);
+                analysis.Add(new WordAnalysis
+                {
+                    Word = word,
+                    ConnectivityScore = connectivityScore,
+                    VowelCount = vowelCount,
+                    CommonLetterCount = commonLetterCount
+                });
+            }
+
+            // Update cache with a copy
+            _cachedWordsFingerprint = fingerprint;
+            _cachedWordAnalysis = new List<WordAnalysis>(analysis);
+
+            // Persist to disk (best-effort)
+            SaveAnalysisToDisk(fingerprint, _cachedWordAnalysis);
+
+            return analysis;
+        }
+    }
+
+    private string ComputeWordsFingerprint(List<Word> words)
+    {
+        // Create a sorted string of all word texts concatenated
+        var combined = string.Concat(words.OrderBy(w => w.Text).Select(w => w.Text));
+        
+        // Compute SHA256 hash of the combined string
+        using var sha256 = SHA256.Create();
+        var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(combined));
+        
+        // Convert hash to hex string
+        return string.Concat(hashBytes.Select(b => b.ToString("x2")));
     }
 
     private (double Score, int VowelCount, int CommonLetterCount) CalculateConnectivityScore(Word targetWord, List<Word> allWords)

@@ -997,6 +997,15 @@ public class CrosswordGrid
             word.Number = 0;
         }
 
+        // Clear accidental word puzzle numbers to ensure fresh numbering
+        if (accidentalWords != null)
+        {
+            foreach (var accWord in accidentalWords)
+            {
+                accWord.PuzzleNumber = 0;
+            }
+        }
+
         // Collect all word start positions (intentional words)
         var allWordStarts = new List<(int Row, int Col, Direction Dir, object WordRef)>();
         

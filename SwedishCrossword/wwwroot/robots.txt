@@ -1,0 +1,37 @@
+# Robots.txt for Svenskt Korsord
+# https://svensktkorsord.se
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://svensktkorsord.se/sitemap.xml
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Allow AI crawlers for search features
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+# Crawl delay to be respectful (optional)
+User-agent: *
+Crawl-delay: 1
