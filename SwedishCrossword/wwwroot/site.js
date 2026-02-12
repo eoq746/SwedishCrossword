@@ -72,6 +72,46 @@ let usedShowSolution = false;
 let suspiciousActivity = [];
 let HAS_VIEWED_SOLUTION = false; // Tracked via server-side IP
 
+// Re-entrancy guard for handleFocus to prevent focus loops
+let lastFocusedCell = null;
+let lastFocusTime = 0;
+const FOCUS_DEBOUNCE_MS = 50;
+
+// Announce messages to screen readers via ARIA live region
+function announce(message) {
+    const el = document.getElementById('announcements');
+    if (el) {
+        el.textContent = message;
+        // Clear after a delay to allow re-announcing the same message
+        setTimeout(() => { el.textContent = ''; }, 1000);
+    }
+}
+
+// Throttle utility for performance-sensitive event handlers
+function throttle(func, limit) {
+    let lastCall = 0;
+    let timeout = null;
+    return function(...args) {
+        const now = Date.now();
+        const remaining = limit - (now - lastCall);
+        
+        if (remaining <= 0) {
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            lastCall = now;
+            func.apply(this, args);
+        } else if (!timeout) {
+            timeout = setTimeout(() => {
+                lastCall = Date.now();
+                timeout = null;
+                func.apply(this, args);
+            }, remaining);
+        }
+    };
+}
+
 // DevTools detection flag (shared with ES module above)
 // Check if the ES module already set the flag before this script ran
 let devToolsOpenedDuringSession = window.devToolsOpenedDuringSession || false;
@@ -626,18 +666,33 @@ function syncCluesHeight() {
     const cluesSection = document.querySelector('.clues-section');
     const leaderboardSection = document.querySelector('.leaderboard-section');
 
-    // Only adjust when using wide layout; CSS handles heights now
+    // Only adjust when using wide layout (desktop)
     const isWide = window.matchMedia('(min-width:1100px)').matches;
     if (!gridSection) return;
 
     if (isWide) {
-        // Remove any inline styles to let CSS Grid align heights
-        if (cluesSection) { cluesSection.style.maxHeight = ''; cluesSection.style.height = '100%'; }
-        if (leaderboardSection) { leaderboardSection.style.maxHeight = ''; leaderboardSection.style.height = '100%'; }
+        // On desktop, sync clues and leaderboard height to match grid section
+        const gridHeight = gridSection.offsetHeight;
+        if (gridHeight > 0) {
+            if (cluesSection) {
+                cluesSection.style.height = gridHeight + 'px';
+                cluesSection.style.maxHeight = gridHeight + 'px';
+            }
+            if (leaderboardSection) {
+                leaderboardSection.style.height = gridHeight + 'px';
+                leaderboardSection.style.maxHeight = gridHeight + 'px';
+            }
+        }
     } else {
         // On small screens remove enforced heights so sections flow naturally
-        if (cluesSection) { cluesSection.style.maxHeight = ''; cluesSection.style.height = ''; }
-        if (leaderboardSection) { leaderboardSection.style.maxHeight = ''; leaderboardSection.style.height = ''; }
+        if (cluesSection) { 
+            cluesSection.style.maxHeight = ''; 
+            cluesSection.style.height = ''; 
+        }
+        if (leaderboardSection) { 
+            leaderboardSection.style.maxHeight = ''; 
+            leaderboardSection.style.height = ''; 
+        }
     }
 }
 
@@ -675,6 +730,16 @@ function renderGrid() {
                 input.type = 'text';
                 input.maxLength = 1;
                 input.dataset.answer = cellData.letter;
+                
+                // Mobile-friendly input attributes
+                input.autocomplete = 'off';
+                input.autocorrect = 'off';
+                input.autocapitalize = 'characters';  // Force uppercase on each keystroke
+                input.spellcheck = false;
+                input.inputMode = 'text';  // Show standard text keyboard
+                input.enterKeyHint = 'next';  // Show "Next" on mobile keyboard
+                input.setAttribute('aria-label', `Rad ${row + 1}, kolumn ${col + 1}`);
+                
                 input.addEventListener('input', handleInput);
                 input.addEventListener('keydown', handleKeyDown);
                 input.addEventListener('focus', () => handleFocus(row, col));
@@ -735,6 +800,14 @@ function handleInput(e) {
     
     let val = e.target.value;
 
+    // On mobile, space might come through as input - use it to toggle direction
+    if (val === ' ' || val === '  ') {
+        e.target.value = e.target.dataset.previousValue || '';
+        toggleDirection(row, col);
+        e.preventDefault();
+        return;
+    }
+
     if (val.length > 1) val = val.charAt(0);
 
     if (!isValidSwedishLetter(val)) {
@@ -753,6 +826,79 @@ function handleInput(e) {
     updateClueFilledStatus();
 }
 
+// Toggle direction between across and down
+function toggleDirection(row, col) {
+    currentDirection = currentDirection === 'across' ? 'down' : 'across';
+    highlightWord(row, col);
+    highlightClue(row, col);
+    updateDirectionButton();
+    announce(currentDirection === 'across' ? 'Vågrätt' : 'Lodrätt');
+}
+
+// Update the direction toggle button's visual state
+function updateDirectionButton() {
+    const btn = document.getElementById('direction-toggle');
+    if (!btn) return;
+    
+    const icon = btn.querySelector('.direction-icon');
+    const text = btn.querySelector('.direction-text');
+    
+    if (currentDirection === 'down') {
+        btn.classList.add('down');
+        if (text) text.textContent = 'Lodrätt';
+    } else {
+        btn.classList.remove('down');
+        if (text) text.textContent = 'Vågrätt';
+    }
+}
+
+// Handler for the direction toggle button click
+function toggleDirectionButton() {
+    // Find the currently focused cell
+    const activeInput = document.activeElement;
+    if (activeInput && activeInput.tagName === 'INPUT') {
+        const cell = activeInput.parentElement;
+        if (cell && cell.classList.contains('cell')) {
+            const row = parseInt(cell.dataset.row);
+            const col = parseInt(cell.dataset.col);
+            toggleDirection(row, col);
+            return;
+        }
+    }
+    
+    // If no cell is focused, just toggle the direction state
+    currentDirection = currentDirection === 'across' ? 'down' : 'across';
+    updateDirectionButton();
+    announce(currentDirection === 'across' ? 'Vågrätt' : 'Lodrätt');
+}
+
+// Make toggleDirectionButton available globally
+window.toggleDirectionButton = toggleDirectionButton;
+
+// Set up direction toggle button to prevent focus loss
+document.addEventListener('DOMContentLoaded', () => {
+    const directionBtn = document.getElementById('direction-toggle');
+    if (directionBtn) {
+        // Prevent the button from stealing focus on mousedown/touchstart
+        directionBtn.addEventListener('mousedown', (e) => {
+            e.preventDefault();
+        });
+        directionBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+        }, { passive: false });
+        
+        // Handle the actual toggle on click/touchend
+        directionBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleDirectionButton();
+        });
+        directionBtn.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            toggleDirectionButton();
+        }, { passive: false });
+    }
+});
+
 function handleKeyDown(e) {
     const cell = e.target.parentElement;
     const row = parseInt(cell.dataset.row);
@@ -761,6 +907,17 @@ function handleKeyDown(e) {
     const key = e.key;
 
     if (e.ctrlKey || e.metaKey) { e.preventDefault(); return; }
+
+    // Tab / Shift+Tab: move to next/previous clue in the same direction
+    if (key === 'Tab') {
+        e.preventDefault();
+        if (e.shiftKey) {
+            moveToPreviousClue(row, col);
+        } else {
+            moveToNextClue(row, col);
+        }
+        return;
+    }
 
     if (key === 'Backspace') {
         if (e.target.value) {
@@ -791,8 +948,8 @@ function handleKeyDown(e) {
         case 'ArrowDown': currentDirection = 'down'; moveTo(row + 1, col); e.preventDefault(); return;
         case 'ArrowUp': currentDirection = 'down'; moveTo(row - 1, col); e.preventDefault(); return;
         case ' ':
-            currentDirection = currentDirection === 'across' ? 'down' : 'across';
-            handleFocus(row, col);
+        case 'Spacebar': // Older browsers
+            toggleDirection(row, col);
             e.preventDefault();
             return;
     }
@@ -803,10 +960,37 @@ function handleKeyDown(e) {
 }
 
 function handleFocus(row, col) {
+    // Debounce rapid focus events on the same cell to prevent loops
+    const cellKey = `${row},${col}`;
+    const now = Date.now();
+    
+    // If tapping the same cell again (within a reasonable time), toggle direction
+    // This provides an alternative way to change direction on mobile
+    if (cellKey === lastFocusedCell && (now - lastFocusTime) > FOCUS_DEBOUNCE_MS && (now - lastFocusTime) < 500) {
+        toggleDirection(row, col);
+        lastFocusTime = now;
+        return;
+    }
+    
+    if (cellKey === lastFocusedCell && (now - lastFocusTime) < FOCUS_DEBOUNCE_MS) {
+        return;
+    }
+    lastFocusedCell = cellKey;
+    lastFocusTime = now;
+
     const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
     if (cell) {
         const input = cell.querySelector('input');
-        if (input) { input.dataset.previousValue = input.value; setTimeout(() => input.select(), 0); }
+        if (input) { 
+            input.dataset.previousValue = input.value; 
+            // Use requestAnimationFrame instead of setTimeout to avoid focus race conditions
+            requestAnimationFrame(() => {
+                // Only select if this input is still the active element
+                if (document.activeElement === input) {
+                    input.select();
+                }
+            });
+        }
     }
     highlightWord(row, col);
     highlightClue(row, col);
@@ -814,6 +998,9 @@ function handleFocus(row, col) {
     // On mobile, ensure focused cell is visible above the on-screen keyboard
     // Use a small timeout to allow the keyboard to appear and layout to change
     setTimeout(() => {
+        // Exit early if focus has moved to a different cell
+        if (lastFocusedCell !== cellKey) return;
+        
         if (cell && typeof cell.scrollIntoView === 'function') {
             // Compute a scroll margin so the cell isn't obscured by the keyboard or fixed timers
             const headerOffset = (document.querySelector('.grid-header')?.offsetHeight || 0) + 8;
@@ -904,11 +1091,98 @@ function focusClue(number, direction) {
     }
 }
 
+// Move to the next clue in the current direction
+function moveToNextClue(currentRow, currentCol) {
+    const clues = currentDirection === 'across' 
+        ? (puzzleData.clues.across || []).filter(c => c.number > 0)
+        : (puzzleData.clues.down || []).filter(c => c.number > 0);
+    
+    if (clues.length === 0) return;
+    
+    // Find the current clue number by looking for the start of the current word
+    const currentClueNumber = findCurrentClueNumber(currentRow, currentCol);
+    
+    // Find the index of the current clue
+    const currentIndex = clues.findIndex(c => c.number === currentClueNumber);
+    
+    // Move to the next clue (wrap around to first if at end)
+    const nextIndex = currentIndex >= 0 ? (currentIndex + 1) % clues.length : 0;
+    const nextClue = clues[nextIndex];
+    
+    // Focus the first cell of the next clue
+    focusClue(nextClue.number, currentDirection);
+}
+
+// Move to the previous clue in the current direction
+function moveToPreviousClue(currentRow, currentCol) {
+    const clues = currentDirection === 'across' 
+        ? (puzzleData.clues.across || []).filter(c => c.number > 0)
+        : (puzzleData.clues.down || []).filter(c => c.number > 0);
+    
+    if (clues.length === 0) return;
+    
+    // Find the current clue number by looking for the start of the current word
+    const currentClueNumber = findCurrentClueNumber(currentRow, currentCol);
+    
+    // Find the index of the current clue
+    const currentIndex = clues.findIndex(c => c.number === currentClueNumber);
+    
+    // Move to the previous clue (wrap around to last if at beginning)
+    const prevIndex = currentIndex > 0 ? currentIndex - 1 : clues.length - 1;
+    const prevClue = clues[prevIndex];
+    
+    // Focus the first cell of the previous clue
+    focusClue(prevClue.number, currentDirection);
+}
+
+// Find the clue number for the word at the given position in the current direction
+// This checks if the current cell is the START of a clue in the current direction first,
+// which handles cases where a cell is part of two overlapping words in the same direction.
+function findCurrentClueNumber(row, col) {
+    const cellData = puzzleData.cells[row]?.[col];
+    
+    // First, check if the current cell has a clue number
+    if (cellData?.num) {
+        // Check if this clue number exists in the clues for the current direction
+        const clues = currentDirection === 'across' 
+            ? (puzzleData.clues.across || [])
+            : (puzzleData.clues.down || []);
+        
+        if (clues.some(c => c.number === cellData.num)) {
+            // This cell starts a clue in the current direction
+            return cellData.num;
+        }
+    }
+    
+    // Otherwise, walk backwards to find the start of the word
+    let startRow = row, startCol = col;
+    
+    if (currentDirection === 'across') {
+        while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
+    } else {
+        while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
+    }
+    
+    // Get the clue number from the start cell
+    const startCellData = puzzleData.cells[startRow]?.[startCol];
+    return startCellData?.num || 0;
+}
+
 function highlightClue(row, col) {
     document.querySelectorAll('.clue-item').forEach(item => item.classList.remove('active'));
-    const cellData = puzzleData.cells[row]?.[col];
-    if (cellData?.num) {
-        const clueItem = document.querySelector(`.clue-item[data-number="${cellData.num}"][data-direction="${currentDirection}"]`);
+    
+    // Find the start of the word in the current direction to get the clue number
+    let startRow = row, startCol = col;
+    if (currentDirection === 'across') {
+        while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
+    } else {
+        while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
+    }
+    
+    // Get the number from the start cell
+    const startCellData = puzzleData.cells[startRow]?.[startCol];
+    if (startCellData?.num) {
+        const clueItem = document.querySelector(`.clue-item[data-number="${startCellData.num}"][data-direction="${currentDirection}"]`);
         if (clueItem) {
             clueItem.classList.add('active');
             // Prefer scrolling the nearest scrollable .clue-list container so the page doesn't jump
@@ -942,11 +1216,16 @@ function checkAnswers() {
     if (filled === total && correct === total) {
         puzzleSolved = true; stopTimer();
         inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
+        announce(`Grattis! Du löste korsordet på ${formatTime(seconds)}`);
         setTimeout(() => showUsernameModal(), 100);
     } else if (filled < total) {
+        const message = `Du har ${total - filled} tomma rutor kvar. ${correct} av ${filled} ifyllda är korrekta.`;
+        announce(message);
         alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`);
     } else {
-        alert(`${filled - correct} bokstäver är felaktiga. Försök igen!`);
+        const errorCount = filled - correct;
+        announce(`${errorCount} bokstäver är felaktiga`);
+        alert(`${errorCount} bokstäver är felaktiga. Försök igen!`);
     }
 }
 
@@ -1048,49 +1327,33 @@ function computeCellSize() {
     const isLandscape = window.matchMedia('(max-width:1100px) and (orientation: landscape)').matches;
     const isDesktop = window.matchMedia('(min-width:1100px)').matches;
 
-    // In portrait, prefer measuring the full grid section (non-media/default layout)
+    // On desktop, let CSS handle sizing via clamp() - don't override with JS
+    // This allows the CSS media queries to properly size the grid for large screens
+    if (isDesktop) {
+        // Clear any JS-set values so CSS can control sizing
+        grid.style.removeProperty('--cell-size');
+        grid.style.width = 'auto';
+        grid.style.height = 'auto';
+        return;
+    }
+
+    // For mobile/landscape, compute precise cell size
     const measureArea = isLandscape ? gridArea : gridSection;
 
     // Compute measured sizes from measureArea (the area the grid should fill)
     let areaWidth = Math.max(40, measureArea.clientWidth);
     let areaHeight = Math.max(40, measureArea.clientHeight);
 
-    // On desktop, compute available height from viewport minus header/footer/padding
-    if (isDesktop) {
-        const header = document.querySelector('header');
-        const footer = document.querySelector('.site-footer');
-        const siteContainer = document.querySelector('.site-container');
-        
-        const headerHeight = header ? header.offsetHeight : 0;
-        const footerHeight = footer ? footer.offsetHeight : 0;
-        const containerPadding = siteContainer ? 
-            parseFloat(getComputedStyle(siteContainer).paddingTop) + 
-            parseFloat(getComputedStyle(siteContainer).paddingBottom) : 56;
-        
-        // Calculate available height for the grid section
-        const viewportHeight = window.innerHeight;
-        const reservedHeight = headerHeight + footerHeight + containerPadding + 80; // 80 for margins/spacing
-        areaHeight = Math.max(200, viewportHeight - reservedHeight);
-        
-        // Width is constrained by the grid column in the CSS grid layout
-        // Use the actual grid section width
-        areaWidth = Math.max(200, gridSection.clientWidth - 40); // 40 for padding
-    }
-
     // Account for any elements inside the measureArea (e.g., .stats, .grid-header) that consume vertical space
     let insideReserved = 0;
     const statsEl = document.querySelector('.stats');
     const gridHeader = document.querySelector('.grid-header');
-    const controlsEl = document.querySelector('.grid-inner .controls');
     
-    if (statsEl && measureArea.contains(statsEl) && !isDesktop) {
+    if (statsEl && measureArea.contains(statsEl)) {
         insideReserved += statsEl.offsetHeight;
     }
     if (gridHeader && gridSection.contains(gridHeader)) {
         insideReserved += gridHeader.offsetHeight + 12; // 12 for margin
-    }
-    if (controlsEl && gridSection.contains(controlsEl) && isDesktop) {
-        insideReserved += controlsEl.offsetHeight + 16; // 16 for margin
     }
 
     // Read grid element's extra chrome (border + padding) so we can translate between outer and content sizes
@@ -1102,8 +1365,8 @@ function computeCellSize() {
     const extraX = borderX + padX;
     const extraY = borderY + padY;
 
-    // Safety margin: smaller in landscape to maximize grid, moderate on desktop
-    const safety = isLandscape ? 0 : (isDesktop ? 8 : 6);
+    // Safety margin: smaller in landscape to maximize grid
+    const safety = isLandscape ? 0 : 6;
 
     // Effective outer-space for the grid element inside measureArea
     const maxOuterW = Math.max(40, areaWidth - safety);
@@ -1119,9 +1382,9 @@ function computeCellSize() {
     const cellByWidthFloat = (contentAvailW - (cols - 1) * gap) / cols;
     const cellByHeightFloat = (contentAvailH - (rows - 1) * gap) / rows;
 
-    // sensible clamps - larger max on desktop
+    // sensible clamps for mobile
     const minCell = 12;
-    const maxCell = isDesktop ? 80 : 64;
+    const maxCell = 64;
 
     // Choose the largest fractional cell that fits both dimensions
     let chosen = Math.min(cellByWidthFloat, cellByHeightFloat, maxCell);
@@ -1142,15 +1405,9 @@ function computeCellSize() {
     const finalH = Math.min(desiredOuterH, maxOuterH);
 
     // Set explicit outer size so the grid visually fills measureArea as much as possible
-    // On desktop, let the grid size naturally based on cell size
     grid.style.boxSizing = 'border-box';
-    if (isDesktop) {
-        grid.style.width = 'auto';
-        grid.style.height = 'auto';
-    } else {
-        grid.style.width = finalW + 'px';
-        grid.style.height = finalH + 'px';
-    }
+    grid.style.width = finalW + 'px';
+    grid.style.height = finalH + 'px';
 }
 
 // Move timer between header and controls depending on layout (landscape => controls)
@@ -1176,15 +1433,19 @@ function updateTimerPosition() {
     }
 }
 
-// Ensure computeCellSize runs on resize and after rendering
+// Ensure computeCellSize runs on resize and after rendering (with throttling for performance)
 (function(){
-    const onResize = () => {
+    const onResizeHandler = () => {
         computeCellSize();
         syncCluesHeight();
         updateTimerPosition();
     };
-    window.addEventListener('resize', onResize);
-    window.addEventListener('orientationchange', onResize);
+    
+    // Throttle resize events to max 10 times per second for better performance
+    const throttledResize = throttle(onResizeHandler, 100);
+    
+    window.addEventListener('resize', throttledResize);
+    window.addEventListener('orientationchange', onResizeHandler); // Don't throttle orientation changes
 })();
 
 // Ensure initial compute once DOM is stable

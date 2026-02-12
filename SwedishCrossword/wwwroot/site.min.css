@@ -19,6 +19,19 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 
+/* Screen reader only - visually hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Page base (desktop-friendly) */
 body{
   font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
@@ -40,6 +53,22 @@ header h1{font-size:2rem;margin-bottom:6px;text-shadow:2px 2px 4px rgba(0,0,0,.3
 header p{font-size:.95rem;opacity:.95}
 .puzzle-info{background:rgba(255,255,255,.06);padding:6px 12px;border-radius:8px;margin-top:8px;display:inline-block;font-size:.85rem}
 .generation-date{font-size:.9rem;opacity:.95;margin-top:8px}
+
+/* Loading spinner */
+.loading{text-align:center;padding:40px 20px;color:#fff}
+.loading p{margin-top:16px;font-size:1rem;opacity:0.9}
+.loading-spinner{
+  width:48px;
+  height:48px;
+  margin:0 auto;
+  border:4px solid rgba(255,255,255,0.3);
+  border-top-color:#fff;
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
 
 /* Intro */
 .intro-section{background:rgba(255,255,255,0.06);padding:14px;border-radius:8px;color:rgba(255,255,255,0.95);margin-bottom:12px}
@@ -120,12 +149,41 @@ header p{font-size:.95rem;opacity:.95}
   margin:0 auto;
 }
 
-.cell{width:var(--cell-size);height:var(--cell-size);background:var(--cell-bg);border:1px solid #e2e2e2;display:flex;align-items:center;justify-content:center;font-size:calc(var(--cell-size)*0.45);font-weight:700;color:var(--letter-color);cursor:pointer; position: relative}
+.cell{width:var(--cell-size);height:var(--cell-size);background:var(--cell-bg);border:1px solid #e2e2e2;display:flex;align-items:center;justify-content:center;font-size:calc(var(--cell-size)*0.5);font-weight:700;color:var(--letter-color);cursor:pointer; position: relative}
 .cell:hover:not(.blocked){background:var(--highlight-color)}
 .cell.blocked{background:var(--blocked-color);cursor:default}
 .cell.word-highlight{background:var(--word-highlight)}
+/* Visual feedback for answer checking */
+.cell.correct{background:#bbf7d0}
+.cell.correct input{color:#166534}
+.cell.incorrect{background:#fecaca}
+.cell.incorrect input{color:#991b1b}
+.cell.empty-warning{background:#fef08a;animation:pulse-warning 0.6s ease-in-out}
+@keyframes pulse-warning{0%,100%{background:#fef08a}50%{background:#fde047}}
 .cell .number{position:absolute;top:2px;left:4px;font-size:calc(var(--cell-size)*0.22);font-weight:400;color:var(--number-color);z-index:2;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;pointer-events:none;}
-.cell input{width:100%;height:100%;border:none;background:transparent;text-align:center;font-weight:700;text-transform:uppercase;outline:none;line-height:1;padding:0;caret-color:var(--accent-color);z-index:1}
+.cell input{
+  width:100%;
+  height:100%;
+  border:none;
+  background:transparent;
+  text-align:center;
+  font-size:calc(var(--cell-size)*0.5);
+  font-weight:700;
+  text-transform:uppercase;
+  outline:none;
+  line-height:1;
+  padding:0;
+  caret-color:var(--accent-color);
+  z-index:1;
+  -webkit-text-size-adjust:100%;
+  -moz-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+.cell input:focus{
+  outline:2px solid var(--accent-color);
+  outline-offset:-2px;
+  border-radius:2px;
+}
 .cell, .cell * { box-sizing: border-box; }
 /* Make cell a positioning context and ensure number sits above input */
 .cell{position:relative}
@@ -138,6 +196,24 @@ header p{font-size:.95rem;opacity:.95}
 .btn-secondary{background:#e5e7eb;color:#374151}
 .btn-success{background:#16a34a;color:#fff}
 
+/* Direction toggle button - visible on mobile, hidden on desktop */
+.btn-direction{
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+.btn-direction:active{transform: scale(0.95);}
+.btn-direction .direction-icon{
+  font-size: 1.1em;
+  transition: transform 0.2s ease;
+}
+.btn-direction.down .direction-icon{transform: rotate(90deg);}
+
 .timer{font-size:1.1rem;font-weight:700;color:var(--accent-color);text-align:center;margin-bottom:8px}
 .stats{text-align:center;margin-top:8px;color:#666;font-size:.85rem}
 
@@ -145,22 +221,27 @@ header p{font-size:.95rem;opacity:.95}
    Clue and leaderboard lists will be made scrollable on mobile via the consolidated media block */
 .clues-columns{display:flex;gap:12px; flex: 1 1 auto; min-height: 0; overflow: hidden;}
 .clue-column{flex: 1 1 50%; min-width: 0; display: flex; flex-direction: column; min-height: 0;}
-.clue-list{list-style:none;margin:0;flex: 1 1 auto; overflow: auto; -webkit-overflow-scrolling: touch; max-height: 100%; padding-right: 6px; }
+.clue-list{
+  list-style:none;
+  margin:0;
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: 100%;
+  padding-right: 6px;
+  overscroll-behavior: contain;
+}
 .clue-item{padding:8px;border-radius:4px;cursor:pointer;font-size:.9rem;line-height:1.3}
 .clue-item:hover{background:#f3f4f6}
 .clue-item.active{background:var(--word-highlight);border-left:3px solid var(--accent-color)}
 .clue-item.filled{color:#6b7280;text-decoration:line-through;opacity:.7}
 
-.leaderboard-list{list-style:none;padding-right:6px;margin:0}
-.leaderboard-item{display:flex;align-items:center;padding:8px;border-radius:6px;background:#f9fafb;margin-bottom:6px}
-.leaderboard-item.current-user{background:#fef3c7;border:1px solid #f59e0b}
-.leaderboard-rank{width:28px;text-align:center;font-weight:700;color:#374151}
-.leaderboard-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0 8px;color:#1f2937}
-.leaderboard-time {
-    font-weight: 600;
-    color: var(--accent-color)
+.leaderboard-list{
+  list-style:none;
+  padding-right:6px;
+  margin:0;
+  overscroll-behavior: contain;
 }
-.leaderboard-empty{text-align:center;color:#9ca3af;padding:12px}
 
 /* Modal */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}
@@ -168,7 +249,7 @@ header p{font-size:.95rem;opacity:.95}
 .modal{background:#fff;border-radius:12px;padding:18px;max-width:420px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.25);text-align:center}
 .modal h3{color:#1f2937;margin-bottom:8px;font-size:1.15rem}
 .modal p{color:#6b7280;margin-bottom:12px}
-.modal-time{font-size:1.6rem;font-weight:700;color:var(--accent-color);margin-bottom:12px}
+.modal-time{font-size:1.6rem;font-weight:700;color:var(--AccentColor);margin-bottom:12px}
 .modal input[type=text]{width:100%;padding:10px 12px;border:2px solid #e5e7eb;border-radius:8px}
 
 /* Toggles */
@@ -191,8 +272,41 @@ header p{font-size:.95rem;opacity:.95}
 
 /* Consolidated mobile rules */
 @media (max-width:1099px){
+    /* Compact header on mobile portrait */
+    header {
+        margin-bottom: 6px;
+        padding: 0 4px;
+    }
+    header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 2px;
+    }
+    header p {
+        display: none; /* Hide instructions on mobile - save space */
+    }
+    .puzzle-info {
+        padding: 4px 8px;
+        margin-top: 4px;
+        font-size: 0.75rem;
+    }
+    .generation-date {
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
+    /* Hide top toggles container padding */
+    .top-controls {
+        margin-bottom: 6px;
+        gap: 6px;
+    }
+    .clues-toggle, #leaderboard-toggle, #intro-toggle {
+        margin: 4px;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
     .site-container {
-        max-height: calc(100vh - 80px);
+        max-height: calc(100vh - 60px);
         overflow: hidden;
         position: relative;
         padding: 6px;
@@ -203,7 +317,7 @@ header p{font-size:.95rem;opacity:.95}
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
+        gap: 8px;
         flex: 1 1 auto;
         overflow: auto;
         max-height: 100%;
@@ -213,40 +327,83 @@ header p{font-size:.95rem;opacity:.95}
     .clues-section {
         position: relative;
         z-index: 2;
-        margin-top: 12px;
+        margin-top: 8px;
         clear: both;
-        flex: 0 0 auto;
+        flex: 1 1 auto;
         order: 2;
         display: flex;
         flex-direction: column;
-        min-height: 0;
-        max-height: 48vh;
+        min-height: 100px;
+        max-height: 50vh;
         overflow: hidden;
         padding: 6px;
         width: 100%; 
         box-sizing: border-box;
     }
+    
+    /* Clues section header - compact or hidden */
+    .clues-section h2 {
+        display: none; /* Hide "Ledtrådar" header on mobile to save space */
+    }
+
     .grid-section {
         position: relative;
         z-index: 1;
         flex: 0 0 auto;
         overflow: hidden;
         order: 1;
-        min-height: 32vh;
-        padding: 6px;
+        min-height: auto; /* Remove fixed min-height - let content determine */
+        padding: 4px;
         display: flex;
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
+    
+    /* Compact grid header on mobile */
+    .grid-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 4px;
+    }
+    .grid-header h2 {
+        display: none; /* Hide "Dagens Korsord" on mobile */
+    }
+    .grid-header .timer {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    /* Compact controls on mobile - single row */
+    .grid-inner .controls {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 6px;
+        justify-content: center;
+    }
+    .grid-inner .controls .btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    .grid-inner .controls .stats {
+        width: 100%;
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
+
     .crossword-grid {
         position: relative;
         z-index: 0;
         --cell-size: clamp(18px,8vw,44px);
-        margin: 8px auto
+        margin: 4px auto;
     }
 
   /* Adjust site-container padding previously set */
-  body{padding:env(safe-area-inset-top,12px) 10px env(safe-area-inset-bottom,12px) 10px}
+  body{padding:env(safe-area-inset-top,8px) 8px env(safe-area-inset-bottom,8px) 8px}
 
   /* Hide intro and content sections by default on mobile; reveal with body classes */
   .intro-section{display:none;padding:10px;font-size:0.9rem;max-height:50vh;overflow:auto}
@@ -296,29 +453,107 @@ header p{font-size:.95rem;opacity:.95}
 
   /* Clues: visible by default, hidden when body.hide-clues present */
   body.hide-clues .clues-section{display:none}
+  
     .clues-columns {
         flex: 1 1 auto;
         min-height: 0;
         overflow: hidden;
         flex-direction: row;
-        gap: 10px
+        gap: 8px;
     }
+    
     .clue-column {
         flex: 1 1 50%;
         min-width: 0;
         min-height: 0;
         display: flex;
         flex-direction: column;
-        overflow: hidden
+        overflow: hidden;
+    }
+    
+    /* Make clue-direction a proper flex container with sticky header */
+    .clue-direction {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow: hidden;
+    }
+    
+    /* Sticky headers for clue directions on mobile */
+    .clue-direction h3 {
+        flex: 0 0 auto;
+        position: sticky;
+        top: 0;
+        background: #fff;
+        padding: 4px 0 6px 0;
+        margin: 0 0 4px 0;
+        font-size: 0.85rem;
+        color: #4b5563;
+        z-index: 1;
+        border-bottom: 1px solid #e5e7eb;
     }
 
-  .clue-list{flex:1 1 auto;overflow:auto;-webkit-overflow-scrolling:touch;max-height:100%;padding-right:6px;max-height: calc(48vh - 56px) !important; overflow: auto !important; -webkit-overflow-scrolling: touch;}
+    /* Clue list - flexible height based on available space */
+    .clue-list {
+        flex: 1 1 auto;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        padding-right: 4px;
+        margin: 0;
+        /* Remove fixed max-height, let flex handle sizing */
+        max-height: none;
+    }
+    
+    .clue-item {
+        padding: 6px 8px;
+        font-size: 0.85rem;
+        line-height: 1.35;
+    }
+    
   #clues-toggle{display:inline-block}
 
   /* Leaderboard: hidden by default, shown with body.show-leaderboard; scroll internally */
-  .leaderboard-section{order:3;display:none;max-height:40vh;overflow:hidden;padding:6px;width:100%}
-  body.show-leaderboard .leaderboard-section{display:flex}
-  .leaderboard-list{overflow:auto;-webkit-overflow-scrolling:touch;max-height:100%}
+    .leaderboard-section {
+        order: 3;
+        display: none;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+    }
+    
+    body.show-leaderboard .leaderboard-section {
+        display: flex;
+    }
+    
+    .leaderboard-section h2 {
+        flex: 0 0 auto;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+    
+    .leaderboard-list {
+        flex: 1 1 auto;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        max-height: none;
+    }
+    
+    .leaderboard-item {
+        padding: 8px 6px;
+        margin-bottom: 4px;
+    }
+    
+    .leaderboard-date {
+        flex: 0 0 auto;
+        margin-top: 6px;
+        font-size: 0.75rem;
+        text-align: center;
+        color: #6b7280;
+    }
+    
   #leaderboard-toggle{display:inline-block}
 
   /* Reduce footer footprint */
@@ -431,6 +666,9 @@ header p{font-size:.95rem;opacity:.95}
   header h1 { font-size: 2.4rem; }
   header p { font-size: 1rem; }
 
+  /* Hide direction toggle button on desktop - spacebar works reliably */
+  .btn-direction { display: none; }
+
   /* Intro section: wider and more readable */
   .intro-section { padding: 18px 24px; margin-bottom: 16px; }
   .intro-section h2 { font-size: 1.15rem; }
@@ -447,16 +685,18 @@ header p{font-size:.95rem;opacity:.95}
   .content-section ul { font-size: 0.95rem; }
   .content-section li { margin-bottom: 5px; }
 
-  /* Use a three-column layout: grid | clues | leaderboard */
+  /* Use a three-column layout: grid | clues | leaderboard 
+     Use subgrid-like behavior with grid-template-rows to sync heights */
   .main-layout { 
     display: grid; 
     grid-template-columns: minmax(400px, 1fr) 320px 260px; 
+    grid-template-rows: auto;
     gap: 24px; 
     align-items: start; 
     height: auto; 
   }
 
-  /* Grid section: more padding and allow it to grow vertically */
+  /* Grid section: sized by its content */
   .grid-section { 
     padding: 20px; 
     display: flex; 
@@ -464,6 +704,7 @@ header p{font-size:.95rem;opacity:.95}
     align-items: center;
     order: 1;
     min-height: 0;
+    height: fit-content;
   }
 
   /* Grid header: show the h2 on desktop and place timer inline */
@@ -484,10 +725,9 @@ header p{font-size:.95rem;opacity:.95}
     font-size: 1.3rem;
   }
 
-  /* Larger cells calculated from available viewport height for comfortable desktop play */
+  /* Calculate cell size based on viewport height - use more of the available space */
   .crossword-grid {
-    /* prefer a height-constrained cell size but allow growing with width as needed */
-    --cell-size: clamp(32px, calc((100vh - 340px) / var(--rows,11)), 56px);
+    --cell-size: clamp(36px, calc((100vh - 280px) / var(--rows,11)), 64px);
     grid-template-columns: repeat(var(--cols,11), var(--cell-size));
     grid-auto-rows: var(--cell-size);
     gap: 1px;
@@ -541,33 +781,39 @@ header p{font-size:.95rem;opacity:.95}
     margin: 0 auto;
   }
 
-  /* Clues section: visible panel with internal scrolling */
+  /* Clues section: match grid section height, internal scrolling */
   .clues-section { 
     display: flex; 
     flex-direction: column; 
     padding: 16px; 
-    max-height: calc(100vh - 200px); 
     overflow: hidden;
     order: 2;
+    /* Use align-self: stretch within a row that's sized by the grid */
+    align-self: self-start;
+    /* Match the grid section height - will be set by JS */
+    height: auto;
+    max-height: none;
   }
-  .clues-section h2 { font-size: 1.1rem; margin-bottom: 12px; }
-  .clues-columns { flex-direction: column; gap: 16px; flex: 1 1 auto; overflow: hidden; }
+  .clues-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
+  .clues-columns { flex-direction: column; gap: 16px; flex: 1 1 auto; overflow: hidden; min-height: 0; }
   .clue-column { flex: 1 1 50%; min-height: 0; }
-  .clue-direction { min-height: 0; }
-  .clue-direction h3 { font-size: 0.95rem; margin-bottom: 8px; color: #4b5563; }
-  .clue-list { max-height: none; overflow: auto; }
+  .clue-direction { min-height: 0; flex: 1 1 auto; display: flex; flex-direction: column; overflow: hidden; }
+  .clue-direction h3 { font-size: 0.95rem; margin-bottom: 8px; color: #4b5563; flex: 0 0 auto; }
+  .clue-list { max-height: none; overflow: auto; flex: 1 1 auto; }
   .clue-item { font-size: 0.9rem; padding: 10px 8px; }
 
-  /* Leaderboard section: visible panel with internal scrolling */
+  /* Leaderboard section: match grid section height, internal scrolling */
   .leaderboard-section { 
     display: flex; 
     flex-direction: column; 
     padding: 16px; 
-    max-height: calc(100vh - 200px); 
     overflow: hidden;
     order: 3;
+    align-self: self-start;
+    height: auto;
+    max-height: none;
   }
-  .leaderboard-section h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .leaderboard-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
   .leaderboard-list { overflow: auto; flex: 1 1 auto; }
   .leaderboard-item { padding: 10px 8px; }
 }
@@ -587,18 +833,18 @@ header p{font-size:.95rem;opacity:.95}
 
   .grid-section { padding: 24px; }
 
-  /* Larger cells for big screens */
+  /* Larger cells for big screens - reduced reserved height for more space */
   .crossword-grid {
-    --cell-size: clamp(36px, calc((100vh - 320px) / var(--rows,11)), 64px);
+    --cell-size: clamp(40px, calc((100vh - 240px) / var(--rows,11)), 72px);
   }
 
   .grid-inner .controls { gap: 16px; }
   .grid-inner .controls .btn { padding: 12px 20px; font-size: 1rem; }
 
-  .clues-section { padding: 20px; max-height: calc(100vh - 180px); }
+  .clues-section { padding: 20px; }
   .clue-item { font-size: 0.95rem; padding: 12px 10px; }
 
-  .leaderboard-section { padding: 20px; max-height: calc(100vh - 180px); }
+  .leaderboard-section { padding: 20px; }
   .leaderboard-item { padding: 12px 10px; }
 }
 
@@ -650,9 +896,9 @@ header p{font-size:.95rem;opacity:.95}
     font-size: 1.5rem; 
   }
 
-  /* Maximize cell size on large screens */
+  /* Maximize cell size on large screens - less reserved height */
   .crossword-grid {
-    --cell-size: clamp(40px, calc((100vh - 300px) / var(--rows,11)), 72px);
+    --cell-size: clamp(44px, calc((100vh - 220px) / var(--rows,11)), 80px);
   }
 
   .cell { font-size: calc(var(--cell-size) * 0.52); }
@@ -660,12 +906,12 @@ header p{font-size:.95rem;opacity:.95}
 
   .grid-inner .controls .btn { padding: 14px 24px; font-size: 1.05rem; border-radius: 8px; }
 
-  .clues-section { padding: 24px; max-height: calc(100vh - 160px); }
+  .clues-section { padding: 24px; }
   .clues-section h2 { font-size: 1.2rem; }
   .clue-direction h3 { font-size: 1rem; }
   .clue-item { font-size: 1rem; padding: 14px 12px; }
 
-  .leaderboard-section { padding: 24px; max-height: calc(100vh - 160px); }
+  .leaderboard-section { padding: 24px; }
   .leaderboard-section h2 { font-size: 1.2rem; }
   .leaderboard-item { padding: 14px 12px; font-size: 0.95rem; }
   .leaderboard-rank { width: 32px; font-size: 1rem; }
@@ -684,8 +930,8 @@ header p{font-size:.95rem;opacity:.95}
     gap: 48px; 
   }
 
-  /* Cap the cell size to prevent overly large cells */
+  /* Cap the cell size to prevent overly large cells - less reserved height */
   .crossword-grid {
-    --cell-size: clamp(44px, calc((100vh - 280px) / var(--rows,11)), 80px);
+    --cell-size: clamp(48px, calc((100vh - 200px) / var(--rows,11)), 88px);
   }
 }

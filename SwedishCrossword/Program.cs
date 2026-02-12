@@ -281,6 +281,10 @@ internal class Program
         Console.WriteLine("Genererar korsord för webben...");
         Console.WriteLine();
 
+        // Adjust options for easier testing
+        Console.WriteLine("Justerar inställningar för snabbare generering under utveckling... Kom ihåg att ta bort detta innan produktion!");
+        options.TargetFillPercentage = 0.5;
+
         var puzzle = await generator.GenerateAsync(options);
 
         Console.WriteLine("Korsord genererat!");

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Svenskt Korsord - Gratis Dagligt Korsord Online</title>
-    <meta name="description" content="Spela gratis svenska korsord online varje dag. Nytt pussel dagligen med svenska ord och ledtrådar. Tävla på topplistan, träna hjärnan och förbättra ditt ordförråd!">
-    <meta name="keywords" content="korsord, svenska korsord, gratis korsord, dagligt korsord, ordspel, hjärnträning, svenska ordlekar, korsord online, ordpussel">
+    <title>Svenskt Korsord - Gratis Dagligt Korsord Online | Korsord på Svenska</title>
+    <meta name="description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar. Tävla på topplistan, träna hjärnan och förbättra ditt ordförråd! Sveriges bästa korsord online.">
+    <meta name="keywords" content="korsord, svenska korsord, gratis korsord, dagligt korsord, korsord online, ordspel, hjärnträning, svenska ordlekar, ordpussel, synonymer, korsord på nätet, spela korsord, korsord gratis, swedish crossword, crosswords online">
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://svensktkorsord.se/">
@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://svensktkorsord.se/">
     <meta property="og:title" content="Svenskt Korsord - Gratis Dagligt Korsord Online">
-    <meta property="og:description" content="Spela gratis svenska korsord online varje dag. Nytt pussel dagligen med svenska ord och ledtrådar. Tävla på topplistan!">
+    <meta property="og:description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar. Tävla på topplistan!">
     <meta property="og:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
     <meta property="og:locale" content="sv_SE">
     <meta property="og:site_name" content="Svenskt Korsord">
@@ -23,7 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://svensktkorsord.se/">
     <meta name="twitter:title" content="Svenskt Korsord - Gratis Dagligt Korsord Online">
-    <meta name="twitter:description" content="Spela gratis svenska korsord online varje dag. Nytt pussel dagligen med svenska ord och ledtrådar.">
+    <meta name="twitter:description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar.">
     <meta name="twitter:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -38,10 +38,15 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Svenskt Korsord",
-        "alternateName": "Svenska Korsord Online",
+        "alternateName": ["Svenska Korsord Online", "Korsord Online", "Gratis Korsord", "Swedish Crossword"],
         "url": "https://svensktkorsord.se/",
-        "description": "Spela gratis svenska korsord online varje dag. Nytt pussel genereras automatiskt dagligen med svenska ord och ledtrådar.",
+        "description": "Spela gratis svenska korsord online varje dag. Nytt korsord genereras automatiskt dagligen med svenska ord, synonymer och ledtrådar. Sveriges populäraste korsord online.",
         "inLanguage": "sv-SE",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://svensktkorsord.se/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
         "publisher": {
             "@type": "Organization",
             "name": "Svenskt Korsord",
@@ -60,11 +65,13 @@
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": "Svenskt Korsord",
+        "alternateName": "Korsord Online",
         "url": "https://svensktkorsord.se/",
         "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Puzzle Game",
         "operatingSystem": "Any",
         "browserRequirements": "Requires JavaScript",
-        "description": "Interaktivt svenskt korsord som uppdateras dagligen. Spela direkt i webbläsaren utan nedladdning.",
+        "description": "Interaktivt svenskt korsord som uppdateras dagligen. Spela korsord online direkt i webbläsaren utan nedladdning. Gratis korsord med synonymer och svenska ord.",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -72,11 +79,14 @@
         },
         "featureList": [
             "Dagligt nytt korsord",
-            "Svenska ord och ledtrådar",
+            "Svenska ord och synonymer",
+            "Gratis korsord online",
             "Topplista med snabbaste spelare",
             "Fungerar på mobil, surfplatta och dator",
-            "Sparar framsteg automatiskt"
-        ]
+            "Sparar framsteg automatiskt",
+            "Över 15 000 svenska ord"
+        ],
+        "keywords": "korsord, korsord online, svenska korsord, gratis korsord, synonymer, ordspel"
     }
     </script>
 
@@ -127,9 +137,12 @@
 </head>
 <body>
     <div class="container">
+        <!-- Screen reader announcements (visually hidden) -->
+        <div id="announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+        
         <header>
             <h1>Svenskt Korsord</h1>
-            <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Piltangenter navigerar</p>
+            <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Tab hoppar till nästa ledtråd</p>
             <div class="puzzle-info" id="puzzle-info" style="display: none;">
                 <span id="info-size"></span>
                 <span id="info-words"></span>
@@ -141,7 +154,7 @@
         <section aria-label="Om dagens korsord" class="intro-section" id="intro-section">
             <h2>Välkommen till Svenskt Korsord – Din Dagliga Hjärnträning</h2>
             
-            <p class="intro-lead">Svenskt Korsord är en kostnadsfri tjänst där du kan spela ett nytt, unikt korsord varje dag. Våra korsord genereras automatiskt med hjälp av en avancerad algoritm som väljer ut svenska ord från en omfattande ordlista med över 50 000 ord och uttryck.</p>
+            <p class="intro-lead">Svenskt Korsord är en kostnadsfri tjänst där du kan spela <strong>korsord online</strong> varje dag. Våra <strong>svenska korsord</strong> genereras automatiskt med hjälp av en avancerad algoritm som väljer ut ord och <strong>synonymer</strong> från en omfattande ordlista med över 50 000 ord och uttryck. Perfekt för dig som vill lösa <strong>gratis korsord</strong> på nätet!</p>
 
             <div class="info-cards">
                 <div class="info-card">
@@ -151,6 +164,7 @@
                         <li><kbd>Klicka</kbd> på en ruta för att aktivera</li>
                         <li><kbd>Mellanslag</kbd> byter riktning</li>
                         <li><kbd>Piltangenter</kbd> navigerar</li>
+                        <li><kbd>Tab</kbd> nästa ledtråd, <kbd>Shift+Tab</kbd> föregående</li>
                         <li><kbd>Backspace</kbd> raderar och flyttar</li>
                     </ul>
                 </div>
@@ -209,6 +223,10 @@
                 <!-- grid-inner: controls at left, grid-area at right -->
                 <div class="grid-inner">
                     <div class="controls">
+                        <button class="btn btn-direction" id="direction-toggle" aria-label="Byt riktning">
+                            <span class="direction-icon">→</span>
+                            <span class="direction-text">Vågrätt</span>
+                        </button>
                         <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
                         <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
                         <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
@@ -227,14 +245,14 @@
                 <div class="clues-columns">
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Vågrätt</h3>
-                            <ul class="clue-list" id="across-clues"></ul>
+                            <h3 id="across-clues-heading">Vågrätt</h3>
+                            <ul class="clue-list" id="across-clues" role="list" aria-labelledby="across-clues-heading"></ul>
                         </div>
                     </div>
                     <div class="clue-column">
                         <div class="clue-direction">
-                            <h3>Lodrätt</h3>
-                            <ul class="clue-list" id="down-clues"></ul>
+                            <h3 id="down-clues-heading">Lodrätt</h3>
+                            <ul class="clue-list" id="down-clues" role="list" aria-labelledby="down-clues-heading"></ul>
                         </div>
                     </div>
                 </div>
@@ -251,10 +269,10 @@
 
         <!-- Additional content section for SEO and user value -->
         <section class="content-section" id="additional-content">
-            <h2>Korsordets historia och betydelse</h2>
+            <h2>Korsord Online – Historia, Typer och Fördelar</h2>
             
             <div class="content-intro">
-                <p>Korsord har fascinerat människor i över hundra år. Det första moderna korsordet publicerades i New York World den 21 december 1913. I Sverige har korsord varit populära sedan tidigt 1900-tal, med ledtrådar som är synonymer eller beskrivningar – tillgängliga men utmanande för alla åldrar.</p>
+                <p><strong>Korsord</strong> har fascinerat människor i över hundra år. Det första moderna korsordet publicerades i New York World den 21 december 1913. I Sverige har <strong>korsord online</strong> och traditionella korsord varit populära sedan tidigt 1900-tal, med ledtrådar som är <strong>synonymer</strong> eller beskrivningar – tillgängliga men utmanande för alla åldrar. Idag kan du spela <strong>gratis korsord</strong> direkt i webbläsaren!</p>
             </div>
 
             <div class="content-grid">
@@ -313,7 +331,7 @@
                 </div>
             </div>
 
-            <p class="content-footer">Oavsett om du är nybörjare eller erfaren korsordslösare hoppas vi att du uppskattar vårt dagliga korsord. Kom tillbaka imorgon för ett helt nytt pussel!</p>
+            <p class="content-footer">Oavsett om du är nybörjare eller erfaren korsordslösare hoppas vi att du uppskattar vårt dagliga <strong>korsord online</strong>. Kom tillbaka imorgon för ett helt nytt pussel med nya <strong>synonymer</strong> och utmaningar!</p>
         </section>
 
         <footer class="site-footer">
@@ -332,7 +350,8 @@
                 <p>Du löste korsordet!</p>
                 <div class="modal-time" id="modal-time">00:00</div>
                 <p>Ange ditt namn för topplistan:</p>
-                <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" autocomplete="off">
+                <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" 
+                       autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
                 <div class="modal-buttons">
                     <button class="btn btn-primary" onclick="submitScore()">Spara</button>
                     <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>

@@ -12,7 +12,7 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 - **Swedish Dictionary**: 50,000+ Swedish words with clues from Lexin and synonym pairs
 - **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions, deployed to GitHub Pages
 - **Interactive Web Player**: Browser-based crossword player with:
-  - Keyboard navigation (arrow keys, space to toggle direction)
+  - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
   - Shared leaderboard (via Cloudflare Workers + JSONBin.io)
   - Mobile-responsive design (portrait and landscape modes)
