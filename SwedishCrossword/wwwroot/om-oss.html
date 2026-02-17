@@ -9,7 +9,7 @@
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://svensktkorsord.se/om-oss.html">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://svensktkorsord.se/om-oss.html">
@@ -31,119 +31,257 @@
 
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Svenskt Korsord",
-        "alternateName": ["Korsord Online", "Svenska Korsord", "Swedish Crossword"],
-        "url": "https://svensktkorsord.se",
-        "logo": "https://svensktkorsord.se/apple-touch-icon.png",
-        "description": "Svenskt Korsord erbjuder gratis dagliga korsord online på svenska. Vi genererar automatiskt nya korsord varje dag med kvalitetsgranskade svenska ord, synonymer och ledtrådar.",
-        "foundingDate": "2025",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "url": "https://svensktkorsord.se/kontakt.html",
-            "availableLanguage": "sv"
-        }],
-        "sameAs": [
-            "https://github.com/eoq746/SwedishCrossword"
-        ],
-        "keywords": "korsord, korsord online, gratis korsord, svenska korsord, synonymer"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Svenskt Korsord",
+            "alternateName": ["Korsord Online", "Svenska Korsord", "Swedish Crossword"],
+            "url": "https://svensktkorsord.se",
+            "logo": "https://svensktkorsord.se/apple-touch-icon.png",
+            "description": "Svenskt Korsord erbjuder gratis dagliga korsord online på svenska. Vi genererar automatiskt nya korsord varje dag med kvalitetsgranskade svenska ord, synonymer och ledtrådar.",
+            "foundingDate": "2025",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "url": "https://svensktkorsord.se/kontakt.html",
+                "availableLanguage": "sv"
+            }],
+            "sameAs": [
+                "https://github.com/eoq746/SwedishCrossword"
+            ],
+            "keywords": "korsord, korsord online, gratis korsord, svenska korsord, synonymer"
+        }
     </script>
 
     <!-- Structured Data: AboutPage -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "name": "Om Svenskt Korsord - Gratis Korsord Online",
-        "url": "https://svensktkorsord.se/om-oss.html",
-        "description": "Detaljerad information om hur Svenskt Korsord skapas, vår redaktionella process, tekniska detaljer om korsordsgenereringen med synonymer och våra svenska ordlistor.",
-        "mainEntity": {
-            "@type": "Organization",
-            "name": "Svenskt Korsord"
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Om Svenskt Korsord - Gratis Korsord Online",
+            "url": "https://svensktkorsord.se/om-oss.html",
+            "description": "Detaljerad information om hur Svenskt Korsord skapas, vår redaktionella process, tekniska detaljer om korsordsgenereringen med synonymer och våra svenska ordlistor.",
+            "mainEntity": {
+                "@type": "Organization",
+                "name": "Svenskt Korsord"
+            }
         }
-    }
     </script>
 
     <!-- Structured Data: FAQPage for editorial process -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Hur skapas korsorden på Svenskt Korsord?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Våra korsord genereras av automatiserade algoritmer som väljer ord från en omfattande svensk ordlista med över 50 000 ord. Processen inkluderar urval av ord, generering av rutmönster som maximerar korsningsmöjligheter, och automatisk skapning av ledtrådar baserade på ordens betydelser och synonymer."
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Hur skapas korsorden på Svenskt Korsord?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Våra korsord genereras av automatiserade algoritmer som väljer ord från en omfattande svensk ordlista med över 50 000 ord. Processen inkluderar urval av ord, generering av rutmönster som maximerar korsningsmöjligheter, och automatisk skapning av ledtrådar baserade på ordens betydelser och synonymer."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Vilka ordlistor används?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Vi bygger våra korsord från ordlistor som inkluderar offentligt tillgängliga svenska lexikon och egna tillägg för moderna uttryck. Delar av ordlistan är licensierade under Creative Commons Erkännande 2.5 Sverige."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Hur kvalitetsgranskas korsorden?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Innan ett korsord publiceras körs flera automatiska kontroller: alla ord verifieras mot ordlistan, ledtrådarna granskas för relevans, och vi säkerställer att ingen olämplig terminologi används. Vi kontrollerar också att rutnätet har god täckningsgrad och att orden korsar varandra på ett bra sätt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kan jag föreslå nya ord eller ledtrådar?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Absolut! Vi välkomnar bidrag från våra användare. Du kan skicka förslag via GitHub Discussions eller genom att skapa en issue i vårt repository. Alla bidrag som förbättrar ordlistan uppskattas."
+                    }
                 }
-            },
-            {
-                "@type": "Question",
-                "name": "Vilka ordlistor används?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Vi bygger våra korsord från ordlistor som inkluderar offentligt tillgängliga svenska lexikon och egna tillägg för moderna uttryck. Delar av ordlistan är licensierade under Creative Commons Erkännande 2.5 Sverige."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Hur kvalitetsgranskas korsorden?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Innan ett korsord publiceras körs flera automatiska kontroller: alla ord verifieras mot ordlistan, ledtrådarna granskas för relevans, och vi säkerställer att ingen olämplig terminologi används. Vi kontrollerar också att rutnätet har god täckningsgrad och att orden korsar varandra på ett bra sätt."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Kan jag föreslå nya ord eller ledtrådar?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Absolut! Vi välkomnar bidrag från våra användare. Du kan skicka förslag via GitHub Discussions eller genom att skapa en issue i vårt repository. Alla bidrag som förbättrar ordlistan uppskattas."
-                }
-            }
-        ]
-    }
+            ]
+        }
     </script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288"
             crossorigin="anonymous"></script>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { height: 100%; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: env(safe-area-inset-top,20px) env(safe-area-inset-right,20px) env(safe-area-inset-bottom,20px) env(safe-area-inset-left,20px);
-            display: flex; align-items: flex-start; justify-content: center; line-height: 1.7;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            line-height: 1.7;
         }
-        .container{ width:100%; max-width:900px; margin:20px 12px; background:#fff; border-radius:12px; padding:32px; box-shadow:0 10px 40px rgba(0,0,0,.2); }
-        h1{ color:#1f2937; margin-bottom:12px; font-size:1.8rem }
-        .tagline{ color:#6b7280; font-size:1.1rem; margin-bottom:20px }
-        h2{ color:#2563eb; margin-top:28px; margin-bottom:14px; font-size:1.25rem }
-        h3{ color:#374151; margin-top:20px; margin-bottom:10px; font-size:1.1rem }
-        p{ color:#374151; margin-bottom:14px }
-        ul, ol{ color:#374151; margin-left:24px; margin-bottom:16px }
-        li{ margin-bottom:8px }
-        .feature-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; margin:24px 0 }
-        .feature-card{ background:#f9fafb; padding:16px; border-radius:10px; border:1px solid #e5e7eb }
-        .feature-card h3{ margin-top:8px; color:#2563eb; font-size:1rem }
-        .icon{ font-size:2rem; margin-bottom:8px }
-        a{ color:#2563eb }
-        a:hover{ text-decoration:underline }
-        .back-link{ display:inline-block; margin-top:24px;padding:10px 16px;background:#2563eb;color:#fff;border-radius:8px;text-decoration:none;font-weight:600 }
-        .back-link:hover{ background:#1d4ed8 }
-        .tech-section{ background:#f0f9ff; padding:20px; border-radius:10px; margin:20px 0 }
-        .license-box{ background:#fef3c7; padding:16px; border-radius:8px; border-left:4px solid #f59e0b; margin:16px 0 }
-        footer{ text-align:center; margin-top:32px; padding-top:20px; border-top:1px solid #e5e7eb; color:#6b7280; font-size:0.9rem }
-        footer a{ color:#6b7280; margin:0 10px }
-        @media(max-width:600px){ .container{padding:20px;margin:12px 8px} h1{font-size:1.5rem} h2{font-size:1.15rem} p,li{font-size:0.95rem} }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px 12px;
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0,0,0,.2);
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 12px;
+            font-size: 1.8rem
+        }
+
+        .tagline {
+            color: #6b7280;
+            font-size: 1.1rem;
+            margin-bottom: 20px
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-top: 28px;
+            margin-bottom: 14px;
+            font-size: 1.25rem
+        }
+
+        h3 {
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem
+        }
+
+        p {
+            color: #374151;
+            margin-bottom: 14px
+        }
+
+        ul, ol {
+            color: #374151;
+            margin-left: 24px;
+            margin-bottom: 16px
+        }
+
+        li {
+            margin-bottom: 8px
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 20px;
+            margin: 24px 0
+        }
+
+        .feature-card {
+            background: #f9fafb;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb
+        }
+
+            .feature-card h3 {
+                margin-top: 8px;
+                color: #2563eb;
+                font-size: 1rem
+            }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 8px
+        }
+
+        a {
+            color: #2563eb
+        }
+
+            a:hover {
+                text-decoration: underline
+            }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 10px 16px;
+            background: #2563eb;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+            .back-link:hover {
+                background: #1d4ed8
+            }
+
+        .tech-section {
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0
+        }
+
+        .license-box {
+            background: #fef3c7;
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid #f59e0b;
+            margin: 16px 0
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.9rem
+        }
+
+            footer a {
+                color: #6b7280;
+                margin: 0 10px
+            }
+
+        @media(max-width:600px) {
+            .container {
+                padding: 20px;
+                margin: 12px 8px
+            }
+
+            h1 {
+                font-size: 1.5rem
+            }
+
+            h2 {
+                font-size: 1.15rem
+            }
+
+            p, li {
+                font-size: 0.95rem
+            }
+        }
     </style>
+    <script src="https://pl28733252.effectivegatecpm.com/1e/6c/ad/1e6cad1b0bb52e301dca91ab568d4ad1.js"></script>
 </head>
 <body>
     <div class="container">
