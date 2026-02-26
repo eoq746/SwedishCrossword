@@ -25,7 +25,7 @@ public class CrosswordGenerator
         _random = new Random(Guid.NewGuid().GetHashCode());
         _gapFiller = new GapFiller(dictionary, _random);
         _vinkelordPlacer = new VinkelordPlacer(dictionary, _random);
-        _wordPlacer = new WordPlacer(dictionary, _random);
+        _wordPlacer = new WordPlacer(dictionary, _random, _vinkelordPlacer);
     }
 
     /// <summary>
@@ -131,33 +131,28 @@ public class CrosswordGenerator
         }
         Console.WriteLine($"Fas 1: {grid.GetStats().FillPercentage:F1}% fyllnad");
 
-        // Phase 2: Initial adaptive word placement burst — place the first batch of
-        // intersection-based words to create enough structure for gap/bridge strategies.
         var placedWords = grid.Words.ToHashSet();
         var adaptiveState = _wordPlacer.CreateAdaptiveState(options, placedWords, grid);
-        var initialBatchSize = Math.Max(10, options.Width);
-        await _wordPlacer.PlaceWordsAdaptivelyWithValidation(grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, cancellationToken, adaptiveState, maxWordsPerBatch: initialBatchSize);
-        Console.WriteLine($"Fas 2: {grid.GetStats().FillPercentage:F1}% fyllnad");
+
         // Derive bridge length limit from grid dimensions
         var maxBridgeLength = Math.Max(grid.Width, grid.Height) - 2;
 
-        // Phase 3: Unified interleaved fill loop.
-        // Each cycle runs all strategies in sequence: adaptive placement → vinkelord
-        // → gap/bridge filling. Gap/bridge filling creates new intersection
-        // opportunities that adaptive placement can exploit in the next cycle, and
-        // adaptive placement opens new gap/bridge/vinkelord opportunities in return.
-        int vinkelordPlaced = 0;
-        var adaptiveBatchSize = 0; // 0 = unlimited — run to exhaustion each cycle
+        // Phase 2: Unified interleaved fill loop.
+        // Each cycle runs all strategies in sequence: adaptive placement (with
+        // integrated vinkelord) → gap/bridge filling. Gap/bridge filling creates
+        // new intersection opportunities that adaptive placement can exploit in the
+        // next cycle, and adaptive placement opens new gap/bridge/vinkelord
+        // opportunities in return.
         for (int cycle = 1; cycle <= 25; cycle++)
         {
             Console.WriteLine($"Cykel {cycle}: start - {grid.GetStats().FilledCells} fyllda celler, {grid.Words.Count} ord placerade");
             var cycleStart = grid.GetStats().FilledCells;
 
-            // Sub-phase A: Adaptive word placement (bounded batch)
-            // Fully reset adaptive state each cycle — other strategies (gaps, bridges,
-            // vinkelord) create new intersection opportunities that the adaptive placer
-            // can now exploit. Without this, the cumulative PlacementAttempts budget
-            // causes permanent exhaustion after a few cycles.
+            // Sub-phase A: Adaptive word placement with integrated vinkelord (bounded batch)
+            // Fully reset adaptive state each cycle — other strategies (gaps, bridges)
+            // create new intersection opportunities that the adaptive placer can now
+            // exploit. Without this, the cumulative PlacementAttempts budget causes
+            // permanent exhaustion after a few cycles.
             adaptiveState.IsExhausted = false;
             adaptiveState.PlacementAttempts = 0;
             adaptiveState.CurrentTargetLength = options.MaxWordLength;
@@ -167,22 +162,10 @@ public class CrosswordGenerator
             adaptiveState.TriedWords.Clear();
 
             await _wordPlacer.PlaceWordsAdaptivelyWithValidation(
-                grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, cancellationToken, adaptiveState, maxWordsPerBatch: adaptiveBatchSize);
-            Console.WriteLine($"Fas 3 subfas A: {grid.GetStats().FillPercentage:F1}% fyllnad");
+                grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, cancellationToken, adaptiveState);
+            Console.WriteLine($"Fas 2 subfas A: {grid.GetStats().FillPercentage:F1}% fyllnad");
 
-            // Sub-phase B: Vinkelord placement — run early while the grid still has
-            // enough empty cells for L-shaped opportunities. Gap/bridge filling would
-            // consume the small openings that vinkelord needs.
-            if (options.AllowVinkelord && vinkelordPlaced < options.MaxVinkelord)
-            {
-                await _vinkelordPlacer.FillVinkelordAsync(grid, candidateWords, placedWords, options, placedWordScores, connectivityScores, vinkelordPlaced, cancellationToken);
-                vinkelordPlaced = grid.Words.Count(w => w.IsBent);
-
-                Console.WriteLine($"Fas 3 subfas B: {grid.GetStats().FillPercentage:F1}% fyllnad");
-
-            }
-
-            // Sub-phase C: Gap/bridge filling (multi-pass within cycle)
+            // Sub-phase B: Gap/bridge filling (multi-pass within cycle)
             // Scans rows and columns for patterns with existing letters and empty
             // cells between them, then finds dictionary words matching those patterns.
             // Handles all gap sizes — from single-cell gaps needing 3-letter words
@@ -194,7 +177,7 @@ public class CrosswordGenerator
                 var wordsPlacedThisPass = grid.GetStats().FilledCells - before;
                 if (wordsPlacedThisPass == 0) break;
             }
-            Console.WriteLine($"Fas 3 subfas C: {grid.GetStats().FillPercentage:F1}% fyllnad");
+            Console.WriteLine($"Fas 2 subfas B: {grid.GetStats().FillPercentage:F1}% fyllnad");
 
             var cycleEnd = grid.GetStats().FilledCells;
             if (cycleEnd == cycleStart) break;

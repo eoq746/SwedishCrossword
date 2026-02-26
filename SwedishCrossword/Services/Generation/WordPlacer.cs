@@ -6,10 +6,11 @@ using static GenerationHelpers;
 /// <summary>
 /// Handles anchor word selection and adaptive word placement during generation.
 /// </summary>
-internal class WordPlacer(SwedishDictionary dictionary, Random random)
+internal class WordPlacer(SwedishDictionary dictionary, Random random, VinkelordPlacer? vinkelordPlacer = null)
 {
     private readonly SwedishDictionary _dictionary = dictionary;
     private readonly Random _random = random;
+    private readonly VinkelordPlacer? _vinkelordPlacer = vinkelordPlacer;
 
     public bool PlaceAnchorWordsWithValidation(CrosswordGrid grid, List<Word> sortedWords, List<Word> allWords,
         CrosswordGenerationOptions options)
@@ -240,6 +241,8 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random)
         public HashSet<string> UsedWordTexts;
         public int UsedWordsRefreshCounter;
         public bool IsExhausted;
+        public int VinkelordPlaced;
+        public List<Word>? VinkelordCandidatePool;
 
         public AdaptivePlacementState(CrosswordGenerationOptions options, HashSet<Word> placedWords, CrosswordGrid grid)
         {
@@ -388,6 +391,19 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random)
                 state.ConsecutiveFailures++;
                 state.TriedWords.Add(word.Text);
 
+                // Try vinkelord as alternative strategy every 10 consecutive failures
+                if (_vinkelordPlacer != null && options.AllowVinkelord
+                    && state.VinkelordPlaced < options.MaxVinkelord
+                    && state.ConsecutiveFailures % 10 == 0)
+                {
+                    if (TryPlaceOneVinkelord(grid, placedWords, options, state, placedWordScores, connectivityScores, cancellationToken))
+                    {
+                        state.ConsecutiveFailures = 0;
+                        state.UsedWordsRefreshCounter = 20;
+                        wordsPlacedThisBatch++;
+                    }
+                }
+
                 if (state.ConsecutiveFailures >= maxConsecutiveFailures)
                 {
                     state.CurrentTargetLength--;
@@ -407,6 +423,73 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random)
         }
 
         return wordsPlacedThisBatch;
+    }
+
+    /// <summary>
+    /// Attempts to place a single vinkelord (bent word) by scanning L-shaped
+    /// opportunities and matching them against dictionary words.
+    /// </summary>
+    private bool TryPlaceOneVinkelord(CrosswordGrid grid, HashSet<Word> placedWords,
+        CrosswordGenerationOptions options, AdaptivePlacementState state,
+        Dictionary<string, double> placedWordScores, Dictionary<string, double> connectivityScores,
+        CancellationToken cancellationToken)
+    {
+        var maxVinkelordLength = Math.Min(options.MaxWordLength, options.MaxVinkelordLength);
+
+        var opportunities = _vinkelordPlacer!.FindVinkelordOpportunities(
+            grid, minLength: 3, maxLength: maxVinkelordLength, maxBends: options.MaxBendsPerWord);
+        if (opportunities.Count == 0) return false;
+
+        // Lazily build the base candidate pool (dictionary words of valid length)
+        state.VinkelordCandidatePool ??= _dictionary.GetWords(
+            minLength: 3, maxLength: maxVinkelordLength).ToList();
+
+        var limit = Math.Min(20, opportunities.Count);
+        for (int oppIdx = 0; oppIdx < limit; oppIdx++)
+        {
+            if (cancellationToken.IsCancellationRequested) break;
+
+            var opportunity = opportunities[oppIdx];
+            var matchingWords = FindWordsMatchingPattern(
+                state.VinkelordCandidatePool, opportunity.Pattern, state.PlacedWordTexts, state.UsedWordTexts);
+            if (matchingWords.Count == 0) continue;
+
+            var scored = new List<(Word Word, double Score)>(matchingWords.Count);
+            foreach (var w in matchingWords)
+            {
+                double score = opportunity.ExistingLetterCount * 5.0;
+                foreach (var c in w.Text)
+                {
+                    if (c is 'A' or 'E' or 'I' or 'O' or 'U' or '\u00c5' or '\u00c4' or '\u00d6')
+                        score += 0.5;
+                    else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                        score += 0.3;
+                }
+                scored.Add((w, score));
+            }
+
+            scored.Sort((a, b) => b.Score.CompareTo(a.Score));
+            if (scored.Count > 8)
+                scored.RemoveRange(8, scored.Count - 8);
+            ShuffleTopBiased(scored, 3, _random);
+
+            var tryCount = Math.Min(5, scored.Count);
+            for (int i = 0; i < tryCount; i++)
+            {
+                var word = scored[i].Word;
+                if (grid.TryPlaceBentWordWithValidation(word, opportunity.Segments, _dictionary, options.RejectInvalidWords))
+                {
+                    placedWords.Add(word);
+                    state.PlacedWordTexts.Add(word.Text);
+                    state.UsedWordTexts.Add(word.Text);
+                    placedWordScores[word.Text] = connectivityScores.GetValueOrDefault(word.Text);
+                    state.VinkelordPlaced++;
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     private (Word? Word, double Score) SelectBestWordWithDirectionBalanceAndScore(List<Word> availableWords, CrosswordGrid grid, bool requireIntersections, Dictionary<string, double> connectivityScores)

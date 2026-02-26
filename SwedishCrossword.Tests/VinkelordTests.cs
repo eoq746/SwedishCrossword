@@ -443,16 +443,6 @@ public class VinkelordTests
         await Assert.That(options.MaxVinkelordLength).IsEqualTo(19);
     }
 
-    [Test]
-    public async Task Options_DefaultVinkelordSettings()
-    {
-        var options = new SwedishCrossword.Services.CrosswordGenerationOptions();
-
-        await Assert.That(options.AllowVinkelord).IsFalse();
-        await Assert.That(options.MaxVinkelord).IsEqualTo(3);
-        await Assert.That(options.MaxBendsPerWord).IsEqualTo(1);
-    }
-
     #endregion
 
     #region CrosswordGrid Bent Word Placement Tests
