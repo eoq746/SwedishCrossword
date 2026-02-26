@@ -387,6 +387,73 @@ function getLeaderboardKey() {
     return `crossword-leaderboard-${currentPuzzleDate || 'default'}${hashSuffix}`;
 }
 
+// Progress caching key - unique per puzzle
+function getProgressKey() {
+    return `crossword-progress-${puzzleHash || 'default'}`;
+}
+
+// Save current cell values and timer to localStorage
+function saveProgress() {
+    if (puzzleSolved || !puzzleHash) return;
+    try {
+        const cells = {};
+        document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
+            const cell = input.parentElement;
+            const key = `${cell.dataset.row},${cell.dataset.col}`;
+            if (input.value) cells[key] = input.value;
+        });
+        const data = {
+            puzzleHash,
+            seconds,
+            cells,
+            timestamp: Date.now()
+        };
+        localStorage.setItem(getProgressKey(), JSON.stringify(data));
+    } catch (e) {
+        console.warn('Failed to save progress:', e);
+    }
+}
+
+// Load saved progress from localStorage and restore cell values + timer
+function loadProgress() {
+    if (!puzzleHash) return false;
+    try {
+        const raw = localStorage.getItem(getProgressKey());
+        if (!raw) return false;
+        const data = JSON.parse(raw);
+        if (data.puzzleHash !== puzzleHash) {
+            localStorage.removeItem(getProgressKey());
+            return false;
+        }
+        // Restore cell values
+        if (data.cells) {
+            for (const [key, value] of Object.entries(data.cells)) {
+                const [row, col] = key.split(',');
+                const input = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"] input`);
+                if (input) input.value = value;
+            }
+        }
+        // Restore timer
+        if (typeof data.seconds === 'number' && data.seconds > 0) {
+            seconds = data.seconds;
+            document.getElementById('timer').textContent = formatTime(seconds);
+        }
+        return true;
+    } catch (e) {
+        console.warn('Failed to load progress:', e);
+        return false;
+    }
+}
+
+// Clear saved progress from localStorage
+function clearProgress() {
+    try {
+        localStorage.removeItem(getProgressKey());
+    } catch (e) {
+        console.warn('Failed to clear progress:', e);
+    }
+}
+
 // Load leaderboard from localStorage (fallback/cache)
 function loadLocalLeaderboard() {
     try {
@@ -434,30 +501,52 @@ async function fetchRemoteLeaderboard() {
 // Save leaderboard via Cloudflare Worker proxy
 async function saveRemoteLeaderboard(leaderboard) {
     if (!LEADERBOARD_ENABLED) return false;
-    
+
     try {
         const getResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
-        
+
         let allScores = {};
         if (getResponse.ok) {
             const data = await getResponse.json();
             allScores = data.scores || {};
         }
-        
+
         const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
-        allScores[leaderboardKey] = leaderboard;
-        
+
+        // Merge with existing remote entries to avoid overwriting scores
+        // submitted by other users since we last fetched
+        const existing = (allScores[leaderboardKey] || []).filter(validateScoreEntry);
+        const merged = [...leaderboard];
+        existing.forEach(remote => {
+            const isDuplicate = merged.some(e =>
+                e.name === remote.name && e.time === remote.time && e.timestamp === remote.timestamp
+            );
+            if (!isDuplicate) merged.push(remote);
+        });
+
+        merged.sort((a, b) => {
+            if (a.flagged && !b.flagged) return 1;
+            if (!a.flagged && b.flagged) return -1;
+            return a.time - b.time;
+        });
+
+        const cleanEntries = merged.filter(e => !e.flagged);
+        const flaggedEntries = merged.filter(e => e.flagged);
+        allScores[leaderboardKey] = cleanEntries.length >= 10
+            ? cleanEntries.slice(0, 10)
+            : [...cleanEntries, ...flaggedEntries].slice(0, 10);
+
         const cutoffDate = new Date();
         cutoffDate.setDate(cutoffDate.getDate() - 7);
         const cutoffStr = cutoffDate.toISOString().split('T')[0];
-        
+
         for (const key of Object.keys(allScores)) {
             const dateMatch = key.match(/^(\d{4}-\d{2}-\d{2})/);
             if (dateMatch && dateMatch[1] < cutoffStr) {
                 delete allScores[key];
             }
         }
-        
+
         const putResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`, {
             method: 'PUT',
             headers: {
@@ -465,12 +554,12 @@ async function saveRemoteLeaderboard(leaderboard) {
             },
             body: JSON.stringify({ scores: allScores })
         });
-        
+
         if (!putResponse.ok) {
             console.warn('Failed to save remote leaderboard:', putResponse.status);
             return false;
         }
-        
+
         return true;
     } catch (e) {
         console.error('Error saving remote leaderboard:', e);
@@ -706,10 +795,12 @@ async function init() {
     renderGrid();
     renderClues();
     buildCellClueMap();
+    loadProgress();
     await renderLeaderboard();
     syncCluesHeight();
     startTimer();
     updateStats();
+    updateClueFilledStatus();
     
     window.addEventListener('resize', syncCluesHeight);
 }
@@ -881,10 +972,11 @@ function handleInput(e) {
     e.target.parentElement.classList.remove('empty-warning');
     
     if (e.target.value) trackInput(row, col, e.target.value);
-    
+
     if (e.target.value) moveInDirection(e.target);
     updateStats();
     updateClueFilledStatus();
+    saveProgress();
 }
 
 // Toggle direction between across and down
@@ -985,6 +1077,7 @@ function handleKeyDown(e) {
             e.target.value = '';
             updateStats();
             updateClueFilledStatus();
+            saveProgress();
         }
         // Always move back on backspace (whether cell was empty or not)
         moveBackInDirection(e.target);
@@ -998,6 +1091,7 @@ function handleKeyDown(e) {
             e.target.value = '';
             updateStats();
             updateClueFilledStatus();
+            saveProgress();
         }
         e.preventDefault();
         return;
@@ -1346,6 +1440,7 @@ function checkAnswers() {
     });
     if (filled === total && correct === total) {
         puzzleSolved = true; stopTimer();
+        clearProgress();
         inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
         announce(`Grattis! Du löste korsordet på ${formatTime(seconds)}`);
         setTimeout(() => showUsernameModal(), 100);
@@ -1369,6 +1464,7 @@ function clearGrid() {
         inputEvents = [];
         updateStats();
         updateClueFilledStatus();
+        clearProgress();
     }
 }
 
@@ -1384,10 +1480,11 @@ function showSolution() {
         usedShowSolution = true;
         hasSubmittedScore = true;
         trackSolutionView();
+        clearProgress();
     }
 }
 
-function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); } }, 1000); }
+function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); if (seconds % 5 === 0) saveProgress(); } }, 1000); }
 function stopTimer() { clearInterval(timerInterval); }
 function formatTime(s) { return `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`; }
 function updateStats() {
