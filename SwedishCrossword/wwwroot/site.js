@@ -77,6 +77,58 @@ let lastFocusedCell = null;
 let lastFocusTime = 0;
 const FOCUS_DEBOUNCE_MS = 50;
 
+// Lookup: maps "row,col" -> array of { number, direction, cells, clueIndex }
+// Built from puzzleData.clues so that bent words are correctly associated
+// with all their cells (not just straight-line neighbours).
+let cellClueMap = {};
+
+// Build the cell-to-clue lookup from puzzleData.clues
+function buildCellClueMap() {
+    cellClueMap = {};
+    ['across', 'down'].forEach(dir => {
+        (puzzleData.clues[dir] || []).filter(c => c.number > 0).forEach((clue, idx) => {
+            let cells;
+            if (clue.cells && clue.cells.length > 0) {
+                cells = clue.cells.map(c => ({ row: c[0], col: c[1] }));
+            } else {
+                cells = getWordCellsFallback(clue.number, dir);
+            }
+            if (!cells) return;
+            const entry = { number: clue.number, direction: dir, cells, clueIndex: idx };
+            cells.forEach(c => {
+                const key = `${c.row},${c.col}`;
+                if (!cellClueMap[key]) cellClueMap[key] = [];
+                cellClueMap[key].push(entry);
+            });
+        });
+    });
+}
+
+// Straight-line version of getWordCells used only for building the lookup
+// when clue.cells is missing.
+function getWordCellsFallback(number, direction) {
+    let startRow = -1, startCol = -1;
+    outer: for (let row = 0; row < puzzleData.height; row++) {
+        for (let col = 0; col < puzzleData.width; col++) {
+            if (puzzleData.cells[row]?.[col]?.num === number) { startRow = row; startCol = col; break outer; }
+        }
+    }
+    if (startRow < 0) return null;
+    const cells = [];
+    if (direction === 'across') {
+        for (let c = startCol; c < puzzleData.width; c++) {
+            if (puzzleData.cells[startRow]?.[c] === null) break;
+            cells.push({ row: startRow, col: c });
+        }
+    } else {
+        for (let r = startRow; r < puzzleData.height; r++) {
+            if (puzzleData.cells[r]?.[startCol] === null) break;
+            cells.push({ row: r, col: startCol });
+        }
+    }
+    return cells;
+}
+
 // Announce messages to screen readers via ARIA live region
 function announce(message) {
     const el = document.getElementById('announcements');
@@ -653,6 +705,7 @@ async function init() {
     
     renderGrid();
     renderClues();
+    buildCellClueMap();
     await renderLeaderboard();
     syncCluesHeight();
     startTimer();
@@ -726,6 +779,12 @@ function renderGrid() {
                     numSpan.textContent = cellData.num;
                     cellDiv.appendChild(numSpan);
                 }
+                if (cellData.bend) {
+                    const arrowSpan = document.createElement('span');
+                    arrowSpan.className = 'bend-arrow';
+                    arrowSpan.textContent = cellData.bend === 'down' ? '↴' : '↳';
+                    cellDiv.appendChild(arrowSpan);
+                }
                 const input = document.createElement('input');
                 input.type = 'text';
                 input.maxLength = 1;
@@ -767,22 +826,24 @@ function renderClues() {
     const validAcrossClues = (puzzleData.clues.across || []).filter(clue => clue.number > 0);
     const validDownClues = (puzzleData.clues.down || []).filter(clue => clue.number > 0);
 
-    validAcrossClues.forEach(clue => {
+    validAcrossClues.forEach((clue, idx) => {
         const li = document.createElement('li');
         li.className = 'clue-item';
         li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
         li.dataset.number = clue.number;
         li.dataset.direction = 'across';
+        li.dataset.clueIndex = idx;
         li.addEventListener('click', () => focusClue(clue.number, 'across'));
         acrossContainer.appendChild(li);
     });
 
-    validDownClues.forEach(clue => {
+    validDownClues.forEach((clue, idx) => {
         const li = document.createElement('li');
         li.className = 'clue-item';
         li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
         li.dataset.number = clue.number;
         li.dataset.direction = 'down';
+        li.dataset.clueIndex = idx;
         li.addEventListener('click', () => focusClue(clue.number, 'down'));
         downContainer.appendChild(li);
     });
@@ -1018,14 +1079,19 @@ function handleFocus(row, col) {
                 }
                 el = el.parentElement;
             }
-            // Fallback to window scrolling with offsets
+            // Fallback to window scrolling with offsets — scroll the minimum
+            // amount needed so the grid stays visible when focusing bottom cells.
             const rect = cell.getBoundingClientRect();
-            const absoluteTop = rect.top + window.pageYOffset;
             const viewportHeight = window.innerHeight;
-            const desiredTop = absoluteTop - headerOffset - 8;
-            // If cell would be covered by keyboard, scroll
-            if (rect.bottom > viewportHeight - bottomOffset || rect.top < headerOffset) {
-                window.scrollTo({ top: desiredTop, behavior: 'smooth' });
+            if (rect.bottom > viewportHeight - bottomOffset) {
+                // Cell is below visible area (or covered by keyboard) — scroll
+                // down just enough to reveal it, not all the way to the top.
+                const scrollDown = rect.bottom - (viewportHeight - bottomOffset) + 8;
+                window.scrollTo({ top: window.pageYOffset + scrollDown, behavior: 'smooth' });
+            } else if (rect.top < headerOffset) {
+                // Cell is above visible area — scroll up to reveal it
+                const absoluteTop = rect.top + window.pageYOffset;
+                window.scrollTo({ top: absoluteTop - headerOffset - 8, behavior: 'smooth' });
             }
         }
 
@@ -1047,6 +1113,20 @@ function handleFocus(row, col) {
 
 function highlightWord(row, col) {
     document.querySelectorAll('.cell.word-highlight').forEach(c => c.classList.remove('word-highlight'));
+
+    // Use cellClueMap to find the correct cells for this word (handles bent words)
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        let match = entries.find(e => e.direction === currentDirection);
+        if (!match) match = entries[0];
+        match.cells.forEach(c => {
+            document.querySelector(`.cell[data-row="${c.row}"][data-col="${c.col}"]`)?.classList.add('word-highlight');
+        });
+        return;
+    }
+
+    // Fallback: straight-line walk (for cells not covered by any clue)
     if (currentDirection === 'across') {
         let startCol = col;
         while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
@@ -1073,12 +1153,42 @@ function moveTo(row, col) {
 function moveInDirection(input) {
     const cell = input.parentElement;
     const row = parseInt(cell.dataset.row), col = parseInt(cell.dataset.col);
+
+    // Use cellClueMap to find the next cell along the word path (handles bent words)
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        const match = entries.find(e => e.direction === currentDirection) || entries[0];
+        const cells = match.cells;
+        const idx = cells.findIndex(c => c.row === row && c.col === col);
+        if (idx >= 0 && idx < cells.length - 1) {
+            const next = cells[idx + 1];
+            if (moveTo(next.row, next.col)) return;
+        }
+    }
+
+    // Fallback: straight-line movement
     currentDirection === 'across' ? moveTo(row, col + 1) : moveTo(row + 1, col);
 }
 
 function moveBackInDirection(input) {
     const cell = input.parentElement;
     const row = parseInt(cell.dataset.row), col = parseInt(cell.dataset.col);
+
+    // Use cellClueMap to find the previous cell along the word path (handles bent words)
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        const match = entries.find(e => e.direction === currentDirection) || entries[0];
+        const cells = match.cells;
+        const idx = cells.findIndex(c => c.row === row && c.col === col);
+        if (idx > 0) {
+            const prev = cells[idx - 1];
+            if (moveTo(prev.row, prev.col)) return;
+        }
+    }
+
+    // Fallback: straight-line movement
     currentDirection === 'across' ? moveTo(row, col - 1) : moveTo(row - 1, col);
 }
 
@@ -1136,9 +1246,19 @@ function moveToPreviousClue(currentRow, currentCol) {
 }
 
 // Find the clue number for the word at the given position in the current direction
-// This checks if the current cell is the START of a clue in the current direction first,
-// which handles cases where a cell is part of two overlapping words in the same direction.
+// Uses cellClueMap to correctly handle bent words where straight-line walking
+// would produce ambiguous results.
 function findCurrentClueNumber(row, col) {
+    // Use cellClueMap first for accurate bent word support
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        const match = entries.find(e => e.direction === currentDirection);
+        if (match) return match.number;
+        return entries[0].number;
+    }
+
+    // Fallback: original straight-line logic
     const cellData = puzzleData.cells[row]?.[col];
     
     // First, check if the current cell has a clue number
@@ -1149,7 +1269,6 @@ function findCurrentClueNumber(row, col) {
             : (puzzleData.clues.down || []);
         
         if (clues.some(c => c.number === cellData.num)) {
-            // This cell starts a clue in the current direction
             return cellData.num;
         }
     }
@@ -1171,18 +1290,30 @@ function findCurrentClueNumber(row, col) {
 function highlightClue(row, col) {
     document.querySelectorAll('.clue-item').forEach(item => item.classList.remove('active'));
     
-    // Find the start of the word in the current direction to get the clue number
-    let startRow = row, startCol = col;
-    if (currentDirection === 'across') {
-        while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
-    } else {
-        while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
+    // Use cellClueMap to find the correct clue for this cell + direction
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    let clueNumber = 0;
+    if (entries && entries.length > 0) {
+        let match = entries.find(e => e.direction === currentDirection);
+        if (!match) match = entries[0];
+        clueNumber = match.number;
     }
-    
-    // Get the number from the start cell
-    const startCellData = puzzleData.cells[startRow]?.[startCol];
-    if (startCellData?.num) {
-        const clueItem = document.querySelector(`.clue-item[data-number="${startCellData.num}"][data-direction="${currentDirection}"]`);
+
+    if (clueNumber <= 0) {
+        // Fallback: straight-line walk to find start cell
+        let startRow = row, startCol = col;
+        if (currentDirection === 'across') {
+            while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
+        } else {
+            while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
+        }
+        const startCellData = puzzleData.cells[startRow]?.[startCol];
+        clueNumber = startCellData?.num || 0;
+    }
+
+    if (clueNumber > 0) {
+        const clueItem = document.querySelector(`.clue-item[data-number="${clueNumber}"][data-direction="${currentDirection}"]`);
         if (clueItem) {
             clueItem.classList.add('active');
             // Prefer scrolling the nearest scrollable .clue-list container so the page doesn't jump
@@ -1266,22 +1397,29 @@ function updateStats() {
 }
 
 function updateClueFilledStatus() {
-    // Filter out clues with invalid numbers (0 or missing)
-    (puzzleData.clues.across || []).filter(clue => clue.number > 0).forEach(clue => {
-        const isFilled = isWordFilled(clue.number, 'across');
-        const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
+    // Use each clue's own cells array for precise identification
+    (puzzleData.clues.across || []).filter(clue => clue.number > 0).forEach((clue, idx) => {
+        const isFilled = isWordFilledByClue(clue, 'across');
+        const clueItem = document.querySelector(`.clue-item[data-direction="across"][data-clue-index="${idx}"]`)
+            || document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="across"]`);
         if (clueItem) clueItem.classList.toggle('filled', isFilled);
     });
 
-    (puzzleData.clues.down || []).filter(clue => clue.number > 0).forEach(clue => {
-        const isFilled = isWordFilled(clue.number, 'down');
-        const clueItem = document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
+    (puzzleData.clues.down || []).filter(clue => clue.number > 0).forEach((clue, idx) => {
+        const isFilled = isWordFilledByClue(clue, 'down');
+        const clueItem = document.querySelector(`.clue-item[data-direction="down"][data-clue-index="${idx}"]`)
+            || document.querySelector(`.clue-item[data-number="${clue.number}"][data-direction="down"]`);
         if (clueItem) clueItem.classList.toggle('filled', isFilled);
     });
 }
 
-function isWordFilled(number, direction) {
-    const cells = getWordCells(number, direction);
+function isWordFilledByClue(clue, direction) {
+    let cells;
+    if (clue.cells && clue.cells.length > 0) {
+        cells = clue.cells.map(c => ({ row: c[0], col: c[1] }));
+    } else {
+        cells = getWordCells(clue.number, direction);
+    }
     if (!cells || cells.length === 0) return false;
     return cells.every(cell => {
         const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
@@ -1289,7 +1427,21 @@ function isWordFilled(number, direction) {
     });
 }
 
+function isWordFilled(number, direction) {
+    // ...existing code...
+}
+
 function getWordCells(number, direction) {
+    // Try to find the clue with its cells array (handles bent words correctly)
+    const clues = direction === 'across'
+        ? (puzzleData.clues.across || [])
+        : (puzzleData.clues.down || []);
+    const clue = clues.find(c => c.number === number);
+    if (clue && clue.cells && clue.cells.length > 0) {
+        return clue.cells.map(c => ({ row: c[0], col: c[1] }));
+    }
+
+    // Fallback: straight-line walk
     let startRow = -1, startCol = -1;
     outer: for (let row = 0; row < puzzleData.height; row++) {
         for (let col = 0; col < puzzleData.width; col++) {
@@ -1327,11 +1479,48 @@ function computeCellSize() {
     const isLandscape = window.matchMedia('(max-width:1100px) and (orientation: landscape)').matches;
     const isDesktop = window.matchMedia('(min-width:1100px)').matches;
 
-    // On desktop, let CSS handle sizing via clamp() - don't override with JS
-    // This allows the CSS media queries to properly size the grid for large screens
+    // On desktop, compute cell size from both available width and height
+    // to prevent cells from overflowing the grid section border.
     if (isDesktop) {
-        // Clear any JS-set values so CSS can control sizing
-        grid.style.removeProperty('--cell-size');
+        const gap = 1;
+        // Measure available width from the grid area container
+        const containerWidth = gridArea.clientWidth;
+        if (containerWidth <= 0) {
+            grid.style.removeProperty('--cell-size');
+            grid.style.width = 'auto';
+            grid.style.height = 'auto';
+            return;
+        }
+
+        // Account for grid's own border and padding
+        const gridStyle = window.getComputedStyle(grid);
+        const borderX = (parseFloat(gridStyle.borderLeftWidth) || 0) + (parseFloat(gridStyle.borderRightWidth) || 0);
+        const padX = (parseFloat(gridStyle.paddingLeft) || 0) + (parseFloat(gridStyle.paddingRight) || 0);
+        const extraX = borderX + padX;
+
+        const contentWidth = containerWidth - extraX;
+        const cellByWidth = (contentWidth - (cols - 1) * gap) / cols;
+
+        // Height constraint — match CSS breakpoint reserved heights and max cell sizes
+        const vw = window.innerWidth;
+        let reservedHeight, maxCell;
+        if (vw >= 2560) { reservedHeight = 200; maxCell = 88; }
+        else if (vw >= 1920) { reservedHeight = 220; maxCell = 80; }
+        else if (vw >= 1400) { reservedHeight = 240; maxCell = 72; }
+        else { reservedHeight = 280; maxCell = 64; }
+
+        const minCell = 36;
+        const cellByHeight = (window.innerHeight - reservedHeight) / rows;
+
+        // Floor to avoid sub-pixel rounding causing overflow
+        let chosen = Math.floor(Math.min(cellByWidth, cellByHeight, maxCell));
+        chosen = Math.max(minCell, chosen);
+
+        if (isFinite(chosen) && chosen >= minCell) {
+            grid.style.setProperty('--cell-size', chosen + 'px');
+        } else {
+            grid.style.removeProperty('--cell-size');
+        }
         grid.style.width = 'auto';
         grid.style.height = 'auto';
         return;

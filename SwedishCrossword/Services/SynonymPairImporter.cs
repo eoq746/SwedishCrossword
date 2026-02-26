@@ -14,74 +14,14 @@ namespace SwedishCrossword.Services;
 public class SynonymPairImporter
 {
     /// <summary>
-    /// Gets the path to the Data directory, working from either the output directory or project directory.
-    /// </summary>
-    private static string GetDataDirectory()
-    {
-        // Walk up the directory tree looking for the SwedishCrossword project's Data folder
-        var currentDir = AppContext.BaseDirectory;
-        
-        while (!string.IsNullOrEmpty(currentDir))
-        {
-            // Look for SwedishCrossword/Data (the source project's data folder)
-            var projectDataPath = Path.Combine(currentDir, "SwedishCrossword", "Data");
-            if (Directory.Exists(projectDataPath))
-            {
-                return projectDataPath;
-            }
-            
-            // Check if we're directly in a bin folder of SwedishCrossword project
-            if (currentDir.Contains(Path.Combine("SwedishCrossword", "bin")))
-            {
-                var parts = currentDir.Split(Path.DirectorySeparatorChar);
-                for (int i = parts.Length - 1; i >= 0; i--)
-                {
-                    if (parts[i] == "SwedishCrossword" && i > 0)
-                    {
-                        var projectRoot = string.Join(Path.DirectorySeparatorChar.ToString(), parts.Take(i + 1));
-                        var dataPath = Path.Combine(projectRoot, "Data");
-                        if (Directory.Exists(dataPath))
-                        {
-                            return dataPath;
-                        }
-                    }
-                }
-            }
-            
-            // Check if we're in the SwedishCrossword directory directly (has the csproj)
-            var csprojPath = Path.Combine(currentDir, "SwedishCrossword.csproj");
-            var directDataPath = Path.Combine(currentDir, "Data");
-            if (File.Exists(csprojPath) && Directory.Exists(directDataPath))
-            {
-                return directDataPath;
-            }
-            
-            var parent = Directory.GetParent(currentDir);
-            if (parent == null) break;
-            currentDir = parent.FullName;
-        }
-        
-        // Last resort: check if output directory has Data (for published apps)
-        var outputDataPath = Path.Combine(AppContext.BaseDirectory, "Data");
-        if (Directory.Exists(outputDataPath))
-        {
-            return outputDataPath;
-        }
-        
-        // Ultimate fallback: create in output directory
-        Directory.CreateDirectory(outputDataPath);
-        return outputDataPath;
-    }
-
-    /// <summary>
     /// Gets the full path to the synpairs XML file.
     /// </summary>
-    public static string GetXmlFilePath() => Path.Combine(GetDataDirectory(), "synpairs.xml");
+    public static string GetXmlFilePath() => Path.Combine(DataDirectory.GetPath(), "synpairs.xml");
 
     /// <summary>
     /// Gets the full path to the synonym pairs JSON file.
     /// </summary>
-    public static string GetJsonFilePath() => Path.Combine(GetDataDirectory(), "synonym-words.json");
+    public static string GetJsonFilePath() => Path.Combine(DataDirectory.GetPath(), "synonym-words.json");
 
     /// <summary>
     /// Imports synonym pairs from the synpairs.xml file.

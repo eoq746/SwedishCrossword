@@ -11,6 +11,12 @@ public class GridCell
     public int Number { get; set; } = 0; // For numbering clues
     public HashSet<string> WordIds { get; set; } = [];
 
+    /// <summary>
+    /// When non-null, this cell is a bend point (vinkelord) and the arrow indicates
+    /// the continuation direction. Used for rendering only.
+    /// </summary>
+    public Direction? BendArrowDirection { get; set; }
+
     public bool IsEmpty => Letter == '\0' && !IsBlocked;
     public bool HasLetter => Letter != '\0' && Letter != '*'; // Don't consider asterisks as letters
     public bool HasAsterisk => Letter == '*';
@@ -39,6 +45,7 @@ public class GridCell
         IsPartOfWord = false;
         Number = 0;
         WordIds.Clear();
+        BendArrowDirection = null;
     }
 
     public override string ToString()

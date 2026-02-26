@@ -8,17 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Data\**\*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Data\quick-words.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Data\quick-words.txt" />
+    <ProjectReference Include="..\SwedishCrossword\SwedishCrossword.csproj" />
   </ItemGroup>
 
 </Project>

@@ -161,6 +161,7 @@ header p{font-size:.95rem;opacity:.95}
 .cell.empty-warning{background:#fef08a;animation:pulse-warning 0.6s ease-in-out}
 @keyframes pulse-warning{0%,100%{background:#fef08a}50%{background:#fde047}}
 .cell .number{position:absolute;top:2px;left:4px;font-size:calc(var(--cell-size)*0.22);font-weight:400;color:var(--number-color);z-index:2;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;pointer-events:none;}
+.cell .bend-arrow{position:absolute;bottom:0;right:1px;font-size:calc(var(--cell-size)*0.38);font-weight:700;color:var(--number-color);z-index:2;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;pointer-events:none;line-height:1}
 .cell input{
   width:100%;
   height:100%;

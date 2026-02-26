@@ -29,7 +29,7 @@ internal class Program
             var clueGenerator = new ClueGenerator();
             var printService = new PrintService(clueGenerator);
 
-            Console.WriteLine($"Ordlista laddad: {dictionary.WordCount:N0} ord");
+            //Console.WriteLine($"Ordlista laddad: {dictionary.WordCount:N0} ord");
             Console.WriteLine();
 
             // Show menu
@@ -42,7 +42,8 @@ internal class Program
                 Console.WriteLine("4. Visa ordlistestatistik");
                 Console.WriteLine("5. Importera ord från Lexin (ISOF)");
                 Console.WriteLine("6. Importera synonympar (Folkets synonymlexikon)");
-                Console.WriteLine("7. Generera korsord för webben");
+                Console.WriteLine("7. Importera ord från Kelly-listan");
+                Console.WriteLine("8. Generera korsord för webben");
                 Console.WriteLine("0. Avsluta");
                 Console.WriteLine();
                 Console.Write("Ditt val: ");
@@ -79,6 +80,10 @@ internal class Program
                             break;
 
                         case "7":
+                            await ImportKellyWords();
+                            break;
+
+                        case "8":
                             await GenerateForWeb(generator, printService, CrosswordGenerationOptions.Hard);
                             break;
 
@@ -281,15 +286,16 @@ internal class Program
         Console.WriteLine("Genererar korsord för webben...");
         Console.WriteLine();
 
-        // Adjust options for easier testing
-        Console.WriteLine("Justerar inställningar för snabbare generering under utveckling... Kom ihåg att ta bort detta innan produktion!");
-        options.TargetFillPercentage = 0.5;
+        //// Adjust options for easier testing
+        //Console.WriteLine("Justerar inställningar för snabbare generering under utveckling... Kom ihåg att ta bort detta innan produktion!");
+        //options.TargetFillPercentage = 0.5;
 
         var puzzle = await generator.GenerateAsync(options);
 
         Console.WriteLine("Korsord genererat!");
         Console.WriteLine($"Fyllnadsgrad: {puzzle.Statistics.FillPercentage:F1}%");
         Console.WriteLine($"Ord: {puzzle.Statistics.WordCount}");
+        Console.WriteLine($"Number of vinkelord: {puzzle.Statistics.VinkelOrd}");
         Console.WriteLine();
 
         // Find the bin output wwwroot directory
@@ -690,6 +696,66 @@ internal class Program
             
             Console.WriteLine();
             SynonymPairImporter.PrintStatistics(words);
+            
+            Console.WriteLine();
+            Console.WriteLine("Import klar!");
+            Console.WriteLine("   Starta om programmet för att använda de nya orden.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Import misslyckades: {ex.Message}");
+            
+            if (ex.InnerException != null)
+            {
+                Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");
+            }
+        }
+    }
+
+    private static async Task ImportKellyWords()
+    {
+        Console.WriteLine("Kelly Import (Frekvensbaserad ordlista för språkinlärare)");
+        Console.WriteLine("==========================================================");
+        Console.WriteLine();
+        Console.WriteLine("Kelly-listan innehåller frekvensbaserade svenska ord kategoriserade efter CEFR-nivå.");
+        Console.WriteLine("Källa: Kilgarriff et al. (2014). Corpus-based vocabulary lists for language learners");
+        Console.WriteLine("       for nine languages. Language Resources and Evaluation, 48:121–163.");
+        Console.WriteLine();
+        Console.WriteLine("OBS: Kelly-listan innehåller inga definitioner. Orden läggs till för ordvalidering");
+        Console.WriteLine("     (t.ex. för att verifiera oavsiktliga ord i korsordet).");
+        Console.WriteLine();
+        Console.WriteLine("Detta kommer att:");
+        Console.WriteLine("  1. Parsa kelly.xml och extrahera ord med CEFR-nivåer");
+        Console.WriteLine("  2. Exportera till JSON för snabb laddning");
+        Console.WriteLine();
+        Console.WriteLine($"Förväntad XML-fil: {KellyWordImporter.GetXmlFilePath()}");
+        Console.WriteLine();
+
+        if (!File.Exists(KellyWordImporter.GetXmlFilePath()))
+        {
+            Console.WriteLine("VARNING: kelly.xml hittades inte!");
+            Console.WriteLine($"Placera filen i: {Path.GetDirectoryName(KellyWordImporter.GetXmlFilePath())}");
+            return;
+        }
+
+        Console.Write("Vill du fortsätta? (j/n): ");
+
+        if (Console.ReadLine()?.ToLower() != "j")
+        {
+            Console.WriteLine("Import avbruten.");
+            return;
+        }
+
+        Console.WriteLine();
+
+        var importer = new KellyWordImporter();
+        
+        try
+        {
+            var words = await importer.ImportAndExportAsync();
+            
+            Console.WriteLine();
+            KellyWordImporter.PrintStatistics(words);
             
             Console.WriteLine();
             Console.WriteLine("Import klar!");

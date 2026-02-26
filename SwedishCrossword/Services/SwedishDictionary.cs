@@ -16,6 +16,8 @@ public class SwedishDictionary
     public IReadOnlyList<Word> AllWords => _words.Values.Select(ConvertToWord).ToList().AsReadOnly();
     public int WordCount => _words.Count;
 
+    public static string GetJsonFilePath() => Path.Combine(DataDirectory.GetPath(), "kelly-words.json");
+
     public SwedishDictionary()
         : this(false)
     {
@@ -49,6 +51,26 @@ public class SwedishDictionary
                 var synonymsAdded = WordCount - countBefore;
                 Console.WriteLine($"Loaded synonym pairs: {synonymsAdded} additional words");
             }
+
+            // Try to load Kelly word list (if it's been imported)
+            var kellyJsonPath = KellyWordImporter.GetJsonFilePath();
+            if (File.Exists(kellyJsonPath))
+            {
+                var countBefore = WordCount;
+                LoadWordsFromFile(kellyJsonPath);
+                var kellyAdded = WordCount - countBefore;
+                Console.WriteLine($"Loaded Kelly word list: {kellyAdded} additional words");
+            }
+
+            var customJsonPath = Path.Combine(DataDirectory.GetPath(), "custom-words.json");
+            if (File.Exists(customJsonPath))
+            {
+                var countBefore = WordCount;
+                LoadWordsFromFile(customJsonPath);
+                var customAdded = WordCount - countBefore;
+                Console.WriteLine($"Loaded custom word list: {customAdded} additional words");
+            }
+
         }
 
         Console.WriteLine($"Total words loaded: {WordCount}");
@@ -67,8 +89,8 @@ public class SwedishDictionary
             try
             {
                 jsonText = File.ReadAllText(filePath, Encoding.UTF8);
-                Console.WriteLine("Successfully read file using UTF-8 encoding");
-                Console.WriteLine($"File loaded using: UTF-8");
+                //Console.WriteLine("Successfully read file using UTF-8 encoding");
+                //Console.WriteLine($"File loaded using: UTF-8");
             }
             catch (Exception ex)
             {
@@ -92,7 +114,7 @@ public class SwedishDictionary
                         wordsAdded++;
                     }
                 }
-                Console.WriteLine($"Loaded {wordsAdded} words successfully");
+                //Console.WriteLine($"Loaded {wordsAdded} words successfully");
             }
         }
         catch (Exception ex)

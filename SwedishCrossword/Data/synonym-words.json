@@ -24595,7 +24595,7 @@
   },
   {
     "Word": "NI",
-    "Clue": "Er",
+    "Clue": "Sas före reform",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -49849,18 +49849,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "KOMMUNISTERNA",
-    "Clue": "Vänsterpartiet",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "VÄNSTERPARTIET",
-    "Clue": "Kommunisterna",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "PARTNER",
     "Clue": "Kompanjon",
     "Category": "Synonym",
@@ -59180,7 +59168,7 @@
   },
   {
     "Word": "DU",
-    "Clue": "Ni",
+    "Clue": "Tilltalsord",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -59738,7 +59726,7 @@
   },
   {
     "Word": "SADE",
-    "Clue": "Nämna",
+    "Clue": "Dåtid av säga",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -66671,18 +66659,6 @@
     "Clue": "Kärleksaffär",
     "Category": "Synonym",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ROMER",
-    "Clue": "Zigenare",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "ZIGENARE",
-    "Clue": "Romer",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "SKRIK",
@@ -76478,13 +76454,13 @@
   },
   {
     "Word": "UNDERSKATTA",
-    "Clue": "Underskattning",
+    "Clue": "Ringakta",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
   {
     "Word": "UNDERSKATTNING",
-    "Clue": "Underskatta",
+    "Clue": "Förringning",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },

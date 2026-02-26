@@ -1,0 +1,602 @@
+﻿[
+  {
+    "Word": "BB",
+    "Clue": "Barnbörd",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BG",
+    "Clue": "Bankgiro",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BH",
+    "Clue": "Bysthållare",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BV",
+    "Clue": "Bottenvåning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "CD",
+    "Clue": "Compact disc",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "CV",
+    "Clue": "Curriculum vitae",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DY",
+    "Clue": "Den yngre",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DÄ",
+    "Clue": "Den äldre",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ETC",
+    "Clue": "Etcetera kort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FD",
+    "Clue": "Före detta",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FROM",
+    "Clue": "Som ett lamm",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ISBN",
+    "Clue": "Internationellt standardboknummer",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "IVA",
+    "Clue": "Intensivvårdsavdelning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "IPA",
+    "Clue": "Ölsort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MAO",
+    "Clue": "Med andra ord",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MC",
+    "Clue": "Motorcykel kort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MM",
+    "Clue": "Kort längdenhet",
+    "Category": "msk",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MSK",
+    "Clue": "Matsked",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MVH",
+    "Clue": "Med vänlig hälsning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MÖH",
+    "Clue": "Meter över havet",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "OBS",
+    "Clue": "Observera kort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "OSV",
+    "Clue": "Och så vidare",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PG",
+    "Clue": "Plusgiro",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PGA",
+    "Clue": "På grund av kort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "RC",
+    "Clue": "Radiostyrd",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SEK",
+    "Clue": "Svenska kronor",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SK",
+    "Clue": "Så kallad kort",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TEX",
+    "Clue": "Till exempel",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TSK",
+    "Clue": "Tesked",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KRM",
+    "Clue": "Kryddmått",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VAB",
+    "Clue": "Vård av barn",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DS",
+    "Clue": "Efter PS",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PS",
+    "Clue": "Post scriptum",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AD",
+    "Clue": "Anno Domini",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AA",
+    "Clue": "Anonyma alkoholister",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AB",
+    "Clue": "Aktiebolag",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "CSN",
+    "Clue": "Centrala Studiestödsnämnden",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "EU",
+    "Clue": "Europeiska unionen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FN",
+    "Clue": "Förenta nationerna",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MSB",
+    "Clue": "Myndigheten för samhällsskydd och beredskap",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NATO",
+    "Clue": "Mellanstatlig militär allians",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "OD",
+    "Clue": "Manskör från Uppsala",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SACO",
+    "Clue": "Sveriges Akademikers Centralorganisation",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SCB",
+    "Clue": "Statistiska centralbyrån",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SEB",
+    "Clue": "Skandinaviska Enskilda Banken",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SKF",
+    "Clue": "Svenska Kullagerfabriken",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SSAB",
+    "Clue": "Svensk stålkoncern",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SVT",
+    "Clue": "Sveriges Television",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AC",
+    "Clue": "Svalkar",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DC",
+    "Clue": "Likström",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DVD",
+    "Clue": "Digital Versatile Disc",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "EAN",
+    "Clue": "Streckkod",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ISO",
+    "Clue": "Internationella standardiseringsorganisationen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NO",
+    "Clue": "Väderstreck",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NV",
+    "Clue": "Väderstreck",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SO",
+    "Clue": "Grismamma",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SV",
+    "Clue": "Väderstreck",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "EM",
+    "Clue": "Europamästerskap",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GP",
+    "Clue": "Grand Prix",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MMA",
+    "Clue": "Kampsport",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VM",
+    "Clue": "Världsmästerskap",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SM",
+    "Clue": "Svenska mästerskap",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "WO",
+    "Clue": "Enkel vinst",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MOL",
+    "Clue": "Substansmängd",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "WATT",
+    "Clue": "Enhet för effekt",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "JOULE",
+    "Clue": "Energienhet",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KCAL",
+    "Clue": "Ses på näringsdeklaration",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HE",
+    "Clue": "Helium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "LI",
+    "Clue": "Litium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BE",
+    "Clue": "Beryllium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NE",
+    "Clue": "Ädelgas",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NA",
+    "Clue": "Natrium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MG",
+    "Clue": "Magnesium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AL",
+    "Clue": "Aluminium",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SI",
+    "Clue": "Kisel",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "CL",
+    "Clue": "Klor",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AR",
+    "Clue": "Ädelgas",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TI",
+    "Clue": "Titan",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FE",
+    "Clue": "Järndam",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "CU",
+    "Clue": "Koppar",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KR",
+    "Clue": "Ädelgas",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NB",
+    "Clue": "Niob",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AG",
+    "Clue": "Silver",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "XE",
+    "Clue": "Ädelgas",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PT",
+    "Clue": "Platina",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AU",
+    "Clue": "Guld",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HG",
+    "Clue": "Kvicksilver",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PB",
+    "Clue": "Bly",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "RN",
+    "Clue": "Radon",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DM",
+    "Clue": "Decimeter",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KM",
+    "Clue": "Kilometer",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DL",
+    "Clue": "Deciliter",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ML",
+    "Clue": "Milliliter",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AI",
+    "Clue": "Artificiell intelligens",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FOMO",
+    "Clue": "Rädsla för att missa något",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GDPR",
+    "Clue": "Dataskyddsförordningen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ROI",
+    "Clue": "Fransk kung eller nyckeltal",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "URL",
+    "Clue": "Webbadress",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "LAN",
+    "Clue": "Lokalt datornätverk",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VPN",
+    "Clue": "Krypterad nätverksanslutning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  }
+]

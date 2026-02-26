@@ -96,11 +96,11 @@ public class GridValidatorTests
     public async Task CanPlaceWordSafely_ReturnsTrueForValidIntersection()
     {
         var grid = new CrosswordGrid(10, 10);
-        var word1 = new Word("UTE", "Omodern");
+        var word1 = new Word("UTE", "OMODERN");
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
 
-        var word2 = new Word("TRO", "Ana");
-        var canPlace = _validator.CanPlaceWordSafely(grid, word2, 1, 3, Direction.Down);
+        var word2 = new Word("TRO", "ANA");
+        var canPlace = _validator.CanPlaceWordSafely(grid, word2, 2, 3, Direction.Down);
 
         await Assert.That(canPlace).IsTrue();
     }
@@ -123,15 +123,15 @@ public class GridValidatorTests
     {
         var grid = new CrosswordGrid(10, 10);
         var dictionary = new SwedishDictionary(empty: true);
-        dictionary.AddWord("UTE", "Omordern", "Test");
-        dictionary.AddWord("ANA", "Tro", "Test");
+        dictionary.AddWord("UTE", "OMODERN", "Test");
+        dictionary.AddWord("TRO", "ANA", "Test");
 
-        var word1 = new Word("UTE", "Omodern");
+        var word1 = new Word("UTE", "OMODERN");
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
 
-        var word2 = new Word("ANA", "Tro");
+        var word2 = new Word("TRO", "ANA");
         var canPlace = _validator.CanPlaceWordSafelyWithValidation(
-            grid, word2, 1, 3, Direction.Down, dictionary, rejectInvalidWords: true);
+            grid, word2, 2, 3, Direction.Down, dictionary, rejectInvalidWords: true);
 
         await Assert.That(canPlace).IsTrue();
     }

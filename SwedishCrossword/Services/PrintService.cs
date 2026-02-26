@@ -493,6 +493,11 @@ public class PrintService
                     {
                         sb.Append($"\"num\":{cell.Number},");
                     }
+                    if (cell.BendArrowDirection.HasValue)
+                    {
+                        var bendDir = cell.BendArrowDirection.Value == Direction.Across ? "across" : "down";
+                        sb.Append($"\"bend\":\"{bendDir}\",");
+                    }
                     sb.Append($"\"letter\":\"{cell.Letter}\"");
                     sb.Append("}");
                 }
@@ -526,8 +531,9 @@ public class PrintService
                 AccidentalWord a => a.Text,
                 _ => ""
             };
+            var cellsJson = GetCellsJson(item);
             
-            sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\"}}");
+            sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\",\"cells\":{cellsJson}}}");
             if (i < acrossItems.Count - 1) sb.Append(",");
             sb.AppendLine();
         }
@@ -547,8 +553,9 @@ public class PrintService
                 AccidentalWord a => a.Text,
                 _ => ""
             };
+            var cellsJson = GetCellsJson(item);
             
-            sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\"}}");
+            sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\",\"cells\":{cellsJson}}}");
             if (i < downItems.Count - 1) sb.Append(",");
             sb.AppendLine();
         }
@@ -728,7 +735,8 @@ public class PrintService
 
     /// <summary>
     /// Gets all clues from both intentional words and valid accidental words.
-    /// Filters out intentional words that have been superseded (extended) by accidental words.
+    /// Filters out intentional words that have been superseded (extended) by accidental words
+    /// or fully contained within bent words (vinkelord).
     /// </summary>
     private (List<object> Across, List<object> Down) GetAllClues(CrosswordPuzzle puzzle)
     {
@@ -740,7 +748,7 @@ public class PrintService
             .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0)
             .ToList() ?? new List<AccidentalWord>();
         
-        // Add intentional words (filter out any with invalid number and those superseded by accidental words)
+        // Add intentional words (filter out any with invalid number and those superseded)
         foreach (var word in puzzle.Grid.Words)
         {
             if (word.Number <= 0) continue; // Skip words without valid numbers
@@ -761,6 +769,22 @@ public class PrintService
                 continue;
             }
             
+            // Check if this word is fully contained within another word
+            // (same start position, same direction, and the other word's text starts with this word's text)
+            bool containedInOtherWord = puzzle.Grid.Words.Any(other =>
+                other.Id != word.Id &&
+                other.IsPlaced &&
+                other.StartRow == word.StartRow &&
+                other.StartColumn == word.StartColumn &&
+                other.Direction == word.Direction &&
+                other.Text.Length > word.Text.Length &&
+                other.Text.StartsWith(word.Text, StringComparison.OrdinalIgnoreCase));
+
+            if (containedInOtherWord)
+            {
+                continue;
+            }
+            
             if (word.Direction == Direction.Across)
                 across.Add(word);
             else
@@ -769,8 +793,20 @@ public class PrintService
         
         // Add valid accidental words that should be included as clues
         // Only include those with valid PuzzleNumber (> 0) to prevent clue 0 bug
+        // Filter out accidental words that are fully contained within an intentional word
         foreach (var accWord in includedAccidentalWords)
         {
+            bool containedInIntentional = puzzle.Grid.Words.Any(w =>
+                w.IsPlaced &&
+                w.StartRow == accWord.StartRow &&
+                w.StartColumn == accWord.StartCol &&
+                w.Direction == accWord.Direction &&
+                w.Text.Length > accWord.Text.Length &&
+                w.Text.StartsWith(accWord.Text, StringComparison.OrdinalIgnoreCase));
+
+            if (containedInIntentional)
+                continue;
+
             if (accWord.Direction == Direction.Across)
                 across.Add(accWord);
             else
@@ -819,6 +855,33 @@ public class PrintService
             AccidentalWord accWord => accWord.Length,
             _ => 0
         };
+    }
+
+    /// <summary>
+    /// Gets the grid positions (cells) occupied by a Word or AccidentalWord as a JSON array
+    /// </summary>
+    private string GetCellsJson(object item)
+    {
+        var positions = new List<(int Row, int Col)>();
+        
+        switch (item)
+        {
+            case Word w when w.IsPlaced:
+                positions.AddRange(w.GetPositions());
+                break;
+            case AccidentalWord aw:
+                for (int i = 0; i < aw.Length; i++)
+                {
+                    if (aw.Direction == Direction.Across)
+                        positions.Add((aw.StartRow, aw.StartCol + i));
+                    else
+                        positions.Add((aw.StartRow + i, aw.StartCol));
+                }
+                break;
+        }
+        
+        var cells = positions.Select(p => $"[{p.Row},{p.Col}]");
+        return "[" + string.Join(",", cells) + "]";
     }
 }
 

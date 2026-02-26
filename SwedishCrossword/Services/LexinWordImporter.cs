@@ -13,112 +13,16 @@ namespace SwedishCrossword.Services;
 public class LexinWordImporter
 {
     private const string LexinUrl = "https://sprakresurser.isof.se/lexin/svenska/swe_swe.xml";
-    
-    /// <summary>
-    /// Gets the path to the Data directory, working from either the output directory or project directory.
-    /// This ensures both the main application and test projects use the same Data folder.
-    /// </summary>
-    private static string GetDataDirectory()
-    {
-        // Walk up the directory tree looking for the SwedishCrossword project's Data folder
-        var currentDir = AppContext.BaseDirectory;
-        
-        while (!string.IsNullOrEmpty(currentDir))
-        {
-            // Look for SwedishCrossword/Data (the source project's data folder)
-            var projectDataPath = Path.Combine(currentDir, "SwedishCrossword", "Data");
-            if (Directory.Exists(projectDataPath))
-            {
-                return projectDataPath;
-            }
-            
-            // Check if we're directly in a bin folder of SwedishCrossword project
-            // e.g., SwedishCrossword/bin/Debug/net10.0/Data
-            if (currentDir.Contains(Path.Combine("SwedishCrossword", "bin")))
-            {
-                // Walk up to find the SwedishCrossword project root
-                var parts = currentDir.Split(Path.DirectorySeparatorChar);
-                for (int i = parts.Length - 1; i >= 0; i--)
-                {
-                    if (parts[i] == "SwedishCrossword" && i > 0)
-                    {
-                        var projectRoot = string.Join(Path.DirectorySeparatorChar.ToString(), parts.Take(i + 1));
-                        var dataPath = Path.Combine(projectRoot, "Data");
-                        if (Directory.Exists(dataPath))
-                        {
-                            return dataPath;
-                        }
-                    }
-                }
-            }
-            
-            // Check if we're in the SwedishCrossword directory directly (has the csproj)
-            var csprojPath = Path.Combine(currentDir, "SwedishCrossword.csproj");
-            var directDataPath = Path.Combine(currentDir, "Data");
-            if (File.Exists(csprojPath) && Directory.Exists(directDataPath))
-            {
-                return directDataPath;
-            }
-            
-            var parent = Directory.GetParent(currentDir);
-            if (parent == null) break;
-            currentDir = parent.FullName;
-        }
-        
-        // Last resort: check if output directory has Data (for published apps)
-        var outputDataPath = Path.Combine(AppContext.BaseDirectory, "Data");
-        if (Directory.Exists(outputDataPath))
-        {
-            return outputDataPath;
-        }
-        
-        // Fallback: Use the SwedishCrossword project's Data folder, creating it if needed
-        // This searches from the solution root
-        var solutionDir = FindSolutionDirectory();
-        if (solutionDir != null)
-        {
-            var projectData = Path.Combine(solutionDir, "SwedishCrossword", "Data");
-            Directory.CreateDirectory(projectData);
-            return projectData;
-        }
-        
-        // Ultimate fallback: create in output directory
-        Directory.CreateDirectory(outputDataPath);
-        return outputDataPath;
-    }
-    
-    /// <summary>
-    /// Finds the solution directory by looking for .sln file
-    /// </summary>
-    private static string? FindSolutionDirectory()
-    {
-        var currentDir = AppContext.BaseDirectory;
-        
-        while (!string.IsNullOrEmpty(currentDir))
-        {
-            var slnFiles = Directory.GetFiles(currentDir, "*.sln");
-            if (slnFiles.Length > 0)
-            {
-                return currentDir;
-            }
-            
-            var parent = Directory.GetParent(currentDir);
-            if (parent == null) break;
-            currentDir = parent.FullName;
-        }
-        
-        return null;
-    }
 
     /// <summary>
     /// Gets the full path to the Lexin XML file.
     /// </summary>
-    public static string GetXmlFilePath() => Path.Combine(GetDataDirectory(), "lexin-swe-swe.xml");
-    
+    public static string GetXmlFilePath() => Path.Combine(DataDirectory.GetPath(), "lexin-swe-swe.xml");
+
     /// <summary>
     /// Gets the full path to the Lexin JSON file.
     /// </summary>
-    public static string GetJsonFilePath() => Path.Combine(GetDataDirectory(), "lexin-words.json");
+    public static string GetJsonFilePath() => Path.Combine(DataDirectory.GetPath(), "lexin-words.json");
 
     /// <summary>
     /// Downloads the Lexin XML file from ISOF if not already present locally.

@@ -107,4 +107,5 @@ public class GridStats
     public int EmptyCells { get; set; }
     public int WordCount { get; set; }
     public double FillPercentage { get; set; }
+    public int VinkelOrd { get; set; }
 }
