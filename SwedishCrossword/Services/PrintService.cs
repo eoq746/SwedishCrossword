@@ -742,17 +742,17 @@ public class PrintService
     {
         var across = new List<object>();
         var down = new List<object>();
-        
+
         // Get the set of valid accidental words that should be included
         var includedAccidentalWords = puzzle.ValidationResult?.ValidAccidentalWords?
             .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0)
             .ToList() ?? new List<AccidentalWord>();
-        
+
         // Add intentional words (filter out any with invalid number and those superseded)
         foreach (var word in puzzle.Grid.Words)
         {
             if (word.Number <= 0) continue; // Skip words without valid numbers
-            
+
             // Check if this intentional word has been superseded by an accidental word
             // This happens when an accidental word starts at the same position, has the same direction,
             // and the accidental word's text starts with this word's text (meaning it extended the word)
@@ -762,49 +762,65 @@ public class PrintService
                 accWord.Direction == word.Direction &&
                 accWord.Text.StartsWith(word.Text, StringComparison.OrdinalIgnoreCase) &&
                 accWord.Text.Length > word.Text.Length);
-            
+
             if (isSuperseded)
             {
                 // Skip this word - it has been extended by an accidental word
                 continue;
             }
-            
-            // Check if this word is fully contained within another word
-            // (same start position, same direction, and the other word's text starts with this word's text)
+
+            // Check if this word is spatially contained within another intentional word
+            // (all cells fall within the other word's cell range in the same direction)
             bool containedInOtherWord = puzzle.Grid.Words.Any(other =>
                 other.Id != word.Id &&
                 other.IsPlaced &&
-                other.StartRow == word.StartRow &&
-                other.StartColumn == word.StartColumn &&
-                other.Direction == word.Direction &&
-                other.Text.Length > word.Text.Length &&
-                other.Text.StartsWith(word.Text, StringComparison.OrdinalIgnoreCase));
+                CrosswordGrid.IsStraightWordContainedIn(
+                    word.StartRow, word.StartColumn, word.Direction, word.Length,
+                    other.StartRow, other.StartColumn, other.Direction, other.Length));
+
+            // Also check against accidental words
+            if (!containedInOtherWord)
+            {
+                containedInOtherWord = includedAccidentalWords.Any(acc =>
+                    CrosswordGrid.IsStraightWordContainedIn(
+                        word.StartRow, word.StartColumn, word.Direction, word.Length,
+                        acc.StartRow, acc.StartCol, acc.Direction, acc.Length));
+            }
 
             if (containedInOtherWord)
             {
                 continue;
             }
-            
+
             if (word.Direction == Direction.Across)
                 across.Add(word);
             else
                 down.Add(word);
         }
-        
+
         // Add valid accidental words that should be included as clues
         // Only include those with valid PuzzleNumber (> 0) to prevent clue 0 bug
-        // Filter out accidental words that are fully contained within an intentional word
+        // Filter out accidental words spatially contained within any other word
         foreach (var accWord in includedAccidentalWords)
         {
-            bool containedInIntentional = puzzle.Grid.Words.Any(w =>
+            // Check if spatially contained in an intentional word
+            bool containedInOtherWord = puzzle.Grid.Words.Any(w =>
                 w.IsPlaced &&
-                w.StartRow == accWord.StartRow &&
-                w.StartColumn == accWord.StartCol &&
-                w.Direction == accWord.Direction &&
-                w.Text.Length > accWord.Text.Length &&
-                w.Text.StartsWith(accWord.Text, StringComparison.OrdinalIgnoreCase));
+                CrosswordGrid.IsStraightWordContainedIn(
+                    accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
+                    w.StartRow, w.StartColumn, w.Direction, w.Length));
 
-            if (containedInIntentional)
+            // Also check against other accidental words
+            if (!containedInOtherWord)
+            {
+                containedInOtherWord = includedAccidentalWords.Any(other =>
+                    other != accWord &&
+                    CrosswordGrid.IsStraightWordContainedIn(
+                        accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
+                        other.StartRow, other.StartCol, other.Direction, other.Length));
+            }
+
+            if (containedInOtherWord)
                 continue;
 
             if (accWord.Direction == Direction.Across)
@@ -812,7 +828,7 @@ public class PrintService
             else
                 down.Add(accWord);
         }
-        
+
         return (across, down);
     }
     

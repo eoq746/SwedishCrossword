@@ -82,6 +82,26 @@ const FOCUS_DEBOUNCE_MS = 50;
 // with all their cells (not just straight-line neighbours).
 let cellClueMap = {};
 
+// Find the best clue entry for a cell given the desired direction.
+// Prefers entries whose *local* direction at the cell (based on neighbouring
+// cells in the word path) matches, so that a vinkelord's down-segment doesn't
+// steal focus from a regular across word sharing the same cell.
+function findBestEntry(entries, direction, row, col) {
+    if (!entries || entries.length === 0) return null;
+    // Prefer an entry whose local direction at this cell matches
+    let match = entries.find(e => {
+        const idx = e.cells.findIndex(c => c.row === row && c.col === col);
+        if (idx < 0 || e.cells.length < 2) return false;
+        const ref = idx < e.cells.length - 1 ? e.cells[idx + 1] : e.cells[idx - 1];
+        const localDir = ref.row === row ? 'across' : 'down';
+        return localDir === direction;
+    });
+    if (match) return match;
+    // Fall back to nominal clue direction
+    match = entries.find(e => e.direction === direction);
+    return match || entries[0];
+}
+
 // Build the cell-to-clue lookup from puzzleData.clues
 function buildCellClueMap() {
     cellClueMap = {};
@@ -1212,8 +1232,7 @@ function highlightWord(row, col) {
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     if (entries && entries.length > 0) {
-        let match = entries.find(e => e.direction === currentDirection);
-        if (!match) match = entries[0];
+        const match = findBestEntry(entries, currentDirection, row, col);
         match.cells.forEach(c => {
             document.querySelector(`.cell[data-row="${c.row}"][data-col="${c.col}"]`)?.classList.add('word-highlight');
         });
@@ -1252,7 +1271,7 @@ function moveInDirection(input) {
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     if (entries && entries.length > 0) {
-        const match = entries.find(e => e.direction === currentDirection) || entries[0];
+        const match = findBestEntry(entries, currentDirection, row, col);
         const cells = match.cells;
         const idx = cells.findIndex(c => c.row === row && c.col === col);
         if (idx >= 0 && idx < cells.length - 1) {
@@ -1273,7 +1292,7 @@ function moveBackInDirection(input) {
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     if (entries && entries.length > 0) {
-        const match = entries.find(e => e.direction === currentDirection) || entries[0];
+        const match = findBestEntry(entries, currentDirection, row, col);
         const cells = match.cells;
         const idx = cells.findIndex(c => c.row === row && c.col === col);
         if (idx > 0) {
@@ -1347,9 +1366,8 @@ function findCurrentClueNumber(row, col) {
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     if (entries && entries.length > 0) {
-        const match = entries.find(e => e.direction === currentDirection);
-        if (match) return match.number;
-        return entries[0].number;
+        const match = findBestEntry(entries, currentDirection, row, col);
+        return match.number;
     }
 
     // Fallback: original straight-line logic
@@ -1383,14 +1401,13 @@ function findCurrentClueNumber(row, col) {
 
 function highlightClue(row, col) {
     document.querySelectorAll('.clue-item').forEach(item => item.classList.remove('active'));
-    
+
     // Use cellClueMap to find the correct clue for this cell + direction
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     let clueNumber = 0;
     if (entries && entries.length > 0) {
-        let match = entries.find(e => e.direction === currentDirection);
-        if (!match) match = entries[0];
+        const match = findBestEntry(entries, currentDirection, row, col);
         clueNumber = match.number;
     }
 

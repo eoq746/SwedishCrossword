@@ -943,9 +943,34 @@ public class CrosswordGrid
     }
     
     /// <summary>
+    /// Checks whether a straight word's cells are spatially contained within another
+    /// straight word's cells (same direction, all cells of the inner word fall within
+    /// the outer word's cell range). Works for different start positions.
+    /// </summary>
+    public static bool IsStraightWordContainedIn(
+        int innerRow, int innerCol, Direction innerDir, int innerLen,
+        int outerRow, int outerCol, Direction outerDir, int outerLen)
+    {
+        if (innerDir != outerDir || innerLen >= outerLen) return false;
+
+        if (innerDir == Direction.Across)
+        {
+            return innerRow == outerRow &&
+                   innerCol >= outerCol &&
+                   (innerCol + innerLen) <= (outerCol + outerLen);
+        }
+        else
+        {
+            return innerCol == outerCol &&
+                   innerRow >= outerRow &&
+                   (innerRow + innerLen) <= (outerRow + outerLen);
+        }
+    }
+
+    /// <summary>
     /// Renumbers clues including valid accidental words that should be part of the puzzle.
     /// This assigns proper clue numbers to accidental words based on their starting position.
-    /// Straight words fully contained within bent words are excluded from numbering.
+    /// Words fully contained within other words in the same direction are excluded from numbering.
     /// </summary>
     public void RenumberCluesIncludingAccidental(List<AccidentalWord>? accidentalWords = null)
     {
@@ -974,20 +999,28 @@ public class CrosswordGrid
             }
         }
 
-        // Identify words fully contained within other words
-        // A word is contained if another word shares the same start position and direction,
-        // is longer, and its text starts with the shorter word's text
+        // Identify intentional words fully contained within other words
+        // Uses spatial containment: all cells of the shorter word fall within the
+        // longer word's cell range (same direction, not necessarily same start position).
         var containedWordIds = new HashSet<string>();
         foreach (var word in _words.Where(w => w.IsPlaced))
         {
             bool isContained = _words.Any(other =>
                 other.Id != word.Id &&
                 other.IsPlaced &&
-                other.StartRow == word.StartRow &&
-                other.StartColumn == word.StartColumn &&
-                other.Direction == word.Direction &&
-                other.Text.Length > word.Text.Length &&
-                other.Text.StartsWith(word.Text, StringComparison.OrdinalIgnoreCase));
+                IsStraightWordContainedIn(
+                    word.StartRow, word.StartColumn, word.Direction, word.Length,
+                    other.StartRow, other.StartColumn, other.Direction, other.Length));
+
+            // Also check against accidental words
+            if (!isContained && accidentalWords != null)
+            {
+                isContained = accidentalWords.Any(acc =>
+                    acc.ShouldIncludeInPuzzle &&
+                    IsStraightWordContainedIn(
+                        word.StartRow, word.StartColumn, word.Direction, word.Length,
+                        acc.StartRow, acc.StartCol, acc.Direction, acc.Length));
+            }
 
             if (isContained)
             {
@@ -997,7 +1030,7 @@ public class CrosswordGrid
 
         // Collect all word start positions (intentional words, excluding contained ones)
         var allWordStarts = new List<(int Row, int Col, Direction Dir, object WordRef)>();
-        
+
         foreach (var word in _words.Where(w => w.IsPlaced))
         {
             if (containedWordIds.Contains(word.Id))
@@ -1005,7 +1038,7 @@ public class CrosswordGrid
 
             allWordStarts.Add((word.StartRow, word.StartColumn, word.Direction, word));
         }
-        
+
         // Add accidental words that should be included
         if (accidentalWords != null)
         {
@@ -1021,10 +1054,32 @@ public class CrosswordGrid
                     w.Direction == accWord.Direction &&
                     w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
 
-                if (!isAlreadyIntentional)
-                {
-                    allWordStarts.Add((accWord.StartRow, accWord.StartCol, accWord.Direction, accWord));
-                }
+                if (isAlreadyIntentional)
+                    continue;
+
+                // Check if spatially contained in an intentional word
+                bool isContainedInIntentional = _words.Any(w =>
+                    w.IsPlaced &&
+                    !containedWordIds.Contains(w.Id) &&
+                    IsStraightWordContainedIn(
+                        accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
+                        w.StartRow, w.StartColumn, w.Direction, w.Length));
+
+                if (isContainedInIntentional)
+                    continue;
+
+                // Check if spatially contained in another accidental word
+                bool isContainedInAccidental = accidentalWords.Any(other =>
+                    other != accWord &&
+                    other.ShouldIncludeInPuzzle &&
+                    IsStraightWordContainedIn(
+                        accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
+                        other.StartRow, other.StartCol, other.Direction, other.Length));
+
+                if (isContainedInAccidental)
+                    continue;
+
+                allWordStarts.Add((accWord.StartRow, accWord.StartCol, accWord.Direction, accWord));
             }
         }
         
