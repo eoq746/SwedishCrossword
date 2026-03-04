@@ -45,6 +45,9 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         foreach (var w in filteredCandidates)
         {
             var score = ScoreAnchorWordWithIntersectionPotential(w, letterWordCount);
+            // Per-generation jitter so the ranking shifts between runs while quality
+            // words still tend to stay near the top (jitter << typical score range).
+            score += _random.NextDouble() * 4.0;
             anchorCandidates.Add((w, score));
         }
 
@@ -53,7 +56,9 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         Word? bestAnchor = null;
         if (anchorCandidates.Count > 0)
         {
-            var pickIndex = _random.Next(Math.Min(5, Math.Min(8, anchorCandidates.Count)));
+            // Pick uniformly from the top-30 after jitter-based sorting so any
+            // high-quality word has a fair chance, not just the same 5 every time.
+            var pickIndex = _random.Next(Math.Min(30, anchorCandidates.Count));
             bestAnchor = anchorCandidates[pickIndex].Word;
         }
         else
@@ -120,11 +125,12 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                     score += sharedLetters * 3;
                     var newLetters = w.Text.Except(anchorLetters).Distinct().Count();
                     score += newLetters * 1.5;
+                    score += _random.NextDouble() * 4.0; // jitter for run-to-run diversity
                     candidateNextWords.Add((w, score));
                 }
 
                 candidateNextWords.Sort((a, b) => b.Score.CompareTo(a.Score));
-                var topCount = Math.Min(20, candidateNextWords.Count);
+                var topCount = Math.Min(40, candidateNextWords.Count);
 
                 var shuffledCandidates = new List<Word>(topCount);
                 for (int i = 0; i < topCount; i++)
@@ -132,7 +138,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                     shuffledCandidates.Add(candidateNextWords[i].Word);
                 }
 
-                ShuffleTopBiased(shuffledCandidates, 4, _random);
+                ShuffleTopBiased(shuffledCandidates, 10, _random);
 
                 bool placedOne = false;
                 foreach (var nextWord in shuffledCandidates)

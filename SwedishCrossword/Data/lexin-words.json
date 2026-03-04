@@ -2233,7 +2233,7 @@
   },
   {
     "Word": "BEGONIA",
-    "Clue": "En krukväxt med vackert färgade blommor (släktet Begonia)",
+    "Clue": "En krukväxt med vackert färgade blommor",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -14563,7 +14563,7 @@
   },
   {
     "Word": "IRIS",
-    "Clue": "En hög växt med blad som liknar svärd (släktet Iris)",
+    "Clue": "En hög växt med blad som liknar svärd",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -28602,12 +28602,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "SEX",
-    "Clue": "Allt som rör könslivet",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "SEXIG",
     "Clue": "Sexuellt tilldragande",
     "Category": "Adjektiv",
@@ -28789,7 +28783,7 @@
   },
   {
     "Word": "SIM",
-    "Clue": "Simsätt, simning",
+    "Clue": "Kort i mobil eller modem",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -38494,12 +38488,6 @@
     "Clue": "Person som man älskar; käraste (särskilt som tilltalsord)",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ÄLSKOG",
-    "Clue": "(sexuell) kärlek",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
   },
   {
     "Word": "ÄLTAR",

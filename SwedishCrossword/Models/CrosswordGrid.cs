@@ -295,7 +295,7 @@ public class CrosswordGrid
             // Check left of word
             if (startCol > 0 && GetCell(startRow, startCol - 1).HasLetter)
                 return false;
-            
+
             // Check right of word
             if (startCol + word.Length < Width && GetCell(startRow, startCol + word.Length).HasLetter)
                 return false;
@@ -305,13 +305,67 @@ public class CrosswordGrid
             // Check above word
             if (startRow > 0 && GetCell(startRow - 1, startCol).HasLetter)
                 return false;
-            
+
             // Check below word
             if (startRow + word.Length < Height && GetCell(startRow + word.Length, startCol).HasLetter)
                 return false;
         }
 
+        // Check that no new (empty) cell in this word lands immediately after the tail-end
+        // of any existing word's endpoint in any direction.
+        for (int i = 0; i < word.Length; i++)
+        {
+            int cellRow = direction == Direction.Across ? startRow : startRow + i;
+            int cellCol = direction == Direction.Across ? startCol + i : startCol;
+
+            if (!GetCell(cellRow, cellCol).HasLetter && WouldFollowAnyWordEnd(cellRow, cellCol))
+                return false;
+        }
+
         return true;
+    }
+
+    /// <summary>
+    /// Returns true if placing a new letter at (row, col) would land immediately after the
+    /// endpoint of any existing word (straight or bent, in any direction), which would cause
+    /// that word to end in a non-empty cell.
+    /// </summary>
+    private bool WouldFollowAnyWordEnd(int row, int col)
+    {
+        foreach (var w in _words)
+        {
+            if (!w.IsPlaced) continue;
+
+            if (!w.IsBent)
+            {
+                if (w.Direction == Direction.Across &&
+                    w.StartRow == row &&
+                    w.StartColumn + w.Length == col)
+                    return true;
+
+                if (w.Direction == Direction.Down &&
+                    w.StartColumn == col &&
+                    w.StartRow + w.Length == row)
+                    return true;
+            }
+            else
+            {
+                if (w.Segments.Count == 0) continue;
+                var lastSeg = w.Segments[^1];
+
+                if (lastSeg.Direction == Direction.Across &&
+                    lastSeg.EndRow == row &&
+                    lastSeg.EndCol + 1 == col)
+                    return true;
+
+                if (lastSeg.Direction == Direction.Down &&
+                    lastSeg.EndCol == col &&
+                    lastSeg.EndRow + 1 == row)
+                    return true;
+            }
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -572,6 +626,63 @@ public class CrosswordGrid
                     if (!detectedWords.Contains(wordKey))
                     {
                         accidentalWords.Add(verticalWord);
+                        detectedWords.Add(wordKey);
+                    }
+                }
+            }
+        }
+
+        // Second pass: detect straight words at bent word starting cells.
+        // A bent word's start cell is a known word boundary, but a later-placed
+        // perpendicular word may have added a letter to the adjacent cell (e.g.
+        // the cell above for a Down-start bent word). ExtractVerticalWord then
+        // treats the start cell as "mid-word" and skips it, so the short straight
+        // word sharing the start cell (e.g. "BER" alongside bent "BETT") is never
+        // extracted. Force-extracting from these positions fixes that.
+        foreach (var bentWord in _words.Where(w => w.IsBent))
+        {
+            var startRow = bentWord.StartRow;
+            var startCol = bentWord.StartColumn;
+            var initialDir = bentWord.Direction;
+
+            var sb = new StringBuilder();
+            if (initialDir == Direction.Down)
+            {
+                int r = startRow;
+                while (r < Height && GetCell(r, startCol).HasLetter)
+                {
+                    sb.Append(GetCell(r, startCol).Letter);
+                    r++;
+                }
+            }
+            else
+            {
+                int c = startCol;
+                while (c < Width && GetCell(startRow, c).HasLetter)
+                {
+                    sb.Append(GetCell(startRow, c).Letter);
+                    c++;
+                }
+            }
+
+            var text = sb.ToString();
+            if (text.Length >= 2)
+            {
+                var accWord = new AccidentalWord
+                {
+                    Text = text,
+                    StartRow = startRow,
+                    StartCol = startCol,
+                    Direction = initialDir,
+                    Length = text.Length
+                };
+
+                if (IsAccidentalWord(accWord))
+                {
+                    var wordKey = $"{accWord.Text}-{accWord.StartRow}-{accWord.StartCol}-{accWord.Direction}";
+                    if (!detectedWords.Contains(wordKey))
+                    {
+                        accidentalWords.Add(accWord);
                         detectedWords.Add(wordKey);
                     }
                 }
@@ -968,6 +1079,86 @@ public class CrosswordGrid
     }
 
     /// <summary>
+    /// Checks whether all cells of the inner Word fall within the outer Word's cells.
+    /// Handles bent words (vinkelord) correctly by using actual grid positions
+    /// instead of assuming a straight-line projection.
+    /// </summary>
+    public static bool IsWordContainedInOther(Word inner, Word outer)
+    {
+        if (!inner.IsPlaced || !outer.IsPlaced) return false;
+        if (inner.Length >= outer.Length) return false;
+
+        if (!inner.IsBent && !outer.IsBent)
+        {
+            return IsStraightWordContainedIn(
+                inner.StartRow, inner.StartColumn, inner.Direction, inner.Length,
+                outer.StartRow, outer.StartColumn, outer.Direction, outer.Length);
+        }
+
+        var outerPositions = outer.GetPositions().ToHashSet();
+        return inner.GetPositions().All(p => outerPositions.Contains(p));
+    }
+
+    /// <summary>
+    /// Checks whether a straight word span is fully contained within a (possibly bent) Word's cells.
+    /// </summary>
+    public static bool IsStraightSpanContainedInWord(
+        int innerRow, int innerCol, Direction innerDir, int innerLen,
+        Word outer)
+    {
+        if (!outer.IsPlaced || innerLen >= outer.Length) return false;
+
+        if (!outer.IsBent)
+        {
+            return IsStraightWordContainedIn(
+                innerRow, innerCol, innerDir, innerLen,
+                outer.StartRow, outer.StartColumn, outer.Direction, outer.Length);
+        }
+
+        var outerPositions = outer.GetPositions().ToHashSet();
+        for (int i = 0; i < innerLen; i++)
+        {
+            int row = innerDir == Direction.Across ? innerRow : innerRow + i;
+            int col = innerDir == Direction.Across ? innerCol + i : innerCol;
+            if (!outerPositions.Contains((row, col)))
+                return false;
+        }
+        return true;
+    }
+
+    /// <summary>
+    /// Checks whether a (possibly bent) Word's cells are fully contained within a straight word span.
+    /// </summary>
+    public static bool IsWordContainedInStraightSpan(
+        Word inner,
+        int outerRow, int outerCol, Direction outerDir, int outerLen)
+    {
+        if (!inner.IsPlaced || inner.Length >= outerLen) return false;
+
+        if (!inner.IsBent)
+        {
+            return IsStraightWordContainedIn(
+                inner.StartRow, inner.StartColumn, inner.Direction, inner.Length,
+                outerRow, outerCol, outerDir, outerLen);
+        }
+
+        foreach (var (row, col) in inner.GetPositions())
+        {
+            if (outerDir == Direction.Across)
+            {
+                if (row != outerRow || col < outerCol || col >= outerCol + outerLen)
+                    return false;
+            }
+            else
+            {
+                if (col != outerCol || row < outerRow || row >= outerRow + outerLen)
+                    return false;
+            }
+        }
+        return true;
+    }
+
+    /// <summary>
     /// Renumbers clues including valid accidental words that should be part of the puzzle.
     /// This assigns proper clue numbers to accidental words based on their starting position.
     /// Words fully contained within other words in the same direction are excluded from numbering.
@@ -1008,17 +1199,14 @@ public class CrosswordGrid
             bool isContained = _words.Any(other =>
                 other.Id != word.Id &&
                 other.IsPlaced &&
-                IsStraightWordContainedIn(
-                    word.StartRow, word.StartColumn, word.Direction, word.Length,
-                    other.StartRow, other.StartColumn, other.Direction, other.Length));
+                IsWordContainedInOther(word, other));
 
             // Also check against accidental words
             if (!isContained && accidentalWords != null)
             {
                 isContained = accidentalWords.Any(acc =>
                     acc.ShouldIncludeInPuzzle &&
-                    IsStraightWordContainedIn(
-                        word.StartRow, word.StartColumn, word.Direction, word.Length,
+                    IsWordContainedInStraightSpan(word,
                         acc.StartRow, acc.StartCol, acc.Direction, acc.Length));
             }
 
@@ -1061,9 +1249,9 @@ public class CrosswordGrid
                 bool isContainedInIntentional = _words.Any(w =>
                     w.IsPlaced &&
                     !containedWordIds.Contains(w.Id) &&
-                    IsStraightWordContainedIn(
+                    IsStraightSpanContainedInWord(
                         accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
-                        w.StartRow, w.StartColumn, w.Direction, w.Length));
+                        w));
 
                 if (isContainedInIntentional)
                     continue;
@@ -1262,6 +1450,21 @@ public class CrosswordGrid
         {
             if (lastSeg.EndRow + 1 < Height && GetCell(lastSeg.EndRow + 1, lastSeg.EndCol).HasLetter)
                 return false;
+        }
+
+        // Check that no new (empty) cell in this bent word lands immediately after the
+        // endpoint of any existing word in any direction.
+        for (int segIdx = 0; segIdx < segments.Count; segIdx++)
+        {
+            var seg = segments[segIdx];
+            var positions = seg.GetPositions().ToList();
+            int start = segIdx == 0 ? 0 : 1; // skip shared bend cell for subsequent segments
+            for (int i = start; i < positions.Count; i++)
+            {
+                var (cellRow, cellCol) = positions[i];
+                if (!GetCell(cellRow, cellCol).HasLetter && WouldFollowAnyWordEnd(cellRow, cellCol))
+                    return false;
+            }
         }
 
         return true;

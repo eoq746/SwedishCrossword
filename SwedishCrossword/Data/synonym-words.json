@@ -1297,7 +1297,7 @@
   },
   {
     "Word": "ALL",
-    "Clue": "Alla",
+    "Clue": "Akut lymfatisk leukemi",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -6996,18 +6996,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AVSUGNING",
-    "Clue": "Oralsex",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ORALSEX",
-    "Clue": "Avsugning",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "AVSYNA",
     "Clue": "Besiktiga",
     "Category": "Synonym",
@@ -7855,13 +7843,13 @@
   },
   {
     "Word": "BAKUGN",
-    "Clue": "Ugn",
+    "Clue": "Brukas i bageri",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
   {
     "Word": "UGN",
-    "Clue": "Bakugn",
+    "Clue": "Slutet utrymme avsett för förbränning",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -20380,18 +20368,6 @@
     "Clue": "Djur",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "DJURSEX",
-    "Clue": "Sodomi",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SODOMI",
-    "Clue": "Djursex",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
   },
   {
     "Word": "MODIG",
@@ -49819,7 +49795,7 @@
   },
   {
     "Word": "POLISKOMMISSARIE",
-    "Clue": "Kommissarie",
+    "Clue": "Brottsbekämpande befäl",
     "Category": "Synonym",
     "Difficulty": "Medium"
   },
@@ -52614,12 +52590,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "KÖNSUMGÄNGE",
-    "Clue": "Sex",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "KÅPA",
     "Clue": "Huv",
     "Category": "Synonym",
@@ -53329,7 +53299,7 @@
   },
   {
     "Word": "LE",
-    "Clue": "Småleende",
+    "Clue": "Ses uppåt",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -61620,12 +61590,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "SUGA",
-    "Clue": "Oralsex",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "ORANGE",
     "Clue": "Brandgul",
     "Category": "Synonym",
@@ -63703,13 +63667,13 @@
   },
   {
     "Word": "POLISPÅDRAG",
-    "Clue": "Polisuppbåd",
+    "Clue": "Resursinsats vid misstänkt brott",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
   {
     "Word": "POLISUPPBÅD",
-    "Clue": "Polispådrag",
+    "Clue": "Resursinsats vid misstänkt brott",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -74227,7 +74191,7 @@
   },
   {
     "Word": "TEG",
-    "Clue": "Täppa",
+    "Clue": "Höll truten",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -74372,12 +74336,6 @@
   {
     "Word": "TIOKRONORSSEDEL",
     "Clue": "Tia",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "TIDELAG",
-    "Clue": "Djursex",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },

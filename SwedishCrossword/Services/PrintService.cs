@@ -774,16 +774,13 @@ public class PrintService
             bool containedInOtherWord = puzzle.Grid.Words.Any(other =>
                 other.Id != word.Id &&
                 other.IsPlaced &&
-                CrosswordGrid.IsStraightWordContainedIn(
-                    word.StartRow, word.StartColumn, word.Direction, word.Length,
-                    other.StartRow, other.StartColumn, other.Direction, other.Length));
+                CrosswordGrid.IsWordContainedInOther(word, other));
 
             // Also check against accidental words
             if (!containedInOtherWord)
             {
                 containedInOtherWord = includedAccidentalWords.Any(acc =>
-                    CrosswordGrid.IsStraightWordContainedIn(
-                        word.StartRow, word.StartColumn, word.Direction, word.Length,
+                    CrosswordGrid.IsWordContainedInStraightSpan(word,
                         acc.StartRow, acc.StartCol, acc.Direction, acc.Length));
             }
 
@@ -806,9 +803,9 @@ public class PrintService
             // Check if spatially contained in an intentional word
             bool containedInOtherWord = puzzle.Grid.Words.Any(w =>
                 w.IsPlaced &&
-                CrosswordGrid.IsStraightWordContainedIn(
+                CrosswordGrid.IsStraightSpanContainedInWord(
                     accWord.StartRow, accWord.StartCol, accWord.Direction, accWord.Length,
-                    w.StartRow, w.StartColumn, w.Direction, w.Length));
+                    w));
 
             // Also check against other accidental words
             if (!containedInOtherWord)
