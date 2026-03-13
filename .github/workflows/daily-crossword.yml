@@ -63,7 +63,7 @@ jobs:
           fi
 
       - name: Restore dependencies
-        run: dotnet restore SwedishCrossword/SwedishCrossword.csproj
+        run: dotnet restore
 
       - name: Build
         run: dotnet build SwedishCrossword/SwedishCrossword.csproj --configuration Release --no-restore
@@ -78,7 +78,7 @@ jobs:
         run: echo "SWEDISH_CROSSWORD_CACHE_PATH=SwedishCrossword/.cache" >> $GITHUB_ENV
 
       - name: Run tests
-        run: dotnet run --project SwedishCrossword.Tests/SwedishCrossword.Tests.csproj --configuration Release --no-build
+        run: dotnet test SwedishCrossword.Tests/SwedishCrossword.Tests.csproj --configuration Release --no-restore --logger "console;verbosity=normal"
 
       - name: Generate crossword
         run: dotnet run --project SwedishCrossword/SwedishCrossword.csproj --configuration Release -- --generate-for-web
