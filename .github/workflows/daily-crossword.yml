@@ -51,6 +51,16 @@ jobs:
           else
             echo "ERROR: synonym-words.json not found!"
           fi
+          if [ -f "SwedishCrossword/Data/kelly-words.json" ]; then
+            echo "kelly-words.json found ($(wc -c < SwedishCrossword/Data/kelly-words.json) bytes)"
+          else
+            echo "ERROR: kelly-words.json not found!"
+          fi
+          if [ -f "SwedishCrossword/Data/custom-words.json" ]; then
+            echo "custom-words.json found ($(wc -c < SwedishCrossword/Data/custom-words.json) bytes)"
+          else
+            echo "ERROR: custom-words.json not found!"
+          fi
 
       - name: Restore dependencies
         run: dotnet restore SwedishCrossword/SwedishCrossword.csproj
@@ -62,10 +72,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: SwedishCrossword/.cache
-          key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json') }}
+          key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json','SwedishCrossword/Data/kelly-words.json','SwedishCrossword/Data/custom-words.json') }}
 
       - name: Set cache env
         run: echo "SWEDISH_CROSSWORD_CACHE_PATH=SwedishCrossword/.cache" >> $GITHUB_ENV
+
+      - name: Run tests
+        run: dotnet test --configuration Release --no-build --verbosity normal
 
       - name: Generate crossword
         run: dotnet run --project SwedishCrossword/SwedishCrossword.csproj --configuration Release -- --generate-for-web

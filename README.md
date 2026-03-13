@@ -10,16 +10,17 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 
 - **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with high fill percentages (65–75%)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
-- **Swedish Dictionary**: 50,000+ Swedish words with clues from Lexin, synonym pairs, and the Kelly frequency list
-- **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions, deployed to GitHub Pages
+- **Swedish Dictionary**: 50,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, and a custom word file
+- **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions, deployed to GitHub Pages; word-analysis results are cached between runs for faster generation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
-  - Shared leaderboard (via Cloudflare Workers + JSONBin.io)
+  - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + JSONBin.io)
   - Mobile-responsive design (portrait and landscape modes)
 - **Anti-cheat System**: Validates puzzle completion times, input patterns, and DevTools detection
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, and edit clues
+- **Word Manager Tool**: Lightweight CLI for quickly adding words, converting plain-text word lists to JSON, and merging word files
 - **SEO Optimized**: Structured data, sitemap, robots.txt for search engine visibility
 
 ## Project Structure
@@ -30,9 +31,12 @@ SwedishCrosswords/
 |   |-- Data/                      # Dictionary data files
 |   |   |-- lexin-words.json       # Lexin dictionary (imported)
 |   |   |-- synonym-words.json     # Synonym pairs (imported)
+|   |   |-- kelly-words.json       # Kelly word list (imported)
+|   |   |-- kelly-clues.json       # Curated clue overrides for Kelly words
+|   |   |-- custom-words.json      # Custom/hand-curated words loaded at runtime
 |   |   |-- lexin-swe-swe.xml      # Source Lexin XML
 |   |   |-- synpairs.xml           # Source synonym pairs XML
-|   |   +-- kelly.xml              # Kelly frequency word list
+|   |   +-- kelly.xml              # Kelly frequency word list (source XML)
 |   |-- Models/                    # Domain models
 |   |   |-- Word.cs                # Word with clue, metadata, and segments
 |   |   |-- WordSegment.cs         # Segment of a bent word path
@@ -41,7 +45,7 @@ SwedishCrosswords/
 |   |   +-- AccidentalWord.cs      # Bonus word detection
 |   |-- Services/                  # Core services
 |   |   |-- CrosswordGenerator.cs  # Main generation orchestrator
-|   |   |-- SwedishDictionary.cs   # Word lookup and filtering
+|   |   |-- SwedishDictionary.cs   # Word lookup and filtering (loads all 4 sources)
 |   |   |-- GridValidator.cs       # Puzzle validation
 |   |   |-- PrintService.cs        # Output formatting (JSON, text)
 |   |   |-- ClueGenerator.cs       # Clue generation
@@ -70,7 +74,9 @@ SwedishCrosswords/
 |   |   +-- CNAME                  # Custom domain config
 |   +-- Program.cs                 # CLI entry point
 |-- ClueHandler/                   # Dictionary management tool
-|   +-- Program.cs                 # CLI for stats, adding words, editing clues
+|   +-- Program.cs                 # CLI: statistics, add words, edit clues
+|-- WordManager/                   # Lightweight word-management helper (no .csproj yet)
+|   +-- Program.cs                 # CLI: quick-add words, convert text?JSON, merge files
 |-- SwedishCrossword.Tests/        # TUnit test project
 |   |-- GridCellTests.cs           # Grid cell model tests
 |   |-- WordTests.cs               # Word model tests
@@ -118,7 +124,31 @@ dotnet run --project SwedishCrossword
 dotnet run --project SwedishCrossword -- --generate-for-web
 ```
 
-This mode is used by GitHub Actions for automated daily generation.
+This mode is used by GitHub Actions for automated daily generation. The word-analysis cache is stored under `SwedishCrossword/.cache` and is preserved between runs via `actions/cache`.
+
+## Dictionary Tools
+
+### ClueHandler
+
+```bash
+dotnet run --project ClueHandler
+```
+
+Interactive menu:
+
+1. **Visa ordlistestatistik** — Word count and category breakdown
+2. **Lägg till nya ord** — Add individual words with custom clues
+3. **Redigera ledtrådar** — Edit clues for existing dictionary entries
+
+### WordManager
+
+> ?? Work-in-progress — no `.csproj` yet; references `SwedishCrossword.Services` directly.
+
+Lightweight helper for bulk word management:
+
+1. **Add words quickly** — Enter words in `WORD|Clue|Category|Difficulty` format
+2. **Convert text to JSON** — Transform a plain-text word list into the JSON schema used by `SwedishDictionary`
+3. **Merge word files** — Combine multiple word-list JSON files, deduplicating by word text
 
 ## Running Tests
 
@@ -126,7 +156,7 @@ This mode is used by GitHub Actions for automated daily generation.
 dotnet test SwedishCrossword.Tests
 ```
 
-The test suite includes:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
@@ -177,10 +207,13 @@ The main dictionary is sourced from [Lexin](https://spraakbanken.gu.se/resurser/
 Additional synonym pairs from [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), providing word-to-synonym clues.
 
 ### Kelly Word List (Frequency)
-Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary with POS-based fallback patterns.
+Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
+
+### Custom Words
+A hand-curated `custom-words.json` file for words not covered by the main sources. Loaded last so custom entries take precedence over imported ones.
 
 **Combined Statistics:**
-- ~50,000+ words
+- ~50,000+ words across all four sources
 - Categories: Substantiv, Verb, Adjektiv, Adverb, etc.
 - Difficulty levels: Easy, Medium, Hard
 - Full support for Swedish characters (Å, Ä, Ö)
@@ -188,8 +221,8 @@ Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/
 ## Web Architecture
 
 - **Hosting**: GitHub Pages (static files)
-- **Daily Generation**: GitHub Actions (scheduled at midnight UTC)
-- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io
+- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
+- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????)
 - **Analytics**: Google AdSense (optional)
 
 ## License

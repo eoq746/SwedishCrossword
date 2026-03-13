@@ -673,13 +673,16 @@ async function renderLeaderboard() {
         return;
     }
 
+    const medals = ['🥇', '🥈', '🥉'];
     list.innerHTML = leaderboard.map((entry, index) => {
         const isCurrentUser = entry.timestamp && (Date.now() - entry.timestamp < 5000);
         const isFlagged = entry.flagged;
         const flagTooltip = isFlagged && entry.reasons ? entry.reasons.join('\n') : '';
+        const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
+        const rankClass = index < 3 ? `rank-${index + 1}` : '';
         return `
-            <li class="leaderboard-item ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
-                <span class="leaderboard-rank">${index + 1}.</span>
+            <li class="leaderboard-item ${rankClass} ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
+                <span class="leaderboard-rank">${rankDisplay}</span>
                 <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
                 <span class="leaderboard-time">${formatTime(entry.time)}</span>
             </li>

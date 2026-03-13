@@ -26,6 +26,20 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                 var bendCell = grid.GetCell(bendRow, bendCol);
                 if (bendCell.IsBlocked) continue;
 
+                // A bend places a direction arrow on the bend cell. Skip cells that are
+                // the terminal cell of any existing word: the arrow would make that word
+                // appear to continue past its actual end.
+                bool isTerminalOfExistingWord = false;
+                foreach (var w in grid.Words)
+                {
+                    if (w.IsPlaced && w.EndRow == bendRow && w.EndColumn == bendCol)
+                    {
+                        isTerminalOfExistingWord = true;
+                        break;
+                    }
+                }
+                if (isTerminalOfExistingWord) continue;
+
                 TryBuildLShape(grid, bendRow, bendCol, Direction.Across, Direction.Down, minLength, maxLength, opportunities);
                 TryBuildLShape(grid, bendRow, bendCol, Direction.Down, Direction.Across, minLength, maxLength, opportunities);
             }

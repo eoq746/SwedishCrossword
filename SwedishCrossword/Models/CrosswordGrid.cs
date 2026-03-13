@@ -312,7 +312,9 @@ public class CrosswordGrid
         }
 
         // Check that no new (empty) cell in this word lands immediately after the tail-end
-        // of any existing word's endpoint in any direction.
+        // of any existing word's endpoint in any direction, and that no cell lands
+        // immediately before the first cell of any existing bent word's first segment
+        // (which would create an accidental merged reading such as "AMENIG").
         for (int i = 0; i < word.Length; i++)
         {
             int cellRow = direction == Direction.Across ? startRow : startRow + i;
@@ -320,7 +322,18 @@ public class CrosswordGrid
 
             if (!GetCell(cellRow, cellCol).HasLetter && WouldFollowAnyWordEnd(cellRow, cellCol))
                 return false;
+
+            if (!GetCell(cellRow, cellCol).HasLetter && WouldPrecedeAnyBentWordStart(cellRow, cellCol))
+                return false;
         }
+
+        // The terminal cell must not already carry a BendArrowDirection from an existing
+        // bent word. If it does, readers of this word would follow that arrow past its
+        // actual end.
+        int terminalRow = direction == Direction.Across ? startRow : startRow + word.Length - 1;
+        int terminalCol = direction == Direction.Across ? startCol + word.Length - 1 : startCol;
+        if (GetCell(terminalRow, terminalCol).BendArrowDirection != null)
+            return false;
 
         return true;
     }
@@ -363,6 +376,35 @@ public class CrosswordGrid
                     lastSeg.EndRow + 1 == row)
                     return true;
             }
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Returns true if placing a new letter at (row, col) would land immediately before the
+    /// first cell of any existing bent word's first segment (in that segment's reading direction).
+    /// This prevents an accidental continuous reading that merges the new letter with the bent
+    /// word's path (e.g. placing 'A' at the cell just before a bent word starting with 'M'
+    /// would create the misleading reading "AMENIG").
+    /// </summary>
+    private bool WouldPrecedeAnyBentWordStart(int row, int col)
+    {
+        foreach (var w in _words)
+        {
+            if (!w.IsPlaced || !w.IsBent || w.Segments.Count == 0) continue;
+
+            var firstSeg = w.Segments[0];
+
+            if (firstSeg.Direction == Direction.Across &&
+                firstSeg.StartRow == row &&
+                firstSeg.StartCol == col + 1)
+                return true;
+
+            if (firstSeg.Direction == Direction.Down &&
+                firstSeg.StartCol == col &&
+                firstSeg.StartRow == row + 1)
+                return true;
         }
 
         return false;
@@ -1453,7 +1495,8 @@ public class CrosswordGrid
         }
 
         // Check that no new (empty) cell in this bent word lands immediately after the
-        // endpoint of any existing word in any direction.
+        // endpoint of any existing word in any direction, and that no cell lands
+        // immediately before the first cell of any existing bent word's first segment.
         for (int segIdx = 0; segIdx < segments.Count; segIdx++)
         {
             var seg = segments[segIdx];
@@ -1464,8 +1507,32 @@ public class CrosswordGrid
                 var (cellRow, cellCol) = positions[i];
                 if (!GetCell(cellRow, cellCol).HasLetter && WouldFollowAnyWordEnd(cellRow, cellCol))
                     return false;
+
+                if (!GetCell(cellRow, cellCol).HasLetter && WouldPrecedeAnyBentWordStart(cellRow, cellCol))
+                    return false;
             }
         }
+
+        // A bend cell will carry a direction arrow. If that cell is the terminal cell of
+        // an existing word, readers of that word would follow the arrow and continue
+        // reading past the word's actual end (e.g. KANAL ending at 'L' then a bend arrow
+        // placed on that 'L' makes it read as KANALUT).
+        for (int s = 0; s < segments.Count - 1; s++)
+        {
+            int bendRow = segments[s].EndRow;
+            int bendCol = segments[s].EndCol;
+            foreach (var w in _words)
+            {
+                if (w.IsPlaced && w.EndRow == bendRow && w.EndColumn == bendCol)
+                    return false;
+            }
+        }
+
+        // The terminal cell of the new word must not already carry a BendArrowDirection.
+        // If it does, an existing bent word bends there, and its arrow would mislead
+        // readers of the new word into continuing past its actual end.
+        if (GetCell(segments[^1].EndRow, segments[^1].EndCol).BendArrowDirection != null)
+            return false;
 
         return true;
     }

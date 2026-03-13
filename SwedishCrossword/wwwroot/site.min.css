@@ -244,6 +244,24 @@ header p{font-size:.95rem;opacity:.95}
   overscroll-behavior: contain;
 }
 
+/* Leaderboard item base styles */
+.leaderboard-item{display:flex;align-items:center;gap:10px;padding:10px 10px;border-radius:8px;margin-bottom:6px;background:#f9fafb;border:1px solid #e5e7eb;transition:transform 0.15s ease,box-shadow 0.15s ease}
+.leaderboard-item:hover{transform:translateX(2px);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.leaderboard-rank{font-weight:700;font-size:1.2rem;min-width:32px;text-align:center;line-height:1;flex-shrink:0}
+.leaderboard-name{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#111827}
+.leaderboard-time{font-weight:700;color:var(--accent-color);font-variant-numeric:tabular-nums;white-space:nowrap;flex-shrink:0}
+.leaderboard-empty{padding:20px 8px;text-align:center;color:#9ca3af;font-style:italic;list-style:none}
+.flag-icon{margin-left:4px;font-size:0.8em;cursor:help;vertical-align:middle}
+
+/* Medal ranks - podium styling */
+.leaderboard-item.rank-1{background:linear-gradient(135deg,#fef9c3 0%,#fde68a 100%);border-color:#fbbf24;box-shadow:0 3px 14px rgba(251,191,36,.35)}
+.leaderboard-item.rank-1 .leaderboard-rank{font-size:1.5rem}
+.leaderboard-item.rank-2{background:linear-gradient(135deg,#f3f4f6 0%,#e5e7eb 100%);border-color:#9ca3af;box-shadow:0 2px 10px rgba(156,163,175,.35)}
+.leaderboard-item.rank-2 .leaderboard-rank{font-size:1.4rem}
+.leaderboard-item.rank-3{background:linear-gradient(135deg,#fff7ed 0%,#fed7aa 100%);border-color:#fb923c;box-shadow:0 2px 8px rgba(249,115,22,.25)}
+.leaderboard-item.rank-3 .leaderboard-rank{font-size:1.3rem}
+.leaderboard-item.current-user{outline:2px solid var(--accent-color);outline-offset:-2px}
+
 /* Modal */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
