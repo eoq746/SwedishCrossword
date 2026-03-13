@@ -1538,53 +1538,6 @@ public class CrosswordGrid
     }
 
     /// <summary>
-    /// Attempts to place a bent word (vinkelord) using the given segments.
-    /// Sets the word's Segments property and places letters along the path.
-    /// </summary>
-    public bool TryPlaceBentWord(Word word, List<WordSegment> segments)
-    {
-        if (!CanPlaceBentWord(word, segments))
-            return false;
-
-        // Set word placement info from first segment
-        word.StartRow = segments[0].StartRow;
-        word.StartColumn = segments[0].StartCol;
-        word.Direction = segments[0].Direction;
-        word.Segments = new List<WordSegment>(segments);
-        word.IsPlaced = true;
-
-        // Place letters on grid walking the segments
-        int charIdx = 0;
-        for (int segIdx = 0; segIdx < segments.Count; segIdx++)
-        {
-            var segment = segments[segIdx];
-            var positions = segment.GetPositions().ToList();
-
-            int start = segIdx == 0 ? 0 : 1;
-            for (int i = start; i < positions.Count; i++)
-            {
-                var (row, col) = positions[i];
-                var cell = GetCell(row, col);
-                cell.SetLetter(word.GetCharAt(charIdx), word.Id);
-                charIdx++;
-            }
-        }
-
-        // Mark bend cells with arrow direction for rendering
-        for (int s = 0; s < segments.Count - 1; s++)
-        {
-            var bendRow = segments[s].EndRow;
-            var bendCol = segments[s].EndCol;
-            var cell = GetCell(bendRow, bendCol);
-            cell.BendArrowDirection = segments[s + 1].Direction;
-        }
-
-        _words.Add(word);
-        RenumberCluesIncludingAccidental(null);
-        return true;
-    }
-
-    /// <summary>
     /// Attempts to place a bent word with validation to prevent invalid accidental words.
     /// Similar to TryPlaceWordWithValidation but for multi-segment bent words.
     /// </summary>

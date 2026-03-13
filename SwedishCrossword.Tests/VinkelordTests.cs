@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+ï»¿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 
@@ -460,7 +460,7 @@ public class VinkelordTests
             new() { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
         };
 
-        var placed = grid.TryPlaceBentWord(word, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(word, segments);
 
         await Assert.That(placed).IsTrue();
         await Assert.That(word.IsPlaced).IsTrue();
@@ -485,7 +485,7 @@ public class VinkelordTests
             new() { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
         };
 
-        grid.TryPlaceBentWord(word, segments);
+        grid.TryPlaceBentWordWithValidation(word, segments);
 
         // Bend cell should have arrow pointing Down
         await Assert.That(grid.GetCell(2, 5).BendArrowDirection).IsEqualTo(Direction.Down);
@@ -508,7 +508,7 @@ public class VinkelordTests
             new() { StartRow = 0, StartCol = 3, Direction = Direction.Down, Length = 6 }
         };
 
-        var placed = grid.TryPlaceBentWord(word, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(word, segments);
 
         await Assert.That(placed).IsFalse();
     }
@@ -531,7 +531,7 @@ public class VinkelordTests
         };
         // Position (3,5) would have 'B' from bent but 'X' from straight
 
-        var placed = grid.TryPlaceBentWord(bent, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(bent, segments);
 
         await Assert.That(placed).IsFalse();
     }
@@ -541,24 +541,24 @@ public class VinkelordTests
     {
         var grid = new CrosswordGrid(10, 10);
 
-        // Place "CAT" across at row 3
-        var straight = new Word("CAT", "Animal");
+        // Place "SOL" across at row 3
+        var straight = new Word("SOL", "Lyser pÃ¥ dagen");
         grid.TryPlaceWord(straight, 3, 3, Direction.Across);
-        // Positions: (3,3)C (3,4)A (3,5)T
+        // Positions: (3,3)S (3,4)O (3,5)L
 
-        // Place bent word "ABATE" that intersects at 'A' position (3,4)
-        // Down (1,4)?(3,4), then Across (3,4)?(3,6)
-        var bent = new Word("ABATE", "Reduce");
+        // Place bent word "STOL" that intersects at 'O' and 'L' positions
+        // Down (1,4)->(3,4), then Across (3,4)->(3,5)
+        var bent = new Word("STOL", "MÃ¶bel att sitta pÃ¥");
         var segments = new List<WordSegment>
         {
-            new() { StartRow = 1, StartCol = 4, Direction = Direction.Down, Length = 3 },
-            new() { StartRow = 3, StartCol = 4, Direction = Direction.Across, Length = 3 }
+            new() { StartRow = 1, StartCol = 4, Direction = Direction.Down,   Length = 3 },
+            new() { StartRow = 3, StartCol = 4, Direction = Direction.Across, Length = 2 }
         };
-        // (1,4)A (2,4)B (3,4)A [bend] (3,5)T (3,6)E
-        // At (3,4): bent has 'A', straight has 'A' — match!
-        // At (3,5): bent has 'T', straight has 'T' — match!
+        // (1,4)S (2,4)T (3,4)O [bend] (3,5)L
+        // At (3,4): bent has 'O', straight has 'O' -- match!
+        // At (3,5): bent has 'L', straight has 'L' -- match!
 
-        var placed = grid.TryPlaceBentWord(bent, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(bent, segments);
 
         await Assert.That(placed).IsTrue();
     }
@@ -575,7 +575,7 @@ public class VinkelordTests
             new() { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
         };
 
-        grid.TryPlaceBentWord(word, segments);
+        grid.TryPlaceBentWordWithValidation(word, segments);
         grid.RemoveWord(word);
 
         await Assert.That(word.IsPlaced).IsFalse();
@@ -591,14 +591,14 @@ public class VinkelordTests
         var grid = new CrosswordGrid(10, 10);
 
         var word = new Word("ABCDE", "Test");
-        // Two segments both Across — invalid
+        // Two segments both Across ï¿½ invalid
         var segments = new List<WordSegment>
         {
             new() { StartRow = 2, StartCol = 0, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 2, StartCol = 2, Direction = Direction.Across, Length = 3 }
         };
 
-        var placed = grid.TryPlaceBentWord(word, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(word, segments);
 
         await Assert.That(placed).IsFalse();
     }
@@ -616,7 +616,7 @@ public class VinkelordTests
             new() { StartRow = 5, StartCol = 5, Direction = Direction.Down, Length = 3 }
         };
 
-        var placed = grid.TryPlaceBentWord(word, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(word, segments);
 
         await Assert.That(placed).IsFalse();
     }
@@ -639,7 +639,7 @@ public class VinkelordTests
             new() { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
         };
 
-        var placed = grid.TryPlaceBentWord(word, segments);
+        var placed = grid.TryPlaceBentWordWithValidation(word, segments);
 
         await Assert.That(placed).IsTrue();
         await Assert.That(word.BendCount).IsEqualTo(2);

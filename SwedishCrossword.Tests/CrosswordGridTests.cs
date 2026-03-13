@@ -258,7 +258,7 @@ public class CrosswordGridTests
     public async Task GetWordsByDirection_SeparatesAcrossAndDown()
     {
         var grid = new CrosswordGrid(10, 10);
-        grid.TryPlaceWord(new Word("HEJ", "Hälsning"), 0, 0, Direction.Across);
+        grid.TryPlaceWord(new Word("HEJ", "Hï¿½lsning"), 0, 0, Direction.Across);
         grid.TryPlaceWord(new Word("HUND", "Djur"), 0, 0, Direction.Down);
 
         var (across, down) = grid.GetWordsByDirection();
@@ -326,7 +326,7 @@ public class CrosswordGridTests
     ///   row2: L . . . . . .
     ///   row3: S A . . . . .   ? HALSA bends right at S; tail ends at (3,1)=A
     ///
-    /// RASAR goes across on row 3: R(3,0–wait, S is there)—
+    /// RASAR goes across on row 3: R(3,0ï¿½wait, S is there)ï¿½
     /// use columns 0-4: R(3,-1) would be out of range, so use col 1-5:
     ///   _ S A R ? -- no, S is at col 0. Use SARAS: S(3,0) A(3,1) R(3,2) A(3,3) S(3,4).
     /// The R at (3,2) is a new empty cell immediately after HALSA's tail A at (3,1) ? must be rejected.
@@ -337,10 +337,10 @@ public class CrosswordGridTests
         // 7-wide, 5-tall grid gives enough room
         var grid = new CrosswordGrid(7, 5);
 
-        // Place HALS going Down at col 0, rows 0-3
-        var hals = new Word("HALS", "Test");
-        var placed = grid.TryPlaceWord(hals, 0, 0, Direction.Down);
-        await Assert.That(placed).IsTrue();
+        //// Place HALS going Down at col 0, rows 0-3
+        //var hals = new Word("HALS", "Test");
+        //var placed = grid.TryPlaceWord(hals, 0, 0, Direction.Down);
+        //await Assert.That(placed).IsTrue();
 
         // Place the bent word HALSA: first segment Down (rows 0-3, col 0), second Across (row 3, cols 0-1)
         var halsa = new Word("HALSA", "Test");
@@ -349,7 +349,7 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Down,   Length = 4 }, // H A L S
             new WordSegment { StartRow = 3, StartCol = 0, Direction = Direction.Across, Length = 2 }, // S A  (S shared)
         };
-        var bentPlaced = grid.TryPlaceBentWord(halsa, segments);
+        var bentPlaced = grid.TryPlaceBentWordWithValidation(halsa, segments);
         await Assert.That(bentPlaced).IsTrue();
         // HALSA's last segment tail is now A at (3,1)
 
@@ -377,24 +377,24 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Down,   Length = 4 },
             new WordSegment { StartRow = 3, StartCol = 0, Direction = Direction.Across, Length = 2 },
         };
-        grid.TryPlaceBentWord(halsa, segments);
+        grid.TryPlaceBentWordWithValidation(halsa, segments);
 
         // A two-letter word SA that exactly covers the bent word's tail cells should be allowed
-        // because both cells already carry letters (S and A) — no new empty cell is added after the tail.
+        // because both cells already carry letters (S and A) ï¿½ no new empty cell is added after the tail.
         var sa = new Word("SA", "Test");
         var canPlace = grid.CanPlaceWord(sa, 3, 0, Direction.Across);
-        // SA shares all its cells with existing letters, so it merely overlaps — whether it's
+        // SA shares all its cells with existing letters, so it merely overlaps ï¿½ whether it's
         // allowed depends on other isolation rules, but it must NOT be blocked by our new check.
         // (The word-isolation check may still reject it for other reasons; we only verify the
         //  bent-tail check does not incorrectly block it.)
         // The important assertion is that it was NOT rejected solely due to WouldFollowBentWordTail.
         // We verify by confirming that a word ending exactly at the tail (col 1) is not rejected
-        // by the new rule — there is no new empty cell after the tail.
+        // by the new rule ï¿½ there is no new empty cell after the tail.
         await Assert.That(canPlace).IsTrue();
     }
 
     // -------------------------------------------------------------------------
-    // WouldFollowBentWordTail — Down-direction variant
+    // WouldFollowBentWordTail ï¿½ Down-direction variant
     // -------------------------------------------------------------------------
 
     /// <summary>
@@ -407,7 +407,7 @@ public class CrosswordGridTests
     ///   row1: . . D . .   ? ABCD last segment tail (Down, col 2); tail cell = D(1,2)
     ///   row2: . . X . .   ? X is the illegal new letter for "CDX" Down
     ///
-    /// "CDX" Down reuses the existing C and D, then tries to place X at (2,2) —
+    /// "CDX" Down reuses the existing C and D, then tries to place X at (2,2) ï¿½
     /// immediately below the Down tail D(1,2) ? must be rejected.
     /// </summary>
     [Test]
@@ -422,7 +422,7 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Across, Length = 3 }, // A B C
             new WordSegment { StartRow = 0, StartCol = 2, Direction = Direction.Down,   Length = 2 }, // C D  (C shared)
         };
-        await Assert.That(grid.TryPlaceBentWord(abcd, segments)).IsTrue();
+        await Assert.That(grid.TryPlaceBentWordWithValidation(abcd, segments)).IsTrue();
         // ABCD's last segment tail: D at (1,2) going Down
 
         // "CDX" Down starting at (0,2): C and D already exist; X at (2,2) is a new empty cell
@@ -444,16 +444,13 @@ public class CrosswordGridTests
     {
         var grid = new CrosswordGrid(7, 5);
 
-        var hals = new Word("HALS", "Test");
-        grid.TryPlaceWord(hals, 0, 0, Direction.Down);
-
         var halsa = new Word("HALSA", "Test");
         var segments = new List<WordSegment>
         {
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Down,   Length = 4 },
             new WordSegment { StartRow = 3, StartCol = 0, Direction = Direction.Across, Length = 2 },
         };
-        grid.TryPlaceBentWord(halsa, segments);
+        grid.TryPlaceBentWordWithValidation(halsa, segments);
         // HALSA's last segment tail: A at (3,1)
 
         // SARAS Across at row 3, cols 0-4: S(0) and A(1) exist; R at (2) is new, after the tail
@@ -465,7 +462,7 @@ public class CrosswordGridTests
     }
 
     // -------------------------------------------------------------------------
-    // CanPlaceBentWord — tail-adjacency checks
+    // CanPlaceBentWord ï¿½ tail-adjacency checks
     // -------------------------------------------------------------------------
 
     /// <summary>
@@ -478,7 +475,7 @@ public class CrosswordGridTests
     ///   row1: B Y . . .
     ///   row2: C D R . .   ? ABCD Across tail = D(2,1); R at (2,2) follows it ? reject
     ///
-    /// "XYDR": seg1 Down col 1 rows 0-2 (X, Y, D — D matches existing D), seg2 Across
+    /// "XYDR": seg1 Down col 1 rows 0-2 (X, Y, D ï¿½ D matches existing D), seg2 Across
     /// row 2 cols 1-2 (D shared, R new). R(2,2) is immediately after ABCD's tail ? rejected.
     /// </summary>
     [Test]
@@ -493,7 +490,7 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Down,   Length = 3 }, // A B C
             new WordSegment { StartRow = 2, StartCol = 0, Direction = Direction.Across, Length = 2 }, // C D  (C shared)
         };
-        await Assert.That(grid.TryPlaceBentWord(abcd, segsAbcd)).IsTrue();
+        await Assert.That(grid.TryPlaceBentWordWithValidation(abcd, segsAbcd)).IsTrue();
         // ABCD Across tail: D at (2,1)
 
         // Try to place bent "XYDR": Down col 1 rows 0-2 (X, Y, D) then Across row 2 cols 1-2 (D shared, R)
@@ -515,7 +512,7 @@ public class CrosswordGridTests
     ///   col:  0 1 2 3 4
     ///   row0: A . . X .   ? ABCD seg1 Down (col 0); XYZW seg1 Down (col 3)
     ///   row1: B . . Y .
-    ///   row2: C D . Z W   ? ABCD Across tail = D(2,1); XYZW Across tail = W(2,4) — no conflict
+    ///   row2: C D . Z W   ? ABCD Across tail = D(2,1); XYZW Across tail = W(2,4) ï¿½ no conflict
     ///
     /// "XYZW": seg1 Down col 3 rows 0-2, seg2 Across row 2 cols 3-4. W(2,4) follows Z(2,3),
     /// which is not the tail of any existing bent word ? accepted.
@@ -531,7 +528,7 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Down,   Length = 3 },
             new WordSegment { StartRow = 2, StartCol = 0, Direction = Direction.Across, Length = 2 },
         };
-        grid.TryPlaceBentWord(abcd, segsAbcd);
+        grid.TryPlaceBentWordWithValidation(abcd, segsAbcd);
         // ABCD Across tail: D at (2,1)
 
         // "XYZW" is completely to the right; W(2,4) follows Z(2,3), which is not any tail
