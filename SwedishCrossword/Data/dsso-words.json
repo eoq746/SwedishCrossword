@@ -6,12 +6,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABALIENATION",
-    "Clue": "Abali + ett kollektiv av människor förenade av g…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABALIENERA",
     "Clue": "Göra sin tillhörighet till en annans",
     "Category": "Verb",
@@ -28,18 +22,6 @@
     "Clue": "Otvunget sätt",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABANDONNERA",
-    "Clue": "Otvunget sätt + nnera",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABANDONNERING",
-    "Clue": "Otvunget sätt + nnera + pluralis av ingen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ABASI",
@@ -66,12 +48,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABBEKÅS",
-    "Clue": "Fader (om gud) + slags dryckeskärl",
-    "Category": "Egennamn",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ABBORRE",
     "Clue": "En art (Perca fluviatilis) inom fiskfamiljen abborrfiskar (Percidae); individ av arten abborre",
     "Category": "Substantiv",
@@ -80,12 +56,6 @@
   {
     "Word": "ABBORRGRUND",
     "Clue": "Grund där abborrar håller till",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABBORRGRÄS",
-    "Clue": "En art (Perca fluviatilis) inom fiskfami… + poaceae, en växtfamilj vars medlemmar är…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -128,12 +98,6 @@
   {
     "Word": "ABBREVIATION",
     "Clue": "Förkortning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABBREVIATIONSFÖRTECKNING",
-    "Clue": "Förkortning + uppräkning (i skriftlig form)",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -192,12 +156,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ABDIKATIONSAKT",
-    "Clue": "Tronavsägelse + handling, gärning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABDIKERA",
     "Clue": "Lämna en tron; avsäga sig regentskap",
     "Category": "Verb",
@@ -240,12 +198,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ABELPROVARE",
-    "Clue": "Adams och Evas andre son som dödades av… + person som provar något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABELSK",
     "Clue": "Inom gruppteorin detsamma som kommutativ.",
     "Category": "Adjektiv",
@@ -259,7 +211,7 @@
   },
   {
     "Word": "ABERDEEN",
-    "Clue": "Olägenhet, streck i räkningen, hake + deen",
+    "Clue": "Stad i Skottland",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -348,32 +300,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABLATIONSMORÄN",
-    "Clue": "Process där en yta avlägsnas eller försv… + avlagring av grus och lera m.m. som inla…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABLATIONSOMRÅDE",
-    "Clue": "Process där en yta avlägsnas eller försv… + avgränsad plats eller yta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABLATIV",
     "Clue": "Ett slags kasus [ språkvet. ]",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABLATIVFORM",
-    "Clue": "Ett slags kasus [ språkvet. ] + behållare vid bakning eller gjutning för…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABLOYLÅS",
-    "Clue": "Abloy + konstruktion avsedd att hålla dörrar och…",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -392,18 +320,6 @@
   {
     "Word": "ABNORMITET",
     "Clue": "Avvikelse från det normala, missbildning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABNORMPSYKOLOGI",
-    "Clue": "Onormal, mycket långt ifrån att vara nor… + läran om (främst människans) själsliv so…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABNORMTILLSTÅND",
-    "Clue": "Onormal, mycket långt ifrån att vara nor… + tillåtelse",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -474,12 +390,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ABONNEMANGSSYSTEM",
-    "Clue": "Förhandsbeställning + flera objekt som samverkar till en funkt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABONNEMANGSVILLKOR",
     "Clue": "Vilkor som är förknippad med ett abonnemang",
     "Category": "Substantiv",
@@ -492,98 +402,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABONNENTANLÄGGNING",
-    "Clue": "En som abonnerar + industriell eller teknisk konstruktion m…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTAPPARAT",
-    "Clue": "En som abonnerar + (mindre) mekaniskt och/eller elektriskt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABONNENTFÖRTECKNING",
-    "Clue": "En som abonnerar + uppräkning (i skriftlig form)",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTGRUPPRELÄ",
-    "Clue": "En som abonnerar + tgrupprelä",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTJACK",
-    "Clue": "En som abonnerar + ett mansnamn",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTKABEL",
-    "Clue": "En som abonnerar + grovt, lätt elastiskt tågvirke som använ…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTLEDNING",
-    "Clue": "En som abonnerar + anvisning; beslutshjälp; instruktion",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTMOBILITET",
-    "Clue": "En som abonnerar + rörlighet",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTMULTIPEL",
-    "Clue": "En som abonnerar + jämn mångfald; mångfaldig uppsättning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTNUMMER",
-    "Clue": "En som abonnerar + plats i ordningen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTPRIS",
-    "Clue": "En som abonnerar + något man kan få eller vinna efter en pr…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTREGISTER",
-    "Clue": "En som abonnerar + förteckning över något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTTERMINAL",
-    "Clue": "En som abonnerar + större station eller hall som används fö…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTUTRUSTNING",
-    "Clue": "En som abonnerar + det att utrusta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTUTTAG",
-    "Clue": "En som abonnerar + det att ta ut något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABONNENTVÄXEL",
-    "Clue": "En som abonnerar + skuldförbindelse",
+    "Clue": "Prenumerantlista",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -600,12 +420,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABORIGINSK",
-    "Clue": "Legalt avbrytande av graviditet + iginsk",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABORT",
     "Clue": "Legalt avbrytande av graviditet",
     "Category": "Substantiv",
@@ -618,39 +432,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABORTERING",
-    "Clue": "Legalt avbrytande av graviditet + smycke som bärs kring ett finger",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABORTFRAMKALLANDE",
     "Clue": "Som orsakar abort",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTFRÅGAN",
-    "Clue": "Legalt avbrytande av graviditet + tfrågan",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTFÖREBYGGANDE",
-    "Clue": "Legalt avbrytande av graviditet + som hindrar eller motverkar att något ol…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTINDIKATION",
-    "Clue": "Legalt avbrytande av graviditet + tecken på ett visst förhållande",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTINGREPP",
-    "Clue": "Legalt avbrytande av graviditet + åtgärd som ger tydlig förändring",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -660,22 +444,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABORTIVMEDEL",
-    "Clue": "Fosterfördrivande, abortframkallande + ett ämne / en substans avsedd för ett sp…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABORTKLINIK",
     "Clue": "Vårdinrättning som utför aborter (främst om kliniker i andra länder än Sverige)",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTKÖ",
-    "Clue": "Legalt avbrytande av graviditet + led där människor står efter varandra oc…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ABORTLAG",
@@ -702,24 +474,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ABORTRESA",
-    "Clue": "Legalt avbrytande av graviditet + tillfälle när en eller flera personer",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABORTSÖKANDE",
-    "Clue": "Legalt avbrytande av graviditet + person som söker jobb, asyl, m.m.",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABORTTAL",
-    "Clue": "Legalt avbrytande av graviditet + det att tala",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ABORTÖR",
     "Clue": "Person som utför abort (ofta olagligt)",
     "Category": "Substantiv",
@@ -738,21 +492,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABRAHAMSBERG",
-    "Clue": "En patriark i Gamla Testamentet av Bibel… + topografisk formation där markytan skjut…",
-    "Category": "Egennamn",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABRAHAMSDOTTER",
-    "Clue": "En patriark i Gamla Testamentet av Bibel… + kvinnlig avkomma i förhållande till sina…",
+    "Clue": "En drottning Kristina",
     "Category": "Egennamn",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABRAINSYRA",
-    "Clue": "Abrain + kemiskt ämne som avger vätejoner",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -760,12 +502,6 @@
     "Clue": "En trollformel",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABRAMSON",
-    "Clue": "Abram + namn på kristus",
-    "Category": "Egennamn",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ABRAMSSON",
@@ -786,22 +522,10 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ABRASIONSPLAN",
-    "Clue": "Nötning av berg + jämn, utan ojämnheter",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABRASIONSVITTNE",
     "Clue": "En kvarstående pelarlik rest efter vatten och vinds nedbrytning av den omgivande berggrunden",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABRASIV",
-    "Clue": "Abra + ett kvinnonamn",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ABRUPT",
@@ -814,12 +538,6 @@
     "Clue": "Lokal ansamling av var",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABSCESSBILDNING",
-    "Clue": "Lokal ansamling av var + det att bilda något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ABSENS",
@@ -846,12 +564,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABSIDKYRKA",
-    "Clue": "Absid + Kyrka",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABSINT",
     "Clue": "Likördryck baserad på bland annat malört, fänkål och anis",
     "Category": "Substantiv",
@@ -859,7 +571,7 @@
   },
   {
     "Word": "ABSINTFLASKA",
-    "Clue": "Likördryck baserad på bland annat malört… + en cylindrisk behållare (kärl)",
+    "Clue": "Starkspritsbehållare",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -876,70 +588,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABSKISSAXEL",
-    "Clue": "Den första + en kroppsdel",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABSOLUT",
     "Clue": "Som är utan inskränkning, fullständig, fullkomlig",
     "Category": "Adverb",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABSOLUTADRESS",
-    "Clue": "Som är utan inskränkning + hos",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTADRESSERING",
-    "Clue": "Som är utan inskränkning + det att adressera",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTERINGSKOLONN",
-    "Clue": "Som är utan inskränkning + teringskolonn",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTFEL",
-    "Clue": "Som är utan inskränkning + som inte borde vara så; felaktig",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTFREKVENS",
-    "Clue": "Som är utan inskränkning + en storhet",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTFREKVENSDEVIATION",
-    "Clue": "Absolutfrekvens + Deviation",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTHET",
-    "Clue": "Som är utan inskränkning + mycket varm",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTHOPP",
-    "Clue": "Som är utan inskränkning + förflyttning under vilken kroppen lämnar…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTINSTRUKTION",
-    "Clue": "Som är utan inskränkning + föreskrifter",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ABSOLUTION",
@@ -972,54 +624,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABSOLUTKODNING",
-    "Clue": "Som är utan inskränkning + omvandling till kod",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTMODUL",
-    "Clue": "Som är utan inskränkning + en abelsk grupp g på vilken en ring a ve…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTMOMENT",
-    "Clue": "Som är utan inskränkning + avsnitt av en arbetsrutin eller liknande…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTPROGRAMMERING",
-    "Clue": "Som är utan inskränkning + det att programmera",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTTRYCKSMÄTARE",
-    "Clue": "Som är utan inskränkning + ttrycksmätare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTVEKTOR",
-    "Clue": "Som är utan inskränkning + något som har storlek och riktning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTVIKT",
-    "Clue": "Som är utan inskränkning + ; som har vikts",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSOLUTVÄRDE",
-    "Clue": "Som är utan inskränkning + ett tals storlek",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ABSOLVERA",
     "Clue": "Avsluta, fullborda; avlägga [ en examen ]",
     "Category": "Verb",
@@ -1036,12 +640,6 @@
     "Clue": "Ett mått på absorption; logaritmiskt förhållande mellan ljusenergi för och efter det att ljuset passerar ett medium",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABSORBANSVÄRDE",
-    "Clue": "Ett mått på absorption + ett tals storlek",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ABSORBATOR",
@@ -1075,247 +673,13 @@
   },
   {
     "Word": "ABSORBERING",
-    "Clue": "Suga upp, uppsuga + pluralis av ingen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORBERINGSLÄNS",
-    "Clue": "Absorbering + Läns",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORBERMEDEL",
-    "Clue": "Suga upp, uppsuga + ett ämne / en substans avsedd för ett sp…",
+    "Clue": "Uppsugning",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ABSORPTION",
     "Clue": "Uppsugning, upptagning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSANALYS",
-    "Clue": "Uppsugning, upptagning + mycket noggrann undersökning av något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSANLÄGGNING",
-    "Clue": "Uppsugning, upptagning + industriell eller teknisk konstruktion m…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSAPPARAT",
-    "Clue": "Uppsugning, upptagning + (mindre) mekaniskt och/eller elektriskt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSAREA",
-    "Clue": "Uppsugning, upptagning + storhet, storleken av en yta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSBETINGAD",
-    "Clue": "Uppsugning, upptagning + betingad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSDÄMPARE",
-    "Clue": "Uppsugning, upptagning + anordning som dämpar oscillationer",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSDÄMPNING",
-    "Clue": "Uppsugning, upptagning + det att dämpa",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSEGENSKAP",
-    "Clue": "Uppsugning, upptagning + utmärkande drag",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSFILTER",
-    "Clue": "Uppsugning, upptagning + material eller anordning som ändrar ett…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSFLASKA",
-    "Clue": "Uppsugning, upptagning + en cylindrisk behållare (kärl)",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSFREKVENSMETER",
-    "Clue": "Absorption + Frekvensmeter",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSFUSION",
-    "Clue": "Uppsugning, upptagning + sammanslagning av två lätta atomkärnor t…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSFÖRHÅLLANDE",
-    "Clue": "Uppsugning, upptagning + den ömsesidiga medvetenheten samt samlev…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSINDEX",
-    "Clue": "Uppsugning, upptagning + tal som anger kvoten mellan värden inom…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKAPACITET",
-    "Clue": "Uppsugning, upptagning + förmåga; resurser att utföra något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKIL",
-    "Clue": "Uppsugning, upptagning + verktyg bestående av järn eller trä elle…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKOEFFICIENT",
-    "Clue": "Uppsugning, upptagning + en konstant som multipliceras med ett al…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKOLONN",
-    "Clue": "Uppsugning, upptagning + vertikal pelare som bär upp vikt av ett…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKOMPLEX",
-    "Clue": "Uppsugning, upptagning + (som är) uppbyggd av flera direkta och i…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKONSTANT",
-    "Clue": "Uppsugning, upptagning + oförändrat i tid och rum",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKRETS",
-    "Clue": "Uppsugning, upptagning + cirkel",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKYLMASKIN",
-    "Clue": "Uppsugning, upptagning + nskylmaskin",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKYLSKÅP",
-    "Clue": "Uppsugning, upptagning + elektriskt skåp som håller en lägre temp…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSKÄRL",
-    "Clue": "Uppsugning, upptagning + behållare för att hantera gaser",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSMASKIN",
-    "Clue": "Uppsugning, upptagning + ofta större mekaniskt och/eller elektris…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSMATERIAL",
-    "Clue": "Uppsugning, upptagning + utgångsämne vid produktion eller tillver…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSMEDEL",
-    "Clue": "Uppsugning, upptagning + ett ämne / en substans avsedd för ett sp…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSMETER",
-    "Clue": "Uppsugning, upptagning + versmått",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSPERIOD",
-    "Clue": "Uppsugning, upptagning + sammanhängande tidsintervall",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSRUM",
-    "Clue": "Uppsugning, upptagning + utsträckning i två eller fler dimensione…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSRÖR",
-    "Clue": "Uppsugning, upptagning + matematisk/mekanisk konstruktion som kan…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSSNABBHET",
-    "Clue": "Uppsugning, upptagning + det att vara snabb",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSSYSTEM",
-    "Clue": "Uppsugning, upptagning + flera objekt som samverkar till en funkt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSTORN",
-    "Clue": "Uppsugning, upptagning + hög smal ihålig byggnad",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSVÅGMÄTARE",
-    "Clue": "Uppsugning, upptagning + nsvågmätare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSVÄTSKA",
-    "Clue": "Uppsugning, upptagning + ett aggregationstillstånd",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSORPTIONSÄMNE",
-    "Clue": "Uppsugning, upptagning + det material något består av",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1328,12 +692,6 @@
   {
     "Word": "ABSTINENSBESVÄR",
     "Clue": "Besvär som uppkommer vid plötslig avhållsamhet (t.ex. från alkohol)",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ABSTINENSPROCESS",
-    "Clue": "Avhållsamhet + en serie händelser",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1387,7 +745,7 @@
   },
   {
     "Word": "ABSTRAKTIONSNIVÅ",
-    "Clue": "Tankeskapelse + höjd över yta",
+    "Clue": "Hög innebär färre detaljer, låg är specifik",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1401,12 +759,6 @@
     "Word": "ABSURD",
     "Clue": "Helt orimlig; tokig",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ABSURDHET",
-    "Clue": "Helt orimlig; tokig + mycket varm",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -1452,26 +804,14 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ABYSSALZON",
-    "Clue": "Som har med havsdjupen att göra + avgränsat område",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACAJOUNÖT",
-    "Clue": "Acajo + benämning för vissa torra",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ACAJOUTRÄD",
-    "Clue": "Acajo + hög växt med kraftig, barkklädd stam",
+    "Clue": "Växer cashewnötter på",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ACCEDERA",
-    "Clue": "Acc + trycka ett äldre verk",
+    "Clue": "Registrera nyförvärv på bibliotek",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
@@ -1488,146 +828,14 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ACCELERATIONSANOD",
-    "Clue": "Ökning av hastighet eller fart per tidse… + den elektrod där en oxidation äger rum",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSARBETE",
-    "Clue": "Ökning av hastighet eller fart per tidse… + en fysikalisk storhet som ofta mäts i si…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSELEKTROD",
-    "Clue": "Ökning av hastighet eller fart per tidse… + en elektrisk ledare som används för att…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACCELERATIONSFÄLT",
-    "Clue": "Ökning av hastighet eller fart per tidse… + åker, öppen mark, överfört som område",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSGALLER",
-    "Clue": "Ökning av hastighet eller fart per tidse… + person från det antika gallien.",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSHASTIGHET",
-    "Clue": "Ökning av hastighet eller fart per tidse… + vektoriell storhet som anger ändring i p…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSKRAFT",
-    "Clue": "Ökning av hastighet eller fart per tidse… + styrka, förmåga, energi, ork",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSKÖRFÄLT",
-    "Clue": "Ökning av hastighet eller fart per tidse… + längsgående område av en körbana",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSLAG",
-    "Clue": "Ökning av hastighet eller fart per tidse… + hård träff mot någon eller något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSMOMENT",
-    "Clue": "Ökning av hastighet eller fart per tidse… + avsnitt av en arbetsrutin eller liknande…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSMUNSTYCKE",
-    "Clue": "Ökning av hastighet eller fart per tidse… + något som hålls vid munnen för att suga…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSMÄTARE",
-    "Clue": "Ökning av hastighet eller fart per tidse… + apparat som mäter en fysikalisk eller ke…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSNIVÅ",
-    "Clue": "Ökning av hastighet eller fart per tidse… + höjd över yta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSOMRÅDE",
-    "Clue": "Ökning av hastighet eller fart per tidse… + avgränsad plats eller yta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSPEDAL",
-    "Clue": "Ökning av hastighet eller fart per tidse… + föremål att sätta foten på vid drivning…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSPRINCIP",
-    "Clue": "Ökning av hastighet eller fart per tidse… + grundläggande sats eller regel som utgör…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSPUMP",
-    "Clue": "Ökning av hastighet eller fart per tidse… + teknisk apparat som används för att förf…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSRELÄ",
-    "Clue": "Ökning av hastighet eller fart per tidse… + (ursprungligt",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSRÖR",
-    "Clue": "Ökning av hastighet eller fart per tidse… + matematisk/mekanisk konstruktion som kan…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSSENSOR",
-    "Clue": "Ökning av hastighet eller fart per tidse… + (mindre) apparat som mäter en fysikalisk…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATIONSTID",
-    "Clue": "Ökning av hastighet eller fart per tidse… + grundläggande fysikalisk storhet mätbar…",
+    "Clue": "Påfart (till motorväg)",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ACCELERATOR",
     "Clue": "Kemisk tillsats som påskyndar en process",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATORANLÄGGNING",
-    "Clue": "Kemisk tillsats som påskyndar en process + industriell eller teknisk konstruktion m…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCELERATORPEDAL",
-    "Clue": "Kemisk tillsats som påskyndar en process + föremål att sätta foten på vid drivning…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1651,7 +859,7 @@
   },
   {
     "Word": "ACCELERERING",
-    "Clue": "Ge ett föremål en acceleration + pluralis av ingen",
+    "Clue": "Ökning av hastigheten hos ett objekt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1668,32 +876,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACCENTBETECKNING",
-    "Clue": "Betoning, intonation + kod, till exempel en kombination av ett…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCENTFÖRSKJUTNING",
-    "Clue": "Betoning, intonation + det att något förskjuts",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCENTLÖS",
-    "Clue": "Betoning, intonation + rörlig; ej fastsatt",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ACCENTTECKEN",
     "Clue": "Diakritiskt tecken som används i text för att ge anvisningar om hur ett ord uttalas",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCENTUATION",
-    "Clue": "Betoning, intonation + tuation",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1728,70 +912,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACCEPTANSANTAL",
-    "Clue": "Accepterande + naturligt tal",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSFEL",
-    "Clue": "Accepterande + som inte borde vara så; felaktig",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSGRÄNS",
-    "Clue": "Accepterande + den tänkta eller i praktiken synbara lin…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSINTYG",
-    "Clue": "Accepterande + (skriftligt) försäkrande",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSKONTROLL",
-    "Clue": "Accepterande + undersökning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSOMRÅDE",
-    "Clue": "Accepterande + avgränsad plats eller yta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSPROVNING",
-    "Clue": "Accepterande + det att prova; tillfälle då något provas",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSSANNOLIKHET",
-    "Clue": "Accepterande + storhet som anger hur troligt det är att…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTANSTAL",
-    "Clue": "Accepterande + det att tala",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACCEPTANT",
     "Clue": "Person som godkänt (”accepterat”) en växel",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCEPTBESÖRJNING",
-    "Clue": "Godkännande av växel + tbesörjning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ACCEPTERA",
@@ -1806,68 +930,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ACCEPTERING",
-    "Clue": "Godkännande av växel + smycke som bärs kring ett finger",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTKONTO",
-    "Clue": "Godkännande av växel + en fysisk eller juridisk persons löpande…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTKREDIT",
-    "Clue": "Godkännande av växel + pengar som lånas av banken mot betalning…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTOR",
-    "Clue": "Godkännande av växel + förkortning för torsdag",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCEPTORATOM",
-    "Clue": "Acceptor + partikel bestående av en atomkärna av pr…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTORFÖRORENING",
-    "Clue": "Acceptor + oönskade partiklar eller ämnen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTORNIVÅ",
-    "Clue": "Acceptor + Nivå",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTREMBURS",
-    "Clue": "Godkännande av växel + (säkraste) bankförfarande i internatione…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCEPTVÄGRAN",
-    "Clue": "Godkännande av växel + det att vägra",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACCESS",
     "Clue": "Tillträde, åtkomst, särskilt i datasammanhang",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCESSARM",
-    "Clue": "Tillträde, åtkomst + övre extremitet hos människan",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -1890,12 +954,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACCESSKAPACITET",
-    "Clue": "Tillträde, åtkomst + förmåga; resurser att utföra något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACCESSOAR",
     "Clue": "Tillbehör (speciellt gällande mode",
     "Category": "Substantiv",
@@ -1905,24 +963,6 @@
     "Word": "ACCESSORISK",
     "Clue": "Avhängig, beroende",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCESSPROTOKOLL",
-    "Clue": "Tillträde, åtkomst + formellt nedtecknad beskrivning av ett s…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCESSPÄRR",
-    "Clue": "Tillträde, åtkomst + hinder, blockad, vaktstation",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCESSPÄRRSUPPLÖSNING",
-    "Clue": "Tillträde, åtkomst + hinder + mått på hur små detaljer som kan urskilj…",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -1938,36 +978,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACCIDENSFÄRG",
-    "Clue": "Tillfällighet + synintryck av",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCIDENSKAST",
-    "Clue": "Tillfällighet + indisk klass eller socialgrupp",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCIDENSMASKIN",
-    "Clue": "Tillfällighet + ofta större mekaniskt och/eller elektris…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCIDENSPRESS",
-    "Clue": "Tillfällighet + maskin som åstadkommer tryck; tryckpress",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCIDENSSÄTTARE",
-    "Clue": "Tillfällighet + sättare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACCIDENSTRYCK",
     "Clue": "Tillfällighetstryck (t.ex. blanketter, inbjudningskort m.m.)",
     "Category": "Substantiv",
@@ -1976,12 +986,6 @@
   {
     "Word": "ACCIDENSTRYCKERI",
     "Clue": "Mindre tryckeri för kort, affischer o dyl",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCIDENSTYP",
-    "Clue": "Tillfällighet + urbild, förebild, modell, sort",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1998,50 +1002,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACCISBYRÅ",
-    "Clue": "Särskild skatt på vissa produkter + en slags möbel med utdragbara lådor",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCISFRI",
-    "Clue": "Särskild skatt på vissa produkter + obunden, lös, ej fängslad",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCISLAG",
-    "Clue": "Särskild skatt på vissa produkter + vätska för inläggningar",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACCISMEDEL",
-    "Clue": "Särskild skatt på vissa produkter + ett ämne / en substans avsedd för ett sp…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCISPLIKTIG",
-    "Clue": "Särskild skatt på vissa produkter + skyldig; tvungen",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACCISSKULD",
-    "Clue": "Särskild skatt på vissa produkter + den yngsta av de tre nornorna och den av…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACETALDEHYD",
     "Clue": "Etanal",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETALDEHYDAMMONIAK",
-    "Clue": "Etanal + ett vid rumstemperatur gasformigt ämne m…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2052,34 +1014,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACETATFÄRGÄMNE",
-    "Clue": "Anjon av ; salt eller ester av + ämne som används för att ge färg åt någo…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACETON",
     "Clue": "Ett flyktigt lösningsmedel; den enklaste representanten av gruppen ketoner, systematiskt namn propanon",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACETONKLORID",
-    "Clue": "Ett flyktigt lösningsmedel + negativ jon av grundämnet klor",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETONOLJA",
-    "Clue": "Ett flyktigt lösningsmedel + vattenavstötande ämne som vid rumstemper…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETONSYRA",
-    "Clue": "Ett flyktigt lösningsmedel + kemiskt ämne som avger vätejoner",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ACETYL",
@@ -2088,202 +1026,16 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACETYLCELLULOSA",
-    "Clue": "Atomgrupp + polysackarid som utgör huvuddelen i växt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACETYLEN",
     "Clue": "Trivialnamn för etyn; ett gasformigt kolväte med molekylformel C2H2 (ofta använt till svetsning)",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACETYLENACKUMULATOR",
-    "Clue": "Trivialnamn för etyn + anordning för lagring av elektrisk energ…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENANSLUTNING",
-    "Clue": "Trivialnamn för etyn + förbindelse",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENBEHÅLLARE",
-    "Clue": "Trivialnamn för etyn + ihåligt föremål som kan och är avsett at…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENBELYSNING",
-    "Clue": "Trivialnamn för etyn + anordning som belyser något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENBINDNING",
-    "Clue": "Trivialnamn för etyn + det att binda",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENBRÄNNARE",
-    "Clue": "Trivialnamn för etyn + redskap eller del av en redskap som förb…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENCYLINDER",
-    "Clue": "Trivialnamn för etyn + den yta i rummet som bildas när en gener…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENFLASKA",
-    "Clue": "Trivialnamn för etyn + en cylindrisk behållare (kärl)",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENFRAMSTÄLLNING",
-    "Clue": "Trivialnamn för etyn + handlingen att framställa något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENGAS",
-    "Clue": "Trivialnamn för etyn + ett aggregationstillstånd",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENGASFABRIK",
-    "Clue": "Trivialnamn för etyn + ett aggregationst… + (större) anläggning där tillverkning av…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENGASVERK",
-    "Clue": "Trivialnamn för etyn + ett aggregationst… + något som har skapats eller åstadkommits…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENGENERATOR",
-    "Clue": "Trivialnamn för etyn + maskin bestående av stator och rotor som…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACETYLENKLORID",
     "Clue": "Trivialnamn för etyn + negativ jon av grundämnet klor",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENKOMPRESSOR",
-    "Clue": "Trivialnamn för etyn + maskin som pressar samman gaser",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENLAMPA",
-    "Clue": "Trivialnamn för etyn + apparat som alstrar elektromagnetisk str…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENMANOMETER",
-    "Clue": "Trivialnamn för etyn + instrument för att mäta gas- eller vätsk…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENPOLYMER",
-    "Clue": "Trivialnamn för etyn + kemisk förening som består av mycket lån…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENPUMP",
-    "Clue": "Trivialnamn för etyn + teknisk apparat som används för att förf…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENREGULATOR",
-    "Clue": "Trivialnamn för etyn + reglerande apparat",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSKÄRDON",
-    "Clue": "Atomgrupp + enskärdon",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSOT",
-    "Clue": "Trivialnamn för etyn + ofullständigt förbrända rester av kol",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSVETSNING",
-    "Clue": "Trivialnamn för etyn + det att svetsa; utfört svetsarbete",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSYREBRÄNNARE",
-    "Clue": "Atomgrupp + ensyrebrännare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSYRGASSVETSNING",
-    "Clue": "Acetylen + Syrgassvetsning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENSÖNDERFALL",
-    "Clue": "Trivialnamn för etyn + spontan (plötslig eller utdragen) proces…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENTORKARE",
-    "Clue": "Trivialnamn för etyn + torkare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENTUB",
-    "Clue": "Trivialnamn för etyn + hoptryckbar kapsel som används som förpa…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENVENTIL",
-    "Clue": "Trivialnamn för etyn + anordning som styr flöde av vätskor elle…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLENÖVERSKOTT",
-    "Clue": "Trivialnamn för etyn + något som blir över på grund av rik till…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLERA",
-    "Clue": "Atomgrupp + artighetsuttryckande skrivvariant av era",
-    "Category": "Verb",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ACETYLERING",
@@ -85584,24 +84336,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "EJAKULATION",
-    "Clue": "Det att en man sprutar ut sperma ur penis",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EJAKULERA",
-    "Clue": "Stötvis utspruta",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "EJAKULERING",
-    "Clue": "Synonym för ejakulation",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EJDER",
     "Clue": "En art (Somateria mollissima) inom fågelfamiljen egentliga andfåglar (Anatidae); individ av arten ejder",
     "Category": "Substantiv",
@@ -92331,12 +91065,6 @@
     "Word": "EREKTIL",
     "Clue": "___",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "EREKTION",
-    "Clue": "Tillstånd av sexuell upphetsning då penis styvnar för att kunna lämna sperma i hona och därmed söka befruktning och i slutänden fortplantning",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -358980,12 +357708,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SAGGA",
-    "Clue": "Ejakulera, spruta sperma",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "SAGOAKTIG",
     "Clue": "En asynja omnämnd i Grimnismål + oaktig",
     "Category": "Adjektiv",
@@ -401068,18 +399790,6 @@
     "Clue": "Bröstvårta hos däggdjurs hona + med hög temperatur",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "SPERMA",
-    "Clue": "Den trögflytande, transparenta/vitaktiga fluid innehållande spermier och sekret från prostata",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SPERMAFLÄCK",
-    "Clue": "Den trögflytande + område på ett föremåls yta missfärgat el…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "SPERMIE",
@@ -468010,18 +466720,6 @@
     "Clue": "Möjlig att göra så att något",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "UTLÖSNING",
-    "Clue": "Det att en man sprutar ut sperma ur penis",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "UTLÖSNINGSMEKANISM",
-    "Clue": "Det att en man sprutar ut sperma ur peni… + en enklare eller komplicerad konstruktio…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "UTMAGRAD",

@@ -1282,5 +1282,35 @@
     "Clue": "Tallium",
     "Category": "Substantiv",
     "Difficulty": "Easy"
+  },
+  {
+    "Word": "CC",
+    "Clue": "Enhet för slagvolym",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DD",
+    "Clue": "Dagens Dubbel",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ÖA",
+    "Clue": "Örnsköldsviks Allehanda",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "IB",
+    "Clue": "International Baccalaureate",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BC",
+    "Clue": "British Columbia",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
   }
 ]
