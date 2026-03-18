@@ -1,0 +1,665 @@
+t:lönesättningsbesluts:lönesättningsbesluten:lönesättningsbeslutens
+COMPOUND(783166, 552238): lönesättning + beslut
+802743r4<substantiv>lönesättningskurva:lönesättningskurva:lönesättningskurvas:lönesättningskurvan:lönesättningskurvans:lönesättningskurvor:lönesättningskurvors:lönesättningskurvorna:lönesättningskurvornas
+COMPOUND(783166, 594565): lönesättning + kurva
+742726r4<substantiv>lönetak:lönetak:lönetaks:lönetaket:lönetakets:lönetak:lönetaks:lönetaken:lönetakens
+COMPOUND(549976, 553027): lön + tak
+681402r4<substantiv>löneökning:löneökning:löneöknings:löneökningen:löneökningens:löneökningar:löneökningars:löneökningarna:löneökningarnas
+COMPOUND(549976, 649466): lön + ökning
+CUSTOM: y y löneöknings
+757923r3<substantiv>löning:löning:lönings:löningen:löningens:löningar:löningars:löningarna:löningarnas
+565052r3<adjektiv>lönlös:lönlös:lönlöst:lönlösa:lönlösa::::
+555912r5<substantiv>lönn:lönn:lönns:lönnen:lönnens:lönnar:lönnars:lönnarna:lönnarnas
+DEFINITION 1: Ett slags lövträd.
+CUSTOM: y n lönn
+860412r4<substantiv>lönnbotten:lönnbotten:lönnbottens:lönnbottnen, lönnbotten:lönnbottnens, lönnbottens:lönnbottnar:lönnbottnars:lönnbottnarna:lönnbottnarnas
+COMPOUND(555912, 643247): lönn + botten
+938280r3<substantiv>lönndom:lönndom:::::::
+554312r4<egennamn>Lönneberga:Lönneberga:Lönnebergas, Lönneberga
+CUSTOM: y n Lönneberga
+757931r3<substantiv>lönnfack:lönnfack:lönnfacks:lönnfacket:lönnfackets:lönnfack:lönnfacks:lönnfacken:lönnfackens
+757937r3<adjektiv>lönnfet:lönnfet:lönnfett:lönnfeta:lönnfeta:!:!:!:lönnfete
+566635r4<adjektiv>lönnlig:lönnlig:lönnligt:lönnliga:lönnliga:lönnligare:lönnligast:lönnligaste:
+757941r3<substantiv>lönnmord:lönnmord:lönnmords:lönnmordet:lönnmordets:lönnmord:lönnmords:lönnmorden:lönnmordens
+757948r3<verb>lönnmörda:lönnmörda:lönnmördade:lönnmördat:lönnmördar:lönnmörda:lönnmördas:lönnmördades:lönnmördats:lönnmördas:lönnmördad:lönnmördat:lönnmördade::
+615374r3<substantiv>lönnmördare:lönnmördare:lönnmördares:lönnmördaren:lönnmördarens:lönnmördare:lönnmördares:lönnmördarna:lönnmördarnas
+CUSTOM: y y lönnmördar
+952135r3<substantiv>lönnruna:lönnruna:lönnrunas:lönnrunan:lönnrunans:lönnrunor:lönnrunors:lönnrunorna:lönnrunornas
+563420r4<adjektiv>lönsam:lönsam:lönsamt:lönsamma:lönsamma:lönsammare:lönsammast:lönsammaste:
+687942r4<substantiv>lönsamhet:lönsamhet:lönsamhets:lönsamheten:lönsamhetens::::
+CUSTOM: y y lönsamhets
+687943r4<substantiv>lönsamhetskalkyl:lönsamhetskalkyl:lönsamhetskalkyls:lönsamhetskalkylen:lönsamhetskalkylens:lönsamhetskalkyler:lönsamhetskalkylers:lönsamhetskalkylerna:lönsamhetskalkylernas
+COMPOUND(687942, 549403): lönsamhet + kalkyl
+982656r3<substantiv>lönskaläge:lönskaläge:lönskaläges:lönskaläget:lönskalägets:lönskalägen:lönskalägens:lönskalägena:lönskalägenas
+610955r3<substantiv>lönsömnadsindustri:lönsömnadsindustri:lönsömnadsindustris:lönsömnadsindustrin:lönsömnadsindustrins:lönsömnadsindustrier:lönsömnadsindustriers:lönsömnadsindustrierna:lönsömnadsindustriernas
+628356r3<adjektiv>lönt:lönt:lönt:lönt:lönt:!:!:!:
+615375r4<substantiv>löntagare:löntagare:löntagares:löntagaren:löntagarens:löntagare:löntagares:löntagarna:löntagarnas
+CUSTOM: y y löntagar
+681403r4<substantiv>löntagarfond:löntagarfond:löntagarfonds:löntagarfonden:löntagarfondens:löntagarfonder:löntagarfonders:löntagarfonderna:löntagarfondernas
+COMPOUND(615375, 548939): löntagare + fond
+799860r3<adjektiv>löntagarägd:löntagarägd:löntagarägt:löntagarägda:löntagarägda::::
+560256r3<substantiv>löp:löp:löps:löpet:löpets:löp:löps:löpen:löpens
+962275r3<substantiv>löpa:löpa:löpas:löpan:löpans:löpor:löpors:löporna:löpornas
+CUSTOM: y n
+560261r18<verb>löpa:löpa:löpte:löpt, lupit:löper:löp:löpas:löptes:löpts:löps:::::
+CUSTOM: y n
+687947r3<adjektiv>löpande:löpande:löpande:löpande:löpande:!:!:!:
+982675r3<substantiv>löpandebandprincip:löpandebandprincip:löpandebandprincips:löpandebandprincipen:löpandebandprincipens:löpandebandprinciper:löpandebandprincipers:löpandebandprinciperna:löpandebandprincipernas
+982665r3<substantiv>löpandebandsprincip:löpandebandsprincip:löpandebandsprincips:löpandebandsprincipen:löpandebandsprincipens:löpandebandsprinciper:löpandebandsprincipers:löpandebandsprinciperna:löpandebandsprincipernas
+594693r3<substantiv>löparbana:löparbana:löparbanas:löparbanan:löparbanans:löparbanor:löparbanors:löparbanorna:löparbanornas
+560262r6<substantiv>löpare:löpare:löpares:löparen:löparens:löpare:löpares:löparna:löparnas
+CUSTOM: y y löpar
+952144r4<substantiv>löparknä:löparknä:löparknäs:löparknäet, löparknät:löparknäets, löparknäts:löparknän:löparknäns:löparknäna:löparknänas
+COMPOUND(560262, 559821): löpare + knä
+934374r4<substantiv>löparsko:löparsko:löparskos:löparskon:löparskons:löparskor:löparskors:löparskorna:löparskornas
+COMPOUND(560262, 555202): löpare + sko
+841323r3<substantiv>löparsten:löparsten:löparstens:löparstenen:löparstenens:löparstenar:löparstenars:löparstenarna:löparstenarnas
+754832r3<substantiv>löpbana:löpbana:löpbanas:löpbanan:löpbanans:löpbanor:löpbanors:löpbanorna:löpbanornas
+CUSTOM: y n n
+916595r4<substantiv>löpband:löpband:löpbands:löpbandet:löpbandets:löpband:löpbands:löpbanden:löpbandens
+COMPOUND(560261, 552220): löpa + band
+560263r3<substantiv>löpe:löpe:löpes:löpet:löpets::::
+CUSTOM: y n
+687948r3<substantiv>löpeld:löpeld:löpelds:löpelden:löpeldens:löpeldar:löpeldars:löpeldarna:löpeldarnas
+CUSTOM: y n
+757956r3<substantiv>löpgrav:löpgrav:löpgravs:löpgraven:löpgravens:löpgravar:löpgravars:löpgravarna:löpgravarnas
+CUSTOM: y n
+982685r3<substantiv>löpgren:löpgren:löpgrens:löpgrenen:löpgrenens:löpgrenar:löpgrenars:löpgrenarna:löpgrenarnas
+CUSTOM: y n
+872368r3<substantiv>löpknut:löpknut:löpknuts:löpknuten:löpknutens:löpknutar:löpknutars:löpknutarna:löpknutarnas
+CUSTOM: y n
+872376r3<substantiv>löplina:löplina:löplinas:löplinan:löplinans:löplinor:löplinors:löplinorna:löplinornas
+916613r4<substantiv>löplopp:löplopp:löplopps:löploppet:löploppets:löplopp:löplopps:löploppen:löploppens
+COMPOUND(560261, 552677): löpa + lopp
+CUSTOM: y n n
+872384r3<substantiv>löpmage:löpmage:löpmages:löpmagen:löpmagens:löpmagar:löpmagars:löpmagarna:löpmagarnas
+CUSTOM: y n
+872392r3<substantiv>löpmaska:löpmaska:löpmaskas:löpmaskan:löpmaskans:löpmaskor:löpmaskors:löpmaskorna:löpmaskornas
+CUSTOM: y n
+872400r3<substantiv>löpmeter:löpmeter:löpmeters:löpmetern:löpmeterns:löpmeter:löpmeters:löpmeterna:löpmeternas
+CUSTOM: y n
+687953r5<substantiv>löpning:löpning:löpnings:löpningen:löpningens:löpningar:löpningars:löpningarna:löpningarnas
+CUSTOM: y y löpnings +löpnings
+896449r4<substantiv>löpnummer:löpnummer:löpnummers:löpnumret:löpnumrets:löpnummer:löpnummers:löpnumren:löpnumrens
+CUSTOM: y y löpnummer
+898821r3<substantiv>löpnummerserie::::::::
+COMPOUND(896449, 555464): löpnummer + serie
+916622r4<substantiv>löppass:löppass:löppass:löppasset:löppassets:löppass:löppass:löppassen:löppassens
+COMPOUND(560261, 552758): löpa + pass
+916603r4<substantiv>löprunda:löprunda:löprundas:löprundan:löprundans:löprundor:löprundors:löprundorna:löprundornas
+COMPOUND(560261, 641076): löpa + runda
+687954r3<substantiv>löpsedel:löpsedel:löpsedels:löpsedeln:löpsedelns:löpsedlar:löpsedlars:löpsedlarna:löpsedlarnas
+872406r3<substantiv>löpsnara:löpsnara:löpsnaras:löpsnaran:löpsnarans:löpsnaror:löpsnarors:löpsnarorna:löpsnarornas
+943721r4<substantiv>löpspår:löpspår:löpspårs:löpspåret:löpspårets:löpspår:löpspårs:löpspåren:löpspårens
+COMPOUND(560261, 552961): löpa + spår
+958756r4<adjektiv>löpstark:löpstark:löpstarkt:löpstarka:löpstarka:löpstarkare:löpstarkast:löpstarkaste:löpstarke::::::::
+COMPOUND(560261, 563133): löpa + stark
+894942r3<substantiv>löpsteg:löpsteg:löpstegs:löpsteget:löpstegets:löpsteg:löpstegs:löpstegen:löpstegens
+CUSTOM: y n
+872414r3<substantiv>löpsten:löpsten:löpstens:löpstenen:löpstenens:löpstenar:löpstenars:löpstenarna:löpstenarnas
+CUSTOM: y n
+982694r3<substantiv>löpstil:löpstil:löpstils:löpstilen:löpstilens:löpstilar:löpstilars:löpstilarna:löpstilarnas
+CUSTOM: y n
+916629r4<substantiv>löpteknik:löpteknik:löptekniks:löptekniken:löpteknikens:löptekniker:löpteknikers:löpteknikerna:löpteknikernas
+COMPOUND(560261, 603854): löpa + teknik
+775235r3<substantiv>löptext:löptext:löptexts:löptexten:löptextens::::
+CUSTOM: y y
+687955r3<substantiv>löptid:löptid:löptids:löptiden:löptidens:löptider:löptiders:löptiderna:löptidernas
+923212r4<substantiv>löptik:löptik:löptiks:löptiken:löptikens:löptikar:löptikars:löptikarna:löptikarnas
+COMPOUND(560261, 552004): löpa + tik
+CUSTOM: y n
+560598r11<verb>löpträna:löpträna:löptränade:löptränat:löptränar:löpträna::::::::löptränande:
+COMPOUND(560261, 547877): löpa + träna
+894934r3<substantiv>löpträning:löpträning:löptränings:löpträningen:löpträningens::::
+872422r3<substantiv>löpvagn:löpvagn:löpvagns:löpvagnen:löpvagnens:löpvagnar:löpvagnars:löpvagnarna:löpvagnarnas
+CUSTOM: y n
+872430r3<substantiv>löpvikt:löpvikt:löpvikts:löpvikten:löpviktens:löpvikter:löpvikters:löpvikterna:löpvikternas
+CUSTOM: y n
+551718r6<substantiv>lördag:lördag:lördags:lördagen:lördagens:lördagar:lördagars:lördagarna:lördagarnas
+CUSTOM: y y lördags
+620685r3<substantiv>lördagsgodis:lördagsgodis:lördagsgodis:lördagsgodiset:lördagsgodisets::::
+574494r3<adjektiv>lördagsledig:lördagsledig:lördagsledigt:lördagslediga:lördagslediga::::
+706286r4<substantiv>lördagsmorgon:lördagsmorgon:lördagsmorgons:lördagsmorgonen:lördagsmorgonens:lördagsmorgnar:lördagsmorgnars:lördagsmorgnarna:lördagsmorgnarnas
+COMPOUND(551718, 619001): lördag + morgon
+919928r4<substantiv>lördagsmys:lördagsmys:lördagsmys:lördagsmyset:lördagsmysets:!:!:!:!
+COMPOUND(551718, 628389): lördag + mys
+799863r3<adjektiv>lördagsstängd:lördagsstängd:lördagsstängt:lördagsstängda:lördagsstängda::::
+922060r4<substantiv>lördagsvimmel:lördagsvimmel:lördagsvimmels:lördagsvimlet:lördagsvimlets:!:!:!:!
+COMPOUND(551718, 556436): lördag + vimmel
+560265r16<adjektiv>lös:lös:löst:lösa:lösa:lösare:lösast:lösaste:löse::::::::
+CUSTOM: y y lös
+571160r6<verb>lösa:lösa:löste:löst:löser:lös:lösas:löstes:lösts:löses:löst:löst:lösta:lösande:
+571161r4<adjektiv>lösaktig:lösaktig:lösaktigt:lösaktiga:lösaktiga:lösaktigare:lösaktigast:lösaktigaste:lösaktige
+687961r3<substantiv>lösaktighet:lösaktighet:lösaktighets:lösaktigheten:lösaktighetens::::
+CUSTOM: y y lösaktighets
+755661r4<substantiv>lösare:lösare:lösares:lösaren:lösarens:lösare:lösares:lösarna:lösarnas
+569391r3<adjektiv>lösbar:lösbar:lösbart:lösbara:lösbara::::
+931716r3<substantiv>lösblad:lösblad:lösblads:lösbladet:lösbladets:lösblad:lösblads:lösbladen:lösbladens
+658179r3<substantiv>lösbröst:lösbröst:lösbrösts:lösbrösten:lösbröstens::::
+761208r3<substantiv>lösdrivare:lösdrivare:lösdrivares:lösdrivaren:lösdrivarens:lösdrivare:lösdrivares:lösdrivarna:lösdrivarnas
+687962r4<substantiv>lösdriveri:lösdriveri:lösdriveris:lösdriveriet:lösdriveriets::::
+CUSTOM: y y lösdriveri
+886672r4<substantiv>lösdriverilag:lösdriverilag:lösdriverilags:lösdriverilagen:lösdriverilagens:lösdriverilagar:lösdriverilagars:lösdriverilagarna:lösdriverilagarnas
+COMPOUND(687962, 551690): lösdriveri + lag
+729438r5<substantiv>lösegg:lösegg:löseggs:löseggen:löseggens:löseggar:löseggars:löseggarna:löseggarnas
+COMPOUND(560265, 551090): lös + egg
+CUSTOM: n n
+729447r4<substantiv>löseggsbildning:löseggsbildning:löseggsbildnings:löseggsbildningen:löseggsbildningens:löseggsbildningar:löseggsbildningars:löseggsbildningarna:löseggsbildningarnas
+COMPOUND(729438, 651396): lösegg + bildning
+618777r9<substantiv>lösen:lösen:lösens:lösen:lösens:!:!:!:!
+CUSTOM: y n y
+726259r4<substantiv>lösenbelopp:lösenbelopp:lösenbelopps:lösenbeloppet:lösenbeloppets:lösenbelopp:lösenbelopps:lösenbeloppen:lösenbeloppens
+COMPOUND(618777, 552231): lösen + belopp
+571163r3<substantiv>lösenord:lösenord:lösenords:lösenordet:lösenordets:lösenord:lösenords:lösenorden:lösenordens
+CUSTOM: y y lösenords
+872444r3<substantiv>löseskilling:löseskilling:löseskillings:löseskillingen:löseskillingens:löseskillingar:löseskillingars:löseskillingarna:löseskillingarnas
+737528r4<substantiv>lösesumma:lösesumma:lösesummas:lösesumman:lösesummans:lösesummor:lösesummors:lösesummorna:lösesummornas
+COMPOUND(618777, 595450): lösen + summa
+851317r4<verb>lösgiva:lösge, lösgiva:lösgav:lösgett, lösgivit:lösger, lösgiver:lösge, lösgiv:lösges, lösgivas:lösgavs:lösgetts, lösgivits:lösges, lösgives, lösgivs:lösgiven:lösgivet:lösgivna:lösgivande:
+COMPOUND(560265, 556584): lös + giva, ge
+CUSTOM: y n
+799866r3<adjektiv>lösgjord:lösgjord:lösgjort:lösgjorda:lösgjorda::::
+903773r4<substantiv>lösgodis:lösgodis:lösgodis:lösgodiset:lösgodisets:!:!:!:!
+COMPOUND(560265, 620683): lös + godis
+851333r3<substantiv>lösgom:lösgom:lösgoms:lösgommen:lösgommens:lösgommar:lösgommars:lösgommarna:lösgommarnas
+687966r5<verb>lösgöra:lösgöra:lösgjorde:lösgjort:lösgör:lösgör:lösgöras:lösgjordes:lösgjorts:lösgörs, lösgöres:lösgjord:lösgjort:lösgjorda::
+COMPOUND(560265, 555241): lös + göra
+819217r3<substantiv>löshet:löshet:löshets:lösheten:löshetens::::
+929944r4<substantiv>löshår:löshår:löshårs:löshåret:löshårets:löshår:löshårs:löshåren:löshårens
+COMPOUND(560265, 552487): lös + hår
+650594r4<verb>löska:löska:löskade:löskat:löskar:löska:löskas:löskades:löskats:löskas:löskad:löskat:löskade:löskande:
+CUSTOM: n n y
+757964r3<substantiv>löskekarl:löskekarl:löskekarls:löskekarlen:löskekarlens:löskekarlar:löskekarlars:löskekarlarna:löskekarlarnas
+846405r4<verb>löskoka:löskoka:löskokade, löskokte:löskokat, löskokt:löskokar:löskoka:löskokas:löskokades, löskoktes:löskokats, löskokts:löskokas:löskokt, löskokad:löskokt, löskokat:löskokta, löskokade:löskokande:
+COMPOUND(560265, 547159): lös + koka
+571164r3<adjektiv>löskokt:löskokt:löskokt:löskokta:löskokta::::
+793098r3<adjektiv>löskopplad:löskopplad:löskopplat:löskopplade:löskopplade:!:!:!:
+574497r3<adjektiv>löskornig:löskornig:löskornigt:löskorniga:löskorniga::::
+566638r4<adjektiv>löslig:löslig:lösligt:lösliga:lösliga:lösligare:lösligast:lösligaste:
+872452r3<substantiv>löslighet:löslighet:löslighets:lösligheten:löslighetens::::
+872456r3<adjektiv>lösmynt:lösmynt:lösmynt:lösmynta:lösmynta::::lösmynte
+916644r3<substantiv>lösmynthet:lösmynthet:lösmynthets:lösmyntheten:lösmynthetens::::
+597256r16<substantiv>lösning:lösning:lösnings:lösningen:lösningens:lösningar:lösningars:lösningarna:lösningarnas
+CUSTOM: y y lösnings +lösnings
+687975r4<substantiv>lösningsförslag:lösningsförslag:lösningsförslags:lösningsförslaget:lösningsförslagets:lösningsförslag:lösningsförslags:lösningsförslagen:lösningsförslagens
+COMPOUND(597256, 552414): lösning + förslag
+875474r4<substantiv>lösningshärdning:lösningshärdning:lösningshärdnings:lösningshärdningen:lösningshärdningens:lösningshärdningar:lösningshärdningars:lösningshärdningarna:lösningshärdningarnas
+COMPOUND(597256, 684216): lösning + härdning
+574500r3<adjektiv>lösningsmedelsbeständig:lösningsmedelsbeständig:lösningsmedelsbeständigt:lösningsmedelsbeständiga:lösningsmedelsbeständiga::::
+563986r3<adjektiv>lösningsmedelsfri:lösningsmedelsfri:lösningsmedelsfritt:lösningsmedelsfria:lösningsmedelsfria::::
+681408r4<substantiv>lösningsmetod:lösningsmetod:lösningsmetods:lösningsmetoden:lösningsmetodens:lösningsmetoder:lösningsmetoders:lösningsmetoderna:lösningsmetodernas
+COMPOUND(597256, 550036): lösning + metod
+650598r7<substantiv>lösnummer:lösnummer:lösnummers:lösnumret:lösnumrets:lösnummer:lösnummers:lösnumren:lösnumrens
+COMPOUND(560265, 621605): lös + nummer
+CUSTOM: y y lösnummer
+931723r4<substantiv>lösnäsa:lösnäsa:lösnäsas:lösnäsan:lösnäsans:lösnäsor:lösnäsors:lösnäsorna:lösnäsornas
+COMPOUND(560265, 555879): lös + näsa
+846417r4<verb>lösriva:lösriva:lösrev:lösrivit:lösriver:lösriv:lösrivas:lösrevs:lösrivits:lösrivs:lösriven:lösrivet:lösrivna::
+COMPOUND(560265, 585408): lös + riva
+687981r3<adjektiv>lösryckt:lösryckt:lösryckt:lösryckta:lösryckta:!:!:!:
+872459r3<substantiv>lössjord:lössjord:lössjords:lössjorden:lössjordens:lössjordar:lössjordars:lössjordarna:lössjordarnas
+793101r3<adjektiv>lösskruvad:lösskruvad:lösskruvat:lösskruvade:lösskruvade:!:!:!:
+824149r3<substantiv>lösskägg:lösskägg:lösskäggs:lösskägget:lösskäggets:lösskägg:lösskäggs:lösskäggen:lösskäggens
+770842r3<adjektiv>lössläppt:lössläppt:lössläppt:lössläppta:lössläppta::::lössläppte
+770838r3<substantiv>lössläppthet:lössläppthet:lössläppthets:lössläpptheten:lössläppthetens::::
+929950r4<substantiv>lössnö:lössnö:lössnös:lössnön:lössnöns::::
+COMPOUND(560265, 619711): lös + snö
+569394r3<adjektiv>löstagbar:löstagbar:löstagbart:löstagbara:löstagbara::::
+764421r4<substantiv>lösvikt:lösvikt:::::::
+CUSTOM: y y lösvikts
+764420r3<substantiv>lösviktsförsäljning::::::::
+COMPOUND(764421, 691095): lösvikt + försäljning
+612699r4<substantiv>lösöre:lösöre:lösöres:lösöret:lösörets:lösören:lösörens:lösörena:lösörenas
+CUSTOM: y y lösöre
+769343r4<substantiv>lösöreköp:lösöreköp:lösöreköps:lösöreköpet:lösöreköpets:lösöreköp:lösöreköps:lösöreköpen:lösöreköpens
+COMPOUND(612699, 552622): lösöre + köp
+560268r3<substantiv>löt:löt:löts:löten:lötens:lötar:lötars:lötarna:lötarnas
+CUSTOM: n n y
+552683r11<substantiv>löv:löv:lövs:lövet:lövets:löv:lövs:löven:lövens
+CUSTOM: y y löv
+547322r5<verb>löva:löva:lövade:lövat:lövar:löva:lövas:lövades:lövats:lövas::::lövande:
+CUSTOM: y n
+793104r3<adjektiv>lövad:lövad:lövat:lövade:lövade:!:!:!:
+931731r4<substantiv>lövbiff:lövbiff:lövbiffs:lövbiffen:lövbiffens:lövbiffar:lövbiffars:lövbiffarna:lövbiffarnas
+COMPOUND(552683, 598128): löv + biff
+687982r3<substantiv>lövgroda:lövgroda:lövgrodas:lövgrodan:lövgrodans:lövgrodor:lövgrodors:lövgrodorna:lövgrodornas
+687987r4<substantiv>lövhyddohögtid:lövhyddohögtid:lövhyddohögtids:lövhyddohögtiden:lövhyddohögtidens:lövhyddohögtider:lövhyddohögtiders:lövhyddohögtiderna:lövhyddohögtidernas
+801516r3<adjektiv>lövklädd:lövklädd:lövklätt:lövklädda:lövklädda::::
+681413r4<substantiv>lövkvist:lövkvist:lövkvists:lövkvisten:lövkvistens:lövkvistar:lövkvistars:lövkvistarna:lövkvistarnas
+COMPOUND(552683, 561573): löv + kvist
+CUSTOM: y n n
+565053r3<adjektiv>lövlös:lövlös:lövlöst:lövlösa:lövlösa::::
+687989r3<adjektiv>lövrik:lövrik:lövrikt:lövrika:lövrika::::
+599428r3<substantiv>lövsal:lövsal:lövsals:lövsalen:lövsalens:lövsalar:lövsalars:lövsalarna:lövsalarnas
+681415r4<substantiv>lövskog:lövskog:lövskogs:lövskogen:lövskogens:lövskogar:lövskogars:lövskogarna:lövskogarnas
+COMPOUND(552683, 551845): löv + skog
+CUSTOM: y y lövskogs
+851341r5<substantiv>lövsly:lövsly:lövslys:lövslyet:lövslyets:lövslyn:lövslyns:lövslyna:lövslynas
+COMPOUND(552683, 629336): löv + sly
+687990r3<substantiv>lövsprickning:lövsprickning:lövspricknings:lövsprickningen:lövsprickningens::::
+CUSTOM: y y lövspricknings
+851345r3<substantiv>lövsåg:lövsåg:lövsågs:lövsågen:lövsågens:lövsågar:lövsågars:lövsågarna:lövsågarnas
+607652r4<substantiv>lövträd:lövträd:lövträds:lövträdet:lövträdets:lövträd:lövträds:lövträden:lövträdens
+CUSTOM: y y lövträds
+890919r3<substantiv>lövträdspollen::::::::
+COMPOUND(607652, 707664): lövträd + pollen
+802234r3<adjektiv>lövtunn:lövtunn:lövtunt:lövtunna:lövtunna::::
+945984r4<substantiv>lövtäkt:lövtäkt:lövtäkts:lövtäkten:lövtäktens:lövtäkter:lövtäkters:lövtäkterna:lövtäkternas
+COMPOUND(552683, 550725): löv + täkt
+931739r4<substantiv>lövverk:lövverk:lövverks:lövverket:lövverkets:lövverk:lövverks:lövverken:lövverkens
+COMPOUND(552683, 553117): löv + verk
+761215r3<substantiv>löväng:löväng:lövängs:lövängen:lövängens:lövängar:lövängars:lövängarna:lövängarnas
+722241r3<egennamn>Lööw:Lööw:Lööws
+892389r3<egennamn>Maastricht:Maastricht:Maastrichts
+CUSTOM: y n Maastricht
+712420r3<egennamn>Maastrichtfördraget:Maastrichtfördraget:Maastrichtfördragets
+CUSTOM: n n 
+894542r3<egennamn>Mac:Mac:
+982702r3<substantiv>macchia:macchia:macchias:macchian:macchians::::
+590175r3<verb>macerera:macerera:macererade:macererat:macererar:macerera:::::::::
+650606r3<substantiv>mach:::::mach:::
+CUSTOM: y n
+728722r4<substantiv>machete:machete:machetes:macheten:machetens:macheter:macheters:macheterna:macheternas
+DEFINITION 1: En stor kniv som framför allt används för att hugga igenom kraftig vegetation.
+581758r4<adjektiv>machiavellisk:machiavellisk:machiavelliskt:machiavelliska:machiavelliska::::machiavelliske
+872473r3<substantiv>machiavellism:machiavellism:machiavellisms:machiavellismen:machiavellismens::::
+581761r4<adjektiv>machiavellistisk:machiavellistisk:machiavellistiskt:machiavellistiska:machiavellistiska::::machiavellistiske
+761984r4<substantiv>macho:macho:::::::
+CUSTOM: y n macho
+916649r3<substantiv>machoattityd:machoattityd:machoattityds:machoattityden:machoattitydens:machoattityder:machoattityders:machoattityderna:machoattitydernas
+916659r3<substantiv>machokultur:machokultur:machokulturs:machokulturen:machokulturens:machokulturer:machokulturers:machokulturerna:machokulturernas
+916669r4<substantiv>machoman:machoman:machomans:machomannen:machomannens:machomän:machomäns:machomännen:machomännens
+COMPOUND(761984, 557796): macho + man
+982706r3<substantiv>machtal:machtal:machtals:machtalet:machtalets::::
+CUSTOM: y n
+598542r13<substantiv>mack:mack:macks:macken:mackens:mackar:mackars:mackarna:mackarnas
+CUSTOM: y n
+650607r4<substantiv>macka:macka:mackas:mackan:mackans:mackor:mackors:mackorna:mackornas
+926286r5<egennamn>Mackabeerboken:Mackabeerboken:Mackabeerbokens
+581764r3<adjektiv>mackabeisk:mackabeisk:mackabeiskt:mackabeiska:mackabeiska::::
+757966r3<substantiv>mackapär:mackapär:mackapärs:mackapären:mackapärens:mackapärer:mackapärers:mackapärerna:mackapärernas
+650615r3<substantiv>mackel:mackel:mackels:macklet:macklets::::
+650619r3<verb>mackla:mackla:macklade:macklat:macklar:mackla:::::::::
+916679r3<substantiv>mackpersonal:mackpersonal:mackpersonals:mackpersonalen:mackpersonalens::::
+916685r4<substantiv>mackägare:mackägare:mackägares:mackägaren:mackägarens:mackägare:mackägares:mackägarna:mackägarnas
+COMPOUND(598542, 615532): mack + ägare
+560319r4<substantiv>mad:mad:mads:maden:madens:mader:maders:maderna:madernas
+DEFINITION 1: Vattendränkt ängsmark [ i anslutning till vattendrag ]
+872478r3<substantiv>madagask:madagask:madagasks:madagasken:madagaskens:madagasker:madagaskers:madagaskerna:madagaskernas
+554075r3<egennamn>Madagaskar:Madagaskar:Madagaskars
+CUSTOM: y n Madagaskar
+581767r4<adjektiv>madagaskisk:madagaskisk:madagaskiskt:madagaskiska:madagaskiska:!:!:!:madagaskiske
+872487r3<substantiv>madagaskiska:madagaskiska:madagaskiskas:madagaskiskan:madagaskiskans:madagaskiskor:madagaskiskors:madagaskiskorna:madagaskiskornas
+560328r3<substantiv>madam:madam:madams:madammen:madammens:madammer:madammers:madammerna:madammernas
+650623r3<substantiv>madeira:madeira:madeiras:madeiran:madeirans::::
+553804r3<egennamn>Madeleine:Madeleine:Madeleines
+982710r3<substantiv>mademoiselle:mademoiselle:mademoiselles:mademoisellen:mademoisellens:mademoiseller:mademoisellers:mademoisellerna:mademoisellernas
+990023r3<egennamn>Madicken:Madicken:Madickens
+560330r3<substantiv>madonna:madonna:madonnas:madonnan:madonnans:madonnor:madonnors:madonnorna:madonnornas
+982718r3<substantiv>madonnabild:madonnabild:madonnabilds:madonnabilden:madonnabildens:madonnabilder:madonnabilders:madonnabilderna:madonnabildernas
+560332r3<substantiv>madra:madra:madras:madran:madrans:madror:madrors:madrorna:madrornas
+CUSTOM: n n y
+549978r3<substantiv>madrass:madrass:madrass:madrassen:madrassens:madrasser:madrassers:madrasserna:madrassernas
+587163r5<verb>madrassera:madrassera:madrasserade:madrasserat:madrasserar:madrassera:madrasseras:madrasserades:madrasserats:madrasseras:madrasserad:madrasserat:madrasserade:madrasserande:
+872496r3<substantiv>madrassnål:madrassnål:madrassnåls:madrassnålen:madrassnålens:madrassnålar:madrassnålars:madrassnålarna:madrassnålarnas
+554890r3<egennamn>Madrid:Madrid:Madrids
+CUSTOM: y n Madrid
+560339r3<substantiv>madrigal:madrigal:madrigals:madrigalen:madrigalens:madrigaler:madrigalers:madrigalerna:madrigalernas
+560341r5<substantiv>maduska, madusa:madusa, maduska:madusas, maduskas:madusan, maduskan:madusans, maduskans:madusor, maduskor:madusors, maduskors:madusorna, maduskorna:madusornas, maduskornas
+CUSTOM: n n n
+650627r3<adverb>maestoso:maestoso
+560356r3<substantiv>maestro:maestro:maestros:maestron:maestrons::::
+560357r4<substantiv>maffia:maffia:maffias:maffian:maffians:maffior:maffiors:maffiorna:maffiornas
+CUSTOM: y y maffia
+922066r4<substantiv>maffiaklan:maffiaklan:maffiaklans:maffiaklanen:maffiaklanens:maffiaklaner:maffiaklaners:maffiaklanerna:maffiaklanernas
+COMPOUND(560357, 549526): maffia + klan
+829760r2<substantiv>maffialedare::::::::
+560362r4<adjektiv>maffig:maffig:maffigt:maffiga:maffiga:maffigare:maffigast:maffigaste:maffige
+650628r3<substantiv>mafioso:mafioso:mafiosos:mafioson:mafiosons:mafiosi:mafiosis::
+552685r7<substantiv>magasin:magasin:magasins:magasinet:magasinets:magasin:magasins:magasinen:magasinens
+DEFINITION 1: tidskrift
+DEFINITION 2: lager
+CUSTOM: y y magasins
+560365r5<verb>magasinera:magasinera:magasinerade:magasinerat:magasinerar:magasinera:magasineras:magasinerades:magasinerats:magasineras:magasinerad:magasinerat:magasinerade:magasinerande:
+569397r3<adjektiv>magasinerbar:magasinerbar:magasinerbart:magasinerbara:magasinerbara::::
+941108r3<substantiv>magasinering:magasinering:magasinerings:magasineringen:magasineringens:magasineringar:magasineringars:magasineringarna:magasineringarnas
+793105r3<adjektiv>magasinmatad:magasinmatad:magasinmatat:magasinmatade:magasinmatade:!:!:!:
+761223r3<substantiv>magborstare:magborstare:magborstares:magborstaren:magborstarens:magborstare:magborstares:magborstarna:magborstarnas
+990027r3<egennamn>Magda:Magda:Magdas
+553806r3<egennamn>Magdalena:Magdalena:Magdalenas
+662988r6<substantiv>magdans:magdans:magdans:magdansen:magdansens:magdanser:magdansers:magdanserna:magdansernas
+COMPOUND(560372, 548569): mage + dans
+650634r4<substantiv>magdansös:magdansös:magdansös:magdansösen:magdansösens:magdansöser:magdansösers:magdansöserna:magdansösernas
+COMPOUND(560372, 548571): mage + dansös
+560372r19<substantiv>mage:mage:mages:magen:magens:magar:magars:magarna:magarnas
+BASEWORDS: mag
+CUSTOM: y y mag
+872891r3<egennamn>Magellan:Magellan:Magellans
+650642r3<substantiv>magenta:magenta:::::::
+560374r3<adjektiv>mager:mager:magert:magra:magra:magrare:magrast:magraste:magre
+799867r4<adjektiv>magerlagd:magerlagd:magerlagt:magerlagda:magerlagda::::magerlagde
+990175r3<egennamn>Maggio:Maggio:Maggios
+560376r4<substantiv>maggot:maggot:maggots:maggoten:maggotens:maggotar:maggotars:maggotarna:maggotarnas
+929053r4<substantiv>maggrop:maggrop:maggrops:maggropen:maggropens:maggropar:maggropars:maggroparna:maggroparnas
+COMPOUND(560372, 551317): mage + grop
+560377r3<substantiv>magi:magi:magis:magin:magins::::
+560379r3<substantiv>magik:magik:magiks:magiken:magikens::::
+560383r3<substantiv>magiker:magiker:magikers:magikern:magikerns:magiker:magikers:magikerna:magikernas
+560384r4<adjektiv>magisk:magisk:magiskt:magiska:magiska::::magiske
+560385r3<substantiv>magister:magister:magisters:magistern:magisterns:magistrar:magistrars:magistrarna:magistrarnas
+CUSTOM: y y magister
+872511r3<adjektiv>magistral:magistral:magistralt:magistrala:magistrala::::
+560386r3<substantiv>magistrat:magistrat:magistrats:magistraten:magistratens:magistrater:magistraters:magistraterna:magistraternas
+621092r3<substantiv>magkatarr:magkatarr:magkatarrs:magkatarren:magkatarrens:magkatarrer:magkatarrers:magkatarrerna:magkatarrernas
+621100r3<substantiv>magknip:magknip:magknips:magknipet:magknipets::::
+937299r3<substantiv>magkänsla:magkänsla:magkänslas:magkänslan:magkänslans:magkänslor:magkänslors:magkänslorna:magkänslornas
+560394r3<substantiv>magma:magma:magmas:magman:magmans:magmor:magmors:magmorna:magmornas
+581769r3<adjektiv>magmatisk:magmatisk:magmatiskt:magmatiska:magmatiska::::
+621104r3<substantiv>magmun:magmun:magmuns:magmunnen:magmunnens:magmunnar:magmunnars:magmunnarna:magmunnarnas
+560402r3<substantiv>magnat:magnat:magnats:magnaten:magnatens:magnater:magnaters:magnaterna:magnaternas
+560410r3<substantiv>magnecyl:magnecyl:magnecyls:magnecylen:magnecylens::::
+624878r5<substantiv>magnesium:magnesium:magnesiums:magnesiumet:magnesiumets:!:!:!:!
+CUSTOM: y y magnesium
+973690r4<substantiv>magnesiumcitrat:magnesiumcitrat:magnesiumcitrats:magnesiumcitratet:magnesiumcitratets::::
+COMPOUND(624878, 973681): magnesium + citrat
+574503r3<adjektiv>magnesiumhaltig:magnesiumhaltig:magnesiumhaltigt:magnesiumhaltiga:magnesiumhaltiga::::
+581772r3<adjektiv>magnesiumorganisk:magnesiumorganisk:magnesiumorganiskt:magnesiumorganiska:magnesiumorganiska::::
+757979r3<substantiv>magnesiumsulfat::::::::
+COMPOUND(624878, 757980): magnesium + sulfat
+549979r5<substantiv>magnet:magnet:magnets:magneten:magnetens:magneter:magneters:magneterna:magneternas
+CUSTOM: y y magnet
+609014r3<substantiv>magnetband:magnetband:magnetbands:magnetbandet:magnetbandets:magnetband:magnetbands:magnetbanden:magnetbandens
+581775r3<adjektiv>magnetelektrisk:magnetelektrisk:magnetelektriskt:magnetelektriska:magnetelektriska::::
+757988r4<substantiv>magnetfält:magnetfält:magnetfälts:magnetfältet:magnetfältets:magnetfält:magnetfälts:magnetfälten:magnetfältens
+COMPOUND(549979, 552397): magnet + fält
+547323r4<verb>magnetisera:magnetisera:magnetiserade:magnetiserat:magnetiserar:magnetisera:magnetiseras:magnetiserades:magnetiserats:magnetiseras:magnetiserad:magnetiserat:magnetiserade:magnetiserande:
+569400r3<adjektiv>magnetiserbar:magnetiserbar:magnetiserbart:magnetiserbara:magnetiserbara::::
+636923r3<substantiv>magnetisering:magnetisering:magnetiserings:magnetiseringen:magnetiseringens:magnetiseringar:magnetiseringars:magnetiseringarna:magnetiseringarnas
+CUSTOM: y y magnetiserings
+560414r3<adjektiv>magnetisk:magnetisk:magnetiskt:magnetiska:magnetiska::::
+558187r3<substantiv>magnetism:magnetism:magnetisms:magnetismen:magnetismens:!:!:!:!
+560415r3<substantiv>magnetisör:magnetisör:magnetisörs:magnetisören:magnetisörens:magnetisörer:magnetisörers:magnetisörerna:magnetisörernas
+982726r3<substantiv>magnetit:magnetit:magnetits:magnetiten:magnetitens::::
+CUSTOM: y n
+566641r3<adjektiv>magnetitslig:magnetitslig:magnetitsligt:magnetitsliga:magnetitsliga::::
+769349r3<substantiv>magnetmina:magnetmina:magnetminas:magnetminan:magnetminans:magnetminor:magnetminors:magnetminorna:magnetminornas
+757995r4<substantiv>magnetnål:magnetnål:magnetnåls:magnetnålen:magnetnålens:magnetnålar:magnetnålars:magnetnålarna:magnetnålarnas
+COMPOUND(549979, 551740): magnet + nål
+602731r3<substantiv>magnetofon:magnetofon:magnetofons:magnetofonen:magnetofonens:magnetofoner:magnetofoners:magnetofonerna:magnetofonernas
+581778r3<adjektiv>magnetohydrodynamisk:magnetohydrodynamisk:magnetohydrodynamiskt:magnetohydrodynamiska:magnetohydrodynamiska::::
+581781r3<adjektiv>magnetojonisk:magnetojonisk:magnetojoniskt:magnetojoniska:magnetojoniska::::
+581784r3<adjektiv>magnetomekanisk:magnetomekanisk:magnetomekaniskt:magnetomekaniska:magnetomekaniska::::
+982730r3<substantiv>magnetometer:magnetometer:magnetometers:magnetometern:magnetometerns:magnetometrar:magnetometrars:magnetometrarna:magnetometrarnas
+581787r3<adjektiv>magnetomotorisk:magnetomotorisk:magnetomotoriskt:magnetomotoriska:magnetomotoriska::::
+581790r3<adjektiv>magnetooptisk:magnetooptisk:magnetooptiskt:magnetooptiska:magnetooptiska::::
+798366r3<adjektiv>magnetoresistiv:magnetoresistiv:magnetoresistivt:magnetoresistiva:magnetoresistiva::::
+636959r4<substantiv>magnetosfär:magnetosfär:magnetosfärs:magnetosfären:magnetosfärens:magnetosfärer:magnetosfärers:magnetosfärerna:magnetosfärernas
+798369r3<adjektiv>magnetostriktiv:magnetostriktiv:magnetostriktivt:magnetostriktiva:magnetostriktiva::::
+581793r3<adjektiv>magnetotellurisk:magnetotellurisk:magnetotelluriskt:magnetotelluriska:magnetotelluriska::::
+982738r3<substantiv>magnetron:magnetron:magnetrons:magnetronen:magnetronens:magnetroner:magnetroners:magnetronerna:magnetronernas
+CUSTOM: y n
+799870r3<adjektiv>magnetstyrd:magnetstyrd:magnetstyrt:magnetstyrda:magnetstyrda::::
+982746r3<substantiv>magnificens:magnificens:magnificens:magnificensen:magnificensens::::
+CUSTOM: y n
+560423r5<adjektiv>magnifik:magnifik:magnifikt:magnifika:magnifika:magnifikare:magnifikast:magnifikaste:magnifike
+549981r3<substantiv>magnitud:magnitud:magnituds:magnituden:magnitudens:magnituder:magnituders:magnituderna:magnitudernas
+680921r4<substantiv>magnolia:magnolia:magnolias:magnolian:magnolians:magnolior:magnoliors:magnoliorna:magnoliornas
+DEFINITION 1: En blommande buske eller träd
+CUSTOM: y y magnolia
+872514r3<substantiv>magnumbutelj:magnumbutelj:magnumbuteljs:magnumbuteljen:magnumbuteljens:magnumbuteljer:magnumbuteljers:magnumbuteljerna:magnumbuteljernas
+955305r3<substantiv>magnumflaska:magnumflaska:magnumflaskas:magnumflaskan:magnumflaskans:magnumflaskor:magnumflaskors:magnumflaskorna:magnumflaskornas
+554694r3<egennamn>Magnus:Magnus:Magnus
+757253r3<egennamn>Magnusson:Magnusson:Magnussons
+938147r3<substantiv>magont:magont:::::::
+CUSTOM: y n
+952160r4<substantiv>magpirr:magpirr:magpirrs:magpirret:magpirrets::::
+COMPOUND(560372, 938353): mage + pirr
+CUSTOM: y n
+934383r4<substantiv>magplask:magplask:magplasks:magplasket:magplaskets:magplask:magplasks:magplasken:magplaskens
+COMPOUND(560372, 625980): mage + plask
+681416r4<substantiv>magpumpning:magpumpning:magpumpnings:magpumpningen:magpumpningens:magpumpningar:magpumpningars:magpumpningarna:magpumpningarnas
+COMPOUND(560372, 681417): mage + pumpning
+CUSTOM: y y magpumpnings
+585588r4<verb>magra:magra:magrade:magrat:magrar:magra::::::::magrande:
+CUSTOM: y n
+931745r4<substantiv>magsaft:magsaft:magsafts:magsaften:magsaftens:magsafter:magsafters:magsafterna:magsafternas
+COMPOUND(560372, 550439): mage + saft
+929063r4<adjektiv>magsjuk:magsjuk:magsjukt:magsjuka:magsjuka::::magsjuke::::::::
+COMPOUND(560372, 563030): mage + sjuk
+758005r4<substantiv>magsjuka:magsjuka:magsjukas:magsjukan:magsjukans:magsjukor:magsjukors:magsjukorna:magsjukornas
+COMPOUND(560372, 758014): mage + sjuka
+CUSTOM: y y magsjuke
+681426r4<substantiv>magsmärta:magsmärta:magsmärtas:magsmärtan:magsmärtans:magsmärtor:magsmärtors:magsmärtorna:magsmärtornas
+COMPOUND(560372, 595275): mage + smärta
+920176r4<substantiv>magsond:magsond:magsonds:magsonden:magsondens:magsonder:magsonders:magsonderna:magsondernas
+COMPOUND(560372, 628821): mage + sond
+687991r3<adjektiv>magstark:magstark:magstarkt:magstarka:magstarka::::
+846428r4<adjektiv>magsur:magsur:magsurt:magsura:magsura::::magsure
+931753r4<substantiv>magsyra:magsyra:magsyras:magsyran:magsyrans:magsyror:magsyrors:magsyrorna:magsyrornas
+COMPOUND(560372, 624847): mage + syra
+681428r4<substantiv>magsår:magsår:magsårs:magsåret:magsårets:magsår:magsårs:magsåren:magsårens
+COMPOUND(560372, 553023): mage + sår
+CUSTOM: y y magsårs
+931761r4<substantiv>magsäck:magsäck:magsäcks:magsäcken:magsäckens:magsäckar:magsäckars:magsäckarna:magsäckarnas
+COMPOUND(560372, 551984): mage + säck
+687993r3<substantiv>magtrakten:::magtrakten:::::
+581796r3<adjektiv>magyarisk:magyarisk:magyariskt:magyariska:magyariska::::
+699512r3<substantiv>maharadja:maharadja:maharadjas:maharadjan:maharadjans:maharadjor:maharadjors:maharadjorna:maharadjornas
+982749r3<substantiv>maharaja:maharaja:maharajas:maharajan:maharajans:maharajor:maharajors:maharajorna:maharajornas
+699520r3<substantiv>mahatma:mahatma:mahatmas:mahatman:mahatmans:mahatmor:mahatmors:mahatmorna:mahatmornas
+699528r4<substantiv>mahjong:mahjong:mahjongs:mahjongen:mahjongens:!:!:!:!
+CUSTOM: y y mahjong
+699532r4<substantiv>mahjongbricka:mahjongbricka:mahjongbrickas:mahjongbrickan:mahjongbrickans:mahjongbrickor:mahjongbrickors:mahjongbrickorna:mahjongbrickornas
+COMPOUND(699528, 633105): mahjong + bricka
+699540r3<egennamn>Mahler:Mahler:Mahlers
+CUSTOM: y n Mahler
+874439r3<egennamn>Mahmoud:Mahmoud:Mahmouds
+621112r5<substantiv>mahogny:mahogny:mahognys:mahognyt, mahognyn:mahognyts, mahognyns::::
+CUSTOM: y y mahogny
+699543r4<adjektiv>mahognyfärgad:mahognyfärgad:mahognyfärgat:mahognyfärgade:mahognyfärgade:!:!:!:
+COMPOUND(621112, 562214): mahogny + färgad
+768652r3<adverb>mainstream:mainstream
+559257r11<substantiv>maj:maj:majs:!:!:!:!:!:!
+CUSTOM: y n maj
+553808r3<egennamn>Maj:Maj:Majs
+553810r3<egennamn>Maja:Maja:Majas
+699546r3<substantiv>majbrasa:majbrasa:majbrasas:majbrasan:majbrasans:majbrasor:majbrasors:majbrasorna:majbrasornas
+699554r4<substantiv>majbål:majbål:majbåls:majbålet:majbålets:majbål:majbåls:majbålen:majbålens
+COMPOUND(559257, 552292): maj + bål
+929955r4<substantiv>majdag:majdag:majdags:majdagen:majdagens:majdagar:majdagars:majdagarna:majdagarnas
+COMPOUND(559257, 551009): maj + dag
+699560r4<substantiv>majeld:majeld:majelds:majelden:majeldens:majeldar:majeldars:majeldarna:majeldarnas
+COMPOUND(559257, 551092): maj + eld
+CUSTOM: y n n
+560424r3<substantiv>majestät:majestät:majestäts:majestätet:majestätets::::
+CUSTOM: y y majestäts
+581798r4<adjektiv>majestätisk:majestätisk:majestätiskt:majestätiska:majestätiska::::majestätiske
+952166r3<egennamn>Majgull:Majgull:Majgulls
+553812r3<egennamn>Majken:Majken:Majkens
+959809r4<substantiv>majkväll:majkväll:majkvälls:majkvällen:majkvällens:majkvällar:majkvällars:majkvällarna:majkvällarnas
+COMPOUND(559257, 551653): maj + kväll
+772847r4<substantiv>majmorgon:majmorgon:majmorgons:majmorgonen:majmorgonens:majmorgnar:majmorgnars:majmorgnarna:majmorgnarnas
+COMPOUND(559257, 619001): maj + morgon
+560426r3<substantiv>majolika:majolika:majolikas:majolikan:majolikans::::
+560430r4<substantiv>majonnäs:majonnäs:majonnäs:majonnäsen:majonnäsens:majonnäser:majonnäsers:majonnäserna:majonnäsernas
+CUSTOM: y y majonnäs
+758021r4<substantiv>majonnässås:majonnässås:majonnässås:majonnässåsen:majonnässåsens:majonnässåser:majonnässåsers:majonnässåserna:majonnässåsernas
+COMPOUND(560430, 556707): majonnäs + sås
+560437r3<substantiv>major:major:majors:majoren:majorens:majorer:majorers:majorerna:majorernas
+CUSTOM: y y majors
+549983r5<substantiv>majoritet:majoritet:majoritets:majoriteten:majoritetens:majoriteter:majoriteters:majoriteterna:majoriteternas
+CUSTOM: y y majoritets
+607658r4<substantiv>majoritetsbeslut:majoritetsbeslut:majoritetsbesluts:majoritetsbeslutet:majoritetsbeslutets:majoritetsbeslut:majoritetsbesluts:majoritetsbesluten:majoritetsbeslutens
+COMPOUND(549983, 552238): majoritet + beslut
+712536r4<substantiv>majoritetsstyre:majoritetsstyre:majoritetsstyres:majoritetsstyret:majoritetsstyrets::::
+COMPOUND(549983, 626589): majoritet + styre
+699568r3<substantiv>majorska:majorska:majorskas:majorskan:majorskans:majorskor:majorskors:majorskorna:majorskornas
+600219r3<substantiv>majranunkel:majranunkel:majranunkels:majranunkeln:majranunkelns:majranunklar:majranunklars:majranunklarna:majranunklarnas
+699576r3<substantiv>majrova:majrova:majrovas:majrovan:majrovans:majrovor:majrovors:majrovorna:majrovornas
+560438r8<substantiv>majs:majs:majs:majsen:majsens::::
+CUSTOM: y y majs
+699584r4<substantiv>majsflinga:majsflinga:majsflingas:majsflingan:majsflingans:majsflingor:majsflingors:majsflingorna:majsflingornas
+COMPOUND(560438, 561455): majs + flinga
+699592r4<substantiv>majsfält:majsfält:majsfälts:majsfältet:majsfältets:majsfält:majsfälts:majsfälten:majsfältens
+COMPOUND(560438, 552397): majs + fält
+952170r4<substantiv>majshalm:majshalm:majshalms:majshalmen:majshalmens:!:!:!:!
+COMPOUND(560438, 628137): majs + halm
+681429r4<substantiv>majskolv:majskolv:majskolvs:majskolven:majskolvens:majskolvar:majskolvars:majskolvarna:majskolvarnas
+COMPOUND(560438, 551574): majs + kolv
+699598r4<substantiv>majsolja:majsolja:majsoljas:majsoljan:majsoljans:majsoljor:majsoljors:majsoljorna:majsoljornas
+COMPOUND(560438, 623123): majs + olja
+855209r3<egennamn>Majstorovic:Majstorovic:Majstorovics
+699606r4<substantiv>majstång:majstång:majstångs:majstången:majstångens:majstänger:majstängers:majstängerna:majstängernas
+COMPOUND(559257, 555363): maj + stång
+657917r3<substantiv>majuskel:majuskel:majuskels:majuskeln:majuskelns:majusklar:majusklars:majusklarna:majusklarnas
+982758r3<substantiv>majviva:majviva:majvivas:majvivan:majvivans:majvivor:majvivors:majvivorna:majvivornas
+CUSTOM: y n
+971893r3<egennamn>Majvor:Majvor:Majvors
+560439r4<substantiv>mak:mak:!:!:!:!:!:!:!
+DEFINITION 1: Som i uttrycket "i sakta mak"
+547324r3<verb>maka:maka:makade:makat:makar:maka:::::::::
+560451r3<substantiv>maka:maka:makas:makan:makans:makor:makors:makorna:makornas
+560440r4<adjektiv>makaber:makaber:makabert:makabra:makabra:makabrare:makabrast:makabraste:makabre
+560441r4<substantiv>makadam:makadam:makadams:makadamen:makadamens::::
+CUSTOM: y y makadam
+699614r4<substantiv>makadambeläggning:makadambeläggning:makadambeläggnings:makadambeläggningen:makadambeläggningens:makadambeläggningar:makadambeläggningars:makadambeläggningarna:makadambeläggningarnas
+COMPOUND(560441, 550874): makadam + beläggning
+CUSTOM: y y makadambeläggnings
+590179r3<verb>makadamisera:makadamisera:makadamiserade:makadamiserat:makadamiserar:makadamisera:::::::::
+699622r3<substantiv>makak:makak:makaks:makaken:makakens:makaker:makakers:makakerna:makakernas
+CUSTOM: n n n
+560445r4<adjektiv>makalös:makalös:makalöst:makalösa:makalösa:makalösare:makalösast:makalösaste:makalöse
+560446r3<substantiv>makaron:makaron:makarons:makaronen:makaronens:makaroner:makaroners:makaronerna:makaronernas
+581799r3<adjektiv>makaronisk:makaronisk:makaroniskt:makaroniska:makaroniska::::
+560450r3<substantiv>make:make:makes:maken:makens:makar:makars:makarna:makarnas
+554076r3<egennamn>Makedonien:Makedonien:Makedoniens
+CUSTOM: y n Makedonien
+699630r3<substantiv>makedonier:makedonier:makedoniers:makedoniern:makedonierns:makedonier:makedoniers:makedonierna:makedoniernas
+581802r4<adjektiv>makedonisk:makedonisk:makedoniskt:makedoniska:makedoniska:!:!:!:makedoniske
+872533r3<substantiv>makedoniska:makedoniska:makedoniskas:makedoniskan:makedoniskans:makedoniskor:makedoniskors:makedoniskorna:makedoniskornas
+758028r3<adjektiv>makedonsk:makedonsk:makedonskt:makedonska:makedonska:!:!:!:makedonske
+758031r3<substantiv>makedonska:makedonska:makedonskas:makedonskan:makedonskans:makedonskor:makedonskors:makedonskorna:makedonskornas
+602739r3<substantiv>makeup:makeup:makeups:makeupen:makeupens:makeuper:makeupers:makeuperna:makeupernas
+600228r3<substantiv>makeupspegel:makeupspegel:makeupspegels:makeupspegeln:makeupspegelns:makeupspeglar:makeupspeglars:makeupspeglarna:makeupspeglarnas
+560456r4<adjektiv>maklig:maklig:makligt:makliga:makliga:makligare:makligast:makligaste:maklige
+982767r3<substantiv>makramé:makramé:makramés:makramén:makraméns::::
+560457r4<substantiv>makrill:makrill:makrills:makrillen:makrillens:makrillar:makrillars:makrillarna:makrillarnas
+CUSTOM: y y makrill
+681434r5<substantiv>makro:makro:makros:makrot:makrots:makron:makrons:makrona:makronas
+CUSTOM: y n n
+581804r3<adjektiv>makrobiotisk:makrobiotisk:makrobiotiskt:makrobiotiska:makrobiotiska::::
+581807r3<adjektiv>makrocyklisk:makrocyklisk:makrocykliskt:makrocykliska:makrocykliska::::
+581810r3<adjektiv>makroekonomisk:makroekonomisk:makroekonomiskt:makroekonomiska:makroekonomiska::::
+673388r4<substantiv>makrokosmos:makrokosmos:makrokosmos:makrokosmos:makrokosmos::::
+COMPOUND(681434, 653269): makro + kosmos
+581813r3<adjektiv>makrokristallinisk:makrokristallinisk:makrokristalliniskt:makrokristalliniska:makrokristalliniska::::
+730451r4<substantiv>makromolekyl:makromolekyl:makromolekyls:makromolekylen:makromolekylens:makromolekyler:makromolekylers:makromolekylerna:makromolekylernas
+COMPOUND(681434, 656536): makro + molekyl
+581816r3<adjektiv>makroskopisk:makroskopisk:makroskopiskt:makroskopiska:makroskopiska::::
+549985r18<substantiv>makt:makt:makts:makten:maktens:makter:makters:makterna:makternas
+CUSTOM: y y makt
+758054r4<substantiv>maktbalans:maktbalans:maktbalans:maktbalansen:maktbalansens:maktbalanser:maktbalansers:maktbalanserna:maktbalansernas
+COMPOUND(549985, 592379): makt + balans
+758055r3<substantiv>maktbefogenhet::::::::
+COMPOUND(549985, 592434): makt + befogenhet
+681436r4<substantiv>maktfaktor:maktfaktor:maktfaktors:maktfaktorn:maktfaktorns:maktfaktorer:maktfaktorers:maktfaktorerna:maktfaktorernas
+COMPOUND(549985, 639232): makt + faktor
+566644r3<adjektiv>maktfullkomlig:maktfullkomlig:maktfullkomligt:maktfullkomliga:maktfullkomliga::::
+732469r4<substantiv>maktfördelning:maktfördelning:maktfördelnings:maktfördelningen:maktfördelningens:maktfördelningar:maktfördelningars:maktfördelningarna:maktfördelningarnas
+COMPOUND(549985, 617921): makt + fördelning
+681441r5<adjektiv>maktgalen:maktgalen:maktgalet:maktgalna:maktgalna:maktgalnare:maktgalnast:maktgalnaste:maktgalne
+687997r3<adjektiv>makthavande:makthavande:makthavande:makthavande:makthavande:!:!:!:
+615376r3<substantiv>makthavare:makthavare:makthavares:makthavaren:makthavarens:makthavare:makthavares:makthavarna:makthavarnas
+CUSTOM: y y makthavar
+574506r3<adjektiv>makthungrig:makthungrig:makthungrigt:makthungriga:makthungriga::::
+681446r4<substantiv>maktkamp:maktkamp:maktkamps:maktkampen:maktkampens:maktkamper:maktkampers:maktkamperna:maktkampernas
+COMPOUND(549985, 549421): makt + kamp
+681452r3<adjektiv>maktlysten:maktlysten:maktlystet:maktlystna:maktlystna:maktlystnare:maktlystnast:maktlystnaste:
+560465r3<adjektiv>maktlös:maktlös:maktlöst:maktlösa:maktlösa::::
+760190r3<substantiv>maktlöshet:maktlöshet:maktlöshets:maktlösheten:maktlöshetens::::
+937838r4<substantiv>maktmedel:maktmedel:maktmedels:maktmedlet:maktmedlets:maktmedel:maktmedels:maktmedlen:maktmedlens
+COMPOUND(549985, 560532): makt + medel
+581819r3<adjektiv>maktpolitisk:maktpolitisk:maktpolitiskt:maktpolitiska:maktpolitiska::::
+681456r4<substantiv>maktposition:maktposition:maktpositions:maktpositionen:maktpositionens:maktpositioner:maktpositioners:maktpositionerna:maktpositionernas
+COMPOUND(549985, 635379): makt + position
+CUSTOM: y y maktpositions
+934389r4<substantiv>maktspel:maktspel:maktspels:maktspelet:maktspelets:maktspel:maktspels:maktspelen:maktspelens
+COMPOUND(549985, 552956): makt + spel
+681457r4<substantiv>maktställning:maktställning:maktställnings:maktställningen:maktställningens:maktställningar:maktställningars:maktställningarna:maktställningarnas
+COMPOUND(549985, 597732): makt + ställning
+CUSTOM: y y maktställnings
+681458r3<substantiv>maktutövning:maktutövning:maktutövnings:maktutövningen:maktutövningens::::
+CUSTOM: y y maktutövnings
+758039r4<substantiv>maktövertagande:maktövertagande:maktövertagandes:maktövertagandet:maktövertagandets:maktövertaganden:maktövertagandens:maktövertagandena:maktövertagandenas
+COMPOUND(549985, 758041): makt + övertagande
+872542r3<substantiv>makulatur:makulatur:makulaturs:makulaturen:makulaturens::::
+547325r4<verb>makulera:makulera:makulerade:makulerat:makulerar:makulera:makuleras:makulerades:makulerats:makuleras:makulerad:makulerat:makulerade::
+891177r3<substantiv>makulering:makulering:makulerings:makuleringen:makuleringens:makuleringar:makuleringars:makuleringarna:makuleringarnas
+560466r8<substantiv>mal:mal:mals:malen:malens:malar:malars:malarna:malarnas
+CUSTOM: y n
+560472r12<verb>mala:mala:malde:malt:mal:mal:malas:maldes:malts:mals:malen, mald:malet, malt:malna, malda:malande:
+CUSTOM: y n
+581822r3<adjektiv>malagassisk:malagassisk:malagassiskt:malagassiska:malagassiska::::
+560473r3<substantiv>malaj:malaj:malajs:malajen:malajens:malajer:malajers:malajerna:malajernas
+982771r3<substantiv>malajbjörn:malajbjörn:malajbjörns:malajbjörnen:malajbjörnens:malajbjörnar:malajbjörnars:malajbjörnarna:malajbjörnarnas
+581825r4<adjektiv>malajisk:malajisk:malajiskt:malajiska:malajiska:!:!:!:malajiske
+872546r3<substantiv>malajiska:malajiska:malajiskas:malajiskan:malajiskans:malajiskor:malajiskors:malajiskorna:malajiskornas
+581827r3<adjektiv>malajisk-polynesisk:malajisk-polynesisk:malajisk-polynesiskt:malajisk-polynesiska:malajisk-polynesiska::::
+560481r3<substantiv>malakit:malakit:malakits:malakiten:malakitens:malakiter:malakiters:malakiterna:malakiternas
+560489r4<substantiv>malaria:malaria:malarias:malarian:malarians::::
+CUSTOM: y y malaria
+758056r3<substantiv>malariamygga::::::::
+COMPOUND(560489, 594766): malaria + mygga
+554077r3<egennamn>Malawi:Malawi:Malawis
+CUSTOM: y n Malawi
+872556r3<substantiv>malawier:malawier:malawiers:malawiern:malawierns:malawier:malawiers:malawierna:malawiernas
+581830r4<adjektiv>malawisk:malawisk:malawiskt:malawiska:malawiska:!:!:!:malawiske
+872563r3<substantiv>malawiska:malawiska:malawiskas:malawiskan:malawiskans:malawiskor:malawiskors:malawiskorna:malawiskornas
+554078r3<egennamn>Malaysia:Malaysia:Malaysias
+CUSTOM: y n Malaysia
+758057r3<substantiv>malaysier:malaysier:malaysiers:malaysiern:malaysierns:malaysier:malaysiers:malaysierna:malaysiernas
+581832r4<adjektiv>malaysisk:malaysisk:malaysiskt:malaysiska:malaysiska:!:!:!:malaysiske
+872571r3<substantiv>malaysiska:malaysiska:malaysiskas:malaysiskan:malaysiskans:malaysiskor:malaysiskors:malaysiskorna:malaysiskornas
+793108r3<adjektiv>malbehandlad:malbehandlad:malbehandlat:malbehandlade:malbehandlade:!:!:!:
+554079r3<egennamn>Maldiverna:Maldiverna:Maldivernas
+581834r4<adjektiv>maldivisk:maldivisk:maldiviskt:maldiviska:maldiviska:!:!:!:maldiviske
+872580r3<substantiv>maldiviska:maldiviska:maldiviskas:maldiviskan:maldiviskans:maldiviskor:maldiviskors:maldiviskorna:maldiviskornas
+591614r7<adjektiv>malen:malen:malet:malna:malna:!:!:!:::::::::
+CUSTOM: y n
+943283r3<egennamn>Malena:Malena:Malenas
+798372r3<adjektiv>maliciös:maliciös:maliciöst:maliciösa:maliciösa::::
+872589r3<substantiv>malier:malier:maliers:maliern:malierns:malier:maliers:malierna:maliernas
+635704r3<adjektiv>malign:malign:malignt:maligna:maligna:!:!:!:!
+793111r3<adjektiv>malimpregnerad:malimpregnerad:malimpregnerat:malimpregnerade:malimpregnerade:!:!:!:
+553814r3<egennamn>Malin:Malin:Malins
+581836r4<adjektiv>malisk:malisk:maliskt:maliska:maliska:!:!:!:maliske
+971787r3<egennamn>Malkolm:Malkolm:Malkolms
+873671r4<substantiv>malkula:malkula:malkulas:malkulan:malkulans:malkulor:malkulors:malkulorna:malkulornas
+COMPOUND(560466, 559858): mal + kula
+CUSTOM: y n n
+551719r5<substantiv>mall:mall:malls:mallen:mallens:mallar:mallars:mallarna:mallarnas
+872600r3<verb>malla:malla:mallade:mallat:mallar:malla:::::::::
+962283r3<adjektiv>mallad:mallad:mallat:mallade:mallade:!:!:!:::::::::
+CUSTOM: y n
+566647r4<adjektiv>mallig:mallig:malligt:malliga:malliga:malligare:malligast:malligaste:mallige
+906711r3<egennamn>Mallorca:Mallorca:Mallorcas
+604213r29<substantiv>malm:malm:malms:malmen:malmens:malmer:malmers:malmerna:malmernas
+CUSTOM: y y
+598550r3<substantiv>malm:malm:malms:malmen:malmens:malmar:malmars:malmarna:malmarnas
+953897r4<substantiv>malmbana:malmbana:malmbanas:malmbanan:malmbanans:malmbanor:malmbanors:malmbanorna:malmbanornas
+COMPOUND(604213, 556870): malm + bana
+982935r3<adjektiv>malmbaserad:malmbaserad:malmbaserat:malmbaserade:malmbaserade:!:!:!:::::::::
+982928r4<substantiv>malmberg:malmberg:malmbergs:malmberget:malmbergets:malmberg:malmbergs:malmbergen:malmbergens
+COMPOUND(604213, 552234): malm + berg
+966715r3<egennamn>Malmberget:Malmberget:Malmbergets
+966717r3<substantiv>Malmbergsbo:Malmbergsbo:Malmbergsbos:Malmbergsbon:Malmbergsbons:Malmbergsbor:Malmbergsbors:Malmbergsborna:Malmbergsbornas
+973096r3<egennamn>Malmborg:Malmborg:Malmborgs
+916692r3<substantiv>malmbrytning:malmbrytning:malmbrytnings:malmbrytningen:malmbrytningens::::
+604214r3<substantiv>malmedel:malmedel:malmedels:malmedlet:malmedlets:malmedel:malmedels:malmedlen:malmedlens
+982779r3<substantiv>malmexport:malmexport:malmexports:malmexporten:malmexportens::::
+982922r4<substantiv>malmfartyg:malmfartyg:malmfartygs:malmfartyget:malmfartygets:malmfartyg:malmfartygs:malmfartygen:malmfartygens
+COMPOUND(604213, 552372): malm + fartyg
+574509r3<adjektiv>malmfattig:malmfattig:malmfattigt:malmfattiga:malmfattiga::::
+758072r4<substantiv>malmficka:malmficka:malmfickas:malmfickan:malmfickans:malmfickor:malmfickors:malmfickorna:malmfickornas
+COMPOUND(604213, 561662): malm + ficka
+563989r3<adjektiv>malmfri:malmfri:malmfritt:malmfria:

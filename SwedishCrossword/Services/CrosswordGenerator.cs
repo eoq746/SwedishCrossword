@@ -21,8 +21,7 @@ public class CrosswordGenerator
     {
         _dictionary = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         _validator = validator ?? throw new ArgumentNullException(nameof(validator));
-        // Use a more random seed combining time with a unique value
-        _random = new Random(Guid.NewGuid().GetHashCode());
+        _random = new Random();
         _gapFiller = new GapFiller(dictionary, _random);
         _vinkelordPlacer = new VinkelordPlacer(dictionary, _random);
         _wordPlacer = new WordPlacer(dictionary, _random, _vinkelordPlacer);
@@ -40,7 +39,7 @@ public class CrosswordGenerator
         var validationRejections = 0;
 
         // Pre-compute candidate words and their analysis ONCE outside the retry loop
-        var candidateWords = GetCandidateWords(options).ToList();
+        var candidateWords = GetCandidateWords(options);
         if (candidateWords.Count == 0)
         {
             throw new InvalidOperationException("No suitable words found for the specified criteria");
@@ -53,6 +52,11 @@ public class CrosswordGenerator
             .ThenBy(w => w.Word.Length)
             .ToList();
 
+        // Pre-compute connectivity scores once — these never change between attempts
+        var connectivityScores = new Dictionary<string, double>(sortedAnalysis.Count, StringComparer.OrdinalIgnoreCase);
+        foreach (var wa in sortedAnalysis)
+            connectivityScores[wa.Word.Text] = wa.ConnectivityScore;
+
         while (attempts < maxAttempts && !cancellationToken.IsCancellationRequested)
         {
             attempts++;
@@ -60,7 +64,7 @@ public class CrosswordGenerator
             try
             {
                 var grid = new CrosswordGrid(options.Width, options.Height);
-                var result = await TryGenerateSmartPuzzleAsync(grid, candidateWords, sortedAnalysis, options, cancellationToken);
+                var result = await TryGenerateSmartPuzzleAsync(grid, candidateWords, sortedAnalysis, connectivityScores, options, cancellationToken);
 
                 if (result != null)
                 {
@@ -71,7 +75,7 @@ public class CrosswordGenerator
                     }
                     return new CrosswordPuzzle(result, attempts, _dictionary);
                 }
-                else if (grid.Words.Any())
+                else if (grid.Words.Count > 0)
                 {
                     validationRejections++;
                 }
@@ -109,7 +113,7 @@ public class CrosswordGenerator
     }
 
     private async Task<CrosswordGrid?> TryGenerateSmartPuzzleAsync(CrosswordGrid grid, List<Word> candidateWords,
-        List<WordAnalysis> sortedAnalysis, CrosswordGenerationOptions options, CancellationToken cancellationToken)
+        List<WordAnalysis> sortedAnalysis, Dictionary<string, double> connectivityScores, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
         // Create a shuffled copy using top-biased Fisher-Yates
         var sortedWords = sortedAnalysis.ConvertAll(a => a.Word);
@@ -118,18 +122,13 @@ public class CrosswordGenerator
         // Track placed words with their scores for debugging
         var placedWordScores = new Dictionary<string, double>();
 
-        // Pre-computed connectivity scores from WordAnalysis — used as the single
-        // consistent score stored in placedWordScores by all placement strategies.
-        var connectivityScores = new Dictionary<string, double>(sortedAnalysis.Count, StringComparer.OrdinalIgnoreCase);
-        foreach (var wa in sortedAnalysis)
-            connectivityScores[wa.Word.Text] = wa.ConnectivityScore;
-
         // Phase 1: Smart anchor word selection with randomness
         if (!_wordPlacer.PlaceAnchorWordsWithValidation(grid, sortedWords, candidateWords, options))
         {
             return null;
         }
-        Console.WriteLine($"Fas 1: {grid.GetStats().FillPercentage:F1}% fyllnad");
+        var phase1Stats = grid.GetStats();
+        Console.WriteLine($"Fas 1: {phase1Stats.FillPercentage:F1}% fyllnad");
 
         var placedWords = grid.Words.ToHashSet();
         var adaptiveState = _wordPlacer.CreateAdaptiveState(options, placedWords, grid);
@@ -145,8 +144,9 @@ public class CrosswordGenerator
         // opportunities in return.
         for (int cycle = 1; cycle <= 25; cycle++)
         {
-            Console.WriteLine($"Cykel {cycle}: start - {grid.GetStats().FilledCells} fyllda celler, {grid.Words.Count} ord placerade");
-            var cycleStart = grid.GetStats().FilledCells;
+            var cycleStartStats = grid.GetStats();
+            Console.WriteLine($"Cykel {cycle}: start - {cycleStartStats.FilledCells} fyllda celler, {grid.Words.Count} ord placerade");
+            var cycleStart = cycleStartStats.FilledCells;
 
             // Sub-phase A: Adaptive word placement with integrated vinkelord (bounded batch)
             // Fully reset adaptive state each cycle — other strategies (gaps, bridges)
@@ -177,9 +177,10 @@ public class CrosswordGenerator
                 var wordsPlacedThisPass = grid.GetStats().FilledCells - before;
                 if (wordsPlacedThisPass == 0) break;
             }
-            Console.WriteLine($"Fas 2 subfas B: {grid.GetStats().FillPercentage:F1}% fyllnad");
+            var subBStats = grid.GetStats();
+            Console.WriteLine($"Fas 2 subfas B: {subBStats.FillPercentage:F1}% fyllnad");
 
-            var cycleEnd = grid.GetStats().FilledCells;
+            var cycleEnd = subBStats.FilledCells;
             if (cycleEnd == cycleStart) break;
         }
 
@@ -207,7 +208,7 @@ public class CrosswordGenerator
 
         var validation = grid.ValidateCrossword(_dictionary);
 
-        if (options.RejectInvalidWords && validation.InvalidAccidentalWords.Any())
+        if (options.RejectInvalidWords && validation.InvalidAccidentalWords.Count > 0)
         {
             Console.WriteLine($"  Avvisad: {validation.InvalidAccidentalWords.Count} ogiltiga ord: {string.Join(", ", validation.InvalidAccidentalWords.Select(w => w.Text))}");
             return null;
@@ -221,12 +222,12 @@ public class CrosswordGenerator
 
     private void ReportGenerationResults(CrosswordValidationResult validation, int usedWordCount, CrosswordGrid grid, Dictionary<string, double> placedWordScores)
     {
-        if (validation.ValidAccidentalWords.Any())
+        if (validation.ValidAccidentalWords.Count > 0)
         {
             Console.WriteLine($"Bonus: {validation.ValidAccidentalWords.Count} giltiga svenska bonusord hittades");
         }
 
-        if (validation.InvalidAccidentalWords.Any())
+        if (validation.InvalidAccidentalWords.Count > 0)
         {
             Console.WriteLine($"KRITISKT: {validation.InvalidAccidentalWords.Count} ogiltiga ord hittades");
         }
@@ -260,7 +261,7 @@ public class CrosswordGenerator
         }
     }
 
-    private IEnumerable<Word> GetCandidateWords(CrosswordGenerationOptions options)
+    private List<Word> GetCandidateWords(CrosswordGenerationOptions options)
     {
         var words = _dictionary.GetWords(
             minLength: options.MinWordLength,
@@ -268,7 +269,7 @@ public class CrosswordGenerator
             difficulty: options.Difficulty
         );
 
-        if (options.Categories != null && options.Categories.Count > 0)
+        if (options.Categories is { Count: > 0 })
         {
             words = words.Where(w => options.Categories.Contains(w.Category, StringComparer.OrdinalIgnoreCase));
         }
@@ -336,7 +337,7 @@ public class CrosswordGenerationOptions
         Width = 17,
         Height = 17,
         MinWordLength = 1,
-        MaxWordLength = 17,
+        MaxWordLength = 33,
         TargetFillPercentage = 70.0,
         Difficulty = null,
         MaxAttempts = 120,

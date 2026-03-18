@@ -1,0 +1,589 @@
+osts:flaskposten:flaskpostens::::
+COMPOUND(555299, 550232): flaska + post
+919089r4<substantiv>flaskvin:flaskvin:flaskvins:flaskvinet:flaskvinets:flaskviner:flaskviners:flaskvinerna:flaskvinernas
+COMPOUND(555299, 600515): flaska + vin
+561421r5<adjektiv>flat:flat:flat:flata:flata:flatare:flatast:flataste:flate
+561422r6<substantiv>flata:flata:flatas:flatan:flatans:flator:flators:flatorna:flatornas
+DEFINITION 1: Homosexuell kvinna [ vardagligt, delvis nedsättande ]
+DEFINITION 2: En slät yta
+790874r3<adjektiv>flatbottnad:flatbottnad:flatbottnat:flatbottnade:flatbottnade:!:!:!:
+835740r3<substantiv>flatbröd:flatbröd:flatbröds:flatbrödet:flatbrödets:flatbröd:flatbröds:flatbröden:flatbrödens
+835747r3<substantiv>flatfisk:flatfisk:flatfisks:flatfisken:flatfiskens:flatfiskar:flatfiskars:flatfiskarna:flatfiskarnas
+690103r3<substantiv>flathet:flathet:flathets:flatheten:flathetens::::
+CUSTOM: y y flathets
+835755r3<substantiv>flatlus:flatlus:flatlus:flatlusen:flatlusens:flatlöss:flatlöss:flatlössen:flatlössens
+835761r3<substantiv>flatskratt:flatskratt:flatskratts:flatskrattet:flatskrattets:flatskratt:flatskratts:flatskratten:flatskrattens
+835767r3<verb>flatskratta:flatskratta:flatskrattade:flatskrattat:flatskrattar:flatskratta:flatskrattas:flatskrattades:flatskrattats:flatskrattas::::flatskrattande:
+607080r3<substantiv>flatstift:flatstift:flatstifts:flatstiftet:flatstiftets:flatstift:flatstifts:flatstiften:flatstiftens
+CUSTOM: y y flatstifts
+594026r3<substantiv>flatstiftshylsa:flatstiftshylsa:flatstiftshylsas:flatstiftshylsan:flatstiftshylsans:flatstiftshylsor:flatstiftshylsors:flatstiftshylsorna:flatstiftshylsornas
+CUSTOM: y n
+596777r3<substantiv>flatstiftssäkring:flatstiftssäkring:flatstiftssäkrings:flatstiftssäkringen:flatstiftssäkringens:flatstiftssäkringar:flatstiftssäkringars:flatstiftssäkringarna:flatstiftssäkringarnas
+CUSTOM: y n
+601844r3<substantiv>flatstiftssäkringssats:flatstiftssäkringssats:flatstiftssäkringssats:flatstiftssäkringssatsen:flatstiftssäkringssatsens:flatstiftssäkringssatser:flatstiftssäkringssatsers:flatstiftssäkringssatserna:flatstiftssäkringssatsernas
+CUSTOM: n n
+609489r3<substantiv>flatstiftssäkringstestare:flatstiftssäkringstestare:flatstiftssäkringstestares:flatstiftssäkringstestaren:flatstiftssäkringstestarens:flatstiftssäkringstestare:flatstiftssäkringstestares:flatstiftssäkringstestarna:flatstiftssäkringstestarnas
+CUSTOM: n n
+800942r3<adjektiv>flatterande:flatterande:flatterande:flatterande:flatterande:!:!:!:
+905754r3<substantiv>flatulens:flatulens:flatulens:flatulensen:flatulensens:flatulenser:flatulensers:flatulenserna:flatulensernas
+734216r3<egennamn>Flatås:Flatås:Flatås
+CUSTOM: n n 
+835775r5<substantiv>flax:flax:flax:flaxet:flaxets:flax:flax:flaxen:flaxens
+561431r4<verb>flaxa:flaxa:flaxade:flaxat:flaxar:flaxa:flaxas:flaxades:flaxats:flaxas::::flaxande:
+572325r4<adjektiv>flaxig:flaxig:flaxigt:flaxiga:flaxiga:flaxigare:flaxigast:flaxigaste:flaxige
+835780r3<substantiv>flaxighet:flaxighet:flaxighets:flaxigheten:flaxighetens::::
+835784r3<substantiv>flaxning:flaxning:flaxnings:flaxningen:flaxningens:flaxningar:flaxningars:flaxningarna:flaxningarnas
+774973r6<substantiv>fleece:fleece:fleeces:fleecen:fleecens::::
+CUSTOM: y y fleece
+951101r4<substantiv>fleecefilt:fleecefilt:fleecefilts:fleecefilten:fleecefiltens:fleecefiltar:fleecefiltars:fleecefiltarna:fleecefiltarnas
+COMPOUND(774973, 551129): fleece + filt
+774979r3<substantiv>fleecejacka::::::::
+COMPOUND(774973, 625502): fleece + jacka
+774981r3<substantiv>fleecetröja::::::::
+COMPOUND(774973, 595624): fleece + tröja
+690104r3<substantiv>flegma:flegma:flegmas:flegman:flegmans::::
+835794r3<substantiv>flegmatiker:flegmatiker:flegmatikers:flegmatikern:flegmatikerns:flegmatiker:flegmatikers:flegmatikerna:flegmatikernas
+561432r3<adjektiv>flegmatisk:flegmatisk:flegmatiskt:flegmatiska:flegmatiska::::flegmatiske
+855231r3<egennamn>Fleischer:Fleischer:Fleischers
+589301r4<verb>flektera:flektera:flekterade:flekterat:flekterar:flektera:flekteras:flekterades:flekterats:flekteras:flekterad:flekterat:flekterade:flekterande:
+835800r3<substantiv>flektion:flektion:flektions:flektionen:flektionens:flektioner:flektioners:flektionerna:flektionernas
+906609r3<egennamn>Flemingsberg:Flemingsberg:Flemingsbergs
+714915r4<egennamn>Flen:Flen:Flens
+DEFINITION 1: Kommun i Södermanlands län.
+CUSTOM: y n Flen
+977968r3<substantiv>flentimotej:flentimotej:flentimotejs:flentimotejen:flentimotejens::::
+835808r3<substantiv>flenört:flenört:flenörts:flenörten:flenörtens:flenörter:flenörters:flenörterna:flenörternas
+561437r4<pronomen>flera:flera
+CUSTOM: y y fler
+572328r3<adjektiv>fleranodig:fleranodig:fleranodigt:fleranodiga:fleranodiga::::
+835816r3<substantiv>fleranvändarsystem:fleranvändarsystem:fleranvändarsystems:fleranvändarsystemet:fleranvändarsystemets:fleranvändarsystem:fleranvändarsystems:fleranvändarsystemen:fleranvändarsystemens
+790877r3<adjektiv>flerarmad:flerarmad:flerarmat:flerarmade:flerarmade:!:!:!:
+690107r3<pronomen>fleras:fleras
+572331r3<adjektiv>fleratomig:fleratomig:fleratomigt:fleratomiga:fleratomiga::::
+797658r3<adjektiv>fleraxig:fleraxig:fleraxigt:fleraxiga:fleraxiga::::
+CUSTOM: y n n
+741878r3<substantiv>flerbarnsfamilj:flerbarnsfamilj:flerbarnsfamiljs:flerbarnsfamiljen:flerbarnsfamiljens:flerbarnsfamiljer:flerbarnsfamiljers:flerbarnsfamiljerna:flerbarnsfamiljernas
+580067r3<adjektiv>flerbasisk:flerbasisk:flerbasiskt:flerbasiska:flerbasiska::::
+572334r3<adjektiv>flerbladig:flerbladig:flerbladigt:flerbladiga:flerbladiga::::
+835822r3<substantiv>flerbäddsrum:flerbäddsrum:flerbäddsrums:flerbäddsrummet:flerbäddsrummets:flerbäddsrum:flerbäddsrums:flerbäddsrummen:flerbäddsrummens
+565844r3<adjektiv>flercellig:flercellig:flercelligt:flercelliga:flercelliga::::
+572337r3<adjektiv>flercylindrig:flercylindrig:flercylindrigt:flercylindriga:flercylindriga::::
+977972r3<substantiv>flerdagarstidning:flerdagarstidning:flerdagarstidnings:flerdagarstidningen:flerdagarstidningens:flerdagarstidningar:flerdagarstidningars:flerdagarstidningarna:flerdagarstidningarnas
+790880r3<adjektiv>flerdelad:flerdelad:flerdelat:flerdelade:flerdelade:!:!:!:
+690108r3<adjektiv>flerdimensionell:flerdimensionell:flerdimensionellt:flerdimensionella:flerdimensionella:!:!:!:!
+570734r4<adjektiv>flerdubbel:flerdubbel:flerdubbelt:flerdubbla:flerdubbla:!:!:!:flerdubble
+572340r3<adjektiv>flerelektrodig:flerelektrodig:flerelektrodigt:flerelektrodiga:flerelektrodiga::::
+572343r4<adjektiv>flerfaldig:flerfaldig:flerfaldigt:flerfaldiga:flerfaldiga:!:!:!:flerfaldige
+894725r3<adverb>flerfalt:flerfalt
+741886r3<substantiv>flerfamiljshus:flerfamiljshus:flerfamiljshus:flerfamiljshuset:flerfamiljshusets:flerfamiljshus:flerfamiljshus:flerfamiljshusen:flerfamiljshusens
+572344r3<adjektiv>flerfasig:flerfasig:flerfasigt:flerfasiga:flerfasiga::::
+565847r3<adjektiv>flerfilig:flerfilig:flerfiligt:flerfiliga:flerfiliga::::
+572347r3<adjektiv>flerfältig:flerfältig:flerfältigt:flerfältiga:flerfältiga::::
+790883r3<adjektiv>flerfärgad:flerfärgad:flerfärgat:flerfärgade:flerfärgade:!:!:!:
+572350r3<adjektiv>flergradig:flergradig:flergradigt:flergradiga:flergradiga::::
+790886r3<adjektiv>flergängad:flergängad:flergängat:flergängade:flergängade:!:!:!:
+790889r3<adjektiv>flerhandikappad:flerhandikappad:flerhandikappat:flerhandikappade:flerhandikappade:!:!:!:
+572353r3<adjektiv>flerlagig:flerlagig:flerlagigt:flerlagiga:flerlagiga::::
+572356r3<adjektiv>flerlagrig:flerlagrig:flerlagrigt:flerlagriga:flerlagriga::::
+565850r3<adjektiv>flerlamellig:flerlamellig:flerlamelligt:flerlamelliga:flerlamelliga::::
+572359r3<adjektiv>flerlågig:flerlågig:flerlågigt:flerlågiga:flerlågiga::::
+835837r3<substantiv>flerläkarstation:flerläkarstation:flerläkarstations:flerläkarstationen:flerläkarstationens:flerläkarstationer:flerläkarstationers:flerläkarstationerna:flerläkarstationernas
+572362r3<adjektiv>flermotorig:flermotorig:flermotorigt:flermotoriga:flermotoriga::::
+708034r3<adjektiv>fleromättad:fleromättad:fleromättat:fleromättade:fleromättade:!:!:!:
+734555r5<adjektiv>flerordig:flerordig:flerordigt:flerordiga:flerordiga::::::::::::
+572365r3<adjektiv>flerpartig:flerpartig:flerpartigt:flerpartiga:flerpartiga::::
+835829r3<substantiv>flerpartimotion:flerpartimotion:flerpartimotions:flerpartimotionen:flerpartimotionens:flerpartimotioner:flerpartimotioners:flerpartimotionerna:flerpartimotionernas
+760910r3<substantiv>flerpartisystem:flerpartisystem:flerpartisystems:flerpartisystemet:flerpartisystemets:flerpartisystem:flerpartisystems:flerpartisystemen:flerpartisystemens
+580070r3<adjektiv>flerperiodisk:flerperiodisk:flerperiodiskt:flerperiodiska:flerperiodiska::::
+565853r3<adjektiv>flerpolig:flerpolig:flerpoligt:flerpoliga:flerpoliga::::
+572368r3<adjektiv>flerradig:flerradig:flerradigt:flerradiga:flerradiga::::
+572371r3<adjektiv>flersidig:flersidig:flersidigt:flersidiga:flersidiga::::
+572374r3<adjektiv>flersiffrig:flersiffrig:flersiffrigt:flersiffriga:flersiffriga::::
+572377r3<adjektiv>flersitsig:flersitsig:flersitsigt:flersitsiga:flersitsiga::::
+790892r3<adjektiv>flerskiktad:flerskiktad:flerskiktat:flerskiktade:flerskiktade:!:!:!:
+572380r3<adjektiv>flerskiktig:flerskiktig:flerskiktigt:flerskiktiga:flerskiktiga::::
+572383r3<adjektiv>flerskivig:flerskivig:flerskivigt:flerskiviga:flerskiviga::::
+572386r3<adjektiv>flerskopig:flerskopig:flerskopigt:flerskopiga:flerskopiga::::
+737352r4<substantiv>flerskrovsbåt:flerskrovsbåt:flerskrovsbåts:flerskrovsbåten:flerskrovsbåtens:flerskrovsbåtar:flerskrovsbåtars:flerskrovsbåtarna:flerskrovsbåtarnas
+DEFINITION 1: Båt med fler skrov en ett. Katamaran (två skrov) eller trimaran (tre skrov).
+572389r3<adjektiv>flerskärig:flerskärig:flerskärigt:flerskäriga:flerskäriga::::
+565856r3<adjektiv>flerspindlig:flerspindlig:flerspindligt:flerspindliga:flerspindliga::::
+572392r4<adjektiv>flerspråkig:flerspråkig:flerspråkigt:flerspråkiga:flerspråkiga:!:!:!:flerspråkige
+774982r3<substantiv>flerspråkighet:flerspråkighet:flerspråkighets:flerspråkigheten:flerspråkighetens::::
+572393r3<adjektiv>flerspårig:flerspårig:flerspårigt:flerspåriga:flerspåriga::::
+572396r3<adjektiv>flerstammig:flerstammig:flerstammigt:flerstammiga:flerstammiga::::
+572399r3<adjektiv>flerstavig:flerstavig:flerstavigt:flerstaviga:flerstaviga::::
+835846r3<substantiv>flerstavighet:flerstavighet:flerstavighets:flerstavigheten:flerstavighetens::::
+572400r3<adjektiv>flerstegig:flerstegig:flerstegigt:flerstegiga:flerstegiga::::
+832104r7<adverb>flerstädes:flerstädes
+572403r3<adjektiv>flerstämmig:flerstämmig:flerstämmigt:flerstämmiga:flerstämmiga::::
+835850r3<substantiv>flerstämmighet:flerstämmighet:flerstämmighets:flerstämmigheten:flerstämmighetens::::
+572406r3<adjektiv>flersätig:flersätig:flersätigt:flersätiga:flersätiga::::
+690109r3<substantiv>flertal:flertal:flertals:flertalet:flertalets::::
+786603r3<substantiv>flertalsform:flertalsform:flertalsforms:flertalsformen:flertalsformens:flertalsformer:flertalsformers:flertalsformerna:flertalsformernas
+790895r3<adjektiv>flertandad:flertandad:flertandat:flertandade:flertandade:!:!:!:
+572409r3<adjektiv>flertoppig:flertoppig:flertoppigt:flertoppiga:flertoppiga::::
+572412r3<adjektiv>flertrådig:flertrådig:flertrådigt:flertrådiga:flertrådiga::::
+878631r3<substantiv>flertrådsteknik:flertrådsteknik:flertrådstekniks:flertrådstekniken:flertrådsteknikens::::
+572415r3<adjektiv>flertusenårig:flertusenårig:flertusenårigt:flertusenåriga:flertusenåriga::::
+572418r4<adjektiv>flertydig:flertydig:flertydigt:flertydiga:flertydiga:flertydigare:flertydigast:flertydigaste:
+737371r4<substantiv>fleruppdragskörning:fleruppdragskörning:fleruppdragskörnings:fleruppdragskörningen:fleruppdragskörningens:fleruppdragskörningar:fleruppdragskörningars:fleruppdragskörningarna:fleruppdragskörningarnas
+COMPOUND(561437, 737381): flera + uppdragskörning
+835857r3<substantiv>flervalsprov:flervalsprov:flervalsprovs:flervalsprovet:flervalsprovets:flervalsprov:flervalsprovs:flervalsproven:flervalsprovens
+835871r3<substantiv>flervalstest:flervalstest:flervalstests:flervalstestet:flervalstestets:flervalstester:flervalstesters:flervalstesterna, flervalstesten:flervalstesternas, flervalstestens
+835863r3<substantiv>flervalsuppgift:flervalsuppgift:flervalsuppgifts:flervalsuppgiften:flervalsuppgiftens:flervalsuppgifter:flervalsuppgifters:flervalsuppgifterna:flervalsuppgifternas
+572419r3<adjektiv>flerväggig:flerväggig:flerväggigt:flerväggiga:flerväggiga::::
+965983r3<substantiv>flervägsfel:flervägsfel:flervägsfels:flervägsfelet:flervägsfelets:flervägsfel:flervägsfels:flervägsfelen:flervägsfelens
+799311r3<adjektiv>flervärd:flervärd:flervärt:flervärda:flervärda::::
+CUSTOM: y n n
+572422r3<adjektiv>flervärdig:flervärdig:flervärdigt:flervärdiga:flervärdiga::::
+572425r4<adjektiv>flerårig:flerårig:flerårigt:fleråriga:fleråriga::::flerårige::::::::
+561438r3<pronomen>flest:flest
+878051r3<pronomen>flestas:flestas
+774986r4<verb>flexa:flexa:flexade:flexat:flexar:flexa:flexas:flexades:flexats:flexas::::flexande:
+561439r3<adjektiv>flexibel:flexibel:flexibelt:flexibla:flexibla:flexiblare:flexiblast:flexiblaste:flexible
+690111r3<substantiv>flexibilitet:flexibilitet:flexibilitets:flexibiliteten:flexibilitetens::::
+CUSTOM: y y flexibilitets
+835885r4<substantiv>flexion:flexion:flexions:flexionen:flexionens:flexioner:flexioners:flexionerna:flexionernas
+CUSTOM: y y flexions
+835893r3<substantiv>flexionsform::::::::
+COMPOUND(835885, 548947): flexion + form
+786613r3<substantiv>flexislang:flexislang:flexislangs:flexislangen:flexislangens:flexislangar:flexislangars:flexislangarna:flexislangarnas
+580073r3<adjektiv>flexivisk:flexivisk:flexiviskt:flexiviska:flexiviska::::
+835894r3<substantiv>flexning:flexning:flexnings:flexningen:flexningens::::
+835898r3<substantiv>flexram:flexram:flexrams:flexramen:flexramens:flexramar:flexramars:flexramarna:flexramarnas
+835906r3<substantiv>flexskiva:flexskiva:flexskivas:flexskivan:flexskivans:flexskivor:flexskivors:flexskivorna:flexskivornas
+561441r3<substantiv>flextid:flextid:flextids:flextiden:flextidens:flextider:flextiders:flextiderna:flextidernas
+835914r3<substantiv>flexur:flexur:flexurs:flexuren:flexurens:flexurer:flexurers:flexurerna:flexurernas
+555382r18<substantiv>flicka:flicka:flickas:flickan:flickans:flickor:flickors:flickorna:flickornas
+BASEWORDS: flick, flicke
+CUSTOM: y y flick flicke
+585531r4<verb>flicka:flicka:flickade:flickat:flickar:flicka:flickas:flickades:flickats:flickas:flickad:flickat:flickade:flickande:
+572426r4<adjektiv>flickaktig:flickaktig:flickaktigt:flickaktiga:flickaktiga:flickaktigare:flickaktigast:flickaktigaste:flickaktige
+774990r3<substantiv>flickaktighet:flickaktighet:flickaktighets:flickaktigheten:flickaktighetens::::
+690113r4<substantiv>flickebarn:flickebarn:flickebarns:flickebarnet:flickebarnets:flickebarn:flickebarns:flickebarnen:flickebarnens
+COMPOUND(555382, 555956): flicka + barn
+572429r3<adjektiv>flickig:flickig:flickigt:flickiga:flickiga::::
+934025r4<substantiv>flicklag:flicklag:flicklags:flicklaget:flicklagets:flicklag:flicklags:flicklagen:flicklagens
+COMPOUND(555382, 625660): flicka + lag
+CUSTOM: y y flicklags
+901915r4<substantiv>flickmodell:flickmodell:flickmodells:flickmodellen:flickmodellens:flickmodeller:flickmodellers:flickmodellerna:flickmodellernas
+COMPOUND(555382, 550047): flicka + modell
+951110r4<substantiv>flickslyna:flickslyna:flickslynas:flickslynan:flickslynans:flickslynor:flickslynors:flickslynorna:flickslynornas
+COMPOUND(555382, 629342): flicka + slyna
+CUSTOM: n n y
+690114r4<substantiv>flickvän:flickvän:flickväns:flickvännen:flickvännens:flickvänner:flickvänners:flickvännerna:flickvännernas
+COMPOUND(555382, 620322): flicka + vän
+835927r3<substantiv>flight:flight:flights:flighten:flightens:flighter:flighters:flighterna:flighternas
+551165r4<substantiv>flik:flik:fliks:fliken:flikens:flikar:flikars:flikarna:flikarnas
+649135r4<verb>flika:flika:flikade:flikat:flikar:flika:flikas:flikades:flikats:flikas::::flikande:
+790898r3<adjektiv>flikad:flikad:flikat:flikade:flikade:!:!:!:
+572432r3<adjektiv>flikbladig:flikbladig:flikbladigt:flikbladiga:flikbladiga::::
+572435r4<adjektiv>flikig:flikig:flikigt:flikiga:flikiga:flikigare:flikigast:flikigaste:
+835930r3<substantiv>flikighet:flikighet:flikighets:flikigheten:flikighetens::::
+561446r4<substantiv>flimmer:flimmer:flimmers:flimret:flimrets:!:!:!:!
+CUSTOM: y y flimmer
+758416r4<substantiv>flimmerhår:flimmerhår:flimmerhårs:flimmerhåret:flimmerhårets:flimmerhår:flimmerhårs:flimmerhåren:flimmerhårens
+COMPOUND(561446, 552487): flimmer + hår
+561447r4<verb>flimra:flimra:flimrade:flimrat:flimrar:flimra::::::::flimrande:
+690116r3<adjektiv>flimrande:flimrande:flimrande:flimrande:flimrande:!:!:!:
+572438r4<adjektiv>flimrig:flimrig:flimrigt:flimriga:flimriga:flimrigare:flimrigast:flimrigaste:
+561448r4<substantiv>flin:flin:flins:flinet:flinets:flin:flins:flinen:flinens
+CUSTOM: y n
+561454r4<verb>flina:flina:flinade:flinat:flinar:flina:flinas:flinades:flinats:flinas::::flinande:
+561455r5<substantiv>flinga:flinga:flingas:flingan:flingans:flingor:flingors:flingorna:flingornas
+835940r3<substantiv>flingpaket:flingpaket:flingpakets:flingpaketet:flingpaketets:flingpaket:flingpakets:flingpaketen:flingpaketens
+835947r3<substantiv>flingsalt:flingsalt:flingsalts:flingsaltet:flingsaltets::::
+790899r3<adjektiv>flingtorkad:flingtorkad:flingtorkat:flingtorkade:flingtorkade:!:!:!:
+572441r3<adjektiv>flinig:flinig:flinigt:fliniga:fliniga::::
+561457r4<adjektiv>flink:flink:flinkt:flinka:flinka:flinkare:flinkast:flinkaste:flinke
+835952r3<substantiv>flinkhet:flinkhet:flinkhets:flinkheten:flinkhetens::::
+561459r4<substantiv>flint:flint:flints:flinten:flintens:!:!:!:!
+CUSTOM: y y flint
+561463r3<substantiv>flinta:flinta:flintas:flintan:flintans:!:!:!:!
+835956r3<substantiv>flintastek:flintastek:flintasteks:flintasteken:flintastekens:flintastekar:flintastekars:flintastekarna:flintastekarnas
+799314r3<adjektiv>flinthård:flinthård:flinthårt:flinthårda:flinthårda::::
+835964r3<substantiv>flintlåsgevär:flintlåsgevär:flintlåsgevärs:flintlåsgeväret:flintlåsgevärets:flintlåsgevär:flintlåsgevärs:flintlåsgevären:flintlåsgevärens
+555918r3<substantiv>flintskalle:flintskalle:flintskalles:flintskallen:flintskallens:flintskallar:flintskallars:flintskallarna:flintskallarnas
+561465r4<adjektiv>flintskallig:flintskallig:flintskalligt:flintskalliga:flintskalliga:!:!:!:flintskallige
+COMPOUND(561459, 563163): flint + skallig
+690117r4<verb>flippa:flippa:flippade:flippat:flippar:flippa:flippas:flippades:flippats:flippas:flippad:flippat:flippade:flippande:
+741891r3<substantiv>flipperspel:flipperspel:flipperspels:flipperspelet:flipperspelets:flipperspel:flipperspels:flipperspelen:flipperspelens
+625323r7<substantiv>flirt:flirt:flirts:flirten:flirtens::::
+561469r6<verb>flirta:flirta:flirtade:flirtat:flirtar:flirta:flirtas:flirtades:flirtats:flirtas::::flirtande:
+690120r3<substantiv>flirtande:flirtande:flirtandes:flirtandet:flirtandets::::
+572444r4<adjektiv>flirtig:flirtig:flirtigt:flirtiga:flirtiga:flirtigare:flirtigast:flirtigaste:flirtige
+835974r3<substantiv>flirtighet:flirtighet:flirtighets:flirtigheten:flirtighetens::::
+835978r3<substantiv>flirtkula:flirtkula:flirtkulas:flirtkulan:flirtkulans:flirtkulor:flirtkulors:flirtkulorna:flirtkulornas
+628013r4<substantiv>flis:flis:flis:flisen:flisens::::
+628016r4<verb>flisa:flisa:flisade:flisat:flisar:flisa:flisas:flisades:flisats:flisas:flisad:flisat:flisade:flisande:
+561470r4<substantiv>flisa:flisa:flisas:flisan:flisans:flisor:flisors:flisorna:flisornas
+835986r3<substantiv>fliseldning:fliseldning:fliseldnings:fliseldningen:fliseldningens::::
+572447r3<adjektiv>flisig:flisig:flisigt:flisiga:flisiga::::
+835990r3<substantiv>flisighet:flisighet:flisighets:flisigheten:flisighetens::::
+835994r3<substantiv>flisning:flisning:flisnings:flisningen:flisningens::::
+835998r3<substantiv>flistugg:flistugg:flistuggs:flistuggen:flistuggens:flistuggar:flistuggars:flistuggarna:flistuggarnas
+561471r10<substantiv>flit:flit:flits:fliten:flitens:!:!:!:!
+CUSTOM: y n
+951118r4<substantiv>flitbetyg:flitbetyg:flitbetygs:flitbetyget:flitbetygets:flitbetyg:flitbetygs:flitbetygen:flitbetygens
+COMPOUND(561471, 552244): flit + betyg
+639122r5<substantiv>flitbonus:flitbonus:flitbonus:flitbonusen:flitbonusens:flitbonusar:flitbonusars:flitbonusarna:flitbonusarnas
+DEFINITION 1: Ekonomisk belöning till elev som kommer till skolan
+COMPOUND(561471, 617383): flit + bonus
+561473r3<adjektiv>flitig:flitig:flitigt:flitiga:flitiga:flitigare:flitigast:flitigaste:flitige
+951125r4<substantiv>flitpeng:flitpeng:flitpengs:flitpengen:flitpengens:flitpengar:flitpengars:flitpengarna:flitpengarnas
+COMPOUND(561471, 551765): flit + peng
+628023r3<substantiv>flo:flo:flos:flon:flons:floar:floars:floarna:floarnas
+CUSTOM: n n y
+551167r4<substantiv>flock:flock:flocks:flocken:flockens:flockar:flockars:flockarna:flockarnas
+CUSTOM: y y flock
+546561r4<verb>flocka:flocka:flockade:flockat:flockar:flocka:flockas:flockades:flockats:flockas::::flockande:
+977980r3<substantiv>flockarun:flockarun:flockaruns:flockarunen:flockarunens::::
+591636r3<deponens>flockas:flockas:flockades:flockats:flockas:flockas
+572450r3<adjektiv>flockblommig:flockblommig:flockblommigt:flockblommiga:flockblommiga::::
+572453r3<adjektiv>flockblomstrig:flockblomstrig:flockblomstrigt:flockblomstriga:flockblomstriga::::
+771977r5<substantiv>flockdjur:flockdjur:flockdjurs:flockdjuret:flockdjurets:flockdjur:flockdjurs:flockdjuren:flockdjurens
+COMPOUND(551167, 552322): flock + djur
+CUSTOM: y y flockdjurs
+771984r3<substantiv>flockdjursbeteende::::::::
+COMPOUND(771977, 612384): flockdjur + beteende
+572456r3<adjektiv>flockig:flockig:flockigt:flockiga:flockiga::::
+771985r4<substantiv>flockighet:flockighet:flockighets:flockigheten:flockighetens::::
+CUSTOM: y y flockighets
+771989r3<substantiv>flockighetsintensitet::::::::
+COMPOUND(771985, 692537): flockighet + intensitet
+771990r4<substantiv>flockning:flockning:flocknings:flockningen:flockningens::::
+CUSTOM: y y flocknings
+771994r3<substantiv>flockningsmedel::::::::
+COMPOUND(771990, 560532): flockning + medel
+836006r3<substantiv>flockull:flockull:flockulls:flockullen:flockullens::::
+689425r7<adverb>flockvis:flockvis
+548933r10<substantiv>flod:flod:flods:floden:flodens:floder:floders:floderna:flodernas
+CUSTOM: y y flod
+836010r3<substantiv>flodarm:flodarm:flodarms:flodarmen:flodarmens:flodarmar:flodarmars:flodarmarna:flodarmarnas
+772686r4<substantiv>flodbrädd:flodbrädd:flodbrädds:flodbrädden:flodbräddens:flodbräddar:flodbräddars:flodbräddarna:flodbräddarnas
+COMPOUND(548933, 550952): flod + brädd
+862369r5<substantiv>flodbåt:flodbåt:flodbåts:flodbåten:flodbåtens:flodbåtar:flodbåtars:flodbåtarna:flodbåtarnas
+COMPOUND(548933, 550993): flod + båt
+CUSTOM: y y flodbåts
+862360r4<substantiv>flodbåtstur:flodbåtstur:flodbåtsturs:flodbåtsturen:flodbåtsturens:flodbåtsturer:flodbåtsturers:flodbåtsturerna:flodbåtsturernas
+COMPOUND(862369, 550715): flodbåt + tur
+836018r3<substantiv>flodgud:flodgud:flodguds:flodguden:flodgudens:flodgudar:flodgudars:flodgudarna:flodgudarnas
+690124r3<substantiv>flodhäst:flodhäst:flodhästs:flodhästen:flodhästens:flodhästar:flodhästars:flodhästarna:flodhästarnas
+593031r3<substantiv>flodmynning:flodmynning:flodmynnings:flodmynningen:flodmynningens:flodmynningar:flodmynningars:flodmynningarna:flodmynningarnas
+CUSTOM: y y flodmynnings
+964561r4<substantiv>flodpråm:flodpråm:flodpråms:flodpråmen:flodpråmens:flodpråmar:flodpråmars:flodpråmarna:flodpråmarnas
+COMPOUND(548933, 624633): flod + pråm
+836027r3<substantiv>flodpärlmussla:flodpärlmussla:flodpärlmusslas:flodpärlmusslan:flodpärlmusslans:flodpärlmusslor:flodpärlmusslors:flodpärlmusslorna:flodpärlmusslornas
+690126r4<substantiv>flodvåg:flodvåg:flodvågs:flodvågen:flodvågens:flodvågor:flodvågors:flodvågorna:flodvågornas
+COMPOUND(548933, 593520): flod + våg
+CUSTOM: y y flodvågs
+911746r4<substantiv>flodångare:flodångare:flodångares:flodångaren:flodångarens:flodångare:flodångares:flodångarna:flodångarnas
+COMPOUND(548933, 615529): flod + ångare
+836036r3<substantiv>flogrönn:flogrönn:flogrönns:flogrönnen:flogrönnens:flogrönnar:flogrönnars:flogrönnarna:flogrönnarnas
+625328r3<substantiv>flopp:flopp:flopps:floppen:floppens:floppar:floppars:flopparna:flopparnas
+656807r4<verb>floppa:floppa:floppade:floppat:floppar:floppa:floppas:floppades:floppats:floppas:floppad:floppat:floppade:floppande:
+628020r4<substantiv>flor:flor:flors:floret:florets::::
+CUSTOM: y n
+617546r6<substantiv>flora:flora:floras:floran:florans:floror:florors:flororna:florornas
+836044r3<substantiv>floraområde:floraområde:floraområdes:floraområdet:floraområdets:floraområden:floraområdens:floraområdena:floraområdenas
+799317r3<adjektiv>florbehängd:florbehängd:florbehängt:florbehängda:florbehängda::::
+836052r3<substantiv>florentinare:florentinare:florentinares:florentinaren:florentinarens:florentinare:florentinares:florentinarna:florentinarnas
+836058r3<adjektiv>florentinsk:florentinsk:florentinskt:florentinska:florentinska:!:!:!:florentinske
+586654r6<verb>florera:florera:florerade:florerat:florerar:florera:floreras:florerades:florerats:floreras::::florerande:
+861649r3<egennamn>Flores:Flores:Flores
+774994r4<substantiv>florett:florett:floretts:floretten:florettens:floretter:floretters:floretterna:floretternas
+CUSTOM: y y florett
+775002r3<substantiv>florettstöt::::::::
+COMPOUND(774994, 551967): florett + stöt
+854424r3<egennamn>Florian:Florian:Florians
+722700r3<egennamn>Florida:Florida:Floridas
+CUSTOM: y n Florida
+836062r3<substantiv>florilegium:florilegium:florilegiums:florilegiet:florilegiets:florilegier:florilegiers:florilegierna:florilegiernas
+656808r3<substantiv>florin:florin:florins:florinen:florinens:floriner:floriners:florinerna:florinernas
+656812r3<substantiv>florist:florist:florists:floristen:floristens:florister:floristers:floristerna:floristernas
+CUSTOM: y y florist
+871512r3<substantiv>floristik:floristik:floristiks:floristiken:floristikens::::
+580076r3<adjektiv>floristisk:floristisk:floristiskt:floristiska:floristiska::::
+836070r3<adjektiv>florslätt:florslätt:florslätt:florslätta:florslätta::::
+741897r3<substantiv>florsocker:florsocker:florsockers:florsockret:florsockrets:!:!:!:!
+836072r3<adjektiv>florstunn:florstunn:florstunt:florstunna:florstunna::::
+836075r3<adjektiv>flortunn:flortunn:flortunt:flortunna:flortunna::::
+836078r4<substantiv>flortyg:flortyg:flortygs:flortyget:flortygets:flortyger, flortyg:flortygers, flortygs:flortygerna, flortygen:flortygernas, flortygens
+COMPOUND(628020, 600498): flor + tyg
+656814r3<substantiv>floskel:floskel:floskels:floskeln:floskelns:floskler:flosklers:flosklerna:flosklernas
+CUSTOM: y y floskel
+563754r3<adjektiv>floskelfri:floskelfri:floskelfritt:floskelfria:floskelfria::::
+564820r3<adjektiv>floskulös:floskulös:floskulöst:floskulösa:floskulösa::::
+677579r6<substantiv>flossa:flossa:flossas:flossan:flossans:flossor:flossors:flossorna:flossornas
+CUSTOM: y y flossa
+790902r3<adjektiv>flossad:flossad:flossat:flossade:flossade:!:!:!:
+677587r3<substantiv>flossamatta::::::::
+COMPOUND(677579, 555187): flossa + matta
+677589r4<substantiv>flossateknik:flossateknik:flossatekniks:flossatekniken:flossateknikens:flossatekniker:flossateknikers:flossateknikerna:flossateknikernas
+COMPOUND(677579, 603854): flossa + teknik
+677600r4<substantiv>flossavävnad:flossavävnad:flossavävnads:flossavävnaden:flossavävnadens:flossavävnader:flossavävnaders:flossavävnaderna:flossavävnadernas
+COMPOUND(677579, 550795): flossa + vävnad
+836088r3<substantiv>flotation:flotation:flotations:flotationen:flotationens::::
+561475r3<substantiv>flott:flott:flotts:flottet:flottets:!:!:!:!
+561477r4<adjektiv>flott:flott:flott:flotta:flotta:flottare:flottast:flottaste:
+561478r5<substantiv>flotta:flotta:flottas:flottan:flottans:flottor:flottors:flottorna:flottornas
+977988r4<verb>flotta:flotta:flottade:flottat:flottar:flotta:flottas:flottades:flottats:flottas:flottad:flottat:flottade:flottande:
+CUSTOM: y n
+627831r3<substantiv>flottare:flottare:flottares:flottaren:flottarens:flottare:flottares:flottarna:flottarnas
+CUSTOM: y y flottar
+569065r3<adjektiv>flottbar:flottbar:flottbart:flottbara:flottbara::::
+876258r3<substantiv>flottblockad:flottblockad:flottblockads:flottblockaden:flottblockadens:flottblockader:flottblockaders:flottblockaderna:flottblockadernas
+561480r5<substantiv>flotte:flotte:flottes:flotten:flottens:flottar:flottars:flottarna:flottarnas
+BASEWORDS: flott
+CUSTOM: y y flott
+819162r3<substantiv>flotthet:flotthet:flotthets:flottheten:flotthetens::::
+561481r4<adjektiv>flottig:flottig:flottigt:flottiga:flottiga:flottigare:flottigast:flottigaste:flottige
+836104r3<substantiv>flottighet:flottighet:flottighets:flottigheten:flottighetens::::
+561484r5<substantiv>flottilj:flottilj:flottiljs:flottiljen:flottiljens:flottiljer:flottiljers:flottiljerna:flottiljernas
+CUSTOM: y y flottilj
+775003r3<substantiv>flottiljledare::::::::
+COMPOUND(561484, 609818): flottilj + ledare
+656816r3<substantiv>flottist:flottist:flottists:flottisten:flottistens:flottister:flottisters:flottisterna:flottisternas
+CUSTOM: y y flottist
+671394r5<substantiv>flottled:flottled:flottleds:flottleden:flottledens:flottleder:flottleders:flottlederna:flottledernas
+COMPOUND(561480, 556257): flotte + led
+CUSTOM: y y flottleds
+671403r4<substantiv>flottledsavgift:flottledsavgift:flottledsavgifts:flottledsavgiften:flottledsavgiftens:flottledsavgifter:flottledsavgifters:flottledsavgifterna:flottledsavgifternas
+COMPOUND(671394, 548299): flottled + avgift
+596785r5<substantiv>flottning:flottning:flottnings:flottningen:flottningens:flottningar:flottningars:flottningarna:flottningarnas
+CUSTOM: y y flottnings
+670890r4<substantiv>flottningsavgift:flottningsavgift:flottningsavgifts:flottningsavgiften:flottningsavgiftens:flottningsavgifter:flottningsavgifters:flottningsavgifterna:flottningsavgifternas
+COMPOUND(596785, 548299): flottning + avgift
+569068r3<adjektiv>flottningsbar:flottningsbar:flottningsbart:flottningsbara:flottningsbara::::
+565859r3<adjektiv>flottningsduglig:flottningsduglig:flottningsdugligt:flottningsdugliga:flottningsdugliga::::
+596793r3<substantiv>flottningsförening:flottningsförening:flottningsförenings:flottningsföreningen:flottningsföreningens:flottningsföreningar:flottningsföreningars:flottningsföreningarna:flottningsföreningarnas
+CUSTOM: y y flottningsförenings
+836108r4<substantiv>flottningsled:flottningsled:flottningsleds:flottningsleden:flottningsledens:flottningsleder:flottningsleders:flottningslederna:flottningsledernas
+COMPOUND(596785, 556257): flottning + led
+766849r5<substantiv>flottyr:flottyr:flottyrs:flottyren:flottyrens:flottyrer:flottyrers:flottyrerna:flottyrernas
+CUSTOM: y y flottyr
+766848r4<verb>flottyrkoka:flottyrkoka:flottyrkokade, flottyrkokte:flottyrkokat, flottyrkokt:flottyrkokar:flottyrkoka:flottyrkokas:flottyrkokades, flottyrkoktes:flottyrkokats, flottyrkokts:flottyrkokas:flottyrkokt, flottyrkokad:flottyrkokt, flottyrkokat:flottyrkokta, flottyrkokade:flottyrkokande:
+COMPOUND(766849, 547159): flottyr + koka
+836120r4<substantiv>flottör:flottör:flottörs:flottören:flottörens:flottörer:flottörers:flottörerna:flottörernas
+CUSTOM: y y flottör
+836128r3<substantiv>flottöraxel::::::::
+COMPOUND(836120, 592030): flottör + axel
+961250r3<substantiv>flox:flox:flox:floxen:floxens::::
+CUSTOM: y n
+836129r3<substantiv>floxblomma:floxblomma:floxblommas:floxblomman:floxblommans:floxblommor:floxblommors:floxblommorna:floxblommornas
+836137r3<substantiv>fluff:fluff:fluffs:fluffen:fluffens::::
+836141r3<verb>fluffa:fluffa:fluffade:fluffat:fluffar:fluffa:fluffas:fluffades:fluffats:fluffas:fluffad:fluffat:fluffade:fluffande:
+561485r3<adjektiv>fluffig:fluffig:fluffigt:fluffiga:fluffiga:fluffigare:fluffigast:fluffigaste:
+759659r3<substantiv>fluffighet:fluffighet:fluffighets:fluffigheten:fluffighetens::::
+836150r3<substantiv>fluffmassa:fluffmassa:fluffmassas:fluffmassan:fluffmassans:fluffmassor:fluffmassors:fluffmassorna:fluffmassornas
+561489r6<substantiv>fluga:fluga:flugas:flugan:flugans:flugor:flugors:flugorna:flugornas
+CUSTOM: y y flug
+638122r6<verb>flugfiska:flugfiska:flugfiskade:flugfiskat:flugfiskar:flugfiska:flugfiskas:flugfiskades:flugfiskats:flugfiskas:flugfiskad:flugfiskat:flugfiskade:flugfiskande:
+COMPOUND(561489, 546545): fluga + fiska
+572459r3<adjektiv>flugig:flugig:flugigt:flugiga:flugiga::::
+977995r3<substantiv>flugighet:flugighet:flugighets:flugigheten:flugighetens::::
+705995r4<substantiv>fluglarv:fluglarv:fluglarvs:fluglarven:fluglarvens:fluglarver:fluglarvers:fluglarverna:fluglarvernas
+COMPOUND(561489, 549904): fluga + larv
+836158r3<substantiv>flugsmälla:flugsmälla:flugsmällas:flugsmällan:flugsmällans:flugsmällor:flugsmällors:flugsmällorna:flugsmällornas
+741901r3<substantiv>flugsnappare:flugsnappare:flugsnappares:flugsnapparen:flugsnapparens:flugsnappare:flugsnappares:flugsnapparna:flugsnapparnas
+836166r3<substantiv>flugspö:flugspö:flugspös:flugspöet:flugspöets:flugspön:flugspöns:flugspöna:flugspönas
+656822r3<substantiv>flugsvamp:flugsvamp:flugsvamps:flugsvampen:flugsvampens:flugsvampar:flugsvampars:flugsvamparna:flugsvamparnas
+775004r3<substantiv>flugviktare:flugviktare:flugviktares:flugviktaren:flugviktarens:flugviktare:flugviktares:flugviktarna:flugviktarnas
+977999r3<adjektiv>fluid:fluid:!:fluida:fluida::::::::::::
+719380r5<substantiv>fluid:fluid:fluids:fluiden:fluidens:fluider:fluiders:fluiderna:fluidernas
+CUSTOM: n n y
+719391r4<substantiv>fluiddynamik:fluiddynamik:fluiddynamiks:fluiddynamiken:fluiddynamikens::::
+COMPOUND(719380, 656421): fluid + dynamik
+589305r4<verb>fluidisera:fluidisera:fluidiserade:fluidiserat:fluidiserar:fluidisera:fluidiseras:fluidiserades:fluidiserats:fluidiseras:fluidiserad:fluidiserat:fluidiserade:fluidiserande:
+836174r3<substantiv>fluidisering:fluidisering:fluidiserings:fluidiseringen:fluidiseringens::::
+978001r3<substantiv>fluiditet:fluiditet:fluiditets:fluiditeten:fluiditetens::::
+719389r4<substantiv>fluidmekanik:fluidmekanik:fluidmekaniks:fluidmekaniken:fluidmekanikens::::
+COMPOUND(719380, 550023): fluid + mekanik
+836178r3<substantiv>fluidum:fluidum:fluidums:fluidet:fluidets:fluider:fluiders:fluiderna:fluidernas
+836182r3<substantiv>flukt:flukt:flukts:flukten:fluktens:flukter:flukters:flukterna:flukternas
+738084r3<verb>flukta:flukta:fluktade:fluktat:fluktar:flukta:fluktas:fluktades:fluktats:fluktas::::fluktande:
+741907r3<substantiv>fluktuation:fluktuation:fluktuations:fluktuationen:fluktuationens:fluktuationer:fluktuationers:fluktuationerna:fluktuationernas
+589309r5<verb>fluktuera:fluktuera:fluktuerade:fluktuerat:fluktuerar:fluktuera:::::fluktuerad:fluktuerat:fluktuerade:fluktuerande:
+836190r3<substantiv>fluktuering:fluktuering:fluktuerings:fluktueringen:fluktueringens:fluktueringar:fluktueringars:fluktueringarna:fluktueringarnas
+629303r3<substantiv>flum:flum:flums:flummet:flummets::::
+836198r3<substantiv>flumliberal:flumliberal:flumliberals:flumliberalen:flumliberalens:flumliberaler:flumliberalers:flumliberalerna:flumliberalernas
+797662r3<adjektiv>flumliberal:flumliberal:flumliberalt:flumliberala:flumliberala::::
+629305r4<verb>flumma:flumma:flummade:flummat:flummar:flumma:flummas:flummades:flummats:flummas::::flummande:
+836206r3<substantiv>flummare:flummare:flummares:flummaren:flummarens:flummare:flummares:flummarna:flummarnas
+561490r3<adjektiv>flummig:flummig:flummigt:flummiga:flummiga:flummigare:flummigast:flummigaste:flummige
+775010r4<substantiv>flummighet:flummighet:flummighets:flummigheten:flummighetens:flummigheter:flummigheters:flummigheterna:flummigheternas
+775014r3<substantiv>flumpedagogik:flumpedagogik:flumpedagogiks:flumpedagogiken:flumpedagogikens::::
+914010r3<substantiv>flumskola:flumskola:flumskolas:flumskolan:flumskolans:flumskolor:flumskolors:flumskolorna:flumskolornas
+836216r3<substantiv>flumvänster:flumvänster:flumvänsters:flumvänstern:flumvänsterns::::
+721529r3<substantiv>flundra:flundra:flundras:flundran:flundrans:flundror:flundrors:flundrorna:flundrornas
+836220r3<substantiv>flunsa:flunsa:flunsas:flunsan:flunsans:flunsor:flunsors:flunsorna:flunsornas
+656823r5<substantiv>fluor:fluor:fluors:fluoren, fluoret:fluorens, fluorets:!:!:!:!
+CUSTOM: y y fluor
+589310r4<verb>fluorera:fluorera:fluorerade:fluorerat:fluorerar:fluorera:fluoreras:fluorerades:fluorerats:fluoreras:fluorerad:fluorerat:fluorerade:fluorerande:
+775018r3<substantiv>fluorescens:fluorescens:fluorescens:fluorescensen:fluorescensens::::
+589314r4<verb>fluorescera:fluorescera:fluorescerade:fluorescerat:fluorescerar:fluorescera:fluoresceras:fluorescerades:fluorescerats:fluoresceras:fluorescerad:fluorescerat:fluorescerade:fluorescerande:
+836228r3<substantiv>fluorescering:fluorescering:fluorescerings:fluoresceringen:fluoresceringens::::
+572462r3<adjektiv>fluorhaltig:fluorhaltig:fluorhaltigt:fluorhaltiga:fluorhaltiga::::
+775021r4<substantiv>fluorid:fluorid:fluorids:fluoriden:fluoridens:fluorider:fluoriders:fluoriderna:fluoridernas
+589318r4<verb>fluoridera:fluoridera:fluoriderade:fluoriderat:fluoriderar:fluoridera:fluorideras:fluoriderades:fluoriderats:fluorideras:fluoriderad:fluoriderat:fluoriderade:fluoriderande:
+836236r3<substantiv>fluoridering:fluoridering:fluoriderings:fluorideringen:fluorideringens::::
+800943r3<adjektiv>fluoriserande:fluoriserande:fluoriserande:fluoriserande:fluoriserande:!:!:!:
+734233r4<substantiv>fluortandkräm:fluortandkräm:fluortandkräms:fluortandkrämen:fluortandkrämens:fluortandkrämer:fluortandkrämers:fluortandkrämerna:fluortandkrämernas
+COMPOUND(656823, 603822): fluor + tandkräm
+951133r4<substantiv>fluorväte:fluorväte:fluorvätes:fluorvätet:fluorvätets:!:!:!:!
+COMPOUND(656823, 624021): fluor + väte
+836240r3<substantiv>fluorvätesyra:fluorvätesyra:fluorvätesyras:fluorvätesyran:fluorvätesyrans:fluorvätesyror:fluorvätesyrors:fluorvätesyrorna:fluorvätesyrornas
+836248r3<substantiv>flush:flush:flushs:flushen:flushens:flusher:flushers:flusherna:flushernas
+790905r3<adjektiv>flushdäckad:flushdäckad:flushdäckat:flushdäckade:flushdäckade:!:!:!:
+690132r6<substantiv>fluss:fluss:fluss:flussen:flussens:flusser:flussers:flusserna:flussernas
+CUSTOM: y n
+836256r3<substantiv>flussglas:flussglas:flussglas:flussglaset:flussglasets:flussglas:flussglas:flussglasen:flussglasens
+836261r3<substantiv>flussmedel:flussmedel:flussmedels:flussmedlet:flussmedlets:flussmedel:flussmedels:flussmedlen:flussmedlens
+978005r3<substantiv>flusspat:flusspat:flusspats:flusspaten:flusspatens::::
+836267r3<substantiv>fluster:fluster:flusters:flustret:flustrets:fluster:flusters:flustren:flustrens
+836273r3<substantiv>flusterbräde:flusterbräde:flusterbrädes:flusterbrädet:flusterbrädets:flusterbräden:flusterbrädens:flusterbrädena:flusterbrädenas
+797665r3<adjektiv>fluvial:fluvial:fluvialt:fluviala:fluviala::::
+628118r4<substantiv>fly:fly:flys:flyt:flyts:flyn:flyns:flyna:flynas
+DEFINITION 1: Den del av ett ankare som fattar tag.
+628111r4<substantiv>fly:fly:flys:flyet:flyets:flyn:flyns:flyna:flynas
+558848r10<verb>fly:fly:flydde:flytt:flyr:fly:flys:flyddes:flytts:flys:flydd:flytt:flydda:flyende:
+836281r3<substantiv>flyende:flyende:flyendes:flyendet:flyendets::::
+940924r3<substantiv>flyer:flyer:flyers:flyern:flyerns::::
+790908r3<adjektiv>flyfotad:flyfotad:flyfotat:flyfotade:flyfotade:!:!:!:
+561495r25<substantiv>flyg:flyg:flygs:flyget:flygets:flyg:flygs:flygen:flygens
+BASEWORDS: flyg
+CUSTOM: y y flyg
+556550r14<verb>flyga:flyga:flög:flugit:flyger:flyg:flygas:flögs:flugits:flygs, flyges:flugen:fluget:flugna:flygande:flöge
+CUSTOM: y y flyg !flöge %flöge
+690137r3<substantiv>flygande:flygande:flygandes:flygandet:flygandets::::
+609495r5<substantiv>flygare:flygare:flygares:flygaren:flygarens:flygare:flygares:flygarna:flygarnas
+CUSTOM: y y flygar
+849743r3<substantiv>flygaress:flygaress:flygaress:flygaresset:flygaressets:flygaress:flygaress:flygaressen:flygaressens
+849748r3<substantiv>flygaräss:flygaräss:flygaräss:flygarässet:flygarässets:flygaräss:flygaräss:flygarässen:flygarässens
+569071r3<adjektiv>flygbar:flygbar:flygbart:flygbara:flygbara::::
+928663r4<substantiv>flygbas:flygbas:flygbas:flygbasen:flygbasens:flygbaser:flygbasers:flygbaserna:flygbasernas
+COMPOUND(561495, 548351): flyg + bas
+656827r4<substantiv>flygbild:flygbild:flygbilds:flygbilden:flygbildens:flygbilder:flygbilders:flygbilderna:flygbildernas
+COMPOUND(561495, 548373): flyg + bild
+561496r3<substantiv>flygblad:flygblad:flygblads:flygbladet:flygbladets:flygblad:flygblads:flygbladen:flygbladens
+CUSTOM: y y flygblads
+861168r4<substantiv>flygbolag:flygbolag:flygbolags:flygbolaget:flygbolagets:flygbolag:flygbolags:flygbolagen:flygbolagens
+COMPOUND(561495, 552264): flyg + bolag
+861159r4<substantiv>flygbransch:flygbransch:flygbranschs:flygbranschen:flygbranschens:flygbranscher:flygbranschers:flygbranscherna:flygbranschernas
+COMPOUND(561495, 548446): flyg + bransch
+845645r3<adjektiv>flygburen:flygburen:flygburet:flygburna:flygburna::::
+561502r3<substantiv>flygbåt:flygbåt:flygbåts:flygbåten:flygbåtens:flygbåtar:flygbåtars:flygbåtarna:flygbåtarnas
+561510r4<substantiv>flygel:flygel:flygels:flygeln:flygelns:flyglar:flyglars:flyglarna:flyglarnas
+CUSTOM: y y flygel
+836285r3<substantiv>flygeldörr::::::::
+COMPOUND(561510, 551088): flygel + dörr
+711808r4<substantiv>flygfoto:flygfoto:flygfotos:flygfotot:flygfotots:flygfoton:flygfotons:flygfotona:flygfotonas
+COMPOUND(561495, 624126): flyg + foto
+586655r5<verb>flygfotografera:flygfotografera:flygfotograferade:flygfotograferat:flygfotograferar:flygfotografera:flygfotograferas:flygfotograferades:flygfotograferats:flygfotograferas:flygfotograferad:flygfotograferat:flygfotograferade:flygfotograferande:
+COMPOUND(561495, 546582): flyg + fotografera
+656831r4<substantiv>flygfä:flygfä:flygfäs:flygfäet:flygfäets:flygfän:flygfäns:flygfäna:flygfänas
+COMPOUND(556550, 557666): flyga + fä
+607086r3<substantiv>flygfält:flygfält:flygfälts:flygfältet:flygfältets:flygfält:flygfälts:flygfälten:flygfältens
+572465r3<adjektiv>flygfärdig:flygfärdig:flygfärdigt:flygfärdiga:flygfärdiga::::
+741915r4<substantiv>flygförbud:flygförbud:flygförbuds:flygförbudet:flygförbudets::::
+CUSTOM: y y flygförbuds
+741924r3<substantiv>flygförbudszon::::::::
+COMPOUND(741915, 550796): flygförbud + zon
+951137r4<substantiv>flyghavre:flyghavre:flyghavres:flyghavren:flyghavrens::::
+COMPOUND(556550, 643233): flyga + havre
+945881r3<egennamn>Flyghed:Flyghed:Flygheds
+861140r4<substantiv>flygindustri:flygindustri:flygindustris:flygindustrin:flygindustrins:flygindustrier:flygindustriers:flygindustrierna:flygindustriernas
+COMPOUND(561495, 610799): flyg + industri
+790911r3<adjektiv>flygintresserad:flygintresserad:flygintresserat:flygintresserade:flygintresserade:!:!:!:
+601851r4<substantiv>flygkapten:flygkapten:flygkaptens:flygkaptenen:flygkaptenens:flygkaptener:flygkapteners:flygkaptenerna:flygkaptenernas
+COMPOUND(561495, 549461): flyg + kapten
+938904r4<substantiv>flygkrasch:flygkrasch:flygkraschs:flygkraschen:flygkraschens:flygkrascher:flygkraschers:flygkrascherna:flygkraschernas
+COMPOUND(561495, 549761): flyg + krasch
+712187r4<substantiv>flygkropp:flygkropp:flygkropps:flygkroppen:flygkroppens:flygkroppar:flygkroppars:flygkropparna:flygkropparnas
+COMPOUND(561495, 551627): flyg + kropp
+572468r4<adjektiv>flygkunnig:flygkunnig:flygkunnigt:flygkunniga:flygkunniga::::
+COMPOUND(556550, 574073): flyga + kunnig
+930662r4<substantiv>flygkår:flygkår:flygkårs:flygkåren:flygkårens:flygkårer:flygkårers:flygkårerna:flygkårernas
+COMPOUND(561495, 559877): flyg + kår
+615217r3<substantiv>flygledare:flygledare:flygledares:flygledaren:flygledarens:flygledare:flygledares:flygledarna:flygledarnas
+CUSTOM: y y flygledar
+688982r7<adverb>flygledes:flygledes
+596801r4<substantiv>flygledning:flygledning:flyglednings:flygledningen:flygledningens:flygledningar:flygledningars:flygledningarna:flygledningarnas
+COMPOUND(561495, 551696): flyg + ledning
+CUSTOM: y y flyglednings
+836286r3<substantiv>flyglotta:flyglotta:flyglottas:flyglottan:flyglottans:flyglottor:flyglottors:flyglottorna:flyglottornas
+656835r4<substantiv>flygmaskin:flygmaskin:flygmaskins:flygmaskinen:flygmaskinens:flygmaskiner:flygmaskiners:flygmaskinerna:flygmaskinernas
+COMPOUND(556550, 550005): flyga + maskin
+580079r3<adjektiv>flygmekanisk:flygmekanisk:flygmekaniskt:flygmekaniska:flygmekaniska::::
+938585r3<substantiv>flygmyra:flygmyra:flygmyras:flygmyran:flygmyrans:flygmyror:flygmyrors:flygmyrorna:flygmyrornas
+656837r6<substantiv>flygning:flygning:flygnings:flygningen:flygningens:flygningar:flygningars:flygningarna:flygningarnas
+CUSTOM: y y flygnings +flygnings
+674245r4<substantiv>flygofficer:flygofficer:flygofficers:flygofficeren, flygofficern:flygofficerens, flygofficerns:flygofficerer, flygofficerare:flygofficerers, flygofficerare:flygofficererna, flygofficerarna:flygofficerernas, flygofficerarnas
+COMPOUND(561495, 603028): flyg + officer
+607092r17<substantiv>flygplan:flygplan:flygplans:flygplanet:flygplanets:flygplan:flygplans:flygplanen:flygplanens
+DEFINITION 1: Motordriven maskin med vingar för olika former av aktivitet i luften. Används oftast för varu- och/eller persontransporter över längre avstånd.
+BASEWORDS: flygplans
+CUSTOM: y y flygplans +flygplans
+601859r3<substantiv>flygplansfabrik:flygplansfabrik:flygplansfabriks:flygplansfabriken:flygplansfabrikens:flygplansfabriker:flygplansfabrikers:flygplansfabrikerna:flygplansfabrikernas
+861446r4<substantiv>flygplanshaveri:flygplanshaveri:flygplanshaveris:flygplanshaveriet:flygplanshaveriets:flygplanshaverier:flygplanshaveriers:flygplanshaverierna:flygplanshaveriernas
+COMPOUND(607092, 643213): flygplan + haveri
+610689r3<substantiv>flygplansindustri:flygplansindustri:flygplansindustris:flygplansindustrin:flygplansindustrins:flygplansindustrier:flygplansindustriers:flygplansindustrierna:flygplansindustriernas
+861429r4<substantiv>flygplansmodell:flygplansmodell:flygplansmodells:flygplansmodellen:flygplansmodellens:flygplansmodeller:flygplansmodellers:flygplansmodellerna:flygplansmodellernas
+COMPOUND(607092, 550047): flygplan + modell
+610697r3<substantiv>flygplansmotor:flygplansmotor:flygplansmotors:flygplansmotorn:flygplansmotorns:flygplansmotorer:flygplansmotorers:flygplansmotorerna:flygplansmotorernas
+601867r3<substantiv>flygplansmotorfabrik:flygplansmotorfabrik:flygplansmotorfabriks:flygplansmotorfabriken:flygplansmotorfabrikens:flygplansmotorfabriker:flygplansmotorfabrikers:flygplansmotorfabrikerna:flygplansmotorfabrikernas
+762760r4<substantiv>flygplansmärke:flygplansmärke:flygplansmärkes:flygplansmärket:flygplansmärkets:flygplansmärken:flygplansmärkens:flygplansmärkena:flygplansmärkenas
+COMPOUND(607092, 619020): flygplan + märke
+728960r4<substantiv>flygplansolycka:flygplansolycka:flygplansolyckas:flygplansolyckan:flygplansolyckans:flygplansolyckor:flygplansolyckors:flygplansolyckorna:flygplansolyckornas
+COMPOUND(607092, 560318): flygplan + olycka
+733332r4<substantiv>flygplansrullning:flygplansrullning:flygplansrullnings:flygplansrullningen:flygplansrullningens:flygplansrullningar:flygplansrullningars:flygplansrullningarna:flygplansrullningarnas
+COMPOUND(607092, 696448): flygplan + rullning
+861455r4<substantiv>flygplanstillverkare:flygplanstillverkare:flygplanstillverkares:flygplanstillverkaren:flygplanstillverkarens:flygplanstillverkare:flygplanstillverkares:flygplanstillverkarna:flygplanstillverkarnas
+COMPOUND(607092, 615486): flygplan + tillverkare
+861437r4<substantiv>flygplanstyp:flygplanstyp:flygplanstyps:flygplanstypen:flygplanstypens:flygplanstyper:flygplanstypers:flygplanstyperna:flygplanstypernas
+COMPOUND(607092, 550722): flygplan + typ
+601875r3<substantiv>flygplats:flygplats:flygplats:flygplatsen:flygplatsens:flygplatser:flygplatsers:flygplatserna:flygplatsernas
+CUSTOM: y y flygplats
+836306r3<substantiv>flygraid:flygraid:flygraids:flygraiden:flygraidens:flygraider:flygraiders:flygraiderna:flygraidernas
+561512r3<substantiv>flygresa:flygresa:flygresas:flygresan:flygresans:flygresor:flygresors:flygresorna:flygresornas
+849753r3<substantiv>flygräd:flygräd:flygräds:flygräden:flygrädens:flygräder:flygräders:flygräderna:flygrädernas
+802264r4<adjektiv>flygrädd:flygrädd:!:flygrädda:flygrädda:flygräddare:flygräddast:flygräddaste:flygrädde
+951141r3<substantiv>flygrönn:flygrönn:flygrönns:flygrönnen:flygrönnens:flygrönnar:flygrönnars:flygrönnarna:flygrönnarnas
+978009r3<substantiv>flygsandsfält:flygsandsfält:flygsandsfälts:flygsandsfältet:flygsandsfältets:flygsandsfält:flygsandsfälts:flygsandsfälten:flygsandsfältens
+978016r3<substantiv>flygsandsområde:flygsandsområde:flygsandsområdes:flygsandsområdet:flygsandsområdets:flygsandsområden:flygsandsområdens:flygsandsområdena:flygsandsområdenas
+978025r4<substantiv>flygsimulator:flygsimulator:flygsimulators:flygsimulatorn:flygsimulatorns:flygsimulatorer:flygsimulatorers:flygsimulatorerna:flygsimulatorernas
+COMPOUND(561495, 665543): flyg + simulator
+790914r3<adjektiv>flygsinnad:flygsinnad:flygsinnat:flygsinnade:flygsinnade:!:!:!:
+901934r4<substantiv>flygstopp:flygstopp:flygstopps:flygstoppet:flygstoppets:flygstopp:flygstopps:flygstoppen:flygstoppens
+COMPOUND(561495, 608140): flyg + stopp
+836314r4<substantiv>flygstrid:flygstrid:flygstrids:flygstriden:flygstridens:flygstrider:flygstriders:flygstriderna:flygstridernas
+COMPOUND(561495, 619729): flyg + strid
+836315r3<substantiv>flygstridskraft:::::flygstridskrafter:flygstridskrafters:flygstridskrafterna:flygstridskrafternas
+580082r3<adjektiv>flygteknisk:flygteknisk:flygtekniskt:flygtekniska:flygtekniska::::
+601876r3<substantiv>flygterminal:flygterminal:flygterminals:flygterminalen:flygterminalens:flygterminaler:flygterminalers:flygterminalerna:flygterminalernas
+928670r4<substantiv>flygtid:flygtid:flygtids:flygtiden:flygtidens:flygtider:flygtiders:flygtiderna:flygtidernas
+COMPOUND(561495, 550665): flyg + tid
+561520r3<substantiv>flygtur:flygtur:flygturs:flygturen:flygturens:flygturer:flygturers:flygturerna:flygturernas
+759973r5<substantiv>flygvapen:flygvapen:flygvapens:flygvapnet:flygvapnets:flygvapen:flygvapens:flygvapnen:flygvapnens
+COMPOUND(561495, 559381): flyg + vapen
+CUSTOM: y y flygvapen
+759979r3<substantiv>flygvapenchef::::::::
+COMPOUND(759973, 548529): flygvapen + chef
+930670r4<substantiv>flygväg:flygväg:flygvägs:flygvägen:flygvägens:flygvägar:flygvägars:flygvägarna:flygvägarnas
+COMPOUND(556550, 552110): flyga + väg
+594034r3<substantiv>flygvärdinna:flygvärdinna:flygvärdinnas:flygvärdinnan:flygvärdinnans:flygvärdinnor:flygvärdinnors:flygvärdinnorna:flygvärdinnornas
+656838r4<adjektiv>flyhänt:flyhänt:flyhänt:flyhänta:flyhänta:flyhäntare:flyhäntast:flyhäntaste:flyhänte
+836323r3<substantiv>flyhänthet:flyhänthet:flyhänthets:flyhäntheten:flyhänthetens::::
+548935r6<substantiv>flykt:flykt:flykts:flykten:flyktens:flykter:flykters:flykterna:flykternas
+CUSTOM: y y flykt
+690139r4<verb>flykta:flykta:flyktade:flyktat:flyktar:flykta:flyktas:flyktades:flyktats:flyktas:flyktad:flyktat:flyktade:flyktande:
+934031r4<substantiv>flyktbil:flyktbil:flyktbils:flyktbilen:flyktbilens:flyktbilar:flyktbilars:flyktbilarna:flyktbilarnas
+COMPOUND(548935, 550885): flykt + bil
+561528r5<adjektiv>flyktig:flyktig:flyktigt:flyktiga:flyktiga:flyktigare:flyktigast:flyktigaste:flyktige
+741919r4<substantiv>flyktighet:flyktighet:flyktighets:flyktigheten:flyktighetens:flyktigheter:flyktigheters:flyktigheterna:flyktigheternas
+561529r7<substantiv>flykting:flykting:flyktings:flyktingen:flyktingens:flyktingar:flyktingars:flyktingarna:flyktingarnas
+CUSTOM: y y flykting +flykting
+561530r3<substantiv>flyktingfamilj:flyktingfamilj:flyktingfamiljs:flyktingfamiljen:flyktingfamiljens:flyktingfamiljer:flyktingfamiljers:flyktingfamiljerna:flyktingfamiljernas
+565862r3<adjektiv>flyktingfientlig:flyktingfientlig:flyktingfientligt:flyktingfientliga:flyktingfientliga::::
+836333r3<substantiv>flyktinggömmare:flyk

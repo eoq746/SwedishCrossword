@@ -1,0 +1,612 @@
+ulas:trulades:trulats:trulas::::trulande:!
+CUSTOM: n n y
+568227r4<adjektiv>trulig:trulig:truligt:truliga:truliga:truligare:truligast:truligaste:trulige
+935382r3<interjektion>trull:trull
+CUSTOM: n n y
+577820r3<adjektiv>trulsig:trulsig:trulsigt:trulsiga:trulsiga::::
+634081r6<substantiv>trumf:trumf:trumfs:trumfen, trumfet:trumfens, trumfets:trumfar, trumf:trumfars, trumfs:trumfarna:trumfarnas
+CUSTOM: y y trumf
+547873r5<verb>trumfa:trumfa:trumfade:trumfat:trumfar:trumfa:trumfas:trumfades:trumfats:trumfas::::trumfande:
+895924r4<substantiv>trumfess:trumfess, trumfäss:trumfess, trumfäss:trumfesset, trumfässet:trumfessets, trumfässets:trumfess, trumfäss:trumfess, trumfäss:trumfessen, trumfässen:trumfessens, trumfässens
+COMPOUND(634081, 558417): trumf + äss, ess
+633229r5<substantiv>trumfkort:trumfkort:trumfkorts:trumfkortet:trumfkortets:trumfkort:trumfkorts:trumfkorten:trumfkortens
+COMPOUND(634081, 552580): trumf + kort
+853195r3<substantiv>trumfäss:trumfäss:trumfäss:trumfässet:trumfässets:trumfäss:trumfäss:trumfässen:trumfässens
+953271r4<substantiv>trumgung:trumgung:trumgungs:trumgunget:trumgungets::::
+COMPOUND(632362, 628100): trumma + gung
+673936r3<substantiv>trumhinna:trumhinna:trumhinnas:trumhinnan:trumhinnans:trumhinnor:trumhinnors:trumhinnorna:trumhinnornas
+953277r4<substantiv>trumkomp:trumkomp:trumkomps:trumkompet:trumkompets::::
+COMPOUND(632362, 628265): trumma + komp
+673938r4<verb>trumma:trumma:trummade:trummat:trummar:trumma:trummas:trummades:trummats:trummas::::trummande:
+632362r10<substantiv>trumma:trumma:trummas:trumman:trummans:trummor:trummors:trummorna:trummornas
+CUSTOM: y y trum
+942171r3<substantiv>trummande:trummande:trummandes:trummandet:trummandets::::
+748821r3<substantiv>trummis:trummis:trummis:trummisen:trummisens:trummisar:trummisars:trummisarna:trummisarnas
+673939r4<adjektiv>trumpen:trumpen:trumpet:trumpna:trumpna:trumpnare:trumpnast:trumpnaste:trumpne
+550706r3<substantiv>trumpet:trumpet:trumpets:trumpeten:trumpetens:trumpeter:trumpeters:trumpeterna:trumpeternas
+CUSTOM: y y trumpet
+748828r3<verb>trumpeta:trumpeta:trumpetade:trumpetat:trumpetar:trumpeta:trumpetas:trumpetades:trumpetats:trumpetas::::trumpetande:
+732678r3<substantiv>trumpetare:trumpetare:trumpetares:trumpetaren:trumpetarens:trumpetare:trumpetares:trumpetarna:trumpetarnas
+825342r3<substantiv>trumpetist:trumpetist:trumpetists:trumpetisten:trumpetistens:trumpetister:trumpetisters:trumpetisterna:trumpetisternas
+857104r3<verb>trumpna:trumpna:trumpnade:trumpnat:trumpnar:trumpna::::::::trumpnande:
+591395r3<verb>trumpolera:trumpolera:trumpolerade:trumpolerat:trumpolerar:trumpolera:::::::::
+967158r4<substantiv>trumriff:trumriff:trumriffs:trumriffet:trumriffets:trumriff:trumriffs:trumriffen:trumriffens
+COMPOUND(632362, 848272): trumma + riff
+938241r3<substantiv>trumset:trumset:trumsets:trumsetet:trumsetets:trumset:trumsets:trumseten:trumsetens
+697400r4<substantiv>trumslag:trumslag:trumslags:trumslaget:trumslagets:trumslag:trumslags:trumslagen:trumslagens
+COMPOUND(632362, 608035): trumma + slag
+674638r4<substantiv>trumslagare:trumslagare:trumslagares:trumslagaren:trumslagarens:trumslagare:trumslagares:trumslagarna:trumslagarnas
+COMPOUND(632362, 674632): trumma + slagare
+CUSTOM: y y trumslagar
+673940r4<substantiv>trumvirvel:trumvirvel:trumvirvels:trumvirveln:trumvirvelns:trumvirvlar:trumvirvlars:trumvirvlarna:trumvirvlarnas
+COMPOUND(632362, 641694): trumma + virvel
+765012r3<substantiv>trunk:trunk:trunks:trunken:trunkens:trunkar:trunkars:trunkarna:trunkarnas
+633024r3<substantiv>trunkationsfel:trunkationsfel:trunkationsfels:trunkationsfelet:trunkationsfelets:trunkationsfel:trunkationsfels:trunkationsfelen:trunkationsfelens
+547874r8<verb>trunkera:trunkera:trunkerade:trunkerat:trunkerar:trunkera:trunkeras:trunkerades:trunkerats:trunkeras:trunkerad:trunkerat:trunkerade:trunkerande:
+633014r3<substantiv>trunkering:trunkering:trunkerings:trunkeringen:trunkeringens:trunkeringar:trunkeringars:trunkeringarna:trunkeringarnas
+CUSTOM: y y trunkerings
+550708r8<substantiv>trupp:trupp:trupps:truppen:truppens:trupper:truppers:trupperna:truppernas
+CUSTOM: y y trupp
+857109r3<substantiv>truppföring:truppföring:truppförings:truppföringen:truppföringens:truppföringar:truppföringars:truppföringarna:truppföringarnas
+728758r4<substantiv>truppmina:truppmina:truppminas:truppminan:truppminans:truppminor:truppminors:truppminorna:truppminornas
+COMPOUND(550708, 555484): trupp + mina
+550709r3<substantiv>trust:trust:trusts:trusten:trustens:truster:trusters:trusterna:trusternas
+552047r3<substantiv>trut:trut:truts:truten:trutens:trutar:trutars:trutarna:trutarnas
+748836r3<verb>truta:truta:trutade:trutat:trutar:truta:::::::::
+CUSTOM: y n
+923746r3<substantiv>try:try:trys:tryn:tryns::::
+CUSTOM: n n y
+553063r30<substantiv>tryck:tryck:trycks:trycket:tryckets:tryck:trycks:trycken:tryckens
+CUSTOM: y y tryck +trycks
+585845r12<verb>trycka:trycka:tryckte:tryckt:trycker:tryck:tryckas:trycktes:tryckts:trycks, tryckes:tryckt:tryckt:tryckta:tryckande:
+CUSTOM: y y tryck
+697406r3<substantiv>tryckande:tryckande:tryckandes:tryckandet:tryckandets::::
+748839r3<substantiv>tryckare:tryckare:tryckares:tryckaren:tryckarens:tryckare:tryckares:tryckarna:tryckarnas
+853200r3<substantiv>tryckark:tryckark:tryckarks:tryckarket:tryckarkets:tryckark:tryckarks:tryckarken:tryckarkens
+570307r3<adjektiv>tryckbar:tryckbar:tryckbart:tryckbara:tryckbara::::
+673942r6<substantiv>tryckeri:tryckeri:tryckeris:tryckeriet:tryckeriets:tryckerier:tryckeriers:tryckerierna:tryckeriernas
+CUSTOM: y y tryckeri
+731411r4<substantiv>tryckeribolag:tryckeribolag:tryckeribolags:tryckeribolaget:tryckeribolagets:tryckeribolag:tryckeribolags:tryckeribolagen:tryckeribolagens
+COMPOUND(673942, 552264): tryckeri + bolag
+599700r3<substantiv>tryckerisal:tryckerisal:tryckerisals:tryckerisalen:tryckerisalens:tryckerisalar:tryckerisalars:tryckerisalarna:tryckerisalarnas
+584486r3<adjektiv>tryckeriteknisk:tryckeriteknisk:tryckeritekniskt:tryckeritekniska:tryckeritekniska::::
+697408r4<substantiv>tryckfel:tryckfel:tryckfels:tryckfelet:tryckfelets:tryckfel:tryckfels:tryckfelen:tryckfelens
+COMPOUND(585845, 552375): trycka + fel
+770591r3<substantiv>tryckfelsnisse:tryckfelsnisse:tryckfelsnisses:tryckfelsnissen:tryckfelsnissens:tryckfelsnissar:tryckfelsnissars:tryckfelsnissarna:tryckfelsnissarnas
+673950r4<substantiv>tryckfrihet:tryckfrihet:tryckfrihets:tryckfriheten:tryckfrihetens:!:!:!:!
+CUSTOM: y y tryckfrihets
+673948r4<substantiv>tryckfrihetsförordning:tryckfrihetsförordning:tryckfrihetsförordnings:tryckfrihetsförordningen:tryckfrihetsförordningens:tryckfrihetsförordningar:tryckfrihetsförordningars:tryckfrihetsförordningarna:tryckfrihetsförordningarnas
+COMPOUND(673950, 673949): tryckfrihet + förordning
+CUSTOM: y y tryckfrihetsförordnings
+905992r3<egennamn>Tryckfrihetsförordningen::Tryckfrihetsförordningens
+568230r3<adjektiv>tryckfrihetsrättslig:tryckfrihetsrättslig:tryckfrihetsrättsligt:tryckfrihetsrättsliga:tryckfrihetsrättsliga::::
+577823r3<adjektiv>tryckfärdig:tryckfärdig:tryckfärdigt:tryckfärdiga:tryckfärdiga::::
+795843r3<adjektiv>tryckförpackad:tryckförpackad:tryckförpackat:tryckförpackade:tryckförpackade:!:!:!:
+731639r4<substantiv>tryckgivare:tryckgivare:tryckgivares:tryckgivaren:tryckgivarens:tryckgivare:tryckgivares:tryckgivarna:tryckgivarnas
+COMPOUND(553063, 615268): tryck + givare
+588244r5<verb>tryckimpregnera:tryckimpregnera:tryckimpregnerade:tryckimpregnerat:tryckimpregnerar:tryckimpregnera:tryckimpregneras:tryckimpregnerades:tryckimpregnerats:tryckimpregneras:tryckimpregnerad:tryckimpregnerat:tryckimpregnerade:tryckimpregnerande:
+766561r4<substantiv>tryckknapp:tryckknapp:tryckknapps:tryckknappen:tryckknappens:tryckknappar:tryckknappars:tryckknapparna:tryckknapparnas
+CUSTOM: y y tryckknapps
+795846r3<adjektiv>tryckknappsmanövrerad:tryckknappsmanövrerad:tryckknappsmanövrerat:tryckknappsmanövrerade:tryckknappsmanövrerade:!:!:!:
+766569r3<substantiv>tryckknappsmanövrering::::::::
+COMPOUND(766561, 688036): tryckknapp + manövrering
+568233r3<adjektiv>tryckkänslig:tryckkänslig:tryckkänsligt:tryckkänsliga:tryckkänsliga::::
+766570r4<substantiv>tryckluft:tryckluft:trycklufts:tryckluften:tryckluftens::::
+CUSTOM: y y trycklufts
+766574r3<substantiv>tryckluftsbehållare::::::::
+COMPOUND(766570, 592486): tryckluft + behållare
+584489r3<adjektiv>tryckluftshydraulisk:tryckluftshydraulisk:tryckluftshydrauliskt:tryckluftshydrauliska:tryckluftshydrauliska::::
+795849r3<adjektiv>tryckluftsmanövrerad:tryckluftsmanövrerad:tryckluftsmanövrerat:tryckluftsmanövrerade:tryckluftsmanövrerade:!:!:!:
+603946r3<substantiv>tryckluftssats:tryckluftssats:tryckluftssats:tryckluftssatsen:tryckluftssatsens:tryckluftssatser:tryckluftssatsers:tryckluftssatserna:tryckluftssatsernas
+795852r3<adjektiv>tryckmanövrerad:tryckmanövrerad:tryckmanövrerat:tryckmanövrerade:tryckmanövrerade:!:!:!:
+729356r4<substantiv>tryckminskning:tryckminskning:tryckminsknings:tryckminskningen:tryckminskningens:tryckminskningar:tryckminskningars:tryckminskningarna:tryckminskningarnas
+COMPOUND(553063, 616734): tryck + minskning
+673954r3<substantiv>tryckning:tryckning:trycknings:tryckningen:tryckningens:tryckningar:tryckningars:tryckningarna:tryckningarnas
+CUSTOM: y y trycknings
+608333r3<substantiv>tryckoriginal:tryckoriginal:tryckoriginals:tryckoriginalet:tryckoriginalets:tryckoriginal:tryckoriginals:tryckoriginalen:tryckoriginalens
+853206r3<substantiv>tryckort:tryckort:tryckorts:tryckorten:tryckortens:tryckorter:tryckorters:tryckorterna:tryckorternas
+588248r3<verb>tryckpolera:tryckpolera:tryckpolerade:tryckpolerat:tryckpolerar:tryckpolera:::::::::
+673955r4<substantiv>tryckpress:tryckpress:tryckpress:tryckpressen:tryckpressens:tryckpressar:tryckpressars:tryckpressarna:tryckpressarnas
+COMPOUND(553063, 559017): tryck + press
+CUSTOM: y y tryckpress
+635541r5<substantiv>tryckring:tryckring:tryckrings:tryckringen:tryckringens:tryckringar:tryckringars:tryckringarna:tryckringarnas
+COMPOUND(553063, 597520): tryck + ring
+CUSTOM: y y tryckrings
+673956r4<substantiv>trycksak:trycksak:trycksaks:trycksaken:trycksakens:trycksaker:trycksakers:trycksakerna:trycksakernas
+COMPOUND(553063, 550443): tryck + sak
+732140r4<substantiv>tryckspänning:tryckspänning:tryckspännings:tryckspänningen:tryckspänningens:tryckspänningar:tryckspänningars:tryckspänningarna:tryckspänningarnas
+COMPOUND(553063, 668975): tryck + spänning
+610157r3<substantiv>tryckströmbrytare:tryckströmbrytare:tryckströmbrytares:tryckströmbrytaren:tryckströmbrytarens:tryckströmbrytare:tryckströmbrytares:tryckströmbrytarna:tryckströmbrytarnas
+CUSTOM: y y tryckströmbrytar
+800549r3<adjektiv>tryckstyrd:tryckstyrd:tryckstyrt:tryckstyrda:tryckstyrda::::
+847196r3<adjektiv>trycksvag:trycksvag:trycksvagt:trycksvaga:trycksvaga::::
+795855r3<adjektiv>trycksvarvad:trycksvarvad:trycksvarvat:trycksvarvade:trycksvarvade:!:!:!:
+697414r4<substantiv>trycksvärta:trycksvärta:trycksvärtas:trycksvärtan:trycksvärtans::::
+COMPOUND(585845, 697415): trycka + svärta
+853214r3<substantiv>trycksår:trycksår:trycksårs:trycksåret:trycksårets:trycksår:trycksårs:trycksåren:trycksårens
+584492r3<adjektiv>tryckteknisk:tryckteknisk:trycktekniskt:trycktekniska:trycktekniska::::
+584495r3<adjektiv>trycktelegrafisk:trycktelegrafisk:trycktelegrafiskt:trycktelegrafiska:trycktelegrafiska::::
+729351r4<substantiv>tryckuppbyggnad:tryckuppbyggnad:tryckuppbyggnads:tryckuppbyggnaden:tryckuppbyggnadens::::
+COMPOUND(553063, 675737): tryck + uppbyggnad
+795858r3<adjektiv>tryckutjämnad:tryckutjämnad:tryckutjämnat:tryckutjämnade:tryckutjämnade:!:!:!:
+800552r3<adjektiv>tryckvattenkyld:tryckvattenkyld:tryckvattenkylt:tryckvattenkylda:tryckvattenkylda::::
+894954r5<substantiv>tryckvåg:tryckvåg:tryckvågs:tryckvågen:tryckvågens:tryckvågor:tryckvågors:tryckvågorna:tryckvågornas
+COMPOUND(553063, 593520): tryck + våg
+CUSTOM: y y tryckvågs
+894963r3<substantiv>tryckvågsbehandling::::::::
+COMPOUND(894954, 592479): tryckvåg + behandling
+800555r3<adjektiv>tryckvärd:tryckvärd:tryckvärt:tryckvärda:tryckvärda::::
+758635r4<substantiv>tryckår:tryckår:tryckårs:tryckåret:tryckårets:tryckår:tryckårs:tryckåren:tryckårens
+COMPOUND(553063, 553140): tryck + år
+748845r7<substantiv>tryffel:tryffel:tryffels:tryffeln:tryffelns:tryfflar:tryfflars:tryfflarna:tryfflarnas
+CUSTOM: y y tryffel
+637009r6<substantiv>tryffelsmör:tryffelsmör:tryffelsmörs:tryffelsmöret:tryffelsmörets:!:!:!:!
+COMPOUND(748845, 622554): tryffel + smör
+945572r4<substantiv>tryffelspor:tryffelspor:tryffelspors:tryffelsporen:tryffelsporens:tryffelsporer:tryffelsporers:tryffelsporerna:tryffelsporernas
+COMPOUND(748845, 746704): tryffel + spor
+795861r3<adjektiv>tryffelspäckad:tryffelspäckad:tryffelspäckat:tryffelspäckade:tryffelspäckade:!:!:!:
+637028r5<adjektiv>tryffelstekt:tryffelstekt:tryffelstekt:tryffelstekta:tryffelstekta::::::::::::
+748861r4<substantiv>tryffelsvamp:tryffelsvamp:tryffelsvamps:tryffelsvampen:tryffelsvampens:tryffelsvampar:tryffelsvampars:tryffelsvamparna:tryffelsvamparnas
+COMPOUND(748845, 551976): tryffel + svamp
+748853r4<substantiv>tryffelsås:tryffelsås:tryffelsås:tryffelsåsen:tryffelsåsens:tryffelsåser:tryffelsåsers:tryffelsåserna:tryffelsåsernas
+COMPOUND(748845, 556707): tryffel + sås
+591399r4<verb>tryffera:tryffera:tryfferade:tryfferat:tryfferar:tryffera:tryfferas:tryfferades:tryfferats:tryfferas:tryfferad:tryfferat:tryfferade:tryfferande:
+619815r3<adjektiv>trygg:trygg:tryggt:trygga:trygga:tryggare:tryggast:tryggaste:trygge
+547875r5<verb>trygga:trygga:tryggade:tryggat:tryggar:trygga:tryggas:tryggades:tryggats:tryggas:tryggad:tryggat:tryggade:tryggande:
+795864r3<adjektiv>tryggad:tryggad:tryggat:tryggade:tryggade:!:!:!:
+673960r6<substantiv>trygghet:trygghet:trygghets:tryggheten:trygghetens::::
+CUSTOM: y y trygghets +trygghets
+748870r3<substantiv>trygghetslarm::::::::
+COMPOUND(673960, 552652): trygghet + larm
+920403r4<substantiv>trygghetsråd:trygghetsråd:trygghetsråds:trygghetsrådet:trygghetsrådets:trygghetsråd:trygghetsråds:trygghetsråden:trygghetsrådens
+COMPOUND(673960, 552853): trygghet + råd
+748871r3<substantiv>trygghetstelefon::::::::
+COMPOUND(673960, 550648): trygghet + telefon
+857128r3<substantiv>trymå:trymå:trymås:trymån:trymåns:trymåer:trymåers:trymåerna:trymåernas
+CUSTOM: y n
+673962r3<substantiv>tryne:tryne:trynes:trynet:trynets:trynen:trynens:trynena:trynenas
+624937r7<verb>tryta:tryta:tröt:trutit:tryter:::::::::trytande:
+CUSTOM: y n
+763333r4<verb>trå:trå:trådde:trått:trår:trå:::::::::
+857137r3<substantiv>tråckelstygn:tråckelstygn:tråckelstygns:tråckelstygnet:tråckelstygnets:tråckelstygn:tråckelstygns:tråckelstygnen:tråckelstygnens
+857143r3<substantiv>tråckeltråd:tråckeltråd:tråckeltråds:tråckeltråden:tråckeltrådens:tråckeltrådar:tråckeltrådars:tråckeltrådarna:tråckeltrådarnas
+547878r4<verb>tråckla:tråckla:tråcklade:tråcklat:tråcklar:tråckla:tråcklas:tråcklades:tråcklats:tråcklas:tråcklad:tråcklat:tråcklade:tråcklande:
+857153r3<substantiv>tråckling:tråckling:tråcklings:tråcklingen:tråcklingens:tråcklingar:tråcklingars:tråcklingarna:tråcklingarnas
+552048r12<substantiv>tråd:tråd:tråds:tråden:trådens:trådar:trådars:trådarna:trådarnas
+CUSTOM: y y tråd
+795865r3<adjektiv>trådarmerad:trådarmerad:trådarmerat:trådarmerade:trådarmerade:!:!:!:
+773915r4<adjektiv>trådbunden:trådbunden:trådbundet:trådbundna:trådbundna::::trådbundne
+COMPOUND(552048, 571015): tråd + bunden
+988421r3<substantiv>tråddrageri:tråddrageri:tråddrageris:tråddrageriet:tråddrageriets:tråddragerier:tråddrageriers:tråddragerierna:tråddrageriernas
+577826r3<adjektiv>trådformig:trådformig:trådformigt:trådformiga:trådformiga::::
+577829r4<adjektiv>trådig:trådig:trådigt:trådiga:trådiga:trådigare:trådigast:trådigaste:
+826644r3<adjektiv>trådlik:trådlik:trådlikt:trådlika:trådlika::::
+795868r3<adjektiv>trådlindad:trådlindad:trådlindat:trådlindade:trådlindade:!:!:!:
+565403r3<adjektiv>trådlös:trådlös:trådlöst:trådlösa:trådlösa::::
+857165r3<substantiv>trådmina:trådmina:trådminas:trådminan:trådminans:trådminor:trådminors:trådminorna:trådminornas
+673970r3<substantiv>trådning:trådning:trådnings:trådningen:trådningens::::
+CUSTOM: y y trådnings
+847199r3<adjektiv>trådnött:trådnött:trådnött:trådnötta:trådnötta::::
+894042r4<adjektiv>trådrak:trådrak:trådrakt:trådraka:trådraka::::::::::::
+COMPOUND(552048, 563122): tråd + rak
+853220r3<substantiv>trådsil:trådsil:trådsils:trådsilen:trådsilens:trådsilar:trådsilars:trådsilarna:trådsilarnas
+847201r3<adjektiv>trådsmal:trådsmal:trådsmalt:trådsmala:trådsmala::::trådsmale
+802209r3<adjektiv>trådtunn:trådtunn:trådtunt:trådtunna:trådtunna::::
+731625r5<substantiv>trådtöjning:trådtöjning:trådtöjnings:trådtöjningen:trådtöjningens:trådtöjningar:trådtöjningars:trådtöjningarna:trådtöjningarnas
+COMPOUND(552048, 729389): tråd + töjning
+CUSTOM: y y trådtöjnings
+731633r4<substantiv>trådtöjningsgivare:trådtöjningsgivare:trådtöjningsgivares:trådtöjningsgivaren:trådtöjningsgivarens:trådtöjningsgivare:trådtöjningsgivares:trådtöjningsgivarna:trådtöjningsgivarnas
+COMPOUND(731625, 615268): trådtöjning + givare
+553064r12<substantiv>tråg:tråg:trågs:tråget:trågets:tråg:trågs:trågen:trågens
+CUSTOM: y n
+857174r3<substantiv>trågdal:trågdal:trågdals:trågdalen:trågdalens:trågdalar:trågdalars:trågdalarna:trågdalarnas
+795871r3<adjektiv>trågformad:trågformad:trågformat:trågformade:trågformade:!:!:!:
+577832r3<adjektiv>trågformig:trågformig:trågformigt:trågformiga:trågformiga::::
+547879r4<verb>tråka:tråka:tråkade:tråkat:tråkar:tråka:tråkas:tråkades:tråkats:tråkas:tråkad:tråkat:tråkade:tråkande:
+556444r3<adjektiv>tråkig:tråkig:tråkigt:tråkiga:tråkiga:tråkigare:tråkigast:tråkigaste:tråkige
+673971r3<substantiv>tråkighet:tråkighet:tråkighets:tråkigheten:tråkighetens:tråkigheter:tråkigheters:tråkigheterna:tråkigheternas
+CUSTOM: y y tråkighets
+736946r3<substantiv>tråkmåns:tråkmåns:tråkmåns:tråkmånsen:tråkmånsens:tråkmånsar:tråkmånsars:tråkmånsarna:tråkmånsarnas
+577835r3<adjektiv>tråkmånsig:tråkmånsig:tråkmånsigt:tråkmånsiga:tråkmånsiga::::
+857182r3<substantiv>tråkning:tråkning:tråknings:tråkningen:tråkningens:tråkningar:tråkningars:tråkningarna:tråkningarnas
+552049r5<substantiv>trål:trål:tråls:trålen:trålens:trålar:trålars:trålarna:trålarnas
+CUSTOM: y n y
+857190r3<verb>tråla:tråla:trålade:trålat:trålar:tråla:trålas:trålades:trålats:trålas:trålad:trålat:trålade:trålande:
+696623r4<substantiv>trålare:trålare:trålares:trålaren:trålarens:trålare:trålares:trålarna:trålarnas
+CUSTOM: y y trålar
+803744r3<substantiv>trålfiske:trålfiske:trålfiskes:trålfisket:trålfiskets::::
+964307r3<substantiv>trålning:trålning:trålnings:trålningen:trålningens::::
+723191r4<substantiv>trålplats:trålplats:trålplats:trålplatsen:trålplatsens:trålplatser:trålplatsers:trålplatserna:trålplatsernas
+COMPOUND(552049, 550210): trål + plats
+547880r4<verb>tråna:tråna:trånade:trånat:trånar:tråna:trånas:trånades:trånats:trånas:::::
+697418r3<substantiv>trånad:trånad:trånads:trånaden:trånadens:!:!:!:!
+585174r3<adjektiv>trånadsfull:trånadsfull:trånadsfullt:trånadsfulla:trånadsfulla::::
+697421r3<substantiv>trånande:trånande:trånandes:trånandet:trånandets::::
+585177r3<adjektiv>trånfull:trånfull:trånfullt:trånfulla:trånfulla::::
+564698r4<adjektiv>trång:trång:trångt:trånga:trånga:trängre:trängst:trängsta:
+748872r4<adjektiv>trångbodd:trångbodd:trångbott:trångbodda:trångbodda::::trångbodde
+748875r3<substantiv>trångboddhet:trångboddhet:trångboddhets:trångboddheten:trångboddhetens::::
+795874r3<adjektiv>trångbröstad:trångbröstad:trångbröstat:trångbröstade:trångbröstade:!:!:!:
+795877r3<adjektiv>trånghalsad:trånghalsad:trånghalsat:trånghalsade:trånghalsade:!:!:!:
+795880r3<adjektiv>trånghuvad:trånghuvad:trånghuvat:trånghuvade:trånghuvade:!:!:!:
+673972r3<substantiv>trångmål:trångmål:trångmåls:trångmålet:trångmålets:trångmål:trångmåls:trångmålen:trångmålens
+795883r3<adjektiv>trångsinnad:trångsinnad:trångsinnat:trångsinnade:trångsinnade:!:!:!:
+803748r3<adjektiv>trångsint:trångsint:trångsint:trångsinta:trångsinta::::trångsinte
+568236r3<adjektiv>trångskallig:trångskallig:trångskalligt:trångskalliga:trångskalliga::::
+857199r3<substantiv>trångsyn:trångsyn:trångsyns:trångsynen:trångsynens::::
+748879r4<adjektiv>trångsynt:trångsynt:trångsynt:trångsynta:trångsynta:trångsyntare:trångsyntast:trångsyntaste:trångsynte
+748882r3<substantiv>trångsynthet:trångsynthet:trångsynthets:trångsyntheten:trångsynthetens::::
+857206r3<adjektiv>trånsjuk:trånsjuk:trånsjukt:trånsjuka:trånsjuka::::trånsjuke
+632758r19<substantiv>trä:trä:träs:träet, trät:träets, träts:trän:träns:träna:tränas
+DEFINITION 1: Från slagträ, vedträ osv...
+CUSTOM: y n
+624333r52<substantiv>trä:trä:träs:träet, trät:träets, träts:!:!:!:!
+DEFINITION 1: Materialet
+CUSTOM: y n trä
+577838r3<adjektiv>träaktig:träaktig:träaktigt:träaktiga:träaktiga::::
+795886r3<adjektiv>träartad:träartad:träartat:träartade:träartade:!:!:!:
+CUSTOM: y n n
+891834r4<substantiv>träaska:träaska:träaskas:träaskan:träaskans:!:!:!:!
+COMPOUND(624333, 616163): trä + aska
+603953r3<substantiv>träbearbetningsmaskin:träbearbetningsmaskin:träbearbetningsmaskins:träbearbetningsmaskinen:träbearbetningsmaskinens:träbearbetningsmaskiner:träbearbetningsmaskiners:träbearbetningsmaskinerna:träbearbetningsmaskinernas
+611395r3<substantiv>träbearbetningsmaskinindustri:träbearbetningsmaskinindustri:träbearbetningsmaskinindustris:träbearbetningsmaskinindustrin:träbearbetningsmaskinindustrins:träbearbetningsmaskinindustrier:träbearbetningsmaskinindustriers:träbearbetningsmaskinindustrierna:träbearbetningsmaskinindustriernas
+673978r4<substantiv>träben:träben:träbens:träbenet:träbenets:träben:träbens:träbenen:träbenens
+COMPOUND(624333, 552233): trä + ben
+930043r4<substantiv>träbit:träbit:träbits:träbiten:träbitens:träbitar:träbitars:träbitarna:träbitarnas
+COMPOUND(632758, 550887): trä + bit
+933159r4<substantiv>träbock:träbock:träbocks:träbocken:träbockens:träbockar:träbockars:träbockarna:träbockarnas
+COMPOUND(624333, 560573): trä + bock
+933167r4<substantiv>träbord:träbord:träbords:träbordet:träbordets:träbord:träbords:träborden:träbordens
+COMPOUND(624333, 552265): trä + bord
+930051r4<substantiv>träbro:träbro:träbros:träbron:träbrons:träbroar:träbroars:träbroarna:träbroarnas
+COMPOUND(632758, 557960): trä + bro
+913215r4<substantiv>träbåt:träbåt:träbåts:träbåten:träbåtens:träbåtar:träbåtars:träbåtarna:träbåtarnas
+COMPOUND(624333, 550993): trä + båt
+CUSTOM: y n träbåts
+933173r4<substantiv>träbänk:träbänk:träbänks:träbänken:träbänkens:träbänkar:träbänkars:träbänkarna:träbänkarnas
+COMPOUND(624333, 550997): trä + bänk
+765020r3<substantiv>träck:träck:träcks:träcken:träckens::::
+553066r21<substantiv>träd:träd:träds:trädet:trädets:träd:träds:träden:trädens
+CUSTOM: y y träd
+619817r3<substantiv>träda:träda:trädas:trädan:trädans:trädor:trädors:trädorna:trädornas
+945581r4<substantiv>trädart:trädart:trädarts:trädarten:trädartens:trädarter:trädarters:trädarterna:trädarternas
+COMPOUND(553066, 548244): träd + art
+795889r3<adjektiv>trädartad:trädartad:trädartat:trädartade:trädartade:!:!:!:
+577839r3<adjektiv>trädfattig:trädfattig:trädfattigt:trädfattiga:trädfattiga::::
+577842r3<adjektiv>trädformig:trädformig:trädformigt:trädformiga:trädformiga::::
+599046r8<substantiv>trädgård:trädgård:trädgårds:trädgården:trädgårdens:trädgårdar:trädgårdars:trädgårdarna:trädgårdarnas
+CUSTOM: y y trädgårds +trädgårds
+610163r3<substantiv>trädgårdsanläggare:trädgårdsanläggare:trädgårdsanläggares:trädgårdsanläggaren:trädgårdsanläggarens:trädgårdsanläggare:trädgårdsanläggares:trädgårdsanläggarna:trädgårdsanläggarnas
+CUSTOM: y y trädgårdsanläggar
+674664r4<substantiv>trädgårdsarbete:trädgårdsarbete:trädgårdsarbetes:trädgårdsarbetet:trädgårdsarbetets::::
+COMPOUND(599046, 612263): trädgård + arbete
+723095r3<egennamn>Trädgårdsgatan:Trädgårdsgatan:Trädgårdsgatans
+697423r4<substantiv>trädgårdsland:trädgårdsland:trädgårdslands:trädgårdslandet:trädgårdslandets:trädgårdsland:trädgårdslands:trädgårdslanden:trädgårdslandens
+COMPOUND(599046, 556252): trädgård + land
+853228r3<substantiv>trädgårdsmur:trädgårdsmur:trädgårdsmurs:trädgårdsmuren:trädgårdsmurens:trädgårdsmurar:trädgårdsmurars:trädgårdsmurarna:trädgårdsmurarnas
+938556r3<substantiv>trädgårdsmyra:trädgårdsmyra:trädgårdsmyras:trädgårdsmyran:trädgårdsmyrans::::
+610169r3<substantiv>trädgårdsmästare:trädgårdsmästare:trädgårdsmästares:trädgårdsmästaren:trädgårdsmästarens:trädgårdsmästare:trädgårdsmästares:trädgårdsmästarna:trädgårdsmästarnas
+CUSTOM: y y trädgårdsmästar
+606392r3<substantiv>trädgårdsodling:trädgårdsodling:trädgårdsodlings:trädgårdsodlingen:trädgårdsodlingens:trädgårdsodlingar:trädgårdsodlingars:trädgårdsodlingarna:trädgårdsodlingarnas
+944137r4<substantiv>trädisk:trädisk:trädisks:trädisken:trädiskens:trädiskar:trädiskars:trädiskarna:trädiskarnas
+COMPOUND(624333, 559465): trä + disk
+637329r4<substantiv>trädkramare:trädkramare:trädkramares:trädkramaren:trädkramarens:trädkramare:trädkramares:trädkramarna:trädkramarnas
+COMPOUND(553066, 637501): träd + kramare
+CUSTOM: y y trädkramar
+595592r3<substantiv>trädkrona:trädkrona:trädkronas:trädkronan:trädkronans:trädkronor:trädkronors:trädkronorna:trädkronornas
+857209r3<substantiv>trädkrypare:trädkrypare:trädkrypares:trädkryparen:trädkryparens:trädkrypare:trädkrypares:trädkryparna:trädkryparnas
+565406r3<adjektiv>trädlös:trädlös:trädlöst:trädlösa:trädlösa::::
+857215r3<substantiv>trädning:trädning:trädnings:trädningen:trädningens::::
+853236r3<substantiv>trädnål:trädnål:trädnåls:trädnålen:trädnålens:trädnålar:trädnålars:trädnålarna:trädnålarnas
+945590r4<substantiv>trädpion:trädpion:trädpions:trädpionen:trädpionens:trädpioner:trädpioners:trädpionerna:trädpionernas
+COMPOUND(553066, 628525): träd + pion
+933181r4<substantiv>trädrot:trädrot:trädrots:trädroten:trädrotens:trädrötter:trädrötters:trädrötterna:trädrötternas
+COMPOUND(553066, 561217): träd + rot
+945600r4<substantiv>trädurk:trädurk:trädurks:trädurken:trädurkens:trädurkar:trädurkars:trädurkarna:trädurkarnas
+COMPOUND(624333, 624084): trä + durk
+933189r4<substantiv>trädäck:trädäck:trädäcks:trädäcket:trädäckets:trädäck:trädäcks:trädäcken:trädäckens
+COMPOUND(624333, 552337): trä + däck
+933195r4<substantiv>trädörr:trädörr:trädörrs:trädörren:trädörrens:trädörrar:trädörrars:trädörrarna:trädörrarnas
+COMPOUND(624333, 551088): trä + dörr
+853245r3<substantiv>träfat:träfat:träfats:träfatet:träfatets:träfat:träfats:träfaten:träfatens
+552051r6<substantiv>träff:träff:träffs:träffen:träffens:träffar:träffars:träffarna:träffarnas
+CUSTOM: y y träff
+547876r4<verb>träffa:träffa:träffade:träffat:träffar:träffa:träffas:träffades:träffats:träffas:träffad:träffat:träffade:träffande:
+673984r3<adjektiv>träffande:träffande:träffande:träffande:träffande:!:!:!:
+591651r3<deponens>träffas:träffas:träffades:träffats:träffas:
+857219r3<substantiv>träffning:träffning:träffnings:träffningen:träffningens:träffningar:träffningars:träffningarna:träffningarnas
+748886r4<substantiv>träffpunkt:träffpunkt:träffpunkts:träffpunkten:träffpunktens:träffpunkter:träffpunkters:träffpunkterna:träffpunkternas
+COMPOUND(552051, 550299): träff + punkt
+673985r3<adjektiv>träffsäker:träffsäker:träffsäkert:träffsäkra:träffsäkra::::
+673986r3<substantiv>träffsäkerhet:träffsäkerhet:träffsäkerhets:träffsäkerheten:träffsäkerhetens::::
+CUSTOM: y y träffsäkerhets
+748887r5<substantiv>träfiber:träfiber:träfibers:träfibern:träfiberns:träfibrer:träfibrers:träfibrerna:träfibrernas
+COMPOUND(624333, 561661): trä + fiber
+CUSTOM: y y träfiber
+595600r4<substantiv>träfiberplatta:träfiberplatta:träfiberplattas:träfiberplattan:träfiberplattans:träfiberplattor:träfiberplattors:träfiberplattorna:träfiberplattornas
+COMPOUND(748887, 632785): träfiber + platta
+892918r3<substantiv>träfil:träfil:träfils:träfilen:träfilens:träfilar:träfilars:träfilarna:träfilarnas
+933203r4<substantiv>träflis:träflis:träflis:träflisen:träflisens::::
+COMPOUND(624333, 628013): trä + flis
+748895r4<substantiv>träflisa:träflisa:träflisas:träflisan:träflisans:träflisor:träflisors:träflisorna:träflisornas
+COMPOUND(624333, 561470): trä + flisa
+564337r3<adjektiv>träfri:träfri:träfritt:träfria:träfria::::
+795892r3<adjektiv>träfärgad:träfärgad:träfärgat:träfärgade:träfärgade:!:!:!:
+597784r3<substantiv>träförpackning:träförpackning:träförpacknings:träförpackningen:träförpackningens:träförpackningar:träförpackningars:träförpackningarna:träförpackningarnas
+CUSTOM: y y träförpacknings
+673990r4<adjektiv>trägen:trägen:träget:trägna:trägna:trägnare:trägnast:trägnaste:trägne
+933206r4<substantiv>trägolv:trägolv:trägolvs:trägolvet:trägolvets:trägolv:trägolvs:trägolven:trägolvens
+COMPOUND(624333, 552446): trä + golv
+748903r4<substantiv>trägubbe:trägubbe:trägubbes:trägubben:trägubbens:trägubbar:trägubbars:trägubbarna:trägubbarnas
+COMPOUND(624333, 599829): trä + gubbe
+577845r3<adjektiv>trähaltig:trähaltig:trähaltigt:trähaltiga:trähaltiga::::
+953283r4<substantiv>träholk:träholk:träholks:träholken:träholkens:träholkar:träholkars:träholkarna:träholkarnas
+COMPOUND(624333, 551392): trä + holk
+CUSTOM: y n n
+608339r3<substantiv>trähus:trähus:trähus:trähuset:trähusets:trähus:trähus:trähusen:trähusens
+CUSTOM: y y trähus
+611403r3<substantiv>trähusindustri:trähusindustri:trähusindustris:trähusindustrin:trähusindustrins:trähusindustrier:trähusindustriers:trähusindustrierna:trähusindustriernas
+CUSTOM: y n
+933212r4<substantiv>trähäst:trähäst:trähästs:trähästen:trähästens:trähästar:trähästars:trähästarna:trähästarnas
+COMPOUND(624333, 555286): trä + häst
+577848r4<adjektiv>träig:träig:träigt:träiga:träiga:träigare:träigast:träigaste:träige
+853252r3<substantiv>träkar:träkar:träkars:träkaret:träkarets:träkar:träkars:träkaren:träkarens
+901611r5<substantiv>träkarl:träkarl:träkarls:träkarlen:träkarlens::::
+DEFINITION 1: Term i Bridge.
+CUSTOM: y y träkarls
+901616r4<substantiv>träkarlsbridge:träkarlsbridge:träkarlsbridges:träkarlsbridgen:träkarlsbridgens:!:!:!:!
+COMPOUND(901611, 660623): träkarl + bridge
+584498r3<adjektiv>träkemisk:träkemisk:träkemiskt:träkemiska:träkemiska::::
+627670r4<substantiv>träkol:träkol:träkols:träkolet:träkolets:!:!:!:!
+COMPOUND(624333, 552556): trä + kol
+933220r4<substantiv>träkors:träkors:träkors:träkorset:träkorsets:träkors:träkors:träkorsen:träkorsens
+COMPOUND(624333, 552579): trä + kors
+953292r5<substantiv>träkubb, träkubbe:träkubb, träkubbe:träkubbs:träkubben:träkubbens:träkubbar:träkubbars:träkubbarna:träkubbarnas
+COMPOUND(632758, 631486): trä + kubb
+933226r4<substantiv>träkula:träkula:träkulas:träkulan:träkulans:träkulor:träkulors:träkulorna:träkulornas
+COMPOUND(624333, 559858): trä + kula
+748911r4<substantiv>träkåk:träkåk:träkåks:träkåken:träkåkens:träkåkar:träkåkars:träkåkarna:träkåkarnas
+COMPOUND(624333, 551657): trä + kåk
+552052r5<substantiv>träl:träl:träls:trälen:trälens:trälar:trälars:trälarna:trälarnas
+CUSTOM: y n
+627337r3<verb>träla:träla:trälade:trälat:trälar:träla:trälas:trälades:trälats:trälas::::trälande:
+577849r3<adjektiv>trälaktig:trälaktig:trälaktigt:trälaktiga:trälaktiga::::
+857235r3<substantiv>trälarbete:trälarbete:trälarbetes:trälarbetet:trälarbetets:trälarbeten:trälarbetens:trälarbetena:trälarbetenas
+857243r4<verb>trälbinda:trälbinda:trälband:trälbundit:trälbinder:trälbind:trälbindas:trälbands:trälbundits:trälbinds:trälbunden:trälbundet:trälbundna:trälbindande:
+COMPOUND(552052, 585278): träl + binda
+697429r3<substantiv>träldom:träldom:träldoms:träldomen:träldomens::::
+568239r4<adjektiv>trälig:trälig:träligt:träliga:träliga:träligare:träligast:träligaste:
+853258r3<substantiv>trälim:trälim:trälims:trälimmet:trälimmets::::
+958933r3<substantiv>trälinna:trälinna:trälinnas:trälinnan:trälinnans:trälinnor:trälinnors:trälinnorna:trälinnornas
+584501r3<adjektiv>trälisk:trälisk:träliskt:träliska:träliska::::
+933235r4<substantiv>trälist:trälist:trälists:trälisten:trälistens:trälister:trälisters:trälisterna:trälisternas
+COMPOUND(624333, 549947): trä + list
+933243r15<substantiv>trälock:trälock:trälocks:trälocket:trälockets:trälock:trälocks:trälocken:trälockens
+COMPOUND(624333, 554985): trä + lock
+595608r3<substantiv>trälåda:trälåda:trälådas:trälådan:trälådans:trälådor:trälådors:trälådorna:trälådornas
+853262r3<substantiv>trälår:trälår:trälårs:trälåren:trälårens:trälårar:trälårars:trälårarna:trälårarnas
+933253r4<substantiv>trämask:trämask:trämasks:trämasken:trämaskens:trämaskar:trämaskars:trämaskarna:trämaskarnas
+COMPOUND(624333, 560502): trä + mask
+547877r8<verb>träna:träna:tränade:tränat:tränar:träna:tränas:tränades:tränats:tränas:tränad:tränat:tränade:tränande:
+920411r4<substantiv>tränarduo:tränarduo:tränarduos:tränarduon:tränarduons:tränarduor:tränarduors:tränarduorna:tränarduornas
+COMPOUND(556525, 558272): tränare + duo
+556525r5<substantiv>tränare:tränare:tränares:tränaren:tränarens:tränare:tränares:tränarna:tränarnas
+CUSTOM: y y tränar
+674585r8<substantiv>träng:träng:trängs:trängen:trängens::::
+CUSTOM: n n y
+585802r9<verb>tränga:tränga:trängde:trängt:tränger:träng:trängas:trängdes:trängts:trängs, tränges:trängd:trängt:trängda:trängande:
+988429r3<substantiv>trängfartyg:trängfartyg:trängfartygs:trängfartyget:trängfartygets:trängfartyg:trängfartygs:trängfartygen:trängfartygens
+988435r3<substantiv>trängförband:trängförband:trängförbands:trängförbandet:trängförbandets:trängförband:trängförbands:trängförbanden:trängförbandens
+802665r4<substantiv>trängning:trängning:trängnings:trängningen:trängningens:trängningar:trängningars:trängningarna:trängningarnas
+CUSTOM: y y +trängnings
+674584r4<substantiv>trängofficer:trängofficer:trängofficers:trängofficeren, trängofficern:trängofficerens, trängofficerns:trängofficerer, trängofficerare:trängofficerers, trängofficerare:trängofficererna, trängofficerarna:trängofficerernas, trängofficerarnas
+COMPOUND(674585, 603028): träng + officer
+988441r3<substantiv>trängregemente:trängregemente:trängregementes:trängregementet:trängregementets:trängregementen:trängregementens:trängregementena:trängregementenas
+664977r4<substantiv>trängsel:trängsel:trängsels:trängseln:trängselns::::
+CUSTOM: y y trängsel
+664982r4<substantiv>trängselavgift:trängselavgift:trängselavgifts:trängselavgiften:trängselavgiftens:trängselavgifter:trängselavgifters:trängselavgifterna:trängselavgifternas
+COMPOUND(664977, 548299): trängsel + avgift
+704056r3<substantiv>trängselskatt:trängselskatt:trängselskatts:trängselskatten:trängselskattens:trängselskatter:trängselskatters:trängselskatterna:trängselskatternas
+674666r5<verb>trängta:trängta:trängtade:trängtat:trängtar:trängta:trängtas:trängtades:trängtats:trängtas::::trängtande:
+674667r6<substantiv>trängtan:trängtan::trängtan::!:!:!:!
+857264r3<substantiv>trängtrupp:trängtrupp:trängtrupps:trängtruppen:trängtruppens:trängtrupper:trängtruppers:trängtrupperna:trängtruppernas
+673991r23<substantiv>träning:träning:tränings:träningen:träningens:träningar:träningars:träningarna:träningarnas
+CUSTOM: y y tränings +tränings
+853271r3<substantiv>träningsdos:träningsdos:träningsdos:träningsdosen:träningsdosens:träningsdoser:träningsdosers:träningsdoserna:träningsdosernas
+603961r3<substantiv>träningsdräkt:träningsdräkt:träningsdräkts:träningsdräkten:träningsdräktens:träningsdräkter:träningsdräkters:träningsdräkterna:träningsdräkternas
+953301r4<substantiv>träningsflit:träningsflit:träningsflits:träningsfliten:träningsflitens:!:!:!:!
+COMPOUND(673991, 561471): träning + flit
+953308r4<verb>träningsköra:träningsköra:träningskörde:träningskört:träningskör:träningskör:träningsköras:träningskördes:träningskörts:träningskörs, träningsköres:träningskörd:träningskört:träningskörda:träningskörande:
+COMPOUND(673991, 556899): träning + köra
+719333r4<substantiv>träningslokal:träningslokal:träningslokals:träningslokalen:träningslokalens:träningslokaler:träningslokalers:träningslokalerna:träningslokalernas
+COMPOUND(673991, 549959): träning + lokal
+953322r4<substantiv>träningslunk:träningslunk:träningslunks:träningslunken:träningslunkens::::
+COMPOUND(673991, 642775): träning + lunk
+674694r4<substantiv>träningsläger:träningsläger:träningslägers:träningslägret:träningslägrets:träningsläger:träningslägers:träningslägren:träningslägrens
+COMPOUND(673991, 621032): träning + läger
+674668r4<substantiv>träningsmatch:träningsmatch:träningsmatchs:träningsmatchen:träningsmatchens:träningsmatcher:träningsmatchers:träningsmatcherna:träningsmatchernas
+COMPOUND(673991, 550011): träning + match
+719324r4<substantiv>träningsmatta:träningsmatta:träningsmattas:träningsmattan:träningsmattans:träningsmattor:träningsmattors:träningsmattorna:träningsmattornas
+COMPOUND(673991, 555187): träning + matta
+603969r3<substantiv>träningsoverall:träningsoverall:träningsoveralls:träningsoverallen:träningsoverallens:träningsoveraller:träningsoverallers:träningsoverallerna:träningsoverallernas
+674676r4<substantiv>träningspass:träningspass:träningspass:träningspasset:träningspassets:träningspass:träningspass:träningspassen:träningspassens
+COMPOUND(673991, 552758): träning + pass
+674681r4<substantiv>träningsperiod:träningsperiod:träningsperiods:träningsperioden:träningsperiodens:träningsperioder:träningsperioders:träningsperioderna:träningsperiodernas
+COMPOUND(673991, 550187): träning + period
+612036r3<substantiv>träningssko:träningssko:träningsskos:träningsskon:träningsskons:träningsskor:träningsskors:träningsskorna:träningsskornas
+568242r3<adjektiv>träningsvillig:träningsvillig:träningsvilligt:träningsvilliga:träningsvilliga::::
+674689r4<substantiv>träningsvärk:träningsvärk:träningsvärks:träningsvärken:träningsvärkens:!:!:!:!
+COMPOUND(673991, 552113): träning + värk
+748919r4<substantiv>träningsåk:träningsåk:träningsåks:träningsåket:träningsåkets:träningsåk:träningsåks:träningsåken:träningsåkens
+COMPOUND(673991, 624048): träning + åk
+552054r5<substantiv>träns:träns:träns:tränsen:tränsens:tränsar:tränsars:tränsarna:tränsarnas
+CUSTOM: y n
+988450r5<substantiv>träns:träns:träns:tränset:tränsets:träns:träns:tränsen:tränsens
+CUSTOM: y n
+857272r3<verb>tränsa:tränsa:tränsade:tränsat:tränsar:tränsa:tränsas:tränsades:tränsats:tränsas:tränsad:tränsat:tränsade:tränsande:
+CUSTOM: y n
+988453r4<substantiv>tränsbetsel:tränsbetsel:tränsbetsels:tränsbetslet:tränsbetslets:tränsbetsel:tränsbetsels:tränsbetslen:tränsbetslens
+COMPOUND(988450, 617328): träns + betsel
+988449r4<substantiv>tränsbett:tränsbett:tränsbetts:tränsbettet:tränsbettets:tränsbett:tränsbetts:tränsbetten:tränsbettens
+COMPOUND(988450, 552243): träns + bett
+933262r4<substantiv>träpall:träpall:träpalls:träpallen:träpallens:träpallar:träpallars:träpallarna:träpallarnas
+COMPOUND(624333, 551758): trä + pall
+939305r4<substantiv>träpanel:träpanel:träpanels:träpanelen:träpanelens:träpaneler:träpanelers:träpanelerna:träpanelernas
+COMPOUND(624333, 550154): trä + panel
+950343r4<substantiv>träpannå:träpannå:träpannås:träpannån:träpannåns:träpannåer:träpannåers:träpannåerna:träpannåernas
+COMPOUND(624333, 674229): trä + pannå
+933271r4<substantiv>träport:träport:träports:träporten:träportens:träportar:träportars:träportarna:träportarnas
+COMPOUND(624333, 551772): trä + port
+853280r3<substantiv>träpåk:träpåk:träpåks:träpåken:träpåkens:träpåkar:träpåkars:träpåkarna:träpåkarnas
+933279r4<substantiv>träpåle:träpåle:träpåles:träpålen:träpålens:träpålar:träpålars:träpålarna:träpålarnas
+COMPOUND(624333, 621673): trä + påle
+552055r3<substantiv>träram:träram:trärams:träramen:träramens:träramar:träramars:träramarna:träramarnas
+878363r4<substantiv>träsits:träsits:träsits:träsitsen:träsitsens:träsitsar:träsitsars:träsitsarna:träsitsarnas
+COMPOUND(624333, 551829): trä + sits
+CUSTOM: y n n
+553067r5<substantiv>träsk:träsk:träsks:träsket:träskets:träsk:träsks:träsken:träskens
+CUSTOM: y y träsk
+568245r3<adjektiv>träskallig:träskallig:träskalligt:träskalliga:träskalliga::::
+795895r3<adjektiv>träskartad:träskartad:träskartat:träskartade:träskartade:!:!:!:
+933287r4<substantiv>träsked:träsked:träskeds:träskeden:träskedens:träskedar:träskedars:träskedarna:träskedarnas
+COMPOUND(624333, 598816): trä + sked
+577852r3<adjektiv>träskig:träskig:träskigt:träskiga:träskiga::::
+748925r4<substantiv>träskmark:träskmark:träskmarks:träskmarken:träskmarkens:träskmarker:träskmarkers:träskmarkerna:träskmarkernas
+COMPOUND(553067, 549995): träsk + mark
+612045r3<substantiv>träsko:träsko:träskos:träskon:träskons:träskor:träskors:träskorna:träskornas
+857280r3<substantiv>träskodans:träskodans:träskodans:träskodansen:träskodansens:träskodanser:träskodansers:träskodanserna:träskodansernas
+988464r3<substantiv>träskofiol:träskofiol:träskofiols:träskofiolen:träskofiolens:träskofioler:träskofiolers:träskofiolerna:träskofiolernas
+933295r4<substantiv>träskål:träskål:träskåls:träskålen:träskålens:träskålar:träskålars:träskålarna:träskålarnas
+COMPOUND(624333, 551854): trä + skål
+860391r4<substantiv>träslag:träslag:träslags:träslaget:träslagets:träslag:träslags:träslagen:träslagens
+COMPOUND(632758, 608035): trä + slag
+933303r4<substantiv>träslev:träslev:träslevs:träsleven:träslevens:träslevar:träslevars:träslevarna:träslevarnas
+COMPOUND(624333, 551871): trä + slev
+673992r3<substantiv>träslöjd:träslöjd:träslöjds:träslöjden:träslöjdens::::
+933311r3<substantiv>träsmak:träsmak:träsmaks:träsmaken:träsmakens::::
+857287r3<substantiv>träsnidare:träsnidare:träsnidares:träsnidaren:träsnidarens:träsnidare:träsnidares:träsnidarna:träsnidarnas
+933315r4<substantiv>trästol:trästol:trästols:trästolen:trästolens:trästolar:trästolars:trästolarna:trästolarnas
+COMPOUND(624333, 551944): trä + stol
+599051r3<substantiv>träsvarv:träsvarv:träsvarvs:träsvarven:träsvarvens:träsvarvar:träsvarvars:träsvarvarna:träsvarvarnas
+945609r4<substantiv>träsyll:träsyll:träsylls:träsyllen:träsyllens:träsyllar:träsyllars:träsyllarna:träsyllarnas
+COMPOUND(624333, 685857): trä + syll
+627324r5<substantiv>träta:träta:trätas:trätan:trätans:trätor:trätors:trätorna:trätornas
+BASEWORDS: träto
+CUSTOM: y y
+627309r17<verb>träta:träta:trätte:trätt:träter:trät:trätas:trättes:trätts:träts, trätes::::trätande:
+CUSTOM: y n
+964311r4<substantiv>trätak:trätak:trätaks:trätaket:trätakets:trätak:trätaks:trätaken:trätakens
+COMPOUND(624333, 553027): trä + tak
+584504r3<adjektiv>träteknisk:träteknisk:trätekniskt:trätekniska:trätekniska::::
+584507r3<adjektiv>träteknologisk:träteknologisk:träteknologiskt:träteknologiska:träteknologiska::::
+577855r4<adjektiv>trätgirig:trätgirig:trätgirigt:trätgiriga:trätgiriga:trätgirigare:trätgirigast:trätgirigaste:trätgirige
+960287r4<substantiv>trätilja:trätilja:trätiljas:trätiljan:trätiljans:trätiljor:trätiljors:trätiljorna:trätiljornas
+COMPOUND(624333, 640689): trä + tilja
+857297r3<adjektiv>trätlysten:trätlysten:trätlystet:trätlystna:trätlystna::::trätlystne
+627316r4<substantiv>trätobroder:trätobroder:trätobroders:trätobrodern:trätobroderns:trätobröder:trätobröders:trätobröderna:trätobrödernas
+COMPOUND(627324, 555140): träta + bror, broder
+945618r4<substantiv>trätofråga:trätofråga:trätofrågas:trätofrågan:trätofrågans:trätofrågor:trätofrågors:trätofrågorna:trätofrågornas
+COMPOUND(627309, 594085): träta + fråga
+853289r3<substantiv>trätofrö:trätofrö:trätofrös:trätofröet:trätofröets:trätofrön:trätofröns:trätofröna:trätofrönas
+945628r4<substantiv>trätoämne:trätoämne:trätoämnes:trätoämnet:trätoämnets:trätoämnen:trätoämnens:trätoämnena:trätoämnenas
+COMPOUND(627309, 613026): träta + ämne
+619816r14<verb>trä, träda:träda, trä:trädde:trätt:träder, trär:träd, trä:träs, trädas:träddes:trätts:träs:trädd:trätt:trädda::
+819265r4<substantiv>träull:träull:träulls:träullen:träullens:!:!:!:!
+COMPOUND(624333, 627876): trä + ull
+595616r3<substantiv>trävara:trävara:trävaras:trävaran:trävarans:trävaror:trävarors:trävarorna:trävarornas
+611411r3<substantiv>trävaruindustri:trävaruindustri:trävaruindustris:trävaruindustrin:trävaruindustrins:trävaruindustrier:trävaruindustriers:trävaruindustrierna:trävaruindustriernas
+884895r4<adjektiv>trävit:trävit:trävitt:trävita:trävita::::::::::::
+COMPOUND(624333, 556574): trä + vit
+933323r4<substantiv>trävägg:trävägg:träväggs:träväggen:träväggens:träväggar:träväggars:träväggarna:träväggarnas
+COMPOUND(624333, 552111): trä + vägg
+627326r3<adjektiv>trög:trög:trögt:tröga:tröga:trögare:trögast:trögaste:tröge
+801705r3<adjektiv>trögbedd:trögbedd:trögbett:trögbedda:trögbedda::::
+857301r3<substantiv>trögdjur:trögdjur:trögdjurs:trögdjuret:trögdjurets:trögdjur:trögdjurs:trögdjuren:trögdjurens
+725052r3<adjektiv>trögfattad:trögfattad:trögfattat:trögfattade:trögfattade:!:!:!:
+627336r3<adjektiv>trögflytande:trögflytande:trögflytande:trögflytande:trögflytande:!:!:!:
+627331r3<substantiv>tröghet:tröghet:tröghets:trögheten:tröghetens:trögheter:trögheters:trögheterna:trögheternas
+CUSTOM: y y tröghets
+564340r3<adjektiv>tröghetsfri:tröghetsfri:tröghetsfritt:tröghetsfria:tröghetsfria::::
+857307r3<adjektiv>trögläst:trögläst:trögläst:tröglästa:tröglästa::::
+568248r3<adjektiv>trögrörlig:trögrörlig:trögrörligt:trögrörliga:trögrörliga::::
+766575r3<adjektiv>trögstartad:trögstartad:trögstartat:trögstartade:trögstartade:!:!:!:
+766578r3<adjektiv>trögsåld:trögsåld:trögsålt:trögsålda:trögsålda:!:!:!:!
+857309r3<adjektiv>trögtänkt:trögtänkt:trögtänkt:trögtänkta:trögtänkta::::trögtänkte
+595624r9<substantiv>tröja:tröja:tröjas:tröjan:tröjans:tröjor:tröjors:tröjorna:tröjornas
+CUSTOM: y y tröj
+843502r3<substantiv>tröjdesign:tröjdesign::tröjdesignen:tröjdesignens:tröjdesigner:tröjdesigners:tröjdesignerna:tröjdesignernas
+906623r4<substantiv>tröjärm:tröjärm:tröjärms:tröjärmen:tröjärmens:tröjärmar:tröjärmars:tröjärmarna:tröjärmarnas
+COMPOUND(595624, 552149): tröja + ärm
+595625r3<substantiv>tröska:tröska:tröskas:tröskan:tröskans:tröskor:tröskors:tröskorna:tröskornas
+585742r4<verb>tröska:tröska:tröskade:tröskat:tröskar:tröska:tröskas:tröskades:tröskats:tröskas:tröskad:tröskat:tröskade:tröskande:
+600445r6<substantiv>tröskel:tröskel:tröskels:tröskeln:tröskelns:trösklar:trösklars:trösklarna:trösklarnas
+CUSTOM: y y tröskel
+772525r4<substantiv>tröskelvärde:tröskelvärde:tröskelvärdes:tröskelvärdet:tröskelvärdets:tröskelvärden:tröskelvärdens:tröskelvärdena:tröskelvärdenas
+COMPOUND(600445, 613015): tröskel + värde
+988472r3<substantiv>tröskning:tröskning:trösknings:tröskningen:tröskningens::::
+857316r3<substantiv>tröskverk:tröskverk:tröskverks:tröskverket:tröskverkets:tröskverk:tröskverks:tröskverken:tröskverkens
+619826r5<substantiv>tröst:tröst:trösts:trösten:tröstens::::
+CUSTOM: y y tröst
+547881r5<verb>trösta:trösta:tröstade:tröstat:tröstar:trösta:tröstas:tröstades:tröstats:tröstas:tröstad:tröstat:tröstade:tröstande:
+615493r3<substantiv>tröstare:tröstare:tröstares:tröstaren:tröstarens:tröstare:tröstares:tröstarna:tröstarnas
+CUSTOM: y y tröstar
+585180r3<adjektiv>tröstefull:tröstefull:tröstefullt:tröstefulla:tröstefulla::::
+857322r3<substantiv>tröstegrund:tröstegrund:tröstegrunds:tröstegrunden:tröstegrundens:tröstegrunder:tröstegrunders:tröstegrunderna:tröstegrundernas
+697431r4<adjektiv>trösterik:trösterik:trösterikt:trösterika:trösterika:trösterikare:trösterikast:trösterikaste:
+565409r3<adjektiv>tröstlös:tröstlös:tröstlöst:tröstlösa:tröstlösa::::
+748933r4<substantiv>tröstmål:tröstmål:tröstmåls:tröstmålet:tröstmålets:tröstmål:tröstmåls:tröstmålen:tröstmålens
+COMPOUND(619826, 552705): tröst + mål
+768344r4<verb>tröstäta:tröstäta:tröståt:tröstätit:tröstäter:tröstät::::::::tröstätande:
+COMPOUND(619826, 555238): tröst + äta
+571275r5<adjektiv>trött:trött:trött:trötta:trötta:tröttare:tröttast:tröttaste:trötte
+547882r5<verb>trötta:trötta:tröttade:tröttat:tröttar:trötta:tröttas:tröttades:tröttats:tröttas::::tröttande:
+748940r3<deponens>tröttas:tröttas:tröttades:tröttats:tröttas:
+666314r6<substantiv>trötthet:trötthet:trötthets:tröttheten:trötthetens::::
+CUSTOM: y y trötthets
+678922r4<substantiv>trötthetssymptom:trötthetssymptom:trötthetssymptoms:trötthetssymptomet:trötthetssymptomets:trötthetssymptom:trötthetssymptoms:trötthetssymptomen:trötthetssymptomens
+COMPOUND(666314, 608210): trötthet + symptom
+678972r4<substantiv>trötthetssymtom:trötthetssymtom:trötthetssymtoms:trötthetssymtomet:trötthetssymtomets:trötthetssymtom:trötthetssymtoms:trötthetssymtomen:trötthetssymtomens
+COMPOUND(666314, 608214): trötthet + symtom
+748941r3<adjektiv>tröttkörd:tröttkörd:tröttkört:tröttkörda:tröttkörda::::tröttkörde
+547883r5<verb>tröttna:tröttna:tröttnade:tröttnat:tröttnar:tröttna:!:!:!:!::::tröttnande:
+563576r4<adjektiv>tröttsam:tröttsam:tröttsamt:tröttsamma:tröttsamma:tröttsammare:tröttsammast:tröttsammaste:tröttsamme
+800558r3<adjektiv>tröttögd:tröttögd:tröttögt:tröttögda:tröttögda::::
+628994r5<substantiv>tsar:tsar:tsars:tsaren:tsarens:tsarer:tsarers:tsarerna:tsarernas
+CUSTOM: y n
+988476r3<substantiv>tsardöme:tsardöme:tsardömes:tsardömet:tsardömets:tsardömen:tsardömens:tsardömena:tsardömenas
+988484r3<substantiv>tsarinna:tsarinna:tsarinnas:tsarinnan:tsarinnans:tsarinnor:tsarinnors:tsarinnorna:tsarinnornas
+960143r3<adjektiv>tsaristisk:tsaristisk:tsaristiskt:tsaristiska:tsaristiska::::::::::::
+629002r3<substantiv>tsaritsa:tsaritsa:tsaritsas:tsaritsan:tsaritsans:tsaritsor:tsaritsors:tsaritsorna:tsaritsornas
+CUSTOM: y n
+960134r4<substantiv>tsarregim:tsarregim:tsarregims:tsarregimen:tsarregimens:tsarregimer:tsarregimers:tsarregimerna:tsarregimernas
+COMPOUND(628994, 550333): tsar + regim
+988492r3<substantiv>tsarvälde:tsarvälde:tsarväldes:tsarväldet:tsarväldets:tsarvälden:tsarväldens:tsarväldena:tsarväldenas
+955212r3<substantiv>tsatsiki:tsatsiki:tsatsikis:tsatsikin:tsatsikins::::
+857333r3<substantiv>tsetsefluga:tsetsefluga:tsetseflugas:tsetseflugan:tsetseflugans:tsetseflugor:tsetseflugors:tsetseflugorna:tsetseflugornas
+899477r3<substantiv>T-shirt:T-shirt:T-shirts:T-shirten:T-shirtens:T-shirtar:T-shirtars:T-shirtarna:T-shirtarnas
+627870r3<interjektion>tsk:tsk
+CUSTOM: n n n
+700236r5<substantiv>tsunami:tsunami:tsunamis:tsunamin:tsunamins:tsunamier:tsunamiers:tsunamierna:tsunamiernas
+CUSTOM: y y tsunami
+922400r4<substantiv>tsunamiskalv:tsunamiskalv:tsunamiskalvs:tsunamiskalvet:tsunamiskalvets:tsunamiskalv:tsunamiskalvs:tsunamiskalven:tsunamiskalvens
+COMPOUND(700236, 556119): tsunami + skalv
+901951r4<substantiv>tsunamivarning:tsunamivarning:tsunamivarnings:tsunamivarningen:tsunamivarningens:tsunamivarningar:tsunamivarningars:tsunamivarningarna:tsunamivarningarnas
+COMPOUND(700236, 619993): tsunami + varning
+873139r3<egennamn>Tsvangirai:Tsvangirai:Tsvangirais
+550711r8<substantiv>tub:tub:tubs:tuben:tubens:tuber:tubers:tuberna:tubernas
+595633r3<substantiv>tuba:tuba:tubas:tuban:tubans:tubor:tubors:tuborna:tubornas
+CUSTOM: y n
+857341r3<verb>tubba:tubba:tubbade:tubbat:tubbar:tubba:tubbas:tubbades:tubbats:tubbas:tubbad:tubbat:tubbade:tubbande:
+857358r3<substantiv>tuberkel:tuberkel:tuberkels:tuberkeln:tuberkelns:tuberkler:tuberklers:tuberklerna:tuberklernas
+988500r3<substantiv>tuberkelbacill:tuberkelbacill:tuberkelbacills:tuberkelbacillen:tuberkelbacillens:tuberkelbaciller:tuberkelbacillers:tuberkelbacillerna:tuberkelbacillernas
+857350r3<substantiv>tuberkelbakterie:tuberkelbakterie:tuberkelbakteries:tuberkelbakterien:tuberkelbakteriens:tuberkelbakterier:tuberkelbakteriers:tuberkelbakterierna:tuberkelbakteriernas
+857366r3<substantiv>tuberkulin:tuberkulin:tuberkulins:tuberkulinet:tuberkulinets::::
+719558r5<substantiv>tuberkulos:tuberkulos:tuberkulos:tuberkulosen:tuberkulosens:!:!:!:!
+CUSTOM: y y tuberkulos
+890133r4<substantiv>tuberkulosvaccin:tuberkulosvaccin:tuberkulosvaccins:tuberkulosvaccinet:tuberkulosvaccinets:tuberkulosvacciner:tuberkulosvacciners:tuberkulosvaccinerna:tuberkulosvaccinernas
+COMPOUND(719558, 561728): tuberkulos + vaccin
+565410r3<adjektiv>tuberkulös:tuberkulös:tuberkulöst:tuberkulösa:tuberkulösa::::
+795898r3<adjektiv>tubformad:tubformad:tubformat:tubformade:tubformade:!:!:!:
+577858r3<adjektiv>tubformig:tubformig:tubformigt:tubformiga:tubformiga::::
+857370r3<substantiv>tubkikare:tubkikare:tubkikares:tubkikaren:tubkikarens:tubkikare:tubkikares:tubkikarna:tubkikarnas
+948018r3<su

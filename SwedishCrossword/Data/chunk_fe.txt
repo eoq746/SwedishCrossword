@@ -1,0 +1,638 @@
+ingarna:provoceringarnas
+634805r4<substantiv>provokation:provokation:provokations:provokationen:provokationens:provokationer:provokationers:provokationerna:provokationernas
+CUSTOM: y y provokations
+755771r3<adjektiv>provokativ:provokativ:provokativt:provokativa:provokativa::::provokative
+583176r3<adjektiv>provokatorisk:provokatorisk:provokatoriskt:provokatoriska:provokatoriska::::
+550284r3<substantiv>provokatör:provokatör:provokatörs:provokatören:provokatörens:provokatörer:provokatörers:provokatörerna:provokatörernas
+932124r4<substantiv>provrum:provrum:provrums:provrummet:provrummets:provrum:provrums:provrummen:provrummens
+COMPOUND(547507, 571182): prova + rum
+755776r4<substantiv>provrör:provrör:provrörs:provröret:provrörets:provrör:provrörs:provrören:provrörens
+CUSTOM: y y provrörs
+755775r4<substantiv>provrörsbefruktning:provrörsbefruktning:provrörsbefruktnings:provrörsbefruktningen:provrörsbefruktningens:provrörsbefruktningar:provrörsbefruktningars:provrörsbefruktningarna:provrörsbefruktningarnas
+COMPOUND(755776, 592444): provrör + befruktning
+985044r3<substantiv>provsjungning:provsjungning:provsjungnings:provsjungningen:provsjungningens:provsjungningar:provsjungningars:provsjungningarna:provsjungningarnas
+702803r4<verb>provskjuta:provskjuta:provsköt:provskjutit:provskjuter:provskjut:provskjutas:provsköts:provskjutits:provskjuts:provskjuten:provskjutet:provskjutna::
+COMPOUND(621658, 593371): prov + skjuta
+702815r3<substantiv>provskjutning:provskjutning:provskjutnings:provskjutningen:provskjutningens:provskjutningar:provskjutningars:provskjutningarna:provskjutningarnas
+CUSTOM: y y provskjutnings
+755783r3<substantiv>provsmakare:provsmakare:provsmakares:provsmakaren:provsmakarens:provsmakare:provsmakares:provsmakarna:provsmakarnas
+695690r3<substantiv>provsmakning:provsmakning:provsmaknings:provsmakningen:provsmakningens:provsmakningar:provsmakningars:provsmakningarna:provsmakningarnas
+CUSTOM: y y provsmaknings
+784538r12<verb>provsteka:provsteka:provstekte:provstekt:provsteker:provstek:provstekas:provstektes:provstekts:provsteks:provstekt:provstekt:provstekta::
+COMPOUND(547507, 585841): prova + steka
+CUSTOM: y n n
+721267r5<substantiv>provstopp:provstopp:provstopps:provstoppet:provstoppets:provstopp:provstopps:provstoppen:provstoppens
+COMPOUND(621658, 608140): prov + stopp
+CUSTOM: y y provstopps
+755790r3<substantiv>provstoppsavtal::::::::
+COMPOUND(721267, 552215): provstopp + avtal
+934578r4<substantiv>provsvar:provsvar:provsvars:provsvaret:provsvarets:provsvar:provsvars:provsvaren:provsvarens
+COMPOUND(621658, 553010): prov + svar
+547834r12<verb>provsända:provsända:provsände:provsänt:provsänder:provsänd:provsändas:provsändes:provsänts:provsänds, provsändes:provsänd:provsänt:provsända:provsändande:
+COMPOUND(621657, 593413): prov + sända
+CUSTOM: y n n
+896668r3<substantiv>provtagare:provtagare:provtagares:provtagaren:provtagarens:provtagare:provtagares:provtagarna:provtagarnas
+770825r3<substantiv>provtagning:provtagning:provtagnings:provtagningen:provtagningens:provtagningar:provtagningars:provtagningarna:provtagningarnas
+824204r3<substantiv>provtur:provtur:provturs:provturen:provturens:provturer:provturers:provturerna:provturernas
+932130r4<substantiv>provval:provval:provvals:provvalet:provvalets:provval:provvals:provvalen:provvalens
+COMPOUND(547507, 555548): prova + val
+777572r3<verb>provåka:provåka:provåkte:provåkt:provåker:provåk:provåkas:provåktes:provåkts:provåks:provåkt:provåkt:provåkta::
+758617r4<substantiv>provår:provår:provårs:provåret:provårets:provår:provårs:provåren:provårens
+COMPOUND(621657, 553140): prov + år
+777583r3<substantiv>proxyserver:proxyserver:proxyservers:proxyservern:proxyserverns:proxyservrar:proxyservrars:proxyservrarna:proxyservrarnas
+567436r3<adjektiv>prudentlig:prudentlig:prudentligt:prudentliga:prudentliga::::
+777592r3<substantiv>prudentlighet:prudentlighet:prudentlighets:prudentligheten:prudentlighetens::::
+646608r3<verb>prunka:prunka:prunkade:prunkat:prunkar::::::::::
+695691r3<adjektiv>prunkande:prunkande:prunkande:prunkande:prunkande:!:!:!:
+649014r3<substantiv>prut:prut:pruts:prutet:prutets::::
+CUSTOM: y n
+649018r4<verb>pruta:pruta:prutade:prutat:prutar:pruta:prutas:prutades:prutats:prutas:prutad:prutat:prutade:prutande:
+985052r3<substantiv>prutgås:prutgås:prutgås:prutgåsen:prutgåsens:prutgäss:prutgäss:prutgässen:prutgässens
+CUSTOM: y n
+755791r4<substantiv>prutmån:prutmån:prutmåns:prutmånen:prutmånens::::
+695692r3<substantiv>prutning:prutning:prutnings:prutningen:prutningens:prutningar:prutningars:prutningarna:prutningarnas
+CUSTOM: y y prutnings
+736496r3<substantiv>prutt:prutt:prutts:prutten:pruttens:pruttar:pruttars:pruttarna:pruttarnas
+CUSTOM: y n
+555866r3<verb>prutta:prutta:pruttade:pruttat:pruttar:prutta:!:!:!:!:::::
+CUSTOM: y n
+905216r3<verb>prya:prya:pryade:pryat:pryar:prya:!:!:!:!:::::
+CUSTOM: y n
+802221r3<adjektiv>pryd:pryd::pryda:pryda:prydare:prydast:prydaste:
+CUSTOM: y n
+562059r5<verb>pryda:pryda:prydde:prytt:pryder:pryd:prydas:pryddes:prytts:pryds:prydd:prytt:prydda:prydande:
+CUSTOM: y n
+567437r4<adjektiv>prydlig:prydlig:prydligt:prydliga:prydliga:prydligare:prydligast:prydligaste:prydlige
+942178r3<substantiv>prydlighet:prydlighet:prydlighets:prydligheten:prydlighetens::::
+550285r6<substantiv>prydnad:prydnad:prydnads:prydnaden:prydnadens:prydnader:prydnaders:prydnaderna:prydnadernas
+CUSTOM: y y prydnads
+922566r4<substantiv>prydnadspumpa:prydnadspumpa:prydnadspumpas:prydnadspumpan:prydnadspumpans:prydnadspumpor:prydnadspumpors:prydnadspumporna:prydnadspumpornas
+COMPOUND(550285, 594915): prydnad + pumpa
+755792r4<substantiv>prydnadssak:prydnadssak:prydnadssaks:prydnadssaken:prydnadssakens:prydnadssaker:prydnadssakers:prydnadssakerna:prydnadssakernas
+COMPOUND(550285, 550443): prydnad + sak
+841359r3<substantiv>prydnadssten:prydnadssten:prydnadsstens:prydnadsstenen:prydnadsstenens:prydnadsstenar:prydnadsstenars:prydnadsstenarna:prydnadsstenarnas
+940889r3<substantiv>prydno:prydno:::::::
+777596r6<substantiv>prygel:prygel:prygels:pryglet:pryglets::::
+DEFINITION 1: Aga
+DEFINITION 2: Fysisk bestraffning
+CUSTOM: y y prygel
+901521r4<substantiv>prygel:prygel:prygels:prygeln:prygelns:pryglar:pryglars:pryglarna:pryglarnas
+DEFINITION 1: Verktyg som används vid prygel.
+777600r3<substantiv>prygelstraff::::::::
+COMPOUND(777596, 552986): prygel + straff
+734282r3<verb>prygla:prygla:pryglade:pryglat:pryglar:prygla:pryglas:pryglades:pryglats:pryglas:pryglad:pryglat:pryglade:pryglande:
+777601r3<substantiv>prygling:prygling:pryglings:pryglingen:pryglingens::::
+551778r5<substantiv>pryl:pryl:pryls:prylen:prylens:prylar:prylars:prylarna:prylarnas
+CUSTOM: y y pryl
+766048r3<adjektiv>prylfixerad:prylfixerad:prylfixerat:prylfixerade:prylfixerade:!:!:!:
+575418r3<adjektiv>prylformig:prylformig:prylformigt:prylformiga:prylformiga::::
+777606r3<adjektiv>prylgalen:prylgalen:prylgalet:prylgalna:prylgalna::::prylgalne
+628559r3<substantiv>pryo:pryo:pryos:pryon:pryons::::
+CUSTOM: y n
+954059r3<substantiv>pryttel:pryttel:pryttels:prytteln:pryttelns:pryttlar:pryttlars:pryttlarna:pryttlarnas
+695702r3<substantiv>prål:prål:pråls:prålet:prålets:!:!:!:!
+CUSTOM: y n
+627707r8<verb>pråla:pråla:prålade:prålat:prålar:pråla::::::::prålande:
+564069r3<adjektiv>prålfri:prålfri:prålfritt:prålfria:prålfria::::
+567438r3<adjektiv>prålig:prålig:pråligt:pråliga:pråliga::::
+962936r3<substantiv>prålighet:prålighet:prålighets:pråligheten:prålighetens:pråligheter:pråligheters:pråligheterna:pråligheternas
+624633r15<substantiv>pråm:pråm:pråms:pråmen:pråmens:pråmar:pråmars:pråmarna:pråmarnas
+CUSTOM: y n
+962950r3<substantiv>pråmdragare:pråmdragare:pråmdragares:pråmdragaren:pråmdragarens:pråmdragare:pråmdragares:pråmdragarna:pråmdragarnas
+962944r4<substantiv>pråmskeppare:pråmskeppare:pråmskeppares:pråmskepparen:pråmskepparens:pråmskeppare:pråmskeppares:pråmskepparna:pråmskepparnas
+COMPOUND(624633, 615441): pråm + skeppare
+CUSTOM: y n pråmskeppar
+626018r3<substantiv>prång:prång:prångs:prånget:prångets:prång:prångs:prången:prångens
+547510r4<verb>prångla:prångla:prånglade:prånglat:prånglar:prångla:prånglas:prånglades:prånglats:prånglas:!:!:!::
+777611r3<substantiv>prånglare:prånglare:prånglares:prånglaren:prånglarens:prånglare:prånglares:prånglarna:prånglarnas
+630855r4<substantiv>prägel:prägel:prägels:prägeln:prägelns:präglar:präglars:präglarna:präglarnas
+547509r5<verb>prägla:prägla:präglade:präglat:präglar:prägla:präglas:präglades:präglats:präglas:präglad:präglat:präglade:präglande:
+755800r4<substantiv>prägling:prägling:präglings:präglingen:präglingens:präglingar:präglingars:präglingarna:präglingarnas
+CUSTOM: y y präglings
+777617r4<substantiv>präglingsår:präglingsår:präglingsårs:präglingsåret:präglingsårets:präglingsår:präglingsårs:präglingsåren:präglingsårens
+COMPOUND(755800, 553140): prägling + år
+563282r5<adjektiv>präktig:präktig:präktigt:präktiga:präktiga:präktigare:präktigast:präktigaste:präktige
+755808r3<substantiv>präktighet:präktighet:präktighets:präktigheten:präktighetens::::
+626008r3<substantiv>pränt:pränt:::::::
+626009r3<verb>pränta:pränta:präntade:präntat:präntar:pränta:präntas:präntades:präntats:präntas:präntad:präntat:präntade:präntande:
+727936r4<substantiv>prärie:prärie:präries:prärien:präriens:prärier:präriers:prärierna:präriernas
+CUSTOM: y y prärie
+777623r4<substantiv>präriebrand:präriebrand:präriebrands:präriebranden:präriebrandens:präriebränder:präriebränders:präriebränderna:präriebrändernas
+COMPOUND(727936, 617396): prärie + brand
+550286r18<substantiv>präst:präst:prästs:prästen:prästens:präster:prästers:prästerna:prästernas
+CUSTOM: y y präst
+675244r3<substantiv>prästadöme:prästadöme:prästadömes:prästadömet:prästadömets:prästadömen:prästadömens:prästadömena:prästadömenas
+683754r4<substantiv>prästbetyg:prästbetyg:prästbetygs:prästbetyget:prästbetygets:prästbetyg:prästbetygs:prästbetygen:prästbetygens
+COMPOUND(550286, 552244): präst + betyg
+683760r4<substantiv>prästbevis:prästbevis:prästbevis:prästbeviset:prästbevisets:prästbevis:prästbevis:prästbevisen:prästbevisens
+COMPOUND(550286, 552246): präst + bevis
+683765r4<substantiv>prästbrist:prästbrist:prästbrists:prästbristen:prästbristens::::
+COMPOUND(550286, 548456): präst + brist
+CUSTOM: y y prästbrist
+683769r4<substantiv>prästdräkt:prästdräkt:prästdräkts:prästdräkten:prästdräktens:prästdräkter:prästdräkters:prästdräkterna:prästdräkternas
+COMPOUND(550286, 548725): präst + dräkt
+567439r3<adjektiv>prästerlig:prästerlig:prästerligt:prästerliga:prästerliga::::
+683785r3<substantiv>prästerskap:prästerskap:prästerskaps:prästerskapet:prästerskapets::::
+CUSTOM: y y prästerskaps
+683789r3<substantiv>prästestånd:prästestånd:prästestånds:prästeståndet:prästeståndets::::
+681885r4<substantiv>prästfru:prästfru, prästfruga:prästfrus, prästfrugas:prästfrun, prästfrugan:prästfruns, prästfrugans:prästfruar, prästfrugor:prästfruars, prästfrugors:prästfruarna, prästfrugorna:prästfruarnas, prästfrugornas
+COMPOUND(550286, 556156): präst + fruga, fru
+619387r4<substantiv>prästgård:prästgård:prästgårds:prästgården:prästgårdens:prästgårdar:prästgårdars:prästgårdarna:prästgårdarnas
+CUSTOM: y y prästgårds
+683777r4<substantiv>prästgårdsbyggnad:prästgårdsbyggnad:prästgårdsbyggnads:prästgårdsbyggnaden:prästgårdsbyggnadens:prästgårdsbyggnader:prästgårdsbyggnaders:prästgårdsbyggnaderna:prästgårdsbyggnadernas
+COMPOUND(619387, 548492): prästgård + byggnad
+683793r4<substantiv>prästhem:prästhem:prästhems:prästhemmet:prästhemmets:prästhem:prästhems:prästhemmen:prästhemmens
+COMPOUND(550286, 555169): präst + hem
+681900r4<substantiv>prästhustru:prästhustru:prästhustrus:prästhustrun:prästhustruns:prästhustrur:prästhustrurs:prästhustrurna:prästhustrurnas
+COMPOUND(550286, 611899): präst + hustru
+755812r3<substantiv>prästinna:prästinna:prästinnas:prästinnan:prästinnans:prästinnor:prästinnors:prästinnorna:prästinnornas
+683799r4<substantiv>prästjour:prästjour:prästjours:prästjouren:prästjourens:prästjourer:prästjourers:prästjourerna:prästjourernas
+COMPOUND(550286, 549387): präst + jour
+880222r4<substantiv>prästkall:prästkall:prästkalls:prästkallet:prästkallets:prästkall:prästkalls:prästkallen:prästkallens
+COMPOUND(550286, 552540): präst + kall
+683807r4<substantiv>prästkandidat:prästkandidat:prästkandidats:prästkandidaten:prästkandidatens:prästkandidater:prästkandidaters:prästkandidaterna:prästkandidaternas
+COMPOUND(550286, 549427): präst + kandidat
+681907r4<substantiv>prästkläder:!:!:!:!:prästkläder:prästkläders:prästkläderna:prästklädernas
+COMPOUND(550286, 604465): präst + kläder
+599959r3<substantiv>prästkrage:prästkrage:prästkrages:prästkragen:prästkragens:prästkragar:prästkragars:prästkragarna:prästkragarnas
+806045r3<substantiv>prästost:prästost:prästosts:prästosten:prästostens:prästostar:prästostars:prästostarna:prästostarnas
+846629r4<verb>prästviga:prästviga:prästvigde:prästvigt:prästviger:prästvig:prästvigas:prästvigdes:prästvigts:prästvigs:prästvigd:prästvigt:prästvigda::
+COMPOUND(550286, 585804): präst + viga
+681908r4<substantiv>prästvigning:prästvigning:prästvignings:prästvigningen:prästvigningens:prästvigningar:prästvigningars:prästvigningarna:prästvigningarnas
+COMPOUND(550286, 695706): präst + vigning
+CUSTOM: y y prästvignings
+626024r8<substantiv>pröjs:pröjs:pröjs:pröjset:pröjsets:!:!:!:!
+626029r8<verb>pröjsa:pröjsa:pröjsade:pröjsat:pröjsar:pröjsa:pröjsas:pröjsades:pröjsats:pröjsas:pröjsad:pröjsat:pröjsade:pröjsande:
+547511r5<verb>pröva:pröva:prövade:prövat:prövar:pröva:prövas:prövades:prövats:prövas:prövad:prövat:prövade::
+695714r4<adjektiv>prövande:prövande:prövande:prövande:prövande:!:!:!:
+634301r5<substantiv>prövning:prövning:prövnings:prövningen:prövningens:prövningar:prövningars:prövningarna:prövningarnas
+CUSTOM: y y prövnings +prövnings
+956951r4<substantiv>prövosten:prövosten:prövostens:prövostenen:prövostenens:prövostenar:prövostenars:prövostenarna:prövostenarnas
+COMPOUND(547511, 551935): pröva + sten
+695715r3<substantiv>prövotid:prövotid:prövotids:prövotiden:prövotidens::::
+936470r3<förkortning>PS:PS
+550288r7<substantiv>psalm:psalm:psalms:psalmen:psalmens:psalmer:psalmers:psalmerna:psalmernas
+CUSTOM: y y psalm
+681909r6<substantiv>psalmbok:psalmbok:psalmboks:psalmboken:psalmbokens:psalmböcker:psalmböckers:psalmböckerna:psalmböckernas
+DEFINITION 1: Sångbok innehållande psalmer.
+COMPOUND(550288, 555346): psalm + bok
+CUSTOM: y y psalmboks
+777624r3<substantiv>psalmboksblad::::::::
+COMPOUND(681909, 552254): psalmbok + blad
+985058r3<substantiv>psalmist:psalmist:psalmists:psalmisten:psalmistens:psalmister:psalmisters:psalmisterna:psalmisternas
+CUSTOM: y n
+985066r3<substantiv>psalmodikon:psalmodikon:psalmodikons:psalmodikonet:psalmodikonets:psalmodikon:psalmodikons:psalmodikonen:psalmodikonens
+985072r3<substantiv>psaltare:psaltare:psaltares:psaltaren:psaltarens::::
+695720r3<egennamn>Psaltaren:Psaltaren:Psaltarens
+583179r3<adjektiv>pseudoklassisk:pseudoklassisk:pseudoklassiskt:pseudoklassiska:pseudoklassiska::::
+550290r3<substantiv>pseudonym:pseudonym:pseudonyms:pseudonymen:pseudonymens:pseudonymer:pseudonymers:pseudonymerna:pseudonymernas
+798692r3<adjektiv>pseudonym:pseudonym:pseudonymt:pseudonyma:pseudonyma::::
+591625r3<substantiv>pseudonymlexikon:pseudonymlexikon:pseudonymlexikons:pseudonymlexikonet:pseudonymlexikonets:pseudonymlexikon:pseudonymlexikons:pseudonymlexikonen:pseudonymlexikonens
+583182r3<adjektiv>pseudoparenkymatisk:pseudoparenkymatisk:pseudoparenkymatiskt:pseudoparenkymatiska:pseudoparenkymatiska::::
+583185r3<adjektiv>pseudoperiodisk:pseudoperiodisk:pseudoperiodiskt:pseudoperiodiska:pseudoperiodiska::::
+658362r3<substantiv>pseudovetenskap:pseudovetenskap:pseudovetenskaps:pseudovetenskapen:pseudovetenskapens:pseudovetenskaper:pseudovetenskapers:pseudovetenskaperna:pseudovetenskapernas
+CUSTOM: y y pseudovetenskaps
+567440r3<adjektiv>pseudovetenskaplig:pseudovetenskaplig:pseudovetenskapligt:pseudovetenskapliga:pseudovetenskapliga::::
+678703r3<substantiv>P-skum:P-skum:P-skums:P-skummet:P-skummets::::
+CUSTOM: n n
+583188r3<adjektiv>psofometrisk:psofometrisk:psofometriskt:psofometriska:psofometriska::::
+755820r4<substantiv>psoriasis:psoriasis:psoriasis:psoriasisen:psoriasisens::::
+CUSTOM: y y psoriasis
+777626r4<adjektiv>psoriasissjuk:psoriasissjuk:psoriasissjukt:psoriasissjuka:psoriasissjuka:!:!:!:psoriasissjuke
+COMPOUND(755820, 563030): psoriasis + sjuk
+935372r3<interjektion>pst:pst
+CUSTOM: n n y
+595944r4<verb>psyka:psyka:psykade:psykat:psykar:psyka:psykas:psykades:psykats:psykas:psykad:psykat:psykade::
+DEFINITION 1: Trakassera [ i syfte att få någon att känna sig illa till mods ] [ varagligt ]
+755824r3<substantiv>psykakut:psykakut:psykakuts:psykakuten:psykakutens:psykakuter:psykakuters:psykakuterna:psykakuternas
+595987r3<substantiv>psyke:psyke:psykes:psyket:psykets:psyken:psykens:psykena:psykenas
+583191r3<adjektiv>psykedelisk:psykedelisk:psykedeliskt:psykedeliska:psykedeliska::::
+906820r3<substantiv>psykfall:psykfall:psykfalls:psykfallet:psykfallets:psykfall:psykfalls:psykfallen:psykfallens
+595953r3<substantiv>psykiater:psykiater:psykiaters:psykiatern:psykiaterns:psykiatrer:psykiatrers:psykiatrerna:psykiatrernas
+595961r3<substantiv>psykiatri:psykiatri:psykiatris:psykiatrin:psykiatrins:!:!:!:!
+CUSTOM: y y psykiatri +psykiatri
+595962r3<substantiv>psykiatriker:psykiatriker:psykiatrikers:psykiatrikern:psykiatrikerns:psykiatriker:psykiatrikers:psykiatrikerna:psykiatrikernas
+CUSTOM: y y psykiatriker
+583192r4<adjektiv>psykiatrisk:psykiatrisk:psykiatriskt:psykiatriska:psykiatriska::::psykiatriske
+583193r3<adjektiv>psykisk:psykisk:psykiskt:psykiska:psykiska::::
+595991r3<substantiv>psykklinik:psykklinik:psykkliniks:psykkliniken:psykklinikens:psykkliniker:psykklinikers:psykklinikerna:psykklinikernas
+595999r3<substantiv>psykning:psykning:psyknings:psykningen:psykningens:psykningar:psykningars:psykningarna:psykningarnas
+CUSTOM: y y psyknings
+595968r3<substantiv>psykoanalys:psykoanalys:psykoanalys:psykoanalysen:psykoanalysens:psykoanalyser:psykoanalysers:psykoanalyserna:psykoanalysernas
+587674r4<verb>psykoanalysera:psykoanalysera:psykoanalyserade:psykoanalyserat:psykoanalyserar:psykoanalysera:psykoanalyseras:psykoanalyserades:psykoanalyserats:psykoanalyseras:psykoanalyserad:psykoanalyserat:psykoanalyserade::
+596007r3<substantiv>psykoanalytiker:psykoanalytiker:psykoanalytikers:psykoanalytikern:psykoanalytikerns:psykoanalytiker:psykoanalytikers:psykoanalytikerna:psykoanalytikernas
+583194r3<adjektiv>psykoanalytisk:psykoanalytisk:psykoanalytiskt:psykoanalytiska:psykoanalytiska::::
+596008r3<substantiv>psykodrama:psykodrama:psykodramas:psykodramat:psykodramats:!:!:!:!
+583195r3<adjektiv>psykodynamisk:psykodynamisk:psykodynamiskt:psykodynamiska:psykodynamiska::::
+596012r10<substantiv>psykofarmaka:::psykofarmakan:psykofarmakans:psykofarmaka:psykofarmakas::
+596016r3<substantiv>psykofysik:psykofysik:psykofysiks:psykofysiken:psykofysikens:!:!:!:!
+583196r3<adjektiv>psykofysisk:psykofysisk:psykofysiskt:psykofysiska:psykofysiska::::
+596020r3<adjektiv>psykogen:psykogen:psykogent:psykogena:psykogena::::
+550291r6<substantiv>psykolog:psykolog:psykologs:psykologen:psykologens:psykologer:psykologers:psykologerna:psykologernas
+CUSTOM: y y psykolog
+595977r7<substantiv>psykologi:psykologi:psykologis:psykologin, psykologien:psykologins, psykologiens:!:!:!:!
+CUSTOM: y y psykologi
+587678r4<verb>psykologisera:psykologisera:psykologiserade:psykologiserat:psykologiserar:psykologisera::::::::psykologiserande:
+695723r3<substantiv>psykologisering:psykologisering:psykologiserings:psykologiseringen:psykologiseringens:psykologiseringar:psykologiseringars:psykologiseringarna:psykologiseringarnas
+CUSTOM: y y psykologiserings
+583199r4<adjektiv>psykologisk:psykologisk:psykologiskt:psykologiska:psykologiska::::psykologiske
+550293r3<substantiv>psykologkandidat:psykologkandidat:psykologkandidats:psykologkandidaten:psykologkandidatens:psykologkandidater:psykologkandidaters:psykologkandidaterna:psykologkandidaternas
+681916r4<substantiv>psykologlinje:psykologlinje:psykologlinjes:psykologlinjen:psykologlinjens:psykologlinjer:psykologlinjers:psykologlinjerna:psykologlinjernas
+COMPOUND(550291, 611937): psykolog + linje
+681923r4<substantiv>psykologutbildning:psykologutbildning:psykologutbildnings:psykologutbildningen:psykologutbildningens:psykologutbildningar:psykologutbildningars:psykologutbildningarna:psykologutbildningarnas
+COMPOUND(550291, 597810): psykolog + utbildning
+CUSTOM: y y psykologutbildnings
+695725r3<substantiv>psykometri:psykometri:psykometris:psykometrin:psykometrins:!:!:!:!
+583200r3<adjektiv>psykomotorisk:psykomotorisk:psykomotoriskt:psykomotoriska:psykomotoriska::::
+595979r4<substantiv>psykopat:psykopat:psykopats:psykopaten:psykopatens:psykopater:psykopaters:psykopaterna:psykopaternas
+CUSTOM: y y psykopat
+596023r3<substantiv>psykopati:psykopati:psykopatis:psykopatin:psykopatins:!:!:!:!
+583203r3<adjektiv>psykopatisk:psykopatisk:psykopatiskt:psykopatiska:psykopatiska::::
+777630r3<substantiv>psykopatologi:psykopatologi:psykopatologis:psykopatologin:psykopatologins::::
+583206r3<adjektiv>psykoprofylaktisk:psykoprofylaktisk:psykoprofylaktiskt:psykoprofylaktiska:psykoprofylaktiska::::
+550295r3<substantiv>psykos:psykos:psykos:psykosen:psykosens:psykoser:psykosers:psykoserna:psykosernas
+CUSTOM: y y psykos
+695730r3<adjektiv>psykosocial:psykosocial:psykosocialt:psykosociala:psykosociala:!:!:!:
+583209r3<adjektiv>psykosomatisk:psykosomatisk:psykosomatiskt:psykosomatiska:psykosomatiska::::
+583212r3<adjektiv>psykoteknisk:psykoteknisk:psykotekniskt:psykotekniska:psykotekniska::::
+596027r3<substantiv>psykoterapeut:psykoterapeut:psykoterapeuts:psykoterapeuten:psykoterapeutens:psykoterapeuter:psykoterapeuters:psykoterapeuterna:psykoterapeuternas
+583213r3<adjektiv>psykoterapeutisk:psykoterapeutisk:psykoterapeutiskt:psykoterapeutiska:psykoterapeutiska::::
+596035r3<substantiv>psykoterapi:psykoterapi:psykoterapis:psykoterapin:psykoterapins:!:!:!:!
+CUSTOM: y y psykoterapi
+583214r4<adjektiv>psykotisk:psykotisk:psykotiskt:psykotiska:psykotiska::::psykotiske
+948709r3<substantiv>psykpatient:psykpatient:psykpatients:psykpatienten:psykpatientens:psykpatienter:psykpatienters:psykpatienterna:psykpatienternas
+985076r3<substantiv>psykrometer:psykrometer:psykrometers:psykrometern:psykrometerns:psykrometrar:psykrometrars:psykrometrarna:psykrometrarnas
+583215r3<adjektiv>psykrometrisk:psykrometrisk:psykrometriskt:psykrometriska:psykrometriska::::
+777634r3<adjektiv>psyksjuk:psyksjuk:psyksjukt:psyksjuka:psyksjuka:!:!:!:psyksjuke
+985084r3<substantiv>psyksjukhus:psyksjukhus:psyksjukhus:psyksjukhuset:psyksjukhusets:psyksjukhus:psyksjukhus:psyksjukhusen:psyksjukhusens
+662522r5<verb>psykundersöka:psykundersöka:psykundersökte:psykundersökt:psykundersöker:psykundersök:psykundersökas:psykundersöktes:psykundersökts:psykundersöks:psykundersökt:psykundersökt:psykundersökta::
+917985r3<substantiv>psykundersökning:psykundersökning:psykundersöknings:psykundersökningen:psykundersökningens::::
+596039r3<substantiv>psykvård:psykvård:psykvårds:psykvården:psykvårdens:!:!:!:!
+583218r3<adjektiv>ptolemaisk:ptolemaisk:ptolemaiskt:ptolemaiska:ptolemaiska::::
+583221r3<adjektiv>ptolemeisk:ptolemeisk:ptolemeiskt:ptolemeiska:ptolemeiska::::
+596043r3<interjektion>ptro:ptro
+551779r5<substantiv>pub:pub:pubs:puben:pubens:pubar:pubars:pubarna:pubarnas
+CUSTOM: y n 
+596044r3<adjektiv>pubertal:pubertal:pubertalt:pubertala:pubertala::::
+596047r4<substantiv>pubertet:pubertet:pubertets:puberteten:pubertetens:!:!:!:!
+CUSTOM: y y pubertets
+777638r3<substantiv>pubertetskris::::::::
+COMPOUND(596047, 549772): pubertet + kris
+777639r3<substantiv>pubeshår:pubeshår:pubeshårs:pubeshåret:pubeshårets:pubeshår:pubeshårs:pubeshåren:pubeshårens
+547512r5<verb>publicera:publicera:publicerade:publicerat:publicerar:publicera:publiceras:publicerades:publicerats:publiceras:publicerad:publicerat:publicerade:publicerande:
+569937r3<adjektiv>publicerbar:publicerbar:publicerbart:publicerbara:publicerbara::::
+695731r4<substantiv>publicering:publicering:publicerings:publiceringen:publiceringens:publiceringar:publiceringars:publiceringarna:publiceringarnas
+CUSTOM: y y publicerings +publicerings
+683099r6<substantiv>publiceringsår:publiceringsår:publiceringsårs:publiceringsåret:publiceringsårets:publiceringsår:publiceringsårs:publiceringsåren:publiceringsårens
+COMPOUND(695731, 553140): publicering + år
+596049r3<substantiv>publicist:publicist:publicists:publicisten:publicistens:publicister:publicisters:publicisterna:publicisternas
+CUSTOM: y y publicist
+755833r3<substantiv>publicistik:publicistik:publicistiks:publicistiken:publicistikens::::
+583224r3<adjektiv>publicistisk:publicistisk:publicistiskt:publicistiska:publicistiska::::
+695736r3<substantiv>publicitet:publicitet:publicitets:publiciteten:publicitetens:!:!:!:!
+CUSTOM: y y publicitets
+575421r3<adjektiv>publicitetshungrig:publicitetshungrig:publicitetshungrigt:publicitetshungriga:publicitetshungriga::::
+CUSTOM: n n
+621659r9<substantiv>publik:publik:publiks:publiken:publikens:publiker:publikers:publikerna:publikernas
+CUSTOM: y y publik
+695738r3<adjektiv>publik:publik:publikt:publika:publika:!:!:!:
+550296r3<substantiv>publikan:publikan:publikans:publikanen:publikanens:publikaner:publikaners:publikanerna:publikanernas
+550298r4<substantiv>publikation:publikation:publikations:publikationen:publikationens:publikationer:publikationers:publikationerna:publikationernas
+CUSTOM: y y publikations
+555903r7<presens particip>publikdragande:publikdragande
+801176r3<adjektiv>publikknipande:publikknipande:publikknipande:publikknipande:publikknipande:!:!:!:
+732628r4<substantiv>publikrekord:publikrekord:publikrekords:publikrekordet:publikrekordets:publikrekord:publikrekords:publikrekorden:publikrekordens
+COMPOUND(621659, 552828): publik + rekord
+952614r4<substantiv>publiksorl:publiksorl:publiksorls:publiksorlet:publiksorlets::::
+COMPOUND(621659, 628833): publik + sorl
+766051r3<adjektiv>publiktillvänd:publiktillvänd:publiktillvänt:publiktillvända:publiktillvända::::
+567441r4<adjektiv>publikvänlig:publikvänlig:publikvänligt:publikvänliga:publikvänliga:publikvänligare:publikvänligast:publikvänligaste:
+598701r3<substantiv>puck:puck:pucks:pucken:puckens:puckar:puckars:puckarna:puckarnas
+895314r3<adjektiv>puckad:puckad:puckat:puckade:puckade:!:!:!:puckade:!:!:!:!:!:!:!:!
+621661r3<substantiv>puckel:puckel:puckels:puckeln:puckelns:pucklar:pucklars:pucklarna:pucklarnas
+575424r3<adjektiv>puckelformig:puckelformig:puckelformigt:puckelformiga:puckelformiga::::
+755837r4<substantiv>puckelpist:puckelpist:puckelpists:puckelpisten:puckelpistens:puckelpister:puckelpisters:puckelpisterna:puckelpisternas
+777645r3<substantiv>puckelrygg:puckelrygg:puckelryggs:puckelryggen:puckelryggens:puckelryggar:puckelryggars:puckelryggarna:puckelryggarnas
+575427r3<adjektiv>puckelryggig:puckelryggig:puckelryggigt:puckelryggiga:puckelryggiga::::
+777653r3<substantiv>puckelryggighet:puckelryggighet:puckelryggighets:puckelryggigheten:puckelryggighetens::::
+658560r4<verb>puckla:puckla:pucklade:pucklat:pucklar:puckla:pucklas:pucklades:pucklats:pucklas:pucklad:pucklat:pucklade:pucklande:
+DEFINITION 1: Från puckla på
+567442r3<adjektiv>pucklig:pucklig:puckligt:puckliga:puckliga::::
+780821r3<substantiv>pucko:pucko:puckos:puckot:puckots:puckon:puckons:puckona:puckonas
+681770r6<substantiv>pudding:pudding:puddings:puddingen:puddingens:puddingar:puddingars:puddingarna:puddingarnas
+621663r4<substantiv>pudel:pudel:pudels:pudeln:pudelns:pudlar:pudlars:pudlarna:pudlarnas
+CUSTOM: y y pudel
+777657r4<substantiv>pudelvalp:pudelvalp:pudelvalps:pudelvalpen:pudelvalpens:pudelvalpar:pudelvalpars:pudelvalparna:pudelvalparnas
+COMPOUND(621663, 552085): pudel + valp
+621665r4<substantiv>puder:puder:puders:pudret:pudrets::::
+CUSTOM: y y puder
+777665r3<substantiv>puderdosa::::::::
+COMPOUND(621665, 556570): puder + dosa
+547513r4<verb>pudra:pudra:pudrade:pudrat:pudrar:pudra:pudras:pudrades:pudrats:pudras:pudrad:pudrat:pudrade::
+575430r3<adjektiv>pudrig:pudrig:pudrigt:pudriga:pudriga::::
+627650r3<adjektiv>pueril:pueril:puerilt:puerila:puerila::::puerile
+777666r3<substantiv>puertorican:puertorican:puertoricans:puertoricanen:puertoricanens:puertoricaner:puertoricaners:puertoricanerna:puertoricanernas
+777674r3<adjektiv>puertoricansk:puertoricansk:puertoricanskt:puertoricanska:puertoricanska:!:!:!:puertoricanske
+777677r3<substantiv>puertoricanska:puertoricanska:puertoricanskas:puertoricanskan:puertoricanskans:puertoricanskor:puertoricanskors:puertoricanskorna:puertoricanskornas
+628565r4<substantiv>puff:puff:puffs:puffen:puffens:puffar:puffars:puffarna:puffarnas
+628573r3<verb>puffa:puffa:puffade:puffat:puffar:puffa:puffas:puffades:puffats:puffas::::puffande:
+575433r3<adjektiv>puffig:puffig:puffigt:puffiga:puffiga::::
+702823r3<substantiv>puffra:puffra:puffras:puffran:puffrans:puffror:puffrors:puffrorna:puffrornas
+777685r3<substantiv>puffärm:puffärm:puffärms:puffärmen:puffärmens:puffärmar:puffärmars:puffärmarna:puffärmarnas
+766054r3<adjektiv>puffärmad:puffärmad:puffärmat:puffärmade:puffärmade:!:!:!:
+558089r3<substantiv>pugilism:pugilism:pugilisms:pugilismen:pugilismens:!:!:!:!
+777693r3<substantiv>pugilist:pugilist:pugilists:pugilisten:pugilistens:pugilister:pugilisters:pugilisterna:pugilisternas
+583227r3<adjektiv>pugilistisk:pugilistisk:pugilistiskt:pugilistiska:pugilistiska::::
+627801r3<interjektion>puh:puh
+621669r5<substantiv>puka:puka:pukas:pukan:pukans:pukor:pukors:pukorna:pukornas
+CUSTOM: y n
+923419r3<substantiv>puke:puke:pukes:puken:pukens:pukar:pukars:pukarna:pukarnas
+CUSTOM: n n y
+777701r4<substantiv>pukslag:pukslag:pukslags:pukslaget:pukslagets:pukslag:pukslags:pukslagen:pukslagens
+COMPOUND(621669, 608035): puka + slag
+777707r3<substantiv>pukslagare:pukslagare:pukslagares:pukslagaren:pukslagarens:pukslagare:pukslagares:pukslagarna:pukslagarnas
+985090r3<substantiv>puktörne:puktörne:puktörnes:puktörnet:puktörnets:puktörnen:puktörnens:puktörnena:puktörnenas
+CUSTOM: y n
+925501r4<verb>pula:pula:pulade:pulat:pular:pula:pulas:pulades:pulats:pulas:::::
+DEFINITION 1: syssla, pyssla, ev att det är lite krångligt
+626037r4<substantiv>pulka:pulka:pulkas:pulkan:pulkans:pulkor:pulkors:pulkorna:pulkornas
+CUSTOM: y y pulka
+695739r4<substantiv>pulkaåkning:pulkaåkning:pulkaåknings:pulkaåkningen:pulkaåkningens::::
+COMPOUND(626037, 653734): pulka + åkning
+CUSTOM: y y pulkaåknings
+777714r3<substantiv>pulkbacke:pulkbacke:pulkbackes:pulkbacken:pulkbackens:pulkbackar:pulkbackars:pulkbackarna:pulkbackarnas
+777723r3<substantiv>pulkåkning:pulkåkning:pulkåknings:pulkåkningen:pulkåkningens::::
+935373r3<interjektion>pull:pull
+CUSTOM: n n y
+755838r3<substantiv>pullover:pullover:pullovers:pullovern:pulloverns:pullovrar:pullovrars:pullovrarna:pullovrarnas
+895318r3<substantiv>pulpa:pulpa:pulpas:pulpan:pulpans:pulpor:pulpors:pulporna:pulpornas
+CUSTOM: n n y
+731374r5<substantiv>pulpet:pulpet:pulpets:pulpeten:pulpetens:pulpeter:pulpeters:pulpeterna:pulpeternas
+962972r4<substantiv>pulpettak:pulpettak:pulpettaks:pulpettaket:pulpettakets:pulpettak:pulpettaks:pulpettaken:pulpettakens
+COMPOUND(731374, 553027): pulpet + tak
+695740r7<substantiv>puls:puls:puls:pulsen:pulsens:pulsar:pulsars:pulsarna:pulsarnas
+CUSTOM: y y puls
+603237r3<substantiv>puls:puls:puls:pulsen:pulsens:pulser:pulsers:pulserna:pulsernas
+695741r3<verb>pulsa:pulsa:pulsade:pulsat:pulsar:pulsa::::::::pulsande:
+681925r3<substantiv>pulsar:pulsar:pulsars:pulsaren:pulsarens:pulsarer:pulsarers:pulsarerna:pulsarernas
+964643r3<adjektiv>pulsbreddsmodulerad:pulsbreddsmodulerad:pulsbreddsmodulerat:pulsbreddsmodulerade:pulsbreddsmodulerade:!:!:!:::::::::
+587679r3<verb>pulsera:pulsera:pulserade:pulserat:pulserar:pulsera:::::::::
+695745r3<adjektiv>pulserande:pulserande:pulserande:pulserande:pulserande:!:!:!:
+575436r3<adjektiv>pulsig:pulsig:pulsigt:pulsiga:pulsiga::::
+565159r3<adjektiv>pulslös:pulslös:pulslöst:pulslösa:pulslösa::::
+552798r3<substantiv>pulsslag:pulsslag:pulsslags:pulsslaget:pulsslagets:pulsslag:pulsslags:pulsslagen:pulsslagens
+800155r3<adjektiv>pulsstyrd:pulsstyrd:pulsstyrt:pulsstyrda:pulsstyrda::::
+724517r4<substantiv>pulsåder:pulsåder:pulsåders:pulsådern:pulsåderns:pulsådror:pulsådrors:pulsådrorna:pulsådrornas
+COMPOUND(695740, 593521): puls + åder
+904805r3<substantiv>pult:pult:pults:pulten:pultens:pulter:pulters:pulterna:pulternas
+CUSTOM: y n
+777727r3<substantiv>pultron:pultron:pultrons:pultronen:pultronens:pultroner:pultroners:pultronerna:pultronernas
+560592r7<substantiv>pulver:pulver:pulvers:pulvret:pulvrets:pulver:pulvers:pulvren:pulvrens
+CUSTOM: y y pulver
+575439r3<adjektiv>pulveraktig:pulveraktig:pulveraktigt:pulveraktiga:pulveraktiga::::
+766057r3<adjektiv>pulverartad:pulverartad:pulverartat:pulverartade:pulverartade:!:!:!:
+676356r3<substantiv>pulverbågssvetsutrustning:pulverbågssvetsutrustning:pulverbågssvetsutrustnings:pulverbågssvetsutrustningen:pulverbågssvetsutrustningens:pulverbågssvetsutrustningar:pulverbågssvetsutrustningars:pulverbågssvetsutrustningarna:pulverbågssvetsutrustningarnas
+CUSTOM: y y pulverbågssvetsutrustnings
+575442r3<adjektiv>pulverformig:pulverformig:pulverformigt:pulverformiga:pulverformiga::::
+590701r3<verb>pulvergranulera:pulvergranulera:pulvergranulerade:pulvergranulerat:pulvergranulerar:pulvergranulera:::::::::
+590705r4<verb>pulverisera:pulverisera:pulveriserade:pulveriserat:pulveriserar:pulverisera:pulveriseras:pulveriserades:pulveriserats:pulveriseras:pulveriserad:pulveriserat:pulveriserade:pulveriserande:
+713073r4<substantiv>pulvermetallurgi:pulvermetallurgi::pulvermetallurgin:pulvermetallurgis::::
+COMPOUND(560592, 683926): pulver + metallurgi
+583230r3<adjektiv>pulvermetallurgisk:pulvermetallurgisk:pulvermetallurgiskt:pulvermetallurgiska:pulvermetallurgiska::::
+673372r4<substantiv>pulvermos:pulvermos:pulvermos:pulvermoset:pulvermosets::::
+COMPOUND(560592, 623256): pulver + mos
+587680r4<verb>pulvrisera:pulvrisera:pulvriserade:pulvriserat:pulvriserar:pulvrisera:pulvriseras:pulvriserades:pulvriserats:pulvriseras:pulvriserad:pulvriserat:pulvriserade:pulvriserande:
+777735r3<substantiv>pulvrisering:pulvrisering:pulvriserings:pulvriseringen:pulvriseringens:pulvriseringar:pulvriseringars:pulvriseringarna:pulvriseringarnas
+628577r4<substantiv>puma:puma:pumas:puman:pumans:pumor:pumors:pumorna:pumornas
+CUSTOM: y n
+777743r4<substantiv>pumaunge:pumaunge:pumaunges:pumaungen:pumaungens:pumaungar:pumaungars:pumaungarna:pumaungarnas
+COMPOUND(628577, 600015): puma + unge
+551780r12<substantiv>pump:pump:pumps:pumpen:pumpens:pumpar:pumpars:pumparna:pumparnas
+CUSTOM: y y pump
+585632r4<verb>pumpa:pumpa:pumpade:pumpat:pumpar:pumpa:pumpas:pumpades:pumpats:pumpas:pumpad:pumpat:pumpade:pumpande:
+594915r7<substantiv>pumpa:pumpa:pumpas:pumpan:pumpans:pumpor:pumpors:pumporna:pumpornas
+CUSTOM: y n
+917990r4<substantiv>pumpafrö:pumpafrö:pumpafrös:pumpafröet:pumpafröets:pumpafrön:pumpafröns:pumpafröna:pumpafrönas
+COMPOUND(594915, 556155): pumpa + frö
+918000r4<substantiv>pumpakärna:pumpakärna:pumpakärnas:pumpakärnan:pumpakärnans:pumpakärnor:pumpakärnors:pumpakärnorna:pumpakärnornas
+COMPOUND(594915, 556260): pumpa + kärna
+777751r4<substantiv>pumparm:pumparm:pumparms:pumparmen:pumparmens:pumparmar:pumparmars:pumparmarna:pumparmarnas
+COMPOUND(551780, 550842): pump + arm
+569940r3<adjektiv>pumpbar:pumpbar:pumpbart:pumpbara:pumpbara::::
+CUSTOM: y n n
+755850r3<substantiv>pumphus:pumphus:pumphus:pumphuset:pumphusets:pumphus:pumphus:pumphusen:pumphusens
+681417r4<substantiv>pumpning:pumpning:pumpnings:pumpningen:pumpningens:pumpningar:pumpningars:pumpningarna:pumpningarnas
+CUSTOM: y y pumpnings +pumpnings
+575445r3<adjektiv>pumpningsfärdig:pumpningsfärdig:pumpningsfärdigt:pumpningsfärdiga:pumpningsfärdiga::::
+846642r3<substantiv>pumps:pumps:pumps:pumpsen:pumpsens::::
+755855r4<substantiv>pumpstation:pumpstation:pumpstations:pumpstationen:pumpstationens:pumpstationer:pumpstationers:pumpstationerna:pumpstationernas
+COMPOUND(551780, 603711): pump + station
+552799r3<substantiv>pund:pund:punds:pundet:pundets:pund:punds:punden:pundens
+787397r3<substantiv>pundare:pundare:pundares:pundaren:pundarens:pundare:pundares:pundarna:pundarnas
+575448r3<adjektiv>pundig:pundig:pundigt:pundiga:pundiga::::
+551781r5<substantiv>pung:pung:pungs:pungen:pungens:pungar:pungars:pungarna:pungarnas
+630884r5<verb>punga:punga:pungade:pungat:pungar:punga:pungas:pungades:pungats:pungas:::::
+DEFINITION 1: Punga ut
+679261r3<substantiv>pungbjörn:pungbjörn:pungbjörns:pungbjörnen:pungbjörnens:pungbjörnar:pungbjörnars:pungbjörnarna:pungbjörnarnas
+777759r3<substantiv>pungdjur:pungdjur:pungdjurs:pungdjuret:pungdjurets:pungdjur:pungdjurs:pungdjuren:pungdjurens
+575451r3<adjektiv>pungformig:pungformig:pungformigt:pungformiga:pungformiga::::
+777765r3<substantiv>pungråtta:pungråtta:pungråttas:pungråttan:pungråttans:pungråttor:pungråttors:pungråttorna:pungråttornas
+963049r4<verb>pungslå:pungslå:pungslog:pungslagit:pungslår:pungslå:pungslås:pungslogs:pungslagits:pungslås:pungslagen:pungslaget:pungslagna:pungslående:
+COMPOUND(551781, 558224): pung + slå
+583233r3<adjektiv>punisk:punisk:puniskt:puniska:puniska::::
+985103r3<substantiv>punjabi:punjabi:punjabis::::::
+CUSTOM: y n
+985106r3<adjektiv>punjabisk:punjabisk:punjabiskt:punjabiska:punjabiska::::punjabiske::::::::
+CUSTOM: y n
+624641r5<substantiv>punk:punk:punks:punken:punkens:!:!:!:!
+DEFINITION 1: Energisk rockmusikstil som uppstod i USA och Storbritannien på 1970-talet.
+937400r3<substantiv>punka:punka:punkas:punkan:punkans:punkor:punkors:punkorna:punkornas
+615413r3<substantiv>punkare:punkare:punkares:punkaren:punkarens:punkare:punkares:punkarna:punkarnas
+CUSTOM: y y punkar
+708302r3<substantiv>punkband:punkband:punkbands:punkbandet:punkbandets:punkband:punkbands:punkbanden:punkbandens
+958270r4<substantiv>punkdrottning:punkdrottning:punkdrottnings:punkdrottningen:punkdrottningens:punkdrottningar:punkdrottningars:punkdrottningarna:punkdrottningarnas
+COMPOUND(624641, 596676): punk + drottning
+708308r3<substantiv>punkfrisyr:punkfrisyr:punkfrisyrs:punkfrisyren:punkfrisyrens:punkfrisyrer:punkfrisyrers:punkfrisyrerna:punkfrisyrernas
+708316r3<substantiv>punkgrupp:punkgrupp:punkgrupps:punkgruppen:punkgruppens:punkgrupper:punkgruppers:punkgrupperna:punkgruppernas
+940833r3<adjektiv>punkig:punkig:punkigt:punkiga:punkiga:punkigare:punkigast:punkigaste:punkige::::::::
+708324r3<substantiv>punkmusik:punkmusik:punkmusiks:punkmusiken:punkmusikens::::
+708328r3<substantiv>punkrock:punkrock:punkrocks:punkrocken:punkrockens::::
+550299r25<substantiv>punkt:punkt:punkts:punkten:punktens:punkter:punkters:punkterna:punkternas
+CUSTOM: y y punkt +punkts
+956321r4<verb>punkta:punkta:punktade:punktat:punktar:punkta:punktas:punktades:punktats:punktas:punktad:punktat:punktade::
+DEFINITION 1: punktmarkera (sport)
+952620r4<verb>punktbelysa:punktbelysa:punktbelyste:punktbelyst:punktbelyser:punktbelys:punktbelysas:punktbelystes:punktbelysts:punktbelyses:punktbelyst:punktbelyst:punktbelysta:punktbelysande:
+COMPOUND(550299, 585811): punkt + belysa
+875378r4<substantiv>punktdefekt:punktdefekt:punktdefekts:punktdefekten:punktdefektens:punktdefekter:punktdefekters:punktdefekterna:punktdefekternas
+COMPOUND(550299, 548593): punkt + defekt
+587684r4<verb>punktera:punktera:punkterade:punkterat:punkterar:punktera:punkteras:punkterades:punkterats:punkteras:punkterad:punkterat:punkterade::
+708332r4<substantiv>punktering:punktering:punkterings:punkteringen:punkteringens:punkteringar:punkteringars:punkteringarna:punkteringarnas
+CUSTOM: y y punkterings
+777774r4<adjektiv>punkteringssäker:punkteringssäker:punkteringssäkert:punkteringssäkra:punkteringssäkra::::
+COMPOUND(708332, 571213): punktering + säker
+794391r3<adjektiv>punktformad:punktformad:punktformat:punktformade:punktformade:!:!:!:
+575454r3<adjektiv>punktformig:punktformig:punktformigt:punktformiga:punktformiga::::
+567445r4<adjektiv>punktlig:punktlig:punktligt:punktliga:punktliga:punktligare:punktligast:punktligaste:punktlige
+728548r3<substantiv>punktlighet:punktlighet:punktlighets:punktligheten:punktlighetens:!:!:!:!
+587685r3<verb>punktmarkera:punktmarkera:punktmarkerade:punktmarkerat:punktmarkerar:punktmarkera:::::::::
+708340r4<substantiv>punktskrift:punktskrift:punktskrifts:punktskriften:punktskriftens::::
+COMPOUND(550299, 550519): punkt + skrift
+889620r3<adverb>punktvis:punktvis
+631507r4<substantiv>punsch:punsch:punschs:punschen:punschens::::
+CUSTOM: y y punsch
+777777r4<substantiv>punschbål:punschbål:punschbåls:punschbålen:punschbålens:punschbålar:punschbålars:punschbålarna:punschbålarnas
+COMPOUND(631507, 555962): punsch + bål
+575457r3<adjektiv>punschig:punschig:punschigt:punschiga:punschiga::::
+550301r4<substantiv>pupill:pupill:pupills:pupillen:pupillens:pupiller:pupillers:pupillerna:pupillernas
+CUSTOM: y y pupill
+777785r3<substantiv>pupillutvidgning::::::::
+COMPOUND(550301, 698350): pupill + utvidgning
+590709r3<verb>pupinisera:pupinisera:pupiniserade:pupiniserat:pupiniserar:pupinisera:::::::::
+594922r4<substantiv>puppa:puppa:puppas:puppan:puppans:puppor:puppors:pupporna:puppornas
+985111r4<substantiv>puppstadium:puppstadium:puppstadiums:puppstadiet:puppstadiets:puppstadier:puppstadiers:puppstadierna:puppstadiernas
+COMPOUND(594922, 622188): puppa + stadium
+627802r4<adjektiv>pur:pur:purt:pura:pura:purare:purast:puraste:pure
+CUSTOM: y n !pure %pure
+737548r5<substantiv>puré:puré:purés:purén:puréns:puréer:puréers:puréerna:puréernas
+CUSTOM: y y puré
+878693r3<verb>purea:purea:pureade:pureat:purear:purea:pureas:pureades:pureats:pureas:puread:pureat:pureade::
+CUSTOM: y n
+777786r4<adjektiv>purfärsk:purfärsk:purfärskt:purfärska:purfärska:!:!:!:purfärske
+798695r3<adjektiv>purgativ:purgativ:purgativt:purgativa:purgativa::::
+695747r3<substantiv>purgatorium:purgatorium:purgatoriums:purgatoriet:purgatoriets:!:!:!:!
+590713r3<verb>purgera:purgera:purgerade:purgerat:purgerar:purgera:::::::::
+558683r3<substantiv>purism:purism:purisms:purismen:purismens:!:!:!:!
+627808r3<substantiv>purist:purist:purists:puristen:puristens:purister:puristers:puristerna:puristernas
+CUSTOM: y y purist
+583236r3<adjektiv>puristisk:puristisk:puristiskt:puristiska:puristiska::::
+550302r3<substantiv>puritan:puritan:puritans:puritanen:puritanens:puritaner:puritaners:puritanerna:puritanernas
+755856r3<substantiv>puritanism:puritanism:puritanisms:puritanismen:puritanismens::::
+695751r3<adjektiv>puritansk:puritansk:puritanskt:puritanska:puritanska::::puritanske
+755860r3<substantiv>purjo:purjo:purjos:purjon:purjons::::
+755864r4<substantiv>purjolök:purjolök:purjolöks:purjolöken:purjolökens:purjolökar:purjolökars:purjolökarna:purjolökarnas
+CUSTOM: y y purjolöks
+777789r3<substantiv>purjolökssoppa::::::::
+COMPOUND(755864, 595315): purjolök + soppa
+777790r3<adjektiv>purken:purken:purket:purkna:purkna:purknare:purknast:purknaste:purkne
+777796r3<substantiv>purkenhet:purkenhet:purkenhets:purkenheten:purkenhetens::::
+547514r3<verb>purpra:purpra:purprade:purprat:purprar:purpra:::::::::
+695756r4<substantiv>purpur:purpur:purpurs:purpurn:purpurns:!:!:!:!
+CUSTOM: y y purpur
+695754r3<substantiv>purpurfärg:purpurfärg:purpurfärgs:purpurfärgen:purpurfärgens::::
+695753r3<adjektiv>purpurfärgad:purpurfärgad:purpurfärgat:purpurfärgade:purpurfärgade:!:!:!:
+801595r3<adjektiv>purpurklädd:purpurklädd:purpurklätt:purpurklädda:purpurklädda::::
+695758r4<adjektiv>purpurröd:purpurröd:purpurrött:purpurröda:purpurröda::::purpurröde
+COMPOUND(695756, 554994): purpur + röd
+875821r3<substantiv>purpurskimmer:purpurskimmer:purpurskimmers:purpurskimmret:purpurskimmrets:purpurskimmer:purpurskimmers:purpurskimmren:purpurskimmrens
+695760r3<verb>purra:purra:purrade:purrat:purrar:purra:::::::::
+CUSTOM: y n
+897699r3<substantiv>purser:purser:pursers:pursern:purserns::::
+627807r6<adjektiv>purung:purung:purungt:purunga:purunga:!:!:!:purunge
+COMPOUND(627802, 564700): pur + ung
+878703r3<verb>pusha:pusha:pushade:pushat:pushar:pusha:pushas:pushades:pushats:pushas:pushad:pushat:pushade:pushande:
+913666r3<substantiv>pushteknik:pushteknik:pushtekniks:pushtekniken:pushteknikens::::
+899374r3<substantiv>pushup-behå:pushup-behå:pushup-behås:pushup-behån:pushup-behåns:pushup-behåar:pushup-behåars:pushup-behåarna:pushup-behåarnas
+624644r5<substantiv>puss:puss:puss:pussen:pussens:pussar:pussars:pussarna:pussarnas
+CUSTOM: y y
+755872r3<verb>pussa:pussa:pussade:pussat:pussar:pussa:pussas:pussades:pussats:pussas:pussad:pussat:pussade::
+621671r3<substantiv>pussel:pussel:pussels:pusslet:pusslets:pussel:pussels:pusslen:pusslens
+CUSTOM: y y pussel
+551783r3<substantiv>pusselbit:pusselbit:pusselbits:pusselbiten:pusselbitens:pusselbitar:pusselbitars:pusselbitarna:pusselbitarnas
+575463r3<adjektiv>pussig:pussig:pussigt:pussiga:pussiga::::
+878712r4<substantiv>pusskalas:pusskalas:pusskalas:pusskalaset:pusskalasets:pusskalas:pusskalas:pusskalasen:pusskalasens
+COMPOUND(624644, 552539): puss + kalas
+547515r4<verb>pussla:pussla:pusslade:pusslat:pusslar:pussla:pusslas:pusslades:pusslats:pusslas:::::
+755879r3<substantiv>pusslande:pusslande:pusslandes:pusslandet:pusslandets::::
+878717r4<substantiv>pussmun:pussmun:pussmuns:pussmunnen:pussmunnens:pussmunnar:pussmunnars:pussmunnarna:pussmunnarnas
+COMPOUND(624644, 619004): puss + mun
+624649r4<substantiv>pust:pust:pusts:pusten:pustens:pustar:pustars:pustarna:pustarnas
+649223r4<verb>pusta:pusta:pustade:pustat:pustar:pusta:pustas:pustades:pustats:pustas::::pustande:
+CUSTOM: y n 
+575466r3<adjektiv>pustig:pustig:pustigt:pustiga:pustiga::::
+649021r4<verb>puta:puta:putade:putat:putar:puta:!:!:!:!:!:!:!:putande:
+798698r3<adjektiv>putativ:putativ:putativt:putativa:putativa::::
+CUSTOM: n n
+575469r3<adjektiv>putig:putig:putigt:putiga:putiga::::
+CUSTOM: y n
+873105r3<egennamn>Putin:Putin:Putins
+CUSTOM: y n Putin
+777800r3<substantiv>putmage:putmage:putmages:putmagen:putmagens:putmagar:putmagars:putmagarna:putmagarnas
+628585r6<substantiv>puts:puts:puts:putsen:putsens:!:!:!:!
+CUSTOM: y y
+547516r9<verb>putsa:putsa:putsade:putsat:putsar:putsa:putsas:putsades:putsats:putsas:putsad:putsat:putsade:putsande:
+CUSTOM: y y
+878725r3<substantiv>putsare:putsare:putsares:putsaren:putsarens:putsare:putsares:putsarna:putsarnas
+569943r3<adjektiv>putsbar:putsbar:putsbart:putsbara:putsbara::::
+878731r3<substantiv>putsbruk:putsbruk:putsbruks:putsbruket:putsbrukets::::
+612762r3<substantiv>putsbräde:putsbräde:putsbrädes:putsbrädet:putsbrädets:putsbräden:putsbrädens:putsbrädena:putsbrädenas
+878736r4<substantiv>putsduk:putsduk:putsduks:putsduken:putsdukens:putsdukar:putsdukars:putsdukarna:putsdukarnas
+COMPOUND(547516, 551077): putsa + duk
+564072r3<adjektiv>putsfri:putsfri:putsfritt:putsfria:putsfria::::
+CUSTOM: y n n
+878744r4<substantiv>putshyvel:putshyvel:putshyvels:putshyveln:putshyvelns:putshyvlar:putshyvlars:putshyvlarna:putshyvlarnas
+COMPOUND(547516, 623234): putsa + hyvel
+575472r4<adjektiv>putslustig:putslustig:putslustigt:putslustiga:putslustiga:putslustigare:putslustigast:putslustigaste:putslustige
+777808r3<substantiv>putslustighet:putslustighet:putslustighets:putslustigheten:putslustighetens:putslustigheter:putslustigheters:putslustigheterna:putslustigheternas
+878756r4<substantiv>putsmaskin:putsmaskin:putsmaskins:putsmaskinen:putsmaskinens:putsmaskiner:putsmaskiners:putsmaskinerna:putsmaskinernas
+COMPOUND(628585, 550005): puts + maskin
+777816r3<substantiv>putsmedel:putsmedel:putsmedels:putsmedlet:putsmedlets:putsmedel:putsmedels:putsmedlen:putsmedlens
+695761r4<substantiv>putsning:putsning:putsnings:putsningen:putsningens:putsningar:putsningars:putsningarna:putsningarnas
+CUSTOM: y y putsnings +putsnings
+878768r4<substantiv>putstrasa:putstrasa:putstrasas:putstrasan:putstrasans:putstrasor:putstrasors:putstrasorna:putstrasornas
+COMPOUND(547516, 556499): putsa + trasa
+878776r4<substantiv>putsvägg:putsvägg:putsväggs:putsväggen:putsväggens:putsväggar:putsväggars:putsväggarna:putsväggarnas
+COMPOUND(628585, 552111): puts + vägg
+777822r3<substantiv>putsyta:putsyta:putsytas:putsytan:putsytans:putsytor:putsytors:putsytorna:putsytornas
+731192r4<substantiv>putt:putt:putts:putten:puttens:puttar:puttars:puttarna:puttarnas
+731199r4<verb>putta:putta:puttade:puttat:puttar:putta:puttas:puttades:puttats:puttas:puttad:puttat:puttade:puttande:
+937526r3<substantiv>putte:putte:puttes:putten:puttens:puttar:puttars:puttarna:puttarnas
+CUSTOM: n n y
+878785r3<substantiv>puttefnask:puttefnask:puttefnasks:puttefnasken:puttefnaskens:puttefnaskar:puttefnaskars:puttefnaskarna:puttefnaskarnas
+575475r4<adjektiv>puttenuttig:puttenuttig:puttenuttigt:puttenuttiga:puttenuttiga:puttenuttigare:puttenuttigast:puttenuttigaste:
+878796r4<substantiv>putter:putter:putters:puttern:putterns:puttrar:puttrars:puttrarna:puttrarnas
+755885r3<substantiv>puttning:puttning:puttnings:puttningen:puttningens::::
+923983r6<substantiv>putto:putto:puttos:putton:puttons:putti:puttis:puttina:puttinas
+CUSTOM: n n y
+695762r5<verb>puttra:puttra:puttrade:puttrat:puttrar:puttra:puttras:puttrades:puttrats:puttras::::puttrande:
+575478r4<adjektiv>puttrig:puttrig:puttrigt:puttriga:puttriga:puttrigare:puttrigast:puttrigaste:puttrige
+583239r3<adjektiv>pyemisk:pyemisk:pyemiskt:pyemiska:pyemiska::::
+777830r4<substantiv>pygmé:pygmé:pygmés:pygmén:pygméns:pygméer:pygméers:pygméerna:pygméernas
+CUSTOM: y y pygmé
+777838r3<substantiv>pygméfolk::::::::
+COMPOUND(777830, 552385): pygmé + folk
+583242r3<adjektiv>pygmeisk:pygmeisk:pygmeiskt:pygmeiska:pygmeiska::::
+598709r5<substantiv>pyjamas:pyjamas:pyjamas:pyjamasen:pyjamasens:pyjamasar:pyjamasars:pyjamasarna:pyjamasarnas
+CUSTOM: y y pyjamas
+766060r3<substantiv>pyjamasbyxor::::::::
+COMPOUND(598709, 560888): pyjamas + byxa, byxor
+801598r3<adjektiv>pyjamasklädd:pyjamasklädd:pyjamasklätt:pyjamasklädda:pyjamasklädda::::
+878807r3<substantiv>pykniker:pykniker:pyknikers:pyknikern:pyknikerns:pykniker:pyknikers:pyknikerna:pyknikernas
+583245r3<adjektiv>pyknisk:pyknisk:pykniskt:pykniska:pykniska::::
+CUSTOM: y n
+878813r3<substantiv>pyknometer:pyknometer:pyknometers:pyknometern:pyknometerns:pyknometrar:pyknometrars:pyknometrarna:pyknometrarnas
+963060r3<substantiv>pylon:pylon:pylons:pylonen:pylonens:pyloner:pyloners:pylonerna:pylonernas
+CUSTOM: y n
+628588r5<substantiv>pynt:pynt:pynts:pyntet:pyntets:!:!:!:!
+547517r5<verb>pynta:pynta:pyntade:pyntat:pyntar:pynta:pyntas:pyntades:pyntats:pyntas:pyntad:pyntat:pyntade:pyntande:
+777839r3<substantiv>pyntning:pyntning:pyntnings:pyntningen:pyntningens:pyntningar:pyntningars:pyntningarna:pyntningarnas
+973594r3<egennamn>Pyongyang:Pyongyang:Pyongyangs
+624656r3<verb>pyra:pyra:pyrde:pyrt:pyr:pyr::::::::pyrande:
+CUSTOM: y n
+550304r5<substantiv>pyramid:pyramid:pyramids:pyramiden:pyramidens:pyramider:pyramiders:pyramiderna:pyramidernas
+CUSTOM: y y pyramid
+777855r4<adjektiv>pyramidal:pyramidal:pyramidalt:pyramidala:pyramidala::::pyramidale
+794394r3<adjektiv>pyramidformad:pyramidformad:pyramidformat:pyramidformade:pyramidformade:!:!:!:
+575481r3<adjektiv>pyramidformig:pyramidformig:pyramidformigt:pyramidformiga:pyramidformiga::::
+583248r3<adjektiv>pyramidisk:pyramidisk:pyramidiskt:pyramidiska:pyramidiska::::
+755891r3<substantiv>pyramidspel::::::::
+COMPOUND(550304, 552956): pyramid + spel
+649022r3<substantiv>pyre:pyre:pyres:pyret:pyrets:pyren:pyrens:pyrena:pyrenas
+CUSTOM: y n
+583251r3<adjektiv>pyreneisk:pyreneisk:pyreneiskt:pyreneiska:pyreneiska::::
+583254r3<adjektiv>Pyreneisk:Pyreneisk:Pyreneiskt:Pyreneiska:Pyreneiska::::
+904813r3<substantiv>pyrit:pyrit:pyrits:pyriten:pyritens:!:!:!:!
+CUSTOM: n n n
+583257r3<adjektiv>pyroforisk:pyroforisk:pyroforiskt:pyroforiska:pyroforiska::::
+583260r3<adjektiv>pyroklastisk:pyroklastisk:pyroklastiskt:pyroklastiska:pyroklastiska::::
+777847r3<substantiv>pyrola:pyrola:pyrolas:pyrolan:pyrolans:pyrolor:pyrolors:pyrolorna:pyrolornas
+878822r3<substantiv>pyrolaart:pyrolaart:pyrolaarts:p

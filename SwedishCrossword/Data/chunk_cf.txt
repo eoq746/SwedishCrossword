@@ -1,0 +1,586 @@
+802430r5<substantiv>förvärvare:förvärvare:förvärvares:förvärvaren:förvärvarens:förvärvare:förvärvares:förvärvarna:förvärvarnas
+DEFINITION 1: köpare
+569153r3<adjektiv>förvärvbar:förvärvbar:förvärvbart:förvärvbara:förvärvbara::::
+691228r4<verb>förvärvsarbeta:förvärvsarbeta:förvärvsarbetade:förvärvsarbetat:förvärvsarbetar:förvärvsarbeta:förvärvsarbetas:förvärvsarbetades:förvärvsarbetats:förvärvsarbetas::::förvärvsarbetande:
+COMPOUND(552419, 546096): förvärv + arbeta
+691225r4<adjektiv>förvärvsarbetande:förvärvsarbetande:förvärvsarbetande:förvärvsarbetande:förvärvsarbetande:!:!:!:
+COMPOUND(552419, 691227): förvärv + arbetande
+691232r4<substantiv>förvärvsarbete:förvärvsarbete:förvärvsarbetes:förvärvsarbetet:förvärvsarbetets:förvärvsarbeten:förvärvsarbetens:förvärvsarbetena:förvärvsarbetenas
+COMPOUND(552419, 612263): förvärv + arbete
+580247r3<adjektiv>förvärvsekonomisk:förvärvsekonomisk:förvärvsekonomiskt:förvärvsekonomiska:förvärvsekonomiska::::
+884542r4<substantiv>förvärvslag:förvärvslag:förvärvslags:förvärvslagen:förvärvslagens:förvärvslagar:förvärvslagars:förvärvslagarna:förvärvslagarnas
+COMPOUND(552419, 551690): förvärv + lag
+572781r3<adjektiv>förvärvsmässig:förvärvsmässig:förvärvsmässigt:förvärvsmässiga:förvärvsmässiga::::
+691235r4<substantiv>förvärvssyfte:förvärvssyfte:förvärvssyftes:förvärvssyftet:förvärvssyftets::::
+COMPOUND(552419, 626664): förvärv + syfte
+700190r4<substantiv>förvärvstillägg:förvärvstillägg:förvärvstilläggs:förvärvstillägget:förvärvstilläggets:förvärvstillägg:förvärvstilläggs:förvärvstilläggen:förvärvstilläggens
+COMPOUND(552419, 553045): förvärv + tillägg
+691239r4<substantiv>förvärvsverksamhet:förvärvsverksamhet:förvärvsverksamhets:förvärvsverksamheten:förvärvsverksamhetens::::
+COMPOUND(552419, 604113): förvärv + verksamhet
+CUSTOM: y y förvärvsverksamhets
+546760r5<verb>förväxla:förväxla:förväxlade:förväxlat:förväxlar:förväxla:förväxlas:förväxlades:förväxlats:förväxlas:förväxlad:förväxlat:förväxlade:förväxlande:
+691240r3<substantiv>förväxling:förväxling:förväxlings:förväxlingen:förväxlingens:förväxlingar:förväxlingars:förväxlingarna:förväxlingarnas
+CUSTOM: y y förväxlings
+896949r3<adjektiv>förväxlingsbar:förväxlingsbar:förväxlingsbart:förväxlingsbara:förväxlingsbara::::::::::::
+805754r3<adjektiv>förväxt:förväxt:förväxt:förväxta:förväxta::::förväxte
+546763r4<verb>föryngra:föryngra:föryngrade:föryngrat:föryngrar:föryngra::::::::föryngrande:
+700196r3<adjektiv>föryngrad:föryngrad:föryngrat:föryngrade:föryngrade:!:!:!:
+742525r4<deponens>föryngras:föryngras:föryngrades:föryngrats:föryngras:föryngras
+700197r5<substantiv>föryngring:föryngring:föryngrings:föryngringen:föryngringens:föryngringar:föryngringars:föryngringarna:föryngringarnas
+CUSTOM: y y föryngrings
+849941r3<substantiv>föryngringskur:föryngringskur:föryngringskurs:föryngringskuren:föryngringskurens:föryngringskurer:föryngringskurers:föryngringskurerna:föryngringskurernas
+700201r4<substantiv>föryngringsperiod:föryngringsperiod:föryngringsperiods:föryngringsperioden:föryngringsperiodens:föryngringsperioder:föryngringsperioders:föryngringsperioderna:föryngringsperiodernas
+COMPOUND(700197, 550187): föryngring + period
+805757r3<verb>förytliga:förytliga:förytligade:förytligat:förytligar:förytliga:förytligas:förytligades:förytligats:förytligas:förytligad:förytligat:förytligade:förytligande:
+791241r3<adjektiv>förytligad:förytligad:förytligat:förytligade:förytligade:!:!:!:
+566059r3<adjektiv>förytterlig:förytterlig:förytterligt:förytterliga:förytterliga::::
+805762r3<verb>föryttra:föryttra:föryttrade:föryttrat:föryttrar:föryttra:föryttras:föryttrades:föryttrats:föryttras:föryttrad:föryttrat:föryttrade:föryttrande:
+805771r3<substantiv>föryttring:föryttring:föryttrings:föryttringen:föryttringens::::
+839807r3<verb>förzinka:förzinka:förzinkade:förzinkat:förzinkar:förzinka:förzinkas:förzinkades:förzinkats:förzinkas:förzinkad:förzinkat:förzinkade:förzinkande:
+596913r4<substantiv>förzinkning:förzinkning:förzinknings:förzinkningen:förzinkningens:förzinkningar:förzinkningars:förzinkningarna:förzinkningarnas
+CUSTOM: y y förzinknings
+700209r3<substantiv>föråkare:föråkare:föråkares:föråkaren:föråkarens:föråkare:föråkares:föråkarna:föråkarnas
+CUSTOM: y y föråkar
+700215r3<adjektiv>föråldrad:föråldrad:föråldrat:föråldrade:föråldrade:!:!:!:
+769127r3<deponens>föråldras:föråldras:föråldrades:föråldrats:föråldras:
+839817r3<adjektiv>förångad:förångad:förångat:förångade:förångade:!:!:!:
+955627r3<substantiv>förångare:förångare:förångares:förångaren:förångarens:förångare:förångares:förångarna:förångarnas
+805775r3<deponens>förångas:förångas:förångades:förångats:förångas:
+979338r3<substantiv>förångning:förångning:förångnings:förångningen:förångningens::::
+569156r3<adjektiv>förångningsbar:förångningsbar:förångningsbart:förångningsbara:förångningsbara::::
+546765r4<verb>förädla:förädla:förädlade:förädlat:förädlar:förädla:förädlas:förädlades:förädlats:förädlas:förädlad:förädlat:förädlade::
+800962r3<adjektiv>förädlande:förädlande:förädlande:förädlande:förädlande:!:!:!:
+750889r4<substantiv>förädlare:förädlare:förädlares:förädlaren:förädlarens:förädlare:förädlares:förädlarna:förädlarnas
+625355r7<substantiv>förädling:förädling:förädlings:förädlingen:förädlingens:förädlingar:förädlingars:förädlingarna:förädlingarnas
+CUSTOM: y y förädlings +förädlings
+845755r4<substantiv>förädlingsled:förädlingsled:förädlingsleds:förädlingsledet:förädlingsledets:förädlingsled:förädlingsleds:förädlingsleden:förädlingsledens
+COMPOUND(625355, 552662): förädling + led
+700216r4<substantiv>förädlingsprocess:förädlingsprocess:förädlingsprocess:förädlingsprocessen:förädlingsprocessens:förädlingsprocesser:förädlingsprocessers:förädlingsprocesserna:förädlingsprocessernas
+COMPOUND(625355, 550258): förädling + process
+566062r4<adjektiv>föräktenskaplig:föräktenskaplig:föräktenskapligt:föräktenskapliga:föräktenskapliga::::föräktenskaplige
+650909r9<substantiv>förälder:förälder:förälders:föräldern:förälderns:föräldrar:föräldrars:föräldrarna:föräldrarnas
+BASEWORDS: föräldra
+CUSTOM: y y föräldra
+563807r3<adjektiv>föräldrafri:föräldrafri:föräldrafritt:föräldrafria:föräldrafria::::
+691241r4<substantiv>föräldrahem:föräldrahem:föräldrahems:föräldrahemmet:föräldrahemmets:föräldrahem:föräldrahems:föräldrahemmen:föräldrahemmens
+COMPOUND(650909, 555169): förälder + hem
+572784r4<adjektiv>föräldraledig:föräldraledig:föräldraledigt:föräldralediga:föräldralediga::::föräldraledige::::föräldraledigas::::
+564845r3<adjektiv>föräldralös:föräldralös:föräldralöst:föräldralösa:föräldralösa::::
+687549r4<substantiv>föräldramöte:föräldramöte:föräldramötes:föräldramötet:föräldramötets:föräldramöten:föräldramötens:föräldramötena:föräldramötenas
+COMPOUND(650909, 560760): förälder + möte
+709499r4<substantiv>föräldrasamtal:föräldrasamtal:föräldrasamtals:föräldrasamtalet:föräldrasamtalets:föräldrasamtal:föräldrasamtals:föräldrasamtalen:föräldrasamtalens
+COMPOUND(650909, 552878): förälder + samtal
+700223r3<substantiv>föräldraskap:föräldraskap:föräldraskaps:föräldraskapet:föräldraskapets::::
+CUSTOM: y y föräldraskaps
+546766r4<verb>förälska:förälska:förälskade:förälskat:förälskar:förälska:förälskas:förälskades:förälskats:förälskas::::förälskande:
+640258r3<adjektiv>förälskad:förälskad:förälskat:förälskade:förälskade:!:!:!:
+691247r3<substantiv>förälskelse:förälskelse:förälskelses:förälskelsen:förälskelsens:förälskelser:förälskelsers:förälskelserna:förälskelsernas
+CUSTOM: y y förälskelse
+566065r4<adjektiv>föränderlig:föränderlig:föränderligt:föränderliga:föränderliga:föränderligare:föränderligast:föränderligaste:föränderlige
+691248r3<substantiv>föränderlighet:föränderlighet:föränderlighets:föränderligheten:föränderlighetens::::
+CUSTOM: y y föränderlighets
+546767r5<verb>förändra:förändra:förändrade:förändrat:förändrar:förändra:förändras:förändrades:förändrats:förändras:förändrad:förändrat:förändrade:förändrande:
+700227r3<adjektiv>förändrad:förändrad:förändrat:förändrade:förändrade:!:!:!:
+596921r17<substantiv>förändring:förändring:förändrings:förändringen:förändringens:förändringar:förändringars:förändringarna:förändringarnas
+CUSTOM: y y förändrings +förändrings
+736121r4<substantiv>förändringsarbete:förändringsarbete:förändringsarbetes:förändringsarbetet:förändringsarbetets:förändringsarbeten:förändringsarbetens:förändringsarbetena:förändringsarbetenas
+COMPOUND(596921, 612263): förändring + arbete
+721619r4<substantiv>förändringsförslag:förändringsförslag:förändringsförslags:förändringsförslaget:förändringsförslagets:förändringsförslag:förändringsförslags:förändringsförslagen:förändringsförslagens
+COMPOUND(596921, 552414): förändring + förslag
+736136r4<substantiv>förändringsgrupp:förändringsgrupp:förändringsgrupps:förändringsgruppen:förändringsgruppens:förändringsgrupper:förändringsgruppers:förändringsgrupperna:förändringsgruppernas
+COMPOUND(596921, 549163): förändring + grupp
+691250r4<substantiv>förändringsmotstånd:förändringsmotstånd:förändringsmotstånds:förändringsmotståndet:förändringsmotståndets::::
+COMPOUND(596921, 644736): förändring + motstånd
+733442r5<adjektiv>förändringsobenägen:förändringsobenägen:förändringsobenäget:förändringsobenägna:förändringsobenägna::::förändringsobenägne
+COMPOUND(596921, 647045): förändring + obenägen
+691254r4<substantiv>förändringsprocess:förändringsprocess:förändringsprocess:förändringsprocessen:förändringsprocessens:förändringsprocesser:förändringsprocessers:förändringsprocesserna:förändringsprocessernas
+COMPOUND(596921, 550258): förändring + process
+691255r4<substantiv>förändringstakt:förändringstakt:förändringstakts:förändringstakten:förändringstaktens::::
+COMPOUND(596921, 556671): förändring + takt
+546768r5<verb>förära:förära:förärade:förärat:förärar:förära:föräras:förärades:förärats:föräras:förärad:förärat:förärade:förärande:
+691259r5<verb>föräta:föräta:föråt:förätit:föräter:förät:::::föräten:förätet:förätna:förätande:
+CUSTOM: y n
+691264r6<verb>föröda:föröda:förödde:förött:föröder:föröd:förödas:föröddes:förötts:föröds, förödes:förödd:förött:förödda::
+CUSTOM: y n
+691267r3<adjektiv>förödande:förödande:förödande:förödande:förödande:!:!:!:
+700228r4<substantiv>förödelse:förödelse:förödelses:förödelsen:förödelsens:förödelser:förödelsers:förödelserna:förödelsernas
+CUSTOM: y y förödelse
+546769r6<verb>förödmjuka:förödmjuka:förödmjukade:förödmjukat:förödmjukar:förödmjuka:förödmjukas:förödmjukades:förödmjukats:förödmjukas:förödmjukad:förödmjukat:förödmjukade:förödmjukande:
+COMPOUND(558905, 649451): för + ödmjuka
+691268r3<substantiv>förödmjukelse:förödmjukelse:förödmjukelses:förödmjukelsen:förödmjukelsens:förödmjukelser:förödmjukelsers:förödmjukelserna:förödmjukelsernas
+CUSTOM: y y förödmjukelse
+546770r4<verb>föröka:föröka:förökade:förökat:förökar:föröka:förökas:förökades:förökats:förökas:förökad:förökat:förökade::
+691282r3<substantiv>förökande:förökande:förökandes:förökandet:förökandets::::
+691269r3<substantiv>förökelse:förökelse:förökelses:förökelsen:förökelsens:förökelser:förökelsers:förökelserna:förökelsernas
+CUSTOM: y y förökelse
+691277r3<substantiv>förökning:förökning:föröknings:förökningen:förökningens::::
+CUSTOM: y y föröknings
+546771r5<verb>föröva:föröva:förövade:förövat:förövar:föröva:förövas:förövades:förövats:förövas:förövad:förövat:förövade:förövande:
+615266r3<substantiv>förövare:förövare:förövares:förövaren:förövarens:förövare:förövares:förövarna:förövarnas
+CUSTOM: y y förövar
+620554r3<adverb>föröver:föröver
+691284r3<substantiv>förövning:förövning:förövnings:förövningen:förövningens:förövningar:förövningars:förövningarna:förövningarnas
+CUSTOM: y y förövnings
+691292r3<adverb>förövrigt:förövrigt
+558900r5<verb>fösa:fösa:föste:föst:föser:fös:fösas:föstes:fösts:föses:föst:föst:fösta:fösande:
+733448r3<substantiv>fösning:fösning:fösnings:fösningen:fösningens:fösningar:fösningars:fösningarna:fösningarnas
+562243r5<substantiv>gabardin:gabardin:gabardins:gabardinen, gabardinet:gabardinens, gabardinets:!:!:!:!
+CUSTOM: y y gabardin
+562257r3<substantiv>gabardinbyxor:!:!:!:!:gabardinbyxor:gabardinbyxors:gabardinbyxorna:gabardinbyxornas
+562249r4<substantiv>gabardinkostym:gabardinkostym:gabardinkostyms:gabardinkostymen:gabardinkostymens:gabardinkostymer:gabardinkostymers:gabardinkostymerna:gabardinkostymernas
+COMPOUND(562243, 549745): gabardin + kostym
+839832r3<substantiv>gabbro:gabbro:gabbros:gabbron:gabbrons::::
+562241r3<egennamn>Gabin:Gabin:Gabins
+554019r3<egennamn>Gabon:Gabon:Gabons
+819301r3<substantiv>gabones:gabones:gabones:gabonesen:gabonesens:gaboneser:gabonesers:gaboneserna:gabonesernas
+580250r4<adjektiv>gabonesisk:gabonesisk:gabonesiskt:gabonesiska:gabonesiska:!:!:!:gabonesiske
+819329r3<substantiv>gabonesiska:gabonesiska:gabonesiskas:gabonesiskan:gabonesiskans:gabonesiskor:gabonesiskors:gabonesiskorna:gabonesiskornas
+772739r3<egennamn>Gabriel:Gabriel:Gabriels
+971751r3<egennamn>Gabriella:Gabriella:Gabriellas
+854362r3<egennamn>Gabrielsson:Gabrielsson:Gabrielssons
+551287r6<substantiv>gadd:gadd:gadds:gadden:gaddens:gaddar:gaddars:gaddarna:gaddarnas
+CUSTOM: y n
+557543r3<verb>gadda:gadda:gaddade:gaddat:gaddar:gadda:::::::::
+874425r3<egennamn>Gaddafi:Gaddafi:Gaddafis
+801299r3<adjektiv>gaddförsedd:gaddförsedd:gaddförsett:gaddförsedda:gaddförsedda::::
+557544r3<adjektiv>gaddig:gaddig:gaddigt:gaddiga:gaddiga:gaddigare:gaddigast:gaddigaste:
+557550r4<adjektiv>gaddlös:gaddlös:gaddlöst:gaddlösa:gaddlösa:gaddlösare:gaddlösast:gaddlösaste:
+819337r3<substantiv>gaddstekel:gaddstekel:gaddstekels:gaddstekeln:gaddstekelns:gaddsteklar:gaddsteklars:gaddsteklarna:gaddsteklarnas
+723432r3<substantiv>gadolinium:gadolinium:gadoliniums:gadoliniumet:gadoliniumets::::
+839836r3<substantiv>gaeler:::::gaeler:gaelers:gaelerna:gaelernas
+580252r4<adjektiv>gaelisk:gaelisk:gaeliskt:gaeliska:gaeliska::::gaeliske::::::::
+CUSTOM: y n
+839840r3<substantiv>gaeliska:gaeliska:gaeliskas:gaeliskan:gaeliskans:gaeliskor:gaeliskors:gaeliskorna:gaeliskornas
+CUSTOM: y n
+557553r6<substantiv>gaffel:gaffel:gaffels:gaffeln:gaffelns:gafflar:gafflars:gafflarna:gafflarnas
+CUSTOM: y y gaffel
+791244r3<adjektiv>gaffelformad:gaffelformad:gaffelformat:gaffelformade:gaffelformade:!:!:!:
+572787r3<adjektiv>gaffelformig:gaffelformig:gaffelformigt:gaffelformiga:gaffelformiga::::
+572790r3<adjektiv>gaffelgrenig:gaffelgrenig:gaffelgrenigt:gaffelgreniga:gaffelgreniga::::
+611873r3<substantiv>gaffelkabelsko:gaffelkabelsko:gaffelkabelskos:gaffelkabelskon:gaffelkabelskons:gaffelkabelskor:gaffelkabelskors:gaffelkabelskorna:gaffelkabelskornas
+849949r3<substantiv>gaffelklo:gaffelklo:gaffelklos:gaffelklon:gaffelklons:gaffelklor:gaffelklors:gaffelklorna:gaffelklornas
+678559r4<substantiv>gaffeltapp:gaffeltapp:gaffeltapps:gaffeltappen:gaffeltappens:gaffeltappar:gaffeltappars:gaffeltapparna:gaffeltapparnas
+COMPOUND(557553, 628918): gaffel + tapp
+949523r4<substantiv>gaffeltruck:gaffeltruck:gaffeltrucks:gaffeltrucken:gaffeltruckens:gaffeltruckar:gaffeltruckars:gaffeltruckarna:gaffeltruckarnas
+COMPOUND(557553, 552045): gaffel + truck
+562261r4<verb>gaffla:gaffla:gafflade:gafflat:gafflar:gaffla:gafflas:gafflades:gafflats:gafflas::::gafflande:
+557554r7<substantiv>gage:gage:gages:gaget:gagets:gager:gagers:gagerna:gagernas
+CUSTOM: y n
+839853r3<substantiv>gagg:gagg:gaggs:gagget:gaggets::::
+CUSTOM: y n
+557556r4<verb>gagga:gagga:gaggade:gaggat:gaggar:gagga:gaggas:gaggades:gaggats:gaggas::::gaggande:
+557560r5<adjektiv>gaggig:gaggig:gaggigt:gaggiga:gaggiga:gaggigare:gaggigast:gaggigaste:gaggige
+819346r3<substantiv>gaggighet:gaggighet:gaggighets:gaggigheten:gaggighetens::::
+557561r3<substantiv>gagn:gagn:gagns:gagnet:gagnets:!:!:!:!
+546772r6<verb>gagna:gagna:gagnade:gagnat:gagnar:gagna:gagnas:gagnades:gagnats:gagnas:gagnad:gagnat:gagnade:gagnande:
+728102r3<egennamn>Gagnef:Gagnef:Gagnefs
+566066r3<adjektiv>gagnelig:gagnelig:gagneligt:gagneliga:gagneliga::::
+819350r3<adjektiv>gagnerik:gagnerik:gagnerikt:gagnerika:gagnerika:gagnerikare:gagnerikast:gagnerikaste:
+557563r4<adjektiv>gagnlös:gagnlös:gagnlöst:gagnlösa:gagnlösa:gagnlösare:gagnlösast:gagnlösaste:
+819356r3<substantiv>gagnlöshet:gagnlöshet:gagnlöshets:gagnlösheten:gagnlöshetens::::
+839862r3<adjektiv>gagnrik:gagnrik:gagnrikt:gagnrika:gagnrika:gagnrikare:gagnrikast:gagnrikaste:
+839866r3<substantiv>gagnvirke:gagnvirke:gagnvirkes:gagnvirket:gagnvirkets::::
+839870r3<substantiv>gagnväxt:gagnväxt:gagnväxts:gagnväxten:gagnväxtens:gagnväxter:gagnväxters:gagnväxterna:gagnväxternas
+861392r3<egennamn>Gahan:Gahan:Gahans
+874175r3<egennamn>Gahmberg:Gahmberg:Gahmbergs
+559506r3<substantiv>gaj:gaj:gajs:gajen:gajens:gajar:gajars:gajarna:gajarnas
+CUSTOM: n n y
+557564r7<substantiv>gala:gala:galas:galan:galans:galor:galors:galorna:galornas
+558911r7<verb>gala:gala:gol:galit, galt:gal:gal::::::::galande:
+819360r3<substantiv>galabankett:galabankett:galabanketts:galabanketten:galabankettens:galabanketter:galabanketters:galabanketterna:galabanketternas
+819368r3<substantiv>galadräkt:galadräkt:galadräkts:galadräkten:galadräktens:galadräkter:galadräkters:galadräkterna:galadräkternas
+742528r3<substantiv>galaföreställning:galaföreställning:galaföreställnings:galaföreställningen:galaföreställningens:galaföreställningar:galaföreställningars:galaföreställningarna:galaföreställningarnas
+742536r3<adjektiv>galaklädd:galaklädd:galaklätt:galaklädda:galaklädda:!:!:!:
+819377r3<substantiv>galakonsert:galakonsert:galakonserts:galakonserten:galakonsertens:galakonserter:galakonserters:galakonserterna:galakonserternas
+580254r3<adjektiv>galaktisk:galaktisk:galaktiskt:galaktiska:galaktiska::::
+979343r3<substantiv>galaktos:galaktos:galaktos:galaktosen:galaktosens::::
+742539r3<substantiv>galakväll:galakväll:galakvälls:galakvällen:galakvällens:galakvällar:galakvällars:galakvällarna:galakvällarnas
+742547r3<substantiv>galamiddag:galamiddag:galamiddags:galamiddagen:galamiddagens:galamiddagar:galamiddagars:galamiddagarna:galamiddagarnas
+557566r4<adjektiv>galant:galant:galant:galanta:galanta:galantare:galantast:galantaste:galante
+839891r3<substantiv>galanteri:galanteri:galanteris:galanteriet:galanteriets:galanterier:galanteriers:galanterierna:galanteriernas
+819386r3<substantiv>galapremiär:galapremiär:galapremiärs:galapremiären:galapremiärens:galapremiärer:galapremiärers:galapremiärerna:galapremiärernas
+979347r3<substantiv>galater:::::galater:galaters:galaterna:galaternas
+CUSTOM: y n
+926433r8<egennamn>Galaterbrevet:Galaterbrevet:Galaterbrevets
+839898r3<substantiv>galavagn:galavagn:galavagns:galavagnen:galavagnens:galavagnar:galavagnars:galavagnarna:galavagnarnas
+549049r4<substantiv>galax:galax:galax:galaxen:galaxens:galaxer:galaxers:galaxerna:galaxernas
+549050r3<substantiv>galeas:galeas:galeas:galeasen:galeasens:galeaser:galeasers:galeaserna:galeasernas
+791247r3<adjektiv>galeasriggad:galeasriggad:galeasriggat:galeasriggade:galeasriggade:!:!:!:
+736429r3<substantiv>galej:galej:galejs:galejet:galejets::::
+839906r3<substantiv>galeja:galeja:galejas:galejan:galejans:galejor:galejors:galejorna:galejornas
+557570r3<adjektiv>galen:galen:galet:galna:galna:galnare:galnast:galnaste:galne
+708155r3<substantiv>galenpanna:galenpanna:galenpannas:galenpannan:galenpannans:galenpannor:galenpannors:galenpannorna:galenpannornas
+549051r4<substantiv>galenskap:galenskap:galenskaps:galenskapen:galenskapens:galenskaper:galenskapers:galenskaperna:galenskapernas
+CUSTOM: y y galenskaps
+742555r4<substantiv>galgbacke:galgbacke:galgbackes:galgbacken:galgbackens:galgbackar:galgbackars:galgbackarna:galgbackarnas
+557571r3<substantiv>galge:galge:galges:galgen:galgens:galgar:galgars:galgarna:galgarnas
+839918r3<substantiv>galgfågel:galgfågel:galgfågels:galgfågeln:galgfågelns:galgfåglar:galgfåglars:galgfåglarna:galgfåglarnas
+562264r4<substantiv>galghumor:galghumor:galghumors:galghumorn:galghumorns:!:!:!:!
+580255r3<adjektiv>galghumoristisk:galghumoristisk:galghumoristiskt:galghumoristiska:galghumoristiska::::
+961314r3<substantiv>galicier:galicier:galiciers:galiciern:galicierns:galicier:galiciers:galicierna:galiciernas
+CUSTOM: y n
+580258r4<adjektiv>galicisk:galicisk:galiciskt:galiciska:galiciska::::galiciske
+CUSTOM: y n
+839927r3<substantiv>galilé:galilé:galilés:galilén:galiléns:galiléer:galiléers:galiléerna:galiléernas
+CUSTOM: y n
+580260r3<adjektiv>galileisk:galileisk:galileiskt:galileiska:galileiska::::
+CUSTOM: y n
+580261r3<adjektiv>galizisk:galizisk:galiziskt:galiziska:galiziska::::
+CUSTOM: y n
+737399r4<substantiv>galjon:galjon:galjons:galjonen:galjonens:galjoner:galjoners:galjonerna:galjonernas
+CUSTOM: y y galjons
+737391r4<substantiv>galjonsbild:galjonsbild:galjonsbilds:galjonsbilden:galjonsbildens:galjonsbilder:galjonsbilders:galjonsbilderna:galjonsbildernas
+COMPOUND(737399, 548373): galjon + bild
+562268r3<substantiv>galjonsfigur:galjonsfigur:galjonsfigurs:galjonsfiguren:galjonsfigurens:galjonsfigurer:galjonsfigurers:galjonsfigurerna:galjonsfigurernas
+628045r5<substantiv>gall:gall:galls:gallen:gallens:galler:gallers:gallerna:gallernas
+DEFINITION 1: Liten rund utväxt på ekblad, orsakad av gallstekeln.
+CUSTOM: y n
+557573r18<substantiv>galla:galla:gallas:gallan:gallans:gallor:gallors:gallorna:gallornas
+BASEWORDS: gall
+CUSTOM: y n
+944516r4<substantiv>gallbildning:gallbildning:gallbildnings:gallbildningen:gallbildningens:gallbildningar:gallbildningars:gallbildningarna:gallbildningarnas
+COMPOUND(557573, 651396): galla + bildning
+557579r4<substantiv>gallblåsa:gallblåsa:gallblåsas:gallblåsan:gallblåsans:gallblåsor:gallblåsors:gallblåsorna:gallblåsornas
+COMPOUND(557573, 593773): galla + blåsa
+CUSTOM: y y gallblåse
+557581r5<substantiv>galler:galler:gallers:gallret:gallrets:galler:gallers:gallren, gallerna:gallrens, gallernas
+CUSTOM: y y galler
+628066r4<substantiv>galler:galler:gallers:gallern:gallerns:galler:gallers:gallerna:gallernas
+DEFINITION 1: Person från det antika Gallien.
+791250r3<adjektiv>gallerformad:gallerformad:gallerformat:gallerformade:gallerformade:!:!:!:
+701778r4<substantiv>gallerfönster:gallerfönster:gallerfönsters:gallerfönstret:gallerfönstrets:gallerfönster:gallerfönsters:gallerfönstren, gallerfönsterna:gallerfönstrens, gallerfönsternas
+COMPOUND(557581, 555049): galler + fönster
+701787r3<adjektiv>gallerförsedd:gallerförsedd:gallerförsett:gallerförsedda:gallerförsedda::::
+557585r4<substantiv>galleri:galleri:galleris:galleriet:galleriets:gallerier:galleriers:gallerierna:galleriernas
+CUSTOM: y y galleri
+557587r3<substantiv>galleria:galleria:gallerias:gallerian:gallerians:gallerior:galleriors:galleriorna:galleriornas
+691294r3<substantiv>gallerist:gallerist:gallerists:galleristen:galleristens:gallerister:galleristers:galleristerna:galleristernas
+CUSTOM: y y gallerist
+799411r3<adjektiv>gallerstyrd:gallerstyrd:gallerstyrt:gallerstyrda:gallerstyrda::::
+562276r11<substantiv>gallfeber:gallfeber:gallfebers:gallfebern:gallfeberns::::
+944524r4<substantiv>gallgång:gallgång:gallgångs:gallgången:gallgångens:gallgångar:gallgångars:gallgångarna:gallgångarnas
+COMPOUND(557573, 557251): galla + gång
+839935r3<substantiv>gallicism:gallicism:gallicisms:gallicismen:gallicismens:gallicismer:gallicismers:gallicismerna:gallicismernas
+562277r3<substantiv>gallimatias:gallimatias:!:!:!:!:!:!:!
+819395r3<substantiv>gallionsfigur:gallionsfigur:gallionsfigurs:gallionsfiguren:gallionsfigurens:gallionsfigurer:gallionsfigurers:gallionsfigurerna:gallionsfigurernas
+589419r3<verb>gallisera:gallisera:galliserade:galliserat:galliserar:gallisera:::::::::
+580264r4<adjektiv>gallisk:gallisk:galliskt:galliska:galliska::::galliske
+723334r7<substantiv>gallium:gallium:galliums:galliumet:galliumets::::
+944533r4<substantiv>gallkapillär:gallkapillär:gallkapillärs:gallkapillären:gallkapillärens:gallkapillärer:gallkapillärers:gallkapillärerna:gallkapillärernas
+COMPOUND(557573, 722919): galla + kapillär
+849957r3<substantiv>gallko:gallko:gallkos:gallkon:gallkons:gallkor:gallkors:gallkorna:gallkornas
+944542r3<substantiv>gallmygga:gallmygga:gallmyggas:gallmyggan:gallmyggans:gallmyggor:gallmyggors:gallmyggorna:gallmyggornas
+944551r4<substantiv>galloperation:galloperation:galloperations:galloperationen:galloperationens:galloperationer:galloperationers:galloperationerna:galloperationernas
+COMPOUND(557573, 603051): galla + operation
+546773r4<verb>gallra:gallra:gallrade:gallrat:gallrar:gallra:gallras:gallrades:gallrats:gallras:gallrad:gallrat:gallrade::
+562278r4<substantiv>gallring:gallring:gallrings:gallringen:gallringens:gallringar:gallringars:gallringarna:gallringarnas
+CUSTOM: y y gallrings +gallrings
+572793r3<adjektiv>gallringsfärdig:gallringsfärdig:gallringsfärdigt:gallringsfärdiga:gallringsfärdiga::::
+944561r4<substantiv>gallsalt:gallsalt:gallsalts:gallsaltet:gallsaltets:gallsalter:gallsalters:gallsalterna:gallsalternas
+COMPOUND(557573, 592333): galla + salt
+691296r3<adjektiv>gallsjuk:gallsjuk:gallsjukt:gallsjuka:gallsjuka::::
+562286r3<substantiv>gallskrik:gallskrik:gallskriks:gallskriket:gallskrikets:gallskrik:gallskriks:gallskriken:gallskrikens
+562288r4<verb>gallskrika:gallskrika:gallskrek:gallskrikit:gallskriker:gallskrik:gallskrikas:gallskreks:gallskrikits:gallskriks::::gallskrikande:
+562292r4<substantiv>gallsopp:gallsopp:gallsopps:gallsoppen:gallsoppens:gallsoppar:gallsoppars:gallsopparna:gallsopparnas
+DEFINITION 1: En sorts svamp
+799414r3<adjektiv>gallsprängd:gallsprängd:gallsprängt:gallsprängda:gallsprängda::::
+819404r3<substantiv>gallsprängdhet:gallsprängdhet:gallsprängdhets:gallsprängdheten:gallsprängdhetens::::
+628050r4<substantiv>gallstekel:gallstekel:gallstekels:gallstekeln:gallstekelns:gallsteklar:gallsteklars:gallsteklarna:gallsteklarnas
+COMPOUND(628045, 628058): gall + stekel
+562301r3<substantiv>gallsten:gallsten:gallstens:gallstenen:gallstenens:gallstenar:gallstenars:gallstenarna:gallstenarnas
+CUSTOM: y y gallstens
+608984r3<substantiv>gallstensanfall:gallstensanfall:gallstensanfalls:gallstensanfallet:gallstensanfallets:gallstensanfall:gallstensanfalls:gallstensanfallen:gallstensanfallens
+944575r4<substantiv>gallsyra:gallsyra:gallsyras:gallsyran:gallsyrans:gallsyror:gallsyrors:gallsyrorna:gallsyrornas
+COMPOUND(557573, 624847): galla + syra
+944584r4<substantiv>galltjut:galltjut:galltjuts:galltjutet:galltjutets:galltjut:galltjuts:galltjuten:galltjutens
+COMPOUND(557573, 624909): galla + tjut
+944590r4<verb>galltjuta:galltjuta:galltjöt:galltjutit:galltjuter:galltjut:galltjutas:galltjöts:galltjutits:galltjuts:!:!:!:galltjutande:
+COMPOUND(557573, 624914): galla + tjuta
+979348r3<substantiv>gallup:gallup:gallups:gallupen:gallupens:gallupar:gallupars:galluparna:galluparnas
+CUSTOM: y n
+551289r3<substantiv>gallupundersökning:gallupundersökning:gallupundersöknings:gallupundersökningen:gallupundersökningens:gallupundersökningar:gallupundersökningars:gallupundersökningarna:gallupundersökningarnas
+CUSTOM: y y gallupundersöknings
+944599r4<substantiv>gallutsöndring:gallutsöndring:gallutsöndrings:gallutsöndringen:gallutsöndringens:gallutsöndringar:gallutsöndringars:gallutsöndringarna:gallutsöndringarnas
+COMPOUND(557573, 733978): galla + utsöndring
+944609r4<substantiv>gallutvinning:gallutvinning:gallutvinnings:gallutvinningen:gallutvinningens::::
+COMPOUND(557573, 698397): galla + utvinning
+924226r3<substantiv>gallväg:gallväg:gallvägs:gallvägen:gallvägens:gallvägar:gallvägars:gallvägarna:gallvägarnas
+944615r4<substantiv>gallvätska:gallvätska:gallvätskas:gallvätskan:gallvätskans:gallvätskor:gallvätskors:gallvätskorna:gallvätskornas
+COMPOUND(557573, 595809): galla + vätska
+944624r4<substantiv>galläpple:galläpple:galläpples:galläpplet:galläpplets:galläpplen:galläpplens:galläpplena:galläpplenas
+COMPOUND(557573, 555606): galla + äpple
+556724r4<substantiv>galning:galning:galnings:galningen:galningens:galningar:galningars:galningarna:galningarnas
+CUSTOM: y y galnings
+557595r4<substantiv>galon:galon:galons:galonen:galonens:galoner:galoners:galonerna:galonernas
+CUSTOM: y n
+723152r4<substantiv>galonbyxa:galonbyxa:galonbyxas:galonbyxan:galonbyxans:galonbyxor:galonbyxors:galonbyxorna:galonbyxornas
+COMPOUND(557595, 560888): galon + byxa, byxor
+562309r3<substantiv>galonbyxor:::::galonbyxor:galonbyxors:galonbyxorna:galonbyxornas
+791253r3<adjektiv>galonerad:galonerad:galonerat:galonerade:galonerade:!:!:!:
+556766r3<substantiv>galonjacka:galonjacka:galonjackas:galonjackan:galonjackans:galonjackor:galonjackors:galonjackorna:galonjackornas
+556774r3<substantiv>galonväska:galonväska:galonväskas:galonväskan:galonväskans:galonväskor:galonväskors:galonväskorna:galonväskornas
+598252r3<substantiv>galonväv:galonväv:galonvävs:galonväven:galonvävens:galonvävar:galonvävars:galonvävarna:galonvävarnas
+549053r4<substantiv>galopp:galopp:galopps:galoppen:galoppens:galopper:galoppers:galopperna:galoppernas
+CUSTOM: y y galopp
+556782r4<substantiv>galoppbana:galoppbana:galoppbanas:galoppbanan:galoppbanans:galoppbanor:galoppbanors:galoppbanorna:galoppbanornas
+COMPOUND(549053, 556870): galopp + bana
+556790r4<verb>galoppera:galoppera:galopperade:galopperat:galopperar:galoppera:galopperas:galopperades:galopperats:galopperas:::::
+691297r3<adjektiv>galopperande:galopperande:galopperande:galopperande:galopperande:!:!:!:
+819408r3<substantiv>galoppering:galoppering:galopperings:galopperingen:galopperingens::::
+556791r3<substantiv>galopptävling:galopptävling:galopptävlings:galopptävlingen:galopptävlingens:galopptävlingar:galopptävlingars:galopptävlingarna:galopptävlingarnas
+842145r3<substantiv>galoppör:galoppör:galoppörs:galoppören:galoppörens:galoppörer:galoppörers:galoppörerna:galoppörernas
+549055r4<substantiv>galosch:galosch:galoschs:galoschen:galoschens:galoscher:galoschers:galoscherna:galoschernas
+CUSTOM: y y galosch
+859830r3<substantiv>galoschhaka:galoschhaka:galoschhakas:galoschhakan:galoschhakans:galoschhakor:galoschhakors:galoschhakorna:galoschhakornas
+731494r4<substantiv>galoschhylla:galoschhylla:galoschhyllas:galoschhyllan:galoschhyllans:galoschhyllor:galoschhyllors:galoschhyllorna:galoschhyllornas
+COMPOUND(549055, 559165): galosch + hylla
+562313r3<egennamn>Galsworthy:Galsworthy:
+556799r5<substantiv>galt:galt:galts:galten:galtens:galtar:galtars:galtarna:galtarnas
+DEFINITION 1: Namn på vuxna handjur av svin.
+CUSTOM: y n
+586726r4<verb>galvanisera:galvanisera:galvaniserade:galvaniserat:galvaniserar:galvanisera:galvaniseras:galvaniserades:galvaniserats:galvaniseras:galvaniserad:galvaniserat:galvaniserade:galvaniserande:
+819417r4<substantiv>galvanisering:galvanisering:galvaniserings:galvaniseringen:galvaniseringens:galvaniseringar:galvaniseringars:galvaniseringarna:galvaniseringarnas
+CUSTOM: y y galvaniserings
+819425r3<substantiv>galvaniseringsanläggning::::::::
+COMPOUND(819417, 606104): galvanisering + anläggning
+556801r3<adjektiv>galvanisk:galvanisk:galvaniskt:galvaniska:galvaniska:!:!:!:!
+819426r3<substantiv>galvanism:galvanism:galvanisms:galvanismen:galvanismens::::
+819430r3<substantiv>galvanisör:galvanisör:galvanisörs:galvanisören:galvanisörens:galvanisörer:galvanisörers:galvanisörerna:galvanisörernas
+819438r3<substantiv>galvanometer:galvanometer:galvanometers:galvanometern:galvanometerns:galvanometrar:galvanometrars:galvanometrarna:galvanometrarnas
+580267r3<adjektiv>galvanometrisk:galvanometrisk:galvanometriskt:galvanometriska:galvanometriska::::
+580270r3<adjektiv>galvanoplastisk:galvanoplastisk:galvanoplastiskt:galvanoplastiska:galvanoplastiska::::
+819446r3<substantiv>galvanoskop:galvanoskop:galvanoskops:galvanoskopet:galvanoskopets:galvanoskop:galvanoskops:galvanoskopen:galvanoskopens
+580273r3<adjektiv>galvanostatisk:galvanostatisk:galvanostatiskt:galvanostatiska:galvanostatiska::::
+549057r5<substantiv>galär:galär:galärs:galären:galärens:galärer:galärers:galärerna:galärernas
+CUSTOM: y n
+556802r3<substantiv>galärslav:galärslav:galärslavs:galärslaven:galärslavens:galärslavar:galärslavars:galärslavarna:galärslavarnas
+562314r4<substantiv>gam:gam:gams:gamen:gamens:gamar:gamars:gamarna:gamarnas
+839944r3<substantiv>gamasch:gamasch:gamaschs:gamaschen:gamaschens:gamascher:gamaschers:gamascherna:gamaschernas
+954075r4<substantiv>gamba:gamba:gambas:gamban:gambans:gambor:gambors:gamborna:gambornas
+CUSTOM: y n
+954084r4<substantiv>gambaensemble:gambaensemble:gambaensembles:gambaensemblen:gambaensemblens:gambaensembler:gambaensemblers:gambaensemblerna:gambaensemblernas
+COMPOUND(954075, 689538): gamba + ensemble
+554020r3<egennamn>Gambia:Gambia:Gambias
+CUSTOM: y n Gambia
+556810r4<substantiv>gambier:gambier:gambiers:gambiern:gambierns:gambier:gambiers:gambierna:gambiernas
+580276r4<adjektiv>gambisk:gambisk:gambiskt:gambiska:gambiska:!:!:!:gambiske
+819453r3<substantiv>gambiska:gambiska:gambiskas:gambiskan:gambiskans:gambiskor:gambiskors:gambiskorna:gambiskornas
+691298r3<substantiv>gambit:gambit:gambits:gambiten:gambitens:gambitar:gambitars:gambitarna:gambitarnas
+961320r3<substantiv>gambler:gambler:gamblers:gamblern:gamblerns::::
+CUSTOM: y n
+961324r3<substantiv>gambling:gambling:gamblings:gamblingen:gamblingens::::
+CUSTOM: y n
+562316r6<substantiv>game:game:games:gamet:gamets:game:games:gamen:gamens
+DEFINITION 1: Delomgång i en tennismatch
+CUSTOM: y n
+562320r4<substantiv>gameboll:gameboll:gamebolls:gamebollen:gamebollens:gamebollar:gamebollars:gamebollarna:gamebollarnas
+COMPOUND(562316, 550928): game + boll
+572796r3<adjektiv>gamig:gamig:gamigt:gamiga:gamiga::::
+CUSTOM: n n y
+782460r3<egennamn>Gamleby:Gamleby:Gamlebys
+CUSTOM: y n Gamleby
+556814r3<substantiv>gamling:gamling:gamlings:gamlingen:gamlingens:gamlingar:gamlingars:gamlingarna:gamlingarnas
+662160r4<substantiv>gamma:gamma:gammas:gammat:gammats::::
+DEFINITION 1: Tredje bokstaven i grekiska alfabetet.
+CUSTOM: y n y
+691301r3<substantiv>gammafunktion:gammafunktion:gammafunktions:gammafunktionen:gammafunktionens:gammafunktioner:gammafunktioners:gammafunktionerna:gammafunktionernas
+CUSTOM: y y gammafunktions
+819461r3<substantiv>gammaglobulin:gammaglobulin:gammaglobulins:gammaglobulinet:gammaglobulinets:gammaglobuliner:gammaglobuliners:gammaglobulinerna:gammaglobulinernas
+555200r11<adjektiv>gammal:gammal:gammalt:gamla:gamla:äldre:äldst:äldsta, äldste:gamle
+CUSTOM: y y gammal äldre
+691300r4<substantiv>gammal:::gamla, gamle:gamlas, gamles:::gamla:gamlas, äldres
+571106r3<adjektiv>gammaldags:gammaldags:gammaldags::gammaldags::::
+562328r3<substantiv>gammaldans:gammaldans:gammaldans:gammaldansen:gammaldansens:gammaldanser:gammaldansers:gammaldanserna:gammaldansernas
+CUSTOM: y n gammaldans
+562335r3<adjektiv>gammalkristen:gammalkristen:gammalkristet:gammalkristna:gammalkristna:!:!:!:gammalkristne
+566069r3<adjektiv>gammalkyrklig:gammalkyrklig:gammalkyrkligt:gammalkyrkliga:gammalkyrkliga::::
+562339r3<adjektiv>gammalmodig:gammalmodig:gammalmodigt:gammalmodiga:gammalmodiga::::gammalmodige
+819469r3<substantiv>gammalmodighet:gammalmodighet:gammalmodighets:gammalmodigheten:gammalmodighetens:gammalmodigheter:gammalmodigheters:gammalmodigheterna:gammalmodigheternas
+885469r3<substantiv>gammalpiga:gammalpiga:gammalpigas:gammalpigan:gammalpigans:gammalpigor:gammalpigors:gammalpigorna:gammalpigornas
+658758r5<substantiv>gammalsvenska:gammalsvenska:gammalsvenskas:gammalsvenskan:gammalsvenskans:!:!:!:!
+COMPOUND(555200, 658756): gammal + svenska
+566072r4<adjektiv>gammaltestamentlig:gammaltestamentlig:gammaltestamentligt:gammaltestamentliga:gammaltestamentliga::::gammaltestamentlige
+839953r3<substantiv>gamman:gamman:::::::
+763892r3<substantiv>gammastrålning:gammastrålning:gammastrålnings:gammastrålningen:gammastrålningens::::
+819478r3<substantiv>gammeldans:gammeldans:gammeldans:gammeldansen:gammeldansens:gammeldanser:gammeldansers:gammeldanserna:gammeldansernas
+840745r3<substantiv>gammelfar:gammelfar:gammelfars::::::
+722837r4<substantiv>gammelfarfar:gammelfarfader, gammelfarfar:gammelfarfaders, gammelfarfars:gammelfarfadern:gammelfarfaderns:gammelfarfäder:gammelfarfäders:gammelfarfäderna:gammelfarfädernas
+COMPOUND(555200, 649392): gammal + farfar, farfader
+722799r4<substantiv>gammelfarmor:gammelfarmoder, gammelfarmor:gammelfarmoders, gammelfarmors:gammelfarmodern, gammelfarmorn:gammelfarmoderns, gammelfarmorns:gammelfarmödrar:gammelfarmödrars:gammelfarmödrarna:gammelfarmödrarnas
+COMPOUND(555200, 657547): gammal + farmor, farmoder
+819485r3<substantiv>gammelgädda:gammelgädda:gammelgäddas:gammelgäddan:gammelgäddans:gammelgäddor:gammelgäddors:gammelgäddorna:gammelgäddornas
+819493r3<substantiv>gammelkommunist:gammelkommunist:gammelkommunists:gammelkommunisten:gammelkommunistens:gammelkommunister:gammelkommunisters:gammelkommunisterna:gammelkommunisternas
+819501r3<substantiv>gammelmansröst:gammelmansröst:gammelmansrösts:gammelmansrösten:gammelmansröstens:gammelmansröster:gammelmansrösters:gammelmansrösterna:gammelmansrösternas
+840706r3<substantiv>gammelmoderat:gammelmoderat:gammelmoderats:gammelmoderaten:gammelmoderatens:gammelmoderater:gammelmoderaters:gammelmoderaterna:gammelmoderaternas
+840747r3<substantiv>gammelmor:gammelmor:gammelmors::::::
+722825r4<substantiv>gammelmorfar:gammelmorfader, gammelmorfar:gammelmorfaders, gammelmorfars:gammelmorfadern:gammelmorfaderns:gammelmorfäder:gammelmorfäders:gammelmorfäderna:gammelmorfädernas
+COMPOUND(555200, 621371): gammal + morfader, morfar
+722813r4<substantiv>gammelmormor:gammelmormoder, gammelmormor:gammelmormoders, gammelmormors:gammelmormodern:gammelmormoderns:gammelmormödrar:gammelmormödrars:gammelmormödrarna:gammelmormödrarnas
+COMPOUND(555200, 621392): gammal + mormor, mormoder
+840730r3<substantiv>gammelpiga:gammelpiga:gammelpigas:gammelpigan:gammelpigans:gammelpigor:gammelpigors:gammelpigorna:gammelpigornas
+770798r3<substantiv>gammelskog:gammelskog:gammelskogs:gammelskogen:gammelskogens:gammelskogar:gammelskogars:gammelskogarna:gammelskogarnas
+840738r3<substantiv>gammelvals:gammelvals:gammelvals:gammelvalsen:gammelvalsens:gammelvalser:gammelvalsers:gammelvalserna:gammelvalsernas
+948851r4<substantiv>gamnacke:gamnacke:gamnackes:gamnacken:gamnackens:gamnackar:gamnackars:gamnackarna:gamnackarnas
+COMPOUND(562314, 599913): gam + nacke
+839954r3<substantiv>gamäng:gamäng:gamängs:gamängen:gamängens:gamänger:gamängers:gamängerna:gamängernas
+572799r3<adjektiv>gamängaktig:gamängaktig:gamängaktigt:gamängaktiga:gamängaktiga::::
+938071r4<substantiv>gan:gan:gans:ganen:ganens:ganar, ganer:ganars, ganers:ganarna, ganerna:ganarnas, ganernas
+CUSTOM: n n y
+904554r3<verb>gana:gana:ganade:ganat:ganar:gana:ganas:ganades:ganats:ganas:ganad:ganat:ganade:ganande:!
+CUSTOM: n n y
+839962r3<substantiv>ganasch:ganasch:ganaschs:ganaschen:ganaschens:ganascher:ganaschers:ganascherna:ganaschernas
+979356r3<substantiv>ganglion:ganglion:ganglions:gangliet, ganglionet:gangliets, ganglionets:ganglier:gangliers:ganglierna:gangliernas
+839971r3<adjektiv>gangrenös:gangrenös:gangrenöst:gangrenösa:gangrenösa::::
+979366r3<substantiv>gangrän:gangrän:gangräns:gangränet, gangränen:gangränets, gangränens::::
+CUSTOM: y n
+797735r3<adjektiv>gangränös:gangränös:gangränöst:gangränösa:gangränösa::::
+CUSTOM: y n
+556815r5<substantiv>gangster:gangster:gangsters:gangstern:gangsterns:gangstrar:gangstrars:gangstrarna:gangstrarnas
+CUSTOM: y y gangster
+556816r4<substantiv>gangsterfilm:gangsterfilm:gangsterfilms:gangsterfilmen:gangsterfilmens:gangsterfilmer:gangsterfilmers:gangsterfilmerna:gangsterfilmernas
+COMPOUND(556815, 548921): gangster + film
+849965r3<substantiv>gangsterism:gangsterism:gangsterisms:gangsterismen:gangsterismens::::
+945795r4<substantiv>gangsterstuk:gangsterstuk:gangsterstuks:gangsterstuket:gangsterstukets::::
+COMPOUND(556815, 620459): gangster + stuk
+562343r3<adverb>ganska:ganska
+552420r5<substantiv>gap:gap:gaps:gapet:gapets:gap:gaps:gapen:gapens
+546774r5<verb>gapa:gapa:gapade:gapat:gapar:gapa:gapas:gapades:gapats:gapas::::gapande:
+562344r3<substantiv>gapflabb:gapflabb:gapflabbs:gapflabbet:gapflabbets:gapflabb:gapflabbs:gapflabben:gapflabbens
+556824r3<verb>gapflabba:gapflabba:gapflabbade:gapflabbat:gapflabbar:gapflabba:gapflabbas:gapflabbades:gapflabbats:gapflabbas:::::
+562350r3<substantiv>gaphals:gaphals:gaphals:gaphalsen:gaphalsens:gaphalsar:gaphalsars:gaphalsarna:gaphalsarnas
+572802r4<adjektiv>gapig:gapig:gapigt:gapiga:gapiga:gapigare:gapigast:gapigaste:gapige
+819513r3<substantiv>gapighet:gapighet:gapighets:gapigheten:gapighetens::::
+562357r3<substantiv>gapskratt:gapskratt:gapskratts:gapskrattet:gapskrattets:gapskratt:gapskratts:gapskratten:gapskrattens
+742559r4<verb>gapskratta:gapskratta:gapskrattade:gapskrattat:gapskrattar:gapskratta:gapskrattas:gapskrattades:gapskrattats:gapskrattas::::gapskrattande:
+557597r5<substantiv>garage:garage:garages:garaget:garagets:garage:garages:garagen:garagens
+CUSTOM: y y garage
+556831r3<substantiv>garagedörr:garagedörr:garagedörrs:garagedörren:garagedörrens:garagedörrar:garagedörrars:garagedörrarna:garagedörrarnas
+589423r4<verb>garagera:garagera:garagerade:garagerat:garagerar:garagera:garageras:garagerades:garagerats:garageras::::garagerande:
+718835r3<substantiv>garagerensning:garagerensning:garagerensnings:garagerensningen:garagerensningens:garagerensningar:garagerensningars:garagerensningarna:garagerensningarnas
+549059r3<substantiv>garant:garant:garants:garanten:garantens:garanter:garanters:garanterna:garanternas
+546775r5<verb>garantera:garantera:garanterade:garanterat:garanterar:garantera:garanteras:garanterades:garanterats:garanteras:garanterad:garanterat:garanterade::
+691303r3<substantiv>garanterande:garanterande:garanterandes:garanterandet:garanterandets::::
+556839r6<substantiv>garanti:garanti:garantis:garantin:garantins:garantier:garantiers:garantierna:garantiernas
+CUSTOM: y y garanti +garanti
+670837r4<substantiv>garantiavgift:garantiavgift:garantiavgifts:garantiavgiften:garantiavgiftens:garantiavgifter:garantiavgifters:garantiavgifterna:garantiavgifternas
+COMPOUND(556839, 548299): garanti + avgift
+839982r3<substantiv>garçon:garçon:garçons:garçonen:garçonens:garçoner:garçoners:garçonerna:garçonernas
+557599r3<substantiv>gard:gard:gards:garden:gardens:garder:garders:garderna:gardernas
+CUSTOM: y n
+562358r4<substantiv>garde:garde:gardes:gardet:gardets:garden:gardens:gardena:gardenas
+CUSTOM: y y gardes
+788941r3<egennamn>Gardell:Gardell:Gardells
+839990r3<substantiv>gardenia:gardenia:gardenias:gardenian:gardenians:gardenior:gardeniors:gardeniorna:gardeniornas
+546776r5<verb>gardera:gardera:garderade:garderat:garderar:gardera:garderas:garderades:garderats:garderas:garderad:garderat:garderade:garderande:
+562360r3<adjektiv>garderad:garderad:garderat:garderade:garderade::::
+557605r3<substantiv>gardering:gardering:garderings:garderingen:garderingens:garderingar:garderingars:garderingarna:garderingarnas
+CUSTOM: y y garderings
+549061r5<substantiv>garderob:garderob:garderobs:garderoben:garderobens:garderober:garderobers:garderoberna:garderobernas
+CUSTOM: y y garderobs
+839999r3<substantiv>garderobiär:garderobiär:garderobiärs:garderobiären:garderobiärens:garderobiärer:garderobiärers:garderobiärerna:garderobiärernas
+670138r4<substantiv>garderobsavgift:garderobsavgift:garderobsavgifts:garderobsavgiften:garderobsavgiftens:garderobsavgifter:garderobsavgifters:garderobsavgifterna:garderobsavgifternas
+COMPOUND(549061, 548299): garderob + avgift
+704636r4<substantiv>garderobsdörr:garderobsdörr:garderobsdörrs:garderobsdörren:garderobsdörrens:garderobsdörrar:garderobsdörrars:garderobsdörrarna:garderobsdörrarnas
+COMPOUND(549061, 551088): garderob + dörr
+674292r4<substantiv>gardesofficer:gardesofficer:gardesofficers:gardesofficeren, gardesofficern:gardesofficerens, gardesofficerns:gardesofficerer, gardesofficerare:gardesofficerers, gardesofficerare:gardesofficererna, gardesofficerarna:gardesofficerernas, gardesofficerarnas
+COMPOUND(562358, 603028): garde + officer
+549063r9<substantiv>gardin:gardin:gardins:gardinen:gardinens:gardiner:gardiners:gardinerna:gardinernas
+CUSTOM: y y gardin +gardins
+704644r4<substantiv>gardinstång:gardinstång:gardinstångs:gardinstången:gardinstångens:gardinstänger:gardinstängers:gardinstängerna:gardinstängernas
+COMPOUND(549063, 555363): gardin + stång
+677671r4<substantiv>gardinväv:gardinväv:gardinvävs:gardinväven:gardinvävens:gardinvävar:gardinvävars:gardinvävarna:gardinvävarnas
+COMPOUND(549063, 552117): gardin + väv
+557613r3<substantiv>gardist:gardist:gardists:gardisten:gardistens:gardister:gardisters:gardisterna:gardisternas
+CUSTOM: y y gardist +gardist
+840007r3<substantiv>gardjärn:gardjärn:gardjärns:gardjärnet:gardjärnets:gardjärn:gardjärns:gardjärnen:gardjärnens
+840013r3<substantiv>garfågel:garfågel:garfågels:garfågeln:garfågelns:garfåglar:garfåglars:garfåglarna:garfåglarnas
+552422r8<substantiv>garn:garn:garns:garnet:garnets:garn:garns:garnen:garnens
+DEFINITION 1: Fiskenät
+CUSTOM: y y
+562361r12<substantiv>garn:garn:garns:garnet:garnets:garner, garn:garners, garns:garnerna:garnernas
+DEFINITION 1: Används vid virkning och stickning.
+561060r3<substantiv>garnaffär:garnaffär:garnaffärs:garnaffären:garnaffärens:garnaffärer:garnaffärers:garnaffärerna:garnaffärernas
+962162r4<substantiv>garnbransch:garnbransch:garnbranschs:garnbranschen:garnbranschens::::
+COMPOUND(562361, 548446): garn + bransch
+962168r4<substantiv>garnbutik:garnbutik:garnbutiks:garnbutiken:garnbutikens:garnbutiker:garnbutikers:garnbutikerna:garnbutikernas
+COMPOUND(562361, 548489): garn + butik
+840021r3<substantiv>garndocka:garndocka:garndockas:garndockan:garndockans:garndockor:garndockors:garndockorna:garndockornas
+546777r5<verb>garnera:garnera:garnerade:garnerat:garnerar:garnera:garneras:garnerades:garnerats:garneras:garnerad:garnerat:garnerade::
+556840r4<substantiv>garnering:garnering:garnerings:garneringen:garneringens:garneringar:garneringars:garneringarna:garneringarnas
+CUSTOM: y y garnerings
+962186r4<substantiv>garnfiskare:garnfiskare:garnfiskares:garnfiskaren:garnfiskarens:garnfiskare:garnfiskares:garnfiskarna:garnfiskarnas
+COMPOUND(552422, 556548): garn + fiskare
+962177r4<substantiv>garnfiske:garnfiske:garnfiskes:garnfisket:garnfiskets:garnfisken:garnfiskens:garnfiskena:garnfiskenas
+COMPOUND(552422, 625321): garn + fiske
+791259r3<adjektiv>garnfärgad:garnfärgad:garnfärgat:garnfärgade:garnfärgade:!:!:!:
+840029r3<substantiv>garnhärva:garnhärva:garnhärvas:garnhärvan:garnhärvans:garnhärvor:garnhärvors:garnhärvorna:garnhärvornas
+562366r4<substantiv>garnison:garnison:garnisons:garnisonen:garnisonens:garnisoner:garnisoners:garnisonerna:garnisonernas
+CUSTOM: y y garnisons
+589427r3<verb>garnisonera:garnisonera:garnisonerade:garnisonerat:garnisonerar:garnisonera:::::::::
+674305r4<substantiv>garnisonsofficer:garnisonsofficer:garnisonsofficers:garnisonsofficeren, garnisonsofficern:garnisonsofficerens, garnisonsofficerns:garnisonsofficerer, garnisonsofficerare:garnisonsofficerers, garnisonsofficerare:garnisonsofficererna, garnisonsofficerarna:garnisonsofficerernas, garnisonsofficerarnas
+COMPOUND(562366, 603028): garnison + officer
+849969r3<substantiv>garnisonsort:garnisonsort:garnisonsorts:garnisonsorten:garnisonsortens:garnisonsorter:garnisonsorters:garnisonsorterna:garnisonsorternas
+552424r3<substantiv>garnityr:garnityr:garnityrs:garnityret:garnityrets:garnityr:garnityrs:garnityren:garnityrens
+962194r4<substantiv>garnknut:garnknut:garnknuts:garnknuten:garnknutens:garnknutar:garnknutars:garnknutarna:garnknutarnas
+COMPOUND(562361, 551562): garn + knut
+785099r4<substantiv>garnnystan:garnnystan:garnnystans:garnnystanet:garnnystanets:garnnystan:garnnystans:garnnystanen:garnnystanens
+COMPOUND(552422, 625832): garn + nystan
+962214r4<substantiv>garnsticka:garnsticka:garnstickas:garnstickan:garnstickans:garnstickor:garnstickors:garnstickorna:garnstickornas
+COMPOUND(562361, 554977): garn + sticka
+962204r4<substantiv>garntråd:garntråd:garntråds:garntråden:garntrådens:garntrådar:garntrådars:garntrådarna:garntrådarnas
+COMPOUND(562361, 552048): garn + tråd
+562368r4<verb>garrottera:garrottera:garrotterade:garrotterat:garrotterar:garrottera:garrotteras:garrotterades:garrotterats:garrotteras:garrotterad:garrotterat:garrotterade:garrotterande:
+562375r3<substantiv>garv:garv:garvs:garvet:garvets:garv:garvs:garven:garvens
+546778r5<verb>garva:garva:garvade:garvat:garvar:garva:garvas:garvades:garvats:garvas::::garvande:
+562381r3<adjektiv>garvad:garvad:garvat:garvade:garvade::::
+562382r3<substantiv>garvare:garvare:garvares:garvaren:garvarens:garvare:garvares:garvarna:garvarnas
+CUSTOM: y y garvar
+562383r4<substantiv>garveri:garveri:garveris:garveriet:garveriets:garverier:garveriers:garverierna:garveriernas
+CUSTOM: y y garveri
+819517r3<substantiv>garveriarbetare::::::::
+COMPOUND(562383, 561048): garveri + arbetare
+840040r3<substantiv>garvning:garvning:garvnings:garvningen:garvningens::::
+562391r8<substantiv>garvsyra:garvsyra:garvsyras:garvsyran:garvsyrans:garvsyror:garvsyrors:garvsyrorna:garvsyrornas
+CUSTOM: y y garvsyra
+819518r3<substantiv>garvämne:garvämne:garvämnes:garvämnet:garvämnets:garvämnen:garvämnens:garvämnena:garvämnenas
+549064r48<substantiv>gas:gas:gas:gasen:gasens:gaser:gasers:gaserna:gasernas
+CUSTOM: y n gas
+546779r6<verb>gasa:gasa:gasade:gasat:gasar:gasa:gasas:gasades:gasats:gasas:gasad:gasat:gasade:gasande:
+791262r3<adjektiv>gasad:gasad:gasat:gasade:gasade:!:!:!:
+CUSTOM: y n
+791263r3<adjektiv>gasartad:gasartad:gasartat:gasartade:gasartade:!:!:!:
+572805r3<adjektiv>gasbeständig:gasbeständig:gasbeständigt:gasbeständiga:gasbeständiga::::
+562395r3<substantiv>gasbinda:gasbinda:gasbindas:gasbindan:gasbindans:gasbindor:gasbindors:gasbindorna:gasbindornas
+673715r4<substantiv>gasbrand:gasbrand:gasbrands:gasbranden:gasbrandens:gasbränder:gasbränders:gasbränderna:gasbrändernas
+COMPOUND(549064, 617396): gas + brand
+562403r3<substantiv>gasbrännare:gasbrännare:gasbrännares:gasbrännaren:gasbrännarens:gasbrännare:gasbrännares:gasbrännarna:gasbrännarnas
+CUSTOM: y y gasbrännar
+928762r4<substantiv>gasbuss:gasbuss:gasbuss:gasbussen:gasbussens:gasbussar:gasbussars:gasbussarna:gasbussarnas
+COMPOUND(549064, 550982): gas + buss
+598260r3<substantiv>gasbågssvets:gasbågssvets:gasbågssvets:gasbågssvetsen:gasbågssvetsens:gasbågssvetsar:gasbågssvetsars:gasbågssvetsarna:gasbågssvetsarnas
+840045r3<substantiv>gascognare:gascognare:gascognares:gascognaren:gascognarens:gascognare:gascognares:gascognarna:gascognarnas
+791266r3<adjektiv>gaseldad:gaseldad:gaseldat:gaseldade:gaseldade:!:!:!:
+562409r4<substantiv>gasell:gasell:gasells:gasellen:gasellens:gaseller:gasellers:gasellerna:gasellernas
+DEFINITION 1: Ett slags djur
+572808r3<adjektiv>gasfattig:gasfattig:gasfattigt:gasfattiga:gasfattiga::::
+622356r5<substantiv>gasform:gasform:gasforms:gasformen:gasformens:gasformer:gasformers:gasformerna:gasformernas
+COMPOUND(549064, 548947): gas + form
+572811r3<adjektiv>gasformig:gasformig:gasformigt:gasformiga:gasformiga::::
+799417r3<adjektiv>gasfylld:gasfylld:gasfyllt:gasfyllda:gasfyllda::::
+659908r4<substantiv>gasgenerator:gasgenerator:gasgenerators:gasgeneratorn:gasgeneratorns:gasgeneratorer:gasgeneratorers:gasgeneratorerna:gasgeneratorernas
+COMPOUND(549064, 562833): gas + generator
+572814r3<adjektiv>gashaltig:gashaltig:gashaltigt:gashaltiga:gashaltiga::::
+572817r3<adjektiv>gashärdig:gashärdig:gashärdigt:gashärdiga:gashärdiga::::
+905928r3<adjektiv>gasig:gasig:gasigt:gasiga:gasiga:gasigare:gasigast:gasigaste:gasige::::::::
+CUSTOM: n n n
+791269r3<adjektiv>gasisolerad:gasisolerad:gasisolerat:gasisolerade:gasisolerade:!:!:!:
+551297r3<substantiv>gask:gask:gasks:gasken:gaskens:gaskar:gaskars:gaskarna:gaskarnas
+CUSTOM: n n y
+562418r4<verb>gaska:gaska:gaskade:gaskat:gaskar:gaska:!:!:!:!:::::
+DEFINITION 1: I "gaska upp sig", komma på bättre humör
+562422r8<substantiv>gaskammare:gaskammare:gaskammares:gaskammaren:gaskammarens:gaskammare, gaskamrar:gaskammares, gaskamrars:gaskamrarna:gaskamrarnas
+CUSTOM: y y gaskammar
+799420r3<adjektiv>gaskyld:gaskyld:gaskylt:gaskylda:gaskylda::::
+CUSTOM: y n n
+928778r4<substantiv>gaslarm:gaslarm:gaslarms:gaslarmet:gaslarmets:gaslarm:gaslarms:gaslarmen:gaslarmens
+COMPOUND(549064

@@ -1,0 +1,645 @@
+trumpa:herrstrumpas:herrstrumpan:herrstrumpans:herrstrumpor:herrstrumpors:herrstrumporna:herrstrumpornas
+743329r4<substantiv>herrtidning:herrtidning:herrtidnings:herrtidningen:herrtidningens:herrtidningar:herrtidningars:herrtidningarna:herrtidningarnas
+COMPOUND(599833, 555969): herre + tidning
+743337r4<substantiv>herrtoalett:herrtoalett:herrtoaletts:herrtoaletten:herrtoalettens:herrtoaletter:herrtoaletters:herrtoaletterna:herrtoaletternas
+COMPOUND(599833, 550679): herre + toalett
+743345r4<substantiv>herrum:herrum:herrums:herrummet:herrummets:herrum:herrums:herrummen:herrummens
+COMPOUND(599833, 571182): herre + rum
+551378r4<substantiv>hertig:hertig:hertigs:hertigen:hertigens:hertigar:hertigars:hertigarna:hertigarnas
+CUSTOM: y y hertig
+643506r3<substantiv>hertigdöme:hertigdöme:hertigdömes:hertigdömet:hertigdömets:hertigdömen:hertigdömens:hertigdömena:hertigdömenas
+743351r4<substantiv>hertiginna:hertiginna:hertiginnas:hertiginnan:hertiginnans:hertiginnor:hertiginnors:hertiginnorna:hertiginnornas
+CUSTOM: y y hertiginne
+743359r4<substantiv>hertiginnetitel:hertiginnetitel:hertiginnetitels:hertiginnetiteln:hertiginnetitelns:hertiginnetitlar:hertiginnetitlars:hertiginnetitlarna:hertiginnetitlarnas
+COMPOUND(743351, 626697): hertiginna + titel
+566228r3<adjektiv>hertiglig:hertiglig:hertigligt:hertigliga:hertigliga::::
+743360r4<substantiv>hertigpar:hertigpar:hertigpars:hertigparet:hertigparets:hertigpar:hertigpars:hertigparen:hertigparens
+COMPOUND(551378, 607793): hertig + par
+874546r3<egennamn>Hertsön:Hertsön:Hertsöns
+629214r11<substantiv>hertz:hertz:::::::
+DEFINITION 1: Enheten för frekvens.
+580580r3<adjektiv>herulisk:herulisk:heruliskt:heruliska:heruliska::::
+558987r4<adjektiv>hes:hes:hest:hesa:hesa:hesare:hesast:hesaste:hese
+743366r3<substantiv>heshet:heshet:heshets:hesheten:heshetens::::
+737881r3<substantiv>hesitation:hesitation:hesitations:hesitationen:hesitationens:hesitationer:hesitationers:hesitationerna:hesitationernas
+586779r4<verb>hesitera:hesitera:hesiterade:hesiterat:hesiterar:hesitera:hesiteras:hesiterades:hesiterats:hesiteras::::hesiterande:
+580583r3<adjektiv>hesperisk:hesperisk:hesperiskt:hesperiska:hesperiska::::
+558988r8<adjektiv>het:het:hett:heta:heta:hetare:hetast:hetaste:hete::::::::
+DEFINITION 1: mycket varm
+DEFINITION 2: kryddstark
+CUSTOM: y n
+555494r3<verb>heta:heta:hette:hetat:heter:!:!:!:!:!:::::
+CUSTOM: y n
+573272r3<adjektiv>hetblodig:hetblodig:hetblodigt:hetblodiga:hetblodiga::::
+580584r3<adjektiv>heterocyklisk:heterocyklisk:heterocykliskt:heterocykliska:heterocykliska::::
+797907r3<adjektiv>heterodispers:heterodispers:heterodisperst:heterodispersa:heterodispersa::::
+840434r3<adjektiv>heterodox:heterodox:heterodoxt:heterodoxa:heterodoxa::::
+797910r3<adjektiv>heterogam:heterogam:heterogamt:heterogama:heterogama::::
+558989r4<adjektiv>heterogen:heterogen:heterogent:heterogena:heterogena:heterogenare:heterogenast:heterogenaste:
+729129r3<substantiv>heterogenitet:heterogenitet:heterogenitets:heterogeniteten:heterogenitetens::::
+580587r3<adjektiv>heteroklitisk:heteroklitisk:heteroklitiskt:heteroklitiska:heteroklitiska::::
+730480r3<substantiv>heterokromatin:heterokromatin:heterokromatins:heterokromatinet:heterokromatinets::::
+580590r3<adjektiv>heterokromatisk:heterokromatisk:heterokromatiskt:heterokromatiska:heterokromatiska::::
+580593r3<adjektiv>heterolytisk:heterolytisk:heterolytiskt:heterolytiska:heterolytiska::::
+797913r3<adjektiv>heteromorf:heteromorf:heteromorft:heteromorfa:heteromorfa::::
+797916r3<adjektiv>heteronom:heteronom:heteronomt:heteronoma:heteronoma::::
+914999r3<substantiv>heteronorm:heteronorm:heteronorms:heteronormen:heteronormens::::
+914988r3<adjektiv>heteronormativ:heteronormativ:heteronormativt:heteronormativa:heteronormativa::::::::::::
+914993r3<substantiv>heteronormativitet:heteronormativitet:heteronormativitets:heteronormativiteten:heteronormativitetens::::
+643509r3<substantiv>heterosexualitet:heterosexualitet:heterosexualitets:heterosexualiteten:heterosexualitetens:!:!:!:!
+643511r3<adjektiv>heterosexuell:heterosexuell:heterosexuellt:heterosexuella:heterosexuella:!:!:!:heterosexuelle
+580596r3<adjektiv>heterostatisk:heterostatisk:heterostatiskt:heterostatiska:heterostatiska::::
+797919r3<adjektiv>heterotrof:heterotrof:heterotroft:heterotrofa:heterotrofa::::
+840448r3<adjektiv>heterozygot:heterozygot:heterozygot:heterozygota:heterozygota:!:!:!:
+840440r3<substantiv>heterozygot:heterozygot:heterozygots:heterozygoten:heterozygotens:heterozygoter:heterozygoters:heterozygoterna:heterozygoternas
+643513r3<adjektiv>hetlevrad:hetlevrad:hetlevrat:hetlevrade:hetlevrade:!:!:!:
+743370r3<substantiv>hetluft:hetluft:hetlufts:hetluften:hetluftens::::
+867387r3<substantiv>hetman:hetman:hetmans:hetmanen:hetmanens:hetmaner:hetmaners:hetmanerna:hetmanernas
+624442r13<substantiv>hets:hets:hets:hetsen:hetsens:!:!:!:!
+CUSTOM: y n
+546866r5<verb>hetsa:hetsa:hetsade:hetsat:hetsar:hetsa:hetsas:hetsades:hetsats:hetsas:hetsad:hetsat:hetsade:hetsande:
+615286r3<substantiv>hetsare:hetsare:hetsares:hetsaren:hetsarens:hetsare:hetsares:hetsarna:hetsarnas
+CUSTOM: y y hetsar
+882147r4<substantiv>hetsbrott:hetsbrott:hetsbrotts:hetsbrottet:hetsbrottets:hetsbrott:hetsbrotts:hetsbrotten:hetsbrottens
+COMPOUND(624442, 552275): hets + brott
+573275r4<adjektiv>hetsig:hetsig:hetsigt:hetsiga:hetsiga:hetsigare:hetsigast:hetsigaste:hetsige
+779226r3<substantiv>hetsighet:hetsighet:hetsighets:hetsigheten:hetsighetens::::
+743375r3<substantiv>hetsjakt:hetsjakt:hetsjakts:hetsjakten:hetsjaktens:hetsjakter:hetsjakters:hetsjakterna:hetsjakternas
+779235r4<substantiv>hetskampanj:hetskampanj:hetskampanjs:hetskampanjen:hetskampanjens:hetskampanjer:hetskampanjers:hetskampanjerna:hetskampanjernas
+COMPOUND(624442, 549423): hets + kampanj
+882127r4<substantiv>hetslagstiftning:hetslagstiftning:hetslagstiftnings:hetslagstiftningen:hetslagstiftningens:hetslagstiftningar:hetslagstiftningars:hetslagstiftningarna:hetslagstiftningarnas
+COMPOUND(624442, 681170): hets + lagstiftning
+779243r3<substantiv>hetsporre:hetsporre:hetsporres:hetsporren:hetsporrens:hetsporrar:hetsporrars:hetsporrarna:hetsporrarnas
+956595r4<substantiv>hetspropaganda:hetspropaganda:hetspropagandas:hetspropagandan:hetspropagandans:!:!:!:!
+COMPOUND(624442, 695652): hets + propaganda
+779251r4<verb>hetsäta:hetsäta:hetsåt:hetsätit:hetsäter:hetsät::::::::hetsätande:
+COMPOUND(624442, 555238): hets + äta
+948284r4<substantiv>hetsätning:hetsätning:hetsätnings:hetsätningen:hetsätningens::::
+COMPOUND(624442, 818461): hets + ätning
+585550r4<verb>hetta:hetta:hettade:hettat:hettar:hetta:hettas:hettades:hettats:hettas::::hettande:
+643514r4<substantiv>hetta:hetta:hettas:hettan:hettans::::
+867395r3<substantiv>hettit:hettit:hettits:hettiten:hettitens:hettiter:hettiters:hettiterna:hettiternas
+580599r4<adjektiv>hettitisk:hettitisk:hettitiskt:hettitiska:hettitiska:!:!:!:hettitiske
+867404r3<substantiv>hettitiska:hettitiska:hettitiskas:hettitiskan:hettitiskans::::
+779256r8<substantiv>hetvatten:hetvatten:hetvattens:hetvattnet:hetvattnets::::
+CUSTOM: y y hetvatten
+779262r4<substantiv>hetvattenledning:hetvattenledning:hetvattenlednings:hetvattenledningen:hetvattenledningens:hetvattenledningar:hetvattenledningars:hetvattenledningarna:hetvattenledningarnas
+COMPOUND(779256, 551696): hetvatten + ledning
+980381r3<substantiv>hetvägg:hetvägg:hetväggs:hetväggen:hetväggens:hetväggar:hetväggars:hetväggarna:hetväggarnas
+643515r4<substantiv>hetär:hetär:hetärs:hetären:hetärens:hetärer:hetärers:hetärerna:hetärernas
+DEFINITION 1: Hetär (grekiska: hetai'ra, "väninna") kallades i det antika Grekland kvinnor som inte bands av de strikta reglerna för familjelivet, utan i friare former kunde umgås med männen och delta i deras samkväm.\
+\
+Hetärerna kunde fungera som kurtisaner eller sofistikerade sällskapsdamer. De kunde uppträda som danserskor, flöjtspelerskor och liknande och också utbjuda sexuella tjänster. Deras antal var högst betydligt i alla större städer, till exempel Aten, där de för rättigheten att bedriva sitt yrke erlade en särskild skatt till staten.\
+
+CUSTOM: y n
+867408r3<substantiv>heuristik:heuristik:heuristiks:heuristiken:heuristikens::::
+580601r3<adjektiv>heuristisk:heuristisk:heuristiskt:heuristiska:heuristiska::::
+643516r7<adjektiv>hexadecimal:hexadecimal:hexadecimalt:hexadecimala:hexadecimala:!:!:!:!
+643517r3<substantiv>hexaeder:hexaeder:hexaeders:hexaedern:hexaederns:hexaedrar:hexaedrars:hexaedrarna:hexaedrarnas
+580604r3<adjektiv>hexaedrisk:hexaedrisk:hexaedriskt:hexaedriska:hexaedriska::::
+549214r3<substantiv>hexagon:hexagon:hexagons:hexagonen:hexagonens:hexagoner:hexagoners:hexagonerna:hexagonernas
+980389r3<substantiv>hexagram:hexagram:hexagrams:hexagrammet:hexagrammets:hexagram:hexagrams:hexagrammen:hexagrammens
+643518r3<substantiv>hexameter:hexameter:hexameters:hexametern:hexameterns:hexametrar:hexametrars:hexametrarna:hexametrarnas
+580607r3<adjektiv>hexametrisk:hexametrisk:hexametriskt:hexametriska:hexametriska::::
+935338r3<interjektion>hi:hi
+CUSTOM: n n y
+564879r3<adjektiv>hialös:hialös:hialöst:hialösa:hialösa::::
+980395r3<substantiv>hiatus:hiatus:::::::
+CUSTOM: y n
+840450r3<substantiv>hibernation:hibernation:hibernations:hibernationen:hibernationens::::
+586783r4<verb>hibernera:hibernera:hibernerade:hibernerat:hibernerar:hibernera:hiberneras:hibernerades:hibernerats:hiberneras::::hibernerande:
+840458r3<substantiv>hibiskus:hibiskus:hibiskus:hibiskusen:hibiskusens:hibiskusar:hibiskusars:hibiskusarna:hibiskusarnas
+631681r3<substantiv>hicka:hicka:hickas:hickan:hickans::::
+631683r8<verb>hicka:hicka:hickade:hickat:hickar:hicka:hickas:hickades:hickats:hickas::::hickande:
+643525r3<substantiv>hickande:hickande:hickandes:hickandet:hickandets::::
+643527r3<substantiv>hickning:hickning:hicknings:hickningen:hickningens:hickningar:hickningars:hickningarna:hickningarnas
+CUSTOM: y y hicknings
+840465r3<substantiv>hickory:hickory:hickorys:hickoryn:hickoryns::::
+797922r3<adjektiv>hidös:hidös:hidöst:hidösa:hidösa::::
+CUSTOM: n n n
+643528r5<substantiv>hierarki:hierarki:hierarkis:hierarkin, hierarkien:hierarkins, hierarkiens:hierarkier:hierarkiers:hierarkierna:hierarkiernas
+580610r4<adjektiv>hierarkisk:hierarkisk:hierarkiskt:hierarkiska:hierarkiska::::hierarkiske
+580611r3<adjektiv>hieratisk:hieratisk:hieratiskt:hieratiska:hieratiska::::
+779270r4<substantiv>hieroglyf:hieroglyf:hieroglyfs:hieroglyfen:hieroglyfens:hieroglyfer:hieroglyfers:hieroglyferna:hieroglyfernas
+CUSTOM: y y hieroglyf
+580614r3<adjektiv>hieroglyfisk:hieroglyfisk:hieroglyfiskt:hieroglyfiska:hieroglyfiska::::
+779278r3<substantiv>hieroglyfskrift::::::::
+COMPOUND(779270, 550519): hieroglyf + skrift
+843075r3<egennamn>Highbury:Highbury:Highburys
+946663r3<substantiv>high-tech:high-tech:::::::
+946661r3<substantiv>hightech:hightech:::::::
+CUSTOM: y n hightech
+935339r3<interjektion>hihi:hihi
+CUSTOM: n n y
+972366r3<egennamn>Hilda:Hilda:Hildas
+554605r3<egennamn>Hilding:Hilding:Hildings
+720624r3<egennamn>Hillary:Hillary:Hillarys
+840470r3<substantiv>hillebard:hillebard:hillebards:hillebarden:hillebardens:hillebarder:hillebarders:hillebarderna:hillebardernas
+553733r3<egennamn>Hillevi:Hillevi:Hillevis
+989893r3<egennamn>Hilma:Hilma:Hilmas
+874355r3<egennamn>Himalaya:Himalaya:Himalayas
+CUSTOM: y n Himalaya
+625449r3<adverb>himla:himla
+625450r4<verb>himla:himla:himlade:himlat:himlar:himla:himlas:himlades:himlats:himlas::::himlande:
+951524r4<substantiv>himlabryn:himlabryn:himlabryns:himlabrynet:himlabrynets:himlabryn:himlabryns:himlabrynen:himlabrynens
+COMPOUND(556549, 552279): himmel + bryn
+924105r3<substantiv>himlakropp:himlakropp:himlakropps:himlakroppen:himlakroppens:himlakroppar:himlakroppars:himlakropparna:himlakropparnas
+840478r3<substantiv>himlastormare:himlastormare:himlastormares:himlastormaren:himlastormarens:himlastormare:himlastormares:himlastormarna:himlastormarnas
+799532r3<adjektiv>himlasänd:himlasänd:himlasänt:himlasända:himlasända::::
+643530r3<substantiv>himlavalv:himlavalv:himlavalvs:himlavalvet:himlavalvets:!:!:!:!
+556549r12<substantiv>himmel:himmel:himmels:himlen, himmelen:himlens, himmelens:himlar:himlars:himlarna:himlarnas
+CUSTOM: y y himla himmels
+618164r3<substantiv>himmelrike:himmelrike:himmelrikes:himmelriket:himmelrikets::::
+618165r3<adjektiv>himmelsblå:himmelsblå:himmelsblått:himmelsblåa:himmelsblåa::::
+618166r3<substantiv>himmelsfärd:himmelsfärd:himmelsfärds:himmelsfärden:himmelsfärdens:himmelsfärder:himmelsfärders:himmelsfärderna:himmelsfärdernas
+618171r3<substantiv>himmelsfärdsdag:himmelsfärdsdag:himmelsfärdsdags:himmelsfärdsdagen:himmelsfärdsdagens:himmelsfärdsdagar:himmelsfärdsdagars:himmelsfärdsdagarna:himmelsfärdsdagarnas
+678599r4<substantiv>himmelsglob:himmelsglob:himmelsglobs:himmelsgloben:himmelsglobens:himmelsglober:himmelsglobers:himmelsgloberna:himmelsglobernas
+COMPOUND(556549, 549104): himmel + glob
+643532r3<adjektiv>himmelshög:himmelshög:himmelshögt:himmelshöga:himmelshöga::::
+618177r3<adjektiv>himmelsk:himmelsk:himmelskt:himmelska:himmelska::::himmelske
+853862r3<substantiv>himmelspol:himmelspol:himmelspols:himmelspolen:himmelspolens:himmelspoler:himmelspolers:himmelspolerna:himmelspolernas
+643533r3<adjektiv>himmelsvid:himmelsvid:himmelsvitt:himmelsvida:himmelsvida::::
+855522r3<egennamn>Himmerfjärden:Himmerfjärden:Himmerfjärdens
+559520r4<pronomen>hin:hin
+DEFINITION 1: Djävulen
+626752r4<substantiv>hind:hind:hinds:hinden:hindens:hindar:hindars:hindarna:hindarnas
+CUSTOM: y n
+618178r6<substantiv>hinder:hinder:hinders:hindret:hindrets:hinder:hinders:hindren:hindrens
+CUSTOM: y y hinder hinders +hinder +hinders
+566231r3<adjektiv>hinderlig:hinderlig:hinderligt:hinderliga:hinderliga::::
+895123r4<substantiv>hinderlopp:hinderlopp:hinderlopps:hinderloppet:hinderloppets:hinderlopp:hinderlopps:hinderloppen:hinderloppens
+COMPOUND(618178, 552677): hinder + lopp
+609609r3<substantiv>hinderlöpare:hinderlöpare:hinderlöpares:hinderlöparen:hinderlöparens:hinderlöpare:hinderlöpares:hinderlöparna:hinderlöparnas
+CUSTOM: y y hinderlöpar
+596988r3<substantiv>hinderlöpning:hinderlöpning:hinderlöpnings:hinderlöpningen:hinderlöpningens:hinderlöpningar:hinderlöpningars:hinderlöpningarna:hinderlöpningarnas
+CUSTOM: y y hinderlöpnings
+563398r3<adjektiv>hindersam:hindersam:hindersamt:hindersamma:hindersamma::::
+564882r3<adjektiv>hinderslös:hinderslös:hinderslöst:hinderslösa:hinderslösa::::
+889402r4<substantiv>hinderslöshet:hinderslöshet:hinderslöshets:hinderslösheten:hinderslöshetens::::
+CUSTOM: y y hinderslöshets
+889406r3<substantiv>hinderslöshetsintyg::::::::
+COMPOUND(889402, 552524): hinderslöshet + intyg
+633550r5<substantiv>hindersprövning:hindersprövning:hindersprövnings:hindersprövningen:hindersprövningens:hindersprövningar:hindersprövningars:hindersprövningarna:hindersprövningarnas
+COMPOUND(618178, 634301): hinder + prövning
+CUSTOM: y y hindersprövnings
+631677r5<substantiv>hindi:hindi:hindis:::!:!:!:!
+546867r4<verb>hindra:hindra:hindrade:hindrat:hindrar:hindra:hindras:hindrades:hindrats:hindras:hindrad:hindrat:hindrade::
+691942r3<substantiv>hindrande:hindrande:hindrandes:hindrandet:hindrandets::::
+625457r3<substantiv>hindu:hindu:hindus:hindun:hinduns:hinduer:hinduers:hinduerna:hinduernas
+580617r4<adjektiv>hinduisk:hinduisk:hinduiskt:hinduiska:hinduiska:!:!:!:hinduiske
+867412r3<substantiv>hinduiska:hinduiska:hinduiskas:hinduiskan:hinduiskans:hinduiskor:hinduiskors:hinduiskorna:hinduiskornas
+558291r3<substantiv>hinduism:hinduism:hinduisms:hinduismen:hinduismens:!:!:!:!
+580619r3<adjektiv>hinduistisk:hinduistisk:hinduistiskt:hinduistiska:hinduistiska::::
+980396r3<substantiv>hindustani:hindustani:::::::
+643534r4<substantiv>hingst:hingst:hingsts:hingsten:hingstens:hingstar:hingstars:hingstarna:hingstarnas
+CUSTOM: y y hingst
+779279r4<substantiv>hingstföl:hingstföl:hingstföls:hingstfölet:hingstfölets:hingstföl:hingstföls:hingstfölen:hingstfölens
+COMPOUND(643534, 558898): hingst + föl
+559523r4<substantiv>hin håle:hin håle:hin håles:!:!:!:!:!:!
+DEFINITION 1: Djävulen
+551379r4<substantiv>hink:hink:hinks:hinken:hinkens:hinkar:hinkars:hinkarna:hinkarnas
+955819r3<verb>hinka:hinka:hinkade:hinkat:hinkar:hinka:hinkas:hinkades:hinkats:hinkas:hinkad:hinkat:hinkade:hinkande:
+643535r3<adverb>hinkvis:hinkvis
+556556r5<verb>hinna:hinna:hann:hunnit:hinner:hinn:hinnas:hanns:hunnits:hinns, hinnes:hunnen:hunnet:hunna::
+CUSTOM: y n !hinnes !hunnen !hunnet !hunna
+556558r8<substantiv>hinna:hinna:hinnas:hinnan:hinnans:hinnor:hinnors:hinnorna:hinnornas
+573276r3<adjektiv>hinnaktig:hinnaktig:hinnaktigt:hinnaktiga:hinnaktiga::::
+791675r3<adjektiv>hinnartad:hinnartad:hinnartat:hinnartade:hinnartade:!:!:!:
+743386r3<preposition>hinsides:hinsides
+938061r3<substantiv>hint:hint:hints:hinten:hintens:hintar:hintars:hintarna:hintarnas
+961540r3<verb>hinta:hinta:hintade:hintat:hintar:hinta:hintas:hintades:hintats:hintas::::hintande:
+CUSTOM: y n
+899937r3<substantiv>hip-hop:hip-hop::hip-hopen:hip-hopens::::
+786670r5<substantiv>hiphop:hiphop:hiphops:hiphopen, hiphoppen:hiphopens, hiphoppens:!:!:!:!
+CUSTOM: y y hiphop
+899941r3<substantiv>hip-hopare:hip-hopare:hip-hopares:hip-hoparen:hip-hoparens:hip-hopare:hip-hopares:hip-hoparna:hip-hoparnas
+947398r4<substantiv>hiphopbeat:hiphopbeat:hiphopbeats:hiphopbeatet:hiphopbeatets:hiphopbeats:hiphopbeats:hiphopbeatsen:hiphopbeatsens
+COMPOUND(786670, 947074): hiphop + beat
+786675r3<substantiv>hiphoppare:hiphoppare:hiphoppares:hiphopparen:hiphopparens:hiphoppare:hiphoppares:hiphopparna:hiphopparnas
+624443r3<adjektiv>hipp:hipp:hippt:hippa:hippa:hippare:hippast:hippaste:hippe
+643537r3<substantiv>hippa:hippa:hippas:hippan:hippans:hippor:hippors:hipporna:hippornas
+643536r3<substantiv>hippie:hippie:hippies:hippien:hippiens:hippies:::
+779285r3<substantiv>hippierörelse:hippierörelse:hippierörelses:hippierörelsen:hippierörelsens::::
+779289r3<substantiv>hippodrom:hippodrom:hippodroms:hippodromen:hippodromens:hippodromer:hippodromers:hippodromerna:hippodromernas
+639244r3<substantiv>hippolog:hippolog:hippologs:hippologen:hippologens:hippologer:hippologers:hippologerna:hippologernas
+840486r3<substantiv>hippologi:hippologi:hippologis:hippologin:hippologins::::
+580622r3<adjektiv>hippologisk:hippologisk:hippologiskt:hippologiska:hippologiska::::
+900369r3<substantiv>hipster:hipster:hipsters:hipstern:hipsterns::::
+CUSTOM: y n n hipster
+927158r10<substantiv>hird:hird:hirds:hirden:hirdens:hirder:hirders:hirderna:hirdernas
+DEFINITION 1: livvakt, huskarlar
+CUSTOM: n n y
+946702r4<substantiv>hirdman:hirdman:hirdmans:hirdmannen:hirdmannens:hirdmän:hirdmäns:hirdmännen:hirdmännens
+COMPOUND(927158, 557796): hird + man
+763974r3<egennamn>Hiroshima:Hiroshima:Hiroshimas
+CUSTOM: y n Hiroshima
+628151r3<substantiv>hirs:hirs:hirs:hirsen:hirsens:!:!:!:!
+CUSTOM: y n
+555940r7<egennamn>Hisingen:Hisingen:Hisingens
+566234r3<adjektiv>hiskelig:hiskelig:hiskeligt:hiskeliga:hiskeliga::::
+566237r4<adjektiv>hisklig:hisklig:hiskligt:hiskliga:hiskliga:hiskligare:hiskligast:hiskligaste:hisklige
+546868r3<verb>hisna:hisna:hisnade:hisnat:hisnar:hisna:::::::::
+643545r3<adjektiv>hisnande:hisnande:hisnande:hisnande:hisnande:!:!:!:
+573279r4<adjektiv>hispig:hispig:hispigt:hispiga:hispiga:hispigare:hispigast:hispigaste:hispige
+551380r17<substantiv>hiss:hiss:hiss:hissen:hissens:hissar:hissars:hissarna:hissarnas
+CUSTOM: y y
+546869r4<verb>hissa:hissa:hissade:hissat:hissar:hissa:hissas:hissades:hissats:hissas:hissad:hissat:hissade::
+743395r4<substantiv>hissanordning:hissanordning:hissanordnings:hissanordningen:hissanordningens:hissanordningar:hissanordningars:hissanordningarna:hissanordningarnas
+COMPOUND(551380, 606105): hiss + anordning
+915005r4<substantiv>hissbidrag:hissbidrag:hissbidrags:hissbidraget:hissbidragets:hissbidrag:hissbidrags:hissbidragen:hissbidragens
+COMPOUND(551380, 552248): hiss + bidrag
+743403r4<substantiv>hisschakt:hisschakt:hisschakts:hisschaktet:hisschaktets:hisschakt:hisschakts:hisschakten:hisschaktens
+COMPOUND(551380, 664724): hiss + schakt
+743387r4<substantiv>hissdörr:hissdörr:hissdörrs:hissdörren:hissdörrens:hissdörrar:hissdörrars:hissdörrarna:hissdörrarnas
+COMPOUND(551380, 551088): hiss + dörr
+897045r4<substantiv>hissförare:hissförare:hissförares:hissföraren:hissförarens:hissförare:hissförares:hissförarna:hissförarnas
+COMPOUND(551380, 558907): hiss + förare
+897012r4<substantiv>hisshall:hisshall:hisshalls:hisshallen:hisshallens:hisshallar:hisshallars:hisshallarna:hisshallarnas
+COMPOUND(551380, 551356): hiss + hall
+779297r4<substantiv>hissknapp:hissknapp:hissknapps:hissknappen:hissknappens:hissknappar:hissknappars:hissknapparna:hissknapparnas
+COMPOUND(551380, 551553): hiss + knapp
+779305r4<substantiv>hisskorg:hisskorg:hisskorgs:hisskorgen:hisskorgens:hisskorgar:hisskorgars:hisskorgarna:hisskorgarnas
+COMPOUND(551380, 551586): hiss + korg
+743409r4<substantiv>hisskötare:hisskötare:hisskötares:hisskötaren:hisskötarens:hisskötare:hisskötares:hisskötarna:hisskötarnas
+COMPOUND(551380, 666756): hiss + skötare
+897051r4<substantiv>hisslina:hisslina:hisslinas:hisslinan:hisslinans:hisslinor:hisslinors:hisslinorna:hisslinornas
+COMPOUND(551380, 560088): hiss + lina
+897021r4<substantiv>hissmontör:hissmontör:hissmontörs:hissmontören:hissmontörens:hissmontörer:hissmontörers:hissmontörerna:hissmontörernas
+COMPOUND(551380, 550054): hiss + montör
+867420r3<verb>hissna:hissna:hissnade:hissnat:hissnar:hissna::::::::hissnade:
+743415r3<adjektiv>hissnande:hissnande:hissnande:hissnande:hissnande:!:!:!:
+897030r4<substantiv>hissplan:hissplan:hissplans:hissplanet:hissplanets:hissplan:hissplans:hissplanen:hissplanens
+COMPOUND(551380, 635949): hiss + plan
+743416r4<substantiv>hisspojke:hisspojke:hisspojkes:hisspojken:hisspojkens:hisspojkar:hisspojkars:hisspojkarna:hisspojkarnas
+COMPOUND(551380, 555384): hiss + pojke
+897038r4<substantiv>hisstekniker:hisstekniker:hissteknikers:hissteknikern:hissteknikerns:hisstekniker:hissteknikers:hissteknikerna:hissteknikernas
+COMPOUND(551380, 610333): hiss + tekniker
+897059r3<substantiv>hisstrumma:hisstrumma:hisstrummas:hisstrumman:hisstrummans:hisstrummor:hisstrummors:hisstrummorna:hisstrummornas
+730531r5<substantiv>histamin:histamin:histamins:histaminet:histaminets:histaminer:histaminers:histaminerna:histaminernas
+DEFINITION 1: Ett protein som är en del av kroppens immunförsvar.
+730525r4<substantiv>histidin:histidin:histidins:histidinet:histidinets::::
+DEFINITION 1: En aminosyra
+643546r3<substantiv>histogram:histogram:histograms:histogrammet:histogrammets:histogram:histograms:histogrammen:histogrammens
+643549r3<substantiv>histolog:histolog:histologs:histologen:histologens:histologer:histologers:histologerna:histologernas
+643547r3<substantiv>histologi:histologi:histologis:histologin:histologins::::
+580625r3<adjektiv>histologisk:histologisk:histologiskt:histologiska:histologiska::::
+730486r4<substantiv>histon:histon:histons:histonet:histonets:histoner:histoners:histonerna:histonernas
+DEFINITION 1: Globulärt protein
+CUSTOM: n n n
+604486r15<substantiv>historia:historia:historias:historien, historian:historiens, historians:historier:historiers:historierna:historiernas
+CUSTOM: y y historie
+840499r3<substantiv>historicism:historicism:historicisms:historicismen:historicismens::::
+940440r3<substantiv>historicitet:historicitet:historicitets:historiciteten:historicitetens::::
+564885r3<adjektiv>historielös:historielös:historielöst:historielösa:historielösa::::
+643551r3<substantiv>historielöshet:historielöshet:historielöshets:historielösheten:historielöshetens::::
+CUSTOM: y y historielöshets
+589556r3<verb>historiera:historiera:historierade:historierat:historierar:historiera:::::::::
+704093r3<substantiv>historieskrivning:historieskrivning:historieskrivnings:historieskrivningen:historieskrivningens::::
+840503r3<substantiv>historiett:historiett:historietts:historietten:historiettens:historietter:historietters:historietterna:historietternas
+549215r4<substantiv>historik:historik:historiks:historiken:historikens:historiker:historikers:historikerna:historikernas
+616843r5<substantiv>historiker:historiker:historikers:historikern:historikerns:historiker:historikers:historikerna:historikernas
+840511r3<substantiv>historiograf:historiograf:historiografs:historiografen:historiografens:historiografer:historiografers:historiograferna:historiografernas
+980397r3<substantiv>historiografi:historiografi:historiografis:historiografin:historiografins::::
+580628r3<adjektiv>historiografisk:historiografisk:historiografiskt:historiografiska:historiografiska::::
+589560r4<verb>historisera:historisera:historiserade:historiserat:historiserar:historisera:historiseras:historiserades:historiserats:historiseras:historiserad:historiserat:historiserade:historiserande:
+580631r6<adjektiv>historisk:historisk:historiskt:historiska:historiska::::historiske::::::::
+840524r3<substantiv>historism:historism:historisms:historismen:historismens::::
+840528r3<substantiv>histrion:histrion:histrions:histrionen:histrionens:histrioner:histrioners:histrionerna:histrionernas
+558990r6<adverb>hit:hit
+CUSTOM: y n
+936538r8<substantiv>hit:hit:hits:hitten:hittens:hittar, hits:hittars, hits:hittarna, hitsen:hittarnas, hitsens
+971596r3<egennamn>Hitchcock:Hitchcock:Hitchcocks
+791678r3<adjektiv>hitflyttad:hitflyttad:hitflyttat:hitflyttade:hitflyttade:!:!:!:
+643552r4<verb>hitföra:hitföra:hitförde:hitfört:hitför:hitför:hitföras:hitfördes:hitförts:hitförs:hitförd:hitfört:hitförda::
+COMPOUND(558990, 558899): hit + föra
+800983r3<adjektiv>hithörande:hithörande:hithörande:hithörande:hithörande:!:!:!:
+573282r3<adjektiv>hithörig:hithörig:hithörigt:hithöriga:hithöriga::::
+691945r3<adverb>hitin:hitin
+620569r3<adverb>hitintills:hitintills
+546870r4<verb>hitkalla:hitkalla:hitkallade:hitkallat:hitkallar:hitkalla:::::hitkallad:hitkallat:hitkallade::
+643559r6<adjektiv>hitkommen:hitkommen:hitkommet:hitkomna:hitkomna:!:!:!:
+799535r3<adjektiv>hitkörd:hitkörd:hitkört:hitkörda:hitkörda::::
+553222r3<egennamn>Hitler:Hitler:Hitlers
+CUSTOM: y n Hitler
+936399r3<substantiv>hitlista:hitlista:hitlistas:hitlistan:hitlistans:hitlistor:hitlistors:hitlistorna:hitlistornas
+791681r3<adjektiv>hitlockad:hitlockad:hitlockat:hitlockade:hitlockade:!:!:!:
+915012r3<substantiv>hitlåt:hitlåt:hitlåts:hitlåten:hitlåtens:hitlåtar:hitlåtars:hitlåtarna:hitlåtarnas
+954491r3<substantiv>hitmakare:hitmakare:hitmakares:hitmakaren:hitmakarens:hitmakare:hitmakares:hitmakarna:hitmakarnas
+625462r3<preposition>hitom:hitom
+947184r4<substantiv>hitpotential:hitpotential:hitpotentials:hitpotentialen:hitpotentialens:hitpotentialer:hitpotentialers:hitpotentialerna:hitpotentialernas
+COMPOUND(558990, 639959): hit + potential
+874747r4<substantiv>hitrefräng:hitrefräng:hitrefrängs:hitrefrängen:hitrefrängens:hitrefränger:hitrefrängers:hitrefrängerna:hitrefrängernas
+COMPOUND(558990, 550329): hit + refräng
+840536r3<substantiv>hitresa:hitresa:hitresas:hitresan:hitresans:hitresor:hitresors:hitresorna:hitresornas
+946955r3<adjektiv>hitrest:hitrest:hitrest:hitresta:hitresta::::hitreste::::::::
+791684r3<adjektiv>hitskickad:hitskickad:hitskickat:hitskickade:hitskickade:!:!:!:
+799541r3<adjektiv>hitsänd:hitsänd:hitsänt:hitsända:hitsända::::
+546871r6<verb>hitta:hitta:hittade:hittat:hittar:hitta:hittas:hittades:hittats:hittas:hittad:hittat:hittade::
+BASEWORDS: hitte
+CUSTOM: y y hitte
+643561r3<substantiv>hittebarn:hittebarn:hittebarns:hittebarnet:hittebarnets:hittebarn:hittebarns:hittebarnen:hittebarnens
+643562r3<substantiv>hittegods:hittegods:hittegods:hittegodset:hittegodsets::::
+CUSTOM: y y hittegods
+643563r3<substantiv>hittelön:hittelön:hittelöns:hittelönen:hittelönens::::
+687798r3<adverb>hittilldags:hittilldags
+643564r3<adverb>hittills:hittills
+800984r3<adjektiv>hittillsgällande:hittillsgällande:hittillsgällande:hittillsgällande:hittillsgällande:!:!:!:
+728660r3<adjektiv>hittillsvarande:hittillsvarande:hittillsvarande:hittillsvarande:hittillsvarande:!:!:!:!
+586787r3<verb>hittransportera:hittransportera:hittransporterade:hittransporterat:hittransporterar:hittransportera:::::::::
+592377r3<adverb>hitåt:hitåt
+929640r17<förkortning>hiv:hiv
+624448r3<verb>hiva:hiva:hivade:hivat:hivar:hiva:hivas:hivades:hivats:hivas:hivad:hivat:hivade:hivande:
+946347r4<substantiv>hivbekämpning:hivbekämpning:hivbekämpnings:hivbekämpningen:hivbekämpningens::::
+COMPOUND(929640, 687712): hiv + bekämpning
+946353r4<substantiv>hivdiagnos:hivdiagnos:hivdiagnos:hivdiagnosen:hivdiagnosens:hivdiagnoser:hivdiagnosers:hivdiagnoserna:hivdiagnosernas
+COMPOUND(929640, 548638): hiv + diagnos
+946235r4<substantiv>hivepidemi:hivepidemi:hivepidemis:hivepidemin:hivepidemins::::
+COMPOUND(929640, 610639): hiv + epidemi
+946342r3<adjektiv>hivinfekterad:hivinfekterad:hivinfekterat:hivinfekterade:hivinfekterade:!:!:!:::::::::
+946241r4<substantiv>hivinfektion:hivinfektion:hivinfektions:hivinfektionen:hivinfektionens:hivinfektioner:hivinfektioners:hivinfektionerna:hivinfektionernas
+COMPOUND(929640, 602287): hiv + infektion
+946251r4<substantiv>hivmedicin:hivmedicin:hivmedicins:hivmedicinen:hivmedicinens:hivmediciner:hivmediciners:hivmedicinerna:hivmedicinernas
+COMPOUND(929640, 550022): hiv + medicin
+947669r3<adjektiv>hivpositiv:hivpositiv:hivpositivt:hivpositiva:hivpositiva::::hivpositive::::::::
+946335r4<adjektiv>hivpreventiv:hivpreventiv:hivpreventivt:hivpreventiva:hivpreventiva:!:!:!:::::::::
+COMPOUND(929640, 695371): hiv + preventiv
+743425r5<substantiv>hivsmitta:hivsmitta:hivsmittas:hivsmittan:hivsmittans:hivsmittor:hivsmittors:hivsmittorna:hivsmittornas
+COMPOUND(929640, 595259): hiv + smitta
+743431r3<adjektiv>hivsmittad:hivsmittad:hivsmittat:hivsmittade:hivsmittade:!:!:!:
+946268r4<substantiv>hivspridning:hivspridning:hivspridnings:hivspridningen:hivspridningens::::
+COMPOUND(929640, 668888): hiv + spridning
+946274r4<substantiv>hivtest:hivtest:hivtests:hivtestet, hivtesten:hivtestets, hivtestens:hivtest, hivtester:hivtests, hivtesters:hivtesten, hivtesterna:hivtestens, hivtesternas
+COMPOUND(929640, 550663): hiv + test
+946286r4<verb>hivtesta:hivtesta:hivtestade:hivtestat:hivtestar:hivtesta:hivtestas:hivtestades:hivtestats:hivtestas:hivtestad:hivtestat:hivtestade:hivtestande:
+COMPOUND(929640, 547822): hiv + testa
+946297r4<substantiv>hivtestning:hivtestning:hivtestnings:hivtestningen:hivtestningens:hivtestningar:hivtestningars:hivtestningarna:hivtestningarnas
+COMPOUND(929640, 672258): hiv + testning
+946307r4<substantiv>hivvaccin:hivvaccin:hivvaccins:hivvaccinet:hivvaccinets:hivvacciner:hivvacciners:hivvaccinerna:hivvaccinernas
+COMPOUND(929640, 561728): hiv + vaccin
+946317r4<substantiv>hivvirus:hivvirus:hivvirus:hivviruset:hivvirusets:hivvirus:hivvirus:hivvirusen:hivvirusens
+COMPOUND(929640, 553129): hiv + virus
+946325r4<substantiv>hivöverföring:hivöverföring:hivöverförings:hivöverföringen:hivöverföringens:hivöverföringar:hivöverföringars:hivöverföringarna:hivöverföringarnas
+COMPOUND(929640, 598001): hiv + överföring
+554607r3<egennamn>Hjalmar:Hjalmar:Hjalmars
+840674r3<egennamn>Hjalmarson:Hjalmarson:Hjalmarsons
+721224r3<egennamn>Hjalmarsson:Hjalmarsson:Hjalmarssons
+980401r3<substantiv>hjalt:hjalt:hjalts:hjaltet:hjaltets:hjalt:hjalts:hjalten:hjaltens
+CUSTOM: n n y
+972961r3<egennamn>Hjelm:Hjelm:Hjelms
+728122r3<egennamn>Hjo:Hjo:Hjos
+CUSTOM: y n Hjo
+627751r9<substantiv>hjon:hjon:hjons:hjonet:hjonets:hjon:hjons:hjonen:hjonens
+CUSTOM: y n
+643565r3<substantiv>hjonelag:hjonelag:hjonelags:hjonelaget:hjonelagets:hjonelag:hjonelags:hjonelagen:hjonelagens
+551381r6<substantiv>hjord:hjord:hjords:hjorden:hjordens:hjordar:hjordars:hjordarna:hjordarnas
+840544r3<substantiv>hjordinstinkt:hjordinstinkt:hjordinstinkts:hjordinstinkten:hjordinstinktens::::
+551382r5<substantiv>hjort:hjort:hjorts:hjorten:hjortens:hjortar:hjortars:hjortarna:hjortarnas
+CUSTOM: y n hjort
+840548r3<substantiv>hjortdjur:hjortdjur:hjortdjurs:hjortdjuret:hjortdjurets:hjortdjur:hjortdjurs:hjortdjuren:hjortdjurens
+CUSTOM: n n y
+840554r3<substantiv>hjorthornssalt:hjorthornssalt:hjorthornssalts:hjorthornssaltet:hjorthornssaltets::::
+607308r3<substantiv>hjortron:hjortron:hjortrons:hjortronet:hjortronets:hjortron:hjortrons:hjortronen:hjortronens
+CUSTOM: y y hjortron
+840558r3<substantiv>hjortsadel:hjortsadel:hjortsadels:hjortsadeln:hjortsadelns:hjortsadlar:hjortsadlars:hjortsadlarna:hjortsadlarnas
+CUSTOM: n n y
+552470r20<substantiv>hjul:hjul:hjuls:hjulet:hjulets:hjul:hjuls:hjulen:hjulens
+CUSTOM: y y hjul
+637088r8<verb>hjula:hjula:hjulade:hjulat:hjular:hjula:hjulas:hjulades:hjulats:hjulas::::hjulande:
+594245r3<substantiv>hjulbana:hjulbana:hjulbanas:hjulbanan:hjulbanans:hjulbanor:hjulbanors:hjulbanorna:hjulbanornas
+928832r4<substantiv>hjulbas:hjulbas:hjulbas:hjulbasen:hjulbasens:hjulbaser:hjulbasers:hjulbaserna:hjulbasernas
+COMPOUND(552470, 548351): hjul + bas
+643566r3<adjektiv>hjulbent:hjulbent:hjulbent:hjulbenta:hjulbenta::::hjulbente
+637345r5<substantiv>hjulboja:hjulboja:hjulbojas:hjulbojan:hjulbojans:hjulbojor:hjulbojors:hjulbojorna:hjulbojornas
+DEFINITION 1: På bil för att hindra rattfylleri 
+COMPOUND(552470, 593782): hjul + boja
+598343r3<substantiv>hjulbult:hjulbult:hjulbults:hjulbulten:hjulbultens:hjulbultar:hjulbultars:hjulbultarna:hjulbultarnas
+CUSTOM: n n
+845988r3<adjektiv>hjulburen:hjulburen:hjulburet:hjulburna:hjulburna::::
+850237r3<substantiv>hjuldon:hjuldon:hjuldons:hjuldonet:hjuldonets:hjuldon:hjuldons:hjuldonen:hjuldonens
+944679r4<substantiv>hjuleker:hjuleker:hjulekers:hjulekern:hjulekerns:hjulekrar:hjulekrars:hjulekrarna:hjulekrarnas
+COMPOUND(552470, 627965): hjul + eker
+791687r3<adjektiv>hjulformad:hjulformad:hjulformat:hjulformade:hjulformade:!:!:!:
+573285r3<adjektiv>hjulformig:hjulformig:hjulformigt:hjulformiga:hjulformiga::::
+928839r4<substantiv>hjulhus:hjulhus:hjulhus:hjulhuset:hjulhusets:hjulhus:hjulhus:hjulhusen:hjulhusens
+COMPOUND(552470, 552480): hjul + hus
+878374r3<substantiv>hjullastare:hjullastare:hjullastares:hjullastaren:hjullastarens:hjullastare:hjullastares:hjullastarna:hjullastarnas
+850243r3<substantiv>hjulnav:hjulnav:hjulnavs:hjulnavet:hjulnavets:hjulnav:hjulnavs:hjulnaven:hjulnavens
+930917r4<substantiv>hjulpar:hjulpar:hjulpars:hjulparet:hjulparets:hjulpar:hjulpars:hjulparen:hjulparens
+COMPOUND(552470, 607793): hjul + par
+602175r3<substantiv>hjulsats:hjulsats:hjulsats:hjulsatsen:hjulsatsens:hjulsatser:hjulsatsers:hjulsatserna:hjulsatsernas
+CUSTOM: n n
+594253r3<substantiv>hjulsida:hjulsida:hjulsidas:hjulsidan:hjulsidans:hjulsidor:hjulsidors:hjulsidorna:hjulsidornas
+CUSTOM: n n
+939054r4<substantiv>hjulspår:hjulspår:hjulspårs:hjulspåret:hjulspårets:hjulspår:hjulspårs:hjulspåren:hjulspårens
+COMPOUND(552470, 552961): hjul + spår
+972194r3<egennamn>Hjulsta:Hjulsta:Hjulstas
+729773r4<substantiv>hjulupphängning:hjulupphängning:hjulupphängnings:hjulupphängningen:hjulupphängningens:hjulupphängningar:hjulupphängningars:hjulupphängningarna:hjulupphängningarnas
+COMPOUND(552470, 634781): hjul + upphängning
+CUSTOM: n n y
+911758r4<substantiv>hjulångare:hjulångare:hjulångares:hjulångaren:hjulångarens:hjulångare:hjulångares:hjulångarna:hjulångarnas
+COMPOUND(552470, 615529): hjul + ångare
+874550r3<egennamn>Hjällbo:Hjällbo:Hjällbos
+551383r5<substantiv>hjälm:hjälm:hjälms:hjälmen:hjälmens:hjälmar:hjälmars:hjälmarna:hjälmarnas
+CUSTOM: y y hjälm
+801374r3<adjektiv>hjälmförsedd:hjälmförsedd:hjälmförsett:hjälmförsedda:hjälmförsedda::::
+CUSTOM: n n y
+966965r4<substantiv>hjälmgecko:hjälmgecko:hjälmgeckos:hjälmgeckon:hjälmgeckons::::
+COMPOUND(551383, 562606): hjälm + gecko
+801377r3<adjektiv>hjälmprydd:hjälmprydd:hjälmprytt:hjälmprydda:hjälmprydda::::
+CUSTOM: n n y
+560565r10<substantiv>hjälp:hjälp:hjälps:hjälpen:hjälpens::::
+BASEWORDS: hjälp
+CUSTOM: y y hjälp +hjälps
+560566r8<verb>hjälpa:hjälpa:hjälpte:hjälpt:hjälper:hjälp:hjälpas:hjälptes:hjälpts:hjälps, hjälpes:hjälpt:hjälpt:hjälpta:hjälpande:hjälpe
+615287r3<substantiv>hjälpare:hjälpare:hjälpares:hjälparen:hjälparens:hjälpare:hjälpares:hjälparna:hjälparnas
+CUSTOM: y y hjälpar
+591717r3<deponens>hjälpas:hjälpas:hjälptes:hjälpts:hjälps:
+897068r3<substantiv>hjälpfil:hjälpfil:hjälpfils:hjälpfilen:hjälpfilens:hjälpfiler:hjälpfilers:hjälpfilerna:hjälpfilernas
+850249r3<substantiv>hjälpfru:hjälpfru:hjälpfrus:hjälpfrun:hjälpfruns:hjälpfruar:hjälpfruars:hjälpfruarna:hjälpfruarnas
+566238r3<adjektiv>hjälplig:hjälplig:hjälpligt:hjälpliga:hjälpliga::::
+935152r4<substantiv>hjälplok:hjälplok:hjälploks:hjälploket:hjälplokets:hjälplok:hjälploks:hjälploken:hjälplokens
+COMPOUND(560566, 552674): hjälpa + lok
+564888r4<adjektiv>hjälplös:hjälplös:hjälplöst:hjälplösa:hjälplösa:hjälplösare:hjälplösast:hjälplösaste:hjälplöse
+643569r3<substantiv>hjälplöshet:hjälplöshet:hjälplöshets:hjälplösheten:hjälplöshetens:!:!:!:!
+CUSTOM: y y hjälplöshets
+731749r4<substantiv>hjälpmaterial:hjälpmaterial:hjälpmaterials:hjälpmaterialet:hjälpmaterialets:hjälpmaterial:hjälpmaterials:hjälpmaterialen:hjälpmaterialens
+COMPOUND(560565, 552695): hjälp + material
+CUSTOM: n n
+643570r7<substantiv>hjälpmedel:hjälpmedel:hjälpmedels:hjälpmedlet:hjälpmedlets:hjälpmedel:hjälpmedels:hjälpmedlen:hjälpmedlens
+COMPOUND(560565, 560532): hjälp + medel
+CUSTOM: y y
+840567r3<substantiv>hjälpreda:hjälpreda:hjälpredas:hjälpredan:hjälpredans:hjälpredor:hjälpredors:hjälpredorna:hjälpredornas
+563401r4<adjektiv>hjälpsam:hjälpsam:hjälpsamt:hjälpsamma:hjälpsamma:hjälpsammare:hjälpsammast:hjälpsammaste:hjälpsamme
+643572r3<substantiv>hjälpsamhet:hjälpsamhet:hjälpsamhets:hjälpsamheten:hjälpsamhetens:!:!:!:!
+CUSTOM: y y hjälpsamhets
+951530r4<substantiv>hjälpverb:hjälpverb:hjälpverbs:hjälpverbet:hjälpverbets:hjälpverb:hjälpverbs:hjälpverben:hjälpverbens
+COMPOUND(560565, 553115): hjälp + verb
+566239r3<adjektiv>hjälpvillig:hjälpvillig:hjälpvilligt:hjälpvilliga:hjälpvilliga::::
+618179r8<substantiv>hjälte:hjälte:hjältes:hjälten:hjältens:hjältar:hjältars:hjältarna:hjältarnas
+BASEWORDS: hjälte
+CUSTOM: y y hjälte
+850257r3<substantiv>hjältedåd:hjältedåd:hjältedåds:hjältedådet:hjältedådets:hjältedåd:hjältedåds:hjältedåden:hjältedådens
+643573r3<substantiv>hjältemod:hjältemod:hjältemods:hjältemodet:hjältemodets::::
+573288r3<adjektiv>hjältemodig:hjältemodig:hjältemodigt:hjältemodiga:hjältemodiga::::
+643574r4<substantiv>hjältinna:hjältinna:hjältinnas:hjältinnan:hjältinnans:hjältinnor:hjältinnors:hjältinnorna:hjältinnornas
+555227r5<substantiv>hjärna:hjärna:hjärnas:hjärnan:hjärnans:hjärnor:hjärnors:hjärnorna:hjärnornas
+CUSTOM: y y hjärn
+643575r3<substantiv>hjärnblödning:hjärnblödning:hjärnblödnings:hjärnblödningen:hjärnblödningens:hjärnblödningar:hjärnblödningars:hjärnblödningarna:hjärnblödningarnas
+CUSTOM: n n y
+892795r4<substantiv>hjärndel:hjärndel:hjärndels:hjärndelen:hjärndelens:hjärndelar:hjärndelars:hjärndelarna:hjärndelarnas
+COMPOUND(555227, 551034): hjärna + del
+643576r3<adjektiv>hjärndöd:hjärndöd:hjärndött:hjärndöda:hjärndöda:!:!:!:hjärndöde
+840575r3<substantiv>hjärndöd:hjärndöd:hjärndöds:hjärndöden:hjärndödens::::
+643578r4<substantiv>hjärnhinna:hjärnhinna:hjärnhinnas:hjärnhinnan:hjärnhinnans:hjärnhinnor:hjärnhinnors:hjärnhinnorna:hjärnhinnornas
+CUSTOM: y y hjärnhinne
+643592r4<substantiv>hjärnhinneinflammation:hjärnhinneinflammation:hjärnhinneinflammations:hjärnhinneinflammationen:hjärnhinneinflammationens:hjärnhinneinflammationer:hjärnhinneinflammationers:hjärnhinneinflammationerna:hjärnhinneinflammationernas
+COMPOUND(643578, 602288): hjärnhinna + inflammation
+CUSTOM: n n y
+643584r3<substantiv>hjärnkirurg:hjärnkirurg:hjärnkirurgs:hjärnkirurgen:hjärnkirurgens:hjärnkirurger:hjärnkirurgers:hjärnkirurgerna:hjärnkirurgernas
+850263r3<substantiv>hjärnlob:hjärnlob:hjärnlobs:hjärnloben:hjärnlobens:hjärnlober:hjärnlobers:hjärnloberna:hjärnlobernas
+643598r3<substantiv>hjärnskada:hjärnskada:hjärnskadas:hjärnskadan:hjärnskadans:hjärnskador:hjärnskadors:hjärnskadorna:hjärnskadornas
+CUSTOM: n n y
+691947r3<adjektiv>hjärnskadad:hjärnskadad:hjärnskadat:hjärnskadade:hjärnskadade:!:!:!:
+CUSTOM: n n y
+733490r3<substantiv>hjärnskrynklare:hjärnskrynklare:hjärnskrynklares:hjärnskrynklaren:hjärnskrynklarens:hjärnskrynklare:hjärnskrynklares:hjärnskrynklarna:hjärnskrynklarnas
+546872r4<verb>hjärntvätta:hjärntvätta:hjärntvättade:hjärntvättat:hjärntvättar:hjärntvätta:hjärntvättas:hjärntvättades:hjärntvättats:hjärntvättas:hjärntvättad:hjärntvättat:hjärntvättade::
+CUSTOM: n n y
+560567r16<substantiv>hjärta:hjärta:hjärtas:hjärtat:hjärtats:hjärtan:hjärtans:hjärtana:hjärtanas
+CUSTOM: y y hjärt
+840579r3<substantiv>hjärtansfröjd:hjärtansfröjd:hjärtansfröjds:hjärtansfröjden:hjärtansfröjdens::::
+643600r3<substantiv>hjärtattack:hjärtattack:hjärtattacks:hjärtattacken:hjärtattackens:hjärtattacker:hjärtattackers:hjärtattackerna:hjärtattackernas
+760062r3<adjektiv>hjärtdöd:hjärtdöd:hjärtdött:hjärtdöda:hjärtdöda:!:!:!:hjärtdöde
+840583r3<substantiv>hjärteangelägenhet:hjärteangelägenhet:hjärteangelägenhets:hjärteangelägenheten:hjärteangelägenhetens:hjärteangelägenheter:hjärteangelägenheters:hjärteangelägenheterna:hjärteangelägenheternas
+961547r3<substantiv>hjärtebarn:hjärtebarn:hjärtebarns:hjärtebarnet:hjärtebarnets:hjärtebarn:hjärtebarns:hjärtebarnen:hjärtebarnens
+743435r3<substantiv>hjärteblod:hjärteblod:hjärteblods:hjärteblodet:hjärteblodets::::
+743439r3<substantiv>hjärtefråga:hjärtefråga:hjärtefrågas:hjärtefrågan:hjärtefrågans:hjärtefrågor:hjärtefrågors:hjärtefrågorna:hjärtefrågornas
+791690r3<adjektiv>hjärteglad:hjärteglad:hjärteglat:hjärteglade:hjärteglade:!:!:!:
+801814r4<adjektiv>hjärtegod:hjärtegod:hjärtegott:hjärtegoda:hjärtegoda::::hjärtegode
+840592r3<substantiv>hjärtegryn:hjärtegryn:hjärtegryns:hjärtegrynet:hjärtegrynets:hjärtegryn:hjärtegryns:hjärtegrynen:hjärtegrynens
+743447r4<substantiv>hjärtegull:hjärtegull:hjärtegulls:hjärtegullet:hjärtegullets:hjärtegull:hjärtegulls:hjärtegullen:hjärtegullens
+800985r3<adjektiv>hjärteknipande:hjärteknipande:hjärteknipande:hjärteknipande:hjärteknipande:!:!:!:
+743452r3<substantiv>hjärtekrossare:hjärtekrossare:hjärtekrossares:hjärtekrossaren:hjärtekrossarens:hjärtekrossare:hjärtekrossares:hjärtekrossarna:hjärtekrossarnas
+610305r4<substantiv>hjärter:hjärter:hjärters:hjärtern:hjärterns:hjärter:hjärters:hjärterna:hjärternas
+CUSTOM: y y hjärter
+887868r3<substantiv>hjärterbud:hjärterbud:hjärterbuds:hjärterbudet:hjärterbudets:hjärterbud:hjärterbuds:hjärterbuden:hjärterbudens
+887874r3<substantiv>hjärterdam:hjärterdam:hjärterdams:hjärterdamen:hjärterdamens:hjärterdamer:hjärterdamers:hjärterdamerna:hjärterdamernas
+850271r3<substantiv>hjärteress:hjärteress:hjärteress:hjärteresset:hjärteressets:hjärteress:hjärteress:hjärteressen:hjärteressens
+887882r3<substantiv>hjärterfyra:hjärterfyra:hjärterfyras:hjärterfyran:hjärterfyrans:hjärterfyror:hjärterfyrors:hjärterfyrorna:hjärterfyrornas
+887890r3<substantiv>hjärterhacka:hjärterhacka:hjärterhackas:hjärterhackan:hjärterhackans:hjärterhackor:hjärterhackors:hjärterhackorna:hjärterhackornas
+887898r3<substantiv>hjärterknekt:hjärterknekt:hjärterknekts:hjärterknekten:hjärterknektens:hjärterknektar:hjärterknektars:hjärterknektarna:hjärterknektarnas
+741279r4<substantiv>hjärterkung:hjärterkung:hjärterkungs:hjärterkungen:hjärterkungens:hjärterkungar:hjärterkungars:hjärterkungarna:hjärterkungarnas
+COMPOUND(610305, 551645): hjärter + kung
+850276r3<substantiv>hjärternia:hjärternia:hjärternias:hjärternian:hjärternians:hjärternior:hjärterniors:hjärterniorna:hjärterniornas
+948500r4<substantiv>hjärterot:hjärterot:hjärterots:hjärteroten:hjärterotens:hjärterötter:hjärterötters:hjärterötterna:hjärterötternas
+COMPOUND(560567, 561217): hjärta + rot
+887906r3<substantiv>hjärtersexa:hjärtersexa:hjärtersexas:hjärtersexan:hjärtersexans:hjärtersexor:hjärtersexors:hjärtersexorna:hjärtersexornas
+887914r3<substantiv>hjärtersvit:hjärtersvit:hjärtersvits:hjärtersviten:hjärtersvitens:hjärtersviter:hjärtersviters:hjärtersviterna:hjärtersviternas
+850284r3<substantiv>hjärtertia:hjärtertia:hjärtertias:hjärtertian:hjärtertians:hjärtertior:hjärtertiors:hjärtertiorna:hjärtertiornas
+887922r3<substantiv>hjärtertvåa:hjärtertvåa:hjärtertvåas:hjärtertvåan:hjärtertvåans:hjärtertvåor:hjärtertvåors:hjärtertvåorna:hjärtertvåornas
+743451r7<substantiv>hjärterum:hjärterum:hjärterums:hjärterummet:hjärterummets:!:!:!:!
+887930r3<substantiv>hjärteråtta:hjärteråtta:hjärteråttas:hjärteråttan:hjärteråttans:hjärteråttor:hjärteråttors:hjärteråttorna:hjärteråttornas
+850292r3<substantiv>hjärteräss:hjärteräss:hjärteräss:hjärterässet:hjärterässets:hjärteräss:hjärteräss:hjärterässen:hjärterässens
+729031r4<substantiv>hjärtesak:hjärtesak:hjärtesaks:hjärtesaken:hjärtesakens:hjärtesaker:hjärtesakers:hjärtesakerna:hjärtesakernas
+COMPOUND(560567, 550443): hjärta + sak
+948890r4<substantiv>hjärtesorg:hjärtesorg:hjärtesorgs:hjärtesorgen:hjärtesorgens:hjärtesorger:hjärtesorgers:hjärtesorgerna:hjärtesorgernas
+COMPOUND(560567, 550549): hjärta + sorg
+840600r3<substantiv>hjärtesuck:hjärtesuck:hjärtesucks:hjärtesucken:hjärtesuckens:hjärtesuckar:hjärtesuckars:hjärtesuckarna:hjärtesuckarnas
+980407r3<substantiv>hjärtesår:hjärtesår:hjärtesårs:hjärtesåret:hjärtesårets:hjärtesår:hjärtesårs:hjärtesåren:hjärtesårens
+797925r3<adjektiv>hjärtevarm:hjärtevarm:hjärtevarmt:hjärtevarma:hjärtevarma::::
+800986r3<adjektiv>hjärtevinnande:hjärtevinnande:hjärtevinnande:hjärtevinnande:hjärtevinnande:!:!:!:
+732973r4<substantiv>hjärtevän:hjärtevän:hjärteväns:hjärtevännen:hjärtevännens:hjärtevänner:hjärtevänners:hjärtevännerna:hjärtevännernas
+COMPOUND(560567, 620322): hjärta + vän
+800987r3<adjektiv>hjärtevärmande:hjärtevärmande:hjärtevärmande:hjärtevärmande:hjärtevärmande:!:!:!:
+743466r3<substantiv>hjärtfel:hjärtfel:hjärtfels:hjärtfelet:hjärtfelets:hjärtfel:hjärtfels:hjärtfelen:hjärtfelens
+743472r3<substantiv>hjärtflimmer:hjärtflimmer:hjärtflimmers:hjärtflimret:hjärtflimrets::::
+CUSTOM: n n y
+791693r3<adjektiv>hjärtformad:hjärtformad:hjärtformat:hjärtformade:hjärtformade:!:!:!:
+573289r3<adjektiv>hjärtformig:hjärtformig:hjärtformigt:hjärtformiga:hjärtformiga::::
+643601r3<substantiv>hjärtinfarkt:hjärtinfarkt:hjärtinfarkts:hjärtinfarkten:hjärtinfarktens:hjärtinfarkter:hjärtinfarkters:hjärtinfarkterna:hjärtinfarkternas
+566242r3<adjektiv>hjärtinnerlig:hjärtinnerlig:hjärtinnerligt:hjärtinnerliga:hjärtinnerliga::::
+743476r3<adverb>hjärtinnerligen:hjärtinnerligen
+701845r4<substantiv>hjärtkirurg:hjärtkirurg:hjärtkirurgs:hjärtkirurgen:hjärtkirurgens:hjärtkirurger:hjärtkirurgers:hjärtkirurgerna:hjärtkirurgernas
+COMPOUND(560567, 549525): hjärta + kirurg
+CUSTOM: n n y
+701853r3<substantiv>hjärtkirurgi:hjärtkirurgi:hjärtkirurgis:hjärtkirurgin:hjärtkirurgins::::
+CUSTOM: n n y
+743477r3<substantiv>hjärtklaff:hjärtklaff:hjärtklaffs:hjärtklaffen:hjärtklaffens:hjärtklaffar:hjärtklaffars:hjärtklaffarna:hjärtklaffarnas
+CUSTOM: n n y
+743458r3<substantiv>hjärtklappning:hjärtklappning:hjärtklappnings:hjärtklappningen:hjärtklappningens:hjärtklappningar:hjärtklappningars:hjärtklappningarna:hjärtklappningarnas
+845991r3<adjektiv>hjärtklen:hjärtklen:hjärtklent:hjärtklena:hjärtklena::::hjärtklene
+733497r3<adjektiv>hjärtknipande:hjärtknipande:hjärtknipande:hjärtknipande:hjärtknipande:!:!:!:
+563107r4<adjektiv>hjärtlig:hjärtlig:hjärtligt:hjärtliga:hjärtliga:hjärtligare:hjärtligast:hjärtligaste:hjärtlige
+643611r3<adverb>hjärtligen:hjärtligen
+643603r3<substantiv>hjärtlighet:hjärtlighet:hjärtlighets:hjärtligheten:hjärtlighetens::::
+CUSTOM: y y hjärtlighets
+564889r3<adjektiv>hjärtlös:hjärtlös:hjärtlöst:hjärtlösa:hjärtlösa::::
+643604r3<substantiv>hjärtlöshet:hjärtlöshet:hjärtlöshets:hjärtlösheten:hjärtlöshetens::::
+CUSTOM: y y hjärtlöshets
+850297r3<substantiv>hjärtmur:hjärtmur:hjärtmurs:hjärtmuren:hjärtmurens:hjärtmurar:hjärtmurars:hjärtmurarna:hjärtmurarnas
+876954r3<substantiv>hjärtmussla:hjärtmussla:hjärtmusslas:hjärtmusslan:hjärtmusslans:hjärtmusslor:hjärtmusslors:hjärtmusslorna:hjärtmusslornas
+CUSTOM: n n y
+643608r4<adjektiv>hjärtnupen:hjärtnupen:hjärtnupet:hjärtnupna:hjärtnupna::::hjärtnupne
+643612r3<adjektiv>hjärtskärande:hjärtskärande:hjärtskärande:hjärtskärande:hjärtskärande:!:!:!:
+CUSTOM: n n y
+643613r3<substantiv>hjärtslag:hjärtslag:hjärtslags:hjärtslaget:hjärtslagets:hjärtslag:hjärtslags:hjärtslagen:hjärtslagens
+CUSTOM: n n y
+643614r3<adjektiv>hjärtslitande:hjärtslitande:hjärtslitande:hjärtslitande:hjärtslitande:!:!:!:
+CUSTOM: y n
+964941r3<substantiv>hjärtsnörp:hjärtsnörp:::::::
+915021r3<substantiv>hjärtstartare:hjärtstartare:hjärtstartares:hjärtstartaren:hjärtstartarens:hjärtstartare:hjärtstartares:hjärtstartarna:hjärtstartarnas
+841295r3<substantiv>hjärtsten:hjärtsten:hjärtstens:hjärtstenen:hjärtstenens:hjärtstenar:hjärtstenars:hjärtstenarna:hjärtstenarnas
+CUSTOM: y n
+643615r3<substantiv>hjärtstillestånd:hjärtstillestånd:hjärtstillestånds:hjärtstilleståndet:hjärtstilleståndets::::
+CUSTOM: n n y
+733498r4<substantiv>hjärtstimulator:hjärtstimulator:hjärtstimulators:hjärtstimulatorn:hjärtstimulatorns:hjärtstimulatorer:hjärtstimulatorers:hjärtstimulatorerna:hjärtstimulatorernas
+COMPOUND(560567, 733506): hjärta + stimulator
+CUSTOM: n n y
+628939r6<substantiv>hjärtstopp:hjärtstopp:hjärtstopps:hjärtstoppet:hjärtstoppets:hjärtstopp:hjärtstopps:hjärtstoppen:hjärtstoppens
+COMPOUND(560567, 608140): hjärta + stopp
+CUSTOM: y y hjärtstopps
+743485r3<substantiv>hjärtsvikt:hjärtsvikt:hjärtsvikts:hjärtsvikten:hjärtsviktens::::
+CUSTOM: n n y
+899126r4<substantiv>hjärtton:hjärtton:hjärttons:hjärttonen:hjärttonens:hjärttoner:hjärttoners:hjärttonerna:hjärttonernas
+COMPOUND(560567, 603900): hjärta + ton
+566245r3<adjektiv>hjärtängslig:hjärtängslig:hjärtängsligt:hjärtängsliga:hjärtängsliga::::
+CUSTOM: n n y
+618182r3<substantiv>hjässa:hjässa:hjässas:hjässan:hjässans:hjässor:hjässors:hjässorna:hjässornas
+980413r3<substantiv>hjässben:hjässben:hjässbens:hjässbenet:hjässbenets:hjässben:hjässbens:hjässbenen:hjässbenens
+840609r3<substantiv>hjässbjudning:hjässbjudning:hjässbjudnings:hjässbjudningen:hjässbjudningens:hjässbjudningar:hjässbjudningars:hjässbjudningarna:hjässbjudningarnas
+990155r3<egennamn>Hjördis:Hjördis:Hjördis
+624198r3<interjektion>hm:hm
+CUSTOM: n n y
+636029r4<substantiv>h-moll:h-moll:h-molls:!:!:!:!:!:!
+CUSTOM: y n h-moll
+557668r5<substantiv>ho:ho:hos:hon:hons:hoar:hoars:hoarna:hoarnas
+840617r4<verb>hoa:hoa:hoade:hoat:hoar:hoa:hoas:hoades:hoats:hoas::::hoande:
+CUSTOM: y n
+610777r7<substantiv>hobby:hobby:hobbys:hobbyn:hobbyns:hobbyer, hobbies:hobbyers:hobbyerna:hobbyernas
+CUSTOM: y y hobby
+728466r4<substantiv>hobbyföretag:hobbyföretag:hobbyföretags:hobbyföretaget:hobbyföretagets:hobbyföretag:hobbyföretags:hobbyföretagen:hobbyföretagens
+COMPOUND(610777, 552403): hobby + företag
+CUSTOM: y n
+934167r4<substantiv>hobbyrum:hobbyrum:hobbyrums:hobbyrummet:hobbyrummets:hobbyrum:hobbyrums:hobbyrummen:hobbyrummens
+COMPOUND(610777, 571182): hobby + rum
+643616r4<substantiv>hockey:hockey:hockeys:hockeyn:hockeyns:!:!:!:!
+CUSTOM: y y hockey
+738132r4<substantiv>hockeyturnering:hockeyturnering:hockeyturnerings:hockeyturneringen:hockeyturneringens:hockeyturneringar:hockeyturneringars:hockeyturneringarna:hockeyturneringarnas
+COMPOUND(643616, 738114): hockey + turnering
+CUSTOM: y n
+874534r3<egennamn>Hodgson:Hodgson:Hodgsons
+874456r3<egennamn>Hofdek:Hofdek:Hofdeks
+CUSTOM: n n 
+728124r3<egennamn>Hofors:Hofors:Hofors
+CUSTOM: y n Hofors
+551384r3<substantiv>hoj:hoj:hojs:hojen:hojens:hojar:hojars:hojarna:hojarnas
+CUSTOM: y n
+628152r7<substantiv>hojt:hojt:hojts:hojtet:hojtets::::
+CUSTOM: n n y
+546873r5<verb>hojta:hojta:hojtade:hojtat:hojtar:hojta:hojtas:hojtades:hojtats:hojtas::::hojtande:
+625464r7<interjektion>hokus pokus:hokus pokus
+625469r5<substantiv>hokuspokus:hokuspokus:hokuspokus:hokuspokuset:hokuspokusets:hokuspokus:hokuspokus:!:!
+634603r3<interjektion>hokuspokus:hokuspokus
+580632r3<adjektiv>holarktisk:holarktisk:holarktiskt:holarktiska:holarktiska::::
+874743r3<egennamn>Holbrook:Holbrook:Holbrooks
+840621r3<substantiv>holdingbolag:holdingbolag:holdingbolags:holdingbolaget:holdingbolagets:holdingbolag:holdingbolags:holdingbolagen:holdingbolagens
+554609r3<e

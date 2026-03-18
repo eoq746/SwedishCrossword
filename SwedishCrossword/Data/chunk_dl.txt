@@ -1,0 +1,527 @@
+nas
+COMPOUND(640696, 549744): konstruktion + kostnad
+712155r4<substantiv>konstruktionsmaterial:konstruktionsmaterial:konstruktionsmaterials:konstruktionsmaterialet:konstruktionsmaterialets:konstruktionsmaterial:konstruktionsmaterials:konstruktionsmaterialen:konstruktionsmaterialens
+COMPOUND(640696, 552695): konstruktion + material
+729693r4<substantiv>konstruktionsstål:konstruktionsstål:konstruktionsståls:konstruktionsstålet:konstruktionsstålets:konstruktionsstål:konstruktionsståls:konstruktionsstålen:konstruktionsstålens
+COMPOUND(640696, 619747): konstruktion + stål
+720386r4<substantiv>konstruktionsuppgift:konstruktionsuppgift:konstruktionsuppgifts:konstruktionsuppgiften:konstruktionsuppgiftens:konstruktionsuppgifter:konstruktionsuppgifters:konstruktionsuppgifterna:konstruktionsuppgifternas
+COMPOUND(640696, 550735): konstruktion + uppgift
+712304r4<substantiv>konstruktionsövning:konstruktionsövning:konstruktionsövnings:konstruktionsövningen:konstruktionsövningens:konstruktionsövningar:konstruktionsövningars:konstruktionsövningarna:konstruktionsövningarnas
+COMPOUND(640696, 598019): konstruktion + övning
+640259r3<adjektiv>konstruktiv:konstruktiv:konstruktivt:konstruktiva:konstruktiva:konstruktivare:konstruktivast:konstruktivaste:konstruktive
+652907r3<substantiv>konstruktivism:konstruktivism:konstruktivisms:konstruktivismen:konstruktivismens::::
+652909r3<substantiv>konstruktivist:konstruktivist:konstruktivists:konstruktivisten:konstruktivistens:konstruktivister:konstruktivisters:konstruktivisterna:konstruktivisternas
+CUSTOM: y y konstruktivist
+581382r3<adjektiv>konstruktivistisk:konstruktivistisk:konstruktivistiskt:konstruktivistiska:konstruktivistiska::::
+888248r3<substantiv>konstruktivitet:konstruktivitet:konstruktivitets:konstruktiviteten:konstruktivitetens::::
+549661r5<substantiv>konstruktör:konstruktör:konstruktörs:konstruktören:konstruktörens:konstruktörer:konstruktörers:konstruktörerna:konstruktörernas
+CUSTOM: y y konstruktörs
+854965r4<substantiv>konstruktörsmästerskap:konstruktörsmästerskap:konstruktörsmästerskaps:konstruktörsmästerskapet:konstruktörsmästerskapets:konstruktörsmästerskap:konstruktörsmästerskaps:konstruktörsmästerskapen:konstruktörsmästerskapens
+COMPOUND(549661, 552709): konstruktör + mästerskap
+827677r3<substantiv>konstråd:konstråd:konstråds:konstrådet:konstrådets:konstråd:konstråds:konstråden:konstrådens
+891744r4<substantiv>konstsim:konstsim:konstsims:konstsimmet:konstsimmets::::
+COMPOUND(682831, 631076): konst + sim
+938886r4<substantiv>konstskatt:konstskatt:konstskatts:konstskatten:konstskattens:konstskatter:konstskatters:konstskatterna:konstskatternas
+COMPOUND(682831, 550507): konst + skatt
+566433r3<adjektiv>konstskicklig:konstskicklig:konstskickligt:konstskickliga:konstskickliga::::
+841315r3<substantiv>konststen:konststen:konststens:konststenen:konststenens:konststenar:konststenars:konststenarna:konststenarnas
+861539r4<substantiv>konststil:konststil:konststils:konststilen:konststilens:konststilar:konststilars:konststilarna:konststilarnas
+COMPOUND(682831, 551938): konst + stil
+652910r4<substantiv>konststycke:konststycke:konststyckes:konststycket:konststyckets:konststycken:konststyckens:konststyckena:konststyckenas
+COMPOUND(549654, 612917): konst + stycke
+581385r3<adjektiv>konstteoretisk:konstteoretisk:konstteoretiskt:konstteoretiska:konstteoretiska::::
+652911r4<substantiv>konstutställning:konstutställning:konstutställnings:konstutställningen:konstutställningens:konstutställningar:konstutställningars:konstutställningarna:konstutställningarnas
+COMPOUND(549654, 652912): konst + utställning
+CUSTOM: y y konstutställnings
+618584r3<substantiv>konstverk:konstverk:konstverks:konstverket:konstverkets:konstverk:konstverks:konstverken:konstverkens
+732718r3<substantiv>konstvetare:konstvetare:konstvetares:konstvetaren:konstvetarens:konstvetare:konstvetares:konstvetarna:konstvetarnas
+618585r3<substantiv>konstvetenskap:konstvetenskap:konstvetenskaps:konstvetenskapen:konstvetenskapens::::
+CUSTOM: y y konstvetenskaps
+566436r3<adjektiv>konstvetenskaplig:konstvetenskaplig:konstvetenskapligt:konstvetenskapliga:konstvetenskapliga::::
+874363r4<substantiv>konstvän:konstvän:konstväns:konstvännen:konstvännens:konstvänner:konstvänners:konstvännerna:konstvännernas
+COMPOUND(682831, 620322): konst + vän
+618589r3<substantiv>konståkare:konståkare:konståkares:konståkaren:konståkarens:konståkare:konståkares:konståkarna:konståkarnas
+CUSTOM: y y konståkar
+888253r3<substantiv>konståkerska:konståkerska:konståkerskas:konståkerskan:konståkerskans:konståkerskor:konståkerskors:konståkerskorna:konståkerskornas
+618595r3<substantiv>konståkning:konståkning:konståknings:konståkningen:konståkningens::::
+CUSTOM: y y konståknings
+618599r4<substantiv>konsul:konsul:konsuls:konsuln:konsulns:konsuler:konsulers:konsulerna:konsulernas
+552567r3<substantiv>konsulat:konsulat:konsulats:konsulatet:konsulatets:konsulat:konsulats:konsulaten:konsulatens
+CUSTOM: y y konsulat konsulats
+549662r4<substantiv>konsulent:konsulent:konsulents:konsulenten:konsulentens:konsulenter:konsulenters:konsulenterna:konsulenternas
+CUSTOM: y y konsulent
+744986r3<substantiv>konsulinna:konsulinna:konsulinnas:konsulinnan:konsulinnans:konsulinnor:konsulinnors:konsulinnorna:konsulinnornas
+549664r7<substantiv>konsult:konsult:konsults:konsulten:konsultens:konsulter:konsulters:konsulterna:konsulternas
+CUSTOM: y y konsult
+888262r3<verb>konsulta:konsulta:konsultade:konsultat:konsultar:konsulta::::::::konsultande:
+618600r3<substantiv>konsultation:konsultation:konsultations:konsultationen:konsultationens:konsultationer:konsultationers:konsultationerna:konsultationernas
+CUSTOM: y y konsultations
+728558r4<adjektiv>konsultativ:konsultativ:konsultativt:konsultativa:konsultativa:!:!:!:konsultative
+547210r4<verb>konsultera:konsultera:konsulterade:konsulterat:konsulterar:konsultera:konsulteras:konsulterades:konsulterats:konsulteras:konsulterad:konsulterat:konsulterade::
+801058r3<adjektiv>konsulterande:konsulterande:konsulterande:konsulterande:konsulterande:!:!:!:
+888268r3<substantiv>konsultering:konsultering:konsulterings:konsulteringen:konsulteringens:konsulteringar:konsulteringars:konsulteringarna:konsulteringarnas
+652913r4<substantiv>konsultföretag:konsultföretag:konsultföretags:konsultföretaget:konsultföretagets:konsultföretag:konsultföretags:konsultföretagen:konsultföretagens
+COMPOUND(549664, 552403): konsult + företag
+652919r4<substantiv>konsulttjänst:konsulttjänst:konsulttjänsts:konsulttjänsten:konsulttjänstens:konsulttjänster:konsulttjänsters:konsulttjänsterna:konsulttjänsternas
+COMPOUND(549664, 550677): konsult + tjänst
+652927r4<substantiv>konsultuppdrag:konsultuppdrag:konsultuppdrags:konsultuppdraget:konsultuppdragets:konsultuppdrag:konsultuppdrags:konsultuppdragen:konsultuppdragens
+COMPOUND(549664, 553075): konsult + uppdrag
+605592r3<substantiv>konsultverksamhet:konsultverksamhet:konsultverksamhets:konsultverksamheten:konsultverksamhetens:konsultverksamheter:konsultverksamheters:konsultverksamheterna:konsultverksamheternas
+CUSTOM: y y konsultverksamhets
+898380r3<adjektiv>konsulär:konsulär:konsulärt:konsulära:konsulära::::::::::::
+788860r3<egennamn>Konsum:Konsum:Konsums
+CUSTOM: y n Konsum
+549666r4<substantiv>konsument:konsument:konsuments:konsumenten:konsumentens:konsumenter:konsumenters:konsumenterna:konsumenternas
+CUSTOM: y y konsument
+898384r3<substantiv>konsumentköplagen:::konsumentköplagen:konsumentköplagens::::
+744994r3<substantiv>konsumentled:konsumentled:konsumentleds:konsumentledet:konsumentledets::::
+652970r5<substantiv>konsumentpris:konsumentpris:konsumentpris:konsumentpriset:konsumentprisets:konsumentpriser:konsumentprisers:konsumentpriserna:konsumentprisernas
+COMPOUND(549666, 595932): konsument + pris
+CUSTOM: y y konsumentpris
+652967r4<substantiv>konsumentprisindex:konsumentprisindex:konsumentprisindex:konsumentprisindexet:konsumentprisindexets::::
+COMPOUND(652970, 552497): konsumentpris + index
+756064r4<substantiv>konsumentskydd:konsumentskydd:konsumentskydds:konsumentskyddet:konsumentskyddets::::
+CUSTOM: y y konsumentskydds
+756068r4<substantiv>konsumentskyddslag:konsumentskyddslag:konsumentskyddslags:konsumentskyddslagen:konsumentskyddslagens:konsumentskyddslagar:konsumentskyddslagars:konsumentskyddslagarna:konsumentskyddslagarnas
+COMPOUND(756064, 551690): konsumentskydd + lag
+547211r5<verb>konsumera:konsumera:konsumerade:konsumerat:konsumerar:konsumera:konsumeras:konsumerades:konsumerats:konsumeras:konsumerad:konsumerat:konsumerade:konsumerande:
+884536r3<substantiv>konsumism:konsumism:konsumisms:konsumismen:konsumismens::::
+652933r10<substantiv>konsumtion:konsumtion:konsumtions:konsumtionen:konsumtionens::::
+CUSTOM: y y konsumtions +konsumtions
+670112r4<substantiv>konsumtionsavgift:konsumtionsavgift:konsumtionsavgifts:konsumtionsavgiften:konsumtionsavgiftens:konsumtionsavgifter:konsumtionsavgifters:konsumtionsavgifterna:konsumtionsavgifternas
+COMPOUND(652933, 548299): konsumtion + avgift
+884617r4<substantiv>konsumtionshets:konsumtionshets:konsumtionshets:konsumtionshetsen:konsumtionshetsens:!:!:!:!
+COMPOUND(652933, 624442): konsumtion + hets
+792671r3<adjektiv>konsumtionsinriktad:konsumtionsinriktad:konsumtionsinriktat:konsumtionsinriktade:konsumtionsinriktade:!:!:!:
+602454r3<substantiv>konsumtionskredit:konsumtionskredit:konsumtionskredits:konsumtionskrediten:konsumtionskreditens:konsumtionskrediter:konsumtionskrediters:konsumtionskrediterna:konsumtionskrediternas
+792674r3<adjektiv>konsumtionsorienterad:konsumtionsorienterad:konsumtionsorienterat:konsumtionsorienterade:konsumtionsorienterade:!:!:!:
+693075r4<substantiv>konsumtionssamhälle:konsumtionssamhälle:konsumtionssamhälles:konsumtionssamhället:konsumtionssamhällets:konsumtionssamhällen:konsumtionssamhällens:konsumtionssamhällena:konsumtionssamhällenas
+COMPOUND(652933, 612788): konsumtion + samhälle
+602463r3<substantiv>konsumtionsstruktur:konsumtionsstruktur:konsumtionsstrukturs:konsumtionsstrukturen:konsumtionsstrukturens:konsumtionsstrukturer:konsumtionsstrukturers:konsumtionsstrukturerna:konsumtionsstrukturernas
+594513r3<substantiv>konsumtionsvara:konsumtionsvara:konsumtionsvaras:konsumtionsvaran:konsumtionsvarans:konsumtionsvaror:konsumtionsvarors:konsumtionsvarorna:konsumtionsvarornas
+628773r3<substantiv>kont:kont:konts:konten:kontens:kontar:kontars:kontarna:kontarnas
+CUSTOM: n n y
+798195r3<adjektiv>kontagiös:kontagiös:kontagiöst:kontagiösa:kontagiösa::::
+549668r11<substantiv>kontakt:kontakt:kontakts:kontakten:kontaktens:kontakter:kontakters:kontakterna:kontakternas
+CUSTOM: y y kontakt
+547212r6<verb>kontakta:kontakta:kontaktade:kontaktat:kontaktar:kontakta:kontaktas:kontaktades:kontaktats:kontaktas:kontaktad:kontaktat:kontaktade:kontaktande:
+846227r3<adjektiv>kontaktbar:kontaktbar:kontaktbart:kontaktbara:kontaktbara::::
+729616r4<substantiv>kontaktbredd:kontaktbredd:kontaktbredds:kontaktbredden:kontaktbreddens:kontaktbredder:kontaktbredders:kontaktbredderna:kontaktbreddernas
+COMPOUND(549668, 548452): kontakt + bredd
+581388r3<adjektiv>kontaktelektromotorisk:kontaktelektromotorisk:kontaktelektromotoriskt:kontaktelektromotoriska:kontaktelektromotoriska::::
+549670r3<substantiv>kontaktfamilj:kontaktfamilj:kontaktfamiljs:kontaktfamiljen:kontaktfamiljens:kontaktfamiljer:kontaktfamiljers:kontaktfamiljerna:kontaktfamiljernas
+850914r3<substantiv>kontaktlim:kontaktlim:kontaktlims:kontaktlimmet:kontaktlimmets::::
+549678r3<substantiv>kontaktlins:kontaktlins:kontaktlins:kontaktlinsen:kontaktlinsens:kontaktlinser:kontaktlinsers:kontaktlinserna:kontaktlinsernas
+CUSTOM: y y kontaktlins
+729626r4<substantiv>kontaktlängd:kontaktlängd:kontaktlängds:kontaktlängden:kontaktlängdens:kontaktlängder:kontaktlängders:kontaktlängderna:kontaktlängdernas
+COMPOUND(549668, 549972): kontakt + längd
+564976r3<adjektiv>kontaktlös:kontaktlös:kontaktlöst:kontaktlösa:kontaktlösa::::
+760133r3<substantiv>kontaktlöshet:kontaktlöshet:kontaktlöshets:kontaktlösheten:kontaktlöshetens::::
+712775r4<substantiv>kontaktnät:kontaktnät:kontaktnäts:kontaktnätet:kontaktnätets:kontaktnät:kontaktnäts:kontaktnäten:kontaktnätens
+COMPOUND(549668, 555848): kontakt + nät
+549685r3<substantiv>kontaktperson:kontaktperson:kontaktpersons:kontaktpersonen:kontaktpersonens:kontaktpersoner:kontaktpersoners:kontaktpersonerna:kontaktpersonernas
+805826r3<substantiv>kontakttolk:kontakttolk:kontakttolks:kontakttolken:kontakttolkens:kontakttolkar:kontakttolkars:kontakttolkarna:kontakttolkarnas
+729321r4<substantiv>kontaktyta:kontaktyta:kontaktytas:kontaktytan:kontaktytans:kontaktytor:kontaktytors:kontaktytorna:kontaktytornas
+COMPOUND(549668, 595826): kontakt + yta
+707597r3<substantiv>kontamination:kontamination:kontaminations:kontaminationen:kontaminationens:kontaminationer:kontaminationers:kontaminationerna:kontaminationernas
+587067r4<verb>kontaminera:kontaminera:kontaminerade:kontaminerat:kontaminerar:kontaminera:kontamineras:kontaminerades:kontaminerats:kontamineras:kontaminerad:kontaminerat:kontaminerade:kontaminerande:
+915849r3<substantiv>kontaminering:kontaminering:kontaminerings:kontamineringen:kontamineringens::::
+652934r5<adjektiv>kontant:kontant:kontant:kontanta:kontanta:!:!:!:!::::::::
+CUSTOM: y y kontant
+597126r3<substantiv>kontantbetalning:kontantbetalning:kontantbetalnings:kontantbetalningen:kontantbetalningens:kontantbetalningar:kontantbetalningars:kontantbetalningarna:kontantbetalningarnas
+CUSTOM: y y kontantbetalnings
+744999r4<substantiv>kontantbud:kontantbud:kontantbuds:kontantbudet:kontantbudets:kontantbud:kontantbuds:kontantbuden:kontantbudens
+COMPOUND(652934, 552287): kontant + bud
+652935r3<substantiv>kontanter:::::kontanter:kontanters:kontanterna:kontanternas
+942243r4<substantiv>kontantkort:kontantkort:kontantkorts:kontantkortet:kontantkortets:kontantkort:kontantkorts:kontantkorten:kontantkortens
+COMPOUND(652934, 552580): kontant + kort
+CUSTOM: y y kontantkorts
+564979r3<adjektiv>kontantlös:kontantlös:kontantlöst:kontantlösa:kontantlösa::::
+652977r3<substantiv>kontemplation:kontemplation:kontemplations:kontemplationen:kontemplationens:kontemplationer:kontemplationers:kontemplationerna:kontemplationernas
+CUSTOM: y y kontemplations
+798198r4<adjektiv>kontemplativ:kontemplativ:kontemplativt:kontemplativa:kontemplativa::::kontemplative::::::::
+587071r3<verb>kontemplera:kontemplera:kontemplerade:kontemplerat:kontemplerar:kontemplera:::::::::
+652978r4<substantiv>kontenta:kontenta::kontentan:::::
+589928r3<verb>kontera:kontera:konterade:konterat:konterar:kontera:::::::::
+946522r3<substantiv>konteramiral:konteramiral:konteramirals:konteramiralen:konteramiralens:konteramiraler:konteramiralers:konteramiralerna:konteramiralernas
+771393r3<substantiv>kontering:kontering:konterings:konteringen:konteringens:konteringar:konteringars:konteringarna:konteringarnas
+549693r3<substantiv>kontext:kontext:kontexts:kontexten:kontextens:kontexter:kontexters:kontexterna:kontexternas
+888287r3<adjektiv>kontextuell:kontextuell:kontextuellt:kontextuella:kontextuella::::::::::::
+888290r3<substantiv>kontinens:kontinens:kontinens:kontinensen:kontinensens::::
+549695r5<substantiv>kontinent:kontinent:kontinents:kontinenten:kontinentens:kontinenter:kontinenters:kontinenterna:kontinenternas
+CUSTOM: y y kontinental
+888293r3<adjektiv>kontinent:kontinent:kontinent:kontinenta:kontinenta::::::::::::
+564664r3<adjektiv>kontinental:kontinental:kontinentalt:kontinentala:kontinentala::::
+581391r3<adjektiv>kontinentaleuropeisk:kontinentaleuropeisk:kontinentaleuropeiskt:kontinentaleuropeiska:kontinentaleuropeiska::::
+766123r4<substantiv>kontinentalplatta:kontinentalplatta:kontinentalplattas:kontinentalplattan:kontinentalplattans:kontinentalplattor:kontinentalplattors:kontinentalplattorna:kontinentalplattornas
+COMPOUND(549695, 632785): kontinent + platta
+888295r3<substantiv>kontinentförskjutning::::::::
+COMPOUND(549695, 618036): kontinent + förskjutning
+549696r4<substantiv>kontingent:kontingent:kontingents:kontingenten:kontingentens:kontingenter:kontingenters:kontingenterna:kontingenternas
+589932r3<verb>kontingentera:kontingentera:kontingenterade:kontingenterat:kontingenterar:kontingentera:::::::::
+566439r3<adjektiv>kontinuerlig:kontinuerlig:kontinuerligt:kontinuerliga:kontinuerliga::::
+652979r3<substantiv>kontinuitet:kontinuitet:kontinuitets:kontinuiteten:kontinuitetens::::
+784508r3<substantiv>kontinuum:kontinuum:kontinuums:kontinuumet:kontinuumets:kontinuum:kontinuums:kontinuumen:kontinuumens
+612621r10<substantiv>konto:konto:kontos:kontot:kontots:konton:kontons:kontona:kontonas
+CUSTOM: y y konto +konto
+670122r4<substantiv>kontoavgift:kontoavgift:kontoavgifts:kontoavgiften:kontoavgiftens:kontoavgifter:kontoavgifters:kontoavgifterna:kontoavgifternas
+COMPOUND(612621, 548299): konto + avgift
+597134r3<substantiv>kontoavslutning:kontoavslutning:kontoavslutnings:kontoavslutningen:kontoavslutningens:kontoavslutningar:kontoavslutningars:kontoavslutningarna:kontoavslutningarnas
+CUSTOM: y y kontoavslutnings
+890602r3<verb>kontoföra:kontoföra:kontoförde:kontofört:kontoför:kontoför:kontoföras:kontofördes:kontoförts:kontoförs:kontoförd:kontofört:kontoförda:kontoförande:
+CUSTOM: y n n
+681387r5<substantiv>kontohavare:kontohavare:kontohavares:kontohavaren:kontohavarens:kontohavare:kontohavares:kontohavarna:kontohavarnas
+609767r3<substantiv>kontoinnehavare:kontoinnehavare:kontoinnehavares:kontoinnehavaren:kontoinnehavarens:kontoinnehavare:kontoinnehavares:kontoinnehavarna:kontoinnehavarnas
+CUSTOM: y y kontoinnehavar
+652981r4<substantiv>kontokort:kontokort:kontokorts:kontokortet:kontokortets:kontokort:kontokorts:kontokorten:kontokortens
+COMPOUND(612621, 552580): konto + kort
+CUSTOM: y y kontokorts
+602472r3<substantiv>kontokurant:kontokurant:kontokurants:kontokuranten:kontokurantens:kontokuranter:kontokuranters:kontokuranterna:kontokuranternas
+573893r3<adjektiv>kontomässig:kontomässig:kontomässigt:kontomässiga:kontomässiga::::
+552569r17<substantiv>kontor:kontor:kontors:kontoret:kontorets:kontor:kontors:kontoren:kontorens
+CUSTOM: y y kontors +kontors
+589936r4<verb>kontorisera:kontorisera:kontoriserade:kontoriserat:kontoriserar:kontorisera:kontoriseras:kontoriserades:kontoriserats:kontoriseras:kontoriserad:kontoriserat:kontoriserade:kontoriserande:
+887106r3<substantiv>kontorisering:kontorisering:kontoriserings:kontoriseringen:kontoriseringens:kontoriseringar:kontoriseringars:kontoriseringarna:kontoriseringarnas
+549698r3<substantiv>kontorist:kontorist:kontorists:kontoristen:kontoristens:kontorister:kontoristers:kontoristerna:kontoristernas
+CUSTOM: y y kontorist
+732537r4<substantiv>kontorsbiträde:kontorsbiträde:kontorsbiträdes:kontorsbiträdet:kontorsbiträdets:kontorsbiträden:kontorsbiträdens:kontorsbiträdena:kontorsbiträdenas
+COMPOUND(552569, 612394): kontor + biträde
+609773r3<substantiv>kontorsföreståndare:kontorsföreståndare:kontorsföreståndares:kontorsföreståndaren:kontorsföreståndarens:kontorsföreståndare:kontorsföreståndares:kontorsföreståndarna:kontorsföreståndarnas
+CUSTOM: y y kontorsföreståndar
+732545r4<substantiv>kontorslandskap:kontorslandskap:kontorslandskaps:kontorslandskapet:kontorslandskapets:kontorslandskap:kontorslandskaps:kontorslandskapen:kontorslandskapens
+COMPOUND(552569, 555499): kontor + landskap
+602480r3<substantiv>kontorsmaskin:kontorsmaskin:kontorsmaskins:kontorsmaskinen:kontorsmaskinens:kontorsmaskiner:kontorsmaskiners:kontorsmaskinerna:kontorsmaskinernas
+610872r3<substantiv>kontorsmaskinindustri:kontorsmaskinindustri:kontorsmaskinindustris:kontorsmaskinindustrin:kontorsmaskinindustrins:kontorsmaskinindustrier:kontorsmaskinindustriers:kontorsmaskinindustrierna:kontorsmaskinindustriernas
+711533r4<substantiv>kontorsmaterial:kontorsmaterial:kontorsmaterials:kontorsmaterialet:kontorsmaterialets:kontorsmaterial:kontorsmaterials:kontorsmaterialen:kontorsmaterialens
+COMPOUND(552569, 552695): kontor + material
+814522r3<substantiv>kontorsprogram::::::::
+COMPOUND(552569, 555118): kontor + program
+678250r4<substantiv>kontorsstol:kontorsstol:kontorsstols:kontorsstolen:kontorsstolens:kontorsstolar:kontorsstolars:kontorsstolarna:kontorsstolarnas
+COMPOUND(552569, 551944): kontor + stol
+CUSTOM: y y kontorsstols
+732551r4<substantiv>kontorssystem:kontorssystem:kontorssystems:kontorssystemet:kontorssystemets:kontorssystem:kontorssystems:kontorssystemen:kontorssystemens
+COMPOUND(552569, 553021): kontor + system
+783500r4<substantiv>kontorsyta:kontorsyta:kontorsytas:kontorsytan:kontorsytans:kontorsytor:kontorsytors:kontorsytorna:kontorsytornas
+COMPOUND(552569, 595826): kontor + yta
+652982r5<verb>kontra:kontra:kontrade:kontrat:kontrar:kontra:kontras:kontrades:kontrats:kontras::::kontrande:
+706193r4<preposition>kontra:kontra
+888301r3<substantiv>kontraalt:kontraalt:kontraalts:kontraalten:kontraaltens:kontraaltar:kontraaltars:kontraaltarna:kontraaltarnas
+551576r3<substantiv>kontrabas:kontrabas:kontrabas:kontrabasen:kontrabasens:kontrabasar:kontrabasars:kontrabasarna:kontrabasarnas
+888309r3<substantiv>kontrabasist:kontrabasist:kontrabasists:kontrabasisten:kontrabasistens:kontrabasister:kontrabasisters:kontrabasisterna:kontrabasisternas
+581394r3<adjektiv>kontracyklisk:kontracyklisk:kontracykliskt:kontracykliska:kontracykliska::::
+888317r3<substantiv>kontradans:kontradans:kontradans:kontradansen:kontradansens:kontradanser:kontradansers:kontradanserna:kontradansernas
+652983r3<substantiv>kontradiktion:kontradiktion:kontradiktions:kontradiktionen:kontradiktionens:kontradiktioner:kontradiktioners:kontradiktionerna:kontradiktionernas
+CUSTOM: y y kontradiktions
+581397r3<adjektiv>kontradiktorisk:kontradiktorisk:kontradiktoriskt:kontradiktoriska:kontradiktoriska::::
+888324r3<substantiv>kontrafagott:kontrafagott:kontrafagotts:kontrafagotten:kontrafagottens:kontrafagotter:kontrafagotters:kontrafagotterna:kontrafagotternas
+798202r3<adjektiv>kontrafaktisk:kontrafaktisk:kontrafaktiskt:kontrafaktiska:kontrafaktiska::::
+549700r3<substantiv>kontrahent:kontrahent:kontrahents:kontrahenten:kontrahentens:kontrahenter:kontrahenters:kontrahenterna:kontrahenternas
+589940r4<verb>kontrahera:kontrahera:kontraherade:kontraherat:kontraherar:kontrahera:kontraheras:kontraherades:kontraherats:kontraheras:kontraherad:kontraherat:kontraherade:kontraherande:
+888337r3<substantiv>kontrahering:kontrahering:kontraherings:kontraheringen:kontraheringens:kontraheringar:kontraheringars:kontraheringarna:kontraheringarnas
+898388r3<substantiv>kontraheringsplikt:kontraheringsplikt:kontraheringsplikts:kontraheringsplikten:kontraheringspliktens::::
+888345r3<substantiv>kontraindikation:kontraindikation:kontraindikations:kontraindikationen:kontraindikationens:kontraindikationer:kontraindikationers:kontraindikationerna:kontraindikationernas
+552570r8<substantiv>kontrakt:kontrakt:kontrakts:kontraktet:kontraktets:kontrakt:kontrakts:kontrakten:kontraktens
+CUSTOM: y y kontrakts +kontrakts
+547213r5<verb>kontraktera:kontraktera:kontrakterade:kontrakterat:kontrakterar:kontraktera:kontrakteras:kontrakterades:kontrakterats:kontrakteras:kontrakterad:kontrakterat:kontrakterade:kontrakterande:
+888354r3<substantiv>kontraktering:kontraktering:kontrakterings:kontrakteringen:kontrakteringens:kontrakteringar:kontrakteringars:kontrakteringarna:kontrakteringarnas
+652984r3<substantiv>kontraktion:kontraktion:kontraktions:kontraktionen:kontraktionens:kontraktioner:kontraktioners:kontraktionerna:kontraktionernas
+CUSTOM: y y kontraktions
+566440r3<adjektiv>kontraktsenlig:kontraktsenlig:kontraktsenligt:kontraktsenliga:kontraktsenliga::::
+564982r3<adjektiv>kontraktslös:kontraktslös:kontraktslöst:kontraktslösa:kontraktslösa::::
+573896r3<adjektiv>kontraktsmässig:kontraktsmässig:kontraktsmässigt:kontraktsmässiga:kontraktsmässiga::::
+732597r4<substantiv>kontraktsvillkor:kontraktsvillkor:kontraktsvillkors:kontraktsvillkoret:kontraktsvillkorets:kontraktsvillkor:kontraktsvillkors:kontraktsvillkoren:kontraktsvillkorens
+COMPOUND(552570, 553124): kontrakt + villkor
+589944r3<verb>kontramandera:kontramandera:kontramanderade:kontramanderat:kontramanderar:kontramandera:::::::::
+961882r3<substantiv>kontraorder:kontraorder:kontraorders:kontraordern:kontraorderns:kontraorder:kontraorders:kontraorderna:kontraordernas
+589948r3<verb>kontraponera:kontraponera:kontraponerade:kontraponerat:kontraponerar:kontraponera:::::::::
+926423r4<substantiv>kontrapost:kontrapost:kontraposts:kontraposten:kontrapostens:!:!:!:!
+702044r3<adjektiv>kontraproduktiv:kontraproduktiv:kontraproduktivt:kontraproduktiva:kontraproduktiva::::
+954318r4<substantiv>kontraproposition:kontraproposition:kontrapropositions:kontrapropositionen:kontrapropositionens:kontrapropositioner:kontrapropositioners:kontrapropositionerna:kontrapropositionernas
+COMPOUND(706193, 661947): kontra + proposition
+946866r3<substantiv>kontrapunkt:kontrapunkt:kontrapunkts:kontrapunkten:kontrapunktens::::
+631693r4<substantiv>kontrapunktik:kontrapunktik:kontrapunktiks:kontrapunktiken:kontrapunktikens::::
+581400r3<adjektiv>kontrapunktisk:kontrapunktisk:kontrapunktiskt:kontrapunktiska:kontrapunktiska::::
+652985r3<substantiv>kontrarevolution:kontrarevolution:kontrarevolutions:kontrarevolutionen:kontrarevolutionens:kontrarevolutioner:kontrarevolutioners:kontrarevolutionerna:kontrarevolutionernas
+CUSTOM: y y kontrarevolutions
+652986r3<adjektiv>kontrarevolutionär:kontrarevolutionär:kontrarevolutionärt:kontrarevolutionära:kontrarevolutionära::::kontrarevolutionäre
+652990r3<substantiv>kontrarevolutionär:kontrarevolutionär:kontrarevolutionärs:kontrarevolutionären:kontrarevolutionärens:kontrarevolutionärer:kontrarevolutionärers:kontrarevolutionärerna:kontrarevolutionärernas
+589952r3<verb>kontrasignera:kontrasignera:kontrasignerade:kontrasignerat:kontrasignerar:kontrasignera:::::::::
+745006r3<substantiv>kontraspionage:kontraspionage:kontraspionages:kontraspionaget:kontraspionagets::::
+549702r4<substantiv>kontrast:kontrast:kontrasts:kontrasten:kontrastens:kontraster:kontrasters:kontrasterna:kontrasternas
+CUSTOM: y y kontrast
+547214r5<verb>kontrastera:kontrastera:kontrasterade:kontrasterat:kontrasterar:kontrastera:kontrasteras:kontrasterades:kontrasterats:kontrasteras:kontrasterad:kontrasterat:kontrasterade:kontrasterande:
+798206r3<adjektiv>kontrastiv:kontrastiv:kontrastivt:kontrastiva:kontrastiva::::
+564985r3<adjektiv>kontrastlös:kontrastlös:kontrastlöst:kontrastlösa:kontrastlösa::::
+640066r3<adjektiv>kontrastrik:kontrastrik:kontrastrikt:kontrastrika:kontrastrika::::
+708908r4<substantiv>kontrastverkan:kontrastverkan:kontrastverkans:kontrastverkan:kontrastverkans::::
+COMPOUND(549702, 698583): kontrast + verkan
+981837r3<substantiv>kontratenor:kontratenor:kontratenors:kontratenoren:kontratenorens:kontratenorer:kontratenorers:kontratenorerna:kontratenorernas
+959390r3<substantiv>kontraterrorism:kontraterrorism:kontraterrorisms:kontraterrorismen:kontraterrorismens::::
+587075r3<verb>kontribuera:kontribuera:kontribuerade:kontribuerat:kontribuerar:kontribuera:::::::::
+652991r4<substantiv>kontring:kontring:kontrings:kontringen:kontringens:kontringar:kontringars:kontringarna:kontringarnas
+CUSTOM: y y kontrings
+719277r4<substantiv>kontringsteknik:kontringsteknik:kontringstekniks:kontringstekniken:kontringsteknikens:kontringstekniker:kontringsteknikers:kontringsteknikerna:kontringsteknikernas
+COMPOUND(652991, 603854): kontring + teknik
+549704r31<substantiv>kontroll:kontroll:kontrolls:kontrollen:kontrollens:kontroller:kontrollers:kontrollerna:kontrollernas
+CUSTOM: y y kontroll +kontroll
+549705r3<substantiv>kontrollant:kontrollant:kontrollants:kontrollanten:kontrollantens:kontrollanter:kontrollanters:kontrollanterna:kontrollanternas
+669483r3<substantiv>kontrollavgift::::::::
+COMPOUND(549704, 548299): kontroll + avgift
+597142r4<substantiv>kontrollbesiktning:kontrollbesiktning:kontrollbesiktnings:kontrollbesiktningen:kontrollbesiktningens:kontrollbesiktningar:kontrollbesiktningars:kontrollbesiktningarna:kontrollbesiktningarnas
+COMPOUND(549704, 596471): kontroll + besiktning
+CUSTOM: y y kontrollbesiktnings
+547215r4<verb>kontrollera:kontrollera:kontrollerade:kontrollerat:kontrollerar:kontrollera:kontrolleras:kontrollerades:kontrollerats:kontrolleras:kontrollerad:kontrollerat:kontrollerade::
+693084r3<substantiv>kontrollerande:kontrollerande:kontrollerandes:kontrollerandet:kontrollerandets::::
+693086r3<adjektiv>kontrollerande:kontrollerande:kontrollerande:kontrollerande:kontrollerande:!:!:!:
+569334r3<adjektiv>kontrollerbar:kontrollerbar:kontrollerbart:kontrollerbara:kontrollerbara::::
+708910r3<substantiv>kontrollering:kontrollering:kontrollerings:kontrolleringen:kontrolleringens::::
+898618r4<substantiv>kontrollkod:kontrollkod:kontrollkods:kontrollkoden:kontrollkodens:kontrollkoder:kontrollkoders:kontrollkoderna:kontrollkodernas
+COMPOUND(549704, 549543): kontroll + kod
+951902r4<verb>kontrollköra:kontrollköra:kontrollkörde:kontrollkört:kontrollkör:kontrollkör:kontrollköras:kontrollkördes:kontrollkörts:kontrollkörs, kontrollköres:kontrollkörd:kontrollkört:kontrollkörda:kontrollkörande:
+COMPOUND(549704, 556899): kontroll + köra
+846232r4<verb>kontrollmäta:kontrollmäta:kontrollmätte:kontrollmätt:kontrollmäter:kontrollmät:kontrollmätas:kontrollmättes:kontrollmätts:kontrollmäts, kontrollmätes:kontrollmätt:kontrollmätt:kontrollmätta:kontrollmätande:
+COMPOUND(549704, 556868): kontroll + mäta
+549707r3<substantiv>kontrolluppgift:kontrolluppgift:kontrolluppgifts:kontrolluppgiften:kontrolluppgiftens:kontrolluppgifter:kontrolluppgifters:kontrolluppgifterna:kontrolluppgifternas
+850918r3<substantiv>kontrollur:kontrollur:kontrollurs:kontrolluret:kontrollurets:kontrollur:kontrollurs:kontrolluren:kontrollurens
+784490r4<substantiv>kontrollvolym:kontrollvolym:kontrollvolyms:kontrollvolymen:kontrollvolymens:kontrollvolymer:kontrollvolymers:kontrollvolymerna:kontrollvolymernas
+COMPOUND(549704, 550785): kontroll + volym
+846245r4<verb>kontrollväga:kontrollväga:kontrollvägde:kontrollvägt:kontrollväger:kontrollväg:kontrollvägas:kontrollvägdes:kontrollvägts:kontrollvägs:kontrollvägd:kontrollvägt:kontrollvägda:kontrollvägande:
+COMPOUND(549704, 555224): kontroll + väga
+712170r5<substantiv>kontrollyta:kontrollyta:kontrollytas:kontrollytan:kontrollytans:kontrollytor:kontrollytors:kontrollytorna:kontrollytornas
+COMPOUND(549704, 595826): kontroll + yta
+650942r3<verb>kontrolläsa:kontrolläsa:kontrolläste:kontrolläst:kontrolläser:kontrolläs:kontrolläsas:kontrollästes:kontrollästs:kontrolläses:kontrolläst:kontrolläst:kontrollästa::
+652992r3<substantiv>kontrolläsning:kontrolläsning:kontrolläsnings:kontrolläsningen:kontrolläsningens::::
+CUSTOM: y y kontrolläsnings
+549715r3<substantiv>kontrollör:kontrollör:kontrollörs:kontrollören:kontrollörens:kontrollörer:kontrollörers:kontrollörerna:kontrollörernas
+549716r3<substantiv>kontrovers:kontrovers:kontrovers:kontroversen:kontroversens:kontroverser:kontroversers:kontroverserna:kontroversernas
+652993r3<adjektiv>kontroversiell:kontroversiell:kontroversiellt:kontroversiella:kontroversiella::::kontroversielle
+549717r5<substantiv>kontur:kontur:konturs:konturen:konturens:konturer:konturers:konturerna:konturernas
+589956r3<verb>konturera:konturera:konturerade:konturerat:konturerar:konturera:::::::::
+981846r4<substantiv>konturlinje:konturlinje:konturlinjes:konturlinjen:konturlinjens:konturlinjer:konturlinjers:konturlinjerna:konturlinjernas
+COMPOUND(549717, 611937): kontur + linje
+564988r3<adjektiv>konturlös:konturlös:konturlöst:konturlösa:konturlösa::::
+798209r3<adjektiv>konturskarp:konturskarp:konturskarpt:konturskarpa:konturskarpa::::
+981854r4<substantiv>konturteckning:konturteckning:konturtecknings:konturteckningen:konturteckningens:konturteckningar:konturteckningars:konturteckningarna:konturteckningarnas
+COMPOUND(549717, 671990): kontur + teckning
+551583r13<substantiv>konung:konung:konungs:konungen:konungens:konungar:konungars:konungarna:konungarnas
+CUSTOM: y y konunga
+652994r4<substantiv>konungaborg:konungaborg:konungaborgs:konungaborgen:konungaborgens:konungaborgar:konungaborgars:konungaborgarna:konungaborgarnas
+COMPOUND(551583, 550929): konung + borg
+653002r4<substantiv>konungadotter:konungadotter:konungadotters:konungadottern:konungadotterns:konungadöttrar:konungadöttrars:konungadöttrarna:konungadöttrarnas
+COMPOUND(551583, 617523): konung + dotter
+653010r3<substantiv>konungadöme:konungadöme:konungadömes:konungadömet:konungadömets:konungadömen:konungadömens:konungadömena:konungadömenas
+769251r4<substantiv>konungaed:konungaed:konungaeds:konungaeden:konungaedens:konungaeder:konungaeders:konungaederna:konungaedernas
+COMPOUND(551583, 557662): konung + ed
+653016r4<substantiv>konungahus:konungahus:konungahus:konungahuset:konungahusets:konungahus:konungahus:konungahusen:konungahusens
+COMPOUND(551583, 552480): konung + hus
+653021r4<substantiv>konungapalats:konungapalats:konungapalats:konungapalatset:konungapalatsets:konungapalats:konungapalats:konungapalatsen:konungapalatsens
+COMPOUND(551583, 607790): konung + palats
+653022r4<substantiv>konungarike:konungarike:konungarikes:konungariket:konungarikets:konungariken:konungarikens:konungarikena:konungarikenas
+COMPOUND(551583, 619401): konung + rike
+653026r4<substantiv>konungason:konungason:konungasons:konungasonen:konungasonens:konungasöner:konungasöners:konungasönerna:konungasönernas
+COMPOUND(551583, 559285): konung + son
+805834r3<substantiv>konungatron:konungatron:konungatrons:konungatronen:konungatronens:konungatroner:konungatroners:konungatronerna:konungatronernas
+653033r4<substantiv>konungavälde:konungavälde:konungaväldes:konungaväldet:konungaväldets:konungavälden:konungaväldens:konungaväldena:konungaväldenas
+COMPOUND(551583, 620288): konung + välde
+891748r4<substantiv>konungaätt:konungaätt:konungaätts:konungaätten:konungaättens:konungaätter:konungaätters:konungaätterna:konungaätternas
+COMPOUND(551583, 550823): konung + ätt
+566443r3<adjektiv>konungslig:konungslig:konungsligt:konungsliga:konungsliga::::
+745010r3<substantiv>konvalescens:konvalescens:konvalescens:konvalescensen:konvalescensens::::
+549719r4<substantiv>konvalescent:konvalescent:konvalescents:konvalescenten:konvalescentens:konvalescenter:konvalescenters:konvalescenterna:konvalescenternas
+CUSTOM: y y konvalescent
+745013r3<substantiv>konvalescenthem::::::::
+COMPOUND(549719, 555169): konvalescent + hem
+981862r4<substantiv>konvektion:konvektion:konvektions:konvektionen:konvektionens::::
+CUSTOM: y n konvektions
+981866r4<substantiv>konvektionsström:konvektionsström:konvektionsströms:konvektionsströmmen:konvektionsströmmens:konvektionsströmmar:konvektionsströmmars:konvektionsströmmarna:konvektionsströmmarnas
+COMPOUND(981862, 619738): konvektion + ström
+798212r3<adjektiv>konvektiv:konvektiv:konvektivt:konvektiva:konvektiva::::
+570808r3<adjektiv>konvenabel:konvenabel:konvenabelt:konvenabla:konvenabla::::
+653039r3<substantiv>konvenans:konvenans:konvenans:konvenansen:konvenansens:!:!:!:!
+589960r3<verb>konvenera:konvenera:konvenerade:konvenerat:konvenerar:konvenera:::::::::
+552571r4<substantiv>konvent:konvent:konvents:konventet:konventets:konvent:konvents:konventen:konventens
+CUSTOM: y y konvents
+981874r3<substantiv>konventikel:konventikel:konventikels:konventikeln:konventikelns:konventiklar:konventiklars:konventiklarna:konventiklarnas
+653040r6<substantiv>konvention:konvention:konventions:konventionen:konventionens:konventioner:konventioners:konventionerna:konventionernas
+CUSTOM: y y konventions
+981882r3<substantiv>konventionalism:konventionalism:konventionalisms:konventionalismen:konventionalismens::::
+653041r3<adjektiv>konventionell:konventionell:konventionellt:konventionella:konventionella:konventionellare:konventionellast:konventionellaste:konventionelle
+915854r4<substantiv>konventsförslag:konventsförslag:konventsförslags:konventsförslaget:konventsförslagets:konventsförslag:konventsförslags:konventsförslagen:konventsförslagens
+COMPOUND(552571, 552414): konvent + förslag
+653043r4<substantiv>konvergens:konvergens:konvergens:konvergensen:konvergensens:!:!:!:!
+CUSTOM: y y konvergens
+653046r4<substantiv>konvergenskrav:konvergenskrav:konvergenskravs:konvergenskravet:konvergenskravets:konvergenskrav:konvergenskravs:konvergenskraven:konvergenskravens
+COMPOUND(653043, 552582): konvergens + krav
+653044r3<adjektiv>konvergent:konvergent:konvergent:konvergenta:konvergenta:!:!:!:!
+587079r4<verb>konvergera:konvergera:konvergerade:konvergerat:konvergerar:konvergera:!:!:!:!::::konvergerande:
+570811r3<adjektiv>konversabel:konversabel:konversabelt:konversabla:konversabla::::
+653045r4<substantiv>konversation:konversation:konversations:konversationen:konversationens:konversationer:konversationers:konversationerna:konversationernas
+CUSTOM: y y konversations
+682491r4<substantiv>konversationsövning:konversationsövning:konversationsövnings:konversationsövningen:konversationsövningens:konversationsövningar:konversationsövningars:konversationsövningarna:konversationsövningarnas
+COMPOUND(653045, 598019): konversation + övning
+CUSTOM: y y konversationsövnings
+682499r3<substantiv>konversatör:konversatör:konversatörs:konversatören:konversatörens:konversatörer:konversatörers:konversatörerna:konversatörernas
+547216r4<verb>konversera:konversera:konverserade:konverserat:konverserar:konversera::::::::konverserande:
+726111r3<substantiv>konversion:konversion:konversions:konversionen:konversionens:konversioner:konversioners:konversionerna:konversionernas
+653052r3<substantiv>konverter:konverter:konverters:konvertern:konverterns:konvertrar:konvertrars:konvertrarna:konvertrarnas
+547217r4<verb>konvertera:konvertera:konverterade:konverterat:konverterar:konvertera:konverteras:konverterades:konverterats:konverteras:konverterad:konverterat:konverterade::
+569335r3<adjektiv>konverterbar:konverterbar:konverterbart:konverterbara:konverterbara::::
+597150r4<substantiv>konvertering:konvertering:konverterings:konverteringen:konverteringens:konverteringar:konverteringars:konverteringarna:konverteringarnas
+CUSTOM: y y konverterings
+682507r4<substantiv>konverteringstid:konverteringstid:konverteringstids:konverteringstiden:konverteringstidens:konverteringstider:konverteringstiders:konverteringstiderna:konverteringstidernas
+COMPOUND(597150, 550665): konvertering + tid
+570814r3<adjektiv>konvertibel:konvertibel:konvertibelt:konvertibla:konvertibla::::
+745014r4<substantiv>konvertibel:konvertibel:konvertibels:konvertibeln:konvertibelns:konvertibler:konvertiblers:konvertiblerna:konvertiblernas
+CUSTOM: y y konvertibel
+915862r4<substantiv>konvertibellån:konvertibellån:konvertibellåns:konvertibellånet:konvertibellånets:konvertibellån:konvertibellåns:konvertibellånen:konvertibellånens
+COMPOUND(745014, 552679): konvertibel + lån
+915869r4<substantiv>konvertit:konvertit:konvertits:konvertiten:konvertitens:konvertiter:konvertiters:konvertiterna:konvertiternas
+DEFINITION 1: Person som bytt religion
+653054r3<adjektiv>konvex:konvex:konvext:konvexa:konvexa::::
+798215r3<adjektiv>konvexkonkav:konvexkonkav:konvexkonkavt:konvexkonkava:konvexkonkava::::
+549727r4<substantiv>konvoj:konvoj:konvojs:konvojen:konvojens:konvojer:konvojers:konvojerna:konvojernas
+589964r3<verb>konvojera:konvojera:konvojerade:konvojerat:konvojerar:konvojera:::::::::
+552572r3<substantiv>konvolut:konvolut:konvoluts:konvolutet:konvolutets:konvolut:konvoluts:konvoluten:konvolutens
+745022r3<substantiv>konvulsion:konvulsion:konvulsions:konvulsionen:konvulsionens:konvulsioner:konvulsioners:konvulsionerna:konvulsionernas
+581403r3<adjektiv>konvulsivisk:konvulsivisk:konvulsiviskt:konvulsiviska:konvulsiviska::::
+653055r3<substantiv>kooperation:kooperation:kooperations:kooperationen:kooperationens:!:!:!:!
+CUSTOM: y y kooperations
+653056r3<adjektiv>kooperativ:kooperativ:kooperativt:kooperativa:kooperativa:!:!:!:!
+745030r3<substantiv>kooperativ:kooperativ:kooperativs:kooperativet:kooperativets:kooperativ:kooperativs:kooperativen:kooperativens
+981886r3<substantiv>kooperatör:kooperatör:kooperatörs:kooperatören:kooperatörens:kooperatörer:kooperatörers:kooperatörerna:kooperatörernas
+589968r3<verb>kooperera:kooperera:koopererade:koopererat:koopererar:kooperera:::::::::
+549729r4<substantiv>koordinat:koordinat:koordinats:koordinaten:koordinatens:koordinater:koordinaters:koordinaterna:koordinaternas
+CUSTOM: y y koordinat
+653057r3<substantiv>koordination:koordination:koordinations:koordinationen:koordinationens:!:!:!:!
+CUSTOM: y y koordinations
+798218r3<adjektiv>koordinativ:koordinativ:koordinativt:koordinativa:koordinativa::::
+653058r3<substantiv>koordinator:koordinator:koordinators:koordinatorn:koordinatorns:koordinatorer:koordinatorers:koordinatorerna:koordinatorernas
+CUSTOM: y y koordinators
+712505r4<substantiv>koordinatsystem:koordinatsystem:koordinatsystems:koordinatsystemet:koordinatsystemets:koordinatsystem:koordinatsystems:koordinatsystemen:koordinatsystemens
+COMPOUND(549729, 553021): koordinat + system
+842272r3<substantiv>koordinatör:koordinatör:koordinatörs:koordinatören:koordinatörens:koordinatörer:koordinatörers:koordinatörerna:koordinatörernas
+547218r5<verb>koordinera:koordinera:koordinerade:koordinerat:koordinerar:koordinera:koordineras:koordinerades:koordinerats:koordineras:koordinerad:koordinerat:koordinerade:koordinerande:
+722601r4<substantiv>koordinering:koordinering:koordinerings:koordineringen:koordineringens:koordineringar:koordineringars:koordineringarna:koordineringarnas
+CUSTOM: y y koordinerings
+722600r4<substantiv>koordineringsarbete:koordineringsarbete:koordineringsarbetes:koordineringsarbetet:koordineringsarbetets:koordineringsarbeten:koordineringsarbetens:koordineringsarbetena:koordineringsarbetenas
+COMPOUND(722601, 612263): koordinering + arbete
+625549r3<substantiv>kopia:kopia:kopias:kopian:kopians:kopior:kopiors:kopiorna:kopiornas
+653066r3<substantiv>kopiator:kopiator:kopiators:kopiatorn:kopiatorns:kopiatorer:kopiatorers:kopiatorerna:kopiatorernas
+587080r5<verb>kopiera:kopiera:kopierade:kopierat:kopierar:kopiera:kopieras:kopierades:kopierats:kopieras:kopierad:kopierat:kopierade:kopierande:
+555237r6<substantiv>kopierande:kopierande:kopierandes:kopierandet:kopierandets::::
+981894r3<substantiv>kopierare:kopierare:kopierares:kopieraren:kopierarens:kopierare:kopierares:kopierarna:kopierarnas
+569338r3<adjektiv>kopierbar:kopierbar:kopierbart:kopierbara:kopierbara::::
+653069r8<substantiv>kopiering:kopiering:kopierings:kopieringen:kopieringens:kopieringar:kopieringars:kopieringarna:kopieringarnas
+CUSTOM: y y kopierings +kopierings
+653070r4<substantiv>kopieringsapparat:kopieringsapparat:kopieringsapparats:kopieringsapparaten:kopieringsapparatens:kopieringsapparater:kopieringsapparaters:kopieringsapparaterna:kopieringsapparaternas
+COMPOUND(653069, 548215): kopiering + apparat
+653072r4<substantiv>kopieringsmaskin:kopieringsmaskin:kopieringsmaskins:kopieringsmaskinen:kopieringsmaskinens:kopieringsmaskiner:kopieringsmaskiners:kopieringsmaskinerna:kopieringsmaskinernas
+COMPOUND(653069, 550005): kopiering + maskin
+792678r3<adjektiv>kopieringsskyddad:kopieringsskyddad:kopieringsskyddat:kopieringsskyddade:kopieringsskyddade:!:!:!:
+653074r3<substantiv>kopist:kopist:kopists:kopisten:kopistens:kopister:kopisters:kopisterna:kopisternas
+CUSTOM: y y kopist
+653080r3<adjektiv>kopiös:kopiös:kopiöst:kopiösa:kopiösa::::
+551584r6<substantiv>kopp:kopp:kopps:koppen:koppens:koppar:koppars:kopparna:kopparnas
+DEFINITION 1: Dryckeskärl
+653098r4<substantiv>koppa:koppa:koppas:koppan:koppans:koppor:koppors:kopporna:koppornas
+635350r10<substantiv>koppar:koppar:koppars:kopparen, kopparn:kopparens, kopparns::::
+CUSTOM: y y koppar
+573899r3<adjektiv>kopparaktig:kopparaktig:kopparaktigt:kopparaktiga:kopparaktiga::::
+682515r4<substantiv>kopparbeläggning:kopparbeläggning:kopparbeläggnings:kopparbeläggningen:kopparbeläggningens:kopparbeläggningar:kopparbeläggningars:kopparbeläggningarna:kopparbeläggningarnas
+COMPOUND(635350, 550874): koppar + beläggning
+CUSTOM: y y kopparbeläggnings
+554280r3<egennamn>Kopparberg:Kopparberg:Kopparbergs
+CUSTOM: y n Kopparbergs
+792682r3<adjektiv>kopparfärgad:kopparfärgad:kopparfärgat:kopparfärgade:kopparfärgade:!:!:!:
+801465r3<adjektiv>kopparförhydd:kopparförhydd:kopparförhytt:kopparförhydda:kopparförhydda::::
+573902r3<adjektiv>kopparhaltig:kopparhaltig:kopparhaltigt:kopparhaltiga:kopparhaltiga::::
+850924r3<substantiv>kopparkis:kopparkis:kopparkis:kopparkisen:kopparkisens:kopparkiser:kopparkisers:kopparkiserna:kopparkisernas
+801468r3<adjektiv>kopparklädd:kopparklädd:kopparklätt:kopparklädda:kopparklädda::::
+607504r3<substantiv>kopparkärl:kopparkärl:kopparkärls:kopparkärlet:kopparkärlets:kopparkärl:kopparkärls:kopparkärlen:kopparkärlens
+792685r3<adjektiv>kopparlegerad:kopparlegerad:kopparlegerat:kopparlegerade:kopparlegerade:!:!:!:
+682523r4<substantiv>kopparmantel:kopparmantel:kopparmantels:kopparmanteln:kopparmantelns:kopparmantlar:kopparmantlars:kopparmantlarna:kopparmantlarnas
+COMPOUND(635350, 618779): koppar + mantel
+653081r3<substantiv>kopparorm:kopparorm:kopparorms:kopparormen:kopparormens:kopparormar:kopparormars:kopparormarna:kopparormarnas
+944835r4<substantiv>kopparoxid:kopparoxid:kopparoxids:kopparoxiden:kopparoxidens:kopparoxider:kopparoxiders:kopparoxiderna:kopparoxidernas
+COMPOUND(635350, 628488): koppar + oxid
+801837r3<adjektiv>kopparröd:kopparröd:kopparrött:kopparröda:kopparröda::::
+884590r4<substantiv>kopparrör:kopparrör:kopparrörs:kopparröret:kopparrörets:kopparrör:kopparrörs:kopparrören:kopparrörens
+COMPOUND(635350, 552860): koppar + rör
+674631r4<substantiv>kopparslagare:kopparslagare:kopparslagares:kopparslagaren:kopparslagarens:kopparslagare:kopparslagares:kopparslagarna:kopparslagarnas
+COMPOUND(635350, 674632): koppar + slagare
+CUSTOM: y y kopparslagar
+611717r3<substantiv>kopparslageri:kopparslageri:kopparslageris:kopparslageriet:kopparslageriets:kopparslagerier:kopparslageriers:kopparslagerierna:kopparslageriernas
+566444r3<adjektiv>kopparslig:kopparslig:kopparsligt:kopparsliga:kopparsliga::::
+653083r3<substantiv>kopparstick:kopparstick:kopparsticks:kopparsticket:kopparstickets:kopparstick:kopparsticks:kopparsticken:kopparstickens
+948275r4<substantiv>koppartak:koppartak:koppartaks:koppartaket:koppartakets:koppartak:koppartaks:koppartaken:koppartakens
+COMPOUND(635350, 553027): koppar + tak
+653087r3<substantiv>koppartråd:koppartråd:koppartråds:koppartråden:koppartrådens::::
+850931r3<substantiv>kopparärg:kopparärg:kopparärgs:kopparärgen:kopparärgens::::
+653089r3<substantiv>kopparödla:kopparödla:kopparödlas:kopparödlan:kopparödlans:kopparödlor:kopparödlors:kopparödlorna:kopparödlornas
+653097r5<substantiv>koppel:koppel:koppels:kopplet:kopplets:koppel:koppels:kopplen:kopplens
+940454r4<substantiv>koppeltvång:koppeltvång:koppeltvångs:koppeltvånget:koppeltvångets::::
+COMPOUND(653097, 619828): koppel + tvång
+961888r4<substantiv>koppglas:koppglas:koppglas:koppglaset:koppglasets:koppglas:koppglas:koppglasen:koppglasens
+COMPOUND(653098, 552440): koppa + glas
+CUSTOM: y n
+547219r9<verb>koppla:koppla:kopplade:kopplat:kopplar:koppla:kopplas:kopplades:kopplats:kopplas:kopplad:kopplat:kopplade:kopplande:
+615341r3<substantiv>kopplare:kopplare:kopplares:kopplaren:kopplarens:kopplare:kopplares:kopplarna:kopplarnas
+745036r4<substantiv>koppleri:koppleri:koppleris:koppleriet:koppleriets:kopplerier:koppleriers:kopplerierna:koppleriernas
+CUSTOM: y y koppleri
+878082r4<substantiv>kopplerilag:kopplerilag:kopplerilags:kopplerilagen:kopplerilagens:kopplerilagar:kopplerilagars:kopplerilagarna:kopplerilagarnas
+COMPOUND(745036, 551690): koppleri + lag
+633580r9<substantiv>koppling:koppling:kopplings:kopplingen:kopplingens:kopplingar:kopplingars:kopplingarna:kopplingarnas
+CUSTOM: y y kopplings +kopplings
+597151r3<substantiv>kopplingsanordning:kopplingsanordning:kopplingsanordnings:kopplingsanordningen:kopplingsanordningens:kopplingsanordningar:kopplingsanordningars:kopplingsanordningarna:kopplingsanordningarnas
+CUSTOM: y n
+602488r3<substantiv>kopplingspedal:kopplingspedal:kopplingspedals:kopplingspedalen:kopplingspedalens:kopplingspedaler:kopplingspedalers:kopplingspedalerna:kopplingspedalernas
+598456r3<substantiv>kopplingsplint:kopplingsplint:kopplingsplints:kopplingsplinten:kopplingsplintens:kopplingsplintar:kopplingsplintars:kopplingsplintarna:kopplingsplintarnas
+899232r4<substantiv>kopplingston:kopplingston:kopplingstons:kopplingstonen:kopplingstonens:kopplingstoner:kopplingstoners:kopplingstonerna:kopplingstonernas
+COMPOUND(633580, 603900): koppling + ton
+792688r3<adjektiv>koppsmittad:koppsmittad:koppsmittat:koppsmittade:koppsmittade:!:!:!:
+573905r3<adjektiv>koppärrig:koppärrig:koppärrigt:koppärriga:koppärriga::::
+623107r4<substantiv>koprofag:koprofag:koprofags:koprofagen:koprofagens:koprofager:koprofagers:koprofagerna:koprofagernas
+923395r3<substantiv>kopt:kopt:kopts:kopten:koptens:kopter:kopters:kopterna:kopternas
+CUSTOM: y n
+581406r3<adjektiv>koptisk:koptisk:koptiskt:koptiska:koptiska::::
+735231r3<substantiv>kopulation:kopulation:kopulations:kopulationen:kopulationens:kopulationer:kopulationers:kopulationerna:kopulationernas
+788673r3<adjektiv>kopulativ:kopulativ:kopulativt:kopulativa:kopulativa::::
+587081r4<verb>kopulera:kopulera:kopulerade:kopulerat:kopulerar:kopulera:::::!:!:!:kopulerande:
+653129r3<substantiv>kor:kor:kors:koret:korets:kor:kors:koren:korens
+547220r5<verb>kora:kora:korade:korat:korar:kora:koras:korades:korats:koras:korad:korat:korade::
+653102r6<substantiv>koral:koral:korals:koralen:koralens:koraler:koralers:koralerna:koralernas
+981901r4<substantiv>koralbok:koralbok:koralboks:koralboken:koralbokens:koralböcker:koralböckers:koralböckerna:koralböckernas
+COMPOUND(653102, 555346): koral + bok
+981909r4<substantiv>koralförspel:koralförspel:koralförspels:koralförspelet:koralförspelets:koralförspel:koralförspels:koralförspelen:koralförspelens
+COMPOUND(653102, 805217): koral + förspel
+653104r8<substantiv>korall:korall:koralls:korallen:korallens:koraller:korallers:korallerna:korallernas
+CUSTOM: y y korall
+792691r3<adjektiv>korallfärgad:korallfärgad:korallfärgat:korallfärgade:korallfärgade:!:!:!:
+653132r6<substantiv>korallrev:korallrev:korallrevs:korallrevet:korallrevets:korallrev:korallrevs:korallreven:korallrevens
+COMPOUND(653104, 653133): korall + rev
+942508r4<substantiv>korallrot:korallrot:korallrots:korallroten:korallrotens:korallrötter:korallrötters:korallrötterna:korallrötternas
+COMPOUND(653104, 561217): korall + rot
+801840r3<adjektiv>korallröd:korallröd:korallrött:korallröda:korallröda::::
+761112r4<substantiv>korallö:korallö:korallös:korallön:korallöns:korallöar:korallöars:korallöarna:korallöarnas
+COMPOUND(653104, 556663): korall + ö
+981915r4<substantiv>koralmelodi:koralmelodi:koralmelodis:koralmelodin:koralmelodins:koralmelodier:koralmelodiers:koralmelodierna:koralmelodiernas
+COMPOUND(653102, 621218): koral + melodi
+904654r4<substantiv>koran:koran:korans:koranen:koranens:!:!:!:!
+CUSTOM: y n koran
+663633r6<substantiv>korandans:korandans:korandans:korandansen:korandansens:korandanser:korandansers:korandanserna:korandansernas
+COMPOUND(904654, 548569): koran + dans
+693088r3<egennamn>Koranen:Koranen:Koranens
+677324r4<substantiv>kord:kord:kords:korden:kordens::::
+CUSTOM: y n
+653106r3<substantiv>korda:korda:kordas:kordan:kordans:kordor:kordors:kordorna:kordornas
+CUSTOM: y n
+589972r3<verb>kordera:kordera:korderade:korderat:korderar:kordera:::::::::
+CUSTOM: y n n
+653111r3<adjektiv>kordial:kordial:kordialt:kordiala:kordiala::::
+784343r3<substantiv>kordong:kordong:kordongs:kordongen:kordongens:kordonger:kordongers:kordongerna:kordongernas
+589976r3<verb>kordongera:kordongera:kordongerade:kordongerat:kordongerar:kordongera:::::::::
+554059r3<egennamn>Korea:Korea:Koreas
+CUSTOM: y n Korea
+721172r3<egennamn>Koreakriget:Koreakriget:Koreakrigets
+CUSTOM: n n 
+5

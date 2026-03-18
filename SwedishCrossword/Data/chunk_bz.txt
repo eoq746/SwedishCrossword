@@ -1,0 +1,610 @@
+otalistisk:fyrtiotalistiskt:fyrtiotalistiska:fyrtiotalistiska::::
+705487r4<substantiv>fyrtiotalsstil:fyrtiotalsstil:fyrtiotalsstils:fyrtiotalsstilen:fyrtiotalsstilens:!:!:!:!
+COMPOUND(666021, 551938): fyrtiotal + stil
+769115r3<substantiv>fyrtiotimmarsvecka:fyrtiotimmarsvecka:fyrtiotimmarsveckas:fyrtiotimmarsveckan:fyrtiotimmarsveckans:fyrtiotimmarsveckor:fyrtiotimmarsveckors:fyrtiotimmarsveckorna:fyrtiotimmarsveckornas
+690399r3<räkneord>fyrtiotre:fyrtiotre
+690400r3<räkneord>fyrtiotredje:fyrtiotredje
+742229r3<räkneord>fyrtiotusen:fyrtiotusen
+690401r3<räkneord>fyrtiotvå:fyrtiotvå
+854333r5<substantiv>fyrtiowattslampa:fyrtiowattslampa:fyrtiowattslampas:fyrtiowattslampan:fyrtiowattslampans:fyrtiowattslampor:fyrtiowattslampors:fyrtiowattslamporna:fyrtiowattslampornas
+572689r4<adjektiv>fyrtioårig:fyrtioårig:fyrtioårigt:fyrtioåriga:fyrtioåriga:!:!:!:fyrtioårige
+654478r3<substantiv>fyrtioåring:fyrtioåring:fyrtioårings:fyrtioåringen:fyrtioåringens:fyrtioåringar:fyrtioåringars:fyrtioåringarna:fyrtioåringarnas
+CUSTOM: y y fyrtioårings
+654609r3<substantiv>fyrtioårsdag:fyrtioårsdag:fyrtioårsdags:fyrtioårsdagen:fyrtioårsdagens:fyrtioårsdagar:fyrtioårsdagars:fyrtioårsdagarna:fyrtioårsdagarnas
+697375r4<substantiv>fyrtioårsålder:::fyrtioårsåldern:fyrtioårsålderns::::
+690402r3<räkneord>fyrtioåtta:fyrtioåtta
+690403r3<räkneord>fyrtioåttonde:fyrtioåttonde
+928756r4<substantiv>fyrtorn:fyrtorn:fyrtorns:fyrtornet:fyrtornets:fyrtorn:fyrtorns:fyrtornen:fyrtornens
+COMPOUND(551200, 553055): fyr + torn
+941975r3<substantiv>fyrvaktare:fyrvaktare:fyrvaktares:fyrvaktaren:fyrvaktarens:fyrvaktare:fyrvaktares:fyrvaktarna:fyrvaktarnas
+CUSTOM: y n fyrvaktar
+657329r4<substantiv>fyrverkeri:fyrverkeri:fyrverkeris:fyrverkeriet:fyrverkeriets:fyrverkerier:fyrverkeriers:fyrverkerierna:fyrverkeriernas
+CUSTOM: y y fyrverkeri
+742237r4<substantiv>fyrverkeripjäs:fyrverkeripjäs:fyrverkeripjäs:fyrverkeripjäsen:fyrverkeripjäsens:fyrverkeripjäser:fyrverkeripjäsers:fyrverkeripjäserna:fyrverkeripjäsernas
+COMPOUND(657329, 550204): fyrverkeri + pjäs
+791046r3<adjektiv>fyrvingad:fyrvingad:fyrvingat:fyrvingade:fyrvingade:!:!:!:
+978469r3<substantiv>fyrvåningshus:fyrvåningshus:fyrvåningshus:fyrvåningshuset:fyrvåningshusets:fyrvåningshus:fyrvåningshus:fyrvåningshusen:fyrvåningshusens
+572692r3<adjektiv>fyrväldig:fyrväldig:fyrväldigt:fyrväldiga:fyrväldiga::::
+838820r5<substantiv>fyrväppling:fyrväppling:fyrväpplings:fyrväpplingen:fyrväpplingens:fyrväpplingar:fyrväpplingars:fyrväpplingarna:fyrväpplingarnas
+DEFINITION 1: fyrklöver
+COMPOUND(555175, 861271): fyra + väppling
+799346r3<adjektiv>fyrvärd:fyrvärd:fyrvärt:fyrvärda:fyrvärda::::
+941981r4<substantiv>fyrväsen:fyrväsen:fyrväsens:!:!:fyrväsen:fyrväsens:!:!
+COMPOUND(551200, 620325): fyr + väsen
+941983r4<substantiv>fyrväsende:fyrväsende:fyrväsendes:fyrväsendet:fyrväsendets:fyrväsenden:fyrväsendens:fyrväsendena:fyrväsendenas
+COMPOUND(551200, 620327): fyr + väsende
+766890r3<adjektiv>fyrväxlad:fyrväxlad:fyrväxlat:fyrväxlade:fyrväxlade:!:!:!:
+548995r9<substantiv>fysik:fysik:fysiks:fysiken:fysikens::::
+CUSTOM: y y fysik
+580206r3<adjektiv>fysikalisk:fysikalisk:fysikaliskt:fysikaliska:fysikaliska::::
+580207r3<adjektiv>fysikalisk-geografisk:fysikalisk-geografisk:fysikalisk-geografiskt:fysikalisk-geografiska:fysikalisk-geografiska::::
+580210r3<adjektiv>fysikalisk-kemisk:fysikalisk-kemisk:fysikalisk-kemiskt:fysikalisk-kemiska:fysikalisk-kemiska::::
+580213r3<adjektiv>fysikalisk-mekanisk:fysikalisk-mekanisk:fysikalisk-mekaniskt:fysikalisk-mekaniska:fysikalisk-mekaniska::::
+873388r4<substantiv>fysikdoktorand:fysikdoktorand:fysikdoktorands:fysikdoktoranden:fysikdoktorandens:fysikdoktorander:fysikdoktoranders:fysikdoktoranderna:fysikdoktorandernas
+COMPOUND(548995, 548693): fysik + doktorand
+616842r4<substantiv>fysiker:fysiker:fysikers:fysikern:fysikerns:fysiker:fysikers:fysikerna:fysikernas
+599306r3<substantiv>fysiksal:fysiksal:fysiksals:fysiksalen:fysiksalens:fysiksalar:fysiksalars:fysiksalarna:fysiksalarnas
+589399r4<verb>fysiljera:fysiljera:fysiljerade:fysiljerat:fysiljerar:fysiljera:fysiljeras:fysiljerades:fysiljerats:fysiljeras:fysiljerad:fysiljerat:fysiljerade:fysiljerande:
+923847r16<substantiv>fysiograf:fysiograf:fysiografs:fysiografen:fysiografens:fysiografer:fysiografers:fysiograferna:fysiografernas
+923930r14<substantiv>fysiografi:fysiografi:fysiografis:fysiografin:fysiografins::::
+580216r3<adjektiv>fysiografisk:fysiografisk:fysiografiskt:fysiografiska:fysiografiska::::
+838833r3<substantiv>fysiokrat:fysiokrat:fysiokrats:fysiokraten:fysiokratens:fysiokrater:fysiokraters:fysiokraterna:fysiokraternas
+923969r14<substantiv>fysiokrati:fysiokrati:fysiokratis:fysiokratin:fysiokratins::::
+580219r3<adjektiv>fysiokratisk:fysiokratisk:fysiokratiskt:fysiokratiska:fysiokratiska::::
+838841r3<substantiv>fysiokratism:fysiokratism:fysiokratisms:fysiokratismen:fysiokratismens::::
+548997r3<substantiv>fysiolog:fysiolog:fysiologs:fysiologen:fysiologens:fysiologer:fysiologers:fysiologerna:fysiologernas
+657330r5<substantiv>fysiologi:fysiologi:fysiologis:fysiologin, fysiologien:fysiologins, fysiologiens:!:!:!:!
+580222r3<adjektiv>fysiologisk:fysiologisk:fysiologiskt:fysiologiska:fysiologiska::::
+657334r3<substantiv>fysionomi:fysionomi:fysionomis:fysionomin:fysionomins:fysionomier:fysionomiers:fysionomierna:fysionomiernas
+940767r3<substantiv>fysioterapeut:fysioterapeut:fysioterapeuts:fysioterapeuten:fysioterapeutens:fysioterapeuter:fysioterapeuters:fysioterapeuterna:fysioterapeuternas
+580223r3<adjektiv>fysioterapeutisk:fysioterapeutisk:fysioterapeutiskt:fysioterapeutiska:fysioterapeutiska::::
+940775r3<substantiv>fysioterapi:fysioterapi:fysioterapis:fysioterapin:fysioterapins::::
+580226r4<adjektiv>fysisk:fysisk:fysiskt:fysiska:fysiska::::fysiske
+946108r3<substantiv>fysträning:fysträning:fystränings:fysträningen:fysträningens::::
+838846r3<substantiv>fytotron:fytotron:fytotrons:fytotronen:fytotronens:fytotroner:fytotroners:fytotronerna:fytotronernas
+555234r5<verb>få:få:fick:fått:får:få:fås:ficks:fåtts:fås:::::finge
+559265r5<adjektiv>få:!:!:!:få:färre:färst:!:!::::::::
+CUSTOM: y n !färst
+572695r3<adjektiv>fåbladig:fåbladig:fåbladigt:fåbladiga:fåbladiga::::
+797728r3<adjektiv>fåblommig:fåblommig:fåblommigt:fåblommiga:fåblommiga::::
+923998r5<substantiv>fådagarstidning:fådagarstidning:fådagarstidnings:fådagarstidningen:fådagarstidningens:fådagarstidningar:fådagarstidningars:fådagarstidningarna:fådagarstidningarnas
+563180r4<adjektiv>fåfäng:fåfäng:fåfängt:fåfänga:fåfänga:fåfängare:fåfängast:fåfängaste:fåfänge
+623145r4<substantiv>fåfänga:fåfänga:fåfängas:fåfängan:fåfängans:!:!:!:!
+BASEWORDS: fåfänge
+565964r3<adjektiv>fåfänglig:fåfänglig:fåfängligt:fåfängliga:fåfängliga::::
+657336r4<substantiv>fåfänglighet:fåfänglighet:fåfänglighets:fåfängligheten:fåfänglighetens:fåfängligheter:fåfängligheters:fåfängligheterna:fåfängligheternas
+CUSTOM: y y fåfänglighets
+838859r3<substantiv>fåfängligheter:fåfängligheter:fåfängligheters:fåfängligheteren:fåfängligheterens::::
+555308r15<substantiv>fågel:fågel:fågels:fågeln:fågelns:fåglar:fåglars:fåglarna:fåglarnas
+CUSTOM: y y fågel +fågels
+742244r4<substantiv>fågelart:fågelart:fågelarts:fågelarten:fågelartens:fågelarter:fågelarters:fågelarterna:fågelarternas
+COMPOUND(555308, 548244): fågel + art
+612477r7<substantiv>fågelbo:fågelbo:fågelbos:fågelboet:fågelboets:fågelbon:fågelbons:fågelbona:fågelbonas
+849825r3<substantiv>fågelbur:fågelbur:fågelburs:fågelburen:fågelburens:fågelburar:fågelburars:fågelburarna:fågelburarnas
+681723r19<substantiv>fågeldans:fågeldans:fågeldans:fågeldansen:fågeldansens:fågeldanser:fågeldansers:fågeldanserna:fågeldansernas
+COMPOUND(555308, 548569): fågel + dans
+914250r4<substantiv>fågeldöd:fågeldöd:fågeldöds:fågeldöden:fågeldödens::::
+COMPOUND(555308, 617530): fågel + död
+563786r3<adjektiv>fågelfri:fågelfri:fågelfritt:fågelfria:fågelfria::::
+849833r3<substantiv>fågelfrö:fågelfrö:fågelfrös:fågelfröet:fågelfröets:fågelfrön:fågelfröns:fågelfröna:fågelfrönas
+924006r14<substantiv>fågelfängare:fågelfängare:fågelfängares:fågelfängaren:fågelfängarens:fågelfängare:fågelfängares:fågelfängarna:fågelfängarnas
+598242r3<substantiv>fågelholk:fågelholk:fågelholks:fågelholken:fågelholkens:fågelholkar:fågelholkars:fågelholkarna:fågelholkarnas
+826424r3<adjektiv>fågellik:fågellik:fågellikt:fågellika:fågellika::::
+657337r3<substantiv>fågelperspektiv:fågelperspektiv:fågelperspektivs:fågelperspektivet:fågelperspektivets:!:!:!:!
+849841r3<substantiv>fågelpip:fågelpip:fågelpips:fågelpipet:fågelpipets:fågelpip:fågelpips:fågelpipen:fågelpipens
+849847r3<substantiv>fågelrop:fågelrop:fågelrops:fågelropet:fågelropets:fågelrop:fågelrops:fågelropen:fågelropens
+766893r3<substantiv>fågelskrämma:fågelskrämma:fågelskrämmas:fågelskrämman:fågelskrämmans:fågelskrämmor:fågelskrämmors:fågelskrämmorna:fågelskrämmornas
+763872r3<substantiv>fågelskådare:fågelskådare:fågelskådares:fågelskådaren:fågelskådarens:fågelskådare:fågelskådares:fågelskådarna:fågelskådarnas
+838864r3<substantiv>fågelskådning:fågelskådning:fågelskådnings:fågelskådningen:fågelskådningens::::
+904394r4<substantiv>fågelspindel:fågelspindel:fågelspindels:fågelspindeln:fågelspindelns:fågelspindlar:fågelspindlars:fågelspindlarna:fågelspindlarnas
+COMPOUND(555308, 556394): fågel + spindel
+891706r4<substantiv>fågelsträck:fågelsträck:fågelsträcks:fågelsträcket:fågelsträckets:fågelsträck:fågelsträcks:fågelsträcken:fågelsträckens
+COMPOUND(555308, 633783): fågel + sträck
+690404r3<substantiv>fågelsång:fågelsång:fågelsångs:fågelsången:fågelsångens::::
+599820r3<substantiv>fågelunge:fågelunge:fågelunges:fågelungen:fågelungens:fågelungar:fågelungars:fågelungarna:fågelungarnas
+924097r7<substantiv>fåglalåt:fåglalåt:fåglalåts:fåglalåten:fåglalåtens::::
+923731r6<substantiv>fåk:fåk:fåks:fåken:fåkens:!:!:!:!
+DEFINITION 1: kraftig snöstorm
+CUSTOM: n n y
+572698r4<adjektiv>fåkunnig:fåkunnig:fåkunnigt:fåkunniga:fåkunniga::::fåkunnige
+690406r3<substantiv>fåkunnighet:fåkunnighet:fåkunnighets:fåkunnigheten:fåkunnighetens::::
+CUSTOM: y y fåkunnighets
+708404r3<substantiv>fåle:fåle:fåles:fålen:fålens:fålar:fålars:fålarna:fålarnas
+CUSTOM: y n
+551202r6<substantiv>fåll:fåll:fålls:fållen:fållens:fållar:fållars:fållarna:fållarnas
+CUSTOM: y n
+657339r3<substantiv>fålla:fålla:fållas:fållan:fållans:fållor:fållors:fållorna:fållornas
+708405r3<substantiv>fållbänk:fållbänk:fållbänks:fållbänken:fållbänkens:fållbänkar:fållbänkars:fållbänkarna:fållbänkarnas
+924174r14<substantiv>fållning:fållning:fållnings:fållningen:fållningens::::
+728479r3<substantiv>fåmansbolag:fåmansbolag:fåmansbolags:fåmansbolaget:fåmansbolagets:fåmansbolag:fåmansbolags:fåmansbolagen:fåmansbolagens
+CUSTOM: y y fåmansbolags
+742252r3<substantiv>fåmansföretag:fåmansföretag:fåmansföretags:fåmansföretaget:fåmansföretagets:fåmansföretag:fåmansföretags:fåmansföretagen:fåmansföretagens
+CUSTOM: y y fåmansföretags
+914255r3<substantiv>fåmansföretagare:fåmansföretagare:fåmansföretagares:fåmansföretagaren:fåmansföretagarens:fåmansföretagare:fåmansföretagares:fåmansföretagarna:fåmansföretagarnas
+899594r3<adjektiv>fåmansägd:fåmansägd:fåmansägt:fåmansägda:fåmansägda::::::::::::
+799349r3<adjektiv>fåmäld:fåmäld:fåmält:fåmälda:fåmälda::::
+558890r4<substantiv>fån:fån:fåns:fånet:fånets:fånar:fånars:fånarna:fånarnas
+628042r8<verb>fåna:fåna:fånade:fånat:fånar:fåna::::::::fånande:
+558891r4<substantiv>fåne:fåne:fånes:fånen:fånens:fånar:fånars:fånarna:fånarnas
+690408r3<substantiv>fåneri:fåneri:fåneris:fåneriet:fåneriets:fånerier:fåneriers:fånerierna:fåneriernas
+558892r3<substantiv>fång:fång:fångs:fånget:fångets::::
+546619r7<verb>fånga:fånga:fångade:fångat:fångar:fånga:fångas:fångades:fångats:fångas:fångad:fångat:fångade:fångande:
+615233r3<substantiv>fångare:fångare:fångares:fångaren:fångarens:fångare:fångares:fångarna:fångarnas
+CUSTOM: n y fångar +fångar
+849853r3<substantiv>fångarm:fångarm:fångarms:fångarmen:fångarmens:fångarmar:fångarmars:fångarmarna:fångarmarnas
+924252r6<substantiv>fångcell:fångcell:fångcells:fångcellen:fångcellens:fångceller:fångcellers:fångcellerna:fångcellernas
+COMPOUND(617760, 548515): fånge + cell
+924260r14<substantiv>fångdamm:fångdamm:fångdamms:fångdammen:fångdammens:fångdammar:fångdammars:fångdammarna:fångdammarnas
+708413r3<substantiv>fångdräkt:fångdräkt:fångdräkts:fångdräkten:fångdräktens:fångdräkter:fångdräkters:fångdräkterna:fångdräkternas
+617760r11<substantiv>fånge:fånge:fånges:fången:fångens:fångar:fångars:fångarna:fångarnas
+CUSTOM: y y
+617761r3<adjektiv>fången:fången:fånget:fångna:fångna::::fångne
+657341r3<substantiv>fångenskap:fångenskap:fångenskaps:fångenskapen:fångenskapens::::
+CUSTOM: y y fångenskaps
+838870r3<substantiv>fångeshandling:fångeshandling:fångeshandlings:fångeshandlingen:fångeshandlingens:fångeshandlingar:fångeshandlingars:fångeshandlingarna:fångeshandlingarnas
+838878r3<substantiv>fångesman:fångesman:fångesmans:fångesmannen:fångesmannens:fångesmän:fångesmäns:fångesmännen:fångesmännens
+914279r3<substantiv>fånggröda:fånggröda:fånggrödas:fånggrödan:fånggrödans:fånggrödor:fånggrödors:fånggrödorna:fånggrödornas
+924345r10<substantiv>fångkläder:!:!:!:!:fångkläder:fångkläders:fångkläderna:fångklädernas
+COMPOUND(617760, 604465): fånge + kläder
+924463r15<substantiv>fångkoloni:fångkoloni:fångkolonis:fångkolonin:fångkolonins:fångkolonier:fångkoloniers:fångkolonierna:fångkoloniernas
+COMPOUND(617760, 610844): fånge + koloni
+838886r3<substantiv>fånglina:fånglina:fånglinas:fånglinan:fånglinans:fånglinor:fånglinors:fånglinorna:fånglinornas
+924705r14<substantiv>fånglista:fånglista:fånglistas:fånglistan:fånglistans:fånglistor:fånglistors:fånglistorna:fånglistornas
+708421r3<substantiv>fångläger:fångläger:fånglägers:fånglägret:fånglägrets:fångläger:fånglägers:fånglägren:fånglägrens
+924644r6<substantiv>fångrem:fångrem:fångrems:fångremmen:fångremmens:fångremmar:fångremmars:fångremmarna:fångremmarnas
+COMPOUND(546619, 621743): fånga + rem
+548999r10<substantiv>fångst:fångst:fångsts:fångsten:fångstens:fångster:fångsters:fångsterna:fångsternas
+CUSTOM: y y fångst
+676720r4<substantiv>fångstarm:fångstarm:fångstarms:fångstarmen:fångstarmens:fångstarmar:fångstarmars:fångstarmarna:fångstarmarnas
+COMPOUND(548999, 550842): fångst + arm
+708427r4<substantiv>fångstkvot:fångstkvot:fångstkvots:fångstkvoten:fångstkvotens:fångstkvoter:fångstkvoters:fångstkvoterna:fångstkvoternas
+COMPOUND(548999, 549848): fångst + kvot
+708435r4<substantiv>fångstnät:fångstnät:fångstnäts:fångstnätet:fångstnätets:fångstnät:fångstnäts:fångstnäten:fångstnätens
+COMPOUND(548999, 555848): fångst + nät
+914262r4<substantiv>fångtransport:fångtransport:fångtransports:fångtransporten:fångtransportens:fångtransporter:fångtransporters:fångtransporterna:fångtransporternas
+COMPOUND(617760, 550690): fånge + transport
+914271r4<substantiv>fånguppror:fånguppror:fångupprors:fångupproret:fångupprorets:fånguppror:fångupprors:fångupproren:fångupprorens
+COMPOUND(617760, 697701): fånge + uppror
+940307r4<substantiv>fångutväxling:fångutväxling:fångutväxlings:fångutväxlingen:fångutväxlingens:fångutväxlingar:fångutväxlingars:fångutväxlingarna:fångutväxlingarnas
+COMPOUND(617760, 733921): fånge + utväxling
+615234r3<substantiv>fångvaktare:fångvaktare:fångvaktares:fångvaktaren:fångvaktarens:fångvaktare:fångvaktares:fångvaktarna:fångvaktarnas
+CUSTOM: y y fångvaktar
+708441r3<substantiv>fångvård:fångvård:fångvårds:fångvården:fångvårdens::::
+708445r3<substantiv>fångvårdare:fångvårdare:fångvårdares:fångvårdaren:fångvårdarens:fångvårdare:fångvårdares:fångvårdarna:fångvårdarnas
+605547r3<substantiv>fångvårdsanstalt:fångvårdsanstalt:fångvårdsanstalts:fångvårdsanstalten:fångvårdsanstaltens:fångvårdsanstalter:fångvårdsanstalters:fångvårdsanstalterna:fångvårdsanstalternas
+572699r4<adjektiv>fånig:fånig:fånigt:fåniga:fåniga:fånigare:fånigast:fånigaste:fånige
+690411r3<substantiv>fånighet:fånighet:fånighets:fånigheten:fånighetens:fånigheter:fånigheters:fånigheterna:fånigheternas
+CUSTOM: y y fånighets
+838894r3<substantiv>fånskratt:fånskratt:fånskratts:fånskrattet:fånskrattets:fånskratt:fånskratts:fånskratten:fånskrattens
+838900r3<verb>fånskratta:fånskratta:fånskrattade:fånskrattat:fånskrattar:fånskratta:fånskrattas:fånskrattades:fånskrattats:fånskrattas::::fånskrattande:
+551204r3<substantiv>fåntratt:fåntratt:fåntratts:fåntratten:fåntrattens:fåntrattar:fåntrattars:fåntrattarna:fåntrattarnas
+572700r4<adjektiv>fåordig:fåordig:fåordigt:fåordiga:fåordiga:fåordigare:fåordigast:fåordigaste:fåordige
+924632r5<substantiv>fåordighet:fåordighet:fåordighets:fåordigheten:fåordighetens::::
+556541r14<substantiv>får:får:fårs:fåret:fårets:får:fårs:fåren:fårens
+CUSTOM: y n får
+624435r4<substantiv>fåra:fåra:fåras:fåran:fårans:fåror:fårors:fårorna:fårornas
+649147r3<adjektiv>fårad:fårad:fårat:fårade:fårade:!:!:!:
+708451r3<substantiv>fåraherde:fåraherde:fåraherdes:fåraherden:fåraherdens:fåraherdar:fåraherdars:fåraherdarna:fåraherdarnas
+708459r3<substantiv>fårahjord:fårahjord:fårahjords:fårahjorden:fårahjordens:fårahjordar:fårahjordars:fårahjordarna:fårahjordarnas
+838913r3<substantiv>fårakläder:::::fårakläder:::
+572703r4<adjektiv>fåraktig:fåraktig:fåraktigt:fåraktiga:fåraktiga::::fåraktige
+708467r3<substantiv>fåravel:fåravel:fåravels:fåraveln:fåravelns::::
+708471r3<substantiv>fårbog:fårbog:fårbogs:fårbogen:fårbogens:fårbogar:fårbogars:fårbogarna:fårbogarnas
+708479r4<substantiv>fårfarm:fårfarm:fårfarms:fårfarmen:fårfarmens:fårfarmar, fårfarmer:fårfarmars, fårfarmers:fårfarmarna, fårfarmerna:fårfarmarnas, fårfarmernas
+COMPOUND(556541, 551106): får + farm
+708491r3<substantiv>fårfiol:fårfiol:fårfiols:fårfiolen:fårfiolens:fårfioler:fårfiolers:fårfiolerna:fårfiolernas
+594086r3<substantiv>fårfålla:fårfålla:fårfållas:fårfållan:fårfållans:fårfållor:fårfållors:fårfållorna:fårfållornas
+708499r4<substantiv>fårhjord:fårhjord:fårhjords:fårhjorden:fårhjordens:fårhjordar:fårhjordars:fårhjordarna:fårhjordarnas
+COMPOUND(556541, 551381): får + hjord
+708507r3<substantiv>fårhund:fårhund:fårhunds:fårhunden:fårhundens:fårhundar:fårhundars:fårhundarna:fårhundarnas
+572706r4<adjektiv>fårig:fårig:fårigt:fåriga:fåriga:fårigare:fårigast:fårigaste:fårige::::::::
+CUSTOM: y n
+708515r3<substantiv>fårkött:fårkött:fårkötts:fårköttet:fårköttets::::
+708519r3<substantiv>fårlort:fårlort:fårlorts:fårlorten:fårlortens:fårlortar:fårlortars:fårlortarna:fårlortarnas
+897238r4<substantiv>fårlår:fårlår:fårlårs:fårlåret:fårlårets:fårlår:fårlårs:fårlåren:fårlårens
+COMPOUND(556541, 560217): får + lår
+708527r3<substantiv>fårost:fårost:fårosts:fårosten:fårostens:fårostar:fårostars:fårostarna:fårostarnas
+708535r3<substantiv>fårsax:fårsax:fårsax:fårsaxen:fårsaxens:fårsaxar:fårsaxars:fårsaxarna:fårsaxarnas
+CUSTOM: n n n
+708542r3<substantiv>fårskalle:fårskalle:fårskalles:fårskallen:fårskallens:fårskallar:fårskallars:fårskallarna:fårskallarnas
+565965r3<adjektiv>fårskallig:fårskallig:fårskalligt:fårskalliga:fårskalliga::::
+657343r4<substantiv>fårskinn:fårskinn:fårskinns:fårskinnet:fårskinnets:fårskinn:fårskinns:fårskinnen:fårskinnens
+CUSTOM: y y fårskinns
+657346r4<substantiv>fårskinnspäls:fårskinnspäls:fårskinnspäls:fårskinnspälsen:fårskinnspälsens:fårskinnspälsar:fårskinnspälsars:fårskinnspälsarna:fårskinnspälsarnas
+COMPOUND(657343, 551788): fårskinn + päls
+708550r3<substantiv>fårskock:fårskock:fårskocks:fårskocken:fårskockens:fårskockar:fårskockars:fårskockarna:fårskockarnas
+708558r3<substantiv>fårskötsel:fårskötsel:fårskötsels:fårskötseln:fårskötselns::::
+680437r6<substantiv>fårsmör:fårsmör:fårsmörs:fårsmöret:fårsmörets:!:!:!:!
+COMPOUND(556541, 622554): får + smör
+CUSTOM: y n n
+657347r4<substantiv>fårstek:fårstek:fårsteks:fårsteken:fårstekens:fårstekar:fårstekars:fårstekarna:fårstekarnas
+COMPOUND(556541, 551934): får + stek
+708562r3<substantiv>fårtarm:fårtarm:fårtarms:fårtarmen:fårtarmens:fårtarmar:fårtarmars:fårtarmarna:fårtarmarnas
+708570r3<substantiv>fårticka:fårticka:fårtickas:fårtickan:fårtickans:fårtickor:fårtickors:fårtickorna:fårtickornas
+791049r3<adjektiv>fårtvättad:fårtvättad:fårtvättat:fårtvättade:fårtvättade:!:!:!:
+708578r3<substantiv>fårull:fårull:fårulls:fårullen:fårullens::::
+874281r3<egennamn>Fårö:Fårö:Fårös
+CUSTOM: y n Fårö
+625363r7<substantiv>fåtal:fåtal:fåtals:fåtalet:fåtalets:fåtal::!:!
+565968r4<adjektiv>fåtalig:fåtalig:fåtaligt:fåtaliga:fåtaliga:fåtaligare:fåtaligast:fåtaligaste:
+708582r3<substantiv>fåtalighet:fåtalighet:fåtalighets:fåtaligheten:fåtalighetens::::
+924813r15<substantiv>fåtalsvälde:fåtalsvälde:fåtalsväldes:fåtalsväldet:fåtalsväldets:fåtalsvälden:fåtalsväldens:fåtalsväldena:fåtalsväldenas
+COMPOUND(625363, 620288): fåtal + välde
+572709r3<adjektiv>fåtrådig:fåtrådig:fåtrådigt:fåtrådiga:fåtrådiga::::
+CUSTOM: y n n
+549001r8<substantiv>fåtölj:fåtölj:fåtöljs:fåtöljen:fåtöljens:fåtöljer:fåtöljers:fåtöljerna:fåtöljernas
+CUSTOM: y y fåtölj
+925878r3<substantiv>fåtöljgrupp::::::::
+COMPOUND(549001, 549163): fåtölj + grupp
+657355r3<adjektiv>fåvitsk:fåvitsk:fåvitskt:fåvitska:fåvitska::::fåvitske
+708586r3<substantiv>fåvitskhet:fåvitskhet:fåvitskhets:fåvitskheten:fåvitskhetens::::
+557666r6<substantiv>fä:fä:fäs:fäet:fäets:fän:fäns:fäna:fänas
+572712r4<adjektiv>fäaktig:fäaktig:fäaktigt:fäaktiga:fäaktiga::::fäaktige
+708590r3<substantiv>fäaktighet:fäaktighet:fäaktighets:fäaktigheten:fäaktighetens::::
+674214r3<substantiv>fäbless:fäbless:fäbless:fäblessen:fäblessens:fäblesser:fäblessers:fäblesserna:fäblessernas
+551212r8<substantiv>fäbod:fäbod:fäbods:fäboden:fäbodens:fäbodar:fäbodars:fäbodarna:fäbodarnas
+CUSTOM: y y fäbods
+914289r3<substantiv>fäbodbruk:fäbodbruk:fäbodbruks:fäbodbruket:fäbodbrukets::::
+924869r15<substantiv>fäbodjänta:fäbodjänta:fäbodjäntas:fäbodjäntan:fäbodjäntans:fäbodjäntor:fäbodjäntors:fäbodjäntorna:fäbodjäntornas
+COMPOUND(551212, 618529): fäbod + jänta
+924906r16<substantiv>fäbodliv:fäbodliv:fäbodlivs:fäbodlivet:fäbodlivets::::
+COMPOUND(551212, 552667): fäbod + liv
+924962r15<substantiv>fäbodstuga:fäbodstuga:fäbodstugas:fäbodstugan:fäbodstugans:fäbodstugor:fäbodstugors:fäbodstugorna:fäbodstugornas
+COMPOUND(551212, 595420): fäbod + stuga
+838919r3<substantiv>fäbodvall:fäbodvall:fäbodvalls:fäbodvallen:fäbodvallens:fäbodvallar:fäbodvallars:fäbodvallarna:fäbodvallarnas
+925011r13<substantiv>fäbroms:fäbroms:fäbroms:fäbromsen:fäbromsens:fäbromsar:fäbromsars:fäbromsarna:fäbromsarnas
+CUSTOM: y n
+690419r9<substantiv>fäderne:fäderne:fädernes:fädernet:fädernets::::
+CUSTOM: y y fäderne
+690418r4<substantiv>fädernearv:fädernearv:fädernearvs:fädernearvet:fädernearvets:fädernearv:fädernearvs:fädernearven:fädernearvens
+COMPOUND(690419, 557837): fäderne + arv
+690426r4<substantiv>fädernebygd:fädernebygd:fädernebygds:fädernebygden:fädernebygdens:fädernebygder:fädernebygders:fädernebygderna:fädernebygdernas
+COMPOUND(690419, 548490): fäderne + bygd
+690432r4<substantiv>fädernegods:fädernegods:fädernegods:fädernegodset:fädernegodsets:fädernegods:fädernegods:fädernegodsen:fädernegodsens
+COMPOUND(690419, 552445): fäderne + gods
+690435r4<substantiv>fädernegård:fädernegård:fädernegårds:fädernegården:fädernegårdens:fädernegårdar:fädernegårdars:fädernegårdarna:fädernegårdarnas
+COMPOUND(690419, 551337): fäderne + gård
+690441r4<substantiv>fädernehem:fädernehem:fädernehems:fädernehemmet:fädernehemmets:fädernehem:fädernehems:fädernehemmen:fädernehemmens
+COMPOUND(690419, 555169): fäderne + hem
+690447r4<substantiv>fädernejord:fädernejord:fädernejords:fädernejorden:fädernejordens:!:!:!:!
+COMPOUND(690419, 598410): fäderne + jord
+607139r3<substantiv>fädernesland:fädernesland:fäderneslands:fäderneslandet:fäderneslandets:fädernesland:fäderneslands:fäderneslanden:fäderneslandens
+799351r3<adjektiv>fäderneärvd:fäderneärvd:fäderneärvt:fäderneärvda:fäderneärvda::::
+925118r14<substantiv>fädning:fädning:fädnings:fädningen:fädningens::::
+CUSTOM: y n
+630925r4<substantiv>fäfot:fäfot:!:!:!:!:!:!:!
+CUSTOM: y n
+546616r4<verb>fägna:fägna:fägnade:fägnat:fägnar:fägna::::::::fägnande:
+CUSTOM: y n
+690450r4<substantiv>fägnad:fägnad:fägnads:fägnaden:fägnadens::::
+CUSTOM: y n
+690449r3<deponens>fägnas:fägnas:fägnades:fägnats:fägnas:
+CUSTOM: y n
+563376r3<adjektiv>fägnesam:fägnesam:fägnesamt:fägnesamma:fägnesamma::::
+CUSTOM: y n
+657357r3<substantiv>fägring:fägring:fägrings:fägringen:fägringens::::
+CUSTOM: y y fägrings
+708594r3<substantiv>fähund:fähund:fähunds:fähunden:fähundens:fähundar:fähundars:fähundarna:fähundarnas
+742258r3<substantiv>fähus:fähus:fähus:fähuset:fähusets:fähus:fähus:fähusen:fähusens
+925126r15<substantiv>fäkreatur:fäkreatur:fäkreaturs:fäkreaturet:fäkreaturets:fäkreatur:fäkreaturs:fäkreaturen:fäkreaturens
+COMPOUND(557666, 552583): fä + kreatur
+631652r4<verb>fäkta:fäkta:fäktade:fäktat:fäktar:fäkta:fäktas:fäktades:fäktats:fäktas::::fäktande:
+CUSTOM: y y fäkt
+690455r3<substantiv>fäktande:fäktande:fäktandes:fäktandet:fäktandets::::
+615235r3<substantiv>fäktare:fäktare:fäktares:fäktaren:fäktarens:fäktare:fäktares:fäktarna:fäktarnas
+CUSTOM: y y fäktar
+708602r3<substantiv>fäktkonst:fäktkonst:fäktkonsts:fäktkonsten:fäktkonstens::::
+708606r4<substantiv>fäktmask:fäktmask:fäktmasks:fäktmasken:fäktmaskens:fäktmasker:fäktmaskers:fäktmaskerna:fäktmaskernas
+COMPOUND(631652, 550003): fäkta + mask
+708614r3<substantiv>fäktmästare:fäktmästare:fäktmästares:fäktmästaren:fäktmästarens:fäktmästare:fäktmästares:fäktmästarna:fäktmästarnas
+657358r5<substantiv>fäktning:fäktning:fäktnings:fäktningen:fäktningens:fäktningar:fäktningars:fäktningarna:fäktningarnas
+CUSTOM: y y fäktnings
+628002r4<substantiv>fälad:fälad:fälads:fäladen:fäladens:fälader:fäladers:fäladerna:fäladernas
+925140r15<substantiv>fäladsmark:fäladsmark:fäladsmarks:fäladsmarken:fäladsmarkens:fäladsmarker:fäladsmarkers:fäladsmarkerna:fäladsmarkernas
+COMPOUND(628002, 549995): fälad + mark
+551214r9<substantiv>fälg:fälg:fälgs:fälgen:fälgens:fälgar:fälgars:fälgarna:fälgarnas
+CUSTOM: y n
+925254r8<substantiv>fälgband:fälgband:fälgbands:fälgbandet:fälgbandets:fälgband:fälgbands:fälgbanden:fälgbandens
+COMPOUND(551214, 552220): fälg + band
+925277r8<substantiv>fälgbroms:fälgbroms:fälgbroms:fälgbromsen:fälgbromsens:fälgbromsar:fälgbromsars:fälgbromsarna:fälgbromsarnas
+COMPOUND(551214, 550949): fälg + broms
+838928r3<substantiv>fälgkors:fälgkors:fälgkors:fälgkorset:fälgkorsets:fälgkors:fälgkors:fälgkorsen:fälgkorsens
+925605r8<substantiv>fälgmutter:fälgmutter:fälgmutters:fälgmuttern:fälgmutterns:fälgmuttrar:fälgmuttrars:fälgmuttrarna:fälgmuttrarnas
+COMPOUND(551214, 621460): fälg + mutter
+896409r4<substantiv>fälgnyckel:fälgnyckel:fälgnyckels:fälgnyckeln:fälgnyckelns:fälgnycklar:fälgnycklars:fälgnycklarna:fälgnycklarnas
+COMPOUND(551214, 560803): fälg + nyckel
+551215r4<substantiv>fäll:fäll:fälls:fällen:fällens:fällar:fällars:fällarna:fällarnas
+594088r7<substantiv>fälla:fälla:fällas:fällan:fällans:fällor:fällors:fällorna:fällornas
+585535r17<verb>fälla:fälla:fällde:fällt:fäller:fäll:fällas:fälldes:fällts:fälls, fälles:fälld:fällt:fällda:fällande:
+CUSTOM: y n
+690457r3<substantiv>fällande:fällande:fällandes:fällandet:fällandets::::
+657360r3<adjektiv>fällande:fällande:fällande:fällande:fällande:!:!:!:
+569092r3<adjektiv>fällbar:fällbar:fällbart:fällbara:fällbara::::
+925607r5<substantiv>fällbom:fällbom:fällboms:fällbommen:fällbommens:fällbommar:fällbommars:fällbommarna:fällbommarnas
+925609r6<substantiv>fällbord:fällbord:fällbords:fällbordet:fällbordets:fällbord:fällbords:fällborden:fällbordens
+COMPOUND(585535, 552265): fälla + bord
+925810r15<substantiv>fällbro:fällbro:fällbros:fällbron:fällbrons:fällbroar:fällbroars:fällbroarna:fällbroarnas
+COMPOUND(585535, 557960): fälla + bro
+944419r3<adjektiv>fälld:fälld:fällt:fällda:fällda::::::::::::
+896403r3<substantiv>fälldon:fälldon:fälldons:fälldonet:fälldonets:fälldon:fälldons:fälldonen:fälldonens
+CUSTOM: n n
+895259r5<substantiv>fälle:fälle:fälles:fället:fällets:fällen:fällens:fällena:fällenas
+CUSTOM: y n
+657361r3<substantiv>fällkniv:fällkniv:fällknivs:fällkniven:fällknivens:fällknivar:fällknivars:fällknivarna:fällknivarnas
+657362r4<substantiv>fällning:fällning:fällnings:fällningen:fällningens:fällningar:fällningars:fällningarna:fällningarnas
+CUSTOM: y y fällnings +fällnings
+896391r3<substantiv>fällriktning:fällriktning:fällriktnings:fällriktningen:fällriktningens:fällriktningar:fällriktningars:fällriktningarna:fällriktningarnas
+742266r3<substantiv>fällstol:fällstol:fällstols:fällstolen:fällstolens:fällstolar:fällstolars:fällstolarna:fällstolarnas
+552397r24<substantiv>fält:fält:fälts:fältet:fältets:fält:fälts:fälten:fältens
+CUSTOM: y y fält
+657363r3<substantiv>fältbiolog:fältbiolog:fältbiologs:fältbiologen:fältbiologens:fältbiologer:fältbiologers:fältbiologerna:fältbiologernas
+565969r3<adjektiv>fältduglig:fältduglig:fältdugligt:fältdugliga:fältdugliga::::
+563789r3<adjektiv>fältfri:fältfri:fältfritt:fältfria:fältfria::::
+CUSTOM: n n
+801991r3<adjektiv>fältgrå:fältgrå:fältgrått:fältgråa:fältgråa::::
+951223r4<substantiv>fälthare:fälthare:fälthares:fältharen:fältharens:fältharar:fältharars:fälthararna:fälthararnas
+COMPOUND(552397, 599832): fält + hare
+708622r4<substantiv>fältherre:fältherre:fältherres:fältherren:fältherrens:fältherrar:fältherrars:fältherrarna:fältherrarnas
+COMPOUND(552397, 599833): fält + herre
+CUSTOM: y y fältherre
+615236r3<substantiv>fältjägare:fältjägare:fältjägares:fältjägaren:fältjägarens:fältjägare:fältjägares:fältjägarna:fältjägarnas
+CUSTOM: y y fältjägar
+657367r4<substantiv>fältmarskalk:fältmarskalk:fältmarskalks:fältmarskalken:fältmarskalkens:fältmarskalkar:fältmarskalkars:fältmarskalkarna:fältmarskalkarnas
+COMPOUND(552397, 657368): fält + marskalk
+572715r3<adjektiv>fältmässig:fältmässig:fältmässigt:fältmässiga:fältmässiga::::
+849861r3<substantiv>fältrop:fältrop:fältrops:fältropet:fältropets:fältrop:fältrops:fältropen:fältropens
+838934r3<substantiv>fältskär:fältskär:fältskärs:fältskären:fältskärens:fältskärer:fältskärers:fältskärerna:fältskärernas
+657374r3<substantiv>fältslag:fältslag:fältslags:fältslaget:fältslagets:fältslag:fältslags:fältslagen:fältslagens
+838942r4<substantiv>fältspat:fältspat:fältspats:fältspaten:fältspatens::::
+CUSTOM: y y fältspat
+925816r26<substantiv>fältspatporslin:fältspatporslin:fältspatporslins:fältspatporslinet:fältspatporslinets::::
+COMPOUND(838942, 695209): fältspat + porslin
+760946r4<substantiv>fälttjänst:fälttjänst:fälttjänsts:fälttjänsten:fälttjänstens::::
+CUSTOM: y y fälttjänst
+760951r3<substantiv>fälttjänstövning::::::::
+COMPOUND(760946, 598019): fälttjänst + övning
+607143r4<substantiv>fälttåg:fälttåg:fälttågs:fälttåget:fälttågets:fälttåg:fälttågs:fälttågen:fälttågens
+CUSTOM: y y fälttågs
+838946r4<substantiv>fälttågsplan:fälttågsplan:fälttågsplans:fälttågsplanen:fälttågsplanens:fälttågsplaner:fälttågsplaners:fälttågsplanerna:fälttågsplanernas
+COMPOUND(607143, 550205): fälttåg + plan
+925879r8<substantiv>fältväbel:fältväbel:fältväbels:fältväbeln:fältväbelns:fältväblar:fältväblars:fältväblarna:fältväblarnas
+838954r3<substantiv>fänad:fänad:fänads:fänaden:fänadens::::
+CUSTOM: n n y
+617762r6<substantiv>fängelse:fängelse:fängelses:fängelset:fängelsets:fängelser:fängelsers:fängelserna:fängelsernas
+CUSTOM: y y fängelse +fängelse
+636771r6<adjektiv>fängelsedömd:fängelsedömd:fängelsedömt:fängelsedömda:fängelsedömda::::::::::::
+657375r4<substantiv>fängelsehåla:fängelsehåla:fängelsehålas:fängelsehålan:fängelsehålans:fängelsehålor:fängelsehålors:fängelsehålorna:fängelsehålornas
+COMPOUND(617762, 624205): fängelse + håla
+849867r3<substantiv>fängelsemur:fängelsemur:fängelsemurs:fängelsemuren:fängelsemurens:fängelsemurar:fängelsemurars:fängelsemurarna:fängelsemurarnas
+657377r3<substantiv>fängelsestraff:fängelsestraff:fängelsestraffs:fängelsestraffet:fängelsestraffets:fängelsestraff:fängelsestraffs:fängelsestraffen:fängelsestraffens
+732378r4<substantiv>fängelseuniform:fängelseuniform:fängelseuniforms:fängelseuniformen:fängelseuniformens:fängelseuniformer:fängelseuniformers:fängelseuniformerna:fängelseuniformernas
+COMPOUND(617762, 550733): fängelse + uniform
+690460r4<substantiv>fängelsevakt:fängelsevakt:fängelsevakts:fängelsevakten:fängelsevaktens:fängelsevakter:fängelsevakters:fängelsevakterna:fängelsevakternas
+COMPOUND(617762, 550748): fängelse + vakt
+838956r3<substantiv>fänghål:fänghål:fänghåls:fänghålet:fänghålets:fänghål:fänghåls:fänghålen:fänghålens
+926309r12<substantiv>fängkrut:fängkrut:fängkruts:fängkrutet:fängkrutets::::
+926315r17<substantiv>fängpanna:fängpanna:fängpannas:fängpannan:fängpannans:fängpannor:fängpannors:fängpannorna:fängpannornas
+838962r3<substantiv>fängsel:fängsel:fängsels:fängslet:fängslets:fängsel:fängsels:fängslen:fängslens
+546617r4<verb>fängsla:fängsla:fängslade:fängslat:fängslar:fängsla:fängslas:fängslades:fängslats:fängslas:fängslad:fängslat:fängslade::
+657383r3<adjektiv>fängslande:fängslande:fängslande:fängslande:fängslande:!:!:!:
+914294r3<substantiv>fängslande:fängslande:fängslandes:fängslandet:fängslandets:fängslanden:fängslandens:fängslandena:fängslandenas
+565972r3<adjektiv>fängslig:fängslig:fängsligt:fängsliga:fängsliga::::
+627661r4<substantiv>fänkål:fänkål:fänkåls:fänkålen:fänkålens::::
+941148r4<substantiv>fänkålsfrö:fänkålsfrö:fänkålsfrös:fänkålsfröet:fänkålsfröets:fänkålsfrön:fänkålsfröns:fänkålsfröna:fänkålsfrönas
+COMPOUND(627661, 556155): fänkål + frö
+657384r4<substantiv>fänrik:fänrik:fänriks:fänriken:fänrikens:fänrikar:fänrikars:fänrikarna:fänrikarnas
+926353r9<substantiv>fänriksgrad:fänriksgrad:fänriksgrads:fänriksgraden:fänriksgradens:fänriksgrader:fänriksgraders:fänriksgraderna:fänriksgradernas
+COMPOUND(657384, 549117): fänrik + grad
+562205r14<substantiv>färd:färd:färds:färden:färdens:färder:färders:färderna:färdernas
+CUSTOM: y y färd
+591681r3<deponens>färdas:färdas:färdades:färdats:färdas:
+562209r3<substantiv>färde:färde:!:!:!:!:!:!:!
+562207r8<adjektiv>färdig:färdig:färdigt:färdiga:färdiga:färdigare:färdigast:färdigaste:färdige::::::::
+CUSTOM: y y färdig
+791052r3<adjektiv>färdigbehandlad:färdigbehandlad:färdigbehandlat:färdigbehandlade:färdigbehandlade:!:!:!:
+791055r3<adjektiv>färdigbildad:färdigbildad:färdigbildat:färdigbildade:färdigbildade:!:!:!:
+791058r3<adjektiv>färdigblandad:färdigblandad:färdigblandat:färdigblandade:färdigblandade:!:!:!:
+791061r3<adjektiv>färdigbockad:färdigbockad:färdigbockat:färdigbockade:färdigbockade:!:!:!:
+791064r3<adjektiv>färdigborrad:färdigborrad:färdigborrat:färdigborrade:färdigborrade:!:!:!:
+799354r3<adjektiv>färdigbränd:färdigbränd:färdigbränt:färdigbrända:färdigbrända::::
+799357r3<adjektiv>färdigbyggd:färdigbyggd:färdigbyggt:färdigbyggda:färdigbyggda::::
+791067r3<adjektiv>färdigfilad:färdigfilad:färdigfilat:färdigfilade:färdigfilade:!:!:!:
+791070r3<adjektiv>färdigformulerad:färdigformulerad:färdigformulerat:färdigformulerade:färdigformulerade:!:!:!:
+791073r3<adjektiv>färdigförpackad:färdigförpackad:färdigförpackat:färdigförpackade:färdigförpackade:!:!:!:
+799360r3<adjektiv>färdiggjord:färdiggjord:färdiggjort:färdiggjorda:färdiggjorda::::
+791076r3<adjektiv>färdiggräddad:färdiggräddad:färdiggräddat:färdiggräddade:färdiggräddade:!:!:!:
+562210r5<substantiv>färdighet:färdighet:färdighets:färdigheten:färdighetens:färdigheter:färdigheters:färdigheterna:färdigheternas
+CUSTOM: y y färdighets
+951232r3<adjektiv>färdigifylld:färdigifylld:färdigifyllt:färdigifyllda:färdigifyllda::::::::::::
+951237r3<adjektiv>färdigkläckt:färdigkläckt:färdigkläckt:färdigkläckta:färdigkläckta::::::::::::
+801284r3<adjektiv>färdigklädd:färdigklädd:färdigklätt:färdigklädda:färdigklädda::::
+845737r3<adjektiv>färdigkokt:färdigkokt:färdigkokt:färdigkokta:färdigkokta::::
+951241r3<adjektiv>färdigkörd:färdigkörd:färdigkört:färdigkörda:färdigkörda::::::::::::
+562211r3<adjektiv>färdiglagad:färdiglagad:färdiglagat:färdiglagade:färdiglagade::::
+951246r4<adjektiv>färdigmalen:färdigmalen:färdigmalet:färdigmalna:färdigmalna:!:!:!:::::::::
+COMPOUND(562207, 591614): färdig + malen
+936166r4<substantiv>färdigmat:färdigmat:färdigmats:färdigmaten:färdigmatens:!:!:!:!
+COMPOUND(562207, 556206): färdig + mat
+791079r3<adjektiv>färdigmonterad:färdigmonterad:färdigmonterat:färdigmonterade:färdigmonterade:!:!:!:
+791082r3<adjektiv>färdigmålad:färdigmålad:färdigmålat:färdigmålade:färdigmålade:!:!:!:
+791085r3<adjektiv>färdigpackad:färdigpackad:färdigpackat:färdigpackade:färdigpackade:!:!:!:
+921749r3<adjektiv>färdigplockad:färdigplockad:färdigplockat:färdigplockade:färdigplockade:!:!:!:::::::::
+791088r3<adjektiv>färdigpolerad:färdigpolerad:färdigpolerat:färdigpolerade:färdigpolerade:!:!:!:
+951251r3<adjektiv>färdigriggad:färdigriggad:färdigriggat:färdigriggade:färdigriggade:!:!:!:::::::::
+791091r3<adjektiv>färdigskalad:färdigskalad:färdigskalat:färdigskalade:färdigskalade:!:!:!:
+791094r3<adjektiv>färdigslipad:färdigslipad:färdigslipat:färdigslipade:färdigslipade:!:!:!:
+791097r3<adjektiv>färdigspelad:färdigspelad:färdigspelat:färdigspelade:färdigspelade:!:!:!:
+680905r5<adjektiv>färdigstekt:färdigstekt:färdigstekt:färdigstekta:färdigstekta::::::::::::
+791101r3<adjektiv>färdigstyckad:färdigstyckad:färdigstyckat:färdigstyckade:färdigstyckade:!:!:!:
+657385r4<verb>färdigställa:färdigställa:färdigställde:färdigställt:färdigställer:färdigställ:färdigställas:färdigställdes:färdigställts:färdigställs:färdigställd:färdigställt:färdigställda::
+COMPOUND(562207, 585797): färdig + ställa
+801287r3<adjektiv>färdigsydd:färdigsydd:färdigsytt:färdigsydda:färdigsydda::::
+791105r3<adjektiv>färdigutbildad:färdigutbildad:färdigutbildat:färdigutbildade:färdigutbildade:!:!:!:
+801290r3<adjektiv>färdigutredd:färdigutredd:färdigutrett:färdigutredda:färdigutredda::::
+657388r3<adjektiv>färdigutvecklad:färdigutvecklad:färdigutvecklat:färdigutvecklade:färdigutvecklade:!:!:!:
+757713r4<substantiv>färdigvarulager:färdigvarulager:färdigvarulagers:färdigvarulagret:färdigvarulagrets:färdigvarulager:färdigvarulagers:färdigvarulagerna, färdigvarulagren:färdigvarulagrens, färdigvarulagernas
+COMPOUND(562207, 757705): färdig + varulager
+951256r3<adjektiv>färdigvärpt:färdigvärpt:färdigvärpt:färdigvärpta:färdigvärpta::::::::::::
+766901r4<substantiv>färdled:färdled:färdleds:färdleden:färdledens:färdleder:färdleders:färdlederna:färdledernas
+COMPOUND(562205, 556257): färd + led
+725500r4<substantiv>färdledare:färdledare:färdledares:färdledaren:färdledarens:färdledare:färdledares:färdledarna:färdledarnas
+COMPOUND(562205, 609818): färd + ledare
+725400r4<substantiv>färdmedel:färdmedel:färdmedels:färdmedlet:färdmedlets:färdmedel:färdmedels:färdmedlen:färdmedlens
+COMPOUND(562205, 560532): färd + medel
+934073r4<substantiv>färdplan:färdplan:färdplans:färdplanen:färdplanens:färdplaner:färdplaners:färdplanerna:färdplanernas
+COMPOUND(562205, 550205): färd + plan
+657389r3<substantiv>färdriktning:färdriktning:färdriktnings:färdriktningen:färdriktningens:färdriktningar:färdriktningars:färdriktningarna:färdriktningarnas
+CUSTOM: y y färdriktnings
+939218r4<substantiv>färdsätt:färdsätt:färdsätts:färdsättet:färdsättets:färdsätt:färdsätts:färdsätten:färdsättens
+COMPOUND(562205, 553026): färd + sätt
+718755r3<substantiv>färdtjänst:färdtjänst:färdtjänsts:färdtjänsten:färdtjänstens::::
+657390r3<substantiv>färdväg:färdväg:färdvägs:färdvägen:färdvägens:färdvägar:färdvägars:färdvägarna:färdvägarnas
+549002r30<substantiv>färg:färg:färgs:färgen:färgens:färger:färgers:färgerna:färgernas
+CUSTOM: y y färg
+546618r7<verb>färga:färga:färgade:färgat:färgar:färga:färgas:färgades:färgats:färgas:färgad:färgat:färgade:färgande:
+562214r5<adjektiv>färgad:färgad:färgat:färgade:färgade::::
+690463r3<substantiv>färgande:färgande:färgandes:färgandet:färgandets::::
+926401r14<substantiv>färgare:färgare:färgares:färgaren:färgarens:färgare:färgares:färgarna:färgarnas
+930750r4<substantiv>färgbad:färgbad:färgbads:färgbadet:färgbadets:färgbad:färgbads:färgbaden:färgbadens
+COMPOUND(549002, 552219): färg + bad
+572718r4<adjektiv>färgbeständig:färgbeständig:färgbeständigt:färgbeständiga:färgbeständiga::::
+COMPOUND(549002, 571523): färg + beständig
+657391r3<substantiv>färgbild:färgbild:färgbilds:färgbilden:färgbildens:färgbilder:färgbilders:färgbilderna:färgbildernas
+799363r3<adjektiv>färgblind:färgblind:färgblint:färgblinda:färgblinda::::
+657395r3<substantiv>färgblindhet:färgblindhet:färgblindhets:färgblindheten:färgblindhetens:!:!:!:!
+CUSTOM: y y färgblindhets
+728100r3<egennamn>Färgelanda:Färgelanda:Färgelandas
+838967r3<substantiv>färgeri:färgeri:färgeris:färgeriet:färgeriets:färgerier:färgeriers:färgerierna:färgeriernas
+586686r3<verb>färgfotografera:färgfotografera:färgfotograferade:färgfotograferat:färgfotograferar:färgfotografera:::::::::
+657396r6<adjektiv>färgglad:färgglad:färgglatt:färgglada:färgglada:färggladare:färggladast:färggladaste:färgglade
+802261r3<adjektiv>färggrann:färggrann:färggrant:färggranna:färggranna::::
+572721r3<adjektiv>färgig:färgig:färgigt:färgiga:färgiga::::
+610721r3<substantiv>färgindustri:färgindustri:färgindustris:färgindustrin:färgindustrins:färgindustrier:färgindustriers:färgindustrierna:färgindustriernas
+725514r3<substantiv>färgkarta:färgkarta:färgkartas:färgkartan:färgkartans:färgkartor:färgkartors:färgkartorna:färgkartornas
+565975r3<adjektiv>färgkänslig:färgkänslig:färgkänsligt:färgkänsliga:färgkänsliga::::
+799366r3<adjektiv>färglagd:färglagd:färglagt:färglagda:färglagda::::
+936244r4<substantiv>färglager:färglager:färglagers:färglagret:färglagrets:färglager:färglagers:färglagren:färglagrens
+COMPOUND(549002, 555207): färg + lager
+725530r5<verb>färglägga:färglägga:färglade:färglagt:färglägger:färglägg:färgläggas:färglades:färglagts:färgläggs, färglägges:färglagd:färglagt:färglagda:färgläggande:
+COMPOUND(549002, 556585): färg + lägga
+564835r3<adjektiv>färglös:färglös:färglöst:färglösa:färglösa::::
+636996r7<verb>färgmärka:färgmärka:färgmärkte:färgmärkt:färgmärker:färgmärk:färgmärkas:färgmärktes:färgmärkts:färgmärks:färgmärkt:färgmärkt:färgmärkta:färgmärkande:
+COMPOUND(549002, 585833): färg + märka
+CUSTOM: y n n
+637259r6<substantiv>färgning:färgning:färgnings:färgningen:färgningens:färgningar:färgningars:färgningarna:färgningarnas
+CUSTOM: y y färgnings +färgnings
+725541r4<substantiv>färgnyans:färgnyans:färgnyans:färgnyansen:färgnyansens:färgnyanser:färgnyansers:färgnyanserna:färgnyansernas
+COMPOUND(549002, 550084): färg + nyans
+657401r3<substantiv>färgplansch:färgplansch:färgplanschs:färgplanschen:färgplanschens:färgplanscher:färgplanschers:färgplanscherna:färgplanschernas
+944501r4<substantiv>färgpyts:färgpyts:färgpyts:färgpytsen:färgpytsens:färgpytsar:färgpytsars:färgpytsarna:färgpytsarnas
+COMPOUND(549002, 551785): färg + pyts
+759947r4<adjektiv>färgrik:färgrik:färgrikt:färgrika:färgrika:färgrikare:färgrikast:färgrikaste:!
+572724r3<adjektiv>färgriktig:färgriktig:färgriktigt:färgriktiga:färgriktiga::::
+725522r4<substantiv>färgskala:färgskala:färgskalas:färgskalan:färgskalans:färgskalor:färgskalors:färgskalorna:färgskalornas
+COMPOUND(549002, 595122): färg + skala
+657403r3<adjektiv>färgstark:färgstark:färgstarkt:färgstarka:färgstarka:färgstarkare:färgstarkast:färgstarkaste:färgstarke
+690465r3<substantiv>färgsättning:färgsättning:färgsättnings:färgsättningen:färgsättningens::::
+CUSTOM: y y färgsättnings
+725548r4<substantiv>färgton:färgton:färgtons:färgtonen:färgtonens:färgtoner:färgtoners:färgtonerna:färgtonernas
+COMPOUND(549002, 603900): färg + ton
+849875r3<substantiv>färgtub:färgtub:färgtubs:färgtuben:färgtubens:färgtuber:färgtubers:färgtuberna:färgtubernas
+930756r6<substantiv>färgval:färgval:färgvals:färgvalet:färgvalets:färgval:färgvals:färgvalen:färgvalens
+COMPOUND(549002, 555548): färg + val
+926398r6<adjektiv>färgäkta:färgäkta:färgäkta:färgäkta:färgäkta::::::::::::
+COMPOUND(549002, 571234): färg + äkta
+783150r5<substantiv>färgämne:färgämne:färgämnes:färgämnet:färgämnets:färgämnen:färgämnens:färgämnena:färgämnenas
+COMPOUND(549002, 613026): färg + ämne
+CUSTOM: y y färgämnes
+596848r3<substantiv>färing:färing:färings:färingen:färingens:färingar:färingars:färingarna:färingarnas
+CUSTOM: y y
+923901r4<substantiv>färist:färist:färists:färisten:färistens:färistar, färister:färistars, färisters:färistarna, färisterna:färistarnas, färisternas
+562215r12<substantiv>färja:färja:färjas:färjan:färjans:färjor:färjors:färjorna:färjornas
+CUSTOM: y y färje
+845741r4<substantiv>färjeled:färjeled:färjeleds:färjeleden:färjeledens:färjeleder:färjeleders:färjelederna:färjeledernas
+COMPOUND(562215, 556257): färja + led
+926442r15<substantiv>färjeläge:färjeläge:färjeläges:färjeläget:färjelägets:färjelägen:färjelägens:färjelägena:färjelägenas
+COMPOUND(562215, 612680): färja + läge
+742274r4<substantiv>färjerederi:färjerederi:färjerederis:färjerederiet:färjerederiets:färjerederier:färjerederiers:färjerederierna:färjerederiernas
+COMPOUND(562215, 552814): färja + rederi
+711937r4<substantiv>färjetrafik:färjetrafik:färjetrafiks:färjetrafiken:färjetrafikens:färjetrafiker:färjetrafikers:färjetrafikerna:färjetrafikernas
+COMPOUND(562215, 673056): färja + trafik
+824274r4<substantiv>färjetur:färjetur:färjeturs:färjeturen:färjeturens:färjeturer:färjeturers:färjeturerna:färjeturernas
+COMPOUND(562215, 550715): färja + tur
+657408r3<substantiv>färjkarl:färjkarl:färjkarls:färjkarlen:färjkarlens:färjkarlar:färjkarlars:färjkarlarna:färjkarlarnas
+926437r18<substantiv>färjläge:färjläge:färjläges:färjläget:färjlägets:färjlägen:färjlägens:färjlägena:färjlägenas
+COMPOUND(562215, 612680): färja + läge
+926468r15<substantiv>färjtur:färjtur:färjturs:färjturen:färjturens:färjturer:färjturers:färjturerna:färjturernas
+COMPOUND(562215, 550715): färja + tur
+923317r3<substantiv>färna:färna:färnas:färnan:färnans:färnor:färnors:färnorna:färnornas
+CUSTOM: n n y
+562217r3<pronomen>färre:färre
+562218r6<substantiv>färs:färs:färs:färsen:färsens:färser:färsers:färserna:färsernas
+586690r5<verb>färsera:färsera:färserade:färserat:färserar:färsera:färseras:färserades:färserats:färseras:färserad:färserat:färserade:färserande:
+572727r3<adjektiv>färsig:färsig:färsigt:färsiga:färsiga::::
+562219r8<adjektiv>färsk:färsk:färskt:färska:färska:färskare:färskast:färskaste:färske::::::::
+CUSTOM: y y färsk
+819166r3<substantiv>färskhet:färskhet:färskhets:färskheten:färskhetens::::
+872109r3<substantiv>färsking:färsking:färskings:färskingen:färskingens:färskingar:färskingars:färskingarna:färskingarnas
+951260r4<adjektiv>färskmalen:färskmalen:färskmalet:färskmalna:färskmalna:!:!:!:::::::::
+COMPOUND(562219, 591614): färsk + malen
+838984r3<substantiv>färskning:färskning:färsknings:färskningen:färskningens::::
+725601r4<substantiv>färskost:färskost:färskosts:färskosten:färskostens:färskostar:färskostars:färskostarna:färskostarnas
+COMPOUND(562219, 555054): färsk + ost
+791108r3<adjektiv>färskplockad:färskplockad:färskplockat:färskplockade:färskplockade:!:!:!:
+725609r4<substantiv>färskpotatis:färskpotatis:färskpotatis:färskpotatisen:färskpotatisens:färskpotatisar:färskpotatisars:färskpotatisarna:färskpotatisarnas
+COMPOUND(562219, 551773): färsk + potatis
+937939r3<substantiv>färskvara:färskvara:färskvaras:färskvaran:färskvarans:färskvaror:färskvarors:färskvarorna:färskvarornas
+701733r3<egennamn>Färöarna:Färöarna:Färöarnas
+CUSTOM: y n Färö
+596856r3<substantiv>färöing:färöing:färöings:färöingen:färöingens:färöingar:färöingars:färöingarna:färöingarnas
+568741r4<adjektiv>färöisk:färöisk:färöiskt:färöiska:färöiska:!:!:!:färöiske
+594089r3<substantiv>färöiska:färöiska:färöiskas:färöiskan:färöiskans:färöiskor:färöiskors:färöiskorna:färöiskornas
+873813r3<egennamn>Fässberg:Fässberg:Fässbergs
+562220r4<adjektiv>fäst:fäst:fäst:fästa:fästa::::
+562221r20<verb>fästa:fästa:fäste:fäst:fäster:fäst:fästas:fästes:fästs:fästs:fäst, fästad:fäst, fästat:fästa, fästade:fästande:
+CUSTOM: y n
+956835r4<substantiv>fästanordning:fästanordning:fästanordnings:fästanordningen:fästanordningens:fästanordningar:fästanordningars:fästanordningarna:fästanordningarnas
+COMPOUND(562221, 606105): fästa + anordning
+926478r13<substantiv>fästdon:fästdon:fästdons:fästdonet:fästdonets:fästdon:fästdons:fästdonen:fästdonens
+562223r9<substantiv>fäste:fäste:fästes:fästet:fästets:fästen:fästens:fästena:fästenas
+838989r3<substantiv>fästfolk:fästfolk:fästfolks:fästfolket:fästfolkets::::
+562224r4<substantiv>fästing:fästing:fästings:fästingen:fästingens:fästingar:fästingars:fästingarna:fästingarnas
+CUSTOM: y y fästing
+742281r4<substantiv>fästingbett:fästingbett:fästingbetts:fästingbettet:fästingbettets:fästingbett:fästingbetts:fästingbetten:fästingbettens
+COMPOUND(562224, 552243): fästing + bett
+638777r5<adjektiv>fästingburen:fästingburen:fästingburet:fästingburna:fästingburna::::::::::::
+799367r3<adjektiv>fästingöverförd:fästingöverförd:fästingöverfört:fästingöverförda:fästingöverförda::::
+562225r4<substantiv>fästman:fästman:fästmans:fästmannen:fästmannens:fästmän:fästmäns:fästmännen:fästmännens
+838997r3<substantiv>fästmanssoffa:fästmanssoffa:fästmanssoffas:fästmanssoffan:fästmanssoffans:fästmanssoffor:fästmanssoffors:fästmanssofforna:fästmanssoffornas
+562226r3<substantiv>fästmö:fästmö:fästmös:fästmön:fästmöns:fästmör:fästmörs:fästmörna:fästmörnas
+562227r3<substantiv>fästning:fästning:fästnings:fästningen:fästningens:fästningar:fästningars:fästningarna:fästningarnas
+CUSTOM: y y fästnings
+849883r3<substantiv>fästningsmur:fästningsmur:fästningsmurs:fästningsmuren:fästningsmurens:fästningsmurar:fästningsmurars:fästningsmurarna:fästningsmurarnas
+839005r3<substantiv>fästpunkt:fästpunkt:fästpunkts:fästpunkten:fästpunktens:fästpunkter:fästpunkters:fästpunkterna:fästpunkternas
+598244r3<substantiv>fästtapp:fästtapp:fästtapps:fästtappen:fästtappens:fästtappar:fästtappars:fästtapparna:fästtapparnas
+914304r4<substantiv>fästvalla:fästvalla:fästvallas:fästvallan:fästvallans:fästvallor:fästvallors:fästvallorna:fästvallornas
+COMPOUND(562221, 561908): fästa + valla
+926484r16<substantiv>fästyta:fästyta:fästytas:fästytan:fästytans:fästytor:fästytors:fästytorna:fästytornas
+COMPOUND(562221, 595826): fästa + yta
+949467r4<substantiv>fästzon:fästzon:fästzons:fästzonen:fästzonens:fästzoner:fästzoners:fästzonerna:fästzonernas
+COMPOUND(562221, 550796): fästa + zon
+558894r13<substantiv>föda:föda:födas:födan:födans:födor:födors:födorna:födornas
+558895r9<verb>föda:föda:födde:fött:föder:föd:födas:föddes:fötts:föds, födes:född:fött:födda::
+690468r3<adjektiv>födande:födande:födande:födande:födande:!:!:!:
+591637r3<deponens>födas:födas:föddes:fötts:föds:
+801293r6<adjektiv>född:född:fött:födda:födda::::::::föddas::::
+617764r6<substantiv>födelse:födelse:födelses:födelsen:födelsens:födelser:födelsers:födelserna:födelsernas
+CUSTOM: y y födelse
+551216r4<substantiv>födelsedag:födelsedag:födelsedags:födelsedagen:födelsedagens:födelsedagar:födelsedagars:födelsedagarna:födelsedagarnas
+CUSTOM: y y födelsedags
+701736r4<substantiv>födelsedagskalas:födelsedagskalas:födelsedagskalas:födelsedagskalaset:födelsedagskalasets:födelsedagskalas:födelsedagskalas:födelsedagskalasen:födelsedagskalasens
+COMPOUND(551216, 552539): födelsedag + kalas
+617769r3<substantiv>födelsedagstårta:födelsedagstårta:födelsedagstårtas:födelsedagstårtan:födelsedagstårtans:födelsedagstårtor:födelsedagstårtors:födelsedagstårtorna:födelsedagstårtornas
+657410r3<substantiv>födelsedatum:födelsedatum:födelsedatums:födelsedatumet:födelsedatumets:födelsedatum:födelsedatums:födelsedatumen:födelsedatumens
+617777r3<substantiv>födelsemärke:födelsemärke:födelsemärkes:födelsemärket:födelsemärkets:födelsemärken:födelsemärkens:födelsemärkena:födelsemärkenas
+617785r3<substantiv>födelseort:födelseort:födelseorts:födelseorten:födelseortens:födelseorter:födelseorters:födelseorterna:födelseorternas
+690470r4<substantiv>födelseplats:födelseplats:födelseplats:födelseplatsen:födelseplatsens:födelseplatser:födelseplatsers:födelseplatserna:födelseplatsernas
+COMPOUND(617764, 550210): födelse + plats
+761963r4<substantiv>födelsetal:födelsetal:födelsetals:födelsetalet:födelsetalets:födelsetal:födelsetals:födelsetalen:födelsetalens
+COMPOUND(617764, 553029): födelse + tal
+617793r3<substantiv>födelsevik

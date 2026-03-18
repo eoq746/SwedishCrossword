@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+ï»¿namespace SwedishCrossword.Services.Generation;
 
 using SwedishCrossword.Models;
 using static GenerationHelpers;
@@ -18,8 +18,8 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         var placed = 0;
         var usedWordTexts = grid.GetPlacedWordTexts();
 
-        var maxAnchorLength = Math.Min(14, options.Width);
-        var minAnchorLength = Math.Max(1, maxAnchorLength - 3);
+        var maxAnchorLength = options.Width;
+        var minAnchorLength = Math.Max(1, Math.Min(14, options.Width) - 3);
 
         var letterWordCount = new Dictionary<char, int>();
         foreach (var word in allWords)
@@ -45,8 +45,6 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         foreach (var w in filteredCandidates)
         {
             var score = ScoreAnchorWordWithIntersectionPotential(w, letterWordCount);
-            // Per-generation jitter so the ranking shifts between runs while quality
-            // words still tend to stay near the top (jitter << typical score range).
             score += _random.NextDouble() * 4.0;
             anchorCandidates.Add((w, score));
         }
@@ -56,8 +54,6 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         Word? bestAnchor = null;
         if (anchorCandidates.Count > 0)
         {
-            // Pick uniformly from the top-30 after jitter-based sorting so any
-            // high-quality word has a fair chance, not just the same 5 every time.
             var pickIndex = _random.Next(Math.Min(30, anchorCandidates.Count));
             bestAnchor = anchorCandidates[pickIndex].Word;
         }
@@ -81,19 +77,16 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         // Place additional cross-anchors (2nd and 3rd) to create a richer initial scaffold
         if (placed > 0 && sortedWords.Count > 1)
         {
-            var anchorLetters = new HashSet<char>(bestAnchor.Text);
             var targetCrossAnchors = Math.Min(3, 1 + options.Width / 6); // 2 for small grids, 3 for larger
 
             while (placed < targetCrossAnchors)
             {
-                // Rebuild letter set from all placed words for subsequent anchors
-                if (placed > 1)
-                {
-                    anchorLetters.Clear();
-                    foreach (var w in grid.Words)
-                        foreach (var c in w.Text)
-                            anchorLetters.Add(c);
-                }
+                var anchorLetters = new HashSet<char>();
+                foreach (var w in grid.Words)
+                    foreach (var c in w.Text)
+                        anchorLetters.Add(c);
+
+                bool placedOne = false;
 
                 var filteredNextCandidates = new List<Word>(100);
                 foreach (var w in allWords)
@@ -114,57 +107,56 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                         filteredNextCandidates.Add(w);
                 }
 
-                if (filteredNextCandidates.Count == 0) break;
-
-                var candidateNextWords = new List<(Word Word, double Score)>(filteredNextCandidates.Count);
-                foreach (var w in filteredNextCandidates)
+                if (filteredNextCandidates.Count > 0)
                 {
-                    var score = ScoreAnchorWordWithIntersectionPotential(w, letterWordCount);
-                    // Bonus for sharing letters with existing words
-                    var sharedLetters = w.Text.Intersect(anchorLetters).Count();
-                    score += sharedLetters * 3;
-                    var newLetters = w.Text.Except(anchorLetters).Distinct().Count();
-                    score += newLetters * 1.5;
-                    score += _random.NextDouble() * 4.0; // jitter for run-to-run diversity
-                    candidateNextWords.Add((w, score));
-                }
-
-                candidateNextWords.Sort((a, b) => b.Score.CompareTo(a.Score));
-                var topCount = Math.Min(40, candidateNextWords.Count);
-
-                var shuffledCandidates = new List<Word>(topCount);
-                for (int i = 0; i < topCount; i++)
-                {
-                    shuffledCandidates.Add(candidateNextWords[i].Word);
-                }
-
-                ShuffleTopBiased(shuffledCandidates, 10, _random);
-
-                bool placedOne = false;
-                foreach (var nextWord in shuffledCandidates)
-                {
-                    var intersections = grid.GetPossibleIntersections(nextWord)
-                        .Select(i => (Intersection: i, Score: ScoreAnchorIntersection(i, grid)))
-                        .OrderByDescending(x => x.Score)
-                        .Take(8)
-                        .ToList();
-
-                    ShuffleTopBiased(intersections, 3, _random);
-                    var tryCount = Math.Min(5, intersections.Count);
-
-                    for (int i = 0; i < tryCount; i++)
+                    var candidateNextWords = new List<(Word Word, double Score)>(filteredNextCandidates.Count);
+                    foreach (var w in filteredNextCandidates)
                     {
-                        var (row, col, direction, _, _, _) = intersections[i].Intersection;
-                        if (grid.TryPlaceWordWithValidation(nextWord, row, col, direction, _dictionary, options.RejectInvalidWords))
-                        {
-                            placed++;
-                            usedWordTexts = grid.GetPlacedWordTexts();
-                            placedOne = true;
-                            break;
-                        }
+                        var score = ScoreAnchorWordWithIntersectionPotential(w, letterWordCount);
+                        var sharedLetters = w.Text.Intersect(anchorLetters).Count();
+                        score += sharedLetters * 3;
+                        var newLetters = w.Text.Except(anchorLetters).Distinct().Count();
+                        score += newLetters * 1.5;
+                        score += _random.NextDouble() * 4.0;
+                        candidateNextWords.Add((w, score));
                     }
 
-                    if (placedOne) break;
+                    candidateNextWords.Sort((a, b) => b.Score.CompareTo(a.Score));
+                    var topCount = Math.Min(40, candidateNextWords.Count);
+
+                    var shuffledCandidates = new List<Word>(topCount);
+                    for (int i = 0; i < topCount; i++)
+                    {
+                        shuffledCandidates.Add(candidateNextWords[i].Word);
+                    }
+
+                    ShuffleTopBiased(shuffledCandidates, 10, _random);
+
+                    foreach (var nextWord in shuffledCandidates)
+                    {
+                        var intersections = grid.GetPossibleIntersections(nextWord)
+                            .Select(i => (Intersection: i, Score: ScoreAnchorIntersection(i, grid)))
+                            .OrderByDescending(x => x.Score)
+                            .Take(8)
+                            .ToList();
+
+                        ShuffleTopBiased(intersections, 3, _random);
+                        var tryCount = Math.Min(5, intersections.Count);
+
+                        for (int i = 0; i < tryCount; i++)
+                        {
+                            var (row, col, direction, _, _, _) = intersections[i].Intersection;
+                            if (grid.TryPlaceWordWithValidation(nextWord, row, col, direction, _dictionary, options.RejectInvalidWords))
+                            {
+                                placed++;
+                                usedWordTexts = grid.GetPlacedWordTexts();
+                                placedOne = true;
+                                break;
+                            }
+                        }
+
+                        if (placedOne) break;
+                    }
                 }
 
                 // If we couldn't place another anchor, stop trying
@@ -173,6 +165,124 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         }
 
         return placed > 0;
+    }
+
+    /// <summary>
+    /// Attempts to place a vinkelord (bent word) as a cross-anchor using
+    /// opportunity-based placement (existing L-shapes with letters on the grid).
+    /// Returns false if no valid opportunity-based placement is found ï¿½ callers
+    /// should NOT force a vinkelord when the grid layout doesn't support one,
+    /// as poorly positioned L-shapes fragment the grid and reduce fill quality.
+    /// </summary>
+    private bool TryPlaceVinkelordAnchor(CrosswordGrid grid, List<Word> allWords,
+        HashSet<string> usedWordTexts, CrosswordGenerationOptions options)
+    {
+        var maxVinkelordLength = Math.Min(options.MaxWordLength, options.MaxVinkelordLength);
+        var opportunities = _vinkelordPlacer!.FindVinkelordOpportunities(
+            grid, minLength: 3, maxLength: maxVinkelordLength, maxBends: options.MaxBendsPerWord);
+
+        if (opportunities.Count == 0) return false;
+
+        var candidatePool = _dictionary.GetWords(minLength: 3, maxLength: maxVinkelordLength).ToList();
+        var placedTexts = new HashSet<string>(usedWordTexts, StringComparer.OrdinalIgnoreCase);
+
+        var limit = Math.Min(15, opportunities.Count);
+        for (int oppIdx = 0; oppIdx < limit; oppIdx++)
+        {
+            var opportunity = opportunities[oppIdx];
+            var matchingWords = FindWordsMatchingPattern(candidatePool, opportunity.Pattern, placedTexts, usedWordTexts);
+            if (matchingWords.Count == 0) continue;
+
+            var scored = new List<(Word Word, double Score)>(matchingWords.Count);
+            foreach (var w in matchingWords)
+            {
+                double score = opportunity.ExistingLetterCount * 5.0;
+                foreach (var c in w.Text)
+                {
+                    if (c is 'A' or 'E' or 'I' or 'O' or 'U' or '\u00c5' or '\u00c4' or '\u00d6')
+                        score += 0.5;
+                    else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                        score += 0.3;
+                }
+                score += _random.NextDouble() * 2.0;
+                scored.Add((w, score));
+            }
+
+            scored.Sort((a, b) => b.Score.CompareTo(a.Score));
+            if (scored.Count > 8) scored.RemoveRange(8, scored.Count - 8);
+            ShuffleTopBiased(scored, 3, _random);
+
+            var tryCount = Math.Min(5, scored.Count);
+            for (int i = 0; i < tryCount; i++)
+            {
+                if (grid.TryPlaceBentWordWithValidation(scored[i].Word, opportunity.Segments, _dictionary, options.RejectInvalidWords))
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// Attempts to place a vinkelord at an arbitrary grid position without requiring
+    /// pre-existing L-shaped opportunities. Picks a word first, then finds valid
+    /// L-shaped placements for it. Works even on an empty grid.
+    /// </summary>
+    private bool TryPlaceFreeVinkelord(CrosswordGrid grid, HashSet<string> usedWordTexts,
+        CrosswordGenerationOptions options)
+    {
+        var maxVinkelordLength = Math.Min(options.MaxWordLength, options.MaxVinkelordLength);
+
+        var candidatePool = _dictionary.GetWords(minLength: 3, maxLength: maxVinkelordLength)
+            .Where(w => !usedWordTexts.Contains(w.Text))
+            .Take(2000)
+            .ToList();
+
+        if (candidatePool.Count == 0) return false;
+
+        // Score candidates for anchor quality (without the >= 15 length penalty
+        // since vinkelords can naturally span longer across two dimensions)
+        var scored = new List<(Word Word, double Score)>(candidatePool.Count);
+        foreach (var w in candidatePool)
+        {
+            double score = 0;
+            var uniqueLetters = new HashSet<char>();
+            foreach (var c in w.Text)
+            {
+                uniqueLetters.Add(c);
+                if (c is 'A' or 'E' or 'I' or 'O' or 'U' or '\u00c5' or '\u00c4' or '\u00d6')
+                    score += 1.0;
+                else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
+                    score += 0.7;
+            }
+            if (w.Length >= 5 && w.Length <= 10) score += 3;
+            score += uniqueLetters.Count * 0.5;
+            var lengthJitter = 4.0 + Math.Max(0, w.Length - 6) * 0.8;
+            score += _random.NextDouble() * lengthJitter;
+            scored.Add((w, score));
+        }
+
+        scored.Sort((a, b) => b.Score.CompareTo(a.Score));
+        ShuffleTopBiased(scored, 10, _random);
+
+        var tryWords = Math.Min(15, scored.Count);
+        for (int wi = 0; wi < tryWords; wi++)
+        {
+            var word = scored[wi].Word;
+            var positions = _vinkelordPlacer!.GenerateFreeVinkelordPositions(grid, word.Length);
+            if (positions.Count == 0) continue;
+
+            ShuffleTopBiased(positions, 5, _random);
+            var tryPositions = Math.Min(8, positions.Count);
+
+            for (int pi = 0; pi < tryPositions; pi++)
+            {
+                if (grid.TryPlaceBentWordWithValidation(word, positions[pi], _dictionary, options.RejectInvalidWords))
+                    return true;
+            }
+        }
+
+        return false;
     }
 
     private double ScoreAnchorWordWithIntersectionPotential(Word word, Dictionary<char, int> letterWordCount)
@@ -188,7 +298,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 score += 1.5;
             else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
                 score += 1.0;
-            else if (c is 'Å' or 'Ä' or 'Ö')
+            else if (c is 'ï¿½' or 'ï¿½' or 'ï¿½')
                 score += 0.5;
         }
 
@@ -209,8 +319,12 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         }
         score += intersectionPotential / 500.0;
 
-        if (word.Length >= 15) score *= 0.05;
-        if (word.Length >= 16) score *= 0.05;
+        // Gentle taper beyond the typical anchor range (15+).  Words 11-14
+        // are the anchor sweet-spot and should keep their full score; only the
+        // longer words that were added by the expanded maxAnchorLength get a
+        // gradual penalty instead of the original hard cliff at 15.
+        if (word.Length > 14)
+            score *= Math.Max(0.3, 1.0 - (word.Length - 14) * 0.10);
 
         return score;
     }
@@ -302,6 +416,19 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 state.UsedWordsRefreshCounter = 0;
             }
 
+            state.PlacementAttempts++;
+            state.UsedWordsRefreshCounter++;
+
+            var placed = false;
+
+            // Vinkelord eligibility -- used only by the reactive fallback below,
+            // after straight placement has failed enough times.  Proactive
+            // vinkelord in the main loop was removed because early L-shapes
+            // fragment the grid and choke straight-word placement.
+            bool vinkelordEligible = _vinkelordPlacer != null && options.AllowVinkelord
+                && state.VinkelordPlaced < options.MaxVinkelord;
+
+            // Straight word selection and placement
             var lengthMin = Math.Max(options.MinWordLength, state.CurrentTargetLength - 2);
             var availableWords = sortedWords
                 .Where(w => !state.PlacedWordTexts.Contains(w.Text)
@@ -318,12 +445,8 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 state.CurrentTargetLength--;
                 state.ConsecutiveFailures = 0;
                 state.TriedWords.Clear();
-                state.PlacementAttempts++;
                 continue;
             }
-
-            state.PlacementAttempts++;
-            state.UsedWordsRefreshCounter++;
 
             var (word, wordScore) = SelectBestWordWithDirectionBalanceAndScore(availableWords, grid, state.RequireIntersections, connectivityScores);
             if (word == null)
@@ -333,8 +456,6 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 state.TriedWords.Clear();
                 continue;
             }
-
-            var placed = false;
 
             if (state.RequireIntersections)
             {
@@ -398,9 +519,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 state.TriedWords.Add(word.Text);
 
                 // Try vinkelord as alternative strategy every 10 consecutive failures
-                if (_vinkelordPlacer != null && options.AllowVinkelord
-                    && state.VinkelordPlaced < options.MaxVinkelord
-                    && state.ConsecutiveFailures % 10 == 0)
+                if (vinkelordEligible && state.ConsecutiveFailures % 10 == 0)
                 {
                     if (TryPlaceOneVinkelord(grid, placedWords, options, state, placedWordScores, connectivityScores, cancellationToken))
                     {

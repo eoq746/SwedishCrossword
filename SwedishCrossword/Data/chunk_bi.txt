@@ -1,0 +1,660 @@
+dubblarna:dubblarnas
+564600r23<adjektiv>dubbel:dubbel:dubbelt:dubbla:dubbla::::dubble::::::::
+CUSTOM: y y dubbel
+790471r3<adjektiv>dubbelarmad:dubbelarmad:dubbelarmat:dubbelarmade:dubbelarmade:!:!:!:
+790474r3<adjektiv>dubbelarmerad:dubbelarmerad:dubbelarmerat:dubbelarmerade:dubbelarmerade:!:!:!:
+571892r3<adjektiv>dubbelatomig:dubbelatomig:dubbelatomigt:dubbelatomiga:dubbelatomiga::::
+950945r4<verb>dubbelbelysa:dubbelbelysa:dubbelbelyste:dubbelbelyst:dubbelbelyser:dubbelbelys:dubbelbelysas:dubbelbelystes:dubbelbelysts:dubbelbelyses:dubbelbelyst:dubbelbelyst:dubbelbelysta:dubbelbelysande:
+COMPOUND(564600, 585811): dubbel + belysa
+606968r3<substantiv>dubbelbeskattningsavtal:dubbelbeskattningsavtal:dubbelbeskattningsavtals:dubbelbeskattningsavtalet:dubbelbeskattningsavtalets:dubbelbeskattningsavtal:dubbelbeskattningsavtals:dubbelbeskattningsavtalen:dubbelbeskattningsavtalens
+950958r4<substantiv>dubbelbock:dubbelbock:dubbelbocks:dubbelbocken:dubbelbockens:dubbelbockar:dubbelbockars:dubbelbockarna:dubbelbockarnas
+COMPOUND(564600, 560573): dubbel + bock
+845553r4<verb>dubbelboka:dubbelboka:dubbelbokade:dubbelbokat:dubbelbokar:dubbelboka:dubbelbokas:dubbelbokades:dubbelbokats:dubbelbokas:dubbelbokad:dubbelbokat:dubbelbokade:dubbelbokande:
+COMPOUND(564600, 546307): dubbel + boka
+656390r3<adjektiv>dubbelbottnad:dubbelbottnad:dubbelbottnat:dubbelbottnade:dubbelbottnade:!:!:!:!
+799213r3<adjektiv>dubbelböjd:dubbelböjd:dubbelböjt:dubbelböjda:dubbelböjda::::
+571895r3<adjektiv>dubbelcylindrig:dubbelcylindrig:dubbelcylindrigt:dubbelcylindriga:dubbelcylindriga::::
+790477r3<adjektiv>dubbeldäckad:dubbeldäckad:dubbeldäckat:dubbeldäckade:dubbeldäckade:!:!:!:
+760846r3<substantiv>dubbeldäckare:dubbeldäckare:dubbeldäckares:dubbeldäckaren:dubbeldäckarens:dubbeldäckare:dubbeldäckares:dubbeldäckarna:dubbeldäckarnas
+790480r3<adjektiv>dubbeleggad:dubbeleggad:dubbeleggat:dubbeleggade:dubbeleggade:!:!:!:
+657674r3<adjektiv>dubbelexponentiell:dubbelexponentiell:dubbelexponentiellt:dubbelexponentiella:dubbelexponentiella::::
+589096r3<verb>dubbelexponera:dubbelexponera:dubbelexponerade:dubbelexponerat:dubbelexponerar:dubbelexponera:::::::::
+571898r3<adjektiv>dubbelfasig:dubbelfasig:dubbelfasigt:dubbelfasiga:dubbelfasiga::::
+937288r3<substantiv>dubbelfel:dubbelfel:dubbelfels:dubbelfelet:dubbelfelets:dubbelfel:dubbelfels:dubbelfelen:dubbelfelens
+565713r3<adjektiv>dubbelfilig:dubbelfilig:dubbelfiligt:dubbelfiliga:dubbelfiliga::::
+606974r3<substantiv>dubbelflatstift:dubbelflatstift:dubbelflatstifts:dubbelflatstiftet:dubbelflatstiftets:dubbelflatstift:dubbelflatstifts:dubbelflatstiften:dubbelflatstiftens
+790483r3<adjektiv>dubbelflänsad:dubbelflänsad:dubbelflänsat:dubbelflänsade:dubbelflänsade:!:!:!:
+797453r3<adjektiv>dubbelfunktionell:dubbelfunktionell:dubbelfunktionellt:dubbelfunktionella:dubbelfunktionella::::
+571901r3<adjektiv>dubbelgradig:dubbelgradig:dubbelgradigt:dubbelgradiga:dubbelgradiga::::
+790486r3<adjektiv>dubbelgängad:dubbelgängad:dubbelgängat:dubbelgängade:dubbelgängade:!:!:!:
+859803r3<substantiv>dubbelhaka:dubbelhaka:dubbelhakas:dubbelhakan:dubbelhakans:dubbelhakor:dubbelhakors:dubbelhakorna:dubbelhakornas
+688977r3<substantiv>dubbelhet:dubbelhet:dubbelhets:dubbelheten:dubbelhetens::::
+CUSTOM: y y dubbelhets
+790489r3<adjektiv>dubbelhuvad:dubbelhuvad:dubbelhuvat:dubbelhuvade:dubbelhuvade:!:!:!:
+800924r3<adjektiv>dubbelhäftande:dubbelhäftande:dubbelhäftande:dubbelhäftande:dubbelhäftande:!:!:!:
+940492r4<substantiv>dubbelknut:dubbelknut:dubbelknuts:dubbelknuten:dubbelknutens:dubbelknutar:dubbelknutars:dubbelknutarna:dubbelknutarnas
+COMPOUND(564600, 551562): dubbel + knut
+859811r3<adjektiv>dubbelknäppt:dubbelknäppt:dubbelknäppt:dubbelknäppta:dubbelknäppta::::
+579567r3<adjektiv>dubbelkonisk:dubbelkonisk:dubbelkoniskt:dubbelkoniska:dubbelkoniska::::
+797456r3<adjektiv>dubbelkonkav:dubbelkonkav:dubbelkonkavt:dubbelkonkava:dubbelkonkava::::
+900772r3<adjektiv>dubbelkärnig:dubbelkärnig:dubbelkärnigt:dubbelkärniga:dubbelkärniga::::::::::::
+790492r3<adjektiv>dubbelkönad:dubbelkönad:dubbelkönat:dubbelkönade:dubbelkönade:!:!:!:
+790495r3<adjektiv>dubbelledad:dubbelledad:dubbelledat:dubbelledade:dubbelledade:!:!:!:
+790498r3<adjektiv>dubbellimmad:dubbellimmad:dubbellimmat:dubbellimmade:dubbellimmade:!:!:!:
+790501r3<adjektiv>dubbellindad:dubbellindad:dubbellindat:dubbellindade:dubbellindade:!:!:!:
+937776r4<substantiv>dubbelliv:dubbelliv:dubbellivs:dubbellivet:dubbellivets:dubbelliv:dubbellivs:dubbelliven:dubbellivens
+COMPOUND(564600, 552667): dubbel + liv
+790504r3<adjektiv>dubbelmantlad:dubbelmantlad:dubbelmantlat:dubbelmantlade:dubbelmantlade:!:!:!:
+989619r4<substantiv>dubbelmasugn:dubbelmasugn:dubbelmasugns:dubbelmasugnen:dubbelmasugnens:dubbelmasugnar:dubbelmasugnars:dubbelmasugnarna:dubbelmasugnarnas
+COMPOUND(564600, 739071): dubbel + masugn
+790507r3<adjektiv>dubbelmatad:dubbelmatad:dubbelmatat:dubbelmatade:dubbelmatade:!:!:!:
+639990r4<substantiv>dubbelmoral:dubbelmoral:dubbelmorals:dubbelmoralen:dubbelmoralens:dubbelmoraler:dubbelmoralers:dubbelmoralerna:dubbelmoralernas
+COMPOUND(564600, 621364): dubbel + moral
+975262r3<substantiv>dubbelnelson:dubbelnelson:::::::
+790510r3<adjektiv>dubbelnitad:dubbelnitad:dubbelnitat:dubbelnitade:dubbelnitade:!:!:!:
+589100r3<verb>dubbelpanera:dubbelpanera:dubbelpanerade:dubbelpanerat:dubbelpanerar:dubbelpanera:::::::::
+571904r3<adjektiv>dubbelpipig:dubbelpipig:dubbelpipigt:dubbelpipiga:dubbelpipiga::::
+571907r3<adjektiv>dubbelradig:dubbelradig:dubbelradigt:dubbelradiga:dubbelradiga::::
+611509r3<substantiv>dubbelrelä:dubbelrelä:dubbelreläs:dubbelreläet:dubbelreläets:dubbelreläer:dubbelreläers:dubbelreläerna:dubbelreläernas
+656396r3<adjektiv>dubbelriktad:dubbelriktad:dubbelriktat:dubbelriktade:dubbelriktade:!:!:!:
+656397r3<substantiv>dubbelrum:dubbelrum:dubbelrums:dubbelrummet:dubbelrummets:dubbelrum:dubbelrums:dubbelrummen:dubbelrummens
+571910r3<adjektiv>dubbelsidig:dubbelsidig:dubbelsidigt:dubbelsidiga:dubbelsidiga::::
+921591r4<substantiv>dubbelskalv:dubbelskalv:dubbelskalvs:dubbelskalvet:dubbelskalvets:dubbelskalv:dubbelskalvs:dubbelskalven:dubbelskalvens
+COMPOUND(564600, 556119): dubbel + skalv
+571911r3<adjektiv>dubbelskivig:dubbelskivig:dubbelskivigt:dubbelskiviga:dubbelskiviga::::
+944421r4<substantiv>dubbelslaf:dubbelslaf:dubbelslafs:dubbelslafen:dubbelslafens:dubbelslafar:dubbelslafars:dubbelslafarna:dubbelslafarnas
+COMPOUND(564600, 628721): dubbel + slaf
+571914r3<adjektiv>dubbelspaltig:dubbelspaltig:dubbelspaltigt:dubbelspaltiga:dubbelspaltiga::::
+565716r3<adjektiv>dubbelspindlig:dubbelspindlig:dubbelspindligt:dubbelspindliga:dubbelspindliga::::
+571917r3<adjektiv>dubbelspråkig:dubbelspråkig:dubbelspråkigt:dubbelspråkiga:dubbelspråkiga::::
+571920r3<adjektiv>dubbelspårig:dubbelspårig:dubbelspårigt:dubbelspåriga:dubbelspåriga::::
+790513r3<adjektiv>dubbelstickad:dubbelstickad:dubbelstickat:dubbelstickade:dubbelstickade:!:!:!:
+966907r4<adjektiv>dubbelstokastisk:dubbelstokastisk:dubbelstokastiskt:dubbelstokastiska:dubbelstokastiska::::::::::::
+COMPOUND(564600, 583995): dubbel + stokastisk
+579570r3<adjektiv>dubbelsymmetrisk:dubbelsymmetrisk:dubbelsymmetriskt:dubbelsymmetriska:dubbelsymmetriska::::
+844798r3<substantiv>dubbeltid:dubbeltid:dubbeltids:dubbeltiden:dubbeltidens:dubbeltider:dubbeltiders:dubbeltiderna:dubbeltidernas
+844809r2<substantiv>dubbeltimma::::::::
+571923r3<adjektiv>dubbeltrådig:dubbeltrådig:dubbeltrådigt:dubbeltrådiga:dubbeltrådiga::::
+571926r4<adjektiv>dubbeltydig:dubbeltydig:dubbeltydigt:dubbeltydiga:dubbeltydiga::::dubbeltydige
+941605r3<substantiv>dubbeltydighet:dubbeltydighet:dubbeltydighets:dubbeltydigheten:dubbeltydighetens:dubbeltydigheter:dubbeltydigheters:dubbeltydigheterna:dubbeltydigheternas
+675979r4<substantiv>dubbeluniversalvalsverk:dubbeluniversalvalsverk:dubbeluniversalvalsverks:dubbeluniversalvalsverket:dubbeluniversalvalsverkets:dubbeluniversalvalsverk:dubbeluniversalvalsverks:dubbeluniversalvalsverken:dubbeluniversalvalsverkens
+COMPOUND(564600, 675980): dubbel + universalvalsverk
+896675r4<substantiv>dubbelval:dubbelval:dubbelvals:dubbelvalet:dubbelvalets:dubbelval:dubbelvals:dubbelvalen:dubbelvalens
+CUSTOM: y y dubbelvals
+896683r3<substantiv>dubbelvalsavveckling::::::::
+COMPOUND(896675, 606247): dubbelval + avveckling
+845562r4<verb>dubbelvika:dubbelvika:dubbelvek:dubbelvikit, dubbelvikt:dubbelviker:dubbelvik:dubbelvikas:dubbelveks:dubbelvikits, dubbelvikts:dubbelviks, dubbelvikes:dubbelvikt, dubbelviken:dubbelvikt, dubbelviket:dubbelvikta, dubbelvikna:dubbelvikande:
+COMPOUND(564600, 593449): dubbel + vika
+790516r3<adjektiv>dubbelvingad:dubbelvingad:dubbelvingat:dubbelvingade:dubbelvingade:!:!:!:
+571927r3<adjektiv>dubbelväggig:dubbelväggig:dubbelväggigt:dubbelväggiga:dubbelväggiga::::
+677453r4<substantiv>dubbelväv:dubbelväv:dubbelvävs:dubbelväven:dubbelvävens:dubbelvävar:dubbelvävars:dubbelvävarna:dubbelvävarnas
+COMPOUND(564600, 552117): dubbel + väv
+819154r3<substantiv>dubbelörn:dubbelörn:dubbelörns:dubbelörnen:dubbelörnens:dubbelörnar:dubbelörnars:dubbelörnarna:dubbelörnarnas
+631697r5<adjektiv>dubbfri:dubbfri:dubbfritt:dubbfria:dubbfria::::::::::::
+907004r3<substantiv>dubbförbud:dubbförbud:dubbförbuds:dubbförbudet:dubbförbudets::::
+546447r8<verb>dubbla:dubbla:dubblade:dubblat:dubblar:dubbla:dubblas:dubblades:dubblats:dubblas:dubblad:dubblat:dubblade:dubblande:
+863802r3<substantiv>dubblé:dubblé:dubblés:dubblén:dubbléns:dubbléer:dubbléers:dubbléerna:dubbléernas
+546448r5<verb>dubblera:dubblera:dubblerade:dubblerat:dubblerar:dubblera:dubbleras:dubblerades:dubblerats:dubbleras:dubblerad:dubblerat:dubblerade:dubblerande:
+656398r3<substantiv>dubblering:dubblering:dubblerings:dubbleringen:dubbleringens:dubbleringar:dubbleringars:dubbleringarna:dubbleringarnas
+CUSTOM: y y dubblerings
+548726r4<substantiv>dubblett:dubblett:dubbletts:dubbletten:dubblettens:dubbletter:dubbletters:dubbletterna:dubbletternas
+CUSTOM: y y dubblett
+896685r4<substantiv>dubblettavi:dubblettavi:dubblettavis:dubblettavin:dubblettavins:dubblettavier:dubblettaviers:dubblettavierna:dubblettaviernas
+COMPOUND(548726, 557848): dubblett + avi
+561310r3<substantiv>dubbling:dubbling:dubblings:dubblingen:dubblingens:dubblingar:dubblingars:dubblingarna:dubblingarnas
+564793r3<adjektiv>dubblös:dubblös:dubblöst:dubblösa:dubblösa::::
+CUSTOM: n n
+954689r3<substantiv>dubbning:dubbning:dubbnings:dubbningen:dubbningens:dubbningar:dubbningars:dubbningarna:dubbningarnas
+904503r10<substantiv>dubier:!:!:!:!:dubier:dubiers:dubierna:dubiernas
+CUSTOM: y n
+649627r4<adjektiv>dubiös:dubiös:dubiöst:dubiösa:dubiösa:dubiösare:dubiösast:dubiösaste:dubiöse
+900924r3<egennamn>Dublin:Dublin:Dublins
+CUSTOM: y n Dublin
+975265r4<substantiv>dublon:dublon:dublons:dublonen:dublonens:dubloner:dubloners:dublonerna:dublonernas
+CUSTOM: y n
+975283r3<substantiv>duchesse:duchesse:duchesses:duchessen:duchessens::::
+561318r4<verb>ducka:ducka:duckade:duckat:duckar:ducka::::::::duckande:
+975287r3<substantiv>duckning:duckning:ducknings:duckningen:duckningens:duckningar:duckningars:duckningarna:duckningarnas
+548728r4<substantiv>duell:duell:duells:duellen:duellens:dueller:duellers:duellerna:duellernas
+863815r3<substantiv>duellant:duellant:duellants:duellanten:duellantens:duellanter:duellanters:duellanterna:duellanternas
+546449r5<verb>duellera:duellera:duellerade:duellerat:duellerar:duellera:duelleras:duellerades:duellerats:duelleras::::duellerande:
+975295r3<substantiv>duellering:duellering:duellerings:duelleringen:duelleringens::::
+975299r4<substantiv>duellpistol:duellpistol:duellpistols:duellpistolen:duellpistolens:duellpistoler:duellpistolers:duellpistolerna:duellpistolernas
+COMPOUND(548728, 550202): duell + pistol
+688980r3<substantiv>duenna:duenna:duennas:duennan:duennans:duennor:duennors:duennorna:duennornas
+624934r5<substantiv>duett:duett:duetts:duetten:duettens:duetter:duetters:duetterna:duetternas
+975307r4<substantiv>duettsång:duettsång:duettsångs:duettsången:duettsångens:duettsånger:duettsångers:duettsångerna:duettsångernas
+COMPOUND(624934, 550616): duett + sång
+960995r3<substantiv>duffel:duffel:duffels:duffeln:duffelns:dufflar:dufflars:dufflarna:dufflarnas
+CUSTOM: y n
+558371r4<verb>duga:duga:dugde, dög:dugt:duger::::::::::
+800925r3<adjektiv>dugande:dugande:dugande:dugande:dugande:!:!:!:
+624080r3<substantiv>dugg:dugg:duggs:dugget:duggets::::
+CUSTOM: y n !duggs
+975315r3<substantiv>dugga:dugga:duggas:duggan:duggans:duggor:duggors:duggorna:duggornas
+CUSTOM: y n
+649088r6<verb>dugga:dugga:duggade:duggat:duggar:dugga::::::::duggande:
+766603r3<egennamn>Dugge:Dugge:Dugges
+571930r3<adjektiv>duggig:duggig:duggigt:duggiga:duggiga::::
+656399r3<substantiv>duggregn:duggregn:duggregns:duggregnet:duggregnets:duggregn:duggregns:duggregnen:duggregnens
+763211r3<verb>duggregna:duggregna:duggregnade:duggregnat:duggregnar:duggregna:::::::::
+563286r5<adjektiv>duglig:duglig:dugligt:dugliga:dugliga:dugligare:dugligast:dugligaste:duglige
+688978r3<substantiv>duglighet:duglighet:duglighets:dugligheten:duglighetens::::
+CUSTOM: y y duglighets
+551077r15<substantiv>duk:duk:duks:duken:dukens:dukar:dukars:dukarna:dukarnas
+546450r6<verb>duka:duka:dukade:dukat:dukar:duka:dukas:dukades:dukats:dukas:dukad:dukat:dukade:dukande:
+677130r3<substantiv>dukagång:dukagång:dukagångs:dukagången:dukagångens:dukagångar:dukagångars:dukagångarna:dukagångarnas
+548730r3<substantiv>dukat:dukat:dukats:dukaten:dukatens:dukater:dukaters:dukaterna:dukaternas
+801248r3<adjektiv>dukklädd:dukklädd:dukklätt:dukklädda:dukklädda::::
+CUSTOM: y n n
+753615r3<substantiv>dukning:dukning:duknings:dukningen:dukningens:dukningar:dukningars:dukningarna:dukningarnas
+571330r3<adjektiv>duktig:duktig:duktigt:duktiga:duktiga:duktigare:duktigast:duktigaste:duktige
+912934r3<substantiv>duktighet:duktighet:duktighets:duktigheten:duktighetens::::
+797459r3<adjektiv>duktil:duktil:duktilt:duktila:duktila::::
+CUSTOM: n n n
+975323r4<substantiv>duktyg:duktyg:duktygs:duktyget:duktygets:duktyger, duktyg:duktygers, duktygs:duktygerna, duktygen:duktygernas, duktygens
+COMPOUND(551077, 600498): duk + tyg
+CUSTOM: y n
+555085r5<adjektiv>dum:dum:dumt:dumma:dumma:dummare:dummast:dummaste:dumme
+CUSTOM: y y dum
+624088r3<substantiv>duma:duma:dumas:duman:dumans:!:!:!:!
+CUSTOM: y n !duma !dumas %duma %dumas
+649628r3<substantiv>dumbom:dumbom:dumboms:dumbommen:dumbommens:dumbommar:dumbommars:dumbommarna:dumbommarnas
+930597r3<substantiv>dumburk:dumburk:dumburks:dumburken:dumburkens:dumburkar:dumburkars:dumburkarna:dumburkarnas
+571933r5<adjektiv>dumdristig:dumdristig:dumdristigt:dumdristiga:dumdristiga:dumdristigare:dumdristigast:dumdristigaste:dumdristige
+689377r3<substantiv>dumdristighet:dumdristighet:dumdristighets:dumdristigheten:dumdristighetens::::
+CUSTOM: y y dumdristighets
+689381r3<adjektiv>dumdryg:dumdryg:dumdrygt:dumdryga:dumdryga::::dumdryge
+689385r3<substantiv>dumdumkula:dumdumkula:dumdumkulas:dumdumkulan:dumdumkulans:dumdumkulor:dumdumkulors:dumdumkulorna:dumdumkulornas
+601689r3<substantiv>dumhet:dumhet:dumhets:dumheten:dumhetens:dumheter:dumheters:dumheterna:dumheternas
+CUSTOM: y y dumhets
+689393r4<substantiv>dumhuvud:dumhuvud:dumhuvuds:dumhuvudet:dumhuvudets:dumhuvud, dumhuvuden:dumhuvuds, dumhuvudens:dumhuvudena:dumhuvudenas
+COMPOUND(555085, 552483): dum + huvud
+656400r3<verb>dumma:dumma:dummade:dummat:dummar:dumma:::::::::
+689401r3<substantiv>dummer:dummer:dummers:dummern:dummerns::::
+689405r4<substantiv>dummerjöns:dummerjöns:dummerjöns:dummerjönsen:dummerjönsens:dummerjönsar:dummerjönsars:dummerjönsarna:dummerjönsarnas
+863831r3<substantiv>dumming:dumming:dummings:dummingen:dummingens:dummingar:dummingars:dummingarna:dummingarnas
+546451r5<verb>dumpa:dumpa:dumpade:dumpat:dumpar:dumpa:dumpas:dumpades:dumpats:dumpas:dumpad:dumpat:dumpade::
+CUSTOM: y y dump
+956112r3<substantiv>dumper:dumper:dumpers:dumpern:dumperns:dumprar:dumprars:dumprarna:dumprarnas
+CUSTOM: y n
+656402r3<substantiv>dumpning:dumpning:dumpnings:dumpningen:dumpningens:dumpningar:dumpningars:dumpningarna:dumpningarnas
+CUSTOM: y y dumpnings
+733240r4<substantiv>dumpventil:dumpventil:dumpventils:dumpventilen:dumpventilens:dumpventiler:dumpventilers:dumpventilerna:dumpventilernas
+COMPOUND(546451, 550765): dumpa + ventil
+656403r3<substantiv>dumsnut:dumsnut:dumsnuts:dumsnuten:dumsnutens:dumsnutar:dumsnutars:dumsnutarna:dumsnutarnas
+552332r11<substantiv>dun:dun:duns:dunet:dunets:dun:duns:dunen:dunens
+CUSTOM: y n
+863839r3<substantiv>dunboll:dunboll:dunbolls:dunbollen:dunbollens:dunbollar:dunbollars:dunbollarna:dunbollarnas
+961003r4<substantiv>dunbolster:dunbolster:dunbolsters:dunbolstern:dunbolsterns:dunbolstrar:dunbolstrars:dunbolstrarna:dunbolstrarnas
+COMPOUND(552332, 660396): dun + bolster
+961011r4<substantiv>dunbolster:dunbolster:dunbolsters:dunbolstret:dunbolstrets:dunbolster:dunbolsters:dunbolstren:dunbolstrens
+COMPOUND(552332, 835395): dun + bolster
+649632r10<substantiv>dunder:dunder:dunders:dundret:dundrets:dunder:dunders:dundren:dundrens
+CUSTOM: y y dunder
+947194r4<substantiv>dunderhit:dunderhit:dunderhits:dunderhitten:dunderhittens:dunderhittar, dunderhits:dunderhittars, dunderhits:dunderhittarna, dunderhitsen:dunderhittarnas, dunderhitsens
+COMPOUND(649632, 936538): dunder + hit
+753623r4<substantiv>dunderkur:dunderkur:dunderkurs:dunderkuren:dunderkurens:dunderkurer:dunderkurers:dunderkurerna:dunderkurernas
+COMPOUND(649632, 549817): dunder + kur
+753631r4<substantiv>dundermiss:dundermiss:dundermiss:dundermissen:dundermissens:dundermissar:dundermissars:dundermissarna:dundermissarnas
+COMPOUND(649632, 551724): dunder + miss
+753638r4<substantiv>dunderskräll:dunderskräll:dunderskrälls:dunderskrällen:dunderskrällens:dunderskrällar:dunderskrällars:dunderskrällarna:dunderskrällarnas
+COMPOUND(649632, 656748): dunder + skräll
+753646r4<substantiv>dundersuccé:dundersuccé:dundersuccés:dundersuccén:dundersuccéns:dundersuccéer:dundersuccéers:dundersuccéerna:dundersuccéernas
+COMPOUND(649632, 620953): dunder + succé
+753654r4<substantiv>dundertabbe:dundertabbe:dundertabbes:dundertabben:dundertabbens:dundertabbar:dundertabbars:dundertabbarna:dundertabbarnas
+COMPOUND(649632, 671823): dunder + tabbe
+656405r5<verb>dundra:dundra:dundrade:dundrat:dundrar:dundra:dundras:dundrades:dundrats:dundras::::dundrande:
+649089r5<substantiv>dunge:dunge:dunges:dungen:dungens:dungar:dungars:dungarna:dungarnas
+571934r3<adjektiv>dunig:dunig:dunigt:duniga:duniga::::
+CUSTOM: y n
+912938r4<substantiv>dunjacka:dunjacka:dunjackas:dunjackan:dunjackans:dunjackor:dunjackors:dunjackorna:dunjackornas
+COMPOUND(552332, 625502): dun + jacka
+941469r4<substantiv>dunk:dunk:dunks:dunket:dunkets::::
+551079r3<substantiv>dunk:dunk:dunks:dunken:dunkens:dunkar:dunkars:dunkarna:dunkarnas
+546452r5<verb>dunka:dunka:dunkade:dunkat:dunkar:dunka:dunkas:dunkades:dunkats:dunkas:dunkad:dunkat:dunkade:dunkande:
+656407r3<substantiv>dunkel:dunkel:dunkels:dunklet:dunklets::::
+564504r5<adjektiv>dunkel:dunkel:dunkelt:dunkla:dunkla:dunklare:dunklast:dunklaste:dunkle
+656406r3<adjektiv>dunkelblå:dunkelblå:dunkelblått:dunkelblåa:dunkelblåa:!:!:!:
+689408r4<substantiv>dunkelhet:dunkelhet:dunkelhets:dunkelheten:dunkelhetens:dunkelheter:dunkelheters:dunkelheterna:dunkelheternas
+CUSTOM: y y dunkelhets
+881878r3<substantiv>dunkning:dunkning:dunknings:dunkningen:dunkningens:dunkningar:dunkningars:dunkningarna:dunkningarnas
+975337r4<substantiv>dunkudde:dunkudde:dunkuddes:dunkudden:dunkuddens:dunkuddar:dunkuddars:dunkuddarna:dunkuddarnas
+COMPOUND(552332, 599866): dun + kudde
+551081r3<substantiv>duns:duns:duns:dunsen:dunsens:dunsar:dunsars:dunsarna:dunsarnas
+649091r4<verb>dunsa:dunsa:dunsade:dunsat:dunsar:dunsa::::::::dunsande:
+548731r3<substantiv>dunst:dunst:dunsts:dunsten:dunstens:dunster:dunsters:dunsterna:dunsternas
+649629r5<verb>dunsta:dunsta:dunstade:dunstat:dunstar:dunsta:dunstas:dunstades:dunstats:dunstas::::dunstande:
+563735r3<adjektiv>dunstfri:dunstfri:dunstfritt:dunstfria:dunstfria::::
+CUSTOM: y n n
+799216r3<adjektiv>dunstfylld:dunstfylld:dunstfyllt:dunstfyllda:dunstfyllda::::
+947175r4<substantiv>duntäcke:duntäcke:duntäckes:duntäcket:duntäckets:duntäcken:duntäckens:duntäckena:duntäckenas
+COMPOUND(552332, 593431): dun + täcke
+863856r3<substantiv>dununge:dununge:dununges:dunungen:dunungens:dunungar:dunungars:dunungarna:dunungarnas
+835427r3<substantiv>dunört:dunört:dunörts:dunörten:dunörtens:dunörter:dunörters:dunörterna:dunörternas
+558272r6<substantiv>duo:duo:duos:duon:duons:duor:duors:duorna:duornas
+CUSTOM: y y
+975345r5<substantiv>duodes:duodes:duodes:duodesen:duodesens:duodeser:duodesers:duodeserna:duodesernas
+CUSTOM: y n
+975352r4<substantiv>duodesformat:duodesformat:duodesformats:duodesformatet:duodesformatets:duodesformat:duodesformats:duodesformaten:duodesformatens
+COMPOUND(975345, 552391): duodes + format
+975359r4<substantiv>duodesupplaga:duodesupplaga:duodesupplagas:duodesupplagan:duodesupplagans:duodesupplagor:duodesupplagors:duodesupplagorna:duodesupplagornas
+COMPOUND(975345, 624173): duodes + upplaga
+546453r5<verb>dupera:dupera:duperade:duperat:duperar:dupera:duperas:duperades:duperats:duperas:duperad:duperat:duperade:duperande:
+904511r3<substantiv>dupering:dupering:duperings:duperingen:duperingens:duperingar:duperingars:duperingarna:duperingarnas
+689410r3<substantiv>duplex:duplex::::!:!:!:!
+CUSTOM: y n n
+546454r5<verb>duplicera:duplicera:duplicerade:duplicerat:duplicerar:duplicera:dupliceras:duplicerades:duplicerats:dupliceras:duplicerad:duplicerat:duplicerade:duplicerande:
+863866r3<substantiv>duplicering:duplicering:duplicerings:dupliceringen:dupliceringens:dupliceringar:dupliceringars:dupliceringarna:dupliceringarnas
+733249r3<substantiv>duplikat:duplikat:duplikats:duplikatet:duplikatets:duplikat:duplikats:duplikaten:duplikatens
+863874r3<substantiv>duplikator:duplikator:duplikators:duplikatorn:duplikatorns:duplikatorer:duplikatorers:duplikatorerna:duplikatorernas
+558290r8<substantiv>dur:dur:::::::
+DEFINITION 1: Musikalisk term för en typ av tonarter. (Den andra typen är "moll".)
+CUSTOM: y n
+570727r3<adjektiv>durabel:durabel:durabelt:durabla:durabla::::
+975368r4<substantiv>durackord:durackord:durackords:durackordet:durackordets:durackord:durackords:durackorden:durackordens
+COMPOUND(558290, 552162): dur + ackord
+797462r3<adjektiv>durativ:durativ:durativt:durativa:durativa::::
+624084r6<substantiv>durk:durk:durks:durken:durkens:durkar:durkars:durkarna:durkarnas
+CUSTOM: y n
+763056r3<adjektiv>durkdriven:durkdriven:durkdrivet:durkdrivna:durkdrivna::::durkdrivne
+753663r3<substantiv>durkslag:durkslag:durkslags:durkslaget:durkslagets:durkslag:durkslags:durkslagen:durkslagens
+975374r3<substantiv>duroplast:duroplast:duroplasts:duroplasten:duroplastens:duroplaster:duroplasters:duroplasterna:duroplasternas
+975390r3<substantiv>durra:durra:durras:durran:durrans::::
+CUSTOM: y n
+975382r4<substantiv>durskala:durskala:durskalas:durskalan:durskalans:durskalor:durskalors:durskalorna:durskalornas
+COMPOUND(558290, 595122): dur + skala
+975394r4<substantiv>durspel:durspel:durspels:durspelet:durspelets:durspel:durspels:durspelen:durspelens
+COMPOUND(558290, 552956): dur + spel
+975400r4<substantiv>durtreklang:durtreklang:durtreklangs:durtreklangen:durtreklangens:durtreklanger:durtreklangers:durtreklangerna:durtreklangernas
+COMPOUND(558290, 550694): dur + treklang
+863882r3<substantiv>durumvete:durumvete:durumvetes:durumvetet:durumvetets::::
+558289r3<substantiv>dus:dus:::::::
+CUSTOM: y n
+551082r5<substantiv>dusch:dusch:duschs:duschen:duschens:duschar:duschars:duscharna:duscharnas
+CUSTOM: y y dusch
+546455r5<verb>duscha:duscha:duschade:duschat:duschar:duscha:duschas:duschades:duschats:duschas:duschad:duschat:duschade:duschande:
+875696r3<substantiv>duschkabin:duschkabin:duschkabins:duschkabinen:duschkabinens:duschkabiner:duschkabiners:duschkabinerna:duschkabinernas
+958741r3<substantiv>duschning:duschning:duschnings:duschningen:duschningens:duschningar:duschningars:duschningarna:duschningarnas
+753669r4<substantiv>duschrum:duschrum:duschrums:duschrummet:duschrummets:duschrum:duschrums:duschrummen:duschrummens
+COMPOUND(551082, 571182): dusch + rum
+552333r6<substantiv>dussin:dussin:dussins:dussinet:dussinets:dussin:dussins:dussinen:dussinens
+CUSTOM: y y dussin
+656410r3<substantiv>dussintal:dussintal:dussintals:dussintalet:dussintalets:dussintal:dussintals:dussintalen:dussintalens
+656415r3<adverb>dussintals:dussintals
+757628r6<substantiv>dussinvara:dussinvara:dussinvaras:dussinvaran:dussinvarans:dussinvaror:dussinvarors:dussinvarorna:dussinvarornas
+COMPOUND(552333, 562107): dussin + vara
+757636r3<adverb>dussinvis:dussinvis
+548733r3<substantiv>dust:dust:dusts:dusten:dustens:duster:dusters:dusterna:dusternas
+753675r3<substantiv>dusör:dusör:dusörs:dusören:dusörens:dusörer:dusörers:dusörerna:dusörernas
+938337r3<verb>dutta:dutta:duttade:duttat:duttar:dutta:duttas:duttades:duttats:duttas::::duttande:
+593945r6<substantiv>duva:duva:duvas:duvan:duvans:duvor:duvors:duvorna:duvornas
+801985r3<adjektiv>duvblå:duvblå:duvblått:duvblåa:duvblåa::::
+972170r3<egennamn>Duvbo:Duvbo:Duvbos
+656409r3<adjektiv>duven:duven:duvet:duvna:duvna::::
+CUSTOM: n n y
+863886r3<substantiv>duvfågel:duvfågel:duvfågels:duvfågeln:duvfågelns:duvfåglar:duvfåglars:duvfåglarna:duvfåglarnas
+801988r3<adjektiv>duvgrå:duvgrå:duvgrått:duvgråa:duvgråa::::
+863894r3<substantiv>duvhök:duvhök:duvhöks:duvhöken:duvhökens:duvhökar:duvhökars:duvhökarna:duvhökarnas
+863902r3<substantiv>duvkulla:duvkulla:duvkullas:duvkullan:duvkullans:duvkullor:duvkullors:duvkullorna:duvkullornas
+753683r3<substantiv>duvning:duvning:duvnings:duvningen:duvningens:duvningar:duvningars:duvningarna:duvningarnas
+975408r3<substantiv>duvpost:duvpost:duvposts:duvposten:duvpostens::::
+731431r3<substantiv>duvslag:duvslag:duvslags:duvslaget:duvslagets:duvslag:duvslags:duvslagen:duvslagens
+757637r3<substantiv>duvunge:duvunge:duvunges:duvungen:duvungens:duvungar:duvungars:duvungarna:duvungarnas
+625257r10<substantiv>dvala:dvala:dvalas:dvalan:dvalans::::
+800926r3<adjektiv>dvalliknande:dvalliknande:dvalliknande:dvalliknande:dvalliknande:!:!:!:
+975412r4<substantiv>dvaltillstånd:dvaltillstånd:dvaltillstånds:dvaltillståndet:dvaltillståndets:dvaltillstånd:dvaltillstånds:dvaltillstånden:dvaltillståndens
+COMPOUND(625257, 553043): dvala + tillstånd
+929619r3<förkortning>dvd:dvd
+591676r5<deponens>dväljas:dväljas:dvaldes, dväljdes:dvalts, dväljts:dväljs, dväljes:dväljs
+551084r6<substantiv>dvärg:dvärg:dvärgs:dvärgen:dvärgens:dvärgar:dvärgars:dvärgarna:dvärgarnas
+CUSTOM: y y dvärg
+907216r3<substantiv>dvärgbandmask:dvärgbandmask:dvärgbandmasks:dvärgbandmasken:dvärgbandmaskens::::
+837677r15<substantiv>dvärgbiätare:dvärgbiätare:dvärgbiätares:dvärgbiätaren:dvärgbiätarens:dvärgbiätare:dvärgbiätares:dvärgbiätarna:dvärgbiätarnas
+COMPOUND(551084, 969451): dvärg + biätare
+598192r3<substantiv>dvärgbjörk:dvärgbjörk:dvärgbjörks:dvärgbjörken:dvärgbjörkens:dvärgbjörkar:dvärgbjörkars:dvärgbjörkarna:dvärgbjörkarnas
+836907r3<substantiv>dvärgfalk:dvärgfalk:dvärgfalks:dvärgfalken:dvärgfalkens:dvärgfalkar:dvärgfalkars:dvärgfalkarna:dvärgfalkarnas
+939656r4<substantiv>dvärgget:dvärgget:dvärggets:dvärggeten:dvärggetens:dvärggetter:dvärggetters:dvärggetterna:dvärggetternas
+COMPOUND(551084, 555262): dvärg + get
+975418r3<substantiv>dvärginna:dvärginna:dvärginnas:dvärginnan:dvärginnans:dvärginnor:dvärginnors:dvärginnorna:dvärginnornas
+966912r3<substantiv>dvärglira:dvärglira:dvärgliras:dvärgliran:dvärglirans:dvärgliror:dvärglirors:dvärglirorna:dvärglirornas
+849580r3<substantiv>dvärgmås:dvärgmås:dvärgmås:dvärgmåsen:dvärgmåsens:dvärgmåsar:dvärgmåsars:dvärgmåsarna:dvärgmåsarnas
+725124r4<substantiv>dvärgplanet:dvärgplanet:dvärgplanets:dvärgplaneten:dvärgplanetens:dvärgplaneter:dvärgplaneters:dvärgplaneterna:dvärgplaneternas
+COMPOUND(551084, 550207): dvärg + planet
+824025r3<substantiv>dvärgras:dvärgras:dvärgras:dvärgrasen:dvärgrasens:dvärgraser:dvärgrasers:dvärgraserna:dvärgrasernas
+849588r3<substantiv>dvärgtax:dvärgtax:dvärgtax:dvärgtaxen:dvärgtaxens:dvärgtaxar:dvärgtaxars:dvärgtaxarna:dvärgtaxarnas
+557659r4<substantiv>dy:dy:dys:dyn:dyns:!:!:!:!
+571940r3<adjektiv>dyaktig:dyaktig:dyaktigt:dyaktiga:dyaktiga::::
+CUSTOM: n n
+975426r3<substantiv>dyblad:dyblad:dyblads:dybladet:dybladets:dyblad:dyblads:dybladen:dybladens
+649630r4<adjektiv>dyblöt:dyblöt:dyblött:dyblöta:dyblöta::::dyblöte
+975432r4<substantiv>dybotten:dybotten:dybottens:dybottnen, dybotten:dybottnens, dybottens:dybottnar:dybottnars:dybottnarna:dybottnarnas
+COMPOUND(557659, 643247): dy + botten
+863915r4<substantiv>dyckert:dyckert:dyckerts:dyckerten:dyckertens:dyckertar:dyckertars:dyckertarna:dyckertarnas
+975440r4<substantiv>dyckertspik:dyckertspik:dyckertspiks:dyckertspiken:dyckertspikens:dyckertspikar:dyckertspikars:dyckertspikarna:dyckertspikarnas
+COMPOUND(863915, 551907): dyckert + spik
+624073r6<substantiv>dyft:dyft::::!:!:!:!
+548735r6<substantiv>dygd:dygd:dygds:dygden:dygdens:dygder:dygders:dygderna:dygdernas
+CUSTOM: y n
+863923r3<substantiv>dygdemönster:dygdemönster:dygdemönsters:dygdemönstret:dygdemönstrets:dygdemönster:dygdemönsters:dygdemönstren:dygdemönstrens
+563361r3<adjektiv>dygdesam:dygdesam:dygdesamt:dygdesamma:dygdesamma::::
+571943r4<adjektiv>dygdig:dygdig:dygdigt:dygdiga:dygdiga:dygdigare:dygdigast:dygdigaste:dygdige
+926039r3<substantiv>dygdighet:dygdighet:dygdighets:dygdigheten:dygdighetens::::
+552334r6<substantiv>dygn:dygn:dygns:dygnet:dygnets:dygn:dygns:dygnen:dygnens
+CUSTOM: y y dygns
+961016r3<adjektiv>dygnetruntöppen:dygnetruntöppen:dygnetruntöppet:dygnetruntöppna:dygnetruntöppna::::::::::::
+802266r3<adjektiv>dygnsgammal:dygnsgammal:dygnsgammalt:dygnsgamla:dygnsgamla::::
+753700r4<adjektiv>dygnslång:dygnslång:dygnslångt:dygnslånga:dygnslånga:!:!:!:!
+COMPOUND(552334, 564697): dygn + lång
+753691r4<substantiv>dygnsrytm:dygnsrytm:dygnsrytms:dygnsrytmen:dygnsrytmens:dygnsrytmer:dygnsrytmers:dygnsrytmerna:dygnsrytmernas
+COMPOUND(552334, 550425): dygn + rytm
+753703r4<substantiv>dygnsvariation:dygnsvariation:dygnsvariations:dygnsvariationen:dygnsvariationens:dygnsvariationer:dygnsvariationers:dygnsvariationerna:dygnsvariationernas
+COMPOUND(552334, 562135): dygn + variation
+753699r3<adverb>dygnsvis:dygnsvis
+571944r3<adjektiv>dyhaltig:dyhaltig:dyhaltigt:dyhaltiga:dyhaltiga::::
+CUSTOM: y n n
+571947r3<adjektiv>dyig:dyig:dyigt:dyiga:dyiga::::
+923726r4<substantiv>dyk:dyk:dyks:dyket:dykets:dyk:dyks:dyken:dykens
+558306r14<verb>dyka:dyka:dök:dykt:dyker:dyk:dykas:dyktes:dykts:dyks::::dykande:
+CUSTOM: y n
+975448r4<substantiv>dykand:dykand:dykands:dykanden:dykandens:dykänder:dykänders:dykänderna:dykändernas
+COMPOUND(923726, 557824): dyk + and
+656419r3<substantiv>dykardräkt:dykardräkt:dykardräkts:dykardräkten:dykardräktens:dykardräkter:dykardräkters:dykardräkterna:dykardräkternas
+615193r3<substantiv>dykare:dykare:dykares:dykaren:dykarens:dykare:dykares:dykarna:dykarnas
+CUSTOM: y y dykar
+955726r4<substantiv>dykcertifikat:dykcertifikat:dykcertifikats:dykcertifikatet:dykcertifikatets:dykcertifikat:dykcertifikats:dykcertifikaten:dykcertifikatens
+COMPOUND(558306, 552300): dyka + certifikat
+975456r3<substantiv>dykdalb:dykdalb:dykdalbs:dykdalben:dykdalbens:dykdalber:dykdalbers:dykdalberna:dykdalbernas
+975464r3<substantiv>dykeri:dykeri:dykeris:dykeriet:dykeriets::::
+896695r4<substantiv>dykinstruktör:dykinstruktör:dykinstruktörs:dykinstruktören:dykinstruktörens:dykinstruktörer:dykinstruktörers:dykinstruktörerna:dykinstruktörernas
+COMPOUND(558306, 549350): dyka + instruktör
+975468r3<substantiv>dykläge:dykläge:dykläges:dykläget:dyklägets:dyklägen:dyklägens:dyklägena:dyklägenas
+656420r3<substantiv>dykning:dykning:dyknings:dykningen:dykningens:dykningar:dykningars:dykningarna:dykningarnas
+CUSTOM: y y dyknings +dyknings
+912946r4<substantiv>dykolycka:dykolycka:dykolyckas:dykolyckan:dykolyckans:dykolyckor:dykolyckors:dykolyckorna:dykolyckornas
+COMPOUND(558306, 560318): dyka + olycka
+955734r4<substantiv>dykplats:dykplats:dykplats:dykplatsen:dykplatsens:dykplatser:dykplatsers:dykplatserna:dykplatsernas
+COMPOUND(558306, 550210): dyka + plats
+947923r4<substantiv>dykutrustning:dykutrustning:dykutrustnings:dykutrustningen:dykutrustningens:dykutrustningar:dykutrustningars:dykutrustningarna:dykutrustningarnas
+COMPOUND(558306, 631941): dyka + utrustning
+564560r3<adjektiv>dylik:dylik:dylikt:dylika:dylika::::
+975476r3<adverb>dymedelst:dymedelst
+925826r4<substantiv>dymling:dymling:dymlings:dymlingen:dymlingens:dymlingar:dymlingars:dymlingarna:dymlingarnas
+CUSTOM: y y dymlings
+925834r3<substantiv>dymlingsmaskin::::::::
+COMPOUND(925826, 550005): dymling + maskin
+975477r3<substantiv>dymmelonsdag:dymmelonsdag:dymmelonsdags:dymmelonsdagen:dymmelonsdagens:dymmelonsdagar:dymmelonsdagars:dymmelonsdagarna:dymmelonsdagarnas
+975485r3<substantiv>dymmelvecka:dymmelvecka:dymmelveckas:dymmelveckan:dymmelveckans:dymmelveckor:dymmelveckors:dymmelveckorna:dymmelveckornas
+624079r5<substantiv>dyn:dyn:dyns:dynen:dynens:dyner:dyners:dynerna:dynernas
+624077r4<substantiv>dyna:dyna:dynas:dynan:dynans:dynor:dynors:dynorna:dynornas
+656421r4<substantiv>dynamik:dynamik:dynamiks:dynamiken:dynamikens::::
+579573r4<adjektiv>dynamisk:dynamisk:dynamiskt:dynamiska:dynamiska::::dynamiske
+656423r3<substantiv>dynamit:dynamit:dynamits:dynamiten:dynamitens::::
+CUSTOM: y y dynamit
+863929r3<substantiv>dynamitard:dynamitard:dynamitards:dynamitarden:dynamitardens:dynamitarder:dynamitarders:dynamitarderna:dynamitardernas
+753704r3<substantiv>dynamitgubbe:dynamitgubbe:dynamitgubbes:dynamitgubben:dynamitgubbens:dynamitgubbar:dynamitgubbars:dynamitgubbarna:dynamitgubbarnas
+633187r4<substantiv>dynamo:dynamo:dynamos:dynamon:dynamons:dynamor:dynamors:dynamorna:dynamornas
+579574r3<adjektiv>dynamoelektrisk:dynamoelektrisk:dynamoelektriskt:dynamoelektriska:dynamoelektriska::::
+863937r3<substantiv>dynamometer:dynamometer:dynamometers:dynamometern:dynamometerns:dynamometrar:dynamometrars:dynamometrarna:dynamometrarnas
+641650r3<substantiv>dynasti:dynasti:dynastis:dynastin:dynastins:dynastier:dynastiers:dynastierna:dynastiernas
+579577r3<adjektiv>dynastisk:dynastisk:dynastiskt:dynastiska:dynastiska::::
+975493r4<substantiv>dynbildning:dynbildning:dynbildnings:dynbildningen:dynbildningens:dynbildningar:dynbildningars:dynbildningarna:dynbildningarnas
+COMPOUND(624079, 651396): dyn + bildning
+649092r7<substantiv>dynga:dynga:dyngas:dyngan:dyngans::::
+723069r3<substantiv>dyngbagge:dyngbagge:dyngbagges:dyngbaggen:dyngbaggens:dyngbaggar:dyngbaggars:dyngbaggarna:dyngbaggarnas
+975501r5<substantiv>dynggrep:dynggrep, dynggrepe:dynggreps, dynggrepes:dynggrepen:dynggrepens:dynggrepar:dynggrepars:dynggreparna:dynggreparnas
+COMPOUND(649092, 673283): dynga + grep, grepe
+975510r4<substantiv>dynghög:dynghög:dynghögs:dynghögen:dynghögens:dynghögar:dynghögars:dynghögarna:dynghögarnas
+COMPOUND(649092, 551444): dynga + hög
+571950r3<adjektiv>dyngig:dyngig:dyngigt:dyngiga:dyngiga::::
+738024r3<adjektiv>dyngrak:dyngrak::dyngraka:dyngraka::::dyngrake
+975518r4<substantiv>dyngstack:dyngstack:dyngstacks:dyngstacken:dyngstackens:dyngstackar:dyngstackars:dyngstackarna:dyngstackarnas
+COMPOUND(649092, 622185): dynga + stack
+763060r3<adjektiv>dyngsur:dyngsur:dyngsurt:dyngsura:dyngsura::::dyngsure
+656425r3<substantiv>dyning:dyning:dynings:dyningen:dyningens:dyningar:dyningars:dyningarna:dyningarnas
+CUSTOM: y y dynings
+975526r4<substantiv>dynlandskap:dynlandskap:dynlandskaps:dynlandskapet:dynlandskapets:dynlandskap:dynlandskaps:dynlandskapen:dynlandskapens
+COMPOUND(624079, 555499): dyn + landskap
+725142r3<substantiv>dynvar:dynvar:dynvars:dynvaret:dynvarets:dynvar:dynvars:dynvaren:dynvarens
+551086r3<substantiv>dypöl:dypöl:dypöls:dypölen:dypölens:dypölar:dypölars:dypölarna:dypölarnas
+CUSTOM: y n
+558305r5<adjektiv>dyr:dyr:dyrt:dyra:dyra:dyrare:dyrast:dyraste:dyre
+CUSTOM: y n
+569021r4<adjektiv>dyrbar:dyrbar:dyrbart:dyrbara:dyrbara:dyrbarare:dyrbarast:dyrbaraste:dyrbare
+753712r3<substantiv>dyrbarhet:dyrbarhet:dyrbarhets:dyrbarheten:dyrbarhetens:dyrbarheter:dyrbarheters:dyrbarheterna:dyrbarheternas
+656427r3<substantiv>dyrgrip:dyrgrip:dyrgrips:dyrgripen:dyrgripens:dyrgripar:dyrgripars:dyrgriparna:dyrgriparnas
+975532r3<substantiv>dyrhet:dyrhet:dyrhets:dyrheten:dyrhetens::::
+551087r3<substantiv>dyrk:dyrk:dyrks:dyrken:dyrkens:dyrkar:dyrkars:dyrkarna:dyrkarnas
+CUSTOM: y n
+546456r4<verb>dyrka:dyrka:dyrkade:dyrkat:dyrkar:dyrka:dyrkas:dyrkades:dyrkats:dyrkas:dyrkad:dyrkat:dyrkade:dyrkande:
+656428r5<substantiv>dyrkan:dyrkan:dyrkans:dyrkan:dyrkans::::
+689412r3<substantiv>dyrkande:dyrkande:dyrkandes:dyrkandet:dyrkandets::::
+799219r4<adjektiv>dyrkansvärd:dyrkansvärd:dyrkansvärt:dyrkansvärda:dyrkansvärda::::dyrkansvärde
+863946r3<substantiv>dyrkare:dyrkare:dyrkares:dyrkaren:dyrkarens:dyrkare:dyrkares:dyrkarna:dyrkarnas
+CUSTOM: y y +dyrkar
+563738r3<adjektiv>dyrkfri:dyrkfri:dyrkfritt:dyrkfria:dyrkfria::::
+656430r3<adjektiv>dyrköpt:dyrköpt:dyrköpt:dyrköpta:dyrköpta:!:!:!:!
+961023r3<substantiv>dyrtid:dyrtid:dyrtids:dyrtiden:dyrtidens:dyrtider:dyrtiders:dyrtiderna:dyrtidernas
+975536r3<substantiv>dyrtidstillägg:dyrtidstillägg:dyrtidstilläggs:dyrtidstillägget:dyrtidstilläggets:dyrtidstillägg:dyrtidstilläggs:dyrtidstilläggen:dyrtidstilläggens
+927978r3<substantiv>dysa:dysa:dysas:dysan:dysans:dysor:dysors:dysorna:dysornas
+CUSTOM: n n y
+736447r3<substantiv>dyscha:dyscha:dyschas:dyschan:dyschans:dyschor:dyschors:dyschorna:dyschornas
+975542r3<substantiv>dyschatell:dyschatell:dyschatells:dyschatellen:dyschatellens:dyschateller:dyschatellers:dyschatellerna:dyschatellernas
+753720r3<substantiv>dysenteri:dysenteri:dysenteris:dysenterin:dysenterins::::
+961032r3<substantiv>dysfunktion:dysfunktion:dysfunktions:dysfunktionen:dysfunktionens:dysfunktioner:dysfunktioners:dysfunktionerna:dysfunktionernas
+797466r3<adjektiv>dysfunktionell:dysfunktionell:dysfunktionellt:dysfunktionella:dysfunktionella::::
+753725r3<substantiv>dyskalkyli:dyskalkyli:::::::
+663645r3<substantiv>dyslektiker:dyslektiker:dyslektikers:dyslektikern:dyslektikerns:dyslektiker:dyslektikers:dyslektikerna:dyslektikernas
+579580r4<adjektiv>dyslektisk:dyslektisk:dyslektiskt:dyslektiska:dyslektiska::::dyslektiske::::::::
+663637r4<substantiv>dyslexi:dyslexi:dyslexis:dyslexin:dyslexins:dyslexier:dyslexiers:dyslexierna:dyslexiernas
+BASEWORDS: dyslexi
+CUSTOM: y y dyslexi
+975551r3<substantiv>dyspepsi:dyspepsi:dyspepsis:dyspepsin:dyspepsins::::
+723407r3<substantiv>dysprosium:dysprosium:dysprosiums:dysprosiumet:dysprosiumets::::
+636859r5<egennamn>Düsseldorf:Düsseldorf:Düsseldorfs
+564516r4<adjektiv>dyster:dyster:dystert:dystra:dystra:dystrare:dystrast:dystraste:dystre
+753735r3<substantiv>dystergök:dystergök:dystergöks:dystergöken:dystergökens:dystergökar:dystergökars:dystergökarna:dystergökarnas
+725156r3<substantiv>dysterhet:dysterhet:dysterhets:dysterheten:dysterhetens:dysterheter:dysterheters:dysterheterna:dysterheternas
+753727r3<substantiv>dysterkvist:dysterkvist:dysterkvists:dysterkvisten:dysterkvistens:dysterkvistar:dysterkvistars:dysterkvistarna:dysterkvistarnas
+656431r3<substantiv>dystopi:dystopi:dystopis:dystopin:dystopins:dystopier:dystopiers:dystopierna:dystopiernas
+579583r3<adjektiv>dystopisk:dystopisk:dystopiskt:dystopiska:dystopiska::::
+863950r3<adjektiv>dyvåt:dyvåt:dyvått:dyvåta:dyvåta::::dyvåte
+CUSTOM: y n
+557660r3<adverb>då:då
+557661r3<konjunktion>då:då
+552335r13<substantiv>dåd:dåd:dåds:dådet:dådets:dåd:dåds:dåden:dådens
+CUSTOM: y n
+753743r3<substantiv>dådkraft:dådkraft:dådkrafts:dådkraften:dådkraftens::::
+571953r3<adjektiv>dådkraftig:dådkraftig:dådkraftigt:dådkraftiga:dådkraftiga::::
+975555r3<adjektiv>dådlysten:dådlysten:dådlystet:dådlystna:dådlystna::::dådlystne::::::::
+564796r3<adjektiv>dådlös:dådlös:dådlöst:dådlösa:dådlösa::::
+656432r3<substantiv>dådlöshet:dådlöshet:dådlöshets:dådlösheten:dådlöshetens::::
+CUSTOM: y y dådlöshets
+975559r3<substantiv>dådra:dådra:dådras:dådran:dådrans:dådror:dådrors:dådrorna:dådrornas
+CUSTOM: n n y
+620514r3<adverb>dåförtiden:dåförtiden
+555244r5<adjektiv>dålig:dålig:dåligt:dåliga:dåliga:sämre:sämst:sämsta, sämste:dålige::::::::
+688979r3<substantiv>dålighet:dålighet:dålighets:dåligheten:dålighetens:dåligheter:dåligheters:dåligheterna:dåligheternas
+CUSTOM: y y dålighets
+558315r5<substantiv>dån:dån:dåns:dånet:dånets:dån:dåns:dånen:dånens
+CUSTOM: y n
+585522r4<verb>dåna:dåna:dånade:dånat:dånar:dåna::::::::dånande:
+CUSTOM: y n
+948787r3<substantiv>dåndimpen:::dåndimpen:::::
+571956r4<adjektiv>dåraktig:dåraktig:dåraktigt:dåraktiga:dåraktiga:dåraktigare:dåraktigast:dåraktigaste:dåraktige
+787519r3<substantiv>dåraktighet:dåraktighet:dåraktighets:dåraktigheten:dåraktighetens:dåraktigheter:dåraktigheters:dåraktigheterna:dåraktigheternas
+975567r3<substantiv>dårdikt:dårdikt:dårdikts:dårdikten:dårdiktens:dårdikter:dårdikters:dårdikterna:dårdikternas
+624097r5<substantiv>dåre:dåre:dåres:dåren:dårens:dårar:dårars:dårarna:dårarnas
+CUSTOM: y n
+725182r4<substantiv>dårfink:dårfink:dårfinks:dårfinken:dårfinkens:dårfinkar:dårfinkars:dårfinkarna:dårfinkarnas
+COMPOUND(624097, 629293): dåre + fink
+571957r3<adjektiv>dårfinkig:dårfinkig:dårfinkigt:dårfinkiga:dårfinkiga::::
+649631r4<substantiv>dårhus:dårhus:dårhus:dårhuset:dårhusets:dårhus:dårhus:dårhusen:dårhusens
+CUSTOM: y y dårhus
+673491r4<substantiv>dårhushjon:dårhushjon:dårhushjons:dårhushjonet:dårhushjonets:dårhushjon:dårhushjons:dårhushjonen:dårhushjonens
+COMPOUND(649631, 627751): dårhus + hjon
+571960r3<adjektiv>dårhusmässig:dårhusmässig:dårhusmässigt:dårhusmässiga:dårhusmässiga::::
+975575r3<substantiv>dårkista:dårkista:dårkistas:dårkistan:dårkistans:dårkistor:dårkistors:dårkistorna:dårkistornas
+961041r3<substantiv>dårpippi:dårpippi:dårpippis:dårpippin:dårpippins::::
+617525r3<substantiv>dårskap:dårskap:dårskaps:dårskapen:dårskapens:dårskaper:dårskapers:dårskaperna:dårskapernas
+CUSTOM: y y dårskaps
+648983r12<verb>dåsa:dåsa:dåsade:dåsat:dåsar:dåsa:dåsas:dåsades:dåsats:dåsas::::dåsande:!
+CUSTOM: y n !dåsas !dåsades !dåsats
+571963r4<adjektiv>dåsig:dåsig:dåsigt:dåsiga:dåsiga:dåsigare:dåsigast:dåsigaste:dåsige
+863958r3<substantiv>dåsighet:dåsighet:dåsighets:dåsigheten:dåsighetens::::
+649094r3<substantiv>dåtid:dåtid:dåtids:dåtiden:dåtidens:!:!:!:!
+571100r3<adjektiv>dåtida:dåtida:dåtida:dåtida:dåtida:!:!:!:
+649096r3<adjektiv>dåvarande:dåvarande:dåvarande:dåvarande:dåvarande:!:!:!:
+552337r10<substantiv>däck:däck:däcks:däcket:däckets:däck:däcks:däcken:däckens
+CUSTOM: y y däck däcks
+753747r3<verb>däcka:däcka:däckade:däckat:däckar:däcka:däckas:däckades:däckats:däckas:däckad:däckat:däckade::
+649097r3<adjektiv>däckad:däckad:däckat:däckade:däckade:!:!:!:
+975583r3<substantiv>däckel:däckel:däckels:däckeln:däckelns:däcklar:däcklars:däcklarna:däcklarnas
+630916r4<substantiv>däckfot:däckfot:däckfots:däckfoten:däckfotens:däckfötter:däckfötters:däckfötterna:däckfötternas
+COMPOUND(552337, 555210): däck + fot
+CUSTOM: n n
+610593r3<substantiv>däckindustri:däckindustri:däckindustris:däckindustrin:däckindustrins:däckindustrier:däckindustriers:däckindustrierna:däckindustriernas
+975591r3<adverb>dädan:dädan
+552338r4<substantiv>däggdjur:däggdjur:däggdjurs:däggdjuret:däggdjurets:däggdjur:däggdjurs:däggdjuren:däggdjurens
+CUSTOM: y y däggdjurs
+757647r4<substantiv>däggdjursfauna:däggdjursfauna:däggdjursfaunas:däggdjursfaunan:däggdjursfaunans:däggdjursfaunor:däggdjursfaunors:däggdjursfaunorna:däggdjursfaunornas
+COMPOUND(552338, 633545): däggdjur + fauna
+923442r3<substantiv>däka:däka:däkas:däkan:däkans:däkor:däkors:däkorna:däkornas
+CUSTOM: n n y
+975592r3<substantiv>däld:däld:dälds:dälden:däldens:dälder:dälders:dälderna:däldernas
+CUSTOM: n n y
+625259r9<verb>dämma:dämma:dämde:dämt:dämmer:däm:dämmas:dämdes:dämts:däms, dämmes:dämd:dämt:dämda:dämmande:
+CUSTOM: y n
+975594r3<substantiv>dämmare:dämmare:dämmares:dämmaren:dämmarens:dämmare:dämmares:dämmarna:dämmarnas
+863962r3<substantiv>dämning:dämning:dämnings:dämningen:dämningens:dämningar:dämningars:dämningarna:dämningarnas
+546457r5<verb>dämpa:dämpa:dämpade:dämpat:dämpar:dämpa:dämpas:dämpades:dämpats:dämpas:dämpad:dämpat:dämpade:dämpande:
+615194r4<substantiv>dämpare:dämpare:dämpares:dämparen:dämparens:dämpare:dämpares:dämparna:dämparnas
+CUSTOM: y y dämpar +dämpar
+632573r4<substantiv>dämpning:dämpning:dämpnings:dämpningen:dämpningens:dämpningar:dämpningars:dämpningarna:dämpningarnas
+CUSTOM: y y dämpnings +dämpnings
+737274r3<adverb>dän:dän
+CUSTOM: n n y
+627957r3<substantiv>däng:däng:dängs:dänget:dängets::::
+CUSTOM: y n
+649100r5<verb>dänga:dänga:dängde:dängt:dänger:däng:dängas:dängdes:dängts:dängs, dänges:dängd:dängt:dängda:dängande:
+CUSTOM: y n
+558317r3<adverb>där:där
+558318r3<adverb>däran:däran
+558319r3<adverb>därav:därav
+617526r3<adverb>därbak:därbak
+689415r3<adverb>därborta:därborta
+558320r3<adverb>därefter:därefter
+558321r3<adverb>däremellan:däremellan
+558322r3<adverb>däremot:däremot
+558323r3<konjunktion>därest:därest
+558324r3<adverb>därför:därför
+558329r3<adverb>därförinnan:därförinnan
+558330r3<adverb>därförutan:därförutan
+558331r3<adverb>därförutom:därförutom
+689417r3<adverb>därhemma:därhemma
+558332r3<adverb>därhän:därhän
+558333r3<adverb>däri:däri
+558334r3<adverb>däribland:däribland
+558335r3<adverb>därifrån:därifrån
+558336r3<adverb>därigenom:därigenom
+975607r3<adverb>därikring:därikring
+617527r3<adverb>därinnanför:därinnanför
+617529r3<adverb>därinne:därinne
+975601r3<adverb>därinom:därinom
+975604r3<adverb>därinunder:därinunder
+975610r3<adverb>därinvid:därinvid
+558337r3<adverb>därjämte:därjämte
+558338r3<adverb>därmed:därmed
+946045r3<adverb>därnere:därnere
+558339r3<adverb>därnäst:därnäst
+558340r3<adverb>därom:därom
+688987r3<adverb>däromkring:däromkring
+558341r3<adverb>därpå:därpå
+558342r3<adverb>därstädes:därstädes
+558343r3<adverb>därtill:därtill
+558344r3<adverb>därunder:därunder
+689423r3<adverb>däruppå:däruppå
+558345r3<adverb>därur:därur
+948738r3<adverb>därutanför:därutanför
+558346r3<adverb>därutav:därutav
+558347r3<adverb>däruti:däruti
+558348r3<adverb>därutinnan:därutinnan
+558349r3<adverb>därutöver:därutöver
+688983r3<adjektiv>därvarande:därvarande:därvarande:därvarande:därvarande:!:!:!:
+975612r3<substantiv>därvaro:därvaro:därvaros:därvaron:därvarons::::
+558352r3<adverb>därvid:därvid
+558353r3<adverb>därvidlag:därvidlag
+627961r3<adverb>därå:därå
+558354r3<adverb>däråt:däråt
+558355r3<adverb>däröver:däröver
+558356r3<adjektiv>däst:däst:däst:dästa:dästa:dästare:dästast:dästaste:
+680838r3<substantiv>dästhet:dästhet:dästhets:dästheten:dästhetens::::
+CUSTOM: y y dästhets
+558360r3<adjektiv>däven:däven:dävet:dävna:dävna:dävnare:dävnast:dävnaste:
+CUSTOM: y n
+863974r3<substantiv>dävert:dävert:däverts:däverten:dävertens:dävertar:dävertars:dävertarna:dävertarnas
+927461r5<verb>dävna:dävna:dävnade:dävnat:dävnar::::::::::
+975616r3<substantiv>däxel:däxel:däxels:däxeln:däxelns:däxlar:däxlars:däxlarna:däxlarnas
+556895r8<verb>dö:dö:dog:dött:dör:dö:!:!:!:!:död:dött:döda:döende:doge
+975624r3<substantiv>döbattang:döbattang:döbattangs:döbattangen:döbattangens:döbattanger:döbattangers:döbattangerna:döbattangernas
+558364r3<egennamn>Döblin:Döblin:Döblins
+558366r9<adjektiv>död:död:dött:döda:döda:!:!:!:döde::::::::dödes
+CUSTOM: y n
+617530r31<substantiv>död:död:döds:döden:dödens:dödar:dödars:dödarna:dödarnas
+CUSTOM: y n döds
+546458r7<verb>döda:döda:dödade:dödat:dödar:döda:dödas:dödades:dödats:dödas:dödad:dödat:dödade:dödande:
+678435r3<substantiv>dödande:dödande:dödandes:dödandet:dödandets::::
+678437r4<adjektiv>dödande:dödande:dödande:dödande:dödande:!:!:!:
+790519r3<adjektiv>dödbakad:dödbakad:dödbakat:dödbakade:dödbakade:!:!:!:
+975632r4<substantiv>dödbok:dödbok:dödboks:dödboken:dödbokens:dödböcker:dödböckers:dödböckerna:dödböckernas
+COMPOUND(617530, 555346): död + bok
+799222r3<adjektiv>dödbränd:dödbränd:dödbränt:dödbrända:dödbrända::::
+975640r3<substantiv>döddansare:döddansare:döddansares:döddansaren:döddansarens:döddansare:döddansares:döddansarna:döddansarnas
+584941r3<adjektiv>dödfull:dödfull:dödfullt:dödfulla:dödfulla::::
+656436r4<adjektiv>dödfödd:dödfödd:dödfött:dödfödda:dödfödda::::dödfödde
+753752r5<verb>dödförklara:dödförklara:dödförklarade:dödförklarat:dödförklarar:dödförklara:dödförklaras:dödförklarades:dödförklarats:dödförklaras:dödförklarad:dödförklarat:dödförklarade:dödförklarande:
+COMPOUND(558366, 546670): död + förklara
+912954r4<substantiv>dödförklaring:dödförklaring:dödförklarings:dödförklaringen:dödförklaringens:dödförklaringar:dödförklaringars:dödförklaringarna:dödförklaringarnas
+COMPOUND(558366, 641961): död + förklaring
+753760r3<substantiv>dödgrävare:dödgrävare:dödgrävares:dödgrävaren:dödgrävarens:dödgrävare:dödgrävares:dödgrävarna:dödgrävarnas
+785022r3<substantiv>döding:döding:dödings:dödingen:dödingens:dödingar:dödingars:dödingarna:dödingarnas
+954869r3<substantiv>dödkött:dödkött:dödkötts:dödköttet:dödköttets::::
+559081r7<adjektiv>dödlig:dödlig:dödligt:dödliga:dödliga:dödligare:dödligast:dödligaste:dödlige
+559082r9<substantiv>dödlighet:dödlighet:dödlighets:dödligheten:dödlighetens:!:!:!:!
+CUSTOM: y y dödlighets
+728907r4<substantiv>dödläge:dödläge:dödläges:dödläget:dödlägets:dödlägen:dödlägens:dödlägena:dödlägenas
+COMPOUND(617530, 612680): död + läge
+975646r3<substantiv>dödmansgrepp:dödmansgrepp:dödmansgrepps:dödmansgreppet:dödmansgreppets:dödmansgrepp:dödmansgrepps:dödmansgreppen:dödmansgreppens
+863984r3<substantiv>dödperiod:dödperiod:dödperiods:dödperioden:dödperiodens:dödperioder:dödperioders:dödperioderna:dödperiodernas
+989479r4<substantiv>dödsaning:dödsaning:dödsanings:dödsaningen:dödsaningens:dödsaningar:dödsaningars:dödsaningarna:dödsaningarnas
+COMPOUND(617530, 605815): död + aning
+605517r4<substantiv>dödsannons:dödsannons:dödsannons:dödsannonsen:dödsannonsens:dödsannonser:dödsannonsers:dödsannonserna:dödsannonsernas
+COMPOUND(617530, 548200): död + annons
+548737r3<substantiv>dödsattest:dödsattest:dödsattests:dödsattesten:dödsattestens:dödsattester:dödsattesters:dödsattesterna:dödsattesternas
+689426r4<adjektiv>dödsblek:dödsblek:dödsblekt:dödsbleka:dödsbleka:!:!:!:dödsbleke
+COMPOUND(617530, 563046): död + blek
+612452r6<substantiv>dödsbo:dödsbo:dödsbos:dödsboet:dödsboets:dödsbon:dödsbons:dödsbona:dödsbonas
+CUSTOM: y y dödsbo
+609457r3<substantiv>dödsbodelägare:dödsbodelägare:dödsbodelägares:dödsbodelägaren:dödsbodelägarens:dödsbodelägare:dödsbodelägares:dödsbodelägarna:dödsbodelägarnas
+CUSTOM: n n y
+753766r3<adjektiv>dödsbringande:dödsbringande:dödsbringande:dödsbringande:dödsbringande:!:!:!:
+756399r4<substantiv>dödsbud:dödsbud:dödsbuds:dödsbudet:dödsbudets:dödsbud:dödsbuds:dödsbuden:dödsbudens
+COMPOUND(617530, 552287): död + bud
+930605r4<substantiv>dödsdag:dödsdag:dödsdags:dödsdagen:dödsdagens:dödsdagar:dödsdagars:dödsdagarna:dödsdagarnas
+COMPOUND(617530, 551009): död + dag
+682750r6<substantiv>dödsdans:dödsdans:dödsdans:dödsdansen:dödsdansens:dödsdanser:dödsdansers:dödsdanserna:dödsdansernas
+COMPOUND(617530, 548569): död + dans
+902114r4<substantiv>dödsdom:dödsdom:dödsdoms:dödsdomen:dödsdomens:dödsdomar:dödsdomars:dödsdomarna:dödsdomarnas
+COMPOUND(617530, 551037): död + dom
+656437r3<adjektiv>dödsdömd:dödsdömd:dödsdömt:dödsdömda:dödsdömda:!:!:!:dödsdömde
+606980r4<substantiv>dödsfall:dödsfall:dödsfalls:dödsfallet:dödsfallets:dödsfall:dödsfalls:dödsfallen:dödsfallens
+CUSTOM: y y dödsfalls
+898852r3<substantiv>dödsfallsintyg::::::::
+COMPOUND(606980, 552524): dödsfall + intyg
+936963r3<substantiv>dödshjälp:dödshjälp:dödshjälps:dödshjälpen:dödshjälpens::::
+753767r4<substantiv>dödshot:dödshot:dödshots:dödshotet:dödshotets:dödshot:dödshots:dödshoten:dödshotens
+COMPOUND(617530, 552476): död + hot
+564692r10<adjektiv>dödshotad:dödshotad:dödshotat:dödshotade:dödshotade:!:!:!:::::::::
+656439r4<substantiv>dödskalle:dödskalle:dödskalles:dödskallen:dödskallens:dödskallar:dödskallars:dödskallarna:dödskallarnas
+CUSTOM: y y dödskalle
+640366r6<verb>dödskallemärka:dödskallemärka:dödskallemärkte:dödskallemärkt:dödskallemärker:dödskallemärk:dödskallemärkas:dödska

@@ -1,0 +1,532 @@
+# A more recent version of this file may be found at  http://dsso.se/
+# 
+# Copyright (c) 2011 Göran Andersson
+#  This work is licensed under the Creative Commons Attribution-Share Alike License.
+# To view a copy of this license, visit
+#   http://creativecommons.org/licenses/by-sa/3.0/
+# or send a letter to
+#   Creative Commons, 559 Nathan Abbott Way,
+#   Stanford, California 94305, USA.
+#
+# Copyright (c) 2011 Göran Andersson
+# Innehållet i denna fil är skyddat av lagen om upphovsrätt. Filen får inte spridas,
+# vare sig i förändrat eller oförändrat skick, annat än enligt villkoren i licensen
+# Creative Commons Attribution-ShareAlike License (se ovan).
+
+557622r3<preposition>à:à
+57622r3<preposition>à:à
+561001r4<substantiv>A-aktie:A-aktie:A-akties:A-aktien:A-aktiens:A-aktier:A-aktiers:A-aktierna:A-aktiernas
+CUSTOM: n n
+632258r3<substantiv>A-avdrag:A-avdrag:A-avdrags:A-avdraget:A-avdragets:A-avdrag:A-avdrags:A-avdragen:A-avdragens
+CUSTOM: n n
+724442r3<substantiv>abakus:abakus:abakus:abakusen:abakusens:abakuser:abakusers:abakuserna:abakusernas
+632407r3<substantiv>abalienation:abalienation:abalienations:abalienationen:abalienationens:abalienationer:abalienationers:abalienationerna:abalienationernas
+CUSTOM: y y abalienations
+585919r4<verb>abalienera:abalienera:abalienerade:abalienerat:abalienerar:abalienera:::::::::
+DEFINITION 1: Göra sin tillhörighet till en annans
+632415r4<substantiv>abalienering:abalienering:abalienerings:abalieneringen:abalieneringens:abalieneringar:abalieneringars:abalieneringarna:abalieneringarnas
+DEFINITION 1: Den handling, varigenom man gör sin tillhörighet till en annans
+CUSTOM: y y abalienerings
+604487r4<substantiv>abandon:abandon:abandons:abandonen:abandonens:!:!:!:!
+DEFINITION 1: Otvunget sätt
+585423r6<verb>abandonnera:abandonnera:abandonnerade:abandonnerat:abandonnerar:abandonnera:abandonneras:abandonnerades:abandonnerats:abandonneras:abandonnerad:abandonnerat:abandonnerade::
+660107r3<substantiv>abandonnering:abandonnering:abandonnerings:abandonneringen:abandonneringens:abandonneringar:abandonneringars:abandonneringarna:abandonneringarnas
+CUSTOM: y y abandonnerings
+561020r3<substantiv>A-barn:A-barn:A-barns:A-barnet:A-barnets:A-barn:A-barns:A-barnen:A-barnens
+CUSTOM: n n
+610348r3<substantiv>abasi:abasi:abasis:abasin:abasins:abasier:abasiers:abasierna:abasiernas
+CUSTOM: n n
+613043r4<substantiv>abasso:abasso:::::::
+DEFINITION 1: Prisfall
+CUSTOM: n n
+632264r4<substantiv>A-batteri:A-batteri:A-batteris:A-batteriet, A-batterit:A-batteriets, A-batterits:A-batterier:A-batteriers:A-batterierna:A-batteriernas
+CUSTOM: n n
+789078r3<egennamn>Abba:Abba:Abbas
+CUSTOM: y n Abba
+556596r3<substantiv>abbé:abbé:abbés:abbén:abbéns:abbéer:abbéers:abbéerna:abbéernas
+556594r3<substantiv>abbedissa:abbedissa:abbedissas:abbedissan:abbedissans:abbedissor:abbedissors:abbedissorna:abbedissornas
+763365r3<egennamn>Abbekås:Abbekås:Abbekås
+556595r6<substantiv>abborre:abborre:abborres:abborren:abborrens:abborrar:abborrars:abborrarna:abborrarnas
+BASEWORDS: abborr
+CUSTOM: y y abborr
+606449r4<substantiv>abborrgrund:abborrgrund:abborrgrunds:abborrgrundet:abborrgrundets:abborrgrund:abborrgrunds:abborrgrunden:abborrgrundens
+COMPOUND(556595, 662517): abborre + grund
+CUSTOM: y n
+561015r4<substantiv>abborrgräs:abborrgräs:abborrgräs:abborrgräset:abborrgräsets:abborrgräs:abborrgräs:abborrgräsen:abborrgräsens
+COMPOUND(556595, 552453): abborre + gräs
+CUSTOM: y n
+599755r3<substantiv>abborrnate:abborrnate:abborrnates:abborrnaten:abborrnatens:abborrnatar:abborrnatars:abborrnatarna:abborrnatarnas
+CUSTOM: y n
+599763r3<substantiv>abborrpinne:abborrpinne:abborrpinnes:abborrpinnen:abborrpinnens:abborrpinnar:abborrpinnars:abborrpinnarna:abborrpinnarnas
+CUSTOM: y n
+904355r4<egennamn>Abborrträsk:Abborrträsk:Abborrträsks
+DEFINITION 1: Småort i Arvidsjaurs kommun i södra Lappland
+598020r4<substantiv>abbot:abbot:abbots:abboten:abbotens:abbotar:abbotars:abbotarna:abbotarnas
+CUSTOM: y y abbots
+613045r3<substantiv>abbotsdöme:abbotsdöme:abbotsdömes:abbotsdömet:abbotsdömets:abbotsdömen:abbotsdömens:abbotsdömena:abbotsdömenas
+613053r4<substantiv>abbotsstift:abbotsstift:abbotsstifts:abbotsstiftet:abbotsstiftets:abbotsstift:abbotsstifts:abbotsstiften:abbotsstiftens
+COMPOUND(598020, 552981): abbot + stift
+CUSTOM: y n
+604492r6<substantiv>abbreviation:abbreviation:abbreviations:abbreviationen:abbreviationens:abbreviationer:abbreviationers:abbreviationerna:abbreviationernas
+DEFINITION 1: Förkortning
+CUSTOM: y y abbreviations
+632351r4<substantiv>abbreviationsförteckning:abbreviationsförteckning:abbreviationsförtecknings:abbreviationsförteckningen:abbreviationsförteckningens:abbreviationsförteckningar:abbreviationsförteckningars:abbreviationsförteckningarna:abbreviationsförteckningarnas
+COMPOUND(604492, 632352): abbreviation + förteckning
+CUSTOM: y n
+779375r3<substantiv>abbreviatur:abbreviatur:abbreviaturs:abbreviaturen:abbreviaturens:abbreviaturer:abbreviaturers:abbreviaturerna:abbreviaturernas
+585427r5<verb>abbreviera:abbreviera:abbrevierade:abbrevierat:abbrevierar:abbreviera:abbrevieras:abbrevierades:abbrevierats:abbrevieras:abbrevierad:abbrevierat:abbrevierade::
+DEFINITION 1: förkorta
+940066r3<förkortning>abc:abc
+632416r3<substantiv>ABC-analys:ABC-analys:ABC-analys:ABC-analysen:ABC-analysens:ABC-analyser:ABC-analysers:ABC-analyserna:ABC-analysernas
+CUSTOM: n n
+632423r3<substantiv>Abc-bok:Abc-bok:Abc-boks:Abc-boken:Abc-bokens:Abc-böcker:Abc-böckers:Abc-böckerna:Abc-böckernas
+CUSTOM: n n
+761799r3<substantiv>ABC-bok:ABC-bok:ABC-boks:ABC-boken:ABC-bokens:ABC-böcker:ABC-böckers:ABC-böckerna:ABC-böckernas
+CUSTOM: n n
+763367r3<egennamn>Abchazien:Abchazien:Abchaziens
+CUSTOM: y n Abchazien
+556598r3<substantiv>abchazier:abchazier:abchaziers:abchaziern:abchazierns:abchazier:abchaziers:abchazierna:abchaziernas
+568645r4<adjektiv>abchazisk:abchazisk:abchaziskt:abchaziska:abchaziska::::abchaziske::::::::
+632431r3<substantiv>ABC-krigföring:ABC-krigföring:ABC-krigförings:ABC-krigföringen:ABC-krigföringens:ABC-krigföringar:ABC-krigföringars:ABC-krigföringarna:ABC-krigföringarnas
+CUSTOM: n n
+632439r3<substantiv>ABC-stridsmedel:ABC-stridsmedel:ABC-stridsmedels:ABC-stridsmedlet:ABC-stridsmedlets:ABC-stridsmedel:ABC-stridsmedels:ABC-stridsmedlen:ABC-stridsmedlens
+CUSTOM: n n
+548134r3<substantiv>abderit:abderit:abderits:abderiten:abderitens:abderiter:abderiters:abderiterna:abderiternas
+CUSTOM: n n
+568648r5<adjektiv>abderitisk:abderitisk:abderitiskt:abderitiska:abderitiska::::abderitiske
+DEFINITION 1: Vanvettig, dum
+548135r5<substantiv>abdikation:abdikation:abdikations:abdikationen:abdikationens:abdikationer:abdikationers:abdikationerna:abdikationernas
+DEFINITION 1: Tronavsägelse
+BASEWORDS: abdikations
+CUSTOM: y y abdikations
+604503r3<substantiv>abdikationsakt:abdikationsakt:abdikationsakts:abdikationsakten:abdikationsaktens::::
+CUSTOM: y n
+555002r12<verb>abdikera:abdikera:abdikerade:abdikerat:abdikerar:abdikera:abdikeras:abdikerades:abdikerats:abdikeras:abdikerad:abdikerat:abdikerade:abdikerande:!
+779384r3<substantiv>abdikering:abdikering:abdikerings:abdikeringen:abdikeringens:abdikeringar:abdikeringars:abdikeringarna:abdikeringarnas
+604507r4<substantiv>abdomen:abdomen:abdomens:abdomens:abdomens:abdomina:abdominas:abdomina:abdominas
+DEFINITION 1: Buk, bakkropp [ på insekt ]
+564639r3<adjektiv>abdominal:abdominal:abdominalt:abdominala:abdominala::::
+588548r3<verb>abducera:abducera:abducerade:abducerat:abducerar:abducera:::::::::
+CUSTOM: n n
+632458r3<substantiv>abduktion:abduktion:abduktions:abduktionen:abduktionens:abduktioner:abduktioners:abduktionerna:abduktionernas
+CUSTOM: y y abduktions
+782940r3<egennamn>Abel:Abel:Abels
+637052r3<egennamn>Abélard:Abélard:Abélards
+609077r3<substantiv>abelprovare:abelprovare:abelprovares:abelprovaren:abelprovarens:abelprovare:abelprovares:abelprovarna:abelprovarnas
+CUSTOM: y y
+626754r6<adjektiv>abelsk:abelsk:abelskt:abelska:abelska:!:!:!:!::::::::
+DEFINITION 1: Inom gruppteorin detsamma som kommutativ.
+CUSTOM: n n n
+604371r4<substantiv>aber:aber::::aber:::
+DEFINITION 1: Olägenhet, streck i räkningen, hake
+789082r3<egennamn>Aberdeen:Aberdeen:Aberdeens
+600557r3<substantiv>aberration:aberration:aberrations:aberrationen:aberrationens:aberrationer:aberrationers:aberrationerna:aberrationernas
+CUSTOM: y y aberrations
+712837r3<egennamn>Abessinien:Abessinien:Abessiniens
+556606r3<substantiv>abessinier:abessinier:abessiniers:abessiniern:abessinierns:abessinier:abessiniers:abessinierna:abessiniernas
+564542r4<adjektiv>abessinsk:abessinsk:abessinskt:abessinska:abessinska::::abessinske
+604372r3<substantiv>abessinska:abessinska:abessinskas:abessinskan:abessinskans:abessinskor:abessinskors:abessinskorna:abessinskornas
+632393r3<substantiv>AB-förstärkare:AB-förstärkare:AB-förstärkares:AB-förstärkaren:AB-förstärkarens:AB-förstärkare:AB-förstärkares:AB-förstärkarna:AB-förstärkarnas
+CUSTOM: n n
+613060r4<substantiv>abietat:abietat:::::::
+DEFINITION 1: En slags kemikalie
+CUSTOM: n n
+613062r3<substantiv>abietinsyra:abietinsyra:abietinsyras:abietinsyran:abietinsyrans:abietinsyror:abietinsyrors:abietinsyrorna:abietinsyrornas
+789086r3<egennamn>Abigail:Abigail:Abigails
+632250r3<substantiv>A-bild:A-bild:A-bilds:A-bilden:A-bildens:A-bilder:A-bilders:A-bilderna:A-bildernas
+CUSTOM: n n
+613070r3<substantiv>abilitet:abilitet:abilitets:abiliteten:abilitetens:!:!:!:!
+585210r4<adjektiv>abiogen:abiogen:abiogent:abiogena:abiogena:!:!:!:
+DEFINITION 1: Motsatsen till biogen
+CUSTOM: n n
+568651r3<adjektiv>abiotisk:abiotisk:abiotiskt:abiotiska:abiotiska::::
+CUSTOM: y n n
+554176r6<egennamn>Abisko:Abisko:Abisko, Abiskos
+600565r4<substantiv>abiturient:abiturient:abiturients:abiturienten:abiturientens:abiturienter:abiturienters:abiturienterna:abiturienternas
+DEFINITION 1: Avgående lärjunge
+CUSTOM: y y abiturient
+604380r3<substantiv>abiturientklass:abiturientklass:abiturientklass:abiturientklassen:abiturientklassens:abiturientklasser:abiturientklassers:abiturientklasserna:abiturientklassernas
+CUSTOM: y n
+600573r3<substantiv>ablation:ablation:ablations:ablationen:ablationens:ablationer:ablationers:ablationerna:ablationernas
+CUSTOM: y n ablations
+604387r3<substantiv>ablationsmorän:ablationsmorän:ablationsmoräns:ablationsmoränen:ablationsmoränens:ablationsmoräner:ablationsmoräners:ablationsmoränerna:ablationsmoränernas
+CUSTOM: y n
+604395r3<substantiv>ablationsområde:ablationsområde:ablationsområdes:ablationsområdet:ablationsområdets:ablationsområden:ablationsområdens:ablationsområdena:ablationsområdenas
+CUSTOM: y n
+604308r4<substantiv>ablativ:ablativ:ablativs:ablativen:ablativens:ablativer:ablativers:ablativerna:ablativernas
+DEFINITION 1: Ett slags kasus [ språkvet. ]
+CUSTOM: y n ablativ
+604316r3<substantiv>ablativform:ablativform:ablativforms:ablativformen:ablativformens:ablativformer:ablativformers:ablativformerna:ablativformernas
+CUSTOM: y n
+604324r3<substantiv>abloylås:abloylås:abloylås:abloylåset:abloylåsets:abloylås:abloylås:abloylåsen:abloylåsens
+CUSTOM: y n n
+632457r3<substantiv>ablution:ablution:ablutions:ablutionen:ablutionens:ablutioner:ablutioners:ablutionerna:ablutionernas
+CUSTOM: y y n ablutions
+556604r4<adjektiv>abnorm:abnorm:abnormt:abnorma:abnorma:abnormare:abnormast:abnormaste:abnorme
+CUSTOM: y y abnorm
+604329r5<substantiv>abnormitet:abnormitet:abnormitets:abnormiteten:abnormitetens:abnormiteter:abnormiteters:abnormiteterna:abnormiteternas
+DEFINITION 1: Avvikelse från det normala, missbildning
+CUSTOM: y y abnormitets
+604333r4<substantiv>abnormpsykologi:abnormpsykologi:abnormpsykologis:abnormpsykologin:abnormpsykologins::::
+COMPOUND(556604, 595977): abnorm + psykologi
+CUSTOM: y n
+604337r3<substantiv>abnormtillstånd:abnormtillstånd:abnormtillstånds:abnormtillståndet:abnormtillståndets:abnormtillstånd:abnormtillstånds:abnormtillstånden:abnormtillståndens
+CUSTOM: y n
+604343r3<substantiv>abolition:abolition:abolitions:abolitionen:abolitionens:abolitioner:abolitioners:abolitionerna:abolitionernas
+CUSTOM: y y abolitions
+604351r3<substantiv>abolitionism:abolitionism:abolitionisms:abolitionismen:abolitionismens::::
+604355r3<substantiv>abolitionist:abolitionist:abolitionists:abolitionisten:abolitionistens:abolitionister:abolitionisters:abolitionisterna:abolitionisternas
+CUSTOM: y y abolitionist
+568654r3<adjektiv>abolitionistisk:abolitionistisk:abolitionistiskt:abolitionistiska:abolitionistiska::::
+600582r3<substantiv>a-bomb:a-bomb:a-bombs:a-bomben:a-bombens:a-bomber:a-bombers:a-bomberna:a-bombernas
+CUSTOM: n n
+570704r3<adjektiv>abominabel:abominabel:abominabelt:abominabla:abominabla::::
+552161r8<substantiv>abonnemang:abonnemang:abonnemangs:abonnemanget:abonnemangets:abonnemang:abonnemangs:abonnemangen:abonnemangens
+DEFINITION 1: Förhandsbeställning
+BASEWORDS: abonnemangs
+CUSTOM: y y abonnemangs +abonnemangs
+600591r3<substantiv>abonnemangsavgift:abonnemangsavgift:abonnemangsavgifts:abonnemangsavgiften:abonnemangsavgiftens:abonnemangsavgifter:abonnemangsavgifters:abonnemangsavgifterna:abonnemangsavgifternas
+613074r3<substantiv>abonnemangsbiljett:abonnemangsbiljett:abonnemangsbiljetts:abonnemangsbiljetten:abonnemangsbiljettens:abonnemangsbiljetter:abonnemangsbiljetters:abonnemangsbiljetterna:abonnemangsbiljetternas
+596197r3<substantiv>abonnemangsföreställning:abonnemangsföreställning:abonnemangsföreställnings:abonnemangsföreställningen:abonnemangsföreställningens:abonnemangsföreställningar:abonnemangsföreställningars:abonnemangsföreställningarna:abonnemangsföreställningarnas
+CUSTOM: y y abonnemangsföreställnings
+604363r3<substantiv>abonnemangskonsert:abonnemangskonsert:abonnemangskonserts:abonnemangskonserten:abonnemangskonsertens:abonnemangskonserter:abonnemangskonserters:abonnemangskonserterna:abonnemangskonserternas
+613082r3<substantiv>abonnemangspris:abonnemangspris:abonnemangspris:abonnemangspriset:abonnemangsprisets:abonnemangspriser:abonnemangsprisers:abonnemangspriserna:abonnemangsprisernas
+604403r3<substantiv>abonnemangssystem:abonnemangssystem:abonnemangssystems:abonnemangssystemet:abonnemangssystemets:abonnemangssystem:abonnemangssystems:abonnemangssystemen:abonnemangssystemens
+613089r3<substantiv>abonnemangsvillkor:abonnemangsvillkor:abonnemangsvillkors:abonnemangsvillkoret:abonnemangsvillkorets:abonnemangsvillkor:abonnemangsvillkors:abonnemangsvillkoren:abonnemangsvillkorens
+548136r17<substantiv>abonnent:abonnent:abonnents:abonnenten:abonnentens:abonnenter:abonnenters:abonnenterna:abonnenternas
+CUSTOM: y y abonnent +abonnent
+605712r3<substantiv>abonnentanläggning:abonnentanläggning:abonnentanläggnings:abonnentanläggningen:abonnentanläggningens:abonnentanläggningar:abonnentanläggningars:abonnentanläggningarna:abonnentanläggningarnas
+CUSTOM: y y abonnentanläggnings
+613103r3<substantiv>abonnentapparat:abonnentapparat:abonnentapparats:abonnentapparaten:abonnentapparatens:abonnentapparater:abonnentapparaters:abonnentapparaterna:abonnentapparaternas
+596205r3<substantiv>abonnentförteckning:abonnentförteckning:abonnentförtecknings:abonnentförteckningen:abonnentförteckningens:abonnentförteckningar:abonnentförteckningars:abonnentförteckningarna:abonnentförteckningarnas
+CUSTOM: y y abonnentförtecknings
+611489r3<substantiv>abonnentgrupprelä:abonnentgrupprelä:abonnentgruppreläs:abonnentgruppreläet:abonnentgruppreläets:abonnentgruppreläer:abonnentgruppreläers:abonnentgruppreläerna:abonnentgruppreläernas
+632474r4<substantiv>abonnentjack:abonnentjack:abonnentjacks:abonnentjacket:abonnentjackets:abonnentjack:abonnentjacks:abonnentjacken:abonnentjackens
+COMPOUND(548136, 552532): abonnent + jack
+632466r4<substantiv>abonnentkabel:abonnentkabel:abonnentkabels:abonnentkabeln:abonnentkabelns:abonnentkablar:abonnentkablars:abonnentkablarna:abonnentkablarnas
+COMPOUND(548136, 622252): abonnent + kabel
+605720r4<substantiv>abonnentledning:abonnentledning:abonnentlednings:abonnentledningen:abonnentledningens:abonnentledningar:abonnentledningars:abonnentledningarna:abonnentledningarnas
+COMPOUND(548136, 551696): abonnent + ledning
+CUSTOM: y y abonnentlednings
+613111r4<substantiv>abonnentmobilitet:abonnentmobilitet:abonnentmobilitets:abonnentmobiliteten:abonnentmobilitetens:!:!:!:!
+COMPOUND(548136, 727408): abonnent + mobilitet
+613115r4<substantiv>abonnentmultipel:abonnentmultipel:abonnentmultipels:abonnentmultipeln:abonnentmultipelns:abonnentmultipler:abonnentmultiplers:abonnentmultiplerna:abonnentmultiplernas
+COMPOUND(548136, 621430): abonnent + multipel
+613123r4<substantiv>abonnentnummer:abonnentnummer:abonnentnummers:abonnentnumret:abonnentnumrets:abonnentnummer:abonnentnummers:abonnentnumren:abonnentnumrens
+COMPOUND(548136, 621605): abonnent + nummer
+611624r4<substantiv>abonnentpris:abonnentpris:abonnentpris:abonnentpriset:abonnentprisets:abonnentpriser:abonnentprisers:abonnentpriserna:abonnentprisernas
+COMPOUND(548136, 595932): abonnent + pris
+613129r4<substantiv>abonnentregister:abonnentregister:abonnentregisters:abonnentregistret:abonnentregistrets:abonnentregister:abonnentregisters:abonnentregistren:abonnentregistrens
+COMPOUND(548136, 621710): abonnent + register
+604523r4<substantiv>abonnentterminal:abonnentterminal:abonnentterminals:abonnentterminalen:abonnentterminalens:abonnentterminaler:abonnentterminalers:abonnentterminalerna:abonnentterminalernas
+COMPOUND(548136, 550657): abonnent + terminal
+605728r4<substantiv>abonnentutrustning:abonnentutrustning:abonnentutrustnings:abonnentutrustningen:abonnentutrustningens:abonnentutrustningar:abonnentutrustningars:abonnentutrustningarna:abonnentutrustningarnas
+COMPOUND(548136, 631941): abonnent + utrustning
+CUSTOM: y y abonnentutrustnings
+608534r4<substantiv>abonnentuttag:abonnentuttag:abonnentuttags:abonnentuttaget:abonnentuttagets:abonnentuttag:abonnentuttags:abonnentuttagen:abonnentuttagens
+COMPOUND(548136, 553096): abonnent + uttag
+613095r4<substantiv>abonnentväxel:abonnentväxel:abonnentväxels:abonnentväxeln:abonnentväxelns:abonnentväxlar:abonnentväxlars:abonnentväxlarna:abonnentväxlarnas
+COMPOUND(548136, 600474): abonnent + växel
+546018r5<verb>abonnera:abonnera:abonnerade:abonnerat:abonnerar:abonnera:abonneras:abonnerades:abonnerats:abonneras:abonnerad:abonnerat:abonnerade:abonnerande:
+600599r3<substantiv>aborigin:aborigin:aborigins:aboriginen:aboriginens:aboriginer:aboriginers:aboriginerna:aboriginernas
+779393r3<adjektiv>aboriginsk:aboriginsk:aboriginskt:aboriginska:aboriginska:!:!:!:aboriginske
+548137r6<substantiv>abort:abort:aborts:aborten:abortens:aborter:aborters:aborterna:aborternas
+CUSTOM: y y abort
+585431r5<verb>abortera:abortera:aborterade:aborterat:aborterar:abortera:aborteras:aborterades:aborterats:aborteras:aborterad:aborterat:aborterade:aborterande:
+613135r3<substantiv>abortering:abortering:aborterings:aborteringen:aborteringens::::
+CUSTOM: y y aborterings
+570950r3<adjektiv>abortframkallande:abortframkallande:abortframkallande:abortframkallande:abortframkallande:!:!:!:
+CUSTOM: y n
+613139r3<substantiv>abortfrågan:::abortfrågan:abortfrågans::::
+CUSTOM: y n
+570951r3<adjektiv>abortförebyggande:abortförebyggande:abortförebyggande:abortförebyggande:abortförebyggande:!:!:!:
+CUSTOM: y n
+604531r3<substantiv>abortindikation:abortindikation:abortindikations:abortindikationen:abortindikationens:abortindikationer:abortindikationers:abortindikationerna:abortindikationernas
+CUSTOM: y n
+608540r3<substantiv>abortingrepp:abortingrepp:abortingrepps:abortingreppet:abortingreppets:abortingrepp:abortingrepps:abortingreppen:abortingreppens
+CUSTOM: y n
+564614r3<adjektiv>abortiv:abortiv:abortivt:abortiva:abortiva::::
+613141r3<substantiv>abortivmedel:abortivmedel:abortivmedels:abortivmedlet:abortivmedlets:abortivmedel:abortivmedels:abortivmedlen:abortivmedlens
+604539r3<substantiv>abortklinik:abortklinik:abortkliniks:abortkliniken:abortklinikens:abortkliniker:abortklinikers:abortklinikerna:abortklinikernas
+CUSTOM: y n
+900389r4<substantiv>abortkö:abortkö:abortkös:abortkön:abortköns:abortköer:abortköers:abortköerna:abortköernas
+COMPOUND(548137, 557680): abort + kö
+CUSTOM: y n n
+605736r3<substantiv>abortlag:abortlag:abortlags:abortlagen:abortlagens:abortlagar:abortlagars:abortlagarna:abortlagarnas
+CUSTOM: y n abortlags
+613147r3<substantiv>abortlagstiftning:abortlagstiftning:abortlagstiftnings:abortlagstiftningen:abortlagstiftningens:abortlagstiftningar:abortlagstiftningars:abortlagstiftningarna:abortlagstiftningarnas
+CUSTOM: y n abortlagstiftnings
+609083r3<substantiv>abortmotståndare:abortmotståndare:abortmotståndares:abortmotståndaren:abortmotståndarens:abortmotståndare:abortmotståndares:abortmotståndarna:abortmotståndarnas
+CUSTOM: y n abortmotståndar
+613177r3<substantiv>abortpiller:abortpiller:abortpillers:abortpillret:abortpillrets:abortpiller:abortpillers:abortpillren:abortpillrens
+CUSTOM: y n
+593524r3<substantiv>abortresa:abortresa:abortresas:abortresan:abortresans:abortresor:abortresors:abortresorna:abortresornas
+CUSTOM: y n
+613155r3<substantiv>abortsökande:abortsökande:abortsökandes:abortsökanden:abortsökandens:abortsökande:abortsökandes:abortsökandena:abortsökandenas
+CUSTOM: y n
+900399r4<substantiv>aborttal:aborttal:aborttals:aborttalet:aborttalets:aborttal:aborttals:aborttalen:aborttalens
+COMPOUND(548137, 553029): abort + tal
+CUSTOM: y y n
+600607r3<substantiv>abortör:abortör:abortörs:abortören:abortörens:abortörer:abortörers:abortörerna:abortörernas
+588552r4<verb>abradera:abradera:abraderade:abraderat:abraderar:abradera:abraderas:abraderades:abraderats:abraderas:abraderad:abraderat:abraderade:abraderande:
+554441r3<egennamn>Abraham:Abraham:Abrahams
+613163r3<egennamn>Abrahams:Abrahams:Abrahams
+789090r3<egennamn>Abrahamsberg:Abrahamsberg:Abrahamsbergs
+CUSTOM: y n Abrahamsbergs
+789094r3<egennamn>Abrahamsdotter:Abrahamsdotter:Abrahamsdotters
+613164r3<substantiv>abrainsyra:abrainsyra:abrainsyras:abrainsyran:abrainsyrans:abrainsyror:abrainsyrors:abrainsyrorna:abrainsyrornas
+613172r3<substantiv>abrakadabra:abrakadabra:abrakadabras:abrakadabrat:abrakadabrats:!:!:!:!
+789098r3<egennamn>Abramson:Abramson:Abramsons
+898130r3<egennamn>Abramsson:Abramsson:Abramssons
+600615r3<substantiv>abrasion:abrasion:abrasions:abrasionen:abrasionens:abrasioner:abrasioners:abrasionerna:abrasionernas
+CUSTOM: y y abrasions
+604547r3<substantiv>abrasionsbrant:abrasionsbrant:abrasionsbrants:abrasionsbranten:abrasionsbrantens:abrasionsbranter:abrasionsbranters:abrasionsbranterna:abrasionsbranternas
+CUSTOM: y n
+613184r3<substantiv>abrasionsplan:abrasionsplan:abrasionsplans:abrasionsplanet:abrasionsplanets::::
+CUSTOM: y n
+612060r3<substantiv>abrasionsvittne:abrasionsvittne:abrasionsvittnes:abrasionsvittnet:abrasionsvittnets:abrasionsvittnen:abrasionsvittnens:abrasionsvittnena:abrasionsvittnenas
+CUSTOM: y n
+564617r3<adjektiv>abrasiv:abrasiv:abrasivt:abrasiva:abrasiva::::
+CUSTOM: n n
+632496r8<substantiv>abrovink, abrovinsch:abrovink, abrovinsch:abrovinks, abrovinschs:abrovinken, abrovinschen:abrovinkens, abrovinschens:abrovinker, abrovinscher:abrovinkers, abrovinschers:abrovinkerna, abrovinscherna:abrovinkernas, abrovinschernas
+556612r3<adjektiv>abrupt:abrupt:abrupt:abrupta:abrupta:abruptare:abruptast:abruptaste:abrupte
+600623r3<substantiv>abscess:abscess:abscess:abscessen:abscessens:abscesser:abscessers:abscesserna:abscessernas
+CUSTOM: y n abscess
+605744r3<substantiv>abscessbildning:abscessbildning:abscessbildnings:abscessbildningen:abscessbildningens:abscessbildningar:abscessbildningars:abscessbildningarna:abscessbildningarnas
+CUSTOM: y n abscessbildnings
+604555r3<substantiv>absens:absens:absens:absensen:absensens:absenser:absensers:absenserna:absensernas
+571249r3<adjektiv>absent:absent:absent:absenta:absenta::::
+588556r4<verb>absentera:absentera:absenterade:absenterat:absenterar:absentera:absenteras:absenterades:absenterats:absenteras:absenterad:absenterat:absenterade::
+600630r4<substantiv>absid:absid:absids:absiden:absidens:absider:absiders:absiderna:absidernas
+CUSTOM: y n
+632480r4<substantiv>absidkyrka:absidkyrka:absidkyrkas:absidkyrkan:absidkyrkans:absidkyrkor:absidkyrkors:absidkyrkorna:absidkyrkornas
+COMPOUND(600630, 555095): absid + kyrka
+CUSTOM: y n
+548138r4<substantiv>absint:absint:absints:absinten:absintens:absinter:absinters:absinterna:absinternas
+CUSTOM: y y absint
+632488r4<substantiv>absintflaska:absintflaska:absintflaskas:absintflaskan:absintflaskans:absintflaskor:absintflaskors:absintflaskorna:absintflaskornas
+COMPOUND(548138, 555299): absint + flaska
+CUSTOM: y n
+571251r3<adjektiv>absintgrön:absintgrön:absintgrönt:absintgröna:absintgröna:!:!:!:!
+CUSTOM: y n
+613188r18<substantiv>abskissa:abskissa:abskissas:abskissan:abskissans:abskissor:abskissors:abskissorna:abskissornas
+613196r3<substantiv>abskissaxel:abskissaxel:abskissaxels:abskissaxeln:abskissaxelns:abskissaxlar:abskissaxlars:abskissaxlarna:abskissaxlarnas
+613218r10<adverb>absolut:absolut
+CUSTOM: y y absolut
+571252r4<adjektiv>absolut:absolut:absolut:absoluta:absoluta:absolutare:absolutast:absolutaste:absolute
+CUSTOM: y y absolut +absolut
+604562r3<substantiv>absolutadress:absolutadress:absolutadress:absolutadressen:absolutadressens:absolutadresser:absolutadressers:absolutadresserna:absolutadressernas
+613204r3<substantiv>absolutadressering:absolutadressering:absolutadresserings:absolutadresseringen:absolutadresseringens::::
+CUSTOM: y y absolutadresserings
+604569r3<substantiv>absoluteringskolonn:absoluteringskolonn:absoluteringskolonns:absoluteringskolonnen:absoluteringskolonnens:absoluteringskolonner:absoluteringskolonners:absoluteringskolonnerna:absoluteringskolonnernas
+608546r3<substantiv>absolutfel:absolutfel:absolutfels:absolutfelet:absolutfelets:absolutfel:absolutfels:absolutfelen:absolutfelens
+604577r4<substantiv>absolutfrekvens:absolutfrekvens:absolutfrekvens:absolutfrekvensen:absolutfrekvensens:absolutfrekvenser:absolutfrekvensers:absolutfrekvenserna:absolutfrekvensernas
+CUSTOM: y y absolutfrekvens
+632514r4<substantiv>absolutfrekvensdeviation:absolutfrekvensdeviation:absolutfrekvensdeviations:absolutfrekvensdeviationen:absolutfrekvensdeviationens:absolutfrekvensdeviationer:absolutfrekvensdeviationers:absolutfrekvensdeviationerna:absolutfrekvensdeviationernas
+COMPOUND(604577, 632515): absolutfrekvens + deviation
+CUSTOM: y y absolutfrekvensdeviations
+613208r3<substantiv>absoluthet:absoluthet:absoluthets:absolutheten:absoluthetens::::
+CUSTOM: y y absoluthets
+613212r3<substantiv>absoluthopp:absoluthopp:absoluthopps:absoluthoppet:absoluthoppets:absoluthopp:absoluthopps:absoluthoppen:absoluthoppens
+604584r3<substantiv>absolutinstruktion:absolutinstruktion:absolutinstruktions:absolutinstruktionen:absolutinstruktionens:absolutinstruktioner:absolutinstruktioners:absolutinstruktionerna:absolutinstruktionernas
+CUSTOM: y y absolutinstruktions
+613219r3<substantiv>absolution:absolution:absolutions:absolutionen:absolutionens:absolutioner:absolutioners:absolutionerna:absolutionernas
+CUSTOM: y y absolutions
+558747r3<substantiv>absolutism:absolutism:absolutisms:absolutismen:absolutismens:!:!:!:!
+548139r3<substantiv>absolutist:absolutist:absolutists:absolutisten:absolutistens:absolutister:absolutisters:absolutisterna:absolutisternas
+CUSTOM: y y absolutist
+563017r4<adjektiv>absolutistisk:absolutistisk:absolutistiskt:absolutistiska:absolutistiska:!:!:!:absolutistiske
+629258r4<substantiv>absolutiv:absolutiv:absolutivs:absolutivet:absolutivets::::
+DEFINITION 1: Ett av grundkasusen i ergativ-absolutivspråk (t.ex baskiska och vissa språk i Kaukasus).
+613227r4<substantiv>absolutkodning:absolutkodning:absolutkodnings:absolutkodningen:absolutkodningens::::
+COMPOUND(613218, 652600): absolut + kodning
+CUSTOM: y y absolutkodnings
+604592r4<substantiv>absolutmodul:absolutmodul:absolutmoduls:absolutmodulen:absolutmodulens:absolutmoduler:absolutmodulers:absolutmodulerna:absolutmodulernas
+COMPOUND(613218, 550050): absolut + modul
+608552r4<substantiv>absolutmoment:absolutmoment:absolutmoments:absolutmomentet:absolutmomentets:absolutmoment:absolutmoments:absolutmomenten:absolutmomentens
+COMPOUND(613218, 552698): absolut + moment
+613231r4<substantiv>absolutprogrammering:absolutprogrammering:absolutprogrammerings:absolutprogrammeringen:absolutprogrammeringens::::
+COMPOUND(613218, 555937): absolut + programmering
+CUSTOM: y y absolutprogrammerings
+609089r3<substantiv>absoluttrycksmätare:absoluttrycksmätare:absoluttrycksmätares:absoluttrycksmätaren:absoluttrycksmätarens:absoluttrycksmätare:absoluttrycksmätares:absoluttrycksmätarna:absoluttrycksmätarnas
+CUSTOM: y y absoluttrycksmätar
+632530r4<substantiv>absolutvektor:absolutvektor:absolutvektors:absolutvektorn:absolutvektorns:absolutvektorer:absolutvektorers:absolutvektorerna:absolutvektorernas
+COMPOUND(613218, 632531): absolut + vektor
+613235r4<substantiv>absolutvikt:absolutvikt:absolutvikts:absolutvikten:absolutviktens:absolutvikter:absolutvikters:absolutvikterna:absolutvikternas
+COMPOUND(613218, 550771): absolut + vikt
+612068r4<substantiv>absolutvärde:absolutvärde:absolutvärdes:absolutvärdet:absolutvärdets:absolutvärden:absolutvärdens:absolutvärdena:absolutvärdenas
+COMPOUND(613218, 613015): absolut + värde
+585435r5<verb>absolvera:absolvera:absolverade:absolverat:absolverar:absolvera:absolveras:absolverades:absolverats:absolveras:absolverad:absolverat:absolverade:absolverande:
+DEFINITION 1: Avsluta, fullborda; avlägga [ en examen ]
+613244r3<substantiv>absolvering:absolvering:absolverings:absolveringen:absolveringens::::
+CUSTOM: y y absolverings
+910437r4<substantiv>absorbans:absorbans:absorbans:absorbansen:absorbansens::::
+CUSTOM: y y absorbans
+756084r6<substantiv>absorbansvärde:absorbansvärde:absorbansvärdes:absorbansvärdet:absorbansvärdets:absorbansvärden:absorbansvärdens:absorbansvärdena:absorbansvärdenas
+COMPOUND(910437, 613015): absorbans + värde
+632539r3<substantiv>absorbator:absorbator:absorbators:absorbatorn:absorbatorns:absorbatorer:absorbatorers:absorbatorerna:absorbatorernas
+556614r3<substantiv>absorbent:absorbent:absorbents:absorbenten:absorbentens:absorbenter:absorbenters:absorbenterna:absorbenternas
+546019r5<verb>absorbera:absorbera:absorberade:absorberat:absorberar:absorbera:absorberas:absorberades:absorberats:absorberas:absorberad:absorberat:absorberade:absorberande:
+570952r3<adjektiv>absorberande:absorberande:absorberande:absorberande:absorberande:!:!:!:
+568800r3<adjektiv>absorberbar:absorberbar:absorberbart:absorberbara:absorberbara::::
+682087r4<substantiv>absorbering:absorbering:absorberings:absorberingen:absorberingens::::
+CUSTOM: y y absorberings
+966814r4<substantiv>absorberingsläns:absorberingsläns:absorberingsläns:absorberingslänsen:absorberingslänsens:absorberingslänsar:absorberingslänsars:absorberingslänsarna:absorberingslänsarnas
+COMPOUND(682087, 737997): absorbering + läns
+613248r3<substantiv>absorbermedel:absorbermedel:absorbermedels:absorbermedlet:absorbermedlets:absorbermedel:absorbermedels:absorbermedlen:absorbermedlens
+556622r17<substantiv>absorption:absorption:absorptions:absorptionen:absorptionens:absorptioner:absorptioners:absorptionerna:absorptionernas
+BASEWORDS: absorptions
+CUSTOM: y y absorptions +absorptions
+604600r3<substantiv>absorptionsanalys:absorptionsanalys:absorptionsanalys:absorptionsanalysen:absorptionsanalysens:absorptionsanalyser:absorptionsanalysers:absorptionsanalyserna:absorptionsanalysernas
+605752r3<substantiv>absorptionsanläggning:absorptionsanläggning:absorptionsanläggnings:absorptionsanläggningen:absorptionsanläggningens:absorptionsanläggningar:absorptionsanläggningars:absorptionsanläggningarna:absorptionsanläggningarnas
+CUSTOM: y y absorptionsanläggnings
+604607r3<substantiv>absorptionsapparat:absorptionsapparat:absorptionsapparats:absorptionsapparaten:absorptionsapparatens:absorptionsapparater:absorptionsapparaters:absorptionsapparaterna:absorptionsapparaternas
+613254r3<substantiv>absorptionsarea:absorptionsarea:absorptionsareas:absorptionsarean:absorptionsareans:absorptionsareor:absorptionsareors:absorptionsareorna:absorptionsareornas
+570611r3<adjektiv>absorptionsbetingad:absorptionsbetingad:absorptionsbetingat:absorptionsbetingade:absorptionsbetingade:!:!:!:
+609095r3<substantiv>absorptionsdämpare:absorptionsdämpare:absorptionsdämpares:absorptionsdämparen:absorptionsdämparens:absorptionsdämpare:absorptionsdämpares:absorptionsdämparna:absorptionsdämparnas
+CUSTOM: y y absorptionsdämpar
+632572r4<substantiv>absorptionsdämpning:absorptionsdämpning:absorptionsdämpnings:absorptionsdämpningen:absorptionsdämpningens:absorptionsdämpningar:absorptionsdämpningars:absorptionsdämpningarna:absorptionsdämpningarnas
+COMPOUND(556622, 632573): absorption + dämpning
+CUSTOM: y y absorptionsdämpnings
+604615r3<substantiv>absorptionsegenskap:absorptionsegenskap:absorptionsegenskaps:absorptionsegenskapen:absorptionsegenskapens:absorptionsegenskaper:absorptionsegenskapers:absorptionsegenskaperna:absorptionsegenskapernas
+CUSTOM: y y absorptionsegenskaps
+613262r3<substantiv>absorptionsfilter:absorptionsfilter:absorptionsfilters:absorptionsfiltret:absorptionsfiltrets:absorptionsfilter:absorptionsfilters:absorptionsfiltren:absorptionsfiltrens
+613268r3<substantiv>absorptionsflaska:absorptionsflaska:absorptionsflaskas:absorptionsflaskan:absorptionsflaskans:absorptionsflaskor:absorptionsflaskors:absorptionsflaskorna:absorptionsflaskornas
+632563r4<substantiv>absorptionsfrekvensmeter:absorptionsfrekvensmeter:absorptionsfrekvensmeters:absorptionsfrekvensmetern:absorptionsfrekvensmeterns:absorptionsfrekvensmetrar:absorptionsfrekvensmetrars:absorptionsfrekvensmetrarna:absorptionsfrekvensmetrarnas
+COMPOUND(556622, 632555): absorption + frekvensmeter
+604623r4<substantiv>absorptionsfusion:absorptionsfusion:absorptionsfusions:absorptionsfusionen:absorptionsfusionens:absorptionsfusioner:absorptionsfusioners:absorptionsfusionerna:absorptionsfusionernas
+COMPOUND(556622, 548987): absorption + fusion
+612076r3<substantiv>absorptionsförhållande:absorptionsförhållande:absorptionsförhållandes:absorptionsförhållandet:absorptionsförhållandets:absorptionsförhållanden:absorptionsförhållandens:absorptionsförhållandena:absorptionsförhållandenas
+608558r3<substantiv>absorptionsindex:absorptionsindex:absorptionsindex:absorptionsindexet:absorptionsindexets:absorptionsindex:absorptionsindex:absorptionsindexen:absorptionsindexens
+630690r4<substantiv>absorptionskapacitet:absorptionskapacitet:absorptionskapacitets:absorptionskapaciteten:absorptionskapacitetens:absorptionskapaciteter:absorptionskapaciteters:absorptionskapaciteterna:absorptionskapaciteternas
+COMPOUND(556622, 549450): absorption + kapacitet
+605760r3<substantiv>absorptionskil:absorptionskil:absorptionskils:absorptionskilen:absorptionskilens:absorptionskilar:absorptionskilars:absorptionskilarna:absorptionskilarnas
+604631r3<substantiv>absorptionskoefficient:absorptionskoefficient:absorptionskoefficients:absorptionskoefficienten:absorptionskoefficientens:absorptionskoefficienter:absorptionskoefficienters:absorptionskoefficienterna:absorptionskoefficienternas
+604639r3<substantiv>absorptionskolonn:absorptionskolonn:absorptionskolonns:absorptionskolonnen:absorptionskolonnens:absorptionskolonner:absorptionskolonners:absorptionskolonnerna:absorptionskolonnernas
+608563r3<substantiv>absorptionskomplex:absorptionskomplex:absorptionskomplex:absorptionskomplexet:absorptionskomplexets:absorptionskomplex:absorptionskomplex:absorptionskomplexen:absorptionskomplexens
+604663r3<substantiv>absorptionskonstant:absorptionskonstant:absorptionskonstants:absorptionskonstanten:absorptionskonstantens:absorptionskonstanter:absorptionskonstanters:absorptionskonstanterna:absorptionskonstanternas
+605768r4<substantiv>absorptionskrets:absorptionskrets:absorptionskrets:absorptionskretsen:absorptionskretsens:absorptionskretsar:absorptionskretsars:absorptionskretsarna:absorptionskretsarnas
+COMPOUND(556622, 551622): absorption + krets
+604671r3<substantiv>absorptionskylmaskin:absorptionskylmaskin:absorptionskylmaskins:absorptionskylmaskinen:absorptionskylmaskinens:absorptionskylmaskiner:absorptionskylmaskiners:absorptionskylmaskinerna:absorptionskylmaskinernas
+608568r3<substantiv>absorptionskylskåp:absorptionskylskåp:absorptionskylskåps:absorptionskylskåpet:absorptionskylskåpets:absorptionskylskåp:absorptionskylskåps:absorptionskylskåpen:absorptionskylskåpens
+608574r3<substantiv>absorptionskärl:absorptionskärl:absorptionskärls:absorptionskärlet:absorptionskärlets:absorptionskärl:absorptionskärls:absorptionskärlen:absorptionskärlens
+604692r3<substantiv>absorptionsmaskin:absorptionsmaskin:absorptionsmaskins:absorptionsmaskinen:absorptionsmaskinens:absorptionsmaskiner:absorptionsmaskiners:absorptionsmaskinerna:absorptionsmaskinernas
+608580r3<substantiv>absorptionsmaterial:absorptionsmaterial:absorptionsmaterials:absorptionsmaterialet:absorptionsmaterialets:absorptionsmaterial:absorptionsmaterials:absorptionsmaterialen:absorptionsmaterialens
+613276r3<substantiv>absorptionsmedel:absorptionsmedel:absorptionsmedels:absorptionsmedlet:absorptionsmedlets:absorptionsmedel:absorptionsmedels:absorptionsmedlen:absorptionsmedlens
+630687r3<substantiv>absorptionsmeter:absorptionsmeter:absorptionsmeters:absorptionsmetern:absorptionsmeterns:absorptionsmetrar:absorptionsmetrars:absorptionsmetrarna:absorptionsmetrarnas
+604700r3<substantiv>absorptionsperiod:absorptionsperiod:absorptionsperiods:absorptionsperioden:absorptionsperiodens:absorptionsperioder:absorptionsperioders:absorptionsperioderna:absorptionsperiodernas
+613282r3<substantiv>absorptionsrum:absorptionsrum:absorptionsrums:absorptionsrummet:absorptionsrummets:absorptionsrum:absorptionsrums:absorptionsrummen:absorptionsrummens
+608586r3<substantiv>absorptionsrör:absorptionsrör:absorptionsrörs:absorptionsröret:absorptionsrörets:absorptionsrör:absorptionsrörs:absorptionsrören:absorptionsrörens
+783135r4<substantiv>absorptionssnabbhet:absorptionssnabbhet:absorptionssnabbhets:absorptionssnabbheten:absorptionssnabbhetens::::
+COMPOUND(556622, 667430): absorption + snabbhet
+608592r3<substantiv>absorptionssystem:absorptionssystem:absorptionssystems:absorptionssystemet:absorptionssystemets:absorptionssystem:absorptionssystems:absorptionssystemen:absorptionssystemens
+608598r4<substantiv>absorptionstorn:absorptionstorn:absorptionstorns:absorptionstornet:absorptionstornets:absorptionstorn:absorptionstorns:absorptionstornen:absorptionstornens
+COMPOUND(556622, 553055): absorption + torn
+609101r3<substantiv>absorptionsvågmätare:absorptionsvågmätare:absorptionsvågmätares:absorptionsvågmätaren:absorptionsvågmätarens:absorptionsvågmätare:absorptionsvågmätares:absorptionsvågmätarna:absorptionsvågmätarnas
+CUSTOM: y y absorptionsvågmätar
+632547r4<substantiv>absorptionsvätska:absorptionsvätska:absorptionsvätskas:absorptionsvätskan:absorptionsvätskans:absorptionsvätskor:absorptionsvätskors:absorptionsvätskorna:absorptionsvätskornas
+COMPOUND(556622, 595809): absorption + vätska
+612084r3<substantiv>absorptionsämne:absorptionsämne:absorptionsämnes:absorptionsämnet:absorptionsämnets:absorptionsämnen:absorptionsämnens:absorptionsämnena:absorptionsämnenas
+600631r4<substantiv>abstinens:abstinens:abstinens:abstinensen:abstinensens:abstinenser:abstinensers:abstinenserna:abstinensernas
+CUSTOM: y y abstinens +abstinens
+608604r3<substantiv>abstinensbesvär:abstinensbesvär:abstinensbesvärs:abstinensbesväret:abstinensbesvärets:abstinensbesvär:abstinensbesvärs:abstinensbesvären:abstinensbesvärens
+604708r3<substantiv>abstinensprocess:abstinensprocess:abstinensprocess:abstinensprocessen:abstinensprocessens:abstinensprocesser:abstinensprocessers:abstinensprocesserna:abstinensprocessernas
+608605r3<substantiv>abstinenssymptom:abstinenssymptom:abstinenssymptoms:abstinenssymptomet:abstinenssymptomets:abstinenssymptom:abstinenssymptoms:abstinenssymptomen:abstinenssymptomens
+631139r4<substantiv>abstinenssymtom:abstinenssymtom:abstinenssymtoms:abstinenssymtomet:abstinenssymtomets:abstinenssymtom:abstinenssymtoms:abstinenssymtomen:abstinenssymtomens
+COMPOUND(600631, 608214): abstinens + symtom
+613288r3<substantiv>abstract:abstract:::::::
+546020r4<verb>abstrahera:abstrahera:abstraherade:abstraherat:abstraherar:abstrahera:abstraheras:abstraherades:abstraherats:abstraheras:abstraherad:abstraherat:abstraherade:abstraherande:
+638341r3<substantiv>abstrahering:abstrahering:abstraherings:abstraheringen:abstraheringens:abstraheringar:abstraheringars:abstraheringarna:abstraheringarnas
+CUSTOM: y y abstraherings
+858204r3<substantiv>abstrakt:abstrakt:abstrakts:abstraktet:abstraktets:abstrakter:abstrakters:abstrakterna:abstrakternas
+556623r3<adjektiv>abstrakt:abstrakt:abstrakt:abstrakta:abstrakta:abstraktare:abstraktast:abstraktaste:abstrakte
+556630r5<substantiv>abstraktion:abstraktion:abstraktions:abstraktionen:abstraktionens:abstraktioner:abstraktioners:abstraktionerna:abstraktionernas
+BASEWORDS: abstraktions
+CUSTOM: y y abstraktions +abstraktions
+638349r4<substantiv>abstraktionsförmåga:abstraktionsförmåga:abstraktionsförmågas:abstraktionsförmågan:abstraktionsförmågans:abstraktionsförmågor:abstraktionsförmågors:abstraktionsförmågorna:abstraktionsförmågornas
+COMPOUND(556630, 594097): abstraktion + förmåga
+610356r3<substantiv>abstraktionsnivå:abstraktionsnivå:abstraktionsnivås:abstraktionsnivån:abstraktionsnivåns:abstraktionsnivåer:abstraktionsnivåers:abstraktionsnivåerna:abstraktionsnivåernas
+563087r3<adjektiv>abstrus:abstrus:abstrust:abstrusa:abstrusa::::
+556625r3<adjektiv>absurd:absurd:absurt:absurda:absurda:absurdare:absurdast:absurdaste:absurde
+779398r4<substantiv>absurdhet:absurdhet:absurdhets:absurdheten:absurdhetens:absurdheter:absurdheters:absurdheterna:absurdheternas
+558110r3<substantiv>absurdism:absurdism:absurdisms:absurdismen:absurdismens:!:!:!:!
+600632r3<substantiv>absurdist:absurdist:absurdists:absurdisten:absurdistens:absurdister:absurdisters:absurdisterna:absurdisternas
+CUSTOM: y y absurdist
+568657r3<adjektiv>absurdistisk:absurdistisk:absurdistiskt:absurdistiska:absurdistiska::::
+548141r3<substantiv>absurditet:absurditet:absurditets:absurditeten:absurditetens:absurditeter:absurditeters:absurditeterna:absurditeternas
+779402r3<substantiv>abundans:abundans:abundans:abundansen:abundansens::::
+556627r8<adjektiv>abundant:abundant:abundant:abundanta:abundanta:abundantare:abundantast:abundantaste:
+564642r4<adjektiv>abyssal:abyssal:abyssalt:abyssala:abyssala::::
+CUSTOM: y y abyssal
+604716r4<substantiv>abyssalzon:abyssalzon:abyssalzons:abyssalzonen:abyssalzonens:abyssalzoner:abyssalzoners:abyssalzonerna:abyssalzonernas
+COMPOUND(564642, 550796): abyssal + zon
+CUSTOM: y n
+613292r3<substantiv>acajounöt:acajounöt:acajounöts:acajounöten:acajounötens:acajounötter:acajounötters:acajounötterna:acajounötternas
+608611r3<substantiv>acajouträd:acajouträd:acajouträds:acajouträdet:acajouträdets:acajouträd:acajouträds:acajouträden:acajouträdens
+588560r4<verb>accedera:accedera:accederade:accederat:accederar:accedera:accederas:accederades:accederats:accederas:accederad:accederat:accederade:accederande:
+966552r3<adverb>accelerando:accelerando
+556631r8<substantiv>acceleration:acceleration:accelerations:accelerationen:accelerationens:accelerationer:accelerationers:accelerationerna:accelerationernas
+BASEWORDS: accelerations
+CUSTOM: y y accelerations +accelerations
+604724r3<substantiv>accelerationsanod:accelerationsanod:accelerationsanods:accelerationsanoden:accelerationsanodens:accelerationsanoder:accelerationsanoders:accelerationsanoderna:accelerationsanodernas
+784576r4<substantiv>accelerationsarbete:accelerationsarbete:accelerationsarbetes:accelerationsarbetet:accelerationsarbetets:accelerationsarbeten:accelerationsarbetens:accelerationsarbetena:accelerationsarbetenas
+COMPOUND(556631, 612263): acceleration + arbete
+604732r3<substantiv>accelerationselektrod:accelerationselektrod:accelerationselektrods:accelerationselektroden:accelerationselektrodens:accelerationselektroder:accelerationselektroders:accelerationselektroderna:accelerationselektrodernas
+606455r3<substantiv>accelerationsfält:accelerationsfält:accelerationsfälts:accelerationsfältet:accelerationsfältets:accelerationsfält:accelerationsfälts:accelerationsfälten:accelerationsfältens
+613300r3<substantiv>accelerationsgaller:accelerationsgaller:accelerationsgallers:accelerationsgallret:accelerationsgallrets:accelerationsgaller:accelerationsgallers:accelerationsgallren:accelerationsgallrens
+613306r3<substantiv>accelerationshastighet:accelerationshastighet:accelerationshastighets:accelerationshastigheten:accelerationshastighetens:accelerationshastigheter:accelerationshastigheters:accelerationshastigheterna:accelerationshastigheternas
+CUSTOM: y y accelerationshastighets
+604740r3<substantiv>accelerationskraft:accelerationskraft:accelerationskrafts:accelerationskraften:accelerationskraftens:accelerationskrafter:accelerationskrafters:accelerationskrafterna:accelerationskrafternas
+608617r3<substantiv>accelerationskörfält:accelerationskörfält:accelerationskörfälts:accelerationskörfältet:accelerationskörfältets:accelerationskörfält:accelerationskörfälts:accelerationskörfälten:accelerationskörfältens
+605775r3<substantiv>accelerationslag:accelerationslag:accelerationslags:accelerationslagen:accelerationslagens:accelerationslagar:accelerationslagars:accelerationslagarna:accelerationslagarnas
+608623r3<substantiv>accelerationsmoment:accelerationsmoment:accelerationsmoments:accelerationsmomentet:accelerationsmomentets:accelerationsmoment:accelerationsmoments:accelerationsmomenten:accelerationsmomentens
+612092r3<substantiv>accelerationsmunstycke:accelerationsmunstycke:accelerationsmunstyckes:accelerationsmunstycket:accelerationsmunstyckets:accelerationsmunstycken:accelerationsmunstyckens:accelerationsmunstyckena:accelerationsmunstyckenas
+609107r3<substantiv>accelerationsmätare:accelerationsmätare:accelerationsmätares:accelerationsmätaren:accelerationsmätarens:accelerationsmätare:accelerationsmätares:accelerationsmätarna:accelerationsmätarnas
+CUSTOM: y y accelerationsmätar
+682091r4<substantiv>accelerationsnivå:accelerationsnivå:accelerationsnivås:accelerationsnivån:accelerationsnivåns:accelerationsnivåer:accelerationsnivåers:accelerationsnivåerna:accelerationsnivåernas
+COMPOUND(556631, 611085): acceleration + nivå
+612100r3<substantiv>accelerationsområde:accelerationsområde:accelerationsområdes:accelerationsområdet:accelerationsområdets:accelerationsområden:accelerationsområdens:accelerationsområdena:accelerationsområdenas
+604748r3<substantiv>accelerationspedal:accelerationspedal:accelerationspedals:accelerationspedalen:accelerationspedalens:accelerationspedaler:accelerationspedalers:accelerationspedalerna:accelerationspedalernas
+604756r3<substantiv>accelerationsprincip:accelerationsprincip:accelerationsprincips:accelerationsprincipen:accelerationsprincipens:accelerationsprinciper:accelerationsprincipers:accelerationsprinciperna:accelerationsprincipernas
+605783r4<substantiv>accelerationspump:accelerationspump:accelerationspumps:accelerationspumpen:accelerationspumpens:accelerationspumpar:accelerationspumpars:accelerationspumparna:accelerationspumparnas
+COMPOUND(556631, 551780): acceleration + pump
+611501r3<substantiv>accelerationsrelä:accelerationsrelä:accelerationsreläs:accelerationsreläet:accelerationsreläets:accelerationsreläer:accelerationsreläers:accelerationsreläerna:accelerationsreläernas
+608629r3<substantiv>accelerationsrör:accelerationsrör:accelerationsrörs:accelerationsröret:accelerationsrörets:accelerationsrör:accelerationsrörs:accelerationsrören:accelerationsrörens
+731894r4<substantiv>accelerationssensor:accelerationssensor:accelerationssensors:accelerationssensorn:accelerationssensorns:accelerationssensorer:accelerationssensorers:accelerationssensorerna:accelerationssensorernas
+COMPOUND(556631, 645434): acceleration + sensor
+604764r3<substantiv>accelerationstid:accelerationstid:accelerationstids:accelerationstiden:accelerationstidens:accelerationstider:accelerationstiders:accelerationstiderna:accelerationstidernas
+556632r3<substantiv>accelerator:accelerator:accelerators:acceleratorn:acceleratorns:acceleratorer:acceleratorers:acceleratorerna:acceleratorernas
+CUSTOM: y y accelerator +accelerator
+605791r3<substantiv>acceleratoranläggning:acceleratoranläggning:acceleratoranläggnings:acceleratoranläggningen:acceleratoranläggningens:acceleratoranläggningar:acceleratoranläggningars:acceleratoranläggningarna:acceleratoranläggningarnas
+CUSTOM: y y acceleratoranläggnings
+604772r3<substantiv>acceleratorpedal:acceleratorpedal:acceleratorpedals:acceleratorpedalen:acceleratorpedalens:acceleratorpedaler:acceleratorpedalers:acceleratorpedalerna:acceleratorpedalernas
+546021r5<verb>accelerera:accelerera:accelererade:accelererat:accelererar:accelerera:accelereras:accelererades:accelererats:accelereras:accelererad:accelererat:accelererade:accelererande:
+662933r7<substantiv>accelererande:accelererande:accelererandes:accelererandet:accelererandets::::
+662912r3<substantiv>accelereration:accelereration:accelererations:accelererationen:accelererationens:accelererationer:accelererationers:accelererationerna:accelererationernas
+CUSTOM: y y accelererations
+682099r3<substantiv>accelerering:accelerering:accelererings:accelereringen:accelereringens:accelereringar:accelereringars:accelereringarna:accelereringarnas
+CUSTOM: y y accelererings
+731662r3<substantiv>accelerometer:accelerometer:accelerometers:accelerometern:accelerometerns:accelerometrar:accelerometrars:accelerometrarna:accelerometrarnas
+548142r5<substantiv>accent:accent:accents:accenten:accentens:accenter:accenters:accenterna:accenternas
+CUSTOM: y y accent +accent
+605799r3<substantiv>accentbeteckning:accentbeteckning:accentbetecknings:accentbeteckningen:accentbeteckningens:accentbeteckningar:accentbeteckningars:accentbeteckningarna:accentbeteckningarnas
+CUSTOM: y y accentbetecknings
+605807r3<substantiv>accentförskjutning:accentförskjutning:accentförskjutnings:accentförskjutningen:accentförskjutningens:accentförskjutningar:accentförskjutningars:accentförskjutningarna:accentförskjutningarnas
+CUSTOM: y y accentförskjutnings
+564701r3<adjektiv>accentlös:accentlös:accentlöst:accentlösa:accentlösa::::
+613314r4<substantiv>accenttecken:accenttecken:accentteckens:accenttecknet:accenttecknets:accenttecken:accentteckens:accenttecknen:accenttecknens
+COMPOUND(548142, 559296): accent + tecken
+604780r3<substantiv>accentuation:accentuation:accentuations:accentuationen:accentuationens:accentuationer:accentuationers:accentuationerna:accentuationernas
+CUSTOM: y y accentuations
+546022r5<verb>accentuera:accentuera:accentuerade:accentuerat:accentuerar:accentuera:accentueras:accentuerades:accentuerats:accentueras:accentuerad:accentuerat:accentuerade:accentuerande:
+605816r4<substantiv>accentuering:accentuering:accentuerings:accentueringen:accentueringens:accentueringar:accentueringars:accentueringarna:accentueringarnas
+BASEWORDS: accentuerings
+CUSTOM: y y accentuerings
+600640r3<substantiv>accept:accept:accepts:accepten:acceptens:accepter:accepters:accepterna:accepternas
+556633r7<adjektiv>acceptabel:acceptabel:acceptabelt:acceptabla:acceptabla:acceptablare:acceptablast:acceptablaste:
+556634r8<substantiv>acceptans:acceptans:acceptans:acceptansen:acceptansens:acceptanser:acceptansers:acceptanserna:acceptansernas
+CUSTOM: y y acceptans +acceptans
+608635r4<substantiv>acceptansantal:acceptansantal:acceptansantals:acceptansantalet:acceptansantalets:acceptansantal:acceptansantals:acceptansantalen:acceptansantalens
+COMPOUND(556634, 552180): acceptans + antal
+608641r3<substantiv>acceptansfel:acceptansfel:acceptansfels:acceptansfelet:acceptansfelets:acceptansfel:acceptansfels:acceptansfelen:acceptansfelens
+604788r4<substantiv>acceptansgräns:acceptansgräns:acceptansgräns:acceptansgränsen:accepta

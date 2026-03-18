@@ -1,0 +1,584 @@
+bränning:urbrännings:urbränningen:urbränningens:urbränningar:urbränningars:urbränningarna:urbränningarnas
+811474r3<substantiv>urcell:urcell:urcells:urcellen:urcellens:urceller:urcellers:urcellerna:urcellernas
+988709r3<substantiv>urdjur:urdjur:urdjurs:urdjuret:urdjurets:urdjur:urdjurs:urdjuren:urdjurens
+811482r3<substantiv>urdrift:urdrift:urdrifts:urdriften:urdriftens::::
+697875r3<adjektiv>urdrucken:urdrucken:urdrucket:urdruckna:urdruckna::::
+929524r3<substantiv>urdu:urdu:::::::
+CUSTOM: y n y
+811486r3<adjektiv>urdum:urdum:urdumt:urdumma:urdumma::::urdumme
+CUSTOM: y n 
+568346r4<adjektiv>urdålig:urdålig:urdåligt:urdåliga:urdåliga::::urdålige
+787800r3<substantiv>urelement:urelement:urelements:urelementet:urelementets:urelement:urelements:urelementen:urelementens
+737000r3<substantiv>uremi:uremi:uremis:uremin:uremins::::
+CUSTOM: y n 
+943303r3<adjektiv>uremisk:uremisk:uremiskt:uremiska:uremiska::::::::::::
+CUSTOM: y n 
+811491r3<adjektiv>urenkel:urenkel:urenkelt:urenkla:urenkla::::
+895380r3<substantiv>uretan:uretan:uretans:uretanen:uretanens:uretaner:uretaners:uretanerna:uretanernas
+CUSTOM: y n
+595697r3<substantiv>uretanklubba:uretanklubba:uretanklubbas:uretanklubban:uretanklubbans:uretanklubbor:uretanklubbors:uretanklubborna:uretanklubbornas
+604045r3<substantiv>urfabrik:urfabrik:urfabriks:urfabriken:urfabrikens:urfabriker:urfabrikers:urfabrikerna:urfabrikernas
+CUSTOM: y n n
+811494r4<substantiv>urfader:urfader:urfaders:urfadern:urfaderns:urfäder:urfäders:urfäderna:urfädernas
+578128r3<adjektiv>urfattig:urfattig:urfattigt:urfattiga:urfattiga::::
+811498r4<substantiv>urfjäder:urfjäder:urfjäders:urfjädern:urfjäderns:urfjädrar:urfjädrars:urfjädrarna:urfjädrarnas
+COMPOUND(553080, 561351): ur + fjäder
+811506r3<adjektiv>urflott:urflott:urflott:urflotta:urflotta::::
+770845r3<substantiv>urfolk:urfolk:urfolks:urfolket:urfolkets:urfolk:urfolks:urfolken:urfolkens
+CUSTOM: y y urfolks
+811508r3<substantiv>urform:urform:urforms:urformen:urformens:urformer:urformers:urformerna:urformernas
+811516r3<substantiv>urfräsning:urfräsning:urfräsnings:urfräsningen:urfräsningens::::
+811520r3<adjektiv>urfräst:urfräst:urfräst:urfrästa:urfrästa::::
+811522r3<substantiv>urfågel:urfågel:urfågels:urfågeln:urfågelns:urfåglar:urfåglars:urfåglarna:urfåglarnas
+578131r3<adjektiv>urfånig:urfånig:urfånigt:urfåniga:urfåniga::::
+787732r3<substantiv>urfånighet:urfånighet:urfånighets:urfånigheten:urfånighetens:urfånigheter:urfånigheters:urfånigheterna:urfånigheternas
+787728r3<adjektiv>urfälld:urfälld:urfällt:urfällda:urfällda::::
+811534r3<substantiv>urfällning:urfällning:urfällnings:urfällningen:urfällningens:urfällningar:urfällningars:urfällningarna:urfällningarnas
+770851r3<adjektiv>urförbannad:urförbannad:urförbannat:urförbannade:urförbannade:!:!:!:
+564534r3<adjektiv>urgammal:urgammal:urgammalt:urgamla:urgamla:!:!:!:urgamle
+591462r3<verb>urgera:urgera:urgerade:urgerat:urgerar:urgera:::::::::
+811542r3<adjektiv>urgermansk:urgermansk:urgermanskt:urgermanska:urgermanska::::
+811544r3<substantiv>urgermanska:urgermanska:urgermanskas:urgermanskan:urgermanskans::::
+811548r3<substantiv>urgestaltning:urgestaltning:urgestaltnings:urgestaltningen:urgestaltningens:urgestaltningar:urgestaltningars:urgestaltningarna:urgestaltningarnas
+811556r3<substantiv>urgrund:urgrund:urgrunds:urgrunden:urgrundens:urgrunder:urgrunders:urgrunderna:urgrundernas
+800695r3<adjektiv>urgrävd:urgrävd:urgrävt:urgrävda:urgrävda::::
+920655r4<verb>urgröpa:urgröpa:urgröpte:urgröpt:urgröper:urgröp:urgröpas:urgröptes:urgröpts:urgröps:urgröpt:urgröpt:urgröpta::
+COMPOUND(645067, 648993): ur + gröpa
+CUSTOM: y n n
+811564r3<substantiv>urgröpning:urgröpning:urgröpnings:urgröpningen:urgröpningens:urgröpningar:urgröpningars:urgröpningarna:urgröpningarnas
+645076r3<adjektiv>urgröpt:urgröpt:urgröpt:urgröpta:urgröpta:!:!:!:!
+738079r3<adjektiv>urgullig:urgullig:urgulligt:urgulliga:urgulliga:!:!:!:
+CUSTOM: y n n
+627523r3<substantiv>urhem:urhem:urhems:urhemmet:urhemmets:urhem:urhems:urhemmen:urhemmens
+811572r3<substantiv>urhistoria:urhistoria:urhistorias:urhistorien:urhistoriens::::
+547953r6<verb>urholka:urholka:urholkade:urholkat:urholkar:urholka:urholkas:urholkades:urholkats:urholkas:urholkad:urholkat:urholkade:urholkande:
+COMPOUND(645068, 546874): ur + holka
+749535r3<substantiv>urholkning:urholkning:urholknings:urholkningen:urholkningens:urholkningar:urholkningars:urholkningarna:urholkningarnas
+584598r3<adjektiv>uridiotisk:uridiotisk:uridiotiskt:uridiotiska:uridiotiska::::
+556842r11<substantiv>urin:urin:urins:urinen:urinens:!:!:!:!
+DEFINITION 1: gulaktig vätska med slaggprodukter som avsöndras av njurarna
+CUSTOM: y y urin
+595705r3<substantiv>urinblåsa:urinblåsa:urinblåsas:urinblåsan:urinblåsans:urinblåsor:urinblåsors:urinblåsorna:urinblåsornas
+584601r3<adjektiv>urindoeuropeisk:urindoeuropeisk:urindoeuropeiskt:urindoeuropeiska:urindoeuropeiska::::
+988715r3<substantiv>urindoeuropeiska:urindoeuropeiska:urindoeuropeiskas:urindoeuropeiskan:urindoeuropeiskans::::
+611443r3<substantiv>urindustri:urindustri:urindustris:urindustrin:urindustrins:urindustrier:urindustriers:urindustrierna:urindustriernas
+588328r4<verb>urinera:urinera:urinerade:urinerat:urinerar:urinera:urineras:urinerades:urinerats:urineras:::::
+811579r3<substantiv>urinering:urinering:urinerings:urineringen:urineringens:urineringar:urineringars:urineringarna:urineringarnas
+796358r3<adjektiv>urinförgiftad:urinförgiftad:urinförgiftat:urinförgiftade:urinförgiftade:!:!:!:
+811587r3<substantiv>urinnevånare:urinnevånare:urinnevånares:urinnevånaren:urinnevånarens:urinnevånare:urinnevånares:urinnevånarna:urinnevånarnas
+645078r8<substantiv>urinoar:urinoar:urinoars:urinoaren:urinoarens:urinoarer:urinoarers:urinoarerna:urinoarernas
+749543r4<substantiv>urinprov:urinprov:urinprovs:urinprovet:urinprovets:urinprover, urinprov:urinprovers, urinprovs:urinproverna, urinproven:urinprovernas, urinprovens
+COMPOUND(556842, 621658): urin + prov
+933381r4<substantiv>urinrör:urinrör:urinrörs:urinröret:urinrörets:urinrör:urinrörs:urinrören:urinrörens
+COMPOUND(556842, 552860): urin + rör
+811597r3<substantiv>urinstinkt:urinstinkt:urinstinkts:urinstinkten:urinstinktens:urinstinkter:urinstinkters:urinstinkterna:urinstinkternas
+953429r4<substantiv>urinsyra:urinsyra:urinsyras:urinsyran:urinsyrans:urinsyror:urinsyrors:urinsyrorna:urinsyrornas
+COMPOUND(556842, 624847): urin + syra
+749553r3<substantiv>urinvånare:urinvånare:urinvånares:urinvånaren:urinvånarens:urinvånare:urinvånares:urinvånarna:urinvånarnas
+645086r4<substantiv>urinväg:urinväg:urinvägs:urinvägen:urinvägens:urinvägar:urinvägars:urinvägarna:urinvägarnas
+CUSTOM: y y urinvägs
+811605r4<substantiv>urinvägsinfektion:urinvägsinfektion:urinvägsinfektions:urinvägsinfektionen:urinvägsinfektionens:urinvägsinfektioner:urinvägsinfektioners:urinvägsinfektionerna:urinvägsinfektionernas
+COMPOUND(645086, 602287): urinväg + infektion
+811613r3<verb>urkalka:urkalka:urkalkade:urkalkat:urkalkar:urkalka:urkalkas:urkalkades:urkalkats:urkalkas:urkalkad:urkalkat:urkalkade:urkalkande:
+811622r3<substantiv>urkalkning:urkalkning:urkalknings:urkalkningen:urkalkningens::::
+811626r3<substantiv>urkalksten:urkalksten:urkalkstens:urkalkstenen:urkalkstenens::::
+796361r3<adjektiv>urkarvad:urkarvad:urkarvat:urkarvade:urkarvade:!:!:!:
+811631r3<adjektiv>urkass:urkass:urkasst:urkassa:urkassa::::
+645094r5<substantiv>urklipp:urklipp:urklipps:urklippet:urklippets:urklipp:urklipps:urklippen:urklippens
+CUSTOM: y y urklipps
+811635r3<substantiv>urklippning:urklippning:urklippnings:urklippningen:urklippningens:urklippningar:urklippningars:urklippningarna:urklippningarnas
+811643r4<substantiv>urklippsbok:urklippsbok:urklippsboks:urklippsboken:urklippsbokens:urklippsböcker:urklippsböckers:urklippsböckerna:urklippsböckernas
+COMPOUND(645094, 555346): urklipp + bok
+811651r3<adjektiv>urklippt:urklippt:urklippt:urklippta:urklippta::::
+800698r3<adjektiv>urklämd:urklämd:urklämt:urklämda:urklämda::::
+796364r3<adjektiv>urknackad:urknackad:urknackat:urknackade:urknackade:!:!:!:
+811653r3<substantiv>urkok:urkok:urkoks:urkoket:urkokets:urkok:urkoks:urkoken:urkokens
+CUSTOM: y n 
+811659r3<substantiv>urkokning:urkokning:urkoknings:urkokningen:urkokningens::::
+645098r3<adjektiv>urkokt:urkokt:urkokt:urkokta:urkokta:!:!:!:!
+584603r4<adjektiv>urkomisk:urkomisk:urkomiskt:urkomiska:urkomiska:!:!:!:urkomiske
+811664r7<adjektiv>urkonservativ:urkonservativ:urkonservativt:urkonservativa:urkonservativa:!:!:!:urkonservative
+811668r3<verb>urkoppla:urkoppla:urkopplade:urkopplat:urkopplar:urkoppla:urkopplas:urkopplades:urkopplats:urkopplas:urkopplad:urkopplat:urkopplade:urkopplande:
+811677r3<substantiv>urkoppling:urkoppling:urkopplings:urkopplingen:urkopplingens:urkopplingar:urkopplingars:urkopplingarna:urkopplingarnas
+796367r3<adjektiv>urkorkad:urkorkad:urkorkat:urkorkade:urkorkade:!:!:!:
+749559r3<substantiv>urkraft:urkraft:urkrafts:urkraften:urkraftens::::
+578132r3<adjektiv>urkraftig:urkraftig:urkraftigt:urkraftiga:urkraftiga::::
+796370r3<adjektiv>urkramad:urkramad:urkramat:urkramade:urkramade:!:!:!:
+697878r3<substantiv>urkramning:urkramning:urkramnings:urkramningen:urkramningens:urkramningar:urkramningars:urkramningarna:urkramningarnas
+CUSTOM: y y urkramnings
+796373r3<adjektiv>urkratsad:urkratsad:urkratsat:urkratsade:urkratsade:!:!:!:
+811685r3<adjektiv>urkristen:urkristen:urkristet:urkristna:urkristna::::urkristne
+811689r3<substantiv>urkristendom:urkristendom:urkristendoms:urkristendomen:urkristendomens::::
+708653r5<substantiv>urkund:urkund:urkunds:urkunden:urkundens:urkunder:urkunders:urkunderna:urkundernas
+CUSTOM: y y urkunds
+568349r3<adjektiv>urkundlig:urkundlig:urkundligt:urkundliga:urkundliga::::
+708661r4<substantiv>urkundsförfalskning:urkundsförfalskning:urkundsförfalsknings:urkundsförfalskningen:urkundsförfalskningens:urkundsförfalskningar:urkundsförfalskningars:urkundsförfalskningarna:urkundsförfalskningarnas
+COMPOUND(708653, 593176): urkund + förfalskning
+CUSTOM: n n y
+697883r3<substantiv>urkälla:urkälla:urkällas:urkällan:urkällans:urkällor:urkällors:urkällorna:urkällornas
+749564r3<adjektiv>urkärnad:urkärnad:urkärnat:urkärnade:urkärnade:!:!:!:
+811693r3<substantiv>urkärning:urkärning:urkärnings:urkärningen:urkärningens::::
+547954r5<verb>urladda:urladda:urladdade:urladdat:urladdar:urladda:urladdas:urladdades:urladdats:urladdas:urladdad:urladdat:urladdade:urladdande:
+697888r3<substantiv>urladdning:urladdning:urladdnings:urladdningen:urladdningens:urladdningar:urladdningars:urladdningarna:urladdningarnas
+CUSTOM: y y urladdnings
+547955r4<verb>urlaka:urlaka:urlakade:urlakat:urlakar:urlaka:urlakas:urlakades:urlakats:urlakas:urlakad:urlakat:urlakade::
+645100r3<adjektiv>urlakad:urlakad:urlakat:urlakade:urlakade:!:!:!:
+645101r3<substantiv>urlakning:urlakning:urlaknings:urlakningen:urlakningens::::
+CUSTOM: y y urlaknings
+811698r3<substantiv>urlastning:urlastning:urlastnings:urlastningen:urlastningens::::
+811702r3<adjektiv>urledvriden:urledvriden:urledvridet:urledvridna:urledvridna::::
+811705r3<substantiv>urledvridning:urledvridning:urledvridnings:urledvridningen:urledvridningens:urledvridningar:urledvridningars:urledvridningarna:urledvridningarnas
+811714r3<adjektiv>urläcker:urläcker:urläckert:urläckra:urläckra:!:!:!:urläckre
+568352r4<adjektiv>urlöjlig:urlöjlig:urlöjligt:urlöjliga:urlöjliga:!:!:!:urlöjlige
+610188r3<substantiv>urmakare:urmakare:urmakares:urmakaren:urmakarens:urmakare:urmakares:urmakarna:urmakarnas
+CUSTOM: y y urmakar
+645105r3<substantiv>urmakeri:urmakeri:urmakeris:urmakeriet:urmakeriets:urmakerier:urmakeriers:urmakerierna:urmakeriernas
+697889r3<adjektiv>urminnes::::urminnes:!:!:!:!
+796376r3<adjektiv>urmjölkad:urmjölkad:urmjölkat:urmjölkade:urmjölkade:!:!:!:
+811720r3<substantiv>urmjölkning:urmjölkning:urmjölknings:urmjölkningen:urmjölkningens::::
+697890r4<substantiv>urmoder:urmoder:urmoders:urmodern:urmoderns:urmödrar:urmödrars:urmödrarna:urmödrarnas
+568355r3<adjektiv>urmoderlig:urmoderlig:urmoderligt:urmoderliga:urmoderliga::::
+578135r3<adjektiv>urmodig:urmodig:urmodigt:urmodiga:urmodiga::::
+811724r3<substantiv>urmyt:urmyt:urmyts:urmyten:urmytens:urmyter:urmyters:urmyterna:urmyternas
+CUSTOM: y n
+697894r3<substantiv>urmänniska:urmänniska:urmänniskas:urmänniskan:urmänniskans:urmänniskor:urmänniskors:urmänniskorna:urmänniskornas
+629036r4<substantiv>urna:urna:urnas:urnan:urnans:urnor:urnors:urnorna:urnornas
+988719r3<substantiv>urngrav:urngrav:urngravs:urngraven:urngravens:urngravar:urngravars:urngravarna:urngravarnas
+584606r3<adjektiv>urnordisk:urnordisk:urnordiskt:urnordiska:urnordiska::::
+811736r3<substantiv>urnordiska:urnordiska:urnordiskas:urnordiskan:urnordiskans::::
+811740r3<adjektiv>urnupen:urnupen:urnupet:urnupna:urnupna::::
+811743r3<substantiv>urnypning:urnypning:urnypnings:urnypningen:urnypningens::::
+811747r3<substantiv>urografi:urografi:urografis:urografin:urografins::::
+708669r3<substantiv>urolog:urolog:urologs:urologen:urologens:urologer:urologers:urologerna:urologernas
+708677r3<substantiv>urologi:urologi:urologis:urologin:urologins:!:!:!:!
+584608r3<adjektiv>urologisk:urologisk:urologiskt:urologiska:urologiska::::
+811751r3<substantiv>uroxe:uroxe:uroxes:uroxen:uroxens:uroxar:uroxars:uroxarna:uroxarnas
+811759r3<substantiv>urpackning:urpackning:urpacknings:urpackningen:urpackningens::::
+811763r3<substantiv>urplock:urplock:urplocks:urplocket:urplockets::::
+796379r3<adjektiv>urplockad:urplockad:urplockat:urplockade:urplockade:!:!:!:
+708681r3<substantiv>urpremiär:urpremiär:urpremiärs:urpremiären:urpremiärens:urpremiärer:urpremiärers:urpremiärerna:urpremiärernas
+811767r3<substantiv>urprincip:urprincip:urprincips:urprincipen:urprincipens:urprinciper:urprincipers:urprinciperna:urprincipernas
+811775r3<substantiv>urreligion:urreligion:urreligions:urreligionen:urreligionens:urreligioner:urreligioners:urreligionerna:urreligionernas
+684699r3<adjektiv>urringad:urringad:urringat:urringade:urringade:!:!:!:
+637933r3<substantiv>urringning:urringning:urringnings:urringningen:urringningens:urringningar:urringningars:urringningarna:urringningarnas
+CUSTOM: y y urringnings
+811783r3<substantiv>urrivning:urrivning:urrivnings:urrivningen:urrivningens:urrivningar:urrivningars:urrivningarna:urrivningarnas
+920674r3<substantiv>urscen:urscen:urscens:urscenen:urscenens:urscener:ursceners:urscenerna:urscenernas
+CUSTOM: y n n
+796382r3<adjektiv>urschaktad:urschaktad:urschaktat:urschaktade:urschaktade:!:!:!:
+811792r3<substantiv>urschaktning:urschaktning:urschaktnings:urschaktningen:urschaktningens:urschaktningar:urschaktningars:urschaktningarna:urschaktningarnas
+708689r3<substantiv>ursinne:ursinne:ursinnes:ursinnet:ursinnets::::
+578136r4<adjektiv>ursinnig:ursinnig:ursinnigt:ursinniga:ursinniga:ursinnigare:ursinnigast:ursinnigaste:ursinnige
+798991r3<adjektiv>urskicklig:urskicklig:urskickligt:urskickliga:urskickliga::::
+697903r7<verb>urskilja:urskilja:urskiljde, urskilde:urskiljt, urskilt:urskiljer:urskilj:urskiljas:urskiljdes, urskildes:urskiljts, urskilts:urskiljs, urskiljes:urskild:urskiljt:urskiljda::
+COMPOUND(645067, 593358): ur + skilja
+697912r3<substantiv>urskiljande:urskiljande:urskiljandes:urskiljandet:urskiljandets::::
+570391r3<adjektiv>urskiljbar:urskiljbar:urskiljbart:urskiljbara:urskiljbara::::
+697914r3<substantiv>urskiljning:urskiljning:urskiljnings:urskiljningen:urskiljningens::::
+CUSTOM: y y urskiljnings
+708693r4<substantiv>urskillning:urskillning:urskillnings:urskillningen:urskillningens::::
+CUSTOM: y y urskillnings
+811804r4<substantiv>urskillningsförmåga:urskillningsförmåga:urskillningsförmågas:urskillningsförmågan:urskillningsförmågans::::
+COMPOUND(708693, 594097): urskillning + förmåga
+565439r3<adjektiv>urskillningslös:urskillningslös:urskillningslöst:urskillningslösa:urskillningslösa::::
+552074r4<substantiv>urskog:urskog:urskogs:urskogen:urskogens:urskogar:urskogars:urskogarna:urskogarnas
+CUSTOM: y y urskogs
+708697r4<substantiv>urskogsområde:urskogsområde:urskogsområdes:urskogsområdet:urskogsområdets:urskogsområden:urskogsområdens:urskogsområdena:urskogsområdenas
+COMPOUND(552074, 612761): urskog + område
+811808r3<substantiv>urskrift:urskrift:urskrifts:urskriften:urskriftens:urskrifter:urskrifters:urskrifterna:urskrifternas
+796385r3<adjektiv>urskruvad:urskruvad:urskruvat:urskruvade:urskruvade:!:!:!:
+811816r3<substantiv>urskruvning:urskruvning:urskruvnings:urskruvningen:urskruvningens:urskruvningar:urskruvningars:urskruvningarna:urskruvningarnas
+708705r4<verb>urskulda:urskulda:urskuldade:urskuldat:urskuldar:urskulda:urskuldas:urskuldades:urskuldats:urskuldas:urskuldad:urskuldat:urskuldade:urskuldande:
+796388r3<adjektiv>urskålad:urskålad:urskålat:urskålade:urskålade:!:!:!:
+811824r3<substantiv>urskålning:urskålning:urskålnings:urskålningen:urskålningens:urskålningar:urskålningars:urskålningarna:urskålningarnas
+800701r3<adjektiv>ursköljd:ursköljd:ursköljt:ursköljda:ursköljda::::
+811832r3<substantiv>ursköljning:ursköljning:ursköljnings:ursköljningen:ursköljningens::::
+796391r3<adjektiv>urskölpad:urskölpad:urskölpat:urskölpade:urskölpade:!:!:!:
+763177r3<adjektiv>ursnygg:ursnygg:ursnyggt:ursnygga:ursnygga:!:!:!:ursnygge
+796394r3<adjektiv>ursparad:ursparad:ursparat:ursparade:ursparade:!:!:!:
+609070r6<substantiv>ursprung:ursprung:ursprungs:ursprunget:ursprungets:ursprung:ursprungs:ursprungen:ursprungens
+CUSTOM: y y ursprungs
+563249r4<adjektiv>ursprunglig:ursprunglig:ursprungligt:ursprungliga:ursprungliga:ursprungligare:ursprungligast:ursprungligaste:ursprunglige
+620896r3<adverb>ursprungligen:ursprungligen
+708709r3<substantiv>ursprunglighet:ursprunglighet:ursprunglighets:ursprungligheten:ursprunglighetens::::
+706581r4<substantiv>ursprungsbefolkning:ursprungsbefolkning:ursprungsbefolknings:ursprungsbefolkningen:ursprungsbefolkningens:ursprungsbefolkningar:ursprungsbefolkningars:ursprungsbefolkningarna:ursprungsbefolkningarnas
+COMPOUND(609070, 592435): ursprung + befolkning
+896242r4<substantiv>ursprungsmyt:ursprungsmyt:ursprungsmyts:ursprungsmyten:ursprungsmytens:ursprungsmyter:ursprungsmyters:ursprungsmyterna:ursprungsmyternas
+COMPOUND(609070, 550063): ursprung + myt
+632022r30<verb>ursprungsmärka:ursprungsmärka:ursprungsmärkte:ursprungsmärkt:ursprungsmärker:ursprungsmärk:ursprungsmärkas:ursprungsmärktes:ursprungsmärkts:ursprungsmärks:ursprungsmärkt:ursprungsmärkt:ursprungsmärkta:ursprungsmärkande:
+COMPOUND(609070, 585833): ursprung + märka
+697918r3<substantiv>urspråk:urspråk:urspråks:urspråket:urspråkets:urspråk:urspråks:urspråken:urspråkens
+568358r3<adjektiv>urspråklig:urspråklig:urspråkligt:urspråkliga:urspråkliga::::
+796397r3<adjektiv>urspårad:urspårad:urspårat:urspårade:urspårade:!:!:!:
+811836r3<substantiv>urspåring:urspåring:urspårings:urspåringen:urspåringens:urspåringar:urspåringars:urspåringarna:urspåringarnas
+765031r4<substantiv>urspårning:urspårning:urspårnings:urspårningen:urspårningens:urspårningar:urspårningars:urspårningarna:urspårningarnas
+811844r3<substantiv>urstadium:urstadium:urstadiums:urstadiet:urstadiets:urstadier:urstadiers:urstadierna:urstadiernas
+706589r4<adjektiv>urstark:urstark:urstarkt:urstarka:urstarka::::urstarke
+811852r3<substantiv>urstigning:urstigning:urstignings:urstigningen:urstigningens:urstigningar:urstigningars:urstigningarna:urstigningarnas
+811860r3<adjektiv>urstyv:urstyv:urstyvt:urstyva:urstyva::::urstyve
+972032r3<egennamn>Ursula:Ursula:Ursulas
+811864r3<adjektiv>ursupen:ursupen:ursupet:ursupna:ursupna::::
+706592r4<adjektiv>ursvensk:ursvensk:ursvenskt:ursvenska:ursvenska:!:!:!:ursvenske
+811868r3<substantiv>ursvenskhet:ursvenskhet:ursvenskhets:ursvenskheten:ursvenskhetens::::
+796400r3<adjektiv>ursågad:ursågad:ursågat:ursågade:ursågade:!:!:!:
+811872r3<substantiv>ursågning:ursågning:ursågnings:ursågningen:ursågningens:ursågningar:ursågningars:ursågningarna:ursågningarnas
+550740r3<substantiv>ursäkt:ursäkt:ursäkts:ursäkten:ursäktens:ursäkter:ursäkters:ursäkterna:ursäkternas
+645113r5<verb>ursäkta:ursäkta:ursäktade:ursäktat:ursäktar:ursäkta:ursäktas:ursäktades:ursäktats:ursäktas:ursäktad:ursäktat:ursäktade:ursäktande:
+570392r3<adjektiv>ursäktbar:ursäktbar:ursäktbart:ursäktbara:ursäktbara::::
+568361r3<adjektiv>ursäktlig:ursäktlig:ursäktligt:ursäktliga:ursäktliga::::
+570395r3<adjektiv>urtagbar:urtagbar:urtagbart:urtagbara:urtagbara::::
+802206r3<adjektiv>urtagen:urtagen:urtaget:urtagna:urtagna::::
+811880r4<substantiv>urtagning:urtagning:urtagnings:urtagningen:urtagningens:urtagningar:urtagningars:urtagningarna:urtagningarnas
+CUSTOM: y y urtagnings +urtagnings
+811888r3<substantiv>urtagningsmaskin::::::::
+COMPOUND(811880, 550005): urtagning + maskin
+796403r3<adjektiv>urtappad:urtappad:urtappat:urtappade:urtappade:!:!:!:
+811889r3<substantiv>urtappning:urtappning:urtappnings:urtappningen:urtappningens:urtappningar:urtappningars:urtappningarna:urtappningarnas
+749574r4<substantiv>urtavla:urtavla:urtavlas:urtavlan:urtavlans:urtavlor:urtavlors:urtavlorna:urtavlornas
+COMPOUND(553080, 555309): ur + tavla
+811897r3<substantiv>urtext:urtext:urtexts:urtexten:urtextens:urtexter:urtexters:urtexterna:urtexternas
+645117r4<substantiv>urtid:urtid:urtids:urtiden:urtidens::::
+CUSTOM: y y urtids
+749582r3<adjektiv>urtida:urtida:urtida:urtida:urtida:!:!:!:
+708713r4<substantiv>urtidsödla:urtidsödla:urtidsödlas:urtidsödlan:urtidsödlans:urtidsödlor:urtidsödlors:urtidsödlorna:urtidsödlornas
+COMPOUND(645117, 622985): urtid + ödla
+707497r4<substantiv>urtillstånd:urtillstånd:urtillstånds:urtillståndet:urtillståndets:urtillstånd:urtillstånds:urtillstånden:urtillståndens
+988727r3<adjektiv>urtima:urtima:::::::::::::::
+CUSTOM: y n
+578137r4<adjektiv>urtjusig:urtjusig:urtjusigt:urtjusiga:urtjusiga:!:!:!:urtjusige
+707501r4<adjektiv>urtrist:urtrist:urtrist:urtrista:urtrista:!:!:!:urtriste
+578140r4<adjektiv>urtråkig:urtråkig:urtråkigt:urtråkiga:urtråkiga::::urtråkige
+796406r3<adjektiv>urtröskad:urtröskad:urtröskat:urtröskade:urtröskade:!:!:!:
+811910r3<substantiv>urtröskning:urtröskning:urtrösknings:urtröskningen:urtröskningens::::
+707503r3<adjektiv>urtvättad:urtvättad:urtvättat:urtvättade:urtvättade:!:!:!:
+811914r3<substantiv>urtvättning:urtvättning:urtvättnings:urtvättningen:urtvättningens:urtvättningar:urtvättningars:urtvättningarna:urtvättningarnas
+645119r3<substantiv>urtyp:urtyp:urtyps:urtypen:urtypens:urtyper:urtypers:urtyperna:urtypernas
+584611r4<adjektiv>urtypisk:urtypisk:urtypiskt:urtypiska:urtypiska:!:!:!:urtypiske
+554156r3<egennamn>Uruguay:Uruguay:Uruguays
+CUSTOM: y n Uruguay
+811923r3<substantiv>uruguayan:uruguayan:uruguayans:uruguayanen:uruguayanens:uruguayaner:uruguayaners:uruguayanerna:uruguayanernas
+811931r3<adjektiv>uruguayansk:uruguayansk:uruguayanskt:uruguayanska:uruguayanska:!:!:!:uruguayanske
+811934r3<substantiv>uruguayanska:uruguayanska:uruguayanskas:uruguayanskan:uruguayanskans:uruguayanskor:uruguayanskors:uruguayanskorna:uruguayanskornas
+811942r3<substantiv>uruguayare:uruguayare:uruguayares:uruguayaren:uruguayarens:uruguayare:uruguayares:uruguayarna:uruguayarnas
+811948r3<adjektiv>uruguaysk:uruguaysk:uruguayskt:uruguayska:uruguayska::::uruguayske
+620882r6<verb>uruppföra:uruppföra:uruppförde:uruppfört:uruppför:uruppför:uruppföras:uruppfördes:uruppförts:uruppförs, uruppföres:uruppförd:uruppfört:uruppförda::
+749583r4<substantiv>uruppförande:uruppförande:uruppförandes:uruppförandet:uruppförandets:uruppföranden:uruppförandens:uruppförandena:uruppförandenas
+COMPOUND(645067, 675877): ur + uppförande
+679188r8<adjektiv>urusel:urusel:uruselt:urusla:urusla:uruslare:uruslast:uruslaste:urusle
+DEFINITION 1: Riktigt usel (dålig)
+553081r6<substantiv>urval:urval:urvals:urvalet:urvalets:urval:urvals:urvalen:urvalens
+CUSTOM: y y urvals
+697922r4<substantiv>urvalsförfarande:urvalsförfarande:urvalsförfarandes:urvalsförfarandet:urvalsförfarandets:urvalsförfaranden:urvalsförfarandens:urvalsförfarandena:urvalsförfarandenas
+COMPOUND(553081, 593181): urval + förfarande
+697928r4<substantiv>urvalskriterium:urvalskriterium:urvalskriteriums:urvalskriteriet:urvalskriteriets:urvalskriterier:urvalskriteriers:urvalskriterierna:urvalskriteriernas
+COMPOUND(553081, 693223): urval + kriterium
+707777r4<verb>urvattna:urvattna:urvattnade:urvattnat:urvattnar:urvattna:urvattnas:urvattnades:urvattnats:urvattnas:urvattnad:urvattnat:urvattnade:urvattnande:
+707453r3<adjektiv>urvattnad:urvattnad:urvattnat:urvattnade:urvattnade:!:!:!:
+811953r4<substantiv>urvattning:urvattning:urvattnings:urvattningen:urvattningens::::
+CUSTOM: y y urvattnings
+811957r3<substantiv>urvattningstid::::::::
+COMPOUND(811953, 550665): urvattning + tid
+676183r4<substantiv>urverk:urverk:urverks:urverket:urverkets:urverk:urverks:urverken:urverkens
+COMPOUND(553080, 553117): ur + verk
+811958r3<substantiv>urversion:urversion:urversions:urversionen:urversionens:urversioner:urversioners:urversionerna:urversionernas
+811966r4<substantiv>urvisare:urvisare:urvisares:urvisaren:urvisarens:urvisare:urvisares:urvisarna:urvisarnas
+COMPOUND(553080, 620124): ur + visare
+564486r3<adjektiv>urvissen:urvissen:urvisset:urvissna:urvissna::::
+707456r3<adjektiv>urvriden:urvriden:urvridet:urvridna:urvridna:!:!:!:
+811972r3<substantiv>urvridning:urvridning:urvridnings:urvridningen:urvridningens:urvridningar:urvridningars:urvridningarna:urvridningarnas
+707459r3<adjektiv>urvuxen:urvuxen:urvuxet:urvuxna:urvuxna::::
+811980r3<substantiv>urvärld:urvärld:urvärlds:urvärlden:urvärldens:urvärldar:urvärldars:urvärldarna:urvärldarnas
+811988r3<adjektiv>urväxt:urväxt:urväxt:urväxta:urväxta::::
+920664r4<substantiv>uråkning:uråkning:uråknings:uråkningen:uråkningens:uråkningar:uråkningars:uråkningarna:uråkningarnas
+COMPOUND(645067, 653734): ur + åkning
+578143r4<adjektiv>uråldrig:uråldrig:uråldrigt:uråldriga:uråldriga:uråldrigare:uråldrigast:uråldrigaste:uråldrige
+811994r3<substantiv>uråldrighet:uråldrighet:uråldrighets:uråldrigheten:uråldrighetens::::
+554158r4<egennamn>USA:USA:
+554968r3<interjektion>usch:usch
+935386r3<interjektion>uschiamej:uschiamej
+568364r4<adjektiv>uschlig:uschlig:uschligt:uschliga:uschliga:uschligare:uschligast:uschligaste:
+564503r3<adjektiv>usel:usel:uselt:usla:usla:uslare:uslast:uslaste:usle
+697930r4<substantiv>uselhet:uselhet:uselhets:uselheten:uselhetens:uselheter:uselheters:uselheterna:uselheternas
+CUSTOM: y y uselhets
+568367r3<adjektiv>uslig:uslig:usligt:usliga:usliga::::
+CUSTOM: y n 
+645127r3<substantiv>usling:usling:uslings:uslingen:uslingens:uslingar:uslingars:uslingarna:uslingarnas
+812005r3<substantiv>usurpation:usurpation:usurpations:usurpationen:usurpationens::::
+812009r3<substantiv>usurpator:usurpator:usurpators:usurpatorn:usurpatorns:usurpatorer:usurpatorers:usurpatorerna:usurpatorernas
+591466r4<verb>usurpera:usurpera:usurperade:usurperat:usurperar:usurpera:usurperas:usurperades:usurperats:usurperas:usurperad:usurperat:usurperade:usurperande:
+557762r66<adverb>ut:ut
+CUSTOM: y n
+588332r4<verb>utackordera:utackordera:utackorderade:utackorderat:utackorderar:utackordera:utackorderas:utackorderades:utackorderats:utackorderas:utackorderad:utackorderat:utackorderade:utackorderande:
+774039r3<substantiv>utackordering:utackordering:utackorderings:utackorderingen:utackorderingens:utackorderingar:utackorderingars:utackorderingarna:utackorderingarnas
+591470r4<verb>utagera:utagera:utagerade:utagerat:utagerar:utagera:::::utagerad:utagerat:utagerade::
+CUSTOM: y n n
+774047r3<adjektiv>utagerad:utagerad:utagerat:utagerade:utagerade:!:!:!:
+697931r3<adjektiv>utagerande:utagerande:utagerande:utagerande:utagerande:!:!:!:
+990411r3<egennamn>Utah:Utah:Utahs
+619915r3<preposition>utan:utan
+619914r3<konjunktion>utan:utan
+894437r3<substantiv>utanbrytning:utanbrytning:utanbrytnings:utanbrytningen:utanbrytningens::::
+591759r3<deponens>utandas:utandas:utandades:utandats:utandas:
+725021r4<substantiv>utandning:utandning:utandnings:utandningen:utandningens:utandningar:utandningars:utandningarna:utandningarnas
+CUSTOM: y y utandnings +utandnings
+774048r3<substantiv>utandningsluft::::::::
+COMPOUND(725021, 562172): utandning + luft
+619917r3<preposition>utanför:utanför
+619916r3<adverb>utanför:utanför
+774049r3<substantiv>utanförkänsla:utanförkänsla:utanförkänslas:utanförkänslan:utanförkänslans:!:!:!:!
+619918r3<substantiv>utanförskap:utanförskap:utanförskaps:utanförskapet:utanförskapets::::
+CUSTOM: y y utanförskaps
+749592r3<adjektiv>utanförstående:utanförstående:utanförstående:utanförstående:utanförstående:!:!:!:
+800704r3<adjektiv>utanförställd:utanförställd:utanförställt:utanförställda:utanförställda::::
+774053r4<substantiv>utanläxa:utanläxa:utanläxas:utanläxan:utanläxans:utanläxor:utanläxors:utanläxorna:utanläxornas
+547956r4<verb>utannonsera:utannonsera:utannonserade:utannonserat:utannonserar:utannonsera:utannonseras:utannonserades:utannonserats:utannonseras:utannonserad:utannonserat:utannonserade::
+697933r3<substantiv>utannonserande:utannonserande:utannonserandes:utannonserandet:utannonserandets::::
+774057r3<substantiv>utannonsering:utannonsering:utannonserings:utannonseringen:utannonseringens:utannonseringar:utannonseringars:utannonseringarna:utannonseringarnas
+812026r3<substantiv>utanordning:utanordning:utanordnings:utanordningen:utanordningens:utanordningar:utanordningars:utanordningarna:utanordningarnas
+619923r3<adverb>utanpå:utanpå
+619922r3<preposition>utanpå:utanpå
+812034r3<substantiv>utanpåficka:utanpåficka:utanpåfickas:utanpåfickan:utanpåfickans:utanpåfickor:utanpåfickors:utanpåfickorna:utanpåfickornas
+774065r3<adjektiv>utanpåliggande:utanpåliggande:utanpåliggande:utanpåliggande:utanpåliggande:!:!:!:
+774066r3<adjektiv>utanpåsittande:utanpåsittande:utanpåsittande:utanpåsittande:utanpåsittande:!:!:!:
+812042r3<substantiv>utanpåskjorta:utanpåskjorta:utanpåskjortas:utanpåskjortan:utanpåskjortans:utanpåskjortor:utanpåskjortors:utanpåskjortorna:utanpåskjortornas
+812051r3<substantiv>utanpåverk:utanpåverk:utanpåverks:utanpåverket:utanpåverkets:utanpåverk:utanpåverks:utanpåverken:utanpåverkens
+619924r3<substantiv>utanskrift:utanskrift:utanskrifts:utanskriften:utanskriftens:utanskrifter:utanskrifters:utanskrifterna:utanskrifternas
+619932r3<adverb>utantill:utantill
+774067r3<substantiv>utantilläsning:utantilläsning:utantilläsnings:utantilläsningen:utantilläsningens:utantilläsningar:utantilläsningars:utantilläsningarna:utantilläsningarnas
+774075r3<substantiv>utantilläxa:utantilläxa:utantilläxas:utantilläxan:utantilläxans:utantilläxor:utantilläxors:utantilläxorna:utantilläxornas
+619933r3<substantiv>utanverk:utanverk:utanverks:utanverket:utanverkets:utanverk:utanverks:utanverken:utanverkens
+547957r4<verb>utarbeta:utarbeta:utarbetade:utarbetat:utarbetar:utarbeta:utarbetas:utarbetades:utarbetats:utarbetas:utarbetad:utarbetat:utarbetade::
+619939r3<adjektiv>utarbetad:utarbetad:utarbetat:utarbetade:utarbetade:!:!:!:
+697936r3<substantiv>utarbetande:utarbetande:utarbetandes:utarbetandet:utarbetandets::::
+812058r3<substantiv>utarbetning:utarbetning:utarbetnings:utarbetningen:utarbetningens::::
+619940r4<verb>utarma:utarma:utarmade:utarmat:utarmar:utarma:utarmas:utarmades:utarmats:utarmas:utarmad:utarmat:utarmade:utarmande:
+645128r3<adjektiv>utarmad:utarmad:utarmat:utarmade:utarmade:!:!:!:
+645129r3<substantiv>utarmning:utarmning:utarmnings:utarmningen:utarmningens::::
+CUSTOM: y y utarmnings
+588336r4<verb>utarrendera:utarrendera:utarrenderade:utarrenderat:utarrenderar:utarrendera:utarrenderas:utarrenderades:utarrenderats:utarrenderas:utarrenderad:utarrenderat:utarrenderade:utarrenderande:
+774083r3<substantiv>utarrendering:utarrendering:utarrenderings:utarrenderingen:utarrenderingens:utarrenderingar:utarrenderingars:utarrenderingarna:utarrenderingarnas
+619944r3<preposition>utav:utav
+591471r4<verb>utbalansera:utbalansera:utbalanserade:utbalanserat:utbalanserar:utbalansera:utbalanseras:utbalanserades:utbalanserats:utbalanseras:utbalanserad:utbalanserat:utbalanserade:utarrenderande:
+812078r3<substantiv>utbalansering:utbalansering:utbalanserings:utbalanseringen:utbalanseringens:utbalanseringar:utbalanseringars:utbalanseringarna:utbalanseringarnas
+591475r4<verb>utbasunera:utbasunera:utbasunerade:utbasunerat:utbasunerar:utbasunera:utbasuneras:utbasunerades:utbasunerats:utbasuneras:utbasunerad:utbasunerat:utbasunerade:utbasunerande:
+812091r3<substantiv>utbasunering:utbasunering:utbasunerings:utbasuneringen:utbasuneringens:utbasuneringar:utbasuneringars:utbasuneringarna:utbasuneringarnas
+812099r3<verb>utbeordra:utbeordra:utbeordrade:utbeordrat:utbeordrar:utbeordra:utbeordras:utbeordrades:utbeordrats:utbeordras:utbeordrad:utbeordrat:utbeordrade:utbeordrande:
+547958r5<verb>utbetala:utbetala:utbetalade:utbetalat:utbetalar:utbetala:utbetalas:utbetalades:utbetalats:utbetalas:utbetalad, utbetald:utbetalat, utbetalt:utbetalade, utbetalda::
+697945r3<substantiv>utbetalande:utbetalande:utbetalandes:utbetalandet:utbetalandets::::
+697948r3<substantiv>utbetalare:utbetalare:utbetalares:utbetalaren:utbetalarens:utbetalare:utbetalares:utbetalarna:utbetalarnas
+CUSTOM: y y utbetalar +utbetalar
+619945r4<substantiv>utbetalning:utbetalning:utbetalnings:utbetalningen:utbetalningens:utbetalningar:utbetalningars:utbetalningarna:utbetalningarnas
+CUSTOM: y y utbetalnings
+761693r3<substantiv>utbetalningskort::::::::
+COMPOUND(619945, 552580): utbetalning + kort
+697938r6<verb>utbe, utbedja:utbedja, utbe:utbad:utbett:utber, utbeder:::::::::utbedjande:
+COMPOUND(557762, 557636): ut + bedja, be
+547959r5<verb>utbilda:utbilda:utbildade:utbildat:utbildar:utbilda:utbildas:utbildades:utbildats:utbildas:utbildad:utbildat:utbildade:utbildande:
+796410r3<adjektiv>utbildad:utbildad:utbildat:utbildade:utbildade:!:!:!:
+615506r3<substantiv>utbildare:utbildare:utbildares:utbildaren:utbildarens:utbildare:utbildares:utbildarna:utbildarnas
+CUSTOM: y y utbildar
+597810r25<substantiv>utbildning:utbildning:utbildnings:utbildningen:utbildningens:utbildningar:utbildningars:utbildningarna:utbildningarnas
+BASEWORDS: utbildnings
+CUSTOM: y y utbildnings +utbildnings
+906293r4<substantiv>utbildningslinje:utbildningslinje:utbildningslinjes:utbildningslinjen:utbildningslinjens:utbildningslinjer:utbildningslinjers:utbildningslinjerna:utbildningslinjernas
+COMPOUND(597810, 611937): utbildning + linje
+697949r4<substantiv>utbildningsminister:utbildningsminister:utbildningsministers:utbildningsministern:utbildningsministerns:utbildningsministrar:utbildningsministrars:utbildningsministrarna:utbildningsministrarnas
+COMPOUND(597810, 616627): utbildning + minister
+578144r3<adjektiv>utbildningsmässig:utbildningsmässig:utbildningsmässigt:utbildningsmässiga:utbildningsmässiga::::
+722469r4<substantiv>utbildningsnivå:utbildningsnivå:utbildningsnivås:utbildningsnivån:utbildningsnivåns:utbildningsnivåer:utbildningsnivåers:utbildningsnivåerna:utbildningsnivåernas
+COMPOUND(597810, 611085): utbildning + nivå
+920684r4<substantiv>utbildningsort:utbildningsort:utbildningsorts:utbildningsorten:utbildningsortens:utbildningsorter:utbildningsorters:utbildningsorterna:utbildningsorternas
+COMPOUND(597810, 550141): utbildning + ort
+584614r3<adjektiv>utbildningspolitisk:utbildningspolitisk:utbildningspolitiskt:utbildningspolitiska:utbildningspolitiska::::
+697950r3<substantiv>utbildningsradio:utbildningsradio:utbildningsradios:utbildningsradion:utbildningsradions::::
+697954r4<substantiv>utbildningssektor:utbildningssektor:utbildningssektors:utbildningssektorn:utbildningssektorns::::
+COMPOUND(597810, 622134): utbildning + sektor
+894443r4<substantiv>utbildningstak:utbildningstak:utbildningstaks:utbildningstaket:utbildningstakets:utbildningstak:utbildningstaks:utbildningstaken:utbildningstakens
+COMPOUND(597810, 553027): utbildning + tak
+679195r4<verb>utbjuda:utbjuda:utbjöd:utbjudit:utbjuder:utbjud:utbjudas:utbjöds:utbjudits:utbjuds, utbjudes:utbjuden:utbjudet:utbjudna::
+812112r3<substantiv>utbjudning:utbjudning:utbjudnings:utbjudningen:utbjudningens:utbjudningar:utbjudningars:utbjudningarna:utbjudningarnas
+774091r3<adjektiv>utblandad:utblandad:utblandat:utblandade:utblandade:!:!:!:
+774094r4<substantiv>utblandning:utblandning:utblandnings:utblandningen:utblandningens:utblandningar:utblandningars:utblandningarna:utblandningarnas
+749593r3<substantiv>utblick:utblick:utblicks:utblicken:utblickens:utblickar:utblickars:utblickarna:utblickarnas
+749601r3<adjektiv>utblommad:utblommad:utblommat:utblommade:utblommade:!:!:!:
+812124r3<substantiv>utblomning:utblomning:utblomnings:utblomningen:utblomningens::::
+697959r3<adjektiv>utblottad:utblottad:utblottat:utblottade:utblottade:!:!:!:
+812128r3<substantiv>utblottning:utblottning:utblottnings:utblottningen:utblottningens::::
+774098r4<substantiv>utblåsning:utblåsning:utblåsnings:utblåsningen:utblåsningens:utblåsningar:utblåsningars:utblåsningarna:utblåsningarnas
+CUSTOM: y y utblåsnings
+774106r3<substantiv>utblåsningsmunstycke::::::::
+COMPOUND(774098, 676098): utblåsning + munstycke
+774107r3<adjektiv>utblåst:utblåst:utblåst:utblåsta:utblåsta::::
+876232r4<substantiv>utbo:utbo:utbos:utbon:utbons:utbor:utbors:utborna:utbornas
+DEFINITION 1: Fastighetsägare bosatt på annan ort
+CUSTOM: y n
+774109r3<substantiv>utbogsering:utbogsering:utbogserings:utbogseringen:utbogseringens:utbogseringar:utbogseringars:utbogseringarna:utbogseringarnas
+796411r3<adjektiv>utbombad:utbombad:utbombat:utbombade:utbombade:!:!:!:
+812132r3<substantiv>utbordare:utbordare:utbordares:utbordaren:utbordarens:utbordare:utbordares:utbordarna:utbordarnas
+812138r3<substantiv>utborrning:utborrning:utborrnings:utborrningen:utborrningens:utborrningar:utborrningars:utborrningarna:utborrningarnas
+812147r3<substantiv>utboxning:utboxning:utboxnings:utboxningen:utboxningens:utboxningar:utboxningars:utboxningarna:utboxningarnas
+697960r5<verb>utbreda:utbreda:utbredde:utbrett:utbreder:utbred:utbredas:utbreddes:utbretts:utbredes, utbreds:utbredd:utbrett:utbredda:utbredande:
+COMPOUND(557762, 557933): ut + breda
+697962r3<adjektiv>utbredd:utbredd:utbrett:utbredda:utbredda::::
+697963r4<substantiv>utbredning:utbredning:utbrednings:utbredningen:utbredningens:utbredningar:utbredningars:utbredningarna:utbredningarnas
+CUSTOM: y y utbrednings
+812156r4<verb>utbringa:utbringa:utbringade, utbragte:utbringat, utbragt:utbringar:utbringa:utbringas:utbringades, utbragtes:utbringats, utbragts:utbringas:utbragt, utbringad:utbragt, utbringat:utbragta, utbringade::
+COMPOUND(557762, 546325): ut + bringa
+645133r6<verb>utbrista:utbrista:utbrast:utbrustit:utbrister:utbrist:!:!:!:!:utbrusten:utbrustet:utbrustna:utbristande:
+COMPOUND(557762, 585290): ut + brista
+591479r4<verb>utbrodera:utbrodera:utbroderade:utbroderat:utbroderar:utbrodera:utbroderas:utbroderades:utbroderats:utbroderas:utbroderad:utbroderat:utbroderade:utbroderande:
+812175r3<substantiv>utbrodering:utbrodering:utbroderings:utbroderingen:utbroderingens:utbroderingar:utbroderingars:utbroderingarna:utbroderingarnas
+796414r3<adjektiv>utbromsad:utbromsad:utbromsat:utbromsade:utbromsade:!:!:!:
+553082r4<substantiv>utbrott:utbrott:utbrotts:utbrottet:utbrottets:utbrott:utbrotts:utbrotten:utbrottens
+645135r3<adjektiv>utbrunnen:utbrunnen:utbrunnet:utbrunna:utbrunna::::
+645138r3<adjektiv>utbruten:utbruten:utbrutet:utbrutna:utbrutna:!:!:!:
+645141r6<verb>utbryta:utbryta:utbröt:utbrutit:utbryter::utbrytas:utbröts:utbrutits:utbrytes, utbryts:utbruten:utbrutet:utbrutna:utbrytande:
+COMPOUND(557762, 556860): ut + bryta
+645142r3<substantiv>utbrytare:utbrytare:utbrytares:utbrytaren:utbrytarens:utbrytare:utbrytares:utbrytarna:utbrytarnas
+CUSTOM: y y utbrytar
+697964r4<substantiv>utbrytning:utbrytning:utbrytnings:utbrytningen:utbrytningens:utbrytningar:utbrytningars:utbrytningarna:utbrytningarnas
+CUSTOM: y y utbrytnings
+697965r4<substantiv>utbrytningsförsök:utbrytningsförsök:utbrytningsförsöks:utbrytningsförsöket:utbrytningsförsökets:utbrytningsförsök:utbrytningsförsöks:utbrytningsförsöken:utbrytningsförsökens
+COMPOUND(697964, 552418): utbrytning + försök
+645148r3<adjektiv>utbränd:utbränd:utbränt:utbrända:utbrända::::utbrände
+645152r3<substantiv>utbrändhet:utbrändhet:utbrändhets:utbrändheten:utbrändhetens::::
+CUSTOM: y y utbrändhets
+570398r3<adjektiv>utbrännbar:utbrännbar:utbrännbart:utbrännbara:utbrännbara::::
+812187r3<substantiv>utbränning:utbränning:utbrännings:utbränningen:utbränningens::::
+645156r3<adjektiv>utbuad:utbuad:utbuat:utbuade:utbuade:!:!:!:
+553083r5<substantiv>utbud:utbud:utbuds:utbudet:utbudets:utbud:utbuds:utbuden:utbudens
+CUSTOM: y y utbuds +utbuds
+802718r5<substantiv>utbudskurva:utbudskurva:utbudskurvas:utbudskurvan:utbudskurvans:utbudskurvor:utbudskurvors:utbudskurvorna:utbudskurvornas
+COMPOUND(553083, 594565): utbud + kurva
+774117r3<substantiv>utbudspolitik::::::::
+COMPOUND(553083, 550224): utbud + politik
+796417r3<adjektiv>utbuktad:utbuktad:utbuktat:utbuktade:utbuktade:!:!:!:
+749604r3<substantiv>utbuktning:utbuktning:utbuktnings:utbuktningen:utbuktningens:utbuktningar:utbuktningars:utbuktningarna:utbuktningarnas
+645159r3<adjektiv>utburen:utburen:utburet:utburna:utburna:!:!:!:utburne
+697976r4<verb>utbygga:utbygga:utbyggde:utbyggt:utbygger:utbygg:utbyggas:utbyggdes:utbyggts:utbyggs:utbyggd:utbyggt:utbyggda:utbyggande:
+COMPOUND(557762, 585770): ut + bygga
+570401r3<adjektiv>utbyggbar:utbyggbar:utbyggbart:utbyggbara:utbyggbara::::
+812191r3<substantiv>utbygge:utbygge:utbygges:utbygget:utbyggets:utbyggen:utbyggens:utbyggena:utbyggenas
+645163r7<substantiv>utbyggnad:utbyggnad:utbyggnads:utbyggnaden:utbyggnadens:utbyggnader:utbyggnaders:utbyggnaderna:utbyggnadernas
+CUSTOM: y y utbyggnads +utbyggnads
+734715r4<substantiv>utbyggnadspotential:utbyggnadspotential:utbyggnadspotentials:utbyggnadspotentialen:utbyggnadspotentialens:utbyggnadspotentialer:utbyggnadspotentialers:utbyggnadspotentialerna:utbyggnadspotentialernas
+COMPOUND(645163, 639959): utbyggnad + potential
+697972r4<substantiv>utbyggnadstakt:utbyggnadstakt:utbyggnadstakts:utbyggnadstakten:utbyggnadstaktens::::
+COMPOUND(645163, 556671): utbyggnad + takt
+812199r3<substantiv>utbyggning:utbyggning:utbyggnings:utbyggningen:utbyggningens:utbyggningar:utbyggningars:utbyggningarna:utbyggningarnas
+697984r4<verb>utbyta:utbyta:utbytte:utbytt:utbyter:utbyt:utbytas:utbyttes:utbytts:utbyts:utbytt:utbytt:utbytta:utbytande:
+COMPOUND(557762, 557965): ut + byta
+CUSTOM: y n 
+697992r3<substantiv>utbytande:utbytande:utbytandes:utbytandet:utbytandets::::
+570402r4<adjektiv>utbytbar:utbytbar:utbytbart:utbytbara:utbytbara::::utbytbare
+812208r3<substantiv>utbytbarhet:utbytbarhet:utbytbarhets:utbytbarheten:utbytbarhetens::::
+634710r6<substantiv>utbyte:utbyte:utbytes:utbytet:utbytets:utbyten:utbytens:utbytena:utbytenas
+CUSTOM: y y utbytes +utbytes
+735680r4<substantiv>utbytesord:utbytesord:utbytesords:utbytesordet:utbytesordets:utbytesord:utbytesords:utbytesorden:utbytesordens
+COMPOUND(634710, 555138): utbyte + ord
+812212r3<substantiv>utbäring:utbäring:utbärings:utbäringen:utbäringens:utbäringar:utbäringars:utbäringarna:utbäringarnas
+774118r4<substantiv>utbärning:utbärning:utbärnings:utbärningen:utbärningens:utbärningar:utbärningars:utbärningarna:utbärningarnas
+697996r3<substantiv>utböling:utböling:utbölings:utbölingen:utbölingens:utbölingar:utbölingars:utbölingarna:utbölingarnas
+812224r3<substantiv>utbörding:utbörding:utbördings:utbördingen:utbördingens:utbördingar:utbördingars:utbördingarna:utbördingarnas
+774122r3<substantiv>utcheckning:utcheckning:utchecknings:utcheckningen:utcheckningens::::
+812232r3<substantiv>utdaning:utdaning:utdanings:utdaningen:utdaningens::::
+697997r8<substantiv>utdata:::::utdata:utdatas::
+787328r3<adjektiv>utdaterad:utdaterad:utdaterat:utdaterade:utdaterade:!:!:!:
+796420r3<adjektiv>utdebatterad:utdebatterad:utdebatterat:utdebatterade:utdebatterade:!:!:!:
+591483r4<verb>utdebitera:utdebitera:utdebiterade:utdebiterat:utdebiterar:utdebitera:utdebiteras:utdebiterades:utdebiterats:utdebiteras:utdebiterad:utdebiterat:utdebiterade:utdebiterande:
+774126r4<substantiv>utdebitering:utdebitering:utdebiterings:utdebiteringen:utdebiteringens:utdebiteringar:utdebiteringars:utdebiteringarna:utdebiteringarnas
+CUSTOM: y y utdebiterings
+774134r3<substantiv>utdebiteringsökning::::::::
+COMPOUND(774126, 649466): utdebitering + ökning
+812242r3<verb>utdefiniera:utdefiniera:utdefinierade:utdefinierat:utdefinierar:utdefiniera:utdefinieras:utdefinierades:utdefinierats:utdefinieras:utdefinierad:utdefinierat:utdefinierade:utdefinierande:
+547960r4<verb>utdela:utdela:utdelade:utdelat:utdelar:utdela:utdelas:utdelades:utdelats:utdelas:utdelad:utdelat:utdelade::
+770783r3<substantiv>utdelande:utdelande:utdelandes:utdelandet:utdelandets::::
+762932r3<substantiv>utdelare:utdelare:utdelares:utdelaren:utdelarens:utdelare:utdelares:utdelarna:utdelarnas
+645171r6<substantiv>utdelning:utdelning:utdelnings:utdelningen:utdelningens:utdelningar:utdelningars:utdelningarna:utdelningarnas
+CUSTOM: y y utdelnings +utdelnings
+570405r3<adjektiv>utdelningsbar:utdelningsbar:utdelningsbart:utdelningsbara:utdelningsbara::::
+796423r3<adjektiv>utdelningsberättigad:utdelningsberättigad:utdelningsberättigat:utdelningsberättigade:utdelningsberättigade:!:!:!:
+812252r3<verb>utdika:utdika:utdikade:utdikat:utdikar:utdika:utdikas:utdikades:utdikats:utdikas:utdikad:utdikat:utdikade:utdikande:
+774135r4<substantiv>utdikning:utdikning:utdiknings:utdikningen:utdikningens:utdikningar:utdikningars:utdikningarna:utdikningarnas
+CUSTOM: y y utdiknings
+774143r3<substantiv>utdikningsområde::::::::
+COMPOUND(774135, 612761): utdikning + område
+796426r3<adjektiv>utdiskuterad:utdiskuterad:utdiskuterat:utdiskuterade:utdiskuterade:!:!:!:
+988728r3<substantiv>utdockning:utdockning:utdocknings:utdockningen:utdockningens::::
+553084r6<substantiv>utdrag:utdrag:utdrags:utdraget:utdragets:utdrag:utdrags:utdragen:utdragens
+CUSTOM: y y utdrags
+697998r4<verb>utdraga:utdraga:utdrog:utdragit:utdrager::utdragas:utdrogs:utdragits:utdrages:utdragen:utdraget:utdragna:utdragande:
+COMPOUND(557762, 558196): ut + dra, draga
+812261r3<substantiv>utdragare:utdragare:utdragares:utdragaren:utdragarens:utdragare:utdragares:utdragarna:utdragarnas
+570408r3<adjektiv>utdragbar:utdragbar:utdragbart:utdragbara:utdragbara::::
+812267r3<substantiv>utdragning:utdragning:utdragnings:utdragningen:utdragningens::::
+774144r3<substantiv>utdragslåda::::::::
+COMPOUND(553084, 555441): utdrag + låda
+698005r5<verb>utdriva:utdriva:utdrev:utdrivit:utdriver:utdriv:utdrivas:utdrevs:utdrivits:utdrivs, utdrives:utdriven:utdrivet:utdrivna:utdrivande:
+COMPOUND(557762, 585295): ut + driva
+812271r3<substantiv>utdrivning:utdrivning:utdrivnings:utdrivningen:utdrivningens:utdrivningar:utdrivningars:utdrivningarna:utdrivningarnas
+796429r3<adjektiv>utdrygad:utdrygad:utdrygat:utdrygade:utdrygade:!:!:!:
+812279r3<verb>utdunsta:utdunsta:utdunstade:utdunstat:utdunstar:utdunsta:::::utdunstad:utdunstat:utdunstade:utdunstande:
+774145r3<substantiv>utdunstning:utdunstning:utdunstnings:utdunstningen:utdunstningens:utdunstningar:utdunstningars:utdunstningarna:utdunstningarnas
+749612r4<adjektiv>utdöd:utdöd:utdött:utdöda:utdöda::::utdöde
+698015r3<adjektiv>utdöende:utdöende:utdöende:utdöende:utdöende:!:!:!:
+988733r3<substantiv>utdöende:utdöende:utdöendes:utdöendet:utdöendets::::
+645172r5<verb>utdöma:utdöma:utdömde:utdömt:utdömer:utdöm:utdömas:utdömdes:utdömts:utdöms, utdömes:utdömd:utdömt:utdömda::
+COMPOUND(557762, 558372): ut + döma
+CUSTOM: y n
+698017r3<substantiv>utdömande:utdömande:utdömandes:utdömandet:utdömandets::::
+560953r17<adverb>ute:ute
+CUSTOM: y n
+812287r3<substantiv>utearbetare:utearbetare:utearbetares:utearbetaren:utearbetarens:utearbetare:utearbetares:utearbetarna:utearbetarnas
+812293r3<substantiv>utearbete:utearbete:utearbetes:utearbetet:utearbetets:utearbeten:utearbetens:utearbetena:utearbetenas
+784978r6<substantiv>utebana:utebana:utebanas:utebanan:utebanans:utebanor:utebanors:utebanorna:utebanornas
+COMPOUND(560953, 556870): ute + bana
+CUSTOM: y n n
+645174r4<verb>utebli:utebli, utebliva:uteblev:uteblivit:uteblir, utebliver:utebli, utebliv:!:!:!:!:utebliven:uteblivet:uteblivna::
+COMPOUND(560953, 555217): ute + bliva, bli
+724596r3<substantiv>uteblivande:uteblivande:uteblivandes:uteblivandet:uteblivandets::::
+937446r3<substantiv>utebruk:utebruk:::::::
+645177r3<substantiv>utedass:utedass:utedass:utedasset:utedassets:utedass:utedass:utedassen:utedassens
+830292r6<substantiv>utefest:utefest:utefests:utefesten:utefestens:utefester:utefesters:utefesterna:utefesternas
+COMPOUND(560953, 548912): ute + fest
+CUSTOM: y n n
+812301r3<substantiv>uteffekt:uteffekt:uteffekts:uteffekten:uteffektens:uteffekter:uteffekters:uteffekterna:uteffekternas
+636861r3<preposition>utefter:utefter
+964391r3<substantiv>uteförsvar:uteförsvar:uteförsvars:uteförsvaret:uteförsvarets::::
+812309r3<substantiv>utegrill:utegrill:utegrills:utegrillen:utegrillens:utegrillar:utegrillars:utegrillarna:utegrillarnas
+812317r3<substantiv>utegång:utegång:utegångs:utegången:utegångens::::
+988737r3<substantiv>utegångsfår:utegångsfår:utegångsfårs:utegångsfåret:utegångsfårets:utegångsfår:utegångsfårs:utegångsfåren:utegångsfårens
+749615r3<substantiv>utegångsförbud:utegångsförbud:utegångsförbuds:utegångsförbudet:utegångsförbudets:utegångsförbud:utegångsförbuds:utegångsförbuden:utegångsförbudens
+812322r3<substantiv>utegård:utegård:utegårds:utegården:utegårdens:utegårdar:utegårdars:utegårdarna:utegårdarnas
+922681r4<substantiv>utehak:utehak:utehaks:utehaket:utehakets::::
+COMPOUND(560953, 558966): ute + hak
+CUSTOM: y n n
+812332r3<substantiv>utekatt:utekatt:utekatts:utekatten:utekattens:utekatter:utekatters:utekatterna:utekatternas
+720724r5<substantiv>utekläder:!:!:!:!:utekläder:utekläders:utekläderna:uteklädernas
+DEFINITION 1: Kläder för utomhusbruk
+COMPOUND(560953, 604465): ute + kläder
+812342r3<substantiv>utekväll:utekväll:utekvälls:utekvällen:utekvällens:utekvällar:utekvällars:utekvällarna:utekvällarnas
+988743r4<substantiv>utelag:utelag:utelags:utelaget:utelagets:utelag:utelags:utelagen:utelagens
+COMPOUND(560953, 625660): ute + lag
+905661r3<substantiv>utelampa:utelampa:utelampas:utelampan:utelampans:utelampor:utelampors:utelamporna:utelampornas
+CUSTOM: y n n
+645182r3<substantiv>uteliggare:uteliggare:uteliggares:uteliggaren:uteliggarens:uteliggare:uteliggares:uteliggarna:uteliggarnas
+CUSTOM: y y uteliggar
+645188r3<substantiv>uteliv:uteliv:utelivs:utelivet:utelivets::::
+872623r3<adjektiv>utelåst:utelåst:utelåst:utelåsta:utelåsta::::utelåste
+547961r5<verb>utelämna:utelämna:utelämnade:utelämnat:utelämnar:utelämna:utelämnas:utelämnades:utelämnats:utelämnas:utelämnad:utelämnat:utelämnade:utelämnande:
+908364r3<substantiv>utelämning:utelämning:utelämnings:utelämningen:utelämningens:utelämningar:utelämningars:utelämningarna:utelämningarnas
+913750r3<substantiv>utelämningstecken:utelämningstecken:utelämningsteckens:utelämningstecknet:utelämningstecknets:utelämningstecken:utelämningsteckens:utelämningstecknen:utelämningstecknens
+956726r3<adjektiv>utelöpande:utelöpande:utelöpande:utelöpande:utelöpande:!:!:!:::::::::
+749621r3<substantiv>utemiljö:utemiljö:utemiljös:utemiljön:utemiljöns:utemiljöer:utemiljöers:utemiljöerna:utemiljöernas
+749629r4<substantiv>utemöbel:utemöbel:utemöbels:utemöbeln:utemöbelns:utemöbler:utemöblers:utemöblerna:utemöblernas
+COMPOUND(560953, 621549): ute + möbel
+698019r3<substantiv>utenhet:utenhet:utenhets:utenheten:utenhetens:utenheter:utenheters:utenheterna:utenheternas
+CUSTOM: y n n
+698020r3<substantiv>utensilier:!:!:!:!:utensilier:utensiliers:utensilierna:utensiliernas
+713450r9<substantiv>uteplagg:uteplagg:uteplaggs:uteplagget:uteplaggets:uteplagg:uteplaggs:uteplaggen:uteplaggens
+DEFINITION 1: Klädesplagg för utomhusbruk
+CUSTOM: y n n
+732984r4<substantiv>uteplats:uteplats:uteplats:uteplatsen:uteplatsens:uteplatser:uteplatsers:uteplatserna:uteplatsernas
+COMPOUND(560953, 550210): ute + plats
+812350r3<substantiv>uterestaurang:uterestaurang:uterestaurangs:uterestaurangen:uterestaurangens:uterestau

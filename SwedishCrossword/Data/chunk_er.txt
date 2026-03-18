@@ -1,0 +1,507 @@
+omanlighetens::::
+807478r3<adjektiv>omansk:omansk:omanskt:omanska:omanska:!:!:!:omanske
+807481r3<substantiv>omanska:omanska:omanskas:omanskan:omanskans:omanskor:omanskors:omanskorna:omanskornas
+547417r5<verb>omarbeta:omarbeta:omarbetade:omarbetat:omarbetar:omarbeta:omarbetas:omarbetades:omarbetats:omarbetas:omarbetad:omarbetat:omarbetade:omarbetande:
+647798r3<substantiv>omarbetning:omarbetning:omarbetnings:omarbetningen:omarbetningens:omarbetningar:omarbetningars:omarbetningarna:omarbetningarnas
+CUSTOM: y y omarbetnings
+647766r3<adjektiv>omarkerad:omarkerad:omarkerat:omarkerade:omarkerade:!:!:!:
+807490r3<substantiv>omarrondering:omarrondering:omarronderings:omarronderingen:omarronderingens:omarronderingar:omarronderingars:omarronderingarna:omarronderingarnas
+647769r3<adjektiv>omaskerad:omaskerad:omaskerat:omaskerade:omaskerade:!:!:!:
+793938r3<adjektiv>omatad:omatad:omatat:omatade:omatade:!:!:!:
+801546r3<adjektiv>ombedd:ombedd:ombett:ombedda:ombedda::::
+628467r9<verb>ombedja, ombe:ombe, ombedja:ombad:ombett:omber, ombeder:ombe:ombes, ombedjas:ombads:ombetts:ombedes, ombeds, ombedjes:ombedd:ombett:ombedda:ombedjande:
+COMPOUND(557732, 557636): om + bedja, be
+807501r3<verb>ombesikta:ombesikta:ombesiktade:ombesiktat:ombesiktar:ombesikta:ombesiktas:ombesiktades:ombesiktats:ombesiktas:ombesiktad:ombesiktat:ombesiktade:ombesiktande:
+647778r4<verb>ombesiktiga:ombesiktiga:ombesiktigade:ombesiktigat:ombesiktigar:ombesiktiga:ombesiktigas:ombesiktigades:ombesiktigats:ombesiktigas:ombesiktigad:ombesiktigat:ombesiktigade:ombesiktigande:
+647786r4<substantiv>ombesiktning:ombesiktning:ombesiktnings:ombesiktningen:ombesiktningens:ombesiktningar:ombesiktningars:ombesiktningarna:ombesiktningarnas
+CUSTOM: y y ombesiktnings
+647790r5<verb>ombestyra:ombestyra:ombestyrde:ombestyrt:ombestyr:ombestyr:ombestyras:ombestyrdes:ombestyrts:ombestyrs, ombestyres:ombestyrd:ombestyrt:ombestyrda:ombestyrande:
+619291r4<verb>ombesörja:ombesörja:ombesörjde:ombesörjt:ombesörjer:ombesörj:ombesörjas:ombesörjdes:ombesörjts:ombesörjs, ombesörjes:ombesörjd:ombesörjt:ombesörjda::
+807517r3<substantiv>ombesörjning:ombesörjning:ombesörjnings:ombesörjningen:ombesörjningens::::
+807521r3<verb>ombetro:ombetro:ombetrodde:ombetrott:ombetror:ombetro:ombetros:ombetroddes:ombetrotts:ombetros:ombetrodd:ombetrott:ombetrodda:ombetroende:
+547418r5<verb>ombilda:ombilda:ombildade:ombildat:ombildar:ombilda:ombildas:ombildades:ombildats:ombildas:ombildad:ombildat:ombildade:ombildande:
+647799r3<substantiv>ombildning:ombildning:ombildnings:ombildningen:ombildningens:ombildningar:ombildningars:ombildningarna:ombildningarnas
+CUSTOM: y y ombildnings
+807531r3<substantiv>ombindning:ombindning:ombindnings:ombindningen:ombindningens:ombindningar:ombindningars:ombindningarna:ombindningarnas
+807539r3<substantiv>omblad:omblad:omblads:ombladet:ombladets:omblad:omblads:ombladen:ombladens
+807545r3<substantiv>omblandning:omblandning:omblandnings:omblandningen:omblandningens:omblandningar:omblandningars:omblandningarna:omblandningarnas
+619294r4<verb>omboka:omboka:ombokade:ombokat:ombokar:omboka:ombokas:ombokades:ombokats:ombokas:ombokad:ombokat:ombokade:ombokande:
+619302r3<substantiv>ombokning:ombokning:omboknings:ombokningen:ombokningens:ombokningar:ombokningars:ombokningarna:ombokningarnas
+CUSTOM: y y omboknings
+619310r3<adjektiv>ombonad:ombonad:ombonat:ombonade:ombonade:!:!:!:
+619311r4<adverb>ombord:ombord
+807558r3<adjektiv>ombordanställd:ombordanställd:ombordanställt:ombordanställda:ombordanställda:!:!:!:ombordanställde
+807562r3<substantiv>ombordkomst:ombordkomst:ombordkomsts:ombordkomsten:ombordkomstens::::
+807566r3<substantiv>ombordkörning:ombordkörning:ombordkörnings:ombordkörningen:ombordkörningens::::
+807570r3<substantiv>ombordläggning:ombordläggning:ombordläggnings:ombordläggningen:ombordläggningens:ombordläggningar:ombordläggningars:ombordläggningarna:ombordläggningarnas
+955769r4<substantiv>ombordpersonal:ombordpersonal:ombordpersonals:ombordpersonalen:ombordpersonalens::::
+COMPOUND(619311, 603127): ombord + personal
+807578r3<substantiv>ombordstigning:ombordstigning:ombordstignings:ombordstigningen:ombordstigningens:ombordstigningar:ombordstigningars:ombordstigningarna:ombordstigningarnas
+807586r3<substantiv>ombordtagning:ombordtagning:ombordtagnings:ombordtagningen:ombordtagningens:ombordtagningar:ombordtagningars:ombordtagningarna:ombordtagningarnas
+702655r3<adjektiv>ombordvarande:ombordvarande:ombordvarande:ombordvarande:ombordvarande:!:!:!:
+807594r3<substantiv>omborrning:omborrning:omborrnings:omborrningen:omborrningens:omborrningar:omborrningars:omborrningarna:omborrningarnas
+798525r3<adjektiv>ombrotrof:ombrotrof:ombrotroft:ombrotrofa:ombrotrofa::::
+807602r4<verb>ombryta:ombryta:ombröt:ombrutit:ombryter:ombryt:ombrytas:ombröts:ombrutits:ombryts, ombrytes:ombruten:ombrutet:ombrutna:ombrytande:
+COMPOUND(557732, 556860): om + bryta
+807616r3<substantiv>ombrytare:ombrytare:ombrytares:ombrytaren:ombrytarens:ombrytare:ombrytares:ombrytarna:ombrytarnas
+807622r3<substantiv>ombrytning:ombrytning:ombrytnings:ombrytningen:ombrytningens:ombrytningar:ombrytningars:ombrytningarna:ombrytningarnas
+552728r5<substantiv>ombud:ombud:ombuds:ombudet:ombudets:ombud:ombuds:ombuden:ombudens
+CUSTOM: y y ombuds
+851626r3<substantiv>ombudskap:ombudskap:ombudskaps:ombudskapet:ombudskapets::::
+555444r5<substantiv>ombudsman:ombudsman:ombudsmans:ombudsmannen:ombudsmannens:ombudsmän:ombudsmäns:ombudsmännen:ombudsmännens
+CUSTOM: y y ombudsmanna
+807630r3<substantiv>ombudsmannaskap:ombudsmannaskap:ombudsmannaskaps:ombudsmannaskapet:ombudsmannaskapets::::
+647800r3<adjektiv>ombunden:ombunden:ombundet:ombundna:ombundna::::
+647801r3<adjektiv>ombyggd:ombyggd:ombyggt:ombyggda:ombyggda::::
+807635r3<substantiv>ombygge:ombygge:ombygges:ombygget:ombyggets:ombyggen:ombyggens:ombyggena:ombyggenas
+647802r5<substantiv>ombyggnad:ombyggnad:ombyggnads:ombyggnaden:ombyggnadens:ombyggnader:ombyggnaders:ombyggnaderna:ombyggnadernas
+CUSTOM: y y ombyggnads +ombyggnads
+740610r4<substantiv>ombyggnadsarbete:ombyggnadsarbete:ombyggnadsarbetes:ombyggnadsarbetet:ombyggnadsarbetets:ombyggnadsarbeten:ombyggnadsarbetens:ombyggnadsarbetena:ombyggnadsarbetenas
+COMPOUND(647802, 612263): ombyggnad + arbete
+807644r3<substantiv>ombyggnation:ombyggnation:ombyggnations:ombyggnationen:ombyggnationens:ombyggnationer:ombyggnationers:ombyggnationerna:ombyggnationernas
+807652r3<substantiv>ombyggning:ombyggning:ombyggnings:ombyggningen:ombyggningens:ombyggningar:ombyggningars:ombyggningarna:ombyggningarnas
+569669r3<adjektiv>ombytbar:ombytbar:ombytbart:ombytbara:ombytbara::::
+647803r6<substantiv>ombyte:ombyte:ombytes:ombytet:ombytets:ombyten:ombytens:ombytena:ombytenas
+CUSTOM: y y ombytes
+807660r4<substantiv>ombyteskläder:!:!:!:!:ombyteskläder:ombyteskläders:ombyteskläderna:ombytesklädernas
+COMPOUND(647803, 604465): ombyte + kläder
+567115r4<adjektiv>ombytlig:ombytlig:ombytligt:ombytliga:ombytliga:ombytligare:ombytligast:ombytligaste:ombytlige
+647808r3<substantiv>ombytlighet:ombytlighet:ombytlighets:ombytligheten:ombytlighetens::::
+CUSTOM: y y ombytlighets
+647812r3<adjektiv>ombytt:ombytt:ombytt:ombytta:ombytta::::
+555315r5<verb>omdana:omdana:omdanade:omdanat:omdanar:omdana:omdanas:omdanades:omdanats:omdanas:omdanad:omdanat:omdanade:omdanande:
+807669r3<substantiv>omdanare:omdanare:omdanares:omdanaren:omdanarens:omdanare:omdanares:omdanarna:omdanarnas
+647813r3<substantiv>omdaning:omdaning:omdanings:omdaningen:omdaningens:omdaningar:omdaningars:omdaningarna:omdaningarnas
+CUSTOM: y y omdanings
+587367r4<verb>omdatera:omdatera:omdaterade:omdaterat:omdaterar:omdatera:omdateras:omdaterades:omdaterats:omdateras:omdaterad:omdaterat:omdaterade:omdaterande:
+807680r3<substantiv>omdatering:omdatering:omdaterings:omdateringen:omdateringens:omdateringar:omdateringars:omdateringarna:omdateringarnas
+647821r3<adjektiv>omdebatterad:omdebatterad:omdebatterat:omdebatterade:omdebatterade:!:!:!:
+547419r5<verb>omdefiniera:omdefiniera:omdefinierade:omdefinierat:omdefinierar:omdefiniera:omdefinieras:omdefinierades:omdefinierats:omdefinieras:omdefinierad:omdefinierat:omdefinierade:omdefinierande:
+684279r3<substantiv>omdefinition:omdefinition:omdefinitions:omdefinitionen:omdefinitionens:omdefinitioner:omdefinitioners:omdefinitionerna:omdefinitionernas
+CUSTOM: y y omdefinitions
+587371r3<verb>omdestillera:omdestillera:omdestillerade:omdestillerat:omdestillerar:omdestillera:::::::::
+590383r4<verb>omdestinera:omdestinera:omdestinerade:omdestinerat:omdestinerar:omdestinera:omdestineras:omdestinerades:omdestinerats:omdestineras:omdestinerad:omdestinerat:omdestinerade:omdestinerande:
+807694r3<substantiv>omdestinering:omdestinering:omdestinerings:omdestineringen:omdestineringens:omdestineringar:omdestineringars:omdestineringarna:omdestineringarnas
+684075r4<substantiv>omdifferentiering:omdifferentiering:omdifferentierings:omdifferentieringen:omdifferentieringens:omdifferentieringar:omdifferentieringars:omdifferentieringarna:omdifferentieringarnas
+CUSTOM: y y omdifferentierings
+765836r3<adjektiv>omdiktad:omdiktad:omdiktat:omdiktade:omdiktade:!:!:!:
+807702r3<substantiv>omdiktning:omdiktning:omdiktnings:omdiktningen:omdiktningens:omdiktningar:omdiktningars:omdiktningarna:omdiktningarnas
+547420r5<verb>omdirigera:omdirigera:omdirigerade:omdirigerat:omdirigerar:omdirigera:omdirigeras:omdirigerades:omdirigerats:omdirigeras:omdirigerad:omdirigerat:omdirigerade:omdirigerande:
+648920r3<substantiv>omdirigering:omdirigering:omdirigerings:omdirigeringen:omdirigeringens:omdirigeringar:omdirigeringars:omdirigeringarna:omdirigeringarnas
+CUSTOM: y y omdirigerings
+647824r3<adjektiv>omdiskuterad:omdiskuterad:omdiskuterat:omdiskuterade:omdiskuterade:!:!:!:
+547421r5<verb>omdisponera:omdisponera:omdisponerade:omdisponerat:omdisponerar:omdisponera:omdisponeras:omdisponerades:omdisponerats:omdisponeras:omdisponerad:omdisponerat:omdisponerade:omdisponerande:
+647829r3<substantiv>omdisponering:omdisponering:omdisponerings:omdisponeringen:omdisponeringens:omdisponeringar:omdisponeringars:omdisponeringarna:omdisponeringarnas
+CUSTOM: y y omdisponerings
+647837r3<substantiv>omdisposition:omdisposition:omdispositions:omdispositionen:omdispositionens:omdispositioner:omdispositioners:omdispositionerna:omdispositionernas
+CUSTOM: y y omdispositions
+807712r3<substantiv>omdop:omdop:omdops:omdopet:omdopets:omdop:omdops:omdopen:omdopens
+CUSTOM: y n
+634596r4<substantiv>omdöme:omdöme:omdömes:omdömet:omdömets:omdömen:omdömens:omdömena:omdömenas
+CUSTOM: y y omdömes
+807718r4<substantiv>omdömesförmåga:omdömesförmåga:omdömesförmågas:omdömesförmågan:omdömesförmågans::::
+COMPOUND(634596, 594097): omdöme + förmåga
+647825r3<adjektiv>omdömesgill:omdömesgill:omdömesgillt:omdömesgilla:omdömesgilla::::omdömesgille
+807722r3<substantiv>omdömesgillhet:omdömesgillhet:omdömesgillhets:omdömesgillheten:omdömesgillhetens::::
+565099r4<adjektiv>omdömeslös:omdömeslös:omdömeslöst:omdömeslösa:omdömeslösa:omdömeslösare:omdömeslösast:omdömeslösaste:omdömeslöse
+807726r3<substantiv>omdömeslöshet:omdömeslöshet:omdömeslöshets:omdömeslösheten:omdömeslöshetens::::
+807730r3<substantiv>omdömessak:omdömessak:omdömessaks:omdömessaken:omdömessakens:omdömessaker:omdömessakers:omdömessakerna:omdömessakernas
+694170r4<verb>omdöpa:omdöpa:omdöpte:omdöpt:omdöper:omdöp:omdöpas:omdöptes:omdöpts:omdöps, omdöpes:omdöpt:omdöpt:omdöpta:omdöpande:
+CUSTOM: y n
+807740r3<substantiv>omdöpning:omdöpning:omdöpnings:omdöpningen:omdöpningens::::
+555106r7<adjektiv>omedelbar:omedelbar:omedelbart:omedelbara:omedelbara:omedelbarare:omedelbarast:omedelbaraste:omedelbare
+740611r3<substantiv>omedelbarhet:omedelbarhet:omedelbarhets:omedelbarheten:omedelbarhetens::::
+620711r3<adverb>omedelbart:omedelbart
+567116r4<adjektiv>omedgörlig:omedgörlig:omedgörligt:omedgörliga:omedgörliga:omedgörligare:omedgörligast:omedgörligaste:omedgörlige
+647843r3<substantiv>omedgörlighet:omedgörlighet:omedgörlighets:omedgörligheten:omedgörlighetens::::
+CUSTOM: y y omedgörlighets
+647847r3<adjektiv>omedveten:omedveten:omedvetet:omedvetna:omedvetna::::omedvetne
+807744r3<substantiv>omedvetenhet:omedvetenhet:omedvetenhets:omedvetenheten:omedvetenhetens::::
+647849r5<substantiv>omega:omega:omegas:omegat:omegats:omegan:omegans:omegana:omeganas
+DEFINITION 1: Tjugofjärde och sista bokstaven i grekiska alfabetet.
+CUSTOM: n n y
+793944r3<adjektiv>omejad:omejad:omejat:omejade:omejade:!:!:!:
+647850r3<substantiv>omelett:omelett:omeletts:omeletten:omelettens:omeletter:omeletters:omeletterna:omeletternas
+CUSTOM: y y omelett
+582516r3<adjektiv>omelodisk:omelodisk:omelodiskt:omelodiska:omelodiska::::
+798528r3<adjektiv>omelodiös:omelodiös:omelodiöst:omelodiösa:omelodiösa::::
+647858r3<substantiv>omen:omen:::::::
+765839r3<adjektiv>omeriterad:omeriterad:omeriterat:omeriterade:omeriterade:!:!:!:
+582519r3<adjektiv>ometallisk:ometallisk:ometalliskt:ometalliska:ometalliska::::
+582522r3<adjektiv>ometodisk:ometodisk:ometodiskt:ometodiska:ometodiska::::
+582525r3<adjektiv>ometrisk:ometrisk:ometriskt:ometriska:ometriska::::
+547422r5<verb>omfamna:omfamna:omfamnade:omfamnat:omfamnar:omfamna:omfamnas:omfamnades:omfamnats:omfamnas:omfamnad:omfamnat:omfamnade:omfamnande:
+647859r3<substantiv>omfamning:omfamning:omfamnings:omfamningen:omfamningens:omfamningar:omfamningars:omfamningarna:omfamningarnas
+CUSTOM: y y omfamnings
+807748r3<substantiv>omfartsled:omfartsled:omfartsleds:omfartsleden:omfartsledens:omfartsleder:omfartsleders:omfartslederna:omfartsledernas
+807756r3<substantiv>omfartsspår:omfartsspår:omfartsspårs:omfartsspåret:omfartsspårets:omfartsspår:omfartsspårs:omfartsspåren:omfartsspårens
+807762r3<substantiv>omfartsväg:omfartsväg:omfartsvägs:omfartsvägen:omfartsvägens:omfartsvägar:omfartsvägars:omfartsvägarna:omfartsvägarnas
+547423r4<verb>omfatta:omfatta:omfattade:omfattat:omfattar:omfatta:omfattas:omfattades:omfattats:omfattas:omfattad:omfattat:omfattade::
+570983r3<adjektiv>omfattande:omfattande:omfattande:omfattande:omfattande:!:!:!:
+597362r3<substantiv>omfattning:omfattning:omfattnings:omfattningen:omfattningens:omfattningar:omfattningars:omfattningarna:omfattningarnas
+CUSTOM: y y omfattnings
+851630r3<substantiv>omfattningsmur:omfattningsmur:omfattningsmurs:omfattningsmuren:omfattningsmurens:omfattningsmurar:omfattningsmurars:omfattningsmurarna:omfattningsmurarnas
+590387r3<verb>omfiltrera:omfiltrera:omfiltrerade:omfiltrerat:omfiltrerar:omfiltrera:::::::::
+807770r3<adjektiv>omfluten:omfluten:omflutet:omflutna:omflutna::::
+807773r3<verb>omflytta:omflytta:omflyttade:omflyttat:omflyttar:omflytta:omflyttas:omflyttades:omflyttats:omflyttas:omflyttad:omflyttat:omflyttade:omflyttande:
+569672r3<adjektiv>omflyttbar:omflyttbar:omflyttbart:omflyttbara:omflyttbara::::
+647867r3<substantiv>omflyttning:omflyttning:omflyttnings:omflyttningen:omflyttningens:omflyttningar:omflyttningars:omflyttningarna:omflyttningarnas
+CUSTOM: y y omflyttnings +omflyttnings
+793947r3<adjektiv>omfläktad:omfläktad:omfläktat:omfläktade:omfläktade:!:!:!:
+793950r3<adjektiv>omflätad:omflätad:omflätat:omflätade:omflätade:!:!:!:
+891928r3<substantiv>omfokusering:omfokusering:omfokuserings:omfokuseringen:omfokuseringens:omfokuseringar:omfokuseringars:omfokuseringarna:omfokuseringarnas
+547424r5<verb>omforma:omforma:omformade:omformat:omformar:omforma:omformas:omformades:omformats:omformas:omformad:omformat:omformade:omformande:
+807783r4<substantiv>omformare:omformare:omformares:omformaren:omformarens:omformare:omformares:omformarna:omformarnas
+CUSTOM: y y omformar
+807789r4<substantiv>omformarlok:omformarlok:omformarloks:omformarloket:omformarlokets:omformarlok:omformarloks:omformarloken:omformarlokens
+COMPOUND(807783, 552674): omformare + lok
+648071r3<verb>omformatera:omformatera:omformaterade:omformaterat:omformaterar:omformatera:omformateras:omformaterades:omformaterats:omformateras:omformaterad:omformaterat:omformaterade::
+648922r3<substantiv>omformatering:omformatering:omformaterings:omformateringen:omformateringens:omformateringar:omformateringars:omformateringarna:omformateringarnas
+CUSTOM: y y omformaterings
+807795r3<substantiv>omformning:omformning:omformnings:omformningen:omformningens::::
+587375r5<verb>omformulera:omformulera:omformulerade:omformulerat:omformulerar:omformulera:omformuleras:omformulerades:omformulerats:omformuleras:omformulerad:omformulerat:omformulerade:omformulerande:
+647868r3<substantiv>omformulering:omformulering:omformulerings:omformuleringen:omformuleringens:omformuleringar:omformuleringars:omformuleringarna:omformuleringarnas
+CUSTOM: y y omformulerings
+892170r3<verb>omfråga::::::omfrågas:omfrågades:omfrågats:omfrågas:omfrågad:omfrågat:omfrågade:omfrågande:
+CUSTOM: y n n
+892179r3<substantiv>omfrågandekopia:omfrågandekopia:omfrågandekopias:omfrågandekopian:omfrågandekopians:omfrågandekopior:omfrågandekopiors:omfrågandekopiorna:omfrågandekopiornas
+647869r3<substantiv>omfång:omfång:omfångs:omfånget:omfångets::::
+647870r4<adjektiv>omfångsrik:omfångsrik:omfångsrikt:omfångsrika:omfångsrika:omfångsrikare:omfångsrikast:omfångsrikaste:omfångsrike
+807807r3<substantiv>omfångsrikhet:omfångsrikhet:omfångsrikhets:omfångsrikheten:omfångsrikhetens::::
+793953r3<adjektiv>omfärgad:omfärgad:omfärgat:omfärgade:omfärgade:!:!:!:
+CUSTOM: y n n
+807811r3<substantiv>omfärgning:omfärgning:omfärgnings:omfärgningen:omfärgningens:omfärgningar:omfärgningars:omfärgningarna:omfärgningarnas
+647871r3<substantiv>omföderska:omföderska:omföderskas:omföderskan:omföderskans:omföderskor:omföderskors:omföderskorna:omföderskornas
+694152r6<verb>omföra:omföra:omförde:omfört:omför:omför:omföras:omfördes:omförts:omförs, omföres:omförd:omfört:omförda:omförande:
+CUSTOM: y n
+547425r5<verb>omfördela:omfördela:omfördelade:omfördelat:omfördelar:omfördela:omfördelas:omfördelades:omfördelats:omfördelas:omfördelad:omfördelat:omfördelade:omfördelande:
+647879r3<substantiv>omfördelning:omfördelning:omfördelnings:omfördelningen:omfördelningens:omfördelningar:omfördelningars:omfördelningarna:omfördelningarnas
+CUSTOM: y y omfördelnings
+647880r4<verb>omförhandla:omförhandla:omförhandlade:omförhandlat:omförhandlar:omförhandla:omförhandlas:omförhandlades:omförhandlats:omförhandlas:omförhandlad:omförhandlat:omförhandlade:omförhandlande:
+647888r4<substantiv>omförhandling:omförhandling:omförhandlings:omförhandlingen:omförhandlingens:omförhandlingar:omförhandlingars:omförhandlingarna:omförhandlingarnas
+CUSTOM: y y omförhandlings
+877127r3<substantiv>omförhandlingsrätt::::::::
+COMPOUND(647888, 603413): omförhandling + rätt
+647896r3<substantiv>omföring:omföring:omförings:omföringen:omföringens:omföringar:omföringars:omföringarna:omföringarnas
+CUSTOM: y y omförings
+877347r3<verb>omförsäkra:omförsäkra:omförsäkrade:omförsäkrat:omförsäkrar:omförsäkra:omförsäkras:omförsäkrades:omförsäkrats:omförsäkras:omförsäkrad:omförsäkrat:omförsäkrade:omförsäkrande:
+877358r3<substantiv>omförsäkring:omförsäkring:omförsäkrings:omförsäkringen:omförsäkringens:omförsäkringar:omförsäkringars:omförsäkringarna:omförsäkringarnas
+807822r3<verb>omgestalta:omgestalta:omgestaltade:omgestaltat:omgestaltar:omgestalta:omgestaltas:omgestaltades:omgestaltats:omgestaltas:omgestaltad:omgestaltat:omgestaltade:omgestaltande:
+807831r3<substantiv>omgestaltning:omgestaltning:omgestaltnings:omgestaltningen:omgestaltningens:omgestaltningar:omgestaltningars:omgestaltningarna:omgestaltningarnas
+647897r3<adjektiv>omgift:omgift:omgift:omgifta:omgifta:!:!:!:omgifte
+807839r3<substantiv>omgifte:omgifte:omgiftes:omgiftet:omgiftets:omgiften:omgiftens:omgiftena:omgiftenas
+807847r3<substantiv>omgiv:omgiv:omgivs:omgiven:omgivens:omgivar:omgivars:omgivarna:omgivarnas
+593295r7<verb>omgiva, omge:omge, omgiva:omgav:omgett, omgivit:omger:omge:omges, omgivas:omgavs:omgetts, omgivits:omges, omgivs, omgives:omgiven:omgivet:omgivna:omgivande:
+CUSTOM: y n
+597363r4<substantiv>omgivning:omgivning:omgivnings:omgivningen:omgivningens:omgivningar:omgivningars:omgivningarna:omgivningarnas
+CUSTOM: y y omgivnings
+800043r3<adjektiv>omgivningstemperaturstyrd:omgivningstemperaturstyrd:omgivningstemperaturstyrt:omgivningstemperaturstyrda:omgivningstemperaturstyrda::::
+647898r4<adjektiv>omgjord:omgjord:omgjort:omgjorda:omgjorda::::omgjorde
+807856r3<verb>omgjorda:omgjorda:omgjordade:omgjordat:omgjordar:omgjorda:omgjordas:omgjordades:omgjordats:omgjordas:omgjordad:omgjordat:omgjordade:omgjordande:
+807866r3<substantiv>omgjutning:omgjutning:omgjutnings:omgjutningen:omgjutningens:omgjutningar:omgjutningars:omgjutningarna:omgjutningarnas
+587379r4<verb>omgruppera:omgruppera:omgrupperade:omgrupperat:omgrupperar:omgruppera:omgrupperas:omgrupperades:omgrupperats:omgrupperas:omgrupperad:omgrupperat:omgrupperade:omgrupperande:
+647899r3<substantiv>omgruppering:omgruppering:omgrupperings:omgrupperingen:omgrupperingens:omgrupperingar:omgrupperingars:omgrupperingarna:omgrupperingarnas
+CUSTOM: y y omgrupperings
+801163r3<adjektiv>omgränsande:omgränsande:omgränsande:omgränsande:omgränsande:!:!:!:
+765842r3<adjektiv>omgrävd:omgrävd:omgrävt:omgrävda:omgrävda::::
+CUSTOM: y n n
+807880r3<substantiv>omgrävning:omgrävning:omgrävnings:omgrävningen:omgrävningens:omgrävningar:omgrävningars:omgrävningarna:omgrävningarnas
+620712r3<adverb>omgående:omgående
+551746r6<substantiv>omgång:omgång:omgångs:omgången:omgångens:omgångar:omgångars:omgångarna:omgångarnas
+547426r5<verb>omgärda:omgärda:omgärdade:omgärdat:omgärdar:omgärda:omgärdas:omgärdades:omgärdats:omgärdas:omgärdad:omgärdat:omgärdade:omgärdande:
+807888r3<substantiv>omgärdning:omgärdning:omgärdnings:omgärdningen:omgärdningens::::
+807892r3<substantiv>omgöring:omgöring:omgörings:omgöringen:omgöringens:omgöringar:omgöringars:omgöringarna:omgöringarnas
+807901r3<substantiv>omgörning:omgörning:omgörnings:omgörningen:omgörningens:omgörningar:omgörningars:omgörningarna:omgörningarnas
+647924r5<adverb>omhand:omhand
+CUSTOM: y n
+807910r3<substantiv>omhopp:omhopp:omhopps:omhoppet:omhoppets:omhopp:omhopps:omhoppen:omhoppens
+740616r3<substantiv>omhoppning:omhoppning:omhoppnings:omhoppningen:omhoppningens:omhoppningar:omhoppningars:omhoppningarna:omhoppningarnas
+547427r5<verb>omhulda:omhulda:omhuldade:omhuldat:omhuldar:omhulda:omhuldas:omhuldades:omhuldats:omhuldas:omhuldad:omhuldat:omhuldade:omhuldande:
+807916r3<verb>omhägna:omhägna:omhägnade:omhägnat:omhägnar:omhägna:omhägnas:omhägnades:omhägnats:omhägnas:omhägnad:omhägnat:omhägnade:omhägnande:
+807924r3<substantiv>omhägnad:omhägnad:omhägnads:omhägnaden:omhägnadens:omhägnader:omhägnaders:omhägnaderna:omhägnadernas
+647907r4<verb>omhäkta:omhäkta:omhäktade:omhäktat:omhäktar:omhäkta:omhäktas:omhäktades:omhäktats:omhäktas:omhäktad:omhäktat:omhäktade:omhäktande:
+647915r3<substantiv>omhäktning:omhäktning:omhäktnings:omhäktningen:omhäktningens:omhäktningar:omhäktningars:omhäktningarna:omhäktningarnas
+CUSTOM: y y omhäktnings
+807933r4<verb>omhänderha:omhänderha, omhänderhava:omhänderhade:omhänderhaft:omhänderhar, omhänderhaver:omhänderha:omhänderhas, omhänderhavas:omhänderhades:omhänderhafts:omhänderhas, omhänderhaves, omhänderhavs:::::
+COMPOUND(647924, 555191): omhand + hava, ha
+647930r4<substantiv>omhändertagande:omhändertagande:omhändertagandes:omhändertagandet:omhändertagandets:omhändertaganden:omhändertagandens:omhändertagandena:omhändertagandenas
+CUSTOM: y y omhändertagande
+694179r3<substantiv>omhändertagare:omhändertagare:omhändertagares:omhändertagaren:omhändertagarens:omhändertagare:omhändertagares:omhändertagarna:omhändertagarnas
+CUSTOM: y y omhändertagar
+802195r4<adjektiv>omhändertagen:omhändertagen:omhändertaget:omhändertagna:omhändertagna:!:!:!:omhändertagne
+807950r3<substantiv>omhändertagning:omhändertagning:omhändertagnings:omhändertagningen:omhändertagningens:omhändertagningar:omhändertagningars:omhändertagningarna:omhändertagningarnas
+647923r6<verb>omhänderta, omhändertaga:omhänderta, omhändertaga:omhändertog:omhändertagit:omhändertar, omhändertager:omhänderta, omhändertag:omhändertas, omhändertagas:omhändertogs:omhändertagits:omhändertas, omhändertages:omhändertagen:omhändertaget:omhändertagna:omhändertagande:
+COMPOUND(647924, 555219): omhand + ta, taga
+807958r3<substantiv>omhänge:omhänge:omhänges:omhänget:omhängets:omhängen:omhängens:omhängena:omhängenas
+807966r3<substantiv>omhängning:omhängning:omhängnings:omhängningen:omhängningens:omhängningar:omhängningars:omhängningarna:omhängningarnas
+807974r3<verb>omhölja:omhölja:omhöljde:omhöljt:omhöljer:omhölj:omhöljas:omhöljdes:omhöljts:omhöljs:omhöljd:omhöljt:omhöljda:omhöljande:
+807986r3<substantiv>omhölje:omhölje:omhöljes:omhöljet:omhöljets:omhöljen:omhöljens:omhöljena:omhöljenas
+620713r3<adverb>omigen:omigen
+647932r4<adjektiv>omild:omild:omilt:omilda:omilda:omildare:omildast:omildaste:
+807997r3<substantiv>omildhet:omildhet:omildhets:omildheten:omildhetens::::
+582528r4<adjektiv>omilitärisk:omilitärisk:omilitäriskt:omilitäriska:omilitäriska:!:!:!:omilitäriske
+808003r3<substantiv>ominlärning:ominlärning:ominlärnings:ominlärningen:ominlärningens::::
+793956r3<adjektiv>ominskad:ominskad:ominskat:ominskade:ominskade:!:!:!:
+636710r3<substantiv>ominstallation:ominstallation:ominstallations:ominstallationen:ominstallationens:ominstallationer:ominstallationers:ominstallationerna:ominstallationernas
+CUSTOM: y y ominstallations
+744309r3<verb>ominstallera:ominstallera:ominstallerade:ominstallerat:ominstallerar:ominstallera:ominstalleras:ominstallerades:ominstallerats:ominstalleras:ominstallerad:ominstallerat:ominstallerade:ominstallerande:
+620714r3<adverb>omintet:omintet
+735781r6<verb>omintetgöra:omintetgöra:omintetgjorde:omintetgjort:omintetgör:omintetgör:omintetgöras:omintetgjordes:omintetgjorts:omintetgörs, omintetgöres:omintetgjord:omintetgjort:omintetgjorda:omintetgörande:
+808009r3<substantiv>omintetgörelse:omintetgörelse:omintetgörelses:omintetgörelsen:omintetgörelsens::::
+798531r4<adjektiv>ominös:ominös:ominöst:ominösa:ominösa::::ominöse
+563482r3<adjektiv>omisskundsam:omisskundsam:omisskundsamt:omisskundsamma:omisskundsamma::::
+567119r4<adjektiv>omisskännelig:omisskännelig:omisskänneligt:omisskänneliga:omisskänneliga::::omisskännelige
+567122r4<adjektiv>omisskännlig:omisskännlig:omisskännligt:omisskännliga:omisskännliga::::omisskännlige
+569675r3<adjektiv>omisstydbar:omisstydbar:omisstydbart:omisstydbara:omisstydbara::::
+563485r4<adjektiv>omisstänksam:omisstänksam:omisstänksamt:omisstänksamma:omisstänksamma::::omisstänksamme
+808016r3<substantiv>omisstänksamhet:omisstänksamhet:omisstänksamhets:omisstänksamheten:omisstänksamhetens::::
+567125r4<adjektiv>omistlig:omistlig:omistligt:omistliga:omistliga:omistligare:omistligast:omistligaste:omistlige
+808025r3<substantiv>omistlighet:omistlighet:omistlighets:omistligheten:omistlighetens::::
+587383r4<verb>omjustera:omjustera:omjusterade:omjusterat:omjusterar:omjustera:omjusteras:omjusterades:omjusterats:omjusteras:omjusterad:omjusterat:omjusterade:omjusterande:
+808034r3<substantiv>omjustering:omjustering:omjusterings:omjusteringen:omjusteringens:omjusteringar:omjusteringars:omjusteringarna:omjusteringarnas
+765845r3<adjektiv>omjölkad:omjölkad:omjölkat:omjölkade:omjölkade:!:!:!:
+694180r3<substantiv>omkast:omkast:omkasts:omkastet:omkastets:omkast:omkasts:omkasten:omkastens
+647933r4<verb>omkasta:omkasta:omkastade:omkastat:omkastar:omkasta:omkastas:omkastades:omkastats:omkastas:omkastad:omkastat:omkastade:omkastande:
+808043r3<substantiv>omkastare:omkastare:omkastares:omkastaren:omkastarens:omkastare:omkastares:omkastarna:omkastarnas
+569678r3<adjektiv>omkastbar:omkastbar:omkastbart:omkastbara:omkastbara::::
+647938r3<substantiv>omkastning:omkastning:omkastnings:omkastningen:omkastningens:omkastningar:omkastningars:omkastningarna:omkastningarnas
+CUSTOM: y y omkastnings
+793959r3<adjektiv>omklappad:omklappad:omklappat:omklappade:omklappade:!:!:!:
+808049r3<substantiv>omklappning:omklappning:omklappnings:omklappningen:omklappningens:omklappningar:omklappningars:omklappningarna:omklappningarnas
+740625r4<adjektiv>omklädd:omklädd:omklätt:omklädda:omklädda:!:!:!:omklädde
+808058r3<substantiv>omklädnad:omklädnad:omklädnads:omklädnaden:omklädnadens:omklädnader:omklädnaders:omklädnaderna:omklädnadernas
+647946r4<substantiv>omklädning:omklädning:omklädnings:omklädningen:omklädningens::::
+CUSTOM: y y omklädnings
+647947r4<substantiv>omklädningsrum:omklädningsrum:omklädningsrums:omklädningsrummet:omklädningsrummets:omklädningsrum:omklädningsrums:omklädningsrummen:omklädningsrummens
+COMPOUND(647946, 571182): omklädning + rum
+808066r3<substantiv>omklädsel:omklädsel:omklädsels:omklädseln:omklädselns:omklädslar:omklädslars:omklädslarna:omklädslarnas
+808074r3<substantiv>omknytning:omknytning:omknytnings:omknytningen:omknytningens::::
+547429r4<verb>omkoda:omkoda:omkodade:omkodat:omkodar:omkoda:omkodas:omkodades:omkodats:omkodas:omkodad:omkodat:omkodade::
+CUSTOM: y n n
+647953r3<adjektiv>omkodad:omkodad:omkodat:omkodade:omkodade:!:!:!:
+CUSTOM: y n n
+808078r3<substantiv>omkok:omkok:omkoks:omkoket:omkokets:omkok:omkoks:omkoken:omkokens
+CUSTOM: y n
+808084r3<substantiv>omkokning:omkokning:omkoknings:omkokningen:omkokningens::::
+619312r4<verb>omkomma:omkomma:omkom:omkommit:omkommer:omkom:!:!:!:!:omkommen:omkommet:omkomna:omkommande:
+740628r3<adjektiv>omkommen:omkommen:omkommet:omkomna:omkomna:!:!:!:omkomne
+647955r3<substantiv>omkompilering:omkompilering:omkompilerings:omkompileringen:omkompileringens:omkompileringar:omkompileringars:omkompileringarna:omkompileringarnas
+CUSTOM: y y omkompilerings
+647956r3<substantiv>omkonfigurering:omkonfigurering:omkonfigurerings:omkonfigureringen:omkonfigureringens:omkonfigureringar:omkonfigureringars:omkonfigureringarna:omkonfigureringarnas
+CUSTOM: y y omkonfigurerings
+590391r4<verb>omkonstruera:omkonstruera:omkonstruerade:omkonstruerat:omkonstruerar:omkonstruera:omkonstrueras:omkonstruerades:omkonstruerats:omkonstrueras:omkonstruerad:omkonstruerat:omkonstruerade:omkonstruerande:
+808094r3<substantiv>omkonstruering:omkonstruering:omkonstruerings:omkonstrueringen:omkonstrueringens:omkonstrueringar:omkonstrueringars:omkonstrueringarna:omkonstrueringarnas
+808102r3<substantiv>omkonstruktion:omkonstruktion:omkonstruktions:omkonstruktionen:omkonstruktionens:omkonstruktioner:omkonstruktioners:omkonstruktionerna:omkonstruktionernas
+547430r5<verb>omkoppla:omkoppla:omkopplade:omkopplat:omkopplar:omkoppla:omkopplas:omkopplades:omkopplats:omkopplas:omkopplad:omkopplat:omkopplade:omkopplande:
+615402r3<substantiv>omkopplare:omkopplare:omkopplares:omkopplaren:omkopplarens:omkopplare:omkopplares:omkopplarna:omkopplarnas
+CUSTOM: y y omkopplar
+647957r3<substantiv>omkoppling:omkoppling:omkopplings:omkopplingen:omkopplingens:omkopplingar:omkopplingars:omkopplingarna:omkopplingarnas
+569681r3<adjektiv>omkopplingsbar:omkopplingsbar:omkopplingsbart:omkopplingsbara:omkopplingsbara::::
+550121r5<substantiv>omkostnad:omkostnad:omkostnads:omkostnaden:omkostnadens:omkostnader:omkostnaders:omkostnaderna:omkostnadernas
+CUSTOM: y y omkostnads +omkostnads
+787685r4<substantiv>omkostnadsbelopp:omkostnadsbelopp:omkostnadsbelopps:omkostnadsbeloppet:omkostnadsbeloppets:omkostnadsbelopp:omkostnadsbelopps:omkostnadsbeloppen:omkostnadsbeloppens
+COMPOUND(550121, 552231): omkostnad + belopp
+765848r3<adjektiv>omkramad:omkramad:omkramat:omkramade:omkramade:!:!:!:
+808111r3<substantiv>omkramning:omkramning:omkramnings:omkramningen:omkramningens::::
+808115r3<verb>omkransa:omkransa:omkransade:omkransat:omkransar:omkransa:omkransas:omkransades:omkransats:omkransas:omkransad:omkransat:omkransade:omkransande:
+619315r4<substantiv>omkrets:omkrets:omkrets:omkretsen:omkretsens:omkretsar:omkretsars:omkretsarna:omkretsarnas
+619317r3<preposition>omkring:omkring
+619316r3<adverb>omkring:omkring
+555977r6<presens particip>omkringboende:omkringboende
+740630r3<adjektiv>omkringliggande:omkringliggande:omkringliggande:omkringliggande:omkringliggande:!:!:!:
+765852r3<adjektiv>omkringsittande:omkringsittande:omkringsittande:omkringsittande:omkringsittande:!:!:!:
+765851r3<adjektiv>omkringstående:omkringstående:omkringstående:omkringstående:omkringstående:!:!:!:
+590395r3<verb>omkristallisera:omkristallisera:omkristalliserade:omkristalliserat:omkristalliserar:omkristallisera:::::::::
+619318r3<adverb>omkull:omkull
+808128r3<adjektiv>omkullfallen:omkullfallen:omkullfallet:omkullfallna:omkullfallna::::
+808131r3<verb>omkullkasta:omkullkasta:omkullkastade:omkullkastat:omkullkastar:omkullkasta:omkullkastas:omkullkastades:omkullkastats:omkullkastas:omkullkastad:omkullkastat:omkullkastade:omkullkastande:
+808141r3<substantiv>omkullkörning:omkullkörning:omkullkörnings:omkullkörningen:omkullkörningens:omkullkörningar:omkullkörningars:omkullkörningarna:omkullkörningarnas
+808150r3<adjektiv>omkullslagen:omkullslagen:omkullslaget:omkullslagna:omkullslagna:!:!:!:omkullslagne
+765853r3<adjektiv>omkullsparkad:omkullsparkad:omkullsparkat:omkullsparkade:omkullsparkade:!:!:!:
+648074r5<adjektiv>omkullsprungen:omkullsprungen:omkullsprunget:omkullsprungna:omkullsprungna:!:!:!:omkullsprungne
+648076r3<adjektiv>omkullvräkt:omkullvräkt:omkullvräkt:omkullvräkta:omkullvräkta::::
+648077r3<adjektiv>omkullvält:omkullvält:omkullvält:omkullvälta:omkullvälta::::
+808154r3<substantiv>omkväde:omkväde:omkvädes:omkvädet:omkvädets:omkväden:omkvädens:omkvädena:omkvädenas
+808162r3<substantiv>omköp:omköp:omköps:omköpet:omköpets:omköp:omköps:omköpen:omköpens
+CUSTOM: y n
+808168r3<substantiv>omkörare:omkörare:omkörares:omköraren:omkörarens:omkörare:omkörares:omkörarna:omkörarnas
+648078r3<adjektiv>omkörd:omkörd:omkört:omkörda:omkörda::::
+597364r3<substantiv>omkörning:omkörning:omkörnings:omkörningen:omkörningens:omkörningar:omkörningars:omkörningarna:omkörningarnas
+CUSTOM: y y omkörnings
+884374r3<substantiv>omkörningsfil:omkörningsfil:omkörningsfils:omkörningsfilen:omkörningsfilens:omkörningsfiler:omkörningsfilers:omkörningsfilerna:omkörningsfilernas
+793962r3<adjektiv>omladdad:omladdad:omladdat:omladdade:omladdade:!:!:!:
+569687r3<adjektiv>omladdbar:omladdbar:omladdbart:omladdbara:omladdbara::::
+808174r3<substantiv>omladdning:omladdning:omladdnings:omladdningen:omladdningens:omladdningar:omladdningars:omladdningarna:omladdningarnas
+569690r3<adjektiv>omladdningsbar:omladdningsbar:omladdningsbart:omladdningsbara:omladdningsbara::::
+935810r3<adjektiv>omlagd:omlagd:omlagt:omlagda:omlagda::::::::::::
+808194r3<verb>omlagra:omlagra:omlagrade:omlagrat:omlagrar:omlagra:omlagras:omlagrades:omlagrats:omlagras:omlagrad:omlagrat:omlagrade:omlagrande:
+808203r3<substantiv>omlagring:omlagring:omlagrings:omlagringen:omlagringens:omlagringar:omlagringars:omlagringarna:omlagringarnas
+962723r3<substantiv>omland:omland:omlands:omlandet:omlandets::::
+CUSTOM: y n
+808211r3<verb>omlasta:omlasta:omlastade:omlastat:omlastar:omlasta:omlastas:omlastades:omlastats:omlastas:omlastad:omlastat:omlastade:omlastande:
+808220r4<substantiv>omlastning:omlastning:omlastnings:omlastningen:omlastningens:omlastningar:omlastningars:omlastningarna:omlastningarnas
+CUSTOM: y y omlastnings
+808228r3<substantiv>omlastningshamn::::::::
+COMPOUND(808220, 551369): omlastning + hamn
+801164r3<adjektiv>omliggande:omliggande:omliggande:omliggande:omliggande:!:!:!:
+765856r3<adjektiv>omlindad:omlindad:omlindat:omlindade:omlindade:!:!:!:
+808346r3<substantiv>omlindning:omlindning:omlindnings:omlindningen:omlindningens:omlindningar:omlindningars:omlindningarna:omlindningarnas
+788750r3<substantiv>omljud:omljud:omljuds:omljudet:omljudets:omljud:omljuds:omljuden:omljudens
+801165r3<adjektiv>omljudande:omljudande:omljudande:omljudande:omljudande:!:!:!:
+801547r3<adjektiv>omljudd:omljudd:omljutt:omljudda:omljudda::::
+565100r3<adjektiv>omljudslös:omljudslös:omljudslöst:omljudslösa:omljudslösa::::
+808354r3<substantiv>omljudsvokal:omljudsvokal:omljudsvokals:omljudsvokalen:omljudsvokalens:omljudsvokaler:omljudsvokalers:omljudsvokalerna:omljudsvokalernas
+587387r4<verb>omlokalisera:omlokalisera:omlokaliserade:omlokaliserat:omlokaliserar:omlokalisera:omlokaliseras:omlokaliserades:omlokaliserats:omlokaliseras:omlokaliserad:omlokaliserat:omlokaliserade:omlokaliserande:
+728611r3<substantiv>omlokalisering:omlokalisering:omlokaliserings:omlokaliseringen:omlokaliseringens:omlokaliseringar:omlokaliseringars:omlokaliseringarna:omlokaliseringarnas
+552729r3<substantiv>omlopp:omlopp:omlopps:omloppet:omloppets:omlopp:omlopps:omloppen:omloppens
+648081r3<substantiv>omloppsbana:omloppsbana:omloppsbanas:omloppsbanan:omloppsbanans:omloppsbanor:omloppsbanors:omloppsbanorna:omloppsbanornas
+CUSTOM: y y omloppsbane
+648924r4<substantiv>omloppstid:omloppstid:omloppstids:omloppstiden:omloppstidens:omloppstider:omloppstiders:omloppstiderna:omloppstidernas
+647958r3<adverb>omlott:omlott
+808371r3<substantiv>omlottkappa:omlottkappa:omlottkappas:omlottkappan:omlottkappans:omlottkappor:omlottkappors:omlottkapporna:omlottkappornas
+808379r3<substantiv>omlottkjol:omlottkjol:omlottkjols:omlottkjolen:omlottkjolens:omlottkjolar:omlottkjolars:omlottkjolarna:omlottkjolarnas
+765859r3<adjektiv>omlottlagd:omlottlagd:omlottlagt:omlottlagda:omlottlagda::::
+808182r4<verb>omlägga:omlägga:omlade:omlagt:omlägger:omlägg:omläggas:omlades:omlagts:omläggs, omlägges:omlagd:omlagt:omlagda:omläggande:
+COMPOUND(557732, 556585): om + lägga
+CUSTOM: n n n
+647959r5<substantiv>omläggning:omläggning:omläggnings:omläggningen:omläggningens:omläggningar:omläggningars:omläggningarna:omläggningarnas
+CUSTOM: y y omläggnings
+808387r3<substantiv>omläsning:omläsning:omläsnings:omläsningen:omläsningens:omläsningar:omläsningars:omläsningarna:omläsningarnas
+808395r3<substantiv>omlöpning:omlöpning:omlöpnings:omlöpningen:omlöpningens::::
+590399r3<verb>ommaskera:ommaskera:ommaskerade:ommaskerat:ommaskerar:ommaskera:::::::::
+808399r3<substantiv>ommaskering:ommaskering:ommaskerings:ommaskeringen:ommaskeringens:ommaskeringar:ommaskeringars:ommaskeringarna:ommaskeringarnas
+587391r4<verb>ommodellera:ommodellera:ommodellerade:ommodellerat:ommodellerar:ommodellera:ommodelleras:ommodellerades:ommodellerats:ommodelleras:ommodellerad:ommodellerat:ommodellerade:ommodellerande:
+808412r3<substantiv>ommodellering:ommodellering:ommodellerings:ommodelleringen:ommodelleringens:ommodelleringar:ommodelleringars:ommodelleringarna:ommodelleringarnas
+765862r3<adjektiv>ommålad:ommålad:ommålat:ommålade:ommålade:!:!:!:
+808420r3<substantiv>ommålning:ommålning:ommålnings:ommålningen:ommålningens:ommålningar:ommålningars:ommålningarna:ommålningarnas
+648927r3<substantiv>ommärkning:ommärkning:ommärknings:ommärkningen:ommärkningens:ommärkningar:ommärkningars:ommärkningarna:ommärkningarnas
+CUSTOM: y y ommärknings
+587395r4<verb>ommöblera:ommöblera:ommöblerade:ommöblerat:ommöblerar:ommöblera:ommöbleras:ommöblerades:ommöblerats:ommöbleras:ommöblerad:ommöblerat:ommöblerade:ommöblerande:
+647960r3<substantiv>ommöblering:ommöblering:ommöblerings:ommöbleringen:ommöbleringens:ommöbleringar:ommöbleringars:ommöbleringarna:ommöbleringarnas
+CUSTOM: y y ommöblerings
+647968r4<substantiv>omnejd:omnejd:omnejds:omnejden:omnejdens:omnejder:omnejders:omnejderna:omnejdernas
+984262r4<substantiv>omnibus:omnibus:omnibus:omnibusen:omnibusens:omnibusar, omnibussar:omnibusars, omnibussars:omnibusarna, omnibussarna:omnibusarnas, omnibussarnas
+CUSTOM: y n
+639642r3<substantiv>omnipotens:omnipotens:omnipotens:omnipotensen:omnipotensens::::
+694187r3<adjektiv>omnipotent:omnipotent:omnipotent:omnipotenta:omnipotenta:!:!:!:omnipotente
+984273r3<substantiv>omnivor:omnivor:omnivors:omnivoren:omnivorens:omnivorer:omnivorers:omnivorerna:omnivorernas
+CUSTOM: y n
+984281r3<adjektiv>omnivor:omnivor:omnivort:omnivora:omnivora::::::::::::
+CUSTOM: y n
+587399r4<verb>omnumrera:omnumrera:omnumrerade:omnumrerat:omnumrerar:omnumrera:omnumreras:omnumrerades:omnumrerats:omnumreras:omnumrerad:omnumrerat:omnumrerade:omnumrerande:
+647972r3<substantiv>omnumrering:omnumrering:omnumrerings:omnumreringen:omnumreringens:omnumreringar:omnumreringars:omnumreringarna:omnumreringarnas
+CUSTOM: y y omnumrerings
+647973r4<verb>omnämna:omnämna:omnämnde:omnämnt:omnämner:omnämn:omnämnas:omnämndes:omnämnts:omnämns, omnämnes:omnämnd:omnämnt:omnämnda::
+647975r3<substantiv>omnämnande:omnämnande:omnämnandes:omnämnandet:omnämnandets:omnämnanden:omnämnandens:omnämnandena:omnämnandenas
+563248r4<adjektiv>omodern:omodern:omodernt:omoderna:omoderna:omodernare:omodernast:omodernaste:omoderne
+793965r3<adjektiv>omodulerad:omodulerad:omodulerat:omodulerade:omodulerade:!:!:!:
+564506r4<adjektiv>omogen:omogen:omoget:omogna:omogna:omognare:omognast:omognaste:omogne
+808446r3<substantiv>omogenhet:omogenhet:omogenhets:omogenheten:omogenhetens::::
+808450r3<substantiv>omognad:omognad:omognads:omognaden:omognadens::::
+647982r3<adjektiv>omonterad:omonterad:omonterat:omonterade:omonterade:!:!:!:
+647983r3<substantiv>omoral:omoral:omorals:omoralen:omoralens:!:!:!:!
+582531r4<adjektiv>omoralisk:omoralisk:omoraliskt:omoraliska:omoraliska::::omoraliske
+808454r3<substantiv>omoraliskhet:omoraliskhet:omoraliskhets:omoraliskheten:omoraliskhetens::::
+808458r3<verb>omordna:omordna:omordnade:omordnat:omordnar:omordna:omordnas:omordnades:omordnats:omordnas:omordnad:omordnat:omordnade:omordnade:
+808466r3<substantiv>omordning:omordning:omordnings:omordningen:omordningens:omordningar:omordningars:omordningarna:omordningarnas
+647988r4<substantiv>omorganisation:omorganisation:omorganisations:omorganisationen:omorganisationens:omorganisationer:omorganisationers:omorganisationerna:omorganisationernas
+CUSTOM: y y omorganisations
+547431r5<verb>omorganisera:omorganisera:omorganiserade:omorganiserat:omorganiserar:omorganisera:omorganiseras:omorganiserades:omorganiserats:omorganiseras:omorganiserad:omorganiserat:omorganiserade:omorganiserande:
+808475r3<substantiv>omorganisering:omorganisering:omorganiserings:omorganiseringen:omorganiseringens:omorganiseringar:omorganiseringars:omorganiseringarna:omorganiseringarnas
+793968r3<adjektiv>omorgnad:omorgnad:omorgnat:omorgnade:omorgnade:!:!:!:
+590403r4<verb>omorientera:omorientera:omorienterade:omorienterat:omorienterar:omorientera:omorienteras:omorienterades:omorienterats:omorienteras:omorienterad:omorienterat:omorienterade:omorienterande:
+808488r3<substantiv>omorientering:omorientering:omorienterings:omorienteringen:omorienteringens:omorienteringar:omorienteringars:omorienteringarna:omorienteringarnas
+793971r3<adjektiv>omornad:omornad:omornat:omornade:omornade:!:!:!:
+647989r3<adjektiv>omotiverad:omotiverad:omotiverat:omotiverade:omotiverade:!:!:!:
+800046r3<adjektiv>omotsagd:omotsagd:omotsagt:omotsagda:omotsagda::::
+567126r3<adjektiv>omotståndlig:omotståndlig:omotståndligt:omotståndliga:omotståndliga::::
+567129r3<adjektiv>omotsäglig:omotsäglig:omotsägligt:omotsägliga:omotsägliga::::
+765865r3<adjektiv>ompackad:ompackad:ompackat:ompackade:ompackade:!:!:!:
+808496r3<substantiv>ompackning:ompackning:ompacknings:ompackningen:ompackningens::::
+547432r5<verb>omplacera:omplacera:omplacerade:omplacerat:omplacerar:omplacera:omplaceras:omplacerades:omplacerats:omplaceras:omplacerad:omplacerat:omplacerade:omplacerande:
+647990r3<substantiv>omplacering:omplacering:omplacerings:omplaceringen:omplaceringens:omplaceringar:omplaceringars:omplaceringarna:omplaceringarnas
+CUSTOM: y y omplacerings
+587403r4<verb>omplantera:omplantera:omplanterade:omplanterat:omplanterar:omplantera:omplanteras:omplanterades:omplanterats:omplanteras:omplanterad:omplanterat:omplanterade:omplanterande:
+647991r3<substantiv>omplantering:omplantering:omplanterings:omplanteringen:omplanteringens:omplanteringar:omplanteringars:omplanteringarna:omplanteringarnas
+CUSTOM: y y omplanterings
+765868r3<adjektiv>omplåstrad:omplåstrad:omplåstrat:omplåstrade:omplåstrade:!:!:!:
+647999r4<substantiv>omplåstring:omplåstring:omplåstrings:omplåstringen:omplåstringens:omplåstringar:omplåstringars:omplåstringarna:omplåstringarnas
+CUSTOM: y y omplåstrings
+587407r4<verb>ompolera:ompolera:ompolerade:ompolerat:ompolerar:ompolera:ompoleras:ompolerades:ompolerats:ompoleras:ompolerad:ompolerat:ompolerade::
+CUSTOM: y n n
+793974r3<adjektiv>ompressad:ompressad:ompressat:ompressade:ompressade:!:!:!:
+547433r5<verb>omprioritera:omprioritera:omprioriterade:omprioriterat:omprioriterar:omprioritera:omprioriteras:omprioriterades:omprioriterats:omprioriteras:omprioriterad:omprioriterat:omprioriterade:omprioriterande:
+648003r3<substantiv>omprioritering:omprioritering:omprioriterings:omprioriteringen:omprioriteringens:omprioriteringar:omprioriteringars:omprioriteringarna:omprioriteringarnas
+CUSTOM: y y omprioriterings
+587411r4<verb>omprogrammera:omprogrammera:omprogrammerade:omprogrammerat:omprogrammerar:omprogrammera:omprogrammeras:omprogrammerades:omprogrammerats:omprogrammeras:omprogrammerad:omprogrammerat:omprogrammerade:omprogrammerande:
+956499r6<substantiv>omprov:omprov:omprovs:omprovet:omprovets:omprov:omprovs:omproven:omprovens
+COMPOUND(557732, 621657): om + prov
+CUSTOM: y n
+547434r5<verb>ompröva:ompröva:omprövade:omprövat:omprövar:ompröva:omprövas:omprövades:omprövats:omprövas:omprövad:omprövat:omprövade:omprövande:
+648011r3<substantiv>omprövning:omprövning:omprövnings:omprövningen:omprövningens:omprövningar:omprövningars:omprövningarna:omprövningarnas
+CUSTOM: y y omprövnings
+648012r3<adjektiv>ompysslad:ompysslad:ompysslat:ompysslade:ompysslade:!:!:!:
+808516r3<substantiv>ompyssling:ompyssling:ompysslings:ompysslingen:ompysslingens::::
+808520r3<verb>omrama:omrama:omramade:omramat:omramar:omrama:omramas:omramades:omramats:omramas:omramad:omramat:omramade:omramande:
+808529r3<substantiv>omramning:omramning:omramnings:omramningen:omramningens:omramningar:omramningars:omramningarna:omramningarnas
+547435r5<verb>omredigera:omredigera:omredigerade:omredigerat:omredigerar:omredigera:omredigeras:omredigerades:omredigerats:omredigeras:omredigerad:omredigerat:omredigerade:omredigerande:
+808538r3<substantiv>omredigering:omredigering:omredigerings:omredigeringen:omredigeringens:omredigeringar:omredigeringars:omredigeringarna:omredigeringarnas
+587415r4<verb>omregistrera:omregistrera:omregistrerade:omregistrerat:omregistrerar:omregistrera:omregistreras:omregistrerades:omregistrerats:omregistreras:omregistrerad:omregistrerat:omregistrerade:omregistrerande:
+648929r3<substantiv>omregistrering:omregistrering:omregistrerings:omregistreringen:omregistreringens:omregistreringar:omregistreringars:omregistreringarna:omregistreringarnas
+CUSTOM: y y omregistrerings
+587419r4<verb>omreglera:omreglera:omreglerade:omreglerat:omreglerar:omreglera:omregleras:omreglerades:omreglerats:omregleras:omreglerad:omreglerat:omreglerade:omreglerande:
+808556r3<substantiv>omreglering:omreglering:omreglerings:omregleringen:omregleringens:omregleringar:omregleringars:omregleringarna:omregleringarnas
+CUSTOM: y y omreglerings
+793977r3<adjektiv>omreklamerad:omreklamerad:omreklamerat:omreklamerade:omreklamerade:!:!:!:
+793980r3<adjektiv>omriggad:omriggad:omriggat:omriggade:omriggade:!:!:!:
+808564r3<substantiv>omriggning:omriggning:omriggnings:omriggningen:omriggningens:omriggningar:omriggningars:omriggningarna:omriggningarnas
+648015r4<verb>omringa:omringa:omringade:omringat:omringar:omringa:omringas:omringades:omringats:omringas:omringad:omringat:omringade:omringande:
+808572r3<substantiv>omringning:omringning:omringnings:omringningen:omringningens:omringningar:omringningars:omringningarna:omringningarnas
+897405r3<verb>omrubricera:omrubricera:omrubricerade:omrubricerat:omrubricerar:omrubricera:omrubriceras:omrubricerades:omrubricerats:omrubriceras:omrubricerad:omrubricerat:omrubricerade::
+648023r3<adjektiv>omruskad:omruskad:omruskat:omruskade:omruskade:!:!:!:
+808580r3<substantiv>omruskning:omruskning:omrusknings:omruskningen:omruskningens:omruskningar:omruskningars:omruskningarna:omruskningarnas
+612761r67<substantiv>område:område:områdes:området:områdets:områden:områdens:områdena:områdenas
+CUSTOM: y y områdes +områdes
+740636r4<substantiv>områdeschef:områdeschef:områdeschefs:områdeschefen:områdeschefens:områdeschefer:områdeschefers:områdescheferna:områdeschefernas
+COMPOUND(612761, 548529): område + chef
+648026r4<verb>omräkna:omräkna:omräknade:omräknat:omräknar:omräkna:omräknas:omräknades:omräknats:omräknas:omräknad:omräknat:omräknade:omräknande:
+648031r5<substantiv>omräkning:omräkning:omräknings:omräkningen:omräkningens:omräkningar:omräkningars:omräkningarna:omräkningarnas
+CUSTOM: y y omräknings
+808593r4<substantiv>omräkningstal:omräkningstal:omräkningstals:omräkningstalet:omräkningstalets:omräkningstal:omräkningstals:omräkningstalen:omräkningstalens
+COMPOUND(648031, 553029): omräkning + tal
+648032r5<verb>omröra:omröra:omrörde:omrört:omrör:omrör:omröras:omrördes:omrörts:omrörs, omröres:omrörd:omrört:omrörda:omrörande:
+CUSTOM: y n
+808608r4<substantiv>omrörararm:omrörararm:omrörararms:omrörararmen:omrörararmens:omrörararmar:omrörararmars:omrörararmarna:omrörararmarnas
+COMPOUND(808602, 550842): omrörare + arm
+808602r4<substantiv>omrörare:omrörare:omrörares:omröraren:omrörarens:omrörare:omrörares:omrörarna:omrörarnas
+CUSTOM: y y omrörar
+808617r3<substantiv>omröring:omröring:omrörings:omröringen:omröringens:omröringar:omröringars:omröringarna:omröringarnas
+740645r3<substantiv>omrörning:omrörning:omrörnings:omrörningen:omrörningens::::
+808625r3<verb>omrösta:omrösta:omröstade:omröstat:omröstar:omrösta:omröstas:omröstades:omröstats:omröstas::::omröstande:
+648033r3<substantiv>omröstning:omröstning:omröstnings:omröstningen:omröstningens:omröstningar:omröstningars:omröstningarna:omröstningarnas
+CUSTOM: y y omröstnings +omröstnings
+808633r3<substantiv>omsadling:omsadling:omsadlings:omsadlingen:omsadlingens::::
+808637r4<verb>omse:omse:omsåg:omsett:omser:omse:omses:omsågs:omsetts:omses:omsedd:omsett:omsedda:omseende:
+COMPOUND(557732, 555218): om + se
+808647r3<substantiv>omsegling:omsegling:omseglings:omseglingen:omseglingens::::
+619319r3<adverb>omsider:omsider
+585051r3<adjektiv>omsiktsfull:omsiktsfull:omsiktsfullt:omsiktsfulla:omsiktsfulla::::
+793986r3<adjektiv>omsintrad:omsintrad:omsintrat:omsintrade:omsintrade:!:!:!:
+808656r3<adjektiv>omsjungen:omsjungen:omsjunget:omsjungna:omsjungna:!:!:!:omsjungne
+619320r3<adjektiv>omskakad:omskakad:omskakat:omskakade:omskakade:!:!:!:
+648035r3<adjektiv>omskakande:omskakande:omskakande:omskakande:omskakande:!:!:!:
+808660r3<substantiv>omskakning:omskakning:omskaknings:omskakningen:omskakningens:omskakningar:omskakningars:omskakningarna:omskakningarnas
+547436r5<verb>omskapa:omskapa:omskapade:omskapat:omskapar:omskapa:omskapas:omskapades:omskapats:omskapas:omskapad:omskapat:omskapade:omskapande:
+808669r3<substantiv>omskapare:omskapare:omskapares:omskaparen:omskaparens:omskapare:omskapares:omskaparna:omskaparnas
+808675r4<substantiv>omskapelse:omskapelse:omskapelses:omskapelsen:omskapelsens:omskapelser:omskapelsers:omskapelserna:omskapelsernas
+CUSTOM: y y omskapelse
+808683r3<substantiv>omskapelseprocess::::::::
+COMPOUND(808675, 550258): omskapelse + process
+808684r3<substantiv>omskiftare:omskiftare:omskiftares:omskiftaren:omskiftarens:omskiftare:omskiftares:omskiftarna:omskiftarnas
+882592r3<substantiv>omskiftning:omskiftning:omskiftnings:omskiftningen:omskiftningens:omskiftningar:omskiftningars:omskiftningarna:omskiftningarnas
+808690r3<substantiv>omskjutning:omskjutning:omskjutnings:omskjutningen:omskjutningens:omskjutningar:omskjutningars:omskjutningarna:omskjutningarnas
+547437r5<verb>omskola:omskola:omskolade:omskolat:omskolar:omskola:omskolas:omskolades:omskolats:omskolas:omskolad:omskolat:omskolade:omskolande:
+619323r3<substantiv>omskolning:omskolning:omskolnings:omskolningen:omskolningens::::
+CUSTOM: y y omskolnings
+984286r3<substantiv>omskrift:omskrift:omskrifts:omskriften:omskriftens::::
+694189r4<verb>omskriva:omskriva:omskrev:omskrivit:omskriver:omskriv:omskrivas:omskr

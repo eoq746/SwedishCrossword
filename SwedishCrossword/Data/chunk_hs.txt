@@ -1,0 +1,630 @@
+djektiv>åtvriden:åtvriden:åtvridet:åtvridna:åtvridna::::
+818019r3<substantiv>åvatten:åvatten:åvattens:åvattnet:åvattnets::::
+654719r3<substantiv>åverkan:åverkan:åverkans:åverkan:åverkans:!:!:!:!
+654721r3<verb>åvila:åvila:åvilade:åvilat:åvilar:åvila:::::::::
+989222r3<verb>åvägabringa:åvägabringa:åvägabringade:åvägabringat:åvägabringar:åvägabringa:åvägabringas:åvägabringades:åvägabringats:åvägabringas:åvägabringad:åvägabringat:åvägabringade:åvägabringande:
+925416r3<verb>åx::::::!:!:!:!:::::
+627720r3<substantiv>äckel:äckel:äckels:äcklet:äcklets:äckel:äckels:äcklen:äcklens
+818023r3<substantiv>äckelkänsla:äckelkänsla:äckelkänslas:äckelkänslan:äckelkänslans:äckelkänslor:äckelkänslors:äckelkänslorna:äckelkänslornas
+654723r3<adjektiv>äckelmagad:äckelmagad:äckelmagat:äckelmagade:äckelmagade:!:!:!:
+548070r6<verb>äckla:äckla:äcklade:äcklat:äcklar:äckla:äcklas:äcklades:äcklats:äcklas:äcklad:äcklat:äcklade:äcklande:
+654722r3<deponens>äcklas:äcklas:äcklades:äcklats:äcklas:äcklas
+563295r5<adjektiv>äcklig:äcklig:äckligt:äckliga:äckliga:äckligare:äckligast:äckligaste:äcklige
+654726r4<substantiv>äcklighet:äcklighet:äcklighets:äckligheten:äcklighetens:äckligheter:äckligheters:äckligheterna:äckligheternas
+CUSTOM: y y äcklighets
+620406r4<adjektiv>ädel:ädel:ädelt:ädla:ädla:ädlare:ädlast:ädlaste:ädle
+CUSTOM: y n ädel
+699415r3<adjektiv>ädelboren:ädelboren:ädelboret:ädelborna:ädelborna::::ädelborne
+654730r3<substantiv>ädelfisk:ädelfisk:ädelfisks:ädelfisken:ädelfiskens:ädelfiskar:ädelfiskars:ädelfiskarna:ädelfiskarnas
+720999r5<substantiv>ädelgas:ädelgas:ädelgas:ädelgasen:ädelgasens:ädelgaser:ädelgasers:ädelgaserna:ädelgasernas
+DEFINITION 1: Grundämnen med maximalt antal elektroner i det yttersta elektronskalet. Dessa är helium, neon, argon, krypton, xenon och radon.
+COMPOUND(620406, 549064): ädel + gas
+756711r3<substantiv>ädelgran:ädelgran:ädelgrans:ädelgranen:ädelgranens:ädelgranar:ädelgranars:ädelgranarna:ädelgranarnas
+818037r3<substantiv>ädelhet:ädelhet:ädelhets:ädelheten:ädelhetens::::
+853783r3<substantiv>ädelmod:ädelmod:ädelmods:ädelmodet:ädelmodets::::
+578528r3<adjektiv>ädelmodig:ädelmodig:ädelmodigt:ädelmodiga:ädelmodiga::::
+806085r4<substantiv>ädelost:ädelost:ädelosts:ädelosten:ädelostens:ädelostar:ädelostars:ädelostarna:ädelostarnas
+CUSTOM: y y ädelost
+894971r3<substantiv>ädelostsmör::::::::
+COMPOUND(806085, 622554): ädelost + smör
+552134r3<substantiv>ädelsten:ädelsten:ädelstens:ädelstenen:ädelstenens:ädelstenar:ädelstenars:ädelstenarna:ädelstenarnas
+861360r3<substantiv>ädelträ:ädelträ:ädelträs:ädelträet:ädelträets::::
+654738r3<substantiv>ädling:ädling:ädlings:ädlingen:ädlingens:ädlingar:ädlingars:ädlingarna:ädlingarnas
+595852r4<substantiv>äga:äga:ägas:ägan:ägans:ägor:ägors:ägorna:ägornas
+BASEWORDS: ägo
+CUSTOM: y n
+557782r5<verb>äga:äga:ägde:ägt:äger:äg:ägas:ägdes:ägts:ägs, äges:ägd:ägt:ägda:ägande:
+CUSTOM: y n
+630860r5<substantiv>ägande:ägande:ägandes:ägandet:ägandets:äganden:ägandens:ägandena:ägandenas
+CUSTOM: y y ägande
+630859r4<substantiv>ägandeförhållande:ägandeförhållande:ägandeförhållandes:ägandeförhållandet:ägandeförhållandets:ägandeförhållanden:ägandeförhållandens:ägandeförhållandena:ägandeförhållandenas
+COMPOUND(630860, 612481): ägande + förhållande
+637175r7<substantiv>äganderätt:äganderätt:äganderätts:äganderätten:äganderättens:äganderätter:äganderätters:äganderätterna:äganderätternas
+COMPOUND(630860, 603413): ägande + rätt
+CUSTOM: y y äganderätts
+636700r4<substantiv>äganderättsförbehåll:äganderättsförbehåll:äganderättsförbehålls:äganderättsförbehållet:äganderättsförbehållets:äganderättsförbehåll:äganderättsförbehålls:äganderättsförbehållen:äganderättsförbehållens
+COMPOUND(637175, 552398): äganderätt + förbehåll
+676039r4<substantiv>äganderättsförvärv:äganderättsförvärv:äganderättsförvärvs:äganderättsförvärvet:äganderättsförvärvets:äganderättsförvärv:äganderättsförvärvs:äganderättsförvärven:äganderättsförvärvens
+COMPOUND(637175, 552419): äganderätt + förvärv
+676045r4<substantiv>äganderättshandling:äganderättshandling:äganderättshandlings:äganderättshandlingen:äganderättshandlingens:äganderättshandlingar:äganderättshandlingars:äganderättshandlingarna:äganderättshandlingarnas
+COMPOUND(637175, 551370): äganderätt + handling
+676031r4<substantiv>ägarandel:ägarandel:ägarandels:ägarandelen:ägarandelens:ägarandelar:ägarandelars:ägarandelarna:ägarandelarnas
+COMPOUND(615532, 550837): ägare + andel
+676027r4<substantiv>ägaransvar:ägaransvar:ägaransvars:ägaransvaret:ägaransvarets:!:!:!:!
+COMPOUND(615532, 614560): ägare + ansvar
+654739r3<substantiv>ägarbyte:ägarbyte:ägarbytes:ägarbytet:ägarbytets:ägarbyten:ägarbytens:ägarbytena:ägarbytenas
+615532r27<substantiv>ägare:ägare:ägares:ägaren:ägarens:ägare:ägares:ägarna:ägarnas
+CUSTOM: y y ägar +ägar
+654747r3<substantiv>ägarinna:ägarinna:ägarinnas:ägarinnan:ägarinnans:ägarinnor:ägarinnors:ägarinnorna:ägarinnornas
+891143r5<substantiv>ägarlägenhet:ägarlägenhet:ägarlägenhets:ägarlägenheten:ägarlägenhetens:ägarlägenheter:ägarlägenheters:ägarlägenheterna:ägarlägenheternas
+COMPOUND(615532, 549971): ägare + lägenhet
+CUSTOM: y y ägarlägenhets
+891141r4<substantiv>ägarlägenhetsinnehavare:ägarlägenhetsinnehavare:ägarlägenhetsinnehavares:ägarlägenhetsinnehavaren:ägarlägenhetsinnehavarens:ägarlägenhetsinnehavare:ägarlägenhetsinnehavares:ägarlägenhetsinnehavarna:ägarlägenhetsinnehavarnas
+COMPOUND(891143, 609678): ägarlägenhet + innehavare
+818042r3<substantiv>ägarskap:ägarskap:ägarskaps:ägarskapet:ägarskapets::::
+553150r15<substantiv>ägg:ägg:äggs:ägget:äggets:ägg:äggs:äggen:äggens
+CUSTOM: y y ägg
+654748r3<substantiv>äggcell:äggcell:äggcells:äggcellen:äggcellens:äggceller:äggcellers:äggcellerna:äggcellernas
+630873r3<adjektiv>äggformad:äggformad:äggformat:äggformade:äggformade::::
+578531r3<adjektiv>äggformig:äggformig:äggformigt:äggformiga:äggformiga::::
+654756r4<substantiv>äggkartong:äggkartong:äggkartongs:äggkartongen:äggkartongens:äggkartonger:äggkartongers:äggkartongerna:äggkartongernas
+COMPOUND(553150, 549495): ägg + kartong
+654764r4<substantiv>äggklocka:äggklocka:äggklockas:äggklockan:äggklockans:äggklockor:äggklockors:äggklockorna:äggklockornas
+COMPOUND(553150, 594466): ägg + klocka
+818047r4<substantiv>äggkläckning:äggkläckning:äggkläcknings:äggkläckningen:äggkläckningens::::
+CUSTOM: y y äggkläcknings
+818051r4<substantiv>äggkläckningsapparat:äggkläckningsapparat:äggkläckningsapparats:äggkläckningsapparaten:äggkläckningsapparatens:äggkläckningsapparater:äggkläckningsapparaters:äggkläckningsapparaterna:äggkläckningsapparaternas
+COMPOUND(818047, 548215): äggkläckning + apparat
+654772r3<substantiv>äggkopp:äggkopp:äggkopps:äggkoppen:äggkoppens:äggkoppar:äggkoppars:äggkopparna:äggkopparnas
+761783r3<substantiv>äggledare:äggledare:äggledares:äggledaren:äggledarens:äggledare:äggledares:äggledarna:äggledarnas
+CUSTOM: y y äggledar
+818052r3<substantiv>äggläggningsrör:äggläggningsrör:äggläggningsrörs:äggläggningsröret:äggläggningsrörets:äggläggningsrör:äggläggningsrörs:äggläggningsrören:äggläggningsrörens
+721555r4<substantiv>äggnudel:äggnudel:äggnudels:äggnudeln:äggnudelns:äggnudlar:äggnudlars:äggnudlarna:äggnudlarnas
+COMPOUND(553150, 721536): ägg + nudel
+CUSTOM: y n n
+818058r3<substantiv>äggoljetempera:äggoljetempera:äggoljetemperas:äggoljetemperan:äggoljetemperans::::
+806093r3<substantiv>äggost:äggost:äggosts:äggosten:äggostens:äggostar:äggostars:äggostarna:äggostarnas
+800848r3<adjektiv>äggrund:äggrund:äggrunt:äggrunda:äggrunda::::
+876379r3<substantiv>äggrätt:äggrätt:äggrätts:äggrätten:äggrättens:äggrätter:äggrätters:äggrätterna:äggrätternas
+933735r3<substantiv>äggröra:äggröra:äggröras:äggröran:äggrörans::::
+553151r3<substantiv>äggskal:äggskal:äggskals:äggskalet:äggskalets:äggskal:äggskals:äggskalen:äggskalens
+818063r3<substantiv>äggskivare:äggskivare:äggskivares:äggskivaren:äggskivarens:äggskivare:äggskivares:äggskivarna:äggskivarnas
+818070r3<substantiv>äggstanning:äggstanning:äggstannings:äggstanningen:äggstanningens:äggstanningar:äggstanningars:äggstanningarna:äggstanningarnas
+636768r5<adjektiv>äggstekt:äggstekt:äggstekt:äggstekta:äggstekta::::::::::::
+CUSTOM: y n n
+552136r4<substantiv>äggstock:äggstock:äggstocks:äggstocken:äggstockens:äggstockar:äggstockars:äggstockarna:äggstockarnas
+CUSTOM: y y äggstocks
+630876r4<substantiv>äggstocksinflammation:äggstocksinflammation:äggstocksinflammations:äggstocksinflammationen:äggstocksinflammationens:äggstocksinflammationer:äggstocksinflammationers:äggstocksinflammationerna:äggstocksinflammationernas
+COMPOUND(552136, 602288): äggstock + inflammation
+CUSTOM: y y äggstocksinflammations
+818078r3<adjektiv>äggstor:äggstor:äggstort:äggstora:äggstora:!:!:!:
+654780r3<substantiv>äggsvamp:äggsvamp:äggsvamps:äggsvampen:äggsvampens:äggsvampar:äggsvampars:äggsvamparna:äggsvamparnas
+987848r4<substantiv>äggtempera:äggtempera:äggtemperas:äggtemperan:äggtemperans::::
+COMPOUND(553150, 987843): ägg + tempera
+818081r3<substantiv>äggtoddy:äggtoddy:äggtoddys:äggtoddyn:äggtoddyns::::
+763196r3<adjektiv>äggul:äggul:äggult:äggula:äggula::::
+CUSTOM: y n
+654788r3<substantiv>äggula:äggula:äggulas:äggulan:äggulans:äggulor:äggulors:äggulorna:äggulornas
+654796r4<substantiv>äggvita:äggvita:äggvitas:äggvitan:äggvitans:äggvitor:äggvitors:äggvitorna:äggvitornas
+CUSTOM: y y äggvite
+564397r3<adjektiv>äggvitefri:äggvitefri:äggvitefritt:äggvitefria:äggvitefria::::
+730331r4<substantiv>äggviteämne:äggviteämne:äggviteämnes:äggviteämnet:äggviteämnets:äggviteämnen:äggviteämnens:äggviteämnena:äggviteämnenas
+COMPOUND(654796, 613026): äggvita + ämne
+989231r3<substantiv>ägiljett:ägiljett:ägiljetts:ägiljetten:ägiljettens:ägiljetter:ägiljetters:ägiljetterna:ägiljetternas
+548071r5<verb>ägna:ägna:ägnade:ägnat:ägnar:ägna:ägnas:ägnades:ägnats:ägnas:ägnad:ägnat:ägnade:ägnande:!
+796917r3<adjektiv>ägnad:ägnad:ägnat:ägnade:ägnade:!:!:!:
+624364r4<substantiv>ägo:ägo:!:!:!:!:!:!:!
+CUSTOM: y n
+552138r3<substantiv>ägodel:ägodel:ägodels:ägodelen:ägodelens:ägodelar:ägodelars:ägodelarna:ägodelarnas
+770730r3<substantiv>ägodelning:ägodelning:ägodelnings:ägodelningen:ägodelningens:ägodelningar:ägodelningars:ägodelningarna:ägodelningarnas
+818085r3<substantiv>ägogräns:ägogräns:ägogräns:ägogränsen:ägogränsens:ägogränser:ägogränsers:ägogränserna:ägogränsernas
+818092r3<substantiv>ägorätt:ägorätt:ägorätts:ägorätten:ägorättens::::
+770738r3<substantiv>ägoskifte:ägoskifte:ägoskiftes:ägoskiftet:ägoskiftets:ägoskiften:ägoskiftens:ägoskiftena:ägoskiftenas
+786084r4<substantiv>ägoslag:ägoslag:ägoslags:ägoslaget:ägoslagets:ägoslag:ägoslags:ägoslagen:ägoslagens
+COMPOUND(624364, 608035): ägo + slag
+818096r3<substantiv>ägotvist:ägotvist:ägotvists:ägotvisten:ägotvistens:ägotvister:ägotvisters:ägotvisterna:ägotvisternas
+927649r4<substantiv>ägrett:ägrett:ägretts:ägretten:ägrettens:ägretter:ägretters:ägretterna:ägretternas
+CUSTOM: y n ägrett
+927657r4<substantiv>ägretthäger:ägretthäger:ägretthägers:ägretthägern:ägretthägerns:ägretthägrar:ägretthägrars:ägretthägrarna:ägretthägrarnas
+COMPOUND(927649, 557392): ägrett + häger
+557792r3<interjektion>äh:äh
+CUSTOM: y n y
+571234r5<adjektiv>äkta:äkta:äkta:äkta:äkta:äktare:äktast:äktaste:äkte::::::::
+548072r4<verb>äkta:äkta:äktade:äktat:äktar:äkta:äktas:äktades:äktats:äktas:äktad:äktat:äktade::
+553153r5<substantiv>äktenskap:äktenskap:äktenskaps:äktenskapet:äktenskapets:äktenskap:äktenskaps:äktenskapen:äktenskapens
+CUSTOM: y y äktenskaps +äktenskaps
+568555r3<adjektiv>äktenskaplig:äktenskaplig:äktenskapligt:äktenskapliga:äktenskapliga::::
+804129r3<substantiv>äktenskapsbryterska:äktenskapsbryterska:äktenskapsbryterskas:äktenskapsbryterskan:äktenskapsbryterskans:äktenskapsbryterskor:äktenskapsbryterskors:äktenskapsbryterskorna:äktenskapsbryterskornas
+608503r3<substantiv>äktenskapsförord:äktenskapsförord:äktenskapsförords:äktenskapsförordet:äktenskapsförordets:äktenskapsförord:äktenskapsförords:äktenskapsförorden:äktenskapsförordens
+818105r3<substantiv>äktenskapsmäklerska:äktenskapsmäklerska:äktenskapsmäklerskas:äktenskapsmäklerskan:äktenskapsmäklerskans:äktenskapsmäklerskor:äktenskapsmäklerskors:äktenskapsmäklerskorna:äktenskapsmäklerskornas
+722715r5<substantiv>äkthet:äkthet:äkthets:äktheten:äkthetens::::
+CUSTOM: y y äkthets
+733648r4<substantiv>äkthetsbevis:äkthetsbevis:äkthetsbevis:äkthetsbeviset:äkthetsbevisets:äkthetsbevis:äkthetsbevis:äkthetsbevisen:äkthetsbevisens
+COMPOUND(722715, 552246): äkthet + bevis
+733654r4<substantiv>äkthetsintyg:äkthetsintyg:äkthetsintygs:äkthetsintyget:äkthetsintygets:äkthetsintyg:äkthetsintygs:äkthetsintygen:äkthetsintygens
+COMPOUND(722715, 552524): äkthet + intyg
+818113r3<adjektiv>äktsvensk:äktsvensk:äktsvenskt:äktsvenska:äktsvenska:!:!:!:äktsvenske
+775277r3<substantiv>äldreboende:äldreboende:äldreboendes:äldreboendet:äldreboendets:äldreboenden:äldreboendens:äldreboendena:äldreboendenas
+654798r3<substantiv>äldreomsorg:äldreomsorg:äldreomsorgs:äldreomsorgen:äldreomsorgens:!:!:!:!
+CUSTOM: y n äldreomsorgs
+751416r3<substantiv>äldresjukvård:äldresjukvård:äldresjukvårds:äldresjukvården:äldresjukvårdens::::
+751420r3<substantiv>äldrevård:äldrevård:äldrevårds:äldrevården:äldrevårdens::::
+818117r3<substantiv>äldsteråd:äldsteråd:äldsteråds:äldsterådet:äldsterådets:äldsteråd:äldsteråds:äldsteråden:äldsterådens
+552140r15<substantiv>älg:älg:älgs:älgen:älgens:älgar:älgars:älgarna:älgarnas
+CUSTOM: y n älg
+905105r11<verb>älga:älga:älgade:älgat:älgar:älga:älgas:älgades:älgats:älgas::::älgande:!
+CUSTOM: n n y
+921080r5<substantiv>älgfärs:älgfärs:älgfärs:älgfärsen:älgfärsens:älgfärser:älgfärsers:älgfärserna:älgfärsernas
+COMPOUND(552140, 562218): älg + färs
+CUSTOM: y y älgfärs
+921070r4<substantiv>älgfärsbiff:älgfärsbiff:älgfärsbiffs:älgfärsbiffen:älgfärsbiffens:älgfärsbiffar:älgfärsbiffars:älgfärsbiffarna:älgfärsbiffarnas
+COMPOUND(921080, 598128): älgfärs + biff
+933739r3<substantiv>älggräs:älggräs:älggräs:älggräset:älggräsets:älggräs:älggräs:älggräsen:älggräsens
+933744r4<substantiv>älghorn:älghorn:älghorns:älghornet:älghornets:älghorn:älghorns:älghornen:älghornens
+COMPOUND(552140, 552473): älg + horn
+933750r4<substantiv>älghund:älghund:älghunds:älghunden:älghundens:älghundar:älghundars:älghundarna:älghundarnas
+COMPOUND(552140, 555306): älg + hund
+654800r3<substantiv>älgjakt:älgjakt:älgjakts:älgjakten:älgjaktens:älgjakter:älgjakters:älgjakterna:älgjakternas
+936303r4<substantiv>älgjägare:älgjägare:älgjägares:älgjägaren:älgjägarens:älgjägare:älgjägares:älgjägarna:älgjägarnas
+COMPOUND(552140, 609703): älg + jägare
+933758r4<substantiv>älgkalv:älgkalv:älgkalvs:älgkalven:älgkalvens:älgkalvar:älgkalvars:älgkalvarna:älgkalvarnas
+COMPOUND(552140, 551497): älg + kalv
+654808r4<substantiv>älgko:älgko:älgkos:älgkon:älgkons:älgkor:älgkors:älgkorna:älgkornas
+COMPOUND(552140, 557679): älg + ko
+637498r5<substantiv>älgkramare:älgkramare:älgkramares:älgkramaren, älgkramarn:älgkramarens, älgkramarns:älgkramare:älgkramares:älgkramarna:älgkramarnas
+DEFINITION 1: Djurrättsaktivist som aktivt hindrar älgjakt
+COMPOUND(552140, 637501): älg + kramare
+CUSTOM: y y älgkramar
+891359r3<substantiv>älgkött:älgkött:älgkötts:älgköttet:älgköttets:!:!:!:!
+933766r4<substantiv>älgpass:älgpass:älgpass:älgpasset:älgpassets:älgpass:älgpass:älgpassen:älgpassens
+COMPOUND(552140, 552758): älg + pass
+933771r4<substantiv>älgstam:älgstam:älgstams:älgstammen:älgstammens:älgstammar:älgstammars:älgstammarna:älgstammarnas
+COMPOUND(552140, 619720): älg + stam
+933779r4<substantiv>älgstek:älgstek:älgsteks:älgsteken:älgstekens:älgstekar:älgstekars:älgstekarna:älgstekarnas
+COMPOUND(552140, 551934): älg + stek
+818123r3<substantiv>älgstudsare:älgstudsare:älgstudsares:älgstudsaren:älgstudsarens:älgstudsare:älgstudsares:älgstudsarna:älgstudsarnas
+933788r4<substantiv>älgtest:älgtest:älgtests:älgtestet, älgtesten:älgtestets, älgtestens:älgtest, älgtester:älgtests, älgtesters:älgtesten, älgtesterna:älgtestens, älgtesternas
+COMPOUND(552140, 550663): älg + test
+933799r4<substantiv>älgtjur:älgtjur:älgtjurs:älgtjuren:älgtjurens:älgtjurar:älgtjurars:älgtjurarna:älgtjurarnas
+COMPOUND(552140, 552013): älg + tjur
+930081r3<substantiv>älgört:älgört:älgörts:älgörten:älgörtens:älgörter:älgörters:älgörterna:älgörternas
+733638r3<substantiv>älling:älling:ällings:ällingen:ällingens:ällingar:ällingars:ällingarna:ällingarnas
+554429r3<egennamn>Älmhult:Älmhult:Älmhults
+CUSTOM: y n Älmhults
+548073r4<verb>älska:älska:älskade:älskat:älskar:älska:älskas:älskades:älskats:älskas:älskad:älskat:älskade::
+663080r3<adjektiv>älskad:älskad:älskat:älskade:älskade:!:!:!:
+699419r3<adjektiv>älskande:älskande:älskande:älskande:älskande:!:!:!:
+699420r3<substantiv>älskande:älskande:älskandes:älskandet:älskandets::::
+800851r3<adjektiv>älskansvärd:älskansvärd:älskansvärt:älskansvärda:älskansvärda::::
+615533r4<substantiv>älskare:älskare:älskares:älskaren:älskarens:älskare:älskares:älskarna:älskarnas
+CUSTOM: y y älskar
+654809r3<substantiv>älskarinna:älskarinna:älskarinnas:älskarinnan:älskarinnans:älskarinnor:älskarinnors:älskarinnorna:älskarinnornas
+568556r4<adjektiv>älsklig:älsklig:älskligt:älskliga:älskliga:älskligare:älskligast:älskligaste:älsklige
+699421r3<substantiv>älsklighet:älsklighet:älsklighets:älskligheten:älsklighetens::::
+CUSTOM: y y älsklighets
+654811r3<substantiv>älskling:älskling:älsklings:älsklingen:älsklingens:älsklingar:älsklingars:älsklingarna:älsklingarnas
+CUSTOM: y y älsklings
+623109r4<substantiv>älskog:älskog:älskogs:älskogen:älskogens::::
+CUSTOM: y y älskogs
+818133r3<adjektiv>älskogskrank:älskogskrank:älskogskrankt:älskogskranka:älskogskranka::::älskogskranke
+818137r3<substantiv>älskogslek:älskogslek:älskogsleks:älskogsleken:älskogslekens:älskogslekar:älskogslekars:älskogslekarna:älskogslekarnas
+818145r4<substantiv>älskogsstund:älskogsstund:älskogsstunds:älskogsstunden:älskogsstundens:älskogsstunder:älskogsstunders:älskogsstunderna:älskogsstundernas
+COMPOUND(623109, 550593): älskog + stund
+654812r4<adjektiv>älskvärd:älskvärd:älskvärt:älskvärda:älskvärda:älskvärdare:älskvärdast:älskvärdaste:älskvärde
+654813r4<substantiv>älskvärdhet:älskvärdhet:älskvärdhets:älskvärdheten:älskvärdhetens:älskvärdheter:älskvärdheters:älskvärdheterna:älskvärdheternas
+CUSTOM: y y älskvärdhets
+548074r6<verb>älta:älta:ältade:ältat:ältar:älta:ältas:ältades:ältats:ältas:ältad:ältat:ältade:ältande:älta
+DEFINITION 1: 1. bearbeta kraftfullt\
+2. diskutera något upprepat
+699424r3<substantiv>ältande:ältande:ältandes:ältandet:ältandets::::
+818150r3<substantiv>ältning:ältning:ältnings:ältningen:ältningens::::
+600475r3<substantiv>ältranunkel:ältranunkel:ältranunkels:ältranunkeln:ältranunkelns:ältranunklar:ältranunklars:ältranunklarna:ältranunklarnas
+552142r8<substantiv>älv:älv:älvs:älven:älvens:älvar:älvars:älvarna:älvarnas
+CUSTOM: y n
+629161r3<substantiv>älva:älva:älvas:älvan:älvans:älvor:älvors:älvorna:älvornas
+818154r3<substantiv>älvadans:älvadans:älvadans:älvadansen:älvadansens:älvadanser:älvadansers:älvadanserna:älvadansernas
+552143r3<substantiv>älvbrink:älvbrink:älvbrinks:älvbrinken:älvbrinkens:älvbrinkar:älvbrinkars:älvbrinkarna:älvbrinkarnas
+818161r3<substantiv>älvdal:älvdal:älvdals:älvdalen:älvdalens:älvdalar:älvdalars:älvdalarna:älvdalarnas
+728334r3<egennamn>Älvdalen:Älvdalen:Älvdalens
+CUSTOM: y n Älvdals
+900803r3<substantiv>älvdalska:älvdalska:älvdalskas:älvdalskan:älvdalskans::::
+818169r3<substantiv>älvdans:älvdans:älvdans:älvdansen:älvdansens:älvdanser:älvdansers:älvdanserna:älvdansernas
+818176r3<substantiv>älvfåra:älvfåra:älvfåras:älvfåran:älvfårans:älvfåror:älvfårors:älvfårorna:älvfårornas
+900809r4<substantiv>älvförbindelse:älvförbindelse:älvförbindelses:älvförbindelsen:älvförbindelsens:älvförbindelser:älvförbindelsers:älvförbindelserna:älvförbindelsernas
+COMPOUND(552142, 611872): älv + förbindelse
+728336r3<egennamn>Älvkarleby:Älvkarleby:Älvkarlebys
+CUSTOM: y n Älvkarleby
+818184r3<substantiv>älvkvarn:älvkvarn:älvkvarns:älvkvarnen:älvkvarnens:älvkvarnar:älvkvarnars:älvkvarnarna:älvkvarnarnas
+818192r3<substantiv>älvmynning:älvmynning:älvmynnings:älvmynningen:älvmynningens:älvmynningar:älvmynningars:älvmynningarna:älvmynningarnas
+900819r3<egennamn>Älvsborg:Älvsborg:Älvsborgs
+728338r3<egennamn>Älvsbyn:Älvsbyn:Älvsbyns
+CUSTOM: y n Älvsby
+849643r3<egennamn>Älvsjö:Älvsjö:Älvsjös
+CUSTOM: y n Älvsjö
+818201r4<substantiv>älvstrand:älvstrand:älvstrands:älvstranden:älvstrandens:älvstränder:älvstränders:älvstränderna:älvsträndernas
+COMPOUND(552142, 555660): älv + strand
+900822r4<substantiv>älvsträcka:älvsträcka:älvsträckas:älvsträckan:älvsträckans:älvsträckor:älvsträckors:älvsträckorna:älvsträckornas
+COMPOUND(552142, 559369): älv + sträcka
+818210r3<substantiv>älvutbyggnad:älvutbyggnad:älvutbyggnads:älvutbyggnaden:älvutbyggnadens:älvutbyggnader:älvutbyggnaders:älvutbyggnaderna:älvutbyggnadernas
+570947r4<adjektiv>ämabel:ämabel:ämabelt:ämabla:ämabla::::ämable
+553154r3<substantiv>ämbar:ämbar:ämbars:ämbaret:ämbarets:ämbar:ämbars:ämbaren:ämbarens
+632950r8<substantiv>ämbete:ämbete:ämbetes:ämbetet:ämbetets:ämbeten:ämbetens:ämbetena:ämbetenas
+CUSTOM: y y ämbets
+818219r4<substantiv>ämbetsed:ämbetsed:ämbetseds:ämbetseden:ämbetsedens:ämbetseder:ämbetseders:ämbetsederna:ämbetsedernas
+COMPOUND(632950, 557662): ämbete + ed
+654823r4<substantiv>ämbetsman:ämbetsman:ämbetsmans:ämbetsmannen:ämbetsmannens:ämbetsmän:ämbetsmäns:ämbetsmännen:ämbetsmännens
+COMPOUND(632950, 557796): ämbete + man
+CUSTOM: y y ämbetsmanna
+699426r4<substantiv>ämbetsrum:ämbetsrum:ämbetsrums:ämbetsrummet:ämbetsrummets:ämbetsrum:ämbetsrums:ämbetsrummen:ämbetsrummens
+COMPOUND(632950, 571182): ämbete + rum
+553156r3<substantiv>ämbetsverk:ämbetsverk:ämbetsverks:ämbetsverket:ämbetsverkets:ämbetsverk:ämbetsverks:ämbetsverken:ämbetsverkens
+924430r3<adjektiv>ämlig:ämlig:ämlig:ämlig:ämliga:ämligare:ämligast:ämligste:ämlige:ämligs:ämligs:ämligs:ämligas:ämligares:ämligasts:ämligas:ämliges
+CUSTOM: n n n
+548075r5<verb>ämna:ämna:ämnade:ämnat:ämnar:ämna:ämnas:ämnades:ämnats:ämnas:ämnad:ämnat:ämnade::
+613026r28<substantiv>ämne:ämne:ämnes:ämnet:ämnets:ämnen:ämnens:ämnena:ämnenas
+CUSTOM: y y ämnes +ämnes
+699429r4<substantiv>ämnesförening:ämnesförening:ämnesförenings:ämnesföreningen:ämnesföreningens:ämnesföreningar:ämnesföreningars:ämnesföreningarna:ämnesföreningarnas
+COMPOUND(613026, 551235): ämne + förening
+CUSTOM: y y ämnesförenings
+796918r3<adjektiv>ämnesinriktad:ämnesinriktad:ämnesinriktat:ämnesinriktade:ämnesinriktade:!:!:!:
+699434r4<substantiv>ämnesinriktning:ämnesinriktning:ämnesinriktnings:ämnesinriktningen:ämnesinriktningens:ämnesinriktningar:ämnesinriktningars:ämnesinriktningarna:ämnesinriktningarnas
+COMPOUND(613026, 692388): ämne + inriktning
+CUSTOM: y y ämnesinriktnings
+610245r3<substantiv>ämneslärare:ämneslärare:ämneslärares:ämnesläraren:ämneslärarens:ämneslärare:ämneslärares:ämneslärarna:ämneslärarnas
+CUSTOM: y y ämneslärar
+578534r3<adjektiv>ämnesmässig:ämnesmässig:ämnesmässigt:ämnesmässiga:ämnesmässiga::::
+654824r4<substantiv>ämnesområde:ämnesområde:ämnesområdes:ämnesområdet:ämnesområdets:ämnesområden:ämnesområdens:ämnesområdena:ämnesområdenas
+COMPOUND(613026, 612761): ämne + område
+654825r4<substantiv>ämnesomsättning:ämnesomsättning:ämnesomsättnings:ämnesomsättningen:ämnesomsättningens:!:!:!:!
+COMPOUND(613026, 597365): ämne + omsättning
+CUSTOM: y y ämnesomsättnings
+751434r4<substantiv>ämnesord:ämnesord:ämnesords:ämnesordet:ämnesordets:ämnesord:ämnesords:ämnesorden:ämnesordens
+COMPOUND(613026, 555138): ämne + ord
+900831r4<substantiv>ämnesråd:ämnesråd:ämnesråds:ämnesrådet:ämnesrådets:ämnesråd:ämnesråds:ämnesråden:ämnesrådens
+COMPOUND(613026, 552853): ämne + råd
+900838r3<adverb>ämnesvis:ämnesvis
+557784r3<preposition>än:än
+557783r3<konjunktion>än:än
+557785r3<adverb>än:än
+620407r3<adverb>ända:ända
+595855r5<substantiv>ända:ända:ändas:ändan:ändans:ändor:ändors:ändorna:ändornas
+DEFINITION 1: Kroppens bakdel
+CUSTOM: y y
+548076r3<verb>ända:ända:ändade:ändat:ändar:ända:::::::::
+654826r3<substantiv>ändalykt:ändalykt:ändalykts:ändalykten:ändalyktens::::
+553158r5<substantiv>ändamål:ändamål:ändamåls:ändamålet:ändamålets:ändamål:ändamåls:ändamålen:ändamålens
+CUSTOM: y y ändamåls
+568557r4<adjektiv>ändamålsenlig:ändamålsenlig:ändamålsenligt:ändamålsenliga:ändamålsenliga:ändamålsenligare:ändamålsenligast:ändamålsenligaste:
+699435r3<substantiv>ändamålsenlighet:ändamålsenlighet:ändamålsenlighets:ändamålsenligheten:ändamålsenlighetens::::
+CUSTOM: y y ändamålsenlighets
+565488r3<adjektiv>ändamålslös:ändamålslös:ändamålslöst:ändamålslösa:ändamålslösa::::
+818229r3<substantiv>ändamålslöshet:ändamålslöshet:ändamålslöshets:ändamålslösheten:ändamålslöshetens::::
+786091r4<substantiv>ändamålsurval:ändamålsurval:ändamålsurvals:ändamålsurvalet:ändamålsurvalets:ändamålsurval:ändamålsurvals:ändamålsurvalen:ändamålsurvalens
+COMPOUND(553158, 553081): ändamål + urval
+578537r3<adjektiv>ändamålsvidrig:ändamålsvidrig:ändamålsvidrigt:ändamålsvidriga:ändamålsvidriga::::
+620409r3<deponens>ändas:ändas:ändades:ändats:ändas:
+620410r8<substantiv>ändelse:ändelse:ändelses:ändelsen:ändelsens:ändelser:ändelsers:ändelserna:ändelsernas
+CUSTOM: y y ändelse
+565489r3<adjektiv>ändelselös:ändelselös:ändelselöst:ändelselösa:ändelselösa::::
+620408r16<substantiv>ände, ända:ända, ände:ändas, ändes:ändan, änden:ändans, ändens:ändar:ändars:ändarna:ändarnas
+CUSTOM: y y
+818233r3<substantiv>ändhållplats:ändhållplats:ändhållplats:ändhållplatsen:ändhållplatsens:ändhållplatser:ändhållplatsers:ändhållplatserna:ändhållplatsernas
+568558r3<adjektiv>ändlig:ändlig:ändligt:ändliga:ändliga::::
+654830r3<substantiv>ändlighet:ändlighet:ändlighets:ändligheten:ändlighetens::::
+CUSTOM: y y ändlighets
+684159r3<substantiv>ändläge:ändläge:ändläges:ändläget:ändlägets:ändlägen:ändlägens:ändlägena:ändlägenas
+CUSTOM: y n n
+565492r3<adjektiv>ändlös:ändlös:ändlöst:ändlösa:ändlösa::::
+818240r3<substantiv>ändlöshet:ändlöshet:ändlöshets:ändlösheten:ändlöshetens::::
+989239r3<substantiv>ändmorän:ändmorän:ändmoräns:ändmoränen:ändmoränens:ändmoräner:ändmoräners:ändmoränerna:ändmoränernas
+699436r3<adverb>ändock:ändock
+550813r3<substantiv>ändpunkt:ändpunkt:ändpunkts:ändpunkten:ändpunktens:ändpunkter:ändpunkters:ändpunkterna:ändpunkternas
+548077r5<verb>ändra:ändra:ändrade:ändrat:ändrar:ändra:ändras:ändrades:ändrats:ändras:ändrad:ändrat:ändrade::
+699438r3<substantiv>ändrande:ändrande:ändrandes:ändrandet:ändrandets::::
+676703r4<substantiv>ändrim:ändrim:ändrims:ändrimmet:ändrimmets:ändrim:ändrims:ändrimmen:ändrimmens
+COMPOUND(620408, 621838): ände, ända + rim
+597991r7<substantiv>ändring:ändring:ändrings:ändringen:ändringens:ändringar:ändringars:ändringarna:ändringarnas
+CUSTOM: y y ändrings +ändrings
+654831r4<substantiv>ändringsförslag:ändringsförslag:ändringsförslags:ändringsförslaget:ändringsförslagets:ändringsförslag:ändringsförslags:ändringsförslagen:ändringsförslagens
+COMPOUND(597991, 552414): ändring + förslag
+654837r3<substantiv>ändstation:ändstation:ändstations:ändstationen:ändstationens:ändstationer:ändstationers:ändstationerna:ändstationernas
+CUSTOM: y y ändstations
+963026r4<substantiv>ändstopp:ändstopp:ändstopps:ändstoppet:ändstoppets:ändstopp:ändstopps:ändstoppen:ändstoppens
+COMPOUND(620408, 608140): ände, ända + stopp
+654845r5<substantiv>ändtarm:ändtarm:ändtarms:ändtarmen:ändtarmens:ändtarmar:ändtarmars:ändtarmarna:ändtarmarnas
+COMPOUND(595855, 551995): ända + tarm
+CUSTOM: y y ändtarms
+818244r4<substantiv>ändtarmsöppning:ändtarmsöppning:ändtarmsöppnings:ändtarmsöppningen:ändtarmsöppningens:ändtarmsöppningar:ändtarmsöppningars:ändtarmsöppningarna:ändtarmsöppningarnas
+COMPOUND(654845, 597992): ändtarm + öppning
+620411r3<adverb>ändå:ändå
+552145r8<substantiv>äng:äng:ängs:ängen:ängens:ängar:ängars:ängarna:ängarnas
+CUSTOM: y n ängs
+943279r3<egennamn>Ängbyplan:Ängbyplan:Ängbyplans
+550815r3<substantiv>ängd:ängd:ängds:ängden:ängdens:ängder:ängders:ängderna:ängdernas
+CUSTOM: n n y
+905111r3<substantiv>änge:änge:änges:änget:ängets:ängen:ängens:ängena:ängenas
+CUSTOM: n n y
+620412r5<substantiv>ängel:ängel:ängels:ängeln:ängelns:änglar:änglars:änglarna:änglarnas
+CUSTOM: y y ängla
+554430r3<egennamn>Ängelholm:Ängelholm:Ängelholms
+CUSTOM: y n Ängelholms
+964513r3<substantiv>ängelholmare:ängelholmare:ängelholmares:ängelholmaren:ängelholmarens:ängelholmare:ängelholmares:ängelholmarna:ängelholmarnas
+892635r3<substantiv>ängelholmsbo:ängelholmsbo:ängelholmsbos:ängelholmsbon:ängelholmsbons:ängelholmsbor:ängelholmsbors:ängelholmsborna:ängelholmsbornas
+553160r3<substantiv>änglabarn:änglabarn:änglabarns:änglabarnet:änglabarnets:änglabarn:änglabarns:änglabarnen:änglabarnens
+801946r3<adjektiv>änglagod:änglagod:änglagott:änglagoda:änglagoda::::
+CUSTOM: y n n
+550817r3<substantiv>änglakör:änglakör:änglakörs:änglakören:änglakörens:änglakörer:änglakörers:änglakörerna:änglakörernas
+654846r3<adjektiv>änglalik:änglalik:änglalikt:änglalika:änglalika:!:!:!:änglalike
+818245r3<substantiv>änglamakerska:änglamakerska:änglamakerskas:änglamakerskan:änglamakerskans:änglamakerskor:änglamakerskors:änglamakerskorna:änglamakerskornas
+882758r4<adjektiv>änglaren:änglaren:änglarent:änglarena:änglarena::::::::::::
+COMPOUND(620412, 563124): ängel + ren
+847390r3<adjektiv>änglaskön:änglaskön:änglaskönt:änglasköna:änglasköna::::
+654848r3<substantiv>änglavakt:änglavakt:änglavakts:änglavakten:änglavaktens:!:!:!:!
+654850r4<substantiv>änglavinge:änglavinge:änglavinges:änglavingen:änglavingens:änglavingar:änglavingars:änglavingarna:änglavingarnas
+COMPOUND(620412, 600024): ängel + vinge
+796921r3<adjektiv>ängsartad:ängsartad:ängsartat:ängsartade:ängsartade:!:!:!:
+654858r3<substantiv>ängsgröe:ängsgröe:ängsgröes:ängsgröet:ängsgröets::::
+548078r4<verb>ängsla:ängsla:ängslade:ängslat:ängslar:ängsla:ängslas:ängslades:ängslats:ängslas:::::
+654862r3<substantiv>ängslan:ängslan:ängslans:ängslan:ängslans:!:!:!:!
+591795r3<deponens>ängslas:ängslas:ängslades:ängslats:ängslas:ängslas
+568559r4<adjektiv>ängslig:ängslig:ängsligt:ängsliga:ängsliga:ängsligare:ängsligast:ängsligaste:ängslige
+818253r3<substantiv>ängslighet:ängslighet:ängslighets:ängsligheten:ängslighetens::::
+751440r4<substantiv>ängsmark:ängsmark:ängsmarks:ängsmarken:ängsmarkens:ängsmarker:ängsmarkers:ängsmarkerna:ängsmarkernas
+COMPOUND(552145, 549995): äng + mark
+595861r3<substantiv>ängsnejlika:ängsnejlika:ängsnejlikas:ängsnejlikan:ängsnejlikans:ängsnejlikor:ängsnejlikors:ängsnejlikorna:ängsnejlikornas
+595870r3<substantiv>ängsruta:ängsruta:ängsrutas:ängsrutan:ängsrutans:ängsrutor:ängsrutors:ängsrutorna:ängsrutornas
+595878r3<substantiv>ängssyra:ängssyra:ängssyras:ängssyran:ängssyrans:ängssyror:ängssyrors:ängssyrorna:ängssyrornas
+819286r3<substantiv>ängsull:ängsull:ängsulls:ängsullen:ängsullens::::
+989247r3<substantiv>ängsvädd:ängsvädd:ängsvädds:ängsvädden:ängsväddens::::
+595886r5<substantiv>änka:änka:änkas:änkan:änkans:änkor:änkors:änkorna:änkornas
+CUSTOM: y y änke
+699440r4<substantiv>änkedok:änkedok:änkedoks:änkedoket:änkedokets:änkedok:änkedoks:änkedoken:änkedokens
+654863r3<substantiv>änkefru:änkefru:änkefrus:änkefrun:änkefruns:änkefruar:änkefruars:änkefruarna:änkefruarnas
+654871r4<substantiv>änkeman:änkeman:änkemans:änkemannen:änkemannens:änkemän:änkemäns:änkemännen:änkemännens
+COMPOUND(595886, 557796): änka + man
+654876r3<substantiv>änkepension:änkepension:änkepensions:änkepensionen:änkepensionens::::
+654880r3<substantiv>änkestöt:änkestöt:änkestöts:änkestöten:änkestötens:änkestötar:änkestötars:änkestötarna:änkestötarnas
+758699r4<substantiv>änkeår:änkeår:änkeårs:änkeåret:änkeårets:änkeår:änkeårs:änkeåren:änkeårens
+COMPOUND(595886, 553140): änka + år
+552146r4<substantiv>änkling:änkling:änklings:änklingen:änklingens:änklingar:änklingars:änklingarna:änklingarnas
+CUSTOM: y y änklings
+758705r4<substantiv>änklingspension:änklingspension:änklingspensions:änklingspensionen:änklingspensionens:änklingspensioner:änklingspensioners:änklingspensionerna:änklingspensionernas
+COMPOUND(552146, 550185): änkling + pension
+623217r4<substantiv>änne:änne:ännes:ännet:ännets:ännen:ännens:ännena:ännenas
+CUSTOM: n n y
+627724r3<adjektiv>ännig:ännig:ännigt:änniga:änniga:ännigare:ännigast:ännigaste:ännige
+CUSTOM: n n n
+620413r3<adverb>ännu:ännu
+818257r3<substantiv>änterbila:änterbila:änterbilas:änterbilan:änterbilans:änterbilor:änterbilors:änterbilorna:änterbilornas
+758706r3<substantiv>änterhake:änterhake:änterhakes:änterhaken:änterhakens:änterhakar:änterhakars:änterhakarna:änterhakarnas
+620414r3<adverb>äntligen:äntligen
+548079r4<verb>äntra:äntra:äntrade:äntrat:äntrar:äntra:äntras:äntrades:äntrats:äntras:äntrad:äntrat:äntrade::
+654888r3<substantiv>äntring:äntring:äntrings:äntringen:äntringens:äntringar:äntringars:äntringarna:äntringarnas
+CUSTOM: y y äntrings
+950445r6<substantiv>äppelblom:äppelblom:äppelbloms:äppelblommen:äppelblommens::::
+COMPOUND(555606, 624103): äpple + blom
+900842r4<substantiv>äppelcider::::::::
+COMPOUND(555606, 625139): äpple + cider
+CUSTOM: y y äppelcider
+900840r4<substantiv>äppelcidervinäger:äppelcidervinäger:äppelcidervinägers:äppelcidervinägern:äppelcidervinägerns::::
+COMPOUND(900842, 758680): äppelcider + vinäger
+654896r4<substantiv>äppelkaka:äppelkaka:äppelkakas:äppelkakan:äppelkakans:äppelkakor:äppelkakors:äppelkakorna:äppelkakornas
+COMPOUND(555606, 555243): äpple + kaka
+701997r6<substantiv>äppelkart:äppelkart:äppelkarts:äppelkarten:äppelkartens:äppelkartar:äppelkartars:äppelkartarna:äppelkartarnas
+COMPOUND(555606, 561117): äpple + kart
+758714r3<adjektiv>äppelkindad:äppelkindad:äppelkindat:äppelkindade:äppelkindade:!:!:!:
+818265r3<substantiv>äppelknyckarbyxor:::::äppelknyckarbyxor:äppelknyckarbyxors:äppelknyckarbyxorna:äppelknyckarbyxornas
+847393r3<adjektiv>äppelkäck:äppelkäck:äppelkäckt:äppelkäcka:äppelkäcka::::äppelkäcke
+654898r6<substantiv>äppelkärna:äppelkärna:äppelkärnas:äppelkärnan:äppelkärnans:äppelkärnor:äppelkärnors:äppelkärnorna:äppelkärnornas
+COMPOUND(555606, 556260): äpple + kärna
+673381r4<substantiv>äppelmos:äppelmos:äppelmos:äppelmoset:äppelmosets::::
+COMPOUND(555606, 623256): äpple + mos
+550819r11<substantiv>äppelpaj:äppelpaj:äppelpajs:äppelpajen:äppelpajens:äppelpajer:äppelpajers:äppelpajerna:äppelpajernas
+818269r3<substantiv>äppelskrott:äppelskrott:äppelskrotts:äppelskrotten:äppelskrottens:äppelskrottar:äppelskrottars:äppelskrottarna:äppelskrottarnas
+900854r4<substantiv>äppelskrutt:äppelskrutt:äppelskrutts:äppelskruttet, äppelskrutten:äppelskruttets, äppelskruttens::::
+COMPOUND(555606, 900847): äpple + skrutt
+654906r3<substantiv>äppelskörd:äppelskörd:äppelskörds:äppelskörden:äppelskördens::::
+953622r4<substantiv>äppelsyra:äppelsyra:äppelsyras:äppelsyran:äppelsyrans:äppelsyror:äppelsyrors:äppelsyrorna:äppelsyrornas
+COMPOUND(555606, 624847): äpple + syra
+608509r4<substantiv>äppelträd:äppelträd:äppelträds:äppelträdet:äppelträdets:äppelträd:äppelträds:äppelträden:äppelträdens
+COMPOUND(555606, 553066): äpple + träd
+919364r4<substantiv>äppelvin:äppelvin:äppelvins:äppelvinet:äppelvinets:äppelviner:äppelviners:äppelvinerna:äppelvinernas
+COMPOUND(555606, 600515): äpple + vin
+555606r18<substantiv>äpple:äpple:äpples:äpplet:äpplets:äpplen:äpplens:äpplena:äpplenas
+BASEWORDS: äppel
+CUSTOM: y y äppel
+548080r5<verb>ära:ära:ärade:ärat:ärar:ära:äras:ärades:ärats:äras:ärad:ärat:ärade::
+CUSTOM: y n
+620415r4<substantiv>ära:ära:äras:äran:ärans::::
+CUSTOM: y n
+633510r4<adjektiv>ärad:ärad:ärat:ärade:ärade::::ärade
+570579r4<adjektiv>ärbar:ärbar:ärbart:ärbara:ärbara:ärbarare:ärbarast:ärbaraste:ärbare
+620416r3<substantiv>ärbarhet:ärbarhet:ärbarhets:ärbarheten:ärbarhetens::::
+CUSTOM: y y ärbarhets
+733630r4<substantiv>ärebetygelse:ärebetygelse:ärebetygelses:ärebetygelsen:ärebetygelsens:ärebetygelser:ärebetygelsers:ärebetygelserna:ärebetygelsernas
+COMPOUND(548080, 617376): ära + betygelse
+578540r4<adjektiv>äregirig:äregirig:äregirigt:äregiriga:äregiriga:äregirigare:äregirigast:äregirigaste:äregirige
+818277r3<substantiv>äregirighet:äregirighet:äregirighets:äregirigheten:äregirighetens::::
+758721r5<verb>ärekränka:ärekränka:ärekränkte:ärekränkt:ärekränker:ärekränk:ärekränkas:ärekränktes:ärekränkts:ärekränks, ärekränkes:ärekränkt:ärekränkt:ärekränkta:ärekränkande:
+COMPOUND(620415, 636115): ära + kränka
+620420r4<substantiv>ärekränkning:ärekränkning:ärekränknings:ärekränkningen:ärekränkningens:ärekränkningar:ärekränkningars:ärekränkningarna:ärekränkningarnas
+CUSTOM: y y ärekränknings
+620421r3<adjektiv>ärelysten:ärelysten:ärelystet:ärelystna:ärelystna::::ärelystne
+620423r3<substantiv>ärelystnad:ärelystnad:ärelystnads:ärelystnaden:ärelystnadens::::
+565493r3<adjektiv>ärelös:ärelös:ärelöst:ärelösa:ärelösa::::
+818282r3<substantiv>ärelöshet:ärelöshet:ärelöshets:ärelösheten:ärelöshetens::::
+751448r3<substantiv>äreminne:äreminne:äreminnes:äreminnet:äreminnets:äreminnen:äreminnens:äreminnena:äreminnenas
+560759r8<substantiv>ärende:ärende:ärendes:ärendet:ärendets:ärenden:ärendens:ärendena:ärendenas
+CUSTOM: y y ärende
+771199r4<substantiv>ärendehandläggning:ärendehandläggning:ärendehandläggnings:ärendehandläggningen:ärendehandläggningens:ärendehandläggningar:ärendehandläggningars:ärendehandläggningarna:ärendehandläggningarnas
+COMPOUND(560759, 644697): ärende + handläggning
+771190r4<substantiv>ärendehantering:ärendehantering:ärendehanterings:ärendehanteringen:ärendehanteringens:ärendehanteringar:ärendehanteringars:ärendehanteringarna:ärendehanteringarnas
+COMPOUND(560759, 632084): ärende + hantering
+771208r3<substantiv>ärendelista:ärendelista:ärendelistas:ärendelistan:ärendelistans:ärendelistor:ärendelistors:ärendelistorna:ärendelistornas
+552147r3<substantiv>äreport:äreport:äreports:äreporten:äreportens:äreportar:äreportars:äreportarna:äreportarnas
+818286r3<substantiv>äreräddning:äreräddning:äreräddnings:äreräddningen:äreräddningens::::
+578543r3<adjektiv>ärerörig:ärerörig:ärerörigt:äreröriga:äreröriga::::
+818290r3<substantiv>äresak:äresak:äresaks:äresaken:äresakens:äresaker:äresakers:äresakerna:äresakernas
+559271r4<substantiv>ärevarv:ärevarv:ärevarvs:ärevarvet:ärevarvets:ärevarv:ärevarvs:ärevarven:ärevarvens
+578546r4<adjektiv>ärevördig:ärevördig:ärevördigt:ärevördiga:ärevördiga:ärevördigare:ärevördigast:ärevördigaste:ärevördige
+818302r3<substantiv>ärevördighet:ärevördighet:ärevördighets:ärevördigheten:ärevördighetens::::
+568563r3<adjektiv>ärftlig:ärftlig:ärftligt:ärftliga:ärftliga::::
+654912r3<substantiv>ärftlighet:ärftlighet:ärftlighets:ärftligheten:ärftlighetens::::
+CUSTOM: y y ärftlighets
+629242r3<substantiv>ärg:ärg:ärgs:ärgen:ärgens:!:!:!:!
+CUSTOM: n n y
+629246r4<verb>ärga:ärga:ärgade:ärgat:ärgar:ärga:ärgas:ärgades:ärgats:ärgas:ärgad:ärgat:ärgade:ärgande:
+758732r3<adjektiv>ärggrön:ärggrön:ärggrönt:ärggröna:ärggröna::::
+578547r3<adjektiv>ärgig:ärgig:ärgigt:ärgiga:ärgiga::::
+CUSTOM: y n
+633755r5<substantiv>äril:äril:ärils:ärilen:ärilens:ärilar:ärilars:ärilarna:ärilarnas
+CUSTOM: n n y
+654916r3<substantiv>ärkebiskop:ärkebiskop:ärkebiskops:ärkebiskopen:ärkebiskopens:ärkebiskopar:ärkebiskopars:ärkebiskoparna:ärkebiskoparnas
+CUSTOM: y y ärkebiskops
+568564r3<adjektiv>ärkebiskoplig:ärkebiskoplig:ärkebiskopligt:ärkebiskopliga:ärkebiskopliga::::
+818306r3<substantiv>ärkebiskopsdöme:ärkebiskopsdöme:ärkebiskopsdömes:ärkebiskopsdömet:ärkebiskopsdömets:ärkebiskopsdömen:ärkebiskopsdömens:ärkebiskopsdömena:ärkebiskopsdömenas
+818314r3<substantiv>ärkebov:ärkebov:ärkebovs:ärkeboven:ärkebovens:ärkebovar:ärkebovars:ärkebovarna:ärkebovarnas
+654922r3<substantiv>ärkefiende:ärkefiende:ärkefiendes:ärkefienden:ärkefiendens:ärkefiender:ärkefienders:ärkefienderna:ärkefiendernas
+654930r3<substantiv>ärkehertig:ärkehertig:ärkehertigs:ärkehertigen:ärkehertigens:ärkehertigar:ärkehertigars:ärkehertigarna:ärkehertigarnas
+818322r3<adjektiv>ärkekonservativ:ärkekonservativ:ärkekonservativt:ärkekonservativa:ärkekonservativa::::ärkekonservative
+654938r3<substantiv>ärkelymmel:ärkelymmel:ärkelymmels:ärkelymmeln:ärkelymmelns:ärkelymlar:ärkelymlars:ärkelymlarna:ärkelymlarnas
+654946r3<substantiv>ärkenöt:ärkenöt:ärkenöts:ärkenötet:ärkenötets::::
+818326r3<adjektiv>ärkereaktionär:ärkereaktionär:ärkereaktionärt:ärkereaktionära:ärkereaktionära::::
+751456r3<substantiv>ärkerival:ärkerival:ärkerivals:ärkerivalen:ärkerivalens:ärkerivaler:ärkerivalers:ärkerivalerna:ärkerivalernas
+584883r4<adjektiv>ärkeromantisk:ärkeromantisk:ärkeromantiskt:ärkeromantiska:ärkeromantiska::::ärkeromantiske
+818330r3<substantiv>ärkeskojare:ärkeskojare:ärkeskojares:ärkeskojaren:ärkeskojarens:ärkeskojare:ärkeskojares:ärkeskojarna:ärkeskojarnas
+654950r3<substantiv>ärkeskurk:ärkeskurk:ärkeskurks:ärkeskurken:ärkeskurkens:ärkeskurkar:ärkeskurkars:ärkeskurkarna:ärkeskurkarnas
+957881r3<substantiv>ärkestift:ärkestift:ärkestifts:ärkestiftet:ärkestiftets:ärkestift:ärkestifts:ärkestiften:ärkestiftens
+654958r3<substantiv>ärkeängel:ärkeängel:ärkeängels:ärkeängeln:ärkeängelns:ärkeänglar:ärkeänglars:ärkeänglarna:ärkeänglarnas
+622820r4<substantiv>ärla:ärla:ärlas:ärlan:ärlans:ärlor:ärlors:ärlorna:ärlornas
+CUSTOM: n n y
+568567r4<adjektiv>ärlig:ärlig:ärligt:ärliga:ärliga:ärligare:ärligast:ärligaste:ärlige
+654960r3<adverb>ärligen:ärligen
+654961r3<substantiv>ärlighet:ärlighet:ärlighets:ärligheten:ärlighetens:!:!:!:!
+CUSTOM: y y ärlighets
+552149r11<substantiv>ärm:ärm:ärms:ärmen:ärmens:ärmar:ärmars:ärmarna:ärmarnas
+818336r3<substantiv>ärmhål:ärmhål:ärmhåls:ärmhålet:ärmhålets:ärmhål:ärmhåls:ärmhålen:ärmhålens
+818342r3<substantiv>ärmhållare:ärmhållare:ärmhållares:ärmhållaren:ärmhållarens:ärmhållare:ärmhållares:ärmhållarna:ärmhållarnas
+818348r3<substantiv>ärmlinning:ärmlinning:ärmlinnings:ärmlinningen:ärmlinningens:ärmlinningar:ärmlinningars:ärmlinningarna:ärmlinningarnas
+818356r3<substantiv>ärmlängd:ärmlängd:ärmlängds:ärmlängden:ärmlängdens:ärmlängder:ärmlängders:ärmlängderna:ärmlängdernas
+565494r3<adjektiv>ärmlös:ärmlös:ärmlöst:ärmlösa:ärmlösa::::
+654963r4<verb>ärna:ärna:ärnade:ärnat:ärnar:ärna:ärnas:ärnades:ärnats:ärnas:ärnad:ärnat:ärnade:ärnande:
+CUSTOM: n n y
+585205r4<adjektiv>ärofull:ärofull:ärofullt:ärofulla:ärofulla:ärofullare:ärofullast:ärofullaste:
+818368r3<adjektiv>ärofylld:ärofylld:ärofyllt:ärofyllda:ärofyllda::::
+654964r4<adjektiv>ärorik:ärorik:ärorikt:ärorika:ärorika:ärorikare:ärorikast:ärorikaste:ärorike
+553162r4<substantiv>ärr:ärr:ärrs:ärret:ärrets:ärr:ärrs:ärren:ärrens
+895659r3<verb>ärra:ärra:ärrade:ärrat:ärrar:ärra:ärras:ärrades:ärrats:ärras:ärrad:ärrat:ärrade:ärrande:!
+CUSTOM: n n y
+627733r3<adjektiv>ärrad:ärrad:ärrat:ärrade:ärrade:!:!:!:
+758735r3<substantiv>ärrbildning:ärrbildning:ärrbildnings:ärrbildningen:ärrbildningens:ärrbildningar:ärrbildningars:ärrbildningarna:ärrbildningarnas
+578550r4<adjektiv>ärrig:ärrig:ärrigt:ärriga:ärriga:ärrigare:ärrigast:ärrigaste:ärrige
+818376r3<substantiv>ärrighet:ärrighet:ärrighets:ärrigheten:ärrighetens::::
+818380r3<substantiv>ärrvävnad:ärrvävnad:ärrvävnads:ärrvävnaden:ärrvävnadens:ärrvävnader:ärrvävnaders:ärrvävnaderna:ärrvävnadernas
+604190r4<substantiv>ärt:ärt:ärts:ärten:ärtens:ärter:ärters:ärterna:ärternas
+CUSTOM: y n
+555142r3<substantiv>ärta:ärta:ärtas:ärtan:ärtans:ärtor:ärtors:ärtorna:ärtornas
+758743r3<substantiv>ärtbalja:ärtbalja:ärtbaljas:ärtbaljan:ärtbaljans:ärtbaljor:ärtbaljors:ärtbaljorna:ärtbaljornas
+818388r3<substantiv>ärtburk:ärtburk:ärtburks:ärtburken:ärtburkens:ärtburkar:ärtburkars:ärtburkarna:ärtburkarnas
+818396r3<substantiv>ärtbuske:ärtbuske:ärtbuskes:ärtbusken:ärtbuskens:ärtbuskar:ärtbuskars:ärtbuskarna:ärtbuskarnas
+818404r3<substantiv>ärtbössa:ärtbössa:ärtbössas:ärtbössan:ärtbössans:ärtbössor:ärtbössors:ärtbössorna:ärtbössornas
+818412r3<adjektiv>ärtgrön:ärtgrön:ärtgrönt:ärtgröna:ärtgröna::::
+799054r3<adjektiv>ärtgul:ärtgul:ärtgult:ärtgula:ärtgula::::
+725103r4<substantiv>ärthjärna:ärthjärna:ärthjärnas:ärthjärnan:ärthjärnans:ärthjärnor:ärthjärnors:ärthjärnorna:ärthjärnornas
+COMPOUND(604190, 555227): ärt + hjärna
+578551r4<adjektiv>ärtig:ärtig:ärtigt:ärtiga:ärtiga:ärtigare:ärtigast:ärtigaste:ärtige
+818419r3<substantiv>ärtighet:ärtighet:ärtighets:ärtigheten:ärtighetens::::
+818423r3<substantiv>ärtpuré:ärtpuré:ärtpurés:ärtpurén:ärtpuréns:ärtpuréer:ärtpuréers:ärtpuréerna:ärtpuréernas
+818431r3<substantiv>ärtskida:ärtskida:ärtskidas:ärtskidan:ärtskidans:ärtskidor:ärtskidors:ärtskidorna:ärtskidornas
+654968r4<substantiv>ärtsoppa:ärtsoppa:ärtsoppas:ärtsoppan:ärtsoppans:ärtsoppor:ärtsoppors:ärtsopporna:ärtsoppornas
+818439r3<adjektiv>ärtstor:ärtstor:ärtstort:ärtstora:ärtstora::::
+989251r3<substantiv>ärtsångare:ärtsångare:ärtsångares:ärtsångaren:ärtsångarens:ärtsångare:ärtsångares:ärtsångarna:ärtsångarnas
+550821r3<substantiv>ärtväxt:ärtväxt:ärtväxts:ärtväxten:ärtväxtens:ärtväxter:ärtväxters:ärtväxterna:ärtväxternas
+585807r5<verb>ärva:ärva:ärvde:ärvt:ärver:ärv:ärvas:ärvdes:ärvts:ärvs, ärves:ärvd:ärvt:ärvda:ärvande:
+629172r3<interjektion>äsch:äsch
+548081r5<verb>äska:äska:äskade:äskat:äskar:äska:äskas:äskades:äskats:äskas:äskad:äskat:äskade::
+DEFINITION 1: begära, främst avseende ekonomiska resurser
+699444r4<substantiv>äskande:äskande:äskandes:äskandet:äskandets:äskanden:äskandens:äskandena:äskandenas
+639258r5<substantiv>äsping:äsping:äspings:äspingen:äspingens:äspingar:äspingars:äspingarna:äspingarnas
+DEFINITION 1: huggormshona, alt. huggormsunge
+558417r8<substantiv>äss, ess:ess, äss:ess, äss:esset, ässet:essets, ässets:ess, äss:ess, äss:essen, ässen:essens, ässens
+649965r12<substantiv>ässja:ässja:ässjas:ässjan:ässjans:ässjor:ässjors:ässjorna:ässjornas
+DEFINITION 1: Smedens eldstad, eldas oftast med koks, kan vara mobil.
+555238r11<verb>äta:äta:åt:ätit:äter:ät:ätas:åts:ätits:äts:äten:ätet:ätna:ätande:
+CUSTOM: y n
+751465r3<substantiv>ätande:ätande:ätandes:ätandet:ätandets::::
+570580r3<adjektiv>ätbar:ätbar:ätbart:ätbara:ätbara::::
+818444r3<substantiv>ätbarhet:ätbarhet:ätbarhets:ätbarheten:ätbarhetens:ätbarheter:ätbarheters:ätbarheterna:ätbarheternas
+578554r3<adjektiv>ätfärdig:ätfärdig:ätfärdigt:ätfärdiga:ätfärdiga::::
+568568r3<adjektiv>ätlig:ätlig:ätligt:ätliga:ätliga::::
+654970r4<substantiv>ätlighet:ätlighet:ätlighets:ätligheten:ätlighetens:ätligheter:ätligheters:ätligheterna:ätligheternas
+CUSTOM: y y ätlighets
+818457r3<adjektiv>ätmogen:ätmogen:ätmoget:ätmogna:ätmogna::::
+818461r4<substantiv>ätning:ätning:ätnings:ätningen:ätningens::::
+654974r3<substantiv>ätpinne:ätpinne:ätpinnes:ätpinnen:ätpinnens:ätpinnar:ätpinnars:ätpinnarna:ätpinnarnas
+945911r3<egennamn>Ätran:Ätran:Ätrans
+706553r3<substantiv>ätstörning:ätstörning:ätstörnings:ätstörningen:ätstörningens:ätstörningar:ätstörningars:ätstörningarna:ätstörningarnas
+550823r7<substantiv>ätt:ätt:ätts:ätten:ättens:ätter:ätters:ätterna:ätternas
+CUSTOM: y n
+989257r3<substantiv>ättartal:ättartal:ättartals:ättartalet:ättartalets:ättartal:ättartals:ättartalen:ättartalens
+818465r3<substantiv>ättartavla:ättartavla:ättartavlas:ättartavlan:ättartavlans:ättartavlor:ättartavlors:ättartavlorna:ättartavlornas
+758757r4<substantiv>ättefader:ättefader, ättefar:ättefaders, ättefars:ättefadern:ättefaderns:ättefäder:ättefäders:ättefäderna:ättefädernas
+COMPOUND(550823, 558559): ätt + far, fader
+CUSTOM: y n n
+758767r3<substantiv>ättehög:ättehög:ättehögs:ättehögen:ättehögens:ättehögar:ättehögars:ättehögarna:ättehögarnas
+758751r3<substantiv>ätteled:ätteled:ätteleds:ätteledet:ätteledets:ätteled:ätteleds:ätteleden:ätteledens
+654982r3<substantiv>ättelägg:ättelägg:ätteläggs:ätteläggen:ätteläggens:ätteläggar:ätteläggars:ätteläggarna:ätteläggarnas
+818473r3<substantiv>ättelängd:ättelängd:ättelängds:ättelängden:ättelängdens:ättelängder:ättelängders:ättelängderna:ättelängdernas
+989263r3<substantiv>ättesaga:ättesaga:ättesagas:ättesagan:ättesagans:ättesagor:ättesagors:ättesagorna:ättesagornas
+CUSTOM: y n
+989273r3<substantiv>ättesamhälle:ättesamhälle:ättesamhälles:ättesamhället:ättesamhällets:ättesamhällen:ättesamhällens:ättesamhällena:ättesamhällenas
+751469r3<substantiv>ättestupa:ättestupa:ättestupas:ättestupan:ättestupans:ättestupor:ättestupors:ättestuporna:ättestupornas
+758775r3<substantiv>ättetavla:ättetavla:ättetavlas:ättetavlan:ättetavlans:ättetavlor:ättetavlors:ättetavlorna:ättetavlornas
+654990r7<substantiv>ättika:ättika:ättikas:ättikan:ättikans:!:!:!:!
+CUSTOM: y y ättik ättiks
+955928r4<substantiv>ättikester:ättikester:ättikesters:ättikestern:ättikesterns:ättikestrar:ättikestrars:ättikestrarna:ättikestrarnas
+COMPOUND(654990, 636689): ättika + ester
+758783r4<substantiv>ättiksgurka:ättiksgurka:ättiksgurkas:ättiksgurkan:ättiksgurkans:ättiksgurkor:ättiksgurkors:ättiksgurkorna:ättiksgurkornas
+COMPOUND(654990, 555235): ättika + gurka
+771706r3<substantiv>ättiksinläggning:ättiksinläggning:ättiksinläggnings:ättiksinläggningen:ättiksinläggningens:ättiksinläggningar:ättiksinläggningars:ättiksinläggningarna:ättiksinläggningarnas
+719512r4<substantiv>ättiksprit:ättiksprit:ättiksprits:ättikspriten:ättikspritens::::
+COMPOUND(654990, 555157): ättika + sprit
+847523r3<adjektiv>ättikssur:ättikssur:ättikssurt:ättikssura:ättikssura::::
+847397r3<adjektiv>ättiksur:ättiksur:ättiksurt:ättiksura:ättiksura::::
+659460r4<substantiv>ättiksyra:ättiksyra:ättiksyras:ättiksyran:ättiksyrans:ättiksyror:ättiksyrors:ättiksyrorna:ättiksyrornas
+COMPOUND(654990, 624847): ättika + syra
+CUSTOM: y y ättiksyra
+796924r3<adjektiv>ättiksyrad:ättiksyrad:ättiksyrat:ättiksyrade:ättiksyrade:!:!:!:
+818481r3<substantiv>ättled:ättled:ättleds:ättledet:ättledets:ättled:ättleds:ättleden:ättledens
+818487r3<substantiv>ättledning:ättledning:ättlednings:ättledningen:ättledningens:ättledningar:ättledningars:ättledningarna:ättledningarnas
+654994r3<substantiv>ättling:ättling:ättlings:ättlingen:ättlingens:ättlingar:ättlingars:ättlingarna:ättlingarnas
+818495r3<substantiv>ättlängd:ättlängd:ättlängds:ättlängden:ättlängdens:ättlängdar:ättlängdars:ättlängdarna:ättlängdarnas
+989281r3<substantiv>ätäpple:ätäpple:ätäpples:ätäpplet:ätäpplets:ätäpplen:ätäpplens:ätäpplena:ätäpplenas
+615033r3<adverb>även:även
+615034r3<adverb>ävenledes:ävenledes
+615035r3<konjunktion>ävensom:ävensom
+615036r3<adverb>ävenså:ävenså
+553164r6<substantiv>äventyr:äventyr:äventyrs:äventyret:äventyrets:äventyr:äventyrs:äventyren:äventyrens
+CUSTOM: y y äventyrs
+548082r5<verb>äventyra:äventyra:äventyrade:äventyrat:äventyrar:äventyra:äventyras:äventyrades:äventyrats:äventyras:äventyrad:äventyrat:äventyrade::
+699447r3<substantiv>äventyrande:äventyrande:äventyrandes:äventyrandet:äventyrandets::::
+615037r3<substantiv>äventyrare:äventyrare:äventyrares:äventyraren:äventyrarens:äventyrare:äventyrares:äventyrarna:äventyrarnas
+CUSTOM: y y äventyrar
+818503r3<substantiv>äventyrerska:äventyrerska:äventyrerskas:äventyrerskan:äventyrerskans:äventyrerskor:äventyrerskors:äventyrerskorna:äventyrerskornas
+568569r4<adjektiv>äventyrlig:äventyrlig:äventyrligt:äventyrliga:äventyrliga:äventyrligare:äventyrligast:äventyrligaste:äventyrlige
+751477r3<substantiv>äventyrlighet:äventyrlighet:äventyrlighets:äventyrligheten:äventyrlighetens:äventyrligheter:äventyrligheters:äventyrligheterna:äventyrligheternas
+654996r4<substantiv>äventyrsberättelse:äventyrsberättelse:äventyrsberättelses:äventyrsberättelsen:äventyrsberättelsens:äventyrsberättelser:äventyrsberättelsers:äventyrsberättelserna:äventyrsberättelsernas
+COMPOUND(553164, 611837): äventyr + berättelse
+CUSTOM: y y äventyrsberättelse
+699449r4<substantiv>äventyrslust:äventyrslust:äventyrslusts:äventyrslusten:äventyrslustens::::
+COMPOUND(553164, 560172): äventyr + lust
+699453r4<substantiv>äventyrslusta:äventyrslusta:äventyrslustas:äventyrslustan:äventyrslustans::::
+COMPOUND(553164, 560174): äventyr + lusta
+615038r3<adjektiv>äventyrslysten:äventyrslysten:äventyrslystet:äventyrslystna:äventyrslystna::::
+615041r3<substantiv>äventyrsroman:äventyrsroman:äventyrsromans:äventyrsromanen:äventyrsromanens:äventyrsromaner:äventyrsromaners:äventyrsromanerna:äventyrsromanernas
+615049r3<substantiv>ävja:ävja:ävjas:ävjan:ävjans::::
+CUSTOM: n n y
+654999r4<substantiv>ävlan:ävlan:ävlans:ävlan:ävlans:!:!:!:!
+655001r3<deponens>ävlas:ävlas:ävlades:ävlats:ävlas:
+615053r3<substantiv>äxing:äxing:äxings:äxingen:äxingens:äxingar:äxingars:äxingarna:äxingarnas
+5566

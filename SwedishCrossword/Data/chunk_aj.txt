@@ -1,0 +1,648 @@
+lleriofficerarnas
+COMPOUND(614592, 603028): artilleri + officer
+966833r4<substantiv>artilleripråm:artilleripråm:artilleripråms:artilleripråmen:artilleripråmens:artilleripråmar:artilleripråmars:artilleripråmarna:artilleripråmarnas
+COMPOUND(614592, 624633): artilleri + pråm
+686961r4<substantiv>artillerist:artillerist:artillerists:artilleristen:artilleristens:artillerister:artilleristers:artilleristerna:artilleristernas
+CUSTOM: y y artillerist
+874139r4<substantiv>artilleristuniform:artilleristuniform:artilleristuniforms:artilleristuniformen:artilleristuniformens:artilleristuniformer:artilleristuniformers:artilleristuniformerna:artilleristuniformernas
+COMPOUND(686961, 550733): artillerist + uniform
+CUSTOM: y n
+605396r16<substantiv>artist:artist:artists:artisten:artistens:artister:artisters:artisterna:artisternas
+CUSTOM: y y artist +artist
+874619r4<substantiv>artistbokare:artistbokare:artistbokares:artistbokaren:artistbokarens:artistbokare:artistbokares:artistbokarna:artistbokarnas
+COMPOUND(605396, 874620): artist + bokare
+752006r3<substantiv>artisteri:artisteri:artisteris:artisteriet:artisteriets::::
+874630r4<substantiv>artistförmedling:artistförmedling:artistförmedlings:artistförmedlingen:artistförmedlingens:artistförmedlingar:artistförmedlingars:artistförmedlingarna:artistförmedlingarnas
+COMPOUND(605396, 670701): artist + förmedling
+950496r4<substantiv>artistgage:artistgage:artistgages:artistgaget:artistgagets:artistgager:artistgagers:artistgagerna:artistgagernas
+COMPOUND(605396, 557554): artist + gage
+578996r4<adjektiv>artistisk:artistisk:artistiskt:artistiska:artistiska:!:!:!:artistiske
+711443r3<substantiv>artistkrets:artistkrets:artistkrets:artistkretsen:artistkretsens:artistkretsar:artistkretsars:artistkretsarna:artistkretsarnas
+936143r3<substantiv>artistliv:artistliv:artistlivs:artistlivet:artistlivets::::
+874638r4<substantiv>artistnamn:artistnamn:artistnamns:artistnamnet:artistnamnets:artistnamn:artistnamns:artistnamnen:artistnamnens
+COMPOUND(605396, 607737): artist + namn
+780712r3<substantiv>artistskap:artistskap:artistskaps:artistskapet:artistskapets::::
+874644r4<substantiv>artistuppbåd:artistuppbåd:artistuppbåds:artistuppbådet:artistuppbådets:artistuppbåd:artistuppbåds:artistuppbåden:artistuppbådens
+COMPOUND(605396, 553074): artist + uppbåd
+874650r4<substantiv>artkorsning:artkorsning:artkorsnings:artkorsningen:artkorsningens:artkorsningar:artkorsningars:artkorsningarna:artkorsningarnas
+COMPOUND(548244, 559225): art + korsning
+780716r3<substantiv>artkännedom:artkännedom:artkännedoms:artkännedomen:artkännedomens::::
+780720r3<substantiv>artnamn:artnamn:artnamns:artnamnet:artnamnets:artnamn:artnamns:artnamnen:artnamnens
+623742r4<räkneord>arton:arton
+CUSTOM: y n
+571076r3<räkneord>artonde:artonde
+874658r4<substantiv>artondel:artondel:artondels:artondelen:artondelens:artondelar:artondelars:artondelarna:artondelarnas
+COMPOUND(623742, 551034): arton + del
+686964r3<räkneord>artonhundra:artonhundra
+614594r3<substantiv>artonhundratal:artonhundratal:artonhundratals:artonhundratalet:artonhundratalets::::
+CUSTOM: y y artonhundratals
+769516r3<substantiv>artonhålsbana:artonhålsbana:artonhålsbanas:artonhålsbanan:artonhålsbanans:artonhålsbanor:artonhålsbanors:artonhålsbanorna:artonhålsbanornas
+571430r3<adjektiv>artonkaratig:artonkaratig:artonkaratigt:artonkaratiga:artonkaratiga::::
+821745r3<substantiv>artontummare:artontummare:artontummares:artontummaren:artontummarens:artontummare:artontummares:artontummarna:artontummarnas
+571433r4<adjektiv>artonårig:artonårig:artonårigt:artonåriga:artonåriga:!:!:!:artonårige
+654453r3<substantiv>artonåring:artonåring:artonårings:artonåringen:artonåringens:artonåringar:artonåringars:artonåringarna:artonåringarnas
+CUSTOM: y y artonårings
+780735r3<substantiv>artonårsålder:::artonårsåldern:artonårsålderns::::
+752010r4<adjektiv>artrik:artrik:artrikt:artrika:artrika:artrikare:artrikast:artrikaste:!
+COMPOUND(548244, 563125): art + rik
+752016r3<substantiv>artrikedom:artrikedom:artrikedoms:artrikedomen:artrikedomens::::
+780738r3<substantiv>artrit:artrit:artrits:artriten:artritens:artriter:artriters:artriterna:artriternas
+780746r3<substantiv>artros:artros:artros:artrosen:artrosens:artroser:artrosers:artroserna:artrosernas
+780754r3<substantiv>artroskopi:artroskopi:artroskopis:artroskopin:artroskopins::::
+912455r3<substantiv>artrosrisk:artrosrisk:artrosrisks:artrosrisken:artrosriskens::::
+874666r4<substantiv>artsammanställning:artsammanställning:artsammanställnings:artsammanställningen:artsammanställningens:artsammanställningar:artsammanställningars:artsammanställningarna:artsammanställningarnas
+COMPOUND(548244, 664227): art + sammanställning
+780770r3<adjektiv>artskild:artskild:artskilt:artskilda:artskilda::::
+780762r3<substantiv>artskillnad:artskillnad:artskillnads:artskillnaden:artskillnadens:artskillnader:artskillnaders:artskillnaderna:artskillnadernas
+780759r3<adjektiv>artspecifik:artspecifik:artspecifikt:artspecifika:artspecifika::::
+874674r4<substantiv>artspecifikation:artspecifikation:artspecifikations:artspecifikationen:artspecifikationens:artspecifikationer:artspecifikationers:artspecifikationerna:artspecifikationernas
+COMPOUND(548244, 636865): art + specifikation
+554486r3<egennamn>Artur:Artur:Arturs
+780773r3<substantiv>artutrotning:artutrotning:artutrotnings:artutrotningen:artutrotningens:artutrotningar:artutrotningars:artutrotningarna:artutrotningarnas
+724559r4<substantiv>artutveckling:artutveckling:artutvecklings:artutvecklingen:artutvecklingens:artutvecklingar:artutvecklingars:artutvecklingarna:artutvecklingarnas
+COMPOUND(548244, 637669): art + utveckling
+548247r7<substantiv>artär:artär:artärs:artären:artärens:artärer:artärers:artärerna:artärernas
+CUSTOM: y y artär
+874682r4<substantiv>artärtryck:artärtryck:artärtrycks:artärtrycket:artärtryckets:artärtryck:artärtrycks:artärtrycken:artärtryckens
+COMPOUND(548247, 553063): artär + tryck
+874688r4<substantiv>artärvägg:artärvägg:artärväggs:artärväggen:artärväggens:artärväggar:artärväggars:artärväggarna:artärväggarnas
+COMPOUND(548247, 552111): artär + vägg
+977984r3<substantiv>arun:arun:aruns:arunen:arunens::::
+CUSTOM: n n y
+557837r15<substantiv>arv:arv:arvs:arvet:arvets:arv:arvs:arven:arvens
+CUSTOM: y y arvs
+617305r3<substantiv>arvedel:arvedel:arvedels:arvedelen:arvedelens:arvedelar:arvedelars:arvedelarna:arvedelarnas
+752020r3<substantiv>arvegods:arvegods:arvegods:arvegodset:arvegodsets::::
+752023r4<substantiv>arvfiende:arvfiende:arvfiendes:arvfienden:arvfiendens:arvfiender:arvfienders:arvfienderna:arvfiendernas
+COMPOUND(557837, 561663): arv + fiende
+859003r3<substantiv>arvfurste:arvfurste:arvfurstes:arvfursten:arvfurstens:arvfurstar:arvfurstars:arvfurstarna:arvfurstarnas
+859011r3<substantiv>arvföljd:arvföljd:arvföljds:arvföljden:arvföljdens:arvföljder:arvföljders:arvföljderna:arvföljdernas
+967783r3<substantiv>arvförening:arvförening:arvförenings:arvföreningen:arvföreningens:arvföreningar:arvföreningars:arvföreningarna:arvföreningarnas
+554488r3<egennamn>Arvid:Arvid:Arvids
+728056r3<egennamn>Arvidsjaur:Arvidsjaur:Arvidsjaurs
+CUSTOM: y n Arvidsjaur
+553367r3<egennamn>Arvidsson:Arvidsson:Arvidssons
+554186r5<egennamn>Arvika:Arvika:Arvika
+CUSTOM: y n Arvika
+861398r3<egennamn>Arvikafestivalen:Arvikafestivalen:Arvikafestivalens
+CUSTOM: n n 
+599781r5<substantiv>arvinge:arvinge:arvinges:arvingen:arvingens:arvingar:arvingars:arvingarna:arvingarnas
+967791r3<substantiv>arvkonung:arvkonung:arvkonungs:arvkonungen:arvkonungens:arvkonungar:arvkonungars:arvkonungarna:arvkonungarnas
+967822r3<substantiv>arvkung:arvkung:arvkungs:arvkungen:arvkungens:arvkungar:arvkungars:arvkungarna:arvkungarnas
+CUSTOM: y n
+967817r3<substantiv>arvkungadöme:arvkungadöme:arvkungadömes:arvkungadömet:arvkungadömets::::
+CUSTOM: y n
+609300r3<substantiv>arvlåtare:arvlåtare:arvlåtares:arvlåtaren:arvlåtarens:arvlåtare:arvlåtares:arvlåtarna:arvlåtarnas
+CUSTOM: y n
+564726r4<adjektiv>arvlös:arvlös:arvlöst:arvlösa:arvlösa::::arvlöse
+CUSTOM: y n
+612301r11<substantiv>arvode:arvode:arvodes:arvodet:arvodets:arvoden:arvodens:arvodena:arvodenas
+CUSTOM: y y arvodes +arvodes
+586031r4<verb>arvodera:arvodera:arvoderade:arvoderat:arvoderar:arvodera:arvoderas:arvoderades:arvoderats:arvoderas:arvoderad:arvoderat:arvoderade:arvoderande:
+780781r3<substantiv>arvodering:arvodering:arvoderings:arvoderingen:arvoderingens:arvoderingar:arvoderingars:arvoderingarna:arvoderingarnas
+780789r4<substantiv>arvodesanspråk:arvodesanspråk:arvodesanspråks:arvodesanspråket:arvodesanspråkets:arvodesanspråk:arvodesanspråks:arvodesanspråken:arvodesanspråkens
+COMPOUND(612301, 552179): arvode + anspråk
+606161r3<substantiv>arvodesbefattning:arvodesbefattning:arvodesbefattnings:arvodesbefattningen:arvodesbefattningens:arvodesbefattningar:arvodesbefattningars:arvodesbefattningarna:arvodesbefattningarnas
+CUSTOM: y y arvodesbefattnings
+967799r3<substantiv>arvprins:arvprins:arvprins:arvprinsen:arvprinsens:arvprinsar:arvprinsars:arvprinsarna:arvprinsarnas
+CUSTOM: y n
+967807r3<substantiv>arvprinsessa:arvprinsessa:arvprinsessas:arvprinsessan:arvprinsessans:arvprinsessor:arvprinsessors:arvprinsessorna:arvprinsessornas
+CUSTOM: y n
+780790r3<substantiv>arvrike:arvrike:arvrikes:arvriket:arvrikets:arvriken:arvrikens:arvrikena:arvrikenas
+CUSTOM: y n
+608910r3<substantiv>arvsanlag:arvsanlag:arvsanlags:arvsanlaget:arvsanlagets:arvsanlag:arvsanlags:arvsanlagen:arvsanlagens
+789902r3<adjektiv>arvsberättigad:arvsberättigad:arvsberättigat:arvsberättigade:arvsberättigade:!:!:!:
+605397r3<substantiv>arvsfond:arvsfond:arvsfonds:arvsfonden:arvsfondens:arvsfonder:arvsfonders:arvsfonderna:arvsfondernas
+612302r3<substantiv>arvskifte:arvskifte:arvskiftes:arvskiftet:arvskiftets:arvskiften:arvskiftens:arvskiftena:arvskiftenas
+681965r4<substantiv>arvslott:arvslott:arvslotts:arvslotten:arvslottens:arvslotter:arvslotters:arvslotterna:arvslotternas
+COMPOUND(557837, 549964): arv + lott
+681966r4<substantiv>arvsmassa:arvsmassa:arvsmassas:arvsmassan:arvsmassans:arvsmassor:arvsmassors:arvsmassorna:arvsmassornas
+COMPOUND(557837, 594709): arv + massa
+933824r4<substantiv>arvsrätt:arvsrätt:arvsrätts:arvsrätten:arvsrättens::::
+COMPOUND(557837, 603413): arv + rätt
+601143r3<substantiv>arvsskatt:arvsskatt:arvsskatts:arvsskatten:arvsskattens:arvsskatter:arvsskatters:arvsskatterna:arvsskatternas
+601151r3<substantiv>arvsvinst:arvsvinst:arvsvinsts:arvsvinsten:arvsvinstens:arvsvinster:arvsvinsters:arvsvinsterna:arvsvinsternas
+752031r3<substantiv>arvsynd:arvsynd:arvsynds:arvsynden:arvsyndens:arvsynder:arvsynders:arvsynderna:arvsyndernas
+609212r3<substantiv>arvtagare:arvtagare:arvtagares:arvtagaren:arvtagarens:arvtagare:arvtagares:arvtagarna:arvtagarnas
+CUSTOM: y y arvtagar
+780798r3<substantiv>arvtagerska:arvtagerska:arvtagerskas:arvtagerskan:arvtagerskans:arvtagerskor:arvtagerskors:arvtagerskorna:arvtagerskornas
+859025r3<substantiv>arvtant:arvtant:arvtants:arvtanten:arvtantens:arvtanter:arvtanters:arvtanterna:arvtanternas
+623743r3<substantiv>arytmi:arytmi:arytmis:arytmin:arytmins:arytmier:arytmiers:arytmierna:arytmiernas
+557630r4<substantiv>as:as:as:aset:asets:as:as:asen:asens
+DEFINITION 1: Dött djur
+557632r4<substantiv>as:as:as:asen:asens:asar:asars:asarna:asarnas
+DEFINITION 1: Fornnordisk gud
+901831r5<verb>asa:asa:asade:asat:asar:asa:asas:asades:asats:asas:asad:asat:asade:asande:
+CUSTOM: n n y 
+616117r3<substantiv>asadyrkare:asadyrkare:asadyrkares:asadyrkaren:asadyrkarens:asadyrkare:asadyrkares:asadyrkarna:asadyrkarnas
+CUSTOM: y y asadyrkar
+681882r3<substantiv>asagud:asagud:asaguds:asaguden:asagudens:asagudar:asagudars:asagudarna:asagudarnas
+616123r6<substantiv>asalära, asaläran:::asaläran:asalärans::::
+616127r3<substantiv>asatro:asatro:asatros:asatron:asatrons::::
+859218r3<substantiv>asbagge:asbagge:asbagges:asbaggen:asbaggens:asbaggar:asbaggars:asbaggarna:asbaggarnas
+616130r3<adjektiv>asberusad:asberusad:asberusat:asberusade:asberusade:!:!:!:
+616133r5<substantiv>asbest:asbest:asbests:asbesten:asbestens:!:!:!:!
+CUSTOM: y y asbest
+789905r3<adjektiv>asbestisolerad:asbestisolerad:asbestisolerat:asbestisolerade:asbestisolerade:!:!:!:
+801202r3<adjektiv>asbestklädd:asbestklädd:asbestklätt:asbestklädda:asbestklädda::::
+616134r3<substantiv>asbestos:asbestos:asbestos:asbestosen:asbestosens::::
+593664r3<substantiv>asbestplatta:asbestplatta:asbestplattas:asbestplattan:asbestplattans:asbestplattor:asbestplattors:asbestplattorna:asbestplattornas
+677158r4<substantiv>asbestväv:asbestväv:asbestvävs:asbestväven:asbestvävens:asbestvävar:asbestvävars:asbestvävarna:asbestvävarnas
+COMPOUND(616133, 552117): asbest + väv
+967830r3<substantiv>ascendent:ascendent:ascendents:ascendenten:ascendentens:ascendenter:ascendenters:ascendenterna:ascendenternas
+CUSTOM: y n
+616138r3<interjektion>asch:asch
+CUSTOM: y n y
+859226r3<substantiv>aseptik:aseptik:aseptiks:aseptiken:aseptikens::::
+578999r3<adjektiv>aseptisk:aseptisk:aseptiskt:aseptiska:aseptiska::::
+616139r4<adjektiv>asexuell:asexuell:asexuellt:asexuella:asexuella::::asexuelle
+616142r5<substantiv>asfalt:asfalt:asfalts:asfalten:asfaltens:asfalter:asfalters:asfalterna:asfalternas
+CUSTOM: y y asfalt asfalts
+546105r5<verb>asfaltera:asfaltera:asfalterade:asfalterat:asfalterar:asfaltera:asfalteras:asfalterades:asfalterats:asfalteras:asfalterad:asfalterat:asfalterade:asfalterande:
+616147r3<substantiv>asfaltering:asfaltering:asfalterings:asfalteringen:asfalteringens:asfalteringar:asfalteringars:asfalteringarna:asfalteringarnas
+CUSTOM: y y asfalterings
+571436r3<adjektiv>asfalthaltig:asfalthaltig:asfalthaltigt:asfalthaltiga:asfalthaltiga::::
+789908r3<adjektiv>asfaltimpregnerad:asfaltimpregnerad:asfaltimpregnerat:asfaltimpregnerade:asfaltimpregnerade:!:!:!:
+610392r3<substantiv>asfaltindustri:asfaltindustri:asfaltindustris:asfaltindustrin:asfaltindustrins:asfaltindustrier:asfaltindustriers:asfaltindustrierna:asfaltindustriernas
+741010r4<substantiv>asfaltsväg:asfaltsväg:asfaltsvägs:asfaltsvägen:asfaltsvägens:asfaltsvägar:asfaltsvägars:asfaltsvägarna:asfaltsvägarnas
+COMPOUND(616142, 552110): asfalt + väg
+876176r3<substantiv>asfalttjära:asfalttjära:asfalttjäras:asfalttjäran:asfalttjärans:asfalttjäror:asfalttjärors:asfalttjärorna:asfalttjärornas
+584921r3<adjektiv>asfull:asfull:asfullt:asfulla:asfulla::::
+616155r3<substantiv>asgam:asgam:asgams:asgamen:asgamens:asgamar:asgamars:asgamarna:asgamarnas
+CUSTOM: y n
+941488r3<substantiv>asgarv:asgarv:asgarvs:asgarvet:asgarvets:asgarv:asgarvs:asgarven:asgarvens
+CUSTOM: y n
+967839r3<verb>asgarva:asgarva:asgarvade:asgarvat:asgarvar:asgarva::::::::asgarvande:
+CUSTOM: y n
+601159r7<substantiv>asiat:asiat:asiats:asiaten:asiatens:asiater:asiaters:asiaterna:asiaternas
+CUSTOM: y n
+568712r11<adjektiv>asiatisk:asiatisk:asiatiskt:asiatiska:asiatiska::::asiatiske::::::::
+CUSTOM: y n
+967871r3<substantiv>asiatiska:asiatiska:asiatiskas:asiatiskan:asiatiskans:asiatiskor:asiatiskors:asiatiskorna:asiatiskornas
+CUSTOM: y n
+553927r4<egennamn>Asien:Asien:Asiens
+CUSTOM: y n Asien
+854320r4<substantiv>Asienbörs:Asienbörs:Asienbörs:Asienbörsen:Asienbörsens:Asienbörser:Asienbörsers:Asienbörserna:Asienbörsernas
+COMPOUND(553927, 604212): Asien + börs
+CUSTOM: y n
+968429r3<substantiv>asimut:asimut:asimuts:asimuten:asimutens::::
+CUSTOM: y n
+550843r13<substantiv>ask:ask:asks:asken:askens:askar:askars:askarna:askarnas
+DEFINITION 1: Liten låda.
+DEFINITION 2: Ett slags lövträd.
+CUSTOM: y y ask
+546106r4<verb>aska:aska:askade:askat:askar:aska:askas:askades:askats:askas:askad:askat:askade:askande:
+CUSTOM: y n
+616163r11<substantiv>aska:aska:askas:askan:askans:!:!:!:!
+CUSTOM: y n
+860586r3<egennamn>Askaner:Askaner:Askaners
+632399r3<substantiv>A-skatt:A-skatt:A-skatts:A-skatten:A-skattens:A-skatter:A-skatters:A-skatterna:A-skatternas
+CUSTOM: n n
+636766r4<adjektiv>askblond:askblond:askblont:askblonda:askblonda:askblondare:askblondast:askblondaste:
+COMPOUND(550843, 563321): ask + blond
+579002r3<adjektiv>askenasisk:askenasisk:askenasiskt:askenasiska:askenasiska::::
+728058r3<egennamn>Askersund:Askersund:Askersunds
+CUSTOM: y n Askersunds
+616164r5<substantiv>askes:askes:askes:askesen:askesens:!:!:!:!
+DEFINITION 1: Späkning, sträng återhållsamhet, avhållsamhet
+616167r4<substantiv>asket:asket:askets:asketen:asketens:asketer:asketers:asketerna:asketernas
+CUSTOM: y n
+579005r4<adjektiv>asketisk:asketisk:asketiskt:asketiska:asketiska::::asketiske
+558261r3<substantiv>asketism:asketism:asketisms:asketismen:asketismens:!:!:!:!
+967879r4<substantiv>asketliv:asketliv:asketlivs:asketlivet:asketlivets::::
+COMPOUND(616167, 552667): asket + liv
+CUSTOM: y n
+606629r3<substantiv>askfat:askfat:askfats:askfatet:askfatets:askfat:askfats:askfaten:askfatens
+CUSTOM: y y askfats
+571439r3<adjektiv>askfattig:askfattig:askfattigt:askfattiga:askfattiga::::
+563641r3<adjektiv>askfri:askfri:askfritt:askfria:askfria::::
+789911r3<adjektiv>askfärgad:askfärgad:askfärgat:askfärgade:askfärgade:!:!:!:
+801959r3<adjektiv>askgrå:askgrå:askgrått:askgråa:askgråa::::
+571442r3<adjektiv>askhaltig:askhaltig:askhaltigt:askhaltiga:askhaltiga::::
+849008r3<substantiv>askhög:askhög:askhögs:askhögen:askhögens:askhögar:askhögars:askhögarna:askhögarnas
+598085r3<substantiv>askkopp:askkopp:askkopps:askkoppen:askkoppens:askkoppar:askkoppars:askkopparna:askkopparnas
+831149r6<substantiv>askmoln:askmoln:askmolns:askmolnet:askmolnets:askmoln:askmolns:askmolnen:askmolnens
+COMPOUND(616163, 552697): aska + moln
+CUSTOM: y n askmolns
+766628r3<substantiv>askorbinsyra:askorbinsyra:askorbinsyras:askorbinsyran:askorbinsyrans:askorbinsyror:askorbinsyrors:askorbinsyrorna:askorbinsyrornas
+861300r3<substantiv>askträ:askträ:askträs:askträet:askträets::::
+752039r3<substantiv>askunge:askunge:askunges:askungen:askungens:askungar:askungars:askungarna:askungarnas
+752048r3<substantiv>askungesaga:askungesaga:askungesagas:askungesagan:askungesagans:askungesagor:askungesagors:askungesagorna:askungesagornas
+564659r4<adjektiv>asocial:asocial:asocialt:asociala:asociala:asocialare:asocialast:asocialaste:asociale
+859231r3<substantiv>asocialitet:asocialitet:asocialitets:asocialiteten:asocialitetens::::
+557840r8<substantiv>asp:asp:asps:aspen:aspens:aspar:aspars:asparna:asparnas
+DEFINITION 1: Ett slags träd
+CUSTOM: y n
+957533r3<adjektiv>aspackad:aspackad:aspackat:aspackade:aspackade:!:!:!:::::::::
+623244r3<substantiv>aspartam:aspartam:aspartams:aspartamet:aspartamets:!:!:!:!
+659562r4<substantiv>aspcellulosa:aspcellulosa:aspcellulosas:aspcellulosan:aspcellulosans:!:!:!:!
+COMPOUND(557840, 626981): asp + cellulosa
+CUSTOM: n n
+548249r4<substantiv>aspekt:aspekt:aspekts:aspekten:aspektens:aspekter:aspekters:aspekterna:aspekternas
+636719r8<egennamn>Asperger:Asperger:Aspergers
+548251r4<substantiv>aspirant:aspirant:aspirants:aspiranten:aspirantens:aspiranter:aspiranters:aspiranterna:aspiranternas
+CUSTOM: y y aspirant
+967891r3<substantiv>aspirata:aspirata:aspiratas:aspiratan:aspiratans:aspirator:aspirators:aspiratorna:aspiratornas
+CUSTOM: y n
+616169r4<substantiv>aspiration:aspiration:aspirations:aspirationen:aspirationens:aspirationer:aspirationers:aspirationerna:aspirationernas
+CUSTOM: y y aspirations
+763472r4<substantiv>aspirationsnivå:aspirationsnivå:aspirationsnivås:aspirationsnivån:aspirationsnivåns:aspirationsnivåer:aspirationsnivåers:aspirationsnivåerna:aspirationsnivåernas
+COMPOUND(616169, 611085): aspiration + nivå
+546107r4<verb>aspirera:aspirera:aspirerade:aspirerat:aspirerar:aspirera:aspireras:aspirerades:aspirerats:aspireras:aspirerad:aspirerat:aspirerade:aspirerande:
+616170r3<substantiv>aspirering:aspirering:aspirerings:aspireringen:aspireringens::::
+CUSTOM: y y aspirerings
+752057r3<substantiv>aspirin:aspirin:aspirins:aspirinet:aspirinets::::
+553369r3<egennamn>Asplund:Asplund:Asplunds
+699947r4<substantiv>asplöv:asplöv:asplövs:asplövet:asplövets:asplöv:asplövs:asplöven:asplövens
+COMPOUND(557840, 552683): asp + löv
+930089r3<substantiv>aspsopp:aspsopp:aspsopps:aspsoppen:aspsoppens:aspsoppar:aspsoppars:aspsopparna:aspsopparnas
+939618r3<egennamn>Aspudden:Aspudden:Aspuddens
+699953r4<substantiv>aspved:aspved:aspveds:aspveden:aspvedens:!:!:!:!
+COMPOUND(557840, 624355): asp + ved
+CUSTOM: y n n
+699957r4<substantiv>aspvirke:aspvirke:aspvirkes:aspvirket:aspvirkets:aspvirken:aspvirkens:aspvirkena:aspvirkenas
+COMPOUND(557840, 613001): asp + virke
+660077r3<substantiv>ass:ass:ass:asset:assets:ass:ass:assen:assens
+CUSTOM: n n y
+972131r3<egennamn>Assar:Assar:Assars
+972566r3<egennamn>Assarsson:Assarsson:Assarssons
+967883r3<substantiv>assegaj:assegaj:assegajs:assegajen:assegajens:assegajer:assegajers:assegajerna:assegajernas
+CUSTOM: y n
+686966r3<substantiv>assembler:assembler:::::::
+CUSTOM: y y assembler
+546108r4<verb>assemblera:assemblera:assemblerade:assemblerat:assemblerar:assemblera:assembleras:assemblerades:assemblerats:assembleras:assemblerad:assemblerat:assemblerade::
+616174r3<substantiv>assessor:assessor:assessors:assessorn:assessorns:assessorer:assessorers:assessorerna:assessorernas
+616180r3<substantiv>assiett:assiett:assietts:assietten:assiettens:assietter:assietters:assietterna:assietternas
+CUSTOM: y y assiett
+616188r3<substantiv>assignation:assignation:assignations:assignationen:assignationens:assignationer:assignationers:assignationerna:assignationernas
+CUSTOM: y y assignations
+586035r3<verb>assignera:assignera:assignerade:assignerat:assignerar:assignera:::::::::
+616196r4<substantiv>assimilation:assimilation:assimilations:assimilationen:assimilationens:assimilationer:assimilationers:assimilationerna:assimilationernas
+DEFINITION 1: Likdaning, sammansmältning
+CUSTOM: y y assimilations
+546109r5<verb>assimilera:assimilera:assimilerade:assimilerat:assimilerar:assimilera:assimileras:assimilerades:assimilerats:assimileras:assimilerad:assimilerat:assimilerade:assimilerande:
+568855r3<adjektiv>assimilerbar:assimilerbar:assimilerbart:assimilerbara:assimilerbara::::
+752061r4<substantiv>assimilering:assimilering:assimilerings:assimileringen:assimileringens::::
+CUSTOM: y y assimilerings
+855446r4<substantiv>assimileringsplan:assimileringsplan:assimileringsplans:assimileringsplanen:assimileringsplanens:assimileringsplaner:assimileringsplaners:assimileringsplanerna:assimileringsplanernas
+COMPOUND(752061, 550205): assimilering + plan
+616202r6<substantiv>assist:assist:assists:assisten:assistens:assister:assisters:assisterna:assisternas
+DEFINITION 1: Målgivande passning [ i t.ex. ishockey ]
+CUSTOM: y y assist
+548253r3<substantiv>assistans:assistans:assistans:assistansen:assistansens:assistanser:assistansers:assistanserna:assistansernas
+CUSTOM: y y assistans
+783338r3<substantiv>assistens:assistens:assistens:assistensen:assistensens::::
+548254r8<substantiv>assistent:assistent:assistents:assistenten:assistentens:assistenter:assistenters:assistenterna:assistenternas
+CUSTOM: y y assistent
+546110r5<verb>assistera:assistera:assisterade:assisterat:assisterar:assistera:assisteras:assisterades:assisterats:assisteras:assisterad:assisterat:assisterade:assisterande:
+967898r3<substantiv>assistering:assistering:assisterings:assisteringen:assisteringens:assisteringar:assisteringars:assisteringarna:assisteringarnas
+CUSTOM: y n
+605405r3<substantiv>association:association:associations:associationen:associationens:associationer:associationers:associationerna:associationernas
+CUSTOM: y y associations
+780807r3<adjektiv>associationsrik:associationsrik:associationsrikt:associationsrika:associationsrika:associationsrikare:associationsrikast:associationsrikaste:associationsrike
+623751r3<adjektiv>associativ:associativ:associativt:associativa:associativa::::
+763474r3<substantiv>associativitet:associativitet:associativitets:associativiteten:associativitetens::::
+546111r5<verb>associera:associera:associerade:associerat:associerar:associera:associeras:associerades:associerats:associeras:associerad:associerat:associerade:associerande:
+768045r4<substantiv>associering:associering:associerings:associeringen:associeringens:associeringar:associeringars:associeringarna:associeringarnas
+CUSTOM: y y associerings
+778615r4<substantiv>associeringsavtal:associeringsavtal:associeringsavtals:associeringsavtalet:associeringsavtalets:associeringsavtal:associeringsavtals:associeringsavtalen:associeringsavtalens
+COMPOUND(768045, 552215): associering + avtal
+616204r3<substantiv>assonans:assonans:assonans:assonansen:assonansens:assonanser:assonansers:assonanserna:assonansernas
+588667r3<verb>assonera:assonera:assonerade:assonerat:assonerar:assonera:::::::::
+588671r3<verb>assortera:assortera:assorterade:assorterat:assorterar:assortera:::::::::
+616211r3<substantiv>assuradör:assuradör:assuradörs:assuradören:assuradörens:assuradörer:assuradörers:assuradörerna:assuradörernas
+616219r4<substantiv>assurans:assurans:assurans:assuransen:assuransens:assuranser:assuransers:assuranserna:assuransernas
+CUSTOM: y y assurans
+671646r4<substantiv>assuransavgift:assuransavgift:assuransavgifts:assuransavgiften:assuransavgiftens:assuransavgifter:assuransavgifters:assuransavgifterna:assuransavgifternas
+COMPOUND(616219, 548299): assurans + avgift
+586039r4<verb>assurera:assurera:assurerade:assurerat:assurerar:assurera:assureras:assurerades:assurerats:assureras:assurerad:assurerat:assurerade:assurerande:
+568858r3<adjektiv>assurerbar:assurerbar:assurerbart:assurerbara:assurerbara::::
+616226r3<substantiv>assyrier:assyrier:assyriers:assyriern:assyrierns:assyrier:assyriers:assyrierna:assyriernas
+780829r3<substantiv>assyriologi:assyriologi:assyriologis:assyriologin:assyriologins::::
+579006r3<adjektiv>assyriologisk:assyriologisk:assyriologiskt:assyriologiska:assyriologiska::::
+568713r4<adjektiv>assyrisk:assyrisk:assyriskt:assyriska:assyriska::::assyriske
+859241r3<substantiv>assyriska:assyriska:assyriskas:assyriskan:assyriskans:assyriskor:assyriskors:assyriskorna:assyriskornas
+553615r3<egennamn>Asta:Asta:Astas
+723380r5<substantiv>astat:astat:astats:astatet:astatets:!:!:!:!
+CUSTOM: n n y
+723672r4<substantiv>astatatom:astatatom:astatatoms:astatatomen:astatatomens:astatatomer:astatatomers:astatatomerna:astatatomernas
+COMPOUND(723380, 548266): astat + atom
+579009r3<adjektiv>astatisk:astatisk:astatiskt:astatiska:astatiska::::
+616227r3<substantiv>asteni:asteni:astenis:astenin:astenins:!:!:!:!
+616231r3<substantiv>asteniker:asteniker:astenikers:astenikern:astenikerns:asteniker:astenikers:astenikerna:astenikernas
+CUSTOM: y y asteniker
+579012r4<adjektiv>astenisk:astenisk:asteniskt:asteniska:asteniska::::asteniske
+616237r6<substantiv>aster:aster:asters:astern:asterns:astrar:astrars:astrarna:astrarnas
+CUSTOM: y n
+548256r3<substantiv>asterisk:asterisk:asterisks:asterisken:asteriskens:asterisker:asteriskers:asteriskerna:asteriskernas
+560730r7<egennamn>Asterix:Asterix:Asterix
+601161r4<substantiv>asteroid:asteroid:asteroids:asteroiden:asteroidens:asteroider:asteroiders:asteroiderna:asteroidernas
+CUSTOM: y y asteroid
+722776r4<substantiv>asteroidbälte:asteroidbälte:asteroidbältes:asteroidbältet:asteroidbältets:asteroidbälten:asteroidbältens:asteroidbältena:asteroidbältenas
+COMPOUND(601161, 560910): asteroid + bälte
+616239r3<substantiv>astigmatiker:astigmatiker:astigmatikers:astigmatikern:astigmatikerns:astigmatiker:astigmatikers:astigmatikerna:astigmatikernas
+CUSTOM: y y astigmatiker
+568714r3<adjektiv>astigmatisk:astigmatisk:astigmatiskt:astigmatiska:astigmatiska::::
+616247r4<substantiv>astigmatism:astigmatism:astigmatisms:astigmatismen:astigmatismens:!:!:!:!
+DEFINITION 1: Abnorm och oregelbunden brytning i ögat.
+CUSTOM: y y astigmatism
+616245r3<substantiv>astma:astma:astmas:astman:astmans:!:!:!:!
+CUSTOM: y y astma
+616251r3<substantiv>astmaanfall:astmaanfall:astmaanfalls:astmaanfallet:astmaanfallets:astmaanfall:astmaanfalls:astmaanfallen:astmaanfallens
+616257r3<substantiv>astmaattack:astmaattack:astmaattacks:astmaattacken:astmaattackens:astmaattacker:astmaattackers:astmaattackerna:astmaattackernas
+616265r3<substantiv>astmabesvär:astmabesvär:astmabesvärs:astmabesväret:astmabesvärets:astmabesvär:astmabesvärs:astmabesvären:astmabesvärens
+616271r3<substantiv>astmamedicin:astmamedicin:astmamedicins:astmamedicinen:astmamedicinens:astmamediciner:astmamediciners:astmamedicinerna:astmamedicinernas
+616279r3<adjektiv>astmasjuk:astmasjuk:astmasjukt:astmasjuka:astmasjuka::::astmasjuke
+616283r3<substantiv>astmatiker:astmatiker:astmatikers:astmatikern:astmatikerns:astmatiker:astmatikers:astmatikerna:astmatikernas
+579015r4<adjektiv>astmatisk:astmatisk:astmatiskt:astmatiska:astmatiska::::astmatiske
+762339r3<egennamn>Aston:Aston:Astons
+553183r3<egennamn>Astra:Astra:Astras
+CUSTOM: y n Astra
+616284r4<substantiv>astrakan:astrakan:astrakans:astrakanen:astrakanens:astrakaner:astrakaners:astrakanerna:astrakanernas
+DEFINITION 1: En äppelsort
+616293r3<substantiv>astrakanträd:astrakanträd:astrakanträds:astrakanträdet:astrakanträdets:astrakanträd:astrakanträds:astrakanträden:astrakanträdens
+616299r3<adjektiv>astral:astral:astralt:astrala:astrala::::
+859251r3<substantiv>astralkropp:astralkropp:astralkropps:astralkroppen:astralkroppens:astralkroppar:astralkroppars:astralkropparna:astralkropparnas
+973576r3<egennamn>AstraZeneca:AstraZeneca:AstraZenecas
+553617r3<egennamn>Astrid:Astrid:Astrids
+579018r3<adjektiv>astrofisk:astrofisk:astrofiskt:astrofiska:astrofiska::::
+681973r3<substantiv>astrofysik:astrofysik:astrofysiks:astrofysiken:astrofysikens::::
+763479r3<substantiv>astrofysiker:astrofysiker:astrofysikers:astrofysikern:astrofysikerns:astrofysiker:astrofysikers:astrofysikerna:astrofysikernas
+548258r3<substantiv>astrolog:astrolog:astrologs:astrologen:astrologens:astrologer:astrologers:astrologerna:astrologernas
+CUSTOM: y y astrolog
+616300r3<substantiv>astrologi:astrologi:astrologis:astrologin:astrologins::::
+CUSTOM: y y astrologi
+568717r3<adjektiv>astrologisk:astrologisk:astrologiskt:astrologiska:astrologiska::::
+548260r3<substantiv>astronaut:astronaut:astronauts:astronauten:astronautens:astronauter:astronauters:astronauterna:astronauternas
+CUSTOM: y y astronaut
+780833r3<substantiv>astronautik:astronautik:astronautiks:astronautiken:astronautikens::::
+579021r3<adjektiv>astronautisk:astronautisk:astronautiskt:astronautiska:astronautiska::::
+548262r3<substantiv>astronom:astronom:astronoms:astronomen:astronomens:astronomer:astronomers:astronomerna:astronomernas
+CUSTOM: y y astronom
+616302r3<substantiv>astronomi:astronomi:astronomis:astronomin:astronomins::::
+CUSTOM: y y astronomi
+568718r4<adjektiv>astronomisk:astronomisk:astronomiskt:astronomiska:astronomiska::::astronomiske
+632385r3<substantiv>a-sträng:a-sträng:a-strängs:a-strängen:a-strängens:a-strängar:a-strängars:a-strängarna:a-strängarnas
+CUSTOM: n n
+548263r5<substantiv>asyl:asyl:asyls:asylen:asylens:asyler:asylers:asylerna:asylernas
+CUSTOM: y n asyl
+701380r4<substantiv>asylansökan:asylansökan:asylansökans:asylansökan:asylansökans::::
+COMPOUND(548263, 614565): asyl + ansökan
+701376r3<substantiv>asylrätt:asylrätt:asylrätts:asylrätten:asylrättens::::
+933829r4<substantiv>asylskäl:asylskäl:asylskäls:asylskälet:asylskälets:asylskäl:asylskäls:asylskälen:asylskälens
+COMPOUND(548263, 552945): asyl + skäl
+936135r3<adjektiv>asylsökande:asylsökande:asylsökande:asylsökande:asylsökande:!:!:!::asylsökandes:::::::
+623752r3<substantiv>asymmetri:asymmetri:asymmetris:asymmetrin:asymmetrins:asymmetrier:asymmetriers:asymmetrierna:asymmetriernas
+579024r3<adjektiv>asymmetrisk:asymmetrisk:asymmetriskt:asymmetriska:asymmetriska::::
+579025r3<adjektiv>asymptomatisk:asymptomatisk:asymptomatiskt:asymptomatiska:asymptomatiska::::
+616304r3<substantiv>asymptot:asymptot:asymptots:asymptoten:asymptotens:asymptoter:asymptoters:asymptoterna:asymptoternas
+579028r3<adjektiv>asymptotisk:asymptotisk:asymptotiskt:asymptotiska:asymptotiska::::
+616312r3<substantiv>asyndes:asyndes:asyndes:asyndesen:asyndesens:asyndeser:asyndesers:asyndeserna:asyndesernas
+579029r3<adjektiv>asyndetisk:asyndetisk:asyndetiskt:asyndetiska:asyndetiska::::
+616319r3<substantiv>asynja:asynja:asynjas:asynjan:asynjans:asynjor:asynjors:asynjorna:asynjornas
+616327r3<adjektiv>asynkron:asynkron:asynkront:asynkrona:asynkrona::::
+615127r3<substantiv>asätare:asätare:asätares:asätaren:asätarens:asätare:asätares:asätarna:asätarnas
+CUSTOM: y y asätar
+579032r3<adjektiv>ataktisk:ataktisk:ataktiskt:ataktiska:ataktiska::::
+579035r3<adjektiv>ataraktisk:ataraktisk:ataraktiskt:ataraktiska:ataraktiska::::
+616328r3<substantiv>atavism:atavism:atavisms:atavismen:atavismens:atavismer:atavismers:atavismerna:atavismernas
+579038r4<adjektiv>atavistisk:atavistisk:atavistiskt:atavistiska:atavistiska::::atavistiske
+623760r3<substantiv>ataxi:ataxi:ataxis:ataxin:ataxins::::
+CUSTOM: y n
+558177r3<substantiv>ateism:ateism:ateisms:ateismen:ateismens:!:!:!:!
+CUSTOM: y y ateism
+605406r3<substantiv>ateist:ateist:ateists:ateisten:ateistens:ateister:ateisters:ateisterna:ateisternas
+CUSTOM: y y ateist
+568719r4<adjektiv>ateistisk:ateistisk:ateistiskt:ateistiska:ateistiska::::ateistiske
+616336r7<substantiv>ateljé:ateljé:ateljés:ateljén:ateljéns:ateljéer:ateljéers:ateljéerna:ateljéernas
+CUSTOM: y y ateljé
+801205r3<adjektiv>ateljésydd:ateljésydd:ateljésytt:ateljésydda:ateljésydda::::
+554869r3<egennamn>Aten:Aten:Atens
+CUSTOM: y n Aten
+623764r4<substantiv>atenare, athenare:atenare:atenares:atenaren:atenarens:atenare:atenares:atenarna:atenarnas
+CUSTOM: y y
+616337r4<substantiv>atenienn:atenienn:atenienns:ateniennen:ateniennens:atenienner:atenienners:ateniennerna:ateniennernas
+DEFINITION 1: Prydnadshylla
+579041r3<adjektiv>ateniensisk:ateniensisk:ateniensiskt:ateniensiska:ateniensiska::::
+616346r4<adjektiv>atensk:atensk:atenskt:atenska:atenska::::atenske::::::::
+CUSTOM: y n
+730594r4<substantiv>ateriol:ateriol:ateriols:ateriolen:ateriolens:aterioler:ateriolers:ateriolerna:ateriolernas
+DEFINITION 1: En artärs minsta förgrening.
+CUSTOM: n n
+731210r3<substantiv>ateroskleros:ateroskleros:ateroskleros::::::
+990407r3<egennamn>Atlanta:Atlanta:Atlantas
+553929r3<egennamn>Atlanten:Atlanten:Atlantens
+CUSTOM: y n Atlant
+896286r3<egennamn>Atlantis:Atlantis:Atlantis
+568720r3<adjektiv>atlantisk:atlantisk:atlantiskt:atlantiska:atlantiska::::
+892960r3<substantiv>atlantlax:atlantlax:atlantlax:atlantlaxen:atlantlaxens:atlantlaxar:atlantlaxars:atlantlaxarna:atlantlaxarnas
+721168r3<egennamn>Atlantpakten:Atlantpakten:Atlantpaktens
+CUSTOM: n n 
+911721r3<substantiv>Atlantångare:Atlantångare:Atlantångares:Atlantångaren:Atlantångarens:Atlantångare:Atlantångares:Atlantångarna:Atlantångarnas
+559495r4<substantiv>atlas:atlas:atlas:atlasen:atlasens:atlaser:atlasers:atlaserna:atlasernas
+CUSTOM: y y atlas
+973580r3<egennamn>Atlas Copco:Atlas Copco:Atlas Copcos
+967907r3<substantiv>atlassiden:atlassiden:atlassidens:atlassidenet:atlassidenets::::
+548264r3<substantiv>atlet:atlet:atlets:atleten:atletens:atleter:atleters:atleterna:atleternas
+579044r4<adjektiv>atletisk:atletisk:atletiskt:atletiska:atletiska::::atletiske
+780837r3<substantiv>atletklubb:atletklubb:atletklubbs:atletklubben:atletklubbens:atletklubbar:atletklubbars:atletklubbarna:atletklubbarnas
+899045r3<substantiv>at-läkare:at-läkare:at-läkares:at-läkaren:at-läkarens:at-läkare:at-läkares:at-läkarna:at-läkarnas
+899536r3<substantiv>AT-läkare:AT-läkare:AT-läkares:AT-läkaren:AT-läkarens:AT-läkare:AT-läkares:AT-läkarna:AT-läkarnas
+731213r4<substantiv>atmiatri:atmiatri:::::::
+DEFINITION 1: Behandling av patient med inanding av gas.
+CUSTOM: n n
+548265r4<substantiv>atmosfär:atmosfär:atmosfärs:atmosfären:atmosfärens:atmosfärer:atmosfärers:atmosfärerna:atmosfärernas
+CUSTOM: y y atmosfär
+579047r3<adjektiv>atmosfärisk:atmosfärisk:atmosfäriskt:atmosfäriska:atmosfäriska::::
+967912r4<substantiv>atmosfärstryck:atmosfärstryck:atmosfärstrycks:atmosfärstrycket:atmosfärstryckets:atmosfärstryck:atmosfärstrycks:atmosfärstrycken:atmosfärstryckens
+COMPOUND(548265, 553063): atmosfär + tryck
+616349r3<substantiv>atoll:atoll:atolls:atollen:atollens:atoller:atollers:atollerna:atollernas
+616357r3<substantiv>atollö:atollö:atollös:atollön:atollöns:atollöar:atollöars:atollöarna:atollöarnas
+548266r31<substantiv>atom:atom:atoms:atomen:atomens:atomer:atomers:atomerna:atomernas
+CUSTOM: y y atom
+605407r3<substantiv>atombomb:atombomb:atombombs:atombomben:atombombens:atombomber:atombombers:atombomberna:atombombernas
+CUSTOM: y y atombombs
+616365r3<verb>atombomba:atombomba:atombombade:atombombat:atombombar:atombomba:atombombas:atombombades:atombombats:atombombas:atombombad:atombombat:atombombade::
+616373r3<adjektiv>atomdriven:atomdriven:atomdrivet:atomdrivna:atomdrivna::::
+681977r4<substantiv>atomfysik:atomfysik:atomfysiks:atomfysiken:atomfysikens::::
+COMPOUND(548266, 548995): atom + fysik
+616376r3<substantiv>atomfysiker:atomfysiker:atomfysikers:atomfysikern:atomfysikerns:atomfysiker:atomfysikers:atomfysikerna:atomfysikernas
+571448r3<adjektiv>atomhaltig:atomhaltig:atomhaltigt:atomhaltiga:atomhaltiga::::
+586043r4<verb>atomisera:atomisera:atomiserade:atomiserat:atomiserar:atomisera:atomiseras:atomiserades:atomiserats:atomiseras:atomiserad:atomiserat:atomiserade:atomiserande:
+CUSTOM: y n
+579048r3<adjektiv>atomisk:atomisk:atomiskt:atomiska:atomiska::::
+CUSTOM: n n
+558462r3<substantiv>atomism:atomism:atomisms:atomismen:atomismens:!:!:!:!
+CUSTOM: y n
+579051r3<adjektiv>atomistisk:atomistisk:atomistiskt:atomistiska:atomistiska::::
+CUSTOM: y n
+605408r3<substantiv>atomkraft:atomkraft:atomkrafts:atomkraften:atomkraftens:atomkrafter:atomkrafters:atomkrafterna:atomkrafternas
+606630r3<substantiv>atomkraftverk:atomkraftverk:atomkraftverks:atomkraftverket:atomkraftverkets:atomkraftverk:atomkraftverks:atomkraftverken:atomkraftverkens
+637510r4<substantiv>atomkramare:atomkramare:atomkramares:atomkramaren, atomkramarn:atomkramarens, atomkramarns:atomkramare:atomkramares:atomkramarna:atomkramarnas
+COMPOUND(548266, 637501): atom + kramare
+CUSTOM: n n
+875210r4<substantiv>atommassa:atommassa:atommassas:atommassan:atommassans:atommassor:atommassors:atommassorna:atommassornas
+COMPOUND(548266, 594709): atom + massa
+681979r4<substantiv>atomubåt:atomubåt:atomubåts:atomubåten:atomubåtens:atomubåtar:atomubåtars:atomubåtarna:atomubåtarnas
+COMPOUND(548266, 552066): atom + ubåt
+CUSTOM: y y atomubåts
+769008r4<substantiv>atomur:atomur:atomurs:atomuret:atomurets:atomur:atomurs:atomuren:atomurens
+COMPOUND(548266, 553080): atom + ur
+875202r4<substantiv>atomvikt:atomvikt:atomvikts:atomvikten:atomviktens:atomvikter:atomvikters:atomvikterna:atomvikternas
+COMPOUND(548266, 550771): atom + vikt
+623771r3<adjektiv>atomär:atomär:atomärt:atomära:atomära::::
+616382r3<adjektiv>atonal:atonal:atonalt:atonala:atonala::::
+967925r3<substantiv>atonalitet:atonalitet:atonalitets:atonaliteten:atonalitetens::::
+CUSTOM: y n
+784314r3<substantiv>atoni:atoni:atonis:atonin:atonins::::
+CUSTOM: y n
+731218r4<substantiv>atopi:atopi:atopis:atopin:atopins::::
+DEFINITION 1: Medfödd överkänslighet mot vissa ämnen.
+CUSTOM: n n
+579054r3<adjektiv>atoxisk:atoxisk:atoxiskt:atoxiska:atoxiska::::
+CUSTOM: n n
+570962r3<adjektiv>ATP-grundande:ATP-grundande:ATP-grundande:ATP-grundande:ATP-grundande:!:!:!:
+CUSTOM: n n
+780845r4<substantiv>atrium:atrium:atriums:atriet:atriets:atrier:atriers:atrierna:atriernas
+960455r4<substantiv>atriumhus:atriumhus:atriumhus:atriumhuset:atriumhusets:atriumhus:atriumhus:atriumhusen:atriumhusens
+COMPOUND(780845, 552480): atrium + hus
+616385r4<substantiv>atrofi:atrofi:atrofis:atrofin:atrofins:atrofier:atrofiers:atrofierna:atrofiernas
+DEFINITION 1: Förtvining
+588675r4<verb>atrofiera:atrofiera:atrofierade:atrofierat:atrofierar:atrofiera:atrofieras:atrofierades:atrofierats:atrofieras:::::
+699999r3<adjektiv>atrofierad:atrofierad:atrofierat:atrofierade:atrofierade:!:!:!:
+579057r3<adjektiv>atrofisk:atrofisk:atrofiskt:atrofiska:atrofiska::::
+616393r4<substantiv>atropin:atropin:atropins:atropinet, atropinen:atropinets, atropinens::::
+557843r3<konjunktion>att:att
+557844r3<infinitivmärke>att:att
+616399r3<substantiv>attaché:attaché:attachés:attachén:attachéns:attachéer:attachéers:attachéerna:attachéernas
+CUSTOM: y y attaché
+616407r3<substantiv>attachéportfölj:attachéportfölj:attachéportföljs:attachéportföljen:attachéportföljens:attachéportföljer:attachéportföljers:attachéportföljerna:attachéportföljernas
+616415r3<substantiv>attachéväska:attachéväska:attachéväskas:attachéväskan:attachéväskans:attachéväskor:attachéväskors:attachéväskorna:attachéväskornas
+548268r9<substantiv>attack:attack:attacks:attacken:attackens:attacker:attackers:attackerna:attackernas
+CUSTOM: y y attack
+546112r5<verb>attackera:attackera:attackerade:attackerat:attackerar:attackera:attackeras:attackerades:attackerats:attackeras:attackerad:attackerat:attackerade:attackerande:
+616423r3<substantiv>attan:attan:::::::
+787434r3<adverb>attans:attans
+875221r5<egennamn>Attefall:Attefall:Attefalls
+552195r4<substantiv>attentat:attentat:attentats:attentatet:attentatets:attentat:attentats:attentaten:attentatens
+CUSTOM: y y attentats +attentats
+859263r3<substantiv>attentator:attentator:attentators:attentatorn:attentatorns:attentatorer:attentatorers:attentatorerna:attentatorernas
+876210r4<substantiv>attentatsman:attentatsman:attentatsmans:attentatsmannen:attentatsmannens:attentatsmän:attentatsmäns:attentatsmännen:attentatsmännens
+COMPOUND(552195, 557796): attentat + man
+896283r3<egennamn>Atterbom:Atterbom:Atterboms
+548269r4<substantiv>attest:attest:attests:attesten:attestens:attester:attesters:attesterna:attesternas
+CUSTOM: y y attest
+780854r3<substantiv>attestant:attestant:attestants:attestanten:attestantens:attestanter:attestanters:attestanterna:attestanternas
+898651r4<adjektiv>attestberättigad:attestberättigad:attestberättigat:attestberättigade:attestberättigade:!:!:!:::::::::
+COMPOUND(548269, 571319): attest + berättigad
+586047r5<verb>attestera:attestera:attesterade:attesterat:attesterar:attestera:attesteras:attesterades:attesterats:attesteras:attesterad:attesterat:attesterade:attesterande:
+780863r4<substantiv>attestering:attestering:attesterings:attesteringen:attesteringens:attesteringar:attesteringars:attesteringarna:attesteringarnas
+CUSTOM: y y attesterings
+780871r4<substantiv>attesteringsrätt:attesteringsrätt:attesteringsrätts:attesteringsrätten:attesteringsrättens:attesteringsrätter:attesteringsrätters:attesteringsrätterna:attesteringsrätternas
+COMPOUND(780863, 603413): attestering + rätt
+548271r3<substantiv>attiralj:attiralj:attiraljs:attiraljen:attiraljens:attiraljer:attiraljers:attiraljerna:attiraljernas
+889822r3<substantiv>attiraljer:::::attiraljer:attiraljers:attiraljerna:attiraljernas
+579060r3<adjektiv>attisk:attisk:attiskt:attiska:attiska::::
+548273r5<substantiv>attityd:attityd:attityds:attityden:attitydens:attityder:attityders:attityderna:attitydernas
+CUSTOM: y y attityd +attityd
+606169r3<substantiv>attitydförändring:attitydförändring:attitydförändrings:attitydförändringen:attitydförändringens:attitydförändringar:attitydförändringars:attitydförändringarna:attitydförändringarnas
+CUSTOM: y y attitydförändrings
+546113r4<verb>attrahera:attrahera:attraherade:attraherat:attraherar:attrahera:attraheras:attraherades:attraherats:attraheras:attraherad:attraherat:attraherade:attraherande:
+967930r3<substantiv>attrahering:attrahering:attraherings:attraheringen:attraheringens::::
+623774r4<substantiv>attraktion:attraktion:attraktions:attraktionen:attraktionens:attraktioner:attraktioners:attraktionerna:attraktionernas
+CUSTOM: y y attraktions
+564637r4<adjektiv>attraktiv:attraktiv:attraktivt:attraktiva:attraktiva:attraktivare:attraktivast:attraktivaste:attraktive
+623775r3<substantiv>attraktivitet:attraktivitet:attraktivitets:attraktiviteten:attraktivitetens:!:!:!:!
+CUSTOM: y y attraktivitets
+548274r3<substantiv>attrapp:attrapp:attrapps:attrappen:attrappens:attrapper:attrappers:attrapperna:attrappernas
+588679r3<verb>attrappera:attrappera:attrapperade:attrapperat:attrapperar:attrappera:::::::::
+586048r4<verb>attribuera:attribuera:attribuerade:attribuerat:attribuerar:attribuera:attribueras:attribuerades:attribuerats:attribueras:attribuerad:attribuerat:attribuerade:attribuerande:
+967934r3<substantiv>attribuering:attribuering:attribuerings:attribueringen:attribueringens:attribueringar:attribueringars:attribueringarna:attribueringarnas
+552197r4<substantiv>attribut:attribut:attributs:attributet:attributets:attribut:attributs:attributen:attributens
+CUSTOM: y y attribut
+637063r4<substantiv>attribution:attribution:attributions:attributionen:attributionens:attributioner:attributioners:attributionerna:attributionernas
+CUSTOM: y y attributions
+797223r3<adjektiv>attributiv:attributiv:attributivt:attributiva:attributiva::::
+623779r3<substantiv>atypi:atypi:atypis:atypin:atypins:atypier:atypiers:atypierna:atypiernas
+CUSTOM: y n
+579062r4<adjektiv>atypisk:atypisk:atypiskt:atypiska:atypiska::::atypiske
+CUSTOM: y n
+616451r3<substantiv>aubergine:aubergine:aubergines:auberginen:auberginens:auberginer:auberginers:auberginerna:auberginernas
+CUSTOM: y y aubergine
+762194r3<egennamn>Audi:Audi:Audis
+CUSTOM: y n Audi
+548276r3<substantiv>audiens:audiens:audiens:audiensen:audiensens:audienser:audiensers:audienserna:audiensernas
+CUSTOM: y y audiens
+599218r3<substantiv>audienssal:audienssal:audienssals:audienssalen:audienssalens:audienssalar:audienssalars:audienssalarna:audienssalarnas
+627586r3<substantiv>audiofil:audiofil:audiofils:audiofilen:audiofilens:audiofiler:audiofilers:audiofilerna:audiofilernas
+780872r3<substantiv>audiogram:audiogram:audiograms:audiogrammet:audiogrammets:audiogram:audiograms:audiogrammen:audiogrammens
+780878r3<substantiv>audiologi:audiologi:audiologis:audiologin:audiologins::::
+579063r3<adjektiv>audiologisk:audiologisk:audiologiskt:audiologiska:audiologiska::::
+859278r3<substantiv>audiometer:audiometer:audiometers:audiometern:audiometerns:audiometrar:audiometrars:audiometrarna:audiometrarnas
+780886r3<substantiv>audionom:audionom:audionoms:audionomen:audionomens:audionomer:audionomers:audionomerna:audionomernas
+752067r3<adjektiv>audiovisuell:audiovisuell:audiovisuellt:audiovisuella:audiovisuella:!:!:!:
+937115r3<substantiv>audition:audition:auditions:auditionen:auditionens:auditioner:auditioners:auditionerna:auditionernas
+623787r4<adjektiv>auditiv:auditiv:auditivt:auditiva:auditiva::::auditive
+616424r3<substantiv>auditorium:auditorium:auditoriums:auditoriet:auditoriets:auditorier:auditoriers:auditorierna:auditoriernas
+CUSTOM: y y auditorie
+616426r3<substantiv>auditör:auditör:auditörs:auditören:auditörens:auditörer:auditörers:auditörerna:auditörernas
+797226r3<adjektiv>audivisuell:audivisuell:audivisuellt:audivisuella:audivisuella::::
+967942r3<adjektiv>augsburgsk:augsburgsk:augsburgskt:augsburgska:augsburgska::::augsburgske::::::::
+554490r3<egennamn>August:August:Augusts
+CUSTOM: y n August
+990123r3<egennamn>Augusta:Augusta:Augustas
+559260r8<substantiv>augusti:augusti:augustis:!:!:!:!:!:!
+CUSTOM: y n augusti
+947324r4<substantiv>augustidag:augustidag:augustidags:augustidagen:augustidagens:augustidagar:augustidagars:augustidagarna:augustidagarnas
+COMPOUND(559260, 551009): augusti + dag
+947333r4<substantiv>augustikväll:augustikväll:augustikvälls:augustikvällen:augustikvällens:augustikvällar:augustikvällars:augustikvällarna:augustikvällarnas
+COMPOUND(559260, 551653): augusti + kväll
+772877r4<substantiv>augustimorgon:augustimorgon:augustimorgons:augustimorgonen:augustimorgonens:augustimorgnar:augustimorgnars:augustimorgnarna:augustimorgnarnas
+COMPOUND(559260, 619001): augusti + morgon
+CUSTOM: n n 
+967952r3<substantiv>augustinerkloster:augustinerkloster:augustinerklosters:augustinerklostret:augustinerklostrets:augustinerkloster:augustinerklosters:augustinerklostren:augustinerklostrens
+967960r3<substantiv>augustinerorden:::augustinerorden:augustinerordens::::
+967946r3<substantiv>augustinkloster:augustinkloster:augustinklosters:augustinklostret:augustinklostrets:augustinkloster:augustinklosters:augustinklostren:augustinklostrens
+967958r3<substantiv>augustinorden:::augustinorden:augustinordens::::
+855169r3<egennamn>Augustsson:Augustsson:Augustssons
+562976r3<egennamn>Augustus:Augustus:Augustus
+548277r6<substantiv>auktion:auktion:auktions:auktionen:auktionens:auktioner:auktioners:auktionerna:auktionernas
+CUSTOM: y y auktions +auktions
+546114r6<verb>auktionera:auktionera:auktionerade:auktionerat:auktionerar:auktionera:auktioneras:auktionerades:auktionerats:auktioneras:auktionerad:auktionerat:auktionerade:auktionerande:
+912461r3<substantiv>auktionering:auktionering:auktionerings:auktioneringen:auktioneringens::::
+780895r3<substantiv>auktionist:auktionist:auktionists:auktionisten:auktionistens:auktionister:auktionisters:auktionisterna:auktionisternas
+756365r4<substantiv>auktionsbud:auktionsbud:auktionsbuds:auktionsbudet:auktionsbudets:auktionsbud:auktionsbuds:auktionsbuden:auktionsbudens
+COMPOUND(548277, 552287): auktion + bud
+918957r4<substantiv>auktionsvin:auktionsvin:auktionsvins:auktionsvinet:auktionsvinets:auktionsviner:auktionsviners:auktionsvinerna:auktionsvinernas
+COMPOUND(548277, 600515): auktion + vin
+896008r3<substantiv>auktor:auktor:auktors:auktorn:auktorns:auktorer:auktorers:auktorerna:auktorernas
+780903r4<substantiv>auktorisation:auktorisation:auktorisations:auktorisationen:auktorisationens:auktorisationer:auktorisationers:auktorisationerna:auktorisationernas
+CUSTOM: y y auktorisations
+780911r4<substantiv>auktorisationsregister:auktorisationsregister:auktorisationsregisters:auktorisationsregistret:auktorisationsregistrets:auktorisationsregister:auktorisationsregisters:auktorisationsregistren:auktorisationsregistrens
+COMPOUND(780903, 621710): auktorisation + register
+546115r5<verb>auktorisera:auktorisera:auktoriserade:auktoriserat:auktoriserar:auktorisera:auktoriseras:auktoriserades:auktoriserats:auktoriseras:auktoriserad:auktoriserat:auktoriserade:auktoriserande:
+789914r3<adjektiv>auktoriserad:auktoriserad:auktoriserat:auktoriserade:auktoriserade:!:!:!:
+780912r3<substantiv>auktorisering:auktorisering:auktoriserings:auktoriseringen:auktoriseringens:auktoriseringar:auktoriseringars:auktoriseringarna:auktoriseringarnas
+632231r3<adjektiv>auktoritativ:auktoritativ:auktoritativt:auktoritativa:auktoritativa::::auktoritative
+548278r4<substantiv>auktoritet:auktoritet:auktoritets:auktoriteten:auktoritetens:auktoriteter:auktoriteters:auktoriteterna:auktoriteternas
+CUSTOM: y y auktoritets
+882473r4<substantiv>auktoritetstro:auktoritetstro:auktoritetstros:auktoritetstron:auktoritetstrons:!:!:!:!
+COMPOUND(548278, 624935): auktoritet + tro
+564583r4<adjektiv>auktoritär:auktoritär:auktoritärt:auktoritära:auktoritära:auktoritärare:auktoritärast:auktoritäraste:auktoritäre
+616434r4<substantiv>aula:aula:aulas:aulan:aulans:aulor:aulors:aulorna:aulornas
+DEFINITION 1: Högtidsal, samlingssal [ i skola eller akademi ]
+719517r3<egennamn>Aulestad:Aulestad:Aulestads
+874601r3<egennamn>Aung San Suu Kyi:Aung San Suu Kyi:Aung San Suu Kyis
+616450r3<adverb>au pair:au pair
+616441r3<substantiv>au pair:au pair:au pairs:au pairen:au pairens:au pairer:au pairers:au pairerna:au pairernas
+CUSTOM: y n
+623790r4<substantiv>aura:aura:auras:auran:aurans:auror:aurors:aurorna:aurornas
+CUSTOM: y n
+553619r3<egennamn>Aurora:Aurora:Auroras
+635727r7<egennamn>Auschwitz:Auschwitz:Auschwitz
+CUSTOM: y n Auschwitz
+705695r3<substantiv>auskultant:auskultant:auskultants:auskultanten:auskultantens:auskultanter:auskultanters:auskultanterna:auskultanternas
+705687r3<substantiv>auskultation:auskultation:auskultations:auskultationen:auskultationens:auskultationer:auskultationers:auskultationerna:auskultationernas
+588683r4<verb>auskultera:auskultera:auskulterade:auskulterat:auskulterar:auskultera:auskulteras:auskulterades:auskulterats:auskulteras:auskulterad:auskulterat:auskulterade:auskulterande:
+780921r3<substantiv>auskultering:auskultering:auskulterings:auskulteringen:auskulteringens::::
+705703r3<substantiv>auspic

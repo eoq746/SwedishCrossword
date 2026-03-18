@@ -1,0 +1,655 @@
+ojkarna:jojkarnas
+CUSTOM: y n
+869411r3<verb>jojka:jojka:jojkade:jojkat:jojkar:jojka:jojkas:jojkades:jojkats:jojkas::::jojkande:
+CUSTOM: y n
+981243r3<substantiv>jojkare:jojkare:jojkares:jojkaren:jojkarens:jojkare:jojkares:jojkarna:jojkarnas
+CUSTOM: y n
+563008r8<substantiv>jojksång:jojksång:jojksångs:jojksången:jojksångens:jojksånger:jojksångers:jojksångerna:jojksångernas
+624483r4<substantiv>jojo:jojo:jojos:jojon:jojons:jojoar:jojoars:jojoarna:jojoarnas
+638185r4<substantiv>joker:joker:jokers:jokern:jokerns:jokrar:jokrars:jokrarna:jokrarnas
+CUSTOM: y y joker
+764181r3<substantiv>jokertecken::::::::
+COMPOUND(638185, 559296): joker + tecken
+554264r3<egennamn>Jokkmokk:Jokkmokk:Jokkmokks
+CUSTOM: y n Jokkmokks
+972374r3<egennamn>Joline:Joline:Jolines
+599835r3<substantiv>jolle:jolle:jolles:jollen:jollens:jollar:jollars:jollarna:jollarnas
+692782r3<substantiv>joller:joller:jollers:jollret:jollrets::::
+547057r5<verb>jollra:jollra:jollrade:jollrat:jollrar:jollra:jollras:jollrades:jollrats:jollras::::jollrande:
+815828r5<substantiv>jollrande:jollrande:jollrandes:jollrandet:jollrandets::::
+573484r3<adjektiv>jollrig:jollrig:jollrigt:jollriga:jollriga::::
+573487r4<adjektiv>jolmig:jolmig:jolmigt:jolmiga:jolmiga:jolmigare:jolmigast:jolmigaste:
+573490r3<adjektiv>joltig:joltig:joltigt:joltiga:joltiga::::
+627750r6<substantiv>jon:jon:jons:jonen:jonens:joner:joners:jonerna:jonernas
+CUSTOM: y n
+554651r3<egennamn>Jonas:Jonas:Jonas
+553449r3<egennamn>Jonasson:Jonasson:Jonassons
+972135r3<egennamn>Jonatan:Jonatan:Jonatans
+762308r5<egennamn>Jonathan:Jonathan:Jonathans
+875282r4<substantiv>jonbindning:jonbindning:jonbindnings:jonbindningen:jonbindningens:jonbindningar:jonbindningars:jonbindningarna:jonbindningarnas
+COMPOUND(627750, 592779): jon + bindning
+843565r3<substantiv>jonbytare:jonbytare:jonbytares:jonbytaren:jonbytarens:jonbytare:jonbytares:jonbytarna:jonbytarnas
+553236r3<egennamn>Jones:Jones:Jones
+586988r4<verb>jonglera:jonglera:jonglerade:jonglerat:jonglerar:jonglera:jongleras:jonglerades:jonglerats:jongleras::::jonglerande:
+764188r3<substantiv>jonglering:jonglering:jonglerings:jongleringen:jongleringens:jongleringar:jongleringars:jongleringarna:jongleringarnas
+549385r3<substantiv>jonglör:jonglör:jonglörs:jonglören:jonglörens:jonglörer:jonglörers:jonglörerna:jonglörernas
+764203r4<substantiv>jonisation:jonisation:jonisations:jonisationen:jonisationens:jonisationer:jonisationers:jonisationerna:jonisationernas
+CUSTOM: y y jonisations
+764211r3<substantiv>jonisationskammare::::::::
+COMPOUND(764203, 559310): jonisation + kammare
+589736r5<verb>jonisera:jonisera:joniserade:joniserat:joniserar:jonisera:joniseras:joniserades:joniserats:joniseras:joniserad:joniserat:joniserade:joniserande:
+569279r3<adjektiv>joniserbar:joniserbar:joniserbart:joniserbara:joniserbara::::
+843579r4<substantiv>jonisering:jonisering:joniserings:joniseringen:joniseringens::::
+CUSTOM: y y joniserings
+843583r4<substantiv>joniseringstid:joniseringstid:joniseringstids:joniseringstiden:joniseringstidens:joniseringstider:joniseringstiders:joniseringstiderna:joniseringstidernas
+COMPOUND(843579, 550665): jonisering + tid
+581072r3<adjektiv>jonisk:jonisk:joniskt:joniska:joniska::::
+971969r3<egennamn>Jonna:Jonna:Jonnas
+554653r3<egennamn>Jonny:Jonny:Jonnys
+692787r3<substantiv>jonosfär:jonosfär:jonosfärs:jonosfären:jonosfärens::::
+581075r3<adjektiv>jonosfärisk:jonosfärisk:jonosfäriskt:jonosfäriska:jonosfäriska::::
+553451r3<egennamn>Jonsson:Jonsson:Jonssons
+598410r25<substantiv>jord:jord:jords:jorden:jordens:jordar:jordars:jordarna:jordarnas
+CUSTOM: y y jord
+547058r4<verb>jorda:jorda:jordade:jordat:jordar:jorda:jordas:jordades:jordats:jordas:jordad:jordat:jordade::
+658706r4<substantiv>jordabalk:jordabalk:jordabalks:jordabalken:jordabalkens:jordabalkar:jordabalkars:jordabalkarna:jordabalkarnas
+843595r3<substantiv>jordafärd:jordafärd:jordafärds:jordafärden:jordafärdens:jordafärder:jordafärders:jordafärderna:jordafärdernas
+843603r3<substantiv>jordagods:jordagods:jordagods:jordagodset:jordagodsets:jordagods:jordagods:jordagodsen:jordagodsens
+843608r4<substantiv>jordande:jordande:jordandes:jordanden:jordandens:jordandar:jordandars:jordandarna:jordandarnas
+COMPOUND(598410, 614408): jord + ande
+554043r3<egennamn>Jordanien:Jordanien:Jordaniens
+CUSTOM: y n Jordanien
+764182r3<substantiv>jordanier:jordanier:jordaniers:jordaniern:jordanierns:jordanier:jordaniers:jordanierna:jordaniernas
+692793r3<adjektiv>jordansk:jordansk:jordanskt:jordanska:jordanska:!:!:!:jordanske
+869421r3<substantiv>jordanska:jordanska:jordanskas:jordanskan:jordanskans:jordanskor:jordanskors:jordanskorna:jordanskornas
+769205r4<substantiv>jordart:jordart:jordarts:jordarten:jordartens:jordarter:jordarters:jordarterna:jordarternas
+COMPOUND(598410, 548244): jord + art
+CUSTOM: y y jordarts
+792440r3<adjektiv>jordartad:jordartad:jordartat:jordartade:jordartade:!:!:!:
+944759r4<substantiv>jordbeck:jordbeck:jordbecks:jordbecket:jordbeckets::::
+COMPOUND(598410, 648974): jord + beck
+664195r16<substantiv>jordbeska:jordbeska:jordbeskas:jordbeskan:jordbeskans::::
+COMPOUND(598410, 766598): jord + beska
+769213r4<substantiv>jordbi:jordbi:jordbis:jordbiet:jordbiets:jordbin:jordbins:jordbina:jordbinas
+COMPOUND(598410, 556435): jord + bi
+892708r3<substantiv>jordbo:jordbo:jordbos:jordbon:jordbons:jordbor:jordbors:jordborna:jordbornas
+607429r7<substantiv>jordbruk:jordbruk:jordbruks:jordbruket:jordbrukets:jordbruk:jordbruks:jordbruken:jordbrukens
+CUSTOM: y y jordbruks
+609696r3<substantiv>jordbrukare:jordbrukare:jordbrukares:jordbrukaren:jordbrukarens:jordbrukare:jordbrukares:jordbrukarna:jordbrukarnas
+CUSTOM: y y jordbrukar
+692794r4<substantiv>jordbruksbygd:jordbruksbygd:jordbruksbygds:jordbruksbygden:jordbruksbygdens:jordbruksbygder:jordbruksbygders:jordbruksbygderna:jordbruksbygdernas
+COMPOUND(607429, 548490): jordbruk + bygd
+712695r11<substantiv>jordbruksdepartement:jordbruksdepartement:jordbruksdepartements:jordbruksdepartementet:jordbruksdepartementets:jordbruksdepartement:jordbruksdepartements:jordbruksdepartementen:jordbruksdepartementens
+COMPOUND(607429, 552309): jordbruk + departement
+602359r3<substantiv>jordbruksmaskin:jordbruksmaskin:jordbruksmaskins:jordbruksmaskinen:jordbruksmaskinens:jordbruksmaskiner:jordbruksmaskiners:jordbruksmaskinerna:jordbruksmaskinernas
+610810r3<substantiv>jordbruksmaskinindustri:jordbruksmaskinindustri:jordbruksmaskinindustris:jordbruksmaskinindustrin:jordbruksmaskinindustrins:jordbruksmaskinindustrier:jordbruksmaskinindustriers:jordbruksmaskinindustrierna:jordbruksmaskinindustriernas
+712479r4<substantiv>jordbrukspolitik:jordbrukspolitik:jordbrukspolitiks:jordbrukspolitiken:jordbrukspolitikens::::
+COMPOUND(607429, 550224): jordbruk + politik
+581078r3<adjektiv>jordbrukspolitisk:jordbrukspolitisk:jordbrukspolitiskt:jordbrukspolitiska:jordbrukspolitiska::::
+719317r4<substantiv>jordbruksredskap:jordbruksredskap:jordbruksredskaps:jordbruksredskapet:jordbruksredskapets:jordbruksredskap:jordbruksredskaps:jordbruksredskapen:jordbruksredskapens
+COMPOUND(607429, 552821): jordbruk + redskap
+612605r3<substantiv>jordbrukssamhälle:jordbrukssamhälle:jordbrukssamhälles:jordbrukssamhället:jordbrukssamhällets:jordbrukssamhällen:jordbrukssamhällens:jordbrukssamhällena:jordbrukssamhällenas
+581081r3<adjektiv>jordbruksteknisk:jordbruksteknisk:jordbrukstekniskt:jordbrukstekniska:jordbrukstekniska::::
+597051r3<substantiv>jordbävning:jordbävning:jordbävnings:jordbävningen:jordbävningens:jordbävningar:jordbävningars:jordbävningarna:jordbävningarnas
+CUSTOM: y y jordbävnings
+792444r3<adjektiv>jordbävningsdrabbad:jordbävningsdrabbad:jordbävningsdrabbat:jordbävningsdrabbade:jordbävningsdrabbade:!:!:!:
+563883r3<adjektiv>jordbävningsfri:jordbävningsfri:jordbävningsfritt:jordbävningsfria:jordbävningsfria::::
+843616r4<substantiv>jordebok:jordebok:jordeboks:jordeboken:jordebokens:jordeböcker:jordeböckers:jordeböckerna:jordeböckernas
+COMPOUND(598410, 555346): jord + bok
+737850r4<substantiv>jordeliv:jordeliv:jordelivs:jordelivet:jordelivets:!:!:!:!
+COMPOUND(598410, 552667): jord + liv
+843624r3<substantiv>jordemoder:jordemoder:jordemoders:jordemodern:jordemoderns::::
+981248r4<substantiv>jordemor:jordemoder, jordemor:jordemoders, jordemors:jordemodern:jordemoderns:jordemödrar:jordemödrars:jordemödrarna:jordemödrarnas
+COMPOUND(598410, 556181): jord + mor, moder
+961783r3<substantiv>jordenruntresa:jordenruntresa:jordenruntresas:jordenruntresan:jordenruntresans:jordenruntresor:jordenruntresors:jordenruntresorna:jordenruntresornas
+961791r3<substantiv>jordenruntsegling:jordenruntsegling:jordenruntseglings:jordenruntseglingen:jordenruntseglingens:jordenruntseglingar:jordenruntseglingars:jordenruntseglingarna:jordenruntseglingarnas
+931152r5<substantiv>jordfel:jordfel:jordfels:jordfelet:jordfelets:jordfel:jordfels:jordfelen:jordfelens
+COMPOUND(598410, 552375): jord + fel
+692812r4<substantiv>jordfelsbrytare:jordfelsbrytare:jordfelsbrytares:jordfelsbrytaren:jordfelsbrytarens:jordfelsbrytare:jordfelsbrytares:jordfelsbrytarna:jordfelsbrytarnas
+COMPOUND(931152, 615174): jordfel + brytare
+CUSTOM: y y jordfelsbrytar
+935116r4<substantiv>jordfräs:jordfräs:jordfräs:jordfräsen:jordfräsens:jordfräsar:jordfräsars:jordfräsarna:jordfräsarnas
+COMPOUND(598410, 551191): jord + fräs
+692798r5<verb>jordfästa:jordfästa:jordfäste:jordfäst:jordfäster:jordfäst:jordfästas:jordfästes:jordfästs:jordfästs:jordfäst:jordfäst:jordfästa:jordfästande:
+COMPOUND(598410, 562221): jord + fästa
+597052r3<substantiv>jordfästning:jordfästning:jordfästnings:jordfästningen:jordfästningens:jordfästningar:jordfästningars:jordfästningarna:jordfästningarnas
+CUSTOM: y y jordfästnings
+685627r4<substantiv>jordförbindelse:jordförbindelse:jordförbindelses:jordförbindelsen:jordförbindelsens:jordförbindelser:jordförbindelsers:jordförbindelserna:jordförbindelsernas
+COMPOUND(598410, 611872): jord + förbindelse
+CUSTOM: y y jordförbindelse
+678607r4<substantiv>jordglob:jordglob:jordglobs:jordgloben:jordglobens:jordglober:jordglobers:jordgloberna:jordglobernas
+COMPOUND(598410, 549104): jord + glob
+802028r3<adjektiv>jordgrå:jordgrå:jordgrått:jordgråa:jordgråa::::
+556009r5<substantiv>jordgubbe:jordgubbe:jordgubbes:jordgubben:jordgubbens:jordgubbar:jordgubbars:jordgubbarna:jordgubbarnas
+CUSTOM: y y jordgubbs
+692804r4<substantiv>jordgubbsland:jordgubbsland:jordgubbslands:jordgubbslandet:jordgubbslandets:jordgubbsland:jordgubbslands:jordgubbslanden:jordgubbslandens
+COMPOUND(556009, 556252): jordgubbe + land
+919137r4<substantiv>jordgubbsvin:jordgubbsvin:jordgubbsvins:jordgubbsvinet:jordgubbsvinets:jordgubbsviner:jordgubbsviners:jordgubbsvinerna:jordgubbsvinernas
+COMPOUND(556009, 600515): jordgubbe + vin
+850520r3<substantiv>jordhög:jordhög:jordhögs:jordhögen:jordhögens:jordhögar:jordhögars:jordhögarna:jordhögarnas
+573493r4<adjektiv>jordig:jordig:jordigt:jordiga:jordiga:jordigare:jordigast:jordigaste:
+876449r3<substantiv>jordinnehav:jordinnehav:jordinnehavs:jordinnehavet:jordinnehavets:jordinnehav:jordinnehavs:jordinnehaven:jordinnehavens
+581084r4<adjektiv>jordisk:jordisk:jordiskt:jordiska:jordiska:!:!:!:jordiske
+607432r3<substantiv>jordklot:jordklot:jordklots:jordklotet:jordklotets:jordklot:jordklots:jordkloten:jordklotens
+859842r3<substantiv>jordkoka:jordkoka:jordkokas:jordkokan:jordkokans:jordkokor:jordkokors:jordkokorna:jordkokornas
+692808r3<substantiv>jordloppa:jordloppa:jordloppas:jordloppan:jordloppans:jordloppor:jordloppors:jordlopporna:jordloppornas
+564935r3<adjektiv>jordlös:jordlös:jordlöst:jordlösa:jordlösa::::
+581085r3<adjektiv>jordmagnetisk:jordmagnetisk:jordmagnetiskt:jordmagnetiska:jordmagnetiska::::
+692810r4<substantiv>jordmån:jordmån:jordmåns:jordmånen:jordmånens:jordmåner:jordmåners:jordmånerna:jordmånernas
+CUSTOM: y y jordmåns
+705935r4<substantiv>jordmånstyp:jordmånstyp:jordmånstyps:jordmånstypen:jordmånstypens:jordmånstyper:jordmånstypers:jordmånstyperna:jordmånstypernas
+COMPOUND(692810, 550722): jordmån + typ
+981261r3<substantiv>jordning:jordning:jordnings:jordningen:jordningens::::
+CUSTOM: y n
+692819r3<adjektiv>jordnära:jordnära:jordnära:jordnära:jordnära:!:!:!:
+692820r6<substantiv>jordnöt:jordnöt:jordnöts:jordnöten:jordnötens:jordnötter:jordnötters:jordnötterna:jordnötternas
+COMPOUND(598410, 561944): jord + nöt
+CUSTOM: y y jordnöts
+705943r4<substantiv>jordnötssmör:jordnötssmör:jordnötssmörs:jordnötssmöret:jordnötssmörets:!:!:!:!
+COMPOUND(692820, 622554): jordnöt + smör
+915566r4<substantiv>jordnötssås:jordnötssås:jordnötssås:jordnötssåsen:jordnötssåsens:jordnötssåser:jordnötssåsers:jordnötssåserna:jordnötssåsernas
+COMPOUND(692820, 556707): jordnöt + sås
+638194r4<substantiv>jordskalv:jordskalv:jordskalvs:jordskalvet:jordskalvets:jordskalv:jordskalvs:jordskalven:jordskalvens
+COMPOUND(598410, 556119): jord + skalv
+CUSTOM: y y jordskalvs
+638200r4<substantiv>jordskorpa:jordskorpa:jordskorpas:jordskorpan:jordskorpans:jordskorpor:jordskorpors:jordskorporna:jordskorpornas
+COMPOUND(598410, 595158): jord + skorpa
+701949r4<substantiv>jordskred:jordskred:jordskreds:jordskredet:jordskredets:jordskred:jordskreds:jordskreden:jordskredens
+CUSTOM: y y jordskreds
+701955r4<substantiv>jordskredsseger:jordskredsseger:jordskredssegers:jordskredssegern:jordskredssegerns:jordskredssegrar:jordskredssegrars:jordskredssegrarna:jordskredssegrarnas
+COMPOUND(701949, 556336): jordskred + seger
+843631r3<substantiv>jordskyld:jordskyld:jordskylds:jordskylden:jordskyldens:jordskylder:jordskylders:jordskylderna:jordskyldernas
+638208r4<substantiv>jordslag:jordslag:jordslags:jordslaget:jordslagets:jordslag:jordslags:jordslagen:jordslagens
+COMPOUND(598410, 608035): jord + slag
+638186r3<substantiv>jordslutningsreaktor:jordslutningsreaktor:jordslutningsreaktors:jordslutningsreaktorn:jordslutningsreaktorns:jordslutningsreaktorer:jordslutningsreaktorers:jordslutningsreaktorerna:jordslutningsreaktorernas
+846100r4<verb>jordslå:jordslå:jordslog:jordslagit:jordslår:jordslå:jordslås:jordslogs:jordslagits:jordslås:jordslagen:jordslaget:jordslagna::
+COMPOUND(598410, 558224): jord + slå
+989749r3<adjektiv>jordstampad:jordstampad:jordstampat:jordstampade:jordstampade:!:!:!:::::::::
+955877r4<substantiv>jordtistel:jordtistel:jordtistels:jordtisteln:jordtistelns:jordtistlar:jordtistlars:jordtistlarna:jordtistlarnas
+COMPOUND(598410, 672740): jord + tistel
+799695r3<adjektiv>jorduppvärmd:jorduppvärmd:jorduppvärmt:jorduppvärmda:jorduppvärmda::::
+799698r3<adjektiv>jordvärmd:jordvärmd:jordvärmt:jordvärmda:jordvärmda::::
+692821r3<substantiv>jordyta:jordyta:jordytas:jordytan:jordytans::::
+666221r3<substantiv>jordärtskocka:jordärtskocka:jordärtskockas:jordärtskockan:jordärtskockans:jordärtskockor:jordärtskockors:jordärtskockorna:jordärtskockornas
+CUSTOM: y n jordärtskocks
+628207r3<interjektion>jorå:jorå
+CUSTOM: n n n
+658600r3<substantiv>jos:jos:jos:josen:josens:joser:josers:joserna:josernas
+CUSTOM: n n n
+990284r3<egennamn>José:José:Josés
+554655r3<egennamn>Josef:Josef:Josefs
+553761r3<egennamn>Josefin:Josefin:Josefins
+553763r3<egennamn>Josefina:Josefina:Josefinas
+972354r3<egennamn>Josefine:Josefine:Josefines
+972994r3<egennamn>Josefsson:Josefsson:Josefssons
+990007r3<egennamn>Josephine:Josephine:Josephines
+624485r11<substantiv>jota:jota:jotas:jotat:jotats:jotan:jotans:jotana:jotanas
+DEFINITION 1: Nionde bokstaven i grekiska alfabetet.
+CUSTOM: n n y
+629149r4<substantiv>joule:joule:joules:joulen:joulens::::
+DEFINITION 1: Standardenheten för energi.
+CUSTOM: n n y %joulen %joulens
+549387r9<substantiv>jour:jour:jours:jouren:jourens:jourer:jourers:jourerna:jourernas
+CUSTOM: y y jour +jours
+951735r4<substantiv>jourakut:jourakut:jourakuts:jourakuten:jourakutens:jourakuter:jourakuters:jourakuterna:jourakuternas
+COMPOUND(549387, 600971): jour + akut
+936741r3<substantiv>jourbutik:jourbutik:jourbutiks:jourbutiken:jourbutikens:jourbutiker:jourbutikers:jourbutikerna:jourbutikernas
+692823r3<adjektiv>jourhavande:jourhavande:jourhavande:jourhavande:jourhavande:!:!:!:
+951745r4<substantiv>jourkomp:jourkomp:jourkomps:jourkompet:jourkompets::::
+COMPOUND(549387, 628265): jour + komp
+549389r6<substantiv>journal:journal:journals:journalen:journalens:journaler:journalers:journalerna:journalernas
+CUSTOM: y y journal
+843639r3<substantiv>journalfilm:journalfilm:journalfilms:journalfilmen:journalfilmens:journalfilmer:journalfilmers:journalfilmerna:journalfilmernas
+961800r5<verb>journalföra:journalföra:journalförde:journalfört:journalför:journalför:journalföras:journalfördes:journalförts:journalförs, journalföres:journalförd:journalfört:journalförda:journalförande:
+COMPOUND(549389, 558899): journal + föra
+692826r3<substantiv>journalföring:journalföring:journalförings:journalföringen:journalföringens::::
+CUSTOM: y y journalförings
+558313r3<substantiv>journalism:journalism:journalisms:journalismen:journalismens:!:!:!:!
+602367r7<substantiv>journalist:journalist:journalists:journalisten:journalistens:journalister:journalisters:journalisterna:journalisternas
+CUSTOM: y y journalist
+692830r4<substantiv>journalistförbund:journalistförbund:journalistförbunds:journalistförbundet:journalistförbundets:journalistförbund:journalistförbunds:journalistförbunden:journalistförbundens
+COMPOUND(602367, 552400): journalist + förbund
+951751r4<substantiv>journalisthord:journalisthord:journalisthords:journalisthorden:journalisthordens:journalisthorder:journalisthorders:journalisthorderna:journalisthordernas
+COMPOUND(602367, 549217): journalist + hord
+692836r4<substantiv>journalisthögskola:journalisthögskola:journalisthögskolas:journalisthögskolan:journalisthögskolans:journalisthögskolor:journalisthögskolors:journalisthögskolorna:journalisthögskolornas
+COMPOUND(602367, 644408): journalist + högskola
+692824r3<substantiv>journalistik:journalistik:journalistiks:journalistiken:journalistikens::::
+581088r4<adjektiv>journalistisk:journalistisk:journalistiskt:journalistiska:journalistiska::::journalistiske
+692844r4<substantiv>journalistkår:journalistkår:journalistkårs:journalistkåren:journalistkårens::::
+COMPOUND(602367, 559877): journalist + kår
+877324r3<substantiv>journalsystem::::::::
+COMPOUND(549389, 553021): journal + system
+692848r5<substantiv>jourtjänst:jourtjänst:jourtjänsts:jourtjänsten:jourtjänstens:jourtjänster:jourtjänsters:jourtjänsterna:jourtjänsternas
+DEFINITION 1: Beredskapstjänst
+COMPOUND(549387, 550677): jour + tjänst
+692856r3<substantiv>jourtjänstgöring:jourtjänstgöring:jourtjänstgörings:jourtjänstgöringen:jourtjänstgöringens::::
+CUSTOM: y y jourtjänstgörings
+692860r3<adjektiv>jouröppen:jouröppen:jouröppet:jouröppna:jouröppna:!:!:!:!
+798112r4<adjektiv>jovial:jovial:jovialt:joviala:joviala::::joviale
+581089r4<adjektiv>jovialisk:jovialisk:jovialiskt:jovialiska:jovialiska::::jovialiske
+843648r3<substantiv>jovialitet:jovialitet:jovialitets:jovialiteten:jovialitetens::::
+554952r3<interjektion>jovisst:jovisst
+559608r3<substantiv>jox:jox:jox:joxet:joxets::::
+559611r4<verb>joxa:joxa:joxade:joxat:joxar:joxa:joxas:joxades:joxats:joxas:::::
+559615r3<adjektiv>joxig:joxig:joxigt:joxiga:joxiga::::
+CUSTOM: y n
+559618r3<egennamn>Joyce:Joyce:Joyces
+941058r3<substantiv>joystick:joystick:joysticks:joysticken:joystickens:joystickar:joystickars:joystickarna:joystickarnas
+557678r3<konjunktion>ju:ju
+557677r3<adverb>ju:ju
+861645r3<egennamn>Juan:Juan:Juans
+559620r8<substantiv>jubel:jubel:jubels:jublet:jublets:!:!:!:!
+BASEWORDS: jubel
+CUSTOM: y y jubel
+780806r6<substantiv>jubeldans:jubeldans:jubeldans:jubeldansen:jubeldansens:jubeldanser:jubeldansers:jubeldanserna:jubeldansernas
+COMPOUND(559620, 548569): jubel + dans
+707747r3<substantiv>jubelidiot:jubelidiot:jubelidiots:jubelidioten:jubelidiotens:jubelidioter:jubelidioters:jubelidioterna:jubelidioternas
+850528r3<substantiv>jubelrop:jubelrop:jubelrops:jubelropet:jubelropets:jubelrop:jubelrops:jubelropen:jubelropens
+758446r4<substantiv>jubelår:jubelår:jubelårs:jubelåret:jubelårets:jubelår:jubelårs:jubelåren:jubelårens
+COMPOUND(559620, 553140): jubel + år
+786261r4<substantiv>jubelåsna:jubelåsna:jubelåsnas:jubelåsnan:jubelåsnans:jubelåsnor:jubelåsnors:jubelåsnorna:jubelåsnornas
+COMPOUND(559620, 595850): jubel + åsna
+549391r3<substantiv>jubilar:jubilar:jubilars:jubilaren:jubilarens:jubilarer:jubilarers:jubilarerna:jubilarernas
+586992r4<verb>jubilera:jubilera:jubilerade:jubilerat:jubilerar:jubilera:jubileras:jubilerades:jubilerats:jubileras::::jubilerande:
+559621r5<substantiv>jubileum:jubileum:jubileums:jubileet:jubileets:jubileer:jubileers:jubileerna:jubileernas
+CUSTOM: y y jubileums +jubileums
+740839r4<substantiv>jubileumsbok:jubileumsbok:jubileumsboks:jubileumsboken:jubileumsbokens:jubileumsböcker:jubileumsböckers:jubileumsböckerna:jubileumsböckernas
+COMPOUND(559621, 555346): jubileum + bok
+740840r4<substantiv>jubileumsår:jubileumsår:jubileumsårs:jubileumsåret:jubileumsårets:jubileumsår:jubileumsårs:jubileumsåren:jubileumsårens
+COMPOUND(559621, 553140): jubileum + år
+547059r4<verb>jubla:jubla:jublade:jublat:jublar:jubla:jublas:jublades:jublats:jublas:::::
+692864r3<adjektiv>jublande:jublande:jublande:jublande:jublande:!:!:!:
+555274r5<verb>jucka:jucka:juckade:juckat:juckar:jucka:juckas:juckades:juckats:juckas::::juckande:
+DEFINITION 1: En fram- och tillbakagående repitetiv rörelse. Exempelvis när en sil skall renas, kan den juckas i vatten. Har numera även en sexuell anspelning.
+589737r3<verb>judaisera:judaisera:judaiserade:judaiserat:judaiserar:judaisera:::::::::
+558751r3<substantiv>judaism:judaism:judaisms:judaismen:judaismens:!:!:!:!
+581090r3<adjektiv>judaistisk:judaistisk:judaistiskt:judaistiska:judaistiska::::
+843652r3<substantiv>judaskyss:judaskyss:judaskyss:judaskyssen:judaskyssens:judaskyssar:judaskyssars:judaskyssarna:judaskyssarnas
+599836r6<substantiv>jude:jude:judes:juden:judens:judar:judars:judarna:judarnas
+CUSTOM: b n
+981256r3<adjektiv>judefientlig:judefientlig:judefientligt:judefientliga:judefientliga::::judefientlige::::::::
+981265r3<substantiv>judefråga:::judefrågan:judefrågans::::
+704105r4<substantiv>judeförföljelse:judeförföljelse:judeförföljelses:judeförföljelsen:judeförföljelsens:judeförföljelser:judeförföljelsers:judeförföljelserna:judeförföljelsernas
+COMPOUND(599836, 685659): jude + förföljelse
+CUSTOM: y y judeförföljelse
+874429r4<substantiv>judeförintelse:judeförintelse:judeförintelses:judeförintelsen:judeförintelsens:!:!:!:!
+COMPOUND(599836, 690733): jude + förintelse
+724504r3<substantiv>judehat:judehat:judehats:judehatet:judehatets:!:!:!:!
+692865r3<adjektiv>judekristen:judekristen:judekristet:judekristna:judekristna:!:!:!:judekristne
+692867r3<substantiv>judendom:judendom:judendoms:judendomen:judendomens:!:!:!:!
+869437r3<substantiv>judenhet:judenhet:judenhets:judenheten:judenhetens::::
+981268r3<substantiv>judestjärna:judestjärna:judestjärnas:judestjärnan:judestjärnans:judestjärnor:judestjärnors:judestjärnorna:judestjärnornas
+949116r4<substantiv>judeutrotning:judeutrotning:judeutrotnings:judeutrotningen:judeutrotningens::::
+COMPOUND(599836, 698181): jude + utrotning
+566363r3<adjektiv>judevänlig:judevänlig:judevänligt:judevänliga:judevänliga::::
+692868r3<adjektiv>judiciell:judiciell:judiciellt:judiciella:judiciella:!:!:!:
+692869r3<substantiv>judinna:judinna:judinnas:judinnan:judinnans:judinnor:judinnors:judinnorna:judinnornas
+581093r4<adjektiv>judisk:judisk:judiskt:judiska:judiska:!:!:!:judiske
+553765r3<egennamn>Judit:Judit:Judits
+990015r3<egennamn>Judith:Judith:Judiths
+628201r3<substantiv>judo:judo:judos:judon:judons:!:!:!:!
+981276r3<substantiv>judoklubb:judoklubb:judoklubbs:judoklubben:judoklubbens:judoklubbar:judoklubbars:judoklubbarna:judoklubbarnas
+965631r3<substantiv>jugend:jugend:::::::
+843659r3<substantiv>jugendstil:jugendstil:jugendstils:jugendstilen:jugendstilens::::
+602368r3<substantiv>jugoslav:jugoslav:jugoslavs:jugoslaven:jugoslavens:jugoslaver:jugoslavers:jugoslaverna:jugoslavernas
+554044r3<egennamn>Jugoslavien:Jugoslavien:Jugoslaviens
+CUSTOM: y n Jugoslavien
+568758r4<adjektiv>jugoslavisk:jugoslavisk:jugoslaviskt:jugoslaviska:jugoslaviska:!:!:!:jugoslaviske
+594368r3<substantiv>jugoslaviska:jugoslaviska:jugoslaviskas:jugoslaviskan:jugoslaviskans:jugoslaviskor:jugoslaviskors:jugoslaviskorna:jugoslaviskornas
+906954r3<egennamn>Juholt:Juholt:Juholts
+957955r3<substantiv>juholtare:juholtare:juholtares:juholtaren:juholtarens:juholtare:juholtares:juholtarna:juholtarnas
+555891r5<substantiv>juice:juice:juices:juicen:juicens:juicer:juicers:juicerna:juicernas
+981284r3<substantiv>jujutsu:jujutsu:jujutsus:jujutsun:jujutsuns::::
+551474r3<substantiv>jukebox:jukebox:jukebox:jukeboxen:jukeboxens:jukeboxar:jukeboxars:jukeboxarna:jukeboxarnas
+788015r3<egennamn>Jukkasjärvi:Jukkasjärvi:Jukkasjärvis
+CUSTOM: y n Jukkasjärvi
+551475r50<substantiv>jul:jul:juls:julen:julens:jular:julars:jularna:jularnas
+BASEWORDS: jule, jul
+CUSTOM: y y jule jul
+924668r3<verb>jula:jula:julade:julat:jular:jula:::::::::
+CUSTOM: n n y
+638214r5<substantiv>julafton:julafton:julaftons:julaftonen:julaftonens:julaftnar:julaftnars:julaftnarna:julaftnarnas
+COMPOUND(551475, 613841): jul + afton
+CUSTOM: y y julaftons
+683043r4<substantiv>julaftonskväll:julaftonskväll:julaftonskvälls:julaftonskvällen:julaftonskvällens:julaftonskvällar:julaftonskvällars:julaftonskvällarna:julaftonskvällarnas
+COMPOUND(638214, 551653): julafton + kväll
+649176r3<substantiv>julas:!:julas:!:!:!:!:!:!
+850534r3<substantiv>julbak:julbak:julbaks:julbaket:julbakets:julbak:julbaks:julbaken:julbakens
+955950r4<substantiv>julblot:julblot:julblots:julblotet:julblotets:julblot:julblots:julbloten:julblotens
+COMPOUND(551475, 629277): jul + blot
+638220r4<substantiv>julbock:julbock:julbocks:julbocken:julbockens:julbockar:julbockars:julbockarna:julbockarnas
+COMPOUND(551475, 560573): jul + bock
+683051r4<substantiv>julbok:julbok:julboks:julboken:julbokens:julböcker:julböckers:julböckerna:julböckernas
+COMPOUND(551475, 555346): jul + bok
+683059r4<substantiv>julbord:julbord:julbords:julbordet:julbordets:julbord:julbords:julborden:julbordens
+COMPOUND(551475, 552265): jul + bord
+931158r4<substantiv>julbrev:julbrev:julbrevs:julbrevet:julbrevets:julbrev:julbrevs:julbreven:julbrevens
+COMPOUND(551475, 552270): jul + brev
+683065r4<substantiv>julbulle:julbulle:julbulles:julbullen:julbullens:julbullar:julbullars:julbullarna:julbullarnas
+COMPOUND(551475, 599788): jul + bulle
+683073r4<substantiv>julbön:julbön:julböns:julbönen:julbönens:julböner:julböners:julbönerna:julbönernas
+COMPOUND(551475, 558036): jul + bön
+692870r3<substantiv>juldag:juldag:juldags:juldagen:juldagens:juldagar:juldagars:juldagarna:juldagarnas
+CUSTOM: y y juldags
+843663r3<substantiv>juldagsmorgon:juldagsmorgon:juldagsmorgons:juldagsmorgonen:juldagsmorgonens::::
+CUSTOM: n n y
+683081r4<substantiv>juldekoration:juldekoration:juldekorations:juldekorationen:juldekorationens:juldekorationer:juldekorationers:juldekorationerna:juldekorationernas
+COMPOUND(551475, 637073): jul + dekoration
+CUSTOM: y y juldekorations
+683089r4<substantiv>julduk:julduk:julduks:julduken:juldukens:juldukar:juldukars:juldukarna:juldukarnas
+COMPOUND(551475, 551077): jul + duk
+948051r3<substantiv>julefrid:julefrid:julefrids:julefriden:julefridens::::
+638230r4<substantiv>juletid:juletid:juletids:!:!:!:!:!:!
+COMPOUND(551475, 550665): jul + tid
+638232r8<substantiv>julevangelium:julevangelium:julevangeliums:julevangeliet:julevangeliets::::
+COMPOUND(551475, 617540): jul + evangelium
+683097r4<substantiv>julferie:julferie:julferies:julferien:julferiens:julferier:julferiers:julferierna:julferiernas
+COMPOUND(551475, 689890): jul + ferie
+683098r4<substantiv>julfest:julfest:julfests:julfesten:julfestens:julfester:julfesters:julfesterna:julfesternas
+COMPOUND(551475, 548912): jul + fest
+705947r3<adjektiv>julfin:julfin:julfint:julfina:julfina:!:!:!:!
+705950r4<substantiv>julfirande:julfirande:julfirandes:julfirandet:julfirandets:julfiranden:julfirandens:julfirandena:julfirandenas
+COMPOUND(551475, 683824): jul + firande
+683100r4<substantiv>julfrid:julfrid:julfrids:julfriden:julfridens::::
+COMPOUND(551475, 617733): jul + frid
+683104r4<substantiv>julförberedelse:julförberedelse:julförberedelses:julförberedelsen:julförberedelsens:julförberedelser:julförberedelsers:julförberedelserna:julförberedelsernas
+COMPOUND(551475, 611871): jul + förberedelse
+CUSTOM: y y julförberedelse
+683112r4<substantiv>julglädje:julglädje:julglädjes:julglädjen:julglädjens::::
+COMPOUND(551475, 618111): jul + glädje
+551477r11<substantiv>julgran:julgran:julgrans:julgranen:julgranens:julgranar:julgranars:julgranarna:julgranarnas
+COMPOUND(551475, 598299): jul + gran
+CUSTOM: y y julgrans +julgrans
+630964r4<substantiv>julgransfot:julgransfot:julgransfots:julgransfoten:julgransfotens:julgransfötter:julgransfötters:julgransfötterna:julgransfötternas
+COMPOUND(551477, 555210): julgran + fot
+700253r4<substantiv>julgranshjärta:julgranshjärta:julgranshjärtas:julgranshjärtat:julgranshjärtats:julgranshjärtan:julgranshjärtans:julgranshjärtana:julgranshjärtanas
+COMPOUND(551477, 560567): julgran + hjärta
+683116r4<substantiv>julgranskaramell:julgranskaramell:julgranskaramells:julgranskaramellen:julgranskaramellens:julgranskarameller:julgranskaramellers:julgranskaramellerna:julgranskaramellernas
+COMPOUND(551477, 549473): julgran + karamell
+683124r4<substantiv>julgranskula:julgranskula:julgranskulas:julgranskulan:julgranskulans:julgranskulor:julgranskulors:julgranskulorna:julgranskulornas
+COMPOUND(551477, 559858): julgran + kula
+551478r4<substantiv>julgransplundring:julgransplundring:julgransplundrings:julgransplundringen:julgransplundringens:julgransplundringar:julgransplundringars:julgransplundringarna:julgransplundringarnas
+COMPOUND(551477, 551771): julgran + plundring
+CUSTOM: y y julgransplundrings
+840937r4<substantiv>julgranspynt:julgranspynt:julgranspynts:julgranspyntet:julgranspyntets:!:!:!:!
+COMPOUND(551477, 628588): julgran + pynt
+683132r4<substantiv>julgransstjärna:julgransstjärna:julgransstjärnas:julgransstjärnan:julgransstjärnans:julgransstjärnor:julgransstjärnors:julgransstjärnorna:julgransstjärnornas
+COMPOUND(551477, 595409): julgran + stjärna
+683140r4<substantiv>julgris:julgris:julgris:julgrisen:julgrisens:julgrisar:julgrisars:julgrisarna:julgrisarnas
+COMPOUND(551475, 598309): jul + gris
+931164r4<substantiv>julgröt:julgröt:julgröts:julgröten:julgrötens::::
+COMPOUND(551475, 559070): jul + gröt
+599837r3<substantiv>julgubbe:julgubbe:julgubbes:julgubben:julgubbens:julgubbar:julgubbars:julgubbarna:julgubbarnas
+CUSTOM: n n y
+683147r4<substantiv>julgåva:julgåva:julgåvas:julgåvan:julgåvans:julgåvor:julgåvors:julgåvorna:julgåvornas
+COMPOUND(551475, 557267): jul + gåva
+638240r4<substantiv>julhandel:julhandel:julhandels:julhandeln:julhandelns:!:!:!:!
+COMPOUND(551475, 638241): jul + handel
+928868r4<substantiv>julhelg:julhelg:julhelgs:julhelgen:julhelgens:julhelger:julhelgers:julhelgerna:julhelgernas
+COMPOUND(551475, 549211): jul + helg
+559259r9<substantiv>juli:juli:julis:!:!:!:!:!:!
+CUSTOM: y n
+553767r3<egennamn>Julia:Julia:Julias
+658037r3<substantiv>juliamängd:juliamängd:juliamängds:juliamängden:juliamängdens:juliamängder:juliamängders:juliamängderna:juliamängdernas
+869441r3<adjektiv>juliansk:juliansk:julianskt:julianska:julianska::::
+947314r4<substantiv>julidag:julidag:julidags:julidagen:julidagens:julidagar:julidagars:julidagarna:julidagarnas
+COMPOUND(559259, 551009): juli + dag
+711057r3<egennamn>Julie:Julie:Julies
+990011r3<egennamn>Juliette:Juliette:Juliettes
+566366r3<adjektiv>julig:julig:juligt:juliga:juliga::::
+959869r4<substantiv>julikväll:julikväll:julikvälls:julikvällen:julikvällens:julikvällar:julikvällars:julikvällarna:julikvällarnas
+COMPOUND(559259, 551653): juli + kväll
+772867r4<substantiv>julimorgon:julimorgon:julimorgons:julimorgonen:julimorgonens:julimorgnar:julimorgnars:julimorgnarna:julimorgnarnas
+COMPOUND(559259, 619001): juli + morgon
+734540r3<egennamn>Julius:Julius:Julius
+895019r4<substantiv>julivärme:julivärme:julivärmes:julivärmen:julivärmens:!:!:!:!
+COMPOUND(559259, 627709): juli + värme
+598411r5<substantiv>julklapp:julklapp:julklapps:julklappen:julklappens:julklappar:julklappars:julklapparna:julklapparnas
+CUSTOM: y y julklapps
+915573r4<substantiv>julklappsrim:julklappsrim:julklappsrims:julklappsrimmet:julklappsrimmets:julklappsrim:julklappsrims:julklappsrimmen:julklappsrimmens
+COMPOUND(598411, 621838): julklapp + rim
+921166r4<substantiv>julklappsvin:julklappsvin:julklappsvins:julklappsvinet:julklappsvinets:julklappsviner:julklappsviners:julklappsvinerna:julklappsvinernas
+COMPOUND(598411, 600515): julklapp + vin
+607438r3<substantiv>julkort:julkort:julkorts:julkortet:julkortets:julkort:julkorts:julkorten:julkortens
+931168r4<substantiv>julkorv:julkorv:julkorvs:julkorven:julkorvens:julkorvar:julkorvars:julkorvarna:julkorvarnas
+COMPOUND(551475, 551609): jul + korv
+692875r3<substantiv>julle:julle:julles:jullen:jullens:jullar:jullars:jullarna:jullarnas
+CUSTOM: n n y
+573496r3<adjektiv>julledig:julledig:julledigt:jullediga:jullediga::::
+638246r4<substantiv>jullov:jullov:jullovs:jullovet:jullovets:jullov:jullovs:julloven:jullovens
+COMPOUND(551475, 559035): jul + lov
+CUSTOM: y y jullovs
+915590r4<substantiv>jullåt:jullåt:jullåts:jullåten:jullåtens:jullåtar:jullåtars:jullåtarna:jullåtarnas
+COMPOUND(551475, 551711): jul + låt
+692877r4<substantiv>julmat:julmat:julmats:julmaten:julmatens:!:!:!:!
+COMPOUND(551475, 556206): jul + mat
+928876r4<substantiv>julmust:julmust:julmusts:julmusten:julmustens::::
+COMPOUND(551475, 621442): jul + must
+931176r4<substantiv>julnatt:julnatt:julnatts:julnatten:julnattens:julnätter:julnätters:julnätterna:julnätternas
+COMPOUND(551475, 555293): jul + natt
+633539r6<substantiv>julnöt:julnöt:julnöts:julnöten:julnötens:julnötter:julnötters:julnötterna:julnötternas
+COMPOUND(551475, 561944): jul + nöt
+CUSTOM: y n n
+949576r4<substantiv>julost:julost:julosts:julosten:julostens:julostar:julostars:julostarna:julostarnas
+COMPOUND(551475, 555054): jul + ost
+928880r4<substantiv>julotta:julotta:julottas:julottan:julottans:julottor:julottors:julottorna:julottornas
+COMPOUND(551475, 628469): jul + otta
+692879r4<substantiv>julpynt:julpynt:julpynts:julpyntet:julpyntets:!:!:!:!
+COMPOUND(551475, 628588): jul + pynt
+928308r4<substantiv>julros:julros:julros:julrosen:julrosens:julrosor:julrosors:julrosorna:julrosornas
+COMPOUND(551475, 556677): jul + ros
+876024r3<substantiv>julrush:julrush:julrushs:julrushen:julrushens:julrusher:julrushers:julrusherna:julrushernas
+850540r3<substantiv>julsed:julsed:julseds:julseden:julsedens:julseder:julseders:julsederna:julsedernas
+937753r4<substantiv>julskinka:julskinka:julskinkas:julskinkan:julskinkans:julskinkor:julskinkors:julskinkorna:julskinkornas
+COMPOUND(551475, 593369): jul + skinka
+928888r4<substantiv>julspel:julspel:julspels:julspelet:julspelets:julspel:julspels:julspelen:julspelens
+COMPOUND(551475, 552956): jul + spel
+692881r4<substantiv>julstämning:julstämning:julstämnings:julstämningen:julstämningens::::
+COMPOUND(551475, 665599): jul + stämning
+CUSTOM: y y julstämnings
+931184r4<substantiv>julstök:julstök:julstöks:julstöket:julstökets::::
+COMPOUND(551475, 628848): jul + stök
+931188r4<substantiv>julsång:julsång:julsångs:julsången:julsångens:julsånger:julsångers:julsångerna:julsångernas
+COMPOUND(551475, 550616): jul + sång
+915600r4<substantiv>jultal:jultal:jultals:jultalet:jultalets:jultal:jultals:jultalen:jultalens
+COMPOUND(551475, 553029): jul + tal
+CUSTOM: y n n
+928894r4<substantiv>jultid:jultid:jultids:jultiden:jultidens:jultider:jultiders:jultiderna:jultidernas
+COMPOUND(551475, 550665): jul + tid
+638253r4<substantiv>jultidning:jultidning:jultidnings:jultidningen:jultidningens:jultidningar:jultidningars:jultidningarna:jultidningarnas
+COMPOUND(551475, 555969): jul + tidning
+CUSTOM: y y jultidnings
+599845r3<substantiv>jultomte:jultomte:jultomtes:jultomten:jultomtens:jultomtar:jultomtars:jultomtarna:jultomtarnas
+931197r4<substantiv>julvisa:julvisa:julvisas:julvisan:julvisans:julvisor:julvisors:julvisorna:julvisornas
+COMPOUND(551475, 595765): jul + visa
+854493r3<egennamn>July:July:Julys
+CUSTOM: n n 
+638261r4<substantiv>julöl:julöl:julöls:julölet:julölets:julöl:julöls:julölen:julölens
+COMPOUND(551475, 553170): jul + öl
+692882r4<substantiv>jumbo:jumbo:jumbos:jumbon:jumbons:!:!:!:!
+CUSTOM: y y jumbo
+769221r4<substantiv>jumbojet:jumbojet:jumbojets:jumbojeten:jumbojetens:jumbojetar:jumbojetars:jumbojetarna:jumbojetarnas
+740846r4<substantiv>jumboplats:jumboplats:jumboplats:jumboplatsen:jumboplatsens:jumboplatser:jumboplatsers:jumboplatserna:jumboplatsernas
+COMPOUND(692882, 550210): jumbo + plats
+692884r3<substantiv>jumper:jumper:jumpers:jumpern:jumperns:jumprar:jumprars:jumprarna:jumprarnas
+860519r3<egennamn>Juncker:Juncker:Junckers
+618459r8<substantiv>jungfru:jungfru:jungfrus:jungfrun:jungfruns:jungfrur:jungfrurs:jungfrurna:jungfrurnas
+CUSTOM: y y jungfru
+850548r3<substantiv>jungfrubur:jungfrubur:jungfruburs:jungfruburen:jungfruburens:jungfruburar:jungfruburars:jungfruburarna:jungfruburarnas
+638267r4<substantiv>jungfrufödsel:jungfrufödsel:jungfrufödsels:jungfrufödseln:jungfrufödselns:jungfrufödslar:jungfrufödslars:jungfrufödslarna:jungfrufödslarnas
+COMPOUND(618459, 617825): jungfru + födsel
+618460r4<substantiv>jungfrukammare:jungfrukammare:jungfrukammares:jungfrukammaren:jungfrukammarens:jungfrukammare, jungfrukamrar:jungfrukammares, jungfrukamrars:jungfrukamrarna:jungfrukamrarnas
+CUSTOM: y y jungfrukammar
+566369r4<adjektiv>jungfrulig:jungfrulig:jungfruligt:jungfruliga:jungfruliga:jungfruligare:jungfruligast:jungfruligaste:
+893250r3<substantiv>jungfrulin:jungfrulin:jungfrulins:jungfrulinet:jungfrulinets::::
+618468r3<substantiv>jungfruresa:jungfruresa:jungfruresas:jungfruresan:jungfruresans:jungfruresor:jungfruresors:jungfruresorna:jungfruresornas
+761856r4<substantiv>jungfrutal:jungfrutal:jungfrutals:jungfrutalet:jungfrutalets:jungfrutal:jungfrutals:jungfrutalen:jungfrutalens
+COMPOUND(618459, 553029): jungfru + tal
+915580r4<substantiv>jungfrutur:jungfrutur:jungfruturs:jungfruturen:jungfruturens:jungfruturer:jungfruturers:jungfruturerna:jungfruturernas
+COMPOUND(618459, 550715): jungfru + tur
+882723r3<egennamn>Jungfruöarna:Jungfruöarna:Jungfruöarnas
+692885r3<substantiv>jungman:jungman:jungmans:jungmannen:jungmannens:jungmän:jungmäns:jungmännen:jungmännens
+559258r9<substantiv>juni:juni:junis:!:!:!:!:!:!
+CUSTOM: y y juni
+618476r4<substantiv>junidag:junidag:junidags:junidagen:junidagens:junidagar:junidagars:junidagarna:junidagarnas
+COMPOUND(559258, 551009): juni + dag
+959859r4<substantiv>junikväll:junikväll:junikvälls:junikvällen:junikvällens:junikvällar:junikvällars:junikvällarna:junikvällarnas
+COMPOUND(559258, 551653): juni + kväll
+772857r4<substantiv>junimorgon:junimorgon:junimorgons:junimorgonen:junimorgonens:junimorgnar:junimorgnars:junimorgnarna:junimorgnarnas
+COMPOUND(559258, 619001): juni + morgon
+638275r4<substantiv>juninatt:juninatt:juninatts:juninatten:juninattens:juninätter:juninätters:juninätterna:juninätternas
+COMPOUND(559258, 555293): juni + natt
+549393r8<substantiv>junior:junior:juniors:junioren:juniorens:juniorer:juniorers:juniorerna:juniorernas
+CUSTOM: y y junior
+638283r4<substantiv>juniorklass:juniorklass:juniorklass:juniorklassen:juniorklassens:juniorklasser:juniorklassers:juniorklasserna:juniorklassernas
+COMPOUND(549393, 549530): junior + klass
+638310r4<substantiv>juniorlag:juniorlag:juniorlags:juniorlaget:juniorlagets:juniorlag:juniorlags:juniorlagen:juniorlagens
+COMPOUND(549393, 625660): junior + lag
+638290r4<substantiv>juniormatch:juniormatch:juniormatchs:juniormatchen:juniormatchens:juniormatcher:juniormatchers:juniormatcherna:juniormatchernas
+COMPOUND(549393, 550011): junior + match
+638298r4<substantiv>juniormästerskap:juniormästerskap:juniormästerskaps:juniormästerskapet:juniormästerskapets:juniormästerskap:juniormästerskaps:juniormästerskapen:juniormästerskapens
+COMPOUND(549393, 552709): junior + mästerskap
+CUSTOM: y y juniormästerskaps
+638304r4<substantiv>juniorspelare:juniorspelare:juniorspelares:juniorspelaren:juniorspelarens:juniorspelare:juniorspelares:juniorspelarna:juniorspelarnas
+COMPOUND(549393, 615459): junior + spelare
+CUSTOM: y y juniorspelar
+740853r3<substantiv>junker:junker:junkers:junkern:junkerns:junkrar:junkrars:junkrarna:junkrarnas
+581094r3<adjektiv>junonisk:junonisk:junoniskt:junoniska:junoniska::::
+638316r5<substantiv>junta:junta:juntas:juntan:juntans:juntor:juntors:juntorna:juntornas
+CUSTOM: y y junta
+638318r4<substantiv>juntaledare:juntaledare:juntaledares:juntaledaren:juntaledarens:juntaledare:juntaledares:juntaledarna:juntaledarnas
+COMPOUND(638316, 609818): junta + ledare
+CUSTOM: y y juntaledar
+638324r4<substantiv>juntaregim:juntaregim:juntaregims:juntaregimen:juntaregimens:juntaregimer:juntaregimers:juntaregimerna:juntaregimernas
+COMPOUND(638316, 550333): junta + regim
+553934r3<egennamn>Jupiter:Jupiter:Jupiters
+CUSTOM: y n Jupiter
+722664r4<substantiv>jura:jura:juras:juran:jurans:!:!:!:!
+DEFINITION 1: Geologisk period före krita. Jfr. krita.
+CUSTOM: n n y
+981288r3<substantiv>juraperiod:::juraperioden:juraperiodens::::
+638332r4<substantiv>juridik:juridik:juridiks:juridiken:juridikens:!:!:!:!
+CUSTOM: y y juridik
+740856r3<substantiv>juridikstuderande::::::::
+COMPOUND(638332, 740857): juridik + studerande
+767466r3<adjektiv>juridikstuderande:juridikstuderande:juridikstuderande:juridikstuderande:juridikstuderande:!:!:!:
+581097r4<adjektiv>juridisk:juridisk:juridiskt:juridiska:juridiska:!:!:!:juridiske
+640091r3<substantiv>jurisdiktion:jurisdiktion:jurisdiktions:jurisdiktionen:jurisdiktionens::::
+CUSTOM: y y jurisdiktions
+843674r3<substantiv>jurisprudens:jurisprudens:jurisprudens:jurisprudensen:jurisprudensens::::
+602370r5<substantiv>jurist:jurist:jurists:juristen:juristens:jurister:juristers:juristerna:juristernas
+CUSTOM: y y jurist +jurist
+597060r4<substantiv>juristavdelning:juristavdelning:juristavdelnings:juristavdelningen:juristavdelningens:juristavdelningar:juristavdelningars:juristavdelningarna:juristavdelningarnas
+COMPOUND(602370, 596363): jurist + avdelning
+CUSTOM: y y juristavdelnings
+956130r3<substantiv>jurt:jurt:jurts:jurtet:jurtets:jurt:jurts:jurten:jurtens
+CUSTOM: n n y
+956136r3<substantiv>jurta:jurta:jurtas:jurtan:jurtans:jurtor:jurtors:jurtorna:jurtornas
+CUSTOM: y n
+625517r5<substantiv>jury:jury:jurys:juryn:juryns:juryer:juryers:juryerna:juryernas
+CUSTOM: y y jury
+740864r4<substantiv>jurymedlem:jurymedlem:jurymedlems:jurymedlemmen:jurymedlemmens:jurymedlemmar:jurymedlemmars:jurymedlemmarna:jurymedlemmarnas
+COMPOUND(625517, 621189): jury + medlem
+620611r3<adverb>just:just
+571265r4<adjektiv>just:just:just:justa:justa:justare:justast:justaste:
+625518r3<adjektiv>juste:juste:juste:juste, justa:juste, justa:!:!:!:juste
+547060r5<verb>justera:justera:justerade:justerat:justerar:justera:justeras:justerades:justerats:justeras:justerad:justerat:justerade:justerande:
+869448r3<substantiv>justerare:justerare:justerares:justeraren:justerarens:justerare:justerares:justerarna:justerarnas
+569282r3<adjektiv>justerbar:justerbar:justerbart:justerbara:justerbara::::
+678798r4<substantiv>justering:justering:justerings:justeringen:justeringens:justeringar:justeringars:justeringarna:justeringarnas
+CUSTOM: y y justerings +justerings
+678797r4<substantiv>justeringsman:justeringsman:justeringsmans:justeringsmannen:justeringsmannens:justeringsmän:justeringsmäns:justeringsmännen:justeringsmännens
+COMPOUND(678798, 557796): justering + man
+638334r3<substantiv>justis:justis:justis:justisen:justisens:!:!:!:!
+692893r3<substantiv>justitiedepartement:justitiedepartement:justitiedepartements:justitiedepartementet:justitiedepartementets:justitiedepartement:justitiedepartements:justitiedepartementen:justitiedepartementens
+740872r4<substantiv>justitiekansler:justitiekansler:justitiekanslers:justitiekanslern:justitiekanslerns:justitiekanslerer:justitiekanslerers:justitiekanslererna:justitiekanslerernas
+CUSTOM: y y justitiekansler
+915608r3<substantiv>justitiekommissionär:justitiekommissionär:justitiekommissionärs:justitiekommissionären:justitiekommissionärens:justitiekommissionärer:justitiekommissionärers:justitiekommissionärerna:justitiekommissionärernas
+692894r3<substantiv>justitieminister:justitieminister:justitieministers:justitieministern:justitieministerns:justitieministrar:justitieministrars:justitieministrarna:justitieministrarnas
+884240r3<substantiv>justitieministerium:justitieministerium:justitieministeriums:justitieministeriet:justitieministeriets:justitieministerier:justitieministeriers:justitieministerierna:justitieministeriernas
+740876r3<substantiv>justitiemord:justitiemord:justitiemords:justitiemordet:justitiemordets:justitiemord:justitiemords:justitiemorden:justitiemordens
+843677r3<substantiv>justitieombudsman:justitieombudsman:justitieombudsmans:justitieombudsmannen:justitieombudsmannens:justitieombudsmän:justitieombudsmäns:justitieombudsmännen:justitieombudsmännens
+622895r4<substantiv>justitieråd:justitieråd:justitieråds:justitierådet:justitierådets:justitieråd:justitieråds:justitieråden:justitierådens
+DEFINITION 1: Domare i högsta domstolen.
+789471r3<substantiv>justitiesekreterare:justitiesekreterare:justitiesekreterares:justitiesekreteraren:justitiesekreterarens:justitiesekreterare:justitiesekreterares:justitiesekreterarna:justitiesekreterarnas
+740882r3<substantiv>justitieutskott:justitieutskott:justitieutskotts:justitieutskottet:justitieutskottets::::
+628212r4<substantiv>jute:jute:jutes:juten:jutens:jutar:jutars:jutarna:jutarnas
+DEFINITION 1: Person från Jylland.
+CUSTOM: n n y
+628221r9<substantiv>jute:jute:jutes:juten, jutet:jutens, jutets:!:!:!:!
+DEFINITION 1: En slags grov väv.
+CUSTOM: n n y
+778561r5<substantiv>jutesäck:jutesäck:jutesäcks:jutesäcken:jutesäckens:jutesäckar:jutesäckars:jutesäckarna:jutesäckarnas
+628225r4<substantiv>juteväv:juteväv:jutevävs:juteväven:jutevävens::::
+COMPOUND(628221, 552117): jute + väv
+869454r3<adjektiv>jutländsk:jutländsk:jutländskt:jutländska:jutländska::::
+549394r4<substantiv>juvel:juvel:juvels:juvelen:juvelens:juveler:juvelers:juvelerna:juvelernas
+CUSTOM: y y juvel
+609697r3<substantiv>juvelerare:juvelerare:juvelerares:juveleraren:juvelerarens:juvelerare:juvelerares:juvelerarna:juvelerarnas
+CUSTOM: y y juvelerar
+692895r3<adjektiv>juvelprydd:juvelprydd:juvelprytt:juvelprydda:juvelprydda:!:!:!:juvelprydde
+792448r3<adjektiv>juvelsmyckad:juvelsmyckad:juvelsmyckat:juvelsmyckade:juvelsmyckade:!:!:!:
+556762r3<adjektiv>juvenil:juvenil:juvenilt:juvenila:juvenila::::juvenile
+629195r3<substantiv>juver:juver:juvers:juvret:juvrets:juver:juvers:juvren:juvrens
+843685r3<substantiv>juverinflammation:juverinflammation:juverinflammations:juverinflammationen:juverinflammationens:juverinflammationer:juverinflammationers:juverinflammationerna:juverinflammationernas
+657862r3<substantiv>juxtaposition:juxtaposition:juxtapositions:juxtapositionen:juxtapositionens:juxtapositioner:juxtapositioners:juxtapositionerna:juxtapositionernas
+CUSTOM: y y juxtapositions
+736370r3<substantiv>jycke:jycke:jyckes:jycken:jyckens:jyckar:jyckars:jyckarna:jyckarnas
+843693r3<adjektiv>jylländsk:jylländsk:jylländskt:jylländska:jylländska:!:!:!:jylländske
+843696r3<substantiv>jyllänning:jyllänning:jyllännings:jyllänningen:jyllänningens:jyllänningar:jyllänningars:jyllänningarna:jyllänningarnas
+609703r4<substantiv>jägare:jägare:jägares:jägaren:jägarens:jägare:jägares:jägarna:jägarnas
+CUSTOM: y y jägar +jägar
+573499r3<adjektiv>jägarmässig:jägarmässig:jägarmässigt:jägarmässiga:jägarmässiga::::
+792451r3<adjektiv>jägarutbildad:jägarutbildad:jägarutbildat:jägarutbildade:jägarutbildade:!:!:!:
+615327r3<substantiv>jägmästare:jägmästare:jägmästares:jägmästaren:jägmästarens:jägmästare:jägmästares:jägmästarna:jägmästarnas
+CUSTOM: y y jägmästar
+843704r3<substantiv>jäkel:jäkel:jäkels:jäkeln:jäkelns:jäklar:jäklars:jäklarna:jäklarnas
+843711r3<substantiv>jäkelskap:jäkelskap:jäkelskaps:jäkelskapen:jäkelskapens:jäkelskaper:jäkelskapers:jäkelskaperna:jäkelskapernas
+935398r3<interjektion>jäklar:jäklar
+737694r3<verb>jäklas:jäklas:jäklades:jäklats:jäklas::!:!:!:!:::::
+566370r4<adjektiv>jäklig:jäklig:jäkligt:jäkliga:jäkliga:jäkligare:jäkligast:jäkligaste:
+570699r3<substantiv>jäkt:jäkt:jäkts:jäktet:jäktets:!:!:!:!
+570701r4<verb>jäkta:jäkta:jäktade:jäktat:jäktar:jäkta:jäktas:jäktades:jäktats:jäktas::::jäktande:
+570654r3<adjektiv>jäktad:jäktad:jäktat:jäktade:jäktade:!:!:!:
+570702r4<adjektiv>jäktig:jäktig:jäktigt:jäktiga:jäktiga:jäktigare:jäktigast:jäktigaste:
+573502r5<adjektiv>jämbördig:jämbördig:jämbördigt:jämbördiga:jämbördiga:jämbördigare:jämbördigast:jämbördigaste:jämbördige
+618484r3<substantiv>jämbördighet:jämbördighet:jämbördighets:jämbördigheten:jämbördighetens::::
+CUSTOM: y y jämbördighets
+618488r4<adverb>jämfota:jämfota
+CUSTOM: y y jämfota
+692897r4<substantiv>jämfotahopp:jämfotahopp:jämfotahopps:jämfotahoppet:jämfotahoppets:jämfotahopp:jämfotahopps:jämfotahoppen:jämfotahoppens
+COMPOUND(618488, 552472): jämfota + hopp
+618489r4<verb>jämföra:jämföra:jämförde:jämfört:jämför:jämför:jämföras:jämfördes:jämförts:jämförs, jämföres:jämförd:jämfört:jämförda::
+618490r3<adjektiv>jämförande:jämförande:jämförande:jämförande:jämförande:!:!:!:
+692903r3<substantiv>jämförande:jämförande:jämförandes:jämförandet:jämförandets::::
+569285r3<adjektiv>jämförbar:jämförbar:jämförbart:jämförbara:jämförbara::::
+888403r3<substantiv>jämförbarhet:jämförbarhet:jämförbarhets:jämförbarheten:jämförbarhetens::::
+618491r5<substantiv>jämförelse:jämförelse:jämförelses:jämförelsen:jämförelsens:jämförelser:jämförelsers:jämförelserna:jämförelsernas
+CUSTOM: y y jämförelse +jämförelse
+761862r4<substantiv>jämförelsetal:jämförelsetal:jämförelsetals:jämförelsetalet:jämförelsetalets:jämförelsetal:jämförelsetals:jämförelsetalen:jämförelsetalens
+COMPOUND(618491, 553029): jämförelse + tal
+620612r3<adverb>jämförelsevis:jämförelsevis
+897185r4<substantiv>jämförelseår:jämförelseår:jämförelseårs:jämförelseåret:jämförelseårets:jämförelseår:jämförelseårs:jämförelseåren:jämförelseårens
+COMPOUND(618491, 553140): jämförelse + år
+566371r3<adjektiv>jämförlig:jämförlig:jämförligt:jämförliga:jämförliga::::
+618492r3<substantiv>jämförpris:jämförpris:jämförpris:jämförpriset:jämförprisets:jämförpriser:jämförprisers:jämförpriserna:jämförprisernas
+618499r3<adjektiv>jämgammal:jämgammal:jämgammalt:jämgamla:jämgamla::::jämgamle
+618507r3<adjektiv>jämgod:jämgod:jämgott:jämgoda:jämgoda::::
+618510r3<substantiv>jämgodhet:jämgodhet:jämgodhets:jämgodheten:jämgodhetens::::
+CUSTOM: y y jämgodhets
+547061r6<verb>jämka:jämka:jämkade:jämkat:jämkar:jämka:jämkas:jämkades:jämkats:jämkas:jämkad:jämkat:jämkade:jämkande:
+618514r3<substantiv>jämkning:jämkning:jämknings:jämkningen:jämkningens:jämkningar:jämkningars:jämkningarna:jämkningarnas
+CUSTOM: y y jämknings +jämknings
+845089r3<substantiv>jämkningsmån:jämkningsmån:jämkningsmåns:jämkningsmånen:jämkningsmånens::::
+563259r4<adjektiv>jämlik:jämlik:jämlikt:jämlika:jämlika:jämlikare:jämlikast:jämlikaste:jämlike
+618515r3<substantiv>jämlike:jämlike:jämlikes:jämliken:jämlikens:jämlikar:jämlikars:jämlikarna:jämlikarnas
+618517r3<substantiv>jämlikhet:jämlikhet:jämlikhets:jämlikheten:jämlikhetens::::
+CUSTOM: y y jämlikhets
+618518r3<preposition>jämlikt:jämlikt
+801038r3<adjektiv>jämlöpande:jämlöpande:jämlöpande:jämlöpande:jämlöpande:!:!:!:
+618519r3<substantiv>jämmer:jämmer:jämmers:jämmern:jämmerns::::
+843729r3<substantiv>jämmerdal:jämmerdal:jämmerdals:jämmerdalen:jämmerdalens:jämmerdalar:jämmerdalars:jämmerdalarna:jämmerdalarnas
+566372r4<adjektiv>jämmerlig:jämmerlig:jämmerligt:jämmerliga:jämmerliga:jämmerligare:jämmerligast:jämmerligaste:
+843740r3<substantiv>jämmerlåt:jämmerlåt:jämmerlåts:jämmerlåten:jämmerlåtens::::
+563408r3<adjektiv>jämmersam:jämmersam:jämmersamt:jämmersamma:jämmersamma::::
+563108r9<a

@@ -1,0 +1,646 @@
+läkarexamina:läkarexaminas
+COMPOUND(609844, 689645): läkare + examen
+681374r4<substantiv>läkarintyg:läkarintyg:läkarintygs:läkarintyget:läkarintygets:läkarintyg:läkarintygs:läkarintygen:läkarintygens
+COMPOUND(609844, 552524): läkare + intyg
+702235r3<substantiv>läkarkår:läkarkår:läkarkårs:läkarkåren:läkarkårens::::
+702239r3<substantiv>läkarlag:läkarlag:läkarlags:läkarlaget:läkarlagets:läkarlag:läkarlags:läkarlagen:läkarlagens
+681375r4<substantiv>läkarundersökning:läkarundersökning:läkarundersöknings:läkarundersökningen:läkarundersökningens:läkarundersökningar:läkarundersökningars:läkarundersökningarna:läkarundersökningarnas
+COMPOUND(609844, 552069): läkare + undersökning
+CUSTOM: y y läkarundersöknings
+687801r4<substantiv>läkarvård:läkarvård:läkarvårds:läkarvården:läkarvårdens::::
+COMPOUND(609844, 599145): läkare + vård
+591652r3<deponens>läkas:läkas:läktes:läkts:läks:läks
+569378r3<adjektiv>läkbar:läkbar:läkbart:läkbara:läkbara::::
+643185r5<substantiv>läkemedel:läkemedel:läkemedels:läkemedlet:läkemedlets:läkemedel:läkemedels:läkemedlen:läkemedlens
+COMPOUND(585831, 560532): läka + medel
+CUSTOM: y y läkemedels
+610939r3<substantiv>läkemedelsindustri:läkemedelsindustri:läkemedelsindustris:läkemedelsindustrin:läkemedelsindustrins:läkemedelsindustrier:läkemedelsindustriers:läkemedelsindustrierna:läkemedelsindustriernas
+722311r4<substantiv>läkemedelsteknik:läkemedelsteknik:läkemedelstekniks:läkemedelstekniken:läkemedelsteknikens:läkemedelstekniker:läkemedelsteknikers:läkemedelsteknikerna:läkemedelsteknikernas
+COMPOUND(643185, 603854): läkemedel + teknik
+757857r3<substantiv>läkkött:läkkött:läkkötts:läkköttet:läkköttets::::
+643186r3<substantiv>läkning:läkning:läknings:läkningen:läkningens::::
+CUSTOM: y y läknings
+643190r3<substantiv>läkt:läkt:läkts:läkten:läktens:läkter:läkters:läkterna:läkternas
+669443r4<substantiv>läktaravgift:läktaravgift:läktaravgifts:läktaravgiften:läktaravgiftens:läktaravgifter:läktaravgifters:läktaravgifterna:läktaravgifternas
+COMPOUND(643197, 548299): läktare + avgift
+643197r5<substantiv>läktare:läktare:läktares:läktaren:läktarens:läktare:läktares:läktarna:läktarnas
+CUSTOM: y y läktar
+560220r3<substantiv>läm:läm:läms:lämmen:lämmens:lämmar:lämmars:lämmarna:lämmarnas
+560228r6<substantiv>lämmel:lämmel:lämmels:lämmeln:lämmelns:lämlar:lämlars:lämlarna:lämlarnas
+BASEWORDS: lämmel
+CUSTOM: y y lämmel
+643203r3<substantiv>lämmeltåg:lämmeltåg:lämmeltågs:lämmeltåget:lämmeltågets:lämmeltåg:lämmeltågs:lämmeltågen:lämmeltågens
+757861r4<substantiv>lämmelår:lämmelår:lämmelårs:lämmelåret:lämmelårets:lämmelår:lämmelårs:lämmelåren:lämmelårens
+COMPOUND(560228, 553140): lämmel + år
+547311r6<verb>lämna:lämna:lämnade:lämnat:lämnar:lämna:lämnas:lämnades:lämnats:lämnas:lämnad:lämnat:lämnade:lämnande:
+878505r3<substantiv>lämnande:lämnande:lämnandes:lämnandet:lämnandets::::
+643209r4<substantiv>lämning:lämning:lämnings:lämningen:lämningens:lämningar:lämningars:lämningarna:lämningarnas
+CUSTOM: y y lämnings +lämnings
+547312r4<verb>lämpa:lämpa:lämpade:lämpat:lämpar:lämpa:lämpas:lämpades:lämpats:lämpas:lämpad:lämpat:lämpade::
+560230r3<adjektiv>lämplig:lämplig:lämpligt:lämpliga:lämpliga:lämpligare:lämpligast:lämpligaste:lämplige
+620635r3<adverb>lämpligen:lämpligen
+643210r3<substantiv>lämplighet:lämplighet:lämplighets:lämpligheten:lämplighetens::::
+CUSTOM: y y lämplighets
+786770r3<adverb>lämpligtvis:lämpligtvis
+552681r22<substantiv>län:län:läns:länet:länets:län:läns:länen:länens
+CUSTOM: y n läns
+560232r3<substantiv>länd:länd:länds:länden:ländens:länder:länders:länderna:ländernas
+CUSTOM: y n
+585387r3<verb>lända:lända:lände:länt:länder::::::::::
+CUSTOM: y n
+757867r3<substantiv>ländkota:ländkota:ländkotas:ländkotan:ländkotans:ländkotor:ländkotors:ländkotorna:ländkotornas
+916520r3<substantiv>ländrygg:ländrygg:ländryggs:ländryggen:ländryggens:ländryggar:ländryggars:ländryggarna:ländryggarnas
+621034r3<substantiv>länga:länga:längas:längan:längans:längor:längors:längorna:längornas
+549972r15<substantiv>längd:längd:längds:längden:längdens:längder:längders:längderna:längdernas
+CUSTOM: y y längd
+670716r4<substantiv>längdaxel:längdaxel:längdaxels:längdaxeln:längdaxelns:längdaxlar:längdaxlars:längdaxlarna:längdaxlarnas
+COMPOUND(549972, 592030): längd + axel
+607640r3<substantiv>längdhopp:längdhopp:längdhopps:längdhoppet:längdhoppets:längdhopp:längdhopps:längdhoppen:längdhoppens
+CUSTOM: y y längdhopps
+609845r3<substantiv>längdhoppare:längdhoppare:längdhoppares:längdhopparen:längdhopparens:längdhoppare:längdhoppares:längdhopparna:längdhopparnas
+CUSTOM: y y längdhoppar
+982610r3<substantiv>längdled:längdled:::::::
+574455r3<adjektiv>längdriktig:längdriktig:längdriktigt:längdriktiga:längdriktiga::::
+732148r4<substantiv>längdriktning:längdriktning:längdriktnings:längdriktningen:längdriktningens:längdriktningar:längdriktningars:längdriktningarna:längdriktningarnas
+COMPOUND(549972, 597519): längd + riktning
+687803r3<substantiv>längdskidåkning:längdskidåkning:längdskidåknings:längdskidåkningen:längdskidåkningens::::
+CUSTOM: y y längdskidåknings
+922046r4<substantiv>längdsprint:längdsprint:längdsprints:längdsprinten:längdsprintens:längdsprintar:längdsprintars:längdsprintarna:längdsprintarnas
+COMPOUND(549972, 551911): längd + sprint
+764410r5<substantiv>längdåkning:längdåkning:längdåknings:längdåkningen:längdåkningens:längdåkningar:längdåkningars:längdåkningarna:längdåkningarnas
+COMPOUND(549972, 653734): längd + åkning
+CUSTOM: y y längdåknings
+764419r3<substantiv>längdåkningsskida::::::::
+COMPOUND(764410, 595154): längdåkning + skida
+560952r3<adverb>länge:länge
+620636r5<adverb>längesedan, längesen:längesedan, längesen
+905656r3<adverb>längre:längre
+618763r4<preposition>längs:längs
+618762r3<adverb>längs:längs
+618764r3<preposition>längsefter:längsefter
+754745r3<adjektiv>längsgående:längsgående:längsgående:längsgående:längsgående:!:!:!:
+618765r3<preposition>längsmed:längsmed
+574458r3<adjektiv>längsrandig:längsrandig:längsrandigt:längsrandiga:längsrandiga::::
+982611r3<substantiv>längsriktning:längsriktning:längsriktnings:längsriktningen:längsriktningens::::
+986778r4<substantiv>längsstreckning:längsstreckning:längsstrecknings:längsstreckningen:längsstreckningens:längsstreckningar:längsstreckningars:längsstreckningarna:längsstreckningarnas
+COMPOUND(618763, 986769): längs + streckning
+547313r4<verb>längta:längta:längtade:längtat:längtar:längta::::::::längtande:
+618766r3<substantiv>längtan:!:!:längtan:längtans:!:!:!:!
+585032r3<adjektiv>längtansfull:längtansfull:längtansfullt:längtansfulla:längtansfulla::::
+551713r5<substantiv>länk:länk:länks:länken:länkens:länkar:länkars:länkarna:länkarnas
+CUSTOM: y y +länks
+547314r5<verb>länka:länka:länkade:länkat:länkar:länka:länkas:länkades:länkats:länkas:länkad:länkat:länkade:länkande:
+737993r3<substantiv>länkare:länkare:länkares:länkaren:länkarens:länkare:länkares:länkarna:länkarnas
+CUSTOM: y n n
+793044r3<adjektiv>länklagrad:länklagrad:länklagrat:länklagrade:länklagrade:!:!:!:
+982616r3<substantiv>länklista:länklista:länklistas:länklistan:länklistans:länklistor:länklistors:länklistorna:länklistornas
+687804r3<substantiv>länkning:länkning:länknings:länkningen:länkningens:länkningar:länkningars:länkningarna:länkningarnas
+CUSTOM: y y länknings
+872240r3<substantiv>länkrörelse:länkrörelse:länkrörelses:länkrörelsen:länkrörelsens:länkrörelser:länkrörelsers:länkrörelserna:länkrörelsernas
+771682r3<substantiv>länksamling:länksamling:länksamlings:länksamlingen:länksamlingens:länksamlingar:länksamlingars:länksamlingarna:länksamlingarnas
+872248r3<substantiv>länkstation:länkstation:länkstations:länkstationen:länkstationens:länkstationer:länkstationers:länkstationerna:länkstationernas
+737997r8<substantiv>läns:läns:läns:länsen:länsens:länsar:länsars:länsarna:länsarnas
+CUSTOM: y n
+547315r5<verb>länsa:länsa:länsade:länsat:länsar:länsa:länsas:länsades:länsats:länsas:länsad:länsat:länsade:länsande:
+CUSTOM: y n
+962268r4<substantiv>länsa:länsa:länsas:länsan:länsans:länsor:länsors:länsorna:länsornas
+CUSTOM: y n
+952111r4<substantiv>länsakut:länsakut:länsakuts:länsakuten:länsakutens:länsakuter:länsakuters:länsakuterna:länsakuternas
+COMPOUND(552681, 600971): län + akut
+754746r3<substantiv>länsarbetsdirektör:länsarbetsdirektör:länsarbetsdirektörs:länsarbetsdirektören:länsarbetsdirektörens:länsarbetsdirektörer:länsarbetsdirektörers:länsarbetsdirektörerna:länsarbetsdirektörernas
+754754r3<substantiv>länsarbetsnämnd:länsarbetsnämnd:länsarbetsnämnds:länsarbetsnämnden:länsarbetsnämndens:länsarbetsnämnder:länsarbetsnämnders:länsarbetsnämnderna:länsarbetsnämndernas
+892683r3<substantiv>länsbo:länsbo:länsbos:länsbon:länsbons:länsbor:länsbors:länsborna:länsbornas
+982626r3<substantiv>länsdelssjukhus:länsdelssjukhus:länsdelssjukhus:länsdelssjukhuset:länsdelssjukhusets:länsdelssjukhus:länsdelssjukhus:länsdelssjukhusen:länsdelssjukhusens
+687805r4<substantiv>länsherre:länsherre:länsherres:länsherren:länsherrens:länsherrar:länsherrars:länsherrarna:länsherrarnas
+COMPOUND(552681, 599833): län + herre
+687811r4<substantiv>länsman:länsman:länsmans:länsmannen:länsmannens:länsmän:länsmäns:länsmännen:länsmännens
+COMPOUND(552681, 557796): län + man
+CUSTOM: y y länsmans
+754762r3<substantiv>länsråd:länsråd:länsråds:länsrådet:länsrådets:länsråd:länsråds:länsråden:länsrådens
+934327r4<substantiv>länsrätt:länsrätt:länsrätts:länsrätten:länsrättens:länsrätter:länsrätters:länsrätterna:länsrätternas
+COMPOUND(552681, 603413): län + rätt
+681377r4<substantiv>länsstyrelse:länsstyrelse:länsstyrelses:länsstyrelsen:länsstyrelsens:länsstyrelser:länsstyrelsers:länsstyrelserna:länsstyrelsernas
+COMPOUND(552681, 612018): län + styrelse
+CUSTOM: y y länsstyrelse
+643211r3<substantiv>länstol:länstol:länstols:länstolen:länstolens:länstolar:länstolars:länstolarna:länstolarnas
+760175r4<substantiv>länstrafik:länstrafik:länstrafiks:länstrafiken:länstrafikens::::
+CUSTOM: y y länstrafik
+760181r3<substantiv>länstrafikbolag::::::::
+COMPOUND(760175, 552264): länstrafik + bolag
+687819r3<adverb>länsvis:länsvis
+931689r4<substantiv>länsväg:länsväg:länsvägs:länsvägen:länsvägens:länsvägar:länsvägars:länsvägarna:länsvägarnas
+COMPOUND(552681, 552110): län + väg
+948976r2<substantiv>länsöverdirektör::::::::
+551715r4<substantiv>läpp:läpp:läpps:läppen:läppens:läppar:läppars:läpparna:läpparnas
+574461r3<adjektiv>läppblomstrig:läppblomstrig:läppblomstrigt:läppblomstriga:läppblomstriga::::
+574464r3<adjektiv>läppformig:läppformig:läppformigt:läppformiga:läppformiga::::
+990226r4<substantiv>läppförstoring:läppförstoring:läppförstorings:läppförstoringen:läppförstoringens:läppförstoringar:läppförstoringars:läppförstoringarna:läppförstoringarnas
+COMPOUND(551715, 691036): läpp + förstoring
+916529r3<substantiv>läppglans:läppglans:läppglans:läppglansen:läppglansens::::
+737998r4<verb>läppja:läppja:läppjade:läppjat:läppjar:läppja:läppjas:läppjades:läppjats:läppjas::::läppjande:
+872261r3<substantiv>läppljud:läppljud:läppljuds:läppljudet:läppljudets:läppljud:läppljuds:läppljuden:läppljudens
+607646r3<substantiv>läppstift:läppstift:läppstifts:läppstiftet:läppstiftets:läppstift:läppstifts:läppstiften:läppstiftens
+CUSTOM: y y läppstifts
+560236r19<substantiv>lära:lära:läras:läran:lärans:läror:lärors:lärorna:lärornas
+CUSTOM: y y läro
+560234r9<verb>lära:lära:lärde:lärt:lär:lär:läras:lärdes:lärts:läres, lärs:::::
+CUSTOM: y n läro
+560237r4<adjektiv>läraktig:läraktig:läraktigt:läraktiga:läraktiga:läraktigare:läraktigast:läraktigaste:läraktige
+687820r3<substantiv>läraktighet:läraktighet:läraktighets:läraktigheten:läraktighetens::::
+CUSTOM: y y läraktighets
+687822r4<substantiv>lärande:lärande:lärandes:lärandet:lärandets::::
+CUSTOM: y y lärande
+788541r4<substantiv>lärandesituation:lärandesituation:lärandesituations:lärandesituationen:lärandesituationens:lärandesituationer:lärandesituationers:lärandesituationerna:lärandesituationernas
+COMPOUND(687822, 603507): lärande + situation
+681380r4<substantiv>läraranvisning:läraranvisning:läraranvisnings:läraranvisningen:läraranvisningens:läraranvisningar:läraranvisningars:läraranvisningarna:läraranvisningarnas
+COMPOUND(560239, 550840): lärare + anvisning
+CUSTOM: y y läraranvisnings
+560239r27<substantiv>lärare:lärare:lärares:läraren:lärarens:lärare:lärares:lärarna:lärarnas
+CUSTOM: y y lärar +lärar
+687824r4<substantiv>lärarhandledning:lärarhandledning:lärarhandlednings:lärarhandledningen:lärarhandledningens:lärarhandledningar:lärarhandledningars:lärarhandledningarna:lärarhandledningarnas
+COMPOUND(560239, 687825): lärare + handledning
+CUSTOM: y y lärarhandlednings
+687826r4<substantiv>lärarhögskola:lärarhögskola:lärarhögskolas:lärarhögskolan:lärarhögskolans:lärarhögskolor:lärarhögskolors:lärarhögskolorna:lärarhögskolornas
+COMPOUND(560239, 644408): lärare + högskola
+557948r3<substantiv>lärarinna:lärarinna:lärarinnas:lärarinnan:lärarinnans:lärarinnor:lärarinnors:lärarinnorna:lärarinnornas
+CUSTOM: y y lärarinne
+880239r4<substantiv>lärarkall:lärarkall:lärarkalls:lärarkallet:lärarkallets:lärarkall:lärarkalls:lärarkallen:lärarkallens
+COMPOUND(560239, 552540): lärare + kall
+738002r4<substantiv>lärarkår:lärarkår:lärarkårs:lärarkåren:lärarkårens:lärarkårer:lärarkårers:lärarkårerna:lärarkårernas
+COMPOUND(560239, 559877): lärare + kår
+801504r3<adjektiv>lärarledd:lärarledd:lärarlett:lärarledda:lärarledda::::
+934336r4<substantiv>lärarlön:lärarlön:lärarlöns:lärarlönen:lärarlönens:lärarlöner:lärarlöners:lärarlönerna:lärarlönernas
+COMPOUND(560239, 549976): lärare + lön
+565049r3<adjektiv>lärarlös:lärarlös:lärarlöst:lärarlösa:lärarlösa::::
+687834r4<substantiv>lärarrum:lärarrum:lärarrums:lärarrummet:lärarrummets:lärarrum:lärarrums:lärarrummen:lärarrummens
+COMPOUND(560239, 571182): lärare + rum
+687840r4<substantiv>lärartjänst:lärartjänst:lärartjänsts:lärartjänsten:lärartjänstens:lärartjänster:lärartjänsters:lärartjänsterna:lärartjänsternas
+COMPOUND(560239, 550677): lärare + tjänst
+793047r3<adjektiv>lärarutbildad:lärarutbildad:lärarutbildat:lärarutbildade:lärarutbildade:!:!:!:
+681382r4<substantiv>lärarutbildning:lärarutbildning:lärarutbildnings:lärarutbildningen:lärarutbildningens:lärarutbildningar:lärarutbildningars:lärarutbildningarna:lärarutbildningarnas
+COMPOUND(560239, 597810): lärare + utbildning
+CUSTOM: y y lärarutbildnings
+687848r4<substantiv>lärarvikarie:lärarvikarie:lärarvikaries:lärarvikarien:lärarvikariens:lärarvikarier:lärarvikariers:lärarvikarierna:lärarvikariernas
+COMPOUND(560239, 668293): lärare + vikarie
+946397r4<substantiv>lärcentrum:lärcentrum, lärcenter:lärcentrums, lärcenters:lärcentret, lärcentrumet:lärcentrets, lärcentrumets:lärcentrum, lärcentra:lärcentrums, lärcentras:lärcentrumen:lärcentrumens
+COMPOUND(560234, 555316): lära + centrum
+560240r3<adjektiv>lärd:lärd:lärt:lärda:lärda::::lärde
+551716r5<substantiv>lärdom:lärdom:lärdoms:lärdomen:lärdomens:lärdomar:lärdomars:lärdomarna:lärdomarnas
+CUSTOM: y y lärdoms
+687862r4<substantiv>lärdomshistoria:lärdomshistoria:lärdomshistorias:lärdomshistorien, lärdomshistorian:lärdomshistoriens, lärdomshistorians::::
+COMPOUND(551716, 604486): lärdom + historia
+687856r4<substantiv>lärdomshistoriker:lärdomshistoriker:lärdomshistorikers:lärdomshistorikern:lärdomshistorikerns:lärdomshistoriker:lärdomshistorikers:lärdomshistorikerna:lärdomshistorikernas
+COMPOUND(551716, 616843): lärdom + historiker
+581749r3<adjektiv>lärdomshistorisk:lärdomshistorisk:lärdomshistoriskt:lärdomshistoriska:lärdomshistoriska::::
+574467r3<adjektiv>lärdomshögfärdig:lärdomshögfärdig:lärdomshögfärdigt:lärdomshögfärdiga:lärdomshögfärdiga::::
+560241r4<substantiv>lärft:lärft:lärfts:lärftet, lärften:lärftets, lärftens:lärfter:lärfters:lärfterna:lärfternas
+621036r3<substantiv>lärjungaskap:lärjungaskap:lärjungaskaps:lärjungaskapet:lärjungaskapets::::
+CUSTOM: y y lärjungaskaps
+560243r3<substantiv>lärjunge:lärjunge:lärjunges:lärjungen:lärjungens:lärjungar:lärjungars:lärjungarna:lärjungarnas
+560244r3<substantiv>lärk:lärk:lärks:lärken:lärkens:lärkar:lärkars:lärkarna:lärkarnas
+CUSTOM: y n
+560252r3<substantiv>lärka:lärka:lärkas:lärkan:lärkans:lärkor:lärkors:lärkorna:lärkornas
+982632r3<substantiv>lärkfalk:lärkfalk:lärkfalks:lärkfalken:lärkfalkens:lärkfalkar:lärkfalkars:lärkfalkarna:lärkfalkarnas
+872273r3<substantiv>lärkträ:lärkträ:lärkträs:lärkträet:lärkträets::::
+872267r3<substantiv>lärkträd:lärkträd:lärkträds:lärkträdet:lärkträdets:lärkträd:lärkträds:lärkträden:lärkträdens
+872277r3<substantiv>lärkvinge:lärkvinge:lärkvinges:lärkvingen:lärkvingens:lärkvingar:lärkvingars:lärkvingarna:lärkvingarnas
+560254r5<substantiv>lärling:lärling:lärlings:lärlingen:lärlingens:lärlingar:lärlingars:lärlingarna:lärlingarnas
+CUSTOM: y y lärlings +lärlings
+754768r3<substantiv>lärlingsutbildning::::::::
+COMPOUND(560254, 597810): lärling + utbildning
+889378r3<substantiv>läroanstalt:läroanstalt:läroanstalts:läroanstalten:läroanstaltens:läroanstalter:läroanstalters:läroanstalterna:läroanstalternas
+687865r5<substantiv>lärobok:lärobok:läroboks:läroboken:lärobokens:läroböcker:läroböckers:läroböckerna:läroböckernas
+COMPOUND(560234, 555346): lära + bok
+CUSTOM: y y läroboks
+757875r3<substantiv>läroboksförfattare::::::::
+COMPOUND(687865, 593193): lärobok + författare
+893347r4<substantiv>lärofader:lärofader:lärofaders:lärofadern:lärofaderns:lärofäder:lärofäders:lärofäderna:lärofädernas
+COMPOUND(560234, 558559): lära + far, fader
+687866r5<substantiv>läromedel:läromedel:läromedels:läromedlet:läromedlets:läromedel:läromedels:läromedlen:läromedlens
+COMPOUND(560234, 560532): lära + medel
+CUSTOM: y y läromedels
+754769r3<substantiv>läromedelsframställning::::::::
+COMPOUND(687866, 617685): läromedel + framställning
+615372r3<substantiv>läromästare:läromästare:läromästares:läromästaren:läromästarens:läromästare:läromästares:läromästarna:läromästarnas
+CUSTOM: y y läromästar
+687872r3<substantiv>läroplan:läroplan:läroplans:läroplanen:läroplanens:läroplaner:läroplaners:läroplanerna:läroplanernas
+CUSTOM: y y läroplans
+687876r4<adjektiv>lärorik:lärorik:lärorikt:lärorika:lärorika:lärorikare:lärorikast:lärorikaste:
+599418r3<substantiv>lärosal:lärosal:lärosals:lärosalen:lärosalens:lärosalar:lärosalars:lärosalarna:lärosalarnas
+934345r4<substantiv>lärosäte:lärosäte:lärosätes:lärosätet:lärosätets:lärosäten:lärosätens:lärosätena:lärosätenas
+COMPOUND(560236, 624854): lära + säte
+931697r6<substantiv>lärotid:lärotid:lärotids:lärotiden:lärotidens:lärotider:lärotiders:lärotiderna:lärotidernas
+COMPOUND(560234, 550665): lära + tid
+712934r3<substantiv>läroverk:läroverk:läroverks:läroverket:läroverkets:läroverk:läroverks:läroverken:läroverkens
+CUSTOM: y y läroverks
+754770r3<substantiv>läroår:läroår:läroårs:läroåret:läroårets:läroår:läroårs:läroåren:läroårens
+957766r3<substantiv>lärprocess:lärprocess:lärprocess:lärprocessen:lärprocessens:lärprocesser:lärprocessers:lärprocesserna:lärprocessernas
+556182r65<verb>läsa:läsa:läste:läst:läser:läs:läsas:lästes:lästs:läses:läst:läst:lästa:läsande:
+BASEWORDS: läse, läs
+CUSTOM: y n
+621039r3<substantiv>läsande:läsande:läsandes:läsandet:läsandets::::
+893355r4<substantiv>läsapparat:läsapparat:läsapparats:läsapparaten:läsapparatens:läsapparater:läsapparaters:läsapparaterna:läsapparaternas
+COMPOUND(556182, 548215): läsa + apparat
+687878r4<substantiv>läsarbrev:läsarbrev:läsarbrevs:läsarbrevet:läsarbrevets:läsarbrev:läsarbrevs:läsarbreven:läsarbrevens
+COMPOUND(615373, 552270): läsare + brev
+615373r8<substantiv>läsare:läsare:läsares:läsaren:läsarens:läsare:läsares:läsarna:läsarnas
+CUSTOM: y y läsar
+681384r4<substantiv>läsargrupp:läsargrupp:läsargrupps:läsargruppen:läsargruppens:läsargrupper:läsargruppers:läsargrupperna:läsargruppernas
+COMPOUND(615373, 549163): läsare + grupp
+754776r3<substantiv>läsart:läsart:läsarts:läsarten:läsartens:läsarter:läsarters:läsarterna:läsarternas
+681385r4<substantiv>läsarundersökning:läsarundersökning:läsarundersöknings:läsarundersökningen:läsarundersökningens:läsarundersökningar:läsarundersökningars:läsarundersökningarna:läsarundersökningarnas
+COMPOUND(615373, 552069): läsare + undersökning
+CUSTOM: y y läsarundersöknings
+569381r3<adjektiv>läsbar:läsbar:läsbart:läsbara:läsbara::::
+687884r3<substantiv>läsbarhet:läsbarhet:läsbarhets:läsbarheten:läsbarhetens::::
+CUSTOM: y y läsbarhets
+893363r4<substantiv>läsbarn:läsbarn:läsbarns:läsbarnet:läsbarnets:läsbarn:läsbarns:läsbarnen:läsbarnens
+COMPOUND(556182, 555956): läsa + barn
+893370r4<adjektiv>läsbegåvad:läsbegåvad:läsbegåvat:läsbegåvade:läsbegåvade:!:!:!:::::::::
+COMPOUND(556182, 570645): läsa + begåvad
+893374r4<substantiv>läsbegåvning:läsbegåvning:läsbegåvnings:läsbegåvningen:läsbegåvningens:läsbegåvningar:läsbegåvningars:läsbegåvningarna:läsbegåvningarnas
+COMPOUND(556182, 592474): läsa + begåvning
+893382r4<substantiv>läsdrama:läsdrama:läsdramas:läsdramat:läsdramats:läsdramer:läsdramers:läsdramerna:läsdramernas
+COMPOUND(556182, 625246): läsa + drama
+893390r4<substantiv>läsebok:läsebok:läseboks:läseboken:läsebokens:läseböcker:läseböckers:läseböckerna:läseböckernas
+COMPOUND(556182, 555346): läsa + bok
+893398r4<substantiv>läsecirkel:läsecirkel:läsecirkels:läsecirkeln:läsecirkelns:läsecirklar:läsecirklars:läsecirklarna:läsecirklarnas
+COMPOUND(556182, 600097): läsa + cirkel
+687886r4<substantiv>läsekrets:läsekrets:läsekrets:läsekretsen:läsekretsens:läsekretsar:läsekretsars:läsekretsarna:läsekretsarnas
+599420r3<substantiv>läsesal:läsesal:läsesals:läsesalen:läsesalens:läsesalar:läsesalars:läsesalarna:läsesalarnas
+687888r5<substantiv>läsfel:läsfel:läsfels:läsfelet:läsfelets:läsfel:läsfels:läsfelen:läsfelens
+DEFINITION 1: Felktighet vid avläsning av t.ex. en CD-skiva.
+COMPOUND(556182, 552375): läsa + fel
+CUSTOM: y n n
+916541r4<substantiv>läsforskare:läsforskare:läsforskares:läsforskaren:läsforskarens:läsforskare:läsforskares:läsforskarna:läsforskarnas
+COMPOUND(556182, 615220): läsa + forskare
+893410r3<substantiv>läsforskning:läsforskning:läsforsknings:läsforskningen:läsforskningens::::
+900941r3<adjektiv>läsfrämjande:läsfrämjande:läsfrämjande:läsfrämjande:läsfrämjande:!:!:!:::::::::
+965622r4<substantiv>läsfåtölj:läsfåtölj:läsfåtöljs:läsfåtöljen:läsfåtöljens:läsfåtöljer:läsfåtöljers:läsfåtöljerna:läsfåtöljernas
+COMPOUND(556182, 549001): läsa + fåtölj
+893414r4<substantiv>läsfärdighet:läsfärdighet:läsfärdighets:läsfärdigheten:läsfärdighetens:läsfärdigheter:läsfärdigheters:läsfärdigheterna:läsfärdigheternas
+COMPOUND(556182, 562210): läsa + färdighet
+893422r4<substantiv>läsförmåga:läsförmåga:läsförmågas:läsförmågan:läsförmågans::::
+COMPOUND(556182, 594097): läsa + förmåga
+894125r3<substantiv>läsförståelse:läsförståelse:läsförståelses:läsförståelsen:läsförståelsens::::
+761204r4<substantiv>läsglasögon:!:!:!:!:läsglasögon:läsglasögons:läsglasögonen:läsglasögonens
+COMPOUND(556182, 622471): läsa + glasögon
+893426r4<substantiv>läshastighet:läshastighet:läshastighets:läshastigheten:läshastighetens:läshastigheter:läshastigheters:läshastigheterna:läshastigheternas
+COMPOUND(556182, 602173): läsa + hastighet
+893434r4<substantiv>läshunger:läshunger:läshungers:läshungern:läshungerns:!:!:!:!
+COMPOUND(556182, 643862): läsa + hunger
+574470r4<adjektiv>läshungrig:läshungrig:läshungrigt:läshungriga:läshungriga:läshungrigare:läshungrigast:läshungrigaste:läshungrige::::::::
+893442r4<substantiv>läshuvud:läshuvud:läshuvuds:läshuvudet:läshuvudets:läshuvud, läshuvuden:läshuvuds, läshuvudens:läshuvudena:läshuvudenas
+COMPOUND(556182, 552483): läsa + huvud
+793050r3<adjektiv>läshämmad:läshämmad:läshämmat:läshämmade:läshämmade:!:!:!:
+893451r4<substantiv>läshörna:läshörna:läshörnas:läshörnan:läshörnans:läshörnor:läshörnors:läshörnorna:läshörnornas
+COMPOUND(556182, 594293): läsa + hörna
+621040r3<substantiv>läsida:läsida:läsidas:läsidan:läsidans:läsidor:läsidors:läsidorna:läsidornas
+916549r4<substantiv>läsinlärning:läsinlärning:läsinlärnings:läsinlärningen:läsinlärningens::::
+COMPOUND(556182, 701898): läsa + inlärning
+893460r4<substantiv>läsintresse:läsintresse:läsintresses:läsintresset:läsintressets:läsintressen:läsintressens:läsintressena:läsintressenas
+COMPOUND(556182, 612596): läsa + intresse
+621045r5<substantiv>läsk:läsk:läsks:läsken:läskens::::
+CUSTOM: y y
+547316r5<verb>läska:läska:läskade:läskat:läskar:läska::::::::läskande:
+CUSTOM: y n
+893468r4<substantiv>läskamrat:läskamrat:läskamrats:läskamraten:läskamratens:läskamrater:läskamraters:läskamraterna:läskamraternas
+COMPOUND(556182, 549425): läsa + kamrat
+916555r4<substantiv>läskburk:läskburk:läskburks:läskburken:läskburkens:läskburkar:läskburkars:läskburkarna:läskburkarnas
+COMPOUND(621045, 550980): läsk + burk
+658107r3<substantiv>läskeblask:läskeblask:läskeblasks:läskeblasken:läskeblaskens:!:!:!:!
+602715r3<substantiv>läskedryck:läskedryck:läskedrycks:läskedrycken:läskedryckens:läskedrycker:läskedryckers:läskedryckerna:läskedryckernas
+602723r3<substantiv>läskedrycksfabrik:läskedrycksfabrik:läskedrycksfabriks:läskedrycksfabriken:läskedrycksfabrikens:läskedrycksfabriker:läskedrycksfabrikers:läskedrycksfabrikerna:läskedrycksfabrikernas
+610947r3<substantiv>läskedrycksindustri:läskedrycksindustri:läskedrycksindustris:läskedrycksindustrin:läskedrycksindustrins:läskedrycksindustrier:läskedrycksindustriers:läskedrycksindustrierna:läskedrycksindustriernas
+922811r4<substantiv>läskflaska:läskflaska:läskflaskas:läskflaskan:läskflaskans:läskflaskor:läskflaskors:läskflaskorna:läskflaskornas
+COMPOUND(621045, 555299): läsk + flaska
+574473r6<adjektiv>läskig:läskig:läskigt:läskiga:läskiga:läskigare:läskigast:läskigaste:läskige::::::::
+916564r3<substantiv>läskighet:läskighet:läskighets:läskigheten:läskighetens:läskigheter:läskigheters:läskigheterna:läskigheternas
+893476r4<substantiv>läsklass:läsklass:läsklass:läsklassen:läsklassens:läsklasser:läsklassers:läsklasserna:läsklassernas
+COMPOUND(556182, 549530): läsa + klass
+893483r4<substantiv>läsklinik:läsklinik:läskliniks:läskliniken:läsklinikens:läskliniker:läsklinikers:läsklinikerna:läsklinikernas
+COMPOUND(556182, 549538): läsa + klinik
+872285r4<substantiv>läskpapper:läskpapper:läskpappers:läskpapperet, läskpappret:läskpapperets, läskpapprets:läskpapper:läskpappers:läskpapperna, läskpappren, läskpapperen:läskpappernas, läskpapprens, läskpapperens
+COMPOUND(547316, 556527): läska + papper
+574474r4<adjektiv>läskunnig:läskunnig:läskunnigt:läskunniga:läskunniga:läskunnigare:läskunnigast:läskunnigaste:läskunnige::::::::
+893495r3<substantiv>läskunnighet:läskunnighet:läskunnighets:läskunnigheten:läskunnighetens::::
+893499r4<substantiv>läslampa:läslampa:läslampas:läslampan:läslampans:läslampor:läslampors:läslamporna:läslampornas
+COMPOUND(556182, 559154): läsa + lampa
+566603r4<adjektiv>läslig:läslig:läsligt:läsliga:läsliga:läsligare:läsligast:läsligaste:
+904861r5<substantiv>läslighet:läslighet:läslighets:läsligheten:läslighetens::::
+893507r4<substantiv>läslust:läslust:läslusts:läslusten:läslustens::::
+COMPOUND(556182, 560172): läsa + lust
+893511r4<substantiv>läslusta:läslusta:läslustas:läslustan:läslustans::::
+COMPOUND(556182, 560174): läsa + lusta
+893515r3<adjektiv>läslysten:läslysten:läslystet:läslystna:läslystna::::::::::::
+681388r4<substantiv>läsminne:läsminne:läsminnes:läsminnet:läsminnets:läsminnen:läsminnens:läsminnena:läsminnenas
+COMPOUND(556182, 555491): läsa + minne
+687891r6<substantiv>läsning:läsning:läsnings:läsningen:läsningens:läsningar:läsningars:läsningarna:läsningarnas
+CUSTOM: y y läsnings +läsnings
+893518r4<substantiv>läsordning:läsordning:läsordnings:läsordningen:läsordningens:läsordningar:läsordningars:läsordningarna:läsordningarnas
+COMPOUND(556182, 597379): läsa + ordning
+547317r5<verb>läspa:läspa:läspade:läspat:läspar:läspa:!:!:!:!::::läspande:
+CUSTOM: y n
+893526r4<substantiv>läspenna:läspenna:läspennas:läspennan:läspennans:läspennor:läspennors:läspennorna:läspennornas
+COMPOUND(556182, 636994): läsa + penna
+893545r4<substantiv>läsplats:läsplats:läsplats:läsplatsen:läsplatsens:läsplatser:läsplatsers:läsplatserna:läsplatsernas
+COMPOUND(556182, 550210): läsa + plats
+893535r4<substantiv>läsplatta:läsplatta:läsplattas:läsplattan:läsplattans:läsplattor:läsplattors:läsplattorna:läsplattornas
+COMPOUND(556182, 632785): läsa + platta
+872300r3<substantiv>läspljud:läspljud:läspljuds:läspljudet:läspljudets:läspljud:läspljuds:läspljuden:läspljudens
+957315r3<substantiv>läspning:läspning:läspnings:läspningen:läspningens:läspningar:läspningars:läspningarna:läspningarnas
+893554r4<substantiv>läsprocess:läsprocess:läsprocess:läsprocessen:läsprocessens:läsprocesser:läsprocessers:läsprocesserna:läsprocessernas
+COMPOUND(556182, 550258): läsa + process
+893562r4<substantiv>läsprov:läsprov:läsprovs:läsprovet:läsprovets:läsprov:läsprovs:läsproven:läsprovens
+COMPOUND(556182, 621657): läsa + prov
+893568r4<substantiv>läspräst:läspräst:läsprästs:läsprästen:läsprästens:läspräster:läsprästers:läsprästerna:läsprästernas
+COMPOUND(556182, 550286): läsa + präst
+893576r4<substantiv>läsrum:läsrum:läsrums:läsrummet:läsrummets:läsrum:läsrums:läsrummen:läsrummens
+COMPOUND(556182, 571182): läsa + rum
+634380r3<substantiv>läss:läss:läss:lässet:lässets::::
+CUSTOM: n n
+687893r5<verb>lässkydda:lässkydda:lässkyddade:lässkyddat:lässkyddar:lässkydda:lässkyddas:lässkyddades:lässkyddats:lässkyddas:lässkyddad:lässkyddat:lässkyddade::
+DEFINITION 1: Göra t.ex. en datorfil oläsbar
+COMPOUND(556182, 547680): läsa + skydda
+846393r3<adjektiv>lässvag:lässvag:lässvagt:lässvaga:lässvaga::::
+893582r4<substantiv>lässvårighet:lässvårighet:lässvårighets:lässvårigheten:lässvårighetens:lässvårigheter:lässvårigheters:lässvårigheterna:lässvårigheternas
+COMPOUND(556182, 603768): läsa + svårighet
+637045r4<substantiv>läst:läst:lästs:lästen:lästens:läster:lästers:lästerna:lästernas
+CUSTOM: y n
+982641r3<substantiv>læstadianism:læstadianism:læstadianisms:læstadianismen:læstadianismens::::
+982647r3<adjektiv>læstadiansk:læstadiansk:læstadianskt:læstadianska:læstadianska::::læstadianske::::::::
+893590r3<substantiv>lästeknik:lästeknik:lästekniks:lästekniken:lästeknikens::::
+581752r3<adjektiv>lästeknisk:lästeknisk:lästekniskt:lästekniska:lästekniska::::
+893594r4<substantiv>lästimme:lästimme, lästimma:lästimmes, lästimmas:lästimmen, lästimman:lästimmens, lästimmans:lästimmar:lästimmars:lästimmarna:lästimmarnas
+COMPOUND(556182, 599754): läsa + timma, timme
+893606r4<substantiv>lästips:lästips:lästips:lästipset:lästipsets:lästips:lästips:lästipsen:lästipsens
+COMPOUND(556182, 553049): läsa + tips
+893612r3<substantiv>lästräning:lästräning:lästränings:lästräningen:lästräningens::::
+893616r3<adjektiv>lästrött:lästrött:lästrött:läströtta:läströtta::::läströtte::::::::
+681390r4<substantiv>läsupplevelse:läsupplevelse:läsupplevelses:läsupplevelsen:läsupplevelsens:läsupplevelser:läsupplevelsers:läsupplevelserna:läsupplevelsernas
+COMPOUND(556182, 637464): läsa + upplevelse
+CUSTOM: y y läsupplevelse
+893619r4<substantiv>läsuttal:läsuttal:läsuttals:läsuttalet:läsuttalets:läsuttal:läsuttals:läsuttalen:läsuttalens
+COMPOUND(556182, 553097): läsa + uttal
+916573r4<substantiv>läsutveckling:läsutveckling:läsutvecklings:läsutvecklingen:läsutvecklingens::::
+COMPOUND(556182, 637669): läsa + utveckling
+893625r4<substantiv>läsvana:läsvana:läsvanas:läsvanan:läsvanans:läsvanor:läsvanors:läsvanorna:läsvanornas
+COMPOUND(556182, 562019): läsa + vana
+681392r3<adjektiv>läsvänlig:läsvänlig:läsvänligt:läsvänliga:läsvänliga::::
+687908r3<adjektiv>läsvärd:läsvärd:läsvärt:läsvärda:läsvärda::::
+893633r4<substantiv>läsvärde:läsvärde:läsvärdes:läsvärdet:läsvärdets:läsvärden:läsvärdens:läsvärdena:läsvärdenas
+COMPOUND(556182, 613015): läsa + värde
+687910r3<substantiv>läsvärdhet:läsvärdhet:läsvärdhets:läsvärdheten:läsvärdhetens::::
+CUSTOM: y y läsvärdhets
+552682r3<substantiv>läsår:läsår:läsårs:läsåret:läsårets:läsår:läsårs:läsåren:läsårens
+893641r4<substantiv>läsämne:läsämne:läsämnes:läsämnet:läsämnets:läsämnen:läsämnens:läsämnena:läsämnenas
+COMPOUND(556182, 613026): läsa + ämne
+893649r4<substantiv>läsövning:läsövning:läsövnings:läsövningen:läsövningens:läsövningar:läsövningars:läsövningarna:läsövningarnas
+COMPOUND(556182, 598019): läsa + övning
+621047r4<substantiv>läte:läte:lätes:lätet:lätets:läten:lätens:lätena:lätenas
+556261r8<adjektiv>lätt:lätt:lätt:lätta:lätta:lättare:lättast:lättaste:lätte::::::::
+CUSTOM: y y lätt
+555987r6<adverb>lätt:lätt
+CUSTOM: y n
+547318r4<verb>lätta:lätta:lättade:lättat:lättar:lätta:lättas:lättades:lättats:lättas:lättad:lättat:lättade::
+687913r3<adjektiv>lättad:lättad:lättat:lättade:lättade:!:!:!:
+952121r4<substantiv>lättakut:lättakut:lättakuts:lättakuten:lättakutens:lättakuter:lättakuters:lättakuterna:lättakuternas
+COMPOUND(556261, 600971): lätt + akut
+566604r3<adjektiv>lättantändlig:lättantändlig:lättantändligt:lättantändliga:lättantändliga::::
+793053r3<adjektiv>lättarbetad:lättarbetad:lättarbetat:lättarbetade:lättarbetade:!:!:!:
+793056r3<adjektiv>lättbearbetad:lättbearbetad:lättbearbetat:lättbearbetade:lättbearbetade:!:!:!:
+801507r3<adjektiv>lättbedd:lättbedd:lättbett:lättbedda:lättbedda::::
+566607r3<adjektiv>lättbegriplig:lättbegriplig:lättbegripligt:lättbegripliga:lättbegripliga::::
+569382r3<adjektiv>lättblekbar:lättblekbar:lättblekbart:lättblekbara:lättblekbara::::
+799836r3<adjektiv>lättbyggd:lättbyggd:lättbyggt:lättbyggda:lättbyggda::::
+799839r3<adjektiv>lättböjd:lättböjd:lättböjt:lättböjda:lättböjda::::
+921011r5<adjektiv>lättcyklad:lättcyklad:lättcyklat:lättcyklade:lättcyklade:!:!:!:::::::::
+566608r4<adjektiv>lättfattlig:lättfattlig:lättfattligt:lättfattliga:lättfattliga:lättfattligare:lättfattligast:lättfattligaste:
+884359r3<substantiv>lättfil:lättfil:lättfils:lättfilen:lättfilens::::
+574475r3<adjektiv>lättflyktig:lättflyktig:lättflyktigt:lättflyktiga:lättflyktiga::::
+793059r3<adjektiv>lättfotad:lättfotad:lättfotat:lättfotade:lättfotade:!:!:!:
+566609r3<adjektiv>lättframkomlig:lättframkomlig:lättframkomligt:lättframkomliga:lättframkomliga::::
+793062r3<adjektiv>lättfångad:lättfångad:lättfångat:lättfångade:lättfångade:!:!:!:
+574478r3<adjektiv>lättfärdig:lättfärdig:lättfärdigt:lättfärdiga:lättfärdiga::::
+687914r3<substantiv>lättfärdighet:lättfärdighet:lättfärdighets:lättfärdigheten:lättfärdighetens::::
+CUSTOM: y y lättfärdighets
+566612r3<adjektiv>lättfördärvlig:lättfördärvlig:lättfördärvligt:lättfördärvliga:lättfördärvliga::::
+566615r3<adjektiv>lättförklarlig:lättförklarlig:lättförklarligt:lättförklarliga:lättförklarliga::::
+801510r3<adjektiv>lättförstådd:lättförstådd:lättförstått:lättförstådda:lättförstådda::::
+566618r4<adjektiv>lättförståelig:lättförståelig:lättförståeligt:lättförståeliga:lättförståeliga::::lättförståelige
+989503r3<adjektiv>lättgjord:lättgjord:lättgjort:lättgjorda:lättgjorda::::::::::::
+801106r3<adjektiv>lättgående:lättgående:lättgående:lättgående:lättgående:!:!:!:
+566619r4<adjektiv>lätthanterlig:lätthanterlig:lätthanterligt:lätthanterliga:lätthanterliga::::lätthanterlige
+649865r5<substantiv>lätthelg:lätthelg:lätthelgs:lätthelgen:lätthelgens:lätthelger:lätthelgers:lätthelgerna:lätthelgernas
+DEFINITION 1: Dag då de flesta är lediga men då vissa i den offentliga förvaltningen måste arbeta, t.ex. skärtorsdagen, långfredagen, Kristi Himmelfärdsdag och alla helgons dag
+COMPOUND(556261, 549211): lätt + helg
+CUSTOM: y n n
+687915r3<substantiv>lätthet:lätthet:lätthets:lättheten:lätthetens::::
+CUSTOM: y y lätthets
+566620r3<adjektiv>lättillgänglig:lättillgänglig:lättillgängligt:lättillgängliga:lättillgängliga::::
+757882r3<substantiv>lätting:lätting:lättings:lättingen:lättingens:lättingar:lättingars:lättingarna:lättingarnas
+621050r3<substantiv>lättja:lättja:lättjas:lättjan:lättjans::::
+585035r4<adjektiv>lättjefull:lättjefull:lättjefullt:lättjefulla:lättjefulla:lättjefullare:lättjefullast:lättjefullaste:lättjefulle
+621051r3<adjektiv>lättklädd:lättklädd:lättklätt:lättklädda:lättklädda::::lättklädde
+846397r3<adjektiv>lättkokt:lättkokt:lättkokt:lättkokta:lättkokta::::
+687917r3<adjektiv>lättkontrollerad:lättkontrollerad:lättkontrollerat:lättkontrollerade:lättkontrollerade:!:!:!:
+621053r3<adjektiv>lättköpt:lättköpt:lättköpt:lättköpta:lättköpta::::
+952131r3<adjektiv>lättkörd:lättkörd:lättkört:lättkörda:lättkörda::::::::::::
+793065r3<adjektiv>lättlagad:lättlagad:lättlagat:lättlagade:lättlagade:!:!:!:
+801513r4<adjektiv>lättledd:lättledd:lättlett:lättledda:lättledda::::lättledde
+621054r3<adjektiv>lättlurad:lättlurad:lättlurat:lättlurade:lättlurade:!:!:!:
+621057r4<adjektiv>lättläst:lättläst:lättläst:lättlästa:lättlästa:lättlästare:lättlästast:lättlästaste:
+566621r4<adjektiv>lättlöslig:lättlöslig:lättlösligt:lättlösliga:lättlösliga:lättlösligare:lättlösligast:lättlösligaste:
+846401r3<adjektiv>lättlöst:lättlöst:lättlöst:lättlösta:lättlösta::::
+799842r3<adjektiv>lättmald:lättmald:lättmalt:lättmalda:lättmalda::::
+CUSTOM: y n n
+793068r3<adjektiv>lättmanövrerad:lättmanövrerad:lättmanövrerat:lättmanövrerade:lättmanövrerade:!:!:!:
+621058r3<substantiv>lättmargarin:lättmargarin:lättmargarins:lättmargarinet:lättmargarinets:lättmargariner:lättmargariners:lättmargarinerna:lättmargarinernas
+621066r3<substantiv>lättmetall:lättmetall:lättmetalls:lättmetallen:lättmetallens:lättmetaller:lättmetallers:lättmetallerna:lättmetallernas
+621074r3<substantiv>lättmjölk:lättmjölk:lättmjölks:lättmjölken:lättmjölkens::::
+621078r4<verb>lättna:lättna:lättnade:lättnat:lättnar:lättna::::::::lättnande:
+621082r4<substantiv>lättnad:lättnad:lättnads:lättnaden:lättnadens:lättnader:lättnaders:lättnaderna:lättnadernas
+CUSTOM: y y lättnads
+916579r4<substantiv>lättnadsregel:lättnadsregel:lättnadsregels:lättnadsregeln:lättnadsregelns:lättnadsregler:lättnadsreglers:lättnadsreglerna:lättnadsreglernas
+COMPOUND(621082, 621698): lättnad + regel
+793071r3<adjektiv>lättolkad:lättolkad:lättolkat:lättolkade:lättolkade:!:!:!:
+922055r3<adjektiv>lättplockad:lättplockad:lättplockat:lättplockade:lättplockade:!:!:!:::::::::
+793074r3<adjektiv>lättpratad:lättpratad:lättpratat:lättpratade:lättpratade:!:!:!:
+621089r3<adjektiv>lättpåverkad:lättpåverkad:lättpåverkat:lättpåverkade:lättpåverkade:!:!:!:
+793077r3<adjektiv>lättretad:lättretad:lättretat:lättretade:lättretade:!:!:!:
+566624r3<adjektiv>lättretlig:lättretlig:lättretligt:lättretliga:lättretliga::::
+793080r3<adjektiv>lättroad:lättroad:lättroat:lättroade:lättroade:!:!:!:
+687918r3<adjektiv>lättrogen:lättrogen:lättroget:lättrogna:lättrogna::::lättrogne
+687919r3<substantiv>lättrogenhet:lättrogenhet:lättrogenhets:lättrogenheten:lättrogenhetens::::
+CUSTOM: y y lättrogenhets
+687920r3<adjektiv>lätträknad:lätträknad:lätträknat:lätträknade:lätträknade:!:!:!:
+687923r3<adjektiv>lättrökt:lättrökt:lättrökt:lättrökta:lättrökta::::
+687925r4<adjektiv>lättrörd:lättrörd:lättrört:lättrörda:lättrörda::::lättrörde
+566627r3<adjektiv>lättrörlig:lättrörlig:lättrörligt:lättrörliga:lättrörliga::::
+793083r3<adjektiv>lättsaltad:lättsaltad:lättsaltat:lättsaltade:lättsaltade:!:!:!:
+563419r4<adjektiv>lättsam:lättsam:lättsamt:lättsamma:lättsamma:lättsammare:lättsammast:lättsammaste:
+948535r3<substantiv>lättsamhet:lättsamhet:lättsamhets:lättsamheten:lättsamhetens::::
+687926r3<substantiv>lättsinne:lättsinne:lättsinnes:lättsinnet:lättsinnets::::
+574481r4<adjektiv>lättsinnig:lättsinnig:lättsinnigt:lättsinniga:lättsinniga:lättsinnigare:lättsinnigast:lättsinnigaste:lättsinnige
+956912r3<substantiv>lättsinnighet:lättsinnighet:lättsinnighets:lättsinnigheten:lättsinnighetens::::
+799845r3<adjektiv>lättskrämd:lättskrämd:lättskrämt:lättskrämda:lättskrämda::::
+687928r4<adjektiv>lättskött:lättskött:lättskött:lättskötta:lättskötta:lättsköttare:lättsköttast:lättsköttaste:
+872322r3<adjektiv>lättsmält:lättsmält:lättsmält:lättsmälta:lättsmälta:lättsmältare:lättsmältast:lättsmältaste:
+793086r3<adjektiv>lättspelad:lättspelad:lättspelat:lättspelade:lättspelade:!:!:!:
+799848r3<adjektiv>lättsprängd:lättsprängd:lättsprängt:lättsprängda:lättsprängda::::
+686203r5<adjektiv>lättstekt:lättstekt:lättstekt:lättstekta:lättstekta::::::::::::
+799851r3<adjektiv>lättstyrd:lättstyrd:lättstyrt:lättstyrda:lättstyrda::::
+965071r3<adjektiv>lättsvald:lättsvald:lättsvalt:lättsvalda:lättsvalda::::::::::::
+799854r3<adjektiv>lättsåld:lättsåld:lättsålt:lättsålda:lättsålda::::
+793089r3<adjektiv>lättsårad:lättsårad:lättsårat:lättsårade:lättsårade:!:!:!:
+799857r3<adjektiv>lättsövd:lättsövd:lättsövt:lättsövda:lättsövda::::
+793092r3<adjektiv>lättuggad:lättuggad:lättuggat:lättuggade:lättuggade:!:!:!:
+734810r9<substantiv>lättvikt:lättvikt:lättvikts:lättvikten:lättviktens:!:!:!:!
+CUSTOM: y y lättvikts
+754785r3<substantiv>lättviktare:lättviktare:lättviktares:lättviktaren:lättviktarens:lättviktare:lättviktares:lättviktarna:lättviktarnas
+574482r3<adjektiv>lättviktig:lättviktig:lättviktigt:lättviktiga:lättviktiga::::
+734815r9<substantiv>lättviktsaluminium:lättviktsaluminium:lättviktsaluminiums:lättviktsaluminiet, lättviktsaluminiumet:lättviktsaluminiets, lättviktsaluminiumets:!:!:!:!
+COMPOUND(734810, 604436): lättvikt + aluminium
+919184r4<substantiv>lättvin:lättvin:lättvins:lättvinet:lättvinets:lättviner:lättviners:lättvinerna:lättvinernas
+COMPOUND(556261, 600515): lätt + vin
+574485r4<adjektiv>lättvindig:lättvindig:lättvindigt:lättvindiga:lättvindiga:lättvindigare:lättvindigast:lättvindigaste:lättvindige
+957577r3<substantiv>lättvindighet:lättvindighet:lättvindighets:lättvindigheten:lättvindighetens::::
+949453r3<adjektiv>lättväckt:lättväckt:lättväckt:lättväckta:lättväckta::::::::::::
+793095r3<adjektiv>lättvättad:lättvättad:lättvättat:lättvättade:lättvättade:!:!:!:
+566628r3<adjektiv>lättåtkomlig:lättåtkomlig:lättåtkomligt:lättåtkomliga:lättåtkomliga::::
+569385r3<adjektiv>lättöjbar:lättöjbar:lättöjbart:lättöjbara:lättöjbara::::
+754791r5<substantiv>lättöl:lättöl:lättöls:lättölet:lättölets:lättöl:lättöls:lättölen:lättölens
+COMPOUND(555987, 553170): lätt + öl
+CUSTOM: y y lättöls
+754798r3<substantiv>lättölsreklam::::::::
+COMPOUND(754791, 621732): lättöl + reklam
+566631r3<adjektiv>lättöverskådlig:lättöverskådlig:lättöverskådligt:lättöverskådliga:lättöverskådliga::::
+594691r6<substantiv>läxa:läxa:läxas:läxan:läxans:läxor:läxors:läxorna:läxornas
+CUSTOM: y y
+585584r6<verb>läxa:läxa:läxade:läxat:läxar:läxa:läxas:läxades:läxats:läxas:::::
+754799r6<substantiv>läxbok:läxbok:läxboks:läxboken:läxbokens:läxböcker:läxböckers:läxböckerna:läxböckernas
+COMPOUND(594691, 555346): läxa + bok
+563980r3<adjektiv>läxfri:läxfri:läxfritt:läxfria:läxfria::::
+754807r4<substantiv>läxförhör:läxförhör:läxförhörs:läxförhöret:läxförhörets:läxförhör:läxförhörs:läxförhören:läxförhörens
+COMPOUND(594691, 552407): läxa + förhör
+916589r3<substantiv>läxhjälp:läxhjälp:läxhjälps:läxhjälpen:läxhjälpens::::
+754808r4<substantiv>läxläsning:läxläsning:läxläsnings:läxläsningen:läxläsningens:läxläsningar:läxläsningars:läxläsningarna:läxläsningarnas
+COMPOUND(594691, 687891): läxa + läsning
+585388r8<verb>löda:löda:lödde:lött:löder:löd:lödas:lödades, löddes:lödats, lötts:löds:lödd:lött:lödda::
+CUSTOM: y n
+787662r3<substantiv>lödder:lödder:lödders:löddret:löddrets::::
+757895r3<verb>löddra:löddra:löddrade:löddrat:löddrar:löddra::::::::löddrande:
+574486r4<adjektiv>löddrig:löddrig:löddrigt:löddriga:löddriga:löddrigare:löddrigast:löddrigaste:
+872336r3<substantiv>lödfog:lödfog:lödfogs:lödfogen:lödfogens:lödfogar:lödfogars:lödfogarna:lödfogarnas
+563983r3<adjektiv>lödfri:lödfri:lödfritt:lödfria:lödfria::::
+CUSTOM: y n n
+574487r4<adjektiv>lödig:lödig:lödigt:lödiga:lödiga::::::::::::
+CUSTOM: n n y
+681393r4<substantiv>lödkolv:lödkolv:lödkolvs:lödkolven:lödkolvens:lödkolvar:lödkolvars:lödkolvarna:lödkolvarnas
+COMPOUND(585388, 551574): löda + kolv
+872344r3<substantiv>lödmetall:lödmetall:lödmetalls:lödmetallen:lödmetallens:lödmetaller:lödmetallers:lödmetallerna:lödmetallernas
+681394r4<substantiv>lödning:lödning:lödnings:lödningen:lödningens:lödningar:lödningars:lödningarna:lödningarnas
+CUSTOM: y y lödnings
+982652r3<substantiv>lödtenn:lödtenn:lödtenns:lödtennet:lödtennets::::
+CUSTOM: y n
+873819r3<egennamn>Löftadalen:Löftadalen:Löftadalens
+612690r9<substantiv>löfte:löfte:löftes:löftet:löftets:löften:löftens:löftena:löftenas
+CUSTOM: y y löftes
+754816r3<substantiv>löftesbrott::::::::
+COMPOUND(612690, 552275): löfte + brott
+754818r5<adjektiv>löftesrik:löftesrik:löftesrikt:löftesrika:löftesrika:löftesrikare:löftesrikast:löftesrikaste:löftesrike
+COMPOUND(612690, 563125): löfte + rik
+901122r3<verb>löga:löga:lögade:lögat:lögar:löga:lögas:lögades:lögats:lögas:lögad:lögat:lögade:lögande:!
+549974r4<substantiv>lögn:lögn:lögns:lögnen:lögnens:lögner:lögners:lögnerna:lögnernas
+574490r4<adjektiv>lögnaktig:lögnaktig:lögnaktigt:lögnaktiga:lögnaktiga:lögnaktigare:lögnaktigast:lögnaktigaste:lögnaktige
+948214r3<substantiv>lögnaktighet:lögnaktighet:lögnaktighets:lögnaktigheten:lögnaktighetens:lögnaktigheter:lögnaktigheters:lögnaktigheterna:lögnaktigheternas
+733593r3<substantiv>lögnare:lögnare:lögnares:lögnaren:lögnarens:lögnare:lögnares:lögnarna:lögnarnas
+757900r3<substantiv>lögndetektor:lögndetektor:lögndetektors:lögndetektorn:lögndetektorns:lögndetektorer:lögndetektorers:lögndetektorerna:lögndetektorernas
+733599r3<substantiv>lögnerska:lögnerska:lögnerskas:lögnerskan:lögnerskans:lögnerskor:lögnerskors:lögnerskorna:lögnerskornas
+757908r3<substantiv>lögnhals:lögnhals:lögnhals:lögnhalsen:lögnhalsens:lögnhalsar:lögnhalsars:lögnhalsarna:lögnhalsarnas
+757915r3<substantiv>löja:löja:löjas:löjan:löjans:löjor:löjors:löjorna:löjornas
+CUSTOM: y n
+618768r3<substantiv>löje:löje:löjes:löjet:löjets:löjen:löjens:löjena:löjenas
+618771r3<adjektiv>löjeväckande:löjeväckande:löjeväckande:löjeväckande:löjeväckande:!:!:!:
+566634r5<adjektiv>löjlig:löjlig:löjligt:löjliga:löjliga:löjligare:löjligast:löjligaste:löjlige
+681397r3<substantiv>löjlighet:löjlighet:löjlighets:löjligheten:löjlighetens:löjligheter:löjligheters:löjligheterna:löjligheternas
+CUSTOM: y y löjlighets
+618772r3<substantiv>löjrom:löjrom:löjroms:löjrommen:löjrommens::::
+618776r3<substantiv>löjtnant:löjtnant:löjtnants:löjtnanten:löjtnantens:löjtnanter:löjtnanters:löjtnanterna:löjtnanternas
+CUSTOM: y y löjtnants
+754822r3<substantiv>löjtnantshjärta:löjtnantshjärta:löjtnantshjärtas:löjtnantshjärtat:löjtnantshjärtats:löjtnantshjärtan:löjtnantshjärtans:löjtnantshjärtana:löjtnantshjärtanas
+CUSTOM: n n
+556010r27<substantiv>lök:lök:löks:löken:lökens:lökar:lökars:lökarna:lökarnas
+CUSTOM: y n lök
+674988r4<substantiv>lökfjäll:lökfjäll:lökfjälls:lökfjället:lökfjällets:lökfjäll:lökfjälls:lökfjällen:lökfjällens
+COMPOUND(556010, 552379): lök + fjäll
+674996r4<substantiv>lökfluga:lökfluga:lökflugas:lökflugan:lökflugans:lökflugor:lökflugors:lökflugorna:lökflugornas
+COMPOUND(556010, 561489): lök + fluga
+CUSTOM: y n n
+574491r3<adjektiv>lökformig:lökformig:lökformigt:lökformiga:lökformiga::::
+675005r4<substantiv>lökgroda:lökgroda:lökgrodas:lökgrodan:lökgrodans:lökgrodor:lökgrodors:lökgrodorna:lökgrodornas
+COMPOUND(556010, 556005): lök + groda
+CUSTOM: y n n
+675021r4<substantiv>lökkupol:lökkupol:lökkupols:lökkupolen:lökkupolens:lökkupoler:lökkupolers:lökkupolerna:lökkupolernas
+COMPOUND(556010, 549812): lök + kupol
+675030r4<substantiv>lökkvalster:lökkvalster:lökkvalsters:lökkvalstret:lökkvalstrets:lökkvalster:lökkvalsters:lökkvalstren:lökkvalstrens
+COMPOUND(556010, 591599): lök + kvalster
+675038r4<substantiv>lökmönster:lökmönster:lökmönsters:lökmönstret:lökmönstrets:lökmönster:lökmönsters:lökmönstren, lökmönsterna:lökmönstrens, lökmönsternas
+COMPOUND(556010, 621588): lök + mönster
+675047r4<substantiv>löksill:löksill:löksills:löksillen:löksillens:löksillar:löksillars:löksillarna:löksillarnas
+COMPOUND(556010, 551828): lök + sill
+931705r4<substantiv>lökskal:lökskal:lökskals:lökskalet:lökskalets:lökskal:lökskals:lökskalen:lökskalens
+COMPOUND(556010, 552914): lök + skal
+931711r4<substantiv>löksmak:löksmak:löksmaks:löksmaken:löksmakens::::
+COMPOUND(556010, 550536): lök + smak
+675055r4<substantiv>löksoppa:löksoppa:löksoppas:löksoppan:löksoppans:löksoppor:löksoppors:löksopporna:löksoppornas
+COMPOUND(556010, 595315): lök + soppa
+675074r4<substantiv>lökstam:lökstam:lökstams:lökstammen:lökstammens:lökstammar:lökstammars:lökstammarna:lökstammarnas
+COMPOUND(556010, 619720): lök + stam
+768645r4<substantiv>löksås:löksås:löksås:löksåsen:löksåsens:löksåser:löksåsers:löksåserna:löksåsernas
+COMPOUND(556010, 556707): lök + sås
+892829r3<substantiv>löktrav:löktrav:löktravs:löktraven:löktravens::::
+675083r4<substantiv>lökväxt:lökväxt:lökväxts:lökväxten:lökväxtens:lökväxter:lökväxters:lökväxterna:lökväxternas
+COMPOUND(556010, 585876): lök + växt
+625697r3<adjektiv>lömsk:lömsk:lömskt:lömska:lömska:lömskare:lömskast:lömskaste:lömske
+872359r3<verb>lömskna:lömskna:lömsknade:lömsknat:lömsknar:lömskna::::::::lömsknande:
+549976r27<substantiv>lön:lön:löns:lönen:lönens:löner:löners:lönerna:lönernas
+CUSTOM: y y löne
+547321r4<verb>löna:löna:lönade:lönat:lönar:löna:lönas:lönades:lönats:lönas:lönad:lönat:lönade::
+687933r3<adjektiv>lönande:lönande:lönande:lönande:lönande:!:!:!:
+609008r3<substantiv>löneanspråk:löneanspråk:löneanspråks:löneanspråket:löneanspråkets:löneanspråk:löneanspråks:löneanspråken:löneanspråkens
+612691r3<substantiv>lönearbete:lönearbete:lönearbetes:lönearbetet:lönearbetets:lönearbeten:lönearbetens:lönearbetena:lönearbetenas
+937324r3<substantiv>löneavtal:löneavtal:löneavtals:löneavtalet:löneavtalets:löneavtal:löneavtals:löneavtalen:löneavtalens
+681399r4<substantiv>löneberedning:löneberedning:löneberednings:löneberedningen:löneberedningens:löneberedningar:löneberedningars:löneberedningarna:löneberedningarnas
+COMPOUND(549976, 596461): lön + beredning
+CUSTOM: y y löneberednings
+760183r4<substantiv>lönebud:lönebud:lönebuds:lönebudet:lönebudets:lönebud:lönebuds:lönebuden:lönebudens
+COMPOUND(549976, 552287): lön + bud
+681400r4<substantiv>löneförhöjning:löneförhöjning:löneförhöjnings:löneförhöjningen:löneförhöjningens:löneförhöjningar:löneförhöjningars:löneförhöjningarna:löneförhöjningarnas
+COMPOUND(549976, 687934): lön + förhöjning
+CUSTOM: y y löneförhöjnings
+851311r3<substantiv>lönegap:lönegap:lönegaps:lönegapet:lönegapets:lönegap:lönegaps:lönegapen:lönegapens
+720885r5<substantiv>lönekostnad:lönekostnad:lönekostnads:lönekostnaden:lönekostnadens:lönekostnader:lönekostnaders:lönekostnaderna:lönekostnadernas
+COMPOUND(549976, 549744): lön + kostnad
+CUSTOM: y y lönekostnads
+754831r3<substantiv>lönekostnadsökning::::::::
+COMPOUND(720885, 649466): lönekostnad + ökning
+934353r4<substantiv>lönekrav:lönekrav:lönekravs:lönekravet:lönekravets:lönekrav:lönekravs:lönekraven:lönekravens
+COMPOUND(549976, 552582): lön + krav
+934359r4<substantiv>lönelyft:lönelyft:lönelyfts:lönelyftet:lönelyftets:lönelyft:lönelyfts:lönelyften:lönelyftens
+COMPOUND(549976, 618757): lön + lyft
+703978r3<adjektiv>lönemässig:lönemässig:lönemässigt:lönemässiga:lönemässiga::::
+934365r4<substantiv>lönenivå:lönenivå:lönenivås:lönenivån:lönenivåns:lönenivåer:lönenivåers:lönenivåerna:lönenivåernas
+COMPOUND(549976, 611085): lön + nivå
+581755r3<adjektiv>lönepolitisk:lönepolitisk:lönepolitiskt:lönepolitiska:lönepolitiska::::
+901701r4<substantiv>lönespiral:lönespiral:lönespirals:lönespiralen:lönespiralens:lönespiraler:lönespiralers:lönespiralerna:lönespiralernas
+COMPOUND(549976, 678411): lön + spiral
+901710r4<substantiv>lönespridning:lönespridning:lönespridnings:lönespridningen:lönespridningens:lönespridningar:lönespridningars:lönespridningarna:lönespridningarnas
+COMPOUND(549976, 668888): lön + spridning
+681401r4<substantiv>lönesänkning:lönesänkning:lönesänknings:lönesänkningen:lönesänkningens:lönesänkningar:lönesänkningars:lönesänkningarna:lönesänkningarnas
+COMPOUND(549976, 671233): lön + sänkning
+CUSTOM: y y lönesänknings
+783166r6<substantiv>lönesättning:lönesättning:lönesättnings:lönesättningen:lönesättningens:lönesättningar:lönesättningars:lönesättningarna:lönesättningarnas
+COMPOUND(549976, 638374): lön + sättning
+CUSTOM: y y lönesättnings
+802735r4<substantiv>lönesättningsbeslut:lönesättningsbeslut:lönesättningsbesluts:lönesättningsbeslutet:lönesättningsbeslutets:lönesättningsbeslu

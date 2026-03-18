@@ -1,0 +1,533 @@
+ig:trafikdugligt:trafikdugliga:trafikdugliga::::
+856078r3<substantiv>trafikdöd:trafikdöd:trafikdöds:trafikdöden:trafikdödens::::
+920220r4<adjektiv>trafikdöd:trafikdöd:trafikdött:trafikdöda:trafikdöda:!:!:!:::::::::
+COMPOUND(673056, 558366): trafik + död
+795766r3<adjektiv>trafikdödad:trafikdödad:trafikdödat:trafikdödade:trafikdödade:!:!:!:
+547855r5<verb>trafikera:trafikera:trafikerade:trafikerat:trafikerar:trafikera:trafikeras:trafikerades:trafikerats:trafikeras:trafikerad:trafikerat:trafikerade:trafikerande:
+570304r3<adjektiv>trafikerbar:trafikerbar:trafikerbart:trafikerbara:trafikerbara::::
+920223r4<substantiv>trafikering:trafikering:trafikerings:trafikeringen:trafikeringens:trafikeringar:trafikeringars:trafikeringarna:trafikeringarnas
+CUSTOM: y y trafikerings
+920232r4<substantiv>trafikeringsrätt:trafikeringsrätt:trafikeringsrätts:trafikeringsrätten:trafikeringsrättens::::
+COMPOUND(920223, 603413): trafikering + rätt
+943076r4<adjektiv>trafiketisk:trafiketisk:trafiketiskt:trafiketiska:trafiketiska::::::::::::
+COMPOUND(673056, 579853): trafik + etisk
+595549r3<substantiv>trafikfara:trafikfara:trafikfaras:trafikfaran:trafikfarans:trafikfaror:trafikfarors:trafikfarorna:trafikfarornas
+568183r3<adjektiv>trafikfarlig:trafikfarlig:trafikfarligt:trafikfarliga:trafikfarliga::::
+564331r3<adjektiv>trafikfri:trafikfri:trafikfritt:trafikfria:trafikfria::::
+942040r4<substantiv>trafikfyr:trafikfyr:trafikfyrs:trafikfyren:trafikfyrens:trafikfyrar:trafikfyrars:trafikfyrarna:trafikfyrarnas
+COMPOUND(673056, 551200): trafik + fyr
+819261r4<substantiv>trafikhets:trafikhets:trafikhets:trafikhetsen:trafikhetsens:!:!:!:!
+COMPOUND(673056, 624442): trafik + hets
+803680r4<substantiv>trafikkö:trafikkö:trafikkös:trafikkön:trafikköns:trafikköer:trafikköers:trafikköerna:trafikköernas
+COMPOUND(673056, 557680): trafik + kö
+748464r5<substantiv>trafikled:trafikled:trafikleds:trafikleden:trafikledens:trafikleder:trafikleders:trafiklederna:trafikledernas
+COMPOUND(673056, 556257): trafik + led
+CUSTOM: y y trafikleds
+748472r4<substantiv>trafikledning::::::::
+COMPOUND(673056, 551696): trafik + ledning
+CUSTOM: y y trafiklednings
+748473r3<substantiv>trafikledningstorn::::::::
+COMPOUND(748472, 553055): trafikledning + torn
+748474r3<substantiv>trafikledskorsning::::::::
+COMPOUND(748464, 559225): trafikled + korsning
+608328r3<substantiv>trafikljus:trafikljus:trafikljus:trafikljuset:trafikljusets:trafikljus:trafikljus:trafikljusen:trafikljusens
+612967r3<substantiv>trafikmärke:trafikmärke:trafikmärkes:trafikmärket:trafikmärkets:trafikmärken:trafikmärkens:trafikmärkena:trafikmärkenas
+577630r3<adjektiv>trafikmässig:trafikmässig:trafikmässigt:trafikmässiga:trafikmässiga::::
+942701r3<adjektiv>trafiknära:trafiknära:trafiknära:trafiknära:trafiknära:!:!:!:::::::::
+673058r4<substantiv>trafikolycka:trafikolycka:trafikolyckas:trafikolyckan:trafikolyckans:trafikolyckor:trafikolyckors:trafikolyckorna:trafikolyckornas
+COMPOUND(673056, 560318): trafik + olycka
+584416r3<adjektiv>trafikpolitisk:trafikpolitisk:trafikpolitiskt:trafikpolitiska:trafikpolitiska::::
+795769r3<adjektiv>trafikreglerad:trafikreglerad:trafikreglerat:trafikreglerade:trafikreglerade:!:!:!:
+795772r3<adjektiv>trafikskadad:trafikskadad:trafikskadat:trafikskadade:trafikskadade:!:!:!:
+673060r4<substantiv>trafikskola:trafikskola:trafikskolas:trafikskolan:trafikskolans:trafikskolor:trafikskolors:trafikskolorna:trafikskolornas
+COMPOUND(673056, 557322): trafik + skola
+920238r4<substantiv>trafikslag:trafikslag:trafikslags:trafikslaget:trafikslagets:trafikslag:trafikslags:trafikslagen:trafikslagens
+COMPOUND(673056, 608035): trafik + slag
+CUSTOM: y y trafikslags
+673061r4<substantiv>trafikstockning:trafikstockning:trafikstocknings:trafikstockningen:trafikstockningens:trafikstockningar:trafikstockningars:trafikstockningarna:trafikstockningarnas
+COMPOUND(673056, 673062): trafik + stockning
+CUSTOM: y y trafikstocknings
+847182r3<adjektiv>trafiksvag:trafiksvag:trafiksvagt:trafiksvaga:trafiksvaga::::
+732357r4<substantiv>trafiksäkerhet:trafiksäkerhet:trafiksäkerhets:trafiksäkerheten:trafiksäkerhetens:trafiksäkerheter:trafiksäkerheters:trafiksäkerheterna:trafiksäkerheternas
+COMPOUND(673056, 634282): trafik + säkerhet
+CUSTOM: y y trafiksäkerhets
+584419r3<adjektiv>trafikteknisk:trafikteknisk:trafiktekniskt:trafiktekniska:trafiktekniska::::
+682899r4<substantiv>trafikvakt:trafikvakt:trafikvakts:trafikvakten:trafikvaktens:trafikvakter:trafikvakters:trafikvakterna:trafikvakternas
+COMPOUND(673056, 550748): trafik + vakt
+577633r3<adjektiv>trafikvidrig:trafikvidrig:trafikvidrigt:trafikvidriga:trafikvidriga::::
+921250r4<substantiv>trafikvimmel:trafikvimmel:trafikvimmels:trafikvimlet:trafikvimlets:!:!:!:!
+COMPOUND(673056, 556436): trafik + vimmel
+624169r3<substantiv>tragedi:tragedi:tragedis:tragedin:tragedins:tragedier:tragediers:tragedierna:tragediernas
+856083r3<substantiv>tragedienn:tragedienn:tragedienns:tragediennen:tragediennens:tragedienner:tragedienners:tragediennerna:tragediennernas
+856091r3<substantiv>tragediförfattare:tragediförfattare:tragediförfattares:tragediförfattaren:tragediförfattarens:tragediförfattare:tragediförfattares:tragediförfattarna:tragediförfattarnas
+856097r3<substantiv>traggel:traggel:traggels:tragglet:tragglets::::
+763326r4<verb>traggla:traggla:tragglade:tragglat:tragglar:traggla:tragglas:tragglades:tragglats:tragglas:tragglad:tragglat:tragglade:tragglande:
+568186r3<adjektiv>tragglig:tragglig:traggligt:traggliga:traggliga::::
+673070r3<substantiv>tragik:tragik:tragiks:tragiken:tragikens::::
+856103r3<substantiv>tragiker:tragiker:tragikers:tragikern:tragikerns:tragiker:tragikers:tragikerna:tragikernas
+856109r3<substantiv>tragikomedi:tragikomedi:tragikomedis:tragikomedin:tragikomedins:tragikomedier:tragikomediers:tragikomedierna:tragikomediernas
+584422r4<adjektiv>tragikomisk:tragikomisk:tragikomiskt:tragikomiska:tragikomiska::::tragikomiske
+584423r4<adjektiv>tragisk:tragisk:tragiskt:tragiska:tragiska::::tragiske
+886477r3<substantiv>tragöd:tragöd:tragöds:tragöden:tragödens:tragöder:tragöders:tragöderna:tragödernas
+748475r4<substantiv>trailer:trailer:trailers:trailern:trailerns:trailrar:trailrars:trailrarna:trailrarnas
+882160r5<substantiv>trainee:trainee:trainees:traineen:traineens:traineer:traineers:traineerna:traineernas
+CUSTOM: y y trainee
+882165r3<substantiv>traineeprogram::::::::
+COMPOUND(882160, 555118): trainee + program
+588219r5<verb>trakassera:trakassera:trakasserade:trakasserat:trakasserar:trakassera:trakasseras:trakasserades:trakasserats:trakasseras:trakasserad:trakasserat:trakasserade:trakasserande:
+702979r3<substantiv>trakasseri:trakasseri:trakasseris:trakasseriet:trakasseriets:trakasserier:trakasseriers:trakasserierna:trakasseriernas
+627194r4<substantiv>traké:traké:trakés:trakén:trakéns:trakéer:trakéers:trakéerna:trakéernas
+DEFINITION 1: Andningsorgan hos vissa djur.
+CUSTOM: y n
+627204r4<substantiv>trakeotomi:trakeotomi:trakeotomis:trakeotomin:trakeotomins:trakeotomier:trakeotomiers:trakeotomierna:trakeotomiernas
+584424r3<adjektiv>trakisk:trakisk:trakiskt:trakiska:trakiska::::
+550687r4<substantiv>trakt:trakt:trakts:trakten:traktens:trakter:trakters:trakterna:trakternas
+547856r4<verb>trakta:trakta:traktade:traktat:traktar:trakta:traktas:traktades:traktats:traktas:::::
+640266r3<substantiv>traktamente:traktamente:traktamentes:traktamentet:traktamentets:traktamenten:traktamentens:traktamentena:traktamentenas
+CUSTOM: y y traktaments
+673071r4<substantiv>traktat:traktat:traktats:traktaten:traktatens:traktater:traktaters:traktaterna:traktaternas
+568189r3<adjektiv>traktatenlig:traktatenlig:traktatenligt:traktatenliga:traktatenliga::::
+577636r3<adjektiv>traktatmässig:traktatmässig:traktatmässigt:traktatmässiga:traktatmässiga::::
+547857r4<verb>traktera:traktera:trakterade:trakterat:trakterar:traktera:trakteras:trakterades:trakterats:trakteras:trakterad:trakterat:trakterade::
+795775r3<adjektiv>trakterad:trakterad:trakterat:trakterade:trakterade:!:!:!:
+856124r3<substantiv>traktering:traktering:trakterings:trakteringen:trakteringens:trakteringar:trakteringars:trakteringarna:trakteringarnas
+555337r3<substantiv>traktor:traktor:traktors:traktorn:traktorns:traktorer:traktorers:traktorerna:traktorernas
+CUSTOM: y y traktor
+591354r3<verb>traktorisera:traktorisera:traktoriserade:traktoriserat:traktoriserar:traktorisera:::::::::
+856132r3<substantiv>traktör:traktör:traktörs:traktören:traktörens:traktörer:traktörers:traktörerna:traktörernas
+595557r3<substantiv>traktörpanna:traktörpanna:traktörpannas:traktörpannan:traktörpannans:traktörpannor:traktörpannors:traktörpannorna:traktörpannornas
+935380r3<interjektion>trala:trala
+CUSTOM: n n y
+935381r3<interjektion>tralala:tralala
+CUSTOM: n n y
+697342r3<substantiv>trall:trall:tralls:trallen:trallens:trallar:trallars:trallarna:trallarnas
+673078r4<verb>tralla:tralla:trallade:trallat:trallar:tralla:trallas:trallades:trallats:trallas::::trallande:
+697346r3<substantiv>tralla:tralla:trallas:trallan:trallans:trallor:trallors:trallorna:trallornas
+856143r3<substantiv>trallvagn:trallvagn:trallvagns:trallvagnen:trallvagnens:trallvagnar:trallvagnars:trallvagnarna:trallvagnarnas
+568192r3<adjektiv>trallvänlig:trallvänlig:trallvänligt:trallvänliga:trallvänliga::::
+626739r3<substantiv>tramp:tramp:tramps:trampet:trampets:tramp:tramps:trampen:trampens
+547858r7<verb>trampa:trampa:trampade:trampat:trampar:trampa:trampas:trampades:trampats:trampas:trampad:trampat:trampade:trampande:
+CUSTOM: y y tramp
+748487r3<substantiv>trampa:trampa:trampas:trampan:trampans:trampor:trampors:tramporna:trampornas
+697355r3<substantiv>trampande:trampande:trampandes:trampandet:trampandets::::
+673079r3<substantiv>trampbil:trampbil:trampbils:trampbilen:trampbilens:trampbilar:trampbilars:trampbilarna:trampbilarnas
+673087r4<substantiv>trampmina:trampmina:trampminas:trampminan:trampminans:trampminor:trampminors:trampminorna:trampminornas
+COMPOUND(547858, 555484): trampa + mina
+840180r3<substantiv>trampning:trampning:trampnings:trampningen:trampningens:trampningar:trampningars:trampningarna:trampningarnas
+748479r3<substantiv>trampolin:trampolin:trampolins:trampolinen:trampolinens:trampoliner:trampoliners:trampolinerna:trampolinernas
+CUSTOM: y y trampolin
+626742r3<substantiv>trams:trams:trams:tramset:tramsets::::
+673095r4<verb>tramsa:tramsa:tramsade:tramsat:tramsar:tramsa:tramsas:tramsades:tramsats:tramsas::::tramsande:
+577639r4<adjektiv>tramsig:tramsig:tramsigt:tramsiga:tramsiga:tramsigare:tramsigast:tramsigaste:tramsige
+803689r3<substantiv>tramsighet:tramsighet:tramsighets:tramsigheten:tramsighetens:tramsigheter:tramsigheters:tramsigheterna:tramsigheternas
+856165r7<substantiv>tran:tran:trans:tranet, tranen:tranets, tranens::::
+CUSTOM: n n y
+595565r4<substantiv>trana:trana:tranas:tranan:tranans:tranor:tranors:tranorna:tranornas
+CUSTOM: y n
+577642r3<adjektiv>tranaktig:tranaktig:tranaktigt:tranaktiga:tranaktiga::::
+856159r3<substantiv>tranben:tranben:tranbens:tranbenet:tranbenets:tranben:tranbens:tranbenen:tranbenens
+673096r3<substantiv>tranbär:tranbär:tranbärs:tranbäret:tranbärets:tranbär:tranbärs:tranbären:tranbärens
+634598r6<substantiv>trance, trans:trans, trance:trans, trance:transen, trancen:transens, trancens::::
+591358r4<verb>tranchera:tranchera:trancherade:trancherat:trancherar:tranchera:trancheras:trancherades:trancherats:trancheras:trancherad:trancherat:trancherade:trancherande:
+856171r3<substantiv>trandans:trandans:trandans:trandansen:trandansens::::
+728290r3<egennamn>Tranemo:Tranemo:Tranemos
+CUSTOM: y n Tranemo
+577645r3<adjektiv>tranig:tranig:tranigt:traniga:traniga::::
+738196r3<adjektiv>trankil:trankil:trankilt:trankila:trankila::::
+988285r4<substantiv>trankokeri:trankokeri:trankokeris:trankokeriet:trankokeriets:trankokerier:trankokeriers:trankokerierna:trankokeriernas
+COMPOUND(856165, 828894): tran + kokeri
+626775r3<substantiv>transa:transa:transas:transan:transans:transor:transors:transorna:transornas
+673099r3<substantiv>transaktion:transaktion:transaktions:transaktionen:transaktionens:transaktioner:transaktioners:transaktionerna:transaktionernas
+CUSTOM: y y transaktions +transaktions
+800538r3<adjektiv>transaktionsstyrd:transaktionsstyrd:transaktionsstyrt:transaktionsstyrda:transaktionsstyrda::::
+856174r3<adjektiv>transalpinsk:transalpinsk:transalpinskt:transalpinska:transalpinska::::
+555997r9<adjektiv>transatlantisk:transatlantisk:transatlantiskt:transatlantiska:transatlantiska:!:!:!:transatlantiske
+856177r3<substantiv>transcendens:transcendens:transcendens:transcendensen:transcendensens::::
+763170r3<adjektiv>transcendent:transcendent:transcendent:transcendenta:transcendenta::::
+856180r3<adjektiv>transcendental:transcendental:transcendentalt:transcendentala:transcendentala::::
+856183r3<substantiv>transduktor:transduktor:transduktors:transduktorn:transduktorns:transduktorer:transduktorers:transduktorerna:transduktorernas
+778600r3<adjektiv>transeuropeisk:transeuropeisk:transeuropeiskt:transeuropeiska:transeuropeiska:!:!:!:
+616894r3<substantiv>transfer:transfer:transfers:transfern:transferns::::
+CUSTOM: y y transfer
+570926r3<adjektiv>transferabel:transferabel:transferabelt:transferabla:transferabla::::
+588223r4<verb>transferera:transferera:transfererade:transfererat:transfererar:transferera:transfereras:transfererades:transfererats:transfereras:transfererad:transfererat:transfererade:transfererande:
+673100r3<substantiv>transferering:transferering:transfererings:transfereringen:transfereringens:transfereringar:transfereringars:transfereringarna:transfereringarnas
+CUSTOM: y y transfererings
+907427r3<substantiv>transfett:transfett:transfetts:transfettet:transfettets:transfetter:transfetters:transfetterna:transfetternas
+CUSTOM: y y transfett
+920246r3<substantiv>transfettsyra:transfettsyra:transfettsyras:transfettsyran:transfettsyrans:transfettsyror:transfettsyrors:transfettsyrorna:transfettsyrornas
+856196r3<substantiv>transfiguration:transfiguration:transfigurations:transfigurationen:transfigurationens::::
+550689r3<substantiv>transform:transform:transforms:transformen:transformens:transformer:transformers:transformerna:transformernas
+616895r3<substantiv>transformation:transformation:transformations:transformationen:transformationens:transformationer:transformationers:transformationerna:transformationernas
+CUSTOM: y y transformations +transformations
+640225r5<substantiv>transformator:transformator:transformators:transformatorn:transformatorns:transformatorer:transformatorers:transformatorerna:transformatorernas
+CUSTOM: y y transformator
+795776r3<adjektiv>transformatorkopplad:transformatorkopplad:transformatorkopplat:transformatorkopplade:transformatorkopplade:!:!:!:
+766539r3<substantiv>transformatorstation::::::::
+COMPOUND(640225, 603711): transformator + station
+588227r5<verb>transformera:transformera:transformerade:transformerat:transformerar:transformera:transformeras:transformerades:transformerats:transformeras:transformerad:transformerat:transformerade:transformerande:
+920255r3<substantiv>transformering:transformering:transformerings:transformeringen:transformeringens:transformeringar:transformeringars:transformeringarna:transformeringarnas
+730872r3<substantiv>transfusion:transfusion:transfusions:transfusionen:transfusionens:transfusioner:transfusioners:transfusionerna:transfusionernas
+684391r4<substantiv>transgen:transgen:transgens:transgenen:transgenens:transgener:transgeners:transgenerna:transgenernas
+DEFINITION 1: ny eller förändrad gen i en organism
+988293r4<adjektiv>transgen:transgen:transgent:transgena:transgena::::::::::::
+DEFINITION 1: En transgen organism (växt eller djur) är en genetiskt modifierad organism i vars arvsmassa man antingen förändrat en gen, eller till vars arvsmassa en ny gen tillförts. Genen nedärvs till kommande generationer.\
+
+856200r3<substantiv>transgression:transgression:transgressions:transgressionen:transgressionens:transgressioner:transgressioners:transgressionerna:transgressionernas
+633496r7<substantiv>transistor:transistor:transistors:transistorn:transistorns:transistorer:transistorers:transistorerna:transistorernas
+DEFINITION 1: Elementär byggdel inom elektroniken.  Förstärker ström.  Många varianter finns. Grupper: bipolära transistorer är strömstyrda, fälteffekttransistorer styrs av spänning, tyristorer låser sig i tillslaget läge tills strömmen bryts.Konstrueras vanligen i kisel och kapslas var för sig, eller i miljontal och bildar en integrerad krets.  \
+Den vanligaste diskreta (enskilt kapslade) transistorn är den bipolära, men fälteffekttranssitorn blir allt vanligare, framförallt i krafttillämpningar.  Minneselementen i t.ex. DRAM och Flash-minnen är varianter på fäleffekttransistorn.
+CUSTOM: y y transistor
+591362r3<verb>transistorisera:transistorisera:transistoriserade:transistoriserat:transistoriserar:transistorisera:::::::::
+748494r3<substantiv>transistorradio::::::::
+COMPOUND(633496, 622347): transistor + radio
+646508r4<substantiv>transit:transit:transits:transiten:transitens:transiter:transiters:transiterna:transiternas
+CUSTOM: y y transit
+669044r4<substantiv>transitavgift:transitavgift:transitavgifts:transitavgiften:transitavgiftens:transitavgifter:transitavgifters:transitavgifterna:transitavgifternas
+COMPOUND(646508, 548299): transit + avgift
+591366r4<verb>transitera:transitera:transiterade:transiterat:transiterar:transitera:transiteras:transiterades:transiterats:transiteras:transiterad:transiterat:transiterade:transiterande:
+856213r3<substantiv>transitering:transitering:transiterings:transiteringen:transiteringens:transiteringar:transiteringars:transiteringarna:transiteringarnas
+646516r3<adjektiv>transitiv:transitiv:transitivt:transitiva:transitiva:!:!:!:
+591370r3<verb>transitivera:transitivera:transitiverade:transitiverat:transitiverar:transitivera:::::::::
+773644r3<substantiv>transitivitet:transitivitet:transitivitets:transitiviteten:transitivitetens::::
+646519r3<substantiv>transito:transito:transitos:transiton:transitons::::
+856221r3<substantiv>transitohamn:transitohamn:transitohamns:transitohamnen:transitohamnens:transitohamnar:transitohamnars:transitohamnarna:transitohamnarnas
+584427r3<adjektiv>transitorisk:transitorisk:transitoriskt:transitoriska:transitoriska::::
+856230r3<adjektiv>transkontinental:transkontinental:transkontinentalt:transkontinentala:transkontinentala::::
+591374r4<verb>transkribera:transkribera:transkriberade:transkriberat:transkriberar:transkribera:transkriberas:transkriberades:transkriberats:transkriberas:transkriberad:transkriberat:transkriberade::
+673805r3<substantiv>transkribering:transkribering:transkriberings:transkriberingen:transkriberingens:transkriberingar:transkriberingars:transkriberingarna:transkriberingarnas
+CUSTOM: y y transkriberings
+673103r3<substantiv>transkription:transkription:transkriptions:transkriptionen:transkriptionens:transkriptioner:transkriptioners:transkriptionerna:transkriptionernas
+CUSTOM: y y transkriptions
+646520r3<substantiv>translation:translation:translations:translationen:translationens:translationer:translationers:translationerna:translationernas
+CUSTOM: y y translations
+856234r3<substantiv>translator:translator:translators:translatorn:translatorns:translatorer:translatorers:translatorerna:translatorernas
+584430r3<adjektiv>translatorisk:translatorisk:translatoriskt:translatoriska:translatoriska::::
+856242r3<substantiv>translitteration:translitteration:translitterations:translitterationen:translitterationens:translitterationer:translitterationers:translitterationerna:translitterationernas
+591375r4<verb>translitterera:translitterera:translittererade:translittererat:translittererar:translitterera:translittereras:translittererades:translittererats:translittereras:translittererad:translittererat:translittererade:translittererande:
+884858r5<substantiv>translitterering:translitterering:translittererings:translittereringen:translittereringens:translittereringar:translittereringars:translittereringarna:translittereringarnas
+CUSTOM: y y translittererings
+603907r3<substantiv>transmission:transmission:transmissions:transmissionen:transmissionens:transmissioner:transmissioners:transmissionerna:transmissionernas
+856255r3<substantiv>transmitter:transmitter:transmitters:transmittern:transmitterns:transmittrar:transmittrars:transmittrarna:transmittrarnas
+547859r4<verb>transmittera:transmittera:transmitterade:transmitterat:transmitterar:transmittera:transmitteras:transmitterades:transmitterats:transmitteras:transmitterad:transmitterat:transmitterade::
+762978r3<substantiv>transmittor:transmittor:transmittors:transmittorn:transmittorns:transmittorer:transmittorers:transmittorerna:transmittorernas
+798956r3<adjektiv>transmodern:transmodern:transmodernt:transmoderna:transmoderna::::
+748495r4<substantiv>transmutation:transmutation:transmutations:transmutationen:transmutationens:transmutationer:transmutationers:transmutationerna:transmutationernas
+CUSTOM: y y transmutations
+748504r3<substantiv>transmutationsteknik::::::::
+COMPOUND(748495, 603854): transmutation + teknik
+591379r4<verb>transmutera:transmutera:transmuterade:transmuterat:transmuterar:transmutera:transmuteras:transmuterades:transmuterats:transmuteras:transmuterad:transmuterat:transmuterade:transmuterande:
+748505r3<adjektiv>transnationell:transnationell:transnationellt:transnationella:transnationella:!:!:!:
+924090r3<adjektiv>transocean:transocean:transoceant:transoceana:transoceana::::::::::::
+856270r3<substantiv>transparang:transparang:transparangs:transparangen:transparangens:transparanger:transparangers:transparangerna:transparangernas
+646521r4<substantiv>transparens:transparens:transparens:transparensen:transparensens::::
+CUSTOM: y y transparens
+898671r5<substantiv>transparensprincip::::::::
+COMPOUND(646521, 550253): transparens + princip
+639733r3<adjektiv>transparent:transparent:transparent:transparenta:transparenta::::
+771895r3<substantiv>transperson:transperson:transpersons:transpersonen:transpersonens:transpersoner:transpersoners:transpersonerna:transpersonernas
+646524r3<substantiv>transpiration:transpiration:transpirations:transpirationen:transpirationens::::
+CUSTOM: y y transpirations
+588228r4<verb>transpirera:transpirera:transpirerade:transpirerat:transpirerar:transpirera:transpireras:transpirerades:transpirerats:transpireras::::transpirerande:
+856282r3<substantiv>transplantat:transplantat:transplantats:transplantatet:transplantatets:transplantat:transplantats:transplantaten:transplantatens
+738313r4<substantiv>transplantation:transplantation:transplantations:transplantationen:transplantationens:transplantationer:transplantationers:transplantationerna:transplantationernas
+CUSTOM: y y transplantations +transplantations
+748509r4<substantiv>transplantationslag:transplantationslag:transplantationslags:transplantationslagen:transplantationslagens:transplantationslagar:transplantationslagars:transplantationslagarna:transplantationslagarnas
+COMPOUND(738313, 551690): transplantation + lag
+588232r4<verb>transplantera:transplantera:transplanterade:transplanterat:transplanterar:transplantera:transplanteras:transplanterades:transplanterats:transplanteras:transplanterad:transplanterat:transplanterade:transplanterande:
+646528r3<substantiv>transponder:transponder:transponders:transpondern:transponderns:transpondrar:transpondrars:transpondrarna:transpondrarnas
+547860r5<verb>transponera:transponera:transponerade:transponerat:transponerar:transponera:transponeras:transponerades:transponerats:transponeras:transponerad:transponerat:transponerade:transponerande:
+673104r3<substantiv>transponering:transponering:transponerings:transponeringen:transponeringens:transponeringar:transponeringars:transponeringarna:transponeringarnas
+CUSTOM: y y transponerings
+550690r26<substantiv>transport:transport:transports:transporten:transportens:transporter:transporters:transporterna:transporternas
+CUSTOM: y y transport +transport
+570929r3<adjektiv>transportabel:transportabel:transportabelt:transportabla:transportabla::::
+669052r3<substantiv>transportavgift:transportavgift:transportavgifts:transportavgiften:transportavgiftens:transportavgifter:transportavgifters:transportavgifterna:transportavgifternas
+757767r4<substantiv>transportavstånd:transportavstånd:transportavstånds:transportavståndet:transportavståndets:transportavstånd:transportavstånds:transportavstånden:transportavståndens
+COMPOUND(550690, 552214): transport + avstånd
+765631r4<substantiv>transportband:transportband:transportbands:transportbandet:transportbandets:transportband:transportbands:transportbanden:transportbandens
+COMPOUND(550690, 552220): transport + band
+585729r5<verb>transportera:transportera:transporterade:transporterat:transporterar:transportera:transporteras:transporterades:transporterats:transporteras:transporterad:transporterat:transporterade:transporterande:
+728731r4<substantiv>transportföretag:transportföretag:transportföretags:transportföretaget:transportföretagets:transportföretag:transportföretags:transportföretagen:transportföretagens
+COMPOUND(550690, 552403): transport + företag
+765703r4<substantiv>transportkostnad:transportkostnad:transportkostnads:transportkostnaden:transportkostnadens:transportkostnader:transportkostnaders:transportkostnaderna:transportkostnadernas
+COMPOUND(550690, 549744): transport + kostnad
+847185r4<substantiv>transportled:transportled:transportleds:transportleden:transportledens:transportleder:transportleders:transportlederna:transportledernas
+COMPOUND(550690, 556257): transport + led
+725406r4<substantiv>transportmedel:transportmedel:transportmedels:transportmedlet:transportmedlets:transportmedel:transportmedels:transportmedlen:transportmedlens
+COMPOUND(550690, 560532): transport + medel
+611379r3<substantiv>transportmedelsindustri:transportmedelsindustri:transportmedelsindustris:transportmedelsindustrin:transportmedelsindustrins:transportmedelsindustrier:transportmedelsindustriers:transportmedelsindustrierna:transportmedelsindustriernas
+712098r4<substantiv>transporträckvidd:transporträckvidd:transporträckvidds:transporträckvidden:transporträckviddens:transporträckvidder:transporträckvidders:transporträckvidderna:transporträckviddernas
+COMPOUND(550690, 712081): transport + räckvidd
+959682r4<substantiv>transportslag:transportslag:transportslags:transportslaget:transportslagets:transportslag:transportslags:transportslagen:transportslagens
+COMPOUND(550690, 608035): transport + slag
+727916r3<substantiv>transportsträcka:transportsträcka:transportsträckas:transportsträckan:transportsträckans:transportsträckor:transportsträckors:transportsträckorna:transportsträckornas
+765671r4<substantiv>transportsätt:transportsätt:transportsätts:transportsättet:transportsättets:transportsätt:transportsätts:transportsätten:transportsättens
+COMPOUND(550690, 553026): transport + sätt
+712107r4<substantiv>transportvikt:transportvikt:transportvikts:transportvikten:transportviktens:transportvikter:transportvikters:transportvikterna:transportvikternas
+COMPOUND(550690, 550771): transport + vikt
+550691r3<substantiv>transportör:transportör:transportörs:transportören:transportörens:transportörer:transportörers:transportörerna:transportörernas
+CUSTOM: y y transportörs
+856299r3<substantiv>transposition:transposition:transpositions:transpositionen:transpositionens:transpositioner:transpositioners:transpositionerna:transpositionernas
+964289r3<substantiv>transsexualism:transsexualism:transsexualisms:transsexualismen:transsexualismens::::
+947663r3<substantiv>transsexualitet:transsexualitet:transsexualitets:transsexualiteten:transsexualitetens::::
+856307r3<adjektiv>transsexuell:transsexuell:transsexuellt:transsexuella:transsexuella::::transsexuelle
+584433r3<adjektiv>transsibirisk:transsibirisk:transsibiriskt:transsibiriska:transsibiriska::::
+856312r3<substantiv>transsubstantiation:transsubstantiation:transsubstantiations:transsubstantiationen:transsubstantiationens:transsubstantiationer:transsubstantiationers:transsubstantiationerna:transsubstantiationernas
+988298r3<substantiv>transsubstantiationslära:::transsubstantiationsläran:transsubstantiationslärans::::
+942722r3<egennamn>Transsylvanien:Transsylvanien:Transsylvaniens
+988301r4<substantiv>transtillstånd:transtillstånd:transtillstånds:transtillståndet:transtillståndets:transtillstånd:transtillstånds:transtillstånden:transtillståndens
+COMPOUND(634598, 553043): trance, trans + tillstånd
+889372r4<substantiv>transträck:transträck:transträcks:transträcket:transträckets:transträck:transträcks:transträcken:transträckens
+COMPOUND(595565, 633783): trana + sträck
+940206r3<egennamn>Tranströmer:Tranströmer:Tranströmers
+591383r4<verb>transumera:transumera:transumerade:transumerat:transumerar:transumera:transumeras:transumerades:transumerats:transumeras:transumerad:transumerat:transumerade:transumerande:
+856327r3<substantiv>transumt:transumt:transumts:transumtet:transumtets:transumt:transumts:transumten:transumtens
+856334r3<substantiv>transuran:transuran:transurans:transuranen:transuranens:transuraner:transuraners:transuranerna:transuranernas
+856344r4<substantiv>transversal:transversal:transversals:transversalen:transversalens:transversaler:transversalers:transversalerna:transversalernas
+CUSTOM: y y transversal
+856353r3<adjektiv>transversal:transversal:transversalt:transversala:transversala::::
+856356r4<substantiv>transversalaxel:transversalaxel:transversalaxels:transversalaxeln:transversalaxelns:transversalaxlar:transversalaxlars:transversalaxlarna:transversalaxlarnas
+COMPOUND(856344, 592030): transversal + axel
+856364r3<adjektiv>transversell:transversell:transversellt:transversella:transversella::::
+988307r3<substantiv>transvestism:transvestism:transvestisms:transvestismen:transvestismens::::
+748518r3<substantiv>transvestit:transvestit:transvestits:transvestiten:transvestitens:transvestiter:transvestiters:transvestiterna:transvestiternas
+856367r3<substantiv>transvestitism:transvestitism:transvestitisms:transvestitismen:transvestitismens::::
+554397r3<egennamn>Tranås:Tranås:Tranås
+CUSTOM: y n Tranås
+856380r4<substantiv>trapets:trapets:trapets:trapetset:trapetsets:trapetser:trapetsers:trapetserna:trapetsernas
+550692r3<substantiv>trapets:trapets:trapets:trapetsen:trapetsens:trapetser:trapetsers:trapetserna:trapetsernas
+CUSTOM: y y trapets
+795779r3<adjektiv>trapetsformad:trapetsformad:trapetsformat:trapetsformade:trapetsformade:!:!:!:
+577648r3<adjektiv>trapetsformig:trapetsformig:trapetsformigt:trapetsformiga:trapetsformiga::::
+856392r3<substantiv>trapetsoid:trapetsoid:trapetsoids:trapetsoiden:trapetsoidens:trapetsoider:trapetsoiders:trapetsoiderna:trapetsoidernas
+748526r3<substantiv>trapp:trapp:trapps:trappen:trappens::::
+585730r4<verb>trappa:trappa:trappade:trappat:trappar:trappa:trappas:trappades:trappats:trappas:::::
+595573r15<substantiv>trappa:trappa:trappas:trappan:trappans:trappor:trappors:trapporna:trappornas
+CUSTOM: y y trapp
+550693r3<substantiv>trappavsats:trappavsats:trappavsats:trappavsatsen:trappavsatsens:trappavsatser:trappavsatsers:trappavsatserna:trappavsatsernas
+795782r3<adjektiv>trappformad:trappformad:trappformat:trappformade:trappformade:!:!:!:
+577651r3<adjektiv>trappformig:trappformig:trappformigt:trappformiga:trappformiga::::
+748532r3<substantiv>trapphall::::::::
+COMPOUND(595573, 551356): trappa + hall
+748533r4<substantiv>trapphus:trapphus:trapphus:trapphuset:trapphusets:trapphus:trapphus:trapphusen:trapphusens
+COMPOUND(595573, 552480): trappa + hus
+829743r4<substantiv>trappist:trappist:trappists:trappisten:trappistens:trappister:trappisters:trappisterna:trappisternas
+988312r4<substantiv>trappistöl:trappistöl:trappistöls:trappistölet:trappistölets:trappistöl:trappistöls:trappistölen:trappistölens
+COMPOUND(829743, 553170): trappist + öl
+552027r3<substantiv>trappnedgång:trappnedgång:trappnedgångs:trappnedgången:trappnedgångens:trappnedgångar:trappnedgångars:trappnedgångarna:trappnedgångarnas
+748538r3<substantiv>trappräcke::::::::
+COMPOUND(595573, 612776): trappa + räcke
+553058r4<substantiv>trappsteg:trappsteg:trappstegs:trappsteget:trappstegets:trappsteg:trappstegs:trappstegen:trappstegens
+CUSTOM: y y trappstegs
+795785r3<adjektiv>trappstegsformad:trappstegsformad:trappstegsformat:trappstegsformade:trappstegsformade:!:!:!:
+766540r3<substantiv>trappstegspyramid::::::::
+COMPOUND(553058, 550304): trappsteg + pyramid
+841449r3<substantiv>trappsten:trappsten:trappstens:trappstenen:trappstenens:trappstenar:trappstenars:trappstenarna:trappstenarnas
+748539r3<substantiv>trappstädning::::::::
+COMPOUND(595573, 670182): trappa + städning
+552029r3<substantiv>trappuppgång:trappuppgång:trappuppgångs:trappuppgången:trappuppgångens:trappuppgångar:trappuppgångars:trappuppgångarna:trappuppgångarnas
+554399r3<egennamn>Traryd:Traryd:Traryds
+CUSTOM: y n Traryds
+556499r7<substantiv>trasa:trasa:trasas:trasan:trasans:trasor:trasors:trasorna:trasornas
+CUSTOM: y y
+585734r4<verb>trasa:trasa:trasade:trasat:trasar:trasa:trasas:trasades:trasats:trasas:::::
+856402r3<substantiv>trasdocka:trasdocka:trasdockas:trasdockan:trasdockans:trasdockor:trasdockors:trasdockorna:trasdockornas
+856410r3<adjektiv>trasgrann:trasgrann:trasgrant:trasgranna:trasgranna::::
+552031r3<substantiv>trashank:trashank:trashanks:trashanken:trashankens:trashankar:trashankars:trashankarna:trashankarnas
+563178r4<adjektiv>trasig:trasig:trasigt:trasiga:trasiga:trasigare:trasigast:trasigaste:trasige
+890076r3<substantiv>trasighet:trasighet:trasighets:trasigheten:trasighetens::::
+623018r3<verb>traska:traska:traskade:traskat:traskar:traska:traskas:traskades:traskats:traskas:traskad:traskat:traskade:traskande:
+801702r3<adjektiv>trasklädd:trasklädd:trasklätt:trasklädda:trasklädda::::
+748540r4<substantiv>trasmatta:trasmatta:trasmattas:trasmattan:trasmattans:trasmattor:trasmattors:trasmattorna:trasmattornas
+COMPOUND(556499, 555187): trasa + matta
+856413r3<substantiv>trasproletariat:trasproletariat:trasproletariats:trasproletariatet:trasproletariatets::::
+603915r3<substantiv>trassat:trassat:trassats:trassaten:trassatens:trassater:trassaters:trassaterna:trassaternas
+603923r3<substantiv>trassatbank:trassatbank:trassatbanks:trassatbanken:trassatbankens:trassatbanker:trassatbankers:trassatbankerna:trassatbankernas
+673110r3<substantiv>trassel:trassel:trassels:trasslet:trasslets::::
+856417r3<substantiv>trasselsudd:trasselsudd:trasselsudds:trasselsudden:trasselsuddens:trasselsuddar:trasselsuddars:trasselsuddarna:trasselsuddarnas
+603931r3<substantiv>trassent:trassent:trassents:trassenten:trassentens:trassenter:trassenters:trassenterna:trassenternas
+585738r4<verb>trassera:trassera:trasserade:trasserat:trasserar:trassera:trasseras:trasserades:trasserats:trasseras:trasserad:trasserat:trasserade:trasserande:
+597776r3<substantiv>trassering:trassering:trasserings:trasseringen:trasseringens:trasseringar:trasseringars:trasseringarna:trasseringarnas
+CUSTOM: y y trasserings
+547861r5<verb>trassla:trassla:trasslade:trasslat:trasslar:trassla:trasslas:trasslades:trasslats:trasslas::::trasslande:
+568195r4<adjektiv>trasslig:trasslig:trassligt:trassliga:trassliga:trassligare:trassligast:trassligaste:trasslige
+803697r3<substantiv>trasslighet:trasslighet:trasslighets:trassligheten:trasslighetens:trassligheter:trassligheters:trassligheterna:trassligheternas
+599027r5<substantiv>trast:trast:trasts:trasten:trastens:trastar:trastars:trastarna:trastarnas
+552033r3<substantiv>tratt:tratt:tratts:tratten:trattens:trattar:trattars:trattarna:trattarnas
+935622r3<verb>tratta:tratta:trattade:trattat:trattar:tratta:trattas:trattades:trattats:trattas::::trattande:
+CUSTOM: n n y
+595574r3<substantiv>tratta:tratta:trattas:trattan:trattans:trattor:trattors:trattorna:trattornas
+CUSTOM: n n y
+795788r3<adjektiv>trattformad:trattformad:trattformat:trattformade:trattformade:!:!:!:
+577654r3<adjektiv>trattformig:trattformig:trattformigt:trattformiga:trattformiga::::
+956066r3<substantiv>trattisar:::::trattisar:trattisars:trattisarna:trattisarnas
+765000r3<substantiv>trattkantarell:trattkantarell:trattkantarells:trattkantarellen:trattkantarellens:trattkantareller:trattkantarellers:trattkantarellerna:trattkantarellernas
+957641r3<substantiv>trattoria:trattoria:trattorias:trattorian:trattorians:trattorior:trattoriors:trattoriorna:trattoriornas
+856435r3<substantiv>trattprick:trattprick:trattpricks:trattpricken:trattprickens:trattprickar:trattprickars:trattprickarna:trattprickarnas
+803705r3<substantiv>trattskivling:trattskivling:trattskivlings:trattskivlingen:trattskivlingens:trattskivlingar:trattskivlingars:trattskivlingarna:trattskivlingarnas
+673112r4<substantiv>trauma:trauma:traumas:traumat:traumats:trauman:traumans:traumana:traumanas
+CUSTOM: y y trauma
+724281r3<verb>traumatisera:traumatisera:traumatiserade:traumatiserat:traumatiserar:traumatisera:traumatiseras:traumatiserades:traumatiserats:traumatiseras:traumatiserad:traumatiserat:traumatiserade:traumatiserande:
+584436r3<adjektiv>traumatisk:traumatisk:traumatiskt:traumatiska:traumatiska::::
+584437r3<adjektiv>traumatologisk:traumatologisk:traumatologiskt:traumatologiska:traumatologiska::::
+624916r6<substantiv>trav:trav:travs:traven:travens::::
+DEFINITION 1: En av hästens gångarter.
+DEFINITION 2: En blomma
+CUSTOM: y n trav
+624919r7<substantiv>trav:trav:travs:travet:travets:!:!:!:!
+DEFINITION 1: Travsport.
+CUSTOM: y n trav
+547862r4<verb>trava:trava:travade:travat:travar:trava:travas:travades:travats:travas:travad:travat:travade::
+697358r3<substantiv>travande:travande:travandes:travandet:travandets::::
+748548r3<substantiv>travare:travare:travares:travaren:travarens:travare:travares:travarna:travarnas
+673115r4<substantiv>travbana:travbana:travbanas:travbanan:travbanans:travbanor:travbanors:travbanorna:travbanornas
+COMPOUND(624919, 556870): trav + bana
+626796r3<substantiv>trave:trave:traves:traven:travens:travar:travars:travarna:travarnas
+854027r3<egennamn>Travemünde:Travemünde:Travemündes
+CUSTOM: y n Travemünde
+856445r3<substantiv>travers:travers:travers:traversen:traversens:traverser:traversers:traverserna:traversernas
+547863r4<verb>travestera:travestera:travesterade:travesterat:travesterar:travestera:travesteras:travesterades:travesterats:travesteras:travesterad:travesterat:travesterade::
+697360r3<substantiv>travestering:travestering:travesterings:travesteringen:travesteringens::::
+CUSTOM: y y travesterings
+673124r3<substantiv>travesti:travesti:travestis:travestin:travestins:travestier:travestiers:travestierna:travestiernas
+673132r4<substantiv>travhäst:travhäst:travhästs:travhästen:travhästens:travhästar:travhästars:travhästarna:travhästarnas
+COMPOUND(624919, 555286): trav + häst
+673140r4<substantiv>travkusk:travkusk:travkusks:travkusken:travkuskens:travkuskar:travkuskars:travkuskarna:travkuskarnas
+COMPOUND(624919, 551646): trav + kusk
+855532r5<substantiv>travträning:travträning:travtränings:travträningen:travträningens:travträningar:travträningars:travträningarna:travträningarnas
+COMPOUND(624916, 673991): trav + träning
+CUSTOM: y n travtränings
+855530r4<substantiv>travträningsanläggning:travträningsanläggning:travträningsanläggnings:travträningsanläggningen:travträningsanläggningens:travträningsanläggningar:travträningsanläggningars:travträningsanläggningarna:travträningsanläggningarnas
+COMPOUND(855532, 606104): travträning + anläggning
+555174r5<räkneord>tre:tre
+CUSTOM: y n
+557714r5<substantiv>trea:trea:treas:trean:treans:treor:treors:treorna:treornas
+DEFINITION 1: Siffran tre (3)
+DEFINITION 2: Lägenhet bestående av tre rum
+770528r3<substantiv>treaktare:treaktare:treaktares:treaktaren:treaktarens:treaktare:treaktares:treaktarna:treaktarnas
+795791r3<adjektiv>trearmad:trearmad:trearmat:trearmade:trearmade:!:!:!:
+577657r3<adjektiv>treatomig:treatomig:treatomigt:treatomiga:treatomiga::::
+577660r3<adjektiv>treaxig:treaxig:treaxigt:treaxiga:treaxiga::::
+CUSTOM: y n n
+795794r3<adjektiv>treaxlad:treaxlad:treaxlat:treaxlade:treaxlade:!:!:!:
+568196r3<adjektiv>treaxlig:treaxlig:treaxligt:treaxliga:treaxliga::::
+894019r5<substantiv>trebarnsfar:trebarnsfader, trebarnsfar:trebarnsfaders, trebarnsfars:trebarnsfadern:trebarnsfaderns:trebarnsfäder:trebarnsfäders:trebarnsfäderna:trebarnsfädernas
+584440r3<adjektiv>trebasisk:trebasisk:trebasiskt:trebasiska:trebasiska::::
+748552r5<adjektiv>trebent:trebent:trebent:trebenta:trebenta:!:!:!:trebente
+920264r3<substantiv>trebilskrock:trebilskrock:trebilskrocks:trebilskrocken:trebilskrockens:trebilskrockar:trebilskrockars:trebilskrockarna:trebilskrockarnas
+577663r3<adjektiv>trebladig:trebladig:trebladigt:trebladiga:trebladiga::::
+577666r3<adjektiv>trebågig:trebågig:trebågigt:trebågiga:trebågiga::::
+CUSTOM: y n n
+957825r3<substantiv>trebäddsrum:trebäddsrum:trebäddsrums:trebäddsrummet:trebäddsrummets:trebäddsrum:trebäddsrums:trebäddsrummen:trebäddsrummens
+577669r3<adjektiv>trecylindrig:trecylindrig:trecylindrigt:trecylindriga:trecylindriga::::
+766541r3<adjektiv>tredelad:tredelad:tredelat:tredelade:tredelade:!:!:!:
+568199r3<adjektiv>tredelig:tredelig:tredeligt:tredeliga:tredeliga::::
+CUSTOM: y n n
+770534r3<substantiv>tredelning:tredelning:tredelnings:tredelningen:tredelningens:tredelningar:tredelningars:tredelningarna:tredelningarnas
+564667r3<adjektiv>tredimensionell:tredimensionell:tredimensionellt:tredimensionella:tredimensionella::::
+571063r12<räkneord>tredje:tredje
+CUSTOM: y n tredjeparts
+856453r4<substantiv>tredjedag:tredjedag:tredjedags:tredjedagen:tredjedagens:tredjedagar:tredjedagars:tredjedagarna:tredjedagarnas
+CUSTOM: y n tredjedags
+856461r4<substantiv>tredjedagsfrossa:tredjedagsfrossa:tredjedagsfrossas:tredjedagsfrossan:tredjedagsfrossans::::
+COMPOUND(856453, 657204): tredjedag + frossa
+552041r3<substantiv>tredjedel:tredjedel:tredjedels:tredjedelen:tredjedelens:tredjedelar:tredjedelars:tredjedelarna:tredjedelarnas
+CUSTOM: y n tredjedels
+657700r3<substantiv>tredjederivata:tredjederivata:tredjederivatas:tredjederivatan:tredjederivatans:tredjederivator:tredjederivators:tredjederivatorna:tredjederivatornas
+742451r3<substantiv>tredjefemma:tredjefemma:tredjefemmas:tredjefemman:tredjefemmans:tredjefemmor:tredjefemmors:tredjefemmorna:tredjefemmornas
+731789r3<substantiv>tredjegradsekvation:tredjegradsekvation:tredjegradsekvations:tredjegradsekvationen:tredjegradsekvationens:tredjegradsekvationer:tredjegradsekvationers:tredjegradsekvationerna:tredjegradsekvationernas
+741648r3<substantiv>tredjeklassare:tredjeklassare:tredjeklassares:tredjeklassaren:tredjeklassarens:tredjeklassare:tredjeklassares:tredjeklassarna:tredjeklassarnas
+882583r4<substantiv>tredjeland:tredjeland:tredjelands:tredjelandet:tredjelandets:tredjeländer:tredjeländers:tredjeländerna:tredjeländernas
+COMPOUND(571063, 556251): tredje + land
+920273r4<substantiv>tredjeman:tredjeman:tredjemans:tredjemannen:tredjemannens:tredjemän:tredjemäns:tredjemännen:tredjemännens
+COMPOUND(571063, 557796): tredje + man
+920303r4<substantiv>tredjemålvakt:tredjemålvakt:tredjemålvakts:tredjemålvakten:tredjemålvaktens:tredjemålvakter:tredjemålvakters:tredjemålvakterna:tredjemålvakternas
+COMPOUND(571063, 739687): tredje + målvakt
+920295r4<substantiv>tredjenamn:tredjenamn:tredjenamns:tredjenamnet:tredjenamnets:tredjenamn:tredjenamns:tredjenamnen:tredjenamnens
+COMPOUND(571063, 607737): tredje + namn
+856465r3<substantiv>tredjeopponent:tredjeopponent:tredjeopponents:tredjeopponenten:tredjeopponentens:tredjeopponenter:tredjeopponenters:tredjeopponenterna:tredjeopponenternas
+748554r4<substantiv>tredjepar:tredjepar:tredjepars:tredjeparet:tredjeparets:tredjepar:tredjepars:tredjeparen:tredjeparens
+COMPOUND(571063, 607793): tredje + par
+953839r3<substantiv>tredjeperiod:tredjeperiod:tredjeperiods:tredjeperioden:tredjeperiodens:tredjeperioder:tredjeperioders:tredjeperioderna:tredjeperiodernas
+920282r3<adjektiv>tredjeplacerad:tredjeplacerad:tredjeplacerat:tredjeplacerade:tredjeplacerade:!:!:!:::::::::
+955335r3<substantiv>tredjeplacering:tredjeplacering:tredjeplacerings:tredjeplaceringen:tredjeplaceringens:tredjeplaceringar:tredjeplaceringars:tredjeplaceringarna:tredjeplaceringarnas
+690040r3<substantiv>tredjeplats:tredjeplats:tredjeplats:tredjeplatsen:tredjeplatsens:tredjeplatser:tredjeplatsers:tredjeplatserna:tredjeplatsernas
+748560r4<substantiv>tredjepris:tredjepris:tredjepris:tredjepriset:tredjeprisets:tredjepris, tredjepriser:tredjepris, tredjeprisers:tredjeprisen, tredjepriserna:tredjeprisens, tredjeprisernas
+COMPOUND(571063, 595939): tredje + pris
+579159r10<adjektiv>tredjeseedad:tredjeseedad:tredjeseedat:tredjeseedade:tredjeseedade:!:!:!:::::::::
+920287r4<substantiv>tredjesekreterare:tredjesekreterare:tredjesekreterares:tredjesekreteraren:tredjesekreterarens:tredjesekreterare:tredjesekreterares:tredjesekreterarna:tredjesekreterarnas
+COMPOUND(571063, 615435): tredje + sekreterare
+748561r4<substantiv>tredjespår:tredjespår:tredjespårs:tredjespåret:tredjespårets:tredjespår:tredjespårs:tredjespåren:tredjespårens
+COMPOUND(571063, 552961): tredje + spår
+920321r4<substantiv>tredjesträcka:tredjesträcka:tredjesträckas:tredjesträckan:tredjesträckans:tredjesträckor:tredjesträckors:tredjesträckorna:tredjesträckornas
+COMPOUND(571063, 559369): tredje + sträcka
+856473r3<substantiv>tredska:tredska:tredskas:tredskan:tredskans::::
+591746r3<deponens>tredskas:tredskas:tredskades:tredskats:tredskas:
+756627r3<substantiv>tredskodom:tredskodom:tredskodoms:tredskodomen:tredskodomens:tredskodomar:tredskodomars:tredskodomarna:tredskodomarnas
+898785r3<substantiv>tredskoskrivning:tredskoskrivning:tredskoskrivnings:tredskoskrivningen:tredskoskrivningens::::
+570932r4<adjektiv>tredubbel:tredubbel:tredubbelt:tredubbla:tredubbla::::tredubble
+631212r5<verb>tredubbla:tredubbla:tredubblade:tredubblat:tredubblar:tredubbla:tredubblas:tredubblades:tredubblats:tredubblas:tredubblad:tredubblat:tredubblade:tredubblande:
+COMPOUND(555174, 546447): tre + dubbla
+940315r3<substantiv>tredubbling:tredubbling:tredubblings:tredubblingen:tredubblingens:tredubblingar:tredubblingars:tredubblingarna:tredubblingarnas
+795797r3<adjektiv>tredäckad:tredäckad:tredäckat:tredäckade:tredäckade:!:!:!:
+988319r3<substantiv>tredäckare:tredäckare:tredäckares:tredäckaren:tredäckarens:tredäckare:tredäckares:tredäckarna:tredäckarnas
+577672r4<adjektiv>treenig:treenig:treenigt:treeniga:treeniga::::treenige
+673148r4<substantiv>treenighet:treenighet:treenighets:treenigheten:treenighetens::::
+CUSTOM: y y treenighets
+756636r3<substantiv>treenighetslära::::::::
+COMPOUND(673148, 560236): treenighet + lära
+856478r3<substantiv>trefald:trefald:trefalds:trefalden:trefaldens:trefalder:trefalders:trefalderna:trefaldernas
+577673r4<adjektiv>trefaldig:trefaldig:trefaldigt:trefaldiga:trefaldiga::::trefaldige
+748562r3<verb>trefaldiga:trefaldiga:trefaldigade:trefaldigat:trefaldigar:trefaldiga:trefaldigas:trefaldigades:trefaldigats:trefaldigas:trefaldigad:trefaldigat:trefaldigade:trefaldigande:
+756637r3<substantiv>trefaldighet:trefaldighet:trefaldighets:trefaldigheten:trefaldighetens::::
+856486r3<substantiv>trefaldighetssöndag:trefaldighetssöndag:trefaldighetssöndags:trefaldighetssöndagen:trefaldighetssöndagens:trefaldighetssöndagar:trefaldighetssöndagars:trefaldighetssöndagarna:trefaldighetssöndagarnas
+697361r3<adverb>trefalt:trefalt
+756641r5<substantiv>trefas:trefas:::::::
+CUSTOM: y y trefas
+577674r3<adjektiv>trefasig:trefasig:trefasigt:trefasiga:trefasiga::::
+756642r4<substantiv>trefasnät:trefasnät:trefasnäts:trefasnätet:trefasnätets:trefasnät:trefasnäts:trefasnäten:trefasnätens
+COMPOUND(756641, 555848): trefas + nät
+756648r4<substantiv>trefassystem:trefassystem:trefassystems:trefassystemet:trefassystemets:trefassystem:trefassystems:trefassystemen:trefassystemens
+COMPOUND(756641, 553021): trefas + system
+568202r3<adjektiv>trefilig:trefilig:trefiligt:trefiliga:trefiliga::::
+756654r3<substantiv>trefjärdedelstakt:trefjärdedelstakt:trefjärdedelstakts:trefjärdedelstakten:trefjärdedelstaktens::::
+795800r3<adjektiv>treflikad:treflikad:treflikat:treflikade:treflikade:!:!:!:
+577677r3<adjektiv>treflikig:treflikig:treflikigt:treflikiga:treflikiga::::
+631126r3<substantiv>trefot:trefot:trefots:trefoten:trefotens:!:!:!:!
+795803r3<adjektiv>trefotad:trefotad:trefotat:trefotade:trefotade:!:!:!:
+766544r3<adjektiv>trefärgad:trefärgad:trefärgat:trefärgade:trefärgade:!:!:!:
+856494r3<substantiv>trefärgstryck:trefärgstryck:trefärgstrycks:trefärgstrycket:trefärgstryckets:trefärgstryck:trefärgstrycks:trefärgstrycken:trefärgstryckens
+770542r4<substantiv>treglasfönster:treglasfönster:treglasfönsters:treglasfönstret:treglasfönstrets:treglasfönster:treglasfönsters:treglasfönstren, treglasfönsterna:treglasfönstrens, treglasfönsternas
+577680r3<adjektiv>tregradig:tregradig:tregradigt:tregradiga:tregradiga::::
+795806r3<adjektiv>tregrenad:tregrenad:tregrenat:tregrenade:tregrenade:!:!:!:
+577683r3<adjektiv>tregrenig:tregrenig:tregrenigt:tregreniga:tregreniga::::
+568205r3<adjektiv>trehjulig:trehjulig:trehjuligt:trehjuliga:trehjuliga::::
+673149r3<substantiv>trehjuling:trehjuling:trehjulings:trehjulingen:trehjulingens:trehjulingar:trehjulingars:trehjulingarna:trehjulingarnas
+697362r3<räkneord>trehundra:trehundra
+577686r3<adjektiv>trehundraårig:trehundraårig:trehundraårigt:trehundraåriga:trehundraåriga::::
+577689r3<adjektiv>trehörnig:trehörnig:trehörnigt:trehörniga:trehörniga::::
+856502r3<substantiv>trehörning:trehörning:trehörnings:trehörningen:trehörningens:trehörningar:trehörningars:trehörningarna:trehörningarnas
+697363r3<adjektiv>trehövdad:trehövdad:trehövdat:trehövdade:trehövdade:!:!:!:
+923012r3<substantiv>trekammarbrunn:trekammarbrunn:trekammarbrunns:trekammarbrunnen:trekammarbrunnens:trekammarbrunnar:trekammarbrunnars:trekammarbrunnarna:trekammarbrunnarnas
+941267r3<substantiv>trekamp:trekamp:trekamps:trekampen:trekampens:trekamper:trekampers:trekamperna:trekampernas
+738284r4<substantiv>trekant:trekant:trekants:trekanten:trekantens:trekanter:trekanters:trekanterna:trekanternas
+COMPOUND(555174, 549431): tre + kant
+577692r3<adjektiv>trekantig:trekantig:trekantigt:trekantiga:trekantiga::::
+550694r4<substantiv>treklang:treklang:treklangs:treklangen:treklangens:treklanger:treklangers:treklangerna:treklangernas
+577695r3<adjektiv>treklassig:treklassig:treklassigt:treklassiga:treklassiga::::
+577698r3<adjektiv>trekloig:trekloig:trekloigt:trekloiga:trekloiga::::
+CUSTOM: y n n
+770548r3<substantiv>treklöver:treklöver:treklövers:treklövern:treklöverns::::
+988325r3<substantiv>trekropparsproblem:::trekropparsproblemet:trekropparsproblemets::::
+748572r3<substantiv>trekvart:trekvart:trekvarts::::::
+770552r3<adjektiv>trekvartslång:trekvartslång:trekvartslångt:trekvartslånga:trekvartslånga:!:!:!:!
+770555r3<adjektiv>treledad:treledad:treledat:treledade:treledade:!:!:!:
+856510r3<substantiv>treledarsystem:treledarsystem:treledarsystems:treledarsystemet:treledarsystemets:treledarsystem:treledarsystems:treledarsystemen:treledarsystemens
+728291r3<egennamn>Trelleborg:Trelleborg:Trelleborgs
+CUSTOM: y n Trelleborgs
+920388r3<substantiv>trelleborgare:trelleborgare:trelleborgares:trelleborgaren:trelleborgarens:trelleborgare:trelleborgares:trelleborgarna:trelleborgarnas
+892568r3<substantiv>trelleborgsbo:trelleborgsbo:trelleborgsbos:trelleborgsbon:trelleborgsbons:trelleborgsbor:trelleborgsbors:trelleborgsborna:trelleborgsbornas
+856516r3<substantiv>treläkarstation:treläkarstation:treläkarstations:treläkarstationen:treläkarstationens:treläkarstationer:treläkarstationers:treläkarstationerna:treläkarstationernas
+802657r3<substantiv>tremannaföretag:tremannaföretag:tremannaföretags:tremannaföretaget:tremannaföretagets:tremannaföretag:tremannaföretags:tremannaföretagen:tremannaföretagens
+957203r3<substantiv>tremannalag:tremannalag:tremannalags:tremannalaget:tremann

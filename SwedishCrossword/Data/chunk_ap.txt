@@ -1,0 +1,627 @@
+men:barndaghemmens
+871782r6<substantiv>barndans:barndans:barndans:barndansen:barndansens:barndanser:barndansers:barndanserna:barndansernas
+COMPOUND(555956, 548569): barn + dans
+CUSTOM: y n n
+616617r5<substantiv>barndom:barndom:barndoms:barndomen:barndomens:!:!:!:!
+CUSTOM: y y barndoms
+614681r3<substantiv>barndomshem:barndomshem:barndomshems:barndomshemmet:barndomshemmets:barndomshem:barndomshems:barndomshemmen:barndomshemmens
+849080r4<substantiv>barndomsvän:barndomsvän:barndomsväns:barndomsvännen:barndomsvännens:barndomsvänner:barndomsvänners:barndomsvännerna:barndomsvännernas
+COMPOUND(616617, 620322): barndom + vän
+768395r4<substantiv>barndomsår:barndomsår:barndomsårs:barndomsåret:barndomsårets:barndomsår:barndomsårs:barndomsåren:barndomsårens
+COMPOUND(616617, 553140): barndom + år
+849088r4<substantiv>barndop:barndop:barndops:barndopet:barndopets:barndop:barndops:barndopen:barndopens
+COMPOUND(555956, 552325): barn + dop
+614687r3<substantiv>barnfamilj:barnfamilj:barnfamiljs:barnfamiljen:barnfamiljens:barnfamiljer:barnfamiljers:barnfamiljerna:barnfamiljernas
+561034r4<substantiv>barnfilm:barnfilm:barnfilms:barnfilmen:barnfilmens:barnfilmer:barnfilmers:barnfilmerna:barnfilmernas
+COMPOUND(555956, 548921): barn + film
+614689r3<substantiv>barnflicka:barnflicka:barnflickas:barnflickan:barnflickans:barnflickor:barnflickors:barnflickorna:barnflickornas
+801217r3<adjektiv>barnfödd:barnfödd:barnfött:barnfödda:barnfödda::::
+571003r3<adjektiv>barnförbjuden:barnförbjuden:barnförbjudet:barnförbjudna:barnförbjudna::::
+614697r3<substantiv>barnhem:barnhem:barnhems:barnhemmet:barnhemmets:barnhem:barnhems:barnhemmen:barnhemmens
+CUSTOM: y y barnhems
+937615r3<substantiv>barnkalas:barnkalas:barnkalas:barnkalaset:barnkalasets:barnkalas:barnkalas:barnkalasen:barnkalasens
+676625r5<substantiv>barnkammare:barnkammare:barnkammares:barnkammaren:barnkammarens:barnkammare, barnkamrar:barnkammares, barnkamrars:barnkamrarna:barnkamrarnas
+COMPOUND(555956, 559310): barn + kammare
+CUSTOM: y y barnkammar
+676624r4<substantiv>barnkammarrim:barnkammarrim:barnkammarrims:barnkammarrimmet:barnkammarrimmets:barnkammarrim:barnkammarrims:barnkammarrimmen:barnkammarrimmens
+COMPOUND(676625, 621838): barnkammare + rim
+687409r4<substantiv>barnkull:barnkull:barnkulls:barnkullen:barnkullens:barnkullar:barnkullars:barnkullarna:barnkullarnas
+COMPOUND(555956, 624508): barn + kull
+687411r4<adjektiv>barnkär:barnkär:barnkärt:barnkära:barnkära::::barnkäre
+687414r3<substantiv>barnkör:barnkör:barnkörs:barnkören:barnkörens:barnkörer:barnkörers:barnkörerna:barnkörernas
+571494r3<adjektiv>barnledig:barnledig:barnledigt:barnlediga:barnlediga::::
+687422r3<substantiv>barnledighet:barnledighet:barnledighets:barnledigheten:barnledighetens::::
+CUSTOM: y n
+687426r3<substantiv>barnlek:barnlek:barnleks:barnleken:barnlekens:barnlekar:barnlekars:barnlekarna:barnlekarnas
+609321r3<substantiv>barnläkare:barnläkare:barnläkares:barnläkaren:barnläkarens:barnläkare:barnläkares:barnläkarna:barnläkarnas
+CUSTOM: y y barnläkar
+564738r3<adjektiv>barnlös:barnlös:barnlöst:barnlösa:barnlösa::::
+687434r3<substantiv>barnlöshet:barnlöshet:barnlöshets:barnlösheten:barnlöshetens::::
+CUSTOM: y y barnlöshets
+687438r3<substantiv>barnmat:barnmat:barnmats:barnmaten:barnmatens::::
+CUSTOM: y y barnmats
+687442r3<substantiv>barnmisshandel:barnmisshandel:barnmisshandels:barnmisshandeln:barnmisshandelns::::
+CUSTOM: y n
+901925r4<substantiv>barnmodell:barnmodell:barnmodells:barnmodellen:barnmodellens:barnmodeller:barnmodellers:barnmodellerna:barnmodellernas
+COMPOUND(555956, 550047): barn + modell
+593715r4<substantiv>barnmorska:barnmorska:barnmorskas:barnmorskan:barnmorskans:barnmorskor:barnmorskors:barnmorskorna:barnmorskornas
+CUSTOM: y y barnmorske
+775196r4<substantiv>barnmorskeutbildning:barnmorskeutbildning:barnmorskeutbildnings:barnmorskeutbildningen:barnmorskeutbildningens:barnmorskeutbildningar:barnmorskeutbildningars:barnmorskeutbildningarna:barnmorskeutbildningarnas
+COMPOUND(593715, 597810): barnmorska + utbildning
+687446r4<substantiv>barnombudsman:barnombudsman:barnombudsmans:barnombudsmannen:barnombudsmannens:barnombudsmän:barnombudsmäns:barnombudsmännen:barnombudsmännens
+COMPOUND(555956, 555444): barn + ombudsman
+614703r4<substantiv>barnomsorg:barnomsorg:barnomsorgs:barnomsorgen:barnomsorgens::::
+CUSTOM: y y barnomsorgs
+614704r3<substantiv>barnomsorgsavgift:barnomsorgsavgift:barnomsorgsavgifts:barnomsorgsavgiften:barnomsorgsavgiftens:barnomsorgsavgifter:barnomsorgsavgifters:barnomsorgsavgifterna:barnomsorgsavgifternas
+CUSTOM: y n
+687454r4<substantiv>barnomsorgsplats:barnomsorgsplats:barnomsorgsplats:barnomsorgsplatsen:barnomsorgsplatsens:barnomsorgsplatser:barnomsorgsplatsers:barnomsorgsplatserna:barnomsorgsplatsernas
+COMPOUND(614703, 550210): barnomsorg + plats
+CUSTOM: y n
+614712r3<substantiv>barnpassning:barnpassning:barnpassnings:barnpassningen:barnpassningens::::
+CUSTOM: y n
+614714r3<substantiv>barnpiga:barnpiga:barnpigas:barnpigan:barnpigans:barnpigor:barnpigors:barnpigorna:barnpigornas
+614715r6<substantiv>barnpornografi:barnpornografi:barnpornografis:barnpornografin, barnpornografien:barnpornografins, barnpornografiens::::
+COMPOUND(555956, 633753): barn + pornografi
+CUSTOM: y n
+687461r4<substantiv>barnpornografibrott:barnpornografibrott:barnpornografibrotts:barnpornografibrottet:barnpornografibrottets:barnpornografibrott:barnpornografibrotts:barnpornografibrotten:barnpornografibrottens
+COMPOUND(614715, 552275): barnpornografi + brott
+CUSTOM: y n
+579150r3<adjektiv>barnpornografisk:barnpornografisk:barnpornografiskt:barnpornografiska:barnpornografiska::::
+CUSTOM: y n
+687467r4<substantiv>barnporr:barnporr:barnporrs:barnporren:barnporrens::::
+CUSTOM: y n barnporr
+687471r4<substantiv>barnporrfilm:barnporrfilm:barnporrfilms:barnporrfilmen:barnporrfilmens:barnporrfilmer:barnporrfilmers:barnporrfilmerna:barnporrfilmernas
+COMPOUND(687467, 548921): barnporr + film
+CUSTOM: y n
+614719r3<substantiv>barnprogram:barnprogram:barnprograms:barnprogrammet:barnprogrammets:barnprogram:barnprograms:barnprogrammen:barnprogrammens
+CUSTOM: y n
+724213r3<substantiv>barnprostitution:barnprostitution:barnprostitutions:barnprostitutionen:barnprostitutionens::::
+CUSTOM: y n
+687479r4<substantiv>barnpsykolog:barnpsykolog:barnpsykologs:barnpsykologen:barnpsykologens:barnpsykologer:barnpsykologers:barnpsykologerna:barnpsykologernas
+COMPOUND(555956, 550291): barn + psykolog
+CUSTOM: y n
+614720r3<substantiv>barnpsykologi:barnpsykologi:barnpsykologis:barnpsykologin:barnpsykologins::::
+CUSTOM: y n
+614724r3<substantiv>barnpuder:barnpuder:barnpuders:barnpudret:barnpudrets::::
+CUSTOM: y n
+614728r4<adjektiv>barnrik:barnrik:barnrikt:barnrika:barnrika:barnrikare:barnrikast:barnrikaste:::::::::
+960518r3<substantiv>barnrikehus:barnrikehus:barnrikehus:barnrikehuset:barnrikehusets:barnrikehus:barnrikehus:barnrikehusen:barnrikehusens
+CUSTOM: y n barnrikehus
+849095r3<substantiv>barnrov:barnrov:barnrovs:barnrovet:barnrovets:barnrov:barnrovs:barnroven:barnrovens
+614731r3<substantiv>barnrumpa:barnrumpa:barnrumpas:barnrumpan:barnrumpans:barnrumpor:barnrumpors:barnrumporna:barnrumpornas
+CUSTOM: y n
+687487r3<substantiv>barnsaga:barnsaga:barnsagas:barnsagan:barnsagans:barnsagor:barnsagors:barnsagorna:barnsagornas
+CUSTOM: y n
+860204r4<substantiv>barnsak:barnsak:barnsaks:barnsaken:barnsakens:barnsaker:barnsakers:barnsakerna:barnsakernas
+COMPOUND(555956, 550443): barn + sak
+CUSTOM: y n
+605459r3<substantiv>barnsamarit:barnsamarit:barnsamarits:barnsamariten:barnsamaritens:barnsamariter:barnsamariters:barnsamariterna:barnsamariternas
+CUSTOM: y n
+616618r3<substantiv>barnsben:barnsben:::::::
+860212r3<substantiv>barnsbörd:barnsbörd:barnsbörds:barnsbörden:barnsbördens:barnsbörder:barnsbörders:barnsbörderna:barnsbördernas
+606266r3<substantiv>barnsjukdom:barnsjukdom:barnsjukdoms:barnsjukdomen:barnsjukdomens:barnsjukdomar:barnsjukdomars:barnsjukdomarna:barnsjukdomarnas
+CUSTOM: y n
+687495r4<substantiv>barnsjukhus:barnsjukhus:barnsjukhus:barnsjukhuset:barnsjukhusets:barnsjukhus:barnsjukhus:barnsjukhusen:barnsjukhusens
+COMPOUND(555956, 552907): barn + sjukhus
+CUSTOM: y n
+614739r3<substantiv>barnsko:barnsko:barnskos:barnskon:barnskons:barnskor:barnskors:barnskorna:barnskornas
+CUSTOM: y n
+687500r4<substantiv>barnskrik:barnskrik:barnskriks:barnskriket:barnskrikets:barnskrik:barnskriks:barnskriken:barnskrikens
+COMPOUND(555956, 687501): barn + skrik
+CUSTOM: y n
+614747r3<substantiv>barnskötare:barnskötare:barnskötares:barnskötaren:barnskötarens:barnskötare:barnskötares:barnskötarna:barnskötarnas
+CUSTOM: y y barnskötar
+593717r3<substantiv>barnsköterska:barnsköterska:barnsköterskas:barnsköterskan:barnsköterskans:barnsköterskor:barnsköterskors:barnsköterskorna:barnsköterskornas
+CUSTOM: y y barnsköterske
+843487r3<egennamn>Barnsley:Barnsley:
+563028r6<adjektiv>barnslig:barnslig:barnsligt:barnsliga:barnsliga:barnsligare:barnsligast:barnsligaste:barnslige
+681943r8<substantiv>barnslighet:barnslighet:barnslighets:barnsligheten:barnslighetens:barnsligheter:barnsligheters:barnsligheterna:barnsligheternas
+CUSTOM: y y barnslighets
+847442r3<substantiv>barnsnöd:barnsnöd:barnsnöds:barnsnöden:barnsnödens::::
+687511r4<substantiv>barnstadium:barnstadium:barnstadiums:barnstadiet:barnstadiets:barnstadier:barnstadiers:barnstadierna:barnstadiernas
+COMPOUND(555956, 622188): barn + stadium
+CUSTOM: y n
+614748r3<substantiv>barnstol:barnstol:barnstols:barnstolen:barnstolens:barnstolar:barnstolars:barnstolarna:barnstolarnas
+614756r3<substantiv>barnstuga:barnstuga:barnstugas:barnstugan:barnstugans:barnstugor:barnstugors:barnstugorna:barnstugornas
+CUSTOM: y y barnstuge
+614764r3<adjektiv>barnsäker:barnsäker:barnsäkert:barnsäkra:barnsäkra::::
+968660r3<substantiv>barnsängsfeber:barnsängsfeber:barnsängsfebers:barnsängsfebern:barnsängsfeberns::::
+687519r4<substantiv>barnteater:barnteater:barnteaters:barnteatern:barnteaterns:barnteatrar:barnteatrars:barnteatrarna:barnteatrarnas
+COMPOUND(555956, 669445): barn + teater
+CUSTOM: y n barnteater
+571006r3<adjektiv>barntillåten:barntillåten:barntillåtet:barntillåtna:barntillåtna::::
+CUSTOM: y n
+608959r3<substantiv>barntillägg:barntillägg:barntilläggs:barntillägget:barntilläggets:barntillägg:barntilläggs:barntilläggen:barntilläggens
+CUSTOM: y n
+614767r3<substantiv>barnunge:barnunge:barnunges:barnungen:barnungens:barnungar:barnungars:barnungarna:barnungarnas
+CUSTOM: y n
+687527r4<substantiv>barnuppfostran:barnuppfostran:barnuppfostrans:barnuppfostran:barnuppfostrans::::
+COMPOUND(555956, 687528): barn + uppfostran
+CUSTOM: y n
+598101r4<substantiv>barnvagn:barnvagn:barnvagns:barnvagnen:barnvagnens:barnvagnar:barnvagnars:barnvagnarna:barnvagnarnas
+COMPOUND(555956, 552080): barn + vagn
+CUSTOM: y y barnvagns
+548338r3<substantiv>barnvakt:barnvakt:barnvakts:barnvakten:barnvaktens:barnvakter:barnvakters:barnvakterna:barnvakternas
+CUSTOM: y y barnvakts
+939340r4<substantiv>barnvisa:barnvisa:barnvisas:barnvisan:barnvisans:barnvisor:barnvisors:barnvisorna:barnvisornas
+COMPOUND(555956, 595765): barn + visa
+609222r3<substantiv>barnvårdare:barnvårdare:barnvårdares:barnvårdaren:barnvårdarens:barnvårdare:barnvårdares:barnvårdarna:barnvårdarnas
+CUSTOM: y y barnvårdar +barnvårdar
+565586r3<adjektiv>barnvänlig:barnvänlig:barnvänligt:barnvänliga:barnvänliga::::
+CUSTOM: y n
+782058r3<substantiv>barnår:barnår:barnårs:barnåret:barnårets:barnår:barnårs:barnåren:barnårens
+CUSTOM: y n n
+614775r7<substantiv>barock:barock:barocks:barocken:barockens:!:!:!:!
+CUSTOM: y y barock
+614777r3<adjektiv>barock:barock:barockt:barocka:barocka::::
+845453r6<substantiv>barockdans:barockdans:barockdans:barockdansen:barockdansens:barockdanser:barockdansers:barockdanserna:barockdansernas
+COMPOUND(614775, 548569): barock + dans
+752295r4<substantiv>barockensemble:barockensemble:barockensembles:barockensemblen:barockensemblens:barockensembler:barockensemblers:barockensemblerna:barockensemblernas
+COMPOUND(614775, 689538): barock + ensemble
+CUSTOM: y n
+752296r3<substantiv>barockmusik::::::::
+COMPOUND(614775, 550058): barock + musik
+945771r4<substantiv>barockstuk:barockstuk:barockstuks:barockstuket:barockstukets::::
+COMPOUND(614775, 620459): barock + stuk
+782064r3<substantiv>barograf:barograf:barografs:barografen:barografens:barografer:barografers:barograferna:barografernas
+860220r3<substantiv>barogram:barogram:barograms:barogrammet:barogrammets:barogram:barograms:barogrammen:barogrammens
+614778r3<substantiv>barometer:barometer:barometers:barometern:barometerns:barometrar:barometrars:barometrarna:barometrarnas
+CUSTOM: y y barometer
+579153r3<adjektiv>barometrisk:barometrisk:barometriskt:barometriska:barometriska::::
+548346r4<substantiv>baron:baron:barons:baronen:baronens:baroner:baroners:baronerna:baronernas
+614779r3<substantiv>baronessa:baronessa:baronessas:baronessan:baronessans:baronessor:baronessors:baronessorna:baronessornas
+968664r4<substantiv>barontitel:barontitel:barontitels:barontiteln:barontitelns:barontitlar:barontitlars:barontitlarna:barontitlarnas
+COMPOUND(548346, 626697): baron + titel
+552225r4<substantiv>barr:barr:barrs:barret:barrets:barr:barrs:barren:barrens
+CUSTOM: y n
+614787r4<verb>barra:barra:barrade:barrat:barrar:barra::::::::barrande:
+CUSTOM: y n
+614791r3<substantiv>barracuda:barracuda:barracudas:barracudan:barracudans:barracudor:barracudors:barracudorna:barracudornas
+897204r3<substantiv>barrdoft:barrdoft:barrdofts:barrdoften:barrdoftens::::
+904431r3<substantiv>barréackord:barréackord:barréackords:barréackordet:barréackordets:barréackord:barréackords:barréackorden:barréackordens
+968672r3<substantiv>barrering:barrering:barrerings:barreringen:barreringens::::
+571497r3<adjektiv>barrformig:barrformig:barrformigt:barrformiga:barrformiga::::
+897208r3<substantiv>barrgymnastik:barrgymnastik:barrgymnastiks:barrgymnastiken:barrgymnastikens::::
+854980r3<egennamn>Barrichello:Barrichello:Barrichellos
+CUSTOM: n n 
+571500r3<adjektiv>barrig:barrig:barrigt:barriga:barriga::::
+548348r3<substantiv>barrikad:barrikad:barrikads:barrikaden:barrikadens:barrikader:barrikaders:barrikaderna:barrikadernas
+CUSTOM: y y barrikad
+546198r5<verb>barrikadera:barrikadera:barrikaderade:barrikaderat:barrikaderar:barrikadera:barrikaderas:barrikaderades:barrikaderats:barrikaderas:barrikaderad:barrikaderat:barrikaderade:barrikaderande:
+548349r3<substantiv>barriär:barriär:barriärs:barriären:barriärens:barriärer:barriärers:barriärerna:barriärernas
+CUSTOM: y y barriär
+782072r3<substantiv>barriärrev:barriärrev:barriärrevs:barriärrevet:barriärrevets:barriärrev:barriärrevs:barriärreven:barriärrevens
+563660r3<adjektiv>barrningsfri:barrningsfri:barrningsfritt:barrningsfria:barrningsfria::::
+874478r3<egennamn>Barroso:Barroso:Barrosos
+606274r3<substantiv>barrskog:barrskog:barrskogs:barrskogen:barrskogens:barrskogar:barrskogars:barrskogarna:barrskogarnas
+CUSTOM: y y barrskogs
+606684r4<substantiv>barrträd:barrträd:barrträds:barrträdet:barrträdets:barrträd:barrträds:barrträden:barrträdens
+CUSTOM: y y barrträds
+760768r4<substantiv>barrträdsolja:barrträdsolja:barrträdsoljas:barrträdsoljan:barrträdsoljans:barrträdsoljor:barrträdsoljors:barrträdsoljorna:barrträdsoljornas
+COMPOUND(606684, 623123): barrträd + olja
+897212r3<substantiv>barrved:barrved:barrveds:barrveden:barrvedens::::
+897216r3<substantiv>barrväxt:barrväxt:barrväxts:barrväxten:barrväxtens:barrväxter:barrväxters:barrväxterna:barrväxternas
+554189r3<egennamn>Barsebäck:Barsebäck:Barsebäcks
+CUSTOM: y n Barsebäcks
+606282r3<substantiv>barservering:barservering:barserverings:barserveringen:barserveringens:barserveringar:barserveringars:barserveringarna:barserveringarnas
+CUSTOM: y y barserverings
+564555r5<adjektiv>barsk:barsk:barskt:barska:barska:barskare:barskast:barskaste:barske
+687620r3<adjektiv>barskrapad:barskrapad:barskrapat:barskrapade:barskrapade:!:!:!:
+687621r4<substantiv>barskåp:barskåp:barskåps:barskåpet:barskåpets:barskåp:barskåps:barskåpen:barskåpens
+COMPOUND(557860, 552942): bar + skåp
+950614r4<substantiv>barsorl:barsorl:barsorls:barsorlet:barsorlets::::
+COMPOUND(557860, 628833): bar + sorl
+687627r4<substantiv>barstol:barstol:barstols:barstolen:barstolens:barstolar:barstolars:barstolarna:barstolarnas
+COMPOUND(557860, 551944): bar + stol
+616619r3<substantiv>bartender:bartender:bartenders:bartendern:bartenderns:bartendrar:bartendrars:bartendrarna:bartendrarnas
+CUSTOM: y y bartender
+971977r3<egennamn>Bartolomeus:Bartolomeus:Bartolomeus
+921490r4<substantiv>barvimmel:barvimmel:barvimmels:barvimlet:barvimlets:!:!:!:!
+COMPOUND(557860, 556436): bar + vimmel
+614799r3<substantiv>baryton:baryton:barytons:barytonen:barytonens:barytoner:barytoners:barytonerna:barytonernas
+CUSTOM: y y baryton
+548351r17<substantiv>bas:bas:bas:basen:basens:baser:basers:baserna:basernas
+CUSTOM: y y bas
+676542r9<substantiv>bas:bas:bas:basen:basens:basar:basars:basarna:basarnas
+DEFINITION 1: mansröst (den mörkaste)
+CUSTOM: y y bas
+592401r5<verb>basa:basa:basade:basat:basar:basa:!:!:!:!:!:!:!::
+DEFINITION 1: Vara chef [ för ], bestämma [ över ]
+596186r3<adjektiv>basal:basal:basalt:basala:basala::::
+676544r5<substantiv>basalt:basalt:basalts:basalten:basaltens:!:!:!:!
+DEFINITION 1: vulkanisk bergart
+CUSTOM: y n
+579156r3<adjektiv>basaltisk:basaltisk:basaltiskt:basaltiska:basaltiska::::
+756322r4<substantiv>basaltlava:basaltlava:basaltlavas:basaltlavan:basaltlavans:basaltlavor:basaltlavors:basaltlavorna:basaltlavornas
+COMPOUND(676544, 559953): basalt + lava
+968676r3<substantiv>basaltpelare:basaltpelare:basaltpelares:basaltpelaren:basaltpelarens:basaltpelare:basaltpelares:basaltpelarna:basaltpelarnas
+548352r4<substantiv>basar:basar:basars:basaren:basarens:basarer:basarers:basarerna:basarernas
+960524r4<substantiv>basarkvarter:basarkvarter:basarkvarters:basarkvarteret:basarkvarterets:basarkvarter:basarkvarters:basarkvarteren:basarkvarterens
+COMPOUND(548352, 552600): basar + kvarter
+608965r3<substantiv>basbelopp:basbelopp:basbelopps:basbeloppet:basbeloppets:basbelopp:basbelopps:basbeloppen:basbeloppens
+782078r4<substantiv>baseball:baseball:baseballs:baseballen:baseballens::::
+CUSTOM: y y baseball
+782081r4<substantiv>baseballmatch:baseballmatch:baseballmatchs:baseballmatchen:baseballmatchens:baseballmatcher:baseballmatchers:baseballmatcherna:baseballmatchernas
+COMPOUND(782078, 550011): baseball + match
+959335r3<substantiv>baseballträ:baseballträ:baseballträs:baseballträet:baseballträets:baseballträn:baseballträns:baseballträna:baseballtränas
+687636r5<substantiv>baseboll:baseboll:basebolls:basebollen:basebollens::::
+CUSTOM: y y baseboll
+687640r4<substantiv>basebollmatch:basebollmatch:basebollmatchs:basebollmatchen:basebollmatchens:basebollmatcher:basebollmatchers:basebollmatcherna:basebollmatchernas
+COMPOUND(687636, 550011): baseboll + match
+687648r4<substantiv>basebollträ:basebollträ:basebollträs:basebollträet, basebollträt:basebollträets, basebollträts:basebollträn:basebollträns:basebollträna:basebolltränas
+COMPOUND(687636, 632758): baseboll + trä
+678899r8<substantiv>basedow:basedow:basedows:basedowen:basedowens::::
+DEFINITION 1: "förkortning" av Basedows sjukdom 
+CUSTOM: y y basedow
+678904r4<substantiv>basedowsymptom:basedowsymptom:basedowsymptoms:basedowsymptomet:basedowsymptomets:basedowsymptom:basedowsymptoms:basedowsymptomen:basedowsymptomens
+COMPOUND(678899, 608210): basedow + symptom
+678936r4<substantiv>basedowsymtom:basedowsymtom:basedowsymtoms:basedowsymtomet:basedowsymtomets:basedowsymtom:basedowsymtoms:basedowsymtomen:basedowsymtomens
+COMPOUND(678899, 608214): basedow + symtom
+554871r3<egennamn>Basel:Basel:Basels
+CUSTOM: y n Basel
+756323r3<substantiv>basenhet:basenhet:basenhets:basenheten:basenhetens:basenheter:basenheters:basenheterna:basenheternas
+546199r4<verb>basera:basera:baserade:baserat:baserar:basera:baseras:baserades:baserats:baseras:baserad:baserat:baserade::
+970263r3<substantiv>basering:basering:baserings:baseringen:baseringens:baseringar:baseringars:baseringarna:baseringarnas
+CUSTOM: y y baserings
+605467r3<substantiv>basfiol:basfiol:basfiols:basfiolen:basfiolens:basfioler:basfiolers:basfiolerna:basfiolernas
+968682r4<substantiv>basföda:basföda:basfödas:basfödan:basfödans:basfödor:basfödors:basfödorna:basfödornas
+COMPOUND(548351, 558894): bas + föda
+930181r3<substantiv>basgång:basgång:basgångs:basgången:basgångens:basgångar:basgångars:basgångarna:basgångarnas
+968691r3<substantiv>basidier:::::basidier:basidiers:basidierna:basidiernas
+901001r4<adjektiv>basig:basig:basigt:basiga:basiga:basigare:basigast:basigaste:!:!:!:!:!:!:!:!:!
+DEFINITION 1: I musiksammanhang rik på bastoner
+CUSTOM: n n n
+687658r6<substantiv>basilika:basilika:basilikas:basilikan:basilikans:basilikor:basilikors:basilikorna:basilikornas
+CUSTOM: y y basilika
+782082r4<substantiv>basilikaform:basilikaform:basilikaforms:basilikaformen:basilikaformens:basilikaformer:basilikaformers:basilikaformerna:basilikaformernas
+COMPOUND(687658, 548947): basilika + form
+790005r3<adjektiv>basilikaformad:basilikaformad:basilikaformat:basilikaformade:basilikaformade:!:!:!:
+845282r15<substantiv>basilikasmör:basilikasmör:basilikasmörs:basilikasmöret:basilikasmörets:!:!:!:!
+COMPOUND(687658, 622554): basilika + smör
+853935r5<adjektiv>basilikastekt:basilikastekt:basilikastekt:basilikastekta:basilikastekta::::::::::::
+585239r3<substantiv>basilisk:basilisk:basilisks:basilisken:basiliskens:basilisker:basiliskers:basiliskerna:basiliskernas
+CUSTOM: y y basilisk
+860614r4<substantiv>basindustri:basindustri:basindustris:basindustrin:basindustrins:basindustrier:basindustriers:basindustrierna:basindustriernas
+COMPOUND(548351, 610799): bas + industri
+616620r4<substantiv>basis:basis:::::::
+579162r3<adjektiv>basisk:basisk:basiskt:basiska:basiska::::
+616621r3<substantiv>basist:basist:basists:basisten:basistens:basister:basisters:basisterna:basisternas
+CUSTOM: y y basist
+614801r3<substantiv>bask:bask:basks:basken:baskens:basker:baskers:baskerna:baskernas
+CUSTOM: y n
+616623r4<substantiv>basker:basker:baskers:baskern:baskerns:baskrar:baskrars:baskrarna:baskrarnas
+968696r4<substantiv>baskermössa:baskermössa:baskermössas:baskermössan:baskermössans:baskermössor:baskermössors:baskermössorna:baskermössornas
+COMPOUND(616623, 594778): basker + mössa
+616624r3<substantiv>basket:basket:baskets:basketen:basketens:!:!:!:!
+CUSTOM: y y basket
+687659r3<substantiv>basketboll:basketboll:basketbolls:basketbollen:basketbollens:basketbollar:basketbollars:basketbollarna:basketbollarnas
+763516r3<egennamn>Baskien:Baskien:Baskiens
+CUSTOM: y n Baskien
+568729r4<adjektiv>baskisk:baskisk:baskiskt:baskiska:baskiska:!:!:!:baskiske
+687661r8<substantiv>baskiska:baskiska:baskiskas:baskiskan:baskiskans:baskiskor:baskiskors:baskiskorna:baskiskornas
+678651r4<substantiv>basklav:basklav:basklavs:basklaven:basklavens:basklaver:basklavers:basklaverna:basklavernas
+COMPOUND(676542, 646225): bas + klav
+782084r4<substantiv>baslinje:baslinje:baslinjes:baslinjen:baslinjens:baslinjer:baslinjers:baslinjerna:baslinjernas
+CUSTOM: y y baslinje
+782083r4<substantiv>baslinjespel:baslinjespel:baslinjespels:baslinjespelet:baslinjespelets:baslinjespel:baslinjespels:baslinjespelen:baslinjespelens
+COMPOUND(782084, 552956): baslinje + spel
+924689r3<substantiv>basläger:basläger:baslägers:baslägret:baslägrets:basläger:baslägers:baslägren:baslägrens
+929695r4<substantiv>basmat:basmat:basmats:basmaten:basmatens:!:!:!:!
+COMPOUND(548351, 556206): bas + mat
+658581r3<substantiv>basmatiris:basmatiris:basmatiris:basmatiriset:basmatirisets:basmatiris:basmatiris:basmatirisen:basmatirisens
+930189r3<substantiv>basplan:basplan:basplans:basplanet:basplanets::::
+964712r4<substantiv>basriff:basriff:basriffs:basriffet:basriffets:basriff:basriffs:basriffen:basriffens
+COMPOUND(548351, 848272): bas + riff
+681941r4<substantiv>basröst:basröst:basrösts:basrösten:basröstens:basröster:basrösters:basrösterna:basrösternas
+COMPOUND(676542, 550434): bas + röst
+629175r3<substantiv>basse:basse:basses:bassen:bassens:bassar:bassars:bassarna:bassarnas
+CUSTOM: n n y
+906598r4<substantiv>basset:basset:bassets:basseten:bassetens:bassetar:bassetars:bassetarna:bassetarnas
+DEFINITION 1: Hundras(er)
+CUSTOM: y n
+968704r3<substantiv>bassetthorn:bassetthorn:bassetthorns:bassetthornet:bassetthornets:bassetthorn:bassetthorns:bassetthornen:bassetthornens
+860232r3<substantiv>bassning:bassning:bassnings:bassningen:bassningens::::
+930193r3<substantiv>basspel:basspel:basspels:basspelet:basspelets::::
+711457r3<substantiv>basstation:basstation:basstations:basstationen:basstationens:basstationer:basstationers:basstationerna:basstationernas
+548353r4<substantiv>bassäng:bassäng:bassängs:bassängen:bassängens:bassänger:bassängers:bassängerna:bassängernas
+CUSTOM: y y bassäng
+614805r4<substantiv>bast:bast:basts:bastet:bastets::::
+CUSTOM: y n
+687663r3<verb>basta:basta:bastade:bastat:bastar:basta::::::::bastande:
+629174r3<interjektion>basta:basta
+571044r4<adjektiv>bastant:bastant:bastant:bastanta:bastanta:bastantare:bastantast:bastantaste:bastante
+548355r3<substantiv>bastard:bastard:bastards:bastarden:bastardens:bastarder:bastarders:bastarderna:bastardernas
+860236r3<substantiv>bastardform:bastardform:bastardforms:bastardformen:bastardformens:bastardformer:bastardformers:bastardformerna:bastardformernas
+860244r3<substantiv>bastfiber:bastfiber:bastfibers:bastfibern:bastfiberns:bastfibrer:bastfibrers:bastfibrerna:bastfibrernas
+968710r3<substantiv>basthud:basthud:basthuds:basthuden:basthudens:basthudar:basthudars:basthudarna:basthudarnas
+752297r5<substantiv>bastion:bastion:bastions:bastionen:bastionens:bastioner:bastioners:bastionerna:bastionernas
+968719r4<substantiv>bastionsbefästning:bastionsbefästning:bastionsbefästnings:bastionsbefästningen:bastionsbefästningens:bastionsbefästningar:bastionsbefästningars:bastionsbefästningarna:bastionsbefästningarnas
+COMPOUND(752297, 592447): bastion + befästning
+968728r4<substantiv>bastionssystem:bastionssystem:bastionssystems:bastionssystemet:bastionssystemets:bastionssystem:bastionssystems:bastionssystemen:bastionssystemens
+COMPOUND(752297, 553021): bastion + system
+782092r3<substantiv>bastkjol:bastkjol:bastkjols:bastkjolen:bastkjolens:bastkjolar:bastkjolars:bastkjolarna:bastkjolarnas
+968734r4<substantiv>bastkorg:bastkorg:bastkorgs:bastkorgen:bastkorgens:bastkorgar:bastkorgars:bastkorgarna:bastkorgarnas
+COMPOUND(614805, 551586): bast + korg
+782100r3<substantiv>bastmatta:bastmatta:bastmattas:bastmattan:bastmattans:bastmattor:bastmattors:bastmattorna:bastmattornas
+899011r4<substantiv>baston:baston:bastons:bastonen:bastonens:bastoner:bastoners:bastonerna:bastonernas
+COMPOUND(676542, 603900): bas + ton
+860252r3<substantiv>bastonad:bastonad:bastonads:bastonaden:bastonadens:bastonader:bastonaders:bastonaderna:bastonadernas
+559190r6<substantiv>bastu:bastu:bastus:bastun:bastuns:bastur:basturs:basturna:basturnas
+CUSTOM: y y bastu
+930197r3<substantiv>bastuba:bastuba:bastubas:bastuban:bastubans:bastubor:bastubors:bastuborna:bastubornas
+964680r4<substantiv>bastulave:bastulave:bastulaves:bastulaven:bastulavens:bastulavar:bastulavars:bastulavarna:bastulavarnas
+COMPOUND(559190, 559961): bastu + lave
+802275r3<adjektiv>basturökt:basturökt:basturökt:basturökta:basturökta::::
+605469r3<substantiv>basun:basun:basuns:basunen:basunens:basuner:basuners:basunerna:basunernas
+CUSTOM: y y basun
+546200r5<verb>basunera:basunera:basunerade:basunerat:basunerar:basunera:basuneras:basunerades:basunerats:basuneras::::basunerande:
+825214r3<substantiv>basunist:basunist:basunists:basunisten:basunistens:basunister:basunisters:basunisterna:basunisternas
+928435r4<substantiv>basvara:basvara:basvaras:basvaran:basvarans:basvaror:basvarors:basvarorna:basvarornas
+COMPOUND(548351, 562107): bas + vara
+918967r4<substantiv>basvin:basvin:basvins:basvinet:basvinets:basviner:basviners:basvinerna:basvinernas
+COMPOUND(676542, 600515): bas + vin
+929699r4<substantiv>basyta:basyta:basytas:basytan:basytans:basytor:basytors:basytorna:basytornas
+COMPOUND(548351, 595826): bas + yta
+752305r4<substantiv>basår:basår:basårs:basåret:basårets:basår:basårs:basåren:basårens
+COMPOUND(548351, 553140): bas + år
+930205r4<substantiv>basämne:basämne:basämnes:basämnet:basämnets:basämnen:basämnens:basämnena:basämnenas
+COMPOUND(548351, 613026): bas + ämne
+548357r5<substantiv>batalj:batalj:bataljs:bataljen:bataljens:bataljer:bataljers:bataljerna:bataljernas
+968752r4<substantiv>bataljmålare:bataljmålare:bataljmålares:bataljmålaren:bataljmålarens:bataljmålare:bataljmålares:bataljmålarna:bataljmålarnas
+COMPOUND(548357, 559182): batalj + målare
+860261r3<substantiv>bataljmålning:bataljmålning:bataljmålnings:bataljmålningen:bataljmålningens:bataljmålningar:bataljmålningars:bataljmålningarna:bataljmålningarnas
+605471r4<substantiv>bataljon:bataljon:bataljons:bataljonen:bataljonens:bataljoner:bataljoners:bataljonerna:bataljonernas
+CUSTOM: y y bataljons
+968742r3<adverb>bataljonsvis:bataljonsvis
+968743r4<substantiv>bataljscen:bataljscen:bataljscens:bataljscenen:bataljscenens:bataljscener:bataljsceners:bataljscenerna:bataljscenernas
+COMPOUND(548357, 550462): batalj + scen
+968760r3<substantiv>bataver:::::bataver:batavers:bataverna:batavernas
+CUSTOM: y n
+616625r10<substantiv>batik:batik:batiks:batiken:batikens:!:!:!:!
+CUSTOM: y n
+968776r4<substantiv>batikhäxa:batikhäxa:batikhäxas:batikhäxan:batikhäxans:batikhäxor:batikhäxors:batikhäxorna:batikhäxornas
+COMPOUND(616625, 557529): batik + häxa
+968786r4<substantiv>batikkjol:batikkjol:batikkjols:batikkjolen:batikkjolens:batikkjolar:batikkjolars:batikkjolarna:batikkjolarnas
+COMPOUND(616625, 551528): batik + kjol
+968796r4<substantiv>batikmönster:batikmönster:batikmönsters:batikmönstret:batikmönstrets:batikmönster:batikmönsters:batikmönstren, batikmönsterna:batikmönstrens, batikmönsternas
+COMPOUND(616625, 621588): batik + mönster
+968806r4<adjektiv>batikmönstrad:batikmönstrad:batikmönstrat:batikmönstrade:batikmönstrade:!:!:!:::::::::
+COMPOUND(616625, 793328): batik + mönstrad
+968811r4<substantiv>batiktröja:batiktröja:batiktröjas:batiktröjan:batiktröjans:batiktröjor:batiktröjors:batiktröjorna:batiktröjornas
+COMPOUND(616625, 595624): batik + tröja
+968765r4<substantiv>batiktyg:batiktyg:batiktygs:batiktyget:batiktygets:batiktyger, batiktyg:batiktygers, batiktygs:batiktygerna, batiktygen:batiktygernas, batiktygens
+COMPOUND(616625, 600498): batik + tyg
+860269r3<substantiv>batist:batist:batists:batisten:batistens:batister:batisters:batisterna:batisternas
+548358r4<substantiv>batong:batong:batongs:batongen:batongens:batonger:batongers:batongerna:batongernas
+CUSTOM: y y batong
+790008r3<adjektiv>batongbeväpnad:batongbeväpnad:batongbeväpnat:batongbeväpnade:batongbeväpnade:!:!:!:
+752311r4<substantiv>batongslag:batongslag:batongslags:batongslaget:batongslagets:batongslag:batongslags:batongslagen:batongslagens
+COMPOUND(548358, 608035): batong + slag
+559244r6<substantiv>batteri:batteri:batteris:batteriet:batteriets:batterier:batteriers:batterierna:batteriernas
+CUSTOM: y y batteri +batteri
+802158r3<adjektiv>batteridriven:batteridriven:batteridrivet:batteridrivna:batteridrivna::::
+940191r3<substantiv>batterieliminator:batterieliminator:batterieliminators:batterieliminatorn:batterieliminatorns:batterieliminatorer:batterieliminatorers:batterieliminatorerna:batterieliminatorernas
+950619r4<substantiv>batteriholk:batteriholk:batteriholks:batteriholken:batteriholkens:batteriholkar:batteriholkars:batteriholkarna:batteriholkarnas
+COMPOUND(559244, 551392): batteri + holk
+609327r3<substantiv>batteriladdare:batteriladdare:batteriladdares:batteriladdaren:batteriladdarens:batteriladdare:batteriladdares:batteriladdarna:batteriladdarnas
+CUSTOM: y y batteriladdar
+601225r3<substantiv>batteripol:batteripol:batteripols:batteripolen:batteripolens:batteripoler:batteripolers:batteripolerna:batteripolernas
+782108r3<substantiv>batterist:batterist:batterists:batteristen:batteristens:batterister:batteristers:batteristerna:batteristernas
+593725r3<substantiv>batterisyra:batterisyra:batterisyras:batterisyran:batterisyrans:batterisyror:batterisyrors:batterisyrorna:batterisyrornas
+609333r3<substantiv>batteritestare:batteritestare:batteritestares:batteritestaren:batteritestarens:batteritestare:batteritestares:batteritestarna:batteritestarnas
+CUSTOM: y y batteritestar
+593733r3<substantiv>batterivattenflaska:batterivattenflaska:batterivattenflaskas:batterivattenflaskan:batterivattenflaskans:batterivattenflaskor:batterivattenflaskors:batterivattenflaskorna:batterivattenflaskornas
+797254r3<adjektiv>batyal:batyal:batyalt:batyala:batyala::::
+CUSTOM: n n n
+579163r3<adjektiv>batymetrisk:batymetrisk:batymetriskt:batymetriska:batymetriska::::
+901009r3<substantiv>baud:baud:!:!:!:baud:!:!:!
+CUSTOM: y n
+550871r3<substantiv>bautasten:bautasten:bautastens:bautastenen:bautastenens:bautastenar:bautastenars:bautastenarna:bautastenarnas
+860277r5<substantiv>bauxit:bauxit:bauxits:bauxiten:bauxitens::::
+CUSTOM: y n
+968826r4<substantiv>bauxitfyndighet:bauxitfyndighet:bauxitfyndighets:bauxitfyndigheten:bauxitfyndighetens:bauxitfyndigheter:bauxitfyndigheters:bauxitfyndigheterna:bauxitfyndigheternas
+COMPOUND(860277, 548988): bauxit + fyndighet
+968834r4<substantiv>bauxitgruva:bauxitgruva:bauxitgruvas:bauxitgruvan:bauxitgruvans:bauxitgruvor:bauxitgruvors:bauxitgruvorna:bauxitgruvornas
+COMPOUND(860277, 594145): bauxit + gruva
+623963r3<verb>baxa:baxa:baxade:baxat:baxar:baxa:baxas:baxades:baxats:baxas:baxad:baxat:baxade:baxande:
+649059r5<verb>baxna:baxna:baxnade:baxnat:baxnar:baxna::::::::baxnande:
+DEFINITION 1: Häpna
+859131r3<egennamn>Bayern:Bayern:Bayerns
+CUSTOM: y n Bayern
+623973r3<adjektiv>bayersk:bayersk:bayerskt:bayerska:bayerska::::bayerske
+968842r3<substantiv>bayonneskinka:bayonneskinka:bayonneskinkas:bayonneskinkan:bayonneskinkans:bayonneskinkor:bayonneskinkors:bayonneskinkorna:bayonneskinkornas
+623974r3<substantiv>bayrare:bayrare:bayrares:bayraren:bayrarens:bayrare:bayrares:bayrarna:bayrarnas
+CUSTOM: y y
+782142r3<substantiv>bazooka:bazooka:bazookas:bazookan:bazookans:bazookor:bazookors:bazookorna:bazookornas
+861014r4<egennamn>BBC:BBC:
+899867r4<substantiv>B-dur:B-dur:B-durs::::::
+CUSTOM: y n B-dur
+937562r3<substantiv>beach:beach:beachs:beachen:beachens::::
+946892r3<substantiv>beachvolley:beachvolley:beachvolleys:beachvolleyn:beachvolleyns::::
+744121r3<substantiv>beachvolleyboll:beachvolleyboll:beachvolleybolls:beachvolleybollen:beachvolleybollens::::
+904438r3<substantiv>beagle:beagle:beagles:beaglen:beaglens:beaglar:beaglars:beaglarna:beaglarnas
+546201r4<verb>beakta:beakta:beaktade:beaktat:beaktar:beakta:beaktas:beaktades:beaktats:beaktas:beaktad:beaktat:beaktade:beaktande:
+687665r3<substantiv>beaktande:beaktande:beaktandes:beaktandet:beaktandets:beaktanden:beaktandens:beaktandena:beaktandenas
+687671r3<adjektiv>beaktansvärd:beaktansvärd:beaktansvärt:beaktansvärda:beaktansvärda::::
+546202r5<verb>bearbeta:bearbeta:bearbetade:bearbetat:bearbetar:bearbeta:bearbetas:bearbetades:bearbetats:bearbetas:bearbetad:bearbetat:bearbetade:bearbetande:
+968851r3<substantiv>bearbetande:bearbetande:bearbetandes:bearbetandet:bearbetandets::::
+782116r3<substantiv>bearbetare:bearbetare:bearbetares:bearbetaren:bearbetarens:bearbetare:bearbetares:bearbetarna:bearbetarnas
+568904r3<adjektiv>bearbetbar:bearbetbar:bearbetbart:bearbetbara:bearbetbara::::
+632150r10<substantiv>bearbetning:bearbetning:bearbetnings:bearbetningen:bearbetningens:bearbetningar:bearbetningars:bearbetningarna:bearbetningarnas
+CUSTOM: y y bearbetnings +bearbetnings
+729429r4<substantiv>bearbetningsekonomi:bearbetningsekonomi:bearbetningsekonomis:bearbetningsekonomin:bearbetningsekonomins:bearbetningsekonomier:bearbetningsekonomiers:bearbetningsekonomierna:bearbetningsekonomiernas
+COMPOUND(632150, 633212): bearbetning + ekonomi
+712323r4<substantiv>bearbetningsmetod:bearbetningsmetod:bearbetningsmetods:bearbetningsmetoden:bearbetningsmetodens:bearbetningsmetoder:bearbetningsmetoders:bearbetningsmetoderna:bearbetningsmetodernas
+COMPOUND(632150, 550036): bearbetning + metod
+941134r3<substantiv>bearnaise:bearnaise:bearnaises:bearnaisen:bearnaisens::::
+782122r3<substantiv>bearnaisesås:bearnaisesås:bearnaisesås:bearnaisesåsen:bearnaisesåsens:bearnaisesåser:bearnaisesåsers:bearnaisesåserna:bearnaisesåsernas
+947074r8<substantiv>beat:beat:beats:beatet:beatets:beats:beats:beatsen:beatsens
+CUSTOM: y n
+813241r3<egennamn>Beata:Beata:Beatas
+633181r5<egennamn>Beatles:Beatles:Beatles
+CUSTOM: y n Beatles
+968853r3<substantiv>beatnik:beatnik:beatniks::::::
+CUSTOM: y n beatnik
+813249r3<egennamn>Beatrice:Beatrice:Beatrices
+960531r3<substantiv>beaujolais:beaujolais:beaujolais:beaujolaisen:beaujolaisens::::
+968450r3<substantiv>bebi:bebi:bebis:bebin:bebins::::
+CUSTOM: y n
+550873r7<substantiv>bebis:bebis:bebis:bebisen:bebisens:bebisar:bebisars:bebisarna:bebisarnas
+CUSTOM: y y bebis
+637572r6<substantiv>bebisbio:bebisbio:bebisbios:bebisbion:bebisbions::::
+DEFINITION 1: Bioföreställning där man får ta med sig spädbarn
+845273r15<substantiv>bebisdans:bebisdans:bebisdans:bebisdansen:bebisdansens:bebisdanser:bebisdansers:bebisdanserna:bebisdansernas
+COMPOUND(550873, 548569): bebis + dans
+950628r4<substantiv>bebisfilt:bebisfilt:bebisfilts:bebisfilten:bebisfiltens:bebisfiltar:bebisfiltars:bebisfiltarna:bebisfiltarnas
+COMPOUND(550873, 551129): bebis + filt
+546203r5<verb>beblanda:beblanda:beblandade:beblandat:beblandar:beblanda:beblandas:beblandades:beblandats:beblandas:beblandad:beblandat:beblandade:beblandande:
+968855r3<substantiv>beblandelse:beblandelse:beblandelses:beblandelsen:beblandelsens:beblandelser:beblandelsers:beblandelserna:beblandelsernas
+968863r3<substantiv>beblandning:beblandning:beblandnings:beblandningen:beblandningens:beblandningar:beblandningars:beblandningarna:beblandningarnas
+623972r3<verb>bebo:bebo:bebodde:bebott:bebor:bebo:bebos:beboddes:bebotts:bebos:bebodd:bebott:bebodda::
+571283r3<adjektiv>bebodd:bebodd:bebott:bebodda:bebodda::::
+565587r3<adjektiv>beboelig:beboelig:beboeligt:beboeliga:beboeliga::::
+968871r3<substantiv>beboelighet:beboelighet:beboelighets:beboeligheten:beboelighetens::::
+960534r3<substantiv>bebop:bebop:bebops:bebopen:bebopens::::
+CUSTOM: y n
+968875r3<substantiv>bebopjazz:bebopjazz:bebopjazzs:bebopjazzen:bebopjazzens::::
+687672r4<verb>bebygga:bebygga:bebyggde:bebyggt:bebygger:bebygg:bebyggas:bebyggdes:bebyggts:bebyggs, bebygges:bebyggd:bebyggt:bebyggda:bebyggande:
+968879r3<substantiv>bebyggare:bebyggare:bebyggares:bebyggaren:bebyggarens:bebyggare:bebyggares:bebyggarna:bebyggarnas
+CUSTOM: y n
+687674r4<substantiv>bebyggelse:bebyggelse:bebyggelses:bebyggelsen:bebyggelsens:bebyggelser:bebyggelsers:bebyggelserna:bebyggelsernas
+CUSTOM: y y bebyggelse
+546204r4<verb>bebåda:bebåda:bebådade:bebådat:bebådar:bebåda:bebådas:bebådades:bebådats:bebådas:bebådad:bebådat:bebådade::
+687675r3<substantiv>bebådelse:bebådelse:bebådelses:bebådelsen:bebådelsens:bebådelser:bebådelsers:bebådelserna:bebådelsernas
+CUSTOM: y y bebådelse
+782130r3<substantiv>béchamelsås:béchamelsås:béchamelsås:béchamelsåsen:béchamelsåsens:béchamelsåser:béchamelsåsers:béchamelsåserna:béchamelsåsernas
+648974r7<substantiv>beck:beck:becks:becket:beckets::::
+CUSTOM: y n
+782150r3<substantiv>beckasin:beckasin:beckasins:beckasinen:beckasinens:beckasiner:beckasiners:beckasinerna:beckasinernas
+855020r3<egennamn>Becker:Becker:Beckers
+571503r3<adjektiv>beckig:beckig:beckigt:beckiga:beckiga::::
+787014r3<egennamn>Beckman:Beckman:Beckmans
+765332r3<adjektiv>beckmörk:beckmörk:beckmörkt:beckmörka:beckmörka:!:!:!:!
+782138r3<substantiv>beckmörker:beckmörker:beckmörkers:beckmörkret:beckmörkrets::::
+968885r4<substantiv>beckolja:beckolja:beckoljas:beckoljan:beckoljans:beckoljor:beckoljors:beckoljorna:beckoljornas
+COMPOUND(648974, 623123): beck + olja
+765335r3<adjektiv>becksvart:becksvart:becksvart:becksvarta:becksvarta:!:!:!:
+968893r4<substantiv>becktråd:becktråd:becktråds:becktråden:becktrådens:becktrådar:becktrådars:becktrådarna:becktrådarnas
+COMPOUND(648974, 552048): beck + tråd
+783373r3<substantiv>becquerel:becquerel:becquerels:::becquerel:becquerel::
+752312r3<adjektiv>bedagad:bedagad:bedagat:bedagade:bedagade:!:!:!:
+687676r4<verb>bedarra:bedarra:bedarrade:bedarrat:bedarrar:bedarra:::::bedarrad:bedarrat:bedarrade:bedarrande:
+557636r17<verb>bedja, be:be, bedja:bad:bett:ber, beder:be, bed:bes, bedjas:bads:betts:bedes, beds:bedd:bett:bedda:bedjande:både
+CUSTOM: y n !bed !beds
+570966r3<adjektiv>bedjande:bedjande:bedjande:bedjande:bedjande:!:!:!:
+968901r3<substantiv>bedjare:bedjare:bedjares:bedjaren:bedjarens:bedjare:bedjares:bedjarna:bedjarnas
+CUSTOM: y n
+592403r6<verb>bedraga, bedra:bedra, bedraga:bedrog:bedragit:bedrar, bedrager:bedra:bedras, bedragas:bedrogs:bedragits:bedras, bedrages:bedragen:bedraget:bedragna:bedragande:
+592407r3<substantiv>bedragare:bedragare:bedragares:bedragaren:bedragarens:bedragare:bedragares:bedragarna:bedragarnas
+CUSTOM: y y bedragar
+592408r3<substantiv>bedragerska:bedragerska:bedragerskas:bedragerskan:bedragerskans:bedragerskor:bedragerskors:bedragerskorna:bedragerskornas
+548360r3<substantiv>bedrift:bedrift:bedrifts:bedriften:bedriftens:bedrifter:bedrifters:bedrifterna:bedrifternas
+592404r5<verb>bedriva:bedriva:bedrev:bedrivit:bedriver:bedriv:bedrivas:bedrevs:bedrivits:bedrivs, bedrives:bedriven:bedrivet:bedrivna:bedrivande:
+592416r7<substantiv>bedrägeri:bedrägeri:bedrägeris:bedrägeriet, bedrägerit:bedrägeriets, bedrägerits:bedrägerier:bedrägeriers:bedrägerierna:bedrägeriernas
+CUSTOM: y y bedrägeri
+565588r4<adjektiv>bedräglig:bedräglig:bedrägligt:bedrägliga:bedrägliga:bedrägligare:bedrägligast:bedrägligaste:bedräglige
+968915r3<substantiv>bedräglighet:bedräglighet:bedräglighets:bedrägligheten:bedräglighetens:bedrägligheter:bedrägligheters:bedrägligheterna:bedrägligheternas
+546205r10<verb>bedröva:bedröva:bedrövade:bedrövat:bedrövar:bedröva:bedrövas:bedrövades:bedrövats:bedrövas:bedrövad:bedrövat:bedrövade:bedrövande:
+570640r3<adjektiv>bedrövad:bedrövad:bedrövat:bedrövade:bedrövade:!:!:!:
+592417r3<substantiv>bedrövelse:bedrövelse:bedrövelses:bedrövelsen:bedrövelsens:bedrövelser:bedrövelsers:bedrövelserna:bedrövelsernas
+CUSTOM: y y bedrövelse
+565589r4<adjektiv>bedrövlig:bedrövlig:bedrövligt:bedrövliga:bedrövliga:bedrövligare:bedrövligast:bedrövligaste:bedrövlige
+889527r3<substantiv>bedrövlighet:bedrövlighet:bedrövlighets:bedrövligheten:bedrövlighetens:bedrövligheter:bedrövligheters:bedrövligheterna:bedrövligheternas
+592418r6<substantiv>beduin:beduin:beduins:beduinen:beduinens:beduiner:beduiners:beduinerna:beduinernas
+CUSTOM: y y beduin
+896370r4<substantiv>beduinby:beduinby:beduinbys:beduinbyn:beduinbyns:beduinbyar:beduinbyars:beduinbyarna:beduinbyarnas
+COMPOUND(592418, 557655): beduin + by
+787166r6<substantiv>beduindans:beduindans:beduindans:beduindansen:beduindansens:beduindanser:beduindansers:beduindanserna:beduindansernas
+COMPOUND(592418, 548569): beduin + dans
+921495r4<substantiv>beduinklan:beduinklan:beduinklans:beduinklanen:beduinklanens:beduinklaner:beduinklaners:beduinklanerna:beduinklanernas
+COMPOUND(592418, 549526): beduin + klan
+592419r4<verb>bedyra:bedyra:bedyrade:bedyrat:bedyrar:bedyra:bedyras:bedyrades:bedyrats:bedyras:bedyrad:bedyrat:bedyrade::
+687679r3<substantiv>bedyrande:bedyrande:bedyrandes:bedyrandet:bedyrandets:bedyranden:bedyrandens:bedyrandena:bedyrandenas
+546206r4<verb>bedåra:bedåra:bedårade:bedårat:bedårar:bedåra:bedåras:bedårades:bedårats:bedåras:bedårad:bedårat:bedårade::
+592420r3<adjektiv>bedårande:bedårande:bedårande:bedårande:bedårande:!:!:!:
+592421r5<verb>bedöma:bedöma:bedömde:bedömt:bedömer:bedöm:bedömas:bedömdes:bedömts:bedöms, bedömes:bedömd:bedömt:bedömda::
+687680r4<substantiv>bedömande:bedömande:bedömandes:bedömandet:bedömandets:bedömanden:bedömandens:bedömandena:bedömandenas
+592422r3<substantiv>bedömare:bedömare:bedömares:bedömaren:bedömarens:bedömare:bedömares:bedömarna:bedömarnas
+CUSTOM: y y bedömar
+592423r6<substantiv>bedömning:bedömning:bedömnings:bedömningen:bedömningens:bedömningar:bedömningars:bedömningarna:bedömningarnas
+CUSTOM: y y bedömnings +bedömnings
+546207r5<verb>bedöva:bedöva:bedövade:bedövat:bedövar:bedöva:bedövas:bedövades:bedövats:bedövas:bedövad:bedövat:bedövade:bedövande:
+592424r3<adjektiv>bedövande:bedövande:bedövande:bedövande:bedövande:!:!:!:
+592425r4<substantiv>bedövning:bedövning:bedövnings:bedövningen:bedövningens:bedövningar:bedövningars:bedövningarna:bedövningarnas
+CUSTOM: y y bedövnings +bedövnings
+681939r4<substantiv>bedövningsmedel:bedövningsmedel:bedövningsmedels:bedövningsmedlet:bedövningsmedlets:bedövningsmedel:bedövningsmedels:bedövningsmedlen:bedövningsmedlens
+COMPOUND(592425, 560532): bedövning + medel
+860297r3<verb>beediga:beediga:beedigade:beedigat:beedigar:beediga:beedigas:beedigades:beedigats:beedigas:beedigad:beedigat:beedigade:beedigande:
+592426r3<egennamn>Beethoven:Beethoven:Beethovens
+CUSTOM: y n Beethoven
+592428r5<verb>befalla:befalla:befallde:befallt:befaller:befall:befallas:befalldes:befallts:befalls, befalles:befalld:befallt:befallda::
+592429r3<adjektiv>befallande:befallande:befallande:befallande:befallande:!:!:!:
+592430r3<substantiv>befallning:befallning:befallnings:befallningen:befallningens:befallningar:befallningars:befallningarna:befallningarnas
+CUSTOM: y y befallnings
+546208r5<verb>befara:befara:befarade:befarat:befarar:befara:befaras:befarades:befarats:befaras:befarad:befarat:befarade:befarande:
+765337r3<adjektiv>befaren:befaren:befaret:befarna:befarna::::
+546209r4<verb>befatta:befatta:befattade:befattat:befattar:befatta::::::::befattande:
+592431r6<substantiv>befattning:befattning:befattnings:befattningen:befattningens:befattningar:befattningars:befattningarna:befattningarnas
+CUSTOM: y y befattnings +befattnings
+615142r3<substantiv>befattningshavare:befattningshavare:befattningshavares:befattningshavaren:befattningshavarens:befattningshavare:befattningshavares:befattningshavarna:befattningshavarnas
+CUSTOM: y y befattningshavar
+592432r8<verb>befinna:befinna:befann:befunnit:befinner:befinn:befinnas:befanns:befunnits:befinns, befinnes:befunnen:befunnet:befunna::
+860307r3<substantiv>befinnande:befinnande:befinnandes:befinnandet:befinnandets::::
+687682r3<adjektiv>befinnande:befinnande:befinnande:befinnande:befinnande:!:!:!:
+565590r3<adjektiv>befintlig:befintlig:befintligt:befintliga:befintliga::::
+768069r4<substantiv>befintlighet:befintlighet:befintlighets:befintligheten:befintlighetens::::
+CUSTOM: y y befintlighets
+898628r3<substantiv>befintlighetskontroll::::::::
+COMPOUND(768069, 549704): befintlighet + kontroll
+765340r3<adjektiv>befjädrad:befjädrad:befjädrat:befjädrade:befjädrade:!:!:!:
+860311r3<substantiv>befjädring:befjädring:befjädrings:befjädringen:befjädringens::::
+968924r3<verb>beflita:beflita:beflitade:beflitat:beflitar:beflita::::::::beflitande:
+CUSTOM: y n
+546210r5<verb>befläcka:befläcka:befläckade:befläckat:befläckar:befläcka:befläckas:befläckades:befläckats:befläckas:befläckad:befläckat:befläckade:befläckande:
+821857r3<substantiv>befläckelse:befläckelse:befläckelses:befläckelsen:befläckelsens::::
+570641r3<adjektiv>befogad:befogad:befogat:befogade:befogade:!:!:!:
+592434r4<substantiv>befogenhet:befogenhet:befogenhets:befogenheten:befogenhetens:befogenheter:befogenheters:befogenheterna:befogenheternas
+CUSTOM: y y befogenhets
+546211r5<verb>befolka:befolka:befolkade:befolkat:befolkar:befolka:befolkas:befolkades:befolkats:befolkas:befolkad:befolkat:befolkade:befolkande:
+592435r10<substantiv>befolkning:befolkning:befolknings:befolkningen:befolkningens:befolkningar:befolkningars:befolkningarna:befolkningarnas
+CUSTOM: y y befolknings +befolknings
+605473r3<substantiv>befolkningsgrupp:befolkningsgrupp:befolkningsgrupps:befolkningsgruppen:befolkningsgruppens:befolkningsgrupper:befolkningsgruppers:befolkningsgrupperna:befolkningsgruppernas
+571506r3<adjektiv>befolkningsmässig:befolkningsmässig:befolkningsmässigt:befolkningsmässiga:befolkningsmässiga::::
+601234r3<substantiv>befolkningsstruktur:befolkningsstruktur:befolkningsstrukturs:befolkningsstrukturen:befolkningsstrukturens:befolkningsstrukturer:befolkningsstrukturers:befolkningsstrukturerna:befolkningsstrukturernas
+712517r4<substantiv>befolkningstäthet:befolkningstäthet:befolkningstäthets:befolkningstätheten:befolkningstäthetens::::
+COMPOUND(592435, 674042): befolkning + täthet
+722328r4<substantiv>befolkningsutveckling:befolkningsutveckling:befolkningsutvecklings:befolkningsutvecklingen:befolkningsutvecklingens:befolkningsutvecklingar:befolkningsutvecklingars:befolkningsutvecklingarna:befolkningsutvecklingarnas
+COMPOUND(592435, 637669): befolkning + utveckling
+546212r5<verb>befordra:befordra:befordrade:befordrat:befordrar:befordra:befordras:befordrades:befordrats:befordras:befordrad:befordrat:befordrade:befordrande:
+592436r5<substantiv>befordran:befordran:befordrans:befordran:befordrans:befordringar:befordringars:befordringarna:befordringarnas
+671663r4<substantiv>befordring:befordring:befordrings:befordringen:befordringens:befordringar:befordringars:befordringarna:befordringarnas
+CUSTOM: y y befordrings +befordrings
+671662r4<substantiv>befordringsavgift:befordringsavgift:befordringsavgifts:befordringsavgiften:befordringsavgiftens:befordringsavgifter:befordringsavgifters:befordringsavgifterna:befordringsavgifternas
+COMPOUND(671663, 548299): befordring + avgift
+585485r4<verb>befrakta:befrakta:befraktade:befraktat:befraktar:befrakta:befraktas:befraktades:befraktats:befraktas:befraktad:befraktat:befraktade:befraktande:
+860321r3<substantiv>befraktare:befraktare:befraktares:befraktaren:befraktarens:befraktare:befraktares:befraktarna:befraktarnas
+860327r3<substantiv>befraktning:befraktning:befraktnings:befraktningen:befraktningens::::
+546213r4<verb>befria:befria:befriade:befriat:befriar:befria:befrias:befriades:befriats:befrias:befriad:befriat:befriade::
+592437r3<adjektiv>befriande:befriande:befriande:befriande:befriande:!:!:!:
+592438r3<substantiv>befriare:befriare:befriares:befriaren:befriarens:befriare:befriares:befriarna:befriarnas
+CUSTOM: y y befriar
+592439r3<substantiv>befrielse:befrielse:befrielses:befrielsen:befrielsens:befrielser:befrielsers:befrielserna:befrielsernas
+CUSTOM: y y befrielse
+546214r4<verb>befrukta:befrukta:befruktade:befruktat:befruktar:befrukta:befruktas:befruktades:befruktats:befruktas:befruktad:befruktat:befruktade::
+800897r3<adjektiv>befruktande:befruktande:befruktande:befruktande:befruktande:!:!:!:
+592444r5<substantiv>befruktning:befruktning:befruktnings:befruktningen:befruktningens:befruktningar:befruktningars:befruktningarna:befruktningarnas
+CUSTOM: y y befruktnings +befruktnings
+752319r3<adjektiv>befryndad:befryndad:befryndat:befryndade:befryndade:!:!:!:
+546215r4<verb>befrämja:befrämja:befrämjade:befrämjat:befrämjar:befrämja:befrämjas:befrämjades:befrämjats:befrämjas:befrämjad:befrämjat:befrämjade:befrämjande:
+800898r3<adjektiv>befrämjande:befrämjande:befrämjande:befrämjande:befrämjande:!:!:!:
+860331r3<substantiv>befrämjare:befrämjare:befrämjares:befrämjaren:befrämjarens:befrämjare:befrämjares:befrämjarna:befrämjarnas
+733092r3<verb>befukta:befukta:befuktade:befuktat:befuktar:befukta:befuktas:befuktades:befuktats:befuktas:befuktad:befuktat:befuktade:befuktande:
+585489r4<verb>befullmäktiga:befullmäktiga:befullmäktigade:befullmäktigat:befullmäktigar:befullmäktiga:befullmäktigas:befullmäktigades:befullmäktigats:befullmäktigas:befullmäktigad:befullmäktigat:befullmäktigade:befullmäktigande:
+552226r8<substantiv>befäl:befäl:befäls:befälet:befälets:befäl:befäls:befälen:befälens
+CUSTOM: y y befäls +befäls
+800899r3<adjektiv>befälhavande:befälhavande:befälhavande:befälhavande:befälhavande:!:!:!:
+592445r3<substantiv>befälhavare:befälhavare:befälhavares:befälhavaren:befälhavarens:befälhavare:befälhavares:befälhavarna:befälhavarnas
+CUSTOM: y y befälhavar +

@@ -1,0 +1,588 @@
+miljöskildringens:miljöskildringar:miljöskildringars:miljöskildringarna:miljöskildringarnas
+COMPOUND(611051, 619565): miljö + skildring
+CUSTOM: y y miljöskildrings
+740159r5<substantiv>miljöskydd:miljöskydd:miljöskydds:miljöskyddet:miljöskyddets::::
+COMPOUND(611051, 552935): miljö + skydd
+CUSTOM: y y miljöskydds
+740163r4<substantiv>miljöskyddslag:miljöskyddslag:miljöskyddslags:miljöskyddslagen:miljöskyddslagens:miljöskyddslagar:miljöskyddslagars:miljöskyddslagarna:miljöskyddslagarnas
+COMPOUND(740159, 551690): miljöskydd + lag
+937156r4<substantiv>miljöskäl:miljöskäl:miljöskäls:miljöskälet:miljöskälets:miljöskäl:miljöskäls:miljöskälen:miljöskälens
+COMPOUND(611051, 552945): miljö + skäl
+894655r3<adjektiv>miljösmart:miljösmart:miljösmart:miljösmarta:miljösmarta::::::::::::
+740164r3<substantiv>miljösynpunkt:miljösynpunkt:miljösynpunkts:miljösynpunkten:miljösynpunktens::::
+566694r3<adjektiv>miljötålig:miljötålig:miljötåligt:miljötåliga:miljötåliga::::
+768626r4<substantiv>miljövård:miljövård:miljövårds:miljövården:miljövårdens::::
+COMPOUND(611051, 599145): miljö + vård
+CUSTOM: y y miljövårds
+851432r3<substantiv>miljövän:miljövän:miljöväns:miljövännen:miljövännens:miljövänner:miljövänners:miljövännerna:miljövännernas
+566697r3<adjektiv>miljövänlig:miljövänlig:miljövänligt:miljövänliga:miljövänliga::::
+948104r4<substantiv>milkostnad:milkostnad:milkostnads:milkostnaden:milkostnadens:milkostnader:milkostnaders:milkostnaderna:milkostnadernas
+COMPOUND(621298, 549744): mil + kostnad
+948620r3<substantiv>milkshake:milkshake:milkshakes:milkshaken:milkshakens::::
+990047r3<egennamn>Milla:Milla:Millas
+702345r4<substantiv>millennieskifte:millennieskifte:millennieskiftes:millennieskiftet:millennieskiftets:millennieskiften:millennieskiftens:millennieskiftena:millennieskiftenas
+COMPOUND(702337, 562827): millennium + skifte
+702337r4<substantiv>millennium:millennium:millenniums:millenniet:millenniets:millennier:millenniers:millennierna:millenniernas
+CUSTOM: y y millennie
+875331r4<egennamn>Miller:Miller:Millers
+CUSTOM: y n
+875334r4<substantiv>Millerindex:Millerindex:Millerindex:Millerindexet, Millerindexen:Millerindexets, Millerindexens:Millerindex:Millerindex:Millerindexen:Millerindexens
+COMPOUND(875331, 552497): Miller + index
+CUSTOM: n n
+962439r3<substantiv>milliampere:milliampere:milliamperes:milliamperen:milliamperens:milliampere:milliamperes:milliamperen:milliamperens
+983357r3<substantiv>millibar:millibar:millibars:millibaren:millibarens::::
+861781r3<egennamn>Millicom:Millicom:Millicoms
+CUSTOM: n n
+702353r3<substantiv>milligram:milligram:milligrams:milligrammet:milligrammets:milligram:milligrams:milligrammen:milligrammens
+702359r3<substantiv>milliliter:milliliter:milliliters:millilitern:milliliterns:milliliter:milliliters:milliliterna:milliliternas
+CUSTOM: y y milliliter
+688407r8<substantiv>millimeter:millimeter:millimeters:millimetern:millimeterns:millimeter:millimeters:millimeterna:millimeternas
+CUSTOM: y y millimeter
+550040r4<substantiv>million:million:millions:millionen:millionens:millioner:millioners:millionerna:millionernas
+702365r3<substantiv>millisekund:millisekund:millisekunds:millisekunden:millisekundens:millisekunder:millisekunders:millisekunderna:millisekundernas
+907309r3<substantiv>millisievert:millisievert:::::::
+940239r3<substantiv>milliwatt:milliwatt:milliwatts:milliwatten:milliwattens:milliwatt:milliwatts:milliwatten:milliwattens
+983361r3<substantiv>millivolt:millivolt:millivolts:millivolten:millivoltens::::
+917008r4<substantiv>millopp:millopp:millopps:milloppet:milloppets:millopp:millopps:milloppen:milloppens
+COMPOUND(621298, 552677): mil + lopp
+972474r3<egennamn>Milo:Milo:Milos
+990051r3<egennamn>Milou:Milou:Milous
+801876r3<adjektiv>milsbred:milsbred:milsbrett:milsbreda:milsbreda::::
+688408r3<adjektiv>milslång:milslång:milslångt:milslånga:milslånga:!:!:!:
+956740r4<substantiv>milsten:milsten:milstens:milstenen:milstenens:milstenar:milstenars:milstenarna:milstenarnas
+COMPOUND(621298, 551935): mil + sten
+CUSTOM: y n
+688409r3<substantiv>milstolpe:milstolpe:milstolpes:milstolpen:milstolpens:milstolpar:milstolpars:milstolparna:milstolparnas
+801879r3<adjektiv>milsvid:milsvid:milsvitt:milsvida:milsvida::::
+702373r3<adverb>miltals:miltals
+732137r3<egennamn>Milton:Milton:Miltons
+627768r5<substantiv>mim:mim:mims:mimen:mimens:mimer:mimers:mimerna:mimernas
+CUSTOM: n n y
+627760r4<verb>mima:mima:mimade:mimat:mimar:mima:mimas:mimades:mimats:mimas:mimad:mimat:mimade:mimande:
+938394r3<substantiv>mimare:mimare:mimares:mimaren:mimarens:mimare:mimares:mimarna:mimarnas
+902097r4<substantiv>mimartist:mimartist:mimartists:mimartisten:mimartistens:mimartister:mimartisters:mimartisterna:mimartisternas
+COMPOUND(627768, 605396): mim + artist
+983365r3<substantiv>mimesis:mimesis:::::::
+962444r3<adjektiv>mimetisk:mimetisk:mimetiskt:mimetiska:mimetiska::::::::::::
+CUSTOM: y n
+702374r3<substantiv>mimik:mimik:mimiks:mimiken:mimikens:!:!:!:!
+983366r3<substantiv>mimikry:mimikry:mimikrys:mimikryn:mimikryns::::
+CUSTOM: y n
+582051r3<adjektiv>mimisk:mimisk:mimiskt:mimiska:mimiska::::
+990055r3<egennamn>Mimmi:Mimmi:Mimmis
+688410r3<substantiv>mimosa:mimosa:mimosas:mimosan:mimosans::::
+CUSTOM: y n
+555483r3<substantiv>min:min:mins:minen:minens:miner:miners:minerna:minernas
+555482r3<pronomen>min:min
+555484r12<substantiv>mina:mina:minas:minan:minans:minor:minors:minorna:minornas
+CUSTOM: y n
+617507r3<pronomen>mina:mina
+702378r3<substantiv>minaret:minaret:minarets:minareten:minaretens:minareter:minareters:minareterna:minareternas
+CUSTOM: y y minaret
+702386r3<substantiv>minattrapp:minattrapp:minattrapps:minattrappen:minattrappens:minattrapper:minattrappers:minattrapperna:minattrappernas
+CUSTOM: y n
+702394r3<substantiv>minbomb:minbomb:minbombs:minbomben:minbombens:minbomber:minbombers:minbomberna:minbombernas
+CUSTOM: y n
+702402r3<adjektiv>mindervärd:mindervärd:mindervärt:mindervärda:mindervärda::::
+684983r3<substantiv>mindervärdeskomplex:mindervärdeskomplex:mindervärdeskomplex:mindervärdeskomplexet:mindervärdeskomplexets:mindervärdeskomplex:mindervärdeskomplex:mindervärdeskomplexen:mindervärdeskomplexens
+574613r3<adjektiv>mindervärdig:mindervärdig:mindervärdigt:mindervärdiga:mindervärdiga::::
+702405r3<substantiv>mindervärdighet:mindervärdighet:mindervärdighets:mindervärdigheten:mindervärdighetens:!:!:!:!
+CUSTOM: y y mindervärdighets
+574614r5<adjektiv>minderårig:minderårig:minderårigt:minderåriga:minderåriga::::minderårige::::minderårigas::::
+983370r3<substantiv>minderårighet:minderårighet:minderårighets:minderårigheten:minderårighetens::::
+965408r3<substantiv>mindfulness:mindfulness:::::::
+582054r3<adjektiv>mindreasiatisk:mindreasiatisk:mindreasiatiskt:mindreasiatiska:mindreasiatiska::::
+983374r3<substantiv>mindretal:mindretal:mindretals:mindretalet:mindretalets:mindretal:mindretals:mindretalen:mindretalens
+547339r4<verb>minera:minera:minerade:minerat:minerar:minera:mineras:minerades:minerats:mineras:minerad:minerat:minerade::
+550041r20<substantiv>mineral:mineral:minerals:mineralet:mineralets:mineral, mineraler:minerals, mineralers:mineralen, mineralerna:mineralens, mineralernas
+CUSTOM: y y mineral
+574615r3<adjektiv>mineralhaltig:mineralhaltig:mineralhaltigt:mineralhaltiga:mineralhaltiga::::
+587242r3<verb>mineralisera:mineralisera:mineraliserade:mineraliserat:mineraliserar:mineralisera:::::::::
+582057r3<adjektiv>mineralisk:mineralisk:mineraliskt:mineraliska:mineraliska::::
+983380r3<substantiv>mineralog:mineralog:mineralogs:mineralogen:mineralogens:mineraloger:mineralogers:mineralogerna:mineralogernas
+846447r3<substantiv>mineralogi:mineralogi:mineralogis:mineralogin:mineralogins::::
+582060r3<adjektiv>mineralogisk:mineralogisk:mineralogiskt:mineralogiska:mineralogiska::::
+702409r4<substantiv>mineralsalt:mineralsalt:mineralsalts:mineralsaltet:mineralsaltets:mineralsalter:mineralsalters:mineralsalterna:mineralsalternas
+COMPOUND(550041, 592333): mineral + salt
+900171r4<substantiv>mineralton:mineralton:mineraltons:mineraltonen:mineraltonens:mineraltoner:mineraltoners:mineraltonerna:mineraltonernas
+COMPOUND(550041, 603900): mineral + ton
+819221r3<substantiv>mineralull:mineralull:mineralulls:mineralullen:mineralullens::::
+702417r5<substantiv>mineralvatten:mineralvatten:mineralvattens:mineralvattnet:mineralvattnets:mineralvatten:mineralvattens:mineralvattnen:mineralvattnens
+COMPOUND(550041, 555162): mineral + vatten
+CUSTOM: y y mineralvatten mineralvattens
+602827r3<substantiv>mineralvattenfabrik:mineralvattenfabrik:mineralvattenfabriks:mineralvattenfabriken:mineralvattenfabrikens:mineralvattenfabriker:mineralvattenfabrikers:mineralvattenfabrikerna:mineralvattenfabrikernas
+611052r3<substantiv>mineralvattenindustri:mineralvattenindustri:mineralvattenindustris:mineralvattenindustrin:mineralvattenindustrins:mineralvattenindustrier:mineralvattenindustriers:mineralvattenindustrierna:mineralvattenindustriernas
+702423r4<substantiv>mineralvattenkälla:mineralvattenkälla:mineralvattenkällas:mineralvattenkällan:mineralvattenkällans:mineralvattenkällor:mineralvattenkällors:mineralvattenkällorna:mineralvattenkällornas
+COMPOUND(702417, 559907): mineralvatten + källa
+722625r3<substantiv>minering:minering:minerings:mineringen:mineringens:mineringar:mineringars:mineringarna:mineringarnas
+798421r3<adjektiv>minerotrof:minerotrof:minerotroft:minerotrofa:minerotrofa::::
+983388r3<substantiv>minfartyg:minfartyg:minfartygs:minfartyget:minfartygets:minfartyg:minfartygs:minfartygen:minfartygens
+563998r3<adjektiv>minfri:minfri:minfritt:minfria:minfria::::
+CUSTOM: n n n
+801116r3<adjektiv>minfällande:minfällande:minfällande:minfällande:minfällande:!:!:!:
+702431r3<substantiv>minfällare:minfällare:minfällares:minfällaren:minfällarens:minfällare:minfällares:minfällarna:minfällarnas
+CUSTOM: y y minfällar
+702437r3<substantiv>minfält:minfält:minfälts:minfältet:minfältets:minfält:minfälts:minfälten:minfältens
+906462r3<substantiv>mingel:mingel:mingels:minglet:minglets:mingel:mingels:minglen:minglens
+702443r3<verb>mingla:mingla:minglade:minglat:minglar:mingla:minglas:minglades:minglats:minglas::::minglande:
+728783r4<substantiv>minhund:minhund:minhunds:minhunden:minhundens:minhundar:minhundars:minhundarna:minhundarnas
+COMPOUND(555484, 555306): mina + hund
+CUSTOM: y n n
+550042r4<substantiv>miniatyr:miniatyr:miniatyrs:miniatyren:miniatyrens:miniatyrer:miniatyrers:miniatyrerna:miniatyrernas
+CUSTOM: y y miniatyr
+587246r3<verb>miniatyrisera:miniatyrisera:miniatyriserade:miniatyriserat:miniatyriserar:miniatyrisera:::::::::
+983394r3<substantiv>miniatyrisering:miniatyrisering:miniatyriserings:miniatyriseringen:miniatyriseringens:miniatyriseringar:miniatyriseringars:miniatyriseringarna:miniatyriseringarnas
+702451r4<substantiv>miniatyrporträtt:miniatyrporträtt:miniatyrporträtts:miniatyrporträttet:miniatyrporträttets:miniatyrporträtt:miniatyrporträtts:miniatyrporträtten:miniatyrporträttens
+COMPOUND(550042, 552779): miniatyr + porträtt
+893666r3<substantiv>minibar:minibar:minibars:minibaren:minibarens:minibarer:minibarers:minibarerna:minibarernas
+931835r3<substantiv>minibil:minibil:minibils:minibilen:minibilens:minibilar:minibilars:minibilarna:minibilarnas
+622832r3<substantiv>minibuss:minibuss:minibuss:minibussen:minibussens:minibussar:minibussars:minibussarna:minibussarnas
+CUSTOM: y y minibuss
+688411r3<substantiv>minidator:minidator:minidators:minidatorn:minidatorns:minidatorer:minidatorers:minidatorerna:minidatorernas
+739344r3<substantiv>miniformat:miniformat:miniformats:miniformatet:miniformatets::::
+739349r4<substantiv>minigolf:minigolf:minigolfs:minigolfen:minigolfens::::
+CUSTOM: y y minigolf
+739353r3<substantiv>minigolfbana::::::::
+COMPOUND(739349, 556870): minigolf + bana
+931844r3<substantiv>minikök:minikök:miniköks:miniköket:minikökets:minikök:miniköks:miniköken:minikökens
+558190r7<adjektiv>minimal:minimal:minimalt:minimala:minimala:minimalare:minimalast:minimalaste:minimale
+558423r3<substantiv>minimalism:minimalism:minimalisms:minimalismen:minimalismens:!:!:!:!
+787388r3<substantiv>minimalist:minimalist:minimalists:minimalisten:minimalistens:minimalister:minimalisters:minimalisterna:minimalisternas
+656473r3<adjektiv>minimalistisk:minimalistisk:minimalistiskt:minimalistiska:minimalistiska:!:!:!:!
+547340r4<verb>minimera:minimera:minimerade:minimerat:minimerar:minimera:minimeras:minimerades:minimerats:minimeras:minimerad:minimerat:minimerade::
+656474r3<substantiv>minimering:minimering:minimerings:minimeringen:minimeringens:minimeringar:minimeringars:minimeringarna:minimeringarnas
+CUSTOM: y y minimerings
+669459r3<substantiv>minimiavgift:minimiavgift:minimiavgifts:minimiavgiften:minimiavgiftens:minimiavgifter:minimiavgifters:minimiavgifterna:minimiavgifternas
+726306r3<substantiv>minimikrofon:minimikrofon:minimikrofons:minimikrofonen:minimikrofonens:minimikrofoner:minimikrofoners:minimikrofonerna:minimikrofonernas
+702457r4<substantiv>minimilön:minimilön:minimilöns:minimilönen:minimilönens:minimilöner:minimilöners:minimilönerna:minimilönernas
+COMPOUND(604455, 549976): minimum + lön
+702465r4<substantiv>minimistorlek:minimistorlek:minimistorleks:minimistorleken:minimistorlekens:minimistorlekar:minimistorlekars:minimistorlekarna:minimistorlekarnas
+COMPOUND(604455, 598936): minimum + storlek
+604455r7<substantiv>minimum:minimum:minimums:minimumet:minimumets:minimum, minima:minimums, minimas:minimumen:minimumens
+CUSTOM: y y minimi
+678389r3<substantiv>minipiller:minipiller:minipillers:minipillret:minipillrets:minipiller:minipillers:minipillren, minipillerna:minipillrens, minipillernas
+725900r3<substantiv>miniräknare:miniräknare:miniräknares:miniräknaren:miniräknarens:miniräknare:miniräknares:miniräknarna:miniräknarnas
+739355r3<substantiv>miniserie:miniserie:miniseries:miniserien:miniseriens:miniserier:miniseriers:miniserierna:miniseriernas
+616627r20<substantiv>minister:minister:ministers:ministern:ministerns:ministrar:ministrars:ministrarna:ministrarnas
+CUSTOM: y y minister +minister
+983402r3<adjektiv>ministeriell:ministeriell:ministeriellt:ministeriella:ministeriella::::::::::::
+616763r6<substantiv>ministerium:ministerium:ministeriums:ministeriet:ministeriets:ministerier:ministeriers:ministerierna:ministeriernas
+616628r3<substantiv>ministerportfölj:ministerportfölj:ministerportföljs:ministerportföljen:ministerportföljens:ministerportföljer:ministerportföljers:ministerportföljerna:ministerportföljernas
+616636r3<substantiv>ministerråd:ministerråd:ministerråds:ministerrådet:ministerrådets:ministerråd:ministerråds:ministerråden:ministerrådens
+CUSTOM: y y ministerråds
+712540r4<substantiv>ministerstyre:ministerstyre:ministerstyres:ministerstyret:ministerstyrets::::
+COMPOUND(616627, 626589): minister + styre
+616642r3<substantiv>ministerutskott:ministerutskott:ministerutskotts:ministerutskottet:ministerutskottets:ministerutskott:ministerutskotts:ministerutskotten:ministerutskottens
+616648r3<substantiv>ministär:ministär:ministärs:ministären:ministärens:ministärer:ministärers:ministärerna:ministärernas
+739364r3<substantiv>miniubåt:miniubåt:miniubåts:miniubåten:miniubåtens:miniubåtar:miniubåtars:miniubåtarna:miniubåtarnas
+616656r5<substantiv>mink:mink:minks:minken:minkens:minkar:minkars:minkarna:minkarnas
+CUSTOM: y n
+616657r4<substantiv>minkfarm:minkfarm:minkfarms:minkfarmen:minkfarmens:minkfarmar, minkfarmer:minkfarmars, minkfarmers:minkfarmarna, minkfarmerna:minkfarmarnas, minkfarmernas
+897531r3<substantiv>minkfarmare:minkfarmare:minkfarmares:minkfarmaren:minkfarmarens:minkfarmare:minkfarmares:minkfarmarna:minkfarmarnas
+917019r4<substantiv>minknäring:minknäring:minknärings:minknäringen:minknäringens::::
+COMPOUND(616656, 597345): mink + näring
+616665r3<substantiv>minkpäls:minkpäls:minkpäls:minkpälsen:minkpälsens:minkpälsar:minkpälsars:minkpälsarna:minkpälsarnas
+616672r3<substantiv>minkuppfödare:minkuppfödare:minkuppfödares:minkuppfödaren:minkuppfödarens:minkuppfödare:minkuppfödares:minkuppfödarna:minkuppfödarnas
+CUSTOM: y y minkuppfödar
+616678r3<substantiv>minkuppfödning:minkuppfödning:minkuppfödnings:minkuppfödningen:minkuppfödningens::::
+CUSTOM: y y minkuppfödnings
+616682r5<verb>minna:minna:minde:mint:minner:minn::::::::minnande:
+CUSTOM: y n !minna !minde !minn
+972346r3<egennamn>Minna:Minna:Minnas
+990059r3<egennamn>Minnah:Minnah:Minnahs
+591641r3<deponens>minnas:minnas:mindes:mints:minns:
+CUSTOM: y n
+555491r20<substantiv>minne:minne:minnes:minnet:minnets:minnen:minnens:minnena:minnenas
+CUSTOM: y y minnes +minnes
+616685r4<substantiv>minnesanteckning:minnesanteckning:minnesantecknings:minnesanteckningen:minnesanteckningens:minnesanteckningar:minnesanteckningars:minnesanteckningarna:minnesanteckningarnas
+COMPOUND(555491, 606124): minne + anteckning
+CUSTOM: y y minnesantecknings
+616686r3<substantiv>minnesbeta:minnesbeta:minnesbetas:minnesbetan:minnesbetans:minnesbetor:minnesbetors:minnesbetorna:minnesbetornas
+602835r3<substantiv>minnesbild:minnesbild:minnesbilds:minnesbilden:minnesbildens:minnesbilder:minnesbilders:minnesbilderna:minnesbildernas
+616694r3<substantiv>minnescell:minnescell:minnescells:minnescellen:minnescellens:minnesceller:minnescellers:minnescellerna:minnescellernas
+936694r3<substantiv>minnesdag:minnesdag:minnesdags:minnesdagen:minnesdagens:minnesdagar:minnesdagars:minnesdagarna:minnesdagarnas
+718736r5<substantiv>minneseffekt:minneseffekt::minneseffekten:minneseffektens:minneseffekter::minneseffekterna:minneseffekternas
+616702r3<substantiv>minnesförlust:minnesförlust:minnesförlusts:minnesförlusten:minnesförlustens:minnesförluster:minnesförlusters:minnesförlusterna:minnesförlusternas
+656480r4<adjektiv>minnesgod:minnesgod:minnesgott:minnesgoda:minnesgoda:!:!:!:minnesgode::::::::
+945017r4<substantiv>minnesgärd:minnesgärd:minnesgärds:minnesgärden:minnesgärdens:minnesgärder:minnesgärders:minnesgärderna:minnesgärdernas
+COMPOUND(555491, 618118): minne + gärd
+764470r4<substantiv>minneskort:minneskort:minneskorts:minneskortet:minneskortets:minneskort:minneskorts:minneskorten:minneskortens
+COMPOUND(555491, 552580): minne + kort
+CUSTOM: y y minneskort
+616710r3<substantiv>minneskrets:minneskrets:minneskrets:minneskretsen:minneskretsens:minneskretsar:minneskretsars:minneskretsarna:minneskretsarnas
+616717r3<substantiv>minneslucka:minneslucka:minnesluckas:minnesluckan:minnesluckans:minnesluckor:minnesluckors:minnesluckorna:minnesluckornas
+635381r6<verb>minnesmärka:minnesmärka:minnesmärkte:minnesmärkt:minnesmärker:minnesmärk:minnesmärkas:minnesmärktes:minnesmärkts:minnesmärks:minnesmärkt:minnesmärkt:minnesmärkta:minnesmärkande:
+COMPOUND(555491, 585833): minne + märka
+616725r3<substantiv>minnesmärke:minnesmärke:minnesmärkes:minnesmärket:minnesmärkets:minnesmärken:minnesmärkens:minnesmärkena:minnesmärkenas
+911800r4<substantiv>minnesord:minnesord:minnesords:minnesordet:minnesordets:minnesord:minnesords:minnesorden:minnesordens
+COMPOUND(555491, 555138): minne + ord
+990276r3<egennamn>Minnesota:Minnesota:Minnesotas
+860745r4<substantiv>minnesplats:minnesplats:minnesplats:minnesplatsen:minnesplatsens:minnesplatser:minnesplatsers:minnesplatserna:minnesplatsernas
+COMPOUND(555491, 550210): minne + plats
+764477r3<substantiv>minnesregel::::::::
+COMPOUND(555491, 621698): minne + regel
+787558r3<adjektiv>minnesrik:minnesrik:minnesrikt:minnesrika:minnesrika:minnesrikare:minnesrikast:minnesrikaste:
+952262r4<substantiv>minnesruna:minnesruna:minnesrunas:minnesrunan:minnesrunans:minnesrunor:minnesrunors:minnesrunorna:minnesrunornas
+COMPOUND(555491, 619461): minne + runa
+917026r4<substantiv>minnessak:minnessak:minnessaks:minnessaken:minnessakens:minnessaker:minnessakers:minnessakerna:minnessakernas
+COMPOUND(555491, 550443): minne + sak
+841339r3<substantiv>minnessten:minnessten:minnesstens:minnesstenen:minnesstenens:minnesstenar:minnesstenars:minnesstenarna:minnesstenarnas
+860737r4<substantiv>minnesstund:minnesstund:minnesstunds:minnesstunden:minnesstundens:minnesstunder:minnesstunders:minnesstunderna:minnesstundernas
+COMPOUND(555491, 550593): minne + stund
+940380r4<substantiv>minnestal:minnestal:minnestals:minnestalet:minnestalets:minnestal:minnestals:minnestalen:minnestalens
+COMPOUND(555491, 553029): minne + tal
+656481r3<adjektiv>minnesvärd:minnesvärd:minnesvärt:minnesvärda:minnesvärda::::
+983405r3<substantiv>minnesångare:minnesångare:minnesångares:minnesångaren:minnesångarens:minnesångare:minnesångares:minnesångarna:minnesångarnas
+582063r3<adjektiv>minoisk:minoisk:minoiskt:minoiska:minoiska::::
+550043r4<substantiv>minoritet:minoritet:minoritets:minoriteten:minoritetens:minoriteter:minoriteters:minoriteterna:minoriteternas
+CUSTOM: y y minoritets
+656482r3<substantiv>minoritetsregering:minoritetsregering:minoritetsregerings:minoritetsregeringen:minoritetsregeringens:minoritetsregeringar:minoritetsregeringars:minoritetsregeringarna:minoritetsregeringarnas
+CUSTOM: y y minoritetsregerings
+904090r4<substantiv>minoritetsåterremittering:minoritetsåterremittering:minoritetsåterremitterings:minoritetsåterremitteringen:minoritetsåterremitteringens:minoritetsåterremitteringar:minoritetsåterremitteringars:minoritetsåterremitteringarna:minoritetsåterremitteringarnas
+COMPOUND(550043, 817548): minoritet + återremittering
+937953r3<substantiv>minröjare:minröjare:minröjares:minröjaren:minröjarens:minröjare:minröjares:minröjarna:minröjarnas
+728749r4<substantiv>minröjning:minröjning:minröjnings:minröjningen:minröjningens:minröjningar:minröjningars:minröjningarna:minröjningarnas
+COMPOUND(555484, 696691): mina + röjning
+616733r3<adverb>minsann:minsann
+943206r3<egennamn>Minsk:Minsk:Minsks
+547341r5<verb>minska:minska:minskade:minskat:minskar:minska:minskas:minskades:minskats:minskas:minskad:minskat:minskade:minskande:
+878518r3<substantiv>minskande:minskande:minskandes:minskandet:minskandets::::
+616734r7<substantiv>minskning:minskning:minsknings:minskningen:minskningens:minskningar:minskningars:minskningarna:minskningarnas
+CUSTOM: y y minsknings +minsknings
+616735r3<substantiv>minspel:minspel:minspels:minspelet:minspelets::::
+702474r3<adjektiv>minsprängd:minsprängd:minsprängt:minsprängda:minsprängda::::
+702494r3<substantiv>minsprängning:minsprängning:minsprängnings:minsprängningen:minsprängningens:minsprängningar:minsprängningars:minsprängningarna:minsprängningarnas
+CUSTOM: y n minsprängnings
+983411r3<substantiv>minspärr:minspärr:minspärrs:minspärren:minspärrens:minspärrar:minspärrars:minspärrarna:minspärrarnas
+616739r3<adverb>minst:minst
+702478r3<adjektiv>minstbjudande:minstbjudande:minstbjudande:minstbjudande:minstbjudande:!:!:!:
+616740r3<substantiv>minsting:minsting:minstings:minstingen:minstingens:minstingar:minstingars:minstingarna:minstingarnas
+702481r3<substantiv>minsvepare:minsvepare:minsvepares:minsveparen:minsveparens:minsvepare:minsvepares:minsveparna:minsveparnas
+CUSTOM: y y minsvepar
+983419r3<substantiv>minsvepning:minsvepning:minsvepnings:minsvepningen:minsvepningens:minsvepningar:minsvepningars:minsvepningarna:minsvepningarnas
+702487r3<substantiv>minsökare:minsökare:minsökares:minsökaren:minsökarens:minsökare:minsökares:minsökarna:minsökarnas
+CUSTOM: y y minsökar
+616748r3<substantiv>mint:mint:mints:minten:mintens::::
+941157r3<adjektiv>mintgrön:mintgrön:mintgrönt:mintgröna:mintgröna::::::::::::
+555988r3<substantiv>mintsmak:mintsmak:mintsmaks:mintsmaken:mintsmakens:mintsmaker:mintsmakers:mintsmakerna:mintsmakernas
+616752r3<substantiv>minus:minus:minus:minuset:minusets:minus:minus:minusen:minusens
+CUSTOM: y y minus
+616751r3<adverb>minus:minus
+656483r3<substantiv>minusgrad:minusgrad:minusgrads:minusgraden:minusgradens:minusgrader:minusgraders:minusgraderna:minusgradernas
+920356r3<adjektiv>minusgradig:minusgradig:minusgradigt:minusgradiga:minusgradiga::::::::::::
+657925r3<substantiv>minuskel:minuskel:minuskels:minuskeln:minuskelns:minusklar:minusklars:minusklarna:minusklarnas
+983427r3<substantiv>minuskelskrift:minuskelskrift:minuskelskrifts:minuskelskriften:minuskelskriftens::::
+851440r3<substantiv>minuspol:minuspol:minuspols:minuspolen:minuspolens:minuspoler:minuspolers:minuspolerna:minuspolernas
+739372r3<substantiv>minuspoäng:minuspoäng:minuspoängs:minuspoängen:minuspoängens::::
+656484r3<substantiv>minustecken:minustecken:minusteckens:minustecknet:minustecknets:minustecken:minusteckens:minustecknen:minustecknens
+550044r5<substantiv>minut:minut:minuts:minuten:minutens:minuter:minuters:minuterna:minuternas
+CUSTOM: y y minut
+738037r3<adjektiv>minutiös:minutiös:minutiöst:minutiösa:minutiösa::::minutiöse
+566698r3<adjektiv>minutlig:minutlig:minutligt:minutliga:minutliga::::
+632046r4<substantiv>minutvisare:minutvisare:minutvisares:minutvisaren:minutvisarens:minutvisare:minutvisares:minutvisarna:minutvisarnas
+COMPOUND(550044, 620124): minut + visare
+CUSTOM: y y minutvisar
+856371r3<egennamn>Mio:Mio:Mios
+983431r3<adjektiv>miocen:miocen:miocent:miocena:miocena::::::::::::
+CUSTOM: y n
+972370r3<egennamn>Mira:Mira:Miras
+845311r3<egennamn>Miraflores:Miraflores:Miraflores
+845314r3<egennamn>Mirafloressjön:Mirafloressjön:Mirafloressjöns
+616765r5<substantiv>mirakel:mirakel:mirakels:miraklet:miraklets:mirakler, mirakel:miraklers, mirakels:miraklerna, miraklen:miraklernas, miraklens
+CUSTOM: y y mirakel
+917036r4<substantiv>mirakelkur:mirakelkur:mirakelkurs:mirakelkuren:mirakelkurens:mirakelkurer:mirakelkurers:mirakelkurerna:mirakelkurernas
+COMPOUND(616765, 549817): mirakel + kur
+565067r3<adjektiv>mirakulös:mirakulös:mirakulöst:mirakulösa:mirakulösa::::
+766984r3<egennamn>Miranda:Miranda:Mirandas
+890714r3<substantiv>mirett:mirett:miretts:miretten:mirettens:miretter:miretters:miretterna:miretternas
+CUSTOM: n n
+971928r3<egennamn>Mirjam:Mirjam:Mirjams
+737540r3<substantiv>misantrop:misantrop:misantrops:misantropen:misantropens:misantroper:misantropers:misantroperna:misantropernas
+962448r3<substantiv>misantropi:misantropi:misantropis:misantropin:misantropins::::
+582066r3<adjektiv>misantropisk:misantropisk:misantropiskt:misantropiska:misantropiska::::
+946103r3<substantiv>mischmasch:mischmasch:mischmaschs:mischmaschet:mischmaschets::::
+570817r4<adjektiv>miserabel:miserabel:miserabelt:miserabla:miserabla::::miserable::::::::
+658378r3<adjektiv>misogyn:misogyn:misogynt:misogyna:misogyna:!:!:!:
+890904r3<substantiv>misogyni:misogyni:misogynis:misogynin:misogynins::::
+551724r16<substantiv>miss:miss:miss:missen:missens:missar:missars:missarna:missarnas
+CUSTOM: y n
+547342r4<verb>missa:missa:missade:missat:missar:missa:missas:missades:missats:missas:missad:missat:missade::
+547343r4<verb>missakta:missakta:missaktade:missaktat:missaktar:missakta:missaktas:missaktades:missaktats:missaktas:missaktad:missaktat:missaktade::
+656485r3<substantiv>missaktning:missaktning:missaktnings:missaktningen:missaktningens::::
+CUSTOM: y y missaktnings
+739376r3<adjektiv>missanpassad:missanpassad:missanpassat:missanpassade:missanpassade:!:!:!:
+656486r3<substantiv>missanpassning:missanpassning:missanpassnings:missanpassningen:missanpassningens::::
+CUSTOM: y y missanpassnings
+725340r3<verb>missbedöma:missbedöma:missbedömde:missbedömt:missbedömer:missbedöm:missbedömas:missbedömdes:missbedömts:missbedöms:missbedömd:missbedömt:missbedömda:missbedömande:
+725352r3<substantiv>missbedömning:missbedömning:missbedömnings:missbedömningen:missbedömningens:missbedömningar:missbedömningars:missbedömningarna:missbedömningarnas
+656487r3<adjektiv>missbelåten:missbelåten:missbelåtet:missbelåtna:missbelåtna::::missbelåtne
+726315r5<substantiv>missbelåtenhet:missbelåtenhet:missbelåtenhets:missbelåtenheten:missbelåtenhetens:!:!:!:!
+COMPOUND(551724, 592496): miss + belåtenhet
+724450r3<adjektiv>missbildad:missbildad:missbildat:missbildade:missbildade:!:!:!:!
+656489r3<substantiv>missbildning:missbildning:missbildnings:missbildningen:missbildningens:missbildningar:missbildningars:missbildningarna:missbildningarnas
+CUSTOM: y y missbildnings
+656490r8<substantiv>missbruk:missbruk:missbruks:missbruket:missbrukets::::
+CUSTOM: y y missbruks
+547344r5<verb>missbruka:missbruka:missbrukade:missbrukat:missbrukar:missbruka:missbrukas:missbrukades:missbrukats:missbrukas:missbrukad:missbrukat:missbrukade:missbrukande:
+615384r6<substantiv>missbrukare:missbrukare:missbrukares:missbrukaren:missbrukarens:missbrukare:missbrukares:missbrukarna:missbrukarnas
+CUSTOM: y y missbrukar +missbrukar
+917046r4<substantiv>missbrukarled:missbrukarled:missbrukarleds:missbrukarledet:missbrukarledets:missbrukarled:missbrukarleds:missbrukarleden:missbrukarledens
+COMPOUND(615384, 552662): missbrukare + led
+740168r3<substantiv>missbruksproblem::::::::
+COMPOUND(656490, 552791): missbruk + problem
+787544r3<substantiv>missdåd:missdåd:missdåds:missdådet:missdådets:missdåd:missdåds:missdåden:missdådens
+615385r3<substantiv>missdådare:missdådare:missdådares:missdådaren:missdådarens:missdådare:missdådares:missdådarna:missdådarnas
+CUSTOM: y y missdådar
+739380r3<substantiv>missfall:missfall:missfalls:missfallet:missfallets:missfall:missfalls:missfallen:missfallens
+787742r3<verb>missfirma:missfirma:missfirmade:missfirmat:missfirmar:missfirma:missfirmas:missfirmades:missfirmats:missfirmas:missfirmad:missfirmat:missfirmade:missfirmande:
+566699r3<adjektiv>missfirmlig:missfirmlig:missfirmligt:missfirmliga:missfirmliga::::
+793235r3<adjektiv>missformad:missformad:missformat:missformade:missformade:!:!:!:
+739386r3<substantiv>missfoster:missfoster:missfosters:missfostret:missfostrets:missfoster:missfosters:missfostren:missfostrens
+739392r3<verb>missfärga:missfärga:missfärgade:missfärgat:missfärgar:missfärga:missfärgas:missfärgades:missfärgats:missfärgas:missfärgad:missfärgat:missfärgade::
+949075r4<substantiv>missfärgning:missfärgning:missfärgnings:missfärgningen:missfärgningens:missfärgningar:missfärgningars:missfärgningarna:missfärgningarnas
+COMPOUND(551724, 637259): miss + färgning
+702503r3<substantiv>missförhållande:missförhållande:missförhållandes:missförhållandet:missförhållandets:missförhållanden:missförhållandens:missförhållandena:missförhållandenas
+593250r3<verb>missförstå:missförstå:missförstod:missförstått:missförstår:missförstå:missförstås:missförstods:missförståtts:missförstås:missförstådd:missförstått:missförstådda::
+593253r3<substantiv>missförstånd:missförstånd:missförstånds:missförståndet:missförståndets:missförstånd:missförstånds:missförstånden:missförståndens
+656491r3<substantiv>missgrepp:missgrepp:missgrepps:missgreppet:missgreppets:missgrepp:missgrepps:missgreppen:missgreppens
+593254r4<verb>missgynna:missgynna:missgynnade:missgynnat:missgynnar:missgynna:missgynnas:missgynnades:missgynnats:missgynnas:missgynnad:missgynnat:missgynnade:missgynnande:
+563424r3<adjektiv>missgynnsam:missgynnsam:missgynnsamt:missgynnsamma:missgynnsamma::::
+656492r3<substantiv>missgärning:missgärning:missgärnings:missgärningen:missgärningens:missgärningar:missgärningars:missgärningarna:missgärningarnas
+CUSTOM: y y missgärnings
+787751r3<substantiv>misshag:misshag:misshags:misshaget:misshagets::::
+656493r3<verb>misshaga:misshaga:misshagade:misshagat:misshagar:misshaga:::::::::
+566702r3<adjektiv>misshaglig:misshaglig:misshagligt:misshagliga:misshagliga::::
+656494r4<substantiv>misshandel:misshandel:misshandels:misshandeln:misshandelns::::
+CUSTOM: y y misshandels +misshandels
+740169r3<substantiv>misshandelsbrott::::::::
+COMPOUND(656494, 552275): misshandel + brott
+949796r3<adjektiv>misshandelsdömd:misshandelsdömd:misshandelsdömt:misshandelsdömda:misshandelsdömda::::::::::::
+547345r5<verb>misshandla:misshandla:misshandlade:misshandlat:misshandlar:misshandla:misshandlas:misshandlades:misshandlats:misshandlas:misshandlad:misshandlat:misshandlade:misshandlande:
+688413r3<substantiv>misshandlare:misshandlare:misshandlares:misshandlaren:misshandlarens:misshandlare:misshandlares:misshandlarna:misshandlarnas
+CUSTOM: y y misshandlar
+983435r3<substantiv>misshugg:misshugg:misshuggs:misshugget:misshuggets:misshugg:misshuggs:misshuggen:misshuggens
+763277r3<verb>misshushålla:misshushålla:misshushållade:misshushållat:misshushållar:misshushålla:::::::::
+726322r4<substantiv>misshushållning:misshushållning:misshushållnings:misshushållningen:misshushållningens:!:!:!:!
+COMPOUND(551724, 643955): miss + hushållning
+739400r3<substantiv>misshällighet:misshällighet:misshällighets:misshälligheten:misshällighetens:misshälligheter:misshälligheters:misshälligheterna:misshälligheternas
+593262r4<substantiv>missil:missil:missils:missilen:missilens:missiler:missilers:missilerna:missilernas
+CUSTOM: y y missil
+873179r5<substantiv>missilförsvar:missilförsvar:missilförsvars:missilförsvaret:missilförsvarets:missilförsvar:missilförsvars:missilförsvaren:missilförsvarens
+COMPOUND(593262, 552415): missil + försvar
+CUSTOM: y y missilförsvars
+873177r4<substantiv>missilförsvarssystem:missilförsvarssystem:missilförsvarssystems:missilförsvarssystemet:missilförsvarssystemets:missilförsvarssystem:missilförsvarssystems:missilförsvarssystemen:missilförsvarssystemens
+COMPOUND(873179, 553021): missilförsvar + system
+550045r5<substantiv>mission:mission:missions:missionen:missionens:missioner:missioners:missionerna:missionernas
+CUSTOM: y y missions
+587250r4<verb>missionera:missionera:missionerade:missionerat:missionerar:missionera:missioneras:missionerades:missionerats:missioneras::::missionerande:
+983441r3<substantiv>missionsförbundare:missionsförbundare:missionsförbundares:missionsförbundaren:missionsförbundarens:missionsförbundare:missionsförbundares:missionsförbundarna:missionsförbundarnas
+582069r3<adjektiv>missionshistorisk:missionshistorisk:missionshistoriskt:missionshistoriska:missionshistoriska::::
+702511r4<substantiv>missionskyrka:missionskyrka:missionskyrkas:missionskyrkan:missionskyrkans:missionskyrkor:missionskyrkors:missionskyrkorna:missionskyrkornas
+COMPOUND(550045, 555095): mission + kyrka
+768745r4<substantiv>missionsråd:missionsråd:missionsråds:missionsrådet:missionsrådets:missionsråd:missionsråds:missionsråden:missionsrådens
+COMPOUND(550045, 552853): mission + råd
+702519r4<substantiv>missionär:missionär:missionärs:missionären:missionärens:missionärer:missionärers:missionärerna:missionärernas
+CUSTOM: y y missionärs
+702527r4<substantiv>missionärsställning:missionärsställning:missionärsställnings:missionärsställningen:missionärsställningens::::
+COMPOUND(702519, 597732): missionär + ställning
+CUSTOM: y y missionärsställnings
+943156r3<egennamn>Mississippi:Mississippi:Mississippis
+786780r3<substantiv>missiv:missiv:missivs:missivet:missivets:missiv:missivs:missiven:missivens
+590271r3<verb>missivera:missivera:missiverade:missiverat:missiverar:missivera:::::::::
+801117r3<adjektiv>missklädande:missklädande:missklädande:missklädande:missklädande:!:!:!:
+563427r3<adjektiv>missklädsam:missklädsam:missklädsamt:missklädsamma:missklädsamma::::
+587254r4<verb>misskreditera:misskreditera:misskrediterade:misskrediterat:misskrediterar:misskreditera:misskrediteras:misskrediterades:misskrediterats:misskrediteras:misskrediterad:misskrediterat:misskrediterade:misskrediterande:
+801118r3<adjektiv>misskrediterande:misskrediterande:misskrediterande:misskrediterande:misskrediterande:!:!:!:
+941700r3<substantiv>misskreditering:misskreditering:misskrediterings:misskrediteringen:misskrediteringens:misskrediteringar:misskrediteringars:misskrediteringarna:misskrediteringarnas
+787741r3<substantiv>misskund:misskund:::::::
+563430r3<adjektiv>misskundsam:misskundsam:misskundsamt:misskundsamma:misskundsamma::::
+799916r3<adjektiv>misskänd:misskänd:misskänt:misskända:misskända::::
+656495r3<verb>missköta:missköta:misskötte:misskött:missköter:missköt:misskötas:missköttes:misskötts:missköts:misskött:misskött:misskötta::
+563433r3<adjektiv>misskötsam:misskötsam:misskötsamt:misskötsamma:misskötsamma::::
+917055r3<substantiv>misskötsamhet:misskötsamhet:misskötsamhets:misskötsamheten:misskötsamhetens::::
+656497r3<substantiv>misskötsel:misskötsel:misskötsels:misskötseln:misskötselns::::
+725112r3<verb>missleda:missleda:missledde:misslett:missleder:missled:missledas:missleddes:missletts:missleds:missledd:misslett:missledda:missledande:
+726326r4<substantiv>missljud:missljud:missljuds:missljudet:missljudets:missljud:missljuds:missljuden:missljudens
+COMPOUND(551724, 552668): miss + ljud
+756076r3<adjektiv>missljudande:missljudande:missljudande:missljudande:missljudande:!:!:!:
+656498r3<adjektiv>misslyckad:misslyckad:misslyckat:misslyckade:misslyckade:!:!:!:
+656499r3<substantiv>misslyckande:misslyckande:misslyckandes:misslyckandet:misslyckandets:misslyckanden:misslyckandens:misslyckandena:misslyckandenas
+591729r3<deponens>misslyckas:misslyckas:misslyckades:misslyckats:misslyckas:
+656500r3<adjektiv>misslynt:misslynt:misslynt:misslynta:misslynta::::misslynte
+957982r4<substantiv>missmatchning:missmatchning:missmatchnings:missmatchningen:missmatchningens:missmatchningar:missmatchningars:missmatchningarna:missmatchningarnas
+COMPOUND(551724, 739079): miss + matchning
+736362r4<verb>missminna:missminna:missminde:missmint:missminner:missminn::::::::missminnande:
+COMPOUND(551724, 616682): miss + minna
+656502r3<substantiv>missmod:missmod:missmods:missmodet:missmodets::::
+574618r3<adjektiv>missmodig:missmodig:missmodigt:missmodiga:missmodiga::::
+787780r3<substantiv>missne:missne:missnes:missnen:missnens:missne:missnes:missnet:missnets
+656503r3<adjektiv>missnöjd:missnöjd:missnöjt:missnöjda:missnöjda::::missnöjde
+656504r3<substantiv>missnöje:missnöje:missnöjes:missnöjet:missnöjets::::
+CUSTOM: y y missnöjes
+990349r3<egennamn>Missouri:Missouri:Missouris
+801119r3<adjektiv>missprydande:missprydande:missprydande:missprydande:missprydande:!:!:!:
+739408r3<adjektiv>missriktad:missriktad:missriktat:missriktade:missriktade:!:!:!:
+547346r3<verb>missräkna:missräkna:missräknade:missräknat:missräknar:missräkna:::::::::
+793238r3<adjektiv>missräknad:missräknad:missräknat:missräknade:missräknade:!:!:!:
+702531r3<substantiv>missräkning:missräkning:missräknings:missräkningen:missräkningens:missräkningar:missräkningars:missräkningarna:missräkningarnas
+CUSTOM: y y missräknings
+656505r3<substantiv>misstag:misstag:misstags:misstaget:misstagets:misstag:misstags:misstagen:misstagens
+656506r6<verb>missta, misstaga:missta, misstaga:misstog:misstagit:misstar:missta:misstas:misstogs:misstagits:misstas:misstagen:misstaget:misstagna:misstagande:
+656508r5<substantiv>misstanke:misstanke:misstankes:misstanken:misstankens:misstankar:misstankars:misstankarna:misstankarnas
+CUSTOM: y y misstanke
+895691r3<substantiv>misstankegrad::::::::
+COMPOUND(656508, 549117): misstanke + grad
+793239r3<adjektiv>misstecknad:misstecknad:misstecknat:misstecknade:misstecknade:!:!:!:
+547347r4<verb>misstolka:misstolka:misstolkade:misstolkat:misstolkar:misstolka:misstolkas:misstolkades:misstolkats:misstolkas:misstolkad:misstolkat:misstolkade::
+941324r3<substantiv>misstolkning:misstolkning:misstolknings:misstolkningen:misstolkningens:misstolkningar:misstolkningars:misstolkningarna:misstolkningarnas
+739411r3<substantiv>misstro:misstro:misstros:misstron:misstrons::::
+656509r4<verb>misstro:misstro:misstrodde:misstrott:misstror:misstro:misstros:misstroddes:misstrotts:misstros:misstrodd:misstrott:misstrodda:misstroende:
+739414r4<substantiv>misstroende:misstroende:misstroendes:misstroendet:misstroendets::::
+CUSTOM: y y misstroende
+656510r4<substantiv>misstroendeförklaring:misstroendeförklaring:misstroendeförklarings:misstroendeförklaringen:misstroendeförklaringens:misstroendeförklaringar:misstroendeförklaringars:misstroendeförklaringarna:misstroendeförklaringarnas
+COMPOUND(739414, 641961): misstroende + förklaring
+CUSTOM: n n
+917060r3<substantiv>misstroendevotum:misstroendevotum:misstroendevotums:misstroendevotumet:misstroendevotumets:misstroendevotum:misstroendevotums:misstroendevotumen:misstroendevotumens
+726332r4<adjektiv>misstrogen:misstrogen:misstroget:misstrogna:misstrogna:misstrognare:misstrognast:misstrognaste:misstrogne
+COMPOUND(551724, 619812): miss + trogen
+592255r3<verb>misströsta:misströsta:misströstade:misströstat:misströstar:misströsta:::::::::
+656511r3<substantiv>misströstan:misströstan:misströstans:misströstan:misströstans:!:!:!:!
+787755r4<verb>misstycka:misstycka:misstyckte:misstyckt:misstycker:misstyck:misstyckas:misstycktes:misstyckts:misstycks:::::
+569418r3<adjektiv>misstydbar:misstydbar:misstydbart:misstydbara:misstydbara::::
+983447r3<substantiv>misstämning:misstämning:misstämnings:misstämningen:misstämningens:misstämningar:misstämningars:misstämningarna:misstämningarnas
+656512r5<verb>misstänka:misstänka:misstänkte:misstänkt:misstänker:misstänk:misstänkas:misstänktes:misstänkts:misstänks:misstänkt:misstänkt:misstänkta::
+739418r6<verb>misstänkliggöra:misstänkliggöra:misstänkliggjorde:misstänkliggjort:misstänkliggör:misstänkliggör:misstänkliggöras:misstänkliggjordes:misstänkliggjorts:misstänkliggörs, misstänkliggöres:misstänkliggjord:misstänkliggjort:misstänkliggjorda:misstänkliggörande:
+917067r4<substantiv>misstänkliggörande:misstänkliggörande:misstänkliggörandes:misstänkliggörandet:misstänkliggörandets:misstänkliggöranden:misstänkliggörandens:misstänkliggörandena:misstänkliggörandenas
+563436r4<adjektiv>misstänksam:misstänksam:misstänksamt:misstänksamma:misstänksamma:misstänksammare:misstänksammast:misstänksammaste:misstänksamme
+656513r3<substantiv>misstänksamhet:misstänksamhet:misstänksamhets:misstänksamheten:misstänksamhetens:!:!:!:!
+CUSTOM: y y misstänksamhets
+802299r6<adjektiv>misstänkt:misstänkt:misstänkt:misstänkta:misstänkta::::misstänkte::::misstänktas::::
+739428r3<verb>missunna:missunna:missunnade:missunnat:missunnar:missunna:missunnas:missunnades:missunnats:missunnas:missunnad:missunnat:missunnade::
+563437r3<adjektiv>missunnsam:missunnsam:missunnsamt:missunnsamma:missunnsamma::::
+736425r3<substantiv>missunnsamhet:missunnsamhet:missunnsamhets:missunnsamheten:missunnsamhetens::::
+547348r4<verb>missuppfatta:missuppfatta:missuppfattade:missuppfattat:missuppfattar:missuppfatta:missuppfattas:missuppfattades:missuppfattats:missuppfattas:missuppfattad:missuppfattat:missuppfattade::
+656514r3<substantiv>missuppfattning:missuppfattning:missuppfattnings:missuppfattningen:missuppfattningens:missuppfattningar:missuppfattningars:missuppfattningarna:missuppfattningarnas
+CUSTOM: y y missuppfattnings
+720040r3<adjektiv>missvisande:missvisande:missvisande:missvisande:missvisande:!:!:!:
+656515r3<substantiv>missvisning:missvisning:missvisnings:missvisningen:missvisningens:missvisningar:missvisningars:missvisningarna:missvisningarnas
+CUSTOM: y y missvisnings
+739436r4<substantiv>missväxt:missväxt:missväxts:missväxten:missväxtens::::
+983455r4<substantiv>missväxtår:missväxtår:missväxtårs:missväxtåret:missväxtårets:missväxtår:missväxtårs:missväxtåren:missväxtårens
+COMPOUND(739436, 553140): missväxt + år
+735285r3<substantiv>missämja:missämja:missämjas:missämjan:missämjans::::
+656516r3<substantiv>missöde:missöde:missödes:missödet:missödets:missöden:missödens:missödena:missödenas
+585389r3<verb>mista:mista:miste:mist:mister::::::::::
+620648r3<adverb>miste:miste
+616770r3<substantiv>mistel:mistel:mistels:misteln:mistelns:mistlar:mistlars:mistlarna:mistlarnas
+787764r3<substantiv>mistelbär:mistelbär:mistelbärs:mistelbäret:mistelbärets:mistelbär:mistelbärs:mistelbären:mistelbärens
+787771r3<substantiv>mistelgren:mistelgren:mistelgrens:mistelgrenen:mistelgrenens:mistelgrenar:mistelgrenars:mistelgrenarna:mistelgrenarnas
+574621r3<adjektiv>mistig:mistig:mistigt:mistiga:mistiga::::
+616771r3<substantiv>mistlur:mistlur:mistlurs:mistluren:mistlurens:mistlurar:mistlurars:mistlurarna:mistlurarnas
+616779r3<substantiv>mistral:mistral:mistrals:mistralen:mistralens::::
+550046r3<substantiv>misär:misär:misärs:misären:misärens:misärer:misärers:misärerna:misärernas
+948042r3<substantiv>mitella:mitella:mitellas:mitellan:mitellans:mitellor:mitellors:mitellorna:mitellornas
+861485r3<egennamn>Mitelman:Mitelman:Mitelmans
+730358r4<substantiv>mitokondrie:mitokondrie:mitokondries:mitokondrien:mitokondriens:mitokondrier:mitokondriers:mitokondrierna:mitokondriernas
+DEFINITION 1: En typ av organell i en cell
+730656r4<substantiv>mitos:mitos:mitos:mitosen:mitosens:mitoser:mitosers:mitoserna:mitosernas
+DEFINITION 1: Celldelning
+CUSTOM: n n n
+582072r3<adjektiv>mitotisk:mitotisk:mitotiskt:mitotiska:mitotiska::::
+CUSTOM: y n n
+616783r3<substantiv>mitra:mitra:mitras:mitran:mitrans:mitror:mitrors:mitrorna:mitrornas
+CUSTOM: y n
+801525r3<adjektiv>mitraprydd:mitraprydd:mitraprytt:mitraprydda:mitraprydda::::
+762297r3<egennamn>Mitsubishi:Mitsubishi:Mitsubishis
+CUSTOM: y n Mitsubishi
+559203r4<pronomen>mitt:mitt
+DEFINITION 1: possesivt pronomen, första person, singular, neutrum
+559199r14<substantiv>mitt:mitt:mitts:mitten:mittens:!:!:!:!
+CUSTOM: y n mitten
+620649r3<adverb>mitt:mitt
+616791r3<substantiv>mittback:mittback:mittbacks:mittbacken:mittbackens:mittbackar:mittbackars:mittbackarna:mittbackarnas
+616799r3<substantiv>mittbena:mittbena:mittbenas:mittbenan:mittbenans:mittbenor:mittbenors:mittbenorna:mittbenornas
+793242r3<adjektiv>mittbenad:mittbenad:mittbenat:mittbenade:mittbenade:!:!:!:
+917072r4<substantiv>mittcirkel:mittcirkel:mittcirkels:mittcirkeln:mittcirkelns:mittcirklar:mittcirklars:mittcirklarna:mittcirklarnas
+COMPOUND(559199, 600097): mitt + cirkel
+739440r3<preposition>mittemellan:mittemellan
+688419r3<preposition>mittemot:mittemot
+739441r4<substantiv>mittenparti:mittenparti:mittenpartis:mittenpartiet:mittenpartiets:mittenpartier:mittenpartiers:mittenpartierna:mittenpartiernas
+COMPOUND(559199, 625938): mitt + parti
+616801r4<adjektiv>mitterst, mittersta::::::mitterst:mittersta:
+707791r3<substantiv>mittfåra:mittfåra:mittfåras:mittfåran:mittfårans:mittfåror:mittfårors:mittfårorna:mittfårornas
+616802r4<substantiv>mittfält:mittfält:mittfälts:mittfältet:mittfältets::::
+CUSTOM: y y mittfälts
+707799r4<substantiv>mittfältare:mittfältare:mittfältares:mittfältaren:mittfältarens:mittfältare:mittfältares:mittfältarna:mittfältarnas
+616806r4<substantiv>mittfältsspelare:mittfältsspelare:mittfältsspelares:mittfältsspelaren:mittfältsspelarens:mittfältsspelare:mittfältsspelares:mittfältsspelarna:mittfältsspelarnas
+COMPOUND(616802, 615459): mittfält + spelare
+688420r3<preposition>mittför:mittför
+917082r4<substantiv>mittförsvar:mittförsvar:mittförsvars:mittförsvaret:mittförsvarets:mittförsvar:mittförsvars:mittförsvaren:mittförsvarens
+COMPOUND(559199, 552415): mitt + försvar
+777773r5<substantiv>mittgång:mittgång:mittgångs:mittgången:mittgångens:mittgångar:mittgångars:mittgångarna:mittgångarnas
+892268r3<egennamn>Mitthögskolan:Mitthögskolan:Mitthögskolans
+959618r4<substantiv>mittkonsol:mittkonsol:mittkonsols:mittkonsolen:mittkonsolens:mittkonsoler:mittkonsolers:mittkonsolerna:mittkonsolernas
+COMPOUND(559199, 549642): mitt + konsol
+688421r3<substantiv>mittlinje:mittlinje:mittlinjes:mittlinjen:mittlinjens:mittlinjer:mittlinjers:mittlinjerna:mittlinjernas
+913741r4<substantiv>mittläge:mittläge:mittläges:mittläget:mittlägets:mittlägen:mittlägens:mittlägena:mittlägenas
+COMPOUND(559199, 612680): mitt + läge
+CUSTOM: y n n
+959740r4<substantiv>mittnia:mittnia:mittnias:mittnian:mittnians:mittnior:mittniors:mittniorna:mittniornas
+COMPOUND(559199, 557694): mitt + nia
+582075r3<adjektiv>mittoceanisk:mittoceanisk:mittoceaniskt:mittoceaniska:mittoceaniska::::
+957663r4<substantiv>mittparti:mittparti:mittpartis:mittpartiet:mittpartiets:mittpartier:mittpartiers:mittpartierna:mittpartiernas
+COMPOUND(559199, 625938): mitt + parti
+917090r4<substantiv>mittperiod:mittperiod:mittperiods:mittperioden:mittperiodens:mittperioder:mittperioders:mittperioderna:mittperiodernas
+COMPOUND(559199, 550187): mitt + period
+784953r3<substantiv>mittplan:mittplan:mittplans:mittplanen:mittplanens::::
+854301r3<substantiv>mittplats:mittplats:mittplats:mittplatsen:mittplatsens:mittplatser:mittplatsers:mittplatserna:mittplatsernas
+656517r3<substantiv>mittpunkt:mittpunkt:mittpunkts:mittpunkten:mittpunktens:mittpunkter:mittpunkters:mittpunkterna:mittpunkternas
+688429r3<preposition>mittpå:mittpå
+956917r4<substantiv>mittrefug:mittrefug:mittrefugs:mittrefugen:mittrefugens:mittrefuger:mittrefugers:mittrefugerna:mittrefugernas
+COMPOUND(559199, 550330): mitt + refug
+959672r4<substantiv>mittrunda:mittrunda:mittrundas:mittrundan:mittrundans:mittrundor:mittrundors:mittrundorna:mittrundornas
+COMPOUND(559199, 641076): mitt + runda
+718720r3<substantiv>mitträcke:mitträcke::mitträcket:mitträckets:mitträcken:mitträckens:mitträckena:mitträckenas
+959485r3<substantiv>mittsexa:mittsexa:mittsexas:mittsexan:mittsexans:mittsexor:mittsexors:mittsexorna:mittsexornas
+962452r3<substantiv>mittskepp:mittskepp:mittskepps:mittskeppet:mittskeppets:mittskepp:mittskepps:mittskeppen:mittskeppens
+872117r3<substantiv>mittuppslag:mittuppslag:mittuppslags:mittuppslaget:mittuppslagets:mittuppslag:mittuppslags:mittuppslagen:mittuppslagens
+917100r4<substantiv>mittzon:mittzon:mittzons:mittzonen:mittzonens:mittzoner:mittzoners:mittzonerna:mittzonernas
+COMPOUND(559199, 550796): mitt + zon
+622297r7<adverb>mittåt:mittåt
+625735r5<substantiv>mix:mix:mix:mixen:mixens:mixar:mixars:mixarna:mixarnas
+DEFINITION 1: Blandning
+924581r4<verb>mixa:mixa:mixade:mixat:mixar:mixa:mixas:mixades:mixats:mixas:mixad:mixat:mixade:mixande:
+983461r3<substantiv>mixeddubbel:mixeddubbel:mixeddubbels:mixeddubbeln:mixeddubbelns:mixeddubblar:mixeddubblars:mixeddubblarna:mixeddubblarnas
+625742r10<substantiv>mixer:mixer:mixers:mixern:mixerns:mixrar:mixrars:mixrarna:mixrarnas
+DEFINITION 1: En slags köksmaskin.
+DEFINITION 2: Ett hjälpmedel vid ljudredigering.
+CUSTOM: y n
+946761r4<substantiv>mixerbord:mixerbord:mixerbords:mixerbordet:mixerbordets:mixerbord:mixerbords:mixerborden:mixerbordens
+COMPOUND(625742, 552265): mixer + bord
+917110r4<substantiv>mixerstav:mixerstav:mixerstavs:mixerstaven:mixerstavens:mixerstavar:mixerstavars:mixerstavarna:mixerstavarnas
+COMPOUND(625742, 551932): mixer + stav
+957326r3<substantiv>mixning:mixning:mixnings:mixningen:mixningens:mixningar:mixningars:mixningarna:mixningarnas
+798424r3<adjektiv>mixotrof:mixotrof:mixotroft:mixotrofa:mixotrofa::::
+935937r3<substantiv>mixotrof:mixotrof:mixotrofs:mixotrofen:mixotrofens:mixotrofer:mixotrofers:mixotroferna:mixotrofernas
+876902r3<verb>mixtra:mixtra:mixtrade:mixtrat:mixtrar:mixtra:mixtras:mixtrades:mixtrats:mixtras::::mixtrande:
+956748r3<substantiv>mixtur:mixtur:mixturs:mixturen:mixturens:mixturer:mixturers:mixturerna:mixturernas
+624542r3<interjektion>mjau:mjau
+560761r4<substantiv>mjugg:mjugg:!:!:!:!:!:!:!
+DEFINITION 1: le i mjugg, le i smyg, utan att någon ser
+CUSTOM: y n
+563113r12<adjektiv>mjuk:mjuk:mjukt:mjuka:mjuka:mjukare:mjukast:mjukaste:mjuke::::::::
+CUSTOM: y n
+616812r3<verb>mjuka:mjuka:mjukade:mjukat:mjukar:mjuka:mjukas:mjukades:mjukats:mjukas:::::
+CUSTOM: y n
+983469r4<substantiv>mjukbotten:mjukbotten:mjukbottens:mjukbottnen, mjukbotten:mjukbottnens, mjukbottens:mjukbottnar:mjukbottnars:mjukbottnarna:mjukbottnarnas
+COMPOUND(563113, 643247): mjuk + botten
+948804r4<substantiv>mjukdel:mjukdel:mjukdels:mjukdelen:mjukdelens:mjukdelar:mjukdelars:mjukdelarna:mjukdelarnas
+COMPOUND(563113, 551034): mjuk + del
+799919r3<adjektiv>mjukgjord:mjukgjord:mjukgjort:mjukgjorda:mjukgjorda::::
+941441r3<substantiv>mjukglass:mjukglass:mjukglass:mjukglassen:mjukglassens::::
+CUSTOM: y y mjukglass
+875622r4<substantiv>mjukglödgning:mjukglödgning:mjukglödgnings:mjukglödgningen:mjukglödgningens:mjukglödgningar:mjukglödgningars:mjukglödgningarna:mjukglödgningarnas
+COMPOUND(563113, 875614): mjuk + glödgning
+801120r3<adjektiv>mjukgörande:mjukgörande:mjukgörande:mjukgörande:mjukgörande:!:!:!:
+917119r3<substantiv>mjukgörare:mjukgörare:mjukgörares:mjukgöraren:mjukgörarens:mjukgörare:mjukgörares:mjukgörarna:mjukgörarnas
+739449r3<substantiv>mjukhet:mjukhet:mjukhets:mjukheten:mjukhetens::::
+616818r3<substantiv>mjukis:mjukis:mjukis:mjukisen:mjukisens:mjukisar

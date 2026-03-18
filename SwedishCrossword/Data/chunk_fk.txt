@@ -1,0 +1,628 @@
+081r5<substantiv>revben:revben:revbens:revbenet:revbenets:revben:revbens:revbenen:revbenens
+CUSTOM: y y revbens
+741087r4<substantiv>revbensfraktur:revbensfraktur:revbensfrakturs:revbensfrakturen:revbensfrakturens:revbensfrakturer:revbensfrakturers:revbensfrakturerna:revbensfrakturernas
+COMPOUND(741081, 548955): revben + fraktur
+741088r4<substantiv>revbensspjäll:revbensspjäll:revbensspjälls:revbensspjället:revbensspjällets:revbensspjäll:revbensspjälls:revbensspjällen:revbensspjällens
+COMPOUND(741081, 708985): revben + spjäll
+880876r3<substantiv>revbildning:revbildning:revbildnings:revbildningen:revbildningens:revbildningar:revbildningars:revbildningarna:revbildningarnas
+926857r5<substantiv>revel:revel:revels:reveln:revelns:revlar:revlars:revlarna:revlarnas
+DEFINITION 1: Sandbank
+CUSTOM: n n y
+880884r3<substantiv>revelation:revelation:revelations:revelationen:revelationens:revelationer:revelationers:revelationerna:revelationernas
+696317r4<substantiv>revelj:revelj:reveljs:reveljen:reveljens:reveljer:reveljers:reveljerna:reveljernas
+CUSTOM: y y revelj
+880892r3<substantiv>reveljsignal::::::::
+COMPOUND(696317, 550490): revelj + signal
+963106r3<substantiv>reverb:reverb:::::::
+848187r3<substantiv>reverens:reverens:reverens:reverensen:reverensens:reverenser:reverensers:reverenserna:reverensernas
+550389r3<substantiv>revers:revers:revers:reversen:reversens:reverser:reversers:reverserna:reversernas
+636970r4<substantiv>reversal:reversal:reversals:reversalen:reversalens:reversaler:reversalers:reversalerna:reversalernas
+639645r3<substantiv>reversal:reversal:reversals:reversalet:reversalets:reversal:reversals:reversalen:reversalens
+587851r4<verb>reversera:reversera:reverserade:reverserat:reverserar:reversera:reverseras:reverserades:reverserats:reverseras:reverserad:reverserat:reverserade:reverserande:
+570005r3<adjektiv>reverserbar:reverserbar:reverserbart:reverserbara:reverserbara::::
+778867r3<substantiv>reversering:reversering:reverserings:reverseringen:reverseringens:reverseringar:reverseringars:reverseringarna:reverseringarnas
+570879r3<adjektiv>reversibel:reversibel:reversibelt:reversibla:reversibla::::
+778875r3<substantiv>reversibilitet:reversibilitet:reversibilitets:reversibiliteten:reversibilitetens::::
+607871r3<substantiv>reverslån:reverslån:reverslåns:reverslånet:reverslånets:reverslån:reverslåns:reverslånen:reverslånens
+590897r4<verb>revetera:revetera:reveterade:reveterat:reveterar:revetera:reveteras:reveterades:reveterats:reveteras:reveterad:reveterat:reveterade:reveterande:
+880898r4<substantiv>revetering:revetering:reveterings:reveteringen:reveteringens:reveteringar:reveteringars:reveteringarna:reveteringarnas
+CUSTOM: y y reveterings
+880906r3<substantiv>reveteringsmatta::::::::
+COMPOUND(880898, 555187): revetering + matta
+547583r5<verb>revidera:revidera:reviderade:reviderat:reviderar:revidera:revideras:reviderades:reviderats:revideras:reviderad:reviderat:reviderade:reviderande:
+696325r4<substantiv>revidering:revidering:reviderings:revideringen:revideringens:revideringar:revideringars:revideringarna:revideringarnas
+CUSTOM: y y reviderings
+575610r3<adjektiv>revig:revig:revigt:reviga:reviga::::
+CUSTOM: n n y
+621801r4<substantiv>revir:revir:revirs:reviret:revirets:revir:revirs:reviren:revirens
+CUSTOM: y y revir
+778880r3<substantiv>revirstrid::::::::
+COMPOUND(621801, 619729): revir + strid
+728579r3<substantiv>revirtänkande:revirtänkande:revirtänkandes:revirtänkandet:revirtänkandets:!:!:!:!
+621807r6<substantiv>revision:revision:revisions:revisionen:revisionens:revisioner:revisioners:revisionerna:revisionernas
+CUSTOM: y y revisions
+627003r3<substantiv>revisionism:revisionism:revisionisms:revisionismen:revisionismens:revisionismer:revisionismers:revisionismerna:revisionismernas
+627011r3<substantiv>revisionist:revisionist:revisionists:revisionisten:revisionistens:revisionister:revisionisters:revisionisterna:revisionisternas
+CUSTOM: y y revisionist
+583445r4<adjektiv>revisionistisk:revisionistisk:revisionistiskt:revisionistiska:revisionistiska::::revisionistiske
+696326r4<substantiv>revisionsberättelse:revisionsberättelse:revisionsberättelses:revisionsberättelsen:revisionsberättelsens:revisionsberättelser:revisionsberättelsers:revisionsberättelserna:revisionsberättelsernas
+COMPOUND(621807, 611837): revision + berättelse
+CUSTOM: y y revisionsberättelse
+851971r3<substantiv>revisionssed:revisionssed:revisionsseds:revisionsseden:revisionssedens:revisionsseder:revisionsseders:revisionssederna:revisionssedernas
+611186r5<substantiv>revisor:revisor:revisors:revisorn:revisorns:revisorer:revisorers:revisorerna:revisorernas
+CUSTOM: y y revisors
+851980r3<substantiv>revisorskap:revisorskap:revisorskaps:revisorskapet:revisorskapets::::
+778881r3<substantiv>revisorssuppleant::::::::
+COMPOUND(611186, 670636): revisor + suppleant
+895736r4<verb>revitalisera:revitalisera:revitaliserade:revitaliserat:revitaliserar:revitalisera:revitaliseras:revitaliserades:revitaliserats:revitaliseras:revitaliserad:revitaliserat:revitaliserade:revitaliserande:
+895746r3<substantiv>revitalisering:revitalisering::revitaliseringen:::::
+621813r4<substantiv>revolt:revolt:revolts:revolten:revoltens:revolter:revolters:revolterna:revolternas
+CUSTOM: y y revolt
+547584r4<verb>revoltera:revoltera:revolterade:revolterat:revolterar:revoltera:revolteras:revolterades:revolterats:revolteras::::revolterande:
+778882r3<substantiv>revoltledare::::::::
+COMPOUND(621813, 609818): revolt + ledare
+736825r3<substantiv>revoltör:revoltör:revoltörs:revoltören:revoltörens:revoltörer:revoltörers:revoltörerna:revoltörernas
+636900r6<substantiv>revolution:revolution:revolutions:revolutionen:revolutionens:revolutioner:revolutioners:revolutionerna:revolutionernas
+CUSTOM: y y revolutions
+547585r4<verb>revolutionera:revolutionera:revolutionerade:revolutionerat:revolutionerar:revolutionera:revolutioneras:revolutionerades:revolutionerats:revolutioneras:revolutionerad:revolutionerat:revolutionerade::
+696327r3<adjektiv>revolutionerande:revolutionerande:revolutionerande:revolutionerande:revolutionerande:!:!:!:
+880908r4<substantiv>revolutionsråd:revolutionsråd:revolutionsråds:revolutionsrådet:revolutionsrådets:revolutionsråd:revolutionsråds:revolutionsråden:revolutionsrådens
+COMPOUND(636900, 552853): revolution + råd
+772154r4<substantiv>revolutionsår:revolutionsår:revolutionsårs:revolutionsåret:revolutionsårets:revolutionsår:revolutionsårs:revolutionsåren:revolutionsårens
+COMPOUND(636900, 553140): revolution + år
+696328r3<adjektiv>revolutionär:revolutionär:revolutionärt:revolutionära:revolutionära::::revolutionäre
+741094r3<substantiv>revolutionär:revolutionär:revolutionärs:revolutionären:revolutionärens:revolutionärer:revolutionärers:revolutionärerna:revolutionärernas
+621819r4<substantiv>revolver:revolver:revolvers:revolvern:revolverns:revolvrar:revolvrars:revolvrarna:revolvrarnas
+CUSTOM: y y revolver
+590901r3<verb>revolvera:revolvera:revolverade:revolverat:revolverar:revolvera:::::::::
+778883r4<substantiv>revolverman:revolverman:revolvermans:revolvermannen:revolvermannens:revolvermän:revolvermäns:revolvermännen:revolvermännens
+COMPOUND(621819, 557796): revolver + man
+600318r3<substantiv>revranunkel:revranunkel:revranunkels:revranunkeln:revranunkelns:revranunklar:revranunklars:revranunklarna:revranunklarnas
+621825r5<substantiv>revy:revy:revys:revyn:revyns:revyer:revyers:revyerna:revyernas
+CUSTOM: y y revy
+675220r4<substantiv>revypappa:revypappa:revypappas:revypappan:revypappans:revypappor:revypappors:revypapporna:revypappornas
+COMPOUND(621825, 594864): revy + pappa
+848201r5<substantiv>revär:revär:revärs:revären:revärens:revärer:revärers:revärerna:revärernas
+CUSTOM: y n
+801610r3<adjektiv>revärprydd:revärprydd:revärprytt:revärprydda:revärprydda::::
+907075r3<egennamn>Reykjavik:Reykjavik:Reykjaviks
+553943r3<egennamn>Rhen:Rhen:Rhens
+CUSTOM: y n Rhen
+723542r3<substantiv>rhenium:rhenium:rheniums:rheniumet:rheniumets:!:!:!:!
+848209r3<adjektiv>rhensk:rhensk:rhenskt:rhenska:rhenska::::
+848212r3<substantiv>rhenvin:rhenvin:rhenvins:rhenvinet:rhenvinets:rhenviner:rhenviners:rhenvinerna:rhenvinernas
+880914r3<substantiv>rhesusapa:rhesusapa:rhesusapas:rhesusapan:rhesusapans:rhesusapor:rhesusapors:rhesusaporna:rhesusapornas
+880930r3<substantiv>rhesusfaktor:rhesusfaktor:rhesusfaktors:rhesusfaktorn:rhesusfaktorns:rhesusfaktorer:rhesusfaktorers:rhesusfaktorerna:rhesusfaktorernas
+899383r3<substantiv>Rh-faktor:Rh-faktor:Rh-faktors:Rh-faktorn:Rh-faktorns:Rh-faktorer:Rh-faktorers:Rh-faktorerna:Rh-faktorernas
+848220r3<substantiv>rhizom:rhizom:rhizoms:rhizomen:rhizomens:rhizomer:rhizomers:rhizomerna:rhizomernas
+899391r3<adjektiv>Rh-negativ:Rh-negativ:Rh-negativt:Rh-negativa:Rh-negativa::::::::::::
+848228r3<substantiv>rhodesier:rhodesier:rhodesiers:rhodesiern:rhodesierns:rhodesier:rhodesiers:rhodesierna:rhodesiernas
+583448r4<adjektiv>rhodesisk:rhodesisk:rhodesiskt:rhodesiska:rhodesiska:!:!:!:rhodesiske
+880922r3<substantiv>rhodesiska:rhodesiska:rhodesiskas:rhodesiskan:rhodesiskans:rhodesiskor:rhodesiskors:rhodesiskorna:rhodesiskornas
+741102r4<substantiv>rhododendron:rhododendron:rhododendrons:rhododendronen:rhododendronens:rhododendrer:rhododendrers:rhododendrerna:rhododendrernas
+CUSTOM: y y rhododendron
+899394r3<adjektiv>Rh-positiv:Rh-positiv:Rh-positivt:Rh-positiva:Rh-positiva::::::::::::
+939787r3<verb>ria:ria:riade:riat:riar:ria:rias:riades:riats:rias:riad:riat:riade:riande:
+CUSTOM: n n y
+939883r3<substantiv>ria:ria:rias:rian:rians:rior:riors:riorna:riornas
+CUSTOM: n n y
+594985r5<substantiv>ribba:ribba:ribbas:ribban:ribbans:ribbor:ribbors:ribborna:ribbornas
+CUSTOM: y y ribb
+766151r3<adjektiv>ribbad:ribbad:ribbat:ribbade:ribbade:!:!:!:
+952677r4<substantiv>ribbdarr:ribbdarr:ribbdarrs:ribbdarret:ribbdarrets:!:!:!:!
+COMPOUND(594985, 592943): ribba + darr
+713081r4<substantiv>ribbskott:ribbskott:ribbskotts:ribbskottet:ribbskottets:ribbskott:ribbskotts:ribbskotten:ribbskottens
+COMPOUND(594985, 608011): ribba + skott
+794506r3<adjektiv>ribbstickad:ribbstickad:ribbstickat:ribbstickade:ribbstickade:!:!:!:
+778895r3<substantiv>riboflavin:riboflavin:riboflavins:riboflavinet:riboflavinets::::
+730368r4<substantiv>ribosom:ribosom:ribosoms:ribosomen:ribosomens:ribosomer:ribosomers:ribosomerna:ribosomernas
+DEFINITION 1: Organell i en cell där peptider tillverkas.
+554757r3<egennamn>Richard:Richard:Richards
+772943r3<egennamn>Richardsson:Richardsson:Richardssons
+741106r4<substantiv>richterskala:richterskala:richterskalas:richterskalan:richterskalans:richterskalor:richterskalors:richterskalorna:richterskalornas
+848239r3<substantiv>ricinbuske:ricinbuske:ricinbuskes:ricinbusken:ricinbuskens:ricinbuskar:ricinbuskars:ricinbuskarna:ricinbuskarnas
+778891r4<substantiv>ricinolja:ricinolja:ricinoljas:ricinoljan:ricinoljans:ricinoljor:ricinoljors:ricinoljorna:ricinoljornas
+554758r3<egennamn>Rickard:Rickard:Rickards
+575613r3<adjektiv>rickig:rickig:rickigt:rickiga:rickiga::::
+848247r4<substantiv>rickshaw:rickshaw:rickshaws:rickshawn:rickshawns:rickshawer:rickshawers:rickshawerna:rickshawernas
+CUSTOM: y y rickshaw
+880942r3<substantiv>rickshawdragare::::::::
+COMPOUND(848247, 615189): rickshaw + dragare
+585403r29<verb>rida:rida:red:ridit:rider:rid:ridas:reds:ridits:rids, rides:riden:ridet:ridna:ridande:
+CUSTOM: y n
+918099r4<substantiv>ridanläggning:ridanläggning:ridanläggnings:ridanläggningen:ridanläggningens:ridanläggningar:ridanläggningars:ridanläggningarna:ridanläggningarnas
+COMPOUND(585403, 606104): rida + anläggning
+769668r4<substantiv>ridbana:ridbana:ridbanas:ridbanan:ridbanans:ridbanor:ridbanors:ridbanorna:ridbanornas
+COMPOUND(585403, 556870): rida + bana
+769676r4<substantiv>ridbyxor:::::ridbyxor:ridbyxors:ridbyxorna:ridbyxornas
+COMPOUND(585403, 560888): rida + byxa, byxor
+CUSTOM: y y ridbyx
+609981r3<substantiv>riddare:riddare:riddares:riddaren:riddarens:riddare:riddares:riddarna:riddarnas
+CUSTOM: y y riddar
+552841r9<substantiv>riddarhus:riddarhus:riddarhus:riddarhuset:riddarhusets:riddarhus:riddarhus:riddarhusen:riddarhusens
+CUSTOM: y y riddarhus
+880943r3<substantiv>riddarhusordning::::::::
+COMPOUND(552841, 597379): riddarhus + ordning
+567526r4<adjektiv>ridderlig:ridderlig:ridderligt:ridderliga:ridderliga:ridderligare:ridderligast:ridderligaste:ridderlige
+778899r3<substantiv>ridderlighet:ridderlighet:ridderlighets:ridderligheten:ridderlighetens::::
+696333r3<substantiv>ridderskap:ridderskap:ridderskaps:ridderskapet:ridderskapets::::
+CUSTOM: y y ridderskaps
+848259r3<substantiv>riddersman:riddersman:riddersmans:riddersmannen:riddersmannens:riddersmän:riddersmäns:riddersmännen:riddersmännens
+778903r4<substantiv>riddjur:riddjur:riddjurs:riddjuret:riddjurets:riddjur:riddjurs:riddjuren:riddjurens
+COMPOUND(585403, 552322): rida + djur
+778909r4<substantiv>riddräkt:riddräkt:riddräkts:riddräkten:riddräktens:riddräkter:riddräkters:riddräkterna:riddräkternas
+COMPOUND(585403, 548725): rida + dräkt
+778917r4<substantiv>ridhjälm:ridhjälm:ridhjälms:ridhjälmen:ridhjälmens:ridhjälmar:ridhjälmars:ridhjälmarna:ridhjälmarnas
+COMPOUND(585403, 551383): rida + hjälm
+607877r3<substantiv>ridhus:ridhus:ridhus:ridhuset:ridhusets:ridhus:ridhus:ridhusen:ridhusens
+CUSTOM: y y ridhus
+761518r3<substantiv>ridhäst:ridhäst:ridhästs:ridhästen:ridhästens:ridhästar:ridhästars:ridhästarna:ridhästarnas
+CUSTOM: y y ridhäst
+769680r4<substantiv>ridinstruktör:ridinstruktör:ridinstruktörs:ridinstruktören:ridinstruktörens:ridinstruktörer:ridinstruktörers:ridinstruktörerna:ridinstruktörernas
+COMPOUND(585403, 549350): rida + instruktör
+696334r4<substantiv>ridklubb:ridklubb:ridklubbs:ridklubben:ridklubbens:ridklubbar:ridklubbars:ridklubbarna:ridklubbarnas
+COMPOUND(585403, 551547): rida + klubb
+CUSTOM: y y ridklubbs
+778925r4<substantiv>ridkläder:!:!:!:!:ridkläder:ridkläders:ridkläderna:ridklädernas
+COMPOUND(585403, 604465): rida + kläder
+778929r4<substantiv>ridkonst:ridkonst:ridkonsts:ridkonsten:ridkonstens:ridkonster:ridkonsters:ridkonsterna:ridkonsternas
+COMPOUND(585403, 549654): rida + konst
+769689r3<adjektiv>ridkunnig:ridkunnig:ridkunnigt:ridkunniga:ridkunniga:!:!:!:ridkunnige
+769695r3<substantiv>ridkunnighet:ridkunnighet:ridkunnighets:ridkunnigheten:ridkunnighetens::::
+778937r4<substantiv>ridkäpp:ridkäpp:ridkäpps:ridkäppen:ridkäppens:ridkäppar:ridkäppars:ridkäpparna:ridkäpparnas
+COMPOUND(585403, 551670): rida + käpp
+CUSTOM: y n n
+761526r4<substantiv>ridlektion:ridlektion:ridlektions:ridlektionen:ridlektionens:ridlektioner:ridlektioners:ridlektionerna:ridlektionernas
+COMPOUND(585403, 602654): rida + lektion
+CUSTOM: y y ridlektions
+761534r4<substantiv>ridläger:ridläger:ridlägers:ridlägret:ridlägrets:ridläger:ridlägers:ridlägren:ridlägrens
+COMPOUND(585403, 621032): rida + läger
+CUSTOM: y y ridläger
+761540r4<substantiv>ridlärare:ridlärare:ridlärares:ridläraren:ridlärarens:ridlärare:ridlärares:ridlärarna:ridlärarnas
+COMPOUND(585403, 560239): rida + lärare
+778945r4<substantiv>ridmössa:ridmössa:ridmössas:ridmössan:ridmössans:ridmössor:ridmössors:ridmössorna:ridmössornas
+COMPOUND(585403, 594778): rida + mössa
+741109r6<substantiv>ridning:ridning:ridnings:ridningen:ridningens:ridningar:ridningars:ridningarna:ridningarnas
+CUSTOM: y y ridnings
+907350r3<substantiv>ridolycka:ridolycka:ridolyckas:ridolyckan:ridolyckans:ridolyckor:ridolyckors:ridolyckorna:ridolyckornas
+769700r3<substantiv>ridpiska:ridpiska:ridpiskas:ridpiskan:ridpiskans:ridpiskor:ridpiskors:ridpiskorna:ridpiskornas
+778953r4<substantiv>ridsadel:ridsadel:ridsadels:ridsadeln:ridsadelns:ridsadlar:ridsadlars:ridsadlarna:ridsadlarnas
+COMPOUND(585403, 600327): rida + sadel
+594986r3<substantiv>ridskola:ridskola:ridskolas:ridskolan:ridskolans:ridskolor:ridskolors:ridskolorna:ridskolornas
+CUSTOM: y y ridskole
+760386r3<substantiv>ridsport:ridsport:ridsports:ridsporten:ridsportens::::
+CUSTOM: y y ridsport
+760390r4<substantiv>ridspö:ridspö:ridspös:ridspöet, ridspöt:ridspöets, ridspöts:ridspön:ridspöns:ridspöna:ridspönas
+COMPOUND(585403, 627835): rida + spö
+778961r4<substantiv>ridstig:ridstig:ridstigs:ridstigen:ridstigens:ridstigar:ridstigars:ridstigarna:ridstigarnas
+COMPOUND(585403, 551937): rida + stig
+769709r3<substantiv>ridstövel:ridstövel:ridstövels:ridstöveln:ridstövelns:ridstövlar:ridstövlars:ridstövlarna:ridstövlarnas
+769718r4<substantiv>ridsår:ridsår:ridsårs:ridsåret:ridsårets:ridsår:ridsårs:ridsåren:ridsårens
+COMPOUND(585403, 553023): rida + sår
+760400r4<substantiv>ridtur:ridtur:ridturs:ridturen:ridturens:ridturer:ridturers:ridturerna:ridturernas
+COMPOUND(585403, 550715): rida + tur
+769724r4<substantiv>ridtävling:ridtävling:ridtävlings:ridtävlingen:ridtävlingens:ridtävlingar:ridtävlingars:ridtävlingarna:ridtävlingarnas
+COMPOUND(585403, 597793): rida + tävling
+778969r4<substantiv>riduppvisning:riduppvisning:riduppvisnings:riduppvisningen:riduppvisningens:riduppvisningar:riduppvisningars:riduppvisningarna:riduppvisningarnas
+COMPOUND(585403, 645031): rida + uppvisning
+778978r4<substantiv>ridväg:ridväg:ridvägs:ridvägen:ridvägens:ridvägar:ridvägars:ridvägarna:ridvägarnas
+COMPOUND(585403, 552110): rida + väg
+621827r5<substantiv>ridå:ridå:ridås:ridån:ridåns:ridåer:ridåers:ridåerna:ridåernas
+CUSTOM: y y ridå
+766154r4<substantiv>ridåfall:ridåfall:ridåfalls:ridåfallet:ridåfallets:ridåfall:ridåfalls:ridåfallen:ridåfallens
+COMPOUND(621827, 552371): ridå + fall
+848272r20<substantiv>riff:riff:riffs:riffet:riffets:riff:riffs:riffen:riffens
+CUSTOM: y n
+848278r3<substantiv>rififikupp:rififikupp:rififikupps:rififikuppen:rififikuppens:rififikupper:rififikuppers:rififikupperna:rififikuppernas
+721786r3<egennamn>Riga:Riga:Rigas
+CUSTOM: y n Riga
+952683r3<egennamn>Rigabukten:Rigabukten:Rigabuktens
+904865r3<substantiv>rigel:rigel:rigels:rigeln:rigelns:riglar:riglars:riglarna:riglarnas
+CUSTOM: n n y
+807303r5<substantiv>rigg:rigg:riggs:riggen:riggens:riggar:riggars:riggarna:riggarnas
+547586r4<verb>rigga:rigga:riggade:riggat:riggar:rigga:riggas:riggades:riggats:riggas:riggad:riggat:riggade::
+CUSTOM: y n
+880944r3<substantiv>riggning:riggning:riggnings:riggningen:riggningens:riggningar:riggningars:riggningarna:riggningarnas
+649239r4<adjektiv>rigid:rigid::rigida:rigida:rigidare:rigidast:rigidaste:rigide
+880952r3<substantiv>rigiditet:rigiditet:rigiditets:rigiditeten:rigiditetens::::
+906049r3<verb>rigla:rigla:riglade:riglat:riglar:rigla:riglas:riglades:riglats:riglas:riglad:riglat:riglade:riglande:!
+CUSTOM: y n
+848290r3<substantiv>rigorism:rigorism:rigorisms:rigorismen:rigorismens::::
+880956r3<substantiv>rigorist:rigorist:rigorists:rigoristen:rigoristens:rigorister:rigoristers:rigoristerna:rigoristernas
+583450r3<adjektiv>rigoristisk:rigoristisk:rigoristiskt:rigoristiska:rigoristiska::::
+880964r3<substantiv>rigorositet:rigorositet:rigorositets:rigorositeten:rigorositetens::::
+738041r3<adjektiv>rigorös:rigorös:rigoröst:rigorösa:rigorösa:rigorösare:rigorösast:rigorösaste:rigoröse
+563125r41<adjektiv>rik:rik:rikt:rika:rika:rikare:rikast:rikaste:rike::::rikas::::
+CUSTOM: y n
+554760r3<egennamn>Rikard:Rikard:Rikards
+985184r3<adjektiv>rikblommande:rikblommande:::::::::::::::
+575616r3<adjektiv>rikblommig:rikblommig:rikblommigt:rikblommiga:rikblommiga::::
+619401r23<substantiv>rike:rike:rikes:riket:rikets:riken:rikens:rikena:rikenas
+BASEWORDS: riks
+CUSTOM: y y riks
+551798r5<substantiv>rikedom:rikedom:rikedoms:rikedomen:rikedomens:rikedomar:rikedomars:rikedomarna:rikedomarnas
+759595r9<substantiv>rikeman:rikeman:rikemans:rikemannen:rikemannens:rikemän:rikemäns:rikemännen:rikemännens
+COMPOUND(563125, 557796): rik + man
+CUSTOM: y y rikemans
+775363r3<substantiv>rikemansbarn::::::::
+COMPOUND(759595, 555956): rikeman + barn
+778986r4<substantiv>rikemanshus:rikemanshus:rikemanshus:rikemanshuset:rikemanshusets:rikemanshus:rikemanshus:rikemanshusen:rikemanshusens
+COMPOUND(759595, 552480): rikeman + hus
+880968r4<substantiv>rikemansson:rikemansson:rikemanssons:rikemanssonen:rikemanssonens:rikemanssöner:rikemanssöners:rikemanssönerna:rikemanssönernas
+COMPOUND(759595, 559285): rikeman + son
+575619r4<adjektiv>rikhaltig:rikhaltig:rikhaltigt:rikhaltiga:rikhaltiga:rikhaltigare:rikhaltigast:rikhaltigaste:!
+775364r3<substantiv>rikhaltighet:rikhaltighet:rikhaltighets:rikhaltigheten:rikhaltighetens::::
+575620r3<adjektiv>rikkärraktig:rikkärraktig:rikkärraktigt:rikkärraktiga:rikkärraktiga::::
+567527r4<adjektiv>riklig:riklig:rikligt:rikliga:rikliga:rikligare:rikligast:rikligaste:!
+619402r3<adverb>rikligen:rikligen
+775368r3<substantiv>riklighet:riklighet:riklighets:rikligheten:riklighetens::::
+550390r3<substantiv>rikoschett:rikoschett:rikoschetts:rikoschetten:rikoschettens:rikoschetter:rikoschetters:rikoschetterna:rikoschetternas
+590905r4<verb>rikoschettera:rikoschettera:rikoschetterade:rikoschetterat:rikoschetterar:rikoschettera::::::::rikoschetterande:
+895564r3<substantiv>riks:riks:riks:rikset:riksets:riks:riks:riksen:riksens
+CUSTOM: n n y
+619403r3<substantiv>riksangelägenhet:riksangelägenhet:riksangelägenhets:riksangelägenheten:riksangelägenhetens:riksangelägenheter:riksangelägenheters:riksangelägenheterna:riksangelägenheternas
+CUSTOM: y y riksangelägenhets
+619411r3<substantiv>riksanstalt:riksanstalt:riksanstalts:riksanstalten:riksanstaltens:riksanstalter:riksanstalters:riksanstalterna:riksanstalternas
+619419r3<substantiv>riksantikvarie:riksantikvarie:riksantikvaries:riksantikvarien:riksantikvariens:riksantikvarier:riksantikvariers:riksantikvarierna:riksantikvariernas
+696342r3<substantiv>riksantikvarieämbete:riksantikvarieämbete:riksantikvarieämbetes:riksantikvarieämbetet:riksantikvarieämbetets::::
+619427r3<substantiv>riksarkiv:riksarkiv:riksarkivs:riksarkivet:riksarkivets:riksarkiv:riksarkivs:riksarkiven:riksarkivens
+619433r3<substantiv>riksarkivarie:riksarkivarie:riksarkivaries:riksarkivarien:riksarkivariens:riksarkivarier:riksarkivariers:riksarkivarierna:riksarkivariernas
+619441r4<substantiv>riksbank:riksbank:riksbanks:riksbanken:riksbankens:riksbanker:riksbankers:riksbankerna:riksbankernas
+CUSTOM: y y riksbanks
+619449r4<substantiv>riksbankschef:riksbankschef:riksbankschefs:riksbankschefen:riksbankschefens:riksbankschefer:riksbankschefers:riksbankscheferna:riksbankschefernas
+COMPOUND(619441, 548529): riksbank + chef
+619457r3<adjektiv>riksbekant:riksbekant:riksbekant:riksbekanta:riksbekanta::::riksbekante
+741113r3<substantiv>riksbibliotekarie:riksbibliotekarie:riksbibliotekaries:riksbibliotekarien:riksbibliotekariens:riksbibliotekarier:riksbibliotekariers:riksbibliotekarierna:riksbibliotekariernas
+559353r9<substantiv>riksdag:riksdag:riksdags:riksdagen:riksdagens:riksdagar:riksdagars:riksdagarna:riksdagarnas
+CUSTOM: y y riksdags
+696344r4<substantiv>riksdagsdebatt:riksdagsdebatt:riksdagsdebatts:riksdagsdebatten:riksdagsdebattens:riksdagsdebatter:riksdagsdebatters:riksdagsdebatterna:riksdagsdebatternas
+COMPOUND(559353, 548584): riksdag + debatt
+721816r4<substantiv>riksdagsledamot:riksdagsledamot:riksdagsledamots:riksdagsledamoten:riksdagsledamotens:riksdagsledamöter:riksdagsledamöters:riksdagsledamöterna:riksdagsledamöternas
+COMPOUND(559353, 556258): riksdag + ledamot
+621829r4<substantiv>riksdagsman:riksdagsman:riksdagsmans:riksdagsmannen:riksdagsmannens:riksdagsmän:riksdagsmäns:riksdagsmännen:riksdagsmännens
+CUSTOM: y y riksdagsmanna
+775372r3<substantiv>riksdagsmannaarvode::::::::
+COMPOUND(621829, 612301): riksdagsman + arvode
+880976r3<substantiv>riksdagsmannaskap:riksdagsmannaskap:riksdagsmannaskaps:riksdagsmannaskapet:riksdagsmannaskapets::::
+621830r4<substantiv>riksdagsparti:riksdagsparti:riksdagspartis:riksdagspartiet:riksdagspartiets:riksdagspartier:riksdagspartiers:riksdagspartierna:riksdagspartiernas
+COMPOUND(559353, 625938): riksdag + parti
+711343r3<substantiv>riksdagstryck:riksdagstryck:riksdagstrycks:riksdagstrycket:riksdagstryckets:riksdagstryck:riksdagstrycks:riksdagstrycken:riksdagstryckens
+702030r4<substantiv>riksdagsval:riksdagsval:riksdagsvals:riksdagsvalet:riksdagsvalets:riksdagsval:riksdagsvals:riksdagsvalen:riksdagsvalens
+COMPOUND(559353, 555548): riksdag + val
+760408r4<substantiv>riksdagsår:riksdagsår:riksdagsårs:riksdagsåret:riksdagsårets:riksdagsår:riksdagsårs:riksdagsåren:riksdagsårens
+COMPOUND(559353, 553140): riksdag + år
+625179r4<substantiv>riksdaler:riksdaler:riksdalers:riksdalern:riksdalerns:riksdaler:riksdalers:riksdalerna:riksdalernas
+COMPOUND(619401, 625175): rike + daler
+696345r4<substantiv>riksförbund:riksförbund:riksförbunds:riksförbundet:riksförbundets:riksförbund:riksförbunds:riksförbunden:riksförbundens
+COMPOUND(619401, 552400): rike + förbund
+722856r4<substantiv>riksföreståndare:riksföreståndare:riksföreståndares:riksföreståndaren:riksföreståndarens:riksföreståndare:riksföreståndares:riksföreståndarna:riksföreståndarnas
+COMPOUND(619401, 615243): rike + föreståndare
+553300r3<egennamn>Riksförsäkringsverket:Riksförsäkringsverket:Riksförsäkringsverkets
+575623r3<adjektiv>riksgiltig:riksgiltig:riksgiltigt:riksgiltiga:riksgiltiga::::
+696351r4<substantiv>riksgräns:riksgräns:riksgräns:riksgränsen:riksgränsens:riksgränser:riksgränsers:riksgränserna:riksgränsernas
+COMPOUND(619401, 549166): rike + gräns
+696358r4<substantiv>riksgäld:riksgäld:riksgälds:riksgälden:riksgäldens::::
+CUSTOM: y y riksgälds
+741121r3<substantiv>riksgäldskontor::::::::
+COMPOUND(696358, 552569): riksgäld + kontor
+769732r3<substantiv>riksha:riksha:rikshas:rikshan:rikshans:rikshor:rikshors:rikshorna:rikshornas
+760415r4<substantiv>riksidrott:riksidrott:riksidrotts:riksidrotten:riksidrottens::::
+CUSTOM: y y riksidrotts
+760420r3<substantiv>riksidrottsförbund::::::::
+COMPOUND(760415, 552400): riksidrott + förbund
+760421r4<substantiv>riksintresse:riksintresse:riksintresses:riksintresset:riksintressets:riksintressen:riksintressens:riksintressena:riksintressenas
+COMPOUND(619401, 612596): rike + intresse
+CUSTOM: y n riksintresse
+959580r4<substantiv>rikskrim:rikskrim:rikskrims::::::
+959584r4<substantiv>rikskrimchef:rikskrimchef:rikskrimchefs:rikskrimchefen:rikskrimchefens:rikskrimchefer:rikskrimchefers:rikskrimcheferna:rikskrimchefernas
+COMPOUND(959580, 548529): rikskrim + chef
+963109r3<substantiv>rikskriminalchef:rikskriminalchef:rikskriminalchefs:rikskriminalchefen:rikskriminalchefens:rikskriminalchefer:rikskriminalchefers:rikskriminalcheferna:rikskriminalchefernas
+800191r3<adjektiv>rikskänd:rikskänd:rikskänt:rikskända:rikskända::::
+769740r3<substantiv>rikslikare:rikslikare:rikslikares:rikslikaren:rikslikarens:rikslikare:rikslikares:rikslikarna:rikslikarnas
+880982r3<substantiv>riksmarsk:riksmarsk:riksmarsks:riksmarsken:riksmarskens:riksmarskar:riksmarskars:riksmarskarna:riksmarskarnas
+722519r4<substantiv>riksmarskalk:riksmarskalk:riksmarskalks:riksmarskalken:riksmarskalkens:riksmarskalkar:riksmarskalkars:riksmarskalkarna:riksmarskalkarnas
+COMPOUND(619401, 657368): rike + marskalk
+696362r4<substantiv>riksmuseum:riksmuseum:riksmuseums:riksmuseet:riksmuseets:riksmuseer:riksmuseers:riksmuseerna:riksmuseernas
+COMPOUND(619401, 555300): rike + museum
+696369r4<substantiv>riksmöte:riksmöte:riksmötes:riksmötet:riksmötets:riksmöten:riksmötens:riksmötena:riksmötenas
+COMPOUND(619401, 560760): rike + möte
+934608r4<substantiv>riksnivå:riksnivå:riksnivås:riksnivån:riksnivåns:riksnivåer:riksnivåers:riksnivåerna:riksnivåernas
+COMPOUND(619401, 611085): rike + nivå
+696375r3<adjektiv>riksomfattande:riksomfattande:riksomfattande:riksomfattande:riksomfattande:!:!:!:
+934617r3<substantiv>riksplan:riksplan:riksplans:riksplanet:riksplanets::::
+760429r4<substantiv>rikspolis:rikspolis:rikspolis:rikspolisen:rikspolisens:rikspoliser:rikspolisers:rikspoliserna:rikspolisernas
+CUSTOM: y y rikspolis
+760436r3<substantiv>rikspolisstyrelse::::::::
+COMPOUND(760429, 612018): rikspolis + styrelse
+760437r4<substantiv>rikspolitik:rikspolitik:rikspolitiks:rikspolitiken:rikspolitikens:!:!:!:!
+COMPOUND(619401, 550224): rike + politik
+760441r4<substantiv>rikspolitiker:rikspolitiker:rikspolitikers:rikspolitikern:rikspolitikerns:rikspolitiker:rikspolitikers:rikspolitikerna:rikspolitikernas
+COMPOUND(619401, 695192): rike + politiker
+963139r3<substantiv>riksprislista:riksprislista:riksprislistas:riksprislistan:riksprislistans:riksprislistor:riksprislistors:riksprislistorna:riksprislistornas
+848295r3<substantiv>riksregalier:::::riksregalier:riksregaliers:riksregalierna:riksregaliernas
+963119r4<substantiv>riksrevision:riksrevision:riksrevisions:riksrevisionen:riksrevisionens:riksrevisioner:riksrevisioners:riksrevisionerna:riksrevisionernas
+COMPOUND(619401, 621807): rike + revision
+CUSTOM: y n riksrevisions
+963129r4<substantiv>riksrevisor:riksrevisor:riksrevisors:riksrevisorn:riksrevisorns:riksrevisorer:riksrevisorers:riksrevisorerna:riksrevisorernas
+COMPOUND(619401, 611186): rike + revisor
+768831r4<substantiv>riksråd:riksråd:riksråds:riksrådet:riksrådets:riksråd:riksråds:riksråden:riksrådens
+COMPOUND(619401, 552853): rike + råd
+712671r3<substantiv>riksrättsförhandling:riksrättsförhandling:riksrättsförhandlings:riksrättsförhandlingen:riksrättsförhandlingens::::
+599524r3<substantiv>rikssal:rikssal:rikssals:rikssalen:rikssalens:rikssalar:rikssalars:rikssalarna:rikssalarnas
+762671r4<substantiv>rikssamtal:rikssamtal:rikssamtals:rikssamtalet:rikssamtalets:rikssamtal:rikssamtals:rikssamtalen:rikssamtalens
+COMPOUND(619401, 552878): rike + samtal
+861248r3<substantiv>rikssnitt:rikssnitt:rikssnitts:rikssnittet:rikssnittets:rikssnitt:rikssnitts:rikssnitten:rikssnittens
+567528r3<adjektiv>riksspråklig:riksspråklig:riksspråkligt:riksspråkliga:riksspråkliga::::
+567531r3<adjektiv>riksspråksenlig:riksspråksenlig:riksspråksenligt:riksspråksenliga:riksspråksenliga::::
+985185r3<substantiv>riksstånd:::::riksständer:riksständers:riksständerna:riksständernas
+696376r4<substantiv>riksstämma:riksstämma:riksstämmas:riksstämman:riksstämmans:riksstämmor:riksstämmors:riksstämmorna:riksstämmornas
+COMPOUND(619401, 595433): rike + stämma
+563210r3<adjektiv>rikssvensk:rikssvensk:rikssvenskt:rikssvenska:rikssvenska::::
+598769r3<substantiv>rikssvensk:rikssvensk:rikssvensks:rikssvensken:rikssvenskens:rikssvenskar:rikssvenskars:rikssvenskarna:rikssvenskarnas
+594994r3<substantiv>rikssvenska:rikssvenska:rikssvenskas:rikssvenskan:rikssvenskans:rikssvenskor:rikssvenskors:rikssvenskorna:rikssvenskornas
+696378r3<substantiv>riksteater:riksteater:riksteaters:riksteatern:riksteaterns::::
+575626r3<adjektiv>riksviktig:riksviktig:riksviktigt:riksviktiga:riksviktiga::::
+551800r3<substantiv>riksväg:riksväg:riksvägs:riksvägen:riksvägens:riksvägar:riksvägars:riksvägarna:riksvägarnas
+CUSTOM: y y riksvägs
+547587r9<verb>rikta:rikta:riktade:riktat:riktar:rikta:riktas:riktades:riktats:riktas:riktad:riktat:riktade:riktande:
+CUSTOM: y y rikt
+794509r3<adjektiv>riktad:riktad:riktat:riktade:riktade:!:!:!:
+880990r3<substantiv>riktare:riktare:riktares:riktaren:riktarens:riktare:riktares:riktarna:riktarnas
+563126r5<adjektiv>riktig:riktig:riktigt:riktiga:riktiga:riktigare:riktigast:riktigaste:riktige
+696380r4<substantiv>riktighet:riktighet:riktighets:riktigheten:riktighetens:!:!:!:!
+CUSTOM: y y riktighets
+696382r4<substantiv>riktlinje:riktlinje:riktlinjes:riktlinjen:riktlinjens:riktlinjer:riktlinjers:riktlinjerna:riktlinjernas
+COMPOUND(547587, 611937): rikta + linje
+937701r3<substantiv>riktmärke:riktmärke:riktmärkes:riktmärket:riktmärkets:riktmärken:riktmärkens:riktmärkena:riktmärkenas
+597519r11<substantiv>riktning:riktning:riktnings:riktningen:riktningens:riktningar:riktningars:riktningarna:riktningarnas
+CUSTOM: y y riktnings +riktnings
+567534r3<adjektiv>riktningskänslig:riktningskänslig:riktningskänsligt:riktningskänsliga:riktningskänsliga::::
+775373r5<substantiv>riktnummer:riktnummer:riktnummers:riktnumret:riktnumrets:riktnummer:riktnummers:riktnumren:riktnumrens
+COMPOUND(547587, 621605): rikta + nummer
+CUSTOM: y y riktnummer
+775379r3<substantiv>riktnummerområde::::::::
+COMPOUND(775373, 612761): riktnummer + område
+934621r4<substantiv>riktpris:riktpris:riktpris:riktpriset:riktprisets:riktpriser:riktprisers:riktpriserna:riktprisernas
+COMPOUND(547587, 595932): rikta + pris
+735172r3<substantiv>riktpunkt:riktpunkt:riktpunkts:riktpunkten:riktpunktens:riktpunkter:riktpunkters:riktpunkterna:riktpunkternas
+696384r4<substantiv>riktvärde:riktvärde:riktvärdes:riktvärdet:riktvärdets:riktvärden:riktvärdens:riktvärdena:riktvärdenas
+COMPOUND(547587, 613015): rikta + värde
+CUSTOM: y y riktvärde
+719307r4<substantiv>rillkniv:rillkniv:rillknivs:rillkniven:rillknivens:rillknivar:rillknivars:rillknivarna:rillknivarnas
+DEFINITION 1: Speciell typ av kniv som används för att skära kartong och papp.
+CUSTOM: y n n
+621838r19<substantiv>rim:rim:rims:rimmet:rimmets:rim:rims:rimmen:rimmens
+CUSTOM: y n
+848299r3<substantiv>rimflätning:rimflätning:rimflätnings:rimflätningen:rimflätningens::::
+741123r3<substantiv>rimfrost:rimfrost:rimfrosts:rimfrosten:rimfrostens::::
+575629r3<adjektiv>rimfrostig:rimfrostig:rimfrostigt:rimfrostiga:rimfrostiga::::
+848303r3<substantiv>rimkrönika:rimkrönika:rimkrönikas:rimkrönikan:rimkrönikans:rimkrönikor:rimkrönikors:rimkrönikorna:rimkrönikornas
+678077r6<substantiv>rimlexikon:rimlexikon:rimlexikons:rimlexikonet:rimlexikonets:rimlexikon, rimlexika:rimlexikons, rimlexikas:rimlexikonen:rimlexikonens
+COMPOUND(621838, 552664): rim + lexikon
+567537r5<adjektiv>rimlig:rimlig:rimligt:rimliga:rimliga:rimligare:rimligast:rimligaste:rimlige
+620737r3<adverb>rimligen:rimligen
+696389r5<substantiv>rimlighet:rimlighet:rimlighets:rimligheten:rimlighetens::::
+CUSTOM: y y rimlighets
+696391r4<substantiv>rimlighetsbedömning:rimlighetsbedömning:rimlighetsbedömnings:rimlighetsbedömningen:rimlighetsbedömningens:rimlighetsbedömningar:rimlighetsbedömningars:rimlighetsbedömningarna:rimlighetsbedömningarnas
+COMPOUND(696389, 592423): rimlighet + bedömning
+CUSTOM: y y rimlighetsbedömnings
+621840r4<substantiv>rimlighetskontroll:rimlighetskontroll:rimlighetskontrolls:rimlighetskontrollen:rimlighetskontrollens:rimlighetskontroller:rimlighetskontrollers:rimlighetskontrollerna:rimlighetskontrollernas
+COMPOUND(696389, 549704): rimlighet + kontroll
+620738r3<adverb>rimligtvis:rimligtvis
+649240r4<verb>rimma:rimma:rimmade:rimmat:rimmar:rimma:rimmas:rimmades:rimmats:rimmas:rimmad:rimmat:rimmade:rimmande:
+880996r3<substantiv>rimmeri:rimmeri:rimmeris:rimmeriet:rimmeriets:rimmerier:rimmeriers:rimmerierna:rimmeriernas
+575632r3<adjektiv>rimmig:rimmig:rimmigt:rimmiga:rimmiga::::
+881004r3<substantiv>rimord:rimord:rimords:rimordet:rimordets:rimord:rimords:rimorden:rimordens
+848312r3<verb>rimsalta:rimsalta:rimsaltade:rimsaltat:rimsaltar:rimsalta:rimsaltas:rimsaltades:rimsaltats:rimsaltas:rimsaltad:rimsaltat:rimsaltade:rimsaltande:
+696392r4<substantiv>rimsmed:rimsmed:rimsmeds:rimsmeden:rimsmedens:rimsmeder:rimsmeders:rimsmederna:rimsmedernas
+COMPOUND(621838, 550538): rim + smed
+881010r3<substantiv>rimsmidare:rimsmidare:rimsmidares:rimsmidaren:rimsmidarens:rimsmidare:rimsmidares:rimsmidarna:rimsmidarnas
+597520r27<substantiv>ring:ring:rings:ringen:ringens:ringar:ringars:ringarna:ringarnas
+CUSTOM: y y ring
+621853r3<adjektiv>ringa:ringa:ringa:ringa:ringa:ringare:ringast:ringaste:
+CUSTOM: y n
+621852r5<verb>ringa:ringa:ringde:ringt:ringer:ring:ringas:ringdes:ringts:rings:ringd:ringt:ringda:ringande:
+585646r5<verb>ringa:ringa:ringade:ringat:ringar:ringa:ringas:ringades:ringats:ringas:::::
+DEFINITION 1: Som i "ringa in"
+794510r3<adjektiv>ringad:ringad:ringat:ringade:ringade:!:!:!:
+547588r5<verb>ringakta:ringakta:ringaktade:ringaktat:ringaktar:ringakta:ringaktas:ringaktades:ringaktats:ringaktas:ringaktad:ringaktat:ringaktade:ringaktande:
+621856r3<substantiv>ringaktning:ringaktning:ringaktnings:ringaktningen:ringaktningens::::
+CUSTOM: y y ringaktnings
+621854r3<substantiv>ringare:ringare:ringares:ringaren:ringarens:ringare:ringares:ringarna:ringarnas
+CUSTOM: y y ringar
+848321r3<verb>ringbarka:ringbarka:ringbarkade:ringbarkat:ringbarkar:ringbarka:ringbarkas:ringbarkades:ringbarkats:ringbarkas:ringbarkad:ringbarkat:ringbarkade:ringbarkande:
+649794r16<substantiv>ringdans:ringdans:ringdans:ringdansen:ringdansens:ringdanser:ringdansers:ringdanserna:ringdansernas
+COMPOUND(597520, 548569): ring + dans
+621844r3<substantiv>ringduva:ringduva:ringduvas:ringduvan:ringduvans:ringduvor:ringduvors:ringduvorna:ringduvornas
+681714r4<substantiv>ringfinger:ringfinger:ringfingers:ringfingret:ringfingrets:ringfingrar:ringfingrars:ringfingrarna:ringfingrarnas
+COMPOUND(597520, 623168): ring + finger
+CUSTOM: y y ringfinger
+794511r3<adjektiv>ringformad:ringformad:ringformat:ringformade:ringformade:!:!:!:
+575635r3<adjektiv>ringformig:ringformig:ringformigt:ringformiga:ringformiga::::
+794514r3<adjektiv>ringförlovad:ringförlovad:ringförlovat:ringförlovade:ringförlovade:!:!:!:
+696398r3<substantiv>ringhet:ringhet:ringhets:ringheten:ringhetens::::
+CUSTOM: y y ringhets
+894281r3<egennamn>Ringholm:Ringholm:Ringholms
+611960r3<substantiv>ringkabelsko:ringkabelsko:ringkabelskos:ringkabelskon:ringkabelskons:ringkabelskor:ringkabelskors:ringkabelskorna:ringkabelskornas
+621860r3<substantiv>ringklocka:ringklocka:ringklockas:ringklockan:ringklockans:ringklockor:ringklockors:ringklockorna:ringklockornas
+696399r4<verb>ringla:ringla:ringlade:ringlat:ringlar:ringla:ringlas:ringlades:ringlats:ringlas:ringlad:ringlat:ringlade:ringlande:
+846689r4<substantiv>ringled:ringled:ringleds:ringleden:ringledens:ringleder:ringleders:ringlederna:ringledernas
+COMPOUND(597520, 556257): ring + led
+732433r4<substantiv>ringlinje:ringlinje:ringlinjes:ringlinjen:ringlinjens:ringlinjer:ringlinjers:ringlinjerna:ringlinjernas
+COMPOUND(597520, 611937): ring + linje
+730318r4<substantiv>ringmask:ringmask:ringmasks:ringmasken:ringmaskens:ringmaskar:ringmaskars:ringmaskarna:ringmaskarnas
+COMPOUND(597520, 560502): ring + mask
+851984r3<substantiv>ringmur:ringmur:ringmurs:ringmuren:ringmurens:ringmurar:ringmurars:ringmurarna:ringmurarnas
+631464r4<substantiv>ringmuskel:ringmuskel:ringmuskels:ringmuskeln:ringmuskelns:ringmuskler:ringmusklers:ringmusklerna:ringmusklernas
+COMPOUND(597520, 621435): ring + muskel
+633236r6<verb>ringmärka:ringmärka:ringmärkte:ringmärkt:ringmärker:ringmärk:ringmärkas:ringmärktes:ringmärkts:ringmärks:ringmärkt:ringmärkt:ringmärkta:ringmärkande:
+COMPOUND(597520, 585833): ring + märka
+741127r3<substantiv>ringmärkning:ringmärkning:ringmärknings:ringmärkningen:ringmärkningens::::
+696404r3<substantiv>ringning:ringning:ringnings:ringningen:ringningens:ringningar:ringningars:ringningarna:ringningarnas
+CUSTOM: y y ringnings +ringnings
+794518r3<adjektiv>ringnäbbad:ringnäbbad:ringnäbbat:ringnäbbade:ringnäbbade:!:!:!:
+801613r3<adjektiv>ringprydd:ringprydd:ringprytt:ringprydda:ringprydda::::
+851999r3<substantiv>ringrev:ringrev:ringrevs:ringrevet:ringrevets:ringrev:ringrevs:ringreven:ringrevens
+575638r4<adjektiv>ringrostig:ringrostig:ringrostigt:ringrostiga:ringrostiga::::ringrostige
+895929r3<substantiv>ringräv:ringräv:ringrävs:ringräven:ringrävens:ringrävar:ringrävars:ringrävarna:ringrävarnas
+621862r3<substantiv>ringsignal:ringsignal:ringsignals:ringsignalen:ringsignalens:ringsignaler:ringsignalers:ringsignalerna:ringsignalernas
+932274r4<substantiv>ringväg:ringväg:ringvägs:ringvägen:ringvägens:ringvägar:ringvägars:ringvägarna:ringvägarnas
+COMPOUND(597520, 552110): ring + väg
+628609r3<substantiv>rink:rink:rinks:rinken:rinkens:rinkar:rinkars:rinkarna:rinkarnas
+861214r3<egennamn>Rinkeby:Rinkeby:Rinkebys
+CUSTOM: y n rinkeby
+881017r3<substantiv>rinkebysvenska:rinkebysvenska:rinkebysvenskas:rinkebysvenskan:rinkebysvenskans::::
+CUSTOM: n n y
+585405r7<verb>rinna:rinna:rann:runnit:rinner:rinn::::::::rinnande:
+CUSTOM: y n
+564105r3<adjektiv>rinnfri:rinnfri:rinnfritt:rinnfria:rinnfria::::
+CUSTOM: y n n
+881023r3<adjektiv>rinnig:rinnig:rinnigt:rinniga:rinniga:rinnigare:rinnigast:rinnigaste:
+843484r3<egennamn>Rioch:Rioch:
+862247r3<egennamn>Rio de Janeiro:Rio de Janeiro:Rio de Janeiros
+925386r4<substantiv>rioja:rioja:riojas:riojan:riojans:riojor:riojors:riojorna:riojornas
+DEFINITION 1: Benämning på vin från det Spanska Rioja-distriktet. En rioja framställs av druvsorten tempranillo.
+621870r4<substantiv>ripa:ripa:ripas:ripan:ripans:ripor:ripors:riporna:ripornas
+CUSTOM: y n
+881030r3<substantiv>ripjakt:ripjakt:ripjakts:ripjakten:ripjaktens:ripjakter:ripjakters:ripjakterna:ripjakternas
+881038r3<substantiv>ripjägare:ripjägare:ripjägares:ripjägaren:ripjägarens:ripjägare:ripjägares:ripjägarna:ripjägarnas
+621875r3<substantiv>ripost:ripost:riposts:riposten:ripostens:riposter:riposters:riposterna:riposternas
+590909r4<verb>ripostera:ripostera:riposterade:riposterat:riposterar:ripostera:riposteras:riposterades:riposterats:riposteras:riposterad:riposterat:riposterade:riposterande:
+848338r3<substantiv>rippel:rippel:rippels:rippeln:rippelns:ripplar:ripplars:ripplarna:ripplarnas
+794522r3<adjektiv>ripplad:ripplad:ripplat:ripplade:ripplade:!:!:!:
+895569r4<substantiv>rips:rips:rips:ripsen, ripset:ripsens, ripsets:ripser:ripsers:ripserna:ripsernas
+CUSTOM: n n y
+552842r14<substantiv>ris:ris:ris:riset:risets:ris:ris:risen:risens
+CUSTOM: y n
+737498r3<verb>risa:risa:risade:risat:risar:risa:risas:risades:risats:risas:risad:risat:risade:risande:
+848346r3<substantiv>risbastu:risbastu:risbastus:risbastun:risbastuns::::
+775380r4<substantiv>risbrännvin:risbrännvin:risbrännvins:risbrännvinet:risbrännvinets:!:!:!:!
+COMPOUND(552842, 626801): ris + brännvin
+881044r3<substantiv>risbädd:risbädd:risbädds:risbädden:risbäddens:risbäddar:risbäddars:risbäddarna:risbäddarnas
+741131r3<substantiv>risfält:risfält:risfälts:risfältet:risfältets:risfält:risfälts:risfälten:risfältens
+621883r4<substantiv>risgryn:risgryn:risgryns:risgrynet:risgrynets:risgryn:risgryns:risgrynen:risgrynens
+CUSTOM: y y risgryns
+621888r4<substantiv>risgrynsgröt:risgrynsgröt:risgrynsgröts:risgrynsgröten:risgrynsgrötens::::
+COMPOUND(621883, 559070): risgryn + gröt
+775384r3<substantiv>rishög:rishög:rishögs:rishögen:rishögens:rishögar:rishögars:rishögarna:rishögarnas
+575641r5<adjektiv>risig:risig:risigt:risiga:risiga:risigare:risigast:risigaste:risige
+775392r3<substantiv>risighet:risighet:risighets:risigheten:risighetens::::
+550392r14<substantiv>risk:risk:risks:risken:riskens:risker:riskers:riskerna:riskernas
+CUSTOM: y y risk
+626861r7<substantiv>riska:riska:riskas:riskan:riskans:riskor:riskors:riskorna:riskornas
+DEFINITION 1: En typ av svamp.
+CUSTOM: y n
+696405r3<adjektiv>riskabel:riskabel:riskabelt:riskabla:riskabla:riskablare:riskablast:riskablaste:
+775397r4<substantiv>riskaka:riskaka:riskakas:riskakan:riskakans:riskakor:riskakors:riskakorna:riskakornas
+COMPOUND(552842, 555243): ris + kaka
+794525r3<adjektiv>riskbetonad:riskbetonad:riskbetonat:riskbetonade:riskbetonade:!:!:!:
+587855r4<verb>riskera:riskera:riskerade:riskerat:riskerar:riskera:riskeras:riskerades:riskerats:riskeras:riskerad:riskerat:riskerade::
+725094r3<substantiv>riskfaktor:riskfaktor:riskfaktors:riskfaktorn:riskfaktorns:riskfaktorer:riskfaktorers:riskfaktorerna:riskfaktorernas
+564108r3<adjektiv>riskfri:riskfri:riskfritt:riskfria:riskfria::::
+585076r3<adjektiv>riskfull:riskfull:riskfullt:riskfulla:riskfulla::::
+725293r3<adjektiv>riskfylld:riskfylld:riskfyllt:riskfyllda:riskfyllda:riskfylldare:riskfylldast:riskfylldaste:
+550393r3<substantiv>riskgrupp:riskgrupp:riskgrupps:riskgruppen:riskgruppens:riskgrupper:riskgruppers:riskgrupperna:riskgruppernas
+760447r4<substantiv>riskkapital:riskkapital:riskkapitals:riskkapitalet:riskkapitalets:riskkapital:riskkapitals:riskkapitalen:riskkapitalens
+CUSTOM: y y riskkapital
+760453r3<substantiv>riskkapitalbolag::::::::
+COMPOUND(760447, 552264): riskkapital + bolag
+965617r3<adjektiv>riskkapitalägd:riskkapitalägd:riskkapitalägt:riskkapitalägda:riskkapitalägda::::::::::::
+962106r4<substantiv>risklimit:risklimit:risklimits:risklimiten:risklimitens:risklimiter:risklimiters:risklimiterna:risklimiternas
+COMPOUND(550392, 962097): risk + limit
+926740r4<substantiv>risklump:risklump:risklumps:risklumpen:risklumpens:risklumpar:risklumpars:risklumparna:risklumparnas
+COMPOUND(552842, 551548): ris + klump
+CUSTOM: y n n
+741137r4<substantiv>riskmoment:riskmoment:riskmoments:riskmomentet:riskmomentets:riskmoment:riskmoments:riskmomenten:riskmomentens
+COMPOUND(550392, 552698): risk + moment
+846697r3<substantiv>riskoja:riskoja:riskojas:riskojan:riskojans:riskojor:riskojors:riskojorna:riskojornas
+881053r3<substantiv>riskorn:riskorn:riskorns:riskornet:riskornets:riskorn:riskorns:riskornen:riskornens
+724887r4<substantiv>risktagande:risktagande:risktagandes:risktagandet:risktagandets:risktaganden:risktagandens:risktagandena:risktagandenas
+COMPOUND(550392, 670553): risk + tagande
+761936r4<substantiv>risktal:risktal:risktals:risktalet:risktalets:risktal:risktals:risktalen:risktalens
+COMPOUND(550392, 553029): risk + tal
+597521r3<substantiv>risktäckning:risktäckning:risktäcknings:risktäckningen:risktäckningens:risktäckningar:risktäckningars:risktäckningarna:risktäckningarnas
+CUSTOM: y y risktäcknings
+567538r3<adjektiv>riskvillig:riskvillig:riskvilligt:riskvilliga:riskvilliga::::
+CUSTOM: y n
+932282r4<substantiv>riskzon:riskzon:riskzons:riskzonen:riskzonens:riskzoner:riskzoners:riskzonerna:riskzonernas
+COMPOUND(550392, 550796): risk + zon
+918108r4<substantiv>risnudel:risnudel:risnudels:risnudeln:risnudelns:risnudlar:risnudlars:risnudlarna:risnudlarnas
+COMPOUND(552842, 721536): ris + nudel
+881060r3<substantiv>risodling:risodling:risodlings:risodlingen:risodlingens:risodlingar:risodlingars:risodlingarna:risodlingarnas
+741143r3<substantiv>risotto:risotto:risottos:risotton:risottons::::
+923894r4<substantiv>risp:risp:risps:rispet:rispets:risp:risps:rispen:rispens
+DEFINITION 1: Rispa, rispning
+CUSTOM: n n y
+547589r4<verb>rispa:rispa:rispade:rispat:rispar:rispa:rispas:rispades:rispats:rispas:rispad:rispat:rispade::
+741147r3<substantiv>rispa:rispa:rispas:rispan:rispans:rispor:rispors:risporna:rispornas
+848351r4<substantiv>rispapper:rispapper:rispappers:rispapperet, rispappret:rispapperets, rispapprets:rispapper:rispappers:rispapperna, rispappren, rispapperen:rispappernas, rispapprens, rispapperens
+COMPOUND(552842, 556527): ris + papper
+575642r3<adjektiv>rispig:rispig:rispigt:rispiga:rispiga::::
+881068r3<substantiv>rispning:rispning:rispnings:rispningen:rispningens:rispningar:rispningars:rispningarna:rispningarnas
+848364r3<substantiv>risrätt:risrätt:risrätts:risrätten:risrättens:risrätter:risrätters:risrätterna:risrätternas
+881076r3<substantiv>risskål:risskål:risskåls:risskålen:risskålens:risskålar:risskålars:risskålarna:risskålarnas
+881084r3<substantiv>risskörd:risskörd:risskörds:risskörden:risskördens:risskördar:risskördars:risskördarna:risskördarnas
+963156r3<verb>rissla:rissla:risslade:risslat:risslar:rissla:::::risslad:risslat:risslade::
+CUSTOM: y n
+972230r3<egennamn>Rissne:Rissne:Rissnes
+901187r8<substantiv>rist:rist:rists:risten:ristens:ristar:ristars:ristarna:ristarnas
+CUSTOM: n n y
+547590r4<verb>rista:rista:ristade:ristat:ristar:rista:ristas:ristades:ristats:ristas:ristad:ristat:ristade::
+CUSTOM: y n
+585407r3<verb>rista:rista:riste:rist:rister::::::::::
+CUSTOM: y n
+881092r3<substantiv>ristare:ristare:ristares:ristaren:ristarens:ristare:ristares:ristarna:ristarnas
+741154r4<substantiv>ristning:ristning:ristnings:ristningen:ristningens:ristningar:ristningars:ristningarna:ristningarnas
+775406r3<substantiv>risvin:risvin:risvins:risvinet:risvinets::::
+918118r4<substantiv>risvinäger:risvinäger:risvinägers:risvinägern:risvinägerns::::
+COMPOUND(552842, 758680): ris + vinäger
+621892r5<substantiv>rit:rit:rits:riten:ritens:riter:riters:riterna:riternas
+547591r11<verb>rita:rita:ritade:ritat:ritar:rita:ritas:ritades:ritats:ritas:ritad:ritat:ritade:ritande:
+CUSTOM: y n
+848374r3<substantiv>ritapparat:ritapparat:ritapparats:ritapparaten:ritapparatens:ritapparater:ritapparaters:ritapparaterna:ritapparaternas
+848382r3<substantiv>ritardando:ritardando:ritardandos:ritardandot:ritardandots:ritardandon:ritardandons:ritardandona:ritardandonas
+848390r3<substantiv>ritare:ritare:ritares:ritaren:ritarens:ritare:ritares:ritarna:ritarnas
+848396r3<substantiv>ritbestick:ritbestick:ritbesticks:ritbesticket:ritbestickets:ritbestick:ritbesticks:ritbesticken:ritbestickens
+607882r3<substantiv>ritblock:ritblock:ritblocks:ritblocket:ritblockets:ritblock:ritblocks:ritblocken:ritblockens
+881098r4<substantiv>ritbok:ritbok:ritboks:ritboken:ritbokens:ritböcker:ritböckers:ritböckerna:ritböckernas
+COMPOUND(547591, 555346): rita + bok
+707207r3<substantiv>ritbord:ritbord:ritbords:ritbordet:ritbordets:ritbord:ritbords:ritborden:ritbordens
+567541r3<adjektiv>ritenlig:ritenlig:ritenligt:ritenliga:ritenliga::::
+CUSTOM: n n
+848402r3<substantiv>ritkol:ritkol:ritkols:ritkolet:ritkolets:ritkol:ritkols:ritkolen:ritkolens
+881114r3<substantiv>ritkontor:ritkontor:ritkontors:ritkontoret:ritkontorets:ritkontor:ritkontors:ritkontoren:ritkontorens
+696407r4<substantiv>ritning:ritning:ritnings:ritningen:ritningens:ritningar:ritningars:ritningarna:ritningarnas
+CUSTOM: y y ritnings +ritnings
+794528r3<adjektiv>ritorkad:ritorkad:ritorkat:ritorkade:ritorkade:!:!:!:
+CUSTOM: n n
+775410r4<substantiv>ritpapper:ritpapper:ritpappers:ritpapperet, ritpappret:ritpapperets, ritpapprets:ritpapper:ritpappers:ritpapperna, ritpappren, ritpapperen:ritpappernas, ritpapprens, ritpapperens
+COMPOUND(547591, 556527): rita + papper
+881106r3<substantiv>ritpenna:ritpenna:ritpennas:ritpennan:ritpennans:ritpennor:ritpennors:ritpennorna:ritpennornas
+890705r4<substantiv>ritplatta:ritplatta:ritplattas:ritplattan:ritplattans:ritplattor:ritplattors:ritplattorna:ritplattornas
+COMPOUND(547591, 632785): rita + platta
+942533r4<substantiv>ritprogram:ritprogram:ritprograms:ritprogrammet:ritprogrammets:ritprogram:ritprograms:ritprogrammen:ritprogrammens
+COMPOUND(547591, 555118): rita + program
+901191r3<substantiv>rits:rits:rits:ritsen:ritsens:ritsar:ritsars:ritsarna:ritsarnas
+CUSTOM: y n
+881120r3<verb>ritsa:ritsa:ritsade:ritsat:ritsar:ritsa:ritsas:ritsades:ritsats:ritsas:ritsad:ritsat:ritsade:ritsande:
+CUSTOM: n n y
+935375r3<interjektion>ritsch:ritsch
+CUSTOM: n n y
+881129r3<substantiv>ritskniv:ritskniv:ritsknivs:ritskniven:ritsknivens:ritsknivar:ritsknivars:ritsknivarna:ritsknivarnas
+881137r3<substantiv>ritsmått:ritsmått:ritsmåtts:ritsmåttet:ritsmåttets:ritsmått:ritsmåtts:ritsmåtten:ritsmåttens
+881143r3<substantiv>ritsning:ritsning:ritsnings:ritsningen:ritsningens:ritsningar:ritsningars:ritsningarna:ritsningarnas
+881151r3<substantiv>ritsnål:ritsnål:ritsnåls:ritsnålen:ritsnålens:ritsnålar:ritsnålars:ritsnålarna:ritsnålarnas
+550394r3<substantiv>ritt:ritt:ritts:ritten:rittens:ritter:ritters:ritterna:ritternas
+881159r3<substantiv>ritteknik:ritteknik:rittekniks:rittekniken:ritteknikens::::
+550396r6<substantiv>ritual:ritual:rituals:ritualen:ritualens:ritualer:ritualers:ritualerna:ritualernas
+CUSTOM: y y ritual
+567544r3<adjektiv>ritualenlig:ritualenlig:ritualenligt:ritualenliga:ritualenliga::::
+590913r4<verb>ritualisera:ritualisera:ritualiserade:ritualiserat:ritualiserar:ritualisera:ritualiseras:ritualiserades:ritualiserats:ritualiseras:ritualiserad:ritualiserat:ritualiserade:ritualiserande:
+881163r3<substantiv>ritualisering:ritualisering:ritualiserings:ritualiseringen:ritualiseringens::::
+852005r3<substantiv>ritualism:ritualism:ritualisms:ritualismen:ritualismens::::
+825318r3<substantiv>ritualist:ritualist:ritualists:ritualisten:ritualistens:ritualister:ritualisters:ritualisterna:ritualisternas
+583453r4<adjektiv>ritualistisk:ritualistisk:ritualistiskt:ritualistiska:ritualistiska::::ritualistiske
+707213r4<substantiv>ritualmord:ritualmord:ritualmords:ritualmordet:ritualmordets:ritualmord:ritualmords:ritualmorden:ritualmordens
+COMPOUND(550396, 552702): ritual + mord
+575645r3<adjektiv>ritualmässig:ritualmässig:ritualmässigt:ritualmässiga:ritualmässiga::::
+696408r4<adjektiv>rituell:rituell:rituellt:rituella:rituella:::

@@ -1,0 +1,592 @@
+re:fickräknare:fickräknares:fickräknaren:fickräknarens:fickräknare:fickräknares:fickräknarna:fickräknarnas
+CUSTOM: y y fickräknar
+719072r4<substantiv>fickstöld:fickstöld:fickstölds:fickstölden:fickstöldens:fickstölder:fickstölders:fickstölderna:fickstöldernas
+COMPOUND(561662, 550596): ficka + stöld
+551116r4<substantiv>ficktjuv:ficktjuv:ficktjuvs:ficktjuven:ficktjuvens:ficktjuvar:ficktjuvars:ficktjuvarna:ficktjuvarnas
+COMPOUND(561662, 552015): ficka + tjuv
+741777r4<substantiv>fickur:fickur:fickurs:fickuret:fickurets:fickur:fickurs:fickuren:fickurens
+COMPOUND(561662, 553080): ficka + ur
+664901r4<substantiv>fiction:fiction:fictions::::::
+CUSTOM: y y
+859074r3<substantiv>fiddla:fiddla:fiddlas:fiddlan:fiddlans:fiddlor:fiddlors:fiddlorna:fiddlornas
+834987r3<substantiv>fideikommiss:fideikommiss:fideikommiss:fideikommisset:fideikommissets:fideikommiss:fideikommiss:fideikommissen:fideikommissens
+977759r3<substantiv>fideikommissarie:fideikommissarie:fideikommissaries:fideikommissarien:fideikommissariens:fideikommissarier:fideikommissariers:fideikommissarierna:fideikommissariernas
+977767r3<substantiv>fideikommissinnehavare:fideikommissinnehavare:fideikommissinnehavares:fideikommissinnehavaren:fideikommissinnehavarens:fideikommissinnehavare:fideikommissinnehavares:fideikommissinnehavarna:fideikommissinnehavarnas
+580023r3<adjektiv>fiduciarisk:fiduciarisk:fiduciariskt:fiduciariska:fiduciariska::::
+797628r3<adjektiv>fiduciell:fiduciell:fiduciellt:fiduciella:fiduciella::::
+834992r3<substantiv>fidus:fidus:fidus:fidusen:fidusens:fidusar:fidusars:fidusarna:fidusarnas
+CUSTOM: n n y
+561663r6<substantiv>fiende:fiende:fiendes:fienden:fiendens:fiender:fienders:fienderna:fiendernas
+CUSTOM: y y fiende
+741783r3<substantiv>fiendeland::::::::
+COMPOUND(561663, 556251): fiende + land
+561664r3<substantiv>fiendskap:fiendskap:fiendskaps:fiendskapen:fiendskapens:!:!:!:!
+CUSTOM: y y fiendskaps
+561666r6<adjektiv>fientlig:fientlig:fientligt:fientliga:fientliga:fientligare:fientligast:fientligaste:fientlige
+561671r4<substantiv>fientlighet:fientlighet:fientlighets:fientligheten:fientlighetens:fientligheter:fientligheters:fientligheterna:fientligheternas
+CUSTOM: y y fientlighets
+961233r3<substantiv>fiesta:fiesta:fiestas:fiestan:fiestans:fiestor:fiestors:fiestorna:fiestornas
+CUSTOM: y n
+860847r3<egennamn>Fifa:Fifa:Fifas
+CUSTOM: y n Fifa
+834999r3<verb>fiffa:fiffa:fiffade:fiffat:fiffar:fiffa:fiffas:fiffades:fiffats:fiffas::::fiffande:
+CUSTOM: n n y
+561672r3<substantiv>fiffel:fiffel:fiffels:fifflet:fifflets:!:!:!:!
+561674r3<adjektiv>fiffig:fiffig:fiffigt:fiffiga:fiffiga:fiffigare:fiffigast:fiffigaste:fiffige
+958555r3<substantiv>fiffighet:fiffighet:fiffighets:fiffigheten:fiffighetens:fiffigheter:fiffigheters:fiffigheterna:fiffigheternas
+546532r4<verb>fiffla:fiffla:fifflade:fifflat:fifflar:fiffla:fifflas:fifflades:fifflats:fifflas::::fifflande:
+689907r3<substantiv>fifflande:fifflande:fifflandes:fifflandet:fifflandets::::
+561675r3<substantiv>fifflare:fifflare:fifflares:fifflaren:fifflarens:fifflare:fifflares:fifflarna:fifflarnas
+CUSTOM: y y fifflar
+565815r7<adjektiv>fifflig::::::::::::::::
+561676r3<adverb>fifty-fifty:fifty-fifty
+561677r3<substantiv>fight:fight:fights:fighten:fightens:fighter:fighters:fighterna:fighternas
+686257r3<deponens>fightas:fightas:fightades:fightats:fightas:fightas
+561684r3<substantiv>fighter:fighter:fighters:fightern:fighterns::::
+548918r21<substantiv>figur:figur:figurs:figuren:figurens:figurer:figurers:figurerna:figurernas
+CUSTOM: y y figur +figurs
+797631r3<adjektiv>figural:figural:figuralt:figurala:figurala::::
+561687r3<substantiv>figurant:figurant:figurants:figuranten:figurantens:figuranter:figuranters:figuranterna:figuranternas
+835007r3<substantiv>figuration:figuration:figurations:figurationen:figurationens:figurationer:figurationers:figurationerna:figurationernas
+689911r3<adjektiv>figurativ:figurativ:figurativt:figurativa:figurativa::::
+546533r4<verb>figurera:figurera:figurerade:figurerat:figurerar:figurera::::::::figurerande:
+954530r3<substantiv>figurin:figurin:figurins:figurinen:figurinens:figuriner:figuriners:figurinerna:figurinernas
+CUSTOM: y n
+565818r3<adjektiv>figurlig:figurlig:figurligt:figurliga:figurliga::::
+977773r3<adjektiv>figurnära:figurnära:figurnära:figurnära:figurnära:!:!:!:::::::::
+927249r4<verb>figursy:figursy:figursydde:figursytt:figursyr:figursy:figursys:figursyddes:figursytts:figursys:figursydd:figursytt:figursydda::
+COMPOUND(548918, 557754): figur + sy
+CUSTOM: y n n
+801269r3<adjektiv>figursydd:figursydd:figursytt:figursydda:figursydda::::
+677494r4<substantiv>figurväveri:figurväveri:figurväveris:figurväveriet, figurväverit:figurväveriets, figurväverits:figurväverier:figurväveriers:figurväverierna:figurväveriernas
+COMPOUND(548918, 677495): figur + väveri
+763799r3<substantiv>fijian:fijian:fijians:fijianen:fijianens:fijianer:fijianers:fijianerna:fijianernas
+763070r3<adjektiv>fijiansk:fijiansk:fijianskt:fijianska:fijianska:!:!:!:fijianske
+763807r3<substantiv>fijianska:fijianska:fijianskas:fijianskan:fijianskans:fijianskor:fijianskors:fijianskorna:fijianskornas
+558828r4<substantiv>fik:fik:fiks:fiket:fikets:fik:fiks:fiken:fikens
+DEFINITION 1: Kafé [vardagligt]
+646628r7<substantiv>fika:fika:!:fikat:fikats:!:!:!:!
+CUSTOM: y y fika
+561695r4<verb>fika:fika:fikade:fikat:fikar:fika:fikas:fikades:fikats:fikas::::fikande:
+686260r4<substantiv>fikapaus:fikapaus:fikapaus:fikapausen:fikapausens:fikapauser:fikapausers:fikapauserna:fikapausernas
+COMPOUND(646628, 550178): fika + paus
+686267r4<substantiv>fikarast:fikarast:fikarasts:fikarasten:fikarastens:fikaraster:fikarasters:fikarasterna:fikarasternas
+COMPOUND(646628, 603245): fika + rast
+686275r4<substantiv>fikarum:fikarum:fikarums:fikarummet:fikarummets:fikarum:fikarums:fikarummen:fikarummens
+COMPOUND(646628, 571182): fika + rum
+686281r4<adjektiv>fikasugen:fikasugen:fikasuget:fikasugna:fikasugna::::
+COMPOUND(646628, 686282): fika + sugen
+561696r3<substantiv>fikon:fikon:fikons:fikonet:fikonets:fikon:fikons:fikonen:fikonens
+977774r3<substantiv>fikonkaktus:fikonkaktus:fikonkaktus:fikonkaktusen:fikonkaktusens:fikonkaktusar:fikonkaktusars:fikonkaktusarna:fikonkaktusarnas
+741784r3<substantiv>fikonlöv:fikonlöv:fikonlövs:fikonlövet:fikonlövets:fikonlöv:fikonlövs:fikonlöven:fikonlövens
+560746r3<substantiv>fikonspråk:fikonspråk:fikonspråks:fikonspråket:fikonspråkets:fikonspråk:fikonspråks:fikonspråken:fikonspråkens
+689912r3<substantiv>fikonträd:fikonträd:fikonträds:fikonträdet:fikonträdets:fikonträd:fikonträds:fikonträden:fikonträdens
+561697r3<substantiv>fiktion:fiktion:fiktions:fiktionen:fiktionens:fiktioner:fiktioners:fiktionerna:fiktionernas
+CUSTOM: y y fiktions
+835015r3<substantiv>fiktionalism:fiktionalism:fiktionalisms:fiktionalismen:fiktionalismens::::
+561702r5<adjektiv>fiktiv:fiktiv:fiktivt:fiktiva:fiktiva:fiktivare:fiktivast:fiktivaste:fiktive
+561703r3<substantiv>fikus:fikus:fikus:fikusen:fikusens:fikusar:fikusars:fikusarna:fikusarnas
+551124r5<substantiv>fil:fil:fils:filen:filens:filar:filars:filarna:filarnas
+555152r18<substantiv>fil:fil:fils:filen:filens:filer:filers:filerna:filernas
+CUSTOM: y n
+561704r4<verb>fila:fila:filade:filat:filar:fila:filas:filades:filats:filas:filad:filat:filade:filande:
+971587r3<egennamn>Filadelfia:Filadelfia:Filadelfias
+561708r3<substantiv>filantrop:filantrop:filantrops:filantropen:filantropens:filantroper:filantropers:filantroperna:filantropernas
+835022r3<substantiv>filantropi:filantropi:filantropis:filantropin:filantropins::::
+580026r4<adjektiv>filantropisk:filantropisk:filantropiskt:filantropiska:filantropiska::::filantropiske
+689914r3<substantiv>filateli:filateli:filatelis:filatelin:filatelins::::
+548919r3<substantiv>filatelist:filatelist:filatelists:filatelisten:filatelistens:filatelister:filatelisters:filatelisterna:filatelisternas
+CUSTOM: y y filatelist
+580029r3<adjektiv>filatelistisk:filatelistisk:filatelistiskt:filatelistiska:filatelistiska::::
+561716r4<substantiv>filbunke:filbunke:filbunkes:filbunken:filbunkens:filbunkar:filbunkars:filbunkarna:filbunkarnas
+977781r4<substantiv>filbunksskål:filbunksskål:filbunksskåls:filbunksskålen:filbunksskålens:filbunksskålar:filbunksskålars:filbunksskålarna:filbunksskålarnas
+COMPOUND(561716, 551854): filbunke + skål
+877302r4<verb>fildela:fildela:fildelade:fildelat:fildelar:fildela:fildelas:fildelades:fildelats:fildelas::::fildelande:
+762844r3<substantiv>fildelare:fildelare:fildelares:fildelaren:fildelarens:fildelare:fildelares:fildelarna:fildelarnas
+CUSTOM: y n fildelar
+658264r4<substantiv>fildelning:fildelning:fildelnings:fildelningen:fildelningens:fildelningar:fildelningars:fildelningarna:fildelningarnas
+CUSTOM: y y fildelnings
+776089r3<substantiv>fildelningsprogram::::::::
+COMPOUND(658264, 555118): fildelning + program
+561718r15<substantiv>filé:filé:filés:filén:filéns:filéer:filéers:filéerna:filéernas
+CUSTOM: y y filé
+763225r4<verb>filea:filea:fileade:fileat:filear:filea:fileas:fileades:fileats:fileas:filead:fileat:fileade:fileande:
+658257r3<substantiv>filformat:filformat:filformats:filformatet:filformatets:filformat:filformats:filformaten:filformatens
+884265r3<substantiv>filhanterare:filhanterare:filhanterares:filhanteraren:filhanterarens:filhanterare:filhanterares:filhanterarna:filhanterarnas
+884271r3<substantiv>filharmoni:filharmoni:filharmonis:filharmonin:filharmonins:filharmonier:filharmoniers:filharmonierna:filharmoniernas
+741791r3<substantiv>filharmoniker:filharmoniker:filharmonikers:filharmonikern:filharmonikerns:filharmoniker:filharmonikers:filharmonikerna:filharmonikernas
+580032r4<adjektiv>filharmonisk:filharmonisk:filharmoniskt:filharmoniska:filharmoniska::::filharmoniske::::::::
+548920r3<substantiv>filial:filial:filials:filialen:filialens:filialer:filialers:filialerna:filialernas
+CUSTOM: y y filial
+763815r4<substantiv>filibuster:filibuster:filibusters:filibustern:filibusterns:filibustrar:filibustrars:filibustrarna:filibustrarnas
+835032r3<substantiv>filigran:filigran:filigrans:filigranen:filigranens:filigraner:filigraners:filigranerna:filigranernas
+977789r3<substantiv>filigranarbete:filigranarbete:filigranarbetes:filigranarbetet:filigranarbetets:filigranarbeten:filigranarbetens:filigranarbetena:filigranarbetenas
+913642r4<substantiv>filinnehåll:filinnehåll:filinnehålls:filinnehållet:filinnehållets:filinnehåll:filinnehålls:filinnehållen:filinnehållens
+COMPOUND(555152, 552512): fil + innehåll
+554561r3<egennamn>Filip:Filip:Filips
+835040r3<substantiv>filipin:filipin:filipins:filipinen:filipinens:filipiner:filipiners:filipinerna:filipinernas
+971836r3<egennamn>Filippa:Filippa:Filippas
+977797r3<substantiv>filipper:::::filipper:filippers:filipperna:filippernas
+CUSTOM: y n
+926293r9<egennamn>Filipperbrevet:Filipperbrevet:Filipperbrevets
+835048r3<substantiv>filippinare:filippinare:filippinares:filippinaren:filippinarens:filippinare:filippinares:filippinarna:filippinarnas
+554016r3<egennamn>Filippinerna:Filippinerna:Filippinernas
+946435r3<substantiv>filippinier:filippinier:filippiniers:filippiniern:filippinierns:filippinier:filippiniers:filippinierna:filippiniernas
+709830r3<adjektiv>filippinsk:filippinsk:filippinskt:filippinska:filippinska:!:!:!:filippinske
+763819r3<substantiv>filippinska:filippinska:filippinskas:filippinskan:filippinskans:filippinskor:filippinskors:filippinskorna:filippinskornas
+972869r3<egennamn>Filipsson:Filipsson:Filipssons
+728096r3<egennamn>Filipstad:Filipstad:Filipstads
+CUSTOM: y n Filipstads
+629408r3<substantiv>filisté:filisté:filistés:filistén:filisténs:filistéer:filistéers:filistéerna:filistéernas
+580035r3<adjektiv>filisteisk:filisteisk:filisteiskt:filisteiska:filisteiska::::
+689916r3<substantiv>filister:filister:filisters:filistern:filisterns:filistrar:filistrars:filistrarna:filistrarnas
+572236r3<adjektiv>filistermässig:filistermässig:filistermässigt:filistermässiga:filistermässiga::::
+797634r3<adjektiv>filiströs:filiströs:filiströst:filiströsa:filiströsa::::
+884280r3<substantiv>filkatalog:filkatalog:filkatalogs:filkatalogen:filkatalogens:filkataloger:filkatalogers:filkatalogerna:filkatalogernas
+835054r3<substantiv>filklove:filklove:filkloves:filkloven:filklovens:filklovar:filklovars:filklovarna:filklovarnas
+888761r4<substantiv>filkopiering:filkopiering:filkopierings:filkopieringen:filkopieringens:filkopieringar:filkopieringars:filkopieringarna:filkopieringarnas
+COMPOUND(555152, 653069): fil + kopiering
+884289r3<substantiv>filkörning:filkörning:filkörnings:filkörningen:filkörningens::::
+548921r86<substantiv>film:film:films:filmen:filmens:filmer:filmers:filmerna:filmernas
+CUSTOM: y y film
+546534r6<verb>filma:filma:filmade:filmat:filmar:filma:filmas:filmades:filmats:filmas:filmad:filmat:filmade:filmande:
+689917r4<substantiv>filmaffisch:filmaffisch:filmaffischs:filmaffischen:filmaffischens:filmaffischer:filmaffischers:filmaffischerna:filmaffischernas
+COMPOUND(548921, 548153): film + affisch
+741798r3<substantiv>filmande:filmande:filmandes:filmandet:filmandets::::
+561042r3<substantiv>filmarbetare:filmarbetare:filmarbetares:filmarbetaren:filmarbetarens:filmarbetare:filmarbetares:filmarbetarna:filmarbetarnas
+CUSTOM: y y filmarbetar
+615209r3<substantiv>filmare:filmare:filmares:filmaren:filmarens:filmare:filmares:filmarna:filmarnas
+CUSTOM: y y filmar
+884293r3<substantiv>filmarkering:filmarkering:filmarkerings:filmarkeringen:filmarkeringens:filmarkeringar:filmarkeringars:filmarkeringarna:filmarkeringarnas
+709833r4<substantiv>filmarkiv:filmarkiv:filmarkivs:filmarkivet:filmarkivets:filmarkiv:filmarkivs:filmarkiven:filmarkivens
+COMPOUND(548921, 552189): film + arkiv
+709839r4<substantiv>filmateljé:filmateljé:filmateljés:filmateljén:filmateljéns:filmateljéer:filmateljéers:filmateljéerna:filmateljéernas
+COMPOUND(548921, 616336): film + ateljé
+586636r5<verb>filmatisera:filmatisera:filmatiserade:filmatiserat:filmatiserar:filmatisera:filmatiseras:filmatiserades:filmatiserats:filmatiseras:filmatiserad:filmatiserat:filmatiserade:filmatiserande:
+689926r3<substantiv>filmatisering:filmatisering:filmatiserings:filmatiseringen:filmatiseringens:filmatiseringar:filmatiseringars:filmatiseringarna:filmatiseringarnas
+CUSTOM: y y filmatiserings
+580038r3<adjektiv>filmatisk:filmatisk:filmatiskt:filmatiska:filmatiska::::
+799298r3<adjektiv>filmbelagd:filmbelagd:filmbelagt:filmbelagda:filmbelagda::::
+709847r4<substantiv>filmbild:filmbild:filmbilds:filmbilden:filmbildens:filmbilder:filmbilders:filmbilderna:filmbildernas
+COMPOUND(548921, 548373): film + bild
+686286r4<substantiv>filmbolag:filmbolag:filmbolags:filmbolaget:filmbolagets:filmbolag:filmbolags:filmbolagen:filmbolagens
+COMPOUND(548921, 552264): film + bolag
+686292r4<substantiv>filmbransch:filmbransch:filmbranschs:filmbranschen:filmbranschens:!:!:!:!
+COMPOUND(548921, 548446): film + bransch
+686296r4<substantiv>filmcensur:filmcensur:filmcensurs:filmcensuren:filmcensurens::::
+COMPOUND(548921, 661025): film + censur
+861607r4<substantiv>filmdistributör:filmdistributör:filmdistributörs:filmdistributören:filmdistributörens:filmdistributörer:filmdistributörers:filmdistributörerna:filmdistributörernas
+COMPOUND(548921, 548682): film + distributör
+686300r4<substantiv>filmduk:filmduk:filmduks:filmduken:filmdukens:filmdukar:filmdukars:filmdukarna:filmdukarnas
+COMPOUND(548921, 551077): film + duk
+686302r4<substantiv>filmfestival:filmfestival:filmfestivals:filmfestivalen:filmfestivalens:filmfestivaler:filmfestivalers:filmfestivalerna:filmfestivalernas
+COMPOUND(548921, 548914): film + festival
+686310r4<substantiv>filmfotograf:filmfotograf:filmfotografs:filmfotografen:filmfotografens:filmfotografer:filmfotografers:filmfotograferna:filmfotografernas
+COMPOUND(548921, 548952): film + fotograf
+709855r4<substantiv>filmgala:filmgala:filmgalas:filmgalan:filmgalans:filmgalor:filmgalors:filmgalorna:filmgalornas
+COMPOUND(548921, 557564): film + gala
+580041r4<adjektiv>filmhistorisk:filmhistorisk:filmhistoriskt:filmhistoriska:filmhistoriska::::
+COMPOUND(548921, 580631): film + historisk
+686318r4<substantiv>filmindustri:filmindustri:filmindustris:filmindustrin:filmindustrins:!:!:!:!
+COMPOUND(548921, 610799): film + industri
+686322r4<substantiv>filminspelning:filminspelning:filminspelnings:filminspelningen:filminspelningens:filminspelningar:filminspelningars:filminspelningarna:filminspelningarnas
+CUSTOM: y y filminspelnings
+686323r4<adjektiv>filmintresserad:filmintresserad:filmintresserat:filmintresserade:filmintresserade:!:!:!:
+COMPOUND(548921, 618355): film + intresserad
+580044r4<adjektiv>filmisk:filmisk:filmiskt:filmiska:filmiska::::filmiske
+686326r5<substantiv>filmjölk:filmjölk:filmjölks:filmjölken:filmjölkens:!:!:!:!
+COMPOUND(555152, 618922): fil + mjölk
+CUSTOM: y y filmjölks
+686328r4<substantiv>filmjölkspaket:filmjölkspaket:filmjölkspakets:filmjölkspaketet:filmjölkspaketets:filmjölkspaket:filmjölkspakets:filmjölkspaketen:filmjölkspaketens
+COMPOUND(686326, 552747): filmjölk + paket
+686334r4<substantiv>filmkamera:filmkamera:filmkameras:filmkameran:filmkamerans:filmkameror:filmkamerors:filmkamerorna:filmkamerornas
+COMPOUND(548921, 559163): film + kamera
+720753r4<substantiv>filmklipp:filmklipp:filmklipps:filmklippet:filmklippets:filmklipp:filmklipps:filmklippen:filmklippens
+COMPOUND(548921, 552552): film + klipp
+720759r12<substantiv>filmklippare:filmklippare:filmklippares:filmklipparen:filmklipparens:filmklippare:filmklippares:filmklipparna:filmklipparnas
+COMPOUND(548921, 615334): film + klippare
+720769r4<substantiv>filmklubb:filmklubb:filmklubbs:filmklubben:filmklubbens:filmklubbar:filmklubbars:filmklubbarna:filmklubbarnas
+COMPOUND(548921, 551547): film + klubb
+875748r3<substantiv>filmkomiker:filmkomiker:filmkomikers:filmkomikern:filmkomikerns:filmkomiker:filmkomikers:filmkomikerna:filmkomikernas
+686335r5<substantiv>filmkonst:filmkonst:filmkonsts:filmkonsten:filmkonstens:!:!:!:!
+COMPOUND(548921, 682831): film + konst
+686339r4<substantiv>filmkritiker:filmkritiker:filmkritikers:filmkritikern:filmkritikerns:filmkritiker:filmkritikers:filmkritikerna:filmkritikernas
+COMPOUND(548921, 610310): film + kritiker
+686345r5<substantiv>filmkrönika:filmkrönika:filmkrönikas:filmkrönikan:filmkrönikans:filmkrönikor:filmkrönikors:filmkrönikorna:filmkrönikornas
+COMPOUND(548921, 636704): film + krönika
+686349r4<substantiv>filmkunskap:filmkunskap:filmkunskaps:filmkunskapen:filmkunskapens:!:!:!:!
+COMPOUND(548921, 549811): film + kunskap
+CUSTOM: y y filmkunskaps
+790828r3<adjektiv>filmlaminerad:filmlaminerad:filmlaminerat:filmlaminerade:filmlaminerade:!:!:!:
+741802r3<substantiv>filmmakare:filmmakare:filmmakares:filmmakaren:filmmakarens:filmmakare:filmmakares:filmmakarna:filmmakarnas
+686353r4<substantiv>filmmanus:filmmanus:filmmanus:filmmanuset:filmmanusets:filmmanus:filmmanus:filmmanusen:filmmanusens
+COMPOUND(548921, 552692): film + manus
+686358r4<substantiv>filmmusik:filmmusik:filmmusiks:filmmusiken:filmmusikens::::
+COMPOUND(548921, 550058): film + musik
+686362r4<substantiv>filmning:filmning:filmnings:filmningen:filmningens:filmningar:filmningars:filmningarna:filmningarnas
+CUSTOM: y y filmnings
+686363r4<substantiv>filmografi:filmografi:filmografis:filmografin:filmografins:filmografier:filmografiers:filmografierna:filmografiernas
+835063r3<substantiv>filmotek:filmotek:filmoteks:filmoteket:filmotekets:filmotek:filmoteks:filmoteken:filmotekens
+686367r4<substantiv>filmpremiär:filmpremiär:filmpremiärs:filmpremiären:filmpremiärens:filmpremiärer:filmpremiärers:filmpremiärerna:filmpremiärernas
+COMPOUND(548921, 550248): film + premiär
+934010r4<substantiv>filmpris:filmpris:filmpris:filmpriset:filmprisets:filmpris, filmpriser:filmpris, filmprisers:filmprisen, filmpriserna:filmprisens, filmprisernas
+COMPOUND(548921, 595939): film + pris
+686375r4<substantiv>filmproducent:filmproducent:filmproducents:filmproducenten:filmproducentens:filmproducenter:filmproducenters:filmproducenterna:filmproducenternas
+COMPOUND(548921, 550260): film + producent
+689927r4<substantiv>filmproduktion:filmproduktion:filmproduktions:filmproduktionen:filmproduktionens:filmproduktioner:filmproduktioners:filmproduktionerna:filmproduktionernas
+COMPOUND(548921, 603206): film + produktion
+CUSTOM: y y filmproduktions
+686383r4<substantiv>filmprojektor:filmprojektor:filmprojektors:filmprojektorn:filmprojektorns:filmprojektorer:filmprojektorers:filmprojektorerna:filmprojektorernas
+COMPOUND(548921, 621654): film + projektor
+935964r4<substantiv>filmrecension:filmrecension:filmrecensions:filmrecensionen:filmrecensionens:filmrecensioner:filmrecensioners:filmrecensionerna:filmrecensionernas
+COMPOUND(548921, 550321): film + recension
+686391r4<substantiv>filmregissör:filmregissör:filmregissörs:filmregissören:filmregissörens:filmregissörer:filmregissörers:filmregissörerna:filmregissörernas
+COMPOUND(548921, 550335): film + regissör
+720777r4<substantiv>filmremsa:filmremsa:filmremsas:filmremsan:filmremsans:filmremsor:filmremsors:filmremsorna:filmremsornas
+COMPOUND(548921, 621747): film + remsa
+930645r4<substantiv>filmsal:filmsal:filmsals:filmsalen:filmsalens:filmsalar:filmsalars:filmsalarna:filmsalarnas
+COMPOUND(548921, 598801): film + sal
+686393r4<substantiv>filmsekvens:filmsekvens:filmsekvens:filmsekvensen:filmsekvensens:filmsekvenser:filmsekvensers:filmsekvenserna:filmsekvensernas
+COMPOUND(548921, 550472): film + sekvens
+615210r3<substantiv>filmskapare:filmskapare:filmskapares:filmskaparen:filmskaparens:filmskapare:filmskapares:filmskaparna:filmskaparnas
+CUSTOM: y y filmskapar
+709863r4<substantiv>filmskådespelare:filmskådespelare:filmskådespelares:filmskådespelaren:filmskådespelarens:filmskådespelare:filmskådespelares:filmskådespelarna:filmskådespelarnas
+COMPOUND(548921, 615447): film + skådespelare
+686400r5<substantiv>filmstjärna:filmstjärna:filmstjärnas:filmstjärnan:filmstjärnans:filmstjärnor:filmstjärnors:filmstjärnorna:filmstjärnornas
+COMPOUND(548921, 595409): film + stjärna
+CUSTOM: y y filmstjärne
+789519r4<substantiv>filmstjärneleende:filmstjärneleende:filmstjärneleendes:filmstjärneleendet:filmstjärneleendets:filmstjärneleenden:filmstjärneleendens:filmstjärneleendena:filmstjärneleendenas
+COMPOUND(686400, 555430): filmstjärna + leende
+789514r3<adjektiv>filmstjärnemässig:filmstjärnemässig:filmstjärnemässigt:filmstjärnemässiga:filmstjärnemässiga::::
+686408r4<substantiv>filmstudio:filmstudio:filmstudios:filmstudion:filmstudions:filmstudior:filmstudiors:filmstudiorna:filmstudiornas
+COMPOUND(548921, 638045): film + studio
+934019r4<substantiv>filmteam:filmteam:filmteams:filmteamet:filmteamets:filmteam:filmteams:filmteamen:filmteamens
+COMPOUND(548921, 608265): film + team
+686409r4<substantiv>filmtitel:filmtitel:filmtitels:filmtiteln:filmtitelns:filmtitlar:filmtitlars:filmtitlarna:filmtitlarnas
+COMPOUND(548921, 626697): film + titel
+944465r4<substantiv>filmvamp:filmvamp:filmvamps:filmvampen:filmvampens:filmvampar:filmvampars:filmvamparna:filmvamparnas
+COMPOUND(548921, 561999): film + vamp
+773679r3<substantiv>filmvetare:filmvetare:filmvetares:filmvetaren:filmvetarens:filmvetare:filmvetares:filmvetarna:filmvetarnas
+861631r4<substantiv>filmvisare:filmvisare:filmvisares:filmvisaren:filmvisarens:filmvisare:filmvisares:filmvisarna:filmvisarnas
+COMPOUND(548921, 620124): film + visare
+686417r4<substantiv>filmvisning:filmvisning:filmvisnings:filmvisningen:filmvisningens:filmvisningar:filmvisningars:filmvisningarna:filmvisningarnas
+COMPOUND(548921, 686418): film + visning
+CUSTOM: y y filmvisnings
+936053r4<substantiv>filmälskare:filmälskare:filmälskares:filmälskaren:filmälskarens:filmälskare:filmälskares:filmälskarna:filmälskarnas
+COMPOUND(548921, 615533): film + älskare
+658224r3<substantiv>filnamn:filnamn:filnamns:filnamnet:filnamnets:filnamn:filnamns:filnamnen:filnamnens
+CUSTOM: y y filnamns
+658250r3<substantiv>filnamnstillägg:filnamnstillägg:filnamnstilläggs:filnamnstillägget:filnamnstilläggets:filnamnstillägg:filnamnstilläggs:filnamnstilläggen:filnamnstilläggens
+CUSTOM: n n
+977802r4<substantiv>filning:filning:filnings:filningen:filningens::::
+CUSTOM: n n y
+913944r3<substantiv>filodeg:filodeg:filodegs:filodegen:filodegens::::
+961242r3<substantiv>filofax:filofax:filofax:filofaxen:filofaxens:filofaxer:filofaxers:filofaxerna:filofaxernas
+548922r3<substantiv>filolog:filolog:filologs:filologen:filologens:filologer:filologers:filologerna:filologernas
+689928r3<substantiv>filologi:filologi:filologis:filologin:filologins::::
+580045r4<adjektiv>filologisk:filologisk:filologiskt:filologiska:filologiska::::filologiske::::::::
+548923r3<substantiv>filosof:filosof:filosofs:filosofen:filosofens:filosofer:filosofers:filosoferna:filosofernas
+CUSTOM: y y filosof
+835069r3<substantiv>filosofem:filosofem:filosofems:filosofemet:filosofemets:filosofemer:filosofemers:filosofemerna, filosofemen:filosofemernas, filosofemens
+586637r5<verb>filosofera:filosofera:filosoferade:filosoferat:filosoferar:filosofera:filosoferas:filosoferades:filosoferats:filosoferas::::filosoferande:
+622842r5<substantiv>filosofi:filosofi:filosofis:filosofin, filosofien:filosofins, filosofiens:filosofier:filosofiers:filosofierna:filosofiernas
+CUSTOM: y y filosofi
+689930r3<adjektiv>filosofie:filosofie:filosofie:filosofie:filosofie:!:!:!:
+741808r3<substantiv>filosofilärare::::::::
+COMPOUND(622842, 560239): filosofi + lärare
+580048r4<adjektiv>filosofisk:filosofisk:filosofiskt:filosofiska:filosofiska::::filosofiske
+884301r3<substantiv>filpaket:filpaket:filpakets:filpaketet:filpaketets:filpaket:filpakets:filpaketen:filpaketens
+913524r4<substantiv>filserver:filserver:filservers:filservern:filserverns:filservrar:filservrars:filservrarna:filservrarnas
+COMPOUND(555152, 632192): fil + server
+884307r3<substantiv>filspån:filspån:filspåns:filspånet:filspånets:filspån:filspåns:filspånen:filspånens
+913950r4<substantiv>filstorlek:filstorlek:filstorleks:filstorleken:filstorlekens:filstorlekar:filstorlekars:filstorlekarna:filstorlekarnas
+COMPOUND(555152, 598936): fil + storlek
+913544r4<substantiv>filsuffix:filsuffix:filsuffix:filsuffixet:filsuffixets:filsuffix:filsuffix:filsuffixen:filsuffixens
+COMPOUND(555152, 553002): fil + suffix
+888428r3<substantiv>filsystem:filsystem:filsystems:filsystemet:filsystemets:filsystem:filsystems:filsystemen:filsystemens
+551129r26<substantiv>filt:filt:filts:filten:filtens:filtar:filtars:filtarna:filtarnas
+CUSTOM: y n filt
+896399r3<verb>filta:filta:filtade:filtat:filtar:filta:::::filtad:filtat:filtade::
+CUSTOM: y n
+572239r3<adjektiv>filtaktig:filtaktig:filtaktigt:filtaktiga:filtaktiga::::
+790831r3<adjektiv>filtartad:filtartad:filtartat:filtartade:filtartade:!:!:!:
+649636r6<substantiv>filter:filter:filters:filtret:filtrets:filter:filters:filtren:filtrens
+CUSTOM: y y filter
+835079r3<substantiv>filtercigarett::::::::
+COMPOUND(649636, 548536): filter + cigarett
+797638r3<adjektiv>filthårig:filthårig:filthårigt:filthåriga:filthåriga::::
+949642r4<substantiv>filtjänst:filtjänst:filtjänsts:filtjänsten:filtjänstens:filtjänster:filtjänsters:filtjänsterna:filtjänsternas
+COMPOUND(555152, 550677): fil + tjänst
+790834r3<adjektiv>filtmarkerad:filtmarkerad:filtmarkerat:filtmarkerade:filtmarkerade:!:!:!:
+977812r4<substantiv>filtning:filtning:filtnings:filtningen:filtningens::::
+CUSTOM: y n
+835080r3<substantiv>filtrat:filtrat:filtrats:filtratet:filtratets:filtrat:filtrats:filtraten:filtratens
+546535r6<verb>filtrera:filtrera:filtrerade:filtrerat:filtrerar:filtrera:filtreras:filtrerades:filtrerats:filtreras:filtrerad:filtrerat:filtrerade:filtrerande:
+CUSTOM: y y
+569056r3<adjektiv>filtrerbar:filtrerbar:filtrerbart:filtrerbara:filtrerbara::::
+689931r3<substantiv>filtrering:filtrering:filtrerings:filtreringen:filtreringens:filtreringar:filtreringars:filtreringarna:filtreringarnas
+CUSTOM: y y filtrerings
+835086r4<substantiv>filtrerpapper:filtrerpapper:filtrerpappers:filtrerpapperet, filtrerpappret:filtrerpapperets, filtrerpapprets:filtrerpapper:filtrerpappers:filtrerpapperna, filtrerpappren, filtrerpapperen:filtrerpappernas, filtrerpapprens, filtrerpapperens
+COMPOUND(546535, 556527): filtrera + papper
+904281r4<substantiv>filttoffla:filttoffla:filttofflas:filttofflan:filttofflans:filttofflor:filttofflors:filttofflorna:filttofflornas
+COMPOUND(551129, 595545): filt + toffla
+677514r4<substantiv>filtväv:filtväv:filtvävs:filtväven:filtvävens:filtvävar:filtvävars:filtvävarna:filtvävarnas
+COMPOUND(551129, 552117): filt + väv
+CUSTOM: y n n
+658232r3<substantiv>filtyp:filtyp:filtyps:filtypen:filtypens:filtyper:filtypers:filtyperna:filtypernas
+548924r3<substantiv>filur:filur:filurs:filuren:filurens:filurer:filurers:filurerna:filurernas
+572242r3<adjektiv>filurig:filurig:filurigt:filuriga:filuriga::::
+913534r4<substantiv>filändelse:filändelse:filändelses:filändelsen:filändelsens:filändelser:filändelsers:filändelserna:filändelsernas
+COMPOUND(555152, 620410): fil + ändelse
+658274r3<substantiv>filöverföring:filöverföring:filöverförings:filöverföringen:filöverföringens:filöverföringar:filöverföringars:filöverföringarna:filöverföringarnas
+CUSTOM: y y filöverförings
+689932r4<substantiv>fimbulvinter:fimbulvinter:fimbulvinters:fimbulvintern:fimbulvinterns:fimbulvintrar:fimbulvintrars:fimbulvintrarna:fimbulvintrarnas
+551131r5<substantiv>fimp:fimp:fimps:fimpen:fimpens:fimpar:fimpars:fimparna:fimparnas
+CUSTOM: y n
+546536r5<verb>fimpa:fimpa:fimpade:fimpat:fimpar:fimpa:fimpas:fimpades:fimpats:fimpas:fimpad:fimpat:fimpade:fimpande:
+555495r26<adjektiv>fin:fin:fint:fina:fina:finare:finast:finaste:fine::::::::
+CUSTOM: y n
+548926r10<substantiv>final:final:finals:finalen:finalens:finaler:finalers:finalerna:finalernas
+CUSTOM: y y final
+681224r6<substantiv>finaldans:finaldans:finaldans:finaldansen:finaldansens:finaldanser:finaldansers:finaldanserna:finaldansernas
+COMPOUND(548926, 548569): final + dans
+640321r6<verb>finalfalla:finalfalla:finalföll:finalfallit:finalfaller::!:!:!:!:::::
+COMPOUND(548926, 585306): final + falla
+558350r3<substantiv>finalist:finalist:finalists:finalisten:finalistens:finalister:finalisters:finalisterna:finalisternas
+CUSTOM: y y finalist
+686419r4<substantiv>finalmatch:finalmatch:finalmatchs:finalmatchen:finalmatchens:finalmatcher:finalmatchers:finalmatcherna:finalmatchernas
+COMPOUND(548926, 550011): final + match
+686427r4<substantiv>finalseger:finalseger:finalsegers:finalsegern:finalsegerns:finalsegrar:finalsegrars:finalsegrarna:finalsegrarnas
+COMPOUND(548926, 556336): final + seger
+639108r16<substantiv>finans:finans:finans:finansen:finansens:finanser:finansers:finanserna:finansernas
+CUSTOM: y y finans +finans
+741809r3<substantiv>finansborgarråd:finansborgarråd:finansborgarråds:finansborgarrådet:finansborgarrådets:finansborgarråd:finansborgarråds:finansborgarråden:finansborgarrådens
+686435r4<substantiv>finanschef:finanschef:finanschefs:finanschefen:finanschefens:finanschefer:finanschefers:finanscheferna:finanschefernas
+COMPOUND(639108, 548529): finans + chef
+686437r4<substantiv>finansdepartement:finansdepartement:finansdepartements:finansdepartementet:finansdepartementets:finansdepartement:finansdepartements:finansdepartementen:finansdepartementens
+COMPOUND(639108, 552309): finans + departement
+639087r5<substantiv>finansfobi:finansfobi:finansfobis:finansfobin:finansfobins:finansfobier:finansfobiers:finansfobierna:finansfobiernas
+DEFINITION 1: Ångest inför räkningar eller meddelanden från myndigheter, som yttrar sig i motvilja att läsa sådana brev
+COMPOUND(639108, 616927): finans + fobi
+774666r4<substantiv>finanshaj:finanshaj:finanshajs:finanshajen:finanshajens:finanshajar:finanshajars:finanshajarna:finanshajarnas
+COMPOUND(639108, 558965): finans + haj
+689933r4<adjektiv>finansiell:finansiell:finansiellt:finansiella:finansiella::::finansielle
+546537r5<verb>finansiera:finansiera:finansierade:finansierat:finansierar:finansiera:finansieras:finansierades:finansierats:finansieras:finansierad:finansierat:finansierade:finansierande:
+689934r4<substantiv>finansiering:finansiering:finansierings:finansieringen:finansieringens:finansieringar:finansieringars:finansieringarna:finansieringarnas
+CUSTOM: y y finansierings +finansierings
+689940r4<substantiv>finansieringsplan:finansieringsplan:finansieringsplans:finansieringsplanen:finansieringsplanens:finansieringsplaner:finansieringsplaners:finansieringsplanerna:finansieringsplanernas
+COMPOUND(689934, 550205): finansiering + plan
+686443r3<substantiv>finansinspektion:finansinspektion:finansinspektions:finansinspektionen:finansinspektionens::::
+CUSTOM: y y finansinspektions
+548928r3<substantiv>finansiär:finansiär:finansiärs:finansiären:finansiärens:finansiärer:finansiärers:finansiärerna:finansiärernas
+861496r4<substantiv>finanskris:finanskris:finanskris:finanskrisen:finanskrisens:finanskriser:finanskrisers:finanskriserna:finanskrisernas
+COMPOUND(639108, 549772): finans + kris
+CUSTOM: y y finanskris
+686447r4<substantiv>finansman:finansman:finansmans:finansmannen:finansmannens:finansmän:finansmäns:finansmännen:finansmännens
+COMPOUND(639108, 557796): finans + man
+686455r5<substantiv>finansmarknad:finansmarknad:finansmarknads:finansmarknaden:finansmarknadens:finansmarknader:finansmarknaders:finansmarknaderna:finansmarknadernas
+COMPOUND(639108, 549997): finans + marknad
+CUSTOM: y y finansmarknads
+773654r3<substantiv>finansmarknadsminister::::::::
+COMPOUND(686455, 616627): finansmarknad + minister
+686471r4<substantiv>finansminister:finansminister:finansministers:finansministern:finansministerns:finansministrar:finansministrars:finansministrarna:finansministrarnas
+COMPOUND(639108, 616627): finans + minister
+CUSTOM: y y finansminister
+686463r4<substantiv>finansministerium:finansministerium:finansministeriums:finansministeriet:finansministeriets:finansministerier:finansministeriers:finansministerierna:finansministeriernas
+COMPOUND(639108, 616763): finans + ministerium
+894727r4<substantiv>finansoro:finansoro:finansoros:finansoron:finansorons:!:!:!:!
+COMPOUND(639108, 556915): finans + oro
+712525r4<substantiv>finanspolitik:finanspolitik:finanspolitiks:finanspolitiken:finanspolitikens::::
+COMPOUND(639108, 550224): finans + politik
+580052r3<adjektiv>finanspolitisk:finanspolitisk:finanspolitiskt:finanspolitiska:finanspolitiska::::
+565821r3<adjektiv>finansrättslig:finansrättslig:finansrättsligt:finansrättsliga:finansrättsliga::::
+605524r3<substantiv>finansverksamhet:finansverksamhet:finansverksamhets:finansverksamheten:finansverksamhetens:finansverksamheter:finansverksamheters:finansverksamheterna:finansverksamheternas
+CUSTOM: y y finansverksamhets
+565824r3<adjektiv>finansvetenskaplig:finansvetenskaplig:finansvetenskapligt:finansvetenskapliga:finansvetenskapliga::::
+774674r4<substantiv>finbageri:finbageri:finbageris:finbageriet:finbageriets:finbagerier:finbageriers:finbagerierna:finbageriernas
+COMPOUND(555495, 555668): fin + bageri
+729878r4<substantiv>finbearbetning:finbearbetning:finbearbetnings:finbearbetningen:finbearbetningens:finbearbetningar:finbearbetningars:finbearbetningarna:finbearbetningarnas
+COMPOUND(555495, 632150): fin + bearbetning
+572245r3<adjektiv>finbladig:finbladig:finbladigt:finbladiga:finbladiga::::
+572248r3<adjektiv>findroppig:findroppig:findroppigt:findroppiga:findroppiga::::
+620540r3<adverb>finemang:finemang
+548929r4<substantiv>finess:finess:finess:finessen:finessens:finesser:finessers:finesserna:finessernas
+CUSTOM: y y finess
+774683r4<adjektiv>finessrik:finessrik:finessrikt:finessrika:finessrika::::
+COMPOUND(548929, 563125): finess + rik
+572251r3<adjektiv>finfibrig:finfibrig:finfibrigt:finfibriga:finfibriga::::
+686472r4<adjektiv>finfin:finfin:finfint:finfina:finfina:!:!:!:finfine
+977822r3<substantiv>finfräsning:finfräsning:finfräsnings:finfräsningen:finfräsningens::::
+546538r9<verb>finfördela:finfördela:finfördelade:finfördelat:finfördelar:finfördela:finfördelas:finfördelades:finfördelats:finfördelas:finfördelad:finfördelat:finfördelade:finfördelande:
+COMPOUND(555495, 546630): fin + fördela
+689948r4<substantiv>finfördelning:finfördelning:finfördelnings:finfördelningen:finfördelningens:finfördelningar:finfördelningars:finfördelningarna:finfördelningarnas
+CUSTOM: y y finfördelnings
+774687r3<adjektiv>finförgrenad:finförgrenad:finförgrenat:finförgrenade:finförgrenade:!:!:!:
+971924r3<egennamn>Fingal:Fingal:Fingals
+623168r22<substantiv>finger:finger:fingers:fingret:fingrets:fingrar:fingrars:fingrarna:fingrarnas
+BASEWORDS: finger
+CUSTOM: y y finger
+546539r5<verb>fingera:fingera:fingerade:fingerat:fingerar:fingera:fingeras:fingerades:fingerats:fingeras:fingerad:fingerat:fingerade:fingerande:
+686473r3<adjektiv>fingerad:fingerad:fingerat:fingerade:fingerade:!:!:!:
+686474r4<substantiv>fingeravtryck:fingeravtryck:fingeravtrycks:fingeravtrycket:fingeravtryckets:fingeravtryck:fingeravtrycks:fingeravtrycken:fingeravtryckens
+COMPOUND(623168, 552216): finger + avtryck
+551132r3<substantiv>fingerborg:fingerborg:fingerborgs:fingerborgen:fingerborgens:fingerborgar:fingerborgars:fingerborgarna:fingerborgarnas
+835099r3<substantiv>fingerborgsblomma:fingerborgsblomma:fingerborgsblommas:fingerborgsblomman:fingerborgsblommans:fingerborgsblommor:fingerborgsblommors:fingerborgsblommorna:fingerborgsblommornas
+801793r3<adjektiv>fingerbred:fingerbred:fingerbrett:fingerbreda:fingerbreda::::
+951063r4<substantiv>fingerböld:fingerböld:fingerbölds:fingerbölden:fingerböldens:fingerbölder:fingerbölders:fingerbölderna:fingerböldernas
+COMPOUND(623168, 548513): finger + böld
+681286r6<substantiv>fingerdans:fingerdans:fingerdans:fingerdansen:fingerdansens:fingerdanser:fingerdansers:fingerdanserna:fingerdansernas
+COMPOUND(623168, 548569): finger + dans
+790837r3<adjektiv>fingerformad:fingerformad:fingerformat:fingerformade:fingerformade:!:!:!:
+572254r4<adjektiv>fingerfärdig:fingerfärdig:fingerfärdigt:fingerfärdiga:fingerfärdiga:fingerfärdigare:fingerfärdigast:fingerfärdigaste:fingerfärdige
+689952r3<substantiv>fingerfärdighet:fingerfärdighet:fingerfärdighets:fingerfärdigheten:fingerfärdighetens::::
+CUSTOM: y y fingerfärdighets
+686475r4<substantiv>fingerfärg:fingerfärg:fingerfärgs:fingerfärgen:fingerfärgens:fingerfärger:fingerfärgers:fingerfärgerna:fingerfärgernas
+COMPOUND(623168, 549002): finger + färg
+774690r3<substantiv>fingering:fingering:fingerings:fingeringen:fingeringens::::
+766826r4<substantiv>fingerled:fingerled:fingerleds:fingerleden:fingerledens:fingerleder:fingerleders:fingerlederna:fingerledernas
+COMPOUND(623168, 556257): finger + led
+826415r3<adjektiv>fingerlik:fingerlik:fingerlikt:fingerlika:fingerlika::::
+681302r17<substantiv>fingerpekande:fingerpekande:fingerpekandes:fingerpekandet:fingerpekandets::::
+COMPOUND(623168, 681345): finger + pekande
+639446r8<verb>fingerplocka:fingerplocka:fingerplockade:fingerplockat:fingerplockar:fingerplocka:fingerplockas:fingerplockades:fingerplockats:fingerplockas:fingerplockad:fingerplockat:fingerplockade:fingerplockande:
+COMPOUND(623168, 547481): finger + plocka
+896057r4<substantiv>fingerring:fingerring:fingerrings:fingerringen:fingerringens:fingerringar:fingerringars:fingerringarna:fingerringarnas
+COMPOUND(623168, 597520): finger + ring
+799301r3<adjektiv>fingerstyrd:fingerstyrd:fingerstyrt:fingerstyrda:fingerstyrda::::
+689956r3<substantiv>fingersättning:fingersättning:fingersättnings:fingersättningen:fingersättningens:fingersättningar:fingersättningars:fingersättningarna:fingersättningarnas
+CUSTOM: y y fingersättnings
+551140r4<substantiv>fingertopp:fingertopp:fingertopps:fingertoppen:fingertoppens:fingertoppar:fingertoppars:fingertopparna:fingertopparnas
+CUSTOM: y y fingertopps
+689957r4<substantiv>fingertoppskänsla:fingertoppskänsla:fingertoppskänslas:fingertoppskänslan:fingertoppskänslans::::
+COMPOUND(551140, 555604): fingertopp + känsla
+681355r6<substantiv>fingertutt:fingertutt:fingertutts:fingertutten:fingertuttens:fingertuttar:fingertuttars:fingertuttarna:fingertuttarnas
+COMPOUND(623168, 857552): finger + tutt, tutte
+686483r4<substantiv>fingervante:fingervante:fingervantes:fingervanten:fingervantens:fingervantar:fingervantars:fingervantarna:fingervantarnas
+COMPOUND(623168, 562068): finger + vante
+797642r3<adjektiv>fingervarm:fingervarm:fingervarmt:fingervarma:fingervarma::::
+551141r3<substantiv>fingervisning:fingervisning:fingervisnings:fingervisningen:fingervisningens:fingervisningar:fingervisningars:fingervisningarna:fingervisningarnas
+CUSTOM: y y fingervisnings
+622557r3<verb>fingra:fingra:fingrade:fingrat:fingrar:fingra:fingras:fingrades:fingrats:fingras:fingrad:fingrat:fingrade:fingrande:
+790840r3<adjektiv>fingrad:fingrad:fingrat:fingrade:fingrade:!:!:!:
+686491r4<verb>fingranska:fingranska:fingranskade:fingranskat:fingranskar:fingranska:fingranskas:fingranskades:fingranskats:fingranskas:fingranskad:fingranskat:fingranskade:fingranskande:
+686499r3<substantiv>fingranskning:fingranskning:fingransknings:fingranskningen:fingranskningens::::
+CUSTOM: y y fingransknings
+572257r3<adjektiv>fingrynig:fingrynig:fingrynigt:fingryniga:fingryniga::::
+546540r5<verb>finhacka:finhacka:finhackade:finhackat:finhackar:finhacka:finhackas:finhackades:finhackats:finhackas:finhackad:finhackat:finhackade:finhackande:
+686503r5<substantiv>finhet:finhet:finhets:finheten:finhetens:finheter:finheters:finheterna:finheternas
+CUSTOM: y y finhets
+686511r4<substantiv>finhetsgrad:finhetsgrad:finhetsgrads:finhetsgraden:finhetsgradens:finhetsgrader:finhetsgraders:finhetsgraderna:finhetsgradernas
+COMPOUND(686503, 549117): finhet + grad
+835111r3<adjektiv>finhyllt:finhyllt:finhyllt:finhyllta:finhyllta::::
+774694r4<verb>finhyvla:finhyvla:finhyvlade:finhyvlat:finhyvlar:finhyvla:finhyvlas:finhyvlades:finhyvlats:finhyvlas:finhyvlad:finhyvlat:finhyvlade::
+COMPOUND(555495, 546897): fin + hyvla
+572260r3<adjektiv>finhårig:finhårig:finhårigt:finhåriga:finhåriga::::
+CUSTOM: y n n
+835113r3<verb>fininställa:fininställa:fininställde:fininställt:fininställer:fininställ:fininställas:fininställdes:fininställts:fininställs:fininställd:fininställt:fininställda:fininställande:
+596729r3<substantiv>fininställning:fininställning:fininställnings:fininställningen:fininställningens:fininställningar:fininställningars:fininställningarna:fininställningarnas
+CUSTOM: y y fininställnings
+686519r4<substantiv>finish:finish:finishs:finishen:finishens:finishar:finishars:finisharna:finisharnas
+649134r3<adjektiv>finit:finit:finit:finita:finita::::
+CUSTOM: y n
+686521r3<adverb>finito:finito
+586638r4<verb>finjustera:finjustera:finjusterade:finjusterat:finjusterar:finjustera:finjusteras:finjusterades:finjusterats:finjusteras:finjusterad:finjusterat:finjusterade:finjusterande:
+596737r3<substantiv>finjustering:finjustering:finjusterings:finjusteringen:finjusteringens:finjusteringar:finjusteringars:finjusteringarna:finjusteringarnas
+CUSTOM: y y finjusterings
+629293r6<substantiv>fink:fink:finks:finken:finkens:finkar:finkars:finkarna:finkarnas
+CUSTOM: y n
+629295r3<substantiv>finka:finka:finkas:finkan:finkans:finkor:finkors:finkorna:finkornas
+884219r4<verb>finkalibrera:finkalibrera:finkalibrerade:finkalibrerat:finkalibrerar:finkalibrera:finkalibreras:finkalibrerades:finkalibrerats:finkalibreras:finkalibrerad:finkalibrerat:finkalibrerade:finkalibrerande:
+COMPOUND(555495, 547064): fin + kalibrera
+572263r3<adjektiv>finkalibrig:finkalibrig:finkalibrigt:finkalibriga:finkalibriga::::
+546541r5<verb>finkamma:finkamma:finkammade:finkammat:finkammar:finkamma:finkammas:finkammades:finkammats:finkammas:finkammad:finkammat:finkammade:finkammande:
+774702r3<substantiv>finkamning:finkamning:finkamnings:finkamningen:finkamningens:finkamningar:finkamningars:finkamningarna:finkamningarnas
+835129r3<substantiv>finkart:finkart:finkarts:finkarten:finkartens:finkarter:finkarters:finkarterna:finkarternas
+686522r3<substantiv>finkel:finkel:finkels:finkeln:finkelns::::
+774710r3<substantiv>finkeldoft:finkeldoft:finkeldofts:finkeldoften:finkeldoftens::::
+774714r4<substantiv>finkelolja:finkelolja:finkeloljas:finkeloljan:finkeloljans:finkeloljor:finkeloljors:finkeloljorna:finkeloljornas
+774720r3<adjektiv>finklippt:finklippt:finklippt:finklippta:finklippta::::
+977830r3<adjektiv>finkluven:finkluven:finkluvet:finkluvna:finkluvna::::::::::::
+741815r3<adjektiv>finklädd:finklädd:finklätt:finklädda:finklädda:!:!:!:finklädde
+774723r4<substantiv>finkläder:!:!:!:!:finkläder:finkläders:finkläderna:finklädernas
+COMPOUND(555495, 604465): fin + kläder
+774727r4<substantiv>finklänning:finklänning:finklännings:finklänningen:finklänningens:finklänningar:finklänningars:finklänningarna:finklänningarnas
+COMPOUND(555495, 597117): fin + klänning
+572266r3<adjektiv>finkornig:finkornig:finkornigt:finkorniga:finkorniga::::
+774735r3<substantiv>finkornighet:finkornighet:finkornighets:finkornigheten:finkornighetens::::
+774743r4<substantiv>finkostym:finkostym:finkostyms:finkostymen:finkostymens:finkostymer:finkostymers:finkostymerna:finkostymernas
+COMPOUND(555495, 549745): fin + kostym
+913960r4<substantiv>finkrog:finkrog:finkrogs:finkrogen:finkrogens:finkrogar:finkrogars:finkrogarna:finkrogarnas
+COMPOUND(555495, 551624): fin + krog
+950054r4<verb>finkrossa:finkrossa:finkrossade:finkrossat:finkrossar:finkrossa:finkrossas:finkrossades:finkrossats:finkrossas:finkrossad:finkrossat:finkrossade:finkrossande:
+COMPOUND(555495, 547239): fin + krossa
+741819r3<substantiv>finkultur:finkultur:finkulturs:finkulturen:finkulturens::::
+741824r3<adjektiv>finkulturell:finkulturell:finkulturellt:finkulturella:finkulturella:!:!:!:
+565827r4<adjektiv>finkänslig:finkänslig:finkänsligt:finkänsliga:finkänsliga:finkänsligare:finkänsligast:finkänsligaste:finkänslige
+774751r3<substantiv>finkänslighet:finkänslighet:finkänslighets:finkänsligheten:finkänslighetens::::
+913970r4<substantiv>finkök:finkök:finköks:finköket:finkökets:finkök:finköks:finköken:finkökens
+COMPOUND(555495, 552618): fin + kök
+CUSTOM: y n n
+554017r5<egennamn>Finland:Finland:Finlands
+CUSTOM: y y finlands
+586642r4<verb>finlandisera:finlandisera:finlandiserade:finlandiserat:finlandiserar:finlandisera:finlandiseras:finlandiserades:finlandiserats:finlandiseras:finlandiserad:finlandiserat:finlandiserade:finlandiserande:
+835141r3<substantiv>finlandism:finlandism:finlandisms:finlandismen:finlandismens:finlandismer:finlandismers:finlandismerna:finlandismernas
+558991r14<substantiv>finlandssvensk:finlandssvensk:finlandssvensks:finlandssvensken:finlandssvenskens:finlandssvenskar:finlandssvenskars:finlandssvenskarna:finlandssvenskarnas
+COMPOUND(554017, 555323): Finland + svensk
+558994r4<adjektiv>finlandssvensk:finlandssvensk:finlandssvenskt:finlandssvenska:finlandssvenska:!:!:!:finlandssvenske
+COMPOUND(554017, 555328): Finland + svensk
+558995r3<substantiv>finlandssvenska:finlandssvenska:finlandssvenskans:finlandssvenskan:finlandssvenskans:finlandssvenskor:finlandssvenskors:finlandssvenskorna:finlandssvenskornas
+835149r3<substantiv>finlek:finlek:finleks:finleken:finlekens:finlekar:finlekars:finlekarna:finlekarnas
+689960r3<adjektiv>finlemmad:finlemmad:finlemmat:finlemmade:finlemmade:!:!:!:
+774755r3<substantiv>finlir:finlir:finlirs:finliret:finlirets::::
+609488r3<substantiv>finländare:finländare:finländares:finländaren:finländarens:finländare:finländares:finländarna:finländarnas
+CUSTOM: y y finländar
+563209r4<adjektiv>finländsk:finländsk:finländskt:finländska:finländska:!:!:!:finländske
+594002r3<substantiv>finländska:finländska:finländskas:finländskan:finländskans:finländskor:finländskors:finländskorna:finländskornas
+720813r6<verb>finmala:finmala:finmalde:finmalt:finmal:finmal:finmalas:finmaldes:finmalts:finmals, finmales:finmald, finmalen:finmalt, finmalet:finmalda, finmalna:finmalande:
+COMPOUND(555495, 560472): fin + mala
+558997r4<adjektiv>finmaskig:finmaskig:finmaskigt:finmaskiga:finmaskiga:finmaskigare:finmaskigast:finmaskigaste:
+774759r3<substantiv>finmaskighet:finmaskighet:finmaskighets:finmaskigheten:finmaskighetens::::
+913978r4<substantiv>finmat:finmat:finmats:finmaten:finmatens:!:!:!:!
+COMPOUND(555495, 556206): fin + mat
+774763r3<adjektiv>finmejslad:finmejslad:finmejslat:finmejslade:finmejslade:!:!:!:
+835157r3<substantiv>finmekaniker:finmekaniker:finmekanikers:finmekanikern:finmekanikerns:finmekaniker:finmekanikers:finmekanikerna:finmekanikernas
+580055r4<adjektiv>finmekanisk:finmekanisk:finmekaniskt:finmekaniska:finmekaniska:!:!:!:finmekaniske
+907466r3<substantiv>finmiddag:finmiddag:finmiddags:finmiddagen:finmiddagens:finmiddagar:finmiddagars:finmiddagarna:finmiddagarnas
+774767r3<substantiv>finmotorik:finmotorik:finmotoriks:finmotoriken:finmotorikens::::
+774773r3<adjektiv>finmotorisk:finmotorisk:finmotoriskt:finmotoriska:finmotoriska::::
+926023r4<substantiv>finmätning:finmätning:finmätnings:finmätningen:finmätningens:finmätningar:finmätningars:finmätningarna:finmätningarnas
+COMPOUND(555495, 648296): fin + mätning
+555107r9<verb>finna:finna:fann:funnit:finner:finn:finnas:fanns:funnits:finns, finnes:funnen:funnet:funna:finnande:finnandes
+977834r3<substantiv>finnare:finnare:finnares:finnaren:finnarens:finnare:finnares:finnarna:finnarnas
+591644r4<deponens>finnas:finnas:fanns:funnits:finns:
+977838r3<substantiv>finnbygd:finnbygd:finnbygds:finnbygden:finnbygdens:finnbygder:finnbygders:finnbygderna:finnbygdernas
+555842r4<substantiv>finne:finne:finnes:finnen:finnens:finnar:finnars:finnarna:finnarnas
+DEFINITION 1: Man från Finland
+572269r5<adjektiv>finnig:finnig:finnigt:finniga:finniga:finnigare:finnigast:finnigaste:finnige
+977846r3<substantiv>finnighet:finnighet:finnighets:finnigheten:finnighetens::::
+835167r3<substantiv>finnjolle:finnjolle:finnjolles:finnjollen:finnjollens:finnjollar:finnjollars:finnjollarna:finnjollarnas
+741828r3<substantiv>finnkamp:finnkamp:finnkamps:finnkampen:finnkampens:finnkamper:finnkampers:finnkamperna:finnkampernas
+977850r4<substantiv>finpapper:finpapper:finpappers:finpapperet, finpappret:finpapperets, finpapprets:finpapper:finpappers:finpapperna, finpappren, finpapperen:finpappernas, finpapprens, finpapperens
+COMPOUND(555495, 556527): fin + papper
+CUSTOM: y n finpappers
+977862r3<substantiv>finplanering:finplanering:finplanerings:finplaneringen:finplaneringens:finplaneringar:finplaneringars:finplaneringarna:finplaneringarnas
+586646r4<verb>finpolera:finpolera:finpolerade:finpolerat:finpolerar:finpolera:finpoleras:finpolerades:finpolerats:finpoleras:finpolerad:finpolerat:finpolerade:finpolerande:
+977870r3<substantiv>finpolering:finpolering:finpolerings:finpoleringen:finpoleringens:finpoleringar:finpoleringars:finpoleringarna:finpoleringarnas
+572270r3<adjektiv>finporig:finporig:finporigt:finporiga:finporiga::::
+960161r4<substantiv>finporslin:finporslin:finporslins:finporslinet:finporslinets::::
+COMPOUND(555495, 695209): fin + porslin
+790841r3<adjektiv>finpulveriserad:finpulveriserad:finpulveriserat:finpulveriserade:finpulveriserade:!:!:!:
+546542r5<verb>finputsa:finputsa:finputsade:finputsat:finputsar:finputsa:finputsas:finputsades:finputsats:finputsas:finputsad:finputsat:finputsade:finputsande:
+774804r3<substantiv>finputsning:finputsning:finputsnings:finputsningen:finputsningens:finputsningar:finputsningars:finputsningarna:finputsningarnas
+572273r3<adjektiv>finrandig:finrandig:finrandigt:finrandiga:finrandiga::::
+572276r3<adjektiv>finrastrig:finrastrig:finrastrigt:finrastriga:finrastriga::::
+790844r3<adjektiv>finringad:finringad:finringat:finringade:finringade:!:!:!:
+774812r3<adjektiv>finriven:finriven:finrivet:finrivna:finrivna::::
+741836r4<substantiv>finrum:finrum:finrums:finrummet:finrummets:finrum:finrums:finrummen:finrummens
+COMPOUND(555495, 571182): fin + rum
+774815r4<substantiv>finservis:finservis:finservis:finservisen:finservisens:finserviser:finservisers:finserviserna:finservisernas
+COMPOUND(555495, 645478): fin + servis
+977878r3<substantiv>finsilver:finsilver:finsilvers:finsilvret:finsilvrets::::
+CUSTOM: y n
+563135r4<adjektiv>finsk:finsk:finskt:finska:finska:finskare:finskast:finskaste:fin

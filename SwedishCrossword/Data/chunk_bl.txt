@@ -1,0 +1,673 @@
+(689019, 691115): elenergi + försörjning
+553671r3<egennamn>Eleonora:Eleonora:Eleonoras
+548760r11<substantiv>elev:elev:elevs:eleven:elevens:elever:elevers:eleverna:elevernas
+CUSTOM: y y elev
+612458r3<substantiv>elevarbete:elevarbete:elevarbetes:elevarbetet:elevarbetets:elevarbeten:elevarbetens:elevarbetena:elevarbetenas
+636832r4<substantiv>elevation:elevation:elevations:elevationen:elevationens:elevationer:elevationers:elevationerna:elevationernas
+CUSTOM: y y elevations
+636840r4<substantiv>elevationsvinkel:elevationsvinkel:elevationsvinkels:elevationsvinkeln:elevationsvinkelns:elevationsvinklar:elevationsvinklars:elevationsvinklarna:elevationsvinklarnas
+COMPOUND(636832, 600473): elevation + vinkel
+976320r3<substantiv>elevator:elevator:elevators:elevatorn:elevatorns:elevatorer:elevatorers:elevatorerna:elevatorernas
+CUSTOM: y n
+671443r4<substantiv>elevavgift:elevavgift:elevavgifts:elevavgiften:elevavgiftens:elevavgifter:elevavgifters:elevavgifterna:elevavgifternas
+COMPOUND(548760, 548299): elev + avgift
+790559r3<adjektiv>elevcentrerad:elevcentrerad:elevcentrerat:elevcentrerade:elevcentrerade:!:!:!:
+928634r4<substantiv>elevhem:elevhem:elevhems:elevhemmet:elevhemmets:elevhem:elevhems:elevhemmen:elevhemmens
+COMPOUND(548760, 555169): elev + hem
+CUSTOM: y y elevhems
+930622r4<substantiv>elevkår:elevkår:elevkårs:elevkåren:elevkårens:elevkårer:elevkårers:elevkårerna:elevkårernas
+COMPOUND(548760, 559877): elev + kår
+753911r3<substantiv>elevråd:elevråd:elevråds:elevrådet:elevrådets:elevråd:elevråds:elevråden:elevrådens
+CUSTOM: y y elevråds
+701529r3<adjektiv>elevstyrd:elevstyrd:elevstyrt:elevstyrda:elevstyrda:!:!:!:!
+753924r4<substantiv>elevvård:elevvård:elevvårds:elevvården:elevvårdens::::
+CUSTOM: y y elevvårds
+753917r4<substantiv>elevvårdskonferens:elevvårdskonferens:elevvårdskonferens:elevvårdskonferensen:elevvårdskonferensens:elevvårdskonferenser:elevvårdskonferensers:elevvårdskonferenserna:elevvårdskonferensernas
+COMPOUND(753924, 549618): elevvård + konferens
+891211r4<substantiv>elexport:elexport:elexports:elexporten:elexportens::::
+COMPOUND(557664, 671468): el + export
+552346r3<substantiv>elfel:elfel:elfels:elfelet:elfelets:elfel:elfels:elfelen:elfelens
+689008r4<substantiv>elfenben:elfenben:elfenbens:elfenbenet:elfenbenets::::
+CUSTOM: y y elfenbens
+790562r3<adjektiv>elfenbensfärgad:elfenbensfärgad:elfenbensfärgat:elfenbensfärgade:elfenbensfärgade:!:!:!:
+797510r3<adjektiv>elfenbensgul:elfenbensgul:elfenbensgult:elfenbensgula:elfenbensgula::::
+554010r3<egennamn>Elfenbenskusten:Elfenbenskusten:Elfenbenskustens
+976328r3<substantiv>elfenbenspalm:elfenbenspalm:elfenbenspalms:elfenbenspalmen:elfenbenspalmens:elfenbenspalmer:elfenbenspalmers:elfenbenspalmerna:elfenbenspalmernas
+884859r4<adjektiv>elfenbensvit:elfenbensvit:elfenbensvitt:elfenbensvita:::::::::::::
+COMPOUND(689008, 556574): elfenben + vit
+859122r4<substantiv>elfiol:elfiol:elfiols:elfiolen:elfiolens:elfioler:elfiolers:elfiolerna:elfiolernas
+COMPOUND(557664, 559173): el + fiol
+CUSTOM: y n n
+877599r4<substantiv>elfirma:elfirma:elfirmas:elfirman:elfirmans:elfirmor:elfirmors:elfirmorna:elfirmornas
+COMPOUND(557664, 631626): el + firma
+913041r4<substantiv>elfordon:elfordon:elfordons:elfordonet:elfordonets:elfordon:elfordons:elfordonen:elfordonens
+COMPOUND(557664, 552388): el + fordon
+553197r3<egennamn>Elfsborg:Elfsborg:Elfsborgs
+CUSTOM: y n Elfsborgs
+972804r3<egennamn>Elfström:Elfström:Elfströms
+571070r4<räkneord>elfte:elfte
+976338r4<substantiv>elftedel:elftedel:elftedels:elftedelen:elftedelens:elftedelar:elftedelars:elftedelarna:elftedelarnas
+COMPOUND(571070, 551034): elfte + del
+913048r3<substantiv>elfteplats:elfteplats:elfteplats:elfteplatsen:elfteplatsens:elfteplatser:elfteplatsers:elfteplatserna:elfteplatsernas
+927580r7<räkneord>elftes:elftes
+972808r3<egennamn>Elfving:Elfving:Elfvings
+753928r3<substantiv>elförbrukning:elförbrukning:elförbruknings:elförbrukningen:elförbrukningens::::
+913056r4<substantiv>elföretag:elföretag:elföretags:elföretaget:elföretagets:elföretag:elföretags:elföretagen:elföretagens
+COMPOUND(557664, 552403): el + företag
+689010r3<substantiv>elförsörjning:elförsörjning:elförsörjnings:elförsörjningen:elförsörjningens::::
+CUSTOM: y y elförsörjnings
+976346r4<substantiv>elförzinkning:elförzinkning:elförzinknings:elförzinkningen:elförzinkningens::::
+COMPOUND(557664, 596913): el + förzinkning
+922747r4<substantiv>elgenerator:elgenerator:elgenerators:elgeneratorn:elgeneratorns:elgeneratorer:elgeneratorers:elgeneratorerna:elgeneratorernas
+COMPOUND(557664, 562833): el + generator
+689011r5<substantiv>elgitarr:elgitarr:elgitarrs:elgitarren:elgitarrens:elgitarrer:elgitarrers:elgitarrerna:elgitarrernas
+CUSTOM: y y elgitarr
+966922r4<substantiv>elgitarriff:elgitarriff:elgitarriffs:elgitarriffet:elgitarriffets:elgitarriff:elgitarriffs:elgitarriffen:elgitarriffens
+COMPOUND(689011, 848272): elgitarr + riff
+944439r3<substantiv>elgitarrist:elgitarrist:elgitarrists:elgitarristen:elgitarristens:elgitarrister:elgitarristers:elgitarristerna:elgitarristernas
+860432r4<substantiv>elgitarrtillverkare:elgitarrtillverkare:elgitarrtillverkares:elgitarrtillverkaren:elgitarrtillverkarens:elgitarrtillverkare:elgitarrtillverkares:elgitarrtillverkarna:elgitarrtillverkarnas
+COMPOUND(689011, 615486): elgitarr + tillverkare
+601719r3<substantiv>elgrossist:elgrossist:elgrossists:elgrossisten:elgrossistens:elgrossister:elgrossisters:elgrossisterna:elgrossisternas
+CUSTOM: y y elgrossist
+786173r4<substantiv>elhandel:elhandel:elhandels:elhandeln:elhandelns::::
+COMPOUND(557664, 638241): el + handel
+CUSTOM: y y elhandels
+889874r3<substantiv>elhandlare:elhandlare:elhandlares:elhandlaren:elhandlarens:elhandlare:elhandlares:elhandlarna:elhandlarnas
+913063r4<substantiv>elhybrid:elhybrid:elhybrids:elhybriden:elhybridens:elhybrider:elhybriders:elhybriderna:elhybridernas
+COMPOUND(557664, 549247): el + hybrid
+962999r4<adjektiv>elhydraulisk:elhydraulisk:elhydrauliskt:elhydrauliska:elhydrauliska::::::::::::
+COMPOUND(557664, 580680): el + hydraulisk
+788992r3<egennamn>Elias:Elias:Elias
+861585r3<egennamn>Eliason:Eliason:Eliasons
+722237r3<egennamn>Eliasson:Eliasson:Eliassons
+589148r4<verb>elidera:elidera:eliderade:eliderat:eliderar:elidera:elideras:eliderades:eliderats:elideras:eliderad:eliderat:eliderade:eliderande:
+CUSTOM: y n
+976355r3<substantiv>elidering:elidering:eliderings:elideringen:elideringens::::
+548761r3<substantiv>elimination:elimination:eliminations:eliminationen:eliminationens:eliminationer:eliminationers:eliminationerna:eliminationernas
+CUSTOM: y y eliminations
+546476r5<verb>eliminera:eliminera:eliminerade:eliminerat:eliminerar:eliminera:elimineras:eliminerades:eliminerats:elimineras:eliminerad:eliminerat:eliminerade:eliminerande:
+689014r3<substantiv>eliminering:eliminering:eliminerings:elimineringen:elimineringens:elimineringar:elimineringars:elimineringarna:elimineringarnas
+CUSTOM: y y eliminerings
+891217r4<substantiv>elimport:elimport:elimports:elimporten:elimportens::::
+COMPOUND(557664, 549304): el + import
+553673r3<egennamn>Elin:Elin:Elins
+957636r4<substantiv>elindustri:elindustri:elindustris:elindustrin:elindustrins::::
+COMPOUND(557664, 610799): el + industri
+CUSTOM: y n
+958877r4<substantiv>elingenjör:elingenjör:elingenjörs:elingenjören:elingenjörens:elingenjörer:elingenjörers:elingenjörerna:elingenjörernas
+COMPOUND(557664, 549327): el + ingenjör
+601727r3<substantiv>elinstallation:elinstallation:elinstallations:elinstallationen:elinstallationens:elinstallationer:elinstallationers:elinstallationerna:elinstallationernas
+CUSTOM: y y elinstallations
+548762r3<substantiv>elinstallatör:elinstallatör:elinstallatörs:elinstallatören:elinstallatörens:elinstallatörer:elinstallatörers:elinstallatörerna:elinstallatörernas
+884495r4<adjektiv>elintensiv:elintensiv:elintensivt:elintensiva:elintensiva::::::::::::
+COMPOUND(557664, 692539): el + intensiv
+972443r3<egennamn>Elis:Elis:Elis
+553674r3<egennamn>Elisabet:Elisabet:Elisabets
+949010r3<adjektiv>elisabetansk:elisabetansk:elisabetanskt:elisabetanska:elisabetanska::::elisabetanske::::::::
+553675r3<egennamn>Elisabeth:Elisabeth:Elisabeths
+972350r3<egennamn>Elise:Elise:Elises
+976359r3<substantiv>elision:elision:elisions:elisionen:elisionens:elisioner:elisioners:elisionerna:elisionernas
+CUSTOM: y n
+625275r7<substantiv>elit:elit:elits:eliten:elitens:eliter:eliters:eliterna:eliternas
+CUSTOM: y y elit
+706512r3<substantiv>elitidrott:elitidrott:elitidrotts:elitidrotten:elitidrottens::::
+706532r3<substantiv>elitidrottare:elitidrottare:elitidrottares:elitidrottaren:elitidrottarens:elitidrottare:elitidrottares:elitidrottarna:elitidrottarnas
+706516r10<substantiv>elitidrottsman:elitidrottsman:elitidrottsmans:elitidrottsmannen:elitidrottsmannens:elitidrottsmän:elitidrottsmäns:elitidrottsmännen:elitidrottsmännens
+COMPOUND(625275, 679739): elit + idrottsman
+579699r3<adjektiv>elitisk:elitisk:elitiskt:elitiska:elitiska::::
+689015r3<substantiv>elitism:elitism:elitisms:elitismen:elitismens::::
+825222r3<substantiv>elitist:elitist:elitists:elitisten:elitistens:elitister:elitisters:elitisterna:elitisternas
+579702r4<adjektiv>elitistisk:elitistisk:elitistiskt:elitistiska:elitistiska::::elitistiske
+928640r4<substantiv>elitlag:elitlag:elitlags:elitlaget:elitlagets:elitlag:elitlags:elitlagen:elitlagens
+COMPOUND(625275, 625660): elit + lag
+934002r4<substantiv>elitnivå:elitnivå:elitnivås:elitnivån:elitnivåns:elitnivåer:elitnivåers:elitnivåerna:elitnivåernas
+COMPOUND(625275, 611085): elit + nivå
+711326r3<substantiv>elitsatsning:elitsatsning:elitsatsnings:elitsatsningen:elitsatsningens:elitsatsningar:elitsatsningars:elitsatsningarna:elitsatsningarnas
+759920r5<substantiv>elitserie:elitserie:elitseries:elitserien:elitseriens::::
+CUSTOM: y y elitserie
+861042r4<substantiv>elitserieklubb:elitserieklubb:elitserieklubbs:elitserieklubben:elitserieklubbens:elitserieklubbar:elitserieklubbars:elitserieklubbarna:elitserieklubbarnas
+COMPOUND(759920, 551547): elitserie + klubb
+759924r4<substantiv>elitserielag:elitserielag:elitserielags:elitserielaget:elitserielagets:elitserielag:elitserielags:elitserielagen:elitserielagens
+COMPOUND(759920, 625660): elitserie + lag
+552348r4<substantiv>elixir:elixir:elixirs:elixiret:elixirets:elixir:elixirs:elixiren:elixirens
+990294r3<egennamn>Elizabeth:Elizabeth:Elizabeths
+617535r3<adverb>eljes:eljes
+CUSTOM: n n
+617536r3<adverb>eljest:eljest
+632604r3<substantiv>e-ljud:e-ljud:e-ljuds:e-ljudet:e-ljudets:e-ljud:e-ljuds:e-ljuden:e-ljudens
+CUSTOM: n n
+884511r4<substantiv>eljätte:eljätte:eljättes:eljätten:eljättens:eljättar:eljättars:eljättarna:eljättarnas
+COMPOUND(557664, 599847): el + jätte
+CUSTOM: y n n
+600131r3<substantiv>elkabel:elkabel:elkabels:elkabeln:elkabelns:elkablar:elkablars:elkablarna:elkablarnas
+943590r4<substantiv>elkonstruktör:elkonstruktör:elkonstruktörs:elkonstruktören:elkonstruktörens:elkonstruktörer:elkonstruktörers:elkonstruktörerna:elkonstruktörernas
+COMPOUND(557664, 549661): el + konstruktör
+896748r4<substantiv>elkonsult:elkonsult:elkonsults:elkonsulten:elkonsultens:elkonsulter:elkonsulters:elkonsulterna:elkonsulternas
+COMPOUND(557664, 549664): el + konsult
+889859r3<substantiv>elkonsument:elkonsument:elkonsuments:elkonsumenten:elkonsumentens:elkonsumenter:elkonsumenters:elkonsumenterna:elkonsumenternas
+689017r3<substantiv>elkonsumtion:elkonsumtion:elkonsumtions:elkonsumtionen:elkonsumtionens::::
+CUSTOM: y y elkonsumtions
+764639r3<substantiv>elkontakt:elkontakt:elkontakts:elkontakten:elkontaktens:elkontakter:elkontakters:elkontakterna:elkontakternas
+753933r4<substantiv>elkostnad:elkostnad:elkostnads:elkostnaden:elkostnadens:elkostnader:elkostnaders:elkostnaderna:elkostnadernas
+COMPOUND(557664, 549744): el + kostnad
+689018r4<substantiv>elkraft:elkraft:elkrafts:elkraften:elkraftens::::
+CUSTOM: y y elkrafts elkraft
+942675r4<substantiv>elkraftnät:elkraftnät:elkraftnäts:elkraftnätet:elkraftnätets:elkraftnät:elkraftnäts:elkraftnäten:elkraftnätens
+COMPOUND(689018, 555848): elkraft + nät
+913073r4<substantiv>elkris:elkris:elkris:elkrisen:elkrisens:elkriser:elkrisers:elkriserna:elkrisernas
+COMPOUND(557664, 549772): el + kris
+753943r4<substantiv>elkund:elkund:elkunds:elkunden:elkundens:elkunder:elkunders:elkunderna:elkundernas
+COMPOUND(557664, 549810): el + kund
+553677r3<egennamn>Ella:Ella:Ellas
+913082r3<substantiv>ellagen:::ellagen:ellagens::::
+855456r3<egennamn>Ellberg:Ellberg:Ellbergs
+596678r3<substantiv>elledning:elledning:ellednings:elledningen:elledningens:elledningar:elledningars:elledningarna:elledningarnas
+CUSTOM: y y ellednings
+553679r3<egennamn>Ellen:Ellen:Ellens
+555958r3<konjunktion>eller:eller
+753952r4<substantiv>elleverans:elleverans:elleverans:elleveransen:elleveransens:elleveranser:elleveransers:elleveranserna:elleveransernas
+COMPOUND(557664, 549928): el + leverans
+753959r4<substantiv>elleverantör:elleverantör:elleverantörs:elleverantören:elleverantörens:elleverantörer:elleverantörers:elleverantörerna:elleverantörernas
+COMPOUND(557664, 549929): el + leverantör
+972412r3<egennamn>Ellie:Ellie:Ellies
+971935r3<egennamn>Ellinor:Ellinor:Ellinors
+972450r3<egennamn>Elliot:Elliot:Elliots
+548763r4<substantiv>ellips:ellips:ellips:ellipsen:ellipsens:ellipser:ellipsers:ellipserna:ellipsernas
+790565r3<adjektiv>ellipsartad:ellipsartad:ellipsartat:ellipsartade:ellipsartade:!:!:!:
+976367r4<substantiv>ellipsform:ellipsform:ellipsforms:ellipsformen:ellipsformens::::
+COMPOUND(548763, 548947): ellips + form
+790568r3<adjektiv>ellipsformad:ellipsformad:ellipsformat:ellipsformade:ellipsformade:!:!:!:
+571983r3<adjektiv>ellipsformig:ellipsformig:ellipsformigt:ellipsformiga:ellipsformiga::::
+548764r3<substantiv>ellipsoid:ellipsoid:ellipsoids:ellipsoiden:ellipsoidens:ellipsoider:ellipsoiders:ellipsoiderna:ellipsoidernas
+CUSTOM: y y ellipsoid
+579703r3<adjektiv>ellipsoidisk:ellipsoidisk:ellipsoidiskt:ellipsoidiska:ellipsoidiska::::
+579706r3<adjektiv>elliptisk:elliptisk:elliptiskt:elliptiska:elliptiska::::
+689021r6<substantiv>elljus:elljus:elljus:elljuset:elljusets:elljus:elljus:elljusen:elljusens
+CUSTOM: y n elljus
+758396r4<substantiv>elljusslinga:elljusslinga:elljusslingas:elljusslingan:elljusslingans:elljusslingor:elljusslingors:elljusslingorna:elljusslingornas
+COMPOUND(689021, 666947): elljus + slinga
+CUSTOM: y n
+758404r4<substantiv>elljusspår:elljusspår:elljusspårs:elljusspåret:elljusspårets:elljusspår:elljusspårs:elljusspåren:elljusspårens
+COMPOUND(689021, 552961): elljus + spår
+CUSTOM: y n
+923000r4<substantiv>elljusstake:elljusstake:elljusstakes:elljusstaken:elljusstakens:elljusstakar:elljusstakars:elljusstakarna:elljusstakarnas
+COMPOUND(557664, 618739): el + ljusstake
+CUSTOM: y n
+864304r4<substantiv>ellok:ellok:elloks:elloket:ellokets:ellok:elloks:elloken:ellokens
+COMPOUND(557664, 552674): el + lok
+650919r4<substantiv>ellära:ellära:!:elläran:ellärans:!:!:!:!
+DEFINITION 1: Läran om elektricitet, skolämne
+855227r3<egennamn>Elm:Elm:Elms
+753968r5<substantiv>elmarknad:elmarknad:elmarknads:elmarknaden:elmarknadens:elmarknader:elmarknaders:elmarknaderna:elmarknadernas
+COMPOUND(557664, 549997): el + marknad
+CUSTOM: y y elmarknads
+957756r4<substantiv>elmaskin:elmaskin:elmaskins:elmaskinen:elmaskinens:elmaskiner:elmaskiners:elmaskinerna:elmaskinernas
+COMPOUND(557664, 550005): el + maskin
+786179r4<substantiv>elmaterial:elmaterial:elmaterials:elmaterialet:elmaterialets:elmaterial:elmaterials:elmaterialen:elmaterialens
+COMPOUND(557664, 552695): el + material
+554542r3<egennamn>Elmer:Elmer:Elmers
+854400r3<egennamn>Elmgren:Elmgren:Elmgrens
+601735r3<substantiv>elmontör:elmontör:elmontörs:elmontören:elmontörens:elmontörer:elmontörers:elmontörerna:elmontörernas
+689022r3<substantiv>elmotor:elmotor:elmotors:elmotorn:elmotorns:elmotorer:elmotorers:elmotorerna:elmotorernas
+CUSTOM: y n elmotor
+610617r3<substantiv>elmotorindustri:elmotorindustri:elmotorindustris:elmotorindustrin:elmotorindustrins:elmotorindustrier:elmotorindustriers:elmotorindustrierna:elmotorindustriernas
+CUSTOM: y n
+976373r3<substantiv>elmseld:elmseld:elmselds:elmselden:elmseldens:elmseldar:elmseldars:elmseldarna:elmseldarnas
+CUSTOM: y n
+609469r3<substantiv>elmätare:elmätare:elmätares:elmätaren:elmätarens:elmätare:elmätares:elmätarna:elmätarnas
+CUSTOM: y y elmätar
+889868r3<substantiv>elmätning:elmätning:elmätnings:elmätningen:elmätningens::::
+913086r4<substantiv>elnota:elnota:elnotas:elnotan:elnotans:elnotor:elnotors:elnotorna:elnotornas
+COMPOUND(557664, 594827): el + nota
+CUSTOM: y n n
+552350r3<substantiv>elnät:elnät:elnäts:elnätet:elnätets:elnät:elnäts:elnäten:elnätens
+CUSTOM: y y elnäts
+554544r3<egennamn>Elof:Elof:Elofs
+972812r3<egennamn>Elofsson:Elofsson:Elofssons
+631608r3<substantiv>eloge:eloge:eloges:elogen:elogens:eloger:elogers:elogerna:elogernas
+976381r3<substantiv>elokvens:elokvens:elokvens:elokvensen:elokvensens::::
+733271r3<adjektiv>elokvent:elokvent:elokvent:elokventa:elokventa::::elokvente
+913096r4<substantiv>elområde:elområde:elområdes:elområdet:elområdets:elområden:elområdens:elområdena:elområdenas
+COMPOUND(557664, 612761): el + område
+689023r3<substantiv>elorgel:elorgel:elorgels:elorgeln:elorgelns:elorglar:elorglars:elorglarna:elorglarnas
+589152r4<verb>eloxera:eloxera:eloxerade:eloxerat:eloxerar:eloxera:eloxeras:eloxerades:eloxerats:eloxeras::::eloxerande:
+790571r3<adjektiv>eloxerad:eloxerad:eloxerat:eloxerade:eloxerade:!:!:!:
+924975r3<substantiv>eloxering:eloxering:eloxerings:eloxeringen:eloxeringens:eloxeringar:eloxeringars:eloxeringarna:eloxeringarnas
+955644r4<substantiv>elpatron:elpatron:elpatrons:elpatronen:elpatronens:elpatroner:elpatroners:elpatronerna:elpatronernas
+COMPOUND(557664, 691901): el + patron
+913106r4<substantiv>elpistol:elpistol:elpistols:elpistolen:elpistolens:elpistoler:elpistolers:elpistolerna:elpistolernas
+COMPOUND(557664, 550202): el + pistol
+864314r3<substantiv>elplatta:elplatta:elplattas:elplattan:elplattans:elplattor:elplattors:elplattorna:elplattornas
+689025r5<substantiv>elpris:elpris:elpris:elpriset:elprisets:elpriser:elprisers:elpriserna:elprisernas
+COMPOUND(557664, 595932): el + pris
+CUSTOM: y n elpris
+860590r4<substantiv>elprisguide:elprisguide:elprisguides:elprisguiden:elprisguidens:elprisguider:elprisguiders:elprisguiderna:elprisguidernas
+COMPOUND(689025, 611881): elpris + guide
+753973r4<substantiv>elproducent:elproducent:elproducents:elproducenten:elproducentens:elproducenter:elproducenters:elproducenterna:elproducenternas
+COMPOUND(557664, 550260): el + producent
+800930r3<adjektiv>elproducerande:elproducerande:elproducerande:elproducerande:elproducerande:!:!:!:
+913116r4<substantiv>elprodukt:elprodukt:elprodukts:elprodukten:elproduktens:elprodukter:elprodukters:elprodukterna:elprodukternas
+COMPOUND(557664, 550262): el + produkt
+689026r3<substantiv>elproduktion:elproduktion:elproduktions:elproduktionen:elproduktionens::::
+CUSTOM: y y elproduktions
+913126r4<substantiv>elpryl:elpryl:elpryls:elprylen:elprylens:elprylar:elprylars:elprylarna:elprylarnas
+COMPOUND(557664, 551778): el + pryl
+CUSTOM: y n n
+689028r4<substantiv>elradiator:elradiator:elradiators:elradiatorn:elradiatorns:elradiatorer:elradiatorers:elradiatorerna:elradiatorernas
+COMPOUND(557664, 689029): el + radiator
+913297r4<substantiv>elransonering:elransonering:elransonerings:elransoneringen:elransoneringens:elransoneringar:elransoneringars:elransoneringarna:elransoneringarnas
+COMPOUND(557664, 638542): el + ransonering
+923333r3<substantiv>elritsa:elritsa:elritsas:elritsan:elritsans:elritsor:elritsors:elritsorna:elritsornas
+913306r4<substantiv>elrullstol:elrullstol:elrullstols:elrullstolen:elrullstolens:elrullstolar:elrullstolars:elrullstolarna:elrullstolarnas
+COMPOUND(557664, 551812): el + rullstol
+860578r4<substantiv>elrådgivare:elrådgivare:elrådgivares:elrådgivaren:elrådgivarens:elrådgivare:elrådgivares:elrådgivarna:elrådgivarnas
+COMPOUND(557664, 615422): el + rådgivare
+913316r4<substantiv>elrådgivning:elrådgivning:elrådgivnings:elrådgivningen:elrådgivningens:elrådgivningar:elrådgivningars:elrådgivningarna:elrådgivningarnas
+COMPOUND(557664, 696546): el + rådgivning
+CUSTOM: y n elrådgivnings
+689037r3<substantiv>elräkning:elräkning:elräknings:elräkningen:elräkningens:elräkningar:elräkningars:elräkningarna:elräkningarnas
+CUSTOM: y y elräknings
+553681r3<egennamn>Elsa:Elsa:Elsas
+957845r4<verb>elsanera:elsanera:elsanerade:elsanerat:elsanerar:elsanera:elsaneras:elsanerades:elsanerats:elsaneras:elsanerad:elsanerat:elsanerade:elsanerande:
+COMPOUND(557664, 587912): el + sanera
+CUSTOM: y n
+913326r4<substantiv>elsanering:elsanering:elsanerings:elsaneringen:elsaneringens:elsaneringar:elsaneringars:elsaneringarna:elsaneringarnas
+COMPOUND(557664, 701409): el + sanering
+CUSTOM: y n
+976384r3<substantiv>elsassare:elsassare:elsassares:elsassaren:elsassarens:elsassare:elsassares:elsassarna:elsassarnas
+CUSTOM: y n
+579707r3<adjektiv>elsassisk:elsassisk:elsassiskt:elsassiska:elsassiska::::
+CUSTOM: y n
+913336r4<substantiv>elsektor:elsektor:elsektors:elsektorn:elsektorns::::
+COMPOUND(557664, 622134): el + sektor
+864322r3<substantiv>elsevir:elsevir:elsevirs:elseviren:elsevirens:elsevirer:elsevirers:elsevirerna:elsevirernas
+553683r3<egennamn>Elsie:Elsie:Elsies
+689038r4<substantiv>elskatt:elskatt:elskatts:elskatten:elskattens:elskatter:elskatters:elskatterna:elskatternas
+966396r4<substantiv>elskrot:elskrot:elskrots:elskrotet:elskrotets:!:!:!:!
+COMPOUND(557664, 626294): el + skrot
+753982r4<substantiv>elskåp:elskåp:elskåps:elskåpet:elskåpets:elskåp:elskåps:elskåpen:elskåpens
+COMPOUND(557664, 552942): el + skåp
+784371r4<substantiv>elsladd:elsladd:elsladds:elsladden:elsladdens:elsladdar:elsladdars:elsladdarna:elsladdarnas
+COMPOUND(557664, 551863): el + sladd
+598200r3<substantiv>elspis:elspis:elspis:elspisen:elspisens:elspisar:elspisars:elspisarna:elspisarnas
+949507r4<substantiv>elstamnät:elstamnät:elstamnäts:elstamnätet:elstamnätets:elstamnät:elstamnäts:elstamnäten:elstamnätens
+COMPOUND(557664, 932832): el + stamnät
+949493r4<substantiv>elstation:elstation:elstations:elstationen:elstationens:elstationer:elstationers:elstationerna:elstationernas
+COMPOUND(557664, 603711): el + station
+744099r3<substantiv>elstolpe:elstolpe:elstolpes:elstolpen:elstolpens:elstolpar:elstolpars:elstolparna:elstolparnas
+949502r4<substantiv>elstopp:elstopp:elstopps:elstoppet:elstoppets::::
+COMPOUND(557664, 608140): el + stopp
+689040r5<substantiv>elström:elström:elströms:elströmmen:elströmmens:elströmmar:elströmmars:elströmmarna:elströmmarnas
+COMPOUND(557664, 619738): el + ström
+877659r4<substantiv>elstängsel:elstängsel:elstängsels:elstängslet:elstängslets:elstängsel:elstängsels:elstängslen:elstängslens
+COMPOUND(557664, 560289): el + stängsel
+CUSTOM: y n elstängsel
+878404r4<substantiv>elstörning:elstörning:elstörnings:elstörningen:elstörningens:elstörningar:elstörningars:elstörningarna:elstörningarnas
+COMPOUND(557664, 670598): el + störning
+913345r4<substantiv>elstöt:elstöt:elstöts:elstöten:elstötens:elstötar:elstötars:elstötarna:elstötarnas
+COMPOUND(557664, 551967): el + stöt
+786187r5<substantiv>elsvets:elsvets:elsvets:elsvetsen:elsvetsens:elsvetsar:elsvetsars:elsvetsarna:elsvetsarnas
+COMPOUND(557664, 729636): el + svets
+CUSTOM: y y elsvets
+786196r4<substantiv>elsvetshandbok:elsvetshandbok:elsvetshandboks:elsvetshandboken:elsvetshandbokens:elsvetshandböcker:elsvetshandböckers:elsvetshandböckerna:elsvetshandböckernas
+COMPOUND(786187, 644656): elsvets + handbok
+676281r4<substantiv>elsvetsning:elsvetsning:elsvetsnings:elsvetsningen:elsvetsningens:elsvetsningar:elsvetsningars:elsvetsningarna:elsvetsningarnas
+COMPOUND(557664, 670827): el + svetsning
+CUSTOM: y y elsvetsnings
+607000r3<substantiv>elsystem:elsystem:elsystems:elsystemet:elsystemets:elsystem:elsystems:elsystemen:elsystemens
+891252r4<substantiv>elsäkerhet:elsäkerhet:elsäkerhets:elsäkerheten:elsäkerhetens::::
+COMPOUND(557664, 634282): el + säkerhet
+896758r4<substantiv>elsäljare:elsäljare:elsäljares:elsäljaren:elsäljarens:elsäljare:elsäljares:elsäljarna:elsäljarnas
+COMPOUND(557664, 615475): el + säljare
+954793r4<substantiv>eltandborste:eltandborste:eltandborstes:eltandborsten:eltandborstens:eltandborstar:eltandborstars:eltandborstarna:eltandborstarnas
+COMPOUND(557664, 599995): el + tandborste
+896765r4<substantiv>eltariff:eltariff:eltariffs:eltariffen:eltariffens:eltariffer:eltariffers:eltarifferna:eltariffernas
+COMPOUND(557664, 550642): el + tariff
+896773r4<substantiv>eltaxa:eltaxa:eltaxas:eltaxan:eltaxans:eltaxor:eltaxors:eltaxorna:eltaxornas
+COMPOUND(557664, 626687): el + taxa
+877760r3<substantiv>elteknik:elteknik:eltekniks:eltekniken:elteknikens::::
+896803r4<substantiv>eltekniker:eltekniker:elteknikers:elteknikern:elteknikerns:eltekniker:elteknikers:elteknikerna:elteknikernas
+COMPOUND(557664, 610333): el + tekniker
+896798r3<adjektiv>elteknisk:elteknisk:eltekniskt:eltekniska:eltekniska::::::::::::
+913354r4<substantiv>eltillförsel:eltillförsel:eltillförsels:eltillförseln:eltillförselns::::
+COMPOUND(557664, 672346): el + tillförsel
+877057r4<substantiv>eltillgång:eltillgång:eltillgångs:eltillgången:eltillgångens:eltillgångar:eltillgångars:eltillgångarna:eltillgångarnas
+COMPOUND(557664, 552006): el + tillgång
+874703r3<egennamn>Elton:Elton:Eltons
+976394r4<substantiv>eltåg:eltåg:eltågs:eltåget:eltågets:eltåg:eltågs:eltågen:eltågens
+COMPOUND(557664, 553068): el + tåg
+589156r3<verb>eludera:eludera:eluderade:eluderat:eluderar:eludera:::::::::
+589160r3<verb>eluera:eluera:eluerade:eluerat:eluerar:eluera:::::::::
+896781r4<substantiv>elugn:elugn:elugns:elugnen:elugnens:elugnar:elugnars:elugnarna:elugnarnas
+COMPOUND(557664, 552067): el + ugn
+CUSTOM: y n
+689042r3<adjektiv>elupplyst:elupplyst:elupplyst:elupplysta:elupplysta::::
+753989r3<adjektiv>eluppvärmd:eluppvärmd:eluppvärmt:eluppvärmda:eluppvärmda::::
+753992r3<substantiv>eluppvärmning:eluppvärmning:eluppvärmnings:eluppvärmningen:eluppvärmningens::::
+896789r4<substantiv>elutrustning:elutrustning:elutrustnings:elutrustningen:elutrustningens:elutrustningar:elutrustningars:elutrustningarna:elutrustningarnas
+COMPOUND(557664, 631941): el + utrustning
+552352r3<substantiv>eluttag:eluttag:eluttags:eluttaget:eluttagets:eluttag:eluttags:eluttagen:eluttagens
+797513r3<adjektiv>eluvial:eluvial:eluvialt:eluviala:eluviala::::
+555182r3<räkneord>elva:elva
+938114r7<substantiv>elva:elva:elvas:elvan:elvans:elvor:elvors:elvorna:elvornas
+CUSTOM: y n
+920336r3<adjektiv>elvagradig:elvagradig:elvagradigt:elvagradiga:elvagradiga::::::::::::
+666047r3<substantiv>elvahundratal:elvahundratal:elvahundratals:elvahundratalet:elvahundratalets::::
+957209r3<substantiv>elvamannalag:elvamannalag:elvamannalags:elvamannalaget:elvamannalagets:elvamannalag:elvamannalags:elvamannalagen:elvamannalagens
+960059r3<substantiv>elvarumsvåning:elvarumsvåning:elvarumsvånings:elvarumsvåningen:elvarumsvåningens:elvarumsvåningar:elvarumsvåningars:elvarumsvåningarna:elvarumsvåningarnas
+942200r3<substantiv>elvasnåret:::elvasnåret:::::
+741687r3<substantiv>elvatiden:::elvatiden:::::
+571986r4<adjektiv>elvaårig:elvaårig:elvaårigt:elvaåriga:elvaåriga:!:!:!:elvaårige
+654420r3<substantiv>elvaåring:elvaåring:elvaårings:elvaåringen:elvaåringens:elvaåringar:elvaåringars:elvaåringarna:elvaåringarnas
+CUSTOM: y y elvaårings
+741753r3<substantiv>elvaårsålder:elvaårsålder:elvaårsålders:elvaårsåldern:elvaårsålderns::::
+552354r4<substantiv>elverk:elverk:elverks:elverket:elverkets:elverk:elverks:elverken:elverkens
+CUSTOM: y n elverks
+972454r3<egennamn>Elvin:Elvin:Elvins
+553685r3<egennamn>Elvira:Elvira:Elviras
+551093r3<substantiv>elvisp:elvisp:elvisps:elvispen:elvispens:elvispar:elvispars:elvisparna:elvisparnas
+961071r3<adjektiv>elvärmd:elvärmd:elvärmt:elvärmda:elvärmda::::::::::::
+689449r4<substantiv>elvärme:elvärme:elvärmes:elvärmen:elvärmens:!:!:!:!
+COMPOUND(557664, 627709): el + värme
+579710r3<adjektiv>elyseisk:elyseisk:elyseiskt:elyseiska:elyseiska::::
+976400r3<substantiv>elzeviertryck:elzeviertryck:elzeviertrycks:elzeviertrycket:elzeviertryckets:elzeviertryck:elzeviertrycks:elzeviertrycken:elzeviertryckens
+958414r4<substantiv>elåtgång:elåtgång:elåtgångs:elåtgången:elåtgångens::::
+COMPOUND(557664, 751413): el + åtgång
+689451r7<substantiv>elände:elände:eländes:eländet:eländets:eländen:eländens:eländena:eländenas
+BASEWORDS: eländes
+CUSTOM: y y eländes
+862422r4<verb>eländesfrämja:eländesfrämja:eländesfrämjade:eländesfrämjat:eländesfrämjar:eländesfrämja:eländesfrämjas:eländesfrämjades:eländesfrämjats:eländesfrämjas:eländesfrämjad:eländesfrämjat:eländesfrämjade::
+COMPOUND(689451, 546602): elände + främja
+862442r4<substantiv>eländesfrämjande:eländesfrämjande:eländesfrämjandes:eländesfrämjandet:eländesfrämjandets::::
+COMPOUND(689451, 657240): elände + främjande
+571331r3<adjektiv>eländig:eländig:eländigt:eländiga:eländiga:eländigare:eländigast:eländigaste:eländige
+976406r3<substantiv>eländighet:eländighet:eländighets:eländigheten:eländighetens:eländigheter:eländigheters:eländigheterna:eländigheternas
+913360r4<substantiv>elöverföring:elöverföring:elöverförings:elöverföringen:elöverföringens:elöverföringar:elöverföringars:elöverföringarna:elöverföringarnas
+COMPOUND(557664, 598001): el + överföring
+565733r4<adjektiv>elöverkänslig:elöverkänslig:elöverkänsligt:elöverkänsliga:elöverkänsliga::::::::elöverkänsligas::::
+753996r3<substantiv>elöverkänslighet:elöverkänslighet:elöverkänslighets:elöverkänsligheten:elöverkänslighetens::::
+891202r4<substantiv>elöverskott:elöverskott:elöverskotts:elöverskottet:elöverskottets:elöverskott:elöverskotts:elöverskotten:elöverskottens
+COMPOUND(557664, 608531): el + överskott
+935655r3<förkortning>EM:EM
+548766r4<substantiv>emalj:emalj:emaljs:emaljen:emaljens:emaljer:emaljers:emaljerna:emaljernas
+CUSTOM: y y emalj
+586536r5<verb>emaljera:emaljera:emaljerade:emaljerat:emaljerar:emaljera:emaljeras:emaljerades:emaljerats:emaljeras:emaljerad:emaljerat:emaljerade:emaljerande:
+689452r3<adjektiv>emaljerad:emaljerad:emaljerat:emaljerade:emaljerade:!:!:!:
+976414r3<substantiv>emaljering:emaljering:emaljerings:emaljeringen:emaljeringens::::
+842137r3<substantiv>emaljör:emaljör:emaljörs:emaljören:emaljörens:emaljörer:emaljörers:emaljörerna:emaljörernas
+864336r3<substantiv>emanation:emanation:emanations:emanationen:emanationens:emanationer:emanationers:emanationerna:emanationernas
+689453r3<substantiv>emancipation:emancipation:emancipations:emancipationen:emancipationens::::
+CUSTOM: y y emancipations
+586537r4<verb>emancipera:emancipera:emanciperade:emanciperat:emanciperar:emancipera:emanciperas:emanciperades:emanciperats:emanciperas:emanciperad:emanciperat:emanciperade:emanciperande:
+763064r3<adjektiv>emanciperad:emanciperad:emanciperat:emanciperade:emanciperade:!:!:!:
+586541r4<verb>emanera:emanera:emanerade:emanerat:emanerar:emanera::::::::emanerande:
+554546r3<egennamn>Emanuel:Emanuel:Emanuels
+972816r3<egennamn>Emanuelsson:Emanuelsson:Emanuelssons
+677462r8<substantiv>emballage:emballage:emballages:emballaget:emballagets:emballage:emballages:emballagen:emballagens
+CUSTOM: y y emballage +emballage
+953819r4<substantiv>emballagebal:emballagebal:emballagebals:emballagebalen:emballagebalens:emballagebalar:emballagebalars:emballagebalarna:emballagebalarnas
+COMPOUND(677462, 557856): emballage + bal
+677461r4<substantiv>emballageväv:emballageväv:emballagevävs:emballageväven:emballagevävens:emballagevävar:emballagevävars:emballagevävarna:emballagevävarnas
+COMPOUND(677462, 552117): emballage + väv
+557907r4<verb>emballera:emballera:emballerade:emballerat:emballerar:emballera:emballeras:emballerades:emballerats:emballeras:emballerad:emballerat:emballerade:emballerande:
+733274r3<substantiv>emballering:emballering:emballerings:emballeringen:emballeringens:emballeringar:emballeringars:emballeringarna:emballeringarnas
+CUSTOM: y y emballerings
+689454r3<substantiv>embargo:embargo:embargos:embargot:embargots:embargon:embargons:embargona:embargonas
+586542r4<verb>embarkera:embarkera:embarkerade:embarkerat:embarkerar:embarkera:embarkeras:embarkerades:embarkerats:embarkeras:embarkerad:embarkerat:embarkerade:embarkerande:
+976418r3<substantiv>embarkering:embarkering:embarkerings:embarkeringen:embarkeringens::::
+646564r3<egennamn>Embla:Embla:Emblas
+552355r3<substantiv>emblem:emblem:emblems:emblemet:emblemets:emblem:emblems:emblemen:emblemens
+976422r3<substantiv>emblematik:emblematik:emblematiks:emblematiken:emblematikens::::
+579713r4<adjektiv>emblematisk:emblematisk:emblematiskt:emblematiska:emblematiska::::emblematiske::::::::
+610625r3<substantiv>emboli:emboli:embolis:embolin:embolins:embolier:emboliers:embolierna:emboliernas
+631438r8<substantiv>embryo:embryo:embryos:embryot:embryots:embryon:embryons:embryona:embryonas
+CUSTOM: y y embryo
+864352r3<substantiv>embryolog:embryolog:embryologs:embryologen:embryologens:embryologer:embryologers:embryologerna:embryologernas
+797516r3<adjektiv>embryonal:embryonal:embryonalt:embryonala:embryonala::::
+579716r3<adjektiv>embryonisk:embryonisk:embryoniskt:embryoniska:embryoniska::::
+614984r3<konjunktion>emedan:emedan
+971812r3<egennamn>Emelie:Emelie:Emelies
+560956r3<preposition>emellan:emellan
+560957r3<adverb>emellan:emellan
+620521r3<adverb>emellanåt:emellanåt
+620522r3<adverb>emellertid:emellertid
+976427r3<substantiv>emendation:emendation:emendations:emendationen:emendationens:emendationer:emendationers:emendationerna:emendationernas
+CUSTOM: y n
+589164r4<verb>emendera:emendera:emenderade:emenderat:emenderar:emendera:emenderas:emenderades:emenderats:emenderas:emenderad:emenderat:emenderade:emenderande:
+946432r3<substantiv>emerita:emerita:::::::
+877532r4<substantiv>emeritus:emeritus:emeritus:::emeriti:emeritis::
+649104r3<substantiv>emfas:emfas:emfas:emfasen:emfasens::::
+579719r3<adjektiv>emfatisk:emfatisk:emfatiskt:emfatiska:emfatiska::::
+649105r3<substantiv>emfysem:emfysem:emfysems:emfysemet:emfysemets:emfysem:emfysems:emfysemen:emfysemens
+548768r3<substantiv>emigrant:emigrant:emigrants:emigranten:emigrantens:emigranter:emigranters:emigranterna:emigranternas
+CUSTOM: y y emigrant
+689456r3<substantiv>emigration:emigration:emigrations:emigrationen:emigrationens::::
+CUSTOM: y y emigrations
+586543r4<verb>emigrera:emigrera:emigrerade:emigrerat:emigrerar:emigrera:emigreras:emigrerades:emigrerats:emigreras:emigrerad:emigrerat:emigrerade:emigrerande:
+976437r3<substantiv>emigrering:emigrering:emigrerings:emigreringen:emigreringens:emigreringar:emigreringars:emigreringarna:emigreringarnas
+554548r3<egennamn>Emil:Emil:Emils
+553687r3<egennamn>Emilia:Emilia:Emilias
+972820r3<egennamn>Emilsson:Emilsson:Emilssons
+989965r3<egennamn>Emily:Emily:Emilys
+548769r3<substantiv>eminens:eminens:eminens:eminensen:eminensens:eminenser:eminensers:eminenserna:eminensernas
+649111r4<adjektiv>eminent:eminent:eminent:eminenta:eminenta:eminentare:eminentast:eminentaste:eminente
+627982r3<substantiv>emir:emir:emirs:emiren:emirens:emirer:emirers:emirerna:emirernas
+CUSTOM: y n
+649112r4<substantiv>emirat:emirat:emirats:emiratet:emiratets:emirat:emirats:emiraten:emiratens
+CUSTOM: y n
+649116r3<substantiv>emissarie:emissarie:emissaries:emissarien:emissariens:emissarier:emissariers:emissarierna:emissariernas
+548770r6<substantiv>emission:emission:emissions:emissionen:emissionens:emissioner:emissioners:emissionerna:emissionernas
+CUSTOM: y y emissions +emissions
+601743r3<substantiv>emissionskurs:emissionskurs:emissionskurs:emissionskursen:emissionskursens:emissionskurser:emissionskursers:emissionskurserna:emissionskursernas
+763732r4<substantiv>emissionspris:emissionspris:emissionspris:emissionspriset:emissionsprisets:emissionspriser:emissionsprisers:emissionspriserna:emissionsprisernas
+COMPOUND(548770, 595932): emission + pris
+903757r4<substantiv>emissionstäthet:emissionstäthet:emissionstäthets:emissionstätheten:emissionstäthetens:emissionstätheter:emissionstätheters:emissionstätheterna:emissionstätheternas
+COMPOUND(548770, 674042): emission + täthet
+903765r4<substantiv>emissionsyta:emissionsyta:emissionsytas:emissionsytan:emissionsytans:emissionsytor:emissionsytors:emissionsytorna:emissionsytornas
+COMPOUND(548770, 595826): emission + yta
+976445r3<substantiv>emitter:emitter:emitters:emittern:emitterns:emittrar:emittrars:emittrarna:emittrarnas
+CUSTOM: y n
+546477r5<verb>emittera:emittera:emitterade:emitterat:emitterar:emittera:emitteras:emitterades:emitterats:emitteras:emitterad:emitterat:emitterade:emitterande:
+553688r3<egennamn>Emma:Emma:Emmas
+728088r3<egennamn>Emmaboda:Emmaboda:Emmabodas
+CUSTOM: y n Emmaboda
+957344r3<substantiv>emmentaler:emmentaler:emmentalers:emmentalern:emmentalerns::::
+989969r3<egennamn>Emmie:Emmie:Emmies
+972398r3<egennamn>Emmy:Emmy:Emmys
+632610r7<substantiv>e-moll:e-moll:e-molls::::::
+CUSTOM: y n e-moll
+632611r4<substantiv>e-mollackord:e-mollackord:e-mollackords:e-mollackordet:e-mollackordets:e-mollackord:e-mollackords:e-mollackorden:e-mollackordens
+COMPOUND(632610, 552162): e-moll + ackord
+CUSTOM: n n
+632617r4<substantiv>e-mollskala:e-mollskala:e-mollskalas:e-mollskalan:e-mollskalans:e-mollskalor:e-mollskalors:e-mollskalorna:e-mollskalornas
+COMPOUND(632610, 595122): e-moll + skala
+CUSTOM: n n
+617537r3<preposition>emot:emot
+620523r6<adverb>emot:emot
+CUSTOM: y n
+548772r3<substantiv>emotion:emotion:emotions:emotionen:emotionens:emotioner:emotioners:emotionerna:emotionernas
+CUSTOM: y y emotions
+689457r3<adjektiv>emotionell:emotionell:emotionellt:emotionella:emotionella::::
+797519r3<adjektiv>emotiv:emotiv:emotivt:emotiva:emotiva::::
+689458r4<verb>emotse:emotse:emotsåg:emotsett:emotser:emotse:emotses:emotsågs:emotsetts:emotses:emotsedd:emotsett:emotsedda:emotseende:
+COMPOUND(620523, 555218): emot + se
+864373r4<verb>emotstå:emotstå:emotstod:emotstått:emotstår:emotstå:emotstås:emotstods:emotståtts:emotstås::::emotstående:
+COMPOUND(620523, 555206): emot + stå
+689460r6<verb>emotta, emottaga:emotta, emottaga:emottog:emottagit:emottar, emottager:emotta:emottas, emottagas:emottogs:emottagits:emottas, emottages, emottags:emottagen:emottaget:emottagna:emottagande:
+COMPOUND(620523, 555219): emot + ta, taga
+565736r3<adjektiv>emottaglig:emottaglig:emottagligt:emottagliga:emottagliga::::
+976455r3<substantiv>emottagning:emottagning:emottagnings:emottagningen:emottagningens:emottagningar:emottagningars:emottagningarna:emottagningarnas
+640249r4<substantiv>empati:empati:empatis:empatin:empatins::::
+CUSTOM: y y empati
+579720r4<adjektiv>empatisk:empatisk:empatiskt:empatiska:empatiska::::empatiske
+942645r3<adjektiv>empatistörd:empatistörd:empatistört:empatistörda:empatistörda::::empatistörde::::::::
+754001r4<substantiv>empatistörning:empatistörning:empatistörnings:empatistörningen:empatistörningens:empatistörningar:empatistörningars:empatistörningarna:empatistörningarnas
+COMPOUND(640249, 670598): empati + störning
+651034r7<substantiv>empir:empir, empire:empirs, empires:empiren:empirens::::
+CUSTOM: y n empire
+640355r3<substantiv>empiri:empiri:empiris:empirin:empirins:!:!:!:!
+651028r3<substantiv>empiriker:empiriker:empirikers:empirikern:empirikerns:empiriker:empirikers:empirikerna:empirikernas
+579721r4<adjektiv>empirisk:empirisk:empiriskt:empiriska:empiriska::::empiriske
+558229r3<substantiv>empirism:empirism:empirisms:empirismen:empirismens:!:!:!:!
+864382r3<substantiv>empirist:empirist:empirists:empiristen:empiristens:empirister:empiristers:empiristerna:empiristernas
+961086r4<substantiv>empirljusstake:empirljusstake:empirljusstakes:empirljusstaken:empirljusstakens:empirljusstakar:empirljusstakars:empirljusstakarna:empirljusstakarnas
+COMPOUND(651034, 618739): empir + ljusstake
+961095r4<substantiv>empirsoffa:empirsoffa:empirsoffas:empirsoffan:empirsoffans:empirsoffor:empirsoffors:empirsofforna:empirsoffornas
+COMPOUND(651034, 595305): empir + soffa
+961077r4<substantiv>empirstil:empirstil:empirstils:empirstilen:empirstilens:empirstilar:empirstilars:empirstilarna:empirstilarnas
+COMPOUND(651034, 551938): empir + stil
+976463r3<substantiv>empyem:empyem:empyems:empyemet:empyemets:empyem:empyems:empyemen:empyemens
+CUSTOM: y n
+558408r4<substantiv>emu:emu:emus:emun:emuns:emuer:emuers:emuerna:emuernas
+DEFINITION 1: En slags fågel
+CUSTOM: y n
+651038r3<substantiv>emulator:emulator:emulators:emulatorn:emulatorns:emulatorer:emulatorers:emulatorerna:emulatorernas
+546478r4<verb>emulera:emulera:emulerade:emulerat:emulerar:emulera:emuleras:emulerades:emulerats:emuleras:emulerad:emulerat:emulerade::
+976469r3<substantiv>emulering:emulering:emulerings:emuleringen:emuleringens:emuleringar:emuleringars:emuleringarna:emuleringarnas
+651039r3<substantiv>emulgator:emulgator:emulgators:emulgatorn:emulgatorns::::
+586544r5<verb>emulgera:emulgera:emulgerade:emulgerat:emulgerar:emulgera:emulgeras:emulgerades:emulgerats:emulgeras:emulgerad:emulgerat:emulgerade:emulgerande:
+807287r3<substantiv>emulsion:emulsion:emulsions:emulsionen:emulsionens:emulsioner:emulsioners:emulsionerna:emulsionernas
+790572r3<adjektiv>emulsionsartad:emulsionsartad:emulsionsartat:emulsionsartade:emulsionsartade:!:!:!:
+864391r3<substantiv>emulsionsfärg:emulsionsfärg:emulsionsfärgs:emulsionsfärgen:emulsionsfärgens:emulsionsfärger:emulsionsfärgers:emulsionsfärgerna:emulsionsfärgernas
+555960r7<substantiv>en:en:ens:enen:enens:enar:enars:enarna:enarnas
+DEFINITION 1: ett slags barrträd
+CUSTOM: y n
+558411r4<pronomen>en:en
+CUSTOM: y n
+555959r4<räkneord>en:en
+CUSTOM: y n
+558412r3<pronomen>ena:ena
+546479r5<verb>ena:ena:enade:enat:enar:ena:enas:enades:enats:enas:enad:enat:enade:enande:
+CUSTOM: y n
+689469r3<adjektiv>enahanda:enahanda:enahanda:enahanda:enahanda:!:!:!:
+754002r3<substantiv>enaktare:enaktare:enaktares:enaktaren:enaktarens:enaktare:enaktares:enaktarna:enaktarnas
+728919r3<substantiv>enande:enande:enandes:enandet:enandets::::
+571987r3<adjektiv>enanodig:enanodig:enanodigt:enanodiga:enanodiga::::
+797522r3<adjektiv>enantiomorf:enantiomorf:enantiomorft:enantiomorfa:enantiomorfa::::
+615203r3<substantiv>enare:enare:enares:enaren:enarens:enare:enares:enarna:enarnas
+CUSTOM: y n
+689470r3<adjektiv>enarmad:enarmad:enarmat:enarmade:enarmade:!:!:!:
+976477r3<substantiv>enarmslyft:enarmslyft:enarmslyfts:enarmslyftet:enarmslyftets:enarmslyft:enarmslyfts:enarmslyften:enarmslyftens
+800931r3<adjektiv>enarådande:enarådande:enarådande:enarådande:enarådande:!:!:!:
+627992r3<pronomen>enas:enas
+571332r3<adjektiv>enastående:enastående:enastående:enastående:enastående::::
+571990r3<adjektiv>enatomig:enatomig:enatomigt:enatomiga:enatomiga::::
+797525r3<adjektiv>enaxial:enaxial:enaxialt:enaxiala:enaxiala::::
+CUSTOM: n n
+797529r3<adjektiv>enaxig:enaxig:enaxigt:enaxiga:enaxiga::::
+CUSTOM: n n n
+790575r3<adjektiv>enaxlad:enaxlad:enaxlat:enaxlade:enaxlade:!:!:!:
+565739r3<adjektiv>enaxlig:enaxlig:enaxligt:enaxliga:enaxliga::::
+620524r3<adverb>enbart:enbart
+579722r3<adjektiv>enbasisk:enbasisk:enbasiskt:enbasiska:enbasiska::::
+689471r3<adjektiv>enbent:enbent:enbent:enbenta:enbenta:!:!:!:enbente
+571993r3<adjektiv>enbladig:enbladig:enbladigt:enbladiga:enbladiga::::
+721178r3<egennamn>Enbom:Enbom:Enboms
+624185r4<substantiv>enbuske:enbuske:enbuskes:enbusken:enbuskens:enbuskar:enbuskars:enbuskarna:enbuskarnas
+COMPOUND(555960, 599790): en + buske
+864400r3<substantiv>enbäddsrum:enbäddsrum:enbäddsrums:enbäddsrummet:enbäddsrummets:enbäddsrum:enbäddsrums:enbäddsrummen:enbäddsrummens
+649124r3<substantiv>enbär:enbär:enbärs:enbäret:enbärets:enbär:enbärs:enbären:enbärens
+976483r3<substantiv>enbärsdricka:enbärsdricka:enbärsdrickas:enbärsdrickan:enbärsdrickans::::
+864407r3<substantiv>encefalit:encefalit:encefalits:encefaliten:encefalitens:encefaliter:encefaliters:encefaliterna:encefaliternas
+864415r3<substantiv>encefalografi:encefalografi:encefalografis:encefalografin:encefalografins::::
+565742r3<adjektiv>encellig:encellig:encelligt:encelliga:encelliga::::
+957491r3<substantiv>enchilada:enchilada:enchiladas:enchiladan:enchiladans:enchilador:enchiladors:enchiladorna:enchiladornas
+976487r3<substantiv>encyklika:encyklika:encyklikas:encyklikan:encyklikans:encyklikor:encyklikors:encyklikorna:encyklikornas
+763733r3<substantiv>encyklopedi:encyklopedi:encyklopedis:encyklopedin:encyklopedins:encyklopedier:encyklopediers:encyklopedierna:encyklopediernas
+579725r4<adjektiv>encyklopedisk:encyklopedisk:encyklopediskt:encyklopediska:encyklopediska::::encyklopediske
+976502r3<substantiv>encyklopedist:encyklopedist:encyklopedists:encyklopedisten:encyklopedistens:encyklopedister:encyklopedisters:encyklopedisterna:encyklopedisternas
+571996r3<adjektiv>encylindrig:encylindrig:encylindrigt:encylindriga:encylindriga::::
+571101r7<adjektiv>enda:enda:enda:enda:enda:!:!:endaste:ende
+673363r3<pronomen>enda:enda
+614985r3<adverb>endast:endast
+673365r3<konjunktion>endast:endast
+673364r3<pronomen>ende:ende
+976510r3<substantiv>endemi:endemi:endemis:endemin:endemins:endemier:endemiers:endemierna:endemiernas
+CUSTOM: y n
+579728r3<adjektiv>endemisk:endemisk:endemiskt:endemiska:endemiska::::
+CUSTOM: y n
+620469r3<konjunktion>endera:endera
+620467r3<pronomen>endera:endera
+689473r3<adjektiv>endimensionell:endimensionell:endimensionellt:endimensionella:endimensionella:!:!:!:
+649125r10<substantiv>endiv, endive:endive, endiv:endivs:endiven:endivens:endiver:endivers:endiverna:endivernas
+579731r3<adjektiv>endocentrisk:endocentrisk:endocentriskt:endocentriska:endocentriska::::
+579734r3<adjektiv>endocyklisk:endocyklisk:endocykliskt:endocykliska:endocykliska::::
+797533r3<adjektiv>endogam:endogam:endogamt:endogama:endogama::::
+CUSTOM: y n n
+678335r3<substantiv>endogami:endogami:endogamis:endogamin, endogamien:endogamins, endogamiens::::
+CUSTOM: y n
+864421r3<adjektiv>endogen:endogen:endogent:endogena:endogena::::
+579737r3<adjektiv>endogenisk:endogenisk:endogeniskt:endogeniska:endogeniska::::
+689474r3<adjektiv>endokrin:endokrin:endokrint:endokrina:endokrina:!:!:!:
+634269r3<substantiv>endokrinolog:endokrinolog:endokrinologs:endokrinologen:endokrinologens:endokrinologer:endokrinologers:endokrinologerna:endokrinologernas
+864424r3<substantiv>endokrinologi:endokrinologi:endokrinologis:endokrinologin:endokrinologins::::
+579740r3<adjektiv>endokrinologisk:endokrinologisk:endokrinologiskt:endokrinologiska:endokrinologiska::::
+738359r3<substantiv>endorfin:endorfin:endorfins:endorfinet:endorfinets:endorfiner:endorfiners:endorfinerna:endorfinernas
+890397r3<substantiv>endoskop:endoskop:endoskops:endoskopet:endoskopets:endoskop:endoskops:endoskopen:endoskopens
+890403r3<substantiv>endoskopi:endoskopi:endoskopis:endoskopin:endoskopins::::
+976519r3<adjektiv>endoskopisk:endoskopisk:endoskopiskt:endoskopiska:endoskopiska::::::::::::
+730732r3<substantiv>endosom:endosom:endosoms:endosomen:endosomens:endosomer:endosomers:endosomerna:endosomernas
+CUSTOM: y n
+601750r3<substantiv>endossat:endossat:endossats:endossaten:endossatens:endossater:endossaters:endossaterna:endossaternas
+607006r3<substantiv>endossement:endossement:endossements:endossementet:endossementets:endossement:endossements:endossementen:endossementens
+601758r3<substantiv>endossent:endossent:endossents:endossenten:endossentens:endossenter:endossenters:endossenterna:endossenternas
+585523r6<verb>endossera:endossera:endosserade:endosserat:endosserar:endossera:endosseras:endosserades:endosserats:endosseras:endosserad:endosserat:endosserade:endosserande:!
+976523r3<substantiv>endossering:endossering:endosserings:endosseringen:endosseringens:endosseringar:endosseringars:endosseringarna:endosseringarnas
+CUSTOM: y n
+738367r3<adjektiv>endoterm:endoterm:endotermt:endoterma:endoterma:!:!:!:!
+CUSTOM: y n
+579743r3<adjektiv>endotermisk:endotermisk:endotermiskt:endotermiska:endotermiska::::
+CUSTOM: y n
+797536r3<adjektiv>endotrof:endotrof:endotroft:endotrofa:endotrofa::::
+CUSTOM: y n
+579746r3<adjektiv>endotrofisk:endotrofisk:endotrofiskt:endotrofiska:endotrofiska::::
+CUSTOM: y n
+733282r4<substantiv>endräkt:endräkt:endräkts:endräkten:endräktens::::
+COMPOUND(558411, 548725): en + dräkt
+571999r3<adjektiv>endräktig:endräktig:endräktigt:endräktiga:endräktiga::::
+935068r8<substantiv>enduro:enduro:enduros:enduron:endurons::::
+CUSTOM: y y enduro
+935091r4<substantiv>endurobana:endurobana:endurobanas:endurobanan:endurobanans:endurobanor:endurobanors:endurobanorna:endurobanornas
+COMPOUND(935068, 556870): enduro + bana
+935101r4<substantiv>enduroförare:enduroförare:enduroförares:enduroföraren:enduroförarens:enduroförare:enduroförares:enduroförarna:enduroförarnas
+COMPOUND(935068, 558907): enduro + förare
+935073r4<substantiv>endurospår:endurospår:endurospårs:endurospåret:endurospårets:endurospår:endurospårs:endurospåren:endurospårens
+COMPOUND(935068, 552961): enduro + spår
+935081r4<substantiv>endurotävling:endurotävling:endurotävlings:endurotävlingen:endurotävlingens:endurotävlingar:endurotävlingars:endurotävlingarna:endurotävlingarnas
+COMPOUND(935068, 597793): enduro + tävling
+935109r4<substantiv>enduroåkare:enduroåkare:enduroåkares:enduroåkaren:enduroåkarens:enduroåkare:enduroåkares:enduroåkarna:enduroåkarnas
+COMPOUND(935068, 615528): enduro + åkare
+790578r3<adjektiv>endäckad:endäckad:endäckat:endäckade:endäckade:!:!:!:
+558413r8<pronomen>ene:ene
+553199r3<egennamn>Enea:Enea:Eneas
+790581r3<adjektiv>eneggad:eneggad:eneggat:eneggade:eneggade:!:!:!:
+579749r3<adjektiv>energetisk:energetisk:energetiskt:energetiska:energetiska::::
+610633r18<substantiv>energi:energi:energis:energin:energins:energier:energiers:energierna:energiernas
+CUSTOM: y y energi +energi
+797539r3<adjektiv>energieffektiv:energieffektiv:energieffektivt:energieffektiva:energieffektiva::::
+572000r3<adjektiv>energifattig:energifattig:energifattigt:energifattiga:energifattiga::::
+731098r4<substantiv>energiförbrukning:energiförbrukning:energiförbruknings:energiförbrukningen:energiförbrukningens:energiförbrukningar:energiförbrukningars:energiförbrukningarna:energiförbrukningarnas
+COMPOUND(610633, 657436): energi + förbrukning
+797542r3<adjektiv>energiintensiv:energiintensiv:energiintensivt:energiintensiva:energiintensiva::::
+902137r4<substantiv>energikick:energikick:energikicks:energikicken:energikickens:energikickar:energikickars:energikickarna:energikickarnas
+COMPOUND(610633, 551518): energi + kick
+701533r4<substantiv>energikälla:energikälla:energikällas:energikällan:energikällans:energikällor:energikällors:energikällorna:energikällornas
+COMPOUND(610633, 559907): energi + källa
+CUSTOM: n n y
+860566r3<egennamn>Energimyndigheten:Energimyndigheten:Energimyndighetens
+CUSTOM: n n 
+640349r6<verb>energimärka:energimärka:energimärkte:energimärkt:energimärker:energimärk:energimärkas:energimärktes:energimärkts:energimärks:energimärkt:energimärkt:energimärkta:energimärkande:
+COMPOUND(610633, 585833): energi + märka
+658491r3<substantiv>energinivå:energinivå:energinivås:energinivån:energinivåns:energinivåer:energinivåers:energinivåerna:energinivåernas
+579752r3<adjektiv>energipolitisk:energipolitisk:energipolitiskt:energipolitiska:energipolitiska::::
+689475r4<adjektiv>energirik:energirik:energirikt:energirika:energirika:energirikare:energirikast:energirikaste:
+768457r4<substantiv>energiråd:energiråd:energiråds:energirådet:energirådets:energiråd:energiråds:energiråden:energirådens
+COMPOUND(610633, 552853): energi + råd
+571333r3<adjektiv>energisk:energisk:energiskt:energiska:energiska:energiskare:energiskast:energiskaste:energiske
+892356r3<adjektiv>energismart:energismart:energismart:energismarta:energismarta:energismartare:energismartast:energismartaste:::::::::
+797545r4<adjektiv>energisnål:energisnål:energisnålt:energisnåla:energisnåla:energisnålare:energisnålast:energisnålaste:
+950988r4<substantiv>energitorv:energitorv:energitorvs:energitorven:energitorvens:!:!:!:!
+COMPOUND(610633, 627429): energi + torv
+875943r3<egennamn>Eneroth:Eneroth:Eneroths
+546480r5<verb>enervera:enervera:enerverade:enerverat:enerverar:enervera:enerveras:enerverades:enerverats:enerveras:enerverad:enerverat:enerverade:enerverande:
+689476r3<

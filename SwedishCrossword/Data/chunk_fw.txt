@@ -1,0 +1,647 @@
+nformation på ett kontokorts magnetremsa
+907370r3<substantiv>skimning:skimning:skimnings:skimningen:skimningens:skimningar:skimningars:skimningarna:skimningarnas
+907380r3<substantiv>skimningskort:skimningskort:::::::
+593367r4<verb>skimra:skimra:skimrade:skimrat:skimrar:skimra::::::::skimrande:
+576185r7<adjektiv>skimrig:skimrig:skimrigt:skimriga:skimriga:skimrigare:skimrigast:skimrigaste::::skimrigas::::skimrigastes:
+822519r3<substantiv>skimring:skimring:skimrings:skimringen:skimringens:skimringar:skimringars:skimringarna:skimringarnas
+593361r4<verb>skina:skina:sken:skinit:skiner:skin:!:!:!:!:!:!:!:skinande:
+666190r3<adjektiv>skinande:skinande:skinande:skinande:skinande:!:!:!:
+547665r4<verb>skingra:skingra:skingrade:skingrat:skingrar:skingra:skingras:skingrades:skingrats:skingras:skingrad:skingrat:skingrade::
+709122r3<substantiv>skingrare:skingrare:skingrares:skingraren:skingrarens:skingrare:skingrares:skingrarna:skingrarnas
+593368r3<deponens>skingras:skingras:skingrades:skingrats:skingras:skingras
+822527r4<substantiv>skingring:skingring:skingrings:skingringen:skingringens:skingringar:skingringars:skingringarna:skingringarnas
+CUSTOM: y y skingrings
+822535r3<substantiv>skingringsförbud::::::::
+COMPOUND(822527, 552399): skingring + förbud
+709128r3<substantiv>skinhead:skinhead:skinheads::::::
+593369r6<substantiv>skinka:skinka:skinkas:skinkan:skinkans:skinkor:skinkors:skinkorna:skinkornas
+CUSTOM: y y skink
+709130r4<substantiv>skinksmörgås:skinksmörgås:skinksmörgås:skinksmörgåsen:skinksmörgåsens:skinksmörgåsar:skinksmörgåsars:skinksmörgåsarna:skinksmörgåsarnas
+COMPOUND(593369, 551881): skinka + smörgås
+949515r4<substantiv>skinksås:skinksås:skinksås:skinksåsen:skinksåsens:skinksåser:skinksåsers:skinksåserna:skinksåsernas
+COMPOUND(593369, 556707): skinka + sås
+607984r16<substantiv>skinn:skinn:skinns:skinnet:skinnets:skinn:skinns:skinnen:skinnens
+CUSTOM: y y skinn +skinn
+738236r3<verb>skinna:skinna:skinnade:skinnat:skinnar:skinna:skinnas:skinnades:skinnats:skinnas:skinnad:skinnat:skinnade:skinnande:
+822536r3<substantiv>skinnare:skinnare:skinnares:skinnaren:skinnarens:skinnare:skinnares:skinnarna:skinnarnas
+794920r3<adjektiv>skinnbrämad:skinnbrämad:skinnbrämat:skinnbrämade:skinnbrämade:!:!:!:
+656635r3<substantiv>skinnbyxor:::::skinnbyxor:skinnbyxors:skinnbyxorna:skinnbyxornas
+822542r3<substantiv>skinneri:skinneri:skinneris:skinneriet:skinneriets:skinnerier:skinneriers:skinnerierna:skinneriernas
+801631r3<adjektiv>skinnflådd:skinnflådd:skinnflått:skinnflådda:skinnflådda::::
+794923r3<adjektiv>skinnfodrad:skinnfodrad:skinnfodrat:skinnfodrade:skinnfodrade:!:!:!:
+564158r3<adjektiv>skinnfri:skinnfri:skinnfritt:skinnfria:skinnfria::::
+709137r4<substantiv>skinnfåtölj:skinnfåtölj:skinnfåtöljs:skinnfåtöljen:skinnfåtöljens:skinnfåtöljer:skinnfåtöljers:skinnfåtöljerna:skinnfåtöljernas
+COMPOUND(607984, 549001): skinn + fåtölj
+576188r3<adjektiv>skinnig:skinnig:skinnigt:skinniga:skinniga::::
+801634r3<adjektiv>skinnklädd:skinnklädd:skinnklätt:skinnklädda:skinnklädda::::
+656636r4<substantiv>skinnkläder:!:!:!:!:skinnkläder:skinnkläders:skinnkläderna:skinnklädernas
+COMPOUND(607984, 604465): skinn + kläder
+666192r4<substantiv>skinnlägel:skinnlägel:skinnlägels:skinnlägeln:skinnlägelns:skinnläglar:skinnläglars:skinnläglarna:skinnläglarnas
+COMPOUND(607984, 621031): skinn + lägel
+756098r8<substantiv>skinnpaj:skinnpaj:skinnpajs:skinnpajen:skinnpajens:skinnpajar:skinnpajars:skinnpajarna:skinnpajarnas
+666194r4<substantiv>skinnskalle:skinnskalle:skinnskalles:skinnskallen:skinnskallens:skinnskallar:skinnskallars:skinnskallarna:skinnskallarnas
+COMPOUND(607984, 599968): skinn + skalle
+CUSTOM: y y skinnskalle
+728236r3<egennamn>Skinnskatteberg:Skinnskatteberg:Skinnskattebergs
+CUSTOM: y n Skinnskattebergs
+709145r4<substantiv>skinnsko:skinnsko:skinnskos:skinnskon:skinnskons:skinnskor:skinnskors:skinnskorna:skinnskornas
+COMPOUND(607984, 555202): skinn + sko
+709153r4<adjektiv>skinntorr:skinntorr:skinntorrt:skinntorra:skinntorra:!:!:!:skinntorre
+COMPOUND(607984, 563246): skinn + torr
+709157r3<verb>skipa:skipa:skipade:skipat:skipar:skipa:skipas:skipades:skipats:skipas:skipad:skipat:skipade::
+547666r4<verb>skippa:skippa:skippade:skippat:skippar:skippa:skippas:skippades:skippats:skippas:skippad:skippat:skippade::
+938302r3<substantiv>skipper:skipper:skippers:skippern:skipperns:skipprar:skipprars:skipprarna:skipprarnas
+628712r3<adjektiv>skir:skir:skirt:skira:skira::::
+628713r4<verb>skira:skira:skirade:skirat:skirar:skira:skiras:skirades:skirats:skiras:skirad:skirat:skirade:skirande:
+766300r3<adjektiv>skirblå:skirblå:skirblått:skirblåa:skirblåa::::
+822554r3<adjektiv>skirgrön:skirgrön:skirgrönt:skirgröna:skirgröna::::
+822557r3<substantiv>skirhet:skirhet:skirhets:skirheten:skirhetens::::
+822561r3<substantiv>skirning:skirning:skirnings:skirningen:skirningens::::
+550514r5<substantiv>skiss:skiss:skiss:skissen:skissens:skisser:skissers:skisserna:skissernas
+CUSTOM: y y skiss
+547667r4<verb>skissa:skissa:skissade:skissat:skissar:skissa:skissas:skissades:skissats:skissas:skissad:skissat:skissade::
+656638r3<adjektiv>skissartad:skissartad:skissartat:skissartade:skissartade:!:!:!:
+745916r4<substantiv>skissblock:skissblock:skissblocks:skissblocket:skissblockets:skissblock:skissblocks:skissblocken:skissblockens
+COMPOUND(550514, 552258): skiss + block
+745922r4<substantiv>skissbok:skissbok:skissboks:skissboken:skissbokens:skissböcker:skissböckers:skissböckerna:skissböckernas
+COMPOUND(550514, 555346): skiss + bok
+547668r5<verb>skissera:skissera:skisserade:skisserat:skisserar:skissera:skisseras:skisserades:skisserats:skisseras:skisserad:skisserat:skisserade:skisserande:
+822565r3<substantiv>skissering:skissering:skisserings:skisseringen:skisseringens::::
+822569r3<substantiv>skissning:skissning:skissnings:skissningen:skissningens:skissningar:skissningars:skissningarna:skissningarnas
+551842r11<substantiv>skit:skit:skits:skiten:skitens:skitar:skitars:skitarna:skitarnas
+CUSTOM: y y skit
+556521r13<verb>skita:skita:sket:skitit:skiter:skit:skitas:skets:skitits:skits:sketen:sketet:sketna::
+CUSTOM: y n
+910298r3<verb>skita:skita:skitade:skitat:skitar:skita:skitas:skitades:skitats:skitas:::::
+576191r3<adjektiv>skitaktig:skitaktig:skitaktigt:skitaktiga:skitaktiga::::
+656639r4<adjektiv>skitbra:skitbra:skitbra:skitbra:skitbra:!:!:!:!
+COMPOUND(551842, 555921): skit + bra
+656641r4<adjektiv>skitdålig:skitdålig:skitdåligt:skitdåliga:skitdåliga:!:!:!:skitdålige
+COMPOUND(551842, 555244): skit + dålig
+656644r3<adjektiv>skitenkel:skitenkel:skitenkelt:skitenkla:skitenkla:!:!:!:!
+798856r3<adjektiv>skitful:skitful:skitfult:skitfula:skitfula::::
+709165r3<substantiv>skitgubbe:skitgubbe:skitgubbes:skitgubben:skitgubbens:skitgubbar:skitgubbars:skitgubbarna:skitgubbarnas
+822577r3<substantiv>skitgöra:skitgöra:skitgöras:skitgörat:skitgörats::::
+709173r5<substantiv>skithus:skithus:skithus:skithuset:skithusets:skithus:skithus:skithusen:skithusens
+COMPOUND(551842, 552480): skit + hus
+709176r4<substantiv>skithög:skithög:skithögs:skithögen:skithögens:skithögar:skithögars:skithögarna:skithögarnas
+COMPOUND(551842, 551444): skit + hög
+576194r4<adjektiv>skitig:skitig:skitigt:skitiga:skitiga:skitigare:skitigast:skitigaste:skitige::::::::
+709184r3<substantiv>skitjobb:skitjobb:skitjobbs:skitjobbet:skitjobbets:skitjobb:skitjobbs:skitjobben:skitjobbens
+576195r4<adjektiv>skitnödig:skitnödig:skitnödigt:skitnödiga:skitnödiga:skitnödigare:skitnödigast:skitnödigaste:skitnödige
+656645r3<substantiv>skitprat:skitprat:skitprats:skitpratet:skitpratets:!:!:!:!
+846800r4<adjektiv>skiträdd:skiträdd:!:skiträdda:skiträdda:!:!:!:skiträdde
+COMPOUND(551842, 556250): skit + rädd
+745896r4<substantiv>skitsak:skitsak:skitsaks:skitsaken:skitsakens:skitsaker:skitsakers:skitsakerna:skitsakernas
+COMPOUND(551842, 550443): skit + sak
+656649r3<substantiv>skitsnack:skitsnack:skitsnacks:skitsnacket:skitsnackets:!:!:!:!
+656653r3<substantiv>skitstövel:skitstövel:skitstövels:skitstöveln:skitstövelns:skitstövlar:skitstövlars:skitstövlarna:skitstövlarnas
+656661r3<adjektiv>skitsur:skitsur:skitsurt:skitsura:skitsura:!:!:!:skitsure
+656666r3<adjektiv>skitsvår:skitsvår:skitsvårt:skitsvåra:skitsvåra:!:!:!:!
+709190r4<substantiv>skitunge:skitunge:skitunges:skitungen:skitungens:skitungar:skitungars:skitungarna:skitungarnas
+COMPOUND(551842, 600015): skit + unge
+576198r3<adjektiv>skitviktig:skitviktig:skitviktigt:skitviktiga:skitviktiga::::
+585909r24<substantiv>skiva:skiva:skivas:skivan:skivans:skivor:skivors:skivorna:skivornas
+CUSTOM: y y skiv
+585666r6<verb>skiva:skiva:skivade:skivat:skivar:skiva:skivas:skivades:skivats:skivas:skivad:skivat:skivade::
+550515r3<substantiv>skivaffär:skivaffär:skivaffärs:skivaffären:skivaffärens:skivaffärer:skivaffärers:skivaffärerna:skivaffärernas
+893773r4<substantiv>skivbar:skivbar:skivbars:skivbaren:skivbarens:skivbarer:skivbarers:skivbarerna:skivbarernas
+COMPOUND(585909, 557860): skiva + bar
+570076r3<adjektiv>skivbar:skivbar:skivbart:skivbara:skivbara::::
+552925r3<substantiv>skivbolag:skivbolag:skivbolags:skivbolaget:skivbolagets:skivbolag:skivbolags:skivbolagen:skivbolagens
+976763r4<substantiv>skivepitel:skivepitel:skivepitels:skivepitelet:skivepitelets::::
+COMPOUND(585909, 976716): skiva + epitel
+576201r3<adjektiv>skivformig:skivformig:skivformigt:skivformiga:skivformiga::::
+945245r3<substantiv>skivgatt:skivgatt:skivgatts:skivgattet:skivgattets:skivgatt:skivgatts:skivgatten:skivgattens
+576204r3<adjektiv>skivig:skivig:skivigt:skiviga:skiviga::::
+709199r4<substantiv>skivinspelning:skivinspelning:skivinspelnings:skivinspelningen:skivinspelningens:skivinspelningar:skivinspelningars:skivinspelningarna:skivinspelningarnas
+COMPOUND(585909, 692460): skiva + inspelning
+626841r3<substantiv>skivling:skivling:skivlings:skivlingen:skivlingens:skivlingar:skivlingars:skivlingarna:skivlingarnas
+666202r4<substantiv>skivminne:skivminne:skivminnes:skivminnet:skivminnets:skivminnen:skivminnens:skivminnena:skivminnenas
+COMPOUND(585909, 555491): skiva + minne
+552927r3<substantiv>skivomslag:skivomslag:skivomslags:skivomslaget:skivomslagets:skivomslag:skivomslags:skivomslagen:skivomslagens
+945318r6<substantiv>skivrist:skivrist:skivrists:skivristen:skivristens:skivristar:skivristars:skivristarna:skivristarnas
+COMPOUND(585909, 901187): skiva + rist
+936472r4<substantiv>skivsläpp:skivsläpp:skivsläpps:skivsläppet:skivsläppets:skivsläpp:skivsläpps:skivsläppen:skivsläppens
+COMPOUND(585909, 684005): skiva + släpp
+610041r3<substantiv>skivspelare:skivspelare:skivspelares:skivspelaren:skivspelarens:skivspelare:skivspelares:skivspelarna:skivspelarnas
+CUSTOM: y y skivspelar
+595157r7<substantiv>skjorta:skjorta:skjortas:skjortan:skjortans:skjortor:skjortors:skjortorna:skjortornas
+CUSTOM: y y skjort
+965130r4<substantiv>skjortsnibb:skjortsnibb:skjortsnibbs:skjortsnibben:skjortsnibbens:skjortsnibbar:skjortsnibbars:skjortsnibbarna:skjortsnibbarnas
+COMPOUND(595157, 667571): skjorta + snibb
+709207r4<substantiv>skjortärm:skjortärm:skjortärms:skjortärmen:skjortärmens:skjortärmar:skjortärmars:skjortärmarna:skjortärmarnas
+COMPOUND(595157, 552149): skjorta + ärm
+552928r4<substantiv>skjul:skjul:skjuls:skjulet:skjulets:skjul:skjuls:skjulen:skjulens
+CUSTOM: y y skjul
+822585r4<substantiv>skjultak:skjultak:skjultaks:skjultaket:skjultakets:skjultak:skjultaks:skjultaken:skjultakens
+COMPOUND(552928, 553027): skjul + tak
+904891r4<substantiv>skjut:skjut:skjuts:skjutet:skjutets:skjut:skjuts:skjuten:skjutens
+CUSTOM: y n 
+593371r27<verb>skjuta:skjuta:sköt:skjutit:skjuter:skjut:skjutas:sköts:skjutits:skjuts, skjutes:skjuten:skjutet:skjutna:skjutande:
+CUSTOM: y n skjut
+745906r3<substantiv>skjutande:skjutande:skjutandes:skjutandet:skjutandets::::
+963503r3<substantiv>skjutare:skjutare:skjutares:skjutaren:skjutarens:skjutare:skjutares:skjutarna:skjutarnas
+709215r4<substantiv>skjutbana:skjutbana:skjutbanas:skjutbanan:skjutbanans:skjutbanor:skjutbanors:skjutbanorna:skjutbanornas
+COMPOUND(593371, 556870): skjuta + bana
+570079r3<adjektiv>skjutbar:skjutbar:skjutbart:skjutbara:skjutbara::::
+709223r3<substantiv>skjutdörr:skjutdörr:skjutdörrs:skjutdörren:skjutdörrens:skjutdörrar:skjutdörrars:skjutdörrarna:skjutdörrarnas
+937378r3<adjektiv>skjuten:skjuten:skjutet:skjutna:skjutna::::skjutne::::::::
+709231r3<substantiv>skjutfält:skjutfält:skjutfälts:skjutfältet:skjutfältets:skjutfält:skjutfälts:skjutfälten:skjutfältens
+576207r3<adjektiv>skjutfärdig:skjutfärdig:skjutfärdigt:skjutfärdiga:skjutfärdiga::::
+709237r3<adjektiv>skjutgalen:skjutgalen:skjutgalet:skjutgalna:skjutgalna::::skjutgalne
+709241r3<adjektiv>skjutglad:skjutglad:skjutglatt:skjutglada:skjutglada::::skjutglade
+732906r4<substantiv>skjutjärn:skjutjärn:skjutjärns:skjutjärnet:skjutjärnets:skjutjärn:skjutjärns:skjutjärnen:skjutjärnens
+COMPOUND(593371, 552537): skjuta + järn
+CUSTOM: y y skjutjärns
+576210r3<adjektiv>skjutkunnig:skjutkunnig:skjutkunnigt:skjutkunniga:skjutkunniga::::
+965138r4<substantiv>skjutlave:skjutlave:skjutlaves:skjutlaven:skjutlavens:skjutlavar:skjutlavars:skjutlavarna:skjutlavarnas
+COMPOUND(593371, 559961): skjuta + lave
+656667r4<substantiv>skjutning:skjutning:skjutnings:skjutningen:skjutningens:skjutningar:skjutningars:skjutningarna:skjutningarnas
+CUSTOM: y y skjutnings +skjutnings
+666289r4<substantiv>skjuts:skjuts:skjuts:skjutsen:skjutsens:skjutsar:skjutsars:skjutsarna:skjutsarnas
+547669r4<verb>skjutsa:skjutsa:skjutsade:skjutsat:skjutsar:skjutsa:skjutsas:skjutsades:skjutsats:skjutsas:skjutsad:skjutsat:skjutsade::
+956563r3<substantiv>skjutsande:skjutsande:skjutsandes:skjutsandet:skjutsandets::::
+986017r3<substantiv>skjutshåll:skjutshåll:skjutshålls:skjutshållet:skjutshållets:skjutshåll:skjutshålls:skjutshållen:skjutshållens
+567682r3<adjektiv>skjutskicklig:skjutskicklig:skjutskickligt:skjutskickliga:skjutskickliga::::
+822591r3<substantiv>skjutsning:skjutsning:skjutsnings:skjutsningen:skjutsningens:skjutsningar:skjutsningars:skjutsningarna:skjutsningarnas
+986023r3<substantiv>skjutsstation:skjutsstation:skjutsstations:skjutsstationen:skjutsstationens:skjutsstationer:skjutsstationers:skjutsstationerna:skjutsstationernas
+684094r9<verb>skjuva:skjuva:skjuvade:skjuvat:skjuvar::skjuvas:skjuvades:skjuvats:skjuvas:skjuvad:skjuvat:skjuvade:skjuvande:
+DEFINITION 1: vridningspåkänning vid exv. stansning
+BASEWORDS: skjuv
+CUSTOM: n n y
+684293r2<substantiv>skjuvkraft::::::::
+986031r3<substantiv>skjuvning:skjuvning:skjuvnings:skjuvningen:skjuvningens:skjuvningar:skjuvningars:skjuvningarna:skjuvningarnas
+731121r4<substantiv>skjuvplan:skjuvplan:skjuvplans:skjuvplanet:skjuvplanets:skjuvplan:skjuvplans:skjuvplanen:skjuvplanens
+CUSTOM: y y skjuvplans
+731128r4<substantiv>skjuvplanssamband:skjuvplanssamband:skjuvplanssambands:skjuvplanssambandet:skjuvplanssambandets:skjuvplanssamband:skjuvplanssambands:skjuvplanssambanden:skjuvplanssambandens
+COMPOUND(731121, 552865): skjuvplan + samband
+CUSTOM: y n
+729513r4<substantiv>skjuvspänning:skjuvspänning:skjuvspännings:skjuvspänningen:skjuvspänningens:skjuvspänningar:skjuvspänningars:skjuvspänningarna:skjuvspänningarnas
+COMPOUND(684094, 668975): skjuva + spänning
+860726r4<egennamn>SKL:SKL:
+822599r3<substantiv>skleros:skleros:skleros:sklerosen:sklerosens:skleroser:sklerosers:skleroserna:sklerosernas
+591069r4<verb>sklerosera:sklerosera:skleroserade:skleroserat:skleroserar:sklerosera:skleroseras:skleroserades:skleroserats:skleroseras:skleroserad:skleroserat:skleroserade:skleroserande:
+822611r3<substantiv>sklerosering:sklerosering:skleroserings:skleroseringen:skleroseringens::::
+583789r3<adjektiv>sklerotisk:sklerotisk:sklerotiskt:sklerotiska:sklerotiska::::
+585880r4<verb>sko:sko:skodde:skott:skor:sko:skos:skoddes:skotts:skos:skodd:skott:skodda::
+CUSTOM: y n
+555202r23<substantiv>sko:sko:skos:skon:skons:skor:skors:skorna:skornas
+CUSTOM: y y sko
+551843r3<substantiv>skock:skock:skocks:skocken:skockens:skockar:skockars:skockarna:skockarnas
+666206r3<substantiv>skocka:skocka:skockas:skockan:skockans:skockor:skockors:skockorna:skockornas
+547670r3<verb>skocka:skocka:skockade:skockat:skockar:skocka:::::::::
+666205r3<deponens>skockas:skockas:skockades:skockats:skockas:
+822615r3<substantiv>skockning:skockning:skocknings:skockningen:skockningens::::
+607988r3<substantiv>skodon:skodon:skodons:skodonet:skodonets:skodon:skodons:skodonen:skodonens
+615442r3<substantiv>skoflickare:skoflickare:skoflickares:skoflickaren:skoflickarens:skoflickare:skoflickares:skoflickarna:skoflickarnas
+CUSTOM: y y skoflickar
+785058r4<substantiv>skoförsäljare:skoförsäljare:skoförsäljares:skoförsäljaren:skoförsäljarens:skoförsäljare:skoförsäljares:skoförsäljarna:skoförsäljarnas
+COMPOUND(585880, 609539): sko + försäljare
+551845r34<substantiv>skog:skog:skogs:skogen:skogens:skogar:skogars:skogarna:skogarnas
+CUSTOM: y y skogs
+801637r3<adjektiv>skogbeklädd:skogbeklädd:skogbeklätt:skogbeklädda:skogbeklädda::::
+891468r3<adjektiv>skogbevuxen:skogbevuxen:skogbevuxet:skogbevuxna:skogbevuxna:!:!:!:!::::::::
+986041r3<adjektiv>skogbeväxt:skogbeväxt:skogbeväxt:skogbeväxta:skogbeväxta::::::::::::
+576213r3<adjektiv>skogfattig:skogfattig:skogfattigt:skogfattiga:skogfattiga::::
+564161r3<adjektiv>skogfri:skogfri:skogfritt:skogfria:skogfria::::
+576216r3<adjektiv>skogig:skogig:skogigt:skogiga:skogiga::::
+794926r3<adjektiv>skogkantad:skogkantad:skogkantat:skogkantade:skogkantade:!:!:!:
+745910r4<adjektiv>skogklädd:skogklädd:skogklätt:skogklädda:skogklädda:!:!:!:!
+COMPOUND(551845, 571280): skog + klädd
+567685r3<adjektiv>skoglig:skoglig:skogligt:skogliga:skogliga::::
+973313r3<egennamn>Skoglund:Skoglund:Skoglunds
+565245r3<adjektiv>skoglös:skoglös:skoglöst:skoglösa:skoglösa::::
+822619r3<adjektiv>skogrik:skogrik:skogrikt:skogrika:skogrika:skogrikare:skogrikast:skogrikaste:
+597578r3<substantiv>skogsavverkning:skogsavverkning:skogsavverknings:skogsavverkningen:skogsavverkningens:skogsavverkningar:skogsavverkningars:skogsavverkningarna:skogsavverkningarnas
+CUSTOM: n n y
+597586r3<substantiv>skogsbesprutning:skogsbesprutning:skogsbesprutnings:skogsbesprutningen:skogsbesprutningens:skogsbesprutningar:skogsbesprutningars:skogsbesprutningarna:skogsbesprutningarnas
+CUSTOM: n n
+935599r4<substantiv>skogsbestånd:skogsbestånd:skogsbestånds:skogsbeståndet:skogsbeståndets:skogsbestånd:skogsbestånds:skogsbestånden:skogsbeståndens
+COMPOUND(551845, 552240): skog + bestånd
+892699r3<substantiv>skogsbo:skogsbo:skogsbos:skogsbon:skogsbons:skogsbor:skogsbors:skogsborna:skogsbornas
+607994r3<substantiv>skogsbolag:skogsbolag:skogsbolags:skogsbolaget:skogsbolagets:skogsbolag:skogsbolags:skogsbolagen:skogsbolagens
+CUSTOM: n n y
+673699r5<substantiv>skogsbrand:skogsbrand:skogsbrands:skogsbranden:skogsbrandens:skogsbränder:skogsbränders:skogsbränderna:skogsbrändernas
+COMPOUND(551845, 617396): skog + brand
+CUSTOM: n n y
+671710r2<substantiv>skogsbrandskydd::::::::
+673698r4<substantiv>skogsbrandsvärdering:skogsbrandsvärdering:skogsbrandsvärderings:skogsbrandsvärderingen:skogsbrandsvärderingens:skogsbrandsvärderingar:skogsbrandsvärderingars:skogsbrandsvärderingarna:skogsbrandsvärderingarnas
+COMPOUND(673699, 626747): skogsbrand + värdering
+CUSTOM: n n
+608000r3<substantiv>skogsbruk:skogsbruk:skogsbruks:skogsbruket:skogsbrukets:skogsbruk:skogsbruks:skogsbruken:skogsbrukens
+CUSTOM: y y skogsbruks
+722029r4<substantiv>skogsbryn:skogsbryn:skogsbryns:skogsbrynet:skogsbrynets:skogsbryn:skogsbryns:skogsbrynen:skogsbrynens
+COMPOUND(551845, 552279): skog + bryn
+640369r6<substantiv>skogsdans:skogsdans:skogsdans:skogsdansen:skogsdansens:skogsdanser:skogsdansers:skogsdanserna:skogsdansernas
+COMPOUND(551845, 548569): skog + dans
+656670r3<substantiv>skogsdunge:skogsdunge:skogsdunges:skogsdungen:skogsdungens:skogsdungar:skogsdungars:skogsdungarna:skogsdungarnas
+760536r3<substantiv>skogsdöd:skogsdöd:skogsdöds:skogsdöden:skogsdödens::::
+583792r3<adjektiv>skogsekonomisk:skogsekonomisk:skogsekonomiskt:skogsekonomiska:skogsekonomiska::::
+CUSTOM: n n
+989421r4<substantiv>skogsekosystem:skogsekosystem:skogsekosystems:skogsekosystemet:skogsekosystemets:skogsekosystem:skogsekosystems:skogsekosystemen:skogsekosystemens
+COMPOUND(551845, 680851): skog + ekosystem
+603549r3<substantiv>skogsentreprenad:skogsentreprenad:skogsentreprenads:skogsentreprenaden:skogsentreprenadens:skogsentreprenader:skogsentreprenaders:skogsentreprenaderna:skogsentreprenadernas
+CUSTOM: n n
+852279r3<substantiv>skogsfru:skogsfru:skogsfrus:skogsfrun:skogsfruns:skogsfruar:skogsfruars:skogsfruarna:skogsfruarnas
+945252r4<substantiv>skogsfår:skogsfår:skogsfårs:skogsfåret:skogsfårets:skogsfår:skogsfårs:skogsfåren:skogsfårens
+COMPOUND(551845, 556541): skog + får
+597594r3<substantiv>skogsgallring:skogsgallring:skogsgallrings:skogsgallringen:skogsgallringens:skogsgallringar:skogsgallringars:skogsgallringarna:skogsgallringarnas
+CUSTOM: n n
+945260r4<substantiv>skogshajk:skogshajk:skogshajks:skogshajken:skogshajkens:skogshajker:skogshajkers:skogshajkerna:skogshajkernas
+COMPOUND(551845, 927767): skog + hajk
+952892r4<substantiv>skogshare:skogshare:skogshares:skogsharen:skogsharens:skogsharar:skogsharars:skogshararna:skogshararnas
+COMPOUND(551845, 599832): skog + hare
+892333r3<substantiv>skogshygge:skogshygge:skogshygges:skogshygget:skogshyggets:skogshyggen:skogshyggens:skogshyggena:skogshyggenas
+722645r4<substantiv>skogsindustri:skogsindustri:skogsindustris:skogsindustrin:skogsindustrins:skogsindustrier:skogsindustriers:skogsindustrierna:skogsindustriernas
+COMPOUND(551845, 610799): skog + industri
+CUSTOM: n n
+712073r4<substantiv>skogskant:skogskant:skogskants:skogskanten:skogskantens:skogskanter:skogskanters:skogskanterna:skogskanternas
+COMPOUND(551845, 549431): skog + kant
+CUSTOM: n n y
+576219r3<adjektiv>skogskärraktig:skogskärraktig:skogskärraktigt:skogskärraktiga:skogskärraktiga::::
+CUSTOM: n n
+598825r3<substantiv>skogslind:skogslind:skogslinds:skogslinden:skogslindens:skogslindar:skogslindars:skogslindarna:skogslindarnas
+603558r3<substantiv>skogslyst:skogslyst:skogslysts:skogslysten:skogslystens:skogslyster:skogslysters:skogslysterna:skogslysternas
+CUSTOM: n n n
+893781r4<substantiv>skogslän:skogslän:skogsläns:skogslänet:skogslänets:skogslän:skogsläns:skogslänen:skogslänens
+COMPOUND(551845, 552681): skog + län
+734688r5<substantiv>skogsmark:skogsmark:skogsmarks:skogsmarken:skogsmarkens:skogsmarker:skogsmarkers:skogsmarkerna:skogsmarkernas
+COMPOUND(551845, 549995): skog + mark
+CUSTOM: y y skogsmarks
+745942r3<substantiv>skogsmarksbonitering::::::::
+COMPOUND(734688, 745934): skogsmark + bonitering
+CUSTOM: n n
+603567r3<substantiv>skogsmaskin:skogsmaskin:skogsmaskins:skogsmaskinen:skogsmaskinens:skogsmaskiner:skogsmaskiners:skogsmaskinerna:skogsmaskinernas
+CUSTOM: n n y
+945272r3<egennamn>Skogsmulle:Skogsmulle:Skogsmulles
+945276r3<egennamn>Skogsmullen:Skogsmullen:Skogsmullens
+938577r3<substantiv>skogsmyra:skogsmyra:skogsmyras:skogsmyran:skogsmyrans:skogsmyror:skogsmyrors:skogsmyrorna:skogsmyrornas
+945280r4<substantiv>skogsnymf:skogsnymf:skogsnymfs:skogsnymfen:skogsnymfens:skogsnymfer:skogsnymfers:skogsnymferna:skogsnymfernas
+COMPOUND(551845, 550088): skog + nymf
+597602r3<substantiv>skogsplantering:skogsplantering:skogsplanterings:skogsplanteringen:skogsplanteringens:skogsplanteringar:skogsplanteringars:skogsplanteringarna:skogsplanteringarnas
+CUSTOM: n n
+942390r4<substantiv>skogsriska:skogsriska:skogsriskas:skogsriskan:skogsriskans:skogsriskor:skogsriskors:skogsriskorna:skogsriskornas
+COMPOUND(551845, 626861): skog + riska
+770017r6<substantiv>skogsrå:skogsrå:skogsrås:skogsrået:skogsråets:skogsrår, skogsrån:skogsrårs, skogsråns:skogsrårna, skogsråna:skogsrårnas, skogsrånas
+COMPOUND(551845, 557743): skog + rå
+640356r6<substantiv>skogssame:skogssame:skogssames:skogssamen:skogssamens:skogssamer:skogssamers:skogssamerna:skogssamernas
+COMPOUND(551845, 611974): skog + same
+656672r3<substantiv>skogssjö:skogssjö:skogssjös:skogssjön:skogssjöns:skogssjöar:skogssjöars:skogssjöarna:skogssjöarnas
+952901r4<substantiv>skogssork:skogssork:skogssorks:skogssorken:skogssorkens:skogssorkar:skogssorkars:skogssorkarna:skogssorkarnas
+COMPOUND(551845, 551893): skog + sork
+583795r3<adjektiv>skogsteknisk:skogsteknisk:skogstekniskt:skogstekniska:skogstekniska::::
+CUSTOM: n n
+735746r4<adjektiv>skogstokig:skogstokig:skogstokigt:skogstokiga:skogstokiga:skogstokigare:skogstokigast:skogstokigaste:skogstokige
+COMPOUND(551845, 577595): skog + tokig
+CUSTOM: n n
+656678r3<substantiv>skogsvandring:skogsvandring:skogsvandrings:skogsvandringen:skogsvandringens:skogsvandringar:skogsvandringars:skogsvandringarna:skogsvandringarnas
+CUSTOM: n n
+567688r3<adjektiv>skogsvetenskaplig:skogsvetenskaplig:skogsvetenskapligt:skogsvetenskapliga:skogsvetenskapliga::::
+CUSTOM: n n
+745930r4<substantiv>skogsvård:skogsvård:skogsvårds:skogsvården:skogsvårdens::::
+CUSTOM: y y skogsvårds
+669197r4<substantiv>skogsvårdsavgift:skogsvårdsavgift:skogsvårdsavgifts:skogsvårdsavgiften:skogsvårdsavgiftens:skogsvårdsavgifter:skogsvårdsavgifters:skogsvårdsavgifterna:skogsvårdsavgifternas
+COMPOUND(745930, 548299): skogsvård + avgift
+CUSTOM: n n
+603575r3<substantiv>skogsvårdsplan:skogsvårdsplan:skogsvårdsplans:skogsvårdsplanen:skogsvårdsplanens:skogsvårdsplaner:skogsvårdsplaners:skogsvårdsplanerna:skogsvårdsplanernas
+CUSTOM: n n
+939289r4<substantiv>skogsväg:skogsväg:skogsvägs:skogsvägen:skogsvägens:skogsvägar:skogsvägars:skogsvägarna:skogsvägarnas
+COMPOUND(551845, 552110): skog + väg
+597610r3<substantiv>skogsvärdering:skogsvärdering:skogsvärderings:skogsvärderingen:skogsvärderingens:skogsvärderingar:skogsvärderingars:skogsvärderingarna:skogsvärderingarnas
+CUSTOM: n n
+822636r4<substantiv>skogsås:skogsås:skogsås:skogsåsen:skogsåsens:skogsåsar:skogsåsars:skogsåsarna:skogsåsarnas
+COMPOUND(551845, 552130): skog + ås
+745943r3<substantiv>skogvaktare:skogvaktare:skogvaktares:skogvaktaren:skogvaktarens:skogvaktare:skogvaktares:skogvaktarna:skogvaktarnas
+CUSTOM: y n skogvaktar
+666229r4<substantiv>skohorn:skohorn:skohorns:skohornet:skohornets:skohorn:skohorns:skohornen:skohornens
+COMPOUND(555202, 552473): sko + horn
+611211r3<substantiv>skoindustri:skoindustri:skoindustris:skoindustrin:skoindustrins:skoindustrier:skoindustriers:skoindustrierna:skoindustriernas
+624743r3<substantiv>skoj:skoj:skojs:skojet:skojets:!:!:!:!
+626278r5<verb>skoja:skoja:skojade:skojat:skojar:skoja:skojas:skojades:skojats:skojas::::skojande:
+666235r3<substantiv>skojare:skojare:skojares:skojaren:skojarens:skojare:skojares:skojarna:skojarnas
+CUSTOM: y y skojar
+822647r3<substantiv>skojeri:skojeri:skojeris:skojeriet:skojeriets:skojerier:skojeriers:skojerierna:skojeriernas
+583798r4<adjektiv>skojfrisk:skojfrisk:skojfriskt:skojfriska:skojfriska::::skojfriske
+822656r3<substantiv>skojfriskhet:skojfriskhet:skojfriskhets:skojfriskheten:skojfriskhetens::::
+822660r3<substantiv>skojhumör:skojhumör:skojhumörs:skojhumöret:skojhumörets::::
+576222r4<adjektiv>skojig:skojig:skojigt:skojiga:skojiga:skojigare:skojigast:skojigaste:skojige
+822664r3<substantiv>skojighet:skojighet:skojighets:skojigheten:skojighetens:skojigheter:skojigheters:skojigheterna:skojigheternas
+603583r3<substantiv>skokräm:skokräm:skokräms:skokrämen:skokrämens:skokrämer:skokrämers:skokrämerna:skokrämernas
+CUSTOM: y y skokräms
+598833r3<substantiv>skokrämsburk:skokrämsburk:skokrämsburks:skokrämsburken:skokrämsburkens:skokrämsburkar:skokrämsburkars:skokrämsburkarna:skokrämsburkarnas
+CUSTOM: n n
+603591r3<substantiv>skokrämstub:skokrämstub:skokrämstubs:skokrämstuben:skokrämstubens:skokrämstuber:skokrämstubers:skokrämstuberna:skokrämstubernas
+CUSTOM: y n
+786403r4<substantiv>skol:skol:skols:skolen:skolens::::
+CUSTOM: n n y
+557325r7<verb>skola:skola:skolade:skolat:skolar:skola:skolas:skolades:skolats:skolas:skolad:skolat:skolade::
+DEFINITION 1: utbilda, träna
+DEFINITION 2: omplantera växter (ex.vis på kalljord)
+CUSTOM: y n
+557322r69<substantiv>skola:skola:skolas:skolan:skolans:skolor:skolors:skolorna:skolornas
+BASEWORDS: skol
+CUSTOM: y y skol +skole
+591610r4<adjektiv>skolad:skolad:skolat:skolade:skolade:!:!:!:
+789798r3<substantiv>skolarbete::::::::
+COMPOUND(557322, 612263): skola + arbete
+890826r3<substantiv>skolast:skolast:skolasts:skolasten:skolastens:skolaster:skolasters:skolasterna:skolasternas
+CUSTOM: y n n
+656682r3<substantiv>skolastik:skolastik:skolastiks:skolastiken:skolastikens::::
+696913r3<substantiv>skolastiker:skolastiker:skolastikers:skolastikern:skolastikerns:skolastiker:skolastikers:skolastikerna:skolastikernas
+583801r3<adjektiv>skolastisk:skolastisk:skolastiskt:skolastiska:skolastiska::::
+606375r4<substantiv>skolavslutning:skolavslutning:skolavslutnings:skolavslutningen:skolavslutningens:skolavslutningar:skolavslutningars:skolavslutningarna:skolavslutningarnas
+COMPOUND(557322, 596383): skola + avslutning
+CUSTOM: y y skolavslutnings
+894583r4<substantiv>skolbal:skolbal:skolbals:skolbalen:skolbalens:skolbaler:skolbalers:skolbalerna:skolbalernas
+COMPOUND(557322, 557858): skola + bal
+552929r4<substantiv>skolbarn:skolbarn:skolbarns:skolbarnet:skolbarnets:skolbarn:skolbarns:skolbarnen:skolbarnens
+COMPOUND(557322, 555956): skola + barn
+CUSTOM: y y skolbarns
+606383r3<substantiv>skolbespisning:skolbespisning:skolbespisnings:skolbespisningen:skolbespisningens:skolbespisningar:skolbespisningars:skolbespisningarna:skolbespisningarnas
+CUSTOM: y y skolbespisnings
+608005r3<substantiv>skolbibliotek:skolbibliotek:skolbiblioteks:skolbiblioteket:skolbibliotekets:skolbibliotek:skolbiblioteks:skolbiblioteken:skolbibliotekens
+893787r4<substantiv>skolbio:skolbio:skolbios:skolbion:skolbions::::
+COMPOUND(557322, 892957): skola + bio
+918648r4<substantiv>skolbok:skolbok:skolboks:skolboken:skolbokens:skolböcker:skolböckers:skolböckerna:skolböckernas
+COMPOUND(557322, 555346): skola + bok
+CUSTOM: y y skolboks
+745949r4<substantiv>skolborgarråd:skolborgarråd:skolborgarråds:skolborgarrådet:skolborgarrådets:skolborgarråd:skolborgarråds:skolborgarråden:skolborgarrådens
+COMPOUND(557322, 740690): skola + borgarråd
+666241r4<substantiv>skolbuss:skolbuss:skolbuss:skolbussen:skolbussens:skolbussar:skolbussars:skolbussarna:skolbussarnas
+COMPOUND(557322, 550982): skola + buss
+CUSTOM: y y skolbuss
+722485r4<substantiv>skolbyggnad:skolbyggnad:skolbyggnads:skolbyggnaden:skolbyggnadens:skolbyggnader:skolbyggnaders:skolbyggnaderna:skolbyggnadernas
+COMPOUND(557322, 548492): skola + byggnad
+559232r4<substantiv>skolbänk:skolbänk:skolbänks:skolbänken:skolbänkens:skolbänkar:skolbänkars:skolbänkarna:skolbänkarnas
+COMPOUND(557322, 550997): skola + bänk
+934661r4<substantiv>skolchef:skolchef:skolchefs:skolchefen:skolchefens:skolchefer:skolchefers:skolcheferna:skolchefernas
+COMPOUND(557322, 548529): skola + chef
+932597r4<substantiv>skoldag:skoldag:skoldags:skoldagen:skoldagens:skoldagar:skoldagars:skoldagarna:skoldagarnas
+COMPOUND(557322, 551009): skola + dag
+687797r3<adverb>skoldags:skoldags
+643338r6<substantiv>skoldans:skoldans:skoldans:skoldansen:skoldansens:skoldanser:skoldansers:skoldanserna:skoldansernas
+COMPOUND(557322, 548569): skola + dans
+666248r4<substantiv>skolelev:skolelev:skolelevs:skoleleven:skolelevens:skolelever:skolelevers:skoleleverna:skolelevernas
+COMPOUND(557322, 548760): skola + elev
+559038r4<substantiv>skolflicka:skolflicka:skolflickas:skolflickan:skolflickans:skolflickor:skolflickors:skolflickorna:skolflickornas
+COMPOUND(557322, 555382): skola + flicka
+576223r3<adjektiv>skolflicksaktig:skolflicksaktig:skolflicksaktigt:skolflicksaktiga:skolflicksaktiga::::
+934669r4<substantiv>skolform:skolform:skolforms:skolformen:skolformens:skolformer:skolformers:skolformerna:skolformernas
+COMPOUND(557322, 548947): skola + form
+559046r4<substantiv>skolfröken:skolfröken:skolfrökens:skolfröken:skolfrökens:skolfröknar:skolfröknars:skolfröknarna:skolfröknarnas
+COMPOUND(557322, 556168): skola + fröken
+852287r3<substantiv>skolfux:skolfux:skolfux:skolfuxen:skolfuxens:skolfuxar:skolfuxars:skolfuxarna:skolfuxarnas
+656680r3<substantiv>skolförvaltning:skolförvaltning:skolförvaltnings:skolförvaltningen:skolförvaltningens::::
+CUSTOM: y y skolförvaltnings
+721902r3<egennamn>Skolgatan:Skolgatan:Skolgatans
+559052r4<substantiv>skolgosse:skolgosse:skolgosses:skolgossen:skolgossens:skolgossar:skolgossars:skolgossarna:skolgossarnas
+COMPOUND(557322, 559057): skola + gosse
+656681r3<substantiv>skolgång:skolgång:skolgångs:skolgången:skolgångens::::
+551846r4<substantiv>skolgård:skolgård:skolgårds:skolgården:skolgårdens:skolgårdar:skolgårdars:skolgårdarna:skolgårdarnas
+COMPOUND(557322, 551337): skola + gård
+932604r4<substantiv>skolhem:skolhem:skolhems:skolhemmet:skolhemmets:skolhem:skolhems:skolhemmen:skolhemmens
+COMPOUND(557322, 555169): skola + hem
+932610r4<substantiv>skolhus:skolhus:skolhus:skolhuset:skolhusets:skolhus:skolhus:skolhusen:skolhusens
+COMPOUND(786403, 552480): skol + hus
+760541r3<substantiv>skolhuvudman::::::::
+COMPOUND(557322, 760485): skola + huvudman
+955019r3<substantiv>skolios:skolios:skolios:skoliosen:skoliosens::::
+666256r3<substantiv>skolk:skolk:skolks:skolket:skolkets::::
+559003r5<verb>skolka:skolka:skolkade:skolkat:skolkar:skolka:skolkas:skolkades:skolkats:skolkas::::skolkande:
+DEFINITION 1: Att inte gå till skolan när man måste, även i överförd betydelse till att undvika att göra saker man måste.
+550516r3<substantiv>skolkamrat:skolkamrat:skolkamrats:skolkamraten:skolkamratens:skolkamrater:skolkamraters:skolkamraterna:skolkamraternas
+559008r4<substantiv>skolkare:skolkare:skolkares:skolkaren:skolkarens:skolkare:skolkares:skolkarna:skolkarnas
+DEFINITION 1: någon som skolkar
+CUSTOM: y y skolkar
+559022r4<substantiv>skolklass:skolklass:skolklass:skolklassen:skolklassens:skolklasser:skolklassers:skolklasserna:skolklassernas
+COMPOUND(557322, 549530): skola + klass
+822672r3<substantiv>skolkning:skolkning:skolknings:skolkningen:skolkningens:skolkningar:skolkningars:skolkningarna:skolkningarnas
+932615r4<substantiv>skolkök:skolkök:skolköks:skolköket:skolkökets:skolkök:skolköks:skolköken:skolkökens
+COMPOUND(557322, 552618): skola + kök
+646537r3<substantiv>skolla:skolla:skollas:skollan:skollans:skollor:skollors:skollorna:skollornas
+918664r4<substantiv>skollag:skollag:skollags:skollaget:skollagets:skollag:skollags:skollagen:skollagens
+COMPOUND(557322, 625660): skola + lag
+CUSTOM: y y skollags
+918656r4<substantiv>skollag:skollag:skollags:skollagen:skollagens:skollagar:skollagars:skollagarna:skollagarnas
+COMPOUND(557322, 551690): skola + lag
+559029r4<substantiv>skollov:skollov:skollovs:skollovet:skollovets:skollov:skollovs:skolloven:skollovens
+COMPOUND(557322, 559035): skola + lov
+615443r3<substantiv>skollärare:skollärare:skollärares:skolläraren:skollärarens:skollärare:skollärares:skollärarna:skollärarnas
+CUSTOM: y y skollärar +skollärar
+666260r4<substantiv>skolmat:skolmat:skolmats:skolmaten:skolmatens:!:!:!:!
+COMPOUND(557322, 556206): skola + mat
+599580r4<substantiv>skolmatsal:skolmatsal:skolmatsals:skolmatsalen:skolmatsalens:skolmatsalar:skolmatsalars:skolmatsalarna:skolmatsalarnas
+COMPOUND(557322, 598551): skola + matsal
+722493r4<substantiv>skolmiljö:skolmiljö:skolmiljös:skolmiljön:skolmiljöns:skolmiljöer:skolmiljöers:skolmiljöerna:skolmiljöernas
+COMPOUND(557322, 611051): skola + miljö
+656684r4<substantiv>skolminister:skolminister:skolministers:skolministern:skolministerns:skolministrar:skolministrars:skolministrarna:skolministrarnas
+COMPOUND(557322, 616627): skola + minister
+666264r4<substantiv>skolmognad:skolmognad:skolmognads:skolmognaden:skolmognadens::::
+COMPOUND(557322, 621347): skola + mognad
+CUSTOM: y y skolmognads
+656685r4<substantiv>skolmyndighet:skolmyndighet:skolmyndighets:skolmyndigheten:skolmyndighetens:skolmyndigheter:skolmyndigheters:skolmyndigheterna:skolmyndigheternas
+COMPOUND(557322, 619016): skola + myndighet
+CUSTOM: y y skolmyndighets
+576226r3<adjektiv>skolmässig:skolmässig:skolmässigt:skolmässiga:skolmässiga::::
+822680r3<substantiv>skolmässighet:skolmässighet:skolmässighets:skolmässigheten:skolmässighetens::::
+576229r3<adjektiv>skolmästaraktig:skolmästaraktig:skolmästaraktigt:skolmästaraktiga:skolmästaraktiga::::
+615444r3<substantiv>skolmästare:skolmästare:skolmästares:skolmästaren:skolmästarens:skolmästare:skolmästares:skolmästarna:skolmästarnas
+CUSTOM: y y skolmästar
+734191r4<substantiv>skolning:skolning:skolnings:skolningen:skolningens:skolningar:skolningars:skolningarna:skolningarnas
+918668r3<adjektiv>skolnära:skolnära:skolnära:skolnära:skolnära:!:!:!:::::::::
+934677r3<substantiv>skolpeng:skolpeng:skolpengs:skolpengen:skolpengens::::
+666268r4<substantiv>skolplikt:skolplikt:skolplikts:skolplikten:skolpliktens::::
+COMPOUND(557322, 550214): skola + plikt
+576232r3<adjektiv>skolpliktig:skolpliktig:skolpliktigt:skolpliktiga:skolpliktiga::::
+666272r4<substantiv>skolpojke:skolpojke:skolpojkes:skolpojken:skolpojkens:skolpojkar:skolpojkars:skolpojkarna:skolpojkarnas
+COMPOUND(557322, 555384): skola + pojke
+576235r4<adjektiv>skolpojksaktig:skolpojksaktig:skolpojksaktigt:skolpojksaktiga:skolpojksaktiga::::skolpojksaktige
+906946r4<substantiv>skolpolis:skolpolis:skolpolis:skolpolisen:skolpolisens:skolpoliser:skolpolisers:skolpoliserna:skolpolisernas
+COMPOUND(557322, 550221): skola + polis
+583804r3<adjektiv>skolpolitisk:skolpolitisk:skolpolitiskt:skolpolitiska:skolpolitiska::::
+666280r4<substantiv>skolresa:skolresa:skolresas:skolresan:skolresans:skolresor:skolresors:skolresorna:skolresornas
+COMPOUND(557322, 594958): skola + resa
+770021r4<substantiv>skolråd:skolråd:skolråds:skolrådet:skolrådets:skolråd:skolråds:skolråden:skolrådens
+COMPOUND(557325, 552853): skola + råd
+599588r4<substantiv>skolsal:skolsal:skolsals:skolsalen:skolsalens:skolsalar:skolsalars:skolsalarna:skolsalarnas
+COMPOUND(557322, 598801): skola + sal
+666288r4<substantiv>skolskjuts:skolskjuts:skolskjuts:skolskjutsen:skolskjutsens:skolskjutsar:skolskjutsars:skolskjutsarna:skolskjutsarnas
+COMPOUND(557322, 666289): skola + skjuts
+666301r4<substantiv>skolstart:skolstart:skolstarts:skolstarten:skolstartens:skolstarter:skolstarters:skolstarterna:skolstarternas
+COMPOUND(557322, 603706): skola + start
+894789r3<substantiv>skolt:skolt:skolts:skolten:skoltens:skolter:skolters:skolterna:skolternas
+CUSTOM: n n y
+686562r5<substantiv>skoltid:skoltid:skoltids:skoltiden:skoltidens:skoltider:skoltiders:skoltiderna:skoltidernas
+COMPOUND(557322, 550665): skola + tid
+656687r4<substantiv>skoltidning:skoltidning:skoltidnings:skoltidningen:skoltidningens:skoltidningar:skoltidningars:skoltidningarna:skoltidningarnas
+COMPOUND(557322, 555969): skola + tidning
+CUSTOM: y y skoltidnings
+666310r4<adjektiv>skoltrött:skoltrött:skoltrött:skoltrötta:skoltrötta:!:!:!:skoltrötte
+COMPOUND(557322, 571275): skola + trött
+666313r4<substantiv>skoltrötthet:skoltrötthet:skoltrötthets:skoltröttheten:skoltrötthetens::::
+COMPOUND(557322, 666314): skola + trötthet
+CUSTOM: y y skoltrötthets
+965147r4<substantiv>skoltyska:skoltyska:skoltyskas:skoltyskan:skoltyskans::::
+COMPOUND(557322, 595676): skola + tyska
+666321r4<substantiv>skolungdom:skolungdom:skolungdoms:skolungdomen:skolungdomens:skolungdomar:skolungdomars:skolungdomarna:skolungdomarnas
+COMPOUND(557322, 552070): skola + ungdom
+666329r4<substantiv>skolvecka:skolvecka:skolveckas:skolveckan:skolveckans:skolveckor:skolveckors:skolveckorna:skolveckornas
+COMPOUND(557322, 556692): skola + vecka
+934681r4<substantiv>skolverk:skolverk:skolverks:skolverket:skolverkets:skolverk:skolverks:skolverken:skolverkens
+COMPOUND(557322, 553117): skola + verk
+553316r3<egennamn>Skolverket:Skolverket:Skolverkets
+666337r4<substantiv>skolväg:skolväg:skolvägs:skolvägen:skolvägens:skolvägar:skolvägars:skolvägarna:skolvägarnas
+COMPOUND(557322, 552110): skola + väg
+666345r4<substantiv>skolväska:skolväska:skolväskas:skolväskan:skolväskans:skolväskor:skolväskors:skolväskorna:skolväskornas
+COMPOUND(557322, 595808): skola + väska
+656693r3<substantiv>skolålder:skolålder:skolålders:skolåldern:skolålderns::::
+666353r4<substantiv>skolår:skolår:skolårs:skolåret:skolårets:skolår:skolårs:skolåren:skolårens
+COMPOUND(557322, 553140): skola + år
+650923r6<substantiv>skolämne:skolämne:skolämnes:skolämnet:skolämnets:skolämnen:skolämnens:skolämnena:skolämnenas
+894249r4<substantiv>skoläst:skoläst:skolästs:skolästen:skolästens:skoläster:skolästers:skolästerna:skolästernas
+COMPOUND(555202, 637045): sko + läst
+745955r3<substantiv>skolöverstyrelse:skolöverstyrelse:skolöverstyrelses:skolöverstyrelsen:skolöverstyrelsens::::
+610047r6<substantiv>skomakare:skomakare:skomakares:skomakaren:skomakarens:skomakare:skomakares:skomakarna:skomakarnas
+CUSTOM: y y skomakar
+893791r4<substantiv>skomakarlax:skomakarlax:skomakarlax:skomakarlaxen:skomakarlaxens:skomakarlaxar:skomakarlaxars:skomakarlaxarna:skomakarlaxarnas
+COMPOUND(610047, 555226): skomakare + lax
+666319r4<substantiv>skomakarlärling:skomakarlärling:skomakarlärlings:skomakarlärlingen:skomakarlärlingens:skomakarlärlingar:skomakarlärlingars:skomakarlärlingarna:skomakarlärlingarnas
+COMPOUND(610047, 560254): skomakare + lärling
+804188r3<substantiv>skomakarverkstad::::::::
+COMPOUND(610047, 645357): skomakare + verkstad
+666320r3<substantiv>skomakeri:skomakeri:skomakeris:skomakeriet:skomakeriets:skomakerier:skomakeriers:skomakerierna:skomakeriernas
+932622r4<substantiv>skomode:skomode:skomodes:skomodet:skomodets:skomoden:skomodens:skomodena:skomodenas
+COMPOUND(555202, 612707): sko + mode
+559015r4<verb>skona:skona:skonade:skonat:skonar:skona:skonas:skonades:skonats:skonas:skonad:skonat:skonade::
+745959r3<substantiv>skonare:skonare:skonares:skonaren:skonarens:skonare:skonares:skonarna:skonarnas
+723213r3<substantiv>skonert:skonert:skonerts:skonerten:skonertens:skonerter:skonerters:skonerterna:skonerternas
+794929r3<adjektiv>skonertriggad:skonertriggad:skonertriggat:skonertriggade:skonertriggade:!:!:!:
+822685r3<substantiv>skonertskepp:skonertskepp:skonertskepps:skonertskeppet:skonertskeppets:skonertskepp:skonertskepps:skonertskeppen:skonertskeppens
+565246r4<adjektiv>skoningslös:skoningslös:skoningslöst:skoningslösa:skoningslösa:skoningslösare:skoningslösast:skoningslösaste:skoningslöse
+666360r3<substantiv>skoningslöshet:skoningslöshet:skoningslöshets:skoningslösheten:skoningslöshetens::::
+CUSTOM: y y skoningslöshets
+563528r8<adjektiv>skonsam:skonsam:skonsamt:skonsamma:skonsamma:skonsammare:skonsammast:skonsammaste:
+666364r3<substantiv>skonsamhet:skonsamhet:skonsamhets:skonsamheten:skonsamhetens::::
+CUSTOM: y y skonsamhets
+666368r4<substantiv>skonummer:skonummer:skonummers:skonumret:skonumrets:skonummer:skonummers:skonumren:skonumrens
+COMPOUND(555202, 621605): sko + nummer
+923427r12<substantiv>skop:skop:skops:skopet:skopets:skop:skops:skopen:skopens
+CUSTOM: n n y
+875906r5<egennamn>Skop:Skop:Skops
+649258r3<substantiv>skopa:skopa:skopas:skopan:skopans:skopor:skopors:skoporna:skopornas
+958655r3<verb>skopa:skopa:skopade:skopat:skopar:skopa:skopas:skopades:skopats:skopas:::::
+CUSTOM: y n
+576238r3<adjektiv>skopformig:skopformig:skopformigt:skopformiga:skopformiga::::
+943210r3<egennamn>Skopje:Skopje:Skopjes
+822691r3<substantiv>skoplastare:skoplastare:skoplastares:skoplastaren:skoplastarens:skoplastare:skoplastares:skoplastarna:skoplastarnas
+565250r3<adjektiv>skoplös:skoplös:skoplöst:skoplösa:skoplösa::::
+CUSTOM: y n n
+822697r3<substantiv>skopning:skopning:skopnings:skopningen:skopningens::::
+986043r3<substantiv>skopolamin:skopolamin:skopolamins:skopolaminet:skopolaminets::::
+770027r3<substantiv>skoputsare:skoputsare:skoputsares:skoputsaren:skoputsarens:skoputsare:skoputsares:skoputsarna:skoputsarnas
+583810r3<adjektiv>skorbutisk:skorbutisk:skorbutiskt:skorbutiska:skorbutiska::::
+852294r3<substantiv>skorem:skorem:skorems:skoremmen:skoremmens:skoremmar:skoremmars:skoremmarna:skoremmarnas
+595158r6<substantiv>skorpa:skorpa:skorpas:skorpan:skorpans:skorpor:skorpors:skorporna:skorpornas
+CUSTOM: y y skorp
+822705r3<substantiv>skorpbildning:skorpbildning:skorpbildnings:skorpbildningen:skorpbildningens::::
+576241r3<adjektiv>skorpig:skorpig:skorpigt:skorpiga:skorpiga::::
+550517r4<substantiv>skorpion:skorpion:skorpions:skorpionen:skorpionens:skorpioner:skorpioners:skorpionerna:skorpionernas
+CUSTOM: y y skorpion
+822709r4<substantiv>skorpiongadd:skorpiongadd:skorpiongadds:skorpiongadden:skorpiongaddens:skorpiongaddar:skorpiongaddars:skorpiongaddarna:skorpiongaddarnas
+COMPOUND(550517, 551287): skorpion + gadd
+822717r3<substantiv>skorplav:skorplav:skorplavs:skorplaven:skorplavens:skorplavar:skorplavars:skorplavarna:skorplavarnas
+822701r3<substantiv>skorpmjöl:skorpmjöl:skorpmjöls:skorpmjölet:skorpmjölets::::
+822725r4<substantiv>skorpsmula:skorpsmula:skorpsmulas:skorpsmulan:skorpsmulans:skorpsmulor:skorpsmulors:skorpsmulorna:skorpsmulornas
+COMPOUND(595158, 585910): skorpa + smula
+745968r3<verb>skorra:skorra:skorrade:skorrat:skorrar:skorra::::::::skorrande:
+822733r3<substantiv>skorrning:skorrning:skorrnings:skorrningen:skorrningens:skorrningar:skorrningars:skorrningarna:skorrningarnas
+551848r5<substantiv>skorsten:skorsten:skorstens:skorstenen:skorstenens:skorstenar:skorstenars:skorstenarna:skorstenarnas
+CUSTOM: y y skorstens
+770033r4<substantiv>skorstensfejare:skorstensfejare:skorstensfejares:skorstensfejaren:skorstensfejarens:skorstensfejare:skorstensfejares:skorstensfejarna:skorstensfejarnas
+CUSTOM: y y skorstensfejar
+886860r3<substantiv>skorstensfejarmästare::::::::
+COMPOUND(770033, 615391): skorstensfejare + mästare
+886856r3<substantiv>skorstensfejeri:skorstensfejeri:skorstensfejeris:skorstensfejeriet:skorstensfejeriets::::
+852302r3<substantiv>skorstenshuv:skorstenshuv:skorstenshuvs:skorstenshuven:skorstenshuvens:skorstenshuvar:skorstenshuvars:skorstenshuvarna:skorstenshuvarnas
+852310r3<substantiv>skorstensmur:skorstensmur:skorstensmurs:skorstensmuren:skorstensmurens:skorstensmurar:skorstensmurars:skorstensmurarna:skorstensmurarnas
+745974r3<substantiv>skorstenspipa::::::::
+COMPOUND(551848, 556880): skorsten + pipa
+745973r3<substantiv>skorstensstock::::::::
+COMPOUND(551848, 551942): skorsten + stock
+927036r4<substantiv>skorv:skorv:skorvs:skorven:skorvens:skorvar:skorvars:skorvarna:skorvarnas
+CUSTOM: y n y
+564164r3<adjektiv>skorvfri:skorvfri:skorvfritt:skorvfria:skorvfria::::
+CUSTOM: y n n
+576244r3<adjektiv>skorvig:skorvig:skorvigt:skorviga:skorviga::::
+822741r3<substantiv>skorvighet:skorvighet:skorvighets:skorvigheten:skorvighetens::::
+556245r3<substantiv>skoskav:skoskav:skoskavs:skoskavet:skoskavets:!:!:!:!
+595159r3<substantiv>skosmörja:skosmörja:skosmörjas:skosmörjan:skosmörjans:skosmörjor:skosmörjors:skosmörjorna:skosmörjornas
+595167r3<substantiv>skosula:skosula:skosulas:skosulan:skosulans:skosulor:skosulors:skosulorna:skosulornas
+628749r4<substantiv>skot:skot:skots:skotet:skotets:skot:skots:skoten:skotens
+CUSTOM: n n y
+894797r3<verb>skota:skota:skotade:skotat:skotar:skota:skotas:skotades:skotats:skotas:skotad:skotat:skotade:skotande:!
+CUSTOM: n n y
+894806r3<substantiv>skota:skota:skotas:skotan:skotans:skotor:skotors:skotorna:skotornas
+CUSTOM: n n y
+718898r3<substantiv>skotare:skotare:skotares:skotaren:skotarens:skotare:skotares:skotarna:skotarnas
+718890r11<substantiv>skoter:skoter:skoters:skotern:skoterns:skotrar:skotrars:skotrarna:skotrarnas
+CUSTOM: y y skoter
+718904r4<substantiv>skoterförare:skoterförare:skoterförares:skoterföraren:skoterförarens:skoterförare:skoterförares:skoterförarna:skoterförarnas
+COMPOUND(718890, 558907): skoter + förare
+965214r4<substantiv>skoterföre:skoterföre:skoterföres:skoterföret:skoterförets:skoterfören:skoterförens:skoterförena:skoterförenas
+COMPOUND(718890, 612480): skoter + före
+718882r4<substantiv>skoterkälke:skoterkälke:skoterkälkes:skoterkälken:skoterkälkens:skoterkälkar:skoterkälkars:skoterkälkarna:skoterkälkarnas
+COMPOUND(718890, 559906): skoter + kälke
+718916r4<substantiv>skoterled:skoterled:skoterleds:skoterleden:skoterledens:skoterleder:skoterleders:skoterlederna:skoterledernas
+COMPOUND(718890, 556257): skoter + led
+718910r4<substantiv>skoterspår:skoterspår:skoterspårs:skoterspåret:skoterspårets:skoterspår:skoterspårs:skoterspåren:skoterspårens
+COMPOUND(718890, 552961): skoter + spår
+718928r4<substantiv>skotertrafik:skotertrafik:skotertrafiks:skotertrafiken:skotertrafikens::::
+COMPOUND(718890, 673056): skoter + trafik
+822745r3<substantiv>skothorn:skothorn:skothorns:skothornet:skothornets:skothorn:skothorns:skothornen:skothornens
+718924r3<substantiv>skotning:skotning:skotnings:skotningen:skotningens::::
+656695r3<adjektiv>skotsk:skotsk:skotskt:skotska:skotska:!:!:!:skotske
+822751r3<substantiv>skotska:skotska:skotskas:skotskan:skotskans:skotskor:skotskors:skotskorna:skotskornas
+905623r3<substantiv>skotskena:skotskena:skotsskenas:skoskenan:skotskenans:skotskenor:skotskenors:skotskenona:skotskenornas
+576247r3<adjektiv>skotskrutig:skotskrutig:skotskrutigt:skotskrutiga:skotskrutiga::::
+822787r3<substantiv>skotstek:skotstek:skotsteks:skotsteket:skotstekets:skotstek:skotsteks:skotsteken:skotstekens
+608011r21<substantiv>skott:skott:skotts:skottet:skottets:skott:skotts:skotten:skottens
+CUSTOM: y y skott +skotts
+734183r3<verb>skotta:skotta:skottade:skottat:skottar:skotta:skottas:skottades:skottats:skottas:skottad:skottat:skottade:skottande:
+822759r3<substantiv>skottare:skottare:skottares:skottaren:skottarens:skottare:skottares:skottarna:skottarnas
+822763r4<substantiv>skottavla:skottavla:skottavlas:skottavlan:skottavlans:skottavlor:skottavlors:skottavlorna:skottavlornas
+COMPOUND(608011, 555309): skott + tavla
+938912r4<substantiv>skottdrama:skottdrama:skottdramas:skottdramat:skottdramats:skottdramer:skottdramers:skottdramerna:skottdramernas
+COMPOUND(608011, 625246): skott + drama
+918671r4<substantiv>skottdåd:skottdåd:skottdåds:skottdådet:skottdådets:skottdåd:skottdåds:skottdåden:skottdådens
+COMPOUND(608011, 552335): skott + dåd
+656697r3<substantiv>skotte:skotte:skottes:skotten:skottens:skottar:skottars:skottarna:skottarnas
+822771r3<substantiv>skottehistoria:skottehistoria:skottehistorias:skottehistorien:skottehistoriens:skottehistorier:skottehistoriers:skottehistorierna:skottehistoriernas
+564167r3<adjektiv>skottfri:skottfri:skottfritt:skottfria:skottfria::::
+939178r4<substantiv>skotthål:skotthål:skotthåls:skotthålet:skotthålets:skotthål:skotthåls:skotthålen:skotthålens
+COMPOUND(608011, 552485): skott + hål
+656698r3<substantiv>skotthåll:skotthåll:::::::
+595175r3<substantiv>skottkärra:skottkärra:skottkärras:skottkärran:skottkärrans:skottkärror:skottkärrors:skottkärrorna:skottkärrornas
+728805r3<egennamn>Skottland:Skottland:Skottlands
+CUSTOM: y n Skottlands
+734167r4<substantiv>skottlossning:skottlossning:skottlossnings:skottlossningen:skottlossningens:skottlossningar:skottlossningars:skottlossningarna:skottlossningarnas
+COMPOUND(608011, 734175): skott + lossning
+656699r5<substantiv>skottning:skottning:skottnings:skottningen:skottningens::::
+CUSTOM: y y skottnings
+967088r4<substantiv>skottpråm:skottpråm:skottpråms:skottpråmen:skottpråmens:skottpråmar:skottpråmars:skottpråmarna:skottpråmarnas
+COMPOUND(608011, 624633): skott + pråm
+846807r4<adjektiv>skotträdd:skotträdd:!:skotträdda:skotträdda::::skotträdde
+COMPOUND(608011, 556250): skott + rädd
+794932r3<adjektiv>skottskadad:skottskadad:skottskadat:skottskadade:skottskadade:!:!:!:
+756163r4<substantiv>skottskydd::::::::
+COMPOUND(608011, 552935): skott + skydd
+CUSTOM: y y skottskydds
+756164r3<substantiv>skottskyddsglas::::::::
+COMPOUND(756163, 552440): skottskydd + glas
+852318r3<substantiv>skottsår:skottsår:skottsårs:skottsåret:skottsårets:skottsår:skottsårs:skottsåren:skottsårens
+608012r3<substantiv>skottår:skottår:skottårs:skottåret:skottårets:skottår:skottårs:skottåren:skottårens
+822779r3<substantiv>skotvinsch:skotvinsch:skotvinschs:skotvinschen:skotvinschens:skotvinschar:skotvinschars:skotvinscharna:skotvinscharnas
+904894r3<substantiv>skov:skov:skovs:skovet:skovets:skov:skovs:skoven:skovens
+CUSTOM: n n y
+7560

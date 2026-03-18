@@ -1,0 +1,624 @@
+r4<adjektiv>måttfull:måttfull:måttfullt:måttfulla:måttfulla:måttfullare:måttfullast:måttfullaste:måttfulle
+557895r3<adjektiv>måttlig:måttlig:måttligt:måttliga:måttliga:måttligare:måttligast:måttligaste:måttlige
+CUSTOM: y n
+830265r3<substantiv>måttlighet:måttlighet:måttlighets:måttligheten:måttlighetens::::
+565085r3<adjektiv>måttlös:måttlös:måttlöst:måttlösa:måttlösa::::
+621541r3<substantiv>måtto:måtto:!:!:!:!:!:!:!
+761102r3<substantiv>måttsats:måttsats:måttsats:måttsatsen:måttsatsens:måttsatser:måttsatsers:måttsatserna:måttsatsernas
+983825r3<substantiv>måttsord:måttsord:måttsords:måttsordet:måttsordets:måttsord:måttsords:måttsorden:måttsordens
+655734r3<substantiv>måttstock:måttstock:måttstocks:måttstocken:måttstockens:måttstockar:måttstockars:måttstockarna:måttstockarnas
+830269r3<verb>måttsy:måttsy:måttsydde:måttsytt:måttsyr:måttsy:måttsys:måttsyddes:måttsytts:måttsys:måttsydd:måttsytt:måttsydda::
+769470r3<adjektiv>måttsydd:måttsydd:måttsytt:måttsydda:måttsydda:!:!:!:!
+764490r3<substantiv>mähä:mähä:mähäs:mähät:mähäts:mähän:mähäns:mähäna:mähänas
+CUSTOM: y n
+649213r4<verb>mäkla:mäkla:mäklade:mäklat:mäklar:mäkla:mäklas:mäklades:mäklats:mäklas:mäklad:mäklat:mäklade:mäklande:
+655740r4<substantiv>mäklararvode:mäklararvode:mäklararvodes:mäklararvodet:mäklararvodets:mäklararvoden:mäklararvodens:mäklararvodena:mäklararvodenas
+COMPOUND(615390, 612301): mäklare + arvode
+615390r5<substantiv>mäklare:mäklare:mäklares:mäklaren:mäklarens:mäklare:mäklares:mäklarna:mäklarnas
+BASEWORDS: mäklar
+CUSTOM: y y mäklar +mäklar
+830280r3<substantiv>mäkleri:mäkleri:mäkleris:mäkleriet:mäkleriets:mäklerier:mäkleriers:mäklerierna:mäkleriernas
+830288r3<substantiv>mäkling:mäkling:mäklings:mäklingen:mäklingens::::
+547371r4<verb>mäkta:mäkta:mäktade:mäktat:mäktar:mäkta:mäktas:mäktades:mäktats:mäktas:::::
+620662r3<adverb>mäkta:mäkta
+574757r4<adjektiv>mäktig:mäktig:mäktigt:mäktiga:mäktiga:mäktigare:mäktigast:mäktigaste:mäktige
+688793r3<substantiv>mäktighet:mäktighet:mäktighets:mäktigheten:mäktighetens::::
+CUSTOM: y y mäktighets
+684411r3<egennamn>Mälardalen:Mälardalen:Mälardalens
+CUSTOM: y n Mälardals
+891055r3<egennamn>Mälaren:Mälaren:Mälarens
+CUSTOM: y n Mälar
+873858r3<egennamn>Mälarsjukhuset::
+DEFINITION 1: Mälarsjukhuset är Eskilstunas sjukhus.
+553280r3<egennamn>Mälaröarna:Mälaröarna:Mälaröarnas
+550066r6<substantiv>mängd:mängd:mängds:mängden:mängdens:mängder:mängders:mängderna:mängdernas
+CUSTOM: y y mängd
+764488r3<substantiv>mängddifferens::::::::
+COMPOUND(550066, 548648): mängd + differens
+764489r4<substantiv>mängdlära:mängdlära:mängdläras:mängdläran:mängdlärans::::
+COMPOUND(550066, 560236): mängd + lära
+555190r16<substantiv>människa:människa:människas:människan:människans:människor:människors:människorna:människornas
+CUSTOM: y y människo mänsko
+769473r4<substantiv>människoande:människoande:människoandes:människoanden:människoandens::::
+COMPOUND(555190, 614408): människa + ande
+848848r3<substantiv>människoapa:människoapa:människoapas:människoapan:människoapans:människoapor:människoapors:människoaporna:människoapornas
+925926r4<substantiv>människoarm:människoarm:människoarms:människoarmen:människoarmens:människoarmar:människoarmars:människoarmarna:människoarmarnas
+COMPOUND(555190, 550842): människa + arm
+855357r4<substantiv>människoart:människoart:människoarts:människoarten:människoartens:människoarter:människoarters:människoarterna:människoarternas
+COMPOUND(555190, 548244): människa + art
+983832r3<substantiv>människoblivande:människoblivande:människoblivandes:människoblivandet:människoblivandets::::
+566750r3<adjektiv>människofientlig:människofientlig:människofientligt:människofientliga:människofientliga::::
+989508r3<adjektiv>människogjord:människogjord:människogjort:människogjorda:människogjorda::::::::::::
+846479r4<substantiv>människohaj:människohaj:människohajs:människohajen:människohajens:människohajar:människohajars:människohajarna:människohajarnas
+COMPOUND(555190, 558965): människa + haj
+851506r3<substantiv>människohop:människohop:människohops:människohopen:människohopens:människohopar:människohopars:människohoparna:människohoparnas
+598594r3<substantiv>människokropp:människokropp:människokropps:människokroppen:människokroppens:människokroppar:människokroppars:människokropparna:människokropparnas
+688798r3<adjektiv>människolik:människolik:människolikt:människolika:människolika::::
+712912r4<substantiv>människoliv:människoliv:människolivs:människolivet:människolivets:människoliv:människolivs:människoliven:människolivens
+COMPOUND(555190, 552667): människa + liv
+824155r4<substantiv>människoras:människoras:människoras:människorasen:människorasens:människoraser:människorasers:människoraserna:människorasernas
+COMPOUND(555190, 550316): människa + ras
+851514r3<substantiv>människorov:människorov:människorovs:människorovet:människorovets:människorov:människorovs:människoroven:människorovens
+702574r6<substantiv>människorätt:människorätt:människorätts:människorätten:människorättens:!:!:!:!
+COMPOUND(555190, 603413): människa + rätt
+CUSTOM: y y människorätts
+702580r4<substantiv>människorättsorganisation:människorättsorganisation:människorättsorganisations:människorättsorganisationen:människorättsorganisationens:människorättsorganisationer:människorättsorganisationers:människorättsorganisationerna:människorättsorganisationernas
+COMPOUND(702574, 648416): människorätt + organisation
+CUSTOM: y y människorättsorganisations
+917382r4<substantiv>människorättsråd:människorättsråd:människorättsråds:människorättsrådet:människorättsrådets:människorättsråd:människorättsråds:människorättsråden:människorättsrådens
+COMPOUND(702574, 552853): människorätt + råd
+712918r4<substantiv>människoskildring:människoskildring:människoskildrings:människoskildringen:människoskildringens:människoskildringar:människoskildringars:människoskildringarna:människoskildringarnas
+COMPOUND(555190, 619565): människa + skildring
+688799r4<substantiv>människoson:människoson:människosons:människosonen:människosonens:människosöner:människosöners:människosönerna:människosönernas
+952323r4<substantiv>människosorl:människosorl:människosorls:människosorlet:människosorlets::::
+COMPOUND(555190, 628833): människa + sorl
+688803r3<substantiv>människosyn:människosyn:människosyns:människosynen:människosynens::::
+851520r3<substantiv>människovän:människovän:människoväns:människovännen:människovännens:människovänner:människovänners:människovännerna:människovännernas
+566753r3<adjektiv>människovänlig:människovänlig:människovänligt:människovänliga:människovänliga::::
+574758r3<adjektiv>människovärdig:människovärdig:människovärdigt:människovärdiga:människovärdiga::::
+688807r3<substantiv>människoätare:människoätare:människoätares:människoätaren:människoätarens:människoätare:människoätares:människoätarna:människoätarnas
+CUSTOM: y y människoätar
+655748r4<substantiv>människoöde:människoöde:människoödes:människoödet:människoödets:människoöden:människoödens:människoödena:människoödenas
+COMPOUND(555190, 571235): människa + öde
+594770r3<substantiv>mänska:mänska:mänskas:mänskan:mänskans:mänskor:mänskors:mänskorna:mänskornas
+563153r5<adjektiv>mänsklig:mänsklig:mänskligt:mänskliga:mänskliga:mänskligare:mänskligast:mänskligaste:mänsklige
+CUSTOM: y y mänsklig
+830293r4<verb>mänskliggöra:mänskliggöra:mänskliggjorde:mänskliggjort:mänskliggör:mänskliggör:mänskliggöras:mänskliggjordes:mänskliggjorts:mänskliggörs, mänskliggöres:mänskliggjord:mänskliggjort:mänskliggjorda:mänskliggörande:
+COMPOUND(563153, 555241): mänsklig + göra
+655756r3<substantiv>mänsklighet:mänsklighet:mänsklighets:mänskligheten:mänsklighetens::::
+CUSTOM: y y mänsklighets
+621542r5<substantiv>märg:märg:märgs:märgen:märgens::::
+954424r4<substantiv>märgben:märgben:märgbens:märgbenet:märgbenets:märgben:märgbens:märgbenen:märgbenens
+COMPOUND(621542, 552233): märg + ben
+793313r3<adjektiv>märgelblandad:märgelblandad:märgelblandat:märgelblandade:märgelblandade:!:!:!:
+585041r3<adjektiv>märgfull:märgfull:märgfullt:märgfulla:märgfulla::::
+799932r3<adjektiv>märgfylld:märgfylld:märgfyllt:märgfyllda:märgfyllda::::
+566756r3<adjektiv>märglig:märglig:märgligt:märgliga:märgliga::::
+565086r3<adjektiv>märglös:märglös:märglöst:märglösa:märglösa::::
+830305r3<substantiv>märgpipa:märgpipa:märgpipas:märgpipan:märgpipans:märgpipor:märgpipors:märgpiporna:märgpipornas
+874190r3<egennamn>Märit:Märit:Märits
+585833r34<verb>märka:märka:märkte:märkt:märker:märk:märkas:märktes:märkts:märks:märkt:märkt:märkta:märkande:
+CUSTOM: y n
+569427r3<adjektiv>märkbar:märkbar:märkbart:märkbara:märkbara::::
+619020r21<substantiv>märke:märke:märkes:märket:märkets:märken:märkens:märkena:märkenas
+CUSTOM: y y märkes
+739730r4<substantiv>märkesvara:märkesvara:märkesvaras:märkesvaran:märkesvarans:märkesvaror:märkesvarors:märkesvarorna:märkesvarornas
+COMPOUND(619020, 562107): märke + vara
+770790r3<substantiv>märkesår:märkesår:märkesårs:märkesåret:märkesårets:märkesår:märkesårs:märkesåren:märkesårens
+566759r4<adjektiv>märklig:märklig:märkligt:märkliga:märkliga:märkligare:märkligast:märkligaste:märklige
+830313r3<substantiv>märklighet:märklighet:märklighets:märkligheten:märklighetens:märkligheter:märkligheters:märkligheterna:märkligheternas
+631990r4<substantiv>märkning:märkning:märknings:märkningen:märkningens:märkningar:märkningars:märkningarna:märkningarnas
+CUSTOM: y y märknings +märknings
+913724r4<substantiv>märkord:märkord:märkords:märkordet:märkordets:märkord:märkords:märkorden:märkordens
+COMPOUND(585833, 555138): märka + ord
+CUSTOM: y n n
+612744r3<substantiv>märksnöre:märksnöre:märksnöres:märksnöret:märksnörets:märksnören:märksnörens:märksnörena:märksnörenas
+602931r3<substantiv>märksnöresats:märksnöresats:märksnöresats:märksnöresatsen:märksnöresatsens:märksnöresatser:märksnöresatsers:märksnöresatserna:märksnöresatsernas
+574764r4<adjektiv>märkvärdig:märkvärdig:märkvärdigt:märkvärdiga:märkvärdiga:märkvärdigare:märkvärdigast:märkvärdigaste:märkvärdige
+655759r3<substantiv>märkvärdighet:märkvärdighet:märkvärdighets:märkvärdigheten:märkvärdighetens:märkvärdigheter:märkvärdigheters:märkvärdigheterna:märkvärdigheternas
+CUSTOM: y y märkvärdighets
+901149r3<substantiv>märla:märla:märlas:märlan:märlans:märlor:märlors:märlorna:märlornas
+CUSTOM: y n
+983836r3<substantiv>märlkräfta:märlkräfta:märlkräftas:märlkräftan:märlkräftans:märlkräftor:märlkräftors:märlkräftorna:märlkräftornas
+655760r3<substantiv>märr:märr:märrs:märren:märrens:märrar:märrars:märrarna:märrarnas
+CUSTOM: y n
+983844r3<substantiv>märssegel:märssegel:märssegels:märsseglet:märsseglets:märssegel:märssegels:märsseglen:märsseglens
+554327r4<egennamn>Märsta:Märsta:Märstas, Märsta
+CUSTOM: y n Märsta
+553849r3<egennamn>Märta:Märta:Märtas
+621544r3<substantiv>mäsk:mäsk:mäsks:mäsken:mäskens::::
+655768r6<substantiv>mäss:mäss:mäss:mässen:mässens:mässar:mässars:mässarna:mässarnas
+CUSTOM: y n
+946786r3<verb>mässa:mässa:mässade:mässat:mässar:mässa:mässas:mässades:mässats:mässas:mässad:mässat:mässade:mässande:
+CUSTOM: y n
+621546r12<substantiv>mässa:mässa:mässas:mässan:mässans:mässor:mässors:mässorna:mässornas
+CUSTOM: y y
+897583r3<substantiv>mässande:mässande:mässandes:mässandet:mässandets::::
+897589r4<substantiv>mässarrangör:mässarrangör:mässarrangörs:mässarrangören:mässarrangörens:mässarrangörer:mässarrangörers:mässarrangörerna:mässarrangörernas
+COMPOUND(621546, 548239): mässa + arrangör
+917390r4<substantiv>mässbesökare:mässbesökare:mässbesökares:mässbesökaren:mässbesökarens:mässbesökare:mässbesökares:mässbesökarna:mässbesökarnas
+COMPOUND(621546, 592737): mässa + besökare
+830321r4<substantiv>mässbok:mässbok:mässboks:mässboken:mässbokens:mässböcker:mässböckers:mässböckerna:mässböckernas
+COMPOUND(621546, 555346): mässa + bok
+897563r4<substantiv>mässchef:mässchef:mässchefs:mässchefen:mässchefens:mässchefer:mässchefers:mässcheferna:mässchefernas
+COMPOUND(621546, 548529): mässa + chef
+830329r3<substantiv>mässdräkt:mässdräkt:mässdräkts:mässdräkten:mässdräktens:mässdräkter:mässdräkters:mässdräkterna:mässdräkternas
+830337r3<substantiv>mässfall:mässfall:mässfalls:mässfallet:mässfallets:mässfall:mässfalls:mässfallen:mässfallens
+897573r4<substantiv>mässgeneral:mässgeneral:mässgenerals:mässgeneralen:mässgeneralens:mässgeneraler:mässgeneralers:mässgeneralerna:mässgeneralernas
+COMPOUND(621546, 562719): mässa + general
+917398r4<substantiv>mässgolv:mässgolv:mässgolvs:mässgolvet:mässgolvets:mässgolv:mässgolvs:mässgolven:mässgolvens
+COMPOUND(621546, 552446): mässa + golv
+703990r3<substantiv>mässhake:mässhake:mässhakes:mässhaken:mässhakens:mässhakar:mässhakars:mässhakarna:mässhakarnas
+703998r3<substantiv>mässhall:mässhall:mässhalls:mässhallen:mässhallens:mässhallar:mässhallars:mässhallarna:mässhallarnas
+655769r3<substantiv>mässing:mässing:mässings:mässingen:mässingens:!:!:!:!
+CUSTOM: y y mässings
+798448r3<adjektiv>mässingsgul:mässingsgul:mässingsgult:mässingsgula:mässingsgula::::
+724737r3<substantiv>mässingsinstrument:mässingsinstrument:mässingsinstruments:mässingsinstrumentet:mässingsinstrumentets:mässingsinstrument:mässingsinstruments:mässingsinstrumenten:mässingsinstrumentens
+CUSTOM: n n y
+793316r3<adjektiv>mässingspläterad:mässingspläterad:mässingspläterat:mässingspläterade:mässingspläterade:!:!:!:
+830343r3<substantiv>mässkjorta:mässkjorta:mässkjortas:mässkjortan:mässkjortans:mässkjortor:mässkjortors:mässkjortorna:mässkjortornas
+830351r3<substantiv>mässkrud:mässkrud:mässkruds:mässkruden:mässkrudens:mässkrudar:mässkrudars:mässkrudarna:mässkrudarnas
+704006r3<substantiv>mässling:mässling:mässlings:mässlingen:mässlingens::::
+CUSTOM: y y mässlings
+703982r3<substantiv>mässlokal:mässlokal:mässlokals:mässlokalen:mässlokalens:mässlokaler:mässlokalers:mässlokalerna:mässlokalernas
+830359r3<substantiv>mässoffer:mässoffer:mässoffers:mässoffret:mässoffrets:mässoffer:mässoffers:mässoffren:mässoffrens
+917406r4<substantiv>mässområde:mässområde:mässområdes:mässområdet:mässområdets:mässområden:mässområdens:mässområdena:mässområdenas
+COMPOUND(621546, 612761): mässa + område
+615391r16<substantiv>mästare:mästare:mästares:mästaren:mästarens:mästare:mästares:mästarna:mästarnas
+CUSTOM: y y mästar mäster +mästar
+704010r3<substantiv>mästarinna:mästarinna:mästarinnas:mästarinnan:mästarinnans:mästarinnor:mästarinnors:mästarinnorna:mästarinnornas
+937845r4<substantiv>mästarlag:mästarlag:mästarlags:mästarlaget:mästarlagets:mästarlag:mästarlags:mästarlagen:mästarlagens
+COMPOUND(615391, 625660): mästare + lag
+621547r4<substantiv>mäster:mäster::::!:!:!:!
+566760r4<adjektiv>mästerlig:mästerlig:mästerligt:mästerliga:mästerliga:mästerligare:mästerligast:mästerligaste:mästerlige
+942516r4<substantiv>mästerrot:mästerrot:mästerrots:mästerroten:mästerrotens:mästerrötter:mästerrötters:mästerrötterna:mästerrötternas
+COMPOUND(621547, 561217): mäster + rot
+552709r5<substantiv>mästerskap:mästerskap:mästerskaps:mästerskapet:mästerskapets:mästerskap:mästerskaps:mästerskapen:mästerskapens
+CUSTOM: y y mästerskaps
+655770r3<substantiv>mästerstycke:mästerstycke:mästerstyckes:mästerstycket:mästerstyckets:mästerstycken:mästerstyckens:mästerstyckena:mästerstyckenas
+704018r3<substantiv>mästersångare:mästersångare:mästersångares:mästersångaren:mästersångarens:mästersångare:mästersångares:mästersångarna:mästersångarnas
+655772r3<substantiv>mästerverk:mästerverk:mästerverks:mästerverket:mästerverkets:mästerverk:mästerverks:mästerverken:mästerverkens
+547372r5<verb>mästra:mästra:mästrade:mästrat:mästrar:mästra:mästras:mästrades:mästrats:mästras:mästrad:mästrat:mästrade:mästrande:
+830366r3<substantiv>mästrare:mästrare:mästrares:mästraren:mästrarens:mästrare:mästrares:mästrarna:mästrarnas
+556868r24<verb>mäta:mäta:mätte:mätt:mäter:mät:mätas:mättes:mätts:mäts, mätes::::mätande:
+CUSTOM: y n
+704024r3<substantiv>mätanordning:mätanordning:mätanordnings:mätanordningen:mätanordningens:mätanordningar:mätanordningars:mätanordningarna:mätanordningarnas
+757499r3<substantiv>mätapparat:mätapparat:mätapparats:mätapparaten:mätapparatens:mätapparater:mätapparaters:mätapparaterna:mätapparaternas
+655774r3<substantiv>mätaravläsning:mätaravläsning:mätaravläsnings:mätaravläsningen:mätaravläsningens:mätaravläsningar:mätaravläsningars:mätaravläsningarna:mätaravläsningarnas
+CUSTOM: y y mätaravläsnings
+615392r9<substantiv>mätare:mätare:mätares:mätaren:mätarens:mätare:mätares:mätarna:mätarnas
+CUSTOM: y y mätar +mätar
+569428r3<adjektiv>mätbar:mätbar:mätbart:mätbara:mätbara::::
+830373r3<substantiv>mätbarhet:mätbarhet:mätbarhets:mätbarheten:mätbarhetens::::
+788228r4<substantiv>mätbesked:mätbesked:mätbeskeds:mätbeskedet:mätbeskedets:mätbesked:mätbeskeds:mätbeskeden:mätbeskedens
+COMPOUND(556868, 552235): mäta + besked
+830377r3<substantiv>mätbord:mätbord:mätbords:mätbordet:mätbordets:mätbord:mätbords:mätborden:mätbordens
+830383r3<substantiv>mätbrev:mätbrev:mätbrevs:mätbrevet:mätbrevets:mätbrev:mätbrevs:mätbreven:mätbrevens
+917416r4<substantiv>mätdata:!:!:!:!:mätdata:mätdatas::
+COMPOUND(556868, 555276): mäta + data
+830389r3<substantiv>mätdon:mätdon:mätdons:mätdonet:mätdonets:mätdon:mätdons:mätdonen:mätdonens
+764498r3<substantiv>mätetal:mätetal:mätetals:mätetalet:mätetalets:mätetal:mätetals:mätetalen:mätetalens
+704032r3<substantiv>mätfel:mätfel:mätfels:mätfelet:mätfelets:mätfel:mätfels:mätfelen:mätfelens
+CUSTOM: y n n
+917420r4<substantiv>mätföretag:mätföretag:mätföretags:mätföretaget:mätföretagets:mätföretag:mätföretags:mätföretagen:mätföretagens
+COMPOUND(556868, 552403): mäta + företag
+688813r3<substantiv>mätglas:mätglas:mätglas:mätglaset:mätglasets:mätglas:mätglas:mätglasen:mätglasens
+917428r4<substantiv>mätinstitut:mätinstitut:mätinstituts:mätinstitutet:mätinstitutets:mätinstitut:mätinstituts:mätinstituten:mätinstitutens
+COMPOUND(556868, 552517): mäta + institut
+704038r3<substantiv>mätinstrument:mätinstrument:mätinstruments:mätinstrumentet:mätinstrumentets:mätinstrument:mätinstruments:mätinstrumenten:mätinstrumentens
+899716r3<substantiv>mätintyg:mätintyg:mätintygs:mätintyget:mätintygets:mätintyg:mätintygs:mätintygen:mätintygens
+CUSTOM: y n n
+740433r6<substantiv>mätkolv:mätkolv:mätkolvs:mätkolven:mätkolvens:mätkolvar:mätkolvars:mätkolvarna:mätkolvarnas
+COMPOUND(556868, 551574): mäta + kolv
+CUSTOM: y n n
+739738r3<substantiv>mätmetod:mätmetod:mätmetods:mätmetoden:mätmetodens:mätmetoder:mätmetoders:mätmetoderna:mätmetodernas
+648296r12<substantiv>mätning:mätning:mätnings:mätningen:mätningens:mätningar:mätningars:mätningarna:mätningarnas
+CUSTOM: y y mätnings +mätnings
+761892r4<substantiv>mätningstal:mätningstal:mätningstals:mätningstalet:mätningstalets:mätningstal:mätningstals:mätningstalen:mätningstalens
+COMPOUND(648296, 553029): mätning + tal
+965909r4<substantiv>mätobjekt:mätobjekt:mätobjekts:mätobjektet:mätobjektets:mätobjekt:mätobjekts:mätobjekten:mätobjektens
+COMPOUND(556868, 621627): mäta + objekt
+830397r3<substantiv>mätperiod:mätperiod:mätperiods:mätperioden:mätperiodens:mätperioder:mätperioders:mätperioderna:mätperiodernas
+830406r3<substantiv>mätpunkt:mätpunkt:mätpunkts:mätpunkten:mätpunktens:mätpunkter:mätpunkters:mätpunkterna:mätpunkternas
+899800r4<substantiv>mätregel:mätregel:mätregels:mätregeln:mätregelns:mätregler:mätreglers:mätreglerna:mätreglernas
+COMPOUND(556868, 621698): mäta + regel
+CUSTOM: y n n
+983850r3<substantiv>mätress:mätress:mätress:mätressen:mätressens:mätresser:mätressers:mätresserna:mätressernas
+CUSTOM: y n
+830414r3<substantiv>mätresultat:mätresultat:mätresultats:mätresultatet:mätresultatets:mätresultat:mätresultats:mätresultaten:mätresultatens
+688819r3<substantiv>mätsnöre:mätsnöre:mätsnöres:mätsnöret:mätsnörets::::
+CUSTOM: y n n
+739746r4<substantiv>mätstation:mätstation:mätstations:mätstationen:mätstationens:mätstationer:mätstationers:mätstationerna:mätstationernas
+COMPOUND(556868, 603711): mäta + station
+926015r4<substantiv>mätstav:mätstav:mätstavs:mätstaven:mätstavens:mätstavar:mätstavars:mätstavarna:mätstavarnas
+COMPOUND(556868, 551932): mäta + stav
+CUSTOM: y n n
+830420r3<substantiv>mätsticka:mätsticka:mätstickas:mätstickan:mätstickans:mätstickor:mätstickors:mätstickorna:mätstickornas
+926007r4<substantiv>mätstång:mätstång:mätstångs:mätstången:mätstångens:mätstänger:mätstängers:mätstängerna:mätstängernas
+COMPOUND(556868, 555363): mäta + stång
+CUSTOM: y n n
+917435r4<substantiv>mätsystem:mätsystem:mätsystems:mätsystemet:mätsystemets:mätsystem:mätsystems:mätsystemen:mätsystemens
+COMPOUND(556868, 553021): mäta + system
+571269r4<adjektiv>mätt:mätt:mätt:mätta:mätta:mättare:mättast:mättaste:mätte::::::::
+547373r4<verb>mätta:mätta:mättade:mättat:mättar:mätta:mättas:mättades:mättats:mättas:::::
+659970r6<adjektiv>mättad:mättad:mättat:mättade:mättade:!:!:!:
+688821r3<adjektiv>mättande:mättande:mättande:mättande:mättande:!:!:!:
+708047r3<substantiv>mätteknik:mätteknik:mättekniks:mättekniken:mätteknikens::::
+830428r3<substantiv>mättekniker:mättekniker:mätteknikers:mätteknikern:mätteknikerns:mättekniker:mätteknikers:mätteknikerna:mätteknikernas
+830434r3<substantiv>mätthet:mätthet:mätthets:mättheten:mätthetens::::
+830438r3<substantiv>mätthetskänsla:mätthetskänsla:mätthetskänslas:mätthetskänslan:mätthetskänslans:mätthetskänslor:mätthetskänslors:mätthetskänslorna:mätthetskänslornas
+884230r4<substantiv>mättjänst:mättjänst:mättjänsts:mättjänsten:mättjänstens:mättjänster:mättjänsters:mättjänsterna:mättjänsternas
+COMPOUND(556868, 550677): mäta + tjänst
+621548r4<substantiv>mättnad:mättnad:mättnads:mättnaden:mättnadens::::
+CUSTOM: y y mättnads
+830446r3<substantiv>mättnadsgrad::::::::
+COMPOUND(621548, 549117): mättnad + grad
+830447r4<substantiv>mättning:mättning:mättnings:mättningen:mättningens::::
+CUSTOM: y y mättnings
+830451r3<substantiv>mättningstillstånd::::::::
+COMPOUND(830447, 553043): mättning + tillstånd
+563440r3<adjektiv>mättsam:mättsam:mättsamt:mättsamma:mättsamma::::
+723291r4<substantiv>mätutfall:mätutfall:mätutfalls:mätutfallet:mätutfallets:mätutfall:mätutfalls:mätutfallen:mätutfallens
+COMPOUND(556868, 553085): mäta + utfall
+739754r4<substantiv>mätutrustning:mätutrustning:mätutrustnings:mätutrustningen:mätutrustningens::::
+COMPOUND(556868, 631941): mäta + utrustning
+830452r3<substantiv>mätverktyg:mätverktyg:mätverktygs:mätverktyget:mätverktygets:mätverktyg:mätverktygs:mätverktygen:mätverktygens
+708051r3<substantiv>mätvärde:mätvärde:mätvärdes:mätvärdet:mätvärdets:mätvärden:mätvärdens:mätvärdena:mätvärdenas
+CUSTOM: y y mätvärdes
+557690r6<substantiv>mö:mö:mös:mön:möns:mör:mörs:mörna:mörnas
+DEFINITION 1: Ogift kvinna
+621549r13<substantiv>möbel:möbel:möbels:möbeln:möbelns:möbler:möblers:möblerna:möblernas
+CUSTOM: y y möbel
+611077r4<substantiv>möbelindustri:möbelindustri:möbelindustris:möbelindustrin:möbelindustrins:möbelindustrier:möbelindustriers:möbelindustrierna:möbelindustriernas
+COMPOUND(621549, 610799): möbel + industri
+676870r4<substantiv>möbeltapetserare:möbeltapetserare:möbeltapetserares:möbeltapetseraren, möbeltapetserarn:möbeltapetserarens, möbeltapetserarns:möbeltapetserare:möbeltapetserares:möbeltapetserarna:möbeltapetserarnas
+COMPOUND(621549, 676849): möbel + tapetserare
+CUSTOM: y y möbeltapetserar
+708059r5<substantiv>möblemang:möblemang:möblemangs:möblemanget:möblemangets:möblemang:möblemangs:möblemangen:möblemangens
+547376r4<verb>möblera:möblera:möblerade:möblerat:möblerar:möblera:möbleras:möblerades:möblerats:möbleras:möblerad:möblerat:möblerade::
+569429r3<adjektiv>möblerbar:möblerbar:möblerbart:möblerbara:möblerbara::::
+688822r4<substantiv>möblering:möblering:möblerings:möbleringen:möbleringens:möbleringar:möbleringars:möbleringarna:möbleringarnas
+CUSTOM: y y möblerings
+619021r4<substantiv>möda:möda:mödas:mödan:mödans:mödor:mödors:mödorna:mödornas
+708063r3<substantiv>möderne:möderne:mödernes:mödernet:mödernets::::
+830464r3<substantiv>mödernearv:mödernearv:mödernearvs:mödernearvet:mödernearvets:mödernearv:mödernearvs:mödernearven:mödernearvens
+566763r3<adjektiv>mödernerättslig:mödernerättslig:mödernerättsligt:mödernerättsliga:mödernerättsliga::::
+830470r3<substantiv>mödernesläkt:mödernesläkt:mödernesläkts:mödernesläkten:mödernesläktens:mödernesläkter:mödernesläkters:mödernesläkterna:mödernesläkternas
+585044r3<adjektiv>mödofull:mödofull:mödofullt:mödofulla:mödofulla::::
+757507r3<adjektiv>mödofylld:mödofylld:mödofyllt:mödofyllda:mödofyllda::::
+708075r3<substantiv>mödom:mödom:mödoms:mödomen:mödomens::::
+CUSTOM: y n
+708067r3<substantiv>mödomshinna:mödomshinna:mödomshinnas:mödomshinnan:mödomshinnans:mödomshinnor:mödomshinnors:mödomshinnorna:mödomshinnornas
+563443r8<adjektiv>mödosam:mödosam:mödosamt:mödosamma:mödosamma:mödosammare:mödosammast:mödosammaste:
+917442r3<substantiv>mödradödlighet:mödradödlighet:mödradödlighets:mödradödligheten:mödradödlighetens::::
+830478r3<substantiv>mödrahälsovård:mödrahälsovård:mödrahälsovårds:mödrahälsovården:mödrahälsovårdens::::
+876807r3<substantiv>mödraskap:mödraskap:mödraskaps:mödraskapet:mödraskapets:mödraskap:mödraskaps:mödraskapen:mödraskapens
+708079r4<substantiv>mödravård:mödravård:mödravårds:mödravården:mödravårdens::::
+CUSTOM: y y mödravårds
+708083r4<substantiv>mödravårdscentral:mödravårdscentral:mödravårdscentrals:mödravårdscentralen:mödravårdscentralens:mödravårdscentraler:mödravårdscentralers:mödravårdscentralerna:mödravårdscentralernas
+COMPOUND(708079, 548519): mödravård + central
+935716r3<substantiv>mög:mög:mögs:möget:mögets::::
+CUSTOM: n n y
+621551r6<substantiv>mögel:mögel:mögels:möglet:möglets::::
+CUSTOM: y y mögel
+574765r3<adjektiv>mögelbeständig:mögelbeständig:mögelbeständigt:mögelbeständiga:mögelbeständiga::::
+708101r4<substantiv>mögelfläck:mögelfläck:mögelfläcks:mögelfläcken:mögelfläckens:mögelfläckar:mögelfläckars:mögelfläckarna:mögelfläckarnas
+COMPOUND(621551, 551169): mögel + fläck
+574768r3<adjektiv>mögelfläckig:mögelfläckig:mögelfläckigt:mögelfläckiga:mögelfläckiga::::
+621553r3<substantiv>mögelhus:mögelhus:mögelhus:mögelhuset:mögelhusets:mögelhus:mögelhus:mögelhusen:mögelhusens
+945044r4<substantiv>mögelspor:mögelspor:mögelspors:mögelsporen:mögelsporens:mögelsporer:mögelsporers:mögelsporerna:mögelsporernas
+COMPOUND(621551, 746704): mögel + spor
+621558r3<substantiv>mögelsvamp:mögelsvamp:mögelsvamps:mögelsvampen:mögelsvampens:mögelsvampar:mögelsvampars:mögelsvamparna:mögelsvamparnas
+621566r3<verb>mögla:mögla:möglade:möglat:möglar:mögla:!:!:!:!:::::
+566766r3<adjektiv>möglig:möglig:mögligt:mögliga:mögliga::::
+830482r3<substantiv>mögling:mögling:möglings:möglingen:möglingens::::
+621578r3<substantiv>möhippa:möhippa:möhippas:möhippan:möhippans:möhippor:möhippors:möhipporna:möhippornas
+621570r3<substantiv>möja:möja:möjas:möjan:möjans:möjor:möjors:möjorna:möjornas
+CUSTOM: n n y
+563114r7<adjektiv>möjlig:möjlig:möjligt:möjliga:möjliga:möjligare:möjligast:möjligaste:möjlige
+CUSTOM: y n
+620663r3<adverb>möjligen:möjligen
+655782r5<verb>möjliggöra:möjliggöra:möjliggjorde:möjliggjort:möjliggör:möjliggör:möjliggöras:möjliggjordes:möjliggjorts:möjliggörs, möjliggöres:möjliggjord:möjliggjort:möjliggjorda:möjliggörande:
+COMPOUND(563114, 555241): möjlig + göra
+602938r6<substantiv>möjlighet:möjlighet:möjlighets:möjligheten:möjlighetens:möjligheter:möjligheters:möjligheterna:möjligheternas
+CUSTOM: y y möjlighets +möjlighets
+560970r3<adverb>möjligtvis:möjligtvis
+737507r4<substantiv>mölla:mölla:möllas:möllan:möllans:möllor:möllors:möllorna:möllornas
+DEFINITION 1: Väderkvarn
+553497r3<egennamn>Möller:Möller:Möllers
+554329r3<egennamn>Mölndal:Mölndal:Mölndals
+CUSTOM: y n Mölndals
+554331r4<egennamn>Mölnlycke:Mölnlycke:Mölnlyckes, Mölnlycke
+CUSTOM: y n Mölnlycke
+621586r3<substantiv>mönja:mönja:mönjas:mönjan:mönjans::::
+793319r3<adjektiv>mönjefärgad:mönjefärgad:mönjefärgat:mönjefärgade:mönjefärgade:!:!:!:
+801885r3<adjektiv>mönjeröd:mönjeröd:mönjerött:mönjeröda:mönjeröda::::
+621588r15<substantiv>mönster:mönster:mönsters:mönstret:mönstrets:mönster:mönsters:mönstren, mönsterna:mönstrens, mönsternas
+CUSTOM: y y mönster
+688824r4<substantiv>mönsterbild:mönsterbild:mönsterbilds:mönsterbilden:mönsterbildens:mönsterbilder:mönsterbilders:mönsterbilderna:mönsterbildernas
+COMPOUND(621588, 548373): mönster + bild
+609894r3<substantiv>mönsterdjupsmätare:mönsterdjupsmätare:mönsterdjupsmätares:mönsterdjupsmätaren:mönsterdjupsmätarens:mönsterdjupsmätare:mönsterdjupsmätares:mönsterdjupsmätarna:mönsterdjupsmätarnas
+CUSTOM: y y mönsterdjupsmätar
+655790r3<adjektiv>mönstergill:mönstergill:mönstergillt:mönstergilla:mönstergilla:!:!:!:
+786269r5<substantiv>mönsterkort:mönsterkort:mönsterkorts:mönsterkortet:mönsterkortets:mönsterkort:mönsterkorts:mönsterkorten:mönsterkortens
+DEFINITION 1: Kort för elektroniska komponenter bestående av ett eller fler metallager (oftast koppar) med glasfiber eller annat isolerande material emellan. När komponenterna lötts på kallas det kretskort.
+COMPOUND(621588, 552580): mönster + kort
+CUSTOM: y y mönsterkorts
+793322r3<adjektiv>mönsterpressad:mönsterpressad:mönsterpressat:mönsterpressade:mönsterpressade:!:!:!:
+CUSTOM: y n
+793325r3<adjektiv>mönsterstickad:mönsterstickad:mönsterstickat:mönsterstickade:mönsterstickade:!:!:!:
+CUSTOM: y n
+799935r3<adjektiv>mönstervävd:mönstervävd:mönstervävt:mönstervävda:mönstervävda::::
+728193r3<egennamn>Mönsterås:Mönsterås:Mönsterås
+CUSTOM: y n Mönsterås
+547377r6<verb>mönstra:mönstra:mönstrade:mönstrat:mönstrar:mönstra:mönstras:mönstrades:mönstrats:mönstras:mönstrad:mönstrat:mönstrade:mönstrande:
+793328r4<adjektiv>mönstrad:mönstrad:mönstrat:mönstrade:mönstrade:!:!:!:::::::::
+655792r3<substantiv>mönstring:mönstring:mönstrings:mönstringen:mönstringens:mönstringar:mönstringars:mönstringarna:mönstringarnas
+CUSTOM: y y mönstrings
+574771r3<adjektiv>mönstringsskyldig:mönstringsskyldig:mönstringsskyldigt:mönstringsskyldiga:mönstringsskyldiga::::
+563219r4<adjektiv>mör:mör:mört:möra:möra:mörare:mörast:möraste:
+830490r9<verb>möra:möra:mörade:mörat:mörar:möra:möras:mörades:mörats:möras:mörad:mörat:mörade::
+655797r4<verb>mörbulta:mörbulta:mörbultade:mörbultat:mörbultar:mörbulta:mörbultas:mörbultades:mörbultats:mörbultas:mörbultad:mörbultat:mörbultade::
+830497r3<substantiv>mörbultning:mörbultning:mörbultnings:mörbultningen:mörbultningens::::
+972224r3<egennamn>Mörby:Mörby:Mörbys
+728195r3<egennamn>Mörbylånga:Mörbylånga:Mörbylångas
+CUSTOM: y n Mörbylånga
+547378r5<verb>mörda:mörda:mördade:mördat:mördar:mörda:mördas:mördades:mördats:mördas:mördad:mördat:mördade:mördande:
+688828r3<substantiv>mördande:mördande:mördandes:mördandet:mördandets::::
+655799r3<adjektiv>mördande:mördande:mördande:mördande:mördande:!:!:!:
+830502r4<substantiv>mördaralg:mördaralg:mördaralgs:mördaralgen:mördaralgens:mördaralger:mördaralgers:mördaralgerna:mördaralgernas
+COMPOUND(615393, 557803): mördare + alg
+615393r6<substantiv>mördare:mördare:mördares:mördaren:mördarens:mördare:mördares:mördarna:mördarnas
+CUSTOM: y y mördar +mördar
+619022r4<substantiv>mördeg:mördeg:mördegs:mördegen:mördegens:mördegar:mördegars:mördegarna:mördegarnas
+CUSTOM: y y mördegs
+830511r3<substantiv>mördegstårta::::::::
+COMPOUND(619022, 595678): mördeg + tårta
+830512r3<substantiv>mörderska:mörderska:mörderskas:mörderskan:mörderskans:mörderskor:mörderskors:mörderskorna:mörderskornas
+830520r3<substantiv>mörhet:mörhet:mörhets:mörheten:mörhetens::::
+574774r3<adjektiv>mörjig:mörjig:mörjigt:mörjiga:mörjiga::::
+563115r7<adjektiv>mörk:mörk:mörkt:mörka:mörka:mörkare:mörkast:mörkaste:mörke:::mörkas:mörkas:mörkares::mörkastes:mörkes
+547379r5<verb>mörka:mörka:mörkade:mörkat:mörkar:mörka:mörkas:mörkades:mörkats:mörkas:mörkad:mörkat:mörkade::
+688831r3<substantiv>mörkande:mörkande:mörkandes:mörkandet:mörkandets::::
+793329r3<adjektiv>mörkbetsad:mörkbetsad:mörkbetsat:mörkbetsade:mörkbetsade:!:!:!:
+798453r3<adjektiv>mörkblommig:mörkblommig:mörkblommigt:mörkblommiga:mörkblommiga::::
+619030r3<adjektiv>mörkblond:mörkblond:mörkblont:mörkblonda:mörkblonda::::mörkblonde
+619034r3<adjektiv>mörkblå:mörkblå:mörkblått:mörkblåa:mörkblåa::::
+619036r3<adjektiv>mörkbrun:mörkbrun:mörkbrunt:mörkbruna:mörkbruna::::
+619037r4<substantiv>mörker:mörker:mörkers:mörkret:mörkrets::::
+830524r3<substantiv>mörkerkörning:mörkerkörning:mörkerkörnings:mörkerkörningen:mörkerkörningens::::
+655800r3<substantiv>mörkerseende:mörkerseende:mörkerseendes:mörkerseendet:mörkerseendets:!:!:!:!
+830529r3<substantiv>mörkersyn:mörkersyn:mörkersyns:mörkersynen:mörkersynens::::
+619038r3<substantiv>mörkertal:mörkertal:mörkertals:mörkertalet:mörkertalets:mörkertal:mörkertals:mörkertalen:mörkertalens
+619044r3<adjektiv>mörkfärgad:mörkfärgad:mörkfärgat:mörkfärgade:mörkfärgade:!:!:!:
+619047r4<adjektiv>mörkgrå:mörkgrå:mörkgrått:mörkgråa:mörkgråa:!:!:!:mörkgråe
+619050r3<adjektiv>mörkgrön:mörkgrön:mörkgrönt:mörkgröna:mörkgröna::::
+619053r3<adjektiv>mörkgul:mörkgul:mörkgult:mörkgula:mörkgula::::
+619056r3<adjektiv>mörkhyad:mörkhyad:mörkhyat:mörkhyade:mörkhyade:!:!:!:mörkhyade
+574777r4<adjektiv>mörkhårig:mörkhårig:mörkhårigt:mörkhåriga:mörkhåriga::::mörkhårige
+830537r3<adjektiv>mörkklädd:mörkklädd:mörkklätt:mörkklädda:mörkklädda:!:!:!:mörkklädde
+619057r3<adjektiv>mörklagd:mörklagd:mörklagt:mörklagda:mörklagda::::
+948007r4<adjektiv>mörklila:mörklila:mörklila:mörklila:mörklila::::::::::::
+COMPOUND(563115, 555927): mörk + lila
+574778r4<adjektiv>mörklockig:mörklockig:mörklockigt:mörklockiga:mörklockiga::::mörklockige
+619060r4<verb>mörklägga:mörklägga:mörklade:mörklagt:mörklägger:mörklägg:mörkläggas:mörklades:mörklagts:mörkläggs, mörklägges:mörklagd:mörklagt:mörklagda:mörkläggande:
+619068r3<substantiv>mörkläggning:mörkläggning:mörkläggnings:mörkläggningen:mörkläggningens:mörkläggningar:mörkläggningars:mörkläggningarna:mörkläggningarnas
+CUSTOM: y y mörkläggnings
+619076r3<substantiv>mörkläggningsgardin:mörkläggningsgardin:mörkläggningsgardins:mörkläggningsgardinen:mörkläggningsgardinens:mörkläggningsgardiner:mörkläggningsgardiners:mörkläggningsgardinerna:mörkläggningsgardinernas
+619084r4<verb>mörkna:mörkna:mörknade:mörknat:mörknar:mörkna:!:!:!:!::::mörknande:
+704521r4<substantiv>mörkning:mörkning:mörknings:mörkningen:mörkningens:mörkningar:mörkningars:mörkningarna:mörkningarnas
+830550r3<adjektiv>mörkrostad:mörkrostad:mörkrostat:mörkrostade:mörkrostade:!:!:!:
+619085r3<substantiv>mörkrum:mörkrum:mörkrums:mörkrummet:mörkrummets:mörkrum:mörkrums:mörkrummen:mörkrummens
+CUSTOM: y y mörkrums
+619086r3<adjektiv>mörkrädd:mörkrädd:!:mörkrädda:mörkrädda::::mörkrädde
+830554r3<substantiv>mörkräddhet:mörkräddhet:mörkräddhets:mörkräddheten:mörkräddhetens::::
+739759r3<substantiv>mörkrädsla:mörkrädsla:mörkrädslas:mörkrädslan:mörkrädslans::::
+619089r3<adjektiv>mörkröd:mörkröd:mörkrött:mörkröda:mörkröda::::
+830558r3<substantiv>mörksyn:mörksyn:mörksyns:mörksynen:mörksynens::::
+854315r3<adjektiv>mörktonad:mörktonad:mörktonat:mörktonade:mörktonade:!:!:!:
+704525r4<adjektiv>mörkögd:mörkögd:mörkögt:mörkögda:mörkögda:!:!:!:mörkögde
+830563r3<substantiv>mörning:mörning:mörnings:mörningen:mörningens::::
+554333r3<egennamn>Mörrum:Mörrum:Mörrums
+CUSTOM: y n Mörrums
+777361r3<substantiv>mörsare:mörsare:mörsares:mörsaren:mörsarens:mörsare:mörsares:mörsarna:mörsarnas
+619092r3<substantiv>mört:mört:mörts:mörten:mörtens:mörtar:mörtars:mörtarna:mörtarnas
+CUSTOM: y n
+594778r10<substantiv>mössa:mössa:mössas:mössan:mössans:mössor:mössors:mössorna:mössornas
+830567r3<substantiv>mössband:mössband:mössbands:mössbandet:mössbandets:mössband:mössbands:mössbanden:mössbandens
+655804r3<substantiv>mösskärm:mösskärm:mösskärms:mösskärmen:mösskärmens:mösskärmar:mösskärmars:mösskärmarna:mösskärmarnas
+983857r3<substantiv>mösspåtagning:mösspåtagning:mösspåtagnings:mösspåtagningen:mösspåtagningens:mösspåtagningar:mösspåtagningars:mösspåtagningarna:mösspåtagningarnas
+556867r3<verb>möta:möta:mötte:mött:möter:möt:mötas:möttes:mötts:möts:::::
+688834r3<adjektiv>mötande:mötande:mötande:mötande:mötande:!:!:!:
+560760r28<substantiv>möte:möte:mötes:mötet:mötets:möten:mötens:mötena:mötenas
+CUSTOM: y y mötes
+655806r3<substantiv>mötesaktivitet:mötesaktivitet:mötesaktivitets:mötesaktiviteten:mötesaktivitetens:mötesaktiviteter:mötesaktiviteters:mötesaktiviteterna:mötesaktiviteternas
+CUSTOM: n n
+704528r4<substantiv>mötesarvode:mötesarvode:mötesarvodes:mötesarvodet:mötesarvodets:mötesarvoden:mötesarvodens:mötesarvodena:mötesarvodenas
+COMPOUND(560760, 612301): möte + arvode
+CUSTOM: n n
+704536r4<substantiv>möteslokal:möteslokal:möteslokals:möteslokalen:möteslokalens:möteslokaler:möteslokalers:möteslokalerna:möteslokalernas
+COMPOUND(560760, 549959): möte + lokal
+CUSTOM: n n y
+655812r4<substantiv>mötesordförande:mötesordförande:mötesordförandes:mötesordföranden:mötesordförandens:mötesordförande:mötesordförandes:mötesordförandena:mötesordförandenas
+COMPOUND(560760, 641944): möte + ordförande
+CUSTOM: n n y
+655815r3<substantiv>mötesplats:mötesplats:mötesplats:mötesplatsen:mötesplatsens:mötesplatser:mötesplatsers:mötesplatserna:mötesplatsernas
+CUSTOM: n n y
+615573r3<substantiv>mötessekreterare:mötessekreterare:mötessekreterares:mötessekreteraren:mötessekreterarens:mötessekreterare:mötessekreterares:mötessekreterarna:mötessekreterarnas
+CUSTOM: n n y
+793332r3<adjektiv>nabbad:nabbad:nabbat:nabbade:nabbade:!:!:!:
+CUSTOM: n n y
+787598r3<substantiv>nabo:nabo:nabos:nabon:nabons:nabor:nabors:naborna:nabornas
+CUSTOM: n n y
+935463r3<substantiv>nabob:nabob:nabobs:naboben:nabobens:nabober:nabobers:naboberna:nabobernas
+CUSTOM: n n y
+830573r3<substantiv>nabofolk:nabofolk:nabofolks:nabofolket:nabofolkets:nabofolk:nabofolks:nabofolken:nabofolkens
+830579r3<substantiv>naboskap:naboskap:naboskaps:naboskapet:naboskapets::::
+547380r4<verb>nacka:nacka:nackade:nackat:nackar:nacka:nackas:nackades:nackats:nackas:nackad:nackat:nackade::
+830591r3<substantiv>nackben:nackben:nackbens:nackbenet:nackbenets:nackben:nackbens:nackbenen:nackbenens
+830583r3<substantiv>nackbena:nackbena:nackbenas:nackbenan:nackbenans:nackbenor:nackbenors:nackbenorna:nackbenornas
+598602r3<substantiv>nackdel:nackdel:nackdels:nackdelen:nackdelens:nackdelar:nackdelars:nackdelarna:nackdelarnas
+599913r5<substantiv>nacke:nacke:nackes:nacken:nackens:nackar:nackars:nackarna:nackarnas
+CUSTOM: y y
+830597r3<substantiv>nackgrepp:nackgrepp:nackgrepps:nackgreppet:nackgreppets:nackgrepp:nackgrepps:nackgreppen:nackgreppens
+830603r3<substantiv>nackgrop:nackgrop:nackgrops:nackgropen:nackgropens:nackgropar:nackgropars:nackgroparna:nackgroparnas
+655816r4<substantiv>nackhår:nackhår:nackhårs:nackhåret:nackhårets:nackhår:nackhårs:nackhåren:nackhårens
+830613r3<substantiv>nackknut:nackknut:nackknuts:nackknuten:nackknutens:nackknutar:nackknutars:nackknutarna:nackknutarnas
+830621r3<substantiv>nackkota:nackkota:nackkotas:nackkotan:nackkotans:nackkotor:nackkotors:nackkotorna:nackkotornas
+830630r3<substantiv>nackmuskel:nackmuskel:nackmuskels:nackmuskeln:nackmuskelns:nackmuskler:nackmusklers:nackmusklerna:nackmusklernas
+830639r3<substantiv>nackning:nackning:nacknings:nackningen:nackningens::::
+830643r3<substantiv>nackskada:nackskada:nackskadas:nackskadan:nackskadans:nackskador:nackskadors:nackskadorna:nackskadornas
+655820r4<substantiv>nackskinn:nackskinn:nackskinns:nackskinnet:nackskinnets:nackskinn:nackskinns:nackskinnen:nackskinnens
+830653r3<substantiv>nackskott:nackskott:nackskotts:nackskottet:nackskottets:nackskott:nackskotts:nackskotten:nackskottens
+830659r3<substantiv>nackskydd:nackskydd:nackskydds:nackskyddet:nackskyddets:nackskydd:nackskydds:nackskydden:nackskyddens
+830680r3<substantiv>nacksmärta:nacksmärta:nacksmärtas:nacksmärtan:nacksmärtans:nacksmärtor:nacksmärtors:nacksmärtorna:nacksmärtornas
+830665r3<substantiv>nackspegel:nackspegel:nackspegels:nackspegeln:nackspegelns:nackspeglar:nackspeglars:nackspeglarna:nackspeglarnas
+739763r4<substantiv>nackspärr:nackspärr:nackspärrs:nackspärren:nackspärrens:nackspärrar:nackspärrars:nackspärrarna:nackspärrarnas
+COMPOUND(599913, 634004): nacke + spärr
+830689r3<substantiv>nackstelhet:nackstelhet:nackstelhets:nackstelheten:nackstelhetens::::
+798457r3<adjektiv>nackstyv:nackstyv:nackstyvt:nackstyva:nackstyva::::
+607731r3<substantiv>nackstöd:nackstöd:nackstöds:nackstödet:nackstödets:nackstöd:nackstöds:nackstöden:nackstödens
+599918r3<substantiv>nackstödskudde:nackstödskudde:nackstödskuddes:nackstödskudden:nackstödskuddens:nackstödskuddar:nackstödskuddars:nackstödskuddarna:nackstödskuddarnas
+830673r3<substantiv>nacksving:nacksving:nacksvings:nacksvinget:nacksvingets:nacksving:nacksvings:nacksvingen:nacksvingens
+854995r3<egennamn>Nadal:Nadal:Nadals
+924314r4<substantiv>nadir:nadir:::::::
+DEFINITION 1: Punkten rakt ned; motsats till zenit
+553851r3<egennamn>Nadja:Nadja:Nadjas
+624558r3<substantiv>nafs:nafs:nafs:nafset:nafsets::::
+739780r4<verb>nafsa:nafsa:nafsade:nafsat:nafsar:nafsa:nafsas:nafsades:nafsats:nafsas:nafsad:nafsat:nafsade:nafsande:
+830698r3<substantiv>nafsning:nafsning:nafsnings:nafsningen:nafsningens::::
+662044r4<substantiv>nafta:nafta:naftas:naftan:naftans::::
+739784r3<substantiv>naftalen:naftalen:::::::
+600260r10<substantiv>nagel:nagel:nagels:nageln:nagelns:naglar:naglars:naglarna:naglarnas
+CUSTOM: y y nagel
+830702r3<substantiv>nagelbitare:nagelbitare:nagelbitares:nagelbitaren:nagelbitarens:nagelbitare:nagelbitares:nagelbitarna:nagelbitarnas
+830712r4<verb>nagelfara:nagelfara:nagelfor:nagelfarit:nagelfar:nagelfar:nagelfaras:nagelfors:nagelfarits:nagelfars, nagelfares:nagelfaren:nagelfaret:nagelfarna:nagelfarande:
+COMPOUND(600260, 558553): nagel + fara
+830708r3<substantiv>nagelfaring:nagelfaring:nagelfarings:nagelfaringen:nagelfaringens::::
+851528r3<substantiv>nagelfil:nagelfil:nagelfils:nagelfilen:nagelfilens:nagelfilar:nagelfilars:nagelfilarna:nagelfilarnas
+977807r4<substantiv>nagelfilning:nagelfilning:nagelfilnings:nagelfilningen:nagelfilningens::::
+COMPOUND(600260, 977802): nagel + filning
+678768r4<substantiv>nagelklippare:nagelklippare:nagelklippares:nagelklipparen:nagelklipparens:nagelklippare:nagelklippares:nagelklipparna:nagelklipparnas
+COMPOUND(600260, 615334): nagel + klippare
+CUSTOM: y y nagelklippar
+611575r3<substantiv>nagellack:nagellack:nagellacks:nagellacket:nagellackets:nagellacker:nagellackers:nagellackerna:nagellackernas
+830725r3<substantiv>nagelpetare:nagelpetare:nagelpetares:nagelpetaren:nagelpetarens:nagelpetare:nagelpetares:nagelpetarna:nagelpetarnas
+942329r4<substantiv>nagelrot:nagelrot:nagelrots:nagelroten:nagelrotens:nagelrötter:nagelrötters:nagelrötterna:nagelrötternas
+COMPOUND(600260, 561217): nagel + rot
+678774r4<substantiv>nagelsax:nagelsax:nagelsax:nagelsaxen:nagelsaxens:nagelsaxar:nagelsaxars:nagelsaxarna:nagelsaxarnas
+COMPOUND(600260, 551823): nagel + sax
+830731r3<substantiv>nageltrång:nageltrång:nageltrångs:nageltrånget:nageltrångets:nageltrång:nageltrångs:nageltrången:nageltrångens
+895514r3<substantiv>nagg:nagg:naggs:naggen:naggens:naggar:naggars:naggarna:naggarnas
+CUSTOM: n n y
+739785r4<verb>nagga:nagga:naggade:naggat:naggar:nagga:naggas:naggades:naggats:naggas:naggad:naggat:naggade::
+620664r3<adverb>naggande:naggande
+574781r3<adjektiv>naggig:naggig:naggigt:naggiga:naggiga::::
+793335r3<adjektiv>naggsågad:naggsågad:naggsågat:naggsågade:naggsågade:!:!:!:
+547381r4<verb>nagla:nagla:naglade:naglat:naglar:nagla:naglas:naglades:naglats:naglas:naglad:naglat:naglade::
+624561r3<adjektiv>naiv:naiv:naivt:naiva:naiva:naivare:naivast:naivaste:naive
+655822r3<substantiv>naivism:naivism:naivisms:naivismen:naivismens:!:!:!:!
+830738r3<substantiv>naivist:naivist:naivists:naivisten:naivistens:naivister:naivisters:naivisterna:naivisternas
+582200r3<adjektiv>naivistisk:naivistisk:naivistiskt:naivistiska:naivistiska::::
+655824r4<substantiv>naivitet:naivitet:naivitets:naiviteten:naivitetens:naiviteter:naiviteters:naiviteterna:naiviteternas
+655826r3<substantiv>najad:najad:najads:najaden:najadens:najader:najaders:najaderna:najadernas
+CUSTOM: y n
+564508r8<adjektiv>naken:naken:naket:nakna:nakna:naknare:naknast:naknaste:nakne::::::::
+CUSTOM: y y naken
+739792r3<substantiv>nakenbad:nakenbad:nakenbads:nakenbadet:nakenbadets::::
+757513r4<substantiv>nakenbild:nakenbild:nakenbilds:nakenbilden:nakenbildens:nakenbilder:nakenbilders:nakenbilderna:nakenbildernas
+COMPOUND(564508, 548373): naken + bild
+662352r16<substantiv>nakendans:nakendans:nakendans:nakendansen:nakendansens:nakendanser:nakendansers:nakendanserna:nakendansernas
+COMPOUND(564508, 548569): naken + dans
+952329r4<substantiv>nakendopp:nakendopp:nakendopps:nakendoppet:nakendoppets:nakendopp:nakendopps:nakendoppen:nakendoppens
+COMPOUND(564508, 552327): naken + dopp
+851537r3<substantiv>nakenfis:nakenfis:nakenfis:nakenfisen:nakenfisens:nakenfisar:nakenfisars:nakenfisarna:nakenfisarnas
+574784r3<adjektiv>nakenfröig:nakenfröig:nakenfröigt:nakenfröiga:nakenfröiga::::
+952337r4<substantiv>nakenhavre:nakenhavre:nakenhavres:nakenhavren:nakenhavrens::::
+COMPOUND(564508, 643233): naken + havre
+655830r3<substantiv>nakenhet:nakenhet:nakenhets:nakenheten:nakenhetens::::
+CUSTOM: y y nakenhets
+793338r3<adjektiv>nakenkindad:nakenkindad:nakenkindat:nakenkindade:nakenkindade:!:!:!:
+655831r3<substantiv>nakterhus:nakterhus:nakterhus:nakterhuset:nakterhusets::::
+591735r3<deponens>nalkas:nalkas:nalkades:nalkats:nalkas:
+763281r3<verb>nalla:nalla:nallade:nallat:nallar:nalla:::::::::
+621592r6<substantiv>nalle:nalle:nalles:nallen:nallens:nallar:nallars:nallarna:nallarnas
+CUSTOM: y y
+739796r4<substantiv>nallebjörn:nallebjörn:nallebjörns:nallebjörnen:nallebjörnens:nallebjörnar:nallebjörnars:nallebjörnarna:nallebjörnarnas
+COMPOUND(621592, 598136): nalle + björn
+CUSTOM: y y nallebjörns
+830750r3<substantiv>namibier:namibier:namibiers:namibiern:namibierns:namibier:namibiers:namibierna:namibiernas
+582203r4<adjektiv>namibisk:namibisk:namibiskt:namibiska:namibiska:!:!:!:namibiske
+830757r3<substantiv>namibiska:namibiska:namibiskas:namibiskan:namibiskans:namibiskor:namibiskors:namibiskorna:namibiskornas
+607737r19<substantiv>namn:namn:namns:namnet:namnets:namn:namns:namnen:namnens
+CUSTOM: y y namn
+547382r3<verb>namna:namna:namnade:namnat:namnar:namna:::::::::
+611946r3<substantiv>namnaktie:namnaktie:namnakties:namnaktien:namnaktiens:namnaktier:namnaktiers:namnaktierna:namnaktiernas
+935363r3<interjektion>namnam:namnam
+CUSTOM: n n y
+934486r4<substantiv>namnbyte:namnbyte:namnbytes:namnbytet:namnbytets:namnbyten:namnbytens:namnbytena:namnbytenas
+COMPOUND(607737, 560883): namn + byte
+913444r4<substantiv>namndel:namndel:namndels:namndelen:namndelens:namndelar:namndelars:namndelarna:namndelarnas
+COMPOUND(607737, 551034): namn + del
+CUSTOM: y n n
+739804r3<substantiv>namne:namne:namnes:namnen:namnens::::
+782445r4<substantiv>namnförtydligande:namnförtydligande:namnförtydligandes:namnförtydligandet:namnförtydligandets:namnförtydliganden:namnförtydligandens:namnförtydligandena:namnförtydligandenas
+COMPOUND(607737, 691170): namn + förtydligande
+655832r7<verb>namnge, namngiva:namnge, namngiva:namngav:namngett, namngivit:namnger, namngiver:namnge, namngiv:namnges, namngivas:namngavs:namngetts, namngivits:namnges, namngives, namngivs:namngiven:namngivet:namngivna:namngivande:
+COMPOUND(607737, 556584): namn + giva, ge
+744371r3<substantiv>namngivning:namngivning:namngivnings:namngivningen:namngivningens:namngivningar:namngivningars:namngivningarna:namngivningarnas
+CUSTOM: y y namngivnings
+574787r4<adjektiv>namnkunnig:namnkunnig:namnkunnigt:namnkunniga:namnkunniga:namnkunnigare:namnkunnigast:namnkunnigaste:namnkunnige
+931953r4<substantiv>namnlag:namnlag:namnlags:namnlagen:namnlagens:namnlagar:namnlagars:namnlagarna:namnlagarnas
+COMPOUND(607737, 551690): namn + lag
+655847r3<substantiv>namnlista:namnlista:namnlistas:namnlistan:namnlistans:namnlistor:namnlistors:namnlistorna:namnlistornas
+565089r3<adjektiv>namnlös:namnlös:namnlöst:namnlösa:namnlösa::::
+597299r4<substantiv>namnsdag:namnsdag:namnsdags:namnsdagen:namnsdagens:namnsdagar:namnsdagars:namnsdagarna:namnsdagarnas
+CUSTOM: y y namnsdags
+764504r3<substantiv>namnsdagsbarn::::::::
+COMPOUND(597299, 555956): namnsdag + barn
+793341r3<adjektiv>namnskyddad:namnskyddad:namnskyddat:namnskyddade:namnskyddade:!:!:!:
+602940r3<substantiv>namnsäkerhet:namnsäkerhet:namnsäkerhets:namnsäkerheten:namnsäkerhetens:namnsäkerheter:namnsäkerheters:namnsäkerheterna:namnsäkerheternas
+CUSTOM: y y namnsäkerhets
+655849r3<substantiv>namnteckning:namnteckning:namntecknings:namnteckningen:namnteckningens:namnteckningar:namnteckningars:namnteckningarna:namnteckningarnas
+CUSTOM: y y namntecknings
+793344r3<adjektiv>namnändrad:namnändrad:namnändrat:namnändrade:namnändrade:!:!:!:
+553853r3<egennamn>Nancy:Nancy:Nancys
+965473r3<substantiv>nanomaterial:nanomaterial:nanomaterials:nanomaterialet:nanomaterialets:nanomaterial:nanomaterials:nanomaterialen:nanomaterialens
+789305r8<substantiv>nanometer:nanometer:nanometers:nanometern:nanometerns:nanometer:nanometers:nanometerna:nanometernas
+830765r3<substantiv>nanosekund:nanosekund:nanosekunds:nanosekunden:nanosekundens:nanosekunder:nanosekunders:nanosekunderna:nanosekundernas
+830773r3<substantiv>nanoteknik:nanoteknik:nanotekniks:nanotekniken:nanoteknikens::::
+854599r3<egennamn>Nantes:Nantes:Nantes
+830777r4<substantiv>napalm:napalm:napalms:napalmen:napalmens::::
+CUSTOM: y n napalm
+830781r4<substantiv>napalmbomb:napalmbomb:napalmbombs:napalmbomben:napalmbombens:napalmbomber:napalmbombers:napalmbomberna:napalmbombernas
+COMPOUND(830777, 548427): napalm + bomb
+784428r3<egennamn>Napoleon:Napoleon:Napoleons
+CUSTOM: y n Napoleon
+830789r3<substantiv>napoleonbakelse:napoleonbakelse:napoleonbakelses:napoleonbakelsen:napoleonbakelsens:napoleonbakelser:napoleonbakelsers:napoleonbakelserna:napoleonbakelsernas
+830797r3<substantiv>napoleontårta:napoleontårta:napoleontårtas:napoleontårtan:napoleontårtans:napoleontårtor:napoleontårtors:napoleontårtorna:napoleontårtornas
+830805r3<substantiv>napolitanare:napolitanare:napolitanares:napolitanaren:napolitanarens:napolitanare:napolitanares:napolitanarna:napolitanarnas
+830812r3<adjektiv>napolitansk:napolitansk:napolitanskt:napolitanska:napolitanska:!:!:!:napolitanske
+621594r4<substantiv>napp:napp:napps:nappet:nappets:napp:napps:nappen:nappens
+621593r3<substantiv>napp:napp:napps:nappen:nappens:nappar:nappars:napparna:napparnas
+547383r3<verb>nappa:nappa:nappade:nappat:nappar:nappa:::::::::
+830816r3<substantiv>nappahandske:nappahandske:nappahandskes:nappahandsken:nappahandskens:nappahandskar:nappahandskars:nappahandskarna:nappahandskarnas
+830824r3<substantiv>nappaskinn:nappaskinn:nappaskinns:nappaskinnet:nappaskinnets:nappaskinn:nappaskinns:nappaskinnen:nappaskinnens
+830830r3<substantiv>nappatag:nappatag:nappatags:nappataget:nappatagets:nappatag:nappatags:nappatagen:nappatagens
+590303r3<verb>nappera:nappera:napperade:napperat:napperar:nappera:::::::::
+621595r3<substantiv>nappflaska:nappflaska:nappflaskas:nappflaskan:nappflaskans:nappflaskor:nappflaskors:nappflaskorna:nappflaskornas
+830836r3<substantiv>naprapat:naprapat:naprapats:naprapaten:naprapatens:naprapater:naprapaters:naprapaterna:naprapaternas
+830844r3<substantiv>naprapati:naprapati:naprapatis:naprapatin:naprapatins::::
+582205r3<adjektiv>naprapatisk:naprapatisk:naprapatiskt:naprapatiska:naprapatiska::::
+924629r4<substantiv>nar:nar:nars:naren:narens:narar:narars:nararna:nararnas
+DEFINITION 1: Tvärslå
+CUSTOM: n n y
+830848r4<substantiv>narciss:narciss:narciss:narcissen:narcissens:narcisser:narcissers:narcisserna:narcissernas
+CUSTOM: y y narciss
+633756r4<substantiv>narcissism:narcissism:narcissisms:narcissismen:narcissismens::::
+830855r3<substantiv>narcissist:narcissist:narcissists:narcissisten:narcissistens:narcissister:narcissisters:narcissisterna:narcissisternas
+582208r4<adjektiv>narcissistisk:narcissistisk:narcissistiskt:narcissistiska:narcissistiska::::narcissistiske
+830864r4<substantiv>narcisslök:narcisslök:narcisslöks:narcisslöken:narcisslökens:narcisslökar:narcisslökars:narcisslökarna:narcisslökarnas
+COMPOUND(830848, 556010): narciss + lök
+895289r7<substantiv>nare:nare:nares:naren:narens::::
+CUSTOM: n n y
+574788r4<adjektiv>narig:narig:narigt:nariga:nariga:narigare:

@@ -1,0 +1,644 @@
+:lokskadas:lokskadan:lokskadans:lokskador:lokskadors:lokskadorna:lokskadornas
+COMPOUND(552674, 595121): lok + skada
+935172r4<substantiv>lokstall:lokstall:lokstalls:lokstallet:lokstallets:lokstallar:lokstallars:lokstallarna:lokstallarnas
+COMPOUND(552674, 608116): lok + stall
+935197r4<substantiv>loktåg:loktåg:loktågs:loktåget:loktågets:loktåg:loktågs:loktågen:loktågens
+COMPOUND(552674, 553068): lok + tåg
+CUSTOM: y n n
+922694r4<substantiv>lokurspårning:lokurspårning:lokurspårnings:lokurspårningen:lokurspårningens:lokurspårningar:lokurspårningars:lokurspårningarna:lokurspårningarnas
+COMPOUND(552674, 765031): lok + urspårning
+935164r3<substantiv>lokution:lokution:lokutions:lokutionen:lokutionens:lokutioner:lokutioners:lokutionerna:lokutionernas
+935188r4<substantiv>lokverkstad:lokverkstad:lokverkstads:lokverkstaden:lokverkstadens:lokverkstäder:lokverkstäders:lokverkstäderna:lokverkstädernas
+COMPOUND(552674, 645357): lok + verkstad
+560137r4<substantiv>lom:lom:loms:lommen:lommens:lommar:lommars:lommarna:lommarnas
+DEFINITION 1: En slags fågel
+590155r3<verb>lombardera:lombardera:lombarderade:lombarderat:lombarderar:lombardera:::::::::
+607612r3<substantiv>lombardlån:lombardlån:lombardlåns:lombardlånet:lombardlånets:lombardlån:lombardlåns:lombardlånen:lombardlånens
+560140r4<adjektiv>lomhörd:lomhörd:lomhört:lomhörda:lomhörda::::lomhörde
+956011r3<substantiv>lomhördhet:lomhördhet:lomhördhets:lomhördheten:lomhördhetens::::
+623024r6<verb>lomma:lomma:lommade:lommat:lommar:lomma:lommas:lommades:lommats:lommas::::lommande:
+876979r3<substantiv>lomägg:lomägg:lomäggs:lomägget:lomäggets:lomägg:lomäggs:lomäggen:lomäggens
+554888r5<egennamn>London:London:Londons
+CUSTOM: y n London
+862451r4<substantiv>Londonborgmästare:Londonborgmästare:Londonborgmästares:Londonborgmästaren:Londonborgmästarens:Londonborgmästare:Londonborgmästares:Londonborgmästarna:Londonborgmästarnas
+COMPOUND(554888, 615165): London + borgmästare
+CUSTOM: y n
+862351r4<substantiv>Londontrafik:Londontrafik:Londontrafiks:Londontrafiken:Londontrafikens::::
+COMPOUND(554888, 673056): London + trafik
+CUSTOM: y n
+590159r3<verb>longera:longera:longerade:longerat:longerar:longera:::::::::
+CUSTOM: y n n
+935887r3<substantiv>longering:longering:longerings:longeringen:longeringens::::
+642641r3<substantiv>longitud:longitud:longituds:longituden:longitudens:longituder:longituders:longituderna:longitudernas
+871903r3<adjektiv>longitudinell:longitudinell:longitudinellt:longitudinella:longitudinella::::
+560143r3<substantiv>longör:longör:longörs:longören:longörens:longörer:longörers:longörerna:longörernas
+642657r3<substantiv>look:look:looks:looken:lookens::::
+874511r3<egennamn>Loomis:Loomis:Loomis
+CUSTOM: y n Loomis
+560151r3<substantiv>loop:loop:loops:loopen:loopens:loopar:loopars:looparna:looparnas
+871906r3<substantiv>looping:looping:loopings:loopingen:loopingens:loopingar:loopingars:loopingarna:loopingarnas
+552677r13<substantiv>lopp:lopp:lopps:loppet:loppets:lopp:lopps:loppen:loppens
+560153r3<substantiv>loppa:loppa:loppas:loppan:loppans:loppor:loppors:lopporna:loppornas
+871914r3<substantiv>loppcirkus:loppcirkus:loppcirkus:loppcirkusen:loppcirkusens:loppcirkusar:loppcirkusars:loppcirkusarna:loppcirkusarnas
+916400r4<substantiv>loppis:loppis:loppis:loppisen:loppisens:loppisar:loppisars:loppisarna:loppisarnas
+CUSTOM: y y
+916409r4<substantiv>loppisfynd:loppisfynd:loppisfynds:loppisfyndet:loppisfyndets:loppisfynd:loppisfynds:loppisfynden:loppisfyndens
+COMPOUND(916400, 552396): loppis + fynd
+642661r3<substantiv>loppmarknad:loppmarknad:loppmarknads:loppmarknaden:loppmarknadens:loppmarknader:loppmarknaders:loppmarknaderna:loppmarknadernas
+871921r3<substantiv>loppspel:loppspel:loppspels:loppspelet:loppspelets:loppspel:loppspels:loppspelen:loppspelens
+549962r3<substantiv>lord:lord:lords:lorden:lordens:lorder:lorders:lorderna:lordernas
+982453r3<substantiv>lordkansler:lordkansler:lordkanslers:lordkanslern:lordkanslerns:lordkanslerer:lordkanslerers:lordkanslererna:lordkanslerernas
+642669r3<substantiv>lornjett:lornjett:lornjetts:lornjetten:lornjettens:lornjetter:lornjetters:lornjetterna:lornjetternas
+590163r3<verb>lornjettera:lornjettera:lornjetterade:lornjetterat:lornjetterar:lornjettera:::::::::
+642677r4<substantiv>lort:lort:lorts:lorten:lortens:lortar:lortars:lortarna:lortarnas
+763267r3<verb>lorta:lorta:lortade:lortat:lortar:lorta:lortas:lortades:lortats:lortas:::::
+CUSTOM: y n
+574301r3<adjektiv>lortaktig:lortaktig:lortaktigt:lortaktiga:lortaktiga::::
+642685r3<substantiv>lortgris:lortgris:lortgris:lortgrisen:lortgrisens:lortgrisar:lortgrisars:lortgrisarna:lortgrisarnas
+574304r4<adjektiv>lortig:lortig:lortigt:lortiga:lortiga:lortigare:lortigast:lortigaste:lortige
+554867r3<egennamn>Los Angeles:Los Angeles:Los Angeles
+732095r3<egennamn>Losberg:Losberg:Losbergs
+CUSTOM: y n Losberg
+936547r3<substantiv>loser:loser:losers:losern:loserns:loser:losers:loserna:losernas
+642692r3<substantiv>loska:loska:loskas:loskan:loskans:loskor:loskors:loskorna:loskornas
+620629r3<adverb>loss:loss
+547298r5<verb>lossa:lossa:lossade:lossat:lossar:lossa:lossas:lossades:lossats:lossas:lossad:lossat:lossade:lossande:
+547299r4<verb>lossna:lossna:lossnade:lossnat:lossnar:lossna::::::::lossnande:
+734175r4<substantiv>lossning:lossning:lossnings:lossningen:lossningens:lossningar:lossningars:lossningarna:lossningarnas
+CUSTOM: y y lossnings
+940634r3<substantiv>lotion:lotion:lotions:lotionen:lotionens:lotioner:lotioners:lotionerna:lotionernas
+598534r6<substantiv>lots:lots:lots:lotsen:lotsens:lotsar:lotsars:lotsarna:lotsarnas
+CUSTOM: y y lots
+547300r4<verb>lotsa:lotsa:lotsade:lotsat:lotsar:lotsa:lotsas:lotsades:lotsats:lotsas:lotsad:lotsat:lotsade:lotsande:
+669416r4<substantiv>lotsavgift:lotsavgift:lotsavgifts:lotsavgiften:lotsavgiftens:lotsavgifter:lotsavgifters:lotsavgifterna:lotsavgifternas
+COMPOUND(598534, 548299): lots + avgift
+931610r4<substantiv>lotsbåt:lotsbåt:lotsbåts:lotsbåten:lotsbåtens:lotsbåtar:lotsbåtars:lotsbåtarna:lotsbåtarnas
+COMPOUND(598534, 550993): lots + båt
+871932r3<substantiv>lotsning:lotsning:lotsnings:lotsningen:lotsningens:lotsningar:lotsningars:lotsningarna:lotsningarnas
+549964r9<substantiv>lott:lott:lotts:lotten:lottens:lotter:lotters:lotterna:lotternas
+CUSTOM: y y lott
+871949r3<substantiv>lotta:lotta:lottas:lottan:lottans:lottor:lottors:lottorna:lottornas
+547301r5<verb>lotta:lotta:lottade:lottat:lottar:lotta:lottas:lottades:lottats:lottas::::lottande:
+642700r3<adjektiv>lottad:lottad:lottat:lottade:lottade:!:!:!:
+871940r3<substantiv>lottakår:lottakår:lottakårs:lottakåren:lottakårens:lottakårer:lottakårers:lottakårerna:lottakårernas
+642701r4<substantiv>lottdragning:lottdragning:lottdragnings:lottdragningen:lottdragningens:lottdragningar:lottdragningars:lottdragningarna:lottdragningarnas
+COMPOUND(549964, 642709): lott + dragning
+CUSTOM: y y lottdragnings
+642710r4<substantiv>lotteri:lotteri:lotteris:lotteriet:lotteriets:lotterier:lotteriers:lotterierna:lotteriernas
+CUSTOM: y y lotteri
+642712r4<substantiv>lotteridragning:lotteridragning:lotteridragnings:lotteridragningen:lotteridragningens:lotteridragningar:lotteridragningars:lotteridragningarna:lotteridragningarnas
+COMPOUND(642710, 642709): lotteri + dragning
+CUSTOM: y y lotteridragnings
+565040r4<adjektiv>lottlös:lottlös:lottlöst:lottlösa:lottlösa:!:!:!:lottlöse
+681273r3<substantiv>lottning:lottning:lottnings:lottningen:lottningens:lottningar:lottningars:lottningarna:lottningarnas
+CUSTOM: y y lottnings
+625689r9<substantiv>lotto:lotto:lottos:lottot:lottots::::
+955265r4<substantiv>lottovinst:lottovinst:lottovinsts:lottovinsten:lottovinstens:lottovinster:lottovinsters:lottovinsterna:lottovinsternas
+COMPOUND(625689, 550774): lotto + vinst
+642713r3<substantiv>lottsedel:lottsedel:lottsedels:lottsedeln:lottsedelns:lottsedlar:lottsedlars:lottsedlarna:lottsedlarnas
+551704r3<substantiv>lotus:lotus:lotus:lotusen:lotusens:lotusar:lotusars:lotusarna:lotusarnas
+637738r3<substantiv>lotusblomma:lotusblomma:lotusblommas:lotusblomman:lotusblommans:lotusblommor:lotusblommors:lotusblommorna:lotusblommornas
+787234r3<egennamn>Louis:Louis:Louis
+553800r3<egennamn>Louise:Louise:Louises
+990419r3<egennamn>Louisiana:Louisiana:Louisianas
+946459r3<substantiv>lounge:lounge:lounges:loungen:loungens:lounger:loungers:loungerna:loungernas
+559035r13<substantiv>lov:lov:lovs:lovet:lovets:lov:lovs:loven:lovens
+DEFINITION 1: Skolledighet.
+DEFINITION 2: Tillåtelse
+CUSTOM: y y lov
+559037r3<substantiv>lov:lov:lovs:loven:lovens:lovar:lovars:lovarna:lovarnas
+547302r4<verb>lova:lova:lovade:lovat:lovar:lova:lovas:lovades:lovats:lovas:lovad:lovat:lovade::
+642722r3<adjektiv>lovande:lovande:lovande:lovande:lovande:!:!:!:
+894759r3<substantiv>lovart:lovart:!:!:!:!:!:!:!
+928347r4<substantiv>lovdag:lovdag:lovdags:lovdagen:lovdagens:lovdagar:lovdagars:lovdagarna:lovdagarnas
+COMPOUND(559035, 551009): lov + dag
+972478r3<egennamn>Love:Love:Loves
+574307r3<adjektiv>lovgirig:lovgirig:lovgirigt:lovgiriga:lovgiriga::::
+962142r3<substantiv>lovikkavante:lovikkavante:lovikkavantes:lovikkavanten:lovikkavantens:lovikkavantar:lovikkavantars:lovikkavantarna:lovikkavantarnas
+553802r3<egennamn>Lovisa:Lovisa:Lovisas
+566570r3<adjektiv>lovlig:lovlig:lovligt:lovliga:lovliga::::
+693624r3<adverb>lovligen:lovligen
+982461r3<substantiv>lovlighet:lovlighet:lovlighets:lovligheten:lovlighetens::::
+681282r3<substantiv>lovning:::::lovningar:lovningars:lovningarna:lovningarnas
+CUSTOM: y y lovnings
+642723r3<substantiv>lovord:lovord:lovords:lovordet:lovordets:lovord:lovords:lovorden:lovordens
+547303r5<verb>lovorda:lovorda:lovordade:lovordat:lovordar:lovorda:lovordas:lovordades:lovordats:lovordas:lovordad:lovordat:lovordade:lovordande:
+547304r4<verb>lovprisa:lovprisa:lovprisade:lovprisat:lovprisar:lovprisa:lovprisas:lovprisades:lovprisats:lovprisas:lovprisad:lovprisat:lovprisade::
+982465r3<substantiv>lovprisning:lovprisning:lovprisnings:lovprisningen:lovprisningens:lovprisningar:lovprisningars:lovprisningarna:lovprisningarnas
+642729r4<verb>lovsjunga:lovsjunga:lovsjöng:lovsjungit:lovsjunger:lovsjung:::::::::
+COMPOUND(559035, 593333): lov + sjunga
+618746r3<substantiv>lovsång:lovsång:lovsångs:lovsången:lovsångens:lovsånger:lovsångers:lovsångerna:lovsångernas
+761874r3<substantiv>lovtal:lovtal:lovtals:lovtalet:lovtalets:lovtal:lovtals:lovtalen:lovtalens
+618748r3<adjektiv>lovvärd:lovvärd:lovvärt:lovvärda:lovvärda::::
+965937r3<substantiv>loxodrom:loxodrom:loxodroms:loxodromen:loxodromens:loxodromer:loxodromers:loxodromerna:loxodromernas
+929622r3<förkortning>lp:lp
+899561r3<substantiv>lp-skiva:lp-skiva:lp-skivas:lp-skivan:lp-skivans:lp-skivor:lp-skivors:lp-skivorna:lp-skivornas
+899274r3<substantiv>LP-skiva:LP-skiva:LP-skivas:LP-skivan:LP-skivans:LP-skivor:LP-skivors:LP-skivorna:LP-skivornas
+628340r4<verb>lua:lua:luade:luat:luar:lua:luas:luades:luats:luas:luad:luat:luade::
+DEFINITION 1: Skånskt tillagningssätt (för ål?)
+CUSTOM: n n y %lua %luar %luas %luats %luades
+637746r6<verb>lubba:lubba:lubbade:lubbat:lubbar:lubba:lubbas:lubbades:lubbats:lubbas::::lubbande:
+CUSTOM: y n
+871956r3<substantiv>lubrikator:lubrikator:lubrikators:lubrikatorn:lubrikatorns:lubrikatorer:lubrikatorers:lubrikatorerna:lubrikatorernas
+972420r3<egennamn>Lucas:Lucas:Lucas
+642746r11<substantiv>lucia:lucia:lucias:lucian:lucians:lucior:luciors:luciorna:luciornas
+CUSTOM: y y lucia
+553263r3<egennamn>Lucia:Lucia:Lucias
+683815r4<substantiv>luciafest:luciafest:luciafests:luciafesten:luciafestens:luciafester:luciafesters:luciafesterna:luciafesternas
+COMPOUND(642746, 548912): lucia + fest
+683823r4<substantiv>luciafirande:luciafirande:luciafirandes:luciafirandet:luciafirandets::::
+COMPOUND(642746, 683824): lucia + firande
+683829r4<substantiv>luciakaffe:luciakaffe:luciakaffes:luciakaffet:luciakaffets:!:!:!:!
+COMPOUND(642746, 622259): lucia + kaffe
+683858r4<substantiv>luciakandidat:luciakandidat:luciakandidats:luciakandidaten:luciakandidatens:luciakandidater:luciakandidaters:luciakandidaterna:luciakandidaternas
+COMPOUND(642746, 549427): lucia + kandidat
+683833r4<substantiv>luciaklänning:luciaklänning:luciaklännings:luciaklänningen:luciaklänningens:luciaklänningar:luciaklänningars:luciaklänningarna:luciaklänningarnas
+COMPOUND(642746, 597117): lucia + klänning
+CUSTOM: y y luciaklännings
+642737r3<substantiv>luciakrona:luciakrona:luciakronas:luciakronan:luciakronans:luciakronor:luciakronors:luciakronorna:luciakronornas
+683841r4<substantiv>luciasång:luciasång:luciasångs:luciasången:luciasångens:luciasånger:luciasångers:luciasångerna:luciasångernas
+COMPOUND(642746, 550616): lucia + sång
+642745r4<substantiv>luciatåg:luciatåg:luciatågs:luciatåget:luciatågets:luciatåg:luciatågs:luciatågen:luciatågens
+COMPOUND(642746, 553068): lucia + tåg
+922011r4<substantiv>luciavaka:luciavaka:luciavakas:luciavakan:luciavakans:luciavakor:luciavakors:luciavakorna:luciavakornas
+COMPOUND(642746, 826611): lucia + vaka
+594650r4<substantiv>lucka:lucka:luckas:luckan:luckans:luckor:luckors:luckorna:luckornas
+564518r4<adjektiv>lucker:lucker:luckert:luckra:luckra:luckrare:luckrast:luckraste:
+547305r4<verb>luckra:luckra:luckrade:luckrat:luckrar:luckra:luckras:luckrades:luckrats:luckras:::::
+637755r3<substantiv>ludd:ludd:ludds:luddet:luddets::::
+637759r4<verb>ludda:ludda:luddade:luddat:luddar:ludda::::::::luddande:
+798306r3<adjektiv>luddhårig:luddhårig:luddhårigt:luddhåriga:luddhåriga::::
+574310r4<adjektiv>luddig:luddig:luddigt:luddiga:luddiga:luddigare:luddigast:luddigaste:
+916416r4<substantiv>luddighet:luddighet:luddighets:luddigheten:luddighetens:luddigheter:luddigheters:luddigheterna:luddigheternas
+649209r4<adjektiv>luden:luden:ludet:ludna:ludna::::ludne
+CUSTOM: y n
+555059r3<substantiv>luder:luder:luders:ludret:ludrets:luder:luders:ludren:ludrens
+813238r3<egennamn>Ludvig:Ludvig:Ludvigs
+554302r4<egennamn>Ludvika:Ludvika:Ludvikas, Ludvika
+CUSTOM: y n Ludvika
+581724r3<adjektiv>luetisk:luetisk:luetiskt:luetiska:luetiska::::
+836294r3<verb>luffa:luffa:luffade:luffat:luffar:luffa:luffas:luffades:luffats:luffas::::luffande:
+637763r3<substantiv>luffare:luffare:luffares:luffaren:luffarens:luffare:luffares:luffarna:luffarnas
+CUSTOM: y y luffar
+946889r3<substantiv>luffen:::luffen:::::
+CUSTOM: y n
+836302r5<substantiv>luffning:luffning:luffnings:luffningen:luffningens::::
+CUSTOM: n n n
+649210r4<verb>lufsa:lufsa:lufsade:lufsat:lufsar:lufsa::::::::lufsande:
+574311r4<adjektiv>lufsig:lufsig:lufsigt:lufsiga:lufsiga:lufsigare:lufsigast:lufsigaste:lufsige
+562172r34<substantiv>luft:luft:lufts:luften:luftens:!:!:!:!
+CUSTOM: y y luft
+562173r5<verb>lufta:lufta:luftade:luftat:luftar:lufta:luftas:luftades:luftats:luftas:luftad:luftat:luftade:luftande:
+711138r3<substantiv>luftanfall:luftanfall:luftanfalls:luftanfallet:luftanfallets:luftanfall:luftanfalls:luftanfallen:luftanfallens
+562175r3<substantiv>luftballong:luftballong:luftballongs:luftballongen:luftballongens:luftballonger:luftballongers:luftballongerna:luftballongernas
+574314r3<adjektiv>luftbeständig:luftbeständig:luftbeständigt:luftbeständiga:luftbeständiga::::
+931618r4<substantiv>luftbro:luftbro:luftbros:luftbron:luftbrons:luftbroar:luftbroars:luftbroarna:luftbroarnas
+COMPOUND(562172, 557960): luft + bro
+681283r4<adjektiv>luftburen:luftburen:luftburet:luftburna:luftburna::::luftburne
+944939r4<substantiv>luftbälg:luftbälg:luftbälgs:luftbälgen:luftbälgens:luftbälgar:luftbälgars:luftbälgarna:luftbälgarnas
+COMPOUND(562172, 560902): luft + bälg
+681284r4<substantiv>luftcirkulation:luftcirkulation:luftcirkulations:luftcirkulationen:luftcirkulationens::::
+COMPOUND(562172, 661112): luft + cirkulation
+CUSTOM: y y luftcirkulations
+663117r6<substantiv>luftdans:luftdans:luftdans:luftdansen:luftdansens:luftdanser:luftdansers:luftdanserna:luftdansernas
+COMPOUND(562172, 548569): luft + dans
+581727r3<adjektiv>luftelektrisk:luftelektrisk:luftelektriskt:luftelektriska:luftelektriska::::
+562183r3<substantiv>luftfarkost:luftfarkost:luftfarkosts:luftfarkosten:luftfarkostens:luftfarkoster:luftfarkosters:luftfarkosterna:luftfarkosternas
+693625r3<substantiv>luftfart:luftfart:luftfarts:luftfarten:luftfartens::::
+CUSTOM: y y luftfarts
+693629r3<substantiv>luftfartsverk:luftfartsverk:luftfartsverks:luftfartsverket:luftfartsverkets::::
+681287r4<substantiv>luftflotta:luftflotta:luftflottas:luftflottan:luftflottans:luftflottor:luftflottors:luftflottorna:luftflottornas
+COMPOUND(562172, 561478): luft + flotta
+563968r3<adjektiv>luftfri:luftfri:luftfritt:luftfria:luftfria::::
+CUSTOM: y n n
+871975r3<substantiv>luftfuktare:luftfuktare:luftfuktares:luftfuktaren:luftfuktarens:luftfuktare:luftfuktares:luftfuktarna:luftfuktarnas
+562193r3<substantiv>luftfuktighet:luftfuktighet:luftfuktighets:luftfuktigheten:luftfuktighetens:!:!:!:!
+CUSTOM: y y luftfuktighets
+799812r3<adjektiv>luftfylld:luftfylld:luftfyllt:luftfyllda:luftfyllda::::
+562197r3<substantiv>luftfärd:luftfärd:luftfärds:luftfärden:luftfärdens:luftfärder:luftfärders:luftfärderna:luftfärdernas
+681288r4<substantiv>luftförorening:luftförorening:luftförorenings:luftföroreningen:luftföroreningens:luftföroreningar:luftföroreningars:luftföroreningarna:luftföroreningarnas
+COMPOUND(562172, 556477): luft + förorening
+CUSTOM: y y luftförorenings
+851252r3<substantiv>luftgap:luftgap:luftgaps:luftgapet:luftgapets:luftgap:luftgaps:luftgapen:luftgapens
+607618r3<substantiv>luftgummihjul:luftgummihjul:luftgummihjuls:luftgummihjulet:luftgummihjulets:luftgummihjul:luftgummihjuls:luftgummihjulen:luftgummihjulens
+929017r4<substantiv>lufthav:lufthav:lufthavs:lufthavet:lufthavets:lufthav:lufthavs:lufthaven:lufthavens
+COMPOUND(562172, 552466): luft + hav
+581730r3<adjektiv>lufthydraulisk:lufthydraulisk:lufthydrauliskt:lufthydrauliska:lufthydrauliska::::
+931626r4<substantiv>lufthål:lufthål:lufthåls:lufthålet:lufthålets:lufthål:lufthåls:lufthålen:lufthålens
+COMPOUND(562172, 552485): luft + hål
+792970r3<adjektiv>lufthärdad:lufthärdad:lufthärdat:lufthärdade:lufthärdade:!:!:!:
+801086r3<adjektiv>lufthärdande:lufthärdande:lufthärdande:lufthärdande:lufthärdande:!:!:!:
+574317r4<adjektiv>luftig:luftig:luftigt:luftiga:luftiga:luftigare:luftigast:luftigaste:
+941367r3<substantiv>luftighet:luftighet:luftighets:luftigheten:luftighetens::::
+792973r3<adjektiv>luftisolerad:luftisolerad:luftisolerat:luftisolerade:luftisolerade:!:!:!:
+587155r3<verb>luftkonditionera:luftkonditionera:luftkonditionerade:luftkonditionerat:luftkonditionerar:luftkonditionera:::::::::
+792976r3<adjektiv>luftkonditionerad:luftkonditionerad:luftkonditionerat:luftkonditionerade:luftkonditionerade:!:!:!:
+754614r3<substantiv>luftkonditionering:luftkonditionering:luftkonditionerings:luftkonditioneringen:luftkonditioneringens:luftkonditioneringar:luftkonditioneringars:luftkonditioneringarna:luftkonditioneringarnas
+799815r3<adjektiv>luftkyld:luftkyld:luftkylt:luftkylda:luftkylda::::
+566571r3<adjektiv>luftkänslig:luftkänslig:luftkänsligt:luftkänsliga:luftkänsliga::::
+681294r6<substantiv>luftlager:luftlager:luftlagers:luftlagret:luftlagrets:luftlager:luftlagers:luftlagren:luftlagrens
+COMPOUND(562172, 555207): luft + lager
+761154r4<verb>luftlandsätta:luftlandsätta:luftlandsatte:luftlandsatt:luftlandsätter:luftlandsätt:luftlandsättas:luftlandsattes:luftlandsatts:luftlandsätts, luftlandsättes:luftlandsatt:luftlandsatt:luftlandsatta:luftlandsättande:
+COMPOUND(562172, 761142): luft + landsätta
+693631r4<substantiv>luftlandsättning:luftlandsättning:luftlandsättnings:luftlandsättningen:luftlandsättningens:luftlandsättningar:luftlandsättningars:luftlandsättningarna:luftlandsättningarnas
+COMPOUND(562172, 693632): luft + landsättning
+CUSTOM: y y luftlandsättnings
+769335r4<substantiv>luftled:luftled:luftleds:luftleden:luftledens:luftleder:luftleders:luftlederna:luftledernas
+COMPOUND(562172, 556257): luft + led
+792977r3<adjektiv>luftlindad:luftlindad:luftlindat:luftlindade:luftlindade:!:!:!:
+792980r3<adjektiv>luftmanövrerad:luftmanövrerad:luftmanövrerat:luftmanövrerade:luftmanövrerade:!:!:!:
+956263r3<substantiv>luftning:luftning:luftnings:luftningen:luftningens:luftningar:luftningars:luftningarna:luftningarnas
+761166r3<substantiv>luftrenare:luftrenare:luftrenares:luftrenaren:luftrenarens:luftrenare:luftrenares:luftrenarna:luftrenarnas
+942352r4<substantiv>luftrot:luftrot:luftrots:luftroten:luftrotens:luftrötter:luftrötters:luftrötterna:luftrötternas
+COMPOUND(562172, 561217): luft + rot
+929023r4<substantiv>luftrum:luftrum:luftrums:luftrummet:luftrummets::::
+COMPOUND(562172, 571182): luft + rum
+851258r4<substantiv>lufträd:lufträd:lufträds:lufträden:lufträdens:lufträder:lufträders:lufträderna:lufträdernas
+COMPOUND(562172, 550426): luft + räd
+566574r3<adjektiv>lufträttslig:lufträttslig:lufträttsligt:lufträttsliga:lufträttsliga::::
+737283r5<substantiv>luftrör:luftrör:luftrörs:luftröret:luftrörets:luftrör:luftrörs:luftrören:luftrörens
+COMPOUND(562172, 552860): luft + rör
+CUSTOM: y y luftrörs
+737275r4<substantiv>luftrörskatarr:luftrörskatarr:luftrörskatarrs:luftrörskatarren:luftrörskatarrens:luftrörskatarrer:luftrörskatarrers:luftrörskatarrerna:luftrörskatarrernas
+COMPOUND(737283, 549511): luftrör + katarr
+937318r3<substantiv>luftskepp:luftskepp:luftskepps:luftskeppet:luftskeppets:luftskepp:luftskepps:luftskeppen:luftskeppens
+937032r4<substantiv>luftslott:luftslott:luftslotts:luftslottet:luftslottets:luftslott:luftslotts:luftslotten:luftslottens
+COMPOUND(562172, 552950): luft + slott
+681300r6<substantiv>luftsluss:luftsluss:luftsluss:luftslussen:luftslussens:luftslussar:luftslussars:luftslussarna:luftslussarnas
+COMPOUND(562172, 641185): luft + sluss
+799818r3<adjektiv>luftsmord:luftsmord:luftsmort:luftsmorda:luftsmorda::::
+801495r3<adjektiv>luftspridd:luftspridd:luftspritt:luftspridda:luftspridda::::
+982473r3<substantiv>luftsprång:luftsprång:luftsprångs:luftsprånget:luftsprångets:luftsprång:luftsprångs:luftsprången:luftsprångens
+658767r4<substantiv>luftström:luftström:luftströms:luftströmmen:luftströmmens:luftströmmar:luftströmmars:luftströmmarna:luftströmmarnas
+COMPOUND(562172, 619738): luft + ström
+851266r3<substantiv>luftsug:luftsug:luftsugs:luftsugen:luftsugens:luftsugar:luftsugars:luftsugarna:luftsugarnas
+693640r4<substantiv>lufttillförsel:lufttillförsel:lufttillförsels:lufttillförseln:lufttillförselns::::
+COMPOUND(562172, 672346): luft + tillförsel
+893324r4<adjektiv>lufttom:lufttom:lufttomt:lufttomma:lufttomma::::::::::::
+COMPOUND(562172, 557804): luft + tom
+859853r3<verb>lufttorka:lufttorka:lufttorkade:lufttorkat:lufttorkar:lufttorka:lufttorkas:lufttorkades:lufttorkats:lufttorkas:lufttorkad:lufttorkat:lufttorkade:lufttorkande:
+669429r3<substantiv>lufttrafikavgift:lufttrafikavgift:lufttrafikavgifts:lufttrafikavgiften:lufttrafikavgiftens:lufttrafikavgifter:lufttrafikavgifters:lufttrafikavgifterna:lufttrafikavgifternas
+607624r3<substantiv>lufttryck:lufttryck:lufttrycks:lufttrycket:lufttryckets:lufttryck:lufttrycks:lufttrycken:lufttryckens
+CUSTOM: y y lufttrycks
+609234r3<substantiv>lufttrycksmätare:lufttrycksmätare:lufttrycksmätares:lufttrycksmätaren:lufttrycksmätarens:lufttrycksmätare:lufttrycksmätares:lufttrycksmätarna:lufttrycksmätarnas
+CUSTOM: n n
+693642r4<adjektiv>lufttät:lufttät:lufttätt:lufttäta:lufttäta::::
+COMPOUND(562172, 563206): luft + tät
+853901r3<egennamn>Luftwaffe:Luftwaffe:Luftwaffes
+936784r4<substantiv>luftvapen:luftvapen:luftvapens:luftvapnet:luftvapnets:luftvapen:luftvapens:luftvapnen:luftvapnens
+COMPOUND(562172, 559381): luft + vapen
+854800r5<substantiv>luftväg:luftväg:luftvägs:luftvägen:luftvägens:luftvägar:luftvägars:luftvägarna:luftvägarnas
+CUSTOM: y n luftvägs
+854799r4<substantiv>luftvägsbesvär:luftvägsbesvär:luftvägsbesvärs:luftvägsbesväret:luftvägsbesvärets:luftvägsbesvär:luftvägsbesvärs:luftvägsbesvären:luftvägsbesvärens
+COMPOUND(854800, 552241): luftväg + besvär
+989401r4<substantiv>luftvägsepitel:luftvägsepitel:luftvägsepitels:luftvägsepitelet:luftvägsepitelets::::
+COMPOUND(854800, 976716): luftväg + epitel
+574318r3<adjektiv>luftvärdig:luftvärdig:luftvärdigt:luftvärdiga:luftvärdiga::::
+681309r5<substantiv>luftvärn:luftvärn:luftvärns:luftvärnet:luftvärnets:luftvärn:luftvärns:luftvärnen:luftvärnens
+COMPOUND(562172, 625041): luft + värn
+CUSTOM: y y luftvärns
+681316r4<substantiv>luftvärnspjäs:luftvärnspjäs:luftvärnspjäs:luftvärnspjäsen:luftvärnspjäsens:luftvärnspjäser:luftvärnspjäsers:luftvärnspjäserna:luftvärnspjäsernas
+COMPOUND(681309, 550204): luftvärn + pjäs
+711272r3<substantiv>luftvärnsskydd:luftvärnsskydd:luftvärnsskydds:luftvärnsskyddet:luftvärnsskyddets:luftvärnsskydd:luftvärnsskydds:luftvärnsskydden:luftvärnsskyddens
+551705r4<substantiv>lugg:lugg:luggs:luggen:luggens:luggar:luggars:luggarna:luggarnas
+754622r4<verb>lugga:lugga:luggade:luggat:luggar:lugga:luggas:luggades:luggats:luggas:luggad:luggat:luggade:luggande:
+574321r3<adjektiv>luggig:luggig:luggigt:luggiga:luggiga::::
+726241r3<adjektiv>luggsliten:luggsliten:luggslitet:luggslitna:luggslitna::::luggslitne
+563112r5<adjektiv>lugn:lugn:lugnt:lugna:lugna:lugnare:lugnast:lugnaste:lugne
+607630r8<substantiv>lugn:lugn:lugns:lugnet:lugnets:!:!:!:!
+687770r3<verb>lugna:lugna:lugnade:lugnat:lugnar:lugna:lugnas:lugnades:lugnats:lugnas:lugnad:lugnat:lugnade::
+687771r3<adjektiv>lugnande:lugnande:lugnande:lugnande:lugnande:!:!:!:
+982479r3<substantiv>lugnvatten:lugnvatten:lugnvattens:lugnvattnet:lugnvattnets::::
+763121r3<adjektiv>luguber:luguber:lugubert:lugubra:lugubra::::lugubre
+904119r4<verb>luka:luka:lukade:lukat:lukar:luka:lukas:lukades:lukats:lukas:lukad:lukat:lukade::
+DEFINITION 1: Rensa (ogräs)
+CUSTOM: n n y
+635800r3<egennamn>Lukas:Lukas:Lukas
+898560r3<egennamn>Lukasjenko:Lukasjenko:Lukasjenkos
+642759r3<adjektiv>lukrativ:lukrativ:lukrativt:lukrativa:lukrativa:lukrativare:lukrativast:lukrativaste:
+549966r8<substantiv>lukt:lukt:lukts:lukten:luktens:lukter:lukters:lukterna:lukternas
+CUSTOM: y y lukt
+585574r4<verb>lukta:lukta:luktade:luktat:luktar:lukta::::::::luktande:
+965049r4<substantiv>luktaster:luktaster:luktasters:luktastern:luktasterns:luktastrar:luktastrars:luktastrarna:luktastrarnas
+COMPOUND(549966, 616237): lukt + aster
+873628r4<substantiv>luktbekämpning:luktbekämpning:luktbekämpnings:luktbekämpningen:luktbekämpningens:luktbekämpningar:luktbekämpningars:luktbekämpningarna:luktbekämpningarnas
+COMPOUND(549966, 687712): lukt + bekämpning
+563971r3<adjektiv>luktfri:luktfri:luktfritt:luktfria:luktfria::::
+565043r3<adjektiv>luktlös:luktlös:luktlöst:luktlösa:luktlösa::::
+944948r4<substantiv>luktpion:luktpion:luktpions:luktpionen:luktpionens:luktpioner:luktpioners:luktpionerna:luktpionernas
+COMPOUND(549966, 628525): lukt + pion
+681317r4<substantiv>luktsinne:luktsinne:luktsinnes:luktsinnet:luktsinnets:luktsinnen:luktsinnens:luktsinnena:luktsinnenas
+COMPOUND(549966, 612810): lukt + sinne
+754628r3<substantiv>luktärt:luktärt:luktärts:luktärten:luktärtens:luktärter:luktärters:luktärterna:luktärternas
+581733r3<adjektiv>lukullisk:lukullisk:lukulliskt:lukulliska:lukulliska::::
+982483r3<substantiv>lulebo:lulebo:lulebos:lulebon:lulebons:lulebor:lulebors:luleborna:lulebornas
+CUSTOM: y n
+554303r4<egennamn>Luleå:Luleå:Luleås, Luleå
+CUSTOM: y n Luleå
+892510r3<substantiv>luleåbo:luleåbo:luleåbos:luleåbon:luleåbons:luleåbor:luleåbors:luleåborna:luleåbornas
+CUSTOM: y n n
+935361r3<interjektion>lull:lull
+CUSTOM: n n y
+693643r3<verb>lulla:lulla:lullade:lullat:lullar:lulla:::::::::
+566577r4<adjektiv>lullig:lullig:lulligt:lulliga:lulliga:lulligare:lulligast:lulligaste:lullige
+947731r3<substantiv>lullull:lullull:lullulls:lullullet:lullullets::::
+693644r3<substantiv>lumbago:lumbago:lumbagos:lumbagon:lumbagons::::
+982491r3<substantiv>lumbalkota:lumbalkota:lumbalkotas:lumbalkotan:lumbalkotans:lumbalkotor:lumbalkotors:lumbalkotorna:lumbalkotornas
+982499r3<substantiv>lumbalpunktion:lumbalpunktion:lumbalpunktions:lumbalpunktionen:lumbalpunktionens:lumbalpunktioner:lumbalpunktioners:lumbalpunktionerna:lumbalpunktionernas
+906469r3<substantiv>lumen:lumen:lumens:!:!:lumen:lumens:!:!
+CUSTOM: y n
+549968r3<substantiv>luminans:luminans:luminans:luminansen:luminansens:luminanser:luminansers:luminanserna:luminansernas
+871987r3<substantiv>luminiscens:luminiscens:luminiscens:luminiscensen:luminiscensens::::
+801087r3<adjektiv>luminiscerande:luminiscerande:luminiscerande:luminiscerande:luminiscerande:!:!:!:
+982507r3<substantiv>luminositet:luminositet:luminositets:luminositeten:luminositetens::::
+798310r3<adjektiv>luminös:luminös:luminöst:luminösa:luminösa::::
+757670r3<substantiv>lummerväxt:lummerväxt:lummerväxts:lummerväxten:lummerväxtens:lummerväxter:lummerväxters:lummerväxterna:lummerväxternas
+574324r4<adjektiv>lummig:lummig:lummigt:lummiga:lummiga:lummigare:lummigast:lummigaste:
+628330r3<substantiv>lump:lump:lumps:lumpen:lumpens:!:!:!:!
+628333r3<substantiv>lumpare:lumpare:lumpares:lumparen:lumparens:lumpare:lumpares:lumparna:lumparnas
+CUSTOM: y n n lumpar
+642760r4<adjektiv>lumpen:lumpen:lumpet:lumpna:lumpna:lumpnare:lumpnast:lumpnaste:lumpne
+687772r3<substantiv>lumpenhet:lumpenhet:lumpenhets:lumpenheten:lumpenhetens::::
+CUSTOM: y y lumpenhets
+574325r3<adjektiv>lumphaltig:lumphaltig:lumphaltigt:lumphaltiga:lumphaltiga::::
+574328r3<adjektiv>lumpig:lumpig:lumpigt:lumpiga:lumpiga::::
+982511r3<substantiv>lumpsamlare:lumpsamlare:lumpsamlares:lumpsamlaren:lumpsamlarens:lumpsamlare:lumpsamlares:lumpsamlarna:lumpsamlarnas
+581736r3<adjektiv>lunarisk:lunarisk:lunariskt:lunariska:lunariska::::
+854245r3<egennamn>Lunarstorm:Lunarstorm:Lunarstorms
+549969r9<substantiv>lunch:lunch:lunchs:lunchen:lunchens:luncher:lunchers:luncherna:lunchernas
+CUSTOM: y y lunch
+639001r6<verb>luncha:luncha:lunchade:lunchat:lunchar:luncha:lunchas:lunchades:lunchats:lunchas::::lunchande:
+893327r4<substantiv>lunchbar:lunchbar:lunchbars:lunchbaren:lunchbarens:lunchbarer:lunchbarers:lunchbarerna:lunchbarernas
+COMPOUND(549969, 557860): lunch + bar
+687792r3<adverb>lunchdags:lunchdags
+662960r6<substantiv>lunchdans:lunchdans:lunchdans:lunchdansen:lunchdansens:lunchdanser:lunchdansers:lunchdanserna:lunchdansernas
+COMPOUND(549969, 548569): lunch + dans
+754636r4<substantiv>lunchgäst:lunchgäst:lunchgästs:lunchgästen:lunchgästens:lunchgäster:lunchgästers:lunchgästerna:lunchgästernas
+COMPOUND(549969, 549188): lunch + gäst
+726245r4<substantiv>lunchrum:lunchrum:lunchrums:lunchrummet:lunchrummets:lunchrum:lunchrums:lunchrummen:lunchrummens
+COMPOUND(549969, 571182): lunch + rum
+799821r3<adjektiv>lunchstängd:lunchstängd:lunchstängt:lunchstängda:lunchstängda::::
+934303r4<substantiv>lunchtid:lunchtid:lunchtids:lunchtiden:lunchtidens:lunchtider:lunchtiders:lunchtiderna:lunchtidernas
+COMPOUND(549969, 550665): lunch + tid
+681319r3<substantiv>lunchätare:lunchätare:lunchätares:lunchätaren:lunchätarens:lunchätare:lunchätares:lunchätarna:lunchätarnas
+CUSTOM: y y lunchätar
+555923r4<substantiv>lund:lund:lunds:lunden:lundens:lundar:lundars:lundarna:lundarnas
+554304r3<egennamn>Lund:Lund:Lunds
+CUSTOM: y n Lunda Lund
+687773r3<substantiv>lundabo:lundabo:lundabos:lundabon:lundabons:lundabor:lundabors:lundaborna:lundabornas
+973072r3<egennamn>Lundahl:Lundahl:Lundahls
+982517r3<substantiv>lundastudent:lundastudent:lundastudents:lundastudenten:lundastudentens:lundastudenter:lundastudenters:lundastudenterna:lundastudenternas
+945891r3<egennamn>Lundbeck:Lundbeck:Lundbecks
+553484r3<egennamn>Lundberg:Lundberg:Lundbergs
+772962r3<egennamn>Lundblad:Lundblad:Lundblads
+719895r3<egennamn>Lundby:Lundby:Lundbys
+945927r3<egennamn>Lundbäck:Lundbäck:Lundbäcks
+CUSTOM: y n
+734968r3<egennamn>Lundell:Lundell:Lundells
+627389r3<substantiv>lundensare:lundensare:lundensares:lundensaren:lundensarens:lundensare:lundensares:lundensarna:lundensarnas
+CUSTOM: y y lundensar
+581739r4<adjektiv>lundensisk:lundensisk:lundensiskt:lundensiska:lundensiska::::lundensiske
+854631r3<egennamn>Lundgren:Lundgren:Lundgrens
+973080r3<egennamn>Lundh:Lundh:Lundhs
+973076r3<egennamn>Lundholm:Lundholm:Lundholms
+786162r3<egennamn>Lundin:Lundin:Lundins
+973548r3<egennamn>Lundin Mining:Lundin Mining:Lundin Minings
+553485r3<egennamn>Lundkvist:Lundkvist:Lundkvists
+553487r3<egennamn>Lundmark:Lundmark:Lundmarks
+973084r3<egennamn>Lundquist:Lundquist:Lundquists
+711031r3<egennamn>Lundqvist:Lundqvist:Lundqvists
+973088r3<egennamn>Lundstedt:Lundstedt:Lundstedts
+594653r3<substantiv>lundstjärnblomma:lundstjärnblomma:lundstjärnblommas:lundstjärnblomman:lundstjärnblommans:lundstjärnblommor:lundstjärnblommors:lundstjärnblommorna:lundstjärnblommornas
+711700r3<egennamn>Lundström:Lundström:Lundströms
+784170r3<egennamn>Lundvall:Lundvall:Lundvalls
+594662r6<substantiv>lunga:lunga:lungas:lungan:lungans:lungor:lungors:lungorna:lungornas
+CUSTOM: y y lung
+801088r3<adjektiv>lungandande:lungandande:lungandande:lungandande:lungandande:!:!:!:
+730793r4<substantiv>lungartär:lungartär:lungartärs:lungartären:lungartärens:lungartärer:lungartärers:lungartärerna:lungartärernas
+COMPOUND(594662, 548247): lunga + artär
+642761r4<substantiv>lungcancer:lungcancer:lungcancers:lungcancern:lungcancerns::::
+COMPOUND(594662, 626940): lunga + cancer
+602702r3<substantiv>lunginflammation:lunginflammation:lunginflammations:lunginflammationen:lunginflammationens:lunginflammationer:lunginflammationers:lunginflammationerna:lunginflammationernas
+CUSTOM: y y lunginflammations
+851274r3<substantiv>lunglob:lunglob:lunglobs:lungloben:lunglobens:lunglober:lunglobers:lungloberna:lunglobernas
+851282r3<substantiv>lungmos:lungmos:lungmos:lungmoset:lungmosets::::
+574331r4<adjektiv>lungsiktig:lungsiktig:lungsiktigt:lungsiktiga:lungsiktiga::::lungsiktige
+642765r3<substantiv>lungsot:lungsot:lungsots:lungsoten:lungsotens::::
+642767r3<substantiv>lungsäck:lungsäck:lungsäcks:lungsäcken:lungsäckens:lungsäckar:lungsäckars:lungsäckarna:lungsäckarnas
+871999r3<substantiv>lungsäcksinflammation:lungsäcksinflammation:lungsäcksinflammations:lungsäcksinflammationen:lungsäcksinflammationens:lungsäcksinflammationer:lungsäcksinflammationers:lungsäcksinflammationerna:lungsäcksinflammationernas
+952085r4<substantiv>lungödem:lungödem:lungödems:lungödemet:lungödemets:lungödem:lungödems:lungödemen:lungödemens
+COMPOUND(594662, 553165): lunga + ödem
+931632r3<substantiv>lungört:lungört:lungörts:lungörten:lungörtens:lungörter:lungörters:lungörterna:lungörternas
+642775r10<substantiv>lunk:lunk:lunks:lunken:lunkens::::
+CUSTOM: y n !lunks
+642779r4<verb>lunka:lunka:lunkade:lunkat:lunkar:lunka::::::::lunkande:
+872007r3<substantiv>lunnefågel:lunnefågel:lunnefågels:lunnefågeln:lunnefågelns:lunnefåglar:lunnefåglars:lunnefåglarna:lunnefåglarnas
+628349r3<substantiv>luns:luns:luns:lunsen:lunsens:lunsar:lunsars:lunsarna:lunsarnas
+CUSTOM: y n
+574334r4<adjektiv>lunsig:lunsig:lunsigt:lunsiga:lunsiga::::lunsige
+620996r3<substantiv>lunta:lunta:luntas:luntan:luntans:luntor:luntors:luntorna:luntornas
+872016r3<substantiv>luntlås:luntlås:luntlås:luntlåset:luntlåsets:luntlås:luntlås:luntlåsen:luntlåsens
+872021r3<substantiv>lupin:lupin:lupins:lupinen:lupinens:lupiner:lupiners:lupinerna:lupinernas
+551707r4<substantiv>lupp:lupp:lupps:luppen:luppens:luppar:luppars:lupparna:lupparnas
+551709r5<substantiv>lur:lur:lurs:luren:lurens:lurar:lurars:lurarna:lurarnas
+547306r6<verb>lura:lura:lurade:lurat:lurar:lura:luras:lurades:lurats:luras:lurad:lurat:lurade:lurande:
+642780r3<deponens>luras:luras:lurades:lurats:luras:luras
+615367r3<substantiv>lurendrejare:lurendrejare:lurendrejares:lurendrejaren:lurendrejarens:lurendrejare:lurendrejares:lurendrejarna:lurendrejarnas
+CUSTOM: y y lurendrejar
+642781r4<substantiv>lurendrejeri:lurendrejeri:lurendrejeris:lurendrejeriet:lurendrejeriets:lurendrejerier:lurendrejeriers:lurendrejerierna:lurendrejeriernas
+551710r3<substantiv>lurifax:lurifax:lurifax:lurifaxen:lurifaxens:lurifaxar:lurifaxars:lurifaxarna:lurifaxarnas
+574337r4<adjektiv>lurig:lurig:lurigt:luriga:luriga:lurigare:lurigast:lurigaste:lurige
+754645r3<substantiv>luring:luring:lurings:luringen:luringens:luringar:luringars:luringarna:luringarnas
+642785r3<substantiv>lurk:lurk:lurks:lurken:lurkens:lurkar:lurkars:lurkarna:lurkarnas
+CUSTOM: y n
+642793r4<verb>lurpassa:lurpassa:lurpassade:lurpassat:lurpassar:lurpassa:lurpassas:lurpassades:lurpassats:lurpassas::::lurpassande:
+624541r3<adjektiv>lurt:!:lurt:!:!:!:!:!:!
+574341r4<adjektiv>lurvig:lurvig:lurvigt:lurviga:lurviga:lurvigare:lurvigast:lurvigaste:lurvige
+560155r11<substantiv>lus:lus:lus:lusen:lusens:löss:löss:lössen:lössens
+CUSTOM: y n
+560156r3<verb>lusa:lusa:lusade:lusat:lusar:lusa:lusas:lusades:lusats:lusas:::::
+916425r4<substantiv>lusbett:lusbett:lusbetts:lusbettet:lusbettets:lusbett:lusbetts:lusbetten:lusbettens
+COMPOUND(560155, 552243): lus + bett
+955092r3<substantiv>lusekofta:lusekofta:lusekoftas:lusekoftan:lusekoftans:lusekoftor:lusekoftors:lusekoftorna:lusekoftornas
+574344r4<adjektiv>lusfattig:lusfattig:lusfattigt:lusfattiga:lusfattiga::::lusfattige
+574347r3<adjektiv>lusig:lusig:lusigt:lusiga:lusiga::::
+CUSTOM: y n
+560163r3<verb>luska:luska:luskade:luskat:luskar:luska:::::::::
+889824r4<substantiv>luskam:luskam:luskams:luskammen:luskammens:luskammar:luskammars:luskammarna:luskammarnas
+COMPOUND(560155, 559656): lus + kam
+872042r3<substantiv>luskung:luskung:luskungs:luskungen:luskungens:luskungar:luskungars:luskungarna:luskungarnas
+560167r6<verb>lusläsa:lusläsa:lusläste:lusläst:lusläser:lusläs:lusläsas:luslästes:luslästs:lusläses:lusläst:lusläst:luslästa:lusläsande:
+560170r3<adjektiv>luspank:luspank:luspankt:luspanka:luspanka::::luspanke
+642797r3<verb>lussa:lussa:lussade:lussat:lussar:lussa:::::::::
+873059r4<substantiv>lusschampo:lusschampo:lusschampos:lusschampot:lusschampots:lusschampon:lusschampons:lusschampona:lusschamponas
+COMPOUND(560155, 612789): lus + schampo
+916433r3<substantiv>lussebulle:lussebulle:lussebulles:lussebullen:lussebullens:lussebullar:lussebullars:lussebullarna:lussebullarnas
+872052r3<substantiv>lussefest:lussefest:lussefests:lussefesten:lussefestens:lussefester:lussefesters:lussefesterna:lussefesternas
+642801r3<substantiv>lussekatt:lussekatt:lussekatts:lussekatten:lussekattens:lussekatter:lussekatters:lussekatterna:lussekatternas
+560172r9<substantiv>lust:lust:lusts:lusten:lustens:lustar:lustars:lustarna:lustarnas
+CUSTOM: y y lust
+560174r7<substantiv>lusta:lusta:lustas:lustan:lustans:lustar:lustars:lustarna:lustarnas
+872060r3<substantiv>lustbarhet:lustbarhet:lustbarhets:lustbarheten:lustbarhetens:lustbarheter:lustbarheters:lustbarheterna:lustbarheternas
+792983r3<adjektiv>lustbetonad:lustbetonad:lustbetonat:lustbetonade:lustbetonade:!:!:!:
+566580r3<adjektiv>lustelig:lustelig:lusteligt:lusteliga:lusteliga::::
+642809r3<adjektiv>lustfylld:lustfylld:lustfyllt:lustfyllda:lustfyllda::::
+642812r4<substantiv>lustgas:lustgas:lustgas:lustgasen:lustgasens:lustgaser:lustgasers:lustgaserna:lustgasernas
+642815r5<substantiv>lustgård:lustgård:lustgårds:lustgården:lustgårdens:lustgårdar:lustgårdars:lustgårdarna:lustgårdarnas
+COMPOUND(560172, 551337): lust + gård
+642816r3<substantiv>lusthus:lusthus:lusthus:lusthuset:lusthusets:lusthus:lusthus:lusthusen:lusthusens
+642821r3<substantiv>lustifikation:lustifikation:lustifikations:lustifikationen:lustifikationens:lustifikationer:lustifikationers:lustifikationerna:lustifikationernas
+CUSTOM: y y lustifikations
+555550r5<adjektiv>lustig:lustig:lustigt:lustiga:lustiga:lustigare:lustigast:lustigaste:lustige
+687775r3<substantiv>lustighet:lustighet:lustighets:lustigheten:lustighetens:lustigheter:lustigheters:lustigheterna:lustigheternas
+CUSTOM: y y lustighets
+642829r3<substantiv>lustigkurre:lustigkurre:lustigkurres:lustigkurren:lustigkurrens:lustigkurrar:lustigkurrars:lustigkurrarna:lustigkurrarnas
+642837r3<substantiv>lustjakt:lustjakt:lustjakts:lustjakten:lustjaktens:lustjakter:lustjakters:lustjakterna:lustjakternas
+642845r3<substantiv>lustkänsla:lustkänsla:lustkänslas:lustkänslan:lustkänslans:lustkänslor:lustkänslors:lustkänslorna:lustkänslornas
+642861r3<substantiv>lustmord:lustmord:lustmords:lustmordet:lustmordets:lustmord:lustmords:lustmorden:lustmordens
+642862r3<verb>lustmörda:lustmörda:lustmördade:lustmördat:lustmördar:lustmörda:lustmördas:lustmördades:lustmördats:lustmördas:lustmördad:lustmördat:lustmördade::
+615368r3<substantiv>lustmördare:lustmördare:lustmördares:lustmördaren:lustmördarens:lustmördare:lustmördares:lustmördarna:lustmördarnas
+CUSTOM: y y lustmördar
+642870r3<substantiv>lustspel:lustspel:lustspels:lustspelet:lustspelets:lustspel:lustspels:lustspelen:lustspelens
+824141r3<substantiv>lusttur:lusttur:lustturs:lustturen:lustturens:lustturer:lustturers:lustturerna:lustturernas
+560176r3<substantiv>lut:lut:luts:lutet:lutets:lut:luts:luten:lutens
+547307r6<verb>luta:luta:lutade:lutat:lutar:luta:lutas:lutades:lutats:lutas:lutad:lutat:lutade:lutande:
+556573r4<substantiv>luta:luta:lutas:lutan:lutans:lutor:lutors:lutorna:lutornas
+CUSTOM: y n
+687777r3<adjektiv>lutande:lutande:lutande:lutande:lutande:!:!:!:
+574350r3<adjektiv>lutbeständig:lutbeständig:lutbeständigt:lutbeständiga:lutbeständiga::::
+954457r3<substantiv>lutenist:lutenist:lutenists:lutenisten:lutenistens:lutenister:lutenisters:lutenisterna:lutenisternas
+723477r3<substantiv>lutetium:lutetium:lutetiums:lutetiumet:lutetiumets::::
+642876r3<substantiv>lutfisk:lutfisk:lutfisks:lutfisken:lutfiskens:lutfiskar:lutfiskars:lutfiskarna:lutfiskarnas
+560182r3<egennamn>Luther:Luther:Luthers
+642884r3<substantiv>lutheran:lutheran:lutherans:lutheranen:lutheranens:lutheraner:lutheraners:lutheranerna:lutheranernas
+982525r3<substantiv>lutheranism:lutheranism:lutheranisms:lutheranismen:lutheranismens::::
+956735r3<adjektiv>lutheransk:lutheransk:lutheranskt:lutheranska:lutheranska::::lutheranske::::::::
+982529r3<substantiv>lutherdom:lutherdom:lutherdoms:lutherdomen:lutherdomens::::
+642892r3<adjektiv>luthersk:luthersk:lutherskt:lutherska:lutherska:!:!:!:lutherske
+860448r4<substantiv>lutinstrument:lutinstrument:lutinstruments:lutinstrumentet:lutinstrumentets:lutinstrument:lutinstruments:lutinstrumenten:lutinstrumentens
+COMPOUND(556573, 552518): luta + instrument
+633767r6<substantiv>lutning:lutning:lutnings:lutningen:lutningens:lutningar:lutningars:lutningarna:lutningarnas
+CUSTOM: y y lutnings +lutnings
+633776r4<substantiv>lutningsstreck:lutningsstreck:lutningsstrecks:lutningsstrecket:lutningsstreckets:lutningsstreck:lutningsstrecks:lutningsstrecken:lutningsstreckens
+COMPOUND(633767, 552988): lutning + streck
+801089r3<adjektiv>lutspelande:lutspelande:lutspelande:lutspelande:lutspelande:!:!:!:
+CUSTOM: y n
+982533r3<substantiv>lutspelare:lutspelare:lutspelares:lutspelaren:lutspelarens:lutspelare:lutspelares:lutspelarna:lutspelarnas
+CUSTOM: y n
+982539r3<substantiv>lutsångare:lutsångare:lutsångares:lutsångaren:lutsångarens:lutsångare:lutsångares:lutsångarna:lutsångarnas
+737669r3<verb>luttra:luttra:luttrade:luttrat:luttrar:luttra:luttras:luttrades:luttrats:luttras:luttrad:luttrat:luttrade:luttrande:
+640312r3<adjektiv>luttrad:luttrad:luttrat:luttrade:luttrade:!:!:!:
+738245r3<substantiv>luttring:luttring:luttrings:luttringen:luttringens:luttringar:luttringars:luttringarna:luttringarnas
+560192r5<substantiv>luva:luva:luvas:luvan:luvans:luvor:luvors:luvorna:luvornas
+CUSTOM: y y
+560184r12<substantiv>luven:::luven:::::
+628769r7<substantiv>luvtröja:luvtröja:luvtröjas:luvtröjan:luvtröjans:luvtröjor:luvtröjors:luvtröjorna:luvtröjornas
+COMPOUND(560192, 595624): luva + tröja
+693646r3<substantiv>lux:lux:!:!:!:!:!:!:!
+982545r3<substantiv>luxation:luxation:luxations:luxationen:luxationens:luxationer:luxationers:luxationerna:luxationernas
+554074r3<egennamn>Luxemburg:Luxemburg:Luxemburgs
+CUSTOM: y n Luxemburgs
+872068r3<substantiv>luxemburgare:luxemburgare:luxemburgares:luxemburgaren:luxemburgarens:luxemburgare:luxemburgares:luxemburgarna:luxemburgarnas
+754662r3<adjektiv>luxemburgsk:luxemburgsk:luxemburgskt:luxemburgska:luxemburgska:!:!:!:luxemburgske
+754654r3<substantiv>luxemburgska:luxemburgska:luxemburgskas:luxemburgskan:luxemburgskans:luxemburgskor:luxemburgskors:luxemburgskorna:luxemburgskornas
+553266r3<egennamn>Luxor:Luxor:Luxors
+642894r4<adjektiv>luxuös:luxuös:luxuöst:luxuösa:luxuösa:luxuösare:luxuösast:luxuösaste:
+634810r3<substantiv>ly:ly:lys:lyet:lyets::::
+560205r3<substantiv>lya:lya:lyas:lyan:lyans:lyor:lyors:lyorna:lyornas
+547308r8<verb>lycka:lycka:lyckte:lyckt:lycker:lyck:lyckas:lycktes:lyckts:lyckes:lyckt:lyckt:lyckta:lyckande:
+CUSTOM: y n
+591613r9<substantiv>lycka:lycka:lyckas:lyckan:lyckans:!:!:!:!
+CUSTOM: y y lyck lycko
+560201r3<adjektiv>lyckad:lyckad:lyckat:lyckade:lyckade::::
+591727r3<deponens>lyckas:lyckas:lyckades:lyckats:lyckas:
+560213r4<adjektiv>lycklig:lycklig:lyckligt:lyckliga:lyckliga:lyckligare:lyckligast:lyckligaste:lycklige::::::::
+620630r3<adverb>lyckligen:lyckligen
+962242r4<verb>lyckliggöra:lyckliggöra:lyckliggjorde:lyckliggjort:lyckliggör:lyckliggör:lyckliggöras:lyckliggjordes:lyckliggjorts:lyckliggörs, lyckliggöres:lyckliggjord:lyckliggjort:lyckliggjorda:lyckliggörande:
+COMPOUND(560213, 555241): lycklig + göra
+620631r3<adverb>lyckligtvis:lyckligtvis
+801090r3<adjektiv>lyckobringande:lyckobringande:lyckobringande:lyckobringande:lyckobringande:!:!:!:
+642897r3<substantiv>lyckokast:lyckokast:lyckokasts:lyckokastet:lyckokastets:lyckokast:lyckokasts:lyckokasten:lyckokastens
+623312r5<substantiv>lyckopiller:lyckopiller:lyckopillers:lyckopillret:lyckopillrets:lyckopiller:lyckopillers:lyckopillren, lyckopillerna:lyckopillrens, lyckopillernas
+COMPOUND(591613, 623318): lycka + piller
+952092r4<substantiv>lyckopirr:lyckopirr:lyckopirrs:lyckopirret:lyckopirrets::::
+COMPOUND(591613, 938353): lycka + pirr
+620997r4<substantiv>lyckorus:lyckorus:lyckorus:lyckoruset:lyckorusets:lyckorus:lyckorus:lyckorusen:lyckorusens
+560214r3<adjektiv>lyckosam:lyckosam:lyckosamt:lyckosamma:lyckosamma:lyckosammare:lyckosammast:lyckosammaste:
+805859r3<substantiv>lyckost:lyckost:lyckosts:lyckosten:lyckostens:lyckostar:lyckostars:lyckostarna:lyckostarnas
+761880r4<substantiv>lyckotal:lyckotal:lyckotals:lyckotalet:lyckotalets:lyckotal:lyckotals:lyckotalen:lyckotalens
+COMPOUND(591613, 553029): lycka + tal
+566583r4<adjektiv>lycksalig:lycksalig:lycksaligt:lycksaliga:lycksaliga:lycksaligare:lycksaligast:lycksaligaste:lycksalige::::::::
+681325r4<substantiv>lycksalighet:lycksalighet:lycksalighets:lycksaligheten:lycksalighetens:lycksaligheter:lycksaligheters:lycksaligheterna:lycksaligheternas
+COMPOUND(591613, 663872): lycka + salighet
+CUSTOM: y y lycksalighets
+554306r4<egennamn>Lycksele:Lycksele:Lyckseles, Lycksele
+CUSTOM: y n Lycksele
+615369r3<substantiv>lycksökare:lycksökare:lycksökares:lycksökaren:lycksökarens:lycksökare:lycksökares:lycksökarna:lycksökarnas
+CUSTOM: y y lycksökar
+642903r3<substantiv>lycksökerska:lycksökerska:lycksökerskas:lycksökerskan:lycksökerskans:lycksökerskor:lycksökerskors:lycksökerskorna:lycksökerskornas
+642911r3<substantiv>lyckträff:lyckträff:lyckträffs:lyckträffen:lyckträffens:lyckträffar:lyckträffars:lyckträffarna:lyckträffarnas
+585575r4<verb>lyckönska:lyckönska:lyckönskade:lyckönskat:lyckönskar:lyckönska::::::::lyckönskande:
+620998r3<substantiv>lyckönskan:lyckönskan:lyckönskans:lyckönskan:lyckönskans:!:!:!:!
+621000r3<substantiv>lyckönskning:lyckönskning:lyckönsknings:lyckönskningen:lyckönskningens:lyckönskningar:lyckönskningars:lyckönskningarna:lyckönskningarnas
+CUSTOM: y y lyckönsknings
+560204r7<verb>lyda:lyda:lydde, löd:lytt:lyder:lyd:lydas:lyddes:lytts:lyds::::lydande:
+574353r4<adjektiv>lydaktig:lydaktig:lydaktigt:lydaktiga:lydaktiga::::lydaktige
+618751r3<substantiv>lydelse:lydelse:lydelses:lydelsen:lydelsens:lydelser:lydelsers:lydelserna:lydelsernas
+CUSTOM: y y lydelse
+872129r3<substantiv>lydfolk:lydfolk:lydfolks:lydfolket:lydfolkets:lydfolk:lydfolks:lydfolken:lydfolkens
+CUSTOM: y n
+982553r3<substantiv>lydfurste:lydfurste:lydfurstes:lydfursten:lydfurstens:lydfurstar:lydfurstars:lydfurstarna:lydfurstarnas
+CUSTOM: y n
+972103r3<egennamn>Lydia:Lydia:Lydias
+574356r5<adjektiv>lydig:lydig:lydigt:lydiga:lydiga:lydigare:lydigast:lydigaste:lydige
+581742r3<adjektiv>lydisk:lydisk:lydiskt:lydiska:lydiska::::
+CUSTOM: y n
+872135r3<substantiv>lydkonung:lydkonung:lydkonungs:lydkonungen:lydkonungens:lydkonungar:lydkonungars:lydkonungarna:lydkonungarnas
+CUSTOM: y n
+982561r3<substantiv>lydkung:lydkung:lydkungs:lydkungen:lydkungens:lydkungar:lydkungars:lydkungarna:lydkungarnas
+CUSTOM: y n
+618752r4<substantiv>lydnad:lydnad:lydnads:lydnaden:lydnadens::::
+CUSTOM: y y lydnads
+757678r3<substantiv>lydnadsbrott::::::::
+COMPOUND(618752, 552275): lydnad + brott
+618753r3<substantiv>lydnadsplikt:lydnadsplikt:lydnadsplikts:lydnadsplikten:lydnadspliktens::::
+958502r4<substantiv>lydrike:lydrike:lydrikes:lydriket:lydrikets:lydriken:lydrikens:lydrikena:lydrikenas
+COMPOUND(560204, 619401): lyda + rike
+CUSTOM: y n
+872143r3<substantiv>lydstat:lydstat:lydstats:lydstaten:lydstatens:lydstater:lydstaters:lydstaterna:lydstaternas
+618757r6<substantiv>lyft:lyft:lyfts:lyftet:lyftets:lyft:lyfts:lyften:lyftens
+CUSTOM: y y lyft
+593243r6<verb>lyfta:lyfta:lyfte:lyft:lyfter:lyft:lyftas:lyftes:lyfts:lyfts:lyft:lyft:lyfta:lyftande:
+709525r4<substantiv>lyftare:lyftare:lyftares:lyftaren:lyftarens:lyftare:lyftares:lyftarna:lyftarnas
+676752r4<substantiv>lyftarm:lyftarm:lyftarms:lyftarmen:lyftarmens:lyftarmar:lyftarmars:lyftarmarna:lyftarmarnas
+COMPOUND(618757, 550842): lyft + arm
+569372r3<adjektiv>lyftbar:lyftbar:lyftbart:lyftbara:lyftbara::::
+851285r3<substantiv>lyftdon:lyftdon:lyftdons:lyftdonet:lyftdonets:lyftdon:lyftdons:lyftdonen:lyftdonens
+642919r3<substantiv>lyftkran:lyftkran:lyftkrans:lyftkranen:lyftkranens:lyftkranar:lyftkranars:lyftkranarna:lyftkranarnas
+707220r4<substantiv>lyftning:lyftning:lyftnings:lyftningen:lyftningens:lyftningar:lyftningars:lyftningarna:lyftningarnas
+642927r4<adjektiv>lyhörd:lyhörd:lyhört:lyhörda:lyhörda:lyhördare:lyhördast:lyhördaste:lyhörde
+642928r3<substantiv>lyhördhet:lyhördhet:lyhördhets:lyhördheten:lyhördhetens::::
+CUSTOM: y y lyhördhets
+990019r3<egennamn>Lykke:Lykke:Lykkes
+585579r3<verb>lykta:lykta:lyktade:lyktat:lyktar:lykta:::::::::
+594664r5<substantiv>lykta:lykta:lyktas:lyktan:lyktans:lyktor:lyktors:lyktorna:lyktornas
+872155r3<substantiv>lyktbärare:lyktbärare:lyktbärares:lyktbäraren:lyktbärarens:lyktbärare:lyktbärares:lyktbärarna:lyktbärarnas
+962254r4<substantiv>lyktglas:lyktglas:lyktglas:lyktglaset:lyktglasets:lyktglas:lyktglas:lyktglasen:lyktglasens
+COMPOUND(594664, 552440): lykta + glas
+872161r3<substantiv>lyktgubbe:lyktgubbe:lyktgubbes:lyktgubben:lyktgubbens:lyktgubbar:lyktgubbars:lyktgubbarna:lyktgubbarnas
+599873r3<substantiv>lyktstolpe:lyktstolpe:lyktstolpes:lyktstolpen:lyktstolpens:lyktstolpar:lyktstolpars:lyktstolparna:lyktstolparnas
+621001r3<substantiv>lymfa:lymfa:lymfas:lymfan:lymfans::::
+581745r3<adjektiv>lymfatisk:lymfatisk:lymfatiskt:lymfatiska:lymfatiska::::
+872169r3<substantiv>lymfkärl:lymfkärl:lymfkärls:lymfkärlet:lymfkärlets:lymfkärl:lymfkärls:lymfkärlen:lymfkärlens
+642932r3<substantiv>lymfkörtel:lymfkörtel:lymfkörtels:lymfkörteln:lymfkörtelns:lymfkörtlar:lymfkörtlars:lymfkörtlarna:lymfkörtlarnas
+CUSTOM: y y lymfkörtel
+714668r4<substantiv>lymfocyt:lymfocyt:lymfocyts:lymfocyten:lymfocytens:lymfocyter:lymfocyters:lymfocyterna:lymfocyternas
+BASEWORDS: lymfocyt
+982569r3<substantiv>lymfsystem:lymfsystem:lymfsystems:lymfsystemet:lymfsystemets:lymfsystem:lymfsystems:lymfsystemen:lymfsystemens
+621003r3<substantiv>lymmel:lymmel:lymmels:lymmeln:lymmelns:lymlar:lymlars:lymlarna:lymlarnas
+574357r4<adjektiv>lymmelaktig:lymmelaktig:lymmelaktigt:lymmelaktiga:lymmelaktiga::::lymmelaktige
+627219r4<verb>lyncha:lyncha:lynchade:lynchat:lynchar:lyncha:lynchas:lynchades:lynchats:lynchas:lynchad:lynchat:lynchade:lynchande:
+627236r4<substantiv>lynchmobb:lynchmobb:lynchmobbs:lynchmobben:lynchmobbens:lynchmobbar:lynchmobbars:lynchmobbarna:lynchmobbarnas
+627227r3<substantiv>lynchning:lynchning:lynchnings:lynchningen:lynchningens:lynchningar:lynchningars:lynchningarna:lynchningarnas
+CUSTOM: y y lynchnings
+627245r3<substanti

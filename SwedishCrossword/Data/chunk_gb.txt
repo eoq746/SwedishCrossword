@@ -1,0 +1,555 @@
+746398r3<substantiv>smussel:smussel:smussels:smusslet:smusslets:!:!:!:!
+746402r4<verb>smussla:smussla:smusslade:smusslat:smusslar:smussla:smusslas:smusslades:smusslats:smusslas::::smusslande:
+626382r11<substantiv>smuts:smuts:smuts:smutsen:smutsens:!:!:!:!
+CUSTOM: y y smuts
+585695r4<verb>smutsa:smutsa:smutsade:smutsat:smutsar:smutsa:smutsas:smutsades:smutsats:smutsas:::::
+667130r3<adjektiv>smutsbrun:smutsbrun:smutsbrunt:smutsbruna:smutsbruna:!:!:!:
+667133r4<substantiv>smutsfläck:smutsfläck:smutsfläcks:smutsfläcken:smutsfläckens:smutsfläckar:smutsfläckars:smutsfläckarna:smutsfläckarnas
+COMPOUND(626382, 551169): smuts + fläck
+795000r3<adjektiv>smutsfläckad:smutsfläckad:smutsfläckat:smutsfläckade:smutsfläckade:!:!:!:
+667141r4<adjektiv>smutsfärgad:smutsfärgad:smutsfärgat:smutsfärgade:smutsfärgade:!:!:!:!
+COMPOUND(626382, 562214): smuts + färgad
+667144r4<substantiv>smutsgris:smutsgris:smutsgris:smutsgrisen:smutsgrisens:smutsgrisar:smutsgrisars:smutsgrisarna:smutsgrisarnas
+COMPOUND(626382, 598309): smuts + gris
+667151r4<adjektiv>smutsgrå:smutsgrå:smutsgrått:smutsgråa:smutsgråa:!:!:!:!
+COMPOUND(626382, 558947): smuts + grå
+667154r4<adjektiv>smutsgul:smutsgul:smutsgult:smutsgula:smutsgula:!:!:!:!
+COMPOUND(626382, 555723): smuts + gul
+846875r3<substantiv>smutsgöra:smutsgöra:smutsgöras:smutsgörat:smutsgörats::::
+576548r3<adjektiv>smutshaltig:smutshaltig:smutshaltigt:smutshaltiga:smutshaltiga::::
+563170r4<adjektiv>smutsig:smutsig:smutsigt:smutsiga:smutsiga:smutsigare:smutsigast:smutsigaste:smutsige
+887090r3<substantiv>smutsighet:smutsighet:smutsighets:smutsigheten:smutsighetens:smutsigheter:smutsigheters:smutsigheterna:smutsigheternas
+667158r3<verb>smutskasta:smutskasta:smutskastade:smutskastat:smutskastar:smutskasta:smutskastas:smutskastades:smutskastats:smutskastas:smutskastad:smutskastat:smutskastade::
+667166r3<substantiv>smutskastning:smutskastning:smutskastnings:smutskastningen:smutskastningens::::
+CUSTOM: y y smutskastnings
+667168r4<substantiv>smutskläder:!:!:!:!:smutskläder:smutskläders:smutskläderna:smutsklädernas
+COMPOUND(626382, 604465): smuts + kläder
+667172r4<substantiv>smutstvätt:smutstvätt:smutstvätts:smutstvätten:smutstvättens:!:!:!:!
+COMPOUND(626382, 599073): smuts + tvätt
+667176r4<substantiv>smutsvatten:smutsvatten:smutsvattens:smutsvattnet:smutsvattnets:!:!:!:!
+COMPOUND(626382, 555162): smuts + vatten
+884889r3<adjektiv>smutsvit:smutsvit:smutsvitt:smutsvita:smutsvita::::::::::::
+895581r3<substantiv>smutt:smutt:smutts:smutten:smuttens:smuttar:smuttars:smuttarna:smuttarnas
+667180r4<verb>smutta:smutta:smuttade:smuttat:smuttar:smutta:smuttas:smuttades:smuttats:smuttas:smuttad:smuttat:smuttade:smuttande:!
+887098r3<substantiv>smuttning:smuttning:smuttnings:smuttningen:smuttningens:smuttningar:smuttningars:smuttningarna:smuttningarnas
+547712r4<verb>smycka:smycka:smyckade:smyckat:smyckar:smycka:smyckas:smyckades:smyckats:smyckas:smyckad:smyckat:smyckade::
+612849r5<substantiv>smycke:smycke:smyckes:smycket:smyckets:smycken:smyckens:smyckena:smyckenas
+CUSTOM: y y smycke
+746409r4<substantiv>smyckeskrin:smyckeskrin:smyckeskrins:smyckeskrinet:smyckeskrinets:smyckeskrin:smyckeskrins:smyckeskrinen:smyckeskrinens
+COMPOUND(612849, 552930): smycke + skrin
+918707r4<substantiv>smyckesrån:smyckesrån:smyckesråns:smyckesrånet:smyckesrånets:smyckesrån:smyckesråns:smyckesrånen:smyckesrånens
+COMPOUND(612849, 552856): smycke + rån
+597647r13<substantiv>smyg:smyg:smygs:smygen:smygens:smygar:smygars:smygarna:smygarnas
+CUSTOM: y y smyg
+593374r9<verb>smyga:smyga:smög:smugit:smyger:smyg:smygas:smögs:smugits:smygs:!:!:!:smygande:
+BASEWORDS: smyg
+CUSTOM: y n smyg
+696972r3<substantiv>smygande:smygande:smygandes:smygandet:smygandets::::
+737814r3<substantiv>smygare:smygare:smygares:smygaren:smygarens:smygare:smygares:smygarna:smygarnas
+924263r10<verb>smygdejta:smygdejta:smygdejtade:smygdejtat:smygdejtar:smygdejta:smygdejtas:smygdejtades:smygdejtats:smygdejtas:smygdejtad:smygdejtat:smygdejtade:smygdejtande:
+COMPOUND(593374, 625193): smyga + dejta
+724976r4<substantiv>smyghandel:smyghandel:smyghandels:smyghandeln:smyghandelns::::
+COMPOUND(597647, 638241): smyg + handel
+846880r4<verb>smyghöja:smyghöja:smyghöjde:smyghöjt:smyghöjer:smyghöj:smyghöjas:smyghöjdes:smyghöjts:smyghöjs, smyghöjes:smyghöjd:smyghöjt:smyghöjda:smyghöjande:
+COMPOUND(597647, 559565): smyg + höja
+965173r4<verb>smyginviga:smyginviga:smyginvigde:smyginvigt:smyginviger:smyginvig:smyginvigas:smyginvigdes:smyginvigts:smyginvigs, smyginviges:smyginvigd:smyginvigt:smyginvigda:smyginvigande:
+COMPOUND(597647, 618365): smyg + inviga
+591109r3<verb>smygkontorisera:smygkontorisera:smygkontoriserade:smygkontoriserat:smygkontoriserar:smygkontorisera:::::::::
+588023r3<verb>smygkopiera:smygkopiera:smygkopierade:smygkopierat:smygkopierar:smygkopiera:::::::::
+952952r4<verb>smygköra:smygköra:smygkörde:smygkört:smygkör:smygkör:smygköras:smygkördes:smygkörts:smygkörs, smygköres:smygkörd:smygkört:smygkörda:smygkörande:
+COMPOUND(597647, 556899): smyg + köra
+800328r3<adjektiv>smygkörd:smygkörd:smygkört:smygkörda:smygkörda::::
+893810r4<verb>smygläsa:smygläsa:smygläste:smygläst:smygläser:smygläs:smygläsas:smyglästes:smyglästs:smygläses:smygläst:smygläst:smyglästa:smygläsande:
+COMPOUND(593374, 556182): smyga + läsa
+737239r4<substantiv>smygrasist:smygrasist:smygrasists:smygrasisten:smygrasistens:smygrasister:smygrasisters:smygrasisterna:smygrasisternas
+COMPOUND(597647, 622728): smyg + rasist
+CUSTOM: y n
+724981r3<adjektiv>smygsnobbig:smygsnobbig:smygsnobbigt:smygsnobbiga:smygsnobbiga::::smygsnobbige
+588027r3<verb>smygsocialisera:smygsocialisera:smygsocialiserade:smygsocialiserat:smygsocialiserar:smygsocialisera:::::::::
+955522r4<substantiv>smygsosse:smygsosse:smygsosses:smygsossen:smygsossens:smygsossar:smygsossars:smygsossarna:smygsossarnas
+COMPOUND(597647, 626475): smyg + sosse
+846894r4<verb>smygsupa:smygsupa:smygsöp:smygsupit:smygsuper:smygsup:smygsupas:smygsöps:smygsupits:smygsups, smygsupes::::smygsupande:
+COMPOUND(597647, 555870): smyg + supa
+852482r3<substantiv>smygsupare:smygsupare:smygsupares:smygsuparen:smygsuparens:smygsupare:smygsupares:smygsuparna:smygsuparnas
+821171r3<verb>smygtitta:smygtitta:smygtittade:smygtittat:smygtittar:smygtitta:smygtittas:smygtittades:smygtittats:smygtittas:::::
+600379r3<substantiv>smygvinkel:smygvinkel:smygvinkels:smygvinkeln:smygvinkelns:smygvinklar:smygvinklars:smygvinklarna:smygvinklarnas
+965162r4<verb>smygvisa:smygvisa:smygvisade:smygvisat:smygvisar:smygvisa:smygvisas:smygvisades:smygvisats:smygvisas:smygvisad:smygvisat:smygvisade:smygvisande:
+COMPOUND(597647, 548043): smyg + visa
+770077r4<verb>smygäta:smygäta:smygåt:smygätit:smygäter:smygät:smygätas:smygåts:smygätits:smygäts:smygäten:smygätet:smygätna:smygätande:
+COMPOUND(597647, 555238): smyg + äta
+576551r4<adjektiv>småaktig:småaktig:småaktigt:småaktiga:småaktiga::::småaktige::::::::
+776549r4<substantiv>småaktighet:småaktighet:småaktighets:småaktigheten:småaktighetens:småaktigheter:småaktigheters:småaktigheterna:småaktigheternas
+883006r3<substantiv>småanmärkning:småanmärkning:småanmärknings:småanmärkningen:småanmärkningens:småanmärkningar:småanmärkningars:småanmärkningarna:småanmärkningarnas
+883014r3<substantiv>småannons:småannons:småannons:småannonsen:småannonsens:småannonser:småannonsers:småannonserna:småannonsernas
+953766r4<substantiv>småbal:::::småbalar:småbalars:småbalarna:småbalarnas
+COMPOUND(555139, 557856): liten + bal
+608061r7<substantiv>småbarn:småbarn:småbarns:småbarnet:småbarnets:småbarn:småbarns:småbarnen:småbarnens
+CUSTOM: y y småbarns
+576554r3<adjektiv>småbarnsaktig:småbarnsaktig:småbarnsaktigt:småbarnsaktiga:småbarnsaktiga::::
+893822r4<substantiv>småbarnsfader:småbarnsfader, småbarnsfar:småbarnsfaders, småbarnsfars:småbarnsfadern:småbarnsfaderns:småbarnsfäder:småbarnsfäders:småbarnsfäderna:småbarnsfädernas
+COMPOUND(608061, 558559): småbarn + far, fader
+746415r3<substantiv>småbarnsförälder::::::::
+COMPOUND(608061, 650909): småbarn + förälder
+567741r3<adjektiv>småbarnslig:småbarnslig:småbarnsligt:småbarnsliga:småbarnsliga::::
+746416r3<substantiv>småbarnsmamma::::::::
+COMPOUND(608061, 555056): småbarn + mamma
+894381r4<substantiv>småbarnsår:småbarnsår:småbarnsårs:småbarnsåret:småbarnsårets:småbarnsår:småbarnsårs:småbarnsåren:småbarnsårens
+COMPOUND(608061, 553140): småbarn + år
+883021r3<substantiv>småbelopp:småbelopp:småbelopps:småbeloppet:småbeloppets:småbelopp:småbelopps:småbeloppen:småbeloppens
+576557r3<adjektiv>småbergig:småbergig:småbergigt:småbergiga:småbergiga::::
+883027r3<substantiv>småbil:småbil:småbils:småbilen:småbilens:småbilar:småbilars:småbilarna:småbilarnas
+883035r3<substantiv>småbild:småbild:småbilds:småbilden:småbildens:småbilder:småbilders:småbilderna:småbildernas
+986194r3<substantiv>småbildskamera:småbildskamera:småbildskameras:småbildskameran:småbildskamerans:småbildskameror:småbildskamerors:småbildskamerorna:småbildskamerornas
+667184r4<substantiv>småbit:småbit:småbits:småbiten:småbitens:småbitar:småbitars:småbitarna:småbitarnas
+576560r3<adjektiv>småbladig:småbladig:småbladigt:småbladiga:småbladiga::::
+576563r3<adjektiv>småblommig:småblommig:småblommigt:småblommiga:småblommiga::::
+576566r3<adjektiv>småblomstrig:småblomstrig:småblomstrigt:småblomstriga:småblomstriga::::
+892858r3<adjektiv>småblåsig:småblåsig:småblåsigt:småblåsiga:småblåsiga::::::::::::
+883044r4<substantiv>småbolag:småbolag:småbolags:småbolaget:småbolagets:småbolag:småbolags:småbolagen:småbolagens
+CUSTOM: y y småbolags
+883052r3<substantiv>småbolagsfond::::::::
+COMPOUND(883044, 548939): småbolag + fond
+883053r4<substantiv>småbonde:småbonde:småbondes:småbonden:småbondens:småbönder:småbönders:småbönderna:småböndernas
+COMPOUND(555139, 614979): liten + bonde
+883061r3<substantiv>småbord:småbord:småbords:småbordet:småbordets:småbord:småbords:småborden:småbordens
+883067r3<substantiv>småborgare:småborgare:småborgares:småborgaren:småborgarens:småborgare:småborgares:småborgarna:småborgarnas
+567744r4<adjektiv>småborgerlig:småborgerlig:småborgerligt:småborgerliga:småborgerliga::::småborgerlige::::::::
+883074r3<substantiv>småborgerlighet:småborgerlighet:småborgerlighets:småborgerligheten:småborgerlighetens::::
+883078r4<substantiv>småboskap:småboskap:småboskaps:småboskapen:småboskapens::::
+COMPOUND(555139, 635654): liten + boskap
+883082r3<substantiv>småbrott:småbrott:småbrotts:småbrottet:småbrottets:småbrott:småbrotts:småbrotten:småbrottens
+883088r3<substantiv>småbruk:småbruk:småbruks:småbruket:småbrukets:småbruk:småbruks:småbruken:småbrukens
+883094r3<substantiv>småbrukare:småbrukare:småbrukares:småbrukaren:småbrukarens:småbrukare:småbrukares:småbrukarna:småbrukarnas
+608067r3<substantiv>småbröd:småbröd:småbröds:småbrödet:småbrödets:småbröd:småbröds:småbröden:småbrödens
+883100r3<substantiv>småbröder:::::småbröder:småbröders:småbröderna:småbrödernas
+883104r3<substantiv>småbuss:småbuss:småbuss:småbussen:småbussens:småbussar:småbussars:småbussarna:småbussarnas
+883111r3<substantiv>småbutik:småbutik:småbutiks:småbutiken:småbutikens:småbutiker:småbutikers:småbutikerna:småbutikernas
+883119r3<substantiv>småby:småby:småbys:småbyn:småbyns:småbyar:småbyars:småbyarna:småbyarnas
+CUSTOM: y n
+746417r6<substantiv>småbåt:småbåt:småbåts:småbåten:småbåtens:småbåtar:småbåtars:småbåtarna:småbåtarnas
+CUSTOM: y y småbåts
+746425r3<substantiv>småbåtsbrygga::::::::
+COMPOUND(746417, 593854): småbåt + brygga
+746426r3<substantiv>småbåtshamn::::::::
+COMPOUND(746417, 551369): småbåt + hamn
+746427r3<substantiv>småbåtsled::::::::
+COMPOUND(746417, 556257): småbåt + led
+883128r3<substantiv>småcitrus:småcitrus:småcitrus:småcitrusen:småcitrusens:småcitrusar:småcitrusars:småcitrusarna:småcitrusarnas
+883136r3<substantiv>smådel:smådel:smådels:smådelen:smådelens:smådelar:smådelars:smådelarna:smådelarnas
+883144r3<substantiv>smådetalj:smådetalj:smådetaljs:smådetaljen:smådetaljens:smådetaljer:smådetaljers:smådetaljerna:smådetaljernas
+883152r3<substantiv>smådjur:smådjur:smådjurs:smådjuret:smådjurets:smådjur:smådjurs:smådjuren:smådjurens
+883158r3<substantiv>smådrag:smådrag:smådrags:smådraget:smådragets:smådrag:smådrags:smådragen:smådragens
+883164r5<verb>smådugga:smådugga:småduggade:småduggat:småduggar:smådugga::::::::småduggande:
+846905r3<adjektiv>småelak:småelak:småelakt:småelaka:småelaka::::småelake
+883169r3<substantiv>småfabrik:småfabrik:småfabriks:småfabriken:småfabrikens:småfabriker:småfabrikers:småfabrikerna:småfabrikernas
+883177r3<substantiv>småfartyg:småfartyg:småfartygs:småfartyget:småfartygets:småfartyg:småfartygs:småfartygen:småfartygens
+883183r3<substantiv>småfel:småfel:småfels:småfelet:småfelets:småfel:småfels:småfelen:småfelens
+567747r4<adjektiv>småfinurlig:småfinurlig:småfinurligt:småfinurliga:småfinurliga::::småfinurlige::::::::
+667186r3<substantiv>småfisk:småfisk:småfisks:småfisken:småfiskens:småfiskar:småfiskars:småfiskarna:småfiskarnas
+567750r4<adjektiv>småfjollig:småfjollig:småfjolligt:småfjolliga:småfjolliga::::småfjollige::::::::
+667190r3<substantiv>småflicka:småflicka:småflickas:småflickan:småflickans:småflickor:småflickors:småflickorna:småflickornas
+576569r3<adjektiv>småflicksaktig:småflicksaktig:småflicksaktigt:småflicksaktiga:småflicksaktiga::::
+576572r3<adjektiv>småflikig:småflikig:småflikigt:småflikiga:småflikiga::::
+667192r4<verb>småflina:småflina:småflinade:småflinat:småflinar:småflina:småflinas:småflinades:småflinats:småflinas::::småflinande:
+883195r5<verb>småflirta:småflirta:småflirtade:småflirtat:småflirtar:småflirta:småflirtas:småflirtades:småflirtats:småflirtas::::småflirtande:
+576575r3<adjektiv>småfläckig:småfläckig:småfläckigt:småfläckiga:småfläckiga::::
+883203r5<verb>småflörta:småflörta:småflörtade:småflörtat:småflörtar:småflörta:småflörtas:småflörtades:småflörtats:småflörtas::::småflörtande:
+883211r5<verb>småfnittra:småfnittra:småfnittrade:småfnittrat:småfnittrar:småfnittra:småfnittras:småfnittrades:småfnittrats:småfnittras::::småfnittrande:
+576578r3<adjektiv>småfnoskig:småfnoskig:småfnoskigt:småfnoskiga:småfnoskiga::::
+883219r3<substantiv>småfolk:småfolk:småfolks:småfolket:småfolkets:småfolk:småfolks:småfolken:småfolkens
+883225r3<substantiv>småfranska:småfranska:småfranskas:småfranskan:småfranskans::::
+883229r3<substantiv>småfrukt:småfrukt:småfrukts:småfrukten:småfruktens:småfrukter:småfrukters:småfrukterna:småfrukternas
+576581r3<adjektiv>småfruktig:småfruktig:småfruktigt:småfruktiga:småfruktiga::::
+564465r4<adjektiv>småfrusen:småfrusen:småfruset:småfrusna:småfrusna::::småfrusne::::::::
+883237r4<verb>småfrysa:småfrysa:småfrös:småfrusit:småfryser:småfrys:!:!:!:!::::småfrysande:
+COMPOUND(555139, 556174): liten + frysa
+883244r3<adjektiv>småfräck:småfräck:småfräckt:småfräcka:småfräcka::::småfräcke::::::::
+846910r3<adjektiv>småful:småful:småfult:småfula:småfula::::småfule
+585119r4<adjektiv>småfull:småfull:småfullt:småfulla:småfulla::::småfulle::::::::
+989446r3<adjektiv>småfunkig:småfunkig:småfunkigt:småfunkiga:småfunkiga::::::::::::
+883249r3<substantiv>småfurste:småfurste:småfurstes:småfursten:småfurstens:småfurstar:småfurstars:småfurstarna:småfurstarnas
+576584r3<adjektiv>småfuttig:småfuttig:småfuttigt:småfuttiga:småfuttiga::::
+667196r4<substantiv>småfågel:småfågel:småfågels:småfågeln:småfågelns:småfåglar:småfåglars:småfåglarna:småfåglarnas
+CUSTOM: y y småfågels
+883257r4<substantiv>småfågelsägg:småfågelsägg:småfågelsäggs:småfågelsägget:småfågelsäggets:småfågelsägg:småfågelsäggs:småfågelsäggen:småfågelsäggens
+COMPOUND(667196, 553150): småfågel + ägg
+795003r3<adjektiv>småförargad:småförargad:småförargat:småförargade:småförargade:!:!:!:
+795006r3<adjektiv>småförbannad:småförbannad:småförbannat:småförbannade:småförbannade:!:!:!:
+883263r3<substantiv>småförbrytare:småförbrytare:småförbrytares:småförbrytaren:småförbrytarens:småförbrytare:småförbrytares:småförbrytarna:småförbrytarnas
+667204r4<substantiv>småföretag:småföretag:småföretags:småföretaget:småföretagets:småföretag:småföretags:småföretagen:småföretagens
+CUSTOM: y y småföretags
+883270r3<substantiv>småföretagande:småföretagande:småföretagandes:småföretagandet:småföretagandets::::
+667210r3<substantiv>småföretagare:småföretagare:småföretagares:småföretagaren:småföretagarens:småföretagare:småföretagares:småföretagarna:småföretagarnas
+CUSTOM: y y småföretagar
+884205r3<substantiv>småföretagsamhet:småföretagsamhet:småföretagsamhets:småföretagsamheten:småföretagsamhetens::::
+746429r4<substantiv>småföretagsutveckling:småföretagsutveckling:småföretagsutvecklings:småföretagsutvecklingen:småföretagsutvecklingens:småföretagsutvecklingar:småföretagsutvecklingars:småföretagsutvecklingarna:småföretagsutvecklingarnas
+COMPOUND(667204, 637669): småföretag + utveckling
+576587r3<adjektiv>småförnumstig:småförnumstig:småförnumstigt:småförnumstiga:småförnumstiga::::
+883275r3<adjektiv>småförnäm:småförnäm:småförnämt:småförnäma:småförnäma::::::::::::
+883278r3<substantiv>småförseelse:småförseelse:småförseelses:småförseelsen:småförseelsens:småförseelser:småförseelsers:småförseelserna:småförseelsernas
+883286r3<substantiv>småförtretlighet:småförtretlighet:småförtretlighets:småförtretligheten:småförtretlighetens:småförtretligheter:småförtretligheters:småförtretligheterna:småförtretligheternas
+906862r3<adjektiv>smågalen:smågalen:smågalet:smågalna:smågalna::::smågalne::::::::
+667216r3<substantiv>smågangster:smågangster:smågangsters:smågangstern:smågangsterns:smågangstrar:smågangstrars:smågangstrarna:smågangstrarnas
+667224r3<substantiv>smågata:smågata:smågatas:smågatan:smågatans:smågator:smågators:smågatorna:smågatornas
+883294r3<substantiv>smågnabb:smågnabb:smågnabbs:smågnabbet:smågnabbets::::
+963554r3<deponens>smågnabbas:smågnabbas:smågnabbades:smågnabbats:smågnabbas:
+883298r3<substantiv>smågnagare:smågnagare:smågnagares:smågnagaren:smågnagarens:smågnagare:smågnagares:smågnagarna:smågnagarnas
+883304r3<substantiv>smågnat:smågnat:smågnats:smågnatet:smågnatets::::
+883308r4<verb>smågnata:smågnata:smågnatade:smågnatat:smågnatar:smågnata:smågnatas:smågnatades:smågnatats:smågnatas::::smågnatande:
+COMPOUND(555139, 820193): liten + gnata
+576590r3<adjektiv>smågnatig:smågnatig:smågnatigt:smågnatiga:smågnatiga::::
+883316r4<verb>smågnola:smågnola:smågnolade:smågnolat:smågnolar:smågnola:smågnolas:smågnolades:smågnolats:smågnolas::::smågnolande:
+COMPOUND(555139, 625394): liten + gnola
+883324r4<verb>smågnälla:smågnälla:smågnällde:smågnällt:smågnäller:smågnäll:smågnällas:smågnälldes:smågnällts:smågnälls::::smågnällande:
+COMPOUND(555139, 691569): liten + gnälla
+883334r4<substantiv>smågodis:smågodis:smågodis:smågodiset:smågodisets:!:!:!:!
+883337r3<substantiv>smågrabb:smågrabb:smågrabbs:smågrabben:smågrabbens:smågrabbar:smågrabbars:smågrabbarna:smågrabbarnas
+883345r3<substantiv>smågris:smågris:smågris:smågrisen:smågrisens:smågrisar:smågrisars:smågrisarna:smågrisarnas
+883352r3<substantiv>smågrupp:smågrupp:smågrupps:smågruppen:smågruppens:smågrupper:smågruppers:smågrupperna:smågruppernas
+576593r3<adjektiv>smågrynig:smågrynig:smågrynigt:smågryniga:smågryniga::::
+883360r3<substantiv>smågräl:smågräl:smågräls:smågrälet:smågrälets:smågräl:smågräls:smågrälen:smågrälens
+883366r3<verb>smågräla:smågräla:smågrälade:smågrälat:smågrälar:smågräla:smågrälas:smågrälades:smågrälats:smågrälas::::smågrälande:
+883374r3<substantiv>småhandlare:småhandlare:småhandlares:småhandlaren:småhandlarens:småhandlare:småhandlares:småhandlarna:småhandlarnas
+883380r3<substantiv>småhantverkare:småhantverkare:småhantverkares:småhantverkaren:småhantverkarens:småhantverkare:småhantverkares:småhantverkarna:småhantverkarnas
+883386r4<verb>småhosta:småhosta:småhostade:småhostat:småhostar:småhosta:småhostas:småhostades:småhostats:småhostas::::småhostande:
+COMPOUND(555139, 555272): liten + hosta
+883394r3<substantiv>småhotell:småhotell:småhotells:småhotellet:småhotellets:småhotell:småhotells:småhotellen:småhotellens
+667232r4<substantiv>småhus:småhus:småhus:småhuset:småhusets:småhus:småhus:småhusen:småhusens
+CUSTOM: y y småhus
+667237r4<substantiv>småhusägare:småhusägare:småhusägares:småhusägaren:småhusägarens:småhusägare:småhusägares:småhusägarna:småhusägarnas
+COMPOUND(667232, 615532): småhus + ägare
+CUSTOM: y y småhusägar
+883400r4<verb>småhuttra:småhuttra:småhuttrade:småhuttrat:småhuttrar:småhuttra:småhuttras:småhuttrades:småhuttrats:småhuttras::::småhuttrande:
+COMPOUND(555139, 546888): liten + huttra
+883408r3<adjektiv>småilsken:småilsken:småilsket:småilskna:småilskna::::::::::::
+883411r3<substantiv>småindustri:småindustri:småindustris:småindustrin:småindustrins:småindustrier:småindustriers:småindustrierna:småindustriernas
+883419r3<substantiv>småjobb:småjobb:småjobbs:småjobbet:småjobbets:småjobb:småjobbs:småjobben:småjobbens
+883425r3<substantiv>småjordbruk:småjordbruk:småjordbruks:småjordbruket:småjordbrukets:småjordbruk:småjordbruks:småjordbruken:småjordbrukens
+567753r3<adjektiv>småjäklig:småjäklig:småjäkligt:småjäkliga:småjäkliga::::
+883431r3<substantiv>småjänta:småjänta:småjäntas:småjäntan:småjäntans:småjäntor:småjäntors:småjäntorna:småjäntornas
+595267r3<substantiv>småkaka:småkaka:småkakas:småkakan:småkakans:småkakor:småkakors:småkakorna:småkakornas
+880229r3<adjektiv>småkall:småkall:småkallt:småkalla:småkalla::::
+667350r4<substantiv>småkille:småkille:småkilles:småkillen:småkillens:småkillar:småkillars:småkillarna:småkillarnas
+COMPOUND(555139, 559775): liten + kille
+567756r3<adjektiv>småkitslig:småkitslig:småkitsligt:småkitsliga:småkitsliga::::
+883439r3<substantiv>småklass:småklass:småklass:småklassen:småklassens:småklasser:småklassers:småklasserna:småklassernas
+883447r3<substantiv>småklubb:småklubb:småklubbs:småklubben:småklubbens:småklubbar:småklubbars:småklubbarna:småklubbarnas
+883456r3<adjektiv>småkluven:småkluven:småkluvet:småkluvna:småkluvna::::::::::::
+883459r3<substantiv>småknatte:småknatte:småknattes:småknatten:småknattens:småknattar:småknattars:småknattarna:småknattarnas
+883467r3<substantiv>småknep:småknep:småkneps:småknepet:småknepets:småknep:småkneps:småknepen:småknepens
+576596r3<adjektiv>småknottrig:småknottrig:småknottrigt:småknottriga:småknottriga::::
+667243r5<verb>småkoka:småkoka:småkokade, småkokte:småkokat, småkokt:småkokar:småkoka:småkokas:småkokades, småkoktes:småkokats, småkokts:småkokas::::småkokande:
+883474r3<substantiv>småkommun:småkommun:småkommuns:småkommunen:småkommunens:småkommuner:småkommuners:småkommunerna:småkommunernas
+883483r3<substantiv>småkonst:småkonst:småkonsts:småkonsten:småkonstens::::
+883487r3<substantiv>småkonung:småkonung:småkonungs:småkonungen:småkonungens:småkonungar:småkonungars:småkonungarna:småkonungarnas
+576599r3<adjektiv>småkornig:småkornig:småkornigt:småkorniga:småkorniga::::
+883495r3<substantiv>småkort:småkort:småkorts:småkortet:småkortets:småkort:småkorts:småkorten:småkortens
+883501r3<substantiv>småkrafs:småkrafs:småkrafs:småkrafset:småkrafsets::::
+567759r4<adjektiv>småkrasslig:småkrasslig:småkrassligt:småkrassliga:småkrassliga::::småkrasslige::::::::
+888565r3<substantiv>småkredit:småkredit:småkredits:småkrediten:småkreditens:småkrediter:småkrediters:småkrediterna:småkrediternas
+883504r3<substantiv>småkrig:småkrig:småkrigs:småkriget:småkrigets:småkrig:småkrigs:småkrigen:småkrigens
+567762r3<adjektiv>småkrullig:småkrullig:småkrulligt:småkrulliga:småkrulliga::::
+576602r3<adjektiv>småkrusig:småkrusig:småkrusigt:småkrusiga:småkrusiga::::
+667247r3<substantiv>småkryp:småkryp:småkryps:småkrypet:småkrypets:småkryp:småkryps:småkrypen:småkrypens
+883510r3<substantiv>småkräk:småkräk:småkräks:småkräket:småkräkets:småkräk:småkräks:småkräken:småkräkens
+883516r3<substantiv>småkrämpa:småkrämpa:småkrämpas:småkrämpan:småkrämpans:småkrämpor:småkrämpors:småkrämporna:småkrämpornas
+938283r3<adjektiv>småkul:småkul:::::::::::::::
+883525r3<substantiv>småkund:småkund:småkunds:småkunden:småkundens:småkunder:småkunders:småkunderna:småkundernas
+883534r3<substantiv>småkung:småkung:småkungs:småkungen:småkungens:småkungar:småkungars:småkungarna:småkungarnas
+883542r3<adjektiv>småkvick:småkvick:småkvickt:småkvicka:småkvicka::::::::::::
+883545r3<substantiv>småkyrka:småkyrka:småkyrkas:småkyrkan:småkyrkans:småkyrkor:småkyrkors:småkyrkorna:småkyrkornas
+847488r3<adjektiv>småkär:småkär:småkärt:småkära:småkära::::
+553318r3<egennamn>Småland:Småland:Smålands
+CUSTOM: y n Smålands
+667253r3<verb>småle:småle:smålog:smålett:småler::::::::::
+667256r3<substantiv>småleende:småleende:småleendes:småleendet:småleendets:småleenden:småleendens:småleendena:småleendenas
+883553r4<verb>småljuga:småljuga:småljög:småljugit:småljuger:småljug:småljugas:småljögs:småljugits:småljugs, småljuges::::småljugande:
+COMPOUND(555139, 585380): liten + ljuga
+576605r4<adjektiv>smålockig:smålockig:smålockigt:smålockiga:smålockiga::::smålockige::::::::
+852488r3<substantiv>smålom:smålom:småloms:smålommen:smålommens:smålommar:smålommars:smålommarna:smålommarnas
+576608r4<adjektiv>smålustig:smålustig:smålustigt:smålustiga:smålustiga::::smålustige::::::::
+883566r3<substantiv>smålustighet:smålustighet:smålustighets:smålustigheten:smålustighetens:smålustigheter:smålustigheters:smålustigheterna:smålustigheternas
+883575r3<substantiv>smålån:smålån:smålåns:smålånet:smålånets:smålån:smålåns:smålånen:smålånens
+883582r3<substantiv>smålägenhet:smålägenhet:smålägenhets:smålägenheten:smålägenhetens:smålägenheter:smålägenheters:smålägenheterna:smålägenheternas
+667264r3<adjektiv>småländsk:småländsk:småländskt:småländska:småländska:!:!:!:småländske
+667266r3<substantiv>småländska:småländska:småländskas:småländskan:småländskans:småländskor:småländskors:småländskorna:småländskornas
+667274r3<substantiv>smålänning:smålänning:smålännings:smålänningen:smålänningens:smålänningar:smålänningars:smålänningarna:smålänningarnas
+CUSTOM: y y smålännings
+735764r5<adjektiv>småläskig:småläskig:småläskigt:småläskiga:småläskiga:småläskigare:småläskigast:småläskigaste:småläskige::::::::
+883590r3<substantiv>smålögn:smålögn:smålögns:smålögnen:smålögnens:smålögner:smålögners:smålögnerna:smålögnernas
+943014r3<substantiv>smålök:smålök:smålöks:smålöken:smålökens:smålökar:smålökars:smålökarna:smålökarnas
+576611r3<adjektiv>småmaskig:småmaskig:småmaskigt:småmaskiga:småmaskiga::::
+894494r3<substantiv>småmissar:::::småmissar:småmissars:småmissarna:småmissarnas
+883599r3<verb>småmumla:småmumla:småmumlade:småmumlat:småmumlar:småmumla:småmumlas:småmumlades:småmumlats:småmumlas::::småmumlande:
+883607r3<verb>småmuttra:småmuttra:småmuttrade:småmuttrat:småmuttrar:småmuttra:småmuttras:småmuttrades:småmuttrats:småmuttras::::småmuttrande:
+883615r3<substantiv>småmynt:småmynt:småmynts:småmyntet:småmyntets:småmynt:småmynts:småmynten:småmyntens
+846921r3<verb>småmysa:småmysa:småmyste:småmyst:småmyser:småmys:småmysas:småmystes:småmysts:småmyses::::småmysande:
+883622r3<adjektiv>småmysig:småmysig:småmysigt:småmysiga:småmysiga::::småmysige::::::::
+795009r3<adjektiv>småmönstrad:småmönstrad:småmönstrat:småmönstrade:småmönstrade:!:!:!:
+576614r3<adjektiv>småmönstrig:småmönstrig:småmönstrigt:småmönstriga:småmönstriga::::
+620767r3<adverb>småningom:småningom
+883627r3<adjektiv>smånäpen:smånäpen:smånäpet:smånäpna:smånäpna::::::::::::
+846931r3<adjektiv>smånätt:smånätt:smånätt:smånätta:smånätta::::
+883630r3<substantiv>småord:småord:småords:småordet:småordets:småord:småords:småorden:småordens
+894504r3<substantiv>småorganismer:::::småorganismer:småorganismers:småorganismerna:småorganismernas
+852496r3<substantiv>småort:småort:småorts:småorten:småortens:småorter:småorters:småorterna:småorternas
+883636r3<substantiv>småpaket:småpaket:småpakets:småpaketet:småpaketets:småpaket:småpakets:småpaketen:småpaketens
+883642r3<substantiv>småparti:småparti:småpartis:småpartiet:småpartiets:småpartier:småpartiers:småpartierna:småpartiernas
+667275r3<substantiv>småpengar:!:!:!:!:småpengar:småpengars:småpengarna:småpengarnas
+576617r3<adjektiv>småpetig:småpetig:småpetigt:småpetiga:småpetiga::::
+576620r3<adjektiv>småpipig:småpipig:småpipigt:småpipiga:småpipiga::::
+576623r3<adjektiv>småpjollrig:småpjollrig:småpjollrigt:småpjollriga:småpjollriga::::
+883650r3<substantiv>småplanet:småplanet:småplanets:småplaneten:småplanetens:småplaneter:småplaneters:småplaneterna:småplaneternas
+883658r3<substantiv>småplock:småplock:småplocks:småplocket:småplockets::::
+576626r3<adjektiv>småplottrig:småplottrig:småplottrigt:småplottriga:småplottriga::::
+883662r3<substantiv>småpojke:småpojke:småpojkes:småpojken:småpojkens:småpojkar:småpojkars:småpojkarna:småpojkarnas
+883670r3<substantiv>småpost:småpost:småposts:småposten:småpostens:småposter:småposters:småposterna:småposternas
+667279r4<substantiv>småpotatis:småpotatis:småpotatis:småpotatisen:småpotatisens:småpotatisar:småpotatisars:småpotatisarna:småpotatisarnas
+696974r3<substantiv>småprat:småprat:småprats:småpratet:småpratets::::
+667280r4<verb>småprata:småprata:småpratade:småpratat:småpratar:småprata:småpratas:småpratades:småpratats:småpratas::::småpratande:
+576629r3<adjektiv>småprickig:småprickig:småprickigt:småprickiga:småprickiga::::
+883688r3<substantiv>småproblem:småproblem:småproblems:småproblemet:småproblemets:småproblem:småproblems:småproblemen:småproblemens
+883694r3<verb>småputtra:småputtra:småputtrade:småputtrat:småputtrar:småputtra::::::::småputtrande:
+883700r3<adjektiv>småputtrig:småputtrig:småputtrigt:småputtriga:småputtriga::::::::::::
+883704r3<verb>småpyssla:småpyssla:småpysslade:småpysslat:småpysslar:småpyssla:småpysslas:småpysslades:småpysslats:småpysslas::::småpysslande:
+567765r3<adjektiv>småpysslig:småpysslig:småpyssligt:småpyssliga:småpyssliga::::
+883712r3<substantiv>småpåve:småpåve:småpåves:småpåven:småpåvens:småpåvar:småpåvars:småpåvarna:småpåvarnas
+883720r3<verb>småregna:småregna:småregnade:småregnat:småregnar:småregna::::::::småregnande:
+576632r3<adjektiv>småregnig:småregnig:småregnigt:småregniga:småregniga::::
+883725r3<substantiv>småreparation:småreparation:småreparations:småreparationen:småreparationens:småreparationer:småreparationers:småreparationerna:småreparationernas
+892862r3<deponens>småretas:småretas:småretades:småretats:småretas:
+883733r3<substantiv>smårike:smårike:smårikes:småriket:smårikets:småriken:smårikens:smårikena:smårikenas
+567768r4<adjektiv>smårolig:smårolig:småroligt:småroliga:småroliga::::smårolige::::::::
+883742r3<substantiv>smårolighet:smårolighet:smårolighets:småroligheten:smårolighetens:småroligheter:småroligheters:småroligheterna:småroligheternas
+883750r3<substantiv>småroll:småroll:smårolls:smårollen:smårollens:småroller:smårollers:smårollerna:smårollernas
+883758r3<substantiv>smårum:smårum:smårums:smårummet:smårummets:smårum:smårums:smårummen:smårummens
+576635r3<adjektiv>smårutig:smårutig:smårutigt:smårutiga:smårutiga::::
+576638r3<adjektiv>smårynkig:smårynkig:smårynkigt:smårynkiga:smårynkiga::::
+883764r3<substantiv>smårätt:smårätt:smårätts:smårätten:smårättens:smårätter:smårätters:smårätterna:smårätternas
+667284r3<substantiv>småsak:småsak:småsaks:småsaken:småsakens:småsaker:småsakers:småsakerna:småsakernas
+883772r3<substantiv>småsegel:småsegel:småsegels:småseglet:småseglets:småsegel:småsegels:småseglen:småseglens
+795012r3<adjektiv>småsinnad:småsinnad:småsinnat:småsinnade:småsinnade:!:!:!:
+883778r3<substantiv>småsinne:småsinne:småsinnes:småsinnet:småsinnets::::
+667288r4<adjektiv>småsint:småsint:småsint:småsinta:småsinta::::småsinte::::::::
+667290r3<substantiv>småsinthet:småsinthet:småsinthets:småsintheten:småsinthetens::::
+CUSTOM: y y småsinthets
+883782r4<verb>småsjuda:småsjuda:småsjöd:småsjudit:småsjuder:småsjud:småsjudas:småsjöds:småsjudits:småsjuds::::småsjudande:
+COMPOUND(555139, 626242): liten + sjuda
+949448r3<adjektiv>småsjuk:småsjuk:småsjukt:småsjuka:småsjuka::::::::::::
+883793r3<substantiv>småsjukhus:småsjukhus:småsjukhus:småsjukhuset:småsjukhusets:småsjukhus:småsjukhus:småsjukhusen:småsjukhusens
+883799r4<verb>småsjunga:småsjunga:småsjöng:småsjungit:småsjunger:småsjung:småsjungas:småsjöngs:småsjungits:småsjungs, småsjunges:småsjungen:småsjunget:småsjungna:småsjungande:
+COMPOUND(555139, 593333): liten + sjunga
+883813r3<substantiv>småsjö:småsjö:småsjös:småsjön:småsjöns:småsjöar:småsjöars:småsjöarna:småsjöarnas
+883822r3<adjektiv>småskadad:småskadad:småskadat:småskadade:småskadade:!:!:!:::::::::
+567769r4<adjektiv>småskalig:småskalig:småskaligt:småskaliga:småskaliga:småskaligare:småskaligast:småskaligaste:småskalige::::::::
+667320r3<substantiv>småskalighet:småskalighet:småskalighets:småskaligheten:småskalighetens::::
+CUSTOM: y y småskalighets
+883827r3<substantiv>småskavanker:::::småskavanker:småskavankers:småskavankerna:småskavankernas
+883832r3<substantiv>småskog:småskog:småskogs:småskogen:småskogens:småskogar:småskogars:småskogarna:småskogarnas
+667294r3<substantiv>småskola:småskola:småskolas:småskolan:småskolans:småskolor:småskolors:småskolorna:småskolornas
+883840r3<substantiv>småskollärare:småskollärare:småskollärares:småskolläraren:småskollärarens:småskollärare:småskollärares:småskollärarna:småskollärarnas
+887128r3<substantiv>småskollärarinna:småskollärarinna:småskollärarinnas:småskollärarinnan:småskollärarinnans:småskollärarinnor:småskollärarinnors:småskollärarinnorna:småskollärarinnornas
+986202r3<substantiv>småskrake:småskrake:småskrakes:småskraken:småskrakens:småskrakar:småskrakars:småskrakarna:småskrakarnas
+883846r3<verb>småskratta:småskratta:småskrattade:småskrattat:småskrattar:småskratta:småskrattas:småskrattades:småskrattats:småskrattas::::småskrattande:
+883854r3<substantiv>småskrift:småskrift:småskrifts:småskriften:småskriftens:småskrifter:småskrifters:småskrifterna:småskrifternas
+887136r3<substantiv>småskryt:småskryt:småskryts:småskrytet:småskrytets::::
+883862r4<verb>småskryta:småskryta:småskröt:småskrutit:småskryter:småskryt:småskrytas:småskröts:småskrutits:småskryts::::småskrytande:
+COMPOUND(555139, 619599): liten + skryta
+883872r3<substantiv>småskuld:småskuld:småskulds:småskulden:småskuldens:småskulder:småskulders:småskulderna:småskuldernas
+667302r3<adjektiv>småskuren:småskuren:småskuret:småskurna:småskurna::::
+667303r3<substantiv>småskurenhet:småskurenhet:småskurenhets:småskurenheten:småskurenhetens::::
+CUSTOM: y y småskurenhets
+883880r3<substantiv>småskvaller:småskvaller:småskvallers:småskvallret:småskvallrets::::
+883884r3<substantiv>småskvätt:småskvätt:småskvätts:småskvätten:småskvättens:småskvättar:småskvättars:småskvättarna:småskvättarnas
+883892r4<verb>småskälla:småskälla:småskällde:småskällt:småskäller:småskäll:småskällas:småskälldes:småskällts:småskälls::::småskällande:
+COMPOUND(555139, 585792): liten + skälla
+883902r3<substantiv>småslant:småslant:småslants:småslanten:småslantens:småslantar:småslantars:småslantarna:småslantarnas
+883910r3<adjektiv>småslug:småslug:småslugt:småsluga:småsluga::::småsluge::::::::
+883914r3<substantiv>småsmula:småsmula:småsmulas:småsmulan:småsmulans:småsmulor:småsmulors:småsmulorna:småsmulornas
+883923r4<verb>småsnacka:småsnacka:småsnackade:småsnackat:småsnackar:småsnacka:småsnackas:småsnackades:småsnackats:småsnackas::::småsnackande:
+667307r3<adjektiv>småsnål:småsnål:småsnålt:småsnåla:småsnåla::::småsnåle
+883931r4<verb>småsnåla:småsnåla:småsnålade:småsnålat:småsnålar:småsnåla:småsnålas:småsnålades:småsnålats:småsnålas::::småsnålande:
+883938r3<substantiv>småsnålhet:småsnålhet:småsnålhets:småsnålheten:småsnålhetens::::
+883942r4<verb>småsova:småsova:småsov:småsovit:småsover:småsov::::::::småsovande:
+COMPOUND(555139, 556579): liten + sova
+667322r3<substantiv>småsparare:småsparare:småsparares:småspararen:småspararens:småsparare:småsparares:småspararna:småspararnas
+CUSTOM: y y småsparar
+883947r3<substantiv>småspigg:småspigg:småspiggs:småspiggen:småspiggens:småspiggar:småspiggars:småspiggarna:småspiggarnas
+667328r3<substantiv>småspik:småspik:småspiks:småspiken:småspikens:småspikar:småspikars:småspikarna:småspikarnas
+887141r3<substantiv>småspov:småspov:småspovs:småspoven:småspovens:småspovar:småspovars:småspovarna:småspovarnas
+667336r5<verb>småspringa:småspringa:småsprang:småsprungit:småspringer:småspring:småspringas:småsprangs:småsprungits:småsprings::::småspringande:
+COMPOUND(555139, 555055): liten + springa
+576641r4<adjektiv>småspydig:småspydig:småspydigt:småspydiga:småspydiga:::::::::::småspydige:
+667310r4<substantiv>småstad:småstad:småstads:småstaden:småstadens:småstäder:småstäders:småstäderna:småstädernas
+CUSTOM: y y småstads
+576644r3<adjektiv>småstadsaktig:småstadsaktig:småstadsaktigt:småstadsaktiga:småstadsaktiga::::
+883960r3<substantiv>småstadsbo:småstadsbo:småstadsbos:småstadsbon:småstadsbons:småstadsbor:småstadsbors:småstadsborna:småstadsbornas
+776553r3<substantiv>småstadsidyll::::::::
+COMPOUND(667310, 549291): småstad + idyll
+883968r3<substantiv>småstat:småstat:småstats:småstaten:småstatens:småstater:småstaters:småstaterna:småstaternas
+667312r3<substantiv>småsten:småsten:småstens:småstenen:småstenens:småstenar:småstenars:småstenarna:småstenarnas
+883976r4<verb>småstjäla:småstjäla:småstal:småstulit:småstjäl:småstjäl:småstjälas:småstals:småstulits:småstjäls::::småstjälande:
+COMPOUND(555139, 624819): liten + stjäla
+883985r3<substantiv>småstuga:småstuga:småstugas:småstugan:småstugans:småstugor:småstugors:småstugorna:småstugornas
+883993r3<substantiv>småstund:småstund:småstunds:småstunden:småstundens:småstunder:småstunders:småstunderna:småstundernas
+884001r3<substantiv>småstycke:småstycke:småstyckes:småstycket:småstyckets:småstycken:småstyckens:småstyckena:småstyckenas
+884009r3<substantiv>småstöld:småstöld:småstölds:småstölden:småstöldens:småstölder:småstölders:småstölderna:småstöldernas
+955560r3<adjektiv>småstörig:småstörig:småstörigt:småstöriga:småstöriga::::::::::::
+884017r3<substantiv>småsumma:småsumma:småsummas:småsumman:småsummans:småsummor:småsummors:småsummorna:småsummornas
+846933r4<verb>småsupa:småsupa:småsöp:småsupit:småsuper:småsup:småsupas:småsöps:småsupits:småsups, småsupes::::småsupande:
+COMPOUND(555139, 555870): liten + supa
+776554r4<adjektiv>småsur:småsur:småsurt:småsura:småsura:!:!:!:småsure::::::::
+846944r4<verb>småsura:småsura:småsurade:småsurat:småsurar:småsura:småsuras:småsurades:småsurats:småsuras::::småsurande:
+COMPOUND(555139, 626616): liten + sura
+884025r4<verb>småsvära:småsvära, småsvärja:småsvor:småsvurit:småsvär:småsvär:::::::::
+COMPOUND(555139, 619754): liten + svärja, svära
+884029r3<substantiv>småsyskon:småsyskon:småsyskons:småsyskonet:småsyskonets:småsyskon:småsyskons:småsyskonen:småsyskonens
+884042r3<substantiv>småsyssla:småsyssla:småsysslas:småsysslan:småsysslans:småsysslor:småsysslors:småsysslorna:småsysslornas
+884035r3<verb>småsyssla:småsyssla:småsysslade:småsysslat:småsysslar:småsyssla:småsysslas:småsysslades:småsysslats:småsysslas:::::
+884210r3<substantiv>småsystrar:::::småsystrar:småsystrars:småsystrarna:småsystrarnas
+852505r3<substantiv>småsår:småsår:småsårs:småsåret:småsårets:småsår:småsårs:småsåren:småsårens
+892865r3<substantiv>småtimme:::::::småtimmarna:småtimmarnas
+884049r3<substantiv>småting:småting:småtings:småtinget:småtingets:småting:småtings:småtingen:småtingens
+884055r3<substantiv>småtjafs:småtjafs:småtjafs:småtjafset:småtjafsets::::
+667342r3<substantiv>småtjej:småtjej:småtjejs:småtjejen:småtjejens:småtjejer:småtjejers:småtjejerna:småtjejernas
+884058r3<substantiv>småtjuv:småtjuv:småtjuvs:småtjuven:småtjuvens:småtjuvar:småtjuvars:småtjuvarna:småtjuvarnas
+892868r3<substantiv>småtjyv:småtjyv:småtjyvs:småtjyven:småtjyvens:småtjyvar:småtjyvars:småtjyvarna:småtjyvarnas
+884066r3<substantiv>småtjänst:småtjänst:småtjänsts:småtjänsten:småtjänstens:småtjänster:småtjänsters:småtjänsterna:småtjänsternas
+576647r4<adjektiv>småtokig:småtokig:småtokigt:småtokiga:småtokiga::::småtokige::::::::
+884075r3<substantiv>småtorpare:småtorpare:småtorpares:småtorparen:småtorparens:småtorpare:småtorpares:småtorparna:småtorparnas
+640354r5<adjektiv>småtorr:småtorr:småtorrt:småtorra:småtorra::::::::::::
+CUSTOM: y n n
+567772r4<adjektiv>småtrevlig:småtrevlig:småtrevligt:småtrevliga:småtrevliga::::småtrevlige::::::::
+884083r3<adjektiv>småtrist:småtrist:småtrist:småtrista:småtrista::::småtriste::::::::
+884087r3<substantiv>småtroll:småtroll:småtrolls:småtrollet:småtrollets:småtroll:småtrolls:småtrollen:småtrollens
+884093r3<substantiv>småtryck:småtryck:småtrycks:småtrycket:småtryckets:småtryck:småtrycks:småtrycken:småtryckens
+884100r3<adjektiv>småtråkig:småtråkig:småtråkigt:småtråkiga:småtråkiga::::småtråkige::::::::
+884105r3<substantiv>småträd:småträd:småträds:småträdet:småträdets:småträd:småträds:småträden:småträdens
+847491r4<verb>småträta:småträta:småträtte:småträtt:småträter:småträt:småträtas:småträttes:småträtts:småträts, småträtes::::småträtande:
+COMPOUND(555139, 627309): liten + träta
+576650r4<adjektiv>småttig:småttig:småttigt:småttiga:småttiga:småttigare:småttigast:småttigaste:::::::::
+887150r3<substantiv>småttighet:småttighet:småttighets:småttigheten:småttighetens:småttigheter:småttigheters:småttigheterna:småttigheternas
+703053r3<substantiv>småtting:småtting:småttings:småttingen:småttingens:småttingar:småttingars:småttingarna:småttingarnas
+952963r3<substantiv>småtupp:::::småtuppar:småtuppars:småtupparna:småtupparnas
+884111r3<substantiv>småtvätt:småtvätt:småtvätts:småtvätten:småtvättens::::
+884115r3<substantiv>småtyrann:småtyrann:småtyranns:småtyrannen:småtyrannens:småtyranner:småtyranners:småtyrannerna:småtyrannernas
+884123r3<substantiv>småtärna:småtärna:småtärnas:småtärnan:småtärnans:småtärnor:småtärnors:småtärnorna:småtärnornas
+667358r3<substantiv>småunge:småunge:småunges:småungen:småungens:småungar:småungars:småungarna:småungarnas
+884131r3<substantiv>småutgifter:::::småutgifter:småutgifters:småutgifterna:småutgifternas
+884135r3<substantiv>småved:småved:småveds:småveden:småvedens::::
+884139r3<substantiv>småvessla:småvessla:småvesslas:småvesslan:småvesslans:småvesslor:småvesslors:småvesslorna:småvesslornas
+576653r3<adjektiv>småviktig:småviktig:småviktigt:småviktiga:småviktiga::::
+667366r5<substantiv>småvilt:småvilt:småvilts:småviltet:småviltets::::
+CUSTOM: y y småvilts
+768864r4<substantiv>småviltjakt:småviltjakt:småviltjakts:småviltjakten:småviltjaktens:småviltjakter:småviltjakters:småviltjakterna:småviltjakternas
+COMPOUND(667366, 549380): småvilt + jakt
+667370r4<substantiv>småviltsjakt:småviltsjakt:småviltsjakts:småviltsjakten:småviltsjaktens:småviltsjakter:småviltsjakters:småviltsjakterna:småviltsjakternas
+COMPOUND(667366, 549380): småvilt + jakt
+884148r3<substantiv>småvinst:småvinst:småvinsts:småvinsten:småvinstens:småvinster:småvinsters:småvinsterna:småvinsternas
+884157r3<verb>småvissla:småvissla:småvisslade:småvisslat:småvisslar:småvissla:småvisslas:småvisslades:småvisslats:småvisslas::::småvisslande:
+667378r4<adjektiv>småvuxen:småvuxen:småvuxet:småvuxna:småvuxna::::småvuxne::::::::
+884165r3<substantiv>småvuxenhet:småvuxenhet:småvuxenhets:småvuxenheten:småvuxenhetens::::
+667381r3<substantiv>småväg:småväg:småvägs:småvägen:småvägens:småvägar:småvägars:småvägarna:småvägarnas
+884169r3<verb>småvärka:småvärka:småvärkte:småvärkt:småvärker:småvärk::::::::småvärkande:
+667389r4<adjektiv>småväxt:småväxt:småväxt:småväxta:småväxta::::småväxte
+887161r3<substantiv>småväxthet:småväxthet:småväxthets:småväxtheten:småväxthetens::::
+884176r3<substantiv>småägare:småägare:småägares:småägaren:småägarens:småägare:småägares:småägarna:småägarnas
+884183r3<substantiv>småärende:småärende:småärendes:småärendet:småärendets:småärenden:småärendens:småärendena:småärendenas
+884191r4<verb>småäta:småäta:smååt:småätit:småäter:småät:småätas:smååts:småätits:småäts::::småätande:
+COMPOUND(555139, 555238): liten + äta
+CUSTOM: y n
+947797r4<substantiv>småö:småö:småös:småön:småöns:småöar:småöars:småöarna:småöarnas
+COMPOUND(555139, 556663): liten + ö
+CUSTOM: y n
+626386r3<substantiv>smäck:smäck:smäcks:smäcken:smäckens::::
+564520r4<adjektiv>smäcker:smäcker:smäckert:smäckra:smäckra:smäckrare:smäckrast:smäckraste:smäckre::::::::
+887165r3<substantiv>smäckerhet:smäckerhet:smäckerhets:smäckerheten:smäckerhetens::::
+585122r3<adjektiv>smäckfull:smäckfull:smäckfullt:smäckfulla:smäckfulla::::
+887169r3<substantiv>smäcklås:smäcklås:smäcklås:smäcklåset:smäcklåsets:smäcklås:smäcklås:smäcklåsen:smäcklåsens
+547713r5<verb>smäda:smäda:smädade:smädat:smädar:smäda:smädas:smädades:smädats:smädas:smädad:smädat:smädade:smädande:
+887178r3<substantiv>smädare:smädare:smädares:smädaren:smädarens:smädare:smädares:smädarna:smädarnas
+887184r3<substantiv>smädedikt:smädedikt:smädedikts:smädedikten:smädediktens:smädedikter:smädedikters:smädedikterna:smädedikternas
+585125r3<adjektiv>smädefull:smädefull:smädefullt:smädefulla:smädefulla::::
+667391r3<substantiv>smädelse:smädelse:smädelses:smädelsen:smädelsens:smädelser:smädelsers:smädelserna:smädelsernas
+CUSTOM: y y smädelse
+887192r3<substantiv>smädeord:smädeord:smädeords:smädeordet:smädeordets:smädeord:smädeords:smädeorden:smädeordens
+887198r3<substantiv>smädeskrift:smädeskrift:smädeskrifts:smädeskriften:smädeskriftens:smädeskrifter:smädeskrifters:smädeskrifterna:smädeskrifternas
+887206r3<substantiv>smädeskrivare:smädeskrivare:smädeskrivares:smädeskrivaren:smädeskrivarens:smädeskrivare:smädeskrivares:smädeskrivarna:smädeskrivarnas
+887212r3<substantiv>smädevisa:smädevisa:smädevisas:smädevisan:smädevisans:smädevisor:smädevisors:smädevisorna:smädevisornas
+567773r3<adjektiv>smädlig:smädlig:smädligt:smädliga:smädliga::::
+667394r3<verb>smäkta:smäkta:smäktade:smäktat:smäktar:smäkta:::::::::
+667392r3<adjektiv>smäktande:smäktande:smäktande:smäktande:smäktande:!:!:!:
+667393r3<substantiv>smälek:smälek:smäleks:smäleken:smälekens::::
+585128r3<adjektiv>smäleksfull:smäleksfull:smäleksfullt:smäleksfulla:smäleksfulla::::
+551879r4<substantiv>smäll:smäll:smälls:smällen:smällens:smällar:smällars:smällarna:smällarnas
+585795r5<verb>smälla:smälla:smällde, small:smällt:smäller:smäll:smällas:smälldes:smällts:smälls, smälles:smälld:smällt:smällda:smällande:
+615453r3<substantiv>smällare:smällare:smällares:smällaren:smällarens:smällare:smällares:smällarna:smällarnas
+CUSTOM: y y smällar
+776556r3<adjektiv>smällfet:smällfet:smällfett:smällfeta:smällfeta:!:!:!:smällfete
+986210r3<substantiv>smällglim:smällglim:smällglims:smällglimmen:smällglimmens::::
+686021r3<adjektiv>smällkall:smällkall:smällkallt:smällkalla:smällkalla:!:!:!:
+776560r3<substantiv>smällkaramell:smällkaramell:smällkaramells:smällkaramellen:smällkaramellens:smällkarameller:smällkaramellers:smällkaramellerna:smällkaramellernas
+683943r3<substantiv>smälta:smälta:smältas:smältan:smältans::::
+593379r13<verb>smälta:smälta:smälte:smält:smälter:smält:smältas:smältes:smälts:smälts, smältes:smält:smält:smälta:smältande:
+DEFINITION 1: Transformering av ett ämne från dess fasta fas till dess likvida fas
+BASEWORDS: smält
+CUSTOM: y y smält
+570109r3<adjektiv>smältbar:smältbar:smältbart:smältbara:smältbara::::
+686024r4<substantiv>smältdegel:smältdegel:smältdegels:smältdegeln:smältdegelns:smältdeglar:smältdeglars:smältdeglarna:smältdeglarnas
+COMPOUND(593379, 649081): smälta + degel
+588031r3<verb>smältgranulera:smältgranulera:smältgranulerade:smältgranulerat:smältgranulerar:smältgranulera:::::::::
+684021r5<substantiv>smältning:smältning:smältnings:smältningen:smältningens:smältningar:smältningars:smältningarna:smältningarnas
+BASEWORDS: smältnings
+CUSTOM: y y smältnings +smältnings
+806069r3<substantiv>smältost:smältost:smältosts:smältosten:smältostens:smältostar:smältostars:smältostarna:smältostarnas
+918714r4<substantiv>smältverk:smältverk:smältverks:smältverket:smältverkets:smältverk:smältverks:smältverken:smältverkens
+COMPOUND(593379, 553117): smälta + verk
+CUSTOM: y y smältverks
+667396r3<adjektiv>smärre:::::smärre:::
+626375r3<adjektiv>smärt:smärt:smärt:smärta:smärta:smärtare:smärtast:smärtaste:smärte
+585696r4<verb>smärta:smärta:smärtade:smärtat:smärtar:smärta::::::::smärtande:
+595275r6<substantiv>smärta:smärta:smärtas:smärtan:smärtans:smärtor:smärtors:smärtorna:smärtornas
+CUSTOM: y y smärt
+563329r7<adjektiv>smärtfri:smärtfri:smärtfritt:smärtfria:smärtfria:smärtfriare:smärtfriast:smärtfriaste:::::::::
+887223r3<substantiv>smärtfrihet:smärtfrihet:smärtfrihets:smärtfriheten:smärtfrihetens::::
+766325r3<adjektiv>smärtfylld:smärtfylld:smärtfyllt:smärtfyllda:smärtfyllda::::
+887227r3<substantiv>smärtförnimmelse:smärtförnimmelse:smärtförnimmelses:smärtförnimmelsen:smärtförnimmelsens:smärtförnimmelser:smärtförnimmelsers:smärtförnimmelserna:smärtförnimmelsernas
+667397r4<substantiv>smärtgräns:smärtgräns:smärtgräns:smärtgränsen:smärtgränsens:smärtgränser:smärtgränsers:smärtgränserna:smärtgränsernas
+737618r3<substantiv>smärting:smärting:smärtings:smärtingen:smärtingens::::
+887239r3<substantiv>smärtkänsla:smärtkänsla:smärtkänslas:smärtkänslan:smärtkänslans:smärtkänslor:smärtkänslors:smärtkänslorna:smärtkänslornas
+795015r3<adjektiv>smärtlemmad:smärtlemmad:smärtlemmat:smärtlemmade:smärtlemmade:!:!:!:
+762976r3<adjektiv>smärtlindrande:smärtlindrande:smärtlindrande:smärtlindrande:smärtlindrande:!:!:!:
+667400r4<substantiv>smärtlindring:smärtlindring:smärtlindrings:smärtlindringen:smärtlindringens:smärtlindringar:smärtlindringars:smärtlindringarna:smärtlindringarnas
+CUSTOM: y y smärtlindrings
+565291r3<adjektiv>smärtlös:smärtlös:smärtlöst:smärtlösa:smärtlösa::::
+776568r3<substantiv>smärtpunkt:smärtpunkt:smärtpunkts:smärtpunkten:smärtpunktens:smärtpunkter:smärtpunkters:smärtpunkterna:smärtpunkternas
+563552r4<adjektiv>smärtsam:smärtsam:smärtsamt:smärtsamma:smärtsamma:smärtsammare:smärtsammast:smärtsammaste:
+887251r3<substantiv>smärtsamhet:smärtsamhet:smärtsamhets:smärtsamheten:smärtsamhetens::::
+576656r3<adjektiv>smärtstammig:smärtstammig:smärtstammigt:smärtstammiga:smärtstammiga::::
+667404r3<adjektiv>smärtstillande:smärtstillande:smärtstillande:smärtstillande:smärtstillande:!:!:!:
+887255r4<substantiv>smärttröskel:smärttröskel:smärttröskels:smärttröskeln:smärttröskelns:smärttrösklar:smärttrösklars:smärttrösklarna:smärttrösklarnas
+COMPOUND(595275, 600445): smärta + tröskel
+622554r35<substantiv>smör:smör:smörs:smöret:smörets:!:!:!:!
+CUSTOM: y n smör
+737106r3<verb>smöra:smöra:smörade:smörat:smörar:smöra:smöras:smörades:smörats:smöras:smörad:smörat:smörade:smörande:
+667405r3<substantiv>smörblomma:smörblomma:smörblommas:smörblomman:smörblommans:smörblommor:smörblommors:smörblommorna:smörblommornas
+598880r3<substantiv>smörboll:smörboll:smörbolls:smörbollen:smörbollens:smörbollar:smörbollars:smörbollarna:smörbollarnas
+932661r4<substantiv>smördeg:smördeg:smördegs:smördegen:smördegens:smördegar:smördegars:smördegarna:smördegarnas
+COMPOUND(622554, 558055): smör + deg
+798883r3<adjektiv>smörgul:smörgul:smörgult:smörgula:smörgula::::
+551881r4<substantiv>smörgås:smörgås:smörgås:smörgåsen:smörgåsens:smörgåsar:smörgåsars:smörgåsarna:smörgåsarnas
+CUSTOM: y y smörgås
+667413r3<substantiv>smörgåsbord:smörgåsbord:smörgåsbords:smörgåsbordet:smörgåsbordets:smörgåsbord:smörgåsbords:smörgåsborden:smörgåsbordens
+CUSTOM: y y smörgåsbords
+667414r3<substantiv>smörgåstårta:smörgåstårta:smörgåstårtas:smörgåstårtan:smörgåstårtans:smörgåstårtor:smörgåstårtors:smörgåstårtorna:smörgåstårtornas
+576659r3<adjektiv>smörig:smörig:smörigt:smöriga:smöriga::::
+686032r3<substantiv>smörj:smörj:::::::
+595276r3<substantiv>smörja:smörja:smörjas:smörjan:smörjans:smörjor:smörjors:smörjorna:smörjornas
+593380r10<verb>smörja:smörja:smorde:smort:smörjer:smörj:smörjas:smordes:smorts:smörjs, smörjes:smord:smort:smorda:smörjande:
+CUSTOM: y y smörj
+667422r3<substantiv>smörjelse:smörjelse:smörjelses:smörjelsen:smörjelsens:smörjelser:smörjelsers:smörjelserna:smörjelsernas
+CUSTOM: y y smörjelse
+852512r3<substantiv>smörjelsekar:smörjelsekar:smörjelsekars:smörjelsekaret:smörjelsekarets:smörjelsekar:smörjelsekars:smörjelsekaren:smörjelsekarens
+686033r4<substantiv>smörjfett:smörjfett:smörjfetts:smörjfettet:smörjfettets:smörjfetter:smörjfetters:smörjfetterna:smörjfetternas
+COMPOUND(593380, 561658): smörja + fett
+576660r3<adjektiv>smörjig:smörjig:smörjigt:smörjiga:smörjiga::::

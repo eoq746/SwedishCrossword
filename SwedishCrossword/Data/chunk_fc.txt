@@ -1,0 +1,557 @@
+ensen:preferensens:preferenser:preferensers:preferenserna:preferensernas
+CUSTOM: y y preferens
+777302r3<substantiv>preferensaktie::::::::
+COMPOUND(550245, 611796): preferens + aktie
+590645r4<verb>preferera:preferera:prefererade:prefererat:prefererar:preferera:prefereras:prefererades:prefererats:prefereras:prefererad:prefererat:prefererade:prefererande:
+590649r3<verb>prefigera:prefigera:prefigerade:prefigerat:prefigerar:prefigera:::::::::
+552783r4<substantiv>prefix:prefix:prefix:prefixet:prefixets:prefix:prefix:prefixen:prefixens
+CUSTOM: y y prefix
+777303r3<substantiv>prefixavledning::::::::
+COMPOUND(552783, 687088): prefix + avledning
+709096r3<substantiv>pregnans:pregnans:pregnans:pregnansen:pregnansens::::
+695325r4<adjektiv>pregnant:pregnant:pregnant:pregnanta:pregnanta:pregnantare:pregnantast:pregnantaste:pregnante
+957995r3<substantiv>prehab:prehab:prehabs:prehaben:prehabens::::
+CUSTOM: y n
+583084r3<adjektiv>prehistorisk:prehistorisk:prehistoriskt:prehistoriska:prehistoriska::::
+709099r3<verb>preja:preja:prejade:prejat:prejar:preja:prejas:prejades:prejats:prejas:prejad:prejat:prejade::
+702744r3<substantiv>prejning:prejning:prejnings:prejningen:prejningens:prejningar:prejningars:prejningarna:prejningarnas
+CUSTOM: y y prejnings
+590653r3<verb>prejudicera:prejudicera:prejudicerade:prejudicerat:prejudicerar:prejudicera:::::::::
+709107r3<adjektiv>prejudicerande:prejudicerande:prejudicerande:prejudicerande:prejudicerande:!:!:!:
+552784r4<substantiv>prejudikat:prejudikat:prejudikats:prejudikatet:prejudikatets:prejudikat:prejudikats:prejudikaten:prejudikatens
+CUSTOM: y y prejudikat
+801175r3<adjektiv>prejudikatbildande:prejudikatbildande:prejudikatbildande:prejudikatbildande:prejudikatbildande:!:!:!:
+777304r3<substantiv>prejudikatsamling::::::::
+COMPOUND(552784, 597545): prejudikat + samling
+770771r3<substantiv>prekariat:prekariat:prekariats:prekariatet:prekariatets::::
+917455r3<substantiv>prekursor:prekursor:prekursors:prekursorn:prekursorns:prekursorer:prekursorers:prekursorerna:prekursorernas
+695326r3<adjektiv>prekär:prekär:prekärt:prekära:prekära::::
+550246r3<substantiv>prelat:prelat:prelats:prelaten:prelatens:prelater:prelaters:prelaterna:prelaternas
+583087r3<adjektiv>prelatensisk:prelatensisk:prelatensiskt:prelatensiska:prelatensiska::::
+633464r5<adjektiv>preliminär:preliminär:preliminärt:preliminära:preliminära::::preliminäre
+CUSTOM: y y preliminär
+669406r4<substantiv>preliminäravgift:preliminäravgift:preliminäravgifts:preliminäravgiften:preliminäravgiftens:preliminäravgifter:preliminäravgifters:preliminäravgifterna:preliminäravgifternas
+COMPOUND(633464, 548299): preliminär + avgift
+846605r3<verb>preliminärboka:preliminärboka:preliminärbokade:preliminärbokat:preliminärbokar:preliminärboka:preliminärbokas:preliminärbokades:preliminärbokats:preliminärbokas:preliminärbokad:preliminärbokat:preliminärbokade:preliminärbokande:
+590657r3<verb>preludiera:preludiera:preludierade:preludierat:preludierar:preludiera:::::::::
+695327r3<substantiv>preludium:preludium:preludiums:preludiet:preludiets:preludier:preludiers:preludierna:preludiernas
+957728r5<adjektiv>prematur:prematur:prematurt:prematura:prematura::::::::::::
+957732r4<substantiv>prematurbarn:prematurbarn:prematurbarns:prematurbarnet:prematurbarnets:prematurbarn:prematurbarns:prematurbarnen:prematurbarnens
+COMPOUND(957728, 555956): prematur + barn
+957740r4<substantiv>prematurvård:prematurvård:prematurvårds:prematurvården:prematurvårdens::::
+COMPOUND(957728, 599145): prematur + vård
+755543r3<adjektiv>premenstruell:premenstruell:premenstruellt:premenstruella:premenstruella:!:!:!:!
+695329r9<substantiv>premie:premie:premies:premien:premiens:premier:premiers:premierna:premiernas
+CUSTOM: y y premie
+773744r4<substantiv>premiebetalning:premiebetalning:premiebetalnings:premiebetalningen:premiebetalningens:premiebetalningar:premiebetalningars:premiebetalningarna:premiebetalningarnas
+COMPOUND(695329, 596479): premie + betalning
+564053r3<adjektiv>premiefri:premiefri:premiefritt:premiefria:premiefria::::
+647133r5<substantiv>premieobligation:premieobligation:premieobligations:premieobligationen:premieobligationens:premieobligationer:premieobligationers:premieobligationerna:premieobligationernas
+COMPOUND(695329, 647132): premie + obligation
+CUSTOM: y y premieobligations
+647141r4<substantiv>premieobligationslån:premieobligationslån:premieobligationslåns:premieobligationslånet:premieobligationslånets:premieobligationslån:premieobligationslåns:premieobligationslånen:premieobligationslånens
+COMPOUND(647133, 552679): premieobligation + lån
+647147r5<substantiv>premiepension:premiepension:premiepensions:premiepensionen:premiepensionens:premiepensioner:premiepensioners:premiepensionerna:premiepensionernas
+CUSTOM: y y premiepensions
+912155r4<substantiv>premiepensionsdel:premiepensionsdel:premiepensionsdels:premiepensionsdelen:premiepensionsdelens:premiepensionsdelar:premiepensionsdelars:premiepensionsdelarna:premiepensionsdelarnas
+COMPOUND(647147, 551034): premiepension + del
+647155r4<substantiv>premiepensionsmyndighet:premiepensionsmyndighet:premiepensionsmyndighets:premiepensionsmyndigheten:premiepensionsmyndighetens:premiepensionsmyndigheter:premiepensionsmyndigheters:premiepensionsmyndigheterna:premiepensionsmyndigheternas
+COMPOUND(647147, 619016): premiepension + myndighet
+CUSTOM: y y premiepensionsmyndighets
+547493r5<verb>premiera:premiera:premierade:premierat:premierar:premiera:premieras:premierades:premierats:premieras:premierad:premierat:premierade:premierande:
+569930r3<adjektiv>premierbar:premierbar:premierbart:premierbara:premierbara::::
+755546r4<substantiv>premiereserv:premiereserv:premiereservs:premiereserven:premiereservens:premiereserver:premiereservers:premiereserverna:premiereservernas
+COMPOUND(695329, 550381): premie + reserv
+777306r4<substantiv>premiering:premiering:premierings:premieringen:premieringens:premieringar:premieringars:premieringarna:premieringarnas
+CUSTOM: y y premierings
+777305r3<substantiv>premieringsnämnd::::::::
+COMPOUND(777306, 550097): premiering + nämnd
+854742r3<egennamn>Premier League:Premier League:Premier Leagues
+550247r3<substantiv>premiss:premiss:premiss:premissen:premissens:premisser:premissers:premisserna:premissernas
+737062r4<substantiv>premium:premium:premiums:premiet:premiets:premier:premiers:premierna:premiernas
+CUSTOM: y y premium
+921198r4<substantiv>premiumvodka:premiumvodka:premiumvodkas:premiumvodkan:premiumvodkans:!:!:!:!
+COMPOUND(737062, 627699): premium + vodka
+550248r14<substantiv>premiär:premiär:premiärs:premiären:premiärens:premiärer:premiärers:premiärerna:premiärernas
+CUSTOM: y y premiär
+952563r4<substantiv>premiärdopp:premiärdopp:premiärdopps:premiärdoppet:premiärdoppets:premiärdopp:premiärdopps:premiärdoppen:premiärdoppens
+COMPOUND(550248, 552327): premiär + dopp
+953735r4<substantiv>premiärelva:premiärelva:premiärelvas:premiärelvan:premiärelvans:premiärelvor:premiärelvors:premiärelvorna:premiärelvornas
+COMPOUND(550248, 938114): premiär + elva
+724056r4<substantiv>premiärkväll:premiärkväll:premiärkvälls:premiärkvällen:premiärkvällens:premiärkvällar:premiärkvällars:premiärkvällarna:premiärkvällarnas
+COMPOUND(550248, 551653): premiär + kväll
+953745r4<verb>premiärköra:premiärköra:premiärkörde:premiärkört:premiärkör:premiärkör:premiärköras:premiärkördes:premiärkörts:premiärkörs, premiärköres:premiärkörd:premiärkört:premiärkörda:premiärkörande:premiärköro
+COMPOUND(550248, 556899): premiär + köra
+695331r3<substantiv>premiärminister:premiärminister:premiärministers:premiärministern:premiärministerns:premiärministrar:premiärministrars:premiärministrarna:premiärministrarnas
+CUSTOM: y y premiärminister
+547864r12<verb>premiärsända:premiärsända:premiärsände:premiärsänt:premiärsänder:premiärsänd:premiärsändas:premiärsändes:premiärsänts:premiärsänds, premiärsändes:premiärsänd:premiärsänt:premiärsända:premiärsändande:
+COMPOUND(550248, 593413): premiär + sända
+628711r6<substantiv>premiärtal:premiärtal:premiärtals:premiärtalet:premiärtalets:premiärtal:premiärtals:premiärtalen:premiärtalens
+COMPOUND(550248, 553029): premiär + tal
+824185r4<substantiv>premiärtur:premiärtur:premiärturs:premiärturen:premiärturens:premiärturer:premiärturers:premiärturerna:premiärturernas
+COMPOUND(550248, 550715): premiär + tur
+846614r4<verb>premiärvisa:premiärvisa:premiärvisade:premiärvisat:premiärvisar:premiärvisa:premiärvisas:premiärvisades:premiärvisats:premiärvisas:premiärvisad:premiärvisat:premiärvisade:premiärvisande:
+COMPOUND(550248, 548043): premiär + visa
+760345r4<substantiv>premiärår:premiärår:premiärårs:premiäråret:premiärårets:premiärår:premiärårs:premiäråren:premiärårens
+COMPOUND(550248, 553140): premiär + år
+695332r3<adjektiv>prenatal:prenatal:prenatalt:prenatala:prenatala:!:!:!:
+553294r3<egennamn>Prentice:Prentice:Prentices
+732957r4<substantiv>prenumerant:prenumerant:prenumerants:prenumeranten:prenumerantens:prenumeranter:prenumeranters:prenumeranterna:prenumeranternas
+CUSTOM: y y prenumerant
+777314r3<substantiv>prenumerantantal::::::::
+COMPOUND(732957, 552180): prenumerant + antal
+669222r5<substantiv>prenumeration:prenumeration:prenumerations:prenumerationen:prenumerationens:prenumerationer:prenumerationers:prenumerationerna:prenumerationernas
+CUSTOM: y y prenumerations
+669221r4<substantiv>prenumerationsavgift:prenumerationsavgift:prenumerationsavgifts:prenumerationsavgiften:prenumerationsavgiftens:prenumerationsavgifter:prenumerationsavgifters:prenumerationsavgifterna:prenumerationsavgifternas
+COMPOUND(669222, 548299): prenumeration + avgift
+587586r4<verb>prenumerera:prenumerera:prenumererade:prenumererat:prenumererar:prenumerera:prenumereras:prenumererades:prenumererats:prenumereras:prenumererad:prenumererat:prenumererade:prenumererande:
+657649r3<substantiv>preordning:preordning:preordnings:preordningen:preordningens:preordningar:preordningars:preordningarna:preordningarnas
+CUSTOM: y y preordnings
+550249r3<substantiv>preparand:preparand:preparands:preparanden:preparandens:preparander:preparanders:preparanderna:preparandernas
+552786r13<substantiv>preparat:preparat:preparats:preparatet:preparatets:preparat:preparats:preparaten:preparatens
+841829r3<substantiv>preparation:preparation:preparations:preparationen:preparationens:preparationer:preparationers:preparationerna:preparationernas
+798660r3<adjektiv>preparativ:preparativ:preparativt:preparativa:preparativa::::
+841837r3<substantiv>preparator:preparator:preparators:preparatorn:preparatorns:preparatorer:preparatorers:preparatorerna:preparatorernas
+841845r3<substantiv>preparatris:preparatris:preparatris:preparatrisen:preparatrisens:preparatriser:preparatrisers:preparatriserna:preparatrisernas
+547494r18<verb>preparera:preparera:preparerade:preparerat:preparerar:preparera:prepareras:preparerades:preparerats:prepareras:preparerad:preparerat:preparerade:preparerande:
+722735r3<substantiv>preparering:preparering:preparerings:prepareringen:prepareringens:prepareringar:prepareringars:prepareringarna:prepareringarnas
+CUSTOM: y y preparerings
+634309r3<substantiv>preposition:preposition:prepositions:prepositionen:prepositionens:prepositioner:prepositioners:prepositionerna:prepositionernas
+CUSTOM: y y prepositions
+841852r3<adjektiv>prepositionell:prepositionell:prepositionellt:prepositionella:prepositionella::::
+897704r3<substantiv>prepress:prepress:::::::
+CUSTOM: y n prepress
+628766r6<adjektiv>prepubertal:prepubertal:prepubertalt:prepubertala:prepubertala::::::::::::
+628572r5<substantiv>prerafaelit:prerafaelit:prerafaelits:prerafaeliten:prerafaelitens:prerafaeliter:prerafaeliters:prerafaeliterna:prerafaeliternas
+583090r3<adjektiv>prerafaelitisk:prerafaelitisk:prerafaelitiskt:prerafaelitiska:prerafaelitiska::::
+777327r3<substantiv>prerogativ:prerogativ:prerogativs:prerogativet:prerogativets:prerogativ:prerogativs:prerogativen:prerogativens
+777315r3<substantiv>presbyterian:presbyterian:presbyterians:presbyterianen:presbyterianens:presbyterianer:presbyterianers:presbyterianerna:presbyterianernas
+777323r3<adjektiv>presbyteriansk:presbyteriansk:presbyterianskt:presbyterianska:presbyterianska:!:!:!:presbyterianske
+597476r3<substantiv>presenning:presenning:presennings:presenningen:presenningens:presenningar:presenningars:presenningarna:presenningarnas
+CUSTOM: y y presennings
+638001r5<substantiv>presens:presens:::::::
+777333r3<substantiv>presensform:presensform:presensforms:presensformen:presensformens:presensformer:presensformers:presensformerna:presensformernas
+984918r4<substantiv>presensparticip:presensparticip:presensparticips:presensparticipet:presensparticipets:presensparticip:presensparticips:presensparticipen:presensparticipens
+COMPOUND(638001, 694355): presens + particip
+777341r3<substantiv>presensändelse:presensändelse:presensändelses:presensändelsen:presensändelsens:presensändelser:presensändelsers:presensändelserna:presensändelsernas
+571180r3<adjektiv>present:present:present:presenta:presenta::::
+550251r4<substantiv>present:present:presents:presenten:presentens:presenter:presenters:presenterna:presenternas
+CUSTOM: y y present
+570862r4<adjektiv>presentabel:presentabel:presentabelt:presentabla:presentabla::::presentable
+695333r3<substantiv>presentation:presentation:presentations:presentationen:presentationens:presentationer:presentationers:presentationerna:presentationernas
+CUSTOM: y y presentations
+702752r4<substantiv>presentatör:presentatör:presentatörs:presentatören:presentatörens:presentatörer:presentatörers:presentatörerna:presentatörernas
+766036r4<substantiv>presentbod:presentbod:presentbods:presentboden:presentbodens:presentbodar:presentbodars:presentbodarna:presentbodarnas
+COMPOUND(550251, 550913): present + bod
+547495r5<verb>presentera:presentera:presenterade:presenterat:presenterar:presentera:presenteras:presenterades:presenterats:presenteras:presenterad:presenterat:presenterade:presenterande:
+766033r3<adjektiv>presentförpackad:presentförpackad:presentförpackat:presentförpackade:presentförpackade:!:!:!:
+552788r3<substantiv>presentkort:presentkort:presentkorts:presentkortet:presentkortets:presentkort:presentkorts:presentkorten:presentkortens
+CUSTOM: y y presentkorts
+587590r3<verb>preservera:preservera:preserverade:preserverat:preserverar:preservera:::::::::
+962921r3<substantiv>preses:preses:::::::
+550252r11<substantiv>president:president:presidents:presidenten:presidentens:presidenter:presidenters:presidenterna:presidenternas
+CUSTOM: y y president +president
+628315r6<substantiv>presidented:presidented:presidenteds:presidenteden:presidentedens:presidenteder:presidenteders:presidentederna:presidentedernas
+COMPOUND(550252, 557662): president + ed
+628086r6<substantiv>presidentfru:presidentfru:presidentfrus:presidentfrun:presidentfruns:presidentfruar:presidentfruars:presidentfruarna:presidentfruarnas
+COMPOUND(550252, 556156): president + fruga, fru
+712741r4<substantiv>presidentkandidat:presidentkandidat:presidentkandidats:presidentkandidaten:presidentkandidatens:presidentkandidater:presidentkandidaters:presidentkandidaterna:presidentkandidaternas
+COMPOUND(550252, 549427): president + kandidat
+922202r4<substantiv>presidentklan:presidentklan:presidentklans:presidentklanen:presidentklanens:presidentklaner:presidentklaners:presidentklanerna:presidentklanernas
+COMPOUND(550252, 549526): president + klan
+768777r4<substantiv>presidentråd:presidentråd:presidentråds:presidentrådet:presidentrådets:presidentråd:presidentråds:presidentråden:presidentrådens
+COMPOUND(550252, 552853): president + råd
+755547r3<substantiv>presidentskap:presidentskap:presidentskaps:presidentskapet:presidentskapets::::
+633502r4<substantiv>presidentstyre:presidentstyre:presidentstyres:presidentstyret:presidentstyrets:presidentstyren:presidentstyrens:presidentstyrena:presidentstyrenas
+COMPOUND(550252, 626589): president + styre
+769610r4<substantiv>presidentur:presidentur:presidenturs:presidenturen:presidenturens:presidenturer:presidenturers:presidenturerna:presidenturernas
+552789r4<substantiv>presidentval:presidentval:presidentvals:presidentvalet:presidentvalets:presidentval:presidentvals:presidentvalen:presidentvalens
+CUSTOM: y y presidentvals
+702760r4<substantiv>presidentvalskampanj:presidentvalskampanj:presidentvalskampanjs:presidentvalskampanjen:presidentvalskampanjens:presidentvalskampanjer:presidentvalskampanjers:presidentvalskampanjerna:presidentvalskampanjernas
+COMPOUND(552789, 549423): presidentval + kampanj
+590661r3<verb>presidera:presidera:presiderade:presiderat:presiderar:presidera:::::::::
+624142r4<substantiv>presidium:presidium:presidiums:presidiet:presidiets:presidier:presidiers:presidierna:presidiernas
+587594r4<verb>preskribera:preskribera:preskriberade:preskriberat:preskriberar:preskribera:preskriberas:preskriberades:preskriberats:preskriberas:preskriberad:preskriberat:preskriberade:preskriberande:
+702768r3<adjektiv>preskriberad:preskriberad:preskriberat:preskriberade:preskriberade:!:!:!:!
+755552r5<substantiv>preskription:preskription:preskriptions:preskriptionen:preskriptionens:preskriptioner:preskriptioners:preskriptionerna:preskriptionernas
+CUSTOM: y y preskriptions
+755567r4<substantiv>preskriptionslag:preskriptionslag:preskriptionslags:preskriptionslagen:preskriptionslagens:preskriptionslagar:preskriptionslagars:preskriptionslagarna:preskriptionslagarnas
+COMPOUND(755552, 551690): preskription + lag
+755551r4<substantiv>preskriptionstid:preskriptionstid:preskriptionstids:preskriptionstiden:preskriptionstidens:preskriptionstider:preskriptionstiders:preskriptionstiderna:preskriptionstidernas
+COMPOUND(755552, 550665): preskription + tid
+559017r22<substantiv>press:press:press:pressen:pressens:pressar:pressars:pressarna:pressarnas
+CUSTOM: y y press
+547496r8<verb>pressa:pressa:pressade:pressat:pressar:pressa:pressas:pressades:pressats:pressas:pressad:pressat:pressade:pressande:
+CUSTOM: y y press
+952571r4<substantiv>pressanka:pressanka:pressankas:pressankan:pressankans:pressankor:pressankors:pressankorna:pressankornas
+COMPOUND(559017, 556007): press + anka
+706034r4<adjektiv>pressansvarig:pressansvarig:pressansvarigt:pressansvariga:pressansvariga:!:!:!:pressansvarige
+COMPOUND(559017, 564677): press + ansvarig
+769614r3<substantiv>pressare:pressare:pressares:pressaren:pressarens:pressare:pressares:pressarna:pressarnas
+631059r3<substantiv>pressarfot:pressarfot:pressarfots:pressarfoten:pressarfotens::::
+569933r3<adjektiv>pressbar:pressbar:pressbart:pressbara:pressbara::::
+760352r4<substantiv>pressbyrå:pressbyrå:pressbyrås:pressbyrån:pressbyråns:pressbyråer:pressbyråers:pressbyråerna:pressbyråernas
+CUSTOM: y y pressbyrå
+760360r3<substantiv>pressbyråkiosk::::::::
+COMPOUND(760352, 549524): pressbyrå + kiosk
+936184r4<substantiv>presschef:presschef:presschefs:presschefen:presschefens:presschefer:presschefers:presscheferna:presschefernas
+COMPOUND(559017, 548529): press + chef
+851827r3<substantiv>pressduk:pressduk:pressduks:pressduken:pressdukens:pressdukar:pressdukars:pressdukarna:pressdukarnas
+703971r3<substantiv>pressekreterare:pressekreterare:pressekreterares:pressekreteraren:pressekreterarens:pressekreterare:pressekreterares:pressekreterarna:pressekreterarnas
+841860r3<substantiv>presseri:presseri:presseris:presseriet:presseriets::::
+583093r3<adjektiv>pressetisk:pressetisk:pressetiskt:pressetiska:pressetiska::::
+711129r3<substantiv>pressfrihet:pressfrihet:pressfrihets:pressfriheten:pressfrihetens:pressfriheter:pressfriheters:pressfriheterna:pressfriheternas
+893709r4<verb>pressgjuta:pressgjuta:pressgöt:pressgjutit:pressgjuter:pressgjut:pressgjutas:pressgöts:pressgjutits:pressgjuts, pressgjutes:pressgjuten:pressgjutet:pressgjutna:pressgjutande:
+COMPOUND(547496, 558963): pressa + gjuta
+952581r4<substantiv>presshord:presshord:presshords:presshorden:presshordens:presshorder:presshorders:presshorderna:presshordernas
+COMPOUND(559017, 549217): press + hord
+860704r4<substantiv>pressinformatör:pressinformatör:pressinformatörs:pressinformatören:pressinformatörens:pressinformatörer:pressinformatörers:pressinformatörerna:pressinformatörernas
+COMPOUND(559017, 549323): press + informatör
+919998r4<substantiv>presskonferens:presskonferens:presskonferens:presskonferensen:presskonferensens:presskonferenser:presskonferensers:presskonferenserna:presskonferensernas
+COMPOUND(559017, 549618): press + konferens
+769619r4<verb>presslägga:presslägga:presslade, pressla:presslagt:presslägger:presslägg:pressläggas:presslades:presslagts:pressläggs, presslägges:presslagd:presslagt:presslagda:pressläggande:
+COMPOUND(559017, 556585): press + lägga
+695334r4<substantiv>pressmeddelande:pressmeddelande:pressmeddelandes:pressmeddelandet:pressmeddelandets:pressmeddelanden:pressmeddelandens:pressmeddelandena:pressmeddelandenas
+COMPOUND(559017, 560527): press + meddelande
+937678r4<substantiv>pressmöte:pressmöte:pressmötes:pressmötet:pressmötets:pressmöten:pressmötens:pressmötena:pressmötenas
+COMPOUND(559017, 560760): press + möte
+713044r4<substantiv>pressning:pressning:pressnings:pressningen:pressningens:pressningar:pressningars:pressningarna:pressningarnas
+674450r4<substantiv>pressofficer:pressofficer:pressofficers:pressofficeren, pressofficern:pressofficerens, pressofficerns:pressofficerer, pressofficerare:pressofficerers, pressofficerare:pressofficererna, pressofficerarna:pressofficerernas, pressofficerarnas
+COMPOUND(559017, 603028): press + officer
+794339r3<adjektiv>presspassad:presspassad:presspassat:presspassade:presspassade:!:!:!:
+590665r3<verb>presspolera:presspolera:presspolerade:presspolerat:presspolerar:presspolera:::::::::
+695336r3<substantiv>pressrelease:pressrelease:pressreleases:pressreleasen:pressreleasens:pressreleaser:pressreleasers:pressreleaserna:pressreleasernas
+827707r3<substantiv>pressråd:pressråd:pressråds:pressrådet:pressrådets:pressråd:pressråds:pressråden:pressrådens
+552790r3<substantiv>presstopp:presstopp:presstopps:presstoppet:presstoppets:presstopp:presstopps:presstoppen:presstoppens
+755575r3<substantiv>presstöd:presstöd:presstöds:presstödet:presstödets::::
+777375r3<substantiv>pressylta:pressylta:pressyltas:pressyltan:pressyltans::::
+658755r5<substantiv>prestanda:::::prestanda:prestandas:prestandan:prestandans
+CUSTOM: y y prestanda
+777349r4<substantiv>prestandakrav:prestandakrav:prestandakravs:prestandakravet:prestandakravets:prestandakrav:prestandakravs:prestandakraven:prestandakravens
+COMPOUND(658755, 552582): prestanda + krav
+695344r5<substantiv>prestation:prestation:prestations:prestationen:prestationens:prestationer:prestationers:prestationerna:prestationernas
+CUSTOM: y y prestations
+794342r3<adjektiv>prestationsbetingad:prestationsbetingad:prestationsbetingat:prestationsbetingade:prestationsbetingade:!:!:!:
+567402r3<adjektiv>prestationsduglig:prestationsduglig:prestationsdugligt:prestationsdugliga:prestationsdugliga::::
+567405r3<adjektiv>prestationsenlig:prestationsenlig:prestationsenligt:prestationsenliga:prestationsenliga::::
+564056r3<adjektiv>prestationsfri:prestationsfri:prestationsfritt:prestationsfria:prestationsfria::::
+735140r5<substantiv>prestationsförmåga:prestationsförmåga:prestationsförmågas:prestationsförmågan:prestationsförmågans:!:!:!:!
+COMPOUND(695344, 594097): prestation + förmåga
+695345r4<substantiv>prestationsångest:prestationsångest:prestationsångests:prestationsångesten:prestationsångestens:!:!:!:!
+COMPOUND(695344, 555188): prestation + ångest
+590669r4<verb>prestavera:prestavera:prestaverade:prestaverat:prestaverar:prestavera:prestaveras:prestaverades:prestaverats:prestaveras:prestaverad:prestaverat:prestaverade:prestaverande:
+587598r4<verb>prestera:prestera:presterade:presterat:presterar:prestera:presteras:presterades:presterats:presteras:presterad:presterat:presterade:presterande:
+695349r6<substantiv>prestige:prestige:prestiges:prestigen:prestigens:!:!:!:!
+CUSTOM: y y prestige
+794345r3<adjektiv>prestigebetonad:prestigebetonad:prestigebetonat:prestigebetonade:prestigebetonade:!:!:!:
+695351r4<substantiv>prestigefråga:prestigefråga:prestigefrågas:prestigefrågan:prestigefrågans:prestigefrågor:prestigefrågors:prestigefrågorna:prestigefrågornas
+COMPOUND(695349, 594085): prestige + fråga
+800133r3<adjektiv>prestigefylld:prestigefylld:prestigefyllt:prestigefyllda:prestigefyllda::::
+794348r3<adjektiv>prestigeladdad:prestigeladdad:prestigeladdat:prestigeladdade:prestigeladdade:!:!:!:
+565135r3<adjektiv>prestigelös:prestigelös:prestigelöst:prestigelösa:prestigelösa::::
+777356r3<substantiv>prestigelöshet:prestigelöshet:prestigelöshets:prestigelösheten:prestigelöshetens::::
+777367r4<substantiv>prestigesak:prestigesak:prestigesaks:prestigesaken:prestigesakens:prestigesaker:prestigesakers:prestigesakerna:prestigesakernas
+COMPOUND(695349, 550443): prestige + sak
+921204r4<substantiv>prestigevin:prestigevin:prestigevins:prestigevinet:prestigevinets:prestigeviner:prestigeviners:prestigevinerna:prestigevinernas
+COMPOUND(695349, 600515): prestige + vin
+984924r3<adverb>presto:presto
+587599r4<verb>presumera:presumera:presumerade:presumerat:presumerar:presumera:presumeras:presumerades:presumerats:presumeras:presumerad:presumerat:presumerade:presumerande:
+734323r3<substantiv>presumtion:presumtion:presumtions:presumtionen:presumtionens:presumtioner:presumtioners:presumtionerna:presumtionernas
+CUSTOM: y y presumtions
+695359r4<adjektiv>presumtiv:presumtiv:presumtivt:presumtiva:presumtiva::::presumtive
+695362r4<substantiv>pretendent:pretendent:pretendents:pretendenten:pretendentens:pretendenter:pretendenters:pretendenterna:pretendenternas
+587603r3<verb>pretendera:pretendera:pretenderade:pretenderat:pretenderar:pretendera:::::::::
+695360r3<substantiv>pretention:pretention:pretentions:pretentionen:pretentionens:pretentioner:pretentioners:pretentionerna:pretentionernas
+CUSTOM: y y pretentions
+564059r3<adjektiv>pretentionsfri:pretentionsfri:pretentionsfritt:pretentionsfria:pretentionsfria::::
+565138r3<adjektiv>pretentionslös:pretentionslös:pretentionslöst:pretentionslösa:pretentionslösa::::
+636769r5<adjektiv>pretentiös:pretentiös:pretentiöst:pretentiösa:pretentiösa:pretentiösare:pretentiösast:pretentiösaste:pretentiöse
+695370r4<substantiv>preteritum:preteritum:::::::
+CUSTOM: y y preteritum
+788885r4<substantiv>preteritumböjning:preteritumböjning:preteritumböjnings:preteritumböjningen:preteritumböjningens:preteritumböjningar:preteritumböjningars:preteritumböjningarna:preteritumböjningarnas
+COMPOUND(695370, 633148): preteritum + böjning
+798663r3<adjektiv>pretiös:pretiös:pretiöst:pretiösa:pretiösa::::
+962923r3<adjektiv>pretto:pretto:::::::::::::::
+777379r3<substantiv>preussare:preussare:preussares:preussaren:preussarens:preussare:preussares:preussarna:preussarnas
+712878r3<egennamn>Preussen:Preussen:Preussens
+CUSTOM: y n Preussen
+583096r4<adjektiv>preussisk:preussisk:preussiskt:preussiska:preussiska::::preussiske
+946339r3<substantiv>prevalens:prevalens::prevalensen:::::
+984925r3<adjektiv>prevalent:prevalent:prevalent:prevalenta:prevalenta::::::::::::
+755579r3<substantiv>prevention:prevention:preventions:preventionen:preventionens::::
+CUSTOM: y y preventions
+695371r5<adjektiv>preventiv:preventiv:preventivt:preventiva:preventiva:!:!:!:::::::::
+CUSTOM: y y preventiv
+695372r5<substantiv>preventivmedel:preventivmedel:preventivmedels:preventivmedlet:preventivmedlets:preventivmedel:preventivmedels:preventivmedlen:preventivmedlens
+COMPOUND(695371, 560532): preventiv + medel
+CUSTOM: y y preventivmedels
+777386r3<substantiv>preventivmedelsrådgivning::::::::
+COMPOUND(695372, 696546): preventivmedel + rådgivning
+679592r3<substantiv>preventivpiller:preventivpiller:preventivpillers:preventivpillret:preventivpillrets:preventivpiller:preventivpillers:preventivpillren, preventivpillerna:preventivpillrens, preventivpillernas
+620732r4<adverb>prick:prick
+CUSTOM: y n
+551775r3<substantiv>prick:prick:pricks:pricken:prickens:prickar:prickars:prickarna:prickarnas
+547497r4<verb>pricka:pricka:prickade:prickat:prickar:pricka:prickas:prickades:prickats:prickas:prickad:prickat:prickade::
+841881r3<substantiv>prickare:prickare:prickares:prickaren:prickarens:prickare:prickares:prickarna:prickarnas
+564062r4<adjektiv>prickfri:prickfri:prickfritt:prickfria:prickfria::::prickfrie
+575389r5<adjektiv>prickig:prickig:prickigt:prickiga:prickiga:prickigare:prickigast:prickigaste:prickige
+984927r3<substantiv>prickmönster:prickmönster:prickmönsters:prickmönstret:prickmönstrets:prickmönster:prickmönsters:prickmönstren:prickmönstrens
+755583r3<substantiv>prickning:prickning:pricknings:prickningen:prickningens:prickningar:prickningars:prickningarna:prickningarnas
+984933r3<substantiv>pricksjuka:pricksjuka:pricksjukas:pricksjukan:pricksjukans::::
+663344r6<verb>prickskjuta:prickskjuta:pricksköt:prickskjutit:prickskjuter:::::::::prickskjutande:
+COMPOUND(620732, 593371): prick + skjuta
+755591r3<substantiv>prickskjutning:prickskjutning:prickskjutnings:prickskjutningen:prickskjutningens::::
+695378r3<substantiv>prickskytt:prickskytt:prickskytts:prickskytten:prickskyttens:prickskyttar:prickskyttars:prickskyttarna:prickskyttarnas
+777388r3<substantiv>prickskytte:prickskytte:prickskyttes:prickskyttet:prickskyttets::::
+695387r4<adjektiv>pricksäker:pricksäker:pricksäkert:pricksäkra:pricksäkra:pricksäkrare:pricksäkrast:pricksäkraste:pricksäkre
+913281r3<substantiv>pridefestival:pridefestival:pridefestivals:pridefestivalen:pridefestivalens:pridefestivaler:pridefestivalers:pridefestivalerna:pridefestivalernas
+965762r3<substantiv>prideparad:prideparad:prideparads:prideparaden:prideparadens:prideparader:prideparaders:prideparaderna:prideparadernas
+735149r3<substantiv>prilla:prilla:prillas:prillan:prillans:prillor:prillors:prillorna:prillornas
+567408r4<adjektiv>prillig:prillig:prilligt:prilliga:prilliga:prilligare:prilligast:prilligaste:prillige
+627759r6<substantiv>prillighet:prillighet:prillighets:prilligheten:prillighetens:prilligheter:prilligheters:prilligheterna:prilligheternas
+676673r3<substantiv>prim:prim:prims:primen:primens:primer:primers:primerna:primernas
+CUSTOM: y n
+571181r3<adjektiv>prima:prima:prima::prima:!:!:!:
+695391r3<substantiv>primadonna:primadonna:primadonnas:primadonnan:primadonnans:primadonnor:primadonnors:primadonnorna:primadonnornas
+695399r3<substantiv>primalskrik:primalskrik:primalskriks:primalskriket:primalskrikets:primalskrik:primalskriks:primalskriken:primalskrikens
+695405r3<substantiv>primalterapi:primalterapi:primalterapis:primalterapin:primalterapins::::
+695409r3<substantiv>primat:primat:primats:primaten:primatens:primater:primaters:primaterna:primaternas
+695417r3<substantiv>primfaktor:primfaktor:primfaktors:primfaktorn:primfaktorns:primfaktorer:primfaktorers:primfaktorerna:primfaktorernas
+695418r3<adjektiv>primitiv:primitiv:primitivt:primitiva:primitiva:primitivare:primitivast:primitivaste:primitive
+695424r3<substantiv>primitivism:primitivism:primitivisms:primitivismen:primitivismens:!:!:!:!
+777393r3<substantiv>primitivist:primitivist:primitivists:primitivisten:primitivistens:primitivister:primitivisters:primitivisterna:primitivisternas
+583097r3<adjektiv>primitivistisk:primitivistisk:primitivistiskt:primitivistiska:primitivistiska::::
+695420r3<substantiv>primitivitet:primitivitet:primitivitets:primitiviteten:primitivitetens:!:!:!:!
+626007r3<substantiv>primtal:primtal:primtals:primtalet:primtalets:primtal:primtals:primtalen:primtalens
+806916r5<substantiv>primtecken:primtecken:primteckens:primtecknet:primtecknets:primtecken:primteckens:primtecknen:primtecknens
+841894r3<substantiv>primula:primula:primulas:primulan:primulans:primulor:primulors:primulorna:primulornas
+787635r3<substantiv>primus:primus:primus:primusen:primusens:primusar:primusars:primusarna:primusarnas
+841902r3<substantiv>primuskök:primuskök:primusköks:primusköket:primuskökets:primuskök:primusköks:primusköken:primuskökens
+695428r10<adjektiv>primär:primär:primärt:primära:primära::::
+CUSTOM: y y primär
+875295r4<substantiv>primärbindning:primärbindning:primärbindnings:primärbindningen:primärbindningens:primärbindningar:primärbindningars:primärbindningarna:primärbindningarnas
+COMPOUND(695428, 592779): primär + bindning
+875551r4<substantiv>primärfas:primärfas:primärfas:primärfasen:primärfasens:primärfaser:primärfasers:primärfaserna:primärfasernas
+COMPOUND(695428, 558576): primär + fas
+695429r4<substantiv>primärstadium:primärstadium:primärstadiums:primärstadiet:primärstadiets:primärstadier:primärstadiers:primärstadierna:primärstadiernas
+COMPOUND(695428, 622188): primär + stadium
+695437r6<substantiv>primärval:primärval:primärvals:primärvalet:primärvalets:primärval:primärvals:primärvalen:primärvalens
+COMPOUND(695428, 555548): primär + val
+CUSTOM: y y primärvals
+695443r6<substantiv>primärvård:primärvård:primärvårds:primärvården:primärvårdens:!:!:!:!
+COMPOUND(695428, 599145): primär + vård
+CUSTOM: y y primärvårds
+952591r4<substantiv>primärvårdsakut:primärvårdsakut:primärvårdsakuts:primärvårdsakuten:primärvårdsakutens:primärvårdsakuter:primärvårdsakuters:primärvårdsakuterna:primärvårdsakuternas
+COMPOUND(695443, 600971): primärvård + akut
+755595r3<substantiv>primärvårdsnämnd::::::::
+COMPOUND(695443, 550097): primärvård + nämnd
+695447r4<substantiv>primör:primör:primörs:primören:primörens:primörer:primörers:primörerna:primörernas
+CUSTOM: y y primör
+917957r3<substantiv>primörfrossa:primörfrossa:primörfrossas:primörfrossan:primörfrossans::::
+917963r4<substantiv>primörmiddag:primörmiddag:primörmiddags:primörmiddagen:primörmiddagens:primörmiddagar:primörmiddagars:primörmiddagarna:primörmiddagarnas
+COMPOUND(695447, 551723): primör + middag
+550253r17<substantiv>princip:princip:princips:principen:principens:principer:principers:principerna:principernas
+CUSTOM: y y princip
+841908r3<substantiv>principal:principal:principals:principalen:principalens:principaler:principalers:principalerna:principalernas
+607829r3<substantiv>principbeslut:principbeslut:principbesluts:principbeslutet:principbeslutets:principbeslut:principbesluts:principbesluten:principbeslutens
+567411r3<adjektiv>principenlig:principenlig:principenligt:principenliga:principenliga::::
+695455r4<substantiv>principfråga:principfråga:principfrågas:principfrågan:principfrågans:principfrågor:principfrågors:principfrågorna:principfrågornas
+COMPOUND(550253, 594085): princip + fråga
+695456r3<adjektiv>principiell:principiell:principiellt:principiella:principiella::::
+565141r3<adjektiv>principlös:principlös:principlöst:principlösa:principlösa::::
+777401r3<substantiv>principlöshet:principlöshet:principlöshets:principlösheten:principlöshetens::::
+575390r3<adjektiv>principmässig:principmässig:principmässigt:principmässiga:principmässiga::::
+627777r12<substantiv>principsak:principsak:principsaks:principsaken:principsakens:principsaker:principsakers:principsakerna:principsakernas
+575393r3<adjektiv>principvidrig:principvidrig:principvidrigt:principvidriga:principvidriga::::
+551776r5<substantiv>prins:prins:prins:prinsen:prinsens:prinsar:prinsars:prinsarna:prinsarnas
+CUSTOM: y y prins
+693250r6<substantiv>prinsessa:prinsessa:prinsessas:prinsessan:prinsessans:prinsessor:prinsessors:prinsessorna:prinsessornas
+CUSTOM: y y prinsess
+755596r4<substantiv>prinsesstårta:prinsesstårta:prinsesstårtas:prinsesstårtan:prinsesstårtans:prinsesstårtor:prinsesstårtors:prinsesstårtorna:prinsesstårtornas
+COMPOUND(693250, 595678): prinsessa + tårta
+755604r4<substantiv>prinskorv:prinskorv:prinskorvs:prinskorven:prinskorvens:prinskorvar:prinskorvars:prinskorvarna:prinskorvarnas
+COMPOUND(551776, 551609): prins + korv
+904780r3<verb>printa:printa:printade:printat:printar:printa:printas:printades:printats:printas:printad:printat:printade:printande:!
+CUSTOM: y n y
+894760r3<substantiv>printer:printer:printers:printern:printerns:printrar:printrars:printrarna:printrarnas
+CUSTOM: y n y
+966510r4<substantiv>prio:prio:::::::
+CUSTOM: y n y
+966512r4<substantiv>priolista:priolista:priolistas:priolistan:priolistans:priolistor:priolistors:priolistorna:priolistornas
+COMPOUND(966510, 555151): prio + lista
+904789r3<substantiv>prion:prion:prions:prionen:prionens:prioner:prioners:prionerna:prionernas
+CUSTOM: y n y
+904797r3<substantiv>prior:prior:priors:priorn:priorns:priorer:priorers:priorerna:priorernas
+CUSTOM: y n y
+984937r3<substantiv>priorat:priorat:priorats:prioratet:prioratets:priorat:priorats:prioraten:prioratens
+CUSTOM: y n
+841916r3<substantiv>priorinna:priorinna:priorinnas:priorinnan:priorinnans:priorinnor:priorinnors:priorinnorna:priorinnornas
+547498r4<verb>prioritera:prioritera:prioriterade:prioriterat:prioriterar:prioritera:prioriteras:prioriterades:prioriterats:prioriteras:prioriterad:prioriterat:prioriterade::
+794351r3<adjektiv>prioriterad:prioriterad:prioriterat:prioriterade:prioriterade:!:!:!:
+708209r3<substantiv>prioriterande:prioriterande:prioriterandes:prioriterandet:prioriterandets::::
+695457r4<substantiv>prioritering:prioritering:prioriterings:prioriteringen:prioriteringens:prioriteringar:prioriteringars:prioriteringarna:prioriteringarnas
+CUSTOM: y y prioriterings
+702769r4<substantiv>prioriteringsfråga:prioriteringsfråga:prioriteringsfrågas:prioriteringsfrågan:prioriteringsfrågans:prioriteringsfrågor:prioriteringsfrågors:prioriteringsfrågorna:prioriteringsfrågornas
+COMPOUND(695457, 594085): prioritering + fråga
+702777r5<substantiv>prioritet:prioritet:prioritets:prioriteten:prioritetens:prioriteter:prioriteters:prioriteterna:prioriteternas
+CUSTOM: y y prioritets
+695458r6<substantiv>prioritetsordning:prioritetsordning:prioritetsordnings:prioritetsordningen:prioritetsordningens:prioritetsordningar:prioritetsordningars:prioritetsordningarna:prioritetsordningarnas
+COMPOUND(702777, 597379): prioritet + ordning
+CUSTOM: y y prioritetsordnings
+595939r26<substantiv>pris:pris:pris:priset:prisets:pris, priser:pris, prisers:prisen, priserna:prisens, prisernas
+DEFINITION 1: Något man kan få eller vinna efter en prestation, t.ex. seger i en tävling
+CUSTOM: y y pris
+595933r4<substantiv>pris:pris:pris:prisen:prisens:prisar:prisars:prisarna:prisarnas
+DEFINITION 1: En portion snus
+595941r5<substantiv>pris:pris:pris:priset:prisets:!:!:!:!
+DEFINITION 1: Lov, beröm
+CUSTOM: y y pris
+595932r59<substantiv>pris:pris:pris:priset:prisets:priser:prisers:priserna:prisernas
+DEFINITION 1: Kostnad [ för någonting ]
+CUSTOM: y y pris
+547499r5<verb>prisa:prisa:prisade:prisat:prisar:prisa:prisas:prisades:prisats:prisas:prisad:prisat:prisade::
+DEFINITION 1: Berömma, "höja till skyarna"
+695478r3<substantiv>prisande:prisande:prisandes:prisandet:prisandets::::
+695466r4<substantiv>prisavvikelse:prisavvikelse:prisavvikelses:prisavvikelsen:prisavvikelsens:prisavvikelser:prisavvikelsers:prisavvikelserna:prisavvikelsernas
+COMPOUND(595932, 591988): pris + avvikelse
+CUSTOM: y y prisavvikelse
+800136r3<adjektiv>prisbelagd:prisbelagd:prisbelagt:prisbelagda:prisbelagda::::
+794353r3<adjektiv>prisbelönad:prisbelönad:prisbelönat:prisbelönade:prisbelönade:!:!:!:
+695474r3<adjektiv>prisbelönt:prisbelönt:prisbelönt:prisbelönta:prisbelönta:!:!:!:prisbelönte
+934560r4<substantiv>prisbild:prisbild:prisbilds:prisbilden:prisbildens:prisbilder:prisbilders:prisbilderna:prisbildernas
+COMPOUND(595932, 548373): pris + bild
+567414r3<adjektiv>prisbillig:prisbillig:prisbilligt:prisbilliga:prisbilliga::::
+965661r4<substantiv>prischock:prischock:prischocks:prischocken:prischockens:prischocker:prischockers:prischockerna:prischockernas
+COMPOUND(595932, 548532): pris + chock
+583100r3<adjektiv>priselastisk:priselastisk:priselastiskt:priselastiska:priselastiska::::
+892362r4<substantiv>prisfall:prisfall:prisfalls:prisfallet:prisfallets:prisfall:prisfalls:prisfallen:prisfallens
+COMPOUND(595932, 552371): pris + fall
+888374r4<substantiv>prisgap:prisgap:prisgaps:prisgapet:prisgapets:prisgap:prisgaps:prisgapen:prisgapens
+COMPOUND(595932, 552420): pris + gap
+CUSTOM: y n n
+695480r6<verb>prisgiva, prisge:prisge, prisgiva:prisgav:prisgett, prisgivit:prisger, prisgiver:prisge, prisgiv:prisges, prisgivas:prisgavs:prisgetts, prisgivits:prisges, prisgives, prisgivs:prisgiven:prisgivet:prisgivna:prisgivande:
+COMPOUND(595941, 556584): pris + giva, ge
+894624r4<substantiv>prishöjning:prishöjning:prishöjnings:prishöjningen:prishöjningens:prishöjningar:prishöjningars:prishöjningarna:prishöjningarnas
+COMPOUND(595932, 644432): pris + höjning
+695496r4<substantiv>prisklass:prisklass:prisklass:prisklassen:prisklassens:prisklasser:prisklassers:prisklasserna:prisklassernas
+COMPOUND(595932, 549530): pris + klass
+587607r3<verb>priskontrollera:priskontrollera:priskontrollerade:priskontrollerat:priskontrollerar:priskontrollera:::::::::
+939132r4<substantiv>priskrig:priskrig:priskrigs:priskriget:priskrigets:priskrig:priskrigs:priskrigen:priskrigens
+COMPOUND(595932, 552585): pris + krig
+567417r3<adjektiv>priskänslig:priskänslig:priskänsligt:priskänsliga:priskänsliga::::
+598685r3<substantiv>prislapp:prislapp:prislapps:prislappen:prislappens:prislappar:prislappars:prislapparna:prislapparnas
+695508r4<substantiv>prisläge:prisläge:prisläges:prisläget:prislägets:prislägen:prislägens:prislägena:prislägenas
+COMPOUND(595939, 612680): pris + läge
+695501r3<substantiv>prisma:prisma:prismas:prisman, prismat:prismans, prismats:prismor, prismer:prismors, prismers:prismorna, prismerna:prismornas, prismernas
+794357r3<adjektiv>prismaformad:prismaformad:prismaformat:prismaformade:prismaformade:!:!:!:
+575396r3<adjektiv>prismaformig:prismaformig:prismaformigt:prismaformiga:prismaformiga::::
+841924r3<substantiv>prismakikare:prismakikare:prismakikares:prismakikaren:prismakikarens:prismakikare:prismakikares:prismakikarna:prismakikarnas
+583103r3<adjektiv>prismatisk:prismatisk:prismatiskt:prismatiska:prismatiska::::
+633512r6<verb>prismärka:prismärka:prismärkte:prismärkt:prismärker:prismärk:prismärkas:prismärktes:prismärkts:prismärks:prismärkt:prismärkt:prismärkta:prismärkande:
+COMPOUND(595932, 585833): pris + märka
+575399r3<adjektiv>prismässig:prismässig:prismässigt:prismässiga:prismässiga::::
+695509r4<substantiv>prisnivå:prisnivå:prisnivås:prisnivån:prisnivåns:prisnivåer:prisnivåers:prisnivåerna:prisnivåernas
+COMPOUND(595939, 611085): pris + nivå
+587611r3<verb>prisnotera:prisnotera:prisnoterade:prisnoterat:prisnoterar:prisnotera:::::::::
+934569r4<substantiv>prispall:prispall:prispalls:prispallen:prispallens:prispallar:prispallars:prispallarna:prispallarnas
+COMPOUND(595939, 551758): pris + pall
+938829r4<substantiv>prispress:prispress:prispress:prispressen:prispressens::::
+COMPOUND(595932, 559017): pris + press
+824193r4<substantiv>prisras:prisras:prisras:prisraset:prisrasets:prisras:prisras:prisrasen:prisrasens
+COMPOUND(595932, 626097): pris + ras
+587615r3<verb>prisreglera:prisreglera:prisreglerade:prisreglerat:prisreglerar:prisreglera:::::::::
+841930r3<substantiv>prisse:prisse:prisses:prissen:prissens:prissar:prissars:prissarna:prissarnas
+888363r3<substantiv>prissegment:prissegment:prissegments:prissegmentet:prissegmentets:prissegment:prissegments:prissegmenten:prissegmentens
+755612r5<substantiv>prisstabilitet:prisstabilitet:prisstabilitets:prisstabiliteten:prisstabilitetens:!:!:!:!
+COMPOUND(595932, 638491): pris + stabilitet
+CUSTOM: y y prisstabilitets
+755617r4<substantiv>prisstabilitetsmål:prisstabilitetsmål:prisstabilitetsmåls:prisstabilitetsmålet:prisstabilitetsmålets:prisstabilitetsmål:prisstabilitetsmåls:prisstabilitetsmålen:prisstabilitetsmålens
+COMPOUND(755612, 552705): prisstabilitet + mål
+938979r4<substantiv>prissumma:prissumma:prissummas:prissumman:prissummans:prissummor:prissummors:prissummorna:prissummornas
+COMPOUND(595939, 595450): pris + summa
+895733r6<verb>prissätta:prissätta:prissatte:prissatt:prissätter:prissätt:prissättas:prissattes:prissatts:prissätts, prissättes:prissatt:prissatt:prissatta:prissättande:
+COMPOUND(595932, 593414): pris + sätta
+695510r3<substantiv>prissättning:prissättning:prissättnings:prissättningen:prissättningens:prissättningar:prissättningars:prissättningarna:prissättningarnas
+CUSTOM: y y prissättnings
+615411r3<substantiv>pristagare:pristagare:pristagares:pristagaren:pristagarens:pristagare:pristagares:pristagarna:pristagarnas
+CUSTOM: y y pristagar
+777405r3<substantiv>pristagarinna:pristagarinna:pristagarinnas:pristagarinnan:pristagarinnans:pristagarinnor:pristagarinnors:pristagarinnorna:pristagarinnornas
+742732r4<substantiv>pristak:pristak:pristaks:pristaket:pristakets:pristak:pristaks:pristaken:pristakens
+COMPOUND(595932, 553027): pris + tak
+755624r3<substantiv>prisutdelare:prisutdelare:prisutdelares:prisutdelaren:prisutdelarens:prisutdelare:prisutdelares:prisutdelarna:prisutdelarnas
+695511r4<substantiv>prisutdelning:prisutdelning:prisutdelnings:prisutdelningen:prisutdelningens:prisutdelningar:prisutdelningars:prisutdelningarna:prisutdelningarnas
+COMPOUND(595939, 645171): pris + utdelning
+CUSTOM: y y prisutdelnings
+695512r4<adjektiv>prisvärd:prisvärd:prisvärt:prisvärda:prisvärda:prisvärdare:prisvärdast:prisvärdaste:
+755630r3<substantiv>prisvärdhet:prisvärdhet:prisvärdhets:prisvärdheten:prisvärdhetens::::
+860663r4<substantiv>prisökning:prisökning:prisöknings:prisökningen:prisökningens:prisökningar:prisökningars:prisökningarna:prisökningarnas
+COMPOUND(595939, 649466): pris + ökning
+855028r3<egennamn>Pritha:Pritha:Prithas
+695513r11<adjektiv>privat:privat:privat:privata:privata:privatare:privatast:privataste:private::::::::
+CUSTOM: y y privat
+800139r3<adjektiv>privatanställd:privatanställd:privatanställt:privatanställda:privatanställda::::
+702779r4<substantiv>privatbil:privatbil:privatbils:privatbilen:privatbilens:privatbilar:privatbilars:privatbilarna:privatbilarnas
+COMPOUND(695513, 550885): privat + bil
+603198r3<substantiv>privatdetektiv:privatdetektiv:privatdetektivs:privatdetektiven:privatdetektivens:privatdetektiver:privatdetektivers:privatdetektiverna:privatdetektivernas
+695526r4<substantiv>privatekonomi:privatekonomi:privatekonomis:privatekonomin:privatekonomins::::
+COMPOUND(695513, 633212): privat + ekonomi
+583106r3<adjektiv>privatekonomisk:privatekonomisk:privatekonomiskt:privatekonomiska:privatekonomiska::::
+945139r4<substantiv>privatgiro:privatgiro:privatgiros:privatgirot:privatgirots:privatgiron:privatgirons:privatgirona:privatgironas
+COMPOUND(695513, 558921): privat + giro
+860570r4<substantiv>privathushåll:privathushåll:privathushålls:privathushållet:privathushållets:privathushåll:privathushålls:privathushållen:privathushållens
+COMPOUND(695513, 552482): privat + hushåll
+587619r4<verb>privatisera:privatisera:privatiserade:privatiserat:privatiserar:privatisera:privatiseras:privatiserades:privatiserats:privatiseras:privatiserad:privatiserat:privatiserade:privatiserande:
+894370r3<substantiv>privatiserande:privatiserande:privatiserandes:privatiserandet:privatiserandets::::
+702787r4<substantiv>privatisering:privatisering:privatiserings:privatiseringen:privatiseringens:privatiseringar:privatiseringars:privatiseringarna:privatiseringarnas
+CUSTOM: y y privatiserings
+695548r3<substantiv>privatist:privatist:privatists:privatisten:privatistens:privatister:privatisters:privatisterna:privatisternas
+CUSTOM: y y privatist
+583109r3<adjektiv>privatkapitalistisk:privatkapitalistisk:privatkapitalistiskt:privatkapitalistiska:privatkapitalistiska::::
+695556r4<substantiv>privatlektion:privatlektion:privatlektions:privatlektionen:privatlektionens:privatlektioner:privatlektioners:privatlektionerna:privatlektionernas
+COMPOUND(695513, 602654): privat + lektion
+CUSTOM: y y privatlektions
+695514r4<substantiv>privatliv:privatliv:privatlivs:privatlivet:privatlivets::::
+COMPOUND(695513, 552667): privat + liv
+609962r3<substantiv>privatläkare:privatläkare:privatläkares:privatläkaren:privatläkarens:privatläkare:privatläkares:privatläkarna:privatläkarnas
+CUSTOM: y y privatläkar
+800142r4<adjektiv>privatlärd:privatlärd:privatlärt:privatlärda:privatlärda::::privatlärde::::::::
+695518r4<substantiv>privatperson:privatperson:privatpersons:privatpersonen:privatpersonens:privatpersoner:privatpersoners:privatpersonerna:privatpersonernas
+COMPOUND(695513, 550191): privat + person
+798666r3<adjektiv>privatreligiös:privatreligiös:privatreligiöst:privatreligiösa:privatreligiösa::::
+567420r3<adjektiv>privaträttslig:privaträttslig:privaträttsligt:privaträttsliga:privaträttsliga::::
+755634r3<substantiv>privatsak:privatsak:privatsaks:privatsaken:privatsakens:privatsaker:privatsakers:privatsakerna:privatsakernas
+768784r3<adjektiv>privatägd:privatägd:privatägt:privatägda:privatägda:!:!:!:!
+565144r3<adjektiv>privilegielös:privilegielös:privilegielöst:privilegielösa:privilegielösa::::
+587623r4<verb>privilegiera:privilegiera:privilegierade:privilegierat:privilegierar:privilegiera:privilegieras:privilegierades:privilegierats:privilegieras:privilegierad:privilegierat:privilegierade:privilegierande:
+725751r4<adjektiv>privilegierad:privilegierad:privilegierat:privilegierade:privilegierade:!:!:!:
+695530r4<substantiv>privilegium:privilegium:privilegiums:privilegiet:privilegiets:privilegier:privilegiers:privilegierna:privilegiernas
+CUSTOM: y y privilegie
+575402r3<adjektiv>PR-mässig:PR-mässig:PR-mässigt:PR-mässiga:PR-mässiga::::
+CUSTOM: n n
+937852r3<preposition>pro:pro
+736713r3<adjektiv>proaktiv:proaktiv:proaktivt:proaktiva:proaktiva:!:!:!:
+570865r3<adjektiv>probabel:probabel:probabelt:probabla:probabla::::
+587624r3<verb>probera:probera:proberade:proberat:proberar:probera:::::::::
+984943r3<substantiv>proberare:proberare:proberares:proberaren:proberarens:proberare:proberares:proberarna:proberarnas
+552791r20<substantiv>problem:problem:problems:problemet:problemets:problem:problems:problemen:problemens
+CUSTOM: y y problem
+757758r4<substantiv>problemanalys:problemanalys:problemanalys:problemanalysen:problemanalysens:problemanalyser:problemanalysers:problemanalyserna:problemanalysernas
+COMPOUND(552791, 548192): problem + analys
+695532r3<substantiv>problematik:problematik:problematiks:problematiken:problematikens:!:!:!:!
+547500r5<verb>problematisera:problematisera:problematiserade:problematiserat:problematiserar:problematisera:problematiseras:problematiserades:problematiserats:problematiseras:problematiserad:problematiserat:problematiserade:problematiserande:
+627581r10<substantiv>problematiserande:problematiserande:problematiserandes:problematiserandet:problematiserandets::::
+777414r3<substantiv>problematisering:problematisering:problematiserings:problematiseringen:problematiseringens:problematiseringar:problematiseringars:problematiseringarna:problematiseringarnas
+583112r4<adjektiv>problematisk:problematisk:problematiskt:problematiska:problematiska::::problematiske
+755642r4<substantiv>problembarn:problembarn:problembarns:problembarnet:problembarnets:problembarn:problembarns:problembarnen:problembarnens
+COMPOUND(552791, 555956): problem + barn
+755649r3<adjektiv>problembaserad:problembaserad:problembaserat:problembaserade:problembaserade:!:!:!:
+794360r3<adjektiv>problemcentrerad:problemcentrerad:problemcentrerat:problemcentrerade:problemcentrerade:!:!:!:
+564063r3<adjektiv>problemfri:problemfri:problemfritt:problemfria:problemfria::::
+695534r3<adjektiv>problemfylld:problemfylld:problemfyllt:problemfyllda:problemfyllda:!:!:!:
+794363r3<adjektiv>probleminriktad:probleminriktad:probleminriktat:probleminriktade:probleminriktade:!:!:!:
+565147r3<adjektiv>problemlös:problemlös:problemlöst:problemlösa:problemlösa::::
+755654r3<substantiv>problemlösande:problemlösande:problemlösandes:problemlösandet:problemlösandets::::
+755660r4<substantiv>problemlösare:problemlösare:problemlösares:problemlösaren:problemlösarens:problemlösare:problemlösares:problemlösarna:problemlösarnas
+COMPOUND(552791, 755661): problem + lösare
+695537r3<substantiv>problemlösning:problemlösning:problemlösnings:problemlösningen:problemlösningens::::
+C

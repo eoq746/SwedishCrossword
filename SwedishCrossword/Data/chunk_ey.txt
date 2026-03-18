@@ -1,0 +1,612 @@
+ermissions
+702702r4<substantiv>permissionsförbud:permissionsförbud:permissionsförbuds:permissionsförbudet:permissionsförbudets:permissionsförbud:permissionsförbuds:permissionsförbuden:permissionsförbudens
+COMPOUND(694662, 552399): permission + förbud
+587512r4<verb>permittera:permittera:permitterade:permitterat:permitterar:permittera:permitteras:permitterades:permitterats:permitteras:permitterad:permitterat:permitterade:permitterande:
+597404r3<substantiv>permittering:permittering:permitterings:permitteringen:permitteringens:permitteringar:permitteringars:permitteringarna:permitteringarnas
+CUSTOM: y y permitterings
+794267r3<adjektiv>permitteringshotad:permitteringshotad:permitteringshotat:permitteringshotade:permitteringshotade:!:!:!:
+936755r3<substantiv>permobil:permobil:permobils:permobilen:permobilens:permobiler:permobilers:permobilerna:permobilernas
+694668r3<substantiv>permutation:permutation:permutations:permutationen:permutationens:permutationer:permutationers:permutationerna:permutationernas
+CUSTOM: y y permutations
+547473r4<verb>permutera:permutera:permuterade:permuterat:permuterar:permutera:permuteras:permuterades:permuterats:permuteras:permuterad:permuterat:permuterade::
+756766r3<adjektiv>perniciös:perniciös:perniciöst:perniciösa:perniciösa::::perniciöse
+553861r3<egennamn>Pernilla:Pernilla:Pernillas
+640237r3<adjektiv>peroral:peroral:peroralt:perorala:perorala::::
+582908r3<adjektiv>peroxidisk:peroxidisk:peroxidiskt:peroxidiska:peroxidiska::::
+730742r3<substantiv>peroxisom:peroxisom:peroxisoms:peroxisomen:peroxisomens:peroxisomer:peroxisomers:peroxisomerna:peroxisomernas
+984685r3<substantiv>perpendikel:perpendikel:perpendikels:perpendikeln:perpendikelns:perpendiklar:perpendiklars:perpendiklarna:perpendiklarnas
+738108r3<adjektiv>perplex:perplex:perplext:perplexa:perplexa::::
+971617r3<egennamn>Perrelli:Perrelli:Perrellis
+550189r3<substantiv>perrong:perrong:perrongs:perrongen:perrongens:perronger:perrongers:perrongerna:perrongernas
+663546r10<egennamn>Persbrandt:Persbrandt:Persbrandts
+756770r4<substantiv>persedel:persedel:persedels:persedeln:persedelns:persedlar:persedlars:persedlarna:persedlarnas
+CUSTOM: y y persedel
+756778r4<substantiv>persedelvård:persedelvård:persedelvårds:persedelvården:persedelvårdens::::
+COMPOUND(756770, 599145): persedel + vård
+755030r4<substantiv>perser:perser:persers:persern:perserns:perser:persers:perserna:persernas
+CUSTOM: y y perser
+755036r3<substantiv>perserkatt:perserkatt:perserkatts:perserkatten:perserkattens:perserkatter:perserkatters:perserkatterna:perserkatternas
+755044r3<substantiv>perserkung::::::::
+COMPOUND(755030, 551645): perser + kung
+590536r3<verb>perseverera:perseverera:persevererade:persevererat:persevererar:perseverera:::::::::
+755045r3<egennamn>Persien:Persien:Persiens
+CUSTOM: y n Persien
+603119r4<substantiv>persienn:persienn:persienns:persiennen:persiennens:persienner:persienners:persiennerna:persiennernas
+CUSTOM: y y persienn
+755047r3<substantiv>persiennspjäla::::::::
+COMPOUND(603119, 746679): persienn + spjäla
+590540r3<verb>persiflera:persiflera:persiflerade:persiflerat:persiflerar:persiflera:::::::::
+685243r5<substantiv>persika:persika:persikas:persikan:persikans:persikor:persikors:persikorna:persikornas
+CUSTOM: y y persiko
+761490r4<substantiv>persikohy:persikohy:persikohys:persikohyn:persikohyns:!:!:!:!
+COMPOUND(685243, 557669): persika + hy
+846566r3<adjektiv>persikolen:persikolen:persikolent:persikolena:persikolena::::
+856373r3<substantiv>persikolenhet:persikolenhet:persikolenhets:persikolenheten:persikolenhetens::::
+685251r4<substantiv>persikoträd:persikoträd:persikoträds:persikoträdet:persikoträdets:persikoträd:persikoträds:persikoträden:persikoträdens
+COMPOUND(685243, 553066): persika + träd
+625554r7<substantiv>persilja:persilja:persiljas:persiljan:persiljans:!:!:!:!
+CUSTOM: y y persilje
+840861r4<substantiv>persiljeodling:persiljeodling:persiljeodlings:persiljeodlingen:persiljeodlingens:persiljeodlingar:persiljeodlingars:persiljeodlingarna:persiljeodlingarnas
+COMPOUND(625554, 647226): persilja + odling
+942308r4<substantiv>persiljerot:persiljerot:persiljerots:persiljeroten:persiljerotens:persiljerötter:persiljerötters:persiljerötterna:persiljerötternas
+COMPOUND(625554, 561217): persilja + rot
+650641r6<substantiv>persiljesmör:persiljesmör:persiljesmörs:persiljesmöret:persiljesmörets:!:!:!:!
+COMPOUND(625554, 622554): persilja + smör
+755048r4<substantiv>persiljesås:persiljesås:persiljesås:persiljesåsen:persiljesåsens:persiljesåser:persiljesåsers:persiljesåserna:persiljesåsernas
+COMPOUND(625554, 556707): persilja + sås
+582911r4<adjektiv>persisk:persisk:persiskt:persiska:persiska:!:!:!:persiske
+685257r3<substantiv>persiska:persiska:persiskas:persiskan:persiskans:!:!:!:!
+801173r3<adjektiv>persisktalande:persisktalande:persisktalande:persisktalande:persisktalande:!:!:!:
+788944r3<adjektiv>persistent:persistent:persistent:persistenta:persistenta::::
+590544r3<verb>persistera:persistera:persisterade:persisterat:persisterar:persistera:::::::::
+550191r15<substantiv>person:person:persons:personen:personens:personer:personers:personerna:personernas
+CUSTOM: y y person
+848902r3<substantiv>personage:personage:personages:personagen:personagens:personager:personagers:personagerna:personagernas
+603127r10<substantiv>personal:personal:personals:personalen:personalens:personaler:personalers:personalerna:personalernas
+CUSTOM: y y personal
+798597r3<adjektiv>personaladministrativ:personaladministrativ:personaladministrativt:personaladministrativa:personaladministrativa::::
+609015r3<substantiv>personalbehov:personalbehov:personalbehovs:personalbehovet:personalbehovets:personalbehov:personalbehovs:personalbehoven:personalbehovens
+603133r4<substantiv>personalchef:personalchef:personalchefs:personalchefen:personalchefens:personalchefer:personalchefers:personalcheferna:personalchefernas
+COMPOUND(603127, 548529): personal + chef
+984698r3<substantiv>personalia:personalia:personalias:personalian:personalians:personalia:personalias::
+CUSTOM: y n
+984693r3<substantiv>personalier:::::personalier:personaliers:personalierna:personaliernas
+CUSTOM: y n
+798600r3<adjektiv>personalintensiv:personalintensiv:personalintensivt:personalintensiva:personalintensiva::::
+900896r4<substantiv>personalliggare:personalliggare:personalliggares:personalliggaren:personalliggarens:personalliggare:personalliggares:personalliggarna:personalliggarnas
+COMPOUND(603127, 637722): personal + liggare
+599492r3<substantiv>personalmatsal:personalmatsal:personalmatsals:personalmatsalen:personalmatsalens:personalmatsalar:personalmatsalars:personalmatsalarna:personalmatsalarnas
+661809r3<substantiv>personalneddragning:personalneddragning:personalneddragnings:personalneddragningen:personalneddragningens:personalneddragningar:personalneddragningars:personalneddragningarna:personalneddragningarnas
+CUSTOM: y y personalneddragnings
+582912r3<adjektiv>personalpolitisk:personalpolitisk:personalpolitiskt:personalpolitiska:personalpolitiska::::
+955774r4<adjektiv>personaltät:personaltät:personaltätt:personaltäta:personaltäta:personaltätare:personaltätast:personaltätaste:::::::::
+COMPOUND(603127, 563206): personal + tät
+955782r3<adjektiv>personalägd:personalägd:personalägt:personalägda:personalägda::::::::::::
+661811r3<substantiv>personbeskrivning:personbeskrivning:personbeskrivnings:personbeskrivningen:personbeskrivningens:personbeskrivningar:personbeskrivningars:personbeskrivningarna:personbeskrivningarnas
+CUSTOM: y y personbeskrivnings
+597412r3<substantiv>personbeteckning:personbeteckning:personbetecknings:personbeteckningen:personbeteckningens:personbeteckningar:personbeteckningars:personbeteckningarna:personbeteckningarnas
+CUSTOM: y y personbetecknings
+661812r3<substantiv>personbevis:personbevis:personbevis:personbeviset:personbevisets:personbevis:personbevis:personbevisen:personbevisens
+598639r4<substantiv>personbil:personbil:personbils:personbilen:personbilens:personbilar:personbilars:personbilarna:personbilarnas
+CUSTOM: y y personbils
+755056r3<substantiv>personbilsförsäljning::::::::
+COMPOUND(598639, 691095): personbil + försäljning
+846569r3<substantiv>personbästa:personbästa:personbästas:personbästat:personbästats:personbästan:personbästans:personbästana:personbästanas
+661817r3<substantiv>persondator:persondator:persondators:persondatorn:persondatorns:persondatorer:persondatorers:persondatorerna:persondatorernas
+928215r4<substantiv>persondosimeter:persondosimeter:persondosimeters:persondosimetern:persondosimeterns:persondosimetrar:persondosimetrars:persondosimetrarna:persondosimetrarnas
+DEFINITION 1: En persondosimeter är ett mätinstrument som anger hur stor stråldos som en person utsatts för under viss tid.
+694669r3<adjektiv>personell:personell:personellt:personella:personella:!:!:!:
+694670r4<substantiv>persongalleri:persongalleri:persongalleris:persongalleriet:persongalleriets:persongallerier:persongalleriers:persongallerierna:persongalleriernas
+COMPOUND(550191, 557585): person + galleri
+582915r3<adjektiv>personhistorisk:personhistorisk:personhistoriskt:personhistoriska:personhistoriska::::
+587516r4<verb>personifiera:personifiera:personifierade:personifierat:personifierar:personifiera:personifieras:personifierades:personifierats:personifieras:personifierad:personifierat:personifierade::
+896160r3<substantiv>personifiering:personifiering:personifierings:personifieringen:personifieringens:personifieringar:personifieringars:personifieringarna:personifieringarnas
+984703r3<substantiv>personifikation:personifikation:personifikations:personifikationen:personifikationens:personifikationer:personifikationers:personifikationerna:personifikationernas
+661820r3<substantiv>personkrets:personkrets:personkrets:personkretsen:personkretsens:personkretsar:personkretsars:personkretsarna:personkretsarnas
+563152r4<adjektiv>personlig:personlig:personligt:personliga:personliga:personligare:personligast:personligaste:personlige
+620727r3<adverb>personligen:personligen
+694678r4<substantiv>personlighet:personlighet:personlighets:personligheten:personlighetens:personligheter:personligheters:personligheterna:personligheternas
+CUSTOM: y y personlighets
+694679r4<substantiv>personlighetsklyvning:personlighetsklyvning:personlighetsklyvnings:personlighetsklyvningen:personlighetsklyvningens:personlighetsklyvningar:personlighetsklyvningars:personlighetsklyvningarna:personlighetsklyvningarnas
+COMPOUND(694678, 652481): personlighet + klyvning
+CUSTOM: y y personlighetsklyvnings
+942651r3<adjektiv>personlighetsstörd:personlighetsstörd:personlighetsstört:personlighetsstörda:personlighetsstörda::::personlighetsstörde::::::::
+768768r4<substantiv>personmina:personmina:personminas:personminan:personminans:personminor:personminors:personminorna:personminornas
+COMPOUND(550191, 555484): person + mina
+661825r4<substantiv>personnummer:personnummer:personnummers:personnumret:personnumrets:personnummer:personnummers:personnumren:personnumrens
+COMPOUND(550191, 621605): person + nummer
+936280r4<substantiv>personrån:personrån:personråns:personrånet:personrånets:personrån:personråns:personrånen:personrånens
+COMPOUND(550191, 552856): person + rån
+694681r4<substantiv>personskildring:personskildring:personskildrings:personskildringen:personskildringens:personskildringar:personskildringars:personskildringarna:personskildringarnas
+COMPOUND(550191, 619565): person + skildring
+CUSTOM: y y personskildrings
+694682r4<substantiv>personteckning:personteckning:persontecknings:personteckningen:personteckningens:personteckningar:personteckningars:personteckningarna:personteckningarnas
+COMPOUND(550191, 671990): person + teckning
+CUSTOM: y y persontecknings
+755057r5<substantiv>persontåg:persontåg:persontågs:persontåget:persontågets:persontåg:persontågs:persontågen:persontågens
+COMPOUND(550191, 553068): person + tåg
+CUSTOM: y y persontågs
+755064r3<substantiv>persontågstrafik::::::::
+COMPOUND(755057, 673056): persontåg + trafik
+694683r3<substantiv>personuppgift:personuppgift:personuppgifts:personuppgiften:personuppgiftens:personuppgifter:personuppgifters:personuppgifterna:personuppgifternas
+598647r3<substantiv>personvagn:personvagn:personvagns:personvagnen:personvagnens:personvagnar:personvagnars:personvagnarna:personvagnarnas
+816512r4<substantiv>personval:personval:personvals:personvalet:personvalets:personval:personvals:personvalen:personvalens
+COMPOUND(550191, 555548): person + val
+CUSTOM: y y personvals
+761494r4<substantiv>personvåg:personvåg:personvågs:personvågen:personvågens:personvågar:personvågars:personvågarna:personvågarnas
+COMPOUND(550191, 552102): person + våg
+552766r11<substantiv>perspektiv:perspektiv:perspektivs:perspektivet:perspektivets:perspektiv:perspektivs:perspektiven:perspektivens
+CUSTOM: y y perspektiv
+761502r3<substantiv>perspektivfönster::::::::
+COMPOUND(552766, 555049): perspektiv + fönster
+582918r3<adjektiv>perspektivisk:perspektivisk:perspektiviskt:perspektiviska:perspektiviska::::
+565116r3<adjektiv>perspektivlös:perspektivlös:perspektivlöst:perspektivlösa:perspektivlösa::::
+587517r3<verb>perspirera:perspirera:perspirerade:perspirerat:perspirerar:perspirera:::::::::
+553519r3<egennamn>Persson:Persson:Perssons
+728223r3<egennamn>Perstorp:Perstorp:Perstorps
+CUSTOM: y n Perstorps
+590548r3<verb>persvadera:persvadera:persvaderade:persvaderat:persvaderar:persvadera:::::::::
+582921r3<adjektiv>persymmetrisk:persymmetrisk:persymmetriskt:persymmetriska:persymmetriska::::
+984711r3<substantiv>perturbation:perturbation:perturbations:perturbationen:perturbationens:perturbationer:perturbationers:perturbationerna:perturbationernas
+554106r3<egennamn>Peru:Peru:Perus
+CUSTOM: y n Peru
+623051r3<substantiv>peruan:peruan:peruans:peruanen:peruanens:peruaner:peruaners:peruanerna:peruanernas
+755073r3<adjektiv>peruansk:peruansk:peruanskt:peruanska:peruanska:!:!:!:peruanske
+755065r3<substantiv>peruanska:peruanska:peruanskas:peruanskan:peruanskans:peruanskor:peruanskors:peruanskorna:peruanskornas
+550192r3<substantiv>peruk:peruk:peruks:peruken:perukens:peruker:perukers:perukerna:perukernas
+756782r3<substantiv>perukmakare:perukmakare:perukmakares:perukmakaren:perukmakarens:perukmakare:perukmakares:perukmakarna:perukmakarnas
+661826r3<adjektiv>pervers:pervers:perverst:perversa:perversa::::perverse
+755076r3<substantiv>perversion:perversion:perversions:perversionen:perversionens:perversioner:perversioners:perversionerna:perversionernas
+756788r3<substantiv>perversitet:perversitet:perversitets:perversiteten:perversitetens:perversiteter:perversiteters:perversiteterna:perversiteternas
+587521r4<verb>pervertera:pervertera:perverterade:perverterat:perverterar:pervertera:perverteras:perverterades:perverterats:perverteras:::::
+694687r3<adjektiv>perverterad:perverterad:perverterat:perverterade:perverterade:!:!:!:
+946657r3<substantiv>peseta:peseta:pesetas:pesetan:pesetans::::
+CUSTOM: y n
+624599r4<substantiv>peso:peso:pesos:peson:pesons:peso, pesos:pesos:pesona:pesonas
+DEFINITION 1: Valutan i Argentina.
+CUSTOM: y n
+661828r3<substantiv>pessar:pessar:pessars:pessaret:pessarets:pessar:pessars:pessaren:pessarens
+558296r3<substantiv>pessimism:pessimism:pessimisms:pessimismen:pessimismens:!:!:!:!
+661834r3<substantiv>pessimist:pessimist:pessimists:pessimisten:pessimistens:pessimister:pessimisters:pessimisterna:pessimisternas
+CUSTOM: y y pessimist
+582924r4<adjektiv>pessimistisk:pessimistisk:pessimistiskt:pessimistiska:pessimistiska::::pessimistiske
+624606r4<substantiv>pest:pest:pests:pesten:pestens:pester:pesters:pesterna:pesternas
+661836r3<adjektiv>pestdrabbad:pestdrabbad:pestdrabbat:pestdrabbade:pestdrabbade:!:!:!:
+661837r3<substantiv>pesthärd:pesthärd:pesthärds:pesthärden:pesthärdens:pesthärdar:pesthärdars:pesthärdarna:pesthärdarnas
+756797r3<substantiv>pesticid:pesticid:pesticids:pesticiden:pesticidens:pesticider:pesticiders:pesticiderna:pesticidernas
+894965r3<substantiv>pesto:pesto:pestos:peston:pestons::::
+766020r3<adjektiv>pestsmittad:pestsmittad:pestsmittat:pestsmittade:pestsmittade:!:!:!:
+923776r3<substantiv>pet:pet:pets:petet:petets::::
+CUSTOM: n n y
+547474r4<verb>peta:peta:petade:petat:petar:peta:petas:petades:petats:petas:petad:petat:petade::
+860503r3<egennamn>Pete:Pete:Petes
+554747r3<egennamn>Peter:Peter:Peters
+990305r3<egennamn>Petersburg:Petersburg:Petersburgs
+973227r3<egennamn>Petersen:Petersen:Petersens
+973223r3<egennamn>Peterson:Peterson:Petersons
+924414r7<egennamn>Petersson:Petersson:Peterssons
+899328r3<substantiv>pet-flaska:pet-flaska:pet-flaskas:pet-flaskan:pet-flaskans:pet-flaskor:pet-flaskors:pet-flaskorna:pet-flaskornas
+940445r3<substantiv>petflaska:petflaska:petflaskas:petflaskan:petflaskans:petflaskor:petflaskors:petflaskorna:petflaskornas
+899319r3<substantiv>PET-flaska:PET-flaska:PET-flaskas:PET-flaskan:PET-flaskans:PET-flaskor:PET-flaskors:PET-flaskorna:PET-flaskornas
+575261r4<adjektiv>petig:petig:petigt:petiga:petiga:petigare:petigast:petigaste:petige
+984719r3<substantiv>petimäter:petimäter:petimäters:petimätern:petimäterns:petimätrar:petimätrars:petimätrarna:petimätrarnas
+694688r3<substantiv>petita:petita:petitas:petitan:petitans:petitor:petitors:petitorna:petitornas
+550193r3<substantiv>petitess:petitess:petitess:petitessen:petitessens:petitesser:petitessers:petitesserna:petitessernas
+899337r3<substantiv>petit-four:petit-four:petit-fours:petit-fouren:petit-fourens:petit-fourer:petit-fourers:petit-fourerna:petit-fourernas
+694696r3<substantiv>petition:petition:petitions:petitionen:petitionens:petitioner:petitioners:petitionerna:petitionernas
+CUSTOM: y y petitions
+587523r3<verb>petitionera:petitionera:petitionerade:petitionerat:petitionerar:petitionera:::::::::
+694704r3<substantiv>petning:petning:petnings:petningen:petningens:petningar:petningars:petningarna:petningarnas
+CUSTOM: y y petnings
+694712r3<adjektiv>petnoga:petnoga:petnoga:petnoga:petnoga:!:!:!:
+553863r3<egennamn>Petra:Petra:Petras
+587527r4<verb>petrifiera:petrifiera:petrifierade:petrifierat:petrifierar:petrifiera:petrifieras:petrifierades:petrifierats:petrifieras:petrifierad:petrifierat:petrifierade:petrifierande:
+756814r3<substantiv>petrifikat:petrifikat:petrifikats:petrifikatet:petrifikatets:petrifikat:petrifikats:petrifikaten:petrifikatens
+984726r3<substantiv>petrografi:petrografi:petrografis:petrografin:petrografins::::
+582925r3<adjektiv>petrografisk:petrografisk:petrografiskt:petrografiska:petrografiska::::
+962846r3<substantiv>petrokemi:petrokemi:petrokemis:petrokemin:petrokemins::::
+582928r3<adjektiv>petrokemisk:petrokemisk:petrokemiskt:petrokemiska:petrokemiska::::
+756820r3<substantiv>petroleum:petroleum:petroleums:petroleumen, petroleumet:petroleumens, petroleumets::::
+611103r3<substantiv>petroleumindustri:petroleumindustri:petroleumindustris:petroleumindustrin:petroleumindustrins:petroleumindustrier:petroleumindustriers:petroleumindustrierna:petroleumindustriernas
+962850r3<substantiv>petroleumprodukt:petroleumprodukt:petroleumprodukts:petroleumprodukten:petroleumproduktens:petroleumprodukter:petroleumprodukters:petroleumprodukterna:petroleumprodukternas
+582931r3<adjektiv>petrologisk:petrologisk:petrologiskt:petrologiska:petrologiska::::
+971881r3<egennamn>Petronella:Petronella:Petronellas
+756830r3<adjektiv>petsäker:petsäker:petsäkert:petsäkra:petsäkra::::
+856294r3<egennamn>Petter:Petter:Petters
+553521r3<egennamn>Pettersson:Pettersson:Petterssons
+756826r3<substantiv>petting:petting:pettings:pettingen:pettingens::::
+755084r3<substantiv>petunia:petunia:petunias:petunian:petunians:petunior:petuniors:petuniorna:petuniornas
+943267r3<egennamn>Peugeot:Peugeot:Peugeots
+762239r3<egennamn>Peugot:Peugot:Peugots
+CUSTOM: y n Peugot
+984730r3<substantiv>pfalzgreve:pfalzgreve:pfalzgreves:pfalzgreven:pfalzgrevens:pfalzgrevar:pfalzgrevars:pfalzgrevarna:pfalzgrevarnas
+582934r3<adjektiv>pfalzisk:pfalzisk:pfalziskt:pfalziska:pfalziska::::
+929643r3<förkortning>pH:pH
+843060r3<egennamn>Phil:Phil:Phils
+990329r3<egennamn>Philadelphia:Philadelphia:Philadelphias
+990280r3<egennamn>Philip:Philip:Philips
+553291r3<egennamn>Philips:Philips:Philips
+CUSTOM: y n Philips
+924459r8<egennamn>Philipsson:Philipsson:Philipssons
+840671r3<egennamn>Photoshop:Photoshop:Photoshops
+CUSTOM: y n Photoshop
+956847r3<substantiv>physalis:physalis:physalis:physalisen:physalisens::::
+662176r5<substantiv>pi:pi:::::::
+DEFINITION 1: Sextonde bokstaven i grekiska alfabetet.
+DEFINITION 2: En matematisk konstant definierad som en cirkels omkrets dividerad med dess diameter.
+553865r3<egennamn>Pia:Pia:Pias
+962858r3<substantiv>piaff:piaff:piaffs:piaffen:piaffens::::
+CUSTOM: y n
+590552r3<verb>piaffera:piaffera:piafferade:piafferat:piafferar:piaffera:::::::::
+756833r3<substantiv>pianissimo:pianissimo:pianissimos:pianissimot:pianissimots:pianissimon:pianissimons:pianissimona:pianissimonas
+661845r3<substantiv>pianist:pianist:pianists:pianisten:pianistens:pianister:pianisters:pianisterna:pianisternas
+CUSTOM: y y pianist
+582937r3<adjektiv>pianistisk:pianistisk:pianistiskt:pianistiska:pianistiska::::
+555439r9<substantiv>piano:piano:pianos:pianot:pianots:pianon:pianons:pianona:pianonas
+CUSTOM: y y piano
+755092r4<substantiv>pianobar:pianobar:pianobars:pianobaren:pianobarens:pianobarer:pianobarers:pianobarerna:pianobarernas
+COMPOUND(555439, 557860): piano + bar
+956355r4<substantiv>pianoklink:pianoklink:pianoklinks:pianoklinket:pianoklinkets::::
+COMPOUND(555439, 956356): piano + klink
+952485r4<substantiv>pianokomp:pianokomp:pianokomps:pianokompet:pianokompets::::
+COMPOUND(555439, 628265): piano + komp
+755100r4<substantiv>pianokonsert:pianokonsert:pianokonserts:pianokonserten:pianokonsertens:pianokonserter:pianokonserters:pianokonserterna:pianokonserternas
+COMPOUND(555439, 651813): piano + konsert
+965097r4<substantiv>pianoriff:pianoriff:pianoriffs:pianoriffet:pianoriffets:pianoriff:pianoriffs:pianoriffen:pianoriffens
+COMPOUND(555439, 848272): piano + riff
+859144r4<substantiv>pianostämmare:pianostämmare:pianostämmares:pianostämmaren:pianostämmarens:pianostämmare:pianostämmares:pianostämmarna:pianostämmarnas
+COMPOUND(555439, 859145): piano + stämmare
+984738r3<substantiv>piaster:piaster:piasters:piastern:piasterns:piastrar:piastrars:piastrarna:piastrarnas
+CUSTOM: y n
+756841r3<substantiv>piazza:piazza:piazzas:piazzan:piazzans:piazzor:piazzors:piazzorna:piazzornas
+884949r3<substantiv>picador:picador:picadors:picadoren:picadorens:picadorer:picadorers:picadorerna:picadorernas
+861519r4<egennamn>Picasso:Picasso:Picassos
+CUSTOM: y n Picasso
+861522r6<substantiv>Picassomuseum:Picassomuseum:Picassomuseums:Picassomuseet:Picassomuseets:Picassomuseer:Picassomuseers:Picassomuseerna:Picassomuseernas
+COMPOUND(861519, 555300): Picasso + museum
+CUSTOM: y n
+884957r3<substantiv>piccola:piccola:piccolas:piccolan:piccolans::::
+756849r3<substantiv>piccolaflöjt:piccolaflöjt:piccolaflöjts:piccolaflöjten:piccolaflöjtens:piccolaflöjter:piccolaflöjters:piccolaflöjterna:piccolaflöjternas
+694713r3<substantiv>piccolo:piccolo:piccolos:piccolon:piccolons:piccolor:piccolors:piccolorna:piccolornas
+628512r5<substantiv>pick:pick:::::::
+DEFINITION 1: (Enbart i pick och pack)?
+628515r3<substantiv>pick:pick:picks:picken:pickens:pickar:pickars:pickarna:pickarnas
+755108r5<verb>picka:picka:pickade:pickat:pickar:picka:pickas:pickades:pickats:pickas:pickad:pickat:pickade:pickande:
+700244r3<substantiv>pickelhuva:pickelhuva:pickelhuvas:pickelhuvan:pickelhuvans:pickelhuvor:pickelhuvors:pickelhuvorna:pickelhuvornas
+984746r3<substantiv>pickels:::::pickels:pickels:pickelsen:pickelsens
+984750r3<substantiv>pickles:::::pickles:pickles:picklesen:picklesens
+CUSTOM: y n
+633246r6<substantiv>picknick:picknick:picknicks:picknicken:picknickens:picknickar:picknickars:picknickarna:picknickarnas
+CUSTOM: y y picknick
+952491r4<substantiv>picknickfilt:picknickfilt:picknickfilts:picknickfilten:picknickfiltens:picknickfiltar:picknickfiltars:picknickfiltarna:picknickfiltarnas
+COMPOUND(633246, 551129): picknick + filt
+755111r4<substantiv>picknickkorg:picknickkorg:picknickkorgs:picknickkorgen:picknickkorgens:picknickkorgar:picknickkorgars:picknickkorgarna:picknickkorgarnas
+COMPOUND(633246, 551586): picknick + korg
+884962r3<substantiv>pickolo:pickolo:pickolos:pickolon:pickolons:pickolor:pickolors:pickolorna:pickolornas
+756861r3<substantiv>pickup:pickup:pickups:pickupen:pickupens:pickuper:pickupers:pickuperna:pickupernas
+755119r3<substantiv>piedestal:piedestal:piedestals:piedestalen:piedestalens:piedestaler:piedestalers:piedestalerna:piedestalernas
+884971r3<verb>pierca:pierca:piercade:piercat:piercar:pierca:piercas:piercades:piercats:piercas:piercad:piercat:piercade:piercande:
+884982r3<substantiv>piercing:piercing:piercings:piercingen:piercingens:piercingar:piercingars:piercingarna:piercingarnas
+965831r3<substantiv>piercning:piercning:piercnings:piercningen:piercningens:piercningar:piercningars:piercningarna:piercningarnas
+554749r3<egennamn>Pierre:Pierre:Pierres
+694719r3<substantiv>pietet:pietet:pietets:pieteten:pietetens:!:!:!:!
+585057r4<adjektiv>pietetsfull:pietetsfull:pietetsfullt:pietetsfulla:pietetsfulla:pietetsfullare:pietetsfullast:pietetsfullaste:pietetsfulle
+884991r3<substantiv>pietetskänsla:pietetskänsla:pietetskänslas:pietetskänslan:pietetskänslans:pietetskänslor:pietetskänslors:pietetskänslorna:pietetskänslornas
+565119r3<adjektiv>pietetslös:pietetslös:pietetslöst:pietetslösa:pietetslösa::::
+884999r3<substantiv>pietetsskäl:pietetsskäl:pietetsskäls:pietetsskälet:pietetsskälets:pietetsskäl:pietetsskäls:pietetsskälen:pietetsskälens
+885005r3<substantiv>pietism:pietism:pietisms:pietismen:pietismens::::
+885009r3<substantiv>pietist:pietist:pietists:pietisten:pietistens:pietister:pietisters:pietisterna:pietisternas
+582940r4<adjektiv>pietistisk:pietistisk:pietistiskt:pietistiska:pietistiska::::pietistiske::::::::
+582943r3<adjektiv>piezoelektrisk:piezoelektrisk:piezoelektriskt:piezoelektriska:piezoelektriska::::
+582946r3<adjektiv>piezometrisk:piezometrisk:piezometriskt:piezometriska:piezometriska::::
+798603r3<adjektiv>piezoresistiv:piezoresistiv:piezoresistivt:piezoresistiva:piezoresistiva::::
+935367r3<substantiv>piff:piff:piffs:piffen:piffens::::
+CUSTOM: y n y !piffs !piffen !piffens
+885017r3<verb>piffa:piffa:piffade:piffat:piffar:piffa:piffas:piffades:piffats:piffas:::::
+575262r4<adjektiv>piffig:piffig:piffigt:piffiga:piffiga:piffigare:piffigast:piffigaste:piffige
+885024r3<substantiv>piffighet:piffighet:piffighets:piffigheten:piffighetens::::
+628523r7<substantiv>piga:piga:pigas:pigan:pigans:pigor:pigors:pigorna:pigornas
+CUSTOM: y n
+694738r4<substantiv>pigavdrag:pigavdrag:pigavdrags:pigavdraget:pigavdragets:pigavdrag:pigavdrags:pigavdragen:pigavdragens
+COMPOUND(628523, 552203): piga + avdrag
+694729r4<substantiv>pigdebatt:pigdebatt:pigdebatts:pigdebatten:pigdebattens:pigdebatter:pigdebatters:pigdebatterna:pigdebatternas
+COMPOUND(628523, 548584): piga + debatt
+563168r4<adjektiv>pigg:pigg:piggt:pigga:pigga:piggare:piggast:piggaste:pigge
+885031r3<substantiv>pigg:pigg:piggs:piggen:piggens:piggar:piggars:piggarna:piggarnas
+585616r4<verb>pigga:pigga:piggade:piggat:piggar:pigga:piggas:piggades:piggats:piggas:::::
+885038r3<substantiv>piggelin:piggelin:piggelins:piggelinen:piggelinens:piggeliner:piggeliners:piggelinerna:piggelinernas
+694745r3<substantiv>pigghaj:pigghaj:pigghajs:pigghajen:pigghajens:pigghajar:pigghajars:pigghajarna:pigghajarnas
+694753r3<verb>piggna:piggna:piggnade:piggnat:piggnar:piggna:::::::::
+694757r3<substantiv>piggsvin:piggsvin:piggsvins:piggsvinet:piggsvinets:piggsvin:piggsvins:piggsvinen:piggsvinens
+CUSTOM: y y piggsvins
+694763r4<substantiv>piggvar:piggvar:piggvars:piggvaren:piggvarens:piggvarar:piggvarars:piggvararna:piggvararnas
+CUSTOM: y y piggvars
+694771r4<substantiv>piggvarsfilé:piggvarsfilé:piggvarsfilés:piggvarsfilén:piggvarsfiléns:piggvarsfiléer:piggvarsfiléers:piggvarsfiléerna:piggvarsfiléernas
+COMPOUND(694763, 561718): piggvar + filé
+800109r4<adjektiv>piggögd:piggögd:piggögt:piggögda:piggögda::::piggögde::::::::
+885520r3<substantiv>pigjobb:pigjobb:pigjobbs:pigjobbet:pigjobbets:pigjobb:pigjobbs:pigjobben:pigjobbens
+885527r4<substantiv>pigkammare:pigkammare:pigkammares:pigkammaren:pigkammarens:pigkammare, pigkamrar:pigkammares, pigkamrars:pigkamrarna:pigkamrarnas
+COMPOUND(628523, 559310): piga + kammare
+694723r6<substantiv>pigment:pigment:pigments:pigmentet:pigmentets:pigment:pigments:pigmenten:pigmentens
+CUSTOM: y y pigment
+976769r4<substantiv>pigmentepitel:pigmentepitel:pigmentepitels:pigmentepitelet:pigmentepitelets::::
+COMPOUND(694723, 976716): pigment + epitel
+694779r3<adjektiv>pigmenterad:pigmenterad:pigmenterat:pigmenterade:pigmenterade:!:!:!:
+694782r3<substantiv>pigmentering:pigmentering:pigmenterings:pigmenteringen:pigmenteringens:pigmenteringar:pigmenteringars:pigmenteringarna:pigmenteringarnas
+CUSTOM: y y pigmenterings
+694790r4<substantiv>pigmentfärg:pigmentfärg:pigmentfärgs:pigmentfärgen:pigmentfärgens:pigmentfärger:pigmentfärgers:pigmentfärgerna:pigmentfärgernas
+COMPOUND(694723, 549002): pigment + färg
+885047r4<adjektiv>pigmentrik:pigmentrik:pigmentrikt:pigmentrika:pigmentrika::::::::::::
+COMPOUND(694723, 563125): pigment + rik
+885535r3<substantiv>pigroman:pigroman:pigromans:pigromanen:pigromanens:pigromaner:pigromaners:pigromanerna:pigromanernas
+885543r3<substantiv>pigtittare:pigtittare:pigtittares:pigtittaren:pigtittarens:pigtittare:pigtittares:pigtittarna:pigtittarnas
+885549r3<substantiv>pigtjusare:pigtjusare:pigtjusares:pigtjusaren:pigtjusarens:pigtjusare:pigtjusares:pigtjusarna:pigtjusarnas
+973231r3<egennamn>Pihl:Pihl:Pihls
+551766r5<substantiv>pik:pik:piks:piken:pikens:pikar:pikars:pikarna:pikarnas
+CUSTOM: y n
+694798r3<verb>pika:pika:pikade:pikat:pikar:pika:pikas:pikades:pikats:pikas:pikad:pikat:pikade::
+694805r4<adjektiv>pikant:pikant:pikant:pikanta:pikanta:pikantare:pikantast:pikantaste:::::::::
+694807r3<substantiv>pikanteri:pikanteri:pikanteris:pikanteriet:pikanteriets:pikanterier:pikanteriers:pikanterierna:pikanteriernas
+885053r3<substantiv>pikantsås:pikantsås:pikantsås:pikantsåsen:pikantsåsens:pikantsåser:pikantsåsers:pikantsåserna:pikantsåsernas
+694815r3<substantiv>pikaresk:pikaresk:pikaresks:pikaresken:pikareskens:pikaresker:pikareskers:pikareskerna:pikareskernas
+694823r3<substantiv>pikareskroman:pikareskroman:pikareskromans:pikareskromanen:pikareskromanens:pikareskromaner:pikareskromaners:pikareskromanerna:pikareskromanernas
+694831r4<substantiv>piké:piké:pikés:pikén:pikéns:pikéer:pikéers:pikéerna:pikéernas
+CUSTOM: y y piké
+590556r3<verb>pikera:pikera:pikerade:pikerat:pikerar:pikera:::::::::
+794270r3<adjektiv>pikerad:pikerad:pikerat:pikerade:pikerade:!:!:!:
+885060r3<substantiv>pikering:pikering:pikerings:pikeringen:pikeringens::::
+885064r3<substantiv>pikerstygn:pikerstygn:pikerstygns:pikerstygnet:pikerstygnets:pikerstygn:pikerstygns:pikerstygnen:pikerstygnens
+694839r5<substantiv>piket:piket:pikets:piketen:piketens:piketer:piketers:piketerna:piketernas
+CUSTOM: y y piket
+694847r4<substantiv>piketbil:piketbil:piketbils:piketbilen:piketbilens:piketbilar:piketbilars:piketbilarna:piketbilarnas
+COMPOUND(694839, 550885): piket + bil
+694855r4<substantiv>pikétröja:pikétröja:pikétröjas:pikétröjan:pikétröjans:pikétröjor:pikétröjors:pikétröjorna:pikétröjornas
+COMPOUND(694831, 595624): piké + tröja
+694863r4<substantiv>piketstyrka:piketstyrka:piketstyrkas:piketstyrkan:piketstyrkans:piketstyrkor:piketstyrkors:piketstyrkorna:piketstyrkornas
+COMPOUND(694839, 595427): piket + styrka
+885070r3<substantiv>pikhacka:pikhacka:pikhackas:pikhackan:pikhackans:pikhackor:pikhackors:pikhackorna:pikhackornas
+885078r3<substantiv>pikosekund:pikosekund:pikosekunds:pikosekunden:pikosekundens:pikosekunder:pikosekunders:pikosekunderna:pikosekundernas
+885086r3<substantiv>pikstav:pikstav:pikstavs:pikstaven:pikstavens:pikstavar:pikstavars:pikstavarna:pikstavarnas
+885094r3<substantiv>piktank:piktank:piktanks:piktanken:piktankens:piktankar:piktankars:piktankarna:piktankarnas
+582949r3<adjektiv>piktografisk:piktografisk:piktografiskt:piktografiska:piktografiska::::
+885102r3<substantiv>piktogram:piktogram:piktograms:piktogrammet:piktogrammets:piktogram:piktograms:piktogrammen:piktogrammens
+694879r3<substantiv>piktur:piktur:pikturs:pikturen:pikturens:pikturer:pikturers:pikturerna:pikturernas
+694871r4<substantiv>pikyxa:pikyxa:pikyxas:pikyxan:pikyxans:pikyxor:pikyxors:pikyxorna:pikyxornas
+COMPOUND(551766, 595828): pik + yxa
+624280r11<substantiv>pil:pil:pils:pilen:pilens:pilar:pilars:pilarna:pilarnas
+DEFINITION 1: Ett lövträd.
+DEFINITION 2: Smal spetsförsedd tingest avsedd för skjutning eller kast.
+CUSTOM: y y pil
+694887r3<verb>pila:pila:pilade:pilat:pilar:pila:::::::::
+694890r3<substantiv>pilaff:pilaff:pilaffs:pilaffen:pilaffens:pilaffer:pilaffers:pilafferna:pilaffernas
+704157r3<substantiv>pilaffris:pilaffris:pilaffris:pilaffriset:pilaffrisets::::
+694898r4<substantiv>pilallé:pilallé:pilallés:pilallén:pilalléns:pilalléer:pilalléers:pilalléerna:pilalléernas
+COMPOUND(624280, 559227): pil + allé
+694906r3<substantiv>pilaster:pilaster:pilasters:pilastern:pilasterns:pilastrar:pilastrars:pilastrarna:pilastrarnas
+711830r3<egennamn>Pilatus:Pilatus:Pilatus
+798607r3<adjektiv>pilbladig:pilbladig:pilbladigt:pilbladiga:pilbladiga::::
+694914r4<substantiv>pilbåge:pilbåge:pilbåges:pilbågen:pilbågens:pilbågar:pilbågars:pilbågarna:pilbågarnas
+COMPOUND(624280, 560891): pil + båge
+885108r3<substantiv>pilefoder:pilefoder:pilefoders:pilefodret:pilefodrets:pilefoder:pilefoders:pilefodren:pilefodrens
+694922r4<substantiv>pilfink:pilfink:pilfinks:pilfinken:pilfinkens:pilfinkar:pilfinkars:pilfinkarna:pilfinkarnas
+CUSTOM: y y pilfinks
+694930r4<substantiv>pilfinkshane:pilfinkshane:pilfinkshanes:pilfinkshanen:pilfinkshanens:pilfinkshanar:pilfinkshanars:pilfinkshanarna:pilfinkshanarnas
+COMPOUND(694922, 599831): pilfink + hane
+575265r3<adjektiv>pilformig:pilformig:pilformigt:pilformiga:pilformiga::::
+675013r4<substantiv>pilgift:pilgift:pilgifts:pilgiftet:pilgiftets:pilgifter:pilgifters:pilgifterna:pilgifternas
+COMPOUND(624280, 556656): pil + gift
+885114r3<substantiv>pilgiftgroda:pilgiftgroda:pilgiftgrodas:pilgiftgrodan:pilgiftgrodans:pilgiftgrodor:pilgiftgrodors:pilgiftgrodorna:pilgiftgrodornas
+550194r4<substantiv>pilgrim:pilgrim:pilgrims:pilgrimen:pilgrimens:pilgrimer:pilgrimers:pilgrimerna:pilgrimernas
+CUSTOM: y y pilgrims
+694938r3<substantiv>pilgrimsfalk:pilgrimsfalk:pilgrimsfalks:pilgrimsfalken:pilgrimsfalkens:pilgrimsfalkar:pilgrimsfalkars:pilgrimsfalkarna:pilgrimsfalkarnas
+550196r3<substantiv>pilgrimsfärd:pilgrimsfärd:pilgrimsfärds:pilgrimsfärden:pilgrimsfärdens:pilgrimsfärder:pilgrimsfärders:pilgrimsfärderna:pilgrimsfärdernas
+851734r3<substantiv>pilgrimskap:pilgrimskap:pilgrimskaps:pilgrimskapet:pilgrimskapets::::
+694946r3<substantiv>pilgrimsmussla:pilgrimsmussla:pilgrimsmusslas:pilgrimsmusslan:pilgrimsmusslans:pilgrimsmusslor:pilgrimsmusslors:pilgrimsmusslorna:pilgrimsmusslornas
+851738r3<substantiv>pilgrimsort:pilgrimsort:pilgrimsorts:pilgrimsorten:pilgrimsortens:pilgrimsorter:pilgrimsorters:pilgrimsorterna:pilgrimsorternas
+694954r4<substantiv>pilgrimsvandring:pilgrimsvandring:pilgrimsvandrings:pilgrimsvandringen:pilgrimsvandringens:pilgrimsvandringar:pilgrimsvandringars:pilgrimsvandringarna:pilgrimsvandringarnas
+COMPOUND(550194, 562022): pilgrim + vandring
+CUSTOM: y y pilgrimsvandrings
+694962r3<substantiv>pilk:pilk:pilks:pilken:pilkens:pilkar:pilkars:pilkarna:pilkarnas
+CUSTOM: y n
+694970r4<verb>pilka:pilka:pilkade:pilkat:pilkar:pilka:pilkas:pilkades:pilkats:pilkas::::pilkande:
+851750r3<substantiv>pilkare:pilkare:pilkares:pilkaren:pilkarens:pilkare:pilkares:pilkarna:pilkarnas
+755127r4<substantiv>pilkastning:pilkastning:pilkastnings:pilkastningen:pilkastningens:pilkastningar:pilkastningars:pilkastningarna:pilkastningarnas
+885122r3<substantiv>pilkfiskare:pilkfiskare:pilkfiskares:pilkfiskaren:pilkfiskarens:pilkfiskare:pilkfiskares:pilkfiskarna:pilkfiskarnas
+885128r3<substantiv>pilkning:pilkning:pilknings:pilkningen:pilkningens::::
+635712r3<substantiv>pilkoger:pilkoger:pilkogers:pilkogret:pilkogrets:pilkoger:pilkogers:pilkogren, pilkogerna:pilkogrens, pilkogernas
+962862r3<substantiv>pill:pill:pills:pillet:pillets::::
+CUSTOM: y n
+629330r7<verb>pilla:pilla:pillade:pillat:pillar:pilla:pillas:pillades:pillats:pillas::::pillande:
+885132r3<substantiv>pilleknarkare:pilleknarkare:pilleknarkares:pilleknarkaren:pilleknarkarens:pilleknarkare:pilleknarkares:pilleknarkarna:pilleknarkarnas
+582952r3<adjektiv>pillemarisk:pillemarisk:pillemariskt:pillemariska:pillemariska::::
+623318r14<substantiv>piller:piller:pillers:pillret:pillrets:piller:pillers:pillren, pillerna:pillrens, pillernas
+CUSTOM: y y piller
+678399r4<substantiv>pillerburk:pillerburk:pillerburks:pillerburken:pillerburkens:pillerburkar:pillerburkars:pillerburkarna:pillerburkarnas
+COMPOUND(623318, 550980): piller + burk
+885138r3<substantiv>pilleri:pilleri:pilleris:pilleriet:pilleriets::::
+769580r3<substantiv>pillertrillare:pillertrillare:pillertrillares:pillertrillaren:pillertrillarens:pillertrillare:pillertrillares:pillertrillarna:pillertrillarnas
+938433r3<adjektiv>pillig:pillig:pilligt:pilliga:pilliga:pilligare:pilligast:pilligaste:::::::::
+984755r3<substantiv>pilljobb:pilljobb:pilljobbs:pilljobbet:pilljobbets:pilljobb:pilljobbs:pilljobben:pilljobbens
+958350r3<verb>pillra:pillra:pillrade:pillrat:pillrar:pillra::::::::pillrande:
+575268r3<adjektiv>pillrig:pillrig:pillrigt:pillriga:pillriga::::
+550198r8<substantiv>pilot:pilot:pilots:piloten:pilotens:piloter:piloters:piloterna:piloternas
+CUSTOM: y y pilot
+755131r4<substantiv>pilotfall:pilotfall:pilotfalls:pilotfallet:pilotfallets:pilotfall:pilotfalls:pilotfallen:pilotfallens
+COMPOUND(550198, 552371): pilot + fall
+861465r4<substantiv>pilotförbund:pilotförbund:pilotförbunds:pilotförbundet:pilotförbundets:pilotförbund:pilotförbunds:pilotförbunden:pilotförbundens
+COMPOUND(550198, 552400): pilot + förbund
+565122r3<adjektiv>pilotlös:pilotlös:pilotlöst:pilotlösa:pilotlösa::::
+CUSTOM: y n n
+755137r3<substantiv>pilotprojekt::::::::
+COMPOUND(550198, 552796): pilot + projekt
+633386r3<substantiv>pilotstudie:pilotstudie:pilotstudies:pilotstudien:pilotstudiens:pilotstudier:pilotstudiers:pilotstudierna:pilotstudiernas
+932037r3<substantiv>pilregn:pilregn:pilregns:pilregnet:pilregnets::::
+623192r3<adjektiv>pilsk:pilsk:pilskt:pilska:pilska:pilskare:pilskast:pilskaste:pilske
+960307r4<substantiv>pilslana:pilslana:pilslanas:pilslanan:pilslanans:pilslanor:pilslanors:pilslanorna:pilslanornas
+COMPOUND(624280, 666894): pil + slana
+798611r3<adjektiv>pilsnabb:pilsnabb:pilsnabbt:pilsnabba:pilsnabba::::
+735040r6<substantiv>pilsner:pilsner:pilsners:pilsnern:pilsnerns:pilsner:pilsners:pilsnerna:pilsnernas
+CUSTOM: y y pilsner
+756885r3<substantiv>pilsnerfilm::::::::
+COMPOUND(735040, 548921): pilsner + film
+756886r3<substantiv>pilsnerflaska::::::::
+COMPOUND(735040, 555299): pilsner + flaska
+756887r3<substantiv>pilsnerkorv::::::::
+COMPOUND(735040, 551609): pilsner + korv
+661847r3<substantiv>pilt:pilt:pilts:pilten:piltens:piltar:piltars:piltarna:piltarnas
+CUSTOM: y n
+932041r3<substantiv>pilträd:pilträd:pilträds:pilträdet:pilträdets:pilträd:pilträds:pilträden:pilträdens
+810291r5<verb>pimpa:pimpa:pimpade:pimpat:pimpar:pimpa:pimpas:pimpades:pimpats:pimpas:pimpad:pimpat:pimpade:pimpande:
+851754r3<substantiv>pimpeldon:pimpeldon:pimpeldons:pimpeldonet:pimpeldonets:pimpeldon:pimpeldons:pimpeldonen:pimpeldonens
+635371r7<verb>pimpelfiska:pimpelfiska:pimpelfiskade:pimpelfiskat:pimpelfiskar:pimpelfiska:pimpelfiskas:pimpelfiskades:pimpelfiskats:pimpelfiskas:pimpelfiskad:pimpelfiskat:pimpelfiskade:pimpelfiskande:
+COMPOUND(685261, 546545): pimpla + fiska
+756888r4<substantiv>pimpelfiske:pimpelfiske:pimpelfiskes:pimpelfisket:pimpelfiskets::::
+COMPOUND(685261, 625321): pimpla + fiske
+756889r4<substantiv>pimpelspö:pimpelspö:pimpelspös:pimpelspöet:pimpelspöets:pimpelspön:pimpelspöns:pimpelspöna:pimpelspönas
+COMPOUND(685261, 627835): pimpla + spö
+885142r3<substantiv>pimpinella:pimpinella:pimpinellas:pimpinellan:pimpinellans:pimpinellor:pimpinellors:pimpinellorna:pimpinellornas
+885150r3<substantiv>pimpinellros:pimpinellros:pimpinellros:pimpinellrosen:pimpinellrosens:pimpinellrosor:pimpinellrosors:pimpinellrosorna:pimpinellrosornas
+735051r3<adjektiv>pimpinett:pimpinett:pimpinett:pimpinetta:pimpinetta::::pimpinette
+685261r7<verb>pimpla:pimpla:pimplade:pimplat:pimplar:pimpla:pimplas:pimplades:pimplats:pimplas:pimplad:pimplat:pimplade:pimplande:
+CUSTOM: y y pimpel
+885157r3<substantiv>pimplare:pimplare:pimplares:pimplaren:pimplarens:pimplare:pimplares:pimplarna:pimplarnas
+885163r3<substantiv>pimpling:pimpling:pimplings:pimplingen:pimplingens::::
+756897r3<substantiv>pimpsten:pimpsten:pimpstens:pimpstenen:pimpstenens::::
+629224r5<substantiv>pin:pin:!:!:!:!:!:!:!
+DEFINITION 1: "Den som vill vara fin får lida pin"
+CUSTOM: p n
+547475r5<verb>pina:pina:pinade:pinat:pinar:pina:pinas:pinades:pinats:pinas:pinad:pinat:pinade:pinande:
+594866r3<substantiv>pina:pina:pinas:pinan:pinans:pinor:pinors:pinorna:pinornas
+984761r3<substantiv>pinakotek:pinakotek:pinakoteks:pinakoteket:pinakotekets:pinakotek:pinakoteks:pinakoteken:pinakotekens
+738063r3<substantiv>pinal:pinal:pinals:pinalen:pinalens:pinaler:pinalers:pinalerna:pinalernas
+731478r3<substantiv>pincené:pincené:pincenés:pincenén:pincenéns:pincenéer:pincenéers:pincenéerna:pincenéernas
+CUSTOM: y y pincené
+590564r3<verb>pincera:pincera:pincerade:pincerat:pincerar:pincera:::::::::
+755138r3<substantiv>pincett:pincett:pincetts:pincetten:pincettens:pincetter:pincetters:pincetterna:pincetternas
+CUSTOM: y y pincett
+585060r3<adjektiv>pinfull:pinfull:pinfullt:pinfulla:pinfulla::::
+755146r3<adjektiv>pinfärsk:pinfärsk:pinfärskt:pinfärska:pinfärska::::
+885167r3<substantiv>pingel:pingel:pingels:pinglet:pinglets::::
+736599r4<substantiv>pingis:pingis:pingis:pingisen:pingisens:!:!:!:!
+CUSTOM: y y pingis
+755149r3<verb>pingla:pingla:pinglade:pinglat:pinglar:pingla::::::::pinglande:
+736670r3<substantiv>pingla:pingla:pinglas:pinglan:pinglans:pinglor:pinglors:pinglorna:pinglornas
+735054r4<substantiv>pingpong:pingpong:pingpongs:pingpongen:pingpongens:!:!:!:!
+CUSTOM: y y pingpong
+756901r3<substantiv>pingpongbord::::::::
+COMPOUND(735054, 552265): pingpong + bord
+598655r6<substantiv>pingst:pingst:pingsts:pingsten:pingstens:pingstar:pingstars:pingstarna:pingstarnas
+CUSTOM: y y pingst
+661853r4<substantiv>pingstafton:pingstafton:pingstaftons:pingstaftonen:pingstaftonens:pingstaftnar:pingstaftnars:pingstaftnarna:pingstaftnarnas
+COMPOUND(598655, 613841): pingst + afton
+661861r4<substantiv>pingstdag:pingstdag:pingstdags:pingstdagen:pingstdagens:pingstdagar:pingstdagars:pingstdagarna:pingstdagarnas
+COMPOUND(598655, 551009): pingst + dag
+661867r3<substantiv>pingsthelg:pingsthelg:pingsthelgs:pingsthelgen:pingsthelgens::::
+756902r3<substantiv>pingstlilja:pingstlilja:pingstliljas:pingstliljan:pingstliljans:pingstliljor:pingstliljors:pingstliljorna:pingstliljornas
+756910r3<substantiv>pingstpastor::::::::
+COMPOUND(598655, 681705): pingst + pastor
+756911r4<substantiv>pingströrelse:pingströrelse:pingströrelses:pingströrelsen:pingströrelsens::::
+CUSTOM: y y pingströrelse
+756915r3<substantiv>pingströrelseförsamling::::::::
+COMPOUND(756911, 596893): pingströrelse + församling
+851760r3<substantiv>pingstvän:pingstvän:pingstväns:pingstvännen:pingstvännens:pingstvänner:pingstvänners:pingstvännerna:pingstvännernas
+550199r4<substantiv>pingvin:pingvin:pingvins:pingvinen:pingvinens:pingviner:pingviners:pingvinerna:pingvinernas
+CUSTOM: y y pingvin
+885171r4<substantiv>pingvinägg:pingvinägg:pingvinäggs:pingvinägget:pingvinäggets:pingvinägg:pingvinäggs:pingvinäggen:pingvinäggens
+COMPOUND(550199, 553150): pingvin + ägg
+756916r3<substantiv>pinje:pinje:pinjes:pinjen:pinjens:pinjer:pinjers:pinjerna:pinjernas
+885177r4<substantiv>pinjefrö:pinjefrö:pinjefrös:pinjefröet:pinjefröets:pinjefröer, pinjefrön:pinjefröers, pinjefröns:pinjefröerna, pinjefröna:pinjefröernas, pinjefrönas
+885189r3<substantiv>pinjekotte:pinjekotte:pinjekottes:pinjekotten:pinjekottens:pinjekottar:pinjekottars:pinjekottarna:pinjekottarnas
+755155r3<substantiv>pinjenöt:pinjenöt:pinjenöts:pinjenöten:pinjenötens:pinjenötter:pinjenötters:pinjenötterna:pinjenötternas
+885197r3<substantiv>pinjeskog:pinjeskog:pinjeskogs:pinjeskogen:pinjeskogens:pinjeskogar:pinjeskogars:pinjeskogarna:pinjeskogarnas
+885205r3<substantiv>pinjeträd:pinjeträd:pinjeträds:pinjeträdet:pinjeträdets:pinjeträd:pinjeträds:pinjeträden:pinjeträdens
+735058r3<verb>pinka:pinka:pinkade:pinkat:pinkar:pinka:pinkas:pinkades:pinkats:pinkas::::pinkande:
+575271r4<adjektiv>pinknödig:pinknödig:pinknödigt:pinknödiga:pinknödiga:pinknödigare:pinknödigast:pinknödigaste:pinknödige
+938643r3<substantiv>pin-kod:pin-kod:pin-kods:pin-koden:pin-kodens:pin-koder:pin-koders:pin-koderna:pin-kodernas
+885212r3<substantiv>pinkod:pinkod:pinkods:pinkoden:pinkodens:pinkoder:pinkoders:pinkoderna:pinkodernas
+567391r3<adjektiv>pinlig:pinlig:pinligt:pinliga:pinliga::::
+938278r3<substantiv>pinn:pinn:::::::
+CUSTOM: y n
+756928r3<verb>pinna:pinna:pinnade:pinnat:pinnar:pinna:::::::::
+885222r3<substantiv>pinnbröd:pinnbröd:pinnbröds:pinnbrödet:pinnbrödets:pinnbröd:pinnbröds:pinnbröden:pinnbrödens
+625963r14<substantiv>pinne:pinne:pinnes:pinnen:pinnens:pinnar:pinnars:pinnarna:pinnarnas
+CUSTOM: y y
+755164r4<substantiv>pinnhål:pinnhål:pinnhåls:pinnhålet:pinnhålets:pinnhål:pinnhåls:pinnhålen:pinnhålens
+COMPOUND(625963, 552485): pinne + hål
+575274r3<adjektiv>pinnig:pinnig:pinnigt:pinniga:pinniga::::
+877525r6<substantiv>pinnmo:pinnmo:pinnmos:pinnmon:pinnmons::::
+DEFINITION 1: Hårt packad bottenmorän
+755170r4<substantiv>pinnsoffa:pinnsoffa:pinnsoffas:pinnsoffan:pinnsoffans:pinnsoffor:pinnsoffors:pinnsofforna:pinnsoffornas
+COMPOUND(625963, 595305): pinne + soffa
+755178r4<substantiv>pinnstol:pinnstol:pinnstols:pinnstolen:pinnstolens:pinnstolar:pinnstolars:pinnstolarna:pinnstolarnas
+COMPOUND(625963, 551944): pinne + stol
+885229r3<substantiv>pinnved:pinnved:pinnveds:pinnveden:pinnvedens::::
+885233r3<substantiv>pinoande:pinoande:pinoandes:pinoanden:pinoandens:pinoandar:pinoandars:pinoandarna:pinoandarnas
+885241r3<substantiv>pinoredskap:pinoredskap:pinoredskaps:pinoredskapet:pinoredskapets:pinoredskap:pinoredskaps:pinoredskapen:pinoredskapens
+885247r3<substantiv>pinorum:pinorum:pinorums:pinorummet:pinorummets:pinorum:pinorums:pinorummen:pinorummens
+563517r4<adjektiv>pinsam:pinsam:pinsamt:pinsamma:pinsamma:pinsammare:pinsammast:pinsammaste:pinsamme
+661869r3<substantiv>pinsamhet:pinsamhet:pinsamhets:pinsamheten:pinsamhetens:pinsamheter:pinsamheters:pinsamheterna:pinsamheternas
+CUSTOM: y y pinsamhets
+906581r3<substantiv>pinscher:pinscher:pinschers:pinschern:pinscherns:pinschrar:pinschrars:pinschrarna:pinschrarnas
+891553r6<substantiv>pint:pint:pints:pinten:pintens:pint:pints:pinten:pintens
+CUSTOM: n n y
+756931r3<substantiv>pinuppa:pinuppa:pinuppas:pinuppan:pinuppans:pinuppor:pinuppors:pinupporna:pinuppornas
+575277r3<adjektiv>pinuppig:pinuppig:pinuppigt:pinuppiga:pinuppiga::::
+628525r8<substantiv>pion:pion:pions:pionen:pionens:pioner:pioners:pionerna:pionernas
+CUSTOM: y n
+550200r5<substantiv>pionjär:pionjär:pionjärs:pionjären:pionjärens:pionjärer:pionjärers:pionjärerna:pionjärernas
+CUSTOM: y y pionjär
+728859r4<substantiv>pionjärroll:pionjärroll:pionjärrolls:pionjärrollen:pionjärrollens:pionjärroller:pionjärrollers:pionjärrollerna:pionjärrollernas
+COMPOUND(550200, 550398): pionjär + roll
+885254r3<substantiv>pionjärskap:pionjärskap:pionjärskaps:pionjärskapet:pionjärskapets::::
+756939r3<adjektiv>pionröd:pionröd:pionrött:pionröda:pionröda::::
+685667r5<substantiv>pip:pip:pips:pipen:pipens:pipar:pipars:piparna:piparnas
+DEFINITION 1: spetsig mynning på kärl eller behållare
+CUSTOM: y n
+685661r4<substantiv>pip:pip:pips:pipet:pipets:pip:pips:pipen:pipens
+DEFINITION 1: högfrekvent ljud
+556880r20<substantiv>pipa:pipa:pipas:pipan:pipans:pipor:pipors:piporna:pipornas
+DEFINITION 1: Ett avkortat rör som används för att med precision från flaskor och burkar föra vätskor och gaser till en viss plats.  Exempelvis på en kaffekanna eller oljekanna.
+DEFINITION 2: En klass av blåsinstrument ofta av enklare typ. Även enklare namn på flöjter. Exempel visselpipa, blockflöjt eller spelpipa.
+CUSTOM: y y
+585402r4<verb>pipa:pipa:pep:pipit:piper:pip::::::::pipande:
+835456r3<substantiv>pipare:pipare:pipares:piparen:piparens:pipare:pipares:piparna:piparnas
+885258r3<substantiv>pipeline:pipeline:pipelines:pipelinen:pipelinens:pipeliner:pipeliners:pipelinerna:pipelinernas
+762752r3<egennamn>Piper:Piper:Pipers
+756942r3<substantiv>pipett:pipett:pipetts:pipetten:pipettens:pipetter:pipetters:pipetterna:pipetternas
+794271r3<adjektiv>pipformad:pipformad:pipformat:pipformade:pipformade:!:!:!:
+575280r3<adjektiv>pipformig:pipformig:pipformigt:pipformiga:pipformiga::::
+756950r4<substantiv>piphuvud:piphuvud:piphuvuds:piphuvudet:piphuvudets:piphuvud, piphuvuden:piphuvuds, piphuvudens:piphuvudena:piphuvudenas
+COMPOUND(556880, 552483): pipa + huvud
+575283r4<adjektiv>pipig:pipig:pipigt:pipiga:pipiga:pipigare:pipigast:pipigaste:pipige::::::::
+885270r3<substantiv>pipighet:pipighet:pipighets:pipigheten:pipighetens::::
+756958r3<substantiv>pipkrage:pipkrage:pipkrages:pipkragen:pipkragens:pipkragar:pipkragars:pipkragarna:pipkragarnas
+756966r3<substantiv>piplärka:piplärka:piplärkas:piplärkan:piplärkans:piplärkor:piplärkors:piplärkorna:piplärkornas
+756974r4<substantiv>pipolja:pipolja:pipoljas:pipoljan:pipoljans:pipoljor:pipoljors:pipoljorna:pipoljornas
+885279r3<substantiv>piporgel:piporgel:piporgels:piporgeln:piporgelns:piporglar:piporglars:piporglarna:piporglarnas
+756978r3<verb>pippa:pippa:pippade:pippat:pippar:pippa:pippas:pippades:pippats:pippas::::pippande:
+755187r3<substantiv>pippi:pippi:pippis:pippin:pippins::::
+744176r3<egennamn>Pippi:Pippi:Pippis
+658853r4<substantiv>piprensare:piprensare:piprensares:piprensaren, piprensarn:piprensarens, piprensarns:piprensare:piprensares:piprensarna:piprensarnas
+COMPOUND(556880, 658845): pipa + rensare
+CUSTOM: y y piprensar
+885288r3<substantiv>piprök:piprök:pipröks:pipröken:piprökens::::
+756986r3<substantiv>piprökare:piprökare:piprökares:piprökaren:piprökarens:piprökare:piprökares:piprökarna:piprökarnas
+885292r3<substantiv>piprökning:piprökning:pipröknings:piprökningen:piprökningens::::
+885296r3<substantiv>pipskaft:pipskaft:pipskafts:pipskaftet:pipskaftets:pipskaft:pipskafts:pipskaften:pipskaftens
+756992r3<substantiv>pipskägg:pipskägg:pipskäggs:pipskägget:pipskäggets:pipskägg:pipskäggs:pipskäggen:pipskäggens
+729023r4<substantiv>piptobak:piptobak:piptobaks:piptobaken:piptobakens::::
+COMPOUND(685667, 649332): pip + tobak
+984768r3<substantiv>pipverk:pipverk:pipverks:pipverket:pipverkets:pipverk:pipverks:pipverken:pipverkens
+625964r5<substantiv>pir:pir:pirs:piren:pirens:pirar:pirars:pirarna:pirarnas
+550201r6<substantiv>pirat:pirat:pirats:piraten:piratens:pirater:piraters:piraterna:piraternas
+CUSTOM: y y pirat
+878023r4<substantiv>piratdåd:piratdåd:piratdåds:piratdådet:piratdådets:piratdåd:piratdåds:piratdåden:piratdådens
+COMPOUND(550201, 552335): pirat + dåd
+657897r3<verb>piratkopiera:piratkopiera:piratkopierade:piratkopierat:piratkopierar:piratkopiera:piratkopieras:piratkopierades:piratkopierats:piratkopieras:piratkopierad:piratkopierat:piratkopierade::
+694974r4<substantiv>piratkopiering:piratkopiering:piratkopierings:piratkopieringen:piratkopieringens::::
+COMPOUND(550201, 653069): pirat + kopiering
+CUSTOM: y y piratkopierings
+634462r6<verb>piratsända:piratsända:piratsände:piratsänt:piratsänder:piratsänd:piratsändas:piratsändes:piratsänts:piratsänds, piratsändes:piratsänd:piratsänt:piratsända:piratsändande:
+COMPOUND(550201, 593413): pirat + sända
+755191r3<substantiv

@@ -1,0 +1,640 @@
+g:särbegåvnings:särbegåvningen:särbegåvningens:särbegåvningar:särbegåvningars:särbegåvningarna:särbegåvningarnas
+547807r4<verb>särbehandla:särbehandla:särbehandlade:särbehandlat:särbehandlar:särbehandla:särbehandlas:särbehandlades:särbehandlats:särbehandlas:särbehandlad:särbehandlat:särbehandlade::
+671234r3<substantiv>särbehandling:särbehandling:särbehandlings:särbehandlingen:särbehandlingens:särbehandlingar:särbehandlingars:särbehandlingarna:särbehandlingarnas
+671250r3<verb>särbeskatta:särbeskatta:särbeskattade:särbeskattat:särbeskattar:särbeskatta:särbeskattas:särbeskattades:särbeskattats:särbeskattas:särbeskattad:särbeskattat:särbeskattade::
+671258r3<substantiv>särbeskattning:särbeskattning:särbeskattnings:särbeskattningen:särbeskattningens::::
+CUSTOM: y y särbeskattnings
+957603r3<substantiv>särbestämmelse:särbestämmelse:särbestämmelses:särbestämmelsen:särbestämmelsens:särbestämmelser:särbestämmelsers:särbestämmelserna:särbestämmelsernas
+612019r3<substantiv>särbo:särbo:särbos:särbon:särbons:särbor:särbors:särborna:särbornas
+620826r3<adverb>särdeles:särdeles
+671262r3<substantiv>särdrag:särdrag:särdrags:särdraget:särdragets:särdrag:särdrags:särdragen:särdragens
+640296r3<adjektiv>säregen:säregen:säreget:säregna:säregna:säregnare:säregnast:säregnaste:säregne
+941784r3<substantiv>säregenhet:säregenhet:säregenhets:säregenheten:säregenhetens:säregenheter:säregenheters:säregenheterna:säregenheternas
+937520r3<substantiv>särfall:särfall:särfalls:särfallet:särfallets:särfall:särfalls:särfallen:särfallens
+728850r4<substantiv>särintresse:särintresse:särintresses:särintresset:särintressets:särintressen:särintressens:särintressena:särintressenas
+COMPOUND(697261, 612596): sär + intresse
+628896r4<substantiv>särk:särk:särks:särken:särkens:särkar:särkars:särkarna:särkarnas
+CUSTOM: y n
+671268r3<substantiv>särklass:särklass:!:!:!:!:!:!:!
+577364r3<adjektiv>särklassig:särklassig:särklassigt:särklassiga:särklassiga::::
+635351r4<substantiv>särkullbarn, särkullsbarn:särkullbarn, särkullsbarn:särkullbarns, särkullsbarns:särkullbarnet, särkullsbarnet:särkullbarnets, särkullsbarnets:särkullbarn, särkullsbarn:särkullbarns, särkullsbarns:särkullbarnen, särkullsbarnen:särkullbarnens, särkullsbarnens
+891279r3<substantiv>särlagstiftning:särlagstiftning:särlagstiftnings:särlagstiftningen:särlagstiftningens:särlagstiftningar:särlagstiftningars:särlagstiftningarna:särlagstiftningarnas
+889882r3<adjektiv>särlevande:särlevande:särlevande:särlevande:särlevande:!:!:!:::::::::
+889885r3<substantiv>särlevnad:särlevnad:särlevnads:särlevnaden:särlevnadens::::
+736991r3<substantiv>särling:särling:särlings:särlingen:särlingens:särlingar:särlingars:särlingarna:särlingarnas
+919889r3<substantiv>särläkemedel:särläkemedel:särläkemedels:särläkemedlet:särläkemedlets:särläkemedel:särläkemedels:särläkemedlen:särläkemedlens
+CUSTOM: y n särläkemedels
+892024r3<substantiv>särlösning:särlösning:särlösnings:särlösningen:särlösningens:särlösningar:särlösningars:särlösningarna:särlösningarnas
+747706r3<substantiv>särmärke:särmärke:särmärkes:särmärket:särmärkets:särmärken:särmärkens:särmärkena:särmärkenas
+584173r3<adjektiv>särnordisk:särnordisk:särnordiskt:särnordiska:särnordiska::::
+747714r3<substantiv>särprägel:särprägel:särprägels:särprägeln:särprägelns::::
+725938r3<verb>särprägla:särprägla:särpräglade:särpräglat:särpräglar:särprägla:särpräglas:särpräglades:särpräglats:särpräglas:särpräglad:särpräglat:särpräglade:särpräglande:
+894407r3<verb>särredovisa:särredovisa:särredovisade:särredovisat:särredovisar:särredovisa:särredovisas:särredovisades:särredovisats:särredovisas:särredovisad:särredovisat:särredovisade:särredovisande:
+919896r3<substantiv>särredovisning:särredovisning:särredovisnings:särredovisningen:särredovisningens:särredovisningar:särredovisningars:särredovisningarna:särredovisningarnas
+888574r3<substantiv>särregel:särregel:särregels:särregeln:särregelns:särregler:särreglers:särreglerna:särreglernas
+888789r3<substantiv>särreglering:särreglering:särreglerings:särregleringen:särregleringens:särregleringar:särregleringars:särregleringarna:särregleringarnas
+570697r3<adjektiv>särskild:särskild:särskilt:särskilda:särskilda::::
+855428r5<substantiv>särskildhet:särskildhet:särskildhets:särskildheten:särskildhetens:särskildheter:särskildheters:särskildheterna:särskildheternas
+CUSTOM: y n särskildhets
+855426r4<substantiv>särskildhetstanke:särskildhetstanke:särskildhetstankes:särskildhetstanken:särskildhetstankens:särskildhetstankar:särskildhetstankars:särskildhetstankarna:särskildhetstankarnas
+COMPOUND(855428, 555605): särskildhet + tanke
+671269r7<verb>särskilja:särskilja:särskilde, särskiljde:särskilt, särskiljt:särskiljer:särskilj:särskiljas:särskildes, särskiljdes:särskilts, särskiljts:särskiljs, särskiljes::::särskiljande:
+983817r3<substantiv>särskiljande:särskiljande:särskiljandes:särskiljandet:särskiljandets::::
+570255r3<adjektiv>särskiljbar:särskiljbar:särskiljbart:särskiljbara:särskiljbara::::
+894416r3<substantiv>särskillnad:särskillnad:särskillnads:särskillnaden:särskillnadens::::
+704129r4<substantiv>särskola:särskola:särskolas:särskolan:särskolans:särskolor:särskolors:särskolorna:särskolornas
+CUSTOM: y n särskole 
+899455r3<substantiv>särskollärare:särskollärare:särskollärares:särskolläraren:särskollärarens:särskollärare:särskollärares:särskollärarna:särskollärarnas
+713087r4<verb>särskriva:särskriva:särskrev:särskrivit:särskriver:särskriv:särskrivas:särskrevs:särskrivits:särskrivs, särskrives:särskriven:särskrivet:särskrivna::
+COMPOUND(697261, 556530): sär + skriva
+724318r4<substantiv>särskrivning:särskrivning:särskrivnings:särskrivningen:särskrivningens:särskrivningar:särskrivningars:särskrivningarna:särskrivningarnas
+COMPOUND(697261, 656733): sär + skrivning
+CUSTOM: y y särskrivnings
+747719r3<substantiv>särspel:särspel:särspels:särspelet:särspelets:särspel:särspels:särspelen:särspelens
+CUSTOM: y y särspels
+889470r3<verb>särställa:särställa:särställde:särställt:särställer::särställas::::::::
+671273r3<substantiv>särställning:särställning:särställnings:särställningen:särställningens:särställningar:särställningars:särställningarna:särställningarnas
+CUSTOM: y y särställnings
+570258r3<adjektiv>särtagbar:särtagbar:särtagbart:särtagbara:särtagbara::::
+747725r3<substantiv>särtryck:särtryck:särtrycks:särtrycket:särtryckets:särtryck:särtrycks:särtrycken:särtryckens
+CUSTOM: y y särtrycks
+919905r3<substantiv>säråtgärd:säråtgärd:säråtgärds:säråtgärden:säråtgärdens:säråtgärder:säråtgärders:säråtgärderna:säråtgärdernas
+734214r3<egennamn>Särö:Särö:Särös
+CUSTOM: y n Särö
+550620r10<substantiv>säsong:säsong:säsongs:säsongen:säsongens:säsonger:säsongers:säsongerna:säsongernas
+CUSTOM: y y säsongs säsong +säsongs
+795500r3<adjektiv>säsongartad:säsongartad:säsongartat:säsongartade:säsongartade:!:!:!:
+795503r3<adjektiv>säsongrensad:säsongrensad:säsongrensat:säsongrensade:säsongrensade:!:!:!:
+795506r3<adjektiv>säsongsbetonad:säsongsbetonad:säsongsbetonat:säsongsbetonade:säsongsbetonade:!:!:!:
+577367r3<adjektiv>säsongsmässig:säsongsmässig:säsongsmässigt:säsongsmässiga:säsongsmässiga::::
+747731r4<substantiv>säsongspremiär:säsongspremiär:säsongspremiärs:säsongspremiären:säsongspremiärens:säsongspremiärer:säsongspremiärers:säsongspremiärerna:säsongspremiärernas
+COMPOUND(550620, 550248): säsong + premiär
+747732r4<substantiv>säsongsstart:säsongsstart:säsongsstarts:säsongsstarten:säsongsstartens:säsongsstarter:säsongsstarters:säsongsstarterna:säsongsstarternas
+COMPOUND(550620, 603706): säsong + start
+987596r3<adverb>säsongsvis:säsongsvis
+624854r7<substantiv>säte:säte:sätes:sätet:sätets:säten:sätens:sätena:sätenas
+BASEWORDS: sätes
+CUSTOM: y y sätes
+924615r4<substantiv>säter:säter:säters:sätern:säterns:sätrar:sätrars:sätrarna:sätrarnas
+DEFINITION 1: Fäbod
+CUSTOM: n n y
+728263r5<egennamn>Säter:Säter:Säters
+CUSTOM: y n Säter
+671274r3<substantiv>säteri:säteri:säteris:säteriet:säteriets:säterier:säteriers:säterierna:säteriernas
+987598r3<substantiv>säteritak:säteritak:säteritaks:säteritaket:säteritakets:säteritak:säteritaks:säteritaken:säteritakens
+972254r3<egennamn>Sätra:Sätra:Sätras
+553026r15<substantiv>sätt:sätt:sätts:sättet:sättets:sätt:sätts:sätten:sättens
+593414r31<verb>sätta:sätta:satte:satt:sätter:sätt:sättas:sattes:satts:sätts, sättes:satt:satt:satta:sättande:
+615477r4<substantiv>sättare:sättare:sättares:sättaren:sättarens:sättare:sättares:sättarna:sättarnas
+CUSTOM: y y sättar +sättar
+611600r3<substantiv>sätteri:sätteri:sätteris:sätteriet:sätteriets:sätterier:sätteriers:sätterierna:sätteriernas
+570261r3<adjektiv>sätthärdbar:sätthärdbar:sätthärdbart:sätthärdbara:sätthärdbara::::
+875491r3<substantiv>sätthärdning:sätthärdning:sätthärdnings:sätthärdningen:sätthärdningens:sätthärdningar:sätthärdningars:sätthärdningarna:sätthärdningarnas
+638374r9<substantiv>sättning:sättning:sättnings:sättningen:sättningens:sättningar:sättningars:sättningarna:sättningarnas
+CUSTOM: y y sättnings +sättnings
+577370r3<adjektiv>sättningsfärdig:sättningsfärdig:sättningsfärdigt:sättningsfärdiga:sättningsfärdiga::::
+987604r3<substantiv>sättpotatis:sättpotatis:sättpotatis:sättpotatisen:sättpotatisens:sättpotatisar:sättpotatisars:sättpotatisarna:sättpotatisarnas
+987612r4<substantiv>sättsadverbial:sättsadverbial:sättsadverbials:sättsadverbialet:sättsadverbialets:sättsadverbial:sättsadverbials:sättsadverbialen:sättsadverbialens
+COMPOUND(553026, 606488): sätt + adverbial
+624318r4<substantiv>säv:säv:sävs:säven:sävens:!:!:!:!
+DEFINITION 1: Ett sorts gräs.
+568072r4<adjektiv>sävlig:sävlig:sävligt:sävliga:sävliga:sävligare:sävligast:sävligaste:sävlige
+728265r3<egennamn>Sävsjö:Sävsjö:Sävsjös
+CUSTOM: y n Sävsjö
+987619r3<substantiv>sävsångare:sävsångare:sävsångares:sävsångaren:sävsångarens:sävsångare:sävsångares:sävsångarna:sävsångarnas
+671283r3<substantiv>söder:söder:söders:södern:söderns::::
+571239r4<adverb>söder:söder
+CUSTOM: y n söder
+922678r3<egennamn>Söderberg:Söderberg:Söderbergs
+953776r3<egennamn>Söderblom:Söderblom:Söderbloms
+892106r3<adjektiv>södergående:södergående:södergående:södergående:södergående:!:!:!:::::::::
+728267r3<egennamn>Söderhamn:Söderhamn:Söderhamns
+CUSTOM: y n Söderhamns
+892409r3<egennamn>Söderhavet:Söderhavet:Söderhavets
+CUSTOM: y n söderhavs
+889587r3<substantiv>söderhavsö:söderhavsö:söderhavsös:söderhavsön:söderhavsöns:söderhavsöar:söderhavsöars:söderhavsöarna:söderhavsöarnas
+973353r3<egennamn>Söderholm:Söderholm:Söderholms
+620696r3<adverb>söderifrån:söderifrån
+963920r3<substantiv>söderkis:söderkis:söderkis:söderkisen:söderkisens:söderkisar:söderkisars:söderkisarna:söderkisarnas
+728269r3<egennamn>Söderköping:Söderköping:Söderköpings
+CUSTOM: y n Söderköpings
+965421r3<egennamn>Söderleden:Söderleden:Söderledens
+854989r3<egennamn>Söderling:Söderling:Söderlings
+919914r4<substantiv>söderläge:söderläge:söderläges:söderläget:söderlägets:söderlägen:söderlägens:söderlägena:söderlägenas
+COMPOUND(571239, 612680): söder + läge
+703211r3<egennamn>Södermalm:Södermalm:Södermalms
+CUSTOM: y n Södermalms
+892406r3<egennamn>Södermanland:Södermanland:Södermanlands
+671282r3<substantiv>södermanlänning:södermanlänning:södermanlännings:södermanlänningen:södermanlänningens:södermanlänningar:södermanlänningars:södermanlänningarna:södermanlänningarnas
+CUSTOM: y y södermanlännings
+860700r3<egennamn>Söderortspolisen:Söderortspolisen:Söderortspolisens
+973357r3<egennamn>Söderqvist:Söderqvist:Söderqvists
+772025r3<egennamn>Södersjukhuset:Södersjukhuset:Södersjukhusets
+554389r6<egennamn>Södertälje:Södertälje:Södertäljes
+CUSTOM: y n Södertälje
+860915r4<substantiv>Södertäljegäng:Södertäljegäng:Södertäljegängs:Södertäljegänget:Södertäljegängets:Södertäljegäng:Södertäljegängs:Södertäljegängen:Södertäljegängens
+COMPOUND(554389, 552456): Södertälje + gäng
+CUSTOM: n n 
+855518r3<egennamn>Södertörn:Södertörn:Södertörns
+CUSTOM: y n Södertörns
+620926r3<adverb>söderut:söderut
+693852r3<adverb>söderöver:söderöver
+571059r3<adjektiv>södra:::södra:::::
+585844r16<verb>söka:söka:sökte:sökt:söker:sök:sökas:söktes:sökts:söks, sökes:sökt:sökt:sökta:sökande:
+CUSTOM: y n sök
+671285r3<substantiv>sökande:sökande:sökandes:sökandet:sökandets::::
+613161r3<substantiv>sökande:sökande:sökandes:sökanden:sökandens:sökande:sökandes:sökandena:sökandenas
+561050r3<substantiv>sökare:sökare:sökares:sökaren:sökarens:sökare:sökares:sökarna:sökarnas
+CUSTOM: y y sökar +sökar
+570264r3<adjektiv>sökbar:sökbar:sökbart:sökbara:sökbara::::
+735805r4<substantiv>sökfunktion:sökfunktion:sökfunktions:sökfunktionen:sökfunktionens:sökfunktioner:sökfunktioners:sökfunktionerna:sökfunktionernas
+COMPOUND(585844, 561059): söka + funktion
+933001r4<substantiv>sökhund:sökhund:sökhunds:sökhunden:sökhundens:sökhundar:sökhundars:sökhundarna:sökhundarnas
+COMPOUND(585844, 555306): söka + hund
+933009r4<substantiv>sökljus:sökljus:sökljus:sökljuset:sökljusets:sökljus:sökljus:sökljusen:sökljusens
+COMPOUND(585844, 552670): söka + ljus
+772742r4<substantiv>sökmotor:sökmotor:sökmotors:sökmotorn:sökmotorns:sökmotorer:sökmotorers:sökmotorerna:sökmotorernas
+CUSTOM: y y sökmotor
+772751r4<substantiv>sökmotorjätte:sökmotorjätte:sökmotorjättes:sökmotorjätten:sökmotorjättens:sökmotorjättar:sökmotorjättars:sökmotorjättarna:sökmotorjättarnas
+COMPOUND(772742, 599847): sökmotor + jätte
+669689r5<substantiv>sökning:sökning:söknings:sökningen:sökningens:sökningar:sökningars:sökningarna:sökningarnas
+CUSTOM: y y söknings +söknings
+697263r4<substantiv>sökord:sökord:sökords:sökordet:sökordets:sökord:sökords:sökorden:sökordens
+COMPOUND(585844, 555138): söka + ord
+CUSTOM: y y sökords
+876797r3<substantiv>sökregister:sökregister:sökregisters:sökregistret:sökregistrets:sökregister:sökregisters:sökregistren:sökregistrens
+939608r4<substantiv>sökruta:sökruta:sökrutas:sökrutan:sökrutans:sökrutor:sökrutors:sökrutorna:sökrutornas
+COMPOUND(585844, 595040): söka + ruta
+937862r4<substantiv>söktjänst:söktjänst:söktjänsts:söktjänsten:söktjänstens:söktjänster:söktjänsters:söktjänsterna:söktjänsternas
+COMPOUND(585844, 550677): söka + tjänst
+934798r4<substantiv>söktryck:söktryck:söktrycks:söktrycket:söktryckets:söktryck:söktrycks:söktrycken:söktryckens
+COMPOUND(585844, 553063): söka + tryck
+726616r3<substantiv>sökverktyg:sökverktyg:sökverktygs:sökverktyget:sökverktygets:sökverktyg:sökverktygs:sökverktygen:sökverktygens
+930027r4<substantiv>sökväg:sökväg:sökvägs:sökvägen:sökvägens:sökvägar:sökvägars:sökvägarna:sökvägarnas
+COMPOUND(585844, 552110): söka + väg
+935730r3<substantiv>söl:söl:söls:sölet:sölets::::
+CUSTOM: n n y
+547810r4<verb>söla:söla:sölade:sölat:sölar:söla:sölas:sölades:sölats:sölas:::::
+577376r3<adjektiv>sölaktig:sölaktig:sölaktigt:sölaktiga:sölaktiga::::
+568073r3<adjektiv>sölig:sölig:söligt:söliga:söliga::::
+905785r3<substantiv>sölja:sölja:söljas:söljan:söljans:söljor:söljors:söljorna:söljornas
+CUSTOM: n n y
+927313r12<substantiv>sölkorv:sölkorv:sölkorvs:sölkorven:sölkorvens:sölkorvar:sölkorvars:sölkorvarna:sölkorvarnas
+DEFINITION 1: En person som tar lång tid på sig
+789064r3<egennamn>Sölve:Sölve:Sölves
+728270r4<egennamn>Sölvesborg:Sölvesborg:Sölvesborgs
+CUSTOM: y n Sölvesborgs
+892559r4<substantiv>Sölvesborgsbo:Sölvesborgsbo:Sölvesborgsbos:Sölvesborgsbon:Sölvesborgsbons:Sölvesborgsbor:Sölvesborgsbors:Sölvesborgsborna:Sölvesborgsbornas
+COMPOUND(728270, 855482): Sölvesborg + bo
+627861r14<substantiv>söm:söm:söms:sömmen:sömmens:sömmar:sömmars:sömmarna:sömmarnas
+564310r3<adjektiv>sömfri:sömfri:sömfritt:sömfria:sömfria::::
+565369r3<adjektiv>sömlös:sömlös:sömlöst:sömlösa:sömlösa::::
+595506r3<substantiv>sömmerska:sömmerska:sömmerskas:sömmerskan:sömmerskans:sömmerskor:sömmerskors:sömmerskorna:sömmerskornas
+619769r7<substantiv>sömn:sömn:sömns:sömnen:sömnens::::
+CUSTOM: y y sömn
+747733r3<substantiv>sömnad:sömnad:sömnads:sömnaden:sömnadens:sömnader:sömnaders:sömnaderna:sömnadernas
+611315r3<substantiv>sömnadsindustri:sömnadsindustri:sömnadsindustris:sömnadsindustrin:sömnadsindustrins:sömnadsindustrier:sömnadsindustriers:sömnadsindustrierna:sömnadsindustriernas
+577379r3<adjektiv>sömnaktig:sömnaktig:sömnaktigt:sömnaktiga:sömnaktiga::::
+946834r3<substantiv>sömnapné:sömnapné:sömnapnés:sömnapnén:sömnapnéns:sömnapnéer:sömnapnéers:sömnapnéerna:sömnapnéernas
+CUSTOM: y y sömnapné
+577382r3<adjektiv>sömngångaraktig:sömngångaraktig:sömngångaraktigt:sömngångaraktiga:sömngångaraktiga::::
+671286r3<substantiv>sömngångerska:sömngångerska:sömngångerskas:sömngångerskan:sömngångerskans:sömngångerskor:sömngångerskors:sömngångerskorna:sömngångerskornas
+563169r4<adjektiv>sömnig:sömnig:sömnigt:sömniga:sömniga:sömnigare:sömnigast:sömnigaste:
+947986r3<substantiv>sömnighet:sömnighet:sömnighets:sömnigheten:sömnighetens::::
+565372r4<adjektiv>sömnlös:sömnlös:sömnlöst:sömnlösa:sömnlösa::::sömnlöse
+671291r3<substantiv>sömnlöshet:sömnlöshet:sömnlöshets:sömnlösheten:sömnlöshetens:!:!:!:!
+CUSTOM: y y sömnlöshets
+671292r4<substantiv>sömnmedel:sömnmedel:sömnmedels:sömnmedlet:sömnmedlets:sömnmedel:sömnmedels:sömnmedlen:sömnmedlens
+COMPOUND(619769, 560532): sömn + medel
+CUSTOM: y y sömnmedels
+678402r4<substantiv>sömnpiller:sömnpiller:sömnpillers:sömnpillret:sömnpillrets:sömnpiller:sömnpillers:sömnpillren, sömnpillerna:sömnpillrens, sömnpillernas
+COMPOUND(619769, 623318): sömn + piller
+678419r4<substantiv>sömntablett:sömntablett:sömntabletts:sömntabletten:sömntablettens:sömntabletter:sömntabletters:sömntabletterna:sömntabletternas
+COMPOUND(619769, 550624): sömn + tablett
+800450r3<adjektiv>sömntyngd:sömntyngd:sömntyngt:sömntyngda:sömntyngda::::
+551988r7<substantiv>söndag:söndag:söndags:söndagen:söndagens:söndagar:söndagars:söndagarna:söndagarnas
+CUSTOM: y y söndags
+568076r3<adjektiv>söndaglig:söndaglig:söndagligt:söndagliga:söndagliga::::
+637037r6<substantiv>söndagsdans:söndagsdans:söndagsdans:söndagsdansen:söndagsdansens:söndagsdanser:söndagsdansers:söndagsdanserna:söndagsdansernas
+COMPOUND(551988, 548569): söndag + dans
+801687r3<adjektiv>söndagsklädd:söndagsklädd:söndagsklätt:söndagsklädda:söndagsklädda::::
+860729r4<substantiv>söndagskväll:söndagskväll:söndagskvälls:söndagskvällen:söndagskvällens:söndagskvällar:söndagskvällars:söndagskvällarna:söndagskvällarnas
+COMPOUND(551988, 551653): söndag + kväll
+577385r3<adjektiv>söndagsledig:söndagsledig:söndagsledigt:söndagslediga:söndagslediga::::
+706294r4<substantiv>söndagsmorgon:söndagsmorgon:söndagsmorgons:söndagsmorgonen:söndagsmorgonens:söndagsmorgnar:söndagsmorgnars:söndagsmorgnarna:söndagsmorgnarnas
+COMPOUND(551988, 619001): söndag + morgon
+919923r4<substantiv>söndagsmys:söndagsmys:söndagsmys:söndagsmyset:söndagsmysets:!:!:!:!
+COMPOUND(551988, 628389): söndag + mys
+619771r6<adverb>sönder:sönder
+CUSTOM: y n sönder
+847106r3<adjektiv>sönderbiten:sönderbiten:sönderbitet:sönderbitna:sönderbitna::::
+747741r3<adjektiv>sönderbombad:sönderbombad:sönderbombat:sönderbombade:sönderbombade:!:!:!:
+671294r3<adjektiv>sönderbruten:sönderbruten:sönderbrutet:sönderbrutna:sönderbrutna:!:!:!:
+766422r3<adjektiv>sönderbränd:sönderbränd:sönderbränt:sönderbrända:sönderbrända::::
+547811r5<verb>sönderdela:sönderdela:sönderdelade:sönderdelat:sönderdelar:sönderdela:sönderdelas:sönderdelades:sönderdelats:sönderdelas:sönderdelad:sönderdelat:sönderdelade::
+COMPOUND(619771, 546382): sönder + dela
+570267r3<adjektiv>sönderdelbar:sönderdelbar:sönderdelbart:sönderdelbara:sönderdelbara::::
+671295r3<substantiv>sönderdelning:sönderdelning:sönderdelnings:sönderdelningen:sönderdelningens::::
+CUSTOM: y y sönderdelnings
+671296r5<substantiv>sönderfall:sönderfall:sönderfalls:sönderfallet:sönderfallets::::
+CUSTOM: y y sönderfalls
+671298r5<verb>sönderfalla:sönderfalla:sönderföll:sönderfallit:sönderfaller:sönderfall:!:!:!:!:sönderfallen:sönderfallet:sönderfallna:sönderfallande:
+COMPOUND(619771, 585306): sönder + falla
+747742r3<substantiv>sönderfallstid::::::::
+COMPOUND(671296, 550665): sönderfall + tid
+564475r3<adjektiv>sönderfrusen:sönderfrusen:sönderfruset:sönderfrusna:sönderfrusna::::
+945507r3<adjektiv>sönderfrätt:sönderfrätt:sönderfrätt:sönderfrätta:sönderfrätta::::::::::::
+766425r3<adjektiv>söndergnagd:söndergnagd:söndergnagt:söndergnagda:söndergnagda::::
+766428r3<adjektiv>sönderhackad:sönderhackad:sönderhackat:sönderhackade:sönderhackade:!:!:!:
+847109r3<adjektiv>sönderkokt:sönderkokt:sönderkokt:sönderkokta:sönderkokta::::
+547812r3<verb>sönderkrossa:sönderkrossa:sönderkrossade:sönderkrossat:sönderkrossar:sönderkrossa:::::::::
+766431r3<adjektiv>sönderkrossad:sönderkrossad:sönderkrossat:sönderkrossade:sönderkrossade:!:!:!:
+766432r3<adjektiv>sönderkörd:sönderkörd:sönderkört:sönderkörda:sönderkörda::::
+766435r3<adjektiv>sönderläst:sönderläst:sönderläst:sönderlästa:sönderlästa:!:!:!:!
+766437r3<adjektiv>söndermald:söndermald:söndermalt:söndermalda:söndermalda:!:!:!:
+795509r3<adjektiv>söndermosad:söndermosad:söndermosat:söndermosade:söndermosade:!:!:!:
+766440r3<adjektiv>sönderplockad:sönderplockad:sönderplockat:sönderplockade:sönderplockade:!:!:!:
+671299r3<adjektiv>sönderriven:sönderriven:sönderrivet:sönderrivna:sönderrivna::::
+795512r3<adjektiv>sönderrostad:sönderrostad:sönderrostat:sönderrostade:sönderrostade:!:!:!:
+795515r3<adjektiv>sönderskakad:sönderskakad:sönderskakat:sönderskakade:sönderskakade:!:!:!:
+671318r3<adjektiv>sönderskjuten:sönderskjuten:sönderskjutet:sönderskjutna:sönderskjutna:!:!:!:
+671302r3<adjektiv>sönderskuren:sönderskuren:sönderskuret:sönderskurna:sönderskurna:!:!:!:
+671319r3<adjektiv>sönderslagen:sönderslagen:sönderslaget:sönderslagna:sönderslagna:!:!:!:
+671308r4<verb>sönderslita:sönderslita:sönderslet:sönderslitit:söndersliter:sönderslit:sönderslitas:sönderslets:sönderslitits:sönderslits:söndersliten:sönderslitet:sönderslitna::
+COMPOUND(619771, 593372): sönder + slita
+766443r3<adjektiv>söndersmulad:söndersmulad:söndersmulat:söndersmulade:söndersmulade:!:!:!:
+570270r3<adjektiv>söndersmulbar:söndersmulbar:söndersmulbart:söndersmulbara:söndersmulbara::::
+766446r3<adjektiv>söndersparkad:söndersparkad:söndersparkat:söndersparkade:söndersparkade:!:!:!:
+766449r3<adjektiv>söndersplittrad:söndersplittrad:söndersplittrat:söndersplittrade:söndersplittrade:!:!:!:
+671305r3<adjektiv>söndersprängd:söndersprängd:söndersprängt:söndersprängda:söndersprängda::::
+691563r5<adjektiv>sönderstekt:sönderstekt:sönderstekt:sönderstekta:sönderstekta::::::::::::
+766452r3<adjektiv>sönderstressad:sönderstressad:sönderstressat:sönderstressade:sönderstressade:!:!:!:
+853055r3<adjektiv>söndersupen:söndersupen:söndersupet:söndersupna:söndersupna::::söndersupne
+570273r3<adjektiv>söndertagbar:söndertagbar:söndertagbart:söndertagbara:söndertagbara::::
+766455r3<adjektiv>söndertrampad:söndertrampad:söndertrampat:söndertrampade:söndertrampade:!:!:!:
+706473r3<adjektiv>söndertrasad:söndertrasad:söndertrasat:söndertrasade:söndertrasade:!:!:!:
+766458r3<adjektiv>söndertuggad:söndertuggad:söndertuggat:söndertuggade:söndertuggade:!:!:!:
+766461r3<adjektiv>söndervittrad:söndervittrad:söndervittrat:söndervittrade:söndervittrade:!:!:!:
+795518r3<adjektiv>söndervårdad:söndervårdad:söndervårdat:söndervårdade:söndervårdade:!:!:!:
+547813r5<verb>söndra:söndra:söndrade:söndrat:söndrar:söndra:söndras:söndrades:söndrats:söndras:söndrad:söndrat:söndrade:söndrande:
+CUSTOM: y n
+563253r3<adjektiv>söndrig:söndrig:söndrigt:söndriga:söndriga::::
+671317r4<substantiv>söndring:söndring:söndrings:söndringen:söndringens:söndringar:söndringars:söndringarna:söndringarnas
+CUSTOM: y y söndrings
+554808r3<egennamn>Sören:Sören:Sörens
+955326r3<substantiv>sörgårdsidyll:sörgårdsidyll:sörgårdsidylls:sörgårdsidyllen:sörgårdsidyllens:sörgårdsidyller:sörgårdsidyllers:sörgårdsidyllerna:sörgårdsidyllernas
+923009r3<substantiv>sörja:sörja:sörjas:sörjan:sörjans::::
+626669r13<verb>sörja:sörja:sörjde:sörjt:sörjer:sörj:sörjas:sörjdes:sörjts:sörjs, sörjes:sörjd:sörjt:sörjda:sörjande:
+671321r3<substantiv>sörjande:sörjande:sörjandes:sörjandet:sörjandets::::
+577388r3<adjektiv>sörjig:sörjig:sörjigt:sörjiga:sörjiga::::
+888662r3<substantiv>sörlänning:sörlänning:sörlännings:sörlänningen:sörlänningens:sörlänningar:sörlänningars:sörlänningarna:sörlänningarnas
+854941r3<egennamn>Sörman:Sörman:Sörmans
+764930r3<egennamn>Sörmland:Sörmland:Sörmlands
+CUSTOM: y n Sörmlands
+747743r3<adjektiv>sörmländsk:sörmländsk:sörmländskt:sörmländska:sörmländska:!:!:!:sörmländske
+747746r3<substantiv>sörmlänning:sörmlänning:sörmlännings:sörmlänningen:sörmlänningens:sörmlänningar:sörmlänningars:sörmlänningarna:sörmlänningarnas
+671349r3<verb>sörpla:sörpla:sörplade:sörplat:sörplar:sörpla:sörplas:sörplades:sörplats:sörplas::::sörplande:
+559207r7<adjektiv>söt:söt:sött:söta:söta:sötare:sötast:sötaste:söte::::::::
+DEFINITION 1: Som har ett trevligt utseende
+DEFINITION 2: Med smak som socker
+895610r3<verb>söta:söta:sötade:sötat:sötar:söta:sötas:sötades:sötats:sötas:sötad:sötat:sötade:sötande:!
+577391r3<adjektiv>sötaktig:sötaktig:sötaktigt:sötaktiga:sötaktiga::::
+948740r3<substantiv>sötebrödsdagar:::::sötebrödsdagar:sötebrödsdagars:sötebrödsdagarna:sötebrödsdagarnas
+987635r3<substantiv>söthet:söthet:söthets:sötheten:söthetens::::
+CUSTOM: y n
+649326r3<substantiv>sötma:sötma:sötmas:sötman:sötmans::::
+747754r3<substantiv>sötmandel:sötmandel:sötmandels:sötmandeln:sötmandelns:sötmandlar:sötmandlars:sötmandlarna:sötmandlarnas
+802928r4<substantiv>sötning:sötning:sötnings:sötningen:sötningens::::
+CUSTOM: y y sötnings
+802932r4<substantiv>sötningsmedel:sötningsmedel:sötningsmedels:sötningsmedlet:sötningsmedlets:sötningsmedel:sötningsmedels:sötningsmedlen:sötningsmedlens
+COMPOUND(802928, 560532): sötning + medel
+747762r3<substantiv>sötnos:sötnos:sötnos:sötnosen:sötnosens:sötnosar:sötnosars:sötnosarna:sötnosarnas
+802938r3<substantiv>sötpotatis:sötpotatis:sötpotatis:sötpotatisen:sötpotatisens:sötpotatisar:sötpotatisars:sötpotatisarna:sötpotatisarnas
+725688r4<substantiv>sötsaker, sötsak:sötsak:sötsaks:sötsaken:sötsakens:sötsaker:sötsakers:sötsakerna:sötsakernas
+577394r3<adjektiv>sötsliskig:sötsliskig:sötsliskigt:sötsliskiga:sötsliskiga::::
+895012r3<substantiv>sötsug:sötsug:sötsugs:sötsuget:sötsugets::::
+747769r3<adjektiv>sötsur:sötsur:sötsurt:sötsura:sötsura:!:!:!:!
+919938r3<adjektiv>sötsyrlig:sötsyrlig:sötsyrligt:sötsyrliga:sötsyrliga::::::::::::
+747772r4<substantiv>sötvatten:sötvatten:sötvattens:sötvattnet:sötvattnets:sötvatten:sötvattens:sötvattnen:sötvattnens
+COMPOUND(559207, 555162): söt + vatten
+CUSTOM: y y sötvatten sötvattens
+987627r3<substantiv>sötväppling:sötväppling:sötväpplings:sötväpplingen:sötväpplingens:sötväpplingar:sötväpplingars:sötväpplingarna:sötväpplingarnas
+585801r4<verb>söva:söva:sövde:sövt:söver:söv:sövas:sövdes:sövts:sövs, söves:sövd:sövt:sövda::
+649049r3<adjektiv>sövande:sövande:sövande:sövande:sövande:!:!:!:
+938094r3<substantiv>tabasco:tabasco:tabascos:tabascon:tabascons::::
+787163r4<substantiv>tabb:tabb:tabbs:tabben:tabbens:tabbar:tabbars:tabbarna:tabbarnas
+CUSTOM: y n
+963927r3<verb>tabba:tabba:tabbade:tabbat:tabbar:tabba:::::::::
+CUSTOM: y n
+671823r4<substantiv>tabbe:tabbe:tabbes:tabben:tabbens:tabbar:tabbars:tabbarna:tabbarnas
+787167r4<substantiv>tabbstopp:tabbstopp:tabbstopps:tabbstoppet:tabbstoppets:tabbstopp:tabbstopps:tabbstoppen:tabbstoppens
+COMPOUND(787163, 608140): tabb + stopp
+550622r12<substantiv>tabell:tabell:tabells:tabellen:tabellens:tabeller:tabellers:tabellerna:tabellernas
+CUSTOM: y y tabell
+584176r3<adjektiv>tabellarisk:tabellarisk:tabellariskt:tabellariska:tabellariska::::
+682125r4<substantiv>tabellbilaga:tabellbilaga:tabellbilagas:tabellbilagan:tabellbilagans:tabellbilagor:tabellbilagors:tabellbilagorna:tabellbilagornas
+COMPOUND(550622, 593752): tabell + bilaga
+682133r4<substantiv>tabelldagbok:tabelldagbok:tabelldagboks:tabelldagboken:tabelldagbokens:tabelldagböcker:tabelldagböckers:tabelldagböckerna:tabelldagböckernas
+COMPOUND(550622, 650121): tabell + dagbok
+591261r3<verb>tabellera:tabellera:tabellerade:tabellerat:tabellerar:tabellera:::::::::
+682141r4<substantiv>tabellförändring:tabellförändring:tabellförändrings:tabellförändringen:tabellförändringens:tabellförändringar:tabellförändringars:tabellförändringarna:tabellförändringarnas
+COMPOUND(550622, 596921): tabell + förändring
+CUSTOM: y y tabellförändrings
+682149r4<substantiv>tabellhuvud:tabellhuvud:tabellhuvuds:tabellhuvudet:tabellhuvudets:tabellhuvud, tabellhuvuden:tabellhuvuds, tabellhuvudens:tabellhuvudena:tabellhuvudenas
+COMPOUND(550622, 552483): tabell + huvud
+682157r4<substantiv>tabellkalkylering:tabellkalkylering:tabellkalkylerings:tabellkalkyleringen:tabellkalkyleringens:tabellkalkyleringar:tabellkalkyleringars:tabellkalkyleringarna:tabellkalkyleringarnas
+COMPOUND(550622, 682158): tabell + kalkylering
+CUSTOM: y y tabellkalkylerings
+747798r4<substantiv>tabelläge:tabelläge:tabelläges:tabelläget:tabellägets:tabellägen:tabellägens:tabellägena:tabellägenas
+COMPOUND(550622, 612680): tabell + läge
+671831r3<substantiv>tabernakel:tabernakel:tabernakels:tabernaklet:tabernaklets::::
+550624r24<substantiv>tablett:tablett:tabletts:tabletten:tablettens:tabletter:tabletters:tabletterna:tabletternas
+CUSTOM: y y tablett
+766467r4<substantiv>tablettask:tablettask:tablettasks:tablettasken:tablettaskens:tablettaskar:tablettaskars:tablettaskarna:tablettaskarnas
+COMPOUND(550624, 550843): tablett + ask
+683670r3<substantiv>tablettform:tablettform:tablettforms:tablettformen:tablettformens:!:!:!:!
+795521r3<adjektiv>tablettförgiftad:tablettförgiftad:tablettförgiftat:tablettförgiftade:tablettförgiftade:!:!:!:
+683655r3<substantiv>tablettmissbruk:tablettmissbruk:tablettmissbruks:tablettmissbruket:tablettmissbrukets:tablettmissbruk:tablettmissbruks:tablettmissbruken:tablettmissbrukens
+683663r3<substantiv>tablettmissbrukare:tablettmissbrukare:tablettmissbrukares:tablettmissbrukaren:tablettmissbrukarens:tablettmissbrukare:tablettmissbrukares:tablettmissbrukarna:tablettmissbrukarnas
+CUSTOM: y y tablettmissbrukar
+766464r3<adjektiv>tablettpåverkad:tablettpåverkad:tablettpåverkat:tablettpåverkade:tablettpåverkade:!:!:!:
+747808r5<substantiv>tabloid:tabloid:tabloids:tabloiden:tabloidens:tabloider:tabloiders:tabloiderna:tabloidernas
+CUSTOM: y y tabloid
+747816r3<substantiv>tabloidformat::::::::
+COMPOUND(747808, 552391): tabloid + format
+555350r5<substantiv>tabloidisering:tabloidisering:tabloidiserings:tabloidiseringen:tabloidiseringens:tabloidiseringar:tabloidiseringars:tabloidiseringarna:tabloidiseringarnas
+747807r3<substantiv>tabloidpress::::::::
+COMPOUND(747808, 559017): tabloid + press
+639293r4<substantiv>tablå:tablå:tablås:tablån:tablåns:tablåer:tablåers:tablåerna:tablåernas
+CUSTOM: y y tablå
+766476r3<adjektiv>tablåartad:tablåartad:tablåartat:tablåartade:tablåartade:!:!:!:
+546939r12<verb>tablålägga:tablålägga:tablålade:tablålagt:tablålägger:tablålägg:tablåläggas:tablålades:tablålagts:tablåläggs, tablålägges:tablålagd:tablålagt:tablålagda:tablåläggande:
+COMPOUND(639293, 556585): tablå + lägga
+671838r3<adjektiv>tabu:tabu:tabu:tabu:tabu:!:!:!:
+624859r11<substantiv>tabu:tabu:tabus:tabut:tabuts:tabun:tabuns:tabuna:tabunas
+BASEWORDS: tabu
+CUSTOM: y y tabu
+800453r3<adjektiv>tabubelagd:tabubelagd:tabubelagt:tabubelagda:tabubelagda::::
+674644r4<verb>tabubelägga:tabubelägga:tabubelade:tabubelagt:tabubelägger:tabubelägg:tabubeläggas:tabubelades:tabubelagts:tabubeläggs:tabubelagd:tabubelagt:tabubelagda::
+COMPOUND(624859, 592503): tabu + belägga
+591265r3<verb>tabuera:tabuera:tabuerade:tabuerat:tabuerar:tabuera:::::::::
+671833r4<substantiv>tabulator:tabulator:tabulators:tabulatorn:tabulatorns:tabulatorer:tabulatorers:tabulatorerna:tabulatorernas
+CUSTOM: y y tabulator
+747825r3<substantiv>tabulatorstopp::::::::
+COMPOUND(671833, 608140): tabulator + stopp
+649993r3<substantiv>tabulatur:tabulatur:tabulaturs:tabulaturen:tabulaturens:tabulaturer:tabulaturers:tabulaturerna:tabulaturernas
+591269r3<verb>tabulera:tabulera:tabulerade:tabulerat:tabulerar:tabulera:::::::::
+650001r4<substantiv>tabuord:tabuord:tabuords:tabuordet:tabuordets:tabuord:tabuords:tabuorden:tabuordens
+COMPOUND(624859, 555138): tabu + ord
+747817r3<substantiv>taburett:taburett:taburetts:taburetten:taburettens:taburetter:taburetters:taburetterna:taburetternas
+584179r3<adjektiv>tachistisk:tachistisk:tachistiskt:tachistiska:tachistiska::::
+619773r5<substantiv>tack:tack:tacks:tacket:tackets:tack:tacks:tacken:tackens
+CUSTOM: y y tack
+619772r3<interjektion>tack:tack
+595514r3<substantiv>tacka:tacka:tackas:tackan:tackans:tackor:tackors:tackorna:tackornas
+547814r4<verb>tacka:tacka:tackade:tackat:tackar:tacka:tackas:tackades:tackats:tackas:tackad:tackat:tackade::
+697270r3<substantiv>tackande:tackande:tackandes:tackandet:tackandets::::
+683642r3<substantiv>tackbrev:tackbrev:tackbrevs:tackbrevet:tackbrevets:tackbrev:tackbrevs:tackbreven:tackbrevens
+671842r3<substantiv>tackel:tackel:tackels:tacklet:tacklets:tackel:tackels:tacklen:tacklens
+683648r3<substantiv>tackkort:tackkort:tackkorts:tackkortet:tackkortets:tackkort:tackkorts:tackkorten:tackkortens
+650007r3<verb>tackla:tackla:tacklade:tacklat:tacklar:tackla:tacklas:tacklades:tacklats:tacklas:tacklad:tacklat:tacklade:tacklande:
+671844r3<substantiv>tackling:tackling:tacklings:tacklingen:tacklingens:tacklingar:tacklingars:tacklingarna:tacklingarnas
+565373r3<adjektiv>tacklös:tacklös:tacklöst:tacklösa:tacklösa::::
+568079r3<adjektiv>tacknämlig:tacknämlig:tacknämligt:tacknämliga:tacknämliga::::
+671853r4<substantiv>tackoffer:tackoffer:tackoffers:tackoffret:tackoffrets:tackoffer:tackoffers:tackoffren:tackoffrens
+COMPOUND(619773, 619286): tack + offer
+563571r4<adjektiv>tacksam:tacksam:tacksamt:tacksamma:tacksamma:tacksammare:tacksammast:tacksammaste:tacksamme
+619778r6<substantiv>tacksamhet:tacksamhet:tacksamhets:tacksamheten:tacksamhetens::::
+CUSTOM: y y tacksamhets
+671859r4<substantiv>tacksamhetsbetygelse:tacksamhetsbetygelse:tacksamhetsbetygelses:tacksamhetsbetygelsen:tacksamhetsbetygelsens:tacksamhetsbetygelser:tacksamhetsbetygelsers:tacksamhetsbetygelserna:tacksamhetsbetygelsernas
+COMPOUND(619778, 617376): tacksamhet + betygelse
+CUSTOM: y y tacksamhetsbetygelse
+945509r4<substantiv>tacksamhetsgärd:tacksamhetsgärd:tacksamhetsgärds:tacksamhetsgärden:tacksamhetsgärdens:tacksamhetsgärder:tacksamhetsgärders:tacksamhetsgärderna:tacksamhetsgärdernas
+COMPOUND(619778, 618118): tacksamhet + gärd
+671860r4<substantiv>tacksamhetsskuld:tacksamhetsskuld:tacksamhetsskulds:tacksamhetsskulden:tacksamhetsskuldens::::
+COMPOUND(619778, 550525): tacksamhet + skuld
+619779r4<substantiv>tacksägelse:tacksägelse:tacksägelses:tacksägelsen:tacksägelsens:tacksägelser:tacksägelsers:tacksägelserna:tacksägelsernas
+CUSTOM: y y tacksägelse
+889348r4<substantiv>tacksägelsebön:tacksägelsebön:tacksägelseböns:tacksägelsebönen:tacksägelsebönens:tacksägelseböner:tacksägelseböners:tacksägelsebönerna:tacksägelsebönernas
+COMPOUND(619779, 558036): tacksägelse + bön
+671845r4<substantiv>tacktal:tacktal:tacktals:tacktalet:tacktalets:tacktal:tacktals:tacktalen:tacktalens
+COMPOUND(619773, 553029): tack + tal
+800454r3<adjektiv>tackvärd:tackvärd:tackvärt:tackvärda:tackvärda::::
+CUSTOM: n n
+671851r8<substantiv>tacos:tacos:tacos:tacosen:tacosens:tacos:::
+CUSTOM: y n taco
+650016r3<substantiv>tadel:tadel:tadels:tadlet:tadlets::::
+CUSTOM: y n
+564313r3<adjektiv>tadelfri:tadelfri:tadelfritt:tadelfria:tadelfria::::
+565376r3<adjektiv>tadellös:tadellös:tadellöst:tadellösa:tadellösa::::
+766479r3<adjektiv>tadelvärd:tadelvärd:tadelvärt:tadelvärda:tadelvärda::::
+547815r3<verb>tadla:tadla:tadlade:tadlat:tadlar:tadla:::::::::
+CUSTOM: y n
+650018r3<substantiv>tadlare:tadlare:tadlares:tadlaren:tadlarens:tadlare:tadlares:tadlarna:tadlarnas
+CUSTOM: y y tadlar
+555398r20<substantiv>tadzjik:tadzjik:tadzjiks:tadzjiken:tadzjikens:tadzjiker:tadzjikers:tadzjikerna:tadzjikernas
+584182r3<adjektiv>tadzjikisk:tadzjikisk:tadzjikiskt:tadzjikiska:tadzjikiska::::
+554139r3<egennamn>Tadzjikistan:Tadzjikistan:Tadzjikistans
+CUSTOM: y n Tadzjikistan
+555419r19<substantiv>taekwondo:taekwondo:taekwondos:taekwondon:taekwondons::::
+CUSTOM: y y taekwondo
+555468r5<substantiv>taekwondoförbund::::::::
+COMPOUND(555419, 552400): taekwondo + förbund
+650024r3<substantiv>tafatt:tafatt:::::::
+650025r3<adjektiv>tafatt:tafatt:tafatt:tafatta:tafatta:tafattare:tafattast:tafattaste:tafatte
+555597r5<substantiv>tafatthet:tafatthet:tafatthets:tafattheten:tafatthetens::::
+671865r3<substantiv>taffel:taffel:taffels:taffeln:taffelns:tafflar:tafflars:tafflarna:tafflarnas
+987643r3<substantiv>taffeltäckare:taffeltäckare:taffeltäckares:taffeltäckaren:taffeltäckarens:taffeltäckare:taffeltäckares:taffeltäckarna:taffeltäckarnas
+568080r4<adjektiv>tafflig:tafflig:taffligt:taffliga:taffliga:taffligare:taffligast:taffligaste:
+671871r4<substantiv>tafflighet:tafflighet:tafflighets:taffligheten:tafflighetens:taffligheter:taffligheters:taffligheterna:taffligheternas
+CUSTOM: y y tafflighets
+650030r3<substantiv>tafs:tafs:tafs:tafsen:tafsens:tafsar:tafsars:tafsarna:tafsarnas
+650037r3<verb>tafsa:tafsa:tafsade:tafsat:tafsar:tafsa:tafsas:tafsades:tafsats:tafsas:tafsad:tafsat:tafsade:tafsande:
+577397r3<adjektiv>tafsig:tafsig:tafsigt:tafsiga:tafsiga::::
+747826r3<substantiv>taft:taft:::::::
+608256r8<substantiv>tag:tag:tags:taget:tagets:tag:tags:tagen:tagens
+670553r6<substantiv>tagande:tagande:tagandes:tagandet:tagandets::::
+615478r4<substantiv>tagare:tagare:tagares:tagaren:tagarens:tagare:tagares:tagarna:tagarnas
+CUSTOM: y y
+570276r3<adjektiv>tagbar:tagbar:tagbart:tagbara:tagbara::::
+554810r3<egennamn>Tage:Tage:Tages
+650045r5<substantiv>tagel:tagel:tagels:taglet:taglets:tagel:tagels:taglen:taglens
+CUSTOM: y n
+555599r6<substantiv>tagelskjorta:tagelskjorta:tagelskjortas:tagelskjortan:tagelskjortans:tagelskjortor:tagelskjortors:tagelskjortorna:tagelskjortornas
+COMPOUND(650045, 595157): tagel + skjorta
+650051r3<adjektiv>tagen:tagen:taget:tagna:tagna:!:!:!:
+963930r3<substantiv>tagetes:tagetes:::::::
+CUSTOM: y n
+628904r6<substantiv>tagg:tagg:taggs:taggen:taggens:taggar:taggars:taggarna:taggarnas
+CUSTOM: y n
+650052r3<verb>tagga:tagga:taggade:taggat:taggar:tagga:taggas:taggades:taggats:taggas:taggad:taggat:taggade:taggande:
+795524r3<adjektiv>taggad:taggad:taggat:taggade:taggade:!:!:!:
+925965r4<substantiv>taggbuske:taggbuske:taggbuskes:taggbusken:taggbuskens:taggbuskar:taggbuskars:taggbuskarna:taggbuskarnas
+COMPOUND(628904, 599790): tagg + buske
+577400r3<adjektiv>taggfenig:taggfenig:taggfenigt:taggfeniga:taggfeniga::::
+935228r3<substantiv>taggfening:taggfening:taggfenings:taggfeningen:taggfeningens:taggfeningar:taggfeningars:taggfeningarna:taggfeningarnas
+935204r3<substantiv>tagghuding:tagghuding:tagghudings:tagghudingen:tagghudingens:tagghudingar:tagghudingars:tagghudingarna:tagghudingarnas
+577403r3<adjektiv>taggig:taggig:taggigt:taggiga:taggiga::::
+555754r5<substantiv>taggighet:taggighet:taggighets:taggigheten:taggighetens::::
+935236r4<substantiv>taggmakrill:taggmakrill:taggmakrills:taggmakrillen:taggmakrillens:taggmakrillar:taggmakrillars:taggmakrillarna:taggmakrillarnas
+COMPOUND(628904, 560457): tagg + makrill
+935212r4<substantiv>taggning:taggning:taggnings:taggningen:taggningens:taggningar:taggningars:taggningarna:taggningarnas
+935220r4<substantiv>taggningsmaskin:taggningsmaskin:taggningsmaskins:taggningsmaskinen:taggningsmaskinens:taggningsmaskiner:taggningsmaskiners:taggningsmaskinerna:taggningsmaskinernas
+COMPOUND(935212, 550005): taggning + maskin
+926082r4<substantiv>taggsnår:taggsnår:taggsnårs:taggsnåret:taggsnårets:taggsnår:taggsnårs:taggsnåren:taggsnårens
+COMPOUND(628904, 552952): tagg + snår
+CUSTOM: y n n
+890967r3<substantiv>taggsvamp:taggsvamp:taggsvamps:taggsvampen:taggsvampens:taggsvampar:taggsvampars:taggsvamparna:taggsvamparnas
+671875r4<substantiv>taggtråd:taggtråd:taggtråds:taggtråden:taggtrådens:taggtrådar:taggtrådars:taggtrådarna:taggtrådarnas
+CUSTOM: y y taggtråds
+650059r3<verb>tagla:tagla:taglade:taglat:taglar:tagla:taglas:taglades:taglats:taglas:taglad:taglat:taglade:taglande:
+CUSTOM: y n
+555882r5<substantiv>tagliatelle:tagliatelle:tagliatelles:tagliatellen:tagliatellens::::
+650068r3<substantiv>tagning:tagning:tagnings:tagningen:tagningens:tagningar:tagningars:tagningarna:tagningarnas
+CUSTOM: y y tagnings
+956097r3<substantiv>tahini:tahini:tahinis:tahinin:tahinins::::
+650069r3<egennamn>Tahiti:Tahiti:Tahitis
+CUSTOM: y n Tahiti
+650071r3<substantiv>tahitier:tahitier:tahitiers:tahitiern:tahitierns:tahitier:tahitiers:tahitierna:tahitiernas
+987639r3<substantiv>taiga:taiga:taigas:taigan:taigans::::
+CUSTOM: y n
+649931r3<substantiv>taikonaut:taikonaut:taikonauts:taikonauten:taikonautens:taikonauter:taikonauters:taikonauterna:taikonauternas
+559202r5<egennamn>Taipei:Taipei:Taipeis
+554140r3<egennamn>Taiwan:Taiwan:Taiwans
+CUSTOM: y n Taiwan
+636874r3<substantiv>taiwanes:taiwanes:taiwanes:taiwanesen:taiwanesens:taiwaneser:taiwanesers:taiwaneserna:taiwanesernas
+584184r4<adjektiv>taiwanesisk:taiwanesisk:taiwanesiskt:taiwanesiska:taiwanesiska::::taiwanesiske::::::::
+636881r3<substantiv>taiwanesiska:taiwanesiska:taiwanesiskas:taiwanesiskan:taiwanesiskans:taiwanesiskor:taiwanesiskors:taiwanesiskorna:taiwanesiskornas
+631597r3<substantiv>tajga:tajga:tajgas:tajgan:tajgans:!:!:!:!
+633741r4<verb>tajma:tajma:tajmade:tajmat:tajmar:tajma:tajmas:tajmades:tajmats:tajmas:tajmad:tajmat:tajmade:tajmande:
+556033r5<substantiv>tajming:tajming:tajmings:tajmingen:tajmingens::::
+737640r3<substantiv>tajmning:tajmning:tajmnings:tajmningen:tajmningens::::
+626675r4<adjektiv>tajt:tajt:tajt:tajta:tajta:tajtare:tajtast:tajtaste:::::::::
+963931r3<substantiv>tajts:::::tajts, tights:tajts, tights:tajtsen, tightsen:tajtsens, tightsens
+553027r100<substantiv>tak:tak:taks:taket:takets:tak:taks:taken:takens
+CUSTOM: y n
+556964r8<substantiv>takantenn:takantenn:takantenns:takantennen:takantennens:takantenner:takantenners:takantennerna:takantennernas
+COMPOUND(553027, 548205): tak + antenn
+558044r15<substantiv>takarbete:takarbete:takarbetes:takarbetet:takarbetets:takarbeten:takarbetens:takarbetena:takarbetenas
+COMPOUND(553027, 612263): tak + arbete
+963936r4<substantiv>takarmatur:takarmatur:takarmaturs:takarmaturen:takarmaturens:takarmaturer:takarmaturers:takarmaturerna:takarmaturernas
+COMPOUND(553027, 548236): tak + armatur
+877110r4<substantiv>takbelopp:takbelopp:takbelopps:takbeloppet:takbeloppets:takbelopp:takbelopps:takbeloppen:takbeloppens
+COMPOUND(553027, 552231): tak + belopp
+599356r15<substantiv>takbelysning:takbelysning:takbelysnings:takbelysningen:takbelysningens:takbelysningar:takbelysningars:takbelysningarna:takbelysningarnas
+COMPOUND(553027, 592495): tak + belysning
+747827r4<substantiv>takbjälke:takbjälke:takbjälkes:takbjälken:takbjälkens:takbjälkar:takbjälkars:takbjälkarna:takbjälkarnas
+COMPOUND(553027, 599783): tak + bjälke
+964078r4<substantiv>takbjälklag:takbjälklag:takbjälklags:takbjälklaget:takbjälklagets:takbjälklag:takbjälklags:takbjälklagen:takbjälklagens
+COMPOUND(553027, 939443): tak + bjälklag
+598997r3<substantiv>takbox:takbox:takbox:takboxen:takboxens:takboxar:takboxars:takboxarna:takboxarnas
+943785r4<substantiv>takbrand:takbrand:takbrands:takbranden:takbrandens:takbränder:takbränders:takbränderna:takbrändernas
+COMPOUND(553027, 617396): tak + brand
+747835r3<substantiv>takdropp:takdropp:takdropps:takdroppet:takdroppets::::
+959412r3<substantiv>take away:take away:::::::
+601169r15<substantiv>takfall:takfall:takfalls:takfallet:takfallets:takfall:takfalls:takfallen:takfallens
+COMPOUND(553027, 552371): tak + fall
+CUSTOM: y n y
+964092r4<substantiv>takfilt:takfilt:takfilts:takfilten:takfiltens:takfiltar:takfiltars:takfiltarna:takfiltarnas
+COMPOUND(553027, 551129): tak + filt
+613924r6<substantiv>takfläkt:takfläkt:takfläkts:takfläkten:takfläktens:takfläktar:takfläktars:takfläktarna:takfläktarnas
+COMPOUND(553027, 551171): tak + fläkt
+577404r3<adjektiv>takformig:takformig:takformigt:takformiga:takformiga::::
+631114r3<substantiv>takfot:takfot:takfots:takfoten:takfotens::::
+615658r6<substantiv>takfärg:takfärg:takfärgs:takfärgen:takfärgens:takfärger:takfärgers:takfärgerna:takfärgernas
+COMPOUND(553027, 549002): tak + färg
+CUSTOM: y n n
+615755r6<substantiv>takfäste:takfäste:takfästes:takfästet:takfästets:takfästen:takfästens:takfästena:takfästenas
+COMPOUND(553027, 562223): tak + fäste
+747839r4<substantiv>takfönster:takfönster:takfönsters:takfönstret:takfönstrets:takfönster:takfönsters:takfönstren, takfönsterna:takfönstrens, takfönsternas
+COMPOUND(553027, 555049): tak + fönster
+979458r4<substantiv>takgesims:takgesims:takgesims:takgesimsen:takgesimsens:takgesimser:takgesimsers:takgesimserna:takgesimsernas
+COMPOUND(553027, 979442): tak + gesims
+964084r4<substantiv>takhuv:takhuv:takhuvs:takhuven:takhuvens:takhuvar:takhuvars:takhuvarna:takhuvarnas
+COMPOUND(553027, 551405): tak + huv
+747847r4<substantiv>takhöjd:takhöjd:takhöjds:takhöjden:takhöjdens:takhöjder:takhöjders:takhöjderna:takhöjdernas
+COMPOUND(553027, 549284): tak + höjd
+615790r6<substantiv>takhöjning:takhöjning:takhöjnings:takhöjningen:takhöjningens:takhöjningar:takhöjningars:takhöjningarna:takhöjningarnas
+COMPOUND(553027, 644432): tak + höjning
+800457r3<adjektiv>takinfälld:takinfälld:takinfällt:takinfällda:takinfällda::::
+964119r4<substantiv>takisolering:takisolering:takisolerings:takisoleringen:takisoleringens:takisoleringar:takisoleringars:takisoleringarna:takisoleringarnas
+COMPOUND(553027, 692744): tak + isolering
+987649r4<substantiv>takkant:takkant:takkants:takkanten:takkantens:takkanter:takkanters:takkanterna:takkanternas
+COMPOUND(553027, 549431): tak + kant
+616129r6<substantiv>takkonstruktion:takkonstruktion:takkonstruktions:takkonstruktionen:takkonstruktionens:takkonstruktioner:takkonstruktioners:takkonstruktionerna:takkonstruktionernas
+COMPOUND(553027, 640696): tak + konstruktion
+964109r3<substantiv>takkrockgardin:takkrockgardin:takkrockgardins:takkrockgardinen:takkrockgardinens:takkrockgardiner:takkrockgardiners:takkrockgardinerna:takkrockgardinernas
+964100r4<substantiv>takkrok:takkrok:takkroks:takkroken:takkrokens:takkrokar:takkrokars:takkrokarna:takkrokarnas
+COMPOUND(553027, 551625): tak + krok
+616137r6<substantiv>takkrona:takkrona:takkronas:takkronan:takkronans:takkronor:takkronors:takkronorna:takkronornas
+COMPOUND(553027, 594538): tak + krona
+616573r6<substantiv>takkupa:takkupa:takkupas:takkupan:takkupans:takkupor:takkupors:takkuporna:takkupornas
+COMPOUND(553027, 649208): tak + kupa
+987657r3<substantiv>taklag:taklag:taklags:taklaget:taklagets:taklag:taklags:taklagen:taklagens
+CUSTOM: y n
+616941r5<substantiv>taklagsfest:taklagsfest:taklagsfests:taklagsfesten:taklagsfestens:taklagsfester:taklagsfesters:taklagsfesterna:taklagsfesternas
+595521r3<substantiv>taklampa:taklampa:taklampas:taklampan:taklampans:taklampor:taklampors:taklamporna:taklampornas
+964069r4<substantiv>taklinje:taklinje:taklinjes:taklinjen:taklinjens:taklinjer:taklinjers:taklinjerna:taklinjernas
+COMPOUND(553027, 611937): tak + linje
+731336r3<substantiv>taklist:taklist:taklists:taklisten:taklistens:taklister:taklisters:taklisterna:taklisternas
+CUSTOM: y y taklist
+987663r3<substantiv>takljus:takljus:takljus:takljuset:takljusets:takljus:takljus:takljusen:takljusens
+747855r4<substantiv>taklucka:taklucka:takluckas:takluckan:takluckans:takluckor:takluckors:takluckorna:takluckornas
+COMPOUND(553027, 594650): tak + lucka
+619035r8<substantiv>taklutning:taklutning:taklutnings:taklutningen:taklutningens:taklutningar:taklutningars:taklutningarna:taklutningarnas
+COMPOUND(553027, 633767): tak + lutning
+964061r4<substantiv>takläckage:takläckage:takläckages:takläckaget:takläckagets:takläckage:takläckages:takläckagen:takläckagens
+COMPOUND(553027, 643162): tak + läckage
+964051r4<substantiv>taklägenhet:taklägenhet:taklägenhets:taklägenheten:taklägenhetens:taklägenheter:taklägenheters:taklägenheterna:taklägenheternas
+COMPOUND(553027, 549971): tak + lägenhet
+897887r3<substantiv>takläggare:takläggare:takläggares:takläggaren:takläggarens:takläggare:takläggares:takläggarna:takläggarnas
+619493r6<substantiv>takläggning:takläggning:takläggnings:takläggningen:takläggningens:takläggningar:takläggningars:takläggningarna:takläggningarnas
+COMPOUND(553027, 688835): tak + läggning
+CUSTOM: y y takläggnings
+963944r4<substantiv>taklök:taklök:taklöks:taklöken:taklökens:taklökar:taklökars:taklökarna:taklökarnas
+COMPOUND(553027, 556010): tak + lök
+CUSTOM: y n
+565379r3<adjektiv>taklös:taklös:taklöst:taklösa:taklösa::::
+617998r6<verb>takmontera:takmontera:takmonterade:takmonterat:takmonterar:takmontera:takmonteras:takmonterades:takmonterats:takmonteras:takmonterad:takmonterat:takmonterade::
+COMPOUND(553027, 547355): tak + montera
+747863r4<substantiv>takmålning:takmålning:takmålnings:takmålningen:takmålningens:takmålningar:takmålningars:takmålningarna:takmålningarnas
+COMPOUND(553027, 636353): tak + målning
+619591r6<substantiv>taknivå:taknivå:taknivås:taknivån:taknivåns:taknivåer:taknivåers:taknivåerna:taknivåernas
+COMPOUND(553027, 611085): tak + nivå
+CUSTOM: y n n
+619566r5<substantiv>taknock:taknock:taknocks:taknocken:taknockens:taknockar:taknockars:taknockarna:taknockarnas
+964041r4<substantiv>takomläggning:takomläggning:takomläggnings:takomläggningen:takomläggningens:takomläggningar:takomläggningars:takomläggningarna:takomläggningarnas
+COMPOUND(553027, 647959): tak + omläggning
+619753r6<substantiv>takpanel:takpanel:takpanels:takpanelen:takpanelens:takpaneler:takpanelers:takpanelerna:takpanelernas
+COMPOUND(553027, 550154): tak + panel
+734507r4<substantiv>takpanna:takpanna:takpannas:takpannan:takpannans:takpannor:takpannors:takpannorna:takpannornas
+COMPOUND(553027, 594859): tak + panna
+889368r4<substantiv>takpapp:takpapp:takpapps:takpappen:takpappens::::
+COMPOUND(553027, 552749): tak + papp
+622075r6<substantiv>takplatta:takplatta:takplattas:takplattan:takplattans:takplattor:takplattors:takplattorna:takplattornas
+COMPOUND(553027, 632785): tak + platta
+622168r6<substantiv>takplåt:takplåt:takplåts:takplåten:takplåtens:takplåtar:takplåtars:takplåtarna:takplåtarnas
+COMPOUND(553027, 598671): tak + plåt
+877101r4<substantiv>takpris:takpris:takpris:takpriset:takprisets:takpriser:takprisers:takpriserna:takprisernas
+COMPOUND(553027, 595932): tak + pris
+CUSTOM: y n n
+907411r4<substantiv>takras:takras:takras:takraset:takrasets:takras:takras:takrasen:takrasens
+COMPOUND(553027, 626097): tak + ras
+622306r6<substantiv>takregel:takregel:takregels:takregeln:takregelns:takregler:takreglers:takreglerna:takreglernas
+COMPOUND(553027, 621698): tak + regel
+964031r4<substantiv>takrenovering:takrenovering:takrenoverings:takrenoveringen:takrenoveringens:takrenoveringar:takrenoveringars:takrenoveringarna:takrenoveringarnas
+COMPOUND(553027, 721929): tak + renovering
+987668r3<substantiv>takresning:takresning:takresnings:takresningen:takresningens:takresningar:takresningars:takresningarna:takresningarnas
+964022r4<substantiv>takrosett:takrosett:takrosetts:takrosetten:takrosettens:takrosetter:takrosetters:takrosetterna:takrosetternas
+COMPOUND(553027, 603375): tak + rosett
+987676r3<substantiv>takryttare:takryttare:takryttares:takryttaren:takryttarens:takryttare:takryttares:takryttarna:takryttarnas
+612935r3<substantiv>takräcke:takräcke:takräckes:takräcket:takräckets:takräcken:takräckens:takräckena:takräckenas
+720723r5<substantiv>takränna:takränna:takrännas:takrännan:takrännans:takrännor:takrännors:takrännorna:takrännornas
+963997r4<substantiv>takscen:takscen:takscens:takscenen:takscenens:takscener:taksceners:takscenerna:takscenernas
+COMPOUND(553027, 550462): tak + scen
+964007r4<substantiv>takskottning:takskottning:takskottnings:takskottningen:takskottningens::::
+COMPOUND(553027, 656699): tak + skottning
+964013r4<substantiv>takskylt:takskylt:takskylts:takskylten:takskyltens:takskyltar:takskyltars:takskyltarna:takskyltarnas
+COMPOUND(553027, 556098): tak + skylt
+987682r3<substantiv>taksprång:taksprång:taksprångs:taksprånget:taksprångets:taksprång:taksprångs:taksprången:taksprångens
+987688r3<substantiv>taksp

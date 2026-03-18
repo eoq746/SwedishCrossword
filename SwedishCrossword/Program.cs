@@ -44,6 +44,7 @@ internal class Program
                 Console.WriteLine("6. Importera synonympar (Folkets synonymlexikon)");
                 Console.WriteLine("7. Importera ord från Kelly-listan");
                 Console.WriteLine("8. Generera korsord för webben");
+                Console.WriteLine("9. Importera ord från DSSO (Den Stora Svenska Ordlistan)");
                 Console.WriteLine("0. Avsluta");
                 Console.WriteLine();
                 Console.Write("Ditt val: ");
@@ -85,6 +86,10 @@ internal class Program
 
                         case "8":
                             await GenerateForWeb(generator, printService, CrosswordGenerationOptions.Hard);
+                            break;
+
+                        case "9":
+                            await ImportDssoWords();
                             break;
 
                         case "0":
@@ -564,20 +569,37 @@ internal class Program
             Console.WriteLine();
             Console.WriteLine("Ordlistan är tom!");
             Console.WriteLine();
-            Console.WriteLine("För att ladda ord, välj alternativ 5 'Importera ord från Lexin (ISOF)'");
-            Console.WriteLine($"Förväntad sökväg: {LexinWordImporter.GetJsonFilePath()}");
+            Console.WriteLine("Importera ord med något av följande alternativ:");
+            Console.WriteLine("  5. Importera ord från Lexin (ISOF)");
+            Console.WriteLine("  6. Importera synonympar (Folkets synonymlexikon)");
+            Console.WriteLine("  7. Importera ord från Kelly-listan");
+            Console.WriteLine("  9. Importera ord från DSSO (Den Stora Svenska Ordlistan)");
             return;
         }
-        
+
         var stats = dictionary.GetStatistics();
-        
+
         Console.WriteLine("Ordlistestatistik");
         Console.WriteLine("==================");
         Console.WriteLine($"Totalt antal ord: {stats.TotalWords:N0}");
         Console.WriteLine($"Kategorier: {stats.Categories.Count}");
         Console.WriteLine($"Genomsnittlig längd: {stats.AverageLength:F1} bokstäver");
         Console.WriteLine($"Längdspann: {stats.MinLength}-{stats.MaxLength} bokstäver");
-        Console.WriteLine($"Datakälla: {LexinWordImporter.GetJsonFilePath()}");
+        Console.WriteLine();
+
+        Console.WriteLine("Laddade datakällor:");
+        var sources = new (string Name, string Path)[]
+        {
+            ("Lexin", LexinWordImporter.GetJsonFilePath()),
+            ("Synonympar", SynonymPairImporter.GetJsonFilePath()),
+            ("Kelly", KellyWordImporter.GetJsonFilePath()),
+            ("DSSO", DssoWordImporter.GetJsonFilePath()),
+        };
+        foreach (var (name, path) in sources)
+        {
+            var status = File.Exists(path) ? "✔" : "✘";
+            Console.WriteLine($"  {status} {name}: {Path.GetFileName(path)}");
+        }
         Console.WriteLine();
 
         Console.WriteLine("Fördelning per svårighetsgrad:");
@@ -595,10 +617,12 @@ internal class Program
         Console.WriteLine();
 
         Console.WriteLine("Fördelning per längd:");
+        var maxCount = stats.LengthDistribution.Values.DefaultIfEmpty(1).Max();
+        var scale = Math.Max(1, maxCount / 50);
         foreach (var length in stats.LengthDistribution.OrderBy(l => l.Key))
         {
-            var bar = new string('#', Math.Min(50, length.Value / 50 + 1));
-            Console.WriteLine($"  {length.Key,2} bokstäver: {length.Value,5:N0} ord {bar}");
+            var bar = new string('#', Math.Min(50, length.Value / scale + 1));
+            Console.WriteLine($"  {length.Key,2} bokstäver: {length.Value,6:N0} ord {bar}");
         }
     }
 
@@ -765,6 +789,65 @@ internal class Program
         {
             Console.WriteLine($"Import misslyckades: {ex.Message}");
             
+            if (ex.InnerException != null)
+            {
+                Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");
+            }
+        }
+    }
+
+    private static async Task ImportDssoWords()
+    {
+        Console.WriteLine("DSSO Import (Den Stora Svenska Ordlistan)");
+        Console.WriteLine("==========================================");
+        Console.WriteLine();
+        Console.WriteLine("DSSO innehåller en omfattande svensk ordlista med ordklasser och definitioner.");
+        Console.WriteLine("Källa: https://dsso.se/ — licensierad under CC BY-SA 3.0.");
+        Console.WriteLine();
+        Console.WriteLine("Ord utan definition får ledtråden \"___\" som platshållare.");
+        Console.WriteLine();
+
+        var chunkFiles = DssoWordImporter.GetChunkFiles();
+        if (chunkFiles.Length == 0)
+        {
+            Console.WriteLine("VARNING: Inga DSSO-chunkfiler (chunk_*.txt) hittades!");
+            Console.WriteLine($"Placera filerna i: {DataDirectory.GetPath()}");
+            return;
+        }
+
+        Console.WriteLine($"Hittade {chunkFiles.Length} chunkfil(er):");
+        foreach (var f in chunkFiles)
+        {
+            Console.WriteLine($"  {Path.GetFileName(f)}");
+        }
+        Console.WriteLine();
+
+        Console.Write("Vill du fortsätta? (j/n): ");
+        if (Console.ReadLine()?.ToLower() != "j")
+        {
+            Console.WriteLine("Import avbruten.");
+            return;
+        }
+
+        Console.WriteLine();
+
+        var importer = new DssoWordImporter();
+
+        try
+        {
+            var words = await importer.ImportAndExportAsync();
+
+            Console.WriteLine();
+            DssoWordImporter.PrintStatistics(words);
+
+            Console.WriteLine();
+            Console.WriteLine("Import klar!");
+            Console.WriteLine("   Starta om programmet för att använda de nya orden.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Import misslyckades: {ex.Message}");
+
             if (ex.InnerException != null)
             {
                 Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");

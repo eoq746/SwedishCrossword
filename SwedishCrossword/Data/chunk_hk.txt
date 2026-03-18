@@ -1,0 +1,636 @@
+eterinärråd:veterinärråd:veterinärråds:veterinärrådet:veterinärrådets:veterinärråd:veterinärråds:veterinärråden:veterinärrådens
+COMPOUND(550770, 552853): veterinär + råd
+750169r3<substantiv>veterinärtjänst::::::::
+COMPOUND(550770, 550677): veterinär + tjänst
+620917r3<adverb>veterligen:veterligen
+620918r3<adverb>veterligt:veterligt
+940553r3<substantiv>veteöl:veteöl:veteöls:veteölet, veteölen:veteölets, veteölens::::
+578256r5<adjektiv>vetgirig:vetgirig:vetgirigt:vetgiriga:vetgiriga:vetgirigare:vetgirigast:vetgirigaste:vetgirige
+COMPOUND(593444, 572861): veta + girig
+750177r3<substantiv>vetgirighet:vetgirighet:vetgirighets:vetgirigheten:vetgirighetens::::
+554416r5<egennamn>Vetlanda:Vetlanda:Vetlandas, Vetlanda
+CUSTOM: y n Vetlanda
+920891r4<substantiv>vetlandabo:vetlandabo:vetlandabos:vetlandabon:vetlandabons:vetlandabor:vetlandabors:vetlandaborna:vetlandabornas
+COMPOUND(554416, 855482): Vetlanda + bo
+624999r3<substantiv>veto:veto:vetos:vetot:vetots:veton:vetons:vetona:vetonas
+750181r3<substantiv>vetorätt:vetorätt:vetorätts:vetorätten:vetorättens::::
+645387r3<substantiv>vetskap:vetskap:vetskaps:vetskapen:vetskapens:!:!:!:!
+CUSTOM: y y vetskaps
+625005r6<substantiv>vett:vett:vetts:vettet:vettets:!:!:!:!
+627578r5<verb>vetta:vetta:vette:vettat:vetter:!:!:!:!:!:!:!:!:vettande:
+CUSTOM: y n
+841671r3<substantiv>vette:vette:vettes:vetten:vettens:vettar:vettars:vettarna:vettarnas
+854984r3<egennamn>Vettel:Vettel:Vettels
+860531r3<egennamn>Wetterstrand:Wetterstrand:Wetterstrands
+578259r4<adjektiv>vettig:vettig:vettigt:vettiga:vettiga:vettigare:vettigast:vettigaste:vettige
+814925r3<substantiv>vettighet:vettighet:vettighets:vettigheten:vettighetens:vettigheter:vettigheters:vettigheterna:vettigheternas
+565456r4<adjektiv>vettlös:vettlös:vettlöst:vettlösa:vettlösa:vettlösare:vettlösast:vettlösaste:vettlöse
+814937r3<substantiv>vettlöshet:vettlöshet:vettlöshets:vettlösheten:vettlöshetens::::
+645389r3<adjektiv>vettskrämd:vettskrämd:vettskrämt:vettskrämda:vettskrämda:!:!:!:vettskrämde
+814941r3<substantiv>vettskrämdhet:vettskrämdhet:vettskrämdhets:vettskrämdheten:vettskrämdhetens::::
+568450r4<adjektiv>vettvillig:vettvillig:vettvilligt:vettvilliga:vettvilliga::::vettvillige
+645393r3<substantiv>vettvilling:vettvilling:vettvillings:vettvillingen:vettvillingens:vettvillingar:vettvillingars:vettvillingarna:vettvillingarnas
+629229r5<substantiv>vev:vev:vevs:veven:vevens:vevar:vevars:vevarna:vevarnas
+CUSTOM: y n
+548031r5<verb>veva:veva:vevade:vevat:vevar:veva:vevas:vevades:vevats:vevas:vevad:vevat:vevade:vevande:
+938292r3<substantiv>veva:veva:vevas:vevan:vevans::::
+814946r3<substantiv>vevarm:vevarm:vevarms:vevarmen:vevarmens:vevarmar:vevarmars:vevarmarna:vevarmarnas
+803925r3<substantiv>vevaxel:vevaxel:vevaxels:vevaxeln:vevaxelns:vevaxlar:vevaxlars:vevaxlarna:vevaxlarnas
+925944r4<substantiv>vevgrammofon:vevgrammofon:vevgrammofons:vevgrammofonen:vevgrammofonens:vevgrammofoner:vevgrammofoners:vevgrammofonerna:vevgrammofonernas
+COMPOUND(629229, 549122): vev + grammofon
+814954r3<substantiv>vevhandtag:vevhandtag:vevhandtags:vevhandtaget:vevhandtagets:vevhandtag:vevhandtags:vevhandtagen:vevhandtagens
+814960r3<substantiv>vevhus:vevhus:vevhus:vevhuset:vevhusets:vevhus:vevhus:vevhusen:vevhusens
+903846r6<substantiv>vevlager:vevlager:vevlagers:vevlagret:vevlagrets:vevlager:vevlagers:vevlagren:vevlagrens
+COMPOUND(629229, 555207): vev + lager
+841679r3<substantiv>vevling:vevling:vevlings:vevlingen:vevlingens:vevlingar:vevlingars:vevlingarna:vevlingarnas
+988965r3<substantiv>vevlira:vevlira:vevliras:vevliran:vevlirans:vevliror:vevlirors:vevlirorna:vevlirornas
+814965r3<substantiv>vevning:vevning:vevnings:vevningen:vevningens::::
+814969r3<substantiv>vevstake:vevstake:vevstakes:vevstaken:vevstakens:vevstakar:vevstakars:vevstakarna:vevstakarnas
+712375r3<substantiv>vevstång:vevstång:vevstångs:vevstången:vevstångens:vevstänger:vevstängers:vevstängerna:vevstängernas
+584728r3<adjektiv>vexillologisk:vexillologisk:vexillologiskt:vexillologiska:vexillologiska::::
+947678r3<substantiv>whiplash:whiplash:whiplashs:whiplashen:whiplashens::::
+699311r3<substantiv>whiplashskada:whiplashskada:whiplashskadas:whiplashskadan:whiplashskadans:whiplashskador:whiplashskadors:whiplashskadorna:whiplashskadornas
+906589r3<substantiv>whippet:whippet:whippets:whippeten:whippetens:whippetar:whippetars:whippetarna:whippetarnas
+622577r13<substantiv>whisky:whisky:whiskys:whiskyn:whiskyns:!:!:!:!
+CUSTOM: y y whisky +whisky
+699316r4<substantiv>whiskyflaska:whiskyflaska:whiskyflaskas:whiskyflaskan:whiskyflaskans:whiskyflaskor:whiskyflaskors:whiskyflaskorna:whiskyflaskornas
+COMPOUND(622577, 555299): whisky + flaska
+678551r3<substantiv>whiskypinne::::::::
+COMPOUND(622577, 625963): whisky + pinne
+638950r3<substantiv>whist:whist:whists:whisten:whistens:!:!:!:!
+CUSTOM: y y whist
+965698r3<substantiv>whistleblower:whistleblower:whistleblowers:whistleblowern:whistleblowerns::::
+843511r3<egennamn>Whittaker:Whittaker:Whittakers
+555129r3<pronomen>vi:vi
+624357r3<preposition>via:via
+750185r4<substantiv>viadukt:viadukt:viadukts:viadukten:viaduktens:viadukter:viadukters:viadukterna:viadukternas
+CUSTOM: y y viadukt
+814977r3<substantiv>viaduktbygge::::::::
+COMPOUND(750185, 612421): viadukt + bygge
+860929r5<egennamn>Viasat:Viasat:Viasats
+629071r3<substantiv>vibb:vibb:vibbs:vibben:vibbens:vibbar:vibbars:vibbarna:vibbarnas
+860514r3<egennamn>Wibe:Wibe:Wibes
+972079r3<egennamn>Vibeke:Vibeke:Vibekes
+973392r3<egennamn>Viberg:Viberg:Vibergs
+973432r3<egennamn>Wiberg:Wiberg:Wibergs
+750193r3<substantiv>vibrafon:vibrafon:vibrafons:vibrafonen:vibrafonens:vibrafoner:vibrafoners:vibrafonerna:vibrafonernas
+814978r3<substantiv>vibrafonist:vibrafonist:vibrafonists:vibrafonisten:vibrafonistens:vibrafonister:vibrafonisters:vibrafonisterna:vibrafonisternas
+634724r5<substantiv>vibration:vibration:vibrations:vibrationen:vibrationens:vibrationer:vibrationers:vibrationerna:vibrationernas
+CUSTOM: y y vibrations +vibrations
+564382r3<adjektiv>vibrationsfri:vibrationsfri:vibrationsfritt:vibrationsfria:vibrationsfria::::
+731904r4<substantiv>vibrationssensor:vibrationssensor:vibrationssensors:vibrationssensorn:vibrationssensorns:vibrationssensorer:vibrationssensorers:vibrationssensorerna:vibrationssensorernas
+COMPOUND(634724, 645434): vibration + sensor
+814986r3<substantiv>vibrato:vibrato:vibratos:vibratot:vibratots:vibraton:vibratons:vibratona:vibratonas
+658166r3<substantiv>vibrator:vibrator:vibrators:vibratorn:vibratorns:vibratorer:vibratorers:vibratorerna:vibratorernas
+588411r4<verb>vibrera:vibrera:vibrerade:vibrerat:vibrerar:vibrera::::::::vibrerande:
+814994r3<substantiv>vibrering:vibrering:vibrerings:vibreringen:vibreringens:vibreringar:vibreringars:vibreringarna:vibreringarnas
+989117r3<substantiv>wicca:wicca:wiccas::::::
+CUSTOM: y n wicca
+989121r3<substantiv>wiccan:wiccan:wiccans:wiccanen:wiccanens:wiccaner:wiccaners:wiccanerna:wiccanernas
+CUSTOM: y n
+649053r8<adjektiv>vice:vice:vice:vice:vice:!:!:!:::::::::
+CUSTOM: y y vice
+750201r4<substantiv>viceamiral:viceamiral:viceamirals:viceamiralen:viceamiralens:viceamiraler:viceamiralers:viceamiralerna:viceamiralernas
+COMPOUND(649053, 601102): vice + amiral
+939272r4<substantiv>vicechef:vicechef:vicechefs:vicechefen:vicechefens:vicechefer:vicechefers:vicecheferna:vicechefernas
+COMPOUND(649053, 548529): vice + chef
+750217r4<substantiv>viceordförande:viceordförande:viceordförandes:viceordföranden:viceordförandens:viceordförande:viceordförandes:viceordförandena:viceordförandenas
+COMPOUND(649053, 641944): vice + ordförande
+CUSTOM: n n y
+703542r5<substantiv>vicepresident:vicepresident:vicepresidents:vicepresidenten:vicepresidentens:vicepresidenter:vicepresidenters:vicepresidenterna:vicepresidenternas
+COMPOUND(649053, 550252): vice + president
+CUSTOM: n n y
+750224r3<substantiv>vicepresidentkandidat::::::::
+COMPOUND(703542, 549427): vicepresident + kandidat
+CUSTOM: n n
+707756r3<adverb>vice versa:vice versa
+750209r4<substantiv>vicevärd:vicevärd:vicevärds:vicevärden:vicevärdens:vicevärdar:vicevärdars:vicevärdarna:vicevärdarnas
+COMPOUND(649053, 599164): vice + värd
+722547r3<egennamn>Vichyregimen:Vichyregimen:Vichyregimens
+841687r3<substantiv>vichyvatten:vichyvatten:vichyvattens:vichyvattnet:vichyvattnets::::
+548032r5<verb>vicka:vicka:vickade:vickat:vickar:vicka:vickas:vickades:vickats:vickas::::vickande:
+570519r3<adjektiv>vickbar:vickbar:vickbart:vickbara:vickbara::::
+CUSTOM: y n n
+578260r3<adjektiv>vickig:vickig:vickigt:vickiga:vickiga::::
+750225r3<substantiv>vickning:vickning:vicknings:vickningen:vickningens:vickningar:vickningars:vickningarna:vickningarnas
+874314r3<egennamn>Wickström:Wickström:Wickströms
+990261r3<egennamn>Victor:Victor:Victors
+563312r3<adjektiv>vid:vid:vitt:vida:vida:vidare:vidast:vidaste:
+627632r3<preposition>vid:vid
+627633r6<adverb>vid:vid
+CUSTOM: y n
+620919r3<adverb>vida:vida
+672652r3<egennamn>Vidar:Vidar:Vidars
+571347r9<adverb>vidare:vidare
+CUSTOM: y y vidare
+548033r4<verb>vidarebefordra:vidarebefordra:vidarebefordrade:vidarebefordrat:vidarebefordrar:vidarebefordra:vidarebefordras:vidarebefordrades:vidarebefordrats:vidarebefordras:vidarebefordrad:vidarebefordrat:vidarebefordrade::
+CUSTOM: n n y
+733814r4<substantiv>vidarebefordran:vidarebefordran:vidarebefordrans:vidarebefordran:vidarebefordrans:vidarebefordringar:vidarebefordringars:vidarebefordringarna:vidarebefordringarnas
+COMPOUND(571347, 592436): vidare + befordran
+CUSTOM: n n y
+698623r3<substantiv>vidarebefordrande:vidarebefordrande:vidarebefordrandes:vidarebefordrandet:vidarebefordrandets::::
+847300r4<verb>vidareföra:vidareföra:vidareförde:vidarefört:vidareför:vidareför:vidareföras:vidarefördes:vidareförts:vidareförs:vidareförd:vidarefört:vidareförda:vidareförande:
+COMPOUND(571347, 558899): vidare + föra
+631233r6<verb>vidaresända:vidaresända:vidaresände:vidaresänt:vidaresänder:vidaresänd:vidaresändas:vidaresändes:vidaresänts:vidaresänds, vidaresändes:vidaresänd:vidaresänt:vidaresända:vidaresändande:
+COMPOUND(571347, 593413): vidare + sända
+548034r4<verb>vidareutbilda:vidareutbilda:vidareutbildade:vidareutbildat:vidareutbildar:vidareutbilda:vidareutbildas:vidareutbildades:vidareutbildats:vidareutbildas:vidareutbildad:vidareutbildat:vidareutbildade::
+CUSTOM: n n y
+707931r3<substantiv>vidareutbildning:vidareutbildning:vidareutbildnings:vidareutbildningen:vidareutbildningens:vidareutbildningar:vidareutbildningars:vidareutbildningarna:vidareutbildningarnas
+CUSTOM: n n y
+548035r4<verb>vidareutveckla:vidareutveckla:vidareutvecklade:vidareutvecklat:vidareutvecklar:vidareutveckla:vidareutvecklas:vidareutvecklades:vidareutvecklats:vidareutvecklas:vidareutvecklad:vidareutvecklat:vidareutvecklade::
+CUSTOM: n n y
+719237r4<substantiv>vidareutveckling:vidareutveckling:vidareutvecklings:vidareutvecklingen:vidareutvecklingens:vidareutvecklingar:vidareutvecklingars:vidareutvecklingarna:vidareutvecklingarnas
+COMPOUND(571347, 637669): vidare + utveckling
+CUSTOM: n n y
+774614r3<adjektiv>vidbränd:vidbränd:vidbränt:vidbrända:vidbrända::::
+796680r3<adjektiv>vidbrättad:vidbrättad:vidbrättat:vidbrättade:vidbrättade:!:!:!:
+578263r3<adjektiv>vidbrättig:vidbrättig:vidbrättigt:vidbrättiga:vidbrättiga::::
+899789r3<adjektiv>vidbyggd:vidbyggd:vidbyggt:vidbyggda:vidbyggda::::::::::::
+CUSTOM: y n n
+625007r7<substantiv>vidd:vidd:vidds:vidden:viddens:vidder:vidders:vidderna:viddernas
+629105r5<substantiv>vide:vide:vides:videt:videts:viden:videns:videna:videnas
+CUSTOM: y n
+815002r3<substantiv>videbuske:videbuske:videbuskes:videbusken:videbuskens:videbuskar:videbuskars:videbuskarna:videbuskarnas
+815010r3<substantiv>videknopp:videknopp:videknopps:videknoppen:videknoppens:videknoppar:videknoppars:videknopparna:videknopparnas
+627579r9<substantiv>video:video:videos:videon:videons:videor:videors:videorna:videornas
+CUSTOM: y y video
+925282r6<verb>videodejta:videodejta:videodejtade:videodejtat:videodejtar:videodejta:videodejtas:videodejtades:videodejtats:videodejtas:videodejtad:videodejtat:videodejtade:videodejtande:
+COMPOUND(627579, 625193): video + dejta
+861568r4<substantiv>videofilm:videofilm:videofilms:videofilmen:videofilmens:videofilmer:videofilmers:videofilmerna:videofilmernas
+COMPOUND(627579, 548921): video + film
+CUSTOM: n n y
+901961r4<substantiv>videokedja:videokedja:videokedjas:videokedjan:videokedjans:videokedjor:videokedjors:videokedjorna:videokedjornas
+COMPOUND(627579, 559717): video + kedja
+939529r4<substantiv>videoklipp:videoklipp:videoklipps:videoklippet:videoklippets:videoklipp:videoklipps:videoklippen:videoklippens
+COMPOUND(627579, 552552): video + klipp
+631830r4<substantiv>videokonferens:videokonferens:videokonferens:videokonferensen:videokonferensens:videokonferenser:videokonferensers:videokonferenserna:videokonferensernas
+COMPOUND(627579, 549618): video + konferens
+CUSTOM: n n y
+548036r4<verb>vidga:vidga:vidgade:vidgat:vidgar:vidga:vidgas:vidgades:vidgats:vidgas:vidgad:vidgat:vidgade::
+698629r3<substantiv>vidgande:vidgande:vidgandes:vidgandet:vidgandets::::
+733806r3<substantiv>vidgning:vidgning:vidgnings:vidgningen:vidgningens:vidgningar:vidgningars:vidgningarna:vidgningarnas
+627631r6<verb>vidgå:vidgå:vidgick:vidgått:vidgår:vidgå:vidgås:vidgicks:vidgåtts:vidgås:vidgången:vidgånget:vidgångna:vidgående:vidginge
+COMPOUND(627633, 554988): vid + gå
+796683r3<adjektiv>vidhalsad:vidhalsad:vidhalsat:vidhalsade:vidhalsade:!:!:!:
+796686r3<adjektiv>vidhjärtad:vidhjärtad:vidhjärtat:vidhjärtade:vidhjärtade:!:!:!:
+698631r4<verb>vidhålla:vidhålla:vidhöll:vidhållit:vidhåller:vidhåll:vidhållas:vidhölls:vidhållits:vidhålls, vidhålles:vidhållen:vidhållet:vidhållna:vidhållande:
+COMPOUND(627633, 555233): vid + hålla
+815018r3<verb>vidhäfta:vidhäfta:vidhäftade:vidhäftat:vidhäftar:vidhäfta:vidhäftas:vidhäftades:vidhäftats:vidhäftas:vidhäftad:vidhäftat:vidhäftade:vidhäftande:
+733802r4<substantiv>vidhäftning:vidhäftning:vidhäftnings:vidhäftningen:vidhäftningens::::
+CUSTOM: y y vidhäftnings
+815027r3<substantiv>vidhäftningskraft::::::::
+COMPOUND(733802, 549757): vidhäftning + kraft
+750233r3<adjektiv>vidhängande:vidhängande:vidhängande:vidhängande:vidhängande:!:!:!:
+564495r3<adjektiv>vidhängsen:vidhängsen:vidhängset:vidhängsna:vidhängsna::::
+815028r3<substantiv>vidimation:vidimation:vidimations:vidimationen:vidimationens:vidimationer:vidimationers:vidimationerna:vidimationernas
+585744r4<verb>vidimera:vidimera:vidimerade:vidimerat:vidimerar:vidimera:vidimeras:vidimerades:vidimerats:vidimeras:vidimerad:vidimerat:vidimerade::
+597892r3<substantiv>vidimering:vidimering:vidimerings:vidimeringen:vidimeringens:vidimeringar:vidimeringars:vidimeringarna:vidimeringarnas
+CUSTOM: y y vidimerings
+841691r4<substantiv>vidja:vidja:vidjas:vidjan:vidjans:vidjor:vidjors:vidjorna:vidjornas
+CUSTOM: y n 
+815055r3<substantiv>vidjeband:vidjeband:vidjebands:vidjebandet:vidjebandets:vidjeband:vidjebands:vidjebanden:vidjebandens
+815061r3<substantiv>vidjeflätning:vidjeflätning:vidjeflätnings:vidjeflätningen:vidjeflätningens::::
+815065r3<substantiv>vidjekorg:vidjekorg:vidjekorgs:vidjekorgen:vidjekorgens:vidjekorgar:vidjekorgars:vidjekorgarna:vidjekorgarnas
+724472r3<verb>vidkomma:vidkomma:vidkom:vidkommit:vidkommer:vidkom:::::::::
+750234r3<substantiv>vidkommande:vidkommande:::::::
+568453r3<adjektiv>vidkullig:vidkullig:vidkulligt:vidkulliga:vidkulliga::::
+591770r3<deponens>vidkännas:vidkännas:vidkändes:vidkänts:vidkänns:
+578266r4<adjektiv>vidlyftig:vidlyftig:vidlyftigt:vidlyftiga:vidlyftiga:vidlyftigare:vidlyftigast:vidlyftigaste:vidlyftige
+815077r3<substantiv>vidlyftighet:vidlyftighet:vidlyftighets:vidlyftigheten:vidlyftighetens:vidlyftigheter:vidlyftigheters:vidlyftigheterna:vidlyftigheternas
+726965r11<verb>vidlåda:vidlåda:vidlådde:vidlått:vidlåder:vidlåd:vidlådas:vidlåddes:vidlåtts:vidlåds::::vidlådande:
+DEFINITION 1: sitta fast vid, vara förenad med
+698638r3<verb>vidmakthålla:vidmakthålla:vidmakthöll:vidmakthållit:vidmakthåller:vidmakthåll:vidmakthållas:vidmakthölls:vidmakthållits:vidmakthålls, vidmakthålles:vidmakthållen:vidmakthållet:vidmakthållna:vidmakthållande:
+815085r3<substantiv>vidmakthållare:vidmakthållare:vidmakthållares:vidmakthållaren:vidmakthållarens:vidmakthållare:vidmakthållares:vidmakthållarna:vidmakthållarnas
+578269r6<adjektiv>vidrig:vidrig:vidrigt:vidriga:vidriga:vidrigare:vidrigast:vidrigaste:vidrige
+750235r3<substantiv>vidrighet:vidrighet:vidrighets:vidrigheten:vidrighetens:vidrigheter:vidrigheters:vidrigheterna:vidrigheternas
+750243r3<substantiv>vidräkning:vidräkning:vidräknings:vidräkningen:vidräkningens:vidräkningar:vidräkningars:vidräkningarna:vidräkningarnas
+724696r3<verb>vidröra:vidröra:vidrörde:vidrört:vidrör:vidrör:vidröras:vidrördes:vidrörts:vidrörs:vidrörd:vidrört:vidrörda:vidrörande:
+733793r3<substantiv>vidröring:vidröring:vidrörings:vidröringen:vidröringens:vidröringar:vidröringars:vidröringarna:vidröringarnas
+815093r3<substantiv>vidrörning:vidrörning:vidrörnings:vidrörningen:vidrörningens:vidrörningar:vidrörningars:vidrörningarna:vidrörningarnas
+698644r3<substantiv>vidskepelse:vidskepelse:vidskepelses:vidskepelsen:vidskepelsens:vidskepelser:vidskepelsers:vidskepelserna:vidskepelsernas
+CUSTOM: y y vidskepelse
+568456r4<adjektiv>vidskeplig:vidskeplig:vidskepligt:vidskepliga:vidskepliga:vidskepligare:vidskepligast:vidskepligaste:vidskeplige
+815104r3<substantiv>vidskeplighet:vidskeplighet:vidskeplighets:vidskepligheten:vidskeplighetens:vidskepligheter:vidskepligheters:vidskepligheterna:vidskepligheternas
+815112r3<adjektiv>vidskriven:vidskriven:vidskrivet:vidskrivna:vidskrivna::::
+578270r3<adjektiv>vidskyggig:vidskyggig:vidskyggigt:vidskyggiga:vidskyggiga::::
+796689r3<adjektiv>vidstickad:vidstickad:vidstickat:vidstickade:vidstickade:!:!:!:
+698650r4<adjektiv>vidsträckt:vidsträckt:vidsträckt:vidsträckta:vidsträckta:vidsträcktare:vidsträcktast:vidsträcktaste:!
+815118r3<substantiv>vidsträckthet:vidsträckthet:vidsträckthets:vidsträcktheten:vidsträckthetens::::
+750252r3<adjektiv>vidstående:vidstående:vidstående:vidstående:vidstående:!:!:!:
+801743r3<adjektiv>vidsydd:vidsydd:vidsytt:vidsydda:vidsydda::::
+CUSTOM: y n n
+750253r3<substantiv>vidsyn:vidsyn:vidsyns:vidsynen:vidsynens:!:!:!:!
+733785r5<adjektiv>vidsynt:vidsynt:vidsynt:vidsynta:vidsynta:vidsyntare:vidsyntast:vidsyntaste:vidsynte
+750257r3<substantiv>vidsynthet:vidsynthet:vidsynthets:vidsyntheten:vidsynthetens::::
+815124r3<verb>vidtala:vidtala:vidtalade:vidtalat:vidtalar:vidtala:vidtalas:vidtalades:vidtalats:vidtalas:vidtalad:vidtalat:vidtalade::
+627634r10<verb>vidta, vidtaga:vidta, vidtaga:vidtog:vidtagit:vidtar, vidtager:vidta, vidtag:vidtas, vidtagas:vidtogs:vidtagits:vidtas, vidtages, vidtags:vidtagen:vidtaget:vidtagna:vidtagande:
+COMPOUND(627633, 555219): vid + ta, taga
+698651r3<substantiv>vidunder:vidunder:vidunders:vidundret:vidundrets:vidunder:vidunders:vidundren:vidundrens
+568457r4<adjektiv>vidunderlig:vidunderlig:vidunderligt:vidunderliga:vidunderliga:vidunderligare:vidunderligast:vidunderligaste:vidunderlige
+815136r3<substantiv>vidunderlighet:vidunderlighet:vidunderlighets:vidunderligheten:vidunderlighetens:vidunderligheter:vidunderligheters:vidunderligheterna:vidunderligheternas
+815144r3<substantiv>vidvinkel::::::::
+CUSTOM: y y vidvinkel
+815145r4<substantiv>vidvinkelobjektiv:vidvinkelobjektiv:vidvinkelobjektivs:vidvinkelobjektivet:vidvinkelobjektivets:vidvinkelobjektiv:vidvinkelobjektivs:vidvinkelobjektiven:vidvinkelobjektivens
+COMPOUND(815144, 607778): vidvinkel + objektiv
+600465r3<substantiv>vidvinkelspegel:vidvinkelspegel:vidvinkelspegels:vidvinkelspegeln:vidvinkelspegelns:vidvinkelspeglar:vidvinkelspeglars:vidvinkelspeglarna:vidvinkelspeglarnas
+568460r3<adjektiv>vidvinklig:vidvinklig:vidvinkligt:vidvinkliga:vidvinkliga::::
+698652r3<adjektiv>vidöppen:vidöppen:vidöppet:vidöppna:vidöppna:!:!:!:
+554916r3<egennamn>Wien:Wien:Wiens
+CUSTOM: y n Wien
+815151r3<substantiv>wienare:wienare:wienares:wienaren:wienarens:wienare:wienares:wienarna:wienarnas
+608432r3<substantiv>wienerbröd:wienerbröd:wienerbröds:wienerbrödet:wienerbrödets:wienerbröd:wienerbröds:wienerbröden:wienerbrödens
+699324r3<substantiv>wienerkorv:wienerkorv:wienerkorvs:wienerkorven:wienerkorvens:wienerkorvar:wienerkorvars:wienerkorvarna:wienerkorvarnas
+815157r3<substantiv>wienerkrans:wienerkrans:wienerkrans:wienerkransen:wienerkransens:wienerkransar:wienerkransars:wienerkransarna:wienerkransarnas
+638954r3<substantiv>wienerschnitzel:wienerschnitzel:wienerschnitzels:wienerschnitzeln:wienerschnitzelns:wienerschnitzlar:wienerschnitzlars:wienerschnitzlarna:wienerschnitzlarnas
+638962r3<substantiv>wienervals:wienervals:wienervals:wienervalsen:wienervalsens:wienervalser:wienervalsers:wienervalserna:wienervalsernas
+678509r3<substantiv>wienklassicism:wienklassicism:wienklassicisms:wienklassicismen:wienklassicismens::::
+699332r3<substantiv>wienklassicist:wienklassicist:wienklassicists:wienklassicisten:wienklassicistens:wienklassicister:wienklassicisters:wienklassicisterna:wienklassicisternas
+CUSTOM: y y wienklassicist
+584731r4<adjektiv>wienklassicistisk:wienklassicistisk:wienklassicistiskt:wienklassicistiska:wienklassicistiska:!:!:!:wienklassicistiske
+699340r3<adjektiv>wiensk:wiensk:wienskt:wienska:wienska::::
+554163r3<egennamn>Vietnam:Vietnam:Vietnams
+CUSTOM: y n Vietnam
+623068r3<substantiv>vietnames:vietnames:vietnames:vietnamesen:vietnamesens:vietnameser:vietnamesers:vietnameserna:vietnamesernas
+584734r4<adjektiv>vietnamesisk:vietnamesisk:vietnamesiskt:vietnamesiska:vietnamesiska::::vietnamesiske::::::::
+726976r4<substantiv>vietnamesiska:vietnamesiska:vietnamesiskas:vietnamesiskan:vietnamesiskans:vietnamesiskor:vietnamesiskors:vietnamesiskorna:vietnamesiskornas
+DEFINITION 1: 1. språk i Vietnam\
+2. kvinna från Vietnam
+721304r3<egennamn>Vietnamkriget:Vietnamkriget:Vietnamkrigets
+CUSTOM: n n 
+625013r6<substantiv>vift:vift::::!:!:!:!
+548037r4<verb>vifta:vifta:viftade:viftat:viftar:vifta:viftas:viftades:viftats:viftas:::::
+698654r3<substantiv>viftande:viftande:viftandes:viftandet:viftandets::::
+698656r3<substantiv>viftning:viftning:viftnings:viftningen:viftningens:viftningar:viftningars:viftningarna:viftningarnas
+CUSTOM: y y viftnings
+563186r4<adjektiv>vig:vig:vigt:viga:viga:vigare:vigast:vigaste:
+585804r6<verb>viga:viga:vigde:vigt:viger:vig:vigas:vigdes:vigts:vigs:vigd:vigt:vigda::
+726985r5<substantiv>vigg:vigg:viggs:viggen:viggens:viggar:viggars:viggarna:viggarnas
+DEFINITION 1: 1. dykand\
+2. smärre lån\
+3. blixt
+CUSTOM: y n
+726994r4<verb>vigga:vigga:viggade:viggat:viggar:vigga:viggas:viggades:viggats:viggas::::viggande:vigge
+DEFINITION 1: 1. låna (pengar)
+CUSTOM: y n !vigge %vigge
+972458r3<egennamn>Viggo:Viggo:Viggos
+815165r3<substantiv>vighet:vighet:vighets:vigheten:vighetens::::
+588412r3<verb>vigilera:vigilera:vigilerade:vigilerat:vigilerar:vigilera:::::::::
+695706r4<substantiv>vigning:vigning:vignings:vigningen:vigningens:vigningar:vigningars:vigningarna:vigningarnas
+CUSTOM: y y vignings
+698657r3<substantiv>vigsel:vigsel:vigsels:vigseln:vigselns:vigslar:vigslars:vigslarna:vigslarnas
+CUSTOM: y y vigsel
+724130r3<substantiv>vigselakt:vigselakt:vigselakts:vigselakten:vigselaktens:vigselakter:vigselakters:vigselakterna:vigselakternas
+724138r3<substantiv>vigselannons:vigselannons:vigselannons:vigselannonsen:vigselannonsens:vigselannonser:vigselannonsers:vigselannonserna:vigselannonsernas
+724145r3<substantiv>vigselattest:vigselattest:vigselattests:vigselattesten:vigselattestens:vigselattester:vigselattesters:vigselattesterna:vigselattesternas
+724153r3<substantiv>vigselbevis:vigselbevis:vigselbevis:vigselbeviset:vigselbevisets:vigselbevis:vigselbevis:vigselbevisen:vigselbevisens
+724166r3<substantiv>vigselbok:vigselbok:vigselboks:vigselboken:vigselbokens:vigselböcker:vigselböckers:vigselböckerna:vigselböckernas
+724158r3<substantiv>vigselceremoni:vigselceremoni:vigselceremonis:vigselceremonin:vigselceremonins:vigselceremonier:vigselceremoniers:vigselceremonierna:vigselceremoniernas
+724174r3<substantiv>vigselformulär:vigselformulär:vigselformulärs:vigselformuläret:vigselformulärets:vigselformulär:vigselformulärs:vigselformulären:vigselformulärens
+724180r3<substantiv>vigselförrättare:vigselförrättare:vigselförrättares:vigselförrättaren:vigselförrättarens:vigselförrättare:vigselförrättares:vigselförrättarna:vigselförrättarnas
+597900r3<substantiv>vigselring:vigselring:vigselrings:vigselringen:vigselringens:vigselringar:vigselringars:vigselringarna:vigselringarnas
+CUSTOM: y y vigselrings
+841700r3<substantiv>vigselrum:vigselrum:vigselrums:vigselrummet:vigselrummets:vigselrum:vigselrums:vigselrummen:vigselrummens
+724109r3<substantiv>vigselrätt:vigselrätt:vigselrätts:vigselrätten:vigselrättens:vigselrätter:vigselrätters:vigselrätterna:vigselrätternas
+724118r3<substantiv>vigseltal:vigseltal:vigseltals:vigseltalet:vigseltalets:vigseltal:vigseltals:vigseltalen:vigseltalens
+724124r3<verb>vigselvägra:vigselvägra:vigselvägrade:vigselvägrat:vigselvägrar:vigselvägra:::::vigselvägrad:vigselvägrat:vigselvägrade:vigselvägrande:
+727003r4<substantiv>wigwam:wigwam:wigwams:wigwamen:wigwamens:wigwamer:wigwamers:wigwamerna:wigwamernas
+DEFINITION 1: 1. indianhydda
+698658r3<substantiv>vigvatten:vigvatten:vigvattens:vigvattnet:vigvattnets:!:!:!:!
+627635r3<substantiv>vigör:vigör:vigörs:vigören:vigörens::::
+599121r4<substantiv>vik:vik:viks:viken:vikens:vikar:vikars:vikarna:vikarnas
+CUSTOM: y n
+593449r6<verb>vika:vika:vek:vikit, vikt:viker:vik:vikas:veks:vikits, vikts:viks, vikes:vikt, viken:vikt, viket:vikta, vikna:vikande:
+620920r3<adverb>vika:vika
+891074r9<substantiv>vikande:vikande:vikandes:vikandet:vikandets::::
+698660r3<adjektiv>vikande:vikande:vikande:vikande:vikande:!:!:!:
+905100r3<substantiv>vikare:vikare:vikares:vikaren:vikarens:vikare:vikares:vikarna:vikarnas
+CUSTOM: n n y
+553121r4<substantiv>vikariat:vikariat:vikariats:vikariatet:vikariatets:vikariat:vikariats:vikariaten:vikariatens
+CUSTOM: y y vikariats
+815169r3<substantiv>vikariatstjänst::::::::
+COMPOUND(553121, 550677): vikariat + tjänst
+668293r6<substantiv>vikarie:vikarie:vikaries:vikarien:vikariens:vikarier:vikariers:vikarierna:vikariernas
+CUSTOM: y y vikarie
+588416r5<verb>vikariera:vikariera:vikarierade:vikarierat:vikarierar:vikariera:vikarieras:vikarierades:vikarierats:vikarieras::::vikarierande:
+771948r3<substantiv>vikarietjänst::::::::
+COMPOUND(668293, 550677): vikarie + tjänst
+570522r3<adjektiv>vikbar:vikbar:vikbart:vikbara:vikbara::::
+815170r3<substantiv>vikbarhet:vikbarhet:vikbarhets:vikbarheten:vikbarhetens::::
+815174r3<substantiv>vikdörr:vikdörr:vikdörrs:vikdörren:vikdörrens:vikdörrar:vikdörrars:vikdörrarna:vikdörrarnas
+727715r4<substantiv>wiki:wiki:wikis:wikin:wikins:wikier:wikiers:wikierna:wikiernas
+CUSTOM: y n n
+698661r7<substantiv>viking:viking:vikings:vikingen:vikingens:vikingar:vikingars:vikingarna:vikingarnas
+CUSTOM: y y vikinga
+955958r4<substantiv>vikingablot:vikingablot:vikingablots:vikingablotet:vikingablotets:vikingablot:vikingablots:vikingabloten:vikingablotens
+COMPOUND(698661, 629277): viking + blot
+750261r3<substantiv>vikingaskepp::::::::
+COMPOUND(698661, 552919): viking + skepp
+750262r4<substantiv>vikingatid:vikingatid:vikingatids:vikingatiden:vikingatidens:!:!:!:!
+COMPOUND(698661, 550665): viking + tid
+750266r3<adjektiv>vikingatida:vikingatida:vikingatida:vikingatida:vikingatida:!:!:!:
+750267r4<substantiv>vikingatåg:vikingatåg:vikingatågs:vikingatåget:vikingatågets:vikingatåg:vikingatågs:vikingatågen:vikingatågens
+COMPOUND(698661, 553068): viking + tåg
+720960r3<egennamn>Wikipedia:Wikipedia:Wikipedias
+CUSTOM: y n Wikipedia
+972290r3<egennamn>Viklund:Viklund:Viklunds
+973396r3<egennamn>Vikman:Vikman:Vikmans
+733076r4<substantiv>vikning:vikning:viknings:vikningen:vikningens:vikningar:vikningars:vikningarna:vikningarnas
+789052r3<egennamn>Wiksell:Wiksell:Wiksells
+972286r3<egennamn>Vikström:Vikström:Vikströms
+712859r3<egennamn>Wikström:Wikström:Wikströms
+550771r16<substantiv>vikt:vikt:vikts:vikten:viktens:vikter:vikters:vikterna:vikternas
+CUSTOM: y y vikt
+719909r3<verb>vikta:vikta:viktade:viktat:viktar:vikta:viktas:viktades:viktats:viktas:viktad:viktat:viktade::
+584736r3<adjektiv>viktanalytisk:viktanalytisk:viktanalytiskt:viktanalytiska:viktanalytiska::::
+796692r3<adjektiv>viktbelastad:viktbelastad:viktbelastat:viktbelastade:viktbelastade:!:!:!:
+884806r4<substantiv>viktdel:viktdel:viktdels:viktdelen:viktdelens:viktdelar:viktdelars:viktdelarna:viktdelarnas
+COMPOUND(550771, 551034): vikt + del
+563142r5<adjektiv>viktig:viktig:viktigt:viktiga:viktiga:viktigare:viktigast:viktigaste:viktige
+815183r3<substantiv>viktighet:viktighet:viktighets:viktigheten:viktighetens:viktigheter:viktigheters:viktigheterna:viktigheternas
+733777r3<substantiv>viktigpetter:viktigpetter:viktigpetters:viktigpettern:viktigpetterns:viktigpettrar:viktigpettrars:viktigpettrarna:viktigpettrarnas
+889562r3<adjektiv>viktimologisk:viktimologisk:viktimologiskt:viktimologiska:viktimologiska::::::::::::
+750273r4<substantiv>viktklass:viktklass:viktklass:viktklassen:viktklassens:viktklasser:viktklassers:viktklasserna:viktklassernas
+COMPOUND(550771, 549530): vikt + klass
+565457r3<adjektiv>viktlös:viktlös:viktlöst:viktlösa:viktlösa::::
+815191r3<substantiv>viktlöshet:viktlöshet:viktlöshets:viktlösheten:viktlöshetens::::
+750280r3<substantiv>viktminskning::::::::
+COMPOUND(550771, 616734): vikt + minskning
+750281r4<substantiv>viktmått:viktmått:viktmåtts:viktmåttet:viktmåttets:viktmått:viktmåtts:viktmåtten:viktmåttens
+COMPOUND(550771, 552707): vikt + mått
+750287r3<substantiv>viktning:viktning:viktnings:viktningen:viktningens:viktningar:viktningars:viktningarna:viktningarnas
+554847r3<egennamn>Viktor:Viktor:Viktors
+553912r3<egennamn>Viktoria:Viktoria:Viktorias
+815195r3<substantiv>viktorian:viktorian:viktorians:viktorianen:viktorianens:viktorianer:viktorianers:viktorianerna:viktorianernas
+815203r3<substantiv>viktorianism:viktorianism:viktorianisms:viktorianismen:viktorianismens::::
+750295r3<adjektiv>viktoriansk:viktoriansk:viktorianskt:viktorianska:viktorianska::::viktorianske
+988973r4<substantiv>vikunja:vikunja:vikunjas:vikunjan:vikunjans:vikunjor:vikunjors:vikunjorna:vikunjornas
+CUSTOM: y n
+988981r4<substantiv>vikunjaull:vikunjaull:vikunjaulls:vikunjaullen:vikunjaullens:!:!:!:!
+COMPOUND(988973, 627876): vikunja + ull
+815207r3<substantiv>vikval:vikval:vikvals:vikvalen:vikvalens:vikvalar:vikvalars:vikvalarna:vikvalarnas
+815215r3<substantiv>vikvägg:vikvägg:vikväggs:vikväggen:vikväggens:vikväggar:vikväggars:vikväggarna:vikväggarnas
+620042r8<substantiv>vila:vila:vilas:vilan:vilans::::
+CUSTOM: y y vilo
+548038r11<verb>vila:vila:vilade:vilat:vilar:vila:vilas:vilades:vilats:vilas::::vilande:
+CUSTOM: y y vilo
+959467r3<substantiv>vilandeförklaring:vilandeförklaring:vilandeförklarings:vilandeförklaringen:vilandeförklaringens::::
+553559r3<egennamn>Wilander:Wilander:Wilanders
+563313r10<adjektiv>vild:vild:vilt:vilda:vilda:vildare:vildast:vildaste:vilde::::::::
+CUSTOM: y y vild
+620043r4<substantiv>vildand:vildand:vildands:vildanden:vildandens:vildänder:vildänders:vildänderna:vildändernas
+COMPOUND(563313, 557824): vild + and
+815223r3<substantiv>vildapel:vildapel:vildapels:vildapeln:vildapelns:vildaplar:vildaplars:vildaplarna:vildaplarnas
+940788r3<substantiv>wildcard:wildcard:wildcards:wildcardet:wildcardets:wildcard:wildcards:wildcarden:wildcardens
+553123r4<substantiv>vilddjur:vilddjur:vilddjurs:vilddjuret:vilddjurets:vilddjur:vilddjurs:vilddjuren:vilddjurens
+CUSTOM: y y vilddjurs
+815231r3<substantiv>vilddjurstjut::::::::
+COMPOUND(553123, 624909): vilddjur + tjut
+563314r3<substantiv>vilde:vilde:vildes:vilden:vildens:vildar:vildars:vildarna:vildarnas
+796695r3<adjektiv>vildfångad:vildfångad:vildfångat:vildfångade:vildfångade:!:!:!:
+939665r4<substantiv>vildget:vildget:vildgets:vildgeten:vildgetens:vildgetter:vildgetters:vildgetterna:vildgetternas
+COMPOUND(563313, 555262): vild + get
+CUSTOM: y n n
+708994r4<substantiv>vildgås:vildgås:vildgås:vildgåsen:vildgåsens:vildgäss:vildgäss:vildgässen:vildgässens
+COMPOUND(563313, 556544): vild + gås
+953513r4<substantiv>vildhavre:vildhavre:vildhavres:vildhavren:vildhavrens::::
+COMPOUND(563313, 643233): vild + havre
+760680r3<substantiv>vildhet:vildhet:vildhets:vildheten:vildhetens::::
+815232r3<substantiv>vilding:vilding:vildings:vildingen:vildingens:vildingar:vildingars:vildingarna:vildingarnas
+707545r3<substantiv>vildkanin:vildkanin:vildkanins:vildkaninen:vildkaninens:vildkaniner:vildkaniners:vildkaninerna:vildkaninernas
+550772r4<substantiv>vildmark:vildmark:vildmarks:vildmarken:vildmarkens:vildmarker:vildmarkers:vildmarkerna:vildmarkernas
+CUSTOM: y y vildmarks
+760684r4<substantiv>vildmarksliv:vildmarksliv:vildmarkslivs:vildmarkslivet:vildmarkslivets::::
+COMPOUND(550772, 552667): vildmark + liv
+922463r4<substantiv>vildmink:vildmink:vildminks:vildminken:vildminkens:vildminkar:vildminkars:vildminkarna:vildminkarnas
+COMPOUND(563313, 616656): vild + mink
+876586r3<substantiv>vildpersilja:vildpersilja:vildpersiljas:vildpersiljan:vildpersiljans:vildpersiljor:vildpersiljors:vildpersiljorna:vildpersiljornas
+847312r4<substantiv>vildren:vildren:vildrens:vildrenen:vildrenens:vildrenar:vildrenars:vildrenarna:vildrenarnas
+COMPOUND(563313, 551795): vild + ren
+933461r4<substantiv>vildros:vildros:vildros:vildrosen:vildrosens:vildrosor:vildrosors:vildrosorna:vildrosornas
+COMPOUND(563313, 556677): vild + ros
+733770r3<adjektiv>vildsint:vildsint:vildsintt:vildsinta:vildsinta:vildsintare:vildsintast:vildsintaste:vildsinte
+815240r3<substantiv>vildsinthet:vildsinthet:vildsinthets:vildsintheten:vildsinthetens::::
+727012r4<substantiv>vildsvin:vildsvin:vildsvins:vildsvinet:vildsvinets:vildsvin:vildsvins:vildsvinen:vildsvinens
+CUSTOM: y y vildsvins
+946022r4<substantiv>vildsvinsgalt:vildsvinsgalt:vildsvinsgalts:vildsvinsgalten:vildsvinsgaltens:vildsvinsgaltar:vildsvinsgaltars:vildsvinsgaltarna:vildsvinsgaltarnas
+COMPOUND(727012, 556799): vildsvin + galt
+919340r3<substantiv>vildvin:vildvin:vildvins:vildvinet:vildvinets::::
+679283r3<substantiv>vildvittra:vildvittra:vildvittras:vildvittran:vildvittrans:vildvittror:vildvittrors:vildvittrorna:vildvittrornas
+800750r4<adjektiv>vildögd:vildögd:vildögt:vildögda:vildögda::::vildögde
+815248r3<substantiv>vilfåtölj:vilfåtölj:vilfåtöljs:vilfåtöljen:vilfåtöljens:vilfåtöljer:vilfåtöljers:vilfåtöljerna:vilfåtöljernas
+972498r3<egennamn>Vilgot:Vilgot:Vilgots
+554849r3<egennamn>Vilhelm:Vilhelm:Vilhelms
+972502r3<egennamn>Wilhelm:Wilhelm:Wilhelms
+553914r3<egennamn>Vilhelmina:Vilhelmina:Vilhelminas
+CUSTOM: y n Vilhelmina
+973400r3<egennamn>Vilhelmsson:Vilhelmsson:Vilhelmssons
+593457r7<substantiv>vilja:vilja:viljas:viljan:viljans:viljor:viljors:viljorna:viljornas
+CUSTOM: y y vilje
+593456r4<verb>vilja:vilja:ville:velat:vill:!:!:!:!:!:!:!:!:viljande:
+698662r3<substantiv>vilje:vilje:viljes:!:!:!:!:!:!
+698663r4<substantiv>viljekraft:viljekraft:viljekrafts:viljekraften:viljekraftens:viljekrafter:viljekrafters:viljekrafterna:viljekrafternas
+COMPOUND(593457, 549757): vilja + kraft
+565460r3<adjektiv>viljelös:viljelös:viljelöst:viljelösa:viljelösa::::
+815256r3<substantiv>viljelöshet:viljelöshet:viljelöshets:viljelösheten:viljelöshetens::::
+698669r4<adjektiv>viljestark:viljestark:viljestarkt:viljestarka:viljestarka:viljestarkare:viljestarkast:viljestarkaste:viljestarke
+COMPOUND(593457, 563133): vilja + stark
+698679r3<substantiv>viljestyrka:viljestyrka:viljestyrkas:viljestyrkan:viljestyrkans::::
+698674r4<adjektiv>viljesvag:viljesvag:viljesvagt:viljesvaga:viljesvaga:viljesvagare:viljesvagast:viljesvagaste:viljesvage
+COMPOUND(593457, 563134): vilja + svag
+593459r3<pronomen>vilka:vilka
+698684r3<pronomen>vilkas:vilkas
+593460r3<pronomen>vilken:vilken
+593461r3<pronomen>vilkendera:vilkendera
+698686r3<pronomen>vilkens:vilkens
+620052r3<pronomen>vilket:vilket
+698689r3<pronomen>vilketdera:vilketdera
+698688r3<pronomen>vilkets:vilkets
+620053r3<adverb>vill:vill
+595754r12<substantiv>villa:villa:villas:villan:villans:villor:villors:villorna:villornas
+CUSTOM: y y villa
+548039r4<verb>villa:villa:villade:villat:villar:villa:villas:villades:villats:villas:::::
+750299r3<substantiv>villaförsäkring::::::::
+COMPOUND(595754, 596902): villa + försäkring
+750300r3<substantiv>villainbrott::::::::
+COMPOUND(595754, 552495): villa + inbrott
+620054r3<substantiv>villakvarter:villakvarter:villakvarters:villakvarteret:villakvarterets:villakvarter:villakvarters:villakvarteren:villakvarterens
+620060r3<substantiv>villalån:villalån:villalåns:villalånet:villalånets:villalån:villalåns:villalånen:villalånens
+750301r3<adjektiv>villande:villande:villande:villande:villande:!:!:!:
+750302r3<substantiv>villaolja::::::::
+COMPOUND(595754, 623123): villa + olja
+750303r4<substantiv>villaområde:villaområde:villaområdes:villaområdet:villaområdets:villaområden:villaområdens:villaområdena:villaområdenas
+COMPOUND(595754, 612761): villa + område
+750311r3<substantiv>villasamhälle::::::::
+COMPOUND(595754, 612788): villa + samhälle
+920901r4<substantiv>villatak:villatak:villataks:villataket:villatakets:villatak:villataks:villataken:villatakens
+COMPOUND(595754, 553027): villa + tak
+750312r3<substantiv>villaträdgård::::::::
+COMPOUND(595754, 599046): villa + trädgård
+615517r3<substantiv>villaägare:villaägare:villaägares:villaägaren:villaägarens:villaägare:villaägares:villaägarna:villaägarnas
+CUSTOM: y y villaägar
+988985r3<substantiv>villaägareförening:villaägareförening:villaägareförenings:villaägareföreningen:villaägareföreningens:villaägareföreningar:villaägareföreningars:villaägareföreningarna:villaägareföreningarnas
+620066r3<substantiv>villebråd:villebråd:villebråds:villebrådet:villebrådets:villebråd:villebråds:villebråden:villebrådens
+620072r3<substantiv>villervalla:villervalla:villervallas:villervallan:villervallans::::
+704958r3<verb>villfara:villfara:villfor:villfarit:villfar:villfar:villfaras:villfors:villfarits:villfars, villfares:villfaren:villfaret:villfarna::
+620074r3<substantiv>villfarelse:villfarelse:villfarelses:villfarelsen:villfarelsens:villfarelser:villfarelsers:villfarelserna:villfarelsernas
+CUSTOM: y y villfarelse
+554855r3<egennamn>William:William:Williams
+568463r5<adjektiv>villig:villig:villigt:villiga:villiga:villigare:villigast:villigaste:villige
+704970r3<substantiv>villighet:villighet:villighets:villigheten:villighetens:!:!:!:!
+CUSTOM: y y +villighets
+553124r12<substantiv>villkor:villkor:villkors:villkoret:villkorets:villkor:villkors:villkoren:villkorens
+CUSTOM: y y villkors +villkors
+704974r3<verb>villkora:villkora:villkorade:villkorat:villkorar:villkora:villkoras:villkorades:villkorats:villkoras:villkorad:villkorat:villkorade::
+568464r3<adjektiv>villkorlig:villkorlig:villkorligt:villkorliga:villkorliga::::
+728606r3<substantiv>villkorlighet:villkorlighet:villkorlighets:villkorligheten:villkorlighetens:!:!:!:!
+565461r3<adjektiv>villkorslös:villkorslös:villkorslöst:villkorslösa:villkorslösa::::
+704982r4<substantiv>villkorsskärpning:villkorsskärpning:villkorsskärpnings:villkorsskärpningen:villkorsskärpningens:villkorsskärpningar:villkorsskärpningars:villkorsskärpningarna:villkorsskärpningarnas
+COMPOUND(553124, 704983): villkor + skärpning
+815260r3<substantiv>villoande:villoande:villoandes:villoanden:villoandens:villoandar:villoandars:villoandarna:villoandarnas
+698690r3<substantiv>villolära:villolära:villoläras:villoläran:villolärans:villoläror:villolärors:villolärorna:villolärornas
+553126r3<substantiv>villospår:villospår:villospårs:villospåret:villospårets:villospår:villospårs:villospåren:villospårens
+620075r3<substantiv>villoväg:villoväg:villovägs:villovägen:villovägens:villovägar:villovägars:villovägarna:villovägarnas
+578273r4<adjektiv>villrådig:villrådig:villrådigt:villrådiga:villrådiga:villrådigare:villrådigast:villrådigaste:villrådige
+704998r3<substantiv>villrådighet:villrådighet:villrådighets:villrådigheten:villrådighetens::::
+620083r3<adjektiv>villsam:villsam:villsamt:villsamma:villsamma:villsammare:villsammast:villsammaste:
+853889r3<egennamn>Willy:Willy:Willys
+971871r3<egennamn>Vilma:Vilma:Vilmas
+972326r3<egennamn>Wilma:Wilma:Wilmas
+972466r3<egennamn>Wilmer:Wilmer:Wilmers
+943175r3<egennamn>Vilnius:Vilnius:Vilnius
+620089r3<substantiv>vilodag:vilodag:vilodags:vilodagen:vilodagens:vilodagar:vilodagars:vilodagarna:vilodagarnas
+698693r4<substantiv>vilofas:vilofas:vilofas:vilofasen:vilofasens:vilofaser:vilofasers:vilofaserna:vilofasernas
+COMPOUND(620042, 558576): vila + fas
+CUSTOM: y n n
+705002r4<substantiv>vilohem:vilohem:vilohems:vilohemmet:vilohemmets:vilohem:vilohems:vilohemmen:vilohemmens
+COMPOUND(620042, 555169): vila + hem
+620097r3<substantiv>viloläge:viloläge:viloläges:viloläget:vilolägets:vilolägen:vilolägens:vilolägena:vilolägenas
+620105r3<substantiv>vilopaus:vilopaus:vilopaus:vilopausen:vilopausens:vilopauser:vilopausers:vilopauserna:vilopausernas
+637475r4<substantiv>vilopension:vilopension:vilopensions:vilopensionen:vilopensionens:vilopensioner:vilopensioners:vilopensionerna:vilopensionernas
+DEFINITION 1: Vilande förtidspension, gör det möjligt att komma tillbaka till arbetslivet
+550773r3<substantiv>viloplats:viloplats:viloplats:viloplatsen:viloplatsens:viloplatser:viloplatsers:viloplatserna:viloplatsernas
+705008r4<substantiv>vilopunkt:vilopunkt:vilopunkts:vilopunkten:vilopunktens:vilopunkter:vilopunkters:vilopunkterna:vilopunkternas
+COMPOUND(620042, 550299): vila + punkt
+698700r4<substantiv>vilorum:vilorum:vilorums:vilorummet:vilorummets:vilorum:vilorums:vilorummen:vilorummens
+COMPOUND(548038, 571182): vila + rum
+698703r3<substantiv>vilostad:vilostad:vilostads:vilostaden:vilostadens::::
+933468r4<substantiv>vilotid:vilotid:vilotids:vilotiden:vilotidens:vilotider:vilotiders:vilotiderna:vilotidernas
+COMPOUND(620042, 550665): vila + tid
+705016r3<substantiv>viloår:viloår:viloårs:viloåret:viloårets:viloår:viloårs:viloåren:viloårens
+782234r3<egennamn>Wilroth:Wilroth:Wilroths
+841707r3<substantiv>vilrum:vilrum:vilrums:vilrummet:vilrummets:vilrum:vilrums:vilrummen:vilrummens
+563601r4<adjektiv>vilsam:vilsam:vilsamt:vilsamma:vilsamma:vilsammare:vilsammast:vilsammaste:
+620112r3<adverb>vilse:vilse
+620113r4<verb>vilseföra:vilseföra:vilseförde:vilsefört:vilseför:vilseför:vilseföras:vilsefördes:vilseförts:vilseförs, vilseföres:vilseförd:vilsefört:vilseförda:vilseförande:
+800753r3<adjektiv>vilseförd:vilseförd:vilsefört:vilseförda:vilseförda::::
+705022r3<adjektiv>vilsegången:vilsegången:vilsegånget:vilsegångna:vilsegångna:!:!:!:vilsegångne
+620115r4<adjektiv>vilsekommen:vilsekommen:vilsekommet:vilsekomna:vilsekomna::::vilsekomne
+620116r4<verb>vilseleda:vilseleda:vilseledde:vilselett:vilseleder:vilseled:vilseledas:vilseleddes:vilseletts:vilseleds, vilseledes:vilseledd:vilselett:vilseledda::
+620118r3<adjektiv>vilseledande:vilseledande:vilseledande:vilseledande:vilseledande:!:!:!:
+801746r3<adjektiv>vilseledd:vilseledd:vilselett:vilseledda:vilseledda::::
+564498r4<adjektiv>vilsen:vilsen:vilset:vilsna:vilsna:vilsnare:vilsnast:vilsnaste:vilsne
+750313r3<substantiv>vilsenhet:vilsenhet:vilsenhets:vilsenheten:vilsenhetens::::
+815276r3<substantiv>vilsoffa:vilsoffa:vilsoffas:vilsoffan:vilsoffans:vilsoffor:vilsoffors:vilsofforna:vilsoffornas
+599122r3<substantiv>vilstol:vilstol:vilstols:vilstolen:vilstolens:vilstolar:vilstolars:vilstolarna:vilstolarnas
+620119r8<substantiv>vilt:vilt:vilts:viltet:viltets::::
+CUSTOM: y y vilt
+877699r4<substantiv>viltförvaltning:viltförvaltning:viltförvaltnings:viltförvaltningen:viltförvaltningens:viltförvaltningar:viltförvaltningars:viltförvaltningarna:viltförvaltningarnas
+COMPOUND(620119, 596911): vilt + förvaltning
+680136r5<substantiv>viltskav:viltskav:viltskavs:viltskavet:viltskavets::::
+705026r4<substantiv>viltspegel:viltspegel:viltspegels:viltspegeln:viltspegelns:viltspeglar:viltspeglars:viltspeglarna:viltspeglarnas
+COMPOUND(620119, 600419): vilt + spegel
+988993r3<substantiv>viltspårprov:viltspårprov:viltspårprovs:viltspårprovet:viltspårprovets:viltspårprov:viltspårprovs:viltspårproven:viltspårprovens
+705034r4<substantiv>viltstam:viltstam:viltstams:viltstammen:viltstammens:viltstammar:viltstammars:viltstammarna:viltstammarnas
+COMPOUND(620119, 619720): vilt + stam
+705042r3<substantiv>viltstråk:viltstråk:viltstråks:viltstråket:viltstråkets:viltstråk:viltstråks:viltstråken:viltstråkens
+813280r4<substantiv>viltvård:viltvård:viltvårds:viltvården:viltvårdens::::
+CUSTOM: y y viltvårds
+813279r4<substantiv>viltvårdsområde:viltvårdsområde:viltvårdsområdes:viltvårdsområdet:viltvårdsområdets:viltvårdsområden:viltvårdsområdens:viltvårdsområdena:viltvårdsområdenas
+COMPOUND(813280, 612761): viltvård + område
+855024r3<egennamn>Wimbledon:Wimbledon:Wimbledons
+CUSTOM: y n Wimbledon
+686997r3<verb>vimla:vimla:vimlade:vimlat:vimlar:vimla:::::::::
+685129r3<substantiv>vimma:vimma:vimmas:vimman:vimmans:vimmor:vimmors:vimmorna:vimmornas
+CUSTOM: n n y
+556436r17<substantiv>vimmel:vimmel:vimmels:vimlet:vimlets:!:!:!:!
+CUSTOM: y n
+920909r4<substantiv>vimmelbild:vimmelbild:vimmelbilds:vimmelbilden:vimmelbildens:vimmelbilder:vimmelbilders:vimmelbilderna:vimmelbildernas
+COMPOUND(556436, 548373): vimmel + bild
+578276r4<adjektiv>vimmelkantig:vimmelkantig:vimmelkantigt:vimmelkantiga:vimmelkantiga::::vimmelkantige
+554418r4<egennamn>Vimmerby:Vimmerby:Vimmerbys, Vimmerby
+CUSTOM: y n Vimmerby
+635695r3<substantiv>vimpel:vimpel:vimpels:vimpeln:vimpelns:vimplar:vimplars:vimplarna:vimplarnas
+801747r3<adjektiv>vimpelprydd:vimpelprydd:vimpelprytt:vimpelprydda:vimpelprydda::::
+796698r3<adjektiv>vimplad:vimplad:vimplat:vimplade:vimplade:!:!:!:
+705048r3<verb>vimsa:vimsa:vimsade:vimsat:vimsar:vimsa:::::::::
+578277r4<adjektiv>vimsig:vimsig:vimsigt:vimsiga:vimsiga:vimsigare:vimsigast:vimsigaste:vimsige
+815289r3<substantiv>vimsighet:vimsighet:vimsighets:vimsigheten:vimsighetens:vimsigheter:vimsigheters:vimsigheterna:vimsigheternas
+600515r85<substantiv>vin:vin:vins:vinet:vinets:viner:viners:vinerna:vinernas
+CUSTOM: y n vin
+600516r3<verb>vina:vina:ven:vinit:viner:!:!:!:!:!:!:!:!::
+698706r3<substantiv>vinande:vinande:vinandes:vinandet:vinandets::::
+894062r4<substantiv>vinbar:vinbar:vinbars:vinbaren:vinbarens:vinbarer:vinbarers:vinbarerna:vinbarernas
+COMPOUND(600515, 557860): vin + bar
+597908r3<substantiv>vinberedning:vinberedning:vinberednings:vinberedningen:vinberedningens:vinberedningar:vinberedningars:vinberedningarna:vinberedningarnas
+CUSTOM: y y vinberednings
+705052r3<substantiv>vinbergssnäcka:vinbergssnäcka:vinbergssnäckas:vinbergssnäckan:vinbergssnäckans:vinbergssnäckor:vinbergssnäckors:vinbergssnäckorna:vinbergssnäckornas
+705060r4<substantiv>vinbutelj:vinbutelj:vinbuteljs:vinbuteljen:vinbuteljens:vinbuteljer:vinbuteljers:vinbuteljerna:vinbuteljernas
+COMPOUND(600515, 548487): vin + butelj
+853575r3<substantiv>vinbål:vinbål:vinbåls:vinbålen:vinbålens::::
+608438r5<substantiv>vinbär:vinbär:vinbärs:vinbäret:vinbärets:vinbär:vinbärs:vinbären:vinbärens
+CUSTOM: y y vinbärs
+705068r4<substantiv>vinbärsbuske:vinbärsbuske:vinbärsbuskes:vinbärsbusken:vinbärsbuskens:vinbärsbuskar:vinbärsbuskars:vinbärsbuskarna:vinbärsbuskarnas
+COMPOUND(608438, 599790): vinbär + buske
+796699r3<adjektiv>vinbärsfärgad:vinbärsfärgad:vinbärsfärgat:vinbärsfärgade:vinbärsfärgade:!:!:!:
+900161r4<substantiv>vinbärston:vinbärston:vinbärstons:vinbärstonen:vinbärstonens:vinbärstoner:vinbärstoners:vinbärstonerna:vinbärstonernas
+COMPOUND(608438, 603900): vinbär + ton
+553345r3<egennamn>Winchester:Winchester:Winchesters
+CUSTOM: y n Winchester
+563316r3<adjektiv>vind:vind:vint:vinda:vinda::::
+552095r18<substantiv>vind:vind:vinds:vinden:vindens:vindar:vindars:vindarna:vindarnas
+CUSTOM: y y vinds vind
+853579r3<verb>vinda:vinda:vindade:vindat:vindar:vinda:vindas:vindades:vindats:vindas::::vindande:
+698708r4<substantiv>vinda:vinda:vindas:vindan:vindans:vindor:vindors:vindorna:vindornas
+705076r4<substantiv>vindby:vindby:vindbys:vindbyn:vindbyns:vindbyar:vindbyars:vindbyarna:vindbyarnas
+COMPOUND(552095, 557655): vind + by
+841717r3<substantiv>vindböjtel:vindböjtel:vindböjtels:vindböjteln:vindböjtelns:vindböjtlar:vindböjtlars:vindböjtlarna:vindböjtlarnas
+705084r3<substantiv>vinddrag:vinddrag:vinddrags:vinddraget:vinddragets::::
+698709r3<substantiv>vindel:vindel:vindels:vindeln:vindelns:vindlar:vindlars:vindlarna:vindlarnas
+761694r3<substantiv>vindeltrappa:vindeltrappa:vindeltrappas:vindeltrappan:vindeltrappans:vindeltrappor:vindeltrappors:vindeltrapporna:vindeltrappornas
+988999r3<substantiv>vindeväxt:vindeväxt:vindeväxts:vindeväxten:vindeväxtens:vindeväxter:vindeväxters:vindeväxterna:vindeväxternas
+796702r3<adjektiv>vindexponerad:vindexponerad:vindexponerat:vindexponerade:vindexponerade:!:!:!:
+556491r3<substantiv>vindflöjel:vindflöjel:vindflöjels:vindflöjeln:vindflöjelns:vindflöjlar:vindflöjlars:vindflöjlarna:vindflöjlarnas
+800754r3<adjektiv>vindfälld:vindfälld:vindfällt:vindfällda:vindfällda::::
+965321r4<substantiv>vindfälle:vindfälle:vindfälles:vindfället:vindfällets:vindfällen:vindfällens:vindfällena:vindfällenas
+COMPOUND(552095, 895259): vind + fälle
+626906r3<substantiv>vindharpa:vindharpa:vindharpas:vindharpan:vindharpans:vindharpor:vindharpors:vindharporna:vindharpornas
+819277r3<substantiv>vindhet:vindhet:vindhets:vindheten:vindhetens::::
+591535r3<verb>vindicera:vindicera:vindicerade:vindicerat:vindicerar:vindicera:::::::::
+705088r4<substantiv>vindil:vindil:vindils:vindilen:vindilens:vindilar:vindilars:vindilarna:vindilarnas
+COMPOUND(552095, 557672): vind + il
+761702r3<substantiv>vindkantring:vindkantring:vindkantrings:vindkantringen:vindkantringens:vindkantringar:vindkantringars:vindkantringarna:vindkantringarnas
+705096r8<substantiv>vindkraft:vindkraft:vindkrafts:vindkraften:vindkraftens::::
+CUSTOM: y y vindkraft vindkrafts
+920919r4<substantiv>vindkraftpark:vindkraftpark:vindkraftparks:vindkraftparken:vindkraftparkens:vindkraftparker:vindkraftparkers:vindkraftparkerna:vindkraftparkernas
+COMPOUND(705096, 550162): vindkraft + park
+734681r4<substantiv>vindkraftsbolag:vindkraftsbolag:vindkraftsbolags:vindkraftsbolaget:vindkraftsbolagets:vindkraftsbolag:vindkraftsbolags:vindkraftsbolagen:vindkraftsbolagens
+COMPOUND(705096, 552264): vindkraft + bolag
+878494r4<substantiv>vindkraftsel:vindkraftsel:vindkraftsels:vindkraftselen:vindkraftselens:!:!:!:!
+COMPOUND(705096, 557664): vindkraft + el
+734699r4<substantiv>vindkraftssatsning:vindkraftssatsning:vindkraftssatsnings:vindkraftssatsningen:vindkraftssatsningens:vindkraftssatsningar:vindkraftssatsningars:vindkraftssatsningarna:vindkraftssatsningarnas
+COMPOUND(705096, 664580): vindkraft + satsning
+734741r4<substantiv>vindkraftsutbyggnad:vindkraftsutbyggnad:vindkraftsutbyggnads:vindkraftsutbyggnaden:vindkraftsutbyggnadens:vindkraftsutbyggnader:vindkraftsutbyggnaders:vindkraftsutbyggnaderna:vindkraftsutbyggnadernas
+COMPOUND(705096, 645163): vindkraft + utbyggnad
+705101r3<substantiv>vindkraftverk:vindkraftverk:vindkraftverks:vindkraftverket:vindkraftverkets:vindkraftverk:vindkraftverks:vindkraftverken:vindkraftverkens
+945688r4<substantiv>vindkåre:vindkåre:vindkåres:vindkåren:vindkårens:vindkårar:vindkårars:vindkårarna:vindkårarnas
+COMPOUND(552095, 559878): vind + kåre
+568465r3<adjektiv>vindkänslig:vindkänslig:vindkänsligt:vindkänsliga:vindkänsliga::::
+750317r5<verb>vindla:vindla:vindlade:vindlat:vindlar:vindla:vindlas:vindlades:vindlats:vindlas:vindlad:vindlat:vindlade:vindlande:
+750321r3<substantiv>vindling:vindling:vindlings:vindlingen:vindlingens:vindlingar:vindlingars:vindlingarna:vindlingarnas
+565464r3<adjektiv>vindlös:vindlös:vindlöst:vindlösa:vindlösa::::
+815300r3<substantiv>vindning:vindning:vindnings:vindningen:vindningens::::
+703552r3<egennamn>Windows:Windows:Windows
+CUSTOM: y n Windows
+705108r3<adjektiv>vindpinad:vindpinad:vindpinat:vindpinade:vindpinade:!:!:!:
+796705r3<adjektiv>vindpiskad:vindpiskad:vindpiskat:vindpiskade:vindpiskade:!:!:!:
+796708r3<ad

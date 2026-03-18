@@ -319,13 +319,13 @@
   },
   {
     "Word": "NO",
-    "Clue": "Väderstreck",
+    "Clue": "Väderstreck eller japanskt maskspel",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
   {
     "Word": "NV",
-    "Clue": "Väderstreck",
+    "Clue": "Väderstreck eller Nevada",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -337,7 +337,7 @@
   },
   {
     "Word": "SV",
-    "Clue": "Väderstreck",
+    "Clue": "Väderstreck eller SI-enhet för ekvivalent dos",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -421,7 +421,7 @@
   },
   {
     "Word": "NE",
-    "Clue": "Ädelgas",
+    "Clue": "Ädelgas eller uppslagsverk",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -457,7 +457,7 @@
   },
   {
     "Word": "AR",
-    "Clue": "Ädelgas",
+    "Clue": "Ädelgas eller ytmått",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -481,7 +481,7 @@
   },
   {
     "Word": "KR",
-    "Clue": "Ädelgas",
+    "Clue": "Ädelgas eller valuta",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -596,6 +596,612 @@
   {
     "Word": "VPN",
     "Clue": "Krypterad nätverksanslutning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AH",
+    "Clue": "Utrop i Utah",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BU",
+    "Clue": "Spökljud",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DI",
+    "Clue": "Dagens Industri",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GO",
+    "Clue": "Flera tusen år gammalt brädspel från Asien",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HM",
+    "Clue": "Hennes & Mauritz",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HY",
+    "Clue": "Ansiktshud",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TÖ",
+    "Clue": "Torkat gräs",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ID",
+    "Clue": "Fisk eller legitimation",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "LO",
+    "Clue": "Göpa",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GÖPA",
+    "Clue": "Lo",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "OR",
+    "Clue": "Ostkryp",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BARNBÖRD",
+    "Clue": "BB",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BANKGIRO",
+    "Clue": "BG",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BYSTHÅLLARE",
+    "Clue": "Bh",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BOTTENVÅNING",
+    "Clue": "Bv",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "INTENSIVVÅRDSAVDELNING",
+    "Clue": "IVA",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ÖLSORT",
+    "Clue": "IPA",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MATSKED",
+    "Clue": "Msk",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PLUSGIRO",
+    "Clue": "PG",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "RADIOSTYRD",
+    "Clue": "RC",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TESKED",
+    "Clue": "Tsk",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KRYDDMÅTT",
+    "Clue": "Krm",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AKTIEBOLAG",
+    "Clue": "AB",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SVALKAR",
+    "Clue": "AC",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "LIKSTRÖM",
+    "Clue": "DC",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "STRECKKOD",
+    "Clue": "Ean",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VÄDERSTRECK",
+    "Clue": "Kompassriktning",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GRISMAMMA",
+    "Clue": "So",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "EUROPAMÄSTERSKAP",
+    "Clue": "EM",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KAMPSPORT",
+    "Clue": "MMA",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VÄRLDSMÄSTERSKAP",
+    "Clue": "VM",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SUBSTANSMÄNGD",
+    "Clue": "Mol",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ENERGIENHET",
+    "Clue": "Joule",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HELIUM",
+    "Clue": "He",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "LITIUM",
+    "Clue": "Li",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BERYLLIUM",
+    "Clue": "Be",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NATRIUM",
+    "Clue": "Na",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MAGNESIUM",
+    "Clue": "Mg",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ALUMINIUM",
+    "Clue": "Al",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KISEL",
+    "Clue": "Si",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KLOR",
+    "Clue": "Cl",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "TITAN",
+    "Clue": "Ti",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KOPPAR",
+    "Clue": "Cu",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "NIOB",
+    "Clue": "Nb",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SILVER",
+    "Clue": "Ag",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "XENON",
+    "Clue": "Xe",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PLATINA",
+    "Clue": "Pt",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GULD",
+    "Clue": "Au",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KVICKSILVER",
+    "Clue": "Hg",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BLY",
+    "Clue": "Pb",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "RADON",
+    "Clue": "Rn",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DECIMETER",
+    "Clue": "dm",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "KILOMETER",
+    "Clue": "km",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DECILITER",
+    "Clue": "dl",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MILLILITER",
+    "Clue": "ml",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DATASKYDDSFÖRORDNINGEN",
+    "Clue": "GDPR",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "WEBBADRESS",
+    "Clue": "Url",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "SPÖKLJUD",
+    "Clue": "Bu",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ANSIKTSHUD",
+    "Clue": "Hy",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "OSTKRYP",
+    "Clue": "Or",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ÖÖ",
+    "Clue": "Estnisk natt",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AF",
+    "Clue": "Har borg i Lund",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "JF",
+    "Clue": "Juridiska föreningen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "YA",
+    "Clue": "Ystads Allehanda",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "DZ",
+    "Clue": "Landskod för Algeriet",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AM",
+    "Clue": "Ante meridiem",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AZ",
+    "Clue": "Arizona",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BS",
+    "Clue": "Landskod för Bahamas",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BD",
+    "Clue": "Landskod för Bangladesh",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BZ",
+    "Clue": "Landskod för Belize",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BT",
+    "Clue": "Skandalföretag med kemi i Teckomatorp",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ZW",
+    "Clue": "Landskod för Zimbabwe",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ZM",
+    "Clue": "Landskod för Zambia",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "UZ",
+    "Clue": "Landskod för Uzbekistan",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ZEBRA",
+    "Clue": "Randigt hästdjur",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ZOMBIE",
+    "Clue": "Död som väckts till liv",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "XS",
+    "Clue": "Liten storlek",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "GT",
+    "Clue": "Drink eller sportig bilterm",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ÖG",
+    "Clue": "Östgöta nation",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BQ",
+    "Clue": "Becquerel",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "PZ",
+    "Clue": "Pozidriv (typ av krysskruv)",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MX",
+    "Clue": "Landskod för Mexiko",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "FI",
+    "Clue": "Finansinspektionen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VW",
+    "Clue": "Volkswagen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "II",
+    "Clue": "Två i rom",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "MR",
+    "Clue": "Undersökning med magnetkamera",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "HC",
+    "Clue": "Skrivande Andersen",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ARIZONA",
+    "Clue": "AZ",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "BECQUEREL",
+    "Clue": "Bq",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VOLKSWAGEN",
+    "Clue": "VW",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "VI",
+    "Clue": "Sexa i rom",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AK",
+    "Clue": "Automatkarbin",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AP",
+    "Clue": "Allmänna pensionsfonder",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AN",
+    "Clue": "Mitt i Gdansk",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AO",
+    "Clue": "Mitt i boaorm",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AE",
+    "Clue": "Avslutar reggae",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AQ",
+    "Clue": "Anger att ett ämne är löst i vatten (inom kemin)",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AT",
+    "Clue": "Astat",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "ASTAT",
+    "Clue": "At",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AW",
+    "Clue": "Afterwork",
+    "Category": "Substantiv",
+    "Difficulty": "Easy"
+  },
+  {
+    "Word": "AY",
+    "Clue": "Dubbelt i mayday",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   }

@@ -1,0 +1,582 @@
+borrningarnas
+COMPOUND(626925, 550930): kanon + borrning
+898295r3<adverb>kanonbra:kanonbra
+844369r3<substantiv>kanonbåtsdiplomati:kanonbåtsdiplomati:kanonbåtsdiplomatis:kanonbåtsdiplomatin:kanonbåtsdiplomatins::::
+651962r3<substantiv>kanonföda:kanonföda:kanonfödas:kanonfödan:kanonfödans:!:!:!:!
+799704r3<adjektiv>kanonhård:kanonhård:kanonhårt:kanonhårda:kanonhårda::::
+825616r3<substantiv>kanonisation:kanonisation:kanonisations:kanonisationen:kanonisationens:kanonisationer:kanonisationers:kanonisationerna:kanonisationernas
+587005r4<verb>kanonisera:kanonisera:kanoniserade:kanoniserat:kanoniserar:kanonisera:kanoniseras:kanoniserades:kanoniserats:kanoniseras:kanoniserad:kanoniserat:kanoniserade:kanoniserande:
+825629r4<substantiv>kanonisering:kanonisering:kanoniserings:kanoniseringen:kanoniseringens:kanoniseringar:kanoniseringars:kanoniseringarna:kanoniseringarnas
+CUSTOM: y y kanoniserings
+825637r3<substantiv>kanoniseringsbulla::::::::
+COMPOUND(825629, 624226): kanonisering + bulla
+581163r3<adjektiv>kanonisk:kanonisk:kanoniskt:kanoniska:kanoniska::::
+844373r3<substantiv>kanonjär:kanonjär:kanonjärs:kanonjären:kanonjärens:kanonjärer:kanonjärers:kanonjärerna:kanonjärernas
+651966r4<substantiv>kanonkula:kanonkula:kanonkulas:kanonkulan:kanonkulans:kanonkulor:kanonkulors:kanonkulorna:kanonkulornas
+COMPOUND(626925, 559858): kanon + kula
+651974r4<substantiv>kanonmat:kanonmat:kanonmats:kanonmaten:kanonmatens:!:!:!:!
+966991r4<substantiv>kanonpråm:kanonpråm:kanonpråms:kanonpråmen:kanonpråmens:kanonpråmar:kanonpråmars:kanonpråmarna:kanonpråmarnas
+COMPOUND(626925, 624633): kanon + pråm
+944790r4<substantiv>kanonslup:kanonslup:kanonslups:kanonslupen:kanonslupens:kanonslupar:kanonslupars:kanonsluparna:kanonsluparnas
+COMPOUND(626925, 551873): kanon + slup
+722964r4<substantiv>kanontorn:kanontorn:kanontorns:kanontornet:kanontornets:kanontorn:kanontorns:kanontornen:kanontornens
+COMPOUND(626925, 553055): kanon + torn
+649179r7<substantiv>kanot:kanot:kanots:kanoten:kanotens:kanoter:kanoters:kanoterna:kanoternas
+CUSTOM: y y kanot
+869598r3<verb>kanota:kanota:kanotade:kanotat:kanotar:kanota::::::::kanotande:
+744548r4<substantiv>kanotfärd:kanotfärd:kanotfärds:kanotfärden:kanotfärdens:kanotfärder:kanotfärders:kanotfärderna:kanotfärdernas
+COMPOUND(649179, 562205): kanot + färd
+944800r4<substantiv>kanothajk:kanothajk:kanothajks:kanothajken:kanothajkens:kanothajker:kanothajkers:kanothajkerna:kanothajkernas
+COMPOUND(649179, 927767): kanot + hajk
+744549r3<substantiv>kanotist:kanotist:kanotists:kanotisten:kanotistens:kanotister:kanotisters:kanotisterna:kanotisternas
+825638r4<substantiv>kanotled:kanotled:kanotleds:kanotleden:kanotledens:kanotleder:kanotleders:kanotlederna:kanotledernas
+COMPOUND(649179, 556257): kanot + led
+944810r4<substantiv>kanotpolo:kanotpolo:kanotpolos:kanotpolon:kanotpolons::::
+COMPOUND(649179, 631509): kanot + polo
+862284r3<egennamn>Kansas:Kansas:Kansas
+CUSTOM: y n Kansas
+618548r3<adverb>kanske:kanske
+651978r3<substantiv>kansler:kansler:kanslers:kanslern:kanslerns:kanslerer:kanslerers:kanslererna:kanslerernas
+629394r18<substantiv>kansli:kansli:kanslis:kansliet:kansliets:kanslier:kansliers:kanslierna:kansliernas
+CUSTOM: y y kansli
+722984r4<substantiv>kanslihus:kanslihus:kanslihus:kanslihuset:kanslihusets:kanslihus:kanslihus:kanslihusen:kanslihusens
+COMPOUND(629394, 552480): kansli + hus
+898297r4<substantiv>kansliort:kansliort:kansliorts:kansliorten:kansliortens:kansliorter:kansliorters:kansliorterna:kansliorternas
+COMPOUND(629394, 550141): kansli + ort
+722989r4<substantiv>kansliråd:kansliråd:kansliråds:kanslirådet:kanslirådets:kansliråd:kansliråds:kansliråden:kanslirådens
+COMPOUND(629394, 552853): kansli + råd
+722995r4<substantiv>kanslisekreterare:kanslisekreterare:kanslisekreterares:kanslisekreteraren:kanslisekreterarens:kanslisekreterare:kanslisekreterares:kanslisekreterarna:kanslisekreterarnas
+COMPOUND(629394, 615435): kansli + sekreterare
+722978r4<substantiv>kanslispråk:kanslispråk:kanslispråks:kanslispråket:kanslispråkets:kanslispråk:kanslispråks:kanslispråken:kanslispråkens
+COMPOUND(629394, 552959): kansli + språk
+566398r3<adjektiv>kanslispråklig:kanslispråklig:kanslispråkligt:kanslispråkliga:kanslispråkliga::::
+651983r3<substantiv>kanslist:kanslist:kanslists:kanslisten:kanslistens:kanslister:kanslisters:kanslisterna:kanslisternas
+CUSTOM: y y kanslist
+722970r3<substantiv>kanslistil:kanslistil:kanslistils:kanslistilen:kanslistilens:kanslistiler:kanslistilers:kanslistilerna:kanslistilernas
+721650r4<substantiv>kanslisvenska:kanslisvenska:kanslisvenskas:kanslisvenskan:kanslisvenskans:!:!:!:!
+COMPOUND(629394, 658756): kansli + svenska
+549431r20<substantiv>kant:kant:kants:kanten:kantens:kanter:kanters:kanterna:kanternas
+CUSTOM: y y kant
+651992r4<verb>kanta:kanta:kantade:kantat:kantar:kanta:kantas:kantades:kantats:kantas:kantad:kantat:kantade:kantande:
+570784r3<adjektiv>kantabel:kantabel:kantabelt:kantabla:kantabla::::
+549433r3<substantiv>kantarell:kantarell:kantarells:kantarellen:kantarellens:kantareller:kantarellers:kantarellerna:kantarellernas
+CUSTOM: y y kantarell
+626923r3<substantiv>kantat:kantat:kantats:kantaten:kantatens:kantater:kantaters:kantaterna:kantaternas
+724878r4<substantiv>kantband:kantband:kantbands:kantbandet:kantbandets:kantband:kantbands:kantbanden:kantbandens
+COMPOUND(549431, 552220): kant + band
+951799r4<substantiv>kantbård:kantbård:kantbårds:kantbården:kantbårdens:kantbårder:kantbårders:kantbårderna:kantbårdernas
+COMPOUND(549431, 548505): kant + bård
+626870r5<substantiv>kantele:kantele:kanteles:kantelen:kantelens:kanteler:kantelers:kantelerna:kantelernas
+DEFINITION 1: finskt stränginstrument (folkmusik)
+573588r5<adjektiv>kantig:kantig:kantigt:kantiga:kantiga:kantigare:kantigast:kantigaste:kantige
+744557r4<substantiv>kantighet:kantighet:kantighets:kantigheten:kantighetens:kantigheter:kantigheters:kantigheterna:kantigheternas
+549441r3<substantiv>kantin:kantin:kantins:kantinen:kantinens:kantiner:kantiners:kantinerna:kantinernas
+CUSTOM: y n
+589770r3<verb>kantjustera:kantjustera:kantjusterade:kantjusterat:kantjusterar:kantjustera:::::::::
+CUSTOM: y n n
+850634r3<substantiv>kantnål:kantnål:kantnåls:kantnålen:kantnålens:kantnålar:kantnålars:kantnålarna:kantnålarnas
+846139r3<adjektiv>kantnött:kantnött:kantnött:kantnötta:kantnötta::::
+651993r3<substantiv>kanton:kanton:kantons:kantonen:kantonens:kantoner:kantoners:kantonerna:kantonernas
+651995r3<substantiv>kantor:kantor:kantors:kantorn:kantorns:kantorer:kantorers:kantorerna:kantorernas
+CUSTOM: y y kantors
+652002r4<verb>kantra:kantra:kantrade:kantrat:kantrar:kantra:!:!:!:!:kantrad:kantrat:kantrade:kantrande:
+825651r4<substantiv>kantring:kantring:kantrings:kantringen:kantringens:kantringar:kantringars:kantringarna:kantringarnas
+CUSTOM: y y kantrings
+825659r3<substantiv>kantringsolycka::::::::
+COMPOUND(825651, 560318): kantring + olycka
+723001r4<substantiv>kantsten:kantsten:kantstens:kantstenen:kantstenens:kantstenar:kantstenars:kantstenarna:kantstenarnas
+COMPOUND(549431, 551935): kant + sten
+799707r3<adjektiv>kantställd:kantställd:kantställt:kantställda:kantställda::::
+652000r3<adjektiv>kantstött:kantstött:kantstött:kantstötta:kantstötta:!:!:!:
+850642r3<substantiv>kantsåg:kantsåg:kantsågs:kantsågen:kantsågens:kantsågar:kantsågars:kantsågarna:kantsågarnas
+723010r4<substantiv>kantsöm:kantsöm:kantsöms:kantsömmen:kantsömmens:kantsömmar:kantsömmars:kantsömmarna:kantsömmarnas
+COMPOUND(549431, 627861): kant + söm
+723020r4<substantiv>kantväxt:kantväxt:kantväxts:kantväxten:kantväxtens:kantväxter:kantväxters:kantväxterna:kantväxternas
+COMPOUND(549431, 585876): kant + växt
+620616r3<adverb>kantänka:kantänka
+723028r9<substantiv>kanvas:kanvas:kanvas:kanvasen:kanvasens::::
+CUSTOM: y n
+723036r4<substantiv>kanvasband:kanvasband:kanvasbands:kanvasbandet:kanvasbandets:kanvasband:kanvasbands:kanvasbanden:kanvasbandens
+COMPOUND(723028, 552220): kanvas + band
+723044r4<substantiv>kanvasduk:kanvasduk:kanvasduks:kanvasduken:kanvasdukens:kanvasdukar:kanvasdukars:kanvasdukarna:kanvasdukarnas
+COMPOUND(723028, 551077): kanvas + duk
+549449r3<substantiv>kanyl:kanyl:kanyls:kanylen:kanylens:kanyler:kanylers:kanylerna:kanylernas
+CUSTOM: y y kanyl
+961844r3<substantiv>kaolin:kaolin:kaolins:kaolinet:kaolinets::::
+981385r3<substantiv>kaolinit:kaolinit:kaolinits:kaoliniten:kaolinitens::::
+CUSTOM: y n
+624486r4<substantiv>kaos:kaos:kaos:kaoset:kaosets::::
+701964r3<adjektiv>kaosartad:kaosartad:kaosartat:kaosartade:kaosartade:!:!:!:
+581164r4<adjektiv>kaotisk:kaotisk:kaotiskt:kaotiska:kaotiska::::kaotiske
+552541r3<substantiv>kap:kap:kaps:kapet:kapets:kap:kaps:kapen:kapens
+547075r5<verb>kapa:kapa:kapade:kapat:kapar:kapa:kapas:kapades:kapats:kapas:kapad:kapat:kapade:kapande:
+570787r4<adjektiv>kapabel:kapabel:kapabelt:kapabla:kapabla:kapablare:kapablast:kapablaste:kapable
+652007r3<substantiv>kapacitans:kapacitans:kapacitans:kapacitansen:kapacitansens:kapacitanser:kapacitansers:kapacitanserna:kapacitansernas
+573589r3<adjektiv>kapacitansfattig:kapacitansfattig:kapacitansfattigt:kapacitansfattiga:kapacitansfattiga::::
+563889r3<adjektiv>kapacitansfri:kapacitansfri:kapacitansfritt:kapacitansfria:kapacitansfria::::
+549450r14<substantiv>kapacitet:kapacitet:kapacitets:kapaciteten:kapacitetens:kapaciteter:kapaciteters:kapaciteterna:kapaciteternas
+CUSTOM: y y kapacitets +kapacitets
+744561r4<substantiv>kapacitetstak:kapacitetstak:kapacitetstaks:kapacitetstaket:kapacitetstakets:kapacitetstak:kapacitetstaks:kapacitetstaken:kapacitetstakens
+COMPOUND(549450, 553027): kapacitet + tak
+757680r4<substantiv>kapacitetsutnyttjande:kapacitetsutnyttjande:kapacitetsutnyttjandes:kapacitetsutnyttjandet:kapacitetsutnyttjandets::::
+COMPOUND(549450, 645352): kapacitet + utnyttjande
+798130r3<adjektiv>kapacitiv:kapacitiv:kapacitivt:kapacitiva:kapacitiva::::
+615329r3<substantiv>kapare:kapare:kapares:kaparen:kaparens:kapare:kapares:kaparna:kaparnas
+CUSTOM: y y kapar
+640563r3<substantiv>kapbänk:kapbänk:kapbänks:kapbänken:kapbänkens:kapbänkar:kapbänkars:kapbänkarna:kapbänkarnas
+CUSTOM: y n n
+723053r3<substantiv>kapduva:kapduva:kapduvas:kapduvan:kapduvans:kapduvor:kapduvors:kapduvorna:kapduvornas
+607468r3<substantiv>kapell:kapell:kapells:kapellet:kapellets:kapell:kapells:kapellen:kapellens
+589774r3<verb>kapellera:kapellera:kapellerade:kapellerat:kapellerar:kapellera:::::::::
+981389r3<substantiv>kapellist:kapellist:kapellists:kapellisten:kapellistens:kapellister:kapellisters:kapellisterna:kapellisternas
+981397r3<substantiv>kapellkrans:kapellkrans:kapellkrans:kapellkransen:kapellkransens:kapellkransar:kapellkransars:kapellkransarna:kapellkransarnas
+609723r3<substantiv>kapellmästare:kapellmästare:kapellmästares:kapellmästaren:kapellmästarens:kapellmästare:kapellmästares:kapellmästarna:kapellmästarnas
+CUSTOM: y y kapellmästar
+898307r3<egennamn>Kapellskär:Kapellskär:Kapellskärs
+609729r3<substantiv>kapellsträckare:kapellsträckare:kapellsträckares:kapellsträckaren:kapellsträckarens:kapellsträckare:kapellsträckares:kapellsträckarna:kapellsträckarnas
+CUSTOM: y y kapellsträckar
+723061r7<substantiv>kaperi:kaperi:kaperis:kaperiet:kaperiets:kaperier:kaperiers:kaperierna:kaperiernas
+722946r4<substantiv>kapfår:kapfår:kapfårs:kapfåret:kapfårets:kapfår:kapfårs:kapfåren:kapfårens
+DEFINITION 1: En albatrossort
+581165r3<adjektiv>kapillarisk:kapillarisk:kapillariskt:kapillariska:kapillariska::::
+722927r3<substantiv>kapillaritet:kapillaritet:kapillaritets:kapillariteten:kapillaritetens::::
+722919r6<substantiv>kapillär:kapillär:kapillärs:kapillären:kapillärens:kapillärer:kapillärers:kapillärerna:kapillärernas
+CUSTOM: y y kapillär
+825660r3<adjektiv>kapillär:kapillär:kapillärt:kapillära:kapillära:!:!:!:
+722931r4<substantiv>kapillärkraft:kapillärkraft:kapillärkrafts:kapillärkraften:kapillärkraftens:kapillärkrafter:kapillärkrafters:kapillärkrafterna:kapillärkrafternas
+COMPOUND(722919, 549757): kapillär + kraft
+722939r4<substantiv>kapillärrör:kapillärrör:kapillärrörs:kapillärröret:kapillärrörets:kapillärrör:kapillärrörs:kapillärrören:kapillärrörens
+COMPOUND(722919, 552860): kapillär + rör
+652015r5<adjektiv>kapital:kapital:kapitalt:kapitala:kapitala:!:!:!:!::::::::
+552543r9<substantiv>kapital:kapital:kapitals:kapitalet:kapitalets:kapital:kapitals:kapitalen:kapitalens
+CUSTOM: y y kapital +kapital
+801046r3<adjektiv>kapitalexporterande:kapitalexporterande:kapitalexporterande:kapitalexporterande:kapitalexporterande:!:!:!:
+573592r3<adjektiv>kapitalfattig:kapitalfattig:kapitalfattigt:kapitalfattiga:kapitalfattiga::::
+597084r3<substantiv>kapitalhöjning:kapitalhöjning:kapitalhöjnings:kapitalhöjningen:kapitalhöjningens:kapitalhöjningar:kapitalhöjningars:kapitalhöjningarna:kapitalhöjningarnas
+CUSTOM: y y kapitalhöjnings
+761092r5<substantiv>kapitalinkomst:kapitalinkomst:kapitalinkomsts:kapitalinkomsten:kapitalinkomstens:kapitalinkomster:kapitalinkomsters:kapitalinkomsterna:kapitalinkomsternas
+COMPOUND(552543, 549333): kapital + inkomst
+CUSTOM: y y kapitalinkomst
+761101r3<substantiv>kapitalinkomstbeskattning::::::::
+COMPOUND(761092, 592550): kapitalinkomst + beskattning
+602403r3<substantiv>kapitalinsats:kapitalinsats:kapitalinsats:kapitalinsatsen:kapitalinsatsens:kapitalinsatser:kapitalinsatsers:kapitalinsatserna:kapitalinsatsernas
+CUSTOM: y y kapitalinsats
+798133r3<adjektiv>kapitalintensiv:kapitalintensiv:kapitalintensivt:kapitalintensiva:kapitalintensiva::::
+587009r5<verb>kapitalisera:kapitalisera:kapitaliserade:kapitaliserat:kapitaliserar:kapitalisera:kapitaliseras:kapitaliserades:kapitaliserats:kapitaliseras:kapitaliserad:kapitaliserat:kapitaliserade:kapitaliserande:
+825676r4<substantiv>kapitalisering:kapitalisering:kapitaliserings:kapitaliseringen:kapitaliseringens::::
+CUSTOM: y y kapitaliserings
+825680r3<substantiv>kapitaliseringsfaktor::::::::
+COMPOUND(825676, 639232): kapitalisering + faktor
+558122r3<substantiv>kapitalism:kapitalism:kapitalisms:kapitalismen:kapitalismens:!:!:!:!
+652014r3<substantiv>kapitalist:kapitalist:kapitalists:kapitalisten:kapitalistens:kapitalister:kapitalisters:kapitalisterna:kapitalisternas
+CUSTOM: y y kapitalist
+581168r4<adjektiv>kapitalistisk:kapitalistisk:kapitalistiskt:kapitalistiska:kapitalistiska::::kapitalistiske
+573595r3<adjektiv>kapitalkraftig:kapitalkraftig:kapitalkraftigt:kapitalkraftiga:kapitalkraftiga::::
+602410r3<substantiv>kapitalmarknad:kapitalmarknad:kapitalmarknads:kapitalmarknaden:kapitalmarknadens:kapitalmarknader:kapitalmarknaders:kapitalmarknaderna:kapitalmarknadernas
+CUSTOM: y y kapitalmarknads
+609735r3<substantiv>kapitalplacerare:kapitalplacerare:kapitalplacerares:kapitalplaceraren:kapitalplacerarens:kapitalplacerare:kapitalplacerares:kapitalplacerarna:kapitalplacerarnas
+CUSTOM: y y kapitalplacerar
+597092r3<substantiv>kapitalplacering:kapitalplacering:kapitalplacerings:kapitalplaceringen:kapitalplaceringens:kapitalplaceringar:kapitalplaceringars:kapitalplaceringarna:kapitalplaceringarnas
+CUSTOM: y y kapitalplacerings
+597100r3<substantiv>kapitalräkning:kapitalräkning:kapitalräknings:kapitalräkningen:kapitalräkningens:kapitalräkningar:kapitalräkningars:kapitalräkningarna:kapitalräkningarnas
+CUSTOM: y y kapitalräknings
+846141r4<adjektiv>kapitalsvag:kapitalsvag:kapitalsvagt:kapitalsvaga:kapitalsvaga:kapitalsvagare:kapitalsvagast:kapitalsvagaste:kapitalsvage
+COMPOUND(552543, 563134): kapital + svag
+701969r5<substantiv>kapitalutveckling:kapitalutveckling:kapitalutvecklings:kapitalutvecklingen:kapitalutvecklingens::::
+COMPOUND(552543, 637669): kapital + utveckling
+CUSTOM: y n
+701975r4<substantiv>kapitalutvecklingsfond:kapitalutvecklingsfond:kapitalutvecklingsfonds:kapitalutvecklingsfonden:kapitalutvecklingsfondens:kapitalutvecklingsfonder:kapitalutvecklingsfonders:kapitalutvecklingsfonderna:kapitalutvecklingsfondernas
+COMPOUND(701969, 548939): kapitalutveckling + fond
+CUSTOM: y n
+652016r4<substantiv>kapitalvara:kapitalvara:kapitalvaras:kapitalvaran:kapitalvarans:kapitalvaror:kapitalvarors:kapitalvarorna:kapitalvarornas
+COMPOUND(552543, 562107): kapital + vara
+898924r7<substantiv>kapitalvinst:kapitalvinst:kapitalvinsts:kapitalvinsten:kapitalvinstens:kapitalvinster:kapitalvinsters:kapitalvinsterna:kapitalvinsternas
+COMPOUND(552543, 550774): kapital + vinst
+CUSTOM: y y kapitalvinst
+786746r4<substantiv>kapitalvinstskatt:kapitalvinstskatt:kapitalvinstskatts:kapitalvinstskatten:kapitalvinstskattens:kapitalvinstskatter:kapitalvinstskatters:kapitalvinstskatterna:kapitalvinstskatternas
+COMPOUND(898924, 550507): kapitalvinst + skatt
+618549r6<substantiv>kapitel:kapitel:kapitels:kapitlet:kapitlets:kapitel:kapitels:kapitlen:kapitlens
+CUSTOM: y y kapitel
+825690r4<substantiv>kapitelindelning:kapitelindelning:kapitelindelnings:kapitelindelningen:kapitelindelningens:kapitelindelningar:kapitelindelningars:kapitelindelningarna:kapitelindelningarnas
+COMPOUND(618549, 645769): kapitel + indelning
+618550r4<substantiv>kapitelrubrik:kapitelrubrik:kapitelrubriks:kapitelrubriken:kapitelrubrikens:kapitelrubriker:kapitelrubrikers:kapitelrubrikerna:kapitelrubrikernas
+COMPOUND(618549, 550404): kapitel + rubrik
+825682r3<substantiv>kapitelsal:kapitelsal:kapitelsals:kapitelsalen:kapitelsalens:kapitelsalar:kapitelsalars:kapitelsalarna:kapitelsalarnas
+620618r3<adverb>kapitelvis:kapitelvis
+618558r3<substantiv>kapitulation:kapitulation:kapitulations:kapitulationen:kapitulationens:kapitulationer:kapitulationers:kapitulationerna:kapitulationernas
+CUSTOM: y y kapitulations
+547076r5<verb>kapitulera:kapitulera:kapitulerade:kapitulerat:kapitulerar:kapitulera:kapituleras:kapitulerades:kapitulerats:kapituleras:kapitulerad:kapitulerat:kapitulerade:kapitulerande:
+825698r3<substantiv>kapitulering:kapitulering:kapitulerings:kapituleringen:kapituleringens:kapituleringar:kapituleringars:kapituleringarna:kapituleringarnas
+618559r3<substantiv>kapitäl:kapitäl:kapitäls:kapitälen:kapitälens:kapitäler:kapitälers:kapitälerna:kapitälernas
+602418r3<substantiv>kaplan:kaplan:kaplans:kaplanen:kaplanens:kaplaner:kaplaners:kaplanerna:kaplanernas
+825706r3<substantiv>kapmaskin:kapmaskin:kapmaskins:kapmaskinen:kapmaskinens:kapmaskiner:kapmaskiners:kapmaskinerna:kapmaskinernas
+618561r4<substantiv>kapning:kapning:kapnings:kapningen:kapningens:kapningar:kapningars:kapningarna:kapningarnas
+CUSTOM: y y kapnings
+935568r3<substantiv>kapock:kapock:kapocks:kapocken:kapockens::::
+CUSTOM: n n y
+589778r3<verb>kapottera:kapottera:kapotterade:kapotterat:kapotterar:kapottera:::::::::
+923433r4<substantiv>kapp:kapp:kapps:kappen:kappens:kappar, kapper:kappars, kappers:kapparna, kapperna:kapparnas, kappernas
+CUSTOM: n n y
+767505r3<adverb>kapp:kapp
+594437r8<substantiv>kappa:kappa:kappas:kappan:kappans:kappor:kappors:kapporna:kappornas
+CUSTOM: y y
+591720r3<deponens>kappas:kappas:kappades:kappats:kappas:
+825714r3<substantiv>kappficka:kappficka:kappfickas:kappfickan:kappfickans:kappfickor:kappfickors:kappfickorna:kappfickornas
+825722r3<substantiv>kappfoder:kappfoder:kappfoders:kappfodret:kappfodrets:kappfoder:kappfoders:kappfodren:kappfodrens
+825728r3<substantiv>kapphylla:kapphylla:kapphyllas:kapphyllan:kapphyllans:kapphyllor:kapphyllors:kapphyllorna:kapphyllornas
+825736r3<substantiv>kapphängare:kapphängare:kapphängares:kapphängaren:kapphängarens:kapphängare:kapphängares:kapphängarna:kapphängarnas
+825742r3<substantiv>kappkörning:kappkörning:kappkörnings:kappkörningen:kappkörningens:kappkörningar:kappkörningars:kappkörningarna:kappkörningarnas
+597108r4<substantiv>kapplöpning:kapplöpning:kapplöpnings:kapplöpningen:kapplöpningens:kapplöpningar:kapplöpningars:kapplöpningarna:kapplöpningarnas
+CUSTOM: y y kapplöpnings +kapplöpnings
+869607r3<adjektiv>kapprak:kapprak:kapprakt:kappraka:kappraka::::
+731394r3<substantiv>kappridning:kappridning:kappridnings:kappridningen:kappridningens:kappridningar:kappridningars:kappridningarna:kappridningarnas
+825750r3<substantiv>kappritt:kappritt:kappritts:kappritten:kapprittens:kappritter:kappritters:kappritterna:kappritternas
+844383r3<substantiv>kapprock:kapprock:kapprocks:kapprocken:kapprockens:kapprockar:kapprockars:kapprockarna:kapprockarnas
+981404r3<substantiv>kapprodd:kapprodd:kapprodds:kapprodden:kapproddens:kapprodder:kapprodders:kapprodderna:kapproddernas
+773235r4<substantiv>kapprum:kapprum:kapprums:kapprummet:kapprummets:kapprum:kapprums:kapprummen:kapprummens
+COMPOUND(594437, 571182): kappa + rum
+825758r3<verb>kapprusta:kapprusta:kapprustade:kapprustat:kapprustar:kapprusta:kapprustas:kapprustades:kapprustats:kapprustas::::kapprustande:
+744567r4<substantiv>kapprustning:kapprustning:kapprustnings:kapprustningen:kapprustningens:kapprustningar:kapprustningars:kapprustningarna:kapprustningarnas
+825770r3<verb>kappsegla:kappsegla:kappseglade:kappseglat:kappseglar:kappsegla:kappseglas:kappseglades:kappseglats:kappseglas:kappseglad:kappseglat:kappseglade:kappseglande:
+744571r3<substantiv>kappseglare:kappseglare:kappseglares:kappseglaren:kappseglarens:kappseglare:kappseglares:kappseglarna:kappseglarnas
+744577r5<substantiv>kappsegling:kappsegling:kappseglings:kappseglingen:kappseglingens:kappseglingar:kappseglingars:kappseglingarna:kappseglingarnas
+CUSTOM: y y kappseglings
+744581r4<substantiv>kappseglingsbåt:kappseglingsbåt:kappseglingsbåts:kappseglingsbåten:kappseglingsbåtens:kappseglingsbåtar:kappseglingsbåtars:kappseglingsbåtarna:kappseglingsbåtarnas
+COMPOUND(744577, 550993): kappsegling + båt
+744582r3<substantiv>kappsäck:kappsäck:kappsäcks:kappsäcken:kappsäckens:kappsäckar:kappsäckars:kappsäckarna:kappsäckarnas
+798136r3<adjektiv>kapriciös:kapriciös:kapriciöst:kapriciösa:kapriciösa::::
+549452r4<substantiv>kaprifol:kaprifol:kaprifols:kaprifolen:kaprifolens:kaprifoler:kaprifolers:kaprifolerna:kaprifolernas
+CUSTOM: y y kaprifol
+773241r3<substantiv>kaprifoldoft::::::::
+COMPOUND(549452, 548690): kaprifol + doft
+680953r5<substantiv>kapris:kapris:kapris:kaprisen:kaprisens:kaprisar:kaprisars:kaprisarna:kaprisarnas
+DEFINITION 1: En sorts krydda
+844391r3<substantiv>kapris:kapris:kapris:kaprisen:kaprisens:kapriser:kaprisers:kapriserna:kaprisernas
+961848r4<substantiv>kaprissås:kaprissås:kaprissås:kaprissåsen:kaprissåsens:kaprissåser:kaprissåsers:kaprissåserna:kaprissåsernas
+COMPOUND(680953, 556707): kapris + sås
+652017r4<verb>kapsejsa:kapsejsa:kapsejsade:kapsejsat:kapsejsar:kapsejsa:kapsejsas:kapsejsades:kapsejsats:kapsejsas:kapsejsad:kapsejsat:kapsejsade:kapsejsande:
+825779r3<substantiv>kapsejsning:kapsejsning:kapsejsnings:kapsejsningen:kapsejsningens:kapsejsningar:kapsejsningars:kapsejsningarna:kapsejsningarnas
+652018r5<substantiv>kapsel:kapsel:kapsels:kapseln:kapselns:kapslar:kapslars:kapslarna:kapslarnas
+CUSTOM: y y kapsel
+573598r3<adjektiv>kapselformig:kapselformig:kapselformigt:kapselformiga:kapselformiga::::
+957963r4<substantiv>kapselmaskin:kapselmaskin:kapselmaskins:kapselmaskinen:kapselmaskinens:kapselmaskiner:kapselmaskiners:kapselmaskinerna:kapselmaskinernas
+COMPOUND(652018, 550005): kapsel + maskin
+547077r6<verb>kapsla:kapsla:kapslade:kapslat:kapslar:kapsla:kapslas:kapslades:kapslats:kapslas:kapslad:kapslat:kapslade:kapslande:
+792505r3<adjektiv>kapslad:kapslad:kapslat:kapslade:kapslade:!:!:!:
+737451r3<substantiv>kapsling:kapsling:kapslings:kapslingen:kapslingens:kapslingar:kapslingars:kapslingarna:kapslingarnas
+744591r3<egennamn>Kapstaden:Kapstaden:Kapstadens
+549460r4<substantiv>kapsyl:kapsyl:kapsyls:kapsylen:kapsylens:kapsyler:kapsylers:kapsylerna:kapsylernas
+CUSTOM: y y kapsyl
+589782r3<verb>kapsylera:kapsylera:kapsylerade:kapsylerat:kapsylerar:kapsylera:::::::::
+764229r3<substantiv>kapsylering:kapsylering:kapsylerings:kapsyleringen:kapsyleringens:kapsyleringar:kapsyleringars:kapsyleringarna:kapsyleringarnas
+764237r4<substantiv>kapsylöppnare:kapsylöppnare:kapsylöppnares:kapsylöppnaren:kapsylöppnarens:kapsylöppnare:kapsylöppnares:kapsylöppnarna:kapsylöppnarnas
+COMPOUND(549460, 615534): kapsyl + öppnare
+825787r3<substantiv>kapsåg:kapsåg:kapsågs:kapsågen:kapsågens:kapsågar:kapsågars:kapsågarna:kapsågarnas
+549461r8<substantiv>kapten:kapten:kaptens:kaptenen:kaptenens:kaptener:kapteners:kaptenerna:kaptenernas
+CUSTOM: y y kaptens
+844400r3<substantiv>kaptenlöjtnant:kaptenlöjtnant:kaptenlöjtnants:kaptenlöjtnanten:kaptenlöjtnantens::::
+764243r3<substantiv>kaptensgrad::::::::
+COMPOUND(549461, 549117): kapten + grad
+844404r3<substantiv>kapucin:kapucin:kapucins:kapucinen:kapucinens:kapuciner:kapuciners:kapucinerna:kapucinernas
+844412r3<substantiv>kapucinapa:kapucinapa:kapucinapas:kapucinapan:kapucinapans:kapucinapor:kapucinapors:kapucinaporna:kapucinapornas
+981418r3<substantiv>kapucinerkloster:kapucinerkloster:kapucinerklosters:kapucinerklostret:kapucinerklostrets:kapucinerkloster:kapucinerklosters:kapucinerklostren:kapucinerklostrens
+981432r3<substantiv>kapucinermunk:kapucinermunk:kapucinermunks:kapucinermunken:kapucinermunkens:kapucinermunkar:kapucinermunkars:kapucinermunkarna:kapucinermunkarnas
+981412r3<substantiv>kapucinkloster:kapucinkloster:kapucinklosters:kapucinklostret:kapucinklostrets:kapucinkloster:kapucinklosters:kapucinklostren:kapucinklostrens
+981424r3<substantiv>kapucinmunk:kapucinmunk:kapucinmunks:kapucinmunken:kapucinmunkens:kapucinmunkar:kapucinmunkars:kapucinmunkarna:kapucinmunkarnas
+652019r3<substantiv>kapun:kapun:kapuns:kapunen:kapunens:kapuner:kapuners:kapunerna:kapunernas
+CUSTOM: y n
+589786r3<verb>kapunera:kapunera:kapunerade:kapunerat:kapunerar:kapunera:::::::::
+549462r3<substantiv>kapuschong:kapuschong:kapuschongs:kapuschongen:kapuschongens:kapuschonger:kapuschongers:kapuschongerna:kapuschongernas
+CUSTOM: y y kapuschong
+652027r5<adjektiv>kaputt:kaputt:kaputt::::::::::::::
+554049r3<egennamn>Kap Verde:Kap Verde:Kap Verdes
+825795r3<substantiv>kapverdier:kapverdier:kapverdiers:kapverdiern:kapverdierns:kapverdier:kapverdiers:kapverdierna:kapverdiernas
+581169r4<adjektiv>kapverdisk:kapverdisk:kapverdiskt:kapverdiska:kapverdiska:!:!:!:kapverdiske
+825801r3<substantiv>kapverdiska:kapverdiska:kapverdiskas:kapverdiskan:kapverdiskans:kapverdiskor:kapverdiskors:kapverdiskorna:kapverdiskornas
+559658r6<substantiv>kar:kar:kars:karet:karets:kar:kars:karen:karens
+559660r3<substantiv>karabinjär:karabinjär:karabinjärs:karabinjären:karabinjärens:karabinjärer:karabinjärers:karabinjärerna:karabinjärernas
+559659r4<substantiv>karaff:karaff:karaffs:karaffen:karaffens:karaffer:karaffers:karafferna:karaffernas
+CUSTOM: y y karaff
+814497r3<substantiv>karaffin:karaffin:karaffins:karaffinen:karaffinens:karaffiner:karaffiners:karaffinerna:karaffinernas
+825811r4<substantiv>karaffvin:karaffvin:karaffvins:karaffvinet:karaffvinets:karaffviner:karaffviners:karaffvinerna:karaffvinernas
+COMPOUND(559659, 600515): karaff + vin
+547078r4<verb>karakterisera:karakterisera:karakteriserade:karakteriserat:karakteriserar:karakterisera:karakteriseras:karakteriserades:karakteriserats:karakteriseras:karakteriserad:karakteriserat:karakteriserade::
+692964r3<adjektiv>karakteriserande:karakteriserande:karakteriserande:karakteriserande:karakteriserande:!:!:!:
+569295r3<adjektiv>karakteriserbar:karakteriserbar:karakteriserbart:karakteriserbara:karakteriserbara::::
+692965r3<substantiv>karakterisering:karakterisering:karakteriserings:karakteriseringen:karakteriseringens:karakteriseringar:karakteriseringars:karakteriseringarna:karakteriseringarnas
+CUSTOM: y y karakteriserings
+549470r3<substantiv>karakteristik:karakteristik:karakteristiks:karakteristiken:karakteristikens:karakteristiker:karakteristikers:karakteristikerna:karakteristikernas
+725930r3<substantiv>karakteristika:karakteristika:karakteristikas:karakteristikan:karakteristikans:karakteristikor:karakteristikors:karakteristikorna:karakteristikornas
+559668r4<adjektiv>karakteristisk:karakteristisk:karakteristiskt:karakteristiska:karakteristiska::::karakteristiske
+549471r8<substantiv>karaktär:karaktär:karaktärs:karaktären:karaktärens:karaktärer:karaktärers:karaktärerna:karaktärernas
+CUSTOM: y y karaktärs
+547079r5<verb>karaktärisera:karaktärisera:karaktäriserade:karaktäriserat:karaktäriserar:karaktärisera:karaktäriseras:karaktäriserades:karaktäriserats:karaktäriseras:karaktäriserad:karaktäriserat:karaktäriserade:karaktäriserande:
+569298r3<adjektiv>karaktäriserbar:karaktäriserbar:karaktäriserbart:karaktäriserbara:karaktäriserbara::::
+825820r3<substantiv>karaktärisering:karaktärisering:karaktäriserings:karaktäriseringen:karaktäriseringens:karaktäriseringar:karaktäriseringars:karaktäriseringarna:karaktäriseringarnas
+549472r3<substantiv>karaktäristik:karaktäristik:karaktäristiks:karaktäristiken:karaktäristikens:karaktäristiker:karaktäristikers:karaktäristikerna:karaktäristikernas
+869610r3<substantiv>karaktäristika:karaktäristika:karaktäristikas:karaktäristikan:karaktäristikans:karaktäristikor:karaktäristikors:karaktäristikorna:karaktäristikornas
+581171r3<adjektiv>karaktäristisk:karaktäristisk:karaktäristiskt:karaktäristiska:karaktäristiska::::
+801047r3<adjektiv>karaktärsdanande:karaktärsdanande:karaktärsdanande:karaktärsdanande:karaktärsdanande:!:!:!:
+692966r3<substantiv>karaktärsdaning:karaktärsdaning:karaktärsdanings:karaktärsdaningen:karaktärsdaningens::::
+CUSTOM: y y karaktärsdanings
+561085r3<substantiv>karaktärsdrag:karaktärsdrag:karaktärsdrags:karaktärsdraget:karaktärsdragets:karaktärsdrag:karaktärsdrags:karaktärsdragen:karaktärsdragens
+564938r3<adjektiv>karaktärslös:karaktärslös:karaktärslöst:karaktärslösa:karaktärslösa::::
+652032r3<substantiv>karaktärsroll:karaktärsroll:karaktärsrolls:karaktärsrollen:karaktärsrollens:karaktärsroller:karaktärsrollers:karaktärsrollerna:karaktärsrollernas
+652040r3<substantiv>karaktärsskådespelare:karaktärsskådespelare:karaktärsskådespelares:karaktärsskådespelaren:karaktärsskådespelarens:karaktärsskådespelare:karaktärsskådespelares:karaktärsskådespelarna:karaktärsskådespelarnas
+CUSTOM: y y karaktärsskådespelar
+652046r3<substantiv>karaktärsskådespelerska:karaktärsskådespelerska:karaktärsskådespelerskas:karaktärsskådespelerskan:karaktärsskådespelerskans:karaktärsskådespelerskor:karaktärsskådespelerskors:karaktärsskådespelerskorna:karaktärsskådespelerskornas
+652054r3<adjektiv>karaktärsstark:karaktärsstark:karaktärsstarkt:karaktärsstarka:karaktärsstarka::::karaktärsstarke
+652058r4<substantiv>karaktärsstudie:karaktärsstudie:karaktärsstudies:karaktärsstudien:karaktärsstudiens:karaktärsstudier:karaktärsstudiers:karaktärsstudierna:karaktärsstudiernas
+COMPOUND(549471, 634112): karaktär + studie
+652028r3<adjektiv>karaktärssvag:karaktärssvag:karaktärssvagt:karaktärssvaga:karaktärssvaga::::karaktärssvage
+652066r3<substantiv>karaktärsteckning:karaktärsteckning:karaktärstecknings:karaktärsteckningen:karaktärsteckningens::::
+CUSTOM: y y karaktärstecknings
+652070r3<substantiv>karaktärstyp:karaktärstyp:karaktärstyps:karaktärstypen:karaktärstypens:karaktärstyper:karaktärstypers:karaktärstyperna:karaktärstypernas
+589790r4<verb>karambolera:karambolera:karambolerade:karambolerat:karambolerar:karambolera::::::::karambolerande:
+549473r5<substantiv>karamell:karamell:karamells:karamellen:karamellens:karameller:karamellers:karamellerna:karamellernas
+CUSTOM: y y karamell
+792506r3<adjektiv>karamellfärgad:karamellfärgad:karamellfärgat:karamellfärgade:karamellfärgade:!:!:!:
+792509r3<adjektiv>karamelliserad:karamelliserad:karamelliserat:karamelliserade:karamelliserade:!:!:!:
+825828r4<substantiv>karamellsås:karamellsås:karamellsås:karamellsåsen:karamellsåsens:karamellsåser:karamellsåsers:karamellsåserna:karamellsåsernas
+COMPOUND(549473, 556707): karamell + sås
+549475r3<substantiv>karantän:karantän:karantäns:karantänen:karantänens:karantäner:karantäners:karantänerna:karantänernas
+CUSTOM: y y karantän karantäns
+718871r4<substantiv>karaoke:karaoke:karaokes:karaoken:karaokens::::
+CUSTOM: y n karaoke
+893272r3<substantiv>karaokebar:karaokebar:karaokebars:karaokebaren:karaokebarens:karaokebarer:karaokebarers:karaokebarerna:karaokebarernas
+718873r4<substantiv>karaokemaskin:karaokemaskin:karaokemaskins:karaokemaskinen:karaokemaskinens:karaokemaskiner:karaokemaskiners:karaokemaskinerna:karaokemaskinernas
+COMPOUND(718871, 550005): karaoke + maskin
+CUSTOM: n n 
+561086r4<substantiv>karat:karat:karats:karaten:karatens:karat:karats:karaten:karatens
+CUSTOM: y n
+561087r3<substantiv>karate:karate:karates:karaten:karatens:!:!:!:!
+CUSTOM: y y karate
+825835r4<substantiv>karathalt:karathalt:karathalts:karathalten:karathaltens:karathalter:karathalters:karathalterna:karathalternas
+COMPOUND(561086, 549191): karat + halt
+844420r3<substantiv>karatstämpel:karatstämpel:karatstämpels:karatstämpeln:karatstämpelns:karatstämplar:karatstämplars:karatstämplarna:karatstämplarnas
+549476r4<substantiv>karavan:karavan:karavans:karavanen:karavanens:karavaner:karavaners:karavanerna:karavanernas
+CUSTOM: y y karavan
+844428r3<substantiv>karavanseraj:karavanseraj:karavanserajs:karavanserajen:karavanserajens:karavanserajer:karavanserajers:karavanserajerna:karavanserajernas
+985830r4<substantiv>karavanseralj:karavanseralj:karavanseraljs:karavanseraljen:karavanseraljens:karavanseraljer:karavanseraljers:karavanseraljerna:karavanseraljernas
+COMPOUND(549476, 985821): karavan + seralj
+939963r4<substantiv>karbad:karbad:karbads:karbadet:karbadets:karbad:karbads:karbaden:karbadens
+COMPOUND(559658, 552219): kar + bad
+844436r3<substantiv>karbamid:karbamid:karbamids:karbamiden:karbamidens:karbamider:karbamiders:karbamiderna:karbamidernas
+684068r5<substantiv>karbid:karbid:karbids:karbiden:karbidens::::
+DEFINITION 1: metall- och kolförening
+BASEWORDS: karbid
+CUSTOM: y y karbid
+825843r4<substantiv>karbin:karbin:karbins:karbinen:karbinens:karbiner:karbiners:karbinerna:karbinernas
+CUSTOM: y y karbin
+825851r4<substantiv>karbinhake:karbinhake:karbinhakes:karbinhaken:karbinhakens:karbinhakar:karbinhakars:karbinhakarna:karbinhakarnas
+COMPOUND(825843, 599830): karbin + hake
+581172r3<adjektiv>karbocyklisk:karbocyklisk:karbocykliskt:karbocykliska:karbocykliska::::
+825859r3<substantiv>karbol:karbol:karbols:karbolen:karbolens::::
+825863r4<substantiv>karbolsyra:karbolsyra:karbolsyras:karbolsyran:karbolsyrans:karbolsyror:karbolsyrors:karbolsyrorna:karbolsyrornas
+659408r4<substantiv>karbon:karbon:karbons:karbon, karbonen:karbons, karbonens::::
+CUSTOM: y y karbon
+762707r5<substantiv>karbonat:karbonat:karbonats:karbonatet:karbonatets:karbonater:karbonaters:karbonaterna:karbonaternas
+573601r3<adjektiv>karbonathaltig:karbonathaltig:karbonathaltigt:karbonathaltiga:karbonathaltiga::::
+587013r4<verb>karbonisera:karbonisera:karboniserade:karboniserat:karboniserar:karbonisera:karboniseras:karboniserades:karboniserats:karboniseras:karboniserad:karboniserat:karboniserade:karboniserande:
+659407r4<substantiv>karbonsyra:karbonsyra:karbonsyras:karbonsyran:karbonsyrans:karbonsyror:karbonsyrors:karbonsyrorna:karbonsyrornas
+COMPOUND(659408, 624847): karbon + syra
+844459r3<substantiv>karbunkel:karbunkel:karbunkels:karbunkeln:karbunkelns:karbunklar:karbunklars:karbunklarna:karbunklarnas
+792512r3<adjektiv>karbunkelartad:karbunkelartad:karbunkelartat:karbunkelartade:karbunkelartade:!:!:!:
+844467r3<substantiv>karburator:karburator:karburators:karburatorn:karburatorns:karburatorer:karburatorers:karburatorerna:karburatorernas
+589794r3<verb>karburera:karburera:karburerade:karburerat:karburerar:karburera:::::::::
+844475r3<adjektiv>karcinogen:karcinogen:karcinogent:karcinogena:karcinogena::::
+652072r3<substantiv>karda:karda:kardas:kardan:kardans:kardor:kardors:kardorna:kardornas
+547080r4<verb>karda:karda:kardade:kardat:kardar:karda:kardas:kardades:kardats:kardas:kardad:kardat:kardade::
+772518r3<substantiv>kardan:kardan:kardans:kardanen:kardanens:kardaner:kardaners:kardanerna:kardanernas
+600200r3<substantiv>kardanaxel:kardanaxel:kardanaxels:kardanaxeln:kardanaxelns:kardanaxlar:kardanaxlars:kardanaxlarna:kardanaxlarnas
+844478r3<substantiv>kardanknut:kardanknut:kardanknuts:kardanknuten:kardanknutens:kardanknutar:kardanknutars:kardanknutarna:kardanknutarnas
+844486r3<adjektiv>kardansk:kardansk:kardanskt:kardanska:kardanska::::
+561089r3<substantiv>kardborre:kardborre:kardborres:kardborren:kardborrens:kardborrar:kardborrars:kardborrarna:kardborrarnas
+CUSTOM: y y kardborre kardborr
+652078r3<substantiv>kardel:kardel:kardels:kardelen:kardelens:kardeler:kardelers:kardelerna:kardelernas
+561091r4<substantiv>kardemumma:kardemumma:kardemummas:kardemumman:kardemummans::::
+CUSTOM: y y kardemumma
+850650r4<substantiv>kardemummafrö:kardemummafrö:kardemummafrös:kardemummafröet:kardemummafröets:kardemummafrön:kardemummafröns:kardemummafröna:kardemummafrönas
+COMPOUND(561091, 556155): kardemumma + frö
+859648r7<adjektiv>kardemummastekt:kardemummastekt:kardemummastekt:kardemummastekta:kardemummastekta::::::::::::
+951809r5<adjektiv>kardinal:kardinal:kardinalt:kardinala:kardinala::::::::::::
+561092r6<substantiv>kardinal:kardinal:kardinals:kardinalen:kardinalens:kardinaler:kardinalers:kardinalerna:kardinalernas
+CUSTOM: y y kardinal kardinals
+951808r4<substantiv>kardinaldygd:kardinaldygd:kardinaldygds:kardinaldygden:kardinaldygdens:kardinaldygder:kardinaldygders:kardinaldygderna:kardinaldygdernas
+COMPOUND(951809, 548735): kardinal + dygd
+652080r4<substantiv>kardinalfel:kardinalfel:kardinalfels:kardinalfelet:kardinalfelets:kardinalfel:kardinalfels:kardinalfelen:kardinalfelens
+COMPOUND(951809, 552375): kardinal + fel
+731930r4<substantiv>kardinalpunkt:kardinalpunkt:kardinalpunkts:kardinalpunkten:kardinalpunktens:kardinalpunkter:kardinalpunkters:kardinalpunkterna:kardinalpunkternas
+COMPOUND(561092, 550299): kardinal + punkt
+801823r4<adjektiv>kardinalröd:kardinalröd:kardinalrött:kardinalröda:kardinalröda::::::::::::
+COMPOUND(561092, 554994): kardinal + röd
+801825r4<adjektiv>kardinalsröd:kardinalsröd:kardinalsrött:kardinalsröda:kardinalsröda::::::::::::
+COMPOUND(561092, 554994): kardinal + röd
+761868r3<substantiv>kardinaltal:kardinaltal:kardinaltals:kardinaltalet:kardinaltalets:kardinaltal:kardinaltals:kardinaltalen:kardinaltalens
+844489r3<substantiv>kardiograf:kardiograf:kardiografs:kardiografen:kardiografens:kardiografer:kardiografers:kardiograferna:kardiografernas
+844497r3<substantiv>kardiogram:kardiogram:kardiograms:kardiogrammet:kardiogrammets:kardiogram:kardiograms:kardiogrammen:kardiogrammens
+825867r3<substantiv>kardiolog:kardiolog:kardiologs:kardiologen:kardiologens:kardiologer:kardiologers:kardiologerna:kardiologernas
+825875r3<substantiv>kardiologi:kardiologi:kardiologis:kardiologin:kardiologins::::
+581175r3<adjektiv>kardiologisk:kardiologisk:kardiologiskt:kardiologiska:kardiologiska::::
+981445r3<adjektiv>kardiovaskulär:kardiovaskulär:kardiovaskulärt:kardiovaskulära:kardiovaskulära::::::::::::
+825879r3<substantiv>kardmaskin:kardmaskin:kardmaskins:kardmaskinen:kardmaskinens:kardmaskiner:kardmaskiners:kardmaskinerna:kardmaskinernas
+825887r3<substantiv>kardning:kardning:kardnings:kardningen:kardningens::::
+844503r3<substantiv>kardull:kardull:kardulls:kardullen:kardullens::::
+CUSTOM: y n
+981449r3<substantiv>kardus:kardus:kardus:kardusen:kardusens:karduser:kardusers:karduserna:kardusernas
+CUSTOM: y n
+981464r3<substantiv>karel:karel:karels:karelen:karelens:kareler:karelers:karelerna:karelernas
+CUSTOM: n n y
+609741r3<substantiv>karelare:karelare:karelares:karelaren:karelarens:karelare:karelares:karelarna:karelarnas
+CUSTOM: y n
+564566r4<adjektiv>karelsk:karelsk:karelskt:karelska:karelska::::::::::::
+CUSTOM: y n
+981456r3<substantiv>karelska:karelska:karelskas:karelskan:karelskans:karelskor:karelskors:karelskorna:karelskornas
+CUSTOM: y n
+652081r4<substantiv>karens:karens:karens:karensen:karensens::::
+CUSTOM: y y karens
+561093r3<substantiv>karensdag:karensdag:karensdags:karensdagen:karensdagens:karensdagar:karensdagars:karensdagarna:karensdagarnas
+802707r4<substantiv>karensperiod:karensperiod:karensperiods:karensperioden:karensperiodens:karensperioder:karensperioders:karensperioderna:karensperiodernas
+COMPOUND(652081, 550187): karens + period
+652082r3<substantiv>karenstid:karenstid:karenstids:karenstiden:karenstidens::::
+587017r3<verb>karessera:karessera:karesserade:karesserat:karesserar:karessera:::::::::
+561094r4<adjektiv>karg:karg:kargt:karga:karga:kargare:kargast:kargaste:
+825891r3<substantiv>karghet:karghet:karghets:kargheten:karghetens::::
+873047r3<egennamn>Kari:Kari:Karis
+896346r3<egennamn>Karibien:Karibien:Karibiens
+581178r3<adjektiv>karibisk:karibisk:karibiskt:karibiska:karibiska::::
+792515r3<adjektiv>karierad:karierad:karierat:karierade:karierade:!:!:!:
+CUSTOM: y n
+561095r3<substantiv>karies:karies:karies:kariesen:kariesens:!:!:!:!
+CUSTOM: y y karies
+549484r3<substantiv>karikatyr:karikatyr:karikatyrs:karikatyren:karikatyrens:karikatyrer:karikatyrers:karikatyrerna:karikatyrernas
+CUSTOM: y y karikatyr
+792518r3<adjektiv>karikatyrartad:karikatyrartad:karikatyrartat:karikatyrartade:karikatyrartade:!:!:!:
+581181r3<adjektiv>karikatyrisk:karikatyrisk:karikatyriskt:karikatyriska:karikatyriska::::
+825254r3<substantiv>karikatyrist:karikatyrist:karikatyrists:karikatyristen:karikatyristens:karikatyrister:karikatyristers:karikatyristerna:karikatyristernas
+573604r3<adjektiv>karikatyrmässig:karikatyrmässig:karikatyrmässigt:karikatyrmässiga:karikatyrmässiga::::
+587021r5<verb>karikera:karikera:karikerade:karikerat:karikerar:karikera:karikeras:karikerades:karikerats:karikeras:karikerad:karikerat:karikerade:karikerande:
+825895r3<substantiv>karikering:karikering:karikerings:karikeringen:karikeringens:karikeringar:karikeringars:karikeringarna:karikeringarnas
+553771r3<egennamn>Karin:Karin:Karins
+561098r3<substantiv>karisma:karisma:karismas:karisman:karismans:karismer:karismers:karismerna:karismernas
+561104r4<adjektiv>karismatisk:karismatisk:karismatiskt:karismatiska:karismatiska::::karismatiske
+798139r3<adjektiv>karitativ:karitativ:karitativt:karitativa:karitativa::::
+551499r8<substantiv>karl:karl:karls:karlen:karlens:karlar:karlars:karlarna:karlarnas
+554662r3<egennamn>Karl:Karl:Karls
+652086r3<substantiv>karlakarl:karlakarl:karlakarls:karlakarlen:karlakarlens:karlakarlar:karlakarlars:karlakarlarna:karlakarlarnas
+573607r4<adjektiv>karlaktig:karlaktig:karlaktigt:karlaktiga:karlaktiga::::karlaktige
+943259r3<egennamn>Karlaplan:Karlaplan:Karlaplans
+652094r5<substantiv>karlatag:karlatag:karlatags:karlataget:karlatagets:karlatag:karlatags:karlatagen:karlatagens
+652095r3<egennamn>Karlavagnen:Karlavagnen:Karlavagnens
+972998r3<egennamn>Karlberg:Karlberg:Karlbergs
+943289r3<egennamn>Karlfeldt:Karlfeldt:Karlfeldts
+825904r3<substantiv>karlfolk:karlfolk:karlfolks:karlfolket:karlfolkets:karlfolk:karlfolks:karlfolken:karlfolkens
+869619r3<adjektiv>karlgalen:karlgalen:karlgalet:karlgalna:karlgalna::::
+652097r3<substantiv>karljohan:karljohan:karljohans::::::
+CUSTOM: y n karljohans
+954050r3<substantiv>karljohanssvamp:karljohanssvamp:karljohanssvamps:karljohanssvampen:karljohanssvampens:karljohanssvampar:karljohanssvampars:karljohanssvamparna:karljohanssvamparnas
+679610r3<substantiv>karlsbaderpiller:karlsbaderpiller:karlsbaderpillers:karlsbaderpillret:karlsbaderpillrets:karlsbaderpiller:karlsbaderpillers:karlsbaderpillren, karlsbaderpillerna:karlsbaderpillrens, karlsbaderpillernas
+728143r3<egennamn>Karlsborg:Karlsborg:Karlsborgs
+CUSTOM: y n Karlsborgs
+554273r3<egennamn>Karlshamn:Karlshamn:Karlshamns
+CUSTOM: y n Karlshamns
+554275r4<egennamn>Karlskoga:Karlskoga:Karlskogas, Karlskoga
+CUSTOM: y n Karlskoga
+554276r4<egennamn>Karlskrona:Karlskrona:Karlskronas, Karlskrona
+CUSTOM: y n Karlskrona
+892470r3<substantiv>karlskronabo:karlskronabo:karlskronabos:karlskronabon:karlskronabons:karlskronabor:karlskronabors:karlskronaborna:karlskronabornas
+721922r3<egennamn>Karlskronavarvet:Karlskronavarvet:Karlskronavarvets
+CUSTOM: n n 
+825910r3<substantiv>karlslok:karlslok:karlsloks:karlsloken:karlslokens:karlslokar:karlslokars:karlslokarna:karlslokarnas
+553454r3<egennamn>Karlsson:Karlsson:Karlssons
+554278r3<egennamn>Karlstad:Karlstad:Karlstads
+CUSTOM: y n Karlstads
+973002r3<egennamn>Karlström:Karlström:Karlströms
+872943r3<egennamn>Karlsö:Karlsö:Karlsös
+573610r3<adjektiv>karltokig:karltokig:karltokigt:karltokiga:karltokiga::::
+551500r6<substantiv>karm:karm:karms:karmen:karmens:karmar:karmars:karmarna:karmarnas
+CUSTOM: y n
+652099r3<substantiv>karma:karma:karmas:karman:karmans::::
+825918r3<substantiv>karmelit:karmelit:karmelits:karmeliten:karmelitens:karmeliter:karmeliters:karmeliterna:karmeliternas
+825926r3<substantiv>karmeliterkloster:karmeliterkloster:karmeliterklosters:karmeliterklostret:karmeliterklostrets:karmeliterkloster:karmeliterklosters:karmeliterklostren:karmeliterklostrens
+825932r3<substantiv>karmelitermunk:karmelitermunk:karmelitermunks:karmelitermunken:karmelitermunkens:karmelitermunkar:karmelitermunkars:karmelitermunkarna:karmelitermunkarnas
+825940r3<substantiv>karmeliternunna:karmeliternunna:karmeliternunnas:karmeliternunnan:karmeliternunnans:karmeliternunnor:karmeliternunnors:karmeliternunnorna:karmeliternunnornas
+825948r4<substantiv>karmeliterorden:karmeliterorden:karmeliterordens:karmeliterorden:karmeliterordens::::
+825960r3<substantiv>karmelitkloster:karmelitkloster:karmelitklosters:karmelitklostret:karmelitklostrets:karmelitkloster:karmelitklosters:karmelitklostren:karmelitklostrens
+825966r3<substantiv>karmelitmunk:karmelitmunk:karmelitmunks:karmelitmunken:karmelitmunkens:karmelitmunkar:karmelitmunkars:karmelitmunkarna:karmelitmunkarnas
+825950r3<substantiv>karmelitnunna:karmelitnunna:karmelitnunnas:karmelitnunnan:karmelitnunnans:karmelitnunnor:karmelitnunnors:karmelitnunnorna:karmelitnunnornas
+825958r3<substantiv>karmelitorden:karmelitorden:karmelitordens:karmelitorden:karmelitordens::::
+843537r19<substantiv>karminbiätare:karminbiätare:karminbiätares:karminbiätaren:karminbiätarens:karminbiätare:karminbiätares:karminbiätarna:karminbiätarnas
+792521r3<adjektiv>karminfärgad:karminfärgad:karminfärgat:karminfärgade:karminfärgade:!:!:!:
+801827r3<adjektiv>karminröd:karminröd:karminrött:karminröda:karminröda::::
+825974r3<substantiv>karmosin:karmosin:karmosins:karmosinet:karmosinets::::
+792524r3<adjektiv>karmosinfärgad:karmosinfärgad:karmosinfärgat:karmosinfärgade:karmosinfärgade:!:!:!:
+801829r3<adjektiv>karmosinröd:karmosinröd:karmosinrött:karmosinröda:karmosinröda::::
+725947r4<substantiv>karmstol:karmstol:karmstols:karmstolen:karmstolens:karmstolar:karmstolars:karmstolarna:karmstolarnas
+COMPOUND(551500, 551944): karm + stol
+549485r4<substantiv>karneval:karneval:karnevals:karnevalen:karnevalens:karnevaler:karnevalers:karnevalerna:karnevalernas
+CUSTOM: y y karnevals
+825978r4<substantiv>karnevalsyra:karnevalsyra:karnevalsyras:karnevalsyran:karnevalsyrans:!:!:!:!
+COMPOUND(549485, 557780): karneval + yra
+825982r3<substantiv>karnivor:karnivor:karnivors:karnivoren:karnivorens:karnivorer:karnivorers:karnivorerna:karnivorernas
+652100r3<substantiv>karolin:karolin:karolins:karolinen:karolinens:karoliner:karoliners:karolinerna:karolinernas
+553773r3<egennamn>Karolina:Karolina:Karolinas
+719542r3<egennamn>Karoline:Karoline:Karolines
+581184r3<adjektiv>karolingisk:karolingisk:karolingiskt:karolingiska:karolingiska::::
+652101r3<adjektiv>karolinsk:karolinsk:karolinskt:karolinska:karolinska:!:!:!:karolinske
+549487r3<substantiv>kaross:kaross:kaross:karossen:karossens:karosser:karossers:karosserna:karossernas
+CUSTOM: y y kaross
+611701r3<substantiv>karosseri:karosseri:karosseris:karosseriet:karosseriets:karosserier:karosseriers:karosserierna:karosseriernas
+CUSTOM: y y karosseri
+825990r3<substantiv>karoten:karoten:karotens:karotenet:karotenets:karotener:karoteners:karotenerna:karotenernas
+573613r3<adjektiv>karotenhaltig:karotenhaltig:karotenhaltigt:karotenhaltiga:karotenhaltiga::::
+573616r3<adjektiv>karotinhaltig:karotinhaltig:karotinhaltigt:karotinhaltiga:karotinhaltiga::::
+549488r3<substantiv>karott:karott:karotts:karotten:karottens:karotter:karotters:karotterna:karotternas
+551501r3<substantiv>karp:karp:karps:karpen:karpens:karpar:karpars:karparna:karparnas
+CUSTOM: y n
+981472r3<substantiv>karpdamm:karpdamm:karpdamms:karpdammen:karpdammens:karpdammar:karpdammars:karpdammarna:karpdammarnas
+825998r8<substantiv>karpfisk:karpfisk:karpfisks:karpfisken:karpfiskens:karpfiskar:karpfiskars:karpfiskarna:karpfiskarnas
+741955r4<substantiv>karré:karré:karrés:karrén:karréns:karréer:karréers:karréerna:karréernas
+CUSTOM: y y karré
+549492r10<substantiv>karriär:karriär:karriärs:karriären:karriärens:karriärer:karriärers:karriärerna:karriärernas
+CUSTOM: y y karriär
+850658r3<substantiv>karriärism:karriärism:karriärisms:karriärismen:karriärismens::::
+561107r3<substantiv>karriärist:karriärist:karriärists:karriäristen:karriäristens:karriärister:karriäristers:karriäristerna:karriäristernas
+CUSTOM: y y karriärist
+581187r4<adjektiv>karriäristisk:karriäristisk:karriäristiskt:karriäristiska:karriäristiska::::karriäristiske
+701989r4<substantiv>karriärkvinna:karriärkvinna:karriärkvinnas:karriärkvinnan:karriärkvinnans:karriärkvinnor:karriärkvinnors:karriärkvinnorna:karriärkvinnornas
+COMPOUND(549492, 557802): karriär + kvinna
+701985r4<adjektiv>karriärlysten:karriärlysten:karriärlystet:karriärlystna:karriärlystna:!:!:!:karriärlystne
+COMPOUND(549492, 621010): karriär + lysten
+701998r5<adjektiv>karriärmedveten:karriärmedveten:karriärmedvetet:karriärmedvetna:karriärmedvetna::::karriärmedvetne
+COMPOUND(549492, 687609): karriär + medveten
+702001r4<substantiv>karriärmöjlighet:karriärmöjlighet:karriärmöjlighets:karriärmöjligheten:karriärmöjlighetens:karriärmöjligheter:karriärmöjligheters:karriärmöjligheterna:karriärmöjligheternas
+COMPOUND(549492, 602938): karriär + möjlighet
+CUSTOM: y y karriärmöjlighets
+955496r4<substantiv>karriärsosse:karriärsosse:karriärsosses:karriärsossen:karriärsossens:karriärsossar:karriärsossars:karriärsossarna:karriärsossarnas
+COMPOUND(549492, 626475): karriär + sosse
+561108r3<substantiv>karriärstege:karriärstege:karriärsteges:karriärstegen:karriärstegens:karriärstegar:karriärstegars:karriärstegarna:karriärstegarnas
+561116r4<adjektiv>karsk:karsk:karskt:karska:karska:karskare:karskast:karskaste:karske
+652103r4<verb>karska:karska:karskade:karskat:karskar:karska::::::::karskande:
+826008r3<substantiv>karskhet:karskhet:karskhets:karskheten:karskhetens::::
+869627r3<substantiv>karstbildning:karstbildning:karstbildnings:karstbildningen:karstbildningens:karstbildningar:karstbildningars:karstbildningarna:karstbildningarnas
+981480r3<substantiv>karstlandskap:karstlandskap:karstlandskaps:karstlandskapet:karstlandskapets:karstlandskap:karstlandskaps:karstlandskapen:karstlandskapens
+561117r5<substantiv>kart:kart:karts:karten:kartens:kartar:kartars:kartarna:kartarnas
+DEFINITION 1: Omogen frukt
+CUSTOM: y n
+561126r14<substantiv>karta:karta:kartas:kartan:kartans:kartor:kartors:kartorna:kartornas
+CUSTOM: y y kart
+581190r4<adjektiv>kartagisk:kartagisk:kartagiskt:kartagiska:kartagiska::::kartagiske
+928911r4<substantiv>kartbok:kartbok:kartboks:kartboken:kartbokens:kartböcker:kartböckers:kartböckerna:kartböckernas
+COMPOUND(561126, 555346): karta + bok
+549493r4<substantiv>kartell:kartell:kartells:kartellen:kartellens:karteller:kartellers:kartellerna:kartellernas
+CUSTOM: y y kartell
+744595r4<substantiv>kartellbildning:kartellbildning:kartellbildnings:kartellbildningen:kartellbildningens:kartellbildningar:kartellbildningars:kartellbildningarna:kartellbildningarnas
+COMPOUND(549493, 651396): kartell + bildning
+589798r3<verb>kartellera:kartellera:kartellerade:kartellerat:kartellerar:kartellera:::::::::
+589802r4<verb>kartera:kartera:karterade:karterat:karterar:kartera:karteras:karterades:karterats:karteras:karterad:karterat:karterade:karterande:
+772160r4<substantiv>kartering:kartering:karterings:karteringen:karteringens:karteringar:karteringars:karteringarna:karteringarnas
+CUSTOM: y y karterings
+826012r3<substantiv>karteringsarbete::::::::
+COMPOUND(772160, 612263): kartering + arbete
+652104r3<substantiv>kartesch:kartesch:karteschs:karteschen

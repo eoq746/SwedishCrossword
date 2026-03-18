@@ -1,0 +1,609 @@
+ions:donationen:donationens:donationer:donationers:donationerna:donationernas
+CUSTOM: y y donations
+650526r3<substantiv>donator:donator:donators:donatorn:donatorns:donatorer:donatorers:donatorerna:donatorernas
+CUSTOM: y y donator
+903831r3<egennamn>Donau:Donau:Donaus
+546430r5<verb>donera:donera:donerade:donerat:donerar:donera:doneras:donerades:donerats:doneras:donerad:donerat:donerade:donerande:
+958649r4<substantiv>doning, doningar:::::doningar:doningars:doningarna:doningarnas
+CUSTOM: y n
+571868r3<adjektiv>donlägig:donlägig:donlägigt:donlägiga:donlägiga::::
+650528r3<substantiv>donna:donna:donnas:donnan:donnans:donnor:donnors:donnorna:donnornas
+552325r19<substantiv>dop:dop:dops:dopet:dopets:dop:dops:dopen:dopens
+CUSTOM: y n
+546431r6<verb>dopa:dopa:dopade:dopat:dopar:dopa:dopas:dopades:dopats:dopas:dopad:dopat:dopade::
+DEFINITION 1: (dopa sig) Inta ett prestandahöjande preparat [inom idrott]
+DEFINITION 2: Utsätta ett ämne för små mängder av ett annat, t.ex. dopning av kisel.
+790447r3<adjektiv>dopad:dopad:dopat:dopade:dopade:!:!:!:
+974943r4<substantiv>dopakt:dopakt:dopakts:dopakten:dopaktens:dopakter:dopakters:dopakterna:dopakternas
+COMPOUND(552325, 548163): dop + akt
+753498r3<substantiv>dopamin:dopamin:dopamins:dopaminet:dopaminets::::
+CUSTOM: y y dopamin
+863504r3<substantiv>dopattest:dopattest:dopattests:dopattesten:dopattestens:dopattester:dopattesters:dopattesterna:dopattesternas
+974951r4<substantiv>dopbevis:dopbevis:dopbevis:dopbeviset:dopbevisets:dopbevis:dopbevis:dopbevisen:dopbevisens
+COMPOUND(552325, 552246): dop + bevis
+974956r4<substantiv>dopbok:dopbok:dopboks:dopboken:dopbokens:dopböcker:dopböckers:dopböckerna:dopböckernas
+COMPOUND(552325, 555346): dop + bok
+975019r4<substantiv>dopceremoni:dopceremoni:dopceremonis:dopceremonin:dopceremonins:dopceremonier:dopceremoniers:dopceremonierna:dopceremoniernas
+COMPOUND(552325, 661054): dop + ceremoni
+975028r4<substantiv>dopfest:dopfest:dopfests:dopfesten:dopfestens:dopfester:dopfesters:dopfesterna:dopfesternas
+COMPOUND(552325, 548912): dop + fest
+551039r4<substantiv>dopfunt:dopfunt:dopfunts:dopfunten:dopfuntens:dopfuntar:dopfuntars:dopfuntarna:dopfuntarnas
+COMPOUND(552325, 904539): dop + funt
+898822r4<substantiv>dopförrättare:dopförrättare:dopförrättares:dopförrättaren:dopförrättarens:dopförrättare:dopförrättares:dopförrättarna:dopförrättarnas
+COMPOUND(552325, 615257): dop + förrättare
+974964r4<substantiv>dopgrav:dopgrav:dopgravs:dopgraven:dopgravens:dopgravar:dopgravars:dopgravarna:dopgravarnas
+COMPOUND(552325, 551308): dop + grav
+974973r4<substantiv>dopgudstjänst:dopgudstjänst:dopgudstjänsts:dopgudstjänsten:dopgudstjänstens:dopgudstjänster:dopgudstjänsters:dopgudstjänsterna:dopgudstjänsternas
+COMPOUND(552325, 662606): dop + gudstjänst
+957695r4<substantiv>dopgåva:dopgåva:dopgåvas:dopgåvan:dopgåvans:dopgåvor:dopgåvors:dopgåvorna:dopgåvornas
+COMPOUND(552325, 557267): dop + gåva
+656242r5<substantiv>doping:doping:dopings:dopingen:dopingens:!:!:!:!
+CUSTOM: y y doping
+753503r4<substantiv>dopingfall:dopingfall:dopingfalls:dopingfallet:dopingfallets:dopingfall:dopingfalls:dopingfallen:dopingfallens
+COMPOUND(656242, 552371): doping + fall
+790449r3<adjektiv>dopingklassad:dopingklassad:dopingklassat:dopingklassade:dopingklassade:!:!:!:
+656244r3<substantiv>dopingmedel:dopingmedel:dopingmedels:dopingmedlet:dopingmedlets::::
+753511r4<substantiv>dopingprov:dopingprov:dopingprovs:dopingprovet:dopingprovets:dopingprover, dopingprov:dopingprovers, dopingprovs:dopingproverna, dopingproven:dopingprovernas, dopingprovens
+COMPOUND(656242, 621658): doping + prov
+974982r4<substantiv>dopklänning:dopklänning:dopklännings:dopklänningen:dopklänningens:dopklänningar:dopklänningars:dopklänningarna:dopklänningarnas
+COMPOUND(552325, 597117): dop + klänning
+863512r3<substantiv>dopnamn:dopnamn:dopnamns:dopnamnet:dopnamnets:dopnamn:dopnamns:dopnamnen:dopnamnens
+679133r5<substantiv>dopning:dopning:dopnings:dopningen:dopningens::::
+CUSTOM: y y dopnings +dopnings
+679132r4<substantiv>dopningspiller:dopningspiller:dopningspillers:dopningspillret:dopningspillrets:dopningspiller:dopningspillers:dopningspillren, dopningspillerna:dopningspillrens, dopningspillernas
+COMPOUND(679133, 623318): dopning + piller
+679144r4<substantiv>dopningspreparat:dopningspreparat:dopningspreparats:dopningspreparatet:dopningspreparatets:dopningspreparat:dopningspreparats:dopningspreparaten:dopningspreparatens
+COMPOUND(679133, 552786): dopning + preparat
+552327r20<substantiv>dopp:dopp:dopps:doppet:doppets:dopp:dopps:doppen:doppens
+CUSTOM: y n
+546432r5<verb>doppa:doppa:doppade:doppat:doppar:doppa:doppas:doppades:doppats:doppas:doppad:doppat:doppade:doppande:
+946420r4<substantiv>dopparedag, dopparedan:::dopparedagen, dopparedan:dopparedagens, dopparedans::::
+790453r3<adjektiv>doppfärgad:doppfärgad:doppfärgat:doppfärgade:doppfärgade:!:!:!:
+650536r4<substantiv>dopping:dopping:doppings:doppingen:doppingens:doppingar:doppingars:doppingarna:doppingarnas
+DEFINITION 1: En fågelart.
+589076r3<verb>dopplackera:dopplackera:dopplackerade:dopplackerat:dopplackerar:dopplackera:::::::::
+863518r3<substantiv>dopplereffekt:dopplereffekt:dopplereffekts:dopplereffekten:dopplereffektens::::
+790456r3<adjektiv>dopplerkorrigerad:dopplerkorrigerad:dopplerkorrigerat:dopplerkorrigerade:dopplerkorrigerade:!:!:!:
+974991r3<substantiv>dopplerradar:dopplerradar:dopplerradars:dopplerradarn:dopplerradarns::::
+974995r3<substantiv>doppning:doppning:doppnings:doppningen:doppningens:doppningar:doppningars:doppningarna:doppningarnas
+863522r3<substantiv>doppsko:doppsko:doppskos:doppskon:doppskons:doppskor:doppskors:doppskorna:doppskornas
+615188r3<substantiv>doppvärmare:doppvärmare:doppvärmares:doppvärmaren:doppvärmarens:doppvärmare:doppvärmares:doppvärmarna:doppvärmarnas
+CUSTOM: y y doppvärmar
+975003r4<substantiv>dopritual:dopritual:doprituals:dopritualen:dopritualens:dopritualer:dopritualers:dopritualerna:dopritualernas
+COMPOUND(552325, 550396): dop + ritual
+924351r2<substantiv>dopsked::::::::
+975011r4<substantiv>dopskål:dopskål:dopskåls:dopskålen:dopskålens:dopskålar:dopskålars:dopskålarna:dopskålarnas
+COMPOUND(552325, 551854): dop + skål
+975038r4<substantiv>dopstatistik:dopstatistik:dopstatistiks:dopstatistiken:dopstatistikens::::
+COMPOUND(552325, 550567): dop + statistik
+863530r3<substantiv>dopvatten:dopvatten:dopvattens:dopvattnet:dopvattnets:!:!:!:!
+853911r3<egennamn>Dora:Dora:Doras
+989962r3<egennamn>Doris:Doris:Doris
+579548r3<adjektiv>dorisk:dorisk:doriskt:doriska:doriska::::
+863534r3<substantiv>dormitorium:dormitorium:dormitoriums:dormitoriet:dormitoriets:dormitorier:dormitoriers:dormitorierna:dormitoriernas
+686020r4<substantiv>dorn:dorn:dorns:dornen:dornens:dornar:dornars:dornarna:dornarnas
+CUSTOM: n n y
+728084r3<egennamn>Dorotea:Dorotea:Doroteas
+797447r3<adjektiv>dorsal:dorsal:dorsalt:dorsala:dorsala::::
+548708r6<substantiv>dos:dos:dos:dosen:dosens:doser:dosers:doserna:dosernas
+556570r6<substantiv>dosa:dosa:dosas:dosan:dosans:dosor:dosors:dosorna:dosornas
+863542r3<substantiv>dosbarometer:dosbarometer:dosbarometers:dosbarometern:dosbarometerns:dosbarometrar:dosbarometrars:dosbarometrarna:dosbarometrarnas
+546433r5<verb>dosera:dosera:doserade:doserat:doserar:dosera:doseras:doserades:doserats:doseras:doserad:doserat:doserade:doserande:
+656248r4<substantiv>dosering:dosering:doserings:doseringen:doseringens:doseringar:doseringars:doseringarna:doseringarnas
+CUSTOM: y y doserings +doserings
+551047r3<substantiv>doseringsanvisning:doseringsanvisning:doseringsanvisnings:doseringsanvisningen:doseringsanvisningens:doseringsanvisningar:doseringsanvisningars:doseringsanvisningarna:doseringsanvisningarnas
+CUSTOM: y y doseringsanvisnings
+927370r3<substantiv>dosett:dosett:dosetts:dosetten:dosettens:dosetter:dosetters:dosetterna:dosetternas
+785830r6<substantiv>dosimeter:dosimeter:dosimeters:dosimetern:dosimeterns:dosimetrar:dosimetrars:dosimetrarna:dosimetrarnas
+DEFINITION 1: Dosimeter är ett instrument som anger hur stor stråldos som instrumentet utsatts för under viss tid. Sitter vanligtvis på en person för att övervaka vad personen har blivit utsatt för (kallas även persondosimeter).
+863551r3<substantiv>dosmätare:dosmätare:dosmätares:dosmätaren:dosmätarens:dosmätare:dosmätares:dosmätarna:dosmätarnas
+589080r3<verb>dossera:dossera:dosserade:dosserat:dosserar:dossera:::::::::
+736503r4<substantiv>dossier:dossier:dossiers:dossiern, dossieren:dossierns, dossierens:dossierer:dossierers:dossiererna:dossierernas
+975043r3<substantiv>dosvattenpass:dosvattenpass:dosvattenpass:dosvattenpasset:dosvattenpassets:dosvattenpass:dosvattenpass:dosvattenpassen:dosvattenpassens
+975048r3<substantiv>dotation:dotation:dotations:dotationen:dotationens:dotationer:dotationers:dotationerna:dotationernas
+589088r3<verb>dotera:dotera:doterade:doterat:doterar:dotera:::::::::
+617523r15<substantiv>dotter:dotter:dotters:dottern:dotterns:döttrar:döttrars:döttrarna:döttrarnas
+CUSTOM: y y dotter
+938898r4<substantiv>dotterbolag:dotterbolag:dotterbolags:dotterbolaget:dotterbolagets:dotterbolag:dotterbolags:dotterbolagen:dotterbolagens
+COMPOUND(617523, 552264): dotter + bolag
+892725r4<substantiv>dotterdotter:dotterdotter:dotterdotters:dotterdottern:dotterdotterns:dotterdöttrar:dotterdöttrars:dotterdöttrarna:dotterdöttrarnas
+COMPOUND(617523, 617523): dotter + dotter
+565702r3<adjektiv>dotterlig:dotterlig:dotterligt:dotterliga:dotterliga::::
+688960r4<substantiv>dotterson:dotterson:dottersons:dottersonen:dottersonens:dottersöner:dottersöners:dottersönerna:dottersönernas
+COMPOUND(617523, 559285): dotter + son
+554534r3<egennamn>Douglas:Douglas:Douglas
+558191r4<adjektiv>dov:dov:dovt:dova:dova:dovare:dovast:dovaste:::::::::
+551055r3<substantiv>dovhjort:dovhjort:dovhjorts:dovhjorten:dovhjortens:dovhjortar:dovhjortars:dovhjortarna:dovhjortarnas
+CUSTOM: y y dovhjorts
+863557r3<substantiv>downperiod:downperiod:downperiods:downperioden:downperiodens:downperioder:downperioders:downperioderna:downperiodernas
+548709r3<substantiv>drabant:drabant:drabants:drabanten:drabantens:drabanter:drabanters:drabanterna:drabanternas
+863565r3<substantiv>drabantstat:drabantstat:drabantstats:drabantstaten:drabantstatens:drabantstater:drabantstaters:drabantstaterna:drabantstaternas
+546434r5<verb>drabba:drabba:drabbade:drabbat:drabbar:drabba:drabbas:drabbades:drabbats:drabbas:drabbad:drabbat:drabbade:drabbande:
+656249r3<substantiv>drabbning:drabbning:drabbnings:drabbningen:drabbningens:drabbningar:drabbningars:drabbningarna:drabbningarnas
+CUSTOM: y y drabbnings
+558196r25<verb>dra, draga:dra, draga:drog:dragit:drar, drager:dra:dras, dragas:drogs:dragits:dras, drages:dragen:draget:dragna:dragande:
+CUSTOM: y n drag
+937961r3<substantiv>draft:draft:drafts:draften:draftens:drafter:drafters:drafterna:drafternas
+CUSTOM: y n y
+937970r3<verb>drafta:drafta:draftade:draftat:draftar:drafta:draftas:draftades:draftats:draftas:draftad:draftat:draftade:draftande:
+CUSTOM: y n y
+552329r8<substantiv>drag:drag:drags:draget:dragets:drag:drags:dragen:dragens
+615189r4<substantiv>dragare:dragare:dragares:dragaren:dragarens:dragare:dragares:dragarna:dragarnas
+CUSTOM: y y dragar +dragar
+569013r3<adjektiv>dragbar:dragbar:dragbart:dragbara:dragbara::::
+CUSTOM: n n
+955654r3<substantiv>dragbegränsare:dragbegränsare:dragbegränsares:dragbegränsaren:dragbegränsarens:dragbegränsare:dragbegränsares:dragbegränsarna:dragbegränsarnas
+928624r4<substantiv>dragbil:dragbil:dragbils:dragbilen:dragbilens:dragbilar:dragbilars:dragbilarna:dragbilarnas
+COMPOUND(558196, 550885): dra, draga + bil
+724962r3<substantiv>dragdjur:dragdjur:dragdjurs:dragdjuret:dragdjurets:dragdjur:dragdjurs:dragdjuren:dragdjurens
+863573r3<substantiv>dragé:dragé:dragés:dragén:dragéns:dragéer:dragéers:dragéerna:dragéernas
+591606r4<adjektiv>dragen:dragen:draget:dragna:dragna::::
+589092r4<verb>dragera:dragera:dragerade:dragerat:dragerar:dragera:drageras:dragerades:dragerats:drageras:dragerad:dragerat:dragerade:dragerande:
+975056r3<substantiv>dragering:dragering:dragerings:drageringen:drageringens::::
+563723r3<adjektiv>dragfri:dragfri:dragfritt:dragfria:dragfria::::
+637141r3<substantiv>dragg:dragg:draggs:draggen:draggens:draggar:draggars:draggarna:draggarnas
+CUSTOM: y n
+637149r5<verb>dragga:dragga:draggade:draggat:draggar:dragga:draggas:draggades:draggats:draggas:draggad:draggat:draggade:draggande:
+CUSTOM: y n
+975060r3<substantiv>draggning:draggning:draggnings:draggningen:draggningens:draggningar:draggningars:draggningarna:draggningarnas
+656250r3<substantiv>draghjälp:draghjälp:draghjälps:draghjälpen:draghjälpens::::
+571871r4<adjektiv>dragig:dragig:dragigt:dragiga:dragiga:dragigare:dragigast:dragigaste:
+933952r4<substantiv>dragkamp:dragkamp:dragkamps:dragkampen:dragkampens:dragkamper:dragkampers:dragkamperna:dragkampernas
+COMPOUND(558196, 549421): dra, draga + kamp
+593920r3<substantiv>dragkedja:dragkedja:dragkedjas:dragkedjan:dragkedjans:dragkedjor:dragkedjors:dragkedjorna:dragkedjornas
+732022r3<substantiv>dragkraft:dragkraft:dragkrafts:dragkraften:dragkraftens:dragkrafter:dragkrafters:dragkrafterna:dragkrafternas
+598184r3<substantiv>dragkrok:dragkrok:dragkroks:dragkroken:dragkrokens:dragkrokar:dragkrokars:dragkrokarna:dragkrokarnas
+593928r3<substantiv>dragkula:dragkula:dragkulas:dragkulan:dragkulans:dragkulor:dragkulors:dragkulorna:dragkulornas
+724968r3<substantiv>dragkärra:dragkärra:dragkärras:dragkärran:dragkärrans:dragkärror:dragkärrors:dragkärrorna:dragkärrornas
+894670r4<substantiv>draglok:draglok:dragloks:dragloket:draglokets:draglok:dragloks:dragloken:draglokens
+COMPOUND(558196, 552674): dra, draga + lok
+642709r7<substantiv>dragning:dragning:dragnings:dragningen:dragningens:dragningar:dragningars:dragningarna:dragningarnas
+CUSTOM: y y dragnings +dragnings
+656252r3<substantiv>dragningskraft:dragningskraft:dragningskrafts:dragningskraften:dragningskraftens::::
+863586r3<substantiv>dragoman:dragoman:dragomans:dragomanen:dragomanens:dragomaner:dragomaners:dragomanerna:dragomanernas
+656253r4<substantiv>dragon:dragon:dragons:dragonen:dragonens:dragoner:dragoners:dragonerna:dragonernas
+975068r4<substantiv>dragonregemente:dragonregemente:dragonregementes:dragonregementet:dragonregementets:dragonregementen:dragonregementens:dragonregementena:dragonregementenas
+COMPOUND(656253, 621703): dragon + regemente
+656255r3<substantiv>dragplåster:dragplåster:dragplåsters:dragplåstret:dragplåstrets:dragplåster:dragplåsters:dragplåstren:dragplåstrens
+731244r5<substantiv>dragprov:dragprov:dragprovs:dragprovet:dragprovets:dragprov:dragprovs:dragproven:dragprovens
+COMPOUND(558196, 621657): dra, draga + prov
+CUSTOM: y y dragprov
+731243r4<substantiv>dragprovkurva:dragprovkurva:dragprovkurvas:dragprovkurvan:dragprovkurvans:dragprovkurvor:dragprovkurvors:dragprovkurvorna:dragprovkurvornas
+COMPOUND(731244, 594565): dragprov + kurva
+849564r3<substantiv>dragrem:dragrem:dragrems:dragremmen:dragremmens:dragremmar:dragremmars:dragremmarna:dragremmarnas
+930564r4<substantiv>dragsko:dragsko:dragskos:dragskon:dragskons:dragskor:dragskors:dragskorna:dragskornas
+COMPOUND(558196, 555202): dra, draga + sko
+753514r5<substantiv>dragspel:dragspel:dragspels:dragspelet:dragspelets:dragspel:dragspels:dragspelen:dragspelens
+CUSTOM: y y dragspels
+836899r4<substantiv>dragspelslåt:dragspelslåt:dragspelslåts:dragspelslåten:dragspelslåtens:dragspelslåtar:dragspelslåtars:dragspelslåtarna:dragspelslåtarnas
+COMPOUND(753514, 551711): dragspel + låt
+753513r4<substantiv>dragspelsmusik:dragspelsmusik:dragspelsmusiks:dragspelsmusiken:dragspelsmusikens:!:!:!:!
+COMPOUND(753514, 550058): dragspel + musik
+732013r3<substantiv>dragspänning:dragspänning:dragspännings:dragspänningen:dragspänningens:dragspänningar:dragspänningars:dragspänningarna:dragspänningarnas
+563726r3<adjektiv>dragspänningsfri:dragspänningsfri:dragspänningsfritt:dragspänningsfria:dragspänningsfria::::
+975076r3<substantiv>dragster:dragster:dragsters:dragstern:dragsterns::::
+609445r3<substantiv>dragströmbrytare:dragströmbrytare:dragströmbrytares:dragströmbrytaren:dragströmbrytarens:dragströmbrytare:dragströmbrytares:dragströmbrytarna:dragströmbrytarnas
+CUSTOM: y y dragströmbrytar
+863594r3<substantiv>drakblod:drakblod:drakblods:drakblodet:drakblodets::::
+975080r3<substantiv>drakblodsträd:drakblodsträd:drakblodsträds:drakblodsträdet:drakblodsträdets:drakblodsträd:drakblodsträds:drakblodsträden:drakblodsträdens
+753520r4<substantiv>drakbåt:drakbåt:drakbåts:drakbåten:drakbåtens:drakbåtar:drakbåtars:drakbåtarna:drakbåtarnas
+CUSTOM: y y drakbåts
+753529r4<substantiv>drakbåtsfestival:drakbåtsfestival:drakbåtsfestivals:drakbåtsfestivalen:drakbåtsfestivalens:drakbåtsfestivaler:drakbåtsfestivalers:drakbåtsfestivalerna:drakbåtsfestivalernas
+COMPOUND(753520, 548914): drakbåt + festival
+840853r3<substantiv>drakdödare:drakdödare:drakdödares:drakdödaren:drakdödarens:drakdödare:drakdödares:drakdödarna:drakdödarnas
+625242r7<substantiv>drake:drake:drakes:draken:drakens:drakar:drakars:drakarna:drakarnas
+DEFINITION 1: Eldsprutande sagodjur.
+DEFINITION 2: Glidflygande leksak.
+CUSTOM: y y
+753530r3<substantiv>drakflygare:drakflygare:drakflygares:drakflygaren:drakflygarens:drakflygare:drakflygares:drakflygarna:drakflygarnas
+753536r3<substantiv>drakflygning:drakflygning:drakflygnings:drakflygningen:drakflygningens::::
+960966r4<substantiv>drakhuvud:drakhuvud:drakhuvuds:drakhuvudet:drakhuvudets:drakhuvud, drakhuvuden:drakhuvuds, drakhuvudens:drakhuvudena:drakhuvudenas
+COMPOUND(625242, 552483): drake + huvud
+579550r4<adjektiv>drakonisk:drakonisk:drakoniskt:drakoniska:drakoniska::::drakoniske
+863599r3<substantiv>drakskepp:drakskepp:drakskepps:drakskeppet:drakskeppets:drakskepp:drakskepps:drakskeppen:drakskeppens
+863606r3<substantiv>drakslinga:drakslinga:drakslingas:drakslingan:drakslingans:drakslingor:drakslingors:drakslingorna:drakslingornas
+753540r4<substantiv>draksådd:draksådd:draksådds:draksådden:draksåddens:draksådder:draksådders:draksådderna:draksåddernas
+COMPOUND(625242, 596072): drake + sådd
+863615r3<substantiv>draködla:draködla:draködlas:draködlan:draködlans:draködlor:draködlors:draködlorna:draködlornas
+625251r3<substantiv>dram:dram:drams:dramen:dramens:dramer:dramers:dramerna:dramernas
+CUSTOM: y n !drams
+625246r14<substantiv>drama:drama:dramas:dramat:dramats:dramer:dramers:dramerna:dramernas
+CUSTOM: y y drama
+656261r3<substantiv>dramadokumentär:dramadokumentär:dramadokumentärs:dramadokumentären:dramadokumentärens:dramadokumentärer:dramadokumentärers:dramadokumentärerna:dramadokumentärernas
+732830r4<substantiv>dramaserie:dramaserie:dramaseries:dramaserien:dramaseriens:dramaserier:dramaseriers:dramaserierna:dramaseriernas
+COMPOUND(625246, 555464): drama + serie
+727052r5<egennamn>Dramaten:Dramaten:Dramatens
+BASEWORDS: Dramaten
+CUSTOM: y n Dramaten
+874337r4<substantiv>Dramatenchef:Dramatenchef:Dramatenchefs:Dramatenchefen:Dramatenchefens:Dramatenchefer:Dramatenchefers:Dramatencheferna:Dramatenchefernas
+COMPOUND(727052, 548529): Dramaten + chef
+CUSTOM: n n
+548711r8<substantiv>dramatik:dramatik:dramatiks:dramatiken:dramatikens:!:!:!:!
+616835r3<substantiv>dramatiker:dramatiker:dramatikers:dramatikern:dramatikerns:dramatiker:dramatikers:dramatikerna:dramatikernas
+546435r6<verb>dramatisera:dramatisera:dramatiserade:dramatiserat:dramatiserar:dramatisera:dramatiseras:dramatiserades:dramatiserats:dramatiseras:dramatiserad:dramatiserat:dramatiserade:dramatiserande:
+732585r3<substantiv>dramatisering:dramatisering:dramatiserings:dramatiseringen:dramatiseringens:dramatiseringar:dramatiseringars:dramatiseringarna:dramatiseringarnas
+579553r4<adjektiv>dramatisk:dramatisk:dramatiskt:dramatiska:dramatiska::::dramatiske
+548713r3<substantiv>dramaturg:dramaturg:dramaturgs:dramaturgen:dramaturgens:dramaturger:dramaturgers:dramaturgerna:dramaturgernas
+656268r3<substantiv>dramaturgi:dramaturgi:dramaturgis:dramaturgin:dramaturgins:!:!:!:!
+656271r3<adjektiv>dramaturgisk:dramaturgisk:dramaturgiskt:dramaturgiska:dramaturgiska:!:!:!:
+627936r4<substantiv>drank:drank:dranks:dranken:drankens::::
+DEFINITION 1: En restprodukt vid ölbryggning.
+625255r3<substantiv>drapa:drapa:drapas:drapan:drapans:drapor:drapors:draporna:drapornas
+546436r5<verb>drapera:drapera:draperade:draperat:draperar:drapera:draperas:draperades:draperats:draperas:draperad:draperat:draperade:draperande:
+656275r3<substantiv>draperi:draperi:draperis:draperiet:draperiets:draperier:draperiers:draperierna:draperiernas
+863626r3<substantiv>drapering:drapering:draperings:draperingen:draperingens:draperingar:draperingars:draperingarna:draperingarnas
+591678r3<deponens>dras:dras:drogs:dragits:dras:dras
+579554r4<adjektiv>drastisk:drastisk:drastiskt:drastiska:drastiska::::drastiske
+863635r3<substantiv>drasut:drasut:drasuts:drasuten:drasutens:drasuter:drasuters:drasuterna:drasuternas
+863643r3<verb>dratta:dratta:drattade:drattat:drattar:dratta:::::::::
+627932r4<substantiv>drav:drav:dravs:draven:dravens::::
+DEFINITION 1: En restprodukt vid ölbryggning.
+CUSTOM: n n
+656277r3<substantiv>dravel:dravel:dravels:dravlet:dravlets:!:!:!:!
+656279r3<substantiv>dregel:dregel:dregels:dreglet:dreglets:!:!:!:!
+546437r10<verb>dregla:dregla:dreglade:dreglat:dreglar:dregla:dreglas:dreglades:dreglats:dreglas:!:!:!:dreglande:
+975086r3<substantiv>dregling:dregling:dreglings:dreglingen:dreglingens::::
+649083r5<verb>dreja:dreja:drejade:drejat:drejar:dreja:drejas:drejades:drejats:drejas:drejad:drejat:drejade:drejande:
+926273r4<substantiv>drejare:drejare:drejares:drejaren:drejarens:drejare:drejares:drejarna:drejarnas
+DEFINITION 1: Person eller redskap
+975090r3<substantiv>drejning:drejning:drejnings:drejningen:drejningens::::
+863648r3<substantiv>drejskiva:drejskiva:drejskivas:drejskivan:drejskivans:drejskivor:drejskivors:drejskivorna:drejskivornas
+990402r3<egennamn>Dresden:Dresden:Dresdens
+649084r4<substantiv>dress:dress:dress:dressen:dressens:dressar, dresser:dressars, dressers:dressarna, dresserna:dressarnas, dressernas
+960974r3<verb>dressa:dressa:dressade:dressat:dressar:dressa:dressas:dressades:dressats:dressas:dressad:dressat:dressade::
+CUSTOM: y n
+546438r5<verb>dressera:dressera:dresserade:dresserat:dresserar:dressera:dresseras:dresserades:dresserats:dresseras:dresserad:dresserat:dresserade:dresserande:
+656282r3<substantiv>dressering:dressering:dresserings:dresseringen:dresseringens:dresseringar:dresseringars:dresseringarna:dresseringarnas
+CUSTOM: y y dresserings
+863657r3<substantiv>dressin:dressin:dressins:dressinen:dressinens:dressiner:dressiners:dressinerna:dressinernas
+656290r3<substantiv>dressing:dressing:dressings:dressingen:dressingens:dressingar:dressingars:dressingarna:dressingarnas
+656291r4<substantiv>dressyr:dressyr:dressyrs:dressyren:dressyrens:dressyrer:dressyrers:dressyrerna:dressyrernas
+CUSTOM: y y dressyr
+863665r3<substantiv>dressör:dressör:dressörs:dressören:dressörens:dressörer:dressörers:dressörerna:dressörernas
+552330r4<substantiv>drev:drev:drevs:drevet:drevets:drev:drevs:dreven:drevens
+CUSTOM: y y drev
+960981r4<verb>dreva:dreva:drevade:drevat:drevar:dreva:drevas:drevades:drevats:drevas::::drevande:
+CUSTOM: y n
+906535r3<substantiv>drever:drever:drevers:drevern:dreverns:drevrar:drevrars:drevrarna:drevrarnas
+CUSTOM: y n
+636508r4<substantiv>drevkarl:drevkarl:drevkarls:drevkarlen:drevkarlens:drevkarlar:drevkarlars:drevkarlarna:drevkarlarnas
+COMPOUND(552330, 551499): drev + karl
+975098r3<substantiv>drevning:drevning:drevnings:drevningen:drevningens::::
+546439r4<verb>dribbla:dribbla:dribblade:dribblat:dribblar:dribbla:dribblas:dribblades:dribblats:dribblas:::::
+689346r3<substantiv>dribblande:dribblande:dribblandes:dribblandet:dribblandets::::
+975102r3<substantiv>dribblare:dribblare:dribblares:dribblaren:dribblarens:dribblare:dribblares:dribblarna:dribblarnas
+960990r3<substantiv>dribbler:dribbler:dribblers:dribblern:dribblerns::::
+656293r3<substantiv>dribbling:dribbling:dribblings:dribblingen:dribblingens:dribblingar:dribblingars:dribblingarna:dribblingarnas
+585294r4<verb>dricka:dricka:drack:druckit:dricker:drick:drickas:dracks:druckits:drickes, dricks:drucken:drucket:druckna:drickande:
+593936r5<substantiv>dricka:dricka:drickas:drickan:drickans:drickor:drickors:drickorna:drickornas
+CUSTOM: y y dryckes dricks
+656294r4<substantiv>drickande:drickande:drickandes:drickandet:drickandets::::
+569016r3<adjektiv>drickbar:drickbar:drickbart:drickbara:drickbara::::
+975108r3<substantiv>drickbarhet:drickbarhet:drickbarhets:drickbarheten:drickbarhetens::::
+571872r3<adjektiv>drickfärdig:drickfärdig:drickfärdigt:drickfärdiga:drickfärdiga::::
+656298r3<substantiv>dricks:dricks:dricks:dricksen:dricksens::::
+656300r3<substantiv>dricksglas:dricksglas:dricksglas:dricksglaset:dricksglasets:dricksglas:dricksglas:dricksglasen:dricksglasens
+656299r3<substantiv>dricksvatten:dricksvatten:dricksvattens:dricksvattnet:dricksvattnets:!:!:!:!
+548714r14<substantiv>drift:drift:drifts:driften:driftens:drifter:drifters:drifterna:drifternas
+CUSTOM: y y drift drifts +drifts
+636892r6<verb>drifta:drifta:driftade:driftat:driftar:drifta:driftas:driftades:driftats:driftas:::::
+571875r3<adjektiv>driftfärdig:driftfärdig:driftfärdigt:driftfärdiga:driftfärdiga::::
+571878r4<adjektiv>driftig:driftig:driftigt:driftiga:driftiga:driftigare:driftigast:driftigaste:driftige
+688965r3<substantiv>driftighet:driftighet:driftighets:driftigheten:driftighetens::::
+CUSTOM: y y driftighets
+753548r5<substantiv>driftkostnad:driftkostnad:driftkostnads:driftkostnaden:driftkostnadens:driftkostnader:driftkostnaders:driftkostnaderna:driftkostnadernas
+COMPOUND(548714, 549744): drift + kostnad
+CUSTOM: y y driftkostnads
+753556r4<substantiv>driftkostnadsberäkning:driftkostnadsberäkning:driftkostnadsberäknings:driftkostnadsberäkningen:driftkostnadsberäkningens:driftkostnadsberäkningar:driftkostnadsberäkningars:driftkostnadsberäkningarna:driftkostnadsberäkningarnas
+COMPOUND(753548, 596470): driftkostnad + beräkning
+863681r3<substantiv>driftkucku:driftkucku:driftkuckus:driftkuckun:driftkuckuns:driftkuckuar:driftkuckuars:driftkuckuarna:driftkuckuarnas
+671419r3<substantiv>driftsavgift:driftsavgift:driftsavgifts:driftsavgiften:driftsavgiftens:driftsavgifter:driftsavgifters:driftsavgifterna:driftsavgifternas
+753557r4<substantiv>driftschef:driftschef:driftschefs:driftschefen:driftschefens:driftschefer:driftschefers:driftscheferna:driftschefernas
+COMPOUND(548714, 548529): drift + chef
+579555r3<adjektiv>driftsteknisk:driftsteknisk:driftstekniskt:driftstekniska:driftstekniska::::
+753558r4<substantiv>driftstopp:driftstopp:driftstopps:driftstoppet:driftstoppets:driftstopp:driftstopps:driftstoppen:driftstoppens
+COMPOUND(548714, 608140): drift + stopp
+727603r6<substantiv>drifttekniker:drifttekniker:driftteknikers:driftteknikern:driftteknikerns:drifttekniker:driftteknikers:driftteknikerna:driftteknikernas
+COMPOUND(548714, 610333): drift + tekniker
+579558r3<adjektiv>driftteknisk:driftteknisk:drifttekniskt:drifttekniska:drifttekniska::::
+975112r4<substantiv>driftvärn:driftvärn:driftvärns:driftvärnet:driftvärnets:driftvärn:driftvärns:driftvärnen:driftvärnens
+975118r4<substantiv>driftvärnsman:driftvärnsman:driftvärnsmans:driftvärnsmannen:driftvärnsmannens:driftvärnsmän:driftvärnsmäns:driftvärnsmännen:driftvärnsmännens
+COMPOUND(975112, 557796): driftvärn + man
+551063r5<substantiv>drill:drill:drills:drillen:drillens:drillar:drillars:drillarna:drillarnas
+546440r5<verb>drilla:drilla:drillade:drillat:drillar:drilla:drillas:drillades:drillats:drillas:drillad:drillat:drillade:drillande:
+730983r4<substantiv>drillborr:drillborr:drillborrs:drillborret:drillborrets:drillborr:drillborrs:drillborren:drillborrens
+COMPOUND(551063, 552266): drill + borr
+975126r4<substantiv>drillborr:drillborr:drillborrs:drillborren:drillborrens:drillborrar:drillborrars:drillborrarna:drillborrarnas
+COMPOUND(551063, 616945): drill + borr
+863673r3<substantiv>drilling:drilling:drillings:drillingen:drillingens:drillingar:drillingars:drillingarna:drillingarnas
+975131r3<substantiv>drillning:drillning:drillnings:drillningen:drillningens:drillningar:drillningars:drillningarna:drillningarnas
+863691r3<substantiv>drillsnäppa:drillsnäppa:drillsnäppas:drillsnäppan:drillsnäppans:drillsnäppor:drillsnäppors:drillsnäpporna:drillsnäppornas
+551065r3<substantiv>drink:drink:drinks:drinken:drinkens:drinkar:drinkars:drinkarna:drinkarnas
+CUSTOM: y y drink
+615190r3<substantiv>drinkare:drinkare:drinkares:drinkaren:drinkarens:drinkare:drinkares:drinkarna:drinkarnas
+CUSTOM: y y drinkar
+656305r4<verb>drista:drista:dristade:dristat:dristar:drista::::::::dristande:
+571879r5<adjektiv>dristig:dristig:dristigt:dristiga:dristiga:dristigare:dristigast:dristigaste:dristige
+656306r3<substantiv>dristighet:dristighet:dristighets:dristigheten:dristighetens::::
+CUSTOM: y y dristighets
+975139r3<substantiv>drittel:drittel:drittels:dritteln:drittelns:drittlar:drittlars:drittlarna:drittlarnas
+624094r4<substantiv>driv:driv:drivs:drivet:drivets:driv:drivs:driven:drivens
+CUSTOM: y y
+593943r6<substantiv>driva:driva:drivas:drivan:drivans:drivor:drivors:drivorna:drivornas
+CUSTOM: y y driv
+585295r14<verb>driva:driva:drev:drivit:driver:driv:drivas:drevs:drivits:drivs, drives:driven:drivet:drivna:drivande:
+CUSTOM: y y driv
+656307r4<adjektiv>drivande:drivande:drivande:drivande:drivande:!:!:!:
+975147r3<substantiv>drivare:drivare:drivares:drivaren:drivarens:drivare:drivares:drivarna:drivarnas
+551066r3<substantiv>drivbänk:drivbänk:drivbänks:drivbänken:drivbänkens:drivbänkar:drivbänkars:drivbänkarna:drivbänkarnas
+937336r3<substantiv>drive:drive:drives:driven:drivens:drivar:drivars:drivarna:drivarnas
+633280r12<adjektiv>driven:driven:drivet:drivna:drivna:drivnare:drivnast:drivnaste:drivne
+956060r3<substantiv>driver:driver:drivers:drivern:driverns::::
+CUSTOM: y n
+656308r3<substantiv>drivfjäder:drivfjäder:drivfjäders:drivfjädern:drivfjäderns:drivfjädrar:drivfjädrars:drivfjädrarna:drivfjädrarnas
+957000r6<substantiv>drivgarn:drivgarn:drivgarns:drivgarnet:drivgarnets:drivgarn:drivgarns:drivgarnen:drivgarnens
+COMPOUND(585295, 552422): driva + garn
+957006r4<substantiv>drivgarnsfiske:drivgarnsfiske:drivgarnsfiskes:drivgarnsfisket:drivgarnsfiskets:drivgarnsfisken:drivgarnsfiskens:drivgarnsfiskena:drivgarnsfiskenas
+COMPOUND(957000, 625321): drivgarn + fiske
+957015r4<substantiv>drivgarnsförbud:drivgarnsförbud:drivgarnsförbuds:drivgarnsförbudet:drivgarnsförbudets::::
+COMPOUND(957000, 552399): drivgarn + förbud
+885453r3<substantiv>drivgas:drivgas:drivgas:drivgasen:drivgasens:drivgaser:drivgasers:drivgaserna:drivgasernas
+656314r3<substantiv>drivhus:drivhus:drivhus:drivhuset:drivhusets:drivhus:drivhus:drivhusen:drivhusens
+CUSTOM: y y drivhus
+760842r3<substantiv>drivhuseffekt:drivhuseffekt:drivhuseffekts:drivhuseffekten:drivhuseffektens::::
+885461r3<substantiv>drivhusgas:drivhusgas:drivhusgas:drivhusgasen:drivhusgasens:drivhusgaser:drivhusgasers:drivhusgaserna:drivhusgasernas
+845545r4<substantiv>drivis:drivis:drivis:drivisen:drivisens:drivisar:drivisars:drivisarna:drivisarnas
+COMPOUND(585295, 556177): driva + is
+656317r3<substantiv>drivkraft:drivkraft:drivkrafts:drivkraften:drivkraftens:drivkrafter:drivkrafters:drivkrafterna:drivkrafternas
+656319r3<substantiv>drivkälla:drivkälla:drivkällas:drivkällan:drivkällans::::
+733218r7<substantiv>drivmedel:drivmedel:drivmedels:drivmedlet:drivmedlets:drivmedel:drivmedels:drivmedlen:drivmedlens
+COMPOUND(624094, 560532): driv + medel
+633284r4<substantiv>drivning:drivning:drivnings:drivningen:drivningens:drivningar:drivningars:drivningarna:drivningarnas
+CUSTOM: y y drivnings +drivnings
+656320r3<substantiv>drivrem:drivrem:drivrems:drivremmen:drivremmens:drivremmar:drivremmars:drivremmarna:drivremmarnas
+656321r3<substantiv>drivrutin:drivrutin:drivrutins:drivrutinen:drivrutinens:drivrutiner:drivrutiners:drivrutinerna:drivrutinernas
+930572r4<substantiv>drivsnö:drivsnö:drivsnös:drivsnön:drivsnöns::::
+COMPOUND(593943, 619711): driva + snö
+731853r4<substantiv>drivsystem:drivsystem:drivsystems:drivsystemet:drivsystemets:drivsystem:drivsystems:drivsystemen:drivsystemens
+COMPOUND(585295, 553021): driva + system
+656329r3<substantiv>drivved:drivved:drivveds:drivveden:drivvedens:!:!:!:!
+548715r8<substantiv>drog:drog:drogs:drogen:drogens:droger:drogers:drogerna:drogernas
+CUSTOM: y y drog
+733226r3<verb>droga:droga:drogade:drogat:drogar:droga:drogas:drogades:drogats:drogas:drogad:drogat:drogade:drogande:
+656331r3<adjektiv>drogberoende:drogberoende:drogberoende:drogberoende:drogberoende:!:!:!:
+563729r4<adjektiv>drogfri:drogfri:drogfritt:drogfria:drogfria::::drogfrie::::::::
+689351r4<substantiv>drogkultur:drogkultur:drogkulturs:drogkulturen:drogkulturens:drogkulturer:drogkulturers:drogkulturerna:drogkulturernas
+COMPOUND(548715, 549804): drog + kultur
+656332r3<substantiv>drogmissbruk:drogmissbruk:drogmissbruks:drogmissbruket:drogmissbrukets::::
+656336r3<substantiv>drogmissbrukare:drogmissbrukare:drogmissbrukares:drogmissbrukaren:drogmissbrukarens:drogmissbrukare:drogmissbrukares:drogmissbrukarna:drogmissbrukarnas
+CUSTOM: y y drogmissbrukar
+712657r4<substantiv>drogpolitik:drogpolitik:drogpolitiks:drogpolitiken:drogpolitikens::::
+COMPOUND(548715, 550224): drog + politik
+656342r3<substantiv>drogproblem:drogproblem:drogproblems:drogproblemet:drogproblemets:drogproblem:drogproblems:drogproblemen:drogproblemens
+912906r4<substantiv>drograttfylla:drograttfylla:drograttfyllas:drograttfyllan:drograttfyllans:drograttfyllor:drograttfyllors:drograttfyllorna:drograttfyllornas
+COMPOUND(548715, 912907): drog + rattfylla
+933961r4<substantiv>drogtest:drogtest:drogtests:drogtestet, drogtesten:drogtestets, drogtestens:drogtest, drogtester:drogtests, drogtesters:drogtesten, drogtesterna:drogtestens, drogtesternas
+COMPOUND(548715, 550663): drog + test
+950917r4<substantiv>drogtsar:drogtsar:drogtsars:drogtsaren:drogtsarens:drogtsarer:drogtsarers:drogtsarerna:drogtsarernas
+COMPOUND(548715, 628994): drog + tsar
+548716r3<substantiv>dromedar:dromedar:dromedars:dromedaren:dromedarens:dromedarer:dromedarers:dromedarerna:dromedarernas
+CUSTOM: y y dromedar
+863704r3<substantiv>dront:dront:dronts:dronten:drontens:dronter:dronters:dronterna:dronternas
+636906r6<substantiv>dropp:dropp:dropps:droppet:droppets::::
+CUSTOM: y n dropp !dropps
+546441r6<verb>droppa:droppa:droppade:droppat:droppar:droppa:droppas:droppades:droppats:droppas:droppad:droppat:droppade:droppande:
+677449r3<substantiv>droppdräll:droppdräll:droppdrälls:droppdrällen:droppdrällens::::
+599807r5<substantiv>droppe:droppe:droppes:droppen:droppens:droppar:droppars:dropparna:dropparnas
+863712r4<substantiv>droppflaska:droppflaska:droppflaskas:droppflaskan:droppflaskans:droppflaskor:droppflaskors:droppflaskorna:droppflaskornas
+COMPOUND(636906, 555299): dropp + flaska
+571880r3<adjektiv>droppformig:droppformig:droppformigt:droppformiga:droppformiga::::
+601681r3<substantiv>dropplist:dropplist:dropplists:dropplisten:dropplistens:dropplister:dropplisters:dropplisterna:dropplisternas
+CUSTOM: y y dropplist
+790459r3<adjektiv>droppskyddad:droppskyddad:droppskyddat:droppskyddade:droppskyddade:!:!:!:
+975151r6<substantiv>droppsten:droppsten:droppstens:droppstenen:droppstenens:droppstenar:droppstenars:droppstenarna:droppstenarnas
+COMPOUND(546441, 551935): droppa + sten
+975159r4<substantiv>droppstensbildning:droppstensbildning:droppstensbildnings:droppstensbildningen:droppstensbildningens:droppstensbildningar:droppstensbildningars:droppstensbildningarna:droppstensbildningarnas
+COMPOUND(975151, 651396): droppsten + bildning
+975167r4<substantiv>droppstensgrotta:droppstensgrotta:droppstensgrottas:droppstensgrottan:droppstensgrottans:droppstensgrottor:droppstensgrottors:droppstensgrottorna:droppstensgrottornas
+COMPOUND(975151, 594143): droppsten + grotta
+950927r4<substantiv>dropptråg:dropptråg:dropptrågs:dropptråget:dropptrågets:dropptråg:dropptrågs:dropptrågen:dropptrågens
+COMPOUND(636906, 553064): dropp + tråg
+790462r3<adjektiv>droppvattenskyddad:droppvattenskyddad:droppvattenskyddat:droppvattenskyddade:droppvattenskyddade:!:!:!:
+753559r3<adverb>droppvis:droppvis
+656348r4<substantiv>droska:droska:droskas:droskan:droskans:droskor:droskors:droskorna:droskornas
+CUSTOM: y y drosk
+656349r3<substantiv>droskbil:droskbil:droskbils:droskbilen:droskbilens:droskbilar:droskbilars:droskbilarna:droskbilarnas
+656357r4<substantiv>droskkusk:droskkusk:droskkusks:droskkusken:droskkuskens:droskkuskar:droskkuskars:droskkuskarna:droskkuskarnas
+COMPOUND(656348, 551646): droska + kusk
+790465r3<adjektiv>drosselkopplad:drosselkopplad:drosselkopplat:drosselkopplade:drosselkopplade:!:!:!:
+656365r3<substantiv>drott:drott:drotts:drotten:drottens:drottar:drottars:drottarna:drottarnas
+CUSTOM: n n y
+596676r10<substantiv>drottning:drottning:drottnings:drottningen:drottningens:drottningar:drottningars:drottningarna:drottningarnas
+CUSTOM: y y drottning +drottnings
+721894r3<egennamn>Drottninggatan:Drottninggatan:Drottninggatans
+554206r3<egennamn>Drottningholm:Drottningholm:Drottningholms
+CUSTOM: y n Drottningholms
+863720r3<substantiv>drottningsylt:drottningsylt:drottningsylts:drottningsylten:drottningsyltens::::
+689357r3<adjektiv>drucken:drucken:drucket:druckna:druckna::::druckne
+975175r3<substantiv>druckenhet:druckenhet:druckenhets:druckenheten:druckenhetens::::
+863724r3<substantiv>druid:druid:druids:druiden:druidens:druider:druiders:druiderna:druidernas
+579561r3<adjektiv>druidisk:druidisk:druidiskt:druidiska:druidiska::::
+863732r3<substantiv>drul:drul:druls:drulen:drulens:drular:drulars:drularna:drularnas
+CUSTOM: y n
+863740r3<verb>drulla:drulla:drullade:drullat:drullar:drulla::::::::drullande:
+624098r4<substantiv>drulle:drulle:drulles:drullen:drullens:drullar:drullars:drullarna:drullarnas
+790468r3<adjektiv>drulleförsäkrad:drulleförsäkrad:drulleförsäkrat:drulleförsäkrade:drulleförsäkrade:!:!:!:
+863744r3<substantiv>drulleförsäkring:drulleförsäkring:drulleförsäkrings:drulleförsäkringen:drulleförsäkringens:drulleförsäkringar:drulleförsäkringars:drulleförsäkringarna:drulleförsäkringarnas
+565705r4<adjektiv>drullig:drullig:drulligt:drulliga:drulliga:drulligare:drulligast:drulligaste:drullige
+863756r3<verb>drumla:drumla:drumlade:drumlat:drumlar:drumla::::::::drumlande:
+565708r4<adjektiv>drumlig:drumlig:drumligt:drumliga:drumliga:drumligare:drumligast:drumligaste:drumlige
+656367r3<substantiv>drummel:drummel:drummels:drummeln:drummelns:drumlar:drumlars:drumlarna:drumlarnas
+571883r3<adjektiv>drummelaktig:drummelaktig:drummelaktigt:drummelaktiga:drummelaktiga::::
+546442r5<verb>drunkna:drunkna:drunknade:drunknat:drunknar:drunkna:!:!:!:!:drunknad:drunknat:drunknade:drunknande:
+656368r5<substantiv>drunkning:drunkning:drunknings:drunkningen:drunkningens:drunkningar:drunkningars:drunkningarna:drunkningarnas
+CUSTOM: y y drunknings
+975179r4<substantiv>drunkningsdöd:drunkningsdöd:drunkningsdöds:drunkningsdöden:drunkningsdödens::::
+COMPOUND(656368, 617530): drunkning + död
+960236r4<substantiv>drunkningsöde:drunkningsöde:drunkningsödes:drunkningsödet:drunkningsödets:drunkningsöden:drunkningsödens:drunkningsödena:drunkningsödenas
+COMPOUND(656368, 571235): drunkning + öde
+960985r3<substantiv>druser:::::druser:drusers:druserna:drusernas
+579564r4<adjektiv>drusisk:drusisk:drusiskt:drusiska:drusiska::::drusiske::::::::
+593944r9<substantiv>druva:druva:druvas:druvan:druvans:druvor:druvors:druvorna:druvornas
+CUSTOM: y y druv
+801982r3<adjektiv>druvblå:druvblå:druvblått:druvblåa:druvblåa::::
+571886r3<adjektiv>druvformig:druvformig:druvformigt:druvformiga:druvformiga::::
+753572r4<substantiv>druvklase:druvklase:druvklases:druvklasen:druvklasens:druvklasar:druvklasars:druvklasarna:druvklasarnas
+COMPOUND(593944, 636553): druva + klase
+753580r4<substantiv>druvmust:druvmust:druvmusts:druvmusten:druvmustens:druvmuster:druvmusters:druvmusterna:druvmusternas
+COMPOUND(593944, 621442): druva + must
+753588r4<substantiv>druvsaft:druvsaft:druvsafts:druvsaften:druvsaftens:druvsafter:druvsafters:druvsafterna:druvsafternas
+COMPOUND(593944, 550439): druva + saft
+753596r4<substantiv>druvskörd:druvskörd:druvskörds:druvskörden:druvskördens:druvskördar:druvskördars:druvskördarna:druvskördarnas
+COMPOUND(593944, 598859): druva + skörd
+753560r4<substantiv>druvsocker:druvsocker:druvsockers:druvsockret:druvsockrets:!:!:!:!
+COMPOUND(593944, 623162): druva + socker
+753564r4<substantiv>druvsort:druvsort:druvsorts:druvsorten:druvsortens:druvsorter:druvsorters:druvsorterna:druvsorternas
+COMPOUND(593944, 550551): druva + sort
+558252r4<substantiv>dryad:dryad:dryads:dryaden:dryadens:dryader:dryaders:dryaderna:dryadernas
+DEFINITION 1: Sagoväsen
+CUSTOM: y n y
+548724r5<substantiv>dryck:dryck:drycks:drycken:dryckens:drycker:dryckers:dryckerna:dryckernas
+731952r3<substantiv>dryckenskap:dryckenskap:dryckenskaps:dryckenskapen:dryckenskapens::::
+689358r4<substantiv>dryckesbroder:dryckesbroder, dryckesbror:dryckesbroders, dryckesbrors:dryckesbrodern:dryckesbroderns:dryckesbröder:dryckesbröders:dryckesbröderna:dryckesbrödernas
+COMPOUND(593936, 555140): dricka + bror, broder
+609451r3<substantiv>dryckeshållare:dryckeshållare:dryckeshållares:dryckeshållaren:dryckeshållarens:dryckeshållare:dryckeshållares:dryckeshållarna:dryckeshållarnas
+CUSTOM: y y dryckeshållar
+689367r3<substantiv>dryckeslag:dryckeslag:dryckeslags:dryckeslaget:dryckeslagets::::
+849572r3<substantiv>dryckessed:dryckessed:dryckesseds:dryckesseden:dryckessedens:dryckesseder:dryckesseders:dryckessederna:dryckessedernas
+610585r3<substantiv>dryckesvaruindustri:dryckesvaruindustri:dryckesvaruindustris:dryckesvaruindustrin:dryckesvaruindustrins:dryckesvaruindustrier:dryckesvaruindustriers:dryckesvaruindustrierna:dryckesvaruindustriernas
+656373r3<substantiv>dryckesvisa:dryckesvisa:dryckesvisas:dryckesvisan:dryckesvisans:dryckesvisor:dryckesvisors:dryckesvisorna:dryckesvisornas
+975184r3<substantiv>dryckjom:dryckjom:dryckjoms:dryckjomet, dryckjomen:dryckjomets, dryckjomens::::
+546443r6<verb>dryfta:dryfta:dryftade:dryftat:dryftar:dryfta:dryftas:dryftades:dryftats:dryftas:dryftad:dryftat:dryftade:dryftande:
+975190r3<substantiv>dryftning:dryftning:dryftnings:dryftningen:dryftningens:dryftningar:dryftningars:dryftningarna:dryftningarnas
+563255r4<adjektiv>dryg:dryg:drygt:dryga:dryga:drygare:drygast:drygaste:dryge
+546444r4<verb>dryga:dryga:drygade:drygat:drygar:dryga:drygas:drygades:drygats:drygas:::::
+863764r4<substantiv>dryghet:dryghet:dryghets:drygheten:dryghetens:drygheter:drygheters:drygheterna:drygheternas
+585296r12<verb>drypa:drypa:dröp:drupit, drypt:dryper:dryp::::::::drypande:
+CUSTOM: y n
+689373r3<adjektiv>drypande:drypande:drypande:drypande:drypande:!:!:!:
+552331r5<substantiv>dråp:dråp:dråps:dråpet:dråpets:dråp:dråps:dråpen:dråpens
+CUSTOM: y y
+615191r3<substantiv>dråpare:dråpare:dråpares:dråparen:dråparens:dråpare:dråpares:dråparna:dråparnas
+CUSTOM: y y dråpar
+753604r4<substantiv>dråpförsök:dråpförsök:dråpförsöks:dråpförsöket:dråpförsökets:dråpförsök:dråpförsöks:dråpförsöken:dråpförsökens
+COMPOUND(552331, 552418): dråp + försök
+565711r5<adjektiv>dråplig:dråplig:dråpligt:dråpliga:dråpliga:dråpligare:dråpligast:dråpligaste:dråplige
+753610r4<substantiv>dråplighet:dråplighet:dråplighets:dråpligheten:dråplighetens:dråpligheter:dråpligheters:dråpligheterna:dråpligheternas
+635724r7<adjektiv>dråpmisstänkt:dråpmisstänkt:dråpmisstänkt:dråpmisstänkta:dråpmisstänkta::::::::::::
+656378r3<substantiv>dråpslag:dråpslag:dråpslags:dråpslaget:dråpslagets:dråpslag:dråpslags:dråpslagen:dråpslagens
+632238r5<adjektiv>dråpåtalad:dråpåtalad:dråpåtalat:dråpåtalade:dråpåtalade:!:!:!:::::::::
+649085r3<verb>dråsa:dråsa:dråsade:dråsat:dråsar:dråsa:::::::::
+863768r3<substantiv>drägel:drägel:drägels:dräglet:dräglets::::
+637687r11<substantiv>drägg:drägg:dräggs:dräggen:dräggens::::
+656382r4<verb>drägla:drägla:dräglade:dräglat:dräglar:drägla::::::::dräglande:
+565712r4<adjektiv>dräglig:dräglig:drägligt:drägliga:drägliga:drägligare:drägligast:drägligaste:
+548725r14<substantiv>dräkt:dräkt:dräkts:dräkten:dräktens:dräkter:dräkters:dräkterna:dräkternas
+CUSTOM: y y dräkt +dräkts
+563032r3<adjektiv>dräktig:dräktig:dräktigt:dräktiga:dräktiga::::
+863783r4<substantiv>dräktighet:dräktighet:dräktighets:dräktigheten:dräktighetens::::
+975206r4<substantiv>dräktighetstid:dräktighetstid:dräktighetstids:dräktighetstiden:dräktighetstidens:dräktighetstider:dräktighetstiders:dräktighetstiderna:dräktighetstidernas
+COMPOUND(863783, 550665): dräktighet + tid
+677432r4<substantiv>dräll:dräll:drälls:drällen:drällens::::
+CUSTOM: y n
+649086r4<verb>drälla:drälla:drällde:drällt:dräller:dräll::::::::drällande:
+677431r4<substantiv>drällväv:drällväv:drällvävs:drällväven:drällvävens:drällvävar:drällvävars:drällvävarna:drällvävarnas
+COMPOUND(677432, 552117): dräll + väv
+648982r6<verb>drämma:drämma:drämde:drämt:drämmer:dräm:drämmas:drämdes:drämts:dräms, drämmes:drämd:drämt:drämda:drämmande:
+CUSTOM: y n
+733235r3<substantiv>dränage:dränage:dränages:dränaget:dränagets::::
+546445r4<verb>dränera:dränera:dränerade:dränerat:dränerar:dränera:dräneras:dränerades:dränerats:dräneras:dränerad:dränerat:dränerade::
+800922r3<adjektiv>dränerande:dränerande:dränerande:dränerande:dränerande:!:!:!:
+680831r3<substantiv>dränering:dränering:dränerings:dräneringen:dräneringens:dräneringar:dräneringars:dräneringarna:dräneringarnas
+CUSTOM: y y dränerings
+551074r8<substantiv>dräng:dräng:drängs:drängen:drängens:drängar:drängars:drängarna:drängarnas
+975214r4<substantiv>drängkammare:drängkammare:drängkammares:drängkammaren:drängkammarens:drängkammare, drängkamrar:drängkammares, drängkamrars:drängkamrarna:drängkamrarnas
+COMPOUND(551074, 559310): dräng + kammare
+975222r4<substantiv>drängstuga:drängstuga:drängstugas:drängstugan:drängstugans:drängstugor:drängstugors:drängstugorna:drängstugornas
+COMPOUND(551074, 595420): dräng + stuga
+960125r4<substantiv>drängtjänst:drängtjänst:drängtjänsts:drängtjänsten:drängtjänstens:drängtjänster:drängtjänsters:drängtjänsterna:drängtjänsternas
+COMPOUND(551074, 550677): dräng + tjänst
+649087r5<verb>dränka:dränka:dränkte:dränkt:dränker:dränk:dränkas:dränktes:dränkts:dränks, dränkes:dränkt:dränkt:dränkta:dränkande:
+569018r3<adjektiv>dränkbar:dränkbar:dränkbart:dränkbara:dränkbara::::
+975230r3<substantiv>dränkning:dränkning:dränknings:dränkningen:dränkningens:dränkningar:dränkningars:dränkningarna:dränkningarnas
+617524r4<verb>dräpa:dräpa:dräpte:dräpt:dräper:dräp:dräpas:dräptes:dräpts:dräps, dräpes:dräpt:dräpt:dräpta::
+CUSTOM: y n
+800923r3<adjektiv>dräpande:dräpande:dräpande:dräpande:dräpande:!:!:!:
+688967r4<substantiv>drätsel:drätsel:drätsels:drätseln:drätselns::::
+CUSTOM: y y drätsel
+688969r4<substantiv>drätselkammare:drätselkammare:drätselkammares:drätselkammaren:drätselkammarens:drätselkammare, drätselkamrar:drätselkammares, drätselkamrars:drätselkamrarna:drätselkamrarnas
+COMPOUND(688967, 559310): drätsel + kammare
+CUSTOM: y y drätselkammar
+923662r4<substantiv>drög:drög:drögs:drögen:drögens:drögar:drögars:drögarna:drögarnas
+DEFINITION 1: Kälke för forsling av ex vis stockar
+CUSTOM: n n y
+975238r3<substantiv>dröglapp:dröglapp:dröglapps:dröglappen:dröglappens:dröglappar:dröglappars:dröglapparna:dröglapparnas
+585771r4<verb>dröja:dröja:dröjde:dröjt:dröjer:dröj::::::::dröjande:
+CUSTOM: y n
+656383r3<substantiv>dröjsmål:dröjsmål:dröjsmåls:dröjsmålet:dröjsmålets:dröjsmål:dröjsmåls:dröjsmålen:dröjsmålens
+CUSTOM: y y dröjsmåls
+656385r3<substantiv>dröjsmålsränta:dröjsmålsränta:dröjsmålsräntas:dröjsmålsräntan:dröjsmålsräntans::::
+CUSTOM: n n y
+593041r19<substantiv>dröm:dröm:dröms:drömmen:drömmens:drömmar:drömmars:drömmarna:drömmarnas
+CUSTOM: y y dröm
+724994r4<substantiv>drömbild:drömbild:drömbilds:drömbilden:drömbildens:drömbilder:drömbilders:drömbilderna:drömbildernas
+COMPOUND(593041, 548373): dröm + bild
+930577r4<substantiv>drömbok:drömbok:drömboks:drömboken:drömbokens:drömböcker:drömböckers:drömböckerna:drömböckernas
+COMPOUND(593041, 555346): dröm + bok
+950935r4<substantiv>drömelva:drömelva:drömelvas:drömelvan:drömelvans:drömelvor:drömelvors:drömelvorna:drömelvornas
+COMPOUND(593041, 938114): dröm + elva
+563732r3<adjektiv>drömfri:drömfri:drömfritt:drömfria:drömfria::::
+930586r4<substantiv>drömhus:drömhus:drömhus:drömhuset:drömhusets:drömhus:drömhus:drömhusen:drömhusens
+COMPOUND(593041, 552480): dröm + hus
+933972r4<substantiv>drömjobb:drömjobb:drömjobbs:drömjobbet:drömjobbets:drömjobb:drömjobbs:drömjobben:drömjobbens
+COMPOUND(593041, 552536): dröm + jobb
+901863r4<substantiv>drömkåk:drömkåk:drömkåks:drömkåken:drömkåkens:drömkåkar:drömkåkars:drömkåkarna:drömkåkarnas
+COMPOUND(593041, 551657): dröm + kåk
+656384r3<adjektiv>drömlik:drömlik:drömlikt:drömlika:drömlika::::
+939162r4<substantiv>drömläge:drömläge:drömläges:drömläget:drömlägets:drömlägen:drömlägens:drömlägena:drömlägenas
+COMPOUND(593041, 612680): dröm + läge
+564792r3<adjektiv>drömlös:drömlös:drömlöst:drömlösa:drömlösa::::
+593039r10<verb>drömma:drömma:drömde:drömt:drömmer:dröm:drömmas:drömdes:drömts:dröms, drömmes:drömd:drömt:drömda:drömmande:
+689375r3<substantiv>drömmande:drömmande:drömmandes:drömmandet:drömmandets::::
+615192r3<substantiv>drömmare:drömmare:drömmares:drömmaren:drömmarens:drömmare:drömmares:drömmarna:drömmarnas
+CUSTOM: y y drömmar
+656386r3<substantiv>drömmeri:drömmeri:drömmeris:drömmeriet:drömmeriets:drömmerier:drömmeriers:drömmerierna:drömmeriernas
+930591r4<substantiv>drömmål:drömmål:drömmåls:drömmålet:drömmålets:drömmål:drömmåls:drömmålen:drömmålens
+COMPOUND(593041, 552705): dröm + mål
+593042r5<adjektiv>drömsk:drömsk:drömskt:drömska:drömska:drömskare:drömskast:drömskaste:drömske::::::::
+937721r3<substantiv>drömspel:drömspel:drömspels:drömspelet:drömspelets:drömspel:drömspels:drömspelen:drömspelens
+936511r4<substantiv>drömstart:drömstart:drömstarts:drömstarten:drömstartens:drömstarter:drömstarters:drömstarterna:drömstarternas
+COMPOUND(593041, 603706): dröm + start
+656388r3<substantiv>drömsyn:drömsyn:drömsyns:drömsynen:drömsynens:drömsyner:drömsyners:drömsynerna:drömsynernas
+593043r4<verb>dröna:dröna:drönade:drönat:drönar:dröna:::::::::
+DEFINITION 1: Lata sig [ vardagligt ]
+CUSTOM: y n
+593048r3<substantiv>drönare:drönare:drönares:drönaren:drönarens:drönare:drönares:drönarna:drönarnas
+CUSTOM: y y drönar
+571889r3<adjektiv>drönig:drönig:drönigt:dröniga:dröniga::::
+593056r3<verb>drösa:drösa:drösade:drösat:drösar:drösa:::::::::
+CUSTOM: y n
+593049r5<substantiv>drös, dröse:drös, dröse:drös:drösen:drösens:drösar:drösars:drösarna:drösarnas
+656389r3<adverb>drösvis:drösvis
+840682r4<egennamn>DSSO:DSSO:
+555126r3<pronomen>du:du
+558267r4<verb>dua:dua:duade:duat:duar:dua:duas:duades:duats:duas:duad:duat:duade:duande:
+797450r3<adjektiv>dual:dual:dualt:duala:duala::::
+558703r3<substantiv>dualism:dualism:dualisms:dualismen:dualismens:!:!:!:!
+863790r3<substantiv>dualist:dualist:dualists:dualisten:dualistens:dualister:dualisters:dualisterna:dualisternas
+557980r4<adjektiv>dualistisk:dualistisk:dualistiskt:dualistiska:dualistiska:!:!:!:dualistiske::::::::
+949585r3<substantiv>dualitet:dualitet:dualitets:dualiteten:dualitetens::::
+657881r3<substantiv>dualrum:dualrum:dualrums:dualrummen:dualrummens:dualrum:dualrums:dualrummen:dualrummens
+CUSTOM: n n
+640371r5<egennamn>Dubai:Dubai:Dubais
+551075r3<substantiv>dubb:dubb:dubbs:dubben:dubbens:dubbar:dubbars:dubbarna:dubbarnas
+546446r4<verb>dubba:dubba:dubbade:dubbat:dubbar:dubba:dubbas:dubbades:dubbats:dubbas:dubbad:dubbat:dubbade::
+606966r4<substantiv>dubbdäck:dubbdäck:dubbdäcks:dubbdäcket:dubbdäckets:dubbdäck:dubbdäcks:dubbdäcken:dubbdäckens
+CUSTOM: y y dubbdäcks
+773651r4<substantiv>dubbdäcksförbud:dubbdäcksförbud:dubbdäcksförbuds:dubbdäcksförbudet:dubbdäcksförbudets:dubbdäcksförbud:dubbdäcksförbuds:dubbdäcksförbuden:dubbdäcksförbudens
+COMPOUND(606966, 552399): dubbdäck + förbud
+656391r4<substantiv>dubbel:dubbel:dubbels:dubbeln:dubbelns:dubblar:dubblars:

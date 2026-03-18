@@ -1,0 +1,642 @@
+lats:tiondeplats:tiondeplatsen:tiondeplatsens:tiondeplatser:tiondeplatsers:tiondeplatserna:tiondeplatsernas
+706476r3<substantiv>tiopack:tiopack:::::::
+550673r3<substantiv>tiopotens:tiopotens:tiopotens:tiopotensen:tiopotensens:tiopotenser:tiopotensers:tiopotenserna:tiopotensernas
+748631r3<substantiv>tiopoängare:tiopoängare:tiopoängares:tiopoängaren:tiopoängarens:tiopoängare:tiopoängares:tiopoängarna:tiopoängarnas
+577510r3<adjektiv>tioprocentig:tioprocentig:tioprocentigt:tioprocentiga:tioprocentiga::::
+795701r3<adjektiv>tioringad:tioringad:tioringat:tioringade:tioringade:!:!:!:
+960049r3<substantiv>tiorumsvåning:tiorumsvåning:tiorumsvånings:tiorumsvåningen:tiorumsvåningens:tiorumsvåningar:tiorumsvåningars:tiorumsvåningarna:tiorumsvåningarnas
+577513r3<adjektiv>tiosidig:tiosidig:tiosidigt:tiosidiga:tiosidiga::::
+577516r3<adjektiv>tiosiffrig:tiosiffrig:tiosiffrigt:tiosiffriga:tiosiffriga::::
+942197r3<substantiv>tiosnåret:::tiosnåret:::::
+987212r3<substantiv>tiosulfat:tiosulfat:tiosulfats:tiosulfatet:tiosulfatets:tiosulfater:tiosulfaters:tiosulfaterna:tiosulfaternas
+956401r3<substantiv>tiotaggare:tiotaggare:tiotaggares:tiotaggaren:tiotaggarens:tiotaggare:tiotaggares:tiotaggarna:tiotaggarnas
+657783r3<substantiv>tiotal:tiotal:tiotals:tiotalet:tiotalets:tiotal:tiotals:tiotalen:tiotalens
+654569r3<substantiv>tiotalist:tiotalist:tiotalists:tiotalisten:tiotalistens:tiotalister:tiotalisters:tiotalisterna:tiotalisternas
+CUSTOM: y y tiotalist
+620577r3<adverb>tiotals:tiotals
+741684r3<substantiv>tiotiden:::tiotiden:::::
+672733r3<räkneord>tiotusen:tiotusen
+703281r3<substantiv>tiotusental:tiotusental:tiotusentals:tiotusentalet:tiotusentalets::::
+656416r3<adverb>tiotusentals:tiotusentals
+748718r3<substantiv>tiovåningshus:tiovåningshus:tiovåningshus:tiovåningshuset:tiovåningshusets:tiovåningshus:tiovåningshus:tiovåningshusen:tiovåningshusens
+703284r3<adjektiv>tioväxlad:tioväxlad:tioväxlat:tioväxlade:tioväxlade:!:!:!:
+577519r4<adjektiv>tioårig:tioårig:tioårigt:tioåriga:tioåriga:!:!:!:tioårige
+654412r3<substantiv>tioåring:tioåring:tioårings:tioåringen:tioåringens:tioåringar:tioåringars:tioåringarna:tioåringarnas
+CUSTOM: y y tioårings
+748270r3<substantiv>tioårsjubileum:tioårsjubileum:tioårsjubileums:tioårsjubileet:tioårsjubileets:tioårsjubileer:tioårsjubileers:tioårsjubileerna:tioårsjubileernas
+672734r3<substantiv>tioårsperiod:tioårsperiod:tioårsperiods:tioårsperioden:tioårsperiodens:tioårsperioder:tioårsperioders:tioårsperioderna:tioårsperiodernas
+741749r3<substantiv>tioårsålder:tioårsålder:tioårsålders:tioårsåldern:tioårsålderns::::
+748279r3<substantiv>tioöring:tioöring:tioörings:tioöringen:tioöringens:tioöringar:tioöringars:tioöringarna:tioöringarnas
+628941r4<substantiv>tipp:tipp:tipps:tippen:tippens:tippar:tippars:tipparna:tipparnas
+CUSTOM: y n !tipps
+547844r5<verb>tippa:tippa:tippade:tippat:tippar:tippa:tippas:tippades:tippats:tippas:tippad:tippat:tippade:tippande:
+748295r3<substantiv>tippare:tippare:tippares:tipparen:tipparens:tippare:tippares:tipparna:tipparnas
+570292r3<adjektiv>tippbar:tippbar:tippbart:tippbara:tippbara::::
+888771r3<substantiv>tippflak:tippflak:tippflaks:tippflaket:tippflakets:tippflak:tippflaks:tippflaken:tippflakens
+577520r3<adjektiv>tippformig:tippformig:tippformigt:tippformiga:tippformiga::::
+748287r3<substantiv>tippning:tippning:tippnings:tippningen:tippningens:tippningar:tippningars:tippningarna:tippningarnas
+802302r3<adverb>tipptopp:tipptopp
+553049r8<substantiv>tips:tips:tips:tipset:tipsets:tips:tips:tipsen:tipsens
+CUSTOM: y y tips
+547845r4<verb>tipsa:tipsa:tipsade:tipsat:tipsar:tipsa:tipsas:tipsades:tipsats:tipsas:tipsad:tipsat:tipsade::
+703292r3<substantiv>tipsare:tipsare:tipsares:tipsaren:tipsarens:tipsare:tipsares:tipsarna:tipsarnas
+CUSTOM: y y tipsar
+748299r4<substantiv>tipspromenad:tipspromenad:tipspromenads:tipspromenaden:tipspromenadens:tipspromenader:tipspromenaders:tipspromenaderna:tipspromenadernas
+COMPOUND(553049, 550272): tips + promenad
+933085r4<substantiv>tipsrad:tipsrad:tipsrads:tipsraden:tipsradens:tipsrader:tipsraders:tipsraderna:tipsradernas
+COMPOUND(553049, 550306): tips + rad
+737428r3<substantiv>tirad:tirad:tirads:tiraden:tiradens:tirader:tiraders:tiraderna:tiradernas
+943163r3<egennamn>Tirana:Tirana:Tiranas
+552010r4<substantiv>tisdag:tisdag:tisdags:tisdagen:tisdagens:tisdagar:tisdagars:tisdagarna:tisdagarnas
+CUSTOM: y y tisdags
+706249r4<substantiv>tisdagsmorgon:tisdagsmorgon:tisdagsmorgons:tisdagsmorgonen:tisdagsmorgonens:tisdagsmorgnar:tisdagsmorgnars:tisdagsmorgnarna:tisdagsmorgnarnas
+COMPOUND(552010, 619001): tisdag + morgon
+964244r3<substantiv>tissel:tissel:tissels:tisslet:tisslets::::
+CUSTOM: y n
+748307r3<verb>tissla:tissla:tisslade:tisslat:tisslar:tissla:tisslas:tisslades:tisslats:tisslas::::tisslande:
+CUSTOM: y n
+672740r8<substantiv>tistel:tistel:tistels:tisteln:tistelns:tistlar:tistlars:tistlarna:tistlarnas
+CUSTOM: y n
+905046r3<substantiv>tita:tita:titas:titan:titans:titor:titors:titorna:titornas
+CUSTOM: n n y
+955100r3<substantiv>titan:titan:titans:titanen:titanens:titaner:titaners:titanerna:titanernas
+CUSTOM: y n
+679179r8<substantiv>titan:titan:titans:titanet:titanets:!:!:!:!
+CUSTOM: y n
+988073r3<substantiv>titandioxid:titandioxid:titandioxids:titandioxiden:titandioxidens:titandioxider:titandioxiders:titandioxiderna:titandioxidernas
+577523r3<adjektiv>titanhaltig:titanhaltig:titanhaltigt:titanhaltiga:titanhaltiga::::
+703299r3<egennamn>Titanic:Titanic:Titanics
+CUSTOM: y n Titanic
+584379r3<adjektiv>titanisk:titanisk:titaniskt:titaniska:titaniska::::
+626697r17<substantiv>titel:titel:titels:titeln:titelns:titlar:titlars:titlarna:titlarnas
+CUSTOM: y y titel
+748315r3<substantiv>titelförsvarare::::::::
+COMPOUND(626697, 748316): titel + försvarare
+748324r4<substantiv>titellåt:titellåt:titellåts:titellåten:titellåtens:titellåtar:titellåtars:titellåtarna:titellåtarnas
+COMPOUND(626697, 551711): titel + låt
+748322r4<substantiv>titelmatch:titelmatch:titelmatchs:titelmatchen:titelmatchens:titelmatcher:titelmatchers:titelmatcherna:titelmatchernas
+COMPOUND(626697, 550011): titel + match
+748333r4<substantiv>titelroll:titelroll:titelrolls:titelrollen:titelrollens:titelroller:titelrollers:titelrollerna:titelrollernas
+COMPOUND(626697, 550398): titel + roll
+584382r3<adjektiv>titoistisk:titoistisk:titoistiskt:titoistiska:titoistiska::::
+588191r4<verb>titrera:titrera:titrerade:titrerat:titrerar:titrera:::::titrerad:titrerat:titrerade:titrerande:
+570295r3<adjektiv>titrerbar:titrerbar:titrerbart:titrerbara:titrerbara::::
+988083r3<substantiv>titrering:titrering:titrerings:titreringen:titreringens:titreringar:titreringars:titreringarna:titreringarnas
+584385r3<adjektiv>titrimetrisk:titrimetrisk:titrimetriskt:titrimetriska:titrimetriska::::
+624904r3<substantiv>titt:titt:titts:titten:tittens:tittar:tittars:tittarna:tittarnas
+547846r6<verb>titta:titta:tittade:tittat:tittar:titta:tittas:tittades:tittats:tittas:::::
+672743r4<substantiv>tittande:tittande:tittandes:tittandet:tittandets:!:!:!:!
+615487r4<substantiv>tittare:tittare:tittares:tittaren:tittarens:tittare:tittares:tittarna:tittarnas
+CUSTOM: y y tittar
+553050r3<substantiv>titthål:titthål:titthåls:titthålet:titthålets:titthål:titthåls:titthålen:titthålens
+803467r3<substantiv>titthålskirurgi:titthålskirurgi:titthålskirurgis:titthålskirurgin:titthålskirurgins::::
+803472r3<substantiv>titthålsoperation:titthålsoperation:titthålsoperations:titthålsoperationen:titthålsoperationens:titthålsoperationer:titthålsoperationers:titthålsoperationerna:titthålsoperationernas
+948189r3<substantiv>tittskåp:tittskåp:tittskåps:tittskåpet:tittskåpets:tittskåp:tittskåps:tittskåpen:tittskåpens
+672744r3<substantiv>tittut:tittut:::::::
+939818r4<substantiv>tittöga:tittöga:tittögas:tittögat:tittögats:tittögon:tittögons:tittögonen:tittögonens
+COMPOUND(547846, 555881): titta + öga
+988091r3<substantiv>titulatur:titulatur:titulaturs:titulaturen:titulaturens:titulaturer:titulaturers:titulaturerna:titulaturernas
+547847r4<verb>titulera:titulera:titulerade:titulerat:titulerar:titulera:tituleras:titulerades:titulerats:tituleras:titulerad:titulerat:titulerade::
+988099r3<substantiv>titulering:titulering:titulerings:tituleringen:tituleringens:tituleringar:tituleringars:tituleringarna:tituleringarnas
+988107r5<adjektiv>titulär:titulär:titulärt:titulära:titulära::::::::::::
+988118r4<substantiv>titulärprofessor:titulärprofessor:titulärprofessors:titulärprofessorn:titulärprofessorns:titulärprofessorer:titulärprofessorers:titulärprofessorerna:titulärprofessorernas
+COMPOUND(988107, 611151): titulär + professor
+988110r4<substantiv>titulärprost:titulärprost:titulärprosts:titulärprosten:titulärprostens:titulärprostar:titulärprostars:titulärprostarna:titulärprostarnas
+COMPOUND(988107, 550278): titulär + prost
+636696r3<substantiv>tivoli:tivoli:tivolis:tivolit:tivolits:tivolin:tivolins:tivolina:tivolinas
+CUSTOM: y y tivoli
+798949r3<adjektiv>tixotrop:tixotrop:tixotropt:tixotropa:tixotropa::::
+627868r3<interjektion>tja:tja
+697319r3<substantiv>tjabb:tjabb:tjabbs:tjabbet:tjabbets::::
+CUSTOM: y n
+697315r3<verb>tjabba:tjabba:tjabbade:tjabbat:tjabbar:tjabba:::::::::
+577526r3<adjektiv>tjabbig:tjabbig:tjabbigt:tjabbiga:tjabbiga::::
+697313r3<substantiv>tjack:tjack:tjacks:tjacket:tjackets::::
+697321r3<verb>tjacka:tjacka:tjackade:tjackat:tjackar:tjacka:::::::::
+649330r3<substantiv>tjafs:tjafs:tjafs:tjafset:tjafsets::::
+672745r4<verb>tjafsa:tjafsa:tjafsade:tjafsat:tjafsar:tjafsa:tjafsas:tjafsades:tjafsats:tjafsas::::tjafsande:
+577527r3<adjektiv>tjafsig:tjafsig:tjafsigt:tjafsiga:tjafsiga::::
+672749r3<substantiv>tjafsighet:tjafsighet:tjafsighets:tjafsigheten:tjafsighetens::::
+CUSTOM: y y tjafsighets
+686097r3<egennamn>Tjajkovskij:Tjajkovskij:Tjajkovskijs
+CUSTOM: y n Tjajkovskij
+552011r3<substantiv>tjalk:tjalk:tjalks:tjalken:tjalkens:tjalkar:tjalkars:tjalkarna:tjalkarnas
+CUSTOM: y n
+672750r3<verb>tjalla:tjalla:tjallade:tjallat:tjallar:tjalla:::::::::
+615488r3<substantiv>tjallare:tjallare:tjallares:tjallaren:tjallarens:tjallare:tjallares:tjallarna:tjallarnas
+CUSTOM: y y tjallar
+624907r3<substantiv>tjat:tjat:tjats:tjatet:tjatets:!:!:!:!
+626698r3<verb>tjata:tjata:tjatade:tjatat:tjatar:tjata:tjatas:tjatades:tjatats:tjatas::::tjatande:
+577528r3<adjektiv>tjatig:tjatig:tjatigt:tjatiga:tjatiga::::
+672751r3<substantiv>tjatighet:tjatighet:tjatighets:tjatigheten:tjatighetens::::
+CUSTOM: y y tjatighets
+686099r3<substantiv>tjatter:tjatter:tjatters:tjattret:tjattrets::::
+686101r4<verb>tjattra:tjattra:tjattrade:tjattrat:tjattrar:tjattra:tjattras:tjattrades:tjattrats:tjattras::::tjattrande:
+577529r3<adjektiv>tjattrig:tjattrig:tjattrigt:tjattriga:tjattriga::::
+603883r3<substantiv>tjeck:tjeck:tjecks:tjecken:tjeckens:tjecker:tjeckers:tjeckerna:tjeckernas
+554144r3<egennamn>Tjeckien:Tjeckien:Tjeckiens
+CUSTOM: y n Tjeckien
+591330r3<verb>tjeckisera:tjeckisera:tjeckiserade:tjeckiserat:tjeckiserar:tjeckisera:::::::::
+568788r4<adjektiv>tjeckisk:tjeckisk:tjeckiskt:tjeckiska:tjeckiska:!:!:!:tjeckiske
+595537r3<substantiv>tjeckiska:tjeckiska:tjeckiskas:tjeckiskan:tjeckiskans:tjeckiskor:tjeckiskors:tjeckiskorna:tjeckiskornas
+554145r3<egennamn>Tjeckoslovakien:Tjeckoslovakien:Tjeckoslovakiens
+CUSTOM: y n Tjeckoslovakien
+584388r3<adjektiv>tjeckoslovakisk:tjeckoslovakisk:tjeckoslovakiskt:tjeckoslovakiska:tjeckoslovakiska::::
+550674r7<substantiv>tjej:tjej:tjejs:tjejen:tjejens:tjejer:tjejers:tjejerna:tjejernas
+CUSTOM: y y tjej
+772771r3<substantiv>tjejgrupp:tjejgrupp:tjejgrupps:tjejgruppen:tjejgruppens:tjejgrupper:tjejgruppers:tjejgrupperna:tjejgruppernas
+CUSTOM: n n y
+939450r3<adjektiv>tjejig:tjejig:tjejigt:tjejiga:tjejiga::::::::::::
+933094r4<substantiv>tjejlag:tjejlag:tjejlags:tjejlaget:tjejlagets:tjejlag:tjejlags:tjejlagen:tjejlagens
+COMPOUND(550674, 625660): tjej + lag
+901905r4<substantiv>tjejmodell:tjejmodell:tjejmodells:tjejmodellen:tjejmodellens:tjejmodeller:tjejmodellers:tjejmodellerna:tjejmodellernas
+COMPOUND(550674, 550047): tjej + modell
+988145r3<substantiv>tje-ljud:tje-ljud:tje-ljuds:tje-ljudet:tje-ljudets:tje-ljud:tje-ljuds:tje-ljuden:tje-ljudens
+686104r3<interjektion>tjena:tjena
+CUSTOM: y n n
+686102r3<interjektion>tjenare:tjenare
+988128r3<substantiv>tjerkess:tjerkess:tjerkess:tjerkessen:tjerkessens:tjerkesser:tjerkessers:tjerkesserna:tjerkessernas
+584390r3<adjektiv>tjerkessisk:tjerkessisk:tjerkessiskt:tjerkessiska:tjerkessiska::::
+685395r3<egennamn>Tjernobyl:Tjernobyl:Tjernobyls
+CUSTOM: y n Tjernobyl
+622669r3<substantiv>tjetjen:tjetjen:tjetjens:tjetjenen:tjetjenens:tjetjener:tjetjeners:tjetjenerna:tjetjenernas
+900879r3<egennamn>Tjetjenien:Tjetjenien:Tjetjeniens
+CUSTOM: y n Tjetjenien
+748339r3<adjektiv>tjetjensk:tjetjensk:tjetjenskt:tjetjenska:tjetjenska:!:!:!:tjetjenske
+624323r3<interjektion>tji:tji
+905052r10<substantiv>tjing:tjing:::::::
+CUSTOM: y n y
+988135r3<substantiv>tjinuski:tjinuski:tjinuskis:tjinuskin:tjinuskins::::
+988139r3<substantiv>tj-ljud:tj-ljud:tj-ljuds:tj-ljudet:tj-ljudets:tj-ljud:tj-ljuds:tj-ljuden:tj-ljudens
+925041r3<substantiv>tjo:tjo:tjos:tjoet:tjoets:!:!:!:!
+925040r3<interjektion>tjo:tjo
+626702r3<verb>tjoa:tjoa:tjoade:tjoat:tjoar:tjoa:tjoas:tjoades:tjoats:tjoas::::tjoande:
+563138r8<adjektiv>tjock:tjock:tjockt:tjocka:tjocka:tjockare:tjockast:tjockaste:tjocke::::::::
+CUSTOM: y y tjock
+686106r3<substantiv>tjocka:tjocka:tjockas:tjockan:tjockans::::
+577530r3<adjektiv>tjockbarkig:tjockbarkig:tjockbarkigt:tjockbarkiga:tjockbarkiga::::
+800525r3<adjektiv>tjockbelagd:tjockbelagd:tjockbelagt:tjockbelagda:tjockbelagda::::
+795707r3<adjektiv>tjockbottnad:tjockbottnad:tjockbottnat:tjockbottnade:tjockbottnade:!:!:!:
+577533r3<adjektiv>tjockbukig:tjockbukig:tjockbukigt:tjockbukiga:tjockbukiga::::
+577536r3<adjektiv>tjockgrenig:tjockgrenig:tjockgrenigt:tjockgreniga:tjockgreniga::::
+795710r3<adjektiv>tjockhalsad:tjockhalsad:tjockhalsat:tjockhalsade:tjockhalsade:!:!:!:
+766512r3<adjektiv>tjockhudad:tjockhudad:tjockhudat:tjockhudade:tjockhudade:!:!:!:
+577539r3<adjektiv>tjockhudig:tjockhudig:tjockhudigt:tjockhudiga:tjockhudiga::::
+798952r3<adjektiv>tjockhuvud:tjockhuvud:tjockhuvudt:tjockhuvuda:tjockhuvuda::::
+577542r3<adjektiv>tjockhårig:tjockhårig:tjockhårigt:tjockhåriga:tjockhåriga::::
+686109r3<substantiv>tjockis:tjockis:tjockis:tjockisen:tjockisens:tjockisar:tjockisars:tjockisarna:tjockisarnas
+599019r5<substantiv>tjocklek:tjocklek:tjockleks:tjockleken:tjocklekens:tjocklekar:tjocklekars:tjocklekarna:tjocklekarnas
+766515r3<adjektiv>tjockmagad:tjockmagad:tjockmagat:tjockmagade:tjockmagade:!:!:!:
+672752r3<verb>tjockna:tjockna:tjocknade:tjocknat:tjocknar:tjockna:::::::::
+795714r3<adjektiv>tjocknäbbad:tjocknäbbad:tjocknäbbat:tjocknäbbade:tjocknäbbade:!:!:!:
+568141r4<adjektiv>tjockskalig:tjockskalig:tjockskaligt:tjockskaliga:tjockskaliga::::::::::::
+DEFINITION 1: Har tjockt skal
+568144r5<adjektiv>tjockskallig:tjockskallig:tjockskalligt:tjockskalliga:tjockskalliga:tjockskalligare:tjockskalligast:tjockskalligaste:tjockskallige
+COMPOUND(563138, 563163): tjock + skallig
+577545r3<adjektiv>tjockstammig:tjockstammig:tjockstammigt:tjockstammiga:tjockstammiga::::
+676736r5<substantiv>tjocktarm:tjocktarm:tjocktarms:tjocktarmen:tjocktarmens:tjocktarmar:tjocktarmars:tjocktarmarna:tjocktarmarnas
+COMPOUND(563138, 551995): tjock + tarm
+CUSTOM: y y tjocktarms
+724352r4<substantiv>tjocktarmscancer:tjocktarmscancer:tjocktarmscancers:tjocktarmscancern:tjocktarmscancerns:tjocktarmscancrar:tjocktarmscancrars:tjocktarmscancrarna:tjocktarmscancrarnas
+COMPOUND(676736, 626940): tjocktarm + cancer
+795718r3<adjektiv>tjockväggad:tjockväggad:tjockväggat:tjockväggade:tjockväggade:!:!:!:
+577548r3<adjektiv>tjockväggig:tjockväggig:tjockväggigt:tjockväggiga:tjockväggiga::::
+628948r4<substantiv>tjog:tjog:tjogs:tjoget:tjogets:tjog:tjogs:tjogen:tjogens
+CUSTOM: y n
+697322r3<substantiv>tjogtal:tjogtal:tjogtals:tjogtalet:tjogtalets::::
+656418r3<adverb>tjogtals:tjogtals
+686116r3<adverb>tjogvis:tjogvis
+935379r3<interjektion>tjohej:tjohej
+699784r3<interjektion>tjolahopp:tjolahopp
+CUSTOM: n n n
+699786r3<verb>tjonga:tjonga:tjongade:tjongat:tjongar:tjonga:tjongas:tjongades:tjongats:tjongas:::::
+577551r3<adjektiv>tjorvig:tjorvig:tjorvigt:tjorviga:tjorviga::::
+928033r3<interjektion>tjosan:tjosan
+CUSTOM: n n n
+988151r5<substantiv>tjuder:tjuder:tjuders:tjudret:tjudrets:tjuder:tjuders:tjudren:tjudrens
+988157r4<substantiv>tjuderlina:tjuderlina:tjuderlinas:tjuderlinan:tjuderlinans:tjuderlinor:tjuderlinors:tjuderlinorna:tjuderlinornas
+COMPOUND(988151, 560088): tjuder + lina
+988165r4<substantiv>tjuderpåle:tjuderpåle:tjuderpåles:tjuderpålen:tjuderpålens:tjuderpålar:tjuderpålars:tjuderpålarna:tjuderpålarnas
+COMPOUND(988151, 621673): tjuder + påle
+686117r3<verb>tjudra:tjudra:tjudrade:tjudrat:tjudrar:tjudra:tjudras:tjudrades:tjudrats:tjudras:tjudrad:tjudrat:tjudrade::
+624888r5<substantiv>tjuga:tjuga:tjugas:tjugan:tjugans:tjugor:tjugors:tjugorna:tjugornas
+DEFINITION 1: Ett redskap.
+DEFINITION 2: Tjugokronorssedel [vardagligt].
+571079r3<räkneord>tjugo:tjugo
+571080r3<räkneord>tjugoandra:tjugoandra
+672753r3<räkneord>tjugoen:tjugoen
+672754r3<räkneord>tjugoett:tjugoett
+949819r3<adjektiv>tjugoettårig:tjugoettårig:tjugoettårigt:tjugoettåriga:tjugoettåriga::::tjugoettårige::::::::
+949919r3<substantiv>tjugoettåring:tjugoettåring:tjugoettårings:tjugoettåringen:tjugoettåringens:tjugoettåringar:tjugoettåringars:tjugoettåringarna:tjugoettåringarnas
+577554r3<adjektiv>tjugofaldig:tjugofaldig:tjugofaldigt:tjugofaldiga:tjugofaldiga::::
+686125r3<adverb>tjugofalt:tjugofalt
+672755r3<räkneord>tjugofem:tjugofem
+888838r3<räkneord>tjugofemte:tjugofemte
+949813r3<adjektiv>tjugofemårig:tjugofemårig:tjugofemårigt:tjugofemåriga:tjugofemåriga::::tjugofemårige::::::::
+920090r3<substantiv>tjugofemåring:tjugofemåring:tjugofemårings:tjugofemåringen:tjugofemåringens:tjugofemåringar:tjugofemåringars:tjugofemåringarna:tjugofemåringarnas
+770481r3<substantiv>tjugofemöring:tjugofemöring:tjugofemörings:tjugofemöringen:tjugofemöringens:tjugofemöringar:tjugofemöringars:tjugofemöringarna:tjugofemöringarnas
+871799r3<räkneord>tjugofjärde:tjugofjärde
+672756r3<räkneord>tjugofyra:tjugofyra
+577557r3<adjektiv>tjugofyrakaratig:tjugofyrakaratig:tjugofyrakaratigt:tjugofyrakaratiga:tjugofyrakaratiga::::
+950080r3<adjektiv>tjugofyraårig:tjugofyraårig:tjugofyraårigt:tjugofyraåriga:tjugofyraåriga::::tjugofyraårige::::::::
+949929r3<substantiv>tjugofyraåring:tjugofyraåring:tjugofyraårings:tjugofyraåringen:tjugofyraåringens:tjugofyraåringar:tjugofyraåringars:tjugofyraåringarna:tjugofyraåringarnas
+571081r3<räkneord>tjugoförsta:tjugoförsta
+672758r3<räkneord>tjugohundra:tjugohundra
+686126r3<substantiv>tjugohundratal:tjugohundratal:tjugohundratals:tjugohundratalet:tjugohundratalets::::
+686130r3<substantiv>tjugokronorssedel:tjugokronorssedel:tjugokronorssedels:tjugokronorssedeln:tjugokronorssedelns:tjugokronorssedlar:tjugokronorssedlars:tjugokronorssedlarna:tjugokronorssedlarnas
+686138r3<substantiv>tjugolapp:tjugolapp:tjugolapps:tjugolappen:tjugolappens:tjugolappar:tjugolappars:tjugolapparna:tjugolapparnas
+672761r3<substantiv>tjugondag:tjugondag:tjugondags:tjugondagen:tjugondagens::::
+571078r3<räkneord>tjugonde:tjugonde
+672759r4<substantiv>tjugondedag:tjugondedag:tjugondedags:tjugondedagen:tjugondedagens:tjugondedagar:tjugondedagars:tjugondedagarna:tjugondedagarnas
+686146r3<substantiv>tjugondel:tjugondel:tjugondels:tjugondelen:tjugondelens:tjugondelar:tjugondelars:tjugondelarna:tjugondelarnas
+654637r3<räkneord>tjugonio:tjugonio
+950241r3<adjektiv>tjugonioårig:tjugonioårig:tjugonioårigt:tjugonioåriga:tjugonioåriga::::tjugonioårige::::::::
+949989r3<substantiv>tjugonioåring:tjugonioåring:tjugonioårings:tjugonioåringen:tjugonioåringens:tjugonioåringar:tjugonioåringars:tjugonioåringarna:tjugonioåringarnas
+577560r3<adjektiv>tjugoprocentig:tjugoprocentig:tjugoprocentigt:tjugoprocentiga:tjugoprocentiga::::
+672765r3<räkneord>tjugosex:tjugosex
+950308r3<adjektiv>tjugosexårig:tjugosexårig:tjugosexårigt:tjugosexåriga:tjugosexåriga::::tjugosexårige::::::::
+949959r3<substantiv>tjugosexåring:tjugosexåring:tjugosexårings:tjugosexåringen:tjugosexåringens:tjugosexåringar:tjugosexåringars:tjugosexåringarna:tjugosexåringarnas
+703303r3<adjektiv>tjugosidig:tjugosidig:tjugosidigt:tjugosidiga:tjugosidiga:!:!:!:!
+672766r3<räkneord>tjugosju:tjugosju
+686154r3<räkneord>tjugosjunde:tjugosjunde
+955585r3<adjektiv>tjugosjuårig:tjugosjuårig:tjugosjuårigt:tjugosjuåriga:tjugosjuåriga::::tjugosjuårige::::::::
+949969r3<substantiv>tjugosjuåring:tjugosjuåring:tjugosjuårings:tjugosjuåringen:tjugosjuåringens:tjugosjuåringar:tjugosjuåringars:tjugosjuåringarna:tjugosjuåringarnas
+686155r3<räkneord>tjugosjätte:tjugosjätte
+956414r3<substantiv>tjugotaggare:tjugotaggare:tjugotaggares:tjugotaggaren:tjugotaggarens:tjugotaggare:tjugotaggares:tjugotaggarna:tjugotaggarnas
+666024r5<substantiv>tjugotal:tjugotal:tjugotals:tjugotalet:tjugotalets:tjugotal:tjugotals:tjugotalen:tjugotalens
+CUSTOM: y y tjugotals
+686156r3<substantiv>tjugotalist:tjugotalist:tjugotalists:tjugotalisten:tjugotalistens:tjugotalister:tjugotalisters:tjugotalisterna:tjugotalisternas
+CUSTOM: y y tjugotalist
+686164r4<substantiv>tjugotalsstil:tjugotalsstil:tjugotalsstils:tjugotalsstilen:tjugotalsstilens::::
+COMPOUND(666024, 551938): tjugotal + stil
+654638r3<räkneord>tjugotre:tjugotre
+686168r3<räkneord>tjugotredje:tjugotredje
+950170r3<adjektiv>tjugotreårig:tjugotreårig:tjugotreårigt:tjugotreåriga:tjugotreåriga:!:!:!:tjugotreårige::::::::
+949949r3<substantiv>tjugotreåring:tjugotreåring:tjugotreårings:tjugotreåringen:tjugotreåringens:tjugotreåringar:tjugotreåringars:tjugotreåringarna:tjugotreåringarnas
+821761r3<substantiv>tjugotummare:tjugotummare:tjugotummares:tjugotummaren:tjugotummarens:tjugotummare:tjugotummares:tjugotummarna:tjugotummarnas
+672767r3<räkneord>tjugotusen:tjugotusen
+686169r3<räkneord>tjugotusende:tjugotusende
+654639r3<räkneord>tjugotvå:tjugotvå
+950247r3<adjektiv>tjugotvåårig:tjugotvåårig:tjugotvåårigt:tjugotvååriga:tjugotvååriga::::tjugotvåårige::::::::
+949939r3<substantiv>tjugotvååring:tjugotvååring:tjugotvåårings:tjugotvååringen:tjugotvååringens:tjugotvååringar:tjugotvååringars:tjugotvååringarna:tjugotvååringarnas
+577563r4<adjektiv>tjugoårig:tjugoårig:tjugoårigt:tjugoåriga:tjugoåriga:!:!:!:tjugoårige
+654469r3<substantiv>tjugoåring:tjugoåring:tjugoårings:tjugoåringen:tjugoåringens:tjugoåringar:tjugoåringars:tjugoåringarna:tjugoåringarnas
+CUSTOM: y y tjugoårings
+697373r3<substantiv>tjugoårsålder:::tjugoårsåldern:::::
+654640r3<räkneord>tjugoåtta:tjugoåtta
+950223r3<adjektiv>tjugoåttaårig:tjugoåttaårig:tjugoåttaårigt:tjugoåttaåriga:tjugoåttaåriga::::tjugoåttaårige::::::::
+949979r3<substantiv>tjugoåttaåring:tjugoåttaåring:tjugoåttaårings:tjugoåttaåringen:tjugoåttaåringens:tjugoåttaåringar:tjugoåttaåringars:tjugoåttaåringarna:tjugoåttaåringarnas
+654641r3<räkneord>tjugoåttonde:tjugoåttonde
+552013r11<substantiv>tjur:tjur:tjurs:tjuren:tjurens:tjurar:tjurars:tjurarna:tjurarnas
+649331r3<verb>tjura:tjura:tjurade:tjurat:tjurar:tjura:::::::::
+686170r3<substantiv>tjurfäktare:tjurfäktare:tjurfäktares:tjurfäktaren:tjurfäktarens:tjurfäktare:tjurfäktares:tjurfäktarna:tjurfäktarnas
+CUSTOM: y y tjurfäktar
+597767r3<substantiv>tjurfäktning:tjurfäktning:tjurfäktnings:tjurfäktningen:tjurfäktningens:tjurfäktningar:tjurfäktningars:tjurfäktningarna:tjurfäktningarnas
+CUSTOM: y y tjurfäktnings
+725300r4<substantiv>tjurhaj:tjurhaj:tjurhajs:tjurhajen:tjurhajens:tjurhajar:tjurhajars:tjurhajarna:tjurhajarnas
+DEFINITION 1: En sorts gråhaj
+CUSTOM: y n n
+988173r4<substantiv>tjurhuvud:tjurhuvud:tjurhuvuds:tjurhuvudet:tjurhuvudets:tjurhuvud, tjurhuvuden:tjurhuvuds, tjurhuvudens:tjurhuvudena:tjurhuvudenas
+COMPOUND(552013, 552483): tjur + huvud
+577564r4<adjektiv>tjurig:tjurig:tjurigt:tjuriga:tjuriga:tjurigare:tjurigast:tjurigaste:tjurige::::::::
+686176r3<substantiv>tjurighet:tjurighet:tjurighets:tjurigheten:tjurighetens::::
+CUSTOM: y y tjurighets
+686180r3<substantiv>tjurkalv:tjurkalv:tjurkalvs:tjurkalven:tjurkalvens:tjurkalvar:tjurkalvars:tjurkalvarna:tjurkalvarnas
+941023r5<substantiv>tjurrusning:tjurrusning:tjurrusnings:tjurrusningen:tjurrusningens:tjurrusningar:tjurrusningars:tjurrusningarna:tjurrusningarnas
+COMPOUND(552013, 696485): tjur + rusning
+654642r3<substantiv>tjurskalle:tjurskalle:tjurskalles:tjurskallen:tjurskallens:tjurskallar:tjurskallars:tjurskallarna:tjurskallarnas
+568147r3<adjektiv>tjurskallig:tjurskallig:tjurskalligt:tjurskalliga:tjurskalliga::::
+964248r3<substantiv>tjurskallighet:tjurskallighet:tjurskallighets:tjurskalligheten:tjurskallighetens::::
+547848r5<verb>tjusa:tjusa:tjusade:tjusat:tjusar:tjusa:tjusas:tjusades:tjusats:tjusas:tjusad:tjusat:tjusade:tjusande:
+622777r3<substantiv>tjusare:tjusare:tjusares:tjusaren:tjusarens:tjusare:tjusares:tjusarna:tjusarnas
+CUSTOM: y y tjusar
+585171r3<adjektiv>tjusfull:tjusfull:tjusfullt:tjusfulla:tjusfulla::::
+577567r4<adjektiv>tjusig:tjusig:tjusigt:tjusiga:tjusiga:tjusigare:tjusigast:tjusigaste:tjusige
+686188r3<substantiv>tjusighet:tjusighet:tjusighets:tjusigheten:tjusighetens::::
+CUSTOM: y y tjusighets
+686192r3<substantiv>tjuskraft:tjuskraft:tjuskrafts:tjuskraften:tjuskraftens::::
+672768r4<substantiv>tjusning:tjusning:tjusnings:tjusningen:tjusningens:tjusningar:tjusningars:tjusningarna:tjusningarnas
+CUSTOM: y y tjusnings
+624909r5<substantiv>tjut:tjut:tjuts:tjutet:tjutets:tjut:tjuts:tjuten:tjutens
+624914r5<verb>tjuta:tjuta:tjöt:tjutit:tjuter:tjut:tjutas:tjöts:tjutits:tjuts:!:!:!:tjutande:
+CUSTOM: y n
+552015r24<substantiv>tjuv:tjuv:tjuvs:tjuven:tjuvens:tjuvar:tjuvars:tjuvarna:tjuvarnas
+CUSTOM: y y tjuv
+759705r3<verb>tjuva:tjuva:tjuvade:tjuvat:tjuvar:tjuva::::::::tjuvande:
+577568r3<adjektiv>tjuvaktig:tjuvaktig:tjuvaktigt:tjuvaktiga:tjuvaktiga::::
+686196r3<substantiv>tjuvdans:tjuvdans:tjuvdans:tjuvdansen:tjuvdansens::::
+672770r3<substantiv>tjuveri:tjuveri:tjuveris:tjuveriet:tjuveriets:tjuverier:tjuveriers:tjuverierna:tjuveriernas
+672778r4<verb>tjuvfiska:tjuvfiska:tjuvfiskade:tjuvfiskat:tjuvfiskar:tjuvfiska:tjuvfiskas:tjuvfiskades:tjuvfiskats:tjuvfiskas:tjuvfiskad:tjuvfiskat:tjuvfiskade:tjuvfiskande:
+654650r3<substantiv>tjuvfiske:tjuvfiske:tjuvfiskes:tjuvfisket:tjuvfiskets::::
+654654r3<substantiv>tjuvgods:tjuvgods:tjuvgods:tjuvgodset:tjuvgodsets::::
+672782r4<verb>tjuvhålla:tjuvhålla:tjuvhöll:tjuvhållit:tjuvhåller:tjuvhåll:::::::::
+COMPOUND(552015, 555233): tjuv + hålla
+654657r3<substantiv>tjuvjakt:tjuvjakt:tjuvjakts:tjuvjakten:tjuvjaktens::::
+847139r3<verb>tjuvkika:tjuvkika:tjuvkikade:tjuvkikat:tjuvkikar:tjuvkika::::::::tjuvkikande:
+672787r4<substantiv>tjuvknep:tjuvknep:tjuvkneps:tjuvknepet:tjuvknepets:tjuvknep:tjuvkneps:tjuvknepen:tjuvknepens
+COMPOUND(552015, 552555): tjuv + knep
+654661r4<verb>tjuvkoppla:tjuvkoppla:tjuvkopplade:tjuvkopplat:tjuvkopplar:tjuvkoppla:tjuvkopplas:tjuvkopplades:tjuvkopplats:tjuvkopplas:tjuvkopplad:tjuvkopplat:tjuvkopplade::
+COMPOUND(552015, 547219): tjuv + koppla
+654669r3<substantiv>tjuvlarm:tjuvlarm:tjuvlarms:tjuvlarmet:tjuvlarmets:tjuvlarm:tjuvlarms:tjuvlarmen:tjuvlarmens
+654675r4<verb>tjuvlyssna:tjuvlyssna:tjuvlyssnade:tjuvlyssnat:tjuvlyssnar:tjuvlyssna:::::::::
+COMPOUND(552015, 547309): tjuv + lyssna
+654679r3<substantiv>tjuvlyssnare:tjuvlyssnare:tjuvlyssnares:tjuvlyssnaren:tjuvlyssnarens:tjuvlyssnare:tjuvlyssnares:tjuvlyssnarna:tjuvlyssnarnas
+CUSTOM: y y tjuvlyssnar
+672793r3<substantiv>tjuvlyssning:tjuvlyssning:tjuvlyssnings:tjuvlyssningen:tjuvlyssningens::::
+CUSTOM: y y tjuvlyssnings
+654685r4<verb>tjuvläsa:tjuvläsa:tjuvläste:tjuvläst:tjuvläser:tjuvläs:tjuvläsas:tjuvlästes:tjuvlästs:tjuvläses:tjuvläst:tjuvläst:tjuvlästa::
+COMPOUND(552015, 556182): tjuv + läsa
+654695r3<substantiv>tjuvläsning:tjuvläsning:tjuvläsnings:tjuvläsningen:tjuvläsningens:!:!:!:!
+CUSTOM: y y tjuvläsnings
+550675r3<substantiv>tjuvnad:tjuvnad:tjuvnads:tjuvnaden:tjuvnadens:tjuvnader:tjuvnaders:tjuvnaderna:tjuvnadernas
+672797r4<substantiv>tjuvnyp:tjuvnyp:tjuvnyps:tjuvnypet:tjuvnypets:tjuvnyp:tjuvnyps:tjuvnypen:tjuvnypens
+COMPOUND(552015, 672798): tjuv + nyp
+672808r4<substantiv>tjuvnäste:tjuvnäste:tjuvnästes:tjuvnästet:tjuvnästets:tjuvnästen:tjuvnästens:tjuvnästena:tjuvnästenas
+COMPOUND(552015, 619184): tjuv + näste
+577571r3<adjektiv>tjuvpojksaktig:tjuvpojksaktig:tjuvpojksaktigt:tjuvpojksaktiga:tjuvpojksaktiga::::
+672816r4<verb>tjuvröka:tjuvröka:tjuvrökte:tjuvrökt:tjuvröker:tjuvrök::::::::tjuvrökande:
+COMPOUND(552015, 585837): tjuv + röka
+672822r3<substantiv>tjuvrökning:tjuvrökning:tjuvröknings:tjuvrökningen:tjuvrökningens::::
+CUSTOM: y y tjuvröknings
+637067r6<verb>tjuvskjuta:tjuvskjuta:tjuvsköt:tjuvskjutit:tjuvskjuter:tjuvskjut:tjuvskjutas:tjuvsköts:tjuvskjutits:tjuvskjuts, tjuvskjutes:tjuvskjuten:tjuvskjutet:tjuvskjutna:tjuvskjutande:
+COMPOUND(552015, 593371): tjuv + skjuta
+672826r4<substantiv>tjuvskytt:tjuvskytt:tjuvskytts:tjuvskytten:tjuvskyttens:tjuvskyttar:tjuvskyttars:tjuvskyttarna:tjuvskyttarnas
+COMPOUND(552015, 619655): tjuv + skytt
+672832r4<substantiv>tjuvskytte:tjuvskytte:tjuvskyttes:tjuvskyttet:tjuvskyttets::::
+COMPOUND(552015, 619656): tjuv + skytte
+672836r4<substantiv>tjuvstart:tjuvstart:tjuvstarts:tjuvstarten:tjuvstartens:tjuvstarter:tjuvstarters:tjuvstarterna:tjuvstarternas
+COMPOUND(552015, 603706): tjuv + start
+672863r4<verb>tjuvstarta:tjuvstarta:tjuvstartade:tjuvstartat:tjuvstartar:tjuvstarta:::::::::
+COMPOUND(552015, 547750): tjuv + starta
+853156r3<substantiv>tjuvtag:tjuvtag:tjuvtags:tjuvtaget:tjuvtagets:tjuvtag:tjuvtags:tjuvtagen:tjuvtagens
+672867r3<substantiv>tjuvtitt:tjuvtitt:tjuvtitts:tjuvtitten:tjuvtittens::::
+672844r4<verb>tjuvtitta:tjuvtitta:tjuvtittade:tjuvtittat:tjuvtittar:tjuvtitta:::::::::
+COMPOUND(552015, 547846): tjuv + titta
+672848r4<verb>tjuvträna:tjuvträna:tjuvtränade:tjuvtränat:tjuvtränar:tjuvträna:::::::::
+COMPOUND(552015, 547877): tjuv + träna
+686199r3<substantiv>tjuvträning:tjuvträning:tjuvtränings:tjuvträningen:tjuvträningens::::
+CUSTOM: y y tjuvtränings
+672852r4<verb>tjuvåka:tjuvåka:tjuvåkte:tjuvåkt:tjuvåker:tjuvåk:::::::::
+COMPOUND(552015, 556249): tjuv + åka
+672857r3<substantiv>tjuvåkning:tjuvåkning:tjuvåknings:tjuvåkningen:tjuvåkningens::::
+CUSTOM: y y tjuvåknings
+737051r3<substantiv>tjyv:tjyv:tjyvs:tjyven:tjyvens:tjyvar:tjyvars:tjyvarna:tjyvarnas
+672871r4<substantiv>tjäder:tjäder:tjäders:tjädern:tjäderns:tjädrar:tjädrars:tjädrarna:tjädrarnas
+CUSTOM: y y tjäder
+803481r4<substantiv>tjäderhane:tjäderhane:tjäderhanes:tjäderhanen:tjäderhanens:tjäderhanar:tjäderhanars:tjäderhanarna:tjäderhanarnas
+COMPOUND(672871, 599831): tjäder + hane
+803489r3<substantiv>tjäderhona:tjäderhona:tjäderhonas:tjäderhonan:tjäderhonans:tjäderhonor:tjäderhonors:tjäderhonorna:tjäderhonornas
+803497r3<substantiv>tjäderhöna:tjäderhöna:tjäderhönas:tjäderhönan:tjäderhönans:tjäderhönor:tjäderhönors:tjäderhönorna:tjäderhönornas
+803505r3<substantiv>tjäderlek:tjäderlek:tjäderleks:tjäderleken:tjäderlekens:tjäderlekar:tjäderlekars:tjäderlekarna:tjäderlekarnas
+788685r3<egennamn>Tjäderqvist:Tjäderqvist:Tjäderqvists
+803513r3<substantiv>tjäderspel:tjäderspel:tjäderspels:tjäderspelet:tjäderspelets:tjäderspel:tjäderspels:tjäderspelen:tjäderspelens
+803519r3<substantiv>tjädertupp:tjädertupp:tjädertupps:tjädertuppen:tjädertuppens:tjädertuppar:tjädertuppars:tjädertupparna:tjädertupparnas
+686204r4<substantiv>tjäldjup:tjäldjup:tjäldjups:tjäldjupet:tjäldjupets:tjäldjup:tjäldjups:tjäldjupen:tjäldjupens
+COMPOUND(628952, 552320): tjäle + djup
+CUSTOM: y n n
+628952r6<substantiv>tjäle:tjäle:tjäles:tjälen:tjälens::::
+CUSTOM: y y tjäl
+568150r3<adjektiv>tjälfarlig:tjälfarlig:tjälfarligt:tjälfarliga:tjälfarliga::::
+564322r3<adjektiv>tjälfri:tjälfri:tjälfritt:tjälfria:tjälfria::::
+686210r4<substantiv>tjälgräns:tjälgräns:tjälgräns:tjälgränsen:tjälgränsens::::
+COMPOUND(628952, 549166): tjäle + gräns
+697325r3<substantiv>tjäll:tjäll:tjälls:tjället:tjällets:tjäll:tjälls:tjällen:tjällens
+686213r4<substantiv>tjälskada:tjälskada:tjälskadas:tjälskadan:tjälskadans:tjälskador:tjälskadors:tjälskadorna:tjälskadornas
+COMPOUND(628952, 595121): tjäle + skada
+800528r3<adjektiv>tjälsprängd:tjälsprängd:tjälsprängt:tjälsprängda:tjälsprängda::::
+547849r5<verb>tjäna:tjäna:tjänade:tjänat:tjänar:tjäna:tjänas:tjänades:tjänats:tjänas:tjänad:tjänat:tjänade:tjänande:
+610148r3<substantiv>tjänare:tjänare:tjänares:tjänaren:tjänarens:tjänare:tjänares:tjänarna:tjänarnas
+CUSTOM: y y tjänar
+672877r3<substantiv>tjänarinna:tjänarinna:tjänarinnas:tjänarinnan:tjänarinnans:tjänarinnor:tjänarinnors:tjänarinnorna:tjänarinnornas
+568153r3<adjektiv>tjänlig:tjänlig:tjänligt:tjänliga:tjänliga::::
+686221r3<substantiv>tjänlighet:tjänlighet:tjänlighets:tjänligheten:tjänlighetens::::
+CUSTOM: y y tjänlighets
+550677r33<substantiv>tjänst:tjänst:tjänsts:tjänsten:tjänstens:tjänster:tjänsters:tjänsterna:tjänsternas
+CUSTOM: y y tjänst tjänste +tjänst
+577574r3<adjektiv>tjänstaktig:tjänstaktig:tjänstaktigt:tjänstaktiga:tjänstaktiga::::
+672878r3<substantiv>tjänstaktighet:tjänstaktighet:tjänstaktighets:tjänstaktigheten:tjänstaktighetens::::
+CUSTOM: y y tjänstaktighets
+770493r3<substantiv>tjänsteande:tjänsteande:tjänsteandes:tjänsteanden:tjänsteandens:tjänsteandar:tjänsteandars:tjänsteandarna:tjänsteandarnas
+748343r5<substantiv>tjänstebil:tjänstebil:tjänstebils:tjänstebilen:tjänstebilens:tjänstebilar:tjänstebilars:tjänstebilarna:tjänstebilarnas
+COMPOUND(550677, 550885): tjänst + bil
+CUSTOM: y y tjänstebils
+748352r3<substantiv>tjänstebilsbeskattning::::::::
+COMPOUND(748343, 592550): tjänstebil + beskattning
+568154r3<adjektiv>tjänsteduglig:tjänsteduglig:tjänstedugligt:tjänstedugliga:tjänstedugliga::::
+672879r4<substantiv>tjänstefel:tjänstefel:tjänstefels:tjänstefelet:tjänstefelets:tjänstefel:tjänstefels:tjänstefelen:tjänstefelens
+COMPOUND(550677, 552375): tjänst + fel
+748353r4<substantiv>tjänsteflicka:tjänsteflicka:tjänsteflickas:tjänsteflickan:tjänsteflickans:tjänsteflickor:tjänsteflickors:tjänsteflickorna:tjänsteflickornas
+COMPOUND(550677, 555382): tjänst + flicka
+564325r3<adjektiv>tjänstefri:tjänstefri:tjänstefritt:tjänstefria:tjänstefria::::
+673526r4<substantiv>tjänstehjon:tjänstehjon:tjänstehjons:tjänstehjonet:tjänstehjonets:tjänstehjon:tjänstehjons:tjänstehjonen:tjänstehjonens
+COMPOUND(550677, 627751): tjänst + hjon
+875734r3<substantiv>tjänstehäst:tjänstehäst:tjänstehästs:tjänstehästen:tjänstehästens:tjänstehästar:tjänstehästars:tjänstehästarna:tjänstehästarnas
+795721r3<adjektiv>tjänsteintegrerad:tjänsteintegrerad:tjänsteintegrerat:tjänsteintegrerade:tjänsteintegrerade:!:!:!:
+673784r4<substantiv>tjänstekvinna:tjänstekvinna:tjänstekvinnas:tjänstekvinnan:tjänstekvinnans:tjänstekvinnor:tjänstekvinnors:tjänstekvinnorna:tjänstekvinnornas
+COMPOUND(550677, 557802): tjänst + kvinna
+672881r7<substantiv>tjänsteman:tjänsteman:tjänstemans:tjänstemannen:tjänstemannens:tjänstemän:tjänstemäns:tjänstemännen:tjänstemännens
+COMPOUND(550677, 557796): tjänst + man
+CUSTOM: y y tjänstemanna
+697329r4<substantiv>tjänstemannakår:tjänstemannakår:tjänstemannakårs:tjänstemannakåren:tjänstemannakårens:tjänstemannakårer:tjänstemannakårers:tjänstemannakårerna:tjänstemannakårernas
+COMPOUND(672881, 559877): tjänsteman + kår
+568157r3<adjektiv>tjänsteoduglig:tjänsteoduglig:tjänsteodugligt:tjänsteodugliga:tjänsteodugliga::::
+577577r3<adjektiv>tjänstepliktig:tjänstepliktig:tjänstepliktigt:tjänstepliktiga:tjänstepliktiga::::
+672885r4<substantiv>tjänsteresa:tjänsteresa:tjänsteresas:tjänsteresan:tjänsteresans:tjänsteresor:tjänsteresors:tjänsteresorna:tjänsteresornas
+COMPOUND(550677, 594958): tjänst + resa
+672886r4<substantiv>tjänsteåliggande:tjänsteåliggande:tjänsteåliggandes:tjänsteåliggandet:tjänsteåliggandets:tjänsteåligganden:tjänsteåliggandens:tjänsteåliggandena:tjänsteåliggandenas
+COMPOUND(550677, 653788): tjänst + åliggande
+748361r4<substantiv>tjänsteår:tjänsteår:tjänsteårs:tjänsteåret:tjänsteårets:tjänsteår:tjänsteårs:tjänsteåren:tjänsteårens
+COMPOUND(550677, 553140): tjänst + år
+577580r3<adjektiv>tjänstfärdig:tjänstfärdig:tjänstfärdigt:tjänstfärdiga:tjänstfärdiga::::
+672892r7<verb>tjänstgöra:tjänstgöra:tjänstgjorde:tjänstgjort:tjänstgör:tjänstgör:tjänstgöras:tjänstgjordes:tjänstgjorts:tjänstgörs, tjänstgöres:tjänstgjord:tjänstgjort:tjänstgjorda:tjänstgörande:
+COMPOUND(550677, 555241): tjänst + göra
+672895r4<substantiv>tjänstgöring:tjänstgöring:tjänstgörings:tjänstgöringen:tjänstgöringens:tjänstgöringar:tjänstgöringars:tjänstgöringarna:tjänstgöringarnas
+CUSTOM: y y tjänstgörings +tjänstgörings
+734199r4<substantiv>tjänstgöringsbetyg:tjänstgöringsbetyg:tjänstgöringsbetygs:tjänstgöringsbetyget:tjänstgöringsbetygets:tjänstgöringsbetyg:tjänstgöringsbetygs:tjänstgöringsbetygen:tjänstgöringsbetygens
+COMPOUND(672895, 552244): tjänstgöring + betyg
+571343r3<adjektiv>tjänstledig:tjänstledig:tjänstledigt:tjänstlediga:tjänstlediga:!:!:!:tjänstledige
+603891r3<substantiv>tjänstledighet:tjänstledighet:tjänstledighets:tjänstledigheten:tjänstledighetens:tjänstledigheter:tjänstledigheters:tjänstledigheterna:tjänstledigheternas
+CUSTOM: y y tjänstledighets
+568160r3<adjektiv>tjänstvillig:tjänstvillig:tjänstvilligt:tjänstvilliga:tjänstvilliga::::
+672900r3<substantiv>tjänstvillighet:tjänstvillighet:tjänstvillighets:tjänstvilligheten:tjänstvillighetens::::
+CUSTOM: y y tjänstvillighets
+626708r3<verb>tjära:tjära:tjärade:tjärat:tjärar:tjära:tjäras:tjärades:tjärats:tjäras:tjärad:tjärat:tjärade:tjärande:
+626707r5<substantiv>tjära:tjära:tjäras:tjäran:tjärans:!:!:!:!
+577583r3<adjektiv>tjäraktig:tjäraktig:tjäraktigt:tjäraktiga:tjäraktiga::::
+795724r3<adjektiv>tjärartad:tjärartad:tjärartat:tjärartade:tjärartade:!:!:!:
+988181r3<substantiv>tjärblomster:tjärblomster:tjärblomsters:tjärblomstret:tjärblomstrets:tjärblomster:tjärblomsters:tjärblomstren:tjärblomstrens
+955413r3<substantiv>tjärbloss:tjärbloss:tjärbloss:tjärblosset:tjärblossets:tjärbloss:tjärbloss:tjärblossen:tjärblossens
+988187r3<substantiv>tjärbränning:tjärbränning:tjärbrännings:tjärbränningen:tjärbränningens::::
+988191r3<substantiv>tjärdal:tjärdal:tjärdals:tjärdalen:tjärdalens:tjärdalar:tjärdalars:tjärdalarna:tjärdalarnas
+577586r3<adjektiv>tjärhaltig:tjärhaltig:tjärhaltigt:tjärhaltiga:tjärhaltiga::::
+577589r3<adjektiv>tjärig:tjärig:tjärigt:tjäriga:tjäriga::::
+795727r3<adjektiv>tjärimpregnerad:tjärimpregnerad:tjärimpregnerat:tjärimpregnerade:tjärimpregnerade:!:!:!:
+627377r3<substantiv>tjärn:tjärn:tjärns:tjärnen:tjärnens:tjärnar:tjärnars:tjärnarna:tjärnarnas
+939647r4<substantiv>tjärsand:tjärsand:tjärsands:tjärsanden:tjärsandens::::
+COMPOUND(626707, 624721): tjära + sand
+988199r4<substantiv>tjärtunna:tjärtunna:tjärtunnas:tjärtunnan:tjärtunnans:tjärtunnor:tjärtunnors:tjärtunnorna:tjärtunnornas
+COMPOUND(626707, 668498): tjära + tunna
+728282r3<egennamn>Tjörn:Tjörn:Tjörns
+CUSTOM: y n Tjörn
+764982r6<substantiv>toa:toa:toas:toan:toans::::
+CUSTOM: y n
+872642r3<substantiv>toabesök:toabesök:toabesöks:toabesöket:toabesökets:toabesök:toabesöks:toabesöken:toabesökens
+940799r4<substantiv>toadörr:toadörr:toadörrs:toadörren:toadörrens:toadörrar:toadörrars:toadörrarna:toadörrarnas
+COMPOUND(764982, 551088): toa + dörr
+550679r5<substantiv>toalett:toalett:toaletts:toaletten:toalettens:toaletter:toaletters:toaletterna:toaletternas
+CUSTOM: y y toalett
+724909r4<substantiv>toalettlock:toalettlock:toalettlocks:toalettlocket:toalettlockets:toalettlock:toalettlocks:toalettlocken:toalettlockens
+COMPOUND(550679, 554985): toalett + lock
+958949r3<substantiv>toalettsaker:::::toalettsaker:toalettsakers:toalettsakerna:toalettsakernas
+764986r5<substantiv>toapapper:toapapper:toapappers:toapapperet, toapappret:toapapperets, toapapprets::::
+COMPOUND(764982, 556527): toa + papper
+CUSTOM: y y toapappers
+658206r5<substantiv>toapappersrulle:toapappersrulle:toapappersrulles:toapappersrullen:toapappersrullens:toapappersrullar:toapappersrullars:toapappersrullarna:toapappersrullarnas
+COMPOUND(764986, 599967): toapapper + rulle
+658216r4<substantiv>toapappersrullehållare:toapappersrullehållare:toapappersrullehållares:toapappersrullehållaren:toapappersrullehållarens:toapappersrullehållare:toapappersrullehållares:toapappersrullehållarna:toapappersrullehållarnas
+COMPOUND(658206, 615293): toapappersrulle + hållare
+CUSTOM: y y toapappersrullehållar
+803528r3<substantiv>toarulle:toarulle:toarulles:toarullen:toarullens:toarullar:toarullars:toarullarna:toarullarnas
+626716r3<substantiv>toast:toast:toasts:toasten:toastens:toasts:::
+957116r3<substantiv>toastmaster:toastmaster:toastmasters:toastmastern:toastmasterns:toastmastrar:toastmastrars:toastmastrarna:toastmastrarnas
+941690r4<substantiv>toastol:toastol:toastols:toastolen:toastolens:toastolar:toastolars:toastolarna:toastolarnas
+COMPOUND(764982, 551944): toa + stol
+554146r3<egennamn>Tobago:Tobago:Tobagos
+CUSTOM: y n Tobago
+649332r6<substantiv>tobak:tobak:tobaks:tobaken:tobakens::::
+CUSTOM: y y tobaks
+988207r3<substantiv>tobakist:tobakist:tobakists:tobakisten:tobakistens:tobakister:tobakisters:tobakisterna:tobakisternas
+605688r3<substantiv>tobaksaffär:tobaksaffär:tobaksaffärs:tobaksaffären:tobaksaffärens:tobaksaffärer:tobaksaffärers:tobaksaffärerna:tobaksaffärernas
+795730r3<adjektiv>tobaksfärgad:tobaksfärgad:tobaksfärgat:tobaksfärgade:tobaksfärgade:!:!:!:
+611363r3<substantiv>tobaksindustri:tobaksindustri:tobaksindustris:tobaksindustrin:tobaksindustrins:tobaksindustrier:tobaksindustriers:tobaksindustrierna:tobaksindustriernas
+659554r4<substantiv>tobakspipa:tobakspipa:tobakspipas:tobakspipan:tobakspipans:tobakspipor:tobakspipors:tobakspiporna:tobakspipornas
+COMPOUND(649332, 556880): tobak + pipa
+728988r4<substantiv>tobakssponsring:tobakssponsring:tobakssponsrings:tobakssponsringen:tobakssponsringens:tobakssponsringar:tobakssponsringars:tobakssponsringarna:tobakssponsringarnas
+COMPOUND(649332, 728997): tobak + sponsring
+603892r3<substantiv>tobaksvarufabrik:tobaksvarufabrik:tobaksvarufabriks:tobaksvarufabriken:tobaksvarufabrikens:tobaksvarufabriker:tobaksvarufabrikers:tobaksvarufabrikerna:tobaksvarufabrikernas
+611371r3<substantiv>tobaksvaruindustri:tobaksvaruindustri:tobaksvaruindustris:tobaksvaruindustrin:tobaksvaruindustrins:tobaksvaruindustrier:tobaksvaruindustriers:tobaksvaruindustrierna:tobaksvaruindustriernas
+554815r3<egennamn>Tobias:Tobias:Tobias
+672901r3<substantiv>tobisgrissla:tobisgrissla:tobisgrisslas:tobisgrisslan:tobisgrisslans:tobisgrisslor:tobisgrisslors:tobisgrisslorna:tobisgrisslornas
+988215r3<substantiv>tobiskung:tobiskung:tobiskungs:tobiskungen:tobiskungens:tobiskungar:tobiskungars:tobiskungarna:tobiskungarnas
+988223r3<substantiv>toccata:toccata:toccatas:toccatan:toccatans:toccator:toccators:toccatorna:toccatornas
+672906r3<adjektiv>tocken:tocken:tocket:tockna:tockna::::
+593512r4<substantiv>toffel:toffel:toffels:toffeln:toffelns:tofflor:tofflors:tofflorna:tofflornas
+764992r3<substantiv>toffelhjälte:toffelhjälte:toffelhjältes:toffelhjälten:toffelhjältens:toffelhjältar:toffelhjältars:toffelhjältarna:toffelhjältarnas
+595545r4<substantiv>toffla:toffla:tofflas:tofflan:tofflans:tofflor:tofflors:tofflorna:tofflornas
+585721r3<verb>toffla:toffla:tofflade:tofflat:tofflar:toffla:::::::::
+552016r4<substantiv>tofs:tofs:tofs:tofsen:tofsens:tofsar:tofsars:tofsarna:tofsarnas
+577592r3<adjektiv>tofsig:tofsig:tofsigt:tofsiga:tofsiga::::
+803537r3<substantiv>tofslärka:tofslärka:tofslärkas:tofslärkan:tofslärkans:tofslärkor:tofslärkors:tofslärkorna:tofslärkornas
+672914r3<substantiv>tofsmes:tofsmes:tofsmes:tofsmesen:tofsmesens:tofsmesar:tofsmesars:tofsmesarna:tofsmesarnas
+801693r3<adjektiv>tofsprydd:tofsprydd:tofsprytt:tofsprydda:tofsprydda::::
+803545r3<substantiv>tofsskivling:tofsskivling:tofsskivlings:tofsskivlingen:tofsskivlingens:tofsskivlingar:tofsskivlingars:tofsskivlingarna:tofsskivlingarnas
+672909r3<substantiv>tofsvipa:tofsvipa:tofsvipas:tofsvipan:tofsvipans:tofsvipor:tofsvipors:tofsviporna:tofsvipornas
+628958r3<substantiv>toft:toft:tofts:toften:toftens:tofter:tofters:tofterna:tofternas
+CUSTOM: n n y
+895629r3<substantiv>tofu:tofu:tofus:tofun:tofuns:!:!:!:!
+CUSTOM: y n
+628973r3<substantiv>toga:toga:togas:togan:togans:togor:togors:togorna:togornas
+CUSTOM: y n
+801696r3<adjektiv>togaklädd:togaklädd:togaklätt:togaklädda:togaklädda::::
+CUSTOM: y n
+990106r3<egennamn>Togo:Togo:Togos
+964252r3<substantiv>togoles:togoles:togoles:togolesen:togolesens:togoleser:togolesers:togoleserna:togolesernas
+CUSTOM: y n
+584392r3<adjektiv>togolesisk:togolesisk:togolesiskt:togolesiska:togolesiska::::
+CUSTOM: y n
+972025r3<egennamn>Toini:Toini:Toinis
+624324r9<substantiv>tok:tok, toker:toks, tokers:token, tokern:tokens, tokerns:tokar:tokars:tokarna:tokarnas
+CUSTOM: y n
+596145r4<substantiv>toka:toka:tokas:tokan:tokans:tokor:tokors:tokorna:tokornas
+CUSTOM: y n
+896223r3<substantiv>tokdåre:tokdåre:tokdåres:tokdåren:tokdårens:tokdårar:tokdårars:tokdårarna:tokdårarnas
+CUSTOM: y n n
+672921r3<substantiv>tokeri:tokeri:tokeris:tokeriet:tokeriets:tokerier:tokeriers:tokerierna:tokeriernas
+927288r4<substantiv>tokfeminism:tokfeminism:tokfeminisms:tokfeminismen:tokfeminismens:!:!:!:!
+COMPOUND(624324, 558104): tok + feminism
+927278r4<substantiv>tokfeminist:tokfeminist:tokfeminists:tokfeministen:tokfeministens:tokfeminister:tokfeministers:tokfeministerna:tokfeministernas
+COMPOUND(624324, 685352): tok + feminist
+577595r5<adjektiv>tokig:tokig:tokigt:tokiga:tokiga:tokigare:tokigast:tokigaste:tokige
+672924r3<substantiv>tokighet:tokighet:tokighets:tokigheten:tokighetens:tokigheter:tokigheters:tokigheterna:tokigheternas
+CUSTOM: y y tokighets
+568163r4<adjektiv>tokrolig:tokrolig:tokroligt:tokroliga:tokroliga::::tokrolige
+725992r4<substantiv>tokskalle:tokskalle:tokskalles:tokskallen:tokskallens:tokskallar:tokskallars:tokskallarna:tokskallarnas
+COMPOUND(624324, 599968): tok + skalle
+724527r5<verb>tokskratta:tokskratta:tokskrattade:tokskrattat:tokskrattar:tokskratta:tokskrattas:tokskrattades:tokskrattats:tokskrattas::::tokskrattande:
+672925r4<substantiv>tokstolle:tokstolle:tokstolles:tokstollen:tokstollens:tokstollar:tokstollars:tokstollarna:tokstollarnas
+COMPOUND(624324, 726000): tok + stolle
+568164r3<adjektiv>tokstollig:tokstollig:tokstolligt:tokstolliga:tokstolliga::::
+726009r4<substantiv>toktant:toktant:toktants:toktanten:toktantens:toktanter:toktanters:toktanterna:toktanternas
+COMPOUND(624324, 550637): tok + tant
+CUSTOM: n n
+672933r3<substantiv>tokvänster:tokvänster:tokvänsters:tokvänstern:tokvänsterns::::
+854335r3<egennamn>Tokyo:Tokyo:Tokyos
+CUSTOM: y n Tokyo
+874255r3<egennamn>Tokyobörsen:Tokyobörsen:Tokyobörsens
+CUSTOM: n n 
+570923r3<adjektiv>tolerabel:tolerabel:tolerabelt:tolerabla:tolerabla::::
+672938r6<substantiv>tolerans:tolerans:tolerans:toleransen:toleransens:toleranser:toleransers:toleranserna:toleransernas
+BASEWORDS: tolerans
+CUSTOM: y y tolerans
+800531r3<adjektiv>toleransbestämd:toleransbestämd:toleransbestämt:toleransbestämda:toleransbestämda::::
+577596r3<adjektiv>toleransmässig:toleransmässig:toleransmässigt:toleransmässiga:toleransmässiga::::
+672937r4<substantiv>toleranströskel:toleranströskel:toleranströskels:toleranströskeln:toleranströskelns:toleranströsklar:toleranströsklars:toleranströsklarna:toleranströsklarnas
+COMPOUND(672938, 600445): tolerans + tröskel
+672948r3<adjektiv>tolerant:tolerant:tolerant:toleranta:toleranta:tolerantare:tolerantast:tolerantaste:tolerante
+547850r4<verb>tolerera:tolerera:tolererade:tolererat:tolererar:tolerera:tolereras:tolererades:tolererats:tolereras:tolererad:tolererat:tolererade::
+570298r3<adjektiv>tolererbar:tolererbar:tolererbart:tolererbara:tolererbara::::
+964259r3<substantiv>tolft:tolft:tolfts:tolften:tolftens:tolfter:tolfters:tolfterna:tolfternas
+CUSTOM: y n
+571071r3<räkneord>tolfte:tolfte
+672950r3<substantiv>tolftedel:tolftedel:tolftedels:tolftedelen:tolftedelens:tolftedelar:tolftedelars:tolftedelarna:tolftedelarnas
+920100r3<substantiv>tolfteplats:tolfteplats:tolfteplats:tolfteplatsen:tolfteplatsens:tolfteplatser:tolfteplatsers:tolfteplatserna:tolfteplatsernas
+579405r10<adjektiv>tolfteseedad:tolfteseedad:tolfteseedat:tolfteseedade:tolfteseedade:!:!:!:::::::::
+891975r3<egennamn>Tolgfors:Tolgfors:Tolgfors
+552017r15<substantiv>tolk:tolk:tolks:tolken:tolkens:tolkar:tolkars:tolkarna:tolkarnas
+CUSTOM: y n
+547851r6<verb>tolka:tolka:tolkade:tolkat:tolkar:tolka:tolkas:tolkades:tolkats:tolkas:tolkad:tolkat:tolkade:tolkande:
+672958r3<substantiv>tolkare:tolkare:tolkares:tolkaren:tolkarens:tolkare:tolkares:tolkarna:tolkarnas
+CUSTOM: y y tolkar
+570301r3<adjektiv>tolkbar:tolkbar:tolkbart:tolkbara:tolkbara::::
+886574r4<substantiv>tolkbrist:tolkbrist:tolkbrists:tolkbristen:tolkbristens::::
+COMPOUND(552017, 548456): tolk + brist
+897948r3<substantiv>tolkförmedlare:tolkförmedlare:tolkförmedlares:tolkförmedlaren:tolkförmedlarens:tolkförmedlare:tolkförmedlares:tolkförmedlarna:tolkförmedlarnas
+897956r4<substantiv>tolkförmedling:tolkförmedling:tolkförmedlings:tolkförmedlingen:tolkförmedlingens:tolkförmedlingar:tolkförmedlingars:tolkförmedlingarna:tolkförmedlingarnas
+COMPOUND(552017, 670701): tolk + förmedling
+CUSTOM: y n tolkförmedlings
+920109r4<substantiv>tolkhjälp:tolkhjälp:tolkhjälps:tolkhjälpen:tolkhjälpens::::
+COMPOUND(552017, 560565): tolk + hjälp
+882044r3<egennamn>Tolkien:Tolkien:Tolkiens
+CUSTOM: y n Tolkien
+639253r6<substantiv>tolkning:tolkning:tolknings:tolkningen:tolkningens:tolkningar:tolkningars:tolkningarna:tolkningarnas
+CUSTOM: y y tolknings +tolknings
+637013r4<substantiv>tolkningsföreträde:tolkningsföreträde:tolkningsföreträdes:tolkningsföreträdet:tolkningsföreträdets:tolkningsföreträden:tolkningsföreträdens:tolkningsföreträdena:tolkningsföreträdenas
+COMPOUND(639253, 639734): tolkning + företräde
+CUSTOM: n n
+920114r4<substantiv>tolkservice:tolkservice:tolkservices:tolkservicen:tolkservicens:!:!:!:!
+COMPOUND(552017, 645472): tolk + service
+803554r4<substantiv>tolkskola:tolkskola:tolkskolas:tolkskolan:tolkskolans:tolkskolor:tolkskolors:tolkskolorna:tolkskolornas
+COMPOUND(552017, 557322): tolk + skola
+886580r4<substantiv>tolkstöd:tolkstöd:tolkstöds:tolkstödet:tolkstödets:tolkstöd:tolkstöds:tolkstöden:tolkstödens
+COMPOUND(552017, 552997): tolk + stöd
+920119r4<substantiv>tolktjänst:tolktjänst:tolktjänsts:tolktjänsten:tolktjänstens:tolktjänster:tolktjänsters:tolktjänsterna:tolktjänsternas
+COMPOUND(552017, 550677): tolk + tjänst
+803562r4<substantiv>tolkutbildning:tolkutbildning:tolkutbildnings:tolkutbildningen:tolkutbildningens:tolkutbildningar:tolkutbildningars:tolkutbildningarna:tolkutbildningarnas
+COMPOUND(552017, 597810): tolk + utbildning
+886588r4<substantiv>tolkverksamhet:tolkverksamhet:tolkverksamhets:tolkverksamheten:tolkverksamhetens::::
+COMPOUND(552017, 604113): tolk + verksamhet
+965841r3<egennamn>Tolstoj:Tolstoj:Tolstojs
+555183r3<räkneord>tolv:tolv
+748368r3<substantiv>tolva:tolva:tolvas:tolvan:tolvans:tolvor:tolvors:tolvorna:tolvornas
+676760r10<substantiv>tolvfingertarm:tolvfingertarm:tolvfingertarms:tolvfingertarmen:tolvfingertarmens:tolvfingertarmar:tolvfingertarmars:tolvfingertarmarna:tolvfingertarmarnas
+920331r3<adjektiv>tolvgradig:tolvgradig:tolvgradigt:tolvgradiga:tolvgradiga::::::::::::
+697338r3<räkneord>tolvhundra:tolvhundra
+666043r3<substantiv>tolvhundratal:tolvhundratal:tolvhundratals:tolvhundratalet:tolvhundratalets::::
+960069r3<substantiv>tolvrumsvåning:tolvrumsvåning:tolvrumsvånings:tolvrumsvåningen:tolvrumsvåningens:tolvrumsvåningar:tolvrumsvåningars:tolvrumsvåningarna:tolvrumsvåningarnas
+553052r3<substantiv>tolvslag:tolvslag:tolvslags:tolvslaget:tolvslagets:tolvslag:tolvslags:tolvslagen:tolvslagens
+942206r3<substantiv>tolvslaget:::tolvslaget:::::
+942203r3<substantiv>tolvsnåret:::tolvsnåret:::::
+956407r3<substantiv>tolvtaggare:tolvtaggare:tolvtaggares:tolvtaggaren:tolvtaggarens:tolvtaggare:tolvtaggares:tolvtaggarna:tolvtaggarnas
+741690r3<substantiv>tolvtiden:::tolvtiden:::::
+770507r3<substantiv>tolvtonsmusik:tolvtonsmusik:tolvtonsmusiks:tolvtonsmusiken:tolvtonsmusikens::::
+988231r3<substantiv>tolvtonsteknik:tolvtonste

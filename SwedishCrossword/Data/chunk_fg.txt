@@ -1,0 +1,622 @@
+mittade:rabiessmittade:!:!:!:
+879469r3<substantiv>rabulism:rabulism:rabulisms:rabulismen:rabulismens::::
+879461r3<substantiv>rabulist:rabulist:rabulists:rabulisten:rabulistens:rabulister:rabulisters:rabulisterna:rabulisternas
+583281r3<adjektiv>rabulistisk:rabulistisk:rabulistiskt:rabulistiska:rabulistiska::::
+559106r4<substantiv>race:race:races:racet:racets:race:races:racen:racens
+DEFINITION 1: tävling mellan motorfordon
+583284r3<adjektiv>racematisk:racematisk:racematiskt:racematiska:racematiska::::
+583287r3<adjektiv>racemisk:racemisk:racemiskt:racemiska:racemiska::::
+CUSTOM: y n n
+946363r7<substantiv>racer:racer:racers:racern:racerns:racer:racers:racerna:racernas
+936487r4<substantiv>racerbana:racerbana:racerbanas:racerbanan:racerbanans:racerbanor:racerbanors:racerbanorna:racerbanornas
+COMPOUND(946363, 556870): racer + bana
+946369r4<substantiv>racerbil:racerbil:racerbils:racerbilen:racerbilens:racerbilar:racerbilars:racerbilarna:racerbilarnas
+COMPOUND(946363, 550885): racer + bil
+CUSTOM: y n racerbils
+946377r4<substantiv>racerbåt:racerbåt:racerbåts:racerbåten:racerbåtens:racerbåtar:racerbåtars:racerbåtarna:racerbåtarnas
+COMPOUND(946363, 550993): racer + båt
+CUSTOM: y n racerbåts
+609969r4<substantiv>racerförare:racerförare:racerförares:racerföraren:racerförarens:racerförare:racerförares:racerförarna:racerförarnas
+COMPOUND(946363, 558907): racer + förare
+CUSTOM: y y racerförar
+738192r4<substantiv>racing:racing:racings:racingen:racingens::::
+CUSTOM: y y racing
+854853r4<substantiv>racingserie:racingserie:racingseries:racingserien:racingseriens:racingserier:racingseriers:racingserierna:racingseriernas
+COMPOUND(738192, 555464): racing + serie
+649029r3<substantiv>rack:rack:racks:racket:rackets:rack:racks:racken:rackens
+625221r3<verb>racka:racka:rackade:rackat:rackar:racka:::::::::
+556207r3<substantiv>rackare:rackare:rackares:rackaren:rackarens:rackare:rackares:rackarna:rackarnas
+CUSTOM: y y rackar
+720950r3<substantiv>rackarunge:rackarunge:rackarunges:rackarungen:rackarungens:rackarungar:rackarungars:rackarungarna:rackarungarnas
+879473r3<substantiv>rackelhane:rackelhane:rackelhanes:rackelhanen:rackelhanens:rackelhanar:rackelhanars:rackelhanarna:rackelhanarnas
+559113r7<substantiv>racket:racket:rackets:racketen:racketens:racketar:racketars:racketarna:racketarnas
+CUSTOM: y y racket
+784903r4<substantiv>racketsport:racketsport:racketsports:racketsporten:racketsportens:racketsporter:racketsporters:racketsporterna:racketsporternas
+COMPOUND(559113, 550562): racket + sport
+567465r3<adjektiv>racklig:racklig:rackligt:rackliga:rackliga::::
+706464r3<verb>rackmontera:rackmontera:rackmonterade:rackmonterat:rackmonterar:rackmontera:rackmonteras:rackmonterades:rackmonterats:rackmonteras:rackmonterad:rackmonterat:rackmonterade::
+877493r3<substantiv>rackskåp:rackskåp:rackskåps:rackskåpet:rackskåpets:rackskåp:rackskåps:rackskåpen:rackskåpens
+CUSTOM: y n n
+939798r5<substantiv>raclette:raclette:::::::
+939811r4<substantiv>raclettejärn:raclettejärn:raclettejärns:raclettejärnet:raclettejärnets:raclettejärn:raclettejärns:raclettejärnen:raclettejärnens
+COMPOUND(939798, 552537): raclette + järn
+939801r4<substantiv>racletteost:racletteost:racletteosts:racletteosten:racletteostens:racletteostar:racletteostars:racletteostarna:racletteostarnas
+COMPOUND(939798, 555054): raclette + ost
+550306r15<substantiv>rad:rad:rads:raden:radens:rader:raders:raderna:radernas
+CUSTOM: y y rad
+547533r4<verb>rada:rada:radade:radat:radar:rada:radas:radades:radats:radas:::::
+877475r4<substantiv>radannons:radannons:radannons:radannonsen:radannonsens:radannonser:radannonsers:radannonserna:radannonsernas
+COMPOUND(550306, 548200): rad + annons
+629458r11<substantiv>radar:radar:radars:radarn:radarns::::
+BASEWORDS: radar
+CUSTOM: y y radar
+629462r3<substantiv>radareko:radareko:radarekos:radarekot:radarekots:radarekon:radarekons:radarekona:radarekonas
+678085r4<substantiv>radarekvation:radarekvation:radarekvations:radarekvationen:radarekvationens:radarekvationer:radarekvationers:radarekvationerna:radarekvationernas
+COMPOUND(629458, 601699): radar + ekvation
+CUSTOM: y y radarekvations
+942023r4<substantiv>radarfyr:radarfyr:radarfyrs:radarfyren:radarfyrens:radarfyrar:radarfyrars:radarfyrarna:radarfyrarnas
+COMPOUND(629458, 551200): radar + fyr
+590717r3<verb>radarisera:radarisera:radariserade:radariserat:radariserar:radarisera:::::::::
+720941r15<substantiv>radarreflektor:radarreflektor:radarreflektors:radarreflektorn:radarreflektorns:radarreflektorer:radarreflektorers:radarreflektorerna:radarreflektorernas
+COMPOUND(629458, 611168): radar + reflektor
+769641r4<substantiv>radarskärm:radarskärm:radarskärms:radarskärmen:radarskärmens:radarskärmar:radarskärmars:radarskärmarna:radarskärmarnas
+COMPOUND(629458, 551858): radar + skärm
+722157r4<substantiv>radarstation:radarstation:radarstations:radarstationen:radarstationens:radarstationer:radarstationers:radarstationerna:radarstationernas
+COMPOUND(629458, 603711): radar + station
+800161r3<adjektiv>radarstyrd:radarstyrd:radarstyrt:radarstyrda:radarstyrda::::
+629470r3<substantiv>radarsändare:radarsändare:radarsändares:radarsändaren:radarsändarens:radarsändare:radarsändares:radarsändarna:radarsändarnas
+CUSTOM: y y radarsändar
+722165r4<substantiv>radartäckning:radartäckning:radartäcknings:radartäckningen:radartäckningens::::
+COMPOUND(629458, 674764): radar + täckning
+629476r3<substantiv>radarutrustning:radarutrustning:radarutrustnings:radarutrustningen:radarutrustningens:radarutrustningar:radarutrustningars:radarutrustningarna:radarutrustningarnas
+CUSTOM: y y radarutrustnings
+695905r4<substantiv>radavstånd:radavstånd:radavstånds:radavståndet:radavståndets:radavstånd:radavstånds:radavstånden:radavståndens
+COMPOUND(550306, 552214): rad + avstånd
+552807r4<substantiv>radband:radband:radbands:radbandet:radbandets:radband:radbands:radbanden:radbandens
+CUSTOM: y y radbands
+778251r3<substantiv>radbandskula::::::::
+COMPOUND(552807, 559858): radband + kula
+938125r3<substantiv>radda:radda:raddas:raddan:raddans:raddor:raddors:raddorna:raddornas
+547534r6<verb>radera:radera:raderade:raderat:raderar:radera:raderas:raderades:raderats:raderas:raderad:raderat:raderade:raderande:
+CUSTOM: y n
+569962r3<adjektiv>raderbar:raderbar:raderbart:raderbara:raderbara::::
+736282r4<substantiv>radergummi:radergummi:radergummis:radergummit:radergummits:radergummin:radergummins:radergummina:radergumminas
+COMPOUND(547534, 556715): radera + gummi
+879481r3<substantiv>radering:radering:raderings:raderingen:raderingens:raderingar:raderingars:raderingarna:raderingarnas
+552809r3<substantiv>radhus:radhus:radhus:radhuset:radhusets:radhus:radhus:radhusen:radhusens
+CUSTOM: y y radhus
+880321r3<adjektiv>radial:radial:radialt:radiala:radiala::::
+720576r3<substantiv>radialbelastning:radialbelastning:radialbelastnings:radialbelastningen:radialbelastningens:radialbelastningar:radialbelastningars:radialbelastningarna:radialbelastningarnas
+730951r3<substantiv>radialborrmaskin:radialborrmaskin:radialborrmaskins:radialborrmaskinen:radialborrmaskinens:radialborrmaskiner:radialborrmaskiners:radialborrmaskinerna:radialborrmaskinernas
+985131r3<substantiv>radialdäck:radialdäck:radialdäcks:radialdäcket:radialdäckets:radialdäck:radialdäcks:radialdäcken:radialdäckens
+695909r3<substantiv>radian:radian:radians:radianen:radianens:radianer:radianers:radianerna:radianernas
+798701r3<adjektiv>radiativ:radiativ:radiativt:radiativa:radiativa::::
+CUSTOM: y n n
+689029r4<substantiv>radiator:radiator:radiators:radiatorn:radiatorns:radiatorer:radiatorers:radiatorerna:radiatorernas
+CUSTOM: y y radiator
+800164r3<adjektiv>radiatorkyld:radiatorkyld:radiatorkylt:radiatorkylda:radiatorkylda::::
+649232r5<substantiv>radie:radie:radies:radien:radiens:radier:radiers:radierna:radiernas
+720572r3<adjektiv>radiell:radiell:radiellt:radiella:radiella::::
+590721r3<verb>radiera:radiera:radierade:radierat:radierar:radiera:::::::::
+880324r3<substantiv>radiering:radiering:radierings:radieringen:radieringens:radieringar:radieringars:radieringarna:radieringarnas
+563016r5<adjektiv>radikal:radikal:radikalt:radikala:radikala:radikalare:radikalast:radikalaste:radikale
+CUSTOM: y y radikal
+706545r5<substantiv>radikal:radikal:radikals:radikalen:radikalens:radikaler:radikalers:radikalerna:radikalernas
+587697r4<verb>radikalisera:radikalisera:radikaliserade:radikaliserat:radikaliserar:radikalisera:radikaliseras:radikaliserades:radikaliserats:radikaliseras:radikaliserad:radikaliserat:radikaliserade:radikaliserande:
+880332r3<substantiv>radikalisering:radikalisering:radikaliserings:radikaliseringen:radikaliseringens::::
+695910r3<substantiv>radikalism:radikalism:radikalisms:radikalismen:radikalismens:!:!:!:!
+879495r3<substantiv>radikalitet:radikalitet:radikalitets:radikaliteten:radikalitetens::::
+879499r6<substantiv>radikalkur:radikalkur:radikalkurs:radikalkuren:radikalkurens:radikalkurer:radikalkurers:radikalkurerna:radikalkurernas
+COMPOUND(563016, 549817): radikal + kur
+622347r24<substantiv>radio:radio:radios:radion:radions:radioapparater:radioapparaters:radioapparaterna:radioapparaternas
+CUSTOM: y y radio +radio
+695912r3<adjektiv>radioaktiv:radioaktiv:radioaktivt:radioaktiva:radioaktiva:!:!:!:!
+603244r3<substantiv>radioapparat:radioapparat:radioapparats:radioapparaten:radioapparatens:radioapparater:radioapparaters:radioapparaterna:radioapparaternas
+583290r3<adjektiv>radiobiologisk:radiobiologisk:radiobiologiskt:radiobiologiska:radiobiologiska::::
+989413r3<substantiv>radiofarmaka:::::radiofarmaka:radiofarmakas::
+942031r4<substantiv>radiofyr:radiofyr:radiofyrs:radiofyren:radiofyrens:radiofyrar:radiofyrars:radiofyrarna:radiofyrarnas
+COMPOUND(622347, 551200): radio + fyr
+583293r3<adjektiv>radiofysisk:radiofysisk:radiofysiskt:radiofysiska:radiofysiska::::
+583296r3<adjektiv>radiogoniometrisk:radiogoniometrisk:radiogoniometriskt:radiogoniometriska:radiogoniometriska::::
+590725r3<verb>radiografera:radiografera:radiograferade:radiograferat:radiograferar:radiografera:::::::::
+583299r3<adjektiv>radiografisk:radiografisk:radiografiskt:radiografiska:radiografiska::::
+583302r3<adjektiv>radiohistorisk:radiohistorisk:radiohistoriskt:radiohistoriska:radiohistoriska::::
+990200r4<substantiv>radiohit:radiohit:radiohits:radiohitten:radiohittens:radiohittar, radiohits:radiohittars, radiohits:radiohittarna, radiohitsen:radiohittarnas, radiohitsens
+COMPOUND(622347, 936538): radio + hit
+583305r3<adjektiv>radioisotopteknisk:radioisotopteknisk:radioisotoptekniskt:radioisotoptekniska:radioisotoptekniska::::
+794449r3<adjektiv>radiokontrollerad:radiokontrollerad:radiokontrollerat:radiokontrollerade:radiokontrollerade:!:!:!:
+935972r4<substantiv>radiokrönika:radiokrönika:radiokrönikas:radiokrönikan:radiokrönikans:radiokrönikor:radiokrönikors:radiokrönikorna:radiokrönikornas
+COMPOUND(622347, 636704): radio + krönika
+761504r3<substantiv>radiolog:radiolog:radiologs:radiologen:radiologens:radiologer:radiologers:radiologerna:radiologernas
+583308r3<adjektiv>radiologisk:radiologisk:radiologiskt:radiologiska:radiologiska::::
+583311r3<adjektiv>radiomagnetisk:radiomagnetisk:radiomagnetiskt:radiomagnetiska:radiomagnetiska::::
+583314r3<adjektiv>radiometeorologisk:radiometeorologisk:radiometeorologiskt:radiometeorologiska:radiometeorologiska::::
+896320r3<substantiv>radiometer:radiometer:radiometers:radiometern:radiometerns:radiometrar:radiometrars:radiometrarna:radiometrarnas
+880336r3<substantiv>radiometri:radiometri:radiometris:radiometrin:radiometrins::::
+583317r3<adjektiv>radiometrisk:radiometrisk:radiometriskt:radiometriska:radiometriska::::
+583320r3<adjektiv>radiooptisk:radiooptisk:radiooptiskt:radiooptiska:radiooptiska::::
+945171r4<substantiv>radiopejl:radiopejl:radiopejls:radiopejlen:radiopejlens:radiopejlar:radiopejlars:radiopejlarna:radiopejlarnas
+COMPOUND(622347, 940951): radio + pejl
+921338r4<substantiv>radioprat:radioprat:radioprats:radiopratet:radiopratets:!:!:!:!
+COMPOUND(622347, 624631): radio + prat
+768802r3<substantiv>radiopratare:radiopratare:radiopratares:radioprataren:radiopratarens:radiopratare:radiopratares:radiopratarna:radiopratarnas
+695913r4<substantiv>radioprogram:radioprogram:radioprograms:radioprogrammet:radioprogrammets:radioprogram:radioprograms:radioprogrammen:radioprogrammens
+COMPOUND(622347, 555118): radio + program
+695914r4<substantiv>radiosignal:radiosignal:radiosignals:radiosignalen:radiosignalens:radiosignaler:radiosignalers:radiosignalerna:radiosignalernas
+COMPOUND(622347, 550490): radio + signal
+879507r3<substantiv>radioskopi:radioskopi:radioskopis:radioskopin:radioskopins:radioskopier:radioskopiers:radioskopierna:radioskopiernas
+920168r4<substantiv>radiosond:radiosond:radiosonds:radiosonden:radiosondens:radiosonder:radiosonders:radiosonderna:radiosondernas
+COMPOUND(622347, 628821): radio + sond
+861052r3<egennamn>Radiosporten:Radiosporten:Radiosportens
+679769r5<substantiv>radiostation:radiostation:radiostations:radiostationen:radiostationens:radiostationer:radiostationers:radiostationerna:radiostationernas
+COMPOUND(622347, 603711): radio + station
+CUSTOM: y y radiostations
+800167r3<adjektiv>radiostyrd:radiostyrd:radiostyrt:radiostyrda:radiostyrda::::
+633507r6<verb>radiosända:radiosända:radiosände:radiosänt:radiosänder:radiosänd:radiosändas:radiosändes:radiosänts:radiosänds, radiosändes:radiosänd:radiosänt:radiosända:radiosändande:
+COMPOUND(622347, 593413): radio + sända
+768809r4<substantiv>radiotal:radiotal:radiotals:radiotalet:radiotalets:radiotal:radiotals:radiotalen:radiotalens
+COMPOUND(622347, 553029): radio + tal
+936060r4<substantiv>radioteater:radioteater:radioteaters:radioteatern:radioteaterns:radioteatrar:radioteatrars:radioteatrarna:radioteatrarnas
+COMPOUND(622347, 669445): radio + teater
+583323r3<adjektiv>radioteknisk:radioteknisk:radiotekniskt:radiotekniska:radiotekniska::::
+583326r3<adjektiv>radiotelefonisk:radiotelefonisk:radiotelefoniskt:radiotelefoniska:radiotelefoniska::::
+590729r3<verb>radiotelegrafera:radiotelegrafera:radiotelegraferade:radiotelegraferat:radiotelegraferar:radiotelegrafera:::::::::
+583329r3<adjektiv>radiotelegrafisk:radiotelegrafisk:radiotelegrafiskt:radiotelegrafiska:radiotelegrafiska::::
+627073r3<substantiv>radioterapi:radioterapi:radioterapis:radioterapin:radioterapins::::
+695918r4<substantiv>radiovåg:radiovåg:radiovågs:radiovågen:radiovågens:radiovågor:radiovågors:radiovågorna:radiovågornas
+COMPOUND(622347, 593520): radio + våg
+695925r5<substantiv>radium:radium:radiums:radiumet:radiumets::::
+CUSTOM: y y radium
+778252r3<substantiv>radiumbehandling::::::::
+COMPOUND(695925, 592479): radium + behandling
+575509r3<adjektiv>radiumhaltig:radiumhaltig:radiumhaltigt:radiumhaltiga:radiumhaltiga::::
+583332r3<adjektiv>radiumterapeutisk:radiumterapeutisk:radiumterapeutiskt:radiumterapeutiska:radiumterapeutiska::::
+880340r3<adjektiv>radiär:radiär:radiärt:radiära:radiära::::
+720994r9<substantiv>radon:radon:radons:radonet:radonets:!:!:!:!
+DEFINITION 1: En radioaktiv ädelgas
+CUSTOM: y y radon
+778253r5<substantiv>radongas:radongas:radongas:radongasen:radongasens:radongaser:radongasers:radongaserna:radongasernas
+COMPOUND(720994, 549064): radon + gas
+CUSTOM: y y radongas
+778256r4<substantiv>radonhalt:radonhalt:radonhalts:radonhalten:radonhaltens:radonhalter:radonhalters:radonhalterna:radonhalternas
+COMPOUND(720994, 549191): radon + halt
+778264r4<substantiv>radonhus:radonhus:radonhus:radonhuset:radonhusets:radonhus:radonhus:radonhusen:radonhusens
+COMPOUND(720994, 552480): radon + hus
+778269r4<substantiv>radonmätning:radonmätning:radonmätnings:radonmätningen:radonmätningens:radonmätningar:radonmätningars:radonmätningarna:radonmätningarnas
+COMPOUND(720994, 648296): radon + mätning
+778277r4<substantiv>radonstrålning:radonstrålning:radonstrålnings:radonstrålningen:radonstrålningens::::
+COMPOUND(720994, 670340): radon + strålning
+851886r4<verb>radså:radså:radsådde:radsått:radsår:radså:radsås:radsåddes:radsåtts:radsås:radsådd:radsått:radsådda:radsående:
+COMPOUND(550306, 555970): rad + så
+CUSTOM: y n
+695926r3<adverb>radvis:radvis
+855068r3<egennamn>Rafa:Rafa:Rafas
+854992r3<egennamn>Rafael:Rafael:Rafaels
+695927r3<substantiv>raffel:raffel:raffels:rafflet:rafflets::::
+575512r4<adjektiv>raffig:raffig:raffigt:raffiga:raffiga:raffigare:raffigast:raffigaste:
+879518r3<substantiv>raffighet:raffighet:raffighets:raffigheten:raffighetens::::
+776758r3<substantiv>raffinaderi:raffinaderi:raffinaderis:raffinaderiet:raffinaderiets:raffinaderier:raffinaderiers:raffinaderierna:raffinaderiernas
+CUSTOM: y y raffinaderi
+736389r3<substantiv>raffinemang:raffinemang:raffinemangs:raffinemanget:raffinemangets:raffinemang:raffinemangs:raffinemangen:raffinemangens
+547535r4<verb>raffinera:raffinera:raffinerade:raffinerat:raffinerar:raffinera:raffineras:raffinerades:raffinerats:raffineras:raffinerad:raffinerat:raffinerade::
+640554r3<adjektiv>raffinerad:raffinerad:raffinerat:raffinerade:raffinerade:!:!:!:
+736433r3<substantiv>raffinering:raffinering:raffinerings:raffineringen:raffineringens:raffineringar:raffineringars:raffineringarna:raffineringarnas
+695931r3<adjektiv>rafflande:rafflande:rafflande:rafflande:rafflande:!:!:!:
+567468r3<adjektiv>rafflig:rafflig:raffligt:raffliga:raffliga::::
+905819r3<substantiv>raffset:raffset:raffsets:raffsetet:raffsetets:raffset:raffsets:raffseten:raffsetens
+590733r4<verb>rafistulera:rafistulera:rafistulerade:rafistulerat:rafistulerar:rafistulera:rafistuleras:rafistulerades:rafistulerats:rafistuleras:rafistulerad:rafistulerat:rafistulerade::
+880343r3<substantiv>rafräschissör:rafräschissör:rafräschissörs:rafräschissören:rafräschissörens:rafräschissörer:rafräschissörers:rafräschissörerna:rafräschissörernas
+738321r3<verb>rafsa:rafsa:rafsade:rafsat:rafsar:rafsa:rafsas:rafsades:rafsats:rafsas::::rafsande:
+575515r3<adjektiv>rafsig:rafsig:rafsigt:rafsiga:rafsiga::::
+904817r3<substantiv>raga:raga:ragas:ragan:ragans:ragor:ragors:ragorna:ragornas
+CUSTOM: n n y
+879522r3<substantiv>ragata:ragata:ragatas:ragatan:ragatans:ragator:ragators:ragatorna:ragatornas
+624662r7<substantiv>ragg:ragg:raggs:raggen:raggens::::
+CUSTOM: y n
+736354r3<verb>ragga:ragga:raggade:raggat:raggar:ragga:raggas:raggades:raggats:raggas:raggad:raggat:raggade:raggande:
+623236r5<substantiv>raggare:raggare:raggares:raggaren:raggarens:raggare:raggares:raggarna:raggarnas
+BASEWORDS: raggar
+CUSTOM: y y raggar
+879530r4<substantiv>raggaråk:raggaråk:raggaråks:raggaråket:raggaråkets:raggaråk:raggaråks:raggaråken:raggaråkens
+COMPOUND(623236, 624048): raggare + åk
+575518r4<adjektiv>raggig:raggig:raggigt:raggiga:raggiga:raggigare:raggigast:raggigaste:raggige
+778281r3<substantiv>raggmunk:raggmunk:raggmunks:raggmunken:raggmunkens:raggmunkar:raggmunkars:raggmunkarna:raggmunkarnas
+879540r3<substantiv>raggning:raggning:raggnings:raggningen:raggningens:raggningar:raggningars:raggningarna:raggningarnas
+CUSTOM: y y raggnings
+879549r3<substantiv>raggsocka:raggsocka:raggsockas:raggsockan:raggsockans:raggsockor:raggsockors:raggsockorna:raggsockornas
+649234r4<verb>ragla:ragla:raglade:raglat:raglar:ragla::::::::raglande:
+554755r3<egennamn>Ragnar:Ragnar:Ragnars
+973235r3<egennamn>Ragnarsson:Ragnarsson:Ragnarssons
+963084r3<substantiv>ragnarök:ragnarök:ragnaröks::::::
+695933r3<egennamn>Ragnarök:Ragnarök:Ragnaröks
+CUSTOM: y n Ragnaröks
+553867r3<egennamn>Ragnhild:Ragnhild:Ragnhilds
+695936r3<substantiv>ragu:ragu:ragus:ragun:raguns:raguer:raguers:raguerna:raguernas
+728225r3<egennamn>Ragunda:Ragunda:Ragundas
+904825r4<substantiv>raid:raid:raids:raiden:raidens:raider:raiders:raiderna:raidernas
+CUSTOM: y n
+638053r3<substantiv>raita:raita:raitas:raitan:raitans:!:!:!:!
+CUSTOM: n n
+904833r3<substantiv>raja:raja:rajas:rajan:rajans:rajor:rajors:rajorna:rajornas
+CUSTOM: n n y
+940615r3<substantiv>rajgräs:rajgräs:rajgräs:rajgräset:rajgräsets:rajgräs:rajgräs:rajgräsen:rajgräsens
+563122r7<adjektiv>rak:rak:rakt:raka:raka:rakare:rakast:rakaste:::::::::
+CUSTOM: y n
+585639r6<verb>raka:raka:rakade:rakat:rakar:raka:rakas:rakades:rakats:rakas:rakad:rakat:rakade::
+CUSTOM: y n
+938387r3<substantiv>raka:raka:rakas:rakan:rakans:rakor:rakors:rakorna:rakornas
+550308r3<substantiv>rakapparat:rakapparat:rakapparats:rakapparaten:rakapparatens:rakapparater:rakapparaters:rakapparaterna:rakapparaternas
+778289r3<adjektiv>rakbent:rakbent:rakbent:rakbenta:rakbenta::::rakbente
+607859r4<substantiv>rakblad:rakblad:rakblads:rakbladet:rakbladets:rakblad:rakblads:rakbladen:rakbladens
+CUSTOM: y y rakblads
+778293r4<adjektiv>rakbladsvass:rakbladsvass:rakbladsvasst:rakbladsvassa:rakbladsvassa:!:!:!:
+COMPOUND(607859, 563270): rakblad + vass
+879558r3<substantiv>rakborste:rakborste:rakborstes:rakborsten:rakborstens:rakborstar:rakborstars:rakborstarna:rakborstarnas
+879566r3<substantiv>rakdon:rakdon:rakdons:rakdonet:rakdonets:rakdon:rakdons:rakdonen:rakdonens
+782975r8<egennamn>Rakel:Rakel:Rakels
+937255r3<substantiv>raken:::raken:::::
+CUSTOM: y n
+550310r8<substantiv>raket:raket:rakets:raketen:raketens:raketer:raketers:raketerna:raketernas
+CUSTOM: y y raket
+794452r3<adjektiv>raketbestyckad:raketbestyckad:raketbestyckat:raketbestyckade:raketbestyckade:!:!:!:
+658113r3<substantiv>rakethopp:rakethopp:rakethopps:rakethoppet:rakethoppets:rakethopp:rakethopps:rakethoppen:rakethoppens
+583335r3<adjektiv>raketteknisk:raketteknisk:rakettekniskt:rakettekniska:rakettekniska::::
+695944r4<substantiv>raketuppskjutning:raketuppskjutning:raketuppskjutnings:raketuppskjutningen:raketuppskjutningens:raketuppskjutningar:raketuppskjutningars:raketuppskjutningarna:raketuppskjutningarnas
+COMPOUND(550310, 695945): raket + uppskjutning
+CUSTOM: y y raketuppskjutnings
+575519r3<adjektiv>rakfibrig:rakfibrig:rakfibrigt:rakfibriga:rakfibriga::::
+941415r3<substantiv>rakhet:rakhet:rakhets:rakheten:rakhetens::::
+794455r3<adjektiv>rakhornad:rakhornad:rakhornat:rakhornade:rakhornade:!:!:!:
+600293r3<substantiv>rakhyvel:rakhyvel:rakhyvels:rakhyveln:rakhyvelns:rakhyvlar:rakhyvlars:rakhyvlarna:rakhyvlarnas
+895327r3<substantiv>raki:raki:rakis:rakin:rakins:!:!:!:!
+CUSTOM: n n y
+904842r3<substantiv>rakit:rakit:rakits:rakiten:rakitens:!:!:!:!
+CUSTOM: y n 
+583338r3<adjektiv>rakitisk:rakitisk:rakitiskt:rakitiska:rakitiska::::
+598730r3<substantiv>rakkniv:rakkniv:rakknivs:rakkniven:rakknivens:rakknivar:rakknivars:rakknivarna:rakknivarnas
+798704r3<adjektiv>rakknivsvass:rakknivsvass:rakknivsvasst:rakknivsvassa:rakknivsvassa::::
+794458r3<adjektiv>rakkuggad:rakkuggad:rakkuggat:rakkuggade:rakkuggade:!:!:!:
+575522r3<adjektiv>raklinjig:raklinjig:raklinjigt:raklinjiga:raklinjiga::::
+778296r3<adjektiv>raklång:raklång:raklångt:raklånga:raklånga::::
+778299r3<substantiv>raklödder:raklödder:raklödders:raklöddret:raklöddrets::::
+764681r3<substantiv>rakning:rakning:raknings:rakningen:rakningens:rakningar:rakningars:rakningarna:rakningarnas
+736378r3<adjektiv>rakryggad:rakryggad:rakryggat:rakryggade:rakryggade:!:!:!:
+575525r3<adjektiv>rakryggig:rakryggig:rakryggigt:rakryggiga:rakryggiga::::
+879574r3<substantiv>rakryggighet:rakryggighet:rakryggighets:rakryggigheten:rakryggighetens::::
+879578r3<substantiv>raksalong:raksalong:raksalongs:raksalongen:raksalongens:raksalonger:raksalongers:raksalongerna:raksalongernas
+764689r3<adjektiv>rakskuren:rakskuren:rakskuret:rakskurna:rakskurna::::
+764692r4<substantiv>rakspegel:rakspegel:rakspegels:rakspegeln:rakspegelns:rakspeglar:rakspeglars:rakspeglarna:rakspeglarnas
+COMPOUND(585639, 600419): raka + spegel
+575528r3<adjektiv>rakstammig:rakstammig:rakstammigt:rakstammiga:rakstammiga::::
+880351r3<substantiv>rakstrigel:rakstrigel:rakstrigels:rakstrigeln:rakstrigelns:rakstriglar:rakstriglars:rakstriglarna:rakstriglarnas
+741001r4<substantiv>raksträcka:raksträcka:raksträckas:raksträckan:raksträckans:raksträckor:raksträckors:raksträckorna:raksträckornas
+COMPOUND(563122, 559369): rak + sträcka
+880359r3<substantiv>rakstuga:rakstuga:rakstugas:rakstugan:rakstugans:rakstugor:rakstugors:rakstugorna:rakstugornas
+879586r3<substantiv>raktvål:raktvål:raktvåls:raktvålen:raktvålens:raktvålar:raktvålars:raktvålarna:raktvålarnas
+764700r4<substantiv>rakvatten:rakvatten:rakvattens:rakvattnet:rakvattnets::::
+COMPOUND(585639, 555162): raka + vatten
+778303r3<adjektiv>rakvuxen:rakvuxen:rakvuxet:rakvuxna:rakvuxna::::rakvuxne
+879594r3<adjektiv>rakväxt:rakväxt:rakväxt:rakväxta:rakväxta::::
+854953r3<egennamn>Ralf:Ralf:Ralfs
+764707r3<substantiv>raljans:raljans:raljans:raljansen:raljansens::::
+764704r3<adjektiv>raljant:raljant:raljant:raljanta:raljanta::::raljante
+587701r4<verb>raljera:raljera:raljerade:raljerat:raljerar:raljera:raljeras:raljerades:raljerats:raljeras::::raljerande:
+879596r3<substantiv>raljeri:raljeri:raljeris:raljeriet:raljeriets:raljerier:raljeriers:raljerierna:raljeriernas
+904847r3<substantiv>rall:rall:ralls:rallen:rallens:rallar:rallars:rallarna:rallarnas
+CUSTOM: y n 
+904853r3<verb>ralla:ralla:rallade:rallat:rallar:ralla:rallas:rallades:rallats:rallas:rallad:rallat:rallade:rallande:!
+CUSTOM: n n n 
+615414r4<substantiv>rallare:rallare:rallares:rallaren:rallarens:rallare:rallares:rallarna:rallarnas
+CUSTOM: y y rallar
+764710r4<substantiv>rallarsving:rallarsving:rallarsvings:rallarsvingen:rallarsvingens:rallarsvingar:rallarsvingars:rallarsvingarna:rallarsvingarnas
+COMPOUND(615414, 626656): rallare + sving
+985137r3<substantiv>rallfågel:rallfågel:rallfågels:rallfågeln:rallfågelns:rallfåglar:rallfåglars:rallfåglarna:rallfåglarnas
+626061r4<substantiv>rally:rally:rallys:rallyt:rallyts:rallyn:rallyns:rallyna:rallynas
+CUSTOM: y y rally
+879604r3<substantiv>rallycross:rallycross:rallycross:rallycrossen:rallycrossens::::
+736381r4<substantiv>rallytävling:rallytävling:rallytävlings:rallytävlingen:rallytävlingens:rallytävlingar:rallytävlingars:rallytävlingarna:rallytävlingarnas
+COMPOUND(626061, 597793): rally + tävling
+556702r14<substantiv>ram:ram:rams:ramen:ramens:ramar:ramars:ramarna:ramarnas
+CUSTOM: y y ram
+638497r2<substantiv>RAM::::::::
+628789r4<verb>rama:rama:ramade:ramat:ramar:rama:ramas:ramades:ramats:ramas:ramad:ramat:ramade:ramande:
+936431r3<substantiv>ramadan:ramadan:ramadans::::::
+CUSTOM: y n ramadan
+695946r3<substantiv>ramaskri:ramaskri:ramaskris:ramaskriet:ramaskriets:ramaskrin:ramaskrins:ramaskrina, ramaskrien:ramaskrinas, ramaskriens
+934593r4<substantiv>ramavtal:ramavtal:ramavtals:ramavtalet:ramavtalets:ramavtal:ramavtals:ramavtalen:ramavtalens
+COMPOUND(556702, 552215): ram + avtal
+695958r4<substantiv>ramberättelse:ramberättelse:ramberättelses:ramberättelsen:ramberättelsens:ramberättelser:ramberättelsers:ramberättelserna:ramberättelsernas
+COMPOUND(556702, 611837): ram + berättelse
+CUSTOM: y y ramberättelse
+878203r4<substantiv>rambeslut:rambeslut:rambesluts:rambeslutet:rambeslutets:rambeslut:rambesluts:rambesluten:rambeslutens
+COMPOUND(556702, 552238): ram + beslut
+583341r3<adjektiv>ramekonomisk:ramekonomisk:ramekonomiskt:ramekonomiska:ramekonomiska::::
+547536r5<verb>ramla:ramla:ramlade:ramlat:ramlar:ramla:!:!:!:!::::ramlande:
+928366r4<substantiv>ramlag:ramlag:ramlags:ramlagen:ramlagens:ramlagar:ramlagars:ramlagarna:ramlagarnas
+COMPOUND(556702, 551690): ram + lag
+891337r3<substantiv>ramlare:ramlare:ramlares:ramlaren:ramlarens:ramlare:ramlares:ramlarna:ramlarnas
+565162r3<adjektiv>ramlös:ramlös:ramlöst:ramlösa:ramlösa::::
+CUSTOM: y n n
+638498r3<substantiv>ramm:ramm:ramms:rammen:rammens:rammar:rammars:rammarna:rammarnas
+CUSTOM: y n
+626070r3<verb>ramma:ramma:rammade:rammat:rammar:ramma:rammas:rammades:rammats:rammas:rammad:rammat:rammade:rammande:
+634166r3<substantiv>rammelbuljong:rammelbuljong:!:!:!:!:!:!:!
+638505r3<substantiv>rammning:rammning:rammnings:rammningen:rammningens:rammningar:rammningars:rammningarna:rammningarnas
+CUSTOM: y n n rammnings
+879607r3<substantiv>ramning:ramning:ramnings:ramningen:ramningens:ramningar:ramningars:ramningarna:ramningarnas
+550312r7<substantiv>ramp:ramp:ramps:rampen:rampens:ramper:rampers:ramperna:rampernas
+CUSTOM: y y ramp
+638513r4<substantiv>rampfeber:rampfeber:rampfebers:rampfebern:rampfeberns:!:!:!:!
+COMPOUND(550312, 625315): ramp + feber
+552810r3<substantiv>rampljus:rampljus:rampljus:rampljuset:rampljusets:rampljus:rampljus:rampljusen:rampljusens
+590737r4<verb>ramponera:ramponera:ramponerade:ramponerat:ramponerar:ramponera:ramponeras:ramponerades:ramponerats:ramponeras:ramponerad:ramponerat:ramponerade:ramponerande:
+879620r3<substantiv>ramponering:ramponering:ramponerings:ramponeringen:ramponeringens::::
+895332r7<substantiv>rams:rams:rams:ramsen:ramsens::::
+CUSTOM: n n y
+621681r5<substantiv>ramsa:ramsa:ramsas:ramsan:ramsans:ramsor:ramsors:ramsorna:ramsornas
+880367r3<substantiv>ramslök:ramslök:ramslöks:ramslöken:ramslökens:ramslökar:ramslökars:ramslökarna:ramslökarnas
+851895r3<substantiv>ramsåg:ramsåg:ramsågs:ramsågen:ramsågens:ramsågar:ramsågars:ramsågarna:ramsågarnas
+901178r4<substantiv>ramtid:ramtid:ramtids:ramtiden:ramtidens:ramtider:ramtiders:ramtiderna:ramtidernas
+COMPOUND(556702, 550665): ram + tid
+CUSTOM: y n n
+636831r5<substantiv>ramverk:ramverk:ramverks:ramverket:ramverkets:ramverk:ramverks:ramverken:ramverkens
+COMPOUND(556702, 553117): ram + verk
+626079r4<substantiv>ranch:ranch:ranchs:ranchen:ranchens:rancher:ranchers:rancherna:ranchernas
+CUSTOM: y y ranch
+778307r3<substantiv>ranchägare::::::::
+COMPOUND(626079, 615532): ranch + ägare
+604521r9<substantiv>rand:rand:rands:randen:randens:ränder:ränders:ränderna:rändernas
+CUSTOM: y y rand
+547537r4<verb>randa:randa:randade:randat:randar:randa:randas:randades:randats:randas:randad:randat:randade::
+591736r3<deponens>randas:randas:randades:randats:randas:
+563265r6<adjektiv>randig:randig:randigt:randiga:randiga:randigare:randigast:randigaste:randige
+879627r3<substantiv>randighet:randighet:randighets:randigheten:randighetens::::
+989836r4<substantiv>randmorän:randmorän:randmoräns:randmoränen:randmoränens:randmoräner:randmoräners:randmoränerna:randmoränernas
+COMPOUND(604521, 865991): rand + morän
+879631r3<substantiv>randning:randning:randnings:randningen:randningens:randningar:randningars:randningarna:randningarnas
+590741r4<verb>randomisera:randomisera:randomiserade:randomiserat:randomiserar:randomisera:randomiseras:randomiserades:randomiserats:randomiseras:randomiserad:randomiserat:randomiserade:randomiserande:
+880380r3<substantiv>randomisering:randomisering:randomiserings:randomiseringen:randomiseringens:randomiseringar:randomiseringars:randomiseringarna:randomiseringarnas
+639250r2<substantiv>randpåle::::::::
+801604r3<adjektiv>randsydd:randsydd:randsytt:randsydda:randsydda::::
+638517r4<substantiv>randvillkor:randvillkor:randvillkors:randvillkoret:randvillkorets:randvillkor:randvillkors:randvillkoren:randvillkorens
+COMPOUND(604521, 553124): rand + villkor
+624667r7<substantiv>rang:rang:rangs:rangen:rangens::::
+590745r5<verb>rangera:rangera:rangerade:rangerat:rangerar:rangera:rangeras:rangerades:rangerats:rangeras:rangerad:rangerat:rangerade:rangerande:
+794461r3<adjektiv>rangerad:rangerad:rangerat:rangerade:rangerade:!:!:!:
+879653r3<substantiv>rangerbangård:rangerbangård:rangerbangårds:rangerbangården:rangerbangårdens:rangerbangårdar:rangerbangårdars:rangerbangårdarna:rangerbangårdarnas
+879639r3<substantiv>rangering:rangering:rangerings:rangeringen:rangeringens:rangeringar:rangeringars:rangeringarna:rangeringarnas
+879647r3<substantiv>rangerlok:rangerlok:rangerloks:rangerloket:rangerlokets:rangerlok:rangerloks:rangerloken:rangerlokens
+880388r3<substantiv>rangklass:rangklass:rangklass:rangklassen:rangklassens:rangklasser:rangklassers:rangklasserna:rangklassernas
+638523r6<verb>rangla:rangla:ranglade:ranglat:ranglar:rangla:ranglas:ranglades:ranglats:ranglas::::ranglande:
+567471r4<adjektiv>ranglig:ranglig:rangligt:rangliga:rangliga:rangligare:rangligast:rangligaste:ranglige
+879665r3<substantiv>ranglighet:ranglighet:ranglighets:rangligheten:ranglighetens::::
+879669r3<substantiv>ranglista:ranglista:ranglistas:ranglistan:ranglistans:ranglistor:ranglistors:ranglistorna:ranglistornas
+547538r5<verb>rangordna:rangordna:rangordnade:rangordnat:rangordnar:rangordna:rangordnas:rangordnades:rangordnats:rangordnas:rangordnad:rangordnat:rangordnade:rangordnande:
+695959r3<substantiv>rangordning:rangordning:rangordnings:rangordningen:rangordningens:rangordningar:rangordningars:rangordningarna:rangordningarnas
+CUSTOM: y y rangordnings
+879694r3<substantiv>rangplats:rangplats:rangplats:rangplatsen:rangplatsens:rangplatser:rangplatsers:rangplatserna:rangplatsernas
+879686r3<substantiv>rangrulla:rangrulla:rangrullas:rangrullan:rangrullans:rangrullor:rangrullors:rangrullorna:rangrullornas
+879678r3<substantiv>rangskala:rangskala:rangskalas:rangskalan:rangskalans:rangskalor:rangskalors:rangskalorna:rangskalornas
+879701r3<substantiv>rangställning:rangställning:rangställnings:rangställningen:rangställningens:rangställningar:rangställningars:rangställningarna:rangställningarnas
+638532r4<adjektiv>rank:rank:rankt:ranka:ranka:rankare:rankast:rankaste:::::::::
+547539r5<verb>ranka:ranka:rankade:rankat:rankar:ranka:rankas:rankades:rankats:rankas:rankad:rankat:rankade:rankande:
+705389r4<substantiv>ranka:ranka:rankas:rankan:rankans:rankor:rankors:rankorna:rankornas
+985145r3<substantiv>rankfoting:rankfoting:rankfotings:rankfotingen:rankfotingens:rankfotingar:rankfotingars:rankfotingarna:rankfotingarnas
+879709r3<substantiv>rankhet:rankhet:rankhets:rankheten:rankhetens::::
+575531r3<adjektiv>rankig:rankig:rankigt:rankiga:rankiga::::
+880396r3<substantiv>ranking:ranking:rankings:rankingen:rankingens:rankingar:rankingars:rankingarna:rankingarnas
+695960r3<substantiv>rankinglista:rankinglista:rankinglistas:rankinglistan:rankinglistans:rankinglistor:rankinglistors:rankinglistorna:rankinglistornas
+638534r4<substantiv>rankning:rankning:ranknings:rankningen:rankningens:rankningar:rankningars:rankningarna:rankningarnas
+CUSTOM: y y ranknings
+702831r4<substantiv>rankningslista:rankningslista:rankningslistas:rankningslistan:rankningslistans:rankningslistor:rankningslistors:rankningslistorna:rankningslistornas
+COMPOUND(638534, 555151): rankning + lista
+880404r3<substantiv>rankornament:rankornament:rankornaments:rankornamentet:rankornamentets:rankornament:rankornaments:rankornamenten:rankornamentens
+547540r4<verb>rannsaka:rannsaka:rannsakade:rannsakat:rannsakar:rannsaka:rannsakas:rannsakades:rannsakats:rannsakas:rannsakad:rannsakat:rannsakade::
+665895r5<substantiv>rannsakan:rannsakan:rannsakans:rannsakan:rannsakans:!:!:!:!
+695966r3<adjektiv>rannsakande:rannsakande:rannsakande:rannsakande:rannsakande:!:!:!:
+879713r3<substantiv>rannsakare:rannsakare:rannsakares:rannsakaren:rannsakarens:rannsakare:rannsakares:rannsakarna:rannsakarnas
+695967r4<substantiv>rannsakning:rannsakning:rannsaknings:rannsakningen:rannsakningens:rannsakningar:rannsakningars:rannsakningarna:rannsakningarnas
+CUSTOM: y y rannsaknings
+550314r3<substantiv>ranson:ranson:ransons:ransonen:ransonens:ransoner:ransoners:ransonerna:ransonernas
+547541r5<verb>ransonera:ransonera:ransonerade:ransonerat:ransonerar:ransonera:ransoneras:ransonerades:ransonerats:ransoneras:ransonerad:ransonerat:ransonerade:ransonerande:
+638542r4<substantiv>ransonering:ransonering:ransonerings:ransoneringen:ransoneringens:ransoneringar:ransoneringars:ransoneringarna:ransoneringarnas
+CUSTOM: y y ransonerings
+638543r3<verb>ranta:ranta:rantade:rantat:rantar:ranta:::::::::
+600301r4<substantiv>ranunkel:ranunkel:ranunkels:ranunkeln:ranunkelns:ranunklar, ranunkler:ranunklars, ranunklers:ranunklarna, ranunklerna:ranunklarnas, ranunklernas
+798707r3<adjektiv>ranunkelgul:ranunkelgul:ranunkelgult:ranunkelgula:ranunkelgula::::
+879719r3<substantiv>ranunkelväxt:ranunkelväxt:ranunkelväxts:ranunkelväxten:ranunkelväxtens:ranunkelväxter:ranunkelväxters:ranunkelväxterna:ranunkelväxternas
+971980r3<egennamn>Raoul:Raoul:Raouls
+624303r10<substantiv>rap:rap:raps:rapet:rapets:rap:raps:rapen:rapens
+628602r3<verb>rapa:rapa:rapade:rapat:rapar:rapa:rapas:rapades:rapats:rapas::::rapande:
+877950r3<substantiv>rapartist:rapartist:rapartists:rapartisten:rapartistens:rapartister:rapartisters:rapartisterna:rapartisternas
+638547r3<adjektiv>rapid:rapid:!:rapida:rapida:rapidare:rapidast:rapidaste:rapide
+638553r3<substantiv>rapiditet:rapiditet:rapiditets:rapiditeten:rapiditetens:rapiditeter:rapiditeters:rapiditeterna:rapiditeternas
+879732r10<substantiv>raplåt:raplåt:raplåts:raplåten:raplåtens:raplåtar:raplåtars:raplåtarna:raplåtarnas
+696004r3<substantiv>rapmusik:rapmusik:rapmusiks:rapmusiken:rapmusikens::::
+552811r4<substantiv>rapp:rapp:rapps:rappet:rappets:rapp:rapps:rappen:rappens
+626087r3<adjektiv>rapp:rapp:rappt:rappa:rappa:rappare:rappast:rappaste:rappe
+626092r4<verb>rappa:rappa:rappade:rappat:rappar:rappa:rappas:rappades:rappats:rappas:rappad:rappat:rappade:rappande:
+CUSTOM: y n
+638561r3<substantiv>rappakalja:rappakalja:rappakaljas:rappakaljan:rappakaljans:!:!:!:!
+879741r3<substantiv>rappare:rappare:rappares:rapparen:rapparens:rappare:rappares:rapparna:rapparnas
+638565r3<substantiv>rappell:rappell:rappells:rappellen:rappellens:rappeller:rappellers:rappellerna:rappellernas
+590749r3<verb>rappellera:rappellera:rappellerade:rappellerat:rappellerar:rappellera:::::::::
+879747r3<substantiv>rappellering:rappellering:rappellerings:rappelleringen:rappelleringens:rappelleringar:rappelleringars:rappelleringarna:rappelleringarnas
+879755r3<substantiv>rapphet:rapphet:rapphets:rappheten:rapphetens::::
+695968r3<substantiv>rapphöna:rapphöna:rapphönas:rapphönan:rapphönans:rapphönor:rapphönors:rapphönorna:rapphönornas
+778308r4<substantiv>rapphöns:rapphöns:rapphöns:rapphönset:rapphönsets:rapphöns:rapphöns:rapphönsen:rapphönsens
+CUSTOM: y y rapphöns
+778313r3<substantiv>rapphönsjakt::::::::
+COMPOUND(778308, 549380): rapphöns + jakt
+696008r3<substantiv>rappning:rappning:rappnings:rappningen:rappningens:rappningar:rappningars:rappningarna:rappningarnas
+CUSTOM: y y rappnings
+550315r11<substantiv>rapport:rapport:rapports:rapporten:rapportens:rapporter:rapporters:rapporterna:rapporternas
+CUSTOM: y y rapport
+547542r5<verb>rapportera:rapportera:rapporterade:rapporterat:rapporterar:rapportera:rapporteras:rapporterades:rapporterats:rapporteras:rapporterad:rapporterat:rapporterade:rapporterande:
+695974r3<substantiv>rapporterande:rapporterande:rapporterandes:rapporterandet:rapporterandets:!:!:!:!
+638573r5<substantiv>rapportering:rapportering:rapporterings:rapporteringen:rapporteringens:rapporteringar:rapporteringars:rapporteringarna:rapporteringarnas
+CUSTOM: y y rapporterings +rapporterings
+894475r4<substantiv>rapporteringsdel:rapporteringsdel:rapporteringsdels:rapporteringsdelen:rapporteringsdelens:rapporteringsdelar:rapporteringsdelars:rapporteringsdelarna:rapporteringsdelarnas
+COMPOUND(638573, 551034): rapportering + del
+695977r3<substantiv>rapportskrivning:rapportskrivning:rapportskrivnings:rapportskrivningen:rapportskrivningens::::
+CUSTOM: y y rapportskrivnings
+638574r3<substantiv>rapportör:rapportör:rapportörs:rapportören:rapportörens:rapportörer:rapportörers:rapportörerna:rapportörernas
+636169r5<substantiv>raps:raps:raps:rapsen:rapsens:!:!:!:!
+CUSTOM: y n raps
+695978r3<substantiv>rapsbagge:rapsbagge:rapsbagges:rapsbaggen:rapsbaggens:rapsbaggar:rapsbaggars:rapsbaggarna:rapsbaggarnas
+695986r4<substantiv>rapsfält:rapsfält:rapsfälts:rapsfältet:rapsfältets:rapsfält:rapsfälts:rapsfälten:rapsfältens
+COMPOUND(636169, 552397): raps + fält
+942983r4<adjektiv>rapsgul:rapsgul:rapsgult:rapsgula:rapsgula::::::::::::
+COMPOUND(636169, 555723): raps + gul
+695992r3<substantiv>rapskaka:rapskaka:rapskakas:rapskakan:rapskakans:rapskakor:rapskakors:rapskakorna:rapskakornas
+638582r3<substantiv>rapsod:rapsod:rapsods:rapsoden:rapsodens:rapsoder:rapsoders:rapsoderna:rapsodernas
+638590r3<substantiv>rapsodi:rapsodi:rapsodis:rapsodin:rapsodins:rapsodier:rapsodiers:rapsodierna:rapsodiernas
+583344r3<adjektiv>rapsodisk:rapsodisk:rapsodiskt:rapsodiska:rapsodiska::::
+696000r3<substantiv>rapsolja:rapsolja:rapsoljas:rapsoljan:rapsoljans::::
+879760r3<substantiv>rapstjärna:rapstjärna:rapstjärnas:rapstjärnan:rapstjärnans:rapstjärnor:rapstjärnors:rapstjärnorna:rapstjärnornas
+985157r3<substantiv>raptus:raptus:::::::
+CUSTOM: y n
+563123r4<adjektiv>rar:rar:rart:rara:rara:rarare:rarast:raraste:rare
+CUSTOM: y n
+638599r3<substantiv>raring:raring:rarings:raringen:raringens:raringar:raringars:raringarna:raringarnas
+CUSTOM: y n
+696017r4<substantiv>raritet:raritet:raritets:rariteten:raritetens:rariteter:rariteters:rariteterna:rariteternas
+CUSTOM: y y raritets
+778314r3<substantiv>raritetsvärde::::::::
+COMPOUND(696017, 613015): raritet + värde
+638607r16<verb>rarka::::::::::::::
+550316r16<substantiv>ras:ras:ras:rasen:rasens:raser:rasers:raserna:rasernas
+CUSTOM: y n ras
+626097r17<substantiv>ras:ras:ras:raset:rasets:ras:ras:rasen:rasens
+CUSTOM: y n ras
+547543r4<verb>rasa:rasa:rasade:rasat:rasar:rasa:!:!:!:!:::::
+638616r3<adjektiv>rasande:rasande:rasande:rasande:rasande:!:!:!:
+638617r3<adverb>rasande:rasande
+583347r3<adjektiv>rasbiologisk:rasbiologisk:rasbiologiskt:rasbiologiska:rasbiologiska::::
+639792r4<substantiv>rasdiskriminering:rasdiskriminering:rasdiskriminerings:rasdiskrimineringen:rasdiskrimineringens:rasdiskrimineringar:rasdiskrimineringars:rasdiskrimineringarna:rasdiskrimineringarnas
+COMPOUND(550316, 637034): ras + diskriminering
+CUSTOM: y y rasdiskriminerings
+547544r5<verb>rasera:rasera:raserade:raserat:raserar:rasera:raseras:raserades:raserats:raseras:raserad:raserat:raserade:raserande:
+638618r9<substantiv>raseri:raseri:raseris:raseriet:raseriets:!:!:!:!
+CUSTOM: y y raseri
+609021r3<substantiv>raserianfall:raserianfall:raserianfalls:raserianfallet:raserianfallets:raserianfall:raserianfalls:raserianfallen:raserianfallens
+778315r4<substantiv>rasering:rasering:raserings:raseringen:raseringens:raseringar:raseringars:raseringarna:raseringarnas
+CUSTOM: y y raserings
+778323r3<substantiv>raseringsarbete::::::::
+COMPOUND(778315, 612263): rasering + arbete
+778324r3<substantiv>raseriutbrott::::::::
+COMPOUND(638618, 553082): raseri + utbrott
+789754r4<substantiv>rashat:rashat:rashats:rashatet:rashatets::::
+COMPOUND(550316, 558978): ras + hat
+819241r4<substantiv>rashets:rashets:rashets:rashetsen:rashetsens:!:!:!:!
+COMPOUND(550316, 624442): ras + hets
+696023r3<substantiv>rashygien:rashygien:rashygiens:rashygienen:rashygienens::::
+583350r3<adjektiv>rashygienisk:rashygienisk:rashygieniskt:rashygieniska:rashygieniska::::
+932178r4<substantiv>rashäst:rashäst:rashästs:rashästen:rashästens:rashästar:rashästars:rashästarna:rashästarnas
+COMPOUND(550316, 555286): ras + häst
+638626r3<substantiv>rasism:rasism:rasisms:rasismen:rasismens:!:!:!:!
+622728r6<substantiv>rasist:rasist:rasists:rasisten:rasistens:rasister:rasisters:rasisterna:rasisternas
+CUSTOM: y y rasist
+965400r4<substantiv>rasistdåd:rasistdåd:rasistdåds:rasistdådet:rasistdådets:rasistdåd:rasistdåds:rasistdåden:rasistdådens
+COMPOUND(622728, 552335): rasist + dåd
+583353r5<adjektiv>rasistisk:rasistisk:rasistiskt:rasistiska:rasistiska::::rasistiske
+696028r3<substantiv>rask:::rasket:::::
+563167r4<adjektiv>rask:rask:raskt:raska:raska:raskare:raskast:raskaste:raske
+696027r4<verb>raska:raska:raskade:raskat:raskar:raska::::::::raskande:
+932186r4<substantiv>raskatt:raskatt:raskatts:raskatten:raskattens:raskatter:raskatters:raskatterna:raskatternas
+COMPOUND(550316, 555039): ras + katt
+879770r3<substantiv>raskhet:raskhet:raskhets:raskheten:raskhetens::::
+567474r3<adjektiv>raslig:raslig:rasligt:rasliga:rasliga::::
+711587r4<substantiv>rasmassa:rasmassa:rasmassas:rasmassan:rasmassans:rasmassor:rasmassors:rasmassorna:rasmassornas
+COMPOUND(626097, 594709): ras + massa
+973239r3<egennamn>Rasmusson:Rasmusson:Rasmussons
+575534r3<adjektiv>rasmässig:rasmässig:rasmässigt:rasmässiga:rasmässiga::::
+638630r4<substantiv>rasp:rasp:rasps:raspen:raspens:raspar:raspars:rasparna:rasparnas
+CUSTOM: y n
+638637r3<verb>raspa:raspa:raspade:raspat:raspar:raspa:raspas:raspades:raspats:raspas:raspad:raspat:raspade:raspande:
+879774r3<substantiv>raspgrad:raspgrad:raspgrads:raspgraden:raspgradens:raspgrader:raspgraders:raspgraderna:raspgradernas
+575537r4<adjektiv>raspig:raspig:raspigt:raspiga:raspiga:raspigare:raspigast:raspigaste:raspige
+638643r3<substantiv>raspning:raspning:raspnings:raspningen:raspningens:raspningar:raspningars:raspningarna:raspningarnas
+CUSTOM: y y raspnings
+882749r4<adjektiv>rasren:rasren:rasrent:rasrena:rasrena::::::::::::
+COMPOUND(550316, 563124): ras + ren
+683430r4<substantiv>rasrisk:rasrisk:rasrisks:rasrisken:rasriskens:rasrisker:rasriskers:rasriskerna:rasriskernas
+COMPOUND(626097, 550392): ras + risk
+696029r3<substantiv>rassel:rassel:rassels:rasslet:rasslets::::
+547545r4<verb>rassla:rassla:rasslade:rasslat:rasslar:rassla:rasslas:rasslades:rasslats:rasslas:::::
+696032r3<substantiv>rasslande:rasslande:rasslandes:rasslandet:rasslandets::::
+603245r7<substantiv>rast:rast:rasts:rasten:rastens:raster:rasters:rasterna:rasternas
+CUSTOM: y y rast
+547546r6<verb>rasta:rasta:rastade:rastat:rastar:rasta:rastas:rastades:rastats:rastas:rastad:rastat:rastade:rastande:
+638651r11<substantiv>rastafari:rastafari:rastafaris:rastafarin:rastafarins:rastafarier:rastafariers:rastafarierna:rastafariernas
+DEFINITION 1: Religion som främst utövas på Jamaica.
+879787r3<substantiv>rastaflätor:::::rastaflätor:rastaflätors:rastaflätorna:rastaflätornas
+778326r3<substantiv>rastafrisyr:rastafrisyr:rastafrisyrs:rastafrisyren:rastafrisyrens:rastafrisyrer:rastafrisyrers:rastafrisyrerna:rastafrisyrernas
+638654r3<substantiv>raster:raster:rasters:rastret:rastrets:raster:rasters:rastren:rastrens
+879793r3<substantiv>rasterbild:rasterbild:rasterbilds:rasterbilden:rasterbildens:rasterbilder:rasterbilders:rasterbilderna:rasterbildernas
+879801r3<substantiv>rastertäthet:rastertäthet:rastertäthets:rastertätheten:rastertäthetens::::
+948252r5<substantiv>rastgård:rastgård:rastgårds:rastgården:rastgårdens:rastgårdar:rastgårdars:rastgårdarna:rastgårdarnas
+COMPOUND(547546, 551337): rasta + gård
+565165r3<adjektiv>rastlös:rastlös:rastlöst:rastlösa:rastlösa::::
+760368r3<substantiv>rastlöshet:rastlöshet:rastlöshets:rastlösheten:rastlöshetens::::
+879805r3<substantiv>rastning:rastning:rastnings:rastningen:rastningens:rastningar:rastningars:rastningarna:rastningarnas
+936851r3<substantiv>rastplats:rastplats:rastplats:rastplatsen:rastplatsens:rastplatser:rastplatsers:rastplatserna:rastplatsernas
+854167r3<substantiv>rastplatsmord:rastplatsmord:rastplatsmords:rastplatsmordet:rastplatsmordets:rastplatsmord:rastplatsmords:rastplatsmorden:rastplatsmordens
+590753r3<verb>rastrera:rastrera:rastrerade:rastrerat:rastrerar:rastrera:::::::::
+638660r3<adjektiv>rastrerad:rastrerad:rastrerat:rastrerade:rastrerade:!:!:!:
+638661r3<substantiv>rastrering:rastrering:rastrerings:rastreringen:rastreringens:rastreringar:rastreringars:rastreringarna:rastreringarnas
+CUSTOM: y y rastrerings
+638669r4<substantiv>rastvakt:rastvakt:rastvakts:rastvakten:rastvaktens:rastvakter:rastvakters:rastvakterna:rastvakternas
+COMPOUND(603245, 550748): rast + vakt
+985164r3<substantiv>rasåtskillnadspolitik:rasåtskillnadspolitik:rasåtskillnadspolitiks:rasåtskillnadspolitiken:rasåtskillnadspolitikens::::
+624676r4<verb>rata:rata:ratade:ratat:ratar:rata:ratas:ratades:ratats:ratas:ratad:ratat:ratade:ratande:
+879813r3<substantiv>ratatouille:ratatouille:ratatouilles:ratatouillen:ratatouillens::::
+940959r3<substantiv>rate:rate:rates:raten:ratens:rater:raters:raterna:raternas
+CUSTOM: y n y
+590757r5<verb>ratificera:ratificera:ratificerade:ratificerat:ratificerar:ratificera:ratificeras:ratificerades:ratificerats:ratificeras:ratificerad:ratificerat:ratificerade:ratificerande:
+638685r3<substantiv>ratificering:ratificering:ratificerings:ratificeringen:ratificeringens:ratificeringar:ratificeringars:ratificeringarna:ratificeringarnas
+CUSTOM: y y ratificerings
+713178r4<substantiv>ratifiering:ratifiering:ratifierings:ratifieringen:ratifieringens:ratifieringar:ratifieringars:ratifieringarna:ratifieringarnas
+CUSTOM: n n n
+712561r4<substantiv>ratifieringsprocess:ratifieringsprocess:ratifieringsprocess:ratifieringsprocessen:ratifieringsprocessens:ratifieringsprocesser:ratifieringsprocessers:ratifieringsprocesserna:ratifieringsprocessernas
+COMPOUND(713178, 550258): ratifiering + process
+CUSTOM: n n n
+638677r3<substantiv>ratifikation:ratifikation:ratifikations:ratifikationen:ratifikationens:ratifikationer:ratifikationers:ratifikationerna:ratifikationernas
+CUSTOM: y y ratifikations
+879817r3<substantiv>rating:rating:ratings:ratingen:ratingens::::
+929344r3<substantiv>ration:ration:rations:rationen:rationens:rationer:rationers:rationerna:rationernas
+547547r5<verb>rationalisera:rationalisera:rationaliserade:rationaliserat:rationaliserar:rationalisera:rationaliseras:rationaliserades:rationaliserats:rationaliseras:rationaliserad:rationaliserat:rationaliserade:rationaliserande:
+879822r3<substantiv>rationaliserare:rationaliserare:rationaliserares:rationaliseraren:rationaliserarens:rationaliserare:rationaliserares:rationaliserarna:rationaliserarnas
+696034r5<substantiv>rationalisering:rationalisering:rationaliserings:rationaliseringen:rationaliseringens:rationaliseringar:rationaliseringars:rationaliseringarna:rationaliseringarnas
+CUSTOM: y y rationaliserings
+738918r4<substantiv>rationaliseringsförslag:rationaliseringsförslag:rationaliseringsförslags:rationaliseringsförslaget:rationaliseringsförslagets:rationaliseringsförslag:rationaliseringsförslags:rationaliseringsförslagen:rationaliseringsförslagens
+COMPOUND(696034, 552414): rationalisering + förslag
+952640r4<substantiv>rationaliseringsiver:rationaliseringsiver:rationaliseringsivers:rationaliseringsivern:rationaliseringsiverns:!:!:!:!
+COMPOUND(696034, 559578): rationalisering + iver
+638693r3<substantiv>rationalism:rationalism:rationalisms:rationalismen:rationalismens:!:!:!:!
+778335r3<substantiv>rationalist:rationalist:rationalists:rationalisten:rationalistens:rationalister:rationalisters:rationalisterna:rationalisternas
+583356r4<adjektiv>rationalistisk:rationalistisk:rationalistiskt:rationalistiska:rationalistiska::::rationalistiske
+638697r3<substantiv>rationalitet:rationalitet:rationalitets:rationaliteten:rationalitetens:!:!:!:!
+637024r5<adjektiv>rationell:rationell:rationellt:rationella:rationella:rationellare:rationellast:rationellaste:rationelle
+973564r3<egennamn>Ratos:Ratos:Ratos
+935374r3<interjektion>ratsch:ratsch
+CUSTOM: n n y
+551791r8<substantiv>ratt:ratt:ratts:ratten:rattens:rattar:rattars:rattarna:rattarnas
+CUSTOM: y y ratt
+736414r3<verb>ratta:ratta:rattade:rattat:rattar:ratta:rattas:rattades:rattats:rattas:rattad:rattat:rattade:rattande:
+585067r3<adjektiv>rattfull:rattfull:rattfullt:rattfulla:rattfulla::::
+912907r5<substantiv>rattfylla:rattfylla:rattfyllas:rattfyllan:rattfyllans:rattfyllor:rattfyllors:rattfyllorna:rattfyllornas
+COMPOUND(551791, 593484): ratt + fylla
+696035r3<substantiv>rattfylleri:rattfylleri:rattfylleris:rattfylleriet:rattfylleriets::::
+CUSTOM: y y rattfylleri +rattfylleri
+918034r4<adjektiv>rattfylleridömd:rattfylleridömd:rattfylleridömt:rattfylleridömda:rattfylleridömda::::rattfylleridömde::::::::
+769649r3<substantiv>rattfyllerist:rattfyllerist:rattfyllerists:rattfylleristen:rattfylleristens:rattfyllerister:rattfylleristers:rattfylleristerna:rattfylleristernas
+932194r4<substantiv>rattlås:rattlås:rattlås:rattlåset:rattlåsets:rattlås:rattlås:rattlåsen:rattlåsens
+COMPOUND(551791, 552680): ratt + lås
+632230r5<substantiv>rattmuff:rattmuff:rattmuffs:rattmuffen:rattmuffens:rattmuffar:rattmuffars:rattmuffarna:rattmuffarnas
+COMPOUND(551791, 551725): ratt + muff
+638699r4<substantiv>rattonykterhet:rattonykterhet:rattonykterhets:rattonykterheten:rattonykterhetens:!:!:!:!
+COMPOUND(551791, 638700): ratt + onykterhet
+CUSTOM: y y rattonykterhets
+551793r3<substantiv>rauk:rauk:rauks:rauken:raukens:raukar:raukars:raukarna:raukarnas
+CUST

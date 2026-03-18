@@ -1,0 +1,563 @@
+, 552652): gas + larm
+930761r3<substantiv>gasljus:gasljus:gasljus:gasljuset:gasljusets::::
+930764r3<substantiv>gaslukt:gaslukt:gaslukts:gaslukten:gasluktens::::
+930768r4<substantiv>gaslåga:gaslåga:gaslågas:gaslågan:gaslågans:gaslågor:gaslågors:gaslågorna:gaslågornas
+COMPOUND(549064, 594673): gas + låga
+934081r4<substantiv>gasläcka:gasläcka:gasläckas:gasläckan:gasläckans:gasläckor:gasläckors:gasläckorna:gasläckornas
+COMPOUND(549064, 559360): gas + läcka
+921412r4<substantiv>gasmack:gasmack:gasmacks:gasmacken:gasmackens:gasmackar:gasmackars:gasmackarna:gasmackarnas
+COMPOUND(549064, 598542): gas + mack
+CUSTOM: y n n
+549065r3<substantiv>gasmask:gasmask:gasmasks:gasmasken:gasmaskens:gasmasker:gasmaskers:gasmaskerna:gasmaskernas
+729700r4<substantiv>gasmetallbågsvetsning:gasmetallbågsvetsning:gasmetallbågsvetsnings:gasmetallbågsvetsningen:gasmetallbågsvetsningens:gasmetallbågsvetsningar:gasmetallbågsvetsningars:gasmetallbågsvetsningarna:gasmetallbågsvetsningarnas
+COMPOUND(549064, 729674): gas + metallbågsvetsning
+930776r4<substantiv>gasmoln:gasmoln:gasmolns:gasmolnet:gasmolnets:gasmoln:gasmolns:gasmolnen:gasmolnens
+COMPOUND(549064, 552697): gas + moln
+979372r3<substantiv>gasning:gasning:gasnings:gasningen:gasningens:gasningar:gasningars:gasningarna:gasningarnas
+CUSTOM: y n
+562428r4<substantiv>gasol:gasol:gasols:gasolen:gasolens:!:!:!:!
+CUSTOM: y y gasol
+819530r3<substantiv>gasolbrännare::::::::
+COMPOUND(562428, 615176): gasol + brännare
+562430r3<substantiv>gasolkök:gasolkök:gasolköks:gasolköket:gasolkökets:gasolkök:gasolköks:gasolköken:gasolkökens
+562436r3<substantiv>gasoltub:gasoltub:gasoltubs:gasoltuben:gasoltubens:gasoltuber:gasoltubers:gasoltuberna:gasoltubernas
+840051r3<substantiv>gasometer:gasometer:gasometers:gasometern:gasometerns:gasometrar:gasometrars:gasometrarna:gasometrarnas
+562444r3<substantiv>gaspedal:gaspedal:gaspedals:gaspedalen:gaspedalens:gaspedaler:gaspedalers:gaspedalerna:gaspedalernas
+712233r4<substantiv>gasporositet:gasporositet:gasporositets:gasporositeten:gasporositetens:gasporositeter:gasporositeters:gasporositeterna:gasporositeternas
+COMPOUND(549064, 712224): gas + porositet
+929827r4<substantiv>gasrör:gasrör:gasrörs:gasröret:gasrörets:gasrör:gasrörs:gasrören:gasrörens
+COMPOUND(549064, 552860): gas + rör
+910393r7<substantiv>gass:gass:gass:gasset:gassets::::
+CUSTOM: y n
+562452r4<verb>gassa:gassa:gassade:gassat:gassar:gassa::::::::gassande:
+CUSTOM: y n
+572820r4<adjektiv>gassig:gassig:gassigt:gassiga:gassiga:gassigare:gassigast:gassigaste:
+562453r3<substantiv>gasspis:gasspis:gasspis:gasspisen:gasspisens:gasspisar:gasspisars:gasspisarna:gasspisarnas
+632451r4<substantiv>gasstridsmedel:gasstridsmedel:gasstridsmedels:gasstridsmedlet:gasstridsmedlets:gasstridsmedel:gasstridsmedels:gasstridsmedlen:gasstridsmedlens
+COMPOUND(549064, 632445): gas + stridsmedel
+676273r4<substantiv>gassvetsning:gassvetsning:gassvetsnings:gassvetsningen:gassvetsningens:gassvetsningar:gassvetsningars:gassvetsningarna:gassvetsningarnas
+COMPOUND(549064, 670827): gas + svetsning
+CUSTOM: y y gassvetsnings
+551299r4<substantiv>gast:gast:gasts:gasten:gastens:gastar:gastars:gastarna:gastarnas
+CUSTOM: y n
+562460r3<verb>gasta:gasta:gastade:gastat:gastar:gasta:::::::::
+589435r3<verb>gastera:gastera:gasterade:gasterat:gasterar:gastera:::::::::
+840062r3<verb>gastkrama:gastkrama:gastkramade:gastkramat:gastkramar:gastkrama:gastkramas:gastkramades:gastkramats:gastkramas:gastkramad:gastkramat:gastkramade:gastkramande:
+562461r3<adjektiv>gastkramande:gastkramande:gastkramande:gastkramande:gastkramande::::
+733456r3<substantiv>gastkramning:gastkramning:gastkramnings:gastkramningen:gastkramningens::::
+800963r3<adjektiv>gastliknande:gastliknande:gastliknande:gastliknande:gastliknande:!:!:!:
+580278r3<adjektiv>gastrisk:gastrisk:gastriskt:gastriska:gastriska::::
+562462r3<substantiv>gastrit:gastrit:gastrits:gastriten:gastritens:gastriter:gastriters:gastriterna:gastriternas
+562470r3<substantiv>gastronom:gastronom:gastronoms:gastronomen:gastronomens:gastronomer:gastronomers:gastronomerna:gastronomernas
+562479r3<substantiv>gastronomi:gastronomi:gastronomis:gastronomin:gastronomins:!:!:!:!
+562478r4<adjektiv>gastronomisk:gastronomisk:gastronomiskt:gastronomiska:gastronomiska::::gastronomiske
+959532r3<substantiv>gastropub:gastropub:gastropubs:gastropuben:gastropubens:gastropubar:gastropubars:gastropubarna:gastropubarnas
+562483r3<substantiv>gastroskop:gastroskop:gastroskops:gastroskopet:gastroskopets:gastroskop:gastroskops:gastroskopen:gastroskopens
+586730r5<verb>gastroskopera:gastroskopera:gastroskoperade:gastroskoperat:gastroskoperar:gastroskopera:gastroskoperas:gastroskoperades:gastroskoperats:gastroskoperas:gastroskoperad:gastroskoperat:gastroskoperade:gastroskoperande:
+819545r3<substantiv>gastroskopering:gastroskopering:gastroskoperings:gastroskoperingen:gastroskoperingens::::
+562489r8<substantiv>gastroskopi:gastroskopi:gastroskopis:gastroskopin:gastroskopins:gastroskopier:gastroskopiers:gastroskopierna:gastroskopiernas
+580281r3<adjektiv>gastroskopisk:gastroskopisk:gastroskopiskt:gastroskopiska:gastroskopiska::::
+643744r4<substantiv>gastryck:gastryck:gastrycks:gastrycket:gastryckets:gastryck:gastrycks:gastrycken:gastryckens
+COMPOUND(549064, 553063): gas + tryck
+643750r4<substantiv>gastub:gastub:gastubs:gastuben:gastubens:gastuber:gastubers:gastuberna:gastubernas
+COMPOUND(549064, 550711): gas + tub
+562493r3<substantiv>gasturbin:gasturbin:gasturbins:gasturbinen:gasturbinens:gasturbiner:gasturbiners:gasturbinerna:gasturbinernas
+CUSTOM: y y gasturbin
+845761r3<adjektiv>gastät:gastät:gastätt:gastäta:gastäta::::
+622364r4<substantiv>gasugn:gasugn:gasugns:gasugnen:gasugnens:gasugnar:gasugnars:gasugnarna:gasugnarnas
+COMPOUND(549064, 552067): gas + ugn
+562501r3<substantiv>gasverk:gasverk:gasverks:gasverket:gasverkets:gasverk:gasverks:gasverken:gasverkens
+677368r5<substantiv>gasväv:gasväv:gasvävs:gasväven:gasvävens:gasvävar:gasvävars:gasvävarna:gasvävarnas
+COMPOUND(549064, 552117): gas + väv
+677679r4<substantiv>gasvävnad:gasvävnad:gasvävnads:gasvävnaden:gasvävnadens:gasvävnader:gasvävnaders:gasvävnaderna:gasvävnadernas
+COMPOUND(549064, 550795): gas + vävnad
+555092r22<substantiv>gata:gata:gatas:gatan:gatans:gator:gators:gatorna:gatornas
+BASEWORDS: gatu, gat
+CUSTOM: y y gatu gat
+562546r4<substantiv>gate:gate:gates:gaten:gatens:gater:gaters:gaterna:gaternas
+DEFINITION 1: Utgången till ett flygplan på en flygplats
+562507r3<substantiv>gatflicka:gatflicka:gatflickas:gatflickan:gatflickans:gatflickor:gatflickors:gatflickorna:gatflickornas
+928298r4<substantiv>gathus:gathus:gathus:gathuset:gathusets:gathus:gathus:gathusen:gathusens
+COMPOUND(555092, 552480): gata + hus
+562515r3<substantiv>gathörn:gathörn:gathörns:gathörnet:gathörnets:gathörn:gathörns:gathörnen:gathörnens
+562517r3<substantiv>gatlopp:gatlopp:gatlopps:gatloppet:gatloppets:gatlopp:gatlopps:gatloppen:gatloppens
+562523r3<substantiv>gatlykta:gatlykta:gatlyktas:gatlyktan:gatlyktans:gatlyktor:gatlyktors:gatlyktorna:gatlyktornas
+562531r3<substantiv>gatläggning:gatläggning:gatläggnings:gatläggningen:gatläggningens:gatläggningar:gatläggningars:gatläggningarna:gatläggningarnas
+CUSTOM: y y gatläggnings
+615267r3<substantiv>gatsopare:gatsopare:gatsopares:gatsoparen:gatsoparens:gatsopare:gatsopares:gatsoparna:gatsoparnas
+CUSTOM: y y gatsopar
+562539r3<substantiv>gatsten:gatsten:gatstens:gatstenen:gatstenens:gatstenar:gatstenars:gatstenarna:gatstenarnas
+562540r4<substantiv>gatt:gatt:gatts:gattet:gattets:gatt:gatts:gatten:gattens
+CUSTOM: y n
+691305r4<substantiv>gatuadress:gatuadress:gatuadress:gatuadressen:gatuadressens:gatuadresser:gatuadressers:gatuadresserna:gatuadressernas
+COMPOUND(555092, 548148): gata + adress
+612491r3<substantiv>gatuarbete:gatuarbete:gatuarbetes:gatuarbetet:gatuarbetets:gatuarbeten:gatuarbetens:gatuarbetena:gatuarbetenas
+670154r3<substantiv>gatuavgift:gatuavgift:gatuavgifts:gatuavgiften:gatuavgiftens:gatuavgifter:gatuavgifters:gatuavgifterna:gatuavgifternas
+562555r3<substantiv>gatubarn:gatubarn:gatubarns:gatubarnet:gatubarnets:gatubarn:gatubarns:gatubarnen:gatubarnens
+562558r3<substantiv>gatubeläggning:gatubeläggning:gatubeläggnings:gatubeläggningen:gatubeläggningens:gatubeläggningar:gatubeläggningars:gatubeläggningarna:gatubeläggningarnas
+CUSTOM: y y gatubeläggnings
+602053r3<substantiv>gatubild:gatubild:gatubilds:gatubilden:gatubildens:gatubilder:gatubilders:gatubilderna:gatubildernas
+680436r6<substantiv>gatudans:gatudans:gatudans:gatudansen:gatudansens:gatudanser:gatudansers:gatudanserna:gatudansernas
+COMPOUND(555092, 548569): gata + dans
+840076r3<substantiv>gatufrid:gatufrid:gatufrids:gatufriden:gatufridens::::
+562566r3<substantiv>gatuförsäljare:gatuförsäljare:gatuförsäljares:gatuförsäljaren:gatuförsäljarens:gatuförsäljare:gatuförsäljares:gatuförsäljarna:gatuförsäljarnas
+CUSTOM: y y gatuförsäljar
+928303r4<substantiv>gatuhus:gatuhus:gatuhus:gatuhuset:gatuhusets:gatuhus:gatuhus:gatuhusen:gatuhusens
+COMPOUND(555092, 552480): gata + hus
+562572r3<substantiv>gatukontor:gatukontor:gatukontors:gatukontoret:gatukontorets:gatukontor:gatukontors:gatukontoren:gatukontorens
+559217r5<substantiv>gatukorsning:gatukorsning:gatukorsnings:gatukorsningen:gatukorsningens:gatukorsningar:gatukorsningars:gatukorsningarna:gatukorsningarnas
+DEFINITION 1: ställe där gator möts
+COMPOUND(555092, 559225): gata + korsning
+CUSTOM: y y gatukorsnings
+786650r3<substantiv>gatukostnadsersättning:gatukostnadsersättning:gatukostnadsersättnings:gatukostnadsersättningen:gatukostnadsersättningens:gatukostnadsersättningar:gatukostnadsersättningars:gatukostnadsersättningarna:gatukostnadsersättningarnas
+562578r3<substantiv>gatukök:gatukök:gatuköks:gatuköket:gatukökets:gatukök:gatuköks:gatuköken:gatukökens
+CUSTOM: y y gatuköks
+928784r4<substantiv>gatuliv:gatuliv:gatulivs:gatulivet:gatulivets:gatuliv:gatulivs:gatuliven:gatulivens
+COMPOUND(555092, 552667): gata + liv
+691313r4<substantiv>gatunummer:gatunummer:gatunummers:gatunumret:gatunumrets:gatunummer:gatunummers:gatunumren:gatunumrens
+COMPOUND(555092, 621605): gata + nummer
+930782r4<substantiv>gatunät:gatunät:gatunäts:gatunätet:gatunätets:gatunät:gatunäts:gatunäten:gatunätens
+COMPOUND(555092, 555848): gata + nät
+562584r3<substantiv>gatuplan:gatuplan:gatuplans:gatuplanet:gatuplanets:gatuplan:gatuplans:gatuplanen:gatuplanens
+928791r4<substantiv>gaturum:gaturum:gaturums:gaturummet:gaturummets:gaturum:gaturums:gaturummen:gaturummens
+COMPOUND(555092, 571182): gata + rum
+957478r3<adjektiv>gatusmart:gatusmart:gatusmart:gatusmarta:gatusmarta::::gatusmarte::::::::
+951312r4<substantiv>gatusorl:gatusorl:gatusorls:gatusorlet:gatusorlets::::
+COMPOUND(555092, 628833): gata + sorl
+921233r4<substantiv>gatuvimmel:gatuvimmel:gatuvimmels:gatuvimlet:gatuvimlets:!:!:!:!
+COMPOUND(555092, 556436): gata + vimmel
+914457r4<substantiv>gatuvy:gatuvy:gatuvys:gatuvyn:gatuvyns:gatuvyer:gatuvyers:gatuvyerna:gatuvyernas
+COMPOUND(555092, 557764): gata + vy
+CUSTOM: y n n
+840080r3<substantiv>gaucho:gaucho:gauchos:gauchon:gauchons:gauchor:gauchors:gauchorna:gauchornas
+589439r3<verb>gauffrera:gauffrera:gauffrerade:gauffrerat:gauffrerar:gauffrera:::::::::
+840088r3<substantiv>gaullism:gaullism:gaullisms:gaullismen:gaullismens::::
+819549r3<substantiv>gaullist:gaullist:gaullists:gaullisten:gaullistens:gaullister:gaullisters:gaullisterna:gaullisternas
+580284r4<adjektiv>gaullistisk:gaullistisk:gaullistiskt:gaullistiska:gaullistiska::::gaullistiske
+712456r3<egennamn>Gauss:Gauss:Gauss
+CUSTOM: y n gauss
+562588r5<substantiv>gavel:gavel:gavels:gaveln:gavelns:gavlar:gavlars:gavlarna:gavlarnas
+CUSTOM: y y gavel
+801302r3<adjektiv>gavelförsedd:gavelförsedd:gavelförsett:gavelförsedda:gavelförsedda::::
+562590r3<substantiv>gavelhus:gavelhus:gavelhus:gavelhuset:gavelhusets:gavelhus:gavelhus:gavelhusen:gavelhusens
+819557r4<substantiv>gavelvägg:gavelvägg:gavelväggs:gavelväggen:gavelväggens:gavelväggar:gavelväggars:gavelväggarna:gavelväggarnas
+COMPOUND(562588, 552111): gavel + vägg
+562595r4<substantiv>gavial:gavial:gavials:gavialen:gavialens:gavialer:gavialers:gavialerna:gavialernas
+DEFINITION 1: Ett slags djur
+562604r3<substantiv>gavott:gavott:gavotts:gavotten:gavottens:gavotter:gavotters:gavotterna:gavotternas
+558913r6<adjektiv>gay:gay:gay:::!:!:!:::::::::
+CUSTOM: y n gay
+959081r4<substantiv>gaybar:gaybar:gaybars:gaybaren:gaybarens:gaybarer:gaybarers:gaybarerna:gaybarernas
+COMPOUND(558913, 557860): gay + bar
+874719r4<substantiv>gaydisco:gaydisco:gaydiscos:gaydiscot:gaydiscots:gaydiscon:gaydiscons:gaydiscona:gaydisconas
+COMPOUND(558913, 612432): gay + disco
+819566r3<substantiv>gayklubb:gayklubb:gayklubbs:gayklubben:gayklubbens:gayklubbar:gayklubbars:gayklubbarna:gayklubbarnas
+819576r3<substantiv>gayrörelse:gayrörelse:gayrörelses:gayrörelsen:gayrörelsens::::
+957719r4<substantiv>gaysauna:gaysauna:gaysaunas:gaysaunan:gaysaunans:gaysaunor:gaysaunors:gaysaunorna:gaysaunornas
+COMPOUND(558913, 957710): gay + sauna
+878146r3<egennamn>Gaza:Gaza:Gazas
+CUSTOM: y n Gaza
+766677r4<substantiv>G-dur:G-dur:G-durs::::::
+CUSTOM: y n G-dur
+585338r3<egennamn>Ge:Ge:
+CUSTOM: n n 
+552426r3<substantiv>gebit:gebit:gebits:gebitet:gebitets:gebit:gebits:gebiten:gebitens
+562606r7<substantiv>gecko:gecko:geckos:geckon:geckons:geckor:geckors:geckorna:geckornas
+DEFINITION 1: Ett slags ödla
+CUSTOM: y n
+819581r3<substantiv>geckoödla:geckoödla:geckoödlas:geckoödlan:geckoödlans:geckoödlor:geckoödlors:geckoödlorna:geckoödlornas
+562615r4<adjektiv>gedigen:gedigen:gediget:gedigna:gedigna:gedignare:gedignast:gedignaste:gedigne
+949047r3<substantiv>gedigenhet:gedigenhet:gedigenhets:gedigenheten:gedigenhetens::::
+855391r3<egennamn>Gefle:Gefle:Gefles
+CUSTOM: y n Gefle
+562620r3<substantiv>gefundenes Fressen:gefundenes Fressen:::::::
+735694r3<verb>gegga:gegga:geggade:geggat:geggar:gegga:geggas:geggades:geggats:geggas::::geggande:
+562622r3<substantiv>gegga:gegga:geggas:geggan:geggans:!:!:!:!
+562626r3<substantiv>geggamoja:geggamoja:geggamojas:geggamojan:geggamojans:!:!:!:!
+562630r4<adjektiv>geggig:geggig:geggigt:geggiga:geggiga:geggigare:geggigast:geggigaste:
+979380r3<substantiv>geheimeråd:geheimeråd:geheimeråds:geheimerådet:geheimerådets:geheimeråd:geheimeråds:geheimeråden:geheimerådens
+552428r3<substantiv>gehäng:gehäng:gehängs:gehänget:gehängets:gehäng:gehängs:gehängen:gehängens
+562633r3<substantiv>gehör:gehör:gehörs:gehöret:gehörets:!:!:!:!
+562635r3<substantiv>geigermätare:geigermätare:geigermätares:geigermätaren:geigermätarens:geigermätare:geigermätares:geigermätarna:geigermätarnas
+CUSTOM: y y geigermätar
+562641r3<substantiv>geisha:geisha:geishas:geishan:geishans:geishor:geishors:geishorna:geishornas
+562649r3<substantiv>geist:geist:geists:geisten:geistens:!:!:!:!
+CUSTOM: y y geist
+562653r3<substantiv>gejd:gejd:gejds:gejden:gejdens:gejder:gejders:gejderna:gejdernas
+CUSTOM: n n y
+562661r3<substantiv>gejser:gejser:gejsers:gejsern:gejserns:gejsrar:gejsrars:gejsrarna:gejsrarnas
+558914r4<substantiv>gel:gel:gels:gelet, gelen:gelets, gelens:geler:gelers:gelerna:gelernas
+791272r3<adjektiv>gelartad:gelartad:gelartat:gelartade:gelartade:!:!:!:
+562669r4<substantiv>gelatin:gelatin:gelatins:gelatinet, gelatinen:gelatinets, gelatinens:!:!:!:!
+CUSTOM: y y gelatin
+791275r3<adjektiv>gelatinartad:gelatinartad:gelatinartat:gelatinartade:gelatinartade:!:!:!:
+586734r3<verb>gelatinera:gelatinera:gelatinerade:gelatinerat:gelatinerar:gelatinera:::::::::
+840097r3<adjektiv>gelatinös:gelatinös:gelatinöst:gelatinösa:gelatinösa::::
+562673r6<substantiv>gelé:gelé:gelés:gelén, geléet:geléns, geléets:geléer:geléers:geléerna:geléernas
+CUSTOM: y y gelé
+840100r3<verb>gelea:gelea:geleade:geleat:gelear:gelea:geleas:geleades:geleats:geleas:gelead:geleat:geleade:geleande:
+CUSTOM: y n
+572823r3<adjektiv>geléaktig:geléaktig:geléaktigt:geléaktiga:geléaktiga::::
+791278r3<adjektiv>geléartad:geléartad:geléartat:geléartade:geléartade:!:!:!:
+562674r3<substantiv>geléhallon:geléhallon:geléhallons:geléhallonet:geléhallonets:geléhallon:geléhallons:geléhallonen:geléhallonens
+572826r3<adjektiv>geleig:geleig:geleigt:geleiga:geleiga::::
+CUSTOM: y n
+562680r3<substantiv>geléklump:geléklump:geléklumps:geléklumpen:geléklumpens:geléklumpar:geléklumpars:geléklumparna:geléklumparnas
+562688r3<substantiv>gelike:gelike:gelikes:geliken:gelikens:gelikar:gelikars:gelikarna:gelikarnas
+552430r3<substantiv>gem:gem:gems:gemet:gemets:gem:gems:gemen:gemens
+552431r4<substantiv>gemak:gemak:gemaks:gemaket:gemakets:gemak:gemaks:gemaken:gemakens
+562690r4<adjektiv>gemen:gemen:gement:gemena:gemena:gemenare:gemenast:gemenaste:gemene
+555892r3<substantiv>gemen:gemen:gemens:gemenen:gemenens:gemener:gemeners:gemenerna:gemenernas
+819592r4<substantiv>gemenhet:gemenhet:gemenhets:gemenheten:gemenhetens:gemenheter:gemenheters:gemenheterna:gemenheternas
+639294r7<adverb>gemenligen:gemenligen
+562691r6<adjektiv>gemensam:gemensam:gemensamt:gemensamma:gemensamma:!:!:!:gemensamme:::gemensammas:::::
+562693r3<substantiv>gemensamhet:gemensamhet:gemensamhets:gemensamheten:gemensamhetens:!:!:!:!
+CUSTOM: y y gemensamhets
+562697r10<substantiv>gemenskap:gemenskap:gemenskaps:gemenskapen:gemenskapens:gemenskaper:gemenskapers:gemenskaperna:gemenskapernas
+CUSTOM: y y gemenskaps
+797738r3<adjektiv>geminal:geminal:geminalt:geminala:geminala::::
+CUSTOM: n n
+840109r3<substantiv>gemination:gemination:geminations:geminationen:geminationens:geminationer:geminationers:geminationerna:geminationernas
+589443r4<verb>geminera:geminera:geminerade:geminerat:geminerar:geminera:gemineras:geminerades:geminerats:gemineras:geminerad:geminerat:geminerade:geminerande:
+840122r3<substantiv>geminering:geminering:geminerings:gemineringen:gemineringens::::
+979386r3<substantiv>gems:gems:gems:gemsen:gemsens:gemser:gemsers:gemserna:gemsernas
+CUSTOM: n n y
+891315r3<substantiv>gemsrot:gemsrot:gemsrots:gemsroten:gemsrotens:gemsrötter:gemsrötters:gemsrötterna:gemsrötternas
+562698r3<substantiv>gemyt:gemyt:gemyts:gemytet:gemytets::::
+562699r4<adjektiv>gemytlig:gemytlig:gemytligt:gemytliga:gemytliga:gemytligare:gemytligast:gemytligaste:gemytlige
+819603r3<substantiv>gemytlighet:gemytlighet:gemytlighets:gemytligheten:gemytlighetens::::
+549073r3<substantiv>gemål:gemål:gemåls:gemålen:gemålens:gemåler:gemålers:gemålerna:gemålernas
+558912r8<substantiv>gen:gen:gens:genen:genens:gener:geners:generna:genernas
+CUSTOM: y n
+563155r6<adjektiv>gen:gen:gent:gena:gena:genare:genast:genaste:
+649148r5<verb>gena:gena:genade:genat:genar:gena::genades::::::genande:
+840127r3<substantiv>genans:genans:genans:genansen:genansens::::
+562701r3<adjektiv>genant:genant:genant:genanta:genanta::::
+560944r3<adverb>genast:genast
+562702r3<substantiv>genbank:genbank:genbanks:genbanken:genbankens:genbanker:genbankers:genbankerna:genbankernas
+549074r3<substantiv>gendarm:gendarm:gendarms:gendarmen:gendarmens:gendarmer:gendarmers:gendarmerna:gendarmernas
+562710r4<substantiv>gendarmeri:gendarmeri:gendarmeris:gendarmeriet:gendarmeriets::::
+CUSTOM: y y gendarmeri
+674318r4<substantiv>gendarmeriofficer:gendarmeriofficer:gendarmeriofficers:gendarmeriofficeren, gendarmeriofficern:gendarmeriofficerens, gendarmeriofficerns:gendarmeriofficerer, gendarmeriofficerare:gendarmeriofficerers, gendarmeriofficerare:gendarmeriofficererna, gendarmeriofficerarna:gendarmeriofficerernas, gendarmeriofficerarnas
+COMPOUND(562710, 603028): gendarmeri + officer
+840132r5<verb>gendriva:gendriva:gendrev:gendrivit:gendriver:gendriv:gendrivas:gendrevs:gendrivits:gendrivs, gendrives:gendriven:gendrivet:gendrivna:gendrivande:
+549075r3<substantiv>genealog:genealog:genealogs:genealogen:genealogens:genealoger:genealogers:genealogerna:genealogernas
+562714r4<substantiv>genealogi:genealogi:genealogis:genealogien, genealogin:genealogiens, genealogins:genealogier:genealogiers:genealogierna:genealogiernas
+580287r3<adjektiv>genealogisk:genealogisk:genealogiskt:genealogiska:genealogiska::::
+546780r4<verb>genera:genera:generade:generat:generar:genera:generas:generades:generats:generas:generad:generat:generade:generande:
+562718r3<adjektiv>generad:generad:generat:generade:generade::::
+562719r7<substantiv>general:general:generals:generalen:generalens:generaler:generalers:generalerna:generalernas
+CUSTOM: y y general generals
+562720r3<substantiv>generalagent:generalagent:generalagents:generalagenten:generalagentens:generalagenter:generalagenters:generalagenterna:generalagenternas
+562728r3<substantiv>generalbas:generalbas:generalbas:generalbasen:generalbasens:!:!:!:!
+562731r3<substantiv>generaldirektör:generaldirektör:generaldirektörs:generaldirektören:generaldirektörens:generaldirektörer:generaldirektörers:generaldirektörerna:generaldirektörernas
+562739r3<substantiv>generalförsamling:generalförsamling:generalförsamlings:generalförsamlingen:generalförsamlingens:generalförsamlingar:generalförsamlingars:generalförsamlingarna:generalförsamlingarnas
+819607r3<substantiv>generalisation:generalisation:generalisations:generalisationen:generalisationens:generalisationer:generalisationers:generalisationerna:generalisationernas
+546781r5<verb>generalisera:generalisera:generaliserade:generaliserat:generaliserar:generalisera:generaliseras:generaliserades:generaliserats:generaliseras:generaliserad:generaliserat:generaliserade:generaliserande:
+562747r3<substantiv>generalisering:generalisering:generaliserings:generaliseringen:generaliseringens:generaliseringar:generaliseringars:generaliseringarna:generaliseringarnas
+CUSTOM: y y generaliserings
+819615r3<substantiv>generalist:generalist:generalists:generalisten:generalistens:generalister:generalisters:generalisterna:generalisternas
+979397r3<substantiv>generalitet:generalitet:generalitets:generalitetet:generalitetets::::
+CUSTOM: y n
+562748r8<substantiv>generalitet:generalitet:generalitets:generaliteten:generalitetens:generaliteter:generaliteters:generaliteterna:generaliteternas
+640391r3<substantiv>generalklausul:generalklausul:generalklausuls:generalklausulen:generalklausulens:generalklausuler:generalklausulers:generalklausulerna:generalklausulernas
+691314r4<substantiv>generalkonsul:generalkonsul:generalkonsuls:generalkonsuln:generalkonsulns:generalkonsuler:generalkonsulers:generalkonsulerna:generalkonsulernas
+COMPOUND(562719, 618599): general + konsul
+562752r3<substantiv>generalkonsulat:generalkonsulat:generalkonsulats:generalkonsulatet:generalkonsulatets:generalkonsulat:generalkonsulats:generalkonsulaten:generalkonsulatens
+562758r3<substantiv>generallöjtnant:generallöjtnant:generallöjtnants:generallöjtnanten:generallöjtnantens:generallöjtnanter:generallöjtnanters:generallöjtnanterna:generallöjtnanternas
+562766r3<substantiv>generalmajor:generalmajor:generalmajors:generalmajoren:generalmajorens:generalmajorer:generalmajorers:generalmajorerna:generalmajorernas
+562774r3<substantiv>generalpaus:generalpaus:generalpaus:generalpausen:generalpausens:generalpauser:generalpausers:generalpauserna:generalpausernas
+562781r3<substantiv>generalplan:generalplan:generalplans:generalplanen:generalplanens:generalplaner:generalplaners:generalplanerna:generalplanernas
+562789r3<substantiv>generalrepetition:generalrepetition:generalrepetitions:generalrepetitionen:generalrepetitionens:generalrepetitioner:generalrepetitioners:generalrepetitionerna:generalrepetitionernas
+CUSTOM: y y generalrepetitions
+562790r3<substantiv>generalsekreterare:generalsekreterare:generalsekreterares:generalsekreteraren:generalsekreterarens:generalsekreterare:generalsekreterares:generalsekreterarna:generalsekreterarnas
+CUSTOM: y y generalsekreterar
+562796r4<substantiv>generalstab:generalstab:generalstabs:generalstaben:generalstabens:generalstaber:generalstabers:generalstaberna:generalstabernas
+CUSTOM: y y generalstabs
+674331r4<substantiv>generalstabsofficer:generalstabsofficer:generalstabsofficers:generalstabsofficeren, generalstabsofficern:generalstabsofficerens, generalstabsofficerns:generalstabsofficerer, generalstabsofficerare:generalstabsofficerers, generalstabsofficerare:generalstabsofficererna, generalstabsofficerarna:generalstabsofficerernas, generalstabsofficerarnas
+COMPOUND(562796, 603028): generalstab + officer
+562801r3<substantiv>generalstrejk:generalstrejk:generalstrejks:generalstrejken:generalstrejkens:generalstrejker:generalstrejkers:generalstrejkerna:generalstrejkernas
+562809r3<adjektiv>generande:generande:generande:generande:generande::::
+562810r6<substantiv>generation:generation:generations:generationen:generationens:generationer:generationers:generationerna:generationernas
+CUSTOM: y y generations +generations
+562811r3<substantiv>generationsklyfta:generationsklyfta:generationsklyftas:generationsklyftan:generationsklyftans:generationsklyftor:generationsklyftors:generationsklyftorna:generationsklyftornas
+562819r4<substantiv>generationsskifte:generationsskifte:generationsskiftes:generationsskiftet:generationsskiftets:generationsskiften:generationsskiftens:generationsskiftena:generationsskiftenas
+COMPOUND(562810, 562827): generation + skifte
+691323r4<substantiv>generationsskillnad:generationsskillnad:generationsskillnads:generationsskillnaden:generationsskillnadens:generationsskillnader:generationsskillnaders:generationsskillnaderna:generationsskillnadernas
+COMPOUND(562810, 550512): generation + skillnad
+691327r4<substantiv>generationsväxling:generationsväxling:generationsväxlings:generationsväxlingen:generationsväxlingens:generationsväxlingar:generationsväxlingars:generationsväxlingarna:generationsväxlingarnas
+COMPOUND(562810, 653900): generation + växling
+562830r3<adjektiv>generativ:generativ:generativt:generativa:generativa::::
+562833r15<substantiv>generator:generator:generators:generatorn:generatorns:generatorer:generatorers:generatorerna:generatorernas
+CUSTOM: y y generator +generator
+659906r6<substantiv>generatorgas:generatorgas:generatorgas:generatorgasen:generatorgasens:generatorgaser:generatorgasers:generatorgaserna:generatorgasernas
+COMPOUND(562833, 549064): generator + gas
+610729r3<substantiv>generatorindustri:generatorindustri:generatorindustris:generatorindustrin:generatorindustrins:generatorindustrier:generatorindustriers:generatorindustrierna:generatorindustriernas
+840146r3<substantiv>generatris:generatris:generatris:generatrisen:generatrisens:generatriser:generatrisers:generatriserna:generatrisernas
+562834r4<adjektiv>generell:generell:generellt:generella:generella:generellare:generellast:generellaste:
+562835r5<verb>generera:generera:genererade:genererat:genererar:generera:genereras:genererades:genererats:genereras:genererad:genererat:genererade:genererande:
+691328r4<substantiv>generering:generering:genererings:genereringen:genereringens:genereringar:genereringars:genereringarna:genereringarnas
+CUSTOM: y y genererings
+878110r3<substantiv>generika:::::generika:::
+CUSTOM: y n generika
+562837r3<adjektiv>generisk:generisk:generiskt:generiska:generiska::::
+562840r3<substantiv>generositet:generositet:generositets:generositeten:generositetens:!:!:!:!
+562842r4<adjektiv>generös:generös:generöst:generösa:generösa:generösare:generösast:generösaste:generöse
+DEFINITION 1: givmild
+562844r3<substantiv>genes:genes:genes:genesen:genesens:!:!:!:!
+562845r3<egennamn>Genet:Genet:Genets
+549077r7<substantiv>genetik:genetik:genetiks:genetiken:genetikens::::
+562847r3<substantiv>genetiker:genetiker:genetikers:genetikern:genetikerns:genetiker:genetikers:genetikerna:genetikernas
+562850r4<adjektiv>genetisk:genetisk:genetiskt:genetiska:genetiska::::genetiske
+562851r3<substantiv>genett:genett:genetts:genetten:genettens:genetter:genetters:genetterna:genetternas
+900937r3<egennamn>Genève:Genève:Genèves
+CUSTOM: y n Genève
+562859r3<substantiv>genever:genever:genevers:genevern:geneverns:!:!:!:!
+742565r4<substantiv>genforskning:genforskning:genforsknings:genforskningen:genforskningens::::
+COMPOUND(558912, 646379): gen + forskning
+791281r3<adjektiv>genförändrad:genförändrad:genförändrat:genförändrade:genförändrade:!:!:!:
+819627r3<substantiv>genförändring:genförändring:genförändrings:genförändringen:genförändringens:genförändringar:genförändringars:genförändringarna:genförändringarnas
+562861r4<substantiv>gengas:gengas:gengas:gengasen:gengasens:!:!:!:!
+954753r4<substantiv>gengasaggregat:gengasaggregat:gengasaggregats:gengasaggregatet:gengasaggregatets:gengasaggregat:gengasaggregats:gengasaggregaten:gengasaggregatens
+COMPOUND(562861, 552166): gengas + aggregat
+819635r3<substantiv>gengasbil:gengasbil:gengasbils:gengasbilen:gengasbilens:gengasbilar:gengasbilars:gengasbilarna:gengasbilarnas
+819643r3<substantiv>gengasdrift:gengasdrift:gengasdrifts:gengasdriften:gengasdriftens::::
+819647r3<adjektiv>gengasdriven:gengasdriven:gengasdrivet:gengasdrivna:gengasdrivna::::
+819650r3<substantiv>gengasmotor:gengasmotor:gengasmotors:gengasmotorn:gengasmotorns:gengasmotorer:gengasmotorers:gengasmotorerna:gengasmotorernas
+562864r3<substantiv>gengångare:gengångare:gengångares:gengångaren:gengångarens:gengångare:gengångares:gengångarna:gengångarnas
+CUSTOM: y y gengångar
+562865r3<substantiv>gengåva:gengåva:gengåvas:gengåvan:gengåvans:gengåvor:gengåvors:gengåvorna:gengåvornas
+562867r3<substantiv>gengäld:gengäld:::::::
+562868r4<verb>gengälda:gengälda:gengäldade:gengäldat:gengäldar:gengälda:gengäldas:gengäldades:gengäldats:gengäldas:gengäldad:gengäldat:gengäldade:gengäldande:
+562875r10<substantiv>geni:geni:genis:geniet:geniets:genier:geniers:genierna:geniernas
+562877r4<adjektiv>genial:genial:genialt:geniala:geniala:genialare:genialast:genialaste:geniale
+562878r3<adjektiv>genialisk:genialisk:genialiskt:genialiska:genialiska::::genialiske
+562880r3<substantiv>genialitet:genialitet:genialitets:genialiteten:genialitetens:genialiteter:genialiteters:genialiteterna:genialiteternas
+771767r3<substantiv>genidrag:genidrag:genidrags:genidraget:genidragets:genidrag:genidrags:genidragen:genidragens
+562886r3<substantiv>genie:genie:genies:genien:geniens:genier:geniers:genierna:geniernas
+CUSTOM: y n
+562888r3<verb>geniförklara:geniförklara:geniförklarade:geniförklarat:geniförklarar:geniförklara:geniförklaras:geniförklarades:geniförklarats:geniförklaras:::::
+562895r3<adjektiv>geniförklarad:geniförklarad:geniförklarat:geniförklarade:geniförklarade::::
+819660r3<substantiv>geniförklaring:geniförklaring:geniförklarings:geniförklaringen:geniförklaringens:geniförklaringar:geniförklaringars:geniförklaringarna:geniförklaringarnas
+562896r3<substantiv>geniknöl:geniknöl:geniknöls:geniknölen:geniknölens:geniknölar:geniknölars:geniknölarna:geniknölarnas
+948860r4<substantiv>genikult:genikult:genikults:genikulten:genikultens:genikulter:genikulters:genikulterna:genikulternas
+COMPOUND(562875, 549802): geni + kult
+797741r3<adjektiv>genital:genital:genitalt:genitala:genitala::::
+562904r3<substantiv>genitalier:!:!:!:!:genitalier:genitaliers:genitalierna:genitaliernas
+840154r3<substantiv>genitalorgan:genitalorgan:genitalorgans:genitalorganet:genitalorganets:genitalorgan:genitalorgans:genitalorganen:genitalorganens
+562905r4<substantiv>genitiv:genitiv:genitivs:genitiven:genitivens:genitiver:genitivers:genitiverna:genitivernas
+CUSTOM: y y genitiv
+562911r3<substantiv>genitivattribut:genitivattribut:genitivattributs:genitivattributet:genitivattributets:genitivattribut:genitivattributs:genitivattributen:genitivattributens
+580288r3<adjektiv>genitivisk:genitivisk:genitiviskt:genitiviska:genitiviska::::
+788782r4<substantiv>genitivändelse:genitivändelse:genitivändelses:genitivändelsen:genitivändelsens:genitivändelser:genitivändelsers:genitivändelserna:genitivändelsernas
+COMPOUND(562905, 620410): genitiv + ändelse
+691329r4<substantiv>genius:genius:genius:genien:geniens:genier:geniers:genierna:geniernas
+DEFINITION 1: En mans skyddsande (i det gamla Rom)
+562917r3<substantiv>genklang:genklang:genklangs:genklangen:genklangens:!:!:!:!
+562921r3<substantiv>genljud:genljud:genljuds:genljudet:genljudets:!:!:!:!
+562925r4<verb>genljuda:genljuda:genljöd:genljudit:genljuder:::::::::genljudande:
+562929r3<substantiv>genmanipulation:genmanipulation:genmanipulations:genmanipulationen:genmanipulationens:genmanipulationer:genmanipulationers:genmanipulationerna:genmanipulationernas
+CUSTOM: y y genmanipulations
+562926r3<adjektiv>genmanipulerad:genmanipulerad:genmanipulerat:genmanipulerade:genmanipulerade::::
+784327r3<substantiv>genmanipulering:genmanipulering:genmanipulerings:genmanipuleringen:genmanipuleringens:genmanipuleringar:genmanipuleringars:genmanipuleringarna:genmanipuleringarnas
+742571r3<adjektiv>genmodifierad:genmodifierad:genmodifierat:genmodifierade:genmodifierade:!:!:!:!
+819669r3<substantiv>genmodifiering:genmodifiering:genmodifierings:genmodifieringen:genmodifieringens::::
+819674r3<substantiv>genmutation:genmutation:genmutations:genmutationen:genmutationens:genmutationer:genmutationers:genmutationerna:genmutationernas
+562930r4<verb>genmäla:genmäla:genmälde:genmält:genmäler:genmäl:genmälas:genmäldes:genmälts:genmäls:genmäld:genmält:genmälda:genmälande:
+562936r3<substantiv>genmäle:genmäle:genmäles:genmälet:genmälets:genmälen:genmälens:genmälena:genmälenas
+819682r3<substantiv>genocid:genocid:genocids:genociden:genocidens:genocider:genociders:genociderna:genocidernas
+562937r10<preposition>genom:genom
+CUSTOM: y y genom
+562939r4<substantiv>genom:genom:genoms:genomet:genomets:genom:genoms:genomen:genomens
+DEFINITION 1: Hela genuppsättningen hos en art
+562938r12<adverb>genom:genom
+CUSTOM: y y genom
+791284r3<adjektiv>genomandad:genomandad:genomandat:genomandade:genomandade:!:!:!:
+691331r3<verb>genomarbeta:genomarbeta:genomarbetade:genomarbetat:genomarbetar:genomarbeta:::::genomarbetad:genomarbetat:genomarbetade::
+819690r3<substantiv>genomarbetning:genomarbetning:genomarbetnings:genomarbetningen:genomarbetningens:genomarbetningar:genomarbetningars:genomarbetningarna:genomarbetningarnas
+791287r3<adjektiv>genombakad:genombakad:genombakat:genombakade:genombakade:!:!:!:
+791290r3<adjektiv>genombildad:genombildad:genombildat:genombildade:genombildade:!:!:!:
+569159r3<adjektiv>genomblickbar:genomblickbar:genomblickbart:genomblickbara:genomblickbara::::
+819698r3<substantiv>genombläddring:genombläddring:genombläddrings:genombläddringen:genombläddringens:genombläddringar:genombläddringars:genombläddringarna:genombläddringarnas
+944632r4<verb>genomblöda:genomblöda:genomblödde:genomblött:genomblöder:genomblöd:::::::::
+COMPOUND(562937, 648976): genom + blöda
+845764r3<adjektiv>genomblöt:genomblöt:genomblött:genomblöta:genomblöta::::genomblöte
+546782r4<verb>genomborra:genomborra:genomborrade:genomborrat:genomborrar:genomborra:genomborras:genomborrades:genomborrats:genomborras:genomborrad:genomborrat:genomborrade::
+691333r6<substantiv>genombrott:genombrott:genombrotts:genombrottet:genombrottets:genombrott:genombrotts:genombrotten:genombrottens
+CUSTOM: y y genombrotts
+906880r4<substantiv>genombrottsfas:genombrottsfas:genombrottsfas:genombrottsfasen:genombrottsfasens:genombrottsfaser:genombrottsfasers:genombrottsfaserna:genombrottsfasernas
+COMPOUND(691333, 558576): genombrott + fas
+773719r4<substantiv>genombrottsverk:genombrottsverk:genombrottsverks:genombrottsverket:genombrottsverkets:genombrottsverk:genombrottsverks:genombrottsverken:genombrottsverkens
+COMPOUND(691333, 553117): genombrott + verk
+819706r4<substantiv>genombrottsår:genombrottsår:genombrottsårs:genombrottsåret:genombrottsårets:genombrottsår:genombrottsårs:genombrottsåren:genombrottsårens
+COMPOUND(691333, 553140): genombrott + år
+691334r4<verb>genomdriva:genomdriva:genomdrev:genomdrivit:genomdriver:genomdriv:genomdrivas:genomdrevs:genomdrivits:genomdrivs, genomdrives:genomdriven:genomdrivet:genomdrivna::
+COMPOUND(562938, 585295): genom + driva
+845768r3<adjektiv>genomelak:genomelak:genomelakt:genomelaka:genomelaka::::genomelake
+691350r4<verb>genomfara:genomfara:genomfor:genomfarit:genomfar:genomfar:genomfaras:genomfors:genomfarits:genomfars, genomfares:genomfaren:genomfaret:genomfarna:genomfarande:
+COMPOUND(562938, 558553): genom + fara
+691338r5<substantiv>genomfart:genomfart:genomfarts:genomfarten:genomfartens:genomfarter:genomfarters:genomfarterna:genomfarternas
+CUSTOM: y y genomfarts
+691344r4<substantiv>genomfartsled:genomfartsled:genomfartsleds:genomfartsleden:genomfartsledens:genomfartsleder:genomfartsleders:genomfartslederna:genomfartsledernas
+COMPOUND(691338, 556257): genomfart + led
+691346r4<substantiv>genomfartstrafik:genomfartstrafik:genomfartstrafiks:genomfartstrafiken:genomfartstrafikens:!:!:!:!
+COMPOUND(691338, 673056): genomfart + trafik
+791293r3<adjektiv>genomfestad:genomfestad:genomfestat:genomfestade:genomfestade:!:!:!:
+629803r6<verb>genomflyta:genomflyta:genomflöt:genomflutit:genomflyter:genomflyt:genomflytas:genomflöts:genomflutits:genomflyts, genomflytes:genomfluten:genomflutet:genomflutna:genomflytande:
+COMPOUND(562938, 561542): genom + flyta
+691360r3<adjektiv>genomforskad:genomforskad:genomforskat:genomforskade:genomforskade:!:!:!:
+564418r3<adjektiv>genomfrusen:genomfrusen:genomfruset:genomfrusna:genomfrusna::::
+944636r3<adjektiv>genomfrätt:genomfrätt:genomfrätt:genomfrätta:genomfrätta::::::::::::
+791296r3<adjektiv>genomfuktad:genomfuktad:genomfuktat:genomfuktade:genomfuktade:!:!:!:
+572829r3<adjektiv>genomfuktig:genomfuktig:genomfuktigt:genomfuktiga:genomfuktiga::::
+691361r5<verb>genomföra:genomföra:genomförde:genomfört:genomför:genomför:genomföras:genomfördes:genomförts:genomförs, genomföres:genomförd:genomfört:genomförda::
+COMPOUND(562937, 558899): genom + föra
+691362r4<substantiv>genomförande:genomförande:genomförandes:genomförandet:genomförandets:genomföranden:genomförandens:genomförandena:genomförandenas
+CUSTOM: y y genomförande
+756113r4<substantiv>genomförandefas:genomförandefas:genomförandefas:genomförandefasen:genomförandefasens:genomförandefaser:genomförandefasers:genomförandefaserna:genomförandefasernas
+COMPOUND(691362, 558576): genomförande + fas
+691369r3<substantiv>genomförare:genomförare:genomförares:genomföraren:genomförarens:genomförare:genomförares:genomförarna:genomförarnas
+CUSTOM: y y genomförar
+569162r3<adjektiv>genomförbar:genomförbar:genomförbart:genomförbara:genomförbara::::
+756106r3<substantiv>genomförbarhet:genomförbarhet:genomförbarhets:genomförbarheten:genomförbarhetens::::
+799423r3<adjektiv>genomförd:genomförd:genomfört:genomförda:genomförda::::
+756110r3<adjektiv>genomfördärvad:genomfördärvad:genomfördärvat:genomfördärvade:genomfördärvade:!:!:!:
+756120r4<substantiv>genomföring:genomföring:genomförings:genomföringen:genomföringens:genomföringar:genomföringars:genomföringarna:genomföringarnas
+CUSTOM: y y genomförings
+756128r3<substantiv>genomföringsisolator::::::::
+COMPOUND(756120, 671777): genomföring + isolator
+799424r3<adjektiv>genomförkyld:genomförkyld:genomförkylt:genomförkylda:genomförkylda::::
+756129r3<substantiv>genomförsel:genomförsel:genomförsels:genomförseln:genomförselns::::
+791299r3<adjektiv>genomgarvad:genomgarvad:genomgarvat:genomgarvade:genomgarvade:!:!:!:
+801802r3<adjektiv>genomgod:genomgod:genomgott:genomgoda:genomgoda::::
+636991r3<adjektiv>genomgripande:genomgripande:genomgripande:genomgripande:genomgripande:!:!:!:
+791302r3<adjektiv>genomgräddad:genomgräddad:genomgräddat:genomgräddade:genomgräddade:!:!:!:
+691370r4<verb>genomgå:genomgå:genomgick:genomgått:genomgår:genomgå:genomgås:genomgicks:genomgåtts:genomgås:genomgången:genomgånget:genomgångna::
+COMPOUND(562938, 554988): genom + gå
+620555r3<adverb>genomgående:genomgående
+691371r3<substantiv>genomgång:genomgång:genomgångs:genomgången:genomgångens:genomgångar:genomgångars:genomgångarna:genomgångarnas
+CUSTOM: y y genomgångs
+566075r3<adjektiv>genomhederlig:genomhederlig:genomhederligt:genomhederliga:genomhederliga::::
+791305r3<adjektiv>genomhettad:genomhettad:genomhettat:genomhettade:genomhettade:!:!:!:
+566078r3<adjektiv>genomhygglig:genomhygglig:genomhyggligt:genomhyggliga:genomhyggliga::::
+546783r3<verb>genomila:genomila:genomilade:genomilat:genomilar:genomila:::::::::
+797744r3<adjektiv>genomkall:genomkall:genomkallt:genomkalla:genomkalla::::
+691372r3<substantiv>genomklappning:genomklappning:genomklappnings:genomklappningen:genomklappningens:genomklappningar:genomklappningars:genomklappningarna:genomklappningarnas
+CUSTOM: y y genomklappnings
+859838r3<adjektiv>genomknäppt:genomknäppt:genomknäppt:genomknäppta:genomknäppta::::
+691373r3<adjektiv>genomkokt:genomkokt:genomkokt:genomkokta:genomkokta:!:!:!:!
+791308r3<adjektiv>genomkomponerad:genomkomponerad:genomkomponerat:genomkomponerade:genomkomponerade:!:!:!:
+791311r3<adjektiv>genomkonstruerad:genomkonstruerad:genomkonstruerat:genomkonstruerade:genomkonstruerade:!:!:!:
+732306r3<verb>genomkorsa:genomkorsa:genomkorsade:genomkorsat:genomkorsar:genomkorsa:genomkorsas:genomkorsades:genomkorsats:genomkorsas:genomkorsad:genomkorsat:genomkorsade:genomkorsande:
+799427r3<adjektiv>genomkyld:genomkyld:genomkylt:genomkylda:genomkylda::::
+742575r3<substantiv>genomkörare:genomkörare:genomkörares:genomköraren:genomkörarens:genomkörare:genomkörares:genomkörarna:genomkörarnas
+951318r3<adjektiv>genomkörd:genomkörd:genomkört:genomkörda:genomkörda::::::::::::
+845772r4<verb>genomleta:genomleta:genomletade:genomletat:genomletar:genomleta:genomletas:genomletades:genomletats:genomletas:genomletad:genomletat:genomletade:genomletande:
+COMPOUND(562938, 547282): genom + leta
+845781r4<verb>genomleva:genomleva:genomlevde:genomlevt, genomlevat:genomlever:genomlev:genomlevas:genomlevdes:genomlevts, genomlevats:genomlevs, genomleves:genomlevd:genomlevt:genomlevda:genomlevande:
+COMPOUND(562938, 560019): genom + leva
+691374r5<verb>genomlida:genomlida:genomled:genomlidit:genomlider:genomlid:genomlidas:genomleds:genomlidits:genomlids, genomlides:genomliden:genomlidet:genomlidna:genomlidande:
+COMPOUND(562938, 560043): genom + lida
+566081r3<adjektiv>genomlycklig:genomlycklig:genomlyckligt:genomlyckliga:genomlyckliga::::
+893093r4<verb>genomlysa:genomlysa:genomlyste:genomlyst:genomlyser:genomlys:genomlysas:genomlystes:genomlysts:genomlyses:genomlyst:genomlyst:genomlysta:genomlysande:
+COMPOUND(562937, 556578): genom + lysa
+819713r3<substantiv>genomlyssning:genomlyssning:genomlyssnings:genomlyssningen:genomlyssningens:genomlyssningar:genomlyssningars:genomlyssningarna:genomlyssningarnas
+799430r4<adjektiv>genomlärd:genomlärd:genomlärt:genomlärda:genomlärda::::genomlärde::::::::
+893103r4<verb>genomläsa:genomläsa:genomläste:genomläst:genomläser:genomläs:genomläsas:genomlästes:genomlästs:genomläses:genomläst:genomläst:genomlästa:genomläsande:
+COMPOUND(562937, 556182): genom + läsa
+691381r3<substantiv>genomläsning:genomläsning:genomläsnings:genomläsningen:genomläsningens:genomläsningar:genomläsningars:genomläsningarna:genomläsningarnas
+CUSTOM: y y genomläsnings
+691383r4<verb>genomlöpa:genomlöpa:genomlöpte:genomlöpt:genomlöper:genomlöp:genomlöpas:genomlöptes:genomlöpts:genomlöps:genomlupen:genomlupet:genomlupna::
+COMPOUND(562937, 560261): genom + löpa
+580291r3<adjektiv>genommusikalisk:genommusikalisk:genommusikaliskt:genommusikaliska:genommusikaliska::::
+791314r3<adjektiv>genomorganiserad:genomorganiserad:genomorganiserat:genomorganiserade:genomorganiserade:!:!:!:
+791317r3<adjektiv>genompiskad:genompiskad:genompiskat:genompiskade:genompiskade:!:!:!:
+572832r3<adjektiv>genompräktig:genompräktig:genompräktigt:genompräktiga:genompräktiga::::
+799433r3<adjektiv>genompyrd:genompyrd:genompyrt:genompyrda:genompyrda::::
+791320r3<adjektiv>genomreflekterad:genomreflekterad:genomreflekterat:genomreflekterade:genomreflekterade:!:!:!:
+566084r3<adjektiv>genomrolig:genomrolig:genomroligt:genomroliga:genomroliga::::
+791323r3<adjektiv>genomrostad:genomrostad:genomrostat:genomrostade:genomrostade:!:!:!:
+791326r3<adjektiv>genomrucklad:genomrucklad:genomrucklat:genomrucklade:genomrucklade:!:!:!:
+791329r3<adjektiv>genomrumlad:genomrumlad:genomrumlat:genomrumlade:genomrumlade:!:!:!:
+791332r3<adjektiv>genomsaltad:genomsaltad:genomsaltat:genomsaltade:genomsaltade:!:!:!:
+894595r2<adjektiv>genomsexualiserad::::::::::::::::
+563232r4<adjektiv>genomskinlig:genomskinlig:genomskinligt:genomskinliga:genomskinliga:genomskinligare:genomskinligast:genomskinligaste:genomskinlige
+742581r3<substantiv>genomskinlighet:genomskinlighet:genomskinlighets:genomskinligheten:genomskinlighetens::::
+546784r4<verb>genomskåda:genomskåda:genomskådade:genomskådat:genomskådar:genomskåda:genomskådas:genomskådades:genomskådats:genomskådas:genomskådad:genomskådat:genomskådade::
+566087r4<adjektiv>genomskådlig:genomskådlig:genomskådligt:genomskådliga:genomskådliga::::
+819722r3<substantiv>genomskådlighet:genomskådlighet:genomskådlighets:genomskådligheten:genomskådlighetens::::
+819728r4<substantiv>genomskärning:genomskärning:genomskärnings:genomskärningen:genomskärningens:genomskärningar:genomskärningars:genomskärningarna:genomskärningarnas
+CUSTOM: y y genomskärnings
+819726r4<substantiv>genomskärningsyta:genomskärningsyta:genomskärningsytas:genomskärningsytan:genomskärningsytans:genomskärningsytor:genomskärningsytors:genomskärningsytorna:genomskärningsytornas
+COMPOUND(819728, 595826): genomskärning + yta
+691386r4<substantiv>genomslag:genomslag:genomslags:genomslaget:genomslagets::::
+CUSTOM: y y genomslags
+691387r4<substantiv>genomslagskraft:genomslagskraft:genomslagskrafts:genomslagskraften:genomslagskraftens:!:!:!:!
+COMPOUND(691386, 549757): genomslag + kraft
+566090r4<adjektiv>genomsläpplig:genomsläpplig:genomsläppligt:genomsläppliga:genomsläppliga:genomsläppligare:genomsläppligast:genomsläppligaste:
+819743r3<substantiv>genomsläpplighet:genomsläpplighet:genomsläpplighets:genomsläppligheten:genomsläpplighetens::::
+819747r3<substantiv>genomsläppning:genomsläppning:genomsläppnings:genomsläppningen:genomsläppningens::::
+607196r4<substantiv>genomsnitt:genomsnitt:genomsnitts:genomsnittet:genomsnittets:genomsnitt:genomsnitts:genomsnitten:genomsnittens
+CUSTOM: y y genomsnitts
+6566093r4<adjektiv>genomsnittlig:genomsnittlig:genomsnittligt:genomsnittliga:genomsnittliga:!:!:!:genomsnittlige
+566093r8<adjektiv>genomsnittlig:genomsnittlig:genomsnittligt:genomsnittliga:genomsnittliga:genomsnittligare:genomsnittligast:genomsnittligaste:genomsnittlige
+670302r7<adverb>genomsnittligen:genomsnittligen
+797747r3<adjektiv>genomsnäll:genomsnäll:genomsnällt:genomsnälla:genomsnälla::::
+680014r11<verb>genomsteka:genomsteka:genomstekte:genomstekt:genomsteker:genomstek:genomstekas:genomstektes:genomstekts:genomsteks:genomstekt:genomstekt:genomstekta::
+COMPOUND(562938, 585841): genom + steka
+546785r4<verb>genomströmma:genomströmma:genomströmmade:genomströmmat:genomströmmar:genomströmma:genomströmmas:genomströmmades:genomströmmats:genomströmmas:genomströmmad:genomströmmat:genomströmmade::
+691389r3<substantiv>genomströmning:genomströmning:genomströmnings:genomströmningen:genomströmningens::::
+CUSTOM: y y genomströmnings
+691390r3<adjektiv>genomstungen:genomstungen:genomstunget:genomstungna:genomstungna::::
+799436r3<adjektiv>genomsund:genomsund:genomsunt:genomsunda:genomsunda::::
+819751r3<adjektiv>genomsur:genomsur:genomsurt:genomsura:genomsura::::
+791335r3<adjektiv>genomsusad:genomsusad:genomsusat:genomsusade:genomsusade:!:!:!:
+572835r3<adjektiv>genomsvettig:genomsvettig:genomsvettigt:genomsvettiga:genomsvettiga::::
+801305r3<adjektiv>genomsydd:genomsydd:genomsytt:genomsydda:genomsydda::::
+580294r3<adjektiv>genomsympatisk:genomsympatisk:genomsympatiskt:genomsympatiska:genomsympatiska::::
+566094r3<adjektiv>genomsynlig:genomsynlig:genomsynligt:genomsynliga:genomsynliga::::
+546786r5<verb>genomsyra:genomsyra:genomsyrade:genomsyrat:genomsyrar:genomsyra:genomsyras:genomsyrades:genomsyrats:genomsyras:genomsyrad:genomsyrat:genomsyrade:genomsyrande:
+691391r4<verb>genomsöka:genomsöka:genomsökte:genomsökt:genomsöker:genomsök:genomsökas:genomsöktes:genomsökts:genomsöks, genomsökes:genomsökt:genomsökt:genomsökta:genomsökande:
+673737r6<adjektiv>genomtorr:genomtorr:genomtorrt:genomtorra:genomtorra::::::::::::
+COMPOUND(562937, 563246): genom + torr
+566097r3<adjektiv>genomtrevlig:genomtrevlig:genomtrevligt:genomtrevliga:genomtrevliga::::
+572838r3<adjektiv>genomtråkig:genomtråkig:genomtråkigt:genomtråkiga:genomtråkiga::::
+801308r3<adjektiv>genomträdd:genomträdd:genomträtt:genomträdda:genomträdda::::
+691393r3<verb>genomtränga:genomtränga:genomträngde:genomträngt:genomtränger:genomträng:genomträngas:genomträngdes:genomträngts:genomträngs:genomträngd:genomträngt:genomträngda::
+691395r3<adjektiv>genomträngande:genomträngande:genomträngande:genomträngande:genomträngande:!:!:!:
+569163r3<adjektiv>genomträngbar:genomträngbar:genomträngbart:genomträngbara:genomträngbara::::
+566100r3<adjektiv>genomtränglig:genomtränglig:genomträngligt:genomträngliga:genomträngliga::::
+819754r3<substantiv>genomtränglighet:genomtränglighet:genomtränglighets:genomträngligheten:genomtränglighetens::::
+691397r4<adjektiv>genomtänkt:genomtänkt:genomtänkt:genomtänkta:genomtänkta::::genomtänkte
+802150r4<adjektiv>genomusel:genomusel:genomuselt:genomusla:genomusla::::genomusle
+791338r3<adjektiv>genomvakad:genomvakad:genomvakat:genomvakade:genomvakade:!:!:!:
+797750r3<adjektiv>genomvarm:genomvarm:genomvarmt:genomvarma:genomvarma::::
+893115r4<adjektiv>genomvåt:genomvåt:genomvått:genomvåta:genomvåta::::genomvåte::::::::
+COMPOUND(562937, 563245): genom + våt
+677688r3<adjektiv>genomvävd:genomvävd:genomvävt:genomvävda:genomvävda::::
+566103r3<adjektiv>genomärlig:genomärlig:genomärligt:genomärliga:genomärliga::::
+845797r4<verb>genomögna:genomögna:genomögnade:genomögnat:genomögnar:genomögna:genomögnas:genomögnades:genomögnats:genomögnas:genomögnad:genomögnat:genomögnade:genomögnande:
+COMPOUND(562938, 548099): genom + ögna
+840188r3<substantiv>genotyp:genotyp:genotyps:genotypen:genotypens:genotyper:genotypers:genotyperna:genotypernas
+580297r3<adjektiv>genotypisk:genotypisk:genotypiskt:genotypiska:genotypiska::::
+914469r4<substantiv>genpatent:genpatent:genpatents:genpatentet:genpatentets:genpatent:genpatents:genpatenten:genpatentens
+COMPOUND(558912, 552759): gen + patent
+558474r5<substantiv>genre:genre:genres:genren:genrens:genrer:genrers:genrerna:genrernas
+CUSTOM: y y genre
+819759r4<verb>genrebestämma:genrebestämma:genrebestämde:genrebestämt:genrebestämmer:genrebestäm:genrebestämmas:genrebestämdes:genrebestämts:genrebestäms, genrebestämmes:genrebestämd:genrebestämt:genrebestämda:genrebestämmande:
+COMPOUND(558474, 592705): genre + bestämma
+819773r3<substantiv>genrebeteckning:genrebeteckning:genrebetecknings:genrebeteckningen:genrebeteckningens:genrebeteckningar:genrebeteckningars:genrebeteckningarna:genrebeteckningarnas
+572841r3<adjektiv>genremässig:genremässig:genremässigt:genremässiga:genremässiga::::
+742585r3<substantiv>genrep:genrep:genreps:genrepet:genrepets:genrep:genreps:genrepen:genrepens
+940575r3<verb>genrepa:genrepa:genrepade:genrepat:genrepar:genrepa:genrepas:genrepades:genrepats:genrepas::::genrepande:
+840196r3<substantiv>gensaga:gensaga:gensagas:gensagan:gensagans:gensagor:gensagors:gensagorna:gensagornas
+914477r4<substantiv>gensekvens:gensekvens:gensekvens:gensekvensen:gensekvensens:gensekvenser:gensekvensers:gensekvenserna:gensekvensernas
+COMPOUND(558912, 550472): gen + sekvens
+691398r6<verb>genskjuta:genskjuta:gensköt:genskjutit:genskjuter:genskjutas:genskjut:gensköts:genskjutits:genskjuts, genskjutes:genskjuten:genskjutet:genskjutna:genskjutande:
+572844r3<adjektiv>genstridig:genstridig:genstridigt:genstridiga:genstridiga::::
+572847r3<adjektiv>gensträvig:gensträvig:gensträvigt:gensträviga:gensträviga::::
+691406r3<substantiv>gensträvighet:gensträvighet:gensträvighets:gensträvigheten:gensträvighetens::::
+CUSTOM: y y gensträvighets
+572848r4<adjektiv>genstörtig:genstörtig:genstörtigt:genstörtiga:genstörtiga::::genstörtige
+552433r3<substantiv>gensvar:gensvar:gensvars:gensvaret:gensvarets:gensvar:gensvars:gensvaren:gensvarens
+840207r3<substantiv>gen

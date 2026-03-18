@@ -1,0 +1,628 @@
+gts:bryggs, brygges:bryggd:bryggt:bryggda::
+CUSTOM: y y brygg
+615173r3<substantiv>bryggare:bryggare:bryggares:bryggaren:bryggarens:bryggare:bryggares:bryggarna:bryggarnas
+CUSTOM: y y bryggar +bryggar
+611663r6<substantiv>bryggeri:bryggeri:bryggeris:bryggeriet:bryggeriets:bryggerier:bryggeriers:bryggerierna:bryggeriernas
+CUSTOM: y y bryggeri
+752980r4<substantiv>bryggeriarbetare:bryggeriarbetare:bryggeriarbetares:bryggeriarbetaren:bryggeriarbetarens:bryggeriarbetare:bryggeriarbetares:bryggeriarbetarna:bryggeriarbetarnas
+COMPOUND(611663, 561048): bryggeri + arbetare
+895772r4<substantiv>bryggerijäst:bryggerijäst:bryggerijästs:bryggerijästen:bryggerijästens:!:!:!:!
+COMPOUND(611663, 692938): bryggeri + jäst
+640555r3<substantiv>bryggjämvikt:bryggjämvikt:bryggjämvikts:bryggjämvikten:bryggjämviktens:bryggjämvikter:bryggjämvikters:bryggjämvikterna:bryggjämvikternas
+799160r3<adjektiv>bryggmald:bryggmald:bryggmalt:bryggmalda:bryggmalda::::
+571012r3<adjektiv>bryggmalen:bryggmalen:bryggmalet:bryggmalna:bryggmalna::::
+954413r3<substantiv>bryggning:bryggning:bryggnings:bryggningen:bryggningens:bryggningar:bryggningars:bryggningarna:bryggningarnas
+766765r4<substantiv>bryggvåg:bryggvåg:bryggvågs:bryggvågen:bryggvågens:bryggvågar:bryggvågars:bryggvågarna:bryggvågarnas
+COMPOUND(585769, 552102): brygga + våg
+752981r3<substantiv>brylépudding:brylépudding:brylépuddings:brylépuddingen:brylépuddingens:brylépuddingar:brylépuddingars:brylépuddingarna:brylépuddingarnas
+866329r3<substantiv>brylling:brylling:bryllings:bryllingen:bryllingens:bryllingar:bryllingars:bryllingarna:bryllingarnas
+552279r8<substantiv>bryn:bryn:bryns:brynet:brynets:bryn:bryns:brynen:brynens
+CUSTOM: y n
+649071r4<verb>bryna:bryna:brynte:brynt:bryner:bryn:brynas:bryntes:brynts:bryns:brynt:brynt:brynta:brynande:
+733131r4<substantiv>bryne:bryne:brynes:brynet:brynets:brynen:brynens:brynena:brynenas
+CUSTOM: n n y
+972695r3<egennamn>Bryngelsson:Bryngelsson:Bryngelssons
+970495r3<substantiv>bryning:bryning:brynings:bryningen:bryningens::::
+660759r3<substantiv>brynja:brynja:brynjas:brynjan:brynjans:brynjor:brynjors:brynjorna:brynjornas
+971958r3<egennamn>Brynolf:Brynolf:Brynolfs
+724820r11<substantiv>brynsten:brynsten:brynstens:brynstenen:brynstenens:brynstenar:brynstenars:brynstenarna:brynstenarnas
+COMPOUND(552279, 551935): bryn + sten
+866338r3<substantiv>brynstål:brynstål:brynståls:brynstålet:brynstålets::::
+866342r3<substantiv>bryolog:bryolog:bryologs:bryologen:bryologens:bryologer:bryologers:bryologerna:bryologernas
+866350r3<substantiv>bryologi:bryologi:bryologis:bryologin:bryologins::::
+579266r3<adjektiv>bryologisk:bryologisk:bryologiskt:bryologiska:bryologiska::::
+649072r4<adjektiv>brysk:brysk:bryskt:bryska:bryska:bryskare:bryskast:bryskaste:bryske
+970499r3<substantiv>bryskhet:bryskhet:bryskhets:bryskheten:bryskhetens::::
+554875r4<egennamn>Bryssel:Bryssel:Bryssels
+CUSTOM: y y Bryssel
+627686r4<substantiv>brysselkål:brysselkål:brysselkåls:brysselkålen:brysselkålens:!:!:!:!
+COMPOUND(554875, 559875): Bryssel + kål
+892415r3<substantiv>brysselmatta:brysselmatta:brysselmattas:brysselmattan:brysselmattans:brysselmattor:brysselmattors:brysselmattorna:brysselmattornas
+892423r3<substantiv>brysselspets:brysselspets:brysselspets:brysselspetsen:brysselspetsens:brysselspetsar:brysselspetsars:brysselspetsarna:brysselspetsarnas
+556860r15<verb>bryta:bryta:bröt:brutit:bryter:bryt:brytas:bröts:brutits:bryts, brytes:bruten:brutet:brutna:brytande:
+CUSTOM: y y bryt
+689183r3<substantiv>brytande:brytande:brytandes:brytandet:brytandets::::
+615174r5<substantiv>brytare:brytare:brytares:brytaren:brytarens:brytare:brytares:brytarna:brytarnas
+CUSTOM: y y brytar +brytar
+568964r3<adjektiv>brytbar:brytbar:brytbart:brytbara:brytbara::::
+970504r3<substantiv>brytbarhet:brytbarhet:brytbarhets:brytbarheten:brytbarhetens::::
+598162r3<substantiv>brytbladskniv:brytbladskniv:brytbladsknivs:brytbladskniven:brytbladsknivens:brytbladsknivar:brytbladsknivars:brytbladsknivarna:brytbladsknivarnas
+950763r3<substantiv>brytböna:brytböna:brytbönas:brytbönan:brytbönans:brytbönor:brytbönors:brytbönorna:brytbönornas
+596580r9<substantiv>brytning:brytning:brytnings:brytningen:brytningens:brytningar:brytningars:brytningarna:brytningarnas
+CUSTOM: y y brytnings +brytnings
+660761r4<substantiv>brytningstid:brytningstid:brytningstids:brytningstiden:brytningstidens:brytningstider:brytningstiders:brytningstiderna:brytningstidernas
+COMPOUND(596580, 550665): brytning + tid
+945975r4<substantiv>brytningstäkt:brytningstäkt:brytningstäkts:brytningstäkten:brytningstäktens:brytningstäkter:brytningstäkters:brytningstäkterna:brytningstäkternas
+COMPOUND(596580, 550725): brytning + täkt
+799163r3<adjektiv>brytningsvärd:brytningsvärd:brytningsvärt:brytningsvärda:brytningsvärda::::
+758390r4<substantiv>brytningsår:brytningsår:brytningsårs:brytningsåret:brytningsårets:brytningsår:brytningsårs:brytningsåren:brytningsårens
+COMPOUND(596580, 553140): brytning + år
+660763r4<substantiv>brytpunkt:brytpunkt:brytpunkts:brytpunkten:brytpunktens:brytpunkter:brytpunkters:brytpunkterna:brytpunkternas
+COMPOUND(556860, 550299): bryta + punkt
+799166r3<adjektiv>brytvärd:brytvärd:brytvärt:brytvärda:brytvärda::::
+552280r6<substantiv>bråck:bråck:bråcks:bråcket:bråckets:bråck:bråcks:bråcken:bråckens
+866354r3<substantiv>bråckband:bråckband:bråckbands:bråckbandet:bråckbandets:bråckband:bråckbands:bråckbanden:bråckbandens
+970509r4<substantiv>bråckoperation:bråckoperation:bråckoperations:bråckoperationen:bråckoperationens:bråckoperationer:bråckoperationers:bråckoperationerna:bråckoperationernas
+COMPOUND(552280, 603051): bråck + operation
+624248r4<adjektiv>bråd:bråd:brått:bråda:bråda:brådare:brådast:brådaste:
+752989r3<adjektiv>bråddjup:bråddjup:bråddjupt:bråddjupa:bråddjupa:!:!:!:!
+752992r4<substantiv>bråddjup:bråddjup:bråddjups:bråddjupet:bråddjupets:bråddjup:bråddjups:bråddjupen:bråddjupens
+960698r3<adverb>brådis:brådis
+660765r4<adjektiv>brådmogen:brådmogen:brådmoget:brådmogna:brådmogna:brådmognare:brådmognast:brådmognaste:brådmogne
+970517r3<substantiv>brådmogenhet:brådmogenhet:brådmogenhets:brådmogenheten:brådmogenhetens::::
+752996r3<substantiv>brådrask:::brådrasket:::::
+623148r4<substantiv>brådska:brådska:brådskas:brådskan:brådskans:!:!:!:!
+BASEWORDS: brådske
+CUSTOM: y y brådske
+660767r3<verb>brådska:brådska:brådskade:brådskat:brådskar::::::::::
+660766r3<adjektiv>brådskande:brådskande:brådskande:brådskande:brådskande:!:!:!:
+724835r3<adjektiv>brådstörtad:brådstörtad:brådstörtat:brådstörtade:brådstörtade:!:!:!:!
+552282r7<substantiv>bråk:bråk:bråks:bråket:bråkets:bråk:bråks:bråken:bråkens
+CUSTOM: y y bråk
+546331r5<verb>bråka:bråka:bråkade:bråkat:bråkar:bråka:bråkas:bråkades:bråkats:bråkas::::bråkande:
+660768r3<substantiv>bråkdel:bråkdel:bråkdels:bråkdelen:bråkdelens:bråkdelar:bråkdelars:bråkdelarna:bråkdelarnas
+571718r4<adjektiv>bråkig:bråkig:bråkigt:bråkiga:bråkiga:bråkigare:bråkigast:bråkigaste:bråkige
+615175r3<substantiv>bråkmakare:bråkmakare:bråkmakares:bråkmakaren:bråkmakarens:bråkmakare:bråkmakares:bråkmakarna:bråkmakarnas
+CUSTOM: y y bråkmakar
+646620r3<substantiv>bråkstake:bråkstake:bråkstakes:bråkstaken:bråkstakens:bråkstakar:bråkstakars:bråkstakarna:bråkstakarnas
+761814r3<substantiv>bråktal:bråktal:bråktals:bråktalet:bråktalets:bråktal:bråktals:bråktalen:bråktalens
+944341r3<egennamn>Brålanda:Brålanda:Brålandas
+591634r4<deponens>brås:brås:bråddes:bråtts:brås:
+DEFINITION 1: Brås på: ha ärvt egenskaper från [ en släkting ]
+625095r3<substantiv>bråte:bråte:bråtes:bråten:bråtens:!:!:!:!
+571719r3<adjektiv>bråtig:bråtig:bråtigt:bråtiga:bråtiga::::
+620494r3<adverb>bråttom:bråttom
+649075r4<verb>bräcka:bräcka:bräckte:bräckt:bräcker:bräck:bräckas:bräcktes:bräckts:bräcks, bräckes:bräckt:bräckt:bräckta:bräckande:
+728074r3<egennamn>Bräcke:Bräcke:Bräckes
+606843r3<substantiv>bräckjärn:bräckjärn:bräckjärns:bräckjärnet:bräckjärnets:bräckjärn:bräckjärns:bräckjärnen:bräckjärnens
+866365r3<substantiv>bräckkorv:bräckkorv:bräckkorvs:bräckkorven:bräckkorvens:bräckkorvar:bräckkorvars:bräckkorvarna:bräckkorvarnas
+565668r4<adjektiv>bräcklig:bräcklig:bräckligt:bräckliga:bräckliga:bräckligare:bräckligast:bräckligaste:bräcklige
+689185r3<substantiv>bräcklighet:bräcklighet:bräcklighets:bräckligheten:bräcklighetens::::
+CUSTOM: y y bräcklighets
+585508r4<verb>bräda:bräda:brädade:brädat:brädar:bräda:brädas:brädades:brädats:brädas:brädad:brädat:brädade:brädande:
+559078r7<substantiv>bräda:bräda:brädas:brädan:brädans:brädor:brädors:brädorna:brädornas
+CUSTOM: y y bräd
+930346r4<substantiv>brädbit:brädbit:brädbits:brädbiten:brädbitens:brädbitar:brädbitars:brädbitarna:brädbitarnas
+COMPOUND(559078, 550887): bräda + bit
+550952r6<substantiv>brädd:brädd:brädds:brädden:bräddens:bräddar:bräddars:bräddarna:bräddarnas
+CUSTOM: y n
+546330r5<verb>brädda:brädda:bräddade:bräddat:bräddar:brädda:bräddas:bräddades:bräddats:bräddas:bräddad:bräddat:bräddade::
+584937r3<adjektiv>bräddfull:bräddfull:bräddfullt:bräddfulla:bräddfulla::::
+772211r3<adjektiv>bräddfylld:bräddfylld:bräddfyllt:bräddfyllda:bräddfyllda:!:!:!:!
+612410r5<substantiv>bräde:bräde:brädes:brädet:brädets:bräden:brädens:brädena:brädenas
+849383r3<substantiv>brädhög:brädhög:brädhögs:brädhögen:brädhögens:brädhögar:brädhögars:brädhögarna:brädhögarnas
+801233r3<adjektiv>brädklädd:brädklädd:brädklätt:brädklädda:brädklädda::::
+660771r3<substantiv>brädspel:brädspel:brädspels:brädspelet:brädspelets:brädspel:brädspels:brädspelen:brädspelens
+615561r3<substantiv>brädspelare:brädspelare:brädspelares:brädspelaren:brädspelarens:brädspelare:brädspelares:brädspelarna:brädspelarnas
+CUSTOM: y y brädspelar
+648977r3<verb>bräka:bräka:bräkte:bräkt:bräker:bräk:::::::::
+CUSTOM: y n
+782598r4<substantiv>bräkande:bräkande:bräkandes:bräkandet:bräkandets:bräkanden:bräkandens:bräkandena:bräkandenas
+800914r3<adjektiv>bräkande:bräkande:bräkande:bräkande:bräkande:!:!:!:
+782606r3<substantiv>bräken:bräken:bräkens::::::
+866380r4<substantiv>bräm:bräm:bräms:brämet:brämets::::
+CUSTOM: y n
+799169r4<adjektiv>bränd:bränd:bränt:brända:brända::::::::::::
+972699r3<egennamn>Brändström:Brändström:Brändströms
+556869r11<verb>bränna:bränna:brände:bränt:bränner:bränn:brännas:brändes:bränts:bränns, brännes:bränd:bränt:brända:brännande:
+CUSTOM: y y bränn
+689189r3<substantiv>brännande:brännande:brännandes:brännandet:brännandets::::
+615176r4<substantiv>brännare:brännare:brännares:brännaren:brännarens:brännare:brännares:brännarna:brännarnas
+CUSTOM: y y brännar +brännar
+568967r4<adjektiv>brännbar:brännbar:brännbart:brännbara:brännbara:brännbarare:brännbarast:brännbaraste:
+970522r3<substantiv>brännbarhet:brännbarhet:brännbarhets:brännbarheten:brännbarhetens::::
+660777r3<substantiv>brännboll:brännboll:brännbolls:brännbollen:brännbollens:!:!:!:!
+CUSTOM: y y brännbolls
+866384r3<substantiv>bränneri:bränneri:bränneris:bränneriet:bränneriets:brännerier:bränneriers:brännerierna:bränneriernas
+759902r4<adjektiv>brännhet:brännhet:brännhett:brännheta:brännheta:!:!:!:brännhete
+660773r4<substantiv>bränning:bränning:brännings:bränningen:bränningens:bränningar:bränningars:bränningarna:bränningarnas
+CUSTOM: y y brännings +brännings
+760823r3<substantiv>brännmanet:brännmanet:brännmanets:brännmaneten:brännmanetens:brännmaneter:brännmaneters:brännmaneterna:brännmaneternas
+660775r5<verb>brännmärka:brännmärka:brännmärkte:brännmärkt:brännmärker:brännmärk:brännmärkas:brännmärktes:brännmärkts:brännmärks:brännmärkt:brännmärkt:brännmärkta:brännmärkande:
+COMPOUND(556869, 585833): bränna + märka
+689190r4<substantiv>brännmärke:brännmärke:brännmärkes:brännmärket:brännmärkets:brännmärken:brännmärkens:brännmärkena:brännmärkenas
+COMPOUND(556869, 619020): bränna + märke
+660780r3<substantiv>brännmärkning:brännmärkning:brännmärknings:brännmärkningen:brännmärkningens:brännmärkningar:brännmärkningars:brännmärkningarna:brännmärkningarnas
+CUSTOM: y y brännmärknings
+689191r4<substantiv>brännoffer:brännoffer:brännoffers:brännoffret:brännoffrets:brännoffer:brännoffers:brännoffren:brännoffrens
+COMPOUND(556869, 619286): bränna + offer
+790319r3<adjektiv>brännskadad:brännskadad:brännskadat:brännskadade:brännskadade:!:!:!:
+660781r3<substantiv>brännsår:brännsår:brännsårs:brännsåret:brännsårets:brännsår:brännsårs:brännsåren:brännsårens
+950771r4<substantiv>bränntorv:bränntorv:bränntorvs:bränntorven:bränntorvens:!:!:!:!
+COMPOUND(556869, 627429): bränna + torv
+689195r3<substantiv>brännved:brännved:brännveds:brännveden:brännvedens::::
+626801r6<substantiv>brännvin:brännvin:brännvins:brännvinet:brännvinets:!:!:!:!
+COMPOUND(556869, 600515): bränna + vin
+CUSTOM: y y brännvins +brännvins
+660782r4<substantiv>brännvinsflaska:brännvinsflaska:brännvinsflaskas:brännvinsflaskan:brännvinsflaskans:brännvinsflaskor:brännvinsflaskors:brännvinsflaskorna:brännvinsflaskornas
+COMPOUND(626801, 555299): brännvin + flaska
+593855r3<substantiv>brännässla:brännässla:brännässlas:brännässlan:brännässlans:brännässlor:brännässlors:brännässlorna:brännässlornas
+612411r8<substantiv>bränsle:bränsle:bränsles:bränslet:bränslets:bränslen:bränslens:bränslena:bränslenas
+CUSTOM: y y bränsle +bränsle
+892772r4<substantiv>bränslegas:bränslegas:bränslegas:bränslegasen:bränslegasens:bränslegaser:bränslegasers:bränslegaserna:bränslegasernas
+COMPOUND(612411, 549064): bränsle + gas
+921525r4<substantiv>bränslehärd:bränslehärd:bränslehärds:bränslehärden:bränslehärdens:bränslehärdar:bränslehärdars:bränslehärdarna:bränslehärdarnas
+COMPOUND(612411, 551443): bränsle + härd
+797329r4<adjektiv>bränslesnål:bränslesnål:bränslesnålt:bränslesnåla:bränslesnåla:bränslesnålare:bränslesnålast:bränslesnålaste:
+900001r6<substantiv>bränslestav:bränslestav:bränslestavs:bränslestaven:bränslestavens:bränslestavar:bränslestavars:bränslestavarna:bränslestavarnas
+COMPOUND(612411, 551932): bränsle + stav
+606849r3<substantiv>bränslesystem:bränslesystem:bränslesystems:bränslesystemet:bränslesystemets:bränslesystem:bränslesystems:bränslesystemen:bränslesystemens
+712179r4<substantiv>bränsletank:bränsletank:bränsletanks:bränsletanken:bränsletankens:bränsletankar:bränsletankars:bränsletankarna:bränsletankarnas
+COMPOUND(612411, 599004): bränsle + tank
+797333r3<adjektiv>bränsletörstig:bränsletörstig:bränsletörstigt:bränsletörstiga:bränsletörstiga::::
+548469r3<substantiv>bräsch:bräsch:bräschs:bräschen:bräschens:bräscher:bräschers:bräscherna:bräschernas
+588755r4<verb>bräsera:bräsera:bräserade:bräserat:bräserar:bräsera:bräseras:bräserades:bräserats:bräseras:bräserad:bräserat:bräserade:bräserande:
+970526r3<substantiv>bräsering:bräsering:bräserings:bräseringen:bräseringens:bräseringar:bräseringars:bräseringarna:bräseringarnas
+782608r3<substantiv>bräss:bräss:bräss:brässen:brässens::::
+727928r3<substantiv>brätte:brätte:brättes:brättet:brättets:brätten:brättens:brättena:brättenas
+960699r3<verb>bröa:bröa:bröade:bröat:bröar:bröa:bröas:bröades:bröats:bröas:bröad:bröat:bröade::
+555497r10<substantiv>bröd:bröd:bröds:brödet:brödets:bröd:bröds:bröden:brödens
+CUSTOM: y y bröd
+853855r3<substantiv>brödbak:brödbak:brödbaks:brödbaket:brödbakets:brödbak:brödbaks:brödbaken:brödbakens
+930354r4<substantiv>brödbit:brödbit:brödbits:brödbiten:brödbitens:brödbitar:brödbitars:brödbitarna:brödbitarnas
+COMPOUND(555497, 550887): bröd + bit
+849392r3<substantiv>brödfat:brödfat:brödfats:brödfatet:brödfatets:brödfat:brödfats:brödfaten:brödfatens
+940842r3<adjektiv>brödig:brödig:brödigt:brödiga:brödiga:brödigare:brödigast:brödigaste:::::::::
+889770r4<substantiv>brödkorg:brödkorg:brödkorgs:brödkorgen:brödkorgens:brödkorgar:brödkorgars:brödkorgarna:brödkorgarnas
+COMPOUND(555497, 551586): bröd + korg
+564768r3<adjektiv>brödlös:brödlös:brödlöst:brödlösa:brödlösa::::
+689199r4<substantiv>brödrafolk:brödrafolk:brödrafolks:brödrafolket:brödrafolkets:brödrafolk:brödrafolks:brödrafolken:brödrafolkens
+COMPOUND(555140, 552385): bror, broder + folk
+970534r3<substantiv>brödraförsamling:brödraförsamling:brödraförsamlings:brödraförsamlingen:brödraförsamlingens:brödraförsamlingar:brödraförsamlingars:brödraförsamlingarna:brödraförsamlingarnas
+970542r3<substantiv>brödrakärlek:brödrakärlek:brödrakärleks:brödrakärleken:brödrakärlekens::::
+849398r3<substantiv>brödrapar:brödrapar:brödrapars:brödraparet:brödraparets:brödrapar:brödrapars:brödraparen:brödraparens
+759895r3<substantiv>brödraskap:brödraskap:brödraskaps:brödraskapet:brödraskapets:brödraskap:brödraskaps:brödraskapen:brödraskapens
+970547r3<substantiv>brödratrio:brödratrio:brödratrios:brödratrion:brödratrions::::
+550953r3<substantiv>brödrost:brödrost:brödrosts:brödrosten:brödrostens:brödrostar:brödrostars:brödrostarna:brödrostarnas
+970552r3<substantiv>brödsbrytelse:brödsbrytelse:brödsbrytelses:brödsbrytelsen:brödsbrytelsens::::
+593857r3<substantiv>brödsmula:brödsmula:brödsmulas:brödsmulan:brödsmulans:brödsmulor:brödsmulors:brödsmulorna:brödsmulornas
+660784r3<substantiv>brödstycke:brödstycke:brödstyckes:brödstycket:brödstyckets:brödstycken:brödstyckens:brödstyckena:brödstyckenas
+660785r3<substantiv>brödtext:brödtext:brödtexts:brödtexten:brödtextens:!:!:!:!
+631444r3<substantiv>bröl:bröl:bröls:brölet:brölets:bröl:bröls:brölen:brölens
+CUSTOM: y n
+631450r4<verb>bröla:bröla:brölade:brölat:brölar:bröla:brölas:brölades:brölats:brölas::::brölande:
+552284r8<substantiv>bröllop:bröllop:bröllops:bröllopet:bröllopets:bröllop:bröllops:bröllopen:bröllopens
+CUSTOM: y y bröllops +bröllops
+660789r6<substantiv>bröllopsdag:bröllopsdag:bröllopsdags:bröllopsdagen:bröllopsdagens:bröllopsdagar:bröllopsdagars:bröllopsdagarna:bröllopsdagarnas
+COMPOUND(552284, 551009): bröllop + dag
+660796r4<substantiv>bröllopsfest:bröllopsfest:bröllopsfests:bröllopsfesten:bröllopsfestens:bröllopsfester:bröllopsfesters:bröllopsfesterna:bröllopsfesternas
+COMPOUND(552284, 548912): bröllop + fest
+660804r4<substantiv>bröllopsgäst:bröllopsgäst:bröllopsgästs:bröllopsgästen:bröllopsgästens:bröllopsgäster:bröllopsgästers:bröllopsgästerna:bröllopsgästernas
+COMPOUND(552284, 549188): bröllop + gäst
+660806r4<substantiv>bröllopsresa:bröllopsresa:bröllopsresas:bröllopsresan:bröllopsresans:bröllopsresor:bröllopsresors:bröllopsresorna:bröllopsresornas
+COMPOUND(552284, 594958): bröllop + resa
+CUSTOM: y y bröllopsrese
+912592r4<substantiv>bröllopsyra:bröllopsyra:bröllopsyras:bröllopsyran:bröllopsyrans:!:!:!:!
+COMPOUND(552284, 557780): bröllop + yra
+552285r12<substantiv>bröst:bröst:brösts:bröstet:bröstets:bröst:brösts:brösten:bröstens
+CUSTOM: y y bröst +bröst
+660811r3<verb>brösta:brösta:bröstade:bröstat:bröstar:brösta:bröstas:bröstades:bröstats:bröstas:::::
+660815r4<substantiv>bröstarvinge:bröstarvinge:bröstarvinges:bröstarvingen:bröstarvingens:bröstarvingar:bröstarvingars:bröstarvingarna:bröstarvingarnas
+COMPOUND(552285, 599781): bröst + arvinge
+950775r4<substantiv>bröstböld:bröstböld:bröstbölds:bröstbölden:bröstböldens:bröstbölder:bröstbölders:bröstbölderna:bröstböldernas
+COMPOUND(552285, 548513): bröst + böld
+660817r4<substantiv>bröstcancer:bröstcancer:bröstcancers:bröstcancern:bröstcancerns::::
+COMPOUND(552285, 626940): bröst + cancer
+660821r4<substantiv>bröstficka:bröstficka:bröstfickas:bröstfickan:bröstfickans:bröstfickor:bröstfickors:bröstfickorna:bröstfickornas
+COMPOUND(552285, 561662): bröst + ficka
+970556r3<adverb>bröstgänges:bröstgänges
+890128r4<substantiv>bröstmjölk:bröstmjölk:bröstmjölks:bröstmjölken:bröstmjölkens:!:!:!:!
+COMPOUND(552285, 618922): bröst + mjölk
+660829r3<substantiv>bröstmått:bröstmått:bröstmåtts:bröstmåttet:bröstmåttets:bröstmått:bröstmåtts:bröstmåtten:bröstmåttens
+866401r3<substantiv>bröstning:bröstning:bröstnings:bröstningen:bröstningens:bröstningar:bröstningars:bröstningarna:bröstningarnas
+891673r3<substantiv>bröstsim:bröstsim:bröstsims:bröstsimmet:bröstsimmets::::
+899020r4<substantiv>bröstton:bröstton:brösttons:brösttonen:brösttonens:brösttoner:brösttoners:brösttonerna:brösttonernas
+COMPOUND(552285, 603900): bröst + ton
+660835r4<substantiv>bröstvårta:bröstvårta:bröstvårtas:bröstvårtan:bröstvårtans:bröstvårtor:bröstvårtors:bröstvårtorna:bröstvårtornas
+COMPOUND(552285, 634750): bröst + vårta
+904484r3<substantiv>bröt:bröt:bröts:bröten:brötens:brötar:brötars:brötarna:brötarnas
+CUSTOM: n n y
+960708r3<adjektiv>brötig:brötig:brötigt:brötiga:brötiga:brötigare:brötigast:brötigaste:brötige::::::::
+38999r4<substantiv>B-språk:B-språk:B-språks:B-språket:B-språkets:B-språk:B-språks:B-språken:B-språkens
+CUSTOM: n n
+638999r4<substantiv>B-språk:B-språk:B-språks:B-språket:B-språkets:B-språk:B-språks:B-språken:B-språkens
+554923r4<interjektion>bu:bu
+CUSTOM: y n
+546332r4<verb>bua:bua:buade:buat:buar:bua:buas:buades:buats:buas:!:!:!:buande:
+947995r3<substantiv>buande:buande:buandes:buandet:buandets:buanden:buandens:buandena:buandenas
+689203r5<substantiv>bubbel:bubbel:bubbels:bubblet:bubblets::::
+CUSTOM: y y bubbel
+752999r3<substantiv>bubbelgum:bubbelgum:bubbelgums:bubbelgummet:bubbelgummets:bubbelgum:bubbelgums:bubbelgummen:bubbelgummens
+753005r4<substantiv>bubbelminne:bubbelminne:bubbelminnes:bubbelminnet:bubbelminnets:bubbelminnen:bubbelminnens:bubbelminnena:bubbelminnenas
+COMPOUND(622160, 555491): bubbla + minne
+752998r4<substantiv>bubbelpool:bubbelpool:bubbelpools:bubbelpoolen:bubbelpoolens:bubbelpooler:bubbelpoolers:bubbelpoolerna:bubbelpoolernas
+COMPOUND(689203, 624615): bubbel + pool
+919029r4<substantiv>bubbelvin:bubbelvin:bubbelvins:bubbelvinet:bubbelvinets:bubbelviner:bubbelviners:bubbelvinerna:bubbelvinernas
+COMPOUND(689203, 600515): bubbel + vin
+622160r5<substantiv>bubbla:bubbla:bubblas:bubblan:bubblans:bubblor:bubblors:bubblorna:bubblornas
+CUSTOM: y y bubbel
+546333r4<verb>bubbla:bubbla:bubblade:bubblat:bubblar:bubbla::::::::bubblande:
+782611r3<substantiv>bubblare:bubblare:bubblares:bubblaren:bubblarens:bubblare:bubblares:bubblarna:bubblarnas
+565669r3<adjektiv>bubblig:bubblig:bubbligt:bubbliga:bubbliga::::
+906334r8<adjektiv>buckal:buckal:buckalt:buckala:buckala:!:!:!:!:!:!:!:!:!:!:!:!
+CUSTOM: n n y
+546334r4<verb>buckla:buckla:bucklade:bucklat:bucklar:buckla:bucklas:bucklades:bucklats:bucklas:bucklad:bucklat:bucklade:bucklande:
+CUSTOM: y n
+622162r3<substantiv>buckla:buckla:bucklas:bucklan:bucklans:bucklor:bucklors:bucklorna:bucklornas
+565672r4<adjektiv>bucklig:bucklig:buckligt:buckliga:buckliga:buckligare:buckligast:buckligaste:
+970561r3<substantiv>buckram:buckram:buckrams:buckramen:buckramens::::
+CUSTOM: y n
+552287r38<substantiv>bud:bud:buds:budet:budets:bud:buds:buden:budens
+CUSTOM: y n
+782617r5<verb>buda:buda:budade:budat:budar:buda:budas:budades:budats:budas:budad:budat:budade:budande:
+943202r3<egennamn>Budapest:Budapest:Budapests
+753006r4<substantiv>budbil:budbil:budbils:budbilen:budbilens:budbilar:budbilars:budbilarna:budbilarnas
+COMPOUND(552287, 550885): bud + bil
+866409r3<substantiv>budbyrå:budbyrå:budbyrås:budbyrån:budbyråns:budbyråer:budbyråers:budbyråerna:budbyråernas
+615177r3<substantiv>budbärare:budbärare:budbärares:budbäraren:budbärarens:budbärare:budbärares:budbärarna:budbärarnas
+CUSTOM: y y budbärar
+935842r4<egennamn>Buddha:Buddha:Buddhas
+CUSTOM: y n Buddha
+840977r6<substantiv>Buddhastaty:Buddhastaty:Buddhastatys:Buddhastatyn:Buddhastatyns:Buddhastatyer:Buddhastatyers:Buddhastatyerna:Buddhastatyernas
+COMPOUND(935842, 626555): Buddha + staty
+CUSTOM: y n
+558543r8<substantiv>buddhism, buddism:buddism, buddhism:buddisms, buddhisms:buddismen, buddhismen:buddismens, buddhismens:!:!:!:!
+660837r3<substantiv>buddhist:buddhist:buddhists:buddhisten:buddhistens:buddhister:buddhisters:buddhisterna:buddhisternas
+CUSTOM: y y buddhist
+579269r4<adjektiv>buddhistisk:buddhistisk:buddhistiskt:buddhistiska:buddhistiska::::buddhistiske::::::::
+689205r3<substantiv>buddist:buddist:buddists:buddisten:buddistens:buddister:buddisters:buddisterna:buddisternas
+CUSTOM: y y buddist
+579270r4<adjektiv>buddistisk:buddistisk:buddistiskt:buddistiska:buddistiska::::buddistiske
+906715r4<substantiv>budfirma:budfirma:budfirmas:budfirman:budfirmans:budfirmor:budfirmors:budfirmorna:budfirmornas
+COMPOUND(552287, 631626): bud + firma
+550961r12<substantiv>budget:budget:budgets:budgeten:budgetens:budgetar:budgetars:budgetarna:budgetarnas
+CUSTOM: y y budget +budget
+546338r5<verb>budgetera:budgetera:budgeterade:budgeterat:budgeterar:budgetera:budgeteras:budgeterades:budgeterats:budgeteras:budgeterad:budgeterat:budgeterade:budgeterande:
+689207r4<substantiv>budgetering:budgetering:budgeterings:budgeteringen:budgeteringens::::
+CUSTOM: y y budgeterings +budgeterings
+701391r4<substantiv>budgeteringsprincip:budgeteringsprincip:budgeteringsprincips:budgeteringsprincipen:budgeteringsprincipens:budgeteringsprinciper:budgeteringsprincipers:budgeteringsprinciperna:budgeteringsprincipernas
+COMPOUND(689207, 550253): budgetering + princip
+571722r3<adjektiv>budgetmässig:budgetmässig:budgetmässigt:budgetmässiga:budgetmässiga::::
+701399r4<substantiv>budgetnedskärning:budgetnedskärning:budgetnedskärnings:budgetnedskärningen:budgetnedskärningens:budgetnedskärningar:budgetnedskärningars:budgetnedskärningarna:budgetnedskärningarnas
+COMPOUND(550961, 655947): budget + nedskärning
+CUSTOM: y y budgetnedskärnings
+718344r3<substantiv>budgetprocess:budgetprocess:budgetprocess:budgetprocessen:budgetprocessens:budgetprocesser:budgetprocessers:budgetprocesserna:budgetprocessernas
+701408r4<substantiv>budgetsanering:budgetsanering:budgetsanerings:budgetsaneringen:budgetsaneringens:budgetsaneringar:budgetsaneringars:budgetsaneringarna:budgetsaneringarnas
+COMPOUND(550961, 701409): budget + sanering
+CUSTOM: y y budgetsanerings
+854867r4<substantiv>budgettak:budgettak:budgettaks:budgettaket:budgettakets:budgettak:budgettaks:budgettaken:budgettakens
+COMPOUND(550961, 553027): budget + tak
+919039r4<substantiv>budgetvin:budgetvin:budgetvins:budgetvinet:budgetvinets:budgetviner:budgetviners:budgetvinerna:budgetvinernas
+COMPOUND(550961, 600515): budget + vin
+552288r3<substantiv>budgetår:budgetår:budgetårs:budgetåret:budgetårets:budgetår:budgetårs:budgetåren:budgetårens
+854267r4<substantiv>budgivare:budgivare:budgivares:budgivaren:budgivarens:budgivare:budgivares:budgivarna:budgivarnas
+COMPOUND(552287, 615268): bud + givare
+660839r3<substantiv>budgivning:budgivning:budgivnings:budgivningen:budgivningens:budgivningar:budgivningars:budgivningarna:budgivningarnas
+CUSTOM: y y budgivnings
+866420r3<substantiv>budkavel:budkavel:budkavels:budkaveln:budkavelns::::
+660845r3<substantiv>budkavle:budkavle:budkavles:budkavlen:budkavlens:budkavlar:budkavlars:budkavlarna:budkavlarnas
+970570r3<substantiv>budning:budning:budnings:budningen:budningens::::
+CUSTOM: y n
+719342r6<substantiv>budo:budo:budos:budon:budons::::
+CUSTOM: y n
+970582r4<substantiv>budogren:budogren:budogrens:budogrenen:budogrenens:budogrenar:budogrenars:budogrenarna:budogrenarnas
+COMPOUND(719342, 551309): budo + gren
+660847r3<substantiv>budord:budord:budords:budordet:budordets:budord:budords:budorden:budordens
+719341r4<substantiv>budosport:budosport:budosports:budosporten:budosportens:budosporter:budosporters:budosporterna:budosporternas
+COMPOUND(719342, 550562): budo + sport
+912598r5<substantiv>budplikt:budplikt:budplikts:budplikten:budpliktens::::
+COMPOUND(552287, 550214): bud + plikt
+CUSTOM: y y budplikts
+912604r4<substantiv>budpliktsbud:budpliktsbud:budpliktsbuds:budpliktsbudet:budpliktsbudets:budpliktsbud:budpliktsbuds:budpliktsbuden:budpliktsbudens
+COMPOUND(912598, 552287): budplikt + bud
+912612r4<substantiv>budpremie:budpremie:budpremies:budpremien:budpremiens:budpremier:budpremiers:budpremierna:budpremiernas
+COMPOUND(552287, 695329): bud + premie
+871772r3<substantiv>budröst:budröst:budrösts:budrösten:budröstens:budröster:budrösters:budrösterna:budrösternas
+CUSTOM: y n
+871783r3<verb>budrösta:budrösta:budröstade:budröstat:budröstar:budrösta:budröstas:budröstades:budröstats:budröstas::::budröstande:
+CUSTOM: y n
+871793r3<substantiv>budröstning:budröstning:budröstnings:budröstningen:budröstningens::::
+CUSTOM: y n budröstnings
+552289r3<substantiv>budskap:budskap:budskaps:budskapet:budskapets:budskap:budskaps:budskapen:budskapens
+CUSTOM: y y budskaps +budskaps
+959504r5<substantiv>budstart:budstart:budstarts:budstarten:budstartens:budstarter:budstarters:budstarterna:budstarternas
+COMPOUND(552287, 603706): bud + start
+959514r4<substantiv>budstartspris:budstartspris:budstartspris:budstartspriset:budstartsprisets:budstartspriser:budstartsprisers:budstartspriserna:budstartsprisernas
+COMPOUND(959504, 595932): budstart + pris
+912622r4<substantiv>budstrid:budstrid:budstrids:budstriden:budstridens:budstrider:budstriders:budstriderna:budstridernas
+COMPOUND(552287, 619729): bud + strid
+960716r3<verb>buffa:buffa:buffade:buffat:buffar:buffa:buffas:buffades:buffats:buffas::::buffande:
+866424r3<substantiv>buffaopera:buffaopera:buffaoperas:buffaoperan:buffaoperans:buffaoperor:buffaoperors:buffaoperorna:buffaoperornas
+660851r4<substantiv>buffé:buffé:buffés:buffén:bufféns:bufféer:bufféers:bufféerna:bufféernas
+CUSTOM: y y buffé
+660852r8<substantiv>buffel:buffel:buffels:buffeln:buffelns:bufflar:bufflars:bufflarna:bufflarnas
+CUSTOM: y y buffel
+571725r4<adjektiv>buffelaktig:buffelaktig:buffelaktigt:buffelaktiga:buffelaktiga::::buffelaktige
+674090r4<substantiv>buffelhjord:buffelhjord:buffelhjords:buffelhjorden:buffelhjordens:buffelhjordar:buffelhjordars:buffelhjordarna:buffelhjordarnas
+COMPOUND(660852, 551381): buffel + hjord
+674098r4<substantiv>buffelhorn:buffelhorn:buffelhorns:buffelhornet:buffelhornets:buffelhorn:buffelhorns:buffelhornen:buffelhornens
+COMPOUND(660852, 552473): buffel + horn
+674104r4<substantiv>buffelhud:buffelhud:buffelhuds:buffelhuden:buffelhudens:buffelhudar:buffelhudars:buffelhudarna:buffelhudarnas
+COMPOUND(660852, 551393): buffel + hud
+674112r4<substantiv>buffeloxe:buffeloxe:buffeloxes:buffeloxen:buffeloxens:buffeloxar:buffeloxars:buffeloxarna:buffeloxarnas
+COMPOUND(660852, 599942): buffel + oxe
+674120r4<substantiv>buffeltjur:buffeltjur:buffeltjurs:buffeltjuren:buffeltjurens:buffeltjurar:buffeltjurars:buffeltjurarna:buffeltjurarnas
+COMPOUND(660852, 552013): buffel + tjur
+550963r13<substantiv>buffert:buffert:bufferts:bufferten:buffertens:buffertar:buffertars:buffertarna:buffertarnas
+CUSTOM: y y buffert
+674128r4<substantiv>buffertanordning:buffertanordning:buffertanordnings:buffertanordningen:buffertanordningens:buffertanordningar:buffertanordningars:buffertanordningarna:buffertanordningarnas
+COMPOUND(550963, 606105): buffert + anordning
+CUSTOM: y y buffertanordnings
+674136r4<substantiv>buffertarea:buffertarea:buffertareas:buffertarean:buffertareans:buffertareor:buffertareors:buffertareorna:buffertareornas
+COMPOUND(550963, 615996): buffert + area
+674144r4<substantiv>buffertbalk:buffertbalk:buffertbalks:buffertbalken:buffertbalkens:buffertbalkar:buffertbalkars:buffertbalkarna:buffertbalkarnas
+COMPOUND(550963, 550861): buffert + balk
+674152r4<substantiv>buffertbatteri:buffertbatteri:buffertbatteris:buffertbatteriet:buffertbatteriets:buffertbatterier:buffertbatteriers:buffertbatterierna:buffertbatteriernas
+COMPOUND(550963, 559244): buffert + batteri
+674160r4<substantiv>buffertbjälke:buffertbjälke:buffertbjälkes:buffertbjälken:buffertbjälkens:buffertbjälkar:buffertbjälkars:buffertbjälkarna:buffertbjälkarnas
+COMPOUND(550963, 599783): buffert + bjälke
+674168r2<substantiv>buffertdon::::::::
+765623r3<substantiv>buffertering:buffertering:bufferterings:bufferteringen:bufferteringens:bufferteringar:bufferteringars:bufferteringarna:bufferteringarnas
+674169r4<substantiv>buffertfjäder:buffertfjäder:buffertfjäders:buffertfjädern:buffertfjäderns:buffertfjädrar:buffertfjädrars:buffertfjädrarna:buffertfjädrarnas
+COMPOUND(550963, 561351): buffert + fjäder
+674177r4<substantiv>buffertförstärkare:buffertförstärkare:buffertförstärkares:buffertförstärkaren:buffertförstärkarens:buffertförstärkare:buffertförstärkares:buffertförstärkarna:buffertförstärkarnas
+COMPOUND(550963, 615261): buffert + förstärkare
+CUSTOM: y y buffertförstärkar
+674183r4<substantiv>buffertgummi:buffertgummi:buffertgummis:buffertgummit:buffertgummits:buffertgummin:buffertgummins:buffertgummina:buffertgumminas
+COMPOUND(550963, 556715): buffert + gummi
+903440r4<substantiv>buffertzon:buffertzon:buffertzons:buffertzonen:buffertzonens:buffertzoner:buffertzoners:buffertzonerna:buffertzonernas
+COMPOUND(550963, 550796): buffert + zon
+919049r4<substantiv>buffévin:buffévin:buffévins:buffévinet:buffévinets:bufféviner:bufféviners:buffévinerna:buffévinernas
+COMPOUND(660851, 600515): buffé + vin
+565673r4<adjektiv>bufflig:bufflig:buffligt:buffliga:buffliga:buffligare:buffligast:buffligaste:bufflige
+958364r3<substantiv>bufflighet:bufflighet:bufflighets:buffligheten:bufflighetens::::
+689211r4<verb>buffra:buffra:buffrade:buffrat:buffrar:buffra:buffras:buffrades:buffrats:buffras:buffrad:buffrat:buffrade:buffrande:
+689215r3<substantiv>buffring:buffring:buffrings:buffringen:buffringens::::
+CUSTOM: y y buffrings
+546339r4<verb>buga:buga:bugade:bugat:bugar:buga::::::::bugande:!
+753015r3<substantiv>bugande:bugande:bugandes:bugandet:bugandets::::
+648971r3<substantiv>bugg:bugg:buggs:buggen:buggens:buggar:buggars:buggarna:buggarnas
+546340r4<verb>bugga:bugga:buggade:buggat:buggar:bugga:buggas:buggades:buggats:buggas:buggad:buggat:buggade::
+912632r3<substantiv>buggfix:buggfix:buggfix:buggfixen:buggfixens:buggfixar:buggfixars:buggfixarna:buggfixarnas
+950126r3<adjektiv>buggig:buggig:buggigt:buggiga:buggiga::::::::::::
+787366r3<substantiv>bugglåt:bugglåt:bugglåts:bugglåten:bugglåtens:bugglåtar:bugglåtars:bugglåtarna:bugglåtarnas
+CUSTOM: n n
+689219r4<substantiv>buggning:buggning:buggnings:buggningen:buggningens:buggningar:buggningars:buggningarna:buggningarnas
+CUSTOM: y y buggnings
+753017r3<substantiv>bugning:bugning:bugnings:bugningen:bugningens:bugningar:bugningars:bugningarna:bugningarnas
+762222r3<egennamn>Buick:Buick:Buicks
+550965r10<substantiv>buk:buk:buks:buken:bukens:bukar:bukars:bukarna:bukarnas
+CUSTOM: y n buk
+763656r3<egennamn>Bukarest:Bukarest:Bukarests
+CUSTOM: y n Bukarest
+548471r4<substantiv>bukett:bukett:buketts:buketten:bukettens:buketter:buketters:buketterna:buketternas
+989463r4<substantiv>bukgjord:bukgjord:bukgjords:bukgjorden:bukgjordens:bukgjordar:bukgjordars:bukgjordarna:bukgjordarnas
+COMPOUND(550965, 989464): buk + gjord
+660853r5<substantiv>bukhinna:bukhinna:bukhinnas:bukhinnan:bukhinnans:bukhinnor:bukhinnors:bukhinnorna:bukhinnornas
+COMPOUND(550965, 556558): buk + hinna
+CUSTOM: y y bukhinne
+866442r4<substantiv>bukhinneinflammation:bukhinneinflammation:bukhinneinflammations:bukhinneinflammationen:bukhinneinflammationens:bukhinneinflammationer:bukhinneinflammationers:bukhinneinflammationerna:bukhinneinflammationernas
+COMPOUND(660853, 602288): bukhinna + inflammation
+571728r4<adjektiv>bukig:bukig:bukigt:bukiga:bukiga:bukigare:bukigast:bukigaste:::::::::
+CUSTOM: y n
+949545r3<substantiv>bukighet:bukighet:bukighets:bukigheten:bukighetens::::
+949549r4<verb>buklanda:buklanda:buklandade:buklandat:buklandar:buklanda:buklandas:buklandades:buklandats:buklandas::::buklandande:
+COMPOUND(550965, 585573): buk + landa
+949557r4<substantiv>buklandning:buklandning:buklandnings:buklandningen:buklandningens:buklandningar:buklandningars:buklandningarna:buklandningarnas
+COMPOUND(550965, 669555): buk + landning
+579271r3<adjektiv>bukolisk:bukolisk:bukoliskt:bukoliska:bukoliska::::
+874278r3<egennamn>Bukowski:Bukowski:Bukowskis
+CUSTOM: y n Bukowski
+733143r4<substantiv>bukspott:bukspott:bukspotts:bukspottet:bukspottets:bukspott:bukspotts:bukspotten:bukspottens
+CUSTOM: y n
+733135r4<substantiv>bukspottkörtel:bukspottkörtel:bukspottkörtels:bukspottkörteln:bukspottkörtelns:bukspottkörtlar:bukspottkörtlars:bukspottkörtlarna:bukspottkörtlarnas
+COMPOUND(733143, 622839): bukspott + körtel
+906773r4<substantiv>bukspottskörtel:bukspottskörtel:bukspottskörtels:bukspottskörteln:bukspottskörtelns:bukspottskörtlar:bukspottskörtlars:bukspottskörtlarna:bukspottskörtlarnas
+CUSTOM: y y bukspottskörtel
+906783r3<substantiv>bukspottskörtelinflammation::::::::
+COMPOUND(906773, 602288): bukspottskörtel + inflammation
+548473r6<substantiv>bukt:bukt:bukts:bukten:buktens:bukter:bukters:bukterna:bukternas
+CUSTOM: y n
+649076r4<verb>bukta:bukta:buktade:buktat:buktar:bukta::::::::buktande:
+790322r3<adjektiv>buktad:buktad:buktat:buktade:buktade:!:!:!:
+930364r4<verb>buktala:buktala:buktalade:buktalat:buktalar:buktala:buktalas:buktalades:buktalats:buktalas::::buktalande:
+COMPOUND(550965, 547816): buk + tala
+927358r3<substantiv>buktalare:buktalare:buktalares:buktalaren:buktalarens:buktalare:buktalares:buktalarna:buktalarnas
+970594r3<substantiv>buktaleri:buktaleri:buktaleris:buktaleriet:buktaleriets::::
+571731r4<adjektiv>buktig:buktig:buktigt:buktiga:buktiga:buktigare:buktigast:buktigaste:::::::::
+970601r3<substantiv>buktning:buktning:buktnings:buktningen:buktningens:buktningar:buktningars:buktningarna:buktningarnas
+930373r4<substantiv>bukvägg:bukvägg:bukväggs:bukväggen:bukväggens:bukväggar:bukväggars:bukväggarna:bukväggarnas
+COMPOUND(550965, 552111): buk + vägg
+622158r4<substantiv>bula:bula:bulas:bulan:bulans:bulor:bulors:bulorna:bulornas
+923638r4<substantiv>bulb:bulb:bulbs:bulben:bulbens:bulber:bulbers:bulberna:bulbernas
+CUSTOM: n n y
+970609r4<substantiv>bulbstäv:bulbstäv:bulbstävs:bulbstäven:bulbstävens:bulbstävar:bulbstävars:bulbstävarna:bulbstävarnas
+COMPOUND(923638, 624826): bulb + stäv
+548475r3<substantiv>bulgar:bulgar:bulgars:bulgaren:bulgarens:bulgarer:bulgarers:bulgarerna:bulgarernas
+553985r3<egennamn>Bulgarien:Bulgarien:Bulgariens
+CUSTOM: y n Bulgarien
+568736r4<adjektiv>bulgarisk:bulgarisk:bulgariskt:bulgariska:bulgariska:!:!:!:bulgariske
+593865r3<substantiv>bulgariska:bulgariska:bulgariskas:bulgariskan:bulgariskans:bulgariskor:bulgariskors:bulgariskorna:bulgariskornas
+938153r4<substantiv>bulgur:bulgur:bulgurs:bulguren:bulgurens::::
+938158r4<substantiv>bulgursallad:bulgursallad:bulgursallads:bulgursalladen:bulgursalladens:bulgursallader:bulgursalladers:bulgursalladerna:bulgursalladernas
+COMPOUND(938153, 550446): bulgur + sallad
+753026r3<substantiv>bulimi:bulimi:bulimis:bulimin:bulimins::::
+970618r3<substantiv>bulimiker:bulimiker:bulimikers:bulimikern:bulimikerns:bulimiker:bulimikers:bulimikerna:bulimikernas
+633494r9<substantiv>buljong:buljong:buljongs:buljongen:buljongens:buljonger:buljongers:buljongerna:buljongernas
+CUSTOM: y y buljong +buljong
+634167r4<substantiv>buljongben:buljongben:buljongbens:buljongbenet:buljongbenets:buljongben:buljongbens:buljongbenen:buljongbenens
+COMPOUND(633494, 552233): buljong + ben
+634173r4<substantiv>buljongextrakt:buljongextrakt:buljongextrakts:buljongextraktet:buljongextraktets:buljongextrakt, buljongextrakter:buljongextrakts, buljongextrakters:buljongextrakten:buljongextraktens
+COMPOUND(633494, 634174): buljong + extrakt
+634189r4<substantiv>buljongkött:buljongkött:buljongkötts:buljongköttet:buljongköttets::::
+COMPOUND(633494, 555245): buljong + kött
+596581r3<substantiv>buljongtärning:buljongtärning:buljongtärnings:buljongtärningen:buljongtärningens:buljongtärningar:buljongtärningars:buljongtärningarna:buljongtärningarnas
+CUSTOM: y y buljongtärnings
+941104r4<substantiv>bulk:bulk:bulks:bulken:bulkens::::
+CUSTOM: y n y
+941626r4<substantiv>bulkfartyg:bulkfartyg:bulkfartygs:bulkfartyget:bulkfartygets:bulkfartyg:bulkfartygs:bulkfartygen:bulkfartygens
+COMPOUND(941104, 552372): bulk + fartyg
+970625r3<substantiv>bulkfrakt:bulkfrakt:bulkfrakts:bulkfrakten:bulkfraktens:bulkfrakter:bulkfrakters:bulkfrakterna:bulkfrakternas
+571732r3<adjektiv>bulkig:bulkig:bulkigt:bulkiga:bulkiga::::
+CUSTOM: n n n
+970633r3<substantiv>bulklast:bulklast:bulklasts:bulklasten:bulklastens:bulklaster:bulklasters:bulklasterna:bulklasternas
+924056r3<substantiv>bulkvara:bulkvara:bulkvaras:bulkvaran:bulkvarans:bulkvaror:bulkvarors:bulkvarorna:bulkvarornas
+624226r5<substantiv>bulla:bulla:bullas:bullan:bullans:bullor:bullors:bullorna:bullornas
+660855r3<verb>bulla:bulla:bullade:bullat:bullar:bulla:::::::::
+849405r3<substantiv>bullbak:bullbak:bullbaks:bullbaket:bullbakets:bullbak:bullbaks:bullbaken:bullbakens
+768442r3<adjektiv>bullbakande:bullbakande:bullbakande:bullbakande:bullbakande:!:!:!:
+550967r3<substantiv>bulldogg:bulldogg:bulldoggs:bulldoggen:bulldoggens:bulldoggar:bulldoggars:bulldoggarna:bulldoggarnas
+753030r4<substantiv>bulldozer:bulldozer:bulldozers:bulldozern:bulldozerns:bulldozrar:bulldozrars:bulldozrarna:bulldozrarnas
+599788r8<substantiv>bulle:bulle:bulles:bullen:bullens:bullar:bullars:bullarna:bullarnas
+CUSTOM: y y bull
+622372r6<substantiv>buller:buller:bullers:bullret:bullrets:buller:bullers:bullren:bullrens
+CUSTOM: y y buller
+565676r3<adjektiv>bullerkänslig:bullerkänslig:bullerkänsligt:bullerkänsliga:bullerkänsliga::::
+753035r4<substantiv>bullernivå:bullernivå:bullernivås:bullernivån:bullernivåns:bullernivåer:bullernivåers:bullernivåerna:bullernivåernas
+COMPOUND(622372, 611085): buller + nivå
+565679r3<adjektiv>bullerokänslig:bullerokänslig:bullerokänsligt:bullerokänsliga:bullerokänsliga::::
+753036r4<substantiv>bullerplank:bullerplank:bullerplanks:bullerplanket:bullerplankets:bullerplank:bullerplanks:bullerplanken:bullerplankens
+COMPOUND(622372, 552773): buller + plank
+563358r3<adjektiv>bullersam:bullersam:bullersamt:bullersamma:bullersamma::::
+841215r3<substantiv>bullersten:bullersten:bullerstens:bullerstenen:bullerstenens:bullerstenar:bullerstenars:bullerstenarna:bullerstenarnas
+548483r3<substantiv>bulletin:bulletin:bulletins:bulletinen:bulletinens:bulletiner:bulletiners:bulletinerna:bulletinernas
+565682r4<adjektiv>bullig:bullig:bulligt:bulliga:bulliga:bulligare:bulligast:bulligaste:::::::::
+660856r3<verb>bullra:bullra:bullrade:bullrat:bullrar:bullra::::::::bullrande:
+571735r4<adjektiv>bullrig:bullrig:bullrigt:bullriga:bullriga:bullrigare:bullrigast:bullrigaste:bullrige
+571736r3<adjektiv>bulsig:bulsig:bulsigt:bulsiga:bulsiga::::
+550975r5<substantiv>bult:bult:bults:bulten:bultens:bultar:bultars:bultarna:bultarnas
+585512r4<verb>bulta:bulta:bultade:bultat:bultar:bulta:bultas:bultades:bultats:bultas:::::
+753037r3<adjektiv>bultande:bultande:bultande:bultande:bultande:!:!:!:
+753038r3<substantiv>bultande:bultande:bultandes:bultandet:bultandets::::
+601490r3<substantiv>bultfabrik:bultfabrik:bultfabriks:bultfabriken:bultfabrikens:bultfabriker:bultfabrikers:bultfabrikerna:bultfabrikernas
+610496r3<substantiv>bultindustri:bultindustri:bultindustris:bultindustrin:bultindustrins:bultindustrier:bultindustriers:bultindustrierna:bultindustriernas
+970652r3<substantiv>bultning:bultning:bultnings:bultningen:bultningens:bultningar:bultningars:bultningarna:bultningarnas
+866454r3<substantiv>bultpistol:bultpistol:bultpistols:bultpistolen:bultpistolens:bultpistoler:bultpistolers:bultpistolerna:bultpistolernas
+866462r3<substantiv>bultsax:bultsax:bultsax:bultsaxen:bultsaxens:bultsaxar:bultsaxars:bultsaxarna:bultsaxarnas
+548484r3<substantiv>bulvan:bulvan:bulvans:bulvanen:bulvanens:bulvaner:bulvaners:bulvanerna:bulvanernas
+804143r3<substantiv>bumerang:bumerang:bumerangs:bumerangen:bumerangens:bumeranger:bumerangers:bumerangerna:bumerangernas
+669729r4<substantiv>bumling:bumling:bumlings:bumlingen:bumlingens:bumlingar:bumlingars:bumlingarna:bumlingarnas
+620495r3<adverb>bums:bums
+571015r8<adjektiv>bunden:bunden:bundet:bundna:bundna::::bundne
+724659r3<substantiv>bundenhet:bundenhet:bundenhets:bundenheten:bundenhetens::::
+970661r3<verb>bundla:bundla:bundlade:bundlat:bundlar:bundla:bundlas:bundlades:bundlats:bundlas:bundlad:bundlat:bundlade:bundlande:
+970672r4<substantiv>bundling:bundling:bundlings:bundlingen:bundlingens:bundlingar:bundlingars:bundlingarna:bundlingarnas
+660857r3<substantiv>bundsförvant:bundsförvant:bundsförvants:bundsförvanten:bundsförvantens:bundsförvanter:bundsförvanters:bundsförvanterna:bundsförvanternas
+548486r4<substantiv>bungalow:bungalow:bungalows:bungalowen:bungalowens:bungalower:bungalowers:bungalowerna:bungalowernas
+956696r4<substantiv>bungalowby:bungalowby:bungalowbys:bungalowbyn:bungalowbyns:bungalowbyar:bungalowbyars:bungalowbyarna:bungalowbyarnas
+COMPOUND(548486, 557655): bungalow + by
+622163r3<substantiv>bunke:bunke:bunkes:bunken:bunkens:bunkar:bunkars:bunkarna:bunkarnas
+622165r4<substantiv>bunker:bunker:bunkers:bunkern:bunkerns:bunkrar:bunkrars:bunkrarna:bunkrarnas
+912645r3<substantiv>bunkerbomb:bunkerbomb:bunkerbombs:bunkerbomben:bunkerbombens:bunkerbomber:bunkerbombers:bunkerbomberna:bunkerbombernas
+912654r3<substantiv>bunkerolja:bunkerolja:bunkeroljas:bunkeroljan:bunkeroljans:bunkeroljor:bunkeroljors:bunkeroljorna:bunkeroljornas
+960724r4<substantiv>bunkerslag:bunkerslag:bunkerslags:bunkerslaget:bunkerslagets:bunkerslag:bunkerslags:bunkerslagen:bunkerslagens
+COMPOUND(622165, 608035): bunker + slag
+970681r3<substantiv>bunkestarr:bunkestarr:bunkestarrs:bunkestarren:bunkestarrens::::
+753043r4<verb>bunkra:bunkra:bunkrade:bunkrat:bunkrar:bunkra:bunkras:bunkrades:bunkrats:bunkras:bunkrad:bunkrat:bunkrade:bunkrande:
+950252r3<substantiv>bunkring:bunkring:bunkrings:bunkringen:bunkringens:bunkringar:bunkringars:bunkringarna:bunkringarnas
+970685r3<substantiv>bunsenbrännare:bunsenbrännare:bunsenbrännares:bunsenbrännaren:bunsenbrännarens:bunsenbrännare:bunsenbrännares:bunsenbrännarna:bunsenbrännarnas
+550977r4<substantiv>bunt:bunt:bunts:bunten:buntens:buntar:buntars:buntarna:buntarnas
+546341r5<verb>bunta:bunta:buntade:buntat:buntar:bunta:buntas:buntades:buntats:buntas:buntad:buntat:buntade::
+CUSTOM: y n
+606855r3<substantiv>buntband:buntband:buntbands:buntbandet:buntbandets:buntband:buntbands:buntbanden:buntbandens
+606861r3<substantiv>buntbandsverktyg:buntbandsverktyg:buntbandsverktygs:buntbandsverktyget:buntbandsverktygets:buntbandsverktyg:buntbandsverktygs:buntbandsverktygen:buntbandsverktygens
+866474r3<substantiv>buntmakare:buntmakare:buntmakares:buntmakaren:buntmakarens:buntmakare:buntmakares:buntmakarna:buntmakarnas
+970692r3<substantiv>buntning:buntning:buntnings:buntningen:buntningens::::
+CUSTOM: y n
+957382r3<adverb>buntvis:buntvis
+550979r10<substantiv>bur:bur:burs:buren:burens:burar:burars:burarna:burarnas
+CUSTOM: y n
+546342r4<verb>bura:bura:burade:burat:burar:bura:buras:burades:burats:buras:::::
+660859r4<adjektiv>burdus:burdus:burdust:burdusa:burdusa:burdusare:burdusast:burdusaste:burduse
+866483r3<substantiv>burfågel:burfågel:burfågels:burfågeln:burfågelns:burfåglar:burfåglars:burfåglarna:burfåglarnas
+733149r3<substantiv>burgare:burgare:burgares:burgaren:burgarens:burgare:burgares:burgarna:burgarnas
+959755r4<substantiv>burgavel:burgavel:burgavels:burgaveln:burgavelns:burgavlar:burgavlars:burgavlarna:burgavlarnas
+COMPOUND(550979, 562588): bur + gavel
+724839r7<adjektiv>burgen:burgen:burget:burgna:burgna:burgnare:burgnast:burgnaste:burgne::::::::
+970699r3<substantiv>burgenhet:burgenhet:burgenhets:burgenheten:burgenhetens::::
+866491r3<substantiv>burgunder:burgunder:burgunders:burgundern:burgunderns:burgunder:burgunders:burgunderna:burgundernas
+579274r4<adjektiv>burgundisk:burgundisk:burgundiskt:burgundiska:burgundiska::::burgundiske::::::::
+912662r4<substantiv>burhöns:burhöns:burhöns:burhönset:burhönsets:burhöns:burhöns:burhönsen:burhönsens
+COMPOUND(550979, 607354): bur + höns
+550980r16<substantiv>burk:burk:burks:burken:burkens:burkar:burkars:burkarna:burkarnas
+CUSTOM: y y burk
+625097r6<substantiv>burka, burqa:burka, burqa:burkas:burkan:burkans:burkor:burkors:burkorna:burkornas
+DEFINITION 1: Heltäckande dräkt som används av kvinnor i ett fåtal muslimska länder.
+CUSTOM: y n
+888743r4<substantiv>burkaförbud:burkaförbud:burkaförbuds:burkaförbudet:burkaförbudets:burkaförbud:burkaförbuds:burkaförbuden:burkaförbudens
+COMPOUND(625097, 552399): burka, burqa + förbud
+635726r6<adjektiv>burkaklädd:burkaklädd:burkaklätt:burkaklädda:burkaklädda::::::::::::
+950784r4<substantiv>burkböna:::::burkbönor:burkbönors:burkbönorna:burkbönornas
+COMPOUND(550980, 593881): burk + böna
+734896r3<egennamn>Burke:Burke:Burkes
+609364r3<substantiv>burkhållare:burkhållare:burkhållares:burkhållaren:burkhållarens:burkhållare:burkhållares:burkhållarna:burkhållarnas
+CUSTOM: y y burkhållar
+571739r3<adjektiv>burkig:burkig:burkigt:burkiga:burkiga::::
+892242r3<egennamn>Burkina Faso:Burkina Faso:Burkina Fasos
+966449r3<substantiv>burkini:burkini:burkinis:burkinin:burkinins:burkinier:burkiniers:burkinierna:burkiniernas
+579277r3<adjektiv>burkinisk:burkinisk:burkiniskt:burkiniska:burkiniska::::
+970707r3<adjektiv>burkinsk:burkinsk:burkinskt:burkinska:burkinska:!:!:!:burkinske::::::::
+CUSTOM: y n
+930381r4<substantiv>burkmat:burkmat:burkmats:burkmaten:burkmatens:!:!:!:!
+COMPOUND(550980, 556206): burk + mat
+753046r4<substantiv>burköl:burköl:burköls:burkölet:burkölets:burköl:burköls:burkölen:burkölens
+COMPOUND(550980, 553170): burk + öl
+609370r3<substantiv>burköppnare:burköppnare:burköppnares:burköppnaren:burköppnarens:burköppnare:burköppnares:burköppnarna:burköppnarnas
+CUSTOM: y y burköppnar
+970710r6<substantiv>burlesk:burlesk:burlesks:burlesken:burleskens:burlesker:burleskers:burleskerna:burleskernas
+753052r4<adjektiv>burlesk:burlesk:burleskt:burleska:burleska:burleskare:burleskast:burleskaste:burleske
+970729r4<substantiv>burleskdansös:burleskdansös:burleskdansös:burleskdansösen:burleskdansösens:burleskdansöser:burleskdansösers:burleskdansöserna:burleskdansösernas
+COMPOUND(970710, 548571): burlesk + dansös
+866501r3<substantiv>burleskeri:burleskeri:burleskeris:burleskeriet:burleskeriets:burleskerier:burleskeriers:burleskerierna:burleskeriernas
+970738r4<substantiv>burleskklubb:burleskklubb:burleskklubbs:burleskklubben:burleskklubbens:burleskklubbar:burleskklubbars:burleskklubbarna:burleskklubbarnas
+COMPOUND(970710, 551547): burlesk + klubb
+970719r4<substantiv>burleskshow:burleskshow:burleskshows:burleskshowen:burleskshowens:burleskshower:burleskshowers:burleskshowerna:burleskshowernas
+COMPOUND(970710, 628701): burlesk + show
+790323r3<adjektiv>burlindad:burlindad:burlindat:burlindade:burlindade:!:!:!:
+728076r3<egennamn>Burlöv:Burlöv:Burlövs
+CUSTOM: y n Burlövs
+553986r4<egennamn>Burma:Burma:Burmas
+CUSTOM: y n Burma
+874605r4<substantiv>Burmaflykting:Burmaflykting:Burmaflyktings:Burmaflyktingen:Burmaflyktingens:Burmaflyktingar:Burmaflyktingars:Burmaflyktingarna:Burmaflyktingarnas
+COMPOUND(553986, 561529): Burma + flykting
+CUSTOM: n n 
+866509r3<substantiv>burmanska:burmanska:burmanskas:burmanskan:burmanskans:burmanskor:burmanskors:burmanskorna:burmanskornas
+623041r5<substantiv>burmes:burmes:burmes:burmesen:burmesens:burmeser:burmesers:burmeserna:burmesernas
+DEFINITION 1: Person från Burma.
+CUSTOM: y n
+579279r4<adjektiv>burmesisk:burmesisk:burmesiskt:burmesiska:burmesiska::::burmesiske::::::::
+CUSTOM: y n
+970748r3<substantiv>burmesiska:burmesiska:burmesiskas:burmesiskan:burmesiskans:burmesiskor:burmesiskors:burmesiskorna:burmesiskornas
+CUSTOM: y n
+866517r3<substantiv>burnus:burnus:burnus:burnusen:burnusens:burnusar:burnusars:burnusarna:burnusarnas
+CUSTOM: y n
+801236r3<adjektiv>burnusklädd:burnusklädd:burnusklätt:burnusklädda:burnusklädda::::
+625108r4<substantiv>burop:burop:burops:buropet:buropets:burop:burops:buropen:buropens
+COMPOUND(554923, 552845): bu + rop
+CUSTOM: y n
+901015r4<substantiv>burr:burr:burrs:burret:burrets:burr:burrs:burren:burrens
+CUSTOM: y n
+753055r3<verb>burra:burra:burrade:burrat:burrar:burra:::::::::
+CUSTOM: y n
+571742r3<adjektiv>burrhårig:burrhårig:burrhårigt:burrhåriga:burrhåriga::::
+571745r4<adjektiv>burrig:burrig:burrigt:burriga:burriga:burrigare:burrigast:burrigaste:
+797337r3<adjektiv>burschikos:burschikos:burschikost:burschikosa:burschikosa::::
+731804r3<substantiv>burskap:burskap:burskaps:burskapet:burskapets::::
+CUSTOM: y n
+970756r3<substantiv>burskapsbrev:burskapsbrev:burskapsbrevs:burskapsbrevet:burskapsbrevets:burskapsbrev:burskapsbrevs:burskapsbreven:burskapsbrevens
+753059r3<substantiv>burspråk:burspråk:burspråks:burspråket:burspråkets:burspråk:burspråks:burspråken:burspråkens

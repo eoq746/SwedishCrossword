@@ -1,0 +1,664 @@
+erb>nästan:nästan
+619184r5<substantiv>näste:näste:nästes:nästet:nästets:nästen:nästens:nästena:nästenas
+619185r3<adjektiv>nästföljande:nästföljande:nästföljande:nästföljande:nästföljande:!:!:!:
+940810r3<adverb>nästgårds:nästgårds
+619186r3<adverb>nästintill:nästintill
+551744r3<substantiv>nästipp:nästipp:nästipps:nästippen:nästippens:nästippar:nästippars:nästipparna:nästipparnas
+740489r3<substantiv>nästjumbo:nästjumbo:nästjumbos:nästjumbon:nästjumbons::::
+619187r3<adjektiv>nästkommande:nästkommande:nästkommande:nästkommande:nästkommande:!:!:!:
+555819r4<substantiv>nästkusin:nästkusin:nästkusins:nästkusinen:nästkusinens:nästkusiner:nästkusiners:nästkusinerna:nästkusinernas
+DEFINITION 1: föräldrars kusiners barn; syssling; tremänning
+547409r6<verb>nästla:nästla:nästlade:nästlat:nästlar:nästla:nästlas:nästlades:nästlats:nästlas:nästlad:nästlat:nästlade:nästlade:
+CUSTOM: y n
+834043r3<substantiv>nästning:nästning:nästnings:nästningen:nästningens:nästningar:nästningars:nästningarna:nästningarnas
+884508r3<adjektiv>nästnästa:nästnästa:nästnästa:nästnästa:nästnästa:!:!:!:::::::::
+984097r3<substantiv>nästrot:nästrot:nästrots:nästroten:nästrotens::::
+619188r3<substantiv>nästäppa:nästäppa:nästäppas:nästäppan:nästäppans::::
+553514r3<egennamn>Näswall:Näswall:Näswalls
+834051r3<substantiv>näsvinge:näsvinge:näsvinges:näsvingen:näsvingens:näsvingar:näsvingars:näsvingarna:näsvingarnas
+619192r3<adjektiv>näsvis:näsvis:näsvist:näsvisa:näsvisa:näsvisare:näsvisast:näsvisaste:näsvise
+619199r4<substantiv>näsvishet:näsvishet:näsvishets:näsvisheten:näsvishetens:näsvisheter:näsvisheters:näsvisheterna:näsvisheternas
+CUSTOM: y y näsvishets
+555848r35<substantiv>nät:nät:näts:nätet:nätets:nät:näts:näten:nätens
+CUSTOM: y y nät
+890212r5<verb>näta:näta:nätade:nätat:nätar:näta:nätas:nätades:nätats:nätas:nätad:nätat:nätats:nätande:
+DEFINITION 1: Göra mål, dvs bollen hamnar i målets nät.
+965081r4<substantiv>nätampel:nätampel:nätampels:nätampeln:nätampelns:nätamplar:nätamplars:nätamplarna:nätamplarnas
+COMPOUND(555848, 923364): nät + ampel
+962703r4<substantiv>nätbokhandel:nätbokhandel:nätbokhandels:nätbokhandeln:nätbokhandelns:nätbokhandlar:nätbokhandlars:nätbokhandlarna:nätbokhandlarnas
+COMPOUND(555848, 560293): nät + bokhandel
+931984r4<substantiv>nätboll:nätboll:nätbolls:nätbollen:nätbollens:nätbollar:nätbollars:nätbollarna:nätbollarnas
+COMPOUND(555848, 550928): nät + boll
+899734r21<verb>nätdejta:nätdejta:nätdejtade:nätdejtat:nätdejtar:nätdejta:nätdejtas:nätdejtades:nätdejtats:nätdejtas:nätdejtad:nätdejtat:nätdejtade:nätdejtande:
+COMPOUND(555848, 625193): nät + dejta
+957939r4<substantiv>nätdejting:nätdejting:nätdejtings:nätdejtingen:nätdejtingens::::
+COMPOUND(555848, 957933): nät + dejting
+637391r5<substantiv>nätdeklarant:nätdeklarant:nätdeklarants:nätdeklaranten:nätdeklarantens:nätdeklaranter:nätdeklaranters:nätdeklaranterna:nätdeklaranternas
+DEFINITION 1: Person som deklarerar på Internet
+COMPOUND(555848, 548599): nät + deklarant
+731868r4<substantiv>nätelement:nätelement:nätelements:nätelementet:nätelementets:nätelement:nätelements:nätelementen:nätelementens
+COMPOUND(555848, 552343): nät + element
+574922r3<adjektiv>nätformig:nätformig:nätformigt:nätformiga:nätformiga::::
+938833r4<substantiv>näthat:näthat:näthats:näthatet:näthatets::::
+COMPOUND(555848, 558978): nät + hat
+694040r3<substantiv>näthinna:näthinna:näthinnas:näthinnan:näthinnans:näthinnor:näthinnors:näthinnorna:näthinnornas
+CUSTOM: y y näthinne
+599932r3<substantiv>nätkasse:nätkasse:nätkasses:nätkassen:nätkassens:nätkassar:nätkassars:nätkassarna:nätkassarnas
+922651r4<substantiv>nätpoker:nätpoker:nätpokers:nätpokern:nätpokerns::::
+COMPOUND(555848, 686579): nät + poker
+CUSTOM: y n nätpoker
+860649r4<substantiv>nätpris:nätpris:nätpris:nätpriset:nätprisets:nätpris, nätpriser:nätpris, nätprisers:nätprisen, nätpriserna:nätprisens, nätprisernas
+COMPOUND(555848, 595939): nät + pris
+CUSTOM: y n n
+959693r3<substantiv>nätsexhärva:nätsexhärva:nätsexhärvas:nätsexhärvan:nätsexhärvans:nätsexhärvor:nätsexhärvors:nätsexhärvorna:nätsexhärvornas
+931993r4<substantiv>nätspel:nätspel:nätspels:nätspelet:nätspelets:nätspel:nätspels:nätspelen:nätspelens
+COMPOUND(555848, 552956): nät + spel
+597346r3<substantiv>nätspänning:nätspänning:nätspännings:nätspänningen:nätspänningens:nätspänningar:nätspänningars:nätspänningarna:nätspänningarnas
+CUSTOM: y y nätspännings
+620703r3<adverb>nätt:nätt
+571270r4<adjektiv>nätt:nätt:nätt:nätta:nätta:nättare:nättast:nättaste:
+834082r3<substantiv>nättak:nättak:nättaks:nättaket:nättakets:nättak:nättaks:nättaken:nättakens
+834089r3<substantiv>nätthet:nätthet:nätthets:nättheten:nätthetens::::
+952418r3<substantiv>nätting:nätting:nättings:nättingen:nättingens:nättingar:nättingars:nättingarna:nättingarnas
+CUSTOM: n n y
+552714r7<substantiv>nätverk:nätverk:nätverks:nätverket:nätverkets:nätverk:nätverks:nätverken:nätverkens
+CUSTOM: y y nätverks +nätverks
+834102r3<verb>nätverka:nätverka:nätverkade:nätverkat:nätverkar:nätverka:nätverkas:nätverkades:nätverkats:nätverkas::::nätverkande:
+917656r3<substantiv>nätverkande:nätverkande:nätverkandes:nätverkandet:nätverkandets::::
+834094r3<substantiv>nätverkare:nätverkare:nätverkares:nätverkaren:nätverkarens:nätverkare:nätverkares:nätverkarna:nätverkarnas
+942970r4<substantiv>nätverksdisk:nätverksdisk:nätverksdisks:nätverksdisken:nätverksdiskens:nätverksdiskar:nätverksdiskars:nätverksdiskarna:nätverksdiskarnas
+COMPOUND(552714, 559465): nätverk + disk
+587351r3<verb>nätverksplanera:nätverksplanera:nätverksplanerade:nätverksplanerat:nätverksplanerar:nätverksplanera:::::::::
+649816r4<substantiv>nätverksprotokoll:nätverksprotokoll:nätverksprotokolls:nätverksprotokollet:nätverksprotokollets:nätverksprotokoll:nätverksprotokolls:nätverksprotokollen:nätverksprotokollens
+COMPOUND(552714, 552797): nätverk + protokoll
+649824r4<substantiv>nätverkstekniker:nätverkstekniker:nätverksteknikers:nätverksteknikern:nätverksteknikerns:nätverkstekniker:nätverksteknikers:nätverksteknikerna:nätverksteknikernas
+COMPOUND(552714, 610333): nätverk + tekniker
+904732r3<substantiv>näva:näva:nävas:nävan:nävans:nävor:nävors:nävorna:nävornas
+CUSTOM: n n y
+599940r3<substantiv>näve:näve:näves:näven:nävens:nävar:nävars:nävarna:nävarnas
+737133r7<substantiv>näver:näver:nävers:nävern:näverns:nävrar:nävrars:nävrarna:nävrarnas
+CUSTOM: y n
+560572r6<substantiv>näverkorg:näverkorg:näverkorgs:näverkorgen:näverkorgens:näverkorgar:näverkorgars:näverkorgarna:näverkorgarnas
+COMPOUND(737133, 551586): näver + korg
+851600r3<substantiv>näverlur:näverlur:näverlurs:näverluren:näverlurens:näverlurar:näverlurars:näverlurarna:näverlurarnas
+737124r4<substantiv>näverryggsäck:näverryggsäck:näverryggsäcks:näverryggsäcken:näverryggsäckens:näverryggsäckar:näverryggsäckars:näverryggsäckarna:näverryggsäckarnas
+COMPOUND(737133, 551816): näver + ryggsäck
+585354r6<substantiv>näverslöjd:näverslöjd:näverslöjds:näverslöjden:näverslöjdens::::
+COMPOUND(737133, 637302): näver + slöjd
+834111r3<substantiv>nävgröt:nävgröt:nävgröts:nävgröten:nävgrötens::::
+619203r20<substantiv>nöd:nöd:nöds:nöden:nödens::::
+CUSTOM: y n
+761901r4<substantiv>nödanrop:nödanrop:nödanrops:nödanropet:nödanropets:nödanrop:nödanrops:nödanropen:nödanropens
+COMPOUND(619203, 552177): nöd + anrop
+761337r4<adjektiv>nödbedd:nödbedd:nödbett:nödbedda:nödbedda::::nödbedde
+834116r3<adjektiv>nödbjuden:nödbjuden:nödbjudet:nödbjudna:nödbjudna::::
+834119r4<substantiv>nödbostad:nödbostad:nödbostads:nödbostaden:nödbostadens:nödbostäder:nödbostäders:nödbostäderna:nödbostädernas
+COMPOUND(619203, 637078): nöd + bostad
+761329r4<substantiv>nödbroms:nödbroms:nödbroms:nödbromsen:nödbromsens:nödbromsar:nödbromsars:nödbromsarna:nödbromsarnas
+CUSTOM: y y nödbroms
+761409r3<verb>nödbromsa:nödbromsa:nödbromsade:nödbromsat:nödbromsar:nödbromsa:nödbromsas:nödbromsades:nödbromsats:nödbromsas::::nödbromsande:
+834127r3<substantiv>nödbromsventil::::::::
+COMPOUND(761329, 550765): nödbroms + ventil
+834128r4<substantiv>nödcentral:nödcentral:nödcentrals:nödcentralen:nödcentralens:nödcentraler:nödcentralers:nödcentralerna:nödcentralernas
+COMPOUND(619203, 548519): nöd + central
+619205r3<adjektiv>nödd:nödd:nödda::::::
+761340r3<substantiv>nöddop:nöddop:nöddops:nöddopet:nöddopets:nöddop:nöddops:nöddopen:nöddopens
+834136r3<substantiv>nöddrift:nöddrift:nöddrifts:nöddriften:nöddriftens::::
+694041r4<substantiv>nödfall:nödfall:nödfalls:nödfallet:nödfallets:nödfall:nödfalls:nödfallen:nödfallens
+CUSTOM: y y nödfalls
+761336r3<substantiv>nödfallsåtgärd::::::::
+COMPOUND(694041, 550810): nödfall + åtgärd
+834140r3<substantiv>nödflagg:nödflagg:nödflaggs:nödflaggen:nödflaggens::::
+834144r3<substantiv>nödfoder:nödfoder:nödfoders:nödfodret:nödfodrets::::
+547410r4<verb>nödga:nödga:nödgade:nödgat:nödgar:nödga:nödgas:nödgades:nödgats:nödgas:nödgad:nödgat:nödgade::
+CUSTOM: y n
+761346r4<substantiv>nödhamn:nödhamn:nödhamns:nödhamnen:nödhamnens:nödhamnar:nödhamnars:nödhamnarna:nödhamnarnas
+COMPOUND(619203, 551369): nöd + hamn
+761354r4<substantiv>nödhjälp:nödhjälp:nödhjälps:nödhjälpen:nödhjälpens::::
+CUSTOM: y y nödhjälps
+834148r3<substantiv>nödhjälpsarbete::::::::
+COMPOUND(761354, 612263): nödhjälp + arbete
+574925r4<adjektiv>nödig:nödig:nödigt:nödiga:nödiga:nödigare:nödigast:nödigaste:nödige
+761358r5<verb>nödlanda:nödlanda:nödlandade:nödlandat:nödlandar:nödlanda:nödlandas:nödlandades:nödlandats:nödlandas::::nödlandande:
+761362r4<substantiv>nödlandning:nödlandning:nödlandnings:nödlandningen:nödlandningens:nödlandningar:nödlandningars:nödlandningarna:nödlandningarnas
+CUSTOM: y y nödlandnings
+761370r3<substantiv>nödlandningsplats::::::::
+COMPOUND(761362, 550210): nödlandning + plats
+694047r3<adjektiv>nödlidande:nödlidande:nödlidande:nödlidande:nödlidande:!:!:!:
+854642r4<substantiv>nödlån:nödlån:nödlåns:nödlånet:nödlånets:nödlån:nödlåns:nödlånen:nödlånens
+COMPOUND(619203, 552679): nöd + lån
+694048r3<substantiv>nödläge:nödläge:nödläges:nödläget:nödlägets:nödlägen:nödlägens:nödlägena:nödlägenas
+694056r4<substantiv>nödlögn:nödlögn:nödlögns:nödlögnen:nödlögnens:nödlögner:nödlögners:nödlögnerna:nödlögnernas
+COMPOUND(619203, 549974): nöd + lögn
+694064r4<substantiv>nödlösning:nödlösning:nödlösnings:nödlösningen:nödlösningens:nödlösningar:nödlösningars:nödlösningarna:nödlösningarnas
+COMPOUND(619203, 597256): nöd + lösning
+CUSTOM: y y nödlösnings
+694079r3<substantiv>nödmynt:nödmynt:nödmynts:nödmyntet:nödmyntets:nödmynt:nödmynts:nödmynten:nödmyntens
+834156r3<substantiv>nödnummer:nödnummer:nödnummers:nödnumret:nödnumrets:nödnummer:nödnummers:nödnumren:nödnumrens
+694065r4<substantiv>nödraket:nödraket:nödrakets:nödraketen:nödraketens:nödraketer:nödraketers:nödraketerna:nödraketernas
+COMPOUND(619203, 550310): nöd + raket
+676650r4<substantiv>nödrim:nödrim:nödrims:nödrimmet:nödrimmets:nödrim:nödrims:nödrimmen:nödrimmens
+COMPOUND(619203, 621838): nöd + rim
+694073r4<substantiv>nödrop:nödrop:nödrops:nödropet:nödropets:nödrop:nödrops:nödropen:nödropens
+COMPOUND(619203, 552845): nöd + rop
+761372r3<substantiv>nödrätt:nödrätt:nödrätts:nödrätten:nödrättens::::
+547411r4<verb>nödsaka:nödsaka:nödsakade:nödsakat:nödsakar:nödsaka:::::nödsakad:nödsakat:nödsakade::
+694085r3<deponens>nödsakas:nödsakas:nödsakades:nödsakats:nödsakas:
+906695r3<substantiv>nödsamtal:nödsamtal:nödsamtals:nödsamtalet:nödsamtalets:nödsamtal:nödsamtals:nödsamtalen:nödsamtalens
+834162r3<substantiv>nödsegel:nödsegel:nödsegels:nödseglet:nödseglets:nödsegel:nödsegels:nödseglen:nödseglens
+761376r3<substantiv>nödsignal:nödsignal:nödsignals:nödsignalen:nödsignalens:nödsignaler:nödsignalers:nödsignalerna:nödsignalernas
+761384r4<substantiv>nödsituation:nödsituation:nödsituations:nödsituationen:nödsituationens:nödsituationer:nödsituationers:nödsituationerna:nödsituationernas
+COMPOUND(619203, 603507): nöd + situation
+761392r4<substantiv>nödslakt:nödslakt:nödslakts:nödslakten:nödslaktens:nödslakter:nödslakters:nödslakterna:nödslakternas
+COMPOUND(619203, 556905): nöd + slakt
+834169r4<verb>nödslakta:nödslakta:nödslaktade:nödslaktat:nödslaktar:nödslakta:nödslaktas:nödslaktades:nödslaktats:nödslaktas:nödslaktad:nödslaktat:nödslaktade::
+COMPOUND(619203, 547694): nöd + slakta
+761400r3<substantiv>nödstopp:nödstopp:nödstopps:nödstoppet:nödstoppets:nödstopp:nödstopps:nödstoppen:nödstoppens
+694086r4<adjektiv>nödställd:nödställd:nödställt:nödställda:nödställda::::nödställde
+834178r3<substantiv>nödställdhet:nödställdhet:nödställdhets:nödställdheten:nödställdhetens::::
+834182r3<substantiv>nödsändare:nödsändare:nödsändares:nödsändaren:nödsändarens:nödsändare:nödsändares:nödsändarna:nödsändarnas
+890082r3<substantiv>nödtestamente:nödtestamente:nödtestamentes:nödtestamentet:nödtestamentets:nödtestamenten:nödtestamentens:nödtestamentena:nödtestamentenas
+694088r3<substantiv>nödtorft:nödtorft:nödtorfts:nödtorften:nödtorftens:!:!:!:!
+574926r3<adjektiv>nödtorftig:nödtorftig:nödtorftigt:nödtorftiga:nödtorftiga::::
+694094r3<adjektiv>nödtvungen:nödtvungen:nödtvunget:nödtvungna:nödtvungna::::
+694090r3<substantiv>nödtvång:nödtvång:nödtvångs:nödtvånget:nödtvångets::::
+694097r4<substantiv>nödutgång:nödutgång:nödutgångs:nödutgången:nödutgångens:nödutgångar:nödutgångars:nödutgångarna:nödutgångarnas
+COMPOUND(619203, 552076): nöd + utgång
+597354r3<substantiv>nödutrustning:nödutrustning:nödutrustnings:nödutrustningen:nödutrustningens:nödutrustningar:nödutrustningars:nödutrustningarna:nödutrustningarnas
+CUSTOM: y y nödutrustnings
+761910r3<adjektiv>nödvuxen:nödvuxen:nödvuxet:nödvuxna:nödvuxna::::
+563116r6<adjektiv>nödvändig:nödvändig:nödvändigt:nödvändiga:nödvändiga:nödvändigare:nödvändigast:nödvändigaste:nödvändige
+CUSTOM: y y nödvändig
+834189r4<verb>nödvändiggöra:nödvändiggöra:nödvändiggjorde:nödvändiggjort:nödvändiggör:nödvändiggör:nödvändiggöras:nödvändiggjordes:nödvändiggjorts:nödvändiggörs, nödvändiggöres:nödvändiggjord:nödvändiggjort:nödvändiggjorda:nödvändiggörande:
+COMPOUND(563116, 555241): nödvändig + göra
+694105r4<substantiv>nödvändighet:nödvändighet:nödvändighets:nödvändigheten:nödvändighetens:nödvändigheter:nödvändigheters:nödvändigheterna:nödvändigheternas
+CUSTOM: y y nödvändighets
+761406r3<substantiv>nödvändighetsartikel::::::::
+COMPOUND(694105, 616111): nödvändighet + artikel
+620704r3<adverb>nödvändigtvis:nödvändigtvis
+694111r4<substantiv>nödvärn:nödvärn:nödvärns:nödvärnet:nödvärnets::::
+CUSTOM: y y nödvärns
+694115r4<substantiv>nödvärnsrätt:nödvärnsrätt:nödvärnsrätts:nödvärnsrätten:nödvärnsrättens:!:!:!:!
+COMPOUND(694111, 603413): nödvärn + rätt
+758611r4<substantiv>nödår:nödår:nödårs:nödåret:nödårets:nödår:nödårs:nödåren:nödårens
+COMPOUND(619203, 553140): nöd + år
+694119r5<substantiv>nödåtgärd:nödåtgärd:nödåtgärds:nödåtgärden:nödåtgärdens:nödåtgärder:nödåtgärders:nödåtgärderna:nödåtgärdernas
+COMPOUND(619203, 550810): nöd + åtgärd
+CUSTOM: y y nödåtgärds
+761407r3<substantiv>nödåtgärdskedja::::::::
+COMPOUND(694119, 559717): nödåtgärd + kedja
+624576r7<verb>nöja:nöja:nöjde:nöjt:nöjer:nöj:!::!:!:!:!:!:!:
+574927r3<adjektiv>nöjaktig:nöjaktig:nöjaktigt:nöjaktiga:nöjaktiga::::
+694127r3<substantiv>nöjaktighet:nöjaktighet:nöjaktighets:nöjaktigheten:nöjaktighetens::::
+CUSTOM: y y nöjaktighets
+694131r3<deponens>nöjas:nöjas:nöjdes:nöjts:nöjs:
+619207r5<adjektiv>nöjd:nöjd:nöjt:nöjda:nöjda:nöjdare:nöjdast:nöjdaste:nöjde::::::::
+834201r3<substantiv>nöjdförklaring:nöjdförklaring:nöjdförklarings:nöjdförklaringen:nöjdförklaringens:nöjdförklaringar:nöjdförklaringars:nöjdförklaringarna:nöjdförklaringarnas
+877153r3<substantiv>nöjdhet:nöjdhet:nöjdhets:nöjdheten:nöjdhetens::::
+CUSTOM: y y nöjdhets
+612760r10<substantiv>nöje:nöje:nöjes:nöjet:nöjets:nöjen:nöjens:nöjena:nöjenas
+CUSTOM: y y nöjes
+734943r4<substantiv>nöjesbransch:nöjesbransch:nöjesbranschs:nöjesbranschen:nöjesbranschens:nöjesbranscher:nöjesbranschers:nöjesbranscherna:nöjesbranschernas
+COMPOUND(612760, 548446): nöje + bransch
+934508r4<substantiv>nöjesbåt:nöjesbåt:nöjesbåts:nöjesbåten:nöjesbåtens:nöjesbåtar:nöjesbåtars:nöjesbåtarna:nöjesbåtarnas
+COMPOUND(612760, 550993): nöje + båt
+607772r3<substantiv>nöjesfält:nöjesfält:nöjesfälts:nöjesfältet:nöjesfältets:nöjesfält:nöjesfälts:nöjesfälten:nöjesfältens
+694135r3<substantiv>nöjesguide:nöjesguide:nöjesguides:nöjesguiden:nöjesguidens::::
+952426r4<verb>nöjesköra:nöjesköra:nöjeskörde:nöjeskört:nöjeskör:nöjeskör:nöjesköras:nöjeskördes:nöjeskörts:nöjeskörs, nöjesköres:nöjeskörd:nöjeskört:nöjeskörda:nöjeskörande:
+COMPOUND(612760, 556899): nöje + köra
+722342r4<substantiv>nöjesliv:nöjesliv:nöjeslivs:nöjeslivet:nöjeslivets:nöjesliv:nöjeslivs:nöjesliven:nöjeslivens
+COMPOUND(612760, 552667): nöje + liv
+875726r3<substantiv>nöjeslystnad:nöjeslystnad:nöjeslystnads:nöjeslystnaden:nöjeslystnadens:nöjeslystnader:nöjeslystnaders:nöjeslystnaderna:nöjeslystnadernas
+675212r4<substantiv>nöjespappa:nöjespappa:nöjespappas:nöjespappan:nöjespappans:nöjespappor:nöjespappors:nöjespapporna:nöjespappornas
+COMPOUND(612760, 594864): nöje + pappa
+603020r3<substantiv>nöjespark:nöjespark:nöjesparks:nöjesparken:nöjesparkens:nöjesparker:nöjesparkers:nöjesparkerna:nöjesparkernas
+734951r4<substantiv>nöjesresa:nöjesresa:nöjesresas:nöjesresan:nöjesresans:nöjesresor:nöjesresors:nöjesresorna:nöjesresornas
+COMPOUND(612760, 594958): nöje + resa
+734959r3<substantiv>nöjesvärld:nöjesvärld:nöjesvärlds:nöjesvärlden:nöjesvärldens:nöjesvärldar:nöjesvärldars:nöjesvärldarna:nöjesvärldarnas
+563444r3<adjektiv>nöjsam:nöjsam:nöjsamt:nöjsamma:nöjsamma::::
+764575r3<substantiv>nörd:nörd:nörds:nörden:nördens:nördar:nördars:nördarna:nördarnas
+872730r3<adjektiv>nördig:nördig:nördigt:nördiga:nördiga:nördigare:nördigast:nördigaste:nördige
+726050r6<substantiv>nöt:nöt:nöts:nötet:nötets:nöt:nöts:nöten:nötens
+CUSTOM: y n
+561944r16<substantiv>nöt:nöt:nöts:nöten:nötens:nötter:nötters:nötterna:nötternas
+CUSTOM: y n
+624577r4<verb>nöta:nöta:nötte:nött:nöter:nöt:nötas:nöttes:nötts:nöts:nött:nött:nötta:nötande:
+574928r3<adjektiv>nötaktig:nötaktig:nötaktigt:nötaktiga:nötaktiga::::
+890886r3<substantiv>nötallergi:nötallergi:nötallergis:nötallergin:nötallergins::::
+890892r4<substantiv>nötallergiker:nötallergiker:nötallergikers:nötallergikern:nötallergikerns:nötallergiker:nötallergikers:nötallergikerna:nötallergikernas
+COMPOUND(561944, 610275): nöt + allergiker
+956277r3<substantiv>nötboskap:nötboskap:nötboskaps:nötboskapen:nötboskapens::::
+802313r4<substantiv>nötbotten:nötbotten:nötbottens:::nötbottnar:nötbottnars:nötbottnarna:nötbottnarnas
+COMPOUND(561944, 643247): nöt + botten
+726053r4<substantiv>nötdjur:nötdjur:nötdjurs:nötdjuret:nötdjurets:nötdjur:nötdjurs:nötdjuren:nötdjurens
+COMPOUND(726050, 552322): nöt + djur
+707320r5<substantiv>nötfärs:nötfärs:nötfärs:nötfärsen:nötfärsens:nötfärser:nötfärsers:nötfärserna:nötfärsernas
+COMPOUND(726050, 562218): nöt + färs
+901158r3<adjektiv>nötig:nötig:nötigt:nötiga:nötiga:nötigare:nötigast:nötigaste:!:!:!:!:!:!:!:!:!
+890924r4<substantiv>nötkaka:nötkaka:nötkakas:nötkakan:nötkakans:nötkakor:nötkakors:nötkakorna:nötkakornas
+COMPOUND(561944, 555243): nöt + kaka
+CUSTOM: y n n
+740494r3<substantiv>nötknäppare:nötknäppare:nötknäppares:nötknäpparen:nötknäpparens:nötknäppare:nötknäppares:nötknäpparna:nötknäpparnas
+726044r5<substantiv>nötkreatur:nötkreatur:nötkreaturs:nötkreaturet:nötkreaturets:nötkreatur:nötkreaturs:nötkreaturen:nötkreaturens
+COMPOUND(726050, 552583): nöt + kreatur
+984101r4<substantiv>nötkreatursras:nötkreatursras:nötkreatursras:nötkreatursrasen:nötkreatursrasens:nötkreatursraser:nötkreatursrasers:nötkreatursraserna:nötkreatursrasernas
+COMPOUND(726044, 550316): nötkreatur + ras
+984108r3<substantiv>nötkråka:nötkråka:nötkråkas:nötkråkan:nötkråkans:nötkråkor:nötkråkors:nötkråkorna:nötkråkornas
+707739r3<substantiv>nötkärna:nötkärna:nötkärnas:nötkärnan:nötkärnans:nötkärnor:nötkärnors:nötkärnorna:nötkärnornas
+740500r3<substantiv>nötkött:nötkött:nötkötts:nötköttet:nötköttets::::
+CUSTOM: y y nötkötts
+736926r3<substantiv>nötning:nötning:nötnings:nötningen:nötningens:nötningar:nötningars:nötningarna:nötningarnas
+574931r3<adjektiv>nötningsbeständig:nötningsbeständig:nötningsbeständigt:nötningsbeständiga:nötningsbeständiga::::
+574934r3<adjektiv>nötningshärdig:nötningshärdig:nötningshärdigt:nötningshärdiga:nötningshärdiga::::
+566833r3<adjektiv>nötningstålig:nötningstålig:nötningståligt:nötningståliga:nötningståliga::::
+702643r3<substantiv>nötskal:nötskal:nötskals:nötskalet:nötskalets:nötskal:nötskals:nötskalen:nötskalens
+622473r3<substantiv>nötskrika:nötskrika:nötskrikas:nötskrikan:nötskrikans:nötskrikor:nötskrikors:nötskrikorna:nötskrikornas
+923186r4<substantiv>nöttårta:nöttårta:nöttårtas:nöttårtan:nöttårtans:nöttårtor:nöttårtors:nöttårtorna:nöttårtornas
+COMPOUND(561944, 595678): nöt + tårta
+757612r3<substantiv>nötväcka:nötväcka:nötväckas:nötväckan:nötväckans:nötväckor:nötväckors:nötväckorna:nötväckornas
+624278r4<interjektion>o:o
+CUSTOM: y n
+765455r3<adjektiv>oaccentuerad:oaccentuerad:oaccentuerat:oaccentuerade:oaccentuerade:!:!:!:
+570834r3<adjektiv>oacceptabel:oacceptabel:oacceptabelt:oacceptabla:oacceptabla::::
+566836r3<adjektiv>oadlig:oadlig:oadligt:oadliga:oadliga::::
+648914r3<adjektiv>oadresserad:oadresserad:oadresserat:oadresserade:oadresserade:!:!:!:
+646982r3<adjektiv>oaffekterad:oaffekterad:oaffekterat:oaffekterade:oaffekterade:!:!:!:
+582391r3<adjektiv>oakademisk:oakademisk:oakademiskt:oakademiska:oakademiska::::
+620471r3<konjunktion>oaktat:oaktat
+563447r3<adjektiv>oaktsam:oaktsam:oaktsamt:oaktsamma:oaktsamma::::
+619208r3<substantiv>oaktsamhet:oaktsamhet:oaktsamhets:oaktsamheten:oaktsamhetens::::
+CUSTOM: y y oaktsamhets
+646985r3<adjektiv>oamerikansk:oamerikansk:oamerikanskt:oamerikanska:oamerikanska::::
+619209r3<adjektiv>oanad:oanad:oanat:oanade:oanade:!:!:!:
+569460r3<adjektiv>oanalyserbar:oanalyserbar:oanalyserbart:oanalyserbara:oanalyserbara::::
+566839r3<adjektiv>oandlig:oandlig:oandligt:oandliga:oandliga::::
+646988r3<adjektiv>oanfrätt:oanfrätt:oanfrätt:oanfrätta:oanfrätta::::
+765458r3<adjektiv>oanfäktad:oanfäktad:oanfäktat:oanfäktade:oanfäktade:!:!:!:
+569463r3<adjektiv>oanfäktbar:oanfäktbar:oanfäktbart:oanfäktbara:oanfäktbara::::
+566842r3<adjektiv>oanfäktlig:oanfäktlig:oanfäktligt:oanfäktliga:oanfäktliga::::
+646990r3<adjektiv>oangenäm:oangenäm:oangenämt:oangenäma:oangenäma:oangenämare:oangenämast:oangenämaste:
+569466r3<adjektiv>oangripbar:oangripbar:oangripbart:oangripbara:oangripbara::::
+566845r3<adjektiv>oangriplig:oangriplig:oangripligt:oangripliga:oangripliga::::
+740504r3<adjektiv>oanmäld:oanmäld:oanmält:oanmälda:oanmälda::::
+646996r3<adjektiv>oannonserad:oannonserad:oannonserat:oannonserade:oannonserade:!:!:!:
+765461r3<adjektiv>oanpassad:oanpassad:oanpassat:oanpassade:oanpassade:!:!:!:
+646999r3<adjektiv>oansad:oansad:oansat:oansade:oansade:!:!:!:
+566848r5<adjektiv>oansenlig:oansenlig:oansenligt:oansenliga:oansenliga:oansenligare:oansenligast:oansenligaste:oansenlige
+569469r3<adjektiv>oanskaffbar:oanskaffbar:oanskaffbart:oanskaffbara:oanskaffbara::::
+574937r3<adjektiv>oanständig:oanständig:oanständigt:oanständiga:oanständiga::::
+623698r3<substantiv>oanständighet:oanständighet:oanständighets:oanständigheten:oanständighetens:oanständigheter:oanständigheters:oanständigheterna:oanständigheternas
+CUSTOM: y y oanständighets
+574938r4<adjektiv>oansvarig:oansvarig:oansvarigt:oansvariga:oansvariga::::oansvarige
+892351r3<substantiv>oansvarighet:oansvarighet:oansvarighets:oansvarigheten:oansvarighetens::::
+569472r3<adjektiv>oantagbar:oantagbar:oantagbart:oantagbara:oantagbara::::
+566849r3<adjektiv>oantaglig:oantaglig:oantagligt:oantagliga:oantagliga::::
+765464r3<adjektiv>oantastad:oantastad:oantastat:oantastade:oantastade:!:!:!:
+569475r3<adjektiv>oantastbar:oantastbar:oantastbart:oantastbara:oantastbara::::
+566852r3<adjektiv>oantastlig:oantastlig:oantastligt:oantastliga:oantastliga::::
+647002r3<substantiv>oantastlighet:oantastlighet:oantastlighets:oantastligheten:oantastlighetens:!:!:!:!
+CUSTOM: y y oantastlighets
+765467r3<adjektiv>oanträffad:oanträffad:oanträffat:oanträffade:oanträffade:!:!:!:
+569478r3<adjektiv>oanträffbar:oanträffbar:oanträffbart:oanträffbara:oanträffbara::::
+569481r3<adjektiv>oantändbar:oantändbar:oantändbart:oantändbara:oantändbara::::
+566853r3<adjektiv>oantändlig:oantändlig:oantändligt:oantändliga:oantändliga::::
+647006r3<adjektiv>oanvänd:oanvänd:oanvänt:oanvända:oanvända:!:!:!:!
+569484r3<adjektiv>oanvändbar:oanvändbar:oanvändbart:oanvändbara:oanvändbara::::
+566856r3<adjektiv>oaptitlig:oaptitlig:oaptitligt:oaptitliga:oaptitliga::::
+793684r3<adjektiv>oarbetad:oarbetad:oarbetat:oarbetade:oarbetade:!:!:!:
+765470r3<adjektiv>oarmerad:oarmerad:oarmerat:oarmerade:oarmerade:!:!:!:
+574939r3<adjektiv>oartig:oartig:oartigt:oartiga:oartiga::::
+757620r3<substantiv>oartighet:oartighet:oartighets:oartigheten:oartighetens:oartigheter:oartigheters:oartigheterna:oartigheternas
+740507r3<adjektiv>oartikulerad:oartikulerad:oartikulerat:oartikulerade:oartikulerade:!:!:!:
+550100r3<substantiv>oas:oas:oas:oasen:oasens:oaser:oasers:oaserna:oasernas
+793687r3<adjektiv>oassurerad:oassurerad:oassurerat:oassurerade:oassurerade:!:!:!:
+917661r3<adjektiv>oattackerad:oattackerad:oattackerat:oattackerade:oattackerade:!:!:!:::::::::
+765473r3<adjektiv>oattesterad:oattesterad:oattesterat:oattesterade:oattesterade:!:!:!:
+734113r3<adjektiv>oattraktiv:oattraktiv:oattraktivt:oattraktiva:oattraktiva:oattraktivare:oattraktivast:oattraktivaste:oattraktive
+917666r3<adjektiv>oauktoriserad:oauktoriserad:oauktoriserat:oauktoriserade:oauktoriserade:!:!:!:::::::::
+647007r3<adjektiv>oavbruten:oavbruten:oavbrutet:oavbrutna:oavbrutna:!:!:!:
+570693r3<adjektiv>oavgjord:oavgjord:oavgjort:oavgjorda:oavgjorda::::
+569485r3<adjektiv>oavhändbar:oavhändbar:oavhändbart:oavhändbara:oavhändbara::::
+566859r3<adjektiv>oavhändlig:oavhändlig:oavhändligt:oavhändliga:oavhändliga::::
+574942r3<adjektiv>oavhängig:oavhängig:oavhängigt:oavhängiga:oavhängiga::::
+647008r3<substantiv>oavhängighet:oavhängighet:oavhängighets:oavhängigheten:oavhängighetens::::
+CUSTOM: y y oavhängighets
+647012r3<adjektiv>oavkortad:oavkortad:oavkortat:oavkortade:oavkortade:!:!:!:
+949264r3<adjektiv>oavlyssnad:oavlyssnad:oavlyssnat:oavlyssnade:oavlyssnade:!:!:!:::::::::
+566862r3<adjektiv>oavlåtlig:oavlåtlig:oavlåtligt:oavlåtliga:oavlåtliga::::
+555289r7<adverb>oavlåtligen:oavlåtligen
+647013r3<adjektiv>oavlönad:oavlönad:oavlönat:oavlönade:oavlönade:!:!:!:
+647014r3<adjektiv>oavsedd:oavsedd:oavsett:oavsedda:oavsedda::::
+634555r3<preposition>oavsett:oavsett
+566863r3<adjektiv>oavsiktlig:oavsiktlig:oavsiktligt:oavsiktliga:oavsiktliga::::
+897619r3<adverb>oavsiktligen:oavsiktligen
+647015r3<adjektiv>oavslutad:oavslutad:oavslutat:oavslutade:oavslutade:!:!:!:
+566864r3<adjektiv>oavslutlig:oavslutlig:oavslutligt:oavslutliga:oavslutliga::::
+770786r3<adjektiv>oavslöjad:oavslöjad:oavslöjat:oavslöjade:oavslöjade:!:!:!:
+765476r3<adjektiv>oavstämd:oavstämd:oavstämt:oavstämda:oavstämda::::
+569488r3<adjektiv>oavsättbar:oavsättbar:oavsättbart:oavsättbara:oavsättbara::::
+566867r3<adjektiv>oavsättlig:oavsättlig:oavsättligt:oavsättliga:oavsättliga::::
+765479r3<adjektiv>oavverkad:oavverkad:oavverkat:oavverkade:oavverkade:!:!:!:
+569491r3<adjektiv>oavvisbar:oavvisbar:oavvisbart:oavvisbara:oavvisbara::::
+566870r3<adjektiv>oavvislig:oavvislig:oavvisligt:oavvisliga:oavvisliga::::
+765482r3<adjektiv>oavvittrad:oavvittrad:oavvittrat:oavvittrade:oavvittrade:!:!:!:
+647016r3<adjektiv>oavvänd:oavvänd:oavvänt:oavvända:oavvända:!:!:!:
+569494r3<adjektiv>oavvändbar:oavvändbar:oavvändbart:oavvändbara:oavvändbara::::
+566873r3<adjektiv>oavytterlig:oavytterlig:oavytterligt:oavytterliga:oavytterliga::::
+605625r3<substantiv>obalans:obalans:obalans:obalansen:obalansens:obalanser:obalansers:obalanserna:obalansernas
+647017r3<adjektiv>obalanserad:obalanserad:obalanserat:obalanserade:obalanserade:!:!:!:
+720608r3<egennamn>Obama:Obama:Obamas
+CUSTOM: y n Obama
+793690r3<adjektiv>obanad:obanad:obanat:obanade:obanade:!:!:!:
+793693r3<adjektiv>obarkad:obarkad:obarkat:obarkade:obarkade:!:!:!:
+574945r3<adjektiv>obarmhärtig:obarmhärtig:obarmhärtigt:obarmhärtiga:obarmhärtiga::::
+647018r3<substantiv>obarmhärtighet:obarmhärtighet:obarmhärtighets:obarmhärtigheten:obarmhärtighetens::::
+CUSTOM: y y obarmhärtighets
+647019r3<substantiv>obducent:obducent:obducents:obducenten:obducentens:obducenter:obducenters:obducenterna:obducenternas
+587355r4<verb>obducera:obducera:obducerade:obducerat:obducerar:obducera:obduceras:obducerades:obducerats:obduceras:obducerad:obducerat:obducerade:obducerande:
+550101r3<substantiv>obduktion:obduktion:obduktions:obduktionen:obduktionens:obduktioner:obduktioners:obduktionerna:obduktionernas
+CUSTOM: y y obduktions
+765485r3<adjektiv>obeaktad:obeaktad:obeaktat:obeaktade:obeaktade:!:!:!:
+647027r3<adjektiv>obearbetad:obearbetad:obearbetat:obearbetade:obearbetade:!:!:!:
+569497r3<adjektiv>obearbetbar:obearbetbar:obearbetbart:obearbetbara:obearbetbara::::
+571285r3<adjektiv>obebodd:obebodd:obebott:obebodda:obebodda::::
+566876r3<adjektiv>obeboelig:obeboelig:obeboeligt:obeboeliga:obeboeliga::::
+740510r3<adjektiv>obebyggd:obebyggd:obebyggt:obebyggda:obebyggda:!:!:!:
+647028r3<adjektiv>obedd:obedd:obett:obedda:obedda::::
+CUSTOM: y n
+917671r3<adjektiv>obedövad:obedövad:obedövat:obedövade:obedövade:!:!:!:::::::::
+793696r3<adjektiv>obeedigad:obeedigad:obeedigat:obeedigade:obeedigade:!:!:!:
+566877r3<adjektiv>obefintlig:obefintlig:obefintligt:obefintliga:obefintliga::::
+647029r3<adjektiv>obefläckad:obefläckad:obefläckat:obefläckade:obefläckade:!:!:!:
+647032r3<adjektiv>obefogad:obefogad:obefogat:obefogade:obefogade:!:!:!:
+765488r3<adjektiv>obefolkad:obefolkad:obefolkat:obefolkade:obefolkade:!:!:!:
+765491r3<adjektiv>obefordrad:obefordrad:obefordrat:obefordrade:obefordrade:!:!:!:
+763149r3<adjektiv>obefryndad:obefryndad:obefryndat:obefryndade:obefryndade:!:!:!:
+984116r3<adjektiv>obefäst:obefäst:obefäst:obefästa:obefästa::::::::::::
+CUSTOM: y n
+765494r3<adjektiv>obegagnad:obegagnad:obegagnat:obegagnade:obegagnade:!:!:!:
+765501r3<adjektiv>obegravd:obegravd:obegravt:obegravda:obegravda::::
+CUSTOM: y n
+566878r4<adjektiv>obegriplig:obegriplig:obegripligt:obegripliga:obegripliga:obegripligare:obegripligast:obegripligaste:
+740513r3<substantiv>obegriplighet:obegriplighet:obegriplighets:obegripligheten:obegriplighetens:obegripligheter:obegripligheters:obegripligheterna:obegripligheternas
+647033r3<adjektiv>obegränsad:obegränsad:obegränsat:obegränsade:obegränsade:!:!:!:
+647034r3<adjektiv>obegåvad:obegåvad:obegåvat:obegåvade:obegåvade:!:!:!:
+552715r3<substantiv>obehag:obehag:obehags:obehaget:obehagets:obehag:obehags:obehagen:obehagens
+CUSTOM: y y obehags
+566879r5<adjektiv>obehaglig:obehaglig:obehagligt:obehagliga:obehagliga:obehagligare:obehagligast:obehagligaste:obehaglige
+700639r3<substantiv>obehaglighet:obehaglighet:obehaglighets:obehagligheten:obehaglighetens:obehagligheter:obehagligheters:obehagligheterna:obehagligheternas
+CUSTOM: y y obehaglighets
+647037r3<substantiv>obehagskänsla:obehagskänsla:obehagskänslas:obehagskänslan:obehagskänslans::::
+647038r3<adjektiv>obehandlad:obehandlad:obehandlat:obehandlade:obehandlade:!:!:!:
+647039r3<adjektiv>obehindrad:obehindrad:obehindrat:obehindrade:obehindrade:!:!:!:
+574946r3<adjektiv>obehändig:obehändig:obehändigt:obehändiga:obehändiga::::
+647040r3<adjektiv>obehärskad:obehärskad:obehärskat:obehärskade:obehärskade:!:!:!:
+574949r4<adjektiv>obehörig:obehörig:obehörigt:obehöriga:obehöriga::::obehörige::::obehörigas::::
+786316r3<adverb>obehörigen:obehörigen
+700647r3<substantiv>obehörighet:obehörighet:obehörighets:obehörigheten:obehörighetens::::
+CUSTOM: y y obehörighets
+566880r3<adjektiv>obehövlig:obehövlig:obehövligt:obehövliga:obehövliga::::
+765504r3<adjektiv>obeivrad:obeivrad:obeivrat:obeivrade:obeivrade:!:!:!:
+647041r4<adjektiv>obekant:obekant:obekant:obekanta:obekanta::::obekante
+765507r3<adjektiv>obeklädd:obeklädd:obeklätt:obeklädda:obeklädda::::
+CUSTOM: y n n
+648915r3<adjektiv>obekräftad:obekräftad:obekräftat:obekräftade:obekräftade:!:!:!:
+563193r5<adjektiv>obekväm:obekväm:obekvämt:obekväma:obekväma:obekvämare:obekvämast:obekvämaste:obekväme::::::::
+647042r3<adjektiv>obekymrad:obekymrad:obekymrat:obekymrade:obekymrade:!:!:!:
+700651r3<adjektiv>obelagd:obelagd:obelagt:obelagda:obelagda::::
+CUSTOM: y n n
+694136r3<adjektiv>obelastad:obelastad:obelastat:obelastade:obelastade:!:!:!:
+765510r3<adjektiv>obelevad:obelevad:obelevat:obelevade:obelevade:!:!:!:
+948338r3<substantiv>obelisk:obelisk:obelisks:obelisken:obeliskens:obelisker:obeliskers:obeliskerna:obeliskernas
+574950r3<adjektiv>obeliskformig:obeliskformig:obeliskformigt:obeliskformiga:obeliskformiga::::
+984118r3<adjektiv>obelyst:obelyst:obelyst:obelysta:obelysta::::::::::::
+731977r3<adjektiv>obelönad:obelönad:obelönat:obelönade:obelönade:!:!:!:
+647043r3<adjektiv>obemannad:obemannad:obemannat:obemannade:obemannade:!:!:!:
+765513r3<adjektiv>obemantlad:obemantlad:obemantlat:obemantlade:obemantlade:!:!:!:
+700654r3<adjektiv>obemedlad:obemedlad:obemedlat:obemedlade:obemedlade:!:!:!:
+765516r3<adjektiv>obemängd:obemängd:obemängt:obemängda:obemängda::::
+647044r3<adjektiv>obemärkt:obemärkt:obemärkt:obemärkta:obemärkta::::
+984120r3<substantiv>obemärkthet:obemärkthet:obemärkthets:obemärktheten:obemärkthetens::::
+793699r3<adjektiv>obenad:obenad:obenat:obenade:obenade:!:!:!:
+647045r5<adjektiv>obenägen:obenägen:obenäget:obenägna:obenägna::::obenägne
+787540r3<substantiv>obenägenhet:obenägenhet:obenägenhets:obenägenheten:obenägenhetens::::
+647046r3<adjektiv>obeprövad:obeprövad:obeprövat:obeprövade:obeprövade:!:!:!:
+765519r3<adjektiv>oberedd:oberedd:oberett:oberedda:oberedda::::
+647049r4<adjektiv>oberoende:oberoende:oberoende:oberoende:oberoende:!:!:!:
+740521r3<substantiv>oberoende:oberoende:oberoendes:oberoendet:oberoendets::::
+899299r3<substantiv>ob-ersättning:ob-ersättning:ob-ersättnings:ob-ersättningen:ob-ersättningens:ob-ersättningar:ob-ersättningars:ob-ersättningarna:ob-ersättningarnas
+694137r3<adjektiv>oberäknad:oberäknad:oberäknat:oberäknade:oberäknade:!:!:!:
+566883r4<adjektiv>oberäknelig:oberäknelig:oberäkneligt:oberäkneliga:oberäkneliga::::oberäknelige
+700657r3<substantiv>oberäknelighet:oberäknelighet:oberäknelighets:oberäkneligheten:oberäknelighetens::::
+CUSTOM: y y oberäknelighets
+647051r3<adjektiv>oberättigad:oberättigad:oberättigat:oberättigade:oberättigade:!:!:!:
+569500r3<adjektiv>oberörbar:oberörbar:oberörbart:oberörbara:oberörbara::::
+647054r3<adjektiv>oberörd:oberörd:oberört:oberörda:oberörda::::
+726218r3<substantiv>oberördhet:oberördhet:oberördhets:oberördheten:oberördhetens::::
+896136r3<adjektiv>obesatt:obesatt:obesatt:obesatta:obesatta::::::::::::
+700661r3<adjektiv>obesedd:obesedd:obesett:obesedda:obesedda::::
+700664r3<adjektiv>obeseglad:obeseglad:obeseglat:obeseglade:obeseglade:!:!:!:
+647055r3<adjektiv>obesegrad:obesegrad:obesegrat:obesegrade:obesegrade:!:!:!:
+700667r3<adjektiv>obesjälad:obesjälad:obesjälat:obesjälade:obesjälade:!:!:!:
+647058r3<adjektiv>obeskattad:obeskattad:obeskattat:obeskattade:obeskattade:!:!:!:
+566884r3<adjektiv>obeskedlig:obeskedlig:obeskedligt:obeskedliga:obeskedliga::::
+569503r3<adjektiv>obeskrivbar:obeskrivbar:obeskrivbart:obeskrivbara:obeskrivbara::::
+566887r3<adjektiv>obeskrivlig:obeskrivlig:obeskrivligt:obeskrivliga:obeskrivliga::::
+700670r3<adjektiv>obeskuren:obeskuren:obeskuret:obeskurna:obeskurna::::
+563450r3<adjektiv>obeslutsam:obeslutsam:obeslutsamt:obeslutsamma:obeslutsamma::::
+647061r3<substantiv>obeslutsamhet:obeslutsamhet:obeslutsamhets:obeslutsamheten:obeslutsamhetens::::
+CUSTOM: y y obeslutsamhets
+647062r3<adjektiv>obesläktad:obesläktad:obesläktat:obesläktade:obesläktade:!:!:!:
+647065r3<adjektiv>obeslöjad:obeslöjad:obeslöjat:obeslöjade:obeslöjade:!:!:!:
+648916r3<adjektiv>obesmittad:obesmittad:obesmittat:obesmittade:obesmittade:!:!:!:
+647068r3<adjektiv>obesprutad:obesprutad:obesprutat:obesprutade:obesprutade:!:!:!:
+566888r3<adjektiv>obesticklig:obesticklig:obestickligt:obestickliga:obestickliga::::
+569506r3<adjektiv>obestigbar:obestigbar:obestigbart:obestigbara:obestigbara::::
+566891r3<adjektiv>obestiglig:obestiglig:obestigligt:obestigliga:obestigliga::::
+569509r3<adjektiv>obestridbar:obestridbar:obestridbart:obestridbara:obestridbara::::
+700673r3<adjektiv>obestridd:obestridd:obestritt:obestridda:obestridda:!:!:!:obestridde
+566894r4<adjektiv>obestridlig:obestridlig:obestridligt:obestridliga:obestridliga::::obestridlige::::::::
+647074r3<adverb>obestridligen:obestridligen
+897621r3<adjektiv>obestruken:obestruken:obestruket:obestrukna:obestrukna::::::::::::
+647071r3<adjektiv>obestyckad:obestyckad:obestyckat:obestyckade:obestyckade:!:!:!:
+647075r3<adjektiv>obestyrkt:obestyrkt:obestyrkt:obestyrkta:obestyrkta::::
+647077r3<substantiv>obestånd:obestånd:::::::
+569512r3<adjektiv>obeställbar:obeställbar:obeställbart:obeställbara:obeställbara::::
+917676r3<adjektiv>obeställd:obeställd:obeställt:obeställda:obeställda::::::::::::
+569515r3<adjektiv>obestämbar:obestämbar:obestämbart:obestämbara:obestämbara::::
+958482r3<substantiv>obestämbarhet:obestämbarhet:obestämbarhets:obestämbarheten:obestämbarhetens::::
+647078r3<adjektiv>obestämd:obestämd:obestämt:obestämda:obestämda::::
+574953r3<adjektiv>obeständig:obeständig:obeständigt:obeständiga:obeständiga::::
+958894r3<substantiv>obeständighet:obeständighet:obeständighets:obeständigheten:obeständighetens::::
+647079r3<adjektiv>obesudlad:obesudlad:obesudlat:obesudlade:obesudlade:!:!:!:
+896138r3<adjektiv>obesutten:obesutten:obesuttet:obesuttna:obesuttna::::::::::::
+647082r3<adjektiv>obesvarad:obesvarad:obesvarat:obesvarade:obesvarade:!:!:!:
+647085r3<adjektiv>obesvärad:obesvärad:obesvärat:obesvärade:obesvärade:!:!:!:
+801540r3<adjektiv>obesådd:obesådd:obesått:obesådda:obesådda::::
+694139r3<adjektiv>obesökt:obesökt:obesökt:obesökta:obesökta::::
+765522r3<adjektiv>obetad:obetad:obetat:obetade:obetade:!:!:!:
+647086r3<adjektiv>obetagen:obetagen:obetaget:obetagna:obetagna::::
+569516r3<adjektiv>obetalbar:obetalbar:obetalbart:obetalbara:obetalbara::::
+647089r3<adjektiv>obetald:obetald:obetalt:obetalda:obetalda::::
+647090r3<adjektiv>obetingad:obetingad:obetingat:obetingade:obetingade:!:!:!:
+793702r3<adjektiv>obetitlad:obetitlad:obetitlat:obetitlade:obetitlade:!:!:!:
+647093r3<adjektiv>obetonad:obetonad:obetonat:obetonade:obetonade:!:!:!:
+765525r3<adjektiv>obetvingad:obetvingad:obetvingat:obetvingade:obetvingade:!:!:!:
+566895r4<adjektiv>obetvinglig:obetvinglig:obetvingligt:obetvingliga:obetvingliga::::obetvinglige
+647097r3<substantiv>obetvinglighet:obetvinglighet:obetvinglighets:obetvingligheten:obetvinglighetens::::
+CUSTOM: y y obetvinglighets
+566896r4<adjektiv>obetydlig:obetydlig:obetydligt:obetydliga:obetydliga:obetydligare:obetydligast:obetydligaste:obetydlige::::::::
+647101r3<substantiv>obetydlighet:obetydlighet:obetydlighets:obetydligheten:obetydlighetens:obetydligheter:obetydligheters:obetydligheterna:obetydligheternas
+CUSTOM: y y obetydlighets
+736668r4<adjektiv>obetäckt:obetäckt:obetäckt:obetäckta:obetäckta:!:!:!:
+563451r4<adjektiv>obetänksam:obetänksam:obetänksamt:obetänksamma:obetänksamma:obetänksammare:obetänksammast:obetänksammaste:obetänksamme
+647109r3<substantiv>obetänksamhet:obetänksamhet:obetänksamhets:obetänksamheten:obetänksamhetens::::
+CUSTOM: y y obetänksamhets
+647114r3<adjektiv>obevakad:obevakad:obevakat:obevakade:obevakade:!:!:!:
+648058r3<adjektiv>obevandrad:obevandrad:obevandrat:obevandrade:obevandrade:!:!:!:
+566897r3<adjektiv>obeveklig:obeveklig:obevekligt:obevekliga:obevekliga::::
+647115r3<adverb>obevekligen:obevekligen
+958546r3<substantiv>obeveklighet:obeveklighet:obeveklighets:obevekligheten:obeveklighetens::::
+647116r3<adjektiv>obevisad:obevisad:obevisat:obevisade:obevisade:!:!:!:
+569517r3<adjektiv>obevisbar:obevisbar:obevisbart:obevisbara:obevisbara::::
+566898r3<adjektiv>obevislig:obevislig:obevisligt:obevisliga:obevisliga::::
+765528r3<adjektiv>obevittnad:obevittnad:obevittnat:obevittnade:obevittnade:!:!:!:
+647119r3<adjektiv>obeväpnad:obeväpnad:obeväpnat:obeväpnade:obeväpnade:!:!:!:
+793705r3<adjektiv>obevärad:obevärad:obevärat:obevärade:obevärade:!:!:!:
+CUSTOM: n n n
+984129r3<adjektiv>obeväxt:obeväxt:obeväxt:obeväxta:obeväxta::::::::::::
+CUSTOM: y n
+793708r3<adjektiv>obilad:obilad:obilat:obilade:obilade:!:!:!:
+647120r3<adjektiv>obildad:obildad:obildat:obildade:obildade:!:!:!:
+569520r3<adjektiv>obildbar:obildbar:obildbart:obildbara:obildbara::::
+566901r3<adjektiv>obillig:obillig:obilligt:obilliga:obilliga::::
+621627r14<substantiv>objekt:objekt:objekts:objektet:objektets:objekt:objekts:objekten:objektens
+CUSTOM: y y objekts
+765531r3<adjektiv>objektanställd:objektanställd:objektanställt:objektanställda:objektanställda::::
+984131r4<substantiv>objektglas:objektglas:objektglas:objektglaset:objektglasets:objektglas:objektglas:objektglasen:objektglasens
+COMPOUND(621627, 552440): objekt + glas
+771864r3<verb>objektifiera:objektifiera:objektifierade:objektifierat:objektifierar:objektifiera:objektifieras:objektifierades:objektifierats:objektifieras:objektifierad:objektifierat:objektifierade:objektifierande:
+771854r3<substantiv>objektifiering:objektifiering:objektifierings:objektifieringen:objektifieringens:objektifieringar:objektifieringars:objektifieringarna:objektifieringarnas
+607778r5<substantiv>objektiv:objektiv:objektivs:objektivet:objektivets:objektiv:objektivs:objektiven:objektivens
+CUSTOM: y y objektiv
+563067r4<adjektiv>objektiv:objektiv:objektivt:objektiva:objektiva:objektivare:objektivast:objektivaste:objektive
+590359r3<verb>objektivera:objektivera:objektiverade:objektiverat:objektiverar:objektivera:::::::::
+648917r3<substantiv>objektivism:objektivism:objektivisms:objektivismen:objektivismens::::
+621631r3<substantiv>objektivitet:objektivitet:objektivitets:objektiviteten:objektivitetens::::
+CUSTOM: y y objektivitets
+647123r3<adjektiv>objektorienterad:objektorienterad:objektorienterat:objektorienterade:objektorienterade:!:!:!:
+637906r4<substantiv>objektsform:objektsform:objektsforms:objektsformen:objektsformens:objektsformer:objektsformers:objektsformerna:objektsformernas
+COMPOUND(621627, 548947): objekt + form
+965090r4<substantiv>objektskasus:objektskasus:objektskasus:objektskasuset:objektskasusets::::
+COMPOUND(621627, 623478): objekt + kasus
+647126r4<adjektiv>objuden:objuden:objudet:objudna:objudna:!:!:!:objudne
+647127r3<adjektiv>oblandad:oblandad:oblandat:oblandade:oblandade:!:!:!:
+569523r3<adjektiv>oblandbar:oblandbar:oblandbart:oblandbara:oblandbara::::
+550102r4<substantiv>oblat:oblat:oblats:oblaten:oblatens:oblater:oblaters:oblaterna:oblaternas
+984136r4<substantiv>oblatask:oblatask:oblatasks:oblatasken:oblataskens:oblataskar:oblataskars:oblataskarna:oblataskarnas
+COMPOUND(550102, 550843): oblat + ask
+647130r3<adjektiv>oblekt:oblekt:oblekt:oblekta:oblekta::::
+647131r3<adjektiv>oblid:oblid:oblitt:oblida:oblida::::
+CUSTOM: y n
+566904r3<adjektiv>oblidkelig:oblidkelig:oblidkeligt:oblidkeliga:oblidkeliga::::
+984144r3<adjektiv>obligat:obligat:obligat:obligata:obligata::::::::::::
+647132r6<substantiv>obligation:obligation:obligations:obligationen:obligationens:obligationer:obligationers:obligationerna:obligationernas
+CUSTOM: y y obligations +obligations
+582394r3<adjektiv>obligatorisk:obligatorisk:obligatoriskt:obligatoriska:obligatoriska::::
+884620r3<substantiv>obligatorium:obligatorium:obligatoriums:obligatoriet:obligatoriets:obligatorier:obligatoriers:obligatorierna:obligatoriernas
+590363r3<verb>obligera:obligera:obligerade:obligerat:obligerar:obligera:::::::::
+793711r3<adjektiv>obligerad:obligerad:obligerat:obligerade:obligerade:!:!:!:
+793712r3<adjektiv>oblockerad:oblockerad:oblockerat:oblockerade:oblockerade:!:!:!:
+574956r3<adjektiv>oblodig:oblodig:oblodigt:oblodiga:oblodiga::::
+793715r3<adjektiv>oblyad:oblyad:oblyat:oblyade:oblyade:!:!:!:
+647163r3<adjektiv>oblyg:oblyg:oblygt:oblyga:oblyga::::oblyge
+628458r7<substantiv>oboe:oboe:oboes:oboen:oboens:oboer:oboers:oboerna:oboernas
+CUSTOM: y n
+984147r4<substantiv>oboekonsert:oboekonsert:oboekonserts:oboekonserten:oboekonsertens:oboekonserter:oboekonserters:oboekonserterna:oboekonserternas
+COMPOUND(628458, 651813): oboe + konsert
+984157r4<substantiv>oboesolist:oboesolist:oboesolists:oboesolisten:oboesolistens:oboesolister:oboesolisters:oboesolisterna:oboesolisternas
+COMPOUND(628458, 668106): oboe + solist
+984167r4<substantiv>oboestämma:oboestämma:oboestämmas:oboestämman:oboestämmans:oboestämmor:oboestämmors:oboestämmorna:oboestämmornas
+COMPOUND(628458, 595433): oboe + stämma
+764567r3<substantiv>oboist:oboist:oboists:oboisten:oboistens:oboister:oboisters:oboisterna:oboisternas
+907151r3<adjektiv>obokad:obokad:obokat:obokade:obokade:!:!:!:::::::::
+647165r3<adjektiv>oborstad:oborstad:oborstat:oborstade:oborstade:!:!:!:
+574957r3<adjektiv>obotfärdig:obotfärdig:obotfärdigt:obotfärdiga:obotfärdiga::::
+647168r3<substantiv>obotfärdighet:obotfärdighet:obotfärdighets:obotfärdigheten:obotfärdighetens::::
+CUSTOM: y y obotfärdighets
+566907r3<adjektiv>obotlig:obotlig:obotligt:obotliga:obotliga::::
+647170r3<substantiv>obotlighet:obotlighet:obotlighets:obotligheten:obotlighetens::::
+CUSTOM: y y obotlighets
+793718r3<adjektiv>obromsad:obromsad:obromsat:obromsade:obromsade:!:!:!:
+566908r3<adjektiv>obrottslig:obrottslig:obrottsligt:obrottsliga:obrottsliga::::
+708991r3<adjektiv>obrukad:obrukad:obrukat:obrukade:obrukade:!:!:!:
+569526r3<adjektiv>obrukbar:obrukbar:obrukbart:obrukbara:obrukbara::::
+566909r3<adjektiv>obruklig:obruklig:obrukligt:obrukliga:obrukliga::::
+647174r3<adjektiv>obruten:obruten:obrutet:obrutna:obrutna::::
+569527r3<adjektiv>obrytbar:obrytbar:obrytbart:obrytbara:obrytbara::::
+765534r3<adjektiv>obränd:obränd:obränt:obrända:obrända::::
+569530r3<adjektiv>obrännbar:obrännbar:obrännbart:obrännbara:obrännbara::::
+938326r3<substantiv>obs:obs:obs:obset:obsets:obs:obs:obsen:obsens
+CUSTOM: n n y
+647175r3<adjektiv>obscen:obscen:obscent:obscena:obscena::::
+647178r3<substantiv>obscenitet:obscenitet:obscenitets:obsceniteten:obscenitetens:obsceniteter:obsceniteters:obsceniteterna:obsceniteternas
+736659r3<substantiv>observans:observans:observans:observansen:observansens::::
+647186r3<adjektiv>observant:observant:observant:observanta:observanta:observantare:observantast:observantaste:observante
+647188r5<substantiv>observation:observation:observations:observationen:observationens:observationer:observationers:observationerna:observationernas
+CUSTOM: y y observations +observations
+873347r5<substantiv>observationsgrupp:observationsgrupp:observationsgrupps:observationsgruppen:observationsgruppens:observationsgrupper:observationsgruppers:observationsgrupperna:observationsgruppernas
+COMPOUND(647188, 549163): observation + grupp
+712511r4<substantiv>observationsmaterial:observationsmaterial:observationsmaterials:observationsmaterialet:observationsmaterialets:observationsmaterial:observationsmaterials:observationsmaterialen:observationsmaterialens
+COMPOUND(647188, 552695): observation + material
+731988r3<substantiv>observator:observator:observators:observatorn:observatorns:observatorer:observatorers:observatorerna:observatorernas
+621633r3<substantiv>observatorium:observatorium:observatoriums:observatoriet:observatoriets:observatorier:observatoriers:observatorierna:observatoriernas
+CUSTOM: y y observatorie
+550104r3<substantiv>observatör:observatör:observatörs:observatören:observatörens:observatörer:observatörers:observatörerna:observatörernas
+CUSTOM: y y observatörs
+547412r5<verb>observera:observera:observerade:observerat:observerar:observera:observeras:observerades:observerats:observeras:observerad:observerat:observerade:observerande:
+569533r3<adjektiv>observerbar:observerbar:observerbart:observerbara:observerbara::::
+647189r3<adjektiv>obskyr:obskyr:obskyrt:obskyra:obskyra::::
+647190r3<adjektiv>obsolet:obsolet:obsolet:obsoleta:obsoleta::::
+917680r3<substantiv>obstetrik:obstetrik:obstetriks:obstetriken:obstetrikens::::
+984176r3<substantiv>obstetriker:obstetriker:obstetrikers:obstetrikern:obstetrikerns:obstetriker:obstetrikers:obstetrikerna:obstetrikernas
+582395r3<adjektiv>obstetrisk:obstetrisk:obstetriskt:obstetriska:obstetriska::::
+647191r3<adjektiv>obstinat:obstinat:obstinat:obstinata:obstinata::::
+736811r3<substantiv>obstipation:obstipation:obstipations:obstipationen:obstipationens::::
+624149r4<substantiv>obstretik:obstretik:obstretiks:obstretiken:obstretikens:!:!:!:!
+587359r4<verb>obstruera:obstruera:obstruerade:obstruerat:obstruerar:obstruera:obstrueras:obstruerades:obstruerats:obstrueras:obstruerad:obstruerat:obstruerade:obstruerande:
+639270r3<substantiv>obstruktion:obstruktion:obstruktions:obstruktionen:obstruktionens:obstruktioner:obstruktioners:obstruktionerna:obstruktionernas
+CUSTOM: y y obstruktions
+899308r3<substantiv>ob-tillägg:ob-tillägg:ob-tilläggs:ob-tillägget:ob-tilläggets:ob-tillägg:ob-tilläggs:ob-tilläggen:ob-tilläggens
+647192r3<adjektiv>obunden:obunden:obundet:obundna:obundna::::
+CUSTOM: y y
+957378r3<substantiv>obundenhet:obundenhet:obundenhets:obundenheten:obundenhetens::::
+625850r3<substantiv>obygd:obygd:obygds:obygden:obygdens:obygder:obygders:obygderna:obygdernas
+CUSTOM: y n
+800008r3<adjektiv>obyggd:obyggd:obyggt:obyggda:obyggda::::
+CUSTOM: y n
+582398r3<adjektiv>obyråkratisk:obyråkratisk:obyråkratiskt:obyråkratiska:obyråkratiska::::
+740525r3<adjektiv>obäddad:obäddad:obäddat:obäddade:obäddade:!:!:!:
+CUSTOM: y n
+940524r3<adjektiv>obältad:obältad:obältat:obältade:obältade:!:!:!:::::::::
+CUSTOM: y n
+574958r3<adjektiv>obändig:obändig:obändigt:obändiga:obändiga::::
+CUSTOM: y n
+793721r3<adjektiv>obärgad:obärgad:obärgat:obärgade:obärgade:!:!:!:
+CUSTOM: y n
+647193r3<adjektiv>oböjd:oböjd:oböjt:oböjda:oböjda::::
+CUSTOM: y n
+566912r3<adjektiv>oböjlig:oböjlig:oböjligt:oböjliga:oböjliga::::
+CUSTOM: y n
+566913r3<adjektiv>obönhörlig:obönhörlig:obönhörligt:obönhörliga:obönhörliga::::
+CUSTOM: y n
+620705r3<adverb>obönhörligen:obönhörligen
+647194r3<substantiv>obönhörlighet:obönhörlighet:obönhörlighets:obönhörligheten:obönhörlighetens::::
+CUSTOM: y y obönhörlighets
+793724r3<adjektiv>ocamouflerad:ocamouflerad:ocamouflerat:ocamouflerade:ocamouflerade:!:!:!:
+CUSTOM: y n
+647195r3<adjektiv>occidental:occidental:occidentalt:occidentala:occidentala::::
+582401r3<adjektiv>occidentalisk:occidentalisk:occidentaliskt:occidentaliska:occidentaliska::::
+550105r4<substantiv>ocean:ocean:oceans:oceanen:oceanens:oceaner:oceaners:oceanerna:oceanernas
+CUSTOM: y y ocean
+801158r3<adjektiv>oceangående:oceangående:oceangående:oceangående:oceangående:!:!:!:
+917685r3<substantiv>oceanhaj:oceanhaj:oceanhajs:oceanhajen:oceanhajens:oceanhajar:oceanhajars:oceanhajarna:oceanhajarnas
+582404r3<adjektiv>oceanisk:oceanisk:oceaniskt:oceaniska:oceaniska::::
+897632r3<substantiv>oceanograf:oceanograf:oceanografs:oceanografen:oceanografens:oceanografer:oceanografers:oceanograferna:oceanografernas
+955119r3<substantiv>oceanografi:oceanografi:oceanografis:oceanografin:oceanografins::::
+582407r3<adjektiv>oceanografisk:oceanografisk:oceanografiskt:oceanografiska:oceanografiska::::
+702649r4<substantiv>oceanångare:oceanångare:oceanångares:oceanångaren:oceanångarens:oceanångare:oceanångares:oceanångarna:oceanångarnas
+COMPOUND(550105, 615529): ocean + ångare
+CUSTOM: y y oceanångar
+647198r3<adjektiv>ocensurerad:ocensurerad:ocensurerat:ocensurerade:ocensurerade:!:!:!:
+CUSTOM: y n
+798483r3<adjektiv>oceremoniös:oceremoniös:oceremoniöst:oceremoniösa:oceremoniösa::::
+CUSTOM: y n
+555957r3<konjunktion>och:och
+647199r3<adjektiv>ociviliserad:ociviliserad:ociviliserat:ociviliserade:ociviliserade:!:!:!:
+619210r3<adverb>ock:ock
+554345r4<egennamn>Ockelbo:Ockelbo:Ockelbos, Ockelbo
+CUSTOM: y n Ockelbo
+619211r3<substantiv>ocker:ocker:ockers:ockret:ockrets::::
+CUSTOM: y n ocker
+798487r3<adjektiv>ockergul:ockergul:ockergult:ockergula:ockergula::::
+CUSTOM: y n n
+619215r3<substantiv>ockerhyra:ockerhyra:ockerhyras:ockerhyran:ock

@@ -1,0 +1,545 @@
+ier:!:!:!:!:auspicier:auspiciers:auspicierna:auspiciernas
+705707r3<substantiv>austenit:austenit:austenits:austeniten:austenitens::::
+579069r3<adjektiv>austenitisk:austenitisk:austenitiskt:austenitiska:austenitiska::::
+762343r3<egennamn>Austin:Austin:Austins
+553968r3<egennamn>Australien:Australien:Australiens
+CUSTOM: y n Australien
+609306r3<substantiv>australiensare:australiensare:australiensares:australiensaren:australiensarens:australiensare:australiensares:australiensarna:australiensarnas
+CUSTOM: y n
+568723r3<adjektiv>australiensisk:australiensisk:australiensiskt:australiensiska:australiensiska::::
+910420r3<substantiv>australiensiska:australiensiska:australiensiskas:australiensiskan:australiensiskans:australiensiskor:australiensiskors:australiensiskorna:australiensiskornas
+780926r3<adjektiv>australiensk:australiensk:australienskt:australienska:australienska:!:!:!:australienske
+610276r3<substantiv>australier:australier:australiers:australiern:australierns:australier:australiers:australierna:australiernas
+568724r5<adjektiv>australisk:australisk:australiskt:australiska:australiska::::australiensiske, australiske
+593672r3<substantiv>australiska:australiska:australiskas:australiskan:australiskans:australiskor:australiskors:australiskorna:australiskornas
+967962r3<substantiv>autarki:autarki:autarkis:autarkin:autarkins::::
+CUSTOM: y n
+579072r3<adjektiv>autarkisk:autarkisk:autarkiskt:autarkiska:autarkiska::::
+CUSTOM: y n
+616459r3<substantiv>autenticitet:autenticitet:autenticitets:autenticiteten:autenticitetens:!:!:!:!
+CUSTOM: y y autenticitets
+586052r4<verb>autentisera:autentisera:autentiserade:autentiserat:autentiserar:autentisera:autentiseras:autentiserades:autentiserats:autentiseras:autentiserad:autentiserat:autentiserade:autentiserande:
+616461r3<substantiv>autentisering:autentisering:autentiserings:autentiseringen:autentiseringens:autentiseringar:autentiseringars:autentiseringarna:autentiseringarnas
+CUSTOM: y y autentiserings
+568725r4<adjektiv>autentisk:autentisk:autentiskt:autentiska:autentiska::::autentiske
+859300r3<substantiv>auteur:auteur:auteurs:auteuren:auteurens:auteurer:auteurers:auteurerna:auteurernas
+558759r3<substantiv>autism:autism:autisms:autismen:autismens:!:!:!:!
+CUSTOM: y y autism
+960461r3<substantiv>autist:autist:autists:autisten:autistens:autister:autisters:autisterna:autisternas
+579075r4<adjektiv>autistisk:autistisk:autistiskt:autistiska:autistiska::::autistiske
+967971r3<substantiv>autobiografi:autobiografi:autobiografis:autobiografin:autobiografins:autobiografier:autobiografiers:autobiografierna:autobiografiernas
+859310r3<substantiv>autodafé:autodafé:autodafés:autodafén:autodaféns:autodaféer:autodaféers:autodaféerna:autodaféernas
+623791r3<substantiv>autodidakt:autodidakt:autodidakts:autodidakten:autodidaktens:autodidakter:autodidakters:autodidakterna:autodidakternas
+579076r3<adjektiv>autodidaktisk:autodidaktisk:autodidaktiskt:autodidaktiska:autodidaktiska::::
+780932r3<substantiv>autofokus:autofokus:autofokus:autofokusen:autofokusens::::
+678323r3<substantiv>autogami:autogami:autogamis:autogamin, autogamien:autogamins, autogamiens::::
+CUSTOM: n n
+562977r3<substantiv>autogiro:autogiro:autogiros:autogirot:autogirots:autogiron:autogirons:autogirona:autogironas
+CUSTOM: y y autogiro
+605416r3<substantiv>autograf:autograf:autografs:autografen:autografens:autografer:autografers:autograferna:autografernas
+CUSTOM: y y autograf
+967979r3<substantiv>autografi:autografi:autografis:autografin:autografins:autografier:autografiers:autografierna:autografiernas
+579079r3<adjektiv>autografisk:autografisk:autografiskt:autografiska:autografiska::::
+579082r3<adjektiv>autokatalytisk:autokatalytisk:autokatalytiskt:autokatalytiska:autokatalytiska::::
+780936r3<substantiv>autoklav:autoklav:autoklavs:autoklaven:autoklavens:autoklaver:autoklavers:autoklaverna:autoklavernas
+960404r3<substantiv>autokorrigering:autokorrigering:autokorrigerings:autokorrigeringen:autokorrigeringens:autokorrigeringar:autokorrigeringars:autokorrigeringarna:autokorrigeringarnas
+622737r3<substantiv>autokrat:autokrat:autokrats:autokraten:autokratens:autokrater:autokraters:autokraterna:autokraternas
+780944r4<substantiv>autokrati:autokrati:autokratis:autokratin:autokratins:autokratier:autokratiers:autokratierna:autokratiernas
+579085r4<adjektiv>autokratisk:autokratisk:autokratiskt:autokratiska:autokratiska::::autokratiske::::::::
+797229r3<adjektiv>autokrom:autokrom:autokromt:autokroma:autokroma::::
+CUSTOM: n n
+797232r3<adjektiv>autokton:autokton:autoktont:autoktona:autoktona::::
+973509r3<egennamn>Autoliv:Autoliv:Autolivs
+CUSTOM: y n Autoliv
+548279r7<substantiv>automat:automat:automats:automaten:automatens:automater:automaters:automaterna:automaternas
+CUSTOM: y y automat
+674928r4<substantiv>automatbana:automatbana:automatbanas:automatbanan:automatbanans:automatbanor:automatbanors:automatbanorna:automatbanornas
+COMPOUND(548279, 556870): automat + bana
+964694r4<substantiv>automatchoke:automatchoke:automatchokes:automatchoken:automatchokens:automatchokar:automatchokars:automatchokarna:automatchokarnas
+COMPOUND(548279, 862010): automat + choke
+616469r3<substantiv>automatgevär:automatgevär:automatgevärs:automatgeväret:automatgevärets:automatgevär:automatgevärs:automatgevären:automatgevärens
+616475r4<substantiv>automatik:automatik:automatiks:automatiken:automatikens:!:!:!:!
+616477r3<substantiv>automation:automation:automations:automationen:automationens:!:!:!:!
+CUSTOM: y y automations
+546116r6<verb>automatisera:automatisera:automatiserade:automatiserat:automatiserar:automatisera:automatiseras:automatiserades:automatiserats:automatiseras:automatiserad:automatiserat:automatiserade:automatiserande:
+606177r3<substantiv>automatisering:automatisering:automatiserings:automatiseringen:automatiseringens:automatiseringar:automatiseringars:automatiseringarna:automatiseringarnas
+CUSTOM: y y automatiserings
+568726r6<adjektiv>automatisk:automatisk:automatiskt:automatiska:automatiska::::
+CUSTOM: y y automat
+849016r3<substantiv>automatism:automatism:automatisms:automatismen:automatismens::::
+616478r3<substantiv>automatkarbin:automatkarbin:automatkarbins:automatkarbinen:automatkarbinens:automatkarbiner:automatkarbiners:automatkarbinerna:automatkarbinernas
+616486r3<substantiv>automatlåda:automatlåda:automatlådas:automatlådan:automatlådans:automatlådor:automatlådors:automatlådorna:automatlådornas
+799079r3<adjektiv>automatstyrd:automatstyrd:automatstyrt:automatstyrda:automatstyrda::::
+606178r4<substantiv>automatsvarv:automatsvarv:automatsvarvs:automatsvarven:automatsvarvens:automatsvarvar:automatsvarvars:automatsvarvarna:automatsvarvarnas
+616494r3<substantiv>automatsäkring:automatsäkring:automatsäkrings:automatsäkringen:automatsäkringens:automatsäkringar:automatsäkringars:automatsäkringarna:automatsäkringarnas
+CUSTOM: y y automatsäkrings
+677166r4<substantiv>automatvävstol:automatvävstol:automatvävstols:automatvävstolen:automatvävstolens:automatvävstolar:automatvävstolars:automatvävstolarna:automatvävstolarnas
+COMPOUND(568726, 677167): automatisk + vävstol
+616502r3<substantiv>automatväxel:automatväxel:automatväxels:automatväxeln:automatväxelns:automatväxlar:automatväxlars:automatväxlarna:automatväxlarnas
+548280r4<substantiv>automobil:automobil:automobils:automobilen:automobilens:automobiler:automobilers:automobilerna:automobilernas
+CUSTOM: y y automobil
+674920r4<substantiv>automobilkarta:automobilkarta:automobilkartas:automobilkartan:automobilkartans:automobilkartor:automobilkartors:automobilkartorna:automobilkartornas
+COMPOUND(548280, 561126): automobil + karta
+616510r3<adjektiv>autonom:autonom:autonomt:autonoma:autonoma::::
+616511r4<substantiv>autonomi:autonomi:autonomis:autonomin:autonomins:!:!:!:!
+CUSTOM: y y autonomi
+678480r4<substantiv>autonomiprincip:autonomiprincip:autonomiprincips:autonomiprincipen:autonomiprincipens:autonomiprinciper:autonomiprincipers:autonomiprinciperna:autonomiprincipernas
+COMPOUND(616511, 550253): autonomi + princip
+579088r3<adjektiv>autonomisk:autonomisk:autonomiskt:autonomiska:autonomiska::::
+681981r3<substantiv>autopilot:autopilot:autopilots:autopiloten:autopilotens:autopiloter:autopiloters:autopiloterna:autopiloternas
+797235r3<adjektiv>autoritär:autoritär:autoritärt:autoritära:autoritära::::
+562985r3<substantiv>autostart:autostart:autostarts:autostarten:autostartens:autostarter:autostarters:autostarterna:autostarternas
+616512r3<substantiv>autostrada:autostrada:autostradas:autostradan:autostradans:autostrador:autostradors:autostradorna:autostradornas
+797238r3<adjektiv>autotrof:autotrof:autotroft:autotrofa:autotrofa::::
+CUSTOM: n n
+579091r3<adjektiv>autotypisk:autotypisk:autotypiskt:autotypiska:autotypiska::::
+555514r9<substantiv>auxin:auxin:auxins:auxinet:auxinets:auxiner:auxiners:auxinerna:auxinernas
+DEFINITION 1: Ett slags växthormon.
+CUSTOM: y n n
+557635r44<adverb>av:av
+CUSTOM: y n
+557634r36<preposition>av:av
+BASEWORDS: av
+CUSTOM: y n
+586056r6<verb>avaktivera:avaktivera:avaktiverade:avaktiverat:avaktiverar:avaktivera:avaktiveras:avaktiverades:avaktiverats:avaktiveras:avaktiverad:avaktiverat:avaktiverade::
+COMPOUND(557634, 546041): av + aktivera
+744242r3<verb>avaktualisera:avaktualisera:avaktualiserade:avaktualiserat:avaktualiserar:avaktualisera:avaktualiseras:avaktualiserades:avaktualiserats:avaktualiseras:avaktualiserad:avaktualiserat:avaktualiserade:avaktualiserande:
+552199r4<substantiv>avancemang:avancemang:avancemangs:avancemanget:avancemangets:avancemang:avancemangs:avancemangen:avancemangens
+682066r4<substantiv>avancemangsmöjlighet:avancemangsmöjlighet:avancemangsmöjlighets:avancemangsmöjligheten:avancemangsmöjlighetens:avancemangsmöjligheter:avancemangsmöjligheters:avancemangsmöjligheterna:avancemangsmöjligheternas
+COMPOUND(552199, 602938): avancemang + möjlighet
+CUSTOM: y y avancemangs
+546117r5<verb>avancera:avancera:avancerade:avancerat:avancerar:avancera:avanceras:avancerades:avancerats:avanceras:avancerad:avancerat:avancerade:avancerande:
+570633r3<adjektiv>avancerad:avancerad:avancerat:avancerade:avancerade:!:!:!:
+780948r3<substantiv>avancering:avancering:avancerings:avanceringen:avanceringens:avanceringar:avanceringars:avanceringarna:avanceringarnas
+780956r3<verb>avanmäla:avanmäla:avanmälde:avanmält:avanmäler:avanmäl:avanmälas:avanmäldes:avanmälts:avanmäls:avanmäld:avanmält:avanmälda::
+780967r3<substantiv>avanmälan:avanmälan:avanmälans:avanmälan:avanmälans::::
+780969r3<substantiv>avanmälning:avanmälning:avanmälnings:avanmälningen:avanmälningens:avanmälningar:avanmälningars:avanmälningarna:avanmälningarnas
+780977r3<substantiv>avannons:avannons:avannons:avannonsen:avannonsens:avannonser:avannonsers:avannonserna:avannonsernas
+586060r4<verb>avannonsera:avannonsera:avannonserade:avannonserat:avannonserar:avannonsera:avannonseras:avannonserades:avannonserats:avannonseras:avannonserad:avannonserat:avannonserade:avannonserande:
+780984r3<substantiv>avannonsering:avannonsering:avannonserings:avannonseringen:avannonseringens:avannonseringar:avannonseringars:avannonseringarna:avannonseringarnas
+733018r3<substantiv>avans:avans:avans:avansen:avansens:avanser:avansers:avanserna:avansernas
+752070r4<substantiv>avantgarde:avantgarde:avantgardes:avantgardet:avantgardets::::
+CUSTOM: y y avantgarde
+780992r4<substantiv>avantgardefilm:avantgardefilm:avantgardefilms:avantgardefilmen:avantgardefilmens:avantgardefilmer:avantgardefilmers:avantgardefilmerna:avantgardefilmernas
+COMPOUND(752070, 548921): avantgarde + film
+780993r3<substantiv>avantgardism:avantgardism:avantgardisms:avantgardismen:avantgardismens::::
+780997r3<substantiv>avantgardist:avantgardist:avantgardists:avantgardisten:avantgardistens:avantgardister:avantgardisters:avantgardisterna:avantgardisternas
+579094r3<adjektiv>avantgardistisk:avantgardistisk:avantgardistiskt:avantgardistiska:avantgardistiska::::
+548282r3<substantiv>avart:avart:avarts:avarten:avartens:avarter:avarters:avarterna:avarternas
+716337r5<egennamn>Avaskär:Avaskär:Avaskärs
+959609r3<substantiv>avatar:avatar:avatars:avataren:avatarens:avatarer:avatarers:avatarerna:avatarernas
+CUSTOM: y n
+586064r3<verb>avbalansera:avbalansera:avbalanserade:avbalanserat:avbalanserar:avbalansera:::::::::
+859324r3<verb>avbalka:avbalka:avbalkade:avbalkat:avbalkar:avbalka:avbalkas:avbalkades:avbalkats:avbalkas:avbalkad:avbalkat:avbalkade:avbalkande:
+859333r3<substantiv>avbalkning:avbalkning:avbalknings:avbalkningen:avbalkningens:avbalkningar:avbalkningars:avbalkningarna:avbalkningarnas
+967992r4<verb>avbarka:avbarka:avbarkade:avbarkat:avbarkar:avbarka:avbarkas:avbarkades:avbarkats:avbarkas:avbarkad:avbarkat:avbarkade:avbarkande:
+COMPOUND(557635, 596155): av + barka
+781005r4<substantiv>avbarkning:avbarkning:avbarknings:avbarkningen:avbarkningens:avbarkningar:avbarkningars:avbarkningarna:avbarkningarnas
+CUSTOM: y y avbarknings
+781013r4<substantiv>avbarkningshyvel:avbarkningshyvel:avbarkningshyvels:avbarkningshyveln:avbarkningshyvelns:avbarkningshyvlar:avbarkningshyvlars:avbarkningshyvlarna:avbarkningshyvlarnas
+COMPOUND(781005, 623234): avbarkning + hyvel
+789915r3<adjektiv>avbarrad:avbarrad:avbarrat:avbarrade:avbarrade:!:!:!:
+859341r3<substantiv>avbasning:avbasning:avbasnings:avbasningen:avbasningens:avbasningar:avbasningars:avbasningarna:avbasningarnas
+968001r4<verb>avbemanna:avbemanna:avbemannade:avbemannat:avbemannar:avbemanna:avbemannas:avbemannades:avbemannats:avbemannas:avbemannad:avbemannat:avbemannade:avbemannande:
+COMPOUND(557635, 546240): av + bemanna
+591852r4<verb>avbeställa:avbeställa:avbeställde:avbeställt:avbeställer:avbeställ:avbeställas:avbeställdes:avbeställts:avbeställs, avbeställes:avbeställd:avbeställt:avbeställda:avbeställande:
+683009r5<substantiv>avbeställning:avbeställning:avbeställnings:avbeställningen:avbeställningens:avbeställningar:avbeställningars:avbeställningarna:avbeställningarnas
+COMPOUND(557634, 592704): av + beställning
+CUSTOM: y y avbeställnings
+683017r4<substantiv>avbeställningsskydd:avbeställningsskydd:avbeställningsskydds:avbeställningsskyddet:avbeställningsskyddets:avbeställningsskydd:avbeställningsskydds:avbeställningsskydden:avbeställningsskyddens
+COMPOUND(683009, 552935): avbeställning + skydd
+781014r4<verb>avbeta:avbeta:avbetade:avbetat:avbetar:avbeta:avbetas:avbetades:avbetats:avbetas:avbetad:avbetat:avbetade:avbetande:
+562993r5<verb>avbetala:avbetala:avbetalade:avbetalat:avbetalar:avbetala:avbetalas:avbetalades:avbetalats:avbetalas:avbetalad:avbetalat:avbetalade:avbetalande:
+968011r3<adjektiv>avbetald:avbetald:avbetalt:avbetalda:avbetalda::::::::::::
+596362r5<substantiv>avbetalning:avbetalning:avbetalnings:avbetalningen:avbetalningens:avbetalningar:avbetalningars:avbetalningarna:avbetalningarnas
+CUSTOM: y y avbetalnings +avbetalnings
+608916r3<substantiv>avbetalningskontrakt:avbetalningskontrakt:avbetalningskontrakts:avbetalningskontraktet:avbetalningskontraktets:avbetalningskontrakt:avbetalningskontrakts:avbetalningskontrakten:avbetalningskontraktens
+683023r4<substantiv>avbetalningsplan:avbetalningsplan:avbetalningsplans:avbetalningsplanen:avbetalningsplanens:avbetalningsplaner:avbetalningsplaners:avbetalningsplanerna:avbetalningsplanernas
+COMPOUND(596362, 550205): avbetalning + plan
+683031r4<substantiv>avbetalningsränta:avbetalningsränta:avbetalningsräntas:avbetalningsräntan:avbetalningsräntans:avbetalningsräntor:avbetalningsräntors:avbetalningsräntorna:avbetalningsräntornas
+COMPOUND(596362, 595060): avbetalning + ränta
+781022r3<substantiv>avbetning:avbetning:avbetnings:avbetningen:avbetningens:avbetningar:avbetningars:avbetningarna:avbetningarnas
+681985r3<verb>avbida:avbida:avbidade:avbidat:avbidar:avbida:::::::::
+686970r3<substantiv>avbidan:!:!:avbidan:avbidans:!:!:!:!
+548284r3<substantiv>avbild:avbild:avbilds:avbilden:avbildens:avbilder:avbilders:avbilderna:avbildernas
+546118r5<verb>avbilda:avbilda:avbildade:avbildat:avbildar:avbilda:avbildas:avbildades:avbildats:avbildas:avbildad:avbildat:avbildade:avbildande:
+681984r4<substantiv>avbildning:avbildning:avbildnings:avbildningen:avbildningens:avbildningar:avbildningars:avbildningarna:avbildningarnas
+COMPOUND(557634, 651396): av + bildning
+CUSTOM: y y avbildnings
+781030r4<substantiv>avbitare:avbitare:avbitares:avbitaren:avbitarens:avbitare:avbitares:avbitarna:avbitarnas
+CUSTOM: y y avbitar
+781036r4<substantiv>avbitartång:avbitartång:avbitartångs:avbitartången:avbitartångens:avbitartänger:avbitartängers:avbitartängerna:avbitartängernas
+COMPOUND(781030, 619853): avbitare + tång
+781045r3<adjektiv>avbiten:avbiten:avbitet:avbitna:avbitna:!:!:!:!
+781049r3<adjektiv>avblommad:avblommad:avblommat:avblommade:avblommade:!:!:!:
+681986r5<verb>avblåsa:avblåsa:avblåste:avblåst:avblåser:avblås:avblåsas:avblåstes:avblåsts:avblåses:avblåst:avblåst:avblåsta:avblåsande:
+COMPOUND(557634, 585814): av + blåsa
+752074r3<substantiv>avblåsning:avblåsning:avblåsnings:avblåsningen:avblåsningens:avblåsningar:avblåsningars:avblåsningarna:avblåsningarnas
+800893r3<adjektiv>avbländande:avbländande:avbländande:avbländande:avbländande:!:!:!:
+681989r4<substantiv>avbländning:avbländning:avbländnings:avbländningen:avbländningens:avbländningar:avbländningars:avbländningarna:avbländningarnas
+COMPOUND(557634, 681990): av + bländning
+CUSTOM: y y avbländnings
+720119r3<verb>avboka:avboka:avbokade:avbokat:avbokar:avboka:avbokas:avbokades:avbokats:avbokas:avbokad:avbokat:avbokade::
+720127r3<substantiv>avbokning:avbokning:avboknings:avbokningen:avbokningens:avbokningar:avbokningars:avbokningarna:avbokningarnas
+781052r3<substantiv>avborstning:avborstning:avborstnings:avborstningen:avborstningens:avborstningar:avborstningars:avborstningarna:avborstningarnas
+568861r3<adjektiv>avbromsbar:avbromsbar:avbromsbart:avbromsbara:avbromsbara::::
+552201r4<substantiv>avbrott:avbrott:avbrotts:avbrottet:avbrottets:avbrott:avbrotts:avbrotten:avbrottens
+CUSTOM: y y avbrotts
+585416r5<verb>avbryta:avbryta:avbröt:avbrutit:avbryter:avbryt:avbrytas:avbröts:avbrutits:avbryts, avbrytes:avbruten:avbrutet:avbrutna::
+COMPOUND(557634, 556860): av + bryta
+756209r3<substantiv>avbrytande:avbrytande:avbrytandes:avbrytandet:avbrytandets::::
+781060r3<substantiv>avbrytare:avbrytare:avbrytares:avbrytaren:avbrytarens:avbrytare:avbrytares:avbrytarna:avbrytarnas
+781066r3<substantiv>avbrytning:avbrytning:avbrytnings:avbrytningen:avbrytningens:avbrytningar:avbrytningars:avbrytningarna:avbrytningarnas
+623802r3<substantiv>avbräck:avbräck:avbräcks:avbräcket:avbräckets:avbräck:avbräcks:avbräcken:avbräckens
+781074r3<substantiv>avbränning:avbränning:avbrännings:avbränningen:avbränningens:avbränningar:avbränningars:avbränningarna:avbränningarnas
+859354r3<substantiv>avbröstning:avbröstning:avbröstnings:avbröstningen:avbröstningens:avbröstningar:avbröstningars:avbröstningarna:avbröstningarnas
+849021r3<substantiv>avbytarbås:avbytarbås:avbytarbås:avbytarbåset:avbytarbåsets:avbytarbås:avbytarbås:avbytarbåsen:avbytarbåsens
+609218r3<substantiv>avbytare:avbytare:avbytares:avbytaren:avbytarens:avbytare:avbytares:avbytarna:avbytarnas
+CUSTOM: y y avbytar
+781082r4<substantiv>avbärare:avbärare:avbärares:avbäraren:avbärarens:avbärare:avbärares:avbärarna:avbärarnas
+CUSTOM: y y avbärar
+781088r4<substantiv>avbärarlist:avbärarlist:avbärarlists:avbärarlisten:avbärarlistens:avbärarlister:avbärarlisters:avbärarlisterna:avbärarlisternas
+COMPOUND(781082, 549947): avbärare + list
+859362r3<substantiv>avbärning:avbärning:avbärnings:avbärningen:avbärningens::::
+591854r6<verb>avböja:avböja:avböjde:avböjt:avböjer:avböj:avböjas:avböjdes:avböjts:avböjs, avböjes:avböjd:avböjt:avböjda::
+COMPOUND(557634, 560916): av + böja
+CUSTOM: y n
+686972r3<adjektiv>avböjande:avböjande:avböjande:avböjande:avböjande:!:!:!:
+781089r3<substantiv>avböjning:avböjning:avböjnings:avböjningen:avböjningens:avböjningar:avböjningars:avböjningarna:avböjningarnas
+548285r3<substantiv>avbön:avbön:avböns:avbönen:avbönens:avböner:avböners:avbönerna:avbönernas
+771037r3<verb>avbörda:avbörda:avbördade:avbördat:avbördar:avbörda:avbördas:avbördades:avbördats:avbördas:avbördad:avbördat:avbördade:avbördande:
+586068r3<verb>avcentrifugera:avcentrifugera:avcentrifugerade:avcentrifugerat:avcentrifugerar:avcentrifugera:::::::::
+859367r6<verb>avdagataga, avdagata:avdagata, avdagataga:avdagatog:avdagatagit:avdagatar, avdagatager:avdagata:avdagatas, avdagatagas:avdagatogs:avdagatagits:avdagatas, avdagatages:avdagatagen:avdagataget:avdagatagna:avdagatagande:
+781097r3<verb>avdamma:avdamma:avdammade:avdammat:avdammar:avdamma:avdammas:avdammades:avdammats:avdammas:avdammad:avdammat:avdammade::
+CUSTOM: n n
+935837r3<adjektiv>avdammad:avdammad:avdammat:avdammade:avdammade:!:!:!:::::::::
+781105r3<substantiv>avdamning:avdamning:avdamnings:avdamningen:avdamningens:avdamningar:avdamningars:avdamningarna:avdamningarnas
+686973r3<adjektiv>avdankad:avdankad:avdankat:avdankade:avdankade:!:!:!:
+546119r6<verb>avdela:avdela:avdelade:avdelat:avdelar:avdela:avdelas:avdelades:avdelats:avdelas:avdelad:avdelat:avdelade:avdelande:
+COMPOUND(557634, 546382): av + dela
+846323r5<substantiv>avdelare:avdelare:avdelares:avdelaren:avdelarens:avdelare:avdelares:avdelarna:avdelarnas
+596363r16<substantiv>avdelning:avdelning:avdelnings:avdelningen:avdelningens:avdelningar:avdelningars:avdelningarna:avdelningarnas
+CUSTOM: y y avdelnings +avdelnings
+601177r3<substantiv>avdelningschef:avdelningschef:avdelningschefs:avdelningschefen:avdelningschefens:avdelningschefer:avdelningschefers:avdelningscheferna:avdelningschefernas
+892232r3<substantiv>avdemokratisering:avdemokratisering:avdemokratiserings:avdemokratiseringen:avdemokratiseringens:avdemokratiseringar:avdemokratiseringars:avdemokratiseringarna:avdemokratiseringarnas
+958913r4<verb>avdemonisera:avdemonisera:avdemoniserade:avdemoniserat:avdemoniserar:avdemonisera:avdemoniseras:avdemoniserades:avdemoniserats:avdemoniseras:avdemoniserad:avdemoniserat:avdemoniserade:avdemoniserande:
+COMPOUND(557635, 753381): av + demonisera
+586072r3<verb>avdestillera:avdestillera:avdestillerade:avdestillerat:avdestillerar:avdestillera:::::::::
+765325r3<adjektiv>avdomnad:avdomnad:avdomnat:avdomnade:avdomnade:!:!:!:
+968015r3<substantiv>avdomning:avdomning:avdomnings:avdomningen:avdomningens::::
+968031r5<verb>avdra, avdraga:avdra, avdraga:avdrog:avdragit:avdrar, avdrager:avdra:avdras, avdragas:avdrogs:avdragits:avdras, avdrages:avdragen:avdraget:avdragna:avdragande:
+COMPOUND(557635, 558196): av + dra, draga
+CUSTOM: y n
+552203r6<substantiv>avdrag:avdrag:avdrags:avdraget:avdragets:avdrag:avdrags:avdragen:avdragens
+CUSTOM: y y avdrags +avdrags
+763485r3<substantiv>avdragare:avdragare:avdragares:avdragaren:avdragarens:avdragare:avdragares:avdragarna:avdragarnas
+568864r3<adjektiv>avdragbar:avdragbar:avdragbart:avdragbara:avdragbara::::
+686975r3<adjektiv>avdragen:avdragen:avdraget:avdragna:avdragna:!:!:!:
+789918r3<adjektiv>avdragsberättigad:avdragsberättigad:avdragsberättigat:avdragsberättigade:avdragsberättigade:!:!:!:
+564660r3<adjektiv>avdragsgill:avdragsgill:avdragsgillt:avdragsgilla:avdragsgilla::::
+756136r4<substantiv>avdragsår:avdragsår:avdragsårs:avdragsåret:avdragsårets:avdragsår:avdragsårs:avdragsåren:avdragsårens
+COMPOUND(552203, 553140): avdrag + år
+546120r6<verb>avdramatisera:avdramatisera:avdramatiserade:avdramatiserat:avdramatiserar:avdramatisera:avdramatiseras:avdramatiserades:avdramatiserats:avdramatiseras:avdramatiserad:avdramatiserat:avdramatiserade:avdramatiserande:
+COMPOUND(557634, 546435): av + dramatisera
+781113r3<substantiv>avdramatisering:avdramatisering:avdramatiserings:avdramatiseringen:avdramatiseringens:avdramatiseringar:avdramatiseringars:avdramatiseringarna:avdramatiseringarnas
+781121r3<substantiv>avdrift:avdrift:avdrifts:avdriften:avdriftens::::
+968019r3<substantiv>avdrivning:avdrivning:avdrivnings:avdrivningen:avdrivningens:avdrivningar:avdrivningars:avdrivningarna:avdrivningarnas
+781125r3<substantiv>avdukning:avdukning:avduknings:avdukningen:avdukningens:avdukningar:avdukningars:avdukningarna:avdukningarnas
+546121r6<verb>avdunsta:avdunsta:avdunstade:avdunstat:avdunstar:avdunsta:avdunstas:avdunstades:avdunstats:avdunstas:avdunstad:avdunstat:avdunstade:avdunstande:
+COMPOUND(557634, 649629): av + dunsta
+568867r3<adjektiv>avdunstbar:avdunstbar:avdunstbart:avdunstbara:avdunstbara::::
+682006r3<substantiv>avdunstning:avdunstning:avdunstnings:avdunstningen:avdunstningens:avdunstningar:avdunstningars:avdunstningarna:avdunstningarnas
+CUSTOM: y y avdunstnings
+623808r4<adjektiv>avdöd:avdöd:avdött:avdöda:avdöda::::avdöde
+CUSTOM: y n
+789921r3<adjektiv>avdödad:avdödad:avdödat:avdödade:avdödade:!:!:!:
+CUSTOM: n n y
+968027r3<substantiv>avdödning:avdödning:avdödnings:avdödningen:avdödningens::::
+859383r4<verb>avdöma:avdöma:avdömde:avdömt:avdömer:avdöm:avdömas:avdömdes:avdömts:avdöms, avdömes:avdömd:avdömt:avdömda:avdömande:
+COMPOUND(557635, 558372): av + döma
+CUSTOM: y n
+557845r4<substantiv>ave:ave:aves:avet:avets:aven:avens:avena:avenas
+DEFINITION 1: Katolsk bön, Ave Maria
+CUSTOM: n n y
+781133r3<substantiv>avec:avec:avecs:avecen:avecens:avecer:avecers:avecerna:avecernas
+CUSTOM: y n
+616514r7<substantiv>avel:avel:avels:aveln:avelns:!:!:!:!
+CUSTOM: y y avels +avels
+563338r3<adjektiv>avelsam:avelsam:avelsamt:avelsamma:avelsamma::::
+CUSTOM: n n
+565566r3<adjektiv>avelsduglig:avelsduglig:avelsdugligt:avelsdugliga:avelsdugliga::::
+944222r4<substantiv>avelsfår:avelsfår:avelsfårs:avelsfåret:avelsfårets:avelsfår:avelsfårs:avelsfåren:avelsfårens
+COMPOUND(616514, 556541): avel + får
+623812r3<substantiv>avelshund:avelshund:avelshunds:avelshunden:avelshundens:avelshundar:avelshundars:avelshundarna:avelshundarnas
+781141r4<substantiv>avelsko:avelsko:avelskos:avelskon:avelskons:avelskor:avelskors:avelskorna:avelskornas
+COMPOUND(616514, 557679): avel + ko
+892967r3<substantiv>avelslax:avelslax:avelslax:avelslaxen:avelslaxens:avelslaxar:avelslaxars:avelslaxarna:avelslaxarnas
+849027r7<substantiv>avelssto:avelssto:avelsstos:avelsstoet:avelsstoets:avelsston:avelsstons:avelsstona:avelsstonas
+COMPOUND(616514, 627845): avel + sto
+586076r3<verb>avemaljera:avemaljera:avemaljerade:avemaljerat:avemaljerar:avemaljera:::::::::
+623821r3<substantiv>avenbok:avenbok:avenboks:avenboken:avenbokens:avenbokar:avenbokars:avenbokarna:avenbokarnas
+CUSTOM: y n avenboks
+616515r3<substantiv>aveny:aveny:avenys:avenyn:avenyns:avenyer:avenyers:avenyerna:avenyernas
+548287r3<substantiv>aversion:aversion:aversions:aversionen:aversionens:aversioner:aversioners:aversionerna:aversionernas
+CUSTOM: y y aversions
+554187r6<egennamn>Avesta:Avesta:Avesta, Avestas
+CUSTOM: y n Avesta
+579097r3<adjektiv>avestisk:avestisk:avestiskt:avestiska:avestiska::::
+CUSTOM: n n
+552204r13<substantiv>avfall:avfall:avfalls:avfallet:avfallets:avfall:avfalls:avfallen:avfallens
+CUSTOM: y y avfalls +avfalls
+623829r3<verb>avfalla:avfalla:avföll:avfallit:avfaller:avfall:!:!:!:!:avfallen:avfallet:avfallna:avfallande:
+682007r3<adjektiv>avfallen:avfallen:avfallet:avfallna:avfallna::::avfallne
+733025r4<substantiv>avfallsbehållare:avfallsbehållare:avfallsbehållares:avfallsbehållaren:avfallsbehållarens:avfallsbehållare:avfallsbehållares:avfallsbehållarna:avfallsbehållarnas
+COMPOUND(552204, 592486): avfall + behållare
+735398r4<substantiv>avfallshantering:avfallshantering:avfallshanterings:avfallshanteringen:avfallshanteringens:avfallshanteringar:avfallshanteringars:avfallshanteringarna:avfallshanteringarnas
+COMPOUND(552204, 632084): avfall + hantering
+849033r3<substantiv>avfallshög:avfallshög:avfallshögs:avfallshögen:avfallshögens:avfallshögar:avfallshögars:avfallshögarna:avfallshögarnas
+762433r4<substantiv>avfallskvarn:avfallskvarn:avfallskvarns:avfallskvarnen:avfallskvarnens:avfallskvarnar:avfallskvarnars:avfallskvarnarna:avfallskvarnarnas
+COMPOUND(552204, 551648): avfall + kvarn
+735406r4<substantiv>avfallsproblem:avfallsproblem:avfallsproblems:avfallsproblemet:avfallsproblemets:avfallsproblem:avfallsproblems:avfallsproblemen:avfallsproblemens
+COMPOUND(552204, 552791): avfall + problem
+605424r3<substantiv>avfallsprodukt:avfallsprodukt:avfallsprodukts:avfallsprodukten:avfallsproduktens:avfallsprodukter:avfallsprodukters:avfallsprodukterna:avfallsprodukternas
+548289r3<substantiv>avfart:avfart:avfarts:avfarten:avfartens:avfarter:avfarters:avfarterna:avfarternas
+CUSTOM: y y avfarts
+789924r3<adjektiv>avfasad:avfasad:avfasat:avfasade:avfasade:!:!:!:
+781149r3<substantiv>avfasning:avfasning:avfasnings:avfasningen:avfasningens:avfasningar:avfasningars:avfasningarna:avfasningarnas
+546122r6<verb>avfatta:avfatta:avfattade:avfattat:avfattar:avfatta:avfattas:avfattades:avfattats:avfattas:avfattad:avfattat:avfattade:avfattande:
+COMPOUND(557634, 546519): av + fatta
+859397r3<substantiv>avfattning:avfattning:avfattnings:avfattningen:avfattningens:avfattningar:avfattningars:avfattningarna:avfattningarnas
+968044r3<verb>avfetta:avfetta:avfettade:avfettat:avfettar:avfetta:avfettas:avfettades:avfettats:avfettas:avfettad:avfettat:avfettade:avfettande:
+781157r4<substantiv>avfettning:avfettning:avfettnings:avfettningen:avfettningens::::
+CUSTOM: y y avfettnings
+781161r4<substantiv>avfettningsmedel:avfettningsmedel:avfettningsmedels:avfettningsmedlet:avfettningsmedlets:avfettningsmedel:avfettningsmedels:avfettningsmedlen:avfettningsmedlens
+COMPOUND(781157, 560532): avfettning + medel
+586080r3<verb>avfiltrera:avfiltrera:avfiltrerade:avfiltrerat:avfiltrerar:avfiltrera:::::::::
+623832r3<verb>avfira:avfira:avfirade:avfirat:avfirar:avfira:avfiras:avfirades:avfirats:avfiras::::avfirande:
+968053r3<substantiv>avfjällning:avfjällning:avfjällnings:avfjällningen:avfjällningens::::
+682009r4<verb>avfjärma:avfjärma:avfjärmade:avfjärmat:avfjärmar:avfjärma:avfjärmas:avfjärmades:avfjärmats:avfjärmas:avfjärmad:avfjärmat:avfjärmade::
+COMPOUND(557634, 561362): av + fjärma
+CUSTOM: y n n
+789927r3<adjektiv>avflagad:avflagad:avflagat:avflagade:avflagade:!:!:!:
+859406r3<adjektiv>avflagnad:avflagnad:avflagnat:avflagnade:avflagnade:!:!:!:
+859410r4<verb>avflytta:avflytta:avflyttade:avflyttat:avflyttar:avflytta:avflyttas:avflyttades:avflyttats:avflyttas:avflyttad:avflyttat:avflyttade:avflyttande:
+COMPOUND(557635, 546562): av + flytta
+568870r3<adjektiv>avflyttbar:avflyttbar:avflyttbart:avflyttbara:avflyttbara::::
+682019r4<substantiv>avflyttning:avflyttning:avflyttnings:avflyttningen:avflyttningens:avflyttningar:avflyttningars:avflyttningarna:avflyttningarnas
+COMPOUND(557634, 656841): av + flyttning
+CUSTOM: y y avflyttnings
+714657r4<substantiv>avflöde:avflöde:avflödes:avflödet:avflödets:avflöden:avflödens:avflödena:avflödenas
+COMPOUND(557634, 625334): av + flöde
+546123r5<verb>avfolka:avfolka:avfolkade:avfolkat:avfolkar:avfolka:avfolkas:avfolkades:avfolkats:avfolkas:avfolkad:avfolkat:avfolkade:avfolkande:
+591660r3<deponens>avfolkas:avfolkas:avfolkades:avfolkats:avfolkas:
+752082r6<substantiv>avfolkning:avfolkning:avfolknings:avfolkningen:avfolkningens::::
+CUSTOM: y y avfolknings
+781162r4<substantiv>avfolkningsbygd:avfolkningsbygd:avfolkningsbygds:avfolkningsbygden:avfolkningsbygdens:avfolkningsbygder:avfolkningsbygders:avfolkningsbygderna:avfolkningsbygdernas
+COMPOUND(752082, 548490): avfolkning + bygd
+914506r4<substantiv>avfolkningslän:avfolkningslän:avfolkningsläns:avfolkningslänet:avfolkningslänets:avfolkningslän:avfolkningsläns:avfolkningslänen:avfolkningslänens
+COMPOUND(752082, 552681): avfolkning + län
+914514r4<substantiv>avfolkningsort:avfolkningsort:avfolkningsorts:avfolkningsorten:avfolkningsortens:avfolkningsorter:avfolkningsorters:avfolkningsorterna:avfolkningsorternas
+COMPOUND(752082, 550141): avfolkning + ort
+733031r3<verb>avfordra:avfordra:avfordrade:avfordrat:avfordrar:avfordra:avfordras:avfordrades:avfordrats:avfordras:avfordrad:avfordrat:avfordrade:avfordrande:
+586084r3<verb>avfosforera:avfosforera:avfosforerade:avfosforerat:avfosforerar:avfosforera:::::::::
+949801r3<adjektiv>avfotograferad:avfotograferad:avfotograferat:avfotograferade:avfotograferade:!:!:!:::::::::
+781163r4<verb>avfrosta:avfrosta:avfrostade:avfrostat:avfrostar:avfrosta:avfrostas:avfrostades:avfrostats:avfrostas:avfrostad:avfrostat:avfrostade:avfrostande:
+781171r4<substantiv>avfrostning:avfrostning:avfrostnings:avfrostningen:avfrostningens:avfrostningar:avfrostningars:avfrostningarna:avfrostningarnas
+CUSTOM: y y avfrostnings
+781179r4<substantiv>avfrostningsmedel:avfrostningsmedel:avfrostningsmedels:avfrostningsmedlet:avfrostningsmedlets:avfrostningsmedel:avfrostningsmedels:avfrostningsmedlen:avfrostningsmedlens
+COMPOUND(781171, 560532): avfrostning + medel
+968057r3<substantiv>avfrätning:avfrätning:avfrätnings:avfrätningen:avfrätningens::::
+781180r3<verb>avfukta:avfukta:avfuktade:avfuktat:avfuktar:avfukta:avfuktas:avfuktades:avfuktats:avfuktas:avfuktad:avfuktat:avfuktade::
+781189r3<substantiv>avfuktare:avfuktare:avfuktares:avfuktaren:avfuktarens:avfuktare:avfuktares:avfuktarna:avfuktarnas
+708757r3<substantiv>avfuktning:avfuktning:avfuktnings:avfuktningen:avfuktningens:avfuktningar:avfuktningars:avfuktningarna:avfuktningarnas
+546124r6<verb>avfyra:avfyra:avfyrade:avfyrat:avfyrar:avfyra:avfyras:avfyrades:avfyrats:avfyras:avfyrad:avfyrat:avfyrade:avfyrande:
+COMPOUND(557634, 546611): av + fyra
+708765r4<substantiv>avfyring:avfyring:avfyrings:avfyringen:avfyringens:avfyringar:avfyringars:avfyringarna:avfyringarnas
+CUSTOM: y y avfyrings +avfyrings
+708773r4<substantiv>avfyringsanordning:avfyringsanordning:avfyringsanordnings:avfyringsanordningen:avfyringsanordningens:avfyringsanordningar:avfyringsanordningars:avfyringsanordningarna:avfyringsanordningarnas
+COMPOUND(708765, 606105): avfyring + anordning
+708781r5<substantiv>avfyrning:avfyrning:avfyrnings:avfyrningen:avfyrningens:avfyrningar:avfyrningars:avfyrningarna:avfyrningarnas
+CUSTOM: y y avfyrnings +avfyrnings
+708789r4<substantiv>avfyrningsanordning:avfyrningsanordning:avfyrningsanordnings:avfyrningsanordningen:avfyrningsanordningens:avfyrningsanordningar:avfyrningsanordningars:avfyrningsanordningarna:avfyrningsanordningarnas
+COMPOUND(708781, 606105): avfyrning + anordning
+721258r4<substantiv>avfyrningsområde:avfyrningsområde:avfyrningsområdes:avfyrningsområdet:avfyrningsområdets:avfyrningsområden:avfyrningsområdens:avfyrningsområdena:avfyrningsområdenas
+COMPOUND(708781, 612761): avfyrning + område
+565569r4<adjektiv>avfällig:avfällig:avfälligt:avfälliga:avfälliga::::avfällige
+682022r5<substantiv>avfälling:avfälling:avfällings:avfällingen:avfällingens:avfällingar:avfällingars:avfällingarna:avfällingarnas
+548297r3<substantiv>avfärd:avfärd:avfärds:avfärden:avfärdens:avfärder:avfärders:avfärderna:avfärdernas
+CUSTOM: y y avfärds
+546125r4<verb>avfärda:avfärda:avfärdade:avfärdat:avfärdar:avfärda:avfärdas:avfärdades:avfärdats:avfärdas:avfärdad:avfärdat:avfärdade::
+686977r3<substantiv>avfärdande:avfärdande:avfärdandes:avfärdandet:avfärdandets::::
+686979r3<adjektiv>avfärdande:avfärdande:avfärdande:avfärdande:avfärdande:!:!:!:
+781196r3<verb>avfärga:avfärga:avfärgade:avfärgat:avfärgar:avfärga:avfärgas:avfärgades:avfärgats:avfärgas:avfärgad:avfärgat:avfärgade::
+781204r3<substantiv>avfärgning:avfärgning:avfärgnings:avfärgningen:avfärgningens:avfärgningar:avfärgningars:avfärgningarna:avfärgningarnas
+616516r3<substantiv>avföda:avföda:avfödas:avfödan:avfödans::::
+616517r4<verb>avföra:avföra:avförde:avfört:avför:avför:avföras:avfördes:avförts:avförs, avföres:avförd:avfört:avförda:avförande:
+616518r3<substantiv>avföring:avföring:avförings:avföringen:avföringens:avföringar:avföringars:avföringarna:avföringarnas
+CUSTOM: y y avförings
+548298r5<substantiv>avgas:avgas:avgas:avgasen:avgasens:avgaser:avgasers:avgaserna:avgasernas
+CUSTOM: y y avgas
+968061r3<substantiv>avgasning:avgasning:avgasnings:avgasningen:avgasningens::::
+708797r4<substantiv>avgasrör:avgasrör:avgasrörs:avgasröret:avgasrörets:avgasrör:avgasrörs:avgasrören:avgasrörens
+COMPOUND(548298, 552860): avgas + rör
+606636r3<substantiv>avgassystem:avgassystem:avgassystems:avgassystemet:avgassystemets:avgassystem:avgassystems:avgassystemen:avgassystemens
+635901r4<substantiv>avgasturbin:avgasturbin:avgasturbins:avgasturbinen:avgasturbinens:avgasturbiner:avgasturbiners:avgasturbinerna:avgasturbinernas
+COMPOUND(548298, 550716): avgas + turbin
+548299r111<substantiv>avgift:avgift:avgifts:avgiften:avgiftens:avgifter:avgifters:avgifterna:avgifternas
+CUSTOM: y y avgifts +avgifts
+546126r5<verb>avgifta:avgifta:avgiftade:avgiftat:avgiftar:avgifta:avgiftas:avgiftades:avgiftats:avgiftas:avgiftad:avgiftat:avgiftade:avgiftande:
+626794r4<substantiv>avgiftning:avgiftning:avgiftnings:avgiftningen:avgiftningens:avgiftningar:avgiftningars:avgiftningarna:avgiftningarnas
+CUSTOM: y y avgiftnings
+849041r4<substantiv>avgiftningskur:avgiftningskur:avgiftningskurs:avgiftningskuren:avgiftningskurens:avgiftningskurer:avgiftningskurers:avgiftningskurerna:avgiftningskurernas
+COMPOUND(626794, 549817): avgiftning + kur
+799082r3<adjektiv>avgiftsbelagd:avgiftsbelagd:avgiftsbelagt:avgiftsbelagda:avgiftsbelagda::::
+789930r3<adjektiv>avgiftsfinansierad:avgiftsfinansierad:avgiftsfinansierat:avgiftsfinansierade:avgiftsfinansierade:!:!:!:
+563644r3<adjektiv>avgiftsfri:avgiftsfri:avgiftsfritt:avgiftsfria:avgiftsfria::::
+571451r3<adjektiv>avgiftspliktig:avgiftspliktig:avgiftspliktigt:avgiftspliktiga:avgiftspliktiga::::
+571454r3<adjektiv>avgiftsskyldig:avgiftsskyldig:avgiftsskyldigt:avgiftsskyldiga:avgiftsskyldiga::::
+861624r4<substantiv>avgiftssystem:avgiftssystem:avgiftssystems:avgiftssystemet:avgiftssystemets:avgiftssystem:avgiftssystems:avgiftssystemen:avgiftssystemens
+COMPOUND(548299, 553021): avgift + system
+781213r4<substantiv>avgiftstak:avgiftstak:avgiftstaks:avgiftstaket:avgiftstakets:avgiftstak:avgiftstaks:avgiftstaken:avgiftstakens
+COMPOUND(548299, 553027): avgift + tak
+623841r9<verb>avgiva, avge:avge, avgiva:avgav:avgett, avgivit:avger, avgiver:avge, avgiva:avges, avgives, avgiftas:avgavs:avgetts, avgivits:avges:avgiven:avgivet:avgivna:avgivande:
+637990r4<substantiv>avgivande:avgivande:avgivandes:avgivandet:avgivandets:avgivanden:avgivandens:avgivandena:avgivandenas
+799085r3<adjektiv>avgjord:avgjord:avgjort:avgjorda:avgjorda::::
+662930r4<verb>avgjuta:avgjuta:avgöt:avgjutit:avgjuter:avgjut:avgjutas:avgöts:avgjutits:avgjuts:avgjuten:avgjutet:avgjutna::
+COMPOUND(557634, 558963): av + gjuta
+CUSTOM: y n
+710992r13<substantiv>avgjutning:avgjutning:avgjutnings:avgjutningen:avgjutningens:avgjutningar:avgjutningars:avgjutningarna:avgjutningarnas
+789933r3<adjektiv>avglamouriserad:avglamouriserad:avglamouriserat:avglamouriserade:avglamouriserade:!:!:!:
+623844r3<substantiv>avglans:avglans:avglans:avglansen:avglansens:avglanser:avglansers:avglanserna:avglansernas
+968065r3<substantiv>avglorifiering:avglorifiering:avglorifierings:avglorifieringen:avglorifieringens:avglorifieringar:avglorifieringars:avglorifieringarna:avglorifieringarnas
+682040r3<adjektiv>avgnagd:avgnagd:avgnagt:avgnagda:avgnagda::::
+CUSTOM: y n n
+968073r4<verb>avgrena:avgrena:avgrenade:avgrenat:avgrenar:avgrena:avgrenas:avgrenades:avgrenats:avgrenas:avgrenad:avgrenat:avgrenade:avgrenande:
+COMPOUND(557635, 691727): av + grena
+968082r3<substantiv>avgrening:avgrening:avgrenings:avgreningen:avgreningens:avgreningar:avgreningars:avgreningarna:avgreningarnas
+548300r6<substantiv>avgrund:avgrund:avgrunds:avgrunden:avgrundens:avgrunder:avgrunders:avgrunderna:avgrundernas
+COMPOUND(557634, 556511): av + grund
+CUSTOM: y y avgrunds
+756287r4<substantiv>avgrundsande:avgrundsande:avgrundsandes:avgrundsanden:avgrundsandens:avgrundsandar:avgrundsandars:avgrundsandarna:avgrundsandarnas
+COMPOUND(548300, 614408): avgrund + ande
+682041r4<adjektiv>avgrundsdjup:avgrundsdjup:avgrundsdjupt:avgrundsdjupa:avgrundsdjupa:avgrundsdjupare:avgrundsdjupast:avgrundsdjupaste:
+COMPOUND(548300, 563101): avgrund + djup
+826412r3<adjektiv>avgrundslik:avgrundslik:avgrundslikt:avgrundslika:avgrundslika::::
+657838r3<substantiv>avgrundsvrål:avgrundsvrål:avgrundsvråls:avgrundsvrålet:avgrundsvrålets:avgrundsvrål:avgrundsvråls:avgrundsvrålen:avgrundsvrålens
+546127r6<verb>avgränsa:avgränsa:avgränsade:avgränsat:avgränsar:avgränsa:avgränsas:avgränsades:avgränsats:avgränsas:avgränsad:avgränsat:avgränsade:avgränsande:
+COMPOUND(557634, 673273): av + gränsa
+568873r3<adjektiv>avgränsbar:avgränsbar:avgränsbart:avgränsbara:avgränsbara::::
+682045r3<substantiv>avgränsning:avgränsning:avgränsnings:avgränsningen:avgränsningens:avgränsningar:avgränsningars:avgränsningarna:avgränsningarnas
+CUSTOM: y y avgränsnings
+877501r3<adjektiv>avgrävd:avgrävd:avgrävt:avgrävda:avgrävda::::
+550845r3<substantiv>avgud:avgud:avguds:avguden:avgudens:avgudar:avgudars:avgudarna:avgudarnas
+CUSTOM: y y avguda
+546128r4<verb>avguda:avguda:avgudade:avgudat:avgudar:avguda:avgudas:avgudades:avgudats:avgudas:avgudad:avgudat:avgudade::
+682056r4<substantiv>avgudabeläte:avgudabeläte:avgudabelätes:avgudabelätet:avgudabelätets:avgudabeläten:avgudabelätens:avgudabelätena:avgudabelätenas
+COMPOUND(557634, 682047): av + gudabeläte
+682046r4<substantiv>avgudabild:avgudabild:avgudabilds:avgudabilden:avgudabildens:avgudabilder:avgudabilders:avgudabilderna:avgudabildernas
+COMPOUND(557634, 662597): av + gudabild
+615551r3<substantiv>avgudadyrkare:avgudadyrkare:avgudadyrkares:avgudadyrkaren:avgudadyrkarens:avgudadyrkare:avgudadyrkares:avgudadyrkarna:avgudadyrkarnas
+CUSTOM: y y avgudadyrkar
+682062r3<substantiv>avgudande:avgudande:avgudandes:avgudandet:avgudandets::::
+616523r3<substantiv>avguderi:avguderi:avguderis:avguderiet:avguderiets:!:!:!:!
+968090r3<substantiv>avgudning:avgudning:avgudnings:avgudningen:avgudningens::::
+585417r3<verb>avgå:avgå:avgick:avgått:avgår:avgå:::::avgången:avgånget:avgångna::
+616525r3<adjektiv>avgående:avgående:avgående:avgående:avgående:!:!:!:
+550846r5<substantiv>avgång:avgång:avgångs:avgången:avgångens:avgångar:avgångars:avgångarna:avgångarnas
+CUSTOM: y y avgångs +avgångs
+616526r3<substantiv>avgångsbetyg:avgångsbetyg:avgångsbetygs:avgångsbetyget:avgångsbetygets:avgångsbetyg:avgångsbetygs:avgångsbetygen:avgångsbetygens
+608922r3<substantiv>avgångsbidrag:avgångsbidrag:avgångsbidrags:avgångsbidraget:avgångsbidragets:avgångsbidrag:avgångsbidrags:avgångsbidragen:avgångsbidragens
+596364r3<substantiv>avgångsersättning:avgångsersättning:avgångsersättnings:avgångsersättningen:avgångsersättningens:avgångsersättningar:avgångsersättningars:avgångsersättningarna:avgångsersättningarnas
+CUSTOM: y y avgångsersättnings
+708803r4<substantiv>avgångstid:avgångstid:avgångstids:avgångstiden:avgångstidens:avgångstider:avgångstiders:avgångstiderna:avgångstidernas
+COMPOUND(550846, 550665): avgång + tid
+616527r3<substantiv>avgångsvederlag:avgångsvederlag:avgångsvederlags:avgångsvederlaget:avgångsvederlagets:avgångsvederlag:avgångsvederlags:avgångsvederlagen:avgångsvederlagens
+841011r4<substantiv>avgångsår:avgångsår:avgångsårs:avgångsåret:avgångsårets:avgångsår:avgångsårs:avgångsåren:avgångsårens
+COMPOUND(550846, 553140): avgång + år
+616531r3<substantiv>avgäld:avgäld:avgälds:avgälden:avgäldens:avgälder:avgälders:avgälderna:avgäldernas
+CUSTOM: y y avgälds
+585418r5<verb>avgöra:avgöra:avgjorde:avgjort:avgör:avgör:avgöras:avgjordes:avgjorts:avgörs, avgöres:avgjord:avgjort:avgjorda:avgörande:
+612310r3<substantiv>avgörande:avgörande:avgörandes:avgörandet:avgörandets:avgöranden:avgörandens:avgörandena:avgörandenas
+570963r3<adjektiv>avgörande:avgörande:avgörande:avgörande:avgörande:!:!:!:
+968094r3<substantiv>avgörelse:avgörelse:avgörelses:avgörelsen:avgörelsens::::
+968098r3<substantiv>avhakning:avhakning:avhaknings:avhakningen:avhakningens::::
+546129r5<verb>avhandla:avhandla:avhandlade:avhandlat:avhandlar:avhandla:avhandlas:avhandlades:avhandlats:avhandlas:avhandlad:avhandlat:avhandlade:avhandlande:
+606186r4<substantiv>avhandling:avhandling:avhandlings:avhandlingen:avhandlingens:avhandlingar:avhandlingars:avhandlingarna:avhandlingarnas
+CUSTOM: y y avhandlings
+968102r3<substantiv>avhaspling:avhaspling:avhasplings:avhasplingen:avhasplingens::::
+623852r4<verb>avhjälpa:avhjälpa:avhjälpte:avhjälpt:avhjälper:avhjälp:avhjälpas:avhjälptes:avhjälpts:avhjälps, avhjälpes:avhjälpt:avhjälpt:avhjälpta:avhjälpande:
+552205r3<substantiv>avhopp:avhopp:avhopps:avhoppet:avhoppets:avhopp:avhopps:avhoppen:avhoppens
+CUSTOM: y y avhopps
+686980r3<adjektiv>avhoppad:avhoppad:avhoppat:avhoppade:avhoppade:!:!:!:
+609219r3<substantiv>avhoppare:avhoppare:avhoppares:avhopparen:avhopparens:avhoppare:avhoppares:avhopparna:avhopparnas
+CUSTOM: y y avhoppar
+960470r3<verb>avhorna:avhorna:avhornade:avhornat:avhornar:avhorna:avhornas:avhornades:avhornats:avhornas:avhornad:avhornat:avhornade:avhornande:
+686981r4<verb>avhugga:avhugga:avhögg:avhuggit:avhugger::avhuggas:avhöggs:avhuggits:avhuggs:avhuggen:avhugget:avhuggna::
+CUSTOM: n n n
+935833r3<adjektiv>avhuggen:avhuggen:avhugget:avhuggna:avhuggna::::::::::::
+781220r3<substantiv>avhuggning:avhuggning:avhuggnings:avhuggningen:avhuggningens:avhuggningar:avhuggningars:avhuggningarna:avhuggningarnas
+586088r4<verb>avhumanisera:avhumanisera:avhumaniserade:avhumaniserat:avhumaniserar:avhumanisera:avhumaniseras:avhumaniserades:avhumaniserats:avhumaniseras:avhumaniserad:avhumaniserat:avhumaniserade:avhumaniserande:
+955150r3<adjektiv>avhumaniserad:avhumaniserad:avhumaniserat:avhumaniserade:avhumaniserade:!:!:!:::::::::
+781228r3<substantiv>avhumanisering:avhumanisering:avhumaniserings:avhumaniseringen:avhumaniseringens::::
+591855r4<verb>avhysa:avhysa:avhyste:avhyst:avhyser:avhys:avhysas:avhystes:avhysts:avhyses:avhyst:avhyst:avhysta:avhysande:
+CUSTOM: y n
+606187r3<substantiv>avhysning:avhysning:avhysnings:avhysningen:avhysningens:avhysningar:avhysningars:avhysningarna:avhysningarnas
+CUSTOM: y y avhysnings
+638070r4<verb>avhyvla:avhyvla:avhyvlade:avhyvlat:avhyvlar:avhyvla:avhyvlas:avhyvlades:avhyvlats:avhyvlas:avhyvlad:avhyvlat:avhyvlade::
+752086r3<substantiv>avhyvling:avhyvling:avhyvlings:avhyvlingen:avhyvlingens:avhyvlingar:avhyvlingars:avhyvlingarna:avhyvlingarnas
+585419r5<verb>avhålla:avhålla:avhöll:avhållit:avhåller:avhåll:avhållas:avhölls:avhållits:avhålls, avhålles:avhållen:avhållet:avhållna:avhållande:
+686983r3<adjektiv>avhållen:avhållen:avhållet:avhållna:avhållna::::avhållne
+563341r4<adjektiv>avhållsam:avhållsam:avhållsamt:avhållsamma:avhållsamma::::avhållsamme
+752094r3<substantiv>avhållsamhet:avhållsamhet:avhållsamhets:avhållsamheten:avhållsamhetens::::
+623854r3<verb>avhåna:avhåna:avhånade:avhånat:avhånar:avhåna:avhånas:avhånades:avhånats:avhånas:avhånad:avhånat:avhånade:avhånande:
+781232r3<verb>avhälla:avhälla:avhällde:avhällt:avhäller:avhäll:avhällas:avhällades:avhällats:avhällas:avhälld:avhällt:avhällda::
+546130r5<verb>avhämta:avhämta:avhämtade:avhämtat:avhämtar:avhämta:avhämtas:avhämtades:avhämtats:avhämtas:avhämtad:avhämtat:avhämtade:avhämtande:
+686984r3<substantiv>avhämtning:avhämtning:avhämtnings:avhämtningen:avhämtningens::::
+CUSTOM: y y avhämtnings
+623863r10<verb>avhända:avhända:avhände:avhänt:avhänder:avhänd:avhändas:avhändes:avhänts:avhänds, avhändes:avhänd:avhänt:avhända:avhändande:
+568876r3<adjektiv>avhändbar:avhändbar:avhändbart:avhändbara:avhändbara::::
+912467r3<adjektiv>avhängd:avhängd:avhängt:avhängda:avhängda::::::::::::
+571457r3<adjektiv>avhängig:avhängig:avhängigt:avhängiga:avhängiga::::
+781242r3<substantiv>avhängighet:avhängighet:avhängighets:avhängigheten:avhängighetens::::
+781246r3<verb>avhärda:avhärda:avhärdade:avhärdat:avhärdar:avhärda:avhärdas:avhärdades:avhärdats:avhärdas:avhärdad:avhärdat:avhärdade:avhärdande:
+781255r3<substantiv>avhärdning:avhärdning:avhärdnings:avhärdningen:avhärdningens:avhärdningar:avhärdningars:avhärdningarna:avhärdningarnas
+968106r3<verb>avhästa:avhästa:avhästade:avhästat:avhästar:avhästa:avhästas:avhästades:avhästats:avhästas:avhästad:avhästat:avhästade:avhästande:
+859429r3<substantiv>avhästning:avhästning:avhästnings:avhästningen:avhästningens::::
+968115r4<verb>avhöra:avhöra:avhörde:avhört:avhör:avhör:avhöras:avhördes:avhörts:avhörs, avhöres:avhörd:avhört:avhörda:avhörande:
+COMPOUND(557635, 555885): av + höra
+557848r8<substantiv>avi:avi:avis:avin:avins:avier:aviers:avierna:aviernas
+859433r3<substantiv>aviarium:aviarium:aviariums:aviariet:aviariets:aviarier:aviariers:aviarierna:aviariernas
+634280r3<substantiv>aviatik:aviatik:aviatiks:aviatiken:aviatikens::::
+579100r3<adjektiv>aviatisk:aviatisk:aviatiskt:aviatiska:aviatiska::::
+677875r3<substantiv>aviatris:aviatris:aviatris:aviatrisen:aviatrisens:aviatriser:aviatrisers:aviatriserna:aviatrisernas
+781263r3<substantiv>aviatör:aviatör:aviatörs:aviatören:aviatörens:aviatörer:aviatörers:aviatörerna:aviatörernas
+707476r3<substantiv>aviavgift:aviavgift:aviavgifts:aviavgiften:aviavgiftens:aviavgifter:aviavgifters:aviavgifterna:aviavgifternas
+586092r4<verb>avidentifiera:avidentifiera:avidentifierade:avidentifierat:avidentifierar:avidentifiera:avidentifieras:avidentifierades:avidentifierats:avidentifieras:avidentifierad:avidentifierat:avidentifierade:avidentifierande:
+781271r3<substantiv>avidentifiering:avidentifiering:avidentifierings:avidentifieringen:avidentifieringens:avidentifieringar:avidentifieringars:avidentifieringarna:avidentifieringarnas
+968127r3<substantiv>avideologisering:avideologisering:avideologiserings:avideologiseringen:avideologiseringens:avideologiseringar:avideologiseringars:avideologiseringarna:avideologiseringarnas
+564678r5<adjektiv>avig:avig:avigt:aviga:aviga:avigare:avigast:avigaste:avige::::::::
+616539r4<substantiv>aviga:aviga:avigas:avigan:avigans:!:!:!:!
+781279r4<substantiv>avighet:avighet:avighets:avigheten:avighetens:avigheter:avigheters:avigheterna:avigheternas
+968135r4<substantiv>avigmaska:avigmaska:avigmaskas:avigmaskan:avigmaskans:avigmaskor:avigmaskors:avigmaskorna:avigmaskornas
+COMPOUND(564678, 560509): avig + maska
+616542r3<substantiv>avigsida:avigsida:avigsidas:avigsidan:avigsidans:avigsidor:avigsidors:avigsidorna:avigsidornas
+789936r3<adjektiv>avigstickad:avigstickad:avigstickat:avigstickade:avigstickade:!:!:!:
+799086r3<adjektiv>avigvänd:avigvänd:avigvänt:avigvända:avigvända::::
+789127r4<verb>avinstallera:avinstallera:avinstallerade:avinstallerat:avinstallerar:avinstallera:avinstalleras:avinstallerades:avinstallerats:avinstalleras:avinstallerad:avinstallerat:avinstallerade:avinstallerande:
+COMPOUND(557634, 547014): av + installera
+901680r4<verb>avisa:avisa:avisade:avisat:avisar:avisa:avisas:avisades:avisats:avisas:avisad:avisat:avisade::
+COMPOUND(557634, 547052): av + isa
+546131r5<verb>avisera:avisera:aviserade:aviserat:aviserar:avisera:aviseras:aviserades:aviserats:aviseras:aviserad:aviserat:aviserade:aviserande:
+616543r5<substantiv>avisering:avisering:aviserings:aviseringen:aviseringens:aviseringar:aviseringars:aviseringarna:aviseringarnas
+CUSTOM: y y aviserings +aviserings
+671654r4<substantiv>aviseringsavgift:aviseringsavgift:aviseringsavgifts:aviseringsavgiften:aviseringsavgiftens:aviseringsavgifter:aviseringsavgifters:aviseringsavgifterna:aviseringsavgifternas
+COMPOUND(616543, 548299): avisering + avgift
+687064r4<substantiv>avisning:avisning:avisnings:avisningen:avisningens::::
+DEFINITION 1: Borttagning av is, t.ex. från flygplansvingar.
+CUSTOM: y y avisnings
+586096r3<verb>avisolera:avisolera:avisolerade:avisolerat:avisolerar:avisolera:::::::::
+632377r3<substantiv>A-vitamin:A-vitamin:A-vitamins:A-vitaminen:A-vitaminens:A-vitaminer:A-vitaminers:A-vitaminerna:A-vitaminernas
+CUSTOM: n n
+789939r3<adjektiv>avjagad:avjagad:avjagat:avjagade:avjagade:!:!:!:
+586100r3<verb>avjonisera:avjonisera:avjoniserade:avjoniserat:avjoniserar:avjonisera:::::::::
+968143r4<verb>avjämna:avjämna:avjämnade:avjämnat:avjämnar:avjämna:avjämnas:avjämnades:avjämnats:avjämnas:avjämnad:avjämnat:avjämnade:avjämnande:
+COMPOUND(557635, 547062): av + jämna
+781283r3<substantiv>avjämning:avjämning:avjämnings:avjämningen:a

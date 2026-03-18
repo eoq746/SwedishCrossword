@@ -1,0 +1,662 @@
+63r18<substantiv>ö:ö:ös:ön:öns:öar:öars:öarna:öarnas
+CUSTOM: y n
+629599r3<substantiv>öbefolkning:öbefolkning:öbefolknings:öbefolkningen:öbefolkningens:öbefolkningar:öbefolkningars:öbefolkningarna:öbefolkningarnas
+CUSTOM: y y öbefolknings
+629273r3<substantiv>öbo:öbo:öbos:öbon:öbons:öbor:öbors:öborna:öbornas
+728340r3<egennamn>Öckerö:Öckerö:Öckerös
+CUSTOM: y n Öckerö
+655004r4<verb>öda:öda:ödde:ött:öder:öd::::::::ödande:
+CUSTOM: y n !ödande
+571236r11<adjektiv>öde:öde:öde:öde:öde:!:!:!:::::::::
+CUSTOM: y n
+571235r19<substantiv>öde:öde:ödes:ödet:ödets:öden:ödens:ödena:ödenas
+CUSTOM: y n ödes
+818511r3<substantiv>ödeby:ödeby:ödebys:ödebyn:ödebyns:ödebyar:ödebyars:ödebyarna:ödebyarnas
+CUSTOM: y n
+933816r4<substantiv>ödebygd:ödebygd:ödebygds:ödebygden:ödebygdens:ödebygder:ödebygders:ödebygderna:ödebygdernas
+COMPOUND(571236, 548490): öde + bygd
+960352r4<substantiv>ödefastighet:ödefastighet:ödefastighets:ödefastigheten:ödefastighetens:ödefastigheter:ödefastigheters:ödefastigheterna:ödefastigheternas
+COMPOUND(571236, 601828): öde + fastighet
+933808r4<substantiv>ödegård:ödegård:ödegårds:ödegården:ödegårdens:ödegårdar:ödegårdars:ödegårdarna:ödegårdarnas
+COMPOUND(571236, 551337): öde + gård
+960275r3<substantiv>ödehemman:ödehemman:ödehemmans:ödehemmanet:ödehemmanets:ödehemman:ödehemmans:ödehemmanen:ödehemmanens
+928180r4<substantiv>ödehus:ödehus:ödehus:ödehuset:ödehusets:ödehus:ödehus:ödehusen:ödehusens
+COMPOUND(571236, 552480): öde + hus
+CUSTOM: y n ödehus
+663550r3<substantiv>ödekyrka:ödekyrka:ödekyrkas:ödekyrkan:ödekyrkans:ödekyrkor:ödekyrkors:ödekyrkorna:ödekyrkornas
+649433r5<verb>ödelägga:ödelägga:ödelade:ödelagt:ödelägger:ödelägg:ödeläggas:ödelades:ödelagts:ödeläggs, ödelägges:ödelagd:ödelagt:ödelagda:ödeläggande:
+COMPOUND(571236, 556585): öde + lägga
+649442r3<substantiv>ödeläggelse:ödeläggelse:ödeläggelses:ödeläggelsen:ödeläggelsens:ödeläggelser:ödeläggelsers:ödeläggelserna:ödeläggelsernas
+CUSTOM: y y ödeläggelse
+553165r5<substantiv>ödem:ödem:ödems:ödemet:ödemets:ödem:ödems:ödemen:ödemens
+CUSTOM: y n
+550825r4<substantiv>ödemark:ödemark:ödemarks:ödemarken:ödemarkens:ödemarker:ödemarkers:ödemarkerna:ödemarkernas
+CUSTOM: y y ödemarks
+758791r4<substantiv>ödemarkslandskap:ödemarkslandskap:ödemarkslandskaps:ödemarkslandskapet:ödemarkslandskapets:ödemarkslandskap:ödemarkslandskaps:ödemarkslandskapen:ödemarkslandskapens
+COMPOUND(550825, 555499): ödemark + landskap
+758792r3<adjektiv>ödesbestämd:ödesbestämd:ödesbestämt:ödesbestämda:ödesbestämda:!:!:!:
+818519r3<adjektiv>ödesbunden:ödesbunden:ödesbundet:ödesbundna:ödesbundna::::
+751486r4<substantiv>ödesdag:ödesdag:ödesdags:ödesdagen:ödesdagens:ödesdagar:ödesdagars:ödesdagarna:ödesdagarnas
+COMPOUND(571235, 551009): öde + dag
+649450r7<adjektiv>ödesdiger:ödesdiger:ödesdigert:ödesdigra:ödesdigra:ödesdigrare:ödesdigrast:ödesdigraste:!
+796927r3<adjektiv>ödesdrabbad:ödesdrabbad:ödesdrabbat:ödesdrabbade:ödesdrabbade:!:!:!:
+921088r4<substantiv>ödesdrama:ödesdrama:ödesdramas:ödesdramat:ödesdramats:ödesdramer:ödesdramers:ödesdramerna:ödesdramernas
+COMPOUND(571235, 625246): öde + drama
+707881r4<substantiv>ödesfråga:ödesfråga:ödesfrågas:ödesfrågan:ödesfrågans:ödesfrågor:ödesfrågors:ödesfrågorna:ödesfrågornas
+COMPOUND(571235, 594085): öde + fråga
+758795r4<substantiv>ödesgudinna:ödesgudinna:ödesgudinnas:ödesgudinnan:ödesgudinnans:ödesgudinnor:ödesgudinnors:ödesgudinnorna:ödesgudinnornas
+COMPOUND(571235, 556344): öde + gudinna
+728342r3<egennamn>Ödeshög:Ödeshög:Ödeshögs
+CUSTOM: y n Ödeshögs
+751495r4<substantiv>ödesmatch:ödesmatch:ödesmatchs:ödesmatchen:ödesmatchens:ödesmatcher:ödesmatchers:ödesmatcherna:ödesmatchernas
+COMPOUND(571235, 550011): öde + match
+751496r4<adjektiv>ödesmättad:ödesmättad:ödesmättat:ödesmättade:ödesmättade:!:!:!:
+COMPOUND(571235, 659970): öde + mättad
+818525r3<substantiv>ödesstund:ödesstund:ödesstunds:ödesstunden:ödesstundens:ödesstunder:ödesstunders:ödesstunderna:ödesstundernas
+818533r3<substantiv>ödesstämning:ödesstämning:ödesstämnings:ödesstämningen:ödesstämningens:ödesstämningar:ödesstämningars:ödesstämningarna:ödesstämningarnas
+960317r4<substantiv>ödestal:ödestal:ödestals:ödestalet:ödestalets:ödestal:ödestals:ödestalen:ödestalens
+COMPOUND(571235, 553029): öde + tal
+818541r3<substantiv>ödestimma:ödestimma:ödestimmas:ödestimman:ödestimmans::::
+818545r3<substantiv>ödestimme:ödestimme:ödestimmes:ödestimmen:ödestimmens:ödestimmar:ödestimmars:ödestimmarna:ödestimmarnas
+818553r3<substantiv>ödestragedi:ödestragedi:ödestragedis:ödestragedin:ödestragedins:ödestragedier:ödestragediers:ödestragedierna:ödestragediernas
+818561r3<substantiv>ödestro:ödestro:ödestros:ödestron:ödestrons::::
+751497r4<substantiv>ödestuga:ödestuga:ödestugas:ödestugan:ödestugans:ödestugor:ödestugors:ödestugorna:ödestugornas
+COMPOUND(571236, 595420): öde + stuga
+800854r3<adjektiv>ödestyngd:ödestyngd:ödestyngt:ödestyngda:ödestyngda::::
+818565r4<substantiv>ödesval:ödesval:ödesvals:ödesvalet:ödesvalets:ödesval:ödesvals:ödesvalen:ödesvalens
+853790r4<substantiv>ödesår:ödesår:ödesårs:ödesåret:ödesårets:ödesår:ödesårs:ödesåren:ödesårens
+COMPOUND(571235, 553140): öde + år
+751505r4<substantiv>ödetomt:ödetomt:ödetomts:ödetomten:ödetomtens:ödetomter:ödetomters:ödetomterna:ödetomternas
+COMPOUND(571236, 559076): öde + tomt
+751513r4<substantiv>ödetorp:ödetorp:ödetorps:ödetorpet:ödetorpets:ödetorp:ödetorps:ödetorpen:ödetorpens
+COMPOUND(571236, 553057): öde + torp
+622985r5<substantiv>ödla:ödla:ödlas:ödlan:ödlans:ödlor:ödlors:ödlorna:ödlornas
+BASEWORDS: ödle
+CUSTOM: y y ödle
+629607r3<substantiv>ödleart:ödleart:ödlearts:ödlearten:ödleartens:ödlearter:ödlearters:ödlearterna:ödlearternas
+826653r3<adjektiv>ödlelik:ödlelik:ödlelikt:ödlelika:ödlelika::::
+629615r3<substantiv>ödleskinn:ödleskinn:ödleskinns:ödleskinnet:ödleskinnets:ödleskinn:ödleskinns:ödleskinnen:ödleskinnens
+629621r3<substantiv>ödleväska:ödleväska:ödleväskas:ödleväskan:ödleväskans:ödleväskor:ödleväskors:ödleväskorna:ödleväskornas
+640576r4<adjektiv>ödmjuk:ödmjuk:ödmjukt:ödmjuka:ödmjuka:ödmjukare:ödmjukast:ödmjukaste:ödmjuke
+649451r9<verb>ödmjuka:ödmjuka:ödmjukade:ödmjukat:ödmjukar:ödmjuka:ödmjukas:ödmjukades:ödmjukats:ödmjukas:!:!:!:ödmjukande:!
+649452r3<substantiv>ödmjukhet:ödmjukhet:ödmjukhets:ödmjukheten:ödmjukhetens::::
+CUSTOM: y y ödmjukhets
+548098r5<verb>ödsla:ödsla:ödslade:ödslat:ödslar:ödsla:ödslas:ödslades:ödslats:ödslas:ödslad:ödslat:ödslade::
+568570r4<adjektiv>ödslig:ödslig:ödsligt:ödsliga:ödsliga:ödsligare:ödsligast:ödsligaste:!
+727924r3<substantiv>ödslighet:ödslighet:ödslighets:ödsligheten:ödslighetens::::
+555881r16<substantiv>öga:öga:ögas:ögat:ögats:ögon:ögons:ögonen:ögonens
+CUSTOM: y y ögon
+624042r6<substantiv>ögla:ögla:öglas:öglan:öglans:öglor:öglors:öglorna:öglornas
+BASEWORDS: ögle
+CUSTOM: y y ögle
+629629r3<substantiv>öglebindning:öglebindning:öglebindnings:öglebindningen:öglebindningens:öglebindningar:öglebindningars:öglebindningarna:öglebindningarnas
+CUSTOM: y y öglebindnings
+629637r3<substantiv>öglebult:öglebult:öglebults:öglebulten:öglebultens:öglebultar:öglebultars:öglebultarna:öglebultarnas
+CUSTOM: y n n
+629645r3<substantiv>öglemaskin:öglemaskin:öglemaskins:öglemaskinen:öglemaskinens:öglemaskiner:öglemaskiners:öglemaskinerna:öglemaskinernas
+629653r3<substantiv>öglemutter:öglemutter:öglemutters:öglemuttern:öglemutterns:öglemuttrar:öglemuttrars:öglemuttrarna:öglemuttrarnas
+548099r5<verb>ögna:ögna:ögnade:ögnat:ögnar:ögna:ögnas:ögnades:ögnats:ögnas:::::
+649454r3<adverb>ögonaböj:ögonaböj
+629661r3<substantiv>ögonbad:ögonbad:ögonbads:ögonbadet:ögonbadets:ögonbad:ögonbads:ögonbaden:ögonbadens
+553167r4<substantiv>ögonblick:ögonblick:ögonblicks:ögonblicket:ögonblickets:ögonblick:ögonblicks:ögonblicken:ögonblickens
+BASEWORDS: ögonblicks
+CUSTOM: y y ögonblicks
+568574r3<adjektiv>ögonblicklig:ögonblicklig:ögonblickligt:ögonblickliga:ögonblickliga::::
+620938r3<adverb>ögonblickligen:ögonblickligen
+629667r3<substantiv>ögonblicksbild:ögonblicksbild:ögonblicksbilds:ögonblicksbilden:ögonblicksbildens:ögonblicksbilder:ögonblicksbilders:ögonblicksbilderna:ögonblicksbildernas
+629675r3<substantiv>ögonblicksfotografi:ögonblicksfotografi:ögonblicksfotografis:ögonblicksfotografiet:ögonblicksfotografiets:ögonblicksfotografier:ögonblicksfotografiers:ögonblicksfotografierna:ögonblicksfotografiernas
+608515r3<substantiv>ögonbryn:ögonbryn:ögonbryns:ögonbrynet:ögonbrynets:ögonbryn:ögonbryns:ögonbrynen:ögonbrynens
+878651r3<substantiv>ögondropp:ögondropp:ögondropps:ögondroppet:ögondroppets::::
+663558r3<substantiv>ögondusch:ögondusch:ögonduschs:ögonduschen:ögonduschens:ögonduschar:ögonduschars:ögonduscharna:ögonduscharnas
+967153r4<substantiv>ögonfluss:ögonfluss:ögonfluss:ögonflussen:ögonflussens::::
+COMPOUND(555881, 690132): öga + fluss
+552151r3<substantiv>ögonfrans:ögonfrans:ögonfrans:ögonfransen:ögonfransens:ögonfransar:ögonfransars:ögonfransarna:ögonfransarnas
+965362r4<substantiv>ögonfägnad:ögonfägnad:ögonfägnads:ögonfägnaden:ögonfägnadens::::
+COMPOUND(555881, 690450): öga + fägnad
+655008r3<substantiv>ögonfärg:ögonfärg:ögonfärgs:ögonfärgen:ögonfärgens::::
+678591r4<substantiv>ögonglob:ögonglob:ögonglobs:ögongloben:ögonglobens:ögonglober:ögonglobers:ögongloberna:ögonglobernas
+COMPOUND(555881, 549104): öga + glob
+655012r4<substantiv>ögonhåla:ögonhåla:ögonhålas:ögonhålan:ögonhålans:ögonhålor:ögonhålors:ögonhålorna:ögonhålornas
+COMPOUND(555881, 624205): öga + håla
+553168r3<substantiv>ögonkast:ögonkast:ögonkasts:ögonkastet:ögonkastets:ögonkast:ögonkasts:ögonkasten:ögonkastens
+655020r3<substantiv>ögonkontakt:ögonkontakt:ögonkontakts:ögonkontakten:ögonkontaktens:!:!:!:!
+608519r3<substantiv>ögonlock:ögonlock:ögonlocks:ögonlocket:ögonlockets:ögonlock:ögonlocks:ögonlocken:ögonlockens
+610251r3<substantiv>ögonläkare:ögonläkare:ögonläkares:ögonläkaren:ögonläkarens:ögonläkare:ögonläkares:ögonläkarna:ögonläkarnas
+CUSTOM: y y ögonläkar
+655024r3<substantiv>ögonmått:ögonmått:ögonmåtts:ögonmåttet:ögonmåttets:!:!:!:!
+762711r4<substantiv>ögonskada:ögonskada:ögonskadas:ögonskadan:ögonskadans:ögonskador:ögonskadors:ögonskadorna:ögonskadornas
+COMPOUND(555881, 595121): öga + skada
+568575r3<adjektiv>ögonskenlig:ögonskenlig:ögonskenligt:ögonskenliga:ögonskenliga::::
+655028r4<substantiv>ögonsten:ögonsten:ögonstens:ögonstenen:ögonstenens:ögonstenar:ögonstenars:ögonstenarna:ögonstenarnas
+655032r3<substantiv>ögontjänare:ögontjänare:ögontjänares:ögontjänaren:ögontjänarens:ögontjänare:ögontjänares:ögontjänarna:ögontjänarnas
+CUSTOM: y y ögontjänar
+818569r3<substantiv>ögontjäneri:ögontjäneri:ögontjäneris:ögontjäneriet:ögontjäneriets::::
+655038r3<substantiv>ögonvita:ögonvita:ögonvitas:ögonvitan:ögonvitans:ögonvitor:ögonvitors:ögonvitorna:ögonvitornas
+649455r4<substantiv>ögonvittne:ögonvittne:ögonvittnes:ögonvittnet:ögonvittnets:ögonvittnen:ögonvittnens:ögonvittnena:ögonvittnenas
+CUSTOM: y y ögonvittnes
+751519r4<substantiv>ögonvittnesskildring:ögonvittnesskildring:ögonvittnesskildrings:ögonvittnesskildringen:ögonvittnesskildringens:ögonvittnesskildringar:ögonvittnesskildringars:ögonvittnesskildringarna:ögonvittnesskildringarnas
+COMPOUND(649455, 619565): ögonvittne + skildring
+649463r3<substantiv>ögonvrå:ögonvrå:ögonvrås:ögonvrån:ögonvråns:ögonvrår:ögonvrårs:ögonvrårna:ögonvrårnas
+973468r3<egennamn>Ögren:Ögren:Ögrens
+703688r3<substantiv>ögrupp:ögrupp:ögrupps:ögruppen:ögruppens:ögrupper:ögruppers:ögrupperna:ögruppernas
+623982r3<interjektion>öh:öh
+CUSTOM: n n y
+973472r3<egennamn>Öhrn:Öhrn:Öhrns
+874399r3<egennamn>Öijer:Öijer:Öijers
+861201r3<egennamn>Öis:Öis:Öis
+860757r3<egennamn>Öjemar:Öjemar:Öjemars
+557786r3<substantiv>ök:ök:öks:öket:ökets:ök:öks:öken:ökens
+548100r5<verb>öka:öka:ökade:ökat:ökar:öka:ökas:ökades:ökats:ökas:ökad:ökat:ökade:ökande:
+620427r5<substantiv>öken:öken:ökens:öknen:öknens:öknar:öknars:öknarna:öknarnas
+CUSTOM: y y öken
+796930r3<adjektiv>ökenartad:ökenartad:ökenartat:ökenartade:ökenartade:!:!:!:
+751520r4<substantiv>ökenlandskap:ökenlandskap:ökenlandskaps:ökenlandskapet:ökenlandskapets:ökenlandskap:ökenlandskaps:ökenlandskapen:ökenlandskapens
+COMPOUND(620427, 555499): öken + landskap
+729027r4<substantiv>ökenspridning:ökenspridning:ökenspridnings:ökenspridningen:ökenspridningens::::
+COMPOUND(620427, 668888): öken + spridning
+649465r3<substantiv>ökenvandring:ökenvandring:ökenvandrings:ökenvandringen:ökenvandringens:ökenvandringar:ökenvandringars:ökenvandringarna:ökenvandringarnas
+CUSTOM: y y ökenvandrings
+655046r3<substantiv>öknamn:öknamn:öknamns:öknamnet:öknamnets:öknamn:öknamns:öknamnen:öknamnens
+649466r14<substantiv>ökning:ökning:öknings:ökningen:ökningens:ökningar:ökningars:ökningarna:ökningarnas
+CUSTOM: y y öknings +öknings
+818573r3<substantiv>ökningstal:ökningstal:ökningstals:ökningstalet:ökningstalets:ökningstal:ökningstals:ökningstalen:ökningstalens
+655052r3<substantiv>ökstock:ökstock:ökstocks:ökstocken:ökstockens:ökstockar:ökstockars:ökstockarna:ökstockarnas
+619289r4<adjektiv>ökänd:ökänd:ökänt:ökända:ökända:ökändare:ökändast:ökändaste:ökände
+818582r3<substantiv>ökändhet:ökändhet:ökändhets:ökändheten:ökändhetens::::
+553170r35<substantiv>öl:öl:öls:ölet:ölets:öl:öls:ölen:ölens
+CUSTOM: y n
+560560r6<verb>öla:öla:ölade:ölat:ölar:öla:ölas:ölades:ölats:ölas::::ölande:
+DEFINITION 1: Dricka öl
+CUSTOM: n n y
+553356r3<egennamn>Öland:Öland:Ölands
+CUSTOM: y n Ölands
+606440r3<substantiv>ölback:ölback:ölbacks:ölbacken:ölbackens:ölbackar:ölbackars:ölbackarna:ölbackarnas
+818586r4<substantiv>ölbryggeri:ölbryggeri:ölbryggeris:ölbryggeriet:ölbryggeriets:ölbryggerier:ölbryggeriers:ölbryggerierna:ölbryggeriernas
+COMPOUND(553170, 611663): öl + bryggeri
+818594r3<substantiv>ölbryggning:ölbryggning:ölbryggnings:ölbryggningen:ölbryggningens::::
+552152r3<substantiv>ölburk:ölburk:ölburks:ölburken:ölburkens:ölburkar:ölburkars:ölburkarna:ölburkarnas
+818598r4<substantiv>ölbutelj:ölbutelj:ölbuteljs:ölbuteljen:ölbuteljens:ölbuteljer:ölbuteljers:ölbuteljerna:ölbuteljernas
+COMPOUND(553170, 548487): öl + butelj
+926106r4<substantiv>ölbägare:ölbägare:ölbägares:ölbägaren:ölbägarens:ölbägare:ölbägares:ölbägarna:ölbägarnas
+COMPOUND(553170, 560900): öl + bägare
+CUSTOM: y n n
+751521r4<substantiv>öldrickande:öldrickande:öldrickandes:öldrickandet:öldrickandets::::
+COMPOUND(553170, 656294): öl + drickande
+818607r3<substantiv>öldrickare:öldrickare:öldrickares:öldrickaren:öldrickarens:öldrickare:öldrickares:öldrickarna:öldrickarnas
+655060r3<substantiv>ölfat:ölfat:ölfats:ölfatet:ölfatets:ölfat:ölfats:ölfaten:ölfatens
+751522r4<substantiv>ölflak:ölflak:ölflaks:ölflaket:ölflakets:ölflak:ölflaks:ölflaken:ölflakens
+COMPOUND(553170, 552380): öl + flak
+649467r3<substantiv>ölflaska:ölflaska:ölflaskas:ölflaskan:ölflaskans:ölflaskor:ölflaskors:ölflaskorna:ölflaskornas
+818615r4<substantiv>ölförsäljning:ölförsäljning:ölförsäljnings:ölförsäljningen:ölförsäljningens::::
+COMPOUND(553170, 691095): öl + försäljning
+751528r4<substantiv>ölglas:ölglas:ölglas:ölglaset:ölglasets:ölglas:ölglas:ölglasen:ölglasens
+COMPOUND(553170, 552440): öl + glas
+818620r4<substantiv>ölgubbe:ölgubbe:ölgubbes:ölgubben:ölgubbens:ölgubbar:ölgubbars:ölgubbarna:ölgubbarnas
+COMPOUND(553170, 599829): öl + gubbe
+818628r4<substantiv>ölhall:ölhall:ölhalls:ölhallen:ölhallens:ölhallar:ölhallars:ölhallarna:ölhallarnas
+COMPOUND(553170, 551356): öl + hall
+655075r3<substantiv>ölhävning:ölhävning:ölhävnings:ölhävningen:ölhävningens::::
+CUSTOM: y y ölhävnings
+604196r3<substantiv>öljett:öljett:öljetts:öljetten:öljettens:öljetter:öljetters:öljetterna:öljetternas
+964519r4<substantiv>ölkafé:ölkafé, ölcafé:ölkafés, ölcafés:ölkaféet, ölcaféet:ölkaféets, ölcaféets:ölkaféer, ölcaféer:ölkaféers, ölcaféers:ölkaféerna, ölcaféerna:ölkaféernas, ölcaféernas
+COMPOUND(553170, 611699): öl + kafé, café
+751533r4<substantiv>ölkonsumtion:ölkonsumtion:ölkonsumtions:ölkonsumtionen:ölkonsumtionens::::
+COMPOUND(553170, 652933): öl + konsumtion
+935051r4<substantiv>ölkrus:ölkrus:ölkrus:ölkruset:ölkrusets:ölkrus:ölkrus:ölkrusen:ölkrusens
+COMPOUND(553170, 552589): öl + krus
+751537r3<adjektiv>ölmagad:ölmagad:ölmagat:ölmagade:ölmagade:!:!:!:
+649468r3<substantiv>ölmage:ölmage:ölmages:ölmagen:ölmagens:ölmagar:ölmagars:ölmagarna:ölmagarnas
+818637r4<substantiv>ölmärke:ölmärke:ölmärkes:ölmärket:ölmärkets:ölmärken:ölmärkens:ölmärkena:ölmärkenas
+COMPOUND(553170, 619020): öl + märke
+921097r3<substantiv>ölprovare:ölprovare:ölprovares:ölprovaren:ölprovarens:ölprovare:ölprovares:ölprovarna:ölprovarnas
+818646r4<substantiv>ölpub:ölpub:ölpubs:ölpuben:ölpubens:ölpubar:ölpubars:ölpubarna:ölpubarnas
+COMPOUND(553170, 551779): öl + pub
+751549r4<substantiv>ölreklam:ölreklam:ölreklams:ölreklamen:ölreklamens:ölreklamer:ölreklamers:ölreklamerna:ölreklamernas
+COMPOUND(553170, 621732): öl + reklam
+CUSTOM: y n n
+964536r3<substantiv>ölschapp:ölschapp:ölschapps:ölschappet:ölschappets:ölschapp:ölschapps:ölschappen:ölschappens
+655066r3<substantiv>ölsejdel:ölsejdel:ölsejdels:ölsejdeln:ölsejdelns:ölsejdlar:ölsejdlars:ölsejdlarna:ölsejdlarnas
+818655r4<substantiv>ölservering:ölservering:ölserverings:ölserveringen:ölserveringens:ölserveringar:ölserveringars:ölserveringarna:ölserveringarnas
+COMPOUND(553170, 645464): öl + servering
+649469r3<substantiv>ölsinne:ölsinne:ölsinnes:ölsinnet:ölsinnets:!:!:!:!
+957460r3<substantiv>ölsjapp:ölsjapp:ölsjapps:ölsjappet:ölsjappets:ölsjapp:ölsjapps:ölsjappen:ölsjappens
+818665r4<substantiv>ölskatt:ölskatt:ölskatts:ölskatten:ölskattens:ölskatter:ölskatters:ölskatterna:ölskatternas
+COMPOUND(553170, 550507): öl + skatt
+751540r4<substantiv>ölsort:ölsort:ölsorts:ölsorten:ölsortens:ölsorter:ölsorters:ölsorterna:ölsorternas
+COMPOUND(553170, 550551): öl + sort
+553171r3<substantiv>ölstop:ölstop:ölstops:ölstopet:ölstopets:ölstop:ölstops:ölstopen:ölstopens
+751558r4<substantiv>ölstuga:ölstuga:ölstugas:ölstugan:ölstugans:ölstugor:ölstugors:ölstugorna:ölstugornas
+COMPOUND(553170, 595420): öl + stuga
+751566r4<substantiv>ölstånka:ölstånka:ölstånkas:ölstånkan:ölstånkans:ölstånkor:ölstånkors:ölstånkorna:ölstånkornas
+COMPOUND(553170, 670496): öl + stånka
+818675r3<substantiv>öltillverkning:öltillverkning:öltillverknings:öltillverkningen:öltillverkningens::::
+818680r4<substantiv>öltransport:öltransport:öltransports:öltransporten:öltransportens:öltransporter:öltransporters:öltransporterna:öltransporternas
+COMPOUND(553170, 550690): öl + transport
+751574r4<substantiv>öltunna:öltunna:öltunnas:öltunnan:öltunnans:öltunnor:öltunnors:öltunnorna:öltunnornas
+COMPOUND(553170, 668498): öl + tunna
+751582r4<substantiv>öltält:öltält:öltälts:öltältet:öltältets:öltält:öltälts:öltälten:öltältens
+COMPOUND(553170, 553069): öl + tält
+935928r4<substantiv>öluffning:öluffning:öluffnings:öluffningen:öluffningens::::
+COMPOUND(556663, 836302): ö + luffning
+973476r3<egennamn>Ölund:Ölund:Ölunds
+818688r3<substantiv>ölutkörare:ölutkörare:ölutkörares:ölutköraren:ölutkörarens:ölutkörare:ölutkörares:ölutkörarna:ölutkörarnas
+818695r3<substantiv>ölutskänkning:ölutskänkning:ölutskänknings:ölutskänkningen:ölutskänkningens:ölutskänkningar:ölutskänkningars:ölutskänkningarna:ölutskänkningarnas
+649470r3<adjektiv>öländsk:öländsk:öländskt:öländska:öländska:!:!:!:öländske
+649473r3<substantiv>öländska:öländska:öländskas:öländskan:öländskans:öländskor:öländskors:öländskorna:öländskornas
+649481r3<substantiv>ölänning:ölänning:ölännings:ölänningen:ölänningens:ölänningar:ölänningars:ölänningarna:ölänningarnas
+CUSTOM: y y ölännings
+655076r3<substantiv>ölöppnare:ölöppnare:ölöppnares:ölöppnaren:ölöppnarens:ölöppnare:ölöppnares:ölöppnarna:ölöppnarnas
+CUSTOM: y y ölöppnar
+557791r4<adjektiv>öm:öm:ömt:ömma:ömma:ömmare:ömmast:ömmaste:
+973480r3<egennamn>Öman:Öman:Ömans
+649489r3<adjektiv>ömfotad:ömfotad:ömfotat:ömfotade:ömfotade:!:!:!:
+649492r3<substantiv>ömfoting:ömfoting:ömfotings:ömfotingen:ömfotingens:ömfotingar:ömfotingars:ömfotingarna:ömfotingarnas
+620428r5<substantiv>ömhet:ömhet:ömhets:ömheten:ömhetens::::
+CUSTOM: y y ömhets
+655077r4<substantiv>ömhetsbehov:ömhetsbehov:ömhetsbehovs:ömhetsbehovet:ömhetsbehovets::::
+COMPOUND(620428, 552230): ömhet + behov
+655081r4<substantiv>ömhetsbevis:ömhetsbevis:ömhetsbevis:ömhetsbeviset:ömhetsbevisets:ömhetsbevis:ömhetsbevis:ömhetsbevisen:ömhetsbevisens
+COMPOUND(620428, 552246): ömhet + bevis
+629683r3<substantiv>ömhetshunger:ömhetshunger:ömhetshungers:ömhetshungern:ömhetshungerns:!:!:!:!
+655086r3<adjektiv>ömhetstörstande:ömhetstörstande:ömhetstörstande:ömhetstörstande:ömhetstörstande:!:!:!:
+649500r3<adjektiv>ömhjärtad:ömhjärtad:ömhjärtat:ömhjärtade:ömhjärtade:!:!:!:
+649503r3<adjektiv>ömhudad:ömhudad:ömhudat:ömhudade:ömhudade:!:!:!:
+548101r5<verb>ömka:ömka:ömkade:ömkat:ömkar:ömka:ömkas:ömkades:ömkats:ömkas:ömkad:ömkat:ömkade:ömkande:
+620429r5<substantiv>ömkan:ömkan:ömkans:ömkan:ömkans:!:!:!:!
+649504r4<adjektiv>ömkansvärd:ömkansvärd:ömkansvärt:ömkansvärda:ömkansvärda::::ömkansvärde
+568578r4<adjektiv>ömklig:ömklig:ömkligt:ömkliga:ömkliga:ömkligare:ömkligast:ömkligaste:ömklige
+620431r3<adverb>ömkligen:ömkligen
+649513r4<substantiv>ömklighet:ömklighet:ömklighets:ömkligheten:ömklighetens:ömkligheter:ömkligheters:ömkligheterna:ömkligheternas
+CUSTOM: y y ömklighets
+620432r3<verb>ömma:ömma:ömmade:ömmat:ömmar:ömma:!:!:!:!:!:!:!::
+620436r3<adjektiv>ömmande:ömmande:ömmande:ömmande:ömmande:!:!:!:
+620437r4<verb>ömsa:ömsa:ömsade:ömsat:ömsar:ömsa:ömsas:ömsades:ömsats:ömsas:ömsad:ömsat:ömsade::
+620441r3<pronomen>ömse:ömse
+578557r3<adjektiv>ömsesidig:ömsesidig:ömsesidigt:ömsesidiga:ömsesidiga::::
+620442r3<substantiv>ömsesidighet:ömsesidighet:ömsesidighets:ömsesidigheten:ömsesidighetens::::
+CUSTOM: y y ömsesidighets
+649514r3<adverb>ömsevis:ömsevis
+796933r3<adjektiv>ömsinnad:ömsinnad:ömsinnat:ömsinnade:ömsinnade:!:!:!:
+620443r4<adjektiv>ömsint:ömsint:ömsint:ömsinta:ömsinta:ömsintare:ömsintast:ömsintaste:ömsinte
+649515r3<substantiv>ömsinthet:ömsinthet:ömsinthets:ömsintheten:ömsinthetens::::
+CUSTOM: y y ömsinthets
+796936r3<adjektiv>ömskinnad:ömskinnad:ömskinnat:ömskinnade:ömskinnade:!:!:!:
+655088r4<substantiv>ömsning:ömsning:ömsnings:ömsningen:ömsningens:ömsningar:ömsningars:ömsningarna:ömsningarnas
+CUSTOM: y y ömsnings
+620446r3<konjunktion>ömsom:ömsom
+568579r4<adjektiv>ömtålig:ömtålig:ömtåligt:ömtåliga:ömtåliga:ömtåligare:ömtåligast:ömtåligaste:ömtålige
+649508r3<substantiv>ömtålighet:ömtålighet:ömtålighets:ömtåligheten:ömtålighetens::::
+CUSTOM: y y ömtålighets
+862499r4<substantiv>önation:önation:önations:önationen:önationens:önationer:önationers:önationerna:önationernas
+COMPOUND(556663, 602948): ö + nation
+548102r6<verb>önska:önska:önskade:önskat:önskar:önska:önskas:önskades:önskats:önskas:önskad:önskat:önskade::
+CUSTOM: y y önske
+620447r5<substantiv>önskan:önskan:önskans:önskan:önskans:!:!:!:!
+620449r3<substantiv>önskedröm:önskedröm:önskedröms:önskedrömmen:önskedrömmens:önskedrömmar:önskedrömmars:önskedrömmarna:önskedrömmarnas
+649519r3<substantiv>önskelista:önskelista:önskelistas:önskelistan:önskelistans:önskelistor:önskelistors:önskelistorna:önskelistornas
+818715r3<substantiv>önskelåt:önskelåt:önskelåts:önskelåten:önskelåtens:önskelåtar:önskelåtars:önskelåtarna:önskelåtarnas
+553172r3<substantiv>önskemål:önskemål:önskemåls:önskemålet:önskemålets:önskemål:önskemåls:önskemålen:önskemålens
+649520r6<substantiv>önskesits:önskesits:önskesits:önskesitsen:önskesitsens:önskesitsar:önskesitsars:önskesitsarna:önskesitsarnas
+COMPOUND(548102, 551829): önska + sits
+859945r4<verb>önsketänka:önsketänka:önsketänkte:önsketänkt:önsketänker:önsketänk:önsketänkas:önsketänktes:önsketänkts:önsketänks, önsketänkes:önsketänkt:önsketänkt:önsketänkta:önsketänkande:
+COMPOUND(548102, 585847): önska + tänka
+649521r3<substantiv>önsketänkande:önsketänkande:önsketänkandes:önsketänkandet:önsketänkandets::::
+568580r3<adjektiv>önsklig:önsklig:önskligt:önskliga:önskliga::::
+649525r3<substantiv>önskning:önskning:önsknings:önskningen:önskningens:önskningar:önskningars:önskningarna:önskningarnas
+CUSTOM: y y önsknings
+649526r4<adjektiv>önskvärd:önskvärd:önskvärt:önskvärda:önskvärda:önskvärdare:önskvärdast:önskvärdaste:önskvärde
+818724r3<substantiv>önskvärdhet:önskvärdhet:önskvärdhets:önskvärdheten:önskvärdhetens::::
+555600r7<adjektiv>öppen:öppen:öppet:öppna:öppna:öppnare:öppnast:öppnaste:öppne
+655093r3<substantiv>öppenhet:öppenhet:öppenhets:öppenheten:öppenhetens:!:!:!:!
+CUSTOM: y y öppenhets
+578558r4<adjektiv>öppenhjärtig:öppenhjärtig:öppenhjärtigt:öppenhjärtiga:öppenhjärtiga:öppenhjärtigare:öppenhjärtigast:öppenhjärtigaste:öppenhjärtige
+649527r3<substantiv>öppenhjärtighet:öppenhjärtighet:öppenhjärtighets:öppenhjärtigheten:öppenhjärtighetens::::
+CUSTOM: y y öppenhjärtighets
+649528r3<substantiv>öppenvård:öppenvård:öppenvårds:öppenvården:öppenvårdens:!:!:!:!
+CUSTOM: y y öppenvårds
+655097r3<substantiv>öppenvårdscentral:öppenvårdscentral:öppenvårdscentrals:öppenvårdscentralen:öppenvårdscentralens:öppenvårdscentraler:öppenvårdscentralers:öppenvårdscentralerna:öppenvårdscentralernas
+655106r3<substantiv>öppenvårdsmottagning:öppenvårdsmottagning:öppenvårdsmottagnings:öppenvårdsmottagningen:öppenvårdsmottagningens:öppenvårdsmottagningar:öppenvårdsmottagningars:öppenvårdsmottagningarna:öppenvårdsmottagningarnas
+CUSTOM: y y öppenvårdsmottagnings
+751588r3<substantiv>öppethållande:öppethållande:öppethållandes:öppethållandet:öppethållandets:öppethållanden:öppethållandens:öppethållandena:öppethållandenas
+818732r3<substantiv>öppethållandetid:öppethållandetid:öppethållandetids:öppethållandetiden:öppethållandetidens:öppethållandetider:öppethållandetiders:öppethållandetiderna:öppethållandetidernas
+818740r3<substantiv>öppethållning:öppethållning:öppethållnings:öppethållningen:öppethållningens::::
+649529r3<substantiv>öppettid:öppettid:öppettids:öppettiden:öppettidens:öppettider:öppettiders:öppettiderna:öppettidernas
+548103r6<verb>öppna:öppna:öppnade:öppnat:öppnar:öppna:öppnas:öppnades:öppnats:öppnas:öppnad:öppnat:öppnade:öppnande:
+649533r3<substantiv>öppnande:öppnande:öppnandes:öppnandet:öppnandets::::
+615534r5<substantiv>öppnare:öppnare:öppnares:öppnaren:öppnarens:öppnare:öppnares:öppnarna:öppnarnas
+CUSTOM: y y öppnar +öppnar
+597992r11<substantiv>öppning:öppning:öppnings:öppningen:öppningens:öppningar:öppningars:öppningarna:öppningarnas
+CUSTOM: y y öppnings +öppnings
+570583r3<adjektiv>öppningsbar:öppningsbar:öppningsbart:öppningsbara:öppningsbara::::
+756605r4<substantiv>öppningsbud:öppningsbud:öppningsbuds:öppningsbudet:öppningsbudets:öppningsbud:öppningsbuds:öppningsbuden:öppningsbudens
+COMPOUND(597992, 552287): öppning + bud
+965375r4<substantiv>öppningsriff:öppningsriff:öppningsriffs:öppningsriffet:öppningsriffets:öppningsriff:öppningsriffs:öppningsriffen:öppningsriffens
+COMPOUND(597992, 848272): öppning + riff
+768912r4<substantiv>öppningstal:öppningstal:öppningstals:öppningstalet:öppningstalets:öppningstal:öppningstals:öppningstalen:öppningstalens
+COMPOUND(597992, 553029): öppning + tal
+926854r5<substantiv>ör:ör:örs:ören:örens:örar:örars:örarna:örarnas
+DEFINITION 1: Liten holme
+DEFINITION 2: Revel
+CUSTOM: n n y
+923525r7<substantiv>ör:ör:örs:öret:örets:!:!:!:!
+DEFINITION 1: Grovt grus
+CUSTOM: n n y
+555883r19<substantiv>öra:öra:öras:örat:örats:öron:örons:öronen:öronens
+BASEWORDS: ör, öron
+CUSTOM: y n öron
+624037r8<substantiv>öre:öre:öres:öret:örets:ören:örens:örena:örenas
+BASEWORDS: öres
+CUSTOM: y n öres
+554435r4<egennamn>Örebro:Örebro:Örebros, Örebro
+CUSTOM: y n Örebro
+900861r3<substantiv>örebroare:örebroare:örebroares:örebroaren:örebroarens:örebroare:örebroares:örebroarna:örebroarnas
+640692r5<egennamn>Öregrund:Öregrund:Öregrunds
+663001r4<substantiv>öresavrundning:öresavrundning:öresavrundnings:öresavrundningen:öresavrundningens:öresavrundningar:öresavrundningars:öresavrundningarna:öresavrundningarnas
+COMPOUND(624037, 663002): öre + avrundning
+CUSTOM: y y öresavrundnings
+947898r3<egennamn>Örestad:Örestad:Örestads
+818744r3<substantiv>örestal:örestal:örestals:örestalet:örestalets:örestal:örestals:örestalen:örestalens
+553955r3<egennamn>Öresund:Öresund:Öresunds
+CUSTOM: y n Öresunds
+765748r3<egennamn>Öresundsvarvet:Öresundsvarvet:Öresundsvarvets
+CUSTOM: n n 
+662995r4<substantiv>öresutjämning:öresutjämning:öresutjämnings:öresutjämningen:öresutjämningens::::
+COMPOUND(624037, 645305): öre + utjämning
+CUSTOM: y y öresutjämnings
+925094r4<substantiv>öresvin:öresvin:öresvins:öresvinet:öresvinets:öresvin:öresvins:öresvinen:öresvinens
+DEFINITION 1: Delfin
+552153r3<substantiv>örfil:örfil:örfils:örfilen:örfilens:örfilar:örfilars:örfilarna:örfilarnas
+700594r3<verb>örfila:örfila:örfilade:örfilat:örfilar:örfila:örfilas:örfilades:örfilats:örfilas:örfilad:örfilat:örfilade::
+861175r3<egennamn>Örgryte:Örgryte:Örgrytes
+CUSTOM: y n Örgryte
+613027r5<substantiv>örhänge:örhänge:örhänges:örhänget:örhängets:örhängen:örhängens:örhängena:örhängenas
+COMPOUND(555883, 631631): öra + hänge
+751601r4<substantiv>örike:örike:örikes:öriket:örikets:öriken:örikens:örikena:örikenas
+COMPOUND(556663, 619401): ö + rike
+649535r7<substantiv>öring:öring:örings:öringen:öringens:öringar:öringars:öringarna:öringarnas
+CUSTOM: y n örings
+946677r4<substantiv>öringfiske:öringfiske:öringfiskes:öringfisket:öringfiskets:öringfisken:öringfiskens:öringfiskena:öringfiskenas
+COMPOUND(649535, 625321): öring + fiske
+946693r4<substantiv>öringrom:öringrom:öringroms:öringrommen:öringrommens::::
+COMPOUND(649535, 621904): öring + rom
+751609r4<substantiv>öringsfiske:öringsfiske:öringsfiskes:öringsfisket:öringsfiskets:öringsfisken:öringsfiskens:öringsfiskena:öringsfiskenas
+COMPOUND(649535, 625321): öring + fiske
+946687r4<substantiv>öringsrom:öringsrom:öringsroms:öringsrommen:öringsrommens::::
+COMPOUND(649535, 621904): öring + rom
+874151r3<egennamn>Örjan:Örjan:Örjans
+728344r3<egennamn>Örkelljunga:Örkelljunga:Örkelljungas
+CUSTOM: y n Örkelljunga
+699457r4<substantiv>örlog:örlog:::::::
+CUSTOM: n n
+722206r23<substantiv>örlogsbas:örlogsbas:örlogsbas:örlogsbasen:örlogsbasens:örlogsbaser:örlogsbasers:örlogsbaserna:örlogsbasernas
+699458r4<substantiv>örlogsfartyg:örlogsfartyg:örlogsfartygs:örlogsfartyget:örlogsfartygets:örlogsfartyg:örlogsfartygs:örlogsfartygen:örlogsfartygens
+COMPOUND(699457, 552372): örlog + fartyg
+712596r3<substantiv>örlogskapten:örlogskapten:örlogskaptens:örlogskaptenen:örlogskaptenens:örlogskaptener:örlogskapteners:örlogskaptenerna:örlogskaptenernas
+552155r9<substantiv>örn:örn:örns:örnen:örnens:örnar:örnars:örnarna:örnarnas
+CUSTOM: y n
+818750r3<substantiv>örnblick:örnblick:örnblicks:örnblicken:örnblickens:örnblickar:örnblickars:örnblickarna:örnblickarnas
+818758r3<substantiv>örnbo:örnbo:örnbos:örnboet:örnboets:örnbon:örnbons:örnbona:örnbonas
+CUSTOM: y n
+989289r3<substantiv>örnbräken:örnbräken:örnbräkens:örnbräknen:örnbräknens:örnbräknar:örnbräknars:örnbräknarna:örnbräknarnas
+900868r4<substantiv>örnfjäder:örnfjäder:örnfjäders:örnfjädern:örnfjäderns:örnfjädrar:örnfjädrars:örnfjädrarna:örnfjädrarnas
+COMPOUND(552155, 561351): örn + fjäder
+553173r4<substantiv>örngott:örngott:örngotts:örngottet:örngottets:örngott:örngotts:örngotten:örngottens
+CUSTOM: y y örngotts
+818766r4<substantiv>örngottsband:örngottsband:örngottsbands:örngottsbandet:örngottsbandets:örngottsband:örngottsbands:örngottsbanden:örngottsbandens
+COMPOUND(553173, 552220): örngott + band
+941276r3<substantiv>örnkoll:örnkoll:örnkolls:örnkollen:örnkollens::::
+818767r4<substantiv>örnnäbb:örnnäbb:örnnäbbs:örnnäbben:örnnäbbens:örnnäbbar:örnnäbbars:örnnäbbarna:örnnäbbarnas
+COMPOUND(552155, 598609): örn + näbb
+818775r4<substantiv>örnnäsa:örnnäsa:örnnäsas:örnnäsan:örnnäsans:örnnäsor:örnnäsors:örnnäsorna:örnnäsornas
+COMPOUND(552155, 555879): örn + näsa
+818783r4<substantiv>örnnäste:örnnäste:örnnästes:örnnästet:örnnästets:örnnästen:örnnästens:örnnästena:örnnästenas
+COMPOUND(552155, 619184): örn + näste
+818791r4<substantiv>örnperspektiv:örnperspektiv:örnperspektivs:örnperspektivet:örnperspektivets:örnperspektiv:örnperspektivs:örnperspektiven:örnperspektivens
+COMPOUND(552155, 552766): örn + perspektiv
+972276r3<egennamn>Örnsberg:Örnsberg:Örnsbergs
+554437r3<egennamn>Örnsköldsvik:Örnsköldsvik:Örnsköldsviks
+CUSTOM: y n Örnsköldsviks
+818797r4<substantiv>örnunge:örnunge:örnunges:örnungen:örnungens:örnungar:örnungars:örnungarna:örnungarnas
+COMPOUND(552155, 600015): örn + unge
+570992r3<adjektiv>öronbedövande:öronbedövande:öronbedövande:öronbedövande:öronbedövande:!:!:!:
+973774r4<substantiv>öronclips:öronclips:öronclips:öronclipset:öronclipsets:öronclips:öronclips:öronclipsen:öronclipsens
+COMPOUND(555883, 973759): öra + clips
+578559r3<adjektiv>öronformig:öronformig:öronformigt:öronformiga:öronformiga::::
+649536r3<substantiv>öroninflammation:öroninflammation:öroninflammations:öroninflammationen:öroninflammationens:öroninflammationer:öroninflammationers:öroninflammationerna:öroninflammationernas
+CUSTOM: y y öroninflammations
+565497r3<adjektiv>öronlös:öronlös:öronlöst:öronlösa:öronlösa::::
+945749r4<substantiv>öronmuff:öronmuff:öronmuffs:öronmuffen:öronmuffens:öronmuffar:öronmuffars:öronmuffarna:öronmuffarnas
+COMPOUND(555883, 551725): öra + muff
+588807r12<verb>öronmärka:öronmärka:öronmärkte:öronmärkt:öronmärker:öronmärk:öronmärkas:öronmärktes:öronmärkts:öronmärks:öronmärkt:öronmärkt:öronmärkta:öronmärkande:
+COMPOUND(555883, 585833): öra + märka
+965366r4<substantiv>öronsnibb:öronsnibb:öronsnibbs:öronsnibben:öronsnibbens:öronsnibbar:öronsnibbars:öronsnibbarna:öronsnibbarnas
+COMPOUND(555883, 667571): öra + snibb
+853798r3<substantiv>öronsus:öronsus:öronsus:öronsuset:öronsusets::::
+627546r4<substantiv>öronvax:öronvax:öronvax:öronvaxet:öronvaxets::::
+COMPOUND(555883, 627545): öra + vax
+751610r3<substantiv>örsnibb:örsnibb:örsnibbs:örsnibben:örsnibbens:örsnibbar:örsnibbars:örsnibbarna:örsnibbarnas
+818805r3<substantiv>örsopp:örsopp:örsopps:örsoppen:örsoppens:örsoppar:örsoppars:örsopparna:örsopparnas
+751618r3<substantiv>örsprång:örsprång:örsprångs:örsprånget:örsprångets::::
+550827r10<substantiv>ört:ört:örts:örten:örtens:örter:örters:örterna:örternas
+CUSTOM: y y örta ört
+699464r5<substantiv>örtagård:örtagård:örtagårds:örtagården:örtagårdens:örtagårdar:örtagårdars:örtagårdarna:örtagårdarnas
+COMPOUND(550827, 551337): ört + gård
+CUSTOM: y y örtagårds
+782826r4<substantiv>örtagårdsmästare:örtagårdsmästare:örtagårdsmästares:örtagårdsmästaren:örtagårdsmästarens:örtagårdsmästare:örtagårdsmästares:örtagårdsmästarna:örtagårdsmästarnas
+COMPOUND(699464, 615391): örtagård + mästare
+796939r3<adjektiv>örtartad:örtartad:örtartat:örtartade:örtartade:!:!:!:
+CUSTOM: y n n
+636765r7<substantiv>örtbeska:örtbeska:örtbeskas:örtbeskan:örtbeskans::::
+COMPOUND(550827, 766598): ört + beska
+CUSTOM: y n n
+552156r3<substantiv>örtesäng:örtesäng:örtesängs:örtesängen:örtesängens:örtesängar:örtesängars:örtesängarna:örtesängarnas
+700601r4<substantiv>örtkrydda:örtkrydda:örtkryddas:örtkryddan:örtkryddans:örtkryddor:örtkryddors:örtkryddorna:örtkryddornas
+COMPOUND(550827, 594547): ört + krydda
+700609r4<substantiv>örtsalt:örtsalt:örtsalts:örtsaltet:örtsaltets:örtsalter:örtsalters:örtsalterna:örtsalternas
+COMPOUND(550827, 592333): ört + salt
+636763r6<substantiv>örtsmör:örtsmör:örtsmörs:örtsmöret:örtsmörets:!:!:!:!
+COMPOUND(550827, 622554): ört + smör
+CUSTOM: y n n
+681972r5<adjektiv>örtstekt:örtstekt:örtstekt:örtstekta:örtstekta::::::::::::
+CUSTOM: y n n
+818814r4<substantiv>örtsås:örtsås:örtsås:örtsåsen:örtsåsens:örtsåser:örtsåsers:örtsåserna:örtsåsernas
+COMPOUND(550827, 556707): ört + sås
+700617r4<substantiv>örtte:örtte:örttes:örtteet:örtteets:örtteer:örtteers:örtteerna:örtteernas
+COMPOUND(550827, 555996): ört + te
+634814r3<substantiv>ös:ös:ös:öset:ösets::::
+624038r3<verb>ösa:ösa:öste:öst:öser:ös:ösas:östes:östs:öses:öst:öst:östa:ösande:
+CUSTOM: y n
+578562r3<adjektiv>ösig:ösig:ösigt:ösiga:ösiga::::
+700625r3<substantiv>öskar:öskar:öskars:öskaret:öskarets:öskar:öskars:öskaren:öskarens
+700631r3<substantiv>ösning:ösning:ösnings:ösningen:ösningens:ösningar:ösningars:ösningarna:ösningarnas
+CUSTOM: y y ösnings
+649537r4<substantiv>ösregn:ösregn:ösregns:ösregnet:ösregnets:ösregn:ösregns:ösregnen:ösregnens
+649541r3<verb>ösregna:ösregna:ösregnade:ösregnat:ösregnar:ösregna:!:!:!:!:!:!:!::!
+818824r3<substantiv>össkopa:össkopa:össkopas:össkopan:össkopans:össkopor:össkopors:össkoporna:össkopornas
+619127r3<adverb>öst:öst
+619124r6<substantiv>öst:öst:östs:!:!:!:!:!:!
+CUSTOM: y n
+878273r3<egennamn>Östafrika:Östafrika:Östafrikas
+CUSTOM: y n Östafrika
+818832r3<adjektiv>östafrikansk:östafrikansk:östafrikanskt:östafrikanska:östafrikanska:!:!:!:östafrikanske
+649545r3<adverb>östan:östan
+818836r3<substantiv>östanfläkt:östanfläkt:östanfläkts:östanfläkten:östanfläktens:östanfläktar:östanfläktars:östanfläktarna:östanfläktarnas
+649546r4<substantiv>östanvind:östanvind:östanvinds:östanvinden:östanvindens:östanvindar:östanvindars:östanvindarna:östanvindarnas
+967708r3<substantiv>östarameiska:östarameiska:östarameiskas:östarameiskan:östarameiskans::::
+584886r3<adjektiv>östasiatisk:östasiatisk:östasiatiskt:östasiatiska:östasiatiska::::
+840661r3<egennamn>Östberg:Östberg:Östbergs
+728634r5<substantiv>östblock:östblock:östblocks:östblocket:östblockets:östblock:östblocks:östblocken:östblockens
+COMPOUND(619124, 552258): öst + block
+CUSTOM: y y östblocks
+818848r4<substantiv>östblocksstat:östblocksstat:östblocksstats:östblocksstaten:östblocksstatens:östblocksstater:östblocksstaters:östblocksstaterna:östblocksstaternas
+COMPOUND(728634, 550566): östblock + stat
+554863r3<egennamn>Östen:Östen:Östens
+571237r3<adverb>öster:öster
+649552r3<substantiv>öster:öster:östers:östern:österns::::
+658442r3<egennamn>Österberg:Österberg:Österbergs
+946184r3<egennamn>Österbotten:Österbotten:Österbottens
+597993r3<substantiv>österbottning:österbottning:österbottnings:österbottningen:österbottningens:österbottningar:österbottningars:österbottningarna:österbottningarnas
+CUSTOM: y y österbottnings
+568796r4<adjektiv>österbottnisk:österbottnisk:österbottniskt:österbottniska:österbottniska:!:!:!:österbottniske
+818849r3<substantiv>österbottniska:österbottniska:österbottniskas:österbottniskan:österbottniskans:österbottniskor:österbottniskors:österbottniskorna:österbottniskornas
+673387r3<egennamn>Österbybruk:Österbybruk:Österbybruks
+CUSTOM: y n 
+673385r3<egennamn>Österbymo:Österbymo:Österbymos
+CUSTOM: y n Österbymo
+973484r3<egennamn>Östergren:Östergren:Östergrens
+724381r3<egennamn>Östergötland:Östergötland:Östergötlands
+CUSTOM: y n Östergötlands
+620697r3<adverb>österifrån:österifrån
+989297r3<substantiv>österland:::österlandet:österlandets::::
+896262r3<substantiv>österled:österled:::::::
+896265r3<egennamn>Österleden:Österleden:Österledens
+772238r3<egennamn>Österlen:Österlen:Österlens
+CUSTOM: y n Österlen Österlens
+973488r3<egennamn>Österlund:Österlund:Österlunds
+649550r3<adjektiv>österländsk:österländsk:österländskt:österländska:österländska:!:!:!:österländske
+655108r3<substantiv>österlänning:österlänning:österlännings:österlänningen:österlänningens:österlänningar:österlänningars:österlänningarna:österlänningarnas
+CUSTOM: y y österlännings
+714918r4<egennamn>Östermalm:Östermalm:Östermalms
+DEFINITION 1: Stadsdel i Stockholms stad.
+CUSTOM: y n Östermalms
+874289r3<egennamn>Österman:Österman:Östermans
+855126r3<egennamn>Östermark:Östermark:Östermarks
+610252r3<substantiv>österrikare:österrikare:österrikares:österrikaren:österrikarens:österrikare:österrikares:österrikarna:österrikarnas
+CUSTOM: y y österrikar
+554174r3<egennamn>Österrike:Österrike:Österrikes
+CUSTOM: y n Österrike
+568798r4<adjektiv>österrikisk:österrikisk:österrikiskt:österrikiska:österrikiska::::österrikiske
+595887r3<substantiv>österrikiska:österrikiska:österrikiskas:österrikiskan:österrikiskans:österrikiskor:österrikiskors:österrikiskorna:österrikiskornas
+894085r4<substantiv>Östersjölax:Östersjölax:Östersjölax:Östersjölaxen:Östersjölaxens:Östersjölaxar:Östersjölaxars:Östersjölaxarna:Östersjölaxarnas
+COMPOUND(708037, 555226): Östersjön + lax
+708037r4<egennamn>Östersjön:Östersjön:Östersjöns
+CUSTOM: y n Östersjö
+554439r3<egennamn>Östersund:Östersund:Östersunds
+CUSTOM: y n Östersunds
+723087r3<egennamn>Östersundskusten:Östersundskusten:Östersundskustens
+CUSTOM: n n
+620928r3<adverb>österut:österut
+728346r3<egennamn>Österåker:Österåker:Österåkers
+CUSTOM: y n Österåker
+693854r3<adverb>österöver:österöver
+712829r3<egennamn>Östeuropa:Östeuropa:Östeuropas
+CUSTOM: y n Östeuropa
+818858r3<substantiv>östeuropé:östeuropé:östeuropés:östeuropén:östeuropéns:östeuropéer:östeuropéers:östeuropéerna:östeuropéernas
+584889r3<adjektiv>östeuropeisk:östeuropeisk:östeuropeiskt:östeuropeiska:östeuropeiska::::
+818866r3<substantiv>östfront:östfront:östfronts:östfronten:östfrontens:östfronter:östfronters:östfronterna:östfronternas
+584892r3<adjektiv>östgotisk:östgotisk:östgotiskt:östgotiska:östgotiska::::
+989300r3<substantiv>östgräns:östgräns:östgräns:östgränsen:östgränsens:östgränser:östgränsers:östgränserna:östgränsernas
+818874r3<substantiv>östgöte:östgöte:östgötes:östgöten:östgötens:östgötar:östgötars:östgötarna:östgötarnas
+772144r3<adjektiv>östgötsk:östgötsk:östgötskt:östgötska:östgötska::::östgötske
+772136r3<substantiv>östgötska:östgötska:östgötskas:östgötskan:östgötskans:östgötskor:östgötskors:östgötskorna:östgötskornas
+728350r3<egennamn>Östhammar:Östhammar:Östhammars
+CUSTOM: y n Östhammars
+989307r3<substantiv>östkant:östkant:östkants:östkanten:östkantens::::
+818882r3<substantiv>östkust:östkust:östkusts:östkusten:östkustens:östkuster:östkusters:östkusterna:östkusternas
+869458r3<adjektiv>östkustsk:östkustsk:östkustskt:östkustska:östkustska:!:!:!:östkustske
+940779r4<substantiv>östland:östland:östlands:östlandet:östlandets:östländer:östländers:östländerna:östländernas
+COMPOUND(619124, 556251): öst + land
+563148r4<adjektiv>östlig:östlig:östligt:östliga:östliga:östligare:östligast:östligaste:
+973492r3<egennamn>Östling:Östling:Östlings
+973496r3<egennamn>Östlund:Östlund:Östlunds
+788434r3<egennamn>Östman:Östman:Östmans
+584895r3<adjektiv>östnordisk:östnordisk:östnordiskt:östnordiska:östnordiska::::
+989311r3<substantiv>östpolitik:östpolitik:östpolitiks:östpolitiken:östpolitikens::::
+571057r3<adjektiv>östra:::östra:::::
+655116r4<substantiv>östrogen:östrogen:östrogens:östrogenet:östrogenets:östrogener:östrogeners:östrogenerna:östrogenernas
+CUSTOM: y y östrogen
+818893r4<substantiv>östrogenbehandling:östrogenbehandling:östrogenbehandlings:östrogenbehandlingen:östrogenbehandlingens:östrogenbehandlingar:östrogenbehandlingars:östrogenbehandlingarna:östrogenbehandlingarnas
+COMPOUND(655116, 592479): östrogen + behandling
+799057r4<adjektiv>östromersk:östromersk:östromerskt:östromerska:östromerska::::östromerske::::::::
+895694r3<egennamn>Östros:Östros:Östros
+973500r3<egennamn>Öström:Öström:Öströms
+751622r3<substantiv>östsida:östsida:östsidas:östsidan:östsidans::::
+880475r3<adjektiv>östslavisk:östslavisk:östslaviskt:östslaviska:östslaviska::::
+818894r3<substantiv>östsluttning:östsluttning:östsluttnings:östsluttningen:östsluttningens:östsluttningar:östsluttningars:östsluttningarna:östsluttningarnas
+655124r5<substantiv>öststat:öststat:öststats:öststaten:öststatens:öststater:öststaters:öststaterna:öststaternas
+CUSTOM: y y öststats
+818902r4<substantiv>öststatsland:öststatsland:öststatslands:öststatslandet:öststatslandets:öststatsländer:öststatsländers:öststatsländerna:öststatsländernas
+COMPOUND(655124, 556251): öststat + land
+945859r4<substantiv>öststatsstuk:öststatsstuk:öststatsstuks:öststatsstuket:öststatsstukets::::
+COMPOUND(655124, 620459): öststat + stuk
+818910r3<adjektiv>östsvensk:östsvensk:östsvenskt:östsvenska:östsvenska::::östsvenske
+818915r3<adjektiv>östtimoriansk:östtimoriansk:östtimorianskt:östtimorianska:östtimorianska::::östtimorianske
+655132r3<adjektiv>östtysk:östtysk:östtyskt:östtyska:östtyska:!:!:!:östtyske
+818929r3<substantiv>östtysk:östtysk:östtysks:östtysken:östtyskens:östtyskar:östtyskars:östtyskarna:östtyskarnas
+818921r3<substantiv>östtyska:östtyska:östtyskas:östtyskan:östtyskans:östtyskor:östtyskors:östtyskorna:östtyskornas
+712593r3<egennamn>Östtyskland:Östtyskland:Östtysklands
+CUSTOM: y n Östtysklands
+921105r3<substantiv>östutvidgning:östutvidgning:östutvidgnings:östutvidgningen:östutvidgningens::::
+568586r3<adjektiv>östvästlig:östvästlig:östvästligt:östvästliga:östvästliga::::
+548104r7<verb>öva:öva:övade:övat:övar:öva:övas:övades:övats:övas:övad:övat:övade:övande:
+699473r3<substantiv>övande:övande:övandes:övandet:övandets::::
+620450r23<adverb>över:över
+CUSTOM: y n över
+620451r36<preposition>över:över
+CUSTOM: y n
+655136r4<substantiv>överadjutant:överadjutant:överadjutants:överadjutanten:överadjutantens:överadjutanter:överadjutanters:överadjutanterna:överadjutanternas
+COMPOUND(620451, 548146): över + adjutant
+655144r3<adjektiv>överaktiv:överaktiv:överaktivt:överaktiva:överaktiva:!:!:!:överaktive
+620452r3<adverb>överallt:överallt
+571245r3<adjektiv>överambitiös:överambitiös:överambitiöst:överambitiösa:överambitiösa:!:!:!:överambitiöse
+585808r4<verb>överanstränga:överanstränga:överansträngde:överansträngt:överanstränger:överansträng:överansträngas:överansträngdes:överansträngts:överansträngs:överansträngd:överansträngt:överansträngda::
+649554r3<adjektiv>överansträngd:överansträngd:överansträngt:överansträngda:överansträngda::::
+606448r3<substantiv>överansträngning:överansträngning:överansträngnings:överansträngningen:överansträngningens:överansträngningar:överansträngningars:överansträngningarna:överansträngningarnas
+CUSTOM: y y överansträngnings
+655148r3<verb>överantvarda:överantvarda:överantvardade:överantvardat:överantvardar:överantvarda:överantvardas:överantvardades:överantvardats:överantvardas:::::
+655155r5<verb>överarbeta:överarbeta:överarbetade:överarbetat:överarbetar:överarbeta:överarbetas:överarbetades:överarbetats:överarbetas:överarbetad:överarbetat:överarbetade::
+818937r3<substantiv>överarbetning:överarbetning:överarbetnings:överarbetningen:överarbetningens:överarbetningar:överarbetningars:överarbetningarna:överarbetningarnas
+655157r4<substantiv>överarm:överarm:överarms:överarmen:överarmens:överarmar:överarmars:överarmarna:överarmarnas
+CUSTOM: y y överarms
+765079r4<substantiv>överarmsmuskel:överarmsmuskel:överarmsmuskels:överarmsmuskeln:överarmsmuskelns:överarmsmuskler:överarmsmusklers:överarmsmusklerna:överarmsmusklernas
+COMPOUND(655157, 621435): överarm + muskel
+591571r4<verb>överbalansera:överbalansera:överbalanserade:överbalanserat:överbalanserar:överbalansera:överbalanseras:överbalanserades:överbalanserats:överbalanseras:överbalanserad:överbalanserat:överbalanserade::
+649556r3<adjektiv>överbefolkad:överbefolkad:överbefolkat:överbefolkade:överbefolkade:!:!:!:
+662992r3<substantiv>överbefolkning:överbefolkning:överbefolknings:överbefolkningen:överbefolkningens::::
+CUSTOM: y y överbefolknings
+615535r3<substantiv>överbefälhavare:överbefälhavare:överbefälhavares:överbefälhavaren:överbefälhavarens:överbefälhavare:överbefälhavares:överbefälhavarna:överbefälhavarnas
+CUSTOM: y y överbefälhavar
+655165r3<adjektiv>överbegåvad:överbegåvad:överbegåvat:överbegåvade:överbegåvade:!:!:!:
+655168r4<adjektiv>överbelagd:överbelagd:överbelagt:överbelagda:överbelagda:!:!:!:!
+649557r3<verb>överbelasta:överbelasta:överbelastade:överbelastat:överbelastar:överbelasta:överbelastas:överbelastades:överbelastats:överbelastas:överbelastad:överbelastat:överbelastade::
+570586r3<adjektiv>överbelastbar:överbelastbar:överbelastbart:överbelastbara:överbelastbara::::
+765080r4<substantiv>överbelastning:överbelastning:överbelastnings:överbelastningen:överbelastningens:överbelastningar:överbelastningars:överbelastningarna:överbelastningarnas
+CUSTOM: y y överbelastnings
+765088r4<substantiv>överbelastningsskydd:överbelastningsskydd:överbelastningsskydds:överbelastningsskyddet:överbelastningsskyddets:överbelastningsskydd:överbelastningsskydds:överbelastningsskydden:överbelastningsskyddens
+COMPOUND(765080, 552935): överbelastning + skydd
+649562r3<substantiv>överbeläggning:överbeläggning:överbeläggnings:överbeläggningen:överbeläggningens::::
+CUSTOM: y y överbeläggnings
+662994r4<verb>överbemanna:överbemanna:överbemannade:överbemannat:överbemannar:överbemanna:överbemannas:överbemannades:överbemannats:överbemannas:överbemannad:överbemannat:överbemannade:överbemannande:
+COMPOUND(620450, 546240): över + bemanna
+655171r4<verb>överbeskydda:överbeskydda:överbeskyddade:överbeskyddat:överbeskyddar:överbeskydda:överbeskyddas:överbeskyddades:överbeskyddats:överbeskyddas:överbeskyddad:överbeskyddat:överbeskyddade::
+655175r3<adjektiv>överbeskyddande:överbeskyddande:överbeskyddande:överbeskyddande:överbeskyddande:!:!:!:
+800860r4<adjektiv>överbetald:överbetald:överbetalt:överbetalda:överbetalda::::överbetalde
+548105r4<verb>överbevisa:överbevisa:överbevisade:överbevisat:överbevisar:överbevisa:överbevisas:överbevisades:överbevisats:överbevisas:överbevisad:överbevisat:överbevisade::
+655176r5<verb>överbjuda:överbjuda:överbjöd:överbjudit:överbjuder:överbjud:överbjudas:överbjöds:överbjudits:överbjuds, överbjudes:överbjuden:överbjudet:överbjudna::
+COMPOUND(620451, 585279): över + bjuda
+649567r3<substantiv>överblick:överblick:överblicks:överblicken:överblickens:överblickar:överblickars:överblickarna:överblickarnas
+649574r4<verb>överblicka:överblicka:överblickade:överblickat:överblickar:överblicka:överblickas:överblickades:överblickats:överblickas:överblickad:överblickat:överblickade::
+570589r3<adjektiv>överblickbar:överblickbar:överblickbart:överblickbara:överblickbara::::
+891959r3<substantiv>överblickbarhet:överblickbarhet:överblickbarhets:överblickbarheten:överblickbarhetens::::
+649575r4<adjektiv>överbliven:överbliven:överblivet:överblivna:överblivna:!:!:!:överblivne
+655180r3<adjektiv>överblommad:överblommad:överblommat:överblommade:överblommade:!:!:!:
+655183r3<verb>överboka:överboka:överbokade:överbokat:överbokar:överboka:överbokas:överbokades:överbokats:överbokas:överbokad:överbokat:överbokade::
+620939r3<adverb>överbord:överbord
+818951r3<verb>överbroa:överbroa:överbroade:överbroat:överbroar:överbroa:överbroas:överbroades:överbroats:överbroas:överbroad:överbroat:överbroade::
+548106r5<verb>överbrygga:överbrygga:överbryggade:överbryggat:överbryggar:överbrygga:överbryggas:överbryggades:överbryggats:överbryggas:överbryggad:överbryggat:överbryggade:överbryggande:
+796942r3<adjektiv>överbryggad:överbryggad:överbryggat:överbryggade:överbryggade:!:!:!:
+818960r3<substantiv>överbryggning:överbryggning:överbryggnings:överbryggningen:överbryggningens::::
+CUSTOM: y y överbryggnings +överbryggnings
+751641r4<substantiv>överbud:överbud:överbuds:överbudet:överbudets:överbud:överbuds:överbuden:överbudens
+CUSTOM: y y överbuds
+751637r4<substantiv>överbudspolitik:överbudspolitik:överbudspolitiks:överbudspolitiken:överbudspolitikens::::
+COMPOUND(751641, 550224): överbud + politik
+847401r3<adjektiv>överburen:överburen:överburet:överburna:överburna::::
+655191r3<adjektiv>överbyggd:överbyggd:överbyggt:överbyggda:överbyggda:!:!:!:!
+896039r3<substantiv>överbyggnad:överbyggnad:överbyggnads:överbyggnaden:överbyggnadens:överbyggnader:överbyggnaders:överbyggnaderna:överbyggnadernas
+989316r3<substantiv>överceremonimästare:överceremonimästare:överceremonimästares:överceremonimästaren:överceremonimästarens:överceremonimästare:överceremonimästares:överceremonimästarna:överceremonimästarnas
+796943r3<adjektiv>överciviliserad:överciviliserad:överciviliserat:överciviliserade:överciviliserade:!:!:!:
+588486r4<verb>överdebitera:överdebitera:överdebiterade:överdebiterat:överdebiterar:överdebitera:överdebiteras:överdebiterades:överdebiterats:överdebiteras:överdebiterad:överdebiterat:överdebiterade::
+552158r3<substantiv>överdel:överdel:överdels:överdelen:överdelens:överdelar:överdelars:överdelarna:överdelarnas
+588490r4<verb>överdestillera:överdestillera:överdestillerade:överdestillerat:överdestillerar:överdestillera:överdestilleras:överdestillerades:överdestillerats:överdestilleras:överdestillerad:överdestillerat:överdestillerade::
+588494r4<verb>överdimensionera:överdimensioner

@@ -1,0 +1,639 @@
+bärton:::::bärtoner:bärtoners:bärtonerna:bärtonernas
+919059r4<substantiv>bärvin:bärvin:bärvins:bärvinet:bärvinets:bärviner:bärviners:bärvinerna:bärvinernas
+COMPOUND(552295, 600515): bär + vin
+CUSTOM: y n n
+929753r4<substantiv>bärvåg:bärvåg:bärvågs:bärvågen:bärvågens:bärvågor:bärvågors:bärvågorna:bärvågornas
+COMPOUND(560535, 593520): bära + våg
+CUSTOM: y y bärvågs
+571097r3<adverb>bäst:bäst
+971099r4<substantiv>bästeman:bästeman:bästemans:bästemannen:bästemannens:bästemän:bästemäns:bästemännen:bästemännens
+COMPOUND(555921, 557796): bra + man
+878151r3<substantiv>bästföredatum:bästföredatum:bästföredatums:bästföredatumet:bästföredatumets:bästföredatum:bästföredatums:bästföredatumen:bästföredatumens
+551000r3<substantiv>bästis:bästis:bästis:bästisen:bästisens:bästisar:bästisars:bästisarna:bästisarnas
+753239r3<adjektiv>bästsäljande:bästsäljande:bästsäljande:bästsäljande:bästsäljande:!:!:!:
+615179r3<substantiv>bästsäljare:bästsäljare:bästsäljares:bästsäljaren:bästsäljarens:bästsäljare:bästsäljares:bästsäljarna:bästsäljarnas
+CUSTOM: y y bästsäljar
+546346r5<verb>bättra:bättra:bättrade:bättrat:bättrar:bättra:bättras:bättrades:bättrats:bättras:bättrad:bättrat:bättrade:bättrande:
+617400r3<substantiv>bättring:bättring:bättrings:bättringen:bättringens:bättringar:bättringars:bättringarna:bättringarnas
+CUSTOM: y y bättrings
+546347r3<verb>bäva:bäva:bävade:bävat:bävar:bäva:::::::::
+625120r3<substantiv>bävan:bävan:bävans:bävan:bävans:!:!:!:!
+689247r3<adjektiv>bävande:bävande:bävande:bävande:bävande:!:!:!:
+555084r3<substantiv>bäver:bäver:bävers:bävern:bäverns:bävrar:bävrars:bävrarna:bävrarnas
+CUSTOM: y y bäver
+971107r3<substantiv>bävergäll:bävergäll:bävergälls:bävergället:bävergällets:bävergäll:bävergälls:bävergällen:bävergällens
+660924r3<substantiv>böckling:böckling:böcklings:böcklingen:böcklingens:böcklingar:böcklingars:böcklingarna:böcklingarnas
+CUSTOM: y y böckling
+560915r3<substantiv>bödel:bödel:bödels:bödeln:bödelns:bödlar:bödlars:bödlarna:bödlarnas
+CUSTOM: y y bödels
+557997r5<substantiv>bög:bög:bögs:bögen:bögens:bögar:bögars:bögarna:bögarnas
+DEFINITION 1: Homosexuell man [vardagligt]
+CUSTOM: b n
+631553r3<adjektiv>bögig:bögig:bögigt:bögiga:bögiga:bögigare:bögigast:bögigaste:bögige
+CUSTOM: b n n
+636703r7<substantiv>bögklubb:bögklubb:bögklubbs:bögklubben:bögklubbens:bögklubbar:bögklubbars:bögklubbarna:bögklubbarnas
+COMPOUND(557997, 551547): bög + klubb
+971114r3<substantiv>bögskräck:bögskräck:bögskräcks:bögskräcken:bögskräckens::::
+855247r3<egennamn>Böhm:Böhm:Böhms
+579284r4<adjektiv>böhmisk:böhmisk:böhmiskt:böhmiska:böhmiska::::böhmiske
+558021r3<substantiv>böj:böj:böjs:böjen:böjens:böjar:böjars:böjarna:böjarnas
+560916r7<verb>böja:böja:böjde:böjt:böjer:böj:böjas:böjdes:böjts:böjs, böjes:böjd:böjt:böjda:böjande:
+CUSTOM: y n
+568977r3<adjektiv>böjbar:böjbar:böjbart:böjbara:böjbara::::
+971119r3<substantiv>böjbarhet:böjbarhet:böjbarhets:böjbarheten:böjbarhetens::::
+799176r3<adjektiv>böjd:böjd:böjt:böjda:böjda::::
+660926r3<substantiv>böjelse:böjelse:böjelses:böjelsen:böjelsens:böjelser:böjelsers:böjelserna:böjelsernas
+CUSTOM: y y böjelse
+563196r5<adjektiv>böjlig:böjlig:böjligt:böjliga:böjliga:böjligare:böjligast:böjligaste:böjlige
+971123r3<substantiv>böjlighet:böjlighet:böjlighets:böjligheten:böjlighetens::::
+866707r4<substantiv>böjmuskel:böjmuskel:böjmuskels:böjmuskeln:böjmuskelns:böjmuskler:böjmusklers:böjmusklerna:böjmusklernas
+COMPOUND(560916, 621435): böja + muskel
+633148r7<substantiv>böjning:böjning:böjnings:böjningen:böjningens:böjningar:böjningars:böjningarna:böjningarnas
+CUSTOM: y y böjnings +böjnings
+660927r3<substantiv>böjningsform:böjningsform:böjningsforms:böjningsformen:böjningsformens:böjningsformer:böjningsformers:böjningsformerna:böjningsformernas
+866715r3<substantiv>böjprov:böjprov:böjprovs:böjprovet:böjprovets:böjprov:böjprovs:böjproven:böjprovens
+797346r3<adjektiv>böjstyv:böjstyv:böjstyvt:böjstyva:böjstyva::::
+CUSTOM: n n
+866721r5<substantiv>böjträ:böjträ:böjträs:böjträet:böjträets::::
+971127r4<substantiv>böjträmöbel:böjträmöbel:böjträmöbels:böjträmöbeln:böjträmöbelns:böjträmöbler:böjträmöblers:böjträmöblerna:böjträmöblernas
+COMPOUND(866721, 621549): böjträ + möbel
+753242r3<substantiv>böjträstol:böjträstol:böjträstols:böjträstolen:böjträstolens:böjträstolar:böjträstolars:böjträstolarna:böjträstolarnas
+971136r4<substantiv>böjträteknik:böjträteknik:böjträtekniks:böjträtekniken:böjträteknikens::::
+COMPOUND(866721, 603854): böjträ + teknik
+971141r3<substantiv>böjveckseksem:böjveckseksem:böjveckseksems:böjveckseksemet:böjveckseksemets:böjveckseksem:böjveckseksems:böjveckseksemen:böjveckseksemens
+558028r3<substantiv>bök:bök:böks:böket:bökets:!:!:!:!
+546349r5<verb>böka:böka:bökade:bökat:bökar:böka:bökas:bökades:bökats:bökas::::bökande:!
+689249r3<substantiv>bökande:bökande:bökandes:bökandet:bökandets::::
+571780r4<adjektiv>bökig:bökig:bökigt:bökiga:bökiga:bökigare:bökigast:bökigaste:
+558032r3<substantiv>böl:böl:böls:bölet:bölets:!:!:!:!
+624102r4<verb>böla:böla:bölade:bölat:bölar:böla:bölas:bölades:bölats:bölas::::bölande:
+548513r8<substantiv>böld:böld:bölds:bölden:böldens:bölder:bölders:bölderna:böldernas
+CUSTOM: y n
+735832r3<substantiv>böldpest:böldpest:böldpests:böldpesten:böldpestens::::
+617406r3<substantiv>bölja:bölja:böljas:böljan:böljans:böljor:böljors:böljorna:böljornas
+617408r4<verb>bölja:bölja:böljade:böljat:böljar:bölja::::::::böljande:
+971147r3<substantiv>böljegång:böljegång:böljegångs:böljegången:böljegångens::::
+971151r3<substantiv>böljemoln:böljemoln:böljemolns:böljemolnet:böljemolnets:böljemoln:böljemolns:böljemolnen:böljemolnens
+971157r3<substantiv>böljeslag:böljeslag:böljeslags:böljeslaget:böljeslagets:böljeslag:böljeslags:böljeslagen:böljeslagens
+571781r3<adjektiv>böljformig:böljformig:böljformigt:böljformiga:böljformiga::::
+558036r37<substantiv>bön:bön:böns:bönen:bönens:böner:böners:bönerna:bönernas
+CUSTOM: y n
+593881r13<substantiv>böna:böna:bönas:bönan:bönans:bönor:bönors:bönorna:bönornas
+CUSTOM: y n bön
+625122r5<verb>böna:böna:bönade:bönat:bönar:böna:bönas:bönades:bönats:bönas::::bönande:
+CUSTOM: y n
+929761r4<substantiv>bönbok:bönbok:bönboks:bönboken:bönbokens:bönböcker:bönböckers:bönböckerna:bönböckernas
+COMPOUND(558036, 555346): bön + bok
+971310r4<substantiv>bönebok:bönebok:böneboks:böneboken:bönebokens:böneböcker:böneböckers:böneböckerna:böneböckernas
+COMPOUND(558036, 555346): bön + bok
+971196r4<substantiv>bönedag:bönedag:bönedags:bönedagen:bönedagens:bönedagar:bönedagars:bönedagarna:bönedagarnas
+COMPOUND(558036, 551009): bön + dag
+971206r4<substantiv>böneflagga:böneflagga:böneflaggas:böneflaggan:böneflaggans:böneflaggor:böneflaggors:böneflaggorna:böneflaggornas
+COMPOUND(558036, 555368): bön + flagga
+890360r4<substantiv>bönegemenskap:bönegemenskap:bönegemenskaps:bönegemenskapen:bönegemenskapens:bönegemenskaper:bönegemenskapers:bönegemenskaperna:bönegemenskapernas
+COMPOUND(558036, 562697): bön + gemenskap
+971163r4<substantiv>bönegrupp:bönegrupp:bönegrupps:bönegruppen:bönegruppens:bönegrupper:bönegruppers:bönegrupperna:bönegruppernas
+COMPOUND(558036, 549163): bön + grupp
+866732r3<substantiv>bönegudstjänst:bönegudstjänst:bönegudstjänsts:bönegudstjänsten:bönegudstjänstens:bönegudstjänster:bönegudstjänsters:bönegudstjänsterna:bönegudstjänsternas
+971320r4<substantiv>bönehall:bönehall:bönehalls:bönehallen:bönehallens:bönehallar:bönehallars:bönehallarna:bönehallarnas
+COMPOUND(558036, 551356): bön + hall
+733155r4<substantiv>bönehus:bönehus:bönehus:bönehuset:bönehusets:bönehus:bönehus:bönehusen:bönehusens
+COMPOUND(558036, 552480): bön + hus
+CUSTOM: y n bönehus
+971330r4<substantiv>bönekammare:bönekammare:bönekammares:bönekammaren:bönekammarens::::
+COMPOUND(558036, 559310): bön + kammare
+971171r3<substantiv>bönekvarn:bönekvarn:bönekvarns:bönekvarnen:bönekvarnens:bönekvarnar:bönekvarnars:bönekvarnarna:bönekvarnarnas
+960762r4<substantiv>böneledare:böneledare:böneledares:böneledaren:böneledarens:böneledare:böneledares:böneledarna:böneledarnas
+COMPOUND(558036, 609818): bön + ledare
+971216r4<substantiv>bönelokal:bönelokal:bönelokals:bönelokalen:bönelokalens:bönelokaler:bönelokalers:bönelokalerna:bönelokalernas
+COMPOUND(558036, 549959): bön + lokal
+866741r4<substantiv>böneman:böneman:bönemans:bönemannen:bönemannens:bönemän:bönemäns:bönemännen:bönemännens
+COMPOUND(558036, 557796): bön + man
+735836r3<substantiv>bönematta:bönematta:bönemattas:bönemattan:bönemattans:bönemattor:bönemattors:bönemattorna:bönemattornas
+866749r4<substantiv>bönemöte:bönemöte:bönemötes:bönemötet:bönemötets:bönemöten:bönemötens:bönemötena:bönemötenas
+COMPOUND(558036, 560760): bön + möte
+971226r4<substantiv>böneplats:böneplats:böneplats:böneplatsen:böneplatsens:böneplatser:böneplatsers:böneplatserna:böneplatsernas
+COMPOUND(558036, 550210): bön + plats
+971235r4<substantiv>bönerabblande:bönerabblande:bönerabblandes:bönerabblandet:bönerabblandets::::
+COMPOUND(558036, 958908): bön + rabblande
+971241r4<substantiv>böneramsa:böneramsa:böneramsas:böneramsan:böneramsans:böneramsor:böneramsors:böneramsorna:böneramsornas
+COMPOUND(558036, 621681): bön + ramsa
+971251r4<substantiv>böneritual:böneritual:bönerituals:böneritualen:böneritualens:böneritualer:böneritualers:böneritualerna:böneritualernas
+COMPOUND(558036, 550396): bön + ritual
+971261r4<substantiv>bönerop:bönerop:bönerops:böneropet:böneropets:bönerop:bönerops:böneropen:böneropens
+COMPOUND(558036, 552845): bön + rop
+971268r4<substantiv>bönerum:bönerum:bönerums:bönerummet:bönerummets:bönerum:bönerums:bönerummen:bönerummens
+COMPOUND(558036, 571182): bön + rum
+971276r4<substantiv>bönesjal:bönesjal:bönesjals:bönesjalen:bönesjalens:bönesjalar:bönesjalars:bönesjalarna:bönesjalarnas
+COMPOUND(558036, 626202): bön + sjal
+753251r3<substantiv>böneskrift:böneskrift:böneskrifts:böneskriften:böneskriftens:böneskrifter:böneskrifters:böneskrifterna:böneskrifternas
+890351r4<substantiv>bönestund:bönestund:bönestunds:bönestunden:bönestundens:bönestunder:bönestunders:bönestunderna:bönestundernas
+COMPOUND(558036, 550593): bön + stund
+971179r3<substantiv>bönesuck:bönesuck:bönesucks:bönesucken:bönesuckens:bönesuckar:bönesuckars:bönesuckarna:bönesuckarnas
+971286r4<substantiv>bönetid:bönetid:bönetids:bönetiden:bönetidens:bönetider:bönetiders:bönetiderna:bönetidernas
+COMPOUND(558036, 550665): bön + tid
+971296r4<substantiv>bönetimme:bönetimme, bönetimma:bönetimmes, bönetimmas:bönetimmen, bönetimman:bönetimmens, bönetimmans:bönetimmar:bönetimmars:bönetimmarna:bönetimmarnas
+COMPOUND(558036, 599754): bön + timma, timme
+943620r4<substantiv>böneutrop:böneutrop:böneutrops:böneutropet:böneutropets:böneutrop:böneutrops:böneutropen:böneutropens
+COMPOUND(558036, 553090): bön + utrop
+943627r3<substantiv>böneutropare:böneutropare:böneutropares:böneutroparen:böneutroparens:böneutropare:böneutropares:böneutroparna:böneutroparnas
+971187r4<substantiv>böneämne:böneämne:böneämnes:böneämnet:böneämnets:böneämnen:böneämnens:böneämnena:böneämnenas
+COMPOUND(558036, 613026): bön + ämne
+735844r6<verb>bönfalla:bönfalla:bönföll:bönfallit:bönfaller:bönfall:bönfallas:bönfölls:bönfallits:bönfalles::::bönfallande:
+COMPOUND(558036, 585306): bön + falla
+571784r3<adjektiv>bönformig:bönformig:bönformigt:bönformiga:bönformiga::::
+735849r4<substantiv>böngrodd:böngrodd:böngrodds:böngrodden:böngroddens:böngroddar:böngroddars:böngroddarna:böngroddarnas
+COMPOUND(593881, 551313): böna + grodd
+660930r4<substantiv>böngryta:böngryta:böngrytas:böngrytan:böngrytans:böngrytor:böngrytors:böngrytorna:böngrytornas
+COMPOUND(593881, 594146): böna + gryta
+866761r3<substantiv>bönhas:bönhas:bönhas:bönhasen:bönhasens:bönhasar:bönhasars:bönhasarna:bönhasarnas
+660931r5<verb>bönhöra:bönhöra:bönhörde:bönhört:bönhör:bönhör:bönhöras:bönhördes:bönhörts:bönhörs, bönhöres:bönhörd:bönhört:bönhörda:bönhörande:
+COMPOUND(558036, 555885): bön + höra
+689251r4<substantiv>bönhörelse:bönhörelse:bönhörelses:bönhörelsen:bönhörelsens:bönhörelser:bönhörelsers:bönhörelserna:bönhörelsernas
+CUSTOM: y y bönhörelse
+888866r4<substantiv>bönland:bönland:bönlands:bönlandet:bönlandets:bönland:bönlands:bönlanden:bönlandens
+COMPOUND(625122, 556252): böna + land
+599258r3<substantiv>bönsal:bönsal:bönsals:bönsalen:bönsalens:bönsalar:bönsalars:bönsalarna:bönsalarnas
+558038r3<verb>böra:böra:borde:bort:bör::::::::::
+624382r14<substantiv>börd:börd:börds:börden:bördens::::
+CUSTOM: y n
+593882r5<substantiv>börda:börda:bördas:bördan:bördans:bördor:bördors:bördorna:bördornas
+CUSTOM: y y
+912705r4<substantiv>bördefördelning:bördefördelning:bördefördelnings:bördefördelningen:bördefördelningens::::
+COMPOUND(593882, 617921): börda + fördelning
+571787r6<adjektiv>bördig:bördig:bördigt:bördiga:bördiga:bördigare:bördigast:bördigaste:bördige::::::::
+735857r3<substantiv>bördighet:bördighet:bördighets:bördigheten:bördighetens::::
+971336r4<substantiv>bördsadel:bördsadel:bördsadels:bördsadeln:bördsadelns:!:!:!:!
+COMPOUND(624382, 613590): börd + adel
+971340r4<substantiv>bördsrätt:bördsrätt:bördsrätts:bördsrätten:bördsrättens::::
+COMPOUND(624382, 603413): börd + rätt
+971344r4<adjektiv>bördsstolt:bördsstolt:bördsstolt:bördsstolta:bördsstolta::::bördsstolte::::::::
+COMPOUND(624382, 571273): börd + stolt
+546350r5<verb>börja:börja:började:börjat:börjar:börja:börjas:börjades:börjats:börjas::::börjande:
+617409r5<substantiv>början:början:börjans:början:börjans::::
+554511r3<egennamn>Börje:Börje:Börjes
+874699r3<egennamn>Börjesson:Börjesson:Börjessons
+598170r3<substantiv>börs:börs:börs:börsen:börsens:börsar:börsars:börsarna:börsarnas
+CUSTOM: y y börs
+604212r15<substantiv>börs:börs:börs:börsen:börsens:börser:börsers:börserna:börsernas
+CUSTOM: y y börs
+735861r4<substantiv>börsaffär:börsaffär:börsaffärs:börsaffären:börsaffärens:börsaffärer:börsaffärers:börsaffärerna:börsaffärernas
+COMPOUND(604212, 548155): börs + affär
+617410r3<substantiv>börsbolag:börsbolag:börsbolags:börsbolaget:börsbolagets:börsbolag:börsbolags:börsbolagen:börsbolagens
+CUSTOM: y y börsbolags
+617416r3<substantiv>börschef:börschef:börschefs:börschefen:börschefens:börschefer:börschefers:börscheferna:börschefernas
+930458r4<substantiv>börsdag:börsdag:börsdags:börsdagen:börsdagens:börsdagar:börsdagars:börsdagarna:börsdagarnas
+COMPOUND(604212, 551009): börs + dag
+579287r3<adjektiv>börsetisk:börsetisk:börsetiskt:börsetiska:börsetiska::::
+933915r4<substantiv>börsfall:börsfall:börsfalls:börsfallet:börsfallets:börsfall:börsfalls:börsfallen:börsfallens
+COMPOUND(604212, 552371): börs + fall
+845490r3<substantiv>börshaj:börshaj:börshajs:börshajen:börshajens:börshajar:börshajars:börshajarna:börshajarnas
+930466r4<substantiv>börshus:börshus:börshus:börshuset:börshusets:börshus:börshus:börshusen:börshusens
+COMPOUND(604212, 552480): börs + hus
+586305r3<verb>börsintroducera:börsintroducera:börsintroducerade:börsintroducerat:börsintroducerar:börsintroducera:::::::::
+617424r3<substantiv>börsklipp:börsklipp:börsklipps:börsklippet:börsklippets:börsklipp:börsklipps:börsklippen:börsklippens
+617430r3<substantiv>börskurs:börskurs:börskurs:börskursen:börskursens:börskurser:börskursers:börskurserna:börskursernas
+CUSTOM: y y börskurs
+617437r3<substantiv>börslista:börslista:börslistas:börslistan:börslistans:börslistor:börslistors:börslistorna:börslistornas
+609395r3<substantiv>börsmäklare:börsmäklare:börsmäklares:börsmäklaren:börsmäklarens:börsmäklare:börsmäklares:börsmäklarna:börsmäklarnas
+CUSTOM: y y börsmäklar
+617445r3<substantiv>börsnedgång:börsnedgång:börsnedgångs:börsnedgången:börsnedgångens:börsnedgångar:börsnedgångars:börsnedgångarna:börsnedgångarnas
+546352r4<verb>börsnotera:börsnotera:börsnoterade:börsnoterat:börsnoterar:börsnotera:börsnoteras:börsnoterades:börsnoterats:börsnoteras:börsnoterad:börsnoterat:börsnoterade::
+570650r3<adjektiv>börsnoterad:börsnoterad:börsnoterat:börsnoterade:börsnoterade:!:!:!:
+596605r3<substantiv>börsnotering:börsnotering:börsnoterings:börsnoteringen:börsnoteringens:börsnoteringar:börsnoteringars:börsnoteringarna:börsnoteringarnas
+CUSTOM: y y börsnoterings
+849447r3<substantiv>börsoro:börsoro:börsoros:börsoron:börsorons::::
+601578r3<substantiv>börspost:börspost:börsposts:börsposten:börspostens:börsposter:börsposters:börsposterna:börsposternas
+617453r3<substantiv>börsras:börsras:börsras:börsraset:börsrasets:börsras:börsras:börsrasen:börsrasens
+599266r3<substantiv>börssal:börssal:börssals:börssalen:börssalens:börssalar:börssalars:börssalarna:börssalarnas
+617458r3<substantiv>börsuppgång:börsuppgång:börsuppgångs:börsuppgången:börsuppgångens:börsuppgångar:börsuppgångars:börsuppgångarna:börsuppgångarnas
+617466r3<substantiv>börsutveckling:börsutveckling:börsutvecklings:börsutvecklingen:börsutvecklingens::::
+617470r3<substantiv>börsverksamhet:börsverksamhet:börsverksamhets:börsverksamheten:börsverksamhetens::::
+CUSTOM: y y börsverksamhets
+937066r4<substantiv>börsvärde:börsvärde:börsvärdes:börsvärdet:börsvärdets:börsvärden:börsvärdens:börsvärdena:börsvärdenas
+COMPOUND(604212, 613015): börs + värde
+941557r4<substantiv>börsyra:börsyra:börsyras:börsyran:börsyrans:!:!:!:!
+COMPOUND(604212, 557780): börs + yra
+912711r4<substantiv>börsår:börsår:börsårs:börsåret:börsårets:börsår:börsårs:börsåren:börsårens
+COMPOUND(604212, 553140): börs + år
+CUSTOM: y n n
+593883r4<substantiv>bössa:bössa:bössas:bössan:bössans:bössor:bössors:bössorna:bössornas
+CUSTOM: y y böss
+546353r3<verb>böta:böta:bötade:bötat:bötar:böta:::::::::
+557892r13<substantiv>böter, bot:bot:bots:boten:botens:böter:böters:böterna:böternas
+DEFINITION 1: Straffavgift
+CUSTOM: y y !bots
+733160r4<substantiv>bötesbelopp:bötesbelopp:bötesbelopps:bötesbeloppet:bötesbeloppets:bötesbelopp:bötesbelopps:bötesbeloppen:bötesbeloppens
+COMPOUND(557892, 552231): böter, bot + belopp
+960769r4<verb>bötesbelägga:bötesbelägga:bötesbelade:bötesbelagt:bötesbelägger:bötesbelägg:bötesbeläggas:bötesbelades:bötesbelagts:bötesbeläggs, bötesbelägges:bötesbelagd:bötesbelagt:bötesbelagda:bötesbeläggande:
+COMPOUND(557892, 592503): böter, bot + belägga
+877047r4<substantiv>böteslapp:böteslapp:böteslapps:böteslappen:böteslappens:böteslappar:böteslappars:böteslapparna:böteslapparnas
+COMPOUND(557892, 551692): böter, bot + lapp
+728448r4<substantiv>bötesstraff:bötesstraff:bötesstraffs:bötesstraffet:bötesstraffets:bötesstraff:bötesstraffs:bötesstraffen:bötesstraffens
+COMPOUND(557892, 552986): böter, bot + straff
+738889r4<substantiv>bötessumma:bötessumma:bötessummas:bötessumman:bötessummans:bötessummor:bötessummors:bötessummorna:bötessummornas
+COMPOUND(557892, 595450): böter, bot + summa
+660935r5<verb>bötfälla:bötfälla:bötfällde:bötfällt:bötfäller:bötfäll:bötfällas:bötfälldes:bötfällts:bötfälls, bötfälles:bötfälld:bötfällt:bötfällda:bötfällande:
+COMPOUND(557892, 585535): böter, bot + fälla
+738898r3<substantiv>bötfällning:bötfällning:bötfällnings:bötfällningen:bötfällningens::::
+866774r3<substantiv>bövel:bövel:bövels:böveln, bövelen:bövelns, bövelens:bövlar:bövlars:bövlarna:bövlarnas
+CUSTOM: y n
+960783r4<substantiv>cabb:cabb:cabbs:cabben:cabbens:cabbar:cabbars:cabbarna:cabbarnas
+CUSTOM: y n
+861797r3<substantiv>cabriolet:cabriolet:cabriolets:cabrioleten:cabrioletens:cabrioleter:cabrioleters:cabrioleterna:cabrioleternas
+878576r3<verb>cacha:cacha:cachade:cachat:cachar:cacha:cachas:cachades:cachats:cachas:cachad:cachat:cachade:cachande:
+CUSTOM: n n n
+625123r4<substantiv>cache:cache:caches:cachen:cachens:cachar:cachars:cacharna:cacharnas
+DEFINITION 1: Litet och snabbt datorminne [som bygger på principen att det som använts en gång troligen kommer att användas igen].
+738909r3<substantiv>cacheminne:cacheminne:cacheminnes:cacheminnet:cacheminnets:cacheminnen:cacheminnens:cacheminnena:cacheminnenas
+861805r3<substantiv>caddie:caddie:caddies:caddien:caddiens:caddier:caddiers:caddierna:caddiernas
+762416r3<egennamn>Cadillac:Cadillac:Cadillacs
+553192r3<egennamn>Caesar:Caesar:Caesars
+639100r3<substantiv>cafeteria:cafeteria:cafeterias:cafeterian:cafeterians:cafeterior:cafeteriors:cafeteriorna:cafeteriornas
+955180r3<substantiv>caffelatte:caffelatte:caffelattes:caffelatten:caffelattens::::
+719555r3<egennamn>Caibarién:Caibarién:Caibariéns
+635803r3<egennamn>Cajsa:Cajsa:Cajsas
+960807r4<substantiv>cajun:cajun:cajuns:cajunen:cajunens:cajuner:cajuners:cajunerna:cajunernas
+960815r4<substantiv>cajunkrydda:cajunkrydda:cajunkryddas:cajunkryddan:cajunkryddans:cajunkryddor:cajunkryddors:cajunkryddorna:cajunkryddornas
+COMPOUND(960807, 594547): cajun + krydda
+723395r3<substantiv>californium:californium:californiums:californiumet:californiumets::::
+896611r4<substantiv>callcenter:callcenter:callcenters:callcentret:callcentrets:callcenter:callcenters:callcentren:callcentrens
+CUSTOM: y y callcenter
+896613r3<substantiv>callcenterföretag::::::::
+COMPOUND(896611, 552403): callcenter + företag
+940468r3<substantiv>callgirl:callgirl:callgirls:::callgirls:callgirls::
+900908r3<egennamn>Calmfors:Calmfors:Calmfors
+CUSTOM: y n Calmfors
+960824r3<substantiv>calvados:calvados:calvados:calvadosen:calvadosens:calvadoser:calvadosers:calvadoserna:calvadosernas
+861813r3<substantiv>calypso:calypso:calypsos:calypson:calypsons::::
+CUSTOM: y n calypso
+719548r3<egennamn>Camagüey:Camagüey:Camagüeys
+971348r3<substantiv>cambervinkel:cambervinkel:cambervinkels:cambervinkeln:cambervinkelns:cambervinklar:cambervinklars:cambervinklarna:cambervinklarnas
+554876r4<egennamn>Cambridge:Cambridge:Cambridges
+CUSTOM: y n Cambridge
+873298r4<substantiv>Cambridgepolis:Cambridgepolis:Cambridgepolis:Cambridgepolisen:Cambridgepolisens:Cambridgepoliser:Cambridgepolisers:Cambridgepoliserna:Cambridgepolisernas
+COMPOUND(554876, 550221): Cambridge + polis
+CUSTOM: n n 
+861817r3<substantiv>camembert:camembert:camemberts:camemberten:camembertens:camemberter:camemberters:camemberterna:camemberternas
+860994r3<egennamn>Cameron:Cameron:Camerons
+553638r3<egennamn>Camilla:Camilla:Camillas
+727739r3<egennamn>Camino:Camino:Caminos
+874593r3<egennamn>Camorran:Camorran:Camorrans
+678588r3<substantiv>camouflage:camouflage:camouflages:camouflaget:camouflagets::::
+CUSTOM: y y camouflage
+586309r3<verb>camouflera:camouflera:camouflerade:camouflerat:camouflerar:camouflera:::::::::
+660938r3<verb>campa:campa:campade:campat:campar:campa::::::::campande:
+615180r3<substantiv>campare:campare:campares:camparen:camparens:campare:campares:camparna:camparnas
+CUSTOM: y y campar
+660940r4<substantiv>camping:camping:campings:campingen:campingens:campingar:campingars:campingarna:campingarnas
+CUSTOM: y y camping
+601586r3<substantiv>campingplats:campingplats:campingplats:campingplatsen:campingplatsens:campingplatser:campingplatsers:campingplatserna:campingplatsernas
+936806r3<substantiv>campus:campus:::::::
+CUSTOM: y y campus
+553989r3<egennamn>Canada:Canada:Canadas
+CUSTOM: n n
+936807r4<substantiv>canasta:canasta:canastas:canastan:canastans:canastor:canastors:canastorna:canastornas
+660941r3<substantiv>cancan:cancan:::::::
+626940r16<substantiv>cancer:cancer:cancers:cancern:cancerns:cancrar:cancrars:cancrarna:cancrarnas
+CUSTOM: y y cancer +cancer
+660942r5<substantiv>cancerbehandling:cancerbehandling:cancerbehandlings:cancerbehandlingen:cancerbehandlingens:cancerbehandlingar:cancerbehandlingars:cancerbehandlingarna:cancerbehandlingarnas
+COMPOUND(626940, 592479): cancer + behandling
+660946r3<substantiv>cancercell:cancercell:cancercells:cancercellen:cancercellens:cancerceller:cancercellers:cancercellerna:cancercellernas
+660954r3<substantiv>cancerfall:cancerfall:cancerfalls:cancerfallet:cancerfallets:cancerfall:cancerfalls:cancerfallen:cancerfallens
+660960r3<substantiv>cancerforskning:cancerforskning:cancerforsknings:cancerforskningen:cancerforskningens::::
+CUSTOM: y y cancerforsknings
+660964r3<adjektiv>cancerframkallande:cancerframkallande:cancerframkallande:cancerframkallande:cancerframkallande:!:!:!:
+660965r4<substantiv>cancerklinik:cancerklinik:cancerkliniks:cancerkliniken:cancerklinikens:cancerkliniker:cancerklinikers:cancerklinikerna:cancerklinikernas
+COMPOUND(626940, 549538): cancer + klinik
+660973r3<adjektiv>cancerogen:cancerogen:cancerogent:cancerogena:cancerogena:!:!:!:!
+861379r4<substantiv>canceroperation:canceroperation:canceroperations:canceroperationen:canceroperationens:canceroperationer:canceroperationers:canceroperationerna:canceroperationernas
+COMPOUND(626940, 603051): cancer + operation
+660975r3<substantiv>cancerpatient:cancerpatient:cancerpatients:cancerpatienten:cancerpatientens:cancerpatienter:cancerpatienters:cancerpatienterna:cancerpatienternas
+660983r3<adjektiv>cancersjuk:cancersjuk:cancersjukt:cancersjuka:cancersjuka:!:!:!:cancersjuke
+626954r4<substantiv>cancersvulst:cancersvulst:cancersvulsts:cancersvulsten:cancersvulstens:cancersvulster:cancersvulsters:cancersvulsterna:cancersvulsternas
+COMPOUND(626940, 550605): cancer + svulst
+678470r4<substantiv>cancersymptom:cancersymptom:cancersymptoms:cancersymptomet:cancersymptomets:cancersymptom:cancersymptoms:cancersymptomen:cancersymptomens
+COMPOUND(626940, 608210): cancer + symptom
+678469r4<substantiv>cancersymtom:cancersymtom:cancersymtoms:cancersymtomet:cancersymtomets:cancersymtom:cancersymtoms:cancersymtomen:cancersymtomens
+COMPOUND(626940, 608214): cancer + symtom
+626946r4<substantiv>cancertumör:cancertumör:cancertumörs:cancertumören:cancertumörens:cancertumörer:cancertumörers:cancertumörerna:cancertumörernas
+COMPOUND(626940, 550713): cancer + tumör
+971360r3<substantiv>candela:candela:candelas::::::
+660985r3<substantiv>cannabis:cannabis:cannabis:cannabisen:cannabisens:!:!:!:!
+CUSTOM: y y cannabis
+948387r3<substantiv>cannelloni:cannelloni:cannellonis:cannellonin:cannellonins::::
+559205r5<egennamn>Cannes:Cannes:Cannes
+678501r3<substantiv>canossavandring:canossavandring:canossavandrings:canossavandringen:canossavandringens:canossavandringar:canossavandringars:canossavandringarna:canossavandringarnas
+CUSTOM: y y canossavandrings
+971362r3<adverb>cantabile:cantabile
+861829r3<substantiv>cantilena:cantilena:cantilenas:cantilenan:cantilenans:cantilenor:cantilenors:cantilenorna:cantilenornas
+677287r4<substantiv>canvas:canvas:canvas:canvasen:canvasens::::
+CUSTOM: y y canvas
+849452r3<substantiv>canvasduk:canvasduk:canvasduks:canvasduken:canvasdukens:canvasdukar:canvasdukars:canvasdukarna:canvasdukarnas
+677286r4<substantiv>canvasvävning:canvasvävning:canvasvävnings:canvasvävningen:canvasvävningens:canvasvävningar:canvasvävningars:canvasvävningarna:canvasvävningarnas
+COMPOUND(677287, 677098): canvas + vävning
+CUSTOM: y y canvasvävnings
+733166r8<substantiv>cape:cape:capes:capen:capens:caper:capers:caperna:capernas
+CUSTOM: y n
+719818r3<egennamn>Capio:Capio:Capios
+660986r3<substantiv>capita:capita:!:!:!:!:!:!:!
+884845r3<substantiv>capoeira:capoeira:capoeiras:capoeiran:capoeirans::::
+622421r3<substantiv>cappuccino:cappuccino:cappuccinos:cappuccinon:cappuccinons:cappuccino:cappuccino:cappuccinona:cappuccinonas
+CUSTOM: y y cappuccino
+971364r3<substantiv>capribyxor:::::capribyxor:capribyxors:capribyxorna:capribyxornas
+861837r3<substantiv>carambole:carambole:caramboles:carambolen:carambolens::::
+588759r3<verb>carambolera:carambolera:carambolerade:carambolerat:carambolerar:carambolera:::::::::
+981441r3<adjektiv>carcinogen:carcinogen:carcinogent:carcinogena:carcinogena::::::::::::
+957661r3<substantiv>cardigan:cardigan:cardigans::::::
+990236r3<egennamn>Carema:Carema:Caremas
+553640r3<egennamn>Carin:Carin:Carins
+553642r3<egennamn>Carina:Carina:Carinas
+554512r3<egennamn>Carl:Carl:Carls
+972715r3<egennamn>Carlberg:Carlberg:Carlbergs
+972719r3<egennamn>Carlén:Carlén:Carléns
+711720r3<egennamn>Carlos:Carlos:Carlos
+972723r3<egennamn>Carlson:Carlson:Carlsons
+711704r3<egennamn>Carlsson:Carlsson:Carlssons
+972727r3<egennamn>Carlström:Carlström:Carlströms
+553644r3<egennamn>Carmen:Carmen:Carmens
+900911r3<egennamn>Carnegie:Carnegie:Carnegies
+CUSTOM: y n Carnegie
+784639r3<egennamn>Carnot:Carnot:Carnots
+553646r3<egennamn>Carola:Carola:Carolas
+854155r3<egennamn>Carolin:Carolin:Carolins
+640575r5<egennamn>Carolina:Carolina:Carolinas
+553648r3<egennamn>Caroline:Caroline:Carolines
+732107r3<egennamn>Carolus:Carolus:Carolus
+965782r3<substantiv>carpaccio:carpaccio:carpaccios:carpaccion:carpaccions::::
+744082r3<substantiv>carport:carport:carports:carporten:carportens:carportar:carportars:carportarna:carportarnas
+990161r3<egennamn>Carter:Carter:Carters
+CUSTOM: y n Carter
+874597r3<egennamn>Caserta:Caserta:Casertas
+CUSTOM: n n 
+936347r3<substantiv>cash:cash:::::::
+767805r3<substantiv>cashewnöt:cashewnöt:cashewnöts:cashewnöten:cashewnötens:cashewnötter:cashewnötters:cashewnötterna:cashewnötternas
+972431r3<egennamn>Casper:Casper:Caspers
+989944r3<egennamn>Cassandra:Cassandra:Cassandras
+973517r3<egennamn>Castellum:Castellum:Castellums
+940850r3<substantiv>casting:casting:castings:castingen:castingens::::
+CUSTOM: y n casting
+854930r3<egennamn>Castroneves:Castroneves:Castroneves
+CUSTOM: n n 
+721186r3<egennamn>Catalinaaffären:Catalinaaffären:Catalinaaffärens
+912718r3<substantiv>catering:catering:caterings:cateringen:cateringens::::
+CUSTOM: y y catering
+553650r3<egennamn>Catharina:Catharina:Catharinas
+936884r3<substantiv>catwalk:catwalk:catwalks:catwalken:catwalkens::::
+971369r3<substantiv>cavatina:cavatina:cavatinas:cavatinan:cavatinans:cavatinor:cavatinors:cavatinorna:cavatinornas
+861842r3<substantiv>cayennepeppar:cayennepeppar:cayennepeppars:cayennepepparn:cayennepepparns::::
+896353r3<egennamn>Caymanöarna:Caymanöarna:Caymanöarnas
+929612r3<förkortning>cd:cd
+766676r4<substantiv>C-dur:C-dur:C-durs::::::
+CUSTOM: y n C-dur
+553652r4<egennamn>Cecilia:Cecilia:Cecilias
+DEFINITION 1: Sankta Cecilia var ett helgon som förlorade sin syn
+631561r4<substantiv>ceder:ceder:ceders:cedern:cederns:cedrar:cedrars:cedrarna:cedrarnas
+CUSTOM: y y ceder
+588763r3<verb>cedera:cedera:cederade:cederat:cederar:cedera:::::::::
+553385r3<egennamn>Cederborg:Cederborg:Cederborgs
+787048r3<egennamn>Cederholm:Cederholm:Cederholms
+874328r3<egennamn>Cederquist:Cederquist:Cederquists
+660987r4<substantiv>cederträ:cederträ:cederträs:cederträet, cederträt:cederträets, cederträts:!:!:!:!
+COMPOUND(631561, 624333): ceder + trä
+861847r3<substantiv>cedilj:cedilj:cediljs:cediljen:cediljens:cediljer:cediljers:cediljerna:cediljernas
+660991r4<adjektiv>celeber:celeber:celebert:celebra:celebra:celebrare:celebrast:celebraste:celebre
+971377r3<substantiv>celebrant:celebrant:celebrants:celebranten:celebrantens:celebranter:celebranters:celebranterna:celebranternas
+586313r4<verb>celebrera:celebrera:celebrerade:celebrerat:celebrerar:celebrera:celebreras:celebrerades:celebrerats:celebreras:celebrerad:celebrerat:celebrerade:celebrerande:
+732620r3<substantiv>celebritet:celebritet:celebritets:celebriteten:celebritetens:celebriteter:celebriteters:celebriteterna:celebriteternas
+971385r3<adjektiv>celest:celest:celest:celesta:celesta::::::::::::
+861864r3<substantiv>celesta:celesta:celestas:celestan:celestans:celestor:celestors:celestorna:celestornas
+660994r3<substantiv>celibat:celibat:celibats:celibatet:celibatets::::
+CUSTOM: y y celibat
+989950r3<egennamn>Celine:Celine:Celines
+989947r3<egennamn>Céline:Céline:Célines
+548515r22<substantiv>cell:cell:cells:cellen:cellens:celler:cellers:cellerna:cellernas
+CUSTOM: y y cell
+660998r3<substantiv>celldelning:celldelning:celldelnings:celldelningen:celldelningens::::
+CUSTOM: y y celldelnings
+960832r4<substantiv>celldöd:celldöd:celldöds:celldöden:celldödens::::
+COMPOUND(548515, 617530): cell + död
+571788r3<adjektiv>cellformig:cellformig:cellformigt:cellformiga:cellformiga::::
+771815r4<substantiv>cellförändring:cellförändring:cellförändrings:cellförändringen:cellförändringens:cellförändringar:cellförändringars:cellförändringarna:cellförändringarnas
+COMPOUND(548515, 596921): cell + förändring
+626973r4<substantiv>cellgift:cellgift:cellgifts:cellgiftet:cellgiftets:cellgifter:cellgifters:cellgifterna:cellgifternas
+COMPOUND(548515, 556656): cell + gift
+CUSTOM: y y cellgift cellgifts
+661002r3<substantiv>cellist:cellist:cellists:cellisten:cellistens:cellister:cellisters:cellisterna:cellisternas
+CUSTOM: y y cellist
+730386r4<substantiv>cellmembran:cellmembran:cellmembrans:cellmembranet, cellmembranen:cellmembranets, cellmembranens:cellmembran, cellmembraner:cellmembrans, cellmembraners:cellmembranen, cellmembranerna:cellmembranens, cellmembranernas
+COMPOUND(548515, 639599): cell + membran
+625132r10<substantiv>cello:cello:cellos:cellon:cellons:cellor, celli:cellors:cellorna:cellornas
+552296r8<substantiv>cellofan:cellofan:cellofans:cellofanet, cellofanen:cellofanets, cellofanens::::
+CUSTOM: y y cellofan
+947249r4<substantiv>cellokonsert:cellokonsert:cellokonserts:cellokonserten:cellokonsertens:cellokonserter:cellokonserters:cellokonserterna:cellokonserternas
+COMPOUND(625132, 651813): cello + konsert
+947258r4<substantiv>cellomusik:cellomusik:cellomusiks:cellomusiken:cellomusikens::::
+COMPOUND(625132, 550058): cello + musik
+947264r4<substantiv>cellosolist:cellosolist:cellosolists:cellosolisten:cellosolistens:cellosolister:cellosolisters:cellosolisterna:cellosolisternas
+COMPOUND(625132, 668106): cello + solist
+947273r4<substantiv>cellosonat:cellosonat:cellosonats:cellosonaten:cellosonatens:cellosonater:cellosonaters:cellosonaterna:cellosonaternas
+COMPOUND(625132, 668298): cello + sonat
+947282r4<substantiv>cellostämma:cellostämma:cellostämmas:cellostämman:cellostämmans:cellostämmor:cellostämmors:cellostämmorna:cellostämmornas
+COMPOUND(625132, 595433): cello + stämma
+947292r4<substantiv>cellosvit:cellosvit:cellosvits:cellosviten:cellosvitens:cellosviter:cellosviters:cellosviterna:cellosviternas
+COMPOUND(625132, 550602): cello + svit
+948788r3<substantiv>cellulit:cellulit:cellulits:celluliten:cellulitens:celluliter:celluliters:celluliterna:celluliternas
+677296r5<substantiv>cellull:cellull:cellulls:cellullen:cellullens:!:!:!:!
+COMPOUND(548515, 627876): cell + ull
+CUSTOM: y y cellulls
+677295r4<substantiv>cellullsväv:cellullsväv:cellullsvävs:cellullsväven:cellullsvävens:cellullsvävar:cellullsvävars:cellullsvävarna:cellullsvävarnas
+COMPOUND(677296, 552117): cellull + väv
+661004r3<substantiv>celluloid:celluloid:celluloids:celluloiden:celluloidens::::
+626981r7<substantiv>cellulosa:cellulosa:cellulosas:cellulosan:cellulosans:!:!:!:!
+CUSTOM: y y cellulosa
+738919r4<substantiv>cellulosafilm:cellulosafilm:cellulosafilms:cellulosafilmen:cellulosafilmens:cellulosafilmer:cellulosafilmers:cellulosafilmerna:cellulosafilmernas
+COMPOUND(626981, 548921): cellulosa + film
+571791r3<adjektiv>cellulosahaltig:cellulosahaltig:cellulosahaltigt:cellulosahaltiga:cellulosahaltiga::::
+601593r3<substantiv>cellulosalack:cellulosalack:cellulosalacks:cellulosalacken:cellulosalackens:cellulosalacker:cellulosalackers:cellulosalackerna:cellulosalackernas
+586317r3<verb>cellulosalackera:cellulosalackera:cellulosalackerade:cellulosalackerat:cellulosalackerar:cellulosalackera:::::::::
+859791r4<substantiv>cellulosanitrat:cellulosanitrat:cellulosanitrats:cellulosanitratet:cellulosanitratets:cellulosanitrater:cellulosanitraters:cellulosanitraterna:cellulosanitraternas
+861872r3<adjektiv>cellulär:cellulär:cellulärt:cellulära:cellulära::::
+677307r5<substantiv>cellvävnad:cellvävnad:cellvävnads:cellvävnaden:cellvävnadens:cellvävnader:cellvävnaders:cellvävnaderna:cellvävnadernas
+COMPOUND(548515, 550795): cell + vävnad
+CUSTOM: y y cellvävnads
+677315r4<substantiv>cellvävnadslära:cellvävnadslära:cellvävnadsläras:cellvävnadsläran:cellvävnadslärans:cellvävnadsläror:cellvävnadslärors:cellvävnadslärorna:cellvävnadslärornas
+COMPOUND(677307, 560236): cellvävnad + lära
+854041r5<egennamn>Celsius:Celsius:Celsius
+861875r3<substantiv>celsiusgrad:celsiusgrad:celsiusgrads:celsiusgraden:celsiusgradens:celsiusgrader:celsiusgraders:celsiusgraderna:celsiusgradernas
+861883r3<substantiv>celsiustermometer:celsiustermometer:celsiustermometers:celsiustermometern:celsiustermometerns:celsiustermometrar:celsiustermometrars:celsiustermometrarna:celsiustermometrarnas
+860859r3<egennamn>Celtic:Celtic:Celtics
+CUSTOM: y n Celtic
+661008r3<substantiv>cembalist:cembalist:cembalists:cembalisten:cembalistens:cembalister:cembalisters:cembalisterna:cembalisternas
+CUSTOM: y y cembalist
+661016r3<substantiv>cembalo:cembalo:cembalos:cembalon:cembalons:cembali, cembalor:cembalis, cembalors::
+661022r5<substantiv>cement:cement:cements:cementen:cementens::::
+CUSTOM: y y cement
+790327r3<adjektiv>cementblandad:cementblandad:cementblandat:cementblandade:cementblandade:!:!:!:
+546354r5<verb>cementera:cementera:cementerade:cementerat:cementerar:cementera:cementeras:cementerades:cementerats:cementeras:cementerad:cementerat:cementerade:cementerande:
+861891r3<substantiv>cementering:cementering:cementerings:cementeringen:cementeringens::::
+738926r4<substantiv>cementgjutare:cementgjutare:cementgjutares:cementgjutaren:cementgjutarens:cementgjutare:cementgjutares:cementgjutarna:cementgjutarnas
+COMPOUND(661022, 738927): cement + gjutare
+875510r3<substantiv>cementit:cementit:cementits:cementiten:cementitens::::
+790330r3<adjektiv>cementstabiliserad:cementstabiliserad:cementstabiliserat:cementstabiliserade:cementstabiliserade:!:!:!:
+610544r3<substantiv>cementvaruindustri:cementvaruindustri:cementvaruindustris:cementvaruindustrin:cementvaruindustrins:cementvaruindustrier:cementvaruindustriers:cementvaruindustrierna:cementvaruindustriernas
+899906r3<verb>CE-märka:CE-märka:CE-märkte:CE-märkt:CE-märker:CE-märk:CE-märkas:CE-märktes:CE-märkts:CE-märks:CE-märkt:CE-märkt:CE-märkta::
+899918r3<substantiv>CE-märkning:CE-märkning:CE-märknings:CE-märkningen:CE-märkningens:CE-märkningar:CE-märkningars:CE-märkningarna:CE-märkningarnas
+971386r3<adjektiv>cendré:cendré:::::::::::::::
+790333r3<adjektiv>cendréfärgad:cendréfärgad:cendréfärgat:cendréfärgade:cendréfärgade:!:!:!:
+876352r4<substantiv>cenotaf:cenotaf:cenotafs:cenotafen:cenotafens:cenotafer:cenotafers:cenotaferna:cenotafernas
+DEFINITION 1: Även kenotaf\
+Minnesvård över avliden placerad på annan plats än graven
+661024r3<substantiv>censor:censor:censors:censorn:censorns:censorer:censorers:censorerna:censorernas
+971387r3<substantiv>censorskap:censorskap:censorskaps:censorskapet:censorskapets::::
+661025r4<substantiv>censur:censur:censurs:censuren:censurens::::
+CUSTOM: y y censur
+586321r5<verb>censurera:censurera:censurerade:censurerat:censurerar:censurera:censureras:censurerades:censurerats:censureras:censurerad:censurerat:censurerade:censurerande:
+960837r3<substantiv>censurering:censurering:censurerings:censureringen:censureringens:censureringar:censureringars:censureringarna:censureringarnas
+624384r3<substantiv>cent:cent:cents:centen:centens:cent:cents:centen:centens
+812109r4<substantiv>center:center:centers:centret:centrets:center:centers:centren:centrens
+634268r4<substantiv>center:center:centers:centern:centerns:centrar::centrarna:centrarnas
+CUSTOM: y y center
+971391r3<substantiv>centerbordsbåt:centerbordsbåt:centerbordsbåts:centerbordsbåten:centerbordsbåtens:centerbordsbåtar:centerbordsbåtars:centerbordsbåtarna:centerbordsbåtarnas
+946590r3<substantiv>centercourt:centercourt:centercourts:centercourten:centercourtens::::
+558535r3<substantiv>centerism:centerism:centerisms:centerismen:centerismens:!:!:!:!
+579290r3<adjektiv>centeristisk:centeristisk:centeristiskt:centeristiska:centeristiska::::
+790336r3<adjektiv>centerlesslipad:centerlesslipad:centerlesslipat:centerlesslipade:centerlesslipade:!:!:!:
+564774r3<adjektiv>centerlös:centerlös:centerlöst:centerlösa:centerlösa::::
+661028r4<substantiv>centerparti:centerparti:centerpartis:centerpartiet:centerpartiets:centerpartier:centerpartiers:centerpartierna:centerpartiernas
+548517r3<substantiv>centerpartist:centerpartist:centerpartists:centerpartisten:centerpartistens:centerpartister:centerpartisters:centerpartisterna:centerpartisternas
+CUSTOM: y y centerpartist
+579293r4<adjektiv>centerpartistisk:centerpartistisk:centerpartistiskt:centerpartistiska:centerpartistiska:!:!:!:centerpartistiske
+971399r3<substantiv>centigram:centigram:centigrams:centigrammet:centigrammets:centigram:centigrams:centigrammen:centigrammens
+661036r4<substantiv>centiliter:centiliter:centiliters:centilitern:centiliterns:centiliter:centiliters:centiliterna:centiliternas
+CUSTOM: y y centiliter
+673466r4<substantiv>centiljon:centiljon:centiljons:centiljonen:centiljonens:centiljoner:centiljoners:centiljonerna:centiljonernas
+DEFINITION 1: 10^600
+971405r3<substantiv>centilong:centilong:::::::
+610291r4<substantiv>centimeter:centimeter:centimeters:centimetern:centimeterns:centimeter:centimeters:centimeterna:centimeternas
+CUSTOM: y y centimeter
+801779r3<adjektiv>centimeterbred:centimeterbred:centimeterbrett:centimeterbreda:centimeterbreda::::
+797349r3<adjektiv>centnertung:centnertung:centnertungt:centnertunga:centnertunga::::
+548519r11<substantiv>central:central:centrals:centralen:centralens:centraler:centralers:centralerna:centralernas
+563231r7<adjektiv>central:central:centralt:centrala:centrala:centralare:centralast:centralaste:centrale::::::::
+CUSTOM: y y central +centrals
+711653r3<egennamn>Centralamerika:Centralamerika:Centralamerikas
+CUSTOM: y n Centralamerika
+711660r3<adjektiv>centralamerikansk:centralamerikansk:centralamerikanskt:centralamerikanska:centralamerikanska::::centralamerikanske
+807554r11<substantiv>centralasiat:centralasiat:centralasiats:centralasiaten:centralasiatens:centralasiater:centralasiaters:centralasiaterna:centralasiaternas
+COMPOUND(563231, 601159): central + asiat
+579294r3<adjektiv>centralasiatisk:centralasiatisk:centralasiatiskt:centralasiatiska:centralasiatiska::::
+738934r4<substantiv>centralbank:centralbank:centralbanks:centralbanken:centralbankens:centralbanker:centralbankers:centralbankerna:centralbankernas
+CUSTOM: y y centralbanks
+738933r4<substantiv>centralbankschef:centralbankschef:centralbankschefs:centralbankschefen:centralbankschefens:centralbankschefer:centralbankschefers:centralbankscheferna:centralbankschefernas
+COMPOUND(738934, 548529): centralbank + chef
+790339r3<adjektiv>centraldirigerad:centraldirigerad:centraldirigerat:centraldirigerade:centraldirigerade:!:!:!:
+661037r3<substantiv>centralenhet:centralenhet:centralenhets:centralenheten:centralenhetens:centralenheter:centralenheters:centralenheterna:centralenheternas
+CUSTOM: n n
+712833r3<egennamn>Centraleuropa:Centraleuropa:Centraleuropas
+CUSTOM: y n Centraleuropa
+579297r3<adjektiv>centraleuropeisk:centraleuropeisk:centraleuropeiskt:centraleuropeiska:centraleuropeiska::::
+661039r3<substantiv>centralfigur:centralfigur:centralfigurs:centralfiguren:centralfigurens:centralfigurer:centralfigurers:centralfigurerna:centralfigurernas
+546355r5<verb>centralisera:centralisera:centraliserade:centraliserat:centraliserar:centralisera:centraliseras:centraliserades:centraliserats:centraliseras:centraliserad:centraliserat:centraliserade:centraliserande:
+790342r3<adjektiv>centraliserad:centraliserad:centraliserat:centraliserade:centraliserade:!:!:!:
+661047r4<substantiv>centralisering:centralisering:centraliserings:centraliseringen:centraliseringens:centraliseringar:centraliseringars:centraliseringarna:centraliseringarnas
+CUSTOM: y y centraliserings
+688842r3<substantiv>centralism:centralism:centralisms:centralismen:centralismens::::
+579300r4<adjektiv>centralistisk:centralistisk:centralistiskt:centralistiska:centralistiska::::centralistiske
+579301r3<adjektiv>centrallyrisk:centrallyrisk:centrallyriskt:centrallyriska:centrallyriska::::
+606908r3<substantiv>centrallås:centrallås:centrallås:centrallåset:centrallåsets:centrallås:centrallås:centrallåsen:centrallåsens
+629402r4<substantiv>centralmakt:centralmakt:centralmakts:centralmakten:centralmaktens::::
+849460r3<substantiv>centralort:centralort:centralorts:centralorten:centralortens:centralorter:centralorters:centralorterna:centralorternas
+855156r3<egennamn>Centralrådet:Centralrådet:Centralrådets
+661048r3<substantiv>centralstation:centralstation:centralstations:centralstationen:centralstationens:centralstationer:centralstationers:centralstationerna:centralstationernas
+CUSTOM: y y centralstations
+799177r3<adjektiv>centralstyrd:centralstyrd:centralstyrt:centralstyrda:centralstyrda::::
+964777r4<adjektiv>centraltysk:centraltysk:centraltyskt:centraltyska:centraltyska::::centraltyske::::::::
+COMPOUND(563231, 563140): central + tysk
+756195r4<substantiv>centralvärme:centralvärme:centralvärmes:centralvärmen:centralvärmens:!:!:!:!
+CUSTOM: y y centralvärme
+756199r4<substantiv>centralvärmerör:centralvärmerör:centralvärmerörs:centralvärmeröret:centralvärmerörets:centralvärmerör:centralvärmerörs:centralvärmerören:centralvärmerörens
+COMPOUND(756195, 552860): centralvärme + rör
+960845r3<substantiv>centrecourt:centrecourt:centrecourts:centrecourten:centrecourtens::::
+546356r4<verb>centrera:centrera:centrerade:centrerat:centrerar:centrera:centreras:centrerades:centrerats:centreras:centrerad:centrerat:centrerade::
+800915r3<adjektiv>centrerande:centrerande:centrerande:centrerande:centrerande:!:!:!:
+688844r4<substantiv>centrering:centrering:centrerings:centreringen:centreringens:centreringar:centreringars:centreringarna:centreringarnas
+CUSTOM: y y centrerings
+606913r3<substantiv>centreringsdon:centreringsdon:centreringsdons:centreringsdonet:centreringsdonets:centreringsdon:centreringsdons:centreringsdonen:centreringsdonens
+633506r4<substantiv>centricitet:centricitet:centricitets:centriciteten:centricitetens::::
+548521r3<substantiv>centrifug:centrifug:centrifugs:centrifugen:centrifugens:centrifuger:centrifugers:centrifugerna:centrifugernas
+CUSTOM: y y centrifug
+738950r4<adjektiv>centrifugal:centrifugal:centrifugalt:centrifugala:centrifugala:!:!:!:!
+CUSTOM: y y centrifugal
+738959r4<substantiv>centrifugalkraft:centrifugalkraft:centrifugalkrafts:centrifugalkraften:centrifugalkraftens::::
+COMPOUND(738950, 549757): centrifugal + kraft
+586322r5<verb>centrifugera:centrifugera:centrifugerade:centrifugerat:centrifugerar:centrifugera:centrifugeras:centrifugerades:centrifugerats:centrifugeras:centrifugerad:centrifugerat:centrifugerade:centrifugerande:
+966688r3<substantiv>centrifugering:centrifugering:centrifugerings:centrifugeringen:centrifugeringens:centrifugeringar:centrifugeringars:centrifugeringarna:centrifugeringarnas
+797352r3<adjektiv>centripetal:centripetal:centripetalt:centripetala:centripetala::::
+971406r3<substantiv>centripetalkraft:centripetalkraft:centripetalkrafts:centripetalkraften:centripetalkraftens::::
+579304r3<adjektiv>centrisk:centrisk:centriskt:centriska:centriska::::
+730692r3<substantiv>centrosom:centrosom:centrosoms:centrosomen:centrosomens:centrosomer:centrosomers:centrosomerna:centrosomernas
+555316r14<substantiv>centrum:centrum:centrums:centret, centrumet:centrets, centrumets:centrum, centra:centrums, centras:centrumen:centrumens
+CUSTOM: y y centrum
+799180r3<adjektiv>centrumstyrd:centrumstyrd:centrumstyrt:centrumstyrda:centrumstyrda::::
+799183r3<adjektiv>centrumställd:centrumställd:centrumställt:centrumställda:centrumställda::::
+688845r4<substantiv>cerat:cerat:cerats:ceratet:ceratets:cerat:cerats:ceraten:ceratens
+CUSTOM: y n
+661053r3<adjektiv>cerebral:cerebral:cerebralt:cerebrala:cerebrala::::
+797355r3<adjektiv>cerebrospinal:cerebrospinal:cerebrospinalt:cerebrospinala:cerebrospinala::::
+971410r3<substantiv>cerebrospinalvätska:cerebrospinalvätska:cerebrospinalvätskas:cerebrospinalvätskan:cerebrospinalvätskans::::
+661054r5<substantiv>ceremoni:ceremoni:ceremonis:ceremonin:ceremonins:ceremonier:ceremoniers:ceremonierna:ceremoniernas
+CUSTOM: y y ceremoni
+552298r3<substantiv>ceremoniel:ceremoniel:ceremoniels:ceremonielet:ceremonielets:ceremoniel:ceremoniels:ceremonielen:ceremonielens
+744399r3<adjektiv>ceremoniell:ceremoniell:ceremoniellt:ceremoniella:ceremoniella::::
+797358r3<adjektiv>ceremoniös:ceremoniös:ceremoniöst:ceremoniösa:ceremoniösa::::
+906439r8<adjektiv>cerise:cerise:::::::::::::::
+723399r3<substantiv>cerium:cerium:ceriums:ceriumet:ceriumets::::
+588767r3<verb>cernera:cernera:cernerade:cernerat:cernerar:cernera:::::::::
+971414r3<substantiv>cernering:cernering:cernerings:cerneringen:cerneringens::::
+684233r8<verb>certifiera:certifiera:certifierade:certifierat:certifierar:certifiera:certifieras:certifierades:certifierats:certifieras:certifierad:certifierat:certifierade:certifierande:
+719861r8<substantiv>certifiering:certifiering:certifierings:certifieringen:certifieringens:certifieringar:certifieringars:certifieringarna:certifieringarnas
+CUSTOM: y y certifierings +certifierings
+719957r4<substantiv>certifieringsorgan:certifieringsorgan:certifieringsorgans:certifieringsorganet:certifieringsorganets:certifieringsorgan:certifieringsorgans:certifieringsorganen:certifieringsorganens
+COMPOUND(719861, 552739): certifiering + organ
+719876r4<substantiv>certifieringsprocedur:certifieringsprocedur:certifieringsprocedurs:certifieringsproceduren:certifieringsprocedurens:certifieringsprocedurer:certifieringsprocedurers:certifieringsprocedurerna:certifieringsprocedurernas
+COMPOUND(719861, 550255): certifiering + procedur
+719886r4<substantiv>certifieringsprocess:certifieringsprocess:certifieringsprocess:certifieringsprocessen:certifieringsprocessens:certifieringsprocesser:certifieringsprocessers:certifieringsprocesserna:certifieringsprocessernas
+COMPOUND(719861, 550258): certifiering + process
+719860r4<substantiv>certifieringsprojekt:certifieringsprojekt:certifieringsprojekts:certifieringsprojektet:certifieringsprojektets:certifieringsprojekt:certifieringsprojekts:certifieringsprojekten:certifieringsprojektens
+COMPOUND(719861, 552796): certifiering + projekt
+720237r4<substantiv>certifieringstidpunkt:certifieringstidpunkt:certifieringstidpunkts:certifieringstidpunkten:certifieringstidpunktens:certifieringstidpunkter:certifieringstidpunkters:certifieringstidpunkterna:certifieringstidpunkternas
+COMPOUND(719861, 550666): certifiering + tidpunkt
+552300r5<substantiv>certifikat:certifikat:certifikats:certifikatet:certifikatets:certifikat:certifikats:certifikaten:certifikatens
+CUSTOM: y y certifikats certifikat
+579307r3<adjektiv>cesarisk:cesarisk:cesariskt:cesariska:cesariska::::
+700089r4<substantiv>cesium:cesium:cesiums:cesiet, cesiumet:cesiets, cesiumets:!:!:!:!
+CUSTOM: y y cesium
+700095r4<substantiv>cesiumur:cesiumur:cesiumurs:cesiumuret:cesiumurets:cesiumur:cesiumurs:cesiumuren:cesiumurens
+COMPOUND(700089, 553080): cesium + ur
+660082r3<substantiv>cess:cess:cess:cesset:cessets:cess:cess:cessen:cessens
+CUSTOM: y n
+571794r3<adjektiv>cessionsmässig:cessionsmässig:cessionsmässigt:cessionsmässiga:cessionsmässiga::::
+762756r3<egennamn>Cessna:Cessna:Cessnas
+553990r3<egennamn>Ceylon:Ceylon:Ceylons
+579310r3<adjektiv>ceylonesisk:ceylonesisk:ceylonesiskt:ceylonesiska:ceylonesiska::::
+845289r3<egennamn>Chagres:Chagres:Chagres
+971500r3<substantiv>chagrin:chagrin:chagrins:chagrinen:chagrinens:chagriner:chagriners:chagrinerna:chagrinernas
+790343r3<adjektiv>chagrinerad:chagrinerad:chagrinerat:chagrinerade:chagrinerade:!:!:!:
+719671r3<substantiv>chalmerist:chalmerist:chalmerists:chalmeristen:chalmeristens:chalmerister:chalmeristers:chalmeristerna:chalmeristernas
+CUSTOM: y y chalmerist
+553194r4<egennamn>Chalmers:Chalmers:Chalmers
+BASEWORDS: chalmers
+CUSTOM: y y chalmers
+971508r3<substantiv>chamotte:chamotte:chamottes:chamotten:chamottens::::
+CUSTOM: y y chamotte
+588771r3<verb>chamottera:chamottera:chamotterade:chamotterat:chamotterar:chamottera:::::::::
+611849r5<substantiv>champagne:champagne:champagnes:champagnen:champagnens:champagner:champagners:champagnerna:champagnernas
+CUSTOM: y y champagne
+912723r4<substantiv>champagnebar:champagnebar:champagnebars:champagnebaren:champagnebarens:champagnebarer:champagnebarers:champagnebarerna:champagnebarernas
+COMPOUND(611849, 557860): champagne + bar
+971512r4<substantiv>champagnevisp:champagnevisp:champagnevisps:champagnevispen:champagnevispens:champagnevispar:champagnevispars:champagnevisparna:champagnevispa

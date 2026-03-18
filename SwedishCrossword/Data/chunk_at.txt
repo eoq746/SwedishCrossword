@@ -1,0 +1,627 @@
+ltesten:biltestets, biltestens:biltest, biltester:biltests, biltesters:biltesten, biltesterna:biltestens, biltesternas
+COMPOUND(550885, 550663): bil + test
+606732r3<substantiv>biltillbehör:biltillbehör:biltillbehörs:biltillbehöret:biltillbehörets:biltillbehör:biltillbehörs:biltillbehören:biltillbehörens
+928507r4<substantiv>biltjuv:biltjuv:biltjuvs:biltjuven:biltjuvens:biltjuvar:biltjuvars:biltjuvarna:biltjuvarnas
+COMPOUND(550885, 552015): bil + tjuv
+797285r3<adjektiv>biltog:biltog:biltogt:biltoga:biltoga::::
+936670r4<substantiv>biltrafik:biltrafik:biltrafiks:biltrafiken:biltrafikens::::
+COMPOUND(550885, 673056): bil + trafik
+752450r4<substantiv>biltull:biltull:biltulls:biltullen:biltullens:biltullar:biltullars:biltullarna:biltullarnas
+COMPOUND(550885, 552058): bil + tull
+823992r4<substantiv>biltur:biltur:bilturs:bilturen:bilturens:bilturer:bilturers:bilturerna:bilturernas
+COMPOUND(550885, 550715): bil + tur
+778671r6<substantiv>biltvätt:biltvätt:biltvätts:biltvätten:biltvättens:biltvättar:biltvättars:biltvättarna:biltvättarnas
+COMPOUND(550885, 599073): bil + tvätt
+CUSTOM: y y biltvätts
+928265r4<substantiv>biltyp:biltyp:biltyps:biltypen:biltypens:biltyper:biltypers:biltyperna:biltypernas
+COMPOUND(550885, 550722): bil + typ
+845425r4<adjektiv>biltät:biltät:biltätt:biltäta:biltäta:biltätare:biltätast:biltätaste:
+COMPOUND(550885, 563206): bil + tät
+928515r4<substantiv>bilvrak:bilvrak:bilvraks:bilvraket:bilvrakets:bilvrak:bilvraks:bilvraken:bilvrakens
+COMPOUND(550885, 553131): bil + vrak
+782248r4<substantiv>bilvård:bilvård:bilvårds:bilvården:bilvårdens::::
+CUSTOM: y y bilvårds
+782254r4<substantiv>bilvårdsprodukt:bilvårdsprodukt:bilvårdsprodukts:bilvårdsprodukten:bilvårdsproduktens:bilvårdsprodukter:bilvårdsprodukters:bilvårdsprodukterna:bilvårdsprodukternas
+COMPOUND(782248, 550262): bilvård + produkt
+677996r4<substantiv>bilväg:bilväg:bilvägs:bilvägen:bilvägens:bilvägar:bilvägars:bilvägarna:bilvägarnas
+COMPOUND(550885, 552110): bil + väg
+933881r4<substantiv>bilägare:bilägare:bilägares:bilägaren:bilägarens:bilägare:bilägares:bilägarna:bilägarnas
+COMPOUND(550885, 615532): bil + ägare
+592742r7<verb>bilägga:bilägga:bilade:bilagt:bilägger:bilägg:biläggas:bilades:bilagts:biläggs, bilägges:bilagd:bilagt:bilagda:biläggande:
+969326r3<substantiv>biläggning:biläggning:biläggnings:biläggningen:biläggningens:biläggningar:biläggningars:biläggningarna:biläggningarnas
+592749r3<substantiv>bimbo:bimbo:bimbos:bimbon:bimbons:bimbor:bimbors:bimborna:bimbornas
+865130r3<substantiv>bimetall:bimetall:bimetalls:bimetallen:bimetallens:bimetaller:bimetallers:bimetallerna:bimetallernas
+579194r3<adjektiv>bimetallisk:bimetallisk:bimetalliskt:bimetalliska:bimetalliska::::
+797288r3<adjektiv>bimodal:bimodal:bimodalt:bimodala:bimodala::::
+CUSTOM: n n
+865138r3<substantiv>bimåne:bimåne:bimånes:bimånen:bimånens:bimånar:bimånars:bimånarna:bimånarnas
+865146r3<substantiv>binamn:binamn:binamns:binamnet:binamnets:binamn:binamns:binamnen:binamnens
+797291r3<adjektiv>binaural:binaural:binauralt:binaurala:binaurala::::
+592757r5<substantiv>binda:binda:bindas:bindan:bindans:bindor:bindors:bindorna:bindornas
+585278r10<verb>binda:binda:band:bundit:binder:bind:bindas:bands:bundits:binds, bindes:bunden:bundet:bundna:bindande:
+CUSTOM: y y binde
+592758r3<adjektiv>bindande:bindande:bindande:bindande:bindande:!:!:!:
+865152r3<substantiv>bindare:bindare:bindares:bindaren:bindarens:bindare:bindares:bindarna:bindarnas
+865158r3<substantiv>bindbjälke:bindbjälke:bindbjälkes:bindbjälken:bindbjälkens:bindbjälkar:bindbjälkars:bindbjälkarna:bindbjälkarnas
+592759r3<substantiv>bindel:bindel:bindels:bindeln:bindelns:bindlar:bindlars:bindlarna:bindlarnas
+592761r3<substantiv>bindemedel:bindemedel:bindemedels:bindemedlet:bindemedlets:bindemedel:bindemedels:bindemedlen:bindemedlens
+940260r4<substantiv>bindeord:bindeord:bindeords:bindeordet:bindeordets:bindeord:bindeords:bindeorden:bindeordens
+COMPOUND(585278, 555138): binda + ord
+592767r9<substantiv>binderi:binderi:binderis:binderiet:binderiets:binderier:binderiers:binderierna:binderiernas
+592773r3<substantiv>bindestreck:bindestreck:bindestrecks:bindestrecket:bindestreckets:bindestreck:bindestrecks:bindestrecken:bindestreckens
+592774r3<substantiv>bindetid:bindetid:bindetids:bindetiden:bindetidens::::
+592778r4<adjektiv>bindgalen:bindgalen:bindgalet:bindgalna:bindgalna::::bindgalne
+606738r3<substantiv>bindgarn:bindgarn:bindgarns:bindgarnet:bindgarnets:bindgarn:bindgarns:bindgarnen:bindgarnens
+CUSTOM: y y bindgarns
+601363r3<substantiv>bindgarnsfabrik:bindgarnsfabrik:bindgarnsfabriks:bindgarnsfabriken:bindgarnsfabrikens:bindgarnsfabriker:bindgarnsfabrikers:bindgarnsfabrikerna:bindgarnsfabrikernas
+610472r3<substantiv>bindgarnsindustri:bindgarnsindustri:bindgarnsindustris:bindgarnsindustrin:bindgarnsindustrins:bindgarnsindustrier:bindgarnsindustriers:bindgarnsindustrierna:bindgarnsindustriernas
+969334r3<substantiv>bindhinna:bindhinna:bindhinnas:bindhinnan:bindhinnans:bindhinnor:bindhinnors:bindhinnorna:bindhinnornas
+592779r9<substantiv>bindning:bindning:bindnings:bindningen:bindningens:bindningar:bindningars:bindningarna:bindningarnas
+CUSTOM: y y bindnings +bindnings
+875235r5<substantiv>bindningsenergi:bindningsenergi:bindningsenergis:bindningsenergin:bindningsenergins:bindningsenergier:bindningsenergiers:bindningsenergierna:bindningsenergiernas
+DEFINITION 1: Energi som erfordras för att separera två atomer från varandra
+COMPOUND(592779, 610633): bindning + energi
+592780r3<substantiv>bindningstid:bindningstid:bindningstids:bindningstiden:bindningstidens::::
+865166r3<substantiv>bindnål:bindnål:bindnåls:bindnålen:bindnålens:bindnålar:bindnålars:bindnålarna:bindnålarnas
+969342r3<substantiv>bindruna:bindruna:bindrunas:bindrunan:bindrunans:bindrunor:bindrunors:bindrunorna:bindrunornas
+766735r3<substantiv>bindsle:bindsle:bindsles:bindslet:bindslets:bindslen:bindslens:bindslena:bindslenas
+865174r3<substantiv>bindsten:bindsten:bindstens:bindstenen:bindstenens:bindstenar:bindstenars:bindstenarna:bindstenarnas
+865182r3<substantiv>bindsula:bindsula:bindsulas:bindsulan:bindsulans:bindsulor:bindsulors:bindsulorna:bindsulornas
+677222r4<substantiv>bindväv:bindväv:bindvävs:bindväven:bindvävens:bindvävar:bindvävars:bindvävarna:bindvävarnas
+COMPOUND(585278, 552117): binda + väv
+CUSTOM: y y bindvävs
+592784r4<substantiv>binge:binge:binges:bingen:bingens:bingar:bingars:bingarna:bingarnas
+865190r3<substantiv>bingel:bingel:bingels:bingeln:bingelns:binglar:binglars:binglarna:binglarnas
+592785r4<substantiv>bingo:bingo:bingos:bingon:bingons:!:!:!:!
+CUSTOM: y y bingo
+737223r5<substantiv>bingolotto:bingolotto:bingolottos:bingolotton:bingolottons::::
+COMPOUND(592785, 625689): bingo + lotto
+CUSTOM: y y bingolotto
+737229r4<substantiv>bingolottovinst:bingolottovinst:bingolottovinsts:bingolottovinsten:bingolottovinstens:bingolottovinster:bingolottovinsters:bingolottovinsterna:bingolottovinsternas
+COMPOUND(737223, 550774): bingolotto + vinst
+592787r3<substantiv>binjure:binjure:binjures:binjuren:binjurens:binjurar:binjurars:binjurarna:binjurarnas
+CUSTOM: y y binjure
+865198r3<substantiv>binnikemask:binnikemask:binnikemasks:binnikemasken:binnikemaskens:binnikemaskar:binnikemaskars:binnikemaskarna:binnikemaskarnas
+865206r3<adjektiv>binokulär:binokulär:binokulärt:binokulära:binokulära::::
+865209r3<substantiv>binom:binom:binoms:binomet:binomets:binom:binoms:binomen:binomens
+CUSTOM: y n
+660125r3<substantiv>binomialfördelning:binomialfördelning:binomialfördelnings:binomialfördelningen:binomialfördelningens:binomialfördelningar:binomialfördelningars:binomialfördelningarna:binomialfördelningarnas
+CUSTOM: y y binomialfördelnings
+592795r4<adjektiv>binär:binär:binärt:binära:binära::::::::::::
+CUSTOM: y n
+865215r3<substantiv>binäring:binäring:binärings:binäringen:binäringens:binäringar:binäringars:binäringarna:binäringarnas
+913657r4<substantiv>binärkod:binärkod:binärkods:binärkoden:binärkodens:binärkoder:binärkoders:binärkoderna:binärkodernas
+COMPOUND(592795, 549543): binär + kod
+790073r3<adjektiv>binärkodad:binärkodad:binärkodat:binärkodade:binärkodade:!:!:!:
+892957r12<substantiv>bio:bio:bios:bion:bions::::
+CUSTOM: y n bio
+928522r4<substantiv>biobank:biobank:biobanks:biobanken:biobankens:biobanker:biobankers:biobankerna:biobankernas
+COMPOUND(892957, 605440): bio + bank
+606744r3<substantiv>biobesök:biobesök:biobesöks:biobesöket:biobesökets:biobesök:biobesöks:biobesöken:biobesökens
+592796r3<substantiv>biobiljett:biobiljett:biobiljetts:biobiljetten:biobiljettens:biobiljetter:biobiljetters:biobiljetterna:biobiljetternas
+768948r4<substantiv>biobränsle:biobränsle:biobränsles:biobränslet:biobränslets:biobränslen:biobränslens:biobränslena:biobränslenas
+CUSTOM: y y biobränsle
+783362r4<substantiv>biobränslesektor:biobränslesektor:biobränslesektors:biobränslesektorn:biobränslesektorns:biobränslesektorer:biobränslesektorers:biobränslesektorerna:biobränslesektorernas
+COMPOUND(768948, 622134): biobränsle + sektor
+548377r3<substantiv>biocid:biocid:biocids:biociden:biocidens:biocider:biociders:biociderna:biocidernas
+568931r3<adjektiv>biodegraderbar:biodegraderbar:biodegraderbart:biodegraderbara:biodegraderbara::::
+721310r3<substantiv>biodiversitet:biodiversitet:biodiversitets:biodiversiteten:biodiversitetens::::
+592804r3<substantiv>biodlare:biodlare:biodlares:biodlaren:biodlarens:biodlare:biodlares:biodlarna:biodlarnas
+CUSTOM: y y biodlar
+729158r3<substantiv>biodling:biodling:biodlings:biodlingen:biodlingens:biodlingar:biodlingars:biodlingarna:biodlingarnas
+CUSTOM: y y biodlings
+592810r3<substantiv>bioduk:bioduk:bioduks:bioduken:biodukens:biodukar:biodukars:biodukarna:biodukarnas
+568731r3<adjektiv>biodynamisk:biodynamisk:biodynamiskt:biodynamiska:biodynamiska::::
+936903r3<substantiv>bioenergi:bioenergi:bioenergis:bioenergin:bioenergins::::
+943861r3<adjektiv>bioetisk:bioetisk:bioetiskt:bioetiska:bioetiska::::::::::::
+660126r4<substantiv>biofilm:biofilm:biofilms:biofilmen:biofilmens:biofilmer:biofilmers:biofilmerna:biofilmernas
+COMPOUND(548378, 548921): biograf + film
+579197r3<adjektiv>biofysisk:biofysisk:biofysiskt:biofysiska:biofysiska::::
+873716r8<substantiv>biogas:biogas:biogas:biogasen:biogasens:biogaser:biogasers:biogaserna:biogasernas
+DEFINITION 1: Gasblandning av huvudsakligen metan (60 %) och koldioxid (40 %) som bildas vid anaerob nedbrytning av organiskt material.
+COMPOUND(579210, 549064): biologisk + gas
+CUSTOM: y y biogas
+928770r4<substantiv>biogasbuss:biogasbuss:biogasbuss:biogasbussen:biogasbussens:biogasbussar:biogasbussars:biogasbussarna:biogasbussarnas
+COMPOUND(873716, 550982): biogas + buss
+921402r4<substantiv>biogasmack:biogasmack:biogasmacks:biogasmacken:biogasmackens:biogasmackar:biogasmackars:biogasmackarna:biogasmackarnas
+COMPOUND(873716, 598542): biogas + mack
+585207r3<adjektiv>biogen:biogen:biogent:biogena:biogena:!:!:!:
+579200r3<adjektiv>biogenetisk:biogenetisk:biogenetiskt:biogenetiska:biogenetiska::::
+579203r3<adjektiv>biogeokemisk:biogeokemisk:biogeokemiskt:biogeokemiska:biogeokemiska::::
+548378r16<substantiv>biograf:biograf:biografs:biografen:biografens:biografer:biografers:biograferna:biografernas
+CUSTOM: y y biograf
+861576r4<substantiv>biografbyrå:biografbyrå:biografbyrås:biografbyrån:biografbyråns:biografbyråer:biografbyråers:biografbyråerna:biografbyråernas
+COMPOUND(548378, 560866): biograf + byrå
+588703r5<verb>biografera:biografera:biograferade:biograferat:biograferar:biografera:biograferas:biograferades:biograferats:biograferas:biograferad:biograferat:biograferade:biograferande:
+635397r4<substantiv>biografi:biografi:biografis:biografin, biografien:biografins, biografiens:biografier:biografiers:biografierna:biografiernas
+579206r4<adjektiv>biografisk:biografisk:biografiskt:biografiska:biografiska::::biografiske
+922626r3<adjektiv>biografsänd:biografsänd:biografsänt:biografsända:biografsända::::::::::::
+660127r3<substantiv>biokemi:biokemi:biokemis:biokemin:biokemins:!:!:!:!
+579209r3<adjektiv>biokemisk:biokemisk:biokemiskt:biokemiska:biokemiska::::
+548379r3<substantiv>biolog:biolog:biologs:biologen:biologens:biologer:biologers:biologerna:biologernas
+CUSTOM: y y biolog
+660129r4<substantiv>biologi:biologi:biologis:biologin:biologins::::
+CUSTOM: y y biologi
+579210r5<adjektiv>biologisk:biologisk:biologiskt:biologiska:biologiska:!:!:!:biologiske
+CUSTOM: y y
+849166r3<substantiv>biologism:biologism:biologisms:biologismen:biologismens::::
+933887r5<substantiv>biomassa:biomassa:biomassas:biomassan:biomassans:biomassor:biomassors:biomassorna:biomassornas
+660131r3<adjektiv>biomedicinsk:biomedicinsk:biomedicinskt:biomedicinska:biomedicinska:!:!:!:
+865225r3<substantiv>biometri:biometri:biometris:biometrin:biometrins::::
+579211r3<adjektiv>biometrisk:biometrisk:biometriskt:biometriska:biometriska::::
+758912r3<substantiv>biomständighet:biomständighet:biomständighets:biomständigheten:biomständighetens:biomständigheter:biomständigheters:biomständigheterna:biomständigheternas
+936075r4<substantiv>biomörker:biomörker:biomörkers:biomörkret:biomörkrets::::
+COMPOUND(892957, 619037): bio + mörker
+623612r4<substantiv>biopsi:biopsi:biopsis:biopsin:biopsins:biopsier:biopsiers:biopsierna:biopsiernas
+CUSTOM: y y biopsi
+936862r3<substantiv>biosalong:biosalong:biosalongs:biosalongen:biosalongens:biosalonger:biosalongers:biosalongerna:biosalongernas
+660132r3<substantiv>biosfär:biosfär:biosfärs:biosfären:biosfärens::::
+CUSTOM: y y biosfär
+579214r3<adjektiv>biostatisk:biostatisk:biostatiskt:biostatiska:biostatiska::::
+660134r3<substantiv>bioteknik:bioteknik:biotekniks:biotekniken:bioteknikens:biotekniker:bioteknikers:bioteknikerna:bioteknikernas
+CUSTOM: y y bioteknik
+579217r3<adjektiv>bioteknisk:bioteknisk:biotekniskt:biotekniska:biotekniska::::
+579220r3<adjektiv>biotisk:biotisk:biotiskt:biotiska:biotiska::::
+660142r3<substantiv>biotop:biotop:biotops:biotopen:biotopens:biotoper:biotopers:biotoperna:biotopernas
+CUSTOM: y y biotop
+888546r3<substantiv>bipacksedel:bipacksedel:bipacksedels:bipacksedeln:bipacksedelns:bipacksedlar:bipacksedlars:bipacksedlarna:bipacksedlarnas
+660144r3<substantiv>biperson:biperson:bipersons:bipersonen:bipersonens:bipersoner:bipersoners:bipersonerna:bipersonernas
+853922r3<substantiv>biplan:biplan:biplans:biplanet:biplanets:biplan:biplans:biplanen:biplanens
+865229r3<substantiv>bipolaritet:bipolaritet:bipolaritets:bipolariteten:bipolaritetens::::
+660152r3<adjektiv>bipolär:bipolär:bipolärt:bipolära:bipolära:!:!:!:
+660153r3<substantiv>biprodukt:biprodukt:biprodukts:biprodukten:biproduktens:biprodukter:biprodukters:biprodukterna:biprodukternas
+891504r3<substantiv>bira:bira:biras:biran:birans:biror:birors:birorna:birornas
+CUSTOM: n n y
+902080r4<substantiv>birdie:birdie:birdies:birdien:birdiens:birdies:birdies::
+CUSTOM: y n
+902085r4<substantiv>birdieputt:birdieputt:birdieputts:birdieputten:birdieputtens:birdieputtar:birdieputtars:birdieputtarna:birdieputtarnas
+COMPOUND(902080, 731192): birdie + putt
+554501r3<egennamn>Birger:Birger:Birgers
+972618r3<egennamn>Birgersson:Birgersson:Birgerssons
+553627r3<egennamn>Birgit:Birgit:Birgits
+553628r3<egennamn>Birgitta:Birgitta:Birgittas
+969351r7<substantiv>birgittin:birgittin:birgittins:birgittinen:birgittinens:birgittiner:birgittiners:birgittinerna:birgittinernas
+969366r4<substantiv>birgittinerkloster:birgittinerkloster:birgittinerklosters:birgittinerklostret:birgittinerklostrets:birgittinerkloster:birgittinerklosters:birgittinerklostren:birgittinerklostrens
+COMPOUND(969351, 652451): birgittin + kloster
+969380r4<substantiv>birgittinernunna:birgittinernunna:birgittinernunnas:birgittinernunnan:birgittinernunnans:birgittinernunnor:birgittinernunnors:birgittinernunnorna:birgittinernunnornas
+COMPOUND(969351, 621618): birgittin + nunna
+969390r3<substantiv>birgittinerorden:::birgittinerorden:birgittinerordens::::
+969360r4<substantiv>birgittinkloster:birgittinkloster:birgittinklosters:birgittinklostret:birgittinklostrets:birgittinkloster:birgittinklosters:birgittinklostren:birgittinklostrens
+COMPOUND(969351, 652451): birgittin + kloster
+969372r4<substantiv>birgittinnunna:birgittinnunna:birgittinnunnas:birgittinnunnan:birgittinnunnans:birgittinnunnor:birgittinnunnors:birgittinnunnorna:birgittinnunnornas
+COMPOUND(969351, 621618): birgittin + nunna
+969388r3<substantiv>birgittinorden:::birgittinorden:birgittinordens::::
+969392r3<adjektiv>birgittinsk:birgittinsk:birgittinskt:birgittinska:birgittinska::::::::::::
+895954r3<egennamn>Birka:Birka:Birkas
+CUSTOM: y n Birka
+554874r3<egennamn>Birmingham:Birmingham:Birminghams
+CUSTOM: y n Birmingham
+854382r3<egennamn>Birnbaum:Birnbaum:Birnbaums
+592818r3<substantiv>biroll:biroll:birolls:birollen:birollens:biroller:birollers:birollerna:birollernas
+CUSTOM: y y birolls
+548380r3<substantiv>bisak:bisak:bisaks:bisaken:bisakens:bisaker:bisakers:bisakerna:bisakernas
+660157r4<substantiv>bisamhälle:bisamhälle:bisamhälles:bisamhället:bisamhällets:bisamhällen:bisamhällens:bisamhällena:bisamhällenas
+COMPOUND(556435, 612788): bi + samhälle
+758920r3<substantiv>bisamråtta:bisamråtta:bisamråttas:bisamråttan:bisamråttans:bisamråttor:bisamråttors:bisamråttorna:bisamråttornas
+563043r5<adjektiv>bisarr:bisarr:bisarrt:bisarra:bisarra:bisarrare:bisarrast:bisarraste:bisarre
+958563r3<substantiv>bisarreri:bisarreri:bisarreris:bisarreriet:bisarreriets:bisarrerier:bisarreriers:bisarrerierna:bisarreriernas
+969395r3<substantiv>bisarrhet:bisarrhet:bisarrhets:bisarrheten:bisarrhetens:bisarrheter:bisarrheters:bisarrheterna:bisarrheternas
+548381r4<substantiv>bisats:bisats:bisats:bisatsen:bisatsens:bisatser:bisatsers:bisatserna:bisatsernas
+CUSTOM: y y bisats
+592826r3<substantiv>bisektris:bisektris:bisektris:bisektrisen:bisektrisens:bisektriser:bisektrisers:bisektriserna:bisektrisernas
+CUSTOM: y y bisektris
+797294r7<adjektiv>biserial::::::::::::::::
+752458r3<substantiv>bisexualitet:bisexualitet:bisexualitets:bisexualiteten:bisexualitetens:!:!:!:!
+592833r3<adjektiv>bisexuell:bisexuell:bisexuellt:bisexuella:bisexuella:!:!:!:bisexuelle
+907214r3<substantiv>bisfenol:bisfenol:::::::
+592834r3<substantiv>bisittare:bisittare:bisittares:bisittaren:bisittarens:bisittare:bisittares:bisittarna:bisittarnas
+CUSTOM: y y bisittar
+592835r4<substantiv>biskop:biskop:biskops:biskopen:biskopens:biskopar:biskopars:biskoparna:biskoparnas
+CUSTOM: y y biskops
+969403r3<substantiv>biskopat:biskopat:biskopats:biskopatet:biskopatets:biskopat:biskopats:biskopaten:biskopatens
+969409r3<substantiv>biskopinna:biskopinna:biskopinnas:biskopinnan:biskopinnans:biskopinnor:biskopinnors:biskopinnorna:biskopinnornas
+565632r3<adjektiv>biskoplig:biskoplig:biskopligt:biskopliga:biskopliga::::
+675236r3<substantiv>biskopsdöme:biskopsdöme:biskopsdömes:biskopsdömet:biskopsdömets:biskopsdömen:biskopsdömens:biskopsdömena:biskopsdömenas
+989604r4<substantiv>biskopsornat:biskopsornat:biskopsornats:biskopsornaten:biskopsornatens:biskopsornater:biskopsornaters:biskopsornaterna:biskopsornaternas
+COMPOUND(592835, 557016): biskop + ornat
+592836r4<substantiv>biskvi:biskvi:biskvis:biskvin:biskvins:biskvier:biskviers:biskvierna:biskviernas
+865233r3<substantiv>bisköldkörtel:bisköldkörtel:bisköldkörtels:bisköldkörteln:bisköldkörtelns:bisköldkörtlar:bisköldkörtlars:bisköldkörtlarna:bisköldkörtlarnas
+782255r3<substantiv>biskötsel:biskötsel:biskötsels:biskötseln:biskötselns:!:!:!:!
+548382r3<substantiv>bismak:bismak:bismaks:bismaken:bismakens:bismaker:bismakers:bismakerna:bismakernas
+865241r3<substantiv>bison:bison:bisons:bisonen:bisonens::::
+592844r3<substantiv>bisonoxe:bisonoxe:bisonoxes:bisonoxen:bisonoxens:bisonoxar:bisonoxars:bisonoxarna:bisonoxarnas
+923886r3<substantiv>bisp:bisp:bisps:bispen:bispens:bispar:bispars:bisparna:bisparnas
+CUSTOM: n n y
+865245r5<verb>bispringa:bispringa:bisprang:bisprungit:bispringer:bispring:bispringas:bisprangs:bisprungits:bisprings:bisprungen:bisprunget:bisprungna:bispringande:
+969417r3<substantiv>bispår:bispår:bispårs:bispåret:bispårets:bispår:bispårs:bispåren:bispårens
+CUSTOM: y n
+553979r3<egennamn>Bissau:Bissau:Bissaus
+CUSTOM: y n Bissau
+586209r5<verb>bissera:bissera:bisserade:bisserat:bisserar:bissera:bisseras:bisserades:bisserats:bisseras:bisserad:bisserat:bisserade:bisserande:
+689097r3<adjektiv>bistabil:bistabil:bistabilt:bistabila:bistabila::::
+564512r4<adjektiv>bister:bister:bistert:bistra:bistra:bistrare:bistrast:bistraste:bistre
+552251r3<substantiv>bistick:bistick:bisticks:bisticket:bistickets:bistick:bisticks:bisticken:bistickens
+758933r3<substantiv>bisting:bisting:bistings:bistinget:bistingets:bisting:bistings:bistingen:bistingens
+592852r4<substantiv>bistro:bistro:bistros:bistron:bistrons:bistroer:bistroers:bistroerna:bistroernas
+CUSTOM: y y bistro
+944284r4<substantiv>bistrostuk:bistrostuk:bistrostuks:bistrostuket:bistrostukets:bistrostuk:bistrostuks:bistrostuken:bistrostukens
+COMPOUND(592852, 620459): bistro + stuk
+678448r3<substantiv>bisturi:bisturi:bisturis:bisturin, bisturien:bisturins, bisturiens::::
+758939r3<substantiv>bistyng:bistyng:bistyngs:bistynget:bistyngets:bistyng:bistyngs:bistyngen:bistyngens
+592854r3<verb>bistå:bistå:bistod:bistått:bistår:bistå:bistås:bistods:biståtts:bistås:::::
+552252r3<substantiv>bistånd:bistånd:bistånds:biståndet:biståndets:bistånd:bistånds:bistånden:biståndens
+CUSTOM: y y bistånds
+550886r3<substantiv>bisvärm:bisvärm:bisvärms:bisvärmen:bisvärmens:bisvärmar:bisvärmars:bisvärmarna:bisvärmarnas
+969423r3<substantiv>bisyfte:bisyfte:bisyftes:bisyftet:bisyftets:bisyften:bisyftens:bisyftena:bisyftenas
+579223r3<adjektiv>bisyllabisk:bisyllabisk:bisyllabiskt:bisyllabiska:bisyllabiska::::
+660158r3<substantiv>bisyssla:bisyssla:bisysslas:bisysslan:bisysslans:bisysslor:bisysslors:bisysslorna:bisysslornas
+865259r4<verb>bisätta:bisätta:bisatte:bisatt:bisätter:bisätt:bisättas:bisattes:bisatts:bisätts, bisättes:bisatt:bisatt:bisatta:bisättande:
+COMPOUND(620485, 593414): bi + sätta
+865271r3<substantiv>bisättning:bisättning:bisättnings:bisättningen:bisättningens:bisättningar:bisättningars:bisättningarna:bisättningarnas
+550887r25<substantiv>bit:bit:bits:biten:bitens:bitar:bitars:bitarna:bitarnas
+CUSTOM: y y bit
+557867r7<verb>bita:bita:bet:bitit:biter:bit:bitas:bets:bitits:bits, bites:biten:bitet:bitna:bitande:
+CUSTOM: y n !bites
+689098r3<substantiv>bitande:bitande:bitandes:bitandet:bitandets::::
+570971r3<adjektiv>bitande:bitande:bitande:bitande:bitande:!:!:!:
+591643r3<deponens>bitas:bitas:bets:bitits:bits:bits
+938193r3<substantiv>bitch:bitch:bitchs:bitchen:bitchens:bitchar:bitchars:bitcharna:bitcharnas
+571542r4<adjektiv>bitchig:bitchig:bitchigt:bitchiga:bitchiga:bitchigare:bitchigast:bitchigaste:::::::::
+659014r5<adjektiv>biten:biten:biten:biten:biten:!:!:!:bitne
+865279r3<substantiv>bitestikel:bitestikel:bitestikels:bitestikeln:bitestikelns:bitestiklar:bitestiklars:bitestiklarna:bitestiklarnas
+969432r3<substantiv>bitestikelinflammation:bitestikelinflammation:bitestikelinflammations:bitestikelinflammationen:bitestikelinflammationens:bitestikelinflammationer:bitestikelinflammationers:bitestikelinflammationerna:bitestikelinflammationernas
+957581r3<substantiv>biton:biton:bitons:bitonen:bitonens:bitoner:bitoners:bitonerna:bitonernas
+638104r5<verb>biträda:biträda:biträdde:biträtt:biträder:biträd:biträdas:biträddes:biträtts:biträds, biträdes:biträdd:biträtt:biträdda::
+701344r3<adjektiv>biträdande:biträdande:biträdande:biträdande:biträdande:!:!:!:
+612394r6<substantiv>biträde:biträde:biträdes:biträdet:biträdets:biträden:biträdens:biträdena:biträdenas
+CUSTOM: y y biträdes
+563044r5<adjektiv>bitsk:bitsk:bitskt:bitska:bitska:bitskare:bitskast:bitskaste:bitske
+969441r3<substantiv>bitskhet:bitskhet:bitskhets:bitskheten:bitskhetens:bitskheter:bitskheters:bitskheterna:bitskheternas
+614934r3<substantiv>bitsocker:bitsocker:bitsockers:bitsockret:bitsockrets::::
+878565r5<substantiv>bitström:bitström:bitströms:bitströmmen:bitströmmens:bitströmmar:bitströmmars:bitströmmarna:bitströmmarnas
+COMPOUND(550887, 619738): bit + ström
+CUSTOM: y y bitströms
+878567r4<substantiv>bitströmstillträde:bitströmstillträde:bitströmstillträdes:bitströmstillträdet:bitströmstillträdets:bitströmstillträden:bitströmstillträdens:bitströmstillträdena:bitströmstillträdenas
+COMPOUND(878565, 612961): bitström + tillträde
+CUSTOM: n n
+564513r6<adjektiv>bitter:bitter:bittert:bittra:bittra:bittrare:bittrast:bittraste:bittre
+CUSTOM: y y
+660160r4<substantiv>bitterhet:bitterhet:bitterhets:bitterheten:bitterhetens:bitterheter:bitterheters:bitterheterna:bitterheternas
+CUSTOM: y y bitterhets
+660162r3<adverb>bitterligen:bitterligen
+640264r4<adjektiv>bitterljuv:bitterljuv:bitterljuvt:bitterljuva:bitterljuva:!:!:!:!
+COMPOUND(564513, 625671): bitter + ljuv
+660163r4<substantiv>bittermandel:bittermandel:bittermandels:bittermandeln:bittermandelns:bittermandlar:bittermandlars:bittermandlarna:bittermandlarnas
+COMPOUND(564513, 633203): bitter + mandel
+CUSTOM: y y bittermandel
+865291r3<adjektiv>bittersalt:bittersalt:bittersalt:bittersalta:bittersalta::::
+865298r3<adjektiv>bittersöt:bittersöt:bittersött:bittersöta:bittersöta::::
+865293r3<substantiv>bittersöta:bittersöta:bittersötas:bittersötan:bittersötans::::
+620486r3<adverb>bitti:bitti
+660169r3<adverb>bittida:bittida
+969449r3<substantiv>bitumen:bitumen:bitumens::::::
+CUSTOM: y n
+799117r3<adjektiv>bitumenbelagd:bitumenbelagd:bitumenbelagt:bitumenbelagda:bitumenbelagda::::
+571545r3<adjektiv>bitumenfattig:bitumenfattig:bitumenfattigt:bitumenfattiga:bitumenfattiga::::
+571548r3<adjektiv>bitumenhaltig:bitumenhaltig:bitumenhaltigt:bitumenhaltiga:bitumenhaltiga::::
+790076r3<adjektiv>bitumenimpregnerad:bitumenimpregnerad:bitumenimpregnerat:bitumenimpregnerade:bitumenimpregnerade:!:!:!:
+797297r3<adjektiv>bituminös:bituminös:bituminöst:bituminösa:bituminösa::::
+930287r4<substantiv>bitvarg:bitvarg:bitvargs:bitvargen:bitvargens:bitvargar:bitvargars:bitvargarna:bitvargarnas
+COMPOUND(557867, 552087): bita + varg
+620487r3<adverb>bitvis:bitvis
+899815r3<substantiv>biutrymme:biutrymme:biutrymmes:biutrymmet:biutrymmets:biutrymmen:biutrymmens:biutrymmena:biutrymmenas
+865301r3<substantiv>bivack:bivack:bivacks:bivacken:bivackens:bivacker:bivackers:bivackerna:bivackernas
+588707r4<verb>bivackera:bivackera:bivackerade:bivackerat:bivackerar:bivackera:bivackeras:bivackerades:bivackerats:bivackeras:bivackerad:bivackerat:bivackerade:bivackerande:
+627551r4<substantiv>bivax:bivax:bivax:bivaxet:bivaxets:!:!:!:!
+COMPOUND(556435, 627545): bi + vax
+660171r3<substantiv>biverkan:biverkan:biverkans:biverkan:biverkans:!:!:!:!
+596489r3<substantiv>biverkning:biverkning:biverknings:biverkningen:biverkningens:biverkningar:biverkningars:biverkningarna:biverkningarnas
+CUSTOM: y y biverknings
+552253r3<substantiv>bivillkor:bivillkor:bivillkors:bivillkoret:bivillkorets:bivillkor:bivillkors:bivillkoren:bivillkorens
+752462r3<substantiv>bivråk:bivråk:bivråks:bivråken:bivråkens:bivråkar:bivråkars:bivråkarna:bivråkarnas
+787477r3<substantiv>biväg:biväg:bivägs:bivägen:bivägens:bivägar:bivägars:bivägarna:bivägarnas
+CUSTOM: n n y
+903532r3<substantiv>biyta:biyta:biytas:biytan:biytans:biytor:biytors:biytorna:biytornas
+865314r3<substantiv>biämne:biämne:biämnes:biämnet:biämnets:biämnen:biämnens:biämnena:biämnenas
+969451r4<substantiv>biätare:biätare:biätares:biätaren:biätarens:biätare:biätares:biätarna:biätarnas
+CUSTOM: y n
+971900r3<egennamn>Bjarne:Bjarne:Bjarnes
+553376r3<egennamn>Bjerre:Bjerre:Bjerres
+680895r5<adjektiv>bjud:::bjud:bjud:!:!:!:
+DEFINITION 1: Någonting som är så fint att man skulle bjuda på det (om man ägde det)
+585279r13<verb>bjuda:bjuda:bjöd:bjudit:bjuder:bjud:bjudas:bjöds:bjudits:bjuds, bjudes:bjuden:bjudet:bjudna:bjudande:
+CUSTOM: y n
+689100r3<adjektiv>bjudande:bjudande:bjudande:bjudande:bjudande:!:!:!:
+771047r4<substantiv>bjudcigarr:bjudcigarr:bjudcigarrs:bjudcigarren:bjudcigarrens:bjudcigarrer:bjudcigarrers:bjudcigarrerna:bjudcigarrernas
+COMPOUND(585279, 548537): bjuda + cigarr
+596490r3<substantiv>bjudning:bjudning:bjudnings:bjudningen:bjudningens:bjudningar:bjudningars:bjudningarna:bjudningarnas
+CUSTOM: y y bjudnings
+907456r3<substantiv>bjudresa:bjudresa:bjudresas:bjudresan:bjudresans:bjudresor:bjudresors:bjudresorna:bjudresornas
+728062r3<egennamn>Bjurholm:Bjurholm:Bjurholms
+972621r3<egennamn>Bjurström:Bjurström:Bjurströms
+786030r3<egennamn>Bjus:Bjus:Bjus
+CUSTOM: n n 
+865322r3<verb>bjussa:bjussa:bjussade:bjussat:bjussar:bjussa:bjussas:bjussades:bjussats:bjussas:bjussad:bjussat:bjussade:bjussande:
+722351r3<egennamn>Bjuv:Bjuv:Bjuvs
+865331r3<substantiv>bjäbb:bjäbb:bjäbbs:bjäbbet:bjäbbets::::
+CUSTOM: y n
+865335r3<verb>bjäbba:bjäbba:bjäbbade:bjäbbat:bjäbbar:bjäbba:bjäbbas:bjäbbades:bjäbbats:bjäbbas::::bjäbbande:
+571551r3<adjektiv>bjäbbig:bjäbbig:bjäbbigt:bjäbbiga:bjäbbiga::::
+631544r3<substantiv>bjäfs:bjäfs:bjäfs:bjäfset:bjäfsets::::
+599783r5<substantiv>bjälke:bjälke:bjälkes:bjälken:bjälkens:bjälkar:bjälkars:bjälkarna:bjälkarnas
+CUSTOM: y y bjälk
+939443r4<substantiv>bjälklag:bjälklag:bjälklags:bjälklaget:bjälklagets:bjälklag:bjälklags:bjälklagen:bjälklagens
+593762r4<substantiv>bjällra:bjällra:bjällras:bjällran:bjällrans:bjällror:bjällrors:bjällrorna:bjällrornas
+BASEWORDS: bjäller
+CUSTOM: y y bjäller
+629193r8<egennamn>Bjärred:Bjärred:Bjärreds
+CUSTOM: y n Bjärreds
+625088r3<adjektiv>bjärt:bjärt:bjärt:bjärta:bjärta:bjärtare:bjärtast:bjärtaste:bjärte
+790079r3<adjektiv>bjärtmålad:bjärtmålad:bjärtmålat:bjärtmålade:bjärtmålade:!:!:!:
+801776r3<adjektiv>bjärtröd:bjärtröd:bjärtrött:bjärtröda:bjärtröda::::
+CUSTOM: y n n
+599785r3<substantiv>bjässe:bjässe:bjässes:bjässen:bjässens:bjässar:bjässars:bjässarna:bjässarnas
+596153r13<substantiv>björk:björk:björks:björken:björkens:björkar:björkars:björkarna:björkarnas
+CUSTOM: y y björk
+861030r3<egennamn>Björklund:Björklund:Björklunds
+732070r3<egennamn>Björkman:Björkman:Björkmans
+969457r3<substantiv>björkna:björkna:björknas:björknan:björknans:björknor:björknors:björknorna:björknornas
+CUSTOM: y n
+969465r4<substantiv>björknäver:björknäver:björknävers:björknävern:björknäverns:björknävrar:björknävrars:björknävrarna:björknävrarnas
+COMPOUND(596153, 737133): björk + näver
+972624r3<egennamn>Björkqvist:Björkqvist:Björkqvists
+779329r4<substantiv>björkris:björkris:björkris:björkriset:björkrisets:björkris:björkris:björkrisen:björkrisens
+COMPOUND(596153, 552842): björk + ris
+960297r4<substantiv>björkslana:björkslana:björkslanas:björkslanan:björkslanans:björkslanor:björkslanors:björkslanorna:björkslanornas
+COMPOUND(596153, 666894): björk + slana
+849171r5<substantiv>björksly:björksly:björkslys:björkslyet:björkslyets:björkslyn:björkslyns:björkslyna:björkslynas
+COMPOUND(596153, 629336): björk + sly
+944291r4<substantiv>björksopp:björksopp:björksopps:björksoppen:björksoppens:björksoppar:björksoppars:björksopparna:björksopparnas
+COMPOUND(596153, 668414): björk + sopp
+624175r4<substantiv>björktrast:björktrast:björktrasts:björktrasten:björktrastens:björktrastar:björktrastars:björktrastarna:björktrastarnas
+COMPOUND(596153, 599027): björk + trast
+861304r3<substantiv>björkträ:björkträ:björkträs:björkträet:björkträets::::
+734533r5<substantiv>björkved:björkved:björkveds:björkveden:björkvedens:!:!:!:!
+COMPOUND(596153, 624355): björk + ved
+CUSTOM: y y björkveds
+734524r4<substantiv>björkvedsbrasa:björkvedsbrasa:björkvedsbrasas:björkvedsbrasan:björkvedsbrasans:björkvedsbrasor:björkvedsbrasors:björkvedsbrasorna:björkvedsbrasornas
+COMPOUND(734533, 555201): björkved + brasa
+919373r4<substantiv>björkvin:björkvin:björkvins:björkvinet:björkvinets:björkviner:björkviners:björkvinerna:björkvinernas
+COMPOUND(596153, 600515): björk + vin
+895958r3<egennamn>Björkö:Björkö:Björkös
+CUSTOM: y n Björkö
+598136r10<substantiv>björn:björn:björns:björnen:björnens:björnar:björnars:björnarna:björnarnas
+CUSTOM: y y björn
+554503r3<egennamn>Björn:Björn:Björns
+678095r3<substantiv>björnbär:björnbär:björnbärs:björnbäret:björnbärets:björnbär:björnbärs:björnbären:björnbärens
+CUSTOM: y y björnbärs
+678101r3<substantiv>björnbärsbuske:björnbärsbuske:björnbärsbuskes:björnbärsbusken:björnbärsbuskens:björnbärsbuskar:björnbärsbuskars:björnbärsbuskarna:björnbärsbuskarnas
+678109r3<substantiv>björnbärssaft:björnbärssaft:björnbärssafts:björnbärssaften:björnbärssaftens::::
+678113r3<substantiv>björnbärssylt:björnbärssylt:björnbärssylts:björnbärssylten:björnbärssyltens::::
+844756r6<substantiv>björndans:björndans:björndans:björndansen:björndansens:björndanser:björndansers:björndanserna:björndansernas
+COMPOUND(598136, 548569): björn + dans
+789196r3<egennamn>Björne:Björne:Björnes
+678117r3<substantiv>björnfäll:björnfäll:björnfälls:björnfällen:björnfällens:björnfällar:björnfällars:björnfällarna:björnfällarnas
+678125r3<substantiv>björnhane:björnhane:björnhanes:björnhanen:björnhanens:björnhanar:björnhanars:björnhanarna:björnhanarnas
+678133r3<substantiv>björnhona:björnhona:björnhonas:björnhonan:björnhonans:björnhonor:björnhonors:björnhonorna:björnhonornas
+849175r4<substantiv>björnide:björnide:björnides:björnidet:björnidets:björniden:björnidens:björnidena:björnidenas
+COMPOUND(598136, 559567): björn + ide
+865343r3<substantiv>björninna:björninna:björninnas:björninnan:björninnans:björninnor:björninnors:björninnorna:björninnornas
+678141r3<substantiv>björnjakt:björnjakt:björnjakts:björnjakten:björnjaktens:björnjakter:björnjakters:björnjakterna:björnjakternas
+678149r3<substantiv>björnjägare:björnjägare:björnjägares:björnjägaren:björnjägarens:björnjägare:björnjägares:björnjägarna:björnjägarnas
+CUSTOM: y y björnjägar
+678155r3<substantiv>björnkram:björnkram:björnkrams:björnkramen:björnkramens:björnkramar:björnkramars:björnkramarna:björnkramarnas
+678163r3<substantiv>björnloka:björnloka:björnlokas:björnlokan:björnlokans:björnlokor:björnlokors:björnlokorna:björnlokornas
+678171r3<substantiv>björnram:björnram:björnrams:björnramen:björnramens:björnramar:björnramars:björnramarna:björnramarnas
+700009r5<substantiv>björnskinn:björnskinn:björnskinns:björnskinnet:björnskinnets:björnskinn:björnskinns:björnskinnen:björnskinnens
+COMPOUND(598136, 607984): björn + skinn
+CUSTOM: y y björnskinns
+678179r3<substantiv>björnskinnsmössa:björnskinnsmössa:björnskinnsmössas:björnskinnsmössan:björnskinnsmössans:björnskinnsmössor:björnskinnsmössors:björnskinnsmössorna:björnskinnsmössornas
+678187r4<substantiv>björnskinnspäls:björnskinnspäls:björnskinnspäls:björnskinnspälsen:björnskinnspälsens:björnskinnspälsar:björnskinnspälsars:björnskinnspälsarna:björnskinnspälsarnas
+COMPOUND(700009, 551788): björnskinn + päls
+678194r3<egennamn>Björnson:Björnson:Björnsons
+972628r3<egennamn>Björnsson:Björnsson:Björnssons
+548383r4<substantiv>björntjänst:björntjänst:björntjänsts:björntjänsten:björntjänstens:björntjänster:björntjänsters:björntjänsterna:björntjänsternas
+678196r3<substantiv>björntråd:björntråd:björntråds:björntråden:björntrådens:björntrådar:björntrådars:björntrådarna:björntrådarnas
+550888r3<substantiv>black:black:blacks:blacken:blackens:blackar:blackars:blackarna:blackarnas
+626613r8<egennamn>Blackeberg:Blackeberg:Blackebergs
+CUSTOM: y n Blackebergs
+571554r3<adjektiv>blackig:blackig:blackigt:blackiga:blackiga::::
+548391r3<substantiv>blackout:blackout:blackouts:blackouten:blackoutens:blackouter:blackouters:blackouterna:blackouternas
+552254r35<substantiv>blad:blad:blads:bladet:bladets:blad:blads:bladen:bladens
+CUSTOM: y y blad
+790082r3<adjektiv>bladad:bladad:bladat:bladade:bladade:!:!:!:
+790085r3<adjektiv>bladartad:bladartad:bladartat:bladartade:bladartade:!:!:!:
+571557r3<adjektiv>bladformig:bladformig:bladformigt:bladformiga:bladformiga::::
+630892r4<substantiv>bladfot:bladfot:bladfots:bladfoten:bladfotens:bladfötter:bladfötters:bladfötterna:bladfötternas
+COMPOUND(552254, 555210): blad + fot
+630900r3<substantiv>bladfoting:bladfoting:bladfotings:bladfotingen:bladfotingens:bladfotingar:bladfotingars:bladfotingarna:bladfotingarnas
+678204r3<substantiv>bladförband:bladförband:bladförbands:bladförbandet:bladförbandets:bladförband:bladförbands:bladförbanden:bladförbandens
+972632r3<egennamn>Bladh:Bladh:Bladhs
+571560r4<adjektiv>bladig:bladig:bladigt:bladiga:bladiga::::::::::::
+966843r4<substantiv>bladlav:bladlav:bladlavs:bladlaven:bladlavens:bladlavar:bladlavars:bladlavarna:bladlavarnas
+COMPOUND(552254, 559952): blad + lav
+849183r4<substantiv>bladlus:bladlus:bladlus:bladlusen:bladlusens:bladlöss:bladlöss:bladlössen:bladlössens
+COMPOUND(552254, 560155): blad + lus
+564755r3<adjektiv>bladlös:bladlös:bladlöst:bladlösa:bladlösa::::
+631613r6<substantiv>bladmögel:bladmögel:bladmögels:bladmöglet:bladmöglets::::
+COMPOUND(552254, 621551): blad + mögel
+989594r4<substantiv>bladneger:bladneger:bladnegers:bladnegern:bladnegerns:bladnegrer:bladnegrers:bladnegrerna:bladnegrernas
+COMPOUND(552254, 555071): blad + neger
+865351r3<substantiv>bladning:bladning:bladnings:bladningen:bladningens::::
+752475r3<substantiv>bladpersilja:bladpersilja:bladpersiljas:bladpersiljan:bladpersiljans::::
+969473r3<adjektiv>bladrik:bladrik:bladrikt:bladrika:bladrika::::::::::::
+752470r3<substantiv>bladspenat:bladspenat:bladspenats:bladspenaten:bladspenatens::::
+845434r3<substantiv>bladvass:bladvass:bladvass:bladvassen:bladvassens::::
+678210r3<substantiv>bladveck:bladveck:bladvecks:bladvecket:bladveckets:bladveck:bladvecks:bladvecken:bladveckens
+678216r3<substantiv>bladverk:bladverk:bladverks:bladverket:bladverkets:bladverk:bladverks:bladverken:bladverkens
+658697r4<substantiv>bladvändare:bladvändare:bladvändares:bladvändaren, bladvändarn:bladvändarens, bladvändarns:bladvändare:bladvändares:bladvändarna:bladvändarnas
+COMPOUND(552254, 658665): blad + vändare
+CUSTOM: y y bladvändar
+865355r3<substantiv>blaffa:blaffa:blaffas:blaffan:blaffans:blaffor:blaffors:blafforna:blaffornas
+571563r4<adjektiv>blaffig:blaffig:blaffigt:blaffiga:blaffiga:blaffigare:blaffigast:blaffigaste:::::::::
+969479r3<substantiv>blaggarn:blaggarn:blaggarns:blaggarnet:blaggarnets::::
+935322r3<interjektion>blaha:blaha
+CUSTOM: y n y
+861022r3<egennamn>Blair:Blair:Blairs
+744275r3<substantiv>blaj:blaj:blajs:blajet:blajets::::
+CUSTOM: y n y
+660173r3<substantiv>blamage:blamage:blamages:blamagen:blamagens:blamager:blamagers:blamagerna:blamagernas
+586213r4<verb>blamera:blamera:blamerade:blamerat:blamerar:blamera:blameras:blamerades:blamerats:blameras:blamerad:blamerat:blamerade::
+800905r3<adjektiv>blamerande:blamerande:blamerande:blamerande:blamerande:!:!:!:
+586217r5<verb>blanchera:blanchera:blancherade:blancherat:blancherar:blanchera:blancheras:blancherades:blancherats:blancheras:blancherad:blancherat:blancherade:blancherande:
+969483r3<substantiv>blanchering:blanchering:blancherings:blancheringen:blancheringens::::
+959572r3<substantiv>blancolån:blancolån:blancolåns:blancolånet:blancolånets:blancolån:blancolåns:blancolånen:blancolånens
+617380r3<preposition>bland:bland
+546293r9<verb>blanda:blanda:blandade:blandat:blandar:blanda:blandas:blandades:blandats:blandas:blandad:blandat:blandade:blandande:
+CUSTOM: y y bland
+682335r4<adjektiv>blandad:blandad:blandat:blandade:blandade:!:!:!:
+609348r3<substantiv>blandare:blandare:blandares:blandaren:blandarens:blandare:blandares:blandarna:blandarnas
+CUSTOM: y y blandar +blandar
+568934r3<adjektiv>blandbar:blandbar:blandbart:blandbara:blandbara::::
+CUSTOM: y n n
+571566r3<adjektiv>blandbasig:blandbasig:blandbasigt:blandbasiga:blandbasiga::::
+610480r3<substantiv>blandekonomi:blandekonomi:blandekonomis:blandekonomin:blandekonomins:blandekonomier:blandekonomiers:blandekonomierna:blandekonomiernas
+579226r3<adjektiv>blandekonomisk:blandekonomisk:blandekonomiskt:blandekonomiska:blandekonomiska::::
+678223r4<substantiv>blandkultur:blandkultur:blandkulturs:blandkulturen:blandkulturens:blandkulturer:blandkulturers:blandkulturerna:blandkulturernas
+COMPOUND(546293, 549804): blanda + kultur
+596491r10<substantiv>blandning:blandning:blandnings:blandningen:blandningens:blandningar:blandningars:blandningarna:blandningarnas
+CUSTOM: y y blandnings +blandnings
+824000r3<substantiv>blandras:blandras:blandras:blandrasen:blandrasens:blandraser:blandrasers:blandraserna:blandrasernas
+660175r3<substantiv>blandskog:blandskog:blandskogs:blandskogen:blandskogens:blandskogar:blandskogars:blandskogarna:blandskogarnas
+918991r4<substantiv>blandvin:blandvin:blandvins:blandvinet:blandvinets:blandviner:blandviners:blandvinerna:blandvinernas
+COMPOUND(546293, 600515): blanda + vin
+677230r4<substantiv>blandväv:blandväv:blandvävs:blandväven:blandvävens:blandvävar:blandvävars:blandvävarna:blandvävarnas
+COMPOUND(546293, 552117): blanda + väv
+CUSTOM: y n n
+563045r9<adjektiv>blank:blank:blankt:blanka:blanka:blankare:blankast:blankaste:blanke::::::::
+CUSTOM: y y blank
+865368r3<verb>blanka:blanka:blankade:blankat:blankar:blanka:blankas:blankades:blankats:blankas:blankad:blankat:blankade:blankande:
+790088r3<adjektiv>blankbonad:blankbonad:blankbonat:blankbonade:blankbonade:!:!:!:
+548393r4<substantiv>blankett:blankett:blanketts:blanketten:blankettens:blanketter:blanketters:blanketterna:blanketternas
+CUSTOM: y y blankett
+790091r3<adjektiv>blankglödgad:blankglödgad:blankglödgat:blankglödgade:blankglödgade:!:!:!:
+845437r4<substantiv>blankis:blankis:blankis:blankisen:blankisens:blankisar:blankisars:blankisarna:blankisarnas
+COMPOUND(563045, 556177): blank + is
+892983r4<substantiv>blanklax:blanklax:blanklax:blanklaxen:blanklaxens:blanklaxar:blanklaxars:blanklaxarna:blanklaxarnas
+COMPOUND(563045, 555226): blank + lax
+782259r4<substantiv>blankning:blankning:blanknings:blankningen:blankningens:blankningar:blankningars:blankningarna:blankningarnas
+CUSTOM: y y blanknings
+782267r4<substantiv>blankningsaffär:blankningsaffär:blankningsaffärs:blankningsaffären:blankningsaffärens:blankningsaffärer:blankningsaffärers:blankningsaffärerna:blankningsaffärernas
+COMPOUND(782259, 548155): blankning + affär
+845444r3<adjektiv>blanknött:blanknött:blanknött:blanknötta:blanknötta::::
+865378r3<substantiv>blankofullmakt:blankofullmakt:blankofullmakts:blankofullmakten:blankofullmaktens:blankofullmakter:blankofullmakters:blankofullmakterna:blankofullmakternas
+601371r3<substantiv>blankokredit:blankokredit:blankokredits:blankokrediten:blankokreditens:blankokrediter:blankokrediters:blankokrediterna:blankokrediternas
+786328r3<substantiv>blankolån:blankolån:blankolåns:blankolånet:blankolånets:blankolån:blankolåns:blankolånen:blankolånens
+865386r3<substantiv>blankoväxel:blankoväxel:blankoväxels:blankoväxeln:blankoväxelns:blankoväxlar:blankoväxlars:blankoväxlarna:blankoväxlarnas
+611840r3<substantiv>blankoöverlåtelse:blankoöverlåtelse:blankoöverlåtelses:blankoöverlåtelsen:blankoöverlåtelsens:blankoöverlåtelser:blankoöverlåtelsers:blankoöverlåtelserna:blankoöverlåtelsernas
+CUSTOM: y y blankoöverlåtelse
+586221r4<verb>blankpolera:blankpolera:blankpolerade:blankpolerat:blankpolerar:blankpolera:blankpoleras:blankpolerades:blankpolerats:blankpoleras:blankpolerad:blankpolerat:blankpolerade::
+689101r3<adjektiv>blankpolerad:blankpolerad:blankpolerat:blankpolerade:blankpolerade:!:!:!:
+790094r3<adjektiv>blankskurad:blankskurad:blankskurat:blankskurade:blankskurade:!:!:!:
+721348r5<substantiv>blankål:blankål:blankåls:blankålen:blankålens:blankålar:blankålars:blankålarna:blankålarnas
+COMPOUND(563045, 552122): blank + ål
+CUSTOM: y n
+721404r4<substantiv>blankålsfiske:blankålsfiske:blankålsfiskes:blankålsfisket:blankålsfiskets::::
+COMPOUND(721348, 625321): blankål + fiske
+799120r3<adjektiv>blankögd:blankögd:blankögt:blankögda:blankögda::::
+571569r3<adjektiv>blarrig:blarrig:blarrigt:blarriga:blarriga::::
+782268r3<adjektiv>blasé:blasé:blasé:blasé:blasé:!:!:!:
+706509r3<adjektiv>blaserad:blaserad:blaserat:blaserade:blaserade:!:!:!:
+737258r3<substantiv>blasfemi:blasfemi:blasfemis:blasfemin:blasfemins:blasfemier:blasfemiers:blasfemierna:blasfemiernas
+579229r4<adjektiv>blasfemisk:blasfemisk:blasfemiskt:blasfemiska:blasfemiska::::blasfemiske
+782269r3<substantiv>blask:blask:blasks:blasket:blaskets::::
+865395r3<substantiv>blaska:blaska:blaskas:blaskan:blaskans:blaskor:blaskors:blaskorna:blaskornas
+724722r3<verb>blaska:blaska:blaskade:blaskat:blaskar:blaska:blaskas:blaskades:blaskats:blaskas::::blaskande:
+571572r4<adjektiv>blaskig:blaskig:blaskigt:blaskiga:blaskiga:blaskigare:blaskigast:blaskigaste:
+588711r3<verb>blasonera:blasonera:blasonerade:blasonerat:blasonerar:blasonera:::::::::
+865405r3<substantiv>blasonering:blasonering:blasonerings:blasoneringen:blasoneringens:blasoneringar:blasoneringars:blasoneringarna:blasoneringarnas
+649060r3<substantiv>blast:blast:blasts:blasten:blastens::::
+865413r3<verb>blasta:blasta:blastade:blastat:blastar:blasta:blastas:blastades:blastats:blastas::::blastande:
+763617r3<substantiv>blatte:blatte:blattes:blatten:blattens:blattar:blattars:blattarna:blattarnas
+CUSTOM: b n
+614938r3<substantiv>blazer:blazer:blazers:blazern:blazerns:blazrar:blazrars:blazrarna:blazrarnas
+552256r3<substantiv>bleck:bleck:blecks:blecket:bleckets:bleck:blecks:blecken:bleckens
+724731r4<substantiv>bleckblås:bleckblås:bleckblås:bleckblåset:bleckblåsets:!:!:!:!
+DEFINITION 1: En sektion av musiker spelandes på bleckblåsinstrument (brass- och mässingsinstrument). 
+609349r3<substantiv>bleckblåsare:bleckblåsare:bleckblåsares:bleckblåsaren:bleckblåsarens:bleckblåsare:bleckblåsares:bleckblåsarna:bleckblåsarnas
+CUSTOM: y y bleckblåsar
+606746r3<substantiv>bleckblåsinstrument:bleckblåsinstrument:bleckblåsinstruments:bleckblåsinstrumentet:bleckblåsinstrumentets:bleckblåsinstrument:bleckblåsinstruments:bleckblåsinstrumenten:bleckblåsinstrumentens
+865421r3<substantiv>bleckburk:bleckburk:bleckburks:bleckburken:bleckburkens:bleckburkar:bleckburkars:bleckburkarna:bleckburkarnas
+865429r3<substantiv>bleckmusik:bleckmusik:bleckmusiks:bleckmusiken:bleckmusikens::::
+865433r3<substantiv>bleckplåt:bleckplåt:bleckplåts:bleckplåten:bleckplåtens:bleckplåtar:bleckplåtars:bleckplåtarna:bleckplåtarnas
+758952r3<substantiv>bleckslagare:bleckslagare:bleckslagares:bleckslagaren:bleckslagarens:bleckslagare:bleckslagares:bleckslagarna:bleckslagarnas
+865441r3<substantiv>bleckslageri:bleckslageri:bleckslageris:bleckslageriet:bleckslageriets:bleckslagerier:bleckslageriers:bleckslagerierna:bleckslageriernas
+563046r8<adjektiv>blek:blek:blekt:bleka:bleka:blekare:blekast:blekaste:bleke::::::::
+CUSTOM: y y blek
+649062r8<verb>bleka:bleka:blekte:blekt:bleker:blek:blekas:blektes:blekts:bleks, blekes:blekt:blekt:blekta:blekande:
+CUSTOM: y y blek
+568937r3<adjektiv>blekbar:blekbar:blekbart:blekbara:blekbara::::
+CUSTOM: n n
+799123r3<adjektiv>blekblond:blekblond:blekblont:blekblonda:blekblonda::::
+801967r3<adjektiv>blekblå:blekblå:blekblått:blekblåa:blekblåa::::
+865449r3<substantiv>blekeri:blekeri:blekeris:blekeriet:blekeriets:blekerier:blekeriers:blekerierna:blekeriernas
+845446r3<adjektiv>blekfet:blekfet:blekfett:blekfeta:blekfeta::::blekfete
+849189r3<substantiv>blekfis:blekfis:blekfis:blekfisen:blekfisens:blekfisar:blekfisars:blekfisarna:blekfisarnas
+930297r4<adjektiv>blekgrå:blekgrå:blekgrått:blekgråa:blekgråa::::::::::::
+COMPOUND(563046, 558947): blek + grå
+660185r3<adjektiv>blekgrön:blekgrön:blekgrönt:blekgröna:blekgröna:!:!:!:
+797300r3<adjektiv>blekgul:blekgul:blekgult:blekgula:blekgula::::
+660186r3<substantiv>blekhet:blekhet:blekhets:blekheten:blekhetens::::
+CUSTOM: y y blekhets
+571575r3<adjektiv>blekhärdig:blekhärdig:blekhärdigt:blekhärdiga:blekhärdiga::::
+660187r3<substantiv>bleking:bleking:blekings:blekingen:blekingens:blekingar:blekingars:blekingarna:blekingarnas
+553187r8<egennamn>Blekinge:Blekinge:Blekinges
+CUSTOM: y n Blekinge
+960575r4<substantiv>Blekingebo:Blekingebo:Blekingebos:Blekingebon:Blekingebons:Blekingebor:Blekingebors:Blekingeborna:Blekingebornas
+COMPOUND(553187, 855482): Blekinge + bo
+865457r3<adjektiv>blekingsk:blekingsk:blekingskt:blekingska:blekingska::::blekingske
+799126r3<adjektiv>bleklagd:bleklagd:bleklagt:bleklagda:bleklagda::::
+660188r4<substantiv>blekmedel:blekmedel:blekmedels:blekmedlet:blekmedlets:blekmedel:blekmedels:blekmedlen:blekmedlens
+COMPOUND(649062, 560532): bleka + medel
+585497r4<verb>blekna:blekna:bleknade:bleknat:bleknar:blekna:::::bleknad:bleknat:bleknade:bleknande:
+659791r10<substantiv>blekning:blekning:bleknings:blekningen:blekningens:blekningar:blekningars:blekningarna:blekningarnas
+CUSTOM: y y bleknings +bleknings
+571578r3<adjektiv>blekningsbeständig:blekningsbeständig:blekningsbeständigt:blekningsbeständiga:blekningsbeständiga::::
+849196r3<substantiv>bleknos:bleknos:bleknos:bleknosen:bleknosens:bleknosar:bleknosars:bleknosarna:bleknosarnas
+571581r3<adjektiv>bleknosig:bleknosig:bleknosigt:bleknosiga:bleknosiga::::
+660197r4<adjektiv>blekrosa:blekrosa:blekrosa:blekrosa:blekrosa:!:!:!:
+COMPOUND(563046, 624692): blek + rosa
+660183r3<adjektiv>blekröd:blekröd:blekrött:blekröda:blekröda:!:!:!:
+752480r3<substantiv>blekselleri:blekselleri:blekselleris:bleksellerin:bleksellerins::::
+571584r4<adjektiv>bleksiktig:bleksiktig:bleksiktigt:bleksiktiga:bleksiktiga::::bleksiktige
+849203r3<substantiv>bleksot:bleksot:bleksots:bleksoten:bleksotens::::
+660195r3<adjektiv>blekviolett:blekviolett:blekviolett:blekvioletta:blekvioletta:!:!:!:
+884854r3<adjektiv>blekvit:blekvit:blekvitt:blekvita:blekvita::::::::::::
+733119r3<substantiv>blemma:blemma:blemmas:blemman:blemmans:blemmor:blemmors:blemmorna:blemmornas
+571587r3<adjektiv>blemmig:blemmig:blemmigt:blemmiga:blemmiga::::
+971875r3<egennamn>Blenda:Blenda:Blendas
+588715r4<verb>blessera:blessera:blesserade:blesserat:blesserar:blessera:blesseras:blesserades:blesserats:blesseras:blesserad:blesserat:blesserade:blesserande:
+548395r3<substantiv>blessyr:blessyr:blessyrs:blessyren:blessyrens:blessyrer:blessyrers:blessyrerna:blessyrernas
+550890r4<substantiv>blick:blick:blicks:blicken:blickens:blickar:blickars:blickarna:blickarnas
+546294r5<verb>blicka:blicka:blickade:blickat:blickar:blicka:blickas:blickades:blickats:blickas::::blickande:
+614946r3<substantiv>blickfång:blickfång:blickfångs:blickfånget:blickfångets:blickfång:blickfångs:blickfången:blickfångens
+758958r3<substantiv>blickfält:blickfält:blickfälts:blickfältet:blickfältets:blickfält:blickfälts:blickfälten:blickfältens
+752484r4<substantiv>blickpunkt:blickpunkt:blickpunkts:blickpunkten:blickpunktens:blickpunkter:blickpunkters:blickpunkterna:blickpunkternas
+752489r3<adverb>blickstilla:blickstilla
+563308r3<adjektiv>blid:blid:blitt:blida:blida:blidare:blidast:blidaste:blide
+904460r3<substantiv>blida:blida:blidas:blidan:blidans:blidor:blidors:blidorna:blidornas
+CUSTOM: y n
+546295r5<verb>blidka:blidka:blidkade:blidkat:blidkar:blidka:blidkas:blidkades:blidkats:blidkas:blidkad:blidkat:blidkade:blidkande:
+758964r3<substantiv>blidvinter:blidvinter:blidvinters:blidvintern:blidvinterns:blidvintrar:blidvintrars:blidvintrarna:blidvintrarnas
+614952r3<substantiv>blidväder:blidväder:blidväders:blidvädret:blidvädrets::::
+564538r3<substantiv>blig:blig:bligs:bliget:bligets:!:!:!:!
+CUSTOM: n n y
+614956r4<verb>bliga:bliga:bligade:bligat:bligar:bliga::::::::bligande:
+563320r8<adjektiv>blind:blind:blint:blinda:blinda:!:!:!:blinde::::::::
+CUSTOM: y y blind
+950689r4<substantiv>blindbock:blindbock:blindbocks:blindbocken:blindbockens:blindbockar:blindbockars:blindbockarna:blindbockarnas
+COMPOUND(563320, 560573): blind + bock
+588719r3<verb>blindera:blindera:blinderade:blinderat:blinderar:blindera:::::::::
+790097r3<adjektiv>blinderad:blinderad:blinderat:blinderade:blinderade:!:!:!:
+865467r3<substantiv>blindering:blindering:blinderings:blinderingen:blinderingens:blinderingar:blinderingars:blinderingarna:blinderingarnas
+660199r3<substantiv>blindhet:blindhet:blindhets:blindheten:blindhetens::::
+CUSTOM: y y blindhets +blindhets
+660200r3<substantiv>blindhund:blindhund:blindhunds:blindhunden:blindhundens:blindhundar:blindhundars:blindhundarna:blindhundarnas
+660208r3<substantiv>blindo:blindo:!:!:!:!:!:!:!
+657458r6<verb>blindprova:blindprova:blindprovade:blindprovat:blindp

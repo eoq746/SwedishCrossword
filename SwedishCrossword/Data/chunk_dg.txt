@@ -1,0 +1,623 @@
+as:kikhostan:kikhostans:!:!:!:!
+CUSTOM: y y kikhoste kikhost
+826892r3<substantiv>kikhostepidemi::::::::
+COMPOUND(764255, 610639): kikhosta + epidemi
+826893r3<substantiv>kikhostevaccin::::::::
+COMPOUND(764255, 561728): kikhosta + vaccin
+559760r3<substantiv>kikhål:kikhål:kikhåls:kikhålet:kikhålets:kikhål:kikhåls:kikhålen:kikhålens
+559766r4<verb>kikna:kikna:kiknade:kiknat:kiknar:kikna::::::::kiknande:
+826894r3<substantiv>kikning:kikning:kiknings:kikningen:kikningens:kikningar:kikningars:kikningarna:kikningarnas
+826902r13<substantiv>kikärt:kikärt::::kikärter, kikärtor:kikärters, kikärtors:kikärterna, kikärtorna:kikärternas, kikärtornas
+CUSTOM: y y kikärts
+826909r3<substantiv>kikärtspuré::::::::
+COMPOUND(826902, 737548): kikärt + puré
+551525r5<substantiv>kil:kil:kils:kilen:kilens:kilar:kilars:kilarna:kilarnas
+559767r3<verb>kila:kila:kilade:kilat:kilar:kila:kilas:kilades:kilats:kilas:::::
+792546r3<adjektiv>kilad:kilad:kilat:kilade:kilade:!:!:!:
+CUSTOM: y n
+792547r3<adjektiv>kilformad:kilformad:kilformat:kilformade:kilformade:!:!:!:
+573643r3<adjektiv>kilformig:kilformig:kilformigt:kilformiga:kilformiga::::
+581263r3<adjektiv>kiliastisk:kiliastisk:kiliastiskt:kiliastiska:kiliastiska::::
+826910r3<substantiv>kilklack:kilklack:kilklacks:kilklacken:kilklackens:kilklackar:kilklackars:kilklackarna:kilklackarnas
+559769r3<verb>killa:killa:killade:killat:killar:killa:killas:killades:killats:killas:::::
+559775r6<substantiv>kille:kille:killes:killen:killens:killar:killars:killarna:killarnas
+826918r3<substantiv>killekort:killekort:killekorts:killekortet:killekortets:killekort:killekorts:killekorten:killekortens
+826924r3<substantiv>killelek:killelek:killeleks:killeleken:killelekens:killelekar:killelekars:killelekarna:killelekarnas
+559776r3<substantiv>killerinstinkt:killerinstinkt:killerinstinkts:killerinstinkten:killerinstinktens::::
+961856r3<adjektiv>killig:killig:killigt:killiga:killiga::::::::::::
+CUSTOM: y n
+559780r3<substantiv>killing:killing:killings:killingen:killingens:killingar:killingars:killingarna:killingarnas
+826932r3<substantiv>killkompis:killkompis:killkompis:killkompisen:killkompisens:killkompisar:killkompisars:killkompisarna:killkompisarnas
+826939r3<substantiv>killtidning:killtidning:killtidnings:killtidningen:killtidningens:killtidningar:killtidningars:killtidningarna:killtidningarnas
+826947r3<substantiv>kilning:kilning:kilnings:kilningen:kilningens::::
+559781r5<substantiv>kilo:kilo:kilos:kilot:kilots:kilon, kilo:kilons, kilos:kilona:kilonas
+CUSTOM: y y
+882801r3<substantiv>kilobit:kilobit::::kilobit:::
+CUSTOM: y n n
+882798r4<substantiv>kilobyte:kilobyte:kilobytes:::kilobyte:kilobytes::
+652258r4<substantiv>kilogram:kilogram:kilograms:kilogrammet:kilogrammets:kilogram:kilograms:kilogrammen:kilogrammens
+CUSTOM: y y kilogram
+826951r3<substantiv>kilogramkalori::::::::
+COMPOUND(652258, 610842): kilogram + kalori
+936940r3<substantiv>kilohertz:kilohertz:::::::
+826952r3<substantiv>kilokalori:kilokalori:kilokaloris:kilokalorin:kilokalorins:kilokalorier:kilokaloriers:kilokalorierna:kilokaloriernas
+610309r4<substantiv>kilometer:kilometer:kilometers:kilometern:kilometerns:kilometer:kilometers:kilometerna:kilometernas
+CUSTOM: y y kilometer
+801834r3<adjektiv>kilometerbred:kilometerbred:kilometerbrett:kilometerbreda:kilometerbreda::::
+951830r3<adjektiv>kilometerdjup:kilometerdjup:kilometerdjupt:kilometerdjupa:kilometerdjupa::::::::::::
+744611r3<adjektiv>kilometerlång:kilometerlång:kilometerlångt:kilometerlånga:kilometerlånga:!:!:!:!
+744614r3<adverb>kilometervis:kilometervis
+744615r4<substantiv>kilopris:kilopris:kilopris:kilopriset:kiloprisets:kilopriser:kiloprisers:kilopriserna:kiloprisernas
+COMPOUND(559781, 595932): kilo + pris
+764259r3<substantiv>kiloton:kiloton:::::::
+826960r3<substantiv>kilovara:kilovara:kilovaras:kilovaran:kilovarans:kilovaror:kilovarors:kilovarorna:kilovarornas
+652262r6<substantiv>kilowatt:kilowatt:kilowatts:kilowatten:kilowattens:kilowatt:kilowatts:kilowatten:kilowattens
+CUSTOM: y y kilowatt
+652261r4<substantiv>kilowattimme:kilowattimme:kilowattimmes:kilowattimmen:kilowattimmens:kilowattimmar:kilowattimmars:kilowattimmarna:kilowattimmarnas
+COMPOUND(652262, 599754): kilowatt + timma, timme
+826968r3<substantiv>kilovikt:kilovikt:kilovikts:kilovikten:kiloviktens:kilovikter:kilovikters:kilovikterna:kilovikternas
+643000r3<adverb>kilovis:kilovis
+826976r3<substantiv>kilovolt:kilovolt:kilovolts:kilovolten:kilovoltens::::
+826980r3<substantiv>kilrem:kilrem:kilrems:kilremmen:kilremmens:kilremmar:kilremmars:kilremmarna:kilremmarnas
+559782r4<substantiv>kilskrift:kilskrift:kilskrifts:kilskriften:kilskriftens::::
+CUSTOM: y y kilskrifts
+826988r3<substantiv>kilskriftstecken::::::::
+COMPOUND(559782, 559296): kilskrift + tecken
+826989r3<substantiv>kilsöm:kilsöm:kilsöms:kilsömmen:kilsömmens:kilsömmar:kilsömmars:kilsömmarna:kilsömmarnas
+551527r3<substantiv>kilt:kilt:kilts:kilten:kiltens:kiltar:kiltars:kiltarna:kiltarnas
+CUSTOM: y n
+553782r3<egennamn>Kim:Kim:Kims
+559786r4<substantiv>kimono:kimono:kimonos:kimonon:kimonons:kimonor:kimonors:kimonorna:kimonornas
+CUSTOM: y y kimono
+826997r4<substantiv>kimonoärm:kimonoärm:kimonoärms:kimonoärmen:kimonoärmens:kimonoärmar:kimonoärmars:kimonoärmarna:kimonoärmarnas
+COMPOUND(559786, 552149): kimono + ärm
+554055r3<egennamn>Kina:Kina:Kinas
+CUSTOM: y n Kina
+854081r3<substantiv>kinacensur:kinacensur:kinacensurs:kinacensuren:kinacensurens:kinacensurer:kinacensurers:kinacensurerna:kinacensurernas
+827013r3<substantiv>kinagräs:kinagräs:kinagräs:kinagräset:kinagräsets:kinagräs:kinagräs:kinagräsen:kinagräsens
+827005r3<substantiv>kinakrage:kinakrage:kinakrages:kinakragen:kinakragens:kinakragar:kinakragars:kinakragarna:kinakragarnas
+827019r3<substantiv>kinakrog:kinakrog:kinakrogs:kinakrogen:kinakrogens:kinakrogar:kinakrogars:kinakrogarna:kinakrogarnas
+827028r3<substantiv>kinakål:kinakål:kinakåls:kinakålen:kinakålens::::
+827033r3<substantiv>kinamat:kinamat:kinamats:kinamaten:kinamatens::::
+827039r3<substantiv>kinapuff:kinapuff:kinapuffs:kinapuffen:kinapuffens:kinapuffar:kinapuffars:kinapuffarna:kinapuffarnas
+827049r3<substantiv>kinarestaurang:kinarestaurang:kinarestaurangs:kinarestaurangen:kinarestaurangens:kinarestauranger:kinarestaurangers:kinarestaurangerna:kinarestaurangernas
+764261r3<substantiv>kinaschack:kinaschack:kinaschacks:kinaschacket:kinaschackets::::
+549522r4<substantiv>kind:kind:kinds:kinden:kindens:kinder:kinders:kinderna:kindernas
+CUSTOM: y y kind
+728145r3<egennamn>Kinda:Kinda:Kindas
+725967r4<substantiv>kindben:kindben:kindbens:kindbenet:kindbenets:kindben:kindbens:kindbenen:kindbenens
+COMPOUND(549522, 552233): kind + ben
+955248r3<substantiv>kindergarten:kindergarten:kindergartens::::::
+652263r3<substantiv>kindknota:kindknota:kindknotas:kindknotan:kindknotans:kindknotor:kindknotors:kindknotorna:kindknotornas
+824117r3<substantiv>kindskägg:kindskägg:kindskäggs:kindskägget:kindskäggets:kindskägg:kindskäggs:kindskäggen:kindskäggens
+581266r3<adjektiv>kinematisk:kinematisk:kinematiskt:kinematiska:kinematiska::::
+827058r3<substantiv>kinematograf:kinematograf:kinematografs:kinematografen:kinematografens:kinematografer:kinematografers:kinematograferna:kinematografernas
+827066r3<substantiv>kinematografi:kinematografi:kinematografis:kinematografin:kinematografins::::
+581269r3<adjektiv>kinematografisk:kinematografisk:kinematografiskt:kinematografiska:kinematografiska::::
+559787r5<substantiv>kines:kines:kines:kinesen:kinesens:kineser:kinesers:kineserna:kinesernas
+CUSTOM: y y kines
+827070r3<verb>kinesa:kinesa:kinesade:kinesat:kinesar:kinesa:kinesas:kinesades:kinesats:kinesas::::kinesande:
+827078r3<substantiv>kineseri:kineseri:kineseris:kineseriet:kineseriets:kineserier:kineseriers:kineserierna:kineseriernas
+568760r4<adjektiv>kinesisk:kinesisk:kinesiskt:kinesiska:kinesiska:!:!:!:kinesiske
+594454r3<substantiv>kinesiska:kinesiska:kinesiskas:kinesiskan:kinesiskans:kinesiskor:kinesiskors:kinesiskorna:kinesiskornas
+827086r4<substantiv>kineskrog:kineskrog:kineskrogs:kineskrogen:kineskrogens:kineskrogar:kineskrogars:kineskrogarna:kineskrogarnas
+COMPOUND(559787, 551624): kines + krog
+581272r3<adjektiv>kinestetisk:kinestetisk:kinestetiskt:kinestetiska:kinestetiska::::
+827094r3<substantiv>kinetik:kinetik:kinetiks:kinetiken:kinetikens::::
+581275r3<adjektiv>kinetisk:kinetisk:kinetiskt:kinetiska:kinetiska::::
+904636r3<substantiv>kinin:kinin:kinins:kininet:kininets:!:!:!:!
+CUSTOM: y n
+895131r3<verb>kinka:kinka:kinkade:kinkat:kinkar:kinka:kinkas:kinkades:kinkats:kinkas:kinkad:kinkat:kinkade:kinkande:!
+CUSTOM: y n y
+573646r4<adjektiv>kinkig:kinkig:kinkigt:kinkiga:kinkiga:kinkigare:kinkigast:kinkigaste:kinkige
+946808r3<adjektiv>kinky:kinky:::::::::::::::
+943221r3<egennamn>Kinna:Kinna:Kinnas
+855213r5<egennamn>Kinnevik:Kinnevik:Kinneviks
+CUSTOM: y n Kinnevik
+898340r3<egennamn>Kinshasa:Kinshasa:Kinshasas
+549524r8<substantiv>kiosk:kiosk:kiosks:kiosken:kioskens:kiosker:kioskers:kioskerna:kioskernas
+CUSTOM: y y kiosk
+727594r4<substantiv>kioskverksamhet:kioskverksamhet:kioskverksamhets:kioskverksamheten:kioskverksamhetens:kioskverksamheter:kioskverksamheters:kioskverksamheterna:kioskverksamheternas
+COMPOUND(549524, 604113): kiosk + verksamhet
+764266r3<substantiv>kioskvältare:kioskvältare:kioskvältares:kioskvältaren:kioskvältarens:kioskvältare:kioskvältares:kioskvältarna:kioskvältarnas
+764273r3<substantiv>kioskägare::::::::
+COMPOUND(549524, 615532): kiosk + ägare
+923593r3<substantiv>kip:kip:kips:kipen:kipens:kipar:kipars:kiparna:kiparnas
+CUSTOM: n n y
+547095r5<verb>kippa:kippa:kippade:kippat:kippar:kippa:!:!:!:!::::kippande:
+801456r3<adjektiv>kippskodd:kippskodd:kippskott:kippskodda:kippskodda::::
+559788r3<substantiv>kir:kir:kirs:kiren:kirens::::
+CUSTOM: y n
+731597r3<egennamn>Kirchhoff:Kirchhoff:Kirchhoffs
+971583r3<egennamn>Kirchsteiger:Kirchsteiger:Kirchsteigers
+581276r3<adjektiv>kirgisisk:kirgisisk:kirgisiskt:kirgisiska:kirgisiska::::
+827098r5<substantiv>kirgiz:kirgiz:kirgiz:kirgizen:kirgizens:kirgizer:kirgizers:kirgizerna:kirgizernas
+581278r4<adjektiv>kirgizisk:kirgizisk:kirgiziskt:kirgiziska:kirgiziska:!:!:!:kirgiziske
+827107r3<substantiv>kirgiziska:kirgiziska:kirgiziskas:kirgiziskan:kirgiziskans:kirgiziskor:kirgiziskors:kirgiziskorna:kirgiziskornas
+554056r3<egennamn>Kirgizistan:Kirgizistan:Kirgizistans
+CUSTOM: y n Kirgizistan
+827115r3<substantiv>kirgizistanier:kirgizistanier:kirgizistaniers:kirgizistaniern:kirgizistanierns:kirgizistanier:kirgizistaniers:kirgizistanierna:kirgizistaniernas
+827121r3<adjektiv>kirgizistansk:kirgizistansk:kirgizistanskt:kirgizistanska:kirgizistanska::::kirgizistanske
+581280r3<adjektiv>kiribatisk:kiribatisk:kiribatiskt:kiribatiska:kiribatiska::::
+827125r3<substantiv>kiropraktik:kiropraktik:kiropraktiks:kiropraktiken:kiropraktikens::::
+827129r3<substantiv>kiropraktiker:kiropraktiker:kiropraktikers:kiropraktikern:kiropraktikerns:kiropraktiker:kiropraktikers:kiropraktikerna:kiropraktikernas
+581282r3<adjektiv>kiropraktisk:kiropraktisk:kiropraktiskt:kiropraktiska:kiropraktiska::::
+724064r3<substantiv>kiropraktor:kiropraktor:kiropraktors:kiropraktorn:kiropraktorns:kiropraktorer:kiropraktorers:kiropraktorerna:kiropraktorernas
+906444r3<verb>kirra:kirra:kirrade:kirrat:kirrar:kirra:kirras:kirrades:kirrats:kirras:kirrad:kirrat:kirrade:kirrande:!
+CUSTOM: y n y !kirras !kirrades !kirrats !kirrad !kirrande
+827135r3<substantiv>kirskål:kirskål:kirskåls:kirskålen:kirskålens::::
+724259r3<egennamn>Kiruna:Kiruna:Kirunas
+CUSTOM: y n Kiruna
+549525r9<substantiv>kirurg:kirurg:kirurgs:kirurgen:kirurgens:kirurger:kirurgers:kirurgerna:kirurgernas
+CUSTOM: y y kirurg
+951835r4<substantiv>kirurgakut:kirurgakut:kirurgakuts:kirurgakuten:kirurgakutens:kirurgakuter:kirurgakuters:kirurgakuterna:kirurgakuternas
+COMPOUND(549525, 600971): kirurg + akut
+652266r6<substantiv>kirurgi:kirurgi:kirurgis:kirurgin:kirurgins:!:!:!:!
+568761r3<adjektiv>kirurgisk:kirurgisk:kirurgiskt:kirurgiska:kirurgiska::::
+744625r4<substantiv>kirurgklinik:kirurgklinik:kirurgkliniks:kirurgkliniken:kirurgklinikens:kirurgkliniker:kirurgklinikers:kirurgklinikerna:kirurgklinikernas
+COMPOUND(549525, 549538): kirurg + klinik
+744624r4<substantiv>kirurgmottagning:kirurgmottagning:kirurgmottagnings:kirurgmottagningen:kirurgmottagningens:kirurgmottagningar:kirurgmottagningars:kirurgmottagningarna:kirurgmottagningarnas
+COMPOUND(549525, 597293): kirurg + mottagning
+944815r4<substantiv>kirurgtape:kirurgtape:kirurgtapes:kirurgtapen:kirurgtapens:kirurgtaper:kirurgtapers:kirurgtaperna:kirurgtapernas
+COMPOUND(549525, 559448): kirurg + tape
+559798r3<substantiv>kis:kis:kis:kisen:kisens:kisar:kisars:kisarna:kisarnas
+CUSTOM: n n y
+935425r3<substantiv>kis:kis:kis:kiset:kisets::::
+559791r3<substantiv>kis:kis:kis:kisen:kisens:kiser:kisers:kiserna:kisernas
+CUSTOM: n n y
+547099r4<verb>kisa:kisa:kisade:kisat:kisar:kisa::::::::kisande:
+649180r5<substantiv>kisel:kisel:kisels:kiseln, kislet:kiselns, kislets:!:!:!:!
+CUSTOM: y y kisel
+981542r3<substantiv>kiselalg:kiselalg:kiselalgs:kiselalgen:kiselalgens:kiselalger:kiselalgers:kiselalgerna:kiselalgernas
+792550r3<adjektiv>kiselartad:kiselartad:kiselartat:kiselartade:kiselartade:!:!:!:
+573647r3<adjektiv>kiselhaltig:kiselhaltig:kiselhaltigt:kiselhaltiga:kiselhaltiga::::
+841307r3<substantiv>kiselsten:kiselsten:kiselstens:kiselstenen:kiselstenens:kiselstenar:kiselstenars:kiselstenarna:kiselstenarnas
+951844r4<substantiv>kiselsyra:kiselsyra:kiselsyras:kiselsyran:kiselsyrans:kiselsyror:kiselsyrors:kiselsyrorna:kiselsyrornas
+COMPOUND(649180, 624847): kisel + syra
+792553r3<adjektiv>kiselsyrad:kiselsyrad:kiselsyrat:kiselsyrade:kiselsyrade:!:!:!:
+563895r3<adjektiv>kiselsyrafri:kiselsyrafri:kiselsyrafritt:kiselsyrafria:kiselsyrafria::::
+573650r3<adjektiv>kiselsyrahaltig:kiselsyrahaltig:kiselsyrahaltigt:kiselsyrahaltiga:kiselsyrahaltiga::::
+573653r3<adjektiv>kishaltig:kishaltig:kishaltigt:kishaltiga:kishaltiga::::
+556919r4<substantiv>kiss:kiss:kiss:kisset:kissets:!:!:!:!
+CUSTOM: y n
+547100r4<verb>kissa:kissa:kissade:kissat:kissar:kissa:kissas:kissades:kissats:kissas:::::
+692973r3<substantiv>kissande:kissande:kissandes:kissandet:kissandets::::
+827141r3<substantiv>kisse:kisse:kisses:kissen:kissens:kissar:kissars:kissarna:kissarnas
+827148r3<substantiv>kissekatt:kissekatt:kissekatts:kissekatten:kissekattens:kissekatter:kissekatters:kissekatterna:kissekatternas
+827156r3<substantiv>kissemiss:kissemiss:kissemiss:kissemissen:kissemissens:kissemissar:kissemissars:kissemissarna:kissemissarnas
+573656r4<adjektiv>kissnödig:kissnödig:kissnödigt:kissnödiga:kissnödiga:kissnödigare:kissnödigast:kissnödigaste:kissnödige
+827178r3<substantiv>kisspaus:kisspaus:kisspaus:kisspausen:kisspausens:kisspauser:kisspausers:kisspauserna:kisspausernas
+827167r4<substantiv>kissprov:kissprov:kissprovs:kissprovet:kissprovets:kissprover, kissprov:kissprovers, kissprovs:kissproverna, kissproven:kissprovernas, kissprovens
+COMPOUND(556919, 621658): kiss + prov
+594455r6<substantiv>kista:kista:kistas:kistan:kistans:kistor:kistors:kistorna:kistornas
+CUSTOM: y y
+827186r3<substantiv>kistbotten:kistbotten:kistbottens:kistbottnen:kistbottnens:kistbottnar:kistbottnars:kistbottnarna:kistbottnarnas
+981550r3<substantiv>kistebrev:kistebrev:kistebrevs:kistebrevet:kistebrevets:kistebrev:kistebrevs:kistebreven:kistebrevens
+744626r4<substantiv>kistlock:kistlock:kistlocks:kistlocket:kistlockets:kistlock:kistlocks:kistlocken:kistlockens
+COMPOUND(594455, 554985): kista + lock
+799710r4<adjektiv>kisögd:kisögd:kisögt:kisögda:kisögda::::kisögde
+935700r4<substantiv>kit:kit:kits::::::
+DEFINITION 1: Från engelskan: utrustning/sats
+CUSTOM: n n y
+744632r3<substantiv>kitsch:kitsch:kitschs:kitschen:kitschens::::
+573659r4<adjektiv>kitschig:kitschig:kitschigt:kitschiga:kitschiga:kitschigare:kitschigast:kitschigaste:
+566403r4<adjektiv>kitslig:kitslig:kitsligt:kitsliga:kitsliga:kitsligare:kitsligast:kitsligaste:kitslige
+652271r3<substantiv>kitslighet:kitslighet:kitslighets:kitsligheten:kitslighetens:!:!:!:!
+CUSTOM: y y kitslighets
+628235r5<substantiv>kitt:kitt:kitts:kittet:kittets::::
+CUSTOM: y n
+652274r4<verb>kitta:kitta:kittade:kittat:kittar:kitta:kittas:kittades:kittats:kittas:kittad:kittat:kittade:kittande:
+652272r4<substantiv>kittel:kittel:kittels:kitteln:kittelns:kittlar:kittlars:kittlarna:kittlarnas
+827203r3<substantiv>kittelflickare:kittelflickare:kittelflickares:kittelflickaren:kittelflickarens:kittelflickare:kittelflickares:kittelflickarna:kittelflickarnas
+792556r3<adjektiv>kittelformad:kittelformad:kittelformat:kittelformade:kittelformade:!:!:!:
+573662r3<adjektiv>kittelformig:kittelformig:kittelformigt:kittelformiga:kittelformiga::::
+827209r3<substantiv>kittfals:kittfals:kittfals:kittfalsen:kittfalsens:kittfalsar:kittfalsars:kittfalsarna:kittfalsarnas
+827216r3<substantiv>kittkniv:kittkniv:kittknivs:kittkniven:kittknivens:kittknivar:kittknivars:kittknivarna:kittknivarnas
+547101r5<verb>kittla:kittla:kittlade:kittlat:kittlar:kittla:kittlas:kittlades:kittlats:kittlas:kittlad:kittlat:kittlade:kittlande:
+725982r3<substantiv>kittlare:kittlare:kittlares:kittlaren:kittlarens:kittlare:kittlares:kittlarna:kittlarnas
+566404r3<adjektiv>kittlig:kittlig:kittligt:kittliga:kittliga::::
+827224r3<substantiv>kittlighet:kittlighet:kittlighets:kittligheten:kittlighetens::::
+827228r3<substantiv>kittling:kittling:kittlings:kittlingen:kittlingens:kittlingar:kittlingars:kittlingarna:kittlingarnas
+827236r4<substantiv>kittost:kittost:kittosts:kittosten:kittostens:kittostar:kittostars:kittostarna:kittostarnas
+COMPOUND(628235, 555054): kitt + ost
+594456r3<substantiv>kittspruta:kittspruta:kittsprutas:kittsprutan:kittsprutans:kittsprutor:kittsprutors:kittsprutorna:kittsprutornas
+559802r3<substantiv>kiv:kiv:kivs:kivet:kivets::::
+559805r4<verb>kiva:kiva:kivade:kivat:kivar:kiva::::::::kivande:
+573665r3<adjektiv>kivaktig:kivaktig:kivaktigt:kivaktiga:kivaktiga::::
+591640r3<deponens>kivas:kivas:kivades:kivats:kivas:kivas
+827245r3<substantiv>kivi:kivi:kivis:kivin:kivins:kivier:kiviers:kivierna:kiviernas
+CUSTOM: y n
+652278r8<substantiv>kiwi:kiwi:kiwis:kiwin:kiwins:kiwier:kiwiers:kiwierna:kiwiernas
+CUSTOM: y n
+652282r3<substantiv>kiwifrukt:kiwifrukt:kiwifrukts:kiwifrukten:kiwifruktens:kiwifrukter:kiwifrukters:kiwifrukterna:kiwifrukternas
+827253r3<substantiv>kivifågel:kivifågel:kivifågels:kivifågeln:kivifågelns:kivifåglar:kivifåglars:kivifåglarna:kivifåglarnas
+894995r4<egennamn>Kivik:Kivik:Kiviks
+CUSTOM: y n Kiviks
+894997r3<substantiv>Kiviksbo::::::::
+COMPOUND(894995, 855482): Kivik + bo
+923577r3<substantiv>kix:kix:kix:kixen:kixens:kixar:kixars:kixarna:kixarnas
+CUSTOM: n n y
+554669r3<egennamn>Kjell:Kjell:Kjells
+925439r5<egennamn>Kjellvander:Kjellvander:Kjellvanders
+551528r13<substantiv>kjol:kjol:kjols:kjolen:kjolens:kjolar:kjolars:kjolarna:kjolarnas
+CUSTOM: y y kjol
+827261r3<substantiv>kjolficka::::::::
+COMPOUND(551528, 561662): kjol + ficka
+827262r4<substantiv>kjolfåll:kjolfåll:kjolfålls:kjolfållen:kjolfållens:kjolfållar:kjolfållars:kjolfållarna:kjolfållarnas
+COMPOUND(551528, 551202): kjol + fåll
+827263r3<substantiv>kjollinning::::::::
+COMPOUND(551528, 642216): kjol + linning
+827264r4<substantiv>kjoltyg:kjoltyg:kjoltygs:kjoltyget:kjoltygets:kjoltyger, kjoltyg:kjoltygers, kjoltygs:kjoltygerna, kjoltygen:kjoltygernas, kjoltygens
+COMPOUND(551528, 600498): kjol + tyg
+827274r4<substantiv>kjolvidd:kjolvidd:kjolvidds:kjolvidden:kjolviddens:kjolvidder:kjolvidders:kjolvidderna:kjolviddernas
+COMPOUND(551528, 625007): kjol + vidd
+652283r3<substantiv>kjortel:kjortel:kjortels:kjorteln:kjortelns:kjortlar:kjortlars:kjortlarna:kjortlarnas
+827275r3<substantiv>kjortelfåll:kjortelfåll:kjortelfålls:kjortelfållen:kjortelfållens:kjortelfållar:kjortelfållars:kjortelfållarna:kjortelfållarnas
+635912r5<substantiv>kjusa:kjusa:kjusas:kjusan:kjusans:kjusor:kjusors:kjusorna:kjusornas
+CUSTOM: y n
+938122r3<substantiv>klabb:klabb:klabbs:klabbet:klabbets::::
+CUSTOM: y n
+652285r5<substantiv>klabbe, klabb:klabb, klabbe:klabbs:klabben:klabbens:klabbar:klabbars:klabbarna:klabbarnas
+827283r3<substantiv>klabbföre:klabbföre:klabbföres:klabbföret:klabbförets:klabbfören:klabbförens:klabbförena:klabbförenas
+573668r3<adjektiv>klabbig:klabbig:klabbigt:klabbiga:klabbiga::::
+827291r3<substantiv>klabbsnö:klabbsnö:klabbsnös:klabbsnön:klabbsnöns::::
+827295r3<substantiv>klabbved:klabbved:klabbveds:klabbveden:klabbvedens::::
+551530r8<substantiv>klack:klack:klacks:klacken:klackens:klackar:klackars:klackarna:klackarnas
+CUSTOM: y y klack
+652293r4<verb>klacka:klacka:klackade:klackat:klackar:klacka:klackas:klackades:klackats:klackas:klackad:klackat:klackade:klackande:
+827304r4<substantiv>klackbar:klackbar:klackbars:klackbaren:klackbarens:klackbarer:klackbarers:klackbarerna:klackbarernas
+COMPOUND(551530, 557860): klack + bar
+827312r4<substantiv>klackjärn:klackjärn:klackjärns:klackjärnet:klackjärnets:klackjärn:klackjärns:klackjärnen:klackjärnens
+COMPOUND(551530, 552537): klack + järn
+564947r3<adjektiv>klacklös:klacklös:klacklöst:klacklösa:klacklösa::::
+827318r4<substantiv>klackning:klackning:klacknings:klackningen:klackningens:klackningar:klackningars:klackningarna:klackningarnas
+CUSTOM: y y klacknings
+827326r3<substantiv>klackningsmaskin::::::::
+COMPOUND(827318, 550005): klackning + maskin
+827327r4<substantiv>klackring:klackring:klackrings:klackringen:klackringens:klackringar:klackringars:klackringarna:klackringarnas
+COMPOUND(551530, 597520): klack + ring
+551532r3<substantiv>klackspark:klackspark:klacksparks:klacksparken:klacksparkens:klacksparkar:klacksparkars:klacksparkarna:klacksparkarnas
+552548r7<substantiv>kladd:kladd:kladds:kladdet:kladdets::::
+827335r5<substantiv>kladd:kladd:kladds:kladden:kladdens:kladdar:kladdars:kladdarna:kladdarnas
+CUSTOM: y n
+547103r5<verb>kladda:kladda:kladdade:kladdat:kladdar:kladda:kladdas:kladdades:kladdats:kladdas::::kladdande:
+827339r4<substantiv>kladdbok:kladdbok:kladdboks:kladdboken:kladdbokens:kladdböcker:kladdböckers:kladdböckerna:kladdböckernas
+COMPOUND(827335, 555346): kladd + bok
+573671r5<adjektiv>kladdig:kladdig:kladdigt:kladdiga:kladdiga:kladdigare:kladdigast:kladdigaste:kladdige
+827348r3<substantiv>kladdighet:kladdighet:kladdighets:kladdigheten:kladdighetens::::
+764275r3<substantiv>kladdkaka:kladdkaka:kladdkakas:kladdkakan:kladdkakans:kladdkakor:kladdkakors:kladdkakorna:kladdkakornas
+827352r4<substantiv>kladdpapper:kladdpapper:kladdpappers:kladdpapperet, kladdpappret:kladdpapperets, kladdpapprets:kladdpapper:kladdpappers:kladdpapperna, kladdpappren, kladdpapperen:kladdpappernas, kladdpapprens, kladdpapperens
+COMPOUND(827335, 556527): kladd + papper
+551540r7<substantiv>klaff:klaff:klaffs:klaffen:klaffens:klaffar:klaffars:klaffarna:klaffarnas
+CUSTOM: y y klaff
+652294r4<verb>klaffa:klaffa:klaffade:klaffat:klaffar:klaffa:klaffas:klaffades:klaffats:klaffas::::klaffande:
+764284r4<substantiv>klaffbord:klaffbord:klaffbords:klaffbordet:klaffbordets:klaffbord:klaffbords:klaffborden:klaffbordens
+COMPOUND(551540, 552265): klaff + bord
+744641r4<substantiv>klaffbro:klaffbro:klaffbros:klaffbron:klaffbrons:klaffbroar:klaffbroars:klaffbroarna:klaffbroarnas
+COMPOUND(551540, 557960): klaff + bro
+827368r3<substantiv>klaffel:klaffel:klaffels:klaffelet:klaffelets:klaffel:klaffels:klaffelen:klaffelens
+827374r3<substantiv>klafs:klafs:klafs:klafset:klafsets::::
+744637r4<verb>klafsa:klafsa:klafsade:klafsat:klafsar:klafsa:klafsas:klafsades:klafsats:klafsas::::klafsande:
+547104r5<verb>klaga:klaga:klagade:klagat:klagar:klaga::klagades:klagats:klagas::::klagande:
+BASEWORDS: klago
+CUSTOM: y y klago
+618563r3<substantiv>klagan:!:!:klagan:klagans:!:!:!:!
+786756r3<substantiv>klagande:klagande:klagandes:klaganden:klagandens:klaganden:klagandens:klagandena:klagandenas
+692975r3<substantiv>klagande:klagande:klagandes:klagandet:klagandets::::
+652295r3<substantiv>klagolåt:klagolåt:klagolåts:klagolåten:klagolåtens::::
+850730r3<substantiv>klagomur:klagomur:klagomurs:klagomuren:klagomurens:klagomurar:klagomurars:klagomurarna:klagomurarnas
+618565r4<substantiv>klagomål:klagomål:klagomåls:klagomålet:klagomålets:klagomål:klagomåls:klagomålen:klagomålens
+CUSTOM: y y klagomåls
+773766r4<adjektiv>klagomålsansvarig:klagomålsansvarig:klagomålsansvarigt:klagomålsansvariga:klagomålsansvariga:!:!:!:klagomålsansvarige
+COMPOUND(618565, 564677): klagomål + ansvarig
+850738r3<substantiv>klagorop:klagorop:klagorops:klagoropet:klagoropets:klagorop:klagorops:klagoropen:klagoropens
+652300r3<substantiv>klagoskrivelse:klagoskrivelse:klagoskrivelses:klagoskrivelsen:klagoskrivelsens:klagoskrivelser:klagoskrivelsers:klagoskrivelserna:klagoskrivelsernas
+CUSTOM: y y klagoskrivelse
+652301r3<substantiv>klagosång:klagosång:klagosångs:klagosången:klagosångens:klagosånger:klagosångers:klagosångerna:klagosångernas
+652305r3<substantiv>klammer:klammer:klammers:klammern:klammerns:klamrar:klamrars:klamrarna:klamrarnas
+652306r4<substantiv>klammeri:klammeri:klammeris:klammeriet:klammeriets:klammerier:klammeriers:klammerierna:klammeriernas
+827381r3<substantiv>klammerparentes:klammerparentes:klammerparentes:klammerparentesen:klammerparentesens:klammerparenteser:klammerparentesers:klammerparenteserna:klammerparentesernas
+685285r3<substantiv>klamning:klamning:klamnings:klamningen:klamningens:klamningar:klamningars:klamningarna:klamningarnas
+CUSTOM: y y klamnings
+827388r3<substantiv>klamp:klamp:klamps:klampet:klampets::::
+652307r5<verb>klampa:klampa:klampade:klampat:klampar:klampa:klampas:klampades:klampats:klampas::::klampande:
+827392r3<substantiv>klampare:klampare:klampares:klamparen:klamparens:klampare:klampares:klamparna:klamparnas
+652308r4<verb>klamra:klamra:klamrade:klamrat:klamrar:klamra:klamras:klamrades:klamrats:klamras:klamrad:klamrat:klamrade:klamrande:
+827406r3<substantiv>klamring:klamring:klamrings:klamringen:klamringens::::
+744650r3<substantiv>klamydia:klamydia:klamydias:klamydian:klamydians:!:!:!:!
+CUSTOM: y y klamydia
+549526r14<substantiv>klan:klan:klans:klanen:klanens:klaner:klaners:klanerna:klanernas
+CUSTOM: y n
+652309r3<substantiv>klander:klander:klanders:klandret:klandrets:!:!:!:!
+563898r3<adjektiv>klanderfri:klanderfri:klanderfritt:klanderfria:klanderfria::::
+637206r3<adjektiv>klandervärd:klandervärd:klandervärt:klandervärda:klandervärda::::
+547105r5<verb>klandra:klandra:klandrade:klandrat:klandrar:klandra:klandras:klandrades:klandrats:klandras:klandrad:klandrat:klandrade:klandrande:
+827410r3<substantiv>klandrare:klandrare:klandrares:klandraren:klandrarens:klandrare:klandrares:klandrarna:klandrarnas
+549528r8<substantiv>klang:klang:klangs:klangen:klangens:klanger:klangers:klangerna:klangernas
+CUSTOM: y y klang
+585004r3<adjektiv>klangfull:klangfull:klangfullt:klangfulla:klangfulla::::
+744654r5<substantiv>klangfärg:klangfärg:klangfärgs:klangfärgen:klangfärgens:klangfärger:klangfärgers:klangfärgerna:klangfärgernas
+COMPOUND(549528, 549002): klang + färg
+CUSTOM: y y klangfärgs
+744655r4<substantiv>klangfärgskontroll:klangfärgskontroll:klangfärgskontrolls:klangfärgskontrollen:klangfärgskontrollens:klangfärgskontroller:klangfärgskontrollers:klangfärgskontrollerna:klangfärgskontrollernas
+COMPOUND(744654, 549704): klangfärg + kontroll
+CUSTOM: y n
+566405r3<adjektiv>klanglig:klanglig:klangligt:klangliga:klangliga::::
+564950r3<adjektiv>klanglös:klanglös:klanglöst:klanglösa:klanglösa::::
+827417r3<adjektiv>klangrik:klangrik:klangrikt:klangrika:klangrika:klangrikare:klangrikast:klangrikaste:
+827423r3<substantiv>klanhövding:klanhövding:klanhövdings:klanhövdingen:klanhövdingens:klanhövdingar:klanhövdingars:klanhövdingarna:klanhövdingarnas
+763253r3<verb>klanka:klanka:klankade:klankat:klankar:klanka:klankas:klankades:klankats:klankas:::::
+827431r3<substantiv>klanledare:klanledare:klanledares:klanledaren:klanledarens:klanledare:klanledares:klanledarna:klanledarnas
+915673r4<substantiv>klanmedlem:klanmedlem:klanmedlems:klanmedlemmen:klanmedlemmens:klanmedlemmar:klanmedlemmars:klanmedlemmarna:klanmedlemmarnas
+COMPOUND(549526, 621189): klan + medlem
+827437r3<substantiv>klanmönster:klanmönster:klanmönsters:klanmönstret:klanmönstrets:klanmönster:klanmönsters:klanmönstren:klanmönstrens
+915683r4<substantiv>klanområde:klanområde:klanområdes:klanområdet:klanområdets:klanområden:klanområdens:klanområdena:klanområdenas
+COMPOUND(549526, 612761): klan + område
+915693r4<substantiv>klansamhälle:klansamhälle:klansamhälles:klansamhället:klansamhällets:klansamhällen:klansamhällens:klansamhällena:klansamhällenas
+COMPOUND(549526, 612788): klan + samhälle
+915703r4<substantiv>klanstrid:klanstrid:klanstrids:klanstriden:klanstridens:klanstrider:klanstriders:klanstriderna:klanstridernas
+COMPOUND(549526, 619729): klan + strid
+635469r5<adjektiv>klanstyrd:klanstyrd:klanstyrt:klanstyrda:klanstyrda::::::::::::
+827443r3<substantiv>klansystem:klansystem:klansystems:klansystemet:klansystemets:klansystem:klansystems:klansystemen:klansystemens
+733534r4<substantiv>klant:klant:klants:klanten:klantens:klantar:klantars:klantarna:klantarnas
+CUSTOM: y n
+692977r3<verb>klanta:klanta:klantade:klantat:klantar:klanta:!:!:!:!:!:!:!::
+827449r3<substantiv>klanteri:klanteri:klanteris:klanteriet:klanteriets::::
+573672r4<adjektiv>klantig:klantig:klantigt:klantiga:klantiga:klantigare:klantigast:klantigaste:klantige
+827453r3<substantiv>klantighet:klantighet:klantighets:klantigheten:klantighetens:klantigheter:klantigheters:klantigheterna:klantigheternas
+733541r4<substantiv>klantskalle:klantskalle:klantskalles:klantskallen:klantskallens:klantskallar:klantskallars:klantskallarna:klantskallarnas
+COMPOUND(733534, 599968): klant + skalle
+551542r4<substantiv>klapp:klapp:klapps:klappen:klappens:klappar:klappars:klapparna:klapparnas
+CUSTOM: y y klapp +klapps
+547106r4<verb>klappa:klappa:klappade:klappat:klappar:klappa:klappas:klappades:klappats:klappas:klappad:klappat:klappade::
+692979r3<substantiv>klappande:klappande:klappandes:klappandet:klappandets::::
+827461r3<substantiv>klappare:klappare:klappares:klapparen:klapparens:klappare:klappares:klapparna:klapparnas
+827465r3<substantiv>klappbrygga:klappbrygga:klappbryggas:klappbryggan:klappbryggans:klappbryggor:klappbryggors:klappbryggorna:klappbryggornas
+827473r3<substantiv>klappbräda:klappbräda:klappbrädas:klappbrädan:klappbrädans:klappbrädor:klappbrädors:klappbrädorna:klappbrädornas
+827481r3<substantiv>klappbräde:klappbräde:klappbrädes:klappbrädet:klappbrädets:klappbräden:klappbrädens:klappbrädena:klappbrädenas
+827517r3<substantiv>klapper:klapper:klappers:klappret:klapprets::::
+827489r4<substantiv>klappersten:klappersten:klapperstens:klapperstenen:klapperstenens:klapperstenar:klapperstenars:klapperstenarna:klapperstenarnas
+CUSTOM: y y klapperstens
+827497r4<substantiv>klapperstensvall:klapperstensvall:klapperstensvalls:klapperstensvallen:klapperstensvallens:klapperstensvallar:klapperstensvallars:klapperstensvallarna:klapperstensvallarnas
+COMPOUND(827489, 552083): klappersten + vall
+827505r3<substantiv>klappgröt:klappgröt:klappgröts:klappgröten:klappgrötens::::
+827509r3<substantiv>klapphingst:klapphingst:klapphingsts:klapphingsten:klapphingstens:klapphingstar:klapphingstars:klapphingstarna:klapphingstarnas
+744656r3<substantiv>klappjakt:klappjakt:klappjakts:klappjakten:klappjaktens:klappjakter:klappjakters:klappjakterna:klappjakternas
+737490r3<verb>klappra:klappra:klapprade:klapprat:klapprar:klappra:klappras:klapprades:klapprats:klappras::::klapprande:
+827521r3<substantiv>klappstol:klappstol:klappstols:klappstolen:klappstolens:klappstolar:klappstolars:klappstolarna:klappstolarnas
+827529r4<substantiv>klappträ:klappträ:klappträs:klappträet, klappträt:klappträets, klappträts:klappträn:klappträns:klappträna:klapptränas
+COMPOUND(551542, 632758): klapp + trä
+563110r8<adjektiv>klar:klar:klart:klara:klara:klarare:klarast:klaraste:klare::::::::
+CUSTOM: y y klar
+547107r4<verb>klara:klara:klarade:klarat:klarar:klara:klaras:klarades:klarats:klaras:::::
+553784r3<egennamn>Klara:Klara:Klaras
+563330r3<adjektiv>klarblå:klarblå:klarblått:klarblåa:klarblåa:!:!:!:
+652312r3<adjektiv>klarbrun:klarbrun:klarbrunt:klarbruna:klarbruna:!:!:!:
+652315r4<substantiv>klarbär:klarbär:klarbärs:klarbäret:klarbärets:klarbär:klarbärs:klarbären:klarbärens
+CUSTOM: y y klarbärs
+827539r4<substantiv>klarbärssaft:klarbärssaft:klarbärssafts:klarbärssaften:klarbärssaftens:klarbärssafter:klarbärssafters:klarbärssafterna:klarbärssafternas
+COMPOUND(652315, 550439): klarbär + saft
+587026r4<verb>klarera:klarera:klarerade:klarerat:klarerar:klarera:klareras:klarerades:klarerats:klareras:klarerad:klarerat:klarerade::
+615333r3<substantiv>klarerare:klarerare:klarerares:klareraren:klarerarens:klarerare:klarerares:klarerarna:klarerarnas
+CUSTOM: y y klarerar
+822402r3<substantiv>klarering:klarering:klarerings:klareringen:klareringens:klareringar:klareringars:klareringarna:klareringarnas
+652321r3<adjektiv>klargrön:klargrön:klargrönt:klargröna:klargröna:!:!:!:
+652324r3<adjektiv>klargul:klargul:klargult:klargula:klargula:!:!:!:
+652327r5<verb>klargöra:klargöra:klargjorde:klargjort:klargör:klargör:klargöras:klargjordes:klargjorts:klargörs, klargöres:klargjord:klargjort:klargjorda:klargörande:
+COMPOUND(563110, 555241): klar + göra
+692982r3<substantiv>klargörande:klargörande:klargörandes:klargörandet:klargörandets:klargöranden:klargörandens:klargörandena:klargörandenas
+827548r3<substantiv>klargöring:klargöring:klargörings:klargöringen:klargöringens:klargöringar:klargöringars:klargöringarna:klargöringarnas
+652336r4<substantiv>klarhet:klarhet:klarhets:klarheten:klarhetens:klarheter:klarheters:klarheterna:klarheternas
+CUSTOM: y y klarhets +klarhets
+646185r3<substantiv>klarinett:klarinett:klarinetts:klarinetten:klarinettens:klarinetter:klarinetters:klarinetterna:klarinetternas
+CUSTOM: y y klarinett
+744664r3<substantiv>klarinettist:klarinettist:klarinettists:klarinettisten:klarinettistens:klarinettister:klarinettisters:klarinettisterna:klarinettisternas
+652337r4<verb>klarlägga:klarlägga:klarlade:klarlagt:klarlägger:klarlägg:klarläggas:klarlades:klarlagts:klarläggs, klarlägges:klarlagd:klarlagt:klarlagda::
+COMPOUND(563110, 556585): klar + lägga
+768584r3<substantiv>klarläggande:klarläggande:klarläggandes:klarläggandet:klarläggandets:klarlägganden:klarläggandens:klarläggandena:klarläggandenas
+646188r3<verb>klarna:klarna:klarnade:klarnat:klarnar:klarna:klarnas:klarnades:klarnats:klarnas:klarnad:klarnat:klarnade:klarnande:
+827564r4<substantiv>klarning:klarning:klarnings:klarningen:klarningens::::
+CUSTOM: y y klarnings
+827568r3<substantiv>klarningskärl::::::::
+COMPOUND(827564, 552608): klarning + kärl
+652344r3<adjektiv>klarröd:klarröd:klarrött:klarröda:klarröda:!:!:!:
+652347r3<adjektiv>klarseende:klarseende:klarseende:klarseende:klarseende:!:!:!:
+652348r3<substantiv>klarseende:klarseende:klarseendes:klarseendet:klarseendets::::
+652352r3<substantiv>klarsignal:klarsignal:klarsignals:klarsignalen:klarsignalens:klarsignaler:klarsignalers:klarsignalerna:klarsignalernas
+652360r3<substantiv>klarspråk:klarspråk:klarspråks:klarspråket:klarspråkets::::
+652364r3<substantiv>klarsyn:klarsyn:klarsyns:klarsynen:klarsynens::::
+652368r3<adjektiv>klarsynt:klarsynt:klarsynt:klarsynta:klarsynta:klarsyntare:klarsyntast:klarsyntaste:klarsynte
+652369r3<substantiv>klarsynthet:klarsynthet:klarsynthets:klarsyntheten:klarsynthetens:!:!:!:!
+CUSTOM: y y klarsynthets
+652373r3<substantiv>klartecken:klartecken:klarteckens:klartecknet:klartecknets:klartecken:klarteckens:klartecknen:klartecknens
+652379r4<substantiv>klartext:klartext:klartexts:klartexten:klartextens::::
+652380r3<adjektiv>klartänkt:klartänkt:klartänkt:klartänkta:klartänkta::::klartänkte
+827569r3<substantiv>klartänkthet:klartänkthet:klartänkthets:klartänktheten:klartänkthetens::::
+652383r3<adjektiv>klarvaken:klarvaken:klarvaket:klarvakna:klarvakna::::klarvakne
+799713r4<adjektiv>klarögd:klarögd:klarögt:klarögda:klarögda::::klarögde
+827574r3<substantiv>klarögdhet:klarögdhet:klarögdhets:klarögdheten:klarögdhetens::::
+554671r3<egennamn>Klas:Klas:Klas
+636553r5<substantiv>klase:klase:klases:klasen:klasens:klasar:klasars:klasarna:klasarnas
+573673r3<adjektiv>klasformig:klasformig:klasformigt:klasformiga:klasformiga::::
+549530r22<substantiv>klass:klass:klass:klassen:klassens:klasser:klassers:klasserna:klassernas
+CUSTOM: y y klass +klass
+646192r5<verb>klassa:klassa:klassade:klassat:klassar:klassa:klassas:klassades:klassats:klassas:klassad:klassat:klassade::
+744672r4<substantiv>klassamhälle:klassamhälle:klassamhälles:klassamhället:klassamhällets:klassamhällen:klassamhällens:klassamhällena:klassamhällenas
+COMPOUND(549530, 612788): klass + samhälle
+652385r3<substantiv>klassbibliotek:klassbibliotek:klassbiblioteks:klassbiblioteket:klassbibliotekets:klassbibliotek:klassbiblioteks:klassbiblioteken:klassbibliotekens
+587027r4<verb>klassera:klassera:klasserade:klasserat:klasserar:klassera:klasseras:klasserades:klasserats:klasseras:klasserad:klasserat:klasserade:klasserande:
+646195r3<substantiv>klassering:klassering:klasserings:klasseringen:klasseringens:klasseringar:klasseringars:klasseringarna:klasseringarnas
+CUSTOM: y y klasserings
+827583r3<substantiv>klasshat:klasshat:klasshats:klasshatet:klasshatets::::
+646203r3<substantiv>klassicism:klassicism:klassicisms:klassicismen:klassicismens::::
+646207r3<substantiv>klassicist:klassicist:klassicists:klassicisten:klassicistens:klassicister:klassicisters:klassicisterna:klassicisternas
+CUSTOM: y y klassicist
+581285r4<adjektiv>klassicistisk:klassicistisk:klassicistiskt:klassicistiska:klassicistiska:!:!:!:klassicistiske
+646215r3<substantiv>klassicitet:klassicitet:klassicitets:klassiciteten:klassicitetens::::
+547108r4<verb>klassificera:klassificera:klassificerade:klassificerat:klassificerar:klassificera:klassificeras:klassificerades:klassificerats:klassificeras:klassificerad:klassificerat:klassificerade:klassificerande:
+827588r3<substantiv>klassificerare:klassificerare:klassificerares:klassificeraren:klassificerarens:klassificerare:klassificerares:klassificerarna:klassificerarnas
+646219r5<substantiv>klassificering:klassificering:klassificerings:klassificeringen:klassificeringens:klassificeringar:klassificeringars:klassificeringarna:klassificeringarnas
+CUSTOM: y y klassificerings +klassificerings
+898829r4<substantiv>klassificeringskod:klassificeringskod:klassificeringskods:klassificeringskoden:klassificeringskodens:klassificeringskoder:klassificeringskoders:klassificeringskoderna:klassificeringskodernas
+COMPOUND(646219, 549543): klassificering + kod
+841068r4<substantiv>klassificeringsproblem:klassificeringsproblem:klassificeringsproblems:klassificeringsproblemet:klassificeringsproblemets:klassificeringsproblem:klassificeringsproblems:klassificeringsproblemen:klassificeringsproblemens
+COMPOUND(646219, 552791): klassificering + problem
+733549r3<substantiv>klassifikation:klassifikation:klassifikations:klassifikationen:klassifikationens:klassifikationer:klassifikationers:klassifikationerna:klassifikationernas
+646220r4<substantiv>klassik:klassik:klassiks:klassiken:klassikens:klassiker:klassikers:klassikerna:klassikernas
+639949r4<substantiv>klassiker:klassiker:klassikers:klassikern:klassikerns:klassiker:klassikers:klassikerna:klassikernas
+CUSTOM: y y klassiker
+792559r3<adjektiv>klassindelad:klassindelad:klassindelat:klassindelade:klassindelade:!:!:!:
+801049r3<adjektiv>klassiserande:klassiserande:klassiserande:klassiserande:klassiserande:!:!:!:
+581288r4<adjektiv>klassisk:klassisk:klassiskt:klassiska:klassiska:!:!:!:klassiske
+652391r3<substantiv>klasskamp:klasskamp:klasskamps:klasskampen:klasskampens::::
+CUSTOM: y y klasskamps
+602419r3<substantiv>klasskamrat:klasskamrat:klasskamrats:klasskamraten:klasskamratens:klasskamrater:klasskamraters:klasskamraterna:klasskamraternas
+652395r4<substantiv>klasskillnad:klasskillnad:klasskillnads:klasskillnaden:klasskillnadens:klasskillnader:klasskillnaders:klasskillnaderna:klasskillnadernas
+652397r3<substantiv>klassklyfta:klassklyfta:klassklyftas:klassklyftan:klassklyftans:klassklyftor:klassklyftors:klassklyftorna:klassklyftornas
+652405r3<substantiv>klasskompis:klasskompis:klasskompis:klasskompisen:klasskompisens:klasskompisar:klasskompisars:klasskompisarna:klasskompisarnas
+564953r3<adjektiv>klasslös:klasslös:klasslöst:klasslösa:klasslösa::::
+646224r4<substantiv>klassning:klassning:klassnings:klassningen:klassningens:klassningar:klassningars:klassningarna:klassningarnas
+CUSTOM: y y klassnings
+687555r4<substantiv>klassombud:klassombud:klassombuds:klassombudet:klassombudets:klassombud:klassombuds:klassombuden:klassombudens
+COMPOUND(549530, 552728): klass + ombud
+973006r3<egennamn>Klasson:Klasson:Klassons
+675204r4<substantiv>klasspappa:klasspappa:klasspappas:klasspappan:klasspappans:klasspappor:klasspappors:klasspapporna:klasspappornas
+COMPOUND(549530, 594864): klass + pappa
+937206r3<substantiv>klassresa:klassresa:klassresas:klassresan:klassresans:klassresor:klassresors:klassresorna:klassresornas
+687542r4<substantiv>klassrum:klassrum:klassrums:klassrummet:klassrummets:klassrum:klassrums:klassrummen:klassrummens
+COMPOUND(549530, 571182): klass + rum
+CUSTOM: y y klassrums
+827598r4<substantiv>klassråd:klassråd:klassråds:klassrådet:klassrådets:klassråd:klassråds:klassråden:klassrådens
+COMPOUND(549530, 552853): klass + råd
+827758r4<substantiv>klasstorlek:klasstorlek:klasstorleks:klasstorleken:klasstorlekens:klasstorlekar:klasstorlekars:klasstorlekarna:klasstorlekarnas
+COMPOUND(549530, 598936): klass + storlek
+827766r4<substantiv>klasstrid:klasstrid:klasstrids:klasstriden:klasstridens:klasstrider:klasstriders:klasstriderna:klasstridernas
+COMPOUND(549530, 619729): klass + strid
+687548r3<adverb>klassvis:klassvis
+581289r3<adjektiv>klastisk:klastisk:klastiskt:klastiska:klastiska::::
+744684r3<substantiv>klatsch:klatsch:klatschs:klatschen:klatschens:klatschar:klatschars:klatscharna:klatscharnas
+744680r4<verb>klatscha:klatscha:klatschade:klatschat:klatschar:klatscha:klatschas:klatschades:klatschats:klatschas::::klatschande:
+573676r4<adjektiv>klatschig:klatschig:klatschigt:klatschiga:klatschiga:klatschigare:klatschigast:klatschigaste:klatschige
+827782r3<substantiv>klatschighet:klatschighet:klatschighets:klatschigheten:klatschighetens:klatschigheter:klatschigheters:klatschigheterna:klatschigheternas
+827790r3<substantiv>klatt:klatt:klatts:klatten:klattens:klattar:klattars:klattarna:klattarnas
+652412r3<substantiv>klaustrofobi:klaustrofobi:klaustrofobis:klaustrofobin:klaustrofobins::::
+581292r3<adjektiv>klaustrofobisk:klaustrofobisk:klaustrofobiskt:klaustrofobiska:klaustrofobiska::::
+549531r6<substantiv>klausul:klausul:klausuls:klausulen:klausulens:klausuler:klausulers:klausulerna:klausulernas
+646225r9<substantiv>klav:klav:klavs:klaven:klavens:klaver:klavers:klaverna:klavernas
+CUSTOM: y n
+646230r4<verb>klava:klava:klavade:klavat:klavar:klava:klavas:klavades:klavats:klavas::::klavande:
+CUSTOM: n n y
+623120r3<substantiv>klave:klave:klaves:klaven:klavens:klavar:klavars:klavarna:klavarnas
+646233r4<substantiv>klaver:klaver:klavers:klaveret:klaverets:klaver:klavers:klaveren:klaverens
+CUSTOM: y n klaver
+827798r3<substantiv>klaverinstrument::::::::
+COMPOUND(646233, 552518): klaver + instrument
+724746r3<substantiv>klavertramp:klavertramp:klavertramps:klavertrampet:klavertrampets:klavertramp:klavertramps:klavertrampen:klavertrampens
+622298r4<substantiv>klaviatur:klaviatur:klaviaturs:klaviaturen:klaviaturens:klaviaturer:klaviaturers:klaviaturerna:klaviaturernas
+CUSTOM: y y klaviatur
+827799r3<substantiv>klaviaturspelare::::::::
+COMPOUND(622298, 615459): klaviatur + spelare
+622299r4<substantiv>klavikord:klavikord:klavikords:klavikordet:klavikordets:klavikord:klavikords:klavikorden:klavikordens
+DEFINITION 1: klaviaturinstrument
+553251r3<egennamn>Klein:Klein:Kleins
+649182r4<verb>klema:klema:klemade:klemat:klemar:klema:klemas:klemades:klemats:klemas::::klemande:
+CUSTOM: y n
+646234r5<substantiv>klematis:klematis:klematis:klematisen:klematisens:klematisar:klematisars:klematisarna:klematisarnas
+CUSTOM: y y klematis
+827804r4<substantiv>klematisart:klematisart:klematisarts:klematisarten:klematisartens:klematisarter:klematisarters:klematisarterna:klematisarternas
+COMPOUND(646234, 548244): klematis + art
+646237r3<substantiv>klementin:klementin:klementins:klementinen:klementinens:klementiner:klementiners:klementinerna:klementinernas
+573680r3<adjektiv>klemig:klemig:klemigt:klemiga:klemiga::::
+827812r3<substantiv>klemighet:klemighet:klemighets:klemigheten:klemighetens::::
+563160r5<adjektiv>klen:klen:klent:klena:klena:klenare:klenast:klenaste:klene::::::::
+DEFINITION 1: tunn och svag
+622307r4<verb>klena:klena:klenade:klenat:klenar:klena:!:!:!:!:!:!:!:!:!
+DEFINITION 1: kleta, smeta
+827816r3<substantiv>klenhet:klenhet:klenhets:klenheten:klenhetens::::
+573683r3<adjektiv>klenkvistig:klenkvistig:klenkvistigt:klenkvistiga:klenkvistiga::::
+827820r3<substantiv>klenmod:klenmod:klenmods:klenmodet:klenmodets::::
+573686r4<adjektiv>klenmodig:klenmodig:klenmodigt:klenmodiga:klenmodiga:klenmodigare:klenmodigast:klenmodigaste:klenmodige
+827828r3<substantiv>klenmodighet:klenmodighet:klenmodighets:klenmodigheten:klenmodighetens::::
+549533r3<substantiv>klenod:klenod:klenods:klenoden:klenodens:klenoder:klenoders:klenoderna:klenodernas
+827832r3<substantiv>klentro:klentro:klentros:klentron:klentrons::::
+652415r3<adjektiv>klentrogen:klentrogen:klentroget:klentrogna:klentrogna::::klentrogne
+652416r3<substantiv>klenät:klenät:klenäts:klenäten:klenätens:klenäter:klenäters:klenäterna:klenäternas
+827836r3<substantiv>kleptoman:kleptoman:kleptomans:kleptomanen:kleptomanens:kleptomaner:kleptomaners:kleptomanerna:kleptomanernas
+827844r3<substantiv>kleptomani:kleptomani:kleptomanis:kleptomanin:kleptomanins::::
+636548r4<adjektiv>klerikal:klerikal:klerikalt:klerikala:klerikala::::
+827848r3<substantiv>klerikalism:klerikalism:klerikalisms:klerikalismen:klerikalismens::::
+549535r3<substantiv>klerk:klerk:klerks:klerken:klerkens:klerker:klerkers:klerkerna:klerkernas
+646245r3<substantiv>klet:klet:klets:kletet:kletets:!:!:!:!
+CUSTOM: y n
+547109r5<verb>kleta:kleta:kletade:kletat:kletar:kleta:kletas:kletades:kletats:kletas:kletad:kletat:kletade:kletande:
+573687r4<adjektiv>kletig:kletig:kletigt:kletiga:kletiga:kletigare:kletigast:kletigaste:
+947132r3<substantiv>klezmer:klezmer:klezmers:klezmern:klezmerns::::
+559806r4<substantiv>kli:kli:klis:kliet:kliets::::
+547110r6<verb>klia:klia:kliade:kliat:kliar:klia:klias:kliades:kliats:klias:kliad:kliat:kliade:kliande:
+827860r3<substantiv>klibb:klibb:klibbs:klibbet:klibbets::::
+547111r5<verb>klibba:klibba:klibbade:klibbat:klibbar:klibba:klibbas:klibbades:klibbats:klibbas::::klibbande:
+598433r3<substantiv>klibbal:klibbal:klibbals:klibbalen:klibbalens:klibbalar:klibbalars:klibbalarna:klibbalarnas
+563901r3<adjektiv>klibbfri:klibbfri:klibbfritt:klibbfria:klibbfria::::
+CUSTOM: y n n
+798152r3<adjektiv>klibbhårig:klibbhårig:klibbhårigt:klibbhåriga:klibbhåriga::::
+559808r3<adjektiv>klibbig:klibbig:klibbigt:klibbiga:klibbiga:klibbigare:klibbigast:klibbigaste:klibbige
+652417r3<substantiv>klibbighet:klibbighet:klibbighets:klibbigheten:klibbighetens:!:!:!:!
+CUSTOM: y y klibbighets
+559813r3<substantiv>kliché:kliché:klichés:klichén:klichéns:klichéer:klichéers:klichéerna:klichéernas
+CUSTOM: y y kliché
+602420r3<substantiv>klichéanstalt:klichéanstalt:klichéanstalts:klichéanstalten:klichéanstaltens:klichéanstalter:klichéanstalters:klichéanstalterna:klichéanstalternas
+792562r3<adjektiv>klichéartad:klichéartad:klichéartat:klichéartade:klichéartade:!:!:!:
+799716r3<adjektiv>klichéfylld:klichéfylld:klichéfyllt:klichéfyllda:klichéfyllda::::
+573688r3<adjektiv>klichémässig:klichémässig:klichémässigt:klichémässiga:klichémässiga::::
+551544r4<substantiv>klick:klick:klicks:klicken:klickens:klickar:klickars:klickarna:klickarnas
+629363r4<substantiv>klick:klick:klicks:klicket:klickets:klick:klicks:klicken:klickens
+CUSTOM: y y klick
+547115r7<verb>klicka:klicka:klickade:klickat:klickar:klicka:klickas:klickades:klickats:klickas:klickad:klickat:klickade:klickande:
+827865r3<substantiv>klickande:klickande:klickandes:klickandet:klickandets::::
+635069r6<adjektiv>klickbar:klickbar:klickbart:klickbara:klickbara::::::::::::
+827869r3<substantiv>klickljud::::::::
+COMPOUND(629363, 552668): klick + ljud
+827870r3<substantiv>klickning:klickning:klicknings:klickningen:klickningens:klickningar:klickningars:klickningarna:klickningarnas
+549537r3<substantiv>klient:klient:klients:klienten:klientens:klienter:klienters:klienterna:klienternas
+CUSTOM: y y klient
+559814r3<substantiv>klientel:klientel:klientels:klientelet:klientelets:klientel:klientels:klientelen:klientelens
+547117r3<verb>klientisera:klientisera:klientiserade:klientiserat:klientiserar:klientisera:::::::::
+652422r3<substantiv>klientisering:klientisering:klientiserings:klientiseringen:klientiseringens::::
+CUSTOM: y y klientiserings
+827878r3<substantiv>klientskap:klientskap:klientskaps:klientskapet:klientskapets::::
+827882r3<substantiv>klimakteriebesvär::::::::
+COMPOUND(652423, 552241): klimakterium + besvär
+581295r3<adjektiv>klimakterisk:klimakterisk:klimakteriskt:klimakteriska:klimakteriska::::
+652423r4<substantiv>klimakterium:klimakterium:klimakteriums:klimakteriet:klimakteriets:!:!:!:!
+CUSTOM: y y klimakterie
+552550r13<substantiv>klimat:klimat:klimats:klimatet:klimatets:klimat:klimats:klimaten:klimatens
+CUSTOM: y y klimat
+792566r3<adjektiv>klimatanpassad:klimatanpassad:klimatanpassat:klimatanpassade:klimatanpassade:!:!:!:
+573691r3<adjektiv>klimatbeständig:klimatbeständig:klimatbeständigt:klimatbeständiga:klimatbeständiga::::
+892062r4<substantiv>klimatbov:klimatbov:klimatbovs:klimatboven:klimatbovens:klimatbovar:klimatbovars:klimatbovarna:klimatbovarnas
+COMPOUND(552550, 550940): klimat + bov
+860941r4<substantiv>klimatfråga:klimatfråga:klimatfrågas:klimatfrågan:klimatfrågans:klimatfrågor:klimatfrågors:klimatfrågorna:klimatfrågornas
+COMPOUND(552550, 594085): klimat + fråga
+702009r4<substantiv>klimatförändring:klimatförändring:klimatförändrings:klimatförändringen:klimatförändringens:klimatförändringar:klimatförändringars:klimatförändringarna:klimatförändringarnas
+COMPOUND(552550, 596921): klimat + förändring
+CUSTOM: y y klimatförändrings
+891223r4<substantiv>klimatgas:klimatgas:klimatgas:klimatgasen:klimatgasens:klimatgaser:klimatgasers:klimatgaserna:klimatgasernas
+COMPOUND(552550, 549064): klimat + gas
+762789r4<substantiv>klimathot:klimathot:klimathots:klimathotet:klimathotets:klimathot:klimathots:klimathoten:klimathotens
+COMPOUND(552550, 552476): klimat + hot
+589850r3<verb>klimatisera:klimatisera:klimatiserade:klimatiserat:klimatiserar:klimatisera:::::::::
+581298r3<adjektiv>klimatisk:klimatisk:klimatiskt:klimatiska:klimatiska::::
+802182r3<adjektiv>klimatmedveten:klimatmedveten:klimatmedvetet:klimatmedvetna:klimatmedvetna::::
+921913r3<adjektiv>klimatmärkt:klimatmärkt:klimatmärkt:klimatmärkta:klimatmärkta::::::::::::
+827883r3<substantiv>klimatologi:klimatologi:klimatologis:klimatologin:klimatologins::::
+581299r3<adjektiv>klimatologisk:klimatologisk:klimatologiskt:klimatologiska:klimatologiska::::
+898344r4<adjektiv>klimatren:klimatren:klimatrent:klimatrena:klimatrena:klimatrenare:klimatrenast:klimatrenaste:::::::::
+COMPOUND(552550, 563124): klimat + ren
+763105r4<adjektiv>klimatsmart:klimatsmart:klimatsmart:klimatsmarta:klimatsmarta:klimatsmartare:klimatsmartast:klimatsmartaste:klimatsmarte
+COMPOUND(552550, 626377): klimat + smart
+652425r4<substantiv>klimax:klimax:klimax:klimaxen:klimaxens:klimaxar:klimaxars:klimaxarna:klimaxarnas
+551545r3<substantiv>klimp:klimp:klimps:klimpen:klimpens:klimpar:klimpars:klimparna:klimparnas
+573694r3<adjektiv>klimpig:klimpig:klimpigt:klimpiga:klimpiga::::
+973010r3<egennamn>Kling:Kling:Klings
+594464r3<substantiv>klinga:klinga:klingas:klingan:klingans:klingor:klingors:klingorna:klingornas
+547

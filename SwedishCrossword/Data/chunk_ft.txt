@@ -1,0 +1,621 @@
+antiv>siktning:siktning:siktnings:siktningen:siktningens:siktningar:siktningars:siktningarna:siktningarnas
+CUSTOM: y y siktnings
+821378r3<substantiv>siktpunkt:siktpunkt:siktpunkts:siktpunkten:siktpunktens:siktpunkter:siktpunkters:siktpunkterna:siktpunkternas
+821386r3<substantiv>siktsträcka:siktsträcka:siktsträckas:siktsträckan:siktsträckans:siktsträckor:siktsträckors:siktsträckorna:siktsträckornas
+551827r4<substantiv>sil:sil:sils:silen:silens:silar:silars:silarna:silarnas
+547651r5<verb>sila:sila:silade:silat:silar:sila:silas:silades:silats:silas:silad:silat:silade::
+854159r3<egennamn>Silbersky:Silbersky:Silberskys
+665523r3<substantiv>silduk:silduk:silduks:silduken:sildukens:sildukar:sildukars:sildukarna:sildukarnas
+985921r3<substantiv>sileshår:sileshår:sileshårs:sileshåret:sileshårets::::
+550493r4<substantiv>silhuett:silhuett:silhuetts:silhuetten:silhuettens:silhuetter:silhuetters:silhuetterna:silhuetternas
+CUSTOM: y y silhuett
+708283r4<substantiv>silhuettbild:silhuettbild:silhuettbilds:silhuettbilden:silhuettbildens:silhuettbilder:silhuettbilders:silhuettbilderna:silhuettbildernas
+COMPOUND(550493, 548373): silhuett + bild
+591041r3<verb>silhuettera:silhuettera:silhuetterade:silhuetterat:silhuetterar:silhuettera:::::::::
+591045r3<verb>silicifiera:silicifiera:silicifierade:silicifierat:silicifierar:silicifiera:::::::::
+821394r4<substantiv>silikat:silikat:silikats:silikaten:silikatens:silikater:silikaters:silikaterna:silikaternas
+CUSTOM: y y silikat
+794812r3<adjektiv>silikatbehandlad:silikatbehandlad:silikatbehandlat:silikatbehandlade:silikatbehandlade:!:!:!:
+821402r3<substantiv>silikatfärg::::::::
+COMPOUND(821394, 549002): silikat + färg
+576021r3<adjektiv>silikathaltig:silikathaltig:silikathaltigt:silikathaltiga:silikathaltiga::::
+665531r5<substantiv>silikon:silikon:silikons:silikonet:silikonets::::
+CUSTOM: y y silikon
+794815r3<adjektiv>silikonbehandlad:silikonbehandlad:silikonbehandlat:silikonbehandlade:silikonbehandlade:!:!:!:
+665536r4<substantiv>silikonbröst:silikonbröst:silikonbrösts:silikonbröstet:silikonbröstets:silikonbröst:silikonbrösts:silikonbrösten:silikonbröstens
+COMPOUND(665531, 552285): silikon + bröst
+587985r3<verb>silikonisera:silikonisera:silikoniserade:silikoniserat:silikoniserar:silikonisera:::::::::
+794818r3<adjektiv>silikoniserad:silikoniserad:silikoniserat:silikoniserade:silikoniserade:!:!:!:
+965821r4<substantiv>silikontutte:silikontutte:silikontuttes:silikontutten:silikontuttens:silikontuttar:silikontuttars:silikontuttarna:silikontuttarnas
+COMPOUND(665531, 857552): silikon + tutt, tutte
+985925r3<substantiv>silikos:silikos:silikos:silikosen:silikosens::::
+612805r6<substantiv>silke:silke:silkes:silket:silkets:silken:silkens:silkena:silkenas
+CUSTOM: y y silkes
+704213r3<adjektiv>silkeartad:silkeartad:silkeartat:silkeartade:silkeartade:!:!:!:
+704216r3<substantiv>silkesapa:silkesapa:silkesapas:silkesapan:silkesapans:silkesapor:silkesapors:silkesaporna:silkesapornas
+704224r4<substantiv>silkesduk:silkesduk:silkesduks:silkesduken:silkesdukens:silkesdukar:silkesdukars:silkesdukarna:silkesdukarnas
+COMPOUND(612805, 551077): silke + duk
+794819r3<adjektiv>silkesisolerad:silkesisolerad:silkesisolerat:silkesisolerade:silkesisolerade:!:!:!:
+704232r4<adjektiv>silkeslen:silkeslen:silkeslent:silkeslena:silkeslena:!:!:!:
+COMPOUND(612805, 560012): silke + len
+704235r3<adjektiv>silkesmjuk:silkesmjuk:silkesmjukt:silkesmjuka:silkesmjuka:!:!:!:
+663144r3<substantiv>silkesstrumpa:silkesstrumpa:silkesstrumpas:silkesstrumpan:silkesstrumpans:silkesstrumpor:silkesstrumpors:silkesstrumporna:silkesstrumpornas
+802216r3<adjektiv>silkestunn:silkestunn:silkestunt:silkestunna:silkestunna::::
+576024r3<adjektiv>silkig:silkig:silkigt:silkiga:silkiga::::
+551828r7<substantiv>sill:sill:sills:sillen:sillens:sillar:sillars:sillarna:sillarnas
+CUSTOM: y y sill
+932500r4<substantiv>sillbit:sillbit:sillbits:sillbiten:sillbitens:sillbitar:sillbitars:sillbitarna:sillbitarnas
+COMPOUND(551828, 550887): sill + bit
+704238r3<substantiv>sillgrissla:sillgrissla:sillgrisslas:sillgrisslan:sillgrisslans:sillgrisslor:sillgrisslors:sillgrisslorna:sillgrisslornas
+704246r3<substantiv>sillmjölke:sillmjölke:sillmjölkes:sillmjölken:sillmjölkens:sillmjölkar:sillmjölkars:sillmjölkarna:sillmjölkarnas
+704254r4<substantiv>sillsallad:sillsallad:sillsallads:sillsalladen:sillsalladens:sillsallader:sillsalladers:sillsalladerna:sillsalladernas
+COMPOUND(551828, 550446): sill + sallad
+704262r3<substantiv>silltrut:silltrut:silltruts:silltruten:silltrutens:silltrutar:silltrutars:silltrutarna:silltrutarnas
+663142r3<substantiv>silltunna:silltunna:silltunnas:silltunnan:silltunnans:silltunnor:silltunnors:silltunnorna:silltunnornas
+852247r3<substantiv>sillval:sillval:sillvals:sillvalen:sillvalens:sillvalar:sillvalars:sillvalarna:sillvalarnas
+821403r3<substantiv>silning:silning:silnings:silningen:silningens::::
+663139r4<substantiv>silo:silo:silos:silon:silons:silor:silors:silorna:silornas
+821407r3<substantiv>silobyggnad:silobyggnad:silobyggnads:silobyggnaden:silobyggnadens:silobyggnader:silobyggnaders:silobyggnaderna:silobyggnadernas
+821415r3<substantiv>silotorn:silotorn:silotorns:silotornet:silotornets:silotorn:silotorns:silotornen:silotornens
+776032r4<substantiv>siluett:siluett:siluetts:siluetten:siluettens:siluetter:siluetters:siluetterna:siluetternas
+CUSTOM: y y siluett
+776041r3<substantiv>siluettbild::::::::
+COMPOUND(776032, 548373): siluett + bild
+591049r3<verb>siluettera:siluettera:siluetterade:siluetterat:siluetterar:siluettera:::::::::
+583733r3<adjektiv>silurisk:silurisk:siluriskt:siluriska:siluriska::::
+985928r3<substantiv>silurlager:silurlager:silurlagers:silurlagret:silurlagrets:silurlager:silurlagers:silurlagren:silurlagrens
+619516r11<substantiv>silver:silver:silvers:silvret:silvrets:silver:silvers:silvren:silvrens
+CUSTOM: y y silver
+794822r3<adjektiv>silverartad:silverartad:silverartat:silverartade:silverartade:!:!:!:
+800274r3<adjektiv>silverbelagd:silverbelagd:silverbelagt:silverbelagda:silverbelagda::::
+876387r3<substantiv>silverbestick:silverbestick:silverbesticks:silverbesticket:silverbestickets:silverbestick:silverbesticks:silverbesticken:silverbestickens
+704270r4<substantiv>silverbricka:silverbricka:silverbrickas:silverbrickan:silverbrickans:silverbrickor:silverbrickors:silverbrickorna:silverbrickornas
+COMPOUND(619516, 633105): silver + bricka
+630611r4<substantiv>silverbroderi:silverbroderi:silverbroderis:silverbroderiet, silverbroderit:silverbroderiets, silverbroderits:silverbroderier:silverbroderiers:silverbroderierna:silverbroderiernas
+COMPOUND(619516, 630468): silver + broderi
+552894r3<substantiv>silverbröllop:silverbröllop:silverbröllops:silverbröllopet:silverbröllopets:silverbröllop:silverbröllops:silverbröllopen:silverbröllopens
+552896r3<substantiv>silverfat:silverfat:silverfats:silverfatet:silverfatets:silverfat:silverfats:silverfaten:silverfatens
+576027r3<adjektiv>silverfattig:silverfattig:silverfattigt:silverfattiga:silverfattiga::::
+704278r3<substantiv>silverfisk:silverfisk:silverfisks:silverfisken:silverfiskens:silverfiskar:silverfiskars:silverfiskarna:silverfiskarnas
+769936r3<substantiv>silvergran:silvergran:silvergrans:silvergranen:silvergranens:silvergranar:silvergranars:silvergranarna:silvergranarnas
+802089r3<adjektiv>silvergrå:silvergrå:silvergrått:silvergråa:silvergråa::::
+576030r3<adjektiv>silverhaltig:silverhaltig:silverhaltigt:silverhaltiga:silverhaltiga::::
+552898r3<substantiv>silverhår:silverhår:silverhårs:silverhåret:silverhårets:silverhår:silverhårs:silverhåren:silverhårens
+576033r3<adjektiv>silverhårig:silverhårig:silverhårigt:silverhåriga:silverhåriga::::
+794825r3<adjektiv>silverkantad:silverkantad:silverkantat:silverkantade:silverkantade:!:!:!:
+798829r3<adjektiv>silverljus:silverljus:silverljust:silverljusa:silverljusa::::
+576034r3<adjektiv>silverlockig:silverlockig:silverlockigt:silverlockiga:silverlockiga::::
+944084r4<substantiv>silverlök:silverlök:silverlöks:silverlöken:silverlökens:silverlökar:silverlökars:silverlökarna:silverlökarnas
+COMPOUND(619516, 556010): silver + lök
+704286r4<substantiv>silvermedalj:silvermedalj:silvermedaljs:silvermedaljen:silvermedaljens:silvermedaljer:silvermedaljers:silvermedaljerna:silvermedaljernas
+COMPOUND(619516, 550019): silver + medalj
+552900r3<substantiv>silvermynt:silvermynt:silvermynts:silvermyntet:silvermyntets:silvermynt:silvermynts:silvermynten:silvermyntens
+631071r3<substantiv>silvermyntfot:silvermyntfot:silvermyntfots:silvermyntfoten:silvermyntfotens::::
+859871r3<substantiv>silvernitrat:silvernitrat:silvernitrats:silvernitratet:silvernitratets::::
+663141r3<substantiv>silverpenning:silverpenning:silverpennings:silverpenningen:silverpenningens:silverpenningar:silverpenningars:silverpenningarna:silverpenningarnas
+CUSTOM: y y silverpennings
+591053r3<verb>silverplätera:silverplätera:silverpläterade:silverpläterat:silverpläterar:silverplätera:::::::::
+663146r3<substantiv>silverring:silverring:silverrings:silverringen:silverringens:silverringar:silverringars:silverringarna:silverringarnas
+CUSTOM: y y silverrings
+742899r6<substantiv>silverrova:silverrova:silverrovas:silverrovan:silverrovans:silverrovor:silverrovors:silverrovorna:silverrovornas
+COMPOUND(619516, 561292): silver + rova
+922290r4<substantiv>silversalvia:silversalvia:silversalvias:silversalvian:silversalvians::::
+COMPOUND(619516, 663934): silver + salvia
+952842r4<substantiv>silverslev:silverslev:silverslevs:silversleven:silverslevens:silverslevar:silverslevars:silverslevarna:silverslevarnas
+COMPOUND(619516, 551871): silver + slev
+794828r3<adjektiv>silverstickad:silverstickad:silverstickat:silverstickade:silverstickade:!:!:!:
+769944r4<substantiv>silverte:silverte:silvertes:silverteet:silverteets:silverteer:silverteers:silverteerna:silverteernas
+COMPOUND(619516, 555996): silver + te
+603491r3<substantiv>silvervarufabrik:silvervarufabrik:silvervarufabriks:silvervarufabriken:silvervarufabrikens:silvervarufabriker:silvervarufabrikers:silvervarufabrikerna:silvervarufabrikernas
+611195r3<substantiv>silvervaruindustri:silvervaruindustri:silvervaruindustris:silvervaruindustrin:silvervaruindustrins:silvervaruindustrier:silvervaruindustriers:silvervaruindustrierna:silvervaruindustriernas
+663147r5<adjektiv>silvervit:silvervit:silvervitt:silvervita:silvervita:silvervitare:silvervitast:silvervitaste:
+924456r8<egennamn>Silvia:Silvia:Silvias
+547652r3<verb>silvra:silvra:silvrade:silvrat:silvrar:silvra:::::::::
+794831r3<adjektiv>silvrad:silvrad:silvrat:silvrade:silvrade:!:!:!:
+576037r3<adjektiv>silvrig:silvrig:silvrigt:silvriga:silvriga::::
+591057r3<verb>silylera:silylera:silylerade:silylerat:silylerar:silylera:::::::::
+CUSTOM: n n n
+631076r12<substantiv>sim:sim:sims:simmet:simmets::::
+CUSTOM: y n sim
+769952r3<substantiv>simand:simand:simands:simanden:simandens:simänder:simänders:simänderna:simändernas
+603499r4<substantiv>simbassäng:simbassäng:simbassängs:simbassängen:simbassängens:simbassänger:simbassängers:simbassängerna:simbassängernas
+COMPOUND(556552, 548353): simma + bassäng
+704316r3<substantiv>simborgarmärke:simborgarmärke:simborgarmärkes:simborgarmärket:simborgarmärkets:simborgarmärken:simborgarmärkens:simborgarmärkena:simborgarmärkenas
+704324r3<substantiv>simbyxor:::::simbyxor:simbyxors:simbyxorna:simbyxornas
+704328r3<substantiv>simdyna:simdyna:simdynas:simdynan:simdynans:simdynor:simdynors:simdynorna:simdynornas
+704336r3<substantiv>simfena:simfena:simfenas:simfenan:simfenans:simfenor:simfenors:simfenorna:simfenornas
+631075r4<substantiv>simfot:simfot:simfots:simfoten:simfotens:simfötter:simfötters:simfötterna:simfötternas
+COMPOUND(631076, 555210): sim + fot
+704344r3<substantiv>simglasögon:::::simglasögon:simglasögons:simglasögonen:simglasögonens
+598802r4<substantiv>simhall:simhall:simhalls:simhallen:simhallens:simhallar:simhallars:simhallarna:simhallarnas
+COMPOUND(556552, 551356): simma + hall
+704348r3<substantiv>simhopp:simhopp:simhopps:simhoppet:simhoppets:simhopp:simhopps:simhoppen:simhoppens
+704354r3<substantiv>simhoppare:simhoppare:simhoppares:simhopparen:simhopparens:simhoppare:simhoppares:simhopparna:simhopparnas
+704360r3<substantiv>simhoppning:simhoppning:simhoppnings:simhoppningen:simhoppningens::::
+704364r3<substantiv>simhud:simhud:simhuds:simhuden:simhudens::::
+704310r3<substantiv>SIM-kort:SIM-kort:SIM-korts:SIM-kortet:SIM-kortets:SIM-kort:SIM-korts:SIM-korten:SIM-kortens
+CUSTOM: n n
+576040r3<adjektiv>simkunnig:simkunnig:simkunnigt:simkunniga:simkunniga::::
+704368r3<substantiv>simkunnighet:simkunnighet:simkunnighets:simkunnigheten:simkunnighetens::::
+704372r3<substantiv>simlektion:simlektion:simlektions:simlektionen:simlektionens:simlektioner:simlektioners:simlektionerna:simlektionernas
+CUSTOM: y y simlektions
+704380r3<substantiv>simlärare:simlärare:simlärares:simläraren:simlärarens:simlärare:simlärares:simlärarna:simlärarnas
+556552r8<verb>simma:simma:simmade, sam:simmat, summit:simmar:simma:simmas:simmades:simmats:simmas:simmad, summen:simmat, summet:simmade, sumna:simmande:
+CUSTOM: y n
+610021r3<substantiv>simmare:simmare:simmares:simmaren:simmarens:simmare:simmares:simmarna:simmarnas
+CUSTOM: y y simmar
+620673r3<substantiv>simmarflicka:simmarflicka:simmarflickas:simmarflickan:simmarflickans:simmarflickor:simmarflickors:simmarflickorna:simmarflickornas
+821421r3<substantiv>simmerska:simmerska:simmerskas:simmerskan:simmerskans:simmerskor:simmerskors:simmerskorna:simmerskornas
+576043r4<adjektiv>simmig:simmig:simmigt:simmiga:simmiga:simmigare:simmigast:simmigaste:
+821432r3<substantiv>simmighet:simmighet:simmighets:simmigheten:simmighetens::::
+745647r4<substantiv>simning:simning:simnings:simningen:simningens:simningar:simningars:simningarna:simningarnas
+554782r3<egennamn>Simon:Simon:Simons
+789242r3<egennamn>Simone:Simone:Simones
+973285r3<egennamn>Simonsson:Simonsson:Simonssons
+620681r3<adjektiv>simpel:simpel:simpelt:simpla:simpla:simplare:simplast:simplaste:simple
+704386r4<substantiv>simpelhet:simpelhet:simpelhets:simpelheten:simpelhetens:simpelheter:simpelheters:simpelheterna:simpelheternas
+696874r3<substantiv>simplex:simplex:simplex:simplexet:simplexets:simplex:simplex:simplexen:simplexens
+587989r4<verb>simplifiera:simplifiera:simplifierade:simplifierat:simplifierar:simplifiera:simplifieras:simplifierades:simplifierats:simplifieras:simplifierad:simplifierat:simplifierade:simplifierande:
+821445r3<substantiv>simplifiering:simplifiering:simplifierings:simplifieringen:simplifieringens::::
+821450r3<adjektiv>simplistisk:simplistisk:simplistiskt:simplistiska:simplistiska::::
+704390r3<substantiv>simprov:simprov:simprovs:simprovet:simprovets:simprov:simprovs:simproven:simprovens
+789246r3<egennamn>Simpson:Simpson:Simpsons
+CUSTOM: y n Simpsons
+728234r3<egennamn>Simrishamn:Simrishamn:Simrishamns
+CUSTOM: y n Simrishamns
+892534r3<substantiv>simrishamnsbo:simrishamnsbo:simrishamnsbos:simrishamnsbon:simrishamnsbons:simrishamnsbor:simrishamnsbors:simrishamnsborna:simrishamnsbornas
+745655r3<interjektion>simsalabim:simsalabim
+704396r3<substantiv>simskola:simskola:simskolas:simskolan:simskolans:simskolor:simskolors:simskolorna:simskolornas
+886689r3<substantiv>simsnäppa:simsnäppa:simsnäppas:simsnäppan:simsnäppans:simsnäppor:simsnäppors:simsnäpporna:simsnäppornas
+704404r3<substantiv>simsport:simsport:simsports:simsporten:simsportens::::
+932508r3<substantiv>simsätt:simsätt:simsätts:simsättet:simsättets:simsätt:simsätts:simsätten:simsättens
+704408r3<substantiv>simtag:simtag:simtags:simtaget:simtagets:simtag:simtags:simtagen:simtagens
+704414r3<substantiv>simtur:simtur:simturs:simturen:simturens:simturer:simturers:simturerna:simturernas
+704422r3<substantiv>simtävling:simtävling:simtävlings:simtävlingen:simtävlingens:simtävlingar:simtävlingars:simtävlingarna:simtävlingarnas
+704430r3<substantiv>simulant:simulant:simulants:simulanten:simulantens:simulanter:simulanters:simulanterna:simulanternas
+704438r3<substantiv>simulation:simulation:simulations:simulationen:simulationens:simulationer:simulationers:simulationerna:simulationernas
+CUSTOM: y y simulations
+665543r5<substantiv>simulator:simulator:simulators:simulatorn:simulatorns:simulatorer:simulatorers:simulatorerna:simulatorernas
+CUSTOM: y y simulator +simulator
+821454r3<substantiv>simulatorcentral::::::::
+COMPOUND(665543, 548519): simulator + central
+587993r5<verb>simulera:simulera:simulerade:simulerat:simulerar:simulera:simuleras:simulerades:simulerats:simuleras:simulerad:simulerat:simulerade:simulerande:
+666008r4<substantiv>simulering:simulering:simulerings:simuleringen:simuleringens:simuleringar:simuleringars:simuleringarna:simuleringarnas
+CUSTOM: y y simulerings
+665546r6<adjektiv>simultan:simultan:simultant:simultana:simultana::::
+CUSTOM: y n simultan
+821456r3<substantiv>simultanitet:simultanitet:simultanitets:simultaniteten:simultanitetens::::
+665564r4<substantiv>simultankapacitet:simultankapacitet:simultankapacitets:simultankapaciteten:simultankapacitetens::::
+COMPOUND(665546, 549450): simultan + kapacitet
+709115r4<substantiv>simultantolk:simultantolk:simultantolks:simultantolken:simultantolkens:simultantolkar:simultantolkars:simultantolkarna:simultantolkarnas
+COMPOUND(665546, 552017): simultan + tolk
+665547r4<verb>simultantolka:simultantolka:simultantolkade:simultantolkat:simultantolkar:simultantolka:simultantolkas:simultantolkades:simultantolkats:simultantolkas:simultantolkad:simultantolkat:simultantolkade::
+COMPOUND(665546, 547851): simultan + tolka
+665555r3<substantiv>simultantolkning:simultantolkning:simultantolknings:simultantolkningen:simultantolkningens:simultantolkningar:simultantolkningars:simultantolkningarna:simultantolkningarnas
+CUSTOM: y y simultantolknings
+619520r3<pronomen>sin:sin
+619524r4<verb>sina:sina:sinade:sinat:sinar:sina::::::::sinande:
+619523r3<pronomen>sina:sina
+553312r3<egennamn>Sinclair:Sinclair:Sinclairs
+619525r3<substantiv>sinekur:sinekur:sinekurs:sinekuren:sinekurens:sinekurer:sinekurers:sinekurerna:sinekurernas
+821460r3<substantiv>sinfonia:sinfonia:sinfonias:sinfonian:sinfonians:sinfonior:sinfoniors:sinfoniorna:sinfoniornas
+821468r3<substantiv>sinfonietta:sinfonietta:sinfoniettas:sinfoniettan:sinfoniettans:sinfoniettor:sinfoniettors:sinfoniettorna:sinfoniettornas
+619533r3<substantiv>singales:singales:singales:singalesen:singalesens:singaleser:singalesers:singaleserna:singalesernas
+583736r3<adjektiv>singalesisk:singalesisk:singalesiskt:singalesiska:singalesiska::::
+821476r3<substantiv>singalesiska:singalesiska:singalesiskas:singalesiskan:singalesiskans:singalesiskor:singalesiskors:singalesiskorna:singalesiskornas
+554122r3<egennamn>Singapore:Singapore:Singapores
+CUSTOM: y n Singapore
+821484r3<substantiv>singaporian:singaporian:singaporians:singaporianen:singaporianens:singaporianer:singaporianers:singaporianerna:singaporianernas
+821492r3<adjektiv>singaporiansk:singaporiansk:singaporianskt:singaporianska:singaporianska:!:!:!:singaporianske
+821495r3<substantiv>singaporianska:singaporianska:singaporianskas:singaporianskan:singaporianskans:singaporianskor:singaporianskors:singaporianskorna:singaporianskornas
+985935r3<substantiv>singback:singback:::::::
+556453r9<substantiv>singel:singel:singels:singeln:singelns:singlar:singlars:singlarna:singlarnas
+CUSTOM: y y singel
+901651r4<substantiv>singeldam:singeldam:singeldams:singeldamen:singeldamens:singeldamer:singeldamers:singeldamerna:singeldamernas
+COMPOUND(556453, 548555): singel + dam
+901670r4<substantiv>singelkille:singelkille:singelkilles:singelkillen:singelkillens:singelkillar:singelkillars:singelkillarna:singelkillarnas
+COMPOUND(556453, 559775): singel + kille
+704446r4<substantiv>singelmatch:singelmatch:singelmatchs:singelmatchen:singelmatchens:singelmatcher:singelmatchers:singelmatcherna:singelmatchernas
+COMPOUND(556453, 550011): singel + match
+704454r4<substantiv>singelolycka:singelolycka:singelolyckas:singelolyckan:singelolyckans:singelolyckor:singelolyckors:singelolyckorna:singelolyckornas
+COMPOUND(556453, 560318): singel + olycka
+821503r3<substantiv>singelsculler:singelsculler:singelscullers:singelscullern:singelscullerns:singelsculler, singelscullers:singelscullers:singelscullerna:singelscullernas
+901660r4<substantiv>singeltjej:singeltjej:singeltjejs:singeltjejen:singeltjejens:singeltjejer:singeltjejers:singeltjejerna:singeltjejernas
+COMPOUND(556453, 550674): singel + tjej
+745656r4<verb>singla:singla:singlade:singlat:singlar:singla:singlas:singlades:singlats:singlas:singlad:singlat:singlade:singlande:
+821514r3<substantiv>singling:singling:singlings:singlingen:singlingens::::
+787312r3<substantiv>singular:singular:singulars:singularen:singularens:singularer:singularers:singularerna:singularernas
+787309r3<adjektiv>singular:singular:singulart:singulara:singulara::::
+821518r3<substantiv>singularform:singularform:singularforms:singularformen:singularformens:singularformer:singularformers:singularformerna:singularformernas
+665566r3<substantiv>singularis:singularis:::::::
+583738r3<adjektiv>singularistisk:singularistisk:singularistiskt:singularistiska:singularistiska::::
+550494r3<substantiv>singularitet:singularitet:singularitets:singulariteten:singularitetens:singulariteter:singulariteters:singulariteterna:singulariteternas
+704462r3<adjektiv>singuljär:singuljär:singuljärt:singuljära:singuljära:!:!:!:
+704465r3<adjektiv>singulär:singulär:singulärt:singulära:singulära::::
+704468r4<adjektiv>sinister:sinister:sinistert:sinistra:sinistra:sinistrare:sinistrast:sinistraste:sinistre
+923938r3<substantiv>sink:sink:sinks:sinket:sinkets::::
+CUSTOM: n n y
+547653r4<verb>sinka:sinka:sinkade:sinkat:sinkar:sinka:sinkas:sinkades:sinkats:sinkas:sinkad:sinkat:sinkade::
+631410r4<substantiv>sinkadus:sinkadus:sinkadus:sinkadusen:sinkadusens:sinkaduser:sinkadusers:sinkaduserna:sinkadusernas
+821530r3<substantiv>sinkfog:sinkfog:sinkfogs:sinkfogen:sinkfogens:sinkfogar:sinkfogars:sinkfogarna:sinkfogarnas
+665567r3<adjektiv>sinnad:sinnad:sinnat:sinnade:sinnade:!:!:!:
+612810r12<substantiv>sinne:sinne:sinnes:sinnet:sinnets:sinnen:sinnens:sinnena:sinnenas
+CUSTOM: y y sinnes
+665568r3<substantiv>sinnebild:sinnebild:sinnebilds:sinnebilden:sinnebildens:sinnebilder:sinnebilders:sinnebilderna:sinnebildernas
+CUSTOM: y y sinnebilds
+665572r3<substantiv>sinnelag:sinnelag:sinnelags:sinnelaget:sinnelagets::::
+821545r4<substantiv>sinnesart:sinnesart:sinnesarts:sinnesarten:sinnesartens:sinnesarter:sinnesarters:sinnesarterna:sinnesarternas
+COMPOUND(612810, 548244): sinne + art
+665574r3<substantiv>sinnesfrid:sinnesfrid:sinnesfrids:sinnesfriden:sinnesfridens::::
+735302r4<substantiv>sinnesfrånvaro:sinnesfrånvaro:sinnesfrånvaros:sinnesfrånvaron:sinnesfrånvarons::::
+COMPOUND(612810, 657231): sinne + frånvaro
+CUSTOM: n n y
+665576r3<substantiv>sinnesförfattning:sinnesförfattning:sinnesförfattnings:sinnesförfattningen:sinnesförfattningens::::
+CUSTOM: n n y
+611976r3<substantiv>sinnesförnimmelse:sinnesförnimmelse:sinnesförnimmelses:sinnesförnimmelsen:sinnesförnimmelsens:sinnesförnimmelser:sinnesförnimmelsers:sinnesförnimmelserna:sinnesförnimmelsernas
+CUSTOM: n n y
+665577r3<adjektiv>sinnesförvirrad:sinnesförvirrad:sinnesförvirrat:sinnesförvirrade:sinnesförvirrade:!:!:!:
+CUSTOM: n n y
+704471r4<substantiv>sinnesförvirring:sinnesförvirring:sinnesförvirrings:sinnesförvirringen:sinnesförvirringens:sinnesförvirringar:sinnesförvirringars:sinnesförvirringarna:sinnesförvirringarnas
+CUSTOM: n n y
+665578r3<substantiv>sinnesintryck:sinnesintryck:sinnesintrycks:sinnesintrycket:sinnesintryckets:sinnesintryck:sinnesintrycks:sinnesintrycken:sinnesintryckens
+CUSTOM: n n y
+665584r3<substantiv>sinnesjämvikt:sinnesjämvikt:sinnesjämvikts:sinnesjämvikten:sinnesjämviktens::::
+CUSTOM: n n y
+665588r3<substantiv>sinnesnärvaro:sinnesnärvaro:sinnesnärvaros:sinnesnärvaron:sinnesnärvarons::::
+CUSTOM: n n y
+776042r3<substantiv>sinnesro:sinnesro:sinnesros:sinnesron:sinnesrons::::
+665592r3<adjektiv>sinnesrubbad:sinnesrubbad:sinnesrubbat:sinnesrubbade:sinnesrubbade:!:!:!:
+CUSTOM: n n y
+821559r4<substantiv>sinnesrus:sinnesrus:sinnesrus:sinnesruset:sinnesrusets:sinnesrus:sinnesrus:sinnesrusen:sinnesrusens
+COMPOUND(612810, 552847): sinne + rus
+665593r3<substantiv>sinnesrörelse:sinnesrörelse:sinnesrörelses:sinnesrörelsen:sinnesrörelsens:sinnesrörelser:sinnesrörelsers:sinnesrörelserna:sinnesrörelsernas
+CUSTOM: n n y
+563172r4<adjektiv>sinnessjuk:sinnessjuk:sinnessjukt:sinnessjuka:sinnessjuka:!:!:!:sinnessjuke
+704475r4<substantiv>sinnessjukdom:sinnessjukdom:sinnessjukdoms:sinnessjukdomen:sinnessjukdomens:sinnessjukdomar:sinnessjukdomars:sinnessjukdomarna:sinnessjukdomarnas
+COMPOUND(612810, 551830): sinne + sjukdom
+CUSTOM: n n y
+552902r3<substantiv>sinnessjukhus:sinnessjukhus:sinnessjukhus:sinnessjukhuset:sinnessjukhusets:sinnessjukhus:sinnessjukhus:sinnessjukhusen:sinnessjukhusens
+CUSTOM: n n y
+665594r4<adjektiv>sinnesslö:sinnesslö:sinnesslött:sinnesslöa:sinnesslöa:!:!:!:sinnesslöe
+COMPOUND(612810, 563327): sinne + slö
+665598r4<substantiv>sinnesstämning:sinnesstämning:sinnesstämnings:sinnesstämningen:sinnesstämningens:sinnesstämningar:sinnesstämningars:sinnesstämningarna:sinnesstämningarnas
+COMPOUND(612810, 665599): sinne + stämning
+CUSTOM: n n y
+665600r3<adjektiv>sinnessvag:sinnessvag:sinnessvagt:sinnessvaga:sinnessvaga:!:!:!:sinnessvage
+665604r3<substantiv>sinnestillstånd:sinnestillstånd:sinnestillstånds:sinnestillståndet:sinnestillståndets::::
+665608r4<substantiv>sinnesundersökning:sinnesundersökning:sinnesundersöknings:sinnesundersökningen:sinnesundersökningens:sinnesundersökningar:sinnesundersökningars:sinnesundersökningarna:sinnesundersökningarnas
+COMPOUND(612810, 552069): sinne + undersökning
+CUSTOM: n n y
+665616r3<substantiv>sinnesvilla:sinnesvilla:sinnesvillas:sinnesvillan:sinnesvillans:sinnesvillor:sinnesvillors:sinnesvillorna:sinnesvillornas
+CUSTOM: n n y
+665624r4<substantiv>sinnevärld:sinnevärld:sinnevärlds:sinnevärlden:sinnevärldens:sinnevärldar:sinnevärldars:sinnevärldarna:sinnevärldarnas
+567632r5<adjektiv>sinnlig:sinnlig:sinnligt:sinnliga:sinnliga:sinnligare:sinnligast:sinnligaste:sinnlige
+665626r4<substantiv>sinnlighet:sinnlighet:sinnlighets:sinnligheten:sinnlighetens:sinnligheter:sinnligheters:sinnligheterna:sinnligheternas
+CUSTOM: y y sinnlighets
+665630r3<adjektiv>sinnrik:sinnrik:sinnrikt:sinnrika:sinnrika:sinnrikare:sinnrikast:sinnrikaste:sinnrike
+704484r3<substantiv>sinnrikhet:sinnrikhet:sinnrikhets:sinnrikheten:sinnrikhetens::::
+665635r3<substantiv>sinolog:sinolog:sinologs:sinologen:sinologens:sinologer:sinologers:sinologerna:sinologernas
+665643r3<substantiv>sinologi:sinologi:sinologis:sinologin:sinologins:!:!:!:!
+583744r3<adjektiv>sinologisk:sinologisk:sinologiskt:sinologiska:sinologiska::::
+620752r3<adverb>sinom:sinom
+620753r3<pronomen>sinom:sinom
+620754r3<adverb>sinsemellan:sinsemellan
+894567r7<adjektiv>sint:sint:sint:sinta:sinta:!:!:!:::::::::
+CUSTOM: n n y 
+935587r3<substantiv>sinter:sinter:sinters:sintern:sinterns::::
+CUSTOM: n n y
+821573r5<substantiv>sintring:sintring:sintrings:sintringen:sintringens::::
+CUSTOM: y y sintrings
+821577r4<substantiv>sintringsugn:sintringsugn:sintringsugns:sintringsugnen:sintringsugnens:sintringsugnar:sintringsugnars:sintringsugnarna:sintringsugnarnas
+COMPOUND(821573, 552067): sintring + ugn
+821585r3<substantiv>sintringsutrustning::::::::
+COMPOUND(821573, 631941): sintring + utrustning
+886701r3<substantiv>sinuit:sinuit:sinuits:sinuiten:sinuitens:sinuiter:sinuiters:sinuiterna:sinuiternas
+745659r4<substantiv>sinus:sinus:::::::
+CUSTOM: y n
+794832r3<adjektiv>sinusformad:sinusformad:sinusformat:sinusformade:sinusformade:!:!:!:
+576046r3<adjektiv>sinusformig:sinusformig:sinusformigt:sinusformiga:sinusformiga::::
+821586r3<substantiv>sinuskurva:sinuskurva:sinuskurvas:sinuskurvan:sinuskurvans:sinuskurvor:sinuskurvors:sinuskurvorna:sinuskurvornas
+821594r4<substantiv>sinuston:sinuston:sinustons:sinustonen:sinustonens:sinustoner:sinustoners:sinustonerna:sinustonernas
+COMPOUND(745659, 603900): sinus + ton
+558697r3<substantiv>sionism:sionism:sionisms:sionismen:sionismens:!:!:!:!
+713639r4<substantiv>sionist:sionist:sionists:sionisten:sionistens:sionister:sionisters:sionisterna:sionisternas
+DEFINITION 1: Anhängare av sionismen.
+CUSTOM: y y sionist
+583747r4<adjektiv>sionistisk:sionistisk:sionistiskt:sionistiska:sionistiska:!:!:!:sionistiske
+821603r4<substantiv>sioux:sioux:sioux:siouxen:siouxens:siouxer:siouxers:siouxerna:siouxernas
+CUSTOM: y y sioux
+821610r3<substantiv>siouxindian::::::::
+COMPOUND(821603, 549311): sioux + indian
+631523r7<adjektiv>sipp:sipp:sippt:sippa:sippa::::::::::::
+595107r3<substantiv>sippa:sippa:sippas:sippan:sippans:sippor:sippors:sipporna:sippornas
+631529r4<verb>sippa:sippa:sippade:sippat:sippar:sippa::::::::sippande:
+802092r3<adjektiv>sippblå:sippblå:sippblått:sippblåa:sippblåa::::
+CUSTOM: n n n
+821611r3<substantiv>sipphet:sipphet:sipphets:sippheten:sipphetens::::
+665647r4<verb>sippra:sippra:sipprade:sipprat:sipprar:sippra::::::::sipprande:
+595110r3<substantiv>sippranka:sippranka:sipprankas:sipprankan:sipprankans:sipprankor:sipprankors:sipprankorna:sipprankornas
+CUSTOM: n n n
+552903r8<substantiv>sir:sir:sirs:siret:sirets:!:!:!:!
+CUSTOM: n n n
+935660r3<substantiv>sir:sir:!:!:!:!:!:!:!
+696879r3<verb>sira:sira:sirade:sirat:sirar:sira:siras:sirades:sirats:siras:sirad:sirat:sirade::
+CUSTOM: n n y
+649248r4<substantiv>sirap:sirap:siraps:sirapen:sirapens::::
+CUSTOM: y y siraps
+846778r3<adjektiv>sirapslen:sirapslen:sirapslent:sirapslena:sirapslena::::
+776046r4<substantiv>sirapslimpa:sirapslimpa:sirapslimpas:sirapslimpan:sirapslimpans:sirapslimpor:sirapslimpors:sirapslimporna:sirapslimpornas
+COMPOUND(649248, 555496): sirap + limpa
+640397r5<adjektiv>sirapsstekt:sirapsstekt:sirapsstekt:sirapsstekta:sirapsstekta::::::::::::
+846781r3<adjektiv>sirapssöt:sirapssöt:sirapssött:sirapssöta:sirapssöta::::
+550496r3<substantiv>sirat:sirat:sirats:siraten:siratens:sirater:siraters:siraterna:siraternas
+567635r3<adjektiv>siratlig:siratlig:siratligt:siratliga:siratliga::::
+550498r7<substantiv>siren:siren:sirens:sirenen:sirenens:sirener:sireners:sirenerna:sirenernas
+CUSTOM: y n siren
+821615r4<substantiv>sirenlarm:sirenlarm:sirenlarms:sirenlarmet:sirenlarmets::::
+COMPOUND(550498, 552652): siren + larm
+553881r3<egennamn>Siri:Siri:Siris
+567638r5<adjektiv>sirlig:sirlig:sirligt:sirliga:sirliga:sirligare:sirligast:sirligaste:sirlige
+821620r3<substantiv>sirlighet:sirlighet:sirlighets:sirligheten:sirlighetens:sirligheter:sirligheters:sirligheterna:sirligheternas
+905923r5<substantiv>sisal:sisal:sisals:sisalen:sisalens:!:!:!:!
+CUSTOM: y n y
+963482r4<substantiv>sisalgarn:sisalgarn:sisalgarns:sisalgarnet:sisalgarnets:sisalgarner, sisalgarn:sisalgarners, sisalgarns:sisalgarnerna:sisalgarnernas
+COMPOUND(905923, 562361): sisal + garn
+963473r4<substantiv>sisalmatta:sisalmatta:sisalmattas:sisalmattan:sisalmattans:sisalmattor:sisalmattors:sisalmattorna:sisalmattornas
+COMPOUND(905923, 555187): sisal + matta
+972095r3<egennamn>Sissela:Sissela:Sisselas
+619540r3<adverb>sist:sist
+571193r3<adjektiv>sista:::sista:::::siste
+821629r3<substantiv>sistaplats:sistaplats:sistaplats:sistaplatsen:sistaplatsens:sistaplatser:sistaplatsers:sistaplatserna:sistaplatsernas
+696890r3<pronomen>sistas:sistas
+696886r3<pronomen>siste:siste
+696888r3<pronomen>sistes:sistes
+766283r3<adjektiv>sistfödd:sistfödd:sistfött:sistfödda:sistfödda:!:!:!:sistfödde
+821637r3<adjektiv>sistkommen:sistkommen:sistkommet:sistkommna:sistkommna:!:!:!:sistkomne
+745661r3<adjektiv>sistliden:sistliden:sistlidet:sistlidna:sistlidna::::
+665648r3<adjektiv>sistnämnd:sistnämnd:sistnämnt:sistnämnda:sistnämnda:!:!:!:sistnämnde
+665650r3<substantiv>sistone:sistone:::::::
+904881r3<substantiv>sisu:sisu:sisus:sisun:sisuns::::
+CUSTOM: y n
+794835r3<adjektiv>sisuladdad:sisuladdad:sisuladdat:sisuladdade:sisuladdade:!:!:!:
+821641r3<substantiv>sisyfosarbete:sisyfosarbete:sisyfosarbetes:sisyfosarbetet:sisyfosarbetets:sisyfosarbeten:sisyfosarbetens:sisyfosarbetena:sisyfosarbetenas
+620755r3<adverb>sisådär:sisådär
+860439r3<substantiv>sitar:sitar:sitars:sitaren:sitarens:sitarer:sitarers:sitarerna:sitarernas
+963492r3<substantiv>sitcom:sitcom:sitcoms::::::
+901873r4<substantiv>site:site:sites:siten:sitens:siter:siters:siterna:siternas
+DEFINITION 1: hemsida
+CUSTOM: n n n
+551829r5<substantiv>sits:sits:sits:sitsen:sitsens:sitsar:sitsars:sitsarna:sitsarnas
+886709r3<substantiv>sitsdyna:sitsdyna:sitsdynas:sitsdynan:sitsdynans:sitsdynor:sitsdynors:sitsdynorna:sitsdynornas
+619522r3<pronomen>sitt:sitt
+593332r9<verb>sitta:sitta:satt:suttit:sitter:sitt::::::::sittande:
+BASEWORDS: sitt
+CUSTOM: y y sitt
+696892r3<substantiv>sittande:sittande:sittandes:sittandet:sittandets::::
+886717r5<substantiv>sittben:sittben:sittbens:sittbenet:sittbenets:sittben:sittbens:sittbenen:sittbenens
+COMPOUND(593332, 552233): sitta + ben
+CUSTOM: y y sittbens
+886723r3<substantiv>sittbensknöl::::::::
+COMPOUND(886717, 551568): sittben + knöl
+665651r3<substantiv>sittning:sittning:sittnings:sittningen:sittningens:sittningar:sittningars:sittningarna:sittningarnas
+CUSTOM: y y sittnings
+550499r3<substantiv>sittplats:sittplats:sittplats:sittplatsen:sittplatsens:sittplatser:sittplatsers:sittplatserna:sittplatsernas
+CUSTOM: y y sittplats
+576049r3<adjektiv>sittriktig:sittriktig:sittriktigt:sittriktiga:sittriktiga::::
+567639r3<adjektiv>sittvänlig:sittvänlig:sittvänligt:sittvänliga:sittvänliga::::
+603507r15<substantiv>situation:situation:situations:situationen:situationens:situationer:situationers:situationerna:situationernas
+CUSTOM: y y situations +situations
+985945r3<substantiv>situationism:situationism:situationisms:situationismen:situationismens::::
+985937r3<substantiv>situationist:situationist:situationists:situationisten:situationistens:situationister:situationisters:situationisterna:situationisternas
+583750r3<adjektiv>situationistisk:situationistisk:situationistiskt:situationistiska:situationistiska::::
+567642r3<adjektiv>situationsenlig:situationsenlig:situationsenligt:situationsenliga:situationsenliga::::
+665652r4<substantiv>situationskomik:situationskomik:situationskomiks:situationskomiken:situationskomikens:!:!:!:!
+COMPOUND(603507, 625547): situation + komik
+821650r4<adjektiv>situationsrik:situationsrik:situationsrikt:situationsrika:situationsrika::::
+COMPOUND(603507, 563125): situation + rik
+794838r3<adjektiv>situerad:situerad:situerat:situerade:situerade:!:!:!:
+553883r3<egennamn>Siv:Siv:Sivs
+713004r3<egennamn>Siw:Siw:Siws
+554784r3<egennamn>Sivert:Sivert:Siverts
+554786r3<egennamn>Sixten:Sixten:Sixtens
+665656r3<substantiv>sjabbel:sjabbel:sjabbels:sjabblet:sjabblets::::
+576052r4<adjektiv>sjabbig:sjabbig:sjabbigt:sjabbiga:sjabbiga:sjabbigare:sjabbigast:sjabbigaste:sjabbige
+821658r3<substantiv>sjabbighet:sjabbighet:sjabbighets:sjabbigheten:sjabbighetens::::
+665660r4<verb>sjabbla:sjabbla:sjabblade:sjabblat:sjabblar:sjabbla:sjabblas:sjabblades:sjabblats:sjabblas::::sjabblande:
+576055r3<adjektiv>sjafsig:sjafsig:sjafsigt:sjafsiga:sjafsiga::::
+626202r5<substantiv>sjal:sjal:sjals:sjalen:sjalens:sjalar:sjalars:sjalarna:sjalarnas
+665664r3<substantiv>sjalett:sjalett:sjaletts:sjaletten:sjalettens:sjaletter:sjaletters:sjaletterna:sjaletternas
+886724r3<substantiv>sjalkrage:sjalkrage:sjalkrages:sjalkragen:sjalkragens:sjalkragar:sjalkragars:sjalkragarna:sjalkragarnas
+821666r3<verb>sjanghaja:sjanghaja:sjanghajade:sjanghajat:sjanghajar:sjanghaja:sjanghajas:sjanghajades:sjanghajats:sjanghajas:sjanghajad:sjanghajat:sjanghajade:sjanghajande:
+591061r3<verb>sjangsera:sjangsera:sjangserade:sjangserat:sjangserar:sjangsera:::::::::
+963495r3<verb>sjappa:sjappa:sjappade:sjappat:sjappar:sjappa:::::::::
+CUSTOM: y n
+956889r3<verb>sjasa:sjasa:sjasade:sjasat:sjasar:sjasa:sjasas:sjasades:sjasats:sjasas:::::
+CUSTOM: y n
+576058r4<adjektiv>sjaskig:sjaskig:sjaskigt:sjaskiga:sjaskiga:sjaskigare:sjaskigast:sjaskigaste:sjaskige
+821675r3<substantiv>sjaskighet:sjaskighet:sjaskighets:sjaskigheten:sjaskighetens:sjaskigheter:sjaskigheters:sjaskigheterna:sjaskigheternas
+576061r4<adjektiv>sjavig:sjavig:sjavigt:sjaviga:sjaviga:sjavigare:sjavigast:sjavigaste:sjavige
+985955r3<substantiv>sje-ljud:sje-ljud:sje-ljuds:sje-ljudet:sje-ljudets:sje-ljud:sje-ljuds:sje-ljuden:sje-ljudens
+985949r3<substantiv>sj-ljud:sj-ljud:sj-ljuds:sj-ljudet:sj-ljudets:sj-ljud:sj-ljuds:sj-ljuden:sj-ljudens
+628705r4<substantiv>sjok:sjok:sjoks:sjoket:sjokets:sjok:sjoks:sjoken:sjokens
+555178r3<räkneord>sju:sju
+557699r4<substantiv>sjua:sjua:sjuas:sjuan:sjuans:sjuor:sjuors:sjuorna:sjuornas
+DEFINITION 1: Siffran sju (7)
+665672r3<adjektiv>sjuarmad:sjuarmad:sjuarmat:sjuarmade:sjuarmade:!:!:!:
+626242r4<verb>sjuda:sjuda:sjöd:sjudit:sjuder:sjud:sjudas:sjöds:sjudits:sjuds::::sjudande:
+821688r3<substantiv>sjudning:sjudning:sjudnings:sjudningen:sjudningens::::
+576064r4<adjektiv>sjufaldig:sjufaldig:sjufaldigt:sjufaldiga:sjufaldiga:!:!:!:sjufaldige
+776047r3<adverb>sjufalt:sjufalt
+769960r3<substantiv>sjuglasvagn:sjuglasvagn:sjuglasvagns:sjuglasvagnen:sjuglasvagnens:sjuglasvagnar:sjuglasvagnars:sjuglasvagnarna:sjuglasvagnarnas
+576065r3<adjektiv>sjugradig:sjugradig:sjugradigt:sjugradiga:sjugradiga::::
+956594r3<adverb>sjuhelsikes:sjuhelsikes
+948589r3<adverb>sjuhelvetes:sjuhelvetes
+CUSTOM: b n y
+665673r3<räkneord>sjuhundra:sjuhundra
+666068r3<substantiv>sjuhundratal:sjuhundratal:sjuhundratals:sjuhundratalet:sjuhundratalets::::
+576068r3<adjektiv>sjuhundraårig:sjuhundraårig:sjuhundraårigt:sjuhundraåriga:sjuhundraåriga::::
+798833r3<adjektiv>sjuhörnig:sjuhörnig:sjuhörnigt:sjuhörniga:sjuhörniga::::
+923036r3<adjektiv>sjuhövdad:sjuhövdad:sjuhövdat:sjuhövdade:sjuhövdade:!:!:!:::::::::
+563030r19<adjektiv>sjuk:sjuk:sjukt:sjuka:sjuka:sjukare:sjukast:sjukaste:sjuke::::::::
+CUSTOM: y y sjuk
+758014r4<substantiv>sjuka:sjuka:sjukas:sjukan:sjukans:sjukor:sjukors:sjukorna:sjukornas
+745664r3<substantiv>sjukamp:sjukamp:sjukamps:sjukampen:sjukampens:sjukamper:sjukampers:sjukamperna:sjukampernas
+776049r3<substantiv>sjukampare:sjukampare:sjukampares:sjukamparen:sjukamparens:sjukampare:sjukampares:sjukamparna:sjukamparnas
+606367r3<substantiv>sjukavdelning:sjukavdelning:sjukavdelnings:sjukavdelningen:sjukavdelningens:sjukavdelningar:sjukavdelningars:sjukavdelningarna:sjukavdelningarnas
+CUSTOM: y n
+607954r3<substantiv>sjukbesök:sjukbesök:sjukbesöks:sjukbesöket:sjukbesökets:sjukbesök:sjukbesöks:sjukbesöken:sjukbesökens
+CUSTOM: y n
+665674r3<substantiv>sjukbidrag:sjukbidrag:sjukbidrags:sjukbidraget:sjukbidragets:sjukbidrag:sjukbidrags:sjukbidragen:sjukbidragens
+CUSTOM: y n
+852255r3<substantiv>sjukbår:sjukbår:sjukbårs:sjukbåren:sjukbårens:sjukbårar:sjukbårars:sjukbårarna:sjukbårarnas
+934653r4<substantiv>sjukbädd:sjukbädd:sjukbädds:sjukbädden:sjukbäddens:sjukbäddar:sjukbäddars:sjukbäddarna:sjukbäddarnas
+COMPOUND(563030, 550995): sjuk + bädd
+932514r4<substantiv>sjukdag:sjukdag:sjukdags:sjukdagen:sjukdagens:sjukdagar:sjukdagars:sjukdagarna:sjukdagarnas
+COMPOUND(563030, 551009): sjuk + dag
+551830r18<substantiv>sjukdom:sjukdom:sjukdoms:sjukdomen:sjukdomens:sjukdomar:sjukdomars:sjukdomarna:sjukdomarnas
+CUSTOM: y y sjukdoms
+616961r3<substantiv>sjukdomsfall:sjukdomsfall:sjukdomsfalls:sjukdomsfallet:sjukdomsfallets:sjukdomsfall:sjukdomsfalls:sjukdomsfallen:sjukdomsfallens
+CUSTOM: y n
+922295r4<substantiv>sjukdomshärd:sjukdomshärd:sjukdomshärds:sjukdomshärden:sjukdomshärdens:sjukdomshärdar:sjukdomshärdars:sjukdomshärdarna:sjukdomshärdarnas
+COMPOUND(551830, 551443): sjukdom + härd
+922551r3<adjektiv>sjukdomsmärkt:sjukdomsmärkt:sjukdomsmärkt:sjukdomsmärkta:sjukdomsmärkta::::sjukdomsmärkte::::::::
+678910r4<substantiv>sjukdomssymptom:sjukdomssymptom:sjukdomssymptoms:sjukdomssymptomet:sjukdomssymptomets:sjukdomssymptom:sjukdomssymptoms:sjukdomssymptomen:sjukdomssymptomens
+COMPOUND(551830, 608210): sjukdom + symptom
+CUSTOM: y n
+678960r4<substantiv>sjukdomssymtom:sjukdomssymtom:sjukdomssymtoms:sjukdomssymtomet:sjukdomssymtomets:sjukdomssymtom:sjukdomssymtoms:sjukdomssymtomen:sjukdomssymtomens
+COMPOUND(551830, 608214): sjukdom + symtom
+CUSTOM: y n
+861638r4<substantiv>sjukdomstillstånd:sjukdomstillstånd:sjukdomstillstånds:sjukdomstillståndet:sjukdomstillståndets:sjukdomstillstånd:sjukdomstillstånds:sjukdomstillstånden:sjukdomstillståndens
+COMPOUND(551830, 553043): sjukdom + tillstånd
+CUSTOM: y n
+665680r3<substantiv>sjukersättning:sjukersättning:sjukersättnings:sjukersättningen:sjukersättningens:sjukersättningar:sjukersättningars:sjukersättningarna:sjukersättningarnas
+CUSTOM: y n
+552906r3<substantiv>sjukfall:sjukfall:sjukfalls:sjukfallet:sjukfallets:sjukfall:sjukfalls:sjukfallen:sjukfallens
+CUSTOM: y n
+665685r3<substantiv>sjukfrånvaro:sjukfrånvaro:sjukfrånvaros:sjukfrånvaron:sjukfrånvarons:!:!:!:!
+CUSTOM: y n
+665687r4<substantiv>sjukförsäkring:sjukförsäkring:sjukförsäkrings:sjukförsäkringen:sjukförsäkringens:sjukförsäkringar:sjukförsäkringars:sjukförsäkringarna:sjukförsäkringarnas
+CUSTOM: y n
+550500r3<substantiv>sjukförsäkringsavgift:sjukförsäkringsavgift:sjukförsäkringsavgifts:sjukförsäkringsavgiften:sjukförsäkringsavgiftens:sjukförsäkringsavgifter:sjukförsäkringsavgifters:sjukförsäkringsavgifterna:sjukförsäkringsavgifternas
+CUSTOM: y n
+665688r3<substantiv>sjukförsäkringssystem:sjukförsäkringssystem:sjukförsäkringssystems:sjukförsäkringssystemet:sjukförsäkringssystemets::::
+CUSTOM: y n
+821192r4<substantiv>sjukförsäkringsåtgärd:sjukförsäkringsåtgärd:sjukförsäkringsåtgärds:sjukförsäkringsåtgärden:sjukförsäkringsåtgärdens:sjukförsäkringsåtgärder:sjukförsäkringsåtgärders:sjukförsäkringsåtgärderna:sjukförsäkringsåtgärdernas
+COMPOUND(665687, 550810): sjukförsäkring + åtgärd
+CUSTOM: y n
+665690r3<substantiv>sjukgymnast:sjukgymnast:sjukgymnasts:sjukgymnasten:sjukgymnastens:sjukgymnaster:sjukgymnasters:sjukgymnasterna:sjukgymnasternas
+CUSTOM: y n
+637677r4<substantiv>sjukgymnastik:sjukgymnastik:sjukgymnastiks:sjukgymnastiken:sjukgymnastikens::::
+CUSTOM: y n
+628085r7<substantiv>sjukhem:sjukhem:sjukhems:sjukhemmet:sjukhemmets:sjukhem:sjukhems:sjukhemmen:sjukhemmens
+COMPOUND(563030, 555169): sjuk + hem
+CUSTOM: y n
+627940r6<substantiv>sjukhemsvård:sjukhemsvård:sjukhemsvårds:sjukhemsvården:sjukhemsvårdens::::
+COMPOUND(628085, 599145): sjukhem + vård
+552907r10<substantiv>sjukhus:sjukhus:sjukhus:sjukhuset:sjukhusets:sjukhus:sjukhus:sjukhusen:sjukhusens
+COMPOUND(563030, 552480): sjuk + hus
+CUSTOM: y y sjukhus +sjukhus
+952852r4<substantiv>sjukhusakut:sjukhusakut:sjukhusakuts:sjukhusakuten:sjukhusakutens:sjukhusakuter:sjukhusakuters:sjukhusakuterna:sjukhusakuternas
+COMPOUND(552907, 600971): sjukhus + akut
+800277r3<adjektiv>sjukhusanställd:sjukhusanställd:sjukhusanställt:sjukhusanställda:sjukhusanställda::::
+CUSTOM: y n
+669181r3<substantiv>sjukhusavgift:sjukhusavgift:sjukhusavgifts:sjukhusavgiften:sjukhusavgiftens:sjukhusavgifter:sjukhusavgifters:sjukhusavgifterna:sjukhusavgifternas
+CUSTOM: y n
+952862r4<substantiv>sjukhusfilt:sjukhusfilt:sjukhusfilts:sjukhusfilten:sjukhusfiltens:sjukhusfiltar:sjukhusfiltars:sjukhusfiltarna:sjukhusfiltarnas
+COMPOUND(552907, 551129): sjukhus + filt
+599564r3<substantiv>sjukhussal:sjukhussal:sjukhussals:sjukhussalen:sjukhussalens:sjukhussalar:sjukhussalars:sjukhussalarna:sjukhussalarnas
+761565r3<substantiv>sjukhussjuka:sjukhussjuka:sjukhussjukas:sjukhussjukan:sjukhussjukans::::
+CUSTOM: y n
+665698r3<substantiv>sjukhusvård:sjukhusvård:sjukhusvårds:sjukhusvården:sjukhusvårdens::::
+CUSTOM: y n
+937659r3<substantiv>sjukintyg:sjukintyg:sjukintygs:sjukintyget:sjukintygets:sjukintyg:sjukintygs:sjukintygen:sjukintygens
+665700r3<substantiv>sjukkassa:sjukkassa:sjukkassas:sjukkassan:sjukkassans:sjukkassor:sjukkassors:sjukkassorna:sjukkassornas
+CUSTOM: y y sjukkasse
+576071r3<adjektiv>sjukledig:sjukledig:sjukledigt:sjuklediga:sjuklediga::::
+603508r3<substantiv>sjukledighet:sjukledighet:sjukledighets:sjukledigheten:sjukledighetens:sjukledigheter:sjukledigheters:sjukledigheterna:sjukledigheternas
+CUSTOM: y n
+567645r4<adjektiv>sjuklig:sjuklig:sjukligt:sjukliga:sjukliga:sjukligare:sjukligast:sjukligaste:sjuklige
+745672r3<substantiv>sjuklighet:sjuklighet:sjuklighets:sjukligheten:sjuklighetens::::
+745676r3<substantiv>sjukling:sjukling:sjuklings:sjuklingen:sjuklingens:sjuklingar:sjuklingars:sjuklingarna:sjuklingarnas
+821692r5<substantiv>sjuklön:sjuklön:sjuklöns:sjuklönen:sjuklönens:sjuklöner:sjuklöners:sjuklönerna:sjuklönernas
+COMPOUND(563030, 549976): sjuk + lön
+CUSTOM: y y sjuklöne
+821701r3<substantiv>sjuklöneperiod::::::::
+COMPOUND(821692, 550187): sjuklön + period
+665702r3<verb>sjukna:sjukna:sjuknade:sjuknat:sjuknar:sjukna:::::::::
+665704r3<substantiv>sjukpeng:sjukpeng:sjukpengs:sjukpengen:sjukpengens::::
+665706r3<substantiv>sjukpenning:sjukpenning:sjukpennings:sjukpenningen:sjukpenningens::::
+CUSTOM: y n sjukpenning
+895813r3<substantiv>sjukpenningförsäkring:sjukpenningförsäkring:sjukpenningförsäkrings:sjukpenningförsäkringen:sjukpenningförsäkringens:sjukpenningförsäkringar:sjukpenningförsäkringars:sjukpenningförsäkringarna:sjukpenningförsäkringarnas
+895821r3<substantiv>sjukpenningklass:sjukpenningklass:sjukpenningklass:sjukpenningklassen:sjukpenningklassens:sjukpenningklasser:sjukpenningklassers:sjukpenningklasserna:sjukpenningklassernas
+665711r3<substantiv>sjukpension:sjukpension:sjukpensions:sjukpensionen:sjukpensionens:sjukpensioner:sjukpensioners:sjukpensionerna:sjukpensionernas
+CUSTOM: n n y
+587994r4<verb>sjukpensionera:sjukpensionera:sjukpensionerade:sjukpensionerat:sjukpensionerar:sjukpensionera:sjukpensioneras:sjukpensionerades:sjukpensionerats:sjukpensioneras:sjukpensionerad:sjukpensionerat:sjukpensionerade::
+CUSTOM: n n y
+665719r3<substantiv>sjukpensionär:sjukpensionär:sjukpensionärs:sjukpensionären:sjukpensionärens:sjukpensionärer:sjukpensionärers:sjukpensionärerna:sjukpensionärernas
+CUSTOM: n n y
+932522r4<substantiv>sjukrum:sjukrum:sjukrums:sjukrummet:sjukrummets:sjukrum:sjukrums:sjukrummen:sjukrummens
+COMPOUND(563030, 571182): sjuk + rum
+599572r4<substantiv>sjuksal:sjuksal:sjuksals:sjuksalen:sjuksalens:sjuksalar:sjuksalars:sjuksalarna:sjuksalarnas
+COMPOUND(563030, 598801): sjuk + sal
+665727r4<verb>sjukskriva:sjukskriva:sjukskrev:sjukskrivit:sjukskriver:sjukskriv:sjukskrivas:sjukskrevs:sjukskrivits:sjukskrivs, sjukskrives:sjukskriven:sjukskrivet:sjukskrivna::
+COMPOUND(563030, 556530): sjuk + skriva
+666010r5<adjektiv>sjukskriven:sjukskriven:sjukskrivet:sjukskrivna:sjukskrivna:!:!:!:sjukskrivne:::sjukskrivnas:::::sjukskrivnes
+665729r4<substantiv>sjukskrivning:sjukskrivning:sjukskrivnings:sjukskrivningen:sjukskrivningens:sjukskrivningar:sjukskrivningars:sjukskrivningarna:sjukskrivningarnas
+CUSTOM: y y sjukskrivnings +sjukskrivnings
+665731r3<substantiv>sjukskrivningsgrad:sjukskrivningsgrad:sjukskrivningsgrads:sjukskrivningsgraden:sjukskrivningsgradens::::
+CUSTOM: n n y
+821703r4<substantiv>sjukskrivningstal:sjukskrivningstal:sjukskrivningstals:sjukskrivningstalet:sjukskrivningstalets:sjukskrivningstal:sjukskrivningstals:sjukskrivningstalen:sjukskrivningstalens
+COMPOUND(665729, 553029): sjukskrivning + tal
+610022r3<substantiv>sjukskötare:sjukskötare:sjukskötares:sjukskötaren:sjukskötarens:sjukskötare:sjukskötares:sjukskötarna:sjukskötarnas
+CUSTOM: y y sjukskötar
+595119r5<substantiv>sjuksköterska:sjuksköterska:sjuksköterskas:sjuksköterskan:sjuksköterskans:sjuksköterskor:sjuksköterskors:sjuksköterskorna:sjuksköterskornas
+CUSTOM: y y sjuksköterske
+745684r3<substantiv>sjuksköterskeutbildning::::::::
+COMPOUND(595119, 597810): sjuksköterska + utbildning
+666011r3<substantiv>sjuksyster:sjuksyster:sjuksysters:sjuksystern:sjuksysterns:sjuksystrar:sjuksystrars:sjuksystrarna:sjuksystrarnas
+821711r4<substantiv>sjuktal:sjuktal:sjuktals:sjuktalet:sjuktalets:sjuktal:sjuktals:sjuktalen:sjuktalens
+COMPOUND(563030, 553029): sjuk + tal
+665733r7<substantiv>sjukvård:sjukvård:sjukvårds:sjukvården:sjukvårdens::::
+CUSTOM: y y sjukvårds +sjukvårds
+779838r3<substantiv>sjukvårdare:sjukvårdare:sjukvårdares:sjukvårdaren:sjukvårdarens:sjukvårdare:sjukvårdares:sjukvårdarna:sjukvårdarnas
+800280r3<adjektiv>sjukvårdsanställd:sjukvårdsanställd:sjukvårdsanställt:sjukvårdsanställda:sjukvårdsanställda::::
+CUSTOM: n n y
+665735r3<substantiv>sjukvårdsarbete:sjukvårdsarbete:sjukvårdsarbetes:sjukvårdsarbetet:sjukvårdsarbetets::::
+CUSTOM: n n y
+734137r4<substantiv>sjukvårdsbehandling:sjukvårdsbehandling:sjukvårdsbehandlings:sjukvårdsbehandlingen:sjukvårdsbehandlingens:sjukvårdsbehandlingar:sjukvårdsbehandlingars:sjukvårdsbehandlingarna:sjukvårdsbehandlingarnas
+COMPOUND(665733, 592479): sjukvård + behandling
+CUSTOM: n n
+576074r3<adjektiv>sjukvårdskunnig:sjukvårdskunnig:sjukvårdskunnigt:sjukvårdskunniga:sjukvårdskunniga::::
+CUSTOM: n n
+776057r4<substantiv>sjukvårdskö:sjukvårdskö:sjukvårdskös:sjukvårdskön:sjukvårdsköns:sjukvårdsköer:sjukvårdsköers:sjukvårdsköerna:sjukvårdsköernas
+COMPOUND(665733, 557680): sjukvård + kö
+728677r3<substantiv>sjukvårdsområde:sjukvårdsområde:sjukvårdsområdes:sjukvårdsområdet:sjukvårdsområdets:sjukvårdsområden:sjukvårdsområdens:sjukvårdsområdena:sjukvårdsområdenas
+CUSTOM: n n
+806061r4<substantiv>sjukvårdstolk:sjukvårdstolk:sjukvårdstolks:sjukvårdstolken:sjukvårdstolkens:sjukvårdstolkar:sjukvårdstolkars:sjukvårdstolkarna:sjukvårdstolkarnas
+COMPOUND(665733, 552017): sjukvård + tolk
+CUSTOM: y n
+821718r3<substantiv>sjumannalag:sjumannalag:sjumannalags:sjumannalaget:sjumannalagets:sjumannalag:sjumannalags:sjumannalagen:sjumannalagens
+821731r3<substantiv>sjumilakliv:sjumilakliv:sjumilaklivs:sjumilaklivet:sjumilaklivets:sjumilakliv:sjumilaklivs:sjumilakliven:sjumilaklivens
+821724r3<substantiv>sjumilasteg:sjumilasteg:sjumilastegs:sjumilasteget:sjumilastegets:sjumilasteg:sjumilastegs:sjumilastegen:sjumilastegens
+665737r3<substantiv>sjumilastövel:sjumilastövel:sjumilastövels:sjumilastöveln:sjumilastövelns:sjumilastövlar:sjumilastövlars:sjumilastövlarna:sjumilastövlarnas
+571066r3<räkneord>sjunde:sjunde
+769968r3<substantiv>sjundedagsadventist:sjundedagsadventist:sjundedagsadventists:sjundedagsadventisten:sjundedagsadventistens:sjundedagsadventister:sjundedagsadventisters:sjundedagsadventisterna:sjundedagsadventisternas
+745685r3<substantiv>sjundedel:sjundedel:sjundedels:sjundedelen:sjundedelens:sjundedelar:sjundedelars:sjundedelarna:sjundedelarnas
+817985r3<substantiv>sjundeklassare:sjundeklassare:sjundeklassares:sjundeklassaren:sjundeklassarens:sjundeklassare:sjundeklassares:sjundeklassarna:sjundeklassarnas
+955365r3<substantiv>sjundeplacering:sjundeplacering:sjundeplacerings:sjundeplaceringen:sjundeplaceringens:sjundeplaceringar:sjundeplaceringars:sjundeplaceringarna:sjundeplaceringarnas
+690073r3<substantiv>sjundeplats:sjundeplats:sjundeplats:sjundeplatsen:sjundeplatsens:sjundeplatser:sjundeplatsers:sjundeplatserna:sjundeplatsernas
+592249r5<adjektiv>sjunderankad:sjunderankad:sjunderankat:sjunderankade:sjunderankade:!:!:!:::::::::
+583059r10<adjektiv>sjundeseedad:sjundeseedad:sjundeseedat:sjundeseedade:sjundeseedade:!:!:!:::::::::
+593333r8<verb>sjunga:sjunga:sjöng:sjungit:sjunger:sjung:sjungas:sjöngs:sjungits:sjungs, sjunges:sjungen:sjunget:sjungna:sjungande:
+696895r3<substantiv>sjungande:sjungande:sjungandes:sjungandet:sjungandets::::
+593337r5<verb>sjunka:sjunka:sjönk:sjunkit:sjunker:sjunk:!:!:!:!:sjunken:sjunket:sjunkna:sjunkande:
+593339r3<substantiv>sjunkbomb:sjunkbomb:sjunkbombs:sjunkbomben:sjunkbombens:sjunkbomber:sjunkbombers:sjunkbomberna:sjunkbombernas
+576077r3<adjektiv>sjunkfärdig:sjunkfärdig:sjunkfärdigt:sjunkfärdiga:sjunkfärdiga::::
+918519r3<substantiv>sjunkförlopp:sjunkförlopp:sjunkförlopps:sjunkförloppet:sjunkförloppets::::
+CUSTOM: y y sjunkförlopps
+973289r3<egennamn>Sjunnesson:Sjunnesson:Sjunnessons
+689535r3<substantiv>sjurummare:sjurummare:sjurummares:sjurummaren:sjurummarens:sjurummare:sjurummares:sjurummarna:sjurummarnas
+CUSTOM: y y sjurummar
+748654r3<substantiv>sjurumslägenhet:sjurumslägenhet:sjurum

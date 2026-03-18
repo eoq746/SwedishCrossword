@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using ClueHandler;
 using SwedishCrossword.Services;
 
 internal class Program
@@ -14,6 +15,27 @@ internal class Program
     static async Task Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+        // Support direct command-line invocation for non-interactive tasks
+        if (args.Length > 0 && args[0] == "--wiktionary")
+        {
+            await PopulateCluesFromWiktionaryAsync();
+            return;
+        }
+
+        if (args.Length > 0 && args[0] == "--compounds")
+        {
+            await CompoundClueGenerator.GenerateAsync(
+                DssoWordImporter.GetJsonFilePath());
+            return;
+        }
+
+        if (args.Length > 0 && args[0] == "--patterns")
+        {
+            await PatternClueGenerator.GenerateAsync(
+                DssoWordImporter.GetJsonFilePath());
+            return;
+        }
 
         Console.WriteLine("Svenskt Korsord Clue Handler");
         Console.WriteLine("============================");
@@ -37,6 +59,7 @@ internal class Program
                 Console.WriteLine("1. Visa ordlistestatistik");
                 Console.WriteLine("2. Lägg till nya ord");
                 Console.WriteLine("3. Redigera ledtrådar");
+                Console.WriteLine("4. Hämta ledtrådar från Wiktionary (automatiskt)");
                 Console.WriteLine("0. Avsluta");
                 Console.WriteLine();
                 Console.Write("Ditt val: ");
@@ -59,6 +82,11 @@ internal class Program
                         case "3":
                             ModifyClues();
                             break;
+
+                        case "4":
+                            await PopulateCluesFromWiktionaryAsync();
+                            break;
+
                         case "0":
                             Console.WriteLine("Tack för att du använde Svenskt Korsord Clue Handler!");
                             return;
@@ -97,7 +125,8 @@ internal class Program
             ["1"] = KellyWordImporter.GetJsonFilePath(),
             ["2"] = LexinWordImporter.GetJsonFilePath(),
             ["3"] = SynonymPairImporter.GetJsonFilePath(),
-            ["4"] = GetCustomWordsFilePath()
+            ["4"] = GetCustomWordsFilePath(),
+            ["5"] = DssoWordImporter.GetJsonFilePath()
         };
 
         Console.WriteLine("Tillgängliga filer med ledtrådar:");
@@ -138,10 +167,14 @@ internal class Program
         var lengthInput = Console.ReadLine()?.Trim();
         int.TryParse(lengthInput, out var lengthFilter);
 
+        Console.Write("Filtrera på ledtråd (Enter för alla): ");
+        var clueFilter = Console.ReadLine()?.Trim();
+
         var targets = entries
             .Select((entry, index) => (entry, index))
             .Where(x => string.IsNullOrEmpty(search) || x.entry.Word.Contains(search, StringComparison.OrdinalIgnoreCase))
             .Where(x => lengthFilter <= 0 || x.entry.Word.Length == lengthFilter)
+            .Where(x => string.IsNullOrEmpty(clueFilter) || x.entry.Clue.Contains(clueFilter, StringComparison.OrdinalIgnoreCase))
             .ToList();
 
         if (targets.Count == 0)
@@ -150,17 +183,19 @@ internal class Program
             return;
         }
 
-        Console.WriteLine($"Hittade {targets.Count} ord. Tryck Enter för att hoppa över. Skriv 'q' för att avsluta.");
+        Console.WriteLine($"Hittade {targets.Count} ord. Tryck Enter för att hoppa över. Skriv 'q' för att avsluta. Skriv 'del' för att ta bort ordet.");
         Console.WriteLine();
 
         var modified = 0;
+        var removed = 0;
+        var indicesToRemove = new HashSet<int>();
         var current = 0;
         foreach (var (entry, index) in targets)
         {
             current++;
             Console.WriteLine($"[{current}/{targets.Count}] Ord: {entry.Word} ({entry.Category})");
             Console.WriteLine($"  Nuvarande: {entry.Clue}");
-            Console.Write("  Ny ledtråd: ");
+            Console.Write("  Ny ledtråd (eller 'del' för att ta bort): ");
 
             var input = Console.ReadLine()?.Trim();
 
@@ -170,7 +205,13 @@ internal class Program
                 break;
             }
 
-            if (!string.IsNullOrEmpty(input))
+            if (string.Equals(input, "del", StringComparison.OrdinalIgnoreCase))
+            {
+                indicesToRemove.Add(index);
+                removed++;
+                Console.WriteLine($"  ✗ Markerad för borttagning");
+            }
+            else if (!string.IsNullOrEmpty(input))
             {
                 entries[index].Clue = input;
                 modified++;
@@ -183,11 +224,17 @@ internal class Program
             Console.WriteLine();
         }
 
-        if (modified > 0)
+        if (removed > 0)
+        {
+            entries = entries.Where((_, i) => !indicesToRemove.Contains(i)).ToList();
+            Console.WriteLine($"Tog bort {removed} ord.");
+        }
+
+        if (modified > 0 || removed > 0)
         {
             var output = JsonSerializer.Serialize(entries, JsonOptions);
             File.WriteAllText(filePath, output, Encoding.UTF8);
-            Console.WriteLine($"Sparade {modified} ändrade ledtrådar till: {filePath}");
+            Console.WriteLine($"Sparade ändringar ({modified} uppdaterade, {removed} borttagna) till: {filePath}");
         }
         else
         {
@@ -280,6 +327,40 @@ internal class Program
         else
         {
             Console.WriteLine("Inga ord lades till.");
+        }
+    }
+
+    private static async Task PopulateCluesFromWiktionaryAsync()
+    {
+        var jsonPath = DssoWordImporter.GetJsonFilePath();
+
+        if (!File.Exists(jsonPath))
+        {
+            Console.WriteLine($"Filen finns inte: {jsonPath}");
+            return;
+        }
+
+        Console.WriteLine("Hämtar ledtrådar från svenska Wiktionary för alla ord med '___'.");
+        Console.WriteLine("Framsteg sparas automatiskt. Avbryt med Ctrl+C.");
+        Console.WriteLine();
+
+        using var cts = new CancellationTokenSource();
+        Console.CancelKeyPress += (_, e) =>
+        {
+            e.Cancel = true;
+            cts.Cancel();
+            Console.WriteLine("\nAvbryter... sparar framsteg.");
+        };
+
+        using var service = new WiktionaryClueService();
+
+        try
+        {
+            await service.PopulateFromDumpAsync(jsonPath, cts.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            Console.WriteLine("Processen avbröts. Framsteg har sparats.");
         }
     }
 

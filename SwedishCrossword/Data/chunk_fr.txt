@@ -1,0 +1,626 @@
+t:segelfärdiga:segelfärdiga::::
+607931r3<substantiv>segelgarn:segelgarn:segelgarns:segelgarnet:segelgarnets:segelgarn:segelgarns:segelgarnen:segelgarnens
+575930r3<adjektiv>segelkunnig:segelkunnig:segelkunnigt:segelkunniga:segelkunniga::::
+846770r4<substantiv>segelled:segelled:segelleds:segelleden:segelledens:segelleder:segelleders:segellederna:segelledernas
+COMPOUND(555846, 556257): segel + led
+607937r3<substantiv>segelsällskap:segelsällskap:segelsällskaps:segelsällskapet:segelsällskapets:segelsällskap:segelsällskaps:segelsällskapen:segelsällskapens
+CUSTOM: y y segelsällskaps
+852196r3<substantiv>segelsöm:segelsöm:segelsöms:segelsömmen:segelsömmens:segelsömmar:segelsömmars:segelsömmarna:segelsömmarnas
+824214r3<substantiv>segeltur:segeltur:segelturs:segelturen:segelturens:segelturer:segelturers:segelturerna:segelturernas
+556336r26<substantiv>seger:seger:segers:segern:segerns:segrar:segrars:segrarna:segrarnas
+CUSTOM: y y seger
+955973r4<substantiv>segerblot:segerblot:segerblots:segerblotet:segerblotets:segerblot:segerblots:segerbloten:segerblotens
+COMPOUND(556336, 629277): seger + blot
+760472r4<substantiv>segerbud:segerbud:segerbuds:segerbudet:segerbudets:segerbud:segerbuds:segerbuden:segerbudens
+COMPOUND(556336, 552287): seger + bud
+643512r6<substantiv>segerdans:segerdans:segerdans:segerdansen:segerdansens:segerdanser:segerdansers:segerdanserna:segerdansernas
+COMPOUND(556336, 548569): seger + dans
+952783r4<substantiv>segerdopp:segerdopp:segerdopps:segerdoppet:segerdoppets:segerdopp:segerdopps:segerdoppen:segerdoppens
+COMPOUND(556336, 552327): seger + dopp
+952791r4<substantiv>segerflin:segerflin:segerflins:segerflinet:segerflinets:segerflin:segerflins:segerflinen:segerflinens
+COMPOUND(556336, 561448): seger + flin
+794749r3<adjektiv>segerglad:segerglad:segerglat:segerglade:segerglade:!:!:!:
+664999r3<substantiv>segerglädje:segerglädje:segerglädjes:segerglädjen:segerglädjens:!:!:!:!
+556338r3<substantiv>segergudinna:segergudinna:segergudinnas:segergudinnan:segergudinnans:segergudinnor:segergudinnors:segergudinnorna:segergudinnornas
+665001r3<substantiv>segerherre:segerherre:segerherres:segerherren:segerherrens:segerherrar:segerherrars:segerherrarna:segerherrarnas
+665016r3<substantiv>segerjubel:segerjubel:segerjubels:segerjublet:segerjublets::::
+665019r3<substantiv>segerkrans:segerkrans:segerkrans:segerkransen:segerkransens:segerkransar:segerkransars:segerkransarna:segerkransarnas
+556346r4<substantiv>segermål:segermål:segermåls:segermålet:segermålets:segermål:segermåls:segermålen:segermålens
+COMPOUND(556336, 552705): seger + mål
+760478r3<adjektiv>segerrik:segerrik:segerrikt:segerrika:segerrika:segerrikare:segerrikast:segerrikaste:segerrike
+852204r3<substantiv>segerrop:segerrop:segerrops:segerropet:segerropets:segerrop:segerrops:segerropen:segerropens
+775864r3<substantiv>segerrus:segerrus:segerrus:segerruset:segerrusets::::
+556352r3<adjektiv>segerrusig:segerrusig:segerrusigt:segerrusiga:segerrusiga::::segerrusige
+665025r3<substantiv>segersiffra:segersiffra:segersiffras:segersiffran:segersiffrans:segersiffror:segersiffrors:segersiffrorna:segersiffrornas
+936675r4<substantiv>segersvit:segersvit:segersvits:segersviten:segersvitens:segersviter:segersviters:segersviterna:segersviternas
+COMPOUND(556336, 550602): seger + svit
+665034r3<adjektiv>segersäll:segersäll:segersällt:segersälla:segersälla:!:!:!:segersälle
+768850r4<substantiv>segertal:segertal:segertals:segertalet:segertalets:segertal:segertals:segertalen:segertalens
+COMPOUND(556336, 553029): seger + tal
+665051r3<substantiv>segertecken:segertecken:segerteckens:segertecknet:segertecknets::::
+665066r3<substantiv>segertid:segertid:segertids:segertiden:segertidens:segertider:segertiders:segertiderna:segertidernas
+794752r3<adjektiv>segertippad:segertippad:segertippat:segertippade:segertippade:!:!:!:
+552885r3<substantiv>segertåg:segertåg:segertågs:segertåget:segertågets:segertåg:segertågs:segertågen:segertågens
+665074r3<substantiv>segervapen:segervapen:segervapens:segervapnet:segervapnets::::
+556356r4<adjektiv>segerviss:segerviss:segervisst:segervissa:segervissa:segervissare:segervissast:segervissaste:segervisse
+665094r3<substantiv>segervittring:segervittring:segervittrings:segervittringen:segervittringens::::
+CUSTOM: y y segervittrings
+665098r3<substantiv>segeryra:segeryra:segeryras:segeryran:segeryrans::::
+665103r3<adjektiv>segflytande:segflytande:segflytande:segflytande:segflytande:!:!:!:
+665111r5<substantiv>seghet:seghet:seghets:segheten:seghetens::::
+CUSTOM: y y seghets
+570054r3<adjektiv>seghärdbar:seghärdbar:seghärdbart:seghärdbara:seghärdbara::::
+729737r4<substantiv>segjärn:segjärn:segjärns:segjärnet:segjärnets:segjärn:segjärns:segjärnen:segjärnens
+COMPOUND(556318, 552537): seg + järn
+CUSTOM: y n n
+547641r5<verb>segla:segla:seglade:seglat:seglar:segla:seglas:seglades:seglats:seglas::::seglande:
+696862r3<substantiv>seglande:seglande:seglandes:seglandet:seglandets::::
+556358r4<substantiv>seglare:seglare:seglares:seglaren:seglarens:seglare:seglares:seglarna:seglarnas
+CUSTOM: y y seglar +seglar
+622126r3<substantiv>seglats:seglats:seglats:seglatsen:seglatsens:seglatser:seglatsers:seglatserna:seglatsernas
+665133r4<substantiv>segling:segling:seglings:seglingen:seglingens:seglingar:seglingars:seglingarna:seglingarnas
+798806r3<adjektiv>seglingsduglig:seglingsduglig:seglingsdugligt:seglingsdugliga:seglingsdugliga::::
+556359r3<adjektiv>seglivad:seglivad:seglivat:seglivade:seglivade::::
+552887r4<substantiv>segment:segment:segments:segmentet:segmentets:segment:segments:segmenten:segmentens
+CUSTOM: y y segment
+766266r3<substantiv>segmentbåge::::::::
+COMPOUND(552887, 560891): segment + båge
+985726r3<adjektiv>segmentell:segmentell:segmentellt:segmentella:segmentella::::::::::::
+547642r4<verb>segmentera:segmentera:segmenterade:segmenterat:segmenterar:segmentera:segmenteras:segmenterades:segmenterats:segmenteras:segmenterad:segmenterat:segmenterade::
+556360r4<substantiv>segmentering:segmentering:segmenterings:segmenteringen:segmenteringens:segmenteringar:segmenteringars:segmenteringarna:segmenteringarnas
+CUSTOM: y y segmenterings
+794755r3<adjektiv>segmentformad:segmentformad:segmentformat:segmentformade:segmentformade:!:!:!:
+575933r3<adjektiv>segmentformig:segmentformig:segmentformigt:segmentformiga:segmentformiga::::
+556361r3<verb>segna:segna:segnade:segnat:segnar:segna:::::::::
+CUSTOM: y n
+556362r4<verb>segra:segra:segrade:segrat:segrar:segra::::::::segrande:
+556363r4<substantiv>segrare:segrare:segrares:segraren:segrarens:segrare:segrares:segrarna:segrarnas
+CUSTOM: y y segrar +segrar
+556364r3<substantiv>segrarinna:segrarinna:segrarinnas:segrarinnan:segrarinnans:segrarinnor:segrarinnors:segrarinnorna:segrarinnornas
+633505r4<substantiv>segregation:segregation:segregations:segregationen:segregationens:segregationer:segregationers:segregationerna:segregationernas
+CUSTOM: y y segregations
+547643r6<verb>segregera:segregera:segregerade:segregerat:segregerar:segregera:segregeras:segregerades:segregerats:segregeras:segregerad:segregerat:segregerade:segregerande:
+591605r3<adjektiv>segregerad:segregerad:segregerat:segregerade:segregerade:!:!:!:
+775867r3<substantiv>segregering:segregering:segregerings:segregeringen:segregeringens::::
+555855r4<adjektiv>segsliten:segsliten:segslitet:segslitna:segslitna:segslitnare:segslitnast:segslitnaste:
+959157r4<substantiv>segway:segway:segways::::::
+959161r4<substantiv>segwaypolo:segwaypolo:segwaypolos:segwaypolon:segwaypolons::::
+COMPOUND(959157, 631509): segway + polo
+583619r3<adjektiv>seismisk:seismisk:seismiskt:seismiska:seismiska::::
+775871r3<substantiv>seismograf:seismograf:seismografs:seismografen:seismografens:seismografer:seismografers:seismograferna:seismografernas
+583622r3<adjektiv>seismografisk:seismografisk:seismografiskt:seismografiska:seismografiska::::
+665164r3<substantiv>seismolog:seismolog:seismologs:seismologen:seismologens:seismologer:seismologers:seismologerna:seismologernas
+665160r3<substantiv>seismologi:seismologi:seismologis:seismologin:seismologins::::
+583625r3<adjektiv>seismologisk:seismologisk:seismologiskt:seismologiska:seismologiska::::
+985729r3<substantiv>seismometer:seismometer:seismometers:seismometern:seismometerns:seismometrar:seismometrars:seismometrarna:seismometrarnas
+583628r3<adjektiv>seismoskopisk:seismoskopisk:seismoskopiskt:seismoskopiska:seismoskopiska::::
+551824r4<substantiv>sej:sej:sejs:sejen:sejens:sejar:sejars:sejarna:sejarnas
+555858r3<substantiv>sejdel:sejdel:sejdels:sejdeln:sejdelns:sejdlar:sejdlars:sejdlarna:sejdlarnas
+963352r4<substantiv>sejfilé:sejfilé:sejfilés:sejfilén:sejfiléns:sejfiléer:sejfiléers:sejfiléerna:sejfiléernas
+COMPOUND(551824, 561718): sej + filé
+550467r3<substantiv>sejour:sejour:sejours:sejouren:sejourens:sejourer:sejourers:sejourerna:sejourernas
+925714r3<substantiv>sekant:sekant:sekants:sekanten:sekantens:sekanter:sekanters:sekanterna:sekanternas
+CUSTOM: y n
+556374r3<substantiv>sekatör:sekatör:sekatörs:sekatören:sekatörens:sekatörer:sekatörers:sekatörerna:sekatörernas
+622119r10<substantiv>sekel:sekel:sekels:seklet:seklets:sekler, sekel:seklers, sekels:seklerna, seklen:seklernas, seklens
+CUSTOM: y y sekel
+665173r4<adjektiv>sekelgammal:sekelgammal:sekelgammalt:sekelgamla:sekelgamla:!:!:!:sekelgamle
+COMPOUND(622119, 555200): sekel + gammal
+665178r4<adjektiv>sekellång:sekellång:sekellångt:sekellånga:sekellånga:!:!:!:!
+COMPOUND(622119, 564697): sekel + lång
+556382r4<substantiv>sekelskifte:sekelskifte:sekelskiftes:sekelskiftet:sekelskiftets:sekelskiften:sekelskiftens:sekelskiftena:sekelskiftenas
+CUSTOM: y y sekelskiftes
+775879r4<substantiv>sekelskifteshus:sekelskifteshus:sekelskifteshus:sekelskifteshuset:sekelskifteshusets:sekelskifteshus:sekelskifteshus:sekelskifteshusen:sekelskifteshusens
+COMPOUND(556382, 552480): sekelskifte + hus
+927073r3<substantiv>sekin:sekin:sekins:sekinen:sekinens:sekiner:sekiners:sekinerna:sekinernas
+854205r3<egennamn>Seko:Seko:Sekos
+665182r4<substantiv>sekond:sekond:sekonds:sekonden:sekondens:sekonder:sekonders:sekonderna:sekondernas
+CUSTOM: y y sekond
+963362r3<verb>sekondera:sekondera:sekonderade:sekonderat:sekonderar:sekondera:sekonderas:sekonderades:sekonderats:sekonderas:sekonderad:sekonderat:sekonderade:sekonderande:
+674476r4<substantiv>sekondofficer:sekondofficer:sekondofficers:sekondofficeren, sekondofficern:sekondofficerens, sekondofficerns:sekondofficerer, sekondofficerare:sekondofficerers, sekondofficerare:sekondofficererna, sekondofficerarna:sekondofficerernas, sekondofficerarnas
+COMPOUND(665182, 603028): sekond + officer
+622122r3<substantiv>sekret:sekret:sekrets:sekretet:sekretets:sekret:sekrets:sekreten:sekretens
+552889r3<substantiv>sekretariat:sekretariat:sekretariats:sekretariatet:sekretariatets:sekretariat:sekretariats:sekretariaten:sekretariatens
+CUSTOM: y y sekretariats
+615435r7<substantiv>sekreterare:sekreterare:sekreterares:sekreteraren:sekreterarens:sekreterare:sekreterares:sekreterarna:sekreterarnas
+CUSTOM: y y sekreterar +sekreterar
+622133r4<substantiv>sekretess:sekretess:sekretess:sekretessen:sekretessens::::
+CUSTOM: y y sekretess
+665197r3<adjektiv>sekretessbelagd:sekretessbelagd:sekretessbelagt:sekretessbelagda:sekretessbelagda:!:!:!:!
+725795r6<verb>sekretessbelägga:sekretessbelägga:sekretessbelade:sekretessbelagt:sekretessbelägger:sekretessbelägg:sekretessbeläggas:sekretessbelades:sekretessbelagts:sekretessbeläggs:sekretessbelagd:sekretessbelagt:sekretessbelagda:sekretessbeläggande:
+COMPOUND(622133, 592503): sekretess + belägga
+665211r3<substantiv>sekretesskäl:sekretesskäl:::::::
+583631r3<adjektiv>sekretorisk:sekretorisk:sekretoriskt:sekretoriska:sekretoriska::::
+665203r3<substantiv>sekretär:sekretär:sekretärs:sekretären:sekretärens:sekretärer:sekretärers:sekretärerna:sekretärernas
+550469r4<substantiv>sekt:sekt:sekts:sekten:sektens:sekter:sekters:sekterna:sekternas
+CUSTOM: y y sekt
+583634r3<adjektiv>sekterisk:sekterisk:sekteriskt:sekteriska:sekteriska::::
+558495r3<substantiv>sekterism:sekterism:sekterisms:sekterismen:sekterismens:!:!:!:!
+583637r3<adjektiv>sekteristisk:sekteristisk:sekteristiskt:sekteristiska:sekteristiska::::
+633910r7<substantiv>sektion:sektion:sektions:sektionen:sektionens:sektioner:sektioners:sektionerna:sektionernas
+CUSTOM: y y sektions +sektions
+587936r4<verb>sektionera:sektionera:sektionerade:sektionerat:sektionerar:sektionera:sektioneras:sektionerades:sektionerats:sektioneras:sektionerad:sektionerat:sektionerade:sektionerande:
+788982r4<substantiv>sektionskod:sektionskod:sektionskods:sektionskoden:sektionskodens:sektionskoder:sektionskoders:sektionskoderna:sektionskodernas
+COMPOUND(633910, 549543): sektion + kod
+665212r4<substantiv>sektledare:sektledare:sektledares:sektledaren:sektledarens:sektledare:sektledares:sektledarna:sektledarnas
+COMPOUND(550469, 609818): sekt + ledare
+CUSTOM: y y sektledar
+622134r9<substantiv>sektor:sektor:sektors:sektorn:sektorns:sektorer:sektorers:sektorerna:sektorernas
+CUSTOM: y y sektors +sektors
+794758r3<adjektiv>sektorformad:sektorformad:sektorformat:sektorformade:sektorformade:!:!:!:
+575936r3<adjektiv>sektorformig:sektorformig:sektorformigt:sektorformiga:sektorformiga::::
+942015r4<substantiv>sektorfyr:sektorfyr:sektorfyrs:sektorfyren:sektorfyrens:sektorfyrar:sektorfyrars:sektorfyrarna:sektorfyrarnas
+COMPOUND(622134, 551200): sektor + fyr
+587940r3<verb>sektorisera:sektorisera:sektoriserade:sektoriserat:sektoriserar:sektorisera:::::::::
+587944r4<verb>sekularisera:sekularisera:sekulariserade:sekulariserat:sekulariserar:sekularisera:sekulariseras:sekulariserades:sekulariserats:sekulariseras:sekulariserad:sekulariserat:sekulariserade:sekulariserande:
+665218r3<adjektiv>sekulariserad:sekulariserad:sekulariserat:sekulariserade:sekulariserade:!:!:!:
+665219r3<substantiv>sekularisering:sekularisering:sekulariserings:sekulariseringen:sekulariseringens:!:!:!:!
+CUSTOM: y y sekulariserings
+918325r3<substantiv>sekularism:sekularism:sekularisms:sekularismen:sekularismens::::
+665223r4<adjektiv>sekulär:sekulär:sekulärt:sekulära:sekulära::::sekuläre::::::::
+550470r6<substantiv>sekund:sekund:sekunds:sekunden:sekundens:sekunder:sekunders:sekunderna:sekundernas
+CUSTOM: y y sekund
+665226r3<adjektiv>sekunda:sekunda:sekunda:sekunda:sekunda:!:!:!:
+665228r3<substantiv>sekundant:sekundant:sekundants:sekundanten:sekundantens:sekundanter:sekundanters:sekundanterna:sekundanternas
+587948r3<verb>sekundera:sekundera:sekunderade:sekunderat:sekunderar:sekundera:::::::::
+798810r3<adjektiv>sekundsnabb:sekundsnabb:sekundsnabbt:sekundsnabba:sekundsnabba::::
+665236r4<substantiv>sekundstrid:sekundstrid:sekundstrids:sekundstriden:sekundstridens:sekundstrider:sekundstriders:sekundstriderna:sekundstridernas
+COMPOUND(550470, 619729): sekund + strid
+632052r4<substantiv>sekundvisare:sekundvisare:sekundvisares:sekundvisaren:sekundvisarens:sekundvisare:sekundvisares:sekundvisarna:sekundvisarnas
+COMPOUND(550470, 620124): sekund + visare
+CUSTOM: y y sekundvisar
+665245r4<adjektiv>sekundär:sekundär:sekundärt:sekundära:sekundära:!:!:!:
+CUSTOM: y n sekundär
+875305r4<substantiv>sekundärbindning:sekundärbindning:sekundärbindnings:sekundärbindningen:sekundärbindningens:sekundärbindningar:sekundärbindningars:sekundärbindningarna:sekundärbindningarnas
+COMPOUND(665245, 592779): sekundär + bindning
+550472r5<substantiv>sekvens:sekvens:sekvens:sekvensen:sekvensens:sekvenser:sekvensers:sekvenserna:sekvensernas
+721333r3<verb>sekvensera:sekvensera:sekvenserade:sekvenserat:sekvenserar:sekvensera:sekvenseras:sekvenserades:sekvenserats:sekvenseras:sekvenserad:sekvenserat:sekvenserade:sekvenserande:
+665247r3<adjektiv>sekventiell:sekventiell:sekventiellt:sekventiella:sekventiella:!:!:!:!
+591009r3<verb>sekvestrera:sekvestrera:sekvestrerade:sekvestrerat:sekvestrerar:sekvestrera:::::::::
+894768r3<verb>sela:sela:selade:selat:selar:sela:selas:selades:selats:selas:selad:selat:selade:!:
+665250r3<substantiv>seldon:seldon:seldons:seldonet:seldonets:seldon:seldons:seldonen:seldonens
+628694r5<substantiv>sele:sele:seles:selen:selens:selar:selars:selarna:selarnas
+587952r4<verb>selektera:selektera:selekterade:selekterat:selekterar:selektera:selekteras:selekterades:selekterats:selekteras:selekterad:selekterat:selekterade:selekterande:
+888839r3<substantiv>selektering:selektering:selekterings:selekteringen:selekteringens:selekteringar:selekteringars:selekteringarna:selekteringarnas
+665256r3<substantiv>selektion:selektion:selektions:selektionen:selektionens:selektioner:selektioners:selektionerna:selektionernas
+CUSTOM: y y selektions
+665261r3<adjektiv>selektiv:selektiv:selektivt:selektiva:selektiva::::
+665262r3<substantiv>selektivitet:selektivitet:selektivitets:selektiviteten:selektivitetens::::
+665267r3<substantiv>selen:selen:selens:selenet:selenets:!:!:!:!
+575939r3<adjektiv>selenhaltig:selenhaltig:selenhaltigt:selenhaltiga:selenhaltiga::::
+583640r3<adjektiv>seleukidisk:seleukidisk:seleukidiskt:seleukidiska:seleukidiska::::
+973281r3<egennamn>Selin:Selin:Selins
+745586r4<substantiv>selleri:selleri:selleris:sellerin:sellerins::::
+CUSTOM: y y selleri
+942399r4<substantiv>sellerirot:sellerirot:sellerirots:selleriroten:sellerirotens:sellerirötter:sellerirötters:sellerirötterna:sellerirötternas
+COMPOUND(745586, 561217): selleri + rot
+745594r3<egennamn>Selma:Selma:Selmas
+626216r3<substantiv>selot:selot:selots:seloten:selotens:seloter:seloters:seloterna:seloternas
+583643r3<adjektiv>selotisk:selotisk:selotiskt:selotiska:selotiska::::
+550473r3<substantiv>semafor:semafor:semafors:semaforen:semaforens:semaforer:semaforers:semaforerna:semaforernas
+587956r3<verb>semaforera:semaforera:semaforerade:semaforerat:semaforerar:semaforera:::::::::
+665270r3<substantiv>semantik:semantik:semantiks:semantiken:semantikens:!:!:!:!
+583646r3<adjektiv>semantisk:semantisk:semantiskt:semantiska:semantiska::::
+583647r3<adjektiv>semasiologisk:semasiologisk:semasiologiskt:semasiologiska:semasiologiska::::
+622135r11<substantiv>semester:semester:semesters:semestern:semesterns:semestrar:semestrars:semestrarna:semestrarnas
+CUSTOM: y y semester
+702970r4<substantiv>semesterby:semesterby:semesterbys:semesterbyn:semesterbyns:semesterbyar:semesterbyars:semesterbyarna:semesterbyarnas
+COMPOUND(622135, 557655): semester + by
+610015r3<substantiv>semesterfirare:semesterfirare:semesterfirares:semesterfiraren:semesterfirarens:semesterfirare:semesterfirares:semesterfirarna:semesterfirarnas
+CUSTOM: y y semesterfirar
+575942r3<adjektiv>semesterledig:semesterledig:semesterledigt:semesterlediga:semesterlediga::::
+953760r4<substantiv>semesterlunk:semesterlunk:semesterlunks:semesterlunken:semesterlunkens::::
+COMPOUND(622135, 642775): semester + lunk
+603458r3<substantiv>semesterlön:semesterlön:semesterlöns:semesterlönen:semesterlönens:semesterlöner:semesterlöners:semesterlönerna:semesterlönernas
+852210r3<substantiv>semesterort:semesterort:semesterorts:semesterorten:semesterortens:semesterorter:semesterorters:semesterorterna:semesterorternas
+854370r4<substantiv>semesterspartips:semesterspartips:semesterspartips:semesterspartipset:semesterspartipsets:semesterspartips:semesterspartips:semesterspartipsen:semesterspartipsens
+COMPOUND(622135, 854376): semester + spartips
+875763r3<substantiv>semesterstuga:semesterstuga:semesterstugas:semesterstugan:semesterstugans:semesterstugor:semesterstugors:semesterstugorna:semesterstugornas
+800250r3<adjektiv>semesterstängd:semesterstängd:semesterstängt:semesterstängda:semesterstängda::::
+918331r4<substantiv>semesterö:semesterö:semesterös:semesterön:semesteröns:semesteröar:semesteröars:semesteröarna:semesteröarnas
+COMPOUND(622135, 556663): semester + ö
+665272r4<verb>semestra:semestra:semestrade:semestrat:semestrar:semestra::::::::semestrande:
+936395r3<substantiv>semi:semi:semis:semin:semins::::
+583650r3<adjektiv>semialkalisk:semialkalisk:semialkaliskt:semialkaliska:semialkaliska::::
+651265r4<substantiv>semifinal:semifinal:semifinals:semifinalen:semifinalens:semifinaler:semifinalers:semifinalerna:semifinalernas
+CUSTOM: y y semifinal
+665275r3<substantiv>semifinalist:semifinalist:semifinalists:semifinalisten:semifinalistens:semifinalister:semifinalisters:semifinalisterna:semifinalisternas
+CUSTOM: y y semifinalist
+740145r3<substantiv>semifinalmatch::::::::
+COMPOUND(651265, 550011): semifinal + match
+665283r3<substantiv>semikolon:semikolon:semikolons:semikolonet:semikolonets:semikolon:semikolons:semikolonen:semikolonens
+786144r3<adjektiv>semikolonseparerad:semikolonseparerad:semikolonseparerat:semikolonseparerade:semikolonseparerade:!:!:!:
+570888r3<adjektiv>semikompatibel:semikompatibel:semikompatibelt:semikompatibla:semikompatibla::::
+583653r3<adjektiv>semilogaritmisk:semilogaritmisk:semilogaritmiskt:semilogaritmiska:semilogaritmiska::::
+788580r4<substantiv>seminariedeltagare:seminariedeltagare:seminariedeltagares:seminariedeltagaren:seminariedeltagarens:seminariedeltagare:seminariedeltagares:seminariedeltagarna:seminariedeltagarnas
+COMPOUND(622136, 609431): seminarium + deltagare
+665292r4<substantiv>seminarieledare:seminarieledare:seminarieledares:seminarieledaren:seminarieledarens:seminarieledare:seminarieledares:seminarieledarna:seminarieledarnas
+COMPOUND(622136, 609818): seminarium + ledare
+CUSTOM: y y seminarieledar
+622136r6<substantiv>seminarium:seminarium:seminariums:seminariet:seminariets:seminarier:seminariers:seminarierna:seminariernas
+CUSTOM: y y seminarie
+587960r3<verb>seminera:seminera:seminerade:seminerat:seminerar:seminera:::::::::
+583656r3<adjektiv>semiologisk:semiologisk:semiologiskt:semiologiska:semiologiska::::
+985746r3<substantiv>semiotik:semiotik:semiotiks:semiotiken:semiotikens::::
+985750r3<substantiv>semiotiker:semiotiker:semiotikers:semiotikern:semiotikerns:semiotiker:semiotikers:semiotikerna:semiotikernas
+583659r3<adjektiv>semiotisk:semiotisk:semiotiskt:semiotiska:semiotiska::::
+570891r3<adjektiv>semipermeabel:semipermeabel:semipermeabelt:semipermeabla:semipermeabla::::
+583662r3<adjektiv>semisyntetisk:semisyntetisk:semisyntetiskt:semisyntetiska:semisyntetiska::::
+591013r3<verb>semitisera:semitisera:semitiserade:semitiserat:semitiserar:semitisera:::::::::
+583665r3<adjektiv>semitisk:semitisk:semitiskt:semitiska:semitiska::::
+985756r3<substantiv>semitrailer:semitrailer:semitrailers:semitrailern:semitrailerns:semitrailrar:semitrailrars:semitrailrarna:semitrailrarnas
+734128r3<substantiv>semla:semla:semlas:semlan:semlans:semlor:semlors:semlorna:semlornas
+583668r3<adjektiv>semologisk:semologisk:semologiskt:semologiska:semologiska::::
+875661r3<substantiv>semsterstuga:semsterstuga:semsterstugas:semsterstugan:semsterstugans:semsterstugor:semsterstugors:semsterstugorna:semsterstugornas
+563129r5<adjektiv>sen:sen:sent:sena:sena:senare:senast:senaste:sene::::::::
+622138r4<substantiv>sena:sena:senas:senan:senans:senor:senors:senorna:senornas
+985764r4<adjektiv>senantik:senantik:senantikt:senantika:senantika::::senantike::::::::
+COMPOUND(563129, 564552): sen + antik
+CUSTOM: y n
+985768r3<substantiv>senantik:::senantiken:senantikens::::
+CUSTOM: y n
+622140r5<substantiv>senap:senap:senaps:senapen:senapens::::
+CUSTOM: y y senaps
+775884r4<substantiv>senapsfrö:senapsfrö:senapsfrös:senapsfröet:senapsfröets:senapsfrön:senapsfröns:senapsfröna:senapsfrönas
+COMPOUND(622140, 556155): senap + frö
+885559r3<substantiv>senapsgas:senapsgas:senapsgas:senapsgasen:senapsgasens:senapsgaser:senapsgasers:senapsgaserna:senapsgasernas
+798813r3<adjektiv>senapsgul:senapsgul:senapsgult:senapsgula:senapsgula::::
+622141r3<substantiv>senapskorn:senapskorn:senapskorns:senapskornet:senapskornets:senapskorn:senapskorns:senapskornen:senapskornens
+745598r4<substantiv>senapssås:senapssås:senapssås:senapssåsen:senapssåsens:senapssåser:senapssåsers:senapssåserna:senapssåsernas
+COMPOUND(622140, 556707): senap + sås
+745599r3<substantiv>senare:senare:senares::::::
+620749r5<adverb>senare:senare
+CUSTOM: y n
+645401r4<verb>senarelägga:senarelägga:senarelade:senarelagt:senarelägger:senarelägg:senareläggas:senarelades:senarelagts:senareläggs, senarelägges:senarelagd:senarelagt:senarelagda::
+COMPOUND(620749, 556585): senare + lägga
+728669r4<substantiv>senareläggning:senareläggning:senareläggnings:senareläggningen:senareläggningens:senareläggningar:senareläggningars:senareläggningarna:senareläggningarnas
+COMPOUND(620749, 688835): senare + läggning
+620751r3<adverb>senast:senast
+622147r3<substantiv>senat:senat:senats:senaten:senatens:senater:senaters:senaterna:senaternas
+CUSTOM: y y senats
+622153r3<substantiv>senator:senator:senators:senatorn:senatorns:senatorer:senatorers:senatorerna:senatorernas
+645412r3<substantiv>senatsförhör:senatsförhör:senatsförhörs:senatsförhöret:senatsförhörets:senatsförhör:senatsförhörs:senatsförhören:senatsförhörens
+985771r3<substantiv>senbarock:senbarock:senbarocks:senbarocken:senbarockens::::
+CUSTOM: y n
+665300r3<substantiv>sendrag:sendrag:sendrags:sendraget:sendragets::::
+554117r3<egennamn>Senegal:Senegal:Senegals
+CUSTOM: y n Senegal
+627125r3<substantiv>senegales:senegales:senegales:senegalesen:senegalesens:senegaleser:senegalesers:senegaleserna:senegalesernas
+583671r3<adjektiv>senegalesisk:senegalesisk:senegalesiskt:senegalesiska:senegalesiska::::
+CUSTOM: y n
+585097r3<adjektiv>senfull:senfull:senfullt:senfulla:senfulla::::
+CUSTOM: y n
+575945r3<adjektiv>senfärdig:senfärdig:senfärdigt:senfärdiga:senfärdiga::::
+745601r3<substantiv>senfärdighet:senfärdighet:senfärdighets:senfärdigheten:senfärdighetens::::
+645418r3<adjektiv>senfödd:senfödd:senfött:senfödda:senfödda::::
+985775r3<substantiv>sengotik:sengotik:sengotiks:sengotiken:sengotikens::::
+CUSTOM: y n
+583673r3<adjektiv>sengrekisk:sengrekisk:sengrekiskt:sengrekiska:sengrekiska::::
+CUSTOM: y n
+985779r3<adjektiv>sengustaviansk:sengustaviansk:sengustavianskt:sengustavianska:sengustavianska::::::::::::
+CUSTOM: y n
+665304r3<substantiv>sengångare:sengångare:sengångares:sengångaren:sengångarens:sengångare:sengångares:sengångarna:sengångarnas
+CUSTOM: y y sengångar
+665310r3<substantiv>senhöst:senhöst:senhösts:senhösten:senhöstens::::
+575948r3<adjektiv>senig:senig:senigt:seniga:seniga::::
+645421r3<adjektiv>senil:senil:senilt:senila:senila::::senile
+645423r3<adjektiv>senildement:senildement:senildement:senildementa:senildementa::::senildemente
+645425r3<substantiv>senilitet:senilitet:senilitets:seniliteten:senilitetens:!:!:!:!
+CUSTOM: y y senilitets
+938133r3<adjektiv>senior:senior:seniort:seniora:seniora::::::::::::
+550475r4<substantiv>senior:senior:seniors:senioren:seniorens:seniorer:seniorers:seniorerna:seniorernas
+CUSTOM: y y senior
+665314r4<substantiv>seniorlag:seniorlag:seniorlags:seniorlaget:seniorlagets:seniorlag:seniorlags:seniorlagen:seniorlagens
+COMPOUND(550475, 625660): senior + lag
+583675r3<adjektiv>senkapitalistisk:senkapitalistisk:senkapitalistiskt:senkapitalistiska:senkapitalistiska::::
+583678r3<adjektiv>senklassisk:senklassisk:senklassiskt:senklassiska:senklassiska::::
+710458r3<substantiv>senkomling:senkomling:senkomlings:senkomlingen:senkomlingens:senkomlingar:senkomlingars:senkomlingarna:senkomlingarnas
+645427r3<adjektiv>senkommen:senkommen:senkommet:senkomna:senkomna::::
+985782r3<substantiv>senlatin:senlatin:senlatins:senlatinen:senlatinens::::
+CUSTOM: y n
+985786r3<adjektiv>senlatinsk:senlatinsk:senlatinskt:senlatinska:senlatinska::::senlatinske::::::::
+CUSTOM: y n
+745605r3<substantiv>senmedeltid:senmedeltid:senmedeltids:senmedeltiden:senmedeltidens::::
+985790r3<adjektiv>senmedeltida:senmedeltida:::::::::::::::
+CUSTOM: y n
+798817r3<adjektiv>senmodern:senmodern:senmodernt:senmoderna:senmoderna::::
+CUSTOM: y n
+985791r3<substantiv>senrenässans:senrenässans:senrenässans:senrenässansen:senrenässansens::::
+CUSTOM: y n
+985794r3<substantiv>senromantik:senromantik:senromantiks:senromantiken:senromantikens::::
+CUSTOM: y n
+583681r3<adjektiv>senromantisk:senromantisk:senromantiskt:senromantiska:senromantiska::::
+CUSTOM: y n
+985798r3<adjektiv>senromersk:senromersk:senromerskt:senromerska:senromerska::::::::::::
+CUSTOM: y n
+645428r3<substantiv>sensation:sensation:sensations:sensationen:sensationens:sensationer:sensationers:sensationerna:sensationernas
+CUSTOM: y y sensations +sensations
+558791r3<substantiv>sensationalism:sensationalism:sensationalisms:sensationalismen:sensationalismens:!:!:!:!
+645429r3<adjektiv>sensationell:sensationell:sensationellt:sensationella:sensationella::::
+564130r3<adjektiv>sensationsfri:sensationsfri:sensationsfritt:sensationsfria:sensationsfria::::
+575949r3<adjektiv>sensationshungrig:sensationshungrig:sensationshungrigt:sensationshungriga:sensationshungriga::::
+560596r3<adjektiv>sensibel:sensibel:sensibelt:sensibla:sensibla::::sensible
+587964r3<verb>sensibilisera:sensibilisera:sensibiliserade:sensibiliserat:sensibiliserar:sensibilisera:::::::::
+645430r3<substantiv>sensibilitet:sensibilitet:sensibilitets:sensibiliteten:sensibilitetens::::
+798821r3<adjektiv>sensitiv:sensitiv:sensitivt:sensitiva:sensitiva::::
+745609r3<substantiv>sensitiva:sensitiva:sensitivas:sensitivan:sensitivans:sensitivor:sensitivors:sensitivorna:sensitivornas
+736768r3<substantiv>sensitivitet:sensitivitet:sensitivitets:sensitiviteten:sensitivitetens::::
+665320r3<substantiv>sensmoral:sensmoral:sensmorals:sensmoralen:sensmoralens::::
+665322r5<substantiv>sensommar:sensommar:sensommars:sensommaren:sensommarens::::
+CUSTOM: y y sensommar
+665326r3<substantiv>sensommardag:sensommardag:sensommardags:sensommardagen:sensommardagens:sensommardagar:sensommardagars:sensommardagarna:sensommardagarnas
+952799r4<substantiv>sensommardopp:sensommardopp:sensommardopps:sensommardoppet:sensommardoppets:sensommardopp:sensommardopps:sensommardoppen:sensommardoppens
+COMPOUND(665322, 552327): sensommar + dopp
+775885r3<substantiv>sensommarnatt::::::::
+COMPOUND(665322, 555293): sensommar + natt
+583684r3<adjektiv>sensomotorisk:sensomotorisk:sensomotoriskt:sensomotoriska:sensomotoriska::::
+645434r7<substantiv>sensor:sensor:sensors:sensorn:sensorns:sensorer:sensorers:sensorerna:sensorernas
+CUSTOM: y y sensor
+583687r3<adjektiv>sensorisk:sensorisk:sensoriskt:sensoriska:sensoriska::::
+948009r3<substantiv>sensträng:sensträng:sensträngs:sensträngen:sensträngens:sensträngar:sensträngars:sensträngarna:sensträngarnas
+665334r3<substantiv>sensualism:sensualism:sensualisms:sensualismen:sensualismens::::
+583690r3<adjektiv>sensualistisk:sensualistisk:sensualistiskt:sensualistiska:sensualistiska::::
+947066r3<substantiv>sensualitet:sensualitet:sensualitets:sensualiteten:sensualitetens::::
+637042r3<adjektiv>sensuell:sensuell:sensuellt:sensuella:sensuella:sensuellare:sensuellast:sensuellaste:sensuelle
+635481r3<substantiv>sentens:sentens:sentens:sentensen:sentensens:sentenser:sentensers:sentenserna:sentensernas
+794761r3<adjektiv>sentensartad:sentensartad:sentensartat:sentensartade:sentensartade:!:!:!:
+798823r3<adjektiv>sententiös:sententiös:sententiöst:sententiösa:sententiösa::::
+591017r4<verb>sentera:sentera:senterade:senterat:senterar:sentera:senteras:senterades:senterats:senteras:::::senterande
+CUSTOM: y n
+645442r3<adjektiv>sentida:sentida:sentida:sentida:sentida:!:!:!:
+CUSTOM: y n
+985801r3<substantiv>sentiment:sentiment:sentiments:sentimentet:sentimentets:sentiment:sentiments:sentimenten:sentimentens
+CUSTOM: y n
+638337r3<adjektiv>sentimental:sentimental:sentimentalt:sentimentala:sentimentala:sentimentalare:sentimentalast:sentimentalaste:sentimentale
+587968r3<verb>sentimentalisera:sentimentalisera:sentimentaliserade:sentimentaliserat:sentimentaliserar:sentimentalisera:::::::::
+645443r3<substantiv>sentimentalitet:sentimentalitet:sentimentalitets:sentimentaliteten:sentimentalitetens::::
+665336r3<substantiv>senvinter:senvinter:senvinters:senvintern:senvinterns::::
+665340r3<substantiv>senvår:senvår:senvårs:senvåren:senvårens::::
+854350r3<egennamn>Seoul:Seoul:Seouls
+CUSTOM: y n Seoul
+854341r3<substantiv>Seoulbörs:Seoulbörs:Seoulbörs:Seoulbörsen:Seoulbörsens:Seoulbörser:Seoulbörsers:Seoulbörserna:Seoulbörsernas
+CUSTOM: y n
+570894r3<adjektiv>separabel:separabel:separabelt:separabla:separabla::::
+645445r4<adjektiv>separat:separat:separat:separata:separata:!:!:!:
+CUSTOM: y y separat
+665345r4<substantiv>separation:separation:separations:separationen:separationens:separationer:separationers:separationerna:separationernas
+CUSTOM: y y separations
+665344r4<substantiv>separationsångest:separationsångest:separationsångests:separationsångesten:separationsångestens:!:!:!:!
+COMPOUND(665345, 555188): separation + ångest
+558475r3<substantiv>separatism:separatism:separatisms:separatismen:separatismens:!:!:!:!
+745617r4<substantiv>separatist:separatist:separatists:separatisten:separatistens:separatister:separatisters:separatisterna:separatisternas
+CUSTOM: y y separatist
+583693r3<adjektiv>separatistisk:separatistisk:separatistiskt:separatistiska:separatistiska::::
+775886r3<substantiv>separatiststyrka::::::::
+COMPOUND(745617, 595427): separatist + styrka
+800253r3<adjektiv>separatkyld:separatkyld:separatkylt:separatkylda:separatkylda::::
+794764r3<adjektiv>separatmagnetiserad:separatmagnetiserad:separatmagnetiserat:separatmagnetiserade:separatmagnetiserade:!:!:!:
+745625r3<substantiv>separator:separator:separators:separatorn:separatorns:separatorer:separatorers:separatorerna:separatorernas
+745633r3<substantiv>separatutställning::::::::
+COMPOUND(645445, 652912): separat + utställning
+547644r4<verb>separera:separera:separerade:separerat:separerar:separera:separeras:separerades:separerats:separeras:separerad:separerat:separerade::
+794767r3<adjektiv>separerad:separerad:separerat:separerade:separerade:!:!:!:
+787064r3<substantiv>separering:separering:separerings:separeringen:separeringens:separeringar:separeringars:separeringarna:separeringarnas
+784867r3<substantiv>sepia:sepia:sepias:sepian:sepians:sepior:sepiors:sepiorna:sepiornas
+766267r3<adjektiv>sepiafärgad:sepiafärgad:sepiafärgat:sepiafärgade:sepiafärgade:!:!:!:
+730235r4<substantiv>sepsis:sepsis:!:!:!:!:!:!:!
+DEFINITION 1: Blodförgiftning
+559261r8<substantiv>september:september:septembers:!:!:!:!:!:!
+CUSTOM: y n september
+947357r4<substantiv>septemberdag:septemberdag:septemberdags:septemberdagen:septemberdagens:septemberdagar:septemberdagars:septemberdagarna:septemberdagarnas
+COMPOUND(559261, 551009): september + dag
+959879r4<substantiv>septemberkväll:septemberkväll:septemberkvälls:septemberkvällen:septemberkvällens:septemberkvällar:septemberkvällars:septemberkvällarna:septemberkvällarnas
+COMPOUND(559261, 551653): september + kväll
+772788r4<substantiv>septembermorgon:septembermorgon:septembermorgons:septembermorgonen:septembermorgonens:septembermorgnar:septembermorgnars:septembermorgnarna:septembermorgnarnas
+COMPOUND(559261, 619001): september + morgon
+794768r3<adjektiv>septerad:septerad:septerat:septerade:septerade:!:!:!:
+CUSTOM: n n
+958528r3<substantiv>septett:septett:septetts:septetten:septettens:septetter:septetters:septetterna:septetternas
+899743r3<substantiv>septiktank:septiktank:septiktanks:septiktanken:septiktankens:septiktankar:septiktankars:septiktankarna:septiktankarnas
+673432r4<substantiv>septiljon:septiljon:septiljons:septiljonen:septiljonens:septiljoner:septiljoners:septiljonerna:septiljonernas
+DEFINITION 1: miljon sextiljoner (10^42)
+905777r3<substantiv>septima:septima:septimas:septiman:septimans:septimor:septimors:septimorna:septimornas
+985807r3<substantiv>septimaackord:septimaackord:septimaackords:septimaackordet:septimaackordets:septimaackord:septimaackords:septimaackorden:septimaackordens
+583696r3<adjektiv>septisk:septisk:septiskt:septiska:septiska::::
+550477r3<substantiv>seraf:seraf:serafs:serafen:serafens:serafer:serafers:seraferna:serafernas
+CUSTOM: y n
+963377r3<egennamn>Serafimerorden:Serafimerorden:Serafimerordens
+985813r5<substantiv>serafimerriddare:serafimerriddare:serafimerriddares:serafimerriddaren:serafimerriddarens:serafimerriddare:serafimerriddares:serafimerriddarna:serafimerriddarnas
+583699r3<adjektiv>serafisk:serafisk:serafiskt:serafiska:serafiska::::
+985821r4<substantiv>seralj:seralj:seraljs:seraljen:seraljens:seraljer:seraljers:seraljerna:seraljernas
+CUSTOM: y n
+603466r3<substantiv>serb:serb:serbs:serben:serbens:serber:serbers:serberna:serbernas
+CUSTOM: y n
+706302r3<egennamn>Serbien:Serbien:Serbiens
+CUSTOM: y n Serbien
+568780r4<adjektiv>serbisk:serbisk:serbiskt:serbiska:serbiska::::serbiske::::::::
+595097r3<substantiv>serbiska:serbiska:serbiskas:serbiskan:serbiskans:serbiskor:serbiskors:serbiskorna:serbiskornas
+583702r3<adjektiv>serbokroatisk:serbokroatisk:serbokroatiskt:serbokroatiska:serbokroatiska::::
+985839r3<substantiv>serbokroatiska:serbokroatiska:serbokroatiskas:serbokroatiskan:serbokroatiskans::::
+798826r3<adjektiv>seren:seren:serent:serena:serena::::
+550479r3<substantiv>serenad:serenad:serenads:serenaden:serenadens:serenader:serenaders:serenaderna:serenadernas
+550481r3<substantiv>sergeant:sergeant:sergeants:sergeanten:sergeantens:sergeanter:sergeanters:sergeanterna:sergeanternas
+553530r3<egennamn>Sergel:Sergel:Sergels
+CUSTOM: y n Sergel
+555464r28<substantiv>serie:serie:series:serien:seriens:serier:seriers:serierna:seriernas
+CUSTOM: y y serie +serie
+924763r6<verb>seriedejta:seriedejta:seriedejtade:seriedejtat:seriedejtar:seriedejta:seriedejtas:seriedejtades:seriedejtats:seriedejtas:seriedejtad:seriedejtat:seriedejtade:seriedejtande:
+COMPOUND(555464, 625193): serie + dejta
+550483r3<substantiv>seriefigur:seriefigur:seriefigurs:seriefiguren:seriefigurens:seriefigurer:seriefigurers:seriefigurerna:seriefigurernas
+936526r4<substantiv>serieform:serieform:serieforms:serieformen:serieformens:serieformer:serieformers:serieformerna:serieformernas
+COMPOUND(555464, 548947): serie + form
+794771r3<adjektiv>serielindad:serielindad:serielindat:serielindade:serielindade:!:!:!:
+665356r3<adjektiv>seriell:seriell:seriellt:seriella:seriella:!:!:!:
+952807r4<substantiv>serielunk:serielunk:serielunks:serielunken:serielunkens::::
+COMPOUND(555464, 642775): serie + lunk
+665357r3<substantiv>seriematch:seriematch:seriematchs:seriematchen:seriematchens:seriematcher:seriematchers:seriematcherna:seriematchernas
+575952r3<adjektiv>seriemässig:seriemässig:seriemässigt:seriemässiga:seriemässiga::::
+665365r3<substantiv>seriemördare:seriemördare:seriemördares:seriemördaren:seriemördarens:seriemördare:seriemördares:seriemördarna:seriemördarnas
+CUSTOM: y y seriemördar
+665371r3<substantiv>seriesegrare:seriesegrare:seriesegrares:seriesegraren:seriesegrarens:seriesegrare:seriesegrares:seriesegrarna:seriesegrarnas
+CUSTOM: y y seriesegrar
+729795r4<substantiv>seriestorlek:seriestorlek:seriestorleks:seriestorleken:seriestorlekens:seriestorlekar:seriestorlekars:seriestorlekarna:seriestorlekarnas
+COMPOUND(555464, 598936): serie + storlek
+615577r3<substantiv>serietecknare:serietecknare:serietecknares:serietecknaren:serietecknarens:serietecknare:serietecknares:serietecknarna:serietecknarnas
+CUSTOM: y y serietecknar
+665377r4<substantiv>serietidning:serietidning:serietidnings:serietidningen:serietidningens:serietidningar:serietidningars:serietidningarna:serietidningarnas
+COMPOUND(555464, 555969): serie + tidning
+CUSTOM: y y serietidnings
+547645r4<verb>serietillverka:serietillverka:serietillverkade:serietillverkat:serietillverkar:serietillverka:serietillverkas:serietillverkades:serietillverkats:serietillverkas:serietillverkad:serietillverkat:serietillverkade::
+665378r3<substantiv>serietillverkning:serietillverkning:serietillverknings:serietillverkningen:serietillverkningens::::
+CUSTOM: y y serietillverknings
+680474r5<substantiv>seriff:seriff:seriffs:seriffen:seriffens:seriffer:seriffers:serifferna:seriffernas
+583704r3<adjektiv>serigrafisk:serigrafisk:serigrafiskt:serigrafiska:serigrafiska::::
+645446r3<substantiv>seriositet:seriositet:seriositets:seriositeten:seriositetens::::
+645450r3<adjektiv>seriös:seriös:seriöst:seriösa:seriösa:seriösare:seriösast:seriösaste:seriöse
+985843r3<substantiv>serologi:serologi:serologis:serologin:serologins::::
+CUSTOM: y n
+583707r3<adjektiv>serologisk:serologisk:serologiskt:serologiska:serologiska::::
+639239r4<substantiv>serotonin:serotonin:serotonins:serotoninet:serotoninets::::
+645451r3<substantiv>serpentin:serpentin:serpentins:serpentinen:serpentinens:serpentiner:serpentiners:serpentinerna:serpentinernas
+CUSTOM: y y serpentin
+591021r3<verb>serpentinera:serpentinera:serpentinerade:serpentinerat:serpentinerar:serpentinera:::::::::
+591025r3<verb>serpentinisera:serpentinisera:serpentiniserade:serpentiniserat:serpentiniserar:serpentinisera:::::::::
+855259r3<egennamn>Serrano:Serrano:Serranos
+645459r3<substantiv>serum:serum:serums:serumet:serumets::::
+645463r4<verb>serva:serva:servade:servat:servar:serva:servas:servades:servats:servas:servad:servat:servade:servande:
+784965r3<substantiv>servare:servare:servares:servaren:servarens:servare:servares:servarna:servarnas
+665382r7<substantiv>serve:serve:serves:serven:servens:servar:servars:servarna:servarnas
+CUSTOM: y y serve
+775912r4<substantiv>serveess:serveess, serveäss:serveess, serveäss:serveesset, serveässet:serveessets, serveässets:serveess, serveäss:serveess, serveäss:serveessen, serveässen:serveessens, serveässens
+COMPOUND(665382, 558417): serve + äss, ess
+852233r4<substantiv>servegame:servegame:servegames:servegamet:servegamets:servegame:servegames:servegamen:servegamens
+COMPOUND(665382, 562316): serve + game
+632192r10<substantiv>server:server:servers:servern:serverns:servrar:servrars:servrarna:servrarnas
+CUSTOM: y y server +server
+547646r4<verb>servera:servera:serverade:serverat:serverar:servera:serveras:serverades:serverats:serveras:serverad:serverat:serverade::
+944059r4<substantiv>serverdisk:serverdisk:serverdisks:serverdisken:serverdiskens:serverdiskar:serverdiskars:serverdiskarna:serverdiskarnas
+COMPOUND(632192, 559465): server + disk
+645464r9<substantiv>servering:servering:serverings:serveringen:serveringens:serveringar:serveringars:serveringarna:serveringarnas
+CUSTOM: y y serverings +serverings
+669160r3<substantiv>serveringsavgift:serveringsavgift:serveringsavgifts:serveringsavgiften:serveringsavgiftens:serveringsavgifter:serveringsavgifters:serveringsavgifterna:serveringsavgifternas
+943005r4<substantiv>serveringsdisk:serveringsdisk:serveringsdisks:serveringsdisken:serveringsdiskens:serveringsdiskar:serveringsdiskars:serveringsdiskarna:serveringsdiskarnas
+COMPOUND(645464, 559465): servering + disk
+665384r4<substantiv>serveringsfat:serveringsfat:serveringsfats:serveringsfatet:serveringsfatets:serveringsfat:serveringsfats:serveringsfaten:serveringsfatens
+COMPOUND(645464, 552373): servering + fat
+789224r4<substantiv>serverinställning:serverinställning:serverinställnings:serverinställningen:serverinställningens:serverinställningar:serverinställningars:serverinställningarna:serverinställningarnas
+COMPOUND(632192, 597037): server + inställning
+789216r4<substantiv>serverprogram:serverprogram:serverprograms:serverprogrammet:serverprogrammets:serverprogram:serverprograms:serverprogrammen:serverprogrammens
+COMPOUND(632192, 555118): server + program
+784957r4<substantiv>serveruta:serveruta:serverutas:serverutan:serverutans:serverutor:serverutors:serverutorna:serverutornas
+COMPOUND(665382, 595040): serve + ruta
+603474r5<substantiv>servett:servett:servetts:servetten:servettens:servetter:servetters:servetterna:servetternas
+CUSTOM: y y servett
+789005r4<substantiv>servetthållare:servetthållare:servetthållares:servetthållaren:servetthållarens:servetthållare:servetthållares:servetthållarna:servetthållarnas
+COMPOUND(603474, 615293): servett + hållare
+775911r3<substantiv>servettring::::::::
+COMPOUND(603474, 597520): servett + ring
+645472r8<substantiv>service:service:services:servicen:servicens:!:!:!:!
+CUSTOM: y y service +service
+944069r4<substantiv>servicedisk:servicedisk:servicedisks:servicedisken:servicediskens:servicediskar:servicediskars:servicediskarna:servicediskarnas
+COMPOUND(645472, 559465): service + disk
+665390r4<substantiv>servicehus:servicehus:servicehus:servicehuset:servicehusets:servicehus:servicehus:servicehusen:servicehusens
+COMPOUND(645472, 552480): service + hus
+794774r3<adjektiv>serviceinriktad:serviceinriktad:serviceinriktat:serviceinriktade:serviceinriktade:!:!:!:
+575955r3<adjektiv>servicemässig:servicemässig:servicemässigt:servicemässiga:servicemässiga::::
+603482r3<substantiv>servicestation:servicestation:servicestations:servicestationen:servicestationens:servicestationer:servicestationers:servicestationerna:servicestationernas
+CUSTOM: y y servicestations
+612797r3<substantiv>serviceyrke:serviceyrke:serviceyrkes:serviceyrket:serviceyrkets:serviceyrken:serviceyrkens:serviceyrkena:serviceyrkenas
+645474r3<adjektiv>servil:servil:servilt:servila:servila::::servile
+665395r3<substantiv>servilitet:servilitet:servilitets:serviliteten:servilitetens::::
+645478r8<substantiv>servis:servis:servis:servisen:servisens:serviser:servisers:serviserna:servisernas
+CUSTOM: y y servis
+669176r4<substantiv>servisglas:servisglas:servisglas:servisglaset:servisglasets:servisglas:servisglas:servisglasen:servisglasens
+COMPOUND(645478, 552440): servis + glas
+669168r4<substantiv>servisledning:servisledning:servislednings:servisledningen:servisledningens:servisledningar:servisledningars:servisledningarna:servisledningarnas
+COMPOUND(645478, 551696): servis + ledning
+CUSTOM: y y servislednings
+605663r3<substantiv>servitris:servitris:servitris:servitrisen:servitrisens:servitriser:servitrisers:servitriserna:servitrisernas
+555082r5<substantiv>servitut:servitut:servituts:servitutet:servitutets:servitut:servituts:servituten:servitutens
+CUSTOM: y y servituts
+775913r3<substantiv>servitutsavtal::::::::
+COMPOUND(555082, 552215): servitut + avtal
+550484r3<substantiv>servitör:servitör:servitörs:servitören:servitörens:servitörer:servitörers:servitörerna:servitörernas
+946906r8<substantiv>servo:servo:servos:servon:servons::::
+CUSTOM: y n
+946910r4<substantiv>servobroms:servobroms:servobroms:servobromsen:servobromsens:servobromsar:servobromsars:servobromsarna:servobromsarnas
+COMPOUND(946906, 550949): servo + broms
+946917r4<substantiv>servoförstärkare:servoförstärkare:servoförstärkares:servoförstärkaren:servoförstärkarens:servoförstärkare:servoförstärkares:servoförstärkarna:servoförstärkarnas
+COMPOUND(946906, 615261): servo + förstärkare
+946923r4<substantiv>servomotor:servomotor:servomotors:servomotorn:servomotorns:servomotorer:servomotorers:servomotorerna:servomotorernas
+COMPOUND(946906, 611060): servo + motor
+946932r4<substantiv>servopump:servopump:servopumps:servopumpen:servopumpens:servopumpar:servopumpars:servopumparna:servopumparnas
+COMPOUND(946906, 551780): servo + pump
+766270r3<adjektiv>servostyrd:servostyrd:servostyrt:servostyrda:servostyrda::::
+775914r3<substantiv>servostyrning:servostyrning:servostyrnings:servostyrningen:servostyrningens::::
+946941r4<substantiv>servoventil:servoventil:servoventils:servoventilen:servoventilens:servoventiler:servoventilers:servoventilerna:servoventilernas
+COMPOUND(946906, 550765): servo + ventil
+645485r5<substantiv>sesam:sesam:sesams:sesamen:sesamens:!:!:!:!
+CUSTOM: y y sesam
+645489r4<substantiv>sesamfrö:sesamfrö:sesamfrös:sesamfröet:sesamfröets:sesamfrön:sesamfröns:sesamfröna:sesamfrönas
+COMPOUND(645485, 556155): sesam + frö
+640691r5<adjektiv>sesamstekt:sesamstekt:sesamstekt:sesamstekta:sesamstekta::::::::::::
+963379r3<substantiv>sessa:sessa:sessas:sessan:sessans:sessor:sessors:sessorna:sessornas
+CUSTOM: y n
+550486r4<substantiv>session:session:sessions:sessionen:sessionens:sessioner:sessioners:sessionerna:sessionernas
+DEFINITION 1: Sammanträdesperiod
+599556r3<substantiv>sessionssal:sessionssal:sessionssals:sessionssalen:sessionssalens:sessionssalar:sessionssalars:sessionssalarna:sessionssalarnas
+645497r3<interjektion>seså:seså
+665399r5<substantiv>set:set:sets:setet:setets:set:sets:seten:setens
+CUSTOM: y n
+665405r4<substantiv>setboll:setboll:setbolls:setbollen:setbollens:setbollar:setbollars:setbollarna:setbollarnas
+COMPOUND(665399, 550928): set + boll
+959378r3<substantiv>setsiffror:::::setsiffror:setsiffrors:setsiffrorna:setsiffrornas
+906519r3<substantiv>setter:setter:setters:settern:setterns:settrar:settrars:settrarna:settrarnas
+CUSTOM: y n y
+645498r3<adjektiv>sevärd:sevärd:sevärt:sevärda:sevärda::::
+603490r3<substantiv>sevärdhet:sevärdhet:sevärdhets:sevärdheten:sevärdhetens:sevärdheter:sevärdheters:sevärdheterna:sevärdheternas
+CUSTOM: y y sevärdhets
+555177r7<räkneord>sex:sex
+CUSTOM: y n
+640698r49<substantiv>sex:sex:sex:sexet:sexets::::
+DEFINITION 1: Sexuellt umgänge
+CUSTOM: b n
+557702r8<substantiv>sexa:sexa:sexas:sexan:sexans:sexor:sexors:sexorna:sexornas
+DEFINITION 1: Siffran sex (6)
+DEFINITION 2: Liten måltid.
+CUSTOM: y n
+918347r4<substantiv>sexaffär:sexaffär:sexaffärs:sexaffären:sexaffärens:sexaffärer:sexaffärers:sexaffärerna:sexaffärernas
+COMPOUND(640698, 548155): sex + affär
+918357r4<substantiv>sexakt:sexakt:sexakts:sexakten:sexaktens:sexakter:sexakters:sexakterna:sexakternas
+COMPOUND(640698, 548163): sex + akt
+560817r17<adjektiv>sexanklagad:sexanklagad:sexanklagat:sexanklagade:sexanklagade:!:!:!:::::::::
+918372r4<substantiv>sexanklagelse:sexanklagelse:sexanklagelses:sexanklagelsen:sexanklagelsens:sexanklagelser:sexanklagelsers:sexanklagelserna:sexanklagelsernas
+COMPOUND(640698, 623680): sex + anklagelse
+886496r3<substantiv>sexarbetare:sexarbetare:sexarbetares:sexarbetaren:sexarbetarens:sexarbetare:sexarbetares:sexarbetarna:sexarbetarnas
+886486r3<substantiv>sexarbete:sexarbete:sexarbetes:sexarbetet:sexarbetets:sexarbeten:sexarbetens:sexarbetena:sexarbetenas
+575958r3<adjektiv>sexatomig:sexatomig:sexatomigt:sexatomiga:sexatomiga::::
+873988r4<substantiv>sexbild:sexbild:sexbilds:sexbilden:sexbildens:sexbilder:sexbilders:sexbilderna:sexbildernas
+COMPOUND(640698, 548373): sex + bild
+CUSTOM: y n n
+918381r4<substantiv>sexbok:sexbok:sexboks:sexboken:sexbokens:sexböcker:sexböckers:sexböckerna:sexböckernas
+COMPOUND(640698, 555346): sex + bok
+CUSTOM: y n n
+640702r4<substantiv>sexbomb:sexbomb:sexbombs:sexbomben:sexbombens:sexbomber:sexbombers:sexbomberna:sexbombernas
+COMPOUND(640698, 548427): sex + bomb
+640710r4<substantiv>sexbrott:sexbrott:sexbrotts:sexbrottet:sexbrottets:sexbrott:sexbrotts:sexbrotten:sexbrottens
+COMPOUND(640698, 552275): sex + brott
+CUSTOM: y y sexbrotts
+775919r4<substantiv>sexbrottsling:sexbrottsling:sexbrottslings:sexbrottslingen:sexbrottslingens:sexbrottslingar:sexbrottslingars:sexbrottslingarna:sexbrottslingarnas
+COMPOUND(640698, 660658): sex + brottsling
+907360r3<substantiv>sexbutik:sexbutik:sexbutiks:sexbutiken:sexbutikens:sexbutiker:sexbutikers:sexbutikerna:sexbutikernas
+965678r4<substantiv>sexchock:sexchock:sexchocks:sexchocken:sexchockens:sexchocker:sexchockers:sexchockerna:sexchockernas
+COMPOUND(640698, 548532): sex + chock
+575961r3<adjektiv>sexcylindrig:sexcylindrig:sexcylindrigt:sexcylindriga:sexcylindriga::::
+640716r4<substantiv>sexdebut:sexdebut:sexdebuts:sexdebuten:sexdebutens:sexdebuter:sexdebuters:sexdebuterna:sexdebuternas
+COMPOUND(640698, 548588): sex + debut
+640724r4<substantiv>sexdrottning:sexdrottning:sexdrottnings:sexdrottningen:sexdrottningens:sexdrottningar:sexdrottningars:sexdrottningarna:sexdrottningarnas
+COMPOUND(640698, 596676): sex + drottning
+CUSTOM: y y sexdrottnings
+570897r3<adjektiv>sexdubbel:sexdubbel:sexdubbelt:sexdubbla:sexdubbla::::
+940342r3<substantiv>sexdubbling:sexdubbling:sexdubblings:sexdubblingen:sexdubblingens:sexdubblingar:sexdubblingars:sexdubblingarna:sexdubblingarnas
+764745r3<substantiv>sexdåre:sexdåre:sexdåres:sexdåren:sexdårens:sexdårar:sexdårars:sexdårarna:sexdårarnas
+CUSTOM: y n n
+575964r4<adjektiv>sexfaldig:sexfaldig:sexfaldigt:sexfaldiga:sexfaldiga::::sexfaldige::::::::
+906994r3<substantiv>sexfest:sexfest:sexfests:sexfesten:sexfestens:sexfester:sexfesters:sexfesterna:sexfesternas
+CUSTOM:

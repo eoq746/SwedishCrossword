@@ -1,0 +1,604 @@
+d:slutackord:slutackords:slutackordet:slutackordets:slutackord:slutackords:slutackorden:slutackordens
+COMPOUND(552951, 552162): slut + ackord
+932631r4<substantiv>slutakt:slutakt:slutakts:slutakten:slutaktens:slutakter:slutakters:slutakterna:slutakternas
+COMPOUND(552951, 548163): slut + akt
+641195r5<substantiv>slutanvändare:slutanvändare:slutanvändares:slutanvändaren:slutanvändarens:slutanvändare:slutanvändares:slutanvändarna:slutanvändarnas
+COMPOUND(552951, 615126): slut + användare
+CUSTOM: y y slutanvändar
+608037r4<substantiv>slutanvändarintyg:slutanvändarintyg:slutanvändarintygs:slutanvändarintyget:slutanvändarintygets:slutanvändarintyg:slutanvändarintygs:slutanvändarintygen:slutanvändarintygens
+COMPOUND(641195, 552524): slutanvändare + intyg
+641201r4<substantiv>slutare:slutare:slutares:slutaren:slutarens:slutare:slutares:slutarna:slutarnas
+CUSTOM: y y slutar
+641207r4<substantiv>slutarhastighet:slutarhastighet:slutarhastighets:slutarhastigheten:slutarhastighetens::::
+COMPOUND(641201, 602173): slutare + hastighet
+CUSTOM: y y slutarhastighets
+570100r3<adjektiv>slutbar:slutbar:slutbart:slutbara:slutbara::::
+709277r3<substantiv>slutbetalning:slutbetalning:slutbetalnings:slutbetalningen:slutbetalningens::::
+641211r4<substantiv>slutbetyg:slutbetyg:slutbetygs:slutbetyget:slutbetygets:slutbetyg:slutbetygs:slutbetygen:slutbetygens
+COMPOUND(552951, 552244): slut + betyg
+641217r4<substantiv>slutbetänkande:slutbetänkande:slutbetänkandes:slutbetänkandet:slutbetänkandets:slutbetänkanden:slutbetänkandens:slutbetänkandena:slutbetänkandenas
+COMPOUND(552951, 612385): slut + betänkande
+641223r4<substantiv>slutbild:slutbild:slutbilds:slutbilden:slutbildens:slutbilder:slutbilders:slutbilderna:slutbildernas
+COMPOUND(552951, 548373): slut + bild
+641231r4<substantiv>slutbud:slutbud:slutbuds:slutbudet:slutbudets:slutbud:slutbuds:slutbuden:slutbudens
+COMPOUND(552951, 552287): slut + bud
+641237r4<substantiv>slutdatum:slutdatum:slutdatums:slutdatumet:slutdatumets:slutdatum:slutdatums:slutdatumen:slutdatumens
+COMPOUND(552951, 606925): slut + datum
+709281r3<substantiv>slutdebatt:slutdebatt:slutdebatts:slutdebatten:slutdebattens:slutdebatter:slutdebatters:slutdebatterna:slutdebatternas
+591097r3<verb>slutdebattera:slutdebattera:slutdebatterade:slutdebatterat:slutdebatterar:slutdebattera:::::::::
+884781r4<substantiv>slutdel:slutdel:slutdels:slutdelen:slutdelens:slutdelar:slutdelars:slutdelarna:slutdelarnas
+COMPOUND(552951, 551034): slut + del
+641243r4<adjektiv>sluten:sluten:slutet:slutna:slutna:slutnare:slutnast:slutnaste:slutne
+937648r3<substantiv>slutenhet:slutenhet:slutenhets:slutenheten:slutenhetens::::
+641244r3<substantiv>slutenvård:slutenvård:slutenvårds:slutenvården:slutenvårdens::::
+CUSTOM: y y slutenvårds
+641248r4<substantiv>slutfas:slutfas:slutfas:slutfasen:slutfasens:slutfaser:slutfasers:slutfaserna:slutfasernas
+641251r5<verb>slutföra:slutföra:slutförde:slutfört:slutför:slutför:slutföras:slutfördes:slutförts:slutförs, slutföres:slutförd:slutfört:slutförda::
+COMPOUND(552951, 558899): slut + föra
+666981r3<substantiv>slutförande:slutförande:slutförandes:slutförandet:slutförandets::::
+641252r4<substantiv>slutförhandling:slutförhandling:slutförhandlings:slutförhandlingen:slutförhandlingens:slutförhandlingar:slutförhandlingars:slutförhandlingarna:slutförhandlingarnas
+COMPOUND(552951, 596865): slut + förhandling
+641260r4<substantiv>slutförhör:slutförhör:slutförhörs:slutförhöret:slutförhörets:slutförhör:slutförhörs:slutförhören:slutförhörens
+COMPOUND(552951, 552407): slut + förhör
+732767r3<substantiv>slutförvar:slutförvar:slutförvars:slutförvaret:slutförvarets::::
+641266r4<substantiv>slutförvaring:slutförvaring:slutförvarings:slutförvaringen:slutförvaringens::::
+COMPOUND(552951, 641267): slut + förvaring
+CUSTOM: y y slutförvarings
+576491r4<adjektiv>slutgiltig:slutgiltig:slutgiltigt:slutgiltiga:slutgiltiga:slutgiltigare:slutgiltigast:slutgiltigaste:slutgiltige
+709289r3<substantiv>slutgiltighet:slutgiltighet:slutgiltighets:slutgiltigheten:slutgiltighetens::::
+591101r3<verb>slutjustera:slutjustera:slutjusterade:slutjusterat:slutjusterar:slutjustera:::::::::
+641271r4<substantiv>slutkamp:slutkamp:slutkamps:slutkampen:slutkampens:slutkamper:slutkampers:slutkamperna:slutkampernas
+COMPOUND(552951, 549421): slut + kamp
+641279r4<substantiv>slutkapitel:slutkapitel:slutkapitels:slutkapitlet:slutkapitlets:slutkapitel:slutkapitels:slutkapitlen:slutkapitlens
+COMPOUND(552951, 618549): slut + kapitel
+709293r4<substantiv>slutkläm:slutkläm:slutkläms:slutklämmen:slutklämmens:slutklämmar:slutklämmars:slutklämmarna:slutklämmarnas
+COMPOUND(552951, 692988): slut + kläm
+641285r4<substantiv>slutkommentar:slutkommentar:slutkommentars:slutkommentaren:slutkommentarens:slutkommentarer:slutkommentarers:slutkommentarerna:slutkommentarernas
+COMPOUND(552951, 549587): slut + kommentar
+700138r4<substantiv>slutkund:slutkund:slutkunds:slutkunden:slutkundens:slutkunder:slutkunders:slutkunderna:slutkundernas
+COMPOUND(552951, 549810): slut + kund
+CUSTOM: y y slutkunds
+603630r3<substantiv>slutkurs:slutkurs:slutkurs:slutkursen:slutkursens:slutkurser:slutkursers:slutkurserna:slutkursernas
+641293r4<adjektiv>slutkörd:slutkörd:slutkört:slutkörda:slutkörda::::slutkörde::::::::
+619685r4<substantiv>slutledning:slutledning:slutlednings:slutledningen:slutledningens:slutledningar:slutledningars:slutledningarna:slutledningarnas
+CUSTOM: y y slutlednings
+641296r4<substantiv>slutledningsförmåga:slutledningsförmåga:slutledningsförmågas:slutledningsförmågan:slutledningsförmågans:slutledningsförmågor:slutledningsförmågors:slutledningsförmågorna:slutledningsförmågornas
+COMPOUND(619685, 594097): slutledning + förmåga
+567729r3<adjektiv>slutlig:slutlig:slutligt:slutliga:slutliga::::
+619686r3<adverb>slutligen:slutligen
+964617r4<substantiv>slutljud:slutljud:slutljuds:slutljudet:slutljudets:slutljud:slutljuds:slutljuden:slutljudens
+COMPOUND(552951, 552668): slut + ljud
+932639r4<substantiv>slutlön:slutlön:slutlöns:slutlönen:slutlönens:slutlöner:slutlöners:slutlönerna:slutlönernas
+COMPOUND(552951, 549976): slut + lön
+641304r4<substantiv>slutminut:slutminut:slutminuts:slutminuten:slutminutens:slutminuter:slutminuters:slutminuterna:slutminuternas
+COMPOUND(552951, 550044): slut + minut
+932647r4<substantiv>slutmål:slutmål:slutmåls:slutmålet:slutmålets:slutmål:slutmåls:slutmålen:slutmålens
+COMPOUND(552951, 552705): slut + mål
+641312r4<substantiv>slutnota:slutnota:slutnotas:slutnotan:slutnotans::::
+COMPOUND(552951, 594827): slut + nota
+666983r3<substantiv>slutord:slutord:slutords:slutordet:slutordets:slutord:slutords:slutorden:slutordens
+641316r4<substantiv>slutpunkt:slutpunkt:slutpunkts:slutpunkten:slutpunktens:slutpunkter:slutpunkters:slutpunkterna:slutpunkternas
+COMPOUND(552951, 550299): slut + punkt
+932653r4<substantiv>slutrad:slutrad:slutrads:slutraden:slutradens:slutrader:slutraders:slutraderna:slutradernas
+COMPOUND(552951, 550306): slut + rad
+824905r3<substantiv>slutraka:slutraka:slutrakas:slutrakan:slutrakans:slutrakor:slutrakors:slutrakorna:slutrakornas
+591105r3<verb>slutredigera:slutredigera:slutredigerade:slutredigerat:slutredigerar:slutredigera:::::::::
+676680r4<substantiv>slutrim:slutrim:slutrims:slutrimmet:slutrimmets:slutrim:slutrims:slutrimmen:slutrimmens
+COMPOUND(552951, 621838): slut + rim
+794974r3<adjektiv>slutrimmad:slutrimmad:slutrimmat:slutrimmade:slutrimmade:!:!:!:
+550533r4<substantiv>slutsats:slutsats:slutsats:slutsatsen:slutsatsens:slutsatser:slutsatsers:slutsatserna:slutsatsernas
+641324r4<substantiv>slutscen:slutscen:slutscens:slutscenen:slutscenens:slutscener:slutsceners:slutscenerna:slutscenernas
+COMPOUND(552951, 550462): slut + scen
+641330r4<substantiv>slutseger:slutseger:slutsegers:slutsegern:slutsegerns:slutsegrar:slutsegrars:slutsegrarna:slutsegrarnas
+COMPOUND(552951, 556336): slut + seger
+641338r3<substantiv>slutsegrare:slutsegrare:slutsegrares:slutsegraren:slutsegrarens:slutsegrare:slutsegrares:slutsegrarna:slutsegrarnas
+CUSTOM: y y slutsegrar
+641342r4<substantiv>slutsekund:slutsekund:slutsekunds:slutsekunden:slutsekundens:slutsekunder:slutsekunders:slutsekunderna:slutsekundernas
+COMPOUND(552951, 550470): slut + sekund
+641350r4<substantiv>slutsiffra:slutsiffra:slutsiffras:slutsiffran:slutsiffrans:slutsiffror:slutsiffrors:slutsiffrorna:slutsiffrornas
+COMPOUND(552951, 595105): slut + siffra
+641358r4<substantiv>slutsignal:slutsignal:slutsignals:slutsignalen:slutsignalens:slutsignaler:slutsignalers:slutsignalerna:slutsignalernas
+COMPOUND(552951, 550490): slut + signal
+788096r4<substantiv>slutskatt:slutskatt:slutskatts:slutskatten:slutskattens:slutskatter:slutskatters:slutskatterna:slutskatternas
+CUSTOM: y y slutskatte
+788094r4<substantiv>slutskattebesked:slutskattebesked:slutskattebeskeds:slutskattebeskedet:slutskattebeskedets:slutskattebesked:slutskattebeskeds:slutskattebeskeden:slutskattebeskedens
+COMPOUND(788096, 552235): slutskatt + besked
+666989r3<substantiv>slutskede:slutskede:slutskedes:slutskedet:slutskedets:slutskeden:slutskedens:slutskedena:slutskedenas
+CUSTOM: y y slutskedes
+641366r5<substantiv>slutspel:slutspel:slutspels:slutspelet:slutspelets:slutspel:slutspels:slutspelen:slutspelens
+COMPOUND(552951, 552956): slut + spel
+CUSTOM: y y slutspels
+746337r4<substantiv>slutspelsmatch:slutspelsmatch:slutspelsmatchs:slutspelsmatchen:slutspelsmatchens:slutspelsmatcher:slutspelsmatchers:slutspelsmatcherna:slutspelsmatchernas
+COMPOUND(641366, 550011): slutspel + match
+641372r4<substantiv>slutspurt:slutspurt:slutspurts:slutspurten:slutspurtens:slutspurter:slutspurters:slutspurterna:slutspurternas
+COMPOUND(552951, 641373): slut + spurt
+641386r4<substantiv>slutstadium:slutstadium:slutstadiums:slutstadiet:slutstadiets:slutstadier:slutstadiers:slutstadierna:slutstadiernas
+COMPOUND(552951, 622188): slut + stadium
+641394r4<substantiv>slutstation:slutstation:slutstations:slutstationen:slutstationens:slutstationer:slutstationers:slutstationerna:slutstationernas
+COMPOUND(552951, 603711): slut + station
+CUSTOM: y y slutstations
+967186r4<substantiv>slutstatus:slutstatus:slutstatus:slutstatusen:slutstatusens:slutstatusar:slutstatusars:slutstatusarna:slutstatusarnas
+COMPOUND(552951, 669668): slut + status
+CUSTOM: y n slutstatus
+666995r3<substantiv>slutsteg:slutsteg:slutstegs:slutsteget:slutstegets:slutsteg:slutstegs:slutstegen:slutstegens
+841429r3<substantiv>slutsten:slutsten:slutstens:slutstenen:slutstenens:slutstenar:slutstenars:slutstenarna:slutstenarnas
+667001r3<substantiv>slutstrid:slutstrid:slutstrids:slutstriden:slutstridens::::
+709301r3<substantiv>slutställning:slutställning:slutställnings:slutställningen:slutställningens:slutställningar:slutställningars:slutställningarna:slutställningarnas
+709309r3<substantiv>slutsumma:slutsumma:slutsummas:slutsumman:slutsummans:slutsummor:slutsummors:slutsummorna:slutsummornas
+641395r3<adjektiv>slutsåld:slutsåld:slutsålt:slutsålda:slutsålda::::
+641398r4<verb>slutta:slutta:sluttade:sluttat:sluttar:slutta::::::::sluttande:
+641399r3<substantiv>sluttamp:sluttamp:sluttamps:sluttampen:sluttampens::::
+641401r4<substantiv>sluttid:sluttid:sluttids:sluttiden:sluttidens:sluttider:sluttiders:sluttiderna:sluttidernas
+COMPOUND(552951, 550665): slut + tid
+597645r5<substantiv>sluttning:sluttning:sluttnings:sluttningen:sluttningens:sluttningar:sluttningars:sluttningarna:sluttningarnas
+CUSTOM: y y sluttnings +sluttnings
+696948r4<substantiv>slutversion:slutversion:slutversions:slutversionen:slutversionens:slutversioner:slutversioners:slutversionerna:slutversionernas
+COMPOUND(552951, 550767): slut + version
+746339r4<substantiv>slutår:slutår:slutårs:slutåret:slutårets:slutår:slutårs:slutåren:slutårens
+COMPOUND(552951, 553140): slut + år
+CUSTOM: y n n
+936181r4<substantiv>slutändan, slutänden:::slutändan, slutänden:::::
+629336r9<substantiv>sly:sly:slys:slyet:slyets:slyn:slyns:slyna:slynas
+CUSTOM: y n
+824913r3<substantiv>slybekämpning:slybekämpning:slybekämpnings:slybekämpningen:slybekämpningens::::
+824917r3<substantiv>slybestånd:slybestånd:slybestånds:slybeståndet:slybeståndets:slybestånd:slybestånds:slybestånden:slybeståndens
+629342r5<substantiv>slyna:slyna:slynas:slynan:slynans:slynor:slynors:slynorna:slynornas
+CUSTOM: b n
+576492r3<adjektiv>slynaktig:slynaktig:slynaktigt:slynaktiga:slynaktiga::::
+667005r3<substantiv>slyngel:slyngel:slyngels:slyngeln:slyngelns:slynglar:slynglars:slynglarna:slynglarnas
+576495r4<adjektiv>slyngelaktig:slyngelaktig:slyngelaktigt:slyngelaktiga:slyngelaktiga::::slyngelaktige
+709317r3<substantiv>slyngelfason:slyngelfason:slyngelfasons:slyngelfasonen:slyngelfasonens:slyngelfasoner:slyngelfasoners:slyngelfasonerna:slyngelfasonernas
+824924r3<substantiv>slyngelålder:slyngelålder:slyngelålders:slyngelåldern:slyngelålderns::::
+824928r3<substantiv>slynggaffel:slynggaffel:slynggaffels:slynggaffeln:slynggaffelns:slynggafflar:slynggafflars:slynggafflarna:slynggafflarnas
+824936r3<substantiv>slyröjning:slyröjning:slyröjnings:slyröjningen:slyröjningens:slyröjningar:slyröjningars:slyröjningarna:slyröjningarnas
+886974r4<substantiv>slyvegetation:slyvegetation:slyvegetations:slyvegetationen:slyvegetationens:slyvegetationer:slyvegetationers:slyvegetationerna:slyvegetationernas
+COMPOUND(629336, 698567): sly + vegetation
+558224r17<verb>slå:slå:slog:slagit:slår:slå:slås:slogs:slagits:slås:slagen:slaget:slagna::
+641409r3<adjektiv>slående:slående:slående:slående:slående:!:!:!:
+641410r3<substantiv>slån:slån:slåns:slånen, slånet:slånens, slånets::::
+CUSTOM: y n
+824944r3<substantiv>slånbuske:slånbuske:slånbuskes:slånbusken:slånbuskens:slånbuskar:slånbuskars:slånbuskarna:slånbuskarnas
+626829r4<substantiv>slånbär:slånbär:slånbärs:slånbäret:slånbärets:slånbär:slånbärs:slånbären:slånbärens
+CUSTOM: y y slånbärs
+709325r4<substantiv>slånbärssaft:slånbärssaft:slånbärssafts:slånbärssaften:slånbärssaftens::::
+COMPOUND(626829, 550439): slånbär + saft
+824952r3<substantiv>slånsnår:slånsnår:slånsnårs:slånsnåret:slånsnårets:slånsnår:slånsnårs:slånsnåren:slånsnårens
+591647r3<deponens>slåss:slåss:slogs:slagits:slåss:slåss
+641416r3<substantiv>slåtter:slåtter:slåtters:slåttern:slåtterns::::
+CUSTOM: y y slåtter
+603637r3<substantiv>slåttermaskin:slåttermaskin:slåttermaskins:slåttermaskinen:slåttermaskinens:slåttermaskiner:slåttermaskiners:slåttermaskinerna:slåttermaskinernas
+667007r3<substantiv>slåtteräng:slåtteräng:slåtterängs:slåtterängen:slåtterängens:slåtterängar:slåtterängars:slåtterängarna:slåtterängarnas
+559358r6<verb>släcka:släcka:släckte:släckt:släcker:släck:släckas:släcktes:släckts:släcks:släckt:släckt:släckta:släckande:
+696956r3<substantiv>släckande:släckande:släckandes:släckandet:släckandets::::
+667009r3<substantiv>släckare:släckare:släckares:släckaren:släckarens:släckare:släckares:släckarna:släckarnas
+CUSTOM: y y släckar +släckar
+570103r3<adjektiv>släckbar:släckbar:släckbart:släckbara:släckbara::::
+824958r3<substantiv>släckmedel:släckmedel:släckmedels:släckmedlet:släckmedlets:släckmedel:släckmedels:släckmedlen:släckmedlens
+746346r4<substantiv>släckning:släckning:släcknings:släckningen:släckningens:släckningar:släckningars:släckningarna:släckningarnas
+CUSTOM: y y släcknings +släcknings
+746354r4<substantiv>släckningsarbete:släckningsarbete:släckningsarbetes:släckningsarbetet:släckningsarbetets:släckningsarbeten:släckningsarbetens:släckningsarbetena:släckningsarbetenas
+COMPOUND(746346, 612263): släckning + arbete
+641418r4<substantiv>släde:släde:slädes:släden:slädens:slädar:slädars:slädarna:slädarnas
+CUSTOM: y y
+902073r4<substantiv>slädekipage:slädekipage:slädekipages:slädekipaget:slädekipagets:slädekipage:slädekipages:slädekipagen:slädekipagens
+COMPOUND(641418, 661790): släde + ekipage
+709329r3<substantiv>slädfärd:slädfärd:slädfärds:slädfärden:slädfärdens:slädfärder:slädfärders:slädfärderna:slädfärdernas
+824964r3<substantiv>slädföre:slädföre:slädföres:slädföret:slädförets:slädfören:slädförens:slädförena:slädförenas
+824972r3<substantiv>slädhund:slädhund:slädhunds:slädhunden:slädhundens:slädhundar:slädhundars:slädhundarna:slädhundarnas
+824980r3<substantiv>slädmed:slädmed:slädmeds:slädmeden:slädmedens:slädmedar:slädmedars:slädmedarna:slädmedarnas
+824988r3<substantiv>slädparti:slädparti:slädpartis:slädpartiet:slädpartiets:slädpartier:slädpartiers:slädpartierna:slädpartiernas
+667015r3<substantiv>slädspår:slädspår:slädspårs:slädspåret:slädspårets:slädspår:slädspårs:slädspåren:slädspårens
+709337r3<substantiv>slädtur:slädtur:slädturs:slädturen:slädturens:slädturer:slädturers:slädturerna:slädturernas
+595257r4<substantiv>slägga:slägga:släggas:släggan:släggans:släggor:släggors:släggorna:släggornas
+CUSTOM: y y slägg
+608043r3<substantiv>släggkast:släggkast:släggkasts:släggkastet:släggkastets:släggkast:släggkasts:släggkasten:släggkastens
+610054r3<substantiv>släggkastare:släggkastare:släggkastares:släggkastaren:släggkastarens:släggkastare:släggkastares:släggkastarna:släggkastarnas
+CUSTOM: y y släggkastar
+776446r4<substantiv>släggkastning:släggkastning:släggkastnings:släggkastningen:släggkastningens:släggkastningar:släggkastningars:släggkastningarna:släggkastningarnas
+COMPOUND(595257, 776447): slägga + kastning
+571195r3<adjektiv>släkt:släkt:släkt:släkt:släkt:!:!:!:
+556911r8<substantiv>släkt:släkt:släkts:släkten:släktens:släkter:släkters:släkterna:släkternas
+CUSTOM: y y släkt
+556912r3<substantiv>släkte:släkte:släktes:släktet:släktets:släkten:släktens:släktena:släktenas
+709345r4<substantiv>släktfejd:släktfejd:släktfejds:släktfejden:släktfejdens:släktfejder:släktfejders:släktfejderna:släktfejdernas
+COMPOUND(556911, 548895): släkt + fejd
+709353r3<substantiv>släktforskare:släktforskare:släktforskares:släktforskaren:släktforskarens:släktforskare:släktforskares:släktforskarna:släktforskarnas
+667017r3<substantiv>släktforskning:släktforskning:släktforsknings:släktforskningen:släktforskningens::::
+CUSTOM: y y släktforsknings
+667019r4<substantiv>släktförhållande:släktförhållande:släktförhållandes:släktförhållandet:släktförhållandets:släktförhållanden:släktförhållandens:släktförhållandena:släktförhållandenas
+COMPOUND(556911, 612481): släkt + förhållande
+597646r3<substantiv>släkting:släkting:släktings:släktingen:släktingens:släktingar:släktingars:släktingarna:släktingarnas
+846871r3<adjektiv>släktkär:släktkär:släktkärt:släktkära:släktkära::::släktkäre
+667021r3<substantiv>släktled:släktled:släktleds:släktledet:släktledets:släktled:släktleds:släktleden:släktledens
+612841r3<substantiv>släktmöte:släktmöte:släktmötes:släktmötet:släktmötets:släktmöten:släktmötens:släktmötena:släktmötenas
+667027r5<substantiv>släktskap:släktskap:släktskaps:släktskapet, släktskapen:släktskapets, släktskapens:släktskaper:släktskapers:släktskaperna:släktskapernas
+CUSTOM: y y släktskaps
+704662r4<substantiv>släktskapsförhållande:släktskapsförhållande:släktskapsförhållandes:släktskapsförhållandet:släktskapsförhållandets:släktskapsförhållanden:släktskapsförhållandens:släktskapsförhållandena:släktskapsförhållandenas
+COMPOUND(667027, 612481): släktskap + förhållande
+619687r3<substantiv>släkttavla:släkttavla:släkttavlas:släkttavlan:släkttavlans:släkttavlor:släkttavlors:släkttavlorna:släkttavlornas
+619700r3<substantiv>släktträd:släktträd:släktträds:släktträdet:släktträdets:släktträd:släktträds:släktträden:släktträdens
+619692r4<substantiv>släktträff:släktträff:släktträffs:släktträffen:släktträffens:släktträffar:släktträffars:släktträffarna:släktträffarnas
+COMPOUND(556911, 552051): släkt + träff
+960342r4<substantiv>släktöde:släktöde:släktödes:släktödet:släktödets:släktöden:släktödens:släktödena:släktödenas
+COMPOUND(556911, 571235): släkt + öde
+619706r3<substantiv>slända:slända:sländas:sländan:sländans:sländor:sländors:sländorna:sländornas
+824996r3<substantiv>sländlarv:sländlarv:sländlarvs:sländlarven:sländlarvens:sländlarver:sländlarvers:sländlarverna:sländlarvernas
+986142r3<substantiv>sländtrissa:sländtrissa:sländtrissas:sländtrissan:sländtrissans:sländtrissor:sländtrissors:sländtrissorna:sländtrissornas
+551875r3<substantiv>släng:släng:slängs:slängen:slängens:slängar:slängars:slängarna:slängarnas
+641420r5<verb>slänga:slänga:slängde:slängt:slänger:släng:slängas:slängdes:slängts:slängs, slänges:slängd:slängt:slängda:slängande:
+800326r3<adjektiv>slängd:slängd:slängt:slängda:slängda::::
+776462r3<substantiv>slänggunga:slänggunga:slänggungas:slänggungan:slänggungans:slänggungor:slänggungors:slänggungorna:slänggungornas
+576498r4<adjektiv>slängig:slängig:slängigt:slängiga:slängiga:slängigare:slängigast:slängigaste:slängige
+825009r3<substantiv>slängighet:slängighet:slängighets:slängigheten:slängighetens::::
+746355r3<substantiv>slängkappa:slängkappa:slängkappas:slängkappan:slängkappans:slängkappor:slängkappors:slängkapporna:slängkappornas
+709360r3<substantiv>slängkyss:slängkyss:slängkyss:slängkyssen:slängkyssens:slängkyssar:slängkyssars:slängkyssarna:slängkyssarnas
+825013r3<substantiv>slängkälke:slängkälke:slängkälkes:slängkälken:slängkälkens:slängkälkar:slängkälkars:slängkälkarna:slängkälkarnas
+986150r3<substantiv>slängpolska:slängpolska:slängpolskas:slängpolskan:slängpolskans:slängpolskor:slängpolskors:slängpolskorna:slängpolskornas
+641422r3<substantiv>slänt:slänt:slänts:slänten:släntens:slänter:slänters:slänterna:slänternas
+641430r4<verb>släntra:släntra:släntrade:släntrat:släntrar:släntra:::::!:!:!:släntrande:
+825021r3<substantiv>släntras:släntras:släntras:släntraset:släntrasets:släntras:släntras:släntrasen:släntrasens
+628743r4<substantiv>släp:släp:släps:släpet:släpets:släp:släps:släpen:släpens
+CUSTOM: y y
+547705r5<verb>släpa:släpa:släpade:släpat:släpar:släpa:släpas:släpades:släpats:släpas:släpad:släpat:släpade:släpande:
+825026r3<substantiv>släpare:släpare:släpares:släparen:släparens:släpare:släpares:släparna:släparnas
+825032r3<substantiv>släpbygel:släpbygel:släpbygels:släpbygeln:släpbygelns:släpbyglar:släpbyglars:släpbyglarna:släpbyglarnas
+608049r3<substantiv>släpfordon:släpfordon:släpfordons:släpfordonet:släpfordonets:släpfordon:släpfordons:släpfordonen:släpfordonens
+986158r3<substantiv>släphydrofon:släphydrofon:släphydrofons:släphydrofonen:släphydrofonens:släphydrofoner:släphydrofoners:släphydrofonerna:släphydrofonernas
+576501r4<adjektiv>släpig:släpig:släpigt:släpiga:släpiga:släpigare:släpigast:släpigaste:släpige
+776470r3<substantiv>släpighet:släpighet:släpighets:släpigheten:släpighetens::::
+886986r3<substantiv>släpkontakt:släpkontakt:släpkontakts:släpkontakten:släpkontaktens:släpkontakter:släpkontakters:släpkontakterna:släpkontakternas
+746364r4<substantiv>släpkärra:släpkärra:släpkärras:släpkärran:släpkärrans:släpkärror:släpkärrors:släpkärrorna:släpkärrornas
+COMPOUND(628743, 659492): släp + kärra
+986166r3<substantiv>släplift:släplift:släplifts:släpliften:släpliftens:släpliftar:släpliftars:släpliftarna:släpliftarnas
+956970r3<substantiv>släpljus:släpljus:släpljus:släpljuset:släpljusets::::
+825044r3<substantiv>släpning:släpning:släpnings:släpningen:släpningens:släpningar:släpningars:släpningarna:släpningarnas
+CUSTOM: y y +släpnings
+684005r11<substantiv>släpp:släpp:släpps:släppet:släppets:släpp:släpps:släppen:släppens
+DEFINITION 1: lossgöra exempelvis djur eller inom fysiken startögonblicket då man låter en kula falla. 
+585839r8<verb>släppa:släppa:släppte:släppt:släpper:släpp:släppas:släpptes:släppts:släpps, släppes:släppt:släppt:släppta:släppande:
+954539r4<substantiv>släppfest:släppfest:släppfests:släppfesten:släppfestens:släppfester:släppfesters:släppfesterna:släppfesternas
+COMPOUND(684005, 548912): släpp + fest
+641434r5<adjektiv>släpphänt:släpphänt:släpphänt:släpphänta:släpphänta:släpphäntare:släpphäntast:släpphäntaste:släpphänte::::::::
+776474r3<substantiv>släpphänthet:släpphänthet:släpphänthets:släpphäntheten:släpphänthetens::::
+825052r4<substantiv>släppning:släppning:släppnings:släppningen:släppningens::::
+CUSTOM: y y släppnings
+825056r4<substantiv>släppningsyta:släppningsyta:släppningsytas:släppningsytan:släppningsytans:släppningsytor:släppningsytors:släppningsytorna:släppningsytornas
+COMPOUND(825052, 595826): släppning + yta
+794977r3<adjektiv>släpringad:släpringad:släpringat:släpringade:släpringade:!:!:!:
+563539r3<adjektiv>släpsam:släpsam:släpsamt:släpsamma:släpsamma::::
+891343r3<substantiv>släpsko:släpsko:släpskos:släpskon:släpskons:släpskor:släpskors:släpskorna:släpskornas
+709367r3<substantiv>släptåg:släptåg:släptågs:släptåget:släptågets::::
+598872r4<substantiv>släpvagn:släpvagn:släpvagns:släpvagnen:släpvagnens:släpvagnar:släpvagnars:släpvagnarna:släpvagnarnas
+CUSTOM: y y släpvagns
+918696r4<substantiv>släpvagnsvikt:släpvagnsvikt:släpvagnsvikts:släpvagnsvikten:släpvagnsviktens:släpvagnsvikter:släpvagnsvikters:släpvagnsvikterna:släpvagnsvikternas
+COMPOUND(598872, 550771): släpvagn + vikt
+563267r5<adjektiv>slät:slät:slätt:släta:släta:slätare:slätast:slätaste:::::::::
+547706r4<verb>släta:släta:slätade:slätat:slätar:släta:slätas:slätades:slätats:slätas:::::
+825065r3<adjektiv>slätbladig:slätbladig:slätbladigt:slätbladiga:slätbladiga::::!
+709371r3<substantiv>släthet:släthet:släthets:slätheten:släthetens::::
+576504r3<adjektiv>släthårig:släthårig:släthårigt:släthåriga:släthåriga::::
+776480r3<adjektiv>slätkammad:slätkammad:slätkammat:slätkammade:slätkammade:!:!:!:
+986174r3<substantiv>slätlöpning:slätlöpning:slätlöpnings:slätlöpningen:slätlöpningens::::
+825069r3<substantiv>slätmark:slätmark:slätmarks:slätmarken:slätmarkens:slätmarker:slätmarkers:slätmarkerna:slätmarkernas
+986178r3<substantiv>slätputs:slätputs:slätputs:slätputsen:slätputsens::::
+925219r13<verb>slätputsa:slätputsa:slätputsade:slätputsat:slätputsar:slätputsa:slätputsas:slätputsades:slätputsats:slätputsas:slätputsad:slätputsat:slätputsade:slätputsande:
+COMPOUND(563267, 547516): slät + putsa
+771093r3<verb>slätraka:slätraka:slätrakade:slätrakat:slätrakar:slätraka:slätrakas:slätrakades:slätrakats:slätrakas:slätrakad:slätrakat:slätrakade:slätrakande:
+794980r3<adjektiv>slätspontad:slätspontad:slätspontat:slätspontade:slätspontade:!:!:!:
+576507r3<adjektiv>slätstammig:slätstammig:slätstammigt:slätstammiga:slätstammiga::::
+794983r3<adjektiv>slätstickad:slätstickad:slätstickat:slätstickade:slätstickade:!:!:!:
+726300r3<adjektiv>slätstruken:slätstruken:slätstruket:slätstrukna:slätstrukna::::slätstrukne
+825077r3<substantiv>slätstrukenhet:slätstrukenhet:slätstrukenhets:slätstrukenheten:slätstrukenhetens::::
+620766r5<adverb>slätt:slätt
+550534r4<substantiv>slätt:slätt:slätts:slätten:slättens:slätter:slätters:slätterna:slätternas
+CUSTOM: y y
+886997r6<substantiv>slättbo:slättbo:slättbos:slättbon:slättbons:slättbor:slättbors:slättborna:slättbornas
+COMPOUND(550534, 612409): slätt + bo
+708969r3<substantiv>slättbygd:slättbygd:slättbygds:slättbygden:slättbygdens:slättbygder:slättbygders:slättbygderna:slättbygdernas
+746372r3<substantiv>slättland:slättland:slättlands:slättlandet:slättlandets::::
+746376r4<substantiv>slättlandskap:slättlandskap:slättlandskaps:slättlandskapet:slättlandskapets:slättlandskap:slättlandskaps:slättlandskapen:slättlandskapens
+776484r3<substantiv>slättmark:slättmark:slättmarks:slättmarken:slättmarkens:slättmarker:slättmarkers:slättmarkerna:slättmarkernas
+794986r3<adjektiv>slättoppad:slättoppad:slättoppat:slättoppade:slättoppade:!:!:!:
+825083r3<substantiv>slätvar:slätvar:slätvars:slätvaren:slätvarens:slätvarar:slätvarars:slätvararna:slätvararnas
+887006r2<substantiv>slätvarsfilé::::::::
+563327r6<adjektiv>slö:slö:slött:slöa:slöa:slöare:slöast:slöaste:slöe::::slöas::::
+641436r3<verb>slöa:slöa:slöade:slöat:slöar:slöa:::::!:!:!::
+641440r3<substantiv>slödder:slödder:slödders:slöddret:slöddrets::::
+576510r3<adjektiv>slödderaktig:slödderaktig:slödderaktigt:slödderaktiga:slödderaktiga::::
+641442r3<substantiv>slöfock:slöfock:slöfocks:slöfocken:slöfockens:slöfockar:slöfockars:slöfockarna:slöfockarnas
+641450r3<substantiv>slöhet:slöhet:slöhets:slöheten:slöhetens::::
+CUSTOM: y y slöhets
+623153r6<substantiv>slöja:slöja:slöjas:slöjan:slöjans:slöjor:slöjors:slöjorna:slöjornas
+CUSTOM: y y slöj
+637302r7<substantiv>slöjd:slöjd:slöjds:slöjden:slöjdens:slöjder:slöjders:slöjderna:slöjdernas
+CUSTOM: y y slöjd
+637308r3<verb>slöjda:slöjda:slöjdade:slöjdat:slöjdar:slöjda:slöjdas:slöjdades:slöjdats:slöjdas:slöjdad:slöjdat:slöjdade:slöjdande:
+639243r6<substantiv>slöjdans:slöjdans:slöjdans:slöjdansen:slöjdansens:slöjdanser:slöjdansers:slöjdanserna:slöjdansernas
+COMPOUND(623153, 548569): slöja + dans
+875742r3<substantiv>slöjdarbete:slöjdarbete:slöjdarbetes:slöjdarbeten:slöjdarbetens:slöjdarbeten:slöjdarbetens:slöjdarbeterna:slöjdarbeternas
+948522r3<substantiv>slöjdare:slöjdare:slöjdares:slöjdaren:slöjdarens:slöjdare:slöjdares:slöjdarna:slöjdarnas
+709375r4<substantiv>slöjdlärare:slöjdlärare:slöjdlärares:slöjdläraren:slöjdlärarens:slöjdlärare:slöjdlärares:slöjdlärarna:slöjdlärarnas
+COMPOUND(637302, 560239): slöjd + lärare
+599604r3<substantiv>slöjdsal:slöjdsal:slöjdsals:slöjdsalen:slöjdsalens:slöjdsalar:slöjdsalars:slöjdsalarna:slöjdsalarnas
+564192r3<adjektiv>slöjfri:slöjfri:slöjfritt:slöjfria:slöjfria::::
+576513r3<adjektiv>slöjig:slöjig:slöjigt:slöjiga:slöjiga::::
+709381r3<verb>slölyssna:slölyssna:slölyssnade:slölyssnat:slölyssnar:slölyssna:::::::::
+825091r3<verb>slöläsa:slöläsa:slöläste:slöläst:slöläser:slöläs:slöläsas:slölästes:slölästs:slöläses:slöläst:slöläst:slölästa:slöläsande:
+825102r3<substantiv>slöläsning:slöläsning:slöläsnings:slöläsningen:slöläsningens::::
+905900r3<substantiv>slör:slör:slörs:slören:slörens:slörar:slörars:slörarna:slörarnas
+CUSTOM: n n y
+547707r5<verb>slösa:slösa:slösade:slösat:slösar:slösa:slösas:slösades:slösats:slösas::::slösande:
+576516r3<adjektiv>slösaktig:slösaktig:slösaktigt:slösaktiga:slösaktiga::::
+709385r3<substantiv>slösaktighet:slösaktighet:slösaktighets:slösaktigheten:slösaktighetens::::
+641452r3<substantiv>slösare:slösare:slösares:slösaren:slösarens:slösare:slösares:slösarna:slösarnas
+CUSTOM: y y slösar
+641458r3<substantiv>slöseri:slöseri:slöseris:slöseriet:slöseriets::::
+576519r3<adjektiv>slösig:slösig:slösigt:slösiga:slösiga::::
+667031r5<verb>slötitta:slötitta:slötittade:slötittat:slötittar:slötitta:slötittas:slötittades:slötittats:slötittas::::slötittande:
+935657r3<förkortning>SM:SM
+641462r3<substantiv>smack:smack:::::::
+641463r4<verb>smacka:smacka:smackade:smackat:smackar:smacka:smackas:smackades:smackats:smackas::::smackande:
+576522r3<adjektiv>smackig:smackig:smackigt:smackiga:smackiga::::
+825117r3<substantiv>smackljud:smackljud:smackljuds:smackljudet:smackljudets:smackljud:smackljuds:smackljuden:smackljudens
+825109r3<substantiv>smackning:smackning:smacknings:smackningen:smackningens:smackningar:smackningars:smackningarna:smackningarnas
+550536r14<substantiv>smak:smak:smaks:smaken:smakens:smaker:smakers:smakerna:smakernas
+CUSTOM: y y smak
+585689r5<verb>smaka:smaka:smakade:smakat:smakar:smaka:smakas:smakades:smakats:smakas::::smakande:
+641464r3<substantiv>smakbit:smakbit:smakbits:smakbiten:smakbitens:smakbitar:smakbitars:smakbitarna:smakbitarnas
+564195r3<adjektiv>smakfri:smakfri:smakfritt:smakfria:smakfria::::
+641472r6<substantiv>smakfråga:smakfråga:smakfrågas:smakfrågan:smakfrågans:smakfrågor:smakfrågors:smakfrågorna:smakfrågornas
+COMPOUND(550536, 594085): smak + fråga
+585110r3<adjektiv>smakfull:smakfull:smakfullt:smakfulla:smakfulla::::
+567730r4<adjektiv>smaklig:smaklig:smakligt:smakliga:smakliga:smakligare:smakligast:smakligaste:
+641480r3<substantiv>smaklök:smaklök:smaklöks:smaklöken:smaklökens:smaklökar:smaklökars:smaklökarna:smaklökarnas
+565290r4<adjektiv>smaklös:smaklös:smaklöst:smaklösa:smaklösa:smaklösare:smaklösast:smaklösaste:smaklöse
+709389r4<substantiv>smaklöshet:smaklöshet:smaklöshets:smaklösheten:smaklöshetens:smaklösheter:smaklösheters:smaklösheterna:smaklösheternas
+641488r4<substantiv>smakprov:smakprov:smakprovs:smakprovet:smakprovets:smakprover, smakprov:smakprovers, smakprovs:smakproverna, smakproven:smakprovernas, smakprovens
+COMPOUND(550536, 621658): smak + prov
+882752r4<adjektiv>smakren:smakren:smakrent:smakrena:smakrena::::::::::::
+COMPOUND(550536, 563124): smak + ren
+641498r5<adjektiv>smakrik:smakrik:smakrikt:smakrika:smakrika:smakrikare:smakrikast:smakrikaste:::::::::
+COMPOUND(550536, 563125): smak + rik
+667034r3<substantiv>smakriktning:smakriktning:smakriktnings:smakriktningen:smakriktningens:smakriktningar:smakriktningars:smakriktningarna:smakriktningarnas
+CUSTOM: y y smakriktnings
+667039r3<substantiv>smakråd:smakråd:smakråds:smakrådet:smakrådets:smakråd:smakråds:smakråden:smakrådens
+667038r3<substantiv>smaksak:smaksak:!:!:!:!:!:!:!
+667045r3<substantiv>smaksensation:smaksensation:smaksensations:smaksensationen:smaksensationens:smaksensationer:smaksensationers:smaksensationerna:smaksensationernas
+CUSTOM: y y smaksensations
+709393r3<substantiv>smaksinne:smaksinne:smaksinnes:smaksinnet:smaksinnets::::
+641505r4<substantiv>smakstart:smakstart:smakstarts:smakstarten:smakstartens:smakstarter:smakstarters:smakstarterna:smakstarternas
+COMPOUND(550536, 603706): smak + start
+641513r4<verb>smaksätta:smaksätta:smaksatte:smaksatt:smaksätter:smaksätt:smaksättas:smaksattes:smaksatts:smaksätts, smaksättes:smaksatt:smaksatt:smaksatta::
+COMPOUND(550536, 593414): smak + sätta
+641522r3<substantiv>smaksättning:smaksättning:smaksättnings:smaksättningen:smaksättningens::::
+CUSTOM: y y smaksättnings
+563258r4<adjektiv>smal:smal:smalt:smala:smala:smalare:smalast:smalaste:smale
+766313r3<adjektiv>smalaxlad:smalaxlad:smalaxlat:smalaxlade:smalaxlade:!:!:!:
+709397r3<substantiv>smalben:smalben:smalbens:smalbenet:smalbenets:smalben:smalbens:smalbenen:smalbenens
+798869r3<adjektiv>smalbladig:smalbladig:smalbladigt:smalbladiga:smalbladiga::::
+766316r3<adjektiv>smalbrättad:smalbrättad:smalbrättat:smalbrättade:smalbrättade:!:!:!:
+576525r3<adjektiv>smalbrättig:smalbrättig:smalbrättigt:smalbrättiga:smalbrättiga::::
+825123r4<substantiv>smalfilm:smalfilm:smalfilms:smalfilmen:smalfilmens:smalfilmer:smalfilmers:smalfilmerna:smalfilmernas
+CUSTOM: y y smalfilms
+825132r3<verb>smalfilma:smalfilma:smalfilmade:smalfilmat:smalfilmar:smalfilma:smalfilmas:smalfilmades:smalfilmats:smalfilmas:smalfilmad:smalfilmat:smalfilmade::
+825131r3<substantiv>smalfilmsprojektor::::::::
+COMPOUND(825123, 621654): smalfilm + projektor
+798874r3<adjektiv>smalfjällig:smalfjällig:smalfjälligt:smalfjälliga:smalfjälliga::::
+798879r3<adjektiv>smalgrenig:smalgrenig:smalgrenigt:smalgreniga:smalgreniga::::
+825140r3<substantiv>smalhet:smalhet:smalhets:smalheten:smalhetens::::
+986189r3<substantiv>smalhus:smalhus:smalhus:smalhuset:smalhusets:smalhus:smalhus:smalhusen:smalhusens
+766319r3<adjektiv>smalhöftad:smalhöftad:smalhöftat:smalhöftade:smalhöftade:!:!:!:
+576528r3<adjektiv>smalkronig:smalkronig:smalkronigt:smalkroniga:smalkroniga::::
+696959r3<egennamn>Smalltalk:smalltalk:
+776494r3<substantiv>smalmat:smalmat:smalmats:smalmaten:smalmatens::::
+641526r4<verb>smalna:smalna:smalnade:smalnat:smalnar:smalna:smalnas:smalnades:smalnats:smalnas:smalnad:smalnat:smalnade:smalnande:
+794990r3<adjektiv>smalnäbbad:smalnäbbad:smalnäbbat:smalnäbbade:smalnäbbade:!:!:!:
+576531r3<adjektiv>smalrandig:smalrandig:smalrandigt:smalrandiga:smalrandiga::::
+887007r3<substantiv>smalsida:smalsida:smalsidas:smalsidan:smalsidans:smalsidor:smalsidors:smalsidorna:smalsidornas
+576534r3<adjektiv>smalspårig:smalspårig:smalspårigt:smalspåriga:smalspåriga::::
+567731r3<adjektiv>smalvinklig:smalvinklig:smalvinkligt:smalvinkliga:smalvinkliga::::
+766322r3<adjektiv>smalögd:smalögd:smalögt:smalögda:smalögda::::
+776498r4<substantiv>smaragd:smaragd:smaragds:smaragden:smaragdens:smaragder:smaragders:smaragderna:smaragdernas
+CUSTOM: y y smaragd
+776506r4<adjektiv>smaragdgrön:smaragdgrön:smaragdgrönt:smaragdgröna:smaragdgröna:!:!:!:
+COMPOUND(776498, 555925): smaragd + grön
+576537r4<adjektiv>smarrig:smarrig:smarrigt:smarriga:smarriga:smarrigare:smarrigast:smarrigaste:::::::::
+626377r8<adjektiv>smart::smart:smarta:smarta:smartare:smartast:smartaste:smarte::::::::
+CUSTOM: y n
+825144r3<substantiv>smartcard:smartcard:smartcards:smartcardet:smartcardets:smartcard:smartcards:smartcarden:smartcardens
+825150r3<substantiv>smarthet:smarthet:smarthets:smartheten:smarthetens::::
+913616r3<substantiv>smartkort:smartkort:smartkorts:smartkortet:smartkortets:smartkort:smartkorts:smartkorten:smartkortens
+CUSTOM: y n smartkorts
+966482r4<substantiv>smartmobil:smartmobil:smartmobils:smartmobilen:smartmobilens:smartmobiler:smartmobilers:smartmobilerna:smartmobilernas
+COMPOUND(626377, 625750): smart + mobil
+963545r3<substantiv>smartness:smartness:smartness:smartnessen:smartnessens::::
+895670r4<substantiv>smartphone:smartphone:smartphones::::::
+CUSTOM: y y smartphone
+895674r3<substantiv>smartphonemodell::::::::
+COMPOUND(895670, 550047): smartphone + modell
+726227r4<substantiv>smartskalle:smartskalle:smartskalles:smartskallen:smartskallens:smartskallar:smartskallars:smartskallarna:smartskallarnas
+COMPOUND(626377, 599968): smart + skalle
+895391r3<substantiv>smarttelefon:smarttelefon:smarttelefons:smarttelefonen:smarttelefonens:smarttelefoner:smarttelefoners:smarttelefonerna:smarttelefonernas
+CUSTOM: y y smarttelefon
+641530r3<substantiv>smash:smash:smashs:smashen:smashens:smashar:smashars:smasharna:smasharnas
+641538r4<verb>smasha:smasha:smashade:smashat:smashar:smasha:smashas:smashades:smashats:smashas:smashad:smashat:smashade:smashande:
+641541r3<substantiv>smask:smask:smasks:smasket:smaskets::::
+641545r3<verb>smaska:smaska:smaskade:smaskat:smaskar:smaska:::::::::
+641549r3<adjektiv>smaskens:smaskens:smaskens:smaskens:smaskens:!:!:!:
+576540r4<adjektiv>smaskig:smaskig:smaskigt:smaskiga:smaskiga:smaskigare:smaskigast:smaskigaste:!
+641550r3<substantiv>smatter:smatter:smatters:smattret:smattrets::::
+547708r3<verb>smattra:smattra:smattrade:smattrat:smattrar:smattra:::::::::
+667048r3<substantiv>smattrande:smattrande:smattrandes:smattrandet:smattrandets::::
+550538r4<substantiv>smed:smed:smeds:smeden:smedens:smeder:smeders:smederna:smedernas
+973317r3<egennamn>Smedberg:Smedberg:Smedbergs
+641554r3<substantiv>smedja:smedja:smedjas:smedjan:smedjans:smedjor:smedjors:smedjorna:smedjornas
+728240r3<egennamn>Smedjebacken:Smedjebacken:Smedjebackens
+825159r3<substantiv>smedmästare:smedmästare:smedmästares:smedmästaren:smedmästarens:smedmästare:smedmästares:smedmästarna:smedmästarnas
+641556r5<substantiv>smek:smek:smeks:smeket:smekets::::
+CUSTOM: y y smek
+585840r4<verb>smeka:smeka:smekte:smekt:smeker:smek:smekas:smektes:smekts:smeks:smekt:smekt:smekta:smekande:
+696961r3<substantiv>smekande:smekande:smekandes:smekandet:smekandets::::
+641560r3<deponens>smekas:smekas:smektes:smekts:smeks:smeks
+585113r3<adjektiv>smekfull:smekfull:smekfullt:smekfulla:smekfulla::::
+641561r4<substantiv>smekmånad:smekmånad:smekmånads:smekmånaden:smekmånadens:smekmånader:smekmånaders:smekmånaderna:smekmånadernas
+COMPOUND(641556, 550065): smek + månad
+641569r4<substantiv>smeknamn:smeknamn:smeknamns:smeknamnet:smeknamnets:smeknamn:smeknamns:smeknamnen:smeknamnens
+COMPOUND(641556, 607737): smek + namn
+641573r3<substantiv>smekning:smekning:smeknings:smekningen:smekningens:smekningar:smekningars:smekningarna:smekningarnas
+CUSTOM: y y smeknings
+563542r4<adjektiv>smeksam:smeksam:smeksamt:smeksamma:smeksamma:smeksammare:smeksammast:smeksammaste:
+667050r3<substantiv>smeksamhet:smeksamhet:smeksamhets:smeksamheten:smeksamhetens::::
+CUSTOM: y y smeksamhets
+583831r3<adjektiv>smektisk:smektisk:smektiskt:smektiska:smektiska::::
+CUSTOM: y n n
+629061r5<substantiv>smet:smet:smets:smeten:smetens:smeter:smeters:smeterna:smeternas
+629068r3<verb>smeta:smeta:smetade:smetat:smetar:smeta:smetas:smetades:smetats:smetas:smetad:smetat:smetade:smetande:
+963550r3<substantiv>smetana:smetana:smetanas:smetanan:smetanans::::
+CUSTOM: y n
+641575r3<egennamn>Smetana:Smetana:Smetanas
+CUSTOM: y n Smetana
+564198r3<adjektiv>smetfri:smetfri:smetfritt:smetfria:smetfria::::
+576541r3<adjektiv>smethärdig:smethärdig:smethärdigt:smethärdiga:smethärdiga::::
+576544r4<adjektiv>smetig:smetig:smetigt:smetiga:smetiga:smetigare:smetigast:smetigaste:
+825171r3<substantiv>smetighet:smetighet:smetighets:smetigheten:smetighetens::::
+641578r3<substantiv>smicker:smicker:smickers:smickret:smickrets::::
+564201r3<adjektiv>smickerfri:smickerfri:smickerfritt:smickerfria:smickerfria::::
+563545r3<adjektiv>smickersam:smickersam:smickersamt:smickersamma:smickersamma::::
+547709r4<verb>smickra:smickra:smickrade:smickrat:smickrar:smickra:smickras:smickrades:smickrats:smickras:smickrad:smickrat:smickrade::
+641580r3<adjektiv>smickrande:smickrande:smickrande:smickrande:smickrande:!:!:!:
+641581r3<substantiv>smickrare:smickrare:smickrares:smickraren:smickrarens:smickrare:smickrares:smickrarna:smickrarnas
+CUSTOM: y y smickrar
+555093r3<verb>smida:smida:smidde:smitt:smider:smid:smidas:smiddes:smitts:smids:smidd:smitt:smidda::
+CUSTOM: y n
+696964r3<substantiv>smidande:smidande:smidandes:smidandet:smidandets::::
+570106r3<adjektiv>smidbar:smidbar:smidbart:smidbara:smidbara::::
+641587r5<substantiv>smide:smide:smides:smidet:smidets:smiden:smidens:smidena:smidenas
+CUSTOM: y y smides
+641591r3<substantiv>smideri:smideri:smideris:smideriet:smideriets:smiderier:smideriers:smiderierna:smideriernas
+945364r4<substantiv>smidesbälg:smidesbälg:smidesbälgs:smidesbälgen:smidesbälgens:smidesbälgar:smidesbälgars:smidesbälgarna:smidesbälgarnas
+COMPOUND(641587, 560902): smide + bälg
+667051r3<substantiv>smideskonst:smideskonst:smideskonsts:smideskonsten:smideskonstens::::
+794994r3<adjektiv>smidespressad:smidespressad:smidespressat:smidespressade:smidespressade:!:!:!:
+731082r4<substantiv>smidestemperatur:smidestemperatur:smidestemperaturs:smidestemperaturen:smidestemperaturens:smidestemperaturer:smidestemperaturers:smidestemperaturerna:smidestemperaturernas
+COMPOUND(641587, 550651): smide + temperatur
+563197r4<adjektiv>smidig:smidig:smidigt:smidiga:smidiga:smidigare:smidigast:smidigaste:smidige
+667056r3<substantiv>smidighet:smidighet:smidighets:smidigheten:smidighetens::::
+CUSTOM: y y smidighets
+713048r6<substantiv>smidning:smidning:smidnings:smidningen:smidningens::::
+628755r3<substantiv>smil:smil:smils:smilet:smilets:smil:smils:smilen:smilens
+CUSTOM: y n
+904914r3<verb>smila:smila:smilade:smilat:smilar:smila:smilas:smilades:smilats:smilas:smilad:smilat:smilade:smilande:!
+CUSTOM: y n
+825175r3<substantiv>smilband:smilband:smilbands:smilbandet:smilbandets:smilband:smilbands:smilbanden:smilbandens
+924100r3<substantiv>smiley:smiley::smileyn:smileyns:smileys:::
+825181r8<substantiv>smilfink:smilfink:smilfinks:smilfinken:smilfinkens:smilfinkar:smilfinkars:smilfinkarna:smilfinkarnas
+825189r3<substantiv>smilgrop:smilgrop:smilgrops:smilgropen:smilgropens:smilgropar:smilgropars:smilgroparna:smilgroparnas
+567734r3<adjektiv>smilig:smilig:smiligt:smiliga:smiliga::::
+649268r5<substantiv>smink:smink:sminks:sminket:sminkets:sminker:sminkers:sminkerna:sminkernas
+CUSTOM: y y smink
+547710r4<verb>sminka:sminka:sminkade:sminkat:sminkar:sminka:sminkas:sminkades:sminkats:sminkas:sminkad:sminkat:sminkade::
+825197r3<substantiv>sminkare:sminkare:sminkares:sminkaren:sminkarens:sminkare:sminkares:sminkarna:sminkarnas
+825207r3<substantiv>sminkgrejor:::::sminkgrejor:sminkgrejors:sminkgrejorna:sminkgrejornas
+696966r3<substantiv>sminkning:sminkning:sminknings:sminkningen:sminkningens:sminkningar:sminkningars:sminkningarna:sminkningarnas
+CUSTOM: y y sminknings
+801916r3<adjektiv>sminkröd:sminkröd:sminkrött:sminkröda:sminkröda::::
+CUSTOM: y n n
+746384r4<substantiv>sminkväska:sminkväska:sminkväskas:sminkväskan:sminkväskans:sminkväskor:sminkväskors:sminkväskorna:sminkväskornas
+COMPOUND(649268, 595808): smink + väska
+776508r3<substantiv>sminkör:sminkör:sminkörs:sminkören:sminkörens:sminkörer:sminkörers:sminkörerna:sminkörernas
+667057r3<substantiv>sminkös:sminkös:sminkös:sminkösen:sminkösens:sminköser:sminkösers:sminköserna:sminkösernas
+629344r3<substantiv>smisk:smisk:smisks:smisket:smiskets::::
+732966r3<verb>smiska:smiska:smiskade:smiskat:smiskar:smiska:smiskas:smiskades:smiskats:smiskas:smiskad:smiskat:smiskade:smiskande:
+593373r4<verb>smita:smita:smet:smitit:smiter:smit::::::::smitande:
+CUSTOM: y n
+615451r3<substantiv>smitare:smitare:smitares:smitaren:smitarens:smitare:smitares:smitarna:smitarnas
+CUSTOM: y y smitar
+734893r3<egennamn>Smith:Smith:Smiths
+776516r4<substantiv>smitning:smitning:smitnings:smitningen:smitningens:smitningar:smitningars:smitningarna:smitningarnas
+CUSTOM: y y smitnings
+874297r4<substantiv>smitningsolycka:smitningsolycka:smitningsolyckas:smitningsolyckan:smitningsolyckans:smitningsolyckor:smitningsolyckors:smitningsolyckorna:smitningsolyckornas
+COMPOUND(776516, 560318): smitning + olycka
+595259r12<substantiv>smitta:smitta:smittas:smittan:smittans:smittor:smittors:smittorna:smittornas
+CUSTOM: y y
+585690r6<verb>smitta:smitta:smittade:smittat:smittar:smitta:smittas:smittades:smittats:smittas:smittad:smittat:smittade:smittande:
+CUSTOM: y y smitto
+776525r3<adjektiv>smittbärande:smittbärande:smittbärande:smittbärande:smittbärande:!:!:!:
+667064r3<substantiv>smittbärare:smittbärare:smittbärares:smittbäraren:smittbärarens:smittbärare:smittbärares:smittbärarna:smittbärarnas
+CUSTOM: y y smittbärar
+887022r3<substantiv>smittfara:smittfara:smittfaras:smittfaran:smittfarans:smittfaror:smittfarors:smittfarorna:smittfarornas
+567737r4<adjektiv>smittfarlig:smittfarlig:smittfarligt:smittfarliga:smittfarliga:smittfarligare:smittfarligast:smittfarligaste:::::::::
+564204r3<adjektiv>smittfri:smittfri:smittfritt:smittfria:smittfria::::
+667070r3<substantiv>smitthärd:smitthärd:smitthärds:smitthärden:smitthärdens:smitthärdar:smitthärdars:smitthärdarna:smitthärdarnas
+667078r4<substantiv>smittkoppor:::::smittkoppor:smittkoppors:smittkopporna:smittkoppornas
+CUSTOM: y y smittkopps
+776527r3<substantiv>smittkoppsvaccin::::::::
+COMPOUND(667078, 561728): smittkoppor + vaccin
+667082r3<substantiv>smittkälla:smittkälla:smittkällas:smittkällan:smittkällans:smittkällor:smittkällors:smittkällorna:smittkällornas
+635596r6<substantiv>smittläge:smittläge:smittläges:smittläget:smittlägets:smittlägen:smittlägens:smittlägena:smittlägenas
+COMPOUND(595259, 612680): smitta + läge
+667090r3<substantiv>smittohärd:smittohärd:smittohärds:smittohärden:smittohärdens:smittohärdar:smittohärdars:smittohärdarna:smittohärdarnas
+667098r3<substantiv>smittorisk:smittorisk:smittorisks:smittorisken:smittoriskens:smittorisker:smittoriskers:smittoriskerna:smittoriskernas
+563548r4<adjektiv>smittosam:smittosam:smittosamt:smittosamma:smittosamma:smittosammare:smittosammast:smittosammaste:::::::::
+776529r6<substantiv>smittoväg:smittoväg:smittovägs:smittovägen:smittovägens:smittovägar:smittovägars:smittovägarna:smittovägarnas
+COMPOUND(585690, 552110): smitta + väg
+887041r3<substantiv>smittrisk:smittrisk:smittrisks:smittrisken:smittriskens:smittrisker:smittriskers:smittriskerna:smittriskernas
+563551r4<adjektiv>smittsam:smittsam:smittsamt:smittsamma:smittsamma:smittsammare:smittsammast:smittsammaste:
+776538r3<substantiv>smittsamhet:smittsamhet:smittsamhets:smittsamheten:smittsamhetens::::
+707347r5<substantiv>smittskydd:smittskydd:smittskydds:smittskyddet:smittskyddets::::
+COMPOUND(595259, 552935): smitta + skydd
+CUSTOM: y y smittskydds
+707346r4<substantiv>smittskyddsläkare:smittskyddsläkare:smittskyddsläkares:smittskyddsläkaren:smittskyddsläkarens:smittskyddsläkare:smittskyddsläkares:smittskyddsläkarna:smittskyddsläkarnas
+COMPOUND(707347, 609844): smittskydd + läkare
+776542r3<substantiv>smittspridare:smittspridare:smittspridares:smittspridaren:smittspridarens:smittspridare:smittspridares:smittspridarna:smittspridarnas
+746386r4<substantiv>smittspridning:smittspridning:smittspridnings:smittspridningen:smittspridningens:smittspridningar:smittspridningars:smittspridningarna:smittspridningarnas
+COMPOUND(595259, 668888): smitta + spridning
+854815r4<substantiv>smittspårning:smittspårning:smittspårnings:smittspårningen:smittspårningens:smittspårningar:smittspårningars:smittspårningarna:smittspårningarnas
+COMPOUND(595259, 746772): smitta + spårning
+887033r3<substantiv>smittväg:smittväg:smittvägs:smittvägen:smittvägens:smittvägar:smittvägars:smittvägarna:smittvägarnas
+746387r4<substantiv>smittämne:smittämne:smittämnes:smittämnet:smittämnets:smittämnen:smittämnens:smittämnena:smittämnenas
+COMPOUND(595259, 613026): smitta + ämne
+954237r3<substantiv>smitväg:smitväg:smitvägs:smitvägen:smitvägens:smitvägar:smitvägars:smitvägarna:smitvägarnas
+887052r3<substantiv>smocka:smocka:smockas:smockan:smockans:smockor:smockors:smockorna:smockornas
+887060r3<verb>smocka:smocka:smockade:smockat:smockar:smocka:smockas:smockades:smockats:smockas:::::
+585116r3<adjektiv>smockfull:smockfull:smockfullt:smockfulla:smockfulla::::
+924084r3<substantiv>smog:smog:smogs:smogen:smogens::::
+CUSTOM: y n
+801184r3<adjektiv>smogliknande:smogliknande:smogliknande:smogliknande:smogliknande:!:!:!:
+667104r4<substantiv>smoking:smoking:smokings:smokingen:smokingens:smokingar:smokingars:smokingarna:smokingarnas
+CUSTOM: y y smoking
+776548r3<adjektiv>smokingklädd::::::::
+COMPOUND(667104, 571280): smoking + klädd
+852477r3<substantiv>smokinglir:smokinglir:smokinglirs:smokingliret:smokinglirets::::
+559266r4<substantiv>smolk:smolk:smolks:smolket:smolkets:!:!:!:!
+DEFINITION 1: smuts
+576545r3<adjektiv>smolkig:smolkig:smolkigt:smolkiga:smolkiga::::
+959600r3<substantiv>smoothie:smoothie:smoothies:smoothien:smoothiens::::
+800327r3<adjektiv>smord:smord:smort:smorda:smorda::::
+939980r3<förkortning>sms:sms
+873839r6<substantiv>sms:sms:sms::::::
+DEFINITION 1: SMS står för Short Message Service, och är en tjänst för korta textmeddelanden som sänds mellan mobiltelefoner eller från dator till mobiltelefon.
+952942r4<substantiv>smuggelcigg:smuggelcigg:smuggelciggs:smuggelciggen:smuggelciggens:smuggelciggar:smuggelciggars:smuggelciggarna:smuggelciggarnas
+COMPOUND(547711, 596621): smuggla + cigg
+667105r3<substantiv>smuggelgods:smuggelgods:smuggelgods:smuggelgodset:smuggelgodsets::::
+667108r3<substantiv>smuggelsprit:smuggelsprit:smuggelsprits:smuggelspriten:smuggelspritens::::
+547711r5<verb>smuggla:smuggla:smugglade:smugglat:smugglar:smuggla:smugglas:smugglades:smugglats:smugglas:smugglad:smugglat:smugglade::
+CUSTOM: y y smuggel
+615452r3<substantiv>smugglare:smugglare:smugglares:smugglaren:smugglarens:smugglare:smugglares:smugglarna:smugglarnas
+CUSTOM: y y smugglar
+887066r3<substantiv>smuggleri:smuggleri:smuggleris:smuggleriet:smuggleriets:smugglerier:smuggleriers:smugglerierna:smuggleriernas
+667112r4<substantiv>smuggling:smuggling:smugglings:smugglingen:smugglingens:smugglingar:smugglingars:smugglingarna:smugglingarnas
+CUSTOM: y y smugglings
+667113r3<substantiv>smul:smul:!:!:!:!:!:!:!
+CUSTOM: y n
+585691r4<verb>smula:smula:smulade:smulat:smular:smula:smulas:smulades:smulats:smulas:smulad:smulat:smulade::
+585910r4<substantiv>smula:smula:smulas:smulan:smulans:smulor:smulors:smulorna:smulornas
+887078r3<substantiv>smulgubbe:smulgubbe:smulgubbes:smulgubben:smulgubbens:smulgubbar:smulgubbars:smulgubbarna:smulgubbarnas
+567740r4<adjektiv>smulig:smulig:smuligt:smuliga:smuliga:smuligare:smuligast:smuligaste:::::::::
+667114r3<substantiv>smulpaj:smulpaj:smulpajs:smulpajen:smulpajens:smulpajer:smulpajers:smulpajerna:smulpajernas
+608055r4<substantiv>smultron:smultron:smultrons:smultronet:smultronets:smultron:smultrons:smultronen:smultronens
+CUSTOM: y y smultron
+794997r3<adjektiv>smultronfärgad:smultronfärgad:smultronfärgat:smultronfärgade:smultronfärgade:!:!:!:
+801919r3<adjektiv>smultronröd:smultronröd:smultronrött:smultronröda:smultronröda::::
+667122r4<substantiv>smultronställe:smultronställe:smultronställes:smultronstället:smultronställets:smultronställen:smultronställens:smultronställena:smultronställenas
+COMPOUND(608055, 612918): smultron + ställe
+551877r3<substantiv>smurf:smurf:smurfs:smurfen:smurfens:smurfar:smurfars:smurfarna:smurfarnas

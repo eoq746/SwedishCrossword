@@ -1,0 +1,618 @@
+en:stansningens:stansningar:stansningars:stansningarna:stansningarnas
+CUSTOM: y y stansnings
+669579r4<substantiv>stapel:stapel:stapels:stapeln:stapelns:staplar:staplars:staplarna:staplarnas
+CUSTOM: y y stapel
+570136r3<adjektiv>stapelbar:stapelbar:stapelbart:stapelbara:stapelbara::::
+669581r4<substantiv>stapeldiagram:stapeldiagram:stapeldiagrams:stapeldiagrammet:stapeldiagrammets:stapeldiagram:stapeldiagrams:stapeldiagrammen:stapeldiagrammens
+COMPOUND(669579, 636770): stapel + diagram
+547749r5<verb>stapla:stapla:staplade:staplat:staplar:stapla:staplas:staplades:staplats:staplas:staplad:staplat:staplade:staplande:
+570139r3<adjektiv>staplingsbar:staplingsbar:staplingsbart:staplingsbara:staplingsbara::::
+669583r4<verb>stappla:stappla:stapplade:stapplat:stapplar:stappla::::::::stapplande:
+941066r3<substantiv>starbåt:starbåt:starbåts:starbåten:starbåtens:starbåtar:starbåtars:starbåtarna:starbåtarnas
+599988r3<substantiv>stare:stare:stares:staren:starens:starar:starars:stararna:stararnas
+CUSTOM: y n
+563133r13<adjektiv>stark:stark:starkt:starka:starka:starkare:starkast:starkaste:starke::::starkas:starkares::starkastes:starkes
+CUSTOM: y y stark
+669584r3<substantiv>starkhet:starkhet:starkhets:starkheten:starkhetens::::
+CUSTOM: y y starkhets
+746881r3<substantiv>starksprit::::::::
+COMPOUND(563133, 555157): stark + sprit
+576967r3<adjektiv>starktonig:starktonig:starktonigt:starktoniga:starktoniga::::
+576970r3<adjektiv>starktryckig:starktryckig:starktryckigt:starktryckiga:starktryckiga::::
+918928r4<substantiv>starkvin:starkvin:starkvins:starkvinet:starkvinets:starkviner:starkviners:starkvinerna:starkvinernas
+COMPOUND(563133, 600515): stark + vin
+CUSTOM: y y starkvins
+746882r4<substantiv>starköl:starköl:starköls:starkölet:starkölets:starköl:starköls:starkölen:starkölens
+COMPOUND(563133, 553170): stark + öl
+905826r7<substantiv>starr:starr:starrs:starren:starrens::::
+CUSTOM: y n
+986602r3<substantiv>starrart:starrart:starrarts:starrarten:starrartens:starrarter:starrarters:starrarterna:starrarternas
+802109r3<adjektiv>starrgrå:starrgrå:starrgrått:starrgråa:starrgråa::::
+CUSTOM: y n n
+986610r3<substantiv>starrgräs:starrgräs:starrgräs:starrgräset:starrgräsets:starrgräs:starrgräs:starrgräsen:starrgräsens
+884499r3<substantiv>starroperation:starroperation:starroperations:starroperationen:starroperationens:starroperationer:starroperationers:starroperationerna:starroperationernas
+795206r3<adjektiv>starropererad:starropererad:starropererat:starropererade:starropererade:!:!:!:
+603706r21<substantiv>start:start:starts:starten:startens:starter:starters:starterna:starternas
+CUSTOM: y y start +starts
+547750r9<verb>starta:starta:startade:startat:startar:starta:startas:startades:startats:startas:startad:startat:startade:startande:
+697097r3<substantiv>startande:startande:startandes:startandet:startandets::::
+669108r3<substantiv>startavgift:startavgift:startavgifts:startavgiften:startavgiftens:startavgifter:startavgifters:startavgifterna:startavgifternas
+595392r3<substantiv>startbana:startbana:startbanas:startbanan:startbanans:startbanor:startbanors:startbanorna:startbanornas
+746888r3<substantiv>startelva:startelva:startelvas:startelvan:startelvans:startelvor:startelvors:startelvorna:startelvornas
+936433r4<substantiv>startfält:startfält:startfälts:startfältet:startfältets:startfält:startfälts:startfälten:startfältens
+COMPOUND(603706, 552397): start + fält
+669585r4<substantiv>startplats:startplats:startplats:startplatsen:startplatsens:startplatser:startplatsers:startplatserna:startplatsernas
+COMPOUND(603706, 550210): start + plats
+669590r4<substantiv>startpunkt:startpunkt:startpunkts:startpunkten:startpunktens:startpunkter:startpunkters:startpunkterna:startpunkternas
+COMPOUND(603706, 550299): start + punkt
+669596r4<substantiv>startraket:startraket:startrakets:startraketen:startraketens:startraketer:startraketers:startraketerna:startraketernas
+COMPOUND(603706, 550310): start + raket
+937082r4<substantiv>startsida:startsida:startsidas:startsidan:startsidans:startsidor:startsidors:startsidorna:startsidornas
+COMPOUND(603706, 556545): start + sida
+552970r3<substantiv>startskott:startskott:startskotts:startskottet:startskottets:startskott:startskotts:startskotten:startskottens
+798900r3<adjektiv>startsnabb:startsnabb:startsnabbt:startsnabba:startsnabba::::
+598920r3<substantiv>startspärr:startspärr:startspärrs:startspärren:startspärrens:startspärrar:startspärrars:startspärrarna:startspärrarnas
+669597r4<substantiv>starttid:starttid:starttids:starttiden:starttidens:starttider:starttiders:starttiderna:starttidernas
+COMPOUND(603706, 550665): start + tid
+852702r3<substantiv>startvev:startvev:startvevs:startveven:startvevens:startvevar:startvevars:startvevarna:startvevarnas
+712115r4<substantiv>startvikt:startvikt:startvikts:startvikten:startviktens:startvikter:startvikters:startvikterna:startvikternas
+COMPOUND(603706, 550771): start + vikt
+895599r3<substantiv>stas:stas:stas:stasen:stasens:staser:stasers:staserna:stasernas
+CUSTOM: n n y
+669603r3<substantiv>stass:stass:stass:stassen:stassens::::
+550566r30<substantiv>stat:stat:stats:staten:statens:stater:staters:staterna:staternas
+CUSTOM: y y stats
+615463r3<substantiv>statare:statare:statares:stataren:statarens:statare:statares:statarna:statarnas
+CUSTOM: y y statar
+591157r3<verb>statera:statera:staterade:staterat:staterar:statera:::::::::
+603711r24<substantiv>station:station:stations:stationen:stationens:stationer:stationers:stationerna:stationernas
+CUSTOM: y y stations +stations
+591161r5<verb>stationera:stationera:stationerade:stationerat:stationerar:stationera:stationeras:stationerades:stationerats:stationeras:stationerad:stationerat:stationerade::
+737792r3<substantiv>stationering:stationering:stationerings:stationeringen:stationeringens:stationeringar:stationeringars:stationeringarna:stationeringarnas
+CUSTOM: y y stationerings
+852710r2<substantiv>stationeringsort:stationeringsort:stationeringsorts:stationeringsorten:stationeringsortens:stationeringsorter:stationeringsorters:stationeringsorterna:stationeringsorternas
+966701r4<substantiv>stationsort:stationsort:stationsorts:stationsorten:stationsortens:stationsorter:stationsorters:stationsorterna:stationsorternas
+COMPOUND(603711, 550141): station + ort
+669610r3<adjektiv>stationär:stationär:stationärt:stationära:stationära:!:!:!:
+583953r3<adjektiv>statisk:statisk:statiskt:statiska:statiska::::
+633504r3<substantiv>statist:statist:statists:statisten:statistens:statister:statisters:statisterna:statisternas
+CUSTOM: y y statist
+550567r6<substantiv>statistik:statistik:statistiks:statistiken:statistikens:statistiker:statistikers:statistikerna:statistikernas
+CUSTOM: y y statistik
+948532r3<substantiv>statistiker:statistiker:statistikers:statistikern:statistikerns:statistiker:statistikers:statistikerna:statistikernas
+669612r4<substantiv>statistikprogram:statistikprogram:statistikprograms:statistikprogrammet:statistikprogrammets:statistikprogram:statistikprograms:statistikprogrammen:statistikprogrammens
+COMPOUND(550567, 555118): statistik + program
+583954r3<adjektiv>statistisk:statistisk:statistiskt:statistiska:statistiska::::
+552972r3<substantiv>stativ:stativ:stativs:stativet:stativets:stativ:stativs:stativen:stativens
+567853r4<adjektiv>statlig:statlig:statligt:statliga:statliga::::statlige::::::::
+877621r3<substantiv>statlighet:statlighet:statlighets:statligheten:statlighetens::::
+873055r4<egennamn>Statoil:Statoil:Statoils
+CUSTOM: y n Statoil
+921432r4<substantiv>Statoilmack:Statoilmack:Statoilmacks:Statoilmacken:Statoilmackens:Statoilmackar:Statoilmackars:Statoilmackarna:Statoilmackarnas
+COMPOUND(873055, 598542): Statoil + mack
+783533r3<substantiv>stator:stator:stators:statorn:statorns:statorer:statorers:statorerna:statorernas
+565317r3<adjektiv>statorlös:statorlös:statorlöst:statorlösa:statorlösa::::
+609040r3<substantiv>statsanslag:statsanslag:statsanslags:statsanslaget:statsanslagets:statsanslag:statsanslags:statsanslagen:statsanslagens
+669613r3<adjektiv>statsanställd:statsanställd:statsanställt:statsanställda:statsanställda::::
+712799r4<substantiv>statsbegravning:statsbegravning:statsbegravnings:statsbegravningen:statsbegravningens:statsbegravningar:statsbegravningars:statsbegravningarna:statsbegravningarnas
+COMPOUND(550566, 592462): stat + begravning
+669616r4<substantiv>statsbesök:statsbesök:statsbesöks:statsbesöket:statsbesökets:statsbesök:statsbesöks:statsbesöken:statsbesökens
+COMPOUND(550566, 552242): stat + besök
+552974r3<substantiv>statsbidrag:statsbidrag:statsbidrags:statsbidraget:statsbidragets:statsbidrag:statsbidrags:statsbidragen:statsbidragens
+CUSTOM: y y statsbidrags
+795209r3<adjektiv>statsbidragsberättigad:statsbidragsberättigad:statsbidragsberättigat:statsbidragsberättigade:statsbidragsberättigade:!:!:!:
+669622r4<substantiv>statsbudget:statsbudget:statsbudgets:statsbudgeten:statsbudgetens:statsbudgetar:statsbudgetars:statsbudgetarna:statsbudgetarnas
+COMPOUND(550566, 550961): stat + budget
+669630r4<substantiv>statschef:statschef:statschefs:statschefen:statschefens:statschefer:statschefers:statscheferna:statschefernas
+COMPOUND(550566, 548529): stat + chef
+795212r3<adjektiv>statsdirigerad:statsdirigerad:statsdirigerat:statsdirigerade:statsdirigerade:!:!:!:
+697099r4<substantiv>statsfiende:statsfiende:statsfiendes:statsfienden:statsfiendens:statsfiender:statsfienders:statsfienderna:statsfiendernas
+COMPOUND(550566, 561663): stat + fiende
+567854r3<adjektiv>statsfientlig:statsfientlig:statsfientligt:statsfientliga:statsfientliga::::
+795215r3<adjektiv>statsfinansierad:statsfinansierad:statsfinansierat:statsfinansierade:statsfinansierade:!:!:!:
+669638r4<substantiv>statsform:statsform:statsforms:statsformen:statsformens:statsformer:statsformers:statsformerna:statsformernas
+COMPOUND(550566, 548947): stat + form
+852718r3<substantiv>statsfru:statsfru:statsfrus:statsfrun:statsfruns:statsfruar:statsfruars:statsfruarna:statsfruarnas
+669646r4<substantiv>statsförvaltning:statsförvaltning:statsförvaltnings:statsförvaltningen:statsförvaltningens:statsförvaltningar:statsförvaltningars:statsförvaltningarna:statsförvaltningarnas
+COMPOUND(550566, 596911): stat + förvaltning
+CUSTOM: y y statsförvaltnings
+795218r3<adjektiv>statsgaranterad:statsgaranterad:statsgaranterat:statsgaranterade:statsgaranterade:!:!:!:
+712573r4<substantiv>statsgräns:statsgräns:statsgräns:statsgränsen:statsgränsens:statsgränser:statsgränsers:statsgränserna:statsgränsernas
+COMPOUND(550566, 549166): stat + gräns
+669654r4<substantiv>statshemlighet:statshemlighet:statshemlighets:statshemligheten:statshemlighetens:statshemligheter:statshemligheters:statshemligheterna:statshemligheternas
+COMPOUND(550566, 618156): stat + hemlighet
+CUSTOM: y y statshemlighets
+795221r3<adjektiv>statskontrollerad:statskontrollerad:statskontrollerat:statskontrollerade:statskontrollerade:!:!:!:
+721287r4<substantiv>statskupp:statskupp:statskupps:statskuppen:statskuppens:statskupper:statskuppers:statskupperna:statskuppernas
+COMPOUND(550566, 549815): stat + kupp
+567855r3<adjektiv>statskyrklig:statskyrklig:statskyrkligt:statskyrkliga:statskyrkliga::::
+801662r3<adjektiv>statsledd:statsledd:statslett:statsledda:statsledda::::
+891814r3<substantiv>statsliggare:statsliggare:statsliggares:statsliggaren:statsliggarens:statsliggare:statsliggares:statsliggarna:statsliggarnas
+746896r4<substantiv>statslån:statslån:statslåns:statslånet:statslånets:statslån:statslåns:statslånen:statslånens
+CUSTOM: y y statslåne
+746903r3<substantiv>statslåneränta::::::::
+COMPOUND(746896, 595060): statslån + ränta
+565320r3<adjektiv>statslös:statslös:statslöst:statslösa:statslösa::::
+550569r3<substantiv>statsmakt:statsmakt:statsmakts:statsmakten:statsmaktens:statsmakter:statsmakters:statsmakterna:statsmakternas
+669662r4<substantiv>statsman:statsman:statsmans:statsmannen:statsmannens:statsmän:statsmäns:statsmännen:statsmännens
+COMPOUND(550566, 557796): stat + man
+919383r3<adjektiv>statsmannalik:statsmannalik:statsmannalikt:statsmannalika:statsmannalika::::statsmannalike::::::::
+576976r3<adjektiv>statsmannamässig:statsmannamässig:statsmannamässigt:statsmannamässiga:statsmannamässiga::::
+884400r3<substantiv>statsmannamässighet:statsmannamässighet:statsmannamässighets:statsmannamässigheten:statsmannamässighetens::::
+669663r6<substantiv>statsminister:statsminister:statsministers:statsministern:statsministerns:statsministrar:statsministrars:statsministrarna:statsministrarnas
+COMPOUND(550566, 616627): stat + minister
+CUSTOM: y y statsminister
+960195r4<substantiv>statsministerfru:statsministerfru:statsministerfrus:statsministerfrun:statsministerfruns:statsministerfruar:statsministerfruars:statsministerfruarna:statsministerfruarnas
+COMPOUND(669663, 556156): statsminister + fruga, fru
+669664r4<substantiv>statsministerpost:statsministerpost:statsministerposts:statsministerposten:statsministerpostens::::
+COMPOUND(669663, 550232): statsminister + post
+760558r5<substantiv>statsobligation:statsobligation:statsobligations:statsobligationen:statsobligationens:statsobligationer:statsobligationers:statsobligationerna:statsobligationernas
+COMPOUND(550566, 647132): stat + obligation
+CUSTOM: y y statsobligations
+760567r3<substantiv>statsobligationslån::::::::
+COMPOUND(760558, 552679): statsobligation + lån
+713108r5<substantiv>statsråd:statsråd:statsråds:statsrådet:statsrådets:statsråd:statsråds:statsråden:statsrådens
+COMPOUND(550566, 552853): stat + råd
+CUSTOM: y y statsråds
+746904r3<substantiv>statsrådsberedning::::::::
+COMPOUND(713108, 596461): statsråd + beredning
+567858r3<adjektiv>statsrättslig:statsrättslig:statsrättsligt:statsrättsliga:statsrättsliga::::
+615464r3<substantiv>statssekreterare:statssekreterare:statssekreterares:statssekreteraren:statssekreterarens:statssekreterare:statssekreterares:statssekreterarna:statssekreterarnas
+CUSTOM: y y statssekreterar
+746905r5<substantiv>statsskuld:statsskuld:statsskulds:statsskulden:statsskuldens:statsskulder:statsskulders:statsskulderna:statsskuldernas
+COMPOUND(550566, 550525): stat + skuld
+CUSTOM: y y statsskulds
+746913r3<substantiv>statsskuldsväxel::::::::
+COMPOUND(746905, 600474): statsskuld + växel
+583955r3<adjektiv>statssocialistisk:statssocialistisk:statssocialistiskt:statssocialistiska:statssocialistiska::::
+800392r3<adjektiv>statsstyrd:statsstyrd:statsstyrt:statsstyrda:statsstyrda::::
+937108r4<substantiv>statsstöd:statsstöd:statsstöds:statsstödet:statsstödets:statsstöd:statsstöds:statsstöden:statsstödens
+COMPOUND(550566, 552997): stat + stöd
+711553r4<substantiv>statstjänsteman:statstjänsteman:statstjänstemans:statstjänstemannen:statstjänstemannens:statstjänstemän:statstjänstemäns:statstjänstemännen:statstjänstemännens
+CUSTOM: y y statstjänstemanna
+746914r3<substantiv>statstjänstemannaförbund::::::::
+COMPOUND(711553, 552400): statstjänsteman + förbund
+801665r3<adjektiv>statsunderstödd:statsunderstödd:statsunderstött:statsunderstödda:statsunderstödda::::
+986615r3<substantiv>statsverksproposition:statsverksproposition:statsverkspropositions:statsverkspropositionen:statsverkspropositionens:statsverkspropositioner:statsverkspropositioners:statsverkspropositionerna:statsverkspropositionernas
+746915r3<substantiv>statsvetare:statsvetare:statsvetares:statsvetaren:statsvetarens:statsvetare:statsvetares:statsvetarna:statsvetarnas
+CUSTOM: y y statsvetar
+567861r3<adjektiv>statsvetenskaplig:statsvetenskaplig:statsvetenskapligt:statsvetenskapliga:statsvetenskapliga::::
+768873r3<adjektiv>statsägd:statsägd:statsägt:statsägda:statsägda::::
+712530r6<substantiv>statsöverhuvud:statsöverhuvud:statsöverhuvuds:statsöverhuvudet:statsöverhuvudets:statsöverhuvud, statsöverhuvuden:statsöverhuvuds, statsöverhuvudens:statsöverhuvudena:statsöverhuvudenas
+583958r3<adjektiv>statuarisk:statuarisk:statuariskt:statuariska:statuariska::::
+588071r4<verb>statuera:statuera:statuerade:statuerat:statuerar:statuera:statueras:statuerades:statuerats:statueras:statuerad:statuerat:statuerade:statuerande:
+669668r6<substantiv>status:status:status:statusen:statusens:statusar:statusars:statusarna:statusarnas
+CUSTOM: y y status
+800395r3<adjektiv>statusfylld:statusfylld:statusfyllt:statusfyllda:statusfyllda::::
+802203r3<adjektiv>statusmedveten:statusmedveten:statusmedvetet:statusmedvetna:statusmedvetna::::
+576979r3<adjektiv>statusmässig:statusmässig:statusmässigt:statusmässiga:statusmässiga::::
+669671r3<substantiv>statut:statut:statuts:statuten:statutens:statuter:statuters:statuterna:statuternas
+567862r3<adjektiv>statutenlig:statutenlig:statutenligt:statutenliga:statutenliga::::
+626555r6<substantiv>staty:staty:statys:statyn:statyns:statyer:statyers:statyerna:statyernas
+626557r3<substantiv>statyett:statyett:statyetts:statyetten:statyettens:statyetter:statyetters:statyetterna:statyetternas
+551932r9<substantiv>stav:stav:stavs:staven:stavens:stavar:stavars:stavarna:stavarnas
+646545r4<verb>stava:stava:stavade:stavat:stavar:stava:stavas:stavades:stavats::::::
+CUSTOM: y y stav
+669679r4<substantiv>stavelse:stavelse:stavelses:stavelsen:stavelsens:stavelser:stavelsers:stavelserna:stavelsernas
+CUSTOM: y y stavelse
+552976r3<substantiv>stavfel:stavfel:stavfels:stavfelet:stavfelets:stavfel:stavfels:stavfelen:stavfelens
+576982r3<adjektiv>stavformig:stavformig:stavformigt:stavformiga:stavformiga::::
+956162r3<substantiv>stavgång:stavgång:stavgångs:stavgången:stavgångens::::
+CUSTOM: y n stavgångs
+608120r3<substantiv>stavhopp:stavhopp:stavhopps:stavhoppet:stavhoppets:stavhopp:stavhopps:stavhoppen:stavhoppens
+CUSTOM: y y stavhopps
+610111r3<substantiv>stavhoppare:stavhoppare:stavhoppares:stavhopparen:stavhopparens:stavhoppare:stavhoppares:stavhopparna:stavhopparnas
+CUSTOM: y y stavhoppar
+827728r3<substantiv>stavmixer:stavmixer:stavmixers:stavmixern:stavmixerns:stavmixrar:stavmixrars:stavmixrarna:stavmixrarnas
+669680r8<substantiv>stavning:stavning:stavnings:stavningen:stavningens:stavningar:stavningars:stavningarna:stavningarnas
+CUSTOM: y y stavnings +stavnings
+669681r4<substantiv>stavningskontroll:stavningskontroll:stavningskontrolls:stavningskontrollen:stavningskontrollens:stavningskontroller:stavningskontrollers:stavningskontrollerna:stavningskontrollernas
+COMPOUND(669680, 549704): stavning + kontroll
+669690r4<substantiv>stavningsreform:stavningsreform:stavningsreforms:stavningsreformen:stavningsreformens:stavningsreformer:stavningsreformers:stavningsreformerna:stavningsreformernas
+COMPOUND(669680, 550328): stavning + reform
+676604r4<substantiv>stavrim:stavrim:stavrims:stavrimmet:stavrimmets:stavrim:stavrims:stavrimmen:stavrimmens
+COMPOUND(646545, 621838): stava + rim
+795224r3<adjektiv>stavrimmad:stavrimmad:stavrimmat:stavrimmade:stavrimmade:!:!:!:
+945921r3<egennamn>Stavsnäs:Stavsnäs:Stavsnäs
+852726r3<substantiv>stavtag:stavtag:stavtags:stavtaget:stavtagets:stavtag:stavtags:stavtagen:stavtagens
+704160r5<substantiv>stearin:stearin:stearins:stearinet, stearinen:stearinets, stearinens::::
+CUSTOM: y y stearin
+552977r3<substantiv>stearinljus:stearinljus:stearinljus:stearinljuset:stearinljusets:stearinljus:stearinljus:stearinljusen:stearinljusens
+953068r4<substantiv>stearinsyra:stearinsyra:stearinsyras:stearinsyran:stearinsyrans:stearinsyror:stearinsyrors:stearinsyrorna:stearinsyrornas
+COMPOUND(704160, 624847): stearin + syra
+633483r3<egennamn>Steen:Steen:Steens
+986623r3<substantiv>steeplechase:steeplechase:steeplechases:steeplechasen:steeplechasens:steeplechaser:steeplechasers:steeplechaserna:steeplechasernas
+554790r3<egennamn>Stefan:Stefan:Stefans
+874391r3<egennamn>Stefano:Stefano:Stefanos
+608126r15<substantiv>steg:steg:stegs:steget:stegets:steg:stegs:stegen:stegens
+CUSTOM: y y +stegs
+547751r5<verb>stega:stega:stegade:stegat:stegar:stega:stegas:stegades:stegats:stegas:stegad:stegat:stegade:stegande:
+860786r4<substantiv>stegbil:stegbil:stegbils:stegbilen:stegbilens:stegbilar:stegbilars:stegbilarna:stegbilarnas
+COMPOUND(599989, 550885): stege + bil
+599989r5<substantiv>stege:stege:steges:stegen:stegens:stegar:stegars:stegarna:stegarnas
+CUSTOM: y y
+669698r3<substantiv>stegel:stegel:stegels:steglet:steglets:stegel:stegels:steglen:steglens
+919404r4<substantiv>stegfel:stegfel:stegfels:stegfelet:stegfelets:stegfel:stegfels:stegfelen:stegfelens
+COMPOUND(608126, 552375): steg + fel
+CUSTOM: y n n
+919412r4<substantiv>stegfrekvens:stegfrekvens:stegfrekvens:stegfrekvensen:stegfrekvensens:stegfrekvenser:stegfrekvensers:stegfrekvenserna:stegfrekvensernas
+COMPOUND(608126, 548964): steg + frekvens
+564250r3<adjektiv>stegfri:stegfri:stegfritt:stegfria:stegfria::::
+CUSTOM: y n n
+800398r3<adjektiv>steginställd:steginställd:steginställt:steginställda:steginställda::::
+919421r3<substantiv>stegisättning:stegisättning:stegisättnings:stegisättningen:stegisättningens:stegisättningar:stegisättningars:stegisättningarna:stegisättningarnas
+763318r3<verb>stegla:stegla:steglade:steglat:steglar:stegla:steglas:steglades:steglats:steglas:steglad:steglat:steglade::
+919430r3<substantiv>stegling:stegling:steglings:steglingen:steglingens::::
+919434r3<substantiv>steglits:steglits:steglits:steglitsen:steglitsens:steglitser:steglitsers:steglitserna:steglitsernas
+919389r4<substantiv>steglängd:steglängd:steglängds:steglängden:steglängdens:steglängder:steglängders:steglängderna:steglängdernas
+COMPOUND(608126, 549972): steg + längd
+565323r3<adjektiv>steglös:steglös:steglöst:steglösa:steglösa::::
+697101r3<substantiv>stegning:stegning:stegnings:stegningen:stegningens::::
+CUSTOM: y y stegnings
+919441r4<substantiv>stegpinne:stegpinne:stegpinnes:stegpinnen:stegpinnens:stegpinnar:stegpinnars:stegpinnarna:stegpinnarnas
+COMPOUND(599989, 625963): stege + pinne
+547752r4<verb>stegra:stegra:stegrade:stegrat:stegrar:stegra:stegras:stegrades:stegrats:stegras:stegrad:stegrat:stegrade:stegrande:
+669701r4<substantiv>stegring:stegring:stegrings:stegringen:stegringens:stegringar:stegringars:stegringarna:stegringarnas
+CUSTOM: y y stegrings
+919397r4<substantiv>stegräknare:stegräknare:stegräknares:stegräknaren:stegräknarens:stegräknare:stegräknares:stegräknarna:stegräknarnas
+COMPOUND(608126, 615429): steg + räknare
+919450r4<substantiv>stegräkning:stegräkning:stegräknings:stegräkningen:stegräkningens::::
+COMPOUND(608126, 559064): steg + räkning
+746921r3<adjektiv>stegvis::::stegvisa::::
+669709r3<adverb>stegvis:stegvis
+551934r18<substantiv>stek:stek:steks:steken:stekens:stekar:stekars:stekarna:stekarnas
+CUSTOM: y y stek
+585841r18<verb>steka:steka:stekte:stekt:steker:stek:stekas:stektes:stekts:steks:stekt:stekt:stekta::
+CUSTOM: y n
+669711r3<adjektiv>stekande:stekande:stekande:stekande:stekande:!:!:!:
+628058r4<substantiv>stekel:stekel:stekels:stekeln:stekelns:steklar:steklars:steklarna:steklarnas
+852732r3<substantiv>stekfat:stekfat:stekfats:stekfatet:stekfatets:stekfat:stekfats:stekfaten:stekfatens
+576985r3<adjektiv>stekfärdig:stekfärdig:stekfärdigt:stekfärdiga:stekfärdiga::::
+761630r3<adjektiv>stekhet:stekhet:stekhett:stekheta:stekheta:!:!:!:!
+932839r3<substantiv>stekhus:stekhus:stekhus:stekhuset:stekhusets:stekhus:stekhus:stekhusen:stekhusens
+943024r3<substantiv>steklök:steklök:steklöks:steklöken:steklökens:steklökar:steklökars:steklökarna:steklökarnas
+746923r3<substantiv>stekning:stekning:steknings:stekningen:stekningens::::
+904940r8<substantiv>stekos:stekos:stekos:stekoset:stekosets::::
+COMPOUND(585841, 557164): steka + os
+595400r3<substantiv>stekpanna:stekpanna:stekpannas:stekpannan:stekpannans:stekpannor:stekpannors:stekpannorna:stekpannornas
+CUSTOM: y y stekpanne
+658619r6<substantiv>steksky:steksky:stekskys:stekskyn:stekskyns::::
+COMPOUND(551934, 658621): stek + sky
+638108r6<substantiv>steksmör:steksmör:steksmörs:steksmöret:steksmörets:!:!:!:!
+COMPOUND(585841, 622554): steka + smör
+658626r4<substantiv>stekspade:stekspade:stekspades:stekspaden:stekspadens:stekspadar:stekspadars:stekspadarna:stekspadarnas
+COMPOUND(551934, 599979): stek + spade
+658634r4<substantiv>stekspett:stekspett:stekspetts:stekspettet:stekspettets:stekspett:stekspetts:stekspetten:stekspettens
+COMPOUND(551934, 646614): stek + spett
+658640r4<substantiv>steksås:steksås:steksås:steksåsen:steksåsens:steksåser:steksåsers:steksåserna:steksåsernas
+COMPOUND(551934, 556707): stek + sås
+658647r4<substantiv>stektermometer:stektermometer:stektermometers:stektermometern:stektermometerns:stektermometrar:stektermometrars:stektermometrarna:stektermometrarnas
+COMPOUND(551934, 658648): stek + termometer
+658656r4<substantiv>stekugn:stekugn:stekugns:stekugnen:stekugnens:stekugnar:stekugnars:stekugnarna:stekugnarnas
+COMPOUND(551934, 552067): stek + ugn
+658664r4<substantiv>stekvändare:stekvändare:stekvändares:stekvändaren, stekvändarn:stekvändarens, stekvändarns:stekvändare:stekvändares:stekvändarna:stekvändarnas
+COMPOUND(551934, 658665): stek + vändare
+CUSTOM: y y stekvändar
+658680r4<substantiv>stekyta:stekyta:stekytas:stekytan:stekytans:stekytor:stekytors:stekytorna:stekytornas
+COMPOUND(551934, 595826): stek + yta
+563161r6<adjektiv>stel:stel:stelt:stela:stela:stelare:stelast:stelaste:stele::::::::
+669712r3<adjektiv>stelbent:stelbent:stelbent:stelbenta:stelbenta::::stelbente
+941092r3<substantiv>stelbenthet:stelbenthet:stelbenthets:stelbentheten:stelbenthetens::::
+564472r3<adjektiv>stelfrusen:stelfrusen:stelfruset:stelfrusna:stelfrusna::::
+669714r4<substantiv>stelhet:stelhet:stelhets:stelheten:stelhetens:stelheter:stelheters:stelheterna:stelheternas
+CUSTOM: y y stelhets
+746930r3<substantiv>stelkramp:stelkramp:stelkramps:stelkrampen:stelkrampens::::
+CUSTOM: y y stelkramps
+971954r3<egennamn>Stella:Stella:Stellas
+554792r3<egennamn>Stellan:Stellan:Stellans
+583961r3<adjektiv>stellarastronomisk:stellarastronomisk:stellarastronomiskt:stellarastronomiska:stellarastronomiska::::
+583964r3<adjektiv>stellarisk:stellarisk:stellariskt:stellariska:stellariska::::
+669715r6<verb>stelna:stelna:stelnade:stelnat:stelnar:stelna:::::stelnad:stelnat:stelnade:stelnande:
+BASEWORDS: stelnings
+669716r3<substantiv>stelning:stelning:stelnings:stelningen:stelningens::::
+CUSTOM: y y stelnings
+957425r4<substantiv>steloperation:steloperation:steloperations:steloperationen:steloperationens:steloperationer:steloperationers:steloperationerna:steloperationernas
+COMPOUND(563161, 603051): stel + operation
+591165r3<verb>steloperera:steloperera:stelopererade:stelopererat:stelopererar:steloperera:::::::::
+551935r41<substantiv>sten:sten:stens:stenen:stenens:stenar:stenars:stenarna:stenarnas
+CUSTOM: y n sten
+554794r3<egennamn>Sten:Sten:Stens
+547753r4<verb>stena:stena:stenade:stenat:stenar:stena:stenas:stenades:stenats:stenas:stenad:stenat:stenade::
+669717r4<substantiv>stenansikte:stenansikte:stenansiktes:stenansiktet:stenansiktets:stenansikten:stenansiktens:stenansiktena:stenansiktenas
+COMPOUND(551935, 612253): sten + ansikte
+712028r4<substantiv>stenarbete:stenarbete:stenarbetes:stenarbetet:stenarbetets:stenarbeten:stenarbetens:stenarbetena:stenarbetenas
+COMPOUND(551935, 612263): sten + arbete
+986631r4<substantiv>stenart:stenart:stenarts:stenarten:stenartens:stenarter:stenarters:stenarterna:stenarternas
+COMPOUND(551935, 548244): sten + art
+CUSTOM: y n
+795227r3<adjektiv>stenartad:stenartad:stenartat:stenartade:stenartade:!:!:!:
+945446r3<egennamn>Stenbeck:Stenbeck:Stenbecks
+801668r3<adjektiv>stenbeströdd:stenbeströdd:stenbestrött:stenbeströdda:stenbeströdda::::
+919455r4<substantiv>stenbit:stenbit:stenbits:stenbiten:stenbitens:stenbitar:stenbitars:stenbitarna:stenbitarnas
+CUSTOM: y n
+919464r4<substantiv>stenbitsrom:stenbitsrom:stenbitsroms:stenbitsrommen:stenbitsrommens:!:!:!:!
+COMPOUND(919455, 621904): stenbit + rom
+795230r3<adjektiv>stenblandad:stenblandad:stenblandat:stenblandade:stenblandade:!:!:!:
+608128r3<substantiv>stenblock:stenblock:stenblocks:stenblocket:stenblockets:stenblock:stenblocks:stenblocken:stenblockens
+669723r3<substantiv>stenbock:stenbock:stenbocks:stenbocken:stenbockens:stenbockar:stenbockars:stenbockarna:stenbockarnas
+932844r4<substantiv>stenbro:stenbro:stenbros:stenbron:stenbrons:stenbroar:stenbroars:stenbroarna:stenbroarnas
+COMPOUND(551935, 557960): sten + bro
+608134r3<substantiv>stenbrott:stenbrott:stenbrotts:stenbrottet:stenbrottets:stenbrott:stenbrotts:stenbrotten:stenbrottens
+669728r4<substantiv>stenbumling:stenbumling:stenbumlings:stenbumlingen:stenbumlingens:stenbumlingar:stenbumlingars:stenbumlingarna:stenbumlingarnas
+COMPOUND(551935, 669729): sten + bumling
+550571r3<substantiv>stencil:stencil:stencils:stencilen:stencilens:stenciler:stencilers:stencilerna:stencilernas
+588075r4<verb>stencilera:stencilera:stencilerade:stencilerat:stencilerar:stencilera:stencileras:stencilerades:stencilerats:stencileras:stencilerad:stencilerat:stencilerade::
+802847r4<substantiv>stencilering:stencilering:stencilerings:stencileringen:stencileringens::::
+CUSTOM: y y stencilerings
+802851r3<substantiv>stencileringspapper::::::::
+COMPOUND(802847, 556527): stencilering + papper
+669745r4<adjektiv>stendöd:stendöd:stendött:stendöda:stendöda:!:!:!:stendöde
+COMPOUND(551935, 558366): sten + död
+551936r3<substantiv>stendös:stendös:stendös:stendösen:stendösens:stendösar:stendösars:stendösarna:stendösarnas
+697102r3<adjektiv>stendöv:stendöv:stendövt:stendöva:stendöva:!:!:!:stendöve
+847027r3<substantiv>stenek:stenek:steneks:steneken:stenekens:stenekar:stenekars:stenekarna:stenekarnas
+836957r3<substantiv>stenfalk:stenfalk:stenfalks:stenfalken:stenfalkens:stenfalkar:stenfalkars:stenfalkarna:stenfalkarnas
+564253r3<adjektiv>stenfri:stenfri:stenfritt:stenfria:stenfria::::
+800401r3<adjektiv>stenfylld:stenfylld:stenfyllt:stenfyllda:stenfyllda::::
+669749r3<substantiv>stenget:stenget:stengets:stengeten:stengetens:stengetter:stengetters:stengetterna:stengetternas
+669755r5<substantiv>stengods:stengods:stengods:stengodset:stengodsets::::
+COMPOUND(551935, 552445): sten + gods
+CUSTOM: y y stengods
+890681r4<substantiv>stengodslera:stengodslera:stengodsleras:stengodsleran:stengodslerans:stengodsleror:stengodslerors:stengodslerorna:stengodslerornas
+COMPOUND(669755, 594621): stengods + lera
+939374r4<substantiv>stengolv:stengolv:stengolvs:stengolvet:stengolvets:stengolv:stengolvs:stengolven:stengolvens
+COMPOUND(551935, 552446): sten + golv
+669758r3<substantiv>stengrund:stengrund:stengrunds:stengrunden:stengrundens::::
+900303r3<egennamn>Stenhammar:Stenhammar:Stenhammars
+669760r4<substantiv>stenhjärta:stenhjärta:stenhjärtas:stenhjärtat:stenhjärtats:stenhjärtan:stenhjärtans:stenhjärtana:stenhjärtanas
+COMPOUND(551935, 560567): sten + hjärta
+615465r3<substantiv>stenhuggare:stenhuggare:stenhuggares:stenhuggaren:stenhuggarens:stenhuggare:stenhuggares:stenhuggarna:stenhuggarnas
+CUSTOM: y y stenhuggar
+611772r3<substantiv>stenhuggeri:stenhuggeri:stenhuggeris:stenhuggeriet:stenhuggeriets:stenhuggerier:stenhuggeriers:stenhuggerierna:stenhuggeriernas
+932852r4<substantiv>stenhus:stenhus:stenhus:stenhuset:stenhusets:stenhus:stenhus:stenhusen:stenhusens
+COMPOUND(551935, 552480): sten + hus
+669765r3<adjektiv>stenhård:stenhård:stenhårt:stenhårda:stenhårda:!:!:!:stenhårde
+852738r3<substantiv>stenhög:stenhög:stenhögs:stenhögen:stenhögens:stenhögar:stenhögars:stenhögarna:stenhögarnas
+563251r3<adjektiv>stenig:stenig:stenigt:steniga:steniga::::
+611283r3<substantiv>stenindustri:stenindustri:stenindustris:stenindustrin:stenindustrins:stenindustrier:stenindustriers:stenindustrierna:stenindustriernas
+907399r4<substantiv>stening:stening:stenings:steningen:steningens:steningar:steningars:steningarna:steningarnas
+CUSTOM: y n 
+583967r3<adjektiv>stenisk:stenisk:steniskt:steniska:steniska::::
+669767r4<substantiv>stenkast:stenkast:stenkasts:stenkastet:stenkastets:stenkast:stenkasts:stenkasten:stenkastens
+COMPOUND(551935, 561176): sten + kast
+669778r3<substantiv>stenkastare:stenkastare:stenkastares:stenkastaren:stenkastarens:stenkastare:stenkastares:stenkastarna:stenkastarnas
+CUSTOM: y y stenkastar
+669773r3<substantiv>stenkastning:stenkastning:stenkastnings:stenkastningen:stenkastningens::::
+CUSTOM: y y stenkastnings
+627662r5<substantiv>stenkol:stenkol:stenkols:stenkolet:stenkolets:!:!:!:!
+COMPOUND(551935, 552556): sten + kol
+CUSTOM: y y stenkols
+939189r4<substantiv>stenkoll:stenkoll:stenkolls:stenkollen:stenkollens::::
+COMPOUND(551935, 624494): sten + koll
+746934r3<substantiv>stenkolsbrytning::::::::
+COMPOUND(627662, 596580): stenkol + brytning
+845098r3<substantiv>stenkrus:stenkrus:stenkrus:stenkruset:stenkrusets:stenkrus:stenkrus:stenkrusen:stenkrusens
+669785r3<adjektiv>stenlagd:stenlagd:stenlagt:stenlagda:stenlagda:!:!:!:!
+669788r4<verb>stenlägga:stenlägga:stenlade:stenlagt:stenlägger:stenlägg:stenläggas:stenlades:stenlagts:stenläggs, stenlägges:stenlagd:stenlagt:stenlagda::
+COMPOUND(551935, 556585): sten + lägga
+669796r3<substantiv>stenläggare:stenläggare:stenläggares:stenläggaren:stenläggarens:stenläggare:stenläggares:stenläggarna:stenläggarnas
+CUSTOM: y y stenläggar
+669802r3<substantiv>stenläggning:stenläggning:stenläggnings:stenläggningen:stenläggningens:stenläggningar:stenläggningars:stenläggningarna:stenläggningarnas
+CUSTOM: y y stenläggnings
+989863r4<substantiv>stenmorän:stenmorän:stenmoräns:stenmoränen:stenmoränens:stenmoräner:stenmoräners:stenmoränerna:stenmoränernas
+COMPOUND(551935, 865991): sten + morän
+669803r4<substantiv>stenmur:stenmur:stenmurs:stenmuren:stenmurens:stenmurar:stenmurars:stenmurarna:stenmurarnas
+COMPOUND(551935, 551728): sten + mur
+669811r3<substantiv>stenmurkla:stenmurkla:stenmurklas:stenmurklan:stenmurklans:stenmurklor:stenmurklors:stenmurklorna:stenmurklornas
+669819r3<substantiv>stenograf:stenograf:stenografs:stenografen:stenografens:stenografer:stenografers:stenograferna:stenografernas
+588076r3<verb>stenografera:stenografera:stenograferade:stenograferat:stenograferar:stenografera:::::::::
+669827r3<substantiv>stenografi:stenografi:stenografis:stenografin:stenografins::::
+CUSTOM: y y stenografi
+583970r3<adjektiv>stenografisk:stenografisk:stenografiskt:stenografiska:stenografiska::::
+798903r3<adjektiv>stenotop:stenotop:stenotopt:stenotopa:stenotopa::::
+610117r3<substantiv>stenpelare:stenpelare:stenpelares:stenpelaren:stenpelarens:stenpelare:stenpelares:stenpelarna:stenpelarnas
+CUSTOM: y y stenpelar
+669831r4<substantiv>stenplatta:stenplatta:stenplattas:stenplattan:stenplattans:stenplattor:stenplattors:stenplattorna:stenplattornas
+COMPOUND(551935, 632785): sten + platta
+824244r4<substantiv>stenras:stenras:stenras:stenraset:stenrasets:stenras:stenras:stenrasen:stenrasens
+COMPOUND(551935, 626097): sten + ras
+669839r3<adjektiv>stenrik:stenrik:stenrikt:stenrika:stenrika:!:!:!:stenrike
+852746r5<substantiv>stenröse, stenrös:stenröse, stenrös:stenröses:stenröset:stenrösets:stenrösen:stenrösens:stenrösena:stenrösenas
+963716r3<substantiv>stenskravel:stenskravel:stenskravels:stenskravlet:stenskravlets::::
+965240r4<substantiv>stenskred:stenskred:stenskreds:stenskredet:stenskredets:stenskred:stenskreds:stenskreden:stenskredens
+COMPOUND(551935, 626289): sten + skred
+986639r3<substantiv>stenskvätta:stenskvätta:stenskvättas:stenskvättan:stenskvättans:stenskvättor:stenskvättors:stenskvättorna:stenskvättornas
+945449r4<substantiv>stensopp:stensopp:stensopps:stensoppen:stensoppens:stensoppar:stensoppars:stensopparna:stensopparnas
+COMPOUND(551935, 668414): sten + sopp
+669843r3<substantiv>stenstod:stenstod:stenstods:stenstoden:stenstodens:stenstoder:stenstoders:stenstoderna:stenstodernas
+669851r3<substantiv>stensättare:stensättare:stensättares:stensättaren:stensättarens:stensättare:stensättares:stensättarna:stensättarnas
+CUSTOM: y y stensättar
+669857r3<substantiv>stensättning:stensättning:stensättnings:stensättningen:stensättningens:stensättningar:stensättningars:stensättningarna:stensättningarnas
+CUSTOM: y y stensättnings
+595401r3<substantiv>stensöta:stensöta:stensötas:stensötan:stensötans:stensötor:stensötors:stensötorna:stensötornas
+669858r4<substantiv>stentavla:stentavla:stentavlas:stentavlan:stentavlans:stentavlor:stentavlors:stentavlorna:stentavlornas
+COMPOUND(551935, 555309): sten + tavla
+669866r4<substantiv>stentrappa:stentrappa:stentrappas:stentrappan:stentrappans:stentrappor:stentrappors:stentrapporna:stentrappornas
+COMPOUND(551935, 595573): sten + trappa
+798906r4<adjektiv>stentuff:stentuff:stentufft:stentuffa:stentuffa:stentuffare:stentuffast:stentuffaste:stentuffe
+795233r3<adjektiv>stentvättad:stentvättad:stentvättat:stentvättade:stentvättade:!:!:!:
+946011r4<substantiv>stentäkt:stentäkt:stentäkts:stentäkten:stentäktens:stentäkter:stentäkters:stentäkterna:stentäkternas
+COMPOUND(551935, 550725): sten + täkt
+819248r3<substantiv>stenull:stenull:stenulls:stenullen:stenullens::::
+554378r3<egennamn>Stenungsund:Stenungsund:Stenungsunds
+CUSTOM: y n Stenungsunds
+697103r7<substantiv>stenur:stenur:stenurs:stenuren:stenurens::::
+932858r4<substantiv>stenyxa:stenyxa:stenyxas:stenyxan:stenyxans:stenyxor:stenyxors:stenyxorna:stenyxornas
+COMPOUND(551935, 595828): sten + yxa
+669868r5<substantiv>stenålder:stenålder:stenålders:stenåldern:stenålderns:!:!:!:!
+CUSTOM: y y stenålders
+903399r4<substantiv>stenåldersfynd:stenåldersfynd:stenåldersfynds:stenåldersfyndet:stenåldersfyndets:stenåldersfynd:stenåldersfynds:stenåldersfynden:stenåldersfyndens
+COMPOUND(669868, 552396): stenålder + fynd
+669870r4<substantiv>stenåldersmänniska:stenåldersmänniska:stenåldersmänniskas:stenåldersmänniskan:stenåldersmänniskans:stenåldersmänniskor:stenåldersmänniskors:stenåldersmänniskorna:stenåldersmänniskornas
+COMPOUND(669868, 555190): stenålder + människa
+990087r3<egennamn>Stephanie:Stephanie:Stephanies
+723326r3<egennamn>Stephen:Stephen:Stephens
+904945r8<substantiv>stepp:stepp:stepps:steppen:steppens::::
+CUSTOM: y n
+669878r4<verb>steppa:steppa:steppade:steppat:steppar:steppa:steppas:steppades:steppats:steppas::::steppande:
+CUSTOM: y n
+906185r3<substantiv>steppare:steppare:steppares:stepparen:stepparens:steppare:steppares:stepparna:stepparnas
+906178r4<substantiv>steppdans:steppdans:steppdans:steppdansen:steppdansens:steppdanser:steppdansers:steppdanserna:steppdansernas
+COMPOUND(904945, 548569): stepp + dans
+986647r3<substantiv>steradian:steradian:steradians:steradianen:steradianens:steradianer:steradianers:steradianerna:steradianernas
+986655r3<substantiv>sterbhus:sterbhus:sterbhus:sterbhuset:sterbhusets:sterbhus:sterbhus:sterbhusen:sterbhusens
+555872r8<substantiv>stereo:stereo:stereos:stereon:stereons:stereor:stereors:stereorna:stereornas
+CUSTOM: y y stereo
+746935r3<substantiv>stereoanläggning:stereoanläggning:stereoanläggnings:stereoanläggningen:stereoanläggningens:stereoanläggningar:stereoanläggningars:stereoanläggningarna:stereoanläggningarnas
+669882r3<substantiv>stereobild:stereobild:stereobilds:stereobilden:stereobildens:stereobilder:stereobilders:stereobilderna:stereobildernas
+583973r3<adjektiv>stereofonisk:stereofonisk:stereofoniskt:stereofoniska:stereofoniska::::
+583976r3<adjektiv>stereografisk:stereografisk:stereografiskt:stereografiska:stereografiska::::
+583979r3<adjektiv>stereometrisk:stereometrisk:stereometriskt:stereometriska:stereometriska::::
+552978r3<substantiv>stereoskop:stereoskop:stereoskops:stereoskopet:stereoskopets:stereoskop:stereoskops:stereoskopen:stereoskopens
+583982r3<adjektiv>stereoskopisk:stereoskopisk:stereoskopiskt:stereoskopiska:stereoskopiska::::
+746943r3<substantiv>stereotyp:stereotyp:stereotyps:stereotypen:stereotypens:stereotyper:stereotypers:stereotyperna:stereotypernas
+697111r3<adjektiv>stereotyp:stereotyp:stereotypt:stereotypa:stereotypa::::stereotype
+591169r3<verb>stereotypera:stereotypera:stereotyperade:stereotyperat:stereotyperar:stereotypera:::::::::
+956104r3<substantiv>stereotypi:stereotypi:stereotypis:stereotypin:stereotypins:stereotypier:stereotypiers:stereotypierna:stereotypiernas
+669890r3<adjektiv>steril:steril:sterilt:sterila:sterila::::sterile
+873708r4<substantiv>sterilisator:sterilisator:sterilisators:sterilisatorn:sterilisatorns:sterilisatorer:sterilisatorers:sterilisatorerna:sterilisatorernas
+588080r4<verb>sterilisera:sterilisera:steriliserade:steriliserat:steriliserar:sterilisera:steriliseras:steriliserades:steriliserats:steriliseras:steriliserad:steriliserat:steriliserade::
+746951r3<substantiv>sterilisering:sterilisering:steriliserings:steriliseringen:steriliseringens:steriliseringar:steriliseringars:steriliseringarna:steriliseringarnas
+CUSTOM: y y steriliserings
+771732r3<substantiv>sterilitet:sterilitet:sterilitets:steriliteten:sterilitetens:steriliteter:steriliteters:steriliteterna:steriliteternas
+762361r5<egennamn>Sterling:Sterling:Sterlings
+CUSTOM: y n Sterling
+633547r5<substantiv>steroid:steroid:steroids:steroiden:steroidens:steroider:steroiders:steroiderna:steroidernas
+CUSTOM: y n steroid
+746959r3<substantiv>stetoskop:stetoskop:stetoskops:stetoskopet:stetoskopets:stetoskop:stetoskops:stetoskopen:stetoskopens
+588084r3<verb>stetoskopera:stetoskopera:stetoskoperade:stetoskoperat:stetoskoperar:stetoskopera:::::::::
+665246r5<substantiv>stetsonhatt:stetsonhatt:stetsonhatts:stetsonhatten:stetsonhattens:stetsonhattar:stetsonhattars:stetsonhattarna:stetsonhattarnas
+953911r3<substantiv>steward:steward:stewards:stewarden:stewardens:stewarder:stewarders:stewarderna:stewardernas
+719562r3<egennamn>Steven:Steven:Stevens
+626572r4<substantiv>stia:stia:stias:stian:stians:stior:stiors:stiorna:stiornas
+CUSTOM: y n
+552979r5<substantiv>stick:stick:sticks:sticket:stickets:stick:sticks:sticken:stickens
+CUSTOM: y y stick
+547754r9<verb>sticka:sticka:stickade:stickat:stickar:sticka:stickas:stickades:stickats:stickas:stickad:stickat:stickade::!
+DEFINITION 1: Skapa kläder av garn med hjälp av långa,\
+grova nålar
+CUSTOM: y y stick
+554977r11<substantiv>sticka:sticka:stickas:stickan:stickans:stickor:stickors:stickorna:stickornas
+DEFINITION 1: Avlångt, spetsigt föremål
+554974r8<verb>sticka:sticka:stack:stuckit:sticker:stick:stickas:stacks:stuckits:sticks:stucken:stucket:stuckna::
+DEFINITION 1: Beröra med ett spetsigt föremål
+DEFINITION 2: Ge sig av [ från en viss plats ]
+697113r3<substantiv>stickande:stickande:stickandes:stickandet:stickandets::::
+669896r3<adjektiv>stickande:stickande:stickande:stickande:stickande:!:!:!:
+941138r3<substantiv>stickare:stickare:stickares:stickaren:stickarens:stickare:stickares:stickarna:stickarnas
+698643r3<deponens>stickas:stickas:stacks:stuckits:sticks:sticks
+986665r3<substantiv>stickelhår:stickelhår:stickelhårs:stickelhåret:stickelhårets:stickelhår:stickelhårs:stickelhåren:stickelhårens
+576988r3<adjektiv>stickelhårig:stickelhårig:stickelhårigt:stickelhåriga:stickelhåriga::::
+576991r3<adjektiv>stickig:stickig:stickigt:stickiga:stickiga::::
+603712r3<substantiv>stickkontakt:stickkontakt:stickkontakts:stickkontakten:stickkontaktens:stickkontakter:stickkontakters:stickkontakterna:stickkontakternas
+685858r3<substantiv>stickkontroll:stickkontroll:stickkontrolls:stickkontrollen:stickkontrollens:stickkontroller:stickkontrollers:stickkontrollerna:stickkontrollernas
+746965r3<substantiv>stickling:stickling:sticklings:sticklingen:sticklingens:sticklingar:sticklingars:sticklingarna:sticklingarnas
+944094r3<substantiv>sticklök:sticklök:sticklöks:sticklöken:sticklökens:sticklökar:sticklökars:sticklökarna:sticklökarnas
+669897r3<substantiv>stickning:stickning:sticknings:stickningen:stickningens:stickningar:stickningars:stickningarna:stickningarnas
+CUSTOM: y y sticknings
+669898r4<substantiv>sticknål:sticknål:sticknåls:sticknålen:sticknålens:sticknålar:sticknålars:sticknålarna:sticknålarnas
+COMPOUND(547754, 551740): sticka + nål
+911842r4<substantiv>stickord:stickord:stickords:stickordet:stickordets:stickord:stickords:stickorden:stickordens
+COMPOUND(552979, 555138): stick + ord
+669906r4<substantiv>stickprov:stickprov:stickprovs:stickprovet:stickprovets:stickprov:stickprovs:stickproven:stickprovens
+765109r3<substantiv>stickprovskontroll::::::::
+COMPOUND(669906, 549704): stickprov + kontroll
+CUSTOM: y y stickprovs
+669912r3<substantiv>stickreplik:stickreplik:stickrepliks:stickrepliken:stickreplikens:stickrepliker:stickreplikers:stickreplikerna:stickreplikernas
+852754r3<substantiv>sticksåg:sticksåg:sticksågs:sticksågen:sticksågens:sticksågar:sticksågars:sticksågarna:sticksågarnas
+852762r3<substantiv>sticksår:sticksår:sticksårs:sticksåret:sticksårets:sticksår:sticksårs:sticksåren:sticksårens
+697115r4<substantiv>sticksöm:sticksöm:sticksöms:sticksömmen:sticksömmens:sticksömmar:sticksömmars:sticksömmarna:sticksömmarnas
+COMPOUND(552979, 627861): stick + söm
+872902r3<egennamn>Stiernstedt:Stiernstedt:Stiernstedts
+552981r8<substantiv>stift:stift:stifts:stiftet:stiftets:stift:stifts:stiften:stiftens
+CUSTOM: y y stift stifts
+547758r5<verb>stifta:stifta:stiftade:stiftat:stiftar:stifta:stiftas:stiftades:stiftats:stiftas:stiftad:stiftat:stiftade:stiftande:
+746973r4<substantiv>stiftare:stiftare:stiftares:stiftaren:stiftarens:stiftare:stiftares:stiftarna:stiftarnas
+CUSTOM: y y stiftar +stiftar
+669921r3<substantiv>stiftelse:stiftelse:stiftelses:stiftelsen:stiftelsens:stiftelser:stiftelsers:stiftelserna:stiftelsernas
+CUSTOM: y y stiftelse
+576994r3<adjektiv>stiftformig:stiftformig:stiftformigt:stiftformiga:stiftformiga::::
+685866r4<substantiv>stiftpenna:stiftpenna:stiftpennas:stiftpennan:stiftpennans:stiftpennor:stiftpennors:stiftpennorna:stiftpennornas
+COMPOUND(552981, 636994): stift + penna
+746979r3<substantiv>stiftsadjunkt::::::::
+COMPOUND(552981, 548144): stift + adjunkt
+841002r4<substantiv>stiftsgård:stiftsgård:stiftsgårds:stiftsgården:stiftsgårdens:stiftsgårdar:stiftsgårdars:stiftsgårdarna:stiftsgårdarnas
+COMPOUND(552981, 551337): stift + gård
+827740r3<substantiv>stiftsråd:stiftsråd:stiftsråds:stiftsrådet:stiftsrådets:stiftsråd:stiftsråds:stiftsråden:stiftsrådens
+551937r8<substantiv>stig:stig:stigs:stigen:stigens:stigar:stigars:stigarna:stigarnas
+554796r3<egennamn>Stig:Stig:Stigs
+593392r11<verb>stiga:stiga:steg:stigit:stiger:stig:::::stigen:stiget:stigna:stigande:
+CUSTOM: y n
+960329r3<substantiv>stigande:stigande:stigandes:stigandet:stigandets::::
+948779r4<substantiv>stigbygel:stigbygel:stigbygels:stigbygeln:stigbygelns:stigbyglar:stigbyglars:stigbyglarna:stigbyglarnas
+COMPOUND(593392, 649077): stiga + bygel
+954950r3<substantiv>stigfinnare:stigfinnare:stigfinnares:stigfinnaren:stigfinnarens:stigfinnare:stigfinnares:stigfinnarna:stigfinnarnas
+853927r3<substantiv>stighastighet:stighastighet:stighastighets:stighastigheten:stighastighetens:stighastigheter:stighastigheters:stighastigheterna:stighastigheternas
+986671r3<substantiv>stiglucka:stiglucka:stigluckas:stigluckan:stigluckans:stigluckor:stigluckors:stigluckorna:stigluckornas
+565326r3<adjektiv>stiglös:stiglös:stiglöst:stiglösa:stiglösa::::
+669922r6<substantiv>stigma:stigma:stigmas:stigmat:stigmats:stigman, stigmata:stigmans, stigmatas:stigmana:stigmanas
+963720r4<substantiv>stigman:stigman:stigmans:stigmannen:stigmannens:stigmän:stigmäns:stigmännen:stigmännens
+COMPOUND(551937, 557796): stig + man
+588088r5<verb>stigmatisera:stigmatisera:stigmatiserade:stigmatiserat:stigmatiserar:stigmatisera:stigmatiseras:stigmatiserades:stigmatiserats:stigmatiseras:stigmatiserad:stigmatiserat:stigmatiserade:stigmatiserande:
+669930r3<substantiv>stigmatisering:stigmatisering:stigmatiserings:stigmatiseringen:stigmatiseringens::::
+CUSTOM: y y stigmatiserings
+669931r4<substantiv>stigning:stigning:stignings:stigningen:stigningens:stigningar:stigningars:stigningarna:stigningarnas
+CUSTOM: y y stignings
+583985r3<adjektiv>stikisk:stikisk:stikiskt:stikiska:stikiska::::
+551938r22<substantiv>stil:stil:stils:stilen:stilens:stilar:stilars:stilarna:stilarnas
+CUSTOM: y y stil
+626565r3<verb>stila:stila:stilade:stilat:stilar:stila:stilas:stilades:stilats:stilas::::stilande:
+770173r4<substantiv>stilart:stilart:stilarts:stilarten:stilartens:stilarter:stilarters:stilarterna:stilarternas
+COMPOUND(551938, 548244): stil + art
+597708r3<substantiv>stilblandning:stilblandning:stilblandnings:stilblandningen:stilblandningens:stilblandningar:stilblandningars:stilblandningarna:stilblandningarnas
+CUSTOM: y y stilblandnings
+567865r3<adjektiv>stilenlig:stilenlig:stilenligt:stilenliga:stilenliga::::
+669939r4<substantiv>stilett:stilett:stiletts:stiletten:stilettens:stiletter:stiletters:stiletterna:stiletternas
+CUSTOM: y y stilett
+669945r4<substantiv>stilettklack:stilettklack:stilettklacks:stilettklacken:stilettklackens:stilettklackar:stilettklackars:stilettklackarna:stilettklackarnas
+COMPOUND(669939, 551530): stilett + klack
+585144r3<adjektiv>stilfull:stilfull:stilfullt:stilfulla:stilfulla::::
+669953r4<substantiv>stilgrepp:stilgrepp:stilgrepps:stilgreppet:stilgreppets:stilgrepp:stilgrepps:stilgreppen:stilgreppens
+COMPOUND(551938, 552447): stil + grepp
+583988r3<adjektiv>stilhistorisk:stilhistorisk:stilhistoriskt:stilhistoriska:stilhistoriska::::
+563177r4<adjektiv>stilig:stilig:stiligt:stiliga:stiliga:stiligare:stiligast:stiligaste:stilige
+949457r4<substantiv>stilikon:stilikon:stilikons:stilikonen:stilikonens:stilikoner:stilikoners:stilikonerna:stilikonernas
+COMPOUND(551938, 549295): stil + ikon
+588092r4<verb>stilisera:stilisera:stiliserade:stiliserat:stiliserar:stilisera:stiliseras:stiliserades:stiliserats:stiliseras:stiliserad:stiliserat:stiliserade:stiliserande:
+746980r3<substantiv>stilisering:stilisering:stiliserings:stiliseringen:stiliseringens:stiliseringar:stiliseringars:stiliseringarna:stiliseringarnas
+669955r3<substantiv>stilist:stilist:stilists:stilisten:stilistens:stilister:stilisters:stilisterna:stilisternas
+CUSTOM: y y stilist
+669957r3<substantiv>stilistik:stilistik:stilistiks:stilistiken:stilistikens::::
+583991r3<adjektiv>stilistisk:stilistisk:stilistiskt:stilistiska:stilistiska::::
+669961r3<substantiv>stilkänsla:stilkänsla:stilkänslas:stilkänslan:stilkänslans::::
+620813r3<adverb>still:still
+571199r4<verb>stilla:stilla:stillade:stillat:stillar:stilla:stillas:stillades:stillats:stillas:stillad:stillat:stillade::
+571198r3<adjektiv>stilla:stilla:stilla:stilla:stilla::::
+571197r3<adverb>stilla:stilla
+862563r7<egennamn>Stilla havet:Stilla havet:Stilla havets
+BASEWORDS: Stillahavs
+CUSTOM: n n
+862522r4<substantiv>Stillahavskust:Stillahavskust:Stillahavskusts:Stillahavskusten:Stillahavskustens:Stillahavskuster:Stillahavskusters:Stillahavskusterna:Stillahavskusternas
+COMPOUND(862563, 549823): Stilla havet + kust
+862513r4<substantiv>Stillahavsnation:Stillahavsnation:Stillahavsnations:Stillahavsnationen:Stillahavsnationens:Stillahavsnationer:Stillahavsnationers:Stillahavsnationerna:Stillahavsnationernas
+COMPOUND(862563, 602948): Stilla havet + nation
+845326r4<substantiv>Stillahavssida:Stillahavssida:Stillahavssidas:Stillahavssidan:Stillahavssidans:Stillahavssidor:Stillahavssidors:Stillahavssidorna:Stillahavssidornas
+COMPOUND(862563, 556545): Stilla havet + sida
+669965r3<adjektiv>stillaliggande:stillaliggande:stillaliggande:stillaliggande:stillaliggande:!:!:!:
+669966r3<adjektiv>stillasittande:stillasittande:stillasittande:stillasittande:stillasittande:!:!:!:
+669967r3<adjektiv>stillastående:stillastående:stillastående:stillastående:stillastående:!:!:!:
+571201r3<adjektiv>stillatigande:stillatigande:stillatigande:stillatigande:stillatigande:!:!:!:
+571202r4<substantiv>stillbild:stillbild:stillbilds:stillbilden:stillbildens:stillbilder:stillbilders:stillbilderna:stillbildernas
+CUSTOM: y y stillbilds
+922959r4<substantiv>stillbildskamera:stillbildskamera:stillbildskameras:stillbildskameran:stillbildskamerans:stillbildskameror:stillbildskamerors:stillbildskamerorna:stillbildskamerornas
+COMPOUND(571202, 559163): stillbild + kamera
+571206r3<substantiv>stilleben:stilleben:stillebens:stillebenet:stillebenets::::
+552982r8<substantiv>stillestånd:stillestånd:stillestånds:stilleståndet:stilleståndets:stillestånd:stillestånds:stillestånden:stilleståndens
+BASEWORDS: stillestånds
+CUSTOM: y y stillestånds +stillestånds
+862536r8<substantiv>stilleståndsdag:s

@@ -1,0 +1,586 @@
+försedd:diakritförsett:diakritförsedda:diakritförsedda::::::::::::
+579444r3<adjektiv>diakritisk:diakritisk:diakritiskt:diakritiska:diakritiska::::
+863003r3<adjektiv>diakron:diakron:diakront:diakrona:diakrona::::
+579446r3<adjektiv>diakronisk:diakronisk:diakroniskt:diakroniska:diakroniska::::
+579448r3<adjektiv>diaktinisk:diaktinisk:diaktiniskt:diaktiniska:diaktiniska::::
+548641r4<substantiv>dialekt:dialekt:dialekts:dialekten:dialektens:dialekter:dialekters:dialekterna:dialekternas
+CUSTOM: y y dialekt
+661414r3<adjektiv>dialektal:dialektal:dialektalt:dialektala:dialektala:!:!:!:
+790417r3<adjektiv>dialektfärgad:dialektfärgad:dialektfärgat:dialektfärgade:dialektfärgade:!:!:!:
+579451r3<adjektiv>dialektgeografisk:dialektgeografisk:dialektgeografiskt:dialektgeografiska:dialektgeografiska::::
+661415r3<substantiv>dialektik:dialektik:dialektiks:dialektiken:dialektikens::::
+661417r3<substantiv>dialektiker:dialektiker:dialektikers:dialektikern:dialektikerns:dialektiker:dialektikers:dialektikerna:dialektikernas
+579454r4<adjektiv>dialektisk:dialektisk:dialektiskt:dialektiska:dialektiska::::dialektiske
+863007r3<substantiv>dialektolog:dialektolog:dialektologs:dialektologen:dialektologens:dialektologer:dialektologers:dialektologerna:dialektologernas
+863015r3<substantiv>dialektologi:dialektologi:dialektologis:dialektologin:dialektologins::::
+579455r3<adjektiv>dialektologisk:dialektologisk:dialektologiskt:dialektologiska:dialektologiska::::
+974487r4<substantiv>dialektord:dialektord:dialektords:dialektordet:dialektordets:dialektord:dialektords:dialektorden:dialektordens
+COMPOUND(548641, 555138): dialekt + ord
+548642r3<substantiv>dialog:dialog:dialogs:dialogen:dialogens:dialoger:dialogers:dialogerna:dialogernas
+CUSTOM: y y dialog
+940366r3<adjektiv>dialogisk:dialogisk:dialogiskt:dialogiska:dialogiska::::::::::::
+661423r3<substantiv>dialys:dialys:dialys:dialysen:dialysens:dialyser:dialysers:dialyserna:dialysernas
+CUSTOM: y y dialys
+974493r3<substantiv>dialysator:dialysator:dialysators:dialysatorn:dialysatorns:dialysatorer:dialysatorers:dialysatorerna:dialysatorernas
+568998r3<adjektiv>dialysbar:dialysbar:dialysbart:dialysbara:dialysbara::::
+586456r4<verb>dialysera:dialysera:dialyserade:dialyserat:dialyserar:dialysera:dialyseras:dialyserades:dialyserats:dialyseras:dialyserad:dialyserat:dialyserade:dialyserande:
+579458r3<adjektiv>dialytisk:dialytisk:dialytiskt:dialytiska:dialytiska::::
+606944r3<substantiv>diamagasin:diamagasin:diamagasins:diamagasinet:diamagasinets:diamagasin:diamagasins:diamagasinen:diamagasinens
+579461r3<adjektiv>diamagnetisk:diamagnetisk:diamagnetiskt:diamagnetiska:diamagnetiska::::
+548644r4<substantiv>diamant:diamant:diamants:diamanten:diamantens:diamanter:diamanters:diamanterna:diamanternas
+CUSTOM: y y diamant
+964791r3<adjektiv>diamantbeklädd:diamantbeklädd:diamantbeklätt:diamantbeklädda:diamantbeklädda::::::::::::
+973802r4<substantiv>diamantcollier:diamantcollier:diamantcolliers:diamantcolliern:diamantcollierns:diamantcollierer:diamantcollierers:diamantcolliererna:diamantcollierernas
+COMPOUND(548644, 973783): diamant + collier
+799204r3<adjektiv>diamanthård:diamanthård:diamanthårt:diamanthårda:diamanthårda::::
+682061r5<adjektiv>diamantprydd:diamantprydd:diamantprytt:diamantprydda:diamantprydda::::::::::::
+633159r5<substantiv>diameter:diameter:diameters:diametern:diameterns:diametrar:diametrars:diametrarna:diametrarnas
+CUSTOM: y y diameter
+661430r6<adjektiv>diametral:diametral:diametralt:diametrala:diametrala:!:!:!:
+DEFINITION 1: rakt motsatt,ex "diametrala åsikter"
+971735r3<egennamn>Diana:Diana:Dianas
+925081r12<substantiv>diapaus:diapaus:diapaus:diapausen:diapausens:diapauser:diapausers:diapauserna:diapausernas
+DEFINITION 1: Ett tillfälligt avbrott i tillväxten och utvecklingen av en organism till följd av ogynnsamma miljöförhållanden.
+CUSTOM: y n
+724918r3<substantiv>diapositiv:diapositiv:diapositivs:diapositivet:diapositivets:diapositiv:diapositivs:diapositiven:diapositivens
+610576r3<substantiv>diaprojektor:diaprojektor:diaprojektors:diaprojektorn:diaprojektorns:diaprojektorer:diaprojektorers:diaprojektorerna:diaprojektorernas
+661433r5<verb>diarieföra:diarieföra:diarieförde:diariefört:diarieför:diarieför:diarieföras:diariefördes:diarieförts:diarieförs, diarieföres:diarieförd:diariefört:diarieförda::
+COMPOUND(661431, 558899): diarium + föra
+661443r3<substantiv>diarieföring:diarieföring:diarieförings:diarieföringen:diarieföringens:!:!:!:!
+CUSTOM: y y diarieförings
+661431r4<substantiv>diarium:diarium:diariums:diariet:diariets:diarier:diariers:diarierna:diariernas
+CUSTOM: y y diarie
+658051r3<substantiv>diarré:diarré:diarrés:diarrén:diarréns:diarréer:diarréers:diarréerna:diarréernas
+CUSTOM: y y diarré
+733214r3<substantiv>diaspora:diaspora:diasporas:diasporan:diasporans::::
+863024r3<substantiv>diastas:diastas:diastas:diastasen:diastasens:diastaser:diastasers:diastaserna:diastasernas
+579464r3<adjektiv>diastolisk:diastolisk:diastoliskt:diastoliska:diastoliska::::
+863031r3<substantiv>diatermi:diatermi:diatermis:diatermin:diatermins::::
+579467r3<adjektiv>diatermisk:diatermisk:diatermiskt:diatermiska:diatermiska::::
+579470r3<adjektiv>diatonisk:diatonisk:diatoniskt:diatoniska:diatoniska::::
+601650r3<substantiv>diatransport:diatransport:diatransports:diatransporten:diatransportens:diatransporter:diatransporters:diatransporterna:diatransporternas
+863035r3<substantiv>diatrib:diatrib:diatribs:diatriben:diatribens:diatriber:diatribers:diatriberna:diatribernas
+863043r3<substantiv>dibarn:dibarn:dibarns:dibarnet:dibarnets:dibarn:dibarns:dibarnen:dibarnens
+861189r3<egennamn>Dick:Dick:Dicks
+751424r3<substantiv>didaktik:didaktik:didaktiks:didaktiken:didaktikens::::
+751428r3<substantiv>didaktiker:didaktiker:didaktikers:didaktikern:didaktikerns:didaktiker:didaktikers:didaktikerna:didaktikernas
+579473r4<adjektiv>didaktisk:didaktisk:didaktiskt:didaktiska:didaktiska::::didaktiske
+579476r3<adjektiv>dielektrisk:dielektrisk:dielektriskt:dielektriska:dielektriska::::
+661444r6<substantiv>diesel:diesel:diesels:dieseln:dieselns:dieslar:dieslars:dieslarna:dieslarnas
+CUSTOM: y y diesel
+661446r3<substantiv>dieselbil:dieselbil:dieselbils:dieselbilen:dieselbilens:dieselbilar:dieselbilars:dieselbilarna:dieselbilarnas
+661454r3<adjektiv>dieseldriven:dieseldriven:dieseldrivet:dieseldrivna:dieseldrivna:!:!:!:!
+579479r3<adjektiv>dieselelektrisk:dieselelektrisk:dieselelektriskt:dieselelektriska:dieselelektriska::::
+579482r3<adjektiv>dieselhydraulisk:dieselhydraulisk:dieselhydrauliskt:dieselhydrauliska:dieselhydrauliska::::
+849524r4<substantiv>diesellok:diesellok:dieselloks:dieselloket:diesellokets:diesellok:dieselloks:dieselloken:diesellokens
+COMPOUND(661444, 552674): diesel + lok
+579485r3<adjektiv>dieselmekanisk:dieselmekanisk:dieselmekaniskt:dieselmekaniska:dieselmekaniska::::
+661457r3<substantiv>dieselmotor:dieselmotor:dieselmotors:dieselmotorn:dieselmotorns:dieselmotorer:dieselmotorers:dieselmotorerna:dieselmotorernas
+661458r3<substantiv>dieselolja:dieselolja:dieseloljas:dieseloljan:dieseloljans::::
+548646r3<substantiv>diet:diet:diets:dieten:dietens:dieter:dieters:dieterna:dieternas
+CUSTOM: y y diet
+579488r3<adjektiv>dietetisk:dietetisk:dietetiskt:dietetiska:dietetiska::::
+974501r3<substantiv>dietik:dietik:dietiks:dietiken:dietikens::::
+CUSTOM: y n
+579491r3<adjektiv>dietisk:dietisk:dietiskt:dietiska:dietiska::::
+661462r3<substantiv>dietist:dietist:dietists:dietisten:dietistens:dietister:dietisters:dietisterna:dietisternas
+CUSTOM: y y dietist
+661470r3<substantiv>dietkost:dietkost:dietkosts:dietkosten:dietkostens::::
+661474r3<substantiv>dietmat:dietmat:dietmats:dietmaten:dietmatens::::
+974505r3<verb>diffa:diffa:diffade:diffat:diffar:diffa::::::::diffande:
+CUSTOM: y n
+548648r4<substantiv>differens:differens:differens:differensen:differensens:differenser:differensers:differenserna:differensernas
+CUSTOM: y y differens
+661496r4<substantiv>differential:differential:differentials:differentialen:differentialens:differentialer:differentialers:differentialerna:differentialernas
+CUSTOM: y y differential
+712395r4<substantiv>differentialekvation:differentialekvation:differentialekvations:differentialekvationen:differentialekvationens:differentialekvationer:differentialekvationers:differentialekvationerna:differentialekvationernas
+COMPOUND(661496, 601699): differential + ekvation
+661494r3<substantiv>differentialkalkyl:differentialkalkyl:differentialkalkyls:differentialkalkylen:differentialkalkylens::::
+579494r3<adjektiv>differentialtermisk:differentialtermisk:differentialtermiskt:differentialtermiska:differentialtermiska::::
+661502r3<adjektiv>differentiell:differentiell:differentiellt:differentiella:differentiella:!:!:!:!
+546409r5<verb>differentiera:differentiera:differentierade:differentierat:differentierar:differentiera:differentieras:differentierades:differentierats:differentieras:differentierad:differentierat:differentierade:differentierande:
+569001r3<adjektiv>differentierbar:differentierbar:differentierbart:differentierbara:differentierbara::::
+661478r3<substantiv>differentiering:differentiering:differentierings:differentieringen:differentieringens:differentieringar:differentieringars:differentieringarna:differentieringarnas
+CUSTOM: y y differentierings
+586460r3<verb>differera:differera:differerade:differerat:differerar:differera:::::::::
+589002r3<verb>diffraktera:diffraktera:diffrakterade:diffrakterat:diffrakterar:diffraktera:::::::::
+661486r3<substantiv>diffraktion:diffraktion:diffraktions:diffraktionen:diffraktionens:diffraktioner:diffraktioners:diffraktionerna:diffraktionernas
+CUSTOM: y y diffraktions
+589006r4<verb>diffundera:diffundera:diffunderade:diffunderat:diffunderar:diffundera:::::diffunderad:diffunderat:diffunderade:diffunderande:
+569004r3<adjektiv>diffunderbar:diffunderbar:diffunderbart:diffunderbara:diffunderbara::::
+649390r5<adjektiv>diffus:diffus:diffust:diffusa:diffusa:diffusare:diffusast:diffusaste:diffuse
+586464r3<verb>diffusera:diffusera:diffuserade:diffuserat:diffuserar:diffusera:::::::::
+661503r7<substantiv>diffusion:diffusion:diffusions:diffusionen:diffusionens:diffusioner:diffusioners:diffusionerna:diffusionernas
+CUSTOM: y y diffusions +diffusions
+729457r4<substantiv>diffusionsförlopp:diffusionsförlopp:diffusionsförlopps:diffusionsförloppet:diffusionsförloppets:diffusionsförlopp:diffusionsförlopps:diffusionsförloppen:diffusionsförloppens
+COMPOUND(661503, 552409): diffusion + förlopp
+875410r4<substantiv>diffusionskoefficient:diffusionskoefficient:diffusionskoefficients:diffusionskoefficienten:diffusionskoefficientens:diffusionskoefficienter:diffusionskoefficienters:diffusionskoefficienterna:diffusionskoefficienternas
+COMPOUND(661503, 549545): diffusion + koefficient
+753418r3<substantiv>difteri:difteri:difteris:difterin:difterins::::
+CUSTOM: y n difteri
+548649r3<substantiv>diftong:diftong:diftongs:diftongen:diftongens:diftonger:diftongers:diftongerna:diftongernas
+589007r4<verb>diftongera:diftongera:diftongerade:diftongerat:diftongerar:diftongera:diftongeras:diftongerades:diftongerats:diftongeras:diftongerad:diftongerat:diftongerade:diftongerande:
+974510r3<substantiv>diftongering:diftongering:diftongerings:diftongeringen:diftongeringens:diftongeringar:diftongeringars:diftongeringarna:diftongeringarnas
+579497r3<adjektiv>diftongisk:diftongisk:diftongiskt:diftongiska:diftongiska::::
+558068r3<pronomen>dig:dig
+863058r3<substantiv>digelpress:digelpress:digelpress:digelpressen:digelpressens:digelpressar:digelpressars:digelpressarna:digelpressarnas
+625206r8<adjektiv>diger:diger:digert:digra:digra:digrare:digrast:digraste:digre::::::::
+CUSTOM: y n
+704117r3<substantiv>digerdöd:digerdöd:digerdöds:digerdöden:digerdödens:!:!:!:!
+589011r4<verb>digerera:digerera:digererade:digererat:digererar:digerera:digereras:digererades:digererats:digereras:digererad:digererat:digererade:digererande:
+797408r7<adjektiv>digestiv::::::::::::::::
+863070r3<verb>digga:digga:diggade:diggat:diggar:digga:diggas:diggades:diggats:diggas:diggad:diggat:diggade:diggande:
+974518r3<substantiv>diggare:diggare:diggares:diggaren:diggarens:diggare:diggares:diggarna:diggarnas
+564662r7<adjektiv>digital:digital:digitalt:digitala:digitala::::digitale::::::::
+CUSTOM: y y digital
+959321r4<substantiv>digitalbio:digitalbio:digitalbios:digitalbion:digitalbions::::
+COMPOUND(564662, 892957): digital + bio
+863080r3<substantiv>digitalis:digitalis:digitalis:digitalisen:digitalisens::::
+546410r4<verb>digitalisera:digitalisera:digitaliserade:digitaliserat:digitaliserar:digitalisera:digitaliseras:digitaliserades:digitaliserats:digitaliseras:digitaliserad:digitaliserat:digitaliserade::
+704121r3<substantiv>digitalisering:digitalisering:digitaliserings:digitaliseringen:digitaliseringens:digitaliseringar:digitaliseringars:digitaliseringarna:digitaliseringarnas
+CUSTOM: y y digitaliserings +digitaliserings
+673627r4<substantiv>digitalkamera:digitalkamera:digitalkameras:digitalkameran:digitalkamerans:digitalkameror:digitalkamerors:digitalkamerorna:digitalkamerornas
+COMPOUND(564662, 559163): digital + kamera
+661505r3<substantiv>digitalklocka:digitalklocka:digitalklockas:digitalklockan:digitalklockans:digitalklockor:digitalklockors:digitalklockorna:digitalklockornas
+661513r3<substantiv>digitalteknik:digitalteknik:digitaltekniks:digitaltekniken:digitalteknikens::::
+661517r3<substantiv>digitalur:digitalur:digitalurs:digitaluret:digitalurets:digitalur:digitalurs:digitaluren:digitalurens
+845519r4<substantiv>digitalvåg:digitalvåg:digitalvågs:digitalvågen:digitalvågens:digitalvågar:digitalvågars:digitalvågarna:digitalvågarnas
+COMPOUND(564662, 552102): digital + våg
+863083r3<substantiv>digivning:digivning:digivnings:digivningen:digivningens:digivningar:digivningars:digivningarna:digivningarnas
+974524r3<substantiv>diglossi:diglossi:diglossis:diglossin:diglossins::::
+625208r3<verb>digna:digna:dignade:dignat:dignar:digna::::::::dignande:
+548651r3<substantiv>dignitet:dignitet:dignitets:digniteten:dignitetens:digniteter:digniteters:digniteterna:digniteternas
+863091r3<substantiv>dignitär:dignitär:dignitärs:dignitären:dignitärens:dignitärer:dignitärers:dignitärerna:dignitärernas
+863099r3<substantiv>digression:digression:digressions:digressionen:digressionens:digressioner:digressioners:digressionerna:digressionernas
+912837r3<substantiv>dijonsenap:dijonsenap:dijonsenaps:dijonsenapen:dijonsenapens::::
+546411r4<verb>dika:dika:dikade:dikat:dikar:dika:dikas:dikades:dikats:dikas:::::
+612431r5<substantiv>dike:dike:dikes:diket:dikets:diken:dikens:dikena:dikenas
+CUSTOM: y y dikes
+953673r3<adjektiv>dikeskörd:dikeskörd:dikeskört:dikeskörda:dikeskörda::::::::::::
+700117r4<substantiv>dikeskörning:dikeskörning:dikeskörnings:dikeskörningen:dikeskörningens:dikeskörningar:dikeskörningars:dikeskörningarna:dikeskörningarnas
+COMPOUND(612431, 631838): dike + körning
+CUSTOM: y y dikeskörnings
+753422r4<substantiv>dikesren:dikesren:dikesrens:dikesrenen:dikesrenens:dikesrenar:dikesrenars:dikesrenarna:dikesrenarnas
+960927r3<substantiv>dikning:dikning:diknings:dikningen:dikningens:dikningar:dikningars:dikningarna:dikningarnas
+569007r3<adjektiv>dikningsbar:dikningsbar:dikningsbart:dikningsbara:dikningsbara::::
+565691r3<adjektiv>dikningsduglig:dikningsduglig:dikningsdugligt:dikningsdugliga:dikningsdugliga::::
+661523r3<adjektiv>dikotom:dikotom:dikotomt:dikotoma:dikotoma:!:!:!:!
+CUSTOM: n n
+661524r3<substantiv>dikotomi:dikotomi:dikotomis:dikotomin:dikotomins:dikotomier:dikotomiers:dikotomierna:dikotomiernas
+974528r3<substantiv>dikotyledon:dikotyledon:dikotyledons:dikotyledonen:dikotyledonens:dikotyledoner:dikotyledoners:dikotyledonerna:dikotyledonernas
+579500r3<adjektiv>dikroisk:dikroisk:dikroiskt:dikroiska:dikroiska::::
+579503r3<adjektiv>dikromatisk:dikromatisk:dikromatiskt:dikromatiska:dikromatiska::::
+548653r10<substantiv>dikt:dikt:dikts:dikten:diktens:dikter:dikters:dikterna:dikternas
+CUSTOM: y y dikt
+546412r5<verb>dikta:dikta:diktade:diktat:diktar:dikta:diktas:diktades:diktats:diktas:diktad:diktat:diktade::
+661526r3<substantiv>diktafon:diktafon:diktafons:diktafonen:diktafonens:diktafoner:diktafoners:diktafonerna:diktafonernas
+661534r4<substantiv>diktamen:diktamen:diktamens:diktamen:diktamens:diktamina:diktaminas::
+689283r3<substantiv>diktande:diktande:diktandes:diktandet:diktandets::::
+609432r4<substantiv>diktare:diktare:diktares:diktaren:diktarens:diktare:diktares:diktarna:diktarnas
+CUSTOM: y y diktar
+974536r3<substantiv>diktarinna:diktarinna:diktarinnas:diktarinnan:diktarinnans:diktarinnor:diktarinnors:diktarinnorna:diktarinnornas
+974544r3<substantiv>diktarskap:diktarskap:diktarskaps:diktarskapet:diktarskapets::::
+829700r4<substantiv>diktart:diktart:diktarts:diktarten:diktartens:diktarter:diktarters:diktarterna:diktarternas
+COMPOUND(548653, 548244): dikt + art
+661536r3<substantiv>diktat:diktat:diktats:diktatet:diktatets:diktat:diktats:diktaten:diktatens
+661541r3<substantiv>diktator:diktator:diktators:diktatorn:diktatorns:diktatorer:diktatorers:diktatorerna:diktatorernas
+CUSTOM: y y diktators
+579506r4<adjektiv>diktatorisk:diktatorisk:diktatoriskt:diktatoriska:diktatoriska::::diktatoriske
+548654r3<substantiv>diktatur:diktatur:diktaturs:diktaturen:diktaturens:diktaturer:diktaturers:diktaturerna:diktaturernas
+CUSTOM: y y diktatur
+930523r4<substantiv>diktbok:diktbok:diktboks:diktboken:diktbokens:diktböcker:diktböckers:diktböckerna:diktböckernas
+COMPOUND(548653, 555346): dikt + bok
+546413r5<verb>diktera:diktera:dikterade:dikterat:dikterar:diktera:dikteras:dikterades:dikterats:dikteras:dikterad:dikterat:dikterade:dikterande:
+974548r3<substantiv>diktering:diktering:dikterings:dikteringen:dikteringens:dikteringar:dikteringars:dikteringarna:dikteringarnas
+863109r3<substantiv>dikteringsmaskin:dikteringsmaskin:dikteringsmaskins:dikteringsmaskinen:dikteringsmaskinens:dikteringsmaskiner:dikteringsmaskiners:dikteringsmaskinerna:dikteringsmaskinernas
+753426r3<substantiv>diktion:diktion:diktions:diktionen:diktionens::::
+954486r4<substantiv>diktjag:diktjag:diktjags:diktjaget:diktjagets::::
+COMPOUND(548653, 607425): dikt + jag
+632892r4<substantiv>diktning:diktning:diktnings:diktningen:diktningens:diktningar:diktningars:diktningarna:diktningarnas
+CUSTOM: y y diktnings
+930531r4<substantiv>diktrad:diktrad:diktrads:diktraden:diktradens:diktrader:diktraders:diktraderna:diktradernas
+COMPOUND(548653, 550306): dikt + rad
+661542r3<substantiv>diktsamling:diktsamling:diktsamlings:diktsamlingen:diktsamlingens:diktsamlingar:diktsamlingars:diktsamlingarna:diktsamlingarnas
+677406r4<substantiv>dikväveoxid:dikväveoxid:dikväveoxids:dikväveoxiden:dikväveoxidens:dikväveoxider:dikväveoxiders:dikväveoxiderna:dikväveoxidernas
+DEFINITION 1: Lustgas
+677415r3<substantiv>dikvävepentaoxid:dikvävepentaoxid:dikvävepentaoxids:dikvävepentaoxiden:dikvävepentaoxidens:dikvävepentaoxider:dikvävepentaoxiders:dikvävepentaoxiderna:dikvävepentaoxidernas
+960935r4<substantiv>dilamm:dilamm:dilamms:dilammet:dilammets:dilamm:dilamms:dilammen:dilammens
+COMPOUND(557656, 552637): di + lamm
+863117r4<substantiv>dilatation:dilatation:dilatations:dilatationen:dilatationens:dilatationer:dilatationers:dilatationerna:dilatationernas
+CUSTOM: y y dilatations
+863125r4<substantiv>dilatationsfog:dilatationsfog:dilatationsfogs:dilatationsfogen:dilatationsfogens:dilatationsfogar:dilatationsfogars:dilatationsfogarna:dilatationsfogarnas
+COMPOUND(863117, 551173): dilatation + fog
+730583r4<verb>dilatera:dilatera:dilaterade:dilaterat:dilaterar:dilatera:dilateras:dilaterades:dilaterats:dilateras:dilaterad:dilaterat:dilaterade::
+DEFINITION 1: Utvidgning
+579507r3<adjektiv>dilatorisk:dilatorisk:dilatoriskt:dilatoriska:dilatoriska::::
+789060r3<egennamn>Dilbert:Dilbert:Dilberts
+658171r4<substantiv>dildo:dildo:dildos:dildon:dildons:dildosar, dildoar:dildosars, dildoars:dildosarna, dildoarna:dildosarnas, dildoarnas
+661543r3<substantiv>dilemma:dilemma:dilemmas:dilemmat:dilemmats:dilemman:dilemmans:dilemmana:dilemmanas
+661549r3<substantiv>dilettant:dilettant:dilettants:dilettanten:dilettantens:dilettanter:dilettanters:dilettanterna:dilettanternas
+863133r3<substantiv>dilettanteri:dilettanteri:dilettanteris:dilettanteriet:dilettanteriets::::
+579510r4<adjektiv>dilettantisk:dilettantisk:dilettantiskt:dilettantiska:dilettantiska::::dilettantiske
+863138r3<substantiv>dilettantism:dilettantism:dilettantisms:dilettantismen:dilettantismens::::
+571853r3<adjektiv>dilettantmässig:dilettantmässig:dilettantmässigt:dilettantmässiga:dilettantmässiga::::
+661557r5<substantiv>diligens:diligens:diligens:diligensen:diligensens:diligenser:diligensers:diligenserna:diligensernas
+CUSTOM: y n diligens
+974560r4<substantiv>diligenslinje:diligenslinje:diligenslinjes:diligenslinjen:diligenslinjens:diligenslinjer:diligenslinjers:diligenslinjerna:diligenslinjernas
+COMPOUND(661557, 611937): diligens + linje
+624065r8<substantiv>dill:dill:dills:dillen:dillens:!:!:!:!
+CUSTOM: y n dill
+546414r5<verb>dilla:dilla:dillade:dillat:dillar:dilla:dillas:dillades:dillats:dillas::::dillande:
+CUSTOM: y n
+631601r8<substantiv>dille:dille:dilles:dillet:dillets::::
+DEFINITION 1: Delirium tremens.
+896016r3<substantiv>dilleri:dilleri:dilleris:dilleriet:dilleriets:dillerier:dilleriers:dillerierna:dilleriernas
+849531r4<substantiv>dillfrö:dillfrö:dillfrös:dillfröet:dillfröets:dillfrön:dillfröns:dillfröna:dillfrönas
+COMPOUND(624065, 556155): dill + frö
+944378r4<substantiv>dillpion:dillpion:dillpions:dillpionen:dillpionens:dillpioner:dillpioners:dillpionerna:dillpionernas
+COMPOUND(624065, 628525): dill + pion
+682109r6<substantiv>dillsmör:dillsmör:dillsmörs:dillsmöret:dillsmörets:!:!:!:!
+COMPOUND(624065, 622554): dill + smör
+769031r4<substantiv>dillsås:dillsås:dillsås:dillsåsen:dillsåsens:dillsåser:dillsåsers:dillsåserna:dillsåsernas
+COMPOUND(624065, 556707): dill + sås
+797411r3<adjektiv>diluvial:diluvial:diluvialt:diluviala:diluviala::::
+606950r3<substantiv>dimbakljus:dimbakljus:dimbakljus:dimbakljuset:dimbakljusets:dimbakljus:dimbakljus:dimbakljusen:dimbakljusens
+938601r4<substantiv>dimbank:dimbank:dimbanks:dimbanken:dimbankens:dimbankar:dimbankars:dimbankarna:dimbankarnas
+COMPOUND(593909, 616615): dimma + bank
+938609r4<substantiv>dimbild:dimbild:dimbilds:dimbilden:dimbildens:dimbilder:dimbilders:dimbilderna:dimbildernas
+COMPOUND(593909, 548373): dimma + bild
+974576r4<substantiv>dimbildning:dimbildning:dimbildnings:dimbildningen:dimbildningens:dimbildningar:dimbildningars:dimbildningarna:dimbildningarnas
+COMPOUND(593909, 651396): dimma + bildning
+801976r3<adjektiv>dimblå:dimblå:dimblått:dimblåa:dimblåa::::
+938697r4<substantiv>dimbåge:dimbåge:dimbåges:dimbågen:dimbågens:dimbågar:dimbågars:dimbågarna:dimbågarnas
+COMPOUND(593909, 560891): dimma + båge
+548655r4<substantiv>dimension:dimension:dimensions:dimensionen:dimensionens:dimensioner:dimensioners:dimensionerna:dimensionernas
+CUSTOM: y y dimensions +dimensions
+974585r3<substantiv>dimensionalitet:dimensionalitet:dimensionalitets:dimensionaliteten:dimensionalitetens::::
+797414r3<adjektiv>dimensionell:dimensionell:dimensionellt:dimensionella:dimensionella::::
+586468r4<verb>dimensionera:dimensionera:dimensionerade:dimensionerat:dimensionerar:dimensionera:dimensioneras:dimensionerades:dimensionerats:dimensioneras:dimensionerad:dimensionerat:dimensionerade::
+790420r3<adjektiv>dimensionerad:dimensionerad:dimensionerat:dimensionerade:dimensionerade:!:!:!:
+800918r3<adjektiv>dimensionerande:dimensionerande:dimensionerande:dimensionerande:dimensionerande:!:!:!:
+712367r4<substantiv>dimensionering:dimensionering:dimensionerings:dimensioneringen:dimensioneringens:dimensioneringar:dimensioneringars:dimensioneringarna:dimensioneringarnas
+720527r4<substantiv>dimensionsfaktor:dimensionsfaktor:dimensionsfaktors:dimensionsfaktorn:dimensionsfaktorns:dimensionsfaktorer:dimensionsfaktorers:dimensionsfaktorerna:dimensionsfaktorernas
+COMPOUND(548655, 639232): dimension + faktor
+564783r3<adjektiv>dimensionslös:dimensionslös:dimensionslöst:dimensionslösa:dimensionslösa::::
+589015r3<verb>dimerisera:dimerisera:dimeriserade:dimeriserat:dimeriserar:dimerisera:::::::::
+801979r3<adjektiv>dimgrå:dimgrå:dimgrått:dimgråa:dimgråa::::
+799207r3<adjektiv>dimhöljd:dimhöljd:dimhöljt:dimhöljda:dimhöljda::::
+863142r3<substantiv>diminuendo:diminuendo:diminuendos:diminuendot:diminuendots:diminuendon:diminuendons:diminuendona:diminuendonas
+974590r4<substantiv>diminutiv:diminutiv:diminutivs:diminutivet, diminutiven:diminutivets, diminutivens:diminutiver:diminutivers:diminutiverna:diminutivernas
+CUSTOM: y n
+797415r4<adjektiv>diminutiv:diminutiv:diminutivt:diminutiva:diminutiva::::diminutive
+CUSTOM: y n diminutiv
+974600r4<substantiv>diminutivform:diminutivform:diminutivforms:diminutivformen:diminutivformens:diminutivformer:diminutivformers:diminutivformerna:diminutivformernas
+COMPOUND(974590, 548947): diminutiv + form
+974608r3<substantiv>dimission:dimission:dimissions:dimissionen:dimissionens:dimissioner:dimissioners:dimissionerna:dimissionernas
+CUSTOM: y n
+589019r4<verb>dimittera:dimittera:dimitterade:dimitterat:dimitterar:dimittera:dimitteras:dimitterades:dimitterats:dimitteras:dimitterad:dimitterat:dimitterade:dimitterande:
+938629r4<substantiv>dimkammare:dimkammare:dimkammares:dimkammaren:dimkammarens:dimkammare, dimkamrar:dimkammares, dimkamrars:dimkamrarna:dimkamrarnas
+COMPOUND(593909, 559310): dimma + kammare
+606955r3<substantiv>dimljus:dimljus:dimljus:dimljuset:dimljusets:dimljus:dimljus:dimljusen:dimljusens
+601658r3<substantiv>dimljussats:dimljussats:dimljussats:dimljussatsen:dimljussatsens:dimljussatser:dimljussatsers:dimljussatserna:dimljussatsernas
+593909r12<substantiv>dimma:dimma:dimmas:dimman:dimmans:dimmor:dimmors:dimmorna:dimmornas
+BASEWORDS: dim
+CUSTOM: y y
+893047r6<substantiv>dimmer:dimmer:dimmers:dimmern:dimmerns:dimrar:dimrars:dimrarna:dimrarnas
+CUSTOM: y n dimmer
+571856r4<adjektiv>dimmig:dimmig:dimmigt:dimmiga:dimmiga:dimmigare:dimmigast:dimmigaste:dimmige
+938625r3<substantiv>dimmighet:dimmighet:dimmighets:dimmigheten:dimmighetens::::
+928612r4<substantiv>dimmoln:dimmoln:dimmolns:dimmolnet:dimmolnets:dimmoln:dimmolns:dimmolnen:dimmolnens
+COMPOUND(593909, 552697): dimma + moln
+797418r3<adjektiv>dimorf:dimorf:dimorft:dimorfa:dimorfa::::
+974645r3<substantiv>dimorfism:dimorfism:dimorfisms:dimorfismen:dimorfismens::::
+585291r3<verb>dimpa:dimpa:damp:dumpit:dimper:dimp:!:!:!:!:::::
+CUSTOM: y n !dimp
+661564r3<substantiv>dimridå:dimridå:dimridås:dimridån:dimridåns:dimridåer:dimridåers:dimridåerna:dimridåernas
+938617r4<substantiv>dimslöja:dimslöja:dimslöjas:dimslöjan:dimslöjans:dimslöjor:dimslöjors:dimslöjorna:dimslöjornas
+COMPOUND(593909, 623153): dimma + slöja
+974649r4<substantiv>dimstråk:dimstråk:dimstråks:dimstråket:dimstråkets:dimstråk:dimstråks:dimstråken:dimstråkens
+COMPOUND(593909, 622993): dimma + stråk
+585265r3<pronomen>din:din
+617506r3<pronomen>dina:dina
+901021r3<substantiv>dinar:dinar:dinars:dinaren:dinarens:dinarer:dinarers:dinarerna:dinarernas
+894885r3<substantiv>diné:diné:dinés:dinén:dinéns:dinéer:dinéers:dinéerna:dinéernas
+CUSTOM: y n
+586472r4<verb>dinera:dinera:dinerade:dinerat:dinerar:dinera::::::::dinerande:
+960941r3<adjektiv>ding:ding:::::::::::::::
+661566r3<verb>dingla:dingla:dinglade:dinglat:dinglar:dingla::::::::dinglande:
+904495r4<substantiv>dingo:dingo:dingos:dingon:dingons:dingoer, dingor:dingoers, dingors:dingoerna, dingorna:dingoernas, dingornas
+CUSTOM: y n
+668784r5<substantiv>dinkel:dinkel:dinkels:dinkeln:dinkelns:!:!:!:!
+DEFINITION 1: En gammal vetesort
+CUSTOM: y y dinkel
+668791r4<substantiv>dinkelmjöl:dinkelmjöl:dinkelmjöls:dinkelmjölet:dinkelmjölets:!:!:!:!
+COMPOUND(668784, 618895): dinkel + mjöl
+974660r3<substantiv>dinosaur:dinosaur:dinosaurs:dinosauren:dinosaurens:dinosaurer:dinosaurers:dinosaurerna:dinosaurernas
+CUSTOM: y n
+661568r4<substantiv>dinosaurie:dinosaurie:dinosauries:dinosaurien:dinosauriens:dinosaurier:dinosauriers:dinosaurierna:dinosauriernas
+CUSTOM: y y dinosaurie
+769039r4<substantiv>dinosaurieart:dinosaurieart:dinosauriearts:dinosauriearten:dinosaurieartens:dinosauriearter:dinosauriearters:dinosauriearterna:dinosauriearternas
+COMPOUND(661568, 548244): dinosaurie + art
+622375r4<substantiv>diod:diod:diods:dioden:diodens:dioder:dioders:dioderna:diodernas
+553195r3<egennamn>Diogenes:Diogenes:Diogenes
+579513r3<adjektiv>dionysisk:dionysisk:dionysiskt:dionysiska:dionysiska::::
+863152r3<substantiv>diopter:diopter:diopters:dioptern:diopterns:dioptrar:dioptrars:dioptrarna:dioptrarnas
+974668r3<substantiv>dioptersikte:dioptersikte:dioptersiktes:dioptersiktet:dioptersiktets:dioptersikten:dioptersiktens:dioptersiktena:dioptersiktenas
+863160r3<substantiv>dioptri:dioptri:dioptris:dioptrin:dioptrins:dioptrier:dioptriers:dioptrierna:dioptriernas
+863168r3<substantiv>dioptrik:dioptrik:dioptriks:dioptriken:dioptrikens::::
+579516r3<adjektiv>dioptrisk:dioptrisk:dioptriskt:dioptriska:dioptriska::::
+974676r3<substantiv>diorama:diorama:dioramas:dioraman:dioramans:dioramor:dioramors:dioramorna:dioramornas
+CUSTOM: y n
+863172r3<substantiv>diorit:diorit:diorits:dioriten:dioritens:dioriter:dioriters:dioriterna:dioriternas
+863180r3<substantiv>dioskur:dioskur:dioskurs:dioskuren:dioskurens:dioskurer:dioskurers:dioskurerna:dioskurernas
+688950r3<substantiv>dioxid:dioxid:dioxids:dioxiden:dioxidens:dioxider:dioxiders:dioxiderna:dioxidernas
+CUSTOM: y y +dioxid
+622377r4<substantiv>dioxin:dioxin:dioxins:dioxinet:dioxinets:dioxiner:dioxiners:dioxinerna:dioxinernas
+CUSTOM: y y dioxin
+721522r4<substantiv>dioxininnehåll:dioxininnehåll:dioxininnehålls:dioxininnehållet:dioxininnehållets:dioxininnehåll:dioxininnehålls:dioxininnehållen:dioxininnehållens
+COMPOUND(622377, 552512): dioxin + innehåll
+974684r3<adjektiv>diploid:diploid::diploida:diploida::::::::::::
+CUSTOM: y n
+552314r3<substantiv>diplom:diplom:diploms:diplomet:diplomets:diplom:diploms:diplomen:diplomens
+CUSTOM: y y diplom
+548657r3<substantiv>diplomat:diplomat:diplomats:diplomaten:diplomatens:diplomater:diplomaters:diplomaterna:diplomaternas
+CUSTOM: y y diplomat
+579519r3<adjektiv>diplomatarisk:diplomatarisk:diplomatariskt:diplomatariska:diplomatariska::::
+899036r3<substantiv>diplomatarium:diplomatarium:diplomatariums:diplomatariet:diplomatariets:diplomatarier:diplomatariers:diplomatarierna:diplomatariernas
+661570r3<substantiv>diplomati:diplomati:diplomatis:diplomatin:diplomatins:!:!:!:!
+661572r3<substantiv>diplomatik:diplomatik:diplomatiks:diplomatiken:diplomatikens::::
+579522r4<adjektiv>diplomatisk:diplomatisk:diplomatiskt:diplomatiska:diplomatiska::::diplomatiske
+661576r3<substantiv>diplomatpass:diplomatpass:diplomatpass:diplomatpasset:diplomatpassets:diplomatpass:diplomatpass:diplomatpassen:diplomatpassens
+589023r5<verb>diplomera:diplomera:diplomerade:diplomerat:diplomerar:diplomera:diplomeras:diplomerades:diplomerats:diplomeras:diplomerad:diplomerat:diplomerade:diplomerande:
+703716r3<adjektiv>diplomerad:diplomerad:diplomerat:diplomerade:diplomerade:!:!:!:
+960942r3<substantiv>diplomering:diplomering:diplomerings:diplomeringen:diplomeringens:diplomeringar:diplomeringars:diplomeringarna:diplomeringarnas
+901623r4<substantiv>dipodi:dipodi:::::::
+DEFINITION 1: dubbel versfot
+CUSTOM: n n n
+875260r3<substantiv>dipol:dipol:dipols:dipolen:dipolens:dipoler:dipolers:dipolerna:dipolernas
+622385r3<substantiv>dipp:dipp:dipps:dippet:dippets:!:!:!:!
+CUSTOM: n n n
+622389r3<verb>dippa:dippa:dippade:dippat:dippar:dippa:::::::::
+923918r7<substantiv>dipp, dip:dip, dipp:dips, dipps:dippen:dippens:dippar:dippars:dipparna:dipparnas
+863188r3<substantiv>dipsoman:dipsoman:dipsomans:dipsomanen:dipsomanens:dipsomaner:dipsomaners:dipsomanerna:dipsomanernas
+863196r3<substantiv>diptyk:diptyk:diptyks:diptyken:diptykens:diptyker:diptykers:diptykerna:diptykernas
+721087r3<egennamn>Dirac:Dirac:Diracs
+CUSTOM: y n Dirac
+620513r5<adverb>direkt:direkt
+CUSTOM: y n direkt
+571262r6<adjektiv>direkt:direkt:direkt:direkta:direkta:direktare:direktast:direktaste:::::::::
+CUSTOM: y n
+954313r4<substantiv>direktel:direktel:direktels:direktelen:direktelens:!:!:!:!
+COMPOUND(571262, 557664): direkt + el
+790421r3<adjektiv>direkteldad:direkteldad:direkteldat:direkteldade:direkteldade:!:!:!:
+688952r3<substantiv>direkten:!:!:direkten:!:!:!:!:!
+661581r3<substantiv>direktflyg:direktflyg:direktflygs:direktflyget:direktflygets::::
+819146r3<substantiv>direkthet:direkthet:direkthets:direktheten:direkthetens::::
+661585r3<substantiv>direktimport:direktimport:direktimports:direktimporten:direktimportens::::
+753435r3<adjektiv>direktinsprutad:direktinsprutad:direktinsprutat:direktinsprutade:direktinsprutade:!:!:!:
+661589r3<substantiv>direktion:direktion:direktions:direktionen:direktionens:direktioner:direktioners:direktionerna:direktionernas
+CUSTOM: y y direktions +direktions
+552315r4<substantiv>direktiv:direktiv:direktivs:direktivet:direktivets:direktiv:direktivs:direktiven:direktivens
+CUSTOM: y y direktiv +direktiv
+570719r3<adjektiv>direktkompatibel:direktkompatibel:direktkompatibelt:direktkompatibla:direktkompatibla::::
+721415r4<substantiv>direktkonsumtion:direktkonsumtion:direktkonsumtions:direktkonsumtionen:direktkonsumtionens::::
+COMPOUND(620513, 652933): direkt + konsumtion
+661594r3<substantiv>direktkontakt:direktkontakt:direktkontakts:direktkontakten:direktkontaktens:direktkontakter:direktkontakters:direktkontakterna:direktkontakternas
+661602r3<adjektiv>direktkopplad:direktkopplad:direktkopplat:direktkopplade:direktkopplade:!:!:!:
+661605r3<adjektiv>direktkvalificerad:direktkvalificerad:direktkvalificerat:direktkvalificerade:direktkvalificerade:!:!:!:
+790424r3<adjektiv>direktmanövrerad:direktmanövrerad:direktmanövrerat:direktmanövrerade:direktmanövrerade:!:!:!:
+790427r3<adjektiv>direktmatad:direktmatad:direktmatat:direktmatade:direktmatade:!:!:!:
+876242r3<substantiv>direktmetod:direktmetod:direktmetods:direktmetoden:direktmetodens:direktmetoder:direktmetoders:direktmetoderna:direktmetodernas
+863204r3<substantiv>direktor:direktor:direktors:direktorn:direktorns:direktorer:direktorers:direktorerna:direktorernas
+894489r5<substantiv>direktorat:direktorat:direktorats:direktoratet:direktoratets:direktorat:direktorats:direktoraten:direktoratens
+661608r3<substantiv>direktris:direktris:direktris:direktrisen:direktrisens:direktriser:direktrisers:direktriserna:direktrisernas
+682033r6<verb>direktskjuta:direktskjuta:direktsköt:direktskjutit:direktskjuter:direktskjut:direktskjutas:direktsköts:direktskjutits:direktskjuts, direktskjutes:direktskjuten:direktskjutet:direktskjutna:direktskjutande:
+COMPOUND(620513, 593371): direkt + skjuta
+640368r6<verb>direktsända:direktsända:direktsände:direktsänt:direktsänder:direktsänd:direktsändas:direktsändes:direktsänts:direktsänds, direktsändes:direktsänd:direktsänt:direktsända:direktsändande:
+COMPOUND(571262, 593413): direkt + sända
+661615r3<substantiv>direktsändning:direktsändning:direktsändnings:direktsändningen:direktsändningens:direktsändningar:direktsändningars:direktsändningarna:direktsändningarnas
+CUSTOM: y y direktsändnings
+548659r5<substantiv>direktör:direktör:direktörs:direktören:direktörens:direktörer:direktörers:direktörerna:direktörernas
+CUSTOM: y y direktörs +direktörs
+601665r3<substantiv>direktörsassistent:direktörsassistent:direktörsassistents:direktörsassistenten:direktörsassistentens:direktörsassistenter:direktörsassistenters:direktörsassistenterna:direktörsassistenternas
+849540r3<substantiv>direktörskap:direktörskap:direktörskaps:direktörskapet:direktörskapets::::
+661616r3<substantiv>dirigent:dirigent:dirigents:dirigenten:dirigentens:dirigenter:dirigenters:dirigenterna:dirigenternas
+CUSTOM: y y dirigent
+753439r3<substantiv>dirigentpult:dirigentpult:dirigentpults:dirigentpulten:dirigentpultens::::
+974687r3<substantiv>dirigentskap:dirigentskap:dirigentskaps:dirigentskapet:dirigentskapets::::
+546415r5<verb>dirigera:dirigera:dirigerade:dirigerat:dirigerar:dirigera:dirigeras:dirigerades:dirigerats:dirigeras:dirigerad:dirigerat:dirigerade:dirigerande:
+913671r4<substantiv>dirigering:dirigering:dirigerings:dirigeringen:dirigeringens:dirigeringar:dirigeringars:dirigeringarna:dirigeringarnas
+624269r3<substantiv>dis:dis:dis:diset:disets::::
+956004r3<substantiv>disablot:disablot:disablots:disablotet:disablotets:disablot:disablots:disabloten:disablotens
+790430r3<adjektiv>disaggregerad:disaggregerad:disaggregerat:disaggregerade:disaggregerade:!:!:!:
+589027r4<verb>disambiguera:disambiguera:disambiguerade:disambiguerat:disambiguerar:disambiguera:::::disambiguerad:disambiguerat:disambiguerade:disambiguerande:
+927936r5<substantiv>disc:disc:discs:discen:discens:discar:discars:discarna:discarnas
+DEFINITION 1: Generellt ord för frisbee.
+CUSTOM: n n
+927927r4<substantiv>discathon:!:discathons:!:!:!:!:!:!
+DEFINITION 1: Tävlingsgren inom frisbeesport.
+CUSTOM: n n
+927887r8<substantiv>discgolf:discgolf:discgolfs:discgolfen:discgolfens:!:!:!:!
+DEFINITION 1: Tävlingsgren inom frisbeesporten, ibland kallad  frisbeegolf.
+COMPOUND(927936, 624439): disc + golf
+CUSTOM: n n y
+927894r4<substantiv>discgolfbana:discgolfbana:discgolfbanas:discgolfbanan:discgolfbanans:discgolfbanor:discgolfbanors:discgolfbanorna:discgolfbanornas
+COMPOUND(927887, 556870): discgolf + bana
+CUSTOM: n n
+863212r3<substantiv>discipel:discipel:discipels:discipeln:discipelns:disciplar:disciplars:disciplarna:disciplarnas
+548660r5<substantiv>disciplin:disciplin:disciplins:disciplinen:disciplinens:discipliner:discipliners:disciplinerna:disciplinernas
+CUSTOM: y y disciplin
+579523r3<adjektiv>disciplinarisk:disciplinarisk:disciplinariskt:disciplinariska:disciplinariska::::
+964796r4<substantiv>disciplinbot:disciplinbot:disciplinbots:disciplinboten:disciplinbotens:disciplinböter:disciplinböters:disciplinböterna:disciplinböternas
+COMPOUND(548660, 557892): disciplin + böter, bot
+546416r5<verb>disciplinera:disciplinera:disciplinerade:disciplinerat:disciplinerar:disciplinera:disciplineras:disciplinerades:disciplinerats:disciplineras:disciplinerad:disciplinerat:disciplinerade:disciplinerande:
+661617r3<adjektiv>disciplinerad:disciplinerad:disciplinerat:disciplinerade:disciplinerade:!:!:!:
+753444r3<substantiv>disciplinering:disciplinering:disciplinerings:disciplineringen:disciplineringens::::
+661618r3<adjektiv>disciplinär:disciplinär:disciplinärt:disciplinära:disciplinära:!:!:!:
+661619r4<substantiv>discjockey:discjockey:discjockeys:discjockeyn:discjockeyns:discjockeyer:discjockeyers:discjockeyerna:discjockeyernas
+612432r11<substantiv>disco:disco:discos:discot:discots:discon:discons:discona:disconas
+CUSTOM: y y disco
+947422r4<substantiv>discobeat:discobeat:discobeats:discobeatet:discobeatets:discobeats:discobeats:discobeatsen:discobeatsens
+COMPOUND(612432, 947074): disco + beat
+682035r6<substantiv>discodans:discodans:discodans:discodansen:discodansens:discodanser:discodansers:discodanserna:discodansernas
+COMPOUND(612432, 548569): disco + dans
+CUSTOM: y y discodans
+950907r3<substantiv>discodänga:discodänga:discodängas:discodängan:discodängans:discodängor:discodängors:discodängorna:discodängornas
+947555r4<substantiv>discoera:discoera:discoeras:discoeran:discoerans::::
+COMPOUND(612432, 557283): disco + era
+953678r4<substantiv>discofunk:discofunk:discofunks:discofunken:discofunkens:!:!:!:!
+COMPOUND(612432, 628038): disco + funk
+947567r4<substantiv>discohit:discohit:discohits:discohitten:discohittens:discohittar, discohits:discohittars, discohits:discohittarna, discohitsen:discohittarnas, discohitsens
+COMPOUND(612432, 936538): disco + hit
+947579r4<substantiv>discolåt:discolåt:discolåts:discolåten:discolåtens:discolåtar:discolåtars:discolåtarna:discolåtarnas
+COMPOUND(612432, 551711): disco + låt
+947589r4<substantiv>discopop:discopop:discopops:discopopen, discopoppen:discopopens, discopoppens:!:!:!:!
+COMPOUND(612432, 624291): disco + pop
+CUSTOM: y y discopop
+753448r3<substantiv>disharmoni:disharmoni:disharmonis:disharmonin:disharmonins:disharmonier:disharmoniers:disharmonierna:disharmoniernas
+586476r3<verb>disharmoniera:disharmoniera:disharmonierade:disharmonierat:disharmonierar:disharmoniera:::::::::
+579526r4<adjektiv>disharmonisk:disharmonisk:disharmoniskt:disharmoniska:disharmoniska::::disharmoniske
+571857r4<adjektiv>disig:disig:disigt:disiga:disiga:disigare:disigast:disigaste:
+763054r3<adjektiv>disjunkt:disjunkt:disjunkt:disjunkta:disjunkta::::
+863226r3<substantiv>disjunktion:disjunktion:disjunktions:disjunktionen:disjunktionens:disjunktioner:disjunktioners:disjunktionerna:disjunktionernas
+689285r3<adjektiv>disjunktiv:disjunktiv:disjunktivt:disjunktiva:disjunktiva::::
+559465r36<substantiv>disk:disk:disks:disken:diskens:diskar:diskars:diskarna:diskarnas
+CUSTOM: y n disk
+546417r6<verb>diska:diska:diskade:diskat:diskar:diska:diskas:diskades:diskats:diskas:diskad:diskat:diskade:diskande:
+618240r4<substantiv>diskant:diskant:diskants:diskanten:diskantens:diskanter:diskanters:diskanterna:diskanternas
+CUSTOM: y y diskant
+944387r4<substantiv>diskantklav:diskantklav:diskantklavs:diskantklaven:diskantklavens:diskantklaver:diskantklavers:diskantklaverna:diskantklavernas
+COMPOUND(618240, 646225): diskant + klav
+615186r3<substantiv>diskare:diskare:diskares:diskaren:diskarens:diskare:diskares:diskarna:diskarnas
+CUSTOM: y y diskar
+661627r3<substantiv>diskbalja:diskbalja:diskbaljas:diskbaljan:diskbaljans:diskbaljor:diskbaljors:diskbaljorna:diskbaljornas
+599799r3<substantiv>diskborste:diskborste:diskborstes:diskborsten:diskborstens:diskborstar:diskborstars:diskborstarna:diskborstarnas
+689286r3<substantiv>diskbråck:diskbråck:diskbråcks:diskbråcket:diskbråckets::::
+598175r3<substantiv>diskbänk:diskbänk:diskbänks:diskbänken:diskbänkens:diskbänkar:diskbänkars:diskbänkarna:diskbänkarnas
+CUSTOM: y y diskbänks
+974697r3<substantiv>diskerska:diskerska:diskerskas:diskerskan:diskerskans:diskerskor:diskerskors:diskerskorna:diskerskornas
+618246r3<substantiv>diskett:diskett:disketts:disketten:diskettens:disketter:disketters:disketterna:disketternas
+CUSTOM: y y diskett
+661623r3<substantiv>diskettenhet:diskettenhet:diskettenhets:diskettenheten:diskettenhetens:diskettenheter:diskettenheters:diskettenheterna:diskettenheternas
+CUSTOM: y y diskettenhets
+661635r3<substantiv>diskettstation:diskettstation:diskettstations:diskettstationen:diskettstationens:diskettstationer:diskettstationers:diskettstationerna:diskettstationernas
+CUSTOM: y y diskettstations
+661624r4<substantiv>diskho:diskho:diskhos:diskhon:diskhons:diskhoar:diskhoars:diskhoarna:diskhoarnas
+COMPOUND(559465, 557668): disk + ho
+689290r4<substantiv>diskjockey:diskjockey:diskjockeys:diskjockeyn:diskjockeyns:diskjockeyer:diskjockeyers:diskjockeyerna:diskjockeyernas
+COMPOUND(559465, 638161): disk + jockey
+548662r3<substantiv>diskmaskin:diskmaskin:diskmaskins:diskmaskinen:diskmaskinens:diskmaskiner:diskmaskiners:diskmaskinerna:diskmaskinernas
+661643r4<substantiv>diskmedel:diskmedel:diskmedels:diskmedlet:diskmedlets:diskmedel:diskmedels:diskmedlen:diskmedlens
+COMPOUND(559465, 560532): disk + medel
+661626r3<substantiv>diskning:diskning:disknings:diskningen:diskningens:diskningar:diskningars:diskningarna:diskningarnas
+CUSTOM: y y disknings
+612440r17<substantiv>disko:disko:diskos:diskot:diskots:diskon:diskons:diskona:diskonas
+947446r4<substantiv>diskoband:diskoband:diskobands:diskobandet:diskobandets:diskoband:diskobands:diskobanden:diskobandens
+COMPOUND(612440, 552220): disko + band
+947430r4<substantiv>diskobeat:diskobeat:diskobeats:diskobeatet:diskobeatets:diskobeats:diskobeats:diskobeatsen:diskobeatsens
+COMPOUND(612440, 947074): disko + beat
+947438r4<substantiv>diskodans:diskodans:diskodans:diskodansen:diskodansens:diskodanser:diskodansers:diskodanserna:diskodansernas
+COMPOUND(612440, 548569): disko + dans
+CUSTOM: y y diskodans
+947454r4<substantiv>diskodunk:diskodunk:diskodunks:diskodunket:diskodunkets::::
+COMPOUND(612440, 941469): disko + dunk
+947561r4<substantiv>diskoera:diskoera:diskoeras:diskoeran:diskoerans::::
+COMPOUND(612440, 557283): disko + era
+863234r3<substantiv>diskofil:diskofil:diskofils:diskofilen:diskofilens:diskofiler:diskofilers:diskofilerna:diskofilernas
+947460r4<substantiv>diskogolv:diskogolv:diskogolvs:diskogolvet:diskogolvets:diskogolv:diskogolvs:diskogolven:diskogolvens
+COMPOUND(612440, 552446): disko + golv
+947518r3<substantiv>diskografi:diskografi:diskografis:diskografin:diskografins:diskografier:diskografiers:diskografierna:diskografiernas
+947468r4<substantiv>diskokula:diskokula:diskokulas:diskokulan:diskokulans:diskokulor:diskokulors:diskokulorna:diskokulornas
+COMPOUND(612440, 559858): disko + kula
+947478r4<substantiv>diskokultur:diskokultur:diskokulturs:diskokulturen:diskokulturens:diskokulturer:diskokulturers:diskokulturerna:diskokulturernas
+COMPOUND(612440, 549804): disko + kultur
+947488r4<substantiv>diskokväll:diskokväll:diskokvälls:diskokvällen:diskokvällens:diskokvällar:diskokvällars:diskokvällarna:diskokvällarnas
+COMPOUND(612440, 551653): disko + kväll
+947498r4<substantiv>diskoljus:diskoljus:diskoljus:diskoljuset:diskoljusets:diskoljus:diskoljus:diskoljusen:diskoljusens
+COMPOUND(612440, 552670): disko + ljus
+947505r4<substantiv>diskolåt:diskolåt:diskolåts:diskolåten:diskolåtens:diskolåtar:diskolåtars:diskolåtarna:diskolåtarnas
+COMPOUND(612440, 551711): disko + låt
+947514r4<substantiv>diskomusik:diskomusik:diskomusiks:diskomusiken:diskomusikens::::
+COMPOUND(612440, 550058): disko + musik
+585513r5<verb>diskontera:diskontera:diskonterade:diskonterat:diskonterar:diskontera:diskonteras:diskonterades:diskonterats:diskonteras:diskonterad:diskonterat:diskonterade:diskonterande:
+569010r3<adjektiv>diskonterbar:diskonterbar:diskonterbart:diskonterbara:diskonterbara::::
+596644r3<substantiv>diskontering:diskontering:diskonterings:diskonteringen:diskonteringens:diskonteringar:diskonteringars:diskonteringarna:diskonteringarnas
+CUSTOM: y y diskonterings
+565694r3<adjektiv>diskontinuerlig:diskontinuerlig:diskontinuerligt:diskontinuerliga:diskontinuerliga::::
+763698r3<substantiv>diskontinuitet:diskontinuitet:diskontinuitets:diskontinuiteten:diskontinuitetens:diskontinuiteter:diskontinuiteters:diskontinuiteterna:diskontinuiteternas
+612448r4<substantiv>diskonto:diskonto:diskontos:diskontot:diskontots:diskonton:diskontons:diskontona:diskontonas
+CUSTOM: y y diskonto
+596652r4<substantiv>diskontohöjning:diskontohöjning:diskontohöjnings:diskontohöjningen:diskontohöjningens:diskontohöjningar:diskontohöjningars:diskontohöjningarna:diskontohöjningarnas
+COMPOUND(612448, 644432): diskonto + höjning
+CUSTOM: y y diskontohöjnings
+596660r3<substantiv>diskontosänkning:diskontosänkning:diskontosänknings:diskontosänkningen:diskontosänkningens:diskontosänkningar:diskontosänkningars:diskontosänkningarna:diskontosänkningarnas
+CUSTOM: y y diskontosänknings
+766781r3<substantiv>diskontör:diskontör:diskontörs:diskontören:diskontörens:diskontörer:diskontörers:diskontörerna:diskontörernas
+947527r4<substantiv>diskopop:diskopop:diskopops:diskopopen, diskopoppen:diskopopens, diskopoppens:!:!:!:!
+COMPOUND(612440, 624291): disko + pop
+CUSTOM: y y diskopop
+787508r3<substantiv>diskordans:diskordans:diskordans:diskordansen:diskordansens:diskordanser:diskordansers:diskordanserna:diskordansernas
+863243r3<adjektiv>diskordant:diskordant:diskordant:diskordanta:diskordanta::::
+947545r4<substantiv>diskorytm:diskorytm:diskorytms:diskorytmen:diskorytmens:diskorytmer:diskorytmers:diskorytmerna:diskorytmernas
+COMPOUND(612440, 550425): disko + rytm
+552317r4<substantiv>diskotek:diskotek:diskoteks:diskoteket:diskotekets:diskotek:diskoteks:diskoteken:diskotekens
+CUSTOM: y y diskoteks
+947535r4<substantiv>diskotekskö:diskotekskö:diskotekskös:diskotekskön:diskoteksköns:diskoteksköer:diskoteksköers:diskoteksköerna:diskoteksköernas
+COMPOUND(552317, 557680): diskotek + kö
+586480r4<verb>diskreditera:diskreditera:diskrediterade:diskrediterat:diskrediterar:diskreditera:diskrediteras:diskrediterades:diskrediterats:diskrediteras:diskrediterad:diskrediterat:diskrediterade:diskrediterande:
+548670r3<substantiv>diskrepans:diskrepans:diskrepans:diskrepansen:diskrepansens:diskrepanser:diskrepansers:diskrepanserna:diskrepansernas
+571098r4<adjektiv>diskret:diskret:diskret:diskreta:diskreta:diskretare:diskretast:diskretaste:diskrete
+661649r3<substantiv>diskretion:diskretion:diskretions:diskretionen:diskretionens::::
+CUSTOM: y y diskretions
+661651r3<substantiv>diskriminant:diskriminant:diskriminants:diskriminanten:diskriminantens:diskriminanter:diskriminanters:diskriminanterna:diskriminanternas
+CUSTOM: y y diskriminant
+546418r4<verb>diskriminera:diskriminera:diskriminerade:diskriminerat:diskriminerar:diskriminera:diskrimineras:diskriminerades:diskriminerats:diskrimineras:diskriminerad:diskriminerat:diskriminerade::
+689296r3<adjektiv>diskriminerande:diskriminerande:diskriminerande:diskriminerande:diskriminerande:!:!:!:
+637034r6<substantiv>diskriminering:diskriminering:diskriminerings:diskrimineringen:diskrimineringens:diskrimineringar:diskrimineringars:diskrimineringarna:diskrimineringarnas
+CUSTOM: y y diskriminerings +diskriminerings
+661652r4<substantiv>disktrasa:disktrasa:disktrasas:disktrasan:disktrasans:disktrasor:disktrasors:disktrasorna:disktrasornas
+COMPOUND(559465, 556499): disk + trasa
+589031r3<verb>diskulpera:diskulpera:diskulperade:diskulperat:diskulperar:diskulpera:::::::::
+548671r6<substantiv>diskurs:diskurs:diskurs:diskursen:diskursens:diskurser:diskursers:diskurserna:diskursernas
+CUSTOM: y y diskurs
+943127r4<substantiv>diskursanalys:diskursanalys:diskursanalys:diskursanalysen:diskursanalysens:diskursanalyser:diskursanalysers:diskursanalyserna:diskursanalysernas
+COMPOUND(548671, 548192): diskurs + analys
+753457r3<adjektiv>diskursiv:diskursiv:diskursivt:diskursiva:diskursiva:!:!:!:
+943146r4<substantiv>diskursordning:diskursordning:diskursordnings:diskursordningen:diskursordningens:diskursordningar:diskursordningars:diskursordningarna:diskursordningarnas
+COMPOUND(548671, 597379): diskurs + ordning
+943136r4<substantiv>diskursproduktion:diskursproduktion:diskursproduktions:diskursproduktionen:diskursproduktionens:diskursproduktioner:diskursproduktioners:diskursproduktionerna:diskursproduktionernas
+COMPOUND(548671, 603206): diskurs + produktion
+598183r15<substantiv>diskus:diskus:diskus:diskusen:diskusens:diskusar:diskusars:diskusarna:diskusarnas
+CUSTOM: y n
+925570r15<substantiv>diskuselit:diskuselit:diskuselits:diskuseliten:diskuselitens:diskuseliter:diskuseliters:diskuseliterna:diskuseliternas
+COMPOUND(598183, 625275): diskus + elit
+971629r4<substantiv>diskusfinal:diskusfinal:diskusfinals:diskusfinalen:diskusfinalens:diskusfinaler:diskusfinalers:diskusfinalerna:diskusfinalernas
+COMPOUND(598183, 548926): diskus + final
+925474r15<substantiv>diskusfisk:diskusfisk:diskusfisks:diskusfisken:diskusfiskens:diskusfiskar:diskusfiskars:diskusfiskarna:diskusfiskarnas
+COMPOUND(598183, 551149): diskus + fisk
+606960r3<substantiv>diskuskast:diskuskast:diskuskasts:diskuskastet:diskuskastets:diskuskast:diskuskasts:diskuskasten:diskuskastens
+609433r3<substantiv>diskuskastare:diskuskastare:diskuskastares:diskuskastaren:diskuskastarens:diskuskastare:diskuskastares:diskuskastarna:diskuskastarnas
+CUSTOM: y y diskuskastar
+971639r4<substantiv>diskuskasterska:diskuskasterska:diskuskasterskas:diskuskasterskan:diskuskasterskans:diskuskasterskor:diskuskasterskors:diskuskasterskorna:diskuskasterskornas
+COMPOUND(598183, 971640): diskus + kasterska
+971656r4<substantiv>diskuskastning:diskuskastning:diskuskastnings:diskuskastningen:diskuskastningens:diskuskastningar:diskuskastningars:diskuskastningarna:diskuskastningarnas
+COMPOUND(598183, 776447): diskus + kastning
+971665r4<substantiv>diskuskval:diskuskval:diskuskvals:diskuskvalet:diskuskvalets:diskuskval:diskuskvals:diskuskvalen:diskuskvalens
+COMPOU

@@ -1,0 +1,592 @@
+s:stygn:stygns:stygnen:stygnens
+946224r3<verb>styla:styla:stylade:stylat:stylar:styla:stylas:stylades:stylats:stylas:stylad:stylat:stylade:stylande:
+876778r4<substantiv>styling:styling:stylings:stylingen:stylingens:stylingar:stylingars:stylingarna:stylingarnas
+DEFINITION 1: 1. Även stajling\
+2. Yrkesmässigt arbete med moderiktig-\
+   het i reklamsammanhang.  
+876768r4<substantiv>stylist:stylist:stylists:stylisten:stylistens:stylister:stylisters:stylisterna:stylisternas
+DEFINITION 1: 1. Även stajlist\
+2. Person som arbetar med styling
+747167r3<substantiv>stylta:stylta:styltas:styltan:styltans:styltor:styltors:styltorna:styltornas
+547776r3<verb>stylta:stylta:styltade:styltat:styltar:stylta:::::::::
+941614r3<adjektiv>styltig:styltig:styltigt:styltiga:styltiga:styltigare:styltigast:styltigaste:::::::::
+986929r3<substantiv>styltlöpare:styltlöpare:styltlöpares:styltlöparen:styltlöparens:styltlöpare:styltlöpares:styltlöparna:styltlöparnas
+547777r4<verb>stympa:stympa:stympade:stympat:stympar:stympa:stympas:stympades:stympats:stympas:stympad:stympat:stympade::
+821899r3<substantiv>stympare:stympare:stympares:stymparen:stymparens:stympare:stympares:stymparna:stymparnas
+745405r4<substantiv>stympning:stympning:stympnings:stympningen:stympningens:stympningar:stympningars:stympningarna:stympningarnas
+630540r10<substantiv>styng:styng:styngs:stynget:styngets:styng:styngs:styngen:styngens
+DEFINITION 1: Sting eller stick.
+DEFINITION 2: En insekt
+DEFINITION 3: Alternativ stavning av stygn
+585860r18<verb>styra:styra:styrde:styrt:styr:styr:styras:styrdes:styrts:styrs:styrd:styrt:styrda:styrande:
+BASEWORDS: styr
+CUSTOM: y y styr
+697179r3<substantiv>styrande:styrande:styrandes:styrandet:styrandets::::
+570156r3<adjektiv>styrbar:styrbar:styrbart:styrbara:styrbara::::
+592247r5<substantiv>styrbord:styrbord:styrbords:!:!:!:!:!:!
+DEFINITION 1: [ Ett fartygs ] högersida
+CUSTOM: y y styrbords
+592250r4<adverb>styrbord:styrbord
+DEFINITION 1: höger [ på/från ett fartyg ]
+852923r3<substantiv>styrbordsgir:styrbordsgir:styrbordsgirs:styrbordsgiren:styrbordsgirens:styrbordsgirar:styrbordsgirars:styrbordsgirarna:styrbordsgirarnas
+852931r3<substantiv>styrdon:styrdon:styrdons:styrdonet:styrdonets:styrdon:styrdons:styrdonen:styrdonens
+626589r6<substantiv>styre:styre:styres:styret:styrets:styren:styrens:styrena:styrenas
+612018r11<substantiv>styrelse:styrelse:styrelses:styrelsen:styrelsens:styrelser:styrelsers:styrelserna:styrelsernas
+CUSTOM: y y styrelse +styrelse
+670425r4<substantiv>styrelseledamot:styrelseledamot:styrelseledamots:styrelseledamoten:styrelseledamotens:styrelseledamöter:styrelseledamöters:styrelseledamöterna:styrelseledamöternas
+COMPOUND(612018, 556258): styrelse + ledamot
+670426r5<substantiv>styrelsemöte:styrelsemöte:styrelsemötes:styrelsemötet:styrelsemötets:styrelsemöten:styrelsemötens:styrelsemötena:styrelsemötenas
+COMPOUND(612018, 560760): styrelse + möte
+CUSTOM: y y styrelsemötes
+788292r4<substantiv>styrelsemötesprotokoll:styrelsemötesprotokoll:styrelsemötesprotokolls:styrelsemötesprotokollet:styrelsemötesprotokollets:styrelsemötesprotokoll:styrelsemötesprotokolls:styrelsemötesprotokollen:styrelsemötesprotokollens
+COMPOUND(670426, 552797): styrelsemöte + protokoll
+670428r4<substantiv>styrelsesammanträde:styrelsesammanträde:styrelsesammanträdes:styrelsesammanträdet:styrelsesammanträdets:styrelsesammanträden:styrelsesammanträdens:styrelsesammanträdena:styrelsesammanträdenas
+COMPOUND(612018, 664233): styrelse + sammanträde
+784379r3<substantiv>styren:styren:styrens:styrenet:styrenets:!:!:!:!
+795307r3<adjektiv>styrenerad:styrenerad:styrenerat:styrenerade:styrenerade:!:!:!:
+670434r4<substantiv>styrenhet:styrenhet:styrenhets:styrenheten:styrenhetens:styrenheter:styrenheters:styrenheterna:styrenheternas
+COMPOUND(585860, 555119): styra + enhet
+CUSTOM: y y styrenhets
+747174r4<substantiv>styresman:styresman:styresmans:styresmannen:styresmannens:styresmän:styresmäns:styresmännen:styresmännens
+COMPOUND(585860, 557796): styra + man
+720247r4<substantiv>styrgrupp:styrgrupp:styrgrupps:styrgruppen:styrgruppens:styrgrupper:styrgruppers:styrgrupperna:styrgruppernas
+595427r12<substantiv>styrka:styrka:styrkas:styrkan:styrkans:styrkor:styrkors:styrkorna:styrkornas
+CUSTOM: y y styrke
+649306r5<verb>styrka:styrka:styrkte:styrkt:styrker:styrk:styrkas:styrktes:styrkts:styrks, styrkes:styrkt:styrkt:styrkta:styrkande:
+747182r4<substantiv>styrkebesked:styrkebesked:styrkebeskeds:styrkebeskedet:styrkebeskedets:styrkebesked:styrkebeskeds:styrkebeskeden:styrkebeskedens
+COMPOUND(595427, 552235): styrka + besked
+584024r3<adjektiv>styrkeisotropisk:styrkeisotropisk:styrkeisotropiskt:styrkeisotropiska:styrkeisotropiska::::
+747183r3<verb>styrketräna::::::::::::::
+COMPOUND(595427, 547877): styrka + träna
+670436r3<substantiv>styrketår:styrketår:styrketårs:styrketåren:styrketårens:styrketårar:styrketårars:styrketårarna:styrketårarnas
+577174r3<adjektiv>styrlastig:styrlastig:styrlastigt:styrlastiga:styrlastiga::::
+780030r6<substantiv>styrman:styrman:styrmans:styrmannen:styrmannens:styrmän:styrmäns:styrmännen:styrmännens
+COMPOUND(585860, 557796): styra + man
+CUSTOM: y y styrmans
+670444r4<substantiv>styrmedel:styrmedel:styrmedels:styrmedlet:styrmedlets:styrmedel:styrmedels:styrmedlen:styrmedlens
+COMPOUND(585860, 560532): styra + medel
+631911r9<substantiv>styrning:styrning:styrnings:styrningen:styrningens:styrningar:styrningars:styrningarna:styrningarnas
+CUSTOM: y y styrnings +styrnings
+962979r5<substantiv>styrpulpet:styrpulpet:styrpulpets:styrpulpeten:styrpulpetens:styrpulpeter:styrpulpeters:styrpulpeterna:styrpulpeternas
+COMPOUND(585860, 731374): styra + pulpet
+962989r4<substantiv>styrpulpetbåt:styrpulpetbåt:styrpulpetbåts:styrpulpetbåten:styrpulpetbåtens:styrpulpetbåtar:styrpulpetbåtars:styrpulpetbåtarna:styrpulpetbåtarnas
+COMPOUND(962979, 550993): styrpulpet + båt
+936495r4<substantiv>styrränta:styrränta:styrräntas:styrräntan:styrräntans:styrräntor:styrräntors:styrräntorna:styrräntornas
+COMPOUND(585860, 595060): styra + ränta
+747184r3<substantiv>styrsel:styrsel:styrsels:styrseln:styrselns::::
+565347r3<adjektiv>styrsellös:styrsellös:styrsellöst:styrsellösa:styrsellösa::::
+670446r4<substantiv>styrsignal:styrsignal:styrsignals:styrsignalen:styrsignalens:styrsignaler:styrsignalers:styrsignalerna:styrsignalernas
+COMPOUND(585860, 550490): styra + signal
+945904r4<substantiv>styrstag:styrstag:styrstags:styrstaget:styrstagets:styrstag:styrstags:styrstagen:styrstagens
+COMPOUND(585860, 633452): styra + stag
+861291r4<substantiv>styrstav:styrstav:styrstavs:styrstaven:styrstavens:styrstavar:styrstavars:styrstavarna:styrstavarnas
+COMPOUND(585860, 551932): styra + stav
+567917r3<adjektiv>styrströmskänslig:styrströmskänslig:styrströmskänsligt:styrströmskänsliga:styrströmskänsliga::::
+608170r3<substantiv>styrsystem:styrsystem:styrsystems:styrsystemet:styrsystemets:styrsystem:styrsystems:styrsystemen:styrsystemens
+895430r4<substantiv>styrtal:styrtal:styrtals:styrtalet:styrtalets:styrtal:styrtals:styrtalen:styrtalens
+COMPOUND(585860, 553029): styra + tal
+CUSTOM: y n n
+919605r4<substantiv>styråra:styråra:styråras:styråran:styrårans:styråror:styrårors:styrårorna:styrårornas
+COMPOUND(585860, 595842): styra + åra
+563198r8<adjektiv>styv:styv:styvt:styva:styva:styvare:styvast:styvaste:
+CUSTOM: y n
+747198r3<substantiv>styvbarn:styvbarn:styvbarns:styvbarnet:styvbarnets:styvbarn:styvbarns:styvbarnen:styvbarnens
+747204r3<adjektiv>styvbent:styvbent:styvbent:styvbenta:styvbenta::::styvbente
+670450r5<substantiv>styvbroder, styvbror:styvbroder, styvbror:styvbroders, styvbrors:styvbrodern:styvbroderns:styvbröder:styvbröders:styvbröderna:styvbrödernas
+COMPOUND(563198, 555140): styv + bror, broder
+670459r4<substantiv>styvdotter:styvdotter:styvdotters:styvdottern:styvdotterns:styvdöttrar:styvdöttrars:styvdöttrarna:styvdöttrarnas
+COMPOUND(563198, 617523): styv + dotter
+747188r3<substantiv>styver:styver:styvers:styvern:styverns::::
+802905r3<substantiv>styvfamilj:styvfamilj:styvfamiljs:styvfamiljen:styvfamiljens:styvfamiljer:styvfamiljers:styvfamiljerna:styvfamiljernas
+670467r5<substantiv>styvfar, styvfader:styvfader, styvfar:styvfaders, styvfars:styvfadern:styvfaderns:styvfäder:styvfäders:styvfäderna:styvfädernas
+COMPOUND(563198, 558559): styv + far, fader
+747208r3<substantiv>styvförälder:styvförälder:styvförälders:styvföräldern:styvförälderns:styvföräldrar:styvföräldrars:styvföräldrarna:styvföräldrarnas
+747217r5<substantiv>styvhet:styvhet:styvhets:styvheten:styvhetens::::
+CUSTOM: y y styvhets
+747221r4<substantiv>styvhetsgrad:styvhetsgrad:styvhetsgrads:styvhetsgraden:styvhetsgradens:styvhetsgrader:styvhetsgraders:styvhetsgraderna:styvhetsgradernas
+COMPOUND(747217, 549117): styvhet + grad
+577177r3<adjektiv>styvhårig:styvhårig:styvhårigt:styvhåriga:styvhåriga::::
+940387r3<substantiv>styvmamma:styvmamma:styvmammas:styvmamman:styvmammans:styvmammor:styvmammors:styvmammorna:styvmammornas
+567920r3<adjektiv>styvmoderlig:styvmoderlig:styvmoderligt:styvmoderliga:styvmoderliga::::
+670476r5<substantiv>styvmor, styvmoder:styvmoder, styvmor:styvmoders, styvmors:styvmodern:styvmoderns:styvmödrar:styvmödrars:styvmödrarna:styvmödrarnas
+COMPOUND(563198, 556181): styv + mor, moder
+747222r3<substantiv>styvmorsviol:styvmorsviol:styvmorsviols:styvmorsviolen:styvmorsviolens:styvmorsvioler:styvmorsviolers:styvmorsviolerna:styvmorsviolernas
+670484r4<verb>styvna:styvna:styvnade:styvnat:styvnar:styvna::::::::styvnande:
+670481r3<adjektiv>styvnackad:styvnackad:styvnackat:styvnackade:styvnackade:!:!:!:
+670486r3<substantiv>styvnad:styvnad:styvnads:styvnaden:styvnadens::::
+919614r3<substantiv>styvpappa:styvpappa:styvpappas:styvpappan:styvpappans:styvpappor:styvpappors:styvpapporna:styvpappornas
+795310r3<adjektiv>styvsinnad:styvsinnad:styvsinnat:styvsinnade:styvsinnade:!:!:!:
+747231r3<substantiv>styvson:styvson:styvsons:styvsonen:styvsonens:styvsöner:styvsöners:styvsönerna:styvsönernas
+577180r3<adjektiv>styvstråig:styvstråig:styvstråigt:styvstråiga:styvstråiga::::
+802913r3<substantiv>styvsyskon:styvsyskon:styvsyskons:styvsyskonet:styvsyskonets:styvsyskon:styvsyskons:styvsyskonen:styvsyskonens
+747190r3<substantiv>styvsyster:styvsyster:styvsysters:styvsystern:styvsysterns:styvsystrar:styvsystrars:styvsystrarna:styvsystrarnas
+555206r14<verb>stå:stå:stod:stått:står:stå:!:!:!:!::::stående:stode
+CUSTOM: y n !stode %stode
+947933r3<substantiv>ståbas:ståbas:ståbas:ståbasen:ståbasens:ståbasar:ståbasars:ståbasarna:ståbasarnas
+CUSTOM: y n
+947941r3<substantiv>ståbasist:ståbasist:ståbasists:ståbasisten:ståbasistens:ståbasister:ståbasisters:ståbasisterna:ståbasisternas
+CUSTOM: y n
+591615r4<adjektiv>stående:stående:stående:stående:stående:!:!:!:
+726222r3<substantiv>ståhej:ståhej:ståhejs:ståhejet:ståhejets::::
+973321r3<egennamn>Ståhl:Ståhl:Ståhls
+955217r3<substantiv>ståhöjd:ståhöjd:ståhöjds:ståhöjden:ståhöjdens:ståhöjder:ståhöjders:ståhöjderna:ståhöjdernas
+619747r17<substantiv>stål:stål:ståls:stålet:stålets:stål:ståls:stålen:stålens
+CUSTOM: y y stål
+627797r3<substantiv>stålar:!:!:!:!:stålar:stålars:stålarna:stålarnas
+795313r3<adjektiv>stålartad:stålartad:stålartat:stålartade:stålartade:!:!:!:
+932879r4<substantiv>stålbad:stålbad:stålbads:stålbadet:stålbadets:stålbad:stålbads:stålbaden:stålbadens
+COMPOUND(619747, 552219): stål + bad
+551960r3<substantiv>stålbalk:stålbalk:stålbalks:stålbalken:stålbalkens:stålbalkar:stålbalkars:stålbalkarna:stålbalkarnas
+795316r3<adjektiv>stålbandad:stålbandad:stålbandat:stålbandade:stålbandade:!:!:!:
+795319r3<adjektiv>stålbandsarmerad:stålbandsarmerad:stålbandsarmerat:stålbandsarmerade:stålbandsarmerade:!:!:!:
+802112r3<adjektiv>stålblå:stålblå:stålblått:stålblåa:stålblåa::::
+795322r3<adjektiv>stålborstad:stålborstad:stålborstat:stålborstade:stålborstade:!:!:!:
+877483r4<substantiv>stålbur:stålbur:stålburs:stålburen:stålburens:stålburar:stålburars:stålburarna:stålburarnas
+COMPOUND(619747, 550979): stål + bur
+CUSTOM: y n n
+766340r3<adjektiv>stålbågad:stålbågad:stålbågat:stålbågade:stålbågade:!:!:!:
+953137r4<substantiv>stålbård:stålbård:stålbårds:stålbården:stålbårdens:stålbårder:stålbårders:stålbårderna:stålbårdernas
+COMPOUND(619747, 548505): stål + bård
+945458r4<substantiv>ståldank:ståldank:ståldanks:ståldanken:ståldankens:ståldankar:ståldankars:ståldankarna:ståldankarnas
+COMPOUND(619747, 592905): stål + dank
+551962r3<substantiv>ståldörr:ståldörr:ståldörrs:ståldörren:ståldörrens:ståldörrar:ståldörrars:ståldörrarna:ståldörrarnas
+795325r3<adjektiv>stålfärgad:stålfärgad:stålfärgat:stålfärgade:stålfärgade:!:!:!:
+795328r3<adjektiv>stålglättad:stålglättad:stålglättat:stålglättade:stålglättade:!:!:!:
+802115r3<adjektiv>stålgrå:stålgrå:stålgrått:stålgråa:stålgråa::::
+800431r3<adjektiv>stålhård:stålhård:stålhårt:stålhårda:stålhårda::::
+795331r3<adjektiv>stålinkapslad:stålinkapslad:stålinkapslat:stålinkapslade:stålinkapslade:!:!:!:
+795334r3<adjektiv>stålkantad:stålkantad:stålkantat:stålkantade:stålkantade:!:!:!:
+795337r3<adjektiv>stålkapslad:stålkapslad:stålkapslat:stålkapslade:stålkapslade:!:!:!:
+801681r3<adjektiv>stålklädd:stålklädd:stålklätt:stålklädda:stålklädda::::
+932885r4<substantiv>stålman:stålman:stålmans:stålmannen:stålmannens:stålmän:stålmäns:stålmännen:stålmännens
+COMPOUND(619747, 557796): stål + man
+766343r3<adjektiv>stålmantlad:stålmantlad:stålmantlat:stålmantlade:stålmantlade:!:!:!:
+637087r6<substantiv>stålräls:stålräls:stålräls:stålrälsen:stålrälsens:stålrälsar:stålrälsars:stålrälsarna:stålrälsarnas
+COMPOUND(619747, 556470): stål + räls
+CUSTOM: y n n
+932893r4<substantiv>stålrör:stålrör:stålrörs:stålröret:stålrörets:stålrör:stålrörs:stålrören:stålrörens
+COMPOUND(619747, 552860): stål + rör
+801684r3<adjektiv>stålskodd:stålskodd:stålskott:stålskodda:stålskodda::::
+795340r3<adjektiv>stålslipad:stålslipad:stålslipat:stålslipade:stålslipade:!:!:!:
+608176r3<substantiv>stålspett:stålspett:stålspetts:stålspettet:stålspettets:stålspett:stålspetts:stålspetten:stålspettens
+670490r4<verb>stålsätta:stålsätta:stålsatte:stålsatt:stålsätter:stålsätt:::::stålsatt:stålsatt:stålsatta::
+COMPOUND(619747, 593414): stål + sätta
+598942r3<substantiv>ståltråd:ståltråd:ståltråds:ståltråden:ståltrådens:ståltrådar:ståltrådars:ståltrådarna:ståltrådarnas
+CUSTOM: y y ståltråds
+819252r3<substantiv>stålull:stålull:stålulls:stålullen:stålullens::::
+608182r3<substantiv>stålverk:stålverk:stålverks:stålverket:stålverkets:stålverk:stålverks:stålverken:stålverkens
+CUSTOM: y y stålverks
+552996r5<substantiv>stånd:stånd:stånds:ståndet:ståndets:stånd:stånds:stånden:ståndens
+577183r4<adjektiv>ståndaktig:ståndaktig:ståndaktigt:ståndaktiga:ståndaktiga::::ståndaktige
+670495r3<substantiv>ståndaktighet:ståndaktighet:ståndaktighets:ståndaktigheten:ståndaktighetens::::
+CUSTOM: y y ståndaktighets
+747240r3<substantiv>ståndare:ståndare:ståndares:ståndaren:ståndarens:ståndare:ståndares:ståndarna:ståndarnas
+986935r3<substantiv>ståndarknapp:ståndarknapp:ståndarknapps:ståndarknappen:ståndarknappens:ståndarknappar:ståndarknappars:ståndarknapparna:ståndarknapparnas
+986943r3<substantiv>ståndarsträng:ståndarsträng:ståndarsträngs:ståndarsträngen:ståndarsträngens:ståndarsträngar:ståndarsträngars:ståndarsträngarna:ståndarsträngarnas
+986951r3<substantiv>ståndkrage:ståndkrage:ståndkrages:ståndkragen:ståndkragens:ståndkragar:ståndkragars:ståndkragarna:ståndkragarnas
+986959r3<substantiv>ståndort:ståndort:ståndorts:ståndorten:ståndortens:ståndorter:ståndorters:ståndorterna:ståndorternas
+603741r3<substantiv>ståndpunkt:ståndpunkt:ståndpunkts:ståndpunkten:ståndpunktens:ståndpunkter:ståndpunkters:ståndpunkterna:ståndpunkternas
+CUSTOM: y y ståndpunkts
+986967r3<substantiv>ståndrätt:ståndrätt:ståndrätts:ståndrätten:ståndrättens:ståndrätter:ståndrätters:ståndrätterna:ståndrätternas
+986975r3<substantiv>ståndscirkulation:ståndscirkulation:ståndscirkulations:ståndscirkulationen:ståndscirkulationens::::
+986979r3<substantiv>ståndskall:ståndskall:ståndskalls:ståndskallet:ståndskallets::::
+577184r3<adjektiv>ståndsmässig:ståndsmässig:ståndsmässigt:ståndsmässiga:ståndsmässiga::::
+986983r3<substantiv>ståndsperson:ståndsperson:ståndspersons:ståndspersonen:ståndspersonens:ståndspersoner:ståndspersoners:ståndspersonerna:ståndspersonernas
+986991r3<substantiv>ståndsrepresentation:ståndsrepresentation:ståndsrepresentations:ståndsrepresentationen:ståndsrepresentationens::::
+954289r4<substantiv>ståndsriksdag:ståndsriksdag:ståndsriksdags:ståndsriksdagen:ståndsriksdagens:ståndsriksdagar:ståndsriksdagars:ståndsriksdagarna:ståndsriksdagarnas
+959970r4<substantiv>ståndssamhälle:ståndssamhälle:ståndssamhälles:ståndssamhället:ståndssamhällets:ståndssamhällen:ståndssamhällens:ståndssamhällena:ståndssamhällenas
+COMPOUND(552996, 612788): stånd + samhälle
+555363r19<substantiv>stång:stång:stångs:stången:stångens:stänger:stängers:stängerna:stängernas
+CUSTOM: y y stång +stångs
+547780r4<verb>stånga:stånga:stångade:stångat:stångar:stånga:stångas:stångades:stångats:stångas:stångad:stångat:stångade::
+639708r3<deponens>stångas:stångas:stångades:stångats:stångas:stångas
+958680r3<substantiv>stångjärn:stångjärn:stångjärns:stångjärnet:stångjärnets:stångjärn:stångjärns:stångjärnen:stångjärnens
+CUSTOM: y n stångjärns
+958674r3<substantiv>stångjärnshammare:stångjärnshammare:stångjärnshammares:stångjärnshammaren:stångjärnshammarens:stångjärnshammare:stångjärnshammares:stångjärnshammarna:stångjärnshammarnas
+CUSTOM: y n
+747246r4<substantiv>stångkorv:stångkorv:stångkorvs:stångkorven:stångkorvens:stångkorvar:stångkorvars:stångkorvarna:stångkorvarnas
+COMPOUND(555363, 551609): stång + korv
+795343r3<adjektiv>stångmanövrerad:stångmanövrerad:stångmanövrerat:stångmanövrerade:stångmanövrerade:!:!:!:
+747247r4<substantiv>stångpress:stångpress:stångpress:stångpressen:stångpressens:stångpressar:stångpressars:stångpressarna:stångpressarnas
+COMPOUND(555363, 559017): stång + press
+670496r4<substantiv>stånka:stånka:stånkas:stånkan:stånkans:stånkor:stånkors:stånkorna:stånkornas
+670498r3<verb>stånka:stånka:stånkade:stånkat:stånkar:stånka::::::::stånkande:
+670500r5<substantiv>ståplats:ståplats:ståplats:ståplatsen:ståplatsens:ståplatser:ståplatsers:ståplatserna:ståplatsernas
+COMPOUND(555206, 550210): stå + plats
+CUSTOM: y y ståplats
+747248r4<substantiv>ståplatsläktare:ståplatsläktare:ståplatsläktares:ståplatsläktaren:ståplatsläktarens:ståplatsläktare:ståplatsläktares:ståplatsläktarna:ståplatsläktarnas
+COMPOUND(670500, 643197): ståplats + läktare
+948004r3<substantiv>ståpäls:ståpäls:::::::
+CUSTOM: y n
+628846r3<substantiv>ståt:ståt:ståts:ståten:ståtens:!:!:!:!
+CUSTOM: y n
+626592r3<verb>ståta:ståta:ståtade:ståtat:ståtar:ståta:ståtas:ståtades:ståtats:ståtas::::ståtande:
+670507r3<substantiv>ståthållare:ståthållare:ståthållares:ståthållaren:ståthållarens:ståthållare:ståthållares:ståthållarna:ståthållarnas
+CUSTOM: y y ståthållar
+987000r3<substantiv>ståthållarskap:ståthållarskap:ståthållarskaps:ståthållarskapet:ståthållarskapets:ståthållarskap:ståthållarskaps:ståthållarskapen:ståthållarskapens
+567923r4<adjektiv>ståtlig:ståtlig:ståtligt:ståtliga:ståtliga:ståtligare:ståtligast:ståtligaste:ståtlige
+747249r3<substantiv>ståuppare:ståuppare:ståuppares:ståupparen:ståupparens:ståuppare:ståuppares:ståupparna:ståupparnas
+747255r3<substantiv>ståuppartist:ståuppartist:ståuppartists:ståuppartisten:ståuppartistens:ståuppartister:ståuppartisters:ståuppartisterna:ståuppartisternas
+947792r3<substantiv>ståuppkomik:ståuppkomik:ståuppkomiks:ståuppkomiken:ståuppkomikens::::
+747263r3<substantiv>ståuppkomiker:ståuppkomiker:ståuppkomikers:ståuppkomikern:ståuppkomikerns:ståuppkomiker:ståuppkomikers:ståuppkomikerna:ståuppkomikernas
+923362r3<interjektion>stä:stä
+CUSTOM: n n y
+631540r3<substantiv>städ:städ:städs:städet:städets:städ:städs:städen:städens
+585711r10<verb>städa:städa:städade:städat:städar:städa:städas:städades:städats:städas:städad:städat:städade:städande:
+CUSTOM: y y städ
+670515r3<adjektiv>städad:städad:städat:städade:städade:!:!:!:
+610124r3<substantiv>städare:städare:städares:städaren:städarens:städare:städares:städarna:städarnas
+CUSTOM: y y städar
+551965r3<substantiv>städdag:städdag:städdags:städdagen:städdagens:städdagar:städdagars:städdagarna:städdagarnas
+595432r4<substantiv>städerska:städerska:städerskas:städerskan:städerskans:städerskor:städerskors:städerskorna:städerskornas
+670516r4<substantiv>städfirma:städfirma:städfirmas:städfirman:städfirmans:städfirmor:städfirmors:städfirmorna:städfirmornas
+COMPOUND(585711, 631626): städa + firma
+670524r4<substantiv>städhjälp:städhjälp:städhjälps:städhjälpen:städhjälpens::::
+COMPOUND(585711, 560565): städa + hjälp
+636750r4<egennamn>Städjan:Städjan:Städjans
+DEFINITION 1: Fjäll i norra Dalarna. 
+670182r5<substantiv>städning:städning:städnings:städningen:städningens:städningar:städningars:städningarna:städningarnas
+CUSTOM: y y städnings
+670528r4<substantiv>städpatrull:städpatrull:städpatrulls:städpatrullen:städpatrullens:städpatruller:städpatrullers:städpatrullerna:städpatrullernas
+COMPOUND(585711, 550175): städa + patrull
+620815r3<adverb>städse:städse
+987006r3<adjektiv>städsegrön:städsegrön:städsegrönt:städsegröna:städsegröna::::::::::::
+670536r4<substantiv>städskrubb:städskrubb:städskrubbs:städskrubben:städskrubbens:städskrubbar:städskrubbars:städskrubbarna:städskrubbarnas
+COMPOUND(585711, 656737): städa + skrubb
+670544r4<substantiv>städskåp:städskåp:städskåps:städskåpet:städskåpets:städskåp:städskåps:städskåpen:städskåpens
+COMPOUND(585711, 552942): städa + skåp
+948329r3<verb>städsla:städsla:städslade:städslat:städslar:städsla:städslas:städslades:städslats:städslas:städslad:städslat:städslade:städslande:
+670550r7<substantiv>ställ:ställ:ställs:stället:ställets:ställ:ställs:ställen:ställens
+CUSTOM: y n
+585797r24<verb>ställa:ställa:ställde:ställt:ställer:ställ:ställas:ställdes:ställts:ställs:ställd:ställt:ställda::
+697183r3<substantiv>ställande:ställande:ställandes:ställandet:ställandets::::
+742144r3<substantiv>ställare:ställare:ställares:ställaren:ställarens:ställare:ställares:ställarna:ställarnas
+CUSTOM: y y +ställar
+570159r3<adjektiv>ställbar:ställbar:ställbart:ställbara:ställbara::::
+800434r3<adjektiv>ställd:ställd:ställt:ställda:ställda::::
+963789r3<substantiv>ställdon:ställdon:ställdons:ställdonet:ställdonets:ställdon:ställdons:ställdonen:ställdonens
+612918r12<substantiv>ställe:ställe:ställes:stället:ställets:ställen:ställens:ställena:ställenas
+707452r3<adjektiv>ställföreträdande:ställföreträdande:ställföreträdande:ställföreträdande:ställföreträdande:!:!:!:
+725254r3<substantiv>ställföreträdare:ställföreträdare:ställföreträdares:ställföreträdaren:ställföreträdarens:ställföreträdare:ställföreträdares:ställföreträdarna:ställföreträdarnas
+597732r13<substantiv>ställning:ställning:ställnings:ställningen:ställningens:ställningar:ställningars:ställningarna:ställningarnas
+CUSTOM: y y ställnings +ställnings
+722653r4<substantiv>ställningskrig:ställningskrig:ställningskrigs:ställningskriget:ställningskrigets:ställningskrig:ställningskrigs:ställningskrigen:ställningskrigens
+COMPOUND(597732, 552585): ställning + krig
+670551r4<substantiv>ställningstagande:ställningstagande:ställningstagandes:ställningstagandet:ställningstagandets:ställningstaganden:ställningstagandens:ställningstagandena:ställningstagandenas
+COMPOUND(597732, 670553): ställning + tagande
+729822r4<substantiv>ställtid:ställtid:ställtids:ställtiden:ställtidens:ställtider:ställtiders:ställtiderna:ställtidernas
+COMPOUND(670550, 550665): ställ + tid
+747269r3<substantiv>ställverk:ställverk:ställverks:ställverket:ställverkets:ställverk:ställverks:ställverken:ställverkens
+941452r3<adverb>ställvis:ställvis
+901231r3<substantiv>stäm:stäm:stäms:stämmen:stämmens:stämmar:stämmars:stämmarna:stämmarnas
+859165r2<substantiv>stämapparat::::::::
+670562r4<substantiv>stämband:stämband:stämbands:stämbandet:stämbandets:stämband:stämbands:stämbanden:stämbandens
+COMPOUND(595433, 552220): stämma + band
+CUSTOM: y y stämbands
+859109r4<substantiv>stämfördelning:stämfördelning:stämfördelnings:stämfördelningen:stämfördelningens:stämfördelningar:stämfördelningars:stämfördelningarna:stämfördelningarnas
+COMPOUND(595433, 617921): stämma + fördelning
+987009r3<substantiv>stämföring:stämföring:stämförings:stämföringen:stämföringens:stämföringar:stämföringars:stämföringarna:stämföringarnas
+747275r3<substantiv>stämgaffel:stämgaffel:stämgaffels:stämgaffeln:stämgaffelns:stämgafflar:stämgafflars:stämgafflarna:stämgafflarnas
+963795r3<substantiv>stämjärn:stämjärn:stämjärns:stämjärnet:stämjärnets:stämjärn:stämjärns:stämjärnen:stämjärnens
+987017r3<substantiv>stämledare:stämledare:stämledares:stämledaren:stämledarens:stämledare:stämledares:stämledarna:stämledarnas
+987023r3<substantiv>stämläpp:stämläpp:stämläpps:stämläppen:stämläppens:stämläppar:stämläppars:stämläpparna:stämläpparnas
+595433r18<substantiv>stämma:stämma:stämmas:stämman:stämmans:stämmor:stämmors:stämmorna:stämmornas
+CUSTOM: y y
+593409r13<verb>stämma:stämma:stämde:stämt:stämmer:stäm:stämmas:stämdes:stämts:stäms, stämmes:stämd:stämt:stämda:stämmande:
+859145r6<substantiv>stämmare:stämmare:stämmares:stämmaren:stämmarens:stämmare:stämmares:stämmarna:stämmarnas
+788087r4<substantiv>stämmobeslut:stämmobeslut:stämmobesluts:stämmobeslutet:stämmobeslutets:stämmobeslut:stämmobesluts:stämmobesluten:stämmobeslutens
+COMPOUND(595433, 552238): stämma + beslut
+894392r4<substantiv>stämmoombud:stämmoombud:stämmoombuds:stämmoombudet:stämmoombudets:stämmoombud:stämmoombuds:stämmoombuden:stämmoombudens
+COMPOUND(595433, 552728): stämma + ombud
+897821r4<substantiv>stämmoprotokoll:stämmoprotokoll:stämmoprotokolls:stämmoprotokollet:stämmoprotokollets:stämmoprotokoll:stämmoprotokolls:stämmoprotokollen:stämmoprotokollens
+COMPOUND(595433, 552797): stämma + protokoll
+665599r11<substantiv>stämning:stämning:stämnings:stämningen:stämningens:stämningar:stämningars:stämningarna:stämningarnas
+CUSTOM: y y stämnings +stämnings
+682907r5<substantiv>stämningsdödare:stämningsdödare:stämningsdödares:stämningsdödaren:stämningsdödarens:stämningsdödare:stämningsdödares:stämningsdödarna:stämningsdödarnas
+585153r3<adjektiv>stämningsfull:stämningsfull:stämningsfullt:stämningsfulla:stämningsfulla::::
+670568r4<substantiv>stämningsläge:stämningsläge:stämningsläges:stämningsläget:stämningslägets:stämningslägen:stämningslägens:stämningslägena:stämningslägenas
+COMPOUND(665599, 612680): stämning + läge
+795346r3<adjektiv>stämningsmättad:stämningsmättad:stämningsmättat:stämningsmättade:stämningsmättade:!:!:!:
+670574r3<adjektiv>stämningsskapande:stämningsskapande:stämningsskapande:stämningsskapande:stämningsskapande:!:!:!:
+632012r9<substantiv>stämpel:stämpel:stämpels:stämpeln:stämpelns:stämplar:stämplars:stämplarna:stämplarnas
+CUSTOM: y y stämpel
+669128r3<substantiv>stämpelavgift:stämpelavgift:stämpelavgifts:stämpelavgiften:stämpelavgiftens:stämpelavgifter:stämpelavgifters:stämpelavgifterna:stämpelavgifternas
+564280r3<adjektiv>stämpelfri:stämpelfri:stämpelfritt:stämpelfria:stämpelfria::::
+747283r4<substantiv>stämpelskatt:stämpelskatt:stämpelskatts:stämpelskatten:stämpelskattens:stämpelskatter:stämpelskatters:stämpelskatterna:stämpelskatternas
+COMPOUND(632012, 550507): stämpel + skatt
+770217r4<substantiv>stämpelur:stämpelur:stämpelurs:stämpeluret:stämpelurets:stämpelur:stämpelurs:stämpeluren:stämpelurens
+COMPOUND(632012, 553080): stämpel + ur
+547778r7<verb>stämpla:stämpla:stämplade:stämplat:stämplar:stämpla:stämplas:stämplades:stämplats:stämplas:stämplad:stämplat:stämplade:stämplande:
+632026r4<substantiv>stämpling:stämpling:stämplings:stämplingen:stämplingens:stämplingar:stämplingars:stämplingarna:stämplingarnas
+CUSTOM: y y stämplings +stämplings
+859091r3<substantiv>stämskruv:stämskruv:stämskruvs:stämskruven:stämskruvens:stämskruvar:stämskruvars:stämskruvarna:stämskruvarnas
+919623r4<substantiv>stämsång:stämsång:stämsångs:stämsången:stämsångens:stämsånger:stämsångers:stämsångerna:stämsångernas
+COMPOUND(595433, 550616): stämma + sång
+987031r3<substantiv>stämton:stämton:stämtons:stämtonen:stämtonens:stämtoner:stämtoners:stämtonerna:stämtonernas
+564686r4<adjektiv>ständig:ständig:ständigt:ständiga:ständiga::::ständige
+560950r3<adverb>ständigt:ständigt
+585798r7<verb>stänga:stänga:stängde:stängt:stänger:stäng:stängas:stängdes:stängts:stängs:stängd:stängt:stängda:stängande:
+766795r3<substantiv>stängare:stängare:stängares:stängaren:stängarens:stängare:stängares:stängarna:stängarnas
+570162r3<adjektiv>stängbar:stängbar:stängbart:stängbara:stängbara::::
+891329r4<substantiv>stängel:stängel:stängels:stängeln:stängelns:stänglar:stänglars:stänglarna:stänglarnas
+567924r3<adjektiv>stänglig:stänglig:stängligt:stängliga:stängliga::::
+670575r3<substantiv>stängning:stängning:stängnings:stängningen:stängningens:stängningar:stängningars:stängningarna:stängningarnas
+CUSTOM: y y stängnings
+670576r3<substantiv>stängningsdags:stängningsdags:!:!:!:!:!:!:!
+560289r4<substantiv>stängsel:stängsel:stängsels:stängslet:stängslets:stängsel:stängsels:stängslen:stängslens
+CUSTOM: y y stängsel
+577187r3<adjektiv>stängselskyldig:stängselskyldig:stängselskyldigt:stängselskyldiga:stängselskyldiga::::
+888831r3<verb>stängsla:stängsla:stängslade:stängslat:stängslar:stängsla:stängslas:stängslades:stängslats:stängslas:::::
+957752r3<substantiv>stängsling:stängsling:stängslings:stängslingen:stängslingens::::
+649308r5<substantiv>stänk:stänk:stänks:stänket:stänkets:stänk:stänks:stänken:stänkens
+649313r4<verb>stänka:stänka:stänkte:stänkt:stänker:stänk:stänkas:stänktes:stänkts:stänks:::::
+948423r3<substantiv>stänkare:stänkare:stänkares:stänkaren:stänkarens:stänkare:stänkares:stänkarna:stänkarnas
+608188r3<substantiv>stänkskydd:stänkskydd:stänkskydds:stänkskyddet:stänkskyddets:stänkskydd:stänkskydds:stänkskydden:stänkskyddens
+795349r3<adjektiv>stänkskyddad:stänkskyddad:stänkskyddat:stänkskyddade:stänkskyddade:!:!:!:
+598950r3<substantiv>stänkskärm:stänkskärm:stänkskärms:stänkskärmen:stänkskärmens:stänkskärmar:stänkskärmars:stänkskärmarna:stänkskärmarnas
+631575r6<substantiv>stäpp:stäpp:stäpps:stäppen:stäppens:stäpper:stäppers:stäpperna:stäppernas
+CUSTOM: y n
+722703r4<substantiv>stäppklimat:stäppklimat:stäppklimats:stäppklimatet:stäppklimatets:stäppklimat:stäppklimats:stäppklimaten:stäppklimatens
+COMPOUND(631575, 552550): stäpp + klimat
+986660r3<substantiv>stärbhus:stärbhus:stärbhus:stärbhuset:stärbhusets:stärbhus:stärbhus:stärbhusen:stärbhusens
+649314r3<verb>stärka:stärka:stärkte:stärkt:stärker:stärk:stärkas:stärktes:stärkts:stärks, stärkes:stärkt:stärkt:stärkta::
+670580r3<adjektiv>stärkande:stärkande:stärkande:stärkande:stärkande:!:!:!:
+670578r3<substantiv>stärkande:stärkande:stärkandes:stärkandet:stärkandets::::
+670581r3<substantiv>stärkelse:stärkelse:stärkelses:stärkelsen:stärkelsens::::
+CUSTOM: y y stärkelse
+577190r3<adjektiv>stärkelsehaltig:stärkelsehaltig:stärkelsehaltigt:stärkelsehaltiga:stärkelsehaltiga::::
+611291r3<substantiv>stärkelseindustri:stärkelseindustri:stärkelseindustris:stärkelseindustrin:stärkelseindustrins:stärkelseindustrier:stärkelseindustriers:stärkelseindustrierna:stärkelseindustriernas
+761643r3<adjektiv>stärkelserik:stärkelserik:stärkelserikt:stärkelserika:stärkelserika::::!
+747285r3<substantiv>stärkkrage:stärkkrage:stärkkrages:stärkkragen:stärkkragens:stärkkragar:stärkkragars:stärkkragarna:stärkkragarnas
+941120r3<substantiv>stärkning:stärkning:stärknings:stärkningen:stärkningens::::
+562999r4<substantiv>stätta:stätta:stättas:stättan:stättans:stättor:stättors:stättorna:stättornas
+DEFINITION 1: En liten trappa över en gärdsgård
+624826r4<substantiv>stäv:stäv:stävs:stäven:stävens:stävar:stävars:stävarna:stävarnas
+670582r3<substantiv>stäva:stäva:stävas:stävan:stävans:stävor:stävors:stävorna:stävornas
+670590r3<verb>stäva:stäva:stävade:stävat:stävar:stäva:::::::::
+547779r4<verb>stävja:stävja:stävjade:stävjat:stävjar:stävja:stävjas:stävjades:stävjats:stävjas:stävjad:stävjat:stävjade::
+552997r35<substantiv>stöd:stöd:stöds:stödet:stödets:stöd:stöds:stöden:stödens
+CUSTOM: y y stöd +stöds
+932899r4<substantiv>stödben:stödben:stödbens:stödbenet:stödbenets:stödben:stödbens:stödbenen:stödbenens
+COMPOUND(552997, 552233): stöd + ben
+795352r3<adjektiv>stödberättigad:stödberättigad:stödberättigat:stödberättigade:stödberättigade:!:!:!:
+577193r4<adjektiv>stöddig:stöddig:stöddigt:stöddiga:stöddiga:stöddigare:stöddigast:stöddigaste:stöddige::::::::
+747293r4<substantiv>stödform:stödform:stödforms:stödformen:stödformens:stödformer:stödformers:stödformerna:stödformernas
+COMPOUND(552997, 548947): stöd + form
+608194r3<substantiv>stödhjul:stödhjul:stödhjuls:stödhjulet:stödhjulets:stödhjul:stödhjuls:stödhjulen:stödhjulens
+639151r4<substantiv>stödjare:stödjare:stödjares:stödjaren:stödjarens:stödjare:stödjares:stödjarna:stödjarnas
+CUSTOM: y y stödjar +stödjar
+559308r8<verb>stödja, stöda:stödja, stöda:stödde:stött:stöder:stöd, stödjer:stödjas, stödas:stöddes:stötts:stöds:stödd:stött:stödda:stödjande:
+987039r3<substantiv>stödjepelare:stödjepelare:stödjepelares:stödjepelaren:stödjepelarens:stödjepelare:stödjepelares:stödjepelarna:stödjepelarnas
+550594r3<substantiv>stödjepunkt:stödjepunkt:stödjepunkts:stödjepunkten:stödjepunktens:stödjepunkter:stödjepunkters:stödjepunkterna:stödjepunkternas
+987045r3<substantiv>stödjevävnad:stödjevävnad:stödjevävnads:stödjevävnaden:stödjevävnadens:stödjevävnader:stödjevävnaders:stödjevävnaderna:stödjevävnadernas
+932905r4<substantiv>stödköp:stödköp:stödköps:stödköpet:stödköpets:stödköp:stödköps:stödköpen:stödköpens
+COMPOUND(552997, 552622): stöd + köp
+934783r4<verb>stödköpa:stödköpa:stödköpte:stödköpt:stödköper:stödköp:stödköpas:stödköptes:stödköpts:stödköps, stödköpes:stödköpt:stödköpt:stödköpta:stödköpande:
+COMPOUND(552997, 585824): stöd + köpa
+932911r4<substantiv>stödlån:stödlån:stödlåns:stödlånet:stödlånets:stödlån:stödlåns:stödlånen:stödlånens
+COMPOUND(552997, 552679): stöd + lån
+852937r3<substantiv>stödmur:stödmur:stödmurs:stödmuren:stödmurens:stödmurar:stödmurars:stödmurarna:stödmurarnas
+911849r4<substantiv>stödord:stödord:stödords:stödordet:stödordets:stödord:stödords:stödorden:stödordens
+COMPOUND(552997, 555138): stöd + ord
+762910r4<substantiv>stödpaket:stödpaket:stödpakets:stödpaketet:stödpaketets:stödpaket:stödpakets:stödpaketen:stödpaketens
+COMPOUND(552997, 552747): stöd + paket
+936593r4<substantiv>stödparti:stödparti:stödpartis:stödpartiet:stödpartiets:stödpartier:stödpartiers:stödpartierna:stödpartiernas
+COMPOUND(552997, 625938): stöd + parti
+891820r4<substantiv>stödpelare:stödpelare:stödpelares:stödpelaren:stödpelarens:stödpelare:stödpelares:stödpelarna:stödpelarnas
+COMPOUND(552997, 609240): stöd + pelare
+747301r4<substantiv>stödperson:stödperson:stödpersons:stödpersonen:stödpersonens:stödpersoner:stödpersoners:stödpersonerna:stödpersonernas
+COMPOUND(552997, 550191): stöd + person
+729039r4<substantiv>stödsystem:stödsystem:stödsystems:stödsystemet:stödsystemets:stödsystem:stödsystems:stödsystemen:stödsystemens
+COMPOUND(552997, 553021): stöd + system
+729343r4<substantiv>stödvals:stödvals:stödvals:stödvalsen:stödvalsens:stödvalsar:stödvalsars:stödvalsarna:stödvalsarnas
+COMPOUND(552997, 561958): stöd + vals
+CUSTOM: y n n
+949595r4<substantiv>stödyta:stödyta:stödytas:stödytan:stödytans:stödytor:stödytors:stödytorna:stödytornas
+COMPOUND(552997, 595826): stöd + yta
+628848r4<substantiv>stök:stök:stöks:stöket:stökets::::
+628852r4<verb>stöka:stöka:stökade:stökat:stökar:stöka:stökas:stökades:stökats:stökas::::stökande:
+577196r5<adjektiv>stökig:stökig:stökigt:stökiga:stökiga:stökigare:stökigast:stökigaste:stökige
+650901r3<substantiv>stökighet:stökighet:stökighets:stökigheten:stökighetens:stökigheter:stökigheters:stökigheterna:stökigheternas
+CUSTOM: y y stökighets
+584027r3<adjektiv>stökiometrisk:stökiometrisk:stökiometriskt:stökiometriska:stökiometriska::::
+550596r8<substantiv>stöld:stöld:stölds:stölden:stöldens:stölder:stölders:stölderna:stöldernas
+CUSTOM: y y stöld
+567927r3<adjektiv>stöldbegärlig:stöldbegärlig:stöldbegärligt:stöldbegärliga:stöldbegärliga::::
+747309r3<substantiv>stöldgods:stöldgods:stöldgods:stöldgodset:stöldgodsets::::
+633206r6<verb>stöldmärka:stöldmärka:stöldmärkte:stöldmärkt:stöldmärker:stöldmärk:stöldmärkas:stöldmärktes:stöldmärkts:stöldmärks:stöldmärkt:stöldmärkt:stöldmärkta:stöldmärkande:
+COMPOUND(550596, 585833): stöld + märka
+747312r4<substantiv>stöldrisk:stöldrisk:stöldrisks:stöldrisken:stöldriskens:stöldrisker:stöldriskers:stöldriskerna:stöldriskernas
+COMPOUND(550596, 550392): stöld + risk
+852945r3<substantiv>stöldräd:stöldräd:stöldräds:stöldräden:stöldrädens:stöldräder:stöldräders:stöldräderna:stöldrädernas
+922353r3<adjektiv>stöldskyddsmärkt:stöldskyddsmärkt:stöldskyddsmärkt:stöldskyddsmärkta:stöldskyddsmärkta::::::::::::
+624833r5<substantiv>stön:stön:stöns:stönet:stönets:stön:stöns:stönen:stönens
+CUSTOM: y n
+649317r3<verb>stöna:stöna:stönade:stönat:stönar:stöna:::::::::
+670592r3<substantiv>stönande:stönande:stönandes:stönandet:stönandets:stönanden:stönandens:stönandena:stönandenas
+747313r4<substantiv>stöp:stöp:stöps:stöpet:stöpets::::
+626600r4<verb>stöpa:stöpa:stöpte:stöpt:stöper:stöp:stöpas:stöptes:stöpts:stöps:stöpt:stöpt:stöpta:stöpande:
+886469r3<substantiv>stöpslev:stöpslev:stöpslevs:stöpsleven:stöpslevens:stöpslevar:stöpslevars:stöpslevarna:stöpslevarnas
+626603r8<substantiv>stör:stör:störs:stören:störens:störar:störars:störarna:störarnas
+DEFINITION 1: En lång stång.
+DEFINITION 2: En fisk [vars rom är ätbar].
+624839r6<verb>störa:störa:störde:stört:stör:stör:störas:stördes:störts:störs:störd:stört:störda:störande:
+CUSTOM: y n
+898162r3<adjektiv>störande:störande:störande:störande:störande:!:!:!:::::::::
+919632r6<substantiv>störfunktion:störfunktion:störfunktions:störfunktionen:störfunktionens:störfunktioner:störfunktioners:störfunktionerna:störfunktionernas
+COMPOUND(624839, 561059): störa + funktion
+731823r4<substantiv>störfält:störfält:störfälts:störfältet:störfältets:störfält:störfälts:störfälten:störfältens
+COMPOUND(624839, 552397): störa + fält
+CUSTOM: y n n
+577200r5<adjektiv>störig:störig:störigt:störiga:störiga:störigare:störigast:störigaste:störige::::::::
+CUSTOM: y n
+670598r5<substantiv>störning:störning:störnings:störningen:störningens:störningar:störningars:störningarna:störningarnas
+CUSTOM: y y störnings +störnings
+564283r3<adjektiv>störningsfri:störningsfri:störningsfritt:störningsfria:störningsfria::::
+567930r3<adjektiv>störningsokänslig:störningsokänslig:störningsokänsligt:störningsokänsliga:störningsokänsliga::::
+919641r4<substantiv>störsändare:störsändare:störsändares:störsändaren:störsändarens:störsändare:störsändares:störsändarna:störsändarnas
+COMPOUND(624839, 615476): störa + sändare
+620816r8<adverb>stört:stört
+CUSTOM: y n
+547781r6<verb>störta:störta:störtade:störtat:störtar:störta:störtas:störtades:störtats:störtas:störtad:störtat:störtade::
+CUSTOM: y y
+670601r3<substantiv>störtande:störtande:störtandes:störtandet:störtandets::::
+987053r3<substantiv>störtbombning:störtbombning:störtbombnings:störtbombningen:störtbombningens:störtbombningar:störtbombningars:störtbombningarna:störtbombningarnas
+766349r3<adjektiv>störtbra:störtbra:störtbra:störtbra:störtbra:!:!:!:
+957046r3<substantiv>störtbåge:störtbåge:störtbåges:störtbågen:störtbågens:störtbågar:störtbågars:störtbågarna:störtbågarnas
+747315r4<verb>störtdyka:störtdyka:störtdök, störtdykte:störtdykt:störtdyker:störtdyk:störtdykas:störtdyktes:störtdykts:störtdyks:::::
+COMPOUND(547781, 558306): störta + dyka
+670603r3<substantiv>störtdykning:störtdykning:störtdyknings:störtdykningen:störtdykningens:störtdykningar:störtdykningars:störtdykningarna:störtdykningarnas
+CUSTOM: y y störtdyknings
+736318r4<substantiv>störtflod:störtflod:störtflods:störtfloden:störtflodens:störtfloder:störtfloders:störtfloderna:störtflodernas
+COMPOUND(620816, 548933): stört + flod
+766346r3<adjektiv>störtförälskad:störtförälskad:störtförälskat:störtförälskade:störtförälskade:!:!:!:
+747325r4<substantiv>störtlopp:störtlopp:störtlopps:störtloppet:störtloppets:störtlopp:störtlopps:störtloppen:störtloppens
+CUSTOM: y y störtlopps
+747331r4<substantiv>störtloppsbacke:störtloppsbacke:störtloppsbackes:störtloppsbacken:störtloppsbackens:störtloppsbackar:störtloppsbackars:störtloppsbackarna:störtloppsbackarnas
+COMPOUND(747325, 555589): störtlopp + backe
+888540r4<adjektiv>störtnöjd:störtnöjd:störtnöjt:störtnöjda:störtnöjda::::störtnöjde::::::::
+COMPOUND(547781, 619207): störta + nöjd
+736780r3<substantiv>störtregn:störtregn:störtregns:störtregnet:störtregnets:störtregn:störtregns:störtregnen:störtregnens
+737634r4<verb>störtregna:störtregna:störtregnade:störtregnat:störtregnar:störtregna::::::::störtregnande:
+COMPOUND(620816, 585645): stört + regna
+736772r4<substantiv>störtskur:störtskur:störtskurs:störtskuren:störtskurens:störtskurar:störtskurars:störtskurarna:störtskurarnas
+COMPOUND(620816, 551852): stört + skur
+787273r4<adjektiv>störtskön:störtskön:störtskönt:störtsköna:störtsköna::::störtsköne
+COMPOUND(620816, 563131): stört + skön
+736326r4<substantiv>störtvåg:störtvåg:störtvågs:störtvågen:störtvågens:störtvågor:störtvågors:störtvågorna:störtvågornas
+COMPOUND(620816, 593520): stört + våg
+551967r9<substantiv>stöt:stöt:stöts:stöten:stötens:stötar:stötars:stötarna:stötarnas
+CUSTOM: y y
+585842r8<verb>stöta:stöta:stötte:stött:stöter:stöt:stötas:stöttes:stötts:stöts:stött:stött:stötta:stötande:
+670604r3<adjektiv>stötande:stötande:stötande:stötande:stötande:!:!:!:
+795355r3<adjektiv>stötbelastad:stötbelastad:stötbelastat:stötbelastade:stötbelastade:!:!:!:
+919647r3<adjektiv>stötdämpande:stötdämpande:stötdämpande:stötdämpande:stötdämpande:!:!:!:::::::::
+747332r4<substantiv>stötdämpare:stötdämpare:stötdämpares:stötdämparen:stötdämparens:stötdämpare:stötdämpares:stötdämparna:stötdämparnas
+COMPOUND(551967, 615194): stöt + dämpare
+CUSTOM: y y stötdämpar
+919648r3<substantiv>stötdämpning:stötdämpning:stötdämpnings:stötdämpningen:stötdämpningens::::
+551968r3<substantiv>stötesten:stötesten:stötestens:stötestenen:stötestenens:stötestenar:stötestenars:stötestenarna:stötestenarnas
+564286r3<adjektiv>stötfri:stötfri:stötfritt:stötfria:stötfria::::
+CUSTOM: y n n
+610130r3<substantiv>stötfångare:stötfångare:stötfångares:stötfångaren:stötfångarens:stötfångare:stötfångares:stötfångarna:stötfångarnas
+CUSTOM: y y stötfångar
+577203r4<adjektiv>stötig:stötig:stötigt:stötiga:stötiga:stötigare:stötigast:stötigaste:::::::::
+567933r3<adjektiv>stötkänslig:stötkänslig:stötkänsligt:stötkänsliga:stötkänsliga::::
+565350r3<adjektiv>stötlös:stötlös:stötlöst:stötlösa:stötlösa::::
+CUSTOM: y n n
+747342r3<substantiv>stötta:stötta:stöttas:stöttan:stöttans:stöttor:stöttors:stöttorna:stöttornas
+547782r5<verb>stötta:stötta:stöttade:stöttat:stöttar:stötta:stöttas:stöttades:stöttats:stöttas:stöttad:stöttat:stöttade:stöttande:
+615468r3<substantiv>stöttepelare:stöttepelare:stöttepelares:stöttepelaren:stöttepelarens:stöttepelare:stöttepelares:stöttepelarna:stöttepelarnas
+CUSTOM: y y stöttepelar
+747338r3<substantiv>stöttning:stöttning:stöttnings:stöttningen:stöttningens::::
+919653r3<adjektiv>stöttålig:stöttålig:stöttåligt:stöttåliga:stöttåliga::::::::::::
+987061r3<substantiv>stötvapen:stötvapen:stötvapens:stötvapnet:stötvapnets:stötvapen:stötvapens:stötvapnen:stötvapnens
+725239r3<adverb>stötvis:stötvis
+987067r4<substantiv>stötvåg:stötvåg:stötvågs:stötvågen:stötvågens:stötvågor:stötvågors:stötvågorna:stötvågornas
+COMPOUND(551967, 593520): stöt + våg
+901236r3<substantiv>stövare:stövare:stövares:stövaren:stövarens:stövare:stövares:stövarna:stövarnas
+600426r4<substantiv>stövel:stövel:stövels:stöveln:stövelns:stövlar:stövlars:stövlarna:stövlarnas
+CUSTOM: y y stövel
+731388r4<substantiv>stövelskaft:stövelskaft:stövelskafts:stövelskaftet:stövelskaftets:stövelskaft:stövelskafts:stövelskaften:stövelskaftens
+COMPOUND(600426, 552912): stövel + skaft
+901242r3<verb>stövla:stövla:stövlade:stövlat:stövlar:stövla:stövlas:stövlades:stövlats:stövlas:stövlad:stövlat:stövlade:stövlande:!
+603745r3<substantiv>stövlett:stövlett:stövletts:stövletten:stövlettens:stövletter:stövletters:stövletterna:stövletternas
+584030r3<adjektiv>subakvatisk:subakvatisk:subakvatiskt:subakvatiska:subakvatiska::::
+987075r3<adjektiv>subalpin:subalpin:subalpint:subalpina:subalpina::::::::::::
+674537r4<substantiv>subaltern:subaltern:subalterns:subalternen:subalternens:subalterner:subalterners:subalternerna:subalternernas
+CUSTOM: y y subaltern
+674545r4<substantiv>subalternofficer:subalternofficer:subalternofficers:subalternofficeren, subalternofficern:subalternofficerens, subalternofficerns:subalternofficerer, subalternofficerare:subalternofficerers, subalternofficerare:subalternofficererna, subalternofficerarna:subalternofficerernas, subalternofficerarnas
+COMPOUND(674537, 603028): subaltern + officer
+584033r3<adjektiv>subarktisk:subarktisk:subarktiskt:subarktiska:subarktiska::::
+762202r3<egennamn>Subaru:Subaru:Subarus
+CUSTOM: y n Subaru
+798913r3<adjektiv>subatomär:subatomär:subatomärt:subatomära:subatomära::::
+954920r3<substantiv>subba:subba:subbas:subban:subbans:subbor:subbors:subborna:subbornas
+CUSTOM: b n
+577206r3<adjektiv>subbig:subbig:subbigt:subbiga:subbiga::::
+987078r3<substantiv>subdominant:subdominant:subdominants:subdominanten:subdominantens:subdominanter:subdominanters:subdominanterna:subdominanternas
+609046r5<substantiv>subjekt:subjekt:subjekts:subjektet:subjektets:subjekt:subjekts:subjekten:subjektens
+CUSTOM: y y subjekts
+640272r3<adjektiv>subjektiv:subjektiv:subjektivt:subjektiva:subjektiva::::subjektive
+987086r3<substantiv>subjektivism:subjektivism:subjektivisms:subjektivismen:subjektivismens::::
+584036r3<adjektiv>subjektivistisk:subjektivistisk:subjektivistiskt:subjektivistiska:subjektivistiska::::
+670605r3<substantiv>subjektivitet:subjektivitet:subjektivitets:subjektiviteten:subjektivitetens::::
+764837r4<substantiv>subjektsform:subjektsform:subjektsforms:subjektsformen:subjektsformens:subjektsformer:subjektsformers:subjektsformerna:subjektsformernas
+COMPOUND(609046, 548947): subjekt + form
+965093r4<substantiv>subjektskasus:subjektskasus:subjektskasus:subjektskasuset:subjektskasusets::::
+COMPOUND(609046, 623478): subjekt + kasus
+764845r3<substantiv>subjunktion:subjunktion:subjunktions:subjunktionen:subjunktionens:subjunktioner:subjunktioners:subjunktionerna:subjunktionernas
+584039r3<adjektiv>subkambrisk:subkambrisk:subkambriskt:subkambriska:subkambriska::::
+570903r3<adjektiv>subkapabel:subkapabel:subkapabelt:subkapabla:subkapabla::::
+764853r3<substantiv>subklass:subklass:subklass:subklassen:subklassens:subklasser:subklassers:subklasserna:subklassernas
+987091r3<substantiv>subkontinent:subkontinent:subkontinents:subkontinenten:subkontinentens:subkontinenter:subkontinenters:subkontinenterna:subkontinenternas
+550597r3<substantiv>subkultur:subkultur:subkulturs:subkulturen:subkulturens:subkulturer:subkulturers:subkulturerna:subkulturernas
+948879r3<adjektiv>subkulturell:subkulturell:subkulturellt:subkulturella:subkulturella::::::::::::
+987100r3<adjektiv>subkutan:subkutan:subkutant:subkutana:subkutana::::::::::::
+670607r3<adjektiv>sublim:sublim:sublimt:sublima:sublima::::
+987103r3<substantiv>sublimation:sublimation:sublimations:sublimationen:sublimationens::::
+588111r4<verb>sublimera:sublimera:sublimerade:sublimerat:sublimerar:sublimera:sublimeras:sublimerades:sublimerats:sublimeras:sublimerad:sublimerat:sublimerade:sublimerande:
+570165r3<adjektiv>sublimerbar:sublimerbar:sublimerbart:sublimerbara:sublimerbara::::
+958995r3<substantiv>sublimering:sublimering:sublimerings:sublimeringen:sublimeringens:sublimeringar:sublimeringars:sublimeringarna:sublimeringarnas
+577209r3<adjektiv>sublimeringshärdig:sublimeringshärdig:sublimeringshärdigt:sublimeringshärdiga:sublimeringshärdiga::::
+747348r3<adjektiv>subliminal:subliminal:subliminalt:subliminala:subliminala::::
+987112r3<substantiv>sublimitet:sublimitet:sublimitets:sublimiteten:sublimitetens::::
+584042r3<adjektiv>submikroskopisk:submikroskopisk:submikroskopiskt:submikroskopiska:submikroskopiska::::
+591205r4<verb>suboptimera:suboptimera:suboptimerade:suboptimerat:suboptimerar:suboptimera:suboptimeras:suboptimerades:suboptimerats:suboptimeras:suboptimerad:suboptimerat:suboptimerade:suboptimerande:
+956219r3<substantiv>suboptimering:suboptimering:suboptimerings:suboptimeringen:suboptimeringens:suboptimeringar:suboptimeringars:suboptimeringarna:suboptimeringarnas
+736678r3<substantiv>subordination:subordination:subordinations:subordinationen:subordinationens::::
+CUSTOM: y y subordinations
+591209r3<verb>subordinera:subordinera:subordinerade:subordinerat:subordinerar:subordinera:::::::::
+987116r4<substantiv>subrett:subrett:subretts:subretten:subrettens:subretter:subretters:subretterna:subretternas
+CUSTOM: y n
+987124r4<substantiv>subrettroll:subrettroll:subrettrolls:subrettrollen:subrettrollens:subrettroller:subrettrollers:subrettrollerna:subrettrollernas
+COMPOUND(987116, 550398): subrett + roll
+778555r4<substantiv>subsidiaritet:subsidiaritet:subsidiaritets:subsidiariteten:subsidiaritetens::::
+CUSTOM: y y subsidiaritets
+778562r3<substantiv>subsidiaritetsprincip::::::::
+COMPOUND(778555, 550253): subsidiaritet + princip
+737581r14<substantiv>subsidier:!:!:!:!:subsidier:subsidiers:subsidierna:subsidiernas
+588115r3<verb>subsidiera:subsidiera:subsidierade:subsidierat:subsidierar:subsidiera:::::::::
+708723r3<adjektiv>subsidiär:subsidiär:subsidiärt:subsidiära:subsidiära::::
+708726r3<substantiv>subskribent:subskribent:subskribents:subskribenten:subskribentens:subskribenter:subskribenters:subskribenterna:subskribenternas
+588119r3<verb>subskribera:subskribera:subskriberade:subskriberat:subskriberar:subskribera:::::::::
+795358r3<adjektiv>subskriberad:subskriberad:subskriberat:subskriberade:subskriberade:!:!:!:
+708734r3<substantiv>subskription:subskription:subskriptions:subskriptionen:subskriptionens:subskriptioner:subskriptioners:subskriptionerna:subskriptionernas
+801925r3<adjektiv>subsolid:subsolid:subsolitt:subsolida:subsolida::::
+CUSTOM: y n n
+584045r3<adjektiv>subsonisk:subsonisk:subsoniskt:subsoniska:subsoniska::::
+550599r4<substantiv>substans:substans:substans:substansen:substansens:substanser:substansers:substanserna:substansernas
+CUSTOM: y y substans
+565353r3<adjektiv>substanslös:substanslös:substanslöst:substanslösa:substanslösa::::
+620945r4<substantiv>substansvärde:substansvärde:substansvärdes:substansvärden:substansvärdens:substansvärden:substansvärdens:substansvärdena:substansvärdenas
+COMPOUND(550599, 613015): substans + värde
+708742r3<adjektiv>substantiell:substantiell:substantiellt:substantiella:substantiella::::
+552998r3<substantiv>substantiv:substantiv:substantivs:substantivet:substantivets:substantiv:substantivs:substantiven:substantivens
+588123r4<verb>substantivera:substantivera:substantiverade:substantiverat:substantiverar:substantivera:substantiveras:substantiverades:substantiverats:substantiveras:substantiverad:substantiverat:substantiverade::
+634244r3<substantiv>substantiverande:substantiverande:substantiverandes:substantiverandet:substantiverandets:substantiveranden:substantiverandens:substantiverandena:substantiverandenas
+634235r3<substantiv>substantivering:substantivering:substantiverings:substantiveringen:substantiveringens:substantiveringar:substantiveringars:substantiveringarna:substantiveringarnas
+CUSTOM: y y substantiverings
+764861r3<substantiv>substantivform:substantivform:substantivforms:substantivformen:substantivformens:substantivformer:substantivformers:substantivformerna:substantivformernas
+584048r3<adjektiv>substantivisk:substantivisk:substantiviskt:substantiviska:substantiviska::::
+588127r4<verb>substituera:substituera:substituerade:substituerat:substituerar:substituera:substitueras:substituerades:substituerats:substitueras:substituerad:substituerat:substit

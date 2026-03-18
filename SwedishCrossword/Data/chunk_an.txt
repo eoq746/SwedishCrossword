@@ -1,0 +1,659 @@
+axeltryck + beräkning
+CUSTOM: y y axeltrycksberäknings
+633882r4<substantiv>axeltrycksutjämnare:axeltrycksutjämnare:axeltrycksutjämnares:axeltrycksutjämnaren:axeltrycksutjämnarens:axeltrycksutjämnare:axeltrycksutjämnares:axeltrycksutjämnarna:axeltrycksutjämnarnas
+COMPOUND(608934, 633883): axeltryck + utjämnare
+CUSTOM: y y
+989575r4<substantiv>axelträns:axelträns:axelträns:axeltränsen:axeltränsens:axeltränsar:axeltränsars:axeltränsarna:axeltränsarnas
+COMPOUND(592030, 552054): axel + träns
+634693r4<substantiv>axeltunnel:axeltunnel:axeltunnels:axeltunneln:axeltunnelns:axeltunnlar:axeltunnlars:axeltunnlarna:axeltunnlarnas
+COMPOUND(592030, 600446): axel + tunnel
+634701r4<substantiv>axeltätning:axeltätning:axeltätnings:axeltätningen:axeltätningens:axeltätningar:axeltätningars:axeltätningarna:axeltätningarnas
+COMPOUND(592030, 627461): axel + tätning
+CUSTOM: y y axeltätnings
+634780r5<substantiv>axelupphängning:axelupphängning:axelupphängnings:axelupphängningen:axelupphängningens:axelupphängningar:axelupphängningars:axelupphängningarna:axelupphängningarnas
+COMPOUND(592030, 634781): axel + upphängning
+CUSTOM: y y axelupphängnings
+634796r4<substantiv>axelupphängningsfjäder:axelupphängningsfjäder:axelupphängningsfjäders:axelupphängningsfjädern:axelupphängningsfjäderns:axelupphängningsfjädrar:axelupphängningsfjädrars:axelupphängningsfjädrarna:axelupphängningsfjädrarnas
+COMPOUND(634780, 561351): axelupphängning + fjäder
+634709r4<substantiv>axelutbyte:axelutbyte:axelutbytes:axelutbytet:axelutbytets:axelutbyten:axelutbytens:axelutbytena:axelutbytenas
+COMPOUND(592030, 634710): axel + utbyte
+592040r3<substantiv>axelvadd:axelvadd:axelvadds:axelvadden:axelvaddens:axelvaddar:axelvaddars:axelvaddarna:axelvaddarnas
+634723r4<substantiv>axelvibration:axelvibration:axelvibrations:axelvibrationen:axelvibrationens:axelvibrationer:axelvibrationers:axelvibrationerna:axelvibrationernas
+COMPOUND(592030, 634724): axel + vibration
+CUSTOM: y y axelvibrations
+634733r4<substantiv>axelvikt:axelvikt:axelvikts:axelvikten:axelviktens:axelvikter:axelvikters:axelvikterna:axelvikternas
+COMPOUND(592030, 550771): axel + vikt
+634741r4<substantiv>axelvinkel:axelvinkel:axelvinkels:axelvinkeln:axelvinkelns:axelvinklar:axelvinklars:axelvinklarna:axelvinklarnas
+COMPOUND(592030, 600473): axel + vinkel
+634749r4<substantiv>axelvårta:axelvårta:axelvårtas:axelvårtan:axelvårtans:axelvårtor:axelvårtors:axelvårtorna:axelvårtornas
+COMPOUND(592030, 634750): axel + vårta
+634759r4<substantiv>axelväska:axelväska:axelväskas:axelväskan:axelväskans:axelväskor:axelväskors:axelväskorna:axelväskornas
+COMPOUND(592030, 595808): axel + väska
+634767r5<substantiv>axelända, axelände:axelända, axelände:axeländas, axeländes:axeländan, axeländen:axeländans, axeländens:axeländar:axeländars:axeländarna:axeländarnas
+COMPOUND(592030, 620408): axel + ände, ända
+633530r10<egennamn>Axén:Axén:Axéns
+973513r3<egennamn>Axfood:Axfood:Axfoods
+CUSTOM: y n Axfood
+592048r35<adjektiv>axial:axial:axialt:axiala:axiala::::
+CUSTOM: y n axial
+634842r4<substantiv>axialbelastning:axialbelastning:axialbelastnings:axialbelastningen:axialbelastningens:axialbelastningar:axialbelastningars:axialbelastningarna:axialbelastningarnas
+COMPOUND(592048, 596458): axial + belastning
+CUSTOM: y n
+634850r4<substantiv>axialdelning:axialdelning:axialdelnings:axialdelningen:axialdelningens:axialdelningar:axialdelningars:axialdelningarna:axialdelningarnas
+COMPOUND(592048, 593020): axial + delning
+CUSTOM: y n
+634858r4<substantiv>axialfläkt:axialfläkt:axialfläkts:axialfläkten:axialfläktens:axialfläktar:axialfläktars:axialfläktarna:axialfläktarnas
+COMPOUND(592048, 551171): axial + fläkt
+634866r4<substantiv>axialförhållande:axialförhållande:axialförhållandes:axialförhållandet:axialförhållandets:axialförhållanden:axialförhållandens:axialförhållandena:axialförhållandenas
+COMPOUND(592048, 612481): axial + förhållande
+CUSTOM: y n
+634874r4<substantiv>axialförskjutning:axialförskjutning:axialförskjutnings:axialförskjutningen:axialförskjutningens:axialförskjutningar:axialförskjutningars:axialförskjutningarna:axialförskjutningarnas
+COMPOUND(592048, 618036): axial + förskjutning
+CUSTOM: y n
+634882r4<substantiv>axialglapp:axialglapp:axialglapps:axialglappet:axialglappets:axialglapp:axialglapps:axialglappen:axialglappens
+COMPOUND(592048, 552438): axial + glapp
+CUSTOM: y n
+634888r4<substantiv>axialitet:axialitet:axialitets:axialiteten:axialitetens:axialiteter:axialiteters:axialiteterna:axialiteternas
+634896r5<substantiv>axialkast:axialkast:axialkasts:axialkastet:axialkastets:axialkast:axialkasts:axialkasten:axialkastens
+COMPOUND(592048, 561176): axial + kast
+634918r4<substantiv>axialkolvmotor:axialkolvmotor:axialkolvmotors:axialkolvmotorn:axialkolvmotorns:axialkolvmotorer:axialkolvmotorers:axialkolvmotorerna:axialkolvmotorernas
+COMPOUND(592048, 634902): axial + kolvmotor
+CUSTOM: y n
+634926r4<substantiv>axialkolvpump:axialkolvpump:axialkolvpumps:axialkolvpumpen:axialkolvpumpens:axialkolvpumpar:axialkolvpumpars:axialkolvpumparna:axialkolvpumparnas
+COMPOUND(592048, 634910): axial + kolvpump
+CUSTOM: y n
+635256r4<substantiv>axialkompensator:axialkompensator:axialkompensators:axialkompensatorn:axialkompensatorns:axialkompensatorer:axialkompensatorers:axialkompensatorerna:axialkompensatorernas
+COMPOUND(592048, 635248): axial + kompensator
+CUSTOM: y n
+635270r4<substantiv>axialkompression:axialkompression:axialkompressions:axialkompressionen:axialkompressionens:axialkompressioner:axialkompressioners:axialkompressionerna:axialkompressionernas
+COMPOUND(592048, 635264): axial + kompression
+CUSTOM: y n
+634934r4<substantiv>axialkompressor:axialkompressor:axialkompressors:axialkompressorn:axialkompressorns:axialkompressorer:axialkompressorers:axialkompressorerna:axialkompressorernas
+COMPOUND(592048, 610846): axial + kompressor
+CUSTOM: y n
+634942r4<substantiv>axialkraft:axialkraft:axialkrafts:axialkraften:axialkraftens:axialkrafter:axialkrafters:axialkrafterna:axialkrafternas
+COMPOUND(592048, 549757): axial + kraft
+CUSTOM: y n
+634958r4<substantiv>axialkullager:axialkullager:axialkullagers:axialkullagret:axialkullagrets:axialkullager:axialkullagers:axialkullagerna, axialkullagren:axialkullagrens, axialkullagernas
+COMPOUND(592048, 634950): axial + kullager
+CUSTOM: y n
+634966r6<substantiv>axiallager:axiallager:axiallagers:axiallagret:axiallagrets:axiallager:axiallagers:axiallagren:axiallagrens
+COMPOUND(592048, 555207): axial + lager
+CUSTOM: y n
+634974r4<substantiv>axialmatning:axialmatning:axialmatnings:axialmatningen:axialmatningens:axialmatningar:axialmatningars:axialmatningarna:axialmatningarnas
+COMPOUND(592048, 634975): axial + matning
+CUSTOM: y n
+634983r4<substantiv>axialmodul:axialmodul:axialmoduls:axialmodulen:axialmodulens:axialmoduler:axialmodulers:axialmodulerna:axialmodulernas
+COMPOUND(592048, 550050): axial + modul
+CUSTOM: y n
+635278r14<substantiv>axialplan:axialplan:axialplans:axialplanet:axialplanets:axialplan:axialplans:axialplanen:axialplanens
+COMPOUND(592048, 635949): axial + plan
+CUSTOM: y n axialplans
+635508r4<substantiv>axialplansförskiffring:axialplansförskiffring:axialplansförskiffrings:axialplansförskiffringen:axialplansförskiffringens:axialplansförskiffringar:axialplansförskiffringars:axialplansförskiffringarna:axialplansförskiffringarnas
+COMPOUND(635278, 635500): axialplan + förskiffring
+CUSTOM: y n
+635286r4<substantiv>axialpåkänning:axialpåkänning:axialpåkännings:axialpåkänningen:axialpåkänningens:axialpåkänningar:axialpåkänningars:axialpåkänningarna:axialpåkänningarnas
+COMPOUND(592048, 635287): axial + påkänning
+CUSTOM: y n
+635302r4<substantiv>axialriktning:axialriktning:axialriktnings:axialriktningen:axialriktningens:axialriktningar:axialriktningars:axialriktningarna:axialriktningarnas
+COMPOUND(592048, 597519): axial + riktning
+CUSTOM: y n
+635310r4<substantiv>axialslipning:axialslipning:axialslipnings:axialslipningen:axialslipningens:axialslipningar:axialslipningars:axialslipningarna:axialslipningarnas
+COMPOUND(592048, 635311): axial + slipning
+CUSTOM: y n
+635326r4<substantiv>axialsnitt:axialsnitt:axialsnitts:axialsnittet:axialsnittets:axialsnitt:axialsnitts:axialsnitten:axialsnittens
+COMPOUND(592048, 559248): axial + snitt
+CUSTOM: y n
+635332r5<substantiv>axialspel:axialspel:axialspels:axialspelet:axialspelets:axialspel:axialspels:axialspelen:axialspelens
+COMPOUND(592048, 552956): axial + spel
+CUSTOM: y n
+635344r4<substantiv>axialspelrum:axialspelrum:axialspelrums:axialspelrummet:axialspelrummets:axialspelrum:axialspelrums:axialspelrummen:axialspelrummens
+COMPOUND(592048, 635338): axial + spelrum
+CUSTOM: y n
+635524r15<substantiv>axialspelsbricka:axialspelsbricka:axialspelsbrickas:axialspelsbrickan:axialspelsbrickans:axialspelsbrickor:axialspelsbrickors:axialspelsbrickorna:axialspelsbrickornas
+COMPOUND(635332, 633105): axialspel + bricka
+CUSTOM: n n
+635532r4<substantiv>axialsvängning:axialsvängning:axialsvängnings:axialsvängningen:axialsvängningens:axialsvängningar:axialsvängningars:axialsvängningarna:axialsvängningarnas
+COMPOUND(592048, 597733): axial + svängning
+CUSTOM: y n
+635540r4<substantiv>axialtryckring:axialtryckring:axialtryckrings:axialtryckringen:axialtryckringens:axialtryckringar:axialtryckringars:axialtryckringarna:axialtryckringarnas
+COMPOUND(592048, 635541): axial + tryckring
+CUSTOM: y n
+635556r4<substantiv>axialturbin:axialturbin:axialturbins:axialturbinen:axialturbinens:axialturbiner:axialturbiners:axialturbinerna:axialturbinernas
+COMPOUND(592048, 550716): axial + turbin
+CUSTOM: y n
+635564r4<substantiv>axialtyp:axialtyp:axialtyps:axialtypen:axialtypens:axialtyper:axialtypers:axialtyperna:axialtypernas
+COMPOUND(592048, 550722): axial + typ
+CUSTOM: y n
+635572r4<substantiv>axialtätning:axialtätning:axialtätnings:axialtätningen:axialtätningens:axialtätningar:axialtätningars:axialtätningarna:axialtätningarnas
+COMPOUND(592048, 627461): axial + tätning
+CUSTOM: y n
+635580r4<substantiv>axialångturbin:axialångturbin:axialångturbins:axialångturbinen:axialångturbinens:axialångturbiner:axialångturbiners:axialångturbinerna:axialångturbinernas
+COMPOUND(592048, 635581): axial + ångturbin
+CUSTOM: y n
+635597r3<adjektiv>axiell:axiell:axiellt:axiella:axiella::::
+635600r3<substantiv>axill:axill:axills:axillen:axillens:axiller:axillers:axillerna:axillernas
+CUSTOM: n n y
+635608r3<substantiv>axiologi:axiologi:axiologis:axiologin:axiologins::::
+555566r4<substantiv>axiom:axiom:axioms:axiomet:axiomets:axiom:axioms:axiomen:axiomens
+CUSTOM: y y axiom
+555567r4<adjektiv>axiomatisk:axiomatisk:axiomatiskt:axiomatiska:axiomatiska:!:!:!:!
+635612r3<substantiv>axiometer:axiometer:axiometers:axiometern:axiometerns:axiometrar:axiometrars:axiometrarna:axiometrarnas
+592051r3<substantiv>axiomsystem:axiomsystem:axiomsystems:axiomsystemet:axiomsystemets:axiomsystem:axiomsystems:axiomsystemen:axiomsystemens
+635620r3<substantiv>axishjort:axishjort:axishjorts:axishjorten:axishjortens:axishjortar:axishjortars:axishjortarna:axishjortarnas
+555568r5<verb>axla:axla:axlade:axlat:axlar:axla:axlas:axlades:axlats:axlas:axlad:axlat:axlade:axlande:
+635492r3<substantiv>axolotl:axolotl:axolotls:axolotlen:axolotlens:axolotler:axolotlers:axolotlerna:axolotlernas
+635628r4<substantiv>axon:axon:axons:axonet:axonets:axon:axons:axonen:axonens
+DEFINITION 1: utåtledande utskott från nervcell
+CUSTOM: n n y
+579103r3<adjektiv>axonometrisk:axonometrisk:axonometriskt:axonometriska:axonometriska::::
+552218r3<substantiv>axplock:axplock:axplocks:axplocket:axplockets:axplock:axplocks:axplocken:axplockens
+635629r3<substantiv>axplockning:axplockning:axplocknings:axplockningen:axplockningens:axplockningar:axplockningars:axplockningarna:axplockningarnas
+CUSTOM: y y axplocknings
+635630r3<substantiv>axsvingel:axsvingel:axsvingels:axsvingeln:axsvingelns::::
+989932r3<egennamn>Aya:Aya:Ayas
+592057r3<substantiv>ayatolla:ayatolla:ayatollas:ayatollan:ayatollans:ayatollor:ayatollors:ayatollorna:ayatollornas
+623949r3<substantiv>ayatollah:ayatollah:ayatollahs:ayatollan:ayatollans:ayatollor:ayatollors:ayatollorna:ayatollornas
+635635r11<substantiv>ayrshire::::::::
+DEFINITION 1: Ras av mjölkkor
+CUSTOM: y n ayrshire
+635653r5<substantiv>ayrshireboskap:ayrshireboskap:ayrshireboskaps:ayrshireboskapet:ayrshireboskapets:ayrshireboskap:ayrshireboskaps:ayrshireboskapen:ayrshireboskapens
+CUSTOM: y n
+635645r5<substantiv>ayrshireko:ayrshireko:ayrshirekos:ayrshirekon:ayrshirekons:ayrshirekor:ayrshirekors:ayrshirekorna:ayrshirekornas
+635662r5<substantiv>ayrshireras:ayrshireras:ayrshireras:ayrshirerasen:ayrshirerasens:ayrshireraser:ayrshirerasers:ayrshireraserna:ayrshirerasernas
+CUSTOM: y n
+635637r5<substantiv>ayrshiretjur:ayrshiretjur:ayrshiretjurs:ayrshiretjuren:ayrshiretjurens:ayrshiretjurar:ayrshiretjurars:ayrshiretjurarna:ayrshiretjurarnas
+CUSTOM: y n
+592058r4<substantiv>azalea:azalea:azaleas:azalean:azaleans:azaleor:azaleors:azaleorna:azaleornas
+CUSTOM: y y azalea
+635669r4<substantiv>azaleagrupp:azaleagrupp:azaleagrupps:azaleagruppen:azaleagruppens:azaleagrupper:azaleagruppers:azaleagrupperna:azaleagruppernas
+COMPOUND(592058, 549163): azalea + grupp
+CUSTOM: y n
+635967r3<adjektiv>azeotrop:azeotrop:azeotropt:azeotropa:azeotropa:!:!:!:!
+CUSTOM: y n azeotrop
+635678r5<substantiv>azeotropblandning:azeotropblandning:azeotropblandnings:azeotropblandningen:azeotropblandningens:azeotropblandningar:azeotropblandningars:azeotropblandningarna:azeotropblandningarnas
+CUSTOM: y n
+635686r4<substantiv>azer:azer:azers:azeren:azerens:azerer:azerers:azererna:azerernas
+DEFINITION 1: Person/folk från Azerbajdzjan
+CUSTOM: y n
+676534r3<substantiv>azerbajdzjan:azerbajdzjan:azerbajdzjans:azerbajdzjanen:azerbajdzjanens:azerbajdzjaner:azerbajdzjaners:azerbajdzjanerna:azerbajdzjanernas
+553969r3<egennamn>Azerbajdzjan:Azerbajdzjan:Azerbajdzjans
+CUSTOM: y n Azerbajdzjan
+968422r3<substantiv>azerbajdzjanier:azerbajdzjanier:azerbajdzjaniers:azerbajdzjaniern:azerbajdzjanierns:azerbajdzjanier:azerbajdzjaniers:azerbajdzjanierna:azerbajdzjaniernas
+592074r3<adjektiv>azerbajdzjansk:azerbajdzjansk:azerbajdzjanskt:azerbajdzjanska:azerbajdzjanska:!:!:!:azerbajdzjanske
+592066r3<substantiv>azerbajdzjanska:azerbajdzjanska:azerbajdzjanskas:azerbajdzjanskan:azerbajdzjanskans:azerbajdzjanskor:azerbajdzjanskors:azerbajdzjanskorna:azerbajdzjanskornas
+960504r3<substantiv>azerier:azerier:azeriers:azeriern:azerierns:azerier:azeriers:azerierna:azeriernas
+763036r3<adjektiv>azerisk:azerisk:azeriskt:azeriska:azeriska:!:!:!:azeriske
+636607r4<substantiv>azid:azid:azids:aziden:azidens:azider:aziders:aziderna:azidernas
+CUSTOM: n n y
+636616r4<substantiv>azidjon:azidjon:azidjons:azidjonen:azidjonens:azidjoner:azidjoners:azidjonerna:azidjonernas
+COMPOUND(636607, 627750): azid + jon
+CUSTOM: n n y
+592077r10<substantiv>azimut:azimut:azimuts:azimuten:azimutens:!:!:!:!
+CUSTOM: y n azimut
+966015r3<adjektiv>azimutal:azimutal:azimutalt:azimutala:azimutala::::::::::::
+636625r4<substantiv>azimutcirkel:azimutcirkel:azimutcirkels:azimutcirkeln:azimutcirkelns:azimutcirklar:azimutcirklars:azimutcirklarna:azimutcirklarnas
+COMPOUND(592077, 600097): azimut + cirkel
+CUSTOM: y n
+636633r4<substantiv>azimutinstrument:azimutinstrument:azimutinstruments:azimutinstrumentet:azimutinstrumentets:azimutinstrument:azimutinstruments:azimutinstrumenten:azimutinstrumentens
+COMPOUND(592077, 552518): azimut + instrument
+CUSTOM: y n
+636639r4<substantiv>azimutkompass:azimutkompass:azimutkompass:azimutkompassen:azimutkompassens:azimutkompasser:azimutkompassers:azimutkompasserna:azimutkompassernas
+COMPOUND(592077, 549592): azimut + kompass
+CUSTOM: y n
+636646r4<substantiv>azimutlinje:azimutlinje:azimutlinjes:azimutlinjen:azimutlinjens:azimutlinjer:azimutlinjers:azimutlinjerna:azimutlinjernas
+COMPOUND(592077, 611937): azimut + linje
+CUSTOM: y n
+636654r4<substantiv>azimutrotation:azimutrotation:azimutrotations:azimutrotationen:azimutrotationens:azimutrotationer:azimutrotationers:azimutrotationerna:azimutrotationernas
+COMPOUND(592077, 561219): azimut + rotation
+CUSTOM: y n
+636662r4<substantiv>azimutspegel:azimutspegel:azimutspegels:azimutspegeln:azimutspegelns:azimutspeglar:azimutspeglars:azimutspeglarna:azimutspeglarnas
+COMPOUND(592077, 600419): azimut + spegel
+CUSTOM: y n
+636670r4<substantiv>azimutvinkel:azimutvinkel:azimutvinkels:azimutvinkeln:azimutvinkelns:azimutvinklar:azimutvinklars:azimutvinklarna:azimutvinklarnas
+COMPOUND(592077, 600473): azimut + vinkel
+CUSTOM: y n
+968433r3<substantiv>azofärg:azofärg:azofärgs:azofärgen:azofärgens:azofärger:azofärgers:azofärgerna:azofärgernas
+912500r3<substantiv>azofärgämne:azofärgämne:azofärgämnes:azofärgämnet:azofärgämnets:azofärgämnen:azofärgämnens:azofärgämnena:azofärgämnenas
+968441r3<substantiv>azoförening:azoförening:azoförenings:azoföreningen:azoföreningens:azoföreningar:azoföreningars:azoföreningarna:azoföreningarnas
+579106r3<adjektiv>azoisk:azoisk:azoiskt:azoiska:azoiska::::
+CUSTOM: y n
+722022r3<egennamn>Azorerna:Azorerna:Azorernas
+592081r3<substantiv>aztek:aztek:azteks:azteken:aztekens:azteker:aztekers:aztekerna:aztekernas
+CUSTOM: y n
+579109r4<adjektiv>aztekisk:aztekisk:aztekiskt:aztekiska:aztekiska::::aztekiske
+592089r6<substantiv>azur:azur:azurs:azurn:azurns:!:!:!:!
+DEFINITION 1: En blå nyans
+CUSTOM: y n azur
+592093r3<adjektiv>azurblå:azurblå:azurblått:azurblåa:azurblåa:!:!:!:
+CUSTOM: y n
+635970r3<substantiv>azurblått:azurblått:::::::
+CUSTOM: y n
+634998r4<substantiv>azurfärg:azurfärg:azurfärgs:azurfärgen:azurfärgens:azurfärger:azurfärgers:azurfärgerna:azurfärgernas
+COMPOUND(592089, 549002): azur + färg
+CUSTOM: y n
+635006r4<substantiv>azurgarn:azurgarn:azurgarns:azurgarnet:azurgarnets:azurgarner, azurgarn:azurgarners, azurgarns:azurgarnerna:azurgarnernas
+COMPOUND(592089, 562361): azur + garn
+CUSTOM: y n
+635016r4<substantiv>azurit:azurit:azurits:azuriten:azuritens::::
+DEFINITION 1: blåfärgat mineral
+CUSTOM: y n
+592095r3<substantiv>babbel:babbel:babbels:babblet:babblets:!:!:!:!
+546181r4<verb>babbla:babbla:babblade:babblat:babblar:babbla:babblas:babblades:babblats:babblas::::babblande:
+592099r3<substantiv>babblan:!:!:babblan:!:!:!:!:!
+592100r3<egennamn>Babel:Babel:Babels
+592102r3<substantiv>babelstorn:babelstorn:babelstorns:babelstornet:babelstornets::::
+592106r3<substantiv>babian:babian:babians:babianen:babianens:babianer:babianers:babianerna:babianernas
+CUSTOM: y y babian
+592107r3<substantiv>babianhane:babianhane:babianhanes:babianhanen:babianhanens:babianhanar:babianhanars:babianhanarna:babianhanarnas
+CUSTOM: y n
+592115r3<substantiv>babianhona:babianhona:babianhonas:babianhonan:babianhonans:babianhonor:babianhonors:babianhonorna:babianhonornas
+CUSTOM: y n
+592124r5<adverb>babord:babord
+DEFINITION 1: Vänster [ på/från ett fartyg ]
+592123r12<substantiv>babord:babord:babords:::!:!:!:!
+DEFINITION 1: [ Ett fartygs ] vänstersida
+CUSTOM: y y babords
+630724r4<substantiv>babordsankare:babordsankare:babordsankares:babordsankaret:babordsankarets:babordsankare, babordsankaren:babordsankares, babordsankarens:babordsankarna:babordsankarnas
+COMPOUND(592123, 560623): babord + ankare
+CUSTOM: y n
+944230r4<substantiv>babordsgast:babordsgast:babordsgasts:babordsgasten:babordsgastens:babordsgastar:babordsgastars:babordsgastarna:babordsgastarnas
+COMPOUND(592124, 551299): babord + gast
+630714r4<substantiv>babordslanterna:babordslanterna:babordslanternas:babordslanternan:babordslanternans:babordslanternor:babordslanternors:babordslanternorna:babordslanternornas
+COMPOUND(592123, 630716): babord + lanterna
+630748r4<substantiv>babordsljus:babordsljus:babordsljus:babordsljuset:babordsljusets:babordsljus:babordsljus:babordsljusen:babordsljusens
+COMPOUND(592123, 552670): babord + ljus
+630753r4<substantiv>babordsmaskin:babordsmaskin:babordsmaskins:babordsmaskinen:babordsmaskinens:babordsmaskiner:babordsmaskiners:babordsmaskinerna:babordsmaskinernas
+COMPOUND(592123, 550005): babord + maskin
+630761r4<substantiv>babordspropeller:babordspropeller:babordspropellers:babordspropellern:babordspropellerns:babordspropellrar:babordspropellrars:babordspropellrarna:babordspropellrarnas
+COMPOUND(592123, 630762): babord + propeller
+630777r4<substantiv>babordsreling:babordsreling:babordsrelings:babordsrelingen:babordsrelingens:babordsrelingar:babordsrelingars:babordsrelingarna:babordsrelingarnas
+COMPOUND(592123, 630778): babord + reling
+630793r4<substantiv>babordssida:babordssida:babordssidas:babordssidan:babordssidans:babordssidor:babordssidors:babordssidorna:babordssidornas
+COMPOUND(592123, 556545): babord + sida
+630801r3<egennamn>Babur:Babur:Baburs
+592125r3<substantiv>babusjka:babusjka:babusjkas:babusjkan:babusjkans:babusjkor:babusjkors:babusjkorna:babusjkornas
+592133r6<substantiv>baby:baby:babys:babyn:babyns:babyar:babyars:babyarna:babyarnas
+CUSTOM: y y baby
+571467r3<adjektiv>babyaktig:babyaktig:babyaktigt:babyaktiga:babyaktiga::::
+637579r4<substantiv>babybio:babybio:babybios:babybion:babybions::::
+DEFINITION 1: Bioföreställning där man får ta med sig spädbarn
+592139r3<adjektiv>babyblond:babyblond:babyblont:babyblonda:babyblonda:!:!:!:
+592142r3<adjektiv>babyblå:babyblå:babyblått:babyblåa:babyblåa:!:!:!:
+592145r3<substantiv>babyboom:babyboom:babybooms:babyboomen:babyboomens:babyboomer:babyboomers:babyboomerna:babyboomernas
+950520r4<substantiv>babyfilt:babyfilt:babyfilts:babyfilten:babyfiltens:babyfiltar:babyfiltars:babyfiltarna:babyfiltarnas
+COMPOUND(592133, 551129): baby + filt
+592153r3<substantiv>babyhår:babyhår:babyhårs:babyhåret:babyhårets:babyhår:babyhårs:babyhåren:babyhårens
+592159r3<substantiv>babykläder:::::babykläder:babykläders:babykläderna:babyklädernas
+592163r3<substantiv>babykorg:babykorg:babykorgs:babykorgen:babykorgens:babykorgar:babykorgars:babykorgarna:babykorgarnas
+592171r3<egennamn>Babylon:Babylon:Babylons
+CUSTOM: y n Babylon
+592173r3<substantiv>babylonier:babylonier:babyloniers:babyloniern:babylonierns:babylonier:babyloniers:babylonierna:babyloniernas
+579112r4<adjektiv>babylonisk:babylonisk:babyloniskt:babyloniska:babyloniska::::babyloniske
+592176r3<adjektiv>babymjuk:babymjuk:babymjukt:babymjuka:babymjuka:!:!:!:
+592179r3<substantiv>babyplagg:babyplagg:babyplaggs:babyplagget:babyplaggets:babyplagg:babyplaggs:babyplaggen:babyplaggens
+592185r4<substantiv>babysim:babysim:babysims:babysimmet:babysimmets::::
+592186r5<substantiv>babysitter:babysitter:babysitters:babysittern:babysitterns:babysittrar:babysittrars:babysittrarna, babysitterna:babysittrarnas, babysitternas
+592190r3<substantiv>babyspråk:babyspråk:babyspråks:babyspråket:babyspråkets::::
+592194r3<substantiv>babysäng:babysäng:babysängs:babysängen:babysängens:babysängar:babysängars:babysängarna:babysängarnas
+630740r4<substantiv>babytvål:babytvål:babytvåls:babytvålen:babytvålens:babytvålar:babytvålars:babytvålarna:babytvålarnas
+COMPOUND(592133, 552063): baby + tvål
+630805r4<substantiv>babyutstyrsel:babyutstyrsel:babyutstyrsels:babyutstyrseln:babyutstyrselns:babyutstyrslar:babyutstyrslars:babyutstyrslarna:babyutstyrslarnas
+COMPOUND(592133, 630807): baby + utstyrsel
+592202r3<substantiv>baccarat:baccarat:::::::
+625928r3<adjektiv>bacchisk:bacchisk:bacchiskt:bacchiska:bacchiska::::bacchiske
+786026r3<egennamn>Bach:Bach:Bachs
+CUSTOM: y n Bach
+630803r3<egennamn>Bachmann:Bachmann:Bachmanns
+548305r3<substantiv>bacill:bacill:bacills:bacillen:bacillens:baciller:bacillers:bacillerna:bacillernas
+CUSTOM: y y bacill
+615138r3<substantiv>bacillbärare:bacillbärare:bacillbärares:bacillbäraren:bacillbärarens:bacillbärare:bacillbärares:bacillbärarna:bacillbärarnas
+CUSTOM: y y bacillbärar
+555572r3<adjektiv>bacillfri:bacillfri:bacillfritt:bacillfria:bacillfria:!:!:!:bacillfrie
+555576r8<substantiv>back:back:backs:backen:backens:backar:backars:backarna:backarnas
+DEFINITION 1: Låda att förvara saker i, särskilt flaskor
+DEFINITION 2: Strategisk position inom ett fotbollslag
+DEFINITION 3: Växelläge för ett fordon som får fordonet att gå bakåt
+CUSTOM: y y back
+592219r4<adverb>back:back
+546185r6<verb>backa:backa:backade:backat:backar:backa:backas:backades:backats:backas:backad:backat:backade:backande:
+548306r3<substantiv>backanal:backanal:backanals:backanalen:backanalens:backanaler:backanalers:backanalerna:backanalernas
+579115r3<adjektiv>backanalisk:backanalisk:backanaliskt:backanaliska:backanaliska::::
+555581r3<substantiv>backant:backant:backants:backanten:backantens:backanter:backanters:backanterna:backanternas
+592211r3<substantiv>backantinna:backantinna:backantinnas:backantinnan:backantinnans:backantinnor:backantinnors:backantinnorna:backantinnornas
+579118r3<adjektiv>backantisk:backantisk:backantiskt:backantiska:backantiska::::
+555589r7<substantiv>backe:backe:backes:backen:backens:backar:backars:backarna:backarnas
+968455r3<substantiv>backefiske:backefiske:backefiskes:backefisket:backefiskets::::
+592220r5<substantiv>backgammon:backgammon:backgammons:::!:!:!:!
+DEFINITION 1: Ett slags brädspel
+968461r3<substantiv>backglim:backglim:backglims:backglimmet:backglimmets:backglim:backglims:backglimmen:backglimmens
+592222r4<substantiv>backhand:backhand:backhands:backhanden:backhandens:!:!:!:!
+CUSTOM: y y backhands
+742003r4<substantiv>backhandsslag:backhandsslag:backhandsslags:backhandsslaget:backhandsslagets:backhandsslag:backhandsslags:backhandsslagen:backhandsslagens
+COMPOUND(592222, 608035): backhand + slag
+592226r3<substantiv>backhoppning:backhoppning:backhoppnings:backhoppningen:backhoppningens::::
+CUSTOM: y y backhoppnings
+555590r3<adjektiv>backig:backig:backigt:backiga:backiga:backigare:backigast:backigaste:!
+968467r3<substantiv>backighet:backighet:backighets:backigheten:backighetens::::
+555620r3<substantiv>backkrön:backkrön:backkröns:backkrönet:backkrönets:backkrön:backkröns:backkrönen:backkrönens
+623951r4<substantiv>backlash:backlash:backlashs:backlashen:backlashens:backlasher:backlashers:backlasherna:backlashernas
+592230r3<substantiv>backlinje:backlinje:backlinjes:backlinjen:backlinjens:backlinjer:backlinjers:backlinjerna:backlinjernas
+606654r3<substantiv>backljus:backljus:backljus:backljuset:backljusets:backljus:backljus:backljusen:backljusens
+942748r3<substantiv>backlök:backlök:backlöks:backlöken:backlökens:backlökar:backlökars:backlökarna:backlökarnas
+593690r3<substantiv>backnejlika:backnejlika:backnejlikas:backnejlikan:backnejlikans:backnejlikor:backnejlikors:backnejlikorna:backnejlikornas
+592236r3<substantiv>backning:backning:backnings:backningen:backningens::::
+CUSTOM: y y backnings
+940530r3<substantiv>backpacker:backpacker:backpackers:backpackern:backpackerns:backpacker:backpackers:backpackerna:backpackernas
+592240r3<substantiv>backpar:backpar:backpars:backparet:backparets:backpar:backpars:backparen:backparens
+600079r3<substantiv>backranunkel:backranunkel:backranunkels:backranunkeln:backranunkelns:backranunklar:backranunklars:backranunklarna:backranunklarnas
+555622r3<substantiv>backsippa:backsippa:backsippas:backsippan:backsippans:backsippor:backsippors:backsipporna:backsippornas
+555630r3<substantiv>backspegel:backspegel:backspegels:backspegeln:backspegelns:backspeglar:backspeglars:backspeglarna:backspeglarnas
+CUSTOM: y y backspegel
+944239r4<substantiv>backstag:backstag:backstags:backstaget:backstagets:backstag:backstags:backstagen:backstagens
+COMPOUND(592219, 633452): back + stag
+940428r3<adverb>backstage:backstage
+687309r3<substantiv>backstuga:backstuga:backstugas:backstugan:backstugans:backstugor:backstugors:backstugorna:backstugornas
+781800r3<substantiv>backstugusittare:backstugusittare:backstugusittares:backstugusittaren:backstugusittarens:backstugusittare:backstugusittares:backstugusittarna:backstugusittarnas
+687310r3<substantiv>backsvala:backsvala:backsvalas:backsvalan:backsvalans:backsvalor:backsvalors:backsvalorna:backsvalornas
+845363r3<substantiv>backsöta:backsöta:backsötas:backsötan:backsötans:backsötor:backsötors:backsötorna:backsötornas
+592203r4<substantiv>backup:backup:backups:backupen, backuppen:backupens, backuppens:backuper, backupper:backupers, backuppers:backuperna, backupperna:backupernas, backuppernas
+CUSTOM: y y backup
+553185r3<egennamn>Backus:Backus:Backus
+860024r3<substantiv>backvial:backvial:backvials:backvialen:backvialens:backvialer:backvialers:backvialerna:backvialernas
+592268r6<substantiv>bacon:bacon:bacons:baconen:baconens:bacon:bacons:baconet:baconets
+CUSTOM: y y bacon
+555631r3<egennamn>Bacon:Bacon:Bacons
+781806r4<substantiv>baconskiva:baconskiva:baconskivas:baconskivan:baconskivans:baconskivor:baconskivors:baconskivorna:baconskivornas
+COMPOUND(592268, 585909): bacon + skiva
+950530r4<substantiv>baconsvål:baconsvål:baconsvåls:baconsvålen:baconsvålens:baconsvålar:baconsvålars:baconsvålarna:baconsvålarnas
+COMPOUND(592268, 636216): bacon + svål
+552219r20<substantiv>bad:bad:bads:badet:badets:bad:bads:baden:badens
+CUSTOM: y y bad
+546186r12<verb>bada:bada:badade:badat:badar:bada:badas:badades:badats:badas:badad:badat:badade:badande:
+CUSTOM: y n
+752229r3<substantiv>badande:badande:badandes:badandet:badandets::::
+950540r4<substantiv>badanka:badanka:badankas:badankan:badankans:badankor:badankors:badankorna:badankornas
+COMPOUND(552219, 556007): bad + anka
+781807r3<substantiv>badare:badare:badares:badaren:badarens:badare:badares:badarna:badarnas
+592269r3<substantiv>badbalja:badbalja:badbaljas:badbaljan:badbaljans:badbaljor:badbaljors:badbaljorna:badbaljornas
+CUSTOM: y y badbalje
+845372r3<adjektiv>badbar:badbar:badbart:badbara:badbara::::
+555633r3<substantiv>badbassäng:badbassäng:badbassängs:badbassängen:badbassängens:badbassänger:badbassängers:badbassängerna:badbassängernas
+592277r3<substantiv>badboll:badboll:badbolls:badbollen:badbollens:badbollar:badbollars:badbollarna:badbollarnas
+592285r3<substantiv>badborste:badborste:badborstes:badborsten:badborstens:badborstar:badborstars:badborstarna:badborstarnas
+687311r4<substantiv>badbrygga:badbrygga:badbryggas:badbryggan:badbryggans:badbryggor:badbryggors:badbryggorna:badbryggornas
+COMPOUND(552219, 593854): bad + brygga
+949566r4<substantiv>badbukt:badbukt:badbukts:badbukten:badbuktens:badbukter:badbukters:badbukterna:badbukternas
+COMPOUND(546186, 548473): bada + bukt
+592293r5<substantiv>badbyxor, badbyxa:badbyxa:badbyxas:badbyxan:badbyxans:badbyxor:badbyxors:badbyxorna:badbyxornas
+546187r5<verb>badda:badda:baddade:baddat:baddar:badda:baddas:baddades:baddats:baddas:baddad:baddat:baddade:baddande:
+592298r3<substantiv>baddare:baddare:baddares:baddaren:baddarens:baddare:baddares:baddarna:baddarnas
+CUSTOM: y y
+687319r3<substantiv>baddjup:baddjup:baddjups:baddjupet:baddjupets::::
+CUSTOM: y n n
+781813r3<substantiv>baddning:baddning:baddnings:baddningen:baddningens:baddningar:baddningars:baddningarna:baddningarnas
+548308r3<substantiv>baddräkt:baddräkt:baddräkts:baddräkten:baddräktens:baddräkter:baddräkters:baddräkterna:baddräkternas
+CUSTOM: y y baddräkts
+579121r4<adjektiv>badensisk:badensisk:badensiskt:badensiska:badensiska:!:!:!:badensiske
+781821r3<substantiv>baderska:baderska:baderskas:baderskan:baderskans:baderskor:baderskors:baderskorna:baderskornas
+950550r4<substantiv>badfilt:badfilt:badfilts:badfilten:badfiltens:badfiltar:badfiltars:badfiltarna:badfiltarnas
+COMPOUND(552219, 551129): bad + filt
+592299r3<substantiv>badflicka:badflicka:badflickas:badflickan:badflickans:badflickor:badflickors:badflickorna:badflickornas
+687323r3<substantiv>badförbud:badförbud:badförbuds:badförbudet:badförbudets::::
+662180r3<substantiv>badgäst:badgäst:badgästs:badgästen:badgästens:badgäster:badgästers:badgästerna:badgästernas
+687327r4<substantiv>badhandduk:badhandduk:badhandduks:badhandduken:badhanddukens:badhanddukar:badhanddukars:badhanddukarna:badhanddukarnas
+COMPOUND(552219, 598326): bad + handduk
+606659r4<substantiv>badhus:badhus:badhus:badhuset:badhusets:badhus:badhus:badhusen:badhusens
+CUSTOM: y y badhus
+592307r3<substantiv>badhytt:badhytt:badhytts:badhytten:badhyttens:badhytter:badhytters:badhytterna:badhytternas
+CUSTOM: y y badhytts
+687335r4<substantiv>badkappa:badkappa:badkappas:badkappan:badkappans:badkappor:badkappors:badkapporna:badkappornas
+COMPOUND(552219, 594437): bad + kappa
+555641r3<substantiv>badkar:badkar:badkars:badkaret:badkarets:badkar:badkars:badkaren:badkarens
+CUSTOM: y y badkars
+592319r3<substantiv>badlakan:badlakan:badlakans:badlakanet:badlakanets:badlakan:badlakans:badlakanen:badlakanens
+929673r8<substantiv>badliv:badliv:badlivs:badlivet:badlivets::::
+COMPOUND(546186, 552667): bada + liv
+592315r6<substantiv>badminton:badminton:badmintons:badmintonen:badmintonens:!:!:!:!
+CUSTOM: y y badminton
+687343r4<substantiv>badmintonboll:badmintonboll:badmintonbolls:badmintonbollen:badmintonbollens:badmintonbollar:badmintonbollars:badmintonbollarna:badmintonbollarnas
+COMPOUND(592315, 550928): badminton + boll
+687351r4<substantiv>badmintonracket:badmintonracket:badmintonrackets:badmintonracketen:badmintonracketens:badmintonracketar:badmintonracketars:badmintonracketarna:badmintonracketarnas
+COMPOUND(592315, 559113): badminton + racket
+555642r3<substantiv>badmössa:badmössa:badmössas:badmössan:badmössans:badmössor:badmössors:badmössorna:badmössornas
+781829r3<substantiv>badning:badning:badnings:badningen:badningens::::
+944246r4<substantiv>badnymf:badnymf:badnymfs:badnymfen:badnymfens:badnymfer:badnymfers:badnymferna:badnymfernas
+COMPOUND(546186, 550088): bada + nymf
+592316r3<substantiv>badort:badort:badorts:badorten:badortens:badorter:badorters:badorterna:badorternas
+592317r3<substantiv>badplats:badplats:badplats:badplatsen:badplatsens:badplatser:badplatsers:badplatserna:badplatsernas
+930098r4<substantiv>badring:badring:badrings:badringen:badringens:badringar:badringars:badringarna:badringarnas
+COMPOUND(546186, 597520): bada + ring
+555650r3<substantiv>badrock:badrock:badrocks:badrocken:badrockens:badrockar:badrockars:badrockarna:badrockarnas
+592318r7<substantiv>badrum:badrum:badrums:badrummet:badrummets:badrum:badrums:badrummen:badrummens
+CUSTOM: y y badrums +badrums
+687359r4<substantiv>badrumsmatta:badrumsmatta:badrumsmattas:badrumsmattan:badrumsmattans:badrumsmattor:badrumsmattors:badrumsmattorna:badrumsmattornas
+COMPOUND(592318, 555187): badrum + matta
+687367r4<substantiv>badrumsskåp:badrumsskåp:badrumsskåps:badrumsskåpet:badrumsskåpets:badrumsskåp:badrumsskåps:badrumsskåpen:badrumsskåpens
+COMPOUND(592318, 552942): badrum + skåp
+687372r4<substantiv>badrumsspegel:badrumsspegel:badrumsspegels:badrumsspegeln:badrumsspegelns:badrumsspeglar:badrumsspeglars:badrumsspeglarna:badrumsspeglarnas
+COMPOUND(592318, 600419): badrum + spegel
+845376r4<substantiv>badrumsvåg:badrumsvåg:badrumsvågs:badrumsvågen:badrumsvågens:badrumsvågar:badrumsvågars:badrumsvågarna:badrumsvågarnas
+COMPOUND(592318, 552102): badrum + våg
+592325r3<substantiv>badsalt:badsalt:badsalts:badsaltet:badsaltets:badsalter:badsalters:badsalterna:badsalternas
+929680r4<substantiv>badsjö:badsjö:badsjös:badsjön:badsjöns:badsjöar:badsjöars:badsjöarna:badsjöarnas
+COMPOUND(546186, 598810): bada + sjö
+555652r4<substantiv>badsko:badsko:badskos:badskon:badskons:badskor:badskors:badskorna:badskornas
+COMPOUND(552219, 555202): bad + sko
+930108r4<substantiv>badskum:badskum:badskums:badskummet:badskummets:!:!:!:!
+COMPOUND(546186, 555871): bada + skum
+614616r3<substantiv>badstrand:badstrand:badstrands:badstranden:badstrandens:badstränder:badstränders:badstränderna:badsträndernas
+612323r3<substantiv>badställe:badställe:badställes:badstället:badställets:badställen:badställens:badställena:badställenas
+928398r4<substantiv>badvakt:badvakt:badvakts:badvakten:badvaktens:badvakter:badvakters:badvakterna:badvakternas
+COMPOUND(552219, 550748): bad + vakt
+555662r3<substantiv>badvatten:badvatten:badvattens:badvattnet:badvattnets:badvatten:badvattens:badvattnen:badvattnens
+930113r4<substantiv>badvett:badvett:badvetts:badvettet:badvettets:!:!:!:!
+COMPOUND(546186, 625005): bada + vett
+849057r4<substantiv>badvik:badvik:badviks:badviken:badvikens:badvikar:badvikars:badvikarna:badvikarnas
+COMPOUND(552219, 599121): bad + vik
+557849r4<substantiv>bag:bag:bags:bagen:bagens:bagar:bagars:bagarna:bagarnas
+DEFINITION 1: Mellanting mellan väska och påse, från engelska "bag"
+592335r5<substantiv>bagage:bagage:bagages:bagaget:bagagets::::
+CUSTOM: y y bagage +bagage
+555666r3<substantiv>bagagelucka:bagagelucka:bagageluckas:bagageluckan:bagageluckans:bagageluckor:bagageluckors:bagageluckorna:bagageluckornas
+593699r3<substantiv>bagagerumsmatta:bagagerumsmatta:bagagerumsmattas:bagagerumsmattan:bagagerumsmattans:bagagerumsmattor:bagagerumsmattors:bagagerumsmattorna:bagagerumsmattornas
+687380r4<substantiv>bagageutrymme:bagageutrymme:bagageutrymmes:bagageutrymmet:bagageutrymmets:bagageutrymmen:bagageutrymmens:bagageutrymmena:bagageutrymmenas
+COMPOUND(592335, 557963): bagage + utrymme
+CUSTOM: y y bagar
+676484r4<substantiv>bagarbarn:bagarbarn:bagarbarns:bagarbarnet:bagarbarnets:bagarbarn:bagarbarns:bagarbarnen:bagarbarnens
+COMPOUND(555667, 555956): bagare + barn
+555667r5<substantiv>bagare:bagare:bagares:bagaren:bagarens:bagare:bagares:bagarna:bagarnas
+CUSTOM: y y bagar
+627941r4<substantiv>bagass:bagass:bagass:bagassen:bagassens::::
+DEFINITION 1: En restprodukt vid sockerutvinning.
+CUSTOM: n n y
+548316r3<substantiv>bagatell:bagatell:bagatells:bagatellen:bagatellens:bagateller:bagatellers:bagatellerna:bagatellernas
+CUSTOM: y y bagatell
+592337r3<adjektiv>bagatellartad:bagatellartad:bagatellartat:bagatellartade:bagatellartade:!:!:!:
+546188r5<verb>bagatellisera:bagatellisera:bagatelliserade:bagatelliserat:bagatelliserar:bagatellisera:bagatelliseras:bagatelliserades:bagatelliserats:bagatelliseras:bagatelliserad:bagatelliserat:bagatelliserade:bagatelliserande:
+781833r3<substantiv>bagatellisering:bagatellisering:bagatelliserings:bagatelliseringen:bagatelliseringens:bagatelliseringar:bagatelliseringars:bagatelliseringarna:bagatelliseringarnas
+701383r3<egennamn>Bagdad:Bagdad:Bagdads
+CUSTOM: y n Bagdad
+904425r3<substantiv>bagel:bagel:bagels:bageln:bagelns:bagels:bagels::
+CUSTOM: y n
+555668r9<substantiv>bageri:bageri:bageris:bageriet:bageriets:bagerier:bageriers:bagerierna:bageriernas
+CUSTOM: y y bageri
+752231r3<substantiv>bagerska:bagerska:bagerskas:bagerskan:bagerskans:bagerskor:bagerskors:bagerskorna:bagerskornas
+630822r5<verb>baggböla:baggböla:baggbölade:baggbölat:baggbölar::baggbölas:baggbölades:baggbölats:baggbölas:::::
+630829r4<substantiv>baggbölare:baggbölare:baggbölares:baggbölaren, baggbölarn:baggbölarens, baggbölarns:baggbölare:baggbölares:baggbölarna:baggbölarnas
+CUSTOM: y y baggbölar
+630837r4<substantiv>baggböleri:baggböleri:baggböleris:baggböleriet, baggbölerit:baggböleriets, baggbölerits:baggbölerier:baggböleriers:baggbölerierna:baggböleriernas
+555672r5<substantiv>bagge:bagge:bagges:baggen:baggens:baggar:baggars:baggarna:baggarnas
+DEFINITION 1: Fårhanne
+592340r4<substantiv>baggis:baggis:baggis:baggisen:baggisens:baggisar:baggisars:baggisarna:baggisarnas
+DEFINITION 1: Som är lätt att utföra [ vardagligt ]
+965599r6<substantiv>bagglamm:bagglamm:bagglamms:bagglammet:bagglammets:bagglamm:bagglamms:bagglammen:bagglammens
+COMPOUND(555672, 552637): bagge + lamm
+961494r5<substantiv>baggsöta:baggsöta:baggsötas:baggsötan:baggsötans:baggsötor:baggsötors:baggsötorna:baggsötornas
+787125r3<egennamn>Bagley:Bagley:Bagleys
+592348r3<substantiv>baguette:baguette:baguettes:baguetten:baguettens:baguetter:baguetters:baguetterna:baguetternas
+623955r3<interjektion>bah:bah
+CUSTOM: n n y
+560850r5<substantiv>Bahai:Bahai:Bahais:Bahaien:Bahaiens:Bahaier:Bahaiers:Bahaierna:Bahaiernas
+DEFINITION 1: Se Bahá'í
+CUSTOM: n n
+560840r5<substantiv>Bahá'í:Bahá'í:Bahá'ís:Bahá'íen:Bahá'íens:Bahá'íer:Bahá'íers:Bahá'íerna:Bahá'íernas
+DEFINITION 1: Arabiska, betyder följaren av Bahá. Bahá'í är namnet på en världsreligion, instiftad av Bahá'u'lláh 21 april 1863.
+CUSTOM: n n
+558595r3<substantiv>bahaism:bahaism:bahaisms:bahaismen:bahaismens:!:!:!:!
+630847r3<substantiv>bahaman:bahaman:bahamans:bahamanen:bahamanens:bahamaner:bahamaners:bahamanerna:bahamanernas
+781841r3<adjektiv>bahamansk:bahamansk:bahamanskt:bahamanska:bahamanska:!:!:!:bahamanske
+781844r3<substantiv>bahamanska:bahamanska:bahamanskas:bahamanskan:bahamanskans:bahamanskor:bahamanskors:bahamanskorna:bahamanskornas
+553970r3<egennamn>Bahamas:Bahamas:Bahamas
+CUSTOM: y n Bahamas
+553370r3<egennamn>Bahr:Bahr:Bahrs
+553971r3<egennamn>Bahrain:Bahrain:Bahrains
+CUSTOM: y n Bahrain
+860035r3<substantiv>bahrainare:bahrainare:bahrainares:bahrainaren:bahrainarens:bahrainare:bahrainares:bahrainarna:bahrainarnas
+763032r3<adjektiv>bahrainsk:bahrainsk:bahrainskt:bahrainska:bahrainska:!:!:!:bahrainske
+860041r3<substantiv>bahrainska:bahrainska:bahrainskas:bahrainskan:bahrainskans:bahrainskor:bahrainskors:bahrainskorna:bahrainskornas
+961493r5<substantiv>bahytt:bahytt:bahytts:bahytten:bahyttens:bahytter:bahytters:bahytterna:bahytternas
+875598r3<substantiv>bainit:bainit:bainits:bainiten:bainitens::::
+CUSTOM: n n n
+614618r3<substantiv>baisse:baisse:baisses:baissen:baissens:baisser:baissers:baisserna:baissernas
+CUSTOM: y y baisse
+614626r3<substantiv>bajadär:bajadär:bajadärs:bajadären:bajadärens:bajadärer:bajadärers:bajadärerna:bajadärernas
+912509r3<substantiv>bajamaja:bajamaja:bajamajas:bajamajan:bajamajans:bajamajor:bajamajors:bajamajorna:bajamajornas
+592356r3<adjektiv>bajersk:bajersk:bajerskt:bajerska:bajerska:!:!:!:bajerske
+901689r3<egennamn>Bajkalsjön:Bajkalsjön:Bajkalsjöns
+555674r4<substantiv>bajonett:bajonett:bajonetts:bajonetten:bajonettens:bajonetter:bajonetters:bajonetterna:bajonetternas
+CUSTOM: y y bajonett
+781852r4<substantiv>bajonettanfall:bajonettanfall:bajonettanfalls:bajonettanfallet:bajonettanfallets:bajonettanfall:bajonettanfalls:bajonettanfallen:bajonettanfallens
+COMPOUND(555674, 552172): bajonett + anfall
+860049r3<substantiv>bajrare:bajrare:bajrares:bajraren:bajrarens:bajrare:bajrares:bajrarna:bajrarnas
+555198r5<substantiv>bajs:bajs:bajs:bajset:bajsets:!:!:!:!
+DEFINITION 1: Avföring
+CUSTOM: y y bajs
+555676r5<verb>bajsa:bajsa:bajsade:bajsat:bajsar:bajsa:bajsas:bajsades:bajsats:bajsas::::bajsande:
+555677r3<adjektiv>bajsig:bajsig:bajsigt:bajsiga:bajsiga::::
+555680r3<substantiv>bajskorv:bajskorv:bajskorvs:bajskorven:bajskorvens:bajskorvar:bajskorvars:bajskorvarna:bajskorvarnas
+797250r3<adjektiv>bajsnödig:bajsnödig:bajsnödigt:bajsnödiga:bajsnödiga::::
+649058r5<substantiv>bak:bak:baks:baket:bakets:bak:baks:baken:bakens
+CUSTOM: y y bak
+550857r12<substantiv>bak:bak:baks:baken:bakens:bakar:bakars:bakarna:bakarnas
+CUSTOM: y y bak
+953640r4<preposition>bak:bak
+546189r8<verb>baka:baka:bakade:bakat:bakar:baka:bakas:bakades:bakats:bakas:bakad:bakat:bakade:bakande:
+CUSTOM: y n
+555688r4<substantiv>bakaxel:bakaxel:bakaxels:bakaxeln:bakaxelns:bakaxlar:bakaxlars:bakaxlarna:bakaxlarnas
+CUSTOM: y y bakaxel
+760754r4<substantiv>bakaxelväxel:bakaxelväxel:bakaxelväxels:bakaxelväxeln:bakaxelväxelns:bakaxelväxlar:bakaxelväxlars:bakaxelväxlarna:bakaxelväxlarnas
+COMPOUND(555688, 600474): bakaxel + växel
+950560r3<adjektiv>bakbelyst:bakbelyst:bakbelyst:bakbelysta:bakbelysta::::::::::::
+555696r3<substantiv>bakben:bakben:bakbens:bakbenet:bakbenets:bakben:bakbens:bakbenen:bakbenens
+592256r4<verb>bakbinda:bakbinda:bakband:bakbundit:bakbinder:bakbind:bakbindas:bakbands:bakbundits:bakbindes, bakbinds:bakbunden:bakbundet:bakbundna::
+555702r3<substantiv>bakbord:bakbord:bakbords:bakbordet:bakbordets:bakbord:bakbords:bakborden:bakbordens
+860058r3<verb>bakdanta:bakdanta:bakdantade:bakdantat:bakdantar:bakdanta:bakdantas:bakdantades:bakdantats:bakdantas:bakdantad:bakdantat:bakdantade:bakdantande:
+615139r3<substantiv>bakdantare:bakdantare:bakdantares:bakdantaren:bakdantarens:bakdantare:bakdantares:bakdantarna:bakdantarnas
+CUSTOM: y y bakdantar
+884694r4<substantiv>bakdel:bakdel:bakdels:bakdelen:bakdelens:bakdelar:bakdelars:bakdelarna:bakdelarnas
+COMPOUND(550857, 551034): bak + del
+555703r3<substantiv>bakduk:bakduk:bakduks:bakduken:bakdukens:bakdukar:bakdukars:bakdukarna:bakdukarnas
+CUSTOM: y y bakduks
+930117r4<substantiv>bakdäck:bakdäck:bakdäcks:bakdäcket:bakdäckets:bakdäck:bakdäcks:bakdäcken:bakdäckens
+COMPOUND(550857, 552337): bak + däck
+555704r3<substantiv>bakdörr:bakdörr:bakdörrs:bakdörren:bakdörrens:bakdörrar:bakdörrars:bakdörrarna:bakdörrarnas
+632866r3<substantiv>bakeda:bakeda:bakedas:bakedan:bakedans:bakedor:bakedors:bakedorna:bakedornas
+CUSTOM: n n n
+616603r3<substantiv>bakelit:bakelit:bakelits:bakeliten:bakelitens::::
+CUSTOM: y y bakelit
+555712r4<substantiv>bakelse:bakelse:bakelses:bakelsen:bakelsens:bakelser:bakelsers:bakelserna:bakelsernas
+CUSTOM: y y bakelse
+849065r4<substantiv>bakelsefat:bakelsefat:bakelsefats:bakelsefatet:bakelsefatets:bakelsefat:bakelsefats:bakelsefaten:bakelsefatens
+COMPOUND(555712, 552373): bakelse + fat
+687383r3<adverb>bakerst:bakerst
+555713r3<substantiv>bakficka:bakficka:bakfickas:bakfickan:bakfickans:bakfickor:bakfickors:bakfickorna:bakfickornas
+616605r3<substantiv>bakform:bakform:bakforms:bakformen:bakformens:bakformar:bakformars:bakformarna:bakformarnas
+CUSTOM: y y bakforms
+555715r3<substantiv>bakfot:bakfot:bakfots:bakfoten:bakfotens:bakfötter:bakfötters:bakfötterna:bakfötternas
+555724r3<adjektiv>bakfull:bakfull:bakfullt:bakfulla:bakfulla::::bakfulle
+555726r3<substantiv>bakfylla:bakfylla:bakfyllas:bakfyllan:bakfyllans:bakfyllor:bakfyllors:bakfyllorna:bakfyllornas
+555734r3<substantiv>bakgata:bakgata:bakgatas:bakgatan:bakgatans:bakgator:bakgators:bakgatorna:bakgatornas
+555736r7<substantiv>bakgrund:bakgrund:bakgrunds:bakgrunden:bakgrundens:bakgrunder:bakgrunders:bakgrunderna:bakgrundernas
+CUSTOM: y y bakgrunds
+950564r3<adjektiv>bakgrundsbelyst:bakgrundsbelyst:bakgrundsbelyst:bakgrundsbelysta:bakgrundsbelysta::::::::::::
+608940r3<substantiv>bakgrundsmaterial:bakgrundsmaterial:bakgrundsmaterials:bakgrundsmaterialet:bakgrundsmaterialets:bakgrundsmaterial:bakgrundsmaterials:bakgrundsmaterialen:bakgrundsmaterialens
+921284r4<substantiv>bakgrundsprat:bakgrundsprat:bakgrundsprats:bakgrundspratet:bakgrundspratets:!:!:!:!
+COMPOUND(555736, 624631): bakgrund + prat
+964704r4<substantiv>bakgrundsriff:bakgrundsriff:bakgrundsriffs:bakgrundsriffet:bakgrundsriffets:bakgrundsriff:bakgrundsriffs:bakgrundsriffen:bakgrundsriffens
+COMPOUND(555736, 848272): bakgrund + riff
+950568r4<substantiv>bakgrundssorl:bakgrundssorl:bakgrundssorls:bakgrundssorlet:bakgrundssorlets::::
+COMPOUND(555736, 628833): bakgrund + sorl
+606248r3<substantiv>bakgrundsstrålning:bakgrundsstrålning:bakgrundsstrålnings:bakgrundsstrålningen:bakgrundsstrålningens:bakgrundsstrålningar:bakgrundsstrålningars:bakgrundsstrålningarna:bakgrundsstrålningarnas
+CUSTOM: y y bakgrundsstrålnings
+900113r4<substantiv>bakgrundston:bakgrundston:bakgrundstons:bakgrundstonen:bakgrundstonens:bakgrundstoner:bakgrundstoners:bakgrundstonerna:bakgrundstonernas
+COMPOUND(555736, 603900): bakgrund + ton
+555737r4<substantiv>bakgård:bakgård:bakgårds:bakgården:bakgårdens:bakgårdar:bakgårdars:bakgårdarna:bakgårdarnas
+CUSTOM: y y bakgårds
+989584r4<substantiv>bakgårdsmasugn:bakgårdsmasugn:bakgårdsmasugns:bakgårdsmasugnen:bakgårdsmasugnens:bakgårdsmasugnar:bakgårdsmasugnars:bakgårdsmasugnarna:bakgårdsmasugnarnas
+COMPOUND(555737, 739071): bakgård + masugn
+592360r3<adjektiv>bakhal:bakhal:bakhalt:bakhala:bakhala::::
+592361r4<substantiv>bakhjul:bakhjul:bakhjuls:bakhjulet:bakhjulets:bakhjul:bakhjuls:bakhjulen:bakhjulens
+CUSTOM: y y bakhjuls
+752242r3<substantiv>bakhjulsdrift::::::::
+COMPOUND(592361, 548714): bakhjul + drift
+752239r3<adjektiv>bakhjulsdriven:bakhjulsdriven:bakhjulsdrivet:bakhjulsdrivna:bakhjulsdrivna:!:!:!:!
+614634r3<substantiv>bakhuvud:bakhuvud:bakhuvuds:bakhuvudet:bakhuvudets::::
+555738r3<substantiv>bakhåll:bakhåll:bakhålls:bakhållet:bakhållets:bakhåll:bakhålls:bakhållen:bakhållens
+592362r3<adverb>baki:baki
+592363r3<adverb>bakifrån:bakifrån
+960511r3<adjektiv>bakis:bakis:::::::::::::::
+CUSTOM: y n
+592364r3<substantiv>bakjour:bakjour:bakjours:bakjouren:bakjourens:bakjourer:bakjourers:bakjourerna:bakjourernas
+953639r6<substantiv>bakknä:bakknä:bakknäs:bakknäet, bakknät:bakknäets, bakknäts:bakknän:bakknäns:bakknäna:bakknänas
+COMPOUND(953640, 559821): bak + knä
+687384r4<substantiv>bakkropp:bakkropp:bakkropps:bakkroppen:bakkroppens:bakkroppar:bakkroppars:bakkropparna:bakkropparnas
+COMPOUND(550857, 551627): bak + kropp
+789986r3<adjektiv>baklastad:baklastad:baklastat:baklastade:baklastade:!:!:!:
+900992r3<substantiv>baklava:baklava:baklavas:baklavan:baklavans:baklavor:baklavors:baklavorna:baklavornas
+606660r3<substantiv>bakljus:bakljus:bakljus:bakljuset:bakljusets:bakljus:bakljus:bakljusen:bakljusens
+CUSTOM: y y bakljus
+687385r3<substantiv>baklucka:baklucka:bakluckas:bakluckan:bakluckans:bakluckor:bakluckors:bakluckorna:bakluckornas
+593707r3<substantiv>baklykta:baklykta:baklyktas:baklyktan:baklyktans:baklyktor:baklyktors:baklyktorna:baklyktornas
+926060r4<substantiv>baklår:baklår:baklårs:baklåret:baklårets:baklår:baklårs:baklåren:baklårens
+COMPOUND(550857, 560217): bak + lår
+592372r3<substantiv>baklås:baklås:::::::
+897196r3<substantiv>baklägg:baklägg:bakläggs:bakläggen:bakläggens:bakläggar:bakläggars:bakläggarna:bakläggarnas
+592390r3<adverb>baklänges:baklänges
+CUSTOM: y y baklänges
+555740r3<substantiv>baklängesmål:baklängesmål:baklängesmåls:baklängesmålet:baklängesmålets:baklängesmål:baklängesmåls:baklängesmålen:baklängesmålens
+781853r3<substantiv>baklängesvolt:baklängesvolt:baklängesvolts:baklängesvolten:baklängesvoltens:baklängesvolter:baklängesvolters:baklängesvolterna:baklängesvolternas
+555782r3<substantiv>bakläxa:bakläxa:bakläxas:bakläxan:bakläxans:bakläxor:bakläxors:bakläxorna:bakläxornas
+555785r3<substantiv>bakmaskin:bakmaskin:bakmaskins:bakmaskinen:bakmaskinens:bakmaskiner:bakmaskiners:bakmaskinerna:bakmaskinernas
+789990r3<adjektiv>bakmonterad:bakmonterad:bakmonterat:bakmonterade:bakmonterade:!:!:!:
+616613r3<substantiv>bakning:bakning:baknings:bakningen:bakningens::::
+CUSTOM: y y baknings
+781861r3<preposition>bakochfram:bakochfram
+555794r3<preposition>bakom:bakom
+555795r3<adverb>bakom:bakom
+571038r4<adjektiv>bakom:bakom:::::::
+DEFINITION 1: Enfaldig [ vardagligt ]
+799094r3<adjektiv>bakomlagd:bakomlagd:bakomlagt:bakomlagda:bakomlagda::::
+687386r3<adjektiv>bakomliggande:bakomliggande:bakomliggande:bakomliggande:bakomliggande:!:!:!:
+752243r3<adjektiv>bakomvarande:bakomvarande:bakomvarande:bakomvarande:bakomvarande:!:!:!:
+555746r4<substantiv>bakplåt:bakplåt:bakplåts:bakplåten:bakplåtens:bakplåtar:bakplåtars:bakplåtarna:bakplåtarnas
+CUSTOM: y y bakplåts
+752244r4<substantiv>bakplåtspapper:bakplåtspapper:bakplåtspappers:bakplåtspapperet, bakplåtspappret:bakplåtspapperets, bakplåtspapprets:bakplåtspapper:bakplåtspappers:bakplåtspapperna, bakplåtspappren, bakplåtspapperen:bakplåtspappernas, bakplåtspapprens, bakplåtspapperens
+COMPOUND(555746, 556527): bakplåt + papper
+555797r3<substantiv>bakpotatis:bakpotatis:bakpotatis:bakpotatisen:bakpotatisens:bakpotatisar:bakpotatisars:bakpotatisarna:bakpotatisarnas
+555804r3<substantiv>bakpulver:bakpulver:bakpulvers:bakpulvret:bakpulvrets::::
+629173r3<preposition>bakpå:bakpå
+571040r3<adjektiv>bakre:::bakre::::bakersta:
+926113r3<substantiv>bakrus:bakrus:bakrus:bakruset:bakrusets:bakrus:bakrus:bakrusen:bakrusens
+571470r3<adjektiv>bakrusig:bakrusig:bakrusigt:bakrusiga:bakrusiga::::
+687387r3<substantiv>bakruta:bakruta:bakrutas:bakrutan:bakrutans:bakrutor:bakrutors:bakrutorna:bakrutornas
+555751r3<substantiv>baksida:baksida:baksidas:baksidan:baksidans:baksidor:baksidors:baksidorna:baksidornas
+CUSTOM: y y baksides
+555752r3<substantiv>bakslag:bakslag:bakslags:bakslaget:bakslagets:bakslag:bakslags:bakslagen:bakslagens
+555756r4<adjektiv>bakslug:bakslug:bakslugt:baksluga:baksluga:bakslugare:bakslugast:bakslugaste:baksluge
+720147r3<substantiv>baksmälla:baksmälla:baksmällas:baksmällan:baksmällans:baksmällor:baksmällors:baksmällorna:baksmällornas
+905439r3<substantiv>bakström:bakström:baks

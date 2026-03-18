@@ -1,0 +1,608 @@
+972703r3<egennamn>Burström:Burström:Burströms
+874696r3<egennamn>Burton:Burton:Burtons
+784649r5<egennamn>Burträsk:Burträsk:Burträsks
+553987r3<egennamn>Burundi:Burundi:Burundis
+CUSTOM: y n Burundi
+753065r3<substantiv>burundier:burundier:burundiers:burundiern:burundierns:burundier:burundiers:burundierna:burundiernas
+579281r3<adjektiv>burundisk:burundisk:burundiskt:burundiska:burundiska::::
+753071r3<substantiv>burväktare:burväktare:burväktares:burväktaren:burväktarens:burväktare:burväktares:burväktarna:burväktarnas
+557964r5<substantiv>bus:bus:bus:buset:busets:!:!:!:!
+624105r4<verb>busa:busa:busade:busat:busar:busa:busas:busades:busats:busas::::busande:
+571748r3<adjektiv>busaktig:busaktig:busaktigt:busaktiga:busaktiga::::
+622166r3<substantiv>buse:buse:buses:busen:busens:busar:busars:busarna:busarnas
+763046r3<adjektiv>busenkel:busenkel:busenkelt:busenkla:busenkla:!:!:!:!
+866530r4<substantiv>busfason, busfasoner:::::busfasoner:busfasoners:busfasonerna:busfasonernas
+970762r4<substantiv>busflygning:busflygning:busflygnings:busflygningen:busflygningens:busflygningar:busflygningars:busflygningarna:busflygningarnas
+COMPOUND(557964, 656837): bus + flygning
+724846r3<substantiv>busfrö:busfrö:busfrös:busfröet:busfröets:busfrön:busfröns:busfröna:busfrönas
+753077r4<substantiv>bush:bush:bushs:bushen:bushens::::
+CUSTOM: y n
+701426r3<egennamn>Bush:Bush:Bushs
+CUSTOM: y n Bush
+970770r4<substantiv>bushman:bushman:bushmans:bushmannen:bushmannens:bushmän:bushmäns:bushmännen:bushmännens
+COMPOUND(753077, 557796): bush + man
+571751r4<adjektiv>busig:busig:busigt:busiga:busiga:busigare:busigast:busigaste:busige
+970778r3<substantiv>busighet:busighet:busighets:busigheten:busighetens::::
+936383r3<substantiv>business:business:business:businessen:businessens::::
+797340r4<adjektiv>buskablyg:buskablyg:buskablygt:buskablyga:buskablyga::::buskablyge
+649423r4<substantiv>buskage:buskage:buskages:buskaget:buskagets:buskage:buskages:buskagen:buskagens
+DEFINITION 1: Flera buskar som växer tillsammans.
+599790r21<substantiv>buske:buske:buskes:busken:buskens:buskar:buskars:buskarna:buskarnas
+571752r4<adjektiv>buskig:buskig:buskigt:buskiga:buskiga:buskigare:buskigast:buskigaste:
+753081r3<substantiv>buskis:buskis:buskis:buskisen:buskisens:buskisar:buskisars:buskisarna:buskisarnas
+949040r4<substantiv>buskros:buskros:buskros:buskrosen:buskrosens:buskrosor:buskrosors:buskrosorna:buskrosornas
+COMPOUND(599790, 556677): buske + ros
+CUSTOM: y n
+970782r3<substantiv>buskröjare:buskröjare:buskröjares:buskröjaren:buskröjarens:buskröjare:buskröjares:buskröjarna:buskröjarnas
+970788r4<substantiv>buskskog:buskskog:buskskogs:buskskogen:buskskogens:buskskogar:buskskogars:buskskogarna:buskskogarnas
+COMPOUND(599790, 551845): buske + skog
+689224r4<substantiv>buskskvätta:buskskvätta:buskskvättas:buskskvättan:buskskvättans:buskskvättor:buskskvättors:buskskvättorna:buskskvättornas
+876545r3<substantiv>busksnår:busksnår:busksnårs:busksnåret:busksnårets:busksnår:busksnårs:busksnåren:busksnårens
+970796r4<substantiv>buskstäpp:buskstäpp:buskstäpps:buskstäppen:buskstäppens:buskstäpper:buskstäppers:buskstäpperna:buskstäppernas
+COMPOUND(599790, 631575): buske + stäpp
+970804r3<substantiv>buskteater:buskteater:buskteaters:buskteatern:buskteaterns:buskteatrar:buskteatrars:buskteatrarna:buskteatrarnas
+970812r3<adjektiv>buskul:buskul:::::::::::::::
+CUSTOM: y n
+970813r4<substantiv>buskvegetation:buskvegetation:buskvegetations:buskvegetationen:buskvegetationens:buskvegetationer:buskvegetationers:buskvegetationerna:buskvegetationernas
+COMPOUND(599790, 698567): buske + vegetation
+866548r3<substantiv>buskörning:buskörning:buskörnings:buskörningen:buskörningens::::
+866552r3<substantiv>busliv:busliv:buslivs:buslivet:buslivets::::
+956302r4<substantiv>buspojke:buspojke:buspojkes:buspojken:buspojkens:buspojkar:buspojkars:buspojkarna:buspojkarnas
+COMPOUND(557964, 555384): bus + pojke
+564536r4<adjektiv>buss:buss:::::::
+DEFINITION 1: På vänskaplig fot
+550982r19<substantiv>buss:buss:buss:bussen:bussens:bussar:bussars:bussarna:bussarnas
+CUSTOM: y y buss
+753088r3<verb>bussa:bussa:bussade:bussat:bussar:bussa:bussas:bussades:bussats:bussas:bussad:bussat:bussade::
+937226r3<substantiv>bussbolag:bussbolag:bussbolags:bussbolaget:bussbolagets:bussbolag:bussbolags:bussbolagen:bussbolagens
+601498r3<substantiv>busschaufför:busschaufför:busschaufförs:busschauffören:busschaufförens:busschaufförer:busschaufförers:busschaufförerna:busschaufförernas
+884249r3<substantiv>bussfil:bussfil:bussfils:bussfilen:bussfilens:bussfiler:bussfilers:bussfilerna:bussfilernas
+571753r4<adjektiv>bussig:bussig:bussigt:bussiga:bussiga:bussigare:bussigast:bussigaste:bussige
+939027r4<substantiv>busskort:busskort:busskorts:busskortet:busskortets:busskort:busskorts:busskorten:busskortens
+COMPOUND(550982, 552580): buss + kort
+635826r4<substantiv>busskur:busskur:busskurs:busskuren:busskurens:busskurer:busskurers:busskurerna:busskurernas
+COMPOUND(550982, 549817): buss + kur
+CUSTOM: y y busskurs
+732425r4<substantiv>busslinje:busslinje:busslinjes:busslinjen:busslinjens:busslinjer:busslinjers:busslinjerna:busslinjernas
+COMPOUND(550982, 611937): buss + linje
+633131r5<substantiv>bussning:bussning:bussnings:bussningen:bussningens:bussningar:bussningars:bussningarna:bussningarnas
+CUSTOM: y y bussnings +bussnings
+933895r4<substantiv>bussresa:bussresa:bussresas:bussresan:bussresans:bussresor:bussresors:bussresorna:bussresornas
+COMPOUND(550982, 594958): buss + resa
+601506r3<substantiv>busstation:busstation:busstations:busstationen:busstationens:busstationer:busstationers:busstationerna:busstationernas
+CUSTOM: y y busstations
+660861r4<substantiv>bussterminal:bussterminal:bussterminals:bussterminalen:bussterminalens:bussterminaler:bussterminalers:bussterminalerna:bussterminalernas
+COMPOUND(550982, 550657): buss + terminal
+724854r3<substantiv>busstreck:busstreck:busstrecks:busstrecket:busstreckets:busstreck:busstrecks:busstrecken:busstreckens
+759879r3<substantiv>busstur:busstur:bussturs:bussturen:bussturens:bussturer:bussturers:bussturerna:bussturernas
+559130r9<substantiv>bustrofedon:bustrofedon:bustrofedons:bustrofedonet:bustrofedonets:bustrofedon:bustrofedons:bustrofedonen:bustrofedonens
+DEFINITION 1: Används för att beskriva skrift som skrivs omväxlande från vänster till höger och  från höger till vänster, som en oxe plöjer ett fält.
+724861r3<substantiv>busunge:busunge:busunges:busungen:busungens:busungar:busungars:busungarna:busungarnas
+866556r3<verb>busvissla:busvissla:busvisslade:busvisslat:busvisslar:busvissla:busvisslas:busvisslades:busvisslats:busvisslas::::busvisslande:
+866564r3<substantiv>busvissling:busvissling:busvisslings:busvisslingen:busvisslingens:busvisslingar:busvisslingars:busvisslingarna:busvisslingarnas
+866572r3<substantiv>busväder:busväder:busväders:busvädret:busvädrets::::
+904491r3<substantiv>butan:butan:butans:butanet:butanets:!:!:!:!
+CUSTOM: y n
+912673r3<substantiv>butangas:butangas:butangas:butangasen:butangasens::::
+970821r3<substantiv>butanol:butanol:butanols:butanolen:butanolens::::
+548487r11<substantiv>butelj:butelj:buteljs:buteljen:buteljens:buteljer:buteljers:buteljerna:buteljernas
+CUSTOM: y y butelj
+546343r5<verb>buteljera:buteljera:buteljerade:buteljerat:buteljerar:buteljera:buteljeras:buteljerades:buteljerats:buteljeras:buteljerad:buteljerat:buteljerade:buteljerande:
+866578r3<substantiv>buteljering:buteljering:buteljerings:buteljeringen:buteljeringens:buteljeringar:buteljeringars:buteljeringarna:buteljeringarnas
+738817r4<adjektiv>buteljgrön:buteljgrön:buteljgrönt:buteljgröna:buteljgröna:!:!:!:
+COMPOUND(548487, 555925): butelj + grön
+548489r14<substantiv>butik:butik:butiks:butiken:butikens:butiker:butikers:butikerna:butikernas
+CUSTOM: y y butiks +butiks
+799170r3<adjektiv>butiksanställd:butiksanställd:butiksanställt:butiksanställda:butiksanställda::::
+845482r3<adjektiv>butiksbakad:butiksbakad:butiksbakat:butiksbakade:butiksbakade:!:!:!:
+612413r3<substantiv>butiksbiträde:butiksbiträde:butiksbiträdes:butiksbiträdet:butiksbiträdets:butiksbiträden:butiksbiträdens:butiksbiträdena:butiksbiträdenas
+942771r3<substantiv>butiksdisk:butiksdisk:butiksdisks:butiksdisken:butiksdiskens:butiksdiskar:butiksdiskars:butiksdiskarna:butiksdiskarnas
+735424r5<substantiv>butiksfönster:butiksfönster:butiksfönsters:butiksfönstret:butiksfönstrets:butiksfönster:butiksfönsters:butiksfönstren, butiksfönsterna:butiksfönstrens, butiksfönsternas
+COMPOUND(548489, 555049): butik + fönster
+880289r4<substantiv>butikskedja:butikskedja:butikskedjas:butikskedjan:butikskedjans:butikskedjor:butikskedjors:butikskedjorna:butikskedjornas
+COMPOUND(548489, 559717): butik + kedja
+601514r3<substantiv>butikskontrollant:butikskontrollant:butikskontrollants:butikskontrollanten:butikskontrollantens:butikskontrollanter:butikskontrollanters:butikskontrollanterna:butikskontrollanternas
+936418r4<substantiv>butiksrån:butiksrån:butiksråns:butiksrånet:butiksrånets:butiksrån:butiksråns:butiksrånen:butiksrånens
+COMPOUND(548489, 552856): butik + rån
+735502r4<substantiv>butiksägare:butiksägare:butiksägares:butiksägaren:butiksägarens:butiksägare:butiksägares:butiksägarna:butiksägarnas
+COMPOUND(548489, 615532): butik + ägare
+660864r3<substantiv>butler:butler:butlers:butlern:butlerns:butlers:butlers::
+564514r4<adjektiv>butter:butter:buttert:buttra:buttra:buttrare:buttrast:buttraste:buttre
+970825r3<substantiv>butterhet:butterhet:butterhets:butterheten:butterhetens::::
+866586r3<substantiv>butterkaka:butterkaka:butterkakas:butterkakan:butterkakans:butterkakor:butterkakors:butterkakorna:butterkakornas
+854918r3<egennamn>Button:Button:Buttons
+970829r3<substantiv>butylgummi:butylgummi:butylgummis:butylgummit:butylgummits::::
+938098r5<substantiv>buxbom:buxbom:buxboms:buxbomen:buxbomens:buxbomar:buxbomars:buxbomarna:buxbomarnas
+956978r4<substantiv>buxbomshäck:buxbomshäck:buxbomshäcks:buxbomshäcken:buxbomshäckens:buxbomshäckar:buxbomshäckars:buxbomshäckarna:buxbomshäckarnas
+COMPOUND(938098, 551440): buxbom + häck
+956987r4<substantiv>buxbomsplanta:buxbomsplanta:buxbomsplantas:buxbomsplantan:buxbomsplantans:buxbomsplantor:buxbomsplantors:buxbomsplantorna:buxbomsplantornas
+COMPOUND(938098, 594876): buxbom + planta
+632660r3<substantiv>B-vitamin:B-vitamin:B-vitamins:B-vitaminen:B-vitaminens:B-vitaminer:B-vitaminers:B-vitaminerna:B-vitaminernas
+CUSTOM: n n
+557655r35<substantiv>by:by:bys:byn:byns:byar:byars:byarna:byarnas
+CUSTOM: y n
+660866r3<substantiv>byalag:byalag:byalags:byalaget:byalagets:byalag:byalags:byalagen:byalagens
+970833r3<substantiv>byallmänning:byallmänning:byallmännings:byallmänningen:byallmänningens:byallmänningar:byallmänningars:byallmänningarna:byallmänningarnas
+960732r4<substantiv>byaråd:byaråd:byaråds:byarådet:byarådets:byaråd:byaråds:byaråden:byarådens
+COMPOUND(557655, 552853): by + råd
+631551r3<substantiv>bybo:bybo:bybos:bybon:bybons:bybor:bybors:byborna:bybornas
+673757r3<substantiv>byffé:byffé:byffés:byffén:byfféns:byfféer:byfféers:byfféerna:byfféernas
+660867r3<substantiv>byfåne:byfåne:byfånes:byfånen:byfånens:byfånar:byfånars:byfånarna:byfånarnas
+753096r4<substantiv>bygata:bygata:bygatas:bygatan:bygatans:bygator:bygators:bygatorna:bygatornas
+COMPOUND(557655, 555092): by + gata
+548490r9<substantiv>bygd:bygd:bygds:bygden:bygdens:bygder:bygders:bygderna:bygdernas
+CUSTOM: y y bygde
+753104r4<substantiv>bygdedräkt:bygdedräkt:bygdedräkts:bygdedräkten:bygdedräktens:bygdedräkter:bygdedräkters:bygdedräkterna:bygdedräkternas
+COMPOUND(548490, 548725): bygd + dräkt
+753112r3<substantiv>bygdegård:bygdegård:bygdegårds:bygdegården:bygdegårdens:bygdegårdar:bygdegårdars:bygdegårdarna:bygdegårdarnas
+753121r4<substantiv>bygdespel:bygdespel:bygdespels:bygdespelet:bygdespelets:bygdespel:bygdespels:bygdespelen:bygdespelens
+COMPOUND(548490, 552956): bygd + spel
+649077r6<substantiv>bygel:bygel:bygels:bygeln:bygelns:byglar:byglars:byglarna:byglarnas
+CUSTOM: y y bygel
+950789r4<substantiv>bygelbehå:bygelbehå:bygelbehås:bygelbehån:bygelbehåns:bygelbehåar:bygelbehåars:bygelbehåarna:bygelbehåarnas
+COMPOUND(649077, 557640): bygel + behå
+849412r3<substantiv>bygelsåg:bygelsåg:bygelsågs:bygelsågen:bygelsågens:bygelsågar:bygelsågars:bygelsågarna:bygelsågarnas
+585770r15<verb>bygga:bygga:byggde:byggt:bygger:bygg:byggas:byggdes:byggts:byggs:byggd:byggt:byggda:byggande:
+CUSTOM: y y bygg
+660872r3<substantiv>byggande:byggande:byggandes:byggandet:byggandets::::
+660874r3<substantiv>byggarbetare:byggarbetare:byggarbetares:byggarbetaren:byggarbetarens:byggarbetare:byggarbetares:byggarbetarna:byggarbetarnas
+CUSTOM: y y byggarbetar
+660880r3<substantiv>byggare:byggare:byggares:byggaren:byggarens:byggare:byggares:byggarna:byggarnas
+CUSTOM: y y byggar +byggar
+568968r3<adjektiv>byggbar:byggbar:byggbart:byggbara:byggbara::::
+937341r3<substantiv>byggbolag:byggbolag:byggbolags:byggbolaget:byggbolagets:byggbolag:byggbolags:byggbolagen:byggbolagens
+660886r3<substantiv>byggbransch:byggbransch:byggbranschs:byggbranschen:byggbranschens:!:!:!:!
+799174r3<adjektiv>byggd:byggd:byggt:byggda:byggda::::
+612421r10<substantiv>bygge:bygge:bygges:bygget:byggets:byggen:byggens:byggena:byggenas
+970841r3<substantiv>byggenskap:byggenskap:byggenskaps:byggenskapen:byggenskapens::::
+601522r3<substantiv>byggentreprenör:byggentreprenör:byggentreprenörs:byggentreprenören:byggentreprenörens:byggentreprenörer:byggentreprenörers:byggentreprenörerna:byggentreprenörernas
+912687r5<substantiv>byggfel:byggfel:byggfels:byggfelet:byggfelets:byggfel:byggfels:byggfelen:byggfelens
+COMPOUND(585770, 552375): bygga + fel
+CUSTOM: y y byggfels
+912677r4<substantiv>byggfelsförsäkring:byggfelsförsäkring:byggfelsförsäkrings:byggfelsförsäkringen:byggfelsförsäkringens:byggfelsförsäkringar:byggfelsförsäkringars:byggfelsförsäkringarna:byggfelsförsäkringarnas
+COMPOUND(912687, 596902): byggfel + försäkring
+660890r3<substantiv>byggfirma:byggfirma:byggfirmas:byggfirman:byggfirmans:byggfirmor:byggfirmors:byggfirmorna:byggfirmornas
+660904r3<substantiv>byggjobb:byggjobb:byggjobbs:byggjobbet:byggjobbets:byggjobb:byggjobbs:byggjobben:byggjobbens
+660898r3<substantiv>byggjobbare:byggjobbare:byggjobbares:byggjobbaren:byggjobbarens:byggjobbare:byggjobbares:byggjobbarna:byggjobbarnas
+CUSTOM: y y byggjobbar
+660910r3<substantiv>byggkloss:byggkloss:byggkloss:byggklossen:byggklossens:byggklossar:byggklossars:byggklossarna:byggklossarnas
+753130r4<substantiv>bygglov:bygglov:bygglovs:bygglovet:bygglovets:bygglov:bygglovs:byggloven:bygglovens
+CUSTOM: y y bygglovs
+753129r4<substantiv>bygglovsansökan:bygglovsansökan:bygglovsansökans:bygglovsansökan:bygglovsansökans::::
+COMPOUND(753130, 614565): bygglov + ansökan
+601530r3<substantiv>byggmetallvarufabrik:byggmetallvarufabrik:byggmetallvarufabriks:byggmetallvarufabriken:byggmetallvarufabrikens:byggmetallvarufabriker:byggmetallvarufabrikers:byggmetallvarufabrikerna:byggmetallvarufabrikernas
+610504r3<substantiv>byggmetallvaruindustri:byggmetallvaruindustri:byggmetallvaruindustris:byggmetallvaruindustrin:byggmetallvaruindustrins:byggmetallvaruindustrier:byggmetallvaruindustriers:byggmetallvaruindustrierna:byggmetallvaruindustriernas
+609376r3<substantiv>byggmästare:byggmästare:byggmästares:byggmästaren:byggmästarens:byggmästare:byggmästares:byggmästarna:byggmästarnas
+CUSTOM: y y byggmästar
+548492r21<substantiv>byggnad:byggnad:byggnads:byggnaden:byggnadens:byggnader:byggnaders:byggnaderna:byggnadernas
+CUSTOM: y y byggnads +byggnads
+609377r5<substantiv>byggnadsarbetare:byggnadsarbetare:byggnadsarbetares:byggnadsarbetaren:byggnadsarbetarens:byggnadsarbetare:byggnadsarbetares:byggnadsarbetarna:byggnadsarbetarnas
+COMPOUND(548492, 561048): byggnad + arbetare
+CUSTOM: y y byggnadsarbetar byggnadsarbetare
+753139r4<substantiv>byggnadsarbetareförbund:byggnadsarbetareförbund:byggnadsarbetareförbunds:byggnadsarbetareförbundet:byggnadsarbetareförbundets:byggnadsarbetareförbund:byggnadsarbetareförbunds:byggnadsarbetareförbunden:byggnadsarbetareförbundens
+COMPOUND(609377, 552400): byggnadsarbetare + förbund
+884710r4<substantiv>byggnadsdel:byggnadsdel:byggnadsdels:byggnadsdelen:byggnadsdelens:byggnadsdelar:byggnadsdelars:byggnadsdelarna:byggnadsdelarnas
+COMPOUND(548492, 551034): byggnad + del
+601538r3<substantiv>byggnadsentreprenad:byggnadsentreprenad:byggnadsentreprenads:byggnadsentreprenaden:byggnadsentreprenadens:byggnadsentreprenader:byggnadsentreprenaders:byggnadsentreprenaderna:byggnadsentreprenadernas
+606867r3<substantiv>byggnadshantverk:byggnadshantverk:byggnadshantverks:byggnadshantverket:byggnadshantverkets:byggnadshantverk:byggnadshantverks:byggnadshantverken:byggnadshantverkens
+610512r3<substantiv>byggnadsindustri:byggnadsindustri:byggnadsindustris:byggnadsindustrin:byggnadsindustrins:byggnadsindustrier:byggnadsindustriers:byggnadsindustrierna:byggnadsindustriernas
+732349r4<substantiv>byggnadsingenjör:byggnadsingenjör:byggnadsingenjörs:byggnadsingenjören:byggnadsingenjörens:byggnadsingenjörer:byggnadsingenjörers:byggnadsingenjörerna:byggnadsingenjörernas
+COMPOUND(548492, 549327): byggnad + ingenjör
+711219r3<substantiv>byggnadskonst:byggnadskonst:byggnadskonsts:byggnadskonsten:byggnadskonstens::::
+678439r4<substantiv>byggnadskostnad:byggnadskostnad:byggnadskostnads:byggnadskostnaden:byggnadskostnadens:byggnadskostnader:byggnadskostnaders:byggnadskostnaderna:byggnadskostnadernas
+COMPOUND(548492, 549744): byggnad + kostnad
+678447r2<substantiv>byggnadskostnadsindex::::::::
+606873r3<substantiv>byggnadskreditiv:byggnadskreditiv:byggnadskreditivs:byggnadskreditivet:byggnadskreditivets:byggnadskreditiv:byggnadskreditivs:byggnadskreditiven:byggnadskreditivens
+721953r4<substantiv>byggnadskropp:byggnadskropp:byggnadskropps:byggnadskroppen:byggnadskroppens:byggnadskroppar:byggnadskroppars:byggnadskropparna:byggnadskropparnas
+COMPOUND(548492, 551627): byggnad + kropp
+606879r3<substantiv>byggnadslån:byggnadslån:byggnadslåns:byggnadslånet:byggnadslånets:byggnadslån:byggnadslåns:byggnadslånen:byggnadslånens
+601546r3<substantiv>byggnadsmaskin:byggnadsmaskin:byggnadsmaskins:byggnadsmaskinen:byggnadsmaskinens:byggnadsmaskiner:byggnadsmaskiners:byggnadsmaskinerna:byggnadsmaskinernas
+610520r3<substantiv>byggnadsmaskinindustri:byggnadsmaskinindustri:byggnadsmaskinindustris:byggnadsmaskinindustrin:byggnadsmaskinindustrins:byggnadsmaskinindustrier:byggnadsmaskinindustriers:byggnadsmaskinindustrierna:byggnadsmaskinindustriernas
+921534r5<substantiv>byggnadsminne:byggnadsminne:byggnadsminnes:byggnadsminnet:byggnadsminnets:byggnadsminnen:byggnadsminnens:byggnadsminnena:byggnadsminnenas
+COMPOUND(548492, 555491): byggnad + minne
+CUSTOM: y y byggnadsminnes
+641559r6<verb>byggnadsminnesmärka:byggnadsminnesmärka:byggnadsminnesmärkte:byggnadsminnesmärkt:byggnadsminnesmärker:byggnadsminnesmärk:byggnadsminnesmärkas:byggnadsminnesmärktes:byggnadsminnesmärkts:byggnadsminnesmärks:byggnadsminnesmärkt:byggnadsminnesmärkt:byggnadsminnesmärkta:byggnadsminnesmärkande:
+COMPOUND(921534, 585833): byggnadsminne + märka
+548493r3<substantiv>byggnadsnämnd:byggnadsnämnd:byggnadsnämnds:byggnadsnämnden:byggnadsnämndens:byggnadsnämnder:byggnadsnämnders:byggnadsnämnderna:byggnadsnämndernas
+593873r3<substantiv>byggnadsplatta:byggnadsplatta:byggnadsplattas:byggnadsplattan:byggnadsplattans:byggnadsplattor:byggnadsplattors:byggnadsplattorna:byggnadsplattornas
+827622r3<substantiv>byggnadsråd:byggnadsråd:byggnadsråds:byggnadsrådet:byggnadsrådets:byggnadsråd:byggnadsråds:byggnadsråden:byggnadsrådens
+611647r3<substantiv>byggnadssnickeri:byggnadssnickeri:byggnadssnickeris:byggnadssnickeriet:byggnadssnickeriets:byggnadssnickerier:byggnadssnickeriers:byggnadssnickerierna:byggnadssnickeriernas
+841223r3<substantiv>byggnadssten:byggnadssten:byggnadsstens:byggnadsstenen:byggnadsstenens:byggnadsstenar:byggnadsstenars:byggnadsstenarna:byggnadsstenarnas
+623114r4<substantiv>byggnadsverk:byggnadsverk:byggnadsverks:byggnadsverket:byggnadsverkets:byggnadsverk:byggnadsverks:byggnadsverken:byggnadsverkens
+COMPOUND(548492, 553117): byggnad + verk
+786346r4<substantiv>byggnadsvärde:byggnadsvärde:byggnadsvärdes:byggnadsvärdet:byggnadsvärdets:byggnadsvärden:byggnadsvärdens:byggnadsvärdena:byggnadsvärdenas
+COMPOUND(548492, 613015): byggnad + värde
+738820r4<substantiv>byggnadsår:byggnadsår:byggnadsårs:byggnadsåret:byggnadsårets:byggnadsår:byggnadsårs:byggnadsåren:byggnadsårens
+COMPOUND(548492, 553140): byggnad + år
+925935r3<substantiv>byggnation:byggnation:byggnations:byggnationen:byggnationens:byggnationer:byggnationers:byggnationerna:byggnationernas
+970845r3<substantiv>byggning:byggning:byggnings:byggningen:byggningens:byggningar:byggningars:byggningarna:byggningarnas
+970851r3<substantiv>byggningabalk:byggningabalk:byggningabalks:byggningabalken:byggningabalkens:byggningabalkar:byggningabalkars:byggningabalkarna:byggningabalkarnas
+933903r4<substantiv>byggplan:byggplan:byggplans:byggplanen:byggplanens:byggplaner:byggplaners:byggplanerna:byggplanernas
+COMPOUND(585770, 550205): bygga + plan
+660911r3<substantiv>byggsats:byggsats:byggsats:byggsatsen:byggsatsens:byggsatser:byggsatsers:byggsatserna:byggsatsernas
+936998r4<substantiv>byggstart:byggstart:byggstarts:byggstarten:byggstartens:byggstarter:byggstarters:byggstarterna:byggstarternas
+COMPOUND(585770, 603706): bygga + start
+841231r3<substantiv>byggsten:byggsten:byggstens:byggstenen:byggstenens:byggstenar:byggstenars:byggstenarna:byggstenarnas
+937414r4<substantiv>byggstopp:byggstopp:byggstopps:byggstoppet:byggstoppets:byggstopp:byggstopps:byggstoppen:byggstoppens
+COMPOUND(585770, 608140): bygga + stopp
+928583r4<substantiv>byggtid:byggtid:byggtids:byggtiden:byggtidens:byggtider:byggtiders:byggtiderna:byggtidernas
+COMPOUND(585770, 550665): bygga + tid
+606885r3<substantiv>byggvaruhus:byggvaruhus:byggvaruhus:byggvaruhuset:byggvaruhusets:byggvaruhus:byggvaruhus:byggvaruhusen:byggvaruhusens
+784121r3<substantiv>byggår:byggår:byggårs:byggåret:byggårets:byggår:byggårs:byggåren:byggårens
+784128r4<substantiv>byggändamål:byggändamål:byggändamåls:byggändamålet:byggändamålets:byggändamål:byggändamåls:byggändamålen:byggändamålens
+COMPOUND(585770, 553158): bygga + ändamål
+787845r3<substantiv>bygrind:bygrind:bygrinds:bygrinden:bygrindens:bygrindar:bygrindars:bygrindarna:bygrindarnas
+CUSTOM: n n
+957078r4<substantiv>byhåla:byhåla:byhålas:byhålan:byhålans:byhålor:byhålors:byhålorna:byhålornas
+COMPOUND(557655, 624205): by + håla
+970860r4<substantiv>byidiot:byidiot:byidiots:byidioten:byidiotens:byidioter:byidioters:byidioterna:byidioternas
+COMPOUND(557655, 549288): by + idiot
+571754r3<adjektiv>byig:byig:byigt:byiga:byiga::::
+896603r3<substantiv>byinnevånare:byinnevånare:byinnevånares:byinnevånaren:byinnevånarens:byinnevånare:byinnevånares:byinnevånarna:byinnevånarnas
+615563r3<substantiv>byinvånare:byinvånare:byinvånares:byinvånaren:byinvånarens:byinvånare:byinvånares:byinvånarna:byinvånarnas
+CUSTOM: y y byinvånar
+552290r3<substantiv>byk:byk:byks:byket:bykets:byk:byks:byken:bykens
+625114r4<substantiv>byk:byk:byks:byken:bykens:bykar:bykars:bykarna:bykarnas
+923351r4<verb>byka:byka:bykte:bykt:byker:byk:bykas:byktes:bykts:byks, bykes:bykt:bykt:bykta::
+970868r3<substantiv>bykning:bykning:byknings:bykningen:bykningens::::
+CUSTOM: y n
+753151r4<substantiv>byledare:byledare:byledares:byledaren:byledarens:byledare:byledares:byledarna:byledarnas
+COMPOUND(557655, 609818): by + ledare
+938332r3<substantiv>byline:byline:bylines:bylinen:bylinens::::
+735090r3<substantiv>byling:byling:bylings:bylingen:bylingens:bylingar:bylingars:bylingarna:bylingarnas
+571757r4<adjektiv>bylsig:bylsig:bylsigt:bylsiga:bylsiga:bylsigare:bylsigast:bylsigaste:bylsige
+895437r3<verb>bylta:bylta:byltade:byltat:byltar:bylta:byltas:byltades:byltats:byltas:byltad:byltat:byltade:byltande:!
+625119r3<substantiv>bylte:bylte:byltes:byltet:byltets:bylten:byltens:byltena:byltenas
+972707r3<egennamn>Bylund:Bylund:Bylunds
+941799r4<substantiv>bymoln:bymoln:bymolns:bymolnet:bymolnets:bymoln:bymolns:bymolnen:bymolnens
+COMPOUND(557655, 552697): by + moln
+753141r4<substantiv>bymöte:bymöte:bymötes:bymötet:bymötets:bymöten:bymötens:bymötena:bymötenas
+COMPOUND(557655, 560760): by + möte
+CUSTOM: y n n
+970873r4<substantiv>byoriginal:byoriginal:byoriginals:byoriginalet:byoriginalets:byoriginal:byoriginals:byoriginalen:byoriginalens
+COMPOUND(557655, 552740): by + original
+960739r3<substantiv>bypassoperation:bypassoperation:bypassoperations:bypassoperationen:bypassoperationens:bypassoperationer:bypassoperationers:bypassoperationerna:bypassoperationernas
+625225r3<substantiv>byracka:byracka:byrackas:byrackan:byrackans:byrackor:byrackors:byrackorna:byrackornas
+960747r3<substantiv>byrett:byrett:byretts:byretten:byrettens:byretter:byretters:byretterna:byretternas
+560860r6<substantiv>byrå:byrå:byrås:byrån:byråns:byråar:byråars:byråarna:byråarnas
+DEFINITION 1: En slags möbel med utdragbara lådor
+CUSTOM: y y byrå
+560866r13<substantiv>byrå:byrå:byrås:byrån:byråns:byråer:byråers:byråerna:byråernas
+CUSTOM: y y byrå +byrå
+560867r4<substantiv>byråassistent:byråassistent:byråassistents:byråassistenten:byråassistentens:byråassistenter:byråassistenters:byråassistenterna:byråassistenternas
+COMPOUND(560866, 548254): byrå + assistent
+660912r4<substantiv>byråchef:byråchef:byråchefs:byråchefen:byråchefens:byråchefer:byråchefers:byråcheferna:byråchefernas
+COMPOUND(560866, 548529): byrå + chef
+548501r4<substantiv>byråkrat:byråkrat:byråkrats:byråkraten:byråkratens:byråkrater:byråkraters:byråkraterna:byråkraternas
+639227r4<substantiv>byråkrati:byråkrati:byråkratis:byråkratin:byråkratins:byråkratier:byråkratiers:byråkratierna:byråkratiernas
+CUSTOM: y y byråkrati
+586301r4<verb>byråkratisera:byråkratisera:byråkratiserade:byråkratiserat:byråkratiserar:byråkratisera:byråkratiseras:byråkratiserades:byråkratiserats:byråkratiseras:byråkratiserad:byråkratiserat:byråkratiserade:byråkratiserande:
+891991r3<substantiv>byråkratisering:byråkratisering:byråkratiserings:byråkratiseringen:byråkratiseringens::::
+579283r4<adjektiv>byråkratisk:byråkratisk:byråkratiskt:byråkratiska:byråkratiska::::byråkratiske
+866608r3<substantiv>byråkratism:byråkratism:byråkratisms:byråkratismen:byråkratismens::::
+970881r4<substantiv>byråkratspråk:byråkratspråk:byråkratspråks:byråkratspråket:byråkratspråkets::::
+COMPOUND(548501, 552959): byråkrat + språk
+560875r4<substantiv>byrålåda:byrålåda:byrålådas:byrålådan:byrålådans:byrålådor:byrålådors:byrålådorna:byrålådornas
+COMPOUND(560860, 555441): byrå + låda
+786381r3<adjektiv>bysamfälld:bysamfälld:bysamfällt:bysamfällda:bysamfällda::::
+866613r3<substantiv>bysamfällighet:bysamfällighet:bysamfällighets:bysamfälligheten:bysamfällighetens:bysamfälligheter:bysamfälligheters:bysamfälligheterna:bysamfälligheternas
+866621r3<substantiv>bysantin:bysantin:bysantins:bysantinen:bysantinens:bysantiner:bysantiners:bysantinerna:bysantinernas
+970886r3<substantiv>bysantinare:bysantinare:bysantinares:bysantinaren:bysantinarens:bysantinare:bysantinares:bysantinarna:bysantinarnas
+866629r3<adjektiv>bysantinsk:bysantinsk:bysantinskt:bysantinska:bysantinska::::bysantinske
+753158r4<substantiv>byskola:byskola:byskolas:byskolan:byskolans:byskolor:byskolors:byskolorna:byskolornas
+COMPOUND(557655, 557322): by + skola
+866633r3<substantiv>bysnille:bysnille:bysnilles:bysnillet:bysnillets:bysnillen:bysnillens:bysnillena:bysnillenas
+548503r7<substantiv>byst:byst:bysts:bysten:bystens:byster:bysters:bysterna:bysternas
+CUSTOM: y n
+866641r3<substantiv>bystdrottning:bystdrottning:bystdrottnings:bystdrottningen:bystdrottningens:bystdrottningar:bystdrottningars:bystdrottningarna:bystdrottningarnas
+609383r3<substantiv>bysthållare:bysthållare:bysthållares:bysthållaren:bysthållarens:bysthållare:bysthållares:bysthållarna:bysthållarnas
+CUSTOM: y y bysthållar
+738826r4<substantiv>bystmått:bystmått:bystmåtts:bystmåttet:bystmåttets:bystmått:bystmåtts:bystmåtten:bystmåttens
+COMPOUND(548503, 552707): byst + mått
+972711r3<egennamn>Byström:Byström:Byströms
+866649r3<substantiv>bystämma:bystämma:bystämmas:bystämman:bystämmans:bystämmor:bystämmors:bystämmorna:bystämmornas
+970892r3<substantiv>bysättningshäkte:bysättningshäkte:bysättningshäktes:bysättningshäktet:bysättningshäktets:bysättningshäkten:bysättningshäktens:bysättningshäktena:bysättningshäktenas
+557965r7<verb>byta:byta:bytte:bytt:byter:byt:bytas:byttes:bytts:byts:bytt:bytt:bytta:bytande:
+960757r3<substantiv>bytande:bytande:bytandes:bytandet:bytandets::::
+935844r4<substantiv>bytardag:bytardag:bytardags:bytardagen:bytardagens:bytardagar:bytardagars:bytardagarna:bytardagarnas
+COMPOUND(689227, 551009): bytare + dag
+689227r4<substantiv>bytare:bytare:bytares:bytaren:bytarens:bytare:bytares:bytarna:bytarnas
+CUSTOM: n y
+568971r3<adjektiv>bytbar:bytbar:bytbart:bytbara:bytbara::::
+560883r12<substantiv>byte:byte:bytes:bytet:bytets:byten:bytens:bytena:bytenas
+CUSTOM: y y bytes
+560884r6<substantiv>byte:byte::::byte:::
+DEFINITION 1: En minnesenhet bestående av åtta bitar,\
+från engelskan
+882219r3<substantiv>bytekod:bytekod:bytekods:bytekoden:bytekodens:bytekoder:bytekoders:bytekoderna:bytekodernas
+CUSTOM: y n n
+786908r4<substantiv>bytesbalans:bytesbalans:bytesbalans:bytesbalansen:bytesbalansens:bytesbalanser:bytesbalansers:bytesbalanserna:bytesbalansernas
+CUSTOM: y y bytesbalans
+786916r4<substantiv>bytesbalansunderskott:bytesbalansunderskott:bytesbalansunderskotts:bytesbalansunderskottet:bytesbalansunderskottets:bytesbalansunderskott:bytesbalansunderskotts:bytesbalansunderskotten:bytesbalansunderskottens
+COMPOUND(786908, 553071): bytesbalans + underskott
+722075r4<substantiv>bytesdjur:bytesdjur:bytesdjurs:bytesdjuret:bytesdjurets:bytesdjur:bytesdjurs:bytesdjuren:bytesdjurens
+COMPOUND(560883, 552322): byte + djur
+707471r3<substantiv>bytesrätt:bytesrätt:bytesrätts:bytesrätten:bytesrättens::::
+769587r4<substantiv>byting:byting:bytings:bytingen:bytingens:bytingar:bytingars:bytingarna:bytingarnas
+560886r3<substantiv>bytta:bytta:byttas:byttan:byttans:byttor:byttors:byttorna:byttornas
+753166r4<substantiv>byväg:byväg:byvägs:byvägen:byvägens:byvägar:byvägars:byvägarna:byvägarnas
+COMPOUND(557655, 552110): by + väg
+560888r14<substantiv>byxa, byxor:byxa:byxas:byxan:byxans:byxor:byxors:byxorna:byxornas
+CUSTOM: y y byx
+928274r4<substantiv>byxben:byxben:byxbens:byxbenet:byxbenets:byxben:byxbens:byxbenen:byxbenens
+COMPOUND(560888, 552233): byxa, byxor + ben
+939507r4<substantiv>byxficka:byxficka:byxfickas:byxfickan:byxfickans:byxfickor:byxfickors:byxfickorna:byxfickornas
+COMPOUND(560888, 561662): byxa, byxor + ficka
+901528r4<substantiv>byxknapp:byxknapp:byxknapps:byxknappen:byxknappens:byxknappar:byxknappars:byxknapparna:byxknapparnas
+COMPOUND(560888, 551553): byxa, byxor + knapp
+689228r3<substantiv>byxlinning:byxlinning:byxlinnings:byxlinningen:byxlinningens:byxlinningar:byxlinningars:byxlinningarna:byxlinningarnas
+CUSTOM: y y byxlinnings
+564771r3<adjektiv>byxlös:byxlös:byxlöst:byxlösa:byxlösa::::
+546348r4<verb>båda:båda:bådade:bådat:bådar:båda::::::::bådande:
+627886r3<pronomen>båda:båda
+689234r3<pronomen>bådadera:bådadera
+924854r7<pronomen>bådaderas:bådaderas
+635995r3<pronomen>bådas:bådas
+560890r3<konjunktion>både:både
+557968r5<substantiv>båg:båg:bågs:båget:bågets:!:!:!:!
+DEFINITION 1: Osanning [vardagligt]. Som i "bluff och båg"
+970903r4<substantiv>bågbro:bågbro:bågbros:bågbron:bågbrons:bågbroar:bågbroars:bågbroarna:bågbroarnas
+COMPOUND(560891, 557960): båge + bro
+970971r3<adjektiv>bågböjd:bågböjd:bågböjt:bågböjda:bågböjda::::::::::::
+560891r24<substantiv>båge:båge:båges:bågen:bågens:bågar:bågars:bågarna:bågarnas
+CUSTOM: y y
+550983r4<substantiv>bågfil:bågfil:bågfils:bågfilen:bågfilens:bågfilar:bågfilars:bågfilarna:bågfilarnas
+CUSTOM: y n bågfils
+738834r4<substantiv>bågfilsblad:bågfilsblad:bågfilsblads:bågfilsbladet:bågfilsbladets:bågfilsblad:bågfilsblads:bågfilsbladen:bågfilsbladens
+COMPOUND(550983, 552254): bågfil + blad
+970975r4<substantiv>bågform:bågform:bågforms:bågformen:bågformens:bågformer:bågformers:bågformerna:bågformernas
+COMPOUND(560891, 548947): båge + form
+970940r3<adjektiv>bågformad:bågformad:bågformat:bågformade:bågformade:!:!:!:::::::::
+571760r3<adjektiv>bågformig:bågformig:bågformigt:bågformiga:bågformiga::::
+970983r4<substantiv>bågfris:bågfris:bågfris:bågfrisen:bågfrisens:bågfriser:bågfrisers:bågfriserna:bågfrisernas
+COMPOUND(560891, 628032): båge + fris
+970962r4<substantiv>båggång:båggång:båggångs:båggången:båggångens:båggångar:båggångars:båggångarna:båggångarnas
+COMPOUND(560891, 557251): båge + gång
+571763r3<adjektiv>bågig:bågig:bågigt:bågiga:bågiga::::
+CUSTOM: y n
+866657r3<substantiv>båglampa:båglampa:båglampas:båglampan:båglampans:båglampor:båglampors:båglamporna:båglampornas
+970911r4<substantiv>båglinje:båglinje:båglinjes:båglinjen:båglinjens:båglinjer:båglinjers:båglinjerna:båglinjernas
+COMPOUND(560891, 611937): båge + linje
+970990r3<substantiv>bågljus:bågljus:bågljus:bågljuset:bågljusets::::
+CUSTOM: y n
+965916r4<substantiv>båglängd:båglängd:båglängds:båglängden:båglängdens:båglängder:båglängders:båglängderna:båglängdernas
+COMPOUND(560891, 549972): båge + längd
+966006r3<substantiv>bågminut:bågminut:bågminuts:bågminuten:bågminutens:bågminuter:bågminuters:bågminuterna:bågminuternas
+560892r4<verb>bågna:bågna:bågnade:bågnat:bågnar:bågna::::::::bågnande:
+639260r5<substantiv>bågparentes:bågparentes:bågparentes:bågparentesen:bågparentesens:bågparenteser:bågparentesers:bågparenteserna:bågparentesernas
+970945r4<substantiv>bågrörelse:bågrörelse:bågrörelses:bågrörelsen:bågrörelsens:bågrörelser:bågrörelsers:bågrörelserna:bågrörelsernas
+COMPOUND(560891, 611968): båge + rörelse
+866665r3<substantiv>bågsekund:bågsekund:bågsekunds:bågsekunden:bågsekundens:bågsekunder:bågsekunders:bågsekunderna:bågsekundernas
+970955r4<substantiv>bågskott:bågskott:bågskotts:bågskottet:bågskottets:bågskott:bågskotts:bågskotten:bågskottens
+COMPOUND(560891, 608011): båge + skott
+660914r3<substantiv>bågskytt:bågskytt:bågskytts:bågskytten:bågskyttens:bågskyttar:bågskyttars:bågskyttarna:bågskyttarnas
+CUSTOM: y y bågskytte
+753175r4<substantiv>bågskytte:bågskytte:bågskyttes:bågskyttet:bågskyttets::::
+COMPOUND(560891, 619656): båge + skytte
+970919r4<substantiv>bågspann:bågspann:bågspanns:bågspannet:bågspannets:bågspann:bågspanns:bågspannen:bågspannens
+COMPOUND(560891, 555385): båge + spann
+970925r4<substantiv>bågsträng:bågsträng:bågsträngs:bågsträngen:bågsträngens:bågsträngar:bågsträngars:bågsträngarna:bågsträngarnas
+COMPOUND(560891, 644902): båge + sträng
+729650r5<substantiv>bågsvets:bågsvets:bågsvets:bågsvetsen:bågsvetsens:bågsvetsar:bågsvetsars:bågsvetsarna:bågsvetsarnas
+COMPOUND(560891, 729636): båge + svets
+CUSTOM: y y bågsvets
+753179r4<substantiv>bågsvetsmaskin:bågsvetsmaskin:bågsvetsmaskins:bågsvetsmaskinen:bågsvetsmaskinens:bågsvetsmaskiner:bågsvetsmaskiners:bågsvetsmaskinerna:bågsvetsmaskinernas
+COMPOUND(729650, 550005): bågsvets + maskin
+729665r10<substantiv>bågsvetsning:bågsvetsning:bågsvetsnings:bågsvetsningen:bågsvetsningens::::
+COMPOUND(560891, 670827): båge + svetsning
+596589r3<substantiv>bågsåg:bågsåg:bågsågs:bågsågen:bågsågens:bågsågar:bågsågars:bågsågarna:bågsågarnas
+970933r4<substantiv>bågvalv:bågvalv:bågvalvs:bågvalvet:bågvalvets:bågvalv:bågvalvs:bågvalven:bågvalvens
+COMPOUND(560891, 553103): båge + valv
+557988r3<substantiv>båk:båk:båks:båken:båkens:båkar:båkars:båkarna:båkarnas
+552292r4<substantiv>bål:bål:båls:bålet:bålets:bål:båls:bålen:bålens
+555962r6<substantiv>bål:bål:båls:bålen:bålens:bålar:bålars:bålarna:bålarnas
+DEFINITION 1: En blandning av olika drycker
+CUSTOM: y n
+799175r4<adjektiv>båld:båld:bålt:bålda:bålda::::bålde
+629184r4<substantiv>bålgeting:bålgeting:bålgetings:bålgetingen:bålgetingens:bålgetingar:bålgetingars:bålgetingarna:bålgetingarnas
+CUSTOM: y y bålgeting
+738843r6<substantiv>bålgetingsbo:bålgetingsbo:bålgetingsbos:bålgetingsboet:bålgetingsboets:bålgetingsbon:bålgetingsbons:bålgetingsbona:bålgetingsbonas
+COMPOUND(629184, 612409): bålgeting + bo
+753181r4<substantiv>bålskål:bålskål:bålskåls:bålskålen:bålskålens:bålskålar:bålskålars:bålskålarna:bålskålarnas
+COMPOUND(555962, 551854): bål + skål
+CUSTOM: y n n
+895677r4<egennamn>Bålsta:Bålsta:Bålstas
+CUSTOM: y n Bålsta
+895679r4<substantiv>Bålstabo:Bålstabo:Bålstabos:Bålstabon:Bålstabons:Bålstabor:Bålstabors:Bålstaborna:Bålstabornas
+COMPOUND(895677, 855482): Bålsta + bo
+560893r3<substantiv>bålverk:bålverk:bålverks:bålverket:bålverkets:bålverk:bålverks:bålverken:bålverkens
+554924r3<interjektion>bång:bång
+571764r5<adjektiv>bångstyrig:bångstyrig:bångstyrigt:bångstyriga:bångstyriga:bångstyrigare:bångstyrigast:bångstyrigaste:bångstyrige
+970995r3<substantiv>bångstyrighet:bångstyrighet:bångstyrighets:bångstyrigheten:bångstyrighetens::::
+550991r5<substantiv>bår:bår:bårs:båren:bårens:bårar:bårars:bårarna:bårarnas
+753190r3<substantiv>bårbärare:bårbärare:bårbärares:bårbäraren:bårbärarens:bårbärare:bårbärares:bårbärarna:bårbärarnas
+548505r8<substantiv>bård:bård:bårds:bården:bårdens:bårder:bårders:bårderna:bårdernas
+CUSTOM: y n
+701429r3<substantiv>bårhus:bårhus:bårhus:bårhuset:bårhusets:bårhus:bårhus:bårhusen:bårhusens
+CUSTOM: y y bårhus
+970999r4<substantiv>bårtäcke:bårtäcke:bårtäckes:bårtäcket:bårtäckets:bårtäcken:bårtäckens:bårtäckena:bårtäckenas
+COMPOUND(550991, 593431): bår + täcke
+552294r4<substantiv>bås:bås:bås:båset:båsets:bås:bås:båsen:båsens
+728080r3<egennamn>Båstad:Båstad:Båstads
+CUSTOM: y n Båstads
+550993r43<substantiv>båt:båt:båts:båten:båtens:båtar:båtars:båtarna:båtarnas
+CUSTOM: y y båt
+560899r3<verb>båta:båta:båtade:båtat:båtar:båta:::::::::
+929728r3<substantiv>båtben:båtben:båtbens:båtbenet:båtbenets:båtben:båtbens:båtbenen:båtbenens
+845487r4<adjektiv>båtburen:båtburen:båtburet:båtburna:båtburna::::båtburne::::::::
+609389r3<substantiv>båtbyggare:båtbyggare:båtbyggares:båtbyggaren:båtbyggarens:båtbyggare:båtbyggares:båtbyggarna:båtbyggarnas
+CUSTOM: y y båtbyggar
+753196r3<substantiv>båtbyggeri:båtbyggeri:båtbyggeris:båtbyggeriet:båtbyggeriets:båtbyggerier:båtbyggeriers:båtbyggerierna:båtbyggeriernas
+930385r4<substantiv>båtdäck:båtdäck:båtdäcks:båtdäcket:båtdäckets:båtdäck:båtdäcks:båtdäcken:båtdäckens
+COMPOUND(550993, 552337): båt + däck
+930391r4<substantiv>båtfolk:båtfolk:båtfolks:båtfolket:båtfolkets::::
+COMPOUND(550993, 552385): båt + folk
+571767r3<adjektiv>båtformig:båtformig:båtformigt:båtformiga:båtformiga::::
+930395r4<substantiv>båtfärd:båtfärd:båtfärds:båtfärden:båtfärdens:båtfärder:båtfärders:båtfärderna:båtfärdernas
+COMPOUND(550993, 562205): båt + färd
+930403r4<substantiv>båthamn:båthamn:båthamns:båthamnen:båthamnens:båthamnar:båthamnars:båthamnarna:båthamnarnas
+COMPOUND(550993, 551369): båt + hamn
+929734r4<substantiv>båthus:båthus:båthus:båthuset:båthusets:båthus:båthus:båthusen:båthusens
+COMPOUND(550993, 552480): båt + hus
+637074r2<substantiv>båtlag::::::::
+971008r3<adverb>båtledes:båtledes
+929740r4<substantiv>båtliv:båtliv:båtlivs:båtlivet:båtlivets::::
+COMPOUND(550993, 552667): båt + liv
+921556r4<substantiv>båtmigrant:båtmigrant:båtmigrants:båtmigranten:båtmigrantens:båtmigranter:båtmigranters:båtmigranterna:båtmigranternas
+COMPOUND(550993, 877835): båt + migrant
+610528r3<substantiv>båtmotor:båtmotor:båtmotors:båtmotorn:båtmotorns:båtmotorer:båtmotorers:båtmotorerna:båtmotorernas
+CUSTOM: y y båtmotor
+601554r3<substantiv>båtmotorfabrik:båtmotorfabrik:båtmotorfabriks:båtmotorfabriken:båtmotorfabrikens:båtmotorfabriker:båtmotorfabrikers:båtmotorfabrikerna:båtmotorfabrikernas
+610536r3<substantiv>båtmotorindustri:båtmotorindustri:båtmotorindustris:båtmotorindustrin:båtmotorindustrins:båtmotorindustrier:båtmotorindustriers:båtmotorindustrierna:båtmotorindustriernas
+787494r3<substantiv>båtnad:båtnad:båtnads:båtnaden:båtnadens:!:!:!:!
+936338r4<substantiv>båtolycka:båtolycka:båtolyckas:båtolyckan:båtolyckans:båtolyckor:båtolyckors:båtolyckorna:båtolyckornas
+COMPOUND(550993, 560318): båt + olycka
+930411r4<substantiv>båtresa:båtresa:båtresas:båtresan:båtresans:båtresor:båtresors:båtresorna:båtresornas
+COMPOUND(550993, 594958): båt + resa
+689235r4<substantiv>båtshake:båtshake:båtshakes:båtshaken:båtshakens:båtshakar:båtshakars:båtshakarna:båtshakarnas
+COMPOUND(550993, 599830): båt + hake
+753204r8<substantiv>båtsman:båtsman:båtsmans:båtsmannen:båtsmannens:båtsmän:båtsmäns:båtsmännen:båtsmännens
+COMPOUND(550993, 557796): båt + man
+971028r4<substantiv>båtsmanshåll:båtsmanshåll:båtsmanshålls:båtsmanshållet:båtsmanshållets:båtsmanshåll:båtsmanshålls:båtsmanshållen:båtsmanshållens
+COMPOUND(753204, 552486): båtsman + håll
+971018r4<substantiv>båtsmanskompani:båtsmanskompani:båtsmanskompanis:båtsmanskompaniet:båtsmanskompaniets:båtsmanskompanier:båtsmanskompaniers:båtsmanskompanierna:båtsmanskompaniernas
+COMPOUND(753204, 652737): båtsman + kompani
+971009r4<substantiv>båtsmansstol:båtsmansstol:båtsmansstols:båtsmansstolen:båtsmansstolens:båtsmansstolar:båtsmansstolars:båtsmansstolarna:båtsmansstolarnas
+COMPOUND(753204, 551944): båtsman + stol
+971035r4<substantiv>båtsmanstorp:båtsmanstorp:båtsmanstorps:båtsmanstorpet:båtsmanstorpets:båtsmanstorp:båtsmanstorps:båtsmanstorpen:båtsmanstorpens
+COMPOUND(753204, 553057): båtsman + torp
+606890r3<substantiv>båttillbehör:båttillbehör:båttillbehörs:båttillbehöret:båttillbehörets:båttillbehör:båttillbehörs:båttillbehören:båttillbehörens
+759887r3<substantiv>båttur:båttur:båtturs:båtturen:båtturens:båtturer:båtturers:båtturerna:båtturernas
+929745r4<substantiv>båttyp:båttyp:båttyps:båttypen:båttypens:båttyper:båttypers:båttyperna:båttypernas
+COMPOUND(550993, 550722): båt + typ
+606896r3<substantiv>båtvarv:båtvarv:båtvarvs:båtvarvet:båtvarvets:båtvarv:båtvarvs:båtvarven:båtvarvens
+930419r4<substantiv>båtvett:båtvett:båtvetts:båtvettet:båtvettets:!:!:!:!
+COMPOUND(550993, 625005): båt + vett
+615178r3<substantiv>båtägare:båtägare:båtägares:båtägaren:båtägarens:båtägare:båtägares:båtägarna:båtägarnas
+CUSTOM: y y båtägar
+554925r3<interjektion>bä:bä
+763659r3<substantiv>bäbis:bäbis:bäbis:bäbisen:bäbisens:bäbisar:bäbisars:bäbisarna:bäbisarnas
+550994r5<substantiv>bäck:bäck:bäcks:bäcken:bäckens:bäckar:bäckars:bäckarna:bäckarnas
+CUSTOM: y y bäck
+753212r3<substantiv>bäckahäst:bäckahäst:bäckahästs:bäckahästen:bäckahästens:bäckahästar:bäckahästars:bäckahästarna:bäckahästarnas
+627896r8<substantiv>bäcken:bäcken:bäckens:bäckenet:bäckenets:bäcken:bäckens:bäckenen:bäckenens
+CUSTOM: y y bäcken
+660916r3<substantiv>bäckenben:bäckenben:bäckenbens:bäckenbenet:bäckenbenets:bäckenben:bäckenbens:bäckenbenen:bäckenbenens
+689239r4<substantiv>bäckfåra:bäckfåra:bäckfåras:bäckfåran:bäckfårans:bäckfåror:bäckfårors:bäckfårorna:bäckfårornas
+COMPOUND(550994, 624435): bäck + fåra
+553383r3<egennamn>Bäckström:Bäckström:Bäckströms
+971041r3<substantiv>bäcköring:bäcköring:bäckörings:bäcköringen:bäcköringens:bäcköringar:bäcköringars:bäcköringarna:bäcköringarnas
+550995r5<substantiv>bädd:bädd:bädds:bädden:bäddens:bäddar:bäddars:bäddarna:bäddarnas
+CUSTOM: y y bädd
+546344r6<verb>bädda:bädda:bäddade:bäddat:bäddar:bädda:bäddas:bäddades:bäddats:bäddas:bäddad:bäddat:bäddade:bäddande:
+568974r3<adjektiv>bäddbar:bäddbar:bäddbart:bäddbara:bäddbara::::
+707625r3<substantiv>bäddning:bäddning:bäddnings:bäddningen:bäddningens:bäddningar:bäddningars:bäddningarna:bäddningarnas
+646588r4<substantiv>bäddsoffa:bäddsoffa:bäddsoffas:bäddsoffan:bäddsoffans:bäddsoffor:bäddsoffors:bäddsofforna:bäddsoffornas
+COMPOUND(550995, 595305): bädd + soffa
+560900r4<substantiv>bägare:bägare:bägares:bägaren:bägarens:bägare:bägares:bägarna:bägarnas
+CUSTOM: y y bägar
+571770r3<adjektiv>bägarformig:bägarformig:bägarformigt:bägarformiga:bägarformiga::::
+849420r3<substantiv>bägarlav:bägarlav:bägarlavs:bägarlaven:bägarlavens:bägarlavar:bägarlavars:bägarlavarna:bägarlavarnas
+560901r3<pronomen>bägge:bägge
+689245r3<pronomen>bäggedera:bäggedera
+560902r6<substantiv>bälg:bälg:bälgs:bälgen:bälgens:bälgar:bälgars:bälgarna:bälgarnas
+CUSTOM: y n
+738876r3<verb>bälga:bälga:bälgade:bälgat:bälgar:bälga:::::::::
+971049r4<substantiv>bälgkamera:bälgkamera:bälgkameras:bälgkameran:bälgkamerans:bälgkameror:bälgkamerors:bälgkamerorna:bälgkamerornas
+COMPOUND(560902, 559163): bälg + kamera
+631703r3<substantiv>bälta:bälta:bältas:bältan:bältans:bältor:bältors:bältorna:bältornas
+CUSTOM: y n
+949178r3<verb>bälta:bälta:bältade:bältat:bältar:bälta:bältas:bältades:bältats:bältas:bältad:bältat:bältade:bältande:
+CUSTOM: y n
+560910r12<substantiv>bälte:bälte:bältes:bältet:bältets:bälten:bältens:bältena:bältenas
+CUSTOM: y y bält
+949023r4<substantiv>bältesanvändning:bältesanvändning:bältesanvändnings:bältesanvändningen:bältesanvändningens:bältesanvändningar:bältesanvändningars:bältesanvändningarna:bältesanvändningarnas
+COMPOUND(560910, 596352): bälte + användning
+912695r4<substantiv>bälteskontroll:bälteskontroll:bälteskontrolls:bälteskontrollen:bälteskontrollens:bälteskontroller:bälteskontrollers:bälteskontrollerna:bälteskontrollernas
+COMPOUND(560910, 549704): bälte + kontroll
+971057r3<substantiv>bältespännare:bältespännare:bältespännares:bältespännaren:bältespännarens:bältespännare:bältespännares:bältespännarna:bältespännarnas
+946826r4<substantiv>bältessträckare:bältessträckare:bältessträckares:bältessträckaren:bältessträckarens:bältessträckare:bältessträckares:bältessträckarna:bältessträckarnas
+COMPOUND(560910, 644889): bälte + sträckare
+631711r4<substantiv>bältros:bältros:bältros:bältrosen:bältrosens:!:!:!:!
+COMPOUND(560910, 556677): bälte + ros
+560911r4<verb>bända:bända:bände:bänt:bänder:bänd:bändas:bändes:bänts:bänds:bänd:bänt:bända::
+CUSTOM: y n
+971063r3<substantiv>bändelkorsnäbb:bändelkorsnäbb:bändelkorsnäbbs:bändelkorsnäbben:bändelkorsnäbbens:bändelkorsnäbbar:bändelkorsnäbbars:bändelkorsnäbbarna:bändelkorsnäbbarnas
+866677r3<substantiv>bändjärn:bändjärn:bändjärns:bändjärnet:bändjärnets:bändjärn:bändjärns:bändjärnen:bändjärnens
+971071r3<substantiv>bändning:bändning:bändnings:bändningen:bändningens:bändningar:bändningars:bändningarna:bändningarnas
+866683r3<verb>bändsla:bändsla:bändslade:bändslat:bändslar:bändsla:bändslas:bändslades:bändslats:bändslas:bändslad:bändslat:bändslade:bändslande:
+550997r10<substantiv>bänk:bänk:bänks:bänken:bänkens:bänkar:bänkars:bänkarna:bänkarnas
+CUSTOM: y y bänk
+560912r4<verb>bänka:bänka:bänkade:bänkat:bänkar:bänka:bänkas:bänkades:bänkats:bänkas:bänkad:bänkat:bänkade::
+601562r3<substantiv>bänkborrmaskin:bänkborrmaskin:bänkborrmaskins:bänkborrmaskinen:bänkborrmaskinens:bänkborrmaskiner:bänkborrmaskiners:bänkborrmaskinerna:bänkborrmaskinernas
+941384r3<substantiv>bänknötare:bänknötare:bänknötares:bänknötaren:bänknötarens:bänknötare:bänknötares:bänknötarna:bänknötarnas
+930426r4<substantiv>bänkrad:bänkrad:bänkrads:bänkraden:bänkradens:bänkrader:bänkraders:bänkraderna:bänkradernas
+COMPOUND(550997, 550306): bänk + rad
+601570r3<substantiv>bänkslipmaskin:bänkslipmaskin:bänkslipmaskins:bänkslipmaskinen:bänkslipmaskinens:bänkslipmaskiner:bänkslipmaskiners:bänkslipmaskinerna:bänkslipmaskinernas
+552295r8<substantiv>bär:bär:bärs:bäret:bärets:bär:bärs:bären:bärens
+CUSTOM: y y bär
+560535r16<verb>bära:bära:bar:burit:bär:bär:bäras:bars:burits:bärs, bäres:buren:buret:burna:bärande:
+CUSTOM: y n
+571096r3<adjektiv>bärande:bärande:bärande:bärande:bärande:!:!:!:
+560913r4<substantiv>bärare:bärare:bärares:bäraren:bärarens:bärare:bärares:bärarna:bärarnas
+CUSTOM: y y bärar +bärar
+563705r3<adjektiv>bärarfri:bärarfri:bärarfritt:bärarfria:bärarfria::::
+958859r3<substantiv>bärarinna:bärarinna:bärarinnas:bärarinnan:bärarinnans:bärarinnor:bärarinnors:bärarinnorna:bärarinnornas
+560914r3<adjektiv>bärbar:bärbar:bärbart:bärbara:bärbara:!:!:!:!
+660920r4<substantiv>bärbuske:bärbuske:bärbuskes:bärbusken:bärbuskens:bärbuskar:bärbuskars:bärbuskarna:bärbuskarnas
+COMPOUND(552295, 599790): bär + buske
+571773r3<adjektiv>bärfattig:bärfattig:bärfattigt:bärfattiga:bärfattiga::::
+849428r3<substantiv>bärfis:bärfis:bärfis:bärfisen:bärfisens:bärfisar:bärfisars:bärfisarna:bärfisarnas
+546345r5<verb>bärga:bärga:bärgade:bärgat:bärgar:bärga:bärgas:bärgades:bärgats:bärgas:bärgad:bärgat:bärgade:bärgande:
+790326r3<adjektiv>bärgad:bärgad:bärgat:bärgade:bärgade:!:!:!:
+753220r4<substantiv>bärgare:bärgare:bärgares:bärgaren:bärgarens:bärgare:bärgares:bärgarna:bärgarnas
+971080r4<substantiv>bärgarlön:bärgarlön:bärgarlöns:bärgarlönen:bärgarlönens:bärgarlöner:bärgarlöners:bärgarlönerna:bärgarlönernas
+COMPOUND(753220, 549976): bärgare + lön
+660922r5<substantiv>bärgning:bärgning:bärgnings:bärgningen:bärgningens:bärgningar:bärgningars:bärgningarna:bärgningarnas
+CUSTOM: y y bärgnings +bärgnings
+606902r3<substantiv>bärhandtag:bärhandtag:bärhandtags:bärhandtaget:bärhandtagets:bärhandtag:bärhandtags:bärhandtagen:bärhandtagens
+571776r4<adjektiv>bärig:bärig:bärigt:bäriga:bäriga:bärigare:bärigast:bärigaste:::::::::
+660923r3<substantiv>bärighet:bärighet:bärighets:bärigheten:bärighetens::::
+CUSTOM: y y bärighets
+753226r3<substantiv>bäring:bäring:bärings:bäringen:bäringens:bäringar:bäringars:bäringarna:bäringarnas
+599791r3<substantiv>bärkasse:bärkasse:bärkasses:bärkassen:bärkassens:bärkassar:bärkassars:bärkassarna:bärkassarnas
+933911r3<substantiv>bärkraft:bärkraft:bärkrafts:bärkraften:bärkraftens::::
+571777r3<adjektiv>bärkraftig:bärkraftig:bärkraftigt:bärkraftiga:bärkraftiga::::
+930434r4<substantiv>bärlina:bärlina:bärlinas:bärlinan:bärlinans:bärlinor:bärlinors:bärlinorna:bärlinornas
+COMPOUND(560535, 560088): bära + lina
+849435r3<substantiv>bärmos:bärmos:bärmos:bärmoset:bärmosets::::
+670199r4<substantiv>bärning:bärning:bärnings:bärningen:bärningens:bärningar:bärningars:bärningarna:bärningarnas
+CUSTOM: y y bärnings +bärnings
+753234r5<substantiv>bärnsten:bärnsten:bärnstens:bärnstenen:bärnstenens::::
+CUSTOM: y y bärnstens
+797343r3<adjektiv>bärnstensgul:bärnstensgul:bärnstensgult:bärnstensgula:bärnstensgula::::
+787855r4<substantiv>bärnstensstycke:bärnstensstycke:bärnstensstyckes:bärnstensstycket:bärnstensstyckets:bärnstensstycken:bärnstensstyckens:bärnstensstyckena:bärnstensstyckenas
+COMPOUND(753234, 612917): bärnsten + stycke
+950797r4<substantiv>bärnstenssyra:bärnstenssyra:bärnstenssyras:bärnstenssyran:bärnstenssyrans:bärnstenssyror:bärnstenssyrors:bärnstenssyrorna:bärnstenssyrornas
+COMPOUND(753234, 624847): bärnsten + syra
+596597r3<substantiv>bärodling:bärodling:bärodlings:bärodlingen:bärodlingens:bärodlingar:bärodlingars:bärodlingarna:bärodlingarnas
+971091r3<substantiv>bärplansbåt:bärplansbåt:bärplansbåts:bärplansbåten:bärplansbåtens:bärplansbåtar:bärplansbåtars:bärplansbåtarna:bärplansbåtarnas
+854826r4<substantiv>bärraket:bärraket:bärrakets:bärraketen:bärraketens:bärraketer:bärraketers:bärraketerna:bärraketernas
+CUSTOM: y n bärraket
+854825r4<substantiv>bärraketprogram:bärraketprogram:bärraketprograms:bärraketprogrammet:bärraketprogrammets:bärraketprogram:bärraketprograms:bärraketprogrammen:bärraketprogrammens
+COMPOUND(854826, 555118): bärraket + program
+849438r4<substantiv>bärrem:bärrem:bärrems:bärremmen:bärremmens:bärremmar:bärremmars:bärremmarna:bärremmarnas
+COMPOUND(560535, 621743): bära + rem
+624099r3<substantiv>bärs:bärs:!:bärsen:bärsens:bärs:!:bärsen:bärsens
+866692r3<substantiv>bärsa:bärsa:bärsas:bärsan:bärsans:bärsor:bärsors:bärsorna:bärsornas
+CUSTOM: y n
+930442r4<substantiv>bärsele:bärsele:bärseles:bärselen:bärselens:bärselar:bärselars:bärselarna:bärselarnas
+COMPOUND(560535, 628694): bära + sele
+930450r4<substantiv>bärstol:bärstol:bärstols:bärstolen:bärstolens:bärstolar:bärstolars:bärstolarna:bärstolarnas
+COMPOUND(560535, 551944): bära + stol
+550998r4<substantiv>bärsärk:bärsärk:bärsärks:bärsärken:bärsärkens:bärsärkar:bärsärkars:bärsärkarna:bärsärkarnas
+CUSTOM: y y
+627627r4<substantiv>bärsärkagång:bärsärkagång:bärsärkagångs:bärsärkagången:bärsärkagångens::::
+COMPOUND(550998, 557251): bärsärk + gång
+866700r3<substantiv>bärsärkaraseri:bärsärkaraseri:bärsärkaraseris:bärsärkaraseriet:bärsärkaraseriets::::
+900265r3<substantiv>

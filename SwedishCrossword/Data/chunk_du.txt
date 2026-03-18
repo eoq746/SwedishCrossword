@@ -1,0 +1,663 @@
+:lerhus:lerhuset:lerhusets:lerhus:lerhus:lerhusen:lerhusens
+COMPOUND(594621, 552480): lera + hus
+574223r5<adjektiv>lerig:lerig:lerigt:leriga:leriga:lerigare:lerigast:lerigaste:lerige
+553260r7<egennamn>Leringe:Leringe:Leringe
+CUSTOM: y n Leringe
+931528r4<substantiv>lerjord:lerjord:lerjords:lerjorden:lerjordens:lerjordar:lerjordars:lerjordarna:lerjordarnas
+COMPOUND(594621, 598410): lera + jord
+693584r4<substantiv>lerkruka:lerkruka:lerkrukas:lerkrukan:lerkrukans:lerkrukor:lerkrukors:lerkrukorna:lerkrukornas
+COMPOUND(594621, 555513): lera + kruka
+845093r3<substantiv>lerkrus:lerkrus:lerkrus:lerkruset:lerkrusets:lerkrus:lerkrus:lerkrusen:lerkrusens
+931536r3<substantiv>lerkärl:lerkärl:lerkärls:lerkärlet:lerkärlets:lerkärl:lerkärls:lerkärlen:lerkärlens
+989771r4<substantiv>lermorän:lermorän:lermoräns:lermoränen:lermoränens:lermoräner:lermoräners:lermoränerna:lermoränernas
+COMPOUND(594621, 865991): lera + morän
+965033r4<substantiv>lerskred:lerskred:lerskreds:lerskredet:lerskredets:lerskred:lerskreds:lerskreden:lerskredens
+COMPOUND(594621, 626289): lera + skred
+945930r4<substantiv>lertäkt:lertäkt:lertäkts:lertäkten:lertäktens:lertäkter:lertäkters:lertäkterna:lertäkternas
+COMPOUND(594621, 550725): lera + täkt
+728165r3<egennamn>Lerum:Lerum:Lerums
+CUSTOM: y n Lerum
+931542r4<substantiv>lervägg:lervägg:lerväggs:lerväggen:lerväggens:lerväggar:lerväggars:lerväggarna:lerväggarnas
+COMPOUND(594621, 552111): lera + vägg
+931550r4<substantiv>leråker:leråker:leråkers:leråkern:leråkerns:leråkrar:leråkrars:leråkrarna:leråkrarnas
+COMPOUND(594621, 620388): lera + åker
+962073r3<substantiv>lesbian:lesbian:lesbians:lesbianen:lesbianens:lesbianer:lesbianers:lesbianerna:lesbianernas
+558511r3<substantiv>lesbianism:lesbianism:lesbianisms:lesbianismen:lesbianismens:!:!:!:!
+581642r3<adjektiv>lesbisk:lesbisk:lesbiskt:lesbiska:lesbiska::::
+870737r3<substantiv>lesothier:lesothier:lesothiers:lesothiern:lesothierns:lesothier:lesothiers:lesothierna:lesothiernas
+581643r4<adjektiv>lesothisk:lesothisk:lesothiskt:lesothiska:lesothiska::::lesothiske
+870743r3<substantiv>lesothiska:lesothiska:lesothiskas:lesothiskan:lesothiskans:lesothiskor:lesothiskors:lesothiskorna:lesothiskornas
+628305r3<adjektiv>less:less:less:less:less:!:!:!:
+728167r3<egennamn>Lessebo:Lessebo:Lessebos
+CUSTOM: y n Lessebo
+547282r7<verb>leta:leta:letade:letat:letar:leta:letas:letades:letats:letas::::letande:
+901119r3<adjektiv>letal:letal:letalt:letala:letala:!:!:!:!:!:!:!:!:!:!:!:!
+CUSTOM: n n y
+754506r3<substantiv>letande:letande:letandes:letandet:letandets::::
+870752r3<substantiv>letargi:letargi:letargis:letargin:letargins::::
+581645r4<adjektiv>letargisk:letargisk:letargiskt:letargiska:letargiska::::letargiske
+807295r4<substantiv>letning:letning:letnings:letningen:letningens:letningar:letningars:letningarna:letningarnas
+555984r3<substantiv>lett:lett:letts:letten:lettens:letter:letters:letterna:letternas
+CUSTOM: y n
+568763r4<adjektiv>lettisk:lettisk:lettiskt:lettiska:lettiska::::lettiske
+594626r3<substantiv>lettiska:lettiska:lettiskas:lettiskan:lettiskans:lettiskor:lettiskors:lettiskorna:lettiskornas
+554068r3<egennamn>Lettland:Lettland:Lettlands
+CUSTOM: y n Lettlands
+581648r3<adjektiv>lettristisk:lettristisk:lettristiskt:lettristiska:lettristiska::::
+724336r4<substantiv>leukemi:leukemi:leukemis:leukemin, leukemien:leukemins, leukemiens:leukemier:leukemiers:leukemierna:leukemiernas
+CUSTOM: y y leukemi
+724362r4<substantiv>leukemicell:leukemicell:leukemicells:leukemicellen:leukemicellens:leukemiceller:leukemicellers:leukemicellerna:leukemicellernas
+COMPOUND(724336, 548515): leukemi + cell
+870758r3<substantiv>leukocyt:leukocyt:leukocyts:leukocyten:leukocytens:leukocyter:leukocyters:leukocyterna:leukocyternas
+923856r4<substantiv>lev:lev:levs:leven:levens:levar:levars:levarna:levarnas
+DEFINITION 1: Osyrat bröd
+CUSTOM: n n y
+560019r10<verb>leva:leva:levde:levt, levat:lever:lev:levas:levdes:levts, levats:levs:levd:levt:levda:levande:leve
+618697r3<adjektiv>levande:levande:levande:levande:levande:!:!:!:
+618698r5<verb>levandegöra:levandegöra:levandegjorde:levandegjort:levandegör:levandegör:levandegöras:levandegjordes:levandegjorts:levandegörs, levandegöres:levandegjord:levandegjort:levandegjorda:levandegörande:
+549927r3<substantiv>levang:levang:levangs:levangen:levangens:levanger:levangers:levangerna:levangernas
+560022r3<substantiv>leve:leve:leves:levet:levets:leven:levens:levena:levenas
+CUSTOM: y n
+618708r3<substantiv>levebröd:levebröd:levebröds:levebrödet:levebrödets::::
+560028r8<substantiv>lever:lever:levers:levern:leverns:levrar:levrars:levrarna:levrarnas
+CUSTOM: y y lever
+549928r5<substantiv>leverans:leverans:leverans:leveransen:leveransens:leveranser:leveransers:leveranserna:leveransernas
+CUSTOM: y y leverans
+569366r3<adjektiv>leveransbar:leveransbar:leveransbart:leveransbara:leveransbara::::
+563081r3<adjektiv>leveransgill:leveransgill:leveransgillt:leveransgilla:leveransgilla::::
+549929r9<substantiv>leverantör:leverantör:leverantörs:leverantören:leverantörens:leverantörer:leverantörers:leverantörerna:leverantörernas
+CUSTOM: y y leverantörs +leverantörs
+631437r7<substantiv>leverantörsled:leverantörsled:leverantörsleds:leverantörsledet:leverantörsledets:leverantörsled:leverantörsleds:leverantörsleden:leverantörsledens
+COMPOUND(549929, 552662): leverantör + led
+547283r5<verb>leverera:leverera:levererade:levererat:levererar:leverera:levereras:levererades:levererats:levereras:levererad:levererat:levererade:levererande:
+792919r3<adjektiv>leverfärgad:leverfärgad:leverfärgat:leverfärgade:leverfärgade:!:!:!:
+693590r4<substantiv>leverne:leverne:levernes:levernet:levernets::::
+870769r3<substantiv>leverop:leverop:leverops:leveropet:leveropets:leverop:leverops:leveropen:leveropens
+944892r4<substantiv>leverpalt:leverpalt:leverpalts:leverpalten:leverpaltens:leverpaltar:leverpaltars:leverpaltarna:leverpaltarnas
+COMPOUND(560028, 624593): lever + palt
+646596r4<substantiv>leverpastej:leverpastej:leverpastejs:leverpastejen:leverpastejens:leverpastejer:leverpastejers:leverpastejerna:leverpastejernas
+COMPOUND(560028, 550169): lever + pastej
+944901r4<substantiv>levertran:levertran:levertrans:levertranet, levertranen:levertranets, levertranens::::
+COMPOUND(560028, 856165): lever + tran
+730806r4<substantiv>leverven:leverven:levervens:levervenen:levervenens:levervener:leverveners:levervenerna:levervenernas
+COMPOUND(560028, 600518): lever + ven
+CUSTOM: y n n
+854987r3<egennamn>Lewis:Lewis:Lewis
+590123r3<verb>levitera:levitera:leviterade:leviterat:leviterar:levitera:::::::::
+581651r3<adjektiv>levitisk:levitisk:levitiskt:levitiska:levitiska::::
+693591r8<substantiv>levnad:levnad:levnads:levnaden:levnadens::::
+CUSTOM: y y levnads
+581652r3<adjektiv>levnadsfrisk:levnadsfrisk:levnadsfriskt:levnadsfriska:levnadsfriska::::
+681211r3<substantiv>levnadsförhållande:::::levnadsförhållanden:levnadsförhållandens:levnadsförhållandena:levnadsförhållandenas
+801861r4<adjektiv>levnadsglad:levnadsglad:levnadsglatt:levnadsglada:levnadsglada::::levnadsglade
+681212r3<substantiv>levnadskostnad:levnadskostnad:levnadskostnads:levnadskostnaden:levnadskostnadens:levnadskostnader:levnadskostnaders:levnadskostnaderna:levnadskostnadernas
+574224r3<adjektiv>levnadslustig:levnadslustig:levnadslustigt:levnadslustiga:levnadslustiga::::
+851188r3<substantiv>levnadsmod:levnadsmod:levnadsmods:levnadsmodet:levnadsmodets::::
+723199r4<substantiv>levnadsmönster:levnadsmönster:levnadsmönsters:levnadsmönstret:levnadsmönstrets:levnadsmönster:levnadsmönsters:levnadsmönstren, levnadsmönsterna:levnadsmönstrens, levnadsmönsternas
+COMPOUND(693591, 621588): levnad + mönster
+693593r4<substantiv>levnadsteckning:levnadsteckning:levnadstecknings:levnadsteckningen:levnadsteckningens:levnadsteckningar:levnadsteckningars:levnadsteckningarna:levnadsteckningarnas
+COMPOUND(693591, 671990): levnad + teckning
+CUSTOM: y y levnadstecknings
+693617r3<substantiv>levnadsvana:::::levnadsvanor:levnadsvanors:levnadsvanorna:levnadsvanornas
+693601r4<substantiv>levnadsvillkor:levnadsvillkor:levnadsvillkors:levnadsvillkoret:levnadsvillkorets:levnadsvillkor:levnadsvillkors:levnadsvillkoren:levnadsvillkorens
+COMPOUND(693591, 553124): levnad + villkor
+847474r3<adjektiv>levnadsvis:levnadsvis:levnadsvist:levnadsvisa:levnadsvisa::::levnadsvise
+693607r4<substantiv>levnadsår:levnadsår:levnadsårs:levnadsåret:levnadsårets:levnadsår:levnadsårs:levnadsåren:levnadsårens
+COMPOUND(693591, 553140): levnad + år
+693613r4<substantiv>levnadsöde:levnadsöde:levnadsödes:levnadsödet:levnadsödets:levnadsöden:levnadsödens:levnadsödena:levnadsödenas
+COMPOUND(693591, 571235): levnad + öde
+693614r4<verb>levra:levra:levrade:levrat:levrar:levra:levras:levrades:levrats:levras::::levrande:
+792922r3<adjektiv>levrad:levrad:levrat:levrade:levrade:!:!:!:
+560034r3<substantiv>lex:lex:::::::
+CUSTOM: y n n
+560036r3<substantiv>lexem:lexem:lexems:lexemet:lexemets:lexem:lexems:lexemen:lexemens
+720037r3<adjektiv>lexikal:lexikal:lexikalt:lexikala:lexikala::::
+581655r3<adjektiv>lexikalisk:lexikalisk:lexikaliskt:lexikaliska:lexikaliska::::
+602665r3<substantiv>lexikograf:lexikograf:lexikografs:lexikografen:lexikografens:lexikografer:lexikografers:lexikograferna:lexikografernas
+870776r3<substantiv>lexikografi:lexikografi:lexikografis:lexikografin:lexikografins::::
+581656r3<adjektiv>lexikografisk:lexikografisk:lexikografiskt:lexikografiska:lexikografiska::::
+870780r3<substantiv>lexikologi:lexikologi:lexikologis:lexikologin:lexikologins::::
+581659r3<adjektiv>lexikologisk:lexikologisk:lexikologiskt:lexikologiska:lexikologiska::::
+552664r8<substantiv>lexikon:lexikon:lexikons:lexikonet:lexikonets:lexikon, lexika:lexikons, lexikas:lexikonen:lexikonens
+DEFINITION 1: Uppslagsverk
+CUSTOM: y y lexikon
+911794r4<substantiv>lexikonord:lexikonord:lexikonords:lexikonordet:lexikonordets:lexikonord:lexikonords:lexikonorden:lexikonordens
+COMPOUND(552664, 555138): lexikon + ord
+762234r3<egennamn>Lexus:Lexus:Lexus
+658440r3<egennamn>Li:Li:Lis
+972427r3<egennamn>Liam:Liam:Liams
+556127r3<substantiv>lian:lian:lians:lianen:lianens:lianer:lianers:lianerna:lianernas
+CUSTOM: y n
+549930r3<substantiv>libanes:libanes:libanes:libanesen:libanesens:libaneser:libanesers:libaneserna:libanesernas
+581662r4<adjektiv>libanesisk:libanesisk:libanesiskt:libanesiska:libanesiska:!:!:!:libanesiske
+870784r3<substantiv>libanesiska:libanesiska:libanesiskas:libanesiskan:libanesiskans:libanesiskor:libanesiskors:libanesiskorna:libanesiskornas
+554069r3<egennamn>Libanon:Libanon:Libanons
+CUSTOM: y n Libanon
+870792r3<substantiv>libbsticka:libbsticka:libbstickas:libbstickan:libbstickans:libbstickor:libbstickors:libbstickorna:libbstickornas
+870800r3<substantiv>libell:libell:libells:libellen:libellens:libeller:libellers:libellerna:libellernas
+549937r3<substantiv>liberal:liberal:liberals:liberalen:liberalens:liberaler:liberalers:liberalerna:liberalernas
+622653r3<adjektiv>liberal:liberal:liberalt:liberala:liberala:liberalare:liberalast:liberalaste:liberale
+CUSTOM: y y liberal
+547284r5<verb>liberalisera:liberalisera:liberaliserade:liberaliserat:liberaliserar:liberalisera:liberaliseras:liberaliserades:liberaliserats:liberaliseras:liberaliserad:liberaliserat:liberaliserade:liberaliserande:
+702201r3<substantiv>liberalisering:liberalisering:liberaliserings:liberaliseringen:liberaliseringens:liberaliseringar:liberaliseringars:liberaliseringarna:liberaliseringarnas
+CUSTOM: y y liberaliserings +liberaliserings
+558809r4<substantiv>liberalism:liberalism:liberalisms:liberalismen:liberalismens:!:!:!:!
+581664r3<adjektiv>liberalistisk:liberalistisk:liberalistiskt:liberalistiska:liberalistiska::::
+554070r3<egennamn>Liberia:Liberia:Liberias
+CUSTOM: y n Liberia
+641728r3<substantiv>liberian:liberian:liberians:liberianen:liberianens:liberianer:liberianers:liberianerna:liberianernas
+763112r3<adjektiv>liberiansk:liberiansk:liberianskt:liberianska:liberianska:!:!:!:liberianske
+870809r3<substantiv>liberianska:liberianska:liberianskas:liberianskan:liberianskans:liberianskor:liberianskors:liberianskorna:liberianskornas
+641736r3<substantiv>liberier:liberier:liberiers:liberiern:liberierns:liberier:liberiers:liberierna:liberiernas
+581667r4<adjektiv>liberisk:liberisk:liberiskt:liberiska:liberiska::::liberiske
+870817r3<substantiv>liberiska:liberiska:liberiskas:liberiskan:liberiskans:liberiskor:liberiskors:liberiskorna:liberiskornas
+641742r4<substantiv>libero:libero:liberos:liberon:liberons:liberor:liberors:liberorna:liberornas
+549940r3<substantiv>libertarian:libertarian:libertarians:libertarianen:libertarianens:libertarianer:libertarianers:libertarianerna:libertarianernas
+982333r3<substantiv>libertarianism:libertarianism:libertarianisms:libertarianismen:libertarianismens::::
+641746r3<substantiv>libertin:libertin:libertins:libertinen:libertinens:libertiner:libertiners:libertinerna:libertinernas
+558672r3<substantiv>libertinism:libertinism:libertinisms:libertinismen:libertinismens:!:!:!:!
+581669r3<adjektiv>libertinistisk:libertinistisk:libertinistiskt:libertinistiska:libertinistiska::::
+798275r3<adjektiv>libidinös:libidinös:libidinöst:libidinösa:libidinösa::::
+870826r3<substantiv>libido:libido:libidos:libidon:libidons::::
+870830r3<substantiv>librettist:librettist:librettists:librettisten:librettistens:librettister:librettisters:librettisterna:librettisternas
+687750r6<substantiv>libretto:libretto:librettos:libretton, librettot:librettons, librettots:libretton:librettons:librettona:librettonas
+CUSTOM: y y libretto
+554071r3<egennamn>Libyen:Libyen:Libyens
+CUSTOM: y n Libyen
+641754r3<substantiv>libyer:libyer:libyers:libyern:libyerns:libyer:libyers:libyerna:libyernas
+763115r3<adjektiv>libysk:libysk:libyskt:libyska:libyska:!:!:!:libyske
+870838r3<substantiv>libyska:libyska:libyskas:libyskan:libyskans:libyskor:libyskors:libyskorna:libyskornas
+549942r7<substantiv>licens:licens:licens:licensen:licensens:licenser:licensers:licenserna:licensernas
+CUSTOM: y y licens +licens
+669567r4<substantiv>licensavgift:licensavgift:licensavgifts:licensavgiften:licensavgiftens:licensavgifter:licensavgifters:licensavgifterna:licensavgifternas
+COMPOUND(549942, 548299): licens + avgift
+799790r3<adjektiv>licensbelagd:licensbelagd:licensbelagt:licensbelagda:licensbelagda::::
+870847r3<verb>licensera:licensera:licenserade:licenserat:licenserar:licensera:licenseras:licenserades:licenserats:licenseras::::licenserande:
+587145r4<verb>licensiera:licensiera:licensierade:licensierat:licensierar:licensiera:licensieras:licensierades:licensierats:licensieras:licensierad:licensierat:licensierade::
+702212r3<substantiv>licensiering:licensiering:licensierings:licensieringen:licensieringens:licensieringar:licensieringars:licensieringarna:licensieringarnas
+CUSTOM: y y licensierings
+663137r6<verb>licensskjuta:licensskjuta:licenssköt:licensskjutit:licensskjuter:licensskjut:licensskjutas:licenssköts:licensskjutits:licensskjuts, licensskjutes:licensskjuten:licensskjutet:licensskjutna:licensskjutande:
+COMPOUND(549942, 593371): licens + skjuta
+860864r5<substantiv>licenssystem:licenssystem:licenssystems:licenssystemet:licenssystemets:licenssystem:licenssystems:licenssystemen:licenssystemens
+COMPOUND(549942, 553021): licens + system
+754510r5<substantiv>licentiat:licentiat:licentiats:licentiaten:licentiatens:licentiater:licentiaters:licentiaterna:licentiaternas
+CUSTOM: y y licentiat
+754509r3<substantiv>licentiatavhandling::::::::
+COMPOUND(754510, 606186): licentiat + avhandling
+754518r4<substantiv>licentiatexamen:licentiatexamen:licentiatexamens:licentiatexamen:licentiatexamens:licentiatexamina:licentiatexaminas:licentiatexamina:licentiatexaminas
+COMPOUND(754510, 689645): licentiat + examen
+590131r4<verb>licentiera:licentiera:licentierade:licentierat:licentierar:licentiera:licentieras:licentierades:licentierats:licentieras:licentierad:licentierat:licentierade:licentierande:
+554072r3<egennamn>Lichtenstein:Lichtenstein:Lichtensteins
+CUSTOM: y n Lichtenstein
+923850r4<substantiv>lid:lid:lids:liden:lidens:lider:liders:liderna:lidernas
+DEFINITION 1: Backe, sluttning
+560043r6<verb>lida:lida:led:lidit:lider:lid:!:!:!:!:liden:lidet:lidna:lidande:
+CUSTOM: y n
+560046r3<substantiv>lidande:lidande:lidandes:lidandet:lidandets:lidanden:lidandens:lidandena:lidandenas
+973040r3<egennamn>Lidberg:Lidberg:Lidbergs
+560050r3<substantiv>lidelse:lidelse:lidelses:lidelsen:lidelsens:lidelser:lidelsers:lidelserna:lidelsernas
+CUSTOM: y y lidelse
+563962r3<adjektiv>lidelsefri:lidelsefri:lidelsefritt:lidelsefria:lidelsefria::::
+560051r3<adjektiv>lidelsefull:lidelsefull:lidelsefullt:lidelsefulla:lidelsefulla::::lidelsefulle
+854404r3<egennamn>Lidén:Lidén:Lidéns
+560055r3<substantiv>lider:lider:liders:lidret:lidrets:lider:liders:lidren:lidrens
+560061r4<adjektiv>liderlig:liderlig:liderligt:liderliga:liderliga:liderligare:liderligast:liderligaste:liderlige
+687752r3<substantiv>liderlighet:liderlighet:liderlighets:liderligheten:liderlighetens::::
+CUSTOM: y y liderlighets
+554294r4<egennamn>Lidingö:Lidingö:Lidingös, Lidingö
+CUSTOM: y n Lidingö
+554296r3<egennamn>Lidköping:Lidköping:Lidköpings
+CUSTOM: y n Lidköpings
+553468r3<egennamn>Lidman:Lidman:Lidmans
+973044r3<egennamn>Lidström:Lidström:Lidströms
+560065r3<substantiv>lie:lie:lies:lien:liens:liar:liars:liarna:liarnas
+637704r3<substantiv>liebhaber:liebhaber:liebhabers:liebhabern:liebhaberns:liebhabrar:liebhabrars:liebhabrarna:liebhabrarnas
+637712r3<egennamn>Liechtenstein:Liechtenstein:Liechtensteins
+CUSTOM: y n Liechtenstein
+870860r3<substantiv>liechtensteinare:liechtensteinare:liechtensteinares:liechtensteinaren:liechtensteinarens:liechtensteinare:liechtensteinares:liechtensteinarna:liechtensteinarnas
+637714r3<adjektiv>liechtensteinsk:liechtensteinsk:liechtensteinskt:liechtensteinska:liechtensteinska::::liechtensteinske
+870866r3<substantiv>lieknagg:lieknagg:lieknaggs:lieknaggen:lieknaggens:lieknaggar:lieknaggars:lieknaggarna:lieknaggarnas
+948579r3<substantiv>lieman:::liemannen:liemannens::::
+560066r8<verb>liera:liera:lierade:lierat:lierar:liera:lieras:lierades:lierats:lieras:lierad:lierat:lierade:lierande:
+792923r3<adjektiv>lierad:lierad:lierat:lierade:lierade:!:!:!:
+870874r3<substantiv>lieskaft:lieskaft:lieskafts:lieskaftet:lieskaftets:lieskaft:lieskafts:lieskaften:lieskaftens
+875834r3<substantiv>lietag:lietag:lietags:lietaget:lietagets:lietag:lietags:lietagen:lietagens
+560067r5<substantiv>lift:lift:lifts:liften:liftens:liftar:liftars:liftarna:liftarnas
+CUSTOM: y y lift
+560070r4<verb>lifta:lifta:liftade:liftat:liftar:lifta:liftas:liftades:liftats:liftas::::liftande:
+615365r3<substantiv>liftare:liftare:liftares:liftaren:liftarens:liftare:liftares:liftarna:liftarnas
+CUSTOM: y y liftar
+754520r4<substantiv>liftkort:liftkort:liftkorts:liftkortet:liftkortets:liftkort:liftkorts:liftkorten:liftkortens
+COMPOUND(560067, 552580): lift + kort
+754527r4<substantiv>liftkö:liftkö:liftkös:liftkön:liftköns:liftköer:liftköers:liftköerna:liftköernas
+COMPOUND(560067, 557680): lift + kö
+560071r10<substantiv>liga:liga:ligas:ligan:ligans:ligor:ligors:ligorna:ligornas
+CUSTOM: y y liga
+754535r4<substantiv>ligafotboll:ligafotboll:ligafotbolls:ligafotbollen:ligafotbollens:ligafotbollar:ligafotbollars:ligafotbollarna:ligafotbollarnas
+COMPOUND(560071, 598234): liga + fotboll
+754551r4<substantiv>ligalag:ligalag:ligalags:ligalaget:ligalagets:ligalag:ligalags:ligalagen:ligalagens
+COMPOUND(560071, 625660): liga + lag
+754543r4<substantiv>ligamatch:ligamatch:ligamatchs:ligamatchen:ligamatchens:ligamatcher:ligamatchers:ligamatcherna:ligamatchernas
+COMPOUND(560071, 550011): liga + match
+846335r3<substantiv>ligament:ligament:ligaments:ligamentet:ligamentets:ligament:ligaments:ligamenten:ligamentens
+637696r3<substantiv>ligatur:ligatur:ligaturs:ligaturen:ligaturens:ligaturer:ligaturers:ligaturerna:ligaturernas
+560073r3<substantiv>ligg:ligg:liggs:ligget:liggets::::
+559340r6<verb>ligga:ligga:låg:legat:ligger:ligg::::::::liggande:
+CUSTOM: y y ligg
+687749r3<adjektiv>liggande:liggande:liggande:liggande:liggande:!:!:!:
+637722r5<substantiv>liggare:liggare:liggares:liggaren:liggarens:liggare:liggares:liggarna:liggarnas
+CUSTOM: y n liggar
+678580r4<substantiv>liggfåtölj:liggfåtölj:liggfåtöljs:liggfåtöljen:liggfåtöljens:liggfåtöljer:liggfåtöljers:liggfåtöljerna:liggfåtöljernas
+COMPOUND(559340, 549001): ligga + fåtölj
+637726r3<substantiv>liggning:liggning:liggnings:liggningen:liggningens:liggningar:liggningars:liggningarna:liggningarnas
+CUSTOM: y y liggnings
+574227r3<adjektiv>liggriktig:liggriktig:liggriktigt:liggriktiga:liggriktiga::::
+851192r3<substantiv>liggsår:liggsår:liggsårs:liggsåret:liggsårets:liggsår:liggsårs:liggsåren:liggsårens
+936693r3<substantiv>light:light:::::::
+CUSTOM: y n light
+549943r3<substantiv>ligist:ligist:ligists:ligisten:ligistens:ligister:ligisters:ligisterna:ligisternas
+CUSTOM: y y ligist
+851198r3<substantiv>ligistdåd:ligistdåd:ligistdåds:ligistdådet:ligistdådets:ligistdåd:ligistdåds:ligistdåden:ligistdådens
+962083r4<substantiv>lignin:lignin:lignins:ligninet:ligninets::::
+CUSTOM: y n
+962088r4<substantiv>ligninhalt:ligninhalt:ligninhalts:ligninhalten:ligninhaltens:ligninhalter:ligninhalters:ligninhalterna:ligninhalternas
+COMPOUND(962083, 549191): lignin + halt
+637734r3<egennamn>Ligurien:Ligurien:Liguriens
+CUSTOM: y n Ligurien
+581672r3<adjektiv>ligurisk:ligurisk:liguriskt:liguriska:liguriska::::
+956520r3<substantiv>liguster:liguster:ligusters:ligustern:ligusterns:ligustrar:ligustrars:ligustrarna:ligustrarnas
+552665r5<substantiv>lik:lik:liks:liket:likets:lik:liks:liken:likens
+CUSTOM: y n
+564576r6<adjektiv>lik:lik:likt:lika:lika::::
+CUSTOM: y n
+571132r6<adverb>lika:lika
+CUSTOM: y n
+571133r4<adjektiv>lika:lika:lika:lika:lika:!:!:!:
+CUSTOM: y n
+635871r3<verb>lika:lika:likade:likat:likar:lika:likas:likades:likats:likas:likad:likat:likade:likande:
+CUSTOM: y n
+816489r3<substantiv>likabehandling:likabehandling:likabehandlings:likabehandlingen:likabehandlingens:!:!:!:!
+CUSTOM: y y likabehandlings
+615011r3<adjektiv>likaberättigad:likaberättigad:likaberättigat:likaberättigade:likaberättigade:!:!:!:
+615014r3<substantiv>likaberättigande:likaberättigande:likaberättigandes:likaberättigandet:likaberättigandets::::
+564594r4<adjektiv>likadan:likadan:likadant:likadana:likadana:!:!:!:
+571134r3<adverb>likafullt:likafullt
+792924r3<adjektiv>likafördelad:likafördelad:likafördelat:likafördelade:likafördelade:!:!:!:
+571135r3<adverb>likaledes:likaledes
+615019r3<adjektiv>likalydande:likalydande:likalydande:likalydande:likalydande:!:!:!:
+754557r4<substantiv>likalön:likalön:likalöns:likalönen:likalönens:likalöner:likalöners:likalönerna:likalönernas
+792927r3<adjektiv>likarmad:likarmad:likarmat:likarmade:likarmade:!:!:!:
+642115r3<adjektiv>likartad:likartad:likartat:likartade:likartade:!:!:!:
+615018r3<adjektiv>likasinnad:likasinnad:likasinnat:likasinnade:likasinnade:!:!:!:
+615021r3<adverb>likasom:likasom
+571136r3<adverb>likaså:likaså
+615020r3<adverb>likasåväl:likasåväl
+801082r3<adjektiv>likatänkande:likatänkande:likatänkande:likatänkande:likatänkande:!:!:!:
+571137r3<adverb>likaväl:likaväl
+571138r3<adjektiv>likbent:likbent:likbent:likbenta:likbenta:!:!:!:
+826442r3<substantiv>likbesiktning:likbesiktning:likbesiktnings:likbesiktningen:likbesiktningens:likbesiktningar:likbesiktningars:likbesiktningarna:likbesiktningarnas
+571140r3<substantiv>likbil:likbil:likbils:likbilen:likbilens:likbilar:likbilars:likbilarna:likbilarnas
+571148r3<adjektiv>likblek:likblek:likblekt:likbleka:likbleka:!:!:!:likbleke
+826450r3<substantiv>likbränning:likbränning:likbrännings:likbränningen:likbränningens::::
+826454r3<substantiv>likbål:likbål:likbåls:likbålet:likbålets:likbål:likbåls:likbålen:likbålens
+826460r3<substantiv>likbår:likbår:likbårs:likbåren:likbårens:likbårar:likbårars:likbårarna:likbårarnas
+826468r3<substantiv>likbärare:likbärare:likbärares:likbäraren:likbärarens:likbärare:likbärares:likbärarna:likbärarnas
+687714r5<substantiv>likdel:likdel:likdels:likdelen:likdelens:likdelar:likdelars:likdelarna:likdelarnas
+COMPOUND(564576, 551034): lik + del
+943825r4<substantiv>likdelsfynd:likdelsfynd:likdelsfynds:likdelsfyndet:likdelsfyndets:likdelsfynd:likdelsfynds:likdelsfynden:likdelsfyndens
+COMPOUND(687714, 552396): likdel + fynd
+625664r3<substantiv>like:like:likes:liken:likens:likar:likars:likarna:likarnas
+574230r3<adjektiv>likfasig:likfasig:likfasigt:likfasiga:likfasiga::::
+CUSTOM: y n n
+826474r3<substantiv>likfläck:likfläck:likfläcks:likfläcken:likfläckens:likfläckar:likfläckars:likfläckarna:likfläckarnas
+574233r3<adjektiv>likflänsig:likflänsig:likflänsigt:likflänsiga:likflänsiga::::
+826482r3<verb>likforma:likforma:likformade:likformat:likformar:likforma:likformas:likformades:likformats:likformas:likformad:likformat:likformade:likformande:
+571152r3<adjektiv>likformig:likformig:likformigt:likformiga:likformiga:!:!:!:
+684038r4<substantiv>likformighet:likformighet:likformighets:likformigheten:likformighetens:likformigheter:likformigheters:likformigheterna:likformigheternas
+BASEWORDS: likformighets
+CUSTOM: y y likformighets
+826491r3<substantiv>likfärd:likfärd:likfärds:likfärden:likfärdens:likfärder:likfärders:likfärderna:likfärdernas
+792930r3<adjektiv>likfärgad:likfärgad:likfärgat:likfärgade:likfärgade:!:!:!:
+826499r3<substantiv>likfölje:likfölje:likföljes:likföljet:likföljets:likföljen:likföljens:likföljena:likföljenas
+826507r3<substantiv>likgarn:likgarn:likgarns:likgarnet:likgarnets::::
+571153r3<adjektiv>likgiltig:likgiltig:likgiltigt:likgiltiga:likgiltiga:!:!:!:likgiltige
+687722r3<substantiv>likgiltighet:likgiltighet:likgiltighets:likgiltigheten:likgiltighetens::::
+CUSTOM: y y likgiltighets
+571154r4<substantiv>likhet:likhet:likhets:likheten:likhetens:likheter:likheters:likheterna:likheternas
+CUSTOM: y y likhets
+687723r4<substantiv>likhetstecken:likhetstecken:likhetsteckens:likhetstecknet:likhetstecknets:likhetstecken:likhetsteckens:likhetstecknen:likhetstecknens
+COMPOUND(571154, 559296): likhet + tecken
+826512r3<substantiv>likhund:likhund:likhunds:likhunden:likhundens:likhundar:likhundars:likhundarna:likhundarnas
+571156r3<substantiv>likkista:likkista:likkistas:likkistan:likkistans:likkistor:likkistors:likkistorna:likkistornas
+826521r3<substantiv>liklukt:liklukt:liklukts:liklukten:likluktens::::
+826525r3<substantiv>likmask:likmask:likmasks:likmasken:likmaskens:likmaskar:likmaskars:likmaskarna:likmaskarnas
+547285r4<verb>likna:likna:liknade:liknat:liknar:likna:liknas:liknades:liknats:liknas:liknad:liknat:liknade::
+642116r5<adjektiv>liknande:liknande:liknande:liknande:liknande:!:!:!:
+571158r3<substantiv>liknelse:liknelse:liknelses:liknelsen:liknelsens:liknelser:liknelsers:liknelserna:liknelsernas
+CUSTOM: y y liknelse
+574236r3<adjektiv>liknämnig:liknämnig:liknämnigt:liknämniga:liknämniga::::
+571159r4<adjektiv>liknöjd:liknöjd:liknöjt:liknöjda:liknöjda::::liknöjde
+687724r3<substantiv>liknöjdhet:liknöjdhet:liknöjdhets:liknöjdheten:liknöjdhetens::::
+CUSTOM: y y liknöjdhets
+687726r3<substantiv>likplundrare:likplundrare:likplundrares:likplundraren:likplundrarens:likplundrare:likplundrares:likplundrarna:likplundrarnas
+CUSTOM: y y likplundrar
+687732r4<substantiv>likplundring:likplundring:likplundrings:likplundringen:likplundringens:likplundringar:likplundringars:likplundringarna:likplundringarnas
+CUSTOM: y y likplundrings
+566535r3<adjektiv>likpolig:likpolig:likpoligt:likpoliga:likpoliga::::
+CUSTOM: y n n
+826538r4<substantiv>likpredikan:likpredikan:likpredikans:likpredikan:likpredikans:likpredikningar:likpredikningars:likpredikningarna:likpredikningarnas
+687737r4<verb>likrikta:likrikta:likriktade:likriktat:likriktar:likrikta:likriktas:likriktades:likriktats:likriktas:likriktad:likriktat:likriktade:likriktande:
+870893r3<substantiv>likriktare:likriktare:likriktares:likriktaren:likriktarens:likriktare:likriktares:likriktarna:likriktarnas
+CUSTOM: y y likriktar +likriktar
+826541r3<substantiv>likriktning:likriktning:likriktnings:likriktningen:likriktningens::::
+574239r3<adjektiv>liksidig:liksidig:liksidigt:liksidiga:liksidiga::::
+826545r3<substantiv>likskändare:likskändare:likskändares:likskändaren:likskändarens:likskändare:likskändares:likskändarna:likskändarnas
+826551r3<substantiv>likskändning:likskändning:likskändnings:likskändningen:likskändningens:likskändningar:likskändningars:likskändningarna:likskändningarnas
+566538r3<adjektiv>likskänklig:likskänklig:likskänkligt:likskänkliga:likskänkliga::::
+615022r3<adverb>liksom:liksom
+620470r3<konjunktion>liksom:liksom
+826559r3<substantiv>likspänning:likspänning:likspännings:likspänningen:likspänningens:likspänningar:likspänningars:likspänningarna:likspänningarnas
+826567r3<substantiv>likstelhet:likstelhet:likstelhets:likstelheten:likstelhetens::::
+982339r3<adjektiv>likstor:likstor:likstort:likstora:likstora::::::::::::
+CUSTOM: y n
+659892r4<substantiv>likström:likström:likströms:likströmmen:likströmmens:likströmmar:likströmmars:likströmmarna:likströmmarnas
+CUSTOM: y y likströms
+659889r4<substantiv>likströmsgenerator:likströmsgenerator:likströmsgenerators:likströmsgeneratorn:likströmsgeneratorns:likströmsgeneratorer:likströmsgeneratorers:likströmsgeneratorerna:likströmsgeneratorernas
+COMPOUND(659892, 562833): likström + generator
+687745r5<verb>likställa:likställa:likställde:likställt:likställer:likställ:likställas:likställdes:likställts:likställs, likställes:likställd:likställt:likställda:likställande:
+COMPOUND(571132, 585797): lika + ställa
+799796r3<adjektiv>likställd:likställd:likställt:likställda:likställda::::
+687747r3<substantiv>likställdhet:likställdhet:likställdhets:likställdheten:likställdhetens::::
+CUSTOM: y y likställdhets
+566541r3<adjektiv>likställig:likställig:likställigt:likställiga:likställiga::::
+870899r3<substantiv>likställighet:likställighet:likställighets:likställigheten:likställighetens::::
+799797r3<adjektiv>likstämd:likstämd:likstämt:likstämda:likstämda::::
+CUSTOM: y n n
+574242r3<adjektiv>likstämmig:likstämmig:likstämmigt:likstämmiga:likstämmiga::::
+870903r3<substantiv>likstämmighet:likstämmighet:likstämmighets:likstämmigheten:likstämmighetens::::
+870907r3<substantiv>liksvamp:liksvamp:liksvamps:liksvampen:liksvampens:liksvampar:liksvampars:liksvamparna:liksvamparnas
+826571r3<substantiv>liksvepning:liksvepning:liksvepnings:liksvepningen:liksvepningens:liksvepningar:liksvepningars:liksvepningarna:liksvepningarnas
+574245r3<adjektiv>liksvävig:liksvävig:liksvävigt:liksväviga:liksväviga::::
+826580r3<substantiv>liksäck:liksäck:liksäcks:liksäcken:liksäckens:liksäckar:liksäckars:liksäckarna:liksäckarnas
+642117r3<substantiv>liktorn:liktorn:liktorns:liktornen:liktornens:liktornar:liktornars:liktornarna:liktornarnas
+CUSTOM: y y liktorns
+950261r4<substantiv>liktransport:liktransport:liktransports:liktransporten:liktransportens:liktransporter:liktransporters:liktransporterna:liktransporternas
+COMPOUND(552665, 550690): lik + transport
+635869r5<substantiv>liktrycksturbin:liktrycksturbin:liktrycksturbins:liktrycksturbinen:liktrycksturbinens:liktrycksturbiner:liktrycksturbiners:liktrycksturbinerna:liktrycksturbinernas
+574251r3<adjektiv>liktrådig:liktrådig:liktrådigt:liktrådiga:liktrådiga::::
+574254r3<adjektiv>liktydig:liktydig:liktydigt:liktydiga:liktydiga::::
+826589r3<substantiv>liktåg:liktåg:liktågs:liktåget:liktågets:liktåg:liktågs:liktågen:liktågens
+826595r3<substantiv>likvagn:likvagn:likvagns:likvagnen:likvagnens:likvagnar:likvagnars:likvagnarna:likvagnarnas
+826603r3<substantiv>likvaka:likvaka:likvakas:likvakan:likvakans:likvakor:likvakors:likvakorna:likvakornas
+563306r5<adjektiv>likvid:likvid:!:likvida:likvida:likvidare:likvidast:likvidaste:likvide
+DEFINITION 1: Förmögen att betala
+563298r6<substantiv>likvid:likvid:likvids:likviden:likvidens:likvider:likviders:likviderna:likvidernas
+DEFINITION 1: Betalningsmedel
+683953r6<adjektiv>likvid:likvid::likvida:likvida::::
+DEFINITION 1: Teknisk definition för flytande (från latinets liquidus)
+635783r4<substantiv>likvidation:likvidation:likvidations:likvidationen:likvidationens:likvidationer:likvidationers:likvidationerna:likvidationernas
+CUSTOM: y y likvidations
+574255r3<adjektiv>likvidationsmässig:likvidationsmässig:likvidationsmässigt:likvidationsmässiga:likvidationsmässiga::::
+870915r3<substantiv>likvidator:likvidator:likvidators:likvidatorn:likvidatorns:likvidatorer:likvidatorers:likvidatorerna:likvidatorernas
+597242r3<substantiv>likviddag:likviddag:likviddags:likviddagen:likviddagens:likviddagar:likviddagars:likviddagarna:likviddagarnas
+547286r4<verb>likvidera:likvidera:likviderade:likviderat:likviderar:likvidera:likvideras:likviderades:likviderats:likvideras:likviderad:likviderat:likviderade::
+948994r3<substantiv>likvidering:likvidering:likviderings:likvideringen:likvideringens:likvideringar:likvideringars:likvideringarna:likvideringarnas
+602673r3<substantiv>likviditet:likviditet:likviditets:likviditeten:likviditetens:likviditeter:likviditeters:likviditeterna:likviditeternas
+CUSTOM: y y likviditets +likviditets
+602678r3<substantiv>likviditetskvot:likviditetskvot:likviditetskvots:likviditetskvoten:likviditetskvotens:likviditetskvoter:likviditetskvoters:likviditetskvoterna:likviditetskvoternas
+700488r5<substantiv>likvidus:likvidus:::::::
+CUSTOM: y n n likvidus
+875527r4<substantiv>likviduslinje:likviduslinje:likviduslinjes:likviduslinjen:likviduslinjens:likviduslinjer:likviduslinjers:likviduslinjerna:likviduslinjernas
+COMPOUND(700488, 611937): likvidus + linje
+700487r4<substantiv>likvidustemperatur:likvidustemperatur:likvidustemperaturs:likvidustemperaturen:likvidustemperaturens:likvidustemperaturer:likvidustemperaturers:likvidustemperaturerna:likvidustemperaturernas
+COMPOUND(700488, 550651): likvidus + temperatur
+566544r3<adjektiv>likvinklig:likvinklig:likvinkligt:likvinkliga:likvinkliga::::
+826621r3<adjektiv>likvit:likvit:likvitt:likvita:likvita::::
+618709r3<adverb>likväl:likväl
+618710r3<adjektiv>likvärd:likvärd:likvärt:likvärda:likvärda::::
+574258r4<adjektiv>likvärdig:likvärdig:likvärdigt:likvärdiga:likvärdiga:likvärdigare:likvärdigast:likvärdigaste:likvärdige
+618713r3<substantiv>likvärdighet:likvärdighet:likvärdighets:likvärdigheten:likvärdighetens::::
+CUSTOM: y y likvärdighets
+574259r3<adjektiv>likåldrig:likåldrig:likåldrigt:likåldriga:likåldriga::::
+618717r4<substantiv>likör:likör:likörs:likören:likörens:likörer:likörers:likörerna:likörernas
+CUSTOM: y y likör
+734458r4<substantiv>likörflaska:likörflaska:likörflaskas:likörflaskan:likörflaskans:likörflaskor:likörflaskors:likörflaskorna:likörflaskornas
+COMPOUND(618717, 555299): likör + flaska
+555927r4<adjektiv>lila:lila:lila:lila:lila::::::::::::
+687754r3<adjektiv>lilafärgad:lilafärgad:lilafärgat:lilafärgade:lilafärgade:!:!:!:
+875863r3<egennamn>Lilian:Lilian:Lilians
+873069r3<egennamn>Liliemark:Liliemark:Liliemarks
+637736r4<substantiv>lilja:lilja:liljas:liljan:liljans:liljor:liljors:liljorna:liljornas
+973048r3<egennamn>Liljedahl:Liljedahl:Liljedahls
+973052r3<egennamn>Liljegren:Liljegren:Liljegrens
+734560r3<egennamn>Liljeholmen:Liljeholmen:Liljeholmens
+CUSTOM: y n Liljeholms
+602686r4<substantiv>liljekonvalj:liljekonvalj, liljekonvalje:liljekonvaljs, liljekonvaljes:liljekonvaljen:liljekonvaljens:liljekonvaljer:liljekonvaljers:liljekonvaljerna:liljekonvaljernas
+CUSTOM: y y liljekonvalj
+874387r3<egennamn>Liljendahl:Liljendahl:Liljendahls
+924959r8<egennamn>Liljestrand:Liljestrand:Liljestrands
+870928r3<adjektiv>liljevit:liljevit:liljevitt:liljevita:liljevita::::liljevite
+870932r3<substantiv>liljeväxt:liljeväxt:liljeväxts:liljeväxten:liljeväxtens:liljeväxter:liljeväxters:liljeväxterna:liljeväxternas
+728169r3<egennamn>Lilla Edet:Lilla Edet:Lilla Edets
+642125r3<substantiv>lillan:::lillan:lillans::::
+697148r3<pronomen>lillas:lillas
+947756r3<substantiv>lillasyrra:lillasyrra:lillasyrras:lillasyrran:lillasyrrans:lillasyrror:lillasyrrors:lillasyrrorna:lillasyrrornas
+642127r3<substantiv>lillasyster:lillasyster:lillasysters:lillasystern:lillasysterns:lillasystrar:lillasystrars:lillasystrarna:lillasystrarnas
+870940r3<substantiv>lillaxel:lillaxel:lillaxels:lillaxeln:lillaxelns:lillaxlar:lillaxlars:lillaxlarna:lillaxlarnas
+947736r3<substantiv>lillbrorsa:lillbrorsa:lillbrorsas:lillbrorsan:lillbrorsans:lillbrorsor:lillbrorsors:lillbrorsorna:lillbrorsornas
+642135r8<substantiv>lillebror:lillebror, lillebroder:lillebrors, lillebroders:lillebrodern:lillebroderns:lillebröder, småbröder:lillebröders, småbröders:lillebröderna, småbröderna:lillebrödernas, småbrödernas
+CUSTOM: y n lillebrors
+947746r3<substantiv>lillebrorsa:lillebrorsa:lillebrorsas:lillebrorsan:lillebrorsans:lillebrorsor:lillebrorsors:lillebrorsorna:lillebrorsornas
+956771r4<substantiv>lillebrorskomplex:lillebrorskomplex:lillebrorskomplex:lillebrorskomplexet:lillebrorskomplexets:lillebrorskomplex:lillebrorskomplex:lillebrorskomplexen:lillebrorskomplexens
+COMPOUND(642135, 552562): lillebror + komplex
+719529r3<egennamn>Lillehammer:Lillehammer:Lillehammers
+CUSTOM: y n Lillehammer
+756683r3<egennamn>Lillemor:Lillemor:Lillemors
+642137r3<substantiv>lillen:::lillen:lillens::::
+870948r3<substantiv>lilleputt:lilleputt:lilleputts:lilleputten:lilleputtens:lilleputtar:lilleputtars:lilleputtarna:lilleputtarnas
+697146r3<pronomen>lilles:lilles
+642139r3<substantiv>lillfinger:lillfinger:lillfingers:lillfingret:lillfingrets:lillfingrar:lillfingrars:lillfingrarna:lillfingrarnas
+CUSTOM: y y lillfinger
+954105r3<substantiv>lillflicka:lillflicka:lillflickas:lillflickan:lillflickans:lillflickor:lillflickors:lillflickorna:lillflickornas
+635201r3<adjektiv>lillgammal:lillgammal:lillgammalt:lillgamla:lillgamla::::lillgamle
+982343r3<substantiv>lillklocka:lillklocka:lillklockas:lillklockan:lillklockans:lillklockor:lillklockors:lillklockorna:lillklockornas
+960166r3<substantiv>lillpojke:lillpojke:lillpojkes:lillpojken:lillpojkens:lillpojkar:lillpojkars:lillpojkarna:lillpojkarnas
+870956r3<substantiv>lillslam:lillslam:lillslams:lillslammen:lillslammens:lillslammar:lillslammars:lillslammarna:lillslammarnas
+870964r3<substantiv>lillstuga:lillstuga:lillstugas:lillstugan:lillstugans:lillstugor:lillstugors:lillstugorna:lillstugornas
+947766r3<substantiv>lillsyrra:lillsyrra:lillsyrras:lillsyrran:lillsyrrans:lillsyrror:lillsyrrors:lillsyrrorna:lillsyrrornas
+611936r3<substantiv>lilltå:lilltå:lilltås:lilltån:lilltåns:lilltår:lilltårs:lilltårna:lilltårnas
+CUSTOM: y y lilltå
+870972r3<substantiv>lillvärdinna:lillvärdinna:lillvärdinnas:lillvärdinnan:lillvärdinnans:lillvärdinnor:lillvärdinnors:lillvärdinnorna:lillvärdinnornas
+553790r3<egennamn>Lilly:Lilly:Lillys
+560077r5<substantiv>lim:lim:lims:limmet:limmets::::
+903815r3<egennamn>Lima:Lima:Limas
+798284r3<adjektiv>limbisk:limbisk:limbiskt:limbiska:limbiska::::
+625665r3<substantiv>limbo:limbo:limbos::::::
+CUSTOM: y n n
+560079r10<substantiv>lime:lime:limes:limen:limens:limer:limers:limerna:limernas
+DEFINITION 1: En slags citrusfrukt
+CUSTOM: y n
+631695r7<substantiv>limeblad:limeblad:limeblads:limebladet:limebladets:limeblad:limeblads:limebladen:limebladens
+COMPOUND(560079, 552254): lime + blad
+947806r4<substantiv>limefrukt:limefrukt:limefrukts:limefrukten:limefruktens:limefrukter:limefrukters:limefrukterna:limefrukternas
+COMPOUND(560079, 548981): lime + frukt
+954342r3<adjektiv>limegrön:limegrön:limegrönt:limegröna:limegröna::::::::::::
+632233r8<substantiv>limejuice:limejuice:limejuices:limejuicen:limejuicens:limejuicer:limejuicers:limejuicerna:limejuicernas
+COMPOUND(560079, 555891): lime + juice
+633405r8<substantiv>limeklyfta:limeklyfta:limeklyftas:limeklyftan:limeklyftans:limeklyftor:limeklyftors:limeklyftorna:limeklyftornas
+COMPOUND(560079, 594467): lime + klyfta
+551698r3<substantiv>limerick:limerick:limericks:limericken:limerickens:limerickar:limerickars:limerickarna:limerickarnas
+635725r7<substantiv>limesaft:limesaft:limesafts:limesaften:limesaftens:limesafter:limesafters:limesafterna:limesafternas
+COMPOUND(560079, 550439): lime + saft
+CUSTOM: y n
+635785r8<substantiv>limeskal:limeskal:limeskals:limeskalet:limeskalets:limeskal:limeskals:limeskalen:limeskalens
+COMPOUND(560079, 552914): lime + skal
+CUSTOM: y n
+982351r4<substantiv>limfog:limfog:limfogs:limfogen:limfogens:limfogar:limfogars:limfogarna:limfogarnas
+COMPOUND(560077, 551173): lim + fog
+CUSTOM: y n
+870980r3<substantiv>limfärg:limfärg:limfärgs:limfärgen:limfärgens:limfärger:limfärgers:limfärgerna:limfärgernas
+CUSTOM: y n
+907182r3<egennamn>Limhamn:Limhamn:Limhamns
+962097r5<substantiv>limit:limit:limits:limiten:limitens:limiter:limiters:limiterna:limiternas
+CUSTOM: y n
+870988r3<substantiv>limitation:limitation:limitations:limitationen:limitationens:limitationer:limitationers:limitationerna:limitationernas
+798288r3<adjektiv>limitativ:limitativ:limitativt:limitativa:limitativa::::
+590135r3<verb>limitera:limitera:limiterade:limiterat:limiterar:limitera:::::::::
+792936r3<adjektiv>limiterad:limiterad:limiterat:limiterade:limiterade:!:!:!:
+CUSTOM: y n
+594634r3<substantiv>limklämma:limklämma:limklämmas:limklämman:limklämmans:limklämmor:limklämmors:limklämmorna:limklämmornas
+CUSTOM: y n
+598522r3<substantiv>limknekt:limknekt:limknekts:limknekten:limknektens:limknektar:limknektars:limknektarna:limknektarnas
+CUSTOM: y n
+547287r6<verb>limma:limma:limmade:limmat:limmar:limma:limmas:limmades:limmats:limmas:limmad:limmat:limmade:limmande:
+871557r3<substantiv>limning:limning:limnings:limningen:limningens:limningar:limningars:limningarna:limningarnas
+581675r3<adjektiv>limnisk:limnisk:limniskt:limniska:limniska::::
+CUSTOM: y n
+581678r3<adjektiv>limnografisk:limnografisk:limnografiskt:limnografiska:limnografiska::::
+687755r3<substantiv>limnolog:limnolog:limnologs:limnologen:limnologens:limnologer:limnologers:limnologerna:limnologernas
+687757r3<substantiv>limnologi:limnologi:limnologis:limnologin:limnologins::::
+CUSTOM: y n
+581681r3<adjektiv>limnologisk:limnologisk:limnologiskt:limnologiska:limnologiska::::
+CUSTOM: y n
+642140r5<substantiv>limousine, limousin:limousine, limousin:limousines, limousins:limousinen:limousinens:limousiner:limousiners:limousinerna:limousinernas
+555496r4<substantiv>limpa:limpa:limpas:limpan:limpans:limpor:limpors:limporna:limpornas
+843043r3<egennamn>Limpar:Limpar:Limpars
+792937r3<adjektiv>limpformad:limpformad:limpformat:limpformade:limpformade:!:!:!:
+CUSTOM: y n
+953994r3<substantiv>limträ:limträ:limträs:limträet:limträets::::
+CUSTOM: y n
+871565r3<substantiv>limämne:limämne:limämnes:limämnet:limämnets:limämnen:limämnens:limämnena:limämnenas
+CUSTOM: y n
+560087r8<substantiv>lin:lin:lins:linet:linets:!:!:!:!
+CUSTOM: y n
+560088r10<substantiv>lina:lina:linas:linan:linans:linor:linors:linorna:linornas
+CUSTOM: y y lin
+553792r3<egennamn>Lina:Lina:Linas
+560090r3<substantiv>linbana:linbana:linbanas:linbanan:linbanans:linbanor:linbanors:linbanorna:linbanornas
+CUSTOM: y y linbane
+944910r5<substantiv>linbastu:linbastu:linbastus:linbastun:linbastuns:linbastur:linbasturs:linbasturna:linbasturnas
+DEFINITION 1: Ett ställe man eldar i för att torka lin
+COMPOUND(560087, 559190): lin + bastu
+762431r3<egennamn>Lincoln:Lincoln:Lincolns
+598530r4<substantiv>lind:lind:linds:linden:lindens:lindar:lindars:lindarna:lindarnas
+CUSTOM: y y lind
+642149r4<substantiv>linda:linda:lindas:lindan:lindans:lindor:lindors:lindorna:lindornas
+CUSTOM: y y linde
+547288r5<verb>linda:linda:lindade:lindat:lindar:linda:lindas:lindades:lindats:lindas:lindad:lindat:lindade:lindande:
+553794r3<egennamn>Linda:Linda:Lindas
+872995r3<egennamn>Lindab:Lindab:Lindabs
+973056r3<egennamn>Lindahl:Lindahl:Lindahls
+642154r3<substantiv>lindansare:lindansare:lindansares:lindansaren:lindansarens:lindansare:lindansares:lindansarna:lindansarnas
+CUSTOM: y y lindansar
+945885r3<egennamn>Lindbeck:Lindbeck:Lindbecks
+553470r3<egennamn>Lindberg:Lindberg:Lindbergs
+950456r3<egennamn>Lindblom:Lindblom:Lindbloms
+642160r5<substantiv>lindblomma:lindblomma:lindblommas:lindblomman:lindblommans:lindblommor:lindblommors:lindblommorna:lindblommornas
+COMPOUND(598530, 556526): lind + blomma
+CUSTOM: y y lindbloms
+642168r4<substantiv>lindblomste:lindblomste:lindblomstes:lindblomsteet:lindblomsteets:lindblomsteer:lindblomsteers:lindblomsteerna:lindblomsteernas
+COMPOUND(642160, 555996): lindblomma + te
+553472r3<egennamn>Linde:Linde:Lindes
+642176r4<substantiv>lindebarn:lindebarn:lindebarns:lindebarnet:lindebarnets:lindebarn:lindebarns:lindebarnen:lindebarnens
+COMPOUND(642149, 555956): linda + barn
+854660r3<egennamn>Lindell:Lindell:Lindells
+973060r3<egennamn>Lindén:Lindén:Lindéns
+973064r3<egennamn>Linder:Linder:Linders
+728173r3<egennamn>Lindesberg:Lindesberg:Lindesbergs
+711012r3<egennamn>Lindgren:Lindgren:Lindgrens
+CUSTOM: y n Lindgren
+711716r3<egennamn>Lindh:Lindh:Lindhs
+875972r3<egennamn>Lindholm:Lindholm:Lindholms
+872921r2<egennamn>Lindholt::
+553474r3<egennamn>Lindkvist:Lindkvist:Lindkvists
+687759r3<substantiv>lindning:lindning:lindnings:lindningen:lindningens:lindningar:lindningars:lindningarna:lindningarnas
+CUSTOM: y y lindnings
+556524r3<substantiv>lindorm:lindorm:lindorms:lindormen:lindormens:lindormar:lindormars:lindormarna:lindormarnas
+907186r3<egennamn>Lindquist:Lindquist:Lindquists
+553476r3<egennamn>Lindqvist:Lindqvist:Lindqvists
+547289r4<verb>lindra:lindra:lindrade:lindrat:lindrar:lindra:lindras:lindrades:lindrats:lindras:lindrad:lindrat:lindrade:lindrande:
+574262r4<adjektiv>lindrig:lindrig:lindrigt:lindriga:lindriga:lindrigare:lindrigast:lindrigaste:
+642182r3<substantiv>lindring:lindring:lindrings:lindringen:lindringens:lindringar:lindringars:lindringarna:lindringarnas
+CUSTOM: y y lindrings +lindrings
+553478r3<egennamn>Lindstedt:Lindstedt:Lindstedts
+882950r3<substantiv>linearitet:linearitet:linearitets:lineariteten:linearitetens::::
+642187r3<adjektiv>lineär:lineär:lineärt:lineära:lineära::::
+851204r3<substantiv>linfrö:linfrö:linfrös:linfröet:linfröets:linfrön:linfröns:linfröna:linfrönas
+680042r3<egennamn>Linghed:Linghed:Lingheds
+607610r4<substantiv>lingon:lingon:lingons:lingonet:lingonets:lingon:lingons:lingonen:lingonens
+BASEWORDS: lingon
+CUSTOM: y y lingon
+877506r3<substantiv>lingondricka:lingondricka:lingondrickas:lingondrickan:lingondrickans:lingondrickor:lingondrickors:lingondrickorna:lingondrickornas
+779347r3<substantiv>lingonris:lingonris:lingonris:lingonriset:lingonrisets:lingonris:lingonris:lingonrisen:lingonrisens
+801864r3<adjektiv>lingonröd:lingonröd:lingonrött:lingonröda:lingonröda::::
+798291r3<adjektiv>lingul:lingul:lingult:lingula:lingula::::
+642190r3<substantiv>lingvist:lingvist:lingvists:lingvisten:lingvistens:lingvister:lingvisters:lingvisterna:lingvisternas
+CUSTOM: y y lingvist
+642196r3<substantiv>lingvistik:lingvistik:lingvistiks:lingvistiken:lingvistikens:!:!:!:!
+CUSTOM: y y lingvistik
+581684r4<adjektiv>lingvistisk:lingvistisk:lingvistiskt:lingvistiska:lingvistiska::::lingvistiske
+574263r3<adjektiv>linhårig:linhårig:linhårigt:linhåriga:linhåriga::::
+642198r3<substantiv>liniment:liniment:liniments:linimentet:linimentets:liniment:liniments:linimenten:linimentens
+CUSTOM: y y liniment liniments
+549944r3<substantiv>linjal:linjal:linjals:linjalen:linjalens:linjaler:linjalers:linjalerna:linjalernas
+611937r38<substantiv>linje:linje:linjes:linjen:linjens:linjer:linjers:linjerna:linjernas
+DEFINITION 1: Ritat streck
+DEFINITION 2: Uppragning av objekt - uppställning på linje
+CUSTOM: y y linje +linje
+636986r3<substantiv>linjeavel:linjeavel:linjeavels:linjeaveln:linjeavelns::::
+708918r4<substantiv>linjedomare:linjedomare:linjedomares:linjedomaren:linjedomarens:linjedomare:linjedomares:linjedomarna:linjedomarnas
+COMPOUND(611937, 556547): linje + domare
+851212r3<substantiv>linjedop:linjedop:linjedops:linjedopet:linjedopets:linjedop:linjedops:linjedopen:linjedopens
+871574r3<substantiv>linjeföring:linjeföring:linjeförings:linjeföringen:linjeföringens:linjeföringar:linjeföringars:linjeföringarna:linjeföringarnas
+937542r3<substantiv>linjelopp:linjelopp:linjelopps:linjeloppet:linjeloppets:linjelopp:linjelopps:linjeloppen:linjeloppens
+587149r4<verb>linjera:linjera:linjerade:linjerat:linjerar:linjera:linjeras:linjerades:linjerats:linjeras:linjerad:linjerat:linjerade::
+893320r4<adjektiv>linjerak:linjerak:linjerakt:linjeraka:linjeraka::::::::::::
+COMPOUND(611937, 563122): linje + rak
+569369r3<adjektiv>linjerbar:linjerbar:linjerbart:linjerbara:linjerbara::::
+882746r4<adjektiv>linjeren:linjeren:linjerent:linjerena:linjerena::::::::::::
+COMPOUND(611937, 563124): linje + ren
+846341r3<adjektiv>linjerät:linjerät:linjerätt:linjeräta:linjeräta::::
+846344r3<adjektiv>linjeskön:linjeskön:linjeskönt:linjesköna:linjesköna::::
+854687r4<substantiv>linjetal:linjetal:linjetals:linjetalet:linjetalets:linjetal:linjetals:linjetalen:linjetalens
+COMPOUND(611937, 553029): linje + tal
+642204r4<adjektiv>linjär:linjär:linjärt:linjära:linjära::::::::::::
+965946r4<substantiv>linjärkombination:linjärkombination:linjärkombinations:linjärkombinationen:linjärkombinationens:linjärkombinationer:linjärkombinationers:linjärkombinationerna:linjärkombinationernas
+COMPOUND(642204, 652695): linjär + kombination
+642205r4<verb>linka:linka:linkade:linkat:linkar:linka::::::::linkande:
+554298r3<egennamn>Linköping:Linköping:Linköpings
+CUSTOM: y n Linköpings
+762834r3<substantiv>Linköpingsbo:Linköpingsbo:Linköpingsbos:Linköpingsbon:Linköpingsbons:Linköpingsbor:Linköpingsbors:Linköpingsborna:Linköpingsbornas
+901981r3<egennamn>Linn:Linn:Linns
+612663r4<substantiv>linne:linne:linnes:linnet:linnets:linnen:linnens:linnena:linnenas
+CUSTOM: y y linne
+642206r3<egennamn>Linné:Linné:Linnés
+CUSTOM: y n Linné
+642208r3<substantiv>linnea:linnea:linneas:linnean:linneans:linneor:linneors:linneorna:linneornas
+553796r3<egennamn>Linnea:Linnea:Linneas
+574266r3<adjektiv>linneaktig:linneaktig:linneaktigt:linneaktiga:linneaktiga::::
+687764r4<substantiv>linneduk:linneduk:linneduks:linneduken:linnedukens:linnedukar:linnedukars:linnedukarna:linnedukarnas
+COMPOUND(612663, 551077): linne + duk
+801483r3<adjektiv>linneklädd:linneklädd:linneklätt:linneklädda:linneklädda::::
+792940r3<adjektiv>linnepressad:linnepressad:linnepressat:linnepressade:linnepressade:!:!:!:
+792943r3<adjektiv>linnepräglad:linnepräglad:linnepräglat:linnepräglade:linnepräglade:!:!:!:
+642216r4<substantiv>linning:linning:linnings:linningen:linningens:linningar:linningars:linningarna:linningarnas
+CUSTOM: y y linnings
+871582r3<substantiv>linolensyra:linolensyra:linolensyras:linolensyran:linolensyrans:linolensyror:linolensyrors:linolensyrorna:linolensyrornas
+642224r4<substantiv>linoleum:linoleum:::::::
+CUSTOM: y y linoleum
+642225r4<substantiv>linoleummatta:linoleummatta:linoleummattas:linoleummattan:linoleummattans:linoleummattor:linoleummattors:linoleummattorna:linoleummattornas
+COMPOUND(642224, 555187): linoleum + matta
+846347r3<verb>linolja:linolja:linoljade:linoljat:linoljar:linolja:linoljas:linoljades:linoljats:linoljas:linoljad:linoljat:linoljade:linoljande:
+642233r4<substantiv>linolja:linolja:linoljas:linoljan:linoljans:linoljor:linoljors:linoljorna:linoljornas
+COMPOUND(560087, 623123): lin + olja
+642241r3<substantiv>linolsyra:linolsyra:linolsyras:linolsyran:linolsyrans:linolsyror:linolsyrors:linolsyrorna:linolsyrornas
+549946r4<substantiv>lins:lins:lins:linsen:linsens:linser:linsers:linserna:linsernas
+CUSTOM: y y lins
+871607r3<substantiv>linsfel:linsfel:linsfels:linsfelet:linsfelets:linsfel:linsfels:linsfelen:linsfelens
+792946r3<adjektiv>linsformad:linsformad:linsformat:linsformade:linsformade:!:!:!:
+574269r3<adjektiv>linsformig:linsformig:linsformigt:linsformiga:linsformiga::::
+872712r4<substantiv>linsgryta:linsgryta:linsgrytas:linsgrytan:linsgrytans:linsgrytor:linsgrytors:linsgrytorna:linsgrytornas
+COMPOUND(549946, 594146): lins + gryta
+764391r3<substantiv>linslus:linslus:linslus:linslusen:linslusens:linslusar:linslusars:linslusarna:linslusarnas
+871601r2<substantiv>linssystem:linssystem:linssystems:linssystemet:linssystemets:linssystem:

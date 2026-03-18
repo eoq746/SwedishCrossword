@@ -1,0 +1,658 @@
+:rituelle
+585408r10<verb>riva:riva:rev:rivit:river:riv:rivas:revs:rivits:rivs, rives:riven:rivet:rivna:rivande:
+CUSTOM: y n
+595002r3<substantiv>riva:riva:rivas:rivan:rivans:rivor:rivors:rivorna:rivornas
+CUSTOM: n n y
+550397r3<substantiv>rival:rival:rivals:rivalen:rivalens:rivaler:rivalers:rivalerna:rivalernas
+590917r4<verb>rivalisera:rivalisera:rivaliserade:rivaliserat:rivaliserar:rivalisera:rivaliseras:rivaliserades:rivaliserats:rivaliseras:::::
+696410r3<adjektiv>rivaliserande:rivaliserande:rivaliserande:rivaliserande:rivaliserande:!:!:!:
+881168r3<substantiv>rivalisering:rivalisering:rivaliserings:rivaliseringen:rivaliseringens::::
+726099r3<substantiv>rivalitet:rivalitet:rivalitets:rivaliteten:rivalitetens:rivaliteter:rivaliteters:rivaliteterna:rivaliteternas
+881172r3<substantiv>rivare:rivare:rivares:rivaren:rivarens:rivare:rivares:rivarna:rivarnas
+553302r3<egennamn>Rivieran:Rivieran:Rivierans
+575648r4<adjektiv>rivig:rivig:rivigt:riviga:riviga:rivigare:rivigast:rivigaste:rivige
+741162r3<substantiv>rivjärn:rivjärn:rivjärns:rivjärnet:rivjärnets:rivjärn:rivjärns:rivjärnen:rivjärnens
+567547r3<adjektiv>rivkänslig:rivkänslig:rivkänsligt:rivkänsliga:rivkänsliga::::
+918124r4<substantiv>rivmärke:rivmärke:rivmärkes:rivmärket:rivmärkets:rivmärken:rivmärkens:rivmärkena:rivmärkenas
+COMPOUND(585408, 619020): riva + märke
+741168r6<substantiv>rivning:rivning:rivnings:rivningen:rivningens:rivningar:rivningars:rivningarna:rivningarnas
+CUSTOM: y y rivnings
+766160r3<substantiv>rivningsarbete::::::::
+COMPOUND(741168, 612263): rivning + arbete
+575651r3<adjektiv>rivningsfärdig:rivningsfärdig:rivningsfärdigt:rivningsfärdiga:rivningsfärdiga::::
+775430r4<substantiv>rivningshot:rivningshot:rivningshots:rivningshotet:rivningshotets:rivningshot:rivningshots:rivningshoten:rivningshotens
+COMPOUND(741168, 552476): rivning + hot
+794531r3<adjektiv>rivningshotad:rivningshotad:rivningshotat:rivningshotade:rivningshotade:!:!:!:
+775436r4<substantiv>rivningshus:rivningshus:rivningshus:rivningshuset:rivningshusets:rivningshus:rivningshus:rivningshusen:rivningshusens
+COMPOUND(741168, 552480): rivning + hus
+848422r3<substantiv>rivningskåk:rivningskåk:rivningskåks:rivningskåken:rivningskåkens:rivningskåkar:rivningskåkars:rivningskåkarna:rivningskåkarnas
+741176r3<substantiv>rivstart:rivstart:rivstarts:rivstarten:rivstartens:rivstarter:rivstarters:rivstarterna:rivstarternas
+775422r4<verb>rivstarta:rivstarta:rivstartade:rivstartat:rivstartar:rivstarta:rivstartas:rivstartades:rivstartats:rivstartas:rivstartad:rivstartat:rivstartade:rivstartande:
+775441r3<substantiv>rivsår:rivsår:rivsårs:rivsåret:rivsårets:rivsår:rivsårs:rivsåren:rivsårens
+634367r4<substantiv>ro:ro:ros:ron:rons:ron, ror:rons, rors:rona:ronas
+DEFINITION 1: höft eller bakdel
+CUSTOM: n n
+557740r4<verb>ro:ro:rodde:rott:ror:ro:ros:roddes:rotts:ros:rodd::rodda::
+631714r7<substantiv>ro:ro:ros:ron:rons:!:!:!:!
+CUSTOM: y n
+547592r4<verb>roa:roa:roade:roat:roar:roa:roas:roades:roats:roas:road:roat:roade::
+620973r3<adjektiv>road:road:roat:!:!:!:!:!:!
+881179r3<substantiv>roadmovie:roadmovie:roadmovies:roadmovien:roadmoviens::::
+956071r3<substantiv>roadracing:roadracing:roadracings:roadracingen:roadracingens::::
+696412r3<adjektiv>roande:roande:roande:roande:roande:!:!:!:
+926793r3<substantiv>roare:roare:roares:roaren:roarens:roare:roares:roarna:roarnas
+CUSTOM: n n n
+620974r5<substantiv>rob:rob, robe:robs, robes:roben:robens:rober:robers:roberna:robernas
+CUSTOM: n n y
+881184r3<substantiv>robbert:robbert:robberts:robberten:robbertens:robbertar:robbertars:robbertarna:robbertarnas
+628633r4<substantiv>robe:robe:robes:roben:robens:rober:robers:roberna:robernas
+CUSTOM: n n y
+554761r3<egennamn>Robert:Robert:Roberts
+874230r3<egennamn>Roberto:Roberto:Robertos
+728229r3<egennamn>Robertsfors:Robertsfors:Robertsfors
+973247r3<egennamn>Robertsson:Robertsson:Robertssons
+554763r3<egennamn>Robin:Robin:Robins
+963148r3<substantiv>robinsonad:robinsonad:robinsonads:robinsonaden:robinsonadens:robinsonader:robinsonaders:robinsonaderna:robinsonadernas
+551801r9<substantiv>robot:robot:robots:roboten:robotens:robotar:robotars:robotarna:robotarnas
+CUSTOM: y y robot
+575654r4<adjektiv>robotaktig:robotaktig:robotaktigt:robotaktiga:robotaktiga::::robotaktige
+926990r3<substantiv>robotarm:robotarm:robotarms:robotarmen:robotarmens:robotarmar:robotarmars:robotarmarna:robotarmarnas
+766161r3<adjektiv>robotartad:robotartad:robotartat:robotartade:robotartade:!:!:!:
+794534r3<adjektiv>robotbestyckad:robotbestyckad:robotbestyckat:robotbestyckade:robotbestyckade:!:!:!:
+794537r3<adjektiv>robotbeväpnad:robotbeväpnad:robotbeväpnat:robotbeväpnade:robotbeväpnade:!:!:!:
+924373r17<substantiv>robotförband:robotförband:robotförbands:robotförbandet:robotförbandets:robotförband:robotförbands:robotförbanden:robotförbandens
+COMPOUND(551801, 558908): robot + förband
+590921r4<verb>robotisera:robotisera:robotiserade:robotiserat:robotiserar:robotisera:robotiseras:robotiserades:robotiserats:robotiseras:robotiserad:robotiserat:robotiserade:robotiserande:
+881193r3<substantiv>robotisering:robotisering:robotiserings:robotiseringen:robotiseringens::::
+575657r3<adjektiv>robotmässig:robotmässig:robotmässigt:robotmässiga:robotmässiga::::
+734241r4<substantiv>robotpilot:robotpilot:robotpilots:robotpiloten:robotpilotens:robotpiloter:robotpiloters:robotpiloterna:robotpiloternas
+COMPOUND(551801, 550198): robot + pilot
+696413r4<adjektiv>robust:robust:robust:robusta:robusta:robustare:robustast:robustaste:robuste
+881197r3<substantiv>robusthet:robusthet:robusthets:robustheten:robusthetens::::
+551802r17<substantiv>rock:rock:rocks:rocken:rockens:rockar:rockars:rockarna:rockarnas
+DEFINITION 1: Klädplagg
+CUSTOM: y y rock
+682586r33<substantiv>rock:rock:rocks:rocken:rockens::::
+DEFINITION 1: Musikstilen
+CUSTOM: y y rock
+682589r4<verb>rocka:rocka:rockade:rockat:rockar:rocka:rockas:rockades:rockats:rockas::::rockande:
+689329r4<substantiv>rocka:rocka:rockas:rockan:rockans:rockor:rockors:rockorna:rockornas
+741184r3<substantiv>rockad:rockad:rockads:rockaden:rockadens:rockader:rockaders:rockaderna:rockadernas
+682595r3<substantiv>rockare:rockare:rockares:rockaren:rockarens:rockare:rockares:rockarna:rockarnas
+CUSTOM: y y rockar
+711833r4<substantiv>rockarrangemang:rockarrangemang:rockarrangemangs:rockarrangemanget:rockarrangemangets:rockarrangemang:rockarrangemangs:rockarrangemangen:rockarrangemangens
+COMPOUND(682586, 552194): rock + arrangemang
+679253r4<substantiv>rockartist:rockartist:rockartists:rockartisten:rockartistens:rockartister:rockartisters:rockartisterna:rockartisternas
+COMPOUND(682586, 605396): rock + artist
+CUSTOM: y y rockartist
+682588r4<substantiv>rockband:rockband:rockbands:rockbandet:rockbandets:rockband:rockbands:rockbanden:rockbandens
+COMPOUND(682586, 552220): rock + band
+649391r6<substantiv>rockdans:rockdans:rockdans:rockdansen:rockdansens:rockdanser:rockdansers:rockdanserna:rockdansernas
+COMPOUND(682586, 548569): rock + dans
+952687r3<substantiv>rockdänga:rockdänga:rockdängas:rockdängan:rockdängans:rockdängor:rockdängors:rockdängorna:rockdängornas
+587856r4<verb>rockera:rockera:rockerade:rockerat:rockerar:rockera:rockeras:rockerades:rockerats:rockeras:rockerad:rockerat:rockerade:rockerande:
+682604r4<substantiv>rockfestival:rockfestival:rockfestivals:rockfestivalen:rockfestivalens:rockfestivaler:rockfestivalers:rockfestivalerna:rockfestivalernas
+COMPOUND(682586, 548914): rock + festival
+682612r4<substantiv>rockficka:rockficka:rockfickas:rockfickan:rockfickans:rockfickor:rockfickors:rockfickorna:rockfickornas
+COMPOUND(551802, 561662): rock + ficka
+952697r4<substantiv>rockfunk:rockfunk:rockfunks:rockfunken:rockfunkens:!:!:!:!
+COMPOUND(682586, 628038): rock + funk
+682620r4<substantiv>rockgala:rockgala:rockgalas:rockgalan:rockgalans:rockgalor:rockgalors:rockgalorna:rockgalornas
+COMPOUND(682586, 557564): rock + gala
+682628r4<substantiv>rockgrupp:rockgrupp:rockgrupps:rockgruppen:rockgruppens:rockgrupper:rockgruppers:rockgrupperna:rockgruppernas
+COMPOUND(682586, 549163): rock + grupp
+682636r4<substantiv>rockhängare:rockhängare:rockhängares:rockhängaren:rockhängarens:rockhängare:rockhängares:rockhängarna:rockhängarnas
+COMPOUND(551802, 615298): rock + hängare
+CUSTOM: y y rockhängar
+696415r3<adjektiv>rockig:rockig:rockigt:rockiga:rockiga:rockigare:rockigast:rockigaste:
+682642r4<substantiv>rockklubb:rockklubb:rockklubbs:rockklubben:rockklubbens:rockklubbar:rockklubbars:rockklubbarna:rockklubbarnas
+COMPOUND(682586, 551547): rock + klubb
+952703r4<substantiv>rockkomp:rockkomp:rockkomps:rockkompet:rockkompets::::
+COMPOUND(682586, 628265): rock + komp
+682650r4<substantiv>rockkonsert:rockkonsert:rockkonserts:rockkonserten:rockkonsertens:rockkonserter:rockkonserters:rockkonserterna:rockkonserternas
+COMPOUND(682586, 651813): rock + konsert
+682651r4<substantiv>rockkrage:rockkrage:rockkrages:rockkragen:rockkragens:rockkragar:rockkragars:rockkragarna:rockkragarnas
+COMPOUND(551802, 599857): rock + krage
+682659r4<substantiv>rockkultur:rockkultur:rockkulturs:rockkulturen:rockkulturens:rockkulturer:rockkulturers:rockkulturerna:rockkulturernas
+COMPOUND(682586, 549804): rock + kultur
+682667r4<substantiv>rockkung:rockkung:rockkungs:rockkungen:rockkungens:rockkungar:rockkungars:rockkungarna:rockkungarnas
+COMPOUND(682586, 551645): rock + kung
+551804r4<substantiv>rocklåt:rocklåt:rocklåts:rocklåten:rocklåtens:rocklåtar:rocklåtars:rocklåtarna:rocklåtarnas
+COMPOUND(682586, 551711): rock + låt
+696416r4<substantiv>rockmusik:rockmusik:rockmusiks:rockmusiken:rockmusikens:!:!:!:!
+COMPOUND(682586, 550058): rock + musik
+682675r4<substantiv>rockmusiker:rockmusiker:rockmusikers:rockmusikern:rockmusikerns:rockmusiker:rockmusikers:rockmusikerna:rockmusikernas
+COMPOUND(682586, 616890): rock + musiker
+682681r4<substantiv>rockopera:rockopera:rockoperas:rockoperan:rockoperans:rockoperor:rockoperors:rockoperorna:rockoperornas
+COMPOUND(682586, 623199): rock + opera
+965114r4<substantiv>rockriff:rockriff:rockriffs:rockriffet:rockriffets:rockriff:rockriffs:rockriffen:rockriffens
+COMPOUND(682586, 848272): rock + riff
+682689r4<substantiv>rockrytm:rockrytm:rockrytms:rockrytmen:rockrytmens:rockrytmer:rockrytmers:rockrytmerna:rockrytmernas
+COMPOUND(682586, 550425): rock + rytm
+682697r4<substantiv>rockslusk:rockslusk:rockslusks:rockslusken:rocksluskens:rocksluskar:rocksluskars:rocksluskarna:rocksluskarnas
+COMPOUND(682586, 682786): rock + slusk
+682698r4<substantiv>rockstjärna:rockstjärna:rockstjärnas:rockstjärnan:rockstjärnans:rockstjärnor:rockstjärnors:rockstjärnorna:rockstjärnornas
+COMPOUND(682586, 595409): rock + stjärna
+945807r4<substantiv>rockstuk:rockstuk:rockstuks:rockstuket:rockstukets::::
+COMPOUND(682586, 620459): rock + stuk
+682706r4<substantiv>rocksångare:rocksångare:rocksångares:rocksångaren:rocksångarens:rocksångare:rocksångares:rocksångarna:rocksångarnas
+COMPOUND(682586, 596099): rock + sångare
+CUSTOM: y y rocksångar
+682712r4<substantiv>rocksångerska:rocksångerska:rocksångerskas:rocksångerskan:rocksångerskans:rocksångerskor:rocksångerskors:rocksångerskorna:rocksångerskornas
+COMPOUND(682586, 648278): rock + sångerska
+682720r4<substantiv>rockvideo:rockvideo:rockvideos:rockvideon:rockvideons:rockvideor:rockvideors:rockvideorna:rockvideornas
+COMPOUND(682586, 627579): rock + video
+CUSTOM: y y rockvideo
+682728r4<substantiv>rockärm:rockärm:rockärms:rockärmen:rockärmens:rockärmar:rockärmars:rockärmarna:rockärmarnas
+COMPOUND(551802, 552149): rock + ärm
+621894r4<substantiv>rodd:rodd:rodds:rodden:roddens:rodder:rodders:rodderna:roddernas
+682736r4<substantiv>roddarbänk:roddarbänk:roddarbänks:roddarbänken:roddarbänkens:roddarbänkar:roddarbänkars:roddarbänkarna:roddarbänkarnas
+COMPOUND(615417, 550997): roddare + bänk
+615417r5<substantiv>roddare:roddare:roddares:roddaren:roddarens:roddare:roddares:roddarna:roddarnas
+CUSTOM: y y roddar
+682744r4<substantiv>roddarlag:roddarlag:roddarlags:roddarlaget:roddarlagets:roddarlag:roddarlags:roddarlagen:roddarlagens
+COMPOUND(615417, 625660): roddare + lag
+598777r3<substantiv>roddbåt:roddbåt:roddbåts:roddbåten:roddbåtens:roddbåtar:roddbåtars:roddbåtarna:roddbåtarnas
+881202r3<substantiv>roddsport:roddsport:roddsports:roddsporten:roddsportens::::
+775447r3<substantiv>roddtur:roddtur:roddturs:roddturen:roddturens:roddturer:roddturers:roddturerna:roddturernas
+881206r3<substantiv>roddtävling:roddtävling:roddtävlings:roddtävlingen:roddtävlingens:roddtävlingar:roddtävlingars:roddtävlingarna:roddtävlingarnas
+775455r5<substantiv>rodel:rodel:rodels:rodeln:rodelns:rodlar:rodlars:rodlarna:rodlarnas
+881214r3<substantiv>rodelbana:rodelbana:rodelbanas:rodelbanan:rodelbanans:rodelbanor:rodelbanors:rodelbanorna:rodelbanornas
+881222r3<substantiv>rodelåkare:rodelåkare:rodelåkares:rodelåkaren:rodelåkarens:rodelåkare:rodelåkares:rodelåkarna:rodelåkarnas
+848446r3<substantiv>rodeo:rodeo:rodeos:rodeon:rodeons:rodeor:rodeors:rodeorna:rodeornas
+621893r10<substantiv>roder:roder:roders:rodret:rodrets:roder:roders:rodren:rodrens
+CUSTOM: y y roder
+682912r6<substantiv>roderaxel:roderaxel:roderaxels:roderaxeln:roderaxelns:roderaxlar:roderaxlars:roderaxlarna:roderaxlarnas
+COMPOUND(621893, 592030): roder + axel
+682921r3<substantiv>roderaxellager:roderaxellager:roderaxellagers:roderaxellagret:roderaxellagrets:roderaxellager:roderaxellagers:roderaxellagren:roderaxellagrens
+682927r4<substantiv>roderbeslag:roderbeslag:roderbeslags:roderbeslaget:roderbeslagets:roderbeslag:roderbeslags:roderbeslagen:roderbeslagens
+COMPOUND(621893, 552236): roder + beslag
+682933r4<substantiv>roderblad:roderblad:roderblads:roderbladet:roderbladets:roderblad:roderblads:roderbladen:roderbladens
+COMPOUND(621893, 552254): roder + blad
+682939r4<substantiv>roderbroms:roderbroms:roderbroms:roderbromsen:roderbromsens:roderbromsar:roderbromsars:roderbromsarna:roderbromsarnas
+COMPOUND(621893, 550949): roder + broms
+565189r3<adjektiv>roderlös:roderlös:roderlöst:roderlösa:roderlösa::::
+590925r3<verb>rodiera:rodiera:rodierade:rodierat:rodierar:rodiera:::::::::
+CUSTOM: y n n
+723546r3<substantiv>rodium:rodium:rodiums:rodiumet:rodiumets:!:!:!:!
+575660r3<adjektiv>rodiumhaltig:rodiumhaltig:rodiumhaltigt:rodiumhaltiga:rodiumhaltiga::::
+547593r5<verb>rodna:rodna:rodnade:rodnat:rodnar:rodna:!:!:!:!::::rodnande:
+603367r3<substantiv>rodnad:rodnad:rodnads:rodnaden:rodnadens:rodnader:rodnaders:rodnaderna:rodnadernas
+775456r5<substantiv>rododendron:rododendron:rododendrons:rododendronen:rododendronens:rododendrer:rododendrers:rododendrerna:rododendrernas
+CUSTOM: y y rododendron
+775461r3<substantiv>rododendronbuske::::::::
+COMPOUND(775456, 599790): rododendron + buske
+626125r3<verb>roffa:roffa:roffade:roffat:roffar:roffa:roffas:roffades:roffats:roffas:roffad:roffat:roffade:roffande:
+775462r3<substantiv>roffare:roffare:roffares:roffaren:roffarens:roffare:roffares:roffarna:roffarnas
+626134r4<substantiv>rofferi:rofferi:rofferis:rofferiet:rofferiets:rofferier:rofferiers:rofferierna:rofferiernas
+585079r3<adjektiv>rofull:rofull:rofullt:rofulla:rofulla::::
+621902r4<adjektiv>rofylld:rofylld:rofyllt:rofyllda:rofyllda:rofylldare:rofylldast:rofylldaste:rofyllde
+775468r3<substantiv>rofylldhet:rofylldhet:rofylldhets:rofylldheten:rofylldhetens::::
+554765r3<egennamn>Roger:Roger:Rogers
+737527r4<adjektiv>rogivande:rogivande:rogivande:rogivande:rogivande:!:!:!:
+COMPOUND(631714, 691460): ro + givande
+710993r5<substantiv>rohypnol:rohypnol:rohypnols:rohypnolen:rohypnolens::::
+558705r3<substantiv>rojalism:rojalism:rojalisms:rojalismen:rojalismens:!:!:!:!
+775472r3<substantiv>rojalist:rojalist:rojalists:rojalisten:rojalistens:rojalister:rojalisters:rojalisterna:rojalisternas
+583456r4<adjektiv>rojalistisk:rojalistisk:rojalistiskt:rojalistiska:rojalistiska::::rojalistiske
+741192r4<substantiv>rokoko:rokoko::rokokon:rokokons::::
+CUSTOM: y y rokoko
+741195r3<substantiv>rokokomöbel::::::::
+COMPOUND(741192, 621549): rokoko + möbel
+554767r3<egennamn>Roland:Roland:Rolands
+554769r3<egennamn>Rolf:Rolf:Rolfs
+563127r4<adjektiv>rolig:rolig:roligt:roliga:roliga:roligare:roligast:roligaste:rolige
+848467r3<substantiv>rolighet:rolighet:rolighets:roligheten:rolighetens:roligheter:roligheters:roligheterna:roligheternas
+848475r3<substantiv>rolighetsminister:rolighetsminister:rolighetsministers:rolighetsministern:rolighetsministerns:rolighetsministrar:rolighetsministrars:rolighetsministrarna:rolighetsministrarnas
+550398r19<substantiv>roll:roll:rolls:rollen:rollens:roller:rollers:rollerna:rollernas
+CUSTOM: y y roll
+640150r3<substantiv>rollator:rollator:rollators:rollatorn:rollatorns:rollatorer:rollatorers:rollatorerna:rollatorernas
+741196r3<substantiv>rollbesättning::::::::
+COMPOUND(550398, 592736): roll + besättning
+848483r3<substantiv>roller:roller:rollers:rollern:rollerns:rollrar:rollrars:rollrarna:rollrarnas
+937074r4<substantiv>rollfigur:rollfigur:rollfigurs:rollfiguren:rollfigurens:rollfigurer:rollfigurers:rollfigurerna:rollfigurernas
+COMPOUND(550398, 548918): roll + figur
+741197r4<substantiv>rollista:rollista:rollistas:rollistan:rollistans:rollistor:rollistors:rollistorna:rollistornas
+COMPOUND(550398, 555151): roll + lista
+945188r4<substantiv>rollmops:rollmops:rollmops:rollmopsen:rollmopsens:rollmopsar:rollmopsars:rollmopsarna:rollmopsarnas
+COMPOUND(550398, 787864): roll + mops
+552843r3<substantiv>rollspel:rollspel:rollspels:rollspelet:rollspelets:rollspel:rollspels:rollspelen:rollspelens
+696420r3<substantiv>rollspelare:rollspelare:rollspelares:rollspelaren:rollspelarens:rollspelare:rollspelares:rollspelarna:rollspelarnas
+CUSTOM: y y rollspelar
+762352r3<egennamn>Rolls-Royce:Rolls-Royce:
+696421r4<substantiv>rolltolkning:rolltolkning:rolltolknings:rolltolkningen:rolltolkningens:rolltolkningar:rolltolkningars:rolltolkningarna:rolltolkningarnas
+COMPOUND(550398, 639253): roll + tolkning
+CUSTOM: y y rolltolknings
+565192r4<adjektiv>rolös:rolös:rolöst:rolösa:rolösa::::rolöse
+CUSTOM: y n
+881228r3<substantiv>rolöshet:rolöshet:rolöshets:rolösheten:rolöshetens::::
+626144r3<substantiv>rom:rom:roms:romen:romens:romer:romers:romerna:romernas
+CUSTOM: y n
+621904r20<substantiv>rom:rom:roms:rommen:rommens:!:!:!:!
+CUSTOM: y n
+682753r3<egennamn>Rom:Rom:Roms
+CUSTOM: y n Rom
+626143r4<substantiv>ROM:ROM::::ROM:::
+CUSTOM: n n
+550400r25<substantiv>roman:roman:romans:romanen:romanens:romaner:romaners:romanerna:romanernas
+CUSTOM: y y roman +roman
+637769r3<adjektiv>romanesk:romanesk:romaneskt:romaneska:romaneska::::
+682756r4<substantiv>romanfigur:romanfigur:romanfigurs:romanfiguren:romanfigurens:romanfigurer:romanfigurers:romanfigurerna:romanfigurernas
+COMPOUND(550400, 548918): roman + figur
+682764r4<substantiv>romanförfattare:romanförfattare:romanförfattares:romanförfattaren:romanförfattarens:romanförfattare:romanförfattares:romanförfattarna:romanförfattarnas
+COMPOUND(550400, 593193): roman + författare
+CUSTOM: y y
+682770r4<substantiv>romangestalt:romangestalt:romangestalts:romangestalten:romangestaltens:romangestalter:romangestalters:romangestalterna:romangestalternas
+COMPOUND(550400, 549086): roman + gestalt
+682778r4<substantiv>romanhjälte:romanhjälte:romanhjältes:romanhjälten:romanhjältens:romanhjältar:romanhjältars:romanhjältarna:romanhjältarnas
+COMPOUND(550400, 618179): roman + hjälte
+682801r4<substantiv>romanhjältinna:romanhjältinna:romanhjältinnas:romanhjältinnan:romanhjältinnans:romanhjältinnor:romanhjältinnors:romanhjältinnorna:romanhjältinnornas
+COMPOUND(550400, 643574): roman + hjältinna
+637772r5<substantiv>romani:romani:romanis:romanin:romanins::::
+DEFINITION 1: Romernas språk.
+CUSTOM: y n
+682809r4<substantiv>romanintrig:romanintrig:romanintrigs:romanintrigen:romanintrigens:romanintriger:romanintrigers:romanintrigerna:romanintrigernas
+COMPOUND(550400, 549361): roman + intrig
+682817r4<substantiv>romaniord:romaniord:romaniords:romaniordet:romaniordets:romaniord:romaniords:romaniorden:romaniordens
+COMPOUND(637772, 555138): romani + ord
+848491r3<substantiv>romanist:romanist:romanists:romanisten:romanistens:romanister:romanisters:romanisterna:romanisternas
+848499r3<substantiv>romanistik:romanistik:romanistiks:romanistiken:romanistikens::::
+583459r3<adjektiv>romanistisk:romanistisk:romanistiskt:romanistiska:romanistiska::::
+682823r16<substantiv>romankonst:romankonst:romankonsts:romankonsten:romankonstens::::
+682834r9<substantiv>romanlitteratur:romanlitteratur:romanlitteraturs:romanlitteraturen:romanlitteraturens::::
+682842r2<substantiv>romanpapper::::::::
+682843r4<substantiv>romanpris:romanpris:romanpris:romanpriset:romanprisets:romanpris, romanpriser:romanpris, romanprisers:romanprisen, romanpriserna:romanprisens, romanprisernas
+COMPOUND(550400, 595939): roman + pris
+637782r6<substantiv>romans:romans:romans:romansen:romansens:romanser:romansers:romanserna:romansernas
+CUSTOM: y y romans
+682844r4<substantiv>romanserie:romanserie:romanseries:romanserien:romanseriens:romanserier:romanseriers:romanserierna:romanseriernas
+COMPOUND(550400, 555464): roman + serie
+622704r3<adjektiv>romansk:romansk:romanskt:romanska:romanska::::romanske
+682864r4<substantiv>romansprogram:romansprogram:romansprograms:romansprogrammet:romansprogrammets:romansprogram:romansprograms:romansprogrammen:romansprogrammens
+COMPOUND(637782, 555118): romans + program
+682870r4<substantiv>romanssångare:romanssångare:romanssångares:romanssångaren:romanssångarens:romanssångare:romanssångares:romanssångarna:romanssångarnas
+COMPOUND(637782, 596099): romans + sångare
+CUSTOM: y y romanssångar
+682852r4<substantiv>romanssångerska:romanssångerska:romanssångerskas:romanssångerskan:romanssångerskans:romanssångerskor:romanssångerskors:romanssångerskorna:romanssångerskornas
+COMPOUND(637782, 648278): romans + sångerska
+682860r4<substantiv>romanstoff:romanstoff:romanstoffs:romanstoffet:romanstoffets::::
+COMPOUND(550400, 626580): roman + stoff
+682876r4<substantiv>romansvit:romansvit:romansvits:romansviten:romansvitens:romansviter:romansviters:romansviterna:romansviternas
+COMPOUND(550400, 550602): roman + svit
+682877r4<substantiv>romanteknik:romanteknik:romantekniks:romantekniken:romanteknikens:romantekniker:romanteknikers:romanteknikerna:romanteknikernas
+COMPOUND(550400, 603854): roman + teknik
+621908r3<substantiv>romantik:romantik:romantiks:romantiken:romantikens::::
+682885r3<substantiv>romantiker:romantiker:romantikers:romantikern:romantikerns:romantiker:romantikers:romantikerna:romantikernas
+547594r5<verb>romantisera:romantisera:romantiserade:romantiserat:romantiserar:romantisera:romantiseras:romantiserades:romantiserats:romantiseras:romantiserad:romantiserat:romantiserade:romantiserande:
+741205r3<substantiv>romantisering:romantisering:romantiserings:romantiseringen:romantiseringens:romantiseringar:romantiseringars:romantiseringarna:romantiseringarnas
+583462r4<adjektiv>romantisk:romantisk:romantiskt:romantiska:romantiska::::romantiske
+682891r4<substantiv>romantitel:romantitel:romantitels:romantiteln:romantitelns:romantitlar:romantitlars:romantitlarna:romantitlarnas
+COMPOUND(550400, 626697): roman + titel
+615418r3<substantiv>romare:romare:romares:romaren:romarens:romare:romares:romarna:romarnas
+CUSTOM: y y romar
+985190r3<substantiv>romarinna:romarinna:romarinnas:romarinnan:romarinnans:romarinnor:romarinnors:romarinnorna:romarinnornas
+628617r3<substantiv>romb:romb:rombs:romben:rombens:romber:rombers:romberna:rombernas
+CUSTOM: y n
+794540r3<adjektiv>rombformad:rombformad:rombformat:rombformade:rombformade:!:!:!:
+575663r3<adjektiv>rombformig:rombformig:rombformigt:rombformiga:rombformiga::::
+583463r3<adjektiv>rombisk:rombisk:rombiskt:rombiska:rombiska::::
+583466r3<adjektiv>romboedrisk:romboedrisk:romboedriskt:romboedriska:romboedriska::::
+628793r3<substantiv>romboid:romboid:romboids:romboiden:romboidens:romboider:romboiders:romboiderna:romboidernas
+583469r3<adjektiv>romboidisk:romboidisk:romboidiskt:romboidiska:romboidiska::::
+895780r4<substantiv>rombutelj:rombutelj:rombuteljs:rombuteljen:rombuteljens:rombuteljer:rombuteljers:rombuteljerna:rombuteljernas
+COMPOUND(621904, 548487): rom + butelj
+762251r3<egennamn>Romeo:Romeo:Romeos
+626142r4<adjektiv>romersk:romersk:romerskt:romerska:romerska:!:!:!:romerske
+761794r3<adjektiv>romersk-katolsk:romersk-katolsk:romersk-katolskt:romersk-katolska:romersk-katolska::::romersk-katolske
+682946r4<substantiv>romflaska:romflaska:romflaskas:romflaskan:romflaskans:romflaskor:romflaskors:romflaskorna:romflaskornas
+COMPOUND(621904, 555299): rom + flaska
+712428r3<egennamn>Romfördraget:Romfördraget:Romfördragets
+CUSTOM: n n 
+900235r4<substantiv>romhona:romhona:romhonas:romhonan:romhonans:romhonor:romhonors:romhonorna:romhonornas
+COMPOUND(621904, 560570): rom + hona
+CUSTOM: y n n
+895788r4<substantiv>romkorn:romkorn:romkorns:romkornet:romkornets:romkorn:romkorns:romkornen:romkornens
+COMPOUND(621904, 552574): rom + korn
+895794r4<substantiv>romläggning:romläggning:romläggnings:romläggningen:romläggningens:romläggningar:romläggningars:romläggningarna:romläggningarnas
+COMPOUND(621904, 688835): rom + läggning
+637776r4<substantiv>rommani:rommani:rommanis:rommanin:rommanins::::
+DEFINITION 1: Alternativ stavning av romani, romernas språk.
+575666r3<adjektiv>rommig:rommig:rommigt:rommiga:rommiga::::
+923815r5<egennamn>Romney:Romney:Romneys
+900229r4<substantiv>romproduktion:romproduktion:romproduktions:romproduktionen:romproduktionens::::
+COMPOUND(621904, 603206): rom + produktion
+626139r4<adjektiv>romsk:romsk:romskt:romska:romska:!:!:!:romske
+895802r4<adjektiv>romstinn:romstinn:romstint:romstinna:romstinna::::::::::::
+COMPOUND(621904, 694614): rom + stinn
+895805r4<substantiv>romsäck:romsäck:romsäcks:romsäcken:romsäckens:romsäckar:romsäckars:romsäckarna:romsäckarnas
+COMPOUND(621904, 551984): rom + säck
+900245r4<substantiv>romtillverkning:romtillverkning:romtillverknings:romtillverkningen:romtillverkningens:romtillverkningar:romtillverkningars:romtillverkningarna:romtillverkningarnas
+COMPOUND(621904, 672540): rom + tillverkning
+734658r3<egennamn>Ron:Ron:Rons
+971856r3<egennamn>Ronald:Ronald:Ronalds
+874528r3<egennamn>Ronaldo:Ronaldo:Ronaldos
+621910r3<substantiv>rond:rond:ronds:ronden:rondens:ronder:ronders:ronderna:rondernas
+621918r4<substantiv>rondell:rondell:rondells:rondellen:rondellens:rondeller:rondellers:rondellerna:rondellernas
+CUSTOM: y y rondell
+764735r3<substantiv>rondellskiva::::::::
+COMPOUND(621918, 585909): rondell + skiva
+848504r3<substantiv>rondo:rondo:rondos:rondot:rondots:rondon:rondons:rondona:rondonas
+637789r7<substantiv>rondör:rondör:rondörs:rondören:rondörens::::
+744180r3<egennamn>Ronja:Ronja:Ronjas
+874558r3<egennamn>Ronna:Ronna:Ronnas
+554355r4<egennamn>Ronneby:Ronneby:Ronnebys, Ronneby
+CUSTOM: y n Ronneby
+849635r3<egennamn>Ronnie:Ronnie:Ronnies
+554771r3<egennamn>Ronny:Ronny:Ronnys
+937511r3<substantiv>rookie:rookie:rookies:rookien:rookiens::::
+CUSTOM: y y rookie
+973251r3<egennamn>Roos:Roos:Roos
+552845r11<substantiv>rop:rop:rops:ropet:ropets:rop:rops:ropen:ropens
+547595r4<verb>ropa:ropa:ropade:ropat:ropar:ropa:ropas:ropades:ropats:ropas:ropad:ropat:ropade:ropande:
+972234r3<egennamn>Ropsten:Ropsten:Ropstens
+848512r3<substantiv>roquefort:roquefort:roqueforts:roqueforten:roquefortens::::
+848516r3<substantiv>roquefortost:roquefortost:roquefortosts:roquefortosten:roquefortostens:roquefortostar:roquefortostars:roquefortostarna:roquefortostarnas
+848524r3<substantiv>rorgängare:rorgängare:rorgängares:rorgängaren:rorgängarens:rorgängare:rorgängares:rorgängarna:rorgängarnas
+848530r3<substantiv>rorkult:rorkult:rorkults:rorkulten:rorkultens:rorkultar:rorkultars:rorkultarna:rorkultarnas
+848538r3<substantiv>rorpinne:rorpinne:rorpinnes:rorpinnen:rorpinnens:rorpinnar:rorpinnars:rorpinnarna:rorpinnarnas
+848546r3<substantiv>rorsman:rorsman:rorsmans:rorsmannen:rorsmannens:rorsmän:rorsmäns:rorsmännen:rorsmännens
+556677r22<substantiv>ros:ros:ros:rosen:rosens:rosor:rosors:rosorna:rosornas
+CUSTOM: y y ros
+624692r6<adjektiv>rosa:rosa:rosa:rosa:rosa:!:!:!:::::::::
+626151r3<verb>rosa:rosa:rosade:rosat:rosar:rosa:rosas:rosades:rosats:rosas:rosad:rosat:rosade:rosande:
+622975r3<egennamn>Rosa:Rosa:Rosas
+766164r3<adjektiv>rosafärgad:rosafärgad:rosafärgat:rosafärgade:rosafärgade:!:!:!:
+553523r3<egennamn>Rosander:Rosander:Rosanders
+899397r3<substantiv>rosarium:rosarium:rosariums:rosariet:rosariets:rosarier:rosariers:rosarierna:rosariernas
+775481r3<adjektiv>rosaröd:rosaröd:rosarött:rosaröda:rosaröda::::
+775485r3<adjektiv>rosaskimrande:rosaskimrande:rosaskimrande:rosaskimrande:rosaskimrande:!:!:!:
+682954r4<substantiv>rosbukett:rosbukett:rosbuketts:rosbuketten:rosbukettens:rosbuketter:rosbuketters:rosbuketterna:rosbuketternas
+COMPOUND(556677, 548471): ros + bukett
+682962r4<substantiv>rosbuske:rosbuske:rosbuskes:rosbusken:rosbuskens:rosbuskar:rosbuskars:rosbuskarna:rosbuskarnas
+COMPOUND(556677, 599790): ros + buske
+682970r4<substantiv>rosdoft:rosdoft:rosdofts:rosdoften:rosdoftens:rosdofter:rosdofters:rosdofterna:rosdofternas
+COMPOUND(556677, 548690): ros + doft
+904873r3<substantiv>rosé:rosé:rosés:rosén:roséns:roséer:roséers:roséerna:roséernas
+CUSTOM: y n n
+900892r3<egennamn>Rosenbad:Rosenbad:Rosenbads
+CUSTOM: y n Rosenbads
+855215r3<egennamn>Rosenberg:Rosenberg:Rosenbergs
+881232r3<substantiv>rosenblad:rosenblad:rosenblads:rosenbladet:rosenbladets:rosenblad:rosenblads:rosenbladen:rosenbladens
+721978r3<egennamn>Rosenbom:Rosenbom:Rosenboms
+848554r3<substantiv>rosenbröd:rosenbröd:rosenbröds:rosenbrödet:rosenbrödets:rosenbröd:rosenbröds:rosenbröden:rosenbrödens
+881238r3<substantiv>rosenbukett:rosenbukett:rosenbuketts:rosenbuketten:rosenbukettens:rosenbuketter:rosenbuketters:rosenbuketterna:rosenbuketternas
+881246r3<substantiv>rosenböna:rosenböna:rosenbönas:rosenbönan:rosenbönans:rosenbönor:rosenbönors:rosenbönorna:rosenbönornas
+881254r3<substantiv>rosendoft:rosendoft:rosendofts:rosendoften:rosendoftens::::
+794543r3<adjektiv>rosenfingrad:rosenfingrad:rosenfingrat:rosenfingrade:rosenfingrade:!:!:!:
+985198r3<substantiv>rosenfink:rosenfink:rosenfinks:rosenfinken:rosenfinkens:rosenfinkar:rosenfinkars:rosenfinkarna:rosenfinkarnas
+794546r3<adjektiv>rosenfärgad:rosenfärgad:rosenfärgat:rosenfärgade:rosenfärgade:!:!:!:
+892039r3<egennamn>Rosengren:Rosengren:Rosengrens
+677146r3<substantiv>rosengång:rosengång:rosengångs:rosengången:rosengångens:rosengångar:rosengångars:rosengångarna:rosengångarnas
+848560r3<substantiv>rosengård:rosengård:rosengårds:rosengården:rosengårdens:rosengårdar:rosengårdars:rosengårdarna:rosengårdarnas
+CUSTOM: y y rosengårds
+769747r3<substantiv>rosenhy:rosenhy:rosenhys:rosenhyn:rosenhyns::::
+551806r3<substantiv>rosenhäck:rosenhäck:rosenhäcks:rosenhäcken:rosenhäckens:rosenhäckar:rosenhäckars:rosenhäckarna:rosenhäckarnas
+881258r3<substantiv>rosenkind:rosenkind:rosenkinds:rosenkinden:rosenkindens:rosenkinder:rosenkinders:rosenkinderna:rosenkindernas
+737615r3<adjektiv>rosenkindad:rosenkindad:rosenkindat:rosenkindade:rosenkindade:!:!:!:
+551808r3<substantiv>rosenknopp:rosenknopp:rosenknopps:rosenknoppen:rosenknoppens:rosenknoppar:rosenknoppars:rosenknopparna:rosenknopparnas
+769751r3<substantiv>rosenkrans:rosenkrans:rosenkrans:rosenkransen:rosenkransens:rosenkransar:rosenkransars:rosenkransarna:rosenkransarnas
+985206r3<substantiv>rosenkvitten:rosenkvitten:rosenkvittens::::::
+848568r3<substantiv>rosenkål:rosenkål:rosenkåls:rosenkålen:rosenkålens::::
+848572r3<substantiv>rosenmoln:rosenmoln:rosenmolns:rosenmolnet:rosenmolnets:rosenmoln:rosenmolns:rosenmolnen:rosenmolnens
+848578r3<substantiv>rosenmun:rosenmun:rosenmuns:rosenmunnen:rosenmunnens:rosenmunnar:rosenmunnars:rosenmunnarna:rosenmunnarnas
+963161r4<substantiv>rosenmönster:rosenmönster:rosenmönsters:rosenmönstret:rosenmönstrets:rosenmönster:rosenmönsters:rosenmönstren:rosenmönstrens
+COMPOUND(556677, 621588): ros + mönster
+794549r3<adjektiv>rosenmönstrad:rosenmönstrad:rosenmönstrat:rosenmönstrade:rosenmönstrade:!:!:!:
+848586r3<substantiv>rosenolja:rosenolja:rosenoljas:rosenoljan:rosenoljans::::
+958624r4<substantiv>rosenrabatt:rosenrabatt:rosenrabatts:rosenrabatten:rosenrabattens:rosenrabatter:rosenrabatters:rosenrabatterna:rosenrabatternas
+COMPOUND(556677, 550305): ros + rabatt
+658105r3<adjektiv>rosenrasande:rosenrasande:rosenrasande:rosenrasande:rosenrasande:!:!:!:
+680930r3<adjektiv>rosenröd:rosenröd:rosenrött:rosenröda:rosenröda:rosenrödare:rosenrödast:rosenrödaste:
+881266r3<substantiv>rosenskimmer:rosenskimmer:rosenskimmers:rosenskimmret:rosenskimmrets::::
+889476r3<adjektiv>rosenskimrande:rosenskimrande:rosenskimrande:rosenskimrande:rosenskimrande:!:!:!:::::::::
+963168r3<substantiv>rosenskära:rosenskära:rosenskäras:rosenskäran:rosenskärans:rosenskäror:rosenskärors:rosenskärorna:rosenskärornas
+848590r3<substantiv>rosensten:rosensten:rosenstens:rosenstenen:rosenstenens::::
+769758r3<substantiv>rosenstock:rosenstock:rosenstocks:rosenstocken:rosenstockens:rosenstockar:rosenstockars:rosenstockarna:rosenstockarnas
+848594r3<substantiv>rosenträ:rosenträ:rosenträs:rosenträet:rosenträets::::
+947047r4<substantiv>rosenträdgård:rosenträdgård:rosenträdgårds:rosenträdgården:rosenträdgårdens:rosenträdgårdar:rosenträdgårdars:rosenträdgårdarna:rosenträdgårdarnas
+COMPOUND(556677, 599046): ros + trädgård
+769766r3<substantiv>rosenvatten:rosenvatten:rosenvattens:rosenvattnet:rosenvattnets::::
+848599r3<substantiv>rosépeppar:rosépeppar:rosépeppars:rosépepparn:rosépepparns::::
+603375r6<substantiv>rosett:rosett:rosetts:rosetten:rosettens:rosetter:rosetters:rosetterna:rosetternas
+CUSTOM: y y rosett
+798756r3<adjektiv>rosettbladig:rosettbladig:rosettbladigt:rosettbladiga:rosettbladiga::::
+848604r4<substantiv>rosettfönster:rosettfönster:rosettfönsters:rosettfönstret:rosettfönstrets:rosettfönster:rosettfönsters:rosettfönstren, rosettfönsterna:rosettfönstrens, rosettfönsternas
+COMPOUND(603375, 555049): rosett + fönster
+848612r4<substantiv>rosettmönster:rosettmönster:rosettmönsters:rosettmönstret:rosettmönstrets:rosettmönster:rosettmönsters:rosettmönstren:rosettmönstrens
+COMPOUND(603375, 621588): rosett + mönster
+801616r3<adjektiv>rosettprydd:rosettprydd:rosettprytt:rosettprydda:rosettprydda::::
+800194r3<adjektiv>rosettställd:rosettställd:rosettställt:rosettställda:rosettställda::::
+600549r3<substantiv>rosévin:rosévin:rosévins:rosévinet:rosévinets:roséviner:roséviners:rosévinerna:rosévinernas
+575669r4<adjektiv>rosig:rosig:rosigt:rosiga:rosiga:rosigare:rosigast:rosigaste:rosige
+881270r3<substantiv>rosighet:rosighet:rosighets:rosigheten:rosighetens::::
+555205r3<substantiv>rosk:rosk:rosks:rosket:roskets::::
+CUSTOM: n n y
+722434r3<egennamn>Roskilde:Roskilde:Roskildes
+CUSTOM: y n Roskilde
+637797r3<substantiv>rosling:rosling:roslings:roslingen:roslingens:roslingar:roslingars:roslingarna:roslingarnas
+621926r3<substantiv>rosmarin:rosmarin:rosmarins:rosmarinen:rosmarinens:rosmariner:rosmariners:rosmarinerna:rosmarinernas
+CUSTOM: y y rosmarin
+621934r3<substantiv>rospigg:rospigg:rospiggs:rospiggen:rospiggens:rospiggar:rospiggars:rospiggarna:rospiggarnas
+637805r3<substantiv>rossel:rossel:rossels:rosslet:rosslets::::
+547596r10<verb>rossla:rossla:rosslade:rosslat:rosslar:rossla:rosslas:rosslades:rosslats:rosslas::::rosslande:
+567550r4<adjektiv>rosslig:rosslig:rossligt:rossliga:rossliga:rossligare:rossligast:rossligaste:rosslige
+775486r3<substantiv>rossling:rossling:rosslings:rosslingen:rosslingens:rosslingar:rosslingars:rosslingarna:rosslingarnas
+598785r4<substantiv>rost:rost:rosts:rosten:rostens:rostar:rostars:rostarna:rostarnas
+CUSTOM: y y
+547597r5<verb>rosta:rosta:rostade:rostat:rostar:rosta:rostas:rostades:rostats:rostas:rostad:rostat:rostade:rostande:
+609033r3<substantiv>rostangrepp:rostangrepp:rostangrepps:rostangreppet:rostangreppets:rostangrepp:rostangrepps:rostangreppen:rostangreppens
+637809r3<substantiv>rostare:rostare:rostares:rostaren:rostarens:rostare:rostares:rostarna:rostarnas
+CUSTOM: y y rostar
+575670r3<adjektiv>rostbeständig:rostbeständig:rostbeständigt:rostbeständiga:rostbeständiga::::
+881274r4<substantiv>rostbeständighet:rostbeständighet:rostbeständighets:rostbeständigheten:rostbeständighetens:!:!:!:!
+COMPOUND(598785, 592708): rost + beständighet
+621942r3<substantiv>rostbiff:rostbiff:rostbiffs:rostbiffen:rostbiffens:rostbiffar:rostbiffars:rostbiffarna:rostbiffarnas
+881278r3<substantiv>rostbildning:rostbildning:rostbildnings:rostbildningen:rostbildningens:rostbildningar:rostbildningars:rostbildningarna:rostbildningarnas
+881286r3<adjektiv>rostbrun:rostbrun:rostbrunt:rostbruna:rostbruna::::
+881289r3<substantiv>rosteri:rosteri:rosteris:rosteriet:rosteriets:rosterier:rosteriers:rosterierna:rosteriernas
+881297r3<substantiv>rostfläck:rostfläck:rostfläcks:rostfläcken:rostfläckens:rostfläckar:rostfläckars:rostfläckarna:rostfläckarnas
+564111r3<adjektiv>rostfri:rostfri:rostfritt:rostfria:rostfria::::
+794552r3<adjektiv>rostfärgad:rostfärgad:rostfärgat:rostfärgade:rostfärgade:!:!:!:
+575673r3<adjektiv>rosthärdig:rosthärdig:rosthärdigt:rosthärdiga:rosthärdiga::::
+575676r4<adjektiv>rostig:rostig:rostigt:rostiga:rostiga:rostigare:rostigast:rostigaste:rostige
+881305r3<substantiv>rostighet:rostighet:rostighets:rostigheten:rostighetens::::
+637813r3<substantiv>rostning:rostning:rostnings:rostningen:rostningens:rostningar:rostningars:rostningarna:rostningarnas
+CUSTOM: y y rostnings
+801900r3<adjektiv>roströd:roströd:rostrött:roströda:roströda::::
+881309r3<substantiv>rostskada:rostskada:rostskadas:rostskadan:rostskadans:rostskador:rostskadors:rostskadorna:rostskadornas
+775494r5<substantiv>rostskydd:rostskydd:rostskydds:rostskyddet:rostskyddets:rostskydd:rostskydds:rostskydden:rostskyddens
+CUSTOM: y y rostskydds
+775498r4<verb>rostskydda:rostskydda:rostskyddade:rostskyddat:rostskyddar:rostskydda:rostskyddas:rostskyddades:rostskyddats:rostskyddas:rostskyddad:rostskyddat:rostskyddade:rostskyddande:
+775506r3<substantiv>rostskyddsmedel::::::::
+COMPOUND(775494, 560532): rostskydd + medel
+848633r3<substantiv>rostsvamp:rostsvamp:rostsvamps:rostsvampen:rostsvampens:rostsvampar:rostsvampars:rostsvamparna:rostsvamparnas
+985208r3<substantiv>rostugn:rostugn:rostugns:rostugnen:rostugnens:rostugnar:rostugnars:rostugnarna:rostugnarnas
+CUSTOM: y n
+561217r43<substantiv>rot:rot:rots:roten:rotens:rötter:rötters:rötterna:rötternas
+BASEWORDS: rot
+CUSTOM: y n rot
+547598r4<verb>rota:rota:rotade:rotat:rotar:rota:rotas:rotades:rotats:rotas:::::
+561218r3<adjektiv>rotad:rotad:rotat:rotade:rotade::::
+769783r3<substantiv>rotande:rotande:rotandes:rotandet:rotandets::::
+637821r3<substantiv>rotarian:rotarian:rotarians:rotarianen:rotarianens:rotarianer:rotarianers:rotarianerna:rotarianernas
+734209r3<egennamn>Rotary:Rotary:Rotarys
+CUSTOM: y n Rotary
+561219r6<substantiv>rotation:rotation:rotations:rotationen:rotationens:rotationer:rotationers:rotationerna:rotationernas
+CUSTOM: y y rotations +rotations
+682978r4<substantiv>rotationsriktning:rotationsriktning:rotationsriktnings:rotationsriktningen:rotationsriktningens:rotationsriktningar:rotationsriktningars:rotationsriktningarna:rotationsriktningarnas
+COMPOUND(561219, 597519): rotation + riktning
+CUSTOM: y y rotationsriktnings
+682986r4<substantiv>rotationsrörelse:rotationsrörelse:rotationsrörelses:rotationsrörelsen:rotationsrörelsens:rotationsrörelser:rotationsrörelsers:rotationsrörelserna:rotationsrörelsernas
+COMPOUND(561219, 611968): rotation + rörelse
+CUSTOM: y y rotationsrörelse
+561224r3<substantiv>rotblöta:rotblöta:rotblötas:rotblötan:rotblötans:rotblötor:rotblötors:rotblötorna:rotblötornas
+676061r4<substantiv>rotborste:rotborste:rotborstes:rotborsten:rotborstens:rotborstar:rotborstars:rotborstarna:rotborstarnas
+COMPOUND(561217, 599787): rot + borste
+682994r4<substantiv>rotdiameter:rotdiameter:rotdiameters:rotdiametern:rotdiameterns:rotdiametrar:rotdiametrars:rotdiametrarna:rotdiametrarnas
+COMPOUND(561217, 633159): rot + diameter
+683002r4<substantiv>rotdjup:rotdjup:rotdjups:rotdjupet:rotdjupets:rotdjup:rotdjups:rotdjupen:rotdjupens
+COMPOUND(561217, 552320): rot + djup
+CUSTOM: y n n
+628634r6<substantiv>rote:rote:rotes:roten:rotens:rotar:rotars:rotarna:rotarnas
+DEFINITION 1: Grupp av två stridsflygplan.
+CUSTOM: n n y
+561232r5<substantiv>rotel:rotel:rotels:roteln:rotelns:rotlar:rotlars:rotlarna:rotlarnas
+637829r3<substantiv>rotenon:rotenon:rotenons:rotenonet:rotenonets::::
+547599r4<verb>rotera:rotera:roterade:roterat:roterar:rotera:roteras:roterades:roterats:roteras:roterad:roterat:roterade:roterande:
+570008r3<adjektiv>roterbar:roterbar:roterbart:roterbara:roterbara::::
+637833r3<substantiv>rotering:rotering:roterings:roteringen:roteringens:roteringar:roteringars:roteringarna:roteringarnas
+CUSTOM: y y roterings
+561234r4<substantiv>rotfrukt:rotfrukt:rotfrukts:rotfrukten:rotfruktens:rotfrukter:rotfrukters:rotfrukterna:rotfrukternas
+COMPOUND(561217, 548981): rot + frukt
+CUSTOM: y y rotfrukts
+696423r4<verb>rotfylla:rotfylla:rotfyllde:rotfyllt:rotfyller:rotfyll:rotfyllas:rotfylldes:rotfyllts:rotfylls, rotfylles:rotfylld:rotfyllt:rotfyllda::
+COMPOUND(561217, 585772): rot + fylla
+662360r5<substantiv>rotfyllning:rotfyllning:rotfyllnings:rotfyllningen:rotfyllningens:rotfyllningar:rotfyllningars:rotfyllningarna:rotfyllningarnas
+COMPOUND(561217, 657322): rot + fyllning
+CUSTOM: y y rotfyllnings
+575677r3<adjektiv>rotig:rotig:rotigt:rotiga:rotiga::::
+CUSTOM: y n
+848641r3<substantiv>rotisseri:rotisseri:rotisseris:rotisseriet:rotisseriets:rotisserier:rotisseriers:rotisserierna:rotisseriernas
+662368r5<substantiv>rotknöl:rotknöl:rotknöls:rotknölen:rotknölens:rotknölar:rotknölars:rotknölarna:rotknölarnas
+COMPOUND(561217, 551568): rot + knöl
+550402r3<substantiv>rotkonsonant:rotkonsonant:rotkonsonants:rotkonsonanten:rotkonsonantens:rotkonsonanter:rotkonsonanters:rotkonsonanterna:rotkonsonanternas
+662376r4<substantiv>rotlängd:rotlängd:rotlängds:rotlängden:rotlängdens:rotlängder:rotlängders:rotlängderna:rotlängdernas
+CUSTOM: y n n
+561242r3<adjektiv>rotlös:rotlös:rotlöst:rotlösa:rotlösa::::
+561245r3<substantiv>rotlöshet:rotlöshet:rotlöshets:rotlösheten:rotlöshetens::::
+CUSTOM: y y rotlöshets
+561249r4<substantiv>rotmos:rotmos:rotmos:rotmoset:rotmosets:!:!:!:!
+COMPOUND(561217, 623256): rot + mos
+848649r2<substantiv>rotogravyr:rotogravyr:rotogravyrs:rotogravyren:rotogravyrens:rotogravyrer:rotogravyrers:rotogravyrerna:rotogravyrernas
+637841r3<substantiv>rotor:rotor:rotors:rotorn:rotorns:rotorer:rotorers:rotorerna:rotorernas
+848657r3<substantiv>rotorblad:rotorblad:rotorblads:rotorbladet:rotorbladets:rotorblad:rotorblads:rotorbladen:rotorbladens
+696427r3<substantiv>rotröta:rotröta:rotrötas:rotrötan:rotrötans::::
+CUSTOM: y n n
+923966r3<substantiv>rots:rots:rots:rotsen:rotsens::::
+741213r4<substantiv>rotsaker:rotsak:rotsaks:rotsaken:rotsakens:rotsaker:rotsakers:rotsakerna:rotsakernas
+741226r3<substantiv>rotselleri:rotselleri:rotselleris:rotsellerin:rotsellerins::::
+846705r4<verb>rotslå:rotslå:rotslog:rotslagit:rotslår:rotslå:rotslås:rotslogs:rotslagits:rotslås:rotslagen:rotslaget:rotslagna::
+COMPOUND(561217, 558224): rot + slå
+561252r4<substantiv>rotting:rotting:rottings:rottingen:rottingens:rottingar:rottingars:rottingarna:rottingarnas
+CUSTOM: y y rotting
+775507r3<substantiv>rottingmöbel::::::::
+COMPOUND(561252, 621549): rotting + möbel
+932290r4<substantiv>rottråd:rottråd:rottråds:rottråden:rottrådens:rottrådar:rottrådars:rottrådarna:rottrådarnas
+COMPOUND(561217, 552048): rot + tråd
+775508r5<substantiv>rottweiler:rottweiler:rottweilers:rottweilern:rottweilerns:rottweiler:rottweilers:rottweilerna:rottweilernas
+CUSTOM: y y rottweiler
+775512r4<substantiv>rottweilertik:rottweilertik:rottweilertiks:rottweilertiken:rottweilertikens:rottweilertikar:rottweilertikars:rottweilertikarna:rottweilertikarnas
+COMPOUND(775508, 552004): rottweiler + tik
+637849r3<substantiv>rotunda:rotunda:rotundas:rotundan:rotundans:rotundor:rotundors:rotundorna:rotundornas
+561260r3<substantiv>rotvälska:rotvälska:rotvälskas:rotvälskan:rotvälskans::::
+561264r3<substantiv>rotvälta:rotvälta:rotvältas:rotvältan:rotvältans:rotvältor:rotvältors:rotvältorna:rotvältornas
+637857r3<substantiv>roué:roué:roués:rouén:rouéns:rouéer:rouéers:rouéerna:rouéernas
+CUSTOM: y n
+626160r4<substantiv>rouge:rouge:rouges:rougen:rougens:!:!:!:!
+DEFINITION 1: Ett slags smink.
+561272r5<substantiv>roulad:roulad:roulads:rouladen:rouladens:roulader:rouladers:rouladerna:rouladernas
+561280r3<substantiv>roulett:roulett:rouletts:rouletten:roulettens:rouletter:rouletters:rouletterna:rouletternas
+CUSTOM: y y roulett
+637865r3<substantiv>roulette:roulette:roulettes:rouletten:roulettens:rouletter:rouletters:rouletterna:rouletternas
+CUSTOM: y y roulette
+896344r3<egennamn>Rousseau:Rousseau:Rousseaus
+848665r4<substantiv>router:router:routers:routern:routerns:routrar:routrars:routrarna:routrarnas
+561288r4<substantiv>rov:rov:rovs:rovet:rovets:rov:rovs:roven:rovens
+561292r6<substantiv>rova:rova:rovas:rovan:rovans:rovor:rovors:rovorna:rovornas
+DEFINITION 1: En slags rotfrukt.
+DEFINITION 2: Fickur.
+CUSTOM: y n
+552846r7<substantiv>rovdjur:rovdjur:rovdjurs:rovdjuret:rovdjurets:rovdjur:rovdjurs:rovdjuren:rovdjurens
+CUSTOM: y y rovdjurs
+877650r4<substantiv>rovdjursart:rovdjursart:rovdjursarts:rovdjursarten:rovdjursartens:rovdjursarter:rovdjursarters:rovdjursarterna:rovdjursarternas
+COMPOUND(552846, 548244): rovdjur + art
+775513r3<substantiv>rovdjursinstinkt::::::::
+COMPOUND(552846, 549349): rovdjur + instinkt
+914558r4<substantiv>rovdjurslän:rovdjurslän:rovdjursläns:rovdjurslänet:rovdjurslänets:rovdjurslän:rovdjursläns:rovdjurslänen:rovdjurslänens
+COMPOUND(552846, 552681): rovdjur + län
+914566r4<substantiv>rovdjursråd:rovdjursråd:rovdjursråds:rovdjursrådet:rovdjursrådets:rovdjursråd:rovdjursråds:rovdjursråden:rovdjursrådens
+COMPOUND(552846, 552853): rovdjur + råd
+636728r7<adjektiv>rovdjurstät:rovdjurstät:rovdjurstätt:rovdjurstäta:rovdjurstäta::::::::::::
+696428r3<substantiv>rovdrift:rovdrift:rovdrifts:rovdriften:rovdriftens::::
+848673r3<substantiv>rovfisk:rovfisk:rovfisks:rovfisken:rovfiskens:rovfiskar:rovfiskars:rovfiskarna:rovfiskarnas
+741230r3<substantiv>rovfiske:rovfiske:rovfiskes:rovfisket:rovfiskets::::
+561300r3<substantiv>rovfågel:rovfågel:rovfågels:rovfågeln:rovfågelns:rovfåglar:rovfåglars:rovfåglarna:rovfåglarnas
+CUSTOM: y y rovfågel rovfågels
+575680r4<adjektiv>rovgirig:rovgirig:rovgirigt:rovgiriga:rovgiriga:rovgirigare:rovgirigast:rovgirigaste:rovgirige
+775514r3<substantiv>rovgirighet:rovgirighet:rovgirighets:rovgirigheten:rovgirighetens::::
+924675r8<egennamn>Rowling:Rowling:Rowlings
+775518r4<adjektiv>rovlysten:rovlysten:rovlystet:rovlystna:rovlystna::::rovlystne
+775521r3<substantiv>rovlystnad:rovlystnad:rovlystnads:rovlystnaden:rovlystnadens::::
+848686r3<substantiv>rovriddare:rovriddare:rovriddares:rovriddaren:rovriddarens:rovriddare:rovriddares:rovriddarna:rovriddarnas
+971995r3<egennamn>Roy:Roy:Roys
+696429r6<substantiv>royalty:royalty:royaltys:royaltyn:royaltyns:royaltyer:royaltyers:royaltyerna:royaltyernas
+CUSTOM: y y royalty
+854005r3<egennamn>Royce:Royce:Royces
+637867r3<substantiv>rubank:rubank:rubanks:rubanken:rubankens:rubankar:rubankars:rubankarna:rubankarnas
+554995r3<verb>rubatera:rubatera:rubaterade:rubaterat:rubaterar:rubatera:rubateras:rubaterades:rubaterats:rubateras:::::
+CUSTOM: y n n
+881317r3<substantiv>rubato:rubato:rubatos:rubatot:rubatots:rubaton:rubatons:rubatona:rubatonas
+628640r3<substantiv>rubb:rubb:rubbs:rubbet:rubbets::::
+CUSTOM: y n !rubbs
+547600r5<verb>rubba:rubba:rubbade:rubbat:rubbar:rubba:rubbas:rubbades:rubbats:rubbas:rubbad:rubbat:rubbade:rubbande:
+635910r3<adjektiv>rubbad:rubbad:rubbat:rubbade:rubbade:!:!:!:
+735204r3<substantiv>rubbning:rubbning:rubbnings:rubbningen:rubbningens:rubbningar:rubbningars:rubbningarna:rubbningarnas
+637875r4<substantiv>rubel:rubel:rubels:rubeln:rubelns:rubel, rubler:rubels, rublers:rublerna:rublernas
+CUSTOM: y n
+881325r3<substantiv>rubelkurs:rubelkurs:rubelkurs:rubelkursen:rubelkursens:rubelkurser:rubelkursers:rubelkurserna:rubelkursernas
+971860r3<egennamn>Ruben:Ruben:Rubens
+890799r3<egennamn>Rubenowitz:Rubenowitz:Rubenowitzs
+CUSTOM: n n
+854977r3<egennamn>Rubens:Rubens:Rubens
+CUSTOM: y n Rubens
+855079r3<egennamn>Rubenson:Rubenson:Rubensons
+723550r3<substantiv>rubidium:rubidium:rubidiums:rubidiumet:rubidiumets:!:!:!:!
+561302r5<substantiv>rubin:rubin:rubins:rubinen:rubinens:rubiner:rubiners:rubinerna:rubinernas
+DEFINITION 1: Röd ädelsten
+CUSTOM: y y rubin
+704685r6<adjektiv>rubinröd:rubinröd:rubinrött:rubinröda:rubinröda:!:!:!:!
+COMPOUND(561302, 554994): rubin + röd
+547601r5<verb>rubricera:rubricera:rubricerade:rubricerat:rubricerar:rubricera:rubriceras:rubricerades:rubricerats:rubriceras:rubricerad:rubricerat:rubricerade:rubricerande:
+660674r4<substantiv>rubricering:rubricering:rubricerings:rubriceringen:rubriceringens:rubriceringar:rubriceringars:rubriceringarna:rubriceringarnas
+CUSTOM: y y rubricerings +rubricerings
+550404r8<substantiv>rubrik:rubrik:rubriks:rubriken:rubrikens:rubriker:rubrikers:rubrikerna:rubrikernas
+CUSTOM: y y rubrik
+706369r4<substantiv>rubrikannons:rubrikannons:rubrikannons:rubrikannonsen:rubrikannonsens:rubrikannonser:rubrikannonsers:rubrikannonserna:rubrikannonsernas
+COMPOUND(550404, 548200): rubrik + annons
+911827r4<substantiv>rubrikord:rubrikord:rubrikords:rubrikordet:rubrikordets:rubrikord:rubrikords:rubrikorden:rubrikordens
+COMPOUND(550404, 555138): rubrik + ord
+881333r3<substantiv>ruccola:ruccola:ruccolas:ruccolan:ruccolans::::
+881339r3<substantiv>ruccolasallad:ruccolasallad:ruccolasallads:ruccolasalladen:ruccolasalladens:ruccolasallader:ruccolasalladers:ruccolasalladerna:ruccolasalladernas
+547602r5<verb>rucka:rucka:ruckade:ruckat:ruckar:rucka:ruckas:ruckades:ruckats:ruckas:ruckad:ruckat:ruckade:ruckande:
+704688r3<substantiv>ruckel:ruckel:ruckels:rucklet:rucklets:ruckel:ruckels:rucklen:rucklens
+704694r3<substantiv>rucklare:rucklare:rucklares:rucklaren:rucklarens:rucklare:rucklares:rucklarna:rucklarnas
+567553r3<adjektiv>rucklig:rucklig:ruckligt:ruckliga:ruckliga::::
+881349r3<substantiv>rucola:rucola:rucolas:rucolan:rucolans::::
+881355r3<substantiv>rucolasallad:rucolasallad:rucolasallads:rucolasalladen:rucolasalladens:rucolasallader:rucolasalladers:rucolasalladerna:rucolasalladernas
+895339r3<substantiv>ruda:ruda:rudas:rudan:rudans:rudor:rudors:rudorna:rudornas
+CUSTOM: n n y
+924927r8<egennamn>Rudberg:Rudberg:Rudbergs
+985220r3<substantiv>ruderatmark:ruderatmark:ruderatmarks:ruderatmarken:ruderatmarkens:ruderatmarker:ruderatmarkers:ruderatmarkerna:ruderatmarkernas
+696434r3<substantiv>rudiment:rudiment:rudiments:rudimentet:rudimentets:rudiment:rudiments:rudimenten:rudimentens
+635736r3<adjektiv>rudimentär:rudimentär:rudimentärt:rudimentära:rudimentära::::
+935583r3<adjektiv>rudis:rudis:::::::::::::::
+CUSTOM: n n y
+554773r3<egennamn>Rudolf:Rudolf:Rudolfs
+696440r3<substantiv>ruelse:ruelse:ruelses:ruelsen:ruelsens::::
+CUSTOM: y y ruelse
+585082r3<adjektiv>ruelsefull:ruelsefull:ruelsefullt:ruelsefulla:ruelsefulla::::
+800197r3<adjektiv>ruelsefylld:ruelsefylld:ruelsefyllt:ruelsefyllda:ruelsefyllda::::
+848694r3<substantiv>ruff:ruff:ruffs:ruffen:ruffens:ruffar:ruffars:ruffarna:ruffarnas
+938029r3<verb>ruffa:ruffa:ruffade:ruffat:ruffar:ruffa:ruffas:ruffades:ruffats:ruffas::::ruffande:
+794555r3<adjektiv>ruffad:ruffad:ruffat:ruffade:ruffade:!:!:!:
+848702r3<substantiv>ruffel:ruffel:ruffels:rufflet:rufflets::::
+575683r4<adjektiv>ruffig:ruffig:ruffigt:ruffiga:ruffiga:ruffigare:ruffigast:ruffigaste:ruffige
+881364r3<substantiv>ruffighet:ruffighet:ruffighets:ruffigheten:ruffighetens:ruffigheter:ruffigheters:ruffigheterna:ruffigheternas
+848710r3<verb>ruffla:ruffla:rufflade:rufflat:rufflar:ruffla:rufflas:rufflades:rufflats:rufflas::::rufflande:
+881372r3<substantiv>rufflare:rufflare:rufflares:rufflaren:rufflarens:rufflare:rufflares:rufflarna:rufflarnas
+848718r3<substantiv>rufftak:rufftak:rufftaks:rufftaket:rufftakets:rufftak:rufftaks:rufftaken:rufft

@@ -201,6 +201,129 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
     }
 
     /// <summary>
+    /// Generates L-shaped segment configurations for placing a word of the given length
+    /// at arbitrary positions on the grid, without requiring pre-existing letters.
+    /// This enables vinkelord placement on an empty grid or in empty areas.
+    /// Positions are scored by proximity to grid center and segment balance,
+    /// then the top candidates are returned.
+    /// </summary>
+    public List<List<WordSegment>> GenerateFreeVinkelordPositions(
+        CrosswordGrid grid, int wordLength, int maxPositions = 30)
+    {
+        if (wordLength < 3) return [];
+
+        var candidates = new List<(List<WordSegment> Segments, double Score)>();
+        double centerRow = grid.Height / 2.0;
+        double centerCol = grid.Width / 2.0;
+
+        var terminalCells = new HashSet<(int, int)>();
+        foreach (var w in grid.Words)
+        {
+            if (w.IsPlaced)
+                terminalCells.Add((w.EndRow, w.EndColumn));
+        }
+
+        ReadOnlySpan<(Direction First, Direction Second)> dirPairs =
+        [
+            (Direction.Across, Direction.Down),
+            (Direction.Down, Direction.Across)
+        ];
+
+        for (int seg1Len = 2; seg1Len <= wordLength - 1; seg1Len++)
+        {
+            int seg2Len = wordLength + 1 - seg1Len;
+            if (seg2Len < 2) continue;
+
+            foreach (var (firstDir, secondDir) in dirPairs)
+            {
+                for (int bendRow = 0; bendRow < grid.Height; bendRow++)
+                {
+                    for (int bendCol = 0; bendCol < grid.Width; bendCol++)
+                    {
+                        if (grid.GetCell(bendRow, bendCol).IsBlocked) continue;
+                        if (terminalCells.Contains((bendRow, bendCol))) continue;
+
+                        var seg1Start = GetSegmentStart(bendRow, bendCol, firstDir, seg1Len);
+
+                        var seg1 = new WordSegment
+                        {
+                            StartRow = seg1Start.Row,
+                            StartCol = seg1Start.Col,
+                            Direction = firstDir,
+                            Length = seg1Len
+                        };
+
+                        var seg2 = new WordSegment
+                        {
+                            StartRow = bendRow,
+                            StartCol = bendCol,
+                            Direction = secondDir,
+                            Length = seg2Len
+                        };
+
+                        // Validate all positions are in bounds and not blocked
+                        bool valid = true;
+                        foreach (var (r, c) in seg1.GetPositions())
+                        {
+                            if (!grid.IsValidPosition(r, c) || grid.GetCell(r, c).IsBlocked)
+                            { valid = false; break; }
+                        }
+                        if (!valid) continue;
+
+                        var seg2Positions = seg2.GetPositions().ToList();
+                        for (int i = 1; i < seg2Positions.Count; i++)
+                        {
+                            var (r, c) = seg2Positions[i];
+                            if (!grid.IsValidPosition(r, c) || grid.GetCell(r, c).IsBlocked)
+                            { valid = false; break; }
+                        }
+                        if (!valid) continue;
+
+                        // Isolation before the first segment
+                        if (firstDir == Direction.Across)
+                        {
+                            if (seg1.StartCol > 0 && grid.GetCell(seg1.StartRow, seg1.StartCol - 1).HasLetter) continue;
+                        }
+                        else
+                        {
+                            if (seg1.StartRow > 0 && grid.GetCell(seg1.StartRow - 1, seg1.StartCol).HasLetter) continue;
+                        }
+
+                        // Isolation after the last segment
+                        if (secondDir == Direction.Across)
+                        {
+                            if (seg2.EndCol + 1 < grid.Width && grid.GetCell(seg2.EndRow, seg2.EndCol + 1).HasLetter) continue;
+                        }
+                        else
+                        {
+                            if (seg2.EndRow + 1 < grid.Height && grid.GetCell(seg2.EndRow + 1, seg2.EndCol).HasLetter) continue;
+                        }
+
+                        var dist = Math.Abs(bendRow - centerRow) + Math.Abs(bendCol - centerCol);
+                        double score = 20.0 - dist * 0.3;
+                        // Prefer balanced L-shapes
+                        var splitBalance = 1.0 - Math.Abs(seg1Len - seg2Len) / (double)wordLength;
+                        score += splitBalance * 3.0;
+                        score += _random.NextDouble() * 2.0;
+
+                        candidates.Add(([seg1, seg2], score));
+                    }
+                }
+            }
+        }
+
+        candidates.Sort((a, b) => b.Score.CompareTo(a.Score));
+
+        var result = new List<List<WordSegment>>(Math.Min(maxPositions, candidates.Count));
+        for (int i = 0; i < candidates.Count && result.Count < maxPositions; i++)
+        {
+            result.Add(candidates[i].Segments);
+        }
+
+        return result;
+    }
+
+    /// <summary>
     /// Attempts to fill vinkelord (bent word) opportunities with matching words.
     /// </summary>
     public async Task FillVinkelordAsync(CrosswordGrid grid, List<Word> candidateWords, HashSet<Word> placedWords,

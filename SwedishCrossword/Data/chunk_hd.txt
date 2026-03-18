@@ -1,0 +1,561 @@
+sningarnas
+736663r3<adjektiv>upprivande:upprivande:upprivande:upprivande:upprivande:!:!:!:
+697698r3<adjektiv>uppriven:uppriven:upprivet:upprivna:upprivna::::upprivne
+810633r3<substantiv>upprivenhet:upprivenhet:upprivenhets:upprivenheten:upprivenhetens::::
+810637r3<substantiv>upprivning:upprivning:upprivnings:upprivningen:upprivningens::::
+553078r4<substantiv>upprop:upprop:upprops:uppropet:uppropets:upprop:upprops:uppropen:uppropens
+CUSTOM: y y upprops
+547934r3<verb>uppropa:uppropa:uppropade:uppropat:uppropar:uppropa:::::::::
+CUSTOM: y n n
+697700r3<adjektiv>uppropad:uppropad:uppropat:uppropade:uppropade:!:!:!:
+810641r3<substantiv>uppropslista::::::::
+COMPOUND(553078, 555151): upprop + lista
+697701r4<substantiv>uppror:uppror:upprors:upproret:upprorets:uppror:upprors:upproren:upprorens
+CUSTOM: y y upprors
+584579r4<adjektiv>upprorisk:upprorisk:upproriskt:upproriska:upproriska::::upproriske
+810643r3<substantiv>upproriskhet:upproriskhet:upproriskhets:upproriskheten:upproriskhetens::::
+736819r3<substantiv>upprorsmakare:upprorsmakare:upprorsmakares:upprorsmakaren:upprorsmakarens:upprorsmakare:upprorsmakares:upprorsmakarna:upprorsmakarnas
+711082r3<substantiv>upprorsman:upprorsman:upprorsmans:upprorsmannen:upprorsmannens:upprorsmän:upprorsmäns:upprorsmännen:upprorsmännens
+796221r3<adjektiv>uppruggad:uppruggad:uppruggat:uppruggade:uppruggade:!:!:!:
+810647r3<substantiv>uppruggning:uppruggning:uppruggnings:uppruggningen:uppruggningens:uppruggningar:uppruggningars:uppruggningarna:uppruggningarnas
+796224r3<adjektiv>upprullad:upprullad:upprullat:upprullade:upprullade:!:!:!:
+810655r4<substantiv>upprullning:upprullning:upprullnings:upprullningen:upprullningens::::
+CUSTOM: y y upprullnings
+810659r4<substantiv>upprullningsverk:upprullningsverk:upprullningsverks:upprullningsverket:upprullningsverkets:upprullningsverk:upprullningsverks:upprullningsverken:upprullningsverkens
+COMPOUND(810655, 553117): upprullning + verk
+810665r3<substantiv>upprusning:upprusning:upprusnings:upprusningen:upprusningens::::
+547935r6<verb>upprusta:upprusta:upprustade:upprustat:upprustar:upprusta:upprustas:upprustades:upprustats:upprustas:upprustad:upprustat:upprustade:upprustande:
+796228r3<adjektiv>upprustad:upprustad:upprustat:upprustade:upprustade:!:!:!:
+810670r3<substantiv>upprustare:upprustare:upprustares:upprustaren:upprustarens:upprustare:upprustares:upprustarna:upprustarnas
+697704r3<substantiv>upprustning:upprustning:upprustnings:upprustningen:upprustningens:upprustningar:upprustningars:upprustningarna:upprustningarnas
+CUSTOM: y y upprustnings
+803821r3<substantiv>upprutning:upprutning:upprutnings:upprutningen:upprutningens:upprutningar:upprutningars:upprutningarna:upprutningarnas
+810676r3<adjektiv>upprutten:upprutten:uppruttet:uppruttna:uppruttna::::
+796229r3<adjektiv>uppruttnad:uppruttnad:uppruttnat:uppruttnade:uppruttnade:!:!:!:
+697705r3<substantiv>uppryckning:uppryckning:upprycknings:uppryckningen:uppryckningens:uppryckningar:uppryckningars:uppryckningarna:uppryckningarnas
+CUSTOM: y y upprycknings
+725260r3<adjektiv>upprymd:upprymd:upprymt:upprymda:upprymda::::upprymde
+725679r3<substantiv>upprymdhet:upprymdhet:upprymdhets:upprymdheten:upprymdhetens:!:!:!:!
+810679r4<verb>upprymma:upprymma:upprymde:upprymt:upprymmer:upprym:upprymmas:upprymdes:upprymts:uppryms, upprymmes::::upprymmande:
+COMPOUND(619887, 593330): upp + rymma
+810688r3<substantiv>upprymmare:upprymmare:upprymmares:upprymmaren:upprymmarens:upprymmare:upprymmares:upprymmarna:upprymmarnas
+810694r3<substantiv>upprymning:upprymning:upprymnings:upprymningen:upprymningens::::
+810698r3<substantiv>uppräckning:uppräckning:uppräcknings:uppräckningen:uppräckningens::::
+810702r3<adjektiv>uppräckt:uppräckt:uppräckt:uppräckta:uppräckta::::
+547936r4<verb>uppräkna:uppräkna:uppräknade:uppräknat:uppräknar:uppräkna:uppräknas:uppräknades:uppräknats:uppräknas:uppräknad:uppräknat:uppräknade::
+770777r3<substantiv>uppräknande:uppräknande:uppräknandes:uppräknandet:uppräknandets::::
+568336r3<adjektiv>uppräknelig:uppräknelig:uppräkneligt:uppräkneliga:uppräkneliga::::
+697713r3<substantiv>uppräkning:uppräkning:uppräknings:uppräkningen:uppräkningens:uppräkningar:uppräkningars:uppräkningarna:uppräkningarnas
+CUSTOM: y y uppräknings
+697723r5<adjektiv>upprätt:upprätt:upprätt:upprätta:upprätta:!:!:!:
+CUSTOM: y n
+547937r4<verb>upprätta:upprätta:upprättade:upprättat:upprättar:upprätta:upprättas:upprättades:upprättats:upprättas:upprättad:upprättat:upprättade::
+697715r3<substantiv>upprättande:upprättande:upprättandes:upprättandet:upprättandets::::
+810704r3<substantiv>upprättare:upprättare:upprättares:upprättaren:upprättarens:upprättare:upprättares:upprättarna:upprättarnas
+697717r3<substantiv>upprättelse:upprättelse:upprättelses:upprättelsen:upprättelsens:upprättelser:upprättelsers:upprättelserna:upprättelsernas
+CUSTOM: y y upprättelse
+697722r4<verb>upprätthålla:upprätthålla:upprätthöll:upprätthållit:upprätthåller:upprätthåll:upprätthållas:upprätthölls:upprätthållits:upprätthålls, upprätthålles:upprätthållen:upprätthållet:upprätthållna:upprätthållande:
+COMPOUND(697723, 555233): upprätt + hålla
+749447r3<substantiv>upprätthållande:upprätthållande:upprätthållandes:upprätthållandet:upprätthållandets::::
+803829r3<substantiv>upprätthållare:upprätthållare:upprätthållares:upprätthållaren:upprätthållarens:upprätthållare:upprätthållares:upprätthållarna:upprätthållarnas
+726236r4<adjektiv>upprättstående:upprättstående:upprättstående:upprättstående:upprättstående:!:!:!:!
+COMPOUND(697723, 591615): upprätt + stående
+800670r3<adjektiv>uppröjd:uppröjd:uppröjt:uppröjda:uppröjda::::
+803835r4<substantiv>uppröjning:uppröjning:uppröjnings:uppröjningen:uppröjningens:uppröjningar:uppröjningars:uppröjningarna:uppröjningarnas
+CUSTOM: y y uppröjnings
+810710r3<substantiv>uppröjningsprojekt::::::::
+COMPOUND(803835, 552796): uppröjning + projekt
+697729r4<verb>uppröra:uppröra:upprörde:upprört:upprör:upprör:uppröras:upprördes:upprörts:upprörs, uppröres:upprörd:upprört:upprörda:upprörande:
+COMPOUND(619887, 585859): upp + röra
+697732r3<adjektiv>upprörande:upprörande:upprörande:upprörande:upprörande:!:!:!:
+800673r4<adjektiv>upprörd:upprörd:upprört:upprörda:upprörda:upprördare:upprördast:upprördaste:upprörde
+697733r3<substantiv>upprördhet:upprördhet:upprördhets:upprördheten:upprördhetens::::
+CUSTOM: y y upprördhets
+697734r3<adjektiv>uppsagd:uppsagd:uppsagt:uppsagda:uppsagda:!:!:!:uppsagde
+554407r8<egennamn>Uppsala:Uppsala:Uppsala, Uppsalas
+CUSTOM: y n uppsala
+697738r3<substantiv>uppsalabo:uppsalabo:uppsalabos:uppsalabon:uppsalabons:uppsalabor:uppsalabors:uppsalaborna:uppsalabornas
+810714r3<substantiv>uppsaliensare:uppsaliensare:uppsaliensares:uppsaliensaren:uppsaliensarens:uppsaliensare:uppsaliensares:uppsaliensarna:uppsaliensarnas
+584580r3<adjektiv>uppsaliensisk:uppsaliensisk:uppsaliensiskt:uppsaliensiska:uppsaliensiska::::
+703410r4<verb>uppsamla:uppsamla:uppsamlade:uppsamlat:uppsamlar:uppsamla:uppsamlas:uppsamlades:uppsamlats:uppsamlas:uppsamlad:uppsamlat:uppsamlade:uppsamlande:
+810721r3<substantiv>uppsamlare:uppsamlare:uppsamlares:uppsamlaren:uppsamlarens:uppsamlare:uppsamlares:uppsamlarna:uppsamlarnas
+803843r4<substantiv>uppsamling:uppsamling:uppsamlings:uppsamlingen:uppsamlingens:uppsamlingar:uppsamlingars:uppsamlingarna:uppsamlingarnas
+CUSTOM: y y uppsamlings
+803852r4<substantiv>uppsamlingsheat:uppsamlingsheat:uppsamlingsheats:uppsamlingsheatet:uppsamlingsheatets:uppsamlingsheat:uppsamlingsheats:uppsamlingsheaten:uppsamlingsheatens
+COMPOUND(803843, 643258): uppsamling + heat
+550737r5<substantiv>uppsats:uppsats:uppsats:uppsatsen:uppsatsens:uppsatser:uppsatsers:uppsatserna:uppsatsernas
+CUSTOM: y y uppsats +uppsats
+787196r4<substantiv>uppsatsseminarium:uppsatsseminarium:uppsatsseminariums:uppsatsseminariet:uppsatsseminariets:uppsatsseminarier:uppsatsseminariers:uppsatsseminarierna:uppsatsseminariernas
+COMPOUND(550737, 622136): uppsats + seminarium
+787216r4<substantiv>uppsatstitel:uppsatstitel:uppsatstitels:uppsatstiteln:uppsatstitelns:uppsatstitlar:uppsatstitlars:uppsatstitlarna:uppsatstitlarnas
+COMPOUND(550737, 626697): uppsats + titel
+697746r3<adjektiv>uppsatt:uppsatt:uppsatt:uppsatta:uppsatta:!:!:!:uppsatte
+796232r3<adjektiv>uppschaktad:uppschaktad:uppschaktat:uppschaktade:uppschaktade:!:!:!:
+810727r3<substantiv>uppschaktning:uppschaktning:uppschaktnings:uppschaktningen:uppschaktningens:uppschaktningar:uppschaktningars:uppschaktningarna:uppschaktningarnas
+697760r3<substantiv>uppseende:uppseende:uppseendes:uppseendet:uppseendets:!:!:!:!
+697764r3<adjektiv>uppseendeväckande:uppseendeväckande:uppseendeväckande:uppseendeväckande:uppseendeväckande:!:!:!:
+697765r3<adjektiv>uppseglande:uppseglande:uppseglande:uppseglande:uppseglande:!:!:!:
+697766r3<substantiv>uppsegling:uppsegling:uppseglings:uppseglingen:uppseglingens::::
+697770r3<substantiv>uppsikt:uppsikt:uppsikts:uppsikten:uppsiktens:!:!:!:!
+749451r3<substantiv>uppsittning:uppsittning:uppsittnings:uppsittningen:uppsittningens:uppsittningar:uppsittningars:uppsittningarna:uppsittningarnas
+810735r3<substantiv>uppsjungning:uppsjungning:uppsjungnings:uppsjungningen:uppsjungningens:uppsjungningar:uppsjungningars:uppsjungningarna:uppsjungningarnas
+697774r3<substantiv>uppsjö:uppsjö:!:!:!:!:!:!:!
+697775r3<adjektiv>uppskakad:uppskakad:uppskakat:uppskakade:uppskakade:!:!:!:
+703418r3<adjektiv>uppskakande:uppskakande:uppskakande:uppskakande:uppskakande:!:!:!:
+703419r4<substantiv>uppskakning:uppskakning:uppskaknings:uppskakningen:uppskakningens:uppskakningar:uppskakningars:uppskakningarna:uppskakningarnas
+CUSTOM: y y uppskaknings
+796235r3<adjektiv>uppskalad:uppskalad:uppskalat:uppskalade:uppskalade:!:!:!:
+894713r3<substantiv>uppskalning:uppskalning:uppskalnings:uppskalningen:uppskalningens:uppskalningar:uppskalningars:uppskalningarna:uppskalningarnas
+547940r4<verb>uppskatta:uppskatta:uppskattade:uppskattat:uppskattar:uppskatta:uppskattas:uppskattades:uppskattats:uppskattas:uppskattad:uppskattat:uppskattade::
+697777r3<adjektiv>uppskattande:uppskattande:uppskattande:uppskattande:uppskattande:!:!:!:
+570376r3<adjektiv>uppskattbar:uppskattbar:uppskattbart:uppskattbara:uppskattbara::::
+620894r3<substantiv>uppskattning:uppskattning:uppskattnings:uppskattningen:uppskattningens:uppskattningar:uppskattningars:uppskattningarna:uppskattningarnas
+CUSTOM: y y uppskattnings
+620895r3<adverb>uppskattningsvis:uppskattningsvis
+703423r3<adjektiv>uppskickad:uppskickad:uppskickat:uppskickade:uppskickade:!:!:!:
+810747r3<substantiv>uppskickning:uppskickning:uppskicknings:uppskickningen:uppskickningens::::
+697778r5<verb>uppskjuta:uppskjuta:uppsköt:uppskjutit:uppskjuter:uppskjut:uppskjutas:uppsköts:uppskjutits:uppskjuts, uppskjutes:uppskjuten:uppskjutet:uppskjutna::
+COMPOUND(619887, 593371): upp + skjuta
+749460r3<substantiv>uppskjutande:uppskjutande:uppskjutandes:uppskjutandet:uppskjutandets::::
+695945r5<substantiv>uppskjutning:uppskjutning:uppskjutnings:uppskjutningen:uppskjutningens:uppskjutningar:uppskjutningars:uppskjutningarna:uppskjutningarnas
+CUSTOM: y y uppskjutnings +uppskjutnings
+903136r4<substantiv>uppskjutningsramp:uppskjutningsramp:uppskjutningsramps:uppskjutningsrampen:uppskjutningsrampens:uppskjutningsramper:uppskjutningsrampers:uppskjutningsramperna:uppskjutningsrampernas
+COMPOUND(695945, 550312): uppskjutning + ramp
+796238r3<adjektiv>uppskojad:uppskojad:uppskojat:uppskojade:uppskojade:!:!:!:
+796241r3<adjektiv>uppskottad:uppskottad:uppskottat:uppskottade:uppskottade:!:!:!:
+810752r3<substantiv>uppskottning:uppskottning:uppskottnings:uppskottningen:uppskottningens::::
+608385r4<substantiv>uppskov:uppskov:uppskovs:uppskovet:uppskovets:uppskov:uppskovs:uppskoven:uppskovens
+CUSTOM: y y uppskovs +uppskovs
+703426r4<substantiv>uppskovsärende:uppskovsärende:uppskovsärendes:uppskovsärendet:uppskovsärendets:uppskovsärenden:uppskovsärendens:uppskovsärendena:uppskovsärendenas
+COMPOUND(608385, 560759): uppskov + ärende
+796244r3<adjektiv>uppskrapad:uppskrapad:uppskrapat:uppskrapade:uppskrapade:!:!:!:
+749465r5<verb>uppskriva::::::::::uppskriven:uppskrivet:uppskrivna::
+597801r3<substantiv>uppskrivning:uppskrivning:uppskrivnings:uppskrivningen:uppskrivningens:uppskrivningar:uppskrivningars:uppskrivningarna:uppskrivningarnas
+CUSTOM: y y uppskrivnings +uppskrivnings
+703434r3<adjektiv>uppskruvad:uppskruvad:uppskruvat:uppskruvade:uppskruvade:!:!:!:
+810756r3<substantiv>uppskruvning:uppskruvning:uppskruvnings:uppskruvningen:uppskruvningens:uppskruvningar:uppskruvningars:uppskruvningarna:uppskruvningarnas
+697779r3<adjektiv>uppskrämd:uppskrämd:uppskrämt:uppskrämda:uppskrämda::::uppskrämde
+697781r3<adjektiv>uppskuren:uppskuren:uppskuret:uppskurna:uppskurna::::uppskurne
+810764r3<substantiv>uppskärare:uppskärare:uppskärares:uppskäraren:uppskärarens:uppskärare:uppskärares:uppskärarna:uppskärarnas
+810770r3<substantiv>uppskärning:uppskärning:uppskärnings:uppskärningen:uppskärningens:uppskärningar:uppskärningars:uppskärningarna:uppskärningarnas
+547942r3<verb>uppskärra:uppskärra:uppskärrade:uppskärrat:uppskärrar:uppskärra:::::::::
+697783r3<adjektiv>uppskärrad:uppskärrad:uppskärrat:uppskärrade:uppskärrade:!:!:!:
+810778r3<substantiv>uppskärrning:uppskärrning:uppskärrnings:uppskärrningen:uppskärrningens::::
+810783r3<adjektiv>uppskörtad:uppskörtad:uppskörtat:uppskörtade:uppskörtade:!:!:!:
+810787r3<substantiv>uppskörtning:uppskörtning:uppskörtnings:uppskörtningen:uppskörtningens::::
+553079r6<substantiv>uppslag:uppslag:uppslags:uppslaget:uppslagets:uppslag:uppslags:uppslagen:uppslagens
+CUSTOM: y y uppslags
+749468r3<adjektiv>uppslagen:uppslagen:uppslaget:uppslagna:uppslagna::::
+810791r3<substantiv>uppslagning:uppslagning:uppslagnings:uppslagningen:uppslagningens:uppslagningar:uppslagningars:uppslagningarna:uppslagningarnas
+697784r4<substantiv>uppslagsbok:uppslagsbok:uppslagsboks:uppslagsboken:uppslagsbokens:uppslagsböcker:uppslagsböckers:uppslagsböckerna:uppslagsböckernas
+COMPOUND(553079, 555346): uppslag + bok
+911862r4<substantiv>uppslagsord:uppslagsord:uppslagsords:uppslagsordet:uppslagsordets:uppslagsord:uppslagsords:uppslagsorden:uppslagsordens
+COMPOUND(553079, 555138): uppslag + ord
+760650r4<adjektiv>uppslagsrik:uppslagsrik:uppslagsrikt:uppslagsrika:uppslagsrika:uppslagsrikare:uppslagsrikast:uppslagsrikaste:uppslagsrike
+COMPOUND(553079, 563125): uppslag + rik
+697789r3<substantiv>uppslagsverk:uppslagsverk:uppslagsverks:uppslagsverket:uppslagsverkets:uppslagsverk:uppslagsverks:uppslagsverken:uppslagsverkens
+796247r3<adjektiv>uppslaktad:uppslaktad:uppslaktat:uppslaktade:uppslaktade:!:!:!:
+810799r3<substantiv>uppslaktning:uppslaktning:uppslaktnings:uppslaktningen:uppslaktningens:uppslaktningar:uppslaktningars:uppslaktningarna:uppslaktningarnas
+796250r3<adjektiv>uppslammad:uppslammad:uppslammat:uppslammade:uppslammade:!:!:!:
+810807r3<substantiv>uppslamning:uppslamning:uppslamnings:uppslamningen:uppslamningens:uppslamningar:uppslamningars:uppslamningarna:uppslamningarnas
+796253r3<adjektiv>uppslipad:uppslipad:uppslipat:uppslipade:uppslipade:!:!:!:
+697790r3<adjektiv>uppslitande:uppslitande:uppslitande:uppslitande:uppslitande:!:!:!:
+810815r3<adjektiv>uppsliten:uppsliten:uppslitet:uppslitna:uppslitna::::
+810818r3<substantiv>uppslitning:uppslitning:uppslitnings:uppslitningen:uppslitningens::::
+796256r3<adjektiv>uppslitsad:uppslitsad:uppslitsat:uppslitsade:uppslitsade:!:!:!:
+810822r3<substantiv>uppslitsning:uppslitsning:uppslitsnings:uppslitsningen:uppslitsningens:uppslitsningar:uppslitsningars:uppslitsningarna:uppslitsningarnas
+547943r4<verb>uppsluka:uppsluka:uppslukade:uppslukat:uppslukar:uppsluka:uppslukas:uppslukades:uppslukats:uppslukas:uppslukad:uppslukat:uppslukade:uppslukande:
+697791r7<adjektiv>uppsluppen:uppsluppen:uppsluppet:uppsluppna:uppsluppna:uppsluppnare:uppsluppnast:uppsluppnaste:uppsluppne
+749470r3<substantiv>uppsluppenhet:uppsluppenhet:uppsluppenhets:uppsluppenheten:uppsluppenhetens::::
+697793r3<substantiv>uppslutning:uppslutning:uppslutnings:uppslutningen:uppslutningens:uppslutningar:uppslutningars:uppslutningarna:uppslutningarnas
+CUSTOM: y y uppslutnings
+800674r3<adjektiv>uppslängd:uppslängd:uppslängt:uppslängda:uppslängda::::
+810833r3<substantiv>uppsläppning:uppsläppning:uppsläppnings:uppsläppningen:uppsläppningens::::
+800677r3<adjektiv>uppsmälld:uppsmälld:uppsmällt:uppsmällda:uppsmällda::::
+796259r3<adjektiv>uppsnabbad:uppsnabbad:uppsnabbat:uppsnabbade:uppsnabbade:!:!:!:
+810837r3<substantiv>uppsnabbning:uppsnabbning:uppsnabbnings:uppsnabbningen:uppsnabbningens::::
+697794r4<verb>uppsnappa:uppsnappa:uppsnappade:uppsnappat:uppsnappar:uppsnappa:uppsnappas:uppsnappades:uppsnappats:uppsnappas:uppsnappad:uppsnappat:uppsnappade:uppsnappande:
+810841r3<substantiv>uppsnappning:uppsnappning:uppsnappnings:uppsnappningen:uppsnappningens::::
+796262r3<adjektiv>uppsnofsad:uppsnofsad:uppsnofsat:uppsnofsade:uppsnofsade:!:!:!:
+796265r3<adjektiv>uppsnyggad:uppsnyggad:uppsnyggat:uppsnyggade:uppsnyggade:!:!:!:
+810845r3<substantiv>uppsnyggning:uppsnyggning:uppsnyggnings:uppsnyggningen:uppsnyggningens::::
+796268r3<adjektiv>uppsorterad:uppsorterad:uppsorterat:uppsorterade:uppsorterade:!:!:!:
+810849r3<substantiv>uppsortering:uppsortering:uppsorterings:uppsorteringen:uppsorteringens:uppsorteringar:uppsorteringars:uppsorteringarna:uppsorteringarnas
+547945r4<verb>uppspalta:uppspalta:uppspaltade:uppspaltat:uppspaltar:uppspalta:uppspaltas:uppspaltades:uppspaltats:uppspaltas:uppspaltad:uppspaltat:uppspaltade::
+796271r3<adjektiv>uppspaltad:uppspaltad:uppspaltat:uppspaltade:uppspaltade:!:!:!:
+810857r3<substantiv>uppspaltning:uppspaltning:uppspaltnings:uppspaltningen:uppspaltningens::::
+796272r3<adjektiv>uppsparkad:uppsparkad:uppsparkat:uppsparkade:uppsparkade:!:!:!:
+963633r3<adjektiv>uppspeedad:uppspeedad:uppspeedat:uppspeedade:uppspeedade:!:!:!:::::::::
+749474r3<substantiv>uppspel:uppspel:uppspels:uppspelet:uppspelets:uppspel:uppspels:uppspelen:uppspelens
+796275r3<adjektiv>uppspelad:uppspelad:uppspelat:uppspelade:uppspelade:!:!:!:
+810861r3<substantiv>uppspelning:uppspelning:uppspelnings:uppspelningen:uppspelningens:uppspelningar:uppspelningars:uppspelningarna:uppspelningarnas
+697799r3<adjektiv>uppspelt:uppspelt:uppspelt:uppspelta:uppspelta::::uppspelte
+810869r3<substantiv>uppspelthet:uppspelthet:uppspelthets:uppspeltheten:uppspelthetens::::
+796278r3<adjektiv>uppspetad:uppspetad:uppspetat:uppspetade:uppspetade:!:!:!:
+796281r3<adjektiv>uppspikad:uppspikad:uppspikat:uppspikade:uppspikade:!:!:!:
+810873r3<substantiv>uppspikning:uppspikning:uppspiknings:uppspikningen:uppspikningens::::
+810877r3<verb>uppspjälka:uppspjälka:uppspjälkade:uppspjälkat:uppspjälkar:uppspjälka:uppspjälkas:uppspjälkades:uppspjälkats:uppspjälkas:uppspjälkad:uppspjälkat:uppspjälkade:uppspjälkande:
+810886r3<substantiv>uppspjälkning:uppspjälkning:uppspjälknings:uppspjälkningen:uppspjälkningens::::
+796284r3<adjektiv>uppsplittrad:uppsplittrad:uppsplittrat:uppsplittrade:uppsplittrade:!:!:!:
+697801r4<substantiv>uppsplittring:uppsplittring:uppsplittrings:uppsplittringen:uppsplittringens:uppsplittringar:uppsplittringars:uppsplittringarna:uppsplittringarnas
+CUSTOM: y y uppsplittrings
+796287r3<adjektiv>uppspolad:uppspolad:uppspolat:uppspolade:uppspolade:!:!:!:
+749480r3<adjektiv>uppsprickande:uppsprickande:uppsprickande:uppsprickande:uppsprickande:!:!:!:
+810890r3<substantiv>uppsprickning:uppsprickning:uppspricknings:uppsprickningen:uppsprickningens::::
+810894r3<adjektiv>uppsprucken:uppsprucken:uppsprucket:uppspruckna:uppspruckna::::
+810897r3<substantiv>uppsprång:uppsprång:uppsprångs:uppsprånget:uppsprångets:uppsprång:uppsprångs:uppsprången:uppsprångens
+796290r3<adjektiv>uppsprättad:uppsprättad:uppsprättat:uppsprättade:uppsprättade:!:!:!:
+810903r3<verb>uppspåra:uppspåra:uppspårade:uppspårat:uppspårar:uppspåra:uppspåras:uppspårades:uppspårats:uppspåras:uppspårad:uppspårat:uppspårade:uppspårande:
+810912r3<substantiv>uppspårning:uppspårning:uppspårnings:uppspårningen:uppspårningens::::
+697802r3<adjektiv>uppspänd:uppspänd:uppspänt:uppspända:uppspända:!:!:!:
+810916r4<substantiv>uppspänning:uppspänning:uppspännings:uppspänningen:uppspänningens:uppspänningar:uppspänningars:uppspänningarna:uppspänningarnas
+CUSTOM: y y uppspännings
+810924r3<substantiv>uppspänningsanordning::::::::
+COMPOUND(810916, 606105): uppspänning + anordning
+697803r3<adjektiv>uppspärrad:uppspärrad:uppspärrat:uppspärrade:uppspärrade:!:!:!:
+796293r3<adjektiv>uppstagad:uppstagad:uppstagat:uppstagade:uppstagade:!:!:!:
+796296r3<adjektiv>uppstallad:uppstallad:uppstallat:uppstallade:uppstallade:!:!:!:
+547946r4<verb>uppstapla:uppstapla:uppstaplade:uppstaplat:uppstaplar:uppstapla:uppstaplas:uppstaplades:uppstaplats:uppstaplas:uppstaplad:uppstaplat:uppstaplade::
+796299r3<adjektiv>uppstaplad:uppstaplad:uppstaplat:uppstaplade:uppstaplade:!:!:!:
+810925r3<substantiv>uppstapling:uppstapling:uppstaplings:uppstaplingen:uppstaplingens::::
+697805r4<substantiv>uppstart:uppstart:uppstarts:uppstarten:uppstartens:uppstarter:uppstarters:uppstarterna:uppstarternas
+CUSTOM: y y uppstarts
+759675r3<adjektiv>uppstartad:uppstartad:uppstartat:uppstartade:uppstartade:!:!:!:
+810929r3<substantiv>uppstartning:uppstartning:uppstartnings:uppstartningen:uppstartningens:uppstartningar:uppstartningars:uppstartningarna:uppstartningarnas
+898608r4<substantiv>uppstartsdag:uppstartsdag:uppstartsdags:uppstartsdagen:uppstartsdagens:uppstartsdagar:uppstartsdagars:uppstartsdagarna:uppstartsdagarnas
+COMPOUND(697805, 551009): uppstart + dag
+796300r3<adjektiv>uppstegad:uppstegad:uppstegat:uppstegade:uppstegade:!:!:!:
+810930r3<adjektiv>uppstekt:uppstekt:uppstekt:uppstekta:uppstekta::::
+749481r3<adjektiv>uppstickande:uppstickande:uppstickande:uppstickande:uppstickande:!:!:!:
+749483r3<substantiv>uppstickare:uppstickare:uppstickares:uppstickaren:uppstickarens:uppstickare:uppstickares:uppstickarna:uppstickarnas
+697813r4<verb>uppstiga:uppstiga:uppsteg:uppstigit:uppstiger:uppstig:::::uppstigen:uppstiget:uppstigna:uppstigande:
+COMPOUND(619887, 593392): upp + stiga
+781930r3<substantiv>uppstigning:uppstigning:uppstignings:uppstigningen:uppstigningens:uppstigningar:uppstigningars:uppstigningarna:uppstigningarnas
+707514r3<adjektiv>uppstoppad:uppstoppad:uppstoppat:uppstoppade:uppstoppade:!:!:!:
+810932r3<substantiv>uppstoppare:uppstoppare:uppstoppares:uppstopparen:uppstopparens:uppstoppare:uppstoppares:uppstopparna:uppstopparnas
+810938r3<substantiv>uppstoppning:uppstoppning:uppstoppnings:uppstoppningen:uppstoppningens::::
+796303r3<adjektiv>uppstramad:uppstramad:uppstramat:uppstramade:uppstramade:!:!:!:
+749490r3<substantiv>uppstramning:uppstramning:uppstramnings:uppstramningen:uppstramningens:uppstramningar:uppstramningars:uppstramningarna:uppstramningarnas
+906615r3<adjektiv>uppstressad:uppstressad:uppstressat:uppstressade:uppstressade:!:!:!:::::::::
+810942r3<adjektiv>uppstruken:uppstruken:uppstruket:uppstrukna:uppstrukna::::
+810946r3<substantiv>uppstråk:uppstråk:uppstråks:uppstråket:uppstråkets:uppstråk:uppstråks:uppstråken:uppstråkens
+737041r5<substantiv>uppsträckning:uppsträckning:uppsträcknings:uppsträckningen:uppsträckningens:uppsträckningar:uppsträckningars:uppsträckningarna:uppsträckningarnas
+COMPOUND(619887, 703174): upp + sträckning
+810953r3<adjektiv>uppsträckt:uppsträckt:uppsträckt:uppsträckta:uppsträckta::::
+810955r3<substantiv>uppström:uppström:uppströms:uppströmmen:uppströmmens:uppströmmar:uppströmmars:uppströmmarna:uppströmmarnas
+740001r3<adverb>uppströms:uppströms
+578122r4<adjektiv>uppstudsig:uppstudsig:uppstudsigt:uppstudsiga:uppstudsiga:uppstudsigare:uppstudsigast:uppstudsigaste:uppstudsige
+810966r3<substantiv>uppstudsighet:uppstudsighet:uppstudsighets:uppstudsigheten:uppstudsighetens::::
+907125r3<adjektiv>uppstyckad:uppstyckad:uppstyckat:uppstyckade:uppstyckade:!:!:!:::::::::
+920618r4<substantiv>uppstyckning:uppstyckning:uppstycknings:uppstyckningen:uppstyckningens:uppstyckningar:uppstyckningars:uppstyckningarna:uppstyckningarnas
+COMPOUND(619887, 802896): upp + styckning
+737048r3<adjektiv>uppstyltad:uppstyltad:uppstyltat:uppstyltade:uppstyltade:!:!:!:
+810970r3<substantiv>uppstyltning:uppstyltning:uppstyltnings:uppstyltningen:uppstyltningens::::
+876410r4<verb>uppstyra:uppstyra:uppstyrde:uppstyrt:uppstyr:uppstyr:uppstyras:uppstyrdes:uppstyrts:uppstyrs:uppstyrd:uppstyrt:uppstyrda:uppstyrande:
+CUSTOM: n n
+935902r3<adjektiv>uppstyrd:uppstyrd:uppstyrt:uppstyrda:uppstyrda::::::::::::
+920628r4<substantiv>uppstyrning:uppstyrning:uppstyrnings:uppstyrningen:uppstyrningens:uppstyrningar:uppstyrningars:uppstyrningarna:uppstyrningarnas
+COMPOUND(619887, 631911): upp + styrning
+593442r5<verb>uppstå:uppstå:uppstod:uppstått:uppstår:uppstå:!:!:!:!:uppstånden:uppståndet:uppståndna:uppstående:
+619907r4<substantiv>uppståndelse:uppståndelse:uppståndelses:uppståndelsen:uppståndelsens::::
+CUSTOM: y y uppståndelse
+882546r4<substantiv>uppståndelsetro:uppståndelsetro:uppståndelsetros:uppståndelsetron:uppståndelsetrons:!:!:!:!
+COMPOUND(619907, 624935): uppståndelse + tro
+697820r3<adjektiv>uppstånden:uppstånden:uppståndet:uppståndna:uppståndna:!:!:!:uppståndne
+796306r3<adjektiv>uppstädad:uppstädad:uppstädat:uppstädade:uppstädade:!:!:!:
+810975r3<substantiv>uppstädning:uppstädning:uppstädnings:uppstädningen:uppstädningens:uppstädningar:uppstädningars:uppstädningarna:uppstädningarnas
+697821r5<verb>uppställa:uppställa:uppställde:uppställt:uppställer:uppställ:uppställas:uppställdes:uppställts:uppställs, uppställande:uppställd:uppställt:uppställda:uppställande:
+COMPOUND(619887, 585797): upp + ställa
+619908r4<substantiv>uppställning:uppställning:uppställnings:uppställningen:uppställningens:uppställningar:uppställningars:uppställningarna:uppställningarnas
+CUSTOM: y y uppställnings +uppställnings
+810985r4<verb>uppstämma:uppstämma:uppstämde:uppstämt:uppstämmer:uppstäm:uppstämmas:uppstämdes:uppstämts:uppstäms, uppstämmes:uppstämd:uppstämt:uppstämda:uppstämmande:
+COMPOUND(619887, 593409): upp + stämma
+796309r3<adjektiv>uppstämplad:uppstämplad:uppstämplat:uppstämplade:uppstämplade:!:!:!:
+810999r3<substantiv>uppstötning:uppstötning:uppstötnings:uppstötningen:uppstötningens:uppstötningar:uppstötningars:uppstötningarna:uppstötningarnas
+811007r3<substantiv>uppstöttning:uppstöttning:uppstöttnings:uppstöttningen:uppstöttningens::::
+811011r3<substantiv>uppsugning:uppsugning:uppsugnings:uppsugningen:uppsugningens::::
+811015r3<adjektiv>uppsupen:uppsupen:uppsupet:uppsupna:uppsupna::::
+811018r3<adjektiv>uppsutten:uppsutten:uppsuttet:uppsuttna:uppsuttna::::
+811021r3<adjektiv>uppsvensk:uppsvensk:uppsvenskt:uppsvenska:uppsvenska:!:!:!:uppsvenske
+811024r3<substantiv>uppsvenska:uppsvenska:uppsvenskas:uppsvenskan:uppsvenskans:uppsvenskor:uppsvenskors:uppsvenskorna:uppsvenskornas
+722445r4<substantiv>uppsving:uppsving:uppsvings:uppsvinget:uppsvingets:uppsving:uppsvings:uppsvingen:uppsvingens
+CUSTOM: y y uppsvings
+811032r3<substantiv>uppsvingsperiod::::::::
+COMPOUND(722445, 550187): uppsving + period
+737045r3<adjektiv>uppsvullen:uppsvullen:uppsvullet:uppsvullna:uppsvullna::::
+749498r4<adjektiv>uppsvälld:uppsvälld:uppsvällt:uppsvällda:uppsvällda::::uppsvällde
+811034r3<substantiv>uppsvälldhet:uppsvälldhet:uppsvälldhets:uppsvälldheten:uppsvälldhetens::::
+811038r3<substantiv>uppsvällning:uppsvällning:uppsvällnings:uppsvällningen:uppsvällningens:uppsvällningar:uppsvällningars:uppsvällningarna:uppsvällningarnas
+796312r3<adjektiv>uppsvämmad:uppsvämmad:uppsvämmat:uppsvämmade:uppsvämmade:!:!:!:
+800680r3<adjektiv>uppsvängd:uppsvängd:uppsvängt:uppsvängda:uppsvängda::::
+801724r3<adjektiv>uppsydd:uppsydd:uppsytt:uppsydda:uppsydda::::
+635919r3<substantiv>uppsyn:uppsyn:uppsyns:uppsynen:uppsynens:uppsyner:uppsyners:uppsynerna:uppsynernas
+736524r3<substantiv>uppsyningsman:uppsyningsman:uppsyningsmans:uppsyningsmannen:uppsyningsmannens:uppsyningsmän:uppsyningsmäns:uppsyningsmännen:uppsyningsmännens
+796315r3<adjektiv>uppsågad:uppsågad:uppsågat:uppsågade:uppsågade:!:!:!:
+811046r3<substantiv>uppsågning:uppsågning:uppsågnings:uppsågningen:uppsågningens::::
+697822r3<substantiv>uppsåt:uppsåt:uppsåts:uppsåtet:uppsåtets:uppsåt:uppsåts:uppsåten:uppsåtens
+568339r3<adjektiv>uppsåtlig:uppsåtlig:uppsåtligt:uppsåtliga:uppsåtliga::::
+697828r3<adverb>uppsåtligen:uppsåtligen
+811050r3<substantiv>uppsåtlighet:uppsåtlighet:uppsåtlighets:uppsåtligheten:uppsåtlighetens::::
+724603r7<verb>uppsäga:uppsäga:uppsade:uppsagt:uppsäger:uppsäg:uppsägas:uppsades:uppsagts:uppsägs:uppsagd:uppsagt:uppsagda:uppsägande:
+570379r3<adjektiv>uppsägbar:uppsägbar:uppsägbart:uppsägbara:uppsägbara::::
+811054r3<substantiv>uppsägbarhet:uppsägbarhet:uppsägbarhets:uppsägbarheten:uppsägbarhetens::::
+811058r3<substantiv>uppsägelse:uppsägelse:uppsägelses:uppsägelsen:uppsägelsens:uppsägelser:uppsägelsers:uppsägelserna:uppsägelsernas
+597809r4<substantiv>uppsägning:uppsägning:uppsägnings:uppsägningen:uppsägningens:uppsägningar:uppsägningars:uppsägningarna:uppsägningarnas
+CUSTOM: y y uppsägnings +uppsägnings
+811066r4<substantiv>uppsägningshot:uppsägningshot:uppsägningshots:uppsägningshotet:uppsägningshotets:uppsägningshot:uppsägningshots:uppsägningshoten:uppsägningshotens
+COMPOUND(597809, 552476): uppsägning + hot
+604037r3<substantiv>uppsägningstid:uppsägningstid:uppsägningstids:uppsägningstiden:uppsägningstidens:uppsägningstider:uppsägningstiders:uppsägningstiderna:uppsägningstidernas
+703437r5<verb>uppsända:uppsända:uppsände:uppsänt:uppsänder:uppsänd:uppsändas:uppsändes:uppsänts:uppsänds, uppsändes:uppsänd:uppsänt:uppsända:uppsändande:
+COMPOUND(619887, 593413): upp + sända
+811073r3<substantiv>uppsändning:uppsändning:uppsändnings:uppsändningen:uppsändningens:uppsändningar:uppsändningars:uppsändningarna:uppsändningarnas
+CUSTOM: y y uppsändnings
+697747r7<verb>uppsätta:uppsätta:uppsatte:uppsatt:uppsätter:uppsätt:uppsättas:uppsattes:uppsatts:uppsätts, uppsättes:uppsatt:uppsatt:uppsatta:uppsättande:
+COMPOUND(619887, 593414): upp + sätta
+697755r3<substantiv>uppsättande:uppsättande:uppsättandes:uppsättandet:uppsättandets::::
+811081r3<substantiv>uppsättare:uppsättare:uppsättares:uppsättaren:uppsättarens:uppsättare:uppsättares:uppsättarna:uppsättarnas
+CUSTOM: y y uppsättar
+677058r5<substantiv>uppsättning:uppsättning:uppsättnings:uppsättningen:uppsättningens:uppsättningar:uppsättningars:uppsättningarna:uppsättningarnas
+CUSTOM: y y uppsättnings +uppsättnings
+697829r4<verb>uppsöka:uppsöka:uppsökte:uppsökt:uppsöker:uppsök:uppsökas:uppsöktes:uppsökts:uppsöks, uppsökes:uppsökt:uppsökt:uppsökta:uppsökande:
+COMPOUND(619887, 585844): upp + söka
+697833r3<substantiv>uppsökare:uppsökare:uppsökares:uppsökaren:uppsökarens:uppsökare:uppsökares:uppsökarna:uppsökarnas
+CUSTOM: y y uppsökar
+811087r3<substantiv>uppsökning:uppsökning:uppsöknings:uppsökningen:uppsökningens::::
+CUSTOM: y y uppsöknings
+811100r4<substantiv>upptag:upptag:upptags:upptaget:upptagets::::
+CUSTOM: y y upptags +upptags
+777211r3<substantiv>upptagare:upptagare:upptagares:upptagaren:upptagarens:upptagare:upptagares:upptagarna:upptagarnas
+CUSTOM: y y upptagar
+627516r5<verb>upptaga, uppta:uppta, upptaga:upptog:upptagit:upptar, upptager:uppta, upptag:upptas, upptagas:upptogs:upptagits:upptas, upptages:upptagen:upptaget:upptagna:upptagande:
+571029r6<adjektiv>upptagen:upptagen:upptaget:upptagna:upptagna:!:!:!:upptagne
+CUSTOM: y y upptaget
+697834r3<substantiv>upptagenhet:upptagenhet:upptagenhets:upptagenheten:upptagenhetens::::
+CUSTOM: y y upptagenhets
+811091r4<substantiv>upptagetton:upptagetton:upptagettons:upptagettonen:upptagettonens:upptagettoner:upptagettoners:upptagettonerna:upptagettonernas
+COMPOUND(571029, 603900): upptagen + ton
+681245r4<substantiv>upptagning:upptagning:upptagnings:upptagningen:upptagningens:upptagningar:upptagningars:upptagningarna:upptagningarnas
+CUSTOM: y y upptagnings +upptagnings
+811103r4<substantiv>upptagsplats:upptagsplats:upptagsplats:upptagsplatsen:upptagsplatsens:upptagsplatser:upptagsplatsers:upptagsplatserna:upptagsplatsernas
+COMPOUND(811100, 550210): upptag + plats
+644966r5<substantiv>upptakt:upptakt:upptakts:upptakten:upptaktens:upptakter:upptakters:upptakterna:upptakternas
+CUSTOM: y y upptakts +upptakts
+811114r4<substantiv>upptaktsmöte:upptaktsmöte:upptaktsmötes:upptaktsmötet:upptaktsmötets:upptaktsmöten:upptaktsmötens:upptaktsmötena:upptaktsmötenas
+COMPOUND(644966, 560760): upptakt + möte
+588320r4<verb>upptaxera:upptaxera:upptaxerade:upptaxerat:upptaxerar:upptaxera:upptaxeras:upptaxerades:upptaxerats:upptaxeras:upptaxerad:upptaxerat:upptaxerade:upptaxerande:
+811127r3<substantiv>upptaxering:upptaxering:upptaxerings:upptaxeringen:upptaxeringens:upptaxeringar:upptaxeringars:upptaxeringarna:upptaxeringarnas
+547947r5<verb>uppteckna:uppteckna:upptecknade:upptecknat:upptecknar:uppteckna:upptecknas:upptecknades:upptecknats:upptecknas:upptecknad:upptecknat:upptecknade:upptecknande:
+811135r3<substantiv>upptecknare:upptecknare:upptecknares:upptecknaren:upptecknarens:upptecknare:upptecknares:upptecknarna:upptecknarnas
+697836r3<substantiv>uppteckning:uppteckning:upptecknings:uppteckningen:uppteckningens:uppteckningar:uppteckningars:uppteckningarna:uppteckningarnas
+CUSTOM: y y upptecknings
+796318r3<adjektiv>upptejpad:upptejpad:upptejpat:upptejpade:upptejpade:!:!:!:
+620670r3<adverb>upptill:upptill
+811141r3<substantiv>upptimring:upptimring:upptimrings:upptimringen:upptimringens:upptimringar:upptimringars:upptimringarna:upptimringarnas
+811149r3<verb>upptina::::::::::upptinad:upptinat:upptinade::
+811153r3<substantiv>upptining:upptining:upptinings:upptiningen:upptiningens::::
+796321r3<adjektiv>upptorkad:upptorkad:upptorkat:upptorkade:upptorkade:!:!:!:
+811157r3<substantiv>upptorkning:upptorkning:upptorknings:upptorkningen:upptorkningens::::
+547949r5<verb>upptorna:upptorna:upptornade:upptornat:upptornar:upptorna:!:!:!:!:upptornad:upptornat:upptornade:upptornande:
+811161r3<substantiv>upptorning:upptorning:upptornings:upptorningen:upptorningens:upptorningar:upptorningars:upptorningarna:upptorningarnas
+749499r3<adjektiv>upptrampad:upptrampad:upptrampat:upptrampade:upptrampade:!:!:!:
+591456r3<verb>upptransformera:upptransformera:upptransformerade:upptransformerat:upptransformerar:upptransformera:::::::::
+720082r4<verb>upptrappa:upptrappa:upptrappade:upptrappat:upptrappar:upptrappa:upptrappas:upptrappades:upptrappats:upptrappas:upptrappad:upptrappat:upptrappade:upptrappande:
+644970r4<substantiv>upptrappning:upptrappning:upptrappnings:upptrappningen:upptrappningens:upptrappningar:upptrappningars:upptrappningarna:upptrappningarnas
+CUSTOM: y y upptrappnings
+796324r3<adjektiv>upptravad:upptravad:upptravat:upptravade:upptravade:!:!:!:
+749502r4<verb>upptrissa:upptrissa:upptrissade:upptrissat:upptrissar:upptrissa:upptrissas:upptrissades:upptrissats:upptrissas:upptrissad:upptrissat:upptrissade:upptrissande:
+811179r3<substantiv>upptrissning:upptrissning:upptrissnings:upptrissningen:upptrissningens::::
+811183r3<substantiv>upptryck:upptryck:upptrycks:upptrycket:upptryckets:upptryck:upptrycks:upptrycken:upptryckens
+811189r3<substantiv>upptryckning:upptryckning:upptrycknings:upptryckningen:upptryckningens:upptryckningar:upptryckningars:upptryckningarna:upptryckningarnas
+697837r3<adjektiv>upptryckt:upptryckt:upptryckt:upptryckta:upptryckta:!:!:!:
+644974r4<verb>uppträda:uppträda:uppträdde:uppträtt:uppträder:uppträd:::::uppträdd:uppträtt:uppträdda::
+644975r3<substantiv>uppträdande:uppträdande:uppträdandes:uppträdandet:uppträdandets:uppträdanden:uppträdandens:uppträdandena:uppträdandenas
+697839r3<adjektiv>uppträdd:uppträdd:uppträtt:uppträdda:uppträdda:!:!:!:
+644981r3<substantiv>uppträde:uppträde:uppträdes:uppträdet:uppträdets:uppträden:uppträdens:uppträdena:uppträdenas
+811197r3<substantiv>uppträdning:uppträdning:uppträdnings:uppträdningen:uppträdningens::::
+796327r3<adjektiv>upptränad:upptränad:upptränat:upptränade:upptränade:!:!:!:
+800683r3<adjektiv>uppträngd:uppträngd:uppträngt:uppträngda:uppträngda::::
+811201r3<substantiv>uppträning:uppträning:upptränings:uppträningen:uppträningens::::
+644985r3<substantiv>upptuktelse:upptuktelse:upptuktelses:upptuktelsen:upptuktelsens:upptuktelser:upptuktelsers:upptuktelserna:upptuktelsernas
+CUSTOM: y y upptuktelse
+796330r3<adjektiv>upptuperad:upptuperad:upptuperat:upptuperade:upptuperade:!:!:!:
+644993r3<substantiv>upptåg:upptåg:upptågs:upptåget:upptågets:upptåg:upptågs:upptågen:upptågens
+988703r3<substantiv>upptågsmakare:upptågsmakare:upptågsmakares:upptågsmakaren:upptågsmakarens:upptågsmakare:upptågsmakares:upptågsmakarna:upptågsmakarnas
+632571r5<verb>upptäcka:upptäcka:upptäckte:upptäckt:upptäcker:upptäck:upptäckas:upptäcktes:upptäckts:upptäcks:upptäckt:upptäckt:upptäckta::
+697843r3<adjektiv>upptäckande:upptäckande:upptäckande:upptäckande:upptäckande:!:!:!:
+697841r3<substantiv>upptäckande:upptäckande:upptäckandes:upptäckandet:upptäckandets::::
+644999r4<substantiv>upptäckare:upptäckare:upptäckares:upptäckaren:upptäckarens:upptäckare:upptäckares:upptäckarna:upptäckarnas
+CUSTOM: y y upptäckar
+953425r4<substantiv>upptäckariver:upptäckariver:upptäckarivers:upptäckarivern:upptäckariverns:!:!:!:!
+COMPOUND(644999, 559578): upptäckare + iver
+645005r5<substantiv>upptäckt:upptäckt:upptäckts:upptäckten:upptäcktens:upptäckter:upptäckters:upptäckterna:upptäckternas
+CUSTOM: y y upptäckts
+645006r3<substantiv>upptäcktsfärd:upptäcktsfärd:upptäcktsfärds:upptäcktsfärden:upptäcktsfärdens:upptäcktsfärder:upptäcktsfärders:upptäcktsfärderna:upptäcktsfärdernas
+749510r4<substantiv>upptäcktsresande:upptäcktsresande:upptäcktsresandes:upptäcktsresandet:upptäcktsresandets:upptäcktsresanden:upptäcktsresandens:upptäcktsresandena:upptäcktsresandenas
+COMPOUND(645005, 612770): upptäckt + resande
+911713r4<substantiv>upptäcktsår:upptäcktsår:upptäcktsårs:upptäcktsåret:upptäcktsårets:upptäcktsår:upptäcktsårs:upptäcktsåren:upptäcktsårens
+COMPOUND(645005, 553140): upptäckt + år
+749518r3<adjektiv>upptänd:upptänd:upptänt:upptända:upptända::::
+782933r3<verb>upptända:upptända:upptände:upptänt:upptänder:upptänd:upptändas:upptändes:upptänts:upptänds:upptänd:upptänt:upptända::
+570382r3<adjektiv>upptänkbar:upptänkbar:upptänkbart:upptänkbara:upptänkbara::::
+568342r3<adjektiv>upptänklig:upptänklig:upptänkligt:upptänkliga:upptänkliga::::
+796333r3<adjektiv>upptöad:upptöad:upptöat:upptöade:upptöade:!:!:!:
+749520r3<adjektiv>uppumpad:uppumpad:uppumpat:uppumpade:uppumpade:!:!:!:
+811205r3<substantiv>uppumpning:uppumpning:uppumpnings:uppumpningen:uppumpningens:uppumpningar:uppumpningars:uppumpningarna:uppumpningarnas
+796336r3<adjektiv>upputsad:upputsad:upputsat:upputsade:upputsade:!:!:!:
+811213r3<verb>uppvakna:uppvakna:uppvaknade:uppvaknat:uppvaknar:uppvakna:::::uppvaknad:uppvaknat:uppvaknade::
+645014r3<substantiv>uppvaknande:uppvaknande:uppvaknandes:uppvaknandet:uppvaknandets::::
+547950r4<verb>uppvakta:uppvakta:uppvaktade:uppvaktat:uppvaktar:uppvakta:uppvaktas:uppvaktades:uppvaktats:uppvaktas:uppvaktad:uppvaktat:uppvaktade::
+697845r3<substantiv>uppvaktande:uppvaktande:uppvaktandes:uppvaktandet:uppvaktandets::::
+615505r3<substantiv>uppvaktare:uppvaktare:uppvaktares:uppvaktaren:uppvaktarens:uppvaktare:uppvaktares:uppvaktarna:uppvaktarnas
+CUSTOM: y y uppvaktar
+645016r3<substantiv>uppvaktning:uppvaktning:uppvaktnings:uppvaktningen:uppvaktningens:uppvaktningar:uppvaktningars:uppvaktningarna:uppvaktningarnas
+CUSTOM: y y uppvaktnings
+796339r3<adjektiv>uppvevad:uppvevad:uppvevat:uppvevade:uppvevade:!:!:!:
+728301r3<egennamn>Uppvidinge:Uppvidinge:Uppvidinges
+645017r4<verb>uppvigla:uppvigla:uppviglade:uppviglat:uppviglar:uppvigla:uppviglas:uppviglades:uppviglats:uppviglas:uppviglad:uppviglat:uppviglade:uppviglande:
+645021r3<substantiv>uppviglare:uppviglare:uppviglares:uppviglaren:uppviglarens:uppviglare:uppviglares:uppviglarna:uppviglarnas
+CUSTOM: y y uppviglar
+645027r4<substantiv>uppvigling:uppvigling:uppviglings:uppviglingen:uppviglingens::::
+CUSTOM: y y uppviglings
+811218r3<substantiv>uppviglingsförsök::::::::
+COMPOUND(645027, 552418): uppvigling + försök
+811220r3<substantiv>uppvik:uppvik:uppviks:uppviket:uppvikets:uppvik:uppviks:uppviken:uppvikens
+570385r3<adjektiv>uppvikbar:uppvikbar:uppvikbart:uppvikbara:uppvikbara::::
+956281r3<adjektiv>uppvikt:uppvikt:uppvikt:uppvikta:uppvikta::::::::::::
+796342r3<adjektiv>uppvilad:uppvilad:uppvilat:uppvilade:uppvilade:!:!:!:
+811227r3<substantiv>uppvind:uppvind:uppvinds:uppvinden:uppvindens:uppvindar:uppvindars:uppvindarna:uppvindarnas
+547951r4<verb>uppvisa:uppvisa:uppvisade:uppvisat:uppvisar:uppvisa:uppvisas:uppvisades:uppvisats:uppvisas:uppvisad:uppvisat:uppvisade:uppvisande:
+897982r3<substantiv>uppvisande:uppvisande:uppvisandes:uppvisandet:uppvisandets::::
+570388r3<adjektiv>uppvisbar:uppvisbar:uppvisbart:uppvisbara:uppvisbara::::
+645031r5<substantiv>uppvisning:uppvisning:uppvisnings:uppvisningen:uppvisningens:uppvisningar:uppvisningars:uppvisningarna:uppvisningarnas
+CUSTOM: y y uppvisnings +uppvisnings
+697847r4<substantiv>uppvisningsmatch:uppvisningsmatch:uppvisningsmatchs:uppvisningsmatchen:uppvisningsmatchens:uppvisningsmatcher:uppvisningsmatchers:uppvisningsmatcherna:uppvisningsmatchernas
+COMPOUND(645031, 550011): uppvisning + match
+749523r3<adjektiv>uppvispad:uppvispad:uppvispat:uppvispade:uppvispade:!:!:!:
+811235r3<adjektiv>uppvriden:uppvriden:uppvridet:uppvridna:uppvridna::::
+811238r3<adjektiv>uppvräkt:uppvräkt:uppvräkt:uppvräkta:uppvräkta::::
+645039r3<adjektiv>uppvuxen:uppvuxen:uppvuxet:uppvuxna:uppvuxna:!:!:!:uppvuxne
+645043r6<verb>uppväcka:uppväcka:uppväckte:uppväckt:uppväcker:uppväck:uppväckas:uppväcktes:uppväckts:uppväcks, uppväckes:uppväckt:uppväckt:uppväckta:uppväckande:
+645045r3<substantiv>uppväckelse:uppväckelse:uppväckelses:uppväckelsen:uppväckelsens::::
+CUSTOM: y y uppväckelse
+645049r4<verb>uppväga:uppväga:uppvägde:uppvägt:uppväger:uppväg:uppvägas:uppvägdes:uppvägts:uppvägs, uppväges:uppvägd:uppvägt:uppvägda:uppvägande:
+811246r3<substantiv>uppvägning:uppvägning:uppvägnings:uppvägningen:uppvägningens:uppvägningar:uppvägningars:uppvägningarna:uppvägningarnas
+645050r3<adjektiv>uppvällande:uppvällande:uppvällande:uppvällande:uppvällande:!:!:!:
+697855r3<adjektiv>uppvänd:uppvänd:uppvänt:uppvända:uppvända:!:!:!:
+588324r4<verb>uppvärdera:uppvärdera:uppvärderade:uppvärderat:uppvärderar:uppvärdera:uppvärderas:uppvärderades:uppvärderats:uppvärderas:uppvärderad:uppvärderat:uppvärderade::
+645055r4<substantiv>uppvärdering:uppvärdering:uppvärderings:uppvärderingen:uppvärderingens:uppvärderingar:uppvärderingars:uppvärderingarna:uppvärderingarnas
+CUSTOM: y y uppvärderings
+649977r5<verb>uppvärma:uppvärma:uppvärmde:uppvärmd:uppvärmer:uppvärm:uppvärmas:uppvärmdes:uppvärmts:uppvärms:uppvärmd:uppvärmt:uppvärmda:uppvärmande:
+811260r3<substantiv>uppvärmare:uppvärmare:uppvärmares:uppvärmaren:uppvärmarens:uppvärmare:uppvärmares:uppvärmarna:uppvärmarnas
+645059r13<substantiv>uppvärmning:uppvärmning:uppvärmnings:uppvärmningen:uppvärmningens:uppvärmningar:uppvärmningars:uppvärmningarna:uppvärmningarnas
+CUSTOM: y y uppvärmnings
+749526r5<verb>uppväxa:uppväxa:uppväxte:uppvuxit, uppväxt:uppväxer:uppväx:::::uppvuxen, uppväxt:uppvuxet, uppväxt:uppvuxna, uppväxta:uppväxande:
+COMPOUND(619887, 585875): upp + växa
+920637r4<substantiv>uppväxling:uppväxling:uppväxlings:uppväxlingen:uppväxlingens:uppväxlingar:uppväxlingars:uppväxlingarna:uppväxlingarnas
+COMPOUND(619887, 653900): upp + växling
+645063r6<substantiv>uppväxt:uppväxt:uppväxts:uppväxten:uppväxtens:uppväxter:uppväxters:uppväxterna:uppväxternas
+CUSTOM: y y uppväxt
+703446r4<substantiv>uppväxtmiljö:uppväxtmiljö:uppväxtmiljös:uppväxtmiljön:uppväxtmiljöns:uppväxtmiljöer:uppväxtmiljöers:uppväxtmiljöerna:uppväxtmiljöernas
+COMPOUND(645063, 611051): uppväxt + miljö
+853469r3<substantiv>uppväxtort:uppväxtort:uppväxtorts:uppväxtorten:uppväxtortens:uppväxtorter:uppväxtorters:uppväxtorterna:uppväxtorternas
+760657r4<substantiv>uppväxtår:uppväxtår:uppväxtårs:uppväxtåret:uppväxtårets:uppväxtår:uppväxtårs:uppväxtåren:uppväxtårens
+COMPOUND(645063, 553140): uppväxt + år
+619909r3<preposition>uppå:uppå
+811272r3<substantiv>uppåkning:uppåkning:uppåknings:uppåkningen:uppåkningens::::
+619910r3<preposition>uppåt:uppåt
+592375r3<adverb>uppåt:uppåt
+796345r3<adjektiv>uppåtborstad:uppåtborstad:uppåtborstat:uppåtborstade:uppåtborstade:!:!:!:
+800686r3<adjektiv>uppåtböjd:uppåtböjd:uppåtböjt:uppåtböjda:uppåtböjda::::
+749533r4<substantiv>uppåtgående:uppåtgående:uppåtgåendes:uppåtgåendet:uppåtgåendets::::
+749532r3<adjektiv>uppåtgående:uppåtgående:uppåtgående:uppåtgående:uppåtgående:!:!:!:
+796348r3<adjektiv>uppåtkammad:uppåtkammad:uppåtkammat:uppåtkammade:uppåtkammade:!:!:!:
+570934r3<adjektiv>uppåtkompatibel:uppåtkompatibel:uppåtkompatibelt:uppåtkompatibla:uppåtkompatibla::::
+796351r3<adjektiv>uppåtriktad:uppåtriktad:uppåtriktat:uppåtriktade:uppåtriktade:!:!:!:
+749534r3<adjektiv>uppåtstigande:uppåtstigande:uppåtstigande:uppåtstigande:uppåtstigande:!:!:!:
+724471r3<adjektiv>uppåtsträvande:uppåtsträvande:uppåtsträvande:uppåtsträvande:uppåtsträvande:!:!:!:!
+811279r3<substantiv>uppåttjack:uppåttjack:uppåttjacks:uppåttjacket:uppåttjackets:uppåttjack:uppåttjacks:uppåttjacken:uppåttjackens
+811286r3<substantiv>uppåtvind:uppåtvind:uppåtvinds:uppåtvinden:uppåtvindens:uppåtvindar:uppåtvindars:uppåtvindarna:uppåtvindarnas
+811295r3<adjektiv>uppåtvriden:uppåtvriden:uppåtvridet:uppåtvridna:uppåtvridna::::
+800689r3<adjektiv>uppåtvänd:uppåtvänd:uppåtvänt:uppåtvända:uppåtvända::::
+619911r3<adjektiv>uppäten:uppäten:uppätet:uppätna:uppätna::::
+547952r4<verb>uppöva:uppöva:uppövade:uppövat:uppövar:uppöva:uppövas:uppövades:uppövats:uppövas:uppövad:uppövat:uppövade::
+796354r3<adjektiv>uppövad:uppövad:uppövat:uppövade:uppövade:!:!:!:
+697860r3<substantiv>uppövande:uppövande:uppövandes:uppövandet:uppövandets::::
+811299r3<substantiv>uppövning:uppövning:uppövnings:uppövningen:uppövningens::::
+964390r3<adjektiv>up-to-date:up-to-date:::::::::::::::
+645068r4<preposition>ur:ur
+CUSTOM: y n
+645067r8<adverb>ur:ur
+CUSTOM: y n
+553080r24<substantiv>ur:ur:urs:uret:urets:ur:urs:uren:urens
+CUSTOM: y n
+811305r4<substantiv>uraffär:uraffär:uraffärs:uraffären:uraffärens:uraffärer:uraffärers:uraffärerna:uraffärernas
+COMPOUND(553080, 548155): ur + affär
+811319r3<verb>uraktlåta:uraktlåta:uraktlät:uraktlåtit:uraktlåter:uraktlåt:uraktlåtas:uraktläts:uraktlåtits:uraktlåtes, uraktlåts:uraktlåten:uraktlåtet:uraktlåtna:uraktlåtande:
+811314r4<substantiv>uraktlåtenhet:uraktlåtenhet:uraktlåtenhets:uraktlåtenheten:uraktlåtenhetens::::
+CUSTOM: y y uraktlåtenhets
+811318r3<substantiv>uraktlåtenhetssynd::::::::
+COMPOUND(811314, 550610): uraktlåtenhet + synd
+584583r3<adjektiv>uralisk:uralisk:uraliskt:uraliska:uraliska::::
+624989r5<substantiv>uran:uran:urans:uranet:uranets:!:!:!:!
+CUSTOM: y n
+920646r4<substantiv>urananrikning:urananrikning:urananriknings:urananrikningen:urananrikningens:urananrikningar:urananrikningars:urananrikningarna:urananrikningarnas
+COMPOUND(624989, 665149): uran + anrikning
+811333r3<substantiv>uranbrytning:uranbrytning:uranbrytnings:uranbrytningen:uranbrytningens::::
+CUSTOM: y y uranbrytnings
+811337r3<substantiv>uranbränsle:uranbränsle:uranbränsles:uranbränslet:uranbränslets:uranbränslen:uranbränslens:uranbränslena:uranbränslenas
+564358r3<adjektiv>uranfri:uranfri:uranfritt:uranfria:uranfria::::
+CUSTOM: y n n
+811345r3<substantiv>uranfyndighet:uranfyndighet:uranfyndighets:uranfyndigheten:uranfyndighetens:uranfyndigheter:uranfyndigheters:uranfyndigheterna:uranfyndigheternas
+811353r3<substantiv>urangruva:urangruva:urangruvas:urangruvan:urangruvans:urangruvor:urangruvors:urangruvorna:urangruvornas
+811361r3<substantiv>uranhalt:uranhalt:uranhalts:uranhalten:uranhaltens:uranhalter:uranhalters:uranhalterna:uranhalternas
+578125r3<adjektiv>uranhaltig:uranhaltig:uranhaltigt:uranhaltiga:uranhaltiga::::
+584586r3<adjektiv>uranisk:uranisk:uraniskt:uraniska:uraniska::::
+CUSTOM: y n n
+811369r3<substantiv>uranisotop:uranisotop:uranisotops:uranisotopen:uranisotopens:uranisotoper:uranisotopers:uranisotoperna:uranisotopernas
+811377r3<substantiv>urankärna:urankärna:urankärnas:urankärnan:urankärnans:urankärnor:urankärnors:urankärnorna:urankärnornas
+811385r3<substantiv>uranmalm:uranmalm:uranmalms:uranmalmen:uranmalmens:uranmalmer:uranmalmers:uranmalmerna:uranmalmernas
+584589r3<adjektiv>uranoplastisk:uranoplastisk:uranoplastiskt:uranoplastiska:uranoplastiska::::
+811393r3<substantiv>uranproduktion:uranproduktion:uranproduktions:uranproduktionen:uranproduktionens:uranproduktioner:uranproduktioners:uranproduktionerna:uranproduktionernas
+891232r4<substantiv>uranprospektering:uranprospektering:uranprospekterings:uranprospekteringen:uranprospekteringens:uranprospekteringar:uranprospekteringars:uranprospekteringarna:uranprospekteringarnas
+COMPOUND(624989, 634260): uran + prospektering
+811401r3<substantiv>uranreaktor:uranreaktor:uranreaktors:uranreaktorn:uranreaktorns:uranreaktorer:uranreaktorers:uranreaktorerna:uranreaktorernas
+811409r3<substantiv>uranstav:uranstav:uranstavs:uranstaven:uranstavens:uranstavar:uranstavars:uranstavarna:uranstavarnas
+811417r3<substantiv>urantillgång:urantillgång:urantillgångs:urantillgången:urantillgångens:urantillgångar:urantillgångars:urantillgångarna:urantillgångarnas
+553952r3<egennamn>Uranus:Uranus:Uranus
+CUSTOM: y n Uranus
+645069r4<verb>urarta:urarta:urartade:urartat:urartar:urarta:::::urartad:urartat:urartade:urartande:
+697862r3<substantiv>urartning:urartning:urartnings:urartningen:urartningens::::
+CUSTOM: y y urartnings
+924726r4<adjektiv>urarva:urarva:urarva:urarva:urarva:!:!:!:::::::::
+DEFINITION 1: Att vara arvlös. Juridiskt eller, vanligare idag, i sammanhanget att tex sakna språkligt arv. "Han är urarva."
+636899r5<adjektiv>urban:urban:urbant:urbana:urbana::::urbane
+554839r3<egennamn>Urban:Urban:Urbans
+591460r4<verb>urbanisera:urbanisera:urbaniserade:urbaniserat:urbaniserar:urbanisera:urbaniseras:urbaniserades:urbaniserats:urbaniseras:urbaniserad:urbaniserat:urbaniserade::
+645070r3<substantiv>urbanisering:urbanisering:urbaniserings:urbaniseringen:urbaniseringens::::
+CUSTOM: y y urbaniserings
+811424r3<substantiv>urbanism:urbanism:urbanisms:urbanismen:urbanismens::::
+584592r3<adjektiv>urbanistisk:urbanistisk:urbanistiskt:urbanistiska:urbanistiska::::
+811428r3<substantiv>urbanitet:urbanitet:urbanitets:urbaniteten:urbanitetens::::
+697866r3<substantiv>urbefolkning:urbefolkning:urbefolknings:urbefolkningen:urbefolkningens:urbefolkningar:urbefolkningars:urbefolkningarna:urbefolkningarnas
+CUSTOM: y y urbefolknings
+737004r3<adjektiv>urbenad:urbenad:urbenat:urbenade:urbenade:!:!:!:
+811433r3<substantiv>urbening:urbening:urbenings:urbeningen:urbeningens:urbeningar:urbeningars:urbeningarna:urbeningarnas
+645071r5<substantiv>urberg:urberg:urbergs:urberget:urbergets:urberg:urbergs:urbergen:urbergens
+CUSTOM: y y urbergs
+811443r3<substantiv>urbergsmalm::::::::
+COMPOUND(645071, 604213): urberg + malm
+796355r3<adjektiv>urbesläktad:urbesläktad:urbesläktat:urbesläktade:urbesläktade:!:!:!:
+811444r3<substantiv>urbeståndsdel:urbeståndsdel:urbeståndsdels:urbeståndsdelen:urbeståndsdelens:urbeståndsdelar:urbeståndsdelars:urbeståndsdelarna:urbeståndsdelarnas
+550738r3<substantiv>urbild:urbild:urbilds:urbilden:urbildens:urbilder:urbilders:urbilderna:urbildernas
+568343r3<adjektiv>urbildlig:urbildlig:urbildligt:urbildliga:urbildliga::::
+697874r4<verb>urbleka::::::::::urblekt:urblekt:urblekta::
+COMPOUND(645067, 649062): ur + bleka
+645073r3<adjektiv>urblekt:urblekt:urblekt:urblekta:urblekta::::
+811452r3<adjektiv>urblåst:urblåst:urblåst:urblåsta:urblåsta::::
+811454r3<verb>urborra::::::::::urborrad:urborrat:urborrade::
+811458r3<substantiv>urborrning:urborrning:urborrnings:urborrningen:urborrningens:urborrningar:urborrningars:urborrningarna:urborrningarnas
+645075r3<adverb>urbota:urbota
+800692r3<adjektiv>urbränd:urbränd:urbränt:urbrända:urbrända::::
+811466r3<substantiv>urbränning:ur

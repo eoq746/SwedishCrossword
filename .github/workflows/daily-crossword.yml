@@ -61,6 +61,11 @@ jobs:
           else
             echo "ERROR: custom-words.json not found!"
           fi
+          if [ -f "SwedishCrossword/Data/dsso-words.json" ]; then
+            echo "dsso-words.json found ($(wc -c < SwedishCrossword/Data/dsso-words.json) bytes)"
+          else
+            echo "ERROR: dsso-words.json not found!"
+          fi
 
       - name: Restore dependencies
         run: dotnet restore
@@ -72,7 +77,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: SwedishCrossword/.cache
-          key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json','SwedishCrossword/Data/kelly-words.json','SwedishCrossword/Data/custom-words.json') }}
+          key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json','SwedishCrossword/Data/kelly-words.json','SwedishCrossword/Data/dsso-words.json','SwedishCrossword/Data/custom-words.json') }}
 
       - name: Set cache env
         run: echo "SWEDISH_CROSSWORD_CACHE_PATH=SwedishCrossword/.cache" >> $GITHUB_ENV

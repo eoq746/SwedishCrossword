@@ -1,0 +1,605 @@
+aterboven:teaterbovens:teaterbovar:teaterbovars:teaterbovarna:teaterbovarnas
+707109r4<substantiv>teaterchef:teaterchef:teaterchefs:teaterchefen:teaterchefens:teaterchefer:teaterchefers:teatercheferna:teaterchefernas
+COMPOUND(669445, 548529): teater + chef
+584216r3<adjektiv>teaterhistorisk:teaterhistorisk:teaterhistoriskt:teaterhistoriska:teaterhistoriska::::
+577453r3<adjektiv>teatermässig:teatermässig:teatermässigt:teatermässiga:teatermässiga::::
+550646r3<substantiv>teaterpjäs:teaterpjäs:teaterpjäs:teaterpjäsen:teaterpjäsens:teaterpjäser:teaterpjäsers:teaterpjäserna:teaterpjäsernas
+960266r4<substantiv>teatertilja:teatertilja:teatertiljas:teatertiljan:teatertiljans:teatertiljor:teatertiljors:teatertiljorna:teatertiljornas
+COMPOUND(669445, 640689): teater + tilja
+889942r4<substantiv>teaterår:teaterår:teaterårs:teateråret:teaterårets:teaterår:teaterårs:teateråren:teaterårens
+COMPOUND(669445, 553140): teater + år
+CUSTOM: y n n
+747996r3<adjektiv>teatral:teatral:teatralt:teatrala:teatrala::::
+584219r3<adjektiv>teatralisk:teatralisk:teatraliskt:teatraliska:teatraliska::::
+919972r3<substantiv>teatralitet:teatralitet:teatralitets:teatraliteten:teatralitetens::::
+855007r3<egennamn>Tebbutt:Tebbutt:Tebbutts
+802990r3<substantiv>tebjudning:tebjudning:tebjudnings:tebjudningen:tebjudningens:tebjudningar:tebjudningars:tebjudningarna:tebjudningarnas
+671973r3<substantiv>teblad:teblad:teblads:tebladet:tebladets:teblad:teblads:tebladen:tebladens
+747999r4<substantiv>tebricka:tebricka:tebrickas:tebrickan:tebrickans:tebrickor:tebrickors:tebrickorna:tebrickornas
+COMPOUND(555996, 633105): te + bricka
+802998r4<substantiv>tebröd:tebröd:tebröds:tebrödet:tebrödets:tebröd:tebröds:tebröden:tebrödens
+COMPOUND(555996, 555497): te + bröd
+671979r4<substantiv>tebuske:tebuske:tebuskes:tebusken:tebuskens:tebuskar:tebuskars:tebuskarna:tebuskarnas
+COMPOUND(555996, 599790): te + buske
+748007r4<substantiv>teceremoni:teceremoni:teceremonis:teceremonin:teceremonins:teceremonier:teceremoniers:teceremonierna:teceremoniernas
+COMPOUND(555996, 661054): te + ceremoni
+937995r5<substantiv>techno:techno:technos:technon:technons::::
+947406r4<substantiv>technobeat:technobeat:technobeats:technobeatet:technobeatets:technobeats:technobeats:technobeatsen:technobeatsens
+COMPOUND(937995, 947074): techno + beat
+937999r4<substantiv>technomusik:technomusik:technomusiks:technomusiken:technomusikens::::
+COMPOUND(937995, 550058): techno + musik
+559296r21<substantiv>tecken:tecken:teckens:tecknet:tecknets:tecken:teckens:tecknen:tecknens
+CUSTOM: y y tecken
+795537r3<adjektiv>teckenanpassad:teckenanpassad:teckenanpassat:teckenanpassade:teckenanpassade:!:!:!:
+795540r3<adjektiv>teckenkodad:teckenkodad:teckenkodat:teckenkodade:teckenkodade:!:!:!:
+559297r5<substantiv>teckenspråk:teckenspråk:teckenspråks:teckenspråket:teckenspråkets:teckenspråk:teckenspråks:teckenspråken:teckenspråkens
+COMPOUND(559296, 552959): tecken + språk
+CUSTOM: y y teckenspråks
+919978r3<adjektiv>teckenspråkig:teckenspråkig:teckenspråkigt:teckenspråkiga:teckenspråkiga::::teckenspråkige::::::::
+897902r4<substantiv>teckenspråkstolk:teckenspråkstolk:teckenspråkstolks:teckenspråkstolken:teckenspråkstolkens:teckenspråkstolkar:teckenspråkstolkars:teckenspråkstolkarna:teckenspråkstolkarnas
+COMPOUND(559297, 552017): teckenspråk + tolk
+806077r3<substantiv>teckentolk:teckentolk:teckentolks:teckentolken:teckentolkens:teckentolkar:teckentolkars:teckentolkarna:teckentolkarnas
+671988r3<adverb>teckenvis:teckenvis
+547820r5<verb>teckna:teckna:tecknade:tecknat:tecknar:teckna:tecknas:tecknades:tecknats:tecknas:tecknad:tecknat:tecknade::
+671989r3<adjektiv>tecknad:tecknad:tecknat:tecknade:tecknade:!:!:!:
+671992r3<substantiv>tecknande:tecknande:tecknandes:tecknandet:tecknandets:!:!:!:!
+615482r3<substantiv>tecknare:tecknare:tecknares:tecknaren:tecknarens:tecknare:tecknares:tecknarna:tecknarnas
+CUSTOM: y y tecknar +tecknar
+671990r10<substantiv>teckning:teckning:tecknings:teckningen:teckningens:teckningar:teckningars:teckningarna:teckningarnas
+CUSTOM: y y tecknings +tecknings
+603846r4<substantiv>teckningsrätt:teckningsrätt:teckningsrätts:teckningsrätten:teckningsrättens:teckningsrätter:teckningsrätters:teckningsrätterna:teckningsrätternas
+987810r4<substantiv>teckningsrättsbevis:teckningsrättsbevis:teckningsrättsbevis:teckningsrättsbeviset:teckningsrättsbevisets:teckningsrättsbevis:teckningsrättsbevis:teckningsrättsbevisen:teckningsrättsbevisens
+COMPOUND(603846, 552246): teckningsrätt + bevis
+599660r3<substantiv>teckningssal:teckningssal:teckningssals:teckningssalen:teckningssalens:teckningssalar:teckningssalars:teckningssalarna:teckningssalarnas
+616981r3<egennamn>Ted:Ted:Teds
+687794r3<adverb>tedags:tedags
+738210r4<substantiv>teddy:teddy:teddys:teddyn:teddyns::::
+CUSTOM: y n
+738214r4<substantiv>teddybjörn:teddybjörn:teddybjörns:teddybjörnen:teddybjörnens:teddybjörnar:teddybjörnars:teddybjörnarna:teddybjörnarnas
+COMPOUND(738210, 598136): teddy + björn
+919984r3<substantiv>tedrickande:tedrickande:tedrickandes:tedrickandet:tedrickandets::::
+803005r3<substantiv>tedrickare:tedrickare:tedrickares:tedrickaren:tedrickarens:tedrickare:tedrickares:tedrickarna:tedrickarnas
+891559r3<substantiv>tee:tee:!:!:!:!:!:!:!
+553032r3<substantiv>tefat:tefat:tefats:tefatet:tefatets:tefat:tefats:tefaten:tefatens
+748015r6<substantiv>teflon:teflon:teflons:teflonet:teflonets::::
+CUSTOM: y y teflon
+748019r3<substantiv>teflongryta::::::::
+COMPOUND(748015, 594146): teflon + gryta
+748024r3<substantiv>teflonpanna::::::::
+COMPOUND(748015, 594859): teflon + panna
+748025r3<substantiv>teflonyta::::::::
+COMPOUND(748015, 595826): teflon + yta
+551998r3<substantiv>teg:teg:tegs:tegen:tegens:tegar:tegars:tegarna:tegarnas
+649328r9<substantiv>tegel:tegel:tegels:teglet:teglets:tegel:tegels:teglen:teglens
+CUSTOM: y y tegel
+801690r3<adjektiv>tegelbeklädd:tegelbeklädd:tegelbeklätt:tegelbeklädda:tegelbeklädda::::
+671994r5<substantiv>tegelbruk:tegelbruk:tegelbruks:tegelbruket:tegelbrukets:tegelbruk:tegelbruks:tegelbruken:tegelbrukens
+COMPOUND(649328, 552277): tegel + bruk
+987815r4<substantiv>tegelbruksarbetare:tegelbruksarbetare:tegelbruksarbetares:tegelbruksarbetaren:tegelbruksarbetarens:tegelbruksarbetare:tegelbruksarbetares:tegelbruksarbetarna:tegelbruksarbetarnas
+COMPOUND(671994, 561048): tegelbruk + arbetare
+795543r3<adjektiv>tegelfärgad:tegelfärgad:tegelfärgat:tegelfärgade:tegelfärgade:!:!:!:
+944114r4<adjektiv>tegelgul:tegelgul:tegelgult:tegelgula:tegelgula::::::::::::
+COMPOUND(649328, 555723): tegel + gul
+939111r4<substantiv>tegelhus:tegelhus:tegelhus:tegelhuset:tegelhusets:tegelhus:tegelhus:tegelhusen:tegelhusens
+COMPOUND(649328, 552480): tegel + hus
+800466r3<adjektiv>tegellagd:tegellagd:tegellagt:tegellagda:tegellagda::::
+552000r3<substantiv>tegelmur:tegelmur:tegelmurs:tegelmuren:tegelmurens:tegelmurar:tegelmurars:tegelmurarna:tegelmurarnas
+989878r3<adjektiv>tegelornerad:tegelornerad:tegelornerat:tegelornerade:tegelornerade:!:!:!:::::::::
+637685r5<adjektiv>tegelprydd:tegelprydd:tegelprytt:tegelprydda:tegelprydda::::::::::::
+801931r3<adjektiv>tegelröd:tegelröd:tegelrött:tegelröda:tegelröda::::
+945526r4<substantiv>tegelsopp:tegelsopp:tegelsopps:tegelsoppen:tegelsoppens:tegelsoppar:tegelsoppars:tegelsopparna:tegelsopparnas
+COMPOUND(649328, 668414): tegel + sopp
+552002r6<substantiv>tegelsten:tegelsten:tegelstens:tegelstenen:tegelstenens:tegelstenar:tegelstenars:tegelstenarna:tegelstenarnas
+CUSTOM: y y tegelstens
+676581r4<substantiv>tegelstensmur:tegelstensmur:tegelstensmurs:tegelstensmuren:tegelstensmurens:tegelstensmurar:tegelstensmurars:tegelstensmurarna:tegelstensmurarnas
+COMPOUND(552002, 551728): tegelsten + mur
+676589r4<substantiv>tegelstensroman:tegelstensroman:tegelstensromans:tegelstensromanen:tegelstensromanens:tegelstensromaner:tegelstensromaners:tegelstensromanerna:tegelstensromanernas
+COMPOUND(552002, 550400): tegelsten + roman
+676590r4<substantiv>tegelstensvägg:tegelstensvägg:tegelstensväggs:tegelstensväggen:tegelstensväggens:tegelstensväggar:tegelstensväggars:tegelstensväggarna:tegelstensväggarnas
+COMPOUND(552002, 552111): tegelsten + vägg
+608271r3<substantiv>tegeltak:tegeltak:tegeltaks:tegeltaket:tegeltakets:tegeltak:tegeltaks:tegeltaken:tegeltakens
+611323r3<substantiv>tegelvaruindustri:tegelvaruindustri:tegelvaruindustris:tegelvaruindustrin:tegelvaruindustrins:tegelvaruindustrier:tegelvaruindustriers:tegelvaruindustrierna:tegelvaruindustriernas
+964144r4<substantiv>teglas:teglas:teglas:teglaset:teglasets:teglas:teglas:teglasen:teglasens
+COMPOUND(555996, 552440): te + glas
+CUSTOM: y n
+895989r3<egennamn>Tegnér:Tegnér:Tegnérs
+CUSTOM: y n Tegnér
+800469r3<adjektiv>tegplöjd:tegplöjd:tegplöjt:tegplöjda:tegplöjda::::
+CUSTOM: y n n
+874237r4<egennamn>Tegucigalpa:Tegucigalpa:Tegucigalpas
+DEFINITION 1: Tegucigalpa är huvudstaden och den största staden i Honduras
+CUSTOM: y n Tegucigalpa
+873365r3<egennamn>Teheran:Teheran:Teherans
+CUSTOM: y n Teheran
+938367r3<substantiv>tehus:tehus:tehus:tehuset:tehusets:tehus:tehus:tehusen:tehusens
+803020r4<substantiv>tehuva:tehuva:tehuvas:tehuvan:tehuvans:tehuvor:tehuvors:tehuvorna:tehuvornas
+COMPOUND(555996, 624472): te + huva
+905014r3<substantiv>tein:tein:teins:teinet:teinets:!:!:!:!
+CUSTOM: y n
+558118r3<substantiv>teism:teism:teisms:teismen:teismens:!:!:!:!
+559449r4<substantiv>tejp:tejp:tejps:tejpen:tejpens:tejper:tejpers:tejperna:tejpernas
+547821r5<verb>tejpa:tejpa:tejpade:tejpat:tejpar:tejpa:tejpas:tejpades:tejpats:tejpas:tejpad:tejpat:tejpade:tejpande:
+895619r6<verb>teka:teka:tekade:tekat:tekar:teka:tekas:tekades:tekats:tekas::::tekande:!
+CUSTOM: n n y
+803028r4<substantiv>tekaka:tekaka:tekakas:tekakan:tekakans:tekakor:tekakors:tekakorna:tekakornas
+COMPOUND(555996, 555243): te + kaka
+803036r4<substantiv>tekanna:tekanna:tekannas:tekannan:tekannans:tekannor:tekannors:tekannorna:tekannornas
+COMPOUND(555996, 594435): te + kanna
+803045r3<substantiv>tekare:tekare:tekares:tekaren:tekarens:tekare:tekares:tekarna:tekarnas
+803052r4<substantiv>tekittel:tekittel:tekittels:tekitteln:tekittelns:tekittlar:tekittlars:tekittlarna:tekittlarnas
+COMPOUND(555996, 652272): te + kittel
+972009r3<egennamn>Tekla:Tekla:Teklas
+723574r3<substantiv>teknetium:teknetium:teknetiums:teknetiumet:teknetiumets:!:!:!:!
+591294r3<verb>teknifiera:teknifiera:teknifierade:teknifierat:teknifierar:teknifiera:::::::::
+762796r3<substantiv>teknifiering:teknifiering:teknifierings:teknifieringen:teknifieringens::::
+603854r32<substantiv>teknik:teknik:tekniks:tekniken:teknikens:tekniker:teknikers:teknikerna:teknikernas
+CUSTOM: y y teknik +teknik
+703222r3<substantiv>teknikalitet:teknikalitet:teknikalitets:teknikaliteten:teknikalitetens:teknikaliteter:teknikaliteters:teknikaliteterna:teknikaliteternas
+610333r8<substantiv>tekniker:tekniker:teknikers:teknikern:teknikerns:tekniker:teknikers:teknikerna:teknikernas
+795547r3<adjektiv>teknikfixerad:teknikfixerad:teknikfixerat:teknikfixerade:teknikfixerade:!:!:!:
+921362r4<substantiv>teknikprat:teknikprat:teknikprats:teknikpratet:teknikpratets:!:!:!:!
+COMPOUND(603854, 624631): teknik + prat
+892308r4<substantiv>tekniksprång:tekniksprång:tekniksprångs:tekniksprånget:tekniksprångets:tekniksprång:tekniksprångs:tekniksprången:tekniksprångens
+COMPOUND(603854, 619716): teknik + språng
+671998r4<substantiv>teknikutveckling:teknikutveckling:teknikutvecklings:teknikutvecklingen:teknikutvecklingens::::
+COMPOUND(603854, 637669): teknik + utveckling
+737556r4<substantiv>tekning:tekning:teknings:tekningen:tekningens:tekningar:tekningars:tekningarna:tekningarnas
+DEFINITION 1: nedsläpp i hockey
+591298r3<verb>teknisera:teknisera:tekniserade:tekniserat:tekniserar:teknisera:::::::::
+568787r5<adjektiv>teknisk:teknisk:tekniskt:tekniska:tekniska::::tekniske::::::::
+584220r3<adjektiv>teknisk-ekonomisk:teknisk-ekonomisk:teknisk-ekonomiskt:teknisk-ekonomiska:teknisk-ekonomiska::::
+568093r3<adjektiv>tekniskvetenskaplig:tekniskvetenskaplig:tekniskvetenskapligt:tekniskvetenskapliga:tekniskvetenskapliga::::
+622288r4<substantiv>teknokrat:teknokrat:teknokrats:teknokraten:teknokratens:teknokrater:teknokraters:teknokraterna:teknokraternas
+954013r3<substantiv>teknokrati:teknokrati:teknokratis:teknokratin:teknokratins::::
+584223r4<adjektiv>teknokratisk:teknokratisk:teknokratiskt:teknokratiska:teknokratiska::::teknokratiske::::::::
+965639r4<substantiv>teknokratregering:teknokratregering:teknokratregerings:teknokratregeringen:teknokratregeringens:teknokratregeringar:teknokratregeringars:teknokratregeringarna:teknokratregeringarnas
+COMPOUND(622288, 559352): teknokrat + regering
+550647r3<substantiv>teknolog:teknolog:teknologs:teknologen:teknologens:teknologer:teknologers:teknologerna:teknologernas
+CUSTOM: y y teknolog
+672000r4<substantiv>teknologi:teknologi:teknologis:teknologin:teknologins:teknologier:teknologiers:teknologierna:teknologiernas
+CUSTOM: y y teknologi
+946890r3<adjektiv>teknologie:teknologie:::::::::::::::
+584224r3<adjektiv>teknologisk:teknologisk:teknologiskt:teknologiska:teknologiska::::
+964150r3<substantiv>tekoindustri:tekoindustri:tekoindustris:tekoindustrin:tekoindustrins:tekoindustrier:tekoindustriers:tekoindustrierna:tekoindustriernas
+964158r4<substantiv>tekokare:tekokare:tekokares:tekokaren:tekokarens:tekokare:tekokares:tekokarna:tekokarnas
+COMPOUND(555996, 615340): te + kokare
+748026r4<substantiv>tekopp:tekopp:tekopps:tekoppen:tekoppens:tekoppar:tekoppars:tekopparna:tekopparnas
+COMPOUND(555996, 551584): te + kopp
+CUSTOM: y y tekopps
+987821r3<substantiv>tektonik:tektonik:tektoniks:tektoniken:tektonikens::::
+CUSTOM: y n
+795551r3<adjektiv>tektoniserad:tektoniserad:tektoniserat:tektoniserade:tektoniserade:!:!:!:
+584225r3<adjektiv>tektonisk:tektonisk:tektoniskt:tektoniska:tektoniska::::
+854535r3<egennamn>Tel Aviv:Tel Aviv:Tel Avivs
+803061r3<substantiv>teleabonnemang:teleabonnemang:teleabonnemangs:teleabonnemanget:teleabonnemangets:teleabonnemang:teleabonnemangs:teleabonnemangen:teleabonnemangens
+803068r3<substantiv>teleabonnent:teleabonnent:teleabonnents:teleabonnenten:teleabonnentens:teleabonnenter:teleabonnenters:teleabonnenterna:teleabonnenternas
+803076r3<substantiv>teleanläggning:teleanläggning:teleanläggnings:teleanläggningen:teleanläggningens:teleanläggningar:teleanläggningars:teleanläggningarna:teleanläggningarnas
+803084r3<substantiv>telearbetare:telearbetare:telearbetares:telearbetaren:telearbetarens:telearbetare:telearbetares:telearbetarna:telearbetarnas
+919991r3<substantiv>teleavbrott:teleavbrott:teleavbrotts:teleavbrottet:teleavbrottets:teleavbrott:teleavbrotts:teleavbrotten:teleavbrottens
+668996r3<substantiv>teleavgift:teleavgift:teleavgifts:teleavgiften:teleavgiftens:teleavgifter:teleavgifters:teleavgifterna:teleavgifternas
+900882r3<substantiv>teleavlyssning:teleavlyssning:teleavlyssnings:teleavlyssningen:teleavlyssningens:teleavlyssningar:teleavlyssningars:teleavlyssningarna:teleavlyssningarnas
+CUSTOM: y n teleavlyssnings
+748034r3<substantiv>telebolag:telebolag:telebolags:telebolaget:telebolagets:telebolag:telebolags:telebolagen:telebolagens
+803090r3<substantiv>telecentral:telecentral:telecentrals:telecentralen:telecentralens:telecentraler:telecentralers:telecentralerna:telecentralernas
+803098r3<substantiv>teledirektör:teledirektör:teledirektörs:teledirektören:teledirektörens:teledirektörer:teledirektörers:teledirektörerna:teledirektörernas
+803106r3<substantiv>telefaksimil:telefaksimil:telefaksimils:telefaksimilet:telefaksimilets::::
+672003r3<substantiv>telefax:telefax:telefax:telefaxen:telefaxens:telefaxar:telefaxars:telefaxarna:telefaxarnas
+672002r3<substantiv>telefax:telefax:telefax:telefaxet:telefaxets::::
+803110r3<verb>telefaxa:telefaxa:telefaxade:telefaxat:telefaxar:telefaxa:telefaxas:telefaxades:telefaxats:telefaxas:telefaxad:telefaxat:telefaxade:telefaxande:
+550648r24<substantiv>telefon:telefon:telefons:telefonen:telefonens:telefoner:telefoners:telefonerna:telefonernas
+CUSTOM: y y telefon +telefon
+588162r4<verb>telefonera:telefonera:telefonerade:telefonerat:telefonerar:telefonera:telefoneras:telefonerades:telefonerats:telefoneras:::::
+748041r3<substantiv>telefonerande:telefonerande:telefonerandes:telefonerandet:telefonerandets::::
+803118r4<substantiv>telefonhot:telefonhot:telefonhots:telefonhotet:telefonhotets:telefonhot:telefonhots:telefonhoten:telefonhotens
+COMPOUND(550648, 552476): telefon + hot
+672004r4<substantiv>telefoni:telefoni:telefonis:telefonin:telefonins::::
+CUSTOM: y y telefoni +telefoni
+584228r3<adjektiv>telefonisk:telefonisk:telefoniskt:telefoniska:telefoniska::::
+748046r3<substantiv>telefonist:telefonist:telefonists:telefonisten:telefonistens:telefonister:telefonisters:telefonisterna:telefonisternas
+953241r4<substantiv>telefonjack:telefonjack:telefonjacks:telefonjacket:telefonjackets:telefonjack:telefonjacks:telefonjacken:telefonjackens
+COMPOUND(550648, 552532): telefon + jack
+550649r3<substantiv>telefonkatalog:telefonkatalog:telefonkatalogs:telefonkatalogen:telefonkatalogens:telefonkataloger:telefonkatalogers:telefonkatalogerna:telefonkatalogernas
+CUSTOM: n n y
+631823r4<substantiv>telefonkonferens:telefonkonferens:telefonkonferens:telefonkonferensen:telefonkonferensens:telefonkonferenser:telefonkonferensers:telefonkonferenserna:telefonkonferensernas
+COMPOUND(550648, 549618): telefon + konferens
+CUSTOM: n n y
+770445r4<substantiv>telefonkö:telefonkö:telefonkös:telefonkön:telefonköns:telefonköer:telefonköers:telefonköerna:telefonköernas
+COMPOUND(550648, 557680): telefon + kö
+954873r3<adverb>telefonledes:telefonledes
+672006r4<substantiv>telefonledning:telefonledning:telefonlednings:telefonledningen:telefonledningens:telefonledningar:telefonledningars:telefonledningarna:telefonledningarnas
+COMPOUND(550648, 551696): telefon + ledning
+CUSTOM: n n y
+672007r4<substantiv>telefonlista:telefonlista:telefonlistas:telefonlistan:telefonlistans:telefonlistor:telefonlistors:telefonlistorna:telefonlistornas
+COMPOUND(550648, 555151): telefon + lista
+CUSTOM: n n y
+672015r4<substantiv>telefonlur:telefonlur:telefonlurs:telefonluren:telefonlurens:telefonlurar:telefonlurars:telefonlurarna:telefonlurarnas
+COMPOUND(550648, 551709): telefon + lur
+672023r4<substantiv>telefonnummer:telefonnummer:telefonnummers:telefonnumret:telefonnumrets:telefonnummer:telefonnummers:telefonnumren:telefonnumrens
+COMPOUND(550648, 621605): telefon + nummer
+672029r4<substantiv>telefonnät:telefonnät:telefonnäts:telefonnätet:telefonnätets:telefonnät:telefonnäts:telefonnäten:telefonnätens
+COMPOUND(550648, 555848): telefon + nät
+584231r3<adjektiv>telefonometrisk:telefonometrisk:telefonometriskt:telefonometriska:telefonometriska::::
+894257r4<substantiv>telefonporr:telefonporr:telefonporrs:telefonporren:telefonporrens:!:!:!:!
+COMPOUND(550648, 628557): telefon + porr
+CUSTOM: b n
+921368r4<substantiv>telefonprat:telefonprat:telefonprats:telefonpratet:telefonpratets:!:!:!:!
+COMPOUND(550648, 624631): telefon + prat
+672035r4<substantiv>telefonräkning:telefonräkning:telefonräknings:telefonräkningen:telefonräkningens:telefonräkningar:telefonräkningars:telefonräkningarna:telefonräkningarnas
+COMPOUND(550648, 559064): telefon + räkning
+CUSTOM: n n y
+672043r4<substantiv>telefonsamtal:telefonsamtal:telefonsamtals:telefonsamtalet:telefonsamtalets:telefonsamtal:telefonsamtals:telefonsamtalen:telefonsamtalens
+COMPOUND(550648, 552878): telefon + samtal
+CUSTOM: n n y
+893910r4<substantiv>telefonsex:telefonsex:telefonsex:telefonsexet:telefonsexets::::
+COMPOUND(550648, 640698): telefon + sex
+CUSTOM: b n
+615483r3<substantiv>telefonsvarare:telefonsvarare:telefonsvarares:telefonsvararen:telefonsvararens:telefonsvarare:telefonsvarares:telefonsvararna:telefonsvararnas
+CUSTOM: n n y
+922536r3<adjektiv>telefonsänd:telefonsänd:telefonsänt:telefonsända:telefonsända::::::::::::
+748054r3<substantiv>telefonväkteri:telefonväkteri:telefonväkteris:telefonväkteriet:telefonväkteriets::::
+CUSTOM: y y
+803129r3<substantiv>telefonör:telefonör:telefonörs:telefonören:telefonörens:telefonörer:telefonörers:telefonörerna:telefonörernas
+803138r3<substantiv>teleförbindelse:teleförbindelse:teleförbindelses:teleförbindelsen:teleförbindelsens:teleförbindelser:teleförbindelsers:teleförbindelserna:teleförbindelsernas
+CUSTOM: y n
+803146r3<substantiv>teleföretag:teleföretag:teleföretags:teleföretaget:teleföretagets:teleföretag:teleföretags:teleföretagen:teleföretagens
+550650r3<substantiv>telegraf:telegraf:telegrafs:telegrafen:telegrafens:telegrafer:telegrafers:telegraferna:telegrafernas
+CUSTOM: y y telegraf
+588166r4<verb>telegrafera:telegrafera:telegraferade:telegraferat:telegraferar:telegrafera:telegraferas:telegraferades:telegraferats:telegraferas:telegraferad:telegraferat:telegraferade:telegraferande:
+987825r3<substantiv>telegrafering:telegrafering:telegraferings:telegraferingen:telegraferingens::::
+803157r3<substantiv>telegrafi:telegrafi:telegrafis:telegrafin:telegrafins::::
+584234r3<adjektiv>telegrafisk:telegrafisk:telegrafiskt:telegrafiska:telegrafiska::::
+803161r3<substantiv>telegrafist:telegrafist:telegrafists:telegrafisten:telegrafistens:telegrafister:telegrafisters:telegrafisterna:telegrafisternas
+627056r4<substantiv>telegram:telegram:telegrams:telegrammet:telegrammets:telegram:telegrams:telegrammen:telegrammens
+CUSTOM: y y telegram
+669004r3<substantiv>telegramavgift:telegramavgift:telegramavgifts:telegramavgiften:telegramavgiftens:telegramavgifter:telegramavgifters:telegramavgifterna:telegramavgifternas
+CUSTOM: n n
+600435r3<substantiv>telegramnyckel:telegramnyckel:telegramnyckels:telegramnyckeln:telegramnyckelns:telegramnycklar:telegramnycklars:telegramnycklarna:telegramnycklarnas
+CUSTOM: n n
+803169r3<substantiv>teleindustri:teleindustri:teleindustris:teleindustrin:teleindustrins:teleindustrier:teleindustriers:teleindustrierna:teleindustriernas
+803177r3<substantiv>teleingenjör:teleingenjör:teleingenjörs:teleingenjören:teleingenjörens:teleingenjörer:teleingenjörers:teleingenjörerna:teleingenjörernas
+803185r3<substantiv>telekabel:telekabel:telekabels:telekabeln:telekabelns:telekablar:telekablars:telekablarna:telekablarnas
+987829r3<substantiv>telekinesi:telekinesi:telekinesis:telekinesin:telekinesins::::
+584237r3<adjektiv>telekinetisk:telekinetisk:telekinetiskt:telekinetiska:telekinetiska::::
+880319r4<substantiv>telekom:telekom:::::::
+603859r3<substantiv>telekommunikation:telekommunikation:telekommunikations:telekommunikationen:telekommunikationens:telekommunikationer:telekommunikationers:telekommunikationerna:telekommunikationernas
+CUSTOM: y y telekommunikations
+861118r4<substantiv>telekomtillverkare:telekomtillverkare:telekomtillverkares:telekomtillverkaren:telekomtillverkarens:telekomtillverkare:telekomtillverkares:telekomtillverkarna:telekomtillverkarnas
+COMPOUND(880319, 615486): telekom + tillverkare
+CUSTOM: n n
+803193r3<substantiv>telekonferens:telekonferens:telekonferens:telekonferensen:telekonferensens:telekonferenser:telekonferensers:telekonferenserna:telekonferensernas
+803200r3<substantiv>telekontor:telekontor:telekontors:telekontoret:telekontorets:telekontor:telekontors:telekontoren:telekontorens
+803206r3<substantiv>teleledning:teleledning:telelednings:teleledningen:teleledningens:teleledningar:teleledningars:teleledningarna:teleledningarnas
+859086r3<egennamn>Telemann:Telemann:Telemanns
+803215r4<substantiv>telemarketing:telemarketing:telemarketings:telemarketingen:telemarketingens::::
+CUSTOM: y y telemarketing
+803221r3<substantiv>telemarketingbolag::::::::
+COMPOUND(803215, 552264): telemarketing + bolag
+748059r4<substantiv>telemarknad:telemarknad:telemarknads:telemarknaden:telemarknadens:telemarknader:telemarknaders:telemarknaderna:telemarknadernas
+803226r3<substantiv>telemarkssväng:telemarkssväng:telemarkssvängs:telemarkssvängen:telemarkssvängens:telemarkssvängar:telemarkssvängars:telemarkssvängarna:telemarkssvängarnas
+803235r3<substantiv>telemast:telemast:telemasts:telemasten:telemastens:telemaster:telemasters:telemasterna:telemasternas
+803244r3<substantiv>telematerial:telematerial:telematerials:telematerialet:telematerialets:telematerial:telematerials:telematerialen:telematerialens
+803250r3<substantiv>telematik:telematik:telematiks:telematiken:telematikens::::
+CUSTOM: y y telematik
+803254r3<substantiv>telemeddelande:telemeddelande:telemeddelandes:telemeddelandet:telemeddelandets:telemeddelanden:telemeddelandens:telemeddelandena:telemeddelandenas
+584240r3<adjektiv>telemekanisk:telemekanisk:telemekaniskt:telemekaniska:telemekaniska::::
+591302r3<verb>telemetrera:telemetrera:telemetrerade:telemetrerat:telemetrerar:telemetrera:::::::::
+584243r3<adjektiv>telemetrisk:telemetrisk:telemetriskt:telemetriska:telemetriska::::
+897911r3<substantiv>telemontör:telemontör:telemontörs:telemontören:telemontörens:telemontörer:telemontörers:telemontörerna:telemontörernas
+882778r3<egennamn>Telenor:Telenor:Telenors
+CUSTOM: y n Telenor
+672049r3<substantiv>telenät:telenät:telenäts:telenätet:telenätets:telenät:telenäts:telenäten:telenätens
+803262r3<substantiv>teleobjektiv:teleobjektiv:teleobjektivs:teleobjektivet:teleobjektivets:teleobjektiv:teleobjektivs:teleobjektiven:teleobjektivens
+584246r3<adjektiv>teleologisk:teleologisk:teleologiskt:teleologiska:teleologiska::::
+956469r3<substantiv>teleområde:teleområde:teleområdes:teleområdet:teleområdets:teleområden:teleområdens:teleområdena:teleområdenas
+748065r3<substantiv>teleoperatör:teleoperatör:teleoperatörs:teleoperatören:teleoperatörens:teleoperatörer:teleoperatörers:teleoperatörerna:teleoperatörernas
+672052r3<substantiv>telepati:telepati:telepatis:telepatin:telepatins::::
+584249r3<adjektiv>telepatisk:telepatisk:telepatiskt:telepatiska:telepatiska::::
+672055r3<substantiv>teleportation:teleportation:teleportations:teleportationen:teleportationens::::
+CUSTOM: y y teleportations
+987833r3<substantiv>teleprinter:teleprinter:teleprinters:teleprintern:teleprinterns:teleprintrar:teleprintrars:teleprintrarna:teleprintrarnas
+803268r3<substantiv>telereparatör:telereparatör:telereparatörs:telereparatören:telereparatörens:telereparatörer:telereparatörers:telereparatörerna:telereparatörernas
+803276r3<substantiv>teleräkning:teleräkning:teleräknings:teleräkningen:teleräkningens:teleräkningar:teleräkningars:teleräkningarna:teleräkningarnas
+553034r3<substantiv>teleskop:teleskop:teleskops:teleskopet:teleskopets:teleskop:teleskops:teleskopen:teleskopens
+CUSTOM: y y teleskop
+584250r3<adjektiv>teleskopisk:teleskopisk:teleskopiskt:teleskopiska:teleskopiska::::
+803284r3<substantiv>telestation:telestation:telestations:telestationen:telestationens:telestationer:telestationers:telestationerna:telestationernas
+748074r3<substantiv>telestyrelse:telestyrelse:telestyrelses:telestyrelsen:telestyrelsens::::
+882300r3<substantiv>telesystem:telesystem:telesystems:telesystemet:telesystemets:telesystem:telesystems:telesystemen:telesystemens
+803292r3<substantiv>teleteknik:teleteknik:teletekniks:teletekniken:teleteknikens::::
+803296r3<substantiv>teletekniker:teletekniker:teleteknikers:teleteknikern:teleteknikerns:teletekniker:teleteknikers:teleteknikerna:teleteknikernas
+584253r3<adjektiv>teleteknisk:teleteknisk:teletekniskt:teletekniska:teletekniska::::
+748078r3<substantiv>teletjänst:teletjänst:teletjänsts:teletjänsten:teletjänstens:teletjänster:teletjänsters:teletjänsterna:teletjänsternas
+CUSTOM: y y teletjänst
+803302r3<substantiv>teletrafik:teletrafik:teletrafiks:teletrafiken:teletrafikens::::
+748086r3<substantiv>televerk:televerk:televerks:televerket:televerkets::::
+591306r4<verb>televisera:televisera:televiserade:televiserat:televiserar:televisera:televiseras:televiserades:televiserats:televiseras:televiserad:televiserat:televiserade::
+672056r3<substantiv>television:television:televisions:televisionen:televisionens::::
+CUSTOM: y y televisions
+803310r3<substantiv>televäxel:televäxel:televäxels:televäxeln:televäxelns:televäxlar:televäxlars:televäxlarna:televäxlarnas
+553035r3<substantiv>telex:telex:telex:telexet:telexets:telex:telex:telexen:telexens
+591310r3<verb>telexera:telexera:telexerade:telexerat:telexerar:telexera:::::::::
+CUSTOM: y n n
+920005r3<substantiv>teleövervakning:teleövervakning:teleövervaknings:teleövervakningen:teleövervakningens::::
+789032r3<egennamn>Telia:Telia:Telias
+CUSTOM: y n Telia
+882782r3<egennamn>Teliasonera:Teliasonera:Teliasoneras
+CUSTOM: y n Teliasonera
+874275r3<egennamn>Telia Sonera:Telia Sonera:Telia Soneras
+723578r3<substantiv>tellur:tellur:tellurs:telluret:tellurets:!:!:!:!
+577456r3<adjektiv>tellurhaltig:tellurhaltig:tellurhaltigt:tellurhaltiga:tellurhaltiga::::
+584256r3<adjektiv>tellurisk:tellurisk:telluriskt:telluriska:telluriska::::
+584259r3<adjektiv>telmatisk:telmatisk:telmatiskt:telmatiska:telmatiska::::
+672057r3<substantiv>telning:telning:telnings:telningen:telningens:telningar:telningars:telningarna:telningarnas
+CUSTOM: y y telnings
+623202r5<substantiv>tema:tema:temas:temat:temats:teman:temans:temana:temanas
+CUSTOM: y y tema
+933022r4<substantiv>temadag:temadag:temadags:temadagen:temadagens:temadagar:temadagars:temadagarna:temadagarnas
+COMPOUND(623202, 551009): tema + dag
+650948r5<substantiv>temakonfirmation:temakonfirmation:temakonfirmations:temakonfirmationen:temakonfirmationens:temakonfirmationer:temakonfirmationers:temakonfirmationerna:temakonfirmationernas
+DEFINITION 1: Konfirmation med visst tema vid sidan av undervisningen, t.ex. sång, fotboll eller ridning \
+
+COMPOUND(623202, 650950): tema + konfirmation
+CUSTOM: y y temakonfirmations
+853116r3<substantiv>tematik:tematik:tematiks:tematiken:tematikens::::
+941827r3<verb>tematisera:tematisera:tematiserade:tematiserat:tematiserar:tematisera:tematiseras:tematiserades:tematiserats:tematiseras:tematiserad:tematiserat:tematiserade:tematiserande:
+584262r3<adjektiv>tematisk:tematisk:tematiskt:tematiska:tematiska::::
+628929r3<substantiv>temp:temp:temps:tempen:tempens::::
+619781r6<substantiv>tempel:tempel:tempels:templet:templets:tempel:tempels:templen:templens
+CUSTOM: y y tempel
+987841r3<substantiv>tempelherreorden:tempelherreorden:tempelherreordens::::::
+599668r3<substantiv>tempelsal:tempelsal:tempelsals:tempelsalen:tempelsalens:tempelsalar:tempelsalars:tempelsalarna:tempelsalarnas
+987843r5<substantiv>tempera:tempera:temperas:temperan:temperans::::
+CUSTOM: y n
+553036r3<substantiv>temperament:temperament:temperaments:temperamentet:temperamentets:temperament:temperaments:temperamenten:temperamentens
+CUSTOM: y y temperaments
+585165r4<adjektiv>temperamentsfull:temperamentsfull:temperamentsfullt:temperamentsfulla:temperamentsfulla::::temperamentsfulle::::::::
+565388r3<adjektiv>temperamentslös:temperamentslös:temperamentslöst:temperamentslösa:temperamentslösa::::
+550651r16<substantiv>temperatur:temperatur:temperaturs:temperaturen:temperaturens:temperaturer:temperaturers:temperaturerna:temperaturernas
+CUSTOM: y y temperatur +temperatur
+795554r3<adjektiv>temperaturbegränsad:temperaturbegränsad:temperaturbegränsat:temperaturbegränsade:temperaturbegränsade:!:!:!:
+577459r3<adjektiv>temperaturbeständig:temperaturbeständig:temperaturbeständigt:temperaturbeständiga:temperaturbeständiga::::
+568096r3<adjektiv>temperaturkänslig:temperaturkänslig:temperaturkänsligt:temperaturkänsliga:temperaturkänsliga::::
+731815r4<substantiv>temperaturområde:temperaturområde:temperaturområdes:temperaturområdet:temperaturområdets:temperaturområden:temperaturområdens:temperaturområdena:temperaturområdenas
+COMPOUND(550651, 612761): temperatur + område
+795557r3<adjektiv>temperaturprogrammerad:temperaturprogrammerad:temperaturprogrammerat:temperaturprogrammerade:temperaturprogrammerade:!:!:!:
+762493r4<substantiv>temperaturregulator:temperaturregulator:temperaturregulators:temperaturregulatorn:temperaturregulatorns:temperaturregulatorer:temperaturregulatorers:temperaturregulatorerna:temperaturregulatorernas
+COMPOUND(550651, 633696): temperatur + regulator
+762501r4<substantiv>temperaturskala:temperaturskala:temperaturskalas:temperaturskalan:temperaturskalans:temperaturskalor:temperaturskalors:temperaturskalorna:temperaturskalornas
+COMPOUND(550651, 595122): temperatur + skala
+800472r3<adjektiv>temperaturstyrd:temperaturstyrd:temperaturstyrt:temperaturstyrda:temperaturstyrda::::
+577462r3<adjektiv>temperaturväxlingsbeständig:temperaturväxlingsbeständig:temperaturväxlingsbeständigt:temperaturväxlingsbeständiga:temperaturväxlingsbeständiga::::
+728868r4<substantiv>temperaturökning:temperaturökning:temperaturöknings:temperaturökningen:temperaturökningens:temperaturökningar:temperaturökningars:temperaturökningarna:temperaturökningarnas
+COMPOUND(550651, 649466): temperatur + ökning
+588170r3<verb>temperera:temperera:tempererade:tempererat:tempererar:temperera:::::::::
+748090r3<adjektiv>tempererad:tempererad:tempererat:tempererade:tempererade:!:!:!:
+987857r3<substantiv>temperering:temperering:tempererings:tempereringen:tempereringens:tempereringar:tempereringars:tempereringarna:tempereringarnas
+626689r4<substantiv>tempo:tempo:tempos:tempot:tempots:tempon:tempons:tempona:temponas
+CUSTOM: y y tempo
+577465r3<adjektiv>tempofattig:tempofattig:tempofattigt:tempofattiga:tempofattiga::::
+748091r4<substantiv>tempolopp:tempolopp:tempolopps:tempoloppet:tempoloppets:tempolopp:tempolopps:tempoloppen:tempoloppens
+COMPOUND(626689, 552677): tempo + lopp
+987865r3<adjektiv>temporal:temporal:temporalt:temporala:temporala::::::::::::
+CUSTOM: y n
+672058r3<adjektiv>temporär:temporär:temporärt:temporära:temporära::::
+748092r4<substantiv>tempus:tempus::::tempus:::
+CUSTOM: y y tempus
+788826r4<substantiv>tempusböjning:tempusböjning:tempusböjnings:tempusböjningen:tempusböjningens:tempusböjningar:tempusböjningars:tempusböjningarna:tempusböjningarnas
+COMPOUND(748092, 633148): tempus + böjning
+697283r4<substantiv>ten:ten:tens:tenen:tenens:tenar:tenars:tenarna:tenarnas
+CUSTOM: y n
+550652r3<substantiv>tendens:tendens:tendens:tendensen:tendensens:tendenser:tendensers:tendenserna:tendensernas
+564316r3<adjektiv>tendensfri:tendensfri:tendensfritt:tendensfria:tendensfria::::
+987877r3<adjektiv>tendensiös:tendensiös:tendensiöst:tendensiösa:tendensiösa::::tendensiöse::::::::
+565391r3<adjektiv>tendenslös:tendenslös:tendenslöst:tendenslösa:tendenslösa::::
+987868r3<substantiv>tendensroman:tendensroman:tendensromans:tendensromanen:tendensromanens:tendensromaner:tendensromaners:tendensromanerna:tendensromanernas
+640265r3<adjektiv>tendentiös:tendentiös:tendentiöst:tendentiösa:tendentiösa::::
+588174r3<verb>tendera:tendera:tenderade:tenderat:tenderar:tendera:::::::::
+987881r3<substantiv>tenderlok:tenderlok:tenderloks:tenderloket:tenderlokets:tenderlok:tenderloks:tenderloken:tenderlokens
+624877r9<substantiv>tenn:tenn:tenns:tennet:tennets:!:!:!:!
+CUSTOM: y y tenn
+630657r4<substantiv>tennbroderi:tennbroderi:tennbroderis:tennbroderiet, tennbroderit:tennbroderiets, tennbroderits:tennbroderier:tennbroderiers:tennbroderierna:tennbroderiernas
+COMPOUND(624877, 630468): tenn + broderi
+990333r3<egennamn>Tennessee:Tennessee:Tennessees
+853120r3<substantiv>tennfat:tennfat:tennfats:tennfatet:tennfatets:tennfat:tennfats:tennfaten:tennfatens
+802124r3<adjektiv>tenngrå:tenngrå:tenngrått:tenngråa:tenngråa::::
+577468r3<adjektiv>tennhaltig:tennhaltig:tennhaltigt:tennhaltiga:tennhaltiga::::
+672059r9<substantiv>tennis:tennis:tennis:tennisen:tennisens::::
+CUSTOM: y y tennis
+770453r5<substantiv>tennisarm:tennisarm:tennisarms:tennisarmen:tennisarmens:tennisarmar:tennisarmars:tennisarmarna:tennisarmarnas
+COMPOUND(672059, 550842): tennis + arm
+672060r4<substantiv>tennisbana:tennisbana:tennisbanas:tennisbanan:tennisbanans:tennisbanor:tennisbanors:tennisbanorna:tennisbanornas
+COMPOUND(672059, 556870): tennis + bana
+672068r4<substantiv>tennisboll:tennisboll:tennisbolls:tennisbollen:tennisbollens:tennisbollar:tennisbollars:tennisbollarna:tennisbollarnas
+COMPOUND(672059, 550928): tennis + boll
+860493r4<substantiv>tennisgud:tennisgud:tennisguds:tennisguden:tennisgudens:tennisgudar:tennisgudars:tennisgudarna:tennisgudarnas
+COMPOUND(672059, 551333): tennis + gud
+672069r4<substantiv>tennismatch:tennismatch:tennismatchs:tennismatchen:tennismatchens:tennismatcher:tennismatchers:tennismatcherna:tennismatchernas
+COMPOUND(672059, 550011): tennis + match
+599011r4<substantiv>tennisracket:tennisracket:tennisrackets:tennisracketen:tennisracketens:tennisracketar:tennisracketars:tennisracketarna:tennisracketarnas
+COMPOUND(672059, 559113): tennis + racket
+762513r4<substantiv>tennlod:tennlod:tennlods:tennlodet:tennlodets:tennlod:tennlods:tennloden:tennlodens
+COMPOUND(624877, 560126): tenn + lod
+945535r4<substantiv>tennoxid:tennoxid:tennoxids:tennoxiden:tennoxidens:tennoxider:tennoxiders:tennoxiderna:tennoxidernas
+COMPOUND(624877, 628488): tenn + oxid
+762509r4<substantiv>tennpest:tennpest:tennpests:tennpesten:tennpestens::::
+COMPOUND(624877, 624606): tenn + pest
+672077r4<substantiv>tennsoldat:tennsoldat:tennsoldats:tennsoldaten:tennsoldatens:tennsoldater:tennsoldaters:tennsoldaterna:tennsoldaternas
+COMPOUND(624877, 550545): tenn + soldat
+762519r4<substantiv>tennsten:tennsten:tennstens:tennstenen:tennstenens::::
+COMPOUND(624877, 551935): tenn + sten
+672085r6<substantiv>tenor:tenor:tenors:tenoren:tenorens:tenorer:tenorers:tenorerna:tenorernas
+CUSTOM: y y tenor
+956393r3<substantiv>tenorist:tenorist:tenorists:tenoristen:tenoristens:tenorister:tenoristers:tenoristerna:tenoristernas
+678675r4<substantiv>tenorklav:tenorklav:tenorklavs:tenorklaven:tenorklavens:tenorklaver:tenorklavers:tenorklaverna:tenorklavernas
+COMPOUND(672085, 646225): tenor + klav
+748093r3<substantiv>tenorsaxofonist::::::::
+COMPOUND(672085, 745569): tenor + saxofonist
+748094r3<substantiv>tenorstämma::::::::
+COMPOUND(672085, 595433): tenor + stämma
+672093r4<substantiv>tensid:tensid:tensids:tensiden:tensidens:tensider:tensiders:tensiderna:tensidernas
+DEFINITION 1: Organiskt ämne som tar bort ytspänning och används i tvättemdel.
+987887r3<substantiv>tension:tension:tensions:tensionen:tensionens:tensioner:tensioners:tensionerna:tensionernas
+712433r3<substantiv>tensor:tensor:tensors:tensorn:tensorns:tensorer:tensorers:tensorerna:tensorernas
+CUSTOM: n n n
+861218r3<egennamn>Tensta:Tensta:Tenstas
+CUSTOM: y n Tensta
+557330r10<substantiv>tenta:tenta:tentas:tentan:tentans:tentor:tentors:tentorna:tentornas
+CUSTOM: y y tenta
+672101r3<substantiv>tentakel:tentakel:tentakels:tentakeln:tentakelns:tentakler:tentaklers:tentaklerna:tentaklernas
+617248r7<substantiv>tentamen:tentamen:tentamens:tentamen:tentamens:tentamina:tentaminas:tentamina:tentaminas
+CUSTOM: y y tentamens
+893914r4<verb>tentamensläsa:tentamensläsa:tentamensläste:tentamensläst:tentamensläser:tentamensläs:tentamensläsas:tentamenslästes:tentamenslästs:tentamensläses::::tentamensläsande:
+COMPOUND(617248, 556182): tentamen + läsa
+719680r3<adjektiv>tentamensmässig:tentamensmässig:tentamensmässigt:tentamensmässiga:tentamensmässiga::::
+731048r4<substantiv>tentamenstes:tentamenstes:tentamenstes:tentamenstesen:tentamenstesens:tentamensteser:tentamenstesers:tentamensteserna:tentamenstesernas
+COMPOUND(617248, 550662): tentamen + tes
+719685r3<adjektiv>tentamässig:tentamässig:tentamässigt:tentamässiga:tentamässiga::::
+672109r3<substantiv>tentand:tentand:tentands:tentanden:tentandens:tentander:tentanders:tentanderna:tentandernas
+636862r3<adjektiv>tentativ:tentativ:tentativt:tentativa:tentativa::::
+657736r9<substantiv>tentaångest:tentaångest:tentaångests:tentaångesten:tentaångestens:!:!:!:!
+COMPOUND(557330, 555188): tenta + ångest
+588175r3<verb>tentera:tentera:tenterade:tenterat:tenterar:tentera:::::::::
+987895r3<substantiv>teobromin:teobromin:teobromins:teobrominet:teobrominets::::
+584263r3<adjektiv>teocentrisk:teocentrisk:teocentriskt:teocentriska:teocentriska::::
+762531r3<substantiv>teodicé:teodicé:teodicés:teodicén:teodicéns:!:!:!:!
+987899r3<substantiv>teodicéproblem:::teodicéproblemet:teodicéproblemets::::
+803322r4<substantiv>teodling:teodling:teodlings:teodlingen:teodlingens:teodlingar:teodlingars:teodlingarna:teodlingarnas
+COMPOUND(555996, 647226): te + odling
+762523r4<substantiv>teodolit:teodolit:teodolits:teodoliten:teodolitens:teodoliter:teodoliters:teodoliterna:teodoliternas
+DEFINITION 1: Instrument för mätning av vinklar. Användes tidigare av bland annat lantmätare.
+972068r3<egennamn>Teodor:Teodor:Teodors
+972071r3<egennamn>Teodora:Teodora:Teodoras
+987902r3<substantiv>teofyllin:teofyllin:teofyllins:teofyllinet:teofyllinets::::
+676549r5<substantiv>teokrati:teokrati:teokratis:teokratin, teokratien:teokratins, teokratiens:teokratier:teokratiers:teokratierna:teokratiernas
+DEFINITION 1: prästvälde
+584266r3<adjektiv>teokratisk:teokratisk:teokratiskt:teokratiska:teokratiska::::
+550653r3<substantiv>teolog:teolog:teologs:teologen:teologens:teologer:teologers:teologerna:teologernas
+672117r4<substantiv>teologi:teologi:teologis:teologin, teologien:teologins, teologiens::::
+CUSTOM: y y teologi
+672119r3<adjektiv>teologie:teologie:teologie:teologie:teologie:!:!:!:
+584269r4<adjektiv>teologisk:teologisk:teologiskt:teologiska:teologiska::::teologiske::::::::
+926529r3<substantiv>teorb:teorb:teorbs:teorben:teorbens:teorber:teorbers:teorberna:teorbernas
+CUSTOM: y n
+553037r3<substantiv>teorem:teorem:teorems:teoremet:teoremets:teorem:teorems:teoremen:teoremens
+672120r3<substantiv>teoretiker:teoretiker:teoretikers:teoretikern:teoretikerns:teoretiker:teoretikers:teoretikerna:teoretikernas
+588179r5<verb>teoretisera:teoretisera:teoretiserade:teoretiserat:teoretiserar:teoretisera:teoretiseras:teoretiserades:teoretiserats:teoretiseras:teoretiserad:teoretiserat:teoretiserade:teoretiserande:
+803330r3<substantiv>teoretisering:teoretisering:teoretiserings:teoretiseringen:teoretiseringens:teoretiseringar:teoretiseringars:teoretiseringarna:teoretiseringarnas
+584272r5<adjektiv>teoretisk:teoretisk:teoretiskt:teoretiska:teoretiska::::teoretiske
+626693r10<substantiv>teori:teori:teoris:teorin:teorins:teorier:teoriers:teorierna:teoriernas
+CUSTOM: y y teori
+672121r4<substantiv>teoriprov:teoriprov:teoriprovs:teoriprovet:teoriprovets:teoriprov:teoriprovs:teoriproven:teoriprovens
+COMPOUND(626693, 621657): teori + prov
+550654r3<substantiv>teosof:teosof:teosofs:teosofen:teosofens:teosofer:teosofers:teosoferna:teosofernas
+803344r3<substantiv>teosofi:teosofi:teosofis:teosofin:teosofins::::
+584273r3<adjektiv>teosofisk:teosofisk:teosofiskt:teosofiska:teosofiska::::
+920010r4<substantiv>teparty:teparty:tepartys:tepartyt:tepartyts:tepartyn:tepartyns:tepartyna:tepartynas
+COMPOUND(555996, 625940): te + party
+CUSTOM: y n n teparty
+803348r4<substantiv>teplantage:teplantage:teplantages:teplantagen:teplantagens:teplantager:teplantagers:teplantagerna:teplantagernas
+COMPOUND(555996, 686789): te + plantage
+672127r4<substantiv>tepåse:tepåse:tepåses:tepåsen:tepåsens:tepåsar:tepåsars:tepåsarna:tepåsarnas
+COMPOUND(555996, 556682): te + påse
+938248r3<substantiv>tequila:tequila:tequilas:tequilan:tequilans::::
+889737r3<substantiv>terabyte:terabyte::::terabyte:::
+627077r5<substantiv>terapeut:terapeut:terapeuts:terapeuten:terapeutens:terapeuter:terapeuters:terapeuterna:terapeuternas
+CUSTOM: y y terapeut +terapeut
+584276r3<adjektiv>terapeutisk:terapeutisk:terapeutiskt:terapeutiska:terapeutiska::::
+877124r3<substantiv>terapeutsamtal::::::::
+COMPOUND(627077, 552878): terapeut + samtal
+672135r6<substantiv>terapi:terapi:terapis:terapin:terapins:terapier:terapiers:terapierna:terapiernas
+CUSTOM: y y terapi
+748095r3<substantiv>terapigrupp::::::::
+COMPOUND(672135, 549163): terapi + grupp
+748096r3<substantiv>terapisamtal::::::::
+COMPOUND(672135, 552878): terapi + samtal
+734711r6<substantiv>terawatt:terawatt:terawatts:terawatten:terawattens:terawatt:terawatts:terawatten:terawattens
+CUSTOM: y n terawatt
+748110r4<substantiv>terawattimme:terawattimme, terawattimma:terawattimmes, terawattimmas:terawattimmen, terawattimman:terawattimmens, terawattimmans:terawattimmar:terawattimmars:terawattimmarna:terawattimmarnas
+COMPOUND(734711, 599754): terawatt + timma, timme
+723366r4<substantiv>terbium:terbium:terbiums:terbiumet:terbiumets:!:!:!:!
+553900r3<egennamn>Teresia:Teresia:Teresias
+874158r3<egennamn>Terje:Terje:Terjes
+550655r4<substantiv>term:term:terms:termen:termens:termer:termers:termerna:termernas
+927055r8<substantiv>termik:termik:termiks:termiken:termikens:!:!:!:!
+550656r5<substantiv>termin:termin:termins:terminen:terminens:terminer:terminers:terminerna:terminernas
+CUSTOM: y y termins +termins
+550657r9<substantiv>terminal:terminal:terminals:terminalen:terminalens:terminaler:terminalers:terminalerna:terminalernas
+CUSTOM: y y terminal
+773921r4<substantiv>terminalfönster:terminalfönster:terminalfönsters:terminalfönstret:terminalfönstrets:terminalfönster:terminalfönsters:terminalfönstren, terminalfönsterna:terminalfönstrens, terminalfönsternas
+COMPOUND(550657, 555049): terminal + fönster
+672137r3<substantiv>terminator:terminator:terminators:terminatorn:terminatorns:terminatorer:terminatorers:terminatorerna:terminatorernas
+568099r3<adjektiv>terminlig:terminlig:terminligt:terminliga:terminliga::::
+637991r4<substantiv>terminologi:terminologi:terminologis:terminologin:terminologins:terminologier:terminologiers:terminologierna:terminologiernas
+CUSTOM: y y terminologi
+584277r3<adjektiv>terminologisk:terminologisk:terminologiskt:terminologiska:terminologiska::::
+603867r3<substantiv>terminsaffär:terminsaffär:terminsaffärs:terminsaffären:terminsaffärens:terminsaffärer:terminsaffärers:terminsaffärerna:terminsaffärernas
+669012r4<substantiv>terminsavgift:terminsavgift:terminsavgifts:terminsavgiften:terminsavgiftens:terminsavgifter:terminsavgifters:terminsavgifterna:terminsavgifternas
+COMPOUND(550656, 548299): termin + avgift
+748097r3<substantiv>terminsstart::::::::
+COMPOUND(550656, 603706): termin + start
+748098r3<adverb>terminsvis:terminsvis
+584280r3<adjektiv>termionisk:termionisk:termioniskt:termioniska:termioniska::::
+584283r3<adjektiv>termisk:termisk:termiskt:termiska:termiska::::
+731803r3<substantiv>termistor:termistor:termistors:termistorn:termistorns:termistorer:termistorers:termistorerna:termistorernas
+550658r5<substantiv>termit:termit:termits:termiten:termitens:termiter:termiters:termiterna:termiternas
+CUSTOM: y n
+803356r6<substantiv>termitbo:termitbo:termitbos:termitboet:termitboets:termitbon:termitbons:termitbona:termitbonas
+COMPOUND(550658, 612409): termit + bo
+803366r4<substantiv>termitstack:termitstack:termitstacks:termitstacken:termitstackens:termitstackar:termitstackars:termitstackarna:termitstackarnas
+COMPOUND(550658, 622185): termit + stack
+803374r3<substantiv>termobyxor:::::termobyxor:termobyxors:termobyxorna:termobyxornas
+803378r3<substantiv>termodynamik:termodynamik:termodynamiks:termodynamiken:termodynamikens::::
+584286r3<adjektiv>termodynamisk:termodynamisk:termodynamiskt:termodynamiska:termodynamiska::::
+584289r3<adjektiv>termoelastisk:termoelastisk:termoelastiskt:termoelastiska:termoelastiska::::
+584292r3<adjektiv>termoelektrisk:termoelektrisk:termoelektriskt:termoelektriska:termoelektriska::::
+584295r3<adjektiv>termoelektromotorisk:termoelektromotorisk:termoelektromotoriskt:termoelektromotoriska:termoelektromotoriska::::
+964164r3<substantiv>termoelement:termoelement:termoelements:termoelementet:termoelementets:termoelement:termoelements:termoelementen:termoelementens
+584298r3<adjektiv>termofysisk:termofysisk:termofysiskt:termofysiska:termofysiska::::
+584301r3<adjektiv>termografisk:termografisk:termografiskt:termografiska:termografiska::::
+584304r3<adjektiv>termogravimetrisk:termogravimetrisk:termogravimetriskt:termogravimetriska:termogravimetriska::::
+584307r3<adjektiv>termohydrolytisk:termohydrolytisk:termohydrolytiskt:termohydrolytiska:termohydrolytiska::::
+570285r3<adjektiv>termohärdbar:termohärdbar:termohärdbart:termohärdbara:termohärdbara::::
+584310r3<adjektiv>termojonisk:termojonisk:termojoniskt:termojoniska:termojoniska::::
+987907r3<substantiv>termokemi:termokemi:termokemis:termokemin:termokemins::::
+584313r3<adjektiv>termokemisk:termokemisk:termokemiskt:termokemiska:termokemiska::::
+584316r3<adjektiv>termokinetisk:termokinetisk:termokinetiskt:termokinetiska:termokinetiska::::
+584319r3<adjektiv>termologisk:termologisk:termologiskt:termologiska:termologiska::::
+584322r3<adjektiv>termolytisk:termolytisk:termolytiskt:termolytiska:termolytiska::::
+584325r3<adjektiv>termomagnetisk:termomagnetisk:termomagnetiskt:termomagnetiska:termomagnetiska::::
+584328r3<adjektiv>termomekanisk:termomekanisk:termomekaniskt:termomekaniska:termomekaniska::::
+658648r5<substantiv>termometer:termometer:termometers:termometern:termometerns:termometrar:termometrars:termometrarna:termometrarnas
+584331r3<adjektiv>termometrisk:termometrisk:termometriskt:termometriska:termometriska::::
+987911r3<adjektiv>termonukleär:termonukleär:termonukleärt:termonukleära:termonukleära::::::::::::
+684306r3<substantiv>termoplast:termoplast:termoplasts:termoplasten:termoplastens:termoplaster:termoplasters:termoplasterna:termoplasternas
+584334r3<adjektiv>termoplastisk:termoplastisk:termoplastiskt:termoplastiska:termoplastiska::::
+744448r3<substantiv>termos:termos:termos:termosen:termosens:termosar:termosars:termosarna:termosarnas
+550659r4<substantiv>termostat:termostat:termostats:termostaten:termostatens:termostater:termostaters:termostaterna:termostaternas
+CUSTOM: y y termostat
+584337r3<adjektiv>termostatisk:termostatisk:termostatiskt:termostatiska:termostatiska::::
+795560r3<adjektiv>termostatkontrollerad:termostatkontrollerad:termostatkontrollerat:termostatkontrollerade:termostatkontrollerade:!:!:!:
+795563r3<adjektiv>termostatreglerad:termostatreglerad:termostatreglerat:termostatreglerade:termostatreglerade:!:!:!:
+744455r4<substantiv>termostatventil:termostatventil:termostatventils:termostatventilen:termostatventilens:termostatventiler:termostatventilers:termostatventilerna:termostatventilernas
+COMPOUND(550659, 550765): termostat + ventil
+798941r3<adjektiv>termotrop:termotrop:termotropt:termotropa:termotropa::::
+564319r3<adjektiv>terpenfri:terpenfri:terpenfritt:terpenfria:terpenfria::::
+748099r3<substantiv>terpentin:terpentin:terpentins:terpentinen, terpentinet:terpentinens, terpentinets:!:!:!:!
+577474r3<adjektiv>terpentinhaltig:terpentinhaltig:terpentinhaltigt:terpentinhaltiga:terpentinhaltiga::::
+905018r3<verb>terra:terra:terrade:terrat:terrar:terra:terras:terrades:terrats:terras:terrad:terrat:terrade:terrande:!
+CUSTOM: n n n
+748105r3<substantiv>terrakotta:terrakotta:terrakottas:terrakottan:terrakottans::::
+CUSTOM: y y terrakotta
+795566r3<adjektiv>terrakottafärgad:terrakottafärgad:terrakottafärgat:terrakottafärgade:terrakottafärgade:!:!:!:
+CUSTOM: y n
+803382r3<substantiv>terrarium:terrarium:terrariums:terrariet:terrariets:terrarier:terrariers:terrarierna:terrariernas
+550660r5<substantiv>terrass:terrass:terrass:terrassen:terrassens:terrasser:terrassers:terrasserna:terrassernas
+CUSTOM: y y terrass
+591314r4<verb>terrassera:terrassera:terrasserade:terrasserat:terrasserar:terrassera:terrasseras:terrasserades:terrasserats:terrasseras:terrasserad:terrasserat:terrasserade:terrasserande:
+987919r3<substantiv>terrassering:terrassering:terrasserings:terrasseringen:terrasseringens:terrasseringar:terrasseringars:terrasseringarna:terrasseringarnas
+795569r3<adjektiv>terrassformad:terrassformad:terrassformat:terrassformade:terrassformade:!:!:!:
+577477r3<adjektiv>terrassformig:terrassformig:terrassformigt:terrassformiga:terrassformiga::::
+721870r3<egennamn>Terrassgatan:Terrassgatan:Terrassgatans
+748109r3<substantiv>terrassodling::::::::
+COMPOUND(550660, 647226): terrass + odling
+584340r3<adjektiv>terrestrisk:terrestrisk:terrestriskt:terrestriska:terrestriska::::
+906559r3<substantiv>terrier:terrier:terriers:terriern:terrierns:terrier:terriers:terrierna:terriernas
+894972r4<substantiv>terrin:terrin:terrins:terrinen:terrinens:terriner:

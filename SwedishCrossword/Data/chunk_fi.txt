@@ -1,0 +1,538 @@
+ädret:regnovädrets:regnoväder:regnoväders:regnovädren:regnovädrens
+COMPOUND(552824, 648834): regn + oväder
+711867r4<substantiv>regnperiod:regnperiod:regnperiods:regnperioden:regnperiodens:regnperioder:regnperioders:regnperioderna:regnperiodernas
+COMPOUND(552824, 550187): regn + period
+778616r4<adjektiv>regnrik:regnrik:regnrikt:regnrika:regnrika:regnrikare:regnrikast:regnrikaste:!
+598738r3<substantiv>regnrock:regnrock:regnrocks:regnrocken:regnrockens:regnrockar:regnrockars:regnrockarna:regnrockarnas
+CUSTOM: y y regnrocks
+952652r4<substantiv>regnrusk:regnrusk:regnrusks:regnrusket:regnruskets::::
+COMPOUND(552824, 628642): regn + rusk
+794472r3<adjektiv>regnskadad:regnskadad:regnskadat:regnskadade:regnskadade:!:!:!:
+918053r4<substantiv>regnskog:regnskog:regnskogs:regnskogen:regnskogens:regnskogar:regnskogars:regnskogarna:regnskogarnas
+COMPOUND(552824, 551845): regn + skog
+CUSTOM: y y regnskogs
+934599r4<substantiv>regnskur:regnskur:regnskurs:regnskuren:regnskurens:regnskurar:regnskurars:regnskurarna:regnskurarnas
+COMPOUND(552824, 551852): regn + skur
+851942r3<substantiv>regnsky:regnsky:regnskys:regnskyn:regnskyns:regnskyar:regnskyars:regnskyarna:regnskyarnas
+794475r3<adjektiv>regnskyddad:regnskyddad:regnskyddat:regnskyddade:regnskyddade:!:!:!:
+937266r3<substantiv>regnställ:regnställ:regnställs:regnstället:regnställets:regnställ:regnställs:regnställen:regnställens
+567494r3<adjektiv>regntålig:regntålig:regntåligt:regntåliga:regntåliga::::
+846660r3<adjektiv>regntät:regntät:regntätt:regntäta:regntäta::::
+778620r5<substantiv>regnvatten:regnvatten:regnvattens:regnvattnet:regnvattnets::::
+COMPOUND(552824, 555162): regn + vatten
+CUSTOM: y y regnvatten
+778619r3<substantiv>regnvattentunna::::::::
+COMPOUND(778620, 668498): regnvatten + tunna
+893739r4<adjektiv>regnvåt:regnvåt:regnvått:regnvåta:regnvåta::::regnvåte::::::::
+COMPOUND(552824, 563245): regn + våt
+696101r5<substantiv>regnväder:regnväder:regnväders:regnvädret:regnvädrets:regnväder:regnväders:regnvädren:regnvädrens
+COMPOUND(552824, 620236): regn + väder
+CUSTOM: y y regnväders
+778621r4<substantiv>regnvädersdag:regnvädersdag:regnvädersdags:regnvädersdagen:regnvädersdagens:regnvädersdagar:regnvädersdagars:regnvädersdagarna:regnvädersdagarnas
+COMPOUND(696101, 551009): regnväder + dag
+587742r4<verb>regrediera:regrediera:regredierade:regredierat:regredierar:regrediera:::::regredierad:regredierat:regredierade:regredierande:
+603295r3<substantiv>regress:regress:regress:regressen:regressens:regresser:regressers:regresserna:regressernas
+621724r4<substantiv>regression:regression:regressions:regressionen:regressionens:regressioner:regressioners:regressionerna:regressionernas
+CUSTOM: y y regressions
+880045r3<substantiv>regressionslinje::::::::
+COMPOUND(621724, 611937): regression + linje
+798716r3<adjektiv>regressiv:regressiv:regressivt:regressiva:regressiva::::
+603302r3<substantiv>regressrätt:regressrätt:regressrätts:regressrätten:regressrättens:regressrätter:regressrätters:regressrätterna:regressrätternas
+918062r3<substantiv>regularisering:regularisering:regulariserings:regulariseringen:regulariseringens::::
+880046r3<substantiv>regularitet:regularitet:regularitets:regulariteten:regularitetens::::
+798719r3<adjektiv>regulativ:regulativ:regulativt:regulativa:regulativa::::
+633696r9<substantiv>regulator:regulator:regulators:regulatorn:regulatorns:regulatorer:regulatorers:regulatorerna:regulatorernas
+CUSTOM: y y regulator
+882806r3<adjektiv>regulatorisk:regulatorisk:regulatoriskt:regulatoriska:regulatoriska::::::::::::
+766136r3<substantiv>regulatorrör::::::::
+COMPOUND(633696, 552860): regulator + rör
+800176r3<adjektiv>regulatorstyrd:regulatorstyrd:regulatorstyrt:regulatorstyrda:regulatorstyrda::::
+640082r5<adjektiv>reguljär:reguljär:reguljärt:reguljära:reguljära::::reguljäre
+CUSTOM: y y reguljär
+778629r4<substantiv>reguljärflyg:reguljärflyg:reguljärflygs:reguljärflyget:reguljärflygets:reguljärflyg:reguljärflygs:reguljärflygen:reguljärflygens
+COMPOUND(640082, 561495): reguljär + flyg
+590793r4<verb>regummera:regummera:regummerade:regummerat:regummerar:regummera:regummeras:regummerades:regummerats:regummeras:regummerad:regummerat:regummerade:regummerande:
+597487r3<substantiv>regummering:regummering:regummerings:regummeringen:regummeringens:regummeringar:regummeringars:regummeringarna:regummeringarnas
+CUSTOM: y y regummerings
+949677r6<substantiv>rehab:rehab:rehabs:rehaben:rehabens::::
+CUSTOM: y n rebab
+547560r6<verb>rehabilitera:rehabilitera:rehabiliterade:rehabiliterat:rehabiliterar:rehabilitera:rehabiliteras:rehabiliterades:rehabiliterats:rehabiliteras:rehabiliterad:rehabiliterat:rehabiliterade:rehabiliterande:
+615575r3<substantiv>rehabiliterare:rehabiliterare:rehabiliterares:rehabiliteraren:rehabiliterarens:rehabiliterare:rehabiliterares:rehabiliterarna:rehabiliterarnas
+CUSTOM: y y rehabiliterar
+696106r9<substantiv>rehabilitering:rehabilitering:rehabiliterings:rehabiliteringen:rehabiliteringens:rehabiliteringar:rehabiliteringars:rehabiliteringarna:rehabiliteringarnas
+CUSTOM: y y rehabiliterings rehab
+550337r3<substantiv>rehabiliteringsaktör:rehabiliteringsaktör:rehabiliteringsaktörs:rehabiliteringsaktören:rehabiliteringsaktörens:rehabiliteringsaktörer:rehabiliteringsaktörers:rehabiliteringsaktörerna:rehabiliteringsaktörernas
+696107r4<substantiv>rehabiliteringsbehov:rehabiliteringsbehov:rehabiliteringsbehovs:rehabiliteringsbehovet:rehabiliteringsbehovets:rehabiliteringsbehov:rehabiliteringsbehovs:rehabiliteringsbehoven:rehabiliteringsbehovens
+COMPOUND(696106, 552230): rehabilitering + behov
+696122r4<substantiv>rehabiliteringsfråga:rehabiliteringsfråga:rehabiliteringsfrågas:rehabiliteringsfrågan:rehabiliteringsfrågans:rehabiliteringsfrågor:rehabiliteringsfrågors:rehabiliteringsfrågorna:rehabiliteringsfrågornas
+COMPOUND(696106, 594085): rehabilitering + fråga
+550339r3<substantiv>rehabiliteringsinsats:rehabiliteringsinsats:rehabiliteringsinsats:rehabiliteringsinsatsen:rehabiliteringsinsatsens:rehabiliteringsinsatser:rehabiliteringsinsatsers:rehabiliteringsinsatserna:rehabiliteringsinsatsernas
+550341r3<substantiv>rehabiliteringskarriär:rehabiliteringskarriär:rehabiliteringskarriärs:rehabiliteringskarriären:rehabiliteringskarriärens:rehabiliteringskarriärer:rehabiliteringskarriärers:rehabiliteringskarriärerna:rehabiliteringskarriärernas
+550344r3<substantiv>rehabiliteringsmetod:rehabiliteringsmetod:rehabiliteringsmetods:rehabiliteringsmetoden:rehabiliteringsmetodens:rehabiliteringsmetoder:rehabiliteringsmetoders:rehabiliteringsmetoderna:rehabiliteringsmetodernas
+550346r3<substantiv>rehabiliteringsprocess:rehabiliteringsprocess:rehabiliteringsprocess:rehabiliteringsprocessen:rehabiliteringsprocessens:rehabiliteringsprocesser:rehabiliteringsprocessers:rehabiliteringsprocesserna:rehabiliteringsprocessernas
+696125r4<substantiv>rehabiliteringsprogram:rehabiliteringsprogram:rehabiliteringsprograms:rehabiliteringsprogrammet:rehabiliteringsprogrammets:rehabiliteringsprogram:rehabiliteringsprograms:rehabiliteringsprogrammen:rehabiliteringsprogrammens
+COMPOUND(696106, 555118): rehabilitering + program
+550348r3<substantiv>rehabiliteringsresurs:rehabiliteringsresurs:rehabiliteringsresurs:rehabiliteringsresursen:rehabiliteringsresursens:rehabiliteringsresurser:rehabiliteringsresursers:rehabiliteringsresurserna:rehabiliteringsresursernas
+958007r4<substantiv>rehabiliteringsråd:rehabiliteringsråd:rehabiliteringsråds:rehabiliteringsrådet:rehabiliteringsrådets:rehabiliteringsråd:rehabiliteringsråds:rehabiliteringsråden:rehabiliteringsrådens
+COMPOUND(696106, 552853): rehabilitering + råd
+904035r4<substantiv>rehabiliteringstid:rehabiliteringstid:rehabiliteringstids:rehabiliteringstiden:rehabiliteringstidens:rehabiliteringstider:rehabiliteringstiders:rehabiliteringstiderna:rehabiliteringstidernas
+COMPOUND(696106, 550665): rehabilitering + tid
+550350r3<substantiv>rehabiliteringstyp:rehabiliteringstyp:rehabiliteringstyps:rehabiliteringstypen:rehabiliteringstypens:rehabiliteringstyper:rehabiliteringstypers:rehabiliteringstyperna:rehabiliteringstypernas
+696113r4<substantiv>rehabiliteringsåtgärd:rehabiliteringsåtgärd:rehabiliteringsåtgärds:rehabiliteringsåtgärden:rehabiliteringsåtgärdens:rehabiliteringsåtgärder:rehabiliteringsåtgärders:rehabiliteringsåtgärderna:rehabiliteringsåtgärdernas
+COMPOUND(696106, 550810): rehabilitering + åtgärd
+955942r4<substantiv>rehablots:rehablots:rehablots:rehablotsen:rehablotsens:rehablotsar:rehablotsars:rehablotsarna:rehablotsarnas
+COMPOUND(949677, 598534): rehab + lots
+973243r3<egennamn>Rehn:Rehn:Rehns
+590797r3<verb>reifiera:reifiera:reifierade:reifierat:reifierar:reifiera:::::::::
+847699r3<substantiv>reifikation:reifikation:reifikations:reifikationen:reifikationens:reifikationer:reifikationers:reifikationerna:reifikationernas
+756659r3<egennamn>Reine:Reine:Reines
+773706r3<egennamn>Reinfeldt:Reinfeldt:Reinfeldts
+CUSTOM: y n Reinfeldt
+971943r3<egennamn>Reinhold:Reinhold:Reinholds
+696126r3<substantiv>reinkarnation:reinkarnation:reinkarnations:reinkarnationen:reinkarnationens:reinkarnationer:reinkarnationers:reinkarnationerna:reinkarnationernas
+CUSTOM: y y reinkarnations
+587746r4<verb>reinkarnera:reinkarnera:reinkarnerade:reinkarnerat:reinkarnerar:reinkarnera:reinkarneras:reinkarnerades:reinkarnerats:reinkarneras:reinkarnerad:reinkarnerat:reinkarnerade:reinkarnerande:
+587750r4<verb>reinvestera:reinvestera:reinvesterade:reinvesterat:reinvesterar:reinvestera:reinvesteras:reinvesterades:reinvesterats:reinvesteras:reinvesterad:reinvesterat:reinvesterade:reinvesterande:
+880055r3<substantiv>reinvestering:reinvestering:reinvesterings:reinvesteringen:reinvesteringens:reinvesteringar:reinvesteringars:reinvesteringarna:reinvesteringarnas
+895077r3<substantiv>rejv:rejv:!:!:!:!:!:!:!
+CUSTOM: y n
+880064r3<substantiv>rejvare:rejvare:rejvares:rejvaren:rejvarens:rejvare:rejvares:rejvarna:rejvarnas
+880072r3<substantiv>rejvfest:rejvfest:rejvfests:rejvfesten:rejvfestens:rejvfester:rejvfesters:rejvfesterna:rejvfesternas
+626106r3<adjektiv>rejäl:rejäl:rejält:rejäla:rejäla:rejälare:rejälast:rejälaste:rejäle
+923556r3<substantiv>rek:rek:reks:reket:rekets:rek:reks:reken:rekens
+CUSTOM: n n y
+763302r3<verb>reka:reka:rekade:rekat:rekar:reka:::::::::
+946411r3<verb>rekapitalisera:rekapitalisera:rekapitaliserade:rekapitaliserat:rekapitaliserar:rekapitalisera:rekapitaliseras:rekapitaliserades:rekapitaliserats:rekapitaliseras:rekapitaliserad:rekapitaliserat:rekapitaliserade::
+847711r3<substantiv>rekapitulation:rekapitulation:rekapitulations:rekapitulationen:rekapitulationens:rekapitulationer:rekapitulationers:rekapitulationerna:rekapitulationernas
+547561r4<verb>rekapitulera:rekapitulera:rekapitulerade:rekapitulerat:rekapitulerar:rekapitulera:rekapituleras:rekapitulerades:rekapitulerats:rekapituleras:rekapitulerad:rekapitulerat:rekapitulerade:rekapitulerande:
+880081r3<substantiv>rekapitulering:rekapitulering:rekapitulerings:rekapituleringen:rekapituleringens:rekapituleringar:rekapituleringars:rekapituleringarna:rekapituleringarnas
+876711r10<substantiv>rekavi:rekavi:rekavis:rekavin:rekavins:rekavier:rekaviers:rekavierna:rekaviernas
+621732r10<substantiv>reklam:reklam:reklams:reklamen:reklamens:reklamer:reklamers:reklamerna:reklamernas
+CUSTOM: y y reklam
+702839r4<substantiv>reklamaffisch:reklamaffisch:reklamaffischs:reklamaffischen:reklamaffischens:reklamaffischer:reklamaffischers:reklamaffischerna:reklamaffischernas
+COMPOUND(621732, 548153): reklam + affisch
+880089r3<substantiv>reklamare:reklamare:reklamares:reklamaren:reklamarens:reklamare:reklamares:reklamarna:reklamarnas
+702847r4<substantiv>reklamation:reklamation:reklamations:reklamationen:reklamationens:reklamationer:reklamationers:reklamationerna:reklamationernas
+CUSTOM: y y reklamations +reklamations
+702855r4<substantiv>reklamationsärende:reklamationsärende:reklamationsärendes:reklamationsärendet:reklamationsärendets:reklamationsärenden:reklamationsärendens:reklamationsärendena:reklamationsärendenas
+COMPOUND(702847, 560759): reklamation + ärende
+902028r4<substantiv>reklamavbrott:reklamavbrott:reklamavbrotts:reklamavbrottet:reklamavbrottets:reklamavbrott:reklamavbrotts:reklamavbrotten:reklamavbrottens
+COMPOUND(621732, 552201): reklam + avbrott
+552826r3<substantiv>reklamblad:reklamblad:reklamblads:reklambladet:reklambladets:reklamblad:reklamblads:reklambladen:reklambladens
+621738r3<substantiv>reklambyrå:reklambyrå:reklambyrås:reklambyrån:reklambyråns:reklambyråer:reklambyråers:reklambyråerna:reklambyråernas
+587754r5<verb>reklamera:reklamera:reklamerade:reklamerat:reklamerar:reklamera:reklameras:reklamerades:reklamerats:reklameras:reklamerad:reklamerat:reklamerade:reklamerande:
+880095r3<substantiv>reklamering:reklamering:reklamerings:reklameringen:reklameringens:reklameringar:reklameringars:reklameringarna:reklameringarnas
+550352r4<substantiv>reklamfilm:reklamfilm:reklamfilms:reklamfilmen:reklamfilmens:reklamfilmer:reklamfilmers:reklamfilmerna:reklamfilmernas
+COMPOUND(621732, 548921): reklam + film
+794478r3<adjektiv>reklamfinansierad:reklamfinansierad:reklamfinansierat:reklamfinansierade:reklamfinansierade:!:!:!:
+961694r4<substantiv>reklamjingel:reklamjingel:reklamjingels:reklamjingeln:reklamjingelns:reklamjinglar:reklamjinglars:reklamjinglarna:reklamjinglarnas
+COMPOUND(621732, 961685): reklam + jingel
+550354r3<substantiv>reklamkampanj:reklamkampanj:reklamkampanjs:reklamkampanjen:reklamkampanjens:reklamkampanjer:reklamkampanjers:reklamkampanjerna:reklamkampanjernas
+732634r3<substantiv>reklammakare:reklammakare:reklammakares:reklammakaren:reklammakarens:reklammakare:reklammakares:reklammakarna:reklammakarnas
+891790r4<substantiv>reklampelare:reklampelare:reklampelares:reklampelaren:reklampelarens:reklampelare:reklampelares:reklampelarna:reklampelarnas
+COMPOUND(621732, 609240): reklam + pelare
+624691r3<adjektiv>reko:reko:reko:reko:reko:!:!:!:
+587758r4<verb>rekognoscera:rekognoscera:rekognoscerade:rekognoscerat:rekognoscerar:rekognoscera:rekognosceras:rekognoscerades:rekognoscerats:rekognosceras:rekognoscerad:rekognoscerat:rekognoscerade:rekognoscerande:
+778635r4<substantiv>rekognoscering:rekognoscering:rekognoscerings:rekognosceringen:rekognosceringens:rekognosceringar:rekognosceringars:rekognosceringarna:rekognosceringarnas
+CUSTOM: y y rekognoscerings
+778659r4<substantiv>rekognosceringstur:rekognosceringstur:rekognosceringsturs:rekognosceringsturen:rekognosceringsturens:rekognosceringsturer:rekognosceringsturers:rekognosceringsturerna:rekognosceringsturernas
+COMPOUND(778635, 550715): rekognoscering + tur
+587762r4<verb>rekognosera:rekognosera:rekognoserade:rekognoserat:rekognoserar:rekognosera:rekognoseras:rekognoserades:rekognoserats:rekognoseras:rekognoserad:rekognoserat:rekognoserade:rekognoserande:
+778643r4<substantiv>rekognosering:rekognosering:rekognoserings:rekognoseringen:rekognoseringens:rekognoseringar:rekognoseringars:rekognoseringarna:rekognoseringarnas
+CUSTOM: y y rekognoserings
+778651r4<substantiv>rekognoseringstur:rekognoseringstur:rekognoseringsturs:rekognoseringsturen:rekognoseringsturens:rekognoseringsturer:rekognoseringsturers:rekognoseringsturerna:rekognoseringsturernas
+COMPOUND(778643, 550715): rekognosering + tur
+570874r3<adjektiv>rekommendabel:rekommendabel:rekommendabelt:rekommendabla:rekommendabla::::
+669263r6<substantiv>rekommendation:rekommendation:rekommendations:rekommendationen:rekommendationens:rekommendationer:rekommendationers:rekommendationerna:rekommendationernas
+BASEWORDS: rekommendations
+CUSTOM: y y rekommendations
+669262r4<substantiv>rekommendationsavgift:rekommendationsavgift:rekommendationsavgifts:rekommendationsavgiften:rekommendationsavgiftens:rekommendationsavgifter:rekommendationsavgifters:rekommendationsavgifterna:rekommendationsavgifternas
+COMPOUND(669263, 548299): rekommendation + avgift
+547562r5<verb>rekommendera:rekommendera:rekommenderade:rekommenderat:rekommenderar:rekommendera:rekommenderas:rekommenderades:rekommenderats:rekommenderas:rekommenderad:rekommenderat:rekommenderade:rekommenderande:
+794481r3<adjektiv>rekommenderad:rekommenderad:rekommenderat:rekommenderade:rekommenderade:!:!:!:
+569978r3<adjektiv>rekommenderbar:rekommenderbar:rekommenderbart:rekommenderbara:rekommenderbara::::
+587766r3<verb>rekompensera:rekompensera:rekompenserade:rekompenserat:rekompenserar:rekompensera:::::::::
+587770r4<verb>rekonditionera:rekonditionera:rekonditionerade:rekonditionerat:rekonditionerar:rekonditionera:rekonditioneras:rekonditionerades:rekonditionerats:rekonditioneras:rekonditionerad:rekonditionerat:rekonditionerade:rekonditionerande:
+880108r3<substantiv>rekonditionering:rekonditionering:rekonditionerings:rekonditioneringen:rekonditioneringens:rekonditioneringar:rekonditioneringars:rekonditioneringarna:rekonditioneringarnas
+547563r5<verb>rekonstruera:rekonstruera:rekonstruerade:rekonstruerat:rekonstruerar:rekonstruera:rekonstrueras:rekonstruerades:rekonstruerats:rekonstrueras:rekonstruerad:rekonstruerat:rekonstruerade:rekonstruerande:
+880116r3<substantiv>rekonstruering:rekonstruering:rekonstruerings:rekonstrueringen:rekonstrueringens:rekonstrueringar:rekonstrueringars:rekonstrueringarna:rekonstrueringarnas
+696127r3<substantiv>rekonstruktion:rekonstruktion:rekonstruktions:rekonstruktionen:rekonstruktionens:rekonstruktioner:rekonstruktioners:rekonstruktionerna:rekonstruktionernas
+CUSTOM: y y rekonstruktions
+880125r3<substantiv>rekonstruktör:rekonstruktör:rekonstruktörs:rekonstruktören:rekonstruktörens:rekonstruktörer:rekonstruktörers:rekonstruktörerna:rekonstruktörernas
+847726r4<substantiv>rekonvalescens:rekonvalescens:rekonvalescens:rekonvalescensen:rekonvalescensens::::
+CUSTOM: y y rekonvalescens
+880134r4<substantiv>rekonvalescenstid:rekonvalescenstid:rekonvalescenstids:rekonvalescenstiden:rekonvalescenstidens:rekonvalescenstider:rekonvalescenstiders:rekonvalescenstiderna:rekonvalescenstidernas
+COMPOUND(847726, 550665): rekonvalescens + tid
+880142r3<substantiv>rekonvalescent:rekonvalescent:rekonvalescents:rekonvalescenten:rekonvalescentens:rekonvalescenter:rekonvalescenters:rekonvalescenterna:rekonvalescenternas
+552828r24<substantiv>rekord:rekord:rekords:rekordet:rekordets:rekord:rekords:rekorden:rekordens
+CUSTOM: y y rekord +rekord
+778667r3<adjektiv>rekordartad:rekordartad:rekordartat:rekordartade:rekordartade:!:!:!:
+567497r3<adjektiv>rekordbillig:rekordbillig:rekordbilligt:rekordbilliga:rekordbilliga::::
+936894r4<substantiv>rekordbok:rekordbok:rekordboks:rekordboken:rekordbokens:rekordböcker:rekordböckers:rekordböckerna:rekordböckernas
+COMPOUND(552828, 555346): rekord + bok
+959246r3<adverb>rekordbra:rekordbra
+952658r3<adjektiv>rekorddjup:rekorddjup:rekorddjupt:rekorddjupa:rekorddjupa::::::::::::
+823161r4<adjektiv>rekorddyr:rekorddyr:rekorddyrt:rekorddyra:rekorddyra::::rekorddyre
+COMPOUND(552828, 558305): rekord + dyr
+567500r4<adjektiv>rekorderlig:rekorderlig:rekorderligt:rekorderliga:rekorderliga:rekorderligare:rekorderligast:rekorderligaste:rekorderlige
+952663r4<substantiv>rekordgage:rekordgage:rekordgages:rekordgaget:rekordgagets:rekordgager:rekordgagers:rekordgagerna:rekordgagernas
+COMPOUND(552828, 557554): rekord + gage
+959249r4<adjektiv>rekordhet:rekordhet:rekordhett:rekordheta:rekordheta::::::::::::
+COMPOUND(552828, 558988): rekord + het
+880150r3<substantiv>rekordhållerska:rekordhållerska:rekordhållerskas:rekordhållerskan:rekordhållerskans:rekordhållerskor:rekordhållerskors:rekordhållerskorna:rekordhållerskornas
+798722r3<adjektiv>rekordhög:rekordhög:rekordhögt:rekordhöga:rekordhöga::::
+880158r3<adjektiv>rekordkall:rekordkall:rekordkallt:rekordkalla:rekordkalla::::
+959240r4<adjektiv>rekordliten:rekordliten:rekordlitet:rekordlilla:rekordsmå::::::::::::
+COMPOUND(552828, 555139): rekord + liten
+740904r4<adjektiv>rekordlåg:rekordlåg:rekordlågt:rekordlåga:rekordlåga:!:!:!:!
+COMPOUND(552828, 559338): rekord + låg
+798725r3<adjektiv>rekordlång:rekordlång:rekordlångt:rekordlånga:rekordlånga::::
+959254r4<adjektiv>rekordmild:rekordmild:rekordmilt:rekordmilda:rekordmilda::::::::::::
+COMPOUND(552828, 618781): rekord + mild
+959606r3<adverb>rekordmycket:rekordmycket
+860564r4<pronomen>rekordmånga:rekordmånga
+COMPOUND(552828, 636361): rekord + många
+575572r3<adjektiv>rekordmässig:rekordmässig:rekordmässigt:rekordmässiga:rekordmässiga::::
+821201r11<substantiv>rekordpris:rekordpris:rekordpris:rekordpriset:rekordprisets:rekordpriser:rekordprisers:rekordpriserna:rekordprisernas
+959259r4<substantiv>rekordras:rekordras:rekordras:rekordraset:rekordrasets:rekordras:rekordras:rekordrasen:rekordrasens
+COMPOUND(552828, 626097): rekord + ras
+959266r4<adjektiv>rekordrik:rekordrik:rekordrikt:rekordrika:rekordrika::::::::::::
+COMPOUND(552828, 563125): rekord + rik
+798728r3<adjektiv>rekordsnabb:rekordsnabb:rekordsnabbt:rekordsnabba:rekordsnabba::::
+768827r4<adjektiv>rekordstor:rekordstor:rekordstort:rekordstora:rekordstora:!:!:!:rekordstore
+COMPOUND(552828, 555172): rekord + stor
+696128r3<substantiv>rekordtid:rekordtid:rekordtids:rekordtiden:rekordtidens:rekordtider:rekordtiders:rekordtiderna:rekordtidernas
+575575r3<adjektiv>rekordtidig:rekordtidig:rekordtidigt:rekordtidiga:rekordtidiga::::
+778672r4<adjektiv>rekordung:rekordung:rekordungt:rekordunga:rekordunga:!:!:!:rekordunge
+COMPOUND(552828, 564700): rekord + ung
+740907r4<substantiv>rekordår:rekordår:rekordårs:rekordåret:rekordårets:rekordår:rekordårs:rekordåren:rekordårens
+COMPOUND(552828, 553140): rekord + år
+634659r4<substantiv>rekreation:rekreation:rekreations:rekreationen:rekreationens:rekreationer:rekreationers:rekreationerna:rekreationernas
+CUSTOM: y y rekreations
+696136r4<substantiv>rekreationsresa:rekreationsresa:rekreationsresas:rekreationsresan:rekreationsresans:rekreationsresor:rekreationsresors:rekreationsresorna:rekreationsresornas
+COMPOUND(634659, 594958): rekreation + resa
+587774r4<verb>rekreera:rekreera:rekreerade:rekreerat:rekreerar:rekreera:rekreeras:rekreerades:rekreerats:rekreeras:rekreerad:rekreerat:rekreerade:rekreerande:
+731074r3<substantiv>rekristallisation:rekristallisation:rekristallisations:rekristallisationen:rekristallisationens:rekristallisationer:rekristallisationers:rekristallisationerna:rekristallisationernas
+587778r3<verb>rekristallisera:rekristallisera:rekristalliserade:rekristalliserat:rekristalliserar:rekristallisera:::::::::
+550356r3<substantiv>rekryt:rekryt:rekryts:rekryten:rekrytens:rekryter:rekryters:rekryterna:rekryternas
+547564r5<verb>rekrytera:rekrytera:rekryterade:rekryterat:rekryterar:rekrytera:rekryteras:rekryterades:rekryterats:rekryteras:rekryterad:rekryterat:rekryterade:rekryterande:
+775264r3<substantiv>rekryterare:rekryterare:rekryterares:rekryteraren:rekryterarens:rekryterare:rekryterares:rekryterarna:rekryterarnas
+696141r4<substantiv>rekrytering:rekrytering:rekryterings:rekryteringen:rekryteringens:rekryteringar:rekryteringars:rekryteringarna:rekryteringarnas
+CUSTOM: y y rekryterings +rekryterings
+621740r3<substantiv>rektangel:rektangel:rektangels:rektangeln:rektangelns:rektanglar:rektanglars:rektanglarna:rektanglarnas
+575578r3<adjektiv>rektangelformig:rektangelformig:rektangelformigt:rektangelformiga:rektangelformiga::::
+663332r3<adjektiv>rektangulär:rektangulär:rektangulärt:rektangulära:rektangulära:!:!:!:rektanguläre
+590801r3<verb>rektificera:rektificera:rektificerade:rektificerat:rektificerar:rektificera:::::::::
+590805r4<verb>rektifiera:rektifiera:rektifierade:rektifierat:rektifierar:rektifiera:rektifieras:rektifierades:rektifierats:rektifieras:rektifierad:rektifierat:rektifierade:rektifierande:
+847739r3<substantiv>rektifikation:rektifikation:rektifikations:rektifikationen:rektifikationens:rektifikationer:rektifikationers:rektifikationerna:rektifikationernas
+963260r3<substantiv>rektion:rektion:rektions:rektionen:rektionens:rektioner:rektioners:rektionerna:rektionernas
+CUSTOM: n n y
+621742r5<substantiv>rektor:rektor:rektors:rektorn:rektorns:rektorer:rektorers:rektorerna:rektorernas
+CUSTOM: y y rektors
+778677r3<substantiv>rektorat:rektorat:rektorats:rektoratet:rektoratets:rektorat:rektorats:rektoraten:rektoratens
+740913r4<substantiv>rektorsexpedition:rektorsexpedition:rektorsexpeditions:rektorsexpeditionen:rektorsexpeditionens:rektorsexpeditioner:rektorsexpeditioners:rektorsexpeditionerna:rektorsexpeditionernas
+COMPOUND(621742, 601768): rektor + expedition
+880166r3<substantiv>rektoskop:rektoskop:rektoskops:rektoskopet:rektoskopets:rektoskop:rektoskops:rektoskopen:rektoskopens
+880172r3<substantiv>rektoskopi:rektoskopi:rektoskopis:rektoskopin:rektoskopins:rektoskopier:rektoskopiers:rektoskopierna:rektoskopiernas
+583404r3<adjektiv>rektoskopisk:rektoskopisk:rektoskopiskt:rektoskopiska:rektoskopiska::::
+798731r3<adjektiv>rekuperativ:rekuperativ:rekuperativt:rekuperativa:rekuperativa::::
+696146r3<substantiv>rekursion:rekursion:rekursions:rekursionen:rekursionens::::
+657710r3<substantiv>rekursionsformel:rekursionsformel:rekursionsformels:rekursionsformeln:rekursionsformelns:rekursionsformler:rekursionsformlers:rekursionsformlerna:rekursionsformlernas
+696148r3<adjektiv>rekursiv:rekursiv:rekursivt:rekursiva:rekursiva:!:!:!:!
+778683r3<substantiv>rekursivitet:rekursivitet:rekursivitets:rekursiviteten:rekursivitetens::::
+847747r3<substantiv>rekviem:rekviem:rekviems:rekviet:rekviets:rekvier:rekviers:rekvierna:rekviernas
+880180r3<substantiv>rekvirent:rekvirent:rekvirents:rekvirenten:rekvirentens:rekvirenter:rekvirenters:rekvirenterna:rekvirenternas
+547565r5<verb>rekvirera:rekvirera:rekvirerade:rekvirerat:rekvirerar:rekvirera:rekvireras:rekvirerades:rekvirerats:rekvireras:rekvirerad:rekvirerat:rekvirerade:rekvirerande:
+847755r3<substantiv>rekvisit:rekvisit:rekvisits:rekvisitet:rekvisitets:rekvisit:rekvisits:rekvisiten:rekvisitens
+696149r3<substantiv>rekvisita:rekvisita:rekvisitas:rekvisitan:rekvisitans:!:!:!:!
+638487r3<substantiv>rekvisition:rekvisition:rekvisitions:rekvisitionen:rekvisitionens:rekvisitioner:rekvisitioners:rekvisitionerna:rekvisitionernas
+CUSTOM: y y rekvisitions
+778687r3<substantiv>rekvisitör:rekvisitör:rekvisitörs:rekvisitören:rekvisitörens:rekvisitörer:rekvisitörers:rekvisitörerna:rekvisitörernas
+778695r3<substantiv>rekyl:rekyl:rekyls:rekylen:rekylens:rekyler:rekylers:rekylerna:rekylernas
+658121r3<substantiv>rekyleffekt:rekyleffekt:rekyleffekts:rekyleffekten:rekyleffektens:rekyleffekter:rekyleffekters:rekyleffekterna:rekyleffekternas
+587782r4<verb>rekylera:rekylera:rekylerade:rekylerat:rekylerar:rekylera:rekyleras:rekylerades:rekylerats:rekyleras::::rekylerande:
+880188r3<substantiv>rekylering:rekylering:rekylerings:rekyleringen:rekyleringens::::
+564093r3<adjektiv>rekylfri:rekylfri:rekylfritt:rekylfria:rekylfria::::
+547566r5<verb>relatera:relatera:relaterade:relaterat:relaterar:relatera:relateras:relaterades:relaterats:relateras:relaterad:relaterat:relaterade::
+696151r3<substantiv>relaterande:relaterande:relaterandes:relaterandet:relaterandets::::
+636702r6<substantiv>relation:relation:relations:relationen:relationens:relationer:relationers:relationerna:relationernas
+CUSTOM: y y relations +relations
+880194r3<adjektiv>relationell:relationell:relationellt:relationella:relationella::::
+761929r4<substantiv>relationstal:relationstal:relationstals:relationstalet:relationstalets:relationstal:relationstals:relationstalen:relationstalens
+COMPOUND(636702, 553029): relation + tal
+640121r7<adjektiv>relativ:relativ:relativt:relativa:relativa::::relative
+CUSTOM: y y
+788798r4<substantiv>relativbisats:relativbisats:relativbisats:relativbisatsen:relativbisatsens:relativbisatser:relativbisatsers:relativbisatserna:relativbisatsernas
+COMPOUND(640121, 548381): relativ + bisats
+587786r4<verb>relativisera:relativisera:relativiserade:relativiserat:relativiserar:relativisera:relativiseras:relativiserades:relativiserats:relativiseras:relativiserad:relativiserat:relativiserade:relativiserande:
+880204r3<substantiv>relativisering:relativisering:relativiserings:relativiseringen:relativiseringens:relativiseringar:relativiseringars:relativiseringarna:relativiseringarnas
+558167r3<substantiv>relativism:relativism:relativisms:relativismen:relativismens:!:!:!:!
+847766r3<substantiv>relativist:relativist:relativists:relativisten:relativistens:relativister:relativisters:relativisterna:relativisternas
+583407r4<adjektiv>relativistisk:relativistisk:relativistiskt:relativistiska:relativistiska::::relativistiske
+626999r4<substantiv>relativitet:relativitet:relativitets:relativiteten:relativitetens::::
+CUSTOM: y y relativitets
+626995r4<substantiv>relativitetsteori:relativitetsteori:relativitetsteoris:relativitetsteorin:relativitetsteorins:!:!:!:!
+COMPOUND(626999, 626693): relativitet + teori
+876887r3<substantiv>relativpris:relativpris:relativpris:relativpriset:relativprisets:relativpriser:relativprisers:relativpriserna:relativprisernas
+788816r4<substantiv>relativpronomen:relativpronomen:relativpronomens:relativpronomenet:relativpronomenets:relativpronomen, relativpronomina:relativpronomens, relativpronominas:relativpronomenen:relativpronomenens
+COMPOUND(640121, 695606): relativ + pronomen
+788806r4<substantiv>relativsats:relativsats:relativsats:relativsatsen:relativsatsens:relativsatser:relativsatsers:relativsatserna:relativsatsernas
+COMPOUND(640121, 550460): relativ + sats
+847774r3<verb>relaxa:relaxa:relaxade:relaxat:relaxar:relaxa:relaxas:relaxades:relaxats:relaxas:relaxad:relaxat:relaxade:relaxande:
+784879r3<substantiv>relaxation:relaxation:relaxations:relaxationen:relaxationens::::
+918068r3<substantiv>relaxavdelning:relaxavdelning:relaxavdelnings:relaxavdelningen:relaxavdelningens:relaxavdelningar:relaxavdelningars:relaxavdelningarna:relaxavdelningarnas
+590809r3<verb>relaxera:relaxera:relaxerade:relaxerat:relaxerar:relaxera:::::::::
+736583r7<substantiv>release:release:releases:releasen:releasens:releaser:releasers:releaserna:releasernas
+946187r4<substantiv>releasedatum:releasedatum:releasedatums:releasedatumet:releasedatumets:releasedatum:releasedatums:releasedatumen:releasedatumens
+COMPOUND(736583, 606925): release + datum
+946195r4<substantiv>releasefest:releasefest:releasefests:releasefesten:releasefestens:releasefester:releasefesters:releasefesterna:releasefesternas
+COMPOUND(736583, 548912): release + fest
+946205r4<substantiv>releasekandidat:releasekandidat:releasekandidats:releasekandidaten:releasekandidatens:releasekandidater:releasekandidaters:releasekandidaterna:releasekandidaternas
+COMPOUND(736583, 549427): release + kandidat
+946215r4<substantiv>releaseparty:releaseparty:releasepartys:releasepartyt:releasepartyts:releasepartyn:releasepartyns:releasepartyna:releasepartynas
+COMPOUND(736583, 625940): release + party
+557941r5<verb>relegera:relegera:relegerade:relegerat:relegerar:relegera:relegeras:relegerades:relegerats:relegeras:relegerad:relegerat:relegerade:relegerande:
+880412r3<substantiv>relegering:relegering:relegerings:relegeringen:relegeringens:relegeringar:relegeringars:relegeringarna:relegeringarnas
+696153r3<substantiv>relevans:relevans:relevans:relevansen:relevansens:!:!:!:!
+696154r3<adjektiv>relevant:relevant:relevant:relevanta:relevanta:relevantare:relevantast:relevantaste:
+732234r5<substantiv>relexation:relexation:relexations:relexationen:relexationens:relexationer:relexationers:relexationerna:relexationernas
+CUSTOM: y y relexations
+732232r4<substantiv>relexationsdata:!:!:!:!:relexationsdata:relexationsdatas::
+COMPOUND(732234, 555276): relexation + data
+570875r3<adjektiv>reliabel:reliabel:reliabelt:reliabla:reliabla::::
+640214r3<substantiv>reliabilitet:reliabilitet:reliabilitets:reliabiliteten:reliabilitetens:!:!:!:!
+550357r5<substantiv>relief:relief:reliefs:reliefen:reliefens:reliefer:reliefers:relieferna:reliefernas
+CUSTOM: y y relief
+778703r4<substantiv>reliefsöm:reliefsöm:reliefsöms:reliefsömmen:reliefsömmens:reliefsömmar:reliefsömmars:reliefsömmarna:reliefsömmarnas
+COMPOUND(550357, 627861): relief + söm
+550358r5<substantiv>religion:religion:religions:religionen:religionens:religioner:religioners:religionerna:religionernas
+CUSTOM: y y religions
+567503r3<adjektiv>religionsfientlig:religionsfientlig:religionsfientligt:religionsfientliga:religionsfientliga::::
+711106r3<substantiv>religionsfrihet:religionsfrihet:religionsfrihets:religionsfriheten:religionsfrihetens:religionsfriheter:religionsfriheters:religionsfriheterna:religionsfriheternas
+583408r3<adjektiv>religionshistorisk:religionshistorisk:religionshistoriskt:religionshistoriska:religionshistoriska::::
+740915r3<substantiv>religionskunskap::::::::
+COMPOUND(550358, 549811): religion + kunskap
+880421r3<substantiv>religionsvetare:religionsvetare:religionsvetares:religionsvetaren:religionsvetarens:religionsvetare:religionsvetares:religionsvetarna:religionsvetarnas
+567506r3<adjektiv>religionsvetenskaplig:religionsvetenskaplig:religionsvetenskapligt:religionsvetenskapliga:religionsvetenskapliga::::
+696155r3<substantiv>religiositet:religiositet:religiositets:religiositeten:religiositetens::::
+696157r4<adjektiv>religiös:religiös:religiöst:religiösa:religiösa:religiösare:religiösast:religiösaste:religiöse
+740916r4<substantiv>relik:relik:reliks:reliken:relikens:reliker:relikers:relikerna:relikernas
+CUSTOM: y y relik
+778711r3<substantiv>relikskrin::::::::
+COMPOUND(740916, 552930): relik + skrin
+957291r3<substantiv>relikt:relikt:relikts:relikten:reliktens:relikter:relikters:relikterna:relikternas
+CUSTOM: y n
+630778r4<substantiv>reling:reling:relings:relingen:relingens:relingar:relingars:relingarna:relingarnas
+587790r3<verb>relokera:relokera:relokerade:relokerat:relokerar:relokera:::::::::
+CUSTOM: y n n
+569981r3<adjektiv>relokerbar:relokerbar:relokerbart:relokerbara:relokerbara::::
+CUSTOM: y n n
+611591r6<substantiv>relä:relä:reläs:reläet:reläets:reläer:reläers:reläerna:reläernas
+CUSTOM: y n
+847787r3<verb>reläa:reläa:reläade:reläat:reläar:reläa:reläas:reläades:reläats:reläas:reläad:reläat:reläade:reläande:
+CUSTOM: y n
+778712r3<substantiv>reläskydd:reläskydd:reläskydds:reläskyddet:reläskyddets:reläskydd:reläskydds:reläskydden:reläskyddens
+600309r3<substantiv>reläsockel:reläsockel:reläsockels:reläsockeln:reläsockelns:reläsocklar:reläsocklars:reläsocklarna:reläsocklarnas
+880445r3<substantiv>reläspråk:reläspråk:reläspråks:reläspråket:reläspråkets:reläspråk:reläspråks:reläspråken:reläspråkens
+847796r3<substantiv>relästation:relästation:relästations:relästationen:relästationens:relästationer:relästationers:relästationerna:relästationernas
+880428r3<substantiv>reläsändare:reläsändare:reläsändares:reläsändaren:reläsändarens:reläsändare:reläsändares:reläsändarna:reläsändarnas
+880435r3<substantiv>relätolkning:relätolkning:relätolknings:relätolkningen:relätolkningens:relätolkningar:relätolkningars:relätolkningarna:relätolkningarnas
+621743r10<substantiv>rem:rem:rems:remmen:remmens:remmar:remmars:remmarna:remmarnas
+847804r3<substantiv>remanens:remanens:remanens:remanensen:remanensens::::
+564096r3<adjektiv>remanensfri:remanensfri:remanensfritt:remanensfria:remanensfria::::
+734319r3<adjektiv>remarkabel:remarkabel:remarkabelt:remarkabla:remarkabla::::remarkable
+603310r3<substantiv>remburs:remburs:remburs:rembursen:rembursens:remburser:rembursers:remburserna:rembursernas
+590817r3<verb>rembursera:rembursera:remburserade:remburserat:remburserar:rembursera:::::::::
+985180r3<substantiv>remdrift:remdrift:remdrifts:remdriften:remdriftens::::
+880452r3<adjektiv>remdriven:remdriven:remdrivet:remdrivna:remdrivna::::
+847807r3<substantiv>remedium:remedium:remediums:remediet:remediets:remedier:remediers:remedierna:remediernas
+649855r4<substantiv>remhjul:remhjul:remhjuls:remhjulet:remhjulets:remhjul:remhjuls:remhjulen:remhjulens
+CUSTOM: y n n
+737573r3<substantiv>remi:remi:remis:remin:remins:remier:remiers:remierna:remiernas
+CUSTOM: y n
+764723r3<substantiv>reminiscens:reminiscens:reminiscens:reminiscensen:reminiscensens:reminiscenser:reminiscensers:reminiscenserna:reminiscensernas
+880455r3<substantiv>remiparti:remiparti:remipartis:remipartiet:remipartiets:remipartier:remipartiers:remipartierna:remipartiernas
+590821r3<verb>remisera:remisera:remiserade:remiserat:remiserar:remisera:::::::::
+550360r4<substantiv>remiss:remiss:remiss:remissen:remissens:remisser:remissers:remisserna:remissernas
+CUSTOM: y y remiss
+594950r3<substantiv>remissa:remissa:remissas:remissan:remissans:remissor:remissors:remissorna:remissornas
+740925r3<verb>remissbehandla::::::::::::::
+COMPOUND(550360, 546221): remiss + behandla
+552829r3<substantiv>remissvar:remissvar:remissvars:remissvaret:remissvarets:remissvar:remissvars:remissvaren:remissvarens
+711349r3<substantiv>remissyttrande:remissyttrande:remissyttrandes:remissyttrandet:remissyttrandets:remissyttranden:remissyttrandens:remissyttrandena:remissyttrandenas
+603317r3<substantiv>remittent:remittent:remittents:remittenten:remittentens:remittenter:remittenters:remittenterna:remittenternas
+587794r5<verb>remittera:remittera:remitterade:remitterat:remitterar:remittera:remitteras:remitterades:remitterats:remitteras:remitterad:remitterat:remitterade:remitterande:
+696160r4<substantiv>remittering:remittering:remitterings:remitteringen:remitteringens:remitteringar:remitteringars:remitteringarna:remitteringarnas
+CUSTOM: y y remitterings
+880507r4<substantiv>remix:remix:remix:remixen:remixens:remixar, remixer:remixars, remixers:remixarna, remixerna:remixarnas, remixernas
+880519r3<substantiv>remmalag:remmalag:remmalags:remmalaget:remmalagets:remmalag:remmalags:remmalagen:remmalagens
+590825r3<verb>remodulera:remodulera:remodulerade:remodulerat:remodulerar:remodulera:::::::::
+847815r3<substantiv>remont:remont:remonts:remonten:remontens:remonter:remonters:remonterna:remonternas
+880525r3<substantiv>remontant:remontant:remontants:remontanten:remontantens:remontanter:remontanters:remontanterna:remontanternas
+590829r4<verb>remontera:remontera:remonterade:remonterat:remonterar:remontera:remonteras:remonterades:remonterats:remonteras:remonterad:remonterat:remonterade:remonterande:
+880533r3<substantiv>remontering:remontering:remonterings:remonteringen:remonteringens::::
+847828r3<substantiv>remouladsås:remouladsås:remouladsås:remouladsåsen:remouladsåsens:remouladsåser:remouladsåsers:remouladsåserna:remouladsåsernas
+590833r4<verb>remplacera:remplacera:remplacerade:remplacerat:remplacerar:remplacera:remplaceras:remplacerades:remplacerats:remplaceras:remplacerad:remplacerat:remplacerade:remplacerande:
+880537r3<substantiv>remplacering:remplacering:remplacerings:remplaceringen:remplaceringens:remplaceringar:remplaceringars:remplaceringarna:remplaceringarnas
+621747r4<substantiv>remsa:remsa:remsas:remsan:remsans:remsor:remsors:remsorna:remsornas
+880545r3<substantiv>remskiva:remskiva:remskivas:remskivan:remskivans:remskivor:remskivors:remskivorna:remskivornas
+615416r3<substantiv>remsläsare:remsläsare:remsläsares:remsläsaren:remsläsarens:remsläsare:remsläsares:remsläsarna:remsläsarnas
+CUSTOM: y y remsläsar
+880553r3<substantiv>remstycke:remstycke:remstyckes:remstycket:remstyckets:remstycken:remstyckens:remstyckena:remstyckenas
+880561r3<substantiv>remtransportör:remtransportör:remtransportörs:remtransportören:remtransportörens:remtransportörer:remtransportörers:remtransportörerna:remtransportörernas
+847840r3<substantiv>remtyg:remtyg:remtygs:remtyget:remtygets:remtyg:remtygs:remtygen:remtygens
+551795r16<substantiv>ren:ren:rens:renen:renens:renar:renars:renarna:renarnas
+CUSTOM: y n
+563124r20<adjektiv>ren:ren:rent:rena:rena:renare:renast:renaste:::::::::
+CUSTOM: y n ren
+547567r5<verb>rena:rena:renade:renat:renar:rena:renas:renades:renats:renas:renad:renat:renade:renande:
+761172r3<substantiv>renare:renare:renares:renaren:renarens:renare:renares:renarna:renarnas
+943271r3<egennamn>Renault:Renault:Renaults
+CUSTOM: y n Renault
+770912r5<substantiv>renbete:renbete:renbetes:renbetet:renbetets:renbeten:renbetens:renbetena:renbetenas
+COMPOUND(551795, 631543): ren + bete
+CUSTOM: y y renbetes
+770920r4<substantiv>renbetesland:renbetesland:renbeteslands:renbeteslandet:renbeteslandets:renbetesland:renbeteslands:renbeteslanden:renbeteslandens
+COMPOUND(770912, 556252): renbete + land
+893743r4<substantiv>renbog:renbog:renbogs:renbogen:renbogens:renbogar:renbogars:renbogarna:renbogarnas
+COMPOUND(551795, 550915): ren + bog
+800179r3<adjektiv>renbränd:renbränd:renbränt:renbrända:renbrända::::
+CUSTOM: y n n
+587795r4<verb>rendera:rendera:renderade:renderat:renderar:rendera:renderas:renderades:renderats:renderas:renderad:renderat:renderade:renderande:
+942712r3<substantiv>rendering:rendering:renderings:renderingen:renderingens:renderingar:renderingars:renderingarna:renderingarnas
+CUSTOM: y y renderings
+847851r3<substantiv>rendezvous:rendezvous:rendezvous:rendezvouset:rendezvousets:rendezvouser:rendezvousers:rendezvouserna:rendezvousernas
+847858r3<substantiv>renegat:renegat:renegats:renegaten:renegatens:renegater:renegaters:renegaterna:renegaternas
+932199r3<substantiv>renfana:renfana:renfanas:renfanan:renfanans:renfanor:renfanors:renfanorna:renfanornas
+882519r4<verb>renframställa:renframställa:renframställde:renframställt:renframställer:renframställ:renframställas:renframställdes:renframställts:renframställs, renframställes:renframställd:renframställt:renframställda:renframställande:
+COMPOUND(551795, 617679): ren + framställa
+932208r4<substantiv>renfäll:renfäll:renfälls:renfällen:renfällens:renfällar:renfällars:renfällarna:renfällarnas
+COMPOUND(551795, 551215): ren + fäll
+890511r10<substantiv>rengas:rengas:rengas:rengasen:rengasens:rengaser:rengasers:rengaserna:rengasernas
+DEFINITION 1: Renad (uppgraderad) gas i biogassammanhang.
+CUSTOM: n n n
+593320r4<verb>rengöra:rengöra:rengjorde:rengjort:rengör:rengör:rengöras:rengjordes:rengjorts:rengörs, rengöres:rengjord:rengjort:rengjorda::
+897682r3<substantiv>rengörare:rengörare:rengörares:rengöraren:rengörarens:rengörare:rengörares:rengörarna:rengörarnas
+696162r5<substantiv>rengöring:rengöring:rengörings:rengöringen:rengöringens:rengöringar:rengöringars:rengöringarna:rengöringarnas
+CUSTOM: y y rengörings +rengörings
+696161r4<substantiv>rengöringsmedel:rengöringsmedel:rengöringsmedels:rengöringsmedlet:rengöringsmedlets:rengöringsmedel:rengöringsmedels:rengöringsmedlen:rengöringsmedlens
+COMPOUND(696162, 560532): rengöring + medel
+611176r3<substantiv>rengöringsmedelsindustri:rengöringsmedelsindustri:rengöringsmedelsindustris:rengöringsmedelsindustrin:rengöringsmedelsindustrins:rengöringsmedelsindustrier:rengöringsmedelsindustriers:rengöringsmedelsindustrierna:rengöringsmedelsindustriernas
+CUSTOM: n n
+696167r4<substantiv>renhet:renhet:renhets:renheten:renhetens::::
+CUSTOM: y y renhets
+952672r4<substantiv>renhetsiver:renhetsiver:renhetsivers:renhetsivern:renhetsiverns:!:!:!:!
+COMPOUND(696167, 559578): renhet + iver
+598739r3<substantiv>renhjord:renhjord:renhjords:renhjorden:renhjordens:renhjordar:renhjordars:renhjordarna:renhjordarnas
+696168r3<adjektiv>renhjärtad:renhjärtad:renhjärtat:renhjärtade:renhjärtade:!:!:!:
+880570r3<substantiv>renhjärtenhet:renhjärtenhet:renhjärtenhets:renhjärtenheten:renhjärtenhetens::::
+932217r4<substantiv>renhorn:renhorn:renhorns:renhornet:renhornets:renhorn:renhorns:renhornen:renhornens
+COMPOUND(551795, 552473): ren + horn
+696169r3<substantiv>renhållning:renhållning:renhållnings:renhållningen:renhållningens::::
+CUSTOM: y y renhållnings
+575581r3<adjektiv>renhållningsskyldig:renhållningsskyldig:renhållningsskyldigt:renhållningsskyldiga:renhållningsskyldiga::::
+CUSTOM: n n
+575584r3<adjektiv>renhårig:renhårig:renhårigt:renhåriga:renhåriga::::
+880574r3<substantiv>renhårighet:renhårighet:renhårighets:renhårigheten:renhårighetens::::
+696170r6<substantiv>rening:rening:renings:reningen:reningens:reningar:reningars:reningarna:reningarnas
+CUSTOM: y y renings +renings
+552831r3<substantiv>reningsbad:reningsbad:reningsbads:reningsbadet:reningsbadets:reningsbad:reningsbads:reningsbaden:reningsbadens
+696171r5<substantiv>reningsverk:reningsverk:reningsverks:reningsverket:reningsverkets:reningsverk:reningsverks:reningsverken:reningsverkens
+COMPOUND(696170, 553117): rening + verk
+932223r4<substantiv>renkalv:renkalv:renkalvs:renkalven:renkalvens:renkalvar:renkalvars:renkalvarna:renkalvarnas
+COMPOUND(551795, 551497): ren + kalv
+735158r4<substantiv>renko:renko:renkos:renkon:renkons:renkor:renkors:renkorna:renkornas
+COMPOUND(551795, 557679): ren + ko
+CUSTOM: y n
+891352r8<substantiv>renkött:renkött:renkötts:renköttet:renköttets:!:!:!:!
+851950r3<substantiv>renlav:renlav:renlavs:renlaven:renlavens:renlavar:renlavars:renlavarna:renlavarnas
+847871r4<substantiv>renlevnad:renlevnad:renlevnads:renlevnaden:renlevnadens::::
+CUSTOM: y n renlevnads
+847870r4<substantiv>renlevnadsman:renlevnadsman:renlevnadsmans:renlevnadsmannen:renlevnadsmannens:renlevnadsmän:renlevnadsmäns:renlevnadsmännen:renlevnadsmännens
+COMPOUND(847871, 557796): renlevnad + man
+567509r4<adjektiv>renlig:renlig:renligt:renliga:renliga:renligare:renligast:renligaste:renlige
+764730r4<substantiv>renlighet:renlighet:renlighets:renligheten:renlighetens::::
+CUSTOM: y y renlighets
+778718r4<substantiv>renlighetsmani:renlighetsmani:renlighetsmanis:renlighetsmanin:renlighetsmanins:renlighetsmanier:renlighetsmaniers:renlighetsmanierna:renlighetsmaniernas
+COMPOUND(764730, 625698): renlighet + mani
+575587r3<adjektiv>renlinjig:renlinjig:renlinjigt:renlinjiga:renlinjiga::::
+923343r3<substantiv>renlosta:renlosta:renlostas:renlostan:renlostans:renlostor:renlostors:renlostorna:renlostornas
+575590r4<adjektiv>renlärig:renlärig:renlärigt:renläriga:renläriga:renlärigare:renlärigast:renlärigaste:renlärige
+696177r3<substantiv>renlärighet:renlärighet:renlärighets:renlärigheten:renlärighetens:!:!:!:!
+CUSTOM: y y renlärighets
+778726r5<substantiv>rennäring:rennäring:rennärings:rennäringen:rennäringens::::
+COMPOUND(551795, 597345): ren + näring
+CUSTOM: y y rennärings
+778727r3<substantiv>rennäringsdelegation::::::::
+COMPOUND(778726, 592959): rennäring + delegation
+547568r5<verb>renodla:renodla:renodlade:renodlat:renodlar:renodla:renodlas:renodlades:renodlats:renodlas:renodlad:renodlat:renodlade:renodlande:
+696179r3<substantiv>renommé:renommé:renommés:renommét, renomméet:renomméts, renomméets::::
+CUSTOM: y y renommé
+737759r3<adjektiv>renommerad:renommerad:renommerat:renommerade:renommerade:!:!:!:
+753614r3<adjektiv>renons:renons:renons:renons:renons:!:!:!:
+587799r3<verb>renonsera:renonsera:renonserade:renonserat:renonserar:renonsera:::::::::
+547569r5<verb>renovera:renovera:renoverade:renoverat:renoverar:renovera:renoveras:renoverades:renoverats:renoveras:renoverad:renoverat:renoverade:renoverande:
+721929r6<substantiv>renovering:renovering:renoverings:renoveringen:renoveringens:renoveringar:renoveringars:renoveringarna:renoveringarnas
+CUSTOM: y y renoverings
+778728r3<substantiv>renoveringsobjekt::::::::
+COMPOUND(721929, 621627): renovering + objekt
+769660r4<verb>renraka:renraka:renrakade:renrakat:renrakar:renraka:renrakas:renrakades:renrakats:renrakas:renrakad:renrakat:renrakade:renrakande:
+769657r3<adjektiv>renrakad:renrakad:renrakat:renrakade:renrakade:!:!:!:
+575591r3<adjektiv>renrasig:renrasig:renrasigt:renrasiga:renrasiga::::
+880578r3<substantiv>renrasighet:renrasighet:renrasighets:renrasigheten:renrasighetens::::
+880582r4<verb>renrita:renrita:renritade:renritat:renritar:renrita:renritas:renritades:renritats:renritas:renritad:renritat:renritade:renritande:
+COMPOUND(563124, 547591): ren + rita
+766836r4<substantiv>rens:rens:rens:renset:rensets::::
+CUSTOM: y n
+547570r6<verb>rensa:rensa:rensade:rensat:rensar:rensa:rensas:rensades:rensats:rensas:rensad:rensat:rensade:rensande:
+CUSTOM: y y
+658845r7<substantiv>rensare:rensare:rensares:rensaren:rensarens:rensare:rensares:rensarna:rensarnas
+CUSTOM: y y rensar +rensar
+569984r3<adjektiv>rensbar:rensbar:rensbart:rensbara:rensbara::::
+880591r3<substantiv>rensbrunn:rensbrunn:rensbrunns:rensbrunnen:rensbrunnens:rensbrunnar:rensbrunnars:rensbrunnarna:rensbrunnarnas
+847895r3<substantiv>renseri:renseri:renseris:renseriet:renseriets::::
+880599r3<substantiv>renshacka:renshacka:renshackas:renshackan:renshackans:renshackor:renshackors:renshackorna:renshackornas
+823143r3<adjektiv>renskalad:renskalad:renskalat:renskalade:renskalade:!:!:!:
+847899r3<substantiv>renskav:renskav:renskavs:renskavet:renskavets::::
+926158r4<substantiv>renskinn:renskinn:renskinns:renskinnet:renskinnets:renskinn:renskinns:renskinnen:renskinnens
+COMPOUND(551795, 607984): ren + skinn
+880607r3<substantiv>renskniv:renskniv:rensknivs:renskniven:rensknivens:rensknivar:rensknivars:rensknivarna:rensknivarnas
+696185r4<verb>renskriva:renskriva:renskrev:renskrivit:renskriver:renskriv:renskrivas:renskrevs:renskrivits:renskrivs, renskrives:renskriven:renskrivet:renskrivna::
+COMPOUND(563124, 556530): ren + skriva
+794482r3<adjektiv>renskrubbad:renskrubbad:renskrubbat:renskrubbade:renskrubbade:!:!:!:
+800182r3<adjektiv>rensköljd:rensköljd:rensköljt:rensköljda:rensköljda::::
+794485r3<adjektiv>renslickad:renslickad:renslickat:renslickade:renslickade:!:!:!:
+696189r5<substantiv>rensning:rensning:rensnings:rensningen:rensningens:rensningar:rensningars:rensningarna:rensningarnas
+CUSTOM: y y rensnings
+712292r4<substantiv>rensningsfel:rensningsfel:rensningsfels:rensningsfelet:rensningsfelets:rensningsfel:rensningsfels:rensningsfelen:rensningsfelens
+COMPOUND(696189, 552375): rensning + fel
+846663r4<substantiv>rensnål:rensnål:rensnåls:rensnålen:rensnålens:rensnålar:rensnålars:rensnålarna:rensnålarnas
+COMPOUND(547570, 551740): rensa + nål
+794488r3<adjektiv>rensopad:rensopad:rensopat:rensopade:rensopade:!:!:!:
+794491r3<adjektiv>renspolad:renspolad:renspolat:renspolade:renspolade:!:!:!:
+603325r3<substantiv>rensspiral:rensspiral:rensspirals:rensspiralen:rensspiralens:rensspiraler:rensspiralers:rensspiralerna:rensspiralernas
+932231r4<substantiv>renstek:renstek:rensteks:rensteken:renstekens:renstekar:renstekars:renstekarna:renstekarnas
+COMPOUND(551795, 551934): ren + stek
+620735r3<adverb>rentav:rentav
+847903r3<substantiv>rentier:rentier:rentiers:rentieren:rentierens:rentierer:rentierers:rentiererna:rentierernas
+932239r4<substantiv>rentjur:rentjur:rentjurs:rentjuren:rentjurens:rentjurar:rentjurars:rentjurarna:rentjurarnas
+COMPOUND(551795, 552013): ren + tjur
+859862r3<verb>rentorka:rentorka:rentorkade:rentorkat:rentorkar:rentorka:rentorkas:rentorkades:rentorkats:rentorkas:rentorkad:rentorkat:rentorkade:rentorkande:
+620736r3<adverb>rentutav:rentutav
+696194r5<verb>rentvå:rentvå:rentvådde:rentvått:rentvår:rentvå:rentvås:rentvåddes:rentvåtts:rentvås:rentvådd:rentvått:rentvådda:rentvående:
+COMPOUND(563124, 585888): ren + två
+696195r4<verb>rentvätta:rentvätta:rentvättade:rentvättat:rentvättar:rentvätta:rentvättas:rentvättades:rentvättats:rentvättas:rentvättad:rentvättat:rentvättade::
+COMPOUND(563124, 547891): ren + tvätta
+762243r3<egennamn>Renualt:Renualt:Renualts
+CUSTOM: y n Renualt
+590837r3<verb>renuntiera:renuntiera:renuntierade:renuntierat:renuntierar:renuntiera:::::::::
+971419r4<substantiv>renägare:renägare:renägares:renägaren:renägarens:renägare:renägares:renägarna:renägarnas
+COMPOUND(551795, 615532): ren + ägare
+550361r4<substantiv>renässans:renässans:renässans:renässansen:renässansens:renässanser:renässansers:renässanserna:renässansernas
+CUSTOM: y y renässans
+696200r4<substantiv>renässansmänniska:renässansmänniska:renässansmänniskas:renässansmänniskan:renässansmänniskans:renässansmänniskor:renässansmänniskors:renässansmänniskorna:renässansmänniskornas
+COMPOUND(550361, 555190): renässans + människa
+CUSTOM: n n y
+550363r3<substantiv>renässanspoet:renässanspoet:renässanspoets:renässanspoeten:renässanspoetens:renässanspoeter:renässanspoeters:renässanspoeterna:renässanspoeternas
+CUSTOM: n n y
+550365r3<substantiv>renässanstid:renässanstid:renässanstids:renässanstiden

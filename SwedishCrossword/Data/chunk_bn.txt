@@ -1,0 +1,607 @@
+t:esoteriska:esoteriska::::esoteriske
+976942r3<substantiv>espadrill:espadrill:espadrills:espadrillen:espadrillens:espadriller:espadrillers:espadrillerna:espadrillernas
+976950r4<substantiv>esparto:esparto:espartos:esparton:espartons::::
+CUSTOM: y n
+976954r4<substantiv>espartogräs:espartogräs:espartogräs:espartogräset:espartogräsets:espartogräs:espartogräs:espartogräsen:espartogräsens
+COMPOUND(976950, 552453): esparto + gräs
+871076r3<substantiv>esperantist:esperantist:esperantists:esperantisten:esperantistens:esperantister:esperantisters:esperantisterna:esperantisternas
+555546r4<egennamn>esperanto:esperanto:esperantos
+DEFINITION 1: En slags konstruerat språk.
+CUSTOM: y y esperanto
+754082r3<substantiv>esplanad:esplanad:esplanads:esplanaden:esplanadens:esplanader:esplanaders:esplanaderna:esplanadernas
+689610r4<substantiv>espresso:espresso:espressos:espresson:espressons::::
+CUSTOM: y y espresso
+950994r4<substantiv>espressoböna:espressoböna:espressobönas:espressobönan:espressobönans:espressobönor:espressobönors:espressobönorna:espressobönornas
+COMPOUND(689610, 593881): espresso + böna
+871084r3<substantiv>espri:espri:espris:esprin:esprins:esprier:espriers:esprierna:espriernas
+660092r4<substantiv>ess:ess:ess:esset:essets:ess:ess:essen:essens
+548803r4<substantiv>essay:essay:essays:essayen:essayens:essayer:essayers:essayerna:essayernas
+871092r3<substantiv>essayist:essayist:essayists:essayisten:essayistens:essayister:essayisters:essayisterna:essayisternas
+871100r3<substantiv>essayistik:essayistik:essayistiks:essayistiken:essayistikens::::
+579841r4<adjektiv>essayistisk:essayistisk:essayistiskt:essayistiska:essayistiska::::essayistiske
+976968r4<substantiv>essaysamling:essaysamling:essaysamlings:essaysamlingen:essaysamlingens:essaysamlingar:essaysamlingars:essaysamlingarna:essaysamlingarnas
+COMPOUND(548803, 597545): essay + samling
+629372r3<substantiv>esse:esse:::::::
+553204r3<egennamn>Esselte:Esselte:Esseltes
+548805r3<substantiv>essens:essens:essens:essensen:essensens:essenser:essensers:essenserna:essensernas
+689612r3<adjektiv>essentiell:essentiell:essentiellt:essentiella:essentiella::::
+874179r3<egennamn>Essingeleden:Essingeleden:Essingeledens
+CUSTOM: y n Essingeleds
+976959r3<substantiv>esskornett:esskornett:esskornetts:esskornetten:esskornettens:esskornetter:esskornetters:esskornetterna:esskornetternas
+953808r3<substantiv>ess-moll:ess-moll:ess-molls::::::
+CUSTOM: y n ess-moll
+728092r3<egennamn>Essunga:Essunga:Essungas
+622420r4<substantiv>essä:essä:essäs:essän:essäns:essäer:essäers:essäerna:essäernas
+CUSTOM: y y essä
+754090r3<substantiv>essäist:essäist:essäists:essäisten:essäistens:essäister:essäisters:essäisterna:essäisternas
+948488r3<substantiv>essäistik:essäistik:essäistiks:essäistiken:essäistikens::::
+579844r4<adjektiv>essäistisk:essäistisk:essäistiskt:essäistiska:essäistiska::::essäistiske
+754098r4<substantiv>essäsamling:essäsamling:essäsamlings:essäsamlingen:essäsamlingens:essäsamlingar:essäsamlingars:essäsamlingarna:essäsamlingarnas
+COMPOUND(622420, 597545): essä + samling
+558440r4<substantiv>est:est:ests:esten:estens:ester:esters:esterna:esternas
+DEFINITION 1: Person från Estland
+636689r6<substantiv>ester:ester:esters:estern:esterns:estrar:estrars:estrarna:estrarnas
+CUSTOM: y n
+553692r3<egennamn>Ester:Ester:Esters
+589192r3<verb>esterifiera:esterifiera:esterifierade:esterifierat:esterifierar:esterifiera:::::::::
+976977r3<substantiv>esterplast:esterplast:esterplasts:esterplasten:esterplastens:esterplaster:esterplasters:esterplasterna:esterplasternas
+649130r3<substantiv>estet:estet:estets:esteten:estetens:esteter:esteters:esteterna:esteternas
+871106r3<substantiv>esteticism:esteticism:esteticisms:esteticismen:esteticismens::::
+548806r8<substantiv>estetik:estetik:estetiks:estetiken:estetikens:!:!:!:!
+616836r3<substantiv>estetiker:estetiker:estetikers:estetikern:estetikerns:estetiker:estetikers:estetikerna:estetikernas
+586560r4<verb>estetisera:estetisera:estetiserade:estetiserat:estetiserar:estetisera:estetiseras:estetiserades:estetiserats:estetiseras:estetiserad:estetiserat:estetiserade:estetiserande:
+754106r3<adjektiv>estetiserande:estetiserande:estetiserande:estetiserande:estetiserande:!:!:!:
+907228r3<substantiv>estetisering:estetisering:estetiserings:estetiseringen:estetiseringens::::
+579847r4<adjektiv>estetisk:estetisk:estetiskt:estetiska:estetiska::::estetiske
+586564r4<verb>estimera:estimera:estimerade:estimerat:estimerar:estimera:estimeras:estimerades:estimerats:estimeras:estimerad:estimerat:estimerade:estimerande:
+554013r3<egennamn>Estland:Estland:Estlands
+CUSTOM: y n Estlands
+976986r3<adjektiv>estlandssvensk:estlandssvensk:estlandssvenskt:estlandssvenska:estlandssvenska:!:!:!:estlandssvenske::::::::
+622686r3<substantiv>estländare:estländare:estländares:estländaren:estländarens:estländare:estländares:estländarna:estländarnas
+CUSTOM: y y estländar
+754115r3<adjektiv>estländsk:estländsk:estländskt:estländska:estländska:!:!:!:estländske
+754107r3<substantiv>estländska:estländska:estländskas:estländskan:estländskans:estländskor:estländskors:estländskorna:estländskornas
+568739r4<adjektiv>estnisk:estnisk:estniskt:estniska:estniska:!:!:!:estniske
+593968r3<substantiv>estniska:estniska:estniskas:estniskan:estniskans:estniskor:estniskors:estniskorna:estniskornas
+734823r3<egennamn>Estonia:Estonia:Estonias
+CUSTOM: y n Estonia
+548808r4<substantiv>estrad:estrad:estrads:estraden:estradens:estrader:estraders:estraderna:estradernas
+CUSTOM: y y estrad
+871120r4<substantiv>estradartist:estradartist:estradartists:estradartisten:estradartistens:estradartister:estradartisters:estradartisterna:estradartisternas
+COMPOUND(548808, 605396): estrad + artist
+737331r3<substantiv>estradör:estradör:estradörs:estradören:estradörens:estradörer:estradörers:estradörerna:estradörernas
+632644r3<substantiv>e-sträng:e-sträng:e-strängs:e-strängen:e-strängens:e-strängar:e-strängars:e-strängarna:e-strängarnas
+CUSTOM: n n
+926828r4<konjunktion>et:et
+DEFINITION 1: och
+CUSTOM: n n y
+662171r4<substantiv>eta:eta:etas:etat:etats::::
+DEFINITION 1: Sjunde bokstaven i grekiska alfabetet.
+CUSTOM: n n
+546491r4<verb>etablera:etablera:etablerade:etablerat:etablerar:etablera:etableras:etablerades:etablerats:etableras:etablerad:etablerat:etablerade::
+640193r4<adjektiv>etablerad:etablerad:etablerat:etablerade:etablerade:!:!:!:
+689614r3<substantiv>etablerande:etablerande:etablerandes:etablerandet:etablerandets::::
+689616r7<substantiv>etablering:etablering:etablerings:etableringen:etableringens:etableringar:etableringars:etableringarna:etableringarnas
+CUSTOM: y y etablerings +etablerings
+719714r4<substantiv>etableringshinder:etableringshinder:etableringshinders:etableringshindret:etableringshindrets:etableringshinder:etableringshinders:etableringshindren:etableringshindrens
+COMPOUND(689616, 618178): etablering + hinder
+913772r4<substantiv>etableringsort:etableringsort:etableringsorts:etableringsorten:etableringsortens:etableringsorter:etableringsorters:etableringsorterna:etableringsorternas
+COMPOUND(689616, 550141): etablering + ort
+720916r4<substantiv>etableringsskicklighet:etableringsskicklighet:etableringsskicklighets:etableringsskickligheten:etableringsskicklighetens::::
+COMPOUND(689616, 619557): etablering + skicklighet
+552360r3<substantiv>etablissemang:etablissemang:etablissemangs:etablissemanget:etablissemangets:etablissemang:etablissemangs:etablissemangen:etablissemangens
+689617r4<substantiv>etage:etage:etages:etagen:etagens:etager:etagers:etagerna:etagernas
+CUSTOM: y n
+913782r4<substantiv>etagelägenhet:etagelägenhet:etagelägenhets:etagelägenheten:etagelägenhetens:etagelägenheter:etagelägenheters:etagelägenheterna:etagelägenheternas
+COMPOUND(689617, 549971): etage + lägenhet
+871128r3<substantiv>etagevåning:etagevåning:etagevånings:etagevåningen:etagevåningens:etagevåningar:etagevåningars:etagevåningarna:etagevåningarnas
+548809r3<substantiv>etagär:etagär:etagärs:etagären:etagärens:etagärer:etagärers:etagärerna:etagärernas
+734780r3<substantiv>etan:etan:etans:etanet:etanets:etan:etans:etanen:etanens
+CUSTOM: n n
+689619r5<substantiv>etanol:etanol:etanols:etanolen:etanolens::::
+CUSTOM: y y etanol
+754127r3<substantiv>etanolbuss::::::::
+COMPOUND(689619, 550982): etanol + buss
+921472r4<substantiv>etanolmack:etanolmack:etanolmacks:etanolmacken:etanolmackens:etanolmackar:etanolmackars:etanolmackarna:etanolmackarnas
+COMPOUND(689619, 598542): etanol + mack
+548810r5<substantiv>etapp:etapp:etapps:etappen:etappens:etapper:etappers:etapperna:etappernas
+CUSTOM: y y etapp
+754128r4<substantiv>etappmål:etappmål:etappmåls:etappmålet:etappmålets:etappmål:etappmåls:etappmålen:etappmålens
+COMPOUND(548810, 552705): etapp + mål
+620527r3<adverb>etappvis:etappvis
+558427r3<substantiv>etatism:etatism:etatisms:etatismen:etatismens:!:!:!:!
+CUSTOM: n n
+620528r3<adverb>etcetera:etcetera
+648989r3<substantiv>eten:eten:etens:etenet:etenets::::
+CUSTOM: y n
+625285r4<substantiv>eter:eter:eters:etern:eterns:!:!:!:!
+CUSTOM: y y eter
+845619r3<adjektiv>eterburen:eterburen:eterburet:eterburna:eterburna::::
+579848r4<adjektiv>eterisk:eterisk:eteriskt:eteriska:eteriska::::eteriske::::::::
+CUSTOM: y n
+689621r4<substantiv>etermedium:etermedium:etermediums:etermediet:etermediets:etermedier, etermedia:etermediers, etermedias:etermedierna, etermedia:etermediernas, etermedias
+COMPOUND(625285, 621171): eter + medium
+754134r3<substantiv>eternell:eternell:eternells:eternellen:eternellens:eterneller:eternellers:eternellerna:eternellernas
+849622r4<substantiv>eternit:eternit:eternits:eterniten:eternitens::::
+CUSTOM: y n eternit
+913791r4<substantiv>eternitplatta:eternitplatta:eternitplattas:eternitplattan:eternitplattans:eternitplattor:eternitplattors:eternitplattorna:eternitplattornas
+COMPOUND(849622, 632785): eternit + platta
+548812r9<substantiv>etik:etik:etiks:etiken:etikens::::
+CUSTOM: y y etik
+616837r3<substantiv>etiker:etiker:etikers:etikern:etikerns:etiker:etikers:etikerna:etikernas
+548814r5<substantiv>etikett:etikett:etiketts:etiketten:etikettens:etiketter:etiketters:etiketterna:etiketternas
+CUSTOM: y y etikett etiketts
+589196r5<verb>etikettera:etikettera:etiketterade:etiketterat:etiketterar:etikettera:etiketteras:etiketterades:etiketterats:etiketteras:etiketterad:etiketterat:etiketterade:etiketterande:
+763751r4<substantiv>etikettering:etikettering:etiketterings:etiketteringen:etiketteringens:etiketteringar:etiketteringars:etiketteringarna:etiketteringarnas
+CUSTOM: y y etiketterings
+763759r3<substantiv>etiketteringsmaskin::::::::
+COMPOUND(763751, 550005): etikettering + maskin
+763760r3<substantiv>etikettlim::::::::
+COMPOUND(548814, 560077): etikett + lim
+872766r4<substantiv>etikfråga:etikfråga:etikfrågas:etikfrågan:etikfrågans:etikfrågor:etikfrågors:etikfrågorna:etikfrågornas
+COMPOUND(548812, 594085): etik + fråga
+689625r3<substantiv>etiologi:etiologi:etiologis:etiologin:etiologins::::
+579849r3<adjektiv>etiologisk:etiologisk:etiologiskt:etiologiska:etiologiska::::
+554014r3<egennamn>Etiopien:Etiopien:Etiopiens
+CUSTOM: y n Etiopien
+689627r3<substantiv>etiopier:etiopier:etiopiers:etiopiern:etiopierns:etiopier:etiopiers:etiopierna:etiopiernas
+579852r4<adjektiv>etiopisk:etiopisk:etiopiskt:etiopiska:etiopiska::::etiopiske
+871138r3<substantiv>etiopiska:etiopiska:etiopiskas:etiopiskan:etiopiskans:etiopiskor:etiopiskors:etiopiskorna:etiopiskornas
+579853r23<adjektiv>etisk:etisk:etiskt:etiska:etiska::::etiske::::::::
+CUSTOM: y n
+701550r3<substantiv>etnicitet:etnicitet:etnicitets:etniciteten:etnicitetens:etniciteter:etniciteters:etniciteterna:etniciteternas
+579854r4<adjektiv>etnisk:etnisk:etniskt:etniska:etniska::::etniske
+579855r3<adjektiv>etnocentrisk:etnocentrisk:etnocentriskt:etnocentriska:etnocentriska::::
+558094r3<substantiv>etnocentrism:etnocentrism:etnocentrisms:etnocentrismen:etnocentrismens:!:!:!:!
+871148r3<substantiv>etnograf:etnograf:etnografs:etnografen:etnografens:etnografer:etnografers:etnograferna:etnografernas
+629428r5<substantiv>etnografi:etnografi:etnografis:etnografien, etnografin:etnografiens, etnografins::::
+579858r3<adjektiv>etnografisk:etnografisk:etnografiskt:etnografiska:etnografiska::::
+922850r3<substantiv>etnokrati:etnokrati:etnokratis:etnokratin:etnokratins:etnokratier:etnokratiers:etnokratierna:etnokratiernas
+922845r3<adjektiv>etnokratisk:etnokratisk:etnokratiskt:etnokratiska:etnokratiska::::::::::::
+689628r3<substantiv>etnolog:etnolog:etnologs:etnologen:etnologens:etnologer:etnologers:etnologerna:etnologernas
+689631r3<substantiv>etnologi:etnologi:etnologis:etnologin:etnologins::::
+579861r3<adjektiv>etnologisk:etnologisk:etnologiskt:etnologiska:etnologiska::::
+976992r3<substantiv>etnomusik:etnomusik:etnomusiks:etnomusiken:etnomusikens::::
+961111r3<substantiv>etolog:etolog:etologs:etologen:etologens:etologer:etologers:etologerna:etologernas
+CUSTOM: y n
+976997r3<substantiv>etologi:etologi:etologis:etologin:etologins::::
+CUSTOM: y n
+579864r3<adjektiv>etologisk:etologisk:etologiskt:etologiska:etologiska::::
+CUSTOM: y n
+631460r3<substantiv>etos:etos:etos:etoset:etosets::::
+CUSTOM: y n
+961120r3<substantiv>etrusker:::::etrusker:etruskers:etruskerna:etruskernas
+CUSTOM: y n
+579867r4<adjektiv>etruskisk:etruskisk:etruskiskt:etruskiska:etruskiska::::etruskiske::::::::
+CUSTOM: y n
+977002r3<substantiv>etruskiska:etruskiska:etruskiskas:etruskiskan:etruskiskans:etruskiskor:etruskiskors:etruskiskorna:etruskiskornas
+546492r7<verb>etsa:etsa:etsade:etsat:etsar:etsa:etsas:etsades:etsats:etsas:etsad:etsat:etsade:etsande:
+977010r4<substantiv>etsare:etsare:etsares:etsaren:etsarens:etsare:etsares:etsarna:etsarnas
+CUSTOM: y n
+569028r3<adjektiv>etsbar:etsbar:etsbart:etsbara:etsbara::::
+CUSTOM: n n n
+977016r4<substantiv>etsgrund:etsgrund:etsgrunds:etsgrunden:etsgrundens:etsgrunder:etsgrunders:etsgrunderna:etsgrundernas
+COMPOUND(546492, 556511): etsa + grund
+871157r3<substantiv>etsmedel:etsmedel:etsmedels:etsmedlet:etsmedlets:etsmedel:etsmedels:etsmedlen:etsmedlens
+689633r3<substantiv>etsning:etsning:etsnings:etsningen:etsningens:etsningar:etsningars:etsningarna:etsningarnas
+CUSTOM: y y etsnings
+977024r4<substantiv>etsnål:etsnål:etsnåls:etsnålen:etsnålens:etsnålar:etsnålars:etsnålarna:etsnålarnas
+COMPOUND(546492, 551740): etsa + nål
+CUSTOM: y n
+977032r3<substantiv>etsvätska:etsvätska:etsvätskas:etsvätskan:etsvätskans:etsvätskor:etsvätskors:etsvätskorna:etsvätskornas
+555522r4<räkneord>ett:ett
+DEFINITION 1: Det minsta positiva heltalet.
+557723r6<substantiv>etta:etta:ettas:ettan:ettans:ettor:ettors:ettorna:ettornas
+DEFINITION 1: Siffran ett (1)
+DEFINITION 2: Lägenhet bestående av ett rum
+977040r3<substantiv>ettbarnsfamilj:ettbarnsfamilj:ettbarnsfamiljs:ettbarnsfamiljen:ettbarnsfamiljens:ettbarnsfamiljer:ettbarnsfamiljers:ettbarnsfamiljerna:ettbarnsfamiljernas
+913800r3<substantiv>ettbarnspolitik:ettbarnspolitik:ettbarnspolitiks:ettbarnspolitiken:ettbarnspolitikens::::
+620468r3<pronomen>ettdera:ettdera
+913497r3<substantiv>et-tecken:et-tecken:et-teckens:et-tecknet:et-tecknets:et-tecken:et-teckens:et-tecknen:et-tecknens
+620529r3<adverb>etter:etter
+871163r3<substantiv>ettermyra:ettermyra:ettermyras:ettermyran:ettermyrans:ettermyror:ettermyrors:ettermyrorna:ettermyrornas
+977048r3<substantiv>etternässla:etternässla:etternässlas:etternässlan:etternässlans:etternässlor:etternässlors:etternässlorna:etternässlornas
+961125r3<substantiv>ettgreppsblandare:ettgreppsblandare:ettgreppsblandares:ettgreppsblandaren:ettgreppsblandarens:ettgreppsblandare:ettgreppsblandares:ettgreppsblandarna:ettgreppsblandarnas
+649756r3<räkneord>etthundra:etthundra
+926526r7<räkneord>etthundrade:etthundrade
+741700r3<substantiv>ettiden:::ettiden:::::
+572126r4<adjektiv>ettrig:ettrig:ettrigt:ettriga:ettriga:ettrigare:ettrigast:ettrigaste:ettrige
+977056r3<substantiv>ettrighet:ettrighet:ettrighets:ettrigheten:ettrighetens::::
+758658r3<substantiv>ettsnåret:::ettsnåret:::::
+766817r3<adjektiv>ettstruken:ettstruken:ettstruket:ettstrukna:ettstrukna:!:!:!:!
+754142r3<räkneord>ettusen:ettusen
+946035r3<pronomen>ettvart:ettvart
+572127r4<adjektiv>ettårig:ettårig:ettårigt:ettåriga:ettåriga:!:!:!:ettårige
+654396r3<substantiv>ettåring:ettåring:ettårings:ettåringen:ettåringens:ettåringar:ettåringars:ettåringarna:ettåringarnas
+CUSTOM: y y ettårings
+754144r3<substantiv>ettårsdag:ettårsdag:ettårsdags:ettårsdagen:ettårsdagens:ettårsdagar:ettårsdagars:ettårsdagarna:ettårsdagarnas
+754154r3<substantiv>ettårsfall:ettårsfall:ettårsfalls:ettårsfallet:ettårsfallets:ettårsfall:ettårsfalls:ettårsfallen:ettårsfallens
+741726r3<substantiv>ettårsålder:ettårsålder:ettårsålders:ettårsåldern:ettårsålderns::::
+871171r3<substantiv>ettöring:ettöring:ettörings:ettöringen:ettöringens:ettöringar:ettöringars:ettöringarna:ettöringarnas
+629373r5<substantiv>etui:etui:etuis:etuiet:etuiets:etuin, etuier:etuins, etuiers:etuina, etuierna:etuinas, etuiernas
+548815r3<substantiv>etyd:etyd:etyds:etyden:etydens:etyder:etyders:etyderna:etydernas
+871179r3<substantiv>etylalkohol:etylalkohol:etylalkohols:etylalkoholen:etylalkoholens::::
+623252r5<substantiv>etylen:etylen:etylens:etylenet:etylenets:!:!:!:!
+977060r4<substantiv>etylengas:etylengas:etylengas:etylengasen:etylengasens:etylengaser:etylengasers:etylengaserna:etylengasernas
+COMPOUND(623252, 549064): etylen + gas
+977067r4<substantiv>etylenglykol:etylenglykol:etylenglykols:etylenglykolen:etylenglykolens:etylenglykoler:etylenglykolers:etylenglykolerna:etylenglykolernas
+COMPOUND(623252, 639529): etylen + glykol
+913805r3<substantiv>etylenoxid:etylenoxid:etylenoxids:etylenoxiden:etylenoxidens:etylenoxider:etylenoxiders:etylenoxiderna:etylenoxidernas
+548817r3<substantiv>etymolog:etymolog:etymologs:etymologen:etymologens:etymologer:etymologers:etymologerna:etymologernas
+689634r4<substantiv>etymologi:etymologi:etymologis:etymologin:etymologins:etymologier:etymologiers:etymologierna:etymologiernas
+589201r4<verb>etymologisera:etymologisera:etymologiserade:etymologiserat:etymologiserar:etymologisera:etymologiseras:etymologiserades:etymologiserats:etymologiseras:etymologiserad:etymologiserat:etymologiserade:etymologiserande:
+579869r3<adjektiv>etymologisk:etymologisk:etymologiskt:etymologiska:etymologiska::::
+977075r3<substantiv>eudemonism:eudemonism:eudemonisms:eudemonismen:eudemonismens::::
+622427r4<substantiv>eufemism:eufemism:eufemisms:eufemismen:eufemismens:eufemismer:eufemismers:eufemismerna:eufemismernas
+DEFINITION 1: förskönande omskrivning av något obehagligt eller stötande
+579870r3<adjektiv>eufemistisk:eufemistisk:eufemistiskt:eufemistiska:eufemistiska::::
+977079r3<substantiv>eufoni:eufoni:eufonis:eufonin:eufonins::::
+CUSTOM: y n
+579873r3<adjektiv>eufonisk:eufonisk:eufoniskt:eufoniska:eufoniska::::
+CUSTOM: y n
+977083r3<substantiv>eufonium:eufonium:eufoniums:eufoniet:eufoniets:eufonier:eufoniers:eufonierna:eufoniernas
+CUSTOM: y n
+689636r3<substantiv>eufori:eufori:euforis:euforin:euforins::::
+579876r3<adjektiv>euforisk:euforisk:euforiskt:euforiska:euforiska::::
+972056r3<egennamn>Eugen:Eugen:Eugens
+972060r3<egennamn>Eugenia:Eugenia:Eugenias
+956259r3<substantiv>eugenik:eugenik:eugeniks:eugeniken:eugenikens::::
+579877r3<adjektiv>eugenisk:eugenisk:eugeniskt:eugeniska:eugeniska::::
+797560r3<adjektiv>euhedral:euhedral:euhedralt:euhedrala:euhedrala::::
+CUSTOM: y n n
+944450r5<substantiv>eukalyptus:eukalyptus:eukalyptus::::::
+CUSTOM: y y eukalyptus
+944451r4<substantiv>eukalyptusträd:eukalyptusträd:eukalyptusträds:eukalyptusträdet:eukalyptusträdets:eukalyptusträd:eukalyptusträds:eukalyptusträden:eukalyptusträdens
+COMPOUND(944450, 553066): eukalyptus + träd
+944449r4<substantiv>eukalyptusvide:eukalyptusvide:eukalyptusvides:eukalyptusvidet:eukalyptusvidets:eukalyptusviden:eukalyptusvidens:eukalyptusvidena:eukalyptusvidenas
+COMPOUND(944450, 629105): eukalyptus + vide
+977091r3<substantiv>eukaristi:eukaristi:eukaristis:eukaristin:eukaristins::::
+977096r3<adjektiv>eukaristisk:eukaristisk:eukaristiskt:eukaristiska:eukaristiska::::eukaristiske::::::::
+712455r3<egennamn>Euklides:Euklides:Euklides
+579880r3<adjektiv>euklidisk:euklidisk:euklidiskt:euklidiska:euklidiska::::
+821139r3<substantiv>EU-kommissionär:EU-kommissionär:EU-kommissionärs:EU-kommissionären:EU-kommissionärens:EU-kommissionärer:EU-kommissionärers:EU-kommissionärerna:EU-kommissionärernas
+730473r3<substantiv>eukromatin:eukromatin:eukromatins:eukromatinet:eukromatinets::::
+732222r3<egennamn>Euler:Euler:Eulers
+977101r3<substantiv>eumenid:::::eumenider:eumeniders:eumeniderna:eumenidernas
+CUSTOM: y n
+871188r3<substantiv>eunuck:eunuck:eunucks:eunucken:eunuckens:eunucker:eunuckers:eunuckerna:eunuckernas
+891451r3<adjektiv>eurasiatisk:eurasiatisk:eurasiatiskt:eurasiatiska:eurasiatiska:!:!:!:eurasiatiske::::::::
+CUSTOM: n n n
+891471r3<egennamn>Eurasien:Eurasien:Eurasiens
+871196r3<substantiv>eurasier:eurasier:eurasiers:eurasiern:eurasierns:eurasier:eurasiers:eurasierna:eurasiernas
+579883r4<adjektiv>eurasisk:eurasisk:eurasiskt:eurasiska:eurasiska::::eurasiske
+871202r3<substantiv>eurasiska:eurasiska:eurasiskas:eurasiskan:eurasiskans:eurasiskor:eurasiskors:eurasiskorna:eurasiskornas
+604423r7<substantiv>euro:euro:euros:euron:eurons:euro:euros:eurona:euronas
+CUSTOM: y n
+808652r15<adjektiv>euroasiatisk:euroasiatisk:euroasiatiskt:euroasiatiska:euroasiatiska::::::::::::
+553930r4<egennamn>Europa:Europa:Europas
+CUSTOM: y n europa
+724231r3<egennamn>Europadomstolen:Europadomstolen:Europadomstolens
+CUSTOM: n n
+711145r3<egennamn>Europakonventionen:Europakonventionen:Europakonventionens
+CUSTOM: n n
+925853r4<substantiv>europamästare:europamästare:europamästares:europamästaren:europamästarens:europamästare:europamästares:europamästarna:europamästarnas
+COMPOUND(553930, 615391): Europa + mästare
+884596r3<egennamn>Europaparlamentet:Europaparlamentet:Europaparlamentets
+882578r4<substantiv>Europaråd:Europaråd:Europaråds:Europarådet:Europarådets::::
+CUSTOM: y n Europaråds
+724227r3<egennamn>Europarådet:Europarådet:Europarådets
+882581r3<substantiv>Europarådskonvention::::::::
+COMPOUND(882578, 653040): Europaråd + konvention
+CUSTOM: n n 
+610648r4<substantiv>europé:europé:europés:europén:européns:européer:européers:européerna:européernas
+586568r4<verb>europeisera:europeisera:europeiserade:europeiserat:europeiserar:europeisera:europeiseras:europeiserades:europeiserats:europeiseras:europeiserad:europeiserat:europeiserade:europeiserande:
+948382r3<substantiv>europeisering:europeisering:europeiserings:europeiseringen:europeiseringens::::
+568740r4<adjektiv>europeisk:europeisk:europeiskt:europeiska:europeiska:!:!:!:europeiske
+593976r3<substantiv>europeiska:europeiska:europeiskas:europeiskan:europeiskans:europeiskor:europeiskors:europeiskorna:europeiskornas
+723419r3<substantiv>europium:europium:europiums:europiumet:europiumets::::
+854650r4<substantiv>eurosemester:eurosemester:eurosemesters:eurosemestern:eurosemesterns:eurosemestrar:eurosemestrars:eurosemestrarna:eurosemestrarnas
+COMPOUND(604423, 622135): euro + semester
+589205r3<verb>eurovisera:eurovisera:euroviserade:euroviserat:euroviserar:eurovisera:::::::::
+891474r3<egennamn>Eurovisionsschlagerfestivalen:Eurovisionsschlagerfestivalen:Eurovisionsschlagerfestivalens
+685673r4<substantiv>eurytmi:eurytmi:eurytmis:eurytmin:eurytmins:!:!:!:!
+CUSTOM: y y eurytmi
+685680r4<substantiv>eurytmisko:eurytmisko:eurytmiskos:eurytmiskon:eurytmiskons:eurytmiskor:eurytmiskors:eurytmiskorna:eurytmiskornas
+COMPOUND(685673, 555202): eurytmi + sko
+896811r3<substantiv>eurytmist:eurytmist:eurytmists:eurytmisten:eurytmistens:eurytmister:eurytmisters:eurytmisterna:eurytmisternas
+579888r3<adjektiv>eustachisk:eustachisk:eustachiskt:eustachiska:eustachiska::::
+737314r4<substantiv>eutanasi:eutanasi:eutanasis:eutanasin:eutanasins::::
+DEFINITION 1: dödshjälp
+579891r3<adjektiv>eutektisk:eutektisk:eutektiskt:eutektiska:eutektiska::::
+875514r3<adjektiv>eutektoid:eutektoid::eutektoida:eutektoida::::
+797563r3<adjektiv>eutrof:eutrof:eutroft:eutrofa:eutrofa::::
+553693r3<egennamn>Eva:Eva:Evas
+874570r3<egennamn>Ewa:Ewa:Ewas
+648991r3<pronomen>evad:evad
+546493r5<verb>evakuera:evakuera:evakuerade:evakuerat:evakuerar:evakuera:evakueras:evakuerades:evakuerats:evakueras:evakuerad:evakuerat:evakuerade:evakuerande:
+689638r3<substantiv>evakuering:evakuering:evakuerings:evakueringen:evakueringens:evakueringar:evakueringars:evakueringarna:evakueringarnas
+CUSTOM: y y evakuerings
+678378r3<egennamn>Evald:Evald:Evalds
+678375r3<egennamn>Ewald:Ewald:Ewalds
+546494r5<verb>evaluera:evaluera:evaluerade:evaluerat:evaluerar:evaluera:evalueras:evaluerades:evaluerats:evalueras:evaluerad:evaluerat:evaluerade:evaluerande:
+733291r3<substantiv>evaluering:evaluering:evaluerings:evalueringen:evalueringens:evalueringar:evalueringars:evalueringarna:evalueringarnas
+CUSTOM: y y evaluerings +evaluerings
+589209r3<verb>evalvera:evalvera:evalverade:evalverat:evalverar:evalvera:::::::::
+977106r4<substantiv>evangeliebok:evangeliebok:evangelieboks:evangelieboken:evangeliebokens:evangelieböcker:evangelieböckers:evangelieböckerna:evangelieböckernas
+COMPOUND(617540, 555346): evangelium + bok
+871220r3<substantiv>evangelisation:evangelisation:evangelisations:evangelisationen:evangelisationens::::
+586572r4<verb>evangelisera:evangelisera:evangeliserade:evangeliserat:evangeliserar:evangelisera:evangeliseras:evangeliserades:evangeliserats:evangeliseras:evangeliserad:evangeliserat:evangeliserade:evangeliserande:
+977114r3<substantiv>evangelisering:evangelisering:evangeliserings:evangeliseringen:evangeliseringens::::
+579894r4<adjektiv>evangelisk:evangelisk:evangeliskt:evangeliska:evangeliska::::evangeliske
+689639r3<substantiv>evangelist:evangelist:evangelists:evangelisten:evangelistens:evangelister:evangelisters:evangelisterna:evangelisternas
+CUSTOM: y y evangelist
+617540r5<substantiv>evangelium:evangelium:evangeliums:evangeliet:evangeliets:evangelier:evangeliers:evangelierna:evangeliernas
+CUSTOM: y y evangelie
+977118r3<substantiv>evaporation:evaporation:evaporations:evaporationen:evaporationens::::
+797566r3<adjektiv>evaporativ:evaporativ:evaporativt:evaporativa:evaporativa::::
+586576r4<verb>evaporera:evaporera:evaporerade:evaporerat:evaporerar:evaporera:::::evaporerad:evaporerat:evaporerade:evaporerande:
+977124r3<substantiv>evaporering:evaporering:evaporerings:evaporeringen:evaporeringens::::
+658445r3<egennamn>Evelina:Evelina:Evelinas
+552361r5<substantiv>evenemang:evenemang:evenemangs:evenemanget:evenemangets:evenemang:evenemangs:evenemangen:evenemangens
+DEFINITION 1: större händelse
+CUSTOM: y y evenemangs
+874542r3<egennamn>Ewenfeldt:Ewenfeldt:Ewenfeldts
+936612r3<substantiv>event:event:events:eventet:eventets:event:events:eventen:eventens
+548819r3<substantiv>eventualitet:eventualitet:eventualitets:eventualiteten:eventualitetens:eventualiteter:eventualiteters:eventualiteterna:eventualiteternas
+620530r3<adjektiv>eventuell:eventuell:eventuellt:eventuella:eventuella::::eventuelle
+620533r3<adverb>eventuellt:eventuellt
+947636r4<substantiv>evergreen:evergreen:evergreens:evergreenen:evergreenens::::
+554560r3<egennamn>Evert:Evert:Everts
+977130r3<substantiv>evertebrat:evertebrat:evertebrats:evertebraten:evertebratens:evertebrater:evertebraters:evertebraterna:evertebraternas
+843493r3<egennamn>Everton:Everton:Evertons
+787725r3<egennamn>Evertsberg:Evertsberg:Evertsbergs
+689641r3<substantiv>evidens:evidens:evidens:evidensen:evidensens::::
+877814r3<adjektiv>evidensbaserad:evidensbaserad:evidensbaserat:evidensbaserade:evidensbaserade:!:!:!:
+763065r3<adjektiv>evident:evident:evident:evidenta:evidenta::::
+564682r5<adjektiv>evig:evig:evigt:eviga:eviga:evigare:evigast:evigaste:evige::::::::
+601766r4<substantiv>evighet:evighet:evighets:evigheten:evighetens:evigheter:evigheters:evigheterna:evigheternas
+CUSTOM: y y evighets
+882489r4<substantiv>evighetstro:evighetstro:evighetstros:evighetstron:evighetstrons:!:!:!:!
+COMPOUND(601766, 624935): evighet + tro
+565769r4<adjektiv>evinnerlig:evinnerlig:evinnerligt:evinnerliga:evinnerliga::::evinnerlige
+620534r3<adverb>evinnerligen:evinnerligen
+948327r3<substantiv>evinnerlighet:evinnerlighet:::::::
+632652r3<substantiv>E-vitamin:E-vitamin:E-vitamins:E-vitaminen:E-vitaminens:E-vitaminer:E-vitaminers:E-vitaminerna:E-vitaminernas
+CUSTOM: n n
+689642r4<substantiv>evolution:evolution:evolutions:evolutionen:evolutionens:evolutioner:evolutioners:evolutionerna:evolutionernas
+CUSTOM: y y evolutions
+895959r3<substantiv>evolutionism:evolutionism:evolutionisms:evolutionismen:evolutionismens::::
+871237r3<substantiv>evolutionist:evolutionist:evolutionists:evolutionisten:evolutionistens:evolutionister:evolutionisters:evolutionisterna:evolutionisternas
+579897r3<adjektiv>evolutionistisk:evolutionistisk:evolutionistiskt:evolutionistiska:evolutionistiska::::
+754165r3<adjektiv>evolutionär:evolutionär:evolutionärt:evolutionära:evolutionära:!:!:!:
+797569r3<adjektiv>evolutiv:evolutiv:evolutivt:evolutiva:evolutiva::::
+CUSTOM: y n n
+553695r3<egennamn>Evy:Evy:Evys
+701560r3<adjektiv>evärdelig:evärdelig:evärdeligt:evärdeliga:evärdeliga::::
+565772r3<adjektiv>evärdlig:evärdlig:evärdligt:evärdliga:evärdliga::::
+701564r3<adverb>evärdligen:evärdligen
+633031r5<substantiv>ex:ex:ex:exet:exets:ex:ex:exen:exens
+CUSTOM: y n
+891539r3<verb>exa:exa:exade:exat:exar:exa:exas:exades:exats:exas:exad:exat:exade::
+CUSTOM: n n y
+625287r3<adverb>exakt:exakt
+625288r4<adjektiv>exakt:exakt:exakt:exakta:exakta:exaktare:exaktast:exaktaste:exakte
+689643r3<substantiv>exakthet:exakthet:exakthets:exaktheten:exakthetens::::
+CUSTOM: y y exakthets
+871245r3<substantiv>exaltation:exaltation:exaltations:exaltationen:exaltationens::::
+689644r3<adjektiv>exalterad:exalterad:exalterat:exalterade:exalterade:!:!:!:
+689645r19<substantiv>examen:examen:examens:examen:examens:examina:examinas:examina:examinas
+CUSTOM: y y examens +examens
+689647r4<substantiv>examensarbete:examensarbete:examensarbetes:examensarbetet:examensarbetets:examensarbeten:examensarbetens:examensarbetena:examensarbetenas
+COMPOUND(689645, 612263): examen + arbete
+689653r4<substantiv>examensbetyg:examensbetyg:examensbetygs:examensbetyget:examensbetygets:examensbetyg:examensbetygs:examensbetygen:examensbetygens
+COMPOUND(689645, 552244): examen + betyg
+563744r3<adjektiv>examensfri:examensfri:examensfritt:examensfria:examensfria::::
+893053r4<verb>examensläsa:examensläsa:examensläste:examensläst:examensläser:examensläs:examensläsas:examenslästes:examenslästs:examensläses::::examensläsande:
+COMPOUND(689645, 556182): examen + läsa
+871249r3<substantiv>examinand:examinand:examinands:examinanden:examinandens:examinander:examinanders:examinanderna:examinandernas
+689659r3<substantiv>examination:examination:examinations:examinationen:examinationens:examinationer:examinationers:examinationerna:examinationernas
+CUSTOM: y y examinations
+625289r3<substantiv>examinator:examinator:examinators:examinatorn:examinatorns:examinatorer:examinatorers:examinatorerna:examinatorernas
+546495r5<verb>examinera:examinera:examinerade:examinerat:examinerar:examinera:examineras:examinerades:examinerats:examineras:examinerad:examinerat:examinerade:examinerande:
+977141r3<substantiv>examinering:examinering:examinerings:examineringen:examineringens:examineringar:examineringars:examineringarna:examineringarnas
+788551r3<egennamn>Excel:Excel:Excels
+CUSTOM: y n Excel
+548821r3<substantiv>excellens:excellens:excellens:excellensen:excellensens:excellenser:excellensers:excellenserna:excellensernas
+689660r3<adjektiv>excellent:excellent:excellent:excellenta:excellenta::::excellente
+546496r4<verb>excellera:excellera:excellerade:excellerat:excellerar:excellera:excelleras:excellerades:excellerats:excelleras::::excellerande:
+677471r4<substantiv>excenter:excenter:excenters:excentern:excenterns:excentrar:excentrars:excentrarna:excentrarnas
+CUSTOM: y y excenter
+677470r4<substantiv>excentervävstol:excentervävstol:excentervävstols:excentervävstolen:excentervävstolens:excentervävstolar:excentervävstolars:excentervävstolarna:excentervävstolarnas
+COMPOUND(677471, 677167): excenter + vävstol
+871258r3<substantiv>excentricitet:excentricitet:excentricitets:excentriciteten:excentricitetens:excentriciteter:excentriciteters:excentriciteterna:excentriciteternas
+754169r3<substantiv>excentriker:excentriker:excentrikers:excentrikern:excentrikerns:excentriker:excentrikers:excentrikerna:excentrikernas
+579900r4<adjektiv>excentrisk:excentrisk:excentriskt:excentriska:excentriska::::excentriske
+689661r3<adjektiv>exceptionell:exceptionell:exceptionellt:exceptionella:exceptionella::::
+589213r4<verb>excerpera:excerpera:excerperade:excerperat:excerperar:excerpera:excerperas:excerperades:excerperats:excerperas:excerperad:excerperat:excerperade:excerperande:
+977149r3<substantiv>excerpering:excerpering:excerperings:excerperingen:excerperingens::::
+871271r3<substantiv>excerpist:excerpist:excerpists:excerpisten:excerpistens:excerpister:excerpisters:excerpisterna:excerpisternas
+977153r3<substantiv>excerpt:excerpt:excerpts:excerpten:excerptens:excerpter:excerpters:excerpterna:excerpternas
+871279r3<substantiv>excess:excess:excess:excessen:excessens:excesser:excessers:excesserna:excessernas
+871286r3<substantiv>excitation:excitation:excitations:excitationen:excitationens:excitationer:excitationers:excitationerna:excitationernas
+546497r5<verb>excitera:excitera:exciterade:exciterat:exciterar:excitera:exciteras:exciterades:exciterats:exciteras:exciterad:exciterat:exciterade:exciterande:
+589217r3<verb>exculpera:exculpera:exculperade:exculperat:exculperar:exculpera:::::::::
+948920r3<substantiv>exdiktator:exdiktator:exdiktators:exdiktatorn:exdiktatorns:exdiktatorer:exdiktatorers:exdiktatorerna:exdiktatorernas
+977161r3<substantiv>exeges:exeges:exeges:exegesen:exegesens::::
+689662r3<substantiv>exeget:exeget:exegets:exegeten:exegetens:exegeter:exegeters:exegeterna:exegeternas
+763761r3<substantiv>exegetik:exegetik:exegetiks:exegetiken:exegetikens::::
+579901r3<adjektiv>exegetisk:exegetisk:exegetiskt:exegetiska:exegetiska::::
+786951r3<substantiv>exekution:exekution:exekutions:exekutionen:exekutionens:exekutioner:exekutioners:exekutionerna:exekutionernas
+CUSTOM: y y exekutions
+977164r3<substantiv>exekutiv:exekutiv:exekutivs:exekutiven:exekutivens:exekutiver:exekutivers:exekutiverna:exekutivernas
+689664r4<adjektiv>exekutiv:exekutiv:exekutivt:exekutiva:exekutiva:!:!:!:exekutive
+CUSTOM: y y exekutiv
+871296r3<substantiv>exekutor:exekutor:exekutors:exekutorn:exekutorns:exekutorer:exekutorers:exekutorerna:exekutorernas
+579904r3<adjektiv>exekutorisk:exekutorisk:exekutoriskt:exekutoriska:exekutoriska::::
+871304r3<substantiv>exekutör:exekutör:exekutörs:exekutören:exekutörens:exekutörer:exekutörers:exekutörerna:exekutörernas
+546498r5<verb>exekvera:exekvera:exekverade:exekverat:exekverar:exekvera:exekveras:exekverades:exekverats:exekveras:exekverad:exekverat:exekverade:exekverande:
+689666r3<adjektiv>exekverbar:exekverbar:exekverbart:exekverbara:exekverbara:!:!:!:!
+689667r3<substantiv>exekvering:exekvering:exekverings:exekveringen:exekveringens:exekveringar:exekveringars:exekveringarna:exekveringarnas
+CUSTOM: y y exekverings
+630262r7<substantiv>exempel:exempel:exempels:exemplet:exemplets:exempel:exempels:exemplen:exemplens
+CUSTOM: y y exempel
+630264r3<substantiv>exempelbok:exempelbok:exempelboks:exempelboken:exempelbokens:exempelböcker:exempelböckers:exempelböckerna:exempelböckernas
+884607r4<substantiv>exempelkod:exempelkod:exempelkods:exempelkoden:exempelkodens:exempelkoder:exempelkoders:exempelkoderna:exempelkodernas
+COMPOUND(630262, 549543): exempel + kod
+564808r3<adjektiv>exempellös:exempellös:exempellöst:exempellösa:exempellösa::::
+664130r4<substantiv>exempelsamling:exempelsamling:exempelsamlings:exempelsamlingen:exempelsamlingens:exempelsamlingar:exempelsamlingars:exempelsamlingarna:exempelsamlingarnas
+COMPOUND(630262, 597545): exempel + samling
+620535r3<adverb>exempelvis:exempelvis
+552362r4<substantiv>exemplar:exemplar:exemplars:exemplaret:exemplarets:exemplar:exemplars:exemplaren:exemplarens
+579907r4<adjektiv>exemplarisk:exemplarisk:exemplariskt:exemplariska:exemplariska::::exemplariske
+546499r4<verb>exemplifiera:exemplifiera:exemplifierade:exemplifierat:exemplifierar:exemplifiera:exemplifieras:exemplifierades:exemplifierats:exemplifieras:exemplifierad:exemplifierat:exemplifierade:exemplifierande:
+664139r3<substantiv>exemplifiering:exemplifiering:exemplifierings:exemplifieringen:exemplifieringens:exemplifieringar:exemplifieringars:exemplifieringarna:exemplifieringarnas
+CUSTOM: y y exemplifierings
+664148r3<substantiv>exemplifikation:exemplifikation:exemplifikations:exemplifikationen:exemplifikationens:exemplifikationer:exemplifikationers:exemplifikationerna:exemplifikationernas
+CUSTOM: y y exemplifikations
+586580r4<verb>exercera:exercera:exercerade:exercerat:exercerar:exercera:exerceras:exercerades:exercerats:exerceras:exercerad:exercerat:exercerade:exercerande:
+548822r4<substantiv>exercis:exercis:exercis:exercisen:exercisens:exerciser:exercisers:exerciserna:exercisernas
+CUSTOM: y y exercis
+689668r4<substantiv>exercisplats:exercisplats:exercisplats:exercisplatsen:exercisplatsens:exercisplatser:exercisplatsers:exercisplatserna:exercisplatsernas
+COMPOUND(548822, 550210): exercis + plats
+913814r3<substantiv>exfru:exfru:exfrus:exfrun:exfruns:exfruar:exfruars:exfruarna:exfruarnas
+959358r3<substantiv>exgitarrist:exgitarrist:exgitarrists:exgitarristen:exgitarristens:exgitarrister:exgitarristers:exgitarristerna:exgitarristernas
+990165r3<substantiv>exguvernör:exguvernör:exguvernörs:exguvernören:exguvernörens:exguvernörer:exguvernörers:exguvernörerna:exguvernörernas
+689673r3<substantiv>exhibitionism:exhibitionism:exhibitionisms:exhibitionismen:exhibitionismens::::
+689675r3<substantiv>exhibitionist:exhibitionist:exhibitionists:exhibitionisten:exhibitionistens:exhibitionister:exhibitionisters:exhibitionisterna:exhibitionisternas
+CUSTOM: y y exhibitionist
+579908r3<adjektiv>exhibitionistisk:exhibitionistisk:exhibitionistiskt:exhibitionistiska:exhibitionistiska::::
+871318r3<substantiv>exhustru:exhustru:exhustrus:exhustrun:exhustruns:exhustrur:exhustrurs:exhustrurna:exhustrurnas
+624404r15<substantiv>exil:exil:exils:exilen:exilens::::
+CUSTOM: y y exil
+945871r4<substantiv>exilbalt:exilbalt:exilbalts:exilbalten:exilbaltens:exilbalter:exilbalters:exilbalterna:exilbalternas
+COMPOUND(624404, 548320): exil + balt
+906304r8<substantiv>exilburmes:exilburmes:exilburmes:exilburmesen:exilburmesens:exilburmeser:exilburmesers:exilburmeserna:exilburmesernas
+COMPOUND(624404, 623041): exil + burmes
+790658r3<adjektiv>exilerad:exilerad:exilerat:exilerade:exilerade:!:!:!:
+951004r4<substantiv>exilgrek:exilgrek:exilgreks:exilgreken:exilgrekens:exilgreker:exilgrekers:exilgrekerna:exilgrekernas
+COMPOUND(624404, 555264): exil + grek
+854095r4<substantiv>exilkines:exilkines:exilkines:exilkinesen:exilkinesens:exilkineser:exilkinesers:exilkineserna:exilkinesernas
+COMPOUND(624404, 559787): exil + kines
+951014r4<substantiv>exilkurd:exilkurd:exilkurds:exilkurden:exilkurdens:exilkurder:exilkurders:exilkurderna:exilkurdernas
+COMPOUND(624404, 559469): exil + kurd
+914098r17<substantiv>exillankes:exillankes:exillankes:exillankesen:exillankesens:exillankeser:exillankesers:exillankeserna:exillankesernas
+COMPOUND(624404, 870293): exil + lankes
+754175r3<substantiv>exilregering:exilregering:exilregerings:exilregeringen:exilregeringens:exilregeringar:exilregeringars:exilregeringarna:exilregeringarnas
+964806r4<substantiv>exiltysk:exiltysk:exiltysks:exiltysken:exiltyskens:exiltyskar:exiltyskars:exiltyskarna:exiltyskarnas
+COMPOUND(624404, 599078): exil + tysk
+923140r17<substantiv>exiltyska:exiltyska:exiltyskas:exiltyskan:exiltyskans:exiltyskor:exiltyskors:exiltyskorna:exiltyskornas
+COMPOUND(624404, 595676): exil + tyska
+548823r5<substantiv>existens:existens:existens:existensen:existensens:existenser:existensers:existenserna:existensernas
+CUSTOM: y y existens
+754183r3<substantiv>existensberättigande::::::::
+COMPOUND(548823, 658971): existens + berättigande
+689677r4<substantiv>existensminimum:existensminimum:existensminimums:existensminimumet:existensminimumets:existensminimum, existensminima:existensminimums, existensminimas:existensminimumen:existensminimumens
+COMPOUND(548823, 604455): existens + minimum
+579911r3<adjektiv>existentialfilosofisk:existentialfilosofisk:existentialfilosofiskt:existentialfilosofiska:existentialfilosofiska::::
+558309r3<substantiv>existentialism:existentialism:existentialisms:existentialismen:existentialismens:!:!:!:!
+961131r3<substantiv>existentialist:existentialist:existentialists:existentialisten:existentialistens:existentialister:existentialisters:existentialisterna:existentialisternas
+579914r4<adjektiv>existentialistisk:existentialistisk:existentialistiskt:existentialistiska:existentialistiska::::existentialistiske::::::::
+637006r5<adjektiv>existentiell:existentiell:existentiellt:existentiella:existentiella::::existentielle
+546500r4<verb>existera:existera:existerade:existerat:existerar:existera:!:!:!:!:::::
+689686r3<adjektiv>existerande:existerande:existerande:existerande:existerande:!:!:!:
+886459r3<substantiv>exitstrategi:exitstrategi:exitstrategis:exitstrategin:exitstrategins:exitstrategier:exitstrategiers:exitstrategierna:exitstrategiernas
+965568r3<substantiv>exjobb:exjobb:exjobbs:exjobbet:exjobbets:exjobb:exjobbs:exjobben:exjobbens
+CUSTOM: y n
+965576r3<substantiv>exjobbare:exjobbare:exjobbares:exjobbaren:exjobbarens:exjobbare:exjobbares:exjobbarna:exjobbarnas
+871327r3<substantiv>exklamation:exklamation:exklamations:exklamationen:exklamationens:exklamationer:exklamationers:exklamationerna:exklamationernas
+772355r6<substantiv>exklav:exklav:exklavs:exklaven:exklavens:exklaver:exklavers:exklaverna:exklavernas
+DEFINITION 1: Del av stats territorium separerad från statens sammanhängande huvudterritorium av mellanliggande stats territorium. Ex: Llivia är en spansk exklav omgiven av Frankrike.
+556255r4<verb>exkludera:exkludera:exkluderade:exkluderat:exkluderar:exkludera:exkluderas:exkluderades:exkluderats:exkluderas:exkluderad:exkluderat:exkluderade:exkluderande:
+629451r4<substantiv>exkludering:exkludering:exkluderings:exkluderingen:exkluderingens:exkluderingar:exkluderingars:exkluderingarna:exkluderingarnas
+CUSTOM: y y exkluderings
+689687r3<adjektiv>exklusiv:exklusiv:exklusivt:exklusiva:exklusiva:exklusivare:exklusivast:exklusivaste:
+725265r3<adverb>exklusive:exklusive
+725264r3<preposition>exklusive:exklusive
+754184r4<substantiv>exklusivitet:exklusivitet:exklusivitets:exklusiviteten:exklusivitetens:exklusiviteter:exklusiviteters:exklusiviteterna:exklusiviteternas
+589221r4<verb>exkommunicera:exkommunicera:exkommunicerade:exkommunicerat:exkommunicerar:exkommunicera:exkommuniceras:exkommunicerades:exkommunicerats:exkommuniceras:exkommunicerad:exkommunicerat:exkommunicerade:exkommunicerande:
+977172r3<substantiv>exkommunicering:exkommunicering:exkommunicerings:exkommuniceringen:exkommuniceringens::::
+871344r3<substantiv>exkommunikation:exkommunikation:exkommunikations:exkommunikationen:exkommunikationens::::
+955256r3<substantiv>exkommunist:exkommunist:exkommunists:exkommunisten:exkommunistens:exkommunister:exkommunisters:exkommunisterna:exkommunisternas
+579917r3<adjektiv>exkommunistisk:exkommunistisk:exkommunistiskt:exkommunistiska:exkommunistiska::::
+734352r8<substantiv>exkrement:exkrement:exkrements:exkrementet:exkrementets:exkrementer:exkrementers:exkrementerna:exkrementernas
+797572r3<adjektiv>exkremental:exkremental:exkrementalt:exkrementala:exkrementala::::
+871348r3<substantiv>exkret:exkret:exkrets:exkretet:exkretets:exkret:exkrets:exkreten:exkretens
+871354r3<substantiv>exkretion:exkretion:exkretions:exkretionen:exkretionens:exkretioner:exkretioners:exkretionerna:exkretionernas
+589225r3<verb>exkulpera:exkulpera:exkulperade:exkulperat:exkulperar:exkulpera:::::::::
+977176r3<substantiv>exkung:exkung:exkungs:exkungen:exkungens:exkungar:exkungars:exkungarna:exkungarnas
+CUSTOM: y n
+871362r3<substantiv>exkurs:exkurs:exkurs:exkursen:exkursens:exkurser:exkursers:exkurserna:exkursernas
+548824r3<substantiv>exkursion:exkursion:exkursions:exkursionen:exkursionens:exkursioner:exkursioners:exkursionerna:exkursionernas
+CUSTOM: y y exkursions
+871369r3<substantiv>exlibris:exlibris:exlibris:exlibriset:exlibrisets:exlibris:exlibris:exlibrisen:exlibrisens
+977184r3<substantiv>exlibrissamling:exlibrissamling:exlibrissamlings:exlibrissamlingen:exlibrissamlingens:exlibrissamlingar:exlibrissamlingars:exlibrissamlingarna:exlibrissamlingarnas
+754192r3<substantiv>exmake:exmake:exmakes:exmaken:exmakens:exmakar:exmakars:exmakarna:exmakarnas
+938208r4<substantiv>exman:exman:exmans:exmannen:exmannens:exmän:exmäns:exmännen:exmännens
+COMPOUND(633031, 557796): ex + man
+579920r3<adjektiv>exocentrisk:exocentrisk:exocentriskt:exocentriska:exocentriska::::
+579923r3<adjektiv>exocyklisk:exocyklisk:exocykliskt:exocykliska:exocykliska::::
+961139r3<substantiv>exodus:exodus:::::::
+797575r3<adjektiv>exogam:exogam:exogamt:exogama:exogama::::
+CUSTOM: n n n
+678349r3<substantiv>exogami:exogami:exogamis:exogamin, exogamien:exogamins, exogamiens::::
+CUSTOM: n n
+871374r3<adjektiv>exogen:exogen:exogent:exogena:exogena::::
+959271r3<substantiv>exoplanet:exoplanet:exoplanets:exoplaneten:exoplanetens:exoplaneter:exoplaneters:exoplaneterna:exoplaneternas
+586584r3<verb>exorcisera:exorcisera:exorciserade:exorciserat:exorciserar:exorcisera:::::::::
+558805r3<substantiv>exorcism:exorcism:exorcisms:exorcismen:exorcismens:!:!:!:!
+871377r3<substantiv>exorcist:exorcist:exorcists:exorcisten:exorcistens:exorcister:exorcisters:exorcisterna:exorcisternas
+579929r3<adjektiv>exoterisk:exoterisk:exoteriskt:exoteriska:exoteriska::::
+797578r3<adjektiv>exoterm:exoterm:exotermt:exoterma:exoterma::::
+579932r3<adjektiv>exotermisk:exotermisk:exotermiskt:exotermiska:exotermiska::::
+579935r4<adjektiv>exotisk:exotisk:exotiskt:exotiska:exotiska::::exotiske
+871386r3<substantiv>exotism:exotism:exotisms:exotismen:exotismens::::
+977192r3<substantiv>expander:expander:expanders:expandern:expanderns:expandrar:expandrars:expandrarna:expandrarnas
+586588r5<verb>expandera:expandera:expanderade:expanderat:expanderar:expandera:expanderas:expanderades:expanderats:expanderas:expanderad:expanderat:expanderade:expanderande:
+977200r3<substantiv>expandering:expandering:expanderings:expanderingen:expanderingens:expanderingar:expanderingars:expanderingarna:expanderingarnas
+678472r5<substantiv>expansion:expansion:expansions:expansionen:expansionens::::
+CUSTOM: y y expansions +expansions
+871390r4<substantiv>expansionism:expansionism:expansionisms:expansionismen:expansionismens::::
+DEFINITION 1: Stävan till utvidgning
+579936r3<adjektiv>expansionistisk:expansionistisk:expansionistiskt:expansionistiska:expansionistiska::::
+678471r4<substantiv>expansionsbox:expansionsbox:expansionsbox:expansionsboxen:expansionsboxens:expansionsboxar:expansionsboxars:expansionsboxarna:expansionsboxarnas
+COMPOUND(678472, 550941): expansion + box
+899628r5<substantiv>expansionsfond:expansionsfond:expansionsfonds:expansionsfonden:expansionsfondens:expansionsfonder:expansionsfonders:expansionsfonderna:expansionsfondernas
+COMPOUND(678472, 548939): expansion + fond
+CUSTOM: y y expansionsfonds
+899638r3<substantiv>expansionsfondsskatt::::::::
+COMPOUND(899628, 550507): expansionsfond + skatt
+607023r3<substantiv>expansionskärl:expansionskärl:expansionskärls:expansionskärlet:expansionskärlets:expansionskärl:expansionskärls:expansionskärlen:expansionskärlens
+689689r5<adjektiv>expansiv:expansiv:expansivt:expansiva:expansiva:expansivare:expansivast:expansivaste:expansive
+874707r4<substantiv>expartner:expartner:expartners:expartnern:expartnerns:expartners:expartners:expartnerna:expartnernas
+COMPOUND(633031, 632105): ex + partner
+586589r4<verb>expatriera:expatriera:expatrierade:expatrierat:expatrierar:expatriera:expatrieras:expatrierades:expatrierats:expatrieras:expatrierad:expatrierat:expatrierade:expatrierande:
+977208r3<substantiv>expatriering:expatriering:expatrierings:expatrieringen:expatrieringens::::
+546501r5<verb>expediera:expediera:expedierade:expedierat:expedierar:expediera:expedieras:expedierades:expedierats:expedieras:expedierad:expedierat:expedierade:expedierande:
+898872r3<substantiv>expediering:expediering:expedierings:expedieringen:expedieringens::::
+548826r3<substantiv>expedit:expedit:expedits:expediten:expeditens:expediter:expediters:expediterna:expediternas
+CUSTOM: y y expedit
+601768r10<substantiv>expedition:expedition:expeditions:expeditionen:expeditionens:expeditioner:expeditioners:expeditionerna:expeditionernas
+CUSTOM: y y expeditions +expeditions
+797581r3<adjektiv>expeditionell:expeditionell:expeditionellt:expeditionella:expeditionella::::
+601769r3<substantiv>expeditionsavgift:expeditionsavgift:expeditionsavgifts:expeditionsavgiften:expeditionsavgiftens:expeditionsavgifter:expeditionsavgifters:expeditionsavgifterna:expeditionsavgifternas
+607029r3<substantiv>expeditionskontor:expeditionskontor:expeditionskontors:expeditionskontoret:expeditionskontorets:expeditionskontor:expeditionskontors:expeditionskontoren:expeditionskontorens
+711733r4<substantiv>expeditionsledare:expeditionsledare:expeditionsledares:expeditionsledaren:expeditionsledarens:expeditionsledare:expeditionsledares:expeditionsledarna:expeditionsledarnas
+COMPOUND(601768, 609818): expedition + ledare
+711817r4<substantiv>expeditionsmedlem:expeditionsmedlem:expeditionsmedlems:expeditionsmedlemmen:expeditionsmedlemmens:expeditionsmedlemmar:expeditionsmedlemmars:expeditionsmedlemmarna:expeditionsmedlemmarnas
+COMPOUND(601768, 621189): expedition + medlem
+871402r3<substantiv>expeditör:expeditör:expeditörs:expeditören:expeditörens:expeditörer:expeditörers:expeditörerna:expeditörernas
+589229r3<verb>expektorera:expektorera:expektorerade:expektorerat:expektorerar:expektorera:::::::::
+800935r3<adjektiv>expektorerande:expektorerande:expektorerande:expektorerande:expektorerande:!:!:!:
+731524r3<substantiv>expenser:::::expenser:expensers:expenserna:expensernas
+552364r5<substantiv>experiment:experiment:experiments:experimentet:experimentets:experiment:experiments:experimenten:experimentens
+CUSTOM: y y experiment +experiment
+787806r3<substantiv>experimentalfysik:experimentalfysik:experimentalfysiks:experimentalfysiken:experimentalfysikens::::
+579937r3<adjektiv>experimentalpsykologisk:experimentalpsykologisk:experimentalpsykologiskt:experimentalpsykologiska:experimentalpsykologiska::::
+871410r3<substantiv>experimentator:experimentator:experimentators:experimentatorn:experimentatorns:experimentatorer:experimentatorers:experimentatorerna:experimentatorernas
+689690r3<adjektiv>experimentell:experimentell:experimentellt:experimentella:experimentella::::
+546502r4<verb>experimentera:experimentera:experimenterade:experimenterat:experimenterar:experimentera:experimenteras:experimenterades:experimenterats:experimenteras:::::
+754202r3<substantiv>experimenterande:experimenterande:experimenterandes:experimenterandet:experimenterandets::::
+977213r3<substantiv>experimentering:experimentering:experimenterings:experimenteringen:experimenteringens::::
+754206r4<substantiv>experimentlusta:experimentlusta:experimentlustas:experimentlustan:experimentlustans::::
+COMPOUND(552364, 560174): experiment + lusta
+612467r3<substantiv>experimentsyfte:experimentsyfte:experimentsyftes:experimentsyftet:experimentsyftets:experimentsyften:experimentsyftens:experimentsyftena:experimentsyftenas
+548828r8<substantiv>expert:expert:experts:experten:expertens:experter:experters:experterna:experternas
+CUSTOM: y y expert +expert
+689691r3<substantiv>expertis:expertis:expertis:expertisen:expertisens:expertiser:expertisers:expertiserna:expertisernas
+701565r4<substantiv>expertpanel:e

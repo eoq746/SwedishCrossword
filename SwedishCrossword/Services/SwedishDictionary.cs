@@ -13,10 +13,10 @@ public class SwedishDictionary
     private readonly Dictionary<string, WordEntry> _words;
     private readonly Random _random = new();
 
-    public IReadOnlyList<Word> AllWords => _words.Values.Select(ConvertToWord).ToList().AsReadOnly();
-    public int WordCount => _words.Count;
+    private static bool HasValidClue(WordEntry w) => !string.IsNullOrWhiteSpace(w.Clue) && w.Clue != "___";
 
-    public static string GetJsonFilePath() => Path.Combine(DataDirectory.GetPath(), "kelly-words.json");
+    public IReadOnlyList<Word> AllWords => _words.Values.Where(HasValidClue).Select(ConvertToWord).ToList().AsReadOnly();
+    public int WordCount => _words.Count;
 
     public SwedishDictionary()
         : this(false)
@@ -60,6 +60,16 @@ public class SwedishDictionary
                 LoadWordsFromFile(kellyJsonPath);
                 var kellyAdded = WordCount - countBefore;
                 Console.WriteLine($"Loaded Kelly word list: {kellyAdded} additional words");
+            }
+
+            // Try to load DSSO words (if they've been imported)
+            var dssoJsonPath = DssoWordImporter.GetJsonFilePath();
+            if (File.Exists(dssoJsonPath))
+            {
+                var countBefore = WordCount;
+                LoadWordsFromFile(dssoJsonPath);
+                var dssoAdded = WordCount - countBefore;
+                Console.WriteLine($"Loaded DSSO word list: {dssoAdded} additional words");
             }
 
             var customJsonPath = Path.Combine(DataDirectory.GetPath(), "custom-words.json");
@@ -141,7 +151,7 @@ public class SwedishDictionary
         string? category = null,
         DifficultyLevel? difficulty = null)
     {
-        var query = _words.Values.AsEnumerable();
+        var query = _words.Values.Where(HasValidClue);
 
         if (minLength.HasValue)
             query = query.Where(w => w.Word.Length >= minLength.Value);
@@ -165,6 +175,7 @@ public class SwedishDictionary
     {
         return _words.Values
             .Where(w => 
+                HasValidClue(w) &&
                 position >= 0 && 
                 position < w.Word.Length && 
                 w.Word[position] == char.ToUpper(letter))
@@ -177,7 +188,7 @@ public class SwedishDictionary
     public IEnumerable<Word> GetWordsWithLetter(char letter)
     {
         return _words.Values
-            .Where(w => w.Word.Contains(char.ToUpper(letter)))
+            .Where(w => HasValidClue(w) && w.Word.Contains(char.ToUpper(letter)))
             .Select(ConvertToWord);
     }
 
@@ -188,7 +199,7 @@ public class SwedishDictionary
     {
         var excludeWordTexts = excludeWords?.Select(w => w.Text.ToUpperInvariant()).ToHashSet() ?? [];
         var availableWords = _words.Values
-            .Where(w => !excludeWordTexts.Contains(w.Word.ToUpperInvariant()))
+            .Where(w => HasValidClue(w) && !excludeWordTexts.Contains(w.Word.ToUpperInvariant()))
             .ToList();
 
         if (availableWords.Count == 0)
@@ -210,6 +221,7 @@ public class SwedishDictionary
     {
         return _words.Values
             .Where(w => 
+                HasValidClue(w) &&
                 !w.Word.Equals(word.Text, StringComparison.OrdinalIgnoreCase) && 
                 w.Word.Contains(sharedLetter))
             .Select(ConvertToWord)
@@ -225,6 +237,7 @@ public class SwedishDictionary
         var commonLetters = new HashSet<char> { 'A', 'E', 'I', 'O', 'U', 'R', 'S', 'T', 'N', 'L' };
         
         return _words.Values
+            .Where(HasValidClue)
             .Where(w => w.Word.Length <= maxLength && w.Word.Length >= 3)
             .Where(w => w.Word.Count(c => commonLetters.Contains(c)) >= w.Word.Length / 2)
             .OrderByDescending(w => w.Word.Count(c => commonLetters.Contains(c)))

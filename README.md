@@ -2,7 +2,7 @@
 
 [![Daily Crossword Generation](https://github.com/eoq746/SwedishCrossword/actions/workflows/daily-crossword.yml/badge.svg)](https://github.com/eoq746/SwedishCrossword/actions/workflows/daily-crossword.yml)
 
-A Swedish crossword puzzle generator and web player. Generates high-quality crossword puzzles using a Swedish dictionary based on [Lexin (ISOF)](https://spraakbanken.gu.se/resurser/lexin), [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), and the [Kelly word list](https://spraakbanken.gu.se/resurser/kelly).
+A Swedish crossword puzzle generator and web player. Generates high-quality crossword puzzles using a Swedish dictionary based on [Lexin (ISOF)](https://spraakbanken.gu.se/resurser/lexin), [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), the [Kelly word list](https://spraakbanken.gu.se/resurser/kelly), and [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/).
 
 **Play the daily puzzle:** [svensktkorsord.se](https://svensktkorsord.se)
 
@@ -10,7 +10,7 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 
 - **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with high fill percentages (65–75%)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
-- **Swedish Dictionary**: 50,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, and a custom word file
+- **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
 - **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions, deployed to GitHub Pages; word-analysis results are cached between runs for faster generation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
@@ -19,7 +19,7 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
   - Mobile-responsive design (portrait and landscape modes)
 - **Anti-cheat System**: Validates puzzle completion times, input patterns, and DevTools detection
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
-- **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, and edit clues
+- **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 - **Word Manager Tool**: Lightweight CLI for quickly adding words, converting plain-text word lists to JSON, and merging word files
 - **SEO Optimized**: Structured data, sitemap, robots.txt for search engine visibility
 
@@ -33,10 +33,12 @@ SwedishCrosswords/
 |   |   |-- synonym-words.json     # Synonym pairs (imported)
 |   |   |-- kelly-words.json       # Kelly word list (imported)
 |   |   |-- kelly-clues.json       # Curated clue overrides for Kelly words
+|   |   |-- dsso-words.json        # DSSO dictionary (imported from chunk files)
 |   |   |-- custom-words.json      # Custom/hand-curated words loaded at runtime
 |   |   |-- lexin-swe-swe.xml      # Source Lexin XML
 |   |   |-- synpairs.xml           # Source synonym pairs XML
-|   |   +-- kelly.xml              # Kelly frequency word list (source XML)
+|   |   |-- kelly.xml              # Kelly frequency word list (source XML)
+|   |   +-- chunk_*.txt            # DSSO source chunk files (dsso-1.51)
 |   |-- Models/                    # Domain models
 |   |   |-- Word.cs                # Word with clue, metadata, and segments
 |   |   |-- WordSegment.cs         # Segment of a bent word path
@@ -45,13 +47,14 @@ SwedishCrosswords/
 |   |   +-- AccidentalWord.cs      # Bonus word detection
 |   |-- Services/                  # Core services
 |   |   |-- CrosswordGenerator.cs  # Main generation orchestrator
-|   |   |-- SwedishDictionary.cs   # Word lookup and filtering (loads all 4 sources)
+|   |   |-- SwedishDictionary.cs   # Word lookup and filtering (loads all 5 sources)
 |   |   |-- GridValidator.cs       # Puzzle validation
 |   |   |-- PrintService.cs        # Output formatting (JSON, text)
 |   |   |-- ClueGenerator.cs       # Clue generation
 |   |   |-- LexinWordImporter.cs   # Lexin XML parser
 |   |   |-- SynonymPairImporter.cs # Synonym XML parser
 |   |   |-- KellyWordImporter.cs   # Kelly word list importer
+|   |   |-- DssoWordImporter.cs    # DSSO chunk file parser
 |   |   |-- DataDirectory.cs       # Data file path resolution
 |   |   +-- Generation/            # Generation sub-components
 |   |       |-- WordPlacer.cs      # Anchor selection and adaptive placement
@@ -74,7 +77,10 @@ SwedishCrosswords/
 |   |   +-- CNAME                  # Custom domain config
 |   +-- Program.cs                 # CLI entry point
 |-- ClueHandler/                   # Dictionary management tool
-|   +-- Program.cs                 # CLI: statistics, add words, edit clues
+|   |-- Program.cs                 # CLI: statistics, add words, edit clues, Wiktionary lookup
+|   |-- WiktionaryClueService.cs   # Auto-populate clues from Swedish Wiktionary dump
+|   |-- CompoundClueGenerator.cs   # Generate clues for compound words via DSSO metadata
+|   +-- PatternClueGenerator.cs    # Generate clues using morphological patterns
 |-- WordManager/                   # Lightweight word-management helper (no .csproj yet)
 |   +-- Program.cs                 # CLI: quick-add words, convert text?JSON, merge files
 |-- SwedishCrossword.Tests/        # TUnit test project
@@ -117,6 +123,7 @@ dotnet run --project SwedishCrossword
 6. **Import Synonym Pairs** - Parse Folkets synonymlexikon
 7. **Import Kelly Words** - Parse the Kelly frequency word list
 8. **Generate for Web** - Creates puzzle.json and starts local server
+9. **Import from DSSO** - Parse Den Stora Svenska Ordlistan chunk files
 
 ### Headless Generation (CI/CD)
 
@@ -139,6 +146,15 @@ Interactive menu:
 1. **Visa ordlistestatistik** — Word count and category breakdown
 2. **Lägg till nya ord** — Add individual words with custom clues
 3. **Redigera ledtrådar** — Edit clues for existing dictionary entries
+4. **Hämta ledtrådar från Wiktionary** — Auto-populate missing clues from the Swedish Wiktionary dump
+
+Headless commands:
+
+```bash
+dotnet run --project ClueHandler -- --wiktionary   # Batch Wiktionary clue lookup
+dotnet run --project ClueHandler -- --compounds     # Generate compound-word clues from DSSO metadata
+dotnet run --project ClueHandler -- --patterns      # Generate clues via morphological pattern matching
+```
 
 ### WordManager
 
@@ -209,11 +225,14 @@ Additional synonym pairs from [Folkets synonymlexikon](http://lexikon.nada.kth.s
 ### Kelly Word List (Frequency)
 Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
 
+### DSSO (Den Stora Svenska Ordlistan)
+A comprehensive Swedish word list from [DSSO](https://dsso.se/) (version 1.51). The source data is split into chunk text files that are parsed and exported to `dsso-words.json`. Clues are sourced from DSSO definitions, supplemented by Wiktionary lookups and compound/pattern-based generators. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+
 ### Custom Words
 A hand-curated `custom-words.json` file for words not covered by the main sources. Loaded last so custom entries take precedence over imported ones.
 
 **Combined Statistics:**
-- ~50,000+ words across all four sources
+- ~100,000+ words across all five sources
 - Categories: Substantiv, Verb, Adjektiv, Adverb, etc.
 - Difficulty levels: Easy, Medium, Hard
 - Full support for Swedish characters (Å, Ä, Ö)
@@ -227,7 +246,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 ## License
 
-The dictionary data is licensed under [Creative Commons Attribution 2.5 Sweden](https://creativecommons.org/licenses/by/2.5/se/).
+The dictionary data is licensed under [Creative Commons Attribution 2.5 Sweden](https://creativecommons.org/licenses/by/2.5/se/). DSSO words are licensed under [Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## Contributing
 
@@ -245,5 +264,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 - [Lexin/ISOF](https://spraakbanken.gu.se/resurser/lexin) for the Swedish dictionary
 - [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html) for synonym pairs
 - [Kelly word list](https://spraakbanken.gu.se/resurser/kelly) for frequency-ranked vocabulary
+- [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/) for comprehensive Swedish word coverage
+- [Swedish Wiktionary](https://sv.wiktionary.org) for supplementary word definitions
 - [JSONBin.io](https://jsonbin.io) for leaderboard storage
 - [Cloudflare Workers](https://workers.cloudflare.com) for API proxy

@@ -1,0 +1,664 @@
+hållarna:glasögonhållarnas
+CUSTOM: y y glasögonhållar
+761009r4<substantiv>glasögonorm:glasögonorm:glasögonorms:glasögonormen:glasögonormens:glasögonormar:glasögonormars:glasögonormarna:glasögonormarnas
+COMPOUND(622471, 551752): glasögon + orm
+801317r3<adjektiv>glasögonprydd:glasögonprydd:glasögonprytt:glasögonprydda:glasögonprydda::::
+951329r4<substantiv>glasögonskalm:glasögonskalm:glasögonskalms:glasögonskalmen:glasögonskalmens:glasögonskalmar:glasögonskalmars:glasögonskalmarna:glasögonskalmarnas
+COMPOUND(622471, 551839): glasögon + skalm
+691485r4<adjektiv>glatt:glatt:glatt:glatta:glatta:glattare:glattast:glattaste:::::::::
+979522r3<substantiv>glaubersalt:glaubersalt:glaubersalts:glaubersaltet:glaubersaltets:glaubersalter:glaubersalters:glaubersalterna:glaubersalternas
+924488r5<substantiv>glaukom:glaukom:glaukoms:glaukomet:glaukomets::::
+572878r3<adjektiv>glencheckrutig:glencheckrutig:glencheckrutigt:glencheckrutiga:glencheckrutiga::::
+971816r3<egennamn>Glenn:Glenn:Glenns
+563205r4<adjektiv>gles:gles:glest:glesa:glesa:glesare:glesast:glesaste:
+940627r3<substantiv>glesa:glesa:glesas:glesan:glesans:glesor:glesors:glesorna:glesornas
+940620r3<verb>glesa:glesa:glesade:glesat:glesar:glesa:glesas:glesades:glesats:glesas::::glesande:
+570690r3<adjektiv>glesbebyggd:glesbebyggd:glesbebyggt:glesbebyggda:glesbebyggda::::
+742744r3<adjektiv>glesbefolkad:glesbefolkad:glesbefolkat:glesbefolkade:glesbefolkade:!:!:!:!
+572881r3<adjektiv>glesbladig:glesbladig:glesbladigt:glesbladiga:glesbladiga::::
+572884r3<adjektiv>glesblommig:glesblommig:glesblommigt:glesblommiga:glesblommiga::::
+556262r5<substantiv>glesbygd:glesbygd:glesbygds:glesbygden:glesbygdens:glesbygder:glesbygders:glesbygderna:glesbygdernas
+CUSTOM: y y glesbygds
+820080r3<substantiv>glesbygdsbo:glesbygdsbo:glesbygdsbos:glesbygdsbon:glesbygdsbons:glesbygdsbor:glesbygdsbors:glesbygdsborna:glesbygdsbornas
+914498r4<substantiv>glesbygdslän:glesbygdslän:glesbygdsläns:glesbygdslänet:glesbygdslänets:glesbygdslän:glesbygdsläns:glesbygdslänen:glesbygdslänens
+COMPOUND(556262, 552681): glesbygd + län
+921462r4<substantiv>glesbygdsmack:glesbygdsmack:glesbygdsmacks:glesbygdsmacken:glesbygdsmackens:glesbygdsmackar:glesbygdsmackars:glesbygdsmackarna:glesbygdsmackarnas
+COMPOUND(556262, 598542): glesbygd + mack
+820089r3<substantiv>gleshet:gleshet:gleshets:glesheten:gleshetens::::
+572887r4<adjektiv>gleshårig:gleshårig:gleshårigt:gleshåriga:gleshåriga::::gleshårige
+572890r3<adjektiv>glesmaskig:glesmaskig:glesmaskigt:glesmaskiga:glesmaskiga::::
+691486r4<verb>glesna:glesna:glesnade:glesnat:glesnar:glesna::::::::glesnande:
+799442r3<adjektiv>glesvävd:glesvävd:glesvävt:glesvävda:glesvävda::::
+904567r3<substantiv>gli:gli:glis:gliet:gliets:glin:glins:glina:glinas
+CUSTOM: n n y
+677701r5<substantiv>glia:glia:glias:glian:glians::::
+CUSTOM: n n y
+677705r4<substantiv>gliacell:gliacell:gliacells:gliacellen:gliacellens:gliaceller:gliacellers:gliacellerna:gliacellernas
+COMPOUND(677701, 548515): glia + cell
+677699r5<substantiv>gliavävnad:gliavävnad:gliavävnads:gliavävnaden:gliavävnadens:gliavävnader:gliavävnaders:gliavävnaderna:gliavävnadernas
+DEFINITION 1: Vävnad i hjärnan
+COMPOUND(677701, 550795): glia + vävnad
+904564r3<substantiv>glid:glid:glids:glidet:glidets:glid:glids:gliden:glidens
+CUSTOM: y n
+585343r6<verb>glida:glida:gled:glidit:glider:glid:::::gliden:glidet:glidna:glidande:
+CUSTOM: y n
+891323r3<substantiv>glidare:glidare:glidares:glidaren:glidarens:glidare:glidares:glidarna:glidarnas
+979530r3<substantiv>glidbana:glidbana:glidbanas:glidbanan:glidbanans:glidbanor:glidbanors:glidbanorna:glidbanornas
+820094r3<substantiv>glidflygning:glidflygning:glidflygnings:glidflygningen:glidflygningens:glidflygningar:glidflygningars:glidflygningarna:glidflygningarnas
+820102r3<substantiv>glidflygplan:glidflygplan:glidflygplans:glidflygplanet:glidflygplanets:glidflygplan:glidflygplans:glidflygplanen:glidflygplanens
+979538r3<substantiv>glidflykt:glidflykt:glidflykts:glidflykten:glidflyktens::::
+979542r3<substantiv>glidfriktion:glidfriktion:glidfriktions:glidfriktionen:glidfriktionens:glidfriktioner:glidfriktioners:glidfriktionerna:glidfriktionernas
+564855r3<adjektiv>glidlös:glidlös:glidlöst:glidlösa:glidlösa::::
+CUSTOM: y n n
+775197r4<substantiv>glidmedel:glidmedel:glidmedels:glidmedlet:glidmedlets:glidmedel:glidmedels:glidmedlen:glidmedlens
+COMPOUND(585343, 560532): glida + medel
+691488r3<substantiv>glidning:glidning:glidnings:glidningen:glidningens:glidningar:glidningars:glidningarna:glidningarnas
+CUSTOM: y y glidnings
+875466r3<substantiv>glidsystem:glidsystem:glidsystems:glidsystemet:glidsystemets:glidsystem:glidsystems:glidsystemen:glidsystemens
+820108r3<verb>glidtackla:glidtackla:glidtacklade:glidtacklat:glidtacklar:glidtackla:glidtacklas:glidtacklades:glidtacklats:glidtacklas:glidtacklad:glidtacklat:glidtacklade:glidtacklande:
+820117r3<substantiv>glidtackling:glidtackling:glidtacklings:glidtacklingen:glidtacklingens:glidtacklingar:glidtacklingars:glidtacklingarna:glidtacklingarnas
+729729r4<substantiv>glidyta:glidyta:glidytas:glidytan:glidytans:glidytor:glidytors:glidytorna:glidytornas
+COMPOUND(585343, 595826): glida + yta
+546793r4<verb>glimma:glimma:glimmade:glimmat:glimmar:glimma::::::::glimmande:
+784367r7<substantiv>glimmer:glimmer:glimmers:glimmern:glimmerns:!:!:!:!
+935912r3<substantiv>glimmer:glimmer:glimmers:glimret:glimrets:!:!:!:!
+791356r3<adjektiv>glimmerartad:glimmerartad:glimmerartat:glimmerartade:glimmerartade:!:!:!:
+800965r3<adjektiv>glimmerförande:glimmerförande:glimmerförande:glimmerförande:glimmerförande:!:!:!:
+572893r3<adjektiv>glimmerhaltig:glimmerhaltig:glimmerhaltigt:glimmerhaltiga:glimmerhaltiga::::
+979550r4<substantiv>glimmerskiffer:glimmerskiffer:glimmerskiffers:glimmerskiffern:glimmerskifferns:glimmerskiffrar:glimmerskiffrars:glimmerskiffrarna:glimmerskiffrarnas
+COMPOUND(784367, 776110): glimmer + skiffer
+691489r4<verb>glimra:glimra:glimrade:glimrat:glimrar:glimra::::::::glimrande:
+572896r3<adjektiv>glimrig:glimrig:glimrigt:glimriga:glimriga::::
+551303r4<substantiv>glimt:glimt:glimts:glimten:glimtens:glimtar:glimtars:glimtarna:glimtarnas
+691490r3<verb>glimta:glimta:glimtade:glimtat:glimtar:glimta:::::::::
+691491r3<adverb>glimtvis:glimtvis
+782462r3<egennamn>Glimåkra:Glimåkra:Glimåkras
+CUSTOM: y n Glimåkra
+677713r3<substantiv>gliom:gliom:glioms:gliomet:gliomets:gliom:glioms:gliomen:gliomens
+691500r3<verb>glipa:glipa:glipade:glipat:glipar:glipa:::::::::
+691492r3<substantiv>glipa:glipa:glipas:glipan:glipans:glipor:glipors:gliporna:glipornas
+904575r3<verb>glira:glira:glirade:glirat:glirar:glira:gliras:glirades:glirats:gliras:glirad:glirat:glirade:glirande:!
+CUSTOM: n n y
+691504r3<substantiv>gliring:gliring:glirings:gliringen:gliringens:gliringar:gliringars:gliringarna:gliringarnas
+CUSTOM: y y glirings
+691505r3<substantiv>glissando:glissando:glissandos:glissandot:glissandots:glissandon:glissandons:glissandona:glissandonas
+691506r3<substantiv>glitter:glitter:glitters:glittret:glittrets:!:!:!:!
+801320r3<adjektiv>glitterströdd:glitterströdd:glitterstrött:glitterströdda:glitterströdda::::
+799445r3<adjektiv>glitterögd:glitterögd:glitterögt:glitterögda:glitterögda::::
+546794r3<verb>glittra:glittra:glittrade:glittrat:glittrar:glittra:::::::::
+691508r3<adjektiv>glittrande:glittrande:glittrande:glittrande:glittrande:!:!:!:
+572899r4<adjektiv>glittrig:glittrig:glittrigt:glittriga:glittriga:glittrigare:glittrigast:glittrigaste:
+558932r4<verb>glo:glo:glodde:glott:glor:glo:glos:gloddes:glotts:glos::::gloende:
+549104r13<substantiv>glob:glob:globs:globen:globens:glober:globers:globerna:globernas
+CUSTOM: y n
+691509r5<adjektiv>global:global:globalt:globala:globala:!:!:!:globale::::::::
+783364r3<verb>globalisera:globalisera:globaliserade:globaliserat:globaliserar:globalisera:globaliseras:globaliserades:globaliserats:globaliseras:globaliserad:globaliserat:globaliserade::
+639167r4<substantiv>globalisering:globalisering:globaliserings:globaliseringen:globaliseringens:globaliseringar:globaliseringars:globaliseringarna:globaliseringarnas
+CUSTOM: y y globaliserings
+889669r4<substantiv>globaliseringsråd:globaliseringsråd:globaliseringsråds:globaliseringsrådet:globaliseringsrådets:globaliseringsråd:globaliseringsråds:globaliseringsråden:globaliseringsrådens
+COMPOUND(639167, 552853): globalisering + råd
+820125r3<substantiv>globetrotter:globetrotter:globetrotters:globetrottern:globetrotterns:globetrottrar:globetrottrars:globetrottrarna:globetrottrarnas
+572902r3<adjektiv>globformig:globformig:globformigt:globformiga:globformiga::::
+730425r3<substantiv>globin:globin:globins:globinet:globinets::::
+CUSTOM: n n
+691510r3<substantiv>globulin:globulin:globulins:globulinet:globulinets:globuliner:globuliners:globulinerna:globulinernas
+CUSTOM: y n
+639177r4<substantiv>glokalisering:glokalisering:glokaliserings:glokaliseringen:glokaliseringens:glokaliseringar:glokaliseringars:glokaliseringarna:glokaliseringarnas
+DEFINITION 1: Det att kombinera det globala med det mycket lokala; jämför globalisering
+CUSTOM: y y glokaliserings
+572905r3<adjektiv>glopaktig:glopaktig:glopaktigt:glopaktiga:glopaktiga::::
+681475r4<substantiv>gloria:gloria:glorias:glorian:glorians:glorior:gloriors:gloriorna:gloriornas
+546795r5<verb>glorifiera:glorifiera:glorifierade:glorifierat:glorifierar:glorifiera:glorifieras:glorifierades:glorifierats:glorifieras:glorifierad:glorifierat:glorifierade:glorifierande:
+691518r4<substantiv>glorifiering:glorifiering:glorifierings:glorifieringen:glorifieringens:glorifieringar:glorifieringars:glorifieringarna:glorifieringarnas
+CUSTOM: y y glorifierings
+797779r3<adjektiv>gloriös:gloriös:gloriöst:gloriösa:gloriösa::::
+649151r6<substantiv>glosa:glosa:glosas:glosan:glosans:glosor:glosors:glosorna:glosornas
+CUSTOM: y y
+820137r4<substantiv>glosbok:glosbok:glosboks:glosboken:glosbokens:glosböcker:glosböckers:glosböckerna:glosböckernas
+COMPOUND(649151, 555346): glosa + bok
+820145r4<substantiv>glosförteckning:glosförteckning:glosförtecknings:glosförteckningen:glosförteckningens:glosförteckningar:glosförteckningars:glosförteckningarna:glosförteckningarnas
+COMPOUND(649151, 632352): glosa + förteckning
+572908r3<adjektiv>glosig:glosig:glosigt:glosiga:glosiga::::
+787983r4<substantiv>gloslista:gloslista:gloslistas:gloslistan:gloslistans:gloslistor:gloslistors:gloslistorna:gloslistornas
+COMPOUND(649151, 555151): glosa + lista
+979558r3<substantiv>glossa:glossa:glossas:glossan:glossans:glossor:glossors:glossorna:glossornas
+CUSTOM: y n
+589455r3<verb>glossera:glossera:glosserade:glosserat:glosserar:glossera:::::::::
+CUSTOM: y n
+799448r3<adjektiv>glosögd:glosögd:glosögt:glosögda:glosögda::::
+CUSTOM: y n
+639449r3<adjektiv>glottal:glottal:glottalt:glottala:glottala:!:!:!:
+CUSTOM: y n
+639452r3<substantiv>glottis:glottis:glottis:glottis, glottisen:glottis, glottisens::::
+CUSTOM: y n
+639453r6<verb>gluffa:gluffa:gluffade:gluffat:gluffar:gluffa:gluffas:gluffades:gluffats:gluffas::::gluffande:
+CUSTOM: y n
+639462r6<verb>glufsa:glufsa:glufsade:glufsat:glufsar:glufsa:glufsas:glufsades:glufsats:glufsas::::glufsande:
+CUSTOM: y n
+572911r3<adjektiv>glufsig:glufsig:glufsigt:glufsiga:glufsiga::::
+CUSTOM: y n
+551305r3<substantiv>glugg:glugg:gluggs:gluggen:gluggens:gluggar:gluggars:gluggarna:gluggarnas
+876985r5<adjektiv>gluggig:gluggig:gluggigt:gluggiga:gluggiga::::::::::::
+CUSTOM: y n n
+639468r5<substantiv>glukos:glukos:glukos:glukosen:glukosens:!:!:!:!
+CUSTOM: y n glukos
+546796r4<verb>glunka:glunka:glunkade:glunkat:glunkar:glunka:glunkas:glunkades:glunkats:glunkas:::::
+CUSTOM: y n
+910384r3<substantiv>gluon:gluon:gluons:gluonen:gluonens:gluoner:gluoners:gluonerna:gluonernas
+CUSTOM: n n n
+639469r3<verb>glupa:glupa:glupade:glupat:glupar:glupa:::::::::
+CUSTOM: y n
+691522r3<adjektiv>glupande:glupande:glupande:glupande:glupande:!:!:!:
+572914r3<adjektiv>gluphungrig:gluphungrig:gluphungrigt:gluphungriga:gluphungriga::::
+639473r3<adjektiv>glupsk:glupsk:glupskt:glupska:glupska:glupskare:glupskast:glupskaste:glupske
+820153r3<substantiv>glupskhet:glupskhet:glupskhets:glupskheten:glupskhetens::::
+639477r4<substantiv>glutamat:glutamat:glutamats:glutamatet:glutamatets:glutamat:glutamats:glutamaten:glutamatens
+CUSTOM: y n
+639483r5<substantiv>gluten:gluten:glutens:glutenet, gluten:glutenets, glutens:!:!:!:!
+CUSTOM: y y gluten
+563813r3<adjektiv>glutenfri:glutenfri:glutenfritt:glutenfria:glutenfria::::
+742747r4<substantiv>glutenintolerans:glutenintolerans:glutenintolerans:glutenintoleransen:glutenintoleransens::::
+COMPOUND(639483, 618340): gluten + intolerans
+797782r3<adjektiv>glutinös:glutinös:glutinöst:glutinösa:glutinösa::::
+639487r3<substantiv>glutt:glutt:glutts:glutten:gluttens:gluttar:gluttars:gluttarna:gluttarnas
+CUSTOM: y n
+639495r3<verb>glutta:glutta:gluttade:gluttat:gluttar:glutta:::::::::
+CUSTOM: y n
+979566r3<substantiv>gluttsnäppa:gluttsnäppa:gluttsnäppas:gluttsnäppan:gluttsnäppans:gluttsnäppor:gluttsnäppors:gluttsnäpporna:gluttsnäppornas
+639498r4<substantiv>glycerin:glycerin:glycerins:glycerinet, glycerinen:glycerinets, glycerinens:!:!:!:!
+572917r3<adjektiv>glycerinhaltig:glycerinhaltig:glycerinhaltigt:glycerinhaltiga:glycerinhaltiga::::
+639504r5<substantiv>glycerol:glycerol:glycerols:glycerolen:glycerolens:!:!:!:!
+639516r3<substantiv>glycin:glycin:glycins:glycinet:glycinets:!:!:!:!
+639508r3<substantiv>glycin:glycin:glycins:glycinen:glycinens:glyciner:glyciners:glycinerna:glycinernas
+691524r3<adjektiv>glykemisk:glykemisk:glykemiskt:glykemiska:glykemiska:!:!:!:!
+639519r8<substantiv>glykogen:glykogen:glykogens:glykogenen, glykogenet:glykogenens, glykogenets:glykogener:glykogeners:glykogenerna:glykogenernas
+639529r4<substantiv>glykol:glykol:glykols:glykolen:glykolens:glykoler:glykolers:glykolerna:glykolernas
+639537r4<substantiv>glykos:glykos:glykos:glykosen:glykosens:!:!:!:!
+979574r3<substantiv>glykosid:glykosid:glykosids:glykosiden:glykosidens:glykosider:glykosiders:glykosiderna:glykosidernas
+580369r3<adjektiv>glykosidisk:glykosidisk:glykosidiskt:glykosidiska:glykosidiska::::
+979582r3<substantiv>glyptotek:glyptotek:glyptoteks:glyptoteket:glyptotekets:glyptotek:glyptoteks:glyptoteken:glyptotekens
+763896r3<substantiv>glytt:glytt:glytts:glytten:glyttens:glyttar:glyttars:glyttarna:glyttarnas
+820158r3<adjektiv>glyttig:glyttig:glyttigt:glyttiga:glyttiga:glyttigare:glyttigast:glyttigaste:
+820166r3<substantiv>glyttighet:glyttighet:glyttighets:glyttigheten:glyttighetens:glyttigheter:glyttigheters:glyttigheterna:glyttigheternas
+572920r4<adjektiv>glåmig:glåmig:glåmigt:glåmiga:glåmiga:glåmigare:glåmigast:glåmigaste:glåmige
+820179r3<substantiv>glåmighet:glåmighet:glåmighets:glåmigheten:glåmighetens::::
+552441r3<substantiv>glåpord:glåpord:glåpords:glåpordet:glåpordets:glåpord:glåpords:glåporden:glåpordens
+585346r4<verb>glädja:glädja:gladde:glatt:gläder, glädjer:gläd:glädjas:gladdes:glatts:gläds:gladd:glatt:gladda:glädjande:
+CUSTOM: y n
+691529r3<adjektiv>glädjande:glädjande:glädjande:glädjande:glädjande:!:!:!:
+639538r4<verb>glädjas:glädjas:gladdes:glatts:gläds:gläd:!:!:!:!:::::
+618111r13<substantiv>glädje:glädje:glädjes:glädjen:glädjens::::
+CUSTOM: y y glädje
+756434r4<substantiv>glädjebud:glädjebud:glädjebuds:glädjebudet:glädjebudets:glädjebud:glädjebuds:glädjebuden:glädjebudens
+COMPOUND(618111, 552287): glädje + bud
+691530r4<substantiv>glädjechock:glädjechock:glädjechocks:glädjechocken:glädjechockens:glädjechocker:glädjechockers:glädjechockerna:glädjechockernas
+COMPOUND(618111, 548532): glädje + chock
+675956r6<substantiv>glädjedans:glädjedans:glädjedans:glädjedansen:glädjedansens:glädjedanser:glädjedansers:glädjedanserna:glädjedansernas
+COMPOUND(618111, 548569): glädje + dans
+691538r3<substantiv>glädjedödare:glädjedödare:glädjedödares:glädjedödaren:glädjedödarens:glädjedödare:glädjedödares:glädjedödarna:glädjedödarnas
+CUSTOM: y y glädjedödar
+572921r3<adjektiv>glädjefattig:glädjefattig:glädjefattigt:glädjefattiga:glädjefattiga::::
+584982r3<adjektiv>glädjefull:glädjefull:glädjefullt:glädjefulla:glädjefulla::::
+799451r3<adjektiv>glädjefylld:glädjefylld:glädjefyllt:glädjefyllda:glädjefyllda::::
+564858r3<adjektiv>glädjelös:glädjelös:glädjelöst:glädjelösa:glädjelösa::::
+951339r4<substantiv>glädjepirr:glädjepirr:glädjepirrs:glädjepirret:glädjepirrets::::
+COMPOUND(618111, 938353): glädje + pirr
+691544r3<adjektiv>glädjerik:glädjerik:glädjerikt:glädjerika:glädjerika::::
+691545r4<substantiv>glädjerop:glädjerop:glädjerops:glädjeropet:glädjeropets:glädjerop:glädjerops:glädjeropen:glädjeropens
+COMPOUND(618111, 552845): glädje + rop
+691551r4<substantiv>glädjerus:glädjerus:glädjerus:glädjeruset:glädjerusets:glädjerus:glädjerus:glädjerusen:glädjerusens
+COMPOUND(618111, 552847): glädje + rus
+820183r3<substantiv>glädjesprång:glädjesprång:glädjesprångs:glädjesprånget:glädjesprångets:glädjesprång:glädjesprångs:glädjesprången:glädjesprångens
+849999r3<substantiv>glädjetår:glädjetår:glädjetårs:glädjetåren:glädjetårens:glädjetårar:glädjetårars:glädjetårarna:glädjetårarnas
+768541r4<substantiv>glädjeyra:glädjeyra:glädjeyras:glädjeyran:glädjeyrans:!:!:!:!
+COMPOUND(618111, 557780): glädje + yra
+625381r7<substantiv>gläfs:gläfs:gläfs:gläfset:gläfsets::::
+625386r3<verb>gläfsa:gläfsa:gläfste:gläfst:gläfser:gläfs:gläfsas:gläfstes:gläfsts:::::gläfsande:
+585821r4<verb>glänsa:glänsa:glänste:glänst:glänser:gläns:::::::::
+CUSTOM: y n
+639541r3<adjektiv>glänsande:glänsande:glänsande:glänsande:glänsande:!:!:!:
+639542r3<substantiv>glänt:glänt:::::::
+639543r3<verb>glänta:glänta:gläntade:gläntat:gläntar:glänta:gläntas:gläntades:gläntats:gläntas:gläntad:gläntat:gläntade:gläntande:
+691556r3<substantiv>glänta:glänta:gläntas:gläntan:gläntans:gläntor:gläntors:gläntorna:gläntornas
+639552r2<substantiv>gläntning::::::::
+CUSTOM: y y gläntnings
+546797r4<verb>glätta:glätta:glättade:glättat:glättar:glätta:glättas:glättades:glättats:glättas:glättad:glättat:glättade::
+639553r6<substantiv>glättare:glättare:glättares:glättaren:glättarens:glättare:glättares:glättarna:glättarnas
+CUSTOM: y y glättar
+572924r4<adjektiv>glättig:glättig:glättigt:glättiga:glättiga:glättigare:glättigast:glättigaste:
+742748r3<substantiv>glättighet:glättighet:glättighets:glättigheten:glättighetens:glättigheter:glättigheters:glättigheterna:glättigheternas
+639561r9<substantiv>glöd:glöd:glöds:glöden:glödens:glöd:glöds:glöden:glödens
+CUSTOM: y y glöd
+585348r3<verb>glöda:glöda:glödde:glött:glöder:glöd:::::::::
+CUSTOM: y n
+639564r3<adjektiv>glödande:glödande:glödande:glödande:glödande:!:!:!:
+791359r3<adjektiv>glödbakad:glödbakad:glödbakat:glödbakade:glödbakade:!:!:!:
+572925r3<adjektiv>glödbeständig:glödbeständig:glödbeständigt:glödbeständiga:glödbeständiga::::
+639565r3<verb>glödga:glödga:glödgade:glödgat:glödgar:glödga:glödgas:glödgades:glödgats:glödgas:glödgad:glödgat:glödgade:glödgande:
+875614r4<substantiv>glödgning:glödgning:glödgnings:glödgningen:glödgningens:glödgningar:glödgningars:glödgningarna:glödgningarnas
+572928r3<adjektiv>glödgningsbeständig:glödgningsbeständig:glödgningsbeständigt:glödgningsbeständiga:glödgningsbeständiga::::
+691557r4<adjektiv>glödhet:glödhet:glödhett:glödheta:glödheta::::glödhete::::::::
+850007r3<substantiv>glödhög:glödhög:glödhögs:glödhögen:glödhögens:glödhögar:glödhögars:glödhögarna:glödhögarnas
+594123r3<substantiv>glödlampa:glödlampa:glödlampas:glödlampan:glödlampans:glödlampor:glödlampors:glödlamporna:glödlampornas
+CUSTOM: y y glödlamps
+596939r3<substantiv>glödlampsanslutning:glödlampsanslutning:glödlampsanslutnings:glödlampsanslutningen:glödlampsanslutningens:glödlampsanslutningar:glödlampsanslutningars:glödlampsanslutningarna:glödlampsanslutningarnas
+CUSTOM: n n
+791362r3<adjektiv>glödritad:glödritad:glödritat:glödritade:glödritade:!:!:!:
+801805r3<adjektiv>glödröd:glödröd:glödrött:glödröda:glödröda::::
+659087r5<substantiv>glödtråd:glödtråd:glödtråds:glödtråden:glödtrådens:glödtrådar:glödtrådars:glödtrådarna:glödtrådarnas
+COMPOUND(639561, 552048): glöd + tråd
+884862r3<adjektiv>glödvit:glödvit:glödvitt:glödvita:glödvita::::::::::::
+639571r5<substantiv>glögg:glögg:glöggs:glöggen:glöggens:glöggar:glöggars:glöggarna:glöggarnas
+CUSTOM: y y glögg
+639577r3<verb>glögga:glögga:glöggade:glöggat:glöggar:glögga:::::::::
+639580r4<substantiv>glögglas:glögglas:glögglas:glögglaset:glögglasets:glögglas:glögglas:glögglasen:glögglasens
+COMPOUND(639571, 552440): glögg + glas
+618112r4<verb>glömma:glömma:glömde:glömt:glömmer:glöm:glömmas:glömdes:glömts:glöms:glömd:glömt:glömda::
+618113r3<adjektiv>glömsk:glömsk:glömskt:glömska:glömska::::glömske
+618115r3<substantiv>glömska:glömska:glömskas:glömskan:glömskans::::
+800966r3<adjektiv>glömskebringande:glömskebringande:glömskebringande:glömskebringande:glömskebringande:!:!:!:
+901055r3<verb>glöta:glöta:glötade:glötat:glötar:glöta:glötas:glötades:glötats:glötas:glötad:glötat:glötade:glötande:!
+CUSTOM: n n n
+762218r4<egennamn>GM:GM:
+636028r4<substantiv>g-moll:g-moll:g-molls::::::
+CUSTOM: y n g-moll
+625390r3<substantiv>gnabb:gnabb:gnabbs:gnabbet:gnabbets::::
+591715r3<deponens>gnabbas:gnabbas:gnabbades:gnabbats:gnabbas:
+628076r3<substantiv>gnag:gnag:gnags:gnaget:gnagets::::
+CUSTOM: y n
+649153r3<verb>gnaga:gnaga:gnagde:gnagt:gnager:gnag:gnagas:gnagdes:gnagts:gnags:::::
+CUSTOM: y n
+701799r3<substantiv>gnagande:gnagande:gnagandes:gnagandet:gnagandets::::
+701798r3<adjektiv>gnagande:gnagande:gnagande:gnagande:gnagande:!:!:!:
+615269r3<substantiv>gnagare:gnagare:gnagares:gnagaren:gnagarens:gnagare:gnagares:gnagarna:gnagarnas
+CUSTOM: y y gnagar
+820189r3<substantiv>gnat:gnat:gnats:gnatet:gnatets::::
+CUSTOM: y n
+820193r4<verb>gnata:gnata:gnatade:gnatat:gnatar:gnata:gnatas:gnatades:gnatats:gnatas::::gnatande:
+572931r3<adjektiv>gnatig:gnatig:gnatigt:gnatiga:gnatiga::::
+939956r3<substantiv>gnejs:gnejs:gnejs:gnejsen:gnejsens:gnejser:gnejsers:gnejserna:gnejsernas
+572934r3<adjektiv>gnejsig:gnejsig:gnejsigt:gnejsiga:gnejsiga::::
+895459r7<substantiv>gnek:gnek:gneks:gneket:gnekets::::
+CUSTOM: n n y
+895466r3<verb>gneka:gneka:gnekade:gnekat:gnekar:gneka:!:!:!:!:!:!:!:gnekande:!
+CUSTOM: n n y
+728106r3<egennamn>Gnesta:Gnesta:Gnestas
+CUSTOM: y n Gnesta
+895024r3<substantiv>gnet:gnet:gnets:gneten:gnetens:gnetter:gnetters:gnetterna:gnetternas
+CUSTOM: y n
+945663r4<substantiv>gnet:gnet:gnets:gnetet:gnetets::::
+742749r3<verb>gneta:gneta:gnetade:gnetat:gnetar:gneta::::::::gnetande:
+572937r3<adjektiv>gnetig:gnetig:gnetigt:gnetiga:gnetiga::::
+585349r3<verb>gnida:gnida:gned:gnidit:gnider:gnid:gnidas:gneds:gnidits:gnids:gniden:gnidet:gnidna::
+CUSTOM: y n
+680943r3<adjektiv>gniden:gniden:gnidet:gnidna:gnidna:gnidnare:gnidnast:gnidnaste:
+572940r3<adjektiv>gnidig:gnidig:gnidigt:gnidiga:gnidiga::::
+979588r3<substantiv>gnidning:gnidning:gnidnings:gnidningen:gnidningens:gnidningar:gnidningars:gnidningarna:gnidningarnas
+691558r3<substantiv>gnissel:gnissel:gnissels:gnisslet:gnisslets::::
+563816r3<adjektiv>gnisselfri:gnisselfri:gnisselfritt:gnisselfria:gnisselfria::::
+691560r4<verb>gnissla:gnissla:gnisslade:gnisslat:gnisslar:gnissla::::::::gnisslande:
+820201r3<substantiv>gnissling:gnissling:gnisslings:gnisslingen:gnisslingens::::
+585538r3<verb>gnista:gnista:gnistade:gnistat:gnistar:gnista:::::::::
+585890r4<substantiv>gnista:gnista:gnistas:gnistan:gnistans:gnistor:gnistors:gnistorna:gnistornas
+CUSTOM: y y gnist
+563819r3<adjektiv>gnistfri:gnistfri:gnistfritt:gnistfria:gnistfria::::
+CUSTOM: y n n
+658509r3<verb>gnistra:gnistra:gnistrade:gnistrat:gnistrar:gnistra:!:!:!:!:::::
+691561r3<adjektiv>gnistrande:gnistrande:gnistrande:gnistrande:gnistrande:!:!:!:
+742755r4<substantiv>gnistregn:gnistregn:gnistregns:gnistregnet:gnistregnets:gnistregn:gnistregns:gnistregnen:gnistregnens
+COMPOUND(585890, 552824): gnista + regn
+558933r3<verb>gno:gno:gnodde:gnott:gnor:gno:::::::::
+820205r3<substantiv>gnocchi:gnocchi:gnocchis:gnocchin:gnocchins::::
+625394r5<verb>gnola:gnola:gnolade:gnolat:gnolar:gnola:gnolas:gnolades:gnolats:gnolas:gnolad:gnolat:gnolade:gnolande:
+549106r3<substantiv>gnom:gnom:gnoms:gnomen:gnomens:gnomer:gnomers:gnomerna:gnomernas
+CUSTOM: y n
+580372r3<adjektiv>gnomisk:gnomisk:gnomiskt:gnomiska:gnomiska::::
+554228r4<egennamn>Gnosjö:Gnosjö:Gnosjös, Gnosjö
+CUSTOM: y n Gnosjö
+558725r3<substantiv>gnosticism:gnosticism:gnosticisms:gnosticismen:gnosticismens:!:!:!:!
+979596r3<substantiv>gnostiker:gnostiker:gnostikers:gnostikern:gnostikerns:gnostiker:gnostikers:gnostikerna:gnostikernas
+CUSTOM: y n
+580375r3<adjektiv>gnostisk:gnostisk:gnostiskt:gnostiska:gnostiska::::
+CUSTOM: y n
+555040r4<substantiv>gnu:gnu:gnus:gnun:gnuns:gnuer:gnuers:gnuerna:gnuernas
+CUSTOM: y n
+546798r5<verb>gnugga:gnugga:gnuggade:gnuggat:gnuggar:gnugga:gnuggas:gnuggades:gnuggats:gnuggas:gnuggad:gnuggat:gnuggade:gnuggande:
+957703r3<substantiv>gnuggis:gnuggis:gnuggis:gnuggisen:gnuggisens:gnuggisar:gnuggisars:gnuggisarna:gnuggisarnas
+820209r3<substantiv>gnuggning:gnuggning:gnuggnings:gnuggningen:gnuggningens:gnuggningar:gnuggningars:gnuggningarna:gnuggningarnas
+903784r4<substantiv>gnukalv:gnukalv:gnukalvs:gnukalven:gnukalvens:gnukalvar:gnukalvars:gnukalvarna:gnukalvarnas
+COMPOUND(555040, 551497): gnu + kalv
+CUSTOM: y n
+691562r3<substantiv>gnutta:gnutta:gnuttas:gnuttan:gnuttans:gnuttor:gnuttors:gnuttorna:gnuttornas
+CUSTOM: y n
+558934r4<verb>gny:gny:gnydde:gnytt:gnyr:gny:gnys:gnyddes:gnytts:gnys::::gnyende:
+847269r4<substantiv>gny:gny:gnys:gnyet:gnyets::::
+691564r3<substantiv>gnyende:gnyende:gnyendes:gnyendet:gnyendets::::
+552443r10<substantiv>gnägg:gnägg:gnäggs:gnägget:gnäggets::::
+CUSTOM: y n
+546799r4<verb>gnägga:gnägga:gnäggade:gnäggat:gnäggar:gnägga::::::::gnäggande:
+691568r3<substantiv>gnäggning:gnäggning:gnäggnings:gnäggningen:gnäggningens:gnäggningar:gnäggningars:gnäggningarna:gnäggningarnas
+CUSTOM: y y gnäggnings
+631653r3<substantiv>gnäll:gnäll:gnälls:gnället:gnällets::::
+691569r5<verb>gnälla:gnälla:gnällde:gnällt:gnäller:gnäll:gnällas:gnälldes:gnällts:gnälls::::gnällande:
+742762r3<substantiv>gnällande:gnällande:gnällandes:gnällandet:gnällandets::::
+566106r4<adjektiv>gnällig:gnällig:gnälligt:gnälliga:gnälliga:gnälligare:gnälligast:gnälligaste:gnällige
+820217r3<substantiv>gnällighet:gnällighet:gnällighets:gnälligheten:gnällighetens::::
+820221r3<substantiv>gnällmåns:gnällmåns:gnällmåns:gnällmånsen:gnällmånsens:gnällmånsar:gnällmånsars:gnällmånsarna:gnällmånsarnas
+820228r3<substantiv>gnällspik:gnällspik:gnällspiks:gnällspiken:gnällspikens:gnällspikar:gnällspikars:gnällspikarna:gnällspikarnas
+820236r3<substantiv>gnöl:gnöl:gnöls:gnölet:gnölets::::
+CUSTOM: n n y
+820240r3<verb>gnöla:gnöla:gnölade:gnölat:gnölar:gnöla:::::::::
+874096r3<egennamn>GOB:GOB:!
+CUSTOM: n n 
+549107r9<substantiv>gobeläng:gobeläng:gobelängs:gobelängen:gobelängens:gobelänger:gobelängers:gobelängerna:gobelängernas
+CUSTOM: y y gobeläng
+630493r4<substantiv>gobelängbroderi:gobelängbroderi:gobelängbroderis:gobelängbroderiet, gobelängbroderit:gobelängbroderiets, gobelängbroderits:gobelängbroderier:gobelängbroderiers:gobelängbroderierna:gobelängbroderiernas
+COMPOUND(549107, 630468): gobeläng + broderi
+677734r4<substantiv>gobelängsöm:gobelängsöm:gobelängsöms:gobelängsömmen:gobelängsömmens:gobelängsömmar:gobelängsömmars:gobelängsömmarna:gobelängsömmarnas
+COMPOUND(549107, 627861): gobeläng + söm
+677743r4<substantiv>gobelängteknik:gobelängteknik:gobelängtekniks:gobelängtekniken:gobelängteknikens:gobelängtekniker:gobelängteknikers:gobelängteknikerna:gobelängteknikernas
+COMPOUND(549107, 603854): gobeläng + teknik
+677753r4<substantiv>gobelängull:gobelängull:gobelängulls:gobelängullen:gobelängullens:!:!:!:!
+COMPOUND(549107, 627876): gobeläng + ull
+677726r4<substantiv>gobelängväv:gobelängväv:gobelängvävs:gobelängväven:gobelängvävens:gobelängvävar:gobelängvävars:gobelängvävarna:gobelängvävarnas
+COMPOUND(549107, 552117): gobeläng + väv
+677759r4<substantiv>gobelängvävstol:gobelängvävstol:gobelängvävstols:gobelängvävstolen:gobelängvävstolens:gobelängvävstolar:gobelängvävstolars:gobelängvävstolarna:gobelängvävstolarnas
+COMPOUND(549107, 677167): gobeläng + vävstol
+649158r3<adjektiv>godan:godan:::::::
+623092r3<adjektiv>godartad:godartad:godartat:godartade:godartade:!:!:!:godartade
+691571r3<substantiv>godbit:godbit:godbits:godbiten:godbitens:godbitar:godbitars:godbitarna:godbitarnas
+554928r3<interjektion>goddag:goddag
+559212r14<adjektiv>god, go:god, go:gott:goda:goda:godare, bättre:godast, bäst:godaste, bästa, bäste:gode::::::::
+CUSTOM: y n
+691572r3<substantiv>godhet:godhet:godhets:godheten:godhetens::::
+CUSTOM: y y godhets
+584985r3<adjektiv>godhetsfull:godhetsfull:godhetsfullt:godhetsfulla:godhetsfulla::::
+691573r3<adjektiv>godhjärtad:godhjärtad:godhjärtat:godhjärtade:godhjärtade:!:!:!:
+566107r3<adjektiv>godhällig:godhällig:godhälligt:godhälliga:godhälliga::::
+691574r3<substantiv>goding:goding:godings:godingen:godingens:godingar:godingars:godingarna:godingarnas
+620683r8<substantiv>godis:godis:godis:godiset:godisets:!:!:!:!
+CUSTOM: y y godis
+903776r4<substantiv>godis:godis:godis:godisen:godisens:godisar:godisars:godisarna:godisarnas
+DEFINITION 1: godisbit
+943912r4<substantiv>godisdisk:godisdisk:godisdisks:godisdisken:godisdiskens:godisdiskar:godisdiskars:godisdiskarna:godisdiskarnas
+COMPOUND(620683, 559465): godis + disk
+900219r4<substantiv>godiston:godiston:godistons:godistonen:godistonens:godistoner:godistoners:godistonerna:godistonernas
+COMPOUND(620683, 603900): godis + ton
+CUSTOM: y n n
+554930r3<interjektion>godkväll:godkväll
+593204r3<adjektiv>godkänd:godkänd:godkänt:godkända:godkända::::
+593197r4<verb>godkänna:godkänna:godkände:godkänt:godkänner:godkänn:godkännas:godkändes:godkänts:godkänns, godkännes:godkänd:godkänt:godkända::
+593198r3<substantiv>godkännande:godkännande:godkännandes:godkännandet:godkännandets:godkännanden:godkännandens:godkännandena:godkännandenas
+569169r3<adjektiv>godkännbar:godkännbar:godkännbart:godkännbara:godkännbara::::
+820244r3<adjektiv>godlynt:godlynt:godlynt:godlynta:godlynta::::godlynte
+820247r3<substantiv>godlynthet:godlynthet:godlynthets:godlyntheten:godlynthetens::::
+958437r3<substantiv>godmanskap:godmanskap:godmanskaps:godmanskapet:godmanskapets::::
+572943r4<adjektiv>godmodig:godmodig:godmodigt:godmodiga:godmodiga:godmodigare:godmodigast:godmodigaste:godmodige
+820255r3<substantiv>godmodighet:godmodighet:godmodighets:godmodigheten:godmodighetens::::
+554931r3<interjektion>godmorgon:godmorgon
+554932r6<interjektion>godnatt:godnatt
+CUSTOM: y n godnatt
+763904r4<substantiv>godnattkyss:godnattkyss:godnattkyss:godnattkyssen:godnattkyssens:godnattkyssar:godnattkyssars:godnattkyssarna:godnattkyssarnas
+COMPOUND(554932, 551656): godnatt + kyss
+763911r4<substantiv>godnattsaga:godnattsaga:godnattsagas:godnattsagan:godnattsagans:godnattsagor:godnattsagors:godnattsagorna:godnattsagornas
+COMPOUND(554932, 595086): godnatt + saga
+935352r4<substantiv>godnattstund:godnattstund:godnattstunds:godnattstunden:godnattstundens:godnattstunder:godnattstunders:godnattstunderna:godnattstundernas
+COMPOUND(554932, 550593): godnatt + stund
+593205r3<substantiv>godo:godo::::!:!:!:!
+979602r3<substantiv>godord:godord:godords:godordet:godordets:godord:godords:godorden:godordens
+CUSTOM: y n
+589459r3<verb>godronnera:godronnera:godronnerade:godronnerat:godronnerar:godronnera:::::::::
+552445r16<substantiv>gods:gods:gods:godset:godsets:gods:gods:godsen:godsens
+CUSTOM: y y
+549108r3<substantiv>godsak:godsak:godsaks:godsaken:godsakens:godsaker:godsakers:godsakerna:godsakernas
+954513r4<substantiv>godsbangård:godsbangård:godsbangårds:godsbangården:godsbangårdens:godsbangårdar:godsbangårdars:godsbangårdarna:godsbangårdarnas
+COMPOUND(552445, 550862): gods + bangård
+979608r3<substantiv>godsbefordran:godsbefordran:godsbefordrans::::::
+820259r3<substantiv>godsexpedition:godsexpedition:godsexpeditions:godsexpeditionen:godsexpeditionens:godsexpeditioner:godsexpeditioners:godsexpeditionerna:godsexpeditionernas
+820267r3<substantiv>godsfinka:godsfinka:godsfinkas:godsfinkan:godsfinkans:godsfinkor:godsfinkors:godsfinkorna:godsfinkornas
+914596r4<substantiv>godsflöde:godsflöde:godsflödes:godsflödet:godsflödets:godsflöden:godsflödens:godsflödena:godsflödenas
+COMPOUND(552445, 625334): gods + flöde
+896972r3<substantiv>godsförvaltare:godsförvaltare:godsförvaltares:godsförvaltaren:godsförvaltarens:godsförvaltare:godsförvaltares:godsförvaltarna:godsförvaltarnas
+820275r3<substantiv>godsherre:godsherre:godsherres:godsherren:godsherrens:godsherrar:godsherrars:godsherrarna:godsherrarnas
+791365r3<adjektiv>godsinnad:godsinnad:godsinnat:godsinnade:godsinnade:!:!:!:
+691575r4<adjektiv>godsint:godsint:godsint:godsinta:godsinta:godsintare:godsintast:godsintaste:godsinte
+820286r3<substantiv>godsinthet:godsinthet:godsinthets:godsintheten:godsinthetens::::
+820290r3<substantiv>godsmagasin:godsmagasin:godsmagasins:godsmagasinet:godsmagasinets:godsmagasin:godsmagasins:godsmagasinen:godsmagasinens
+896978r4<substantiv>godsmottagare:godsmottagare:godsmottagares:godsmottagaren:godsmottagarens:godsmottagare:godsmottagares:godsmottagarna:godsmottagarnas
+COMPOUND(552445, 593273): gods + mottagare
+979610r4<substantiv>godsslag:godsslag:godsslags:godsslaget:godsslagets:godsslag:godsslags:godsslagen:godsslagens
+COMPOUND(552445, 608035): gods + slag
+961354r4<substantiv>godsterminal:godsterminal:godsterminals:godsterminalen:godsterminalens:godsterminaler:godsterminalers:godsterminalerna:godsterminalernas
+COMPOUND(552445, 550657): gods + terminal
+979616r4<substantiv>godstjocklek:godstjocklek:godstjockleks:godstjockleken:godstjocklekens:godstjocklekar:godstjocklekars:godstjocklekarna:godstjocklekarnas
+COMPOUND(552445, 599019): gods + tjocklek
+742767r4<substantiv>godstrafik:godstrafik:godstrafiks:godstrafiken:godstrafikens::::
+COMPOUND(552445, 673056): gods + trafik
+742771r4<substantiv>godstransport:godstransport:godstransports:godstransporten:godstransportens:godstransporter:godstransporters:godstransporterna:godstransporternas
+COMPOUND(552445, 550690): gods + transport
+CUSTOM: y y godstransport
+607221r4<substantiv>godståg:godståg:godstågs:godståget:godstågets:godståg:godstågs:godstågen:godstågens
+979624r4<substantiv>godstågslok:godstågslok:godstågsloks:godstågsloket:godstågslokets:godstågslok:godstågsloks:godstågsloken:godstågslokens
+COMPOUND(607221, 552674): godståg + lok
+598283r3<substantiv>godsvagn:godsvagn:godsvagns:godsvagnen:godsvagnens:godsvagnar:godsvagnars:godsvagnarna:godsvagnarnas
+CUSTOM: y y godsvagns
+609570r3<substantiv>godsägare:godsägare:godsägares:godsägaren:godsägarens:godsägare:godsägares:godsägarna:godsägarnas
+CUSTOM: y y godsägar
+625397r6<verb>godtaga, godta:godta, godtaga:godtog:godtagit:godtar, godtager:godta, godtag:godtas, godtagas:godtogs:godtagits:godtas, godtags, godtages:godtagen:godtaget:godtagna::
+569172r3<adjektiv>godtagbar:godtagbar:godtagbart:godtagbara:godtagbara::::
+820296r3<substantiv>godtagbarhet:godtagbarhet:godtagbarhets:godtagbarheten:godtagbarhetens::::
+820300r3<substantiv>godtemplare:godtemplare:godtemplares:godtemplaren:godtemplarens:godtemplare:godtemplares:godtemplarna:godtemplarnas
+800967r3<adjektiv>godtroende:godtroende:godtroende:godtroende:godtroende:!:!:!:
+725696r4<adjektiv>godtrogen:godtrogen:godtroget:godtrogna:godtrogna::::godtrogne
+COMPOUND(559212, 619812): god, go + trogen
+820306r3<substantiv>godtrogenhet:godtrogenhet:godtrogenhets:godtrogenheten:godtrogenhetens::::
+691577r3<substantiv>godtycke:godtycke:godtyckes:godtycket:godtyckets::::
+566110r3<adjektiv>godtycklig:godtycklig:godtyckligt:godtyckliga:godtyckliga::::
+691581r4<substantiv>godtycklighet:godtycklighet:godtycklighets:godtyckligheten:godtycklighetens:godtyckligheter:godtyckligheters:godtyckligheterna:godtyckligheternas
+CUSTOM: y y godtycklighets
+566111r3<adjektiv>godvillig:godvillig:godvilligt:godvilliga:godvilliga::::
+943286r3<egennamn>Goethe:Goethe:Goethes
+589463r3<verb>goffrera:goffrera:goffrerade:goffrerat:goffrerar:goffrera:::::::::
+634401r4<substantiv>goja:goja:gojas:gojan:gojans:gojor:gojors:gojorna:gojornas
+DEFINITION 1: papegoja
+CUSTOM: y n
+631477r5<substantiv>goja:goja:gojas:gojan:gojans::::
+DEFINITION 1: lera eller kladd
+CUSTOM: y n
+914646r3<substantiv>gojibär:gojibär:gojibärs:gojibäret:gojibärets:gojibär:gojibärs:gojibären:gojibärens
+820310r7<substantiv>gokart:gokart:gokarts:gokarten:gokartens::::
+CUSTOM: y n
+914606r4<substantiv>gokartbana:gokartbana:gokartbanas:gokartbanan:gokartbanans:gokartbanor:gokartbanors:gokartbanorna:gokartbanornas
+COMPOUND(820310, 556870): gokart + bana
+914616r4<substantiv>gokartbil:gokartbil:gokartbils:gokartbilen:gokartbilens:gokartbilar:gokartbilars:gokartbilarna:gokartbilarnas
+COMPOUND(820310, 550885): gokart + bil
+914626r4<substantiv>gokartkörning:gokartkörning:gokartkörnings:gokartkörningen:gokartkörningens:gokartkörningar:gokartkörningars:gokartkörningarna:gokartkörningarnas
+COMPOUND(820310, 631838): gokart + körning
+914636r4<substantiv>gokartolycka:gokartolycka:gokartolyckas:gokartolyckan:gokartolyckans:gokartolyckor:gokartolyckors:gokartolyckorna:gokartolyckornas
+COMPOUND(820310, 560318): gokart + olycka
+924501r3<verb>gola:gola:golade:golat:golar:gola:::::::::
+874269r3<egennamn>Goldman Sachs:Goldman Sachs:Goldman Sachs
+658190r3<substantiv>goldonder:goldonder:goldonders:goldondern:goldonderns:goldondrar:goldondrars:goldondrarna:goldondrarnas
+624439r10<substantiv>golf:golf:golfs:golfen:golfens:!:!:!:!
+CUSTOM: y y golf
+628087r4<substantiv>golf:golf:golfs:golfen:golfens:golfer:golfers:golferna:golfernas
+DEFINITION 1: En större vik eller bukt.
+787281r3<verb>golfa:golfa:golfade:golfat:golfar:golfa::::::::golfande:
+742779r3<substantiv>golfare:golfare:golfares:golfaren:golfarens:golfare:golfares:golfarna:golfarnas
+850016r3<substantiv>golfbag:golfbag:golfbags:golfbagen:golfbagens:golfbagar:golfbagars:golfbagarna:golfbagarnas
+691582r4<substantiv>golfbana:golfbana:golfbanas:golfbanan:golfbanans:golfbanor:golfbanors:golfbanorna:golfbanornas
+COMPOUND(624439, 556870): golf + bana
+CUSTOM: y y golfbane
+691583r4<substantiv>golfboll:golfboll:golfbolls:golfbollen:golfbollens:golfbollar:golfbollars:golfbollarna:golfbollarnas
+COMPOUND(624439, 550928): golf + boll
+691591r4<substantiv>golfklubb:golfklubb:golfklubbs:golfklubben:golfklubbens:golfklubbar:golfklubbars:golfklubbarna:golfklubbarnas
+COMPOUND(624439, 551547): golf + klubb
+691593r4<substantiv>golfklubba:golfklubba:golfklubbas:golfklubban:golfklubbans:golfklubbor:golfklubbors:golfklubborna:golfklubbornas
+COMPOUND(624439, 556183): golf + klubba
+820314r3<substantiv>golgatavandring:golgatavandring:golgatavandrings:golgatavandringen:golgatavandringens:golgatavandringar:golgatavandringars:golgatavandringarna:golgatavandringarnas
+789028r3<egennamn>Goliat:Goliat:Goliats
+552446r22<substantiv>golv:golv:golvs:golvet:golvets:golv:golvs:golven:golvens
+CUSTOM: y y golv
+691594r3<verb>golva:golva:golvade:golvat:golvar:golva:golvas:golvades:golvats:golvas:golvad:golvat:golvade::
+602082r3<substantiv>golventreprenör:golventreprenör:golventreprenörs:golventreprenören:golventreprenörens:golventreprenörer:golventreprenörers:golventreprenörerna:golventreprenörernas
+609576r3<substantiv>golvläggare:golvläggare:golvläggares:golvläggaren:golvläggarens:golvläggare:golvläggares:golvläggarna:golvläggarnas
+CUSTOM: y y golvläggar
+820322r4<substantiv>golvmopp:golvmopp:golvmopps:golvmoppen:golvmoppens:golvmoppar:golvmoppars:golvmopparna:golvmopparnas
+COMPOUND(552446, 820323): golv + mopp
+820332r3<substantiv>golvning:golvning:golvnings:golvningen:golvningens:golvningar:golvningars:golvningarna:golvningarnas
+892947r4<substantiv>golvpelare:golvpelare:golvpelares:golvpelaren:golvpelarens:golvpelare:golvpelares:golvpelarna:golvpelarnas
+COMPOUND(552446, 609240): golv + pelare
+742785r4<substantiv>golvplanka:golvplanka:golvplankas:golvplankan:golvplankans:golvplankor:golvplankors:golvplankorna:golvplankornas
+COMPOUND(552446, 594874): golv + planka
+594125r3<substantiv>golvplatta:golvplatta:golvplattas:golvplattan:golvplattans:golvplattor:golvplattors:golvplattorna:golvplattornas
+598291r3<substantiv>golvslip:golvslip:golvslips:golvslipen:golvslipens:golvslipar:golvslipars:golvsliparna:golvsliparnas
+742793r4<substantiv>golvslipning:golvslipning:golvslipnings:golvslipningen:golvslipningens:golvslipningar:golvslipningars:golvslipningarna:golvslipningarnas
+COMPOUND(552446, 635311): golv + slipning
+960227r4<substantiv>golvtilja:golvtilja:golvtiljas:golvtiljan:golvtiljans:golvtiljor:golvtiljors:golvtiljorna:golvtiljornas
+COMPOUND(552446, 640689): golv + tilja
+763919r4<substantiv>golvur:golvur:golvurs:golvuret:golvurets:golvur:golvurs:golvuren:golvurens
+COMPOUND(552446, 553080): golv + ur
+765647r4<substantiv>golvyta:golvyta:golvytas:golvytan:golvytans:golvytor:golvytors:golvytorna:golvytornas
+COMPOUND(552446, 595826): golv + yta
+558935r3<substantiv>gom:gom:goms:gommen:gommens:gommar:gommars:gommarna:gommarnas
+820340r3<substantiv>gomsegel:gomsegel:gomsegels:gomseglet:gomseglets:gomsegel:gomsegels:gomseglen:gomseglens
+820346r3<substantiv>gomspalt:gomspalt:gomspalts:gomspalten:gomspaltens::::
+961362r3<verb>gona:gona:gonade:gonat:gonar:gona:::::::::
+CUSTOM: n n y
+979630r3<substantiv>gonad:gonad:gonads:gonaden:gonadens:gonader:gonaders:gonaderna:gonadernas
+549116r4<substantiv>gondol:gondol:gondols:gondolen:gondolens:gondoler:gondolers:gondolerna:gondolernas
+CUSTOM: y y gondol
+914654r4<substantiv>gondolbana:gondolbana:gondolbanas:gondolbanan:gondolbanans:gondolbanor:gondolbanors:gondolbanorna:gondolbanornas
+COMPOUND(549116, 556870): gondol + bana
+558937r3<substantiv>gondoljär:gondoljär:gondoljärs:gondoljären:gondoljärens:gondoljärer:gondoljärers:gondoljärerna:gondoljärernas
+820350r3<substantiv>gonggong:gonggong:gonggongs:gonggongen:gonggongens:gonggongar:gonggongars:gonggongarna:gonggongarnas
+580378r3<adjektiv>goniometrisk:goniometrisk:goniometriskt:goniometriska:goniometriska::::
+691602r3<substantiv>gonorré:gonorré:gonorrés:gonorrén:gonorréns::::
+CUSTOM: y y gonorré
+855003r5<egennamn>Gonzalez:Gonzalez:Gonzalez
+820358r3<substantiv>goodwill:goodwill:goodwills:goodwillen:goodwillens::::
+800968r3<adjektiv>goodwillskapande:goodwillskapande:goodwillskapande:goodwillskapande:goodwillskapande:!:!:!:
+639188r4<verb>googla:googla:googlade:googlat:googlar:googla:googlas:googlades:googlats:googlas::::googlande:
+DEFINITION 1: Söka efter information (exempelvis med sökmotorn Google) på Internet 
+705898r3<egennamn>Google:Google:Googles
+CUSTOM: y n Google
+873172r3<egennamn>Gorbatjov:Gorbatjov:Gorbatjovs
+580381r3<adjektiv>gordisk:gordisk:gordiskt:gordiska:gordiska::::
+860935r3<egennamn>Gordon:Gordon:Gordons
+820362r3<substantiv>gorgonzola:gorgonzola:gorgonzolas:gorgonzolan:gorgonzolans::::
+820366r3<substantiv>gorgonzolaost:gorgonzolaost:gorgonzolaosts:gorgonzolaosten:gorgonzolaostens:gorgonzolaostar:gorgonzolaostars:gorgonzolaostarna:gorgonzolaostarnas
+558480r3<substantiv>gorilla:gorilla:gorillas:gorillan:gorillans:gorillor:gorillors:gorillorna:gorillornas
+CUSTOM: y y gorilla
+546800r4<verb>gorma:gorma:gormade:gormat:gormar:gorma::::::::gormande:
+572946r3<adjektiv>gormig:gormig:gormigt:gormiga:gormiga::::
+555476r5<verb>gosa:gosa:gosade:gosat:gosar:gosa:::::::::
+DEFINITION 1: Kela
+DEFINITION 2: Nojsa
+640359r3<substantiv>gosedjur:gosedjur:gosedjurs:gosedjuret:gosedjurets:gosedjur:gosedjurs:gosedjuren:gosedjurens
+820374r3<substantiv>gosefilt:gosefilt:gosefilts:gosefilten:gosefiltens:gosefiltar:gosefiltars:gosefiltarna:gosefiltarnas
+959012r3<substantiv>gosekanin:gosekanin:gosekanins:gosekaninen:gosekaninens:gosekaniner:gosekaniners:gosekaninerna:gosekaninernas
+572952r4<adjektiv>gosig:gosig:gosigt:gosiga:gosiga:gosigare:gosigast:gosigaste:gosige
+742794r4<substantiv>gospel:gospel:gospels:gospeln:gospelns::::
+CUSTOM: y y gospel
+953693r3<substantiv>gospeldänga:gospeldänga:gospeldängas:gospeldängan:gospeldängans:gospeldängor:gospeldängors:gospeldängorna:gospeldängornas
+820386r4<substantiv>gospelmusik:gospelmusik:gospelmusiks:gospelmusiken:gospelmusikens::::
+COMPOUND(742794, 550058): gospel + musik
+572955r4<adjektiv>gossaktig:gossaktig:gossaktigt:gossaktiga:gossaktiga::::gossaktige
+820391r3<substantiv>gossaktighet:gossaktighet:gossaktighets:gossaktigheten:gossaktighetens::::
+820395r3<substantiv>gossansikte:gossansikte:gossansiktes:gossansiktet:gossansiktets:gossansikten:gossansiktens:gossansiktena:gossansiktenas
+559057r7<substantiv>gosse:gosse:gosses:gossen:gossens:gossar:gossars:gossarna:gossarnas
+CUSTOM: y y
+742798r3<substantiv>gossebarn:gossebarn:gossebarns:gossebarnet:gossebarnets:gossebarn:gossebarns:gossebarnen:gossebarnens
+742804r4<substantiv>gosskör:gosskör:gosskörs:gosskören:gosskörens:gosskörer:gosskörers:gosskörerna:gosskörernas
+COMPOUND(559057, 549874): gosse + kör
+820403r3<substantiv>gossopran:gossopran:gossoprans:gossopranen:gossopranens:gossopraner:gossopraners:gossopranerna:gossopranernas
+820411r3<substantiv>gossröst:gossröst:gossrösts:gossrösten:gossröstens:gossröster:gossrösters:gossrösterna:gossrösternas
+622699r3<substantiv>got:got:gots:goten:gotens:goter:goters:goterna:goternas
+691603r3<substantiv>gotik:gotik:gotiks:gotiken:gotikens::::
+589467r3<verb>gotisera:gotisera:gotiserade:gotiserat:gotiserar:gotisera:::::::::
+580382r4<adjektiv>gotisk:gotisk:gotiskt:gotiska:gotiska::::gotiske
+553214r3<egennamn>Gotland:Gotland:Gotlands
+CUSTOM: y n Gotlands
+820419r3<substantiv>gotlandsruss:gotlandsruss:gotlandsruss:gotlandsrusset:gotlandsrussets:gotlandsruss:gotlandsruss:gotlandsrussen:gotlandsrussens
+691605r3<adjektiv>gotländsk:gotländsk:gotländskt:gotländska:gotländska:!:!:!:gotländske
+691607r3<substantiv>gotländska:gotländska:gotländskas:gotländskan:gotländskans:gotländskor:gotländskors:gotländskorna:gotländskornas
+691615r3<substantiv>gotlänning:gotlänning:gotlännings:gotlänningen:gotlänningens:gotlänningar:gotlänningars:gotlänningarna:gotlänningarnas
+CUSTOM: y y gotlännings
+802301r3<egennamn>Gotska:Gotska:
+555929r10<adverb>gott:gott
+CUSTOM: y y gott
+631654r3<verb>gotta:gotta:gottade:gottat:gottar:gotta:::::::::
+820424r3<substantiv>gottegris:gottegris:gottegris:gottegrisen:gottegrisens:gottegrisar:gottegrisars:gottegrisarna:gottegrisarnas
+972127r3<egennamn>Gottfrid:Gottfrid:Gottfrids
+691623r5<verb>gottgöra:gottgöra:gottgjorde:gottgjort:gottgör:gottgör:gottgöras:gottgjordes:gottgjorts:gottgörs, gottgöres:gottgjord:gottgjort:gottgjorda::
+COMPOUND(555929, 555241): gott + göra
+691631r3<substantiv>gottgörelse:gottgörelse:gottgörelses:gottgörelsen:gottgörelsens:gottgörelser:gottgörelsers:gottgörelserna:gottgörelsernas
+CUSTOM: y y gottgörelse +gottgörelse
+990151r3<egennamn>Gotthard:Gotthard:Gotthards
+876281r3<substantiv>gottisaffär:gottisaffär:gottisaffärs:gottisaffären:gottisaffärens:gottisaffärer:gottisaffärers:gottisaffärerna:gottisaffärernas
+820431r3<substantiv>gottispåse:gottispåse:gottispåses:gottispåsen:gottispåsens:gottispåsar:gottispåsars:gottispåsarna:gottispåsarnas
+820439r4<substantiv>gouache:gouache:gouaches:gouachen:gouachens:gouacher:gouachers:gouacherna:gouachernas
+DEFINITION 1: Målning med täckande vattenfärg
+820447r3<substantiv>goudaost:goudaost:goudaosts:goudaosten:goudaostens:goudaostar:goudaostars:goudaostarna:goudaostarnas
+820455r3<substantiv>gourmand:gourmand:gourmands:gourmanden:gourmandens:gourmander:gourmanders:gourmanderna:gourmandernas
+691632r3<substantiv>gourmé:gourmé:gourmés:gourmén:gourméns:gourméer:gourméers:gourméerna:gourméernas
+CUSTOM: y y gourmé
+742812r5<substantiv>gourmet:gourmet:gourmets:gourmeten:gourmetens:gourmeter:gourmeters:gourmeterna:gourmeternas
+CUSTOM: y y gourmet
+742820r4<substantiv>gourmetrestaurang:gourmetrestaurang:gourmetrestaurangs:gourmetrestaurangen:gourmetrestaurangens:gourmetrestauranger:gourmetrestaurangers:gourmetrestaurangerna:gourmetrestaurangernas
+COMPOUND(742812, 550387): gourmet + restaurang
+677927r6<substantiv>gourmetsmör:gourmetsmör:gourmetsmörs:gourmetsmöret:gourmetsmörets:!:!:!:!
+COMPOUND(742812, 622554): gourmet + smör
+589471r3<verb>goutera:goutera:gouterade:gouterat:gouterar:goutera:::::::::
+929636r3<förkortning>gps:gps
+856333r3<egennamn>Graaf:Graaf:Graafs
+901064r13<substantiv>graal, gral:gral, graal:grals, graals:gralen, graalen:gralens, graalens::::
+CUSTOM: n n y
+551307r4<substantiv>grabb:grabb:grabbs:grabben:grabbens:grabbar:grabbars:grabbarna:grabbarnas
+CUSTOM: y y
+691633r3<verb>grabba:grabba:grabbade:grabbat:grabbar:grabba:::::::::
+820463r3<substantiv>grabbatag:grabbatag:grabbatags:grabbataget:grabbatagets:grabbatag:grabbatags:grabbatagen:grabbatagens
+914664r4<substantiv>grabbgäng:grabbgäng:grabbgängs:grabbgänget:grabbgängets:grabbgäng:grabbgängs:grabbgängen:grabbgängens
+COMPOUND(551307, 552456): grabb + gäng
+572958r4<adjektiv>grabbig:grabbig:grabbigt:grabbiga:grabbiga:grabbigare:grabbigast:grabbigaste:grabbige
+691634r3<substantiv>grabbighet:grabbighet:grabbighets:grabbigheten:grabbighetens::::
+CUSTOM: y y grabbighets
+742821r3<substantiv>grabbnäve:grabbnäve:grabbnäves:grabbnäven:grabbnävens:grabbnävar:grabbnävars:grabbnävarna:grabbnävarnas
+625406r4<substantiv>grace:grace:graces:gracen:gracens:gracer:gracers:gracerna:gracernas
+742829r4<adjektiv>gracil:gracil:gracilt:gracila:gracila:gracilare:gracilast:gracilaste:gracile::::::::
+CUSTOM: y n
+691638r3<adjektiv>graciös:graciös:graciöst:graciösa:graciösa:graciösare:graciösast:graciösaste:graciöse
+549117r28<substantiv>grad:grad:grads:graden:gradens:grader:graders:graderna:gradernas
+CUSTOM: y y grad
+691643r4<substantiv>gradbeteckning:gradbeteckning:gradbetecknings:gradbeteckningen:gradbeteckningens:gradbeteckningar:gradbeteckningars:gradbeteckningarna:gradbeteckningarnas
+COMPOUND(549117, 550884): grad + beteckning
+CUSTOM: y y gradbetecknings
+586758r4<verb>gradera:gradera:graderade:graderat:graderar:gradera:graderas:graderades:graderats:graderas:graderad:graderat:graderade::
+691645r3<substantiv>gradering:gradering:graderings:graderingen:graderingens:graderingar:graderingars:graderingarna:graderingarnas
+CUSTOM: y y graderings
+563822r3<adjektiv>gradfri:gradfri:gradfritt:gradfria:gradfria::::
+CUSTOM: y n n
+691646r4<substantiv>gradient:gradient:gradients:gradienten:gradientens:gradienter:gradienters:gradienterna:gradienternas
+979642r3<substantiv>gradning:gradning:gradnings:gradningen:gradningens::::
+CUSTOM: y n
+761838r3<substantiv>gradtal:gradtal:gradtals:gradtalet:gradtalets:gradtal:gradtals:gradtalen:gradtalens
+979646r3<substantiv>gradualavhandling:gradualavhandling:gradualavhandlings:gradualavhandlingen:gradualavhandlingens:gradualavhandlingar:gradualavhandlingars:gradualavhandlingarna:gradualavhandlingarnas
+797785r3<adjektiv>graduell:graduell:graduellt:graduella:graduella::::
+589475r3<verb>graduera:graduera:graduerade:graduerat:graduerar:graduera:::::::::
+791368r3<adjektiv>graduerad:graduerad:graduerat:graduerade:graduerade:!:!:!:
+620560r3<adverb>gradvis:gradvis
+958486r3<substantiv>gradäng:gradäng:gradängs:gradängen:gradängens:gradänger:gradängers:gradängerna:gradängernas
+842153r3<substantiv>gradör:gradör:gradörs:gradören:gradörens:gradörer:gradörers:gradörerna:gradörernas
+549118r3<substantiv>graf:graf:grafs:grafen:grafens:grafer:grafers:graferna:grafernas
+623271r3<substantiv>grafem:grafem:grafems:grafemet:grafemets:grafem:grafems:grafemen:grafemens
+580383r3<adjektiv>grafematisk:grafematisk:grafematiskt:grafematiska:grafematiska::::
+905897r3<substantiv>grafen:grafen:grafens:grafenet:grafenets:!:!:!:!
+737416r3<substantiv>graffiti:graffiti:graffitis:graffitin:graffitins::::
+CUSTOM: y y graffiti
+549120r10<substantiv>grafik:grafik:grafiks:grafiken:grafikens:!:!:!:!
+CUSTOM: y y grafik
+559311r3<substantiv>grafiker:grafiker:grafikers:grafikern:grafikerns:grafiker:grafikers:grafikerna:grafikernas
+759626r4<substantiv>grafikkort:grafikkort:grafikkorts:grafikkortet:grafikkortets:grafikkort:grafikkorts:grafikkorten:grafikkortens
+COMPOUND(549120, 552580): grafik + kort
+CUSTOM: y y grafikkorts
+580386r3<adjektiv>grafisk:g

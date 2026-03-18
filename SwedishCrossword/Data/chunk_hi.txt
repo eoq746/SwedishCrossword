@@ -1,0 +1,659 @@
+ond:valutafonds:valutafonden:valutafondens::::
+719196r16<substantiv>valutakod:valutakod:valutakods:valutakoden:valutakodens:valutakoder:valutakoders:valutakoderna:valutakodernas
+612993r3<substantiv>valutakonto:valutakonto:valutakontos:valutakontot:valutakontots:valutakonton:valutakontons:valutakontona:valutakontonas
+561978r3<substantiv>valutakurs:valutakurs:valutakurs:valutakursen:valutakursens:valutakurser:valutakursers:valutakurserna:valutakursernas
+CUSTOM: y y valutakurs
+608395r3<substantiv>valutalån:valutalån:valutalåns:valutalånet:valutalånets:valutalån:valutalåns:valutalånen:valutalånens
+604065r3<substantiv>valutamarknad:valutamarknad:valutamarknads:valutamarknaden:valutamarknadens:valutamarknader:valutamarknaders:valutamarknaderna:valutamarknadernas
+853513r3<substantiv>valutaoro:valutaoro:valutaoros:valutaoron:valutaorons::::
+584668r3<adjektiv>valutapolitisk:valutapolitisk:valutapolitiskt:valutapolitiska:valutapolitiska::::
+597838r3<substantiv>valutareglering:valutareglering:valutareglerings:valutaregleringen:valutaregleringens:valutaregleringar:valutaregleringars:valutaregleringarna:valutaregleringarnas
+CUSTOM: y y valutareglerings
+604073r3<substantiv>valutareserv:valutareserv:valutareservs:valutareserven:valutareservens:valutareserver:valutareservers:valutareserverna:valutareservernas
+597846r3<substantiv>valutaräkning:valutaräkning:valutaräknings:valutaräkningen:valutaräkningens:valutaräkningar:valutaräkningars:valutaräkningarna:valutaräkningarnas
+CUSTOM: y y valutaräknings
+604081r3<substantiv>valutaskuld:valutaskuld:valutaskulds:valutaskulden:valutaskuldens:valutaskulder:valutaskulders:valutaskulderna:valutaskuldernas
+738763r3<substantiv>valutaspekulant::::::::
+COMPOUND(561973, 550559): valuta + spekulant
+584671r3<adjektiv>valutastrategisk:valutastrategisk:valutastrategiskt:valutastrategiska:valutastrategiska::::
+591523r3<verb>valutera:valutera:valuterade:valuterat:valuterar:valutera:::::::::
+597854r3<substantiv>valutering:valutering:valuterings:valuteringen:valuteringens:valuteringar:valuteringars:valuteringarna:valuteringarnas
+CUSTOM: y y valuterings
+738764r3<substantiv>valutgång:valutgång:valutgångs:valutgången:valutgångens::::
+553103r7<substantiv>valv:valv:valvs:valvet:valvets:valv:valvs:valven:valvens
+CUSTOM: y y valv
+561985r3<substantiv>valvaka:valvaka:valvakas:valvakan:valvakans:valvakor:valvakors:valvakorna:valvakornas
+698451r4<substantiv>valvbåge:valvbåge:valvbåges:valvbågen:valvbågens:valvbågar:valvbågars:valvbågarna:valvbågarnas
+COMPOUND(553103, 560891): valv + båge
+796583r3<adjektiv>valvformad:valvformad:valvformat:valvformade:valvformade:!:!:!:
+578181r3<adjektiv>valvformig:valvformig:valvformigt:valvformiga:valvformiga::::
+561993r3<substantiv>valår:valår:valårs:valåret:valårets:valår:valårs:valåren:valårens
+550751r3<substantiv>valör:valör:valörs:valören:valörens:valörer:valörers:valörerna:valörernas
+561999r4<substantiv>vamp:vamp:vamps:vampen:vampens:vampar:vampars:vamparna:vamparnas
+CUSTOM: y n
+562015r4<adjektiv>vampig:vampig:vampigt:vampiga:vampiga:vampigare:vampigast:vampigaste:
+562007r3<substantiv>vampyr:vampyr:vampyrs:vampyren:vampyrens:vampyrer:vampyrers:vampyrerna:vampyrernas
+CUSTOM: y y vampyr
+562018r10<adjektiv>van:van:vant:vana:vana:vanare:vanast:vanaste:vane::::::::
+CUSTOM: y n
+562019r9<substantiv>vana:vana:vanas:vanan:vanans:vanor:vanors:vanorna:vanornas
+BASEWORDS: vane
+CUSTOM: y y vane
+723590r3<substantiv>vanadin:vanadin:vanadins:vanadinet:vanadinets:!:!:!:!
+814226r3<substantiv>vanart:vanart:vanarts:vanarten:vanartens::::
+796586r3<adjektiv>vanartad:vanartad:vanartat:vanartade:vanartade:!:!:!:
+578184r4<adjektiv>vanartig:vanartig:vanartigt:vanartiga:vanartiga:vanartigare:vanartigast:vanartigaste:vanartige
+578185r3<adjektiv>vanbördig:vanbördig:vanbördigt:vanbördiga:vanbördiga::::
+772054r3<egennamn>Vancouver:Vancouver:Vancouvers
+CUSTOM: y n Vancouver
+800725r3<adjektiv>vand:vand:vant:vanda:vanda::::
+CUSTOM: y n
+560763r3<substantiv>vandal:vandal:vandals:vandalen:vandalens:vandaler:vandalers:vandalerna:vandalernas
+560771r4<verb>vandalisera:vandalisera:vandaliserade:vandaliserat:vandaliserar:vandalisera:vandaliseras:vandaliserades:vandaliserats:vandaliseras:vandaliserad:vandaliserat:vandaliserade:vandaliserande:
+749986r3<substantiv>vandalisering:vandalisering:vandaliserings:vandaliseringen:vandaliseringens:vandaliseringar:vandaliseringars:vandaliseringarna:vandaliseringarnas
+584674r3<adjektiv>vandalisk:vandalisk:vandaliskt:vandaliska:vandaliska::::
+558755r3<substantiv>vandalism:vandalism:vandalisms:vandalismen:vandalismens:!:!:!:!
+560778r5<substantiv>vandel:vandel:vandels:vandeln:vandelns:!:!:!:!
+DEFINITION 1: det sätt på vilket man lever sitt liv\
+handel och vandel - hur man lever och uppför sig
+CUSTOM: y n
+920818r4<substantiv>vandelsprövning:vandelsprövning:vandelsprövnings:vandelsprövningen:vandelsprövningens:vandelsprövningar:vandelsprövningars:vandelsprövningarna:vandelsprövningarnas
+COMPOUND(560778, 634301): vandel + prövning
+548021r5<verb>vandra:vandra:vandrade:vandrat:vandrar:vandra:vandras:vandrades:vandrats:vandras:::::
+698454r3<substantiv>vandrande:vandrande:vandrandes:vandrandet:vandrandets::::
+560789r4<substantiv>vandrare:vandrare:vandrares:vandraren:vandrarens:vandrare:vandrares:vandrarna:vandrarnas
+CUSTOM: y y vandrar
+560783r5<substantiv>vandrarhem:vandrarhem:vandrarhems:vandrarhemmet:vandrarhemmets:vandrarhem:vandrarhems:vandrarhemmen:vandrarhemmens
+DEFINITION 1: ett billigt övernattningsställe
+COMPOUND(560789, 555169): vandrare + hem
+CUSTOM: y y vandrarhems
+562022r12<substantiv>vandring:vandring:vandrings:vandringen:vandringens:vandringar:vandringars:vandringarna:vandringarnas
+CUSTOM: y y vandrings +vandrings
+604089r3<substantiv>vandringsalbatross:vandringsalbatross:vandringsalbatross:vandringsalbatrossen:vandringsalbatrossens:vandringsalbatrosser:vandringsalbatrossers:vandringsalbatrosserna:vandringsalbatrossernas
+749994r6<substantiv>vandringsled:vandringsled:vandringsleds:vandringsleden:vandringsledens:vandringsleder:vandringsleders:vandringslederna:vandringsledernas
+COMPOUND(562022, 556257): vandring + led
+722462r4<substantiv>vandringsstråk:vandringsstråk:vandringsstråks:vandringsstråket:vandringsstråkets:vandringsstråk:vandringsstråks:vandringsstråken:vandringsstråkens
+COMPOUND(562022, 622993): vandring + stråk
+721423r4<substantiv>vandringsväg:vandringsväg:vandringsvägs:vandringsvägen:vandringsvägens:vandringsvägar:vandringsvägars:vandringsvägarna:vandringsvägarnas
+COMPOUND(562022, 552110): vandring + väg
+758667r4<substantiv>vandringsår:vandringsår:vandringsårs:vandringsåret:vandringsårets:vandringsår:vandringsårs:vandringsåren:vandringsårens
+COMPOUND(562022, 553140): vandring + år
+562023r3<adjektiv>vanebildande:vanebildande:vanebildande:vanebildande:vanebildande::::
+562024r3<adjektiv>vanemässig:vanemässig:vanemässigt:vanemässiga:vanemässiga::::
+562027r3<substantiv>vanesak:vanesak:::::::
+990095r3<egennamn>Vanessa:Vanessa:Vanessas
+562028r3<substantiv>vanföreställning:vanföreställning:vanföreställnings:vanföreställningen:vanföreställningens:vanföreställningar:vanföreställningars:vanföreställningarna:vanföreställningarnas
+CUSTOM: y y vanföreställnings
+923950r3<substantiv>vang:vang:vangs:vangen:vangens:vanger:vangers:vangerna:vangernas
+CUSTOM: n n y
+945658r3<egennamn>Vanger:Vanger:Vangers
+733896r3<substantiv>vanheder:vanheder:vanheders:vanhedern:vanhederns::::
+568406r3<adjektiv>vanhederlig:vanhederlig:vanhederligt:vanhederliga:vanhederliga::::
+562029r5<verb>vanhedra:vanhedra:vanhedrade:vanhedrat:vanhedrar:vanhedra:vanhedras:vanhedrades:vanhedrats:vanhedras:vanhedrad:vanhedrat:vanhedrade:vanhedrande:
+COMPOUND(562018, 546860): van + hedra
+562033r3<adjektiv>vanhedrande:vanhedrande:vanhedrande:vanhedrande:vanhedrande::::
+562034r4<verb>vanhelga:vanhelga:vanhelgade:vanhelgat:vanhelgar:vanhelga:vanhelgas:vanhelgades:vanhelgats:vanhelgas:vanhelgad:vanhelgat:vanhelgade:vanhelgande:
+796589r3<adjektiv>vanhävdad:vanhävdad:vanhävdat:vanhävdade:vanhävdade:!:!:!:
+562038r11<substantiv>vanilj:vanilj:vaniljs:vaniljen:vaniljens:!:!:!:!
+CUSTOM: y y vanilj
+750002r3<substantiv>vaniljglass::::::::
+COMPOUND(562038, 622457): vanilj + glass
+943047r3<adjektiv>vaniljgul:vaniljgul:vaniljgult:vaniljgula:vaniljgula::::::::::::
+750003r3<substantiv>vaniljkräm::::::::
+COMPOUND(562038, 549796): vanilj + kräm
+750004r4<substantiv>vaniljsocker:vaniljsocker:vaniljsockers:vaniljsockret:vaniljsockrets:!:!:!:!
+COMPOUND(562038, 623162): vanilj + socker
+750005r3<substantiv>vaniljstång::::::::
+COMPOUND(562038, 555363): vanilj + stång
+750006r4<substantiv>vaniljsås:vaniljsås:vaniljsås:vaniljsåsen:vaniljsåsens:vaniljsåser:vaniljsåsers:vaniljsåserna:vaniljsåsernas
+COMPOUND(562038, 556707): vanilj + sås
+900151r4<substantiv>vaniljton:vaniljton:vaniljtons:vaniljtonen:vaniljtonens:vaniljtoner:vaniljtoners:vaniljtonerna:vaniljtonernas
+COMPOUND(562038, 603900): vanilj + ton
+921224r4<substantiv>vaniljvodka:vaniljvodka:vaniljvodkas:vaniljvodkan:vaniljvodkans:!:!:!:!
+COMPOUND(562038, 627699): vanilj + vodka
+750013r3<substantiv>vanillin:vanillin:vanillins:vanillinet:vanillinets::::
+990131r3<egennamn>Vanja:Vanja:Vanjas
+562042r4<verb>vanka:vanka:vankade:vankat:vankar:vanka::::::::vankande:
+578188r3<adjektiv>vankantig:vankantig:vankantigt:vankantiga:vankantiga::::
+591760r3<deponens>vankas:vankas:vankades:vankats:vankas:
+562045r3<substantiv>vankelmod:vankelmod:vankelmods:vankelmodet:vankelmodets:!:!:!:!
+562043r4<adjektiv>vankelmodig:vankelmodig:vankelmodigt:vankelmodiga:vankelmodiga:vankelmodigare:vankelmodigast:vankelmodigaste:vankelmodige
+774530r3<substantiv>vankelmodighet:vankelmodighet:vankelmodighets:vankelmodigheten:vankelmodighetens::::
+964486r3<substantiv>wankelmotor:wankelmotor:wankelmotors:wankelmotorn:wankelmotorns:wankelmotorer:wankelmotorers:wankelmotorerna:wankelmotorernas
+564367r3<adjektiv>vankfri:vankfri:vankfritt:vankfria:vankfria::::
+556533r3<adjektiv>vanlig:vanlig:vanligt:vanliga:vanliga:vanligare:vanligast:vanligaste:vanlige
+562047r3<adverb>vanligen:vanligen
+698456r4<substantiv>vanlighet:vanlighet:vanlighets:vanligheten:vanlighetens:vanligheter:vanligheters:vanligheterna:vanligheternas
+CUSTOM: y y vanlighets
+562048r3<adverb>vanligtvis:vanligtvis
+796592r3<adjektiv>vanlottad:vanlottad:vanlottat:vanlottade:vanlottade:!:!:!:
+562049r4<substantiv>vanmakt:vanmakt:vanmakts:vanmakten:vanmaktens:!:!:!:!
+CUSTOM: y y vanmakts
+774538r3<substantiv>vanmaktskänsla::::::::
+COMPOUND(562049, 555604): vanmakt + känsla
+562053r4<adjektiv>vanmäktig:vanmäktig:vanmäktigt:vanmäktiga:vanmäktiga:vanmäktigare:vanmäktigast:vanmäktigaste:vanmäktige
+774534r3<substantiv>vanmäktighet:vanmäktighet:vanmäktighets:vanmäktigheten:vanmäktighetens::::
+947118r3<substantiv>wannabe:wannabe:wannabes:wannaben:wannabens::::
+562054r4<verb>vanpryda:vanpryda:vanprydde:vanprytt:vanpryder:vanpryd:vanprydas:vanpryddes:vanprytts:vanpryds:vanprydd:vanprytt:vanprydda:vanprydande:
+814243r3<substantiv>vanprydnad:vanprydnad:vanprydnads:vanprydnaden:vanprydnadens:vanprydnader:vanprydnaders:vanprydnaderna:vanprydnadernas
+796595r3<adjektiv>vanryktad:vanryktad:vanryktat:vanryktade:vanryktade:!:!:!:
+738768r3<substantiv>vanrykte:vanrykte:vanryktes:vanryktet:vanryktets::::
+728311r3<egennamn>Vansbro:Vansbro:Vansbros
+CUSTOM: y n Vansbro
+559382r3<substantiv>vansinne:vansinne:vansinnes:vansinnet:vansinnets:!:!:!:!
+559386r3<substantiv>vansinnesdåd:vansinnesdåd:vansinnesdåds:vansinnesdådet:vansinnesdådets:vansinnesdåd:vansinnesdåds:vansinnesdåden:vansinnesdådens
+957841r3<substantiv>vansinnesfart:vansinnesfart:::::::
+803877r3<substantiv>vansinnesfärd:vansinnesfärd:vansinnesfärds:vansinnesfärden:vansinnesfärdens:vansinnesfärder:vansinnesfärders:vansinnesfärderna:vansinnesfärdernas
+559392r3<substantiv>vansinneskörning:vansinneskörning:vansinneskörnings:vansinneskörningen:vansinneskörningens:vansinneskörningar:vansinneskörningars:vansinneskörningarna:vansinneskörningarnas
+CUSTOM: y y vansinneskörnings
+559400r3<adjektiv>vansinnig:vansinnig:vansinnigt:vansinniga:vansinniga:vansinnigare:vansinnigast:vansinnigaste:vansinnige
+698457r3<substantiv>vansinnighet:vansinnighet:vansinnighets:vansinnigheten:vansinnighetens:vansinnigheter:vansinnigheters:vansinnigheterna:vansinnigheternas
+CUSTOM: y y vansinnighets
+796598r3<adjektiv>vanskapad:vanskapad:vanskapat:vanskapade:vanskapade:!:!:!:
+568409r3<adjektiv>vanskaplig:vanskaplig:vanskapligt:vanskapliga:vanskapliga::::
+814251r3<substantiv>vanskaplighet:vanskaplighet:vanskaplighets:vanskapligheten:vanskaplighetens:vanskapligheter:vanskapligheters:vanskapligheterna:vanskapligheternas
+562060r3<adjektiv>vanskapt:vanskapt:vanskapt:vanskapta:vanskapta::::vanskapte
+814259r3<substantiv>vanskapthet:vanskapthet:vanskapthets:vanskaptheten:vanskapthetens::::
+559407r4<adjektiv>vansklig:vansklig:vanskligt:vanskliga:vanskliga:vanskligare:vanskligast:vanskligaste:vansklige
+814264r3<substantiv>vansklighet:vansklighet:vansklighets:vanskligheten:vansklighetens:vanskligheter:vanskligheters:vanskligheterna:vanskligheternas
+559408r4<verb>vansköta:vansköta:vanskötte:vanskött:vansköter:vansköt:vanskötas:vansköttes:vanskötts:vansköts, vanskötes:vanskött:vanskött:vanskötta:vanskötande:
+562063r3<substantiv>vanskötsel:vanskötsel:vanskötsels:vanskötseln:vanskötselns:!:!:!:!
+591762r3<deponens>vansläktas:vansläktas:vansläktades:vansläktats:vansläktas:
+800726r3<adjektiv>vanstyrd:vanstyrd:vanstyrt:vanstyrda:vanstyrda::::
+559417r4<substantiv>vanstyre:vanstyre:vanstyres:vanstyret:vanstyrets:vanstyren:vanstyrens:vanstyrena:vanstyrenas
+562067r4<verb>vanställa:vanställa:vanställde:vanställt:vanställer:vanställ:vanställas:vanställdes:vanställts:vanställs:vanställd:vanställt:vanställda:vanställande:
+814279r3<substantiv>vanställdhet:vanställdhet:vanställdhets:vanställdheten:vanställdhetens::::
+814283r3<substantiv>vanställning:vanställning:vanställnings:vanställningen:vanställningens:vanställningar:vanställningars:vanställningarna:vanställningarnas
+562068r4<substantiv>vante:vante:vantes:vanten:vantens:vantar:vantars:vantarna:vantarnas
+663454r3<substantiv>V-antenn:V-antenn:V-antenns:V-antennen:V-antennens:V-antenner:V-antenners:V-antennerna:V-antennernas
+703526r3<verb>vantolka:vantolka:vantolkade:vantolkat:vantolkar:vantolka:vantolkas:vantolkades:vantolkats:vantolkas:vantolkad:vantolkat:vantolkade::
+703534r3<substantiv>vantolkning:vantolkning:vantolknings:vantolkningen:vantolkningens:vantolkningar:vantolkningars:vantolkningarna:vantolkningarnas
+CUSTOM: y y vantolknings
+814291r3<substantiv>vantrevnad:vantrevnad:vantrevnads:vantrevnaden:vantrevnadens::::
+591765r3<deponens>vantrivas:vantrivas:vantrivdes:vantrivts:vantrivs:
+562069r3<substantiv>vantrivsel:vantrivsel:vantrivsels:vantrivseln:vantrivselns:!:!:!:!
+733887r3<substantiv>vantro:vantro:vantros:vantron:vantrons::::
+750021r3<adjektiv>vantrogen:vantrogen:vantroget:vantrogna:vantrogna::::vantrogne
+988800r3<substantiv>vantskruv:vantskruv:vantskruvs:vantskruven:vantskruvens:vantskruvar:vantskruvars:vantskruvarna:vantskruvarnas
+988808r3<substantiv>vantspridare:vantspridare:vantspridares:vantspridaren:vantspridarens:vantspridare:vantspridares:vantspridarna:vantspridarnas
+750026r3<egennamn>Vantör:Vantör:Vantörs
+CUSTOM: y n Vantör
+584677r3<adjektiv>vanuatisk:vanuatisk:vanuatiskt:vanuatiska:vanuatiska::::
+562073r3<substantiv>vanvett:vanvett:vanvetts:vanvettet:vanvettets:!:!:!:!
+562077r4<adjektiv>vanvettig:vanvettig:vanvettigt:vanvettiga:vanvettiga:vanvettigare:vanvettigast:vanvettigaste:vanvettige
+814299r3<substantiv>vanvettighet:vanvettighet:vanvettighets:vanvettigheten:vanvettighetens:vanvettigheter:vanvettigheters:vanvettigheterna:vanvettigheternas
+814307r3<substantiv>vanvetting:vanvetting:vanvettings:vanvettingen:vanvettingens:vanvettingar:vanvettingars:vanvettingarna:vanvettingarnas
+562078r3<substantiv>vanvård:vanvård:vanvårds:vanvården:vanvårdens:!:!:!:!
+562082r4<verb>vanvårda:vanvårda:vanvårdade:vanvårdat:vanvårdar:vanvårda:vanvårdas:vanvårdades:vanvårdats:vanvårdas:vanvårdad:vanvårdat:vanvårdade:vanvårdande:
+814317r3<verb>vanvörda:vanvörda:vanvördade:vanvördat:vanvördar:vanvörda:vanvördas:vanvördades:vanvördats:vanvördas:vanvördad:vanvördat:vanvördade:vanvördande:
+562089r4<adjektiv>vanvördig:vanvördig:vanvördigt:vanvördiga:vanvördiga:vanvördigare:vanvördigast:vanvördigaste:vanvördige
+814329r3<substantiv>vanvördighet:vanvördighet:vanvördighets:vanvördigheten:vanvördighetens:vanvördigheter:vanvördigheters:vanvördigheterna:vanvördigheternas
+814337r3<substantiv>vanvördnad:vanvördnad:vanvördnads:vanvördnaden:vanvördnadens::::
+562093r3<substantiv>vanära:vanära:vanäras:vanäran:vanärans::::
+548022r4<verb>vanära:vanära:vanärade:vanärat:vanärar:vanära:vanäras:vanärades:vanärats:vanäras:vanärad:vanärat:vanärade:vanärande:
+698459r3<adjektiv>vanärande:vanärande:vanärande:vanärande:vanärande:!:!:!:
+559381r25<substantiv>vapen:vapen:vapens:vapnet:vapnets:vapen:vapens:vapnen:vapnens
+CUSTOM: y y vapen +vapen
+698460r4<substantiv>vapenaffär:vapenaffär:vapenaffärs:vapenaffären:vapenaffärens:vapenaffärer:vapenaffärers:vapenaffärerna:vapenaffärernas
+COMPOUND(559381, 548155): vapen + affär
+605696r3<substantiv>vapenarsenal:vapenarsenal:vapenarsenals:vapenarsenalen:vapenarsenalens:vapenarsenaler:vapenarsenalers:vapenarsenalerna:vapenarsenalernas
+622522r4<substantiv>vapenbroder:vapenbroder:vapenbroders:vapenbrodern:vapenbroderns:vapenbröder:vapenbröders:vapenbröderna:vapenbrödernas
+COMPOUND(559381, 555140): vapen + bror, broder
+920827r4<substantiv>vapendel:vapendel:vapendels:vapendelen:vapendelens:vapendelar:vapendelars:vapendelarna:vapendelarnas
+COMPOUND(559381, 551034): vapen + del
+698468r3<substantiv>vapendragare:vapendragare:vapendragares:vapendragaren:vapendragarens:vapendragare:vapendragares:vapendragarna:vapendragarnas
+CUSTOM: y y vapendragar
+698474r4<substantiv>vapenexport:vapenexport:vapenexports:vapenexporten:vapenexportens:vapenexporter:vapenexporters:vapenexporterna:vapenexporternas
+COMPOUND(559381, 671468): vapen + export
+564370r3<adjektiv>vapenfri:vapenfri:vapenfritt:vapenfria:vapenfria::::
+562096r4<adjektiv>vapenför:vapenför:vapenfört:vapenföra:vapenföra::::vapenföre::::::::
+847268r4<substantiv>vapengny:vapengny:vapengnys:vapengnyet:vapengnyets::::
+COMPOUND(559381, 847269): vapen + gny
+750029r4<substantiv>vapenhot:vapenhot:vapenhots:vapenhotet:vapenhotets:vapenhot:vapenhots:vapenhoten:vapenhotens
+COMPOUND(559381, 552476): vapen + hot
+920837r3<adjektiv>vapenhotad:vapenhotad:vapenhotat:vapenhotade:vapenhotade:!:!:!:::::::::
+712662r4<substantiv>vapenlag:vapenlag:vapenlags:vapenlagen:vapenlagens:vapenlagar:vapenlagars:vapenlagarna:vapenlagarnas
+COMPOUND(559381, 551690): vapen + lag
+565446r3<adjektiv>vapenlös:vapenlös:vapenlöst:vapenlösa:vapenlösa::::
+674603r4<substantiv>vapenofficer:vapenofficer:vapenofficers:vapenofficeren, vapenofficern:vapenofficerens, vapenofficerns:vapenofficerer, vapenofficerare:vapenofficerers, vapenofficerare:vapenofficererna, vapenofficerarna:vapenofficerernas, vapenofficerarnas
+COMPOUND(559381, 603028): vapen + officer
+712569r5<substantiv>vapenproduktion:vapenproduktion:vapenproduktions:vapenproduktionen:vapenproduktionens:vapenproduktioner:vapenproduktioners:vapenproduktionerna:vapenproduktionernas
+COMPOUND(559381, 603206): vapen + produktion
+801731r3<adjektiv>vapenprydd:vapenprydd:vapenprytt:vapenprydda:vapenprydda::::
+907446r4<verb>vapenråna:vapenråna:vapenrånade:vapenrånat:vapenrånar:vapenråna:vapenrånas:vapenrånades:vapenrånats:vapenrånas:vapenrånad:vapenrånat:vapenrånade::
+COMPOUND(559381, 547617): vapen + råna
+711076r4<substantiv>vapenstillestånd:vapenstillestånd:vapenstillestånds:vapenstilleståndet:vapenstilleståndets:vapenstillestånd:vapenstillestånds:vapenstillestånden:vapenstilleståndens
+CUSTOM: y y vapenstillestånds
+814341r4<substantiv>vapenstilleståndsdag:vapenstilleståndsdag:vapenstilleståndsdags:vapenstilleståndsdagen:vapenstilleståndsdagens:vapenstilleståndsdagar:vapenstilleståndsdagars:vapenstilleståndsdagarna:vapenstilleståndsdagarnas
+COMPOUND(711076, 551009): vapenstillestånd + dag
+562099r3<substantiv>vapenvila:vapenvila:vapenvilas:vapenvilan:vapenvilans:vapenvilor:vapenvilors:vapenvilorna:vapenvilornas
+847275r4<verb>vapenöva:vapenöva:vapenövade:vapenövat:vapenövar:vapenöva:vapenövas:vapenövades:vapenövats:vapenövas:vapenövad:vapenövat:vapenövade:vapenövande:
+COMPOUND(559381, 548104): vapen + öva
+588382r3<verb>vaporisera:vaporisera:vaporiserade:vaporiserat:vaporiserar:vaporisera:::::::::
+562106r4<substantiv>var:var:vars:varet:varets:!:!:!:!
+CUSTOM: y n
+562105r3<adverb>var:var
+562104r3<pronomen>var:var
+622983r7<substantiv>vara:vara:varas:varat:varats:!:!:!:!
+555103r10<verb>vara:vara:var:varit:är:var:!:!:!:!:!:!:!:varande:vore, vare
+CUSTOM: y n
+562108r5<verb>vara:vara:varade:varat:varar:vara:!:!:!:!::::varande:
+DEFINITION 1: Räcka.
+CUSTOM: y n
+622981r5<verb>vara:vara:varade:varat:varar:vara:varas:varades:varats:varas::::varande:
+DEFINITION 1: Fyllas med var.
+CUSTOM: y n
+562107r21<substantiv>vara:vara:varas:varan:varans:varor:varors:varorna:varornas
+BASEWORDS: varu
+CUSTOM: y y varu
+562109r4<adjektiv>varaktig:varaktig:varaktigt:varaktiga:varaktiga:varaktigare:varaktigast:varaktigaste:
+562110r3<substantiv>varaktighet:varaktighet:varaktighets:varaktigheten:varaktighetens:!:!:!:!
+CUSTOM: y y varaktighets
+571218r4<substantiv>varan:varan:varans:varanen:varanens:varaner:varaners:varanerna:varanernas
+DEFINITION 1: En slags stor ödla
+882648r3<substantiv>varande:varande:varandes:varandet:varandets::::
+562111r3<pronomen>varandra:varandra
+698483r3<pronomen>varandras:varandras
+562112r3<pronomen>varann:varann
+562113r3<pronomen>varannan:varannan
+814352r3<substantiv>varanödla:varanödla:varanödlas:varanödlan:varanödlans:varanödlor:varanödlors:varanödlorna:varanödlornas
+562114r3<adverb>varav:varav
+730240r4<substantiv>varbakterie:varbakterie:varbakteries:varbakterien:varbakteriens:varbakterier:varbakteriers:varbakterierna:varbakteriernas
+COMPOUND(562106, 555768): var + bakterie
+554412r3<egennamn>Varberg:Varberg:Varbergs
+CUSTOM: y n Varbergs
+892593r3<substantiv>varbergsbo:varbergsbo:varbergsbos:varbergsbon:varbergsbons:varbergsbor:varbergsbors:varbergsborna:varbergsbornas
+814360r3<substantiv>varbildning:varbildning:varbildnings:varbildningen:varbildningens:varbildningar:varbildningars:varbildningarna:varbildningarnas
+814369r3<substantiv>varblåsa:varblåsa:varblåsas:varblåsan:varblåsans:varblåsor:varblåsors:varblåsorna:varblåsornas
+562115r3<substantiv>varböld:varböld:varbölds:varbölden:varböldens:varbölder:varbölders:varbölderna:varböldernas
+619991r3<verb>varda:varda:vart:!:varder::!:!:!:!:vorden:vordet:vordna::varde
+552086r10<substantiv>vardag:vardag:vardags:vardagen:vardagens:vardagar:vardagars:vardagarna:vardagarnas
+CUSTOM: y y vardags
+562123r5<adjektiv>vardaglig:vardaglig:vardagligt:vardagliga:vardagliga:vardagligare:vardagligast:vardagligaste:vardaglige
+556841r7<adverb>vardagligen:vardagligen
+698484r4<substantiv>vardaglighet:vardaglighet:vardaglighets:vardagligheten:vardaglighetens:vardagligheter:vardagligheters:vardagligheterna:vardagligheternas
+CUSTOM: y y vardaglighets
+578191r3<adjektiv>vardagsaktig:vardagsaktig:vardagsaktigt:vardagsaktiga:vardagsaktiga::::
+945662r4<substantiv>vardagsgnet:vardagsgnet:vardagsgnets:vardagsgnetet:vardagsgnetets::::
+COMPOUND(552086, 945663): vardag + gnet
+802133r3<adjektiv>vardagsgrå:vardagsgrå:vardagsgrått:vardagsgråa:vardagsgråa::::
+801734r3<adjektiv>vardagsklädd:vardagsklädd:vardagsklätt:vardagsklädda:vardagsklädda::::
+562124r3<substantiv>vardagslag:vardagslag:::::::
+953455r4<substantiv>vardagslunk:vardagslunk:vardagslunks:vardagslunken:vardagslunkens::::
+COMPOUND(552086, 642775): vardag + lunk
+941315r3<substantiv>vardagsmat:vardagsmat:vardagsmats:vardagsmaten:vardagsmatens::::
+919933r4<substantiv>vardagsmys:vardagsmys:vardagsmys:vardagsmyset:vardagsmysets:!:!:!:!
+COMPOUND(552086, 628389): vardag + mys
+886434r3<adjektiv>vardagsnära:vardagsnära:vardagsnära:vardagsnära:vardagsnära:!:!:!:::::::::
+988814r4<substantiv>vardagsord:vardagsord:vardagsords:vardagsordet:vardagsordets:vardagsord:vardagsords:vardagsorden:vardagsordens
+COMPOUND(552086, 555138): vardag + ord
+921374r4<substantiv>vardagsprat:vardagsprat:vardagsprats:vardagspratet:vardagspratets:!:!:!:!
+COMPOUND(552086, 624631): vardag + prat
+698488r5<substantiv>vardagsrum:vardagsrum:vardagsrums:vardagsrummet:vardagsrummets:vardagsrum:vardagsrums:vardagsrummen:vardagsrummens
+COMPOUND(552086, 571182): vardag + rum
+CUSTOM: y y vardagsrums
+814383r3<substantiv>vardagsrumsmöblemang::::::::
+COMPOUND(698488, 708059): vardagsrum + möblemang
+919331r4<substantiv>vardagsvin:vardagsvin:vardagsvins:vardagsvinet:vardagsvinets:vardagsviner:vardagsviners:vardagsvinerna:vardagsvinernas
+COMPOUND(552086, 600515): vardag + vin
+698490r3<substantiv>vardande:vardande:vardandes:vardandet:vardandets::::
+562125r3<pronomen>vardera:vardera
+562126r3<konjunktion>vare:vare
+562127r3<adverb>varefter:varefter
+562128r5<substantiv>varelse:varelse:varelses:varelsen:varelsens:varelser:varelsers:varelserna:varelsernas
+CUSTOM: y y varelse
+571226r3<adverb>varemot:varemot
+571227r3<konjunktion>varemot:varemot
+562129r3<pronomen>varenda:varenda
+571228r3<adverb>varest:varest
+571229r5<adjektiv>vareviga:vareviga:varteviga::::::
+763186r3<adjektiv>varfylld:varfylld:varfyllt:varfyllda:varfyllda:!:!:!:
+988820r3<substantiv>varfågel:varfågel:varfågels:varfågeln:varfågelns:varfåglar:varfåglars:varfåglarna:varfåglarnas
+562130r3<adverb>varför:varför
+698494r3<adverb>varföre:varföre
+698492r3<adverb>varförinnan:varförinnan
+552087r10<substantiv>varg:varg:vargs:vargen:vargens:vargar:vargars:vargarna:vargarnas
+DEFINITION 1: Canis lupus. Vilt flocklevande hunddjur. Utseende ungefär som en stor schäferhund.
+CUSTOM: y y varg
+903809r3<egennamn>Vargas:Vargas:Vargas
+774539r3<substantiv>vargavinter:vargavinter:vargavinters:vargavintern:vargavinterns:vargavintrar:vargavintrars:vargavintrarna:vargavintrarnas
+814384r3<substantiv>vargaväder:vargaväder:vargaväders:vargavädret:vargavädrets::::
+847284r3<adjektiv>vargbiten:vargbiten:vargbitet:vargbitna:vargbitna::::vargbitne
+814388r3<substantiv>varginna:varginna:varginnas:varginnan:varginnans:varginnor:varginnors:varginnorna:varginnornas
+934886r4<substantiv>vargjakt:vargjakt:vargjakts:vargjakten:vargjaktens:vargjakter:vargjakters:vargjakterna:vargjakternas
+COMPOUND(552087, 549380): varg + jakt
+747694r4<substantiv>vargstam:vargstam:vargstams:vargstammen:vargstammens:vargstammar:vargstammars:vargstammarna:vargstammarnas
+COMPOUND(552087, 619720): varg + stam
+920842r4<substantiv>vargtik:vargtik:vargtiks:vargtiken:vargtikens:vargtikar:vargtikars:vargtikarna:vargtikarnas
+COMPOUND(552087, 552004): varg + tik
+CUSTOM: y n n
+878132r4<adjektiv>vargtät:vargtät:vargtätt:vargtäta:vargtäta:vargtätare:vargtätast:vargtätaste:
+COMPOUND(552087, 563206): varg + tät
+934895r4<substantiv>vargvalp:vargvalp:vargvalps:vargvalpen:vargvalpens:vargvalpar:vargvalpars:vargvalparna:vargvalparnas
+COMPOUND(552087, 552085): varg + valp
+562131r3<adverb>varhelst:varhelst
+750041r3<egennamn>Warhol:Warhol:Warhols
+CUSTOM: y n Warhol
+562132r3<adverb>vari:vari
+698495r3<substantiv>varia:!:!:!:!:varia:::
+562134r3<adjektiv>variabel:variabel:variabelt:variabla:variabla::::
+562133r6<substantiv>variabel:variabel:variabels:variabeln:variabelns:variabler:variablers:variablerna:variablernas
+CUSTOM: y y variabel
+738772r3<substantiv>variabelvärde::::::::
+COMPOUND(562133, 613015): variabel + värde
+988828r3<substantiv>variabilitet:variabilitet:variabilitets:variabiliteten:variabilitetens::::
+550753r3<substantiv>varians:varians:varians:variansen:variansens:varianser:variansers:varianserna:variansernas
+550754r5<substantiv>variant:variant:variants:varianten:variantens:varianter:varianters:varianterna:varianternas
+CUSTOM: y y variant
+788646r4<substantiv>variantstavning:variantstavning:variantstavnings:variantstavningen:variantstavningens:variantstavningar:variantstavningars:variantstavningarna:variantstavningarnas
+COMPOUND(550754, 669680): variant + stavning
+562135r6<substantiv>variation:variation:variations:variationen:variationens:variationer:variationers:variationerna:variationernas
+CUSTOM: y y variations
+698496r3<adjektiv>variationsrik:variationsrik:variationsrikt:variationsrika:variationsrika::::
+988832r3<substantiv>variator:variator:variators:variatorn:variatorns:variatorer:variatorers:variatorerna:variatorernas
+620908r3<adverb>varibland:varibland
+548023r4<verb>variera:variera:varierade:varierat:varierar:variera:varieras:varierades:varierats:varieras:varierad:varierat:varierade:varierande:
+570504r3<adjektiv>varierbar:varierbar:varierbart:varierbara:varierbara::::
+814404r3<substantiv>variering:variering:varierings:varieringen:varieringens:varieringar:varieringars:varieringarna:varieringarnas
+562136r3<substantiv>varieté:varieté:varietés:varietén:varieténs:varietéer:varietéers:varietéerna:varietéernas
+CUSTOM: y y varieté
+814396r3<substantiv>varietet:varietet:varietets:varieteten:varietetens:varieteter:varieteters:varieteterna:varieteternas
+562144r3<adverb>varifrån:varifrån
+578194r3<adjektiv>varig:varig:varigt:variga:variga::::
+620909r3<adverb>varigenom:varigenom
+988840r3<substantiv>variometer:variometer:variometers:variometern:variometerns:variometrar:variometrars:variometrarna:variometrarnas
+584679r3<adjektiv>variskisk:variskisk:variskiskt:variskiska:variskiska::::
+562145r3<pronomen>varje:varje
+698498r3<adjektiv>varjehanda:varjehanda:varjehanda:varjehanda:varjehanda:!:!:!:
+698499r3<adverb>varjämte:varjämte
+562146r3<konjunktion>varken:varken
+563596r3<adjektiv>varkunnsam:varkunnsam:varkunnsamt:varkunnsamma:varkunnsamma::::
+562147r4<adjektiv>varlig:varlig:varligt:varliga:varliga:varligare:varligast:varligaste:varlige
+562149r10<adjektiv>varm:varm:varmt:varma:varma:varmare:varmast:varmaste:varme::::::::
+CUSTOM: y y varm
+553105r3<substantiv>varmbad:varmbad:varmbads:varmbadet:varmbadets:varmbad:varmbads:varmbaden:varmbadens
+729490r4<substantiv>varmbearbetning:varmbearbetning:varmbearbetnings:varmbearbetningen:varmbearbetningens:varmbearbetningar:varmbearbetningars:varmbearbetningarna:varmbearbetningarnas
+COMPOUND(562149, 632150): varm + bearbetning
+CUSTOM: n n
+796601r3<adjektiv>varmblandad:varmblandad:varmblandat:varmblandade:varmblandade:!:!:!:
+CUSTOM: n n
+578197r3<adjektiv>varmblodig:varmblodig:varmblodigt:varmblodiga:varmblodiga::::
+847288r3<verb>varmbona:varmbona:varmbonade:varmbonat:varmbonar:varmbona:varmbonas:varmbonades:varmbonats:varmbonas:varmbonad:varmbonat:varmbonade:varmbonande:
+796604r3<adjektiv>varmdoppad:varmdoppad:varmdoppat:varmdoppade:varmdoppade:!:!:!:
+562151r3<adverb>varmed:varmed
+796607r3<adjektiv>varmfodrad:varmfodrad:varmfodrat:varmfodrade:varmfodrade:!:!:!:
+562152r3<substantiv>varmfront:varmfront:varmfronts:varmfronten:varmfrontens:varmfronter:varmfronters:varmfronterna:varmfronternas
+CUSTOM: n n y
+588386r3<verb>varmgalvanisera:varmgalvanisera:varmgalvaniserade:varmgalvaniserat:varmgalvaniserar:varmgalvanisera:::::::::
+7588386r3<verb>varmgalvanisera:varmgalvanisera:varmgalvaniserade:varmgalvaniserat:varmgalvaniserar:varmgalvanisera:::::::::
+CUSTOM: n n
+738773r3<adjektiv>varmhjärtad:varmhjärtad:varmhjärtat:varmhjärtade:varmhjärtade:!:!:!:
+738776r3<substantiv>varmhållning:varmhållning:varmhållnings:varmhållningen:varmhållningens::::
+CUSTOM: n n y
+588390r3<verb>varmkalandrera:varmkalandrera:varmkalandrerade:varmkalandrerat:varmkalandrerar:varmkalandrera:::::::::
+CUSTOM: n n
+738780r3<substantiv>varmkompost::::::::
+COMPOUND(562149, 549601): varm + kompost
+934903r4<substantiv>varmkorv:varmkorv:varmkorvs:varmkorven:varmkorvens:varmkorvar:varmkorvars:varmkorvarna:varmkorvarnas
+COMPOUND(562149, 551609): varm + korv
+953459r4<verb>varmköra:varmköra:varmkörde:varmkört:varmkör:varmkör:varmköras:varmkördes:varmkörts:varmkörs, varmköres:varmkörd:varmkört:varmkörda:varmkörande:
+COMPOUND(562149, 556899): varm + köra
+591527r3<verb>varmlaminera:varmlaminera:varmlaminerade:varmlaminerat:varmlaminerar:varmlaminera:::::::::
+562168r4<substantiv>varmluft:varmluft:varmlufts:varmluften:varmluftens:!:!:!:!
+CUSTOM: y y varmlufts
+738781r3<substantiv>varmluftsskåp::::::::
+COMPOUND(562168, 552942): varmluft + skåp
+562160r3<substantiv>varmluftsugn:varmluftsugn:varmluftsugns:varmluftsugnen:varmluftsugnens:varmluftsugnar:varmluftsugnars:varmluftsugnarna:varmluftsugnarnas
+CUSTOM: n n y
+937888r3<substantiv>varmrätt:varmrätt:varmrätts:varmrätten:varmrättens:varmrätter:varmrätters:varmrätterna:varmrätternas
+744529r3<adjektiv>varmrökt:varmrökt:varmrökt:varmrökta:varmrökta:!:!:!:!
+729313r4<substantiv>varmvalsning:varmvalsning:varmvalsnings:varmvalsningen:varmvalsningens:varmvalsningar:varmvalsningars:varmvalsningarna:varmvalsningarnas
+COMPOUND(562149, 597830): varm + valsning
+698501r7<substantiv>varmvatten:varmvatten:varmvattens:varmvattnet:varmvattnets:!:!:!:!
+COMPOUND(562149, 555162): varm + vatten
+CUSTOM: y n
+738782r3<substantiv>varmvattenbehållare::::::::
+COMPOUND(698501, 592486): varmvatten + behållare
+CUSTOM: n n
+698500r4<substantiv>varmvattenberedare:varmvattenberedare:varmvattenberedares:varmvattenberedaren:varmvattenberedarens:varmvattenberedare:varmvattenberedares:varmvattenberedarna:varmvattenberedarnas
+COMPOUND(698501, 615147): varmvatten + beredare
+CUSTOM: n n y
+845103r3<substantiv>varmvattenkrus:varmvattenkrus:varmvattenkrus:varmvattenkruset:varmvattenkrusets:varmvattenkrus:varmvattenkrus:varmvattenkrusen:varmvattenkrusens
+CUSTOM: y n
+738783r4<substantiv>varmvattensberedare:varmvattensberedare:varmvattensberedares:varmvattensberedaren:varmvattensberedarens:varmvattensberedare:varmvattensberedares:varmvattensberedarna:varmvattensberedarnas
+COMPOUND(698501, 615147): varmvatten + beredare
+548024r5<verb>varna:varna:varnade:varnat:varnar:varna:varnas:varnades:varnats:varnas:varnad:varnat:varnade:varnande:
+955300r3<substantiv>varnagel:varnagel:::::::
+814412r3<substantiv>varnare:varnare:varnares:varnaren:varnarens:varnare:varnares:varnarna:varnarnas
+CUSTOM: y y +varnar
+619993r10<substantiv>varning:varning:varnings:varningen:varningens:varningar:varningars:varningarna:varningarnas
+BASEWORDS: varnings
+CUSTOM: y y varnings +varnings
+595729r3<substantiv>varningslampa:varningslampa:varningslampas:varningslampan:varningslampans:varningslampor:varningslampors:varningslamporna:varningslampornas
+721993r3<substantiv>varningsläte:varningsläte:varningslätes:varningslätet:varningslätets:varningsläten:varningslätens:varningslätena:varningslätenas
+698502r4<substantiv>varningsord:varningsord:varningsords:varningsordet:varningsordets:varningsord:varningsords:varningsorden:varningsordens
+COMPOUND(619993, 555138): varning + ord
+853517r3<substantiv>varningsrop:varningsrop:varningsrops:varningsropet:varningsropets:varningsrop:varningsrops:varningsropen:varningsropens
+907046r4<substantiv>varningssiren:varningssiren:varningssirens:varningssirenen:varningssirenens:varningssirener:varningssireners:varningssirenerna:varningssirenernas
+COMPOUND(619993, 550498): varning + siren
+600449r3<substantiv>varningstriangel:varningstriangel:varningstriangels:varningstriangeln:varningstriangelns:varningstrianglar:varningstrianglars:varningstrianglarna:varningstrianglarnas
+619995r3<adverb>varom:varom
+619994r3<konjunktion>varom:varom
+698508r3<substantiv>varp:varp:varps:varpet:varpets:varp:varps:varpen:varpens
+CUSTOM: n n y
+698509r6<substantiv>varp:varp:varps:varpen:varpens:varpar:varpars:varparna:varparnas
+CUSTOM: y n
+906192r3<substantiv>varpa:varpa:varpas:varpan:varpans:varpor:varpors:varporna:varpornas
+CUSTOM: y n
+906200r3<verb>varpa:varpa:varpade:varpat:varpar:varpa:varpas:varpades:varpats:varpas:varpad:varpat:varpade:varpande:!
+988848r3<substantiv>varpbom:varpbom:varpboms:varpbommen:varpbommens:varpbommar:varpbommars:varpbommarna:varpbommarnas
+988856r3<substantiv>varphög:varphög:varphögs:varphögen:varphögens:varphögar:varphögars:varphögarna:varphögarnas
+988864r3<substantiv>varpning:varpning:varpnings:varpningen:varpningens::::
+CUSTOM: y n
+796610r3<adjektiv>varpstickad:varpstickad:varpstickat:varpstickade:varpstickade:!:!:!:
+619996r3<adverb>varpå:varpå
+619997r3<pronomen>vars:vars
+563599r4<adjektiv>varsam:varsam:varsamt:varsamma:varsamma:varsammare:varsammast:varsammaste:varsamme
+725597r3<substantiv>varsamhet:varsamhet:varsamhets:varsamheten:varsamhetens::::
+619998r4<adjektiv>varse:varse:varse:varse:varse:!:!:!:
+CUSTOM: y n
+733869r6<verb>varsebliva, varsebli:varsebli, varsebliva:varseblev:varseblivit:varseblir, varsebliver:varsebli, varsebliv:varseblis, varseblivas:varseblevs:varseblivits:varseblis, varseblives:varsebliven:varseblivet:varseblivna:varseblivande:
+COMPOUND(619998, 555217): varse + bliva, bli
+733865r4<substantiv>varseblivning:varseblivning:varseblivnings:varseblivningen:varseblivningens::::
+CUSTOM: y y varseblivnings
+765053r3<substantiv>varseblivningsobjekt::::::::
+COMPOUND(733865, 621627): varseblivning + objekt
+619999r4<substantiv>varsel:varsel:varsels:varslet:varslets:varsel:varsels:varslen:varslens
+CUSTOM: y y varsel
+814422r3<substantiv>varselljus:varselljus:varselljus:varselljuset:varselljusets:varselljus:varselljus:varselljusen:varselljusens
+814427r3<substantiv>varseltid:varseltid:varseltids:varseltiden:varseltidens:varseltider:varseltiders:varseltiderna:varseltidernas
+620002r3<pronomen>varsin:varsin
+620004r3<pronomen>varsina:varsina
+620006r3<pronomen>varsitt:varsitt
+620007r3<verb>varsko:varsko:varskodde:varskott:varskor:varsko:varskos:varskoddes:varskotts:varskos:varskodd:varskott:varskodda::
+620016r3<verb>varsla:varsla:varslade:varslat:varslar:varsla:varslas:varslades:varslats:varslas:varslad:varslat:varslade::
+548025r3<verb>varsna:varsna:varsnade:varsnat:varsnar:varsna:::::::::
+620024r3<adverb>varsomhelst:varsomhelst
+620025r3<adverb>varstans:varstans
+784200r3<egennamn>Warszawa:Warszawa:Warszawas
+CUSTOM: y n Warszawa
+722090r8<egennamn>Warszavapakten:Warszavapakten:Warszavapaktens
+CUSTOM: n n 
+554969r3<interjektion>varsågod:varsågod
+620026r3<interjektion>varsågoda:varsågoda
+620028r3<substantiv>vart:vart:!:!:!:!:!:!:!
+620027r3<adverb>vart:vart
+620029r3<pronomen>vartannat:vartannat
+620030r3<pronomen>vartdera:vartdera
+620031r3<adverb>vartefter:vartefter
+698511r3<pronomen>vartenda:vartenda
+620032r3<adverb>varthelst:varthelst
+620033r3<adverb>varthän:varthän
+620034r3<adverb>vartill:vartill
+946030r3<adverb>vartsomhelst:vartsomhelst
+620035r3<adverb>vartåt:vartåt
+933435r4<substantiv>varubil:varubil:varubils:varubilen:varubilens:varubilar:varubilars:varubilarna:varubilarnas
+COMPOUND(562107, 550885): vara + bil
+756531r4<substantiv>varubud:varubud:varubuds:varubudet:varubudets:varubud:varubuds:varubuden:varubudens
+COMPOUND(562107, 552287): vara + bud
+709421r4<substantiv>varudeklaration:varudeklaration:varudeklarations:varudeklarationen:varudeklarationens:varudeklarationer:varudeklarationers:varudeklarationerna:varudeklarationernas
+COMPOUND(562107, 650424): vara + deklaration
+588394r3<verb>varudeklarera:varudeklarera:varudeklarerade:varudeklarerat:varudeklarerar:varudeklarera:::::::::
+796613r3<adjektiv>varudeklarerad:varudeklarerad:varudeklarerat:varudeklarerade:varudeklarerade:!:!:!:
+553107r5<substantiv>varuhus:varuhus:varuhus:varuhuset:varuhusets:varuhus:varuhus:varuhusen:varuhusens
+COMPOUND(562107, 552480): vara + hus
+CUSTOM: y y varuhus
+709429r4<substantiv>varuhuskedja:varuhuskedja:varuhuskedjas:varuhuskedjan:varuhuskedjans:varuhuskedjor:varuhuskedjors:varuhuskedjorna:varuhuskedjornas
+COMPOUND(553107, 559717): varuhus + kedja
+757705r7<substantiv>varulager:varulager:varulagers:varulagret:varulagrets:varulager:varulagers:varulagren:varulagrens
+COMPOUND(562107, 555207): vara + lager
+550757r3<substantiv>varuleverantör:varuleverantör:varuleverantörs:varuleverantören:varuleverantörens:varuleverantörer:varuleverantörers:varuleverantörerna:varuleverantörernas
+552088r3<substantiv>varulv:varulv:varulvs:varulven:varulvens:varulvar:varulvars:varulvarna:varulvarnas
+698513r4<substantiv>varumottagare:varumottagare:varumottagares:varumottagaren:varumottagarens:varumottagare:varumottagares:varumottagarna:varumottagarnas
+COMPOUND(562107, 593273): vara + mottagare
+CUSTOM: y y varumottagar
+698514r5<substantiv>varumärke:varumärke:varumärkes:varumärket:varumärkets:varumärken:varumärkens:varumärkena:varumärkenas
+COMPOUND(562107, 619020): vara + märke
+CUSTOM: y y varumärkes
+738784r4<substantiv>varumärkesskydd:varumärkesskydd:varumärkesskydds:varumärkesskyddet:varumärkesskyddets:varumärkesskydd:varumärkesskydds:varumärkesskydden:varumärkesskyddens
+COMPOUND(698514, 552935): varumärke + skydd
+620910r3<adverb>varunder:varunder
+620911r3<adverb>varur:varur
+620912r3<adverb>varuti:varuti
+620913r3<adverb>varutinnan:varutinnan
+550758r3<substantiv>varutransport:varutransport:varutransports:varutransporten:varutransportens:varutransporter:varutransporters:varutransporterna:varutransporternas
+600457r3<substantiv>varuväxel:varuväxel:varuväxels:varuväxeln:varuväxelns:varuväxlar:varuväxlars:varuväxlarna:varuväxlarnas
+553108r11<substantiv>varv:varv:varvs:varvet:varvets:varv:varvs:varven:varvens
+CUSTOM: y y varvs varv
+548026r4<verb>varva:varva:varvade:varvat:varvar:varva:varvas:varvades:varvats:varvas:varvad:varvat:varvade::
+620914r3<adverb>varvid:varvid
+578200r3<adjektiv>varvig:varvig:varvigt:varviga:varviga::::
+750044r3<substantiv>varvning:varvning:varvnings:varvningen:varvningens:varvningar:varvningars:varvningarna:varvningarnas
+610200r3<substantiv>varvräknare:varvräknare:varvräknares:varvräknaren:varvräknarens:varvräknare:varvräknares:varvräknarna:varvräknarnas
+CUSTOM: y y varvräknar
+750052r3<substantiv>varvsarbetare::::::::
+COMPOUND(553108, 561048): varv + arbetare
+721863r3<egennamn>Varvsgatan:Varvsgatan:Varvsgatans
+750053r4<substantiv>varvsindustri:varvsindustri:varvsindustris:varvsindustrin:varvsindustrins:varvsindustrier:varvsindustriers:varvsindustrierna:varvsindustriernas
+COMPOUND(553108, 610799): varv + industri
+765722r4<substantiv>varvskris:varvskris:varvskris:varvskrisen:varvskrisens:varvskriser:varvskrisers:varvskriserna:varvskrisernas
+COMPOUND(553108, 549772): varv + kris
+750054r5<substantiv>varvtal:varvtal:varvtals:varvtalet:varvtalets:varvtal:varvtals:varvtalen:varvtalens
+COMPOUND(553108, 553029): varv + tal
+CUSTOM: y y varvtals
+750059r3<substantiv>varvtalsstegring::::::::
+COMPOUND(750054, 669701): varvtal + stegring
+933444r4<substantiv>varvtid:varvtid:varvtids:varvtiden:varvtidens:varvtider:varvtiders:varvtiderna:varvtidernas
+COMPOUND(553108, 550665): varv + tid
+750060r3<adverb>varvvis:varvvis
+946033r3<adverb>varåt:varåt
+698517r3<adverb>varöver:varöver
+550759r4<substantiv>vas:vas:vas:vasen:vasens:vaser:vasers:vaserna:vasernas
+814436r3<substantiv>wasabi:wasabi:wasabis:wasabin:wasabins::::
+894301r3<egennamn>Vasakronan:Vasakronan:Vasakronans
+765054r4<substantiv>vasall:vasall:vasalls:vasallen:vasallens:vasaller:vasallers:vasallerna:vasallernas
+988868r4<substantiv>vasallstat:vasallstat:vasallstats:vasallstaten:vasallstatens:vasallstater:vasallstaters:vasallstaterna:vasallstaternas
+COMPOUND(765054, 550566): vasall + stat
+814441r4<substantiv>Vasalopp:Vasalopp:Vasalopps:Vasaloppet:Vasaloppets:Vasalopp:Vasalopps:Vasaloppen:Vasaloppens
+CUSTOM: y n Vasalopps
+814447r3<substantiv>Vasaloppssegrare::::::::
+COMPOUND(814441, 556363): Vasalopp + segrare
+988876r3<substantiv>Vasamedalj:Vasamedalj:Vasamedaljs:Vasamedaljen:Vasamedaljens:Vasamedaljer:Vasamedaljers:Vasamedaljerna:Vasamedaljernas
+964413r3<egennamn>Vasaorden:Vasaorden:Vasaordens
+698518r3<substantiv>vaselin:vaselin:vaselins:vaselinet:vaselinets:!:!:!:!
+CUSTOM: y y vaselin
+578203r3<adjektiv>vasformig:vasformig:vasformigt:vasformiga:vasformiga::::
+554915r3<egennamn>Washington:Washington:Washingtons
+CUSTOM: y n Washington
+860827r3<egennamn>Vasilis:Vasilis:Vasilis
+CUSTOM: n n
+629049r3<substantiv>vask:vask:vasks:vasken:vaskens:vaskar:vaskars:vaskarna:vaskarnas
+629057r4<verb>vaska:vaska:vaskade:vaskat:vaskar:vaska:vaskas:vaskades:vaskats:vaskas:vaskad:vaskat:vaskade:vaskande:
+814448r3<substantiv>vaskare:vaskare:vaskares:vaskaren:vaskarens:vaskare:vaskares:vaskarna:vaskarnas
+814452r3<substantiv>vaskeri:vaskeri:vaskeris:vaskeriet:vaskeriets:vaskerier:vaskeriers:vaskerierna:vaskeriernas
+814460r3<substantiv>vaskning:vaskning:vasknings:vaskningen:vaskningens:vaskningar:vaskningars:vaskningarna:vaskningarnas
+988884r3<adjektiv>vaskulär:vaskulär:vaskulärt:vaskulära:vaskulära::::::::::::
+584682r3<adjektiv>vasomotorisk:vasomotorisk:vasomotoriskt:vasomotoriska:vasomotoriska::::
+563270r6<adjektiv>vass:vass:vasst:vassa:vassa:vassare:vassast:vassaste:vasse
+552090r6<substantiv>vass:vass:vass:vassen:vassens:vassar:vassars:vassarna:vassarnas
+CUSTOM: y n
+988887r4<substantiv>vassbälte:vassbälte:vassbältes:vassbältet:vassbältets:vassbälten:vassbältens:vassbältena:vassbältenas
+COMPOUND(552090, 560910): vass + bälte
+796614r3<adjektiv>vasseggad:vasseggad:vasseggat:vasseggade:vasseggade:!:!:!:
+578206r3<adjektiv>vasseggig:vasseggig:vasseggigt:vasseggiga:vasseggiga::::
+578209r3<adjektiv>vassig:vassig:vassigt:vassiga:vassiga::::
+774547r3<substantiv>vassla:vassla:vasslas:vasslan:vasslans::::
+627385r3<substantiv>vassle:vassle:vassles:vasslen:vasslens::::
+578212r3<adjektiv>vassleaktig:vassleaktig:vassleaktigt:vassleaktiga:vassleaktiga::::
+568412r3<adjektiv>vasslig:vasslig:vassligt:vassliga:vassliga::::
+796617r3<adjektiv>vasslipad:vasslipad:vasslipat:vasslipade:vasslipade:!:!:!:
+814468r3<substantiv>vasspipa:vasspipa:vasspipas:vasspipan:vasspipans:vasspipor:vasspipors:vasspiporna:vasspipornas
+964415r5<substantiv>vassrugge, vassrugg:vassrugg, vassrugge:vassruggs:vassruggen:vassruggens:vassruggar:vassruggars:vassruggarna:vassruggarnas
+814476r3<substantiv>vassrör:vassrör:vassrörs:vassröret:vassrörets:vassrör:vassrörs:vassrören:vassrörens
+814483r3<substantiv>vasstak:vasstak:vasstaks:vasstaket:vasstakets:vasstak:vasstaks:vasstaken:vasstakens
+796621r3<adjektiv>vasstandad:vasstandad:vasstandat:vasstandade:vasstandade:!:!:!:
+774551r4<substantiv>vasstrå:vasstrå:vasstrås:vasstrået:vasstråets:vasstrån:vasstråns:vasstråna:vasstrånas
+COMPOUND(552090, 619731): vass + strå
+796625r3<adjektiv>vasstungad:vasstungad:vasstungat:vasstungade:vasstungade:!:!:!:
+800729r3<adjektiv>vassögd:vassögd:vassögt:vassögda:vassögda::::
+890428r3<egennamn>Vatikanen:Vatikanen:Vatikanens
+CUSTOM: y n Vatikan
+814490r3<adjektiv>vatikansk:vatikansk:vatikanskt:vatikanska:vatikanska::::
+554162r3<egennamn>Vatikanstaten:Vatikanstaten:Vatikanstatens
+CUSTOM: n n 
+789302r3<egennamn>Watson:Watson:Watsons
+629144r4<substantiv>watt:watt:watts:watten:wattens:watt:watts:watten:wattens
+DEFINITION 1: Standardenheten för elektrisk effekt.
+802136r3<adjektiv>vattblå:vattblå:vattblått:vattblåa:vattblåa::::
+555162r36<substantiv>vatten:vatten:vattens:vattnet:vattnets:vatten:vattens:vattnen:vattnens
+CUSTOM: y y vatten +vatten
+945670r4<substantiv>vattenaloe:vattenaloe:vattenaloes:vattenaloen:vattenaloens::::
+COMPOUND(555162, 623330): vatten + aloe
+785306r3<adjektiv>vattenavstötande:vattenavstötande:vattenavstötande:vattenavstötande:vattenavstötande:!:!:!:
+785305r3<adjektiv>vattenavvisande:vattenavvisande:vattenavvisande:vattenavvisande:vattenavvisande:!:!:!:
+796628r3<adjektiv>vattenbaserad:vattenbaserad:vattenbaserat:vattenbaserade:vattenbaserade:!:!:!:
+953472r4<verb>vattenbegjuta:vattenbegjuta:vattenbegöt:vattenbegjutit:vattenbegjuter:vattenbegjut:vattenbegjutas:vattenbegöts:vattenbegjutits:vattenbegjuts, vattenbegjutes:vattenbegjuten:vattenbegjutet:vattenbegjutna:vattenbegjutande:
+COMPOUND(555162, 864599): vatten + begjuta
+578215r3<adjektiv>vattenbeständig:vattenbeständig:vattenbeständigt:vattenbeständiga:vattenbeständiga::::
+796631r3<adjektiv>vattenblandad:vattenblandad:vattenblandat:vattenblandade:vattenblandade:!:!:!:
+802139r3<adjektiv>vattenblå:vattenblå:vattenblått:vattenblåa:vattenblåa::::
+553109r3<substantiv>vattenbryn:vattenbryn:vattenbryns:vattenbrynet:vattenbrynets:vattenbryn:vattenbryns:vattenbrynen:vattenbrynens
+847297r3<adjektiv>vattenburen:vattenburen:vattenburet:vattenburna:vattenburna::::
+750061r3<substantiv>vattendelare:vattendelare:vattendelares:vattendelaren:vattendelarens:vattendelare:vattendelares:vattendelarna:vattendelarnas
+553111r3<substantiv>vattendrag:vattendrag:vattendrags:vattendraget:vattendragets:vattendrag:vattendrags:vattendragen:vattendragens
+578218r3<adjektiv>vattendroppshärdig:vattendroppshärdig:vattendroppshärdigt:vattendroppshärdiga:vattendroppshärdiga::::
+814493r3<substantiv>vattendränkning:vattendränkning:vattendränknings:vattendränkningen:vattendränkningens::::
+989429r4<substantiv>vattenekosystem:vattenekosystem:vattenekosystems:vattenekosystemet:vattenekosystemets:vattenekosystem:vattenekosystems:vattenekosystemen:vattenekosystemens
+COMPOUND(555162, 680851): vatten + ekosystem
+608401r4<substantiv>vattenfall:vattenfall:vattenfalls:vattenfallet:vattenfallets:vattenfall:vattenfalls:vattenfallen:vattenfallens
+988897r4<substantiv>vattenfallsverk:vattenfallsverk:vattenfallsverks:vattenfallsverket:vattenfallsverkets:vattenfallsverk:vattenfallsverks:vattenfallsverken:vattenfallsverkens
+COMPOUND(608401, 553117): vattenfall + verk
+578221r3<adjektiv>vattenfattig:vattenfattig:vattenfattigt:vattenfattiga:vattenfattiga::::
+578224r3<adjektiv>vattenfläckig:vattenfläckig:vattenfläckigt:vattenfläckiga:vattenfläckiga::::
+564373r3<adjektiv>vattenfri:vattenfri:vattenfritt:vattenfria:vattenfria::::
+800732r3<adjektiv>vattenfylld:vattenfylld:vattenfyllt:vattenfyllda:vattenfyllda::::
+604096r4<substantiv>vattenfärg:vattenfärg:vattenfärgs:vattenfärgen:vattenfärgens:vattenfärger:vattenfärgers:vattenfärgerna:vattenfärgernas
+CUSTOM: y y vattenfärgs
+814538r3<substantiv>vattenfärgsbild::::::::
+COMPOUND(604096, 548373): vattenfärg + bild
+750067r3<substantiv>vattenföring:vattenföring:vattenförings:vattenföringen:vattenföringens:vattenföringar:vattenföringars:vattenföringarna:vattenföringarnas
+712948r4<substantiv>vattenförorening:vattenförorening:vattenförorenings:vattenföroreningen:vattenföroreningens:vattenföroreningar:vattenföroreningars:vattenföroreningarna:vattenföroreningarnas
+COMPOUND(555162, 556477): vatten + förorening
+568415r3<adjektiv>vattengenomsläpplig:vattengenomsläpplig:vattengenomsläppligt:vattengenomsläppliga:vattengenomsläppliga::::
+578227r3<adjektiv>vattenhaltig:vattenhaltig:vattenhaltigt:vattenhaltiga:vattenhaltiga::::
+803885r4<substantiv>vattenho:vattenho:vattenhos:vattenhon:vattenhons:vattenhoar:vattenhoars:vattenhoarna:vattenhoarnas
+COMPOUND(555162, 557668): vatten + ho
+939147r4<substantiv>vattenhål:vattenhål:vattenhåls:vattenhålet:vattenhålets:vattenhål:vattenhåls:vattenhålen:vattenhålens
+COMPOUND(555162, 552485): vatten + hål
+595737r3<substantiv>vattenkanna:vattenkanna:vattenkannas:vattenkannan:vattenkannans:vattenkannor:vattenkannors:vattenkannorna:vattenkannornas
+750079r3<substantiv>vattenkoppor:::::vattenkoppor:vattenkoppors:vattenkopporna:vattenkoppornas
+738786r5<substantiv>vattenkraft:vattenkraft:vattenkrafts:vattenkraften:vattenkraftens::::
+CUSTOM: y y vattenkraft vattenkrafts
+814505r3<substantiv>vattenkraftanläggning::::::::
+COMPOUND(738786, 606104): vattenkraft + anläggning
+738785r3<substantiv>vattenkraftsutbyggnad::::::::
+COMPOUND(738786, 645163): vattenkraft + utbyggnad
+608407r3<substantiv>vattenkraftverk:vattenkraftverk:vattenkraftverks:vattenkraftverket:vattenkraftverkets:vattenkraftverk:vattenkraftverks:vattenkraftverken:vattenkraftverkens
+800735r3<adjektiv>vattenkyld:vattenkyld:vattenkylt:vattenkylda:vattenkylda::::
+800738r3<adjektiv>vattenlagd:vattenlagd:vattenlagt:vattenlagda:vattenlagda::::
+730933r4<substantiv>vattenled:vattenled:vattenleds:vattenleden:vattenledens:vattenleder:vattenleders:vatten

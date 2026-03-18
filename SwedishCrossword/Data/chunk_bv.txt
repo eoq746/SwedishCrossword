@@ -1,0 +1,597 @@
+eternas
+742005r3<substantiv>formande:formande:formandes:formandet:formandets::::
+646326r3<substantiv>formant:formant:formants:formanten:formantens:formanter:formanters:formanterna:formanternas
+775110r3<substantiv>formare:formare:formares:formaren:formarens:formare:formares:formarna:formarnas
+552391r9<substantiv>format:format:formats:formatet:formatets:format:formats:formaten:formatens
+CUSTOM: y y format
+546575r5<verb>formatera:formatera:formaterade:formaterat:formaterar:formatera:formateras:formaterades:formaterats:formateras:formaterad:formaterat:formaterade:formaterande:
+646334r3<substantiv>formatering:formatering:formaterings:formateringen:formateringens:formateringar:formateringars:formateringarna:formateringarnas
+CUSTOM: y y formaterings
+646335r5<substantiv>formation:formation:formations:formationen:formationens:formationer:formationers:formationerna:formationernas
+CUSTOM: y y formations
+681633r6<substantiv>formationsdans:formationsdans:formationsdans:formationsdansen:formationsdansens:formationsdanser:formationsdansers:formationsdanserna:formationsdansernas
+COMPOUND(646335, 548569): formation + dans
+837142r3<adjektiv>formativ:formativ:formativt:formativa:formativa::::
+718382r4<substantiv>formatmall:formatmall:formatmalls:formatmallen:formatmallens:formatmallar:formatmallars:formatmallarna:formatmallarnas
+COMPOUND(552391, 551719): format + mall
+569083r3<adjektiv>formbar:formbar:formbart:formbara:formbara::::
+775118r3<substantiv>formbarhet:formbarhet:formbarhets:formbarheten:formbarhetens::::
+572510r3<adjektiv>formbeständig:formbeständig:formbeständigt:formbeständiga:formbeständiga::::
+646336r6<substantiv>formel:formel:formels:formeln:formelns:formler:formlers:formlerna:formlernas
+CUSTOM: y y formel
+790928r3<adjektiv>formelartad:formelartad:formelartat:formelartade:formelartade:!:!:!:
+731040r4<substantiv>formelblad:formelblad:formelblads:formelbladet:formelbladets:formelblad:formelblads:formelbladen:formelbladens
+COMPOUND(646336, 552254): formel + blad
+646338r4<adjektiv>formell:formell:formellt:formella:formella:formellare:formellast:formellaste:formelle
+565879r3<adjektiv>formellträttslig:formellträttslig:formellträttsligt:formellträttsliga:formellträttsliga::::
+731031r4<substantiv>formelsamling:formelsamling:formelsamlings:formelsamlingen:formelsamlingens:formelsamlingar:formelsamlingars:formelsamlingarna:formelsamlingarnas
+COMPOUND(646336, 597545): formel + samling
+565882r3<adjektiv>formenlig:formenlig:formenligt:formenliga:formenliga::::
+546576r5<verb>formera:formera:formerade:formerat:formerar:formera:formeras:formerades:formerats:formeras:formerad:formerat:formerade:formerande:
+646339r3<substantiv>formerare:formerare:formerares:formeraren:formerarens:formerare:formerares:formerarna:formerarnas
+CUSTOM: y y formerar
+646345r3<substantiv>formering:formering:formerings:formeringen:formeringens:formeringar:formeringars:formeringarna:formeringarnas
+CUSTOM: y y formerings
+930692r4<substantiv>formfel:formfel:formfels:formfelet:formfelets:formfel:formfels:formfelen:formfelens
+COMPOUND(548947, 552375): form + fel
+951166r4<substantiv>formfilt:formfilt:formfilts:formfilten:formfiltens::::
+COMPOUND(658730, 551129): form + filt
+563763r4<adjektiv>formfri:formfri:formfritt:formfria:formfria::::
+COMPOUND(548947, 558850): form + fri
+CUSTOM: y n n
+790931r3<adjektiv>formfulländad:formfulländad:formfulländat:formfulländade:formfulländade:!:!:!:
+646353r6<verb>formge, formgiva:formge, formgiva:formgav:formgett, formgivit:formger, formgiver:formge, formgiv:formges, formgivas:formgavs:formgetts, formgivits:formges, formgives, formgivs:formgiven:formgivet:formgivna:formgivande:
+COMPOUND(548947, 556584): form + giva, ge
+694220r14<substantiv>formgivare:formgivare:formgivares:formgivaren:formgivarens:formgivare:formgivares:formgivarna:formgivarnas
+646362r3<substantiv>formgivning:formgivning:formgivnings:formgivningen:formgivningens:formgivningar:formgivningars:formgivningarna:formgivningarnas
+CUSTOM: y y formgivnings
+893063r4<verb>formgjuta:formgjuta:formgöt:formgjutit:formgjuter:formgjut:formgjutas:formgöts:formgjutits:formgjuts, formgjutes:formgjuten:formgjutet:formgjutna:formgjutande:
+COMPOUND(658730, 558963): form + gjuta
+757723r5<substantiv>formgjutning:formgjutning:formgjutnings:formgjutningen:formgjutningens:formgjutningar:formgjutningars:formgjutningarna:formgjutningarnas
+COMPOUND(658730, 678741): form + gjutning
+CUSTOM: y y formgjutnings
+757722r4<substantiv>formgjutningsmaskin:formgjutningsmaskin:formgjutningsmaskins:formgjutningsmaskinen:formgjutningsmaskinens:formgjutningsmaskiner:formgjutningsmaskiners:formgjutningsmaskinerna:formgjutningsmaskinernas
+COMPOUND(757723, 550005): formgjutning + maskin
+570735r4<adjektiv>formidabel:formidabel:formidabelt:formidabla:formidabla:formidablare:formidablast:formidablaste:formidable
+759987r3<substantiv>formkonst:formkonst:formkonsts:formkonsten:formkonstens::::
+646363r4<substantiv>formlera:formlera:formleras:formleran:formlerans:formleror:formlerors:formlerorna:formlerornas
+COMPOUND(548947, 594621): form + lera
+CUSTOM: y n n
+565885r3<adjektiv>formlig:formlig:formligt:formliga:formliga::::
+620542r3<adverb>formligen:formligen
+646427r5<substantiv>formlära:formlära:formläras:formläran:formlärans:formläror:formlärors:formlärorna:formlärornas
+COMPOUND(548947, 560236): form + lära
+564827r4<adjektiv>formlös:formlös:formlöst:formlösa:formlösa::::
+COMPOUND(548947, 560265): form + lös
+775114r3<substantiv>formlöshet:formlöshet:formlöshets:formlösheten:formlöshetens::::
+742011r3<adjektiv>formmässig:formmässig:formmässigt:formmässiga:formmässiga::::
+837152r4<substantiv>formning:formning:formnings:formningen:formningens::::
+CUSTOM: y y formnings
+837156r4<substantiv>formningsfel:formningsfel:formningsfels:formningsfelet:formningsfelets:formningsfel:formningsfels:formningsfelen:formningsfelens
+COMPOUND(837152, 552375): formning + fel
+978063r4<substantiv>formord:formord:formords:formordet:formordets:formord:formords:formorden:formordens
+COMPOUND(548947, 555138): form + ord
+CUSTOM: y n
+882731r6<adjektiv>formren:formren:formrent:formrena:formrena::::::::::::
+COMPOUND(548947, 563124): form + ren
+769068r3<adjektiv>formrik:formrik:formrikt:formrika:formrika:formrikare:formrikast:formrikaste:
+572513r3<adjektiv>formriktig:formriktig:formriktigt:formriktiga:formriktiga::::
+742015r3<substantiv>formsak:formsak:formsaks:formsaken:formsakens:formsaker:formsakers:formsakerna:formsakernas
+845662r3<adjektiv>formskön:formskön:formskönt:formsköna:formsköna::::
+731263r4<substantiv>formsmidning:formsmidning:formsmidnings:formsmidningen:formsmidningens::::
+COMPOUND(658730, 713048): form + smidning
+738868r3<substantiv>formsprutning:formsprutning:formsprutnings:formsprutningen:formsprutningens:formsprutningar:formsprutningars:formsprutningarna:formsprutningarnas
+937363r4<substantiv>formspråk:formspråk:formspråks:formspråket:formspråkets:formspråk:formspråks:formspråken:formspråkens
+COMPOUND(548947, 552959): form + språk
+572516r3<adjektiv>formstridig:formstridig:formstridigt:formstridiga:formstridiga::::
+633385r5<adjektiv>formsvag:formsvag:formsvagt:formsvaga:formsvaga::::::::::::
+729870r4<substantiv>formsvarvning:formsvarvning:formsvarvnings:formsvarvningen:formsvarvningens:formsvarvningar:formsvarvningars:formsvarvningarna:formsvarvningarnas
+COMPOUND(548947, 684012): form + svarvning
+773224r5<substantiv>formteckning:formteckning:formtecknings:formteckningen:formteckningens:formteckningar:formteckningars:formteckningarna:formteckningarnas
+COMPOUND(548947, 671990): form + teckning
+CUSTOM: y y formtecknings
+773234r3<substantiv>formteckningsbok::::::::
+COMPOUND(773224, 555346): formteckning + bok
+546577r4<verb>formulera:formulera:formulerade:formulerat:formulerar:formulera:formuleras:formulerades:formulerats:formuleras:formulerad:formulerat:formulerade::
+783344r3<substantiv>formulerande:formulerande:formulerandes:formulerandet:formulerandets::::
+646431r3<substantiv>formulering:formulering:formulerings:formuleringen:formuleringens:formuleringar:formuleringars:formuleringarna:formuleringarnas
+CUSTOM: y y formulerings +formulerings
+552392r7<substantiv>formulär:formulär:formulärs:formuläret:formulärets:formulär:formulärs:formulären:formulärens
+CUSTOM: y y formulär
+837163r4<substantiv>formulärbok:formulärbok:formulärboks:formulärboken:formulärbokens:formulärböcker:formulärböckers:formulärböckerna:formulärböckernas
+COMPOUND(552392, 555346): formulär + bok
+617549r4<adjektiv>forn:forn:fornt:forna:forna::::forne
+CUSTOM: y n forn
+967720r3<substantiv>fornarameiska:fornarameiska:fornarameiskas:fornarameiskan:fornarameiskans::::
+617550r3<substantiv>fornborg:fornborg:fornborgs:fornborgen:fornborgens:fornborgar:fornborgars:fornborgarna:fornborgarnas
+580112r3<adjektiv>fornegyptisk:fornegyptisk:fornegyptiskt:fornegyptiska:fornegyptiska::::
+797679r3<adjektiv>fornengelsk:fornengelsk:fornengelskt:fornengelska:fornengelska::::
+617558r3<substantiv>fornfynd:fornfynd:fornfynds:fornfyndet:fornfyndets:fornfynd:fornfynds:fornfynden:fornfyndens
+580115r3<adjektiv>forngutnisk:forngutnisk:forngutniskt:forngutniska:forngutniska::::
+837171r3<substantiv>forngutniska:forngutniska:forngutniskas:forngutniskan:forngutniskans::::
+837175r3<substantiv>fornhögtyska:fornhögtyska:fornhögtyskas:fornhögtyskan:fornhögtyskans::::
+617564r3<substantiv>fornlämning:fornlämning:fornlämnings:fornlämningen:fornlämningens:fornlämningar:fornlämningars:fornlämningarna:fornlämningarnas
+CUSTOM: y y fornlämnings
+617565r3<substantiv>fornminne:fornminne:fornminnes:fornminnet:fornminnets:fornminnen:fornminnens:fornminnena:fornminnenas
+CUSTOM: y y fornminnes
+580117r3<adjektiv>fornnordisk:fornnordisk:fornnordiskt:fornnordiska:fornnordiska::::
+837179r3<substantiv>fornsak:fornsak:fornsaks:fornsaken:fornsakens:fornsaker:fornsakers:fornsakerna:fornsakernas
+CUSTOM: y n fornsaks
+599298r3<substantiv>fornsal:fornsal:fornsals:fornsalen:fornsalens:fornsalar:fornsalars:fornsalarna:fornsalarnas
+617573r4<adjektiv>fornstor:fornstor:fornstort:fornstora:fornstora:!:!:!:fornstore
+617576r3<adjektiv>fornsvensk:fornsvensk:fornsvenskt:fornsvenska:fornsvenska::::
+617578r4<substantiv>forntid:forntid:forntids:forntiden:forntidens:forntider:forntiders:forntiderna:forntidernas
+COMPOUND(617549, 550665): forn + tid
+CUSTOM: y y forntids
+617583r3<adjektiv>forntida:forntida:forntida:forntida:forntida:!:!:!:
+617584r3<adjektiv>forntysk:forntysk:forntyskt:forntyska:forntyska::::
+580118r3<adjektiv>fornvästnordisk:fornvästnordisk:fornvästnordiskt:fornvästnordiska:fornvästnordiska::::
+837188r3<substantiv>fornyrdislag:fornyrdislag:fornyrdislags:fornyrdislaget:fornyrdislagets::::
+572519r3<adjektiv>fornåldrig:fornåldrig:fornåldrigt:fornåldriga:fornåldriga::::
+646432r3<adjektiv>fornärvd:fornärvd:fornärvt:fornärvda:fornärvda::::
+551176r6<substantiv>fors:fors:fors:forsen:forsens:forsar:forsars:forsarna:forsarnas
+CUSTOM: y y fors
+617587r4<verb>forsa:forsa:forsade:forsat:forsar:forsa::::::::forsande:
+672648r3<egennamn>Forsberg:Forsberg:Forsbergs
+706157r4<substantiv>forsbåt:forsbåt:forsbåts:forsbåten:forsbåtens:forsbåtar:forsbåtars:forsbåtarna:forsbåtarnas
+COMPOUND(551176, 550993): fors + båt
+721867r3<egennamn>Forselius:Forselius:Forselius
+553413r3<egennamn>Forsell:Forsell:Forsells
+646433r3<substantiv>forsfarare:forsfarare:forsfarares:forsfararen:forsfararens:forsfarare:forsfarares:forsfararna:forsfararnas
+CUSTOM: y y forsfarar
+705824r4<substantiv>forsfärd:forsfärd:forsfärds:forsfärden:forsfärdens:forsfärder:forsfärders:forsfärderna:forsfärdernas
+COMPOUND(551176, 562205): fors + färd
+728098r3<egennamn>Forshaga:Forshaga:Forshagas
+944490r3<egennamn>Forshed:Forshed:Forsheds
+546578r5<verb>forska:forska:forskade:forskat:forskar:forska:forskas:forskades:forskats:forskas::::forskande:
+896037r3<substantiv>forskande:forskande:forskandes:forskandet:forskandets::::
+617588r3<substantiv>forskarassistent:forskarassistent:forskarassistents:forskarassistenten:forskarassistentens:forskarassistenter:forskarassistenters:forskarassistenterna:forskarassistenternas
+705832r4<substantiv>forskarby:forskarby:forskarbys:forskarbyn:forskarbyns:forskarbyar:forskarbyars:forskarbyarna:forskarbyarnas
+COMPOUND(615220, 557655): forskare + by
+615220r11<substantiv>forskare:forskare:forskares:forskaren:forskarens:forskare:forskares:forskarna:forskarnas
+CUSTOM: y y forskar +forskar
+951171r4<substantiv>forskariver:forskariver:forskarivers:forskarivern:forskariverns:!:!:!:!
+COMPOUND(615220, 559578): forskare + iver
+701674r4<substantiv>forskarutbildning:forskarutbildning:forskarutbildnings:forskarutbildningen:forskarutbildningens:forskarutbildningar:forskarutbildningars:forskarutbildningarna:forskarutbildningarnas
+COMPOUND(615220, 597810): forskare + utbildning
+CUSTOM: y y forskarutbildnings
+646379r16<substantiv>forskning:forskning:forsknings:forskningen:forskningens:forskningar:forskningars:forskningarna:forskningarnas
+BASEWORDS: forsknings
+CUSTOM: y y forsknings +forsknings
+605539r3<substantiv>forskningsanstalt:forskningsanstalt:forskningsanstalts:forskningsanstalten:forskningsanstaltens:forskningsanstalter:forskningsanstalters:forskningsanstalterna:forskningsanstalternas
+914055r4<substantiv>forskningsby:forskningsby:forskningsbys:forskningsbyn:forskningsbyns:forskningsbyar:forskningsbyars:forskningsbyarna:forskningsbyarnas
+COMPOUND(646379, 557655): forskning + by
+914064r4<substantiv>forskningsdel:forskningsdel:forskningsdels:forskningsdelen:forskningsdelens:forskningsdelar:forskningsdelars:forskningsdelarna:forskningsdelarnas
+COMPOUND(646379, 551034): forskning + del
+580121r3<adjektiv>forskningsetisk:forskningsetisk:forskningsetiskt:forskningsetiska:forskningsetiska::::
+734661r4<substantiv>forskningsinstitut:forskningsinstitut:forskningsinstituts:forskningsinstitutet:forskningsinstitutets:forskningsinstitut:forskningsinstituts:forskningsinstituten:forskningsinstitutens
+COMPOUND(646379, 552517): forskning + institut
+701682r4<substantiv>forskningsrapport:forskningsrapport:forskningsrapports:forskningsrapporten:forskningsrapportens:forskningsrapporter:forskningsrapporters:forskningsrapporterna:forskningsrapporternas
+COMPOUND(646379, 550315): forskning + rapport
+701690r4<substantiv>forskningsresultat:forskningsresultat:forskningsresultats:forskningsresultatet:forskningsresultatets:forskningsresultat:forskningsresultats:forskningsresultaten:forskningsresultatens
+COMPOUND(646379, 552840): forskning + resultat
+742023r4<substantiv>forskningsråd:forskningsråd:forskningsråds:forskningsrådet:forskningsrådets:forskningsråd:forskningsråds:forskningsråden:forskningsrådens
+COMPOUND(646379, 552853): forskning + råd
+849771r3<substantiv>forskningsrön:forskningsrön:forskningsröns:forskningsrönet:forskningsrönets:forskningsrön:forskningsröns:forskningsrönen:forskningsrönens
+546579r6<verb>forsla:forsla:forslade:forslat:forslar:forsla:forslas:forslades:forslats:forslas:forslad:forslat:forslade:forslande:
+646380r3<substantiv>forsling:forsling:forslings:forslingen:forslingens:forslingar:forslingars:forslingarna:forslingarnas
+553415r3<egennamn>Forsman:Forsman:Forsmans
+706165r4<substantiv>forspaddling:forspaddling:forspaddlings:forspaddlingen:forspaddlingens::::
+COMPOUND(551176, 694240): fors + paddling
+775122r3<substantiv>forsrännare:forsrännare:forsrännares:forsrännaren:forsrännarens:forsrännare:forsrännares:forsrännarna:forsrännarnas
+706169r3<substantiv>forsränning:forsränning:forsrännings:forsränningen:forsränningens:forsränningar:forsränningars:forsränningarna:forsränningarnas
+565886r3<adjektiv>forstlig:forstlig:forstligt:forstliga:forstliga::::
+837193r3<substantiv>forstmästare:forstmästare:forstmästares:forstmästaren:forstmästarens:forstmästare:forstmästares:forstmästarna:forstmästarnas
+580124r3<adjektiv>forstpolitisk:forstpolitisk:forstpolitiskt:forstpolitiska:forstpolitiska::::
+837199r3<substantiv>forsttekniker:forsttekniker:forstteknikers:forstteknikern:forstteknikerns:forsttekniker:forstteknikers:forstteknikerna:forstteknikernas
+565889r3<adjektiv>forstvetenskaplig:forstvetenskaplig:forstvetenskapligt:forstvetenskapliga:forstvetenskapliga::::
+854489r3<egennamn>Forsythe:Forsythe:Forsythes
+CUSTOM: y n Forsythe
+646388r3<substantiv>forsythia:forsythia:forsythias:forsythian:forsythians:forsythior:forsythiors:forsythiorna:forsythiornas
+837205r3<substantiv>forsythiabuske:forsythiabuske:forsythiabuskes:forsythiabusken:forsythiabuskens:forsythiabuskar:forsythiabuskars:forsythiabuskarna:forsythiabuskarnas
+756612r5<substantiv>forsärla:forsärla:forsärlas:forsärlan:forsärlans:forsärlor:forsärlors:forsärlorna:forsärlornas
+607104r3<substantiv>fort:fort:forts:fortet:fortets:fort:forts:forten:fortens
+560962r5<adverb>fort:fort
+CUSTOM: y y fort
+763233r3<verb>forta:forta:fortade:fortat:fortar:forta:::::::::
+CUSTOM: y n
+742030r3<adverb>fortare:fortare
+742032r3<adverb>fortast:fortast
+706177r7<verb>fortbestå:fortbestå:fortbestod:fortbestått:fortbestår::::::::::
+706181r3<substantiv>fortbestånd:fortbestånd:fortbestånds:fortbeståndet:fortbeståndets::::
+706185r3<verb>fortbilda:fortbilda:fortbildade:fortbildat:fortbildar:fortbilda:::::::::
+656954r3<substantiv>fortbildning:fortbildning:fortbildnings:fortbildningen:fortbildningens:fortbildningar:fortbildningars:fortbildningarna:fortbildningarnas
+CUSTOM: y y fortbildnings
+646442r3<substantiv>forte:forte:fortes:fortet:fortets:forten:fortens:fortena:fortenas
+CUSTOM: n n y
+646396r4<adverb>forte:forte
+CUSTOM: y n
+646414r3<substantiv>fortel:fortel:fortels:forteln:fortelns:fortlar:fortlars:fortlarna:fortlarnas
+CUSTOM: n n
+646434r4<substantiv>fortepedal:fortepedal:fortepedals:fortepedalen:fortepedalens:fortepedaler:fortepedalers:fortepedalerna:fortepedalernas
+COMPOUND(646396, 550181): forte + pedal
+689419r7<adverb>fortepiano:fortepiano
+646422r4<verb>fortfara:fortfara:fortfor:fortfarit:fortfar:fortfar:::::fortfaren:fortfaret:fortfarna::
+COMPOUND(560962, 558553): fort + fara
+620543r3<adverb>fortfarande:fortfarande
+572522r3<adjektiv>fortfärdig:fortfärdig:fortfärdigt:fortfärdiga:fortfärdiga::::
+646446r4<verb>fortgå:fortgå:fortgick:fortgått:fortgår:fortgå:fortgås:fortgicks:fortgåtts:fortgås:fortgången:fortgånget:fortgångna:fortgående:fortginge
+COMPOUND(560962, 554988): fort + gå
+656959r3<adjektiv>fortgående:fortgående:fortgående:fortgående:fortgående:!:!:!:
+646397r5<substantiv>fortifikation:fortifikation:fortifikations:fortifikationen:fortifikationens:fortifikationer:fortifikationers:fortifikationerna:fortifikationernas
+CUSTOM: y y fortifikations
+674271r4<substantiv>fortifikationskår:fortifikationskår:fortifikationskårs:fortifikationskåren:fortifikationskårens:fortifikationskårer:fortifikationskårers:fortifikationskårerna:fortifikationskårernas
+COMPOUND(646397, 559877): fortifikation + kår
+674258r4<substantiv>fortifikationsofficer:fortifikationsofficer:fortifikationsofficers:fortifikationsofficeren, fortifikationsofficern:fortifikationsofficerens, fortifikationsofficerns:fortifikationsofficerer, fortifikationsofficerare:fortifikationsofficerers, fortifikationsofficerare:fortifikationsofficererna, fortifikationsofficerarna:fortifikationsofficerernas, fortifikationsofficerarnas
+COMPOUND(646397, 603028): fortifikation + officer
+580127r3<adjektiv>fortifikatorisk:fortifikatorisk:fortifikatoriskt:fortifikatoriska:fortifikatoriska::::
+646405r3<substantiv>fortis:fortis:fortis:fortis:fortis::::
+646407r4<substantiv>fortissimo:fortissimo:fortissimos:fortissimot:fortissimots:fortissimon:fortissimons:fortissimona:fortissimonas
+646406r3<adverb>fortissimo:fortissimo
+656960r3<substantiv>fortkörare:fortkörare:fortkörares:fortköraren:fortkörarens:fortkörare:fortkörares:fortkörarna:fortkörarnas
+CUSTOM: y y fortkörar
+656966r3<substantiv>fortkörning:fortkörning:fortkörnings:fortkörningen:fortkörningens:fortkörningar:fortkörningars:fortkörningarna:fortkörningarnas
+CUSTOM: y y fortkörnings
+656974r3<verb>fortleva:fortleva:fortlevde:fortlevt:fortlever:fortlev:::::::::
+656975r3<substantiv>fortlevnad:fortlevnad:fortlevnads:fortlevnaden:fortlevnadens::::
+656979r3<verb>fortlöpa:fortlöpa:fortlöpte:fortlöpt:fortlöper:fortlöp:::::::::
+656981r3<adjektiv>fortlöpande:fortlöpande:fortlöpande:fortlöpande:fortlöpande:!:!:!:
+546580r5<verb>fortplanta:fortplanta:fortplantade:fortplantat:fortplantar:fortplanta:fortplantas:fortplantades:fortplantats:fortplantas:fortplantad:fortplantat:fortplantade:fortplantande:
+656982r3<substantiv>fortplantning:fortplantning:fortplantnings:fortplantningen:fortplantningens:fortplantningar:fortplantningars:fortplantningarna:fortplantningarnas
+CUSTOM: y y fortplantnings
+565892r3<adjektiv>fortplantningsduglig:fortplantningsduglig:fortplantningsdugligt:fortplantningsdugliga:fortplantningsdugliga::::
+646413r3<adjektiv>fortsatt:fortsatt:fortsatt:fortsatta:fortsatta:!:!:!:
+733347r3<substantiv>fortskaffningsmedel:fortskaffningsmedel:fortskaffningsmedels:fortskaffningsmedlet:fortskaffningsmedlets:fortskaffningsmedel:fortskaffningsmedels:fortskaffningsmedlen:fortskaffningsmedlens
+656983r4<verb>fortskrida:fortskrida:fortskred:fortskridit:fortskrider:fortskrid:::::fortskriden:fortskridet:fortskridna:fortskridande:
+656985r3<adjektiv>fortskridande:fortskridande:fortskridande:fortskridande:fortskridande:!:!:!:
+766865r3<substantiv>fortskridande:fortskridande:fortskridandes:fortskridandet:fortskridandets:fortskridanden:fortskridandens:fortskridandena:fortskridandenas
+593067r4<verb>fortsätta:fortsätta:fortsatte:fortsatt:fortsätter:fortsätt:fortsättas:fortsattes:fortsatts:fortsätts, fortsättes:fortsatt:fortsatt:fortsatta::
+690172r3<substantiv>fortsättande:fortsättande:fortsättandes:fortsättandet:fortsättandets::::
+596838r5<substantiv>fortsättning:fortsättning:fortsättnings:fortsättningen:fortsättningens:fortsättningar:fortsättningars:fortsättningarna:fortsättningarnas
+CUSTOM: y y fortsättnings
+722539r4<substantiv>fortsättningskrig:fortsättningskrig:fortsättningskrigs:fortsättningskriget:fortsättningskrigets:fortsättningskrig:fortsättningskrigs:fortsättningskrigen:fortsättningskrigens
+COMPOUND(596838, 552585): fortsättning + krig
+964832r8<substantiv>fortsättningstyska:fortsättningstyska:fortsättningstyskas:fortsättningstyskan:fortsättningstyskans::::
+COMPOUND(596838, 595676): fortsättning + tyska
+620544r3<adverb>fortsättningsvis:fortsättningsvis
+892304r3<egennamn>Fortum:Fortum:Fortums
+CUSTOM: y n Fortum
+646454r3<substantiv>fortuna:fortuna:::::::
+837216r3<substantiv>fortunaspel:fortunaspel:fortunaspels:fortunaspelet:fortunaspelets:fortunaspel:fortunaspels:fortunaspelen:fortunaspelens
+837222r3<substantiv>fortvaro:fortvaro:fortvaros:fortvaron:fortvarons::::
+593068r5<substantiv>forum:forum:forums:forumet:forumets:forum, fora:forums, foras:forumen:forumens
+CUSTOM: y y forum !fora !foras
+837226r4<substantiv>forumregel:forumregel:forumregels:forumregeln:forumregelns:forumregler:forumreglers:forumreglerna:forumreglernas
+COMPOUND(593068, 621698): forum + regel
+837234r3<substantiv>forvagn:forvagn:forvagns:forvagnen:forvagnens:forvagnar:forvagnars:forvagnarna:forvagnarnas
+646455r3<substantiv>forward:forward:forwards:forwarden:forwardens:forwardar:forwardars:forwardarna:forwardarnas
+CUSTOM: y y forwards
+548949r4<substantiv>fosfat:fosfat:fosfats:fosfaten:fosfatens:fosfater:fosfaters:fosfaterna:fosfaternas
+CUSTOM: y y fosfat
+978069r3<substantiv>fosfatas:fosfatas:fosfatas:fosfataset, fosfatasen:fosfatasets, fosfatasens:fosfataser:fosfatasers:fosfataserna:fosfatasernas
+CUSTOM: y n
+589330r4<verb>fosfatera:fosfatera:fosfaterade:fosfaterat:fosfaterar:fosfatera:fosfateras:fosfaterades:fosfaterats:fosfateras:fosfaterad:fosfaterat:fosfaterade:fosfaterande:
+978083r3<substantiv>fosfatering:fosfatering:fosfaterings:fosfateringen:fosfateringens::::
+837242r3<substantiv>fosfatgruva::::::::
+COMPOUND(548949, 594145): fosfat + gruva
+646456r5<substantiv>fosfor:fosfor:fosfors:fosforn:fosforns:!:!:!:!
+DEFINITION 1: Grundämne
+CUSTOM: y y fosfor
+837243r3<substantiv>fosforescens:fosforescens:fosforescens:fosforescensen:fosforescensens::::
+589334r4<verb>fosforescera:fosforescera:fosforescerade:fosforescerat:fosforescerar:fosforescera::::::::fosforescerande:
+563766r3<adjektiv>fosforfri:fosforfri:fosforfritt:fosforfria:fosforfria::::
+572525r3<adjektiv>fosforhaltig:fosforhaltig:fosforhaltigt:fosforhaltiga:fosforhaltiga::::
+589338r3<verb>fosforisera:fosforisera:fosforiserade:fosforiserat:fosforiserar:fosforisera:::::::::
+837247r3<substantiv>fosforist:fosforist:fosforists:fosforisten:fosforistens:fosforister:fosforisters:fosforisterna:fosforisternas
+580130r3<adjektiv>fosforistisk:fosforistisk:fosforistiskt:fosforistiska:fosforistiska::::
+837255r3<substantiv>fosforit:fosforit:fosforits:fosforiten:fosforitens:fosforiter:fosforiters:fosforiterna:fosforiternas
+730642r4<substantiv>fosforsyra:fosforsyra:fosforsyras:fosforsyran:fosforsyrans:fosforsyror:fosforsyrors:fosforsyrorna:fosforsyrornas
+COMPOUND(646456, 624847): fosfor + syra
+646465r3<substantiv>fosgen:fosgen:fosgens:fosgenen:fosgenens:!:!:!:!
+656988r3<adjektiv>fossil:fossil:fossilt:fossila:fossila:!:!:!:!
+656986r5<substantiv>fossil:fossil:fossils:fossilet:fossilets:fossil, fossiler:fossils, fossilers:fossilen, fossilerna:fossilens, fossilernas
+CUSTOM: y y fossil
+884641r3<substantiv>fossilbränsle::::::::
+COMPOUND(656986, 612411): fossil + bränsle
+878500r3<adjektiv>fossileldad:fossileldad:fossileldat:fossileldade:fossileldade:!:!:!:
+775128r3<adjektiv>fossilerad:fossilerad:fossilerat:fossilerade:fossilerade:!:!:!:
+907245r3<substantiv>fossilgas:fossilgas:fossilgas:fossilgasen:fossilgasens::::
+CUSTOM: y y fossilgas
+837267r3<substantiv>fossilisation:fossilisation:fossilisations:fossilisationen:fossilisationens::::
+589342r4<verb>fossilisera:fossilisera:fossiliserade:fossiliserat:fossiliserar:fossilisera:fossiliseras:fossiliserades:fossiliserats:fossiliseras:fossiliserad:fossiliserat:fossiliserade:fossiliserande:
+837276r3<substantiv>fossilisering:fossilisering:fossiliserings:fossiliseringen:fossiliseringens::::
+978087r3<substantiv>fossing:fossing:fossings:fossingen:fossingens:fossingar:fossingars:fossingarna:fossingarnas
+CUSTOM: y n
+837280r3<substantiv>fostbrödralag:fostbrödralag:fostbrödralags:fostbrödralaget:fostbrödralagets:fostbrödralag:fostbrödralags:fostbrödralagen:fostbrödralagens
+837286r3<substantiv>fostbrödraskap:fostbrödraskap:fostbrödraskaps:fostbrödraskapet:fostbrödraskapets::::
+646469r8<substantiv>foster:foster:fosters:fostret:fostrets:foster:fosters:fostren:fostrens
+CUSTOM: y y foster
+607110r3<substantiv>fosterbarn:fosterbarn:fosterbarns:fosterbarnet:fosterbarnets:fosterbarn:fosterbarns:fosterbarnen:fosterbarnens
+690177r4<substantiv>fosterbror:fosterbroder, fosterbror:fosterbroders, fosterbrors:fosterbrodern:fosterbroderns:fosterbröder:fosterbröders:fosterbröderna:fosterbrödernas
+COMPOUND(546581, 555140): fostra + bror, broder
+690186r4<substantiv>fosterdiagnostik:fosterdiagnostik:fosterdiagnostiks:fosterdiagnostiken:fosterdiagnostikens::::
+COMPOUND(646469, 661405): foster + diagnostik
+690190r4<substantiv>fosterdotter:fosterdotter:fosterdotters:fosterdottern:fosterdotterns:fosterdöttrar:fosterdöttrars:fosterdöttrarna:fosterdöttrarnas
+COMPOUND(546581, 617523): fostra + dotter
+914074r4<substantiv>fosterdöd:fosterdöd:fosterdöds:fosterdöden:fosterdödens::::
+COMPOUND(646469, 617530): foster + död
+690198r5<substantiv>fosterfader, fosterfar:fosterfader, fosterfar:fosterfaders, fosterfars:fosterfadern:fosterfaderns:fosterfäder:fosterfäders:fosterfäderna:fosterfädernas
+COMPOUND(546581, 558559): fostra + far, fader
+690205r4<substantiv>fosterfamilj:fosterfamilj:fosterfamiljs:fosterfamiljen:fosterfamiljens:fosterfamiljer:fosterfamiljers:fosterfamiljerna:fosterfamiljernas
+COMPOUND(546581, 548846): fostra + familj
+690213r5<substantiv>fosterhem:fosterhem:fosterhems:fosterhemmet:fosterhemmets:fosterhem:fosterhems:fosterhemmen:fosterhemmens
+COMPOUND(546581, 555169): fostra + hem
+CUSTOM: y y fosterhems
+690219r4<substantiv>fosterhemsplacering:fosterhemsplacering:fosterhemsplacerings:fosterhemsplaceringen:fosterhemsplaceringens:fosterhemsplaceringar:fosterhemsplaceringars:fosterhemsplaceringarna:fosterhemsplaceringarnas
+COMPOUND(690213, 690220): fosterhem + placering
+CUSTOM: y y fosterhemsplacerings
+607116r4<substantiv>fosterland:fosterland:fosterlands:fosterlandet:fosterlandets:fosterland:fosterlands:fosterlanden:fosterlandens
+CUSTOM: y y fosterlands
+565895r3<adjektiv>fosterlandsfientlig:fosterlandsfientlig:fosterlandsfientligt:fosterlandsfientliga:fosterlandsfientliga::::
+580133r4<adjektiv>fosterlandsförrädisk:fosterlandsförrädisk:fosterlandsförrädiskt:fosterlandsförrädiska:fosterlandsförrädiska::::fosterlandsförrädiske
+849777r4<substantiv>fosterlandsvän:fosterlandsvän:fosterlandsväns:fosterlandsvännen:fosterlandsvännens:fosterlandsvänner:fosterlandsvänners:fosterlandsvännerna:fosterlandsvännernas
+COMPOUND(607116, 620322): fosterland + vän
+563203r4<adjektiv>fosterländsk:fosterländsk:fosterländskt:fosterländska:fosterländska::::fosterländske
+731916r3<substantiv>fosterländskhet:fosterländskhet:fosterländskhets:fosterländskheten:fosterländskhetens::::
+690233r5<substantiv>fostermor, fostermoder:fostermoder, fostermor:fostermoders, fostermors:fostermodern:fostermoderns:fostermödrar:fostermödrars:fostermödrarna:fostermödrarnas
+COMPOUND(546581, 556181): fostra + mor, moder
+690242r4<substantiv>fosterskada:fosterskada:fosterskadas:fosterskadan:fosterskadans:fosterskador:fosterskadors:fosterskadorna:fosterskadornas
+COMPOUND(646469, 595121): foster + skada
+690250r4<substantiv>fosterson:fosterson:fostersons:fostersonen:fostersonens:fostersöner:fostersöners:fostersönerna:fostersönernas
+COMPOUND(546581, 559285): fostra + son
+690258r4<substantiv>fosterställning:fosterställning:fosterställnings:fosterställningen:fosterställningens:fosterställningar:fosterställningars:fosterställningarna:fosterställningarnas
+COMPOUND(646469, 597732): foster + ställning
+CUSTOM: y y fosterställnings
+690266r5<substantiv>fostervatten:fostervatten:fostervattens:fostervattnet:fostervattnets:!:!:!:!
+COMPOUND(646469, 555162): foster + vatten
+CUSTOM: y y fostervattens
+690270r4<substantiv>fostervattensprov:fostervattensprov:fostervattensprovs:fostervattensprovet:fostervattensprovets:fostervattensprov:fostervattensprovs:fostervattensproven:fostervattensprovens
+COMPOUND(690266, 621658): fostervatten + prov
+546581r12<verb>fostra:fostra:fostrade:fostrat:fostrar:fostra:fostras:fostrades:fostrats:fostras:fostrad:fostrat:fostrade:fostrande:
+CUSTOM: y y
+646471r3<substantiv>fostran:fostran:fostrans:fostran:fostrans::::
+615221r3<substantiv>fostrare:fostrare:fostrares:fostraren:fostrarens:fostrare:fostrares:fostrarna:fostrarnas
+CUSTOM: y y fostrar
+555210r31<substantiv>fot:fot:fots:foten:fotens:fötter:fötters:fötterna:fötternas
+DEFINITION 1: Kroppsdel
+CUSTOM: y y fot
+631001r6<substantiv>fot:fot:fots:foten:fotens:fot:fots:foten:fotens
+DEFINITION 1: Längdmått
+625345r5<verb>fota:fota:fotade:fotat:fotar:fota:fotas:fotades:fotats:fotas:fotad:fotat:fotade:fotande:
+DEFINITION 1: Fotografera.
+DEFINITION 2: Sparka.
+630972r3<substantiv>fotabjälle:fotabjälle:fotabjälles:fotabjället:fotabjällets::::
+874064r3<substantiv>fotangel:fotangel:fotangels:fotangeln:fotangelns:fotanglar:fotanglars:fotanglarna:fotanglarnas
+690276r4<substantiv>fotarbete:fotarbete:fotarbetes:fotarbetet:fotarbetets:fotarbeten:fotarbetens:fotarbetena:fotarbetenas
+COMPOUND(555210, 612263): fot + arbete
+690284r4<substantiv>fotavtryck:fotavtryck:fotavtrycks:fotavtrycket:fotavtryckets:fotavtryck:fotavtrycks:fotavtrycken:fotavtryckens
+COMPOUND(555210, 552216): fot + avtryck
+608978r3<substantiv>fotbad:fotbad:fotbads:fotbadet:fotbadets:fotbad:fotbads:fotbaden:fotbadens
+725423r4<substantiv>fotbeklädnad:fotbeklädnad:fotbeklädnads:fotbeklädnaden:fotbeklädnadens:fotbeklädnader:fotbeklädnaders:fotbeklädnaderna:fotbeklädnadernas
+COMPOUND(555210, 614813): fot + beklädnad
+656989r3<substantiv>fotboja:fotboja:fotbojas:fotbojan:fotbojans:fotbojor:fotbojors:fotbojorna:fotbojornas
+598234r8<substantiv>fotboll:fotboll:fotbolls:fotbollen:fotbollens:fotbollar:fotbollars:fotbollarna:fotbollarnas
+CUSTOM: y y fotbolls +fotbolls
+951176r4<substantiv>fotbollselva:fotbollselva:fotbollselvas:fotbollselvan:fotbollselvans:fotbollselvor:fotbollselvors:fotbollselvorna:fotbollselvornas
+COMPOUND(598234, 938114): fotboll + elva
+959479r4<substantiv>fotbollsfan:fotbollsfan:fotbollsfans:::fotbollsfans:fotbollsfans:fotbollsfansen:fotbollsfansens
+COMPOUND(598234, 761985): fotboll + fan
+601921r3<substantiv>fotbollsmatch:fotbollsmatch:fotbollsmatchs:fotbollsmatchen:fotbollsmatchens:fotbollsmatcher:fotbollsmatchers:fotbollsmatcherna:fotbollsmatchernas
+601929r3<substantiv>fotbollsplan:fotbollsplan:fotbollsplans:fotbollsplanen:fotbollsplanens:fotbollsplaner:fotbollsplaners:fotbollsplanerna:fotbollsplanernas
+738123r4<substantiv>fotbollsturnering:fotbollsturnering:fotbollsturnerings:fotbollsturneringen:fotbollsturneringens:fotbollsturneringar:fotbollsturneringars:fotbollsturneringarna:fotbollsturneringarnas
+COMPOUND(598234, 738114): fotboll + turnering
+929804r4<substantiv>fotfel:fotfel:fotfels:fotfelet:fotfelets:fotfel:fotfels:fotfelen:fotfelens
+COMPOUND(555210, 552375): fot + fel
+928692r4<substantiv>fotfolk:fotfolk:fotfolks:fotfolket:fotfolkets:fotfolk:fotfolks:fotfolken:fotfolkens
+COMPOUND(555210, 552385): fot + folk
+656991r3<substantiv>fotfäste:fotfäste:fotfästes:fotfästet:fotfästets:fotfästen:fotfästens:fotfästena:fotfästenas
+609502r3<substantiv>fotgängare:fotgängare:fotgängares:fotgängaren:fotgängarens:fotgängare:fotgängares:fotgängarna:fotgängarnas
+CUSTOM: y y fotgängar
+837294r3<substantiv>fotisättning:fotisättning:fotisättnings:fotisättningen:fotisättningens:fotisättningar:fotisättningars:fotisättningarna:fotisättningarnas
+930698r4<substantiv>fotknöl:fotknöl:fotknöls:fotknölen:fotknölens:fotknölar:fotknölars:fotknölarna:fotknölarnas
+COMPOUND(555210, 551568): fot + knöl
+742037r3<substantiv>fotled:fotled:fotleds:fotleden:fotledens:fotleder:fotleders:fotlederna:fotledernas
+CUSTOM: y y fotleds
+790934r3<adjektiv>fotmanövrerad:fotmanövrerad:fotmanövrerat:fotmanövrerade:fotmanövrerade:!:!:!:
+548951r4<substantiv>fotnot:fotnot:fotnots:fotnoten:fotnotens:fotnoter, fotnötter:fotnoters, fotnötters:fotnoterna, fotnötterna:fotnoternas, fotnötternas
+624126r10<substantiv>foto:foto:fotos:fotot:fotots:foton:fotons:fotona:fotonas
+CUSTOM: y y foto
+937141r4<substantiv>fotoalbum:fotoalbum:fotoalbums:fotoalbumet:fotoalbumets:fotoalbum:fotoalbums:fotoalbumen:fotoalbumens
+COMPOUND(624126, 552168): foto + album
+928699r4<substantiv>fotobok:fotobok:fotoboks:fotoboken:fotobokens:fotoböcker:fotoböckers:fotoböckerna:fotoböckernas
+COMPOUND(624126, 555346): foto + bok
+580136r3<adjektiv>fotoelektrisk:fotoelektrisk:fotoelektriskt:fotoelektriska:fotoelektriska::::
+580139r3<adjektiv>fotoelektrolytisk:fotoelektrolytisk:fotoelektrolytiskt:fotoelektrolytiska:fotoelektrolytiska::::
+580142r3<adjektiv>fotoelektromagnetisk:fotoelektromagnetisk:fotoelektromagnetiskt:fotoelektromagnetiska:fotoelektromagnetiska::::
+580145r3<adjektiv>fotoelektromotorisk:fotoelektromotorisk:fotoelektromotoriskt:fotoelektromotoriska:fotoelektromotoriska::::
+646474r5<substantiv>fotogen:fotogen:fotogens:fotogenen, fotogenet:fotogenens, fotogenets:fotogener:fotogeners:fotogenerna:fotogenernas
+CUSTOM: y y fotogen
+580148r3<adjektiv>fotogenisk:fotogenisk:fotogeniskt:fotogeniska:fotogeniska::::
+769074r4<substantiv>fotogenkök:fotogenkök:fotogenköks:fotogenköket:fotogenkökets:fotogenkök:fotogenköks:fotogenköken:fotogenkökens
+COMPOUND(646474, 552618): fotogen + kök
+656997r3<substantiv>fotogenlampa:fotogenlampa:fotogenlampas:fotogenlampan:fotogenlampans:fotogenlampor:fotogenlampors:fotogenlamporna:fotogenlampornas
+548952r5<substantiv>fotograf:fotograf:fotografs:fotografen:fotografens:fotografer:fotografers:fotograferna:fotografernas
+546582r6<verb>fotografera:fotografera:fotograferade:fotograferat:fotograferar:fotografera:fotograferas:fotograferades:fotograferats:fotograferas:fotograferad:fotograferat:fotograferade:fotograferande:
+882945r3<substantiv>fotograferande:fotograferande:fotograferandes:fotograferandet:fotograferandets::::
+656998r3<substantiv>fotografering:fotografering:fotograferings:fotograferingen:fotograferingens:fotograferingar:fotograferingars:fotograferingarna:fotograferingarnas
+CUSTOM: y y fotograferings
+742045r3<substantiv>fotografi:fotografi:fotografis:fotografin:fotografins:!:!:!:!
+646482r5<substantiv>fotografi:fotografi:fotografis:fotografit, fotografiet:fotografits, fotografiets:fotografier:fotografiers:fotografierna:fotografiernas
+CUSTOM: y y fotografi
+837311r3<substantiv>fotografialbum::::::::
+COMPOUND(646482, 552168): fotografi + album
+580151r4<adjektiv>fotografisk:fotografisk:fotografiskt:fotografiska:fotografiska::::fotografiske
+837313r3<substantiv>fotogrammetri:fotogrammetri:fotogrammetris:fotogrammetrin:fotogrammetrins::::
+580152r3<adjektiv>fotogrammetrisk:fotogrammetrisk:fotogrammetriskt:fotogrammetriska:fotogrammetriska::::
+589346r3<verb>fotogravera:fotogravera:fotograverade:fotograverat:fotograverar:fotogravera:::::::::
+580155r3<adjektiv>fotokemisk:fotokemisk:fotokemiskt:fotokemiska:fotokemiska::::
+580158r3<adjektiv>fotokeramisk:fotokeramisk:fotokeramiskt:fotokeramiska:fotokeramiska::::
+797682r3<adjektiv>fotokonduktiv:fotokonduktiv:fotokonduktivt:fotokonduktiva:fotokonduktiva::::
+656999r3<substantiv>fotokopia:fotokopia:fotokopias:fotokopian:fotokopians:fotokopior:fotokopiors:fotokopiorna:fotokopiornas
+586664r6<verb>fotokopiera:fotokopiera:fotokopierade:fotokopierat:fotokopierar:fotokopiera:fotokopieras:fotokopierades:fotokopierats:fotokopieras:fotokopierad:fotokopierat:fotokopierade:fotokopierande:
+896883r4<substantiv>fotolabb:fotolabb:fotolabbs:fotolabbet:fotolabbets:fotolabb:fotolabbs:fotolabben:fotolabbens
+COMPOUND(624126, 724813): foto + labb
+589350r3<verb>fotolitografera:fotolitografera:fotolitograferade:fotolitograferat:fotolitograferar:fotolitografera:::::::::
+580161r3<adjektiv>fotolitografisk:fotolitografisk:fotolitografiskt:fotolitografiska:fotolitografiska::::
+580164r3<adjektiv>fotomekanisk:fotomekanisk:fotomekaniskt:fotomekaniska:fotomekaniska::::
+896296r3<substantiv>fotometer:fotometer:fotometers:fotometern:fotometerns:fotometrar:fotometrars:fotometrarna:fotometrarnas
+837323r3<substantiv>fotometri:fotometri:fotometris:fotometrin:fotometrins::::
+580167r3<adjektiv>fotometrisk:fotometrisk:fotometriskt:fotometriska:fotometriska::::
+732670r4<substantiv>fotomodell:fotomodell:fotomodells:fotomodellen:fotomodellens:fotomodeller:fotomodellers:fotomodellerna:fotomodellernas
+COMPOUND(624126, 550047): foto + modell
+646486r3<substantiv>foton:foton:fotons:fotonen:fotonens:fotoner:fotoners:fotonerna:fotonernas
+837327r3<substantiv>fotondrift:fotondrift:fotondrifts:fotondriften:fotondriftens::::
+837331r3<substantiv>fotonraket:fotonraket:fotonrakets:fotonraketen:fotonraketens:fotonraketer:fotonraketers:fotonraketerna:fotonraketernas
+589354r3<verb>fotostatera:fotostatera:fotostaterade:fotostaterat:fotostaterar:fotostatera:::::::::
+769080r3<substantiv>fotostatkopia:fotostatkopia:fotostatkopias:fotostatkopian:fotostatkopians:fotostatkopior:fotostatkopiors:fotostatkopiorna:fotostatkopiornas
+837340r3<verb>fotostatkopiera:fotostatkopiera:fotostatkopierade:fotostatkopierat:fotostatkopierar:fotostatkopiera:fotostatkopieras:fotostatkopierades:fotostatkopierats:fotostatkopieras:fotostatkopierad:fotostatkopierat:fotostatkopierade:fotostatkopierande:
+690291r4<substantiv>fotostatkopiering:fotostatkopiering:fotostatkopierings:fotostatkopieringen:fotostatkopieringens:fotostatkopieringar:fotostatkopieringars:fotostatkopieringarna:fotostatkopieringarnas
+CUSTOM: y y fotostatkopierings
+690293r3<substantiv>fotosättning:fotosättning:fotosättnings:fotosättningen:fotosättningens::::
+CUSTOM: y y fotosättnings
+837354r3<substantiv>fototropism:fototropism:fototropisms:fototropismen:fototropismens::::
+837358r3<substantiv>fototypi:fototypi:fototypis:fototypin:fototypins:fototypier:fototypiers:fototypierna:fototypiernas
+837366r3<substantiv>fotpatrullering:fotpatrullering:fotpatrullerings:fotpatrulleringen:fotpatrulleringens:fotpatrulleringar:fotpatrulleringars:fotpatrulleringarna:fotpatrulleringarnas
+572528r3<adjektiv>fotriktig:fotriktig:fotriktigt:fotriktiga:fotriktiga::::
+837374r3<substantiv>fotsack:fotsack:fotsacks:fotsacken:fotsackens:fotsackar:fotsackars:fotsackarna:fotsackarnas
+801799r3<adjektiv>fotsbred:fotsbred:fotsbrett:fotsbreda:fotsbreda::::
+837382r3<substantiv>fotsbredd:fotsbredd:fotsbredds:fotsbredden:fotsbreddens:fotsbredder:fotsbredders:fotsbredderna:fotsbreddernas
+837390r3<substantiv>fotsdjup:fotsdjup:fotsdjups:fotsdjupet:fotsdjupets:fotsdjup:fotsdjups:fotsdjupen:fotsdjupens
+797685r3<adjektiv>fotsdjup:fotsdjup:fotsdjupt:fotsdjupa:fotsdjupa::::
+631442r4<adjektiv>fotsid:fotsid:fotsitt:fotsida:fotsida::::
+934056r4<substantiv>fotskada:fotskada:fotskadas:fotskadan:fotskadans:fotskador:fotskadors:fotskadorna:fotskadornas
+COMPOUND(555210, 595121): fot + skada
+837396r3<adjektiv>fotslång:fotslång:fotslångt:fotslånga:fotslånga::::
+657000r3<substantiv>fotspår:fotspår:fotspårs:fotspåret:fotspårets:fotspår:fotspårs:fotspåren:fotspårens
+657002r3<substantiv>fotsteg:fotsteg:fotstegs:fotsteget:fotstegets:fotsteg:fotstegs:fotstegen:fotstegens
+837399r3<adjektiv>fotstjock:fotstjock:fotstjockt:fotstjocka:fotstjocka::::
+766873r4<substantiv>fotstöd:fotstöd:fotstöds:fotstödet:fotstödets:fotstöd:fotstöds:fotstöden:fotstödens
+COMPOUND(555210, 552997): fot + stöd
+928708r4<substantiv>fotsula:fotsula:fotsulas:fotsulan:fotsulans:fotsulor:fotsulors:fotsulorna:fotsulornas
+COMPOUND(555210, 628864): fot + sula
+873078r5<substantiv>fotsvamp:fotsvamp:fotsvamps:fotsvampen:fotsvampens:fotsvampar:fotsvampars:fotsvamparna:fotsvamparnas
+COMPOUND(555210, 551976): fot + svamp
+CUSTOM: y y fotsvamps
+873077r4<substantiv>fotsvampsmedicin:fotsvampsmedicin:fotsvampsmedicins:fotsvampsmedicinen:fotsvampsmedicinens:fotsvampsmediciner:fotsvampsmediciners:fotsvampsmedicinerna:fotsvampsmedicinernas
+COMPOUND(873078, 550022): fotsvamp + medicin
+930706r4<substantiv>fotvalv:fotvalv:fotvalvs:fotvalvet:fotvalvets:fotvalv:fotvalvs:fotvalven:fotvalvens
+COMPOUND(555210, 553103): fot + valv
+733363r4<substantiv>fotvård:fotvård:fotvårds:fotvården:fotvårdens::::
+733354r4<substantiv>fotvårdsspecialist:fotvårdsspecialist:fotvårdsspecialists:fotvårdsspecialisten:fotvårdsspecialistens:fotvårdsspecialister:fotvårdsspecialisters:fotvårdsspecialisterna:fotvårdsspecialisternas
+COMPOUND(733363, 668647): fotvård + specialist
+CUSTOM: y n
+930712r4<substantiv>fotända:fotända, fotände:fotändas, fotändes:fotändan, fotänden:fotändans, fotändens:fotändar:fotändars:fotändarna:fotändarnas
+COMPOUND(555210, 620408): fot + ände, ända
+553209r3<egennamn>Foucault:Foucault:Foucaults
+CUSTOM: y n Foucault
+837402r3<substantiv>foul:foul:fouls:foulen:foulens:fouler:foulers:foulerna:foulernas
+CUSTOM: y n
+646487r3<egennamn>Fourier:Fourier:Fouriers
+CUSTOM: y n fourier
+646489r3<substantiv>fourieranalys:fourieranalys:fourieranalys:fourieranalysen:fourieranalysens::::
+CUSTOM: n n y
+646492r8<substantiv>fourierserie:fourierserie:fourierseries:fourierserien:fourierseriens:fourierserier:fourierseriers:fourierserierna:fourierseriernas
+CUSTOM: n n y
+646500r3<substantiv>fouriertransformation:fouriertransformation:fouriertransformations:fouriertransformationen:fouriertransformationens:fouriertransformationer:fouriertransformationers:fouriertransformationerna:fouriertransformationernas
+CUSTOM: n n y
+837410r4<substantiv>foxterrier:foxterrier:foxterriers:foxterriern:foxterrierns:foxterrier:foxterriers:foxterrierna:foxterriernas
+CUSTOM: y y foxterrier
+837416r3<substantiv>foxterriervalp::::::::
+COMPOUND(837410, 552085): foxterrier + valp
+690294r5<substantiv>foxtrot:foxtrot:foxtrots:foxtroten:foxtrotens:foxtroter:foxtroters:foxtroterna:foxtroternas
+CUSTOM: y y foxtrot
+837417r3<substantiv>foxtrotsteg::::::::
+COMPOUND(690294, 608126): foxtrot + steg
+551177r4<substantiv>frack:frack:fracks:fracken:frackens:frackar:frackars:frackarna:frackarnas
+CUSTOM: y y frack
+801281r3<adjektiv>frackklädd:frackklädd:frackklätt:frackklädda:frackklädda::::
+775131r3<substantiv>frackmiddag::::::::
+COMPOUND(551177, 551723): frack + middag
+875986r3<substantiv>frackskört:frackskört:frackskörts:frackskörten:frackskörtens:frackskörter:frackskörters:frackskörterna:frackskörternas
+657004r3<substantiv>fradga:fradga:fradgas:fradgan:fradgans::::
+572531r3<adjektiv>fradgig:fradgig:fradgigt:fradgiga:fradgiga::::
+735479r3<adjektiv>fragil:fragil:fragilt:fragila:fragila::::
+837418r3<substantiv>fragilitet:fragilitet:fragilitets:fragiliteten:fragilitetens::::
+552393r3<substantiv>fragment:fragment:fragments:fragmentet:fragmentets:fragment:fragments:fragmenten:fragmentens
+580170r3<adjektiv>fragmentarisk:fragmentarisk:fragmentariskt:fragmentariska:fragmentariska::::
+772214r3<adjektiv>fragmentartad:fragmentartad:fragmentartat:fragmentartade:fragmentartade:!:!:!:
+586665r4<verb>fragmentera:fragmentera:fragmenterade:fragmenterat:fragmenterar:fragmentera:fragmenteras:fragmenterades:fragmenterats:fragmenteras:fragmenterad:fragmenterat:fragmenterade:fragmenterande:
+690295r4<substantiv>fragmentering:fragmentering:fragmenterings:fragmenteringen:fragmenteringens:fragmenteringar:fragmenteringars:fragmenteringarna:fragmenteringarnas
+CUSTOM: y y fragmenterings
+589358r4<verb>fragmentisera:fragmentisera:fragmentiserade:fragmentiserat:fragmentiserar:fragmentisera:fragmentiseras:fragmentiserades:fragmentiserats:fragmentiseras:fragmentiserad:fragmentiserat:fragmentiserade:fragmentiserande:
+CUSTOM: y n
+837431r3<substantiv>fragmentisering:fragmentisering:fragmentiserings:fragmentiseringen:fragmentiseringens:fragmentiseringar:fragmentiseringars:fragmentiseringarna:fragmentiseringarnas
+CUSTOM: y n
+837440r3<substantiv>fraiche:fraiche:fraiches:fraichen:fraichens::::
+CUSTOM: y n n
+548954r6<substantiv>frakt:frakt:frakts:frakten:fraktens:frakter:frakters:frakterna:frakternas
+CUSTOM: y y frakt
+546583r6<verb>frakta:frakta:fraktade:fraktat:fraktar:frakta:fraktas:fraktades:fraktats:fraktas:fraktad:fraktat:fraktade:fraktande:
+657005r3<substantiv>fraktal:fraktal:fraktals:fraktalen:fraktalens:fraktaler:fraktalers:fraktalerna:fraktalernas
+657007r3<adjektiv>fraktal:fraktal:fraktalt:fraktala:fraktala:!:!:!:!
+670921r4<substantiv>fraktavgift:fraktavgift:fraktavgifts:fraktavgiften:fraktavgiftens:fraktavgifter:fraktavgifters:fraktavgifterna:fraktavgifternas
+COMPOUND(548954, 548299): frakt + avgift
+CUSTOM: n n y
+711861r4<substantiv>fraktfartyg:fraktfartyg:fraktfartygs:fraktfartyget:fraktfartygets:fraktfartyg:fraktfartygs:fraktfartygen:fraktfartygens
+COMPOUND(548954, 552372): frakt + fartyg
+CUSTOM: n n y
+563769r3<adjektiv>fraktfri:fraktfri:fraktfritt:fraktfria:fraktfria::::
+837447r4<substantiv>fraktgods:fraktgods:fraktgods:fraktgodset:fraktgodsets::::
+CUSTOM: y y fraktgods
+837446r3<substantiv>fraktgodstaxa::::::::
+COMPOUND(837447, 626687): fraktgods + taxa
+837450r3<substantiv>fraktil:fraktil:fraktils:fraktilen:fraktilens:fraktiler:fraktilers:fraktilerna:fraktilernas
+657010r4<substantiv>fraktion:fraktion:fraktions:fraktionen:fraktionens:fraktioner:fraktioners:fraktionerna:fraktionernas
+CUSTOM: y y fraktions
+797688r3<adjektiv>fraktionell:fraktionell:fraktionellt:fraktionella:fraktionella::::
+589362r4<verb>fraktionera:fraktionera:fraktionerade:fraktionerat:fraktionerar:fraktionera:fraktioneras:fraktionerades:fraktionerats:fraktioneras:fraktionerad:fraktionerat:fraktionerade:fraktionerande:
+837463r4<substantiv>fraktionering:fraktionering:fraktionerings:fraktioneringen:fraktioneringens::::
+CUSTOM: y y fraktionerings
+837468r3<substantiv>fraktioneringspunkt::::::::
+COMPOUND(837463, 550299): fraktionering + punkt
+837467r3<substantiv>fraktionsanalys::::::::
+COMPOUND(657010, 548192): fraktion + analys
+622399r3<substantiv>fraktkostnad:fraktkostnad:fraktkostnads:fraktkostnaden:fraktkostnadens:fraktkostnader:fraktkostnaders:fraktkostnaderna:fraktkostnadernas
+CUSTOM: y n y
+837469r3<substantiv>fraktning:fraktning:fraktnings:fraktningen:fraktningens::::
+657011r3<substantiv>fraktsedel:fraktsedel:fraktsedels:fraktsedeln:fraktsedelns:fraktsedlar:fraktsedlars:fraktsedlarna:fraktsedlarnas
+CUSTOM: y n y
+711671r4<substantiv>fraktskepp:fraktskepp:fraktskepps:fraktskeppet:fraktskeppets:fraktskepp:fraktskepps:fraktskeppen:fraktskeppens
+COMPOUND(548954, 552919): frakt + skepp
+CUSTOM: y n y
+548955r8<substantiv>fraktur:fraktur:frakturs:frakturen:frakturens:frakturer:frakturers:frakturerna:frakturernas
+837473r3<substantiv>frakturstil:frakturstil:frakturstils:frakturstilen:frakturstilens:frakturstilar:frakturstilars:frakturstilarna:frakturstilarnas
+733367r3<substantiv>fralla:fralla:frallas:frallan:frallans:frallor:frallors:frallorna:frallornas
+617596r28<adverb>fram:fram
+CUSTOM: y y fram
+873670r6<verb>framavla:framavla:framavlade:framavlat:framavlar:framavla:framavlas:framavlades:framavlats:framavlas:framavlad:framavlat:framavlade:framavlande:
+COMPOUND(617596, 546136): fram + avla
+790937r3<adjektiv>framavlad:framavlad:framavlat:framavlade:framavlade:!:!:!:
+876733r16<substantiv>framavlande:framavlande:framavlandes:framavlandet:framavlandets::::
+617597r3<substantiv>framaxel:framaxel:framaxels:framaxeln:framaxelns:framaxlar:framaxlars:framaxlarna:framaxlarnas
+928716r4<substantiv>framben:framben:frambens:frambenet:frambenets:framben:frambens:frambenen:frambenens
+COMPOUND(617596, 552233): fram + ben
+657022r9<verb>frambesvärja:frambesvärja:frambesvor, frambesvärjde:frambesvurit, frambesvärjt:frambesvärjer:frambesvärj:frambesvärjas:frambesvors, frambesvärjdes:frambesvurits, frambesvärjts:frambesvärjes, frambesvärjs:frambesvuren, frambesvärjd:frambesvuret, frambesvärjt:frambesvurna, frambesvärjda::
+COMPOUND(617596, 592713): fram + besvärja
+CUSTOM: y n y
+882498r3<adjektiv>frambesvärjd:frambesvärjd:frambesvärjt:frambesvärjda:frambesvärjda::::::::::::
+775132r3<substantiv>frambesvärjning:frambesvärjning:frambesvärjnings:frambesvärjningen:frambesvärjningens:frambesvärjningar:frambesvärjningars:frambesvärjningarna:frambesvärjningarnas
+546584r6<verb>frambringa:frambringa:frambringade, frambragte:frambringat, frambragt:frambringar:frambringa:frambringas:frambragtes, frambringades:frambragts, frambringats:frambringas:frambringad:frambringat:frambringade::
+CUSTOM: y n y
+690297r3<substantiv>frambringande:frambringande:frambringandes:frambringandet:frambringandets::::
+657031r4<verb>frambryta:frambryta:frambröt:frambrutit:frambryter:frambryt:::::::::
+COMPOUND(617596, 556860): fram + bryta
+657013r4<verb>frambära:frambära:frambar:framburit:frambär:frambär:frambäras:frambars:framburits:frambärs, frambäres:framburen:framburet:framburna::
+COMPOUND(617596, 560535): fram + bära
+617605r3<substantiv>framdel:framdel:framdels:framdelen:framdelens:framdelar:framdelars:framdelarna:framdelarnas
+617613r3<adverb>framdeles:framdeles
+893077r4<verb>framdraga:framdra, framdraga:framdrog:framdragit:framdrar, framdrager:framdra:framdras, framdragas:framdrogs:framdragits:framdras, framdrages:framdragen:framdraget:framdragna:framdragande:
+COMPOUND(617596, 558196): fram + dra, draga
+845665r4<verb>framduka:framduka:framdukade:framdukat:framdukar:framduka:framdukas:framdukades:framdukats:framdukas:framdukad:framdukat:framdukade:framdukande:
+COMPOUND(617596, 546450): fram + duka
+690299r3<substantiv>framdäck:framdäck:framdäcks:framdäcket:framdäckets:framdäck:framdäcks:framdäcken:framdäckens
+CUSTOM: y n y
+617614r3<substantiv>framdörr:framdörr:framdörrs:framdörren:framdörrens:framdörrar:framdörrars:framdörrarna:framdörrarnas
+CUSTOM: y n y
+617622r3<preposition>framemot:framemot
+617623r3<substantiv

@@ -1,0 +1,637 @@
+v>hörsal:hörsal:hörsals:hörsalen:hörsalens:hörsalar:hörsalars:hörsalarna:hörsalarnas
+563406r4<adjektiv>hörsam:hörsam:hörsamt:hörsamma:hörsamma:hörsammare:hörsammast:hörsammaste:
+644446r3<substantiv>hörsamhet:hörsamhet:hörsamhets:hörsamheten:hörsamhetens::::
+CUSTOM: y y hörsamhets
+546914r6<verb>hörsamma:hörsamma:hörsammade:hörsammat:hörsammar:hörsamma:hörsammas:hörsammades:hörsammats:hörsammas:hörsammad:hörsammat:hörsammade:hörsammande:
+639768r7<substantiv>hörsel:hörsel:hörsels:hörseln:hörselns:!:!:!:!
+CUSTOM: y y hörsel
+687562r4<substantiv>hörselkontroll:hörselkontroll:hörselkontrolls:hörselkontrollen:hörselkontrollens:hörselkontroller:hörselkontrollers:hörselkontrollerna:hörselkontrollernas
+COMPOUND(639768, 549704): hörsel + kontroll
+687571r4<substantiv>hörselnedsättning:hörselnedsättning:hörselnedsättnings:hörselnedsättningen:hörselnedsättningens:hörselnedsättningar:hörselnedsättningars:hörselnedsättningarna:hörselnedsättningarnas
+COMPOUND(639768, 687572): hörsel + nedsättning
+CUSTOM: y y hörselnedsättnings
+639769r4<substantiv>hörselskada:hörselskada:hörselskadas:hörselskadan:hörselskadans:hörselskador:hörselskadors:hörselskadorna:hörselskadornas
+COMPOUND(639768, 595121): hörsel + skada
+687584r3<adjektiv>hörselskadad:hörselskadad:hörselskadat:hörselskadade:hörselskadade:!:!:!:
+756150r5<substantiv>hörselskydd:hörselskydd:hörselskydds:hörselskyddet:hörselskyddets:hörselskydd:hörselskydds:hörselskydden:hörselskyddens
+COMPOUND(639768, 552935): hörsel + skydd
+CUSTOM: y y hörselskydds
+756156r3<substantiv>hörselskyddskåpa::::::::
+COMPOUND(756150, 559886): hörselskydd + kåpa
+846071r3<adjektiv>hörselsvag:hörselsvag:hörselsvagt:hörselsvaga:hörselsvaga::::
+687587r4<substantiv>hörslinga:hörslinga:hörslingas:hörslingan:hörslingans:hörslingor:hörslingors:hörslingorna:hörslingornas
+COMPOUND(555885, 666947): höra + slinga
+931128r3<substantiv>hörspel:hörspel:hörspels:hörspelet:hörspelets:hörspel:hörspels:hörspelen:hörspelens
+644450r4<substantiv>hörsägen:hörsägen:hörsägens:hörsägnen:hörsägnens:hörsägner:hörsägners:hörsägnerna:hörsägnernas
+COMPOUND(555885, 619767): höra + sägen
+799621r3<adjektiv>hörvärd:hörvärd:hörvärt:hörvärda:hörvärda::::
+692035r4<substantiv>höskrinda:höskrinda:höskrindas:höskrindan:höskrindans:höskrindor:höskrindors:höskrindorna:höskrindornas
+COMPOUND(557530, 692036): hö + skrinda
+644458r3<substantiv>höskulle:höskulle:höskulles:höskullen:höskullens:höskullar:höskullars:höskullarna:höskullarnas
+644459r3<substantiv>hösnuva:hösnuva:hösnuvas:hösnuvan:hösnuvans::::
+551446r13<substantiv>höst:höst:hösts:hösten:höstens:höstar:höstars:höstarna:höstarnas
+CUSTOM: y y höst
+546915r4<verb>hösta:hösta:höstade:höstat:höstar:hösta:höstas:höstades:höstats:höstas:::::
+644460r3<substantiv>höstack:höstack:höstacks:höstacken:höstackens:höstackar:höstackars:höstackarna:höstackarnas
+620991r4<substantiv>höstas:!:höstas:!:!:!:!:!:!
+DEFINITION 1: Den senaste hösten
+964977r4<substantiv>höstaster:höstaster:höstasters:höstastern:höstasterns:höstastrar:höstastrars:höstastrarna:höstastrarnas
+COMPOUND(551446, 616237): höst + aster
+955988r4<substantiv>höstblot:höstblot:höstblots:höstblotet:höstblotets:höstblot:höstblots:höstbloten:höstblotens
+COMPOUND(551446, 629277): höst + blot
+597012r3<substantiv>höstdag:höstdag:höstdags:höstdagen:höstdagens:höstdagar:höstdagars:höstdagarna:höstdagarnas
+868358r3<substantiv>höstdagjämning:höstdagjämning:höstdagjämnings:höstdagjämningen:höstdagjämningens:höstdagjämningar:höstdagjämningars:höstdagjämningarna:höstdagjämningarnas
+942935r3<adjektiv>höstgul:höstgul:höstgult:höstgula:höstgula::::::::::::
+797990r3<adjektiv>höstkall:höstkall:höstkallt:höstkalla:höstkalla::::
+644461r8<substantiv>höstkanten:::höstkanten:::::
+566316r3<adjektiv>höstlig:höstlig:höstligt:höstliga:höstliga::::
+826430r3<adjektiv>höstlik:höstlik:höstlikt:höstlika:höstlika::::
+687535r4<substantiv>höstlov:höstlov:höstlovs:höstlovet:höstlovets:höstlov:höstlovs:höstloven:höstlovens
+COMPOUND(551446, 559035): höst + lov
+931134r4<substantiv>höstlöv:höstlöv:höstlövs:höstlövet:höstlövets:höstlöv:höstlövs:höstlöven:höstlövens
+COMPOUND(551446, 552683): höst + löv
+906706r4<adjektiv>höstmörk:höstmörk:höstmörkt:höstmörka:höstmörka::::::::::::
+COMPOUND(551446, 563115): höst + mörk
+944726r4<verb>höstplöja:höstplöja:höstplöjde:höstplöjt:höstplöjer:höstplöj:höstplöjas:höstplöjdes:höstplöjts:höstplöjs, höstplöjes:höstplöjd:höstplöjt:höstplöjda:höstplöjande:
+COMPOUND(551446, 585789): höst + plöja
+824082r3<substantiv>höstraps:höstraps:höstraps:höstrapsen:höstrapsens::::
+951689r4<substantiv>höstrusk:höstrusk:höstrusks:höstrusket:höstruskets::::
+COMPOUND(551446, 628642): höst + rusk
+931140r3<substantiv>höstsol:höstsol:höstsols:höstsolen:höstsolens::::
+891851r4<substantiv>höststräck:höststräck:höststräcks:höststräcket:höststräckets:höststräck:höststräcks:höststräcken:höststräckens
+COMPOUND(551446, 633783): höst + sträck
+850456r4<verb>höstså:höstså:höstsådde:höstsått:höstsår:höstså:höstsås:höstsåddes:höstsåtts:höstsås:höstsådd:höstsått:höstsådda:höstsående:
+COMPOUND(551446, 555970): höst + så
+919127r4<substantiv>höstvin:höstvin:höstvins:höstvinet:höstvinets:höstviner:höstviners:höstvinerna:höstvinernas
+COMPOUND(551446, 600515): höst + vin
+CUSTOM: y n n
+644465r3<substantiv>hösäck:hösäck:hösäcks:hösäcken:hösäckens:hösäckar:hösäckars:hösäckarna:hösäckarnas
+628198r5<verb>höta:höta:hötte::höter::::::::::
+CUSTOM: n n y %höter
+772107r3<substantiv>hötapp:hötapp:hötapps:hötappen:hötappens:hötappar:hötappars:hötapparna:hötapparnas
+868366r3<substantiv>hötjuga:hötjuga:hötjugas:hötjugan:hötjugans:hötjugor:hötjugors:hötjugorna:hötjugornas
+891051r3<egennamn>Hötorget:Hötorget:Hötorgets
+CUSTOM: y n hötorgs
+868374r3<substantiv>hötorgskonst:hötorgskonst:hötorgskonsts:hötorgskonsten:hötorgskonstens::::
+CUSTOM: n n y
+868378r3<substantiv>hötork:hötork:hötorks:hötorken:hötorkens:hötorkar:hötorkars:hötorkarna:hötorkarnas
+868387r4<verb>hötta:hötta:hötte:hött:hötter:hött:höttas:höttes:hötts:hötts, höttes::::höttande:
+CUSTOM: y n
+644466r3<substantiv>hövan:hövan:::::::
+591702r5<deponens>hövas:hövas:hövdes:hövts:höves:
+CUSTOM: n n y
+644467r5<substantiv>hövding:hövding:hövdings:hövdingen:hövdingens:hövdingar:hövdingars:hövdingarna:hövdingarnas
+CUSTOM: y y +hövdings
+980856r3<substantiv>hövdingedöme:hövdingedöme:hövdingedömes:hövdingedömet:hövdingedömets:hövdingedömen:hövdingedömens:hövdingedömena:hövdingedömenas
+580817r4<adjektiv>hövisk:hövisk:höviskt:höviska:höviska::::höviske
+627272r3<substantiv>hövitsman:hövitsman:hövitsmans:hövitsmannen:hövitsmannens:hövitsmän:hövitsmäns:hövitsmännen:hövitsmännens
+566317r4<adjektiv>hövlig:hövlig:hövligt:hövliga:hövliga:hövligare:hövligast:hövligaste:hövlige
+644469r3<substantiv>hövlighet:hövlighet:hövlighets:hövligheten:hövlighetens:hövligheter:hövligheters:hövligheterna:hövligheternas
+CUSTOM: y y hövlighets
+868393r3<substantiv>hövålm:hövålm:hövålms:hövålmen:hövålmens:hövålmar:hövålmars:hövålmarna:hövålmarnas
+658688r4<substantiv>hövändare:hövändare:hövändares:hövändaren, hövändarn:hövändarens, hövändarns:hövändare:hövändares:hövändarna:hövändarnas
+COMPOUND(557530, 658665): hö + vändare
+CUSTOM: y y hövändar
+644471r3<egennamn>Höör:Höör:Höörs
+CUSTOM: y n Höör
+556668r4<adverb>i:i
+CUSTOM: y n
+556667r3<preposition>i:i
+645499r11<verb>iakttaga, iaktta:iaktta, iakttaga:iakttog:iakttagit:iakttar, iakttager:iaktta, iakttag:iakttas, iakttagas:iakttogs:iakttagits:iakttas, iakttages:iakttagen:iakttaget:iakttagna:iakttagande:
+645502r3<substantiv>iakttagande:iakttagande:iakttagandes:iakttagandet:iakttagandets::::
+615305r3<substantiv>iakttagare:iakttagare:iakttagares:iakttagaren:iakttagarens:iakttagare:iakttagares:iakttagarna:iakttagarnas
+CUSTOM: y y iakttagar
+569223r3<adjektiv>iakttagbar:iakttagbar:iakttagbart:iakttagbara:iakttagbara::::
+645501r3<substantiv>iakttagelse:iakttagelse:iakttagelses:iakttagelsen:iakttagelsens:iakttagelser:iakttagelsers:iakttagelserna:iakttagelsernas
+CUSTOM: y y iakttagelse
+645504r3<substantiv>iakttagelseförmåga:iakttagelseförmåga:iakttagelseförmågas:iakttagelseförmågan:iakttagelseförmågans::::
+946043r3<adverb>iallafall:iallafall
+554614r3<egennamn>Ian:Ian:Ians
+692044r3<substantiv>ianspråktagande:ianspråktagande:ianspråktagandes:ianspråktagandet:ianspråktagandets::::
+692046r3<adjektiv>ianspråktagen:ianspråktagen:ianspråktaget:ianspråktagna:ianspråktagna::::
+580818r3<adjektiv>iberisk:iberisk:iberiskt:iberiska:iberiska::::
+645506r3<adverb>ibidem:ibidem
+925559r3<substantiv>ibis:ibis:ibis:ibisen:ibisens:ibisar:ibisars:ibisarna:ibisarnas
+CUSTOM: y n
+868402r3<substantiv>ibisfågel:ibisfågel:ibisfågels:ibisfågeln:ibisfågelns:ibisfåglar:ibisfåglars:ibisfåglarna:ibisfåglarnas
+980864r3<substantiv>ibisstork:ibisstork:ibisstorks:ibisstorken:ibisstorkens:ibisstorkar:ibisstorkars:ibisstorkarna:ibisstorkarnas
+560947r3<adverb>ibland:ibland
+941358r3<verb>iblanda:iblanda:iblandade:iblandat:iblandar:iblanda:iblandas:iblandades:iblandats:iblandas:iblandad:iblandat:iblandade:iblandande:
+980872r3<substantiv>iblandning:iblandning:iblandnings:iblandningen:iblandningens::::
+854726r3<egennamn>Ibrahimovic:Ibrahimovic:Ibrahimovics
+891859r3<egennamn>Ica:Ica:Icas
+CUSTOM: y n Ica
+645507r3<substantiv>icing:icing:icings:icingen:icingens:icingar:icingars:icingarna:icingarnas
+618186r7<adverb>icke:icke
+CUSTOM: y n icke icke-
+580820r3<adjektiv>icke-aritmetisk:icke-aritmetisk:icke-aritmetiskt:icke-aritmetiska:icke-aritmetiska::::
+CUSTOM: n n
+801550r11<adjektiv>ickeasiatisk:ickeasiatisk:ickeasiatiskt:ickeasiatiska:ickeasiatiska::::ickeasiatiske::::::::
+COMPOUND(618186, 568712): icke + asiatisk
+628810r3<adjektiv>ickeeuklidisk:ickeeuklidisk:ickeeuklidiskt:ickeeuklidiska:ickeeuklidiska:!:!:!:
+CUSTOM: n n
+580823r3<adjektiv>icke-kommunistisk:icke-kommunistisk:icke-kommunistiskt:icke-kommunistiska:icke-kommunistiska::::
+CUSTOM: n n
+989723r4<adjektiv>ickekunglig:ickekunglig:ickekungligt:ickekungliga:ickekungliga::::ickekunglige::::::::
+COMPOUND(618186, 566487): icke + kunglig
+725173r3<adjektiv>ickelevande:ickelevande:ickelevande:ickelevande:ickelevande:!:!:!:!
+712443r3<adjektiv>ickelinjär:ickelinjär:ickelinjärt:ickelinjära:ickelinjära::::
+854716r4<substantiv>ickemuslim:ickemuslim:ickemuslims:ickemuslimen:ickemuslimens:ickemuslimer:ickemuslimers:ickemuslimerna:ickemuslimernas
+COMPOUND(618186, 636230): icke + muslim
+566318r3<adjektiv>icke-mänsklig:icke-mänsklig:icke-mänskligt:icke-mänskliga:icke-mänskliga::::
+CUSTOM: n n
+580826r3<adjektiv>icke-nordisk:icke-nordisk:icke-nordiskt:icke-nordiska:icke-nordiska::::
+CUSTOM: n n
+580829r3<adjektiv>icke-socialistisk:icke-socialistisk:icke-socialistiskt:icke-socialistiska:icke-socialistiska::::
+CUSTOM: n n
+566321r3<adjektiv>icke-statlig:icke-statlig:icke-statligt:icke-statliga:icke-statliga::::
+CUSTOM: n n
+964986r4<adjektiv>icketysk:icketysk:icketyskt:icketyska:icketyska::::::::::::
+COMPOUND(618186, 563140): icke + tysk
+566324r3<adjektiv>icke-våldslig:icke-våldslig:icke-våldsligt:icke-våldsliga:icke-våldsliga::::
+CUSTOM: y n
+922776r3<adjektiv>ickevåldslig:ickevåldslig:ickevåldsligt:ickevåldsliga:ickevåldsliga::::::::::::
+557670r4<substantiv>id:id:ids:iden:idens:idar:idars:idarna:idarnas
+DEFINITION 1: Fisksort
+553735r3<egennamn>Ida:Ida:Idas
+620587r3<adverb>idag:idag
+591704r3<deponens>idas:idas:iddes:itts:ids:
+559567r6<substantiv>ide:ide:ides:idet:idets:iden:idens:idena:idenas
+DEFINITION 1: [ Björnens ] vinterlogi
+559571r10<substantiv>idé:idé:idés:idén:idéns:idéer:idéers:idéerna:idéernas
+CUSTOM: y y idé
+645513r4<adjektiv>ideal:ideal:idealt:ideala:ideala::::ideale
+552489r6<substantiv>ideal:ideal:ideals:idealet:idealets:ideal:ideals:idealen:idealens
+645514r3<substantiv>idealbild:idealbild:idealbilds:idealbilden:idealbildens::::
+772082r3<substantiv>idealfall:idealfall:idealfalls:idealfallet:idealfallets:idealfall:idealfalls:idealfallen:idealfallens
+546916r4<verb>idealisera:idealisera:idealiserade:idealiserat:idealiserar:idealisera:idealiseras:idealiserades:idealiserats:idealiseras:idealiserad:idealiserat:idealiserade:idealiserande:
+645518r4<substantiv>idealisering:idealisering:idealiserings:idealiseringen:idealiseringens:idealiseringar:idealiseringars:idealiseringarna:idealiseringarnas
+CUSTOM: y y idealiserings
+559572r3<adjektiv>idealisk:idealisk:idealiskt:idealiska:idealiska:!:!:!:idealiske
+558102r3<substantiv>idealism:idealism:idealisms:idealismen:idealismens:!:!:!:!
+640315r3<substantiv>idealist:idealist:idealists:idealisten:idealistens:idealister:idealisters:idealisterna:idealisternas
+CUSTOM: y y idealist
+580832r4<adjektiv>idealistisk:idealistisk:idealistiskt:idealistiska:idealistiska::::idealistiske
+868414r3<substantiv>idealitet:idealitet:idealitets:idealiteten:idealitetens::::
+662207r4<substantiv>idealkvinna:idealkvinna:idealkvinnas:idealkvinnan:idealkvinnans:idealkvinnor:idealkvinnors:idealkvinnorna:idealkvinnornas
+662215r4<substantiv>ideallösning:ideallösning:ideallösnings:ideallösningen:ideallösningens:ideallösningar:ideallösningars:ideallösningarna:ideallösningarnas
+COMPOUND(645513, 597256): ideal + lösning
+CUSTOM: y y ideallösnings
+929906r4<substantiv>idéarv:idéarv:idéarvs:idéarvet:idéarvets:idéarv:idéarvs:idéarven:idéarvens
+COMPOUND(559571, 557837): idé + arv
+931144r4<substantiv>idébank:idébank:idébanks:idébanken:idébankens:idébanker:idébankers:idébankerna:idébankernas
+COMPOUND(559571, 605440): idé + bank
+877801r3<adjektiv>idéburen:idéburen:idéburet:idéburna:idéburna::::
+645522r4<adjektiv>ideell:ideell:ideellt:ideella:ideella::::ideelle
+573417r3<adjektiv>idéfattig:idéfattig:idéfattigt:idéfattiga:idéfattiga::::
+645523r3<substantiv>idegran:idegran:idegrans:idegranen:idegranens:idegranar:idegranars:idegranarna:idegranarnas
+CUSTOM: y y idegrans
+645524r3<substantiv>idéhistoria:idéhistoria:idéhistorias:idéhistorien:idéhistoriens::::
+CUSTOM: y y idéhistorie
+645528r3<substantiv>idéhistoriker:idéhistoriker:idéhistorikers:idéhistorikern:idéhistorikerns:idéhistoriker:idéhistorikers:idéhistorikerna:idéhistorikernas
+580833r3<adjektiv>idéhistorisk:idéhistorisk:idéhistoriskt:idéhistoriska:idéhistoriska::::
+672672r5<substantiv>idékläckare:idékläckare:idékläckares:idékläckaren:idékläckarens:idékläckare:idékläckares:idékläckarna:idékläckarnas
+620594r3<adverb>idel:idel
+566327r3<adjektiv>idelig:idelig:ideligt:ideliga:ideliga::::
+620595r3<adverb>ideligen:ideligen
+564919r3<adjektiv>idélös:idélös:idélöst:idélösa:idélösa::::
+573420r3<adjektiv>idémässig:idémässig:idémässigt:idémässiga:idémässiga::::
+546917r5<verb>identifiera:identifiera:identifierade:identifierat:identifierar:identifiera:identifieras:identifierades:identifierats:identifieras:identifierad:identifierat:identifierade:identifierande:
+615306r3<substantiv>identifierare:identifierare:identifierares:identifieraren:identifierarens:identifierare:identifierares:identifierarna:identifierarnas
+CUSTOM: y y identifierar
+569226r3<adjektiv>identifierbar:identifierbar:identifierbart:identifierbara:identifierbara::::
+645534r3<substantiv>identifiering:identifiering:identifierings:identifieringen:identifieringens:identifieringar:identifieringars:identifieringarna:identifieringarnas
+CUSTOM: y y identifierings
+549285r3<substantiv>identifikation:identifikation:identifikations:identifikationen:identifikationens:identifikationer:identifikationers:identifikationerna:identifikationernas
+CUSTOM: y y identifikations
+898739r3<substantiv>identifikator:identifikator:identifikators:identifikatorn:identifikatorns:identifikatorer:identifikatorers:identifikatorerna:identifikatorernas
+580836r4<adjektiv>identisk:identisk:identiskt:identiska:identiska::::identiske
+549286r6<substantiv>identitet:identitet:identitets:identiteten:identitetens:identiteter:identiteters:identiteterna:identiteternas
+CUSTOM: y y identitets
+551447r3<substantiv>identitetshandling:identitetshandling:identitetshandlings:identitetshandlingen:identitetshandlingens:identitetshandlingar:identitetshandlingars:identitetshandlingarna:identitetshandlingarnas
+607366r3<substantiv>identitetskort:identitetskort:identitetskorts:identitetskortet:identitetskortets:identitetskort:identitetskorts:identitetskorten:identitetskortens
+743725r4<substantiv>identitetskris:identitetskris:identitetskris:identitetskrisen:identitetskrisens:identitetskriser:identitetskrisers:identitetskriserna:identitetskrisernas
+COMPOUND(549286, 549772): identitet + kris
+564922r3<adjektiv>identitetslös:identitetslös:identitetslöst:identitetslösa:identitetslösa::::
+636914r6<verb>identitetsmärka:identitetsmärka:identitetsmärkte:identitetsmärkt:identitetsmärker:identitetsmärk:identitetsmärkas:identitetsmärktes:identitetsmärkts:identitetsmärks:identitetsmärkt:identitetsmärkt:identitetsmärkta:identitetsmärkande:
+COMPOUND(549286, 585833): identitet + märka
+868421r3<substantiv>ideografi:ideografi:ideografis:ideografin:ideografins::::
+580837r3<adjektiv>ideografisk:ideografisk:ideografiskt:ideografiska:ideografiska::::
+868425r3<substantiv>ideogram:ideogram:ideograms:ideogrammet:ideogrammets:ideogram:ideograms:ideogrammen:ideogrammens
+549287r3<substantiv>ideolog:ideolog:ideologs:ideologen:ideologens:ideologer:ideologers:ideologerna:ideologernas
+645535r4<substantiv>ideologi:ideologi:ideologis:ideologin, ideologien:ideologins, ideologiens:ideologier:ideologiers:ideologierna:ideologiernas
+CUSTOM: y y ideologi
+586813r4<verb>ideologisera:ideologisera:ideologiserade:ideologiserat:ideologiserar:ideologisera:ideologiseras:ideologiserades:ideologiserats:ideologiseras:ideologiserad:ideologiserat:ideologiserade:ideologiserande:
+580840r4<adjektiv>ideologisk:ideologisk:ideologiskt:ideologiska:ideologiska::::ideologiske
+704492r3<substantiv>idépolitik:idépolitik:idépolitiks:idépolitiken:idépolitikens::::
+580841r3<adjektiv>idépolitisk:idépolitisk:idépolitiskt:idépolitiska:idépolitiska::::
+645536r4<adjektiv>idérik:idérik:idérikt:idérika:idérika:idérikare:idérikast:idérikaste:idérike
+580844r3<adjektiv>idiokromatisk:idiokromatisk:idiokromatiskt:idiokromatiska:idiokromatiska::::
+868434r3<substantiv>idiolekt:idiolekt:idiolekts:idiolekten:idiolektens:idiolekter:idiolekters:idiolekterna:idiolekternas
+552490r3<substantiv>idiom:idiom:idioms:idiomet:idiomets:idiom:idioms:idiomen:idiomens
+580847r3<adjektiv>idiomatisk:idiomatisk:idiomatiskt:idiomatiska:idiomatiska::::
+797993r3<adjektiv>idiomorf:idiomorf:idiomorft:idiomorfa:idiomorfa::::
+580848r3<adjektiv>idiostatisk:idiostatisk:idiostatiskt:idiostatiska:idiostatiska::::
+645538r3<substantiv>idiosynkrasi:idiosynkrasi:idiosynkrasis:idiosynkrasin:idiosynkrasins:idiosynkrasier:idiosynkrasiers:idiosynkrasierna:idiosynkrasiernas
+580851r3<adjektiv>idiosynkratisk:idiosynkratisk:idiosynkratiskt:idiosynkratiska:idiosynkratiska::::
+549288r6<substantiv>idiot:idiot:idiots:idioten:idiotens:idioter:idioters:idioterna:idioternas
+DEFINITION 1: dumskalle
+CUSTOM: y y idiot
+622840r9<substantiv>idioti:idioti:idiotis:idiotin, idiotien:idiotins, idiotiens:idiotier:idiotiers:idiotierna:idiotiernas
+580854r4<adjektiv>idiotisk:idiotisk:idiotiskt:idiotiska:idiotiska::::idiotiske
+645539r4<adjektiv>idiotsäker:idiotsäker:idiotsäkert:idiotsäkra:idiotsäkra:!:!:!:
+COMPOUND(549288, 571213): idiot + säker
+645540r4<verb>idissla:idissla:idisslade:idisslat:idisslar:idissla:idisslas:idisslades:idisslats:idisslas:idisslad:idisslat:idisslade:idisslande:
+764082r3<substantiv>idisslare:idisslare:idisslares:idisslaren:idisslarens:idisslare:idisslares:idisslarna:idisslarnas
+546918r5<verb>idka:idka:idkade:idkat:idkar:idka:idkas:idkades:idkats:idkas:idkad:idkat:idkade::
+692050r3<substantiv>idkande:idkande:idkandes:idkandet:idkandets::::
+615307r4<substantiv>idkare:idkare:idkares:idkaren:idkarens:idkare:idkares:idkarna:idkarnas
+CUSTOM: y y idkar +idkar
+935689r4<substantiv>ido:ido::::!:!:!:!
+DEFINITION 1: Ett konstruerat språk. En revidering av esperanto.
+CUSTOM: n n y
+625486r4<adjektiv>idog:idog:idogt:idoga:idoga:idogare:idogast:idogaste:idoge
+549289r7<substantiv>idol:idol:idols:idolen:idolens:idoler:idolers:idolerna:idolernas
+CUSTOM: y y
+672861r6<substantiv>idolbild:idolbild:idolbilds:idolbilden:idolbildens:idolbilder:idolbilders:idolbilderna:idolbildernas
+COMPOUND(549289, 548373): idol + bild
+672862r6<substantiv>idoldyrkan:idoldyrkan:idoldyrkans:idoldyrkan:idoldyrkans::::
+COMPOUND(549289, 656428): idol + dyrkan
+778550r6<substantiv>idolhysteri:idolhysteri:idolhysteris:idolhysterin:idolhysterins::::
+COMPOUND(549289, 644173): idol + hysteri
+586817r4<verb>idolisera:idolisera:idoliserade:idoliserat:idoliserar:idolisera:idoliseras:idoliserades:idoliserats:idoliseras:idoliserad:idoliserat:idoliserade:idoliserande:
+766806r6<substantiv>idolporträtt:idolporträtt:idolporträtts:idolporträttet:idolporträttets:idolporträtt:idolporträtts:idolporträtten:idolporträttens
+COMPOUND(549289, 552779): idol + porträtt
+636747r6<egennamn>Idre:Idre:Idres
+DEFINITION 1: Ort i norra Dalarna. 
+549290r10<substantiv>idrott:idrott:idrotts:idrotten:idrottens:idrotter:idrotters:idrotterna:idrotternas
+BASEWORDS: idrotts
+CUSTOM: y y idrotts +idrotts
+585551r4<verb>idrotta:idrotta:idrottade:idrottat:idrottar:idrotta:idrottas:idrottades:idrottats:idrottas:::::
+706526r3<substantiv>idrottande:idrottande:idrottandes:idrottandet:idrottandets::::
+615308r3<substantiv>idrottare:idrottare:idrottares:idrottaren:idrottarens:idrottare:idrottares:idrottarna:idrottarnas
+CUSTOM: y y idrottar
+662216r4<substantiv>idrottsanläggning:idrottsanläggning:idrottsanläggnings:idrottsanläggningen:idrottsanläggningens:idrottsanläggningar:idrottsanläggningars:idrottsanläggningarna:idrottsanläggningarnas
+CUSTOM: y y idrottsanläggnings
+662224r4<substantiv>idrottsdag:idrottsdag:idrottsdags:idrottsdagen:idrottsdagens:idrottsdagar:idrottsdagars:idrottsdagarna:idrottsdagarnas
+943955r4<adjektiv>idrottsetisk:idrottsetisk:idrottsetiskt:idrottsetiska:idrottsetiska::::::::::::
+COMPOUND(549290, 579853): idrott + etisk
+662232r4<substantiv>idrottsevenemang:idrottsevenemang:idrottsevenemangs:idrottsevenemanget:idrottsevenemangets:idrottsevenemang:idrottsevenemangs:idrottsevenemangen:idrottsevenemangens
+662238r4<substantiv>idrottsförbund:idrottsförbund:idrottsförbunds:idrottsförbundet:idrottsförbundets:idrottsförbund:idrottsförbunds:idrottsförbunden:idrottsförbundens
+662244r4<substantiv>idrottsförening:idrottsförening:idrottsförenings:idrottsföreningen:idrottsföreningens:idrottsföreningar:idrottsföreningars:idrottsföreningarna:idrottsföreningarnas
+CUSTOM: y y idrottsförenings
+598378r3<substantiv>idrottsgren:idrottsgren:idrottsgrens:idrottsgrenen:idrottsgrenens:idrottsgrenar:idrottsgrenars:idrottsgrenarna:idrottsgrenarnas
+662252r13<substantiv>idrottsgymnasium:idrottsgymnasium:idrottsgymnasiums:idrottsgymnasiet:idrottsgymnasiets:idrottsgymnasier:idrottsgymnasiers:idrottsgymnasierna:idrottsgymnasiernas
+598386r3<substantiv>idrottshall:idrottshall:idrottshalls:idrottshallen:idrottshallens:idrottshallar:idrottshallars:idrottshallarna:idrottshallarnas
+662258r4<substantiv>idrottshjälte:idrottshjälte:idrottshjältes:idrottshjälten:idrottshjältens:idrottshjältar:idrottshjältars:idrottshjältarna:idrottshjältarnas
+792074r3<adjektiv>idrottsintresserad:idrottsintresserad:idrottsintresserat:idrottsintresserade:idrottsintresserade:!:!:!:
+566328r3<adjektiv>idrottslig:idrottslig:idrottsligt:idrottsliga:idrottsliga::::
+679739r14<substantiv>idrottsman:idrottsman:idrottsmans:idrottsmannen:idrottsmannens:idrottsmän:idrottsmäns:idrottsmännen:idrottsmännens
+COMPOUND(549290, 557796): idrott + man
+602241r3<substantiv>idrottsnyhet:idrottsnyhet:idrottsnyhets:idrottsnyheten:idrottsnyhetens:idrottsnyheter:idrottsnyheters:idrottsnyheterna:idrottsnyheternas
+CUSTOM: y y idrottsnyhets
+722452r4<substantiv>idrottsområde:idrottsområde:idrottsområdes:idrottsområdet:idrottsområdets:idrottsområden:idrottsområdens:idrottsområdena:idrottsområdenas
+COMPOUND(549290, 612761): idrott + område
+602250r3<substantiv>idrottsplan:idrottsplan:idrottsplans:idrottsplanen:idrottsplanens:idrottsplaner:idrottsplaners:idrottsplanerna:idrottsplanernas
+602258r4<substantiv>idrottsplats:idrottsplats:idrottsplats:idrottsplatsen:idrottsplatsens:idrottsplatser:idrottsplatsers:idrottsplatserna:idrottsplatsernas
+597013r3<substantiv>idrottstävling:idrottstävling:idrottstävlings:idrottstävlingen:idrottstävlingens:idrottstävlingar:idrottstävlingars:idrottstävlingarna:idrottstävlingarnas
+765152r6<substantiv>idrottsår:idrottsår:idrottsårs:idrottsåret:idrottsårets:idrottsår:idrottsårs:idrottsåren:idrottsårens
+COMPOUND(549290, 553140): idrott + år
+990000r3<egennamn>Idun:Idun:Iduns
+549291r6<substantiv>idyll:idyll:idylls:idyllen:idyllens:idyller:idyllers:idyllerna:idyllernas
+868451r3<substantiv>idylliker:idylliker:idyllikers:idyllikern:idyllikerns:idylliker:idyllikers:idyllikerna:idyllikernas
+586821r4<verb>idyllisera:idyllisera:idylliserade:idylliserat:idylliserar:idyllisera:idylliseras:idylliserades:idylliserats:idylliseras:idylliserad:idylliserat:idylliserade:idylliserande:
+580855r3<adjektiv>idyllisk:idyllisk:idylliskt:idylliska:idylliska::::
+874407r3<egennamn>If:If:!
+560979r3<konjunktion>ifall:ifall
+620588r3<adverb>ifatt:ifatt
+620589r3<adverb>ifjol:ifjol
+620590r3<adverb>ifjor:ifjor
+615007r3<adverb>ifred:ifred
+615008r4<adverb>ifråga:ifråga
+CUSTOM: y n
+868457r4<verb>ifrågakomma:ifrågakomma:ifrågakom:ifrågakommit:ifrågakommer:ifrågakom:ifrågakoms:ifrågakoms:ifrågakommits:ifrågakommas:ifrågakommen:ifrågakommet:ifrågakomna:ifrågakommande:
+COMPOUND(615008, 555254): ifråga + komma
+801003r3<adjektiv>ifrågakommande:ifrågakommande:ifrågakommande:ifrågakommande:ifrågakommande:!:!:!:
+645544r3<adjektiv>ifrågasatt:ifrågasatt:ifrågasatt:ifrågasatta:ifrågasatta::::
+645545r4<verb>ifrågasätta:ifrågasätta:ifrågasatte:ifrågasatt:ifrågasätter:ifrågasätt:ifrågasättas:ifrågasattes:ifrågasatts:ifrågasätts, ifrågasättes:ifrågasatt:ifrågasatt:ifrågasatta::
+645548r4<substantiv>ifrågasättande:ifrågasättande:ifrågasättandes:ifrågasättandet:ifrågasättandets:ifrågasättanden:ifrågasättandens:ifrågasättandena:ifrågasättandenas
+633543r3<adjektiv>ifrågavarande:ifrågavarande:ifrågavarande:ifrågavarande:ifrågavarande:!:!:!:
+615009r3<adverb>ifrån:ifrån
+692052r4<verb>ifylla:ifylla:ifyllde:ifyllt:ifyller:ifyll:ifyllas:ifylldes:ifyllts:ifylls, ifylles:ifylld:ifyllt:ifyllda::
+COMPOUND(556668, 585772): i + fylla
+CUSTOM: y n
+953685r3<adjektiv>ifylld:ifylld:ifyllt:ifyllda:ifyllda::::::::::::
+980876r3<substantiv>ifyllnad:ifyllnad:ifyllnads:ifyllnaden:ifyllnadens::::
+708344r3<substantiv>ifyllning:ifyllning:ifyllnings:ifyllningen:ifyllningens::::
+645550r4<verb>iföra:iföra:iförde:ifört:iför:iför:iföras:ifördes:iförts:iförs, iföres:iförd:ifört:iförda:iförande:
+CUSTOM: y n
+625487r5<substantiv>igel:igel:igels:igeln:igelns:iglar:iglars:iglarna:iglarnas
+CUSTOM: y n
+980880r3<substantiv>igelknopp:igelknopp:igelknopps:igelknoppen:igelknoppens:igelknoppar:igelknoppars:igelknopparna:igelknopparnas
+645551r5<substantiv>igelkott:igelkott:igelkotts:igelkotten:igelkottens:igelkottar:igelkottars:igelkottarna:igelkottarnas
+CUSTOM: y y igelkotts
+764089r6<substantiv>igelkottsbo:igelkottsbo:igelkottsbos:igelkottsboet:igelkottsboets:igelkottsbon:igelkottsbons:igelkottsbona:igelkottsbonas
+COMPOUND(645551, 612409): igelkott + bo
+764088r3<substantiv>igelkottsunge::::::::
+COMPOUND(645551, 600015): igelkott + unge
+618188r3<adverb>igen:igen
+645553r3<adjektiv>igenbommad:igenbommad:igenbommat:igenbommade:igenbommade:!:!:!:
+564431r3<adjektiv>igenfrusen:igenfrusen:igenfruset:igenfrusna:igenfrusna::::
+645556r3<adjektiv>igenfylld:igenfylld:igenfyllt:igenfyllda:igenfyllda::::
+645559r3<adjektiv>igengrodd:igengrodd:igengrott:igengrodda:igengrodda::::
+926180r3<adjektiv>igenisad:igenisad:igenisat:igenisade:igenisade:!:!:!:::::::::
+792077r3<adjektiv>igenkastad:igenkastad:igenkastat:igenkastade:igenkastade:!:!:!:
+792080r3<adjektiv>igenkittad:igenkittad:igenkittat:igenkittade:igenkittade:!:!:!:
+792083r3<adjektiv>igenklistrad:igenklistrad:igenklistrat:igenklistrade:igenklistrade:!:!:!:
+801004r3<adjektiv>igenkommande:igenkommande:igenkommande:igenkommande:igenkommande:!:!:!:
+645562r3<adjektiv>igenkorkad:igenkorkad:igenkorkat:igenkorkade:igenkorkade:!:!:!:
+645563r3<adjektiv>igenkänd:igenkänd:igenkänt:igenkända:igenkända::::
+645564r6<verb>igenkänna:igenkänna:igenkände:igenkänt:igenkänner:igenkänn:igenkännas:igenkändes:igenkänts:igenkänns, igenkännes:igenkänd:igenkänt:igenkända:igenkännande:
+725863r3<substantiv>igenkännande:igenkännande:igenkännandes:igenkännandet:igenkännandets:igenkännanden:igenkännandens:igenkännandena:igenkännandenas
+569229r4<adjektiv>igenkännbar:igenkännbar:igenkännbart:igenkännbara:igenkännbara::::igenkännbare::::::::
+692053r3<substantiv>igenkänning:igenkänning:igenkännings:igenkänningen:igenkänningens::::
+CUSTOM: y y igenkännings +igenkänningsx
+566329r3<adjektiv>igenkännlig:igenkännlig:igenkännligt:igenkännliga:igenkännliga::::
+799624r3<adjektiv>igenlagd:igenlagd:igenlagt:igenlagda:igenlagda::::
+725871r3<adjektiv>igenmulen:igenmulen:igenmulet:igenmulna:igenmulna::::
+645565r3<adjektiv>igenmurad:igenmurad:igenmurat:igenmurade:igenmurade:!:!:!:
+792086r3<adjektiv>igenmyllad:igenmyllad:igenmyllat:igenmyllade:igenmyllade:!:!:!:
+618189r3<adverb>igenom:igenom
+792089r3<adjektiv>igenproppad:igenproppad:igenproppat:igenproppade:igenproppade:!:!:!:
+792092r3<adjektiv>igenrostad:igenrostad:igenrostat:igenrostade:igenrostade:!:!:!:
+792095r3<adjektiv>igensandad:igensandad:igensandat:igensandade:igensandade:!:!:!:
+797241r10<adjektiv>igensatt:igensatt:igensatt:igensatta:igensatta::::::::::::
+792098r3<adjektiv>igenskogad:igenskogad:igenskogat:igenskogade:igenskogade:!:!:!:
+792101r3<adjektiv>igenskottad:igenskottad:igenskottat:igenskottade:igenskottade:!:!:!:
+645568r3<adjektiv>igenslagen:igenslagen:igenslaget:igenslagna:igenslagna::::
+792104r3<adjektiv>igenslaggad:igenslaggad:igenslaggat:igenslaggade:igenslaggade:!:!:!:
+792107r3<adjektiv>igenslammad:igenslammad:igenslammat:igenslammade:igenslammade:!:!:!:
+980888r3<substantiv>igenslamning:igenslamning:igenslamnings:igenslamningen:igenslamningens::::
+799627r3<adjektiv>igenslängd:igenslängd:igenslängt:igenslängda:igenslängda::::
+645571r3<adjektiv>igensnöad:igensnöad:igensnöat:igensnöade:igensnöade:!:!:!:
+792110r3<adjektiv>igensopad:igensopad:igensopat:igensopade:igensopade:!:!:!:
+792113r3<adjektiv>igensotad:igensotad:igensotat:igensotade:igensotade:!:!:!:
+792116r3<adjektiv>igenspikad:igenspikad:igenspikat:igenspikade:igenspikade:!:!:!:
+792119r3<adjektiv>igenstoppad:igenstoppad:igenstoppat:igenstoppade:igenstoppade:!:!:!:
+799630r3<adjektiv>igenstängd:igenstängd:igenstängt:igenstängda:igenstängda::::
+926167r3<adjektiv>igentäppt:igentäppt:igentäppt:igentäppta:igentäppta::::::::::::
+792122r3<adjektiv>igenvallad:igenvallad:igenvallat:igenvallade:igenvallade:!:!:!:
+743730r3<adjektiv>igenvuxen:igenvuxen:igenvuxet:igenvuxna:igenvuxna::::
+801005r3<adjektiv>igenväxande:igenväxande:igenväxande:igenväxande:igenväxande:!:!:!:
+980892r3<substantiv>igenväxning:igenväxning:igenväxnings:igenväxningen:igenväxningens::::
+645574r3<adjektiv>igenväxt:igenväxt:igenväxt:igenväxta:igenväxta::::
+645576r4<substantiv>iglo:iglo:iglos:iglon:iglons:iglor:iglors:iglorna:iglornas
+CUSTOM: y n
+645575r5<substantiv>igloo:igloo:igloos:igloon:igloons:igloor:igloors:igloorna:igloornas
+CUSTOM: y n
+645577r3<substantiv>ignorans:ignorans:ignorans:ignoransen:ignoransens::::
+549293r3<substantiv>ignorant:ignorant:ignorants:ignoranten:ignorantens:ignoranter:ignoranters:ignoranterna:ignoranternas
+868469r3<adjektiv>ignorant:ignorant:ignorant:ignoranta:ignoranta::::ignorante
+546919r4<verb>ignorera:ignorera:ignorerade:ignorerat:ignorerar:ignorera:ignoreras:ignorerades:ignorerats:ignoreras:ignorerad:ignorerat:ignorerade::
+980896r3<substantiv>ignorering:ignorering:ignorerings:ignoreringen:ignoreringens::::
+620591r4<adverb>igång:igång
+CUSTOM: y n
+955615r3<substantiv>igångkörning:igångkörning:igångkörnings:igångkörningen:igångkörningens::::
+645578r5<verb>igångsätta:igångsätta:igångsatte:igångsatt:igångsätter:igångsätt:igångsättas:igångsattes:igångsatts:igångsätts, igångsättes:igångsatt:igångsatt:igångsatta:igångsättande:
+COMPOUND(620591, 593414): igång + sätta
+891996r3<substantiv>igångsättande:igångsättande:igångsättandes:igångsättandet:igångsättandets:igångsättanden:igångsättandens:igångsättandena:igångsättandenas
+787461r3<substantiv>igångsättning:igångsättning:igångsättnings:igångsättningen:igångsättningens:igångsättningar:igångsättningars:igångsättningarna:igångsättningarnas
+CUSTOM: y y igångsättnings
+620592r3<adverb>igår:igår
+620597r3<adverb>ihjäl:ihjäl
+CUSTOM: y n ihjäl
+645586r3<adjektiv>ihjälbiten:ihjälbiten:ihjälbitet:ihjälbitna:ihjälbitna::::
+564434r3<adjektiv>ihjälfrusen:ihjälfrusen:ihjälfruset:ihjälfrusna:ihjälfrusna::::
+953786r3<adjektiv>ihjälgasad:ihjälgasad:ihjälgasat:ihjälgasade:ihjälgasade:!:!:!:::::::::
+645589r3<adjektiv>ihjälklämd:ihjälklämd:ihjälklämt:ihjälklämda:ihjälklämda:!:!:!:
+645592r3<adjektiv>ihjälkramad:ihjälkramad:ihjälkramat:ihjälkramade:ihjälkramade:!:!:!:
+645595r4<adjektiv>ihjälkörd:ihjälkörd:ihjälkört:ihjälkörda:ihjälkörda:!:!:!:ihjälkörde::::::::
+792125r3<adjektiv>ihjälpinad:ihjälpinad:ihjälpinat:ihjälpinade:ihjälpinade:!:!:!:
+792128r3<adjektiv>ihjälplågad:ihjälplågad:ihjälplågat:ihjälplågade:ihjälplågade:!:!:!:
+792131r3<adjektiv>ihjälpratad:ihjälpratad:ihjälpratat:ihjälpratade:ihjälpratade:!:!:!:
+645596r3<adjektiv>ihjälskjuten:ihjälskjuten:ihjälskjutet:ihjälskjutna:ihjälskjutna:!:!:!:ihjälskjutne
+645597r3<adjektiv>ihjälslagen:ihjälslagen:ihjälslaget:ihjälslagna:ihjälslagna:!:!:!:ihjälslagne
+792134r3<adjektiv>ihjälsparkad:ihjälsparkad:ihjälsparkat:ihjälsparkade:ihjälsparkade:!:!:!:
+792137r3<adjektiv>ihjälstångad:ihjälstångad:ihjälstångat:ihjälstångade:ihjälstångade:!:!:!:
+645598r3<adjektiv>ihjältrampad:ihjältrampad:ihjältrampat:ihjältrampade:ihjältrampade:!:!:!:
+792140r3<adjektiv>ihjältråkad:ihjältråkad:ihjältråkat:ihjältråkade:ihjältråkade:!:!:!:
+620596r3<adverb>ihop:ihop
+899810r3<adjektiv>ihopkopplad:ihopkopplad:ihopkopplat:ihopkopplade:ihopkopplade:!:!:!:::::::::
+915126r3<adjektiv>ihopsatt:ihopsatt:ihopsatt:ihopsatta:ihopsatta::::::::::::
+569230r3<adjektiv>ihopskjutbar:ihopskjutbar:ihopskjutbart:ihopskjutbara:ihopskjutbara::::
+618190r3<adverb>ihåg:ihåg
+618191r5<verb>ihågkomma:ihågkomma:ihågkom:ihågkommit:ihågkommer::ihågkommas:ihågkoms:ihågkommits:ihågkommes, ihågkoms:ihågkommen:ihågkommet:ihågkomna:ihågkommande:
+566330r4<adjektiv>ihålig:ihålig:ihåligt:ihåliga:ihåliga:ihåligare:ihåligast:ihåligaste:ihålige
+618192r3<substantiv>ihålighet:ihålighet:ihålighets:ihåligheten:ihålighetens:ihåligheter:ihåligheters:ihåligheterna:ihåligheternas
+CUSTOM: y y ihålighets
+618200r3<adjektiv>ihållande:ihållande:ihållande:ihållande:ihållande:!:!:!:
+566331r3<adjektiv>ihållig:ihållig:ihålligt:ihålliga:ihålliga::::
+645601r3<substantiv>ihållighet:ihållighet:ihållighets:ihålligheten:ihållighetens::::
+CUSTOM: y y ihållighets
+799636r3<adjektiv>ihälld:ihälld:ihällt:ihällda:ihällda::::
+801006r3<adjektiv>ihängande:ihängande:ihängande:ihängande:ihängande:!:!:!:
+564437r3<adjektiv>ihängsen:ihängsen:ihängset:ihängsna:ihängsna::::
+573421r4<adjektiv>ihärdig:ihärdig:ihärdigt:ihärdiga:ihärdiga:ihärdigare:ihärdigast:ihärdigaste:ihärdige
+728915r3<substantiv>ihärdighet:ihärdighet:ihärdighets:ihärdigheten:ihärdighetens::::
+854366r3<egennamn>Ikanobanken:Ikanobanken:Ikanobankens
+618201r3<adverb>ikapp:ikapp
+799639r3<adjektiv>ikappkörd:ikappkörd:ikappkört:ikappkörda:ikappkörda::::
+553227r3<egennamn>Ikea:Ikea:Ikeas
+CUSTOM: y n Ikea
+618202r7<verb>ikläda, iklä:ikläda, iklä:iklädde:iklätt:ikläder, iklär:ikläd:iklädas:ikläddes:iklätts:ikläds, iklädes, ikläs:iklädd:iklätt:iklädda:iklädande:
+549295r8<substantiv>ikon:ikon:ikons:ikonen:ikonens:ikoner:ikoners:ikonerna:ikonernas
+CUSTOM: y y
+915130r3<adjektiv>ikonisk:ikonisk:ikoniskt:ikoniska:ikoniska::::::::::::
+678809r3<substantiv>ikonmålare:ikonmålare:ikonmålares:ikonmålaren:ikonmålarens:ikonmålare:ikonmålares:ikonmålarna:ikonmålarnas
+CUSTOM: y y ikonmålar
+958429r4<substantiv>ikonmåleri:ikonmåleri:ikonmåleris:ikonmåleriet:ikonmåleriets:ikonmålerier:ikonmåleriers:ikonmålerierna:ikonmåleriernas
+COMPOUND(549295, 552706): ikon + måleri
+693272r6<substantiv>ikonmålning:ikonmålning:ikonmålnings:ikonmålningen:ikonmålningens:ikonmålningar:ikonmålningars:ikonmålningarna:ikonmålningarnas
+COMPOUND(549295, 636353): ikon + målning
+764099r3<substantiv>ikonografi:ikonografi:ikonografis:ikonografin:ikonografins::::
+580856r3<adjektiv>ikonografisk:ikonografisk:ikonografiskt:ikonografiska:ikonografiska::::
+868475r3<substantiv>ikonoklast:ikonoklast:ikonoklasts:ikonoklasten:ikonoklastens:ikonoklaster:ikonoklasters:ikonoklasterna:ikonoklasternas
+580859r3<adjektiv>ikonoklastisk:ikonoklastisk:ikonoklastiskt:ikonoklastiska:ikonoklastiska::::
+868483r3<substantiv>ikonostas:ikonostas:ikonostas:ikonostasen:ikonostasens:ikonostaser:ikonostasers:ikonostaserna:ikonostasernas
+959776r4<substantiv>ikonstatus:ikonstatus:ikonstatus:ikonstatusen:ikonstatusens::::
+COMPOUND(549295, 669668): ikon + status
+764103r3<substantiv>ikosaeder:ikosaeder:ikosaeders:ikosaedern:ikosaederns:ikosaedrar:ikosaedrars:ikosaedrarna:ikosaedrarnas
+618203r3<adverb>ikraft:ikraft
+645606r4<substantiv>ikraftträdande:ikraftträdande:ikraftträdandes:ikraftträdandet:ikraftträdandets:ikraftträdanden:ikraftträdandens:ikraftträdandena:ikraftträdandenas
+CUSTOM: y y ikraftträdande
+801405r3<adjektiv>ikraftträdd:ikraftträdd:ikraftträtt:ikraftträdda:ikraftträdda::::
+618204r3<preposition>ikring:ikring
+925975r3<adjektiv>ikringliggande:ikringliggande:ikringliggande:ikringliggande:ikringliggande:!:!:!:::::::::
+868490r3<substantiv>iktyolog:iktyolog:iktyologs:iktyologen:iktyologens:iktyologer:iktyologers:iktyologerna:iktyologernas
+868498r3<substantiv>iktyologi:iktyologi:iktyologis:iktyologin:iktyologins::::
+580862r3<adjektiv>iktyologisk:iktyologisk:iktyologiskt:iktyologiska:iktyologiska::::
+618205r3<adverb>ikull:ikull
+618206r3<adverb>ikväll:ikväll
+557672r5<substantiv>il:il:ils:ilen:ilens:ilar:ilars:ilarna:ilarnas
+DEFINITION 1: Häftigt strömmande vindvirvel
+546920r5<verb>ila:ila:ilade:ilat:ilar:ila:ilas:ilades:ilats:ilas::::ilande:
+906083r3<substantiv>i-land:i-land:i-lands:i-landet:i-landets:i-länder:i-länders:i-länderna:i-ländernas
+625488r4<adverb>iland:iland
+CUSTOM: y n
+692056r3<substantiv>ilande:ilande:ilandes:ilandet:ilandets::::
+868502r3<adjektiv>ilandfluten:ilandfluten:ilandflutet:ilandflutna:ilandflutna::::ilandflutne
+868506r4<verb>ilandsätta:ilandsätta:ilandsatte:ilandsatt:ilandsätter:ilandsätt:ilandsättas:ilandsattes:ilandsatts:ilandsätts, ilandsättes:ilandsatt:ilandsatt:ilandsatta:ilandsättande:
+COMPOUND(625488, 593414): iland + sätta
+552491r3<substantiv>ilbud:ilbud:ilbuds:ilbudet:ilbudets:ilbud:ilbuds:ilbuden:ilbudens
+645608r4<substantiv>ilfart:ilfart:ilfarts:ilfarten:ilfartens::::
+868518r3<substantiv>ilgods:ilgods:ilgods:ilgodset:ilgodsets::::
+895978r3<egennamn>Iliaden:Iliaden:Iliadens
+560964r3<adverb>illa:illa
+645609r3<adjektiv>illaluktande:illaluktande:illaluktande:illaluktande:illaluktande:!:!:!:
+801007r3<adjektiv>illalåtande:illalåtande:illalåtande:illalåtande:illalåtande:!:!:!:
+571125r3<substantiv>illamående:illamående:illamåendes:illamåendet:illamåendets::::
+571124r3<adjektiv>illamående:illamående:illamående:illamående:illamående:!:!:!:
+948122r3<adverb>illande:illande
+645610r3<adjektiv>illasinnad:illasinnad:illasinnat:illasinnade:illasinnade:!:!:!:
+801008r3<adjektiv>illasittande:illasittande:illasittande:illasittande:illasittande:!:!:!:
+801009r3<adjektiv>illasmakande:illasmakande:illasmakande:illasmakande:illasmakande:!:!:!:
+645611r3<adjektiv>illavarslande:illavarslande:illavarslande:illavarslande:illavarslande:!:!:!:
+868521r3<adjektiv>illavulen:illavulen:illavulet:illavulna:illavulna::::
+573422r3<adjektiv>illbattig:illbattig:illbattigt:illbattiga:illbattiga::::
+868524r3<substantiv>illbatting:illbatting:illbattings:illbattingen:illbattingens:illbattingar:illbattingars:illbattingarna:illbattingarnas
+802017r3<adjektiv>illblå:illblå:illblått:illblåa:illblåa::::
+552493r3<substantiv>illdåd:illdåd:illdåds:illdådet:illdådets:illdåd:illdåds:illdåden:illdådens
+645612r3<adjektiv>illegal:illegal:illegalt:illegala:illegala::::illegale
+645614r4<adjektiv>illegitim:illegitim:illegitimt:illegitima:illegitima::::illegitime
+645615r3<substantiv>iller:iller:illers:illern:illerns:illrar:illrars:illrarna:illrarnas
+573425r4<adjektiv>illfundig:illfundig:illfundigt:illfundiga:illfundiga:illfundigare:illfundigast:illfundigaste:illfundige
+645616r3<adjektiv>illgrön:illgrön:illgrönt:illgröna:illgröna:!:!:!:
+645619r3<adjektiv>illgul:illgul:illgult:illgula:illgula:!:!:!:
+645622r3<substantiv>illgärning:illgärning:illgärnings:illgärningen:illgärningens:illgärningar:illgärningars:illgärningarna:illgärningarnas
+CUSTOM: y y illgärnings
+797996r3<adjektiv>illiberal:illiberal:illiberalt:illiberala:illiberala::::
+573428r4<adjektiv>illistig:illistig:illistigt:illistiga:illistiga:illistigare:illistigast:illistigaste:illistige
+642279r4<adjektiv>illitterat:illitterat:illitterat:illitterata:illitterata::::illitterate
+573431r4<adjektiv>illmarig:illmarig:illmarigt:illmariga:illmariga:illmarigare:illmarigast:illmarigaste:illmarige
+868546r3<substantiv>illmarighet:illmarighet:illmarighets:illmarigheten:illmarighetens::::
+645623r3<adjektiv>illojal:illojal:illojalt:illojala:illojala::::illojale
+645625r3<substantiv>illojalitet:illojalitet:illojalitets:illojaliteten:illojalitetens::::
+645627r4<adjektiv>illröd:illröd:illrött:illröda:illröda::::illröde
+645630r3<adjektiv>illslug:illslug:illslugt:illsluga:illsluga:!:!:!:illsluge
+645634r3<substantiv>illtjut:illtjut:illtjuts:illtjutet:illtjutets:illtjut:illtjuts:illtjuten:illtjutens
+645640r4<verb>illtjuta:illtjuta:illtjöt:illtjutit:illtjuter:illtjut:illtjutas:illtjöts:illtjutits:illtjuts::::illtjutande:
+589612r4<verb>illudera:illudera:illuderade:illuderat:illuderar:illudera:illuderas:illuderades:illuderats:illuderas::::illuderande:
+645644r3<substantiv>illumination:illumination:illuminations:illuminationen:illuminationens:illuminationer:illuminationers:illuminationerna:illuminationernas
+CUSTOM: y y illuminations
+586825r4<verb>illuminera:illuminera:illuminerade:illuminerat:illuminerar:illuminera:illumineras:illuminerades:illuminerats:illumineras::::illuminerande:
+792143r3<adjektiv>illuminerad:illuminerad:illuminerat:illuminerade:illuminerade:!:!:!:
+549296r3<substantiv>illusion:illusion:illusions:illusionen:illusionens:illusioner:illusioners:illusionerna:illusionernas
+CUSTOM: y y illusions
+645645r3<substantiv>illusionist:illusionist:illusionists:illusionisten:illusionistens:illusionister:illusionisters:illusionisterna:illusionisternas
+CUSTOM: y y illusionist
+580865r3<adjektiv>illusionistisk:illusionistisk:illusionistiskt:illusionistiska:illusionistiska::::
+563859r3<adjektiv>illusionsfri:illusionsfri:illusionsfritt:illusionsfria:illusionsfria::::
+564925r3<adjektiv>illusionslös:illusionslös:illusionslöst:illusionslösa:illusionslösa::::
+743733r3<substantiv>illusionslöshet:illusionslöshet:illusionslöshets:illusionslösheten:illusionslöshetens::::
+580868r3<adjektiv>illusorisk:illusorisk:illusoriskt:illusoriska:illusoriska::::
+564525r4<adjektiv>illuster:illuster:illustert:illustra:illustra::::illustre
+645649r4<substantiv>illustration:illustration:illustrations:illustrationen:illustrationens:illustrationer:illustrationers:illustrationerna:illustrationernas
+CUSTOM: y y illustrations
+701892r4<substantiv>illustrationsmaterial:illustrationsmaterial:illustrationsmaterials:illustrationsmaterialet:illustrationsmaterialets:illustrationsmaterial:illustrationsmaterials:illustrationsmaterialen:illustrationsmaterialens
+COMPOUND(645649, 552695): illustration + material
+645647r3<adjektiv>illustrativ:illustrativ:illustrativt:illustrativa:illustrativa::::
+549297r3<substantiv>illustratör:illustratör:illustratörs:illustratören:illustratörens:illustratörer:illustratörers:illustratörerna:illustratörernas
+546921r4<verb>illustrera:illustrera:illustrerade:illustrerat:illustrerar:illustrera:illustreras:illustrerades:illustrerats:illustreras:illustrerad:illustrerat:illustrerade::
+692059r3<adjektiv>illustrerande:illustrerande:illustrerande:illustrerande:illustrerande:!:!:!:
+645650r3<substantiv>illustrering:illustrering:illustrerings:illustreringen:illustreringens::::
+CUSTOM: y y illustrerings
+797999r3<adjektiv>illuvial:illuvial:illuvialt:illuviala:illuviala::::
+645648r3<substantiv>illvilja:illvilja:illviljas:illviljan:illviljans::::
+566334r4<adjektiv>illvillig:illvillig:illvilligt:illvilliga:illvilliga:illvilligare:illvilligast:illvilligaste:illvillige
+868564r3<substantiv>illvillighet:illvillighet:illvillighets:illvilligheten:illvillighetens::::
+868568r3<substantiv>illvrål:illvrål:illvråls:illvrålet:illvrålets:illvrål:illvråls:illvrålen:illvrålens
+868574r3<verb>illvråla:illvråla:illvrålade:illvrålat:illvrålar:illvråla:illvrålas:illvrålades:illvrålats:illvrålas::::illvrålande:
+580869r4<adjektiv>illyrisk:illyrisk:illyriskt:illyriska:illyriska::::illyriske
+868583r3<substantiv>ilmarsch:ilmarsch:ilmarschs:ilmarschen:ilmarschens:ilmarscher:ilmarschers:ilmarscherna:ilmarschernas
+645651r3<substantiv>ilning:ilning:ilnings:ilningen:ilningens:ilningar:ilningars:ilningarna:ilningarnas
+CUSTOM: y y ilnings
+868591r3<substantiv>ilsamtal:ilsamtal:ilsamtals:ilsamtalet:ilsamtalets:ilsamtal:ilsamtals:ilsamtalen:ilsamtalens
+734339r3<adjektiv>ilsk:ilsk:ilskt:ilska:ilska::::ilske
+625489r3<substantiv>ilska:ilska:ilskas:ilskan:ilskans:!:!:!:!
+645652r3<adjektiv>ilsken:ilsken:ilsket:ilskna:ilskna:ilsknare:ilsknast:ilsknaste:ilskne
+645653r4<verb>ilskna:ilskna:ilsknade:ilsknat:ilsknar:ilskna:ilsknas:ilsknades:ilsknats:ilsknas::::ilsknande:
+798002r3<adjektiv>ilsnabb:ilsnabb:ilsnabbt:ilsnabba:ilsnabba::::
+767306r4<substantiv>iläggning:iläggning:iläggnings:iläggningen:iläggningens:iläggningar:iläggningars:iläggningarna:iläggningarnas
+CUSTOM: y n iläggs
+598394r3<substantiv>iläggningsslev:iläggningsslev:iläggningsslevs:iläggningssleven:iläggningsslevens:iläggningsslevar:iläggningsslevars:iläggningsslevarna:iläggningsslevarnas
+677845r4<substantiv>iläggssöm:iläggssöm:iläggssöms:iläggssömmen:iläggssömmens:iläggssömmar:iläggssömmars:iläggssömmarna:iläggssömmarnas
+COMPOUND(767306, 627861): iläggning + söm
+625490r4<substantiv>image:image:images:imagen:imagens::::
+DEFINITION 1: Det sätt en person framställs på.
+789546r3<adjektiv>imagemässig:imagemässig:imagemässigt:imagemässiga:imagemässiga::::
+645654r3<adjektiv>imaginär:imaginär:imaginärt:imaginära:imaginära::::imaginäre
+626053r4<substantiv>imam:imam:imams:imamen:imamens:imamer:imamers:imamerna:imamernas
+CUSTOM: y n imam
+898209r4<substantiv>imamutbildning:imamutbildning:imamutbildnings:imamutbildningen:imamutbildningens:imamutbildningar:imamutbildningars:imamutbildningarna:imamutbildningarnas
+COMPOUND(626053, 597810): imam + utbildning
+645656r3<adjektiv>imbecill:imbecill:imbecillt:imbecilla:imbecilla::::imbecille
+700408r3<substantiv>imbecillitet:imbecillitet:imbecillitets:imbecilliteten:imbecillitetens::::
+772325r4<substantiv>imbibition:imbibition:imbibitions:imbibitionen:imbibitionens::::
+CUSTOM: y y imbibitions
+772329r3<substantiv>imbibitionsförmåga::::::::
+COMPOUND(772325, 594097): imbibition + förmåga
+563862r3<adjektiv>imfri:imfri:imfritt:imfria:imfria::::
+CUSTOM: y n
+549298r4<substantiv>imitation:imitation:imitations:imitationen:imitationens:imitationer:imitationers:imitationerna:imitationernas
+CUSTOM: y y imitations
+772330r3<substantiv>imitationspapper::::::::
+COMPOUND(549298, 556527): imitation + papper
+700412r3<adjektiv>imitativ:imitativ:imitativt:imitativa:imitativa::::
+549299r3<substantiv>imitatör:imitatör:imitatörs:imitatören:imitatörens:imitatörer:imitatörers:imitatörerna:imitatörernas
+546922r4<verb>imitera:imitera:imiterade:imiterat:imiterar:imitera:imiteras:imiterades:imiterats:imiteras:imiterad:imiterat:imiterade::
+692061r3<adjektiv>imiterande:imiterande:imiterande:imiterande:imiterande:!:!:!:
+700415r4<substantiv>imkanal:imkanal:imkanals:imkanalen:imkanalens:imkanaler:imkanalers:imkanalerna:imkanalernas
+COMPOUND(624131, 549426): imma + kanal
+CUSTOM: y n n
+700424r3<substantiv>imkåpa:imkåpa:imkåpas:imkåpan:imkåpans:imkåpor:imkåpors:imkåporna:imkåpornas
+CUSTOM: y n n
+645657r3<verb>imma:imma:immade:immat:immar:imma::::::::immande:
+624131r9<substantiv>imma:imma:immas:imman:immans::::
+BASEWORDS: im
+CUSTOM: y n
+868601r3<substantiv>immanens:immanens:immanens:immanensen:immanensens::::
+645658r4<adjektiv>immanent:immanent:immanent:immanenta:immanenta::::immanente
+782964r3<egennamn>Immanuel:Immanuel:Immanuels
+586829r3<verb>immaterialisera:immaterialisera:immaterialiserade:immaterialiserat:immaterialiserar:immaterialisera:::::::::
+953961r3<substantiv>immaterialitet:immaterialitet:immaterialitets:immaterialiteten:immaterialitetens::::
+638119r5<substantiv>immaterialrätt:immaterialrätt:immaterialrätts:immaterialrätten:immaterialrättens::::
+CUSTOM: y y immaterialrätts
+772332r3<substantiv>immaterialrättsjurist::::::::
+COMPOUND(638119, 602370): immaterialrätt + jurist
+798006r3<adjektiv>immaterialrättslig:immaterialrättslig:immaterialrättsligt:immaterialrättsliga:immaterialrättsliga::::
+645659r3<adjektiv>immateriell:immateriell:immateriellt:immateriella:immateriella::::
+868605r3<substantiv>immatrikulation:immatrikulation:immatrikulations:immatrikulationen:immatrikulationens:immatrikulationer:immatrikulationers:immatrikulationerna:immatrikulationernas
+589616r4<verb>immatrikulera:immatrikulera:immatrikulerade:immatrikulerat:immatrikulerar:immatrikulera:::::immatrikulerad:immatrikulerat:immatrikulerade:immatrikulerande:
+573434r4<adjektiv>immig:immig:immigt:immiga:immiga:immigare:immigast:immigaste:
+549300r3<substantiv>immigrant:immigrant:immigrants:immigranten:immigrantens:immigranter:immigranters:immigranterna:immigranternas
+CUSTOM: y y immigrant
+645660r4<substantiv>immigration:immigration:immigrations:immigrationen:immigrationens::::
+CUSTOM: y y immigrations
+772333r3<substantiv>immigrationsmyndighet::::::::
+COMPOUND(645660, 619016): immigration + myndighet
+546923r4<verb>immigrera:immigrera:immigrerade:immigrerat:immigrerar:immigrera:immigreras:immigrerades:immigrerats:immigreras:immigrerad:immigrerat:immigrerade:immigrerande:
+868623r3<substantiv>immission:immission:immissions:immissionen:immissionens::::
+798010r3<adjektiv>immobil:immobil:immobilt:immobila:immobila::::
+589620r3<verb>immobilisera:immobilisera:immobiliserade:immobiliserat:immobiliserar:immobilisera:::::::::
+580872r3<adjektiv>immoralisk:immoralisk:immoraliskt:immoraliska:immoraliska::::
+564610r4<adjektiv>immun:immun:immunt:immuna:immuna::::
+CUSTOM: y y immun
+580875r3<adjektiv>immunbiologisk:immunbiologisk:immunbiologiskt:immunbiologiska:immunbiologiska::::
+772334r3<substantiv>immunförsvar:immunförsvar:immunförsvars:immunförsvaret:immunförsvarets::::
+589624r4<verb>immunisera:immunisera:immuniserade:immuniserat:immuniserar:immunisera:immuniseras:immuniserades:immuniserats:immuniseras:immuniserad:immuniserat:immuniserade:immuniserande:
+645661r3<substantiv>immunitet:immunitet:immunitets:immuniteten:immunitetens::::
+CUSTOM: y y immunitets
+700433r3<substantiv>immunolog:immunolog:immunologs:immunologen:immunologens:immunologer:immunologers:immunologerna:immunologernas
+743737r3<substantiv>immunologi:immunologi:immunologis:immunologin:immunologins::::
+580878r3<adjektiv>immunologisk:immunologisk:immunologiskt:immunologiska:immunologiska::::
+706539r4<substantiv>immunsystem:immunsystem:immunsystems:immunsystemet:immunsystemets:immunsystem:immunsystems:immunsystemen:immunsystemens
+COMPOUND(564610, 553021): immun + system
+692062r3<adverb>imorgon:imorgon
+961612r3<verb>impa:impa:impade:impat:impar:impa:::::impad:impat:impade::
+98090

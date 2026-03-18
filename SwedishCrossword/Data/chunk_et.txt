@@ -1,0 +1,688 @@
+ektiv>ordentlig:ordentlig:ordentligt:ordentliga:ordentliga:ordentligare:ordentligast:ordentligaste:ordentlige
+625877r10<substantiv>order:order:orders:ordern:orderns:order:orders:orderna:ordernas
+CUSTOM: y y order
+934535r4<substantiv>orderbok:orderbok:orderboks:orderboken:orderbokens:orderböcker:orderböckers:orderböckerna:orderböckernas
+COMPOUND(625877, 555346): order + bok
+861372r4<substantiv>orderdjup:orderdjup:orderdjups:orderdjupet:orderdjupets:orderdjup:orderdjups:orderdjupen:orderdjupens
+COMPOUND(625877, 552320): order + djup
+CUSTOM: n n
+740732r4<substantiv>orderingång:orderingång:orderingångs:orderingången:orderingångens::::
+COMPOUND(625877, 551457): order + ingång
+CUSTOM: n n y
+615405r3<substantiv>ordermottagare:ordermottagare:ordermottagares:ordermottagaren:ordermottagarens:ordermottagare:ordermottagares:ordermottagarna:ordermottagarnas
+CUSTOM: n n
+648391r3<substantiv>ordermottagning:ordermottagning:ordermottagnings:ordermottagningen:ordermottagningens::::
+CUSTOM: n n
+740736r3<substantiv>orderstock:orderstock:orderstocks:orderstocken:orderstockens::::
+CUSTOM: n n y
+575077r3<adjektiv>ordfattig:ordfattig:ordfattigt:ordfattiga:ordfattiga::::
+641935r4<substantiv>ordform:ordform:ordforms:ordformen:ordformens:ordformer:ordformers:ordformerna:ordformernas
+COMPOUND(555138, 548947): ord + form
+575078r3<adjektiv>ordfyndig:ordfyndig:ordfyndigt:ordfyndiga:ordfyndiga::::
+648393r3<substantiv>ordföljd:ordföljd:ordföljds:ordföljden:ordföljdens:ordföljder:ordföljders:ordföljderna:ordföljdernas
+641944r13<substantiv>ordförande:ordförande:ordförandes:ordföranden:ordförandens:ordförande:ordförandes:ordförandena:ordförandenas
+CUSTOM: y y ordförande +ordförande
+641948r4<substantiv>ordförandepost:ordförandepost:ordförandeposts:ordförandeposten:ordförandepostens:ordförandeposter:ordförandeposters:ordförandeposterna:ordförandeposternas
+COMPOUND(641944, 550232): ordförande + post
+CUSTOM: n n y
+641956r4<substantiv>ordförandeskap:ordförandeskap:ordförandeskaps:ordförandeskapet:ordförandeskapets::::
+CUSTOM: y y ordförandeskaps
+877418r4<substantiv>ordförandeskapsår:ordförandeskapsår:ordförandeskapsårs:ordförandeskapsåret:ordförandeskapsårets:ordförandeskapsår:ordförandeskapsårs:ordförandeskapsåren:ordförandeskapsårens
+COMPOUND(641956, 553140): ordförandeskap + år
+641960r4<substantiv>ordförklaring:ordförklaring:ordförklarings:ordförklaringen:ordförklaringens:ordförklaringar:ordförklaringars:ordförklaringarna:ordförklaringarnas
+COMPOUND(555138, 641961): ord + förklaring
+CUSTOM: y y ordförklarings
+552736r3<substantiv>ordförråd:ordförråd:ordförråds:ordförrådet:ordförrådets:ordförråd:ordförråds:ordförråden:ordförrådens
+641962r3<substantiv>ordförståelse:ordförståelse:ordförståelses:ordförståelsen:ordförståelsens::::
+CUSTOM: y y ordförståelse
+582602r3<adjektiv>ordgeografisk:ordgeografisk:ordgeografiskt:ordgeografiska:ordgeografiska::::
+567173r3<adjektiv>ordhållig:ordhållig:ordhålligt:ordhålliga:ordhålliga::::
+641966r3<adjektiv>ordinarie:ordinarie:ordinarie:ordinarie:ordinarie:!:!:!:
+736862r4<substantiv>ordination:ordination:ordinations:ordinationen:ordinationens:ordinationer:ordinationers:ordinationerna:ordinationernas
+CUSTOM: y y ordinations
+802526r4<substantiv>ordinationshandling:ordinationshandling:ordinationshandlings:ordinationshandlingen:ordinationshandlingens:ordinationshandlingar:ordinationshandlingars:ordinationshandlingarna:ordinationshandlingarnas
+COMPOUND(736862, 551370): ordination + handling
+CUSTOM: n n
+547448r4<verb>ordinera:ordinera:ordinerade:ordinerat:ordinerar:ordinera:ordineras:ordinerades:ordinerats:ordineras:ordinerad:ordinerat:ordinerade::
+641967r3<adjektiv>ordinär:ordinär:ordinärt:ordinära:ordinära::::
+656801r4<substantiv>ordjur:ordjur:ordjurs:ordjuret:ordjurets:ordjur:ordjurs:ordjuren:ordjurens
+COMPOUND(557733, 552322): or + djur
+CUSTOM: n n n
+846519r3<adjektiv>ordkarg:ordkarg:ordkargt:ordkarga:ordkarga::::ordkarge
+641968r5<substantiv>ordklass:ordklass:ordklass:ordklassen:ordklassens:ordklasser:ordklassers:ordklasserna:ordklassernas
+COMPOUND(555138, 549530): ord + klass
+CUSTOM: y y ordklass
+788636r4<substantiv>ordklasstillhörighet:ordklasstillhörighet:ordklasstillhörighets:ordklasstillhörigheten:ordklasstillhörighetens:ordklasstillhörigheter:ordklasstillhörigheters:ordklasstillhörigheterna:ordklasstillhörigheternas
+COMPOUND(641968, 672372): ordklass + tillhörighet
+CUSTOM: n n
+758320r3<substantiv>ordklyveri:ordklyveri:ordklyveris:ordklyveriet:ordklyveriets:ordklyverier:ordklyveriers:ordklyverierna:ordklyveriernas
+798552r3<adjektiv>ordknapp:ordknapp:ordknappt:ordknappa:ordknappa::::
+932000r4<substantiv>ordkrig:ordkrig:ordkrigs:ordkriget:ordkrigets:ordkrig:ordkrigs:ordkrigen:ordkrigens
+COMPOUND(555138, 552585): ord + krig
+913396r4<substantiv>ordled:ordled:ordleds:ordledet:ordledets:ordled:ordleds:ordleden:ordledens
+COMPOUND(555138, 552662): ord + led
+551750r3<substantiv>ordlek:ordlek:ordleks:ordleken:ordlekens:ordlekar:ordlekars:ordlekarna:ordlekarnas
+555287r4<substantiv>ordlista:ordlista:ordlistas:ordlistan:ordlistans:ordlistor:ordlistors:ordlistorna:ordlistornas
+COMPOUND(555138, 555151): ord + lista
+565103r3<adjektiv>ordlös:ordlös:ordlöst:ordlösa:ordlösa::::
+547449r5<verb>ordna:ordna:ordnade:ordnat:ordnar:ordna:ordnas:ordnades:ordnats:ordnas:ordnad:ordnat:ordnade:ordnande:
+641975r3<adjektiv>ordnad:ordnad:ordnat:ordnade:ordnade:!:!:!:
+648400r3<substantiv>ordnande:ordnande:ordnandes:ordnandet:ordnandets::::
+597379r15<substantiv>ordning:ordning:ordnings:ordningen:ordningens:ordningar:ordningars:ordningarna:ordningarnas
+CUSTOM: y y ordnings +ordnings
+563491r4<adjektiv>ordningsam:ordningsam:ordningsamt:ordningsamma:ordningsamma::::ordningsamme
+550129r3<substantiv>ordningsföljd:ordningsföljd:ordningsföljds:ordningsföljden:ordningsföljdens:ordningsföljder:ordningsföljders:ordningsföljderna:ordningsföljdernas
+CUSTOM: n n y
+550130r3<substantiv>ordningsföreskrift:ordningsföreskrift:ordningsföreskrifts:ordningsföreskriften:ordningsföreskriftens:ordningsföreskrifter:ordningsföreskrifters:ordningsföreskrifterna:ordningsföreskrifternas
+CUSTOM: n n y
+648405r4<substantiv>ordningsregel:ordningsregel:ordningsregels:ordningsregeln:ordningsregelns:ordningsregler:ordningsreglers:ordningsreglerna:ordningsreglernas
+COMPOUND(597379, 621698): ordning + regel
+CUSTOM: n n y
+607784r3<substantiv>ordningstal:ordningstal:ordningstals:ordningstalet:ordningstalets:ordningstal:ordningstals:ordningstalen:ordningstalens
+550132r3<substantiv>ordningsvakt:ordningsvakt:ordningsvakts:ordningsvakten:ordningsvaktens:ordningsvakter:ordningsvakters:ordningsvakterna:ordningsvakternas
+CUSTOM: n n y
+648403r4<adverb>ordo:ordo
+DEFINITION 1: Matematiskt begrepp för att ange storleksordningen på en funktion
+CUSTOM: n n
+641976r3<substantiv>ordonnans:ordonnans:ordonnans:ordonnansen:ordonnansens:ordonnanser:ordonnansers:ordonnanserna:ordonnansernas
+582605r3<adjektiv>ordovicisk:ordovicisk:ordoviciskt:ordoviciska:ordoviciska::::
+798555r3<adjektiv>ordrapp:ordrapp:ordrappt:ordrappa:ordrappa::::
+CUSTOM: y n n
+761440r3<adjektiv>ordrik:ordrik:ordrikt:ordrika:ordrika:ordrikare:ordrikast:ordrikaste:
+761446r3<substantiv>ordrikedom:ordrikedom:ordrikedoms:ordrikedomen:ordrikedomens::::
+939546r4<substantiv>ordspel:ordspel:ordspels:ordspelet:ordspelets:ordspel:ordspels:ordspelen:ordspelens
+COMPOUND(555138, 552956): ord + spel
+552737r3<substantiv>ordspråk:ordspråk:ordspråks:ordspråket:ordspråkets:ordspråk:ordspråks:ordspråken:ordspråkens
+CUSTOM: y y ordspråks
+575081r3<adjektiv>ordspråksmässig:ordspråksmässig:ordspråksmässigt:ordspråksmässiga:ordspråksmässiga::::
+CUSTOM: n n
+641983r4<substantiv>ordstam:ordstam:ordstams:ordstammen:ordstammens:ordstammar:ordstammars:ordstammarna:ordstammarnas
+COMPOUND(555138, 619720): ord + stam
+552738r3<substantiv>ordstäv:ordstäv:ordstävs:ordstävet:ordstävets:ordstäv:ordstävs:ordstäven:ordstävens
+641991r3<substantiv>ordval:ordval:ordvals:ordvalet:ordvalets:ordval:ordvals:ordvalen:ordvalens
+551751r3<substantiv>ordvits:ordvits:ordvits:ordvitsen:ordvitsens:ordvitsar:ordvitsars:ordvitsarna:ordvitsarnas
+962738r4<substantiv>ordvrängare:ordvrängare:ordvrängares:ordvrängaren:ordvrängarens:ordvrängare:ordvrängares:ordvrängarna:ordvrängarnas
+COMPOUND(555138, 962732): ord + vrängare
+957452r3<substantiv>ordvrängeri:ordvrängeri:ordvrängeris:ordvrängeriet:ordvrängeriets:ordvrängerier:ordvrängeriers:ordvrängerierna:ordvrängeriernas
+641994r3<substantiv>ordväxling:ordväxling:ordväxlings:ordväxlingen:ordväxlingens:ordväxlingar:ordväxlingars:ordväxlingarna:ordväxlingarnas
+765918r3<adjektiv>orealiserad:orealiserad:orealiserat:orealiserade:orealiserade:!:!:!:
+569738r3<adjektiv>orealiserbar:orealiserbar:orealiserbart:orealiserbara:orealiserbara::::
+582608r3<adjektiv>orealistisk:orealistisk:orealistiskt:orealistiska:orealistiska::::
+625878r3<substantiv>oreda:oreda:oredas:oredan:oredans::::
+801559r3<adjektiv>oredd:oredd:orett:oredda:oredda::::
+CUSTOM: n n y
+575084r3<adjektiv>oredig:oredig:oredigt:orediga:orediga::::
+648408r3<adjektiv>oredigerad:oredigerad:oredigerat:oredigerade:oredigerade:!:!:!:
+641995r3<substantiv>oredighet:oredighet:oredighets:oredigheten:oredighetens:oredigheter:oredigheters:oredigheterna:oredigheternas
+CUSTOM: y y oredighets
+567176r3<adjektiv>oredlig:oredlig:oredligt:oredliga:oredliga::::
+642003r3<substantiv>oredlighet:oredlighet:oredlighets:oredligheten:oredlighetens:oredligheter:oredligheters:oredligheterna:oredligheternas
+CUSTOM: y y oredlighets
+740741r3<adjektiv>oredovisad:oredovisad:oredovisat:oredovisade:oredovisade:!:!:!:
+642008r3<adjektiv>oreducerad:oreducerad:oreducerat:oreducerade:oreducerade:!:!:!:
+642011r3<adjektiv>oreflekterad:oreflekterad:oreflekterat:oreflekterade:oreflekterade:!:!:!:
+877234r3<adjektiv>oreformerad:oreformerad:oreformerat:oreformerade:oreformerade:!:!:!:
+642014r3<substantiv>oregano:oregano:oreganos:oreganon:oreganons:!:!:!:!
+642018r3<adjektiv>oregelbunden:oregelbunden:oregelbundet:oregelbundna:oregelbundna:oregelbundnare:oregelbundnast:oregelbundnaste:
+642019r3<substantiv>oregelbundenhet:oregelbundenhet:oregelbundenhets:oregelbundenheten:oregelbundenhetens:oregelbundenheter:oregelbundenheters:oregelbundenheterna:oregelbundenheternas
+CUSTOM: y y oregelbundenhets
+575087r3<adjektiv>oregelmässig:oregelmässig:oregelmässigt:oregelmässiga:oregelmässiga::::
+567179r4<adjektiv>oregerlig:oregerlig:oregerligt:oregerliga:oregerliga:oregerligare:oregerligast:oregerligaste:oregerlige
+648409r3<adjektiv>oregistrerad:oregistrerad:oregistrerat:oregistrerade:oregistrerade:!:!:!:
+794035r3<adjektiv>oreglementerad:oreglementerad:oreglementerat:oreglementerade:oreglementerade:!:!:!:
+642027r3<adjektiv>oreglerad:oreglerad:oreglerat:oreglerade:oreglerade:!:!:!:
+990394r3<egennamn>Oregon:Oregon:Oregons
+648412r3<adjektiv>orelaterad:orelaterad:orelaterat:orelaterade:orelaterade:!:!:!:
+619329r3<adjektiv>oren:oren:orent:orena:orena::::orene
+642028r3<verb>orena:orena:orenade:orenat:orenar:orena:::::::::
+619330r3<substantiv>orenhet:orenhet:orenhets:orenheten:orenhetens::::
+CUSTOM: y y orenhets
+567182r3<adjektiv>orenlig:orenlig:orenligt:orenliga:orenliga::::
+619334r3<substantiv>orenlighet:orenlighet:orenlighets:orenligheten:orenlighetens::::
+CUSTOM: y y orenlighets
+765921r3<adjektiv>orensad:orensad:orensat:orensade:orensade:!:!:!:
+570845r3<adjektiv>oreparabel:oreparabel:oreparabelt:oreparabla:oreparabla::::
+569741r3<adjektiv>oreparerbar:oreparerbar:oreparerbart:oreparerbara:oreparerbara::::
+765924r3<adjektiv>orepresenterad:orepresenterad:orepresenterat:orepresenterade:orepresenterade:!:!:!:
+556871r3<verb>orera:orera:orerade:orerat:orerar:orera:oreras:orerades:orerats:oreras:::::
+556923r3<adjektiv>oreserverad:oreserverad:oreserverat:oreserverade:oreserverade:!:!:!:
+556924r7<adjektiv>oresonabel:oresonabel:oresonabelt:oresonabla:oresonabla:oresonablare:oresonablast:oresonablaste:oresonable
+556928r7<adjektiv>oresonlig:oresonlig:oresonligt:oresonliga:oresonliga:oresonligare:oresonligast:oresonligaste:oresonlige
+728685r3<substantiv>oresonlighet:oresonlighet:oresonlighets:oresonligheten:oresonlighetens:oresonligheter:oresonligheters:oresonligheterna:oresonligheternas
+648413r3<adjektiv>oretuscherad:oretuscherad:oretuscherat:oretuscherade:oretuscherade:!:!:!:
+642032r3<substantiv>orficism:orficism:orficisms:orficismen:orficismens:!:!:!:!
+642036r3<substantiv>orfiker:orfiker:orfikers:orfikern:orfikerns:orfiker:orfikers:orfikerna:orfikernas
+642042r3<adjektiv>orfisk:orfisk:orfiskt:orfiska:orfiska:!:!:!:
+552739r12<substantiv>organ:organ:organs:organet:organets:organ:organs:organen:organens
+CUSTOM: y y organ
+740745r3<substantiv>organdonation::::::::
+COMPOUND(552739, 656241): organ + donation
+657887r3<substantiv>organell:organell:organells:organellen:organellens:organeller:organellers:organellerna:organellernas
+648416r18<substantiv>organisation:organisation:organisations:organisationen:organisationens:organisationer:organisationers:organisationerna:organisationernas
+CUSTOM: y y organisations +organisations
+648417r4<substantiv>organisationskultur:organisationskultur:organisationskulturs:organisationskulturen:organisationskulturens:organisationskulturer:organisationskulturers:organisationskulturerna:organisationskulturernas
+COMPOUND(648416, 549804): organisation + kultur
+CUSTOM: n n y
+694222r4<substantiv>organisationsteori:organisationsteori:organisationsteoris:organisationsteorin:organisationsteorins:!:!:!:!
+COMPOUND(648416, 626693): organisation + teori
+582609r3<adjektiv>organisatorisk:organisatorisk:organisatoriskt:organisatoriska:organisatoriska::::
+550133r3<substantiv>organisatör:organisatör:organisatörs:organisatören:organisatörens:organisatörer:organisatörers:organisatörerna:organisatörernas
+547450r5<verb>organisera:organisera:organiserade:organiserat:organiserar:organisera:organiseras:organiserades:organiserats:organiseras::::organiserande:
+642045r3<adjektiv>organiserad:organiserad:organiserat:organiserade:organiserade:!:!:!:
+702694r3<substantiv>organisering:organisering:organiserings:organiseringen:organiseringens::::
+CUSTOM: y y organiserings
+556932r3<adjektiv>organisk:organisk:organiskt:organiska:organiska:!:!:!:
+556934r3<substantiv>organism:organism:organisms:organismen:organismens:organismer:organismers:organismerna:organismernas
+556935r3<substantiv>organist:organist:organists:organisten:organistens:organister:organisters:organisterna:organisternas
+CUSTOM: y y organist
+582610r3<adjektiv>organoleptisk:organoleptisk:organoleptiskt:organoleptiska:organoleptiska::::
+550134r4<substantiv>orgasm:orgasm:orgasms:orgasmen:orgasmens:orgasmer:orgasmers:orgasmerna:orgasmernas
+DEFINITION 1: höjdpunkt vid samlag
+582613r3<adjektiv>orgastisk:orgastisk:orgastiskt:orgastiska:orgastiska::::
+556944r7<substantiv>orgel:orgel:orgels:orgeln:orgelns:orglar:orglars:orglarna:orglarnas
+CUSTOM: y y orgel
+952453r4<substantiv>orgelgung:orgelgung:orgelgungs:orgelgunget:orgelgungets::::
+COMPOUND(556944, 628100): orgel + gung
+952459r4<substantiv>orgelkomp:orgelkomp:orgelkomps:orgelkompet:orgelkompets::::
+COMPOUND(556944, 628265): orgel + komp
+556952r3<substantiv>orgelmusik:orgelmusik:orgelmusiks:orgelmusiken:orgelmusikens:!:!:!:!
+758328r4<substantiv>orgelpipa:orgelpipa:orgelpipas:orgelpipan:orgelpipans:orgelpipor:orgelpipors:orgelpiporna:orgelpipornas
+COMPOUND(556944, 556880): orgel + pipa
+CUSTOM: n n y
+899314r4<substantiv>orgelton:orgelton:orgeltons:orgeltonen:orgeltonens:orgeltoner:orgeltoners:orgeltonerna:orgeltonernas
+COMPOUND(556944, 603900): orgel + ton
+769556r3<substantiv>orgeltrampare:orgeltrampare:orgeltrampares:orgeltramparen:orgeltramparens:orgeltrampare:orgeltrampares:orgeltramparna:orgeltramparnas
+CUSTOM: y n
+582616r3<adjektiv>orgiastisk:orgiastisk:orgiastiskt:orgiastiska:orgiastiska::::
+556956r4<substantiv>orgie:orgie:orgies:orgien:orgiens:orgier:orgiers:orgierna:orgiernas
+765927r3<adjektiv>orgieartad:orgieartad:orgieartat:orgieartade:orgieartade:!:!:!:
+567185r3<adjektiv>oridderlig:oridderlig:oridderligt:oridderliga:oridderliga::::
+550136r3<substantiv>oriental:oriental:orientals:orientalen:orientalens:orientaler:orientalers:orientalerna:orientalernas
+556966r3<adjektiv>orientalisk:orientalisk:orientaliskt:orientaliska:orientaliska:!:!:!:orientaliske
+740747r3<substantiv>orientalism:orientalism:orientalisms:orientalismen:orientalismens::::
+758329r3<substantiv>orientalist:orientalist:orientalists:orientalisten:orientalistens:orientalister:orientalisters:orientalisterna:orientalisternas
+984322r3<substantiv>orientalistik:orientalistik:orientalistiks:orientalistiken:orientalistikens::::
+895964r3<egennamn>Orienten:Orienten:Orientens
+590431r5<verb>orientera:orientera:orienterade:orienterat:orienterar:orientera:orienteras:orienterades:orienterats:orienteras:orienterad:orienterat:orienterade:orienterande:
+642046r3<adjektiv>orienterad:orienterad:orienterat:orienterade:orienterade:!:!:!:
+642047r3<substantiv>orienterare:orienterare:orienterares:orienteraren:orienterarens:orienterare:orienterares:orienterarna:orienterarnas
+CUSTOM: y y orienterar
+556968r5<substantiv>orientering:orientering:orienterings:orienteringen:orienteringens:orienteringar:orienteringars:orienteringarna:orienteringarnas
+CUSTOM: y y orienterings
+648424r4<substantiv>orienteringstävling:orienteringstävling:orienteringstävlings:orienteringstävlingen:orienteringstävlingens:orienteringstävlingar:orienteringstävlingars:orienteringstävlingarna:orienteringstävlingarnas
+COMPOUND(556968, 597793): orientering + tävling
+CUSTOM: n n y
+556973r3<substantiv>orientmatta:orientmatta:orientmattas:orientmattan:orientmattans:orientmattor:orientmattors:orientmattorna:orientmattornas
+642053r3<substantiv>origami:origami:origamis:origamin:origamins:!:!:!:!
+552740r6<substantiv>original:original:originals:originalet:originalets:original:originals:originalen:originalens
+CUSTOM: y y original
+798558r5<adjektiv>original:original:originalt:originala:originala::::::::::::
+CUSTOM: y y
+884764r4<substantiv>originaldel:originaldel:originaldels:originaldelen:originaldelens:originaldelar:originaldelars:originaldelarna:originaldelarnas
+COMPOUND(552740, 551034): original + del
+897599r4<substantiv>originalfil:originalfil:originalfils:originalfilen:originalfilens:originalfiler:originalfilers:originalfilerna:originalfilernas
+COMPOUND(798558, 555152): original + fil
+556981r3<substantiv>originalitet:originalitet:originalitets:originaliteten:originalitetens::::
+552741r3<substantiv>originalspråk:originalspråk:originalspråks:originalspråket:originalspråkets:originalspråk:originalspråks:originalspråken:originalspråkens
+CUSTOM: n n y
+935556r4<substantiv>originaltapet:originaltapet:originaltapets:originaltapeten:originaltapetens:originaltapeter:originaltapeters:originaltapeterna:originaltapeternas
+COMPOUND(798558, 550639): original + tapet
+794038r3<adjektiv>originaltappad:originaltappad:originaltappat:originaltappade:originaltappade:!:!:!:
+CUSTOM: n n
+694225r4<substantiv>originaltitel:originaltitel:originaltitels:originaltiteln:originaltitelns:originaltitlar:originaltitlars:originaltitlarna:originaltitlarnas
+COMPOUND(552740, 626697): original + titel
+CUSTOM: n n y
+648432r3<substantiv>originalutgåva:originalutgåva:originalutgåvas:originalutgåvan:originalutgåvans:originalutgåvor:originalutgåvors:originalutgåvorna:originalutgåvornas
+CUSTOM: n n y
+642057r3<adjektiv>originell:originell:originellt:originella:originella:originellare:originellast:originellaste:originelle
+642059r4<substantiv>origo:origo:::::::
+DEFINITION 1: Punkten där axlarna skär varandra i ett koordinatsystem
+648434r3<adjektiv>oriktad:oriktad:oriktat:oriktade:oriktade:!:!:!:
+556983r4<adjektiv>oriktig:oriktig:oriktigt:oriktiga:oriktiga:oriktigare:oriktigast:oriktigaste:
+642060r4<substantiv>oriktighet:oriktighet:oriktighets:oriktigheten:oriktighetens:oriktigheter:oriktigheters:oriktigheterna:oriktigheternas
+CUSTOM: y y oriktighets
+556984r4<adjektiv>orimlig:orimlig:orimligt:orimliga:orimliga:orimligare:orimligast:orimligaste:
+642064r4<substantiv>orimlighet:orimlighet:orimlighets:orimligheten:orimlighetens:orimligheter:orimligheters:orimligheterna:orimligheternas
+CUSTOM: y y orimlighets
+648437r3<adjektiv>orimmad:orimmad:orimmat:orimmade:orimmade:!:!:!:
+556985r4<substantiv>ork:ork:orks:orken:orkens:!:!:!:!
+556987r3<verb>orka:orka:orkade:orkat:orkar:orka:!:!:!:!:::::
+550138r5<substantiv>orkan:orkan:orkans:orkanen:orkanens:orkaner:orkaners:orkanerna:orkanernas
+CUSTOM: y y orkan
+648438r3<adjektiv>orkanartad:orkanartad:orkanartat:orkanartade:orkanartade:!:!:!:
+948552r4<substantiv>orkanby:orkanby:orkanbys:orkanbyn:orkanbyns:orkanbyar:orkanbyars:orkanbyarna:orkanbyarnas
+COMPOUND(550138, 557655): orkan + by
+648441r4<substantiv>orkanstyrka:orkanstyrka:::::::
+COMPOUND(550138, 595427): orkan + styrka
+556988r3<adjektiv>orkeslös:orkeslös:orkeslöst:orkeslösa:orkeslösa:!:!:!:orkeslöse
+648442r3<substantiv>orkeslöshet:orkeslöshet:orkeslöshets:orkeslösheten:orkeslöshetens::::
+CUSTOM: y y orkeslöshets
+556989r7<substantiv>orkester:orkester:orkesters:orkestern:orkesterns:orkestrar:orkestrars:orkestrarna:orkestrarnas
+CUSTOM: y y orkester
+648446r3<substantiv>orkestersvit:orkestersvit:orkestersvits:orkestersviten:orkestersvitens:orkestersviter:orkestersviters:orkestersviterna:orkestersviternas
+CUSTOM: n n y
+732693r4<substantiv>orkesterverk:orkesterverk:orkesterverks:orkesterverket:orkesterverkets:orkesterverk:orkesterverks:orkesterverken:orkesterverkens
+COMPOUND(556989, 553117): orkester + verk
+CUSTOM: n n y
+648454r3<adjektiv>orkestral:orkestral:orkestralt:orkestrala:orkestrala::::
+556991r4<verb>orkestrera:orkestrera:orkestrerade:orkestrerat:orkestrerar:orkestrera:orkestreras:orkestrerades:orkestrerats:orkestreras:orkestrerad:orkestrerat:orkestrerade::
+648457r3<substantiv>orkestrering:orkestrering:orkestrerings:orkestreringen:orkestreringens::::
+CUSTOM: y y orkestrerings
+642068r4<substantiv>orkidé:orkidé:orkidés:orkidén:orkidéns:orkidéer:orkidéers:orkidéerna:orkidéernas
+CUSTOM: y y orkidé
+758338r4<substantiv>orkidéart:orkidéart:orkidéarts:orkidéarten:orkidéartens:orkidéarter:orkidéarters:orkidéarterna:orkidéarternas
+COMPOUND(642068, 548244): orkidé + art
+648461r3<substantiv>orlov:orlov:orlovs:orlovet:orlovets::::
+CUSTOM: n n y
+648463r3<substantiv>orlovssedel:orlovssedel:orlovssedels:orlovssedeln:orlovssedelns::::
+551752r8<substantiv>orm:orm:orms:ormen:ormens:ormar:ormars:ormarna:ormarnas
+CUSTOM: y y orm
+901170r10<verb>orma:orma:ormade:ormat:ormar:orma::::::::ormande:!
+801167r3<adjektiv>ormande:ormande:ormande:ormande:ormande:!:!:!:
+552743r3<substantiv>ormbett:ormbett:ormbetts:ormbettet:ormbettets:ormbett:ormbetts:ormbetten:ormbettens
+846523r3<adjektiv>ormbiten:ormbiten:ormbitet:ormbitna:ormbitna::::ormbitne
+648467r5<substantiv>ormbo:ormbo:ormbos:ormboet:ormboets:ormbon:ormbons:ormbona:ormbonas
+COMPOUND(551752, 612409): orm + bo
+556998r4<substantiv>ormbunke:ormbunke:ormbunkes:ormbunken:ormbunkens:ormbunkar:ormbunkars:ormbunkarna:ormbunkarnas
+CUSTOM: y y ormbunks
+758346r4<substantiv>ormbunksväxt:ormbunksväxt:ormbunksväxts:ormbunksväxten:ormbunksväxtens:ormbunksväxter:ormbunksväxters:ormbunksväxterna:ormbunksväxternas
+COMPOUND(556998, 585876): ormbunke + växt
+CUSTOM: n n y
+945086r4<substantiv>ormgadd:ormgadd:ormgadds:ormgadden:ormgaddens:ormgaddar:ormgaddars:ormgaddarna:ormgaddarnas
+COMPOUND(551752, 551287): orm + gadd
+648471r3<substantiv>ormgrop:ormgrop:ormgrops:ormgropen:ormgropens:ormgropar:ormgropars:ormgroparna:ormgroparnas
+826630r3<adjektiv>ormlik:ormlik:ormlikt:ormlika:ormlika::::
+942325r3<substantiv>ormrot:ormrot:ormrots:ormroten:ormrotens::::
+557000r3<substantiv>ormskinn:ormskinn:ormskinns:ormskinnet:ormskinnets:ormskinn:ormskinns:ormskinnen:ormskinnens
+CUSTOM: y y ormskinns
+627914r4<substantiv>ormslå:ormslå:ormslås:ormslån:ormslåns:ormslår:ormslårs:ormslårna:ormslårnas
+557006r3<substantiv>ormtjusare:ormtjusare:ormtjusares:ormtjusaren:ormtjusarens:ormtjusare:ormtjusares:ormtjusarna:ormtjusarnas
+CUSTOM: y y ormtjusar
+551753r3<substantiv>ormvråk:ormvråk:ormvråks:ormvråken:ormvråkens:ormvråkar:ormvråkars:ormvråkarna:ormvråkarnas
+648479r4<substantiv>ormyngel:ormyngel:ormyngels:ormynglet:ormynglets:ormyngel:ormyngels:ormynglen:ormynglens
+COMPOUND(551752, 620343): orm + yngel
+819225r3<substantiv>ormörn:ormörn:ormörns:ormörnen:ormörnens:ormörnar:ormörnars:ormörnarna:ormörnarnas
+557012r3<substantiv>ornament:ornament:ornaments:ornamentet:ornamentets:ornament:ornaments:ornamenten:ornamentens
+557013r4<adjektiv>ornamental:ornamental:ornamentalt:ornamentala:ornamentala:ornamentalare:ornamentalast:ornamentalaste:
+557031r4<verb>ornamentera:ornamentera:ornamenterade:ornamenterat:ornamenterar:ornamentera:ornamenteras:ornamenterades:ornamenterats:ornamenteras:ornamenterad:ornamenterat:ornamenterade::
+758347r3<substantiv>ornamentering:ornamentering:ornamenterings:ornamenteringen:ornamenteringens:ornamenteringar:ornamenteringars:ornamenteringarna:ornamenteringarnas
+648485r3<substantiv>ornamentik:ornamentik:ornamentiks:ornamentiken:ornamentikens:!:!:!:!
+557016r9<substantiv>ornat:ornat:ornats:ornaten:ornatens:ornater:ornaters:ornaterna:ornaternas
+CUSTOM: y n
+895297r3<substantiv>orne:orne:ornes:ornen:ornens:ornar:ornars:ornarna:ornarnas
+CUSTOM: n n y
+557024r4<verb>ornera:ornera:ornerade:ornerat:ornerar:ornera:orneras:ornerades:ornerats:orneras:ornerad:ornerat:ornerade::
+CUSTOM: y n
+984331r3<substantiv>ornering:ornering:ornerings:orneringen:orneringens:orneringar:orneringars:orneringarna:orneringarnas
+CUSTOM: y n
+550139r3<substantiv>ornitolog:ornitolog:ornitologs:ornitologen:ornitologens:ornitologer:ornitologers:ornitologerna:ornitologernas
+557038r3<substantiv>ornitologi:ornitologi:ornitologis:ornitologin:ornitologins:!:!:!:!
+582619r3<adjektiv>ornitologisk:ornitologisk:ornitologiskt:ornitologiska:ornitologiska::::
+648489r3<substantiv>ornäsbjörk:ornäsbjörk:ornäsbjörks:ornäsbjörken:ornäsbjörkens:ornäsbjörkar:ornäsbjörkars:ornäsbjörkarna:ornäsbjörkarnas
+562998r8<substantiv>oro:oro:oros:oron:orons:oroar, oror:oroars, orors:oroarna, ororna:oroarnas, orornas
+DEFINITION 1: Del i urmekanism
+CUSTOM: n n y
+556915r15<substantiv>oro:oro:oros:oron:orons:!:!:!:!
+CUSTOM: y n
+547451r4<verb>oroa:oroa:oroade:oroat:oroar:oroa:oroas:oroades:oroats:oroas:oroad:oroat:oroade::
+642069r3<adjektiv>oroande:oroande:oroande:oroande:oroande:!:!:!:
+CUSTOM: y n
+926835r3<substantiv>oroare:oroare:oroares:oroaren:oroarens:oroare:oroares:oroarna:oroarnas
+984339r3<substantiv>orogenes:orogenes:orogenes:orogenesen:orogenesens::::
+CUSTOM: y n
+582622r3<adjektiv>orogenetisk:orogenetisk:orogenetiskt:orogenetiska:orogenetiska::::
+582625r3<adjektiv>orografisk:orografisk:orografiskt:orografiska:orografiska::::
+556917r3<adjektiv>orolig:orolig:oroligt:oroliga:oroliga:oroligare:oroligast:oroligaste:orolige
+557042r3<substantiv>orolighet:orolighet:orolighets:oroligheten:orolighetens:oroligheter:oroligheters:oroligheterna:oroligheternas
+CUSTOM: y y orolighets
+557043r3<adjektiv>oromantisk:oromantisk:oromantiskt:oromantiska:oromantiska:!:!:!:oromantiske
+765930r3<adjektiv>orosblandad:orosblandad:orosblandat:orosblandade:orosblandade:!:!:!:
+758356r4<substantiv>oroscentrum:oroscentrum:oroscentrums:oroscentret, oroscentrumet:oroscentrets, oroscentrumets:oroscentrum, oroscentra:oroscentrums, oroscentras:oroscentrumen:oroscentrumens
+COMPOUND(556915, 555316): oro + centrum
+765933r3<adjektiv>orosfylld:orosfylld:orosfyllt:orosfyllda:orosfyllda::::
+557047r3<substantiv>oroshärd:oroshärd:oroshärds:oroshärden:oroshärdens:oroshärdar:oroshärdars:oroshärdarna:oroshärdarnas
+906811r4<substantiv>oroskänsla:oroskänsla:oroskänslas:oroskänslan:oroskänslans:oroskänslor:oroskänslors:oroskänslorna:oroskänslornas
+COMPOUND(556915, 555604): oro + känsla
+722002r4<substantiv>orosläte:orosläte:oroslätes:oroslätet:oroslätets:orosläten:oroslätens:oroslätena:oroslätenas
+COMPOUND(556915, 621047): oro + läte
+CUSTOM: y n n
+557055r3<substantiv>orosmoln:orosmoln:orosmolns:orosmolnet:orosmolnets:orosmoln:orosmolns:orosmolnen:orosmolnens
+557061r3<substantiv>orosmoment:orosmoment:orosmoments:orosmomentet:orosmomentets:orosmoment:orosmoments:orosmomenten:orosmomentens
+765936r3<adjektiv>orosmättad:orosmättad:orosmättat:orosmättade:orosmättade:!:!:!:
+758366r4<substantiv>orosstiftare:orosstiftare:orosstiftares:orosstiftaren:orosstiftarens:orosstiftare:orosstiftares:orosstiftarna:orosstiftarnas
+COMPOUND(556915, 746973): oro + stiftare
+801168r3<adjektiv>orosstillande:orosstillande:orosstillande:orosstillande:orosstillande:!:!:!:
+765939r3<adjektiv>orostad:orostad:orostat:orostade:orostade:!:!:!:
+917749r4<substantiv>orostecken:orostecken:orosteckens:orostecknet:orostecknets:orostecken:orosteckens:orostecknen:orostecknens
+COMPOUND(556915, 559296): oro + tecken
+740756r3<substantiv>orostid:orostid:orostids:orostiden:orostidens:orostider:orostiders:orostiderna:orostidernas
+962745r4<substantiv>orosvåg:orosvåg:orosvågs:orosvågen:orosvågens:orosvågor:orosvågors:orosvågorna:orosvågornas
+COMPOUND(562998, 593520): oro + våg
+758372r4<substantiv>orosår:orosår:orosårs:orosåret:orosårets:orosår:orosårs:orosåren:orosårens
+COMPOUND(556915, 553140): oro + år
+557064r3<adjektiv>oroväckande:oroväckande:oroväckande:oroväckande:oroväckande::::
+557065r4<substantiv>orre:orre:orres:orren:orrens:orrar:orrars:orrarna:orrarnas
+CUSTOM: y n
+554349r3<egennamn>Orrefors:Orrefors:Orrefors
+CUSTOM: y n Orrefors
+557066r3<substantiv>orrfågel:orrfågel:orrfågels:orrfågeln:orrfågelns:orrfåglar:orrfåglars:orrfåglarna:orrfåglarnas
+557074r3<substantiv>orrspel:orrspel:orrspels:orrspelet:orrspelets:orrspel:orrspels:orrspelen:orrspelens
+554351r4<egennamn>Orsa:Orsa:Orsas, Orsa
+CUSTOM: y n Orsa
+550140r9<substantiv>orsak:orsak:orsaks:orsaken:orsakens:orsaker:orsakers:orsakerna:orsakernas
+CUSTOM: y y orsaks
+547452r4<verb>orsaka:orsaka:orsakade:orsakat:orsakar:orsaka:orsakas:orsakades:orsakats:orsakas:orsakad:orsakat:orsakade:orsakande:
+567188r3<adjektiv>orsaklig:orsaklig:orsakligt:orsakliga:orsakliga::::
+648497r3<substantiv>orsaksförhållande:orsaksförhållande:orsaksförhållandes:orsaksförhållandet:orsaksförhållandets:orsaksförhållanden:orsaksförhållandens:orsaksförhållandena:orsaksförhållandenas
+CUSTOM: n n y
+648498r3<substantiv>orsakskedja:orsakskedja:orsakskedjas:orsakskedjan:orsakskedjans:orsakskedjor:orsakskedjors:orsakskedjorna:orsakskedjornas
+CUSTOM: n n y
+565106r3<adjektiv>orsakslös:orsakslös:orsakslöst:orsakslösa:orsakslösa::::
+575090r3<adjektiv>orsaksmässig:orsaksmässig:orsaksmässigt:orsaksmässiga:orsaksmässiga::::
+CUSTOM: n n y
+736870r4<substantiv>orsakssamband:orsakssamband:orsakssambands:orsakssambandet:orsakssambandets:orsakssamband:orsakssambands:orsakssambanden:orsakssambandens
+COMPOUND(550140, 552865): orsak + samband
+CUSTOM: n n y
+721457r4<substantiv>orsakssammanhang:orsakssammanhang:orsakssammanhangs:orsakssammanhanget:orsakssammanhangets:orsakssammanhang:orsakssammanhangs:orsakssammanhangen:orsakssammanhangens
+COMPOUND(550140, 552874): orsak + sammanhang
+CUSTOM: n n y
+557080r3<substantiv>orsten:orsten:orstens:orstenen:orstenens:orstenar:orstenars:orstenarna:orstenarnas
+550141r43<substantiv>ort:ort:orts:orten:ortens:orter:orters:orterna:orternas
+CUSTOM: y n
+557088r3<substantiv>ortnamn:ortnamn:ortnamns:ortnamnet:ortnamnets:ortnamn:ortnamns:ortnamnen:ortnamnens
+CUSTOM: y n ortnamns
+582628r3<adjektiv>ortobasisk:ortobasisk:ortobasiskt:ortobasiska:ortobasiska::::
+582631r3<adjektiv>ortocentrisk:ortocentrisk:ortocentriskt:ortocentriska:ortocentriska::::
+657638r3<substantiv>ortoceratit:ortoceratit:ortoceratits:ortoceratiten:ortoceratitens:ortoceratiter:ortoceratiters:ortoceratiterna:ortoceratiternas
+557094r4<substantiv>ortodonti:ortodonti:ortodontis:ortodontin:ortodontins:!:!:!:!
+CUSTOM: y y ortodonti
+771947r3<substantiv>ortodontiprofessor::::::::
+COMPOUND(557094, 611151): ortodonti + professor
+CUSTOM: n n
+771938r3<substantiv>ortodontist:ortodontist:ortodontists:ortodontisten:ortodontistens:ortodontister:ortodontisters:ortodontisterna:ortodontisternas
+557098r3<adjektiv>ortodox:ortodox:ortodoxt:ortodoxa:ortodoxa::::ortodoxe
+624251r3<substantiv>ortodoxi:ortodoxi:ortodoxis:ortodoxin:ortodoxins:ortodoxier:ortodoxiers:ortodoxierna:ortodoxiernas
+582634r3<adjektiv>ortoepisk:ortoepisk:ortoepiskt:ortoepiska:ortoepiska::::
+557102r4<adjektiv>ortogonal:ortogonal:ortogonalt:ortogonala:ortogonala::::
+DEFINITION 1: Vinkelrät
+CUSTOM: y y ortogonal
+557106r3<substantiv>ortogonalprojektion:ortogonalprojektion:ortogonalprojektions:ortogonalprojektionen:ortogonalprojektionens:ortogonalprojektioner:ortogonalprojektioners:ortogonalprojektionerna:ortogonalprojektionernas
+CUSTOM: n n
+550142r3<substantiv>ortograf:ortograf:ortografs:ortografen:ortografens:ortografer:ortografers:ortograferna:ortografernas
+CUSTOM: y n n
+557114r4<substantiv>ortografi:ortografi:ortografis:ortografin, ortografien:ortografins, ortografiens:ortografier:ortografiers:ortografierna:ortografiernas
+582637r3<adjektiv>ortografisk:ortografisk:ortografiskt:ortografiska:ortografiska::::
+984342r3<substantiv>ortoklas:ortoklas:ortoklas:ortoklasen:ortoklasens:ortoklaser:ortoklasers:ortoklaserna:ortoklasernas
+582638r3<adjektiv>ortokromatisk:ortokromatisk:ortokromatiskt:ortokromatiska:ortokromatiska::::
+550144r3<substantiv>ortolan:ortolan:ortolans:ortolanen:ortolanens:ortolaner:ortolaners:ortolanerna:ortolanernas
+557116r3<substantiv>ortolansparv:ortolansparv:ortolansparvs:ortolansparven:ortolansparvens:ortolansparvar:ortolansparvars:ortolansparvarna:ortolansparvarnas
+965925r3<adjektiv>ortometrisk:ortometrisk:ortometriskt:ortometriska:ortometriska::::::::::::
+794041r3<adjektiv>ortonormerad:ortonormerad:ortonormerat:ortonormerade:ortonormerade:!:!:!:
+582641r3<adjektiv>ortopankromatisk:ortopankromatisk:ortopankromatiskt:ortopankromatiska:ortopankromatiska::::
+CUSTOM: n n
+550146r4<substantiv>ortoped:ortoped:ortopeds:ortopeden:ortopedens:ortopeder:ortopeders:ortopederna:ortopedernas
+CUSTOM: y y ortoped
+952465r4<substantiv>ortopedakut:ortopedakut:ortopedakuts:ortopedakuten:ortopedakutens:ortopedakuter:ortopedakuters:ortopedakuterna:ortopedakuternas
+COMPOUND(550146, 600971): ortoped + akut
+557124r3<substantiv>ortopedi:ortopedi:ortopedis:ortopedin:ortopedins::::
+582644r3<adjektiv>ortopedisk:ortopedisk:ortopediskt:ortopediska:ortopediska::::
+582645r3<adjektiv>ortorombisk:ortorombisk:ortorombiskt:ortorombiska:ortorombiska::::
+582648r3<adjektiv>ortoskopisk:ortoskopisk:ortoskopiskt:ortoskopiska:ortoskopiska::::
+582651r3<adjektiv>ortostereoskopisk:ortostereoskopisk:ortostereoskopiskt:ortostereoskopiska:ortostereoskopiska::::
+582654r3<adjektiv>ortosymmetrisk:ortosymmetrisk:ortosymmetriskt:ortosymmetriska:ortosymmetriska::::
+798561r3<adjektiv>ortotrop:ortotrop:ortotropt:ortotropa:ortotropa::::
+CUSTOM: y n n
+740765r3<substantiv>ortsbefolkning:ortsbefolkning:ortsbefolknings:ortsbefolkningen:ortsbefolkningens::::
+896141r4<substantiv>ortsbeskrivning:ortsbeskrivning:ortsbeskrivnings:ortsbeskrivningen:ortsbeskrivningens:ortsbeskrivningar:ortsbeskrivningars:ortsbeskrivningarna:ortsbeskrivningarnas
+COMPOUND(550141, 596477): ort + beskrivning
+966027r4<substantiv>ortsbestämning:ortsbestämning:ortsbestämnings:ortsbestämningen:ortsbestämningens:ortsbestämningar:ortsbestämningars:ortsbestämningarna:ortsbestämningarnas
+COMPOUND(550141, 659961): ort + bestämning
+740764r3<substantiv>ortsbo:ortsbo:ortsbos:ortsbon:ortsbons:ortsbor:ortsbors:ortsborna:ortsbornas
+955593r4<substantiv>ortschef:ortschef:ortschefs:ortschefen:ortschefens:ortschefer:ortschefers:ortscheferna:ortschefernas
+COMPOUND(550141, 548529): ort + chef
+617179r3<substantiv>ortsnamn:ortsnamn:ortsnamns:ortsnamnet:ortsnamnets:ortsnamn:ortsnamns:ortsnamnen:ortsnamnens
+897400r4<substantiv>ortspress:ortspress:ortspress:ortspressen:ortspressens:!:!:!:!
+COMPOUND(550141, 559017): ort + press
+872079r4<substantiv>ortstidning:ortstidning:ortstidnings:ortstidningen:ortstidningens:ortstidningar:ortstidningars:ortstidningarna:ortstidningarnas
+COMPOUND(550141, 555969): ort + tidning
+657745r3<substantiv>ortsvektor:ortsvektor:ortsvektors:ortsvektorn:ortsvektorns:ortsvektorer:ortsvektorers:ortsvektorerna:ortsvektorernas
+557128r3<adjektiv>orubbad:orubbad:orubbat:orubbade:orubbade::::
+557131r4<adjektiv>orubblig:orubblig:orubbligt:orubbliga:orubbliga:orubbligare:orubbligast:orubbligaste:orubblige
+557133r3<adjektiv>orubricerad:orubricerad:orubricerat:orubricerade:orubricerade:!:!:!:
+765942r3<adjektiv>orullad:orullad:orullat:orullade:orullade:!:!:!:
+800061r3<adjektiv>orund:orund:orunt:orunda:orunda::::
+CUSTOM: n n y
+794044r3<adjektiv>orundad:orundad:orundat:orundade:orundade:!:!:!:
+728213r3<egennamn>Orust:Orust:Orusts
+CUSTOM: y n Orust
+740770r3<substantiv>orutin:orutin:orutins:orutinen:orutinens::::
+642070r3<adjektiv>orutinerad:orutinerad:orutinerat:orutinerade:orutinerade:!:!:!:
+926969r22<substantiv>orv:orv:orvs:orvet:orvets:orv:orvs:orven:orvens
+DEFINITION 1: lieskaft
+CUSTOM: n n y
+554727r3<egennamn>Orvar:Orvar:Orvars
+624260r3<adjektiv>orwellsk:orwellsk:orwellskt:orwellska:orwellska::::
+CUSTOM: y n n
+557136r5<adjektiv>orygglig:orygglig:oryggligt:oryggliga:oryggliga:oryggligare:oryggligast:oryggligaste:orygglige
+648500r3<substantiv>orygglighet:orygglighet:orygglighets:oryggligheten:orygglighetens::::
+CUSTOM: y y orygglighets
+582657r3<adjektiv>orytmisk:orytmisk:orytmiskt:orytmiska:orytmiska::::
+557137r3<substantiv>oråd:oråd:oråds:orådet:orådets:!:!:!:!
+CUSTOM: y n
+557141r3<adjektiv>orädd:orädd:!:orädda:orädda::::orädde
+CUSTOM: y n
+724945r3<substantiv>oräddhet:oräddhet:oräddhets:oräddheten:oräddhetens::::
+794047r3<adjektiv>oräfflad:oräfflad:oräfflat:oräfflade:oräfflade:!:!:!:
+557143r3<adjektiv>oräknad:oräknad:oräknat:oräknade:oräknade::::
+557146r4<adjektiv>oräknelig:oräknelig:oräkneligt:oräkneliga:oräkneliga:oräkneligare:oräkneligast:oräkneligaste:
+570848r3<adjektiv>oräntabel:oräntabel:oräntabelt:oräntabla:oräntabla::::
+557149r4<substantiv>orätt:orätt:orätts:orätten:orättens:orätter:orätters:orätterna:orätternas
+557147r3<adjektiv>orätt:orätt:orätt:orätta:orätta::::
+CUSTOM: y n
+557154r5<adjektiv>orättfärdig:orättfärdig:orättfärdigt:orättfärdiga:orättfärdiga:orättfärdigare:orättfärdigast:orättfärdigaste:orättfärdige
+557153r4<substantiv>orättfärdighet:orättfärdighet:orättfärdighets:orättfärdigheten:orättfärdighetens:orättfärdigheter:orättfärdigheters:orättfärdigheterna:orättfärdigheternas
+CUSTOM: y y orättfärdighets
+557155r4<adjektiv>orättmätig:orättmätig:orättmätigt:orättmätiga:orättmätiga:orättmätigare:orättmätigast:orättmätigaste:
+648503r3<substantiv>orättmätighet:orättmätighet:orättmätighets:orättmätigheten:orättmätighetens::::
+CUSTOM: y y orättmätighets
+575093r3<adjektiv>orättrådig:orättrådig:orättrådigt:orättrådiga:orättrådiga::::
+648507r3<substantiv>orättrådighet:orättrådighet:orättrådighets:orättrådigheten:orättrådighetens::::
+CUSTOM: y y orättrådighets
+557158r4<adjektiv>orättvis:orättvis:orättvist:orättvisa:orättvisa:orättvisare:orättvisast:orättvisaste:orättvise
+557160r3<substantiv>orättvisa:orättvisa:orättvisas:orättvisan:orättvisans:orättvisor:orättvisors:orättvisorna:orättvisornas
+CUSTOM: y y orättvise
+765945r3<adjektiv>oröjd:oröjd:oröjt:oröjda:oröjda::::
+CUSTOM: y n
+557162r3<adjektiv>orörd:orörd:orört:orörda:orörda::::
+CUSTOM: y n
+958594r3<substantiv>orördhet:orördhet:orördhets:orördheten:orördhetens::::
+557163r5<adjektiv>orörlig:orörlig:orörligt:orörliga:orörliga:!:!:!:orörlige
+648509r3<substantiv>orörlighet:orörlighet:orörlighets:orörligheten:orörlighetens::::
+CUSTOM: y y orörlighets
+557164r6<substantiv>os:os:os:oset:osets:!:!:!:!
+557167r4<verb>osa:osa:osade:osat:osar:osa:!:!:!:!::::osande:
+557171r3<adjektiv>osagd:osagd:osagt:osagda:osagda::::
+CUSTOM: y n
+575094r3<adjektiv>osakkunnig:osakkunnig:osakkunnigt:osakkunniga:osakkunniga::::
+557172r3<adjektiv>osaklig:osaklig:osakligt:osakliga:osakliga::::osaklige
+557176r4<substantiv>osaklighet:osaklighet:osaklighets:osakligheten:osaklighetens:osakligheter:osakligheters:osakligheterna:osakligheternas
+CUSTOM: y y osaklighets
+557180r4<adjektiv>osalig:osalig:osaligt:osaliga:osaliga:osaligare:osaligast:osaligaste:osalige
+641774r3<substantiv>osalighet:osalighet:osalighets:osaligheten:osalighetens::::
+CUSTOM: y y osalighets
+641778r3<adjektiv>osaltad:osaltad:osaltat:osaltade:osaltade:!:!:!:
+CUSTOM: y n
+575097r3<adjektiv>osamhörig:osamhörig:osamhörigt:osamhöriga:osamhöriga::::
+794050r3<adjektiv>osamlad:osamlad:osamlat:osamlade:osamlade:!:!:!:
+557182r3<adjektiv>osammanhängande:osammanhängande:osammanhängande:osammanhängande:osammanhängande::::
+788834r3<adjektiv>osammansatt:osammansatt:osammansatt:osammansatta:osammansatta::::
+569747r3<adjektiv>osammantryckbar:osammantryckbar:osammantryckbart:osammantryckbara:osammantryckbara::::
+557183r3<adjektiv>osams:osams:osams:osams:osams::::
+575100r3<adjektiv>osamstämmig:osamstämmig:osamstämmigt:osamstämmiga:osamstämmiga::::
+648511r3<substantiv>osamstämmighet:osamstämmighet:osamstämmighets:osamstämmigheten:osamstämmighetens::::
+CUSTOM: y y osamstämmighets
+557184r4<adjektiv>osann:osann:osant:osanna:osanna:osannare:osannast:osannaste:
+557185r3<adjektiv>osannfärdig:osannfärdig:osannfärdigt:osannfärdiga:osannfärdiga::::
+557188r3<substantiv>osanning:osanning:osannings:osanningen:osanningens:osanningar:osanningars:osanningarna:osanningarnas
+CUSTOM: y y osannings
+567191r3<adjektiv>osanningsenlig:osanningsenlig:osanningsenligt:osanningsenliga:osanningsenliga::::
+557196r5<adjektiv>osannolik:osannolik:osannolikt:osannolika:osannolika:osannolikare:osannolikast:osannolikaste:osannolike::::::::
+641779r3<substantiv>osannolikhet:osannolikhet:osannolikhets:osannolikheten:osannolikhetens::::
+CUSTOM: y y osannolikhets
+648516r3<egennamn>Osby:Osby:Osbys
+CUSTOM: y n Osby
+554729r4<egennamn>Oscar:Oscar:Oscars
+CUSTOM: y n Oscars
+874768r4<substantiv>Oscarsgala:Oscarsgala:Oscarsgalas:Oscarsgalan:Oscarsgalans:Oscarsgalor:Oscarsgalors:Oscarsgalorna:Oscarsgalornas
+COMPOUND(554729, 557564): Oscar + gala
+888503r3<adjektiv>oschysst:oschysst:oschysst:oschyssta:oschyssta::::oschysste::::::::
+888508r3<adjektiv>oschyst:oschyst:oschyst:oschysta:oschysta::::oschyste::::::::
+557197r3<substantiv>oscillation:oscillation:oscillations:oscillationen:oscillationens:oscillationer:oscillationers:oscillationerna:oscillationernas
+CUSTOM: y y oscillations
+641783r3<substantiv>oscillator:oscillator:oscillators:oscillatorn:oscillatorns:oscillatorer:oscillatorers:oscillatorerna:oscillatorernas
+557205r4<verb>oscillera:oscillera:oscillerade:oscillerat:oscillerar:oscillera::::::::oscillerande:
+641788r3<substantiv>oscillograf:oscillograf:oscillografs:oscillografen:oscillografens:oscillografer:oscillografers:oscillograferna:oscillografernas
+582660r3<adjektiv>oscillografisk:oscillografisk:oscillografiskt:oscillografiska:oscillografiska::::
+641796r3<substantiv>oscillogram:oscillogram:oscillogras:oscillogrammet:oscillogrammets:oscillogram:oscillograms:oscillogrammen:oscillogrammens
+557209r3<substantiv>oscilloskop:oscilloskop:oscilloskops:oscilloskopet:oscilloskopets:oscilloskop:oscilloskops:oscilloskopen:oscilloskopens
+557215r3<substantiv>osed:osed:oseds:oseden:osedens:oseder:oseders:osederna:osedernas
+CUSTOM: n n y
+648517r3<adjektiv>osedd:osedd:osett:osedda:osedda::::
+557223r4<adjektiv>osedlig:osedlig:osedligt:osedliga:osedliga:osedligare:osedligast:osedligaste:
+648518r3<substantiv>osedlighet:osedlighet:osedlighets:osedligheten:osedlighetens::::
+CUSTOM: y y osedlighets
+557226r4<adjektiv>osedvanlig:osedvanlig:osedvanligt:osedvanliga:osedvanliga:osedvanligare:osedvanligast:osedvanligaste:
+557227r3<adjektiv>oseedad:oseedad:oseedat:oseedade:oseedade::::
+906752r3<adjektiv>oseende:oseende:oseende:oseende:oseende:!:!:!:::::::::
+569750r3<adjektiv>osegelbar:osegelbar:osegelbart:osegelbara:osegelbara::::
+798564r3<adjektiv>oselektiv:oselektiv:oselektivt:oselektiva:oselektiva::::
+641803r3<adjektiv>osentimental:osentimental:osentimentalt:osentimentala:osentimentala::::
+641806r3<adjektiv>oseriös:oseriös:oseriöst:oseriösa:oseriösa::::
+917756r3<adjektiv>osexig:osexig:osexigt:osexiga:osexiga::::::::::::
+564029r3<adjektiv>osfri:osfri:osfritt:osfria:osfria::::
+CUSTOM: y n
+794053r3<adjektiv>oshuntad:oshuntad:oshuntat:oshuntade:oshuntade:!:!:!:
+905944r4<adjektiv>osig:osig:osigt:osiga:osiga:osigare:osigast:osigaste:::::::::
+CUSTOM: n n y
+648522r3<adjektiv>osignerad:osignerad:osignerat:osignerade:osignerade:!:!:!:
+765948r3<adjektiv>osiktad:osiktad:osiktat:osiktade:osiktade:!:!:!:
+569753r3<adjektiv>osiktbar:osiktbar:osiktbart:osiktbara:osiktbara::::
+575103r3<adjektiv>osiktig:osiktig:osiktigt:osiktiga:osiktiga::::
+765951r3<adjektiv>osilad:osilad:osilat:osilade:osilade:!:!:!:
+567194r3<adjektiv>osinnlig:osinnlig:osinnligt:osinnliga:osinnliga::::
+794056r3<adjektiv>osintrad:osintrad:osintrat:osintrade:osintrade:!:!:!:
+641807r3<substantiv>osis:osis:osis:osisen:osisens::::
+CUSTOM: y n
+888518r3<adjektiv>osjysst:osjysst:osjysst:osjyssta:osjyssta::::osjysste::::::::
+888513r3<adjektiv>osjyst:osjyst:osjyst:osjysta:osjysta::::osjyste::::::::
+582663r3<adjektiv>osjälvisk:osjälvisk:osjälviskt:osjälviska:osjälviska::::
+694227r3<substantiv>osjälviskhet:osjälviskhet:osjälviskhets:osjälviskheten:osjälviskhetens::::
+CUSTOM: y y osjälviskhets
+575106r3<adjektiv>osjälvständig:osjälvständig:osjälvständigt:osjälvständiga:osjälvständiga::::
+788894r3<substantiv>osjälvständighet:osjälvständighet:osjälvständighets:osjälvständigheten:osjälvständighetens::::
+648525r3<adjektiv>oskadad:oskadad:oskadat:oskadade:oskadade:!:!:!:
+624249r5<adjektiv>oskadd:oskadd:oskatt:oskadda:oskadda:!:!:!:oskadde
+567197r4<adjektiv>oskadlig:oskadlig:oskadligt:oskadliga:oskadliga::::
+CUSTOM: y y oskadlig
+641810r5<verb>oskadliggöra:oskadliggöra:oskadliggjorde:oskadliggjort:oskadliggör:oskadliggör:oskadliggöras:oskadliggjordes:oskadliggjorts:oskadliggörs, oskadliggöres:oskadliggjord:oskadliggjort:oskadliggjorda::
+COMPOUND(567197, 555241): oskadlig + göra
+819233r3<substantiv>oskadlighet:oskadlighet:oskadlighets:oskadligheten:oskadlighetens::::
+794059r3<adjektiv>oskaftad:oskaftad:oskaftat:oskaftade:oskaftade:!:!:!:
+641819r3<adjektiv>oskalad:oskalad:oskalat:oskalade:oskalade:!:!:!:
+658355r3<adjektiv>oskalbar:oskalbar:oskalbart:oskalbara:oskalbara:!:!:!:
+CUSTOM: y n n
+794062r3<adjektiv>oskapad:oskapad:oskapat:oskapade:oskapade:!:!:!:
+567200r3<adjektiv>oskaplig:oskaplig:oskapligt:oskapliga:oskapliga::::
+554731r3<egennamn>Oskar:Oskar:Oskars
+582666r3<adjektiv>oskarisk:oskarisk:oskariskt:oskariska:oskariska::::
+CUSTOM: n n
+738048r3<adjektiv>oskarp:oskarp:oskarpt:oskarpa:oskarpa:oskarpare:oskarpast:oskarpaste:
+554352r3<egennamn>Oskarshamn:Oskarshamn:Oskarshamns
+CUSTOM: y n Oskarshamns
+892518r3<substantiv>oskarshamnsbo:oskarshamnsbo:oskarshamnsbos:oskarshamnsbon:oskarshamnsbons:oskarshamnsbor:oskarshamnsbors:oskarshamnsborna:oskarshamnsbornas
+973195r3<egennamn>Oskarsson:Oskarsson:Oskarssons
+941595r3<adjektiv>oskattad:oskattad:oskattat:oskattade:oskattade:!:!:!:::::::::
+569756r3<adjektiv>oskattbar:oskattbar:oskattbart:oskattbara:oskattbara::::
+756159r3<substantiv>oskattbarhet:oskattbarhet:oskattbarhets:oskattbarheten:oskattbarhetens::::
+641820r3<substantiv>oskick:oskick:oskicks:oskicket:oskickets:oskick:oskicks:oskicken:oskickens
+567203r3<adjektiv>oskicklig:oskicklig:oskickligt:oskickliga:oskickliga::::
+641826r3<substantiv>oskicklighet:oskicklighet:oskicklighets:oskickligheten:oskicklighetens::::
+CUSTOM: y y oskicklighets
+641830r3<adjektiv>oskiftad:oskiftad:oskiftat:oskiftade:oskiftade:!:!:!:
+794065r3<adjektiv>oskiktad:oskiktad:oskiktat:oskiktade:oskiktade:!:!:!:
+575107r3<adjektiv>oskiljaktig:oskiljaktig:oskiljaktigt:oskiljaktiga:oskiljaktiga::::
+569757r3<adjektiv>oskiljbar:oskiljbar:oskiljbart:oskiljbara:oskiljbara::::
+641831r3<adjektiv>oskodd:oskodd:oskott:oskodda:oskodda::::
+737459r4<adjektiv>oskolad:oskolad:oskolat:oskolade:oskolade:!:!:!:
+COMPOUND(624278, 591610): o + skolad
+641832r3<adjektiv>oskriven:oskriven:oskrivet:oskrivna:oskrivna::::
+794068r3<adjektiv>oskrymtad:oskrymtad:oskrymtat:oskrymtade:oskrymtade:!:!:!:
+801562r3<adjektiv>oskrädd:oskrädd:oskrätt:oskrädda:oskrädda::::
+CUSTOM: n n
+550147r3<substantiv>oskuld:oskuld:oskulds:oskulden:oskuldens:oskulder:oskulders:oskulderna:oskuldernas
+585056r3<adjektiv>oskuldsfull:oskuldsfull:oskuldsfullt:oskuldsfulla:oskuldsfulla::::
+641833r3<substantiv>oskuldsfullhet:oskuldsfullhet:oskuldsfullhets:oskuldsfullheten:oskuldsfullhetens::::
+CUSTOM: y y oskuldsfullhets
+590432r3<verb>oskulera:oskulera:oskulerade:oskulerat:oskulerar:oskulera:::::::::
+CUSTOM: n n
+765954r3<adjektiv>oskummad:oskummad:oskummat:oskummade:oskummade:!:!:!:
+641837r3<adjektiv>oskyddad:oskyddad:oskyddat:oskyddade:oskyddade:!:!:!:
+648526r3<adjektiv>oskygg:oskygg:oskyggt:oskygga:oskygga::::
+CUSTOM: y n
+800064r3<adjektiv>oskyld:oskyld:oskylt:oskylda:oskylda::::
+CUSTOM: y n
+575110r5<adjektiv>oskyldig:oskyldig:oskyldigt:oskyldiga:oskyldiga:oskyldigare:oskyldigast:oskyldigaste:oskyldige::::::::
+984349r3<substantiv>oskyldighet:oskyldighet:oskyldighets:oskyldigheten:oskyldighetens::::
+800067r3<adjektiv>oskymd:oskymd:oskymt:oskymda:oskymda::::
+CUSTOM: y n
+794071r3<adjektiv>oskådad:oskådad:oskådat:oskådade:oskådade:!:!:!:
+CUSTOM: y n
+567204r3<adjektiv>oskälig:oskälig:oskäligt:oskäliga:oskäliga::::
+CUSTOM: y n
+648529r3<substantiv>oskälighet:oskälighet:oskälighets:oskäligheten:oskälighetens::::
+CUSTOM: y y oskälighets
+547453r4<verb>oskära:oskära:oskärade:oskärat:oskärar:oskära:oskäras:oskärades:oskärats:oskäras:oskärad:oskärat:oskärade:oskärande:
+CUSTOM: n n y
+694231r3<adjektiv>oskärad:oskärad:oskärat:oskärade:oskärade:!:!:!:
+CUSTOM: y n
+648533r3<adjektiv>oskärmad:oskärmad:oskärmat:oskärmade:oskärmade:!:!:!:
+CUSTOM: y n
+917760r3<substantiv>oskärpa:oskärpa:oskärpas:oskärpan:oskärpans::::
+648534r3<adjektiv>oskön:oskön:oskönt:osköna:osköna::::
+CUSTOM: y n
+569760r3<adjektiv>oskönjbar:oskönjbar:oskönjbart:oskönjbara:oskönjbara::::
+563494r3<adjektiv>oskötsam:oskötsam:oskötsamt:oskötsamma:oskötsamma::::
+CUSTOM: y n
+569763r3<adjektiv>oslagbar:oslagbar:oslagbart:oslagbara:oslagbara::::
+736815r3<adjektiv>oslagen:oslagen:oslaget:oslagna:oslagna:!:!:!:oslagne
+CUSTOM: y n
+641838r3<adjektiv>oslipad:oslipad:oslipat:oslipade:oslipade:!:!:!:
+CUSTOM: y n
+569766r3<adjektiv>oslitbar:oslitbar:oslitbart:oslitbara:oslitbara::::
+567205r3<adjektiv>oslitlig:oslitlig:oslitligt:oslitliga:oslitliga::::
+CUSTOM: y n
+554904r3<egennamn>Oslo:Oslo:Oslos
+CUSTOM: y n Oslo
+569769r3<adjektiv>osläckbar:osläckbar:osläckbart:osläckbara:osläckbara::::
+567208r3<adjektiv>osläcklig:osläcklig:osläckligt:osläckliga:osläckliga::::
+648535r3<adjektiv>osläckt:osläckt:osläckt:osläckta:osläckta::::
+567209r4<adjektiv>osmaklig:osmaklig:osmakligt:osmakliga:osmakliga:osmakligare:osmakligast:osmakligaste:osmaklige
+CUSTOM: y n
+724186r3<substantiv>osmaklighet:osmaklighet:osmaklighets:osmakligheten:osmaklighetens:osmakligheter:osmakligheters:osmakligheterna:osmakligheternas
+648537r3<substantiv>osman:osman:osmans:osmanen:osmanens:osmaner:osmaners:osmanerna:osmanernas
+CUSTOM: y n
+624264r3<adjektiv>osmansk:osmansk:osmanskt:osmanska:osmanska::::osmanske
+CUSTOM: y n
+763005r4<adjektiv>osmart:osmart:osmart:osmarta:osmarta:osmartare:osmartast:osmartaste:osmarte
+CUSTOM: y y
+569772r3<adjektiv>osmidbar:osmidbar:osmidbart:osmidbara:osmidbara::::
+575111r3<adjektiv>osmidig:osmidig:osmidigt:osmidiga:osmidiga::::
+950285r3<substantiv>osmidighet:osmidighet:osmidighets:osmidigheten:osmidighetens::::
+648545r3<adjektiv>osminkad:osminkad:osminkat:osminkade:osminkade:!:!:!:
+723515r3<substantiv>osmium:osmium:osmiums:osmiumet:osmiumets::::
+CUSTOM: y n
+738273r3<adjektiv>osmord:osmord:osmort:osmorda:osmorda::::
+CUSTOM: y n
+641841r3<substantiv>osmos:osmos:osmos:osmosen:osmosens::::
+CUSTOM: y n
+582669r3<adjektiv>osmot

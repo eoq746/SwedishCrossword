@@ -1,0 +1,517 @@
+t:födelsevikt:födelsevikts:födelsevikten:födelseviktens:födelsevikter:födelsevikters:födelsevikterna:födelsevikternas
+690477r4<substantiv>födelseår:födelseår:födelseårs:födelseåret:födelseårets:födelseår:födelseårs:födelseåren:födelseårens
+COMPOUND(617764, 553140): födelse + år
+690482r3<substantiv>föderska:föderska:föderskas:föderskan:föderskans:föderskor:föderskors:föderskorna:föderskornas
+839013r3<substantiv>födgeni:födgeni:födgenis:födgeniet:födgeniets:födgenier:födgeniers:födgenierna:födgeniernas
+617801r3<substantiv>födkrok:födkrok:födkroks:födkroken:födkrokens:födkrokar:födkrokars:födkrokarna:födkrokarnas
+961297r4<substantiv>födobrist:födobrist:födobrists:födobristen:födobristens::::
+COMPOUND(558894, 548456): föda + brist
+961280r4<substantiv>födointag:födointag:födointags:födointaget:födointagets:födointag:födointags:födointagen:födointagens
+COMPOUND(558894, 692511): föda + intag
+839021r3<substantiv>födoråd:födoråd:födoråds:födorådet:födorådets:födoråd:födoråds:födoråden:födorådens
+961287r4<substantiv>födotillgång:födotillgång:födotillgångs:födotillgången:födotillgångens:födotillgångar:födotillgångars:födotillgångarna:födotillgångarnas
+COMPOUND(558894, 552006): föda + tillgång
+617809r3<substantiv>födoämne:födoämne:födoämnes:födoämnet:födoämnets:födoämnen:födoämnens:födoämnena:födoämnenas
+CUSTOM: y y födoämnes
+617817r3<substantiv>födoämnesallergi:födoämnesallergi:födoämnesallergis:födoämnesallergin:födoämnesallergins:födoämnesallergier:födoämnesallergiers:födoämnesallergierna:födoämnesallergiernas
+617825r5<substantiv>födsel:födsel:födsels:födseln:födselns:födslar:födslars:födslarna:födslarnas
+839027r3<substantiv>födslorätt:födslorätt:födslorätts:födslorätten:födslorättens::::
+926585r14<substantiv>födslosmärta:födslosmärta:födslosmärtas:födslosmärtan:födslosmärtans:födslosmärtor:födslosmärtors:födslosmärtorna:födslosmärtornas
+690487r3<substantiv>födslovånda:födslovånda:födslovåndas:födslovåndan:födslovåndans:födslovåndor:födslovåndors:födslovåndorna:födslovåndornas
+617828r4<substantiv>föga:föga:!:!:!:!:!:!:!
+DEFINITION 1: I frasen "Falla till föga": ge med sig
+617827r3<adverb>föga:föga
+637194r3<substantiv>fögderi:fögderi:fögderis:fögderiet, fögderit:fögderiets, fögderits:fögderier:fögderiers:fögderierna:fögderiernas
+CUSTOM: y y fögderi
+558898r6<substantiv>föl:föl:föls:fölet:fölets:föl:föls:fölen:fölens
+904547r11<verb>föla:föla:fölade:fölat:fölar:föla:fölas:fölades:fölats:fölas::::fölande:!
+CUSTOM: n n y
+585773r9<verb>följa:följa:följde:följt:följer:följ:följas:följdes:följts:följs, följes:följd:följt:följda::
+617830r3<adverb>följaktligen:följaktligen
+617831r3<adjektiv>följande:följande:följande:följande:följande:!:!:!:
+615237r3<substantiv>följare:följare:följares:följaren:följarens:följare:följares:följarna:följarnas
+CUSTOM: y y följar +följar
+617832r3<deponens>följas:följas:följdes:följts:följs:följs
+549004r7<substantiv>följd:följd:följds:följden:följdens:följder:följders:följderna:följdernas
+CUSTOM: y y följd
+657414r3<substantiv>följdfråga:följdfråga:följdfrågas:följdfrågan:följdfrågans:följdfrågor:följdfrågors:följdfrågorna:följdfrågornas
+572733r3<adjektiv>följdriktig:följdriktig:följdriktigt:följdriktiga:följdriktiga::::
+725493r4<substantiv>följdriktighet:följdriktighet:följdriktighets:följdriktigheten:följdriktighetens::::
+COMPOUND(549004, 696380): följd + riktighet
+799370r3<adjektiv>följdstyrd:följdstyrd:följdstyrt:följdstyrda:följdstyrda::::
+657415r3<substantiv>följdverkning:följdverkning:följdverknings:följdverkningen:följdverkningens:följdverkningar:följdverkningars:följdverkningarna:följdverkningarnas
+CUSTOM: y y följdverknings
+625367r3<substantiv>följe:följe:följes:följet:följets:följen:följens:följena:följenas
+839031r3<substantiv>följebil:följebil:följebils:följebilen:följebilens:följebilar:följebilars:följebilarna:följebilarnas
+899696r3<substantiv>följeblankett:följeblankett:följeblanketts:följeblanketten:följeblankettens:följeblanketter:följeblanketters:följeblanketterna:följeblanketternas
+786643r3<substantiv>följebrev:följebrev:följebrevs:följebrevet:följebrevets:följebrev:följebrevs:följebreven:följebrevens
+866800r3<substantiv>följebåt:följebåt:följebåts:följebåten:följebåtens:följebåtar:följebåtars:följebåtarna:följebåtarnas
+899706r3<substantiv>följedeklaration:följedeklaration:följedeklarations:följedeklarationen:följedeklarationens:följedeklarationer:följedeklarationers:följedeklarationerna:följedeklarationernas
+657416r3<substantiv>följesedel:följesedel:följesedels:följesedeln:följesedelns:följesedlar:följesedlars:följesedlarna:följesedlarnas
+615238r3<substantiv>följeslagare:följeslagare:följeslagares:följeslagaren:följeslagarens:följeslagare:följeslagares:följeslagarna:följeslagarnas
+CUSTOM: y y följeslagar
+733393r3<substantiv>följeslagerska:följeslagerska:följeslagerskas:följeslagerskan:följeslagerskans:följeslagerskor:följeslagerskors:följeslagerskorna:följeslagerskornas
+549006r3<substantiv>följetong:följetong:följetongs:följetongen:följetongens:följetonger:följetongers:följetongerna:följetongernas
+CUSTOM: y y följetongs
+563379r4<adjektiv>följsam:följsam:följsamt:följsamma:följsamma:följsammare:följsammast:följsammaste:följsamme
+707568r3<substantiv>följsamhet:följsamhet:följsamhets:följsamheten:följsamhetens::::
+CUSTOM: y y följsamhets
+926592r5<substantiv>fölning:fölning:fölnings:fölningen:fölningens:fölningar:fölningars:fölningarna:fölningarnas
+CUSTOM: y n
+839044r3<substantiv>fölsto:fölsto:fölstos:fölstoet:fölstoets:fölston:fölstons:fölstona:fölstonas
+978747r4<substantiv>fölunge:fölunge:fölunges:fölungen:fölungens:fölungar:fölungars:fölungarna:fölungarnas
+COMPOUND(558898, 600015): föl + unge
+839054r4<substantiv>fön:fön:föns:fönen:fönens:fönar:fönars:fönarna:fönarnas
+CUSTOM: y n
+763249r4<verb>föna:föna:fönade:fönat:fönar:föna:fönas:fönades:fönats:fönas:fönad:fönat:fönade:fönande:
+CUSTOM: y n
+555049r28<substantiv>fönster:fönster:fönsters:fönstret:fönstrets:fönster:fönsters:fönstren, fönsterna:fönstrens, fönsternas
+CUSTOM: y y fönster +fönster
+657418r3<substantiv>fönsterbräda:fönsterbräda:fönsterbrädas:fönsterbrädan:fönsterbrädans:fönsterbrädor:fönsterbrädors:fönsterbrädorna:fönsterbrädornas
+657420r3<substantiv>fönsterglugg:fönsterglugg:fönstergluggs:fönstergluggen:fönstergluggens:fönstergluggar:fönstergluggars:fönstergluggarna:fönstergluggarnas
+944508r4<substantiv>fönsterhasp:fönsterhasp:fönsterhasps:fönsterhaspen:fönsterhaspens:fönsterhaspar:fönsterhaspars:fönsterhasparna:fönsterhasparnas
+COMPOUND(555049, 551373): fönster + hasp
+768509r4<substantiv>fönsterkarm:fönsterkarm:fönsterkarms:fönsterkarmen:fönsterkarmens:fönsterkarmar:fönsterkarmars:fönsterkarmarna:fönsterkarmarnas
+COMPOUND(555049, 551500): fönster + karm
+827893r4<substantiv>fönsterkitt:fönsterkitt:fönsterkitts:fönsterkittet:fönsterkittets::::
+COMPOUND(555049, 628235): fönster + kitt
+839077r3<substantiv>fönsterluft:fönsterluft:fönsterlufts:fönsterluften:fönsterluftens:fönsterlufter:fönsterlufters:fönsterlufterna:fönsterlufternas
+564836r3<adjektiv>fönsterlös:fönsterlös:fönsterlöst:fönsterlösa:fönsterlösa::::
+763878r3<substantiv>fönsterputsare:fönsterputsare:fönsterputsares:fönsterputsaren:fönsterputsarens:fönsterputsare:fönsterputsares:fönsterputsarna:fönsterputsarnas
+657422r3<substantiv>fönsterputsning:fönsterputsning:fönsterputsnings:fönsterputsningen:fönsterputsningens::::
+CUSTOM: y y fönsterputsnings
+657423r3<substantiv>fönsterruta:fönsterruta:fönsterrutas:fönsterrutan:fönsterrutans:fönsterrutor:fönsterrutors:fönsterrutorna:fönsterrutornas
+690489r4<substantiv>fönstersmyg:fönstersmyg:fönstersmygs:fönstersmygen:fönstersmygens:fönstersmygar:fönstersmygars:fönstersmygarna:fönstersmygarnas
+COMPOUND(555049, 597647): fönster + smyg
+657425r3<substantiv>fönsterspringa:fönsterspringa:fönsterspringas:fönsterspringan:fönsterspringans:fönsterspringor:fönsterspringors:fönsterspringorna:fönsterspringornas
+978743r3<substantiv>fönstertittarsjuka:fönstertittarsjuka:fönstertittarsjukas:fönstertittarsjukan:fönstertittarsjukans::::
+609515r3<substantiv>fönstertvättare:fönstertvättare:fönstertvättares:fönstertvättaren:fönstertvättarens:fönstertvättare:fönstertvättares:fönstertvättarna:fönstertvättarnas
+CUSTOM: y y fönstertvättar
+558904r6<preposition>för:för
+CUSTOM: y n
+558901r4<substantiv>för:för:förs:fören:förens:förar:förars:förarna:förarnas
+CUSTOM: y n
+558906r47<adverb>för:för
+CUSTOM: y n
+558905r5<konjunktion>för:för
+CUSTOM: y n
+558899r32<verb>föra:föra:förde:fört:för:för:föras:fördes:förts:förs, föres:förd:fört:förda:förande:
+617833r5<substantiv>förakt:förakt:förakts:föraktet:föraktets::::
+546620r4<verb>förakta:förakta:föraktade:föraktat:föraktar:förakta:föraktas:föraktades:föraktats:föraktas:föraktad:föraktat:föraktade::
+690498r3<adjektiv>föraktande:föraktande:föraktande:föraktande:föraktande:!:!:!:
+615239r3<substantiv>föraktare:föraktare:föraktares:föraktaren:föraktarens:föraktare:föraktares:föraktarna:föraktarnas
+CUSTOM: y y föraktar
+584963r5<adjektiv>föraktfull:föraktfull:föraktfullt:föraktfulla:föraktfulla:föraktfullare:föraktfullast:föraktfullaste:föraktfulle
+617834r3<substantiv>föraktfullhet:föraktfullhet:föraktfullhets:föraktfullheten:föraktfullhetens::::
+CUSTOM: y y föraktfullhets
+565978r4<adjektiv>föraktlig:föraktlig:föraktligt:föraktliga:föraktliga:föraktligare:föraktligast:föraktligaste:föraktlige
+946046r3<adverb>föralldel:föralldel
+839085r3<verb>förallmänliga:förallmänliga:förallmänligade:förallmänligat:förallmänligar:förallmänliga:förallmänligas:förallmänligades:förallmänligats:förallmänligas:förallmänligad:förallmänligat:förallmänligade:förallmänligande:
+690501r3<substantiv>förande:förande:förandes:förandet:förandets::::
+690503r3<verb>förandliga:förandliga:förandligade:förandligat:förandligar:förandliga:förandligas:förandligades:förandligats:förandligas:förandligad:förandligat:förandligade:förandligande:
+791111r3<adjektiv>förandligad:förandligad:förandligat:förandligade:förandligade:!:!:!:
+617838r3<substantiv>föraning:föraning:föranings:föraningen:föraningens:föraningar:föraningars:föraningarna:föraningarnas
+CUSTOM: y y föranings
+546621r4<verb>förankra:förankra:förankrade:förankrat:förankrar:förankra:förankras:förankrades:förankrats:förankras:förankrad:förankrat:förankrade::
+690510r3<substantiv>förankrande:förankrande:förankrandes:förankrandet:förankrandets::::
+617846r3<substantiv>förankring:förankring:förankrings:förankringen:förankringens:förankringar:förankringars:förankringarna:förankringarnas
+CUSTOM: y y förankrings
+617851r6<verb>föranleda:föranleda:föranledde:föranlett:föranleder:föranled:föranledas:föranleddes:föranletts:föranleds, föranledes:föranledd:föranlett:föranledda:föranledande:
+839096r3<verb>föranlåta:föranlåta:föranlät:föranlåtit:föranlåter:föranlåt:föranlåtas:föranläts:föranlåtits:föranlåts, föranlåtes:föranlåten:föranlåtet:föranlåtna:föranlåtande:
+742286r3<adjektiv>föranlåten:föranlåten:föranlåtet:föranlåtna:föranlåtna::::
+657428r6<verb>föranmäla:föranmäla:föranmälde:föranmält:föranmäler:föranmäl:föranmälas:föranmäldes:föranmälts:föranmäls, föranmäles:föranmäld:föranmält:föranmälda:föranmälande:
+COMPOUND(620546, 591842): före + anmäla
+804199r3<substantiv>föranmälan:föranmälan:föranmälans:föranmälan:föranmälans::::
+804201r3<substantiv>föranmälning:föranmälning:föranmälnings:föranmälningen:föranmälningens:föranmälningar:föranmälningars:föranmälningarna:föranmälningarnas
+546622r5<verb>föranstalta:föranstalta:föranstaltade:föranstaltat:föranstaltar:föranstalta:föranstaltas:föranstaltades:föranstaltats:föranstaltas:föranstaltad:föranstaltat:föranstaltade:föranstaltande:
+839108r3<substantiv>föranstaltan:föranstaltan:föranstaltans:föranstaltan:föranstaltans::::
+839110r3<substantiv>föranstaltning:föranstaltning:föranstaltnings:föranstaltningen:föranstaltningens:föranstaltningar:föranstaltningars:föranstaltningarna:föranstaltningarnas
+711227r3<substantiv>förarbete:förarbete:förarbetes:förarbetet:förarbetets:förarbeten:förarbetens:förarbetena:förarbetenas
+558907r17<substantiv>förare:förare:förares:föraren:förarens:förare:förares:förarna:förarnas
+CUSTOM: y y förar +förar
+546623r4<verb>förarga:förarga:förargade:förargat:förargar:förarga::::::::förargande:
+617852r3<adjektiv>förargad:förargad:förargat:förargade:förargade:!:!:!:
+617854r3<deponens>förargas:förargas:förargades:förargats:förargas:förargas
+617855r4<substantiv>förargelse:förargelse:förargelses:förargelsen:förargelsens:förargelser:förargelsers:förargelserna:förargelsernas
+CUSTOM: y y förargelse
+617856r3<adjektiv>förargelseväckande:förargelseväckande:förargelseväckande:förargelseväckande:förargelseväckande:!:!:!:
+565979r4<adjektiv>förarglig:förarglig:förargligt:förargliga:förargliga:förargligare:förargligast:förargligaste:förarglige
+690514r4<substantiv>förarhytt:förarhytt:förarhytts:förarhytten:förarhyttens:förarhytter:förarhytters:förarhytterna:förarhytternas
+COMPOUND(558907, 549260): förare + hytt
+564839r3<adjektiv>förarlös:förarlös:förarlöst:förarlösa:förarlösa::::
+657430r3<substantiv>förarplats:förarplats:förarplats:förarplatsen:förarplatsens:förarplatser:förarplatsers:förarplatserna:förarplatsernas
+639143r5<substantiv>förarstöd:förarstöd:förarstöds:förarstödet:förarstödets:förarstöd:förarstöds:förarstöden:förarstödens
+DEFINITION 1: Person som skall vara ett stöd för chauffören på en buss där det brukar vara busigt; jämför kamratstödjare
+COMPOUND(558907, 552997): förare + stöd
+639158r5<substantiv>förarstödjare:förarstödjare:förarstödjares:förarstödjaren:förarstödjarens:förarstödjare:förarstödjares:förarstödjarna:förarstödjarnas
+DEFINITION 1: Person som skall vara ett stöd för chauffören på en buss där det brukar vara busigt; jämför kamratstödjare
+COMPOUND(558907, 639151): förare + stödjare
+CUSTOM: y y förarstödjar
+617857r3<substantiv>förarsäte:förarsäte:förarsätes:förarsätet:förarsätets:förarsäten:förarsätens:förarsätena:förarsätenas
+804209r3<verb>förbaka:förbaka:förbakade:förbakat:förbakar:förbaka:förbakas:förbakades:förbakats:förbakas:förbakad:förbakat:förbakade:förbakande:
+804218r3<substantiv>förbakning:förbakning:förbaknings:förbakningen:förbakningens::::
+558908r10<substantiv>förband:förband:förbands:förbandet:förbandets:förband:förbands:förbanden:förbandens
+CUSTOM: y y förbands +förbands
+914313r4<substantiv>förbandsort:förbandsort:förbandsorts:förbandsorten:förbandsortens:förbandsorter:förbandsorters:förbandsorterna:förbandsorternas
+COMPOUND(558908, 550141): förband + ort
+546624r5<verb>förbanna:förbanna:förbannade:förbannat:förbannar:förbanna:förbannas:förbannades:förbannats:förbannas:förbannad:förbannat:förbannade:förbannande:
+617865r3<adjektiv>förbannad:förbannad:förbannat:förbannade:förbannade:!:!:!:
+617866r3<substantiv>förbannelse:förbannelse:förbannelses:förbannelsen:förbannelsens:förbannelser:förbannelsers:förbannelserna:förbannelsernas
+CUSTOM: y y förbannelse
+546625r5<verb>förbarma:förbarma:förbarmade:förbarmat:förbarmar:förbarma:förbarmas:förbarmades:förbarmats:förbarmas::::förbarmande:förbarme
+617867r3<substantiv>förbarmande:förbarmande:förbarmandes:förbarmandet:förbarmandets::::
+978755r3<substantiv>förbarmare:förbarmare:förbarmares:förbarmaren:förbarmarens:förbarmare:förbarmares:förbarmarna:förbarmarnas
+690520r3<adjektiv>förbaskad:förbaskad:förbaskat:förbaskade:förbaskade:!:!:!:
+804222r3<verb>förbehandla:förbehandla:förbehandlade:förbehandlat:förbehandlar:förbehandla:förbehandlas:förbehandlades:förbehandlats:förbehandlas:förbehandlad:förbehandlat:förbehandlade:förbehandlande:
+804231r4<substantiv>förbehandling:förbehandling:förbehandlings:förbehandlingen:förbehandlingens:förbehandlingar:förbehandlingars:förbehandlingarna:förbehandlingarnas
+CUSTOM: y y förbehandlings
+804239r3<substantiv>förbehandlingstid::::::::
+COMPOUND(804231, 550665): förbehandling + tid
+552398r5<substantiv>förbehåll:förbehåll:förbehålls:förbehållet:förbehållets:förbehåll:förbehålls:förbehållen:förbehållens
+CUSTOM: y y förbehålls
+617869r5<verb>förbehålla:förbehålla:förbehöll:förbehållit:förbehåller:förbehåll:förbehållas:förbehölls, förbehålles:förbehållits:förbehålls:förbehållen:förbehållet:förbehållna:förbehållande:
+563380r4<adjektiv>förbehållsam:förbehållsam:förbehållsamt:förbehållsamma:förbehållsamma::::förbehållsamme
+839119r3<substantiv>förbehållsamhet:förbehållsamhet:förbehållsamhets:förbehållsamheten:förbehållsamhetens::::
+564842r4<adjektiv>förbehållslös:förbehållslös:förbehållslöst:förbehållslösa:förbehållslösa::::förbehållslöse
+617870r3<adjektiv>förbenad:förbenad:förbenat:förbenade:förbenade:!:!:!:
+591682r3<deponens>förbenas:förbenas:förbenades:förbenats:förbenas:
+978761r3<substantiv>förbening:förbening:förbenings:förbeningen:förbeningens:förbeningar:förbeningars:förbeningarna:förbeningarnas
+555814r6<verb>förbereda:förbereda:förberedde:förberett:förbereder:förbered:förberedas:förbereddes:förberetts:förbereds, förberedes:förberedd:förberett:förberedda::
+690521r3<substantiv>förberedande:förberedande:förberedandes:förberedandet:förberedandets::::
+617873r3<adjektiv>förberedande:förberedande:förberedande:förberedande:förberedande:!:!:!:
+611871r4<substantiv>förberedelse:förberedelse:förberedelses:förberedelsen:förberedelsens:förberedelser:förberedelsers:förberedelserna:förberedelsernas
+CUSTOM: y y förberedelse +förberedelse
+617874r3<substantiv>förberedning:förberedning:förberednings:förberedningen:förberedningens:förberedningar:förberedningars:förberedningarna:förberedningarnas
+CUSTOM: y y förberednings
+804241r5<verb>förbeställa:förbeställa:förbeställde:förbeställt:förbeställer:förbeställ:förbeställas:förbeställdes:förbeställts:förbeställs, förbeställes:förbeställd:förbeställt:förbeställda::
+804253r3<substantiv>förbeställning:förbeställning:förbeställnings:förbeställningen:förbeställningens:förbeställningar:förbeställningars:förbeställningarna:förbeställningarnas
+617883r4<preposition>förbi:förbi
+617882r3<adverb>förbi:förbi
+806104r4<verb>förbida:förbida:förbidade:förbidat:förbidar:förbida:förbidas:förbidades:förbidats:förbidas::::förbidande:
+839129r3<substantiv>förbidan:förbidan:förbidans:förbidan:förbidans::::
+800954r3<adjektiv>förbifarande:förbifarande:förbifarande:förbifarande:förbifarande:!:!:!:
+601997r4<substantiv>förbifart:förbifart:förbifarts:förbifarten:förbifartens:förbifarter:förbifarters:förbifarterna:förbifarternas
+CUSTOM: y y förbifarts
+839131r4<substantiv>förbifartsled:förbifartsled:förbifartsleds:förbifartsleden:förbifartsledens:förbifartsleder:förbifartsleders:förbifartslederna:förbifartsledernas
+COMPOUND(601997, 556257): förbifart + led
+617884r3<verb>förbigå:förbigå:förbigick:förbigått:förbigår:förbigå:förbigås:förbigicks:förbigåtts:förbigås:förbigången:förbigånget:förbigångna::
+617889r4<substantiv>förbigående:förbigående:förbigåendes:förbigåendet:förbigåendets:!:!:!:!
+617890r3<adjektiv>förbigången:förbigången:förbigånget:förbigångna:förbigångna::::förbigångne
+839139r3<verb>förbilliga:förbilliga:förbilligade:förbilligat:förbilligar:förbilliga:förbilligas:förbilligades:förbilligats:förbilligas:förbilligad:förbilligat:förbilligade:förbilligande:
+978769r4<substantiv>förbimarsch:förbimarsch:förbimarschs:förbimarschen:förbimarschens:förbimarscher:förbimarschers:förbimarscherna:förbimarschernas
+COMPOUND(617883, 549999): förbi + marsch
+617892r5<verb>förbinda:förbinda:förband:förbundit:förbinder:förbind:förbindas:förbands:förbundits:förbindes, förbinds:förbunden:förbundet:förbundna:förbindande:
+611872r13<substantiv>förbindelse:förbindelse:förbindelses:förbindelsen:förbindelsens:förbindelser:förbindelsers:förbindelserna:förbindelsernas
+CUSTOM: y y förbindelse +förbindelse
+563792r3<adjektiv>förbindelsefri:förbindelsefri:förbindelsefritt:förbindelsefria:förbindelsefria::::
+766909r4<substantiv>förbindelseled:förbindelseled:förbindelseleds:förbindelseleden:förbindelseledens:förbindelseleder:förbindelseleders:förbindelselederna:förbindelseledernas
+COMPOUND(611872, 556257): förbindelse + led
+875559r4<substantiv>förbindelselinje:förbindelselinje:förbindelselinjes:förbindelselinjen:förbindelselinjens:förbindelselinjer:förbindelselinjers:förbindelselinjerna:förbindelselinjernas
+COMPOUND(611872, 611937): förbindelse + linje
+CUSTOM: y n y
+623111r5<substantiv>förbindelselänk:förbindelselänk:förbindelselänks:förbindelselänken:förbindelselänkens:förbindelselänkar:förbindelselänkars:förbindelselänkarna:förbindelselänkarnas
+COMPOUND(611872, 551713): förbindelse + länk
+CUSTOM: y n y
+674279r4<substantiv>förbindelseofficer:förbindelseofficer:förbindelseofficers:förbindelseofficeren, förbindelseofficern:förbindelseofficerens, förbindelseofficerns:förbindelseofficerer, förbindelseofficerare:förbindelseofficerers, förbindelseofficerare:förbindelseofficererna, förbindelseofficerarna:förbindelseofficerernas, förbindelseofficerarnas
+COMPOUND(611872, 603028): förbindelse + officer
+CUSTOM: y n y
+565980r5<adjektiv>förbindlig:förbindlig:förbindligt:förbindliga:förbindliga:förbindligare:förbindligast:förbindligaste:förbindlige
+701741r3<substantiv>förbindlighet:förbindlighet:förbindlighets:förbindligheten:förbindlighetens::::
+CUSTOM: y y förbindlighets
+690523r3<substantiv>förbindning:förbindning:förbindnings:förbindningen:förbindningens:förbindningar:förbindningars:förbindningarna:förbindningarnas
+CUSTOM: y y förbindnings
+701748r3<adjektiv>förbipasserande:förbipasserande:förbipasserande:förbipasserande:förbipasserande:!:!:!:
+617894r3<verb>förbise:förbise:förbisåg:förbisett:förbiser:förbise:förbises:förbisågs:förbisetts:förbises:förbisedd:förbisett:förbisedda::
+801294r4<adjektiv>förbisedd:förbisedd:förbisett:förbisedda:förbisedda::::förbisedde
+657435r3<substantiv>förbiseende:förbiseende:förbiseendes:förbiseendet:förbiseendets:förbiseenden:förbiseendens:förbiseendena:förbiseendenas
+800955r3<adjektiv>förbiskyndande:förbiskyndande:förbiskyndande:förbiskyndande:förbiskyndande:!:!:!:
+926776r20<verb>förbistra:förbistra:förbistrade:förbistrat:förbistrar:förbistra:förbistras:förbistrades:förbistrats:förbistras:förbistrad:förbistrat:förbistrade:förbistrande:
+617895r4<substantiv>förbistring:förbistring:förbistrings:förbistringen:förbistringens:förbistringar:förbistringars:förbistringarna:förbistringarnas
+CUSTOM: y y förbistrings +förbistrings
+800956r3<adjektiv>förbiströmmande:förbiströmmande:förbiströmmande:förbiströmmande:förbiströmmande:!:!:!:
+839149r3<verb>förbittra:förbittra:förbittrade:förbittrat:förbittrar:förbittra:förbittras:förbittrades:förbittrats:förbittras:förbittrad:förbittrat:förbittrade:förbittrande:
+617899r3<adjektiv>förbittrad:förbittrad:förbittrat:förbittrade:förbittrade:!:!:!:
+617900r3<substantiv>förbittring:förbittring:förbittrings:förbittringen:förbittringens::::
+CUSTOM: y y förbittrings
+800957r3<adjektiv>förbivirvlande:förbivirvlande:förbivirvlande:förbivirvlande:förbivirvlande:!:!:!:
+593090r7<verb>förbjuda:förbjuda:förbjöd:förbjudit:förbjuder:förbjud:förbjudas:förbjöds:förbjudits:förbjuds, förbjudes:förbjuden:förbjudet:förbjudna:förbjudande:förbjude
+593091r4<adjektiv>förbjuden:förbjuden:förbjudet:förbjudna:förbjudna::::förbjudne
+806108r3<verb>förblanda:förblanda:förblandade:förblandat:förblandar:förblanda:förblandas:förblandades:förblandats:förblandas:förblandad:förblandat:förblandade:förblandande:
+804263r3<substantiv>förblandning:förblandning:förblandnings:förblandningen:förblandningens:förblandningar:förblandningars:förblandningarna:förblandningarnas
+804271r4<verb>förblekna:förblekna:förbleknade:förbleknat:förbleknar:förblekna:::::förbleknad:förbleknat:förbleknade:förbleknande:
+760005r3<verb>förblinda:förblinda:förblindade:förblindat:förblindar:förblinda:förblindas:förblindades:förblindats:förblindas:förblindad:förblindat:förblindade:förblindande:
+593093r3<adjektiv>förblindad:förblindad:förblindat:förblindade:förblindade:!:!:!:
+690524r3<substantiv>förblindelse:förblindelse:förblindelses:förblindelsen:förblindelsens::::
+CUSTOM: y y förblindelse
+593092r5<verb>förbliva, förbli:förbli, förbliva:förblev:förblivit:förblir, förbliver:förbli, förbliv::::::::förblivande:
+617901r3<adjektiv>förblommerad:förblommerad:förblommerat:förblommerade:förblommerade:!:!:!:
+546626r4<verb>förbluffa:förbluffa:förbluffade:förbluffat:förbluffar:förbluffa:förbluffas:förbluffades:förbluffats:förbluffas:förbluffad:förbluffat:förbluffade::
+617904r3<adjektiv>förbluffande:förbluffande:förbluffande:förbluffande:förbluffande:!:!:!:
+733383r3<substantiv>förbluffelse:förbluffelse:förbluffelses:förbluffelsen:förbluffelsens::::
+804278r3<adjektiv>förblåst:förblåst:förblåst:förblåsta:förblåsta::::
+804280r3<verb>förblända:förblända:förbländade:förbländat:förbländar:förblända:förbländas:förbländades:förbländats:förbländas:förbländad:förbländat:förbländade:förbländande:
+804289r3<substantiv>förbländning:förbländning:förbländnings:förbländningen:förbländningens:förbländningar:förbländningars:förbländningarna:förbländningarnas
+593094r5<verb>förblöda:förblöda:förblödde:förblött:förblöder:förblöd:::::förblödd:förblött:förblödda:förblödande:
+617905r3<substantiv>förblödning:förblödning:förblödnings:förblödningen:förblödningens:förblödningar:förblödningars:förblödningarna:förblödningarnas
+CUSTOM: y y förblödnings
+593095r4<verb>förboka:förboka:förbokade:förbokat:förbokar:förboka:förbokas:förbokades:förbokats:förbokas:förbokad:förbokat:förbokade:förbokande:
+804299r3<substantiv>förbokning:förbokning:förboknings:förbokningen:förbokningens:förbokningar:förbokningars:förbokningarna:förbokningarnas
+804308r3<adjektiv>förbommad:förbommad:förbommat:förbommade:förbommade:!:!:!:
+839157r3<verb>förborga:förborga:förborgade:förborgat:förborgar:förborga:förborgas:förborgades:förborgats:förborgas::::förborgande:
+593103r4<adjektiv>förborgad:förborgad:förborgat:förborgade:förborgade:!:!:!:
+DEFINITION 1: Dold
+839164r3<adjektiv>förborgerligad:förborgerligad:förborgerligat:förborgerligade:förborgerligade:!:!:!:
+839160r3<deponens>förborgerligas:förborgerligas:förborgerligades:förborgerligats:förborgerligas:
+878373r2<adjektiv>förborrad::::::::
+804319r4<verb>förbrinna:förbrinna:förbrann:förbrunnit:förbrinner:förbrinn:!:!:!:!:förbrunnen:förbrunnet:förbrunna:förbrinnande:
+COMPOUND(558906, 585286): för + brinna
+791112r3<adjektiv>förbroskad:förbroskad:förbroskat:förbroskade:förbroskade:!:!:!:
+591683r3<deponens>förbroskas:förbroskas:förbroskades:förbroskats:förbroskas:
+546627r5<verb>förbruka:förbruka:förbrukade:förbrukat:förbrukar:förbruka:förbrukas:förbrukades:förbrukats:förbrukas:förbrukad:förbrukat:förbrukade:förbrukande:
+804313r3<substantiv>förbrukare:förbrukare:förbrukares:förbrukaren:förbrukarens:förbrukare:förbrukares:förbrukarna:förbrukarnas
+657436r8<substantiv>förbrukning:förbrukning:förbruknings:förbrukningen:förbrukningens:förbrukningar:förbrukningars:förbrukningarna:förbrukningarnas
+CUSTOM: y y förbruknings +förbruknings
+671008r4<substantiv>förbrukningsavgift:förbrukningsavgift:förbrukningsavgifts:förbrukningsavgiften:förbrukningsavgiftens:förbrukningsavgifter:förbrukningsavgifters:förbrukningsavgifterna:förbrukningsavgifternas
+COMPOUND(657436, 548299): förbrukning + avgift
+690525r4<substantiv>förbrukningsmaterial:förbrukningsmaterial:förbrukningsmaterials:förbrukningsmaterialet:förbrukningsmaterialets:förbrukningsmaterial:förbrukningsmaterials:förbrukningsmaterialen:förbrukningsmaterialens
+COMPOUND(657436, 552695): förbrukning + material
+546628r4<verb>förbrylla:förbrylla:förbryllade:förbryllat:förbryllar:förbrylla:förbryllas:förbryllades:förbryllats:förbryllas:förbryllad:förbryllat:förbryllade::
+742289r3<adjektiv>förbryllande:förbryllande:förbryllande:förbryllande:förbryllande:!:!:!:
+978789r3<substantiv>förbryllelse:förbryllelse:förbryllelses:förbryllelsen:förbryllelsens::::
+690531r5<verb>förbryta:förbryta:förbröt:förbrutit:förbryter:förbryt:::::förbruten:förbrutet:förbrutna:förbrytande:
+COMPOUND(558906, 556860): för + bryta
+615240r4<substantiv>förbrytare:förbrytare:förbrytares:förbrytaren:förbrytarens:förbrytare:förbrytares:förbrytarna:förbrytarnas
+CUSTOM: y y förbrytar +förbrytar
+657437r3<substantiv>förbrytelse:förbrytelse:förbrytelses:förbrytelsen:förbrytelsens:förbrytelser:förbrytelsers:förbrytelserna:förbrytelsernas
+CUSTOM: y y förbrytelse
+791115r3<adjektiv>förbråkad:förbråkad:förbråkat:förbråkade:förbråkade:!:!:!:
+799373r3<adjektiv>förbränd:förbränd:förbränt:förbrända:förbrända::::
+690534r5<verb>förbränna:förbränna:förbrände:förbränt:förbränner:förbränn:förbrännas:förbrändes:förbränts:förbränns, förbrännes:förbränd:förbränt:förbrända:förbrännande:
+COMPOUND(558906, 556869): för + bränna
+569095r3<adjektiv>förbrännbar:förbrännbar:förbrännbart:förbrännbara:förbrännbara::::
+668361r8<substantiv>förbränning:förbränning:förbrännings:förbränningen:förbränningens::::
+CUSTOM: y y förbrännings +förbrännings
+668365r4<substantiv>förbränningsmotor:förbränningsmotor:förbränningsmotors:förbränningsmotorn:förbränningsmotorns:förbränningsmotorer:förbränningsmotorers:förbränningsmotorerna:förbränningsmotorernas
+COMPOUND(668361, 611060): förbränning + motor
+719409r4<substantiv>förbränningsproblem:förbränningsproblem:förbränningsproblems:förbränningsproblemet:förbränningsproblemets:förbränningsproblem:förbränningsproblems:förbränningsproblemen:förbränningsproblemens
+COMPOUND(668361, 552791): förbränning + problem
+873636r4<substantiv>förbränningsprodukt:förbränningsprodukt:förbränningsprodukts:förbränningsprodukten:förbränningsproduktens:förbränningsprodukter:förbränningsprodukters:förbränningsprodukterna:förbränningsprodukternas
+COMPOUND(668361, 550262): förbränning + produkt
+719417r4<substantiv>förbränningsreaktion:förbränningsreaktion:förbränningsreaktions:förbränningsreaktionen:förbränningsreaktionens:förbränningsreaktioner:förbränningsreaktioners:förbränningsreaktionerna:förbränningsreaktionernas
+COMPOUND(668361, 658791): förbränning + reaktion
+690536r4<verb>förbrödra:förbrödra:förbrödrade:förbrödrat:förbrödrar:förbrödra:förbrödras:förbrödrades:förbrödrats:förbrödras:förbrödrad:förbrödrat:förbrödrade:förbrödrande:
+760011r4<substantiv>förbrödring:förbrödring:förbrödrings:förbrödringen:förbrödringens:förbrödringar:förbrödringars:förbrödringarna:förbrödringarnas
+CUSTOM: y y förbrödrings
+552399r15<substantiv>förbud:förbud:förbuds:förbudet:förbudets:förbud:förbuds:förbuden:förbudens
+CUSTOM: y y förbuds +förbuds
+849891r3<substantiv>förbudsvän:förbudsvän:förbudsväns:förbudsvännen:förbudsvännens:förbudsvänner:förbudsvänners:förbudsvännerna:förbudsvännernas
+565983r3<adjektiv>förbudsvänlig:förbudsvänlig:förbudsvänligt:förbudsvänliga:förbudsvänliga::::
+552400r21<substantiv>förbund:förbund:förbunds:förbundet:förbundets:förbund:förbunds:förbunden:förbundens
+CUSTOM: y y förbunds +förbunds
+806118r3<adjektiv>förbunden:förbunden:förbundet:förbundna:förbundna::::förbundne
+690538r3<substantiv>förbundsark:förbundsark:förbundsarks:förbundsarken:förbundsarkens::::
+760015r3<substantiv>förbundsdag:förbundsdag:förbundsdags:förbundsdagen:förbundsdagens::::
+CUSTOM: y y förbundsdags
+690540r4<substantiv>förbundskapten:förbundskapten:förbundskaptens:förbundskaptenen:förbundskaptenens:förbundskaptener:förbundskapteners:förbundskaptenerna:förbundskaptenernas
+COMPOUND(552400, 549461): förbund + kapten
+690541r4<substantiv>förbundsrepublik:förbundsrepublik:förbundsrepubliks:förbundsrepubliken:förbundsrepublikens:förbundsrepubliker:förbundsrepublikers:förbundsrepublikerna:förbundsrepublikernas
+COMPOUND(552400, 550375): förbund + republik
+760019r4<substantiv>förbundsråd:förbundsråd:förbundsråds:förbundsrådet:förbundsrådets:förbundsråd:förbundsråds:förbundsråden:förbundsrådens
+COMPOUND(552400, 552853): förbund + råd
+690542r4<substantiv>förbundsstyrelse:förbundsstyrelse:förbundsstyrelses:förbundsstyrelsen:förbundsstyrelsens:förbundsstyrelser:förbundsstyrelsers:förbundsstyrelserna:förbundsstyrelsernas
+COMPOUND(552400, 612018): förbund + styrelse
+CUSTOM: y y förbundsstyrelse
+924479r14<adjektiv>förbuskad:förbuskad:förbuskat:förbuskade:förbuskade:!:!:!:::::::::
+924236r11<deponens>förbuskas:förbuskas:förbuskades:förbuskats:förbuskas:
+978799r3<substantiv>förbuskning:förbuskning:förbusknings:förbuskningen:förbuskningens::::
+806120r4<verb>förbygga:förbygga:förbyggde:förbyggt:förbygger:förbygg:förbyggas:förbyggdes:förbyggts:förbyggs:förbyggd:förbyggt:förbyggda:förbyggande:
+COMPOUND(558906, 585770): för + bygga
+799374r3<adjektiv>förbyggd:förbyggd:förbyggt:förbyggda:förbyggda::::
+804325r3<substantiv>förbyggnad:förbyggnad:förbyggnads:förbyggnaden:förbyggnadens:förbyggnader:förbyggnaders:förbyggnaderna:förbyggnadernas
+690543r5<verb>förbyta:förbyta:förbytte:förbytt:förbyter:förbyt:förbytas:förbyttes:förbytts:förbyts, förbytes:förbytt:förbytt:förbytta::
+COMPOUND(558906, 557965): för + byta
+690549r3<deponens>förbytas:förbytas:förbyttes:förbytts:förbyts:
+672466r7<adverb>förbålt:förbålt
+565986r3<adjektiv>förbätterlig:förbätterlig:förbätterligt:förbätterliga:förbätterliga::::
+546629r4<verb>förbättra:förbättra:förbättrade:förbättrat:förbättrar:förbättra:förbättras:förbättrades:förbättrats:förbättras:förbättrad:förbättrat:förbättrade:förbättrande:
+690552r3<substantiv>förbättrande:förbättrande:förbättrandes:förbättrandet:förbättrandets::::
+690551r3<adjektiv>förbättrande:förbättrande:förbättrande:förbättrande:förbättrande:!:!:!:
+775756r3<substantiv>förbättrare:förbättrare:förbättrares:förbättraren:förbättrarens:förbättrare:förbättrares:förbättrarna:förbättrarnas
+596864r4<substantiv>förbättring:förbättring:förbättrings:förbättringen:förbättringens:förbättringar:förbättringars:förbättringarna:förbättringarnas
+CUSTOM: y y förbättrings +förbättrings
+569098r3<adjektiv>förbättringsbar:förbättringsbar:förbättringsbart:förbättringsbara:förbättringsbara::::
+872693r4<substantiv>förbättringsåtgärd:förbättringsåtgärd:förbättringsåtgärds:förbättringsåtgärden:förbättringsåtgärdens:förbättringsåtgärder:förbättringsåtgärders:förbättringsåtgärderna:förbättringsåtgärdernas
+COMPOUND(596864, 550810): förbättring + åtgärd
+685031r3<substantiv>förbön:förbön:förböns:förbönen:förbönens:förböner:förböners:förbönerna:förbönernas
+804333r3<substantiv>fördansare:fördansare:fördansares:fördansaren:fördansarens:fördansare:fördansares:fördansarna:fördansarnas
+804339r3<verb>fördanska:fördanska:fördanskade:fördanskat:fördanskar:fördanska:fördanskas:fördanskades:fördanskats:fördanskas:fördanskad:fördanskat:fördanskade:fördanskande:
+978803r3<substantiv>fördanskning:fördanskning:fördansknings:fördanskningen:fördanskningens::::
+586694r4<verb>fördatera:fördatera:fördaterade:fördaterat:fördaterar:fördatera:fördateras:fördaterades:fördaterats:fördateras:fördaterad:fördaterat:fördaterade:fördaterande:
+804353r3<substantiv>fördatering:fördatering:fördaterings:fördateringen:fördateringens:fördateringar:fördateringars:fördateringarna:fördateringarnas
+889721r3<verb>fördefiniera:fördefiniera:fördefinierade:fördefinierat:fördefinierar:fördefiniera:fördefinieras:fördefinierades:fördefinierats:fördefinieras:fördefinierad:fördefinierat:fördefinierade:fördefinierande:
+551221r4<substantiv>fördel:fördel:fördels:fördelen:fördelens:fördelar:fördelars:fördelarna:fördelarnas
+546630r8<verb>fördela:fördela:fördelade:fördelat:fördelar:fördela:fördelas:fördelades:fördelats:fördelas:fördelad:fördelat:fördelade:fördelande:
+563289r4<adjektiv>fördelaktig:fördelaktig:fördelaktigt:fördelaktiga:fördelaktiga:fördelaktigare:fördelaktigast:fördelaktigaste:
+617913r3<substantiv>fördelaktighet:fördelaktighet:fördelaktighets:fördelaktigheten:fördelaktighetens::::
+CUSTOM: y y fördelaktighets
+690555r3<substantiv>fördelande:fördelande:fördelandes:fördelandet:fördelandets::::
+723920r4<substantiv>fördelaraxel:fördelaraxel:fördelaraxels:fördelaraxeln:fördelaraxelns:fördelaraxlar:fördelaraxlars:fördelaraxlarna:fördelaraxlarnas
+COMPOUND(617917, 592030): fördelare + axel
+617917r4<substantiv>fördelare:fördelare:fördelares:fördelaren:fördelarens:fördelare:fördelares:fördelarna:fördelarnas
+CUSTOM: y y fördelar
+617921r15<substantiv>fördelning:fördelning:fördelnings:fördelningen:fördelningens:fördelningar:fördelningars:fördelningarna:fördelningarnas
+CUSTOM: y y fördelnings +fördelnings
+563795r3<adjektiv>fördelningsfri:fördelningsfri:fördelningsfritt:fördelningsfria:fördelningsfria::::
+684741r4<substantiv>fördelningspolitik:fördelningspolitik:fördelningspolitiks:fördelningspolitiken:fördelningspolitikens:!:!:!:!
+COMPOUND(617921, 550224): fördelning + politik
+771228r4<substantiv>fördelningstal:fördelningstal:fördelningstals:fördelningstalet:fördelningstalets:fördelningstal:fördelningstals:fördelningstalen:fördelningstalens
+COMPOUND(617921, 553029): fördelning + tal
+978807r4<substantiv>fördelsboll:fördelsboll:fördelsbolls:fördelsbollen:fördelsbollens:fördelsbollar:fördelsbollars:fördelsbollarna:fördelsbollarnas
+COMPOUND(551221, 550928): fördel + boll
+617922r3<adverb>fördenskull:fördenskull
+839178r3<substantiv>fördetting:fördetting:fördettings:fördettingen:fördettingens:fördettingar:fördettingars:fördettingarna:fördettingarnas
+546631r4<verb>fördjupa:fördjupa:fördjupade:fördjupat:fördjupar:fördjupa:fördjupas:fördjupades:fördjupats:fördjupas:fördjupad:fördjupat:fördjupade::
+690558r3<adjektiv>fördjupande:fördjupande:fördjupande:fördjupande:fördjupande:!:!:!:
+690559r3<substantiv>fördjupande:fördjupande:fördjupandes:fördjupandet:fördjupandets::::
+593106r3<substantiv>fördjupning:fördjupning:fördjupnings:fördjupningen:fördjupningens:fördjupningar:fördjupningars:fördjupningarna:fördjupningarnas
+CUSTOM: y y fördjupnings +fördjupnings
+593107r3<substantiv>fördjupningskurs:fördjupningskurs:fördjupningskurs:fördjupningskursen:fördjupningskursens:fördjupningskurser:fördjupningskursers:fördjupningskurserna:fördjupningskursernas
+593114r3<adjektiv>fördold:fördold:fördolt:fördolda:fördolda::::
+551223r3<substantiv>fördom:fördom:fördoms:fördomen:fördomens:fördomar:fördomars:fördomarna:fördomarnas
+563798r4<adjektiv>fördomsfri:fördomsfri:fördomsfritt:fördomsfria:fördomsfria:fördomsfriare:fördomsfriast:fördomsfriaste:fördomsfrie
+685568r3<substantiv>fördomsfrihet:fördomsfrihet:fördomsfrihets:fördomsfriheten:fördomsfrihetens:!:!:!:!
+CUSTOM: y y fördomsfrihets
+584966r4<adjektiv>fördomsfull:fördomsfull:fördomsfullt:fördomsfulla:fördomsfulla:fördomsfullare:fördomsfullast:fördomsfullaste:fördomsfulle
+914322r3<substantiv>fördomsfullhet:fördomsfullhet:fördomsfullhets:fördomsfullheten:fördomsfullhetens::::
+593115r6<verb>fördra, fördraga:fördra, fördraga:fördrog:fördragit:fördrar, fördrager:fördra:fördras, fördragas:fördrogs:fördragits:fördras, fördrages, fördrags:fördragen:fördraget:fördragna:fördragande:
+593118r8<substantiv>fördrag:fördrag:fördrags:fördraget:fördragets:fördrag:fördrags:fördragen:fördragens
+CUSTOM: y y fördrags
+617923r3<adjektiv>fördragen:fördragen:fördraget:fördragna:fördragna::::
+563383r4<adjektiv>fördragsam:fördragsam:fördragsamt:fördragsamma:fördragsamma:fördragsammare:fördragsammast:fördragsammaste:fördragsamme
+617928r3<substantiv>fördragsamhet:fördragsamhet:fördragsamhets:fördragsamheten:fördragsamhetens::::
+CUSTOM: y y fördragsamhets
+565989r3<adjektiv>fördragsenlig:fördragsenlig:fördragsenligt:fördragsenliga:fördragsenliga::::
+636990r6<verb>fördragsfästa:fördragsfästa:fördragsfäste:fördragsfäst:fördragsfäster:fördragsfäst:fördragsfästas:fördragsfästes:fördragsfästs:fördragsfästs:fördragsfäst:fördragsfäst:fördragsfästa:fördragsfästande:
+COMPOUND(593118, 562221): fördrag + fästa
+572734r3<adjektiv>fördragsmässig:fördragsmässig:fördragsmässigt:fördragsmässiga:fördragsmässiga::::
+572737r3<adjektiv>fördragsstridig:fördragsstridig:fördragsstridigt:fördragsstridiga:fördragsstridiga::::
+704500r4<substantiv>fördragstext:fördragstext:fördragstexts:fördragstexten:fördragstextens:fördragstexter:fördragstexters:fördragstexterna:fördragstexternas
+COMPOUND(593118, 619782): fördrag + text
+572740r3<adjektiv>fördragsvidrig:fördragsvidrig:fördragsvidrigt:fördragsvidriga:fördragsvidriga::::
+804377r3<substantiv>fördrink:fördrink:fördrinks:fördrinken:fördrinkens:fördrinkar:fördrinkars:fördrinkarna:fördrinkarnas
+806130r3<verb>fördrista:fördrista:fördristade:fördristat:fördristar:fördrista:::::::::
+617932r4<verb>fördriva:fördriva:fördrev:fördrivit:fördriver:fördriv:fördrivas:fördrevs:fördrivits:fördrivs, fördrives:fördriven:fördrivet:fördrivna::
+760957r3<substantiv>fördrivande:fördrivande:fördrivandes:fördrivandet:fördrivandets::::
+617933r3<substantiv>fördrivning:fördrivning:fördrivnings:fördrivningen:fördrivningens:fördrivningar:fördrivningars:fördrivningarna:fördrivningarnas
+CUSTOM: y y fördrivnings +fördrivnings
+806134r3<substantiv>fördräng:fördräng:fördrängs:fördrängen:fördrängens:fördrängar:fördrängars:fördrängarna:fördrängarnas
+593123r4<verb>fördröja:fördröja:fördröjde:fördröjt:fördröjer:fördröj:fördröjas:fördröjdes:fördröjts:fördröjs, fördröjes:fördröjd:fördröjt:fördröjda::
+690562r3<adjektiv>fördröjande:fördröjande:fördröjande:fördröjande:fördröjande:!:!:!:
+978815r3<substantiv>fördröjare:fördröjare:fördröjares:fördröjaren:fördröjarens:fördröjare:fördröjares:fördröjarna:fördröjarnas
+593124r3<substantiv>fördröjning:fördröjning:fördröjnings:fördröjningen:fördröjningens:fördröjningar:fördröjningars:fördröjningarna:fördröjningarnas
+CUSTOM: y y fördröjnings
+799377r3<adjektiv>fördrömd:fördrömd:fördrömt:fördrömda:fördrömda::::
+546632r5<verb>fördubbla:fördubbla:fördubblade:fördubblat:fördubblar:fördubbla:fördubblas:fördubblades:fördubblats:fördubblas:fördubblad:fördubblat:fördubblade:fördubblande:
+617941r4<substantiv>fördubbling:fördubbling:fördubblings:fördubblingen:fördubblingens:fördubblingar:fördubblingars:fördubblingarna:fördubblingarnas
+CUSTOM: y y fördubblings
+882053r4<substantiv>fördubblingstid:fördubblingstid:fördubblingstids:fördubblingstiden:fördubblingstidens:fördubblingstider:fördubblingstiders:fördubblingstiderna:fördubblingstidernas
+COMPOUND(617941, 550665): fördubbling + tid
+546633r4<verb>fördumma:fördumma:fördummade:fördummat:fördummar:fördumma:fördummas:fördummades:fördummats:fördummas:fördummad:fördummat:fördummade:fördummande:
+690563r3<substantiv>fördumning:fördumning:fördumnings:fördumningen:fördumningens::::
+CUSTOM: y y fördumnings
+546634r4<verb>fördunkla:fördunkla:fördunklade:fördunklat:fördunklar:fördunkla:fördunklas:fördunklades:fördunklats:fördunklas:fördunklad:fördunklat:fördunklade:fördunklande:
+978821r3<substantiv>fördunkling:fördunkling:fördunklings:fördunklingen:fördunklingens:fördunklingar:fördunklingars:fördunklingarna:fördunklingarnas
+766917r3<verb>fördunsta:fördunsta:fördunstade:fördunstat:fördunstar:fördunsta:fördunstas:fördunstades:fördunstats:fördunstas:fördunstad:fördunstat:fördunstade:fördunstande:
+978829r3<substantiv>fördunstning:fördunstning:fördunstnings:fördunstningen:fördunstningens::::
+742290r3<verb>fördyra:fördyra:fördyrade:fördyrat:fördyrar:fördyra:fördyras:fördyrades:fördyrats:fördyras:fördyrad:fördyrat:fördyrade:fördyrande:
+742299r3<substantiv>fördyring:fördyring:fördyrings:fördyringen:fördyringens:fördyringar:fördyringars:fördyringarna:fördyringarnas
+806143r3<verb>fördystra:fördystra:fördystrade:fördystrat:fördystrar:fördystra:fördystras:fördystrades:fördystrats:fördystras:fördystrad:fördystrat:fördystrade:fördystrande:
+804386r3<substantiv>fördäck:fördäck:fördäcks:fördäcket:fördäckets:fördäck:fördäcks:fördäcken:fördäckens
+804392r5<verb>fördämma:fördämma:fördämde:fördämt:fördämmer:fördäm:fördämmas:fördämdes:fördämts:fördäms, fördämmes:fördämd:fördämt:fördämda:fördämmande:
+COMPOUND(558906, 625259): för + dämma
+551227r3<substantiv>fördämning:fördämning:fördämnings:fördämningen:fördämningens:fördämningar:fördämningars:fördämningarna:fördämningarnas
+CUSTOM: y y fördämnings
+690567r3<substantiv>fördärv:fördärv:fördärvs:fördärvet:fördärvets::::
+546635r5<verb>fördärva:fördärva:fördärvade:fördärvat:fördärvar:fördärva:fördärvas:fördärvades:fördärvats:fördärvas:fördärvad:fördärvat:fördärvade:fördärvande:
+690566r3<substantiv>fördärvare:fördärvare:fördärvares:fördärvaren:fördärvarens:fördärvare:fördärvares:fördärvarna:fördärvarnas
+CUSTOM: y y fördärvar
+800958r3<adjektiv>fördärvbringande:fördärvbringande:fördärvbringande:fördärvbringande:fördärvbringande:!:!:!:
+565992r3<adjektiv>fördärvlig:fördärvlig:fördärvligt:fördärvliga:fördärvliga::::
+958661r3<substantiv>fördärvlighet:fördärvlighet:fördärvlighets:fördärvligheten:fördärvlighetens::::
+804361r4<verb>fördölja:fördölja:fördolde:fördolt:fördöljer:fördölj:fördöljas:fördoldes:fördolts:fördöljs, fördöljes:fördold:fördolt:fördolda:fördöljande:
+COMPOUND(558906, 585305): för + dölja
+685653r4<verb>fördöma:fördöma:fördömde:fördömt:fördömer:fördöm:fördömas:fördömdes:fördömts:fördöms, fördömes:fördömd:fördömt:fördömda:fördömande:
+COMPOUND(558906, 558372): för + döma
+690570r3<substantiv>fördömande:fördömande:fördömandes:fördömandet:fördömandets:fördömanden:fördömandens:fördömandena:fördömandenas
+690569r3<adjektiv>fördömande:fördömande:fördömande:fördömande:fördömande:!:!:!:
+799380r3<adjektiv>fördömd:fördömd:fördömt:fördömda:fördömda::::
+690571r3<substantiv>fördömelse:fördömelse:fördömelses:fördömelsen:fördömelsens::::
+CUSTOM: y y fördömelse
+565995r3<adjektiv>fördömlig:fördömlig:fördömligt:fördömliga:fördömliga::::
+612480r11<substantiv>före:före:föres:föret:förets:fören:förens:förena:förenas
+CUSTOM: y n
+620546r12<preposition>före:före
+CUSTOM: y n
+620547r15<adverb>före:före
+CUSTOM: y n
+968908r3<substantiv>förebedjare:förebedjare:förebedjares:förebedjaren:förebedjarens:förebedjare:förebedjares:förebedjarna:förebedjarnas
+549008r3<substantiv>förebild:förebild:förebilds:förebilden:förebildens:förebilder:förebilders:förebilderna:förebildernas
+649876r19<verb>förebilda:förebilda:förebildade:förebildat:förebildar:förebilda:förebildas:förebildades:förebildats:förebildas:förebildad:förebildat:förebildade:förebildande:
+COMPOUND(620547, 546292): före + bilda
+565996r4<adjektiv>förebildlig:förebildlig:förebildligt:förebildliga:förebildliga::::förebildlige
+646885r12<verb>förebringa:förebringa:förebringade, förebragte:förebringat, förebragt:förebringar:förebringa:förebringas:förebringades, förebragtes:förebringats, förebragts:förebringas:förebringad, förebragt:förebragt, förebringat:förebringade, förebragta:förebringande:
+COMPOUND(620547, 546325): före + bringa
+685654r4<verb>förebrå:förebrå:förebrådde:förebrått:förebrår:förebrå:förebrås:förebråddes:förebråtts:förebrås:förebrådd:förebrått:förebrådda::
+690573r3<substantiv>förebråelse:förebråelse:förebråelses:förebråelsen:förebråelsens:förebråelser:förebråelsers:förebråelserna:förebråelsernas
+CUSTOM: y y förebråelse +förebråelse
+690572r3<adjektiv>förebrående:förebrående:förebrående:förebrående:förebrående:!:!:!:
+733387r3<substantiv>förebud:förebud:förebuds:förebudet:förebudets:förebud:förebuds:förebuden:förebudens
+636490r12<verb>förebygga:förebygga:förebyggde:förebyggt:förebygger:förebygg:förebyggas:förebyggdes:förebyggts:förebyggs, förebygges:förebyggd:förebyggt:förebyggda:förebyggande:
+690574r3<substantiv>förebyggande:förebyggande:förebyggandes:förebyggandet:förebyggandets::::
+CUSTOM: y y förebyggande
+636492r4<adjektiv>förebyggande:förebyggande:förebyggande:förebyggande:förebyggande:!:!:!:
+896589r3<substantiv>förebyggare:förebyggare:förebyggares:förebyggaren:förebyggarens:förebyggare:förebyggares:förebyggarna:förebyggarnas
+910430r3<adjektiv>förebyggbar:förebyggbar:förebyggbart:förebyggbara:förebyggbara:!:!:!:::::::::
+546636r5<verb>förebåda:förebåda:förebådade:förebådat:förebådar:förebåda:förebådas:förebådades:förebådats:förebådas:förebådad:förebådat:förebådade:förebådande:
+742307r4<verb>förebära:förebära:förebar:föreburit:förebär:förebär:förebäras:förebars:föreburits:förebärs, förebäres:föreburen:föreburet:föreburna:förebärande:
+COMPOUND(620546, 560535): före + bära
+914326r3<substantiv>föredetting:föredetting:föredettings:föredettingen:föredettingens:föredettingar:föredettingars:föredettingarna:föredettingarnas
+690576r5<verb>föredra, föredraga:föredra, föredraga:föredrog:föredragit:föredrar, föredrager:föredra:föredras, föredragas:föredrogs:föredragits:föredras, föredrages:föredragen:föredraget:föredragna::
+COMPOUND(620547, 558196): före + dra, draga
+552401r3<substantiv>föredrag:föredrag:föredrags:föredraget:föredragets:föredrag:föredrags:föredragen:föredragens
+CUSTOM: y y föredrags
+728520r3<substantiv>föredragande:föredragande:föredragandes:föredraganden:föredragandens:föredraganden:föredragandens:föredragandena:föredragandenas
+690582r3<substantiv>föredragning:föredragning:föredragnings:föredragningen:föredragningens:föredragningar:föredragningars:föredragningarna:föredragningarnas
+CUSTOM: y y föredragnings
+615241r3<substantiv>föredragshållare:föredragshållare:föredragshållares:föredragshållaren:föredragshållarens:föredragshållare:föredragshållares:föredragshållarna:föredragshållarnas
+CUSTOM: y y föredragshållar
+690583r3<substantiv>föredöme:föredöme:föredömes:föredömet:föredömets:föredömen:föredömens:föredömena:föredömenas
+565997r5<adjektiv>föredömlig:föredömlig:föredömligt:föredömliga:föredömliga:föredömligare:föredömligast:föredömligaste:föredömlige
+773085r3<substantiv>föredömlighet:föredömlighet:föredömlighets:föredömligheten:föredömlighetens::::
+593105r4<verb>förefalla:förefalla:föreföll:förefallit:förefaller:!:!:!:!:!::::förefallande:
+637047r7<deponens>förefinnas:förefinnas:förefanns:förefunnits:förefinns:
+COMPOUND(620547, 591644): före + finnas
+565998r3<adjektiv>förefintlig:förefintlig:förefintligt:förefintliga:förefintliga::::
+978857r3<substantiv>förefintlighet:förefintlighet:förefintlighets:förefintligheten:förefintlighetens::::
+690585r5<verb>förege:förege, föregiva:föregav:föregett, föregivit:föreger, föregiver:förege, föregiv:föreges, föregivas:föregavs:föregetts, föregivits:föreges, föregives, föregivs:föregiven:föregivet:föregivna:föregivande:
+COMPOUND(620547, 556584): före + giva, ge
+871537r3<substantiv>föregivande:föregivande:föregivandes:föregivandet:föregivandets:föregivanden:föregivandens:föregivandena:föregivandenas
+802170r3<adjektiv>föregiven:föregiven:föregivet:föregivna:föregivna::::
+690591r6<verb>föregripa:föregripa:föregrep:föregripit:föregriper:föregrip:föregripas:föregreps:föregripits:föregrips, föregripes:föregripen:föregripet:föregripna:föregripande:
+COMPOUND(620547, 559128): före + gripa
+649404r5<verb>föregå:föregå:föregick:föregått:föregår:föregå:föregås:föregicks:föregåtts:föregås:föregången:föregånget:föregångna:föregående:
+COMPOUND(620546, 554988): före + gå
+CUSTOM: y y föregångs
+571105r6<adjektiv>föregående:föregående:föregående:föregående:föregående:::::::föregåendes:::::
+615242r3<substantiv>föregångare:föregångare:föregångares:föregångaren:föregångarens:föregångare:föregångares:föregångarna:föregångarnas
+CUSTOM: y y föregångar
+773089r4<substantiv>föregångsman:föregångsman:föregångsmans:föregångsmannen:föregångsmannens:föregångsmän:föregångsmäns:föregångsmännen:föregångsmännens
+COMPOUND(649404, 557796): föregå + man
+690600r3<substantiv>förehavande:förehavande:förehavandes:förehavandet:förehavandets:förehavanden:förehavandens:förehavandena:förehavandenas
+839206r4<verb>förehålla:förehålla:förehöll:förehållit:förehåller:förehåll:förehållas:förehölls:förehållits:förehålls, förehålles:förehållen:förehållet:förehållna:förehållande:
+COMPOUND(620547, 555233): före + hålla
+593125r4<verb>förekomma:förekomma:förekom:förekommit:förekommer:förekom:förekommas:förekoms:förekommits:förekoms, förekommes:förekommen:förekommet:förekomna::
+570977r3<adjektiv>förekommande:förekommande:förekommande:förekommande:förekommande:!:!:!:
+549010r4<substantiv>förekomst:förekomst:förekomsts:förekomsten:förekomstens:förekomster:förekomsters:förekomsterna:förekomsternas
+593129r3<verb>föreligga:föreligga:förelåg:förelegat:föreligger:!:!:!:!:!:!:!:!:föreliggande:
+593131r9<verb>förelägga:förelägga:förelade, förela:förelagt:förelägger:förelägg:

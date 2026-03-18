@@ -1,0 +1,561 @@
+nnens:bergsmän:bergsmäns:bergsmännen:bergsmännens
+722720r4<substantiv>bergsmassa:bergsmassa:bergsmassas:bergsmassan:bergsmassans:bergsmassor:bergsmassors:bergsmassorna:bergsmassornas
+COMPOUND(552234, 594709): berg + massa
+722729r3<substantiv>bergsmassiv:bergsmassiv:bergsmassivs:bergsmassivet:bergsmassivets:bergsmassiv:bergsmassivs:bergsmassiven:bergsmassivens
+728937r4<substantiv>bergsområde:bergsområde:bergsområdes:bergsområdet:bergsområdets:bergsområden:bergsområdens:bergsområdena:bergsområdenas
+COMPOUND(552234, 612761): berg + område
+658940r3<substantiv>bergspredikan:bergspredikan:bergspredikans:bergspredikan:bergspredikans:!:!:!:!
+615148r3<substantiv>bergsprängare:bergsprängare:bergsprängares:bergsprängaren:bergsprängarens:bergsprängare:bergsprängares:bergsprängarna:bergsprängarnas
+CUSTOM: y y bergsprängar
+596462r3<substantiv>bergsrygg:bergsrygg:bergsryggs:bergsryggen:bergsryggens:bergsryggar:bergsryggars:bergsryggarna:bergsryggarnas
+827610r3<substantiv>bergsråd:bergsråd:bergsråds:bergsrådet:bergsrådets:bergsråd:bergsråds:bergsråden:bergsrådens
+599250r3<substantiv>bergssal:bergssal:bergssals:bergssalen:bergssalens:bergssalar:bergssalars:bergssalarna:bergssalarnas
+658942r4<substantiv>bergssida:bergssida:bergssidas:bergssidan:bergssidans:bergssidor:bergssidors:bergssidorna:bergssidornas
+COMPOUND(552234, 556545): berg + sida
+964720r4<substantiv>bergsskred:bergsskred:bergsskreds:bergsskredet:bergsskredets:bergsskred:bergsskreds:bergsskreden:bergsskredens
+COMPOUND(552234, 626289): berg + skred
+737147r4<substantiv>bergssluttning:bergssluttning:bergssluttnings:bergssluttningen:bergssluttningens:bergssluttningar:bergssluttningars:bergssluttningarna:bergssluttningarnas
+COMPOUND(552234, 597645): berg + sluttning
+972594r3<egennamn>Bergstedt:Bergstedt:Bergstedts
+972598r3<egennamn>Bergsten:Bergsten:Bergstens
+658944r3<substantiv>bergstopp:bergstopp:bergstopps:bergstoppen:bergstoppens:bergstoppar:bergstoppars:bergstopparna:bergstopparnas
+571312r3<adjektiv>bergsäker:bergsäker:bergsäkert:bergsäkra:bergsäkra::::
+802164r4<adjektiv>bergtagen:bergtagen:bergtaget:bergtagna:bergtagna::::bergtagne::::::::
+945958r4<substantiv>bergtäkt:bergtäkt:bergtäkts:bergtäkten:bergtäktens:bergtäkter:bergtäkters:bergtäkterna:bergtäkternas
+COMPOUND(552234, 550725): berg + täkt
+760775r3<substantiv>berguv:berguv:berguvs:berguven:berguvens:berguvar:berguvars:berguvarna:berguvarnas
+658945r3<substantiv>bergvägg:bergvägg:bergväggs:bergväggen:bergväggens:bergväggar:bergväggars:bergväggarna:bergväggarnas
+937797r4<substantiv>bergvärme:bergvärme:bergvärmes:bergvärmen:bergvärmens:!:!:!:!
+COMPOUND(552234, 627709): berg + värme
+969076r4<substantiv>bergås:bergås:bergås:bergåsen:bergåsens:bergåsar:bergåsars:bergåsarna:bergåsarnas
+COMPOUND(552234, 552130): berg + ås
+969083r3<substantiv>beriberi:beriberi:beriberis:beriberin:beriberins::::
+864908r3<substantiv>beridare:beridare:beridares:beridaren:beridarens:beridare:beridares:beridarna:beridarnas
+765356r4<adjektiv>beriden:beriden:beridet:beridna:beridna::::beridne
+546245r4<verb>berika:berika:berikade:berikat:berikar:berika:berikas:berikades:berikats:berikas:berikad:berikat:berikade::
+689064r3<adjektiv>berikande:berikande:berikande:berikande:berikande:!:!:!:
+941533r3<substantiv>berikning:berikning:beriknings:berikningen:berikningens::::
+864915r3<verb>beriktiga:beriktiga:beriktigade:beriktigat:beriktigar:beriktiga:beriktigas:beriktigades:beriktigats:beriktigas:beriktigad:beriktigat:beriktigade:beriktigande:
+864923r3<substantiv>beriktigande:beriktigande:beriktigandes:beriktigandet:beriktigandets:beriktiganden:beriktigandens:beriktigandena:beriktigandenas
+553623r3<egennamn>Berit:Berit:Berits
+896383r3<egennamn>Berkeley:Berkeley:Berkeleys
+CUSTOM: y n Berkeley
+723387r5<substantiv>berkelium:berkelium:berkeliums:berkeliumet:berkeliumets:!:!:!:!
+CUSTOM: y n berkelium
+723692r4<substantiv>berkeliumatom:berkeliumatom:berkeliumatoms:berkeliumatomen:berkeliumatomens:berkeliumatomer:berkeliumatomers:berkeliumatomerna:berkeliumatomernas
+COMPOUND(723387, 548266): berkelium + atom
+CUSTOM: y n
+554872r3<egennamn>Berlin:Berlin:Berlins
+CUSTOM: y n Berlin
+946882r3<substantiv>berlinare:berlinare:berlinares:berlinaren:berlinarens:berlinare:berlinares:berlinarna:berlinarnas
+801962r3<adjektiv>berlinerblå:berlinerblå:berlinerblått:berlinerblåa:berlinerblåa::::
+854746r3<egennamn>Berlingske Tidende:Berlingske Tidende:Berlingske Tidendes
+789192r3<egennamn>Berlinmuren:Berlinmuren:Berlinmurens
+658947r3<substantiv>berlock:berlock:berlocks:berlocken:berlockens:berlocker:berlockers:berlockerna:berlockernas
+854521r4<egennamn>Berlusconi:Berlusconi:Berlusconis
+CUSTOM: y n Berlusconi
+854525r4<substantiv>Berlusconiregering:Berlusconiregering:Berlusconiregerings:Berlusconiregeringen:Berlusconiregeringens:Berlusconiregeringar:Berlusconiregeringars:Berlusconiregeringarna:Berlusconiregeringarnas
+COMPOUND(854521, 559352): Berlusconi + regering
+CUSTOM: y n
+943186r3<egennamn>Bern:Bern:Berns
+789188r3<egennamn>Bernadotte:Bernadotte:Bernadottes
+CUSTOM: y n Bernadotte
+732123r3<egennamn>Berndt:Berndt:Berndts
+972602r3<egennamn>Berndtsson:Berndtsson:Berndtssons
+876987r3<egennamn>Berner:Berner:Berners
+554495r3<egennamn>Bernhard:Bernhard:Bernhards
+CUSTOM: y n Bernhard
+972606r3<egennamn>Bernhardsson:Bernhardsson:Bernhardssons
+711392r3<egennamn>Bernkonventionen:Bernkonventionen:Bernkonventionens
+732219r3<egennamn>Bernoulli:Bernoulli:Bernoullis
+CUSTOM: y n Bernoulli
+971965r3<egennamn>Bernt:Bernt:Bernts
+972610r3<egennamn>Berntsson:Berntsson:Berntssons
+585877r3<verb>bero:bero:berodde:berott:beror:bero:!:!:!:!:::::
+571316r6<substantiv>beroende:beroende:beroendes:beroendet:beroendets:!:!:!:!
+571315r3<adjektiv>beroende:beroende:beroende::::::
+634347r5<substantiv>beroende:beroende:beroendes:beroendet:beroendets:beroenden:beroendens:beroendena:beroendenas
+CUSTOM: y y beroende
+658952r3<adjektiv>beroendeframkallande:beroendeframkallande:beroendeframkallande:beroendeframkallande:beroendeframkallande:!:!:!:
+CUSTOM: n n y
+658953r3<substantiv>beroendeförhållande:beroendeförhållande:beroendeförhållandes:beroendeförhållandet:beroendeförhållandets:beroendeförhållanden:beroendeförhållandens:beroendeförhållandena:beroendeförhållandenas
+CUSTOM: n n y
+658961r3<substantiv>beroendeställning:beroendeställning:beroendeställnings:beroendeställningen:beroendeställningens:beroendeställningar:beroendeställningars:beroendeställningarna:beroendeställningarnas
+CUSTOM: n n y
+592739r4<substantiv>berså:berså:bersås:bersån:bersåns:bersåer:bersåers:bersåerna:bersåernas
+DEFINITION 1: Lövsal
+554497r3<egennamn>Bert:Bert:Berts
+553625r3<egennamn>Berta:Berta:Bertas
+874222r3<egennamn>Bertha:Bertha:Berthas
+843476r3<egennamn>Bertie:Bertie:Berties
+554499r3<egennamn>Bertil:Bertil:Bertils
+972614r3<egennamn>Bertilsson:Bertilsson:Bertilssons
+546246r4<verb>berusa:berusa:berusade:berusat:berusar:berusa:berusas:berusades:berusats:berusas:berusad:berusat:berusade:berusande:
+570648r4<adjektiv>berusad:berusad:berusat:berusade:berusade:!:!:!:
+689065r3<adjektiv>berusande:berusande:berusande:berusande:berusande:!:!:!:
+550876r3<substantiv>berusning:berusning:berusnings:berusningen:berusningens:berusningar:berusningars:berusningarna:berusningarnas
+CUSTOM: y y berusnings
+658962r3<substantiv>berusningsmedel:berusningsmedel:berusningsmedels:berusningsmedlet:berusningsmedlets:berusningsmedel:berusningsmedels:berusningsmedlen:berusningsmedlens
+CUSTOM: n n y
+854195r3<egennamn>Berwald:Berwald:Berwalds
+CUSTOM: y n Berwald
+854193r3<egennamn>Berwaldhallen:Berwaldhallen:Berwaldhallens
+CUSTOM: n n 
+658964r3<adjektiv>beryktad:beryktad:beryktat:beryktade:beryktade:!:!:!:
+969087r3<substantiv>beryll:beryll:berylls:beryllen:beryllens:beryller:beryllers:beryllerna:beryllernas
+CUSTOM: y n
+801964r3<adjektiv>beryllblå:beryllblå:beryllblått:beryllblåa:beryllblåa::::
+723391r5<substantiv>beryllium:beryllium:berylliums:berylliumet:berylliumets:!:!:!:!
+CUSTOM: y n beryllium
+723702r4<substantiv>berylliumatom:berylliumatom:berylliumatoms:berylliumatomen:berylliumatomens:berylliumatomer:berylliumatomers:berylliumatomerna:berylliumatomernas
+COMPOUND(723391, 548266): beryllium + atom
+CUSTOM: y n
+658965r3<substantiv>beråd:beråd:::::::
+571318r3<adjektiv>berått:berått:berått::::::
+546247r4<verb>beräkna:beräkna:beräknade:beräknat:beräknar:beräkna:beräknas:beräknades:beräknats:beräknas:beräknad:beräknat:beräknade::
+689066r3<adjektiv>beräknande:beräknande:beräknande:beräknande:beräknande:!:!:!:
+565604r3<adjektiv>beräknelig:beräknelig:beräkneligt:beräkneliga:beräkneliga::::
+596470r10<substantiv>beräkning:beräkning:beräknings:beräkningen:beräkningens:beräkningar:beräkningars:beräkningarna:beräkningarnas
+CUSTOM: y y beräknings +beräknings
+568913r3<adjektiv>beräkningsbar:beräkningsbar:beräkningsbart:beräkningsbara:beräkningsbara::::
+884899r4<substantiv>beräkningsbarhet:beräkningsbarhet:beräkningsbarhets:beräkningsbarheten:beräkningsbarhetens:!:!:!:!
+CUSTOM: y y beräkningsbarhets
+884926r4<substantiv>beräkningsbarhetsteori:beräkningsbarhetsteori:beräkningsbarhetsteoris:beräkningsbarhetsteorin:beräkningsbarhetsteorins:beräkningsbarhetsteorier:beräkningsbarhetsteoriers:beräkningsbarhetsteorierna:beräkningsbarhetsteoriernas
+COMPOUND(884899, 626693): beräkningsbarhet + teori
+546248r5<verb>berätta:berätta:berättade:berättat:berättar:berätta:berättas:berättades:berättats:berättas:berättad:berättat:berättade:berättande:
+658967r4<substantiv>berättande:berättande:berättandes:berättandet:berättandets::::
+615149r5<substantiv>berättare:berättare:berättares:berättaren:berättarens:berättare:berättares:berättarna:berättarnas
+CUSTOM: y y berättar
+658969r4<substantiv>berättarjag:berättarjag:berättarjags:berättarjaget:berättarjagets:berättarjag:berättarjags:berättarjagen:berättarjagens
+660009r3<adjektiv>berättarteknisk:berättarteknisk:berättartekniskt:berättartekniska:berättartekniska:!:!:!:!
+611837r10<substantiv>berättelse:berättelse:berättelses:berättelsen:berättelsens:berättelser:berättelsers:berättelserna:berättelsernas
+CUSTOM: y y berättelse +berättelse
+546249r4<verb>berättiga:berättiga:berättigade:berättigat:berättigar:berättiga:berättigas:berättigades:berättigats:berättigas:berättigad:berättigat:berättigade::
+571319r5<adjektiv>berättigad:berättigad:berättigat:berättigade:berättigade:!:!:!:::::::::
+658971r4<substantiv>berättigande:berättigande:berättigandes:berättigandet:berättigandets::::
+592531r3<substantiv>beröm:beröm:beröms:berömmet:berömmets:!:!:!:!
+570684r4<adjektiv>berömd:berömd:berömt:berömda:berömda:berömdare:berömdast:berömdaste:berömde
+752367r3<substantiv>berömdhet:berömdhet:berömdhets:berömdheten:berömdhetens:berömdheter:berömdheters:berömdheterna:berömdheternas
+565607r3<adjektiv>berömlig:berömlig:berömligt:berömliga:berömliga::::
+592530r6<verb>berömma:berömma:berömde:berömt:berömmer:beröm:berömmas:berömdes:berömts:beröms, berömmes:berömd:berömt:berömda:berömmande:
+592532r3<substantiv>berömmelse:berömmelse:berömmelses:berömmelsen:berömmelsens:berömmelser:berömmelsers:berömmelserna:berömmelsernas
+CUSTOM: y y berömmelse
+592537r4<adjektiv>berömvärd:berömvärd:berömvärt:berömvärda:berömvärda::::berömvärde
+585854r6<verb>beröra:beröra:berörde:berört:berör:berör:beröras:berördes:berörts:berörs, beröres:berörd:berört:berörda:berörande:
+592538r4<adjektiv>berörd:berörd:berört:berörda:berörda::::::::berördas::::
+592539r3<substantiv>beröring:beröring:berörings:beröringen:beröringens:beröringar:beröringars:beröringarna:beröringarnas
+CUSTOM: y y berörings +berörings
+563669r3<adjektiv>beröringsfri:beröringsfri:beröringsfritt:beröringsfria:beröringsfria::::
+658973r3<substantiv>beröringspunkt:beröringspunkt:beröringspunkts:beröringspunkten:beröringspunktens:beröringspunkter:beröringspunkters:beröringspunkterna:beröringspunkternas
+790038r3<adjektiv>beröringsskyddad:beröringsskyddad:beröringsskyddat:beröringsskyddade:beröringsskyddade:!:!:!:
+546250r4<verb>beröva:beröva:berövade:berövat:berövar:beröva:berövas:berövades:berövats:berövas:berövad:berövat:berövade::
+658982r4<substantiv>berövande:berövande:berövandes:berövandet:berövandets:berövanden:berövandens:berövandena:berövandenas
+546251r5<verb>besanna:besanna:besannade:besannat:besannar:besanna:besannas:besannades:besannats:besannas:besannad:besannat:besannade:besannande:
+571320r3<adjektiv>besatt:besatt:besatt:besatta:besatta:!:!:!:besatte
+592540r4<substantiv>besatthet:besatthet:besatthets:besattheten:besatthetens:besattheter:besattheters:besattheterna:besattheternas
+CUSTOM: y y besatthets
+627901r4<verb>bese:bese:besåg:besett:beser:bese:beses:besågs:besetts:beses:besedd:besett:besedda:beseende:
+546252r5<verb>besegla:besegla:beseglade:beseglat:beseglar:besegla:beseglas:beseglades:beseglats:beseglas:beseglad:beseglat:beseglade:beseglande:
+969099r3<substantiv>besegling:besegling:beseglings:beseglingen:beseglingens::::
+546253r6<verb>besegra:besegra:besegrade:besegrat:besegrar:besegra:besegras:besegrades:besegrats:besegras:besegrad:besegrat:besegrade:besegrande:
+615150r3<substantiv>besegrare:besegrare:besegrares:besegraren:besegrarens:besegrare:besegrares:besegrarna:besegrarnas
+CUSTOM: y y besegrar
+864938r3<verb>besiffra::::::::::besiffrad:besiffrat:besiffrade::
+864942r3<substantiv>besiffring:besiffring:besiffrings:besiffringen:besiffringens::::
+546254r4<verb>besikta:besikta:besiktade:besiktat:besiktar:besikta:besiktas:besiktades:besiktats:besiktas:besiktad:besiktat:besiktade::
+585494r6<verb>besiktiga:besiktiga:besiktigade:besiktigat:besiktigar:besiktiga:besiktigas:besiktigades:besiktigats:besiktigas:besiktigad:besiktigat:besiktigade:besiktigande:
+596471r10<substantiv>besiktning:besiktning:besiktnings:besiktningen:besiktningens:besiktningar:besiktningars:besiktningarna:besiktningarnas
+CUSTOM: y y besiktnings +besiktnings
+671678r4<substantiv>besiktningsavgift:besiktningsavgift:besiktningsavgifts:besiktningsavgiften:besiktningsavgiftens:besiktningsavgifter:besiktningsavgifters:besiktningsavgifterna:besiktningsavgifternas
+COMPOUND(596471, 548299): besiktning + avgift
+606696r3<substantiv>besiktningsinstrument:besiktningsinstrument:besiktningsinstruments:besiktningsinstrumentet:besiktningsinstrumentets:besiktningsinstrument:besiktningsinstruments:besiktningsinstrumenten:besiktningsinstrumentens
+659587r4<substantiv>besiktningsman:besiktningsman:besiktningsmans:besiktningsmannen:besiktningsmannens:besiktningsmän:besiktningsmäns:besiktningsmännen:besiktningsmännens
+COMPOUND(596471, 557796): besiktning + man
+659602r4<substantiv>besiktningsprotokoll:besiktningsprotokoll:besiktningsprotokolls:besiktningsprotokollet:besiktningsprotokollets:besiktningsprotokoll:besiktningsprotokolls:besiktningsprotokollen:besiktningsprotokollens
+COMPOUND(596471, 552797): besiktning + protokoll
+546255r6<verb>besinna:besinna:besinnade:besinnat:besinnar:besinna:besinnas:besinnades:besinnats:besinnas:besinnad:besinnat:besinnade:besinnande:
+659564r3<substantiv>besinning:besinning:besinnings:besinningen:besinningens::::
+CUSTOM: y y besinnings
+584928r3<adjektiv>besinningsfull:besinningsfull:besinningsfullt:besinningsfulla:besinningsfulla::::
+564751r3<adjektiv>besinningslös:besinningslös:besinningslöst:besinningslösa:besinningslösa::::
+592541r4<verb>besitta:besitta:besatt:besuttit:besitter:besitt:besittas:besatts:besuttits:besittes, besitts::::besittande:
+969103r3<substantiv>besittare:besittare:besittares:besittaren:besittarens:besittare:besittares:besittarna:besittarnas
+592543r3<substantiv>besittning:besittning:besittnings:besittningen:besittningens:besittningar:besittningars:besittningarna:besittningarnas
+CUSTOM: y y besittnings
+606702r3<substantiv>besittningsskydd:besittningsskydd:besittningsskydds:besittningsskyddet:besittningsskyddets:besittningsskydd:besittningsskydds:besittningsskydden:besittningsskyddens
+659565r6<verb>besjunga:besjunga:besjöng:besjungit:besjunger:besjung:besjungas:besjöngs:besjungits:besjunges, besjungs:besjungen:besjunget:besjungna:besjungande:
+592544r4<verb>besjäla:besjäla:besjälade:besjälat:besjälar:besjäla:besjälas:besjälades:besjälats:besjälas:besjälad:besjälat:besjälade:besjälande:
+592549r3<adjektiv>besjälad:besjälad:besjälat:besjälade:besjälade:!:!:!:
+969111r3<substantiv>besjälning:besjälning:besjälnings:besjälningen:besjälningens::::
+598122r4<substantiv>besk:besk:besks:besken:beskens:beskar:beskars:beskarna:beskarnas
+DEFINITION 1: malörtsbrännvin
+CUSTOM: y n
+563182r5<adjektiv>besk:besk:beskt:beska:beska:beskare:beskast:beskaste:::::::::
+CUSTOM: y n
+766598r8<substantiv>beska:beska:beskas:beskan:beskans::::
+CUSTOM: y n
+571321r3<adjektiv>beskaffad:beskaffad:beskaffat:beskaffade:beskaffade:!:!:!:
+659608r3<substantiv>beskaffenhet:beskaffenhet:beskaffenhets:beskaffenheten:beskaffenhetens:!:!:!:!
+CUSTOM: y y beskaffenhets
+546256r5<verb>beskatta:beskatta:beskattade:beskattat:beskattar:beskatta:beskattas:beskattades:beskattats:beskattas:beskattad:beskattat:beskattade:beskattande:
+592550r8<substantiv>beskattning:beskattning:beskattnings:beskattningen:beskattningens:beskattningar:beskattningars:beskattningarna:beskattningarnas
+CUSTOM: y y beskattnings +beskattnings
+564587r3<adjektiv>beskattningsbar:beskattningsbar:beskattningsbart:beskattningsbara:beskattningsbara::::
+571516r3<adjektiv>beskattningsmässig:beskattningsmässig:beskattningsmässigt:beskattningsmässiga:beskattningsmässiga::::
+758378r4<substantiv>beskattningsår:beskattningsår:beskattningsårs:beskattningsåret:beskattningsårets:beskattningsår:beskattningsårs:beskattningsåren:beskattningsårens
+COMPOUND(592550, 553140): beskattning + år
+552235r7<substantiv>besked:besked:beskeds:beskedet:beskedets:besked:beskeds:beskeden:beskedens
+565610r4<adjektiv>beskedlig:beskedlig:beskedligt:beskedliga:beskedliga:beskedligare:beskedligast:beskedligaste:beskedlige
+659609r3<substantiv>beskedlighet:beskedlighet:beskedlighets:beskedligheten:beskedlighetens::::
+CUSTOM: y y beskedlighets
+659613r3<substantiv>beskhet:beskhet:beskhets:beskheten:beskhetens::::
+CUSTOM: y y beskhets
+596472r3<substantiv>beskickning:beskickning:beskicknings:beskickningen:beskickningens:beskickningar:beskickningars:beskickningarna:beskickningarnas
+CUSTOM: y y beskicknings
+790041r3<adjektiv>beskiktad:beskiktad:beskiktat:beskiktade:beskiktade:!:!:!:
+592551r4<verb>beskjuta:beskjuta:besköt:beskjutit:beskjuter:beskjut:beskjutas:besköts:beskjutits:beskjuts:beskjuten:beskjutet:beskjutna:beskjutande:
+751998r4<substantiv>beskjutning:beskjutning:beskjutnings:beskjutningen:beskjutningens:beskjutningar:beskjutningars:beskjutningarna:beskjutningarnas
+960554r3<verb>beskoga:beskoga:beskogade:beskogat:beskogar:beskoga:beskogas:beskogades:beskogats:beskogas:beskogad:beskogat:beskogade:beskogande:
+790044r3<adjektiv>beskogad:beskogad:beskogat:beskogade:beskogade:!:!:!:
+892123r4<substantiv>beskogning:beskogning:beskognings:beskogningen:beskogningens:beskogningar:beskogningars:beskogningarna:beskogningarnas
+553374r3<egennamn>Beskow:Beskow:Beskows
+CUSTOM: y n Beskow
+592555r4<verb>beskriva:beskriva:beskrev:beskrivit:beskriver:beskriv:beskrivas:beskrevs:beskrivits:beskrivs, beskrives:beskriven:beskrivet:beskrivna::
+659618r3<adjektiv>beskrivande:beskrivande:beskrivande:beskrivande:beskrivande:!:!:!:
+969116r3<substantiv>beskrivare:beskrivare:beskrivares:beskrivaren:beskrivarens:beskrivare:beskrivares:beskrivarna:beskrivarnas
+568916r3<adjektiv>beskrivbar:beskrivbar:beskrivbart:beskrivbara:beskrivbara::::
+596477r5<substantiv>beskrivning:beskrivning:beskrivnings:beskrivningen:beskrivningens:beskrivningar:beskrivningars:beskrivningarna:beskrivningarnas
+CUSTOM: y y beskrivnings +beskrivnings
+969122r3<substantiv>besksöta:besksöta:besksötas:besksötan:besksötans:besksötor:besksötors:besksötorna:besksötornas
+969130r3<verb>beskugga:beskugga:beskuggade:beskuggat:beskuggar:beskugga:beskuggas:beskuggades:beskuggats:beskuggas:beskuggad:beskuggat:beskuggade:beskuggande:
+969139r3<substantiv>beskuggning:beskuggning:beskuggnings:beskuggningen:beskuggningens::::
+592559r3<substantiv>beskydd:beskydd:beskydds:beskyddet:beskyddets:!:!:!:!
+546257r4<verb>beskydda:beskydda:beskyddade:beskyddat:beskyddar:beskydda:beskyddas:beskyddades:beskyddats:beskyddas:beskyddad:beskyddat:beskyddade::
+659625r3<adjektiv>beskyddande:beskyddande:beskyddande:beskyddande:beskyddande:!:!:!:
+592561r3<substantiv>beskyddare:beskyddare:beskyddares:beskyddaren:beskyddarens:beskyddare:beskyddares:beskyddarna:beskyddarnas
+CUSTOM: y y beskyddar
+659619r3<substantiv>beskyddarinna:beskyddarinna:beskyddarinnas:beskyddarinnan:beskyddarinnans:beskyddarinnor:beskyddarinnors:beskyddarinnorna:beskyddarinnornas
+969143r3<substantiv>beskyddarskap:beskyddarskap:beskyddarskaps:beskyddarskapet:beskyddarskapets::::
+585767r5<verb>beskylla:beskylla:beskyllde:beskyllt:beskyller:beskyll:beskyllas:beskylldes:beskyllts:beskylls, beskylles:beskylld:beskyllt:beskyllda:beskyllande:
+596478r3<substantiv>beskyllning:beskyllning:beskyllnings:beskyllningen:beskyllningens:beskyllningar:beskyllningars:beskyllningarna:beskyllningarnas
+CUSTOM: y y beskyllnings
+546258r5<verb>beskåda:beskåda:beskådade:beskådat:beskådar:beskåda:beskådas:beskådades:beskådats:beskådas:beskådad:beskådat:beskådade:beskådande:
+592562r3<substantiv>beskådan:beskådan::::!:!:!:!
+969150r3<substantiv>beskådande:beskådande:beskådandes:beskådandet:beskådandets::::
+969154r3<substantiv>beskådning:beskådning:beskådnings:beskådningen:beskådningens::::
+571322r3<adjektiv>beskäftig:beskäftig:beskäftigt:beskäftiga:beskäftiga::::
+960560r3<substantiv>beskäftighet:beskäftighet:beskäftighets:beskäftigheten:beskäftighetens:beskäftigheter:beskäftigheters:beskäftigheterna:beskäftigheternas
+659627r3<adjektiv>beskänkt:beskänkt:beskänkt:beskänkta:beskänkta:!:!:!:beskänkte
+585855r9<verb>beskära:beskära:beskar:beskurit:beskär:beskär:beskäras:beskars:beskurits:beskärs:beskuren:beskuret:beskurna::
+DEFINITION 1: Avlägsna delar av något [ företrädesvis ett träd eller en buske ]
+659629r8<verb>beskära:beskära:beskärde:beskärt:beskär:beskär:beskäras:beskärdes:beskärts:beskärs:beskärd:beskärt:beskärda::
+DEFINITION 1: Ge, tilldela [ ålderdomligt ]
+659781r3<substantiv>beskärm:beskärm:::::::
+659782r3<verb>beskärma:beskärma:beskärmade:beskärmat:beskärmar:beskärma:::::::::
+969158r3<substantiv>beskärmelse:beskärmelse:beskärmelses:beskärmelsen:beskärmelsens:beskärmelser:beskärmelsers:beskärmelserna:beskärmelsernas
+659752r3<substantiv>beskärning:beskärning:beskärnings:beskärningen:beskärningens:beskärningar:beskärningars:beskärningarna:beskärningarnas
+CUSTOM: y y beskärnings
+552236r5<substantiv>beslag:beslag:beslags:beslaget:beslagets:beslag:beslags:beslagen:beslagens
+CUSTOM: y y beslags
+592556r10<verb>beslagtaga, beslagta:beslagta, beslagtaga:beslagtog:beslagtagit:beslagtar, beslagtager:beslagta, beslagtag:beslagtas, beslagtagas:beslagtogs:beslagtagits:beslagtas, beslagtages, beslagtags:beslagtagen:beslagtaget:beslagtagna:beslagtagande:
+552238r17<substantiv>beslut:beslut:besluts:beslutet:beslutets:beslut:besluts:besluten:beslutens
+CUSTOM: y y besluts +besluts
+546259r5<verb>besluta:besluta:beslutade, beslöt:beslutat, beslutit:beslutar:besluta:beslutas:beslutades, beslöts:beslutats, beslutits:beslutas:beslutad:beslutat:beslutade::
+689068r4<adjektiv>beslutande:beslutande:beslutande:beslutande:beslutande:!:!:!:
+CUSTOM: y y beslutande
+592571r4<substantiv>beslutanderätt:beslutanderätt:beslutanderätts:beslutanderätten:beslutanderättens::::
+COMPOUND(689068, 603413): beslutande + rätt
+592557r3<adjektiv>besluten:besluten:beslutet:beslutna:beslutna::::
+592573r3<substantiv>beslutfattare:beslutfattare:beslutfattares:beslutfattaren:beslutfattarens:beslutfattare:beslutfattares:beslutfattarna:beslutfattarnas
+CUSTOM: y y beslutfattar
+592579r3<adjektiv>beslutför:beslutför:beslutfört:beslutföra:beslutföra::::
+592582r3<substantiv>beslutförhet:beslutförhet:beslutförhets:beslutförheten:beslutförhetens::::
+CUSTOM: y y beslutförhets
+571519r3<adjektiv>beslutmässig:beslutmässig:beslutmässigt:beslutmässiga:beslutmässiga::::
+563346r4<adjektiv>beslutsam:beslutsam:beslutsamt:beslutsamma:beslutsamma:beslutsammare:beslutsammast:beslutsammaste:beslutsamme
+592558r3<substantiv>beslutsamhet:beslutsamhet:beslutsamhets:beslutsamheten:beslutsamhetens:!:!:!:!
+CUSTOM: y y beslutsamhets
+565611r3<adjektiv>beslutsenlig:beslutsenlig:beslutsenligt:beslutsenliga:beslutsenliga::::
+659815r3<substantiv>beslutsfattande:beslutsfattande:beslutsfattandes:beslutsfattandet:beslutsfattandets:beslutsfattanden:beslutsfattandens:beslutsfattandena:beslutsfattandenas
+609340r3<substantiv>beslutsfattare:beslutsfattare:beslutsfattares:beslutsfattaren:beslutsfattarens:beslutsfattare:beslutsfattares:beslutsfattarna:beslutsfattarnas
+CUSTOM: y y beslutsfattar
+689070r3<substantiv>beslutsfattning:beslutsfattning:beslutsfattnings:beslutsfattningen:beslutsfattningens::::
+CUSTOM: y y beslutsfattnings
+969169r3<adjektiv>beslutsfähig:beslutsfähig:beslutsfähigt:beslutsfähiga:beslutsfähiga::::::::::::
+969174r3<substantiv>beslutsfähighet:beslutsfähighet:beslutsfähighets:beslutsfähigheten:beslutsfähighetens::::
+845411r4<adjektiv>beslutsför:beslutsför:beslutsfört:beslutsföra:beslutsföra::::beslutsföre::::::::
+673567r4<substantiv>beslutsmeddelande:beslutsmeddelande:beslutsmeddelandes:beslutsmeddelandet:beslutsmeddelandets:beslutsmeddelanden:beslutsmeddelandens:beslutsmeddelandena:beslutsmeddelandenas
+COMPOUND(552238, 560527): beslut + meddelande
+571522r3<adjektiv>beslutsmässig:beslutsmässig:beslutsmässigt:beslutsmässiga:beslutsmässiga::::
+659840r3<substantiv>beslutsmässighet:beslutsmässighet:beslutsmässighets:beslutsmässigheten:beslutsmässighetens:!:!:!:!
+CUSTOM: y y beslutsmässighets
+829769r4<substantiv>beslutsstöd:beslutsstöd:beslutsstöds:beslutsstöden:beslutsstödens::::
+COMPOUND(552238, 552997): beslut + stöd
+592586r3<verb>beslå:beslå:beslog:beslagit:beslår:beslå:beslås:beslogs:beslagits:beslås:beslagen:beslaget:beslagna::
+592588r3<adjektiv>besläktad:besläktad:besläktat:besläktade:besläktade:!:!:!:
+546260r5<verb>beslöja:beslöja:beslöjade:beslöjat:beslöjar:beslöja:beslöjas:beslöjades:beslöjats:beslöjas:beslöjad:beslöjat:beslöjade:beslöjande:
+592589r3<adjektiv>beslöjad:beslöjad:beslöjat:beslöjade:beslöjade:!:!:!:
+592590r3<substantiv>besman:besman:besmans:besmanet:besmanets:besman:besmans:besmanen:besmanens
+969179r3<verb>besmitta:besmitta:besmittade:besmittat:besmittar:besmitta:besmittas:besmittades:besmittats:besmittas:besmittad:besmittat:besmittade:besmittande:
+790047r3<adjektiv>besmittad:besmittad:besmittat:besmittade:besmittade:!:!:!:
+969185r3<substantiv>besmittelse:besmittelse:besmittelses:besmittelsen:besmittelsens:besmittelser:besmittelsers:besmittelserna:besmittelsernas
+799114r3<adjektiv>besmord:besmord:besmort:besmorda:besmorda::::
+659852r3<adjektiv>besmyckad:besmyckad:besmyckat:besmyckade:besmyckade:!:!:!:
+546261r5<verb>bespara:bespara:besparade:besparat:besparar:bespara:besparas:besparades:besparats:besparas:besparad:besparat:besparade:besparande:
+592596r4<substantiv>besparing:besparing:besparings:besparingen:besparingens:besparingar:besparingars:besparingarna:besparingarnas
+CUSTOM: y y besparings
+950650r4<substantiv>besparingsiver:besparingsiver:besparingsivers:besparingsivern:besparingsiverns:!:!:!:!
+COMPOUND(592596, 559578): besparing + iver
+592597r3<verb>bespetsa:bespetsa:bespetsade:bespetsat:bespetsar:bespetsa:::::bespetsad:bespetsat:bespetsade::
+592602r4<verb>bespisa:bespisa:bespisade:bespisat:bespisar:bespisa:bespisas:bespisades:bespisats:bespisas:bespisad:bespisat:bespisade::
+550878r3<substantiv>bespisning:bespisning:bespisnings:bespisningen:bespisningens:bespisningar:bespisningars:bespisningarna:bespisningarnas
+CUSTOM: y y bespisnings
+546262r4<verb>bespotta:bespotta:bespottade:bespottat:bespottar:bespotta:bespottas:bespottades:bespottats:bespottas:bespottad:bespottat:bespottade::
+969193r3<substantiv>bespottelse:bespottelse:bespottelses:bespottelsen:bespottelsens:bespottelser:bespottelsers:bespottelserna:bespottelsernas
+546263r4<verb>bespruta:bespruta:besprutade:besprutat:besprutar:bespruta:besprutas:besprutades:besprutats:besprutas:besprutad:besprutat:besprutade::
+550880r3<substantiv>besprutning:besprutning:besprutnings:besprutningen:besprutningens:besprutningar:besprutningars:besprutningarna:besprutningarnas
+CUSTOM: y y besprutnings +besprutnings
+592603r3<substantiv>besselfunktion:besselfunktion:besselfunktions:besselfunktionen:besselfunktionens:besselfunktioner:besselfunktioners:besselfunktionerna:besselfunktionernas
+CUSTOM: y y besselfunktions
+592611r4<substantiv>besserwisser:besserwisser:besserwissers:besserwissern:besserwisserns:besserwissrar:besserwissrars:besserwissrarna:besserwissrarnas
+CUSTOM: y y besserwisser
+677886r4<substantiv>besserwisserattityd:besserwisserattityd:besserwisserattityds:besserwisserattityden:besserwisserattitydens:besserwisserattityder:besserwisserattityders:besserwisserattityderna:besserwisserattitydernas
+COMPOUND(592611, 548273): besserwisser + attityd
+550882r3<substantiv>best:best:bests:besten:bestens:bestar:bestars:bestarna:bestarnas
+CUSTOM: y n
+579183r4<adjektiv>bestialisk:bestialisk:bestialiskt:bestialiska:bestialiska:!:!:!:bestialiske
+956283r3<substantiv>bestialitet:bestialitet:bestialitets:bestialiteten:bestialitetens:bestialiteter:bestialiteters:bestialiteterna:bestialiteternas
+969201r3<substantiv>bestiarium:bestiarium:bestiariums:bestiariet:bestiariets:bestiarier:bestiariers:bestiarierna:bestiariernas
+552239r3<substantiv>bestick:bestick:besticks:besticket:bestickets:bestick:besticks:besticken:bestickens
+CUSTOM: y y bestick
+592617r5<verb>besticka:besticka:bestack:bestuckit:besticker:bestick:bestickas:bestacks:bestuckits:bestickes, besticks:bestucken:bestucket:bestuckna::
+DEFINITION 1: Muta
+752376r3<adjektiv>bestickande:bestickande:bestickande:bestickande:bestickande:!:!:!:
+565614r3<adjektiv>besticklig:besticklig:bestickligt:bestickliga:bestickliga::::
+969209r3<substantiv>besticklighet:besticklighet:besticklighets:bestickligheten:besticklighetens::::
+606298r3<substantiv>bestickning:bestickning:besticknings:bestickningen:bestickningens:bestickningar:bestickningars:bestickningarna:bestickningarnas
+CUSTOM: y y besticknings
+592636r5<verb>bestiga:bestiga:besteg:bestigit:bestiger:bestig:bestigas:bestegs:bestigits:bestigs, bestiges:bestigen:bestiget:bestigna:bestigande:
+CUSTOM: y n
+592645r3<substantiv>bestigare:bestigare:bestigares:bestigaren:bestigarens:bestigare:bestigares:bestigarna:bestigarnas
+CUSTOM: y y bestigar +bestigar
+568919r3<adjektiv>bestigbar:bestigbar:bestigbart:bestigbara:bestigbara::::
+565617r3<adjektiv>bestiglig:bestiglig:bestigligt:bestigliga:bestigliga::::
+592651r5<substantiv>bestigning:bestigning:bestignings:bestigningen:bestigningens:bestigningar:bestigningars:bestigningarna:bestigningarnas
+CUSTOM: y y bestignings
+592657r3<verb>bestjäla:bestjäla:bestal:bestulit:bestjäl:bestjäl:bestjälas:bestals:bestulits:bestjäls:bestulen:bestulet:bestulna::
+546264r4<verb>bestorma:bestorma:bestormade:bestormat:bestormar:bestorma:bestormas:bestormades:bestormats:bestormas:bestormad:bestormat:bestormade::
+546265r5<verb>bestraffa:bestraffa:bestraffade:bestraffat:bestraffar:bestraffa:bestraffas:bestraffades:bestraffats:bestraffas:bestraffad:bestraffat:bestraffade:bestraffande:
+689072r3<adjektiv>bestraffande:bestraffande:bestraffande:bestraffande:bestraffande:!:!:!:
+971457r3<substantiv>bestraffande:bestraffande:bestraffandes:bestraffandet:bestraffandets::::
+592663r3<substantiv>bestraffning:bestraffning:bestraffnings:bestraffningen:bestraffningens:bestraffningar:bestraffningars:bestraffningarna:bestraffningarnas
+CUSTOM: y y bestraffnings
+592664r5<verb>bestrida:bestrida:bestred, bestridde:bestridit, bestritt:bestrider:bestrid:bestridas:bestreds:bestridits, bestritts:bestrids, bestrides:bestriden, bestridd:bestridet, bestritt:bestridna, bestridda:bestridande:
+592673r3<adjektiv>bestruken:bestruken:bestruket:bestrukna:bestrukna::::
+592676r4<verb>bestryka:bestryka:beströk:bestrukit:bestryker:bestryk:bestrykas:beströks:bestrukits:bestryks, bestrykes:bestruken:bestruket:bestrukna::
+592685r3<substantiv>bestrykning:bestrykning:bestryknings:bestrykningen:bestrykningens:bestrykningar:bestrykningars:bestrykningarna:bestrykningarnas
+CUSTOM: y y bestryknings
+546266r4<verb>bestråla:bestråla:bestrålade:bestrålat:bestrålar:bestråla:bestrålas:bestrålades:bestrålats:bestrålas:bestrålad:bestrålat:bestrålade::
+659890r3<substantiv>bestrålning:bestrålning:bestrålnings:bestrålningen:bestrålningens:bestrålningar:bestrålningars:bestrålningarna:bestrålningarnas
+CUSTOM: y y bestrålnings
+733108r3<verb>beströ:beströ:beströdde:bestrött:beströr:beströ:beströs:beströddes:beströtts:beströs:beströdd:bestrött:beströdda:beströende:
+659891r3<substantiv>bestseller:bestseller:bestsellers:bestsellern:bestsellerns:bestsellers:bestsellers::
+CUSTOM: y y bestseller
+571323r4<adjektiv>bestulen:bestulen:bestulet:bestulna:bestulna:!:!:!:bestulne
+546267r4<verb>bestycka:bestycka:bestyckade:bestyckat:bestyckar:bestycka:bestyckas:bestyckades:bestyckats:bestyckas:bestyckad:bestyckat:bestyckade::
+659907r3<substantiv>bestyckning:bestyckning:bestycknings:bestyckningen:bestyckningens:bestyckningar:bestyckningars:bestyckningarna:bestyckningarnas
+CUSTOM: y y bestycknings
+592693r3<substantiv>bestyr:bestyr:bestyrs:bestyret:bestyrets:bestyr:bestyrs:bestyren:bestyrens
+592698r3<verb>bestyra:bestyra:bestyrde:bestyrt:bestyr:bestyr:::::::::
+561081r6<verb>bestyrka:bestyrka:bestyrkte:bestyrkt:bestyrker:bestyrk:bestyrkas:bestyrktes:bestyrkts:bestyrks, bestyrkes:bestyrkt:bestyrkt:bestyrkta:bestyrkande:
+DEFINITION 1: Ge bevis på (eller uttrycka stöd för) riktigheten av
+563347r3<adjektiv>bestyrsam:bestyrsam:bestyrsamt:bestyrsamma:bestyrsamma::::
+592700r4<verb>bestå:bestå:bestod:bestått:består:bestå::bestods:beståtts:bestås:::::
+592701r3<adjektiv>bestående:bestående:bestående:bestående:bestående::::
+552240r12<substantiv>bestånd:bestånd:bestånds:beståndet:beståndets:bestånd:bestånds:bestånden:beståndens
+CUSTOM: y y bestånds +bestånds
+800902r3<adjektiv>beståndande:beståndande:beståndande:beståndande:beståndande:!:!:!:
+800903r3<adjektiv>beståndsbildande:beståndsbildande:beståndsbildande:beståndsbildande:beståndsbildande:!:!:!:
+592702r3<substantiv>beståndsdel:beståndsdel:beståndsdels:beståndsdelen:beståndsdelens:beståndsdelar:beståndsdelars:beståndsdelarna:beståndsdelarnas
+898843r4<substantiv>beståndstyp:beståndstyp:beståndstyps:beståndstypen:beståndstypens:beståndstyper:beståndstypers:beståndstyperna:beståndstypernas
+COMPOUND(552240, 550722): bestånd + typ
+800904r3<adjektiv>beståndsvårdande:beståndsvårdande:beståndsvårdande:beståndsvårdande:beståndsvårdande:!:!:!:
+585768r7<verb>beställa:beställa:beställde:beställt:beställer:beställ:beställas:beställdes:beställts:beställs, beställes:beställd:beställt:beställda:beställande:
+609341r3<substantiv>beställare:beställare:beställares:beställaren:beställarens:beställare:beställares:beställarna:beställarnas
+CUSTOM: y y beställar
+592704r6<substantiv>beställning:beställning:beställnings:beställningen:beställningens:beställningar:beställningars:beställningarna:beställningarnas
+CUSTOM: y y beställnings +beställnings
+671686r3<substantiv>beställningsavgift:beställningsavgift:beställningsavgifts:beställningsavgiften:beställningsavgiftens:beställningsavgifter:beställningsavgifters:beställningsavgifterna:beställningsavgifternas
+659916r4<substantiv>beställningsjobb:beställningsjobb:beställningsjobbs:beställningsjobbet:beställningsjobbets:beställningsjobb:beställningsjobbs:beställningsjobben:beställningsjobbens
+COMPOUND(592704, 552536): beställning + jobb
+918977r4<substantiv>beställningsvin:beställningsvin:beställningsvins:beställningsvinet:beställningsvinets:beställningsviner:beställningsviners:beställningsvinerna:beställningsvinernas
+COMPOUND(592704, 600515): beställning + vin
+563350r3<adjektiv>beställsam:beställsam:beställsamt:beställsamma:beställsamma::::
+568922r3<adjektiv>bestämbar:bestämbar:bestämbart:bestämbara:bestämbara::::
+563319r4<adjektiv>bestämd:bestämd:bestämt:bestämda:bestämda:bestämdare:bestämdast:bestämdaste:bestämde
+659918r3<substantiv>bestämdhet:bestämdhet:bestämdhets:bestämdheten:bestämdhetens:!:!:!:!
+CUSTOM: y y bestämdhets
+592705r6<verb>bestämma:bestämma:bestämde:bestämt:bestämmer:bestäm:bestämmas:bestämdes:bestämts:bestäms, bestämmes:bestämd:bestämt:bestämda::
+659950r3<substantiv>bestämmande:bestämmande:bestämmandes:bestämmandet:bestämmandets::::
+CUSTOM: y y bestämmande
+659934r3<substantiv>bestämmanderätt:bestämmanderätt:bestämmanderätts:bestämmanderätten:bestämmanderättens::::
+592707r6<substantiv>bestämmelse:bestämmelse:bestämmelses:bestämmelsen:bestämmelsens:bestämmelser:bestämmelsers:bestämmelserna:bestämmelsernas
+CUSTOM: y y bestämmelse +bestämmelse
+659936r3<substantiv>bestämmelseort:bestämmelseort:bestämmelseorts:bestämmelseorten:bestämmelseortens:bestämmelseorter:bestämmelseorters:bestämmelseorterna:bestämmelseorternas
+659961r6<substantiv>bestämning:bestämning:bestämnings:bestämningen:bestämningens:bestämningar:bestämningars:bestämningarna:bestämningarnas
+CUSTOM: y y bestämnings +bestämnings
+969217r4<substantiv>bestämningsord:bestämningsord:bestämningsords:bestämningsordet:bestämningsordets:bestämningsord:bestämningsords:bestämningsorden:bestämningsordens
+COMPOUND(659961, 555138): bestämning + ord
+592706r3<adverb>bestämt:bestämt
+571523r7<adjektiv>beständig:beständig:beständigt:beständiga:beständiga:beständigare:beständigast:beständigaste:beständige::::::::
+592708r6<substantiv>beständighet:beständighet:beständighets:beständigheten:beständighetens:!:!:!:!
+CUSTOM: y y beständighets +beständighets
+659969r5<verb>bestänka:bestänka:bestänkte:bestänkt:bestänker:bestänk:bestänkas:bestänktes:bestänkts:bestänks, bestänkes:bestänkt:bestänkt:bestänkta:bestänkande:
+969226r3<substantiv>bestänkning:bestänkning:bestänknings:bestänkningen:bestänkningens::::
+592709r4<adjektiv>bestört:bestört:bestört:bestörta:bestörta::::bestörte::::::::
+592710r3<substantiv>bestörtning:bestörtning:bestörtnings:bestörtningen:bestörtningens:!:!:!:!
+CUSTOM: y y bestörtnings
+546268r5<verb>besudla:besudla:besudlade:besudlat:besudlar:besudla:besudlas:besudlades:besudlats:besudlas:besudlad:besudlat:besudlade:besudlande:
+592711r4<adjektiv>besutten:besutten:besuttet:besuttna:besuttna::::besuttne
+546269r5<verb>besvara:besvara:besvarade:besvarat:besvarar:besvara:besvaras:besvarades:besvarats:besvaras:besvarad:besvarat:besvarade:besvarande:
+592712r3<substantiv>besvikelse:besvikelse:besvikelses:besvikelsen:besvikelsens:besvikelser:besvikelsers:besvikelserna:besvikelsernas
+CUSTOM: y y besvikelse
+571324r4<adjektiv>besviken:besviken:besviket:besvikna:besvikna::::besvikne
+790050r3<adjektiv>besvågrad:besvågrad:besvågrat:besvågrade:besvågrade:!:!:!:
+552241r9<substantiv>besvär:besvär:besvärs:besväret:besvärets:besvär:besvärs:besvären:besvärens
+CUSTOM: y y besvärs +besvärs
+546270r6<verb>besvära:besvära:besvärade:besvärat:besvärar:besvära:besväras:besvärades:besvärats:besväras:besvärad:besvärat:besvärade:besvärande:
+571325r3<adjektiv>besvärad:besvärad:besvärat:besvärade:besvärade:!:!:!:
+659976r3<adjektiv>besvärande:besvärande:besvärande:besvärande:besvärande:!:!:!:
+592713r7<verb>besvärja:besvärja:besvor, besvärjde:besvurit, besvärjt:besvär, besvärjer:besvär, besvärj:besvärjas:besvors, besvärjdes:besvurits, besvärjts:besvärs, besvärjes, besvärjs:besvuren:besvuret:besvurna:besvärjande:
+615151r3<substantiv>besvärjare:besvärjare:besvärjares:besvärjaren:besvärjarens:besvärjare:besvärjares:besvärjarna:besvärjarnas
+CUSTOM: y y besvärjar
+592725r3<substantiv>besvärjelse:besvärjelse:besvärjelses:besvärjelsen:besvärjelsens:besvärjelser:besvärjelsers:besvärjelserna:besvärjelsernas
+CUSTOM: y y besvärjelse +besvärjelse
+565620r5<adjektiv>besvärlig:besvärlig:besvärligt:besvärliga:besvärliga:besvärligare:besvärligast:besvärligaste:besvärlige
+592726r3<substantiv>besvärlighet:besvärlighet:besvärlighets:besvärligheten:besvärlighetens:besvärligheter:besvärligheters:besvärligheterna:besvärligheternas
+CUSTOM: y y besvärlighets
+563672r3<adjektiv>besvärsfri:besvärsfri:besvärsfritt:besvärsfria:besvärsfria::::
+896532r3<substantiv>besvärsrätt:besvärsrätt:besvärsrätts:besvärsrätten:besvärsrättens::::
+896536r3<substantiv>besvärstid:besvärstid:besvärstids:besvärstiden:besvärstidens:besvärstider:besvärstiders:besvärstiderna:besvärstidernas
+565621r4<adjektiv>besynnerlig:besynnerlig:besynnerligt:besynnerliga:besynnerliga:besynnerligare:besynnerligast:besynnerligaste:besynnerlige
+659977r3<substantiv>besynnerlighet:besynnerlighet:besynnerlighets:besynnerligheten:besynnerlighetens:besynnerligheter:besynnerligheters:besynnerligheterna:besynnerligheternas
+CUSTOM: y y besynnerlighets
+627907r4<verb>beså:beså:besådde:besått:besår:beså:besås:besåddes:besåtts:besås:besådd:besått:besådda:besående:
+592734r7<verb>besätta:besätta:besatte:besatt:besätter:besätt:besättas:besattes:besatts:besätts, besättes:besatt:besatt:besatta:besättande:
+871767r3<substantiv>besättande:besättande:besättandes:besättandet:besättandets::::
+592736r5<substantiv>besättning:besättning:besättnings:besättningen:besättningens:besättningar:besättningars:besättningarna:besättningarnas
+CUSTOM: y y besättnings +besättnings
+659979r4<substantiv>besättningsman:besättningsman:besättningsmans:besättningsmannen:besättningsmannens:besättningsmän:besättningsmäns:besättningsmännen:besättningsmännens
+COMPOUND(592736, 557796): besättning + man
+552242r13<substantiv>besök:besök:besöks:besöket:besökets:besök:besöks:besöken:besökens
+CUSTOM: y y besöks +besöks
+585813r5<verb>besöka:besöka:besökte:besökt:besöker:besök:besökas:besöktes:besökts:besöks, besökes:besökt:besökt:besökta::
+659985r3<substantiv>besökande:besökande:besökandes:besökandet:besökandets::::
+637082r3<substantiv>besökande:besökande:besökandes:besökanden:besökandens:besökande:besökandes:besökandena:besökandenas
+592737r4<substantiv>besökare:besökare:besökares:besökaren:besökarens:besökare:besökares:besökarna:besökarnas
+CUSTOM: y y besökar
+659987r4<substantiv>besöksrum:besöksrum:besöksrums:besöksrummet:besöksrummets:besöksrum:besöksrums:besöksrummen:besöksrummens
+COMPOUND(552242, 571182): besök + rum
+659989r4<substantiv>besökstid:besökstid:besökstids:besökstiden:besökstidens:besökstider:besökstiders:besökstiderna:besökstidernas
+COMPOUND(552242, 550665): besök + tid
+659997r4<verb>besörja:besörja:besörjde:besörjt:besörjer:besörj:besörjas:besörjdes:besörjts:besörjs:besörjd:besörjt:besörjda:besörjande:
+CUSTOM: y n
+592738r3<substantiv>bet:bet:!:!:!:!:!:!:!
+546271r5<verb>beta:beta:betade:betat:betar:beta:betas:betades:betats:betas:betad:betat:betade:betande:
+CUSTOM: y y betes
+593750r8<substantiv>beta:beta:betas:betan:betans:betor:betors:betorna:betornas
+662159r3<substantiv>beta:beta:betas:betat:betats::::
+758840r3<substantiv>betablockerare:betablockerare:betablockerares:betablockeraren:betablockerarens:betablockerare:betablockerares:betablockerarna:betablockerarnas
+659998r4<verb>betacka:betacka:betackade:betackat:betackar:betacka:betackas:betackades:betackats:betackas::::betackande:
+865013r3<verb>betaga:betaga:betog:betagit:betager::betagas:betogs:betagits:betages:::::
+735710r3<adjektiv>betagande:betagande:betagande:betagande:betagande:!:!:!:
+659999r3<adjektiv>betagen:betagen:betaget:betagna:betagna::::
+969235r3<substantiv>betagenhet:betagenhet:betagenhets:betagenheten:betagenhetens::::
+752378r3<substantiv>betakaroten:betakaroten:betakarotens:betakarotenet:betakarotenets::::
+546272r9<verb>betala:betala:betalade:betalat:betalar:betala:betalas:betalades:betalats:betalas:betald, betalad:betalt, betalat:betalda:betalande:
+CUSTOM: y y betal
+660000r3<adjektiv>betalande:betalande:betalande:betalande:betalande:!:!:!:
+888525r3<substantiv>betalare:betalare:betalares:betalaren:betalarens:betalare:betalares:betalarna:betalarnas
+CUSTOM: y y betalar +betalar
+568925r3<adjektiv>betalbar:betalbar:betalbart:betalbara:betalbara::::
+660001r4<substantiv>betalkort:betalkort:betalkorts:betalkortet:betalkortets:betalkort:betalkorts:betalkorten:betalkortens
+COMPOUND(546272, 552580): betala + kort
+601298r3<substantiv>betalkurs:betalkurs:betalkurs:betalkursen:betalkursens:betalkurser:betalkursers:betalkurserna:betalkursernas
+596479r7<substantiv>betalning:betalning:betalnings:betalningen:betalningens:betalningar:betalningars:betalningarna:betalningarnas
+CUSTOM: y y betalnings +betalnings
+606708r3<substantiv>betalningsanstånd:betalningsanstånd:betalningsanstånds:betalningsanståndet:betalningsanståndets:betalningsanstånd:betalningsanstånds:betalningsanstånden:betalningsanståndens
+563675r3<adjektiv>betalningsfri:betalningsfri:betalningsfritt:betalningsfria:betalningsfria::::
+640350r4<substantiv>betalningsföreläggande:betalningsföreläggande:betalningsföreläggandes:betalningsföreläggandet:betalningsföreläggandets:betalningsförelägganden:betalningsföreläggandens:betalningsföreläggandena:betalningsföreläggandenas
+COMPOUND(596479, 593133): betalning + föreläggande
+758846r4<substantiv>betalningsinställelse:betalningsinställelse:betalningsinställelses:betalningsinställelsen:betalningsinställelsens:betalningsinställelser:betalningsinställelsers:betalningsinställelserna:betalningsinställelsernas
+COMPOUND(596479, 758847): betalning + inställelse
+571524r3<adjektiv>betalningsskyldig:betalningsskyldig:betalningsskyldigt:betalningsskyldiga:betalningsskyldiga::::
+612376r3<substantiv>betalningsställe:betalningsställe:betalningsställes:betalningsstället:betalningsställets:betalningsställen:betalningsställens:betalningsställena:betalningsställenas
+884561r3<adjektiv>betalningssvag:betalningssvag:betalningssvagt:betalningssvaga:betalningssvaga::::::::::::
+899019r3<substantiv>betal-tv:betal-tv:::::::
+864959r3<substantiv>betastrålning:betastrålning:betastrålnings:betastrålningen:betastrålningens::::
+878392r3<substantiv>betaversion:betaversion:betaversions:betaversionen:betaversionens:betaversioner:betaversioners:betaversionerna:betaversionernas
+599782r3<substantiv>bete:bete:betes:beten:betens:betar:betars:betarna:betarnas
+631543r5<substantiv>bete:bete:betes:betet:betets:beten:betens:betena:betenas
+585878r3<verb>bete:bete:betedde:betett:beter:bete:!:!:!:!:::::
+546273r4<verb>beteckna:beteckna:betecknade:betecknat:betecknar:beteckna:betecknas:betecknades:betecknats:betecknas:betecknad:betecknat:betecknade::
+571326r3<adjektiv>betecknande:betecknande:betecknande:betecknande:betecknande:!:!:!:
+550884r5<substantiv>beteckning:beteckning:betecknings:beteckningen:beteckningens:beteckningar:beteckningars:beteckningarna:beteckningarnas
+CUSTOM: y y betecknings +betecknings
+612384r7<substantiv>beteende:beteende:beteendes:beteendet:beteendets:beteenden:beteendens:beteendena:beteendenas
+CUSTOM: y y beteende
+728901r4<substantiv>beteendemönster:beteendemönster:beteendemönsters:beteendemönstret:beteendemönstrets:beteendemönster:beteendemönsters:beteendemönstren:beteendemönstrens
+COMPOUND(612384, 621588): beteende + mönster
+752382r3<substantiv>beteendevetare:beteendevetare:beteendevetares:beteendevetaren:beteendevetarens:beteendevetare:beteendevetares:beteendevetarna:beteendevetarnas
+565622r3<adjektiv>beteendevetenskaplig:beteendevetenskaplig:beteendevetenskapligt:beteendevetenskapliga:beteendevetenskapliga::::
+969239r3<substantiv>betelnöt:betelnöt:betelnöts:betelnöten:betelnötens:betelnötter:betelnötters:betelnötterna:betelnötternas
+660002r4<substantiv>betesmark:betesmark:betesmarks:betesmarken:betesmarkens:betesmarker:betesmarkers:betesmarkerna:betesmarkernas
+COMPOUND(546271, 549995): beta + mark
+969247r4<substantiv>betfält:betfält:betfälts:betfältet:betfältets:betfält:betfälts:betfälten:betfältens
+COMPOUND(593750, 552397): beta + fält
+595903r6<substantiv>beting:beting:betings:betinget:betingets:beting:betings:betingen:betingens
+CUSTOM: y y betings
+546274r5<verb>betinga:betinga:betingade:betingat:betingar:betinga:betingas:betingades:betingats:betingas:betingad:betingat:betingade:betingande:
+595909r3<adjektiv>betingad:betingad:betingat:betingade:betingade:!:!:!:
+595910r3<substantiv>betingelse:betingelse:betingelses:betingelsen:betingelsens:betingelser:betingelsers:betingelserna:betingelsernas
+CUSTOM: y y betingelse
+595911r3<substantiv>betingning:betingning:betingnings:betingningen:betingningens:betingningar:betingningars:betingningarna:betingningarnas
+CUSTOM: y y betingnings
+864976r4<substantiv>betingsarbetare:betingsarbetare:betingsarbetares:betingsarbetaren:betingsarbetarens:betingsarbetare:betingsarbetares:betingsarbetarna:betingsarbetarnas
+COMPOUND(595903, 561048): beting + arbetare
+864964r4<substantiv>betingsarbete:betingsarbete:betingsarbetes:betingsarbetet:betingsarbetets:betingsarbeten:betingsarbetens:betingsarbetena:betingsarbetenas
+COMPOUND(595903, 612263): beting + arbete
+864972r3<substantiv>betingsläsning:betingsläsning:betingsläsnings:betingsläsningen:betingsläsningens::::
+864982r3<verb>betitla:betitla:betitlade:betitlat:betitlar:betitla:betitlas:betitlades:betitlats:betitlas:betitlad:betitlat:betitlade:betitlande:
+660006r3<adjektiv>betitlad:betitlad:betitlat:betitlade:betitlade:!:!:!:
+864988r3<verb>betitta:betitta:betittade:betittat:betittar:betitta:betittas:betittades:betittats:betittas::::betittande:
+790053r3<adjektiv>betittad:betittad:betittat:betittade:betittade:!:!:!:
+546275r5<verb>betjäna:betjäna:betjänade:betjänat:betjänar:betjäna:betjänas:betjänades:betjänats:betjänas:betjänad:betjänat:betjänade:betjänande:
+660007r5<substantiv>betjäning:betjäning:betjänings:betjäningen:betjäningens:betjäningar:betjäningars:betjäningarna:betjäningarnas
+CUSTOM: y y betjänings +betjänings
+671568r4<substantiv>betjäningsavgift:betjäningsavgift:betjäningsavgifts:betjäningsavgiften:betjäningsavgiftens:betjäningsavgifter:betjäningsavgifters:betjäningsavgifterna:betjäningsavgifternas
+COMPOUND(660007, 548299): betjäning + avgift
+660011r3<adjektiv>betjänt:betjänt:betjänt:betjänta:betjänta:!:!:!:!
+548364r3<substantiv>betjänt:betjänt:betjänts:betjänten:betjäntens:betjänter:betjänters:betjänterna:betjänternas
+790056r3<adjektiv>betlad:betlad:betlat:betlade:betlade:!:!:!:
+CUSTOM: n n n
+782968r3<egennamn>Betlehem:Betlehem:Betlehems
+CUSTOM: y n Betlehems
+864999r3<substantiv>betmedel:betmedel:betmedels:betmedlet:betmedlets:betmedel:betmedels:betmedlen:betmedlens
+865005r4<substantiv>betning:betning:betnings:betningen:betningens:betningar:betningars:betningarna:betningarnas
+969253r4<substantiv>betningsmedel:betningsmedel:betningsmedels:betningsmedlet:betningsmedlets:betningsmedel:betningsmedels:betningsmedlen:betningsmedlens
+COMPOUND(865005, 560532): betning + medel
+960568r4<substantiv>betodlare:betodlare:betodlares:betodlaren:betodlarens:betodlare:betodlares:betodlarna:betodlarnas
+COMPOUND(593750, 615400): beta + odlare
+969259r4<substantiv>betodling:betodling:betodlings:betodlingen:betodlingens:betodlingar:betodlingars:betodlingarna:betodlingarnas
+COMPOUND(593750, 647226): beta + odling
+546276r4<verb>betona:betona:betonade:betonat:betonar:betona:betonas:betonades:betonats:betonas:betonad:betonat:betonade::
+790059r3<adjektiv>betonad:betonad:betonat:betonade:betonade:!:!:!:
+689074r3<substantiv>betonande:betonande:betonandes:betonandet:betonandets::::
+637319r16<substantiv>betong:betong:betongs:betongen:betongens:!:!:!:!
+CUSTOM: y y betong
+610261r3<substantiv>betongblandare:betongblandare:betongblandares:betongblandaren:betongblandarens:betongblandare:betongblandares:betongblandarna:betongblandarnas
+CUSTOM: y y betongblandar
+606714r3<substantiv>betongelement:betongelement:betongelements:betongelementet:betongelementets:betongelement:betongelements:betongelementen:betongelementens
+588699r4<verb>betongera:betongera:betongerade:betongerat:betongerar:betongera:betongeras

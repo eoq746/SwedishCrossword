@@ -1,0 +1,602 @@
+>framfall:framfall:framfalls:framfallet:framfallets:framfall:framfalls:framfallen:framfallens
+845674r3<adjektiv>framfaren:framfaren:framfaret:framfarna:framfarna::::
+617629r3<substantiv>framfart:framfart:framfarts:framfarten:framfartens::::
+617634r3<substantiv>framfot:framfot:framfots:framfoten:framfotens:framfötter:framfötters:framfötterna:framfötternas
+572534r4<adjektiv>framfusig:framfusig:framfusigt:framfusiga:framfusiga:framfusigare:framfusigast:framfusigaste:framfusige
+775140r3<substantiv>framfusighet:framfusighet:framfusighets:framfusigheten:framfusighetens::::
+845677r4<verb>framföda:framföda:framfödde:framfött:framföder:framföd:framfödas:framföddes:framfötts:framföds, framfödes:framfödd:framfött:framfödda::
+COMPOUND(617596, 558895): fram + föda
+617632r3<adverb>framför:framför
+617631r4<preposition>framför:framför
+CUSTOM: y n framför
+617633r4<verb>framföra:framföra:framförde:framfört:framför:framför:framföras:framfördes:framförts:framförs, framföres:framförd:framfört:framförda::
+725454r4<adverb>framförallt:framförallt
+COMPOUND(617631, 620474): framför + allt
+617638r3<substantiv>framförande:framförande:framförandes:framförandet:framförandets:framföranden:framförandens:framförandena:framförandenas
+690302r3<substantiv>framförare:framförare:framförares:framföraren:framförarens:framförare:framförares:framförarna:framförarnas
+CUSTOM: y y framförar
+617640r3<substantiv>framförhållning:framförhållning:framförhållnings:framförhållningen:framförhållningens:framförhållningar:framförhållningars:framförhållningarna:framförhållningarnas
+CUSTOM: y n y
+800944r3<adjektiv>framförliggande:framförliggande:framförliggande:framförliggande:framförliggande:!:!:!:
+CUSTOM: y n y
+800945r3<adjektiv>framförsittande:framförsittande:framförsittande:framförsittande:framförsittande:!:!:!:
+CUSTOM: y n y
+799329r3<adjektiv>framförställd:framförställd:framförställt:framförställda:framförställda::::
+CUSTOM: y n y
+706810r3<adjektiv>framförvarande:framförvarande:framförvarande:framförvarande:framförvarande:!:!:!:
+CUSTOM: y n y
+617641r3<adverb>framgent:framgent
+837485r3<verb>framglida:framglida:framgled:framglidit:framglider:framglid::::::::framglidande:
+936206r4<verb>framgräva:framgräva:framgrävde:framgrävt:framgräver:framgräv:framgrävas:framgrävdes:framgrävts:framgrävs, framgräves:framgrävd:framgrävt:framgrävda:framgrävande:
+COMPOUND(617596, 585783): fram + gräva
+617642r5<verb>framgå:framgå:framgick:framgått:framgår::::::framgången:framgånget:framgångna:framgående:
+596839r5<substantiv>framgång:framgång:framgångs:framgången:framgångens:framgångar:framgångars:framgångarna:framgångarnas
+CUSTOM: y y framgångs
+617643r3<adjektiv>framgångsrik:framgångsrik:framgångsrikt:framgångsrika:framgångsrika:framgångsrikare:framgångsrikast:framgångsrikaste:framgångsrike
+724406r4<substantiv>framgångssaga:framgångssaga:framgångssagas:framgångssagan:framgångssagans:framgångssagor:framgångssagors:framgångssagorna:framgångssagornas
+COMPOUND(596839, 595086): framgång + saga
+617645r4<substantiv>framhjul:framhjul:framhjuls:framhjulet:framhjulets:framhjul:framhjuls:framhjulen:framhjulens
+CUSTOM: y y framhjuls
+706811r4<substantiv>framhjulsdrift:framhjulsdrift:framhjulsdrifts:framhjulsdriften:framhjulsdriftens:!:!:!:!
+COMPOUND(617645, 548714): framhjul + drift
+CUSTOM: y n y
+802167r3<adjektiv>framhjulsdriven:framhjulsdriven:framhjulsdrivet:framhjulsdrivna:framhjulsdrivna::::
+CUSTOM: y n y
+849785r3<substantiv>framhov:framhov:framhovs:framhoven:framhovens:framhovar:framhovars:framhovarna:framhovarnas
+593071r4<verb>framhålla:framhålla:framhöll:framhållit:framhåller:framhåll:framhållas:framhölls:framhållits:framhålls, framhålles:framhållen:framhållet:framhållna::
+657034r3<substantiv>framhållande:framhållande:framhållandes:framhållandet:framhållandets::::
+593075r4<verb>framhärda:framhärda:framhärdade:framhärdat:framhärdar:framhärda::::::::framhärdande:
+593076r4<verb>framhäva:framhäva:framhävde:framhävt:framhäver:framhäv:framhävas:framhävdes:framhävts:framhävs, framhäves:framhävd:framhävt:framhävda:framhävande:
+593077r3<adverb>framifrån:framifrån
+546585r4<verb>framkalla:framkalla:framkallade:framkallat:framkallar:framkalla:framkallas:framkallades:framkallats:framkallas:framkallad:framkallat:framkallade::
+690304r3<substantiv>framkallande:framkallande:framkallandes:framkallandet:framkallandets::::
+617646r3<substantiv>framkallare:framkallare:framkallares:framkallaren:framkallarens:framkallare:framkallares:framkallarna:framkallarnas
+CUSTOM: y y framkallar
+617652r4<substantiv>framkallning:framkallning:framkallnings:framkallningen:framkallningens:framkallningar:framkallningars:framkallningarna:framkallningarnas
+CUSTOM: y y framkallnings
+617653r3<substantiv>framkant:framkant:framkants:framkanten:framkantens::::
+546586r5<verb>framkasta:framkasta:framkastade:framkastat:framkastar:framkasta:framkastas:framkastades:framkastats:framkastas:framkastad:framkastat:framkastade:framkastande:
+951186r4<substantiv>framknä:framknä:framknäs:framknäet:framknäets:framknän:framknäns:framknäna:framknänas
+COMPOUND(617596, 559821): fram + knä
+565898r4<adjektiv>framkomlig:framkomlig:framkomligt:framkomliga:framkomliga:framkomligare:framkomligast:framkomligaste:
+593078r3<substantiv>framkomlighet:framkomlighet:framkomlighets:framkomligheten:framkomlighetens:!:!:!:!
+CUSTOM: y y framkomlighets
+617657r4<verb>framkomma:framkomma:framkom:framkommit:framkommer::::::framkommen:framkommet:framkomna:framkommande:
+593079r5<substantiv>framkomst:framkomst:framkomsts:framkomsten:framkomstens:!:!:!:!
+CUSTOM: y y framkomst
+837506r4<substantiv>framkomsttid:framkomsttid:framkomsttids:framkomsttiden:framkomsttidens:framkomsttider:framkomsttiders:framkomsttiderna:framkomsttidernas
+COMPOUND(593079, 550665): framkomst + tid
+837514r4<substantiv>framkomstväg:framkomstväg:framkomstvägs:framkomstvägen:framkomstvägens:framkomstvägar:framkomstvägars:framkomstvägarna:framkomstvägarnas
+COMPOUND(593079, 552110): framkomst + väg
+589366r3<verb>framkonstruera:framkonstruera:framkonstruerade:framkonstruerat:framkonstruerar:framkonstruera:::::::::
+CUSTOM: n n
+837522r4<verb>framkrypa:framkrypa:framkröp:framkrupit:framkryper:framkryp:::::framkrupen:framkrupet:framkrupna:framkrypande:
+COMPOUND(617596, 585370): fram + krypa
+951200r4<verb>framköra:framköra:framkörde:framkört:framkör:framkör:framköras:framkördes:framkörts:framkörs, framköres:framkörd:framkört:framkörda:framkörande:
+COMPOUND(617596, 556899): fram + köra
+951196r3<adjektiv>framkörd:framkörd:framkört:framkörda:framkörda::::::::::::
+670942r5<substantiv>framkörning:framkörning:framkörnings:framkörningen:framkörningens:framkörningar:framkörningars:framkörningarna:framkörningarnas
+COMPOUND(617596, 631838): fram + körning
+CUSTOM: n n n
+670935r4<substantiv>framkörningsavgift:framkörningsavgift:framkörningsavgifts:framkörningsavgiften:framkörningsavgiftens:framkörningsavgifter:framkörningsavgifters:framkörningsavgifterna:framkörningsavgifternas
+COMPOUND(670942, 548299): framkörning + avgift
+CUSTOM: n n
+790940r3<adjektiv>framlastad:framlastad:framlastat:framlastade:framlastade:!:!:!:
+847450r4<verb>framleda:framleda:framledde:framlett:framleder:framled:framledas:framleddes:framletts:framleds, framledes:framledd:framlett:framledda:framledande:
+COMPOUND(617596, 555975): fram + leda
+CUSTOM: y n framledes
+837531r4<verb>framleta:framleta:framletade:framletat:framletar:framleta:framletas:framletades:framletats:framletas:framletad:framletat:framletade:framletande:
+COMPOUND(617596, 547282): fram + leta
+657038r6<verb>framleva:framleva:framlevde:framlevt, framlevat:framlever:framlev:framlevas:framlevdes:framlevts:framlevs, framleves:framlevd:framlevt:framlevda::
+COMPOUND(617596, 560019): fram + leva
+617661r4<adjektiv>framliden:framliden:framlidet:framlidna:framlidna::::framlidne
+617663r3<substantiv>framlob:framlob:framlobs:framloben:framlobens:framlober:framlobers:framloberna:framlobernas
+926068r4<substantiv>framlår:framlår:framlårs:framlåret:framlårets:framlår:framlårs:framlåren:framlårens
+COMPOUND(617596, 560217): fram + lår
+CUSTOM: n n
+593081r5<verb>framlägga:framlägga:framlade:framlagt:framlägger:framlägg:framläggas:framlades:framlagts:framläggs, framlägges:framlagd:framlagt:framlagda:framläggande:
+617671r3<substantiv>framläggning:framläggning:framläggnings:framläggningen:framläggningens:framläggningar:framläggningars:framläggningarna:framläggningarnas
+CUSTOM: y n
+592391r3<adverb>framlänges:framlänges
+679385r3<substantiv>frammakningsugn:frammakningsugn:frammakningsugns:frammakningsugnen:frammakningsugnens:frammakningsugnar:frammakningsugnars:frammakningsugnarna:frammakningsugnarnas
+CUSTOM: n n
+546587r5<verb>frammana:frammana:frammanade:frammanat:frammanar:frammana:frammanas:frammanades:frammanats:frammanas:frammanad:frammanat:frammanade:frammanande:
+845692r4<verb>frammata:frammata:frammatade:frammatat:frammatar:frammata:frammatas:frammatades:frammatats:frammatas:frammatad:frammatat:frammatade:frammatande:
+COMPOUND(617596, 547331): fram + mata
+593087r3<adverb>framme:framme
+790943r3<adjektiv>frammonterad:frammonterad:frammonterat:frammonterade:frammonterade:!:!:!:
+CUSTOM: n n
+790946r3<adjektiv>frammumlad:frammumlad:frammumlat:frammumlade:frammumlade:!:!:!:
+CUSTOM: y n
+657040r3<preposition>framom:framom
+921712r3<adjektiv>framplockad:framplockad:framplockat:framplockade:framplockade:!:!:!:::::::::
+921717r3<adjektiv>framprovad:framprovad:framprovat:framprovade:framprovade:!:!:!:::::::::
+586669r3<verb>framprovocera:framprovocera:framprovocerade:framprovocerat:framprovocerar:framprovocera:::::::::
+CUSTOM: y n y
+593088r3<adverb>frampå:frampå
+593089r3<preposition>frampå:frampå
+790949r3<adjektiv>framropad:framropad:framropat:framropade:framropade:!:!:!:
+742048r3<adjektiv>framrusande:framrusande:framrusande:framrusande:framrusande:!:!:!:
+CUSTOM: y n
+725412r3<verb>framrycka:framrycka:framryckte:framryckt:framrycker:framryck:framryckas:framrycktes:framryckts:framrycks:framryckt:framryckt:framryckta:framryckande:
+CUSTOM: y n y
+711783r4<substantiv>framryckning:framryckning:framrycknings:framryckningen:framryckningens:framryckningar:framryckningars:framryckningarna:framryckningarnas
+COMPOUND(617596, 696526): fram + ryckning
+CUSTOM: y n y
+657043r3<verb>framräcka:framräcka:framräckte:framräckt:framräcker:framräck:::::framräckt:framräckt:framräckta::
+CUSTOM: y n y
+790952r3<adjektiv>framräknad:framräknad:framräknat:framräknade:framräknade:!:!:!:
+CUSTOM: y n y
+896890r3<substantiv>framräknande:framräknande:framräknandes:framräknandet:framräknandets::::
+657048r3<substantiv>framsida:framsida:framsidas:framsidan:framsidans:framsidor:framsidors:framsidorna:framsidornas
+775144r3<adjektiv>framsipprande:framsipprande:framsipprande:framsipprande:framsipprande:!:!:!:
+CUSTOM: y n y
+837544r3<substantiv>framskaffande:framskaffande:framskaffandes:framskaffandet:framskaffandets::::
+CUSTOM: y n y
+657049r3<adjektiv>framskjutande:framskjutande:framskjutande:framskjutande:framskjutande:!:!:!:
+CUSTOM: y n y
+657050r3<adjektiv>framskjuten:framskjuten:framskjutet:framskjutna:framskjutna:!:!:!:
+657051r4<verb>framskrida:framskrida:framskred:framskridit:framskrider:framskrid::::::::framskridande:
+COMPOUND(617596, 626282): fram + skrida
+CUSTOM: y n y
+657054r3<adjektiv>framskriden:framskriden:framskridet:framskridna:framskridna:!:!:!:!
+546588r3<verb>framskymta:framskymta:framskymtade:framskymtat:framskymtar:framskymta:::::::::
+CUSTOM: y n y
+949661r3<adjektiv>framspelad:framspelad:framspelat:framspelade:framspelade:!:!:!:::::::::
+657055r3<adjektiv>framsprungen:framsprungen:framsprunget:framsprungna:framsprungna::::
+CUSTOM: y n y
+935303r4<substantiv>framstam:framstam:framstams:framstammen:framstammens:framstammar:framstammars:framstammarna:framstammarnas
+COMPOUND(617596, 619720): fram + stam
+546589r4<verb>framstamma:framstamma:framstammade:framstammat:framstammar:framstamma:framstammas:framstammades:framstammats:framstammas:framstammad:framstammat:framstammade::
+CUSTOM: y n y
+607120r5<substantiv>framsteg:framsteg:framstegs:framsteget:framstegets:framsteg:framstegs:framstegen:framstegens
+CUSTOM: y y
+563276r3<adjektiv>framstegsfientlig:framstegsfientlig:framstegsfientligt:framstegsfientliga:framstegsfientliga::::
+CUSTOM: y n y
+599811r3<substantiv>framstegstanke:framstegstanke:framstegstankes:framstegstanken:framstegstankens:framstegstankar:framstegstankars:framstegstankarna:framstegstankarnas
+CUSTOM: n n y
+882503r4<substantiv>framstegstro:framstegstro:framstegstros:framstegstron:framstegstrons:!:!:!:!
+COMPOUND(607120, 624935): framsteg + tro
+563272r4<adjektiv>framstegsvänlig:framstegsvänlig:framstegsvänligt:framstegsvänliga:framstegsvänliga::::
+COMPOUND(607120, 563144): framsteg + vänlig
+CUSTOM: y n y
+657056r3<adjektiv>framstormande:framstormande:framstormande:framstormande:framstormande:!:!:!:
+CUSTOM: y n y
+690306r3<adjektiv>framsträckt:framsträckt:framsträckt:framsträckta:framsträckta:!:!:!:
+CUSTOM: y n
+617680r3<adverb>framstupa:framstupa
+CUSTOM: y n y
+617681r3<verb>framstå:framstå:framstod:framstått:framstår::::::::::
+617682r3<adjektiv>framstående:framstående:framstående:framstående:framstående:!:!:!:
+617679r6<verb>framställa:framställa:framställde:framställt:framställer:framställ:framställas:framställdes:framställts:framställs, framställes:framställd:framställt:framställda:framställande:
+CUSTOM: y n y
+617683r3<substantiv>framställan:::framställan:framställans::::
+690308r3<substantiv>framställande:framställande:framställandes:framställandet:framställandets::::
+657058r3<substantiv>framställare:framställare:framställares:framställaren:framställarens:framställare:framställares:framställarna:framställarnas
+CUSTOM: y y framställar
+617685r6<substantiv>framställning:framställning:framställnings:framställningen:framställningens:framställningar:framställningars:framställningarna:framställningarnas
+CUSTOM: y y framställnings +framställnings
+617686r3<substantiv>framstöt:framstöt:framstöts:framstöten:framstötens:framstötar:framstötars:framstötarna:framstötarnas
+617687r3<adjektiv>framsynt:framsynt:framsynt:framsynta:framsynta:framsyntare:framsyntast:framsyntaste:framsynte
+617692r3<substantiv>framsynthet:framsynthet:framsynthets:framsyntheten:framsynthetens::::
+CUSTOM: y y framsynthets
+769088r6<verb>framsäga:framsäga:framsade:framsagt:framsäger:framsäg:framsägas:framsades:framsagts:framsäges, framsägs:framsagd:framsagt:framsagda:framsägande:
+COMPOUND(617596, 557747): fram + säga
+837550r3<substantiv>framsägning:framsägning:framsägnings:framsägningen:framsägningens::::
+612476r3<substantiv>framsäte:framsäte:framsätes:framsätet:framsätets:framsäten:framsätens:framsätena:framsätenas
+CUSTOM: y y framsätes
+837554r6<verb>framtaga, framta:framta, framtaga:framtog:framtagit:framtar, framtager:framta, framtag:framtas, framtagas:framtogs:framtagits:framtas, framtages, framtags:framtagen:framtaget:framtagna:framtagande:
+COMPOUND(617596, 555219): fram + ta, taga
+690311r3<substantiv>framtagande:framtagande:framtagandes:framtagandet:framtagandets::::
+617696r3<substantiv>framtand:framtand:framtands:framtanden:framtandens:framtänder:framtänders:framtänderna:framtändernas
+617704r3<substantiv>framtass:framtass:framtass:framtassen:framtassens:framtassar:framtassars:framtassarna:framtassarnas
+555228r5<substantiv>framtid:framtid:framtids:framtiden:framtidens:framtider:framtiders:framtiderna:framtidernas
+CUSTOM: y y framtids
+617711r3<adjektiv>framtida:framtida:framtida:framtida:framtida:!:!:!:
+790955r3<adjektiv>framtidsinriktad:framtidsinriktad:framtidsinriktat:framtidsinriktade:framtidsinriktade:!:!:!:
+601937r3<substantiv>framtidsplan:framtidsplan:framtidsplans:framtidsplanen:framtidsplanens:framtidsplaner:framtidsplaners:framtidsplanerna:framtidsplanernas
+708214r4<substantiv>framtidstro:framtidstro:framtidstros:framtidstron:framtidstrons:!:!:!:!
+COMPOUND(555228, 624935): framtid + tro
+601945r3<substantiv>framtidsutsikt:framtidsutsikt:framtidsutsikts:framtidsutsikten:framtidsutsiktens:framtidsutsikter:framtidsutsikters:framtidsutsikterna:framtidsutsikternas
+760916r4<substantiv>framtidsvy:framtidsvy:framtidsvys:framtidsvyn:framtidsvyns:framtidsvyer:framtidsvyers:framtidsvyerna:framtidsvyernas
+COMPOUND(555228, 557764): framtid + vy
+617712r3<adverb>framtill:framtill
+617713r4<verb>framtona:framtona:framtonade:framtonat:framtonar:framtona:framtonas:framtonades:framtonats:framtonas:framtonad:framtonat:framtonade:framtonande:
+617717r3<substantiv>framtoning:framtoning:framtonings:framtoningen:framtoningens:framtoningar:framtoningars:framtoningarna:framtoningarnas
+CUSTOM: y y framtonings
+837567r4<verb>framtrolla:framtrolla:framtrollade:framtrollat:framtrollar:framtrolla:framtrollas:framtrollades:framtrollats:framtrollas:framtrollad:framtrollat:framtrollade:framtrollande:
+COMPOUND(617596, 547870): fram + trolla
+617722r5<verb>framträda:framträda:framträdde:framträtt:framträder:framträd:framträdas:framträddes:framträtts:framträds, framträdes:framträdd:framträtt:framträdda:framträdande:
+617723r4<substantiv>framträdande:framträdande:framträdandes:framträdandet:framträdandets:framträdanden:framträdandens:framträdandena:framträdandenas
+617725r3<adjektiv>framträdande:framträdande:framträdande:framträdande:framträdande:!:!:!:
+837578r3<substantiv>framträngande:framträngande:framträngandes:framträngandet:framträngandets:framtränganden:framträngandens:framträngandena:framträngandenas
+617726r3<adjektiv>framtung:framtung:framtungt:framtunga:framtunga::::
+546590r4<verb>framtvinga:framtvinga:framtvingade:framtvingat:framtvingar:framtvinga:framtvingas:framtvingades:framtvingats:framtvingas:framtvingad:framtvingat:framtvingade::
+657060r3<substantiv>framtvingande:framtvingande:framtvingandes:framtvingandet:framtvingandets::::
+845708r4<verb>framvisa:framvisa:framvisade:framvisat:framvisar:framvisa:framvisas:framvisades:framvisats:framvisas:framvisad:framvisat:framvisade:framvisande:
+COMPOUND(617596, 548043): fram + visa
+955926r3<adjektiv>framvällande:framvällande:framvällande:framvällande:framvällande:!:!:!:::::::::
+837591r3<adjektiv>framväxt:framväxt:framväxt:framväxta:framväxta::::
+837587r3<substantiv>framväxt:framväxt:framväxts:framväxten:framväxtens::::
+592374r4<adverb>framåt:framåt
+CUSTOM: y n
+617729r3<substantiv>framåtanda:framåtanda:framåtandas:framåtandan:framåtandans::::
+837593r3<substantiv>framåtblick:framåtblick:framåtblicks:framåtblicken:framåtblickens:framåtblickar:framåtblickars:framåtblickarna:framåtblickarnas
+742049r3<adjektiv>framåtblickande:framåtblickande:framåtblickande:framåtblickande:framåtblickande:!:!:!:
+657062r4<adjektiv>framåtböjd:framåtböjd:framåtböjt:framåtböjda:framåtböjda::::framåtböjde
+800946r3<adjektiv>framåtgripande:framåtgripande:framåtgripande:framåtgripande:framåtgripande:!:!:!:
+837602r3<substantiv>framåtgående:framåtgående:framåtgåendes:framåtgåendet:framåtgåendets::::
+742050r3<adjektiv>framåtlutad:framåtlutad:framåtlutat:framåtlutade:framåtlutade:!:!:!:
+775145r3<adjektiv>framåtlutande:framåtlutande:framåtlutande:framåtlutande:framåtlutande:!:!:!:
+800947r3<adjektiv>framåtpekande:framåtpekande:framåtpekande:framåtpekande:framåtpekande:!:!:!:
+766881r3<adjektiv>framåtriktad:framåtriktad:framåtriktat:framåtriktade:framåtriktade:!:!:!:
+914079r4<substantiv>framåtrörelse:framåtrörelse:framåtrörelses:framåtrörelsen:framåtrörelsens:framåtrörelser:framåtrörelsers:framåtrörelserna:framåtrörelsernas
+COMPOUND(592374, 611968): framåt + rörelse
+733375r3<substantiv>framåtskridande:framåtskridande:framåtskridandes:framåtskridandet:framåtskridandets:framåtskridanden:framåtskridandens:framåtskridandena:framåtskridandenas
+775149r3<adjektiv>framåtsträckt:framåtsträckt:framåtsträckt:framåtsträckta:framåtsträckta::::
+742053r3<adjektiv>framåtsträvande:framåtsträvande:framåtsträvande:framåtsträvande:framåtsträvande:!:!:!:
+742054r3<adjektiv>framåtsyftande:framåtsyftande:framåtsyftande:framåtsyftande:framåtsyftande:!:!:!:
+775146r3<adjektiv>framåtvänd:framåtvänd:framåtvänt:framåtvända:framåtvända::::
+620545r3<adverb>framöver:framöver
+625357r4<substantiv>franc:franc:francs:francen:francens:franc:francs:francen:francens
+DEFINITION 1: Valutan i Schweiz och tidigare även Frankrike.
+854451r3<egennamn>Francesco:Francesco:Francescos
+874307r3<egennamn>France Telecom:France Telecom:France Telecoms
+837606r3<substantiv>franchise:franchise:franchises:franchisen:franchisens:franchiser:franchisers:franchiserna:franchisernas
+742055r3<substantiv>franchiseföretag::::::::
+COMPOUND(657063, 552403): franchising + företag
+657063r4<substantiv>franchising:franchising:franchisings:franchisingen:franchisingens::::
+CUSTOM: y y franchise
+971743r3<egennamn>Franciska:Franciska:Franciskas
+742057r5<substantiv>franciskan:franciskan:franciskans:franciskanen:franciskanens:franciskaner:franciskaners:franciskanerna:franciskanernas
+CUSTOM: y y franciskaner
+742056r3<substantiv>franciskanerkloster::::::::
+COMPOUND(742057, 652451): franciskan + kloster
+837614r3<substantiv>franciskankloster:franciskankloster:franciskanklosters:franciskanklostret:franciskanklostrets:franciskankloster:franciskanklosters:franciskanklostren:franciskanklostrens
+978096r4<substantiv>franciskanorden:franciskanorden:franciskanordens:franciskanorden:franciskanordens:franciskanordnar:franciskanordnars:franciskanordnarna:franciskanordnarnas
+COMPOUND(742057, 556486): franciskan + orden
+723428r3<substantiv>francium:francium:franciums:franciumet:franciumets::::
+990341r3<egennamn>François:François:François
+978102r3<substantiv>frangulabark:frangulabark:frangulabarks:frangulabarken:frangulabarkens::::
+625360r4<adjektiv>frank:frank:frankt:franka:franka::::franke
+DEFINITION 1: Uppriktig.
+948528r3<substantiv>franker:::::franker:frankers:frankerna:frankernas
+546591r4<verb>frankera:frankera:frankerade:frankerat:frankerar:frankera:frankeras:frankerades:frankerats:frankeras:frankerad:frankerat:frankerade::
+670961r4<substantiv>frankering:frankering:frankerings:frankeringen:frankeringens:frankeringar:frankeringars:frankeringarna:frankeringarnas
+CUSTOM: y y frankerings
+670960r4<substantiv>frankeringsavgift:frankeringsavgift:frankeringsavgifts:frankeringsavgiften:frankeringsavgiftens:frankeringsavgifter:frankeringsavgifters:frankeringsavgifterna:frankeringsavgifternas
+COMPOUND(670961, 548299): frankering + avgift
+854385r5<egennamn>Frankfurt:Frankfurt:Frankfurts
+CUSTOM: y n Frankfurt
+837620r3<substantiv>frankhet:frankhet:frankhets:frankheten:frankhetens::::
+580171r4<adjektiv>frankisk:frankisk:frankiskt:frankiska:frankiska::::frankiske::::::::
+762420r3<egennamn>Franklin:Franklin:Franklins
+797691r3<adjektiv>frankofil:frankofil:frankofilt:frankofila:frankofila::::
+837624r3<substantiv>frankostämpel:frankostämpel:frankostämpels:frankostämpeln:frankostämpelns:frankostämplar:frankostämplars:frankostämplarna:frankostämplarnas
+837633r3<verb>frankostämpla:frankostämpla:frankostämplade:frankostämplat:frankostämplar:frankostämpla:frankostämplas:frankostämplades:frankostämplats:frankostämplas:frankostämplad:frankostämplat:frankostämplade::
+837641r4<substantiv>frankostämpling:frankostämpling:frankostämplings:frankostämplingen:frankostämplingens:frankostämplingar:frankostämplingars:frankostämplingarna:frankostämplingarnas
+CUSTOM: y y frankostämplings
+837649r3<substantiv>frankostämplingsmaskin::::::::
+COMPOUND(837641, 550005): frankostämpling + maskin
+837650r3<substantiv>frankotecken:frankotecken:frankoteckens:frankotecknet:frankotecknets:frankotecken:frankoteckens:frankotecknen:frankotecknens
+554018r3<egennamn>Frankrike:Frankrike:Frankrikes
+CUSTOM: y n Frankrike
+551179r3<substantiv>frans:frans:frans:fransen:fransens:fransar:fransars:fransarna:fransarnas
+554564r3<egennamn>Frans:Frans:Frans
+837656r3<verb>fransa:fransa:fransade:fransat:fransar:fransa:fransas:fransades:fransats:fransas:fransad:fransat:fransade:fransande:
+837664r3<substantiv>fransflätning:fransflätning:fransflätnings:fransflätningen:fransflätningens::::
+572535r3<adjektiv>fransig:fransig:fransigt:fransiga:fransiga::::
+563214r4<adjektiv>fransk:fransk:franskt:franska:franska:!:!:!:franske
+604484r4<substantiv>franska:franska:franskas:franskan:franskans:!:!:!:!
+DEFINITION 1: Det franska språket
+720794r7<substantiv>franska:franska:franskas:franskan, franskat:franskans, franskats:franskor:franskors:franskorna:franskornas
+DEFINITION 1: En brödsort.
+657065r3<substantiv>franskbröd:franskbröd:franskbröds:franskbrödet:franskbrödets:franskbröd:franskbröds:franskbröden:franskbrödens
+558106r3<substantiv>franskklassicism:franskklassicism:franskklassicisms:franskklassicismen:franskklassicismens:!:!:!:!
+580174r3<adjektiv>franskklassisk:franskklassisk:franskklassiskt:franskklassiska:franskklassiska::::
+837669r3<substantiv>fransklärare:fransklärare:fransklärares:franskläraren:fransklärarens:fransklärare:fransklärares:fransklärarna:fransklärarnas
+877612r3<adjektiv>franskregistrerad:franskregistrerad:franskregistrerat:franskregistrerade:franskregistrerade:!:!:!:
+572538r4<adjektiv>franskspråkig:franskspråkig:franskspråkigt:franskspråkiga:franskspråkiga::::franskspråkige
+742065r3<adjektiv>fransktalande:fransktalande:fransktalande:fransktalande:fransktalande:!:!:!:
+800948r3<adjektiv>fransliknande:fransliknande:fransliknande:fransliknande:fransliknande:!:!:!:
+657071r3<substantiv>fransman:fransman:fransmans:fransmannen:fransmannens:fransmän:fransmäns:fransmännen:fransmännens
+601953r3<substantiv>fransos:fransos:fransos:fransosen:fransosens:fransoser:fransosers:fransoserna:fransosernas
+772907r3<egennamn>Fransson:Fransson:Franssons
+837685r3<adjektiv>fransysk:fransysk:fransyskt:fransyska:fransyska::::
+594058r3<substantiv>fransyska:fransyska:fransyskas:fransyskan:fransyskans:fransyskor:fransyskors:fransyskorna:fransyskornas
+978107r3<substantiv>fransäs:fransäs:fransäs:fransäsen:fransäsens:fransäser:fransäsers:fransäserna:fransäsernas
+CUSTOM: y n
+990265r3<egennamn>Franz:Franz:Franz
+972877r3<egennamn>Franzén:Franzén:Franzéns
+775151r3<adjektiv>frappant:frappant:frappant:frappanta:frappanta::::
+546592r4<verb>frappera:frappera:frapperade:frapperat:frapperar:frappera:frapperas:frapperades:frapperats:frapperas:frapperad:frapperat:frapperade::
+657072r3<adjektiv>frapperande:frapperande:frapperande:frapperande:frapperande:!:!:!:
+548963r5<substantiv>fras:fras:fras:frasen:frasens:fraser:frasers:fraserna:frasernas
+657073r3<verb>frasa:frasa:frasade:frasat:frasar:frasa::::::::frasande:
+690314r3<substantiv>frasande:frasande:frasandes:frasandet:frasandets::::
+978114r3<substantiv>frasbrand:frasbrand:frasbrands:frasbranden:frasbrandens::::
+CUSTOM: y n
+837687r3<substantiv>fraseologi:fraseologi:fraseologis:fraseologin:fraseologins::::
+580177r3<adjektiv>fraseologisk:fraseologisk:fraseologiskt:fraseologiska:fraseologiska::::
+589370r4<verb>frasera:frasera:fraserade:fraserat:fraserar:frasera:fraseras:fraserades:fraserats:fraseras:fraserad:fraserat:fraserade:fraserande:
+657074r3<substantiv>frasering:frasering:fraserings:fraseringen:fraseringens:fraseringar:fraseringars:fraseringarna:fraseringarnas
+CUSTOM: y y fraserings
+563771r3<adjektiv>frasfri:frasfri:frasfritt:frasfria:frasfria::::
+572541r4<adjektiv>frasig:frasig:frasigt:frasiga:frasiga:frasigare:frasigast:frasigaste:
+775153r3<substantiv>frasighet:frasighet:frasighets:frasigheten:frasighetens::::
+837696r3<substantiv>frasmakare:frasmakare:frasmakares:frasmakaren:frasmakarens:frasmakare:frasmakares:frasmakarna:frasmakarnas
+837702r3<substantiv>frasmakeri:frasmakeri:frasmakeris:frasmakeriet:frasmakeriets::::
+797694r3<adjektiv>frasradikal:frasradikal:frasradikalt:frasradikala:frasradikala::::
+837706r3<substantiv>frasradikal:frasradikal:frasradikals:frasradikalen:frasradikalens:frasradikaler:frasradikalers:frasradikalerna:frasradikalernas
+837714r3<adjektiv>frasrik:frasrik:frasrikt:frasrika:frasrika::::
+775157r3<substantiv>frasvåffla:frasvåffla:frasvåfflas:frasvåfflan:frasvåfflans:frasvåfflor:frasvåfflors:frasvåfflorna:frasvåfflornas
+586673r4<verb>fraternisera:fraternisera:fraterniserade:fraterniserat:fraterniserar:fraternisera:fraterniseras:fraterniserades:fraterniserats:fraterniseras::::fraterniserande:
+837721r3<substantiv>fraternisering:fraternisering:fraterniserings:fraterniseringen:fraterniseringens::::
+837725r5<substantiv>freak:freak:freaks:freaken:freakens:freakar:freakars:freakarna:freakarnas
+837736r3<verb>freaka:freaka:freakade:freakat:freakar:freaka:::::::::
+604679r15<substantiv>fred:fred:freds:freden:fredens:freder:freders:frederna:fredernas
+CUSTOM: y y freds
+546593r5<verb>freda:freda:fredade:fredat:fredar:freda:fredas:fredades:fredats:fredas:fredad:fredat:fredade:fredande:
+551180r8<substantiv>fredag:fredag:fredags:fredagen:fredagens:fredagar:fredagars:fredagarna:fredagarnas
+CUSTOM: y y fredags
+662276r4<substantiv>fredagsbön:fredagsbön:fredagsböns:fredagsbönen:fredagsbönens:fredagsböner:fredagsböners:fredagsbönerna:fredagsbönernas
+662284r4<substantiv>fredagskväll:fredagskväll:fredagskvälls:fredagskvällen:fredagskvällens:fredagskvällar:fredagskvällars:fredagskvällarna:fredagskvällarnas
+706277r4<substantiv>fredagsmorgon:fredagsmorgon:fredagsmorgons:fredagsmorgonen:fredagsmorgonens:fredagsmorgnar:fredagsmorgnars:fredagsmorgnarna:fredagsmorgnarnas
+COMPOUND(551180, 619001): fredag + morgon
+849796r3<substantiv>fredagsmys:fredagsmys:fredagsmys:fredagsmyset:fredagsmysets::::
+921722r4<substantiv>fredagsvimmel:fredagsvimmel:fredagsvimmels:fredagsvimlet:fredagsvimlets:!:!:!:!
+COMPOUND(551180, 556436): fredag + vimmel
+874715r3<egennamn>Freddie:Freddie:Freddies
+854750r3<egennamn>Frederic:Frederic:Frederics
+762174r3<egennamn>Frederick:Frederick:Fredericks
+965417r3<egennamn>Fredhäll:Fredhäll:Fredhälls
+565899r4<adjektiv>fredlig:fredlig:fredligt:fredliga:fredliga:fredligare:fredligast:fredligaste:fredlige
+662292r11<substantiv>fredlighet:fredlighet:fredlighets:fredligheten:fredlighetens::::
+CUSTOM: y y fredlighets
+564828r4<adjektiv>fredlös:fredlös:fredlöst:fredlösa:fredlösa:!:!:!:fredlöse
+662300r3<substantiv>fredlöshet:fredlöshet:fredlöshets:fredlösheten:fredlöshetens::::
+CUSTOM: y y fredlöshets
+837740r4<substantiv>fredning:fredning:frednings:fredningen:fredningens:fredningar:fredningars:fredningarna:fredningarnas
+CUSTOM: y y frednings
+837748r4<substantiv>fredningstid:fredningstid:fredningstids:fredningstiden:fredningstidens:fredningstider:fredningstiders:fredningstiderna:fredningstidernas
+COMPOUND(837740, 550665): fredning + tid
+554565r3<egennamn>Fredrik:Fredrik:Fredriks
+906613r3<egennamn>Fredrika:Fredrika:Fredrikas
+718392r3<egennamn>Fredriksson:Fredriksson:Fredrikssons
+563368r3<adjektiv>fredsam:fredsam:fredsamt:fredsamma:fredsamma::::
+978118r4<substantiv>fredsappell:fredsappell:fredsappells:fredsappellen:fredsappellens:fredsappeller:fredsappellers:fredsappellerna:fredsappellernas
+COMPOUND(604679, 548219): fred + appell
+705843r4<substantiv>fredsavtal:fredsavtal:fredsavtals:fredsavtalet:fredsavtalets:fredsavtal:fredsavtals:fredsavtalen:fredsavtalens
+COMPOUND(604679, 552215): fred + avtal
+705849r3<adjektiv>fredsbevarande:fredsbevarande:fredsbevarande:fredsbevarande:fredsbevarande:!:!:!:
+662302r4<substantiv>fredsbudskap:fredsbudskap:fredsbudskaps:fredsbudskapet:fredsbudskapets:fredsbudskap:fredsbudskaps:fredsbudskapen:fredsbudskapens
+CUSTOM: y y fredsbudskaps
+662308r4<substantiv>fredsdemonstration:fredsdemonstration:fredsdemonstrations:fredsdemonstrationen:fredsdemonstrationens:fredsdemonstrationer:fredsdemonstrationers:fredsdemonstrationerna:fredsdemonstrationernas
+CUSTOM: y y fredsdemonstrations
+615222r3<substantiv>fredsdomare:fredsdomare:fredsdomares:fredsdomaren:fredsdomarens:fredsdomare:fredsdomares:fredsdomarna:fredsdomarnas
+CUSTOM: y y fredsdomar
+662316r4<substantiv>fredsduva:fredsduva:fredsduvas:fredsduvan:fredsduvans:fredsduvor:fredsduvors:fredsduvorna:fredsduvornas
+662324r4<substantiv>fredsforskare:fredsforskare:fredsforskares:fredsforskaren:fredsforskarens:fredsforskare:fredsforskares:fredsforskarna:fredsforskarnas
+CUSTOM: y y fredsforskar
+662330r4<substantiv>fredsforskning:fredsforskning:fredsforsknings:fredsforskningen:fredsforskningens:fredsforskningar:fredsforskningars:fredsforskningarna:fredsforskningarnas
+COMPOUND(604679, 646379): fred + forskning
+CUSTOM: y y fredsforsknings
+630924r3<substantiv>fredsfot:::::!:!:!:!
+662331r4<substantiv>fredsfråga:fredsfråga:fredsfrågas:fredsfrågan:fredsfrågans:fredsfrågor:fredsfrågors:fredsfrågorna:fredsfrågornas
+701696r4<substantiv>fredsfördrag:fredsfördrag:fredsfördrags:fredsfördraget:fredsfördragets:fredsfördrag:fredsfördrags:fredsfördragen:fredsfördragens
+COMPOUND(604679, 593118): fred + fördrag
+722510r4<substantiv>fredsförhandling:fredsförhandling:fredsförhandlings:fredsförhandlingen:fredsförhandlingens:fredsförhandlingar:fredsförhandlingars:fredsförhandlingarna:fredsförhandlingarnas
+COMPOUND(604679, 596865): fred + förhandling
+662339r3<substantiv>fredsförslag:fredsförslag:fredsförslags:fredsförslaget:fredsförslagets:fredsförslag:fredsförslags:fredsförslagen:fredsförslagens
+662345r4<substantiv>fredsinitiativ:fredsinitiativ:fredsinitiativs:fredsinitiativet:fredsinitiativets:fredsinitiativ:fredsinitiativs:fredsinitiativen:fredsinitiativens
+721795r4<substantiv>fredskrav:fredskrav:fredskravs:fredskravet:fredskravets:fredskrav:fredskravs:fredskraven:fredskravens
+COMPOUND(604679, 552582): fred + krav
+837756r3<substantiv>fredskårist:fredskårist:fredskårists:fredskåristen:fredskåristens:fredskårister:fredskåristers:fredskåristerna:fredskåristernas
+937461r4<substantiv>fredsplan:fredsplan:fredsplans:fredsplanen:fredsplanens:fredsplaner:fredsplaners:fredsplanerna:fredsplanernas
+COMPOUND(604679, 550205): fred + plan
+914107r4<substantiv>fredspris:fredspris:fredspris:fredspriset:fredsprisets:fredspris, fredspriser:fredspris, fredsprisers:fredsprisen, fredspriserna:fredsprisens, fredsprisernas
+COMPOUND(604679, 595939): fred + pris
+914117r4<substantiv>fredsråd:fredsråd:fredsråds:fredsrådet:fredsrådets:fredsråd:fredsråds:fredsråden:fredsrådens
+COMPOUND(604679, 552853): fred + råd
+712825r3<substantiv>fredsrörelse::::::::
+COMPOUND(604679, 611968): fred + rörelse
+657079r3<substantiv>fredstid:fredstid:fredstids:fredstiden:fredstidens:fredstider:fredstiders:fredstiderna:fredstidernas
+559002r10<adjektiv>fredstida:fredstida:fredstida:fredstida:fredstida:!:!:!:::::::::
+837764r4<substantiv>fredstraktat:fredstraktat:fredstraktats:fredstraktaten:fredstraktatens:fredstraktater:fredstraktaters:fredstraktaterna:fredstraktaternas
+COMPOUND(604679, 673071): fred + traktat
+721828r4<substantiv>fredsvillkor:fredsvillkor:fredsvillkors:fredsvillkoret:fredsvillkorets:fredsvillkor:fredsvillkors:fredsvillkoren:fredsvillkorens
+COMPOUND(604679, 553124): fred + villkor
+849800r3<substantiv>fredsvän:fredsvän:fredsväns:fredsvännen:fredsvännens:fredsvänner:fredsvänners:fredsvännerna:fredsvännernas
+565900r3<adjektiv>fredsvänlig:fredsvänlig:fredsvänligt:fredsvänliga:fredsvänliga::::
+854212r3<egennamn>Freespee:Freespee:Freespees
+CUSTOM: n n 
+633204r6<substantiv>freestyle:freestyle:freestyles:freestylen:freestylens:freestylar, freestyles:freestylars:freestylarna:freestylarnas
+657085r4<substantiv>fregatt:fregatt:fregatts:fregatten:fregattens:fregatter:fregatters:fregatterna:fregatternas
+978133r4<substantiv>fregattfågel:fregattfågel:fregattfågels:fregattfågeln:fregattfågelns:fregattfåglar:fregattfåglars:fregattfåglarna:fregattfåglarnas
+COMPOUND(657085, 555308): fregatt + fågel
+790958r3<adjektiv>fregattriggad:fregattriggad:fregattriggat:fregattriggade:fregattriggade:!:!:!:
+553697r3<egennamn>Freja:Freja:Frejas
+657087r3<adjektiv>frejdad:frejdad:frejdat:frejdade:frejdade:!:!:!:
+572544r4<adjektiv>frejdig:frejdig:frejdigt:frejdiga:frejdiga:frejdigare:frejdigast:frejdigaste:frejdige
+837769r3<substantiv>frejdighet:frejdighet:frejdighets:frejdigheten:frejdighetens::::
+548964r9<substantiv>frekvens:frekvens:frekvens:frekvensen:frekvensens:frekvenser:frekvensers:frekvenserna:frekvensernas
+CUSTOM: y y frekvens +frekvens
+763850r4<substantiv>frekvensband:frekvensband:frekvensbands:frekvensbandet:frekvensbandets:frekvensband:frekvensbands:frekvensbanden:frekvensbandens
+COMPOUND(548964, 552220): frekvens + band
+632555r4<substantiv>frekvensmeter:frekvensmeter:frekvensmeters:frekvensmetern:frekvensmeterns:frekvensmetrar:frekvensmetrars:frekvensmetrarna:frekvensmetrarnas
+589374r3<verb>frekvensmodulera:frekvensmodulera:frekvensmodulerade:frekvensmodulerat:frekvensmodulerar:frekvensmodulera:::::::::
+797697r3<adjektiv>frekvensstabil:frekvensstabil:frekvensstabilt:frekvensstabila:frekvensstabila::::
+657088r5<adjektiv>frekvent:frekvent:frekvent:frekventa:frekventa:frekventare:frekventast:frekventaste:frekvente
+797700r3<adjektiv>frekventativ:frekventativ:frekventativt:frekventativa:frekventativa::::
+586677r5<verb>frekventera:frekventera:frekventerade:frekventerat:frekventerar:frekventera:frekventeras:frekventerades:frekventerats:frekventeras:frekventerad:frekventerat:frekventerade:frekventerande:
+837775r3<substantiv>frekventering:frekventering:frekventerings:frekventeringen:frekventeringens::::
+657089r3<substantiv>frenesi:frenesi:frenesis:frenesin:frenesins:!:!:!:!
+580180r4<adjektiv>frenetisk:frenetisk:frenetiskt:frenetiska:frenetiska::::frenetiske
+657091r3<substantiv>frenolog:frenolog:frenologs:frenologen:frenologens:frenologer:frenologers:frenologerna:frenologernas
+837780r3<substantiv>frenologi:frenologi:frenologis:frenologin:frenologins::::
+580181r3<adjektiv>frenologisk:frenologisk:frenologiskt:frenologiska:frenologiska::::
+657099r3<substantiv>freon:freon:freons:freonen:freonens:freoner:freoners:freonerna:freonernas
+563774r3<adjektiv>freonfri:freonfri:freonfritt:freonfria:freonfria::::
+837784r3<substantiv>freongas:freongas:freongas:freongasen:freongasens:freongaser:freongasers:freongaserna:freongasernas
+553211r7<egennamn>Frescati:Frescati:Frescati
+837792r3<substantiv>frescomålning:frescomålning:frescomålnings:frescomålningen:frescomålningens:frescomålningar:frescomålningars:frescomålningarna:frescomålningarnas
+837801r3<substantiv>fresia:fresia:fresias:fresian:fresians:fresior:fresiors:fresiorna:fresiornas
+548965r3<substantiv>fresk:fresk:fresks:fresken:freskens:fresker:freskers:freskerna:freskernas
+837809r3<substantiv>freskomålning:freskomålning:freskomålnings:freskomålningen:freskomålningens:freskomålningar:freskomålningars:freskomålningarna:freskomålningarnas
+837817r3<substantiv>freskoteknik:freskoteknik:freskotekniks:freskotekniken:freskoteknikens::::
+546594r4<verb>fresta:fresta:frestade:frestat:frestar:fresta:frestas:frestades:frestats:frestas:frestad:frestat:frestade::
+657102r3<adjektiv>frestande:frestande:frestande:frestande:frestande:!:!:!:
+615223r3<substantiv>frestare:frestare:frestares:frestaren:frestarens:frestare:frestares:frestarna:frestarnas
+CUSTOM: y y frestar
+657103r3<substantiv>frestelse:frestelse:frestelses:frestelsen:frestelsens:frestelser:frestelsers:frestelserna:frestelsernas
+CUSTOM: y y frestelse
+657104r3<substantiv>fresterska:fresterska:fresterskas:fresterskan:fresterskans:fresterskor:fresterskors:fresterskorna:fresterskornas
+553213r3<egennamn>Freud:Freud:Freuds
+CUSTOM: y n Freud
+657107r3<substantiv>freudian:freudian:freudians:freudianen:freudianens:freudianer:freudianers:freudianerna:freudianernas
+657106r3<adjektiv>freudiansk:freudiansk:freudianskt:freudianska:freudianska:!:!:!:freudianske
+558850r44<adjektiv>fri:fri:fritt:fria:fria:friare:friast:friaste:frie::::::::
+CUSTOM: y y fri
+546595r4<verb>fria:fria:friade:friat:friar:fria:frias:friades:friats:frias:friad:friat:friade::
+657115r3<adjektiv>friande:friande:friande:friande:friande:!:!:!:
+615224r3<substantiv>friare:friare:friares:friaren:friarens:friare:friares:friarna:friarnas
+CUSTOM: y y friar
+657116r3<substantiv>friarstråt:friarstråt:::::::
+657117r3<substantiv>fribiljett:fribiljett:fribiljetts:fribiljetten:fribiljettens:fribiljetter:fribiljetters:fribiljetterna:fribiljetternas
+892651r3<adjektiv>friboren:friboren:friboret:friborna:friborna::::friborne::::::::
+930723r4<substantiv>fribrev:fribrev:fribrevs:fribrevet:fribrevets:fribrev:fribrevs:fribreven:fribrevens
+COMPOUND(558850, 552270): fri + brev
+617733r8<substantiv>frid:frid:frids:friden:fridens::::
+CUSTOM: y n
+553699r3<egennamn>Frida:Frida:Fridas
+929811r4<substantiv>fridag:fridag:fridags:fridagen:fridagens:fridagar:fridagars:fridagarna:fridagarnas
+COMPOUND(558850, 551009): fri + dag
+680615r6<substantiv>fridans:fridans:fridans:fridansen:fridansens:fridanser:fridansers:fridanserna:fridansernas
+COMPOUND(558850, 548569): fri + dans
+CUSTOM: y n n
+860815r3<egennamn>Fridehäll:Fridehäll:Fridehälls
+584959r4<adjektiv>fridfull:fridfull:fridfullt:fridfulla:fridfulla:fridfullare:fridfullast:fridfullaste:fridfulle
+725458r4<substantiv>fridfullhet:fridfullhet:fridfullhets:fridfullheten:fridfullhetens::::
+COMPOUND(617733, 657269): frid + fullhet
+943227r3<egennamn>Fridhemsplan:Fridhemsplan:Fridhemsplans
+657125r5<verb>fridlysa:fridlysa:fridlyste:fridlyst:fridlyser:fridlys:fridlysas:fridlystes:fridlysts:fridlyses:fridlyst:fridlyst:fridlysta::
+837830r3<substantiv>fridlysning:fridlysning:fridlysnings:fridlysningen:fridlysningens:fridlysningar:fridlysningars:fridlysningarna:fridlysningarnas
+732130r3<egennamn>Fridolf:Fridolf:Fridolfs
+840762r2<egennamn>Fridolin::
+563371r5<adjektiv>fridsam:fridsam:fridsamt:fridsamma:fridsamma:fridsammare:fridsammast:fridsammaste:fridsamme
+837838r3<substantiv>fridsamhet:fridsamhet:fridsamhets:fridsamheten:fridsamhetens::::
+657134r8<substantiv>fridsfurste:fridsfurste:fridsfurstes:fridsfursten:fridsfurstens:fridsfurstar:fridsfurstars:fridsfurstarna:fridsfurstarnas
+877027r4<substantiv>fridskränkning:fridskränkning:fridskränknings:fridskränkningen:fridskränkningens:fridskränkningar:fridskränkningars:fridskränkningarna:fridskränkningarnas
+COMPOUND(617733, 680993): frid + kränkning
+837847r3<substantiv>fridskyss:fridskyss:fridskyss:fridskyssen:fridskyssens:fridskyssar:fridskyssars:fridskyssarna:fridskyssarnas
+837854r3<substantiv>fridstörare:fridstörare:fridstörares:fridstöraren:fridstörarens:fridstörare:fridstörares:fridstörarna:fridstörarnas
+853907r3<egennamn>Friedrich:Friedrich:Friedrichs
+657136r3<substantiv>frieri:frieri:frieris:frieriet:frieriets:frierier:frieriers:frierierna:frieriernas
+837860r3<substantiv>frifräsare:frifräsare:frifräsares:frifräsaren:frifräsarens:frifräsare:frifräsares:frifräsarna:frifräsarnas
+572545r4<adjektiv>frifräsig:frifräsig:frifräsigt:frifräsiga:frifräsiga:frifräsigare:frifräsigast:frifräsigaste:frifräsige
+763856r3<substantiv>friggebod:friggebod:friggebods:friggeboden:friggebodens:friggebodar:friggebodars:friggebodarna:friggebodarnas
+657137r3<adjektiv>frigid:frigid:!:frigida:frigida::::frigide
+837870r3<substantiv>frigiditet:frigiditet:frigiditets:frigiditeten:frigiditetens::::
+631629r9<verb>frigiva, frige:frige, frigiva:frigav:frigivit, frigett:friger, frigiver:frige, frigiv:friges, frigivas:frigavs:frigivits, frigetts:friges, frigives, frigivs:frigiven:frigivet:frigivna:frigivande:
+COMPOUND(558850, 556584): fri + giva, ge
+894781r3<substantiv>frigivande:frigivande:frigivandes:frigivandet:frigivandets:frigivanden:frigivandens:frigivandena:frigivandenas
+690319r3<adjektiv>frigiven:frigiven:frigivet:frigivna:frigivna::::frigivne
+657139r4<substantiv>frigivning:frigivning:frigivnings:frigivningen:frigivningens:frigivningar:frigivningars:frigivningarna:frigivningarnas
+CUSTOM: y y frigivnings
+732398r4<substantiv>frigivningstid:frigivningstid:frigivningstids:frigivningstiden:frigivningstidens:frigivningstider:frigivningstiders:frigivningstiderna:frigivningstidernas
+COMPOUND(657139, 550665): frigivning + tid
+657141r4<adjektiv>frigjord:frigjord:frigjort:frigjorda:frigjorda:frigjordare:frigjordast:frigjordaste:frigjorde
+657140r3<substantiv>frigjordhet:frigjordhet:frigjordhets:frigjordheten:frigjordhetens::::
+CUSTOM: y y frigjordhets
+742076r4<substantiv>frigolit:frigolit:frigolits:frigoliten:frigolitens::::
+CUSTOM: y y frigolit
+906686r4<substantiv>frigolitbit:frigolitbit:frigolitbits:frigolitbiten:frigolitbitens:frigolitbitar:frigolitbitars:frigolitbitarna:frigolitbitarnas
+COMPOUND(742076, 550887): frigolit + bit
+726478r4<substantiv>frigymnasium:frigymnasium:frigymnasiums:frigymnasiet:frigymnasiets:frigymnasier:frigymnasiers:frigymnasierna:frigymnasiernas
+COMPOUND(558850, 557230): fri + gymnasium
+759992r3<adjektiv>frigående:frigående:frigående:frigående:frigående:!:!:!:
+837880r4<substantiv>frigång:frigång:frigångs:frigången:frigångens::::
+CUSTOM: y y frigångs
+837884r3<substantiv>frigångsregulator::::::::
+COMPOUND(837880, 633696): frigång + regulator
+649638r6<verb>frigöra:frigöra:frigjorde:frigjort:frigör:frigör:frigöras:frigjordes:frigjorts:frigörs, frigöres:frigjord:frigjort:frigjorda:frigörande:
+COMPOUND(558850, 555241): fri + göra
+657142r3<substantiv>frigörelse:frigörelse:frigörelses:frigörelsen:frigörelsens::::
+CUSTOM: y y frigörelse
+837885r4<substantiv>frigöring:frigöring:frigörings:frigöringen:frigöringens:frigöringar:frigöringars:frigöringarna:frigöringarnas
+CUSTOM: y y frigörings
+837893r4<substantiv>frigöringstid:frigöringstid:frigöringstids:frigöringstiden:frigöringstidens:frigöringstider:frigöringstiders:frigöringstiderna:frigöringstidernas
+COMPOUND(837885, 550665): frigöring + tid
+657143r3<substantiv>frihamn:frihamn:frihamns:frihamnen:frihamnens:frihamnar:frihamnars:frihamnarna:frihamnarnas
+657151r5<substantiv>frihandel:frihandel:frihandels:frihandeln:frihandelns::::
+CUSTOM: y y frihandels
+657155r4<substantiv>frihandelsavtal:frihandelsavtal:frihandelsavtals:frihandelsavtalet:frihandelsavtalets:frihandelsavtal:frihandelsavtals:frihandelsavtalen:frihandelsavtalens
+COMPOUND(657151, 552215): frihandel + avtal
+889310r4<substantiv>frihandelsvän:frihandelsvän:frihandelsväns:frihandelsvännen:frihandelsvännens:frihandelsvänner:frihandelsvänners:frihandelsvännerna:frihandelsvännernas
+COMPOUND(657151, 620322): frihandel + vän
+565903r3<adjektiv>frihandelsvänlig:frihandelsvänlig:frihandelsvänligt:frihandelsvänliga:frihandelsvänliga::::
+837901r3<substantiv>friherretitel:friherretitel:friherretitels:friherretiteln:friherretitelns:friherretitlar:friherretitlars:friherretitlarna:friherretitlarnas
+742081r3<substantiv>friherrinna:friherrinna:friherrinnas:friherrinnan:friherrinnans:friherrinnor:friherrinnors:friherrinnorna:friherrinnornas
+565906r3<adjektiv>friherrlig:friherrlig:friherrligt:friherrliga:friherrliga::::
+617734r12<substantiv>frihet:frihet:frihets:friheten:frihetens:friheter:friheters:friheterna:friheternas
+CUSTOM: y y frihets +frihets
+565909r4<adjektiv>frihetlig:frihetlig:frihetligt:frihetliga:frihetliga::::frihetlige
+725463r3<verb>frihetsberöva:frihetsberöva:frihetsberövade:frihetsberövat:frihetsberövar:frihetsberöva:frihetsberövas:frihetsberövades:frihetsberövats:frihetsberövas:frihetsberövad:frihetsberövat:frihetsberövade:frihetsberövande:
+701702r4<substantiv>frihetsgudinna:frihetsgudinna:frihetsgudinnas:frihetsgudinnan:frihetsgudinnans:frihetsgudinnor:frihetsgudinnors:frihetsgudinnorna:frihetsgudinnornas
+COMPOUND(617734, 556344): frihet + gudinna
+701710r4<substantiv>frihetskamp:frihetskamp:frihetskamps:frihetskampen:frihetskampens:frihetskamper:frihetskampers:frihetskamperna:frihetskampernas
+COMPOUND(617734, 549421): frihet + kamp
+783274r4<substantiv>frihetskämpe:frihetskämpe:frihetskämpes:frihetskämpen:frihetskämpens:frihetskämpar:frihetskämpars:frihetskämparna:frihetskämparnas
+COMPOUND(617734, 618635): frihet + kämpe
+837911r4<substantiv>frihetsrus:frihetsrus:frihetsrus:frihetsruset:frihetsrusets:frihetsrus:frihetsrus:frihetsrusen:frihetsrusens
+COMPOUND(617734, 552847): frihet + rus
+882507r4<substantiv>frihetstro:frihetstro:frihetstros:frihetstron:frihetstrons:!:!:!:!
+COMPOUND(617734, 624935): frihet + tro
+930729r4<substantiv>frihjul:frihjul:frihjuls:frihjulet:frihjulets:frihjul:frihjuls:frihjulen:frihjulens
+COMPOUND(558850, 552470): fri + hjul
+837917r3<substantiv>frihjulsnav:frihjulsnav:frihjulsnavs:frihjulsnavet:frihjulsnavets:frihjulsnav:frihjulsnavs:frihjulsnaven:frihjulsnavens
+837923r3<substantiv>friholt:friholt:friholts:friholtet:friholtets:friholt:friholts:friholten:friholtens
+837929r3<substantiv>frihult:frihult:frihults:frihulten:frihultens:frihultar:frihultars:frihultarna:frihultarnas
+601960r3<substantiv>friidrott:friidrott:friidrotts:friidrotten:friidrottens:friidrotter:friidrotters:friidrotterna:friidrotternas
+CUSTOM: y y friidrotts
+615225r3<substantiv>friidrottare:friidrottare:friidrottares:friidrottaren:friidrottarens:friidrottare:friidrottares:friidrottarna:friidrottarnas
+CUSTOM: y y friidrottar
+646697r3<substantiv>frikadell:frikadell:frikadells:frikadellen:frikadellens:frikadeller:frikadellers:frikadellerna:frikadellernas
+646705r4<verb>frikalla:frikalla:frikallade:frikallat:frikallar:frikalla:frikallas:frikallades:frikallats:frikallas:frikallad:frikallat:frikallade:frikallande:
+COMPOUND(558850, 547071): fri + kalla
+646715r2<substantiv>frikallelse::::::::
+CUSTOM: y y frikallelse
+646717r4<substantiv>frikassé:frikassé:frikassés:frikassén:frikasséns:frikasséer:frikasséers:frikasséerna:frikasséernas
+CUSTOM: y y frikassé
+837937r4<substantiv>frikassésås:frikassésås:frikassésås:frikassésåsen:frikassésåsens:frikassésåser:frikassésåsers:frikassésåserna:frikassésåsernas
+COMPOUND(646717, 556707): frikassé + sås
+928729r4<substantiv>frikast:frikast:frikasts:frikastet:frikastets:frikast:frikasts:frikasten:frikastens
+COMPOUND(558850, 561176): fri + kast
+646725r3<adjektiv>frikativ:frikativ:frikativt:frikativa:frikativa:!:!:!:
+646727r3<substantiv>frikativa:frikativa:frikativas:frikativan:frikativans:frikativor:frikativors:frikativorna:frikativornas
+657161r3<verb>frikoppla:frikoppla:frikopplade:frikopplat:frikopplar:frikoppla:frikopplas:frikopplades:frikopplats:frikopplas:frikopplad:frikopplat:frikopplade::
+914124r4<substantiv>frikort:frikort:frikorts:frikortet:frikortets:frikort:frikorts:frikorten:frikortens
+COMPOUND(558850, 552580): fri + kort
+CUSTOM: y n frikorts
+572548r4<adjektiv>frikostig:frikostig:frikostigt:frikostiga:frikostiga:frikostigare:frikostigast:frikostigaste:frikostige
+742089r3<substantiv>frikostighet:frikostighet:frikostighets:frikostigheten:frikostighetens::::
+633357r6<substantiv>friktion:friktion:friktions:friktionen:friktionens:friktioner:friktioners:friktionerna:friktionernas
+CUSTOM: y y friktions +friktions
+563777r3<adjektiv>friktionsfri:friktionsfri:friktionsfritt:friktionsfria:friktionsfria::::
+564829r3<adjektiv>friktionslös:friktionslös:friktionslöst:friktionslösa:friktionslösa::::
+761826r4<substantiv>friktionstal:friktionstal:friktionstals:friktionstalet:friktionstalets:friktionstal:friktionstals:friktionstalen:friktionstalens
+COMPOUND(633357, 553029): friktion + tal
+677608r4<substantiv>friktionsväv:friktionsväv:friktionsvävs:friktionsväven:friktionsvävens:friktionsvävar:friktionsvävars:friktionsvävarna:friktionsvävarnas
+COMPOUND(633357, 552117): friktion + väv
+646735r5<substantiv>frikyrka:frikyrka:frikyrkas:frikyrkan:frikyrkans:frikyrkor:frikyrkors:frikyrkorna:frikyrkornas
+COMPOUND(558850, 555095): fri + kyrka
+BASEWORDS: frikyrko
+CUSTOM: y y frikyrko
+565912r3<adjektiv>frikyrklig:frikyrklig:frikyrkligt:frikyrkliga:frikyrkliga::::
+837944r3<substantiv>frikyrklighet:frikyrklighet:frikyrklighets:frikyrkligheten:frikyrklighetens::::
+657167r5<verb>frikänna:frikänna:frikände:frikänt:frikänner:frikänn:frikännas:frikändes:frikänts:frikänns, frikännes:frikänd:frikänt:frikända::
+COMPOUND(558850, 618640): fri + känna
+657168r3<substantiv>frikännande:frikännande:frikännandes:frikännandet:frikännandets:frikännanden:frikännandens:frikännandena:frikännandenas
+657169r4<verb>friköpa:friköpa:friköpte:friköpt:friköper:friköp:friköpas:friköptes:friköpts:friköps:friköpt:friköpt:friköpta::
+COMPOUND(558850, 585824): fri + köpa
+7609

@@ -1,0 +1,641 @@
+ivmord:knivmords:knivmordet:knivmordets:knivmord:knivmords:knivmorden:knivmordens
+COMPOUND(551555, 552702): kniv + mord
+945326r4<substantiv>knivrist:knivrist:knivrists:knivristen:knivristens:knivristar:knivristars:knivristarna:knivristarnas
+COMPOUND(551555, 901187): kniv + rist
+907268r4<verb>knivråna:knivråna:knivrånade:knivrånat:knivrånar:knivråna:knivrånas:knivrånades:knivrånats:knivrånas:knivrånad:knivrånat:knivrånade::
+COMPOUND(551555, 547617): kniv + råna
+828430r3<substantiv>knivsegg:knivsegg:knivseggs:knivseggen:knivseggens:knivseggar:knivseggars:knivseggarna:knivseggarnas
+652549r3<adjektiv>knivskarp:knivskarp:knivskarpt:knivskarpa:knivskarpa:!:!:!:
+828438r3<adjektiv>knivskuren:knivskuren:knivskuret:knivskurna:knivskurna:!:!:!:knivskurne
+936259r4<verb>knivskära:knivskära:knivskar:knivskurit:knivskär:knivskär:knivskäras:knivskars:knivskurits:knivskärs, knivskäres:knivskuren:knivskuret:knivskurna:knivskärande:
+COMPOUND(551555, 619543): kniv + skära
+598449r3<substantiv>knivspets:knivspets:knivspets:knivspetsen:knivspetsens:knivspetsar:knivspetsars:knivspetsarna:knivspetsarnas
+828442r3<substantiv>knivsrygg:knivsrygg:knivsryggs:knivsryggen:knivsryggens:knivsryggar:knivsryggars:knivsryggarna:knivsryggarnas
+728149r3<egennamn>Knivsta:Knivsta:Knivstas
+CUSTOM: y n Knivsta
+828450r3<adjektiv>knivstucken:knivstucken:knivstucket:knivstuckna:knivstuckna::::knivstuckne
+798162r3<adjektiv>knivvass:knivvass:knivvasst:knivvassa:knivvassa::::
+981653r3<substantiv>knix:knix:knix:knixen:knixens:knixar:knixars:knixarna:knixarnas
+CUSTOM: y n
+939777r3<verb>knixa:knixa:knixade:knixat:knixar:knixa:knixas:knixades:knixats:knixas::::knixande:
+CUSTOM: y n y
+573792r3<adjektiv>knixig:knixig:knixigt:knixiga:knixiga::::
+625539r4<substantiv>knock:knock:knocks:knocken:knockens:knockar:knockars:knockarna:knockarnas
+547142r4<verb>knocka:knocka:knockade:knockat:knockar:knocka:knockas:knockades:knockats:knockas:knockad:knockat:knockade::
+744746r5<substantiv>knockout:knockout:knockouts:knockouten:knockoutens:knockouter:knockouters:knockouterna:knockouternas
+CUSTOM: y y knockout
+772304r3<substantiv>knockoutseger::::::::
+COMPOUND(744746, 556336): knockout + seger
+772305r3<substantiv>knockoutslag::::::::
+COMPOUND(744746, 608035): knockout + slag
+961866r3<substantiv>knodd:knodd:knodds:knodden:knoddens:knoddar:knoddars:knoddarna:knoddarnas
+CUSTOM: y n
+573795r3<adjektiv>knoddaktig:knoddaktig:knoddaktigt:knoddaktiga:knoddaktiga::::
+624490r3<substantiv>knog:knog:knogs:knoget:knogets:knog:knogs:knogen:knogens
+CUSTOM: y n
+547143r3<verb>knoga:knoga:knogade:knogat:knogar:knoga:::::::::
+649188r4<substantiv>knoge:knoge:knoges:knogen:knogens:knogar:knogars:knogarna:knogarnas
+CUSTOM: y y knog
+573798r3<adjektiv>knogig:knogig:knogigt:knogiga:knogiga::::
+772306r4<substantiv>knogjärn:knogjärn:knogjärns:knogjärnet:knogjärnets:knogjärn:knogjärns:knogjärnen:knogjärnens
+COMPOUND(649188, 552537): knoge + järn
+573801r3<adjektiv>knollrig:knollrig:knollrigt:knollriga:knollriga::::
+628244r4<substantiv>knop:knop:knops:knopen:knopens:knop:knops:knopen:knopens
+DEFINITION 1: En hastighetsenhet använd inom sjöfart.
+551556r4<substantiv>knop:knop:knops:knopen:knopens:knopar:knopars:knoparna:knoparnas
+DEFINITION 1: Knut.
+677316r3<substantiv>knoparmoj:knoparmoj:knoparmojs:knoparmojet:knoparmojets:!:!:!:!
+551557r5<substantiv>knopp:knopp:knopps:knoppen:knoppens:knoppar:knoppars:knopparna:knopparnas
+CUSTOM: y y
+938090r3<verb>knoppa:knoppa:knoppade:knoppat:knoppar:knoppa:knoppas:knoppades:knoppats:knoppas:knoppad:knoppat:knoppade:knoppande:
+708005r3<adjektiv>knoppande:knoppande:knoppande:knoppande:knoppande:!:!:!:
+591723r3<deponens>knoppas:knoppas:knoppades:knoppats:knoppas:
+828454r3<substantiv>knoppbildning:knoppbildning:knoppbildnings:knoppbildningen:knoppbildningens:knoppbildningar:knoppbildningars:knoppbildningarna:knoppbildningarnas
+801053r3<adjektiv>knoppbärande:knoppbärande:knoppbärande:knoppbärande:knoppbärande:!:!:!:
+981659r3<substantiv>knoppfjäll:knoppfjäll:knoppfjälls:knoppfjället:knoppfjällets:knoppfjäll:knoppfjälls:knoppfjällen:knoppfjällens
+573804r3<adjektiv>knoppig:knoppig:knoppigt:knoppiga:knoppiga::::
+772312r4<substantiv>knoppning:knoppning:knoppnings:knoppningen:knoppningens:knoppningar:knoppningars:knoppningarna:knoppningarnas
+CUSTOM: y y knoppnings
+652552r4<substantiv>knoppningstid:knoppningstid:knoppningstids:knoppningstiden:knoppningstidens:knoppningstider:knoppningstiders:knoppningstiderna:knoppningstidernas
+COMPOUND(772312, 550665): knoppning + tid
+888120r3<substantiv>knoppsprickning:knoppsprickning:knoppspricknings:knoppsprickningen:knoppsprickningens::::
+888112r4<substantiv>knoppstadium:knoppstadium:knoppstadiums:knoppstadiet:knoppstadiets:knoppstadier:knoppstadiers:knoppstadierna:knoppstadiernas
+COMPOUND(551557, 622188): knopp + stadium
+888124r3<substantiv>knoppsättning:knoppsättning:knoppsättnings:knoppsättningen:knoppsättningens:knoppsättningar:knoppsättningars:knoppsättningarna:knoppsättningarnas
+828462r3<substantiv>knopslagning:knopslagning:knopslagnings:knopslagningen:knopslagningens:knopslagningar:knopslagningars:knopslagningarna:knopslagningarnas
+828473r3<substantiv>knorr:knorr:knorrs:knorret:knorrets::::
+551558r3<substantiv>knorr:knorr:knorrs:knorren:knorrens:knorrar:knorrars:knorrarna:knorrarnas
+652556r5<verb>knorra:knorra:knorrade:knorrat:knorrar:knorra:knorras:knorrades:knorrats:knorras::::knorrande:
+693009r3<substantiv>knorrande:knorrande:knorrandes:knorrandet:knorrandets::::
+674623r3<substantiv>knorrhane:knorrhane:knorrhanes:knorrhanen:knorrhanens:knorrhanar:knorrhanars:knorrhanarna:knorrhanarnas
+573807r3<adjektiv>knorrig:knorrig:knorrigt:knorriga:knorriga::::
+828476r3<verb>knorva:knorva:knorvade:knorvat:knorvar:knorva:knorvas:knorvades:knorvats:knorvas::::knorvande:
+573810r3<adjektiv>knorvig:knorvig:knorvigt:knorviga:knorviga::::
+628242r3<substantiv>knot:knot:knots:knotet:knotets:!:!:!:!
+628237r4<verb>knota:knota:knotade:knotat:knotar:knota:knotas:knotades:knotats:knotas::::knotande:
+628241r3<substantiv>knota:knota:knotas:knotan:knotans:knotor:knotors:knotorna:knotornas
+573813r3<adjektiv>knotig:knotig:knotigt:knotiga:knotiga::::
+652557r3<substantiv>knott:knott:knotts:knottet:knottets:knott:knotts:knotten:knottens
+547146r3<verb>knottra:knottra:knottrade:knottrat:knottrar:knottra:::::::::
+981665r3<substantiv>knottra:knottra:knottras:knottran:knottrans:knottror:knottrors:knottrorna:knottrornas
+573814r4<adjektiv>knottrig:knottrig:knottrigt:knottriga:knottriga:knottrigare:knottrigast:knottrigaste:
+828487r3<substantiv>knottrighet:knottrighet:knottrighets:knottrigheten:knottrighetens::::
+828491r3<substantiv>knottsvärm:knottsvärm:knottsvärms:knottsvärmen:knottsvärmens:knottsvärmar:knottsvärmars:knottsvärmarna:knottsvärmarnas
+573817r4<adjektiv>knubbig:knubbig:knubbigt:knubbiga:knubbiga:knubbigare:knubbigast:knubbigaste:knubbige
+828503r3<substantiv>knubbighet:knubbighet:knubbighets:knubbigheten:knubbighetens::::
+708006r3<substantiv>knubbsäl:knubbsäl:knubbsäls:knubbsälen:knubbsälens:knubbsälar:knubbsälars:knubbsälarna:knubbsälarnas
+551560r3<substantiv>knuff:knuff:knuffs:knuffen:knuffens:knuffar:knuffars:knuffarna:knuffarnas
+547147r5<verb>knuffa:knuffa:knuffade:knuffat:knuffar:knuffa:knuffas:knuffades:knuffats:knuffas:knuffad:knuffat:knuffade:knuffande:
+828508r3<substantiv>knuffning:knuffning:knuffnings:knuffningen:knuffningens:knuffningar:knuffningars:knuffningarna:knuffningarnas
+622393r4<substantiv>knull:knull:knulls:knullet:knullets:knull:knulls:knullen:knullens
+CUSTOM: b n
+547148r7<verb>knulla:knulla:knullade:knullat:knullar:knulla:knullas:knullades:knullats:knullas:knullad:knullat:knullade::
+DEFINITION 1: Utöva sexuellt umgänge.  Av gammelsvenska knulrar. "De två duvorna knulrar så vackert på takåsen".
+CUSTOM: b n
+652560r3<substantiv>knussel:knussel:knussels:knusslet:knusslets:!:!:!:!
+652564r3<verb>knussla:knussla:knusslade:knusslat:knusslar:knussla:knusslas:knusslades:knusslats:knusslas:::::
+652568r3<substantiv>knusslare:knusslare:knusslares:knusslaren:knusslarens:knusslare:knusslares:knusslarna:knusslarnas
+CUSTOM: y y knusslar
+566415r3<adjektiv>knusslig:knusslig:knussligt:knussliga:knussliga::::
+652574r3<substantiv>knusslighet:knusslighet:knusslighets:knussligheten:knusslighetens::::
+CUSTOM: y y knusslighets
+551562r10<substantiv>knut:knut:knuts:knuten:knutens:knutar:knutars:knutarna:knutarnas
+CUSTOM: y n
+554673r3<egennamn>Knut:Knut:Knuts
+905389r3<substantiv>knuta:knuta:knutas:knutan:knutans:knutor:knutors:knutorna:knutornas
+CUSTOM: y n y
+782470r3<egennamn>Knutby:Knutby:Knutbys
+CUSTOM: y n Knutby
+573818r3<adjektiv>knutig:knutig:knutigt:knutiga:knutiga::::
+828516r3<substantiv>knutpiska:knutpiska:knutpiskas:knutpiskan:knutpiskans:knutpiskor:knutpiskors:knutpiskorna:knutpiskornas
+712976r4<substantiv>knutpunkt:knutpunkt:knutpunkts:knutpunkten:knutpunktens:knutpunkter:knutpunkters:knutpunkterna:knutpunkternas
+COMPOUND(551562, 550299): knut + punkt
+732501r3<egennamn>Knutsson:Knutsson:Knutssons
+652578r3<substantiv>knutte:knutte:knuttes:knutten:knuttens:knuttar:knuttars:knuttarna:knuttarnas
+792611r3<adjektiv>knuttimrad:knuttimrad:knuttimrat:knuttimrade:knuttimrade:!:!:!:
+981672r3<substantiv>knuttimring:knuttimring:knuttimrings:knuttimringen:knuttimringens::::
+551564r3<substantiv>knyck:knyck:knycks:knycken:knyckens:knyckar:knyckars:knyckarna:knyckarnas
+652579r4<verb>knycka:knycka:knyckte:knyckt:knycker:knyck:knyckas:knycktes:knyckts:knycks:knyckt:knyckt:knyckta:knyckande:
+573821r4<adjektiv>knyckig:knyckig:knyckigt:knyckiga:knyckiga:knyckigare:knyckigast:knyckigaste:
+828527r3<substantiv>knyckighet:knyckighet:knyckighets:knyckigheten:knyckighetens::::
+547152r4<verb>knyckla:knyckla:knycklade:knycklat:knycklar:knyckla:knycklas:knycklades:knycklats:knycklas:knycklad:knycklat:knycklade::
+566416r3<adjektiv>knycklig:knycklig:knyckligt:knyckliga:knyckliga::::
+828531r3<substantiv>knyckning:knyckning:knycknings:knyckningen:knyckningens:knyckningar:knyckningars:knyckningarna:knyckningarnas
+737931r3<substantiv>knyffel:knyffel:knyffels:knyffeln:knyffelns:knyfflar:knyfflars:knyfflarna:knyfflarnas
+888132r3<substantiv>knyppeldyna::::::::
+COMPOUND(652580, 624077): knyppla + dyna
+652580r5<verb>knyppla:knyppla:knypplade:knypplat:knypplar:knyppla:knypplas:knypplades:knypplats:knypplas:knypplad:knypplat:knypplade:knypplande:
+CUSTOM: y y knyppel
+828544r4<substantiv>knyppling:knyppling:knypplings:knypplingen:knypplingens:knypplingar:knypplingars:knypplingarna:knypplingarnas
+CUSTOM: y y knypplings
+828552r3<substantiv>knypplingsmaskin::::::::
+COMPOUND(828544, 550005): knyppling + maskin
+551565r10<substantiv>knyst:knyst:::::::
+585363r7<verb>knysta:knysta:knystade:knystat:knystar:knysta:knystas:knystades:knystats:knystas::::knystande:
+585368r4<verb>knyta:knyta:knöt:knutit:knyter:knyt:knytas:knöts:knutits:knyts:knuten:knutet:knutna::
+968821r4<substantiv>knytbatik:knytbatik:knytbatiks:knytbatiken:knytbatikens:!:!:!:!
+COMPOUND(625541, 616625): knyte + batik
+886557r3<substantiv>knytblus:knytblus:knytblus:knytblusen:knytblusens:knytblusar:knytblusars:knytblusarna:knytblusarnas
+625541r5<substantiv>knyte:knyte:knytes:knytet:knytets:knyten:knytens:knytena:knytenas
+607475r3<substantiv>knytkalas:knytkalas:knytkalas:knytkalaset:knytkalasets:knytkalas:knytkalas:knytkalasen:knytkalasens
+CUSTOM: y y knytkalas
+957973r4<substantiv>knytkonferens:knytkonferens:knytkonferens:knytkonferensen:knytkonferensens:knytkonferenser:knytkonferensers:knytkonferenserna:knytkonferensernas
+COMPOUND(625541, 549618): knyte + konferens
+744760r4<substantiv>knytning:knytning:knytnings:knytningen:knytningens:knytningar:knytningars:knytningarna:knytningarnas
+652581r4<substantiv>knytnäve:knytnäve:knytnäves:knytnäven:knytnävens:knytnävar:knytnävars:knytnävarna:knytnävarnas
+CUSTOM: y y knytnävs
+744768r4<substantiv>knytnävsslag:knytnävsslag:knytnävsslags:knytnävsslaget:knytnävsslagets:knytnävsslag:knytnävsslags:knytnävsslagen:knytnävsslagens
+COMPOUND(652581, 608035): knytnäve + slag
+828553r3<adjektiv>knytnävsstor:knytnävsstor:knytnävsstort:knytnävsstora:knytnävsstora::::
+547153r5<verb>knåda:knåda:knådade:knådat:knådar:knåda:knådas:knådades:knådats:knådas:knådad:knådat:knådade:knådande:
+828556r3<substantiv>knådare:knådare:knådares:knådaren:knådarens:knådare:knådares:knådarna:knådarnas
+569307r3<adjektiv>knådbar:knådbar:knådbart:knådbara:knådbara::::
+828562r4<substantiv>knådning:knådning:knådnings:knådningen:knådningens:knådningar:knådningars:knådningarna:knådningarnas
+CUSTOM: y y knådnings
+828570r4<substantiv>knådningsarm:knådningsarm:knådningsarms:knådningsarmen:knådningsarmens:knådningsarmar:knådningsarmars:knådningsarmarna:knådningsarmarnas
+COMPOUND(828562, 550842): knådning + arm
+649004r3<substantiv>knåp:knåp:knåps:knåpet:knåpets::::
+CUSTOM: y n
+649189r4<verb>knåpa:knåpa:knåpade:knåpat:knåpar:knåpa:knåpas:knåpades:knåpats:knåpas::::knåpande:
+CUSTOM: y n
+573822r3<adjektiv>knåpig:knåpig:knåpigt:knåpiga:knåpiga::::
+559821r19<substantiv>knä:knä:knäs:knäet, knät:knäets, knäts:knän:knäns:knäna:knänas
+CUSTOM: y n knä
+624492r4<verb>knäa:knäa:knäade:knäat:knäar:knäa:knäas:knäades:knäats:knäas:knäad:knäat:knäade:knäande:
+652583r3<substantiv>knäbyxor:::::knäbyxor:knäbyxors:knäbyxorna:knäbyxornas
+652584r6<verb>knäböja:knäböja:knäböjde:knäböjt:knäböjer:knäböj:knäböjas:knäböjdes:knäböjts:knäböjs, knäböjes:knäböjd:knäböjt:knäböjda:knäböjande:
+551567r3<substantiv>knäck:knäck:knäcks:knäcken:knäckens:knäckar:knäckars:knäckarna:knäckarnas
+948272r3<substantiv>knäck:knäck:knäcks:knäcket:knäckets:knäck:knäcks:knäcken:knäckens
+652585r4<verb>knäcka:knäcka:knäckte:knäckt:knäcker:knäck:knäckas:knäcktes:knäckts:knäcks, knäckes:knäckt:knäckt:knäckta:knäckande:
+693013r3<substantiv>knäckande:knäckande:knäckandes:knäckandet:knäckandets::::
+652587r3<adjektiv>knäckande:knäckande:knäckande:knäckande:knäckande:!:!:!:
+693015r5<substantiv>knäckebröd:knäckebröd:knäckebröds:knäckebrödet:knäckebrödets:knäckebröd:knäckebröds:knäckebröden:knäckebrödens
+CUSTOM: y y knäckebröds
+602428r4<substantiv>knäckebrödsfabrik:knäckebrödsfabrik:knäckebrödsfabriks:knäckebrödsfabriken:knäckebrödsfabrikens:knäckebrödsfabriker:knäckebrödsfabrikers:knäckebrödsfabrikerna:knäckebrödsfabrikernas
+COMPOUND(693015, 548836): knäckebröd + fabrik
+828594r3<substantiv>knäckform:knäckform:knäckforms:knäckformen:knäckformens:knäckformar:knäckformars:knäckformarna:knäckformarnas
+744774r3<substantiv>knäckfråga:knäckfråga:knäckfrågas:knäckfrågan:knäckfrågans:knäckfrågor:knäckfrågors:knäckfrågorna:knäckfrågornas
+828602r3<substantiv>knäckkokning:knäckkokning:knäckkoknings:knäckkokningen:knäckkokningens::::
+828586r3<substantiv>knäckkola:knäckkola:knäckkolas:knäckkolan:knäckkolans:knäckkolor:knäckkolors:knäckkolorna:knäckkolornas
+732276r4<substantiv>knäckning:knäckning:knäcknings:knäckningen:knäckningens:knäckningar:knäckningars:knäckningarna:knäckningarnas
+CUSTOM: y y knäcknings
+732285r4<substantiv>knäckningsfall:knäckningsfall:knäckningsfalls:knäckningsfallet:knäckningsfallets:knäckningsfall:knäckningsfalls:knäckningsfallen:knäckningsfallens
+COMPOUND(732276, 552371): knäckning + fall
+798165r3<adjektiv>knädjup:knädjup:knädjupt:knädjupa:knädjupa::::
+652588r5<verb>knäfalla:knäfalla:knäföll:knäfallit:knäfaller:knäfall:!:!:!:!:knäfallen:knäfallet:knäfallna:knäfallande:
+COMPOUND(559821, 585306): knä + falla
+931226r4<substantiv>knähund:knähund:knähunds:knähunden:knähundens:knähundar:knähundars:knähundarna:knähundarnas
+COMPOUND(559821, 555306): knä + hund
+896312r3<adjektiv>knähög:knähög:knähögt:knähöga:knähöga::::::::::::
+931234r3<substantiv>knähöjd:knähöjd:::::::
+744783r5<substantiv>knäled:knäled:knäleds:knäleden:knäledens:knäleder:knäleders:knälederna:knäledernas
+CUSTOM: y y knäleds
+744782r4<substantiv>knäledsmekanism:knäledsmekanism:knäledsmekanisms:knäledsmekanismen:knäledsmekanismens:knäledsmekanismer:knäledsmekanismers:knäledsmekanismerna:knäledsmekanismernas
+COMPOUND(744783, 558160): knäled + mekanism
+744792r4<substantiv>knäledsoperation:knäledsoperation:knäledsoperations:knäledsoperationen:knäledsoperationens:knäledsoperationer:knäledsoperationers:knäledsoperationerna:knäledsoperationernas
+COMPOUND(744783, 603051): knäled + operation
+931235r3<adjektiv>knälång:knälång:knälångt:knälånga:knälånga::::::::::::
+725076r4<adjektiv>knäpp:knäpp:knäppt:knäppa:knäppa:knäppare:knäppast:knäppaste:knäppe
+CUSTOM: y y
+693017r4<substantiv>knäpp:knäpp:knäpps:knäppen:knäppens:knäppar:knäppars:knäpparna:knäpparnas
+585822r5<verb>knäppa:knäppa:knäppte:knäppt:knäpper:knäpp:knäppas:knäpptes:knäppts:knäpps:knäppt:knäppt:knäppta:knäppande:
+CUSTOM: y n knäpp
+942176r3<substantiv>knäppande:knäppande:knäppandes:knäppandet:knäppandets::::
+828606r3<substantiv>knäppanordning:knäppanordning:knäppanordnings:knäppanordningen:knäppanordningens:knäppanordningar:knäppanordningars:knäppanordningarna:knäppanordningarnas
+828614r3<substantiv>knäppare:knäppare:knäppares:knäpparen:knäpparens:knäppare:knäppares:knäpparna:knäpparnas
+725058r4<substantiv>knäppgök:knäppgök:knäppgöks:knäppgöken:knäppgökens:knäppgökar:knäppgökars:knäppgökarna:knäppgökarnas
+COMPOUND(725076, 558952): knäpp + gök
+573825r3<adjektiv>knäppig:knäppig:knäppigt:knäppiga:knäppiga::::
+859060r4<substantiv>knäppinstrument:knäppinstrument:knäppinstruments:knäppinstrumentet:knäppinstrumentets:knäppinstrument:knäppinstruments:knäppinstrumenten:knäppinstrumentens
+COMPOUND(585822, 552518): knäppa + instrument
+828618r3<substantiv>knäppkänga:knäppkänga:knäppkängas:knäppkängan:knäppkängans:knäppkängor:knäppkängors:knäppkängorna:knäppkängornas
+652592r3<substantiv>knäppning:knäppning:knäppnings:knäppningen:knäppningens:knäppningar:knäppningars:knäppningarna:knäppningarnas
+CUSTOM: y y knäppnings
+828626r3<substantiv>knäppskalle:knäppskalle:knäppskalles:knäppskallen:knäppskallens:knäppskallar:knäppskallars:knäppskallarna:knäppskallarnas
+744793r4<adjektiv>knäpptyst:knäpptyst:knäpptyst:knäpptysta:knäpptysta:!:!:!:knäpptyste
+931238r4<substantiv>knäsena:knäsena:knäsenas:knäsenan:knäsenans:knäsenor:knäsenors:knäsenorna:knäsenornas
+COMPOUND(559821, 622138): knä + sena
+712753r4<substantiv>knäskada:knäskada:knäskadas:knäskadan:knäskadans:knäskador:knäskadors:knäskadorna:knäskadornas
+COMPOUND(559821, 595121): knä + skada
+936978r3<adjektiv>knäskadad:knäskadad:knäskadat:knäskadade:knäskadade:!:!:!:::::::::
+652593r3<substantiv>knäskål:knäskål:knäskåls:knäskålen:knäskålens:knäskålar:knäskålars:knäskålarna:knäskålarnas
+798168r3<adjektiv>knästyv:knästyv:knästyvt:knästyva:knästyva::::
+CUSTOM: y n n
+846193r3<adjektiv>knäsvag:knäsvag:knäsvagt:knäsvaga:knäsvaga::::knäsvage
+931246r4<substantiv>knätofs:knätofs:knätofs:knätofsen:knätofsens:knätofsar:knätofsars:knätofsarna:knätofsarnas
+COMPOUND(559821, 552016): knä + tofs
+931253r4<substantiv>knäveck:knäveck:knävecks:knävecket:knäveckets:knäveck:knävecks:knävecken:knäveckens
+COMPOUND(559821, 553114): knä + veck
+828635r3<substantiv>knävelborr:knävelborr:knävelborrs:knävelborren:knävelborrens:knävelborrar:knävelborrars:knävelborrarna:knävelborrarnas
+828643r3<substantiv>knödel:knödel:knödels:knödeln:knödelns:knödlar:knödlars:knödlarna:knödlarnas
+895140r4<verb>knöka:knöka:knökade:knökat:knökar:knöka:knökas:knökades:knökats:knökas:knökad:knökat:knökade:knökande:!
+CUSTOM: y n y
+585013r3<adjektiv>knökfull:knökfull:knökfullt:knökfulla:knökfulla::::
+551568r10<substantiv>knöl:knöl:knöls:knölen:knölens:knölar:knölars:knölarna:knölarnas
+CUSTOM: y y knöl
+905842r3<verb>knöla:knöla:knölade:knölat:knölar:knöla:knölas:knölades:knölats:knölas:knölad:knölat:knölade:knölande:!
+CUSTOM: y n !knölad %knölad
+573828r3<adjektiv>knölaktig:knölaktig:knölaktigt:knölaktiga:knölaktiga::::
+573831r3<adjektiv>knölformig:knölformig:knölformigt:knölformiga:knölformiga::::
+951860r4<substantiv>knölhavre:knölhavre:knölhavres:knölhavren:knölhavrens::::
+COMPOUND(551568, 643233): knöl + havre
+566419r4<adjektiv>knölig:knölig:knöligt:knöliga:knöliga:knöligare:knöligast:knöligaste:knölige
+828655r3<substantiv>knölighet:knölighet:knölighets:knöligheten:knölighetens:knöligheter:knöligheters:knöligheterna:knöligheternas
+638115r5<substantiv>knölpåk:knölpåk:knölpåks:knölpåken:knölpåkens:knölpåkar:knölpåkars:knölpåkarna:knölpåkarnas
+COMPOUND(551568, 624295): knöl + påk
+942376r4<substantiv>knölrot:knölrot:knölrots:knölroten:knölrotens:knölrötter:knölrötters:knölrötterna:knölrötternas
+COMPOUND(551568, 561217): knöl + rot
+850859r3<substantiv>knölval:knölval:knölvals:knölvalen:knölvalens:knölvalar:knölvalars:knölvalarna:knölvalarnas
+551569r3<substantiv>knös:knös:knös:knösen:knösens:knösar:knösars:knösarna:knösarnas
+CUSTOM: y n
+557679r27<substantiv>ko:ko:kos:kon:kons:kor:kors:korna:kornas
+CUSTOM: y n
+589855r3<verb>koaffera:koaffera:koafferade:koafferat:koafferar:koaffera:::::::::
+730349r3<substantiv>koagulation:koagulation:koagulations:koagulationen:koagulationens::::
+547154r4<verb>koagulera:koagulera:koagulerade:koagulerat:koagulerar:koagulera:koaguleras:koagulerades:koagulerats:koaguleras:koagulerad:koagulerat:koagulerade:koagulerande:
+569310r3<adjektiv>koagulerbar:koagulerbar:koagulerbart:koagulerbara:koagulerbara::::
+888133r3<substantiv>koagulering:koagulering:koagulerings:koaguleringen:koaguleringens::::
+559823r3<substantiv>koala:koala:koalas:koalan:koalans:koalor:koalors:koalorna:koalornas
+589859r3<verb>koalisera:koalisera:koaliserade:koaliserat:koaliserar:koalisera:::::::::
+559831r3<substantiv>koalition:koalition:koalitions:koalitionen:koalitionens:koalitioner:koalitioners:koalitionerna:koalitionernas
+CUSTOM: y y koalitions
+652595r3<substantiv>koaxialkabel:koaxialkabel:koaxialkabels:koaxialkabeln:koaxialkabelns:koaxialkablar:koaxialkablars:koaxialkablarna:koaxialkablarnas
+559832r3<substantiv>kobbe:kobbe:kobbes:kobben:kobbens:kobbar:kobbars:kobbarna:kobbarnas
+828668r3<adjektiv>kobent:kobent:kobent:kobenta:kobenta::::kobente
+828671r3<substantiv>kobenthet:kobenthet:kobenthets:kobentheten:kobenthetens::::
+559833r4<substantiv>kobolt:kobolt:kobolts:kobolten:koboltens::::
+CUSTOM: y y kobolt
+828675r3<substantiv>koboltatom::::::::
+COMPOUND(559833, 548266): kobolt + atom
+802037r3<adjektiv>koboltblå:koboltblå:koboltblått:koboltblåa:koboltblåa::::
+559837r5<substantiv>kobra:kobra:kobras:kobran:kobrans:kobror:kobrors:kobrorna:kobrornas
+CUSTOM: y n kobra
+828676r3<substantiv>kobragift::::::::
+COMPOUND(559837, 556656): kobra + gift
+828677r3<substantiv>kobrygga:kobrygga:kobryggas:kobryggan:kobryggans:kobryggor:kobryggors:kobryggorna:kobryggornas
+551570r5<substantiv>kock:kock:kocks:kocken:kockens:kockar:kockars:kockarna:kockarnas
+CUSTOM: y y kock
+904646r3<substantiv>kocka:kocka:kockas:kockan:kockans:kockor:kockors:kockorna:kockornas
+CUSTOM: n n y
+744796r4<substantiv>kockmössa:kockmössa:kockmössas:kockmössan:kockmössans:kockmössor:kockmössors:kockmössorna:kockmössornas
+COMPOUND(551570, 594778): kock + mössa
+553253r3<egennamn>Kockums:Kockums:Kockums
+CUSTOM: y n Kockums
+549543r42<substantiv>kod:kod:kods:koden:kodens:koder:koders:koderna:kodernas
+CUSTOM: y n
+547158r5<verb>koda:koda:kodade:kodat:kodar:koda:kodas:kodades:kodats:kodas:kodad:kodat:kodade:kodande:
+874373r4<egennamn>Kodak:Kodak:Kodaks
+CUSTOM: y nKodak
+874377r4<substantiv>Kodakkamera:Kodakkamera:Kodakkameras:Kodakkameran:Kodakkamerans:Kodakkameror:Kodakkamerors:Kodakkamerorna:Kodakkamerornas
+COMPOUND(874373, 559163): Kodak + kamera
+CUSTOM: n n 
+882187r4<substantiv>kodanalys:kodanalys:kodanalys:kodanalysen:kodanalysens:kodanalyser:kodanalysers:kodanalyserna:kodanalysernas
+COMPOUND(549543, 548192): kod + analys
+828702r3<substantiv>kodare:kodare:kodares:kodaren:kodarens:kodare:kodares:kodarna:kodarnas
+801054r3<adjektiv>kodberoende:kodberoende:kodberoende:kodberoende:kodberoende:!:!:!:
+744797r3<substantiv>kodbeteckning:kodbeteckning:kodbetecknings:kodbeteckningen:kodbeteckningens:kodbeteckningar:kodbeteckningars:kodbeteckningarna:kodbeteckningarnas
+679047r4<substantiv>kodein:kodein:kodeins:kodeinet:kodeinets:kodein:kodeins:kodeinen:kodeinens
+CUSTOM: y y kodein
+679046r4<substantiv>kodeintablett:kodeintablett:kodeintabletts:kodeintabletten:kodeintablettens:kodeintabletter:kodeintabletters:kodeintabletterna:kodeintabletternas
+COMPOUND(679047, 550624): kodein + tablett
+913592r3<substantiv>kodek:kodek:kodeks:kodeken:kodekens:kodekar:kodekars:kodekarna:kodekarnas
+CUSTOM: n n n
+551571r3<substantiv>kodex:kodex:kodex:kodexen:kodexens:kodexar:kodexars:kodexarna:kodexarnas
+782662r4<substantiv>kodexempel:kodexempel:kodexempels:kodexemplet:kodexemplets:kodexempel:kodexempels:kodexemplen:kodexemplens
+COMPOUND(549543, 630262): kod + exempel
+589863r4<verb>kodifiera:kodifiera:kodifierade:kodifierat:kodifierar:kodifiera:kodifieras:kodifierades:kodifierats:kodifieras:kodifierad:kodifierat:kodifierade:kodifierande:
+816474r3<substantiv>kodifiering:kodifiering:kodifierings:kodifieringen:kodifieringens:kodifieringar:kodifieringars:kodifieringarna:kodifieringarnas
+981677r3<substantiv>kodifikation:kodifikation:kodifikations:kodifikationen:kodifikationens:kodifikationer:kodifikationers:kodifikationerna:kodifikationernas
+884933r3<substantiv>kodknäckare:kodknäckare:kodknäckares:kodknäckaren:kodknäckarens:kodknäckare:kodknäckares:kodknäckarna:kodknäckarnas
+652597r4<substantiv>kodlås:kodlås:kodlås:kodlåset:kodlåsets:kodlås:kodlås:kodlåsen:kodlåsens
+828710r4<substantiv>kodmeddelande:kodmeddelande:kodmeddelandes:kodmeddelandet:kodmeddelandets:kodmeddelanden:kodmeddelandens:kodmeddelandena:kodmeddelandenas
+COMPOUND(549543, 560527): kod + meddelande
+828718r4<substantiv>kodnamn:kodnamn:kodnamns:kodnamnet:kodnamnets:kodnamn:kodnamns:kodnamnen:kodnamnens
+COMPOUND(549543, 607737): kod + namn
+652600r6<substantiv>kodning:kodning:kodnings:kodningen:kodningens:kodningar:kodningars:kodningarna:kodningarnas
+CUSTOM: y y kodnings +kodnings
+828728r4<substantiv>kodningsblankett:kodningsblankett:kodningsblanketts:kodningsblanketten:kodningsblankettens:kodningsblanketter:kodningsblanketters:kodningsblanketterna:kodningsblanketternas
+COMPOUND(652600, 548393): kodning + blankett
+828736r4<substantiv>kodnummer:kodnummer:kodnummers:kodnumret:kodnumrets:kodnummer:kodnummers:kodnumren:kodnumrens
+COMPOUND(549543, 621605): kod + nummer
+828742r4<substantiv>kodnyckel:kodnyckel:kodnyckels:kodnyckeln:kodnyckelns:kodnycklar:kodnycklars:kodnycklarna:kodnycklarnas
+COMPOUND(549543, 560803): kod + nyckel
+731742r4<substantiv>kodomvandlare:kodomvandlare:kodomvandlares:kodomvandlaren:kodomvandlarens:kodomvandlare:kodomvandlares:kodomvandlarna:kodomvandlarnas
+COMPOUND(549543, 615403): kod + omvandlare
+828750r4<substantiv>kodomvandling:kodomvandling:kodomvandlings:kodomvandlingen:kodomvandlingens:kodomvandlingar:kodomvandlingars:kodomvandlingarna:kodomvandlingarnas
+COMPOUND(549543, 648141): kod + omvandling
+657871r3<substantiv>kodomän:kodomän:kodomäns:kodomänen:kodomänens:kodomäner:kodomäners:kodomänerna:kodomänernas
+CUSTOM: y n n
+730435r4<substantiv>kodon:kodon:kodons:kodonet:kodonets::::
+DEFINITION 1: En följd av tre kvävebaser i nukleotiderna
+CUSTOM: n n n
+828758r4<substantiv>kodord:kodord:kodords:kodordet:kodordets:kodord:kodords:kodorden:kodordens
+COMPOUND(549543, 555138): kod + ord
+828764r4<substantiv>kodpenna:kodpenna:kodpennas:kodpennan:kodpennans:kodpennor:kodpennors:kodpennorna:kodpennornas
+COMPOUND(549543, 636994): kod + penna
+897452r4<substantiv>kodrad:kodrad:kodrads:kodraden:kodradens:kodrader:kodraders:kodraderna:kodradernas
+COMPOUND(549543, 550306): kod + rad
+CUSTOM: y n n
+828772r4<substantiv>kodsiffra:kodsiffra:kodsiffras:kodsiffran:kodsiffrans:kodsiffror:kodsiffrors:kodsiffrorna:kodsiffrornas
+COMPOUND(549543, 595105): kod + siffra
+828780r4<substantiv>kodsignal:kodsignal:kodsignals:kodsignalen:kodsignalens:kodsignaler:kodsignalers:kodsignalerna:kodsignalernas
+COMPOUND(549543, 550490): kod + signal
+828788r4<substantiv>kodspråk:kodspråk:kodspråks:kodspråket:kodspråkets:kodspråk:kodspråks:kodspråken:kodspråkens
+COMPOUND(549543, 552959): kod + språk
+828794r4<substantiv>kodsystem:kodsystem:kodsystems:kodsystemet:kodsystemets:kodsystem:kodsystems:kodsystemen:kodsystemens
+COMPOUND(549543, 553021): kod + system
+828800r4<substantiv>kodtelegram:kodtelegram:kodtelegrams:kodtelegrammet:kodtelegrammets:kodtelegram:kodtelegrams:kodtelegrammen:kodtelegrammens
+COMPOUND(549543, 627056): kod + telegram
+828806r4<substantiv>kodtext:kodtext:kodtexts:kodtexten:kodtextens:kodtexter:kodtexters:kodtexterna:kodtexternas
+COMPOUND(549543, 619782): kod + text
+828815r4<substantiv>kodynga:kodynga:kodyngas:kodyngan:kodyngans::::
+COMPOUND(557679, 649092): ko + dynga
+549545r8<substantiv>koefficient:koefficient:koefficients:koefficienten:koefficientens:koefficienter:koefficienters:koefficienterna:koefficienternas
+CUSTOM: y y koefficient
+764315r3<substantiv>koefficientavskrivning::::::::
+COMPOUND(549545, 596382): koefficient + avskrivning
+762365r3<egennamn>Koenigsegg:Koenigsegg:Koenigseggs
+589867r3<verb>koexistera:koexistera:koexisterade:koexisterat:koexisterar:koexistera:::::::::
+901602r4<substantiv>koff:koff:koffs:koffen:koffens:koffar:koffars:koffarna:koffarnas
+DEFINITION 1: Segelfartyg
+CUSTOM: y n
+652602r7<substantiv>koffein:koffein:koffeins:koffeinet:koffeinets::::
+CUSTOM: y n koffein
+563916r3<adjektiv>koffeinfri:koffeinfri:koffeinfritt:koffeinfria:koffeinfria::::
+901578r4<substantiv>koffeinförgiftning:koffeinförgiftning:koffeinförgiftnings:koffeinförgiftningen:koffeinförgiftningens:koffeinförgiftningar:koffeinförgiftningars:koffeinförgiftningarna:koffeinförgiftningarnas
+COMPOUND(652602, 626795): koffein + förgiftning
+828820r4<substantiv>koffeinhalt:koffeinhalt:koffeinhalts:koffeinhalten:koffeinhaltens:koffeinhalter:koffeinhalters:koffeinhalterna:koffeinhalternas
+COMPOUND(652602, 549191): koffein + halt
+901586r4<substantiv>koffeinpulver:koffeinpulver:koffeinpulvers:koffeinpulvret:koffeinpulvrets:koffeinpulver:koffeinpulvers:koffeinpulvren:koffeinpulvrens
+COMPOUND(652602, 560592): koffein + pulver
+901593r4<substantiv>koffeintablett:koffeintablett:koffeintabletts:koffeintabletten:koffeintablettens:koffeintabletter:koffeintabletters:koffeintabletterna:koffeintabletternas
+COMPOUND(652602, 550624): koffein + tablett
+981685r3<substantiv>kofferdifartyg:kofferdifartyg:kofferdifartygs:kofferdifartyget:kofferdifartygets:kofferdifartyg:kofferdifartygs:kofferdifartygen:kofferdifartygens
+551572r4<substantiv>koffert:koffert:kofferts:kofferten:koffertens:koffertar:koffertars:koffertarna:koffertarnas
+CUSTOM: y y koffert
+828828r4<substantiv>koffertlås:koffertlås:koffertlås:koffertlåset:koffertlåsets:koffertlås:koffertlås:koffertlåsen:koffertlåsens
+COMPOUND(551572, 552680): koffert + lås
+828833r4<substantiv>kofoder:kofoder:kofoders:kofodret:kofodrets::::
+COMPOUND(557679, 616935): ko + foder
+551573r9<substantiv>kofot:kofot:kofots:kofoten:kofotens:kofotar, kofötter:kofotars, kofötters:kofotarna, kofötterna:kofotarnas, kofötternas
+594488r4<substantiv>kofta:kofta:koftas:koftan:koftans:koftor:koftors:koftorna:koftornas
+CUSTOM: y y
+828837r4<substantiv>koftärm:koftärm:koftärms:koftärmen:koftärmens:koftärmar:koftärmars:koftärmarna:koftärmarnas
+COMPOUND(594488, 552149): kofta + ärm
+615339r3<substantiv>kofångare:kofångare:kofångares:kofångaren:kofångarens:kofångare:kofångares:kofångarna:kofångarnas
+CUSTOM: y y kofångar
+828845r3<substantiv>kofösare:kofösare:kofösares:kofösaren:kofösarens:kofösare:kofösares:kofösarna:kofösarnas
+828855r4<substantiv>kogalenskap:kogalenskap:kogalenskaps:kogalenskapen:kogalenskapens::::
+COMPOUND(557679, 549051): ko + galenskap
+652604r3<substantiv>koger:koger:kogers:kogret:kogrets:koger:kogers:kogren, kogerna:kogrens, kogernas
+628247r4<substantiv>kogg:kogg:koggs:koggen:koggens:koggar:koggars:koggarna:koggarnas
+DEFINITION 1: Ett slags skepp.
+CUSTOM: y n
+981691r3<substantiv>kognat:::::kognater:kognaters:kognaterna:kognaternas
+581306r3<adjektiv>kognatisk:kognatisk:kognatiskt:kognatiska:kognatiska::::
+652605r4<substantiv>kognition:kognition:kognitions:kognitionen:kognitionens::::
+CUSTOM: y y kognitions
+693019r4<substantiv>kognitionspsykologi:kognitionspsykologi:kognitionspsykologis:kognitionspsykologin:kognitionspsykologins:!:!:!:!
+COMPOUND(652605, 595977): kognition + psykologi
+637101r5<adjektiv>kognitiv:kognitiv:kognitivt:kognitiva:kognitiva::::
+DEFINITION 1: kognitiv=	som avser intellektuella funktioner, förstånds-, intellektuell
+652606r4<substantiv>kogödsel:kogödsel:kogödsels:kogödseln:kogödselns:!:!:!:!
+COMPOUND(557679, 644526): ko + gödsel
+652610r3<substantiv>kohage:kohage:kohages:kohagen:kohagens:kohagar:kohagars:kohagarna:kohagarnas
+652616r4<substantiv>kohandel:kohandel:kohandels:kohandeln:kohandelns:!:!:!:!
+CUSTOM: y y kohandels
+828859r4<substantiv>kohandelspolitik:kohandelspolitik:kohandelspolitiks:kohandelspolitiken:kohandelspolitikens:!:!:!:!
+COMPOUND(652616, 550224): kohandel + politik
+693023r4<verb>kohandla:kohandla:kohandlade:kohandlat:kohandlar:kohandla:kohandlas:kohandlades:kohandlats:kohandlas::::kohandlande:
+828864r3<substantiv>kohandlare:kohandlare:kohandlares:kohandlaren:kohandlarens:kohandlare:kohandlares:kohandlarna:kohandlarnas
+728583r3<substantiv>koherens:koherens:koherens:koherensen:koherensens:!:!:!:!
+788946r3<adjektiv>koherent:koherent:koherent:koherenta:koherenta::::
+564956r3<adjektiv>kohesionslös:kohesionslös:kohesionslöst:kohesionslösa:kohesionslösa::::
+798171r3<adjektiv>kohesiv:kohesiv:kohesivt:kohesiva:kohesiva::::
+CUSTOM: y n n
+828870r4<substantiv>kohorn:kohorn:kohorns:kohornet:kohornets:kohorn:kohorns:kohornen:kohornens
+COMPOUND(557679, 552473): ko + horn
+652618r3<substantiv>kohort:kohort:kohorts:kohorten:kohortens:kohorter:kohorters:kohorterna:kohorternas
+559822r3<substantiv>koj:koj:kojs:kojen:kojens:kojer:kojers:kojerna:kojernas
+828876r3<verb>koja:koja:kojade:kojat:kojar:koja:::::::::
+618583r5<substantiv>koja:koja:kojas:kojan:kojans:kojor:kojors:kojorna:kojornas
+888137r3<substantiv>kojplats:kojplats:kojplats:kojplatsen:kojplatsens:kojplatser:kojplatsers:kojplatserna:kojplatsernas
+559838r7<substantiv>kok:kok:koks:koket:kokets:kok:koks:koken:kokens
+CUSTOM: y y kok
+594489r3<substantiv>koka:koka:kokas:kokan:kokans:kokor:kokors:kokorna:kokornas
+CUSTOM: y n
+547159r16<verb>koka:koka:kokade, kokte:kokat, kokt:kokar:koka:kokas:kokades, koktes:kokats, kokts:kokas:kokt, kokad:kokt, kokat:kokta, kokade:kokande:
+CUSTOM: y n
+828880r3<substantiv>kokablad:kokablad:kokablads:kokabladet:kokabladets:kokablad:kokablads:kokabladen:kokabladens
+828886r3<substantiv>kokabuske:kokabuske:kokabuskes:kokabusken:kokabuskens:kokabuskar:kokabuskars:kokabuskarna:kokabuskarnas
+559839r4<substantiv>kokain:kokain:kokains:kokainet:kokainets::::
+CUSTOM: y y kokain
+762951r3<substantiv>kokainbeslag::::::::
+COMPOUND(559839, 552236): kokain + beslag
+558453r3<substantiv>kokainism:kokainism:kokainisms:kokainismen:kokainismens:!:!:!:!
+762952r3<substantiv>kokainist:kokainist:kokainists:kokainisten:kokainistens:kokainister:kokainisters:kokainisterna:kokainisternas
+943746r3<substantiv>kokaodlare:kokaodlare:kokaodlares:kokaodlaren:kokaodlarens:kokaodlare:kokaodlares:kokaodlarna:kokaodlarnas
+943736r3<substantiv>kokaodling:kokaodling:kokaodlings:kokaodlingen:kokaodlingens:kokaodlingar:kokaodlingars:kokaodlingarna:kokaodlingarnas
+981696r3<substantiv>kokard:kokard:kokards:kokarden:kokardens:kokarder:kokarders:kokarderna:kokardernas
+CUSTOM: y n
+801459r3<adjektiv>kokardprydd:kokardprydd:kokardprytt:kokardprydda:kokardprydda::::
+615340r4<substantiv>kokare:kokare:kokares:kokaren:kokarens:kokare:kokares:kokarna:kokarnas
+CUSTOM: y y kokar
+573834r3<adjektiv>kokbeständig:kokbeständig:kokbeständigt:kokbeständiga:kokbeständiga::::
+915748r5<substantiv>kokbok:kokbok:kokboks:kokboken:kokbokens:kokböcker:kokböckers:kokböckerna:kokböckernas
+COMPOUND(547159, 555346): koka + bok
+CUSTOM: y y kokboks
+915757r3<substantiv>kokboksförfattare::::::::
+COMPOUND(915748, 593193): kokbok + författare
+828894r4<substantiv>kokeri:kokeri:kokeris:kokeriet:kokeriets:kokerier:kokeriers:kokerierna:kokeriernas
+594496r3<substantiv>kokerska:kokerska:kokerskas:kokerskan:kokerskans:kokerskor:kokerskors:kokerskorna:kokerskornas
+652621r4<adjektiv>kokett:kokett:kokett:koketta:koketta:kokettare:kokettast:kokettaste:kokette
+587035r4<verb>kokettera:kokettera:koketterade:koketterat:koketterar:kokettera:koketteras:koketterades:koketterats:koketteras::::koketterande:
+652619r3<substantiv>koketteri:koketteri:koketteris:koketteriet:koketteriets:koketterier:koketteriers:koketterierna:koketteriernas
+850867r3<substantiv>kokfru:kokfru:kokfrus:kokfrun:kokfruns:kokfruar:kokfruars:kokfruarna:kokfruarnas
+636795r4<adjektiv>kokhet:kokhet:kokhett:kokheta:kokheta:kokhetare:kokhetast:kokhetaste:kokhete
+COMPOUND(559838, 558988): kok + het
+573837r3<adjektiv>kokhärdig:kokhärdig:kokhärdigt:kokhärdiga:kokhärdiga::::
+683929r5<substantiv>kokill:kokill:kokills:kokillen:kokillens:kokiller:kokillers:kokillerna:kokillernas
+CUSTOM: y n
+729765r4<substantiv>kokillgjutning:kokillgjutning:kokillgjutnings:kokillgjutningen:kokillgjutningens:kokillgjutningar:kokillgjutningars:kokillgjutningarna:kokillgjutningarnas
+COMPOUND(683929, 678741): kokill + gjutning
+607480r3<substantiv>kokkärl:kokkärl:kokkärls:kokkärlet:kokkärlets:kokkärl:kokkärls:kokkärlen:kokkärlens
+652623r5<substantiv>kokning:kokning:koknings:kokningen:kokningens:kokningar:kokningars:kokningarna:kokningarnas
+CUSTOM: y y koknings +koknings
+549546r3<substantiv>kokong:kokong:kokongs:kokongen:kokongens:kokonger:kokongers:kokongerna:kokongernas
+828914r3<substantiv>kokoppor:::::kokoppor:kokoppors:kokopporna:kokoppornas
+625542r5<substantiv>kokos:kokos:kokos:kokosen:kokosens:!:!:!:!
+CUSTOM: y y kokos
+671723r4<substantiv>kokosboll:kokosboll:kokosbolls:kokosbollen:kokosbollens:kokosbollar:kokosbollars:kokosbollarna:kokosbollarnas
+COMPOUND(625542, 550928): kokos + boll
+652625r5<substantiv>kokosnöt:kokosnöt:kokosnöts:kokosnöten:kokosnötens:kokosnötter:kokosnötters:kokosnötterna:kokosnötternas
+COMPOUND(625542, 561944): kokos + nöt
+CUSTOM: y y kokosnöts
+828918r3<substantiv>kokosnötsolja::::::::
+COMPOUND(652625, 623123): kokosnöt + olja
+764316r3<substantiv>kokospalm:kokospalm:kokospalms:kokospalmen:kokospalmens:kokospalmer:kokospalmers:kokospalmerna:kokospalmernas
+549548r3<substantiv>kokott:kokott:kokotts:kokotten:kokottens:kokotter:kokotters:kokotterna:kokotternas
+594504r3<substantiv>kokplatta:kokplatta:kokplattas:kokplattan:kokplattans:kokplattor:kokplattors:kokplattorna:kokplattornas
+652627r3<substantiv>kokpunkt:kokpunkt:kokpunkts:kokpunkten:kokpunktens:kokpunkter:kokpunkters:kokpunkterna:kokpunkternas
+625565r4<substantiv>koks:koks:koks:koksen:koksens:!:!:!:!
+CUSTOM: y n
+931259r4<substantiv>koksalt:koksalt:koksalts:koksaltet:koksaltets:koksalter:koksalters:koksalterna:koksalternas
+COMPOUND(547159, 592333): koka + salt
+828919r3<substantiv>koksaltlösning:koksaltlösning:koksaltlösnings:koksaltlösningen:koksaltlösningens:koksaltlösningar:koksaltlösningars:koksaltlösningarna:koksaltlösningarnas
+801055r3<adjektiv>koksande:koksande:koksande:koksande:koksande:!:!:!:
+792614r3<adjektiv>kokseldad:kokseldad:kokseldat:kokseldade:kokseldade:!:!:!:
+828927r4<substantiv>kokseldning:kokseldning:kokseldnings:kokseldningen:kokseldningens::::
+COMPOUND(625565, 680872): koks + eldning
+931267r4<substantiv>kokskåp:kokskåp:kokskåps:kokskåpet:kokskåpets:kokskåp:kokskåps:kokskåpen:kokskåpens
+COMPOUND(547159, 552942): koka + skåp
+928930r4<substantiv>kokspad:kokspad:kokspads:kokspadet:kokspadets::::
+COMPOUND(547159, 649036): koka + spad
+981704r3<substantiv>koksverk:koksverk:koksverks:koksverket:koksverkets:koksverk:koksverks:koksverken:koksverkens
+928315r4<substantiv>koktid:koktid:koktids:koktiden:koktidens:koktider:koktiders:koktiderna:koktidernas
+COMPOUND(559838, 550665): kok + tid
+850875r4<substantiv>kokvrå:kokvrå:kokvrås:kokvrån:kokvråns:kokvrår:kokvrårs:kokvrårna:kokvrårnas
+COMPOUND(547159, 612053): koka + vrå
+552556r20<substantiv>kol:kol:kols:kolet:kolets:kol:kols:kolen:kolens
+CUSTOM: y y kol
+627666r3<verb>kola:kola:kolade:kolat:kolar:kola:::::::::
+556669r6<substantiv>kola:kola:kolas:kolan:kolans:kolor:kolors:kolorna:kolornas
+CUSTOM: y n
+981710r4<substantiv>kolanöt:kolanöt:kolanöts:kolanöten:kolanötens:kolanötter:kolanötters:kolanötterna:kolanötternas
+COMPOUND(556669, 561944): kola + nöt
+828931r3<substantiv>kolapapper:kolapapper:kolapappers:kolapappret:kolapapprets:kolapapper:kolapappers:kolapappren:kolapapprens
+981728r3<substantiv>kolare:kolare:kolares:kolaren:kolarens:kolare:kolares:kolarna:kolarnas
+CUSTOM: n n y
+981719r3<substantiv>kolarkoja:kolarkoja:kolarkojas:kolarkojan:kolarkojans:kolarkojor:kolarkojors:kolarkojorna:kolarkojornas
+792617r3<adjektiv>kolartad:kolartad:kolartat:kolartade:kolartade:!:!:!:
+CUSTOM: y n n
+828937r4<substantiv>kolasås:kolasås:kolasås:kolasåsen:kolasåsens:kolasåser:kolasåsers:kolasåserna:kolasåsernas
+COMPOUND(556669, 556707): kola + sås
+928935r4<substantiv>kolatom:kolatom:kolatoms:kolatomen:kolatomens:kolatomer:kolatomers:kolatomerna:kolatomernas
+COMPOUND(552556, 548266): kol + atom
+652634r3<adjektiv>kolbaserad:kolbaserad:kolbaserat:kolbaserade:kolbaserade:!:!:!:
+549549r3<substantiv>kolchos:kolchos:kolchos:kolchosen:kolchosens:kolchoser:kolchosers:kolchoserna:kolchosernas
+931273r4<substantiv>koldamm:koldamm:koldamms:koldammet:koldammets:!:!:!:!
+COMPOUND(552556, 559197): kol + damm
+652689r4<substantiv>koldioxid:koldioxid:koldioxids:koldioxiden:koldioxidens:!:!:!:!
+CUSTOM: y y koldioxid
+718727r4<substantiv>koldioxidutsläpp:koldioxidutsläpp:koldioxidutsläpps:koldioxidutsläppet:koldioxidutsläppets:koldioxidutsläpp:koldioxidutsläpps:koldioxidutsläppen:koldioxidutsläppens
+COMPOUND(652689, 553094): koldioxid + utsläpp
+792620r3<adjektiv>koleldad:koleldad:koleldat:koleldade:koleldade:!:!:!:
+652635r4<substantiv>kolera:kolera:koleras:koleran:kolerans::::
+CUSTOM: y n kolera
+828944r3<substantiv>kolerabakterie::::::::
+COMPOUND(652635, 555768): kolera + bakterie
+792623r3<adjektiv>kolerasmittad:kolerasmittad:kolerasmittat:kolerasmittade:kolerasmittade:!:!:!:
+828945r3<substantiv>koleriker:koleriker:kolerikers:kolerikern:kolerikerns:koleriker:kolerikers:kolerikerna:kolerikernas
+581309r4<adjektiv>kolerisk:kolerisk:koleriskt:koleriska:koleriska::::koleriske::::::::
+581310r3<adjektiv>kolesterisk:kolesterisk:kolesteriskt:kolesteriska:kolesteriska::::
+744805r6<substantiv>kolesterol:kolesterol:kolesterols:kolesterolet, kolesterolen:kolesterolets, kolesterolens::::
+CUSTOM: y y kolesterol
+744809r4<substantiv>kolesterolhalt:kolesterolhalt:kolesterolhalts:kolesterolhalten:kolesterolhaltens:kolesterolhalter:kolesterolhalters:kolesterolhalterna:kolesterolhalternas
+COMPOUND(744805, 549191): kolesterol + halt
+573840r3<adjektiv>kolesterolhaltig:kolesterolhaltig:kolesterolhaltigt:kolesterolhaltiga:kolesterolhaltiga::::
+634991r5<adjektiv>kolesterolsänkande:kolesterolsänkande:kolesterolsänkande:kolesterolsänkande:kolesterolsänkande:!:!:!:::::::::
+744811r4<substantiv>kolesterolvärde:kolesterolvärde:kolesterolvärdes:kolesterolvärdet:kolesterolvärdets:kolesterolvärden:kolesterolvärdens:kolesterolvärdena:kolesterolvärdenas
+COMPOUND(744805, 613015): kolesterol + värde
+573843r3<adjektiv>kolfattig:kolfattig:kolfattigt:kolfattiga:kolfattiga::::
+931277r4<substantiv>kolfält:kolfält:kolfälts:kolfältet:kolfältets:kolfält:kolfälts:kolfälten:kolfältens
+COMPOUND(552556, 552397): kol + fält
+652636r5<substantiv>kolgruva:kolgruva:kolgruvas:kolgruvan:kolgruvans:kolgruvor:kolgruvors:kolgruvorna:kolgruvornas
+COMPOUND(552556, 594145): kol + gruva
+CUSTOM: y y kolgruve
+744812r4<substantiv>kolgruvearbetare:kolgruvearbetare:kolgruvearbetares:kolgruvearbetaren:kolgruvearbetarens:kolgruvearbetare:kolgruvearbetares:kolgruvearbetarna:kolgruvearbetarnas
+COMPOUND(652636, 561048): kolgruva + arbetare
+729474r4<substantiv>kolhalt:kolhalt:kolhalts:kolhalten:kolhaltens:kolhalter:kolhalters:kolhalterna:kolhalternas
+COMPOUND(552556, 549191): kol + halt
+573846r3<adjektiv>kolhaltig:kolhaltig:kolhaltigt:kolhaltiga:kolhaltiga::::
+549550r3<substantiv>kolhydrat:kolhydrat:kolhydrats:kolhydraten:kolhydratens:kolhydrater:kolhydraters:kolhydraterna:kolhydraternas
+CUSTOM: y y kolhydrat
+850883r4<substantiv>kolhög:kolhög:kolhögs:kolhögen:kolhögens:kolhögar:kolhögars:kolhögarna:kolhögarnas
+COMPOUND(552556, 551444): kol + hög
+744813r3<substantiv>kolibakterie:kolibakterie:kolibakteries:kolibakterien:kolibakteriens:kolibakterier:kolibakteriers:kolibakterierna:kolibakteriernas
+744821r3<substantiv>kolibri:kolibri:kolibris:kolibrin:kolibrins:kolibrier:kolibriers:kolibrierna:kolibriernas
+CUSTOM: y y kolibri
+798174r3<adjektiv>koliform:koliform:koliformt:koliforma:koliforma::::
+CUSTOM: y n n
+649190r3<substantiv>kolik:kolik:koliks:koliken:kolikens::::
+828959r3<substantiv>kolikanfall:kolikanfall:kolikanfalls:kolikanfallet:kolikanfallets:kolikanfall:kolikanfalls:kolikanfallen:kolikanfallens
+629315r4<substantiv>kolja:kolja:koljas:koljan:koljans:koljor:koljors:koljorna:koljornas
+CUSTOM: y y
+888144r4<substantiv>koljafilé:koljafilé:koljafilés:koljafilén:koljafiléns:koljafiléer:koljafiléers:koljafiléerna:koljafiléernas
+COMPOUND(629315, 561718): kolja + filé
+850891r4<verb>kolka:kolka:kolkade:kolkat:kolkar:kolka:kolkas:kolkades:kolkats:kolkas::::kolkande:
+CUSTOM: n n y
+891874r6<substantiv>kolkraft:kolkraft:kolkrafts:kolkraften:kolkraftens::::
+COMPOUND(552556, 549757): kol + kraft
+CUSTOM: y y kolkraft kolkrafts
+891877r4<substantiv>kolkraftsel:kolkraftsel:kolkraftsels:kolkraftselen:kolkraftselens:!:!:!:!
+COMPOUND(891874, 557664): kolkraft + el
+891875r3<substantiv>kolkraftverk::::::::
+COMPOUND(891874, 553117): kolkraft + verk
+624494r4<substantiv>koll:koll:kolls:kollen:kollens:kollar:kollars:kollarna:kollarnas
+547160r4<verb>kolla:kolla:kollade:kollat:kollar:kolla:kollas:kollades:kollats:kollas:kollad:kollat:kollade::
+587036r3<verb>kollabera:kollabera:kollaberade:kollaberat:kollaberar:kollabera:::::::::
+652637r3<substantiv>kollaboratör:kollaboratör:kollaboratörs:kollaboratören:kollaboratörens:kollaboratörer:kollaboratörers:kollaboratörerna:kollaboratörernas
+547161r3<verb>kollaborera:kollaborera:kollaborerade:kollaborerat:kollaborerar:kollaborera:::::::::
+787425r3<substantiv>kollage:kollage:kollages:kollaget:kollagets:kollage:kollages:kollagen:kollagens
+549558r4<substantiv>kollaps:kollaps:kollaps:kollapsen:kollapsens:kollapser:kollapsers:kollapserna:kollapsernas
+CUSTOM: y y kollaps
+652645r4<verb>kollapsa:kollapsa:kollapsade:kollapsat:kollapsar:kollapsa:::::kollapsad:kollapsat:kollapsade:kollapsande:
+888152r3<substantiv>kollapstillstånd::::::::
+COMPOUND(549558, 553043): kollaps + tillstånd
+652646r3<adjektiv>kollateral:kollateral:kollateralt:kollaterala:kollaterala::::
+547165r3<verb>kollationera:kollationera:kollationerade:kollationerat:kollationerar:kollationera:::::::::
+744829r3<substantiv>kollationering:kollationering:kollationerings:kollationeringen:kollationeringens:kollationeringar:kollationeringars:kollationeringarna:kollationeringarnas
+555150r4<substantiv>kollega:kollega:kollegas:kollegan:kollegans:kolleger, kollegor:kollegers, kollegors:kollegerna, kollegorna:kollegernas, kollegornas
+652649r3<adjektiv>kollegial:kollegial:kollegialt:kollegiala:kollegiala::::kollegiale
+652650r3<substantiv>kollegialitet:kollegialitet:kollegialitets:kollegialiteten:kollegialitetens::::
+652654r3<substantiv>kollegieblock:kollegieblock:kollegieblocks:kollegieblocket:kollegieblockets:kollegieblock:kollegieblocks:kollegieblocken:kollegieblockens
+828965r3<substantiv>kollegiehäfte:kollegiehäfte:kollegiehäftes:kollegiehäftet:kollegiehäftets:kollegiehäften:kollegiehäftens:kollegiehäftena:kollegiehäftenas
+828973r4<substantiv>kollegierum:kollegierum:kollegierums:kollegierummet:kollegierummets:kollegierum:kollegierums:kollegierummen:kollegierummens
+COMPOUND(652660, 571182): kollegium + rum
+652660r5<substantiv>kollegium:kollegium:kollegiums:kollegiet:kollegiets:kollegier:kollegiers:kollegierna:kollegiernas
+CUSTOM: y y kollegie
+652662r5<substantiv>kollekt:kollekt:kollekts:kollekten:kollektens:kollekter:kollekters:kollekterna:kollekternas
+CUSTOM: y y kollekt
+889324r4<substantiv>kollektbön:kollektbön:kollektböns:kollektbönen:kollektbönens:kollektböner:kollektböners:kollektbönerna:kollektbönernas
+COMPOUND(652662, 558036): kollekt + bön
+850895r4<substantiv>kollekthåv:kollekthåv:kollekthåvs:kollekthåven:kollekthåvens:kollekthåvar:kollekthåvars:kollekthåvarna:kollekthåvarnas
+COMPOUND(652662, 551439): kollekt + håv
+549559r3<substantiv>kollektion:kollektion:kollektions:kollektionen:kollektionens:kollektioner:kollektioners:kollektionerna:kollektionernas
+CUSTOM: y y kollektions
+652668r4<adjektiv>kollektiv:kollektiv:kollektivt:kollektiva:kollektiva::::
+CUSTOM: y y kollektiv
+552558r3<substantiv>kollektiv:kollektiv:kollektivs:kollektivet:kollektivets:kollektiv:kollektivs:kollektiven:kollektivens
+652669r3<substantiv>kollektivanslutning:kollektivanslutning:kollektivanslutnings:kollektivanslutningen:kollektivanslutningens::::
+CUSTOM: y y kollektivanslutnings
+608996r3<substantiv>kollektivavtal:kollektivavtal:kollektivavtals:kollektivavtalet:kollektivavtalets:kollektivavtal:kollektivavtals:kollektivavtalen:kollektivavtalens
+884329r3<substantiv>kollektivfil:kollektivfil:kollektivfils:kollektivfilen:kollektivfilens:kollektivfiler:kollektivfilers:kollektivfilerna:kollektivfilernas
+547169r5<verb>kollektivisera:kollektivisera:kollektiviserade:kollektiviserat:kollektiviserar:kollektivisera:kollektiviseras:kollektiviserades:kollektiviserats:kollektiviseras:kollektiviserad:kollektiviserat:kollektiviserade:kollektiviserande:
+828980r3<substantiv>kollektivisering:kollektivisering:kollektiviserings:kollektiviseringen:kollektiviseringens:kollektiviseringar:kollektiviseringars:kollektiviseringarna:kollektiviseringarnas
+558608r3<substantiv>kollektivism:kollektivism:kollektivisms:kollektivismen:kollektivismens:!:!:!:!
+825262r3<substantiv>kollektivist:kollektivist:kollektivists:kollektivisten:kollektivistens:kollektivister:kollektivisters:kollektivisterna:kollektivisternas
+581313r3<adjektiv>kollektivistisk:kollektivistisk:kollektivistiskt:kollektivistiska:kollektivistiska::::
+704044r4<substantiv>kollektivtrafik:kollektivtrafik:kollektivtrafiks:kollektivtrafiken:kollektivtrafikens::::
+COMPOUND(652668, 673056): kollektiv + trafik
+CUSTOM: y y kollektivtrafik
+652671r4<substantiv>kolli:kolli:kollis:kollit:kollits:kollin:kollins:kollina:kollinas
+CUSTOM: y y kolli
+585554r4<verb>kollidera:kollidera:kolliderade:kolliderat:kolliderar:kollidera::::::::kolliderande:
+792626r3<adjektiv>kollimerad:kollimerad:kollimerat:kollimerade:kollimerade:!:!:!:
+735990r4<substantiv>kollinummer:kollinummer:kollinummers:kollinumret:kollinumrets:kollinummer:kollinummers:kollinumren:kollinumrens
+COMPOUND(652671, 621605): kolli + nummer
+549567r4<substantiv>kollision:kollision:kollisions:kollisionen:kollisionens:kollisioner:kollisioners:kollisionerna:kollisionernas
+CUSTOM: y y kollisions
+735996r4<substantiv>kollisionskurs:kollisionskurs:kollisionskurs:kollisionskursen:kollisionskursens:kollisionskurser:kollisionskursers:kollisionskurserna:kollisionskursernas
+COMPOUND(549567, 549821): kollision + kurs
+828994r3<substantiv>kollo:kollo:kollos:kollot:kollots:kollon:kollons:kollona:kollonas
+981734r3<substantiv>kollodium:kollodium:kollodiums:kollodiet:kollodiets::::
+981738r3<substantiv>kolloid:kolloid:kolloids:kolloiden:kolloidens:kolloider:kolloiders:kolloiderna:kolloidernas
+CUSTOM: y n
+981746r3<adjektiv>kolloidal:kolloidal:kolloidalt:kolloidala:kolloidala::::::::::::
+CUSTOM: y n
+581314r3<adjektiv>kolloidisk:kolloidisk:kolloidiskt:kolloidiska:kolloidiska::::
+CUSTOM: y n
+981749r3<substantiv>kolloidkemi:kolloidkemi:kolloidkemis:kolloidkemin:kolloidkemins::::
+829002r3<substantiv>kollokvium:kollokvium:kollokviums:kollokviet:kollokviets:

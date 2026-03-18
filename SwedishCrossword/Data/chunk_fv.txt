@@ -1,0 +1,587 @@
+:skallbrottets:skallbrott:skallbrotts:skallbrotten:skallbrottens
+COMPOUND(599968, 552275): skalle + brott
+599968r15<substantiv>skalle:skalle:skalles:skallen:skallens:skallar:skallars:skallarna:skallarnas
+CUSTOM: y y
+822088r3<substantiv>skaller:skaller:skallers:skallret:skallrets::::
+551837r3<substantiv>skallerorm:skallerorm:skallerorms:skallerormen:skallerormens:skallerormar:skallerormars:skallerormarna:skallerormarnas
+822038r4<substantiv>skallform:skallform:skallforms:skallformen:skallformens:skallformer:skallformers:skallformerna:skallformernas
+COMPOUND(599968, 548947): skalle + form
+822046r4<substantiv>skallfraktur:skallfraktur:skallfrakturs:skallfrakturen:skallfrakturens:skallfrakturer:skallfrakturers:skallfrakturerna:skallfrakturernas
+COMPOUND(599968, 548955): skalle + fraktur
+886826r3<substantiv>skallgivning:skallgivning:skallgivnings:skallgivningen:skallgivningens:skallgivningar:skallgivningars:skallgivningarna:skallgivningarnas
+822054r4<substantiv>skallgrop:skallgrop:skallgrops:skallgropen:skallgropens:skallgropar:skallgropars:skallgroparna:skallgroparnas
+COMPOUND(599968, 551317): skalle + grop
+656560r3<substantiv>skallgång:skallgång:skallgångs:skallgången:skallgångens:skallgångar:skallgångars:skallgångarna:skallgångarnas
+822062r3<substantiv>skallgångskedja:skallgångskedja:skallgångskedjas:skallgångskedjan:skallgångskedjans:skallgångskedjor:skallgångskedjors:skallgångskedjorna:skallgångskedjornas
+563163r7<adjektiv>skallig:skallig:skalligt:skalliga:skalliga:skalligare:skalligast:skalligaste:skallige
+822070r3<substantiv>skallighet:skallighet:skallighets:skalligheten:skallighetens::::
+822074r4<substantiv>skallmått:skallmått:skallmåtts:skallmåttet:skallmåttets:skallmått:skallmåtts:skallmåtten:skallmåttens
+COMPOUND(599968, 552707): skalle + mått
+822080r3<substantiv>skallning:skallning:skallnings:skallningen:skallningens:skallningar:skallningars:skallningarna:skallningarnas
+734146r3<substantiv>skallra:skallra:skallras:skallran:skallrans:skallror:skallrors:skallrorna:skallrornas
+734154r3<verb>skallra:skallra:skallrade:skallrat:skallrar:skallra::::::::skallrande:
+576133r3<adjektiv>skallrig:skallrig:skallrigt:skallriga:skallriga::::
+656568r3<substantiv>skallskada:skallskada:skallskadas:skallskadan:skallskadans:skallskador:skallskadors:skallskadorna:skallskadornas
+656569r3<adjektiv>skallskadad:skallskadad:skallskadat:skallskadade:skallskadade:!:!:!:
+822092r4<substantiv>skalltak:skalltak:skalltaks:skalltaket:skalltakets:skalltak:skalltaks:skalltaken:skalltakens
+COMPOUND(599968, 553027): skalle + tak
+565230r3<adjektiv>skallös:skallös:skallöst:skallösa:skallösa::::
+551839r5<substantiv>skalm:skalm:skalms:skalmen:skalmens:skalmar:skalmars:skalmarna:skalmarnas
+CUSTOM: y n
+666092r3<substantiv>skalmeja:skalmeja:skalmejas:skalmejan:skalmejans:skalmejor:skalmejors:skalmejorna:skalmejornas
+985989r3<substantiv>skalmodell:skalmodell:skalmodells:skalmodellen:skalmodellens:skalmodeller:skalmodellers:skalmodellerna:skalmodellernas
+666100r3<substantiv>skalning:skalning:skalnings:skalningen:skalningens:skalningar:skalningars:skalningarna:skalningarnas
+CUSTOM: y y skalnings
+626254r3<substantiv>skalp:skalp:skalps:skalpen:skalpens:skalper:skalpers:skalperna:skalpernas
+745724r3<substantiv>skalpell:skalpell:skalpells:skalpellen:skalpellens:skalpeller:skalpellers:skalpellerna:skalpellernas
+588006r4<verb>skalpera:skalpera:skalperade:skalperat:skalperar:skalpera:skalperas:skalperades:skalperats:skalperas:skalperad:skalperat:skalperade:skalperande:
+822103r3<substantiv>skalpering:skalpering:skalperings:skalperingen:skalperingens:skalperingar:skalperingars:skalperingarna:skalperingarnas
+822111r3<substantiv>skalpjakt:skalpjakt:skalpjakts:skalpjakten:skalpjaktens:skalpjakter:skalpjakters:skalpjakterna:skalpjakternas
+822119r3<substantiv>skalpjägare:skalpjägare:skalpjägares:skalpjägaren:skalpjägarens:skalpjägare:skalpjägares:skalpjägarna:skalpjägarnas
+822125r3<substantiv>skalpotatis:skalpotatis:skalpotatis:skalpotatisen:skalpotatisens:skalpotatisar:skalpotatisars:skalpotatisarna:skalpotatisarnas
+918563r3<substantiv>skalskydd:skalskydd:skalskydds:skalskyddet:skalskyddets::::
+985997r3<substantiv>skalstreck:skalstreck:skalstrecks:skalstrecket:skalstreckets:skalstreck:skalstrecks:skalstrecken:skalstreckens
+556119r14<substantiv>skalv:skalv:skalvs:skalvet:skalvets:skalv:skalvs:skalven:skalvens
+CUSTOM: y n
+918570r3<adjektiv>skalvdrabbad:skalvdrabbad:skalvdrabbat:skalvdrabbade:skalvdrabbade:!:!:!:::::::::
+918582r4<substantiv>skalvkatastrof:skalvkatastrof:skalvkatastrofs:skalvkatastrofen:skalvkatastrofens:skalvkatastrofer:skalvkatastrofers:skalvkatastroferna:skalvkatastrofernas
+COMPOUND(556119, 549513): skalv + katastrof
+918574r4<substantiv>skalvoffer:skalvoffer:skalvoffers:skalvoffret:skalvoffrets:skalvoffer:skalvoffers:skalvoffren:skalvoffrens
+COMPOUND(556119, 619286): skalv + offer
+918592r4<substantiv>skalvområde:skalvområde:skalvområdes:skalvområdet:skalvområdets:skalvområden:skalvområdens:skalvområdena:skalvområdenas
+COMPOUND(556119, 612761): skalv + område
+918602r3<adjektiv>skalvskadad:skalvskadad:skalvskadat:skalvskadade:skalvskadade:!:!:!:::::::::
+822132r3<substantiv>skalär:skalär:skalärs:skalären:skalärens:skalärer:skalärers:skalärerna:skalärernas
+656570r3<adjektiv>skalär:skalär:skalärt:skalära:skalära:!:!:!:!
+822140r3<substantiv>skalömsning:skalömsning:skalömsnings:skalömsningen:skalömsningens:skalömsningar:skalömsningars:skalömsningarna:skalömsningarnas
+822148r3<substantiv>skalövning:skalövning:skalövnings:skalövningen:skalövningens:skalövningar:skalövningars:skalövningarna:skalövningarnas
+619541r8<substantiv>skam:skam:skams:skammen:skammens::::
+CUSTOM: y y
+918607r3<adjektiv>skambelagd:skambelagd:skambelagt:skambelagda:skambelagda::::::::::::
+745732r4<substantiv>skambud:skambud:skambuds:skambudet:skambudets:skambud:skambuds:skambuden:skambudens
+COMPOUND(619541, 552287): skam + bud
+656581r4<verb>skamfila:skamfila:skamfilade:skamfilat:skamfilar:skamfila:skamfilas:skamfilades:skamfilats:skamfilas:skamfilad:skamfilat:skamfilade:skamfilande:
+822160r3<substantiv>skamfilning:skamfilning:skamfilnings:skamfilningen:skamfilningens:skamfilningar:skamfilningars:skamfilningarna:skamfilningarnas
+656573r3<substantiv>skamfläck:skamfläck:skamfläcks:skamfläcken:skamfläckens:skamfläckar:skamfläckars:skamfläckarna:skamfläckarnas
+585101r3<adjektiv>skamfull:skamfull:skamfullt:skamfulla:skamfulla::::
+745738r4<substantiv>skamgrepp:skamgrepp:skamgrepps:skamgreppet:skamgreppets:skamgrepp:skamgrepps:skamgreppen:skamgreppens
+COMPOUND(619541, 552447): skam + grepp
+666101r3<substantiv>skamkänsla:skamkänsla:skamkänslas:skamkänslan:skamkänslans:skamkänslor:skamkänslors:skamkänslorna:skamkänslornas
+567671r5<adjektiv>skamlig:skamlig:skamligt:skamliga:skamliga:skamligare:skamligast:skamligaste:skamlige
+666106r3<adverb>skamligen:skamligen
+776090r4<substantiv>skamlighet:skamlighet:skamlighets:skamligheten:skamlighetens:skamligheter:skamligheters:skamligheterna:skamligheternas
+565233r4<adjektiv>skamlös:skamlös:skamlöst:skamlösa:skamlösa:skamlösare:skamlösast:skamlösaste:skamlöse
+776094r3<substantiv>skamlöshet:skamlöshet:skamlöshets:skamlösheten:skamlöshetens::::
+656583r3<substantiv>skampåle:skampåle:skampåles:skampålen:skampålens:skampålar:skampålars:skampålarna:skampålarnas
+564464r4<adjektiv>skamsen:skamsen:skamset:skamsna:skamsna::::skamsne
+822178r3<substantiv>skamsenhet:skamsenhet:skamsenhets:skamsenheten:skamsenhetens::::
+822182r4<substantiv>skamstraff:skamstraff:skamstraffs:skamstraffet:skamstraffets:skamstraff:skamstraffs:skamstraffen:skamstraffens
+COMPOUND(619541, 552986): skam + straff
+745744r4<substantiv>skamvrå:skamvrå:skamvrås:skamvrån:skamvråns:skamvrår:skamvrårs:skamvrårna:skamvrårnas
+COMPOUND(619541, 612053): skam + vrå
+550506r6<substantiv>skandal:skandal:skandals:skandalen:skandalens:skandaler:skandalers:skandalerna:skandalernas
+CUSTOM: y y skandal
+745755r3<adjektiv>skandalartad:skandalartad:skandalartat:skandalartade:skandalartade:!:!:!:
+794877r3<adjektiv>skandalbetonad:skandalbetonad:skandalbetonat:skandalbetonade:skandalbetonade:!:!:!:
+745758r3<substantiv>skandalhistoria::::::::
+COMPOUND(550506, 604486): skandal + historia
+576136r3<adjektiv>skandalhungrig:skandalhungrig:skandalhungrigt:skandalhungriga:skandalhungriga::::
+588010r4<verb>skandalisera:skandalisera:skandaliserade:skandaliserat:skandaliserar:skandalisera:skandaliseras:skandaliserades:skandaliserats:skandaliseras:skandaliserad:skandaliserat:skandaliserade:skandaliserande:
+822194r3<substantiv>skandalisering:skandalisering:skandaliserings:skandaliseringen:skandaliseringens::::
+745752r3<adjektiv>skandalomsusad:skandalomsusad:skandalomsusat:skandalomsusade:skandalomsusade:!:!:!:
+860998r4<substantiv>skandalrapportering:skandalrapportering:skandalrapporterings:skandalrapporteringen:skandalrapporteringens:skandalrapporteringar:skandalrapporteringars:skandalrapporteringarna:skandalrapporteringarnas
+COMPOUND(550506, 638573): skandal + rapportering
+565236r4<adjektiv>skandalös:skandalös:skandalöst:skandalösa:skandalösa:skandalösare:skandalösast:skandalösaste:skandalöse
+588014r4<verb>skandera:skandera:skanderade:skanderat:skanderar:skandera:skanderas:skanderades:skanderats:skanderas:skanderad:skanderat:skanderade:skanderande:
+822202r3<substantiv>skandering:skandering:skanderings:skanderingen:skanderingens:skanderingar:skanderingars:skanderingarna:skanderingarnas
+553314r3<egennamn>Skandia:Skandia:Skandias
+CUSTOM: y n Skandia
+603533r3<substantiv>skandinav:skandinav:skandinavs:skandinaven:skandinavens:skandinaver:skandinavers:skandinaverna:skandinavernas
+553948r3<egennamn>Skandinavien:Skandinavien:Skandinaviens
+CUSTOM: y n Skandinavien
+772969r3<substantiv>skandinavienresa:skandinavienresa:skandinavienresas:skandinavienresan:skandinavienresans:skandinavienresor:skandinavienresors:skandinavienresorna:skandinavienresornas
+CUSTOM: n n 
+588018r4<verb>skandinavisera:skandinavisera:skandinaviserade:skandinaviserat:skandinaviserar:skandinavisera:skandinaviseras:skandinaviserades:skandinaviserats:skandinaviseras:skandinaviserad:skandinaviserat:skandinaviserade::
+822218r3<substantiv>skandinavisering:skandinavisering:skandinaviserings:skandinaviseringen:skandinaviseringens::::
+568782r4<adjektiv>skandinavisk:skandinavisk:skandinaviskt:skandinaviska:skandinaviska::::skandinaviske
+595123r3<substantiv>skandinaviska:skandinaviska:skandinaviskas:skandinaviskan:skandinaviskans:skandinaviskor:skandinaviskors:skandinaviskorna:skandinaviskornas
+822214r3<substantiv>skandinavism:skandinavism:skandinavisms:skandinavismen:skandinavismens::::
+822222r3<substantiv>skandinavist:skandinavist:skandinavists:skandinavisten:skandinavistens:skandinavister:skandinavisters:skandinavisterna:skandinavisternas
+583773r3<adjektiv>skandinavistisk:skandinavistisk:skandinavistiskt:skandinavistiska:skandinavistiska::::
+583776r3<adjektiv>skandisk:skandisk:skandiskt:skandiska:skandiska::::
+723562r3<substantiv>skandium:skandium:skandiums:skandiumet:skandiumets:!:!:!:!
+783608r4<verb>skanna:skanna:skannade:skannat:skannar:skanna:skannas:skannades:skannats:skannas:skannad:skannat:skannade:skannande:
+822230r3<substantiv>skanner:skanner:skanners:skannern:skannerns:skannrar:skannrars:skannrarna:skannrarnas
+822238r3<substantiv>skanning:skanning:skannings:skanningen:skanningens:skanningar:skanningars:skanningarna:skanningarnas
+CUSTOM: y y skannings
+666107r3<substantiv>skans:skans:skans:skansen:skansens:skansar:skansars:skansarna:skansarnas
+822246r3<substantiv>skanslucka:skanslucka:skansluckas:skansluckan:skansluckans:skansluckor:skansluckors:skansluckorna:skansluckornas
+943247r3<egennamn>Skanstull:Skanstull:Skanstulls
+554364r3<egennamn>Skanör:Skanör:Skanörs
+CUSTOM: y n Skanör
+547659r4<verb>skapa:skapa:skapade:skapat:skapar:skapa:skapas:skapades:skapats:skapas:skapad:skapat:skapade::
+656589r3<substantiv>skapande:skapande:skapandes:skapandet:skapandets::::
+615438r3<substantiv>skapare:skapare:skapares:skaparen:skaparens:skapare:skapares:skaparna:skaparnas
+CUSTOM: y y skapar +skapar
+822254r3<substantiv>skaparinna:skaparinna:skaparinnas:skaparinnan:skaparinnans:skaparinnor:skaparinnors:skaparinnorna:skaparinnornas
+656591r4<substantiv>skapelse:skapelse:skapelses:skapelsen:skapelsens:skapelser:skapelsers:skapelserna:skapelsernas
+CUSTOM: y y skapelse +skapelse
+666112r4<substantiv>skapelsemyt:skapelsemyt:skapelsemyts:skapelsemyten:skapelsemytens:skapelsemyter:skapelsemyters:skapelsemyterna:skapelsemyternas
+COMPOUND(656591, 550063): skapelse + myt
+563284r5<adjektiv>skaplig:skaplig:skapligt:skapliga:skapliga:skapligare:skapligast:skapligaste:skaplige
+745759r3<adjektiv>skapt:skapt:skapt:skapta:skapta:!:!:!:
+595131r4<substantiv>skara:skara:skaras:skaran:skarans:skaror:skarors:skarorna:skarornas
+554366r4<egennamn>Skara:Skara:Skaras, Skara
+CUSTOM: y n Skara
+658425r3<egennamn>Skaraborg:Skaraborg:Skaraborgs
+CUSTOM: y n Skaraborgs
+892115r3<substantiv>skaraborgare:skaraborgare:skaraborgares:skaraborgaren:skaraborgarens:skaraborgare:skaraborgares:skaraborgarna:skaraborgarnas
+822263r3<substantiv>skarbildning:skarbildning:skarbildnings:skarbildningen:skarbildningens:skarbildningar:skarbildningars:skarbildningarna:skarbildningarnas
+626262r3<substantiv>skare:skare:skares:skaren:skarens::::
+CUSTOM: y n
+822271r3<substantiv>skarföre:skarföre:skarföres:skarföret:skarförets:skarfören:skarförens:skarförena:skarförenas
+895149r3<substantiv>skarn:skarn:skarns:skarnet:skarnets:skarn:skarns:skarnen:skarnens
+CUSTOM: n n y
+986004r3<substantiv>skarndäck:skarndäck:skarndäcks:skarndäcket:skarndäckets:skarndäck:skarndäcks:skarndäcken:skarndäckens
+563271r6<adjektiv>skarp:skarp:skarpt:skarpa:skarpa:skarpare:skarpast:skarpaste:skarpe
+CUSTOM: y y skarp
+802098r3<adjektiv>skarpblå:skarpblå:skarpblått:skarpblåa:skarpblåa::::
+666120r3<adjektiv>skarpeggad:skarpeggad:skarpeggat:skarpeggade:skarpeggade:!:!:!:
+666123r3<substantiv>skarpen:!:!:skarpen:!:!:!:!:!
+798851r3<adjektiv>skarpgul:skarpgul:skarpgult:skarpgula:skarpgula::::
+CUSTOM: y n n
+819244r3<substantiv>skarphet:skarphet:skarphets:skarpheten:skarphetens::::
+794880r3<adjektiv>skarpkantad:skarpkantad:skarpkantat:skarpkantade:skarpkantade:!:!:!:
+576139r3<adjektiv>skarpkantig:skarpkantig:skarpkantigt:skarpkantiga:skarpkantiga::::
+576142r3<adjektiv>skarpkornig:skarpkornig:skarpkornigt:skarpkorniga:skarpkorniga::::
+859889r3<verb>skarpladda:skarpladda:skarpladdade:skarpladdat:skarpladdar:skarpladda:skarpladdas:skarpladdades:skarpladdats:skarpladdas:skarpladdad:skarpladdat:skarpladdade::
+894518r4<egennamn>Skarpnäck:Skarpnäck:Skarpnäcks
+CUSTOM: y n Skarpnäcks
+894520r3<substantiv>Skarpnäcksbo::::::::
+COMPOUND(894518, 855482): Skarpnäck + bo
+628781r4<substantiv>skarprättare:skarprättare:skarprättares:skarprättaren:skarprättarens:skarprättare:skarprättares:skarprättarna:skarprättarnas
+CUSTOM: y y skarprättar
+766291r3<substantiv>skarprättaryxa::::::::
+COMPOUND(628781, 595828): skarprättare + yxa
+745761r3<substantiv>skarpsill:skarpsill:skarpsills:skarpsillen:skarpsillens:skarpsillar:skarpsillars:skarpsillarna:skarpsillarnas
+725891r3<substantiv>skarpsinne:skarpsinne:skarpsinnes:skarpsinnet:skarpsinnets::::
+576145r5<adjektiv>skarpsinnig:skarpsinnig:skarpsinnigt:skarpsinniga:skarpsinniga:skarpsinnigare:skarpsinnigast:skarpsinnigaste:skarpsinnige
+656592r3<substantiv>skarpsinnighet:skarpsinnighet:skarpsinnighets:skarpsinnigheten:skarpsinnighetens:skarpsinnigheter:skarpsinnigheters:skarpsinnigheterna:skarpsinnigheternas
+CUSTOM: y y skarpsinnighets
+745769r3<adjektiv>skarpskuren:skarpskuren:skarpskuret:skarpskurna:skarpskurna::::skarpskurne
+727969r3<substantiv>skarpskytt:skarpskytt:skarpskytts:skarpskytten:skarpskyttens:skarpskyttar:skarpskyttars:skarpskyttarna:skarpskyttarnas
+766292r4<substantiv>skarpsyn:skarpsyn:skarpsyns:skarpsynen:skarpsynens:!:!:!:!
+COMPOUND(563271, 603790): skarp + syn
+745773r4<adjektiv>skarpsynt:skarpsynt:skarpsynt:skarpsynta:skarpsynta:skarpsyntare:skarpsyntast:skarpsyntaste:skarpsynte
+822282r3<substantiv>skarpsynthet:skarpsynthet:skarpsynthets:skarpsyntheten:skarpsynthetens::::
+822286r4<substantiv>skarpsås:skarpsås:skarpsås:skarpsåsen:skarpsåsens:skarpsåser:skarpsåsers:skarpsåserna:skarpsåsernas
+COMPOUND(563271, 556707): skarp + sås
+794883r3<adjektiv>skarptandad:skarptandad:skarptandat:skarptandade:skarptandade:!:!:!:
+794886r3<adjektiv>skarptecknad:skarptecknad:skarptecknat:skarptecknade:skarptecknade:!:!:!:
+794889r3<adjektiv>skarptungad:skarptungad:skarptungat:skarptungade:skarptungade:!:!:!:
+656594r3<adjektiv>skarptänkt:skarptänkt:skarptänkt:skarptänkta:skarptänkta::::skarptänkte
+794892r3<adjektiv>skarpvässad:skarpvässad:skarpvässat:skarpvässade:skarpvässade:!:!:!:
+766288r4<adjektiv>skarpögd:skarpögd:skarpögt:skarpögda:skarpögda::::skarpögde
+822294r3<substantiv>skarpögdhet:skarpögdhet:skarpögdhets:skarpögdheten:skarpögdhetens::::
+822298r3<substantiv>skarsnö:skarsnö:skarsnös:skarsnön:skarsnöns::::
+551841r8<substantiv>skarv:skarv:skarvs:skarven:skarvens:skarvar:skarvars:skarvarna:skarvarnas
+CUSTOM: y y skarv
+676408r3<verb>skarva:skarva:skarvade:skarvat:skarvar:skarva:skarvas:skarvades:skarvats:skarvas:skarvad:skarvat:skarvade:skarvande:
+570060r3<adjektiv>skarvbar:skarvbar:skarvbart:skarvbara:skarvbara::::
+CUSTOM: y n n
+884772r4<substantiv>skarvdel:skarvdel:skarvdels:skarvdelen:skarvdelens:skarvdelar:skarvdelars:skarvdelarna:skarvdelarnas
+COMPOUND(551841, 551034): skarv + del
+564145r3<adjektiv>skarvfri:skarvfri:skarvfritt:skarvfria:skarvfria::::
+595133r3<substantiv>skarvhylsa:skarvhylsa:skarvhylsas:skarvhylsan:skarvhylsans:skarvhylsor:skarvhylsors:skarvhylsorna:skarvhylsornas
+576148r3<adjektiv>skarvig:skarvig:skarvigt:skarviga:skarviga::::
+CUSTOM: n n
+600337r3<substantiv>skarvkabel:skarvkabel:skarvkabels:skarvkabeln:skarvkabelns:skarvkablar:skarvkablars:skarvkablarna:skarvkablarnas
+595141r3<substantiv>skarvklämma:skarvklämma:skarvklämmas:skarvklämman:skarvklämmans:skarvklämmor:skarvklämmors:skarvklämmorna:skarvklämmornas
+945233r4<substantiv>skarvmuff:skarvmuff:skarvmuffs:skarvmuffen:skarvmuffens:skarvmuffar:skarvmuffars:skarvmuffarna:skarvmuffarnas
+COMPOUND(551841, 551725): skarv + muff
+656596r4<substantiv>skarvning:skarvning:skarvnings:skarvningen:skarvningens:skarvningar:skarvningars:skarvningarna:skarvningarnas
+CUSTOM: y y skarvnings
+676377r4<substantiv>skarvningsmaskin:skarvningsmaskin:skarvningsmaskins:skarvningsmaskinen:skarvningsmaskinens:skarvningsmaskiner:skarvningsmaskiners:skarvningsmaskinerna:skarvningsmaskinernas
+COMPOUND(656596, 550005): skarvning + maskin
+676385r5<substantiv>skarvplåt:skarvplåt:skarvplåts:skarvplåten:skarvplåtens:skarvplåtar:skarvplåtars:skarvplåtarna:skarvplåtarnas
+COMPOUND(551841, 598671): skarv + plåt
+CUSTOM: y y skarvplåts
+676393r4<substantiv>skarvplåtssvetsning:skarvplåtssvetsning:skarvplåtssvetsnings:skarvplåtssvetsningen:skarvplåtssvetsningens:skarvplåtssvetsningar:skarvplåtssvetsningars:skarvplåtssvetsningarna:skarvplåtssvetsningarnas
+COMPOUND(676385, 670827): skarvplåt + svetsning
+CUSTOM: y y skarvplåtssvetsnings
+676401r4<substantiv>skarvrör:skarvrör:skarvrörs:skarvröret:skarvrörets:skarvrör:skarvrörs:skarvrören:skarvrörens
+COMPOUND(551841, 552860): skarv + rör
+676407r4<substantiv>skarvsladd:skarvsladd:skarvsladds:skarvsladden:skarvsladdens:skarvsladdar:skarvsladdars:skarvsladdarna:skarvsladdarnas
+COMPOUND(551841, 551863): skarv + sladd
+557324r13<verb>ska, skola:ska, skola:skulle:skolat:ska, skall:!:!:!:!:!:!:!:!:!:
+595149r3<substantiv>skata:skata:skatas:skatan:skatans:skator:skators:skatorna:skatornas
+612819r6<substantiv>skatbo:skatbo:skatbos:skatboet:skatboets:skatbon:skatbons:skatbona:skatbonas
+965526r4<substantiv>skate:skate:::::::
+CUSTOM: y n
+734159r3<substantiv>skateboard:skateboard:skateboards:skateboarden:skateboardens:skateboardar:skateboardars:skateboardarna:skateboardarnas
+CUSTOM: y y skateboard
+965517r4<substantiv>skateramp:skateramp:skateramps:skaterampen:skaterampens:skateramper:skaterampers:skateramperna:skaterampernas
+COMPOUND(965526, 550312): skate + ramp
+550507r29<substantiv>skatt:skatt:skatts:skatten:skattens:skatter:skatters:skatterna:skatternas
+BASEWORDS: skatte
+CUSTOM: y y skatt
+547660r5<verb>skatta:skatta:skattade:skattat:skattar:skatta:skattas:skattades:skattats:skattas:skattad:skattat:skattade:skattande:
+CUSTOM: y y skatte +skatte
+570063r3<adjektiv>skattbar:skattbar:skattbart:skattbara:skattbara::::
+CUSTOM: y n n
+800301r3<adjektiv>skattbelagd:skattbelagd:skattbelagt:skattbelagda:skattbelagda::::
+609039r3<substantiv>skatteavdrag:skatteavdrag:skatteavdrags:skatteavdraget:skatteavdragets:skatteavdrag:skatteavdrags:skatteavdragen:skatteavdragens
+937232r4<substantiv>skattebas:skattebas:skattebas:skattebasen:skattebasens:skattebaser:skattebasers:skattebaserna:skattebasernas
+COMPOUND(550507, 548351): skatt + bas
+800304r3<adjektiv>skattebelagd:skattebelagd:skattebelagt:skattebelagda:skattebelagda::::
+615439r3<substantiv>skattebetalare:skattebetalare:skattebetalares:skattebetalaren:skattebetalarens:skattebetalare:skattebetalares:skattebetalarna:skattebetalarnas
+CUSTOM: y y skattebetalar
+760522r4<substantiv>skattebrott:skattebrott:skattebrotts:skattebrottet:skattebrottets:skattebrott:skattebrotts:skattebrotten:skattebrottens
+CUSTOM: y y skattebrotts
+760528r4<substantiv>skattebrottslag:skattebrottslag:skattebrottslags:skattebrottslagen:skattebrottslagens:skattebrottslagar:skattebrottslagars:skattebrottslagarna:skattebrottslagarnas
+COMPOUND(760522, 551690): skattebrott + lag
+711469r3<substantiv>skattedebatt:skattedebatt:skattedebatts:skattedebatten:skattedebattens:skattedebatter:skattedebatters:skattedebatterna:skattedebatternas
+918612r3<substantiv>skattefelskarta:skattefelskarta:skattefelskartas:skattefelskartan:skattefelskartans::::
+666124r3<substantiv>skattefiffel:skattefiffel:skattefiffels:skattefifflet:skattefifflets::::
+794895r3<adjektiv>skattefinansierad:skattefinansierad:skattefinansierat:skattefinansierade:skattefinansierade:!:!:!:
+918617r3<substantiv>skatteflyktslag:skatteflyktslag:skatteflyktslags:skatteflyktslagen:skatteflyktslagens:skatteflyktslagar:skatteflyktslagars:skatteflyktslagarna:skatteflyktslagarnas
+564148r3<adjektiv>skattefri:skattefri:skattefritt:skattefria:skattefria::::
+666126r3<substantiv>skattefusk:skattefusk:skattefusks:skattefusket:skattefuskets::::
+890499r3<substantiv>skattehöjning::::::::
+COMPOUND(550507, 644432): skatt + höjning
+656597r3<substantiv>skatteinbetalning:skatteinbetalning:skatteinbetalnings:skatteinbetalningen:skatteinbetalningens:skatteinbetalningar:skatteinbetalningars:skatteinbetalningarna:skatteinbetalningarnas
+CUSTOM: y y skatteinbetalnings
+656598r3<substantiv>skattejämkning:skattejämkning:skattejämknings:skattejämkningen:skattejämkningens:skattejämkningar:skattejämkningars:skattejämkningarna:skattejämkningarnas
+CUSTOM: y y skattejämknings
+918626r4<substantiv>skattekil:skattekil:skattekils:skattekilen:skattekilens:skattekilar:skattekilars:skattekilarna:skattekilarnas
+COMPOUND(550507, 551525): skatt + kil
+637548r4<substantiv>skattekramare:skattekramare:skattekramares:skattekramaren, skattekramarn:skattekramarens, skattekramarns:skattekramare:skattekramares:skattekramarna:skattekramarnas
+COMPOUND(550507, 637501): skatt + kramare
+CUSTOM: y y skattekramar
+861007r4<substantiv>skattemedel:skattemedel:skattemedels:skattemedlet:skattemedlets:skattemedel:skattemedels:skattemedlen:skattemedlens
+COMPOUND(550507, 560532): skatt + medel
+656599r3<substantiv>skattemyndighet:skattemyndighet:skattemyndighets:skattemyndigheten:skattemyndighetens:skattemyndigheter:skattemyndigheters:skattemyndigheterna:skattemyndigheternas
+CUSTOM: y y skattemyndighets
+576151r3<adjektiv>skattemässig:skattemässig:skattemässigt:skattemässiga:skattemässiga::::
+576154r5<adjektiv>skattepliktig:skattepliktig:skattepliktigt:skattepliktiga:skattepliktiga::::skattepliktige
+COMPOUND(550507, 575327): skatt + pliktig
+583779r3<adjektiv>skattepolitisk:skattepolitisk:skattepolitiskt:skattepolitiska:skattepolitiska::::
+567672r3<adjektiv>skatterättslig:skatterättslig:skatterättsligt:skatterättsliga:skatterättsliga::::
+666128r3<substantiv>skattesats:skattesats:skattesats:skattesatsen:skattesatsens:skattesatser:skattesatsers:skattesatserna:skattesatsernas
+712051r4<substantiv>skatteskuld:skatteskuld:skatteskulds:skatteskulden:skatteskuldens:skatteskulder:skatteskulders:skatteskulderna:skatteskuldernas
+COMPOUND(550507, 550525): skatt + skuld
+615440r3<substantiv>skattesmitare:skattesmitare:skattesmitares:skattesmitaren:skattesmitarens:skattesmitare:skattesmitares:skattesmitarna:skattesmitarnas
+CUSTOM: y y skattesmitar
+711114r3<substantiv>skattesystem:skattesystem:skattesystems:skattesystemet:skattesystemets:skattesystem:skattesystems:skattesystemen:skattesystemens
+666129r3<substantiv>skattesänkning:skattesänkning:skattesänknings:skattesänkningen:skattesänkningens:skattesänkningar:skattesänkningars:skattesänkningarna:skattesänkningarnas
+CUSTOM: y y skattesänknings
+822312r4<substantiv>skattetak:skattetak:skattetaks:skattetaket:skattetakets:skattetak:skattetaks:skattetaken:skattetakens
+COMPOUND(550507, 553027): skatt + tak
+583782r3<adjektiv>skatteteknisk:skatteteknisk:skattetekniskt:skattetekniska:skattetekniska::::
+800307r3<adjektiv>skattetyngd:skattetyngd:skattetyngt:skattetyngda:skattetyngda::::
+745776r4<substantiv>skatteutjämning::::::::
+COMPOUND(550507, 645305): skatt + utjämning
+CUSTOM: y y skatteutjämnings
+745778r3<substantiv>skatteutjämningsavgift::::::::
+COMPOUND(745776, 548299): skatteutjämning + avgift
+776098r3<substantiv>skatteår:skatteår:skatteårs:skatteåret:skatteårets:skatteår:skatteårs:skatteåren:skatteårens
+597562r3<substantiv>skatteåterbäring:skatteåterbäring:skatteåterbärings:skatteåterbäringen:skatteåterbäringens:skatteåterbäringar:skatteåterbäringars:skatteåterbäringarna:skatteåterbäringarnas
+CUSTOM: y y skatteåterbärings
+842243r4<substantiv>skatteöre:skatteöre:skatteöres:skatteöret:skatteörets:skatteören:skatteörens:skatteörena:skatteörenas
+COMPOUND(550507, 624037): skatt + öre
+656600r3<substantiv>skattkammare:skattkammare:skattkammares:skattkammaren:skattkammarens:skattkammare:skattkammares:skattkammarna:skattkammarnas
+CUSTOM: y y skattkammar
+600345r3<substantiv>skattkammarväxel:skattkammarväxel:skattkammarväxels:skattkammarväxeln:skattkammarväxelns:skattkammarväxlar:skattkammarväxlars:skattkammarväxlarna:skattkammarväxlarnas
+770004r4<verb>skattlägga:skattlägga:skattlade:skattlagt:skattlägger:skattlägg:skattläggas:skattlades:skattlagts:skattläggs, skattlägges:skattlagd:skattlagt:skattlagda:skattläggande:
+COMPOUND(550507, 556585): skatt + lägga
+666137r3<substantiv>skattmas:skattmas:skattmas:skattmasen:skattmasens:skattmasar:skattmasars:skattmasarna:skattmasarnas
+656622r3<substantiv>skattning:skattning:skattnings:skattningen:skattningens:skattningar:skattningars:skattningarna:skattningarnas
+CUSTOM: y y skattnings
+576157r3<adjektiv>skattpliktig:skattpliktig:skattpliktigt:skattpliktiga:skattpliktiga::::
+656601r3<substantiv>skattsedel:skattsedel:skattsedels:skattsedeln:skattsedelns:skattsedlar:skattsedlars:skattsedlarna:skattsedlarnas
+CUSTOM: y y skattsedels
+666144r4<verb>skattskriva:skattskriva:skattskrev:skattskrivit:skattskriver:skattskriv:skattskrivas:skattskrevs:skattskrivits:skattskrivs, skattskrives:skattskriven:skattskrivet:skattskrivna::
+COMPOUND(550507, 556530): skatt + skriva
+656621r3<substantiv>skattskrivning:skattskrivning:skattskrivnings:skattskrivningen:skattskrivningens::::
+CUSTOM: y y skattskrivnings
+576160r4<adjektiv>skattskyldig:skattskyldig:skattskyldigt:skattskyldiga:skattskyldiga::::skattskyldige
+904885r7<substantiv>skav:skav:skavs:skavet:skavets::::
+CUSTOM: y n
+585791r5<verb>skava:skava:skavde:skavt:skaver:skav:skavas:skavdes:skavts:skavs, skaves:skavd:skavt:skavda:skavande:
+CUSTOM: y n
+745780r3<substantiv>skavank:skavank:skavanks:skavanken:skavankens:skavanker:skavankers:skavankerna:skavankernas
+564149r3<adjektiv>skavankfri:skavankfri:skavankfritt:skavankfria:skavankfria::::
+576163r3<adjektiv>skavankig:skavankig:skavankigt:skavankiga:skavankiga::::
+565239r3<adjektiv>skavanklös:skavanklös:skavanklöst:skavanklösa:skavanklösa::::
+776104r3<adverb>skavfötters:skavfötters
+874084r3<egennamn>Skavlöten:Skavlöten:Skavlötens
+822318r3<substantiv>skavning:skavning:skavnings:skavningen:skavningens:skavningar:skavningars:skavningarna:skavningarnas
+734771r5<egennamn>Skavsta:Skavsta:Skavstas
+552916r3<substantiv>skavsår:skavsår:skavsårs:skavsåret:skavsårets:skavsår:skavsårs:skavsåren:skavsårens
+585879r4<verb>ske:ske:skedde:skett:sker:ske:!:!:!:!:skedd:skett:skedda::
+598816r10<substantiv>sked:sked:skeds:skeden:skedens:skedar:skedars:skedarna:skedarnas
+CUSTOM: y y sked
+676339r4<substantiv>skedand:skedand:skedands:skedanden:skedandens:skedänder:skedänders:skedänderna:skedändernas
+COMPOUND(598816, 557824): sked + and
+626266r6<substantiv>skede:skede:skedes:skedet:skedets:skeden:skedens:skedena:skedenas
+576166r3<adjektiv>skedformig:skedformig:skedformigt:skedformiga:skedformiga::::
+584913r3<substantiv>skedfull:skedfull:!:!:!:!:!:!:!
+576169r3<adjektiv>skedrandig:skedrandig:skedrandigt:skedrandiga:skedrandiga::::
+656614r3<substantiv>skeende:skeende:skeendes:skeendet:skeendets:skeenden:skeendens:skeendena:skeendenas
+822327r3<verb>skejta:skejta:skejtade:skejtat:skejtar:skejta:skejtas:skejtades:skejtats:skejtas::::skejtande:
+822337r3<substantiv>skejtare:skejtare:skejtares:skejtaren:skejtarens:skejtare:skejtares:skejtarna:skejtarnas
+822345r3<substantiv>skejtboard:skejtboard:skejtboards:skejtboarden:skejtboardens:skejtboardar:skejtboardars:skejtboardarna:skejtboardarnas
+822354r3<verb>skela:skela:skelade:skelat:skelar:skela::::::::skelande:
+CUSTOM: y n
+552917r4<substantiv>skelett:skelett:skeletts:skelettet:skelettets:skelett:skeletts:skeletten:skelettens
+CUSTOM: y y skelett
+794898r3<adjektiv>skelettartad:skelettartad:skelettartat:skelettartade:skelettartade:!:!:!:
+745788r4<substantiv>skelettdel:skelettdel:skelettdels:skelettdelen:skelettdelens:skelettdelar:skelettdelars:skelettdelarna:skelettdelarnas
+COMPOUND(552917, 551034): skelett + del
+591065r4<verb>skelettera:skelettera:skeletterade:skeletterat:skeletterar:skelettera:skeletteras:skeletterades:skeletterats:skeletteras:skeletterad:skeletterat:skeletterade:skeletterande:
+822364r3<substantiv>skelettering:skelettering:skeletterings:skeletteringen:skeletteringens::::
+948602r3<substantiv>skelleftebo:skelleftebo:skelleftebos:skelleftebon:skelleftebons:skelleftebor:skelleftebors:skellefteborna:skelleftebornas
+554367r4<egennamn>Skellefteå:Skellefteå:Skellefteås, Skellefteå
+CUSTOM: y n Skellefteå Skellefte
+892542r3<substantiv>skellefteåbo:skellefteåbo:skellefteåbos:skellefteåbon:skellefteåbons:skellefteåbor:skellefteåbors:skellefteåborna:skellefteåbornas
+822368r3<substantiv>skelning:skelning:skelnings:skelningen:skelningens::::
+766296r3<adjektiv>skelögd:skelögd:skelögt:skelögda:skelögda::::skelögde
+776105r3<substantiv>skelögdhet:skelögdhet:skelögdhets:skelögdheten:skelögdhetens::::
+603541r3<substantiv>skelört:skelört:skelörts:skelörten:skelörtens:skelörter:skelörters:skelörterna:skelörternas
+555045r8<substantiv>sken:sken:skens:skenet:skenets:sken:skens:skenen:skenens
+CUSTOM: y y sken
+626268r3<verb>skena:skena:skenade:skenat:skenar:skena::::::::skenande:
+626272r4<substantiv>skena:skena:skenas:skenan:skenans:skenor:skenors:skenorna:skenornas
+570066r4<adjektiv>skenbar:skenbar:skenbart:skenbara:skenbara::::skenbare
+932591r3<substantiv>skenben:skenben:skenbens:skenbenet:skenbenets:skenben:skenbens:skenbenen:skenbenens
+822372r3<verb>skendö:skendö:skendog:skendött:skendör:skendö:::::::::
+761576r3<adjektiv>skendöd:skendöd:skendött:skendöda:skendöda:!:!:!:skendöde
+631087r3<substantiv>skenfot::::::::
+DEFINITION 1: Utskott på biologisk cell.
+564152r3<adjektiv>skenfri:skenfri:skenfritt:skenfria:skenfria::::
+CUSTOM: y n n
+576172r3<adjektiv>skenfärdig:skenfärdig:skenfärdigt:skenfärdiga:skenfärdiga::::
+567675r3<adjektiv>skenhelig:skenhelig:skenheligt:skenheliga:skenheliga::::
+565242r3<adjektiv>skenlös:skenlös:skenlöst:skenlösa:skenlösa::::
+CUSTOM: y n n
+723985r5<substantiv>skenmanöver:skenmanöver:skenmanövers:skenmanövern:skenmanöverns:skenmanövrer, skenmanövrar:skenmanövrers, skenmanövrars:skenmanövrerna, skenmanövrarna:skenmanövrernas, skenmanövrarnas
+COMPOUND(555045, 621134): sken + manöver
+550509r3<substantiv>skepnad:skepnad:skepnads:skepnaden:skepnadens:skepnader:skepnaders:skepnaderna:skepnadernas
+552919r8<substantiv>skepp:skepp:skepps:skeppet:skeppets:skepp:skepps:skeppen:skeppens
+CUSTOM: y y skepps
+547661r7<verb>skeppa:skeppa:skeppade:skeppat:skeppar:skeppa:skeppas:skeppades:skeppats:skeppas:skeppad:skeppat:skeppade::
+615441r4<substantiv>skeppare:skeppare:skeppares:skepparen:skepparens:skeppare:skeppares:skepparna:skepparnas
+CUSTOM: y y skeppar
+822375r5<substantiv>skeppning:skeppning:skeppnings:skeppningen:skeppningens:skeppningar:skeppningars:skeppningarna:skeppningarnas
+CUSTOM: y y skeppnings
+570067r3<adjektiv>skeppningsbar:skeppningsbar:skeppningsbart:skeppningsbara:skeppningsbara::::
+822383r3<substantiv>skeppningsmått::::::::
+COMPOUND(822375, 552707): skeppning + mått
+822384r4<substantiv>skeppningsort:skeppningsort:skeppningsorts:skeppningsorten:skeppningsortens:skeppningsorter:skeppningsorters:skeppningsorterna:skeppningsorternas
+COMPOUND(822375, 550141): skeppning + ort
+656613r3<substantiv>skeppsbesättning:skeppsbesättning:skeppsbesättnings:skeppsbesättningen:skeppsbesättningens:skeppsbesättningar:skeppsbesättningars:skeppsbesättningarna:skeppsbesättningarnas
+CUSTOM: y y skeppsbesättnings
+607966r3<substantiv>skeppsbrott:skeppsbrott:skeppsbrotts:skeppsbrottet:skeppsbrottets:skeppsbrott:skeppsbrotts:skeppsbrotten:skeppsbrottens
+822394r3<substantiv>skeppsbyggeri:skeppsbyggeri:skeppsbyggeris:skeppsbyggeriet:skeppsbyggeriets:skeppsbyggerier:skeppsbyggeriers:skeppsbyggerierna:skeppsbyggeriernas
+876083r3<substantiv>skeppsläkare:skeppsläkare:skeppsläkares:skeppsläkaren:skeppsläkarens:skeppsläkare:skeppsläkares:skeppsläkarna:skeppsläkarnas
+583785r3<adjektiv>skeppsteknisk:skeppsteknisk:skeppstekniskt:skeppstekniska:skeppstekniska::::
+683893r5<substantiv>skeppstimmer:skeppstimmer:skeppstimmers:skeppstimret:skeppstimrets:skeppstimmer:skeppstimmers:skeppstimren:skeppstimrens
+COMPOUND(552919, 672716): skepp + timmer
+CUSTOM: y y skeppstimmer
+683892r4<substantiv>skeppstimmerman:skeppstimmerman:skeppstimmermans:skeppstimmermannen:skeppstimmermannens:skeppstimmermän:skeppstimmermäns:skeppstimmermännen:skeppstimmermännens
+COMPOUND(683893, 557796): skeppstimmer + man
+607972r3<substantiv>skeppsvarv:skeppsvarv:skeppsvarvs:skeppsvarvet:skeppsvarvets:skeppsvarv:skeppsvarvs:skeppsvarven:skeppsvarvens
+722199r4<substantiv>skeppsvrak:skeppsvrak:skeppsvraks:skeppsvraket:skeppsvrakets:skeppsvrak:skeppsvraks:skeppsvraken:skeppsvrakens
+COMPOUND(552919, 553131): skepp + vrak
+986010r3<substantiv>skeppund:skeppund:skeppunds:skeppundet:skeppundets:skeppund:skeppunds:skeppunden:skeppundens
+656618r7<substantiv>skepsis:skepsis:skepsis:skepsisen:skepsisens::::
+927510r3<substantiv>skepsism:skepsism:skepsisms:skepsismen:skepsismens::::
+CUSTOM: n n
+703007r3<substantiv>skepticism:skepticism:skepticisms:skepticismen:skepticismens::::
+745796r3<substantiv>skeptiker:skeptiker:skeptikers:skeptikern:skeptikerns:skeptiker:skeptikers:skeptikerna:skeptikernas
+583788r4<adjektiv>skeptisk:skeptisk:skeptiskt:skeptiska:skeptiska::::skeptiske
+550510r3<substantiv>sketch:sketch:sketchs:sketchen:sketchens:sketcher:sketchers:sketcherna:sketchernas
+822411r3<substantiv>sketchförfattare:sketchförfattare:sketchförfattares:sketchförfattaren:sketchförfattarens:sketchförfattare:sketchförfattares:sketchförfattarna:sketchförfattarnas
+624737r4<adjektiv>skev:skev:skevt:skeva:skeva:skevare:skevast:skevaste:::::::::
+626274r3<verb>skeva:skeva:skevade:skevat:skevar:skeva:::::::::
+822417r3<adjektiv>skevbent:skevbent:skevbent:skevbenta:skevbenta::::skevbente
+822420r4<substantiv>skevhet:skevhet:skevhets:skevheten:skevhetens:skevheter:skevheters:skevheterna:skevheternas
+822434r4<substantiv>skevning:skevning:skevnings:skevningen:skevningens::::
+CUSTOM: y y skevnings
+564155r3<adjektiv>skevningsfri:skevningsfri:skevningsfritt:skevningsfria:skevningsfria::::
+822438r3<substantiv>skevningsroder::::::::
+COMPOUND(822434, 621893): skevning + roder
+822428r4<substantiv>skevroder:skevroder:skevroders:skevrodret:skevrodrets:skevroder:skevroders:skevrodren:skevrodrens
+CUSTOM: y y skevroder
+822439r3<substantiv>skevroderlina::::::::
+COMPOUND(822428, 560088): skevroder + lina
+800310r3<adjektiv>skevögd:skevögd:skevögt:skevögda:skevögda::::
+959299r3<substantiv>skiathlon:skiathlon:skiathlons::::::
+CUSTOM: y n skiathlon
+619546r3<substantiv>skick:skick:skicks:skicket:skickets:skick:skicks:skicken:skickens
+547662r6<verb>skicka:skicka:skickade:skickat:skickar:skicka:skickas:skickades:skickats:skickas:skickad:skickat:skickade:skickande:
+794901r3<adjektiv>skickad:skickad:skickat:skickade:skickade:!:!:!:
+619550r3<substantiv>skickebud:skickebud:skickebuds:skickebudet:skickebudets:skickebud:skickebuds:skickebuden:skickebudens
+703011r4<substantiv>skickelse:skickelse:skickelses:skickelsen:skickelsens:skickelser:skickelsers:skickelserna:skickelsernas
+CUSTOM: y y skickelse
+952889r4<adjektiv>skickelsediger:skickelsediger:skickelsedigert:skickelsedigra:skickelsedigra::::::::::::
+COMPOUND(703011, 625206): skickelse + diger
+567678r4<adjektiv>skicklig:skicklig:skickligt:skickliga:skickliga:skickligare:skickligast:skickligaste:skicklige
+619557r5<substantiv>skicklighet:skicklighet:skicklighets:skickligheten:skicklighetens::::
+CUSTOM: y y skicklighets
+822440r3<substantiv>skickning:skickning:skicknings:skickningen:skickningens:skickningar:skickningars:skickningarna:skickningarnas
+595154r19<substantiv>skida:skida:skidas:skidan:skidans:skidor:skidors:skidorna:skidornas
+CUSTOM: y y skid
+585662r4<verb>skida:skida:skidade:skidat:skidar:skida:::::::::
+CUSTOM: y n
+745802r4<substantiv>skidbacke:skidbacke:skidbackes:skidbacken:skidbackens:skidbackar:skidbackars:skidbackarna:skidbackarnas
+COMPOUND(595154, 555589): skida + backe
+598818r3<substantiv>skidbox:skidbox:skidbox:skidboxen:skidboxens:skidboxar:skidboxars:skidboxarna:skidboxarnas
+965122r4<substantiv>skidföre:skidföre:skidföres:skidföret:skidförets:skidfören:skidförens:skidförena:skidförenas
+COMPOUND(595154, 612480): skida + före
+610028r3<substantiv>skidhållare:skidhållare:skidhållares:skidhållaren:skidhållarens:skidhållare:skidhållares:skidhållarna:skidhållarnas
+CUSTOM: y y skidhållar
+745816r4<substantiv>skidklubb:skidklubb:skidklubbs:skidklubben:skidklubbens:skidklubbar:skidklubbars:skidklubbarna:skidklubbarnas
+COMPOUND(595154, 551547): skida + klubb
+801628r3<adjektiv>skidklädd:skidklädd:skidklätt:skidklädda:skidklädda::::
+822448r3<substantiv>skidlift:skidlift:skidlifts:skidliften:skidliftens:skidlifter:skidlifters:skidlifterna:skidlifternas
+745810r4<substantiv>skidlöpare:skidlöpare:skidlöpares:skidlöparen:skidlöparens:skidlöpare:skidlöpares:skidlöparna:skidlöparnas
+COMPOUND(595154, 560262): skida + löpare
+656612r3<substantiv>skidlöpning:skidlöpning:skidlöpnings:skidlöpningen:skidlöpningens::::
+CUSTOM: y y skidlöpnings
+745824r4<substantiv>skidort:skidort:skidorts:skidorten:skidortens:skidorter:skidorters:skidorterna:skidorternas
+COMPOUND(595154, 550141): skida + ort
+745833r4<substantiv>skidpar:skidpar:skidpars:skidparet:skidparets:skidpar:skidpars:skidparen:skidparens
+COMPOUND(595154, 607793): skida + par
+656610r3<substantiv>skidresa:skidresa:skidresas:skidresan:skidresans:skidresor:skidresors:skidresorna:skidresornas
+745840r4<substantiv>skidsemester:skidsemester:skidsemesters:skidsemestern:skidsemesterns:skidsemestrar:skidsemestrars:skidsemestrarna:skidsemestrarnas
+COMPOUND(595154, 622135): skida + semester
+745848r5<substantiv>skidskytte:skidskytte:skidskyttes:skidskyttet:skidskyttets:skidskytten:skidskyttens:skidskyttena:skidskyttenas
+COMPOUND(595154, 619656): skida + skytte
+CUSTOM: y y skidskytte
+922304r4<substantiv>skidskyttesprint:skidskyttesprint:skidskyttesprints:skidskyttesprinten:skidskyttesprintens:skidskyttesprintar:skidskyttesprintars:skidskyttesprintarna:skidskyttesprintarnas
+COMPOUND(745848, 551911): skidskytte + sprint
+764770r4<substantiv>skidspets:skidspets:skidspets:skidspetsen:skidspetsens:skidspetsar:skidspetsars:skidspetsarna:skidspetsarnas
+COMPOUND(595154, 551904): skida + spets
+745856r4<substantiv>skidsport:skidsport:skidsports:skidsporten:skidsportens:skidsporter:skidsporters:skidsporterna:skidsporternas
+COMPOUND(595154, 550562): skida + sport
+922314r4<substantiv>skidsprint:skidsprint:skidsprints:skidsprinten:skidsprintens:skidsprintar:skidsprintars:skidsprintarna:skidsprintarnas
+COMPOUND(595154, 551911): skida + sprint
+656623r3<substantiv>skidspår:skidspår:skidspårs:skidspåret:skidspårets:skidspår:skidspårs:skidspåren:skidspårens
+764777r4<substantiv>skidstav:skidstav:skidstavs:skidstaven:skidstavens:skidstavar:skidstavars:skidstavarna:skidstavarnas
+COMPOUND(585662, 551932): skida + stav
+764785r4<substantiv>skidtur:skidtur:skidturs:skidturen:skidturens:skidturer:skidturers:skidturerna:skidturernas
+COMPOUND(595154, 550715): skida + tur
+771463r4<substantiv>skidturism:skidturism:skidturisms:skidturismen:skidturismens:!:!:!:!
+COMPOUND(595154, 558499): skida + turism
+597570r3<substantiv>skidtävling:skidtävling:skidtävlings:skidtävlingen:skidtävlingens:skidtävlingar:skidtävlingars:skidtävlingarna:skidtävlingarnas
+764793r4<substantiv>skidvalla:skidvalla:skidvallas:skidvallan:skidvallans:skidvallor:skidvallors:skidvallorna:skidvallornas
+COMPOUND(595154, 561908): skida + valla
+610034r3<substantiv>skidåkare:skidåkare:skidåkares:skidåkaren:skidåkarens:skidåkare:skidåkares:skidåkarna:skidåkarnas
+CUSTOM: y y skidåkar
+822456r3<substantiv>skidåkerska:skidåkerska:skidåkerskas:skidåkerskan:skidåkerskans:skidåkerskor:skidåkerskors:skidåkerskorna:skidåkerskornas
+656624r3<substantiv>skidåkning:skidåkning:skidåknings:skidåkningen:skidåkningens::::
+CUSTOM: y y skidåknings +skidåknings
+776110r7<substantiv>skiffer:skiffer:skiffers:skiffern:skifferns:skiffrar:skiffrars:skiffrarna:skiffrarnas
+CUSTOM: y y skiffer
+794902r3<adjektiv>skifferartad:skifferartad:skifferartat:skifferartade:skifferartade:!:!:!:
+794905r3<adjektiv>skifferbaserad:skifferbaserad:skifferbaserat:skifferbaserade:skifferbaserade:!:!:!:
+794908r3<adjektiv>skifferblandad:skifferblandad:skifferblandat:skifferblandade:skifferblandade:!:!:!:
+918640r4<substantiv>skiffergas:skiffergas:skiffergas:skiffergasen:skiffergasens::::
+COMPOUND(776110, 549064): skiffer + gas
+802101r3<adjektiv>skiffergrå:skiffergrå:skiffergrått:skiffergråa:skiffergråa::::
+576175r3<adjektiv>skifferhaltig:skifferhaltig:skifferhaltigt:skifferhaltiga:skifferhaltiga::::
+841401r3<substantiv>skiffersten:skiffersten:skifferstens:skifferstenen:skifferstenens::::
+776109r4<substantiv>skiffertak:skiffertak:skiffertaks:skiffertaket:skiffertakets:skiffertak:skiffertaks:skiffertaken:skiffertakens
+COMPOUND(776110, 553027): skiffer + tak
+945242r3<adjektiv>skiffertäckt:skiffertäckt:skiffertäckt:skiffertäckta:skiffertäckta::::::::::::
+576178r3<adjektiv>skiffrig:skiffrig:skiffrigt:skiffriga:skiffriga::::
+649256r5<substantiv>skift:skift:skifts:skiftet:skiftets:skift:skifts:skiften:skiftens
+CUSTOM: y y skift
+547663r4<verb>skifta:skifta:skiftade:skiftat:skiftar:skifta:skiftas:skiftades:skiftats:skiftas:skiftad:skiftat:skiftade::
+696911r3<substantiv>skiftande:skiftande:skiftandes:skiftandet:skiftandets::::
+666153r3<adjektiv>skiftande:skiftande:skiftande:skiftande:skiftande:!:!:!:
+745864r4<substantiv>skiftarbetare:skiftarbetare:skiftarbetares:skiftarbetaren:skiftarbetarens:skiftarbetare:skiftarbetares:skiftarbetarna:skiftarbetarnas
+COMPOUND(649256, 561048): skift + arbetare
+745870r4<substantiv>skiftarbete:skiftarbete:skiftarbetes:skiftarbetet:skiftarbetets::::
+COMPOUND(649256, 612263): skift + arbete
+570070r3<adjektiv>skiftbar:skiftbar:skiftbart:skiftbara:skiftbara::::
+562827r17<substantiv>skifte:skifte:skiftes:skiftet:skiftets:skiften:skiftens:skiftena:skiftenas
+CUSTOM: y y skiftes +skiftes
+822464r4<substantiv>skiftesbruk:skiftesbruk:skiftesbruks:skiftesbruket:skiftesbrukets:skiftesbruk:skiftesbruks:skiftesbruken:skiftesbrukens
+COMPOUND(562827, 552277): skifte + bruk
+822470r4<substantiv>skiftesman:skiftesman:skiftesmans:skiftesmannen:skiftesmannens:skiftesmän:skiftesmäns:skiftesmännen:skiftesmännens
+COMPOUND(562827, 557796): skifte + man
+822478r4<adjektiv>skiftesrik:skiftesrik:skiftesrikt:skiftesrika:skiftesrika::::
+COMPOUND(562827, 563125): skifte + rik
+822481r4<substantiv>skiftesverk:skiftesverk:skiftesverks:skiftesverket:skiftesverkets:skiftesverk:skiftesverks:skiftesverken:skiftesverkens
+COMPOUND(562827, 553117): skifte + verk
+763161r3<substantiv>skiftläge:skiftläge:skiftläges:skiftläget:skiftlägets:skiftlägen:skiftlägens:skiftlägena:skiftlägenas
+666154r4<substantiv>skiftning:skiftning:skiftnings:skiftningen:skiftningens:skiftningar:skiftningars:skiftningarna:skiftningarnas
+CUSTOM: y y skiftnings
+822487r4<adjektiv>skiftningsrik:skiftningsrik:skiftningsrikt:skiftningsrika:skiftningsrika::::
+COMPOUND(666154, 563125): skiftning + rik
+600353r3<substantiv>skiftnyckel:skiftnyckel:skiftnyckels:skiftnyckeln:skiftnyckelns:skiftnycklar:skiftnycklars:skiftnycklarna:skiftnycklarnas
+552920r9<substantiv>skikt:skikt:skikts:skiktet:skiktets:skikt:skikts:skikten:skiktens
+CUSTOM: y y skikt
+666155r4<verb>skikta:skikta:skiktade:skiktat:skiktar:skikta:skiktas:skiktades:skiktats:skiktas:skiktad:skiktat:skiktade:skiktande:
+794911r3<adjektiv>skiktformad:skiktformad:skiktformat:skiktformade:skiktformade:!:!:!:
+560538r5<substantiv>skiktgränssnitt:skiktgränssnitt:skiktgränssnitts:skiktgränssnittet:skiktgränssnittets:skiktgränssnitt:skiktgränssnitts:skiktgränssnitten:skiktgränssnittens
+784913r4<verb>skiktlimma:skiktlimma:skiktlimmade:skiktlimmat:skiktlimmar:skiktlimma:skiktlimmas:skiktlimmades:skiktlimmats:skiktlimmas:skiktlimmad:skiktlimmat:skiktlimmade:skiktlimmande:
+COMPOUND(552920, 547287): skikt + limma
+745874r3<substantiv>skiktning:skiktning:skiktnings:skiktningen:skiktningens:skiktningar:skiktningars:skiktningarna:skiktningarnas
+619558r3<adjektiv>skild:skild:skilt:skilda:skilda::::skilde
+794914r3<adjektiv>skildkönad:skildkönad:skildkönat:skildkönade:skildkönade:!:!:!:
+547664r5<verb>skildra:skildra:skildrade:skildrat:skildrar:skildra:skildras:skildrades:skildrats:skildras:skildrad:skildrat:skildrade:skildrande:
+619559r3<substantiv>skildrare:skildrare:skildrares:skildraren:skildrarens:skildrare:skildrares:skildrarna:skildrarnas
+CUSTOM: y y skildrar
+619565r10<substantiv>skildring:skildring:skildrings:skildringen:skildringens:skildringar:skildringars:skildringarna:skildringarnas
+CUSTOM: y y skildrings +skildrings
+593358r18<verb>skilja:skilja:skiljde, skilde:skiljt, skilt:skiljer:skilj:skiljas:skiljdes, skildes:skiljts, skilts:skiljs, skils, skiljes:skild:skiljt, skilt:skilda:skiljande:
+CUSTOM: y y skilje
+576181r3<adjektiv>skiljaktig:skiljaktig:skiljaktigt:skiljaktiga:skiljaktiga::::
+656625r4<substantiv>skiljaktighet:skiljaktighet:skiljaktighets:skiljaktigheten:skiljaktighetens:skiljaktigheter:skiljaktigheters:skiljaktigheterna:skiljaktigheternas
+CUSTOM: y y skiljaktighets
+918644r3<substantiv>skiljande:skiljande:skiljandes:skiljandet:skiljandets::::
+822490r3<substantiv>skiljare:skiljare:skiljares:skiljaren:skiljarens:skiljare:skiljares:skiljarna:skiljarnas
+591645r3<deponens>skiljas:skiljas:skildes:skilts:skiljs:skiljs
+570073r3<adjektiv>skiljbar:skiljbar:skiljbart:skiljbara:skiljbara::::
+822496r3<substantiv>skiljbarhet:skiljbarhet:skiljbarhets:skiljbarheten:skiljbarhetens::::
+552923r3<substantiv>skiljebrev:skiljebrev:skiljebrevs:skiljebrevet:skiljebrevets:skiljebrev:skiljebrevs:skiljebreven:skiljebrevens
+666161r4<substantiv>skiljedom:skiljedom:skiljedoms:skiljedomen:skiljedomens:skiljedomar:skiljedomars:skiljedomarna:skiljedomarnas
+CUSTOM: y y skiljedoms
+610035r3<substantiv>skiljedomare:skiljedomare:skiljedomares:skiljedomaren:skiljedomarens:skiljedomare:skiljedomares:skiljedomarna:skiljedomarnas
+CUSTOM: y y skiljedomar
+789488r4<substantiv>skiljedomskommitté:skiljedomskommitté:skiljedomskommittés:skiljedomskommittén:skiljedomskommitténs:skiljedomskommittéer:skiljedomskommittéers:skiljedomskommittéerna:skiljedomskommittéernas
+COMPOUND(666161, 622442): skiljedom + kommitté
+656626r3<substantiv>skiljelinje:skiljelinje:skiljelinjes:skiljelinjen:skiljelinjens:skiljelinjer:skiljelinjers:skiljelinjerna:skiljelinjernas
+666157r4<substantiv>skiljeman:skiljeman:skiljemans:skiljemannen:skiljemannens:skiljemän:skiljemäns:skiljemännen:skiljemännens
+COMPOUND(593358, 557796): skilja + man
+852271r3<substantiv>skiljemur:skiljemur:skiljemurs:skiljemuren:skiljemurens:skiljemurar:skiljemurars:skiljemurarna:skiljemurarnas
+607978r3<substantiv>skiljemynt:skiljemynt:skiljemynts:skiljemyntet:skiljemyntets:skiljemynt:skiljemynts:skiljemynten:skiljemyntens
+745883r3<substantiv>skiljeset:skiljeset:skiljesets:skiljesetet:skiljesetets:skiljeset:skiljesets:skiljeseten:skiljesetens
+666167r4<substantiv>skiljetecken:skiljetecken:skiljeteckens:skiljetecknet:skiljetecknets:skiljetecken:skiljeteckens:skiljetecknen:skiljetecknens
+COMPOUND(593358, 559296): skilja + tecken
+666173r3<substantiv>skiljeväg:skiljeväg:skiljevägs:skiljevägen:skiljevägens:skiljevägar:skiljevägars:skiljevägarna:skiljevägarnas
+666181r3<substantiv>skiljevägg:skiljevägg:skiljeväggs:skiljeväggen:skiljeväggens:skiljeväggar:skiljeväggars:skiljeväggarna:skiljeväggarnas
+822500r3<substantiv>skiljning:skiljning:skiljnings:skiljningen:skiljningens:skiljningar:skiljningars:skiljningarna:skiljningarnas
+666189r3<substantiv>skilling:skilling:skillings:skillingen:skillingens:skillingar:skillingars:skillingarna:skillingarnas
+745889r3<substantiv>skillingtryck:skillingtryck:skillingtrycks:skillingtrycket:skillingtryckets:skillingtryck:skillingtrycks:skillingtrycken:skillingtryckens
+550512r9<substantiv>skillnad:skillnad:skillnads:skillnaden:skillnadens:skillnader:skillnaders:skillnaderna:skillnadernas
+CUSTOM: y y skillnads +skillnads
+822508r4<substantiv>skillnadsdom:skillnadsdom:skillnadsdoms:skillnadsdomen:skillnadsdomens:skillnadsdomar:skillnadsdomars:skillnadsdomarna:skillnadsdomarnas
+COMPOUND(550512, 551037): skillnad + dom
+595155r4<substantiv>skilsmässa:skilsmässa:skilsmässas:skilsmässan:skilsmässans:skilsmässor:skilsmässors:skilsmässorna:skilsmässornas
+CUSTOM: y y skilsmässo
+776119r3<substantiv>skilsmässobarn::::::::
+COMPOUND(595155, 555956): skilsmässa + barn
+656634r3<substantiv>skilsmässoförhandling:skilsmässoförhandling:skilsmässoförhandlings:skilsmässoförhandlingen:skilsmässoförhandlingens:skilsmässoförhandlingar:skilsmässoförhandlingars:skilsmässoförhandlingarna:skilsmässoförhandlingarnas
+567679r3<adjektiv>skimlig:skimlig:skimligt:skimliga:skimliga::::
+907384r3<verb>skimma:skimma:skimmade:skimmat:skimmar:skimma:skimmas:skimmades:skimmats:skimmas:skimmad:skimmat:skimmade::
+593363r3<substantiv>skimmel:skimmel:skimmels:skimmeln:skimmelns:skimlar:skimlars:skimlarna:skimlarnas
+794917r3<adjektiv>skimmelfärgad:skimmelfärgad:skimmelfärgat:skimmelfärgade:skimmelfärgade:!:!:!:
+576182r3<adjektiv>skimmelhårig:skimmelhårig:skimmelhårigt:skimmelhåriga:skimmelhåriga::::
+593365r4<substantiv>skimmer:skimmer:skimmers:skimret:skimrets:!:!:!:!
+822516r3<adjektiv>skimmervit:skimmervit:skimmervitt:skimmervita:skimmervita::::
+637414r4<substantiv>skimmingapparat:skimmingapparat:skimmingapparats:skimmingapparaten:skimmingapparatens:skimmingapparater:skimmingapparaters:skimmingapparaterna:skimmingapparaternas
+DEFINITION 1: Apparat varmed man kan kopiera i

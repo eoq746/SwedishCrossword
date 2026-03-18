@@ -1,0 +1,530 @@
+nlösbara:inlösbara::::
+692230r4<substantiv>inlösen:inlösen:inlösens:inlösen:inlösens::::
+CUSTOM: y y inlösen
+898910r4<substantiv>inlösenaktie:inlösenaktie:inlösenakties:inlösenaktien:inlösenaktiens:inlösenaktier:inlösenaktiers:inlösenaktierna:inlösenaktiernas
+COMPOUND(692230, 611796): inlösen + aktie
+566338r3<adjektiv>inlöslig:inlöslig:inlösligt:inlösliga:inlösliga::::
+573452r3<adjektiv>inlösningspliktig:inlösningspliktig:inlösningspliktigt:inlösningspliktiga:inlösningspliktiga::::
+612580r3<substantiv>inlösningsställe:inlösningsställe:inlösningsställes:inlösningsstället:inlösningsställets:inlösningsställen:inlösningsställens:inlösningsställena:inlösningsställenas
+737479r4<substantiv>inmarsch:inmarsch:inmarschs:inmarschen:inmarschens:inmarscher:inmarschers:inmarscherna:inmarschernas
+COMPOUND(557675, 549999): in + marsch
+546982r5<verb>inmata:inmata:inmatade:inmatat:inmatar:inmata:inmatas:inmatades:inmatats:inmatas:inmatad:inmatat:inmatade:inmatande:
+792242r3<adjektiv>inmatad:inmatad:inmatat:inmatade:inmatade:!:!:!:
+685644r5<substantiv>inmatning:inmatning:inmatnings:inmatningen:inmatningens:inmatningar:inmatningars:inmatningarna:inmatningarnas
+CUSTOM: y y inmatnings +inmatnings
+685646r4<substantiv>inmatningsfält:inmatningsfält:inmatningsfälts:inmatningsfältet:inmatningsfältets:inmatningsfält:inmatningsfälts:inmatningsfälten:inmatningsfältens
+COMPOUND(685644, 552397): inmatning + fält
+792243r3<adjektiv>inmejslad:inmejslad:inmejslat:inmejslade:inmejslade:!:!:!:
+792246r3<adjektiv>inmonterad:inmonterad:inmonterat:inmonterade:inmonterade:!:!:!:
+546983r4<verb>inmundiga:inmundiga:inmundigade:inmundigat:inmundigar:inmundiga:inmundigas:inmundigades:inmundigats:inmundigas:inmundigad:inmundigat:inmundigade::
+692233r3<substantiv>inmundigande:inmundigande:inmundigandes:inmundigandet:inmundigandets::::
+692235r3<adjektiv>inmurad:inmurad:inmurat:inmurade:inmurade:!:!:!:
+692236r4<verb>inmuta:inmuta:inmutade:inmutat:inmutar:inmuta:inmutas:inmutades:inmutats:inmutas:inmutad:inmutat:inmutade:inmutande:
+792252r3<adjektiv>inmutad:inmutad:inmutat:inmutade:inmutade:!:!:!:
+569248r3<adjektiv>inmutbar:inmutbar:inmutbart:inmutbara:inmutbara::::
+670275r4<substantiv>inmutning:inmutning:inmutnings:inmutningen:inmutningens:inmutningar:inmutningars:inmutningarna:inmutningarnas
+CUSTOM: y y inmutnings
+670274r4<substantiv>inmutningsavgift:inmutningsavgift:inmutningsavgifts:inmutningsavgiften:inmutningsavgiftens:inmutningsavgifter:inmutningsavgifters:inmutningsavgifterna:inmutningsavgifternas
+COMPOUND(670275, 548299): inmutning + avgift
+569251r3<adjektiv>inmutningsbar:inmutningsbar:inmutningsbart:inmutningsbara:inmutningsbara::::
+869102r3<verb>inmänga:inmänga:inmängde:inmängt:inmänger:inmäng:inmängas:inmängdes:inmängts:inmängs:inmängd:inmängt:inmängda:inmängande:
+923975r17<verb>inmäta:inmäta:inmätte:inmätt:inmäter:inmät:inmätas:inmättes:inmätts:inmäts, inmätes:inmätt:inmätt:inmätta:inmätande:
+COMPOUND(557675, 556868): in + mäta
+CUSTOM: y n
+692241r3<substantiv>inmätning:inmätning:inmätnings:inmätningen:inmätningens:inmätningar:inmätningars:inmätningarna:inmätningarnas
+CUSTOM: y y inmätnings
+869114r3<verb>inmönstra:inmönstra:inmönstrade:inmönstrat:inmönstrar:inmönstra:inmönstras:inmönstrades:inmönstrats:inmönstras:inmönstrad:inmönstrat:inmönstrade:inmönstrande:
+842353r3<substantiv>inmönstring:inmönstring:inmönstrings:inmönstringen:inmönstringens:inmönstringar:inmönstringars:inmönstringarna:inmönstringarnas
+620603r3<adverb>innan:innan
+560976r4<konjunktion>innan:innan
+692242r3<substantiv>innandöme:innandöme:innandömes:innandömet:innandömets:innandömen:innandömens:innandömena:innandömenas
+981048r4<substantiv>innanfönster:innanfönster:innanfönsters:innanfönstret:innanfönstrets:innanfönster:innanfönsters:innanfönstren, innanfönsterna:innanfönstrens, innanfönsternas
+COMPOUND(560976, 555049): innan + fönster
+620604r3<adverb>innanför:innanför
+898245r3<substantiv>innanförskap:innanförskap:innanförskaps:innanförskapet:innanförskapets::::
+552509r3<substantiv>innanhav:innanhav:innanhavs:innanhavet:innanhavets:innanhav:innanhavs:innanhaven:innanhavens
+692243r3<substantiv>innanlår:innanlår:innanlårs:innanlåret:innanlårets:innanlår:innanlårs:innanlåren:innanlårens
+842361r3<substantiv>innanläsning:innanläsning:innanläsnings:innanläsningen:innanläsningens::::
+692257r3<substantiv>innanmäte:innanmäte:innanmätes:innanmätet:innanmätets:innanmäten:innanmätens:innanmätena:innanmätenas
+692249r3<substantiv>innanrede:innanrede:innanredes:innanredet:innanredets:innanreden:innanredens:innanredena:innanredenas
+620605r3<adverb>innantill:innantill
+954635r3<substantiv>innantilläsning:innantilläsning:innantilläsnings:innantilläsningen:innantilläsningens::::
+560954r15<adverb>inne:inne
+CUSTOM: y n
+692258r6<substantiv>innebandy:innebandy:innebandys:innebandyn:innebandyns:!:!:!:!
+CUSTOM: y y innebandy
+738167r4<substantiv>innebandyklubb:innebandyklubb:innebandyklubbs:innebandyklubben:innebandyklubbens:innebandyklubbar:innebandyklubbars:innebandyklubbarna:innebandyklubbarnas
+COMPOUND(692258, 551547): innebandy + klubb
+692262r4<substantiv>innebandyklubba:innebandyklubba:innebandyklubbas:innebandyklubban:innebandyklubbans:innebandyklubbor:innebandyklubbors:innebandyklubborna:innebandyklubbornas
+COMPOUND(692258, 556183): innebandy + klubba
+709925r4<substantiv>innebandymatch:innebandymatch:innebandymatchs:innebandymatchen:innebandymatchens:innebandymatcher:innebandymatchers:innebandymatcherna:innebandymatchernas
+COMPOUND(692258, 550011): innebandy + match
+692270r4<verb>innebo:innebo:innebodde:innebott:innebor:innebo:!:!:!:!:!:!:!::
+COMPOUND(560954, 556701): inne + bo
+571127r3<adjektiv>inneboende:inneboende:inneboende:inneboende:inneboende:!:!:!:
+571128r4<substantiv>inneboende:inneboende:inneboendes:inneboende:inneboendes::::
+692271r3<adjektiv>innebränd:innebränd:innebränt:innebrända:innebrända::::
+842365r3<substantiv>innebyggare:innebyggare:innebyggares:innebyggaren:innebyggarens:innebyggare:innebyggares:innebyggarna:innebyggarnas
+593211r4<verb>innebära:innebära:innebar:inneburit:innebär:::::::::innebärande:
+549335r3<substantiv>innebörd:innebörd:innebörds:innebörden:innebördens:innebörder:innebörders:innebörderna:innebördernas
+546984r5<verb>innefatta:innefatta:innefattade:innefattat:innefattar:innefatta:innefattas:innefattades:innefattats:innefattas:innefattad:innefattat:innefattade:innefattande:
+683683r4<substantiv>innefolk:innefolk:innefolks:innefolket:innefolkets::::
+COMPOUND(560954, 552385): inne + folk
+842371r3<substantiv>innegrej:innegrej:innegrejs:innegrejen:innegrejens:innegrejer:innegrejers:innegrejerna:innegrejernas
+981057r3<substantiv>innegäng:innegäng:innegängs:innegänget:innegängets:innegäng:innegängs:innegängen:innegängens
+692272r7<verb>inneha, innehava:inneha, innehava:innehade:innehaft:innehar, innehaver:inneha:innehas, innehavas:innehades:innehafts:innehas, innehaves, innehavs:innehavd::innehavda:innehavande:
+COMPOUND(560954, 555191): inne + hava, ha
+552511r3<substantiv>innehav:innehav:innehavs:innehavet:innehavets:innehav:innehavs:innehaven:innehavens
+611900r3<substantiv>innehavaraktie:innehavaraktie:innehavarakties:innehavaraktien:innehavaraktiens:innehavaraktier:innehavaraktiers:innehavaraktierna:innehavaraktiernas
+609678r8<substantiv>innehavare:innehavare:innehavares:innehavaren:innehavarens:innehavare:innehavares:innehavarna:innehavarnas
+CUSTOM: y y innehavar +innehavar
+743819r3<substantiv>innehavarinna:innehavarinna:innehavarinnas:innehavarinnan:innehavarinnans:innehavarinnor:innehavarinnors:innehavarinnorna:innehavarinnornas
+552512r10<substantiv>innehåll:innehåll:innehålls:innehållet:innehållets:innehåll:innehålls:innehållen:innehållens
+CUSTOM: y y innehålls +innehålls
+593212r5<verb>innehålla:innehålla:innehöll:innehållit:innehåller::innehållas:innehölls:innehållits:innehålles:innehållen:innehållet:innehållna:innehållande:
+586897r3<verb>innehållsdeklarera:innehållsdeklarera:innehållsdeklarerade:innehållsdeklarerat:innehållsdeklarerar:innehållsdeklarera:::::::::
+951703r4<adjektiv>innehållsdiger:innehållsdiger:innehållsdigert:innehållsdigra:innehållsdigra::::::::::::
+COMPOUND(552512, 625206): innehåll + diger
+636764r5<substantiv>innehållsförteckning:innehållsförteckning:innehållsförtecknings:innehållsförteckningen:innehållsförteckningens:innehållsförteckningar:innehållsförteckningars:innehållsförteckningarna:innehållsförteckningarnas
+COMPOUND(552512, 632352): innehåll + förteckning
+CUSTOM: y y innehållsförtecknings
+566341r3<adjektiv>innehållslig:innehållslig:innehållsligt:innehållsliga:innehållsliga::::
+564931r3<adjektiv>innehållslös:innehållslös:innehållslöst:innehållslösa:innehållslösa::::
+573455r3<adjektiv>innehållsmässig:innehållsmässig:innehållsmässigt:innehållsmässiga:innehållsmässiga::::
+692276r4<adjektiv>innehållsrik:innehållsrik:innehållsrikt:innehållsrika:innehållsrika:innehållsrikare:innehållsrikast:innehållsrikaste:
+COMPOUND(552512, 563125): innehåll + rik
+893240r4<adjektiv>innehållstom:innehållstom:innehållstomt:innehållstomma:innehållstomma::::::::::::
+COMPOUND(552512, 557804): innehåll + tom
+685602r6<substantiv>innekatt:innekatt:innekatts:innekatten:innekattens:innekatter:innekatters:innekatterna:innekatternas
+COMPOUND(560954, 555039): inne + katt
+692280r4<substantiv>innekrets:innekrets:innekrets:innekretsen:innekretsens:innekretsar:innekretsars:innekretsarna:innekretsarnas
+COMPOUND(560954, 551622): inne + krets
+692281r4<substantiv>innekrog:innekrog:innekrogs:innekrogen:innekrogens:innekrogar:innekrogars:innekrogarna:innekrogarnas
+COMPOUND(560954, 551624): inne + krog
+743827r3<adjektiv>inneliggande:inneliggande:inneliggande:inneliggande:inneliggande:!:!:!:
+692289r5<substantiv>inner:inner:inners:innern:innerns:inrar:inrars:inrarna:inrarnas
+CUSTOM: y n
+743829r3<substantiv>innerback:innerback:innerbacks:innerbacken:innerbackens:innerbackar:innerbackars:innerbackarna:innerbackarnas
+692291r3<substantiv>innerbana:innerbana:innerbanas:innerbanan:innerbanans:innerbanor:innerbanors:innerbanorna:innerbanornas
+981064r3<substantiv>innerbark:innerbark:innerbarks:innerbarken:innerbarkens::::
+597029r3<substantiv>innerbelysning:innerbelysning:innerbelysnings:innerbelysningen:innerbelysningens:innerbelysningar:innerbelysningars:innerbelysningarna:innerbelysningarnas
+CUSTOM: y y innerbelysnings
+692299r3<substantiv>innerdörr:innerdörr:innerdörrs:innerdörren:innerdörrens:innerdörrar:innerdörrars:innerdörrarna:innerdörrarnas
+709933r3<substantiv>innerfack:innerfack:innerfacks:innerfacket:innerfackets:innerfack:innerfacks:innerfacken:innerfackens
+692307r3<substantiv>innerficka:innerficka:innerfickas:innerfickan:innerfickans:innerfickor:innerfickors:innerfickorna:innerfickornas
+636957r8<substantiv>innerfilé:innerfilé:innerfilés:innerfilén:innerfiléns:innerfiléer:innerfiléers:innerfiléerna:innerfiléernas
+COMPOUND(571055, 561718): inre + filé
+743839r3<substantiv>innergård:innergård:innergårds:innergården:innergårdens:innergårdar:innergårdars:innergårdarna:innergårdarnas
+743848r4<substantiv>innerkant:innerkant:innerkants:innerkanten:innerkantens:innerkanter:innerkanters:innerkanterna:innerkanternas
+842380r3<substantiv>innerkurva:innerkurva:innerkurvas:innerkurvan:innerkurvans:innerkurvor:innerkurvors:innerkurvorna:innerkurvornas
+897145r3<substantiv>innerkuvert:innerkuvert:innerkuverts:innerkuvertet:innerkuvertets:innerkuvert:innerkuverts:innerkuverten:innerkuvertens
+563230r4<adjektiv>innerlig:innerlig:innerligt:innerliga:innerliga:innerligare:innerligast:innerligaste:innerlige
+906118r3<adverb>innerligen:innerligen
+743856r3<substantiv>innerlighet:innerlighet:innerlighets:innerligheten:innerlighetens::::
+743861r3<substantiv>innermittfältare:innermittfältare:innermittfältares:innermittfältaren:innermittfältarens:innermittfältare:innermittfältares:innermittfältarna:innermittfältarnas
+743868r3<substantiv>innerplan:innerplan:innerplans:innerplanen:innerplanens::::
+981068r3<substantiv>innersida:innersida:innersidas:innersidan:innersidans:innersidor:innersidors:innersidorna:innersidornas
+842388r3<substantiv>innerskär:innerskär:innerskärs:innerskäret:innerskärets:innerskär:innerskärs:innerskären:innerskärens
+685678r5<substantiv>innerskärgård:innerskärgård:innerskärgårds:innerskärgården:innerskärgårdens:innerskärgårdar:innerskärgårdars:innerskärgårdarna:innerskärgårdarnas
+842394r3<substantiv>innerslang:innerslang:innerslangs:innerslangen:innerslangens:innerslangar:innerslangars:innerslangarna:innerslangarnas
+743872r3<substantiv>innerspår:innerspår:innerspårs:innerspåret:innerspårets:innerspår:innerspårs:innerspåren:innerspårens
+692309r7<substantiv>innerstad:innerstad:innerstads:innerstaden, innerstan:innerstadens, innerstans:innerstäder:innerstäders:innerstäderna:innerstädernas
+CUSTOM: y y innerstads
+743888r4<substantiv>innerstadsbefolkning:innerstadsbefolkning:innerstadsbefolknings:innerstadsbefolkningen:innerstadsbefolkningens:innerstadsbefolkningar:innerstadsbefolkningars:innerstadsbefolkningarna:innerstadsbefolkningarnas
+COMPOUND(692309, 592435): innerstad + befolkning
+743879r5<substantiv>innerstadsbo:innerstadsbo:innerstadsbos:innerstadsbon:innerstadsbons:innerstadsbor:innerstadsbors:innerstadsborna:innerstadsbornas
+725875r3<substantiv>innertak:innertak:innertaks:innertaket:innertakets:innertak:innertaks:innertaken:innertakens
+685986r5<substantiv>innertemperatur:innertemperatur:innertemperaturs:innertemperaturen:innertemperaturens:innertemperaturer:innertemperaturers:innertemperaturerna:innertemperaturernas
+842408r3<substantiv>innervation:innervation:innervations:innervationen:innervationens:innervationer:innervationers:innervationerna:innervationernas
+589668r4<verb>innervera:innervera:innerverade:innerverat:innerverar:innervera:innerveras:innerverades:innerverats:innerveras:innerverad:innerverat:innerverade:innerverande:
+842421r3<substantiv>innervägg:innervägg:innerväggs:innerväggen:innerväggens:innerväggar:innerväggars:innerväggarna:innerväggarnas
+842429r4<substantiv>inneröra:inneröra:inneröras:innerörat:innerörats:inneröron:innerörons:inneröronen:inneröronens
+COMPOUND(571055, 555883): inre + öra
+801017r3<adjektiv>innesittande:innesittande:innesittande:innesittande:innesittande:!:!:!:
+842437r3<substantiv>innesittare:innesittare:innesittares:innesittaren:innesittarens:innesittare:innesittares:innesittarna:innesittarnas
+687595r4<substantiv>innesko:innesko:inneskos:inneskon:inneskons:inneskor:inneskors:inneskorna:inneskornas
+COMPOUND(560954, 555202): inne + sko
+687603r5<verb>innesluta:innesluta:inneslöt:inneslutit:innesluter:inneslut:inneslutas:inneslöts:inneslutits:innesluts, inneslutes:innesluten:inneslutet:inneslutna:inneslutande:inneslöte
+COMPOUND(560954, 555170): inne + sluta
+659135r4<substantiv>inneslutning:inneslutning:inneslutnings:inneslutningen:inneslutningens:inneslutningar:inneslutningars:inneslutningarna:inneslutningarnas
+CUSTOM: y y inneslutnings +inneslutnings
+692310r3<adjektiv>innestående:innestående:innestående:innestående:innestående:!:!:!:
+743889r3<substantiv>inneställe:inneställe:inneställes:innestället:inneställets:inneställen:inneställens:inneställena:inneställenas
+869127r4<verb>innestänga:innestänga:innestängde:innestängt:innestänger:innestäng:innestängas:innestängdes:innestängts:innestängs:innestängd:innestängt:innestängda:innestängande:
+COMPOUND(560954, 585798): inne + stänga
+897152r3<substantiv>innesäljare:innesäljare:innesäljares:innesäljaren:innesäljarens:innesäljare:innesäljares:innesäljarna:innesäljarnas
+687635r6<substantiv>innesäsong:innesäsong:innesäsongs:innesäsongen:innesäsongens:innesäsonger:innesäsongers:innesäsongerna:innesäsongernas
+COMPOUND(560954, 550620): inne + säsong
+955685r4<substantiv>innetemperatur:innetemperatur:innetemperaturs:innetemperaturen:innetemperaturens:innetemperaturer:innetemperaturers:innetemperaturerna:innetemperaturernas
+COMPOUND(560954, 550651): inne + temperatur
+907104r4<substantiv>innetoffel:innetoffel:innetoffels:innetoffeln:innetoffelns:innetofflor:innetofflors:innetofflorna:innetofflornas
+COMPOUND(560954, 593512): inne + toffel
+692311r3<adjektiv>innevarande:innevarande:innevarande:innevarande:innevarande:!:!:!:
+615317r3<substantiv>innevånare:innevånare:innevånares:innevånaren:innevånarens:innevånare:innevånares:innevånarna:innevånarnas
+CUSTOM: y y innevånar
+636898r4<substantiv>innovation:innovation:innovations:innovationen:innovationens:innovationer:innovationers:innovationerna:innovationernas
+CUSTOM: y y innovations
+889661r4<substantiv>innovationsråd:innovationsråd:innovationsråds:innovationsrådet:innovationsrådets:innovationsråd:innovationsråds:innovationsråden:innovationsrådens
+COMPOUND(636898, 552853): innovation + råd
+685607r4<adjektiv>innovativ:innovativ:innovativt:innovativa:innovativa:innovativare:innovativast:innovativaste:innovative
+549337r3<substantiv>innovatör:innovatör:innovatörs:innovatören:innovatörens:innovatörer:innovatörers:innovatörerna:innovatörernas
+CUSTOM: y y innovatörs
+586901r3<verb>innovera:innovera:innoverade:innoverat:innoverar:innovera:::::::::
+873848r17<verb>innästla:innästla:innästlade:innästlat:innästlar:innästla:innästlas:innästlades:innästlats:innästlas:innästlad:innästlat:innästlade:innästlande:
+COMPOUND(557675, 547409): in + nästla
+842447r3<substantiv>innötning:innötning:innötnings:innötningen:innötningens::::
+692312r3<adjektiv>inofficiell:inofficiell:inofficiellt:inofficiella:inofficiella:!:!:!:inofficielle
+589672r4<verb>inokulera:inokulera:inokulerade:inokulerat:inokulerar:inokulera:inokuleras:inokulerades:inokulerats:inokuleras:inokulerad:inokulerat:inokulerade:inokulerande:
+546986r5<verb>inolja:inolja:inoljade:inoljat:inoljar:inolja:inoljas:inoljades:inoljats:inoljas:inoljad:inoljat:inoljade:inoljande:
+792253r3<adjektiv>inoljad:inoljad:inoljat:inoljade:inoljade:!:!:!:
+618329r3<preposition>inom:inom
+842451r3<substantiv>inombordare:inombordare:inombordares:inombordaren:inombordarens:inombordare:inombordares:inombordarna:inombordarnas
+618330r3<adverb>inombords:inombords
+692314r3<substantiv>inombordsmotor:inombordsmotor:inombordsmotors:inombordsmotorn:inombordsmotorns:inombordsmotorer:inombordsmotorers:inombordsmotorerna:inombordsmotorernas
+580946r3<adjektiv>inomeuropeisk:inomeuropeisk:inomeuropeiskt:inomeuropeiska:inomeuropeiska::::
+618331r4<adverb>inomhus:inomhus
+CUSTOM: y y inomhus
+692316r4<substantiv>inomhusbruk:inomhusbruk:inomhusbruks:inomhusbruket:inomhusbrukets::::
+COMPOUND(618331, 552277): inomhus + bruk
+566342r3<adjektiv>inomkyrklig:inomkyrklig:inomkyrkligt:inomkyrkliga:inomkyrkliga::::
+618332r3<adverb>inomskärs:inomskärs
+891484r3<adjektiv>inomspråklig:inomspråklig:inomspråkligt:inomspråkliga:inomspråkliga:!:!:!:!::::::::
+772247r3<adjektiv>inomvetenskaplig:inomvetenskaplig:inomvetenskapligt:inomvetenskapliga:inomvetenskapliga::::
+566345r3<adjektiv>inomäktenskaplig:inomäktenskaplig:inomäktenskapligt:inomäktenskapliga:inomäktenskapliga::::
+570765r3<adjektiv>inoperabel:inoperabel:inoperabelt:inoperabla:inoperabla::::
+586905r4<verb>inoperera:inoperera:inopererade:inopererat:inopererar:inoperera:inopereras:inopererades:inopererats:inopereras:inopererad:inopererat:inopererade::
+792254r3<adjektiv>inopererad:inopererad:inopererat:inopererade:inopererade:!:!:!:
+618333r3<adjektiv>inopportun:inopportun:inopportunt:inopportuna:inopportuna::::
+546987r5<verb>inordna:inordna:inordnade:inordnat:inordnar:inordna:inordnas:inordnades:inordnats:inordnas:inordnad:inordnat:inordnade:inordnande:
+692323r3<substantiv>inordning:inordning:inordnings:inordningen:inordningens::::
+CUSTOM: y y inordnings
+546989r4<verb>inpacka:inpacka:inpackade:inpackat:inpackar:inpacka:inpackas:inpackades:inpackats:inpackas:inpackad:inpackat:inpackade::
+792255r3<adjektiv>inpackad:inpackad:inpackat:inpackade:inpackade:!:!:!:
+737319r3<substantiv>inpackning:inpackning:inpacknings:inpackningen:inpackningens:inpackningar:inpackningars:inpackningarna:inpackningarnas
+743897r3<substantiv>inpass:inpass:inpass:inpasset:inpassets:inpass:inpass:inpassen:inpassens
+692324r4<verb>inpassa:inpassa:inpassade:inpassat:inpassar:inpassa:inpassas:inpassades:inpassats:inpassas:inpassad:inpassat:inpassade:inpassande:
+792256r3<adjektiv>inpassad:inpassad:inpassat:inpassade:inpassade:!:!:!:
+586907r4<verb>inpassera:inpassera:inpasserade:inpasserat:inpasserar:inpassera::::::::inpasserande:
+692329r3<substantiv>inpassering:inpassering:inpasserings:inpasseringen:inpasseringens:inpasseringar:inpasseringars:inpasseringarna:inpasseringarnas
+CUSTOM: y y inpasserings
+981084r3<substantiv>inpassning:inpassning:inpassnings:inpassningen:inpassningens:inpassningar:inpassningars:inpassningarna:inpassningarnas
+792257r3<adjektiv>inpejlad:inpejlad:inpejlat:inpejlade:inpejlade:!:!:!:
+981092r3<substantiv>inpendling:inpendling:inpendlings:inpendlingen:inpendlingens::::
+792260r3<adjektiv>inpepprad:inpepprad:inpepprat:inpepprade:inpepprade:!:!:!:
+792263r3<adjektiv>inpetad:inpetad:inpetat:inpetade:inpetade:!:!:!:
+842457r3<substantiv>inpetning:inpetning:inpetnings:inpetningen:inpetningens:inpetningar:inpetningars:inpetningarna:inpetningarnas
+692334r3<adjektiv>inpiskad:inpiskad:inpiskat:inpiskade:inpiskade:!:!:!:
+842465r3<substantiv>inpiskare:inpiskare:inpiskares:inpiskaren:inpiskarens:inpiskare:inpiskares:inpiskarna:inpiskarnas
+546990r4<verb>inplacera:inplacera:inplacerade:inplacerat:inplacerar:inplacera:inplaceras:inplacerades:inplacerats:inplaceras:inplacerad:inplacerat:inplacerade::
+792266r3<adjektiv>inplacerad:inplacerad:inplacerat:inplacerade:inplacerade:!:!:!:
+743902r3<substantiv>inplacering:inplacering:inplacerings:inplaceringen:inplaceringens:inplaceringar:inplaceringars:inplaceringarna:inplaceringarnas
+546992r4<verb>inplanera:inplanera:inplanerade:inplanerat:inplanerar:inplanera:inplaneras:inplanerades:inplanerats:inplaneras:inplanerad:inplanerat:inplanerade::
+869143r3<verb>inplanta:inplanta:inplantade:inplantat:inplantar:inplanta:inplantas:inplantades:inplantats:inplantas:inplantad:inplantat:inplantade:inplantande:
+586911r4<verb>inplantera:inplantera:inplanterade:inplanterat:inplanterar:inplantera:inplanteras:inplanterades:inplanterats:inplanteras:inplanterad:inplanterat:inplanterade:inplanterande:
+692335r3<substantiv>inplantering:inplantering:inplanterings:inplanteringen:inplanteringens::::
+CUSTOM: y y inplanterings
+546993r4<verb>inplasta:inplasta:inplastade:inplastat:inplastar:inplasta:inplastas:inplastades:inplastats:inplastas:inplastad:inplastat:inplastade::
+792267r3<adjektiv>inplockad:inplockad:inplockat:inplockade:inplockade:!:!:!:
+792270r3<adjektiv>inpluggad:inpluggad:inpluggat:inpluggade:inpluggade:!:!:!:
+869153r3<verb>inpressa:inpressa:inpressade:inpressat:inpressar:inpressa:inpressas:inpressades:inpressats:inpressas::::inpressande:
+792273r3<adjektiv>inpressad:inpressad:inpressat:inpressade:inpressade:!:!:!:
+792276r3<adjektiv>inprickad:inprickad:inprickat:inprickade:inprickade:!:!:!:
+586915r4<verb>inprogrammera:inprogrammera:inprogrammerade:inprogrammerat:inprogrammerar:inprogrammera:inprogrammeras:inprogrammerades:inprogrammerats:inprogrammeras:inprogrammerad:inprogrammerat:inprogrammerade:inprogrammerande:
+792279r3<adjektiv>inproppad:inproppad:inproppat:inproppade:inproppade:!:!:!:
+589676r3<verb>inprotokollera:inprotokollera:inprotokollerade:inprotokollerat:inprotokollerar:inprotokollera:::::::::
+842472r3<verb>inprägla:inprägla:inpräglade:inpräglat:inpräglar:inprägla:inpräglas:inpräglades:inpräglats:inpräglas:inpräglad:inpräglat:inpräglade:inpräglande:
+792282r3<adjektiv>inpräglad:inpräglad:inpräglat:inpräglade:inpräglade:!:!:!:
+546995r5<verb>inpränta:inpränta:inpräntade:inpräntat:inpräntar:inpränta:inpräntas:inpräntades:inpräntats:inpräntas:inpräntad:inpräntat:inpräntade:inpräntande:
+792285r3<adjektiv>inpräntad:inpräntad:inpräntat:inpräntade:inpräntade:!:!:!:
+792286r3<adjektiv>inpudrad:inpudrad:inpudrat:inpudrade:inpudrade:!:!:!:
+792289r3<adjektiv>inpumpad:inpumpad:inpumpat:inpumpade:inpumpade:!:!:!:
+792292r3<adjektiv>inpunsad:inpunsad:inpunsat:inpunsade:inpunsade:!:!:!:
+869160r3<substantiv>input:input:inputs:inputen:inputens::::
+799657r3<adjektiv>inpyrd:inpyrd:inpyrt:inpyrda:inpyrda::::
+624475r3<preposition>inpå:inpå
+792295r3<adjektiv>inpälsad:inpälsad:inpälsat:inpälsade:inpälsade:!:!:!:
+801018r3<adjektiv>inraglande:inraglande:inraglande:inraglande:inraglande:!:!:!:
+546996r5<verb>inrama:inrama:inramade:inramat:inramar:inrama:inramas:inramades:inramats:inramas:inramad:inramat:inramade:inramande:
+792298r3<adjektiv>inramad:inramad:inramat:inramade:inramade:!:!:!:
+801019r3<adjektiv>inramlande:inramlande:inramlande:inramlande:inramlande:!:!:!:
+685610r4<substantiv>inramning:inramning:inramnings:inramningen:inramningens:inramningar:inramningars:inramningarna:inramningarnas
+CUSTOM: y y inramnings
+546997r5<verb>inrangera:inrangera:inrangerade:inrangerat:inrangerar:inrangera:inrangeras:inrangerades:inrangerats:inrangeras:inrangerad:inrangerat:inrangerade:inrangerande:
+546998r5<verb>inrapportera:inrapportera:inrapporterade:inrapporterat:inrapporterar:inrapportera:inrapporteras:inrapporterades:inrapporterats:inrapporteras:inrapporterad:inrapporterat:inrapporterade:inrapporterande:
+889901r3<substantiv>inrapportering:inrapportering:inrapporterings:inrapporteringen:inrapporteringens:inrapporteringar:inrapporteringars:inrapporteringarna:inrapporteringarnas
+CUSTOM: y y inrapporterings
+571055r6<adjektiv>inre:::inre:::innerst:innersta:::::::::
+CUSTOM: y n
+649170r4<verb>inreda:inreda:inredde:inrett:inreder:inred:inredas:inreddes:inretts:inreds, inredes:inredd:inrett:inredda::
+692337r3<substantiv>inredande:inredande:inredandes:inredandet:inredandets::::
+615318r3<substantiv>inredare:inredare:inredares:inredaren:inredarens:inredare:inredares:inredarna:inredarnas
+CUSTOM: y y inredar
+646607r5<substantiv>inredning:inredning:inrednings:inredningen:inredningens:inredningar:inredningars:inredningarna:inredningarnas
+CUSTOM: y y inrednings +inrednings
+602306r3<substantiv>inredningsarkitekt:inredningsarkitekt:inredningsarkitekts:inredningsarkitekten:inredningsarkitektens:inredningsarkitekter:inredningsarkitekters:inredningsarkitekterna:inredningsarkitekternas
+611691r3<substantiv>inredningssnickeri:inredningssnickeri:inredningssnickeris:inredningssnickeriet:inredningssnickeriets:inredningssnickerier:inredningssnickeriers:inredningssnickerierna:inredningssnickeriernas
+586919r5<verb>inregistrera:inregistrera:inregistrerade:inregistrerat:inregistrerar:inregistrera:inregistreras:inregistrerades:inregistrerats:inregistreras:inregistrerad:inregistrerat:inregistrerade:inregistrerande:
+692342r3<substantiv>inregistrering:inregistrering:inregistrerings:inregistreringen:inregistreringens:inregistreringar:inregistreringars:inregistreringarna:inregistreringarnas
+CUSTOM: y y inregistrerings
+792299r3<adjektiv>inreglerad:inreglerad:inreglerat:inreglerade:inreglerade:!:!:!:
+792302r3<adjektiv>inregnad:inregnad:inregnat:inregnade:inregnade:!:!:!:
+586921r3<verb>inrekvirera:inrekvirera:inrekvirerade:inrekvirerat:inrekvirerar:inrekvirera:::::::::
+911371r3<substantiv>inremarknadsakt:inremarknadsakt:inremarknadsakts:inremarknadsakten:inremarknadsaktens:inremarknadsakter:inremarknadsakters:inremarknadsakterna:inremarknadsakternas
+842482r3<adjektiv>inremedicinsk:inremedicinsk:inremedicinskt:inremedicinska:inremedicinska::::
+958764r3<adjektiv>inrepeterad:inrepeterad:inrepeterat:inrepeterade:inrepeterade:!:!:!:::::::::
+580949r3<adjektiv>inrepolitisk:inrepolitisk:inrepolitiskt:inrepolitiska:inrepolitiska::::
+692347r5<substantiv>inresa:inresa:inresas:inresan:inresans:inresor:inresors:inresorna:inresornas
+CUSTOM: y y inrese
+898251r3<adjektiv>inresande:inresande:inresande:inresande:inresande:!:!:!:::::::::
+580952r3<adjektiv>inresekretorisk:inresekretorisk:inresekretoriskt:inresekretoriska:inresekretoriska::::
+692349r4<substantiv>inresetillstånd:inresetillstånd:inresetillstånds:inresetillståndet:inresetillståndets:inresetillstånd:inresetillstånds:inresetillstånden:inresetillståndens
+COMPOUND(692347, 553043): inresa + tillstånd
+692355r4<substantiv>inresevisum:inresevisum:inresevisums:inresevisumet:inresevisumets:inresevisa, inresevisum:inresevisas, inresevisums:inresevisa, inresevisumen:inresevisas, inresevisumens
+COMPOUND(692347, 627690): inresa + visum
+961631r3<adjektiv>inrest:inrest:inrest:inresta:inresta::::inreste::::::::
+801020r3<adjektiv>inridande:inridande:inridande:inridande:inridande:!:!:!:
+981096r3<substantiv>inridning:inridning:inridnings:inridningen:inridningens::::
+792305r3<adjektiv>inriggad:inriggad:inriggat:inriggade:inriggade:!:!:!:
+869166r3<substantiv>inriggare:inriggare:inriggares:inriggaren:inriggarens:inriggare:inriggares:inriggarna:inriggarnas
+571129r9<adjektiv>inrikes:inrikes:inrikes::inrikes:!:!:!:
+CUSTOM: y y inrikes
+571130r3<adverb>inrikes:inrikes
+692363r4<substantiv>inrikesdepartement:inrikesdepartement:inrikesdepartements:inrikesdepartementet:inrikesdepartementets:inrikesdepartement:inrikesdepartements:inrikesdepartementen:inrikesdepartementens
+COMPOUND(571129, 552309): inrikes + departement
+712701r11<substantiv>inrikesdepartement:inrikesdepartement:inrikesdepartements:inrikesdepartementet:inrikesdepartementets:inrikesdepartement:inrikesdepartements:inrikesdepartementen:inrikesdepartementens
+692369r4<substantiv>inrikesflyg:inrikesflyg:inrikesflygs:inrikesflyget:inrikesflygets::::
+COMPOUND(571129, 561495): inrikes + flyg
+692373r4<substantiv>inrikeshandel:inrikeshandel:inrikeshandels:inrikeshandeln:inrikeshandelns::::
+COMPOUND(571129, 638241): inrikes + handel
+692377r4<substantiv>inrikesminister:inrikesminister:inrikesministers:inrikesministern:inrikesministerns:inrikesministrar:inrikesministrars:inrikesministrarna:inrikesministrarnas
+COMPOUND(571129, 616627): inrikes + minister
+692378r4<substantiv>inrikesministerium:inrikesministerium:inrikesministeriums:inrikesministeriet:inrikesministeriets:inrikesministerier:inrikesministeriers:inrikesministerierna:inrikesministeriernas
+COMPOUND(571129, 616763): inrikes + ministerium
+692386r4<substantiv>inrikespolitik:inrikespolitik:inrikespolitiks:inrikespolitiken:inrikespolitikens:!:!:!:!
+COMPOUND(571129, 550224): inrikes + politik
+568755r3<adjektiv>inrikespolitisk:inrikespolitisk:inrikespolitiskt:inrikespolitiska:inrikespolitiska::::
+762684r3<substantiv>inrikessamtal:inrikessamtal:inrikessamtals:inrikessamtalet:inrikessamtalets:inrikessamtal:inrikessamtals:inrikessamtalen:inrikessamtalens
+546999r5<verb>inrikta:inrikta:inriktade:inriktat:inriktar:inrikta:inriktas:inriktades:inriktats:inriktas:inriktad:inriktat:inriktade:inriktande:
+792308r3<adjektiv>inriktad:inriktad:inriktat:inriktade:inriktade:!:!:!:
+692388r6<substantiv>inriktning:inriktning:inriktnings:inriktningen:inriktningens:inriktningar:inriktningars:inriktningarna:inriktningarnas
+CUSTOM: y y inriktnings +inriktnings
+676662r4<substantiv>inrim:inrim:inrims:inrimmet:inrimmets:inrim:inrims:inrimmen:inrimmens
+COMPOUND(557675, 621838): in + rim
+CUSTOM: y n
+743910r3<verb>inringa:inringa:inringade:inringat:inringar:inringa:inringas:inringades:inringats:inringas:inringad:inringat:inringade:inringande:
+792309r3<adjektiv>inringad:inringad:inringat:inringade:inringade:!:!:!:
+894317r3<adjektiv>inringd:inringd:inringt:inringda:inringda::::::::::::
+695386r5<substantiv>inringning:inringning:inringnings:inringningen:inringningens:inringningar:inringningars:inringningarna:inringningarnas
+547001r5<verb>inrista:inrista:inristade:inristat:inristar:inrista:inristas:inristades:inristats:inristas:inristad:inristat:inristade:inristande:
+792310r3<adjektiv>inristad:inristad:inristat:inristade:inristade:!:!:!:
+842485r3<substantiv>inristning:inristning:inristnings:inristningen:inristningens:inristningar:inristningars:inristningarna:inristningarnas
+792311r3<adjektiv>inritad:inritad:inritat:inritade:inritade:!:!:!:
+801417r3<adjektiv>inrodd:inrodd:inrott:inrodda:inrodda::::
+692389r3<substantiv>inrop:inrop:inrops:inropet:inropets:inrop:inrops:inropen:inropens
+CUSTOM: y n
+547002r5<verb>inropa:inropa:inropade:inropat:inropar:inropa:inropas:inropades:inropats:inropas:inropad:inropat:inropade:inropande:
+615319r3<substantiv>inropare:inropare:inropares:inroparen:inroparens:inropare:inropares:inroparna:inroparnas
+CUSTOM: y y inropar
+842493r3<substantiv>inropning:inropning:inropnings:inropningen:inropningens:inropningar:inropningars:inropningarna:inropningarnas
+692391r3<adjektiv>inrotad:inrotad:inrotat:inrotade:inrotade:!:!:!:
+792314r3<adjektiv>inrullad:inrullad:inrullat:inrullade:inrullade:!:!:!:
+692392r3<adjektiv>inrusande:inrusande:inrusande:inrusande:inrusande:!:!:!:
+692394r3<adjektiv>inrutad:inrutad:inrutat:inrutade:inrutade:!:!:!:
+707612r3<substantiv>inryckning:inryckning:inrycknings:inryckningen:inryckningens:inryckningar:inryckningars:inryckningarna:inryckningarnas
+692395r5<verb>inrymma:inrymma:inrymde:inrymt:inrymmer:inrym:inrymmas:inrymdes:inrymts:inrymmes, inryms:inrymd:inrymt:inrymda:inrymmande:
+COMPOUND(557675, 593330): in + rymma
+CUSTOM: y n !inrym
+692396r3<substantiv>inrådan:inrådan:inrådans:inrådan:inrådans:!:!:!:!
+547003r5<verb>inräkna:inräkna:inräknade:inräknat:inräknar:inräkna:inräknas:inräknades:inräknats:inräknas:inräknad:inräknat:inräknade:inräknande:
+792317r3<adjektiv>inräknad:inräknad:inräknat:inräknade:inräknade:!:!:!:
+842503r3<substantiv>inräkning:inräkning:inräknings:inräkningen:inräkningens:inräkningar:inräkningars:inräkningarna:inräkningarnas
+547004r5<verb>inrätta:inrätta:inrättade:inrättat:inrättar:inrätta:inrättas:inrättades:inrättats:inrättas:inrättad:inrättat:inrättade:inrättande:
+743919r3<substantiv>inrättande:inrättande:inrättandes:inrättandet:inrättandets::::
+692398r5<substantiv>inrättning:inrättning:inrättnings:inrättningen:inrättningens:inrättningar:inrättningars:inrättningarna:inrättningarnas
+CUSTOM: y y inrättnings
+743923r3<adjektiv>inrökt:inrökt:inrökt:inrökta:inrökta::::
+792318r3<adjektiv>inröstad:inröstad:inröstat:inröstade:inröstade:!:!:!:
+842511r3<substantiv>inröstning:inröstning:inröstnings:inröstningen:inröstningens:inröstningar:inröstningars:inröstningarna:inröstningarnas
+792321r3<adjektiv>insaltad:insaltad:insaltat:insaltade:insaltade:!:!:!:
+547005r4<verb>insamla:insamla:insamlade:insamlat:insamlar:insamla:insamlas:insamlades:insamlats:insamlas:insamlad:insamlat:insamlade::
+701908r3<substantiv>insamlande:insamlande:insamlandes:insamlandet:insamlandets::::
+615320r3<substantiv>insamlare:insamlare:insamlares:insamlaren:insamlarens:insamlare:insamlares:insamlarna:insamlarnas
+CUSTOM: y y insamlar
+622296r5<substantiv>insamling:insamling:insamlings:insamlingen:insamlingens:insamlingar:insamlingars:insamlingarna:insamlingarnas
+COMPOUND(557675, 597545): in + samling
+CUSTOM: y y insamlings +insamlings
+549339r8<substantiv>insats:insats:insats:insatsen:insatsens:insatser:insatsers:insatserna:insatsernas
+CUSTOM: y y insats +insats
+728485r4<substantiv>insatskapital:insatskapital:insatskapitals:insatskapitalet:insatskapitalets:insatskapital:insatskapitals:insatskapitalen:insatskapitalens
+COMPOUND(549339, 552543): insats + kapital
+685611r4<adjektiv>insatt:insatt:insatt:insatta:insatta:!:!:!:insatte
+589680r4<verb>inscenera:inscenera:inscenerade:inscenerat:inscenerar:inscenera:insceneras:inscenerades:inscenerats:insceneras:inscenerad:inscenerat:inscenerade:inscenerande:
+842519r3<substantiv>inscenering:inscenering:inscenerings:insceneringen:insceneringens:insceneringar:insceneringars:insceneringarna:insceneringarnas
+624476r6<verb>inse:inse:insåg:insett:inser:inse:inses:insågs:insetts:inses:insedd:insett:insedda::
+COMPOUND(557675, 555218): in + se
+692402r3<substantiv>inseende:inseende:inseendes:inseendet:inseendets::::
+685612r4<substantiv>insegel:insegel:insegels:inseglet:inseglets:insegel:insegels:inseglen:inseglens
+COMPOUND(557676, 555846): in + segel
+842528r4<substantiv>insegling:insegling:inseglings:inseglingen:inseglingens::::
+CUSTOM: y y inseglings
+842527r4<substantiv>inseglingsled:inseglingsled:inseglingsleds:inseglingsleden:inseglingsledens:inseglingsleder:inseglingsleders:inseglingslederna:inseglingsledernas
+COMPOUND(842528, 556257): insegling + led
+549340r4<substantiv>insekt:insekt:insekts:insekten:insektens:insekter:insekters:insekterna:insekternas
+CUSTOM: y y insekts
+842539r3<substantiv>insekticid:insekticid:insekticids:insekticiden:insekticidens:insekticider:insekticiders:insekticiderna:insekticidernas
+743925r4<substantiv>insektsart:insektsart:insektsarts:insektsarten:insektsartens:insektsarter:insektsarters:insektsarterna:insektsarternas
+COMPOUND(549340, 548244): insekt + art
+607384r3<substantiv>insektsbett:insektsbett:insektsbetts:insektsbettet:insektsbettets:insektsbett:insektsbetts:insektsbetten:insektsbettens
+792324r3<adjektiv>insektsskadad:insektsskadad:insektsskadat:insektsskadade:insektsskadade:!:!:!:
+769199r3<substantiv>insektsätare:insektsätare:insektsätares:insektsätaren:insektsätarens:insektsätare:insektsätares:insektsätarna:insektsätarnas
+692406r3<substantiv>insemination:insemination:inseminations:inseminationen:inseminationens:inseminationer:inseminationers:inseminationerna:inseminationernas
+CUSTOM: y y inseminations
+586925r4<verb>inseminera:inseminera:inseminerade:inseminerat:inseminerar:inseminera:insemineras:inseminerades:inseminerats:insemineras:inseminerad:inseminerat:inseminerade:inseminerande:
+695898r6<substantiv>inseminering:inseminering:inseminerings:insemineringen:insemineringens:insemineringar:insemineringars:insemineringarna:insemineringarnas
+CUSTOM: y y inseminerings
+698093r6<substantiv>insemineringsbarn:insemineringsbarn:insemineringsbarns:insemineringsbarnet:insemineringsbarnets:insemineringsbarn:insemineringsbarns:insemineringsbarnen:insemineringsbarnens
+COMPOUND(695898, 555956): inseminering + barn
+570768r3<adjektiv>inseparabel:inseparabel:inseparabelt:inseparabla:inseparabla::::
+927969r3<substantiv>insexnyckel:insexnyckel:insexnyckels:insexnyckeln:insexnyckelns:insexnycklar:insexnycklars:insexnycklarna:insexnycklarnas
+692407r3<substantiv>insida:insida:insidas:insidan:insidans:insidor:insidors:insidorna:insidornas
+901986r6<substantiv>insider:insider:insiders:insidern:insiderns:insider:insiders::
+CUSTOM: y y insider
+743941r3<substantiv>insideraffär:insideraffär:insideraffärs:insideraffären:insideraffärens:insideraffärer:insideraffärers:insideraffärerna:insideraffärernas
+743949r3<substantiv>insiderbrott:insiderbrott:insiderbrotts:insiderbrottet:insiderbrottets:insiderbrott:insiderbrotts:insiderbrotten:insiderbrottens
+901985r4<substantiv>insiderhärva:insiderhärva:insiderhärvas:insiderhärvan:insiderhärvans:insiderhärvor:insiderhärvors:insiderhärvorna:insiderhärvornas
+COMPOUND(901986, 557519): insider + härva
+901988r4<substantiv>insiderjobb:insiderjobb:insiderjobbs:insiderjobbet:insiderjobbets:insiderjobb:insiderjobbs:insiderjobben:insiderjobbens
+COMPOUND(901986, 552536): insider + jobb
+743933r3<substantiv>insiderlag:insiderlag:insiderlags:insiderlagen:insiderlagens:insiderlagar:insiderlagars:insiderlagarna:insiderlagarnas
+901995r4<substantiv>insiderspekulation:insiderspekulation:insiderspekulations:insiderspekulationen:insiderspekulationens:insiderspekulationer:insiderspekulationers:insiderspekulationerna:insiderspekulationernas
+COMPOUND(901986, 668713): insider + spekulation
+692408r3<adverb>insides:insides
+798043r3<adjektiv>insidiös:insidiös:insidiöst:insidiösa:insidiösa::::
+842552r3<substantiv>insignier:::::insignier:insigniers:insignierna:insigniernas
+549341r4<substantiv>insikt:insikt:insikts:insikten:insiktens:insikter:insikters:insikterna:insikternas
+585003r4<adjektiv>insiktsfull:insiktsfull:insiktsfullt:insiktsfulla:insiktsfulla:insiktsfullare:insiktsfullast:insiktsfullaste:insiktsfulle
+701984r5<substantiv>insiktsfullhet:insiktsfullhet:insiktsfullhets:insiktsfullheten:insiktsfullhetens::::
+692412r3<adjektiv>insinuant:insinuant:insinuant:insinuanta:insinuanta::::insinuante
+692414r3<substantiv>insinuation:insinuation:insinuations:insinuationen:insinuationens:insinuationer:insinuationers:insinuationerna:insinuationernas
+CUSTOM: y y insinuations
+547006r5<verb>insinuera:insinuera:insinuerade:insinuerat:insinuerar:insinuera:insinueras:insinuerades:insinuerats:insinueras:insinuerad:insinuerat:insinuerade:insinuerande:
+801021r3<adjektiv>insipprande:insipprande:insipprande:insipprande:insipprande:!:!:!:
+547007r5<verb>insistera:insistera:insisterade:insisterat:insisterar:insistera:insisteras:insisterades:insisterats:insisteras::::insisterande:
+692415r4<verb>insjukna:insjukna:insjuknade:insjuknat:insjuknar:insjukna:::::insjuknad:insjuknat:insjuknade::
+692416r3<substantiv>insjuknande:insjuknande:insjuknandes:insjuknandet:insjuknandets::::
+961635r3<adjektiv>insjungen:insjungen:insjunget:insjungna:insjungna::::::::::::
+842561r3<substantiv>insjungning:insjungning:insjungnings:insjungningen:insjungningens:insjungningar:insjungningars:insjungningarna:insjungningarnas
+737487r3<adjektiv>insjunken:insjunken:insjunket:insjunkna:insjunkna::::
+649171r4<substantiv>insjö:insjö:insjös:insjön:insjöns:insjöar:insjöars:insjöarna:insjöarnas
+CUSTOM: y y insjö
+893243r4<substantiv>insjölax:insjölax:insjölax:insjölaxen:insjölaxens:insjölaxar:insjölaxars:insjölaxarna:insjölaxarnas
+COMPOUND(649171, 555226): insjö + lax
+850489r3<substantiv>insjövik:insjövik:insjöviks:insjöviken:insjövikens:insjövikar:insjövikars:insjövikarna:insjövikarnas
+961638r4<verb>inskaffa:inskaffa:inskaffade:inskaffat:inskaffar:inskaffa:inskaffas:inskaffades:inskaffats:inskaffas:inskaffad:inskaffat:inskaffade:inskaffande:
+COMPOUND(557675, 547655): in + skaffa
+940044r3<adjektiv>inskannad:inskannad:inskannat:inskannade:inskannade:!:!:!:::::::::
+737163r4<verb>inskeppa:inskeppa:inskeppade:inskeppat:inskeppar:inskeppa:inskeppas:inskeppades:inskeppats:inskeppas:inskeppad:inskeppat:inskeppade:inskeppande:
+COMPOUND(557675, 547661): in + skeppa
+692419r3<adjektiv>inskickad:inskickad:inskickat:inskickade:inskickade:!:!:!:
+981100r3<substantiv>inskickning:inskickning:inskicknings:inskickningen:inskickningens::::
+692420r5<verb>inskjuta:inskjuta:insköt:inskjutit:inskjuter:inskjut:inskjutas:insköts:inskjutits:inskjuts, inskjutes:inskjuten:inskjutet:inskjutna:inskjutande:
+COMPOUND(557675, 593371): in + skjuta
+569254r3<adjektiv>inskjutbar:inskjutbar:inskjutbart:inskjutbara:inskjutbara::::
+842571r3<substantiv>inskjutning:inskjutning:inskjutnings:inskjutningen:inskjutningens:inskjutningar:inskjutningars:inskjutningarna:inskjutningarnas
+CUSTOM: y y inskjutnings
+842580r3<verb>inskola:inskola:inskolade:inskolat:inskolar:inskola:inskolas:inskolades:inskolats:inskolas:inskolad:inskolat:inskolade:inskolande:
+737033r4<substantiv>inskolning:inskolning:inskolnings:inskolningen:inskolningens::::
+COMPOUND(557675, 734191): in + skolning
+CUSTOM: y y inskolnings
+842589r3<substantiv>inskott:inskott:inskotts:inskottet:inskottets:inskott:inskotts:inskotten:inskottens
+842595r5<verb>inskrida:inskrida:inskred:inskridit:inskrider:inskrid:inskridas:inskreds:inskridits:inskrids, inskrides::::inskridande:
+COMPOUND(557675, 626282): in + skrida
+549342r4<substantiv>inskrift:inskrift:inskrifts:inskriften:inskriftens:inskrifter:inskrifters:inskrifterna:inskrifternas
+692430r4<substantiv>inskription:inskription:inskriptions:inskriptionen:inskriptionens:inskriptioner:inskriptioners:inskriptionerna:inskriptionernas
+CUSTOM: y y inskriptions
+692426r4<verb>inskriva:inskriva:inskrev:inskrivit:inskriver:inskriv:inskrivas:inskrevs:inskrivits:inskrivs, inskrives:inskriven:inskrivet:inskrivna:inskrivande:
+COMPOUND(557675, 556530): in + skriva
+869184r3<adjektiv>inskriven:inskriven:inskrivet:inskrivna:inskrivna:!:!:!:inskrivne
+670069r4<substantiv>inskrivning:inskrivning:inskrivnings:inskrivningen:inskrivningens:inskrivningar:inskrivningars:inskrivningarna:inskrivningarnas
+CUSTOM: y y inskrivnings +inskrivnings
+670064r4<substantiv>inskrivningsavgift:inskrivningsavgift:inskrivningsavgifts:inskrivningsavgiften:inskrivningsavgiftens:inskrivningsavgifter:inskrivningsavgifters:inskrivningsavgifterna:inskrivningsavgifternas
+COMPOUND(670069, 548299): inskrivning + avgift
+792327r3<adjektiv>inskruvad:inskruvad:inskruvat:inskruvade:inskruvade:!:!:!:
+685615r4<verb>inskränka:inskränka:inskränkte:inskränkt:inskränker:inskränk:inskränkas:inskränktes:inskränkts:inskränks, inskränkes:inskränkt:inskränkt:inskränkta::
+692432r3<substantiv>inskränkande:inskränkande:inskränkandes:inskränkandet:inskränkandets::::
+692431r3<adjektiv>inskränkande:inskränkande:inskränkande:inskränkande:inskränkande:!:!:!:
+636603r4<substantiv>inskränkning:inskränkning:inskränknings:inskränkningen:inskränkningens:inskränkningar:inskränkningars:inskränkningarna:inskränkningarnas
+CUSTOM: y y inskränknings +inskränknings
+685614r4<adjektiv>inskränkt:inskränkt:inskränkt:inskränkta:inskränkta:inskränktare:inskränktast:inskränktaste:
+685616r3<substantiv>inskränkthet:inskränkthet:inskränkthets:inskränktheten:inskränkthetens::::
+CUSTOM: y y inskränkthets
+981104r3<adjektiv>inskuren:inskuren:inskuret:inskurna:inskurna::::::::::::
+792330r3<adjektiv>inskyfflad:inskyfflad:inskyfflat:inskyfflade:inskyfflade:!:!:!:
+869186r3<substantiv>inskärning:inskärning:inskärnings:inskärningen:inskärningens:inskärningar:inskärningars:inskärningarna:inskärningarnas
+685617r5<verb>inskärpa:inskärpa:inskärpte:inskärpt:inskärper:inskärp:inskärpas:inskärptes:inskärpts:inskärps, inskärpes:inskärpt:inskärpt:inskärpta:inskärpande:
+552513r4<substantiv>inslag:inslag:inslags:inslaget:inslagets:inslag:inslags:inslagen:inslagens
+692436r3<adjektiv>inslagen:inslagen:inslaget:inslagna:inslagna::::
+907971r3<substantiv>inslagning:inslagning:inslagnings:inslagningen:inslagningens:inslagningar:inslagningars:inslagningarna:inslagningarnas
+792333r3<adjektiv>inslingrad:inslingrad:inslingrat:inslingrade:inslingrade:!:!:!:
+792336r3<adjektiv>inslipad:inslipad:inslipat:inslipade:inslipade:!:!:!:
+644364r5<substantiv>inslussning:inslussning:inslussnings:inslussningen:inslussningens::::
+877178r3<adjektiv>inslängd:inslängd:inslängt:inslängda:inslängda::::
+552515r3<substantiv>insläpp:insläpp:insläpps:insläppet:insläppets:insläpp:insläpps:insläppen:insläppens
+692438r4<verb>insläppa:insläppa:insläppte:insläppt:insläpper:insläpp:insläppas:insläpptes:insläppts:insläpps, insläppes:insläppt:insläppt:insläppta::
+COMPOUND(557675, 585839): in + släppa
+949604r3<adjektiv>insmetad:insmetad:insmetat:insmetade:insmetade:!:!:!:::::::::
+692446r3<adjektiv>insmickrande:insmickrande:insmickrande:insmickrande:insmickrande:!:!:!:
+759603r3<adjektiv>insmord:insmord:insmort:insmorda:insmorda::::
+743955r3<adjektiv>insmugglad:insmugglad:insmugglat:insmugglade:insmugglade:!:!:!:
+869196r3<substantiv>insmuggling:insmuggling:insmugglings:insmugglingen:insmugglingens::::
+792339r3<adjektiv>insmusslad:insmusslad:insmusslat:insmusslade:insmusslade:!:!:!:
+732040r4<verb>insmyga:insmyga:insmög:insmugit:insmyger:insmyg:insmygas:insmögs:insmugits:insmygs, insmyges:insmugen:insmuget:insmugna:insmygande:
+842604r3<substantiv>insnitt:insnitt:insnitts:insnittet:insnittets:insnitt:insnitts:insnitten:insnittens
+692447r4<verb>insnärja:insnärja:insnärjde:insnärjt:insnärjer:insnärj:insnärjas:insnärjdes:insnärjts:insnärjs, insnärjes:insnärjd:insnärjt:insnärjda::
+COMPOUND(557675, 649276): in + snärja
+792342r3<adjektiv>insnävad:insnävad:insnävat:insnävade:insnävade:!:!:!:
+957360r3<substantiv>insnävning:insnävning:insnävnings:insnävningen:insnävningens::::
+692455r3<adjektiv>insnöad:insnöad:insnöat:insnöade:insnöade:!:!:!:
+799663r3<adjektiv>insnörd:insnörd:insnört:insnörda:insnörda::::
+792345r3<adjektiv>insockrad:insockrad:insockrat:insockrade:insockrade:!:!:!:
+869201r3<substantiv>insolation:insolation:insolations:insolationen:insolationens::::
+773655r3<substantiv>insolvens:insolvens:insolvens:insolvensen:insolvensens::::
+CUSTOM: y y insolvens
+773658r4<adjektiv>insolvent:insolvent:insolvent:insolventa:insolventa::::insolvente
+692456r4<verb>insomna:insomna:insomnade:insomnat:insomnar:insomna:::::insomnad:insomnat:insomnade:insomnande:
+635699r3<substantiv>insomnia:insomnia:insomnias:insomnian:insomnians:!:!:!:!
+644366r7<substantiv>insomning:insomning:insomnings:insomningen:insomningens:insomningar:insomningars:insomningarna:insomningarnas
+CUSTOM: y y insomnings
+644402r6<substantiv>insomningstid:insomningstid:insomningstids:insomningstiden:insomningstidens:insomningstider:insomningstiders:insomningstiderna:insomningstidernas
+COMPOUND(644366, 550665): insomning + tid
+586929r4<verb>insortera:insortera:insorterade:insorterat:insorterar:insortera:insorteras:insorterades:insorterats:insorteras:insorterad:insorterat:insorterade::
+792348r3<adjektiv>insorterad:insorterad:insorterat:insorterade:insorterade:!:!:!:
+692458r3<substantiv>insortering:insortering:insorterings:insorteringen:insorteringens::::
+CUSTOM: y y insorterings
+792349r3<adjektiv>insparad:insparad:insparat:insparade:insparade:!:!:!:
+842611r3<substantiv>inspark:inspark:insparks:insparken:insparkens:insparkar:insparkars:insparkarna:insparkarnas
+941474r3<adjektiv>insparkad:insparkad:insparkat:insparkade:insparkade:!:!:!:::::::::
+801022r3<adjektiv>inspatserande:inspatserande:inspatserande:inspatserande:inspatserande:!:!:!:
+547008r5<verb>inspektera:inspektera:inspekterade:inspekterat:inspekterar:inspektera:inspekteras:inspekterades:inspekterats:inspekteras:inspekterad:inspekterat:inspekterade:inspekterande:
+692459r4<substantiv>inspektion:inspektion:inspektions:inspektionen:inspektionens:inspektioner:inspektioners:inspektionerna:inspektionernas
+CUSTOM: y y inspektions +inspektions
+824094r4<substantiv>inspektionstur:inspektionstur:inspektionsturs:inspektionsturen:inspektionsturens:inspektionsturer:inspektionsturers:inspektionsturerna:inspektionsturernas
+COMPOUND(692459, 550715): inspektion + tur
+824874r3<substantiv>inspektor:inspektor:inspektors:inspektorn:inspektorns:inspektorer:inspektorers:inspektorerna:inspektorernas
+824882r3<substantiv>inspektor:inspektor:inspektors:inspektoren:inspektorens:inspektorer:inspektorers:inspektorerna:inspektorernas
+981107r3<substantiv>inspektris:inspektris:inspektris:inspektrisen:inspektrisens:inspektriser:inspektrisers:inspektriserna:inspektrisernas
+549344r4<substantiv>inspektör:inspektör:inspektörs:inspektören:inspektörens:inspektörer:inspektörers:inspektörerna:inspektörernas
+CUSTOM: y y inspektörs
+889633r3<substantiv>inspel:inspel:inspels:inspelet:inspelets:inspel:inspels:inspelen:inspelens
+547010r5<verb>inspela:inspela:inspelade:inspelat:inspelar:inspela:inspelas:inspelades:inspelats:inspelas:inspelad:inspelat:inspelade:inspelande:
+792352r3<adjektiv>inspelad:inspelad:inspelat:inspelade:inspelade:!:!:!:
+899949r3<substantiv>inspelare:inspelare:inspelares:inspelaren:inspelarens:inspelare:inspelares:inspelarna:inspelarnas
+692460r5<substantiv>inspelning:inspelning:inspelnings:inspelningen:inspelningens:inspelningar:inspelningars:inspelningarna:inspelningarnas
+CUSTOM: y y inspelnings +inspelnings
+743958r3<substantiv>inspicient:inspicient:inspicients:inspicienten:inspicientens:inspicienter:inspicienters:inspicienterna:inspicienternas
+692461r5<substantiv>inspiration:inspiration:inspirations:inspirationen:inspirationens:inspirationer:inspirationers:inspirationerna:inspirationernas
+CUSTOM: y y inspirations
+692462r4<substantiv>inspirationskälla:inspirationskälla:inspirationskällas:inspirationskällan:inspirationskällans:inspirationskällor:inspirationskällors:inspirationskällorna:inspirationskällornas
+COMPOUND(692461, 559907): inspiration + källa
+549345r3<substantiv>inspiratör:inspiratör:inspiratörs:inspiratören:inspiratörens:inspiratörer:inspiratörers:inspiratörerna:inspiratörernas
+547011r5<verb>inspirera:inspirera:inspirerade:inspirerat:inspirerar:inspirera:inspireras:i
