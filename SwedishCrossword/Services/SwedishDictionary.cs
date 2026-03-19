@@ -313,11 +313,11 @@ public class SwedishDictionary
     }
 
     /// <summary>
-    /// Checks if a word exists in the dictionary
+    /// Checks if a word exists in the dictionary and has a valid (non-placeholder) clue
     /// </summary>
     public bool IsValidWord(string word)
     {
-        return _words.ContainsKey(word.ToUpperInvariant());
+        return _words.TryGetValue(word.ToUpperInvariant(), out var entry) && HasValidClue(entry);
     }
 }
 

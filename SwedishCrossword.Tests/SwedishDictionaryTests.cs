@@ -124,6 +124,15 @@ public class SwedishDictionaryTests
     }
 
     [Test]
+    public async Task IsValidWord_ReturnsFalseForPlaceholderClue()
+    {
+        var dictionary = new SwedishDictionary(empty: true);
+        dictionary.AddWord("TESTORD", "___", "Test");
+
+        await Assert.That(dictionary.IsValidWord("TESTORD")).IsFalse();
+    }
+
+    [Test]
     public async Task GetWords_FiltersByMinLength()
     {
         var dictionary = new SwedishDictionary(empty: true);
