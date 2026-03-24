@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Word": "ABAKUS",
     "Clue": "En sorts kulram, använd för att utföra beräkningar",
@@ -1038,18 +1038,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ACETYLERING",
-    "Clue": "Atomgrupp + smycke som bärs kring ett finger",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACETYLERINGSMASSA",
-    "Clue": "Acetylering + Massa",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACETYLSALICYLSYRA",
     "Clue": "Ett smärtstillande ämne som ingår i många värktabletter",
     "Category": "Substantiv",
@@ -1063,13 +1051,7 @@
   },
   {
     "Word": "ACIDOFIL",
-    "Clue": "Acid + förkortning för filipperbrevet",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACIKULÄR",
-    "Clue": "Acik + samling av vetenskapliga fakta kring ett…",
+    "Clue": "Kalkskyende",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -1092,12 +1074,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACKJEFÄRD",
-    "Clue": "Samisk släde eller pulka + handlingen eller aktiviteten att fara",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ACKLAMATION",
     "Clue": "Beslutsmetod där en församling fattar ett beslut utifrån en samfälld viljeyttring utan votering/rösträkning",
     "Category": "Substantiv",
@@ -1105,7 +1081,7 @@
   },
   {
     "Word": "ACKLAMATIONSVAL",
-    "Clue": "Beslutsmetod där en församling fattar et… + individ inom däggdjursordningen cetacea",
+    "Clue": "Beslutsfattning genom bifallsrop",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1123,7 +1099,7 @@
   },
   {
     "Word": "ACKLIMATISERINGSSVÅRIGHET",
-    "Clue": "Processen att vänja någon eller något vi… + hinder, problem; besvär",
+    "Clue": "Problem att anpassa kroppens fysiologiska funktioner till nya förhållanden",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1177,7 +1153,7 @@
   },
   {
     "Word": "ACKOMPANJERANDE",
-    "Clue": "Stötta musikaliskt, beledsaga + immateriell självständig substans motsat…",
+    "Clue": "Kompande",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1186,30 +1162,6 @@
     "Clue": "Ett antal toner som ljuder samtidigt i viss harmoni",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACKORDANBUD",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + affärserbjudande från en part",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDARBETE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en fysikalisk storhet som ofta mäts i si…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDAVTAL",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + (rättsligt bindande) ensidig utfästelse…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDDOMSTOL",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + inrättning eller institution för rättski…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ACKORDEON",
@@ -1225,13 +1177,13 @@
   },
   {
     "Word": "ACKORDERING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + smycke som bärs kring ett finger",
+    "Clue": "Blir kost och logi med in",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ACKORDFÖLJD",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + sätt på vilket element eller led kommer…",
+    "Clue": "Musiksekvens",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1242,128 +1194,14 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACKORDISK",
-    "Clue": "Som har med ett antal toner som ljuder samtidigt i viss harmon… att göra",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ACKORDLÄRA",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + samling av vetenskapliga fakta kring ett…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACKORDLÖN",
     "Clue": "Styckelön, lön efter utfört arbete",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACKORDLÖNESÄTTNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + fastställande av medarbetares",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSANBUD",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + affärserbjudande från en part",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSARBETARE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + person som utför lönearbete",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACKORDSARBETE",
     "Clue": "Arbete som baseras på ackord",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSARBETSTAKT",
-    "Clue": "Arbete som baseras på ackord + regelbunden rytm; tempo",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSAVLÖNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + lön",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSAVTAL",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + (rättsligt bindande) ensidig utfästelse…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSBELOPP",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + summa pengar",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSBERÄKNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + företeelsen att via intellektet erhålla…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSERSÄTTNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + det att ersätta",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSFAKTOR",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en företeelse som påverkar något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSFÖRFARANDE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + sätt att handla",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSFÖRHANDLING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + diskussioner för att komma överens om nå…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSFÖRSLAG",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en plan om hur något skall göras",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSFÖRTJÄNST",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + inkomst; vinst",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSGOTTGÖRELSE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + försoning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSGRUND",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + [från] början. det viktigaste. att börja…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSGÄLDENÄR",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + den som är skyldig någon något",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1374,152 +1212,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ACKORDSJOBB",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + arbete; sysselsättning som ger försörjni…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSKOMPENSATION",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + något en individ eller organisation erhå…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSKONTO",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en fysisk eller juridisk persons löpande…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSKORT",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + av begränsad längd",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACKORDSLÖN",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + regelbunden betalning för utfört arbete…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSLÖNEGRUND",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + [från] början. det viktigaste. att börja…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSLÖNESYSTEM",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + flera objekt som samverkar till en funkt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSOFFERT",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + erbjudande av en vara eller en tjänst ti…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSPRIS",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + något man kan få eller vinna efter en pr…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSPRISLISTA",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + uppsättning med korta texter",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSRÄTT",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + som är som den bör vara",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSSATS",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + den minsta grammatiska enhet som fullstä…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSSUMMA",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + resultatet av en addition",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSSYSTEM",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + flera objekt som samverkar till en funkt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSSÄTTARE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + sättare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSSÄTTNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + sammanpressning eller rubbning av jordla…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSTABELL",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en uppställning av information i ett ant…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSTAGARE",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + person som tar emot någonting",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSTARIFF",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + förteckning över satser av taxor",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSTID",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + grundläggande fysikalisk storhet mätbar…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSVILLKOR",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + något som måste uppfyllas för att något…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSVINST",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + begrepp inom nationalekonomi och företag…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSÄTTNING",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + sammanpressning eller rubbning av jordla…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDSÖVERSKOTT",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + något som blir över på grund av rik till…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKORDTABELL",
-    "Clue": "Ett antal toner som ljuder samtidigt i v… + en uppställning av information i ett ant…",
+    "Clue": "Prestationsbaserad erstättning i pengar",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1531,7 +1225,7 @@
   },
   {
     "Word": "ACKREDITERAD",
-    "Clue": "Medan; emellertid + rediterad",
+    "Clue": "Fullmäktig",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -1548,12 +1242,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ACKRETIONSSKIVA",
-    "Clue": "Medan; emellertid + retionsskiva",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACKUMULATION",
     "Clue": "Ansamling av något så att mängden eller halten ökar över tid",
     "Category": "Substantiv",
@@ -1561,7 +1249,7 @@
   },
   {
     "Word": "ACKUMULATIONSOMRÅDE",
-    "Clue": "Ansamling av något så att mängden eller… + avgränsad plats eller yta",
+    "Clue": "Del av glaciär där ett nettotillskott av snö och is sker",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1574,120 +1262,6 @@
   {
     "Word": "ACKUMULATOR",
     "Clue": "Anordning för lagring av elektrisk energi; kemisk spänningskälla som går att ladda om",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORANLÄGGNING",
-    "Clue": "Anordning för lagring av elektrisk energ… + industriell eller teknisk konstruktion m…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORBATTERI",
-    "Clue": "Anordning för lagring av elektrisk energ… + anordning som producerar elektricitet ge…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORBIL",
-    "Clue": "Anordning för lagring av elektrisk energ… + automobil, personbil",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORCELL",
-    "Clue": "Anordning för lagring av elektrisk energ… + biologisk byggsten i alla levande organi…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORDRIVEN",
-    "Clue": "Anordning för lagring av elektrisk energ… + som drivs (på ett visst sätt);",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORELEMENT",
-    "Clue": "Anordning för lagring av elektrisk energ… + vad något är sammansatt av",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORKÄRL",
-    "Clue": "Anordning för lagring av elektrisk energ… + behållare för att hantera gaser",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORLADDNING",
-    "Clue": "Anordning för lagring av elektrisk energ… + en storhet hos partiklar som beskriver d…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORLIKRIKTARE",
-    "Clue": "Anordning för lagring av elektrisk energ… + (enkel) apparat som omvandlar växelström…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORLOK",
-    "Clue": "Anordning för lagring av elektrisk energ… + kortform av lokomotiv",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORLOKOMOTIV",
-    "Clue": "Anordning för lagring av elektrisk energ… + dragfordon i ett tåg",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORMELLANLÄGG",
-    "Clue": "Anordning för lagring av elektrisk energ… + mellanlägg",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORPOL",
-    "Clue": "Anordning för lagring av elektrisk energ… + en av de två punkter på en himlakropp ge…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORPROPP",
-    "Clue": "Anordning för lagring av elektrisk energ… + säkring, skydd mot för hög elektrisk str…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORPROVARE",
-    "Clue": "Anordning för lagring av elektrisk energ… + person som provar något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORSTATION",
-    "Clue": "Anordning för lagring av elektrisk energ… + särskild plats, ibland kallad terminal",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORTRUCK",
-    "Clue": "Anordning för lagring av elektrisk energ… + litet motorfordon utrustat med en gaffel…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORVAGN",
-    "Clue": "Anordning för lagring av elektrisk energ… + transportmedel på hjul som saknar framdr…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULATORVENTIL",
-    "Clue": "Anordning för lagring av elektrisk energ… + anordning som styr flöde av vätskor elle…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1706,30 +1280,6 @@
   {
     "Word": "ACKUMULERING",
     "Clue": "Det att ackumulera",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULERINGSBANA",
-    "Clue": "Det att ackumulera + väg som någon eller något färdas",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULERINGSHORISONT",
-    "Clue": "Det att ackumulera + linje i blickfältet där markytan och him…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULERINGSSKIKT",
-    "Clue": "Det att ackumulera + tunt lager av något material som ligger…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKUMULERINGSVOLYM",
-    "Clue": "Det att ackumulera + en storhet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1765,7 +1315,7 @@
   },
   {
     "Word": "ACKUSATORISK",
-    "Clue": "Medan; emellertid + usatorisk",
+    "Clue": "Kallas processrättslig princip där rätten ska förhålla sig opartisk samt att åklagaren har bevisbördan",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -1788,26 +1338,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ACKVIRERING",
-    "Clue": "Förvärva, anskaffa (särskilt kunder) + pluralis av ingen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ACKVISITION",
     "Clue": "Förvärv, anskaffning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKVISITIONSKATALOG",
-    "Clue": "Förvärv, anskaffning + förteckning över något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACKVISITIONSVÄRDE",
-    "Clue": "Förvärv, anskaffning + ett tals storlek",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1825,15 +1357,9 @@
   },
   {
     "Word": "ACNEBEHANDLING",
-    "Clue": "Alternativ stavning av akne + hantering av en sak, t.ex. i domstol",
+    "Clue": "Finnkur",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ACORNRÖR",
-    "Clue": "Acorn + matematisk/mekanisk konstruktion som kan…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ACTION",
@@ -1872,12 +1398,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ADAGIOSATS",
-    "Clue": "I långsamt tempo + den minsta grammatiska enhet som fullstä…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADAM",
     "Clue": "Bokstaven A (gement: a) i det svenska bokstaveringsalfabetet",
     "Category": "Egennamn",
@@ -1897,7 +1417,7 @@
   },
   {
     "Word": "ADAMSSON",
-    "Clue": "Bokstaven A + namn på kristus",
+    "Clue": "Hette Kain, Abel och Set i efternamn?",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -1910,18 +1430,6 @@
   {
     "Word": "ADAPTATION",
     "Clue": "Anpassning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADAPTATIONSBETINGAD",
-    "Clue": "Anpassning + betingad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADAPTATIONSSTRÄCKA",
-    "Clue": "Anpassning + del av en rät linje",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1939,13 +1447,7 @@
   },
   {
     "Word": "ADAPTERING",
-    "Clue": "Anordning som gör det möjligt att anpass… + smycke som bärs kring ett finger",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADAPTERINGSDEL",
-    "Clue": "Adaptering + Del",
+    "Clue": "Anpassning till nya omständigheter",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -1993,37 +1495,13 @@
   },
   {
     "Word": "ADDERING",
-    "Clue": "Utföra en särskild räkneoperation + pluralis av ingen",
+    "Clue": "Ihopräkning",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
-    "Word": "ADDERINGSMASKIN",
-    "Clue": "Addering + ofta större mekaniskt och/eller elektris…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDERINGSMASKINSRULLE",
-    "Clue": "Addering + ofta större mekaniskt och/ell… + smeknamn för rudolf",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDERINGSMÖTE",
-    "Clue": "Addering + Möte",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDERINGSVERK",
-    "Clue": "Addering + något som har skapats eller åstadkommits…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADDISON",
-    "Clue": "Addi + namn på kristus",
+    "Clue": "Namngav sjukdomen primär binjurebarksinsufficiens",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -2046,62 +1524,14 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADDITIONSAPPARAT",
-    "Clue": "En räkneoperation vars resultat blir en… + (mindre) mekaniskt och/eller elektriskt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSFEL",
-    "Clue": "En räkneoperation vars resultat blir en… + som inte borde vara så; felaktig",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSMASKIN",
-    "Clue": "En räkneoperation vars resultat blir en… + ofta större mekaniskt och/eller elektris…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADDITIONSREAKTION",
-    "Clue": "En räkneoperation vars resultat blir en… + något som inträffar",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSTABELL",
-    "Clue": "En räkneoperation vars resultat blir en… + en uppställning av information i ett ant…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSTAL",
-    "Clue": "En räkneoperation vars resultat blir en… + det att tala",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSTECKEN",
-    "Clue": "Tecknet +",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSTEOREM",
-    "Clue": "En räkneoperation vars resultat blir en… + sats; bevisat påstående",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADDITIONSTID",
-    "Clue": "En räkneoperation vars resultat blir en… + grundläggande fysikalisk storhet mätbar…",
+    "Clue": "Kallas det när två eller flera molekyler slås ihop till en större produkt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADDITIV",
-    "Clue": "Som har med addition att göra; som har med operationen + att göra",
+    "Clue": "Tillsatsämne",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -2154,38 +1584,14 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ADELSDRYG",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + som räcker länge; som förslår väl",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ADELSFAMILJ",
     "Clue": "Familj eller ätt som tillhör adeln",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADELSFANA",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + (stång med en upptill vidfäst) duk",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ADELSFRÖKEN",
     "Clue": "Adlig fröken",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADELSGODS",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + fastighet, egendom, herrgård",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ADELSHÖGFÄRD",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + högmod, mallighet, stolthet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2206,12 +1612,6 @@
     "Clue": "Man som tillhör adeln",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ADELSMANNAÄRA",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + smannaära",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ADELSMÄRKE",
@@ -2239,19 +1639,7 @@
   },
   {
     "Word": "ADELSSLÄKT",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + personer som har en gemensam härstamning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADELSSTOLT",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + ett efternamn",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADELSSTÅND",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + saluplats på torg, i basar e.d.",
+    "Clue": "Överklassfamilj",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2266,18 +1654,6 @@
     "Clue": "Adligt sköldemärke",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADELSVÄLDE",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + makt, styre",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADELSÄTT",
-    "Clue": "Samhällsklass med nedärvda privilegier g… + släkt; ofta de släktingar som härstammar…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ADENIN",
@@ -2340,12 +1716,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADERTONHUNDRATAL",
-    "Clue": "Talet 18 + den tredje minst signifikanta siffran",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADERTONÅRIG",
     "Clue": "Artonårig",
     "Category": "Adjektiv",
@@ -2364,12 +1734,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ADHERA",
-    "Clue": "Adh + artighetsuttryckande skrivvariant av era",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ADHERENS",
     "Clue": "Sammanlödning",
     "Category": "Substantiv",
@@ -2377,7 +1741,7 @@
   },
   {
     "Word": "ADHERERA",
-    "Clue": "Adh + artighetsuttryckande skrivvariant… + artighetsuttryckande skrivvariant av era",
+    "Clue": "Klibba fast vid",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
@@ -2386,84 +1750,6 @@
     "Clue": "Vidhäftningskraft",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ADHESIONSBROTT",
-    "Clue": "Vidhäftningskraft + brytning, det att bryta något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSFÖRMÅGA",
-    "Clue": "Vidhäftningskraft + det att kunna göra något",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSFÖRSLITNING",
-    "Clue": "Vidhäftningskraft + det att förslita",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSFÖRSTÄRKARE",
-    "Clue": "Vidhäftningskraft + instrument för att öka en signals amplit…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSGRÄNS",
-    "Clue": "Vidhäftningskraft + den tänkta eller i praktiken synbara lin…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSJÄRNVÄG",
-    "Clue": "Vidhäftningskraft + transportmedel som utgörs av",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSKOEFFICIENT",
-    "Clue": "Vidhäftningskraft + en konstant som multipliceras med ett al…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSKRAFT",
-    "Clue": "Vidhäftningskraft + styrka, förmåga, energi, ork",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSMEDEL",
-    "Clue": "Vidhäftningskraft + ett ämne / en substans avsedd för ett sp…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSPLAST",
-    "Clue": "Vidhäftningskraft + ett syntetiskt",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSPOLYMER",
-    "Clue": "Vidhäftningskraft + kemisk förening som består av mycket lån…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSVATTEN",
-    "Clue": "Vidhäftningskraft + en färg-, lukt- och smaklös vätska",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADHESIONSVIKT",
-    "Clue": "Vidhäftningskraft + (plural sällsynt) böjlighet med stor för…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ADHESIV",
@@ -2527,7 +1813,7 @@
   },
   {
     "Word": "ADJUNGERING",
-    "Clue": "(kanslisvenska) uppta eller förordna en… + pluralis av ingen",
+    "Clue": "Tillfällig inkallning",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2563,7 +1849,7 @@
   },
   {
     "Word": "ADJUTANTFÅGEL",
-    "Clue": "Person (oftast själv officer) med uppgif… + djur inom klassen aves",
+    "Clue": "Stork i det militära?",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2592,32 +1878,14 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADMINISTRATIONSAPPARAT",
-    "Clue": "Förvaltning + (mindre) mekaniskt och/eller elektriskt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADMINISTRATIONSAVGIFT",
     "Clue": "Förvaltning + vid köp, det som begärs",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADMINISTRATIONSBUDGET",
-    "Clue": "Förvaltning + prognos över framtida planerade ekonomis…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADMINISTRATIONSBYGGNAD",
     "Clue": "Förvaltning + (större) ihålig konstruktion",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADMINISTRATIONSCHEF",
-    "Clue": "Förvaltning + person som leder en grupp personer och f…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2634,20 +1902,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADMINISTRATIONSLOKAL",
-    "Clue": "Förvaltning + tredimensionellt område inomhus som begr…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADMINISTRATIONSOMKOSTNAD",
-    "Clue": "Förvaltning + utgift man har för att kunna utföra någo…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADMINISTRATIONSPROBLEM",
-    "Clue": "Förvaltning + tillstånd som inte är bra och som bör åt…",
+    "Clue": "AO-pålägg",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2677,13 +1933,13 @@
   },
   {
     "Word": "ADMINISTRATÖRSRÄTTIGHET",
-    "Clue": "Person som förvaltar eller handhar viss… + frihet att göra eller låta bli att göra…",
+    "Clue": "Ges till användare som behöver fullständig kontroll över ett system",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADMINISTRERA",
-    "Clue": "Leda planering och skötsel av någon verksamhet (exempelvis företag",
+    "Clue": "Leda planering och skötsel av någon verksamhet",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
@@ -2857,13 +2113,13 @@
   },
   {
     "Word": "ADRENALINHALT",
-    "Clue": "En katekolamin som är ett hormon + som haltar på grund av skada eller smärt…",
+    "Clue": "Är hög vid stress",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADRENALINÖVERSKOTT",
-    "Clue": "En katekolamin som är ett hormon + något som blir över på grund av rik till…",
+    "Clue": "För mycket stresshormon",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -2935,7 +2191,7 @@
   },
   {
     "Word": "ADRESSORT",
-    "Clue": "Hos + samhälle, plats där flera hushåll har si…",
+    "Clue": "Skrivs efter postnummer på kuvert",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -2988,12 +2244,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADSORPTIONSAPPARAT",
-    "Clue": "Bindning till en yta + (mindre) mekaniskt och/eller elektriskt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADSORPTIONSKROMATOGRAFISK",
     "Clue": "Bindning till en yta + kromatografisk",
     "Category": "Adjektiv",
@@ -3031,7 +2281,7 @@
   },
   {
     "Word": "ADUCERJÄRN",
-    "Clue": "Göra mjukare, särskilt om metall + ett metalliskt grundämne med atomnummer…",
+    "Clue": "Grafitiskt gjutjärn",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3067,13 +2317,13 @@
   },
   {
     "Word": "ADVENTIVKNOPP",
-    "Clue": "Tillfälligt inkommen + förstadium till en blomma eller blomma i…",
+    "Clue": "Knopp som bildas någon annanstans på en växt än i ett bladveck",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADVENTIVROT",
-    "Clue": "Tillfälligt inkommen + del av en växt som förankrar växten i un…",
+    "Clue": "Rot som inte utvecklats från växtembryots rotanlag",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3108,12 +2358,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADVENTSSÖNDAG",
-    "Clue": "Del av kyrkoåret som börjar första sönda… + veckans sjunde dag",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADVERB",
     "Clue": "Ord som beskriver ett verb, ett adjektiv eller ett annat adverb",
     "Category": "Substantiv",
@@ -3130,12 +2374,6 @@
     "Clue": "Satsdel som specificerar verbfrasens aktion t.ex genom att lokalisera den i tid och rum",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ADVERBIALSATS",
-    "Clue": "Satsdel som specificerar verbfrasens akt… + den minsta grammatiska enhet som fullstä…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ADVERBIELL",
@@ -3169,7 +2407,7 @@
   },
   {
     "Word": "ADVOKATARVODE",
-    "Clue": "(titel för) person vars yrke är att geno… + finansiell ersättning för visst utfört",
+    "Clue": "Juristlön",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3180,32 +2418,20 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ADVOKATETISK",
-    "Clue": "(titel för) person vars yrke är att geno… + som förknippas med /god/ etik",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ADVOKATEXAMEN",
-    "Clue": "(titel för) person vars yrke är att geno… + formellt bevis på att en person har till…",
+    "Clue": "Utbildning som bland annat innehåller en skriftlig examination i konstitutionell rätt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADVOKATFIRMA",
-    "Clue": "(titel för) person vars yrke är att geno… + benämning under vilken en näringsidkare…",
+    "Clue": "Juridisk verksamhet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ADVOKATFISKAL",
-    "Clue": "(titel för) person vars yrke är att geno… + jurist som genomgår domarutbildning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ADVOKATKOSTNAD",
-    "Clue": "(titel för) person vars yrke är att geno… + vid köp, det som begärs",
+    "Clue": "Titel för vissa juridiska tjänstemän vid Kammarkollegiet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3354,14 +2580,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "AEROSOLBURK",
-    "Clue": "Tätt med småpartiklar i luft eller annan… + mindre behållare eller förpackning för f…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AEROSOLFÄRG",
-    "Clue": "Tätt med småpartiklar i luft eller annan… + synintryck av",
+    "Clue": "Används vid spraymålning",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3469,7 +2689,7 @@
   },
   {
     "Word": "AFFEKTLADDAD",
-    "Clue": "Inverkan på sinnet + ; som mottagit eller är försedd med en l…",
+    "Clue": "Engagerande",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -3547,7 +2767,7 @@
   },
   {
     "Word": "AFFISCHKAMPANJ",
-    "Clue": "Reklam- eller informationsanslag + under en bestämd tid ofta intensiv aktiv…",
+    "Clue": "Drive med reklam- eller informationsanslag",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3565,7 +2785,7 @@
   },
   {
     "Word": "AFFISCHPAPPER",
-    "Clue": "Reklam- eller informationsanslag + material, primärt format i tunna ark avs…",
+    "Clue": "Underlag för poster",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3583,7 +2803,7 @@
   },
   {
     "Word": "AFFISCHTAVLA",
-    "Clue": "Reklam- eller informationsanslag + bild som hängs upp på en vägg i syfte at…",
+    "Clue": "Reklam- eller informationsanslag + bild som hängs upp på en vägg",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3624,12 +2844,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AFFÄRSARBETSGIVARE",
-    "Clue": "Lokal avsedd för handel med bruksvaror + person eller organisation som anställt n…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AFFÄRSAVSLUT",
     "Clue": "Lokal avsedd för handel med bruksvaror + överrenskommelse om köp; köpslut",
     "Category": "Substantiv",
@@ -3648,12 +2862,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AFFÄRSBEGÅVAD",
-    "Clue": "Lokal avsedd för handel med bruksvaror + med stor kunskap eller färdighet inom et…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AFFÄRSBEKANT",
     "Clue": "Lokal avsedd för handel med bruksvaror + som man känner till",
     "Category": "Adjektiv",
@@ -3662,12 +2870,6 @@
   {
     "Word": "AFFÄRSBITRÄDE",
     "Clue": "Person som arbetar på golvet i en fysisk affär t.ex. med att plocka fram varor",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "AFFÄRSBOKFÖRING",
-    "Clue": "Lokal avsedd för handel med bruksvaror + det att föra anteckningar över affärstra…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3702,18 +2904,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AFFÄRSDOKUMENT",
-    "Clue": "Lokal avsedd för handel med bruksvaror + (mestadels i mer formella sammanhang) av…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "AFFÄRSDOMSTOL",
-    "Clue": "Lokal avsedd för handel med bruksvaror + inrättning eller institution för rättski…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AFFÄRSDRIVANDE",
     "Clue": "Affär + Drivande",
     "Category": "Adjektiv",
@@ -3727,7 +2917,7 @@
   },
   {
     "Word": "AFFÄRSEKONOMI",
-    "Clue": "Lokal avsedd för handel med bruksvaror + det vetenskapliga studiet av pengar och…",
+    "Clue": "Läran om hur företag styrs ekonomiskt för att skapa långsiktig lönsamhet och värde",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3739,19 +2929,13 @@
   },
   {
     "Word": "AFFÄRSFÖRESTÅNDARE",
-    "Clue": "Lokal avsedd för handel med bruksvaror + person som ansvarar för och leder en gru…",
+    "Clue": "Butikschef",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "AFFÄRSGATA",
     "Clue": "En gata där det finns en mängd affärer (t.ex. Västerlånggatan i Stockholm)",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "AFFÄRSGREN",
-    "Clue": "Lokal avsedd för handel med bruksvaror + från träd eller buske hård utstickande d…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3834,12 +3018,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AFFÄRSRÖRELSE",
-    "Clue": "Lokal avsedd för handel med bruksvaror + det fenomen att ett föremål eller en lev…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AFFÄRSSED",
     "Clue": "Lokal avsedd för handel med bruksvaror + vedertaget bruk",
     "Category": "Substantiv",
@@ -3852,20 +3030,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "AFFÄRSTIDSLAG",
-    "Clue": "Den tid (på dygnet) under vilken butiker… + vätska för inläggningar",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AFFÄRSVANA",
     "Clue": "Lokal avsedd för handel med bruksvaror + handling som utförs regelbundet",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "AFFÄRSVERK",
-    "Clue": "Lokal avsedd för handel med bruksvaror + något som har skapats eller åstadkommits…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -3958,12 +3124,6 @@
     "Clue": "Språk som härstammar från nederländska som framförallt talas i Sydafrika och Namibia av (ättlingar till) de europeiska kolonisatörerna.",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "AFRIKAGRUPP",
-    "Clue": "En av världsdelarna + flera objekt som kan uppfattas som en en…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "AFRIKAN",
@@ -15444,12 +14604,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ANUS",
-    "Clue": "Ändtarmens öppning mot kroppens utsida varigenom avföring lämnar kroppen",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "ANVISA",
     "Clue": "Ge upplysning om eller påvisa något",
     "Category": "Verb",
@@ -18616,12 +17770,6 @@
     "Clue": "Ett grundämne med atomnummer 33 + det lättaste grundämnet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARSLE",
-    "Clue": "Variant av arsel",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ART",
@@ -26244,12 +25392,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "AVSUGNING",
-    "Clue": "Benämning på fellatio, akt av sexuell karaktär varvid mannens penis stimuleras oralt till utlösning",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "AVSUTTEN",
     "Clue": "Som inte längre kvarstår i sin tilldelade tjänst, ursprungligen om kavallerier och hästar",
     "Category": "Adjektiv",
@@ -30636,12 +29778,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "BALLE",
-    "Clue": "Penis",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "BALLERINA",
     "Clue": "Solodansös i ett danskompani",
     "Category": "Substantiv",
@@ -32640,21 +31776,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "BARNPORNOGRAFI",
-    "Clue": "Pornografi där barn förekommer",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "BARNPORNOGRAFIBROTT",
     "Clue": "Brott mot lag mot barnpornografi",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "BARNPORNOGRAFISK",
-    "Clue": "Minderårig människa + som rör pornografi",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -43932,12 +43056,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "BLADNEGER",
-    "Clue": "Del av växt som sticker ut från stammen… + mörkhyad person",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "BLADNING",
     "Clue": "Handlingen att del av växt som sticker ut från stammen eller stjä…",
     "Category": "Substantiv",
@@ -44331,12 +43449,6 @@
     "Word": "BLASTA",
     "Clue": "Bla + åstad, iväg, bort",
     "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "BLATTE",
-    "Clue": "(svart eller mörkhyad) person med invandrarbakgrund",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -59472,12 +58584,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "BÄVERGÄLL",
-    "Clue": "Körtel fylld med en trögflytande oljeaktig massa mellan bäverns analöppning och könsorgan",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "BÖCKLING",
     "Clue": "Varmrökt fiskprodukt framställd av saltad sill eller strömming",
     "Category": "Substantiv",
@@ -72480,12 +71586,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "DILDO",
-    "Clue": "Sexleksak utformad som en penis, tänkt att ersätta den naturliga penisen vid penetrerande sex",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "DILEMMA",
     "Clue": "Besvärlig situation där man tvingas göra ett val mellan två eller flera alternativ som vart och ett frambringar olika oangenäma följder",
     "Category": "Substantiv",
@@ -83010,18 +82110,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERBLIVEN",
-    "Clue": "Outvecklad; utvecklingsstörd",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERBLIVENHET",
-    "Clue": "Det att vara efterbliven",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERBRÄNNKAMMARE",
     "Clue": "Kortform för efterbliven + erbrännkammare",
     "Category": "Substantiv",
@@ -91758,12 +90846,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ESKORTFLICKA",
-    "Clue": "Prostituerad kvinna",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ESKULAP",
     "Clue": "Läkare",
     "Category": "Substantiv",
@@ -93782,12 +92864,6 @@
   {
     "Word": "EXHIBITIONISM",
     "Clue": "Inre drift att tilldra sig uppmärksamheten och visa upp sig för andra",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EXHIBITIONIST",
-    "Clue": "Person som har en inre (sexuell) drift att visa upp sin nakna kropp (och sina könsorgan)",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -96146,24 +95222,6 @@
   {
     "Word": "FALLOLYCKA",
     "Clue": "Skada på kroppen av att någon har ramlat",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "FALLOS",
-    "Clue": "Avbildning av eller likhet med en penis, särskilt om dyrkade antika grekiska stenar eller statyer; penisattrapp",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "FALLOSKULT",
-    "Clue": "Avbildning av eller likhet med en penis + variant av kul",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "FALLOSSYMBOL",
-    "Clue": "Avbildning av eller likhet med en penis + företeelse som uttrycker en annan förete…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -99410,12 +98468,6 @@
   {
     "Word": "FELKÄLLA",
     "Clue": "Orsak till fel (i mätning eller funktion)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "FELLATIO",
-    "Clue": "Sexuell akt, under vilken en person sexuellt stimulerar en mans könsorgan med sin egen mun",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -104766,12 +103818,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "FITTA",
-    "Clue": "Vulva",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "FITTJA",
     "Clue": "Fit + \"jag vet inte\"",
     "Category": "Egennamn",
@@ -106450,12 +105496,6 @@
     "Clue": "Platt och tunn",
     "Category": "Adjektiv",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "FLATA",
-    "Clue": "Homosexuell kvinna [ vardagligt, delvis nedsättande ]",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "FLATBOTTNAD",
@@ -109868,12 +108908,6 @@
   {
     "Word": "FNASIGHET",
     "Clue": "Fnasig + mycket varm",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "FNASK",
-    "Clue": "Prostituerad",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -127836,12 +126870,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "FÖRHUD",
-    "Clue": "Ett tillbakadragbart hudveck (praeputium) som täcker ollonet längst ut på penis",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "FÖRHUDSFÖRTRÄNGNING",
     "Clue": "Ett tillbakadragbart hudveck + ett särskilt trångt ställe som hindrar s…",
     "Category": "Substantiv",
@@ -138666,12 +137694,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "GENITALIER",
-    "Clue": "Könsorgan",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "GENITALORGAN",
     "Clue": "Mycket begåvad person + det att tala + del hos en utvecklad orga…",
     "Category": "Substantiv",
@@ -140808,12 +139830,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "GIGOLO",
-    "Clue": "Man som mot betalning dansar för kvinnliga gäster; även om manlig prostituerad",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "GIKT",
     "Clue": "Ledsjukdom med plötsliga och smärtsamma inflammationer",
     "Category": "Substantiv",
@@ -141609,12 +140625,6 @@
     "Word": "GLADLYNT",
     "Clue": "Som ofta är på gott humör",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "GLADPORR",
-    "Clue": "Vid gott humör, munter + pornografi",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -147732,18 +146742,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "GRUPPVÅLDTÄKT",
-    "Clue": "Våldtäkt med fler än en förövare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "GRUPPVÅLDTÄKTSGÄNG",
-    "Clue": "Våldtäkt med fler än en förövare + grupp med social samhörighet",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "GRUPPÖVNING",
     "Clue": "Flera objekt som kan uppfattas som en en… + träning för skicklighetskrävande uppgift…",
     "Category": "Substantiv",
@@ -151596,12 +150594,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "GYNEKOLOGI",
-    "Clue": "Läran om sjukdomar i kvinnans könsorgan",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "GYNEKOLOGISK",
     "Clue": "Som rör gynekologi",
     "Category": "Adjektiv",
@@ -154749,12 +153741,6 @@
     "Word": "HALVNAKEN",
     "Clue": "Som är delvis naken, som inte är fullt påklädd",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVNEGER",
-    "Clue": "Till 50&nbsp + mörkhyad person",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -164604,12 +163590,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "HOPPSTJÄRT",
-    "Clue": "Förflyttning under vilken kroppen lämnar… + bakdel (på människa), anus",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "HOPPSTÄLLNING",
     "Clue": "Förflyttning under vilken kroppen lämnar… + (mer eller mindre vertikal) anordning so…",
     "Category": "Substantiv",
@@ -165012,12 +163992,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "HORA",
-    "Clue": "(i synnerhet kvinnlig) person som utövar hor (erbjudande av sexuella tjänster)",
-    "Category": "Verb",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "HORBOCK",
     "Clue": "Man som begår äktenskapsbrott; man som har många sexuella partner",
     "Category": "Substantiv",
@@ -165260,12 +164234,6 @@
   {
     "Word": "HORTONOM",
     "Clue": "Person med högre trädgårdsutbildning",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HORUNGE",
-    "Clue": "Barn avlat utanför äktenskapet, oäkting",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -167474,12 +166442,6 @@
   {
     "Word": "HUSMUS",
     "Clue": "En art (Mus musculus) inom däggdjursfamiljen råttdjur (Muridae); individ av arten husmus",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HUSNEGER",
-    "Clue": "Främst mörkhyad husblatte",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -169910,12 +168872,6 @@
   {
     "Word": "HÅRDPLAST",
     "Clue": "(materialet i ett) styvt skikt eller massivt föremål gjort av plast, som behåller formen även vid viss påfrestning",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HÅRDPORR",
-    "Clue": "Stel, oflexibel + pornografi",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -178102,18 +177058,6 @@
     "Clue": "Krig i vilket de stridande parterna tillhör samma land",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "INCEST",
-    "Clue": "Sexuellt förhållande mellan nära släktingar (endast om personer)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "INCESTUÖS",
-    "Clue": "Som har att göra med incest",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "INCHECKAD",
@@ -190962,12 +189906,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "JAZZNEGER",
-    "Clue": "Musikgenre som kännetecknas av bland ann… + mörkhyad person",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "JAZZORKESTER",
     "Clue": "Musikgenre som kännetecknas av bland ann… + instrumental ensemble",
     "Category": "Substantiv",
@@ -191653,7 +190591,7 @@
   },
   {
     "Word": "JOHAN",
-    "Clue": "Svensk kortform av Johannes, \u0092Gud har förbarmat sig\u0092.",
+    "Clue": "Svensk kortform av Johannes, Gud har förbarmat sig.",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -206976,12 +205914,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "KLITORIS",
-    "Clue": "Del av kvinnans yttre könsorgan (vulva) som är starkt sexuellt retbar",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "KLIV",
     "Clue": "Långt steg, jättesteg",
     "Category": "Substantiv",
@@ -211208,12 +210140,6 @@
   {
     "Word": "KOKOSPALM",
     "Clue": "En sorts palm som får kokosnötter (Cocos nucifera); exemplar av detta träd",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KOKOTT",
-    "Clue": "Prostituerad kvinna som lever ett liv av lyx",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -225198,12 +224124,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "KUK",
-    "Clue": "Arkeologisk fyndplats i Papua Nya Guinea.",
-    "Category": "Egennamn",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "KUKELIKU",
     "Clue": "Arkeologisk fyndplats i Papua Nya Guinea… + eliku",
     "Category": "Interjektion",
@@ -225212,18 +224132,6 @@
   {
     "Word": "KUKHUVUD",
     "Clue": "Ollon",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KUKRING",
-    "Clue": "Penisring; ett sexhjälpmedel i form av en ring av till exempel gummi eller töjbar plast som träs runt roten av penis för att sakta ner blodflödet och således förstärka erektion",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KUKSUGARE",
-    "Clue": "Person som för sexuell njutning stimulerar en penis med munnen",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -231690,12 +230598,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "KÖNSHÅR",
-    "Clue": "Håret på och vid människans yttre könsorgan",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "KÖNSKVOTERA",
     "Clue": "Uppdelning i typer av organismer inom en… + fördela i andelar",
     "Category": "Verb",
@@ -231732,28 +230634,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "KÖNSORD",
-    "Clue": "Ord för (mänskliga) könsorgan, speciellt ord som uppfattas som vulgära eller används som svordomar",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KÖNSORGAN",
-    "Clue": "Kroppsdel hos tvåkönade organismer avsedd för sexuell reproduktion",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "KÖNSROLL",
     "Clue": "Beteende som är typiskt för kvinnor respektive män i en given social grupp",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "KÖNSSJUKDOM",
-    "Clue": "Sjukdom som överförs via samlag och angriper könsorganen",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "KÖNSSKILLNAD",
@@ -243627,12 +242511,6 @@
     "Word": "LUDEN",
     "Clue": "Hårbeklädd, hårig",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "LUDER",
-    "Clue": "Prostituerad alternativt promiskuös kvinna, även prostituerad man",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -257058,12 +255936,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "MASTURBERA",
-    "Clue": "Vidröra könsorgan, vanligen i sexuellt njutningssyfte och vanligen i syfte att få orgasm och, hos män, ejakulation",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "MASUGN",
     "Clue": "Anläggning (slags ugn) för framställning av råjärn (s.k. tackjärn) ur järnmalm",
     "Category": "Substantiv",
@@ -265788,12 +264660,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "MJUKPORR",
-    "Clue": "Som lätt kan deformeras + pornografi",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "MJUKRYGGAD",
     "Clue": "Som lätt kan deformeras + ryggad",
     "Category": "Adjektiv",
@@ -266503,13 +265369,13 @@
   },
   {
     "Word": "MODEMKAPNING",
-    "Clue": "Det att ett företag i smyg och olovligt överför ett uppringningsprogram i någons dator t.ex. vid besök på företagets webbplats; programmet \u0094kapar\u0094 modemet kopplat till datorn och ringer upp en modempool eller ett betalnummer, vilket medför skyhöga telefonkostnader som modemkaparen olagligen utkräver av modeminnehavaren",
+    "Clue": "Det att ett företag i smyg och olovligt överför ett uppringningsprogram i någons dator t.ex. vid besök på företagets webbplats; programmet kapar modemet kopplat till datorn och ringer upp en modempool eller ett betalnummer, vilket medför skyhöga telefonkostnader som modemkaparen olagligen utkräver av modeminnehavaren",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "MODEMKIDNAPPNING",
-    "Clue": "Det att ett företag i smyg och olovligt överför ett uppringningsprogram i någons dator t.ex. vid besök på företagets webbplats; programmet \u0094kapar\u0094 modemet kopplat till datorn och ringer upp en modempool eller ett betalnummer, vilket medför skyhöga telefonkostnader som modemkaparen olagligen utkräver av modeminnehavaren",
+    "Clue": "Det att ett företag i smyg och olovligt överför ett uppringningsprogram i någons dator t.ex. vid besök på företagets webbplats; programmet kapar modemet kopplat till datorn och ringer upp en modempool eller ett betalnummer, vilket medför skyhöga telefonkostnader som modemkaparen olagligen utkräver av modeminnehavaren",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -280206,44 +279072,14 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "NEGER",
-    "Clue": "Mörkhyad person, i regel från Afrika eller härstammande därifrån",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "NEGERA",
     "Clue": "Göra nekande",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
-    "Word": "NEGERBOLL",
-    "Clue": "Chokladboll",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "NEGERING",
     "Clue": "Det att negera; handling eller uttalande som negerar något",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "NEGERKUNG",
-    "Clue": "En neger som är en kung",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "NEGERMUSIK",
-    "Clue": "Mörkhyad person + sekvens av ljud som människor uppfattar…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "NEGERSLAV",
-    "Clue": "Mörkhyad person + ofri person",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -282122,12 +280958,6 @@
   {
     "Word": "NIGERISKA",
     "Clue": "Kvinna från Niger",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "NIGGER",
-    "Clue": "Mörkhyad person",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -301386,12 +300216,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "OMSKÄRELSE",
-    "Clue": "Ingrepp på de yttre manliga könsorganen; bortopererande av en del av förhuden på penis",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "OMSKÄRNING",
     "Clue": "Handlingen att det att hos pojke avlägsna hela eller stora delar…",
     "Category": "Substantiv",
@@ -302506,30 +301330,6 @@
     "Clue": "Inte mönstrad, som inte har ett mönster på sig /utan är enfärgad/",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ONANERA",
-    "Clue": "Vidröra könsorgan, vanligen i sexuellt njutningssyfte och vanligen i syfte att få orgasm och, hos män, ejakulation",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ONANI",
-    "Clue": "Det att vidröra könsorganet",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ONANIST",
-    "Clue": "Onan + kall dryck med karaktär av te",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ONANISTISK",
-    "Clue": "Som har med onan + kall dryck med karaktär av te att göra",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ONATURLIG",
@@ -313092,12 +311892,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "PARA",
-    "Clue": "(ofta med en individ av motsatt kön) via naturliga biologiska processer ge upphov till förutsättningar för en ny individ; särskilt om djur där en hane för in sin penis i en hona i syfte att överföra spermier som befruktar en äggcell",
-    "Category": "Verb",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "PARABEL",
     "Clue": "(den plana) grafen till en funktion f som ges av ett andragradsuttryck",
     "Category": "Substantiv",
@@ -314246,12 +313040,6 @@
   {
     "Word": "PARNASS",
     "Clue": "Vitterhet, dess framstående (eller berömda) utövare (författare",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PARNING",
-    "Clue": "Det att två individer (ofta av motsatt kön) via naturliga biologiska processer ger upphov till förutsättningar för en ny individ; särskilt om djur där hanen för in sin penis i honan i syfte att överföra spermier som befruktar en äggcell; det att para sig",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -315672,12 +314460,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "PEDERAST",
-    "Clue": "Homosexuell man som särskilt dras till yngre pojkar",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "PEDERASTI",
     "Clue": "Äldre mans sexuella attraktion för unga pojkar",
     "Category": "Substantiv",
@@ -315714,12 +314496,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "PEDOFIL",
-    "Clue": "Vuxen person som söker sexuell kontakt med barn",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "PEDOFILDÖMD",
     "Clue": "Ett mansnamn av danskt ursprung + ofildömd",
     "Category": "Adjektiv",
@@ -315736,12 +314512,6 @@
     "Clue": "Det att som vuxen känna stark sexuell attraktion till barn",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "PEDOFILPORR",
-    "Clue": "Vuxen person som söker sexuell kontakt m… + pornografi",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "PEDOLOGISK",
@@ -316346,18 +315116,6 @@
   {
     "Word": "PENICILLINTABLETT",
     "Clue": "En grupp av antibiotika i gruppen beta-l… + litet föremål",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PENIS",
-    "Clue": "Ett av mannens yttre könsorgan",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PENISAVUND",
-    "Clue": "Ett av mannens yttre könsorgan + känslan av bitterhet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -320070,18 +318828,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "PISTILL",
-    "Clue": "Kvinnligt könsorgan (honorgan) i en blomma, delad i märke, stift och fruktämne",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PISTILLFÄSTE",
-    "Clue": "Kvinnligt könsorgan + grepp, handtag; (fast) grund",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "PISTMASKIN",
     "Clue": "Maskin som används för att platta till skidpister till manchestermönster, d.v.s. en hård, räfflad yta på snön",
     "Category": "Substantiv",
@@ -320154,28 +318900,10 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "PITEPALT",
-    "Clue": "Penis + en maträtt av bullar av deg eller potati…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "PITEÅ",
     "Clue": "Stad i Norrbotten, i norra Sverige",
     "Category": "Egennamn",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "PITEÅBO",
-    "Clue": "Penis + person som",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PITT",
-    "Clue": "Penis",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
   },
   {
     "Word": "PITTORESK",
@@ -325104,18 +323832,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "PORNOGRAFI",
-    "Clue": "Avbildandet i bilder",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORNOGRAFISK",
-    "Clue": "Som rör pornografi",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "POROKARA",
     "Clue": "Mycket liten + guldhalt (24 karat = rent guld)",
     "Category": "Egennamn",
@@ -325128,38 +323844,8 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "PORR",
-    "Clue": "Pornografi",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "PORRBILD",
     "Clue": "Bild vars syfte är att väcka sexuell upphetsning hos den som tittar på den; pornografisk bild",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRBIO",
-    "Clue": "Pornografi + kortform för biograf",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRBIOGRAF",
-    "Clue": "Pornografi + (större) lokal",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORRBRANSCH",
-    "Clue": "Pornografi + affärsgren, yrkesgren",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORRBUTIK",
-    "Clue": "Pornografi + (mindre) byggnad/affär eller annan plats…",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -325176,46 +323862,10 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "PORRFRI",
-    "Clue": "Pornografi + obunden, lös, ej fängslad",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "PORRIG",
     "Clue": "Pornografisk, sexuellt upphetsande",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRINDUSTRI",
-    "Clue": "Pornografi + näringsgren som",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORRKANAL",
-    "Clue": "Pornografi + anlagd farled",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRKLUBB",
-    "Clue": "Pornografi + sammanslutning",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRKLUBBSBESÖK",
-    "Clue": "Pornografi + sammanslutning + tillfälle när någon eller några tillfäll…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORRKRAMARE",
-    "Clue": "Pornografi + person som aktivt försvarar någonting",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "PORRSAJT",
@@ -325240,12 +323890,6 @@
     "Clue": "Använda internet för att komma över pornografiskt material",
     "Category": "Verb",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "PORRSURFANDE",
-    "Clue": "Pornografi + surfande",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "PORRSURFARE",
@@ -330819,12 +329463,6 @@
     "Word": "PROSTITUERA",
     "Clue": "Sälja sexuella tjänster",
     "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PROSTITUERAD",
-    "Clue": "Som utför sexuella tjänster mot betalning",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -337160,12 +335798,6 @@
   {
     "Word": "RADIOFYSISK",
     "Clue": "Tekniskt system för utsändande av inform… + som rör vetenskapen fysik",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "RADIOGONIOMETRISK",
-    "Clue": "Tekniskt system för utsändande av inform… + goniometrisk",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -357140,12 +355772,6 @@
   {
     "Word": "RÖVERI",
     "Clue": "Verksamhet med bakdel (på människa)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "RÖVHÅL",
-    "Clue": "Anus",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -382770,12 +381396,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SKÖKA",
-    "Clue": "Prostituerad kvinna",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "SKÖLD",
     "Clue": "Ett efternamn",
     "Category": "Substantiv",
@@ -383186,12 +381806,6 @@
   {
     "Word": "SKÖTBÅT",
     "Clue": "Ta hand om, vårda + mindre fartyg",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SKÖTE",
-    "Clue": "Livmoder, även om säte för kvinnans könsorgan eller hennes underliv",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -384057,18 +382671,6 @@
     "Word": "SLAMNING",
     "Clue": "Handlingen att storslam eller lillslam",
     "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SLAMPA",
-    "Clue": "Promiskuös eller njutningslysten kvinna; ibland även könsneutralt",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SLAMPIG",
-    "Clue": "Som liknar (eller beter sig som) en slampa",
-    "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
   {
@@ -384939,12 +383541,6 @@
     "Word": "SLINGRING",
     "Clue": "Det att slingra",
     "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SLINKA",
-    "Clue": "Prostituerad kvinna",
-    "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
@@ -386302,12 +384898,6 @@
     "Clue": "Självföryngrat + den samlade mängden (av något)",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "SLYNA",
-    "Clue": "Halvvuxen flicka som är full av upptåg och flickstreck; oerfaren, otuktad ung kvinna (femininum av slyngel)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "SLYNAKTIG",
@@ -392088,12 +390678,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SNIPPA",
-    "Clue": "Det kvinnliga könsorganet, neutral benämning motsvarande snopp",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "SNIRKLA",
     "Clue": "Förse med snirklar",
     "Category": "Verb",
@@ -392336,12 +390920,6 @@
   {
     "Word": "SNOPENHET",
     "Clue": "Det att vara snopen",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SNOPP",
-    "Clue": "Neutralt ord för mannens könsorgan, penisen",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -392601,12 +391179,6 @@
     "Word": "SNUSIG",
     "Clue": "Näsa, mun; nos; kran; tryne + reflexivt pronomen som syftar tillbaka p…",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SNUSK",
-    "Clue": "Något som anses vara äckligt och motbjudande, oftast relaterat till porr och sexualitet",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -393902,12 +392474,6 @@
   {
     "Word": "SOCIALPORNOGRAFI",
     "Clue": "Som rör samhället + avbildandet i bilder",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "SOCIALPORR",
-    "Clue": "Som rör samhället + pornografi",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -406116,27 +404682,9 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "STJÄRNBELYST",
-    "Clue": "Bakdel (på människa), anus + nbelyst",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STJÄRNBESTRÖDD",
-    "Clue": "Bakdel (på människa), anus + nbeströdd",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "STJÄRNBILD",
     "Clue": "Ett antal stjärnor som med lite fantasi kan tolkas utgöra en bild på himlavalvet",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STJÄRNFORMAD",
-    "Clue": "Bakdel (på människa), anus + nformad",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -406164,12 +404712,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "STJÄRNIG",
-    "Clue": "Bakdel (på människa), anus + böja knäna för att tacka eller hälsa",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "STJÄRNKARTA",
     "Clue": "Stor lysande himlakropp som genomför kär… + en visuell",
     "Category": "Substantiv",
@@ -406185,12 +404727,6 @@
     "Word": "STJÄRNKOCK",
     "Clue": "Berömd kock",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STJÄRNKOPPLAD",
-    "Clue": "Bakdel (på människa), anus + nkopplad",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -406212,12 +404748,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "STJÄRNPRYDD",
-    "Clue": "Bakdel (på människa), anus + nprydd",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "STJÄRNSKOTT",
     "Clue": "Ung person (med begåvning) som etablerar sig snabbt och blir berömd",
     "Category": "Substantiv",
@@ -406236,33 +404766,9 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "STJÄRNÖGD",
-    "Clue": "Bakdel (på människa), anus + nögd",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "STJÄRT",
-    "Clue": "Bakdel (på människa), anus",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "STJÄRTAND",
     "Clue": "En art (Anas acuta) inom fågelfamiljen egentliga andfåglar (Anatidae); individ av arten stjärtand",
     "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "STJÄRTLASTIG",
-    "Clue": "Bakdel (på människa), anus + tlastig",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STJÄRTLÖS",
-    "Clue": "Bakdel (på människa), anus + rörlig; ej fastsatt",
-    "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
   {
@@ -406270,12 +404776,6 @@
     "Clue": "En art (Aegithalos caudatus) inom fågelfamiljen stjärtmesar (Aegithalidae); individ av arten stjärtmes",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "STJÄRTTÄCKARE",
-    "Clue": "Bakdel (på människa), anus + ttäckare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "STO",
@@ -411456,12 +409956,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "STÅNDARE",
-    "Clue": "Manligt könsorgan (hanorgan) i en blomma",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "STÅNDARKNAPP",
     "Clue": "Del längst ut på ståndare som bildar det befruktande pollenet",
     "Category": "Substantiv",
@@ -414782,12 +413276,6 @@
   {
     "Word": "SUTARE",
     "Clue": "Fisk av arten Tinca tinca och familjen karpfiskar",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SUTENÖR",
-    "Clue": "Manlig beskyddare åt prostituerad, hallick, alfons",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -425772,12 +424260,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "TASK",
-    "Clue": "Pung och/eller penis",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "TASKIG",
     "Clue": "Okamratlig, otrevlig eller inte snäll",
     "Category": "Adjektiv",
@@ -427047,12 +425529,6 @@
     "Word": "TELEFONOMETRISK",
     "Clue": "Apparat som möjliggör röstkommunikation… + som ingår i si-systemet",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "TELEFONPORR",
-    "Clue": "Apparat som möjliggör röstkommunikation… + pornografi",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -435466,12 +433942,6 @@
     "Clue": "Toalett + lettsaker",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "TOAPAPPER",
-    "Clue": "Mjukt papper som används på toaletter vanligen för att rengöra penis/urinrörsöppning och/eller ändtarmsöppning efter naturligt avgivande av urin och/eller avföring eller en viss sorts dylikt papper",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "TOAPAPPERSRULLE",
@@ -461868,12 +460338,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "UROLOGI",
-    "Clue": "Läran om urinorgan samt mannens könsorgan tillika sjukdomarna i dessa organ",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "UROLOGISK",
     "Clue": "Som har med läkare som specialiserat sig på urologi att göra",
     "Category": "Adjektiv",
@@ -475692,12 +474156,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "VENUSBERG",
-    "Clue": "Det av kvinnans yttre könsorgan som täcker blygdbenet",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "VENÖS",
     "Clue": "Som har med vener att göra",
     "Category": "Adjektiv",
@@ -483894,12 +482352,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "VÅLDTÄKT",
-    "Clue": "Det att en person (förövaren) tvingar en annan person till sexuella handlingar, ofta samlag och ofta med förövaren själv",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "VÅLDTÄKTSFÖRSÖK",
     "Clue": "Det att en person + aktivitet som utförs i syfte att uppnå e…",
     "Category": "Substantiv",
@@ -491058,24 +489510,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ZIGENARE",
-    "Clue": "Person av folkgruppen romer",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ZIGENERSKA",
-    "Clue": "Kvinnlig zigenare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ZIGENSK",
-    "Clue": "Som rör zigenare, deras språk eller kultur",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ZIMBABWE",
     "Clue": "Stat i södra Afrika",
     "Category": "Egennamn",
@@ -496906,18 +495340,6 @@
     "Clue": "Den kvinnliga könscellen vid en tvåkönad… + stekt",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ÄGGSTOCK",
-    "Clue": "Något (ovarium) av de två inre könsorgan som finns i bäckenet hos kvinnor vilket innehåller folliklar av olika mognadsgrad (var och en innehållande en äggcell i något utvecklingsstadium), eventuellt en gulkropp och vilket genomgår den nästan månatliga ovarialcykeln vilken innebär en cyklisk produktion av östrogener (främst östradiol, från folliklar under follikelfasen) och progesteron (från en gulkropp under lutealfasen) samt en ägglossning per cykel, då en äggcell (sekundär oocyt) lämnar den dominanta (preovulatoriska) follikeln och tas upp av en äggledare",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ÄGGSTOCKSINFLAMMATION",
-    "Clue": "Något (ovarium) av de två inre könsorgan… + normal fysiologisk process som ofta är e…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ÄGGSTOR",

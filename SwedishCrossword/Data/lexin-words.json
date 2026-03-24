@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Word": "A",
     "Clue": "Första bokstaven i alfabetet",
@@ -1268,12 +1268,6 @@
   {
     "Word": "ARROGANS",
     "Clue": "Självsäkert och nedlåtande uppträdande",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "ARSLE",
-    "Clue": "Stjärt",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -7392,12 +7386,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "EREKTION",
-    "Clue": "Förstoring av penis, stånd",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "ERFAREN",
     "Clue": "Kunnig (genom egna upplevelser), van, rutinerad",
     "Category": "Adjektiv",
@@ -8682,12 +8670,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FLATA",
-    "Clue": "Lesbisk kvinna",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "FLER",
     "Clue": "I större antal, ytterligare",
     "Category": "Adjektiv",
@@ -9583,7 +9565,7 @@
   },
   {
     "Word": "FÅNE",
-    "Clue": "Mentalt efterbliven eller fånig person",
+    "Clue": "Dåre",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -12793,7 +12775,7 @@
   },
   {
     "Word": "HEKTAR",
-    "Clue": "Ett ytmått (=10\u00A0000 kvadratmeter)",
+    "Clue": "Ett ytmått (=10 000 kvadratmeter)",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -14038,12 +14020,6 @@
     "Clue": "Inte aktuell",
     "Category": "Adjektiv",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "INCEST",
-    "Clue": "Sexuellt umgänge mellan personer som är nära släkt (t.ex. far och dotter)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "INCITAMENT",
@@ -17814,12 +17790,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "KUK",
-    "Clue": "Penis",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "KULA",
     "Clue": "(litet) klot",
     "Category": "Substantiv",
@@ -19335,12 +19305,6 @@
     "Word": "LUDDIG",
     "Clue": "Som består av eller liknar ludd",
     "Category": "Adjektiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "LUDER",
-    "Clue": "Prostituerad kvinna, hora",
-    "Category": "Substantiv",
     "Difficulty": "Easy"
   },
   {
@@ -20863,7 +20827,7 @@
   },
   {
     "Word": "MILJON",
-    "Clue": "1\u00A0000\u00A0000",
+    "Clue": "1 000 000",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -22974,12 +22938,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "ONANI",
-    "Clue": "Handlingen att onanera",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "OND",
     "Clue": "Förargad, ilsken",
     "Category": "Adjektiv",
@@ -23712,12 +23670,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "PEDOFIL",
-    "Clue": "Person som söker sexuell kontakt med barn",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "PEKAR",
     "Clue": "Visar med pekfingret",
     "Category": "Verb",
@@ -23745,12 +23697,6 @@
     "Word": "PENIBEL",
     "Clue": "Pinsam, obehaglig",
     "Category": "Adjektiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "PENIS",
-    "Clue": "Mannens könsorgan, kuk",
-    "Category": "Substantiv",
     "Difficulty": "Easy"
   },
   {
@@ -24600,18 +24546,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "PORNOGRAFI",
-    "Clue": "Bilder och texter som (enbart) är avsedda att väcka sexlust",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORR",
-    "Clue": "Pornografi",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "PORT",
     "Clue": "Ingång genom mur e.d. (ofta till byggnad)",
     "Category": "Substantiv",
@@ -25222,12 +25156,6 @@
     "Clue": "(titel för) präst med en högre tjänst",
     "Category": "Substantiv",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "PROSTITUERAD",
-    "Clue": "Som ägnar sig åt prostitution",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "PROSTITUTION",
@@ -29976,12 +29904,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "SKÖKA",
-    "Clue": "Prostituerad kvinna",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "SKÖLJER",
     "Clue": "Spolar med vatten",
     "Category": "Verb",
@@ -30885,12 +30807,6 @@
     "Word": "SNOKAR",
     "Clue": "Rotar i andras angelägenheter; spionerar",
     "Category": "Verb",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SNOPP",
-    "Clue": "Penis",
-    "Category": "Substantiv",
     "Difficulty": "Easy"
   },
   {
@@ -32790,12 +32706,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "STYMPAR",
-    "Clue": "Hugger av en lem (ofta penis)",
-    "Category": "Verb",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "STYR",
     "Clue": "Låter ett fordon gå i viss riktning",
     "Category": "Verb",
@@ -34352,12 +34262,6 @@
   {
     "Word": "TARM",
     "Clue": "Ett organ mellan magsäcken och mynningen av ändtarmen",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "TASK",
-    "Clue": "Penis",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -38258,12 +38162,6 @@
   {
     "Word": "ZEBRA",
     "Clue": "Ett randigt afrikanskt hästdjur",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "ZIGENARE",
-    "Clue": "Rom",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },

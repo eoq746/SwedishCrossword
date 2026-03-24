@@ -1122,8 +1122,8 @@ public class CrosswordGrid
 
     /// <summary>
     /// Checks whether all cells of the inner Word fall within the outer Word's cells.
-    /// Handles bent words (vinkelord) correctly by using actual grid positions
-    /// instead of assuming a straight-line projection.
+    /// Handles bent words (vinkelord) correctly by checking per-segment containment
+    /// so that words matching a full segment are not incorrectly filtered.
     /// </summary>
     public static bool IsWordContainedInOther(Word inner, Word outer)
     {
@@ -1137,12 +1137,24 @@ public class CrosswordGrid
                 outer.StartRow, outer.StartColumn, outer.Direction, outer.Length);
         }
 
+        // When the inner word is straight and the outer is bent, use per-segment
+        // containment to avoid filtering out words that correspond to a full segment.
+        if (!inner.IsBent && outer.IsBent)
+        {
+            return IsStraightSpanContainedInWord(
+                inner.StartRow, inner.StartColumn, inner.Direction, inner.Length,
+                outer);
+        }
+
         var outerPositions = outer.GetPositions().ToHashSet();
         return inner.GetPositions().All(p => outerPositions.Contains(p));
     }
 
     /// <summary>
     /// Checks whether a straight word span is fully contained within a (possibly bent) Word's cells.
+    /// For bent words, checks per-segment containment so that words corresponding to a full
+    /// segment (e.g. "DIG" across matching the second segment of vinkelord "MODIG") are NOT
+    /// considered contained and can receive their own clue.
     /// </summary>
     public static bool IsStraightSpanContainedInWord(
         int innerRow, int innerCol, Direction innerDir, int innerLen,
@@ -1157,15 +1169,20 @@ public class CrosswordGrid
                 outer.StartRow, outer.StartColumn, outer.Direction, outer.Length);
         }
 
-        var outerPositions = outer.GetPositions().ToHashSet();
-        for (int i = 0; i < innerLen; i++)
+        // For bent words, check if the inner word is a proper sub-word within a
+        // single segment (same direction and strictly shorter). This prevents
+        // filtering out words like "DIG" that correspond to a full segment of
+        // a vinkelord — those are independent straight words needing their own clues.
+        foreach (var segment in outer.Segments)
         {
-            int row = innerDir == Direction.Across ? innerRow : innerRow + i;
-            int col = innerDir == Direction.Across ? innerCol + i : innerCol;
-            if (!outerPositions.Contains((row, col)))
-                return false;
+            if (IsStraightWordContainedIn(
+                innerRow, innerCol, innerDir, innerLen,
+                segment.StartRow, segment.StartCol, segment.Direction, segment.Length))
+            {
+                return true;
+            }
         }
-        return true;
+        return false;
     }
 
     /// <summary>
@@ -1527,6 +1544,24 @@ public class CrosswordGrid
                     return false;
             }
         }
+
+        // The new word's bend cells must not already carry a BendArrowDirection from
+        // another vinkelord. Overwriting would lose the original arrow direction and
+        // two bend arrows along the same path make separate vinkelord look like a
+        // single word with multiple bends.
+        for (int s = 0; s < segments.Count - 1; s++)
+        {
+            int bendRow = segments[s].EndRow;
+            int bendCol = segments[s].EndCol;
+            if (GetCell(bendRow, bendCol).BendArrowDirection != null)
+                return false;
+        }
+
+        // The start cell must not already carry a BendArrowDirection. If it does, the
+        // new word would visually appear as a continuation of the existing bend,
+        // creating the illusion of a single word with two bends.
+        if (GetCell(segments[0].StartRow, segments[0].StartCol).BendArrowDirection != null)
+            return false;
 
         // The terminal cell of the new word must not already carry a BendArrowDirection.
         // If it does, an existing bent word bends there, and its arrow would mislead

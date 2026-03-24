@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Word": "CD",
     "Clue": "Skiva",
@@ -4690,24 +4690,6 @@
     "Clue": "Arsenal",
     "Category": "Synonym",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARSLE",
-    "Clue": "Rumpa",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "RUMPA",
-    "Clue": "Arsle",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "STJÄRT",
-    "Clue": "Arsle",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "ART",
@@ -13050,18 +13032,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "BILLIG",
-    "Clue": "Slampig",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SLAMPIG",
-    "Clue": "Billig",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "BINDA",
     "Clue": "Blöja",
     "Category": "Synonym",
@@ -18012,18 +17982,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "CHOKLADBOLLAR",
-    "Clue": "Negerbollar",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "NEGERBOLLAR",
-    "Clue": "Chokladbollar",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "CICERON",
     "Clue": "Guide",
     "Category": "Synonym",
@@ -22804,12 +22762,6 @@
     "Clue": "Efterapning",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "EFTERBLIVEN",
-    "Clue": "Sär",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
   },
   {
     "Word": "SÄR",
@@ -28140,18 +28092,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "FLATA",
-    "Clue": "Lesbisk",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "LESBISK",
-    "Clue": "Flata",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "FLAX",
     "Clue": "Flyt",
     "Category": "Synonym",
@@ -28656,18 +28596,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "FLYKTINGKULA",
-    "Clue": "Negerboll",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "NEGERBOLL",
-    "Clue": "Flyktingkula",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "TUR",
     "Clue": "Flyt",
     "Category": "Synonym",
@@ -28880,18 +28808,6 @@
   {
     "Word": "GRISKÖTT",
     "Clue": "Fläsk",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "FNASK",
-    "Clue": "Glädjeflicka",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "GLÄDJEFLICKA",
-    "Clue": "Fnask",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -37104,18 +37020,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "GATFLICKA",
-    "Clue": "Prostituerad",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PROSTITUERAD",
-    "Clue": "Gatflicka",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "GATUKONST",
     "Clue": "Graffiti",
     "Category": "Synonym",
@@ -37408,18 +37312,6 @@
     "Clue": "Genialisk",
     "Category": "Synonym",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "GENITALIER",
-    "Clue": "Könsorgan",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "KÖNSORGAN",
-    "Clue": "Genitalier",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "GENMÄLE",
@@ -39876,12 +39768,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "GUMP",
-    "Clue": "Arsle",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "GUNGA",
     "Clue": "Svaja",
     "Category": "Synonym",
@@ -42112,30 +41998,6 @@
     "Clue": "Hopsättning",
     "Category": "Synonym",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "HORA",
-    "Clue": "Sköka",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SKÖKA",
-    "Clue": "Hora",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "HORBARN",
-    "Clue": "Horunge",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "HORUNGE",
-    "Clue": "Horbarn",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "HORISONTAL",
@@ -51714,12 +51576,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "KUK",
-    "Clue": "Stake",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "LAJBANS",
     "Clue": "Kul",
     "Category": "Synonym",
@@ -52480,12 +52336,6 @@
     "Clue": "Aning",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "KÖNSDEL",
-    "Clue": "Könsorgan",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
   },
   {
     "Word": "KÄNSLIG",
@@ -54622,12 +54472,6 @@
     "Clue": "Luden",
     "Category": "Synonym",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "LUDER",
-    "Clue": "Hora",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "LUFFARE",
@@ -62916,18 +62760,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "PEDERAST",
-    "Clue": "Pedofil",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PEDOFIL",
-    "Clue": "Pederast",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "PELARE",
     "Clue": "Stapel",
     "Category": "Synonym",
@@ -63302,12 +63134,6 @@
   {
     "Word": "PUFFRA",
     "Clue": "Pistol",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "PITT",
-    "Clue": "Kuk",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -63754,18 +63580,6 @@
     "Clue": "Population",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "PORNOGRAFI",
-    "Clue": "Porr",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "PORR",
-    "Clue": "Pornografi",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
   },
   {
     "Word": "PORRIG",
@@ -64292,12 +64106,6 @@
   {
     "Word": "PROPOSITION",
     "Clue": "Lagförslag",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "GATUFLICKA",
-    "Clue": "Prostituerad",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -69930,12 +69738,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "SLAMPA",
-    "Clue": "Hora",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "SMAL",
     "Clue": "Slank",
     "Category": "Synonym",
@@ -70268,12 +70070,6 @@
   {
     "Word": "LUTA",
     "Clue": "Slutta",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SLYNA",
-    "Clue": "Slampa",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -75706,12 +75502,6 @@
     "Clue": "Tunn",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "TUPP",
-    "Clue": "Kuk",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
   },
   {
     "Word": "RUNDVANDRING",

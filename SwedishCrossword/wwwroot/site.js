@@ -1172,60 +1172,6 @@ function handleFocus(row, col) {
     }
     highlightWord(row, col);
     highlightClue(row, col);
-
-    // On mobile, ensure focused cell is visible above the on-screen keyboard
-    // Use a small timeout to allow the keyboard to appear and layout to change
-    setTimeout(() => {
-        // Exit early if focus has moved to a different cell
-        if (lastFocusedCell !== cellKey) return;
-        
-        if (cell && typeof cell.scrollIntoView === 'function') {
-            // Compute a scroll margin so the cell isn't obscured by the keyboard or fixed timers
-            const headerOffset = (document.querySelector('.grid-header')?.offsetHeight || 0) + 8;
-            const bottomOffset = 120; // heuristic space for keyboard
-            // Try to scroll the closest scrollable ancestor
-            let el = cell;
-            while (el && el !== document.body) {
-                const overflowY = window.getComputedStyle(el).overflowY;
-                if ((overflowY === 'auto' || overflowY === 'scroll') && el.clientHeight < el.scrollHeight) {
-                    // Scroll within this container to reveal the cell with padding
-                    const cellTop = cell.offsetTop;
-                    const target = Math.max(0, cellTop - 8);
-                    el.scrollTo({ top: target, behavior: 'smooth' });
-                    return;
-                }
-                el = el.parentElement;
-            }
-            // Fallback to window scrolling with offsets — scroll the minimum
-            // amount needed so the grid stays visible when focusing bottom cells.
-            const rect = cell.getBoundingClientRect();
-            const viewportHeight = window.innerHeight;
-            if (rect.bottom > viewportHeight - bottomOffset) {
-                // Cell is below visible area (or covered by keyboard) — scroll
-                // down just enough to reveal it, not all the way to the top.
-                const scrollDown = rect.bottom - (viewportHeight - bottomOffset) + 8;
-                window.scrollTo({ top: window.pageYOffset + scrollDown, behavior: 'smooth' });
-            } else if (rect.top < headerOffset) {
-                // Cell is above visible area — scroll up to reveal it
-                const absoluteTop = rect.top + window.pageYOffset;
-                window.scrollTo({ top: absoluteTop - headerOffset - 8, behavior: 'smooth' });
-            }
-        }
-
-        // Also ensure the active clue is visible in its scroll container
-        const activeClue = document.querySelector('.clue-item.active');
-        if (activeClue) {
-            const container = activeClue.closest('.clue-list');
-            if (container) {
-                const rect = activeClue.getBoundingClientRect();
-                const contRect = container.getBoundingClientRect();
-                if (rect.top < contRect.top || rect.bottom > contRect.bottom) {
-                    const target = activeClue.offsetTop - container.offsetTop - 8;
-                    container.scrollTo({ top: target, behavior: 'smooth' });
-                }
-            }
-        }
-    }, 300);
 }
 
 function highlightWord(row, col) {
@@ -1262,7 +1208,7 @@ function moveTo(row, col) {
     if (row < 0 || row >= puzzleData.height || col < 0 || col >= puzzleData.width) return false;
     if (puzzleData.cells[row]?.[col] === null) return false;
     const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
-    if (cell && !cell.classList.contains('blocked')) { cell.querySelector('input')?.focus(); return true; }
+    if (cell && !cell.classList.contains('blocked')) { cell.querySelector('input')?.focus({ preventScroll: true }); return true; }
     return false;
 }
 
@@ -1279,6 +1225,15 @@ function moveInDirection(input) {
         const idx = cells.findIndex(c => c.row === row && c.col === col);
         if (idx >= 0 && idx < cells.length - 1) {
             const next = cells[idx + 1];
+            // Update currentDirection to match the local direction at the
+            // destination cell so that highlighting and further navigation
+            // correctly follow bent words (vinkelord) through the bend.
+            const destRef = (idx + 2 < cells.length) ? cells[idx + 2] : cells[idx];
+            const destLocalDir = (destRef.row === next.row) ? 'across' : 'down';
+            if (currentDirection !== destLocalDir) {
+                currentDirection = destLocalDir;
+                updateDirectionButton();
+            }
             if (moveTo(next.row, next.col)) return;
         }
     }
@@ -1300,6 +1255,16 @@ function moveBackInDirection(input) {
         const idx = cells.findIndex(c => c.row === row && c.col === col);
         if (idx > 0) {
             const prev = cells[idx - 1];
+            // Update currentDirection to match the local direction at the
+            // destination cell so that highlighting and further navigation
+            // correctly follow bent words (vinkelord) through the bend.
+            const destIdx = idx - 1;
+            const destRef = (destIdx + 1 < cells.length) ? cells[destIdx + 1] : cells[destIdx - 1];
+            const destLocalDir = (destRef.row === prev.row) ? 'across' : 'down';
+            if (currentDirection !== destLocalDir) {
+                currentDirection = destLocalDir;
+                updateDirectionButton();
+            }
             if (moveTo(prev.row, prev.col)) return;
         }
     }
@@ -1317,26 +1282,74 @@ function focusClue(number, direction) {
     }
 }
 
+// Find the index of the current clue in the filtered clues array for the
+// active direction.  Uses cellClueMap (which stores clueIndex) so that
+// duplicate clue numbers are resolved correctly.
+function findCurrentClueIndex(row, col) {
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        const match = findBestEntry(entries, currentDirection, row, col);
+        if (match && match.direction === currentDirection) return match.clueIndex;
+    }
+    // Fallback: search by number (may be inaccurate with duplicate numbers)
+    const clueNumber = findCurrentClueNumber(row, col);
+    const clues = currentDirection === 'across'
+        ? (puzzleData.clues.across || []).filter(c => c.number > 0)
+        : (puzzleData.clues.down || []).filter(c => c.number > 0);
+    return clues.findIndex(c => c.number === clueNumber);
+}
+
+// Focus the first cell of a clue using its cells array when available,
+// so that clues sharing the same number are handled correctly.
+function focusClueFirstCell(clue, direction) {
+    currentDirection = direction;
+    if (clue.cells && clue.cells.length > 0) {
+        moveTo(clue.cells[0][0], clue.cells[0][1]);
+        return;
+    }
+    focusClue(clue.number, direction);
+}
+
+// Get the starting cell [row, col] for a clue, using its cells array or
+// falling back to scanning the grid for the numbered cell.
+function getClueStartCell(clue, direction) {
+    if (clue.cells && clue.cells.length > 0) return clue.cells[0];
+    for (let r = 0; r < puzzleData.height; r++) {
+        for (let c = 0; c < puzzleData.width; c++) {
+            if (puzzleData.cells[r]?.[c]?.num === clue.number) return [r, c];
+        }
+    }
+    return null;
+}
+
 // Move to the next clue in the current direction
 function moveToNextClue(currentRow, currentCol) {
     const clues = currentDirection === 'across' 
         ? (puzzleData.clues.across || []).filter(c => c.number > 0)
         : (puzzleData.clues.down || []).filter(c => c.number > 0);
-    
+
     if (clues.length === 0) return;
-    
-    // Find the current clue number by looking for the start of the current word
-    const currentClueNumber = findCurrentClueNumber(currentRow, currentCol);
-    
-    // Find the index of the current clue
-    const currentIndex = clues.findIndex(c => c.number === currentClueNumber);
-    
-    // Move to the next clue (wrap around to first if at end)
+
+    // Find the current clue index directly (handles duplicate clue numbers)
+    const currentIndex = findCurrentClueIndex(currentRow, currentCol);
+
+    // Loop through subsequent clues, skipping any whose start cell is the
+    // same as the current cell (prevents stuck Tab when multiple clues
+    // share a starting cell, e.g. vinkelord with the same number).
+    for (let i = 1; i <= clues.length; i++) {
+        const candidateIndex = (currentIndex + i) % clues.length;
+        const candidate = clues[candidateIndex];
+        const start = getClueStartCell(candidate, currentDirection);
+        if (start && start[0] === currentRow && start[1] === currentCol) continue;
+        focusClueFirstCell(candidate, currentDirection);
+        return;
+    }
+
+    // All clues share the same start cell — just advance index so the
+    // highlighted clue in the sidebar still changes.
     const nextIndex = currentIndex >= 0 ? (currentIndex + 1) % clues.length : 0;
-    const nextClue = clues[nextIndex];
-    
-    // Focus the first cell of the next clue
-    focusClue(nextClue.number, currentDirection);
+    focusClueFirstCell(clues[nextIndex], currentDirection);
 }
 
 // Move to the previous clue in the current direction
@@ -1344,21 +1357,26 @@ function moveToPreviousClue(currentRow, currentCol) {
     const clues = currentDirection === 'across' 
         ? (puzzleData.clues.across || []).filter(c => c.number > 0)
         : (puzzleData.clues.down || []).filter(c => c.number > 0);
-    
+
     if (clues.length === 0) return;
-    
-    // Find the current clue number by looking for the start of the current word
-    const currentClueNumber = findCurrentClueNumber(currentRow, currentCol);
-    
-    // Find the index of the current clue
-    const currentIndex = clues.findIndex(c => c.number === currentClueNumber);
-    
-    // Move to the previous clue (wrap around to last if at beginning)
+
+    // Find the current clue index directly (handles duplicate clue numbers)
+    const currentIndex = findCurrentClueIndex(currentRow, currentCol);
+
+    // Loop backwards through clues, skipping any whose start cell is the
+    // same as the current cell (prevents stuck Shift+Tab).
+    for (let i = 1; i <= clues.length; i++) {
+        const candidateIndex = (currentIndex - i + clues.length) % clues.length;
+        const candidate = clues[candidateIndex];
+        const start = getClueStartCell(candidate, currentDirection);
+        if (start && start[0] === currentRow && start[1] === currentCol) continue;
+        focusClueFirstCell(candidate, currentDirection);
+        return;
+    }
+
+    // All clues share the same start cell — just go back one index.
     const prevIndex = currentIndex > 0 ? currentIndex - 1 : clues.length - 1;
-    const prevClue = clues[prevIndex];
-    
-    // Focus the first cell of the previous clue
-    focusClue(prevClue.number, currentDirection);
+    focusClueFirstCell(clues[prevIndex], currentDirection);
 }
 
 // Find the clue number for the word at the given position in the current direction
@@ -1409,9 +1427,11 @@ function highlightClue(row, col) {
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
     let clueNumber = 0;
+    let clueDirection = currentDirection;
     if (entries && entries.length > 0) {
         const match = findBestEntry(entries, currentDirection, row, col);
         clueNumber = match.number;
+        clueDirection = match.direction;
     }
 
     if (clueNumber <= 0) {
@@ -1427,19 +1447,13 @@ function highlightClue(row, col) {
     }
 
     if (clueNumber > 0) {
-        const clueItem = document.querySelector(`.clue-item[data-number="${clueNumber}"][data-direction="${currentDirection}"]`);
+        const clueItem = document.querySelector(`.clue-item[data-number="${clueNumber}"][data-direction="${clueDirection}"]`);
         if (clueItem) {
             clueItem.classList.add('active');
-            // Prefer scrolling the nearest scrollable .clue-list container so the page doesn't jump
             const listContainer = clueItem.closest('.clue-list');
             if (listContainer) {
-                // compute target scroll position relative to the container
                 const target = clueItem.offsetTop - listContainer.offsetTop - 8;
-                // smooth scroll within the container
                 listContainer.scrollTo({ top: target, behavior: 'smooth' });
-            } else {
-                // Fallback: scroll the element into view (may scroll the page)
-                clueItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         }
     }

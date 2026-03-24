@@ -291,6 +291,9 @@ node_modules/
 # Visual Studio 6 workspace options file
 *.opt
 
+# Cloudflare Worker local secrets
+.dev.vars
+
 # Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
 *.vbw
 

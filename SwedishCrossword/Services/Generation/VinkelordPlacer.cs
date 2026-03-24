@@ -26,6 +26,11 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                 var bendCell = grid.GetCell(bendRow, bendCol);
                 if (bendCell.IsBlocked) continue;
 
+                // Skip cells that already carry a bend arrow from another vinkelord.
+                // Placing a second bend here would overwrite the first arrow and make
+                // two separate vinkelord look like a single word with two bends.
+                if (bendCell.BendArrowDirection != null) continue;
+
                 // A bend places a direction arrow on the bend cell. Skip cells that are
                 // the terminal cell of any existing word: the arrow would make that word
                 // appear to continue past its actual end.
@@ -241,6 +246,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                     for (int bendCol = 0; bendCol < grid.Width; bendCol++)
                     {
                         if (grid.GetCell(bendRow, bendCol).IsBlocked) continue;
+                        if (grid.GetCell(bendRow, bendCol).BendArrowDirection != null) continue;
                         if (terminalCells.Contains((bendRow, bendCol))) continue;
 
                         var seg1Start = GetSegmentStart(bendRow, bendCol, firstDir, seg1Len);
