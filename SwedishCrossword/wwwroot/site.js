@@ -519,7 +519,7 @@ async function fetchRemoteLeaderboard() {
 }
 
 // Save leaderboard via Cloudflare Worker proxy
-async function saveRemoteLeaderboard(leaderboard) {
+async function saveRemoteLeaderboard(leaderboard, newEntry) {
     if (!LEADERBOARD_ENABLED) return false;
 
     try {
@@ -578,6 +578,15 @@ async function saveRemoteLeaderboard(leaderboard) {
         if (!putResponse.ok) {
             console.warn('Failed to save remote leaderboard:', putResponse.status);
             return false;
+        }
+
+        // Archive the new entry to historical leaderboard
+        if (newEntry) {
+            fetch(`${LEADERBOARD_PROXY_URL}/leaderboard/history`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ date: currentPuzzleDate, entry: newEntry })
+            }).catch(e => console.warn('Failed to archive history entry:', e));
         }
 
         return true;
@@ -642,7 +651,7 @@ async function addToLeaderboard(username, timeSeconds) {
     remoteLeaderboardCache = leaderboard;
 
     if (LEADERBOARD_ENABLED && validation.valid) {
-        saveRemoteLeaderboard(leaderboard).then(success => {
+        saveRemoteLeaderboard(leaderboard, entry).then(success => {
             if (!success) console.warn('Remote save failed, score saved locally only');
         });
     }
@@ -733,7 +742,7 @@ function closeModal() {
 async function submitScore() {
     const input = document.getElementById('username-input');
     let username = input.value.trim();
-    
+
     if (!username) username = 'Anonym';
 
     localStorage.setItem('crossword-username', username);
@@ -743,6 +752,61 @@ async function submitScore() {
 
     closeModal();
     await renderLeaderboard();
+}
+
+// Fetch historical leaderboard from Cloudflare Worker
+async function fetchLeaderboardHistory(days = 30) {
+    if (!LEADERBOARD_ENABLED) return {};
+
+    try {
+        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard/history?days=${days}`);
+        if (!response.ok) {
+            console.warn('Failed to fetch leaderboard history:', response.status);
+            return {};
+        }
+        return await response.json();
+    } catch (e) {
+        console.error('Error fetching leaderboard history:', e);
+        return {};
+    }
+}
+
+// Render historical leaderboard
+async function renderLeaderboardHistory() {
+    const container = document.getElementById('history-list');
+    if (!container) return;
+
+    container.innerHTML = '<li class="leaderboard-empty">Laddar historik...</li>';
+
+    const history = await fetchLeaderboardHistory();
+    const dates = Object.keys(history).sort().reverse();
+
+    if (dates.length === 0) {
+        container.innerHTML = '<li class="leaderboard-empty">Ingen historik tillgänglig ännu.</li>';
+        return;
+    }
+
+    const medals = ['🥇', '🥈', '🥉'];
+
+    container.innerHTML = dates.map(date => {
+        const entries = history[date];
+        const rows = entries.map((entry, index) => {
+            const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
+            const rankClass = index < 3 ? `rank-${index + 1}` : '';
+            return `
+                <li class="leaderboard-item history-item ${rankClass}">
+                    <span class="leaderboard-rank">${rankDisplay}</span>
+                    <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
+                    <span class="leaderboard-time">${formatTime(entry.time)}</span>
+                </li>`;
+        }).join('');
+
+        return `
+            <li class="history-date-group">
+                <h4 class="history-date-heading">${date}</h4>
+                <ul class="history-entries">${rows}</ul>
+            </li>`;
+    }).join('');
 }
 
 // Handle Enter key in username input
@@ -1778,17 +1842,20 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
   const cluesToggle = document.getElementById('clues-toggle');
   const leaderboardToggle = document.getElementById('leaderboard-toggle');
   const introToggle = document.getElementById('intro-toggle');
+  const historyToggle = document.getElementById('history-toggle');
 
   const updateVisibility = () => {
     const isSmall = window.matchMedia('(max-width:1100px)').matches;
     if (!isSmall) {
       document.body.classList.remove('show-leaderboard');
       document.body.classList.remove('show-intro');
+      document.body.classList.remove('show-history');
       document.body.classList.remove('hide-clues');
     }
     if (cluesToggle) cluesToggle.style.display = isSmall ? 'inline-block' : 'none';
     if (leaderboardToggle) leaderboardToggle.style.display = isSmall ? 'inline-block' : 'none';
     if (introToggle) introToggle.style.display = isSmall ? 'inline-block' : 'none';
+    if (historyToggle) historyToggle.style.display = isSmall ? 'inline-block' : 'none';
 
     // Default: clues visible on mobile unless hide-clues is set
     if (isSmall && !document.body.classList.contains('hide-clues')) {
@@ -1801,19 +1868,24 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
     if (leaderboardToggle) {
       leaderboardToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-leaderboard')));
     }
+    if (historyToggle) {
+      historyToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-history')));
+    }
   };
 
   if (cluesToggle) cluesToggle.addEventListener('click', () => {
     document.body.classList.toggle('hide-clues');
     const cluesVisible = !document.body.classList.contains('hide-clues');
-    // When clues become visible, close leaderboard and intro to prioritize clues
+    // When clues become visible, close leaderboard, history and intro to prioritize clues
     if (cluesVisible) {
       document.body.classList.remove('show-leaderboard');
       document.body.classList.remove('show-intro');
+      document.body.classList.remove('show-history');
     } else {
-      // When clues are hidden, also ensure intro and leaderboard are closed
+      // When clues are hidden, also ensure intro, history and leaderboard are closed
       document.body.classList.remove('show-leaderboard');
       document.body.classList.remove('show-intro');
+      document.body.classList.remove('show-history');
     }
     cluesToggle.setAttribute('aria-expanded', String(cluesVisible));
   });
@@ -1822,17 +1894,40 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
     const nowShown = !document.body.classList.contains('show-leaderboard');
     document.body.classList.toggle('show-leaderboard');
     // hide clues when leaderboard shown
-    if (document.body.classList.contains('show-leaderboard')) document.body.classList.add('hide-clues');
+    if (document.body.classList.contains('show-leaderboard')) {
+      document.body.classList.add('hide-clues');
+      document.body.classList.remove('show-history');
+    }
     leaderboardToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-leaderboard')));
+  });
+
+  if (historyToggle) historyToggle.addEventListener('click', () => {
+    document.body.classList.toggle('show-history');
+    if (document.body.classList.contains('show-history')) {
+      document.body.classList.add('hide-clues');
+      document.body.classList.remove('show-leaderboard');
+      document.body.classList.remove('show-intro');
+      renderLeaderboardHistory();
+    }
+    historyToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-history')));
+
+    // On desktop, toggle the history section visibility directly
+    const historySection = document.getElementById('history-section');
+    if (historySection && !window.matchMedia('(max-width:1100px)').matches) {
+      const isVisible = historySection.style.display !== 'none';
+      historySection.style.display = isVisible ? 'none' : '';
+      if (!isVisible) renderLeaderboardHistory();
+    }
   });
 
   if (introToggle) introToggle.addEventListener('click', () => {
     // Toggle the class that CSS checks to show the intro on mobile
     document.body.classList.toggle('show-intro');
-    // when intro is shown, hide clues and leaderboard to prioritize intro
+    // when intro is shown, hide clues, leaderboard and history to prioritize intro
     if (document.body.classList.contains('show-intro')) {
       document.body.classList.add('hide-clues');
       document.body.classList.remove('show-leaderboard');
+      document.body.classList.remove('show-history');
     }
     introToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-intro')));
   });

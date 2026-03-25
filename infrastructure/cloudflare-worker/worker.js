@@ -111,6 +111,76 @@ export default {
                 });
             }
 
+            //
+            // -------------------------------
+            // HISTORICAL LEADERBOARD ENDPOINTS
+            // -------------------------------
+            //
+
+            // POST /leaderboard/history - Archive a score entry for a puzzle date
+            if (path === '/leaderboard/history' && request.method === 'POST') {
+                const { date, entry } = await request.json();
+
+                if (!date || !entry || !entry.name || typeof entry.time !== 'number') {
+                    return new Response(JSON.stringify({ error: 'Invalid payload' }), {
+                        status: 400,
+                        headers: corsHeaders(origin)
+                    });
+                }
+
+                const kvKey = `leaderboard-history:${date}`;
+                const existing = await env.CROSSWORD_KV.get(kvKey, 'json') || [];
+
+                // Avoid duplicates based on name + time + timestamp
+                const isDuplicate = existing.some(e =>
+                    e.name === entry.name && e.time === entry.time && e.timestamp === entry.timestamp
+                );
+
+                if (!isDuplicate) {
+                    existing.push({
+                        name: entry.name,
+                        time: entry.time,
+                        timestamp: entry.timestamp
+                    });
+
+                    // Sort by time ascending and keep top 10
+                    existing.sort((a, b) => a.time - b.time);
+                    const trimmed = existing.slice(0, 10);
+
+                    await env.CROSSWORD_KV.put(kvKey, JSON.stringify(trimmed), {
+                        expirationTtl: 86400 * 90 // 90 days
+                    });
+                }
+
+                return new Response(JSON.stringify({ ok: true }), {
+                    headers: corsHeaders(origin)
+                });
+            }
+
+            // GET /leaderboard/history - Fetch historical leaderboard data
+            if (path === '/leaderboard/history' && request.method === 'GET') {
+                const days = Math.min(parseInt(url.searchParams.get('days') || '30', 10), 90);
+                const history = {};
+
+                const now = new Date();
+                const fetches = [];
+                for (let i = 0; i < days; i++) {
+                    const d = new Date(now);
+                    d.setDate(d.getDate() - i);
+                    const dateStr = d.toISOString().split('T')[0];
+                    fetches.push(
+                        env.CROSSWORD_KV.get(`leaderboard-history:${dateStr}`, 'json')
+                            .then(data => { if (data) history[dateStr] = data; })
+                    );
+                }
+
+                await Promise.all(fetches);
+
+                return new Response(JSON.stringify(history), {
+                    headers: corsHeaders(origin)
+                });
+            }
+
             // Default 404
             return new Response(JSON.stringify({ error: 'Not found' }), {
                 status: 404,

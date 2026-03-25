@@ -101743,7 +101743,7 @@
   },
   {
     "Word": "FILMÄLSKARE",
-    "Clue": "Rörliga, fotografiska bilder + man som regelbundet har samlag med viss…",
+    "Clue": "Cineast",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -109051,7 +109051,7 @@
   },
   {
     "Word": "FOCKA",
-    "Clue": "Knulla",
+    "Clue": "Avskeda",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
@@ -117121,7 +117121,7 @@
   },
   {
     "Word": "FRÅNSKJUT",
-    "Clue": "Indikerar ursprung eller utgångspunkt + samlag",
+    "Clue": "Det att ta stöd med en kroppsdel mot ett underlag för att få fart eller kraft, speciellt när man springer, går eller åker skidor eller skridskor",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -126163,7 +126163,7 @@
   },
   {
     "Word": "FÖRFÖRELSE",
-    "Clue": "Det att locka till sexuellt umgänge (särskilt samlag)",
+    "Clue": "Eggelse",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -151812,12 +151812,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "GÖKA",
-    "Clue": "Ha samlag, knulla",
-    "Category": "Verb",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "GÖKBLOMSTER",
     "Clue": "En art (Cuculus canorus) inom fågelfamil… + blomma, blomkorg eller växt med blommor",
     "Category": "Substantiv",
@@ -163986,28 +163980,10 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "HOR",
-    "Clue": "Akten att erbjuda sexuella tjänster (särsk. mot betalning)",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "HORBOCK",
-    "Clue": "Man som begår äktenskapsbrott; man som har många sexuella partner",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "HORD",
     "Clue": "Läger av nomadiserande tartarisk stam",
     "Category": "Substantiv",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "HORHUS",
-    "Clue": "Lokal som ägnas åt prostitution",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "HORISONT",
@@ -164058,12 +164034,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "HORKARL",
-    "Clue": "Man som utövar utomäktenskaplig sex (hor)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "HORMON",
     "Clue": "Kemiskt ämne som bildas av vissa celler i kroppen (ofta i en endokrin körtel) och sedan transporteras genom hela kroppen med blodet och orsakar biologiskt svar på målceller med receptorer för ämnet",
     "Category": "Substantiv",
@@ -164071,7 +164041,7 @@
   },
   {
     "Word": "HORMONAL",
-    "Clue": "Akten att erbjuda sexuella tjänster + monal",
+    "Clue": "Som har med hormoner att göra; som styrs av hormoner",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -164107,21 +164077,9 @@
   },
   {
     "Word": "HORNBLÄNDE",
-    "Clue": "Akten att erbjuda sexuella tjänster + nblände",
+    "Clue": "Ett mineral av bland annat kalcium, magnesium, järn, kisel och aluminium",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "HORNBÅGAD",
-    "Clue": "Akten att erbjuda sexuella tjänster + nbågad",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HORNEY",
-    "Clue": "Akten att erbjuda sexuella tjänster + ney",
-    "Category": "Egennamn",
-    "Difficulty": "Medium"
   },
   {
     "Word": "HORNFORMIG",
@@ -164160,12 +164118,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "HORNPRYDD",
-    "Clue": "Akten att erbjuda sexuella tjänster + nprydd",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "HORNSTULL",
     "Clue": "Utväxt av keratin på vissa djurs huvuden + avgift som betalas när vara förs över gr…",
     "Category": "Egennamn",
@@ -164190,27 +164142,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "HORSBROTT",
-    "Clue": "Akten att erbjuda sexuella tjänster + brytning, det att bryta något",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HORSGÖK",
-    "Clue": "Akten att erbjuda sexuella tjänster + en art (cuculus canorus) inom fågelfamil…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "HORST",
     "Clue": "Bergsparti som till följd av förkastning kommit att ligga högre än omgivningen (t ex Omberg)",
     "Category": "Egennamn",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HORTATIV",
-    "Clue": "Akten att erbjuda sexuella tjänster + tativ",
-    "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
   {
@@ -168573,18 +168507,6 @@
     "Word": "HÅNFULL",
     "Clue": "Som /ofta/ hånar (någon eller något); som innehåller hån",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HÅNGEL",
-    "Clue": "Ofta sensuell kärleksakt som mestadels består av intensiva kyssar (ibland även närgångna smekningar under tät kroppskontakt)",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HÅNGLA",
-    "Clue": "Med munhålorna utföra en mild sexuell lek utan samlag",
-    "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
@@ -208662,18 +208584,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "KNULL",
-    "Clue": "Samlag eller annan sexuell penetrering",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KNULLA",
-    "Clue": "Utöva sexuellt umgänge.  Av gammelsvenska knulrar. \"De två duvorna knulrar så vackert på takåsen\".",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "KNUSSEL",
     "Clue": "Det att knussla, småsnålhet",
     "Category": "Substantiv",
@@ -216987,12 +216897,6 @@
     "Word": "KOPULATIV",
     "Clue": "(manlig) egyptisk kristen + ulativ",
     "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "KOPULERA",
-    "Clue": "Ha samlag",
-    "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
@@ -237528,12 +237432,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "LIGG",
-    "Clue": "Medgett samlag, \"akten att få ligga med någon\"",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "LIGGA",
     "Clue": "Vara utsträckt i vilande läge",
     "Category": "Verb",
@@ -237555,18 +237453,6 @@
     "Word": "LIGGFÅTÖLJ",
     "Clue": "Vara utsträckt i vilande läge + (oftast finare och bekvämare) stoppad st…",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "LIGGNING",
-    "Clue": "Handlingen att medgett samlag, \"akten att få ligga med någon\"",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "LIGGRIKTIG",
-    "Clue": "Medgett samlag + korrekt, sann; som stämmer",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -249680,12 +249566,6 @@
   {
     "Word": "LÖNSAMHETSKALKYL",
     "Clue": "Relation av vinst till insats + beräkning, företeelsen att via intellekt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "LÖNSKALÄGE",
-    "Clue": "Ha samlag med någon man inte är gift med",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -303582,12 +303462,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ORGASM",
-    "Clue": "Höjdpunkt vid samlag",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ORGASTISK",
     "Clue": "Del hos en utvecklad organism + stisk",
     "Category": "Adjektiv",
@@ -316723,7 +316597,7 @@
   },
   {
     "Word": "PESSAR",
-    "Clue": "Preventivmedel som före samlag förs in i vaginan och blockerar ingången till livmodern",
+    "Clue": "Hormonfritt, återanvändbart preventivmedel",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -355734,12 +355608,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "RÖV",
-    "Clue": "Bakdel (på människa)",
-    "Category": "Substantiv",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "RÖVA",
     "Clue": "Ta ifrån, ofta något värdefullt",
     "Category": "Verb",
@@ -355774,12 +355642,6 @@
     "Clue": "Verksamhet med bakdel (på människa)",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "RÖVSLICKARE",
-    "Clue": "Någon som på ett skenheligt vis uppträder alltför inställsamt för att komma upp sig hos exempelvis chef",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "SAAB",
@@ -358030,30 +357892,6 @@
     "Clue": "Person som tillhör den folkgrupp i norra… + byggnad vid lantbruk för lagring av hö",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "SAMLAG",
-    "Clue": "Sexuellt umgänge",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SAMLAGSSCEN",
-    "Clue": "Sexuellt umgänge + (oftast upphöjd) plats avsedd för uppför…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "SAMLAGSSTÄLLNING",
-    "Clue": "Sexuellt umgänge + (mer eller mindre vertikal) anordning so…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "SAMLAGSSTÖN",
-    "Clue": "Sexuellt umgänge + (långdraget) dovt ljud från någon som li…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "SAMLANDE",
@@ -375030,27 +374868,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SKJUT",
-    "Clue": "Samlag",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "SKJUTA",
     "Clue": "Förflytta /något/ framför sig i rummet; förflytta /något/ genom att verka med en kraft bakifrån",
     "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SKJUTANDE",
-    "Clue": "Samlag + immateriell självständig substans motsat…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SKJUTARE",
-    "Clue": "Samlag + storhet, storleken av en yta",
-    "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
@@ -375084,12 +374904,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SKJUTFÄRDIG",
-    "Clue": "Samlag + i ett tillstånd där inget saknas eller ä…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "SKJUTGALEN",
     "Clue": "Som har en tendens eller vilja att skjuta med vapen utan att först sikta eller identifiera målet",
     "Category": "Adjektiv",
@@ -375106,12 +374920,6 @@
     "Clue": "Skjutvapen",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "SKJUTKUNNIG",
-    "Clue": "Samlag + som kan, som har kunskap",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "SKJUTLAVE",
@@ -375139,7 +374947,7 @@
   },
   {
     "Word": "SKJUTSANDE",
-    "Clue": "Samlag + immateriell självständig substans motsat…",
+    "Clue": "Transporterande av personer",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -375150,14 +374958,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "SKJUTSKICKLIG",
-    "Clue": "Samlag + som besitter goda kunskaper och färdighe…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "SKJUTSNING",
-    "Clue": "Handlingen att det att en person eller en grupp av personer",
+    "Clue": "Handlingen att köra en person eller en grupp av personer",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -386287,7 +386089,7 @@
   },
   {
     "Word": "SMEKMÅNAD",
-    "Clue": "Månaden för ett brudpar efter deras bröllop, som oftast brukar innebära resa och samlag för första gången för religiösa",
+    "Clue": "Tiden närmast efter bröllopet",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -406299,18 +406101,6 @@
     "Word": "STRAFFBESTÄMMELSE",
     "Clue": "Benämning på fastställande av straff",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STRAFFKNULL",
-    "Clue": "Åtgärd som utföres med person som gjort… + samlag eller annan sexuell penetrering",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "STRAFFKNULLA",
-    "Clue": "Ha penetrerande sex med någon som ett straff eller i syfte att förnedra denna",
-    "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
@@ -428323,7 +428113,7 @@
   },
   {
     "Word": "TIDELAG",
-    "Clue": "Samlag mellan människa och djur",
+    "Clue": "Otukt med djur djur",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -457537,7 +457327,7 @@
   },
   {
     "Word": "UPPSKJUTANDE",
-    "Clue": "Förkortning för Uppenbarelseboken + samlag + immateriell självständig substa…",
+    "Clue": "Ajournering",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -482346,24 +482136,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "VÅLDTA",
-    "Clue": "Tvinga en annan person till sexuella handlingar, ofta samlag och ofta med en själv",
-    "Category": "Verb",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "VÅLDTÄKTSFÖRSÖK",
-    "Clue": "Det att en person + aktivitet som utförs i syfte att uppnå e…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "VÅLDTÄKTSMAN",
-    "Clue": "Person som tvingat en annan person att utföra sexuella handlingar, ofta samlag och ofta med sig själv",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "VÅLLA",
     "Clue": "Vara orsak till eller åstadkomma något negativt, skadligt eller olyckligt",
     "Category": "Verb",
@@ -495727,7 +495499,7 @@
   },
   {
     "Word": "ÄLSKARE",
-    "Clue": "Man som regelbundet har samlag med viss person, vanligen utan att vara gift eller sambo med henne",
+    "Clue": "Blir estet med konst",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -495754,30 +495526,6 @@
     "Clue": "Person som hålls kär; ofta använt som tilltal till sådan person",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ÄLSKOG",
-    "Clue": "Sexuell kärlek, samlag",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ÄLSKOGSKRANK",
-    "Clue": "Sexuell kärlek, samlag + avskiljande räcke",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ÄLSKOGSLEK",
-    "Clue": "Sexuell kärlek, samlag + som är lekman",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ÄLSKOGSSTUND",
-    "Clue": "Sexuell kärlek, samlag + en relativt kort tidsperiod",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ÄLSKVÄRD",
@@ -500341,7 +500089,7 @@
   },
   {
     "Word": "ÖVERFALLA",
-    "Clue": "Fysiskt attackera en person (eller flera personer), kanske i syfte att råna eller våldtaga",
+    "Clue": "Fysiskt attackera en person (eller flera personer), kanske i syfte att råna eller skada",
     "Category": "Verb",
     "Difficulty": "Medium"
   },

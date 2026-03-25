@@ -2010,18 +2010,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ANALKANAL",
-    "Clue": "Rövhål",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "RÖVHÅL",
-    "Clue": "Analkanal",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "ANALOGI",
     "Clue": "Liknelse",
     "Category": "Synonym",
@@ -2060,12 +2048,6 @@
   {
     "Word": "LOGISK",
     "Clue": "Analytisk",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "ANALÖPPNING",
-    "Clue": "Rövhål",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -4672,12 +4654,6 @@
     "Clue": "Arrogant",
     "Category": "Synonym",
     "Difficulty": "Easy"
-  },
-  {
-    "Word": "ARSEL",
-    "Clue": "Rövhål",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ARSENAL",
@@ -7660,36 +7636,6 @@
     "Clue": "Bajs",
     "Category": "Synonym",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "BAJSARSLE",
-    "Clue": "Skitröv",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "SKITRÖV",
-    "Clue": "Bajsarsle",
-    "Category": "Synonym",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "BAJSHÅL",
-    "Clue": "Rövhål",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "BAJSKORV",
-    "Clue": "Skitkorv",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SKITKORV",
-    "Clue": "Bajskorv",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
   },
   {
     "Word": "BAK",
@@ -14544,18 +14490,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "BORDELL",
-    "Clue": "Horhus",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "HORHUS",
-    "Clue": "Bordell",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "BORDTENNIS",
     "Clue": "Pingpong",
     "Category": "Synonym",
@@ -15758,12 +15692,6 @@
   {
     "Word": "BRUNHÅRIG",
     "Clue": "Brunett",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "BRUNÖGA",
-    "Clue": "Rövhål",
     "Category": "Synonym",
     "Difficulty": "Hard"
   },
@@ -39954,18 +39882,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "GÖKA",
-    "Clue": "Ha samlag",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "PIPPA",
-    "Clue": "Göka",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "GÄLL",
     "Clue": "Genomträngande",
     "Category": "Synonym",
@@ -40244,12 +40160,6 @@
   {
     "Word": "VÄLTA",
     "Clue": "Ha omkull",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "ÄLSKA",
-    "Clue": "Ha samlag",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -53034,12 +52944,6 @@
     "Difficulty": "Easy"
   },
   {
-    "Word": "SLÖRÖV",
-    "Clue": "Lat",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
     "Word": "LATA",
     "Clue": "Maska",
     "Category": "Synonym",
@@ -53575,13 +53479,7 @@
   },
   {
     "Word": "LIGGA",
-    "Clue": "Samlag",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "SAMLAG",
-    "Clue": "Ligga",
+    "Clue": "Befinna sig i horisontalläge",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },
@@ -67196,30 +67094,6 @@
   {
     "Word": "TJUVA",
     "Clue": "Röva",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "RÖVFLOD",
-    "Clue": "Diarré",
-    "Category": "Synonym",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "RÖVKNULLAD",
-    "Clue": "Rumpkörd",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "RUMPKÖRD",
-    "Clue": "Rövknullad",
-    "Category": "Synonym",
-    "Difficulty": "Easy"
-  },
-  {
-    "Word": "RÖVSLICKA",
-    "Clue": "Fjäska",
     "Category": "Synonym",
     "Difficulty": "Easy"
   },

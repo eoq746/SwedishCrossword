@@ -262,6 +262,13 @@ header p{font-size:.95rem;opacity:.95}
 .leaderboard-item.rank-3 .leaderboard-rank{font-size:1.3rem}
 .leaderboard-item.current-user{outline:2px solid var(--accent-color);outline-offset:-2px}
 
+/* Historical leaderboard styles */
+.history-section .leaderboard-list{max-height:60vh;overflow:auto;-webkit-overflow-scrolling:touch}
+.history-date-group{list-style:none;margin-bottom:16px}
+.history-date-heading{font-size:0.95rem;font-weight:700;color:#374151;margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--accent-color)}
+.history-entries{list-style:none;padding:0;margin:0}
+.history-item{font-size:0.9rem}
+
 /* Modal */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}
 .modal-overlay.active{display:flex}
@@ -574,6 +581,27 @@ header p{font-size:.95rem;opacity:.95}
     }
     
   #leaderboard-toggle{display:inline-block}
+
+  /* History: hidden by default, shown with body.show-history */
+    .history-section {
+        order: 4;
+        display: none;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+    }
+
+    body.show-history .history-section {
+        display: flex;
+    }
+
+    .history-section h2 {
+        flex: 0 0 auto;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+  #history-toggle{display:inline-block}
 
   /* Reduce footer footprint */
   .site-footer{font-size:.75rem;padding:8px}

@@ -212,6 +212,7 @@
         <div class="top-controls">
             <button id="clues-toggle" class="clues-toggle" aria-expanded="true" aria-controls="across-clues down-clues">Visa ledtrådar</button>
             <button id="leaderboard-toggle" class="clues-toggle" aria-expanded="false" aria-controls="leaderboard-list">Visa Topplista</button>
+            <button id="history-toggle" class="clues-toggle" aria-expanded="false" aria-controls="history-section">Visa Historik</button>
             <button id="intro-toggle" class="clues-toggle" aria-expanded="false" aria-controls="intro-section">Visa info</button>
         </div>
 
@@ -266,6 +267,13 @@
                     <!-- Leaderboard entries rendered by site.js -->
                 </ul>
                 <div class="leaderboard-date" id="leaderboard-date"></div>
+            </div>
+
+            <div class="leaderboard-section history-section" id="history-section" style="display:none;">
+                <h2>Historisk Topplista</h2>
+                <ul class="leaderboard-list" id="history-list">
+                    <!-- Historical leaderboard entries rendered by site.js -->
+                </ul>
             </div>
         </div>
 

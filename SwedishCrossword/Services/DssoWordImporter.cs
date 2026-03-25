@@ -7,9 +7,8 @@ using SwedishCrossword.Models;
 namespace SwedishCrossword.Services;
 
 /// <summary>
-/// Imports Swedish words from the DSSO (Den Stora Svenska Ordlistan) text files.
-/// The source data is split into chunk files (chunk_aa.txt, chunk_ab.txt, etc.)
-/// originating from dsso-1.51.
+/// Imports Swedish words from the DSSO (Den Stora Svenska Ordlistan) text file
+/// (dsso-1.51.txt).
 ///
 /// File format:
 ///   - Lines starting with '#' are comments.
@@ -37,42 +36,27 @@ public partial class DssoWordImporter
     public static string GetJsonFilePath() => Path.Combine(DataDirectory.GetPath(), "dsso-words.json");
 
     /// <summary>
-    /// Returns all chunk files found in the Data directory, sorted by name.
+    /// Gets the full path to the DSSO source text file.
     /// </summary>
-    public static string[] GetChunkFiles()
-    {
-        var dataDir = DataDirectory.GetPath();
-        if (!Directory.Exists(dataDir))
-            return [];
-
-        return Directory.GetFiles(dataDir, "chunk_*.txt")
-            .OrderBy(f => f, StringComparer.OrdinalIgnoreCase)
-            .ToArray();
-    }
+    public static string GetSourceFilePath() => Path.Combine(DataDirectory.GetPath(), "dsso-1.51.txt");
 
     /// <summary>
-    /// Imports words from all chunk files in the Data directory.
+    /// Imports words from the DSSO source file.
     /// </summary>
-    public List<WordEntry> ImportFromChunks(string[]? chunkPaths = null)
+    public List<WordEntry> ImportFromFile(string? filePath = null)
     {
-        var files = chunkPaths ?? GetChunkFiles();
+        var path = filePath ?? GetSourceFilePath();
 
-        if (files.Length == 0)
+        if (!File.Exists(path))
         {
-            Console.WriteLine("No DSSO chunk files (chunk_*.txt) found in the Data directory.");
+            Console.WriteLine($"DSSO source file not found: {path}");
             return [];
         }
 
-        Console.WriteLine($"Found {files.Length} DSSO chunk file(s).");
+        Console.WriteLine($"Importing from DSSO source file: {Path.GetFileName(path)}");
 
-        var allWords = new List<WordEntry>();
-
-        foreach (var file in files)
-        {
-            var words = ParseChunkFile(file);
-            allWords.AddRange(words);
-            Console.WriteLine($"  {Path.GetFileName(file)}: {words.Count} words");
-        }
+        var allWords = ParseSourceFile(path);
+        Console.WriteLine($"  {Path.GetFileName(path)}: {allWords.Count} words");
 
         // Deduplicate by upper-cased word, keeping the first occurrence that has a real clue
         var deduplicated = new Dictionary<string, WordEntry>(StringComparer.OrdinalIgnoreCase);
@@ -96,9 +80,9 @@ public partial class DssoWordImporter
     }
 
     /// <summary>
-    /// Parses a single DSSO chunk file and returns word entries.
+    /// Parses the DSSO source file and returns word entries.
     /// </summary>
-    private List<WordEntry> ParseChunkFile(string filePath)
+    private List<WordEntry> ParseSourceFile(string filePath)
     {
         var words = new List<WordEntry>();
         var lines = File.ReadAllLines(filePath, Encoding.Latin1);
@@ -272,13 +256,13 @@ public partial class DssoWordImporter
     }
 
     /// <summary>
-    /// Full import pipeline: parse chunk files and export to JSON.
+    /// Full import pipeline: parse source file and export to JSON.
     /// </summary>
     public async Task<List<WordEntry>> ImportAndExportAsync(
-        string[]? chunkPaths = null,
+        string? sourcePath = null,
         string? jsonPath = null)
     {
-        var words = ImportFromChunks(chunkPaths);
+        var words = ImportFromFile(sourcePath);
         await ExportToJsonAsync(words, jsonPath);
         return words;
     }

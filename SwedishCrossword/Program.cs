@@ -807,19 +807,15 @@ internal class Program
         Console.WriteLine("Ord utan definition får ledtråden \"___\" som platshållare.");
         Console.WriteLine();
 
-        var chunkFiles = DssoWordImporter.GetChunkFiles();
-        if (chunkFiles.Length == 0)
+        var sourceFile = DssoWordImporter.GetSourceFilePath();
+        if (!File.Exists(sourceFile))
         {
-            Console.WriteLine("VARNING: Inga DSSO-chunkfiler (chunk_*.txt) hittades!");
-            Console.WriteLine($"Placera filerna i: {DataDirectory.GetPath()}");
+            Console.WriteLine("VARNING: DSSO-källfilen (dsso-1.51.txt) hittades inte!");
+            Console.WriteLine($"Placera filen i: {DataDirectory.GetPath()}");
             return;
         }
 
-        Console.WriteLine($"Hittade {chunkFiles.Length} chunkfil(er):");
-        foreach (var f in chunkFiles)
-        {
-            Console.WriteLine($"  {Path.GetFileName(f)}");
-        }
+        Console.WriteLine($"Hittade källfil: {Path.GetFileName(sourceFile)}");
         Console.WriteLine();
 
         Console.Write("Vill du fortsätta? (j/n): ");

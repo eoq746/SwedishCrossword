@@ -7,7 +7,7 @@ using SwedishCrossword.Services;
 namespace ClueHandler;
 
 /// <summary>
-/// Generates crossword clues for compound words by parsing the DSSO chunk files'
+/// Generates crossword clues for compound words by parsing the DSSO source file's
 /// COMPOUND metadata and combining component-word definitions.
 /// </summary>
 public static partial class CompoundClueGenerator
@@ -90,7 +90,7 @@ public static partial class CompoundClueGenerator
     }
 
     /// <summary>
-    /// Parses all chunk files and returns a mapping from lowercase word → (part1, part2).
+    /// Parses the DSSO source file and returns a mapping from lowercase word → (part1, part2).
     /// </summary>
     private static Dictionary<string, (string Part1, string Part2)> ParseCompoundMetadata()
     {
@@ -98,40 +98,40 @@ public static partial class CompoundClueGenerator
         var entryRegex = EntryLineRegex();
         var compoundRegex = CompoundLineRegex();
 
-        var chunkFiles = DssoWordImporter.GetChunkFiles();
+        var sourceFile = DssoWordImporter.GetSourceFilePath();
+        if (!File.Exists(sourceFile))
+            return result;
+
         string? pendingWord = null;
 
-        foreach (var file in chunkFiles)
+        var lines = File.ReadAllLines(sourceFile, Encoding.Latin1);
+
+        foreach (var rawLine in lines)
         {
-            var lines = File.ReadAllLines(file, Encoding.Latin1);
+            var line = rawLine.TrimEnd();
 
-            foreach (var rawLine in lines)
+            if (string.IsNullOrWhiteSpace(line) || line.StartsWith('#'))
+                continue;
+
+            var entryMatch = entryRegex.Match(line);
+            if (entryMatch.Success)
             {
-                var line = rawLine.TrimEnd();
+                var formsPart = entryMatch.Groups[2].Value;
+                var colonIndex = formsPart.IndexOf(':');
+                pendingWord = (colonIndex >= 0 ? formsPart[..colonIndex] : formsPart).Trim();
+                continue;
+            }
 
-                if (string.IsNullOrWhiteSpace(line) || line.StartsWith('#'))
-                    continue;
+            var compoundMatch = compoundRegex.Match(line);
+            if (compoundMatch.Success && pendingWord is not null)
+            {
+                var part1 = compoundMatch.Groups[1].Value.Trim();
+                var part2 = compoundMatch.Groups[2].Value.Trim();
 
-                var entryMatch = entryRegex.Match(line);
-                if (entryMatch.Success)
+                // Only valid crossword words (letters only)
+                if (pendingWord.All(char.IsLetter) && pendingWord.Length >= 2)
                 {
-                    var formsPart = entryMatch.Groups[2].Value;
-                    var colonIndex = formsPart.IndexOf(':');
-                    pendingWord = (colonIndex >= 0 ? formsPart[..colonIndex] : formsPart).Trim();
-                    continue;
-                }
-
-                var compoundMatch = compoundRegex.Match(line);
-                if (compoundMatch.Success && pendingWord is not null)
-                {
-                    var part1 = compoundMatch.Groups[1].Value.Trim();
-                    var part2 = compoundMatch.Groups[2].Value.Trim();
-
-                    // Only valid crossword words (letters only)
-                    if (pendingWord.All(char.IsLetter) && pendingWord.Length >= 2)
-                    {
-                        result.TryAdd(pendingWord, (part1, part2));
-                    }
+                    result.TryAdd(pendingWord, (part1, part2));
                 }
             }
         }
