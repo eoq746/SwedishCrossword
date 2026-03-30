@@ -19,6 +19,13 @@ public class CrosswordGrid
     private readonly GridCell[,] _cells;
     private readonly List<Word> _words = [];
 
+    /// <summary>
+    /// Cached set of valid accidental word texts. Invalidated when the grid changes.
+    /// Between failed placement attempts the grid is restored to its backup state,
+    /// so the cache stays valid and avoids repeated full-grid scans.
+    /// </summary>
+    private HashSet<string>? _accidentalWordTextsCache;
+
     public int Width { get; }
     public int Height { get; }
     public IReadOnlyList<Word> Words => _words.AsReadOnly();
@@ -58,7 +65,7 @@ public class CrosswordGrid
     /// <summary>
     /// Attempts to place a word on the grid with validation to prevent invalid accidental words
     /// </summary>
-    public bool TryPlaceWordWithValidation(Word word, int startRow, int startCol, Direction direction, Services.SwedishDictionary? dictionary = null, bool rejectInvalidWords = true)
+    public bool TryPlaceWordWithValidation(Word word, int startRow, int startCol, Direction direction, Services.SwedishDictionary? dictionary = null, bool rejectInvalidWords = true, bool rejectDuplicateWords = true)
     {
         if (!CanPlaceWord(word, startRow, startCol, direction))
             return false;
@@ -71,6 +78,16 @@ public class CrosswordGrid
                 return false; // This word text is already in the puzzle
         }
 
+        // DUPLICATE CHECK (including accidental words): Reject if this word text
+        // already appears as a valid accidental word anywhere in the grid.
+        // Uses a cached accidental-word scan so repeated failed attempts are instant.
+        if (rejectDuplicateWords && dictionary != null)
+        {
+            var allExisting = GetAllWordTextsIncludingAccidental(dictionary);
+            if (allExisting.Contains(word.Text))
+                return false;
+        }
+
         // CONNECTIVITY CHECK: If this is not the first word, ensure it connects to existing words
         if (_words.Count > 0 && !WouldConnectToExistingWords(word, startRow, startCol, direction))
         {
@@ -79,7 +96,7 @@ public class CrosswordGrid
 
         // Create a comprehensive backup to test the placement
         var originalState = CreateGridBackup();
-        
+
         try
         {
             // Temporarily place the word to test validation
@@ -87,26 +104,25 @@ public class CrosswordGrid
             word.StartColumn = startCol;
             word.Direction = direction;
             word.IsPlaced = true;
-            
+
             // Place letters on grid temporarily
             for (int i = 0; i < word.Length; i++)
             {
                 int row = direction == Direction.Across ? startRow : startRow + i;
                 int col = direction == Direction.Across ? startCol + i : startCol;
-                
+
                 var cell = GetCell(row, col);
                 cell.SetLetter(word.GetCharAt(i), word.Id);
             }
 
             _words.Add(word);
 
-            // Validate if dictionary checking is enabled
+            // Validate accidental words created by this placement
             bool isValid = true;
             if (dictionary != null && rejectInvalidWords)
             {
-                // Use enhanced detection that checks all potentially affected areas
                 var accidentalWords = DetectAccidentalWordsNear(startRow, startCol, direction, word.Length, dictionary);
-                
+
                 // Check for invalid accidental words
                 foreach (var accWord in accidentalWords)
                 {
@@ -116,19 +132,17 @@ public class CrosswordGrid
                         break;
                     }
                 }
-                
-                // Also check for duplicate accidental words if still valid
+
+                // Check for duplicate accidental words against intentional words
                 if (isValid)
                 {
-                    // Build HashSet of existing word texts (excluding the word we just placed)
                     var existingWordTexts = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
                     foreach (var w in _words)
                     {
                         if (w.Id != word.Id)
                             existingWordTexts.Add(w.Text);
                     }
-                    
-                    // Check if any valid accidental word duplicates an existing word
+
                     foreach (var accWord in accidentalWords)
                     {
                         if (accWord.IsValidSwedishWord == true && existingWordTexts.Contains(accWord.Text))
@@ -140,9 +154,18 @@ public class CrosswordGrid
                 }
             }
 
+            // Comprehensive duplicate check: ensure no word text (intentional or
+            // valid accidental) appears more than once in the entire grid.
+            if (isValid && rejectDuplicateWords && dictionary != null)
+            {
+                if (HasDuplicateWordTexts(dictionary))
+                    isValid = false;
+            }
+
             if (isValid)
             {
-                // Placement is valid - renumber clues and return success
+                // Placement is valid — invalidate cache and commit
+                _accidentalWordTextsCache = null;
                 RenumberCluesIncludingAccidental(null);
                 return true;
             }
@@ -432,7 +455,10 @@ public class CrosswordGrid
         }
 
         _words.Add(word);
-        
+
+        // Invalidate accidental word cache — grid content changed
+        _accidentalWordTextsCache = null;
+
         // Renumber all clues after placing a new word
         RenumberCluesIncludingAccidental(null);
         
@@ -462,6 +488,9 @@ public class CrosswordGrid
         word.IsPlaced = false;
         word.Number = 0;
         _words.Remove(word);
+
+        // Invalidate accidental word cache — grid content changed
+        _accidentalWordTextsCache = null;
 
         // Renumber all remaining words
         RenumberCluesIncludingAccidental(null);
@@ -569,6 +598,54 @@ public class CrosswordGrid
     public HashSet<string> GetPlacedWordTexts()
     {
         return _words.Select(w => w.Text).ToHashSet(StringComparer.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
+    /// Gets all word texts in the grid (intentionally placed + valid accidental) for
+    /// comprehensive duplicate checking. Uses a cache for the accidental word scan
+    /// that is invalidated only when the grid actually changes.
+    /// </summary>
+    private HashSet<string> GetAllWordTextsIncludingAccidental(Services.SwedishDictionary dictionary)
+    {
+        if (_accidentalWordTextsCache == null)
+        {
+            _accidentalWordTextsCache = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            var accidentals = DetectAccidentalWords(dictionary);
+            foreach (var acc in accidentals)
+            {
+                if (acc.IsValidSwedishWord == true)
+                    _accidentalWordTextsCache.Add(acc.Text);
+            }
+        }
+
+        var texts = new HashSet<string>(_accidentalWordTextsCache, StringComparer.OrdinalIgnoreCase);
+        foreach (var w in _words)
+            texts.Add(w.Text);
+
+        return texts;
+    }
+
+    /// <summary>
+    /// Checks whether any word text appears more than once across all intentional
+    /// and valid accidental words currently in the grid.
+    /// </summary>
+    private bool HasDuplicateWordTexts(Services.SwedishDictionary dictionary)
+    {
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var w in _words)
+        {
+            if (!seen.Add(w.Text))
+                return true;
+        }
+
+        var accidentals = DetectAccidentalWords(dictionary);
+        foreach (var acc in accidentals)
+        {
+            if (acc.IsValidSwedishWord == true && !seen.Add(acc.Text))
+                return true;
+        }
+
+        return false;
     }
 
     /// <summary>
@@ -1577,7 +1654,7 @@ public class CrosswordGrid
     /// Similar to TryPlaceWordWithValidation but for multi-segment bent words.
     /// </summary>
     public bool TryPlaceBentWordWithValidation(Word word, List<WordSegment> segments,
-        Services.SwedishDictionary? dictionary = null, bool rejectInvalidWords = true)
+        Services.SwedishDictionary? dictionary = null, bool rejectInvalidWords = true, bool rejectDuplicateWords = true)
     {
         if (!CanPlaceBentWord(word, segments))
             return false;
@@ -1587,6 +1664,14 @@ public class CrosswordGrid
         foreach (var existingWord in _words)
         {
             if (existingWord.Text.Equals(wordTextUpper, StringComparison.OrdinalIgnoreCase))
+                return false;
+        }
+
+        // DUPLICATE CHECK (including accidental words, cached)
+        if (rejectDuplicateWords && dictionary != null)
+        {
+            var allExisting = GetAllWordTextsIncludingAccidental(dictionary);
+            if (allExisting.Contains(word.Text))
                 return false;
         }
 
@@ -1693,8 +1778,17 @@ public class CrosswordGrid
                 }
             }
 
+            // Comprehensive duplicate check: ensure no word text (intentional or
+            // valid accidental) appears more than once in the entire grid.
+            if (isValid && rejectDuplicateWords && dictionary != null)
+            {
+                if (HasDuplicateWordTexts(dictionary))
+                    isValid = false;
+            }
+
             if (isValid)
             {
+                _accidentalWordTextsCache = null;
                 RenumberCluesIncludingAccidental(null);
                 return true;
             }

@@ -884,11 +884,17 @@ async function init() {
     buildCellClueMap();
     loadProgress();
     await renderLeaderboard();
+
+    // Auto-load history data on desktop (no manual toggle needed)
+    if (!window.matchMedia('(max-width:1100px)').matches) {
+        renderLeaderboardHistory();
+    }
+
     syncCluesHeight();
     startTimer();
     updateStats();
     updateClueFilledStatus();
-    
+
     window.addEventListener('resize', syncCluesHeight);
 }
 
@@ -896,22 +902,31 @@ function syncCluesHeight() {
     const gridSection = document.querySelector('.grid-section');
     const cluesSection = document.querySelector('.clues-section');
     const leaderboardSection = document.querySelector('.leaderboard-section');
+    const historySection = document.getElementById('history-section');
 
     // Only adjust when using wide layout (desktop)
     const isWide = window.matchMedia('(min-width:1100px)').matches;
     if (!gridSection) return;
 
     if (isWide) {
-        // On desktop, sync clues and leaderboard height to match grid section
+        // On desktop, sync clues height to match grid section and split
+        // leaderboard + history into two equal halves of that same height.
         const gridHeight = gridSection.offsetHeight;
         if (gridHeight > 0) {
             if (cluesSection) {
                 cluesSection.style.height = gridHeight + 'px';
                 cluesSection.style.maxHeight = gridHeight + 'px';
             }
+            // Account for the CSS gap between the two halves
+            const gap = parseFloat(getComputedStyle(gridSection.parentElement).gap) || 24;
+            const halfHeight = Math.floor((gridHeight - gap) / 2);
             if (leaderboardSection) {
-                leaderboardSection.style.height = gridHeight + 'px';
-                leaderboardSection.style.maxHeight = gridHeight + 'px';
+                leaderboardSection.style.height = halfHeight + 'px';
+                leaderboardSection.style.maxHeight = halfHeight + 'px';
+            }
+            if (historySection) {
+                historySection.style.height = halfHeight + 'px';
+                historySection.style.maxHeight = halfHeight + 'px';
             }
         }
     } else {
@@ -923,6 +938,10 @@ function syncCluesHeight() {
         if (leaderboardSection) { 
             leaderboardSection.style.maxHeight = ''; 
             leaderboardSection.style.height = ''; 
+        }
+        if (historySection) { 
+            historySection.style.maxHeight = ''; 
+            historySection.style.height = ''; 
         }
     }
 }
@@ -1910,14 +1929,6 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
       renderLeaderboardHistory();
     }
     historyToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-history')));
-
-    // On desktop, toggle the history section visibility directly
-    const historySection = document.getElementById('history-section');
-    if (historySection && !window.matchMedia('(max-width:1100px)').matches) {
-      const isVisible = historySection.style.display !== 'none';
-      historySection.style.display = isVisible ? 'none' : '';
-      if (!isVisible) renderLeaderboardHistory();
-    }
   });
 
   if (introToggle) introToggle.addEventListener('click', () => {

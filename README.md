@@ -16,8 +16,9 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
   - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + JSONBin.io)
+  - Historical leaderboard showing top scores from the past 30 days
   - Mobile-responsive design (portrait and landscape modes)
-- **Anti-cheat System**: Validates puzzle completion times, input patterns, and DevTools detection
+- **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via Cloudflare KV
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 - **Word Manager Tool**: Lightweight CLI for quickly adding words, converting plain-text word lists to JSON, and merging word files
@@ -33,12 +34,12 @@ SwedishCrosswords/
 |   |   |-- synonym-words.json     # Synonym pairs (imported)
 |   |   |-- kelly-words.json       # Kelly word list (imported)
 |   |   |-- kelly-clues.json       # Curated clue overrides for Kelly words
-|   |   |-- dsso-words.json        # DSSO dictionary (imported from chunk files)
+|   |   |-- dsso-words.json        # DSSO dictionary (imported from source file)
 |   |   |-- custom-words.json      # Custom/hand-curated words loaded at runtime
 |   |   |-- lexin-swe-swe.xml      # Source Lexin XML
 |   |   |-- synpairs.xml           # Source synonym pairs XML
 |   |   |-- kelly.xml              # Kelly frequency word list (source XML)
-|   |   +-- chunk_*.txt            # DSSO source chunk files (dsso-1.51)
+|   |   +-- dsso-1.51.txt          # DSSO source file (dsso-1.51)
 |   |-- Models/                    # Domain models
 |   |   |-- Word.cs                # Word with clue, metadata, and segments
 |   |   |-- WordSegment.cs         # Segment of a bent word path
@@ -54,7 +55,7 @@ SwedishCrosswords/
 |   |   |-- LexinWordImporter.cs   # Lexin XML parser
 |   |   |-- SynonymPairImporter.cs # Synonym XML parser
 |   |   |-- KellyWordImporter.cs   # Kelly word list importer
-|   |   |-- DssoWordImporter.cs    # DSSO chunk file parser
+|   |   |-- DssoWordImporter.cs    # DSSO source file parser
 |   |   |-- DataDirectory.cs       # Data file path resolution
 |   |   +-- Generation/            # Generation sub-components
 |   |       |-- WordPlacer.cs      # Anchor selection and adaptive placement
@@ -74,6 +75,11 @@ SwedishCrosswords/
 |   |   |-- robots.txt             # Crawler directives
 |   |   |-- ads.txt                # Google AdSense verification
 |   |   |-- site.webmanifest       # PWA manifest
+|   |   |-- favicon.ico            # Favicon
+|   |   |-- favicon-16x16.png      # 16×16 favicon
+|   |   |-- favicon-32x32.png      # 32×32 favicon
+|   |   |-- apple-touch-icon.png   # Apple touch icon
+|   |   |-- android-chrome-*.png   # Android PWA icons (192×192, 512×512)
 |   |   +-- CNAME                  # Custom domain config
 |   +-- Program.cs                 # CLI entry point
 |-- ClueHandler/                   # Dictionary management tool
@@ -91,16 +97,21 @@ SwedishCrosswords/
 |   |-- GridValidatorTests.cs      # Puzzle validation tests
 |   |-- AccidentalWordTests.cs     # Bonus word detection tests
 |   |-- VinkelordTests.cs          # Bent word placement tests
+|   |-- VinkelordIntertwiningTests.cs # Intertwined vinkelord edge-case tests
 |   +-- PrintServiceTests.cs       # Output formatting tests
+|-- infrastructure/                # Infrastructure-as-code
+|   +-- cloudflare-worker/         # Cloudflare Worker for leaderboard proxy
+|       |-- worker.js              # Worker source (leaderboard CRUD, history, solution-view tracking)
+|       +-- README.md              # Endpoints, env vars, KV setup, and deployment guide
 +-- .github/workflows/             # GitHub Actions
-    +-- daily-crossword.yml        # Daily puzzle generation & deployment
+    +-- daily-crossword.yml        # Daily puzzle generation, tests & deployment
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-- [.NET 10 SDK](https://dotnet.microsoft.com/download) (Preview)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
 
 ### Running the Generator
 
@@ -123,7 +134,7 @@ dotnet run --project SwedishCrossword
 6. **Import Synonym Pairs** - Parse Folkets synonymlexikon
 7. **Import Kelly Words** - Parse the Kelly frequency word list
 8. **Generate for Web** - Creates puzzle.json and starts local server
-9. **Import from DSSO** - Parse Den Stora Svenska Ordlistan chunk files
+9. **Import from DSSO** - Parse Den Stora Svenska Ordlistan source file
 
 ### Headless Generation (CI/CD)
 
@@ -179,6 +190,7 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - Dictionary loading and validation tests
 - Puzzle validation and bonus word tests
 - Vinkelord (bent word) placement tests
+- Vinkelord intertwining edge-case tests (overlapping bends, accidental words)
 - Print service output tests
 
 ## Algorithm Highlights
@@ -226,7 +238,7 @@ Additional synonym pairs from [Folkets synonymlexikon](http://lexikon.nada.kth.s
 Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
 
 ### DSSO (Den Stora Svenska Ordlistan)
-A comprehensive Swedish word list from [DSSO](https://dsso.se/) (version 1.51). The source data is split into chunk text files that are parsed and exported to `dsso-words.json`. Clues are sourced from DSSO definitions, supplemented by Wiktionary lookups and compound/pattern-based generators. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+A comprehensive Swedish word list from [DSSO](https://dsso.se/) (version 1.51). The source data file is parsed and exported to `dsso-words.json`. Clues are sourced from DSSO definitions, supplemented by Wiktionary lookups and compound/pattern-based generators. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ### Custom Words
 A hand-curated `custom-words.json` file for words not covered by the main sources. Loaded last so custom entries take precedence over imported ones.
@@ -240,8 +252,10 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 ## Web Architecture
 
 - **Hosting**: GitHub Pages (static files)
-- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
-- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????)
+- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
+- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????); historical scores stored in Cloudflare KV (90-day TTL)
+- **Solution-View Tracking**: Cloudflare KV records per-IP solution views (7-day TTL) so the anti-cheat system can flag players who viewed the answer before submitting
+- **Infrastructure**: Worker source and docs live under `infrastructure/cloudflare-worker/`
 - **Analytics**: Google AdSense (optional)
 
 ## License

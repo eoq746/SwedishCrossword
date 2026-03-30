@@ -396,7 +396,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                 for (int i = 0; i < tryCount; i++)
                 {
                     var word = scored[i].Word;
-                    if (grid.TryPlaceBentWordWithValidation(word, opportunity.Segments, _dictionary, options.RejectInvalidWords))
+                    if (grid.TryPlaceBentWordWithValidation(word, opportunity.Segments, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     {
                         placedWords.Add(word);
                         placedWordTexts.Add(word.Text);

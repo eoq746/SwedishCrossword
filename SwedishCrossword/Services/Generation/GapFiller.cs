@@ -257,7 +257,7 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
                     var row = opportunity.StartRow;
                     var col = opportunity.Col;
 
-                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
+                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     {
                         placedWords.Add(word);
                         placedWordTexts.Add(word.Text);

@@ -68,7 +68,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         var centerRow = options.Height / 2 + _random.Next(-1, 2);
         var centerCol = Math.Max(0, (options.Width - bestAnchor.Length) / 2 + _random.Next(-1, 2));
 
-        if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords))
+        if (grid.TryPlaceWordWithValidation(bestAnchor, centerRow, centerCol, Direction.Across, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
         {
             placed++;
             usedWordTexts = grid.GetPlacedWordTexts();
@@ -146,7 +146,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                         for (int i = 0; i < tryCount; i++)
                         {
                             var (row, col, direction, _, _, _) = intersections[i].Intersection;
-                            if (grid.TryPlaceWordWithValidation(nextWord, row, col, direction, _dictionary, options.RejectInvalidWords))
+                            if (grid.TryPlaceWordWithValidation(nextWord, row, col, direction, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                             {
                                 placed++;
                                 usedWordTexts = grid.GetPlacedWordTexts();
@@ -215,7 +215,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
             var tryCount = Math.Min(5, scored.Count);
             for (int i = 0; i < tryCount; i++)
             {
-                if (grid.TryPlaceBentWordWithValidation(scored[i].Word, opportunity.Segments, _dictionary, options.RejectInvalidWords))
+                if (grid.TryPlaceBentWordWithValidation(scored[i].Word, opportunity.Segments, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     return true;
             }
         }
@@ -277,7 +277,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
 
             for (int pi = 0; pi < tryPositions; pi++)
             {
-                if (grid.TryPlaceBentWordWithValidation(word, positions[pi], _dictionary, options.RejectInvalidWords))
+                if (grid.TryPlaceBentWordWithValidation(word, positions[pi], _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     return true;
             }
         }
@@ -477,7 +477,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 for (int i = 0; i < tryCount; i++)
                 {
                     var (row, col, direction, _, _, _) = intersections[i].Intersection;
-                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
+                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     {
                         placedWords.Add(word);
                         state.PlacedWordTexts.Add(word.Text);
@@ -497,7 +497,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
                 var freePositions = FindOptimalFreePositions(grid, word).Take(5).ToList();
                 foreach (var (row, col, direction) in freePositions)
                 {
-                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords))
+                    if (grid.TryPlaceWordWithValidation(word, row, col, direction, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                     {
                         placedWords.Add(word);
                         state.PlacedWordTexts.Add(word.Text);
@@ -539,13 +539,6 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         }
 
         state.IsExhausted = true;
-
-        // Only log when words were actually placed in THIS batch (not cumulative)
-        if (wordsPlacedThisBatch > 0)
-        {
-            var finalStats = grid.GetStats();
-            Console.WriteLine($"Adaptiv placering: +{wordsPlacedThisBatch} ord, {finalStats.FillPercentage:F1}% fyllnad");
-        }
 
         return wordsPlacedThisBatch;
     }
@@ -602,7 +595,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
             for (int i = 0; i < tryCount; i++)
             {
                 var word = scored[i].Word;
-                if (grid.TryPlaceBentWordWithValidation(word, opportunity.Segments, _dictionary, options.RejectInvalidWords))
+                if (grid.TryPlaceBentWordWithValidation(word, opportunity.Segments, _dictionary, options.RejectInvalidWords, options.RejectDuplicateWords))
                 {
                     placedWords.Add(word);
                     state.PlacedWordTexts.Add(word.Text);

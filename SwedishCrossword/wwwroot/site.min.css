@@ -732,24 +732,25 @@ header p{font-size:.95rem;opacity:.95}
   .content-section ul { font-size: 0.95rem; }
   .content-section li { margin-bottom: 5px; }
 
-  /* Use a three-column layout: grid | clues | leaderboard 
-     Use subgrid-like behavior with grid-template-rows to sync heights */
+  /* Use a three-column layout: grid | clues | leaderboard+history 
+     Two rows so leaderboard and history each get half of column 3 */
   .main-layout { 
     display: grid; 
     grid-template-columns: minmax(400px, 1fr) 320px 260px; 
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr;
     gap: 24px; 
     align-items: start; 
     height: auto; 
   }
 
-  /* Grid section: sized by its content */
+  /* Grid section: sized by its content, spans both rows */
   .grid-section { 
     padding: 20px; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
     order: 1;
+    grid-row: 1 / -1;
     min-height: 0;
     height: fit-content;
   }
@@ -835,6 +836,7 @@ header p{font-size:.95rem;opacity:.95}
     padding: 16px; 
     overflow: hidden;
     order: 2;
+    grid-row: 1 / -1;
     /* Use align-self: stretch within a row that's sized by the grid */
     align-self: self-start;
     /* Match the grid section height - will be set by JS */
@@ -849,20 +851,36 @@ header p{font-size:.95rem;opacity:.95}
   .clue-list { max-height: none; overflow: auto; flex: 1 1 auto; }
   .clue-item { font-size: 0.9rem; padding: 10px 8px; }
 
-  /* Leaderboard section: match grid section height, internal scrolling */
+  /* Leaderboard section: top half of column 3 */
   .leaderboard-section { 
     display: flex; 
     flex-direction: column; 
     padding: 16px; 
     overflow: hidden;
     order: 3;
-    align-self: self-start;
-    height: auto;
-    max-height: none;
+    grid-column: 3;
+    grid-row: 1;
+    align-self: stretch;
+    min-height: 0;
   }
   .leaderboard-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
   .leaderboard-list { overflow: auto; flex: 1 1 auto; }
   .leaderboard-item { padding: 10px 8px; }
+
+  /* Historical leaderboard: bottom half of column 3 */
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    overflow: hidden;
+    order: 4;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: stretch;
+    min-height: 0;
+  }
+  .history-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
+  .history-section .leaderboard-list { overflow: auto; flex: 1 1 auto; max-height: none; }
 }
 
 /* Large desktop: 1400px+ - more generous spacing */
@@ -893,6 +911,8 @@ header p{font-size:.95rem;opacity:.95}
 
   .leaderboard-section { padding: 20px; }
   .leaderboard-item { padding: 12px 10px; }
+
+  .history-section { padding: 20px; }
 }
 
 /* Extra large screens: 1920px+ - maximize the grid experience */
@@ -963,6 +983,9 @@ header p{font-size:.95rem;opacity:.95}
   .leaderboard-item { padding: 14px 12px; font-size: 0.95rem; }
   .leaderboard-rank { width: 32px; font-size: 1rem; }
   .leaderboard-time { font-size: 1rem; }
+
+  .history-section { padding: 24px; }
+  .history-section h2 { font-size: 1.2rem; }
 
   .site-footer { padding: 20px; font-size: 0.9rem; }
 }

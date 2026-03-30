@@ -34,9 +34,7 @@ public class CrosswordGenerator
     {
         ArgumentNullException.ThrowIfNull(options);
 
-        var attempts = 0;
         var maxAttempts = options.MaxAttempts;
-        var validationRejections = 0;
 
         // Pre-compute candidate words and their analysis ONCE outside the retry loop
         var candidateWords = GetCandidateWords(options);
@@ -57,59 +55,76 @@ public class CrosswordGenerator
         foreach (var wa in sortedAnalysis)
             connectivityScores[wa.Word.Text] = wa.ConnectivityScore;
 
-        while (attempts < maxAttempts && !cancellationToken.IsCancellationRequested)
+        var originalRejectDuplicateWords = options.RejectDuplicateWords;
+
+        // Two-pass approach: first try with duplicate rejection, then relax it if needed
+        var passCount = originalRejectDuplicateWords ? 2 : 1;
+        for (int pass = 0; pass < passCount; pass++)
         {
-            attempts++;
-
-            try
+            if (pass == 1)
             {
-                var grid = new CrosswordGrid(options.Width, options.Height);
-                var result = await TryGenerateSmartPuzzleAsync(grid, candidateWords, sortedAnalysis, connectivityScores, options, cancellationToken);
+                Console.WriteLine("Dubblettrestriktion förhindrar tillräcklig fyllnad, relaxar den...");
+                options.RejectDuplicateWords = false;
+            }
 
-                if (result != null)
+            var attempts = 0;
+            var validationRejections = 0;
+
+            while (attempts < maxAttempts && !cancellationToken.IsCancellationRequested)
+            {
+                attempts++;
+
+                try
                 {
-                    Console.WriteLine($"Korsord genererat efter {attempts} försök ({result.GetStats().FillPercentage:F1}% fyllnad)");
-                    if (validationRejections > 0)
+                    var grid = new CrosswordGrid(options.Width, options.Height);
+                    var result = await TryGenerateSmartPuzzleAsync(grid, candidateWords, sortedAnalysis, connectivityScores, options, cancellationToken);
+
+                    if (result != null)
                     {
-                        Console.WriteLine($"    {validationRejections} korsord avvisades vid validering under generering");
+                        Console.WriteLine($"Korsord genererat efter {attempts} försök ({result.GetStats().FillPercentage:F1}% fyllnad)");
+                        if (pass > 0)
+                        {
+                            Console.WriteLine("    (dubblettrestriktion relaxad)");
+                        }
+                        if (validationRejections > 0)
+                        {
+                            Console.WriteLine($"    {validationRejections} korsord avvisades vid validering under generering");
+                        }
+                        options.RejectDuplicateWords = originalRejectDuplicateWords;
+                        return new CrosswordPuzzle(result, attempts, _dictionary);
                     }
-                    return new CrosswordPuzzle(result, attempts, _dictionary);
+                    else if (grid.Words.Count > 0)
+                    {
+                        validationRejections++;
+                    }
                 }
-                else if (grid.Words.Count > 0)
+                catch (Exception ex)
                 {
-                    validationRejections++;
+                    Console.WriteLine($" Försök {attempts} misslyckades: {ex.GetType().Name}: {ex.Message}");
+                    if (ex.InnerException != null)
+                    {
+                        Console.WriteLine($"    Inre fel: {ex.InnerException.Message}");
+                    }
+                    if (ex is not InvalidOperationException)
+                    {
+                        Console.WriteLine($"    Stack: {ex.StackTrace?.Split('\n').FirstOrDefault()?.Trim()}");
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($" Försök {attempts} misslyckades: {ex.GetType().Name}: {ex.Message}");
-                if (ex.InnerException != null)
-                {
-                    Console.WriteLine($"    Inre fel: {ex.InnerException.Message}");
-                }
-                if (ex is not InvalidOperationException)
-                {
-                    Console.WriteLine($"    Stack: {ex.StackTrace?.Split('\n').FirstOrDefault()?.Trim()}");
-                }
-            }
 
-            if (attempts % 50 == 0 || (attempts > 20 && attempts % 25 == 0 && validationRejections > attempts * 0.8))
-            {
-                Console.WriteLine($" Försök {attempts}/{maxAttempts}... ({validationRejections} avvisade vid validering, {(double)validationRejections/attempts*100:F0}% avvisningsfrekvens)");
-            }
+                if (attempts % 50 == 0 || (attempts > 20 && attempts % 25 == 0 && validationRejections > attempts * 0.8))
+                {
+                    Console.WriteLine($" Försök {attempts}/{maxAttempts}... ({validationRejections} avvisade vid validering, {(double)validationRejections/attempts*100:F0}% avvisningsfrekvens)");
+                }
 
-            await Task.Yield();
+                await Task.Yield();
+            }
         }
 
-        var rejectionRate = (double)validationRejections / attempts * 100;
-        var message = validationRejections > 0
-            ? $" Kunde inte generera giltigt korsord efter {maxAttempts} försök.\n" +
-              $"    {validationRejections} av {attempts} försök avvisades vid validering ({rejectionRate:F1}% avvisningsfrekvens)\n" +
-              $"    Hög avvisningsfrekvens kan indikera för strikta valideringsregler eller för liten ordlista"
-            : $" Kunde inte generera korsord efter {maxAttempts} försök\n" +
-              $"    Inga ord kunde placeras - kontrollera ordlista och generationsalternativ";
+        options.RejectDuplicateWords = originalRejectDuplicateWords;
 
-        throw new InvalidOperationException(message);
+        throw new InvalidOperationException(
+            $" Kunde inte generera giltigt korsord efter {maxAttempts} försök (per pass).\n" +
+            $"    Kontrollera ordlista och generationsalternativ");
     }
 
     private async Task<CrosswordGrid?> TryGenerateSmartPuzzleAsync(CrosswordGrid grid, List<Word> candidateWords,
@@ -142,11 +157,9 @@ public class CrosswordGenerator
         // new intersection opportunities that adaptive placement can exploit in the
         // next cycle, and adaptive placement opens new gap/bridge/vinkelord
         // opportunities in return.
-        for (int cycle = 1; cycle <= 25; cycle++)
-        {
-            var cycleStartStats = grid.GetStats();
-            Console.WriteLine($"Cykel {cycle}: start - {cycleStartStats.FilledCells} fyllda celler, {grid.Words.Count} ord placerade");
-            var cycleStart = cycleStartStats.FilledCells;
+        for (int cycle = 1; cycle <= 1; cycle++) // one cycle for now, can increase if needed
+        {          
+            var cycleStart = grid.GetStats().FilledCells;
 
             // Sub-phase A: Adaptive word placement with integrated vinkelord (bounded batch)
             // Fully reset adaptive state each cycle — other strategies (gaps, bridges)
@@ -293,6 +306,9 @@ public class CrosswordGenerationOptions
     public int MaxAttempts { get; set; } = 100;
     public bool RejectInvalidWords { get; set; } = true;
 
+    /// <summary>Whether to reject placing a word whose text already appears in the puzzle (including accidental words)</summary>
+    public bool RejectDuplicateWords { get; set; } = true;
+
     /// <summary>Whether to allow vinkelord (bent/angled words) during generation</summary>
     public bool AllowVinkelord { get; set; } = true;
 
@@ -317,7 +333,8 @@ public class CrosswordGenerationOptions
         TargetFillPercentage = 45.0,
         Difficulty = null,
         MaxAttempts = 50,
-        RejectInvalidWords = true
+        RejectInvalidWords = true,
+        RejectDuplicateWords = true
     };
 
     public static CrosswordGenerationOptions Medium => new()
@@ -329,7 +346,8 @@ public class CrosswordGenerationOptions
         TargetFillPercentage = 65.0,
         Difficulty = null,
         MaxAttempts = 80,
-        RejectInvalidWords = true
+        RejectInvalidWords = true,
+        RejectDuplicateWords = true
     };
 
     public static CrosswordGenerationOptions Hard => new()
@@ -342,6 +360,7 @@ public class CrosswordGenerationOptions
         Difficulty = null,
         MaxAttempts = 120,
         RejectInvalidWords = true,
+        RejectDuplicateWords = true,
         AllowVinkelord = true
     };
 
@@ -354,7 +373,8 @@ public class CrosswordGenerationOptions
         TargetFillPercentage = 45.0,
         Difficulty = null,
         MaxAttempts = 30,
-        RejectInvalidWords = true
+        RejectInvalidWords = true,
+        RejectDuplicateWords = true
     };
 }
 
