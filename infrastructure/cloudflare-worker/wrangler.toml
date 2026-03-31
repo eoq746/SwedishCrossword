@@ -1,0 +1,7 @@
+name = "crossword-leaderboard-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "CROSSWORD_KV"
+id = "0c2b29431e5046e5ae8ec65af56b5d45"
