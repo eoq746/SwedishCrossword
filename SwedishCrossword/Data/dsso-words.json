@@ -49033,7 +49033,7 @@
   },
   {
     "Word": "BORTEFTER",
-    "Clue": "I riktning från en själv eller annan ref… + kortform för efterbliven",
+    "Clue": "Utmed",
     "Category": "Preposition",
     "Difficulty": "Medium"
   },
@@ -82057,7 +82057,7 @@
   },
   {
     "Word": "EFTER",
-    "Clue": "Kortform för efterbliven",
+    "Clue": "Ses mellan don och person",
     "Category": "Adverb",
     "Difficulty": "Medium"
   },
@@ -82081,37 +82081,25 @@
   },
   {
     "Word": "EFTERARBETE",
-    "Clue": "Kortform för efterbliven + en fysikalisk storhet som ofta mäts i si…",
+    "Clue": "Analys",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERBESIKTNING",
-    "Clue": "Kortform för efterbliven + undersökning av kvalitet",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERBESIKTNINGSAVGIFT",
-    "Clue": "Kortform för efterbliven + undersökning… + vid köp, det som begärs",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERBESKA",
-    "Clue": "Kortform för efterbliven + besk smak",
+    "Clue": "Granskning när allt ska vara klart",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERBILDA",
-    "Clue": "Kortform för efterbliven + skapa; utgöra; vara delarna i",
+    "Clue": "Härma",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERBRÄNNKAMMARE",
-    "Clue": "Kortform för efterbliven + erbrännkammare",
+    "Clue": "Del av jetmotor",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82123,19 +82111,13 @@
   },
   {
     "Word": "EFTERDATERA",
-    "Clue": "Kortform för efterbliven + förse med aktuellt datum",
+    "Clue": "Förse med senare datum än det rätta",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERDEBITERA",
-    "Clue": "Kortform för efterbliven + skriva på skuldräkning",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERDESTILLERA",
-    "Clue": "Kortform för efterbliven + separera en vätskas beståndsdelar genom…",
+    "Clue": "Kräva (någon) på betalning efter det att räkning lämnats",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
@@ -82144,12 +82126,6 @@
     "Clue": "(mindre) fest som man har efter en annan (större) fest",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "EFTERFORMAD",
-    "Clue": "Kortform för efterbliven + erformad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "EFTERFORSKA",
@@ -82171,7 +82147,7 @@
   },
   {
     "Word": "EFTERFRÅGAD",
-    "Clue": "Kortform för efterbliven + erfrågad",
+    "Clue": "Populär",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -82200,18 +82176,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERFYLLD",
-    "Clue": "Kortform för efterbliven + som fyllts av konkret eller abstrakt inn…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERFÄRGAD",
-    "Clue": "Kortform för efterbliven + som är försedd med färger; kolorerad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERFÖLJA",
     "Clue": "Följa, lyda",
     "Category": "Verb",
@@ -82237,7 +82201,7 @@
   },
   {
     "Word": "EFTERFÖLJELSE",
-    "Clue": "Kortform för efterbliven + erföljelse",
+    "Clue": "Skrev Dietrich Bonhoeffer",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82273,14 +82237,8 @@
   },
   {
     "Word": "EFTERGJORD",
-    "Clue": "Kortform för efterbliven + ; som har utförts",
+    "Clue": "Simili",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERGRAVERA",
-    "Clue": "Kortform för efterbliven + med spetsigt verktyg rista in figurer el…",
-    "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
@@ -82288,12 +82246,6 @@
     "Clue": "Som kräver, eller normalt sett utförs efter, en slutförd utbildning på gymnasium",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERGÖRA",
-    "Clue": "Kortform för efterbliven + ägna sig åt en aktivitet",
-    "Category": "Verb",
-    "Difficulty": "Medium"
   },
   {
     "Word": "EFTERHAND",
@@ -82321,21 +82273,9 @@
   },
   {
     "Word": "EFTERHÄRMA",
-    "Clue": "Kortform för efterbliven + göra precis likadant",
+    "Clue": "Imitera",
     "Category": "Verb",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERHÄRMNING",
-    "Clue": "Kortform för efterbliven + härmning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERHÖRA",
-    "Clue": "Kortform för efterbliven + uppfatta (ljud) med hörseln",
-    "Category": "Verb",
-    "Difficulty": "Medium"
   },
   {
     "Word": "EFTERINDUSTRIELL",
@@ -82344,40 +82284,10 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERISOLERAD",
-    "Clue": "Kortform för efterbliven + ; som isolerats",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERJÄSA",
     "Clue": "Jäsa bakverk en kort tid innan det gräddas",
     "Category": "Verb",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "EFTERKALKYLERAD",
-    "Clue": "Kortform för efterbliven + erkalkylerad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERKLANG",
-    "Clue": "Kortform för efterbliven + ljud med estetisk eller tilltalande kara…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERKLANGSTID",
-    "Clue": "Kortform för efterbliven + ljud med este… + grundläggande fysikalisk storhet mätbar…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERKLASSISK",
-    "Clue": "Kortform för efterbliven + som tillhör den grekiska eller romerska…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "EFTERKLOK",
@@ -82398,20 +82308,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERKRAV",
-    "Clue": "Kortform för efterbliven + bestämmelse om hur något ska vara eller…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "EFTERKRIGSTID",
     "Clue": "Tidsperiod efter krig, särskilt om tiden efter 1945",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERKÄLKE",
-    "Clue": "Kortform för efterbliven + färdmedel med två medar för att färdas p…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82442,12 +82340,6 @@
   {
     "Word": "EFTERLEVANDESKYDD",
     "Clue": "Person som är närmast anhörig till en av… + försvarande; skyddande",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERLEVERSKA",
-    "Clue": "Kortform för efterbliven + erleverska",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82530,12 +82422,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERMODERN",
-    "Clue": "Kortform för efterbliven + med aktuell nutida stil",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERMÄLE",
     "Clue": "Vad som sägs (förmäles) om en person efter döden",
     "Category": "Substantiv",
@@ -82552,18 +82438,6 @@
     "Clue": "Avslutande kapitel i en bok",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "EFTERPOLERA",
-    "Clue": "Kortform för efterbliven + göra viss yta på föremål glänsande",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERRATIONALISERA",
-    "Clue": "Kortform för efterbliven + (egentligen göra förnuftig) göra verksam…",
-    "Category": "Verb",
-    "Difficulty": "Hard"
   },
   {
     "Word": "EFTERRÄKNING",
@@ -82584,12 +82458,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "EFTERSIKTSVÄXEL",
-    "Clue": "Kortform för efterbliven + ersiktsväxel",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERSINNANDE",
     "Clue": "; som eftersinnar",
     "Category": "Adjektiv",
@@ -82603,25 +82471,25 @@
   },
   {
     "Word": "EFTERSKICKA",
-    "Clue": "Kortform för efterbliven + ordna så att något",
+    "Clue": "Vidarebefordra",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSKICKAD",
-    "Clue": "Kortform för efterbliven + lämpad, lämplig",
+    "Clue": "Vidarebefordrad",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSKOTT",
-    "Clue": "Kortform för efterbliven + det som avskjuts med hjälp av någon form…",
+    "Clue": "Retroaktivt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSKRIFT",
-    "Clue": "Kortform för efterbliven + (längre) skriven text",
+    "Clue": "Tillägg",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82645,19 +82513,19 @@
   },
   {
     "Word": "EFTERSLAG",
-    "Clue": "Kortform för efterbliven + hård träff mot någon eller något",
+    "Clue": "Ackord på de obetonade taktdelarna i ackompanjemang av marsch- eller danskaraktär",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
   {
     "Word": "EFTERSLÄNTRARE",
-    "Clue": "Kortform för efterbliven + ersläntrare",
+    "Clue": "Sölkorv",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSLÄPANDE",
-    "Clue": "Kortform för efterbliven + ersläpande",
+    "Clue": "Med fördröjning",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -82680,34 +82548,16 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERSNODD",
-    "Clue": "Kortform för efterbliven + stulen",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERSOM",
     "Clue": "(anger anledning)",
     "Category": "Konjunktion",
     "Difficulty": "Medium"
   },
   {
-    "Word": "EFTERSPANA",
-    "Clue": "Kortform för efterbliven + söka med blicken",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERSPEL",
     "Clue": "Påföljd, följdverkning",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "EFTERSTEKA",
-    "Clue": "Kortform för efterbliven + tillaga mat i hög värme med matfett med…",
-    "Category": "Verb",
-    "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSTRÄVA",
@@ -82722,24 +82572,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERSTÄLLBAR",
-    "Clue": "Kortform för efterbliven + som kan ställas in genom att variera avs…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERSTÄLLD",
-    "Clue": "Kortform för efterbliven + placerad, stående på ett ställe",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERSUPNING",
-    "Clue": "Kortform för efterbliven + ersupning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERSÄGARE",
     "Clue": "Någon som osjälvständigt upprepar andra personer",
     "Category": "Substantiv",
@@ -82747,19 +82579,13 @@
   },
   {
     "Word": "EFTERSÄNDA",
-    "Clue": "Kortform för efterbliven + skicka, speciellt längre sträckor",
+    "Clue": "Returnera",
     "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERSÄNDNING",
-    "Clue": "Kortform för efterbliven + något som skickas med posten",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERSÄTTSBLAD",
-    "Clue": "Kortform för efterbliven + ersättsblad",
+    "Clue": "Vidarebefordring",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82770,27 +82596,9 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "EFTERSÖKANDE",
-    "Clue": "Kortform för efterbliven + person som söker jobb, asyl, m.m.",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERSÖKARE",
-    "Clue": "Kortform för efterbliven + litet fönster på kamera med vars hjälp m…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "EFTERTANKE",
     "Clue": "Det att tänka efter; noggrant eftersinnande",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "EFTERTAXERA",
-    "Clue": "Kortform för efterbliven + värdera, uppskatta, fastställa pris",
-    "Category": "Verb",
     "Difficulty": "Hard"
   },
   {
@@ -82807,13 +82615,13 @@
   },
   {
     "Word": "EFTERTRAKTANSVÄRD",
-    "Clue": "Kortform för efterbliven + ertraktansvärd",
+    "Clue": "Lockande",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "EFTERTRUPP",
-    "Clue": "Kortform för efterbliven + samling av soldater som agerar i grupp",
+    "Clue": "Arriärgarde",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -82837,7 +82645,7 @@
   },
   {
     "Word": "EFTERTRÅ",
-    "Clue": "Kortform för efterbliven + längta",
+    "Clue": "Ivrigt längta efter",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
@@ -82872,12 +82680,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "EFTERVÄRK",
-    "Clue": "Kortform för efterbliven + ihållande smärta",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "EFTERVÄRLD",
     "Clue": "Människorna som lever i framtiden",
     "Category": "Substantiv",
@@ -82885,7 +82687,7 @@
   },
   {
     "Word": "EFTERVÄRME",
-    "Clue": "Kortform för efterbliven + (hög) temperatur",
+    "Clue": "Kan mat lagas på för att spara energi",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -307783,7 +307585,7 @@
   },
   {
     "Word": "OUTVECKLAD",
-    "Clue": "Inte utvecklad, efterbliven",
+    "Clue": "Rudimentär",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -313663,7 +313465,7 @@
   },
   {
     "Word": "PASTISCHARTAD",
-    "Clue": "Av konstverk eller diktverk som avsiktligt efterbilda… art",
+    "Clue": "Travesti",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -471631,7 +471433,7 @@
   },
   {
     "Word": "VARTEFTER",
-    "Clue": "Mot eller till vilken plats + kortform för efterbliven",
+    "Clue": "Så småningom",
     "Category": "Adverb",
     "Difficulty": "Medium"
   },

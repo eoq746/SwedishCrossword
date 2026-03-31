@@ -268,6 +268,7 @@ header p{font-size:.95rem;opacity:.95}
 .history-date-heading{font-size:0.95rem;font-weight:700;color:#374151;margin-bottom:6px;padding-bottom:4px;border-bottom:2px solid var(--accent-color)}
 .history-entries{list-style:none;padding:0;margin:0}
 .history-item{font-size:0.9rem}
+.history-puzzle-label{display:block;font-size:0.8rem;font-weight:600;color:#6b7280;margin:8px 0 4px;padding-left:4px;font-style:italic}
 
 /* Modal */
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}

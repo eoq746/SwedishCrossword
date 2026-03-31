@@ -790,21 +790,41 @@ async function renderLeaderboardHistory() {
 
     container.innerHTML = dates.map(date => {
         const entries = history[date];
-        const rows = entries.map((entry, index) => {
-            const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
-            const rankClass = index < 3 ? `rank-${index + 1}` : '';
-            return `
-                <li class="leaderboard-item history-item ${rankClass}">
-                    <span class="leaderboard-rank">${rankDisplay}</span>
-                    <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
-                    <span class="leaderboard-time">${formatTime(entry.time)}</span>
-                </li>`;
-        }).join('');
+
+        // Group entries by puzzleHash to detect multiple puzzles on the same date
+        const puzzleGroups = new Map();
+        entries.forEach(entry => {
+            const key = entry.puzzleHash || '_default';
+            if (!puzzleGroups.has(key)) puzzleGroups.set(key, []);
+            puzzleGroups.get(key).push(entry);
+        });
+
+        const hasMultiplePuzzles = puzzleGroups.size > 1;
+
+        let groupsHtml = '';
+        let puzzleIndex = 0;
+        for (const [, groupEntries] of puzzleGroups) {
+            puzzleIndex++;
+            const puzzleLabel = hasMultiplePuzzles
+                ? `<span class="history-puzzle-label">Pussel ${puzzleIndex}</span>`
+                : '';
+            const rows = groupEntries.map((entry, index) => {
+                const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
+                const rankClass = index < 3 ? `rank-${index + 1}` : '';
+                return `
+                    <li class="leaderboard-item history-item ${rankClass}">
+                        <span class="leaderboard-rank">${rankDisplay}</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
+                        <span class="leaderboard-time">${formatTime(entry.time)}</span>
+                    </li>`;
+            }).join('');
+            groupsHtml += `${puzzleLabel}<ul class="history-entries">${rows}</ul>`;
+        }
 
         return `
             <li class="history-date-group">
                 <h4 class="history-date-heading">${date}</h4>
-                <ul class="history-entries">${rows}</ul>
+                ${groupsHtml}
             </li>`;
     }).join('');
 }

@@ -26,6 +26,17 @@ public class CrosswordGrid
     /// </summary>
     private HashSet<string>? _accidentalWordTextsCache;
 
+    private GridStats? _cachedStats;
+    private HashSet<(int Row, int Col)>? _onePastEndCache;
+    private HashSet<(int Row, int Col)>? _beforeBentStartCache;
+    private HashSet<(int Row, int Col)>? _wordEndCellCache;
+
+    /// <summary>
+    /// When true, clue renumbering is skipped during placement to avoid O(W*H) work per attempt.
+    /// Set to true during generation and false before final validation.
+    /// </summary>
+    public bool SuppressRenumbering { get; set; }
+
     public int Width { get; }
     public int Height { get; }
     public IReadOnlyList<Word> Words => _words.AsReadOnly();
@@ -71,10 +82,9 @@ public class CrosswordGrid
             return false;
 
         // DUPLICATE CHECK: Reject if this exact word text is already placed
-        var wordTextUpper = word.Text.ToUpperInvariant();
         foreach (var existingWord in _words)
         {
-            if (existingWord.Text.Equals(wordTextUpper, StringComparison.OrdinalIgnoreCase))
+            if (existingWord.Text.Equals(word.Text, StringComparison.OrdinalIgnoreCase))
                 return false; // This word text is already in the puzzle
         }
 
@@ -94,8 +104,9 @@ public class CrosswordGrid
             return false; // Reject placement if it would create an isolated word
         }
 
-        // Create a comprehensive backup to test the placement
-        var originalState = CreateGridBackup();
+        // Targeted backup: only save cells along the word's path instead of the entire grid
+        var cellBackups = BackupCellsAlongWord(startRow, startCol, direction, word.Length);
+        var wordsCountBefore = _words.Count;
 
         try
         {
@@ -119,9 +130,10 @@ public class CrosswordGrid
 
             // Validate accidental words created by this placement
             bool isValid = true;
+            List<AccidentalWord>? accidentalWords = null;
             if (dictionary != null && rejectInvalidWords)
             {
-                var accidentalWords = DetectAccidentalWordsNear(startRow, startCol, direction, word.Length, dictionary);
+                accidentalWords = DetectAccidentalWordsNear(startRow, startCol, direction, word.Length, dictionary);
 
                 // Check for invalid accidental words
                 foreach (var accWord in accidentalWords)
@@ -164,15 +176,16 @@ public class CrosswordGrid
 
             if (isValid)
             {
-                // Placement is valid — invalidate cache and commit
-                _accidentalWordTextsCache = null;
-                RenumberCluesIncludingAccidental(null);
+                // Placement is valid — invalidate caches and commit
+                InvalidateCaches();
+                if (!SuppressRenumbering)
+                    RenumberCluesIncludingAccidental(null);
                 return true;
             }
             else
             {
-                // Rollback the placement using comprehensive restore
-                RestoreGridFromBackup(originalState);
+                // Rollback using targeted restore
+                RestoreCellsAlongWord(cellBackups, startRow, startCol, direction, wordsCountBefore);
                 return false;
             }
         }
@@ -180,7 +193,7 @@ public class CrosswordGrid
         {
             // On any error, ensure we restore the grid state
             Console.WriteLine($"    Fel under ordvalidering för '{word.Text}': {ex.Message}");
-            RestoreGridFromBackup(originalState);
+            RestoreCellsAlongWord(cellBackups, startRow, startCol, direction, wordsCountBefore);
             return false;
         }
     }
@@ -265,6 +278,116 @@ public class CrosswordGrid
         public HashSet<string> WordIds { get; set; } = new();
         public bool IsPartOfWord { get; set; }
         public Direction? BendArrowDirection { get; set; }
+    }
+
+    /// <summary>
+    /// Invalidates all cached state. Call whenever the grid content changes.
+    /// </summary>
+    private void InvalidateCaches()
+    {
+        _accidentalWordTextsCache = null;
+        _cachedStats = null;
+        _onePastEndCache = null;
+        _beforeBentStartCache = null;
+        _wordEndCellCache = null;
+    }
+
+    /// <summary>
+    /// Backs up only the cells along a straight word's path. O(wordLength) instead of O(W*H).
+    /// </summary>
+    private CellBackup[] BackupCellsAlongWord(int startRow, int startCol, Direction direction, int length)
+    {
+        var backups = new CellBackup[length];
+        for (int i = 0; i < length; i++)
+        {
+            int r = direction == Direction.Across ? startRow : startRow + i;
+            int c = direction == Direction.Across ? startCol + i : startCol;
+            var cell = _cells[r, c];
+            backups[i] = new CellBackup
+            {
+                Letter = cell.Letter,
+                Number = cell.Number,
+                WordIds = new HashSet<string>(cell.WordIds),
+                IsPartOfWord = cell.IsPartOfWord,
+                BendArrowDirection = cell.BendArrowDirection
+            };
+        }
+        return backups;
+    }
+
+    /// <summary>
+    /// Restores cells along a straight word's path from a targeted backup.
+    /// </summary>
+    private void RestoreCellsAlongWord(CellBackup[] backups, int startRow, int startCol, Direction direction, int wordsCountBefore)
+    {
+        for (int i = 0; i < backups.Length; i++)
+        {
+            int r = direction == Direction.Across ? startRow : startRow + i;
+            int c = direction == Direction.Across ? startCol + i : startCol;
+            var cell = _cells[r, c];
+            var bk = backups[i];
+            cell.Letter = bk.Letter;
+            cell.Number = bk.Number;
+            cell.WordIds.Clear();
+            cell.WordIds.UnionWith(bk.WordIds);
+            cell.IsPartOfWord = bk.IsPartOfWord;
+            cell.BendArrowDirection = bk.BendArrowDirection;
+        }
+        while (_words.Count > wordsCountBefore)
+            _words.RemoveAt(_words.Count - 1);
+    }
+
+    /// <summary>
+    /// Backs up only the cells along a bent word's path. O(wordLength) instead of O(W*H).
+    /// </summary>
+    private (CellBackup[] Backups, (int Row, int Col)[] Positions) BackupCellsAlongBentWord(List<WordSegment> segments)
+    {
+        var allPositions = new List<(int Row, int Col)>();
+        for (int segIdx = 0; segIdx < segments.Count; segIdx++)
+        {
+            var positions = segments[segIdx].GetPositions().ToList();
+            int start = segIdx == 0 ? 0 : 1;
+            for (int i = start; i < positions.Count; i++)
+                allPositions.Add(positions[i]);
+        }
+
+        var posArray = allPositions.ToArray();
+        var backups = new CellBackup[posArray.Length];
+        for (int i = 0; i < posArray.Length; i++)
+        {
+            var (r, c) = posArray[i];
+            var cell = _cells[r, c];
+            backups[i] = new CellBackup
+            {
+                Letter = cell.Letter,
+                Number = cell.Number,
+                WordIds = new HashSet<string>(cell.WordIds),
+                IsPartOfWord = cell.IsPartOfWord,
+                BendArrowDirection = cell.BendArrowDirection
+            };
+        }
+        return (backups, posArray);
+    }
+
+    /// <summary>
+    /// Restores cells along a bent word's path from a targeted backup.
+    /// </summary>
+    private void RestoreBentWordCells(CellBackup[] backups, (int Row, int Col)[] positions, int wordsCountBefore)
+    {
+        for (int i = 0; i < positions.Length; i++)
+        {
+            var (r, c) = positions[i];
+            var cell = _cells[r, c];
+            var bk = backups[i];
+            cell.Letter = bk.Letter;
+            cell.Number = bk.Number;
+            cell.WordIds.Clear();
+            cell.WordIds.UnionWith(bk.WordIds);
+            cell.IsPartOfWord = bk.IsPartOfWord;
+            cell.BendArrowDirection = bk.BendArrowDirection;
+        }
+        while (_words.Count > wordsCountBefore)
+            _words.RemoveAt(_words.Count - 1);
     }
 
     /// <summary>
@@ -365,72 +488,64 @@ public class CrosswordGrid
     /// Returns true if placing a new letter at (row, col) would land immediately after the
     /// endpoint of any existing word (straight or bent, in any direction), which would cause
     /// that word to end in a non-empty cell.
+    /// Uses a cached set of "one-past-end" positions to avoid iterating all words per cell.
     /// </summary>
     private bool WouldFollowAnyWordEnd(int row, int col)
     {
-        foreach (var w in _words)
+        if (_onePastEndCache == null)
         {
-            if (!w.IsPlaced) continue;
-
-            if (!w.IsBent)
+            _onePastEndCache = new HashSet<(int, int)>();
+            foreach (var w in _words)
             {
-                if (w.Direction == Direction.Across &&
-                    w.StartRow == row &&
-                    w.StartColumn + w.Length == col)
-                    return true;
+                if (!w.IsPlaced) continue;
 
-                if (w.Direction == Direction.Down &&
-                    w.StartColumn == col &&
-                    w.StartRow + w.Length == row)
-                    return true;
-            }
-            else
-            {
-                if (w.Segments.Count == 0) continue;
-                var lastSeg = w.Segments[^1];
+                if (!w.IsBent)
+                {
+                    if (w.Direction == Direction.Across)
+                        _onePastEndCache.Add((w.StartRow, w.StartColumn + w.Length));
+                    else
+                        _onePastEndCache.Add((w.StartRow + w.Length, w.StartColumn));
+                }
+                else
+                {
+                    if (w.Segments.Count == 0) continue;
+                    var lastSeg = w.Segments[^1];
 
-                if (lastSeg.Direction == Direction.Across &&
-                    lastSeg.EndRow == row &&
-                    lastSeg.EndCol + 1 == col)
-                    return true;
-
-                if (lastSeg.Direction == Direction.Down &&
-                    lastSeg.EndCol == col &&
-                    lastSeg.EndRow + 1 == row)
-                    return true;
+                    if (lastSeg.Direction == Direction.Across)
+                        _onePastEndCache.Add((lastSeg.EndRow, lastSeg.EndCol + 1));
+                    else
+                        _onePastEndCache.Add((lastSeg.EndRow + 1, lastSeg.EndCol));
+                }
             }
         }
 
-        return false;
+        return _onePastEndCache.Contains((row, col));
     }
 
     /// <summary>
     /// Returns true if placing a new letter at (row, col) would land immediately before the
     /// first cell of any existing bent word's first segment (in that segment's reading direction).
-    /// This prevents an accidental continuous reading that merges the new letter with the bent
-    /// word's path (e.g. placing 'A' at the cell just before a bent word starting with 'M'
-    /// would create the misleading reading "AMENIG").
+    /// Uses a cached set to avoid iterating all words per cell.
     /// </summary>
     private bool WouldPrecedeAnyBentWordStart(int row, int col)
     {
-        foreach (var w in _words)
+        if (_beforeBentStartCache == null)
         {
-            if (!w.IsPlaced || !w.IsBent || w.Segments.Count == 0) continue;
+            _beforeBentStartCache = new HashSet<(int, int)>();
+            foreach (var w in _words)
+            {
+                if (!w.IsPlaced || !w.IsBent || w.Segments.Count == 0) continue;
 
-            var firstSeg = w.Segments[0];
+                var firstSeg = w.Segments[0];
 
-            if (firstSeg.Direction == Direction.Across &&
-                firstSeg.StartRow == row &&
-                firstSeg.StartCol == col + 1)
-                return true;
-
-            if (firstSeg.Direction == Direction.Down &&
-                firstSeg.StartCol == col &&
-                firstSeg.StartRow == row + 1)
-                return true;
+                if (firstSeg.Direction == Direction.Across)
+                    _beforeBentStartCache.Add((firstSeg.StartRow, firstSeg.StartCol - 1));
+                else
+                    _beforeBentStartCache.Add((firstSeg.StartRow - 1, firstSeg.StartCol));
+            }
         }
 
-        return false;
+        return _beforeBentStartCache.Contains((row, col));
     }
 
     /// <summary>
@@ -456,12 +571,13 @@ public class CrosswordGrid
 
         _words.Add(word);
 
-        // Invalidate accidental word cache — grid content changed
-        _accidentalWordTextsCache = null;
+        // Invalidate all caches — grid content changed
+        InvalidateCaches();
 
         // Renumber all clues after placing a new word
-        RenumberCluesIncludingAccidental(null);
-        
+        if (!SuppressRenumbering)
+            RenumberCluesIncludingAccidental(null);
+
         return true;
     }
 
@@ -489,11 +605,12 @@ public class CrosswordGrid
         word.Number = 0;
         _words.Remove(word);
 
-        // Invalidate accidental word cache — grid content changed
-        _accidentalWordTextsCache = null;
+        // Invalidate all caches — grid content changed
+        InvalidateCaches();
 
         // Renumber all remaining words
-        RenumberCluesIncludingAccidental(null);
+        if (!SuppressRenumbering)
+            RenumberCluesIncludingAccidental(null);
 
         return true;
     }
@@ -557,18 +674,22 @@ public class CrosswordGrid
     }
 
     /// <summary>
-    /// Gets statistics about the grid
+    /// Gets statistics about the grid. Results are cached and invalidated when the grid changes.
     /// </summary>
     public GridStats GetStats()
     {
+        if (_cachedStats != null)
+            return _cachedStats;
+
         int filledCells = 0;
         int blockedCells = 0;
-        
+        int vinkelOrd = 0;
+
         for (int row = 0; row < Height; row++)
         {
             for (int col = 0; col < Width; col++)
             {
-                var cell = GetCell(row, col);
+                var cell = _cells[row, col];
                 if (cell.HasLetter)
                     filledCells++;
                 else if (cell.IsBlocked)
@@ -576,11 +697,16 @@ public class CrosswordGrid
             }
         }
 
+        foreach (var w in _words)
+        {
+            if (w.IsBent) vinkelOrd++;
+        }
+
         int totalCells = Width * Height;
         int emptyCells = totalCells - filledCells - blockedCells;
         double fillPercentage = (double)filledCells / totalCells * 100;
 
-        return new GridStats
+        _cachedStats = new GridStats
         {
             TotalCells = totalCells,
             FilledCells = filledCells,
@@ -588,8 +714,9 @@ public class CrosswordGrid
             EmptyCells = emptyCells,
             WordCount = _words.Count,
             FillPercentage = fillPercentage,
-            VinkelOrd = _words.Count(w => w.IsBent)
+            VinkelOrd = vinkelOrd
         };
+        return _cachedStats;
     }
 
     /// <summary>
@@ -814,18 +941,15 @@ public class CrosswordGrid
             foreach (var accWord in accidentalWords)
             {
                 accWord.IsValidSwedishWord = dictionary.IsValidWord(accWord.Text);
-                
+
                 // If valid, get clue from dictionary and mark for inclusion
                 if (accWord.IsValidSwedishWord == true)
                 {
-                    var dictionaryWords = dictionary.AllWords.Where(w => 
-                        w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
-                    
-                    if (dictionaryWords.Any())
+                    var clue = dictionary.GetClue(accWord.Text);
+                    if (clue != null)
                     {
-                        var dictWord = dictionaryWords.First();
-                        accWord.ClueFromDictionary = dictWord.Clue;
-                        
+                        accWord.ClueFromDictionary = clue;
+
                         // Check if this accidental word doesn't conflict with intentional words at same position
                         bool isAlreadyIntentional = Words.Any(w => 
                             w.StartRow == accWord.StartRow && 
@@ -1156,13 +1280,11 @@ public class CrosswordGrid
             if (!isAlreadyIntentional)
             {
                 // Find the word in dictionary to get its clue
-                var dictionaryWords = dictionary.AllWords.Where(w => 
-                    w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
-                
-                if (dictionaryWords.Any())
+                var clue = dictionary.GetClue(accWord.Text);
+
+                if (clue != null)
                 {
-                    var dictWord = dictionaryWords.First();
-                    accWord.ClueFromDictionary = dictWord.Clue;
+                    accWord.ClueFromDictionary = clue;
                     accWord.ShouldIncludeInPuzzle = true;
                 }
             }
@@ -1611,15 +1733,21 @@ public class CrosswordGrid
         // an existing word, readers of that word would follow the arrow and continue
         // reading past the word's actual end (e.g. KANAL ending at 'L' then a bend arrow
         // placed on that 'L' makes it read as KANALUT).
+        if (_wordEndCellCache == null)
+        {
+            _wordEndCellCache = new HashSet<(int, int)>();
+            foreach (var w in _words)
+            {
+                if (w.IsPlaced)
+                    _wordEndCellCache.Add((w.EndRow, w.EndColumn));
+            }
+        }
         for (int s = 0; s < segments.Count - 1; s++)
         {
             int bendRow = segments[s].EndRow;
             int bendCol = segments[s].EndCol;
-            foreach (var w in _words)
-            {
-                if (w.IsPlaced && w.EndRow == bendRow && w.EndColumn == bendCol)
-                    return false;
-            }
+            if (_wordEndCellCache.Contains((bendRow, bendCol)))
+                return false;
         }
 
         // The new word's bend cells must not already carry a BendArrowDirection from
@@ -1660,10 +1788,9 @@ public class CrosswordGrid
             return false;
 
         // DUPLICATE CHECK
-        var wordTextUpper = word.Text.ToUpperInvariant();
         foreach (var existingWord in _words)
         {
-            if (existingWord.Text.Equals(wordTextUpper, StringComparison.OrdinalIgnoreCase))
+            if (existingWord.Text.Equals(word.Text, StringComparison.OrdinalIgnoreCase))
                 return false;
         }
 
@@ -1700,7 +1827,9 @@ public class CrosswordGrid
                 return false;
         }
 
-        var originalState = CreateGridBackup();
+        // Targeted backup: only save cells along the bent word's path
+        var (cellBackups, backupPositions) = BackupCellsAlongBentWord(segments);
+        var wordsCountBefore = _words.Count;
 
         try
         {
@@ -1788,19 +1917,20 @@ public class CrosswordGrid
 
             if (isValid)
             {
-                _accidentalWordTextsCache = null;
-                RenumberCluesIncludingAccidental(null);
+                InvalidateCaches();
+                if (!SuppressRenumbering)
+                    RenumberCluesIncludingAccidental(null);
                 return true;
             }
             else
             {
-                RestoreGridFromBackup(originalState);
+                RestoreBentWordCells(cellBackups, backupPositions, wordsCountBefore);
                 return false;
             }
         }
         catch
         {
-            RestoreGridFromBackup(originalState);
+            RestoreBentWordCells(cellBackups, backupPositions, wordsCountBefore);
             return false;
         }
     }

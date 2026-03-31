@@ -16,12 +16,11 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
   - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + JSONBin.io)
-  - Historical leaderboard showing top scores from the past 30 days
+  - Historical leaderboard showing top scores from the past 30 days (entries are grouped by puzzle when multiple puzzles occur on the same date)
   - Mobile-responsive design (portrait and landscape modes)
 - **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via Cloudflare KV
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
-- **Word Manager Tool**: Lightweight CLI for quickly adding words, converting plain-text word lists to JSON, and merging word files
 - **SEO Optimized**: Structured data, sitemap, robots.txt for search engine visibility
 
 ## Project Structure
@@ -87,8 +86,6 @@ SwedishCrosswords/
 |   |-- WiktionaryClueService.cs   # Auto-populate clues from Swedish Wiktionary dump
 |   |-- CompoundClueGenerator.cs   # Generate clues for compound words via DSSO metadata
 |   +-- PatternClueGenerator.cs    # Generate clues using morphological patterns
-|-- WordManager/                   # Lightweight word-management helper (no .csproj yet)
-|   +-- Program.cs                 # CLI: quick-add words, convert text?JSON, merge files
 |-- SwedishCrossword.Tests/        # TUnit test project
 |   |-- GridCellTests.cs           # Grid cell model tests
 |   |-- WordTests.cs               # Word model tests
@@ -167,16 +164,6 @@ dotnet run --project ClueHandler -- --compounds     # Generate compound-word clu
 dotnet run --project ClueHandler -- --patterns      # Generate clues via morphological pattern matching
 ```
 
-### WordManager
-
-> ?? Work-in-progress — no `.csproj` yet; references `SwedishCrossword.Services` directly.
-
-Lightweight helper for bulk word management:
-
-1. **Add words quickly** — Enter words in `WORD|Clue|Category|Difficulty` format
-2. **Convert text to JSON** — Transform a plain-text word list into the JSON schema used by `SwedishDictionary`
-3. **Merge word files** — Combine multiple word-list JSON files, deduplicating by word text
-
 ## Running Tests
 
 ```bash
@@ -219,7 +206,14 @@ The generator is split into specialized components orchestrated by `CrosswordGen
 - Ensures all words are connected (no isolated words)
 - Prevents duplicate word usage
 - Validates accidental word formations against dictionary during placement
-- Rollback-on-failure: each placement is tested against a full grid backup and reverted if it creates invalid words
+- Rollback-on-failure: each placement is tested against a targeted cell backup and reverted if it creates invalid words
+
+### Performance Optimizations
+- **Targeted backup/restore**: Only cells along the placed word's path are saved and restored on rollback, reducing per-attempt cost from O(W×H) to O(word length)
+- **Suppressed renumbering**: Clue renumbering is deferred until after generation completes, eliminating an O(W×H) pass on every placement attempt
+- **Cached grid statistics**: `GetStats()` results are cached and invalidated only when the grid changes
+- **Cached isolation checks**: Word-endpoint positions are cached in HashSets for O(1) lookup instead of iterating all words per cell
+- **O(1) dictionary clue lookup**: Accidental-word validation uses direct dictionary key lookup instead of materializing and scanning the full word list
 
 ### Quality Metrics
 - Target fill percentage: 65%+
@@ -253,7 +247,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Hosting**: GitHub Pages (static files)
 - **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
-- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????); historical scores stored in Cloudflare KV (90-day TTL)
+- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????); historical scores stored in Cloudflare KV (90-day TTL) with per-puzzle grouping so multiple puzzles on the same date are displayed separately
 - **Solution-View Tracking**: Cloudflare KV records per-IP solution views (7-day TTL) so the anti-cheat system can flag players who viewed the answer before submitting
 - **Infrastructure**: Worker source and docs live under `infrastructure/cloudflare-worker/`
 - **Analytics**: Google AdSense (optional)

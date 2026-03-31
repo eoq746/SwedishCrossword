@@ -319,6 +319,17 @@ public class SwedishDictionary
     {
         return _words.TryGetValue(word.ToUpperInvariant(), out var entry) && HasValidClue(entry);
     }
+
+    /// <summary>
+    /// Gets the clue for a word if it exists in the dictionary and has a valid clue.
+    /// O(1) dictionary lookup — avoids materializing the full AllWords list.
+    /// </summary>
+    public string? GetClue(string word)
+    {
+        if (_words.TryGetValue(word.ToUpperInvariant(), out var entry) && HasValidClue(entry))
+            return entry.Clue;
+        return null;
+    }
 }
 
 /// <summary>

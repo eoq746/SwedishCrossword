@@ -130,6 +130,10 @@ public class CrosswordGenerator
     private async Task<CrosswordGrid?> TryGenerateSmartPuzzleAsync(CrosswordGrid grid, List<Word> candidateWords,
         List<WordAnalysis> sortedAnalysis, Dictionary<string, double> connectivityScores, CrosswordGenerationOptions options, CancellationToken cancellationToken)
     {
+        // Suppress clue renumbering during generation — it's O(W*H) per placement
+        // and completely unnecessary until the final validation pass.
+        grid.SuppressRenumbering = true;
+
         // Create a shuffled copy using top-biased Fisher-Yates
         var sortedWords = sortedAnalysis.ConvertAll(a => a.Word);
         GenerationHelpers.ShuffleTopBiased(sortedWords, 5, _random);
@@ -196,6 +200,9 @@ public class CrosswordGenerator
             var cycleEnd = subBStats.FilledCells;
             if (cycleEnd == cycleStart) break;
         }
+
+        // Re-enable renumbering before final validation
+        grid.SuppressRenumbering = false;
 
         // Validation
         var stats = grid.GetStats();

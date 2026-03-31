@@ -137,15 +137,26 @@ export default {
                 );
 
                 if (!isDuplicate) {
-                    existing.push({
+                    const record = {
                         name: entry.name,
                         time: entry.time,
                         timestamp: entry.timestamp
-                    });
+                    };
+                    if (entry.puzzleHash) record.puzzleHash = entry.puzzleHash;
+                    existing.push(record);
 
-                    // Sort by time ascending and keep top 10
-                    existing.sort((a, b) => a.time - b.time);
-                    const trimmed = existing.slice(0, 10);
+                    // Keep top 10 per puzzle to avoid one puzzle evicting another's entries
+                    const groups = {};
+                    existing.forEach(e => {
+                        const g = e.puzzleHash || '_default';
+                        if (!groups[g]) groups[g] = [];
+                        groups[g].push(e);
+                    });
+                    let trimmed = [];
+                    for (const g of Object.values(groups)) {
+                        g.sort((a, b) => a.time - b.time);
+                        trimmed = trimmed.concat(g.slice(0, 10));
+                    }
 
                     await env.CROSSWORD_KV.put(kvKey, JSON.stringify(trimmed), {
                         expirationTtl: 86400 * 90 // 90 days
