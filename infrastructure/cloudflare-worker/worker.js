@@ -1,4 +1,4 @@
-// Cloudflare Worker for JSONBin Proxy + Solution View Tracking
+// Cloudflare Worker for Leaderboard + Solution View Tracking
 const ALLOWED_ORIGINS = [
     'https://svensktkorsord.se',
     'https://www.svensktkorsord.se',
@@ -68,43 +68,19 @@ export default {
             // -------------------------------
             //
 
-            // GET /leaderboard - Fetch leaderboard
+            // GET /leaderboard - Fetch leaderboard from KV
             if (request.method === 'GET' && path === '/leaderboard') {
-                const response = await fetch(
-                    `https://api.jsonbin.io/v3/b/${env.JSONBIN_BIN_ID}/latest`,
-                    {
-                        headers: { 'X-Access-Key': env.JSONBIN_API_KEY }
-                    }
-                );
-
-                const data = await response.json();
-                return new Response(JSON.stringify(data.record || {}), {
+                const data = await env.CROSSWORD_KV.get('leaderboard:current', 'json') || {};
+                return new Response(JSON.stringify(data), {
                     headers: corsHeaders(origin)
                 });
             }
 
-            // PUT /leaderboard - Update leaderboard
+            // PUT /leaderboard - Update leaderboard in KV
             if (request.method === 'PUT' && path === '/leaderboard') {
                 const body = await request.json();
 
-                const response = await fetch(
-                    `https://api.jsonbin.io/v3/b/${env.JSONBIN_BIN_ID}`,
-                    {
-                        method: 'PUT',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-Access-Key': env.JSONBIN_API_KEY
-                        },
-                        body: JSON.stringify(body)
-                    }
-                );
-
-                if (!response.ok) {
-                    return new Response(JSON.stringify({ error: 'Failed to update' }), {
-                        status: response.status,
-                        headers: corsHeaders(origin)
-                    });
-                }
+                await env.CROSSWORD_KV.put('leaderboard:current', JSON.stringify(body));
 
                 return new Response(JSON.stringify({ success: true }), {
                     headers: corsHeaders(origin)

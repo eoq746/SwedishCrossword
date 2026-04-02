@@ -1,6 +1,6 @@
-# Cloudflare Worker — Leaderboard Proxy
+# Cloudflare Worker — Leaderboard API
 
-This worker acts as a secure proxy between the crossword frontend and JSONBin.io, keeping API keys server-side. It also tracks solution views per IP using Cloudflare KV.
+This worker provides the leaderboard API for the crossword frontend, storing all data in Cloudflare KV. It also tracks solution views per IP.
 
 ## Endpoints
 
@@ -13,20 +13,11 @@ This worker acts as a secure proxy between the crossword frontend and JSONBin.io
 | POST   | `/viewed-solution`      | Record that an IP viewed a solution           |
 | POST   | `/check-solution-viewed`| Check if an IP has viewed a solution          |
 
-## Required Environment Variables
-
-Configure these as **secrets** in the Cloudflare dashboard (Settings → Variables):
-
-| Variable          | Description                        |
-|-------------------|------------------------------------|
-| `JSONBIN_API_KEY`  | JSONBin.io API access key          |
-| `JSONBIN_BIN_ID`   | JSONBin.io bin ID for leaderboard  |
-
 ## Required KV Namespace
 
 | Binding Name   | Description                                              |
 |----------------|----------------------------------------------------------|
-| `CROSSWORD_KV` | Stores solution-view records (7-day TTL) and historical leaderboard entries (90-day TTL, grouped per puzzle hash) |
+| `CROSSWORD_KV` | Stores current leaderboard, solution-view records (7-day TTL), and historical leaderboard entries (90-day TTL, grouped per puzzle hash) |
 
 Create via: `wrangler kv namespace create CROSSWORD_KV`
 
@@ -38,14 +29,7 @@ npx wrangler deploy worker.js
 
 ## Local Development
 
-Create a `.dev.vars` file (git-ignored) with your secrets:
-
-```
-JSONBIN_API_KEY=your-key-here
-JSONBIN_BIN_ID=your-bin-id-here
-```
-
-Then run:
+Run:
 
 ```bash
 npx wrangler dev worker.js

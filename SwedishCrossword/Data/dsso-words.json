@@ -1969,15 +1969,9 @@
   },
   {
     "Word": "ADMITTANS",
-    "Clue": "Storheten Y&nbsp;=&nbsp;1/Z, där Z är impedansen hos en krets; enhet siemens (S): 1&nbsp;S=1&nbsp;&Omega;&minus;1",
+    "Clue": "Elektrisk ledningsförmåga",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "ADMITTANSBELOPP",
-    "Clue": "Storheten Y&nbsp + summa pengar",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "ADMITTERA",
@@ -7333,7 +7327,7 @@
   },
   {
     "Word": "ALLUVIALJORD",
-    "Clue": "Bildad ur sediment i rinnande vatten + material bestående av en blandning av lö…",
+    "Clue": "Lösa avlagringar av sand, lera, grus och slam som bildats genom att rinnande vatten avsatt material, främst vid översvämningar",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -8673,12 +8667,6 @@
     "Word": "AMBIOFONI",
     "Clue": "Fyrkanals-stereo",
     "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "AMBIPOLAR",
-    "Clue": "Ambi + som avser någon av jordens poler",
-    "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
   {
@@ -12313,7 +12301,7 @@
   },
   {
     "Word": "ANNELIE",
-    "Clue": "Ett kvinnonamn + manuellt jordbruksredskap för slåtter av…",
+    "Clue": "Äventyraren Pompe",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -13561,7 +13549,7 @@
   },
   {
     "Word": "ANTAGLIGEN",
-    "Clue": "Med en sannolikhet större än 50&nbsp;%",
+    "Clue": "Troligtvis",
     "Category": "Adverb",
     "Difficulty": "Hard"
   },
@@ -16453,7 +16441,7 @@
   },
   {
     "Word": "ARBETSSTRÅLKASTARE",
-    "Clue": "Utföra en handling genom att använda sin… + stark lampa som kan riktas",
+    "Clue": "Lyser starkt på bygget",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -18193,7 +18181,7 @@
   },
   {
     "Word": "ARTSKILD",
-    "Clue": "Uppsättning av väsentliga egenskaper + – särad, separerad; avlägsnad; lösgjord",
+    "Clue": "Helt olik",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -18612,32 +18600,14 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ASFALTHALTIG",
-    "Clue": "Jordbeck, ett kolvätehaltigt ämne + thaltig",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ASFALTIMPREGNERAD",
-    "Clue": "Jordbeck, ett kolvätehaltigt ämne + timpregnerad",
+    "Clue": "Kan en boardskiva vara för att skydda mot vind och vatten",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ASFALTINDUSTRI",
-    "Clue": "Jordbeck, ett kolvätehaltigt ämne + näringsgren som",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
     "Word": "ASFALTSVÄG",
-    "Clue": "Jordbeck, ett kolvätehaltigt ämne + markremsa som är iordninggjord för att u…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ASFALTTJÄRA",
-    "Clue": "Jordbeck, ett kolvätehaltigt ämne + tjock, trögflytande vätska som är svart…",
+    "Clue": "Körs sällan på på landsbygden",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -19111,7 +19081,7 @@
   },
   {
     "Word": "ASSOCIATIV",
-    "Clue": "Sådan att identiteten (a⋅b)⋅c&nbsp;=&nbsp;a⋅(b⋅c) gäller",
+    "Clue": "Kan matematiskt operation vara",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -22681,7 +22651,7 @@
   },
   {
     "Word": "AVISOLERA",
-    "Clue": "Nyheter + finkornig jordart som i vått tillstånd ä…",
+    "Clue": "För att göra detta används kabelskalare",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
@@ -23095,7 +23065,7 @@
   },
   {
     "Word": "AVLASTARE",
-    "Clue": "Förvärva + en art (sturnus vulgaris) inom fågelfami…",
+    "Clue": "En sån låser linor inom segling",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -26065,13 +26035,13 @@
   },
   {
     "Word": "AVVATTNA",
-    "Clue": "Av- hälla vatten på jorden intill växter och på detta…",
+    "Clue": "Dränera",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
     "Word": "AVVATTNING",
-    "Clue": "Av- hälla vatten på jorden intill växter… + pluralis av ingen",
+    "Clue": "Dränering",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -26976,12 +26946,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "AXELTUNNEL",
-    "Clue": "En kroppsdel + underjordisk",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "AXELTÄTNING",
     "Clue": "En kroppsdel + det att täta (en glipa)",
     "Category": "Substantiv",
@@ -27739,7 +27703,7 @@
   },
   {
     "Word": "BABYBLÅ",
-    "Clue": "Som har en matt ljusblå färgton (&nbsp;)",
+    "Clue": "Barnslig nyans av azur",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -29419,7 +29383,7 @@
   },
   {
     "Word": "BAKVÄG",
-    "Clue": "I den del av ett rörligt föremål som sis… + markremsa som är iordninggjord för att u…",
+    "Clue": "Lönnstig",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -30211,7 +30175,7 @@
   },
   {
     "Word": "BANDLASTARE",
-    "Clue": "Smal och lång remsa, rem eller snöre + lastare",
+    "Clue": "Entreprenadmaskin på larvfötter",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -32983,7 +32947,7 @@
   },
   {
     "Word": "BATTERITESTARE",
-    "Clue": "Anordning som producerar elektricitet ge… + person som testar",
+    "Clue": "Mäter laddningsstatus",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -33026,12 +32990,6 @@
   {
     "Word": "BAUXITFYNDIGHET",
     "Clue": "Mineral som innehåller aluminiumhydroxid… + ekonomiskt intressant förekomst",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "BAUXITGRUVA",
-    "Clue": "Mineral som innehåller aluminiumhydroxid… + underjordisk anläggning där någon minera…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -36943,7 +36901,7 @@
   },
   {
     "Word": "BERYLLIUMATOM",
-    "Clue": "Den enklaste alkaliska jordartsmetallen… + partikel bestående av en atomkärna av pr…",
+    "Clue": "Be-partikel",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -37309,7 +37267,7 @@
   },
   {
     "Word": "BESJÄLAD",
-    "Clue": "; levande, levandegjord, utrustad med själ",
+    "Clue": "Inspirerad",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -38908,12 +38866,6 @@
     "Clue": "Byggnadsmaterial som består av bergmater… + bakdel (på människa)",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "BETONGSILO",
-    "Clue": "Byggnadsmaterial som består av bergmater… + byggnad för förvaring av jordbruksproduk…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "BETONGSOSSE",
@@ -42541,7 +42493,7 @@
   },
   {
     "Word": "BIVÄG",
-    "Clue": "Sido-/bi- markremsa som är iordninggjord för att underlätta…",
+    "Clue": "Stekelgata?",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -42829,7 +42781,7 @@
   },
   {
     "Word": "BJÖRNBÄRSSAFT",
-    "Clue": "(plural) artgrupp inom släktet rubus som… + en dryck gjord på frukt eller bär",
+    "Clue": "Dryck av kokade Rubus",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -43657,7 +43609,7 @@
   },
   {
     "Word": "BLEKROSA",
-    "Clue": "Som upplevs ha sämre lyster än vad som f… + som har färgen rosa: &nbsp;",
+    "Clue": "Svagt ljusröd",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -44407,7 +44359,7 @@
   },
   {
     "Word": "BLODPLASMA",
-    "Clue": "Grundvätskan i rent blod; består till 90&nbsp;% av vatten",
+    "Clue": "Gul vätska i omlopp",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -44888,12 +44840,6 @@
   {
     "Word": "BLOMSTERKRASSE",
     "Clue": "Blomma, blomkorg eller växt med blommor + en växt",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "BLOMSTERLÖK",
-    "Clue": "Blomma, blomkorg eller växt med blommor + underjordisk växtdel som består av kötti…",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -48786,12 +48732,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "BORSTARE",
-    "Clue": "Ett grundämne med atomnummer 5 + en art (sturnus vulgaris) inom fågelfami…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "BORSTBINDARE",
     "Clue": "(i äldre tider) person som till yrket tillverkar borstar (för hand)",
     "Category": "Substantiv",
@@ -49159,7 +49099,7 @@
   },
   {
     "Word": "BORTGJORD",
-    "Clue": "I riktning från en själv eller annan ref… + ; som har utförts",
+    "Clue": "Utskämd",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -49879,7 +49819,7 @@
   },
   {
     "Word": "BOSKAPSHJORD",
-    "Clue": "(samling av) vissa husdjur + en grupp med djur",
+    "Clue": "Sammanhållen grupp av kreatur",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -51619,7 +51559,7 @@
   },
   {
     "Word": "BREDSPÅRIG",
-    "Clue": "Som har spårvidd större än 1&nbsp;435&nbsp;mm",
+    "Clue": "Kan järnväg vara",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -55075,7 +55015,7 @@
   },
   {
     "Word": "BUFFELHJORD",
-    "Clue": "Hjord av bufflar",
+    "Clue": "Sammanhållen grupp av t.ex. bisonoxar",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -55279,7 +55219,7 @@
   },
   {
     "Word": "BUKGJORD",
-    "Clue": "En kroppsdel: hos människan framsidan av… + ; som har utförts",
+    "Clue": "Fäster dragsele på häst",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -63601,7 +63541,7 @@
   },
   {
     "Word": "CYANBLÅ",
-    "Clue": "Som har en färg på denna skala: &nbsp;&nbsp;&nbsp;&nbsp;; en blå nyans som drar något åt det gröna hållet",
+    "Clue": "Blåklintens färg",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -72631,7 +72571,7 @@
   },
   {
     "Word": "DISKETT",
-    "Clue": "Numera föråldrat lagringsmedium för datorer som normalt rymmer endast 1,44&nbsp;MB",
+    "Clue": "Sparikon irl",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -82780,12 +82720,6 @@
     "Clue": "Som någon själv eller ensam har/rår om/b… + som är försedd med färger; kolorerad",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "EGENGJORD",
-    "Clue": "Som någon själv eller ensam har/rår om/b… + ; som har utförts",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "EGENHET",
@@ -94009,7 +93943,7 @@
   },
   {
     "Word": "EXVÄRLDSMÄSTARE",
-    "Clue": "Exvärld + person som behärskar något till fullo",
+    "Clue": "Var bäst förr",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -94129,7 +94063,7 @@
   },
   {
     "Word": "FABRIKSGJORD",
-    "Clue": "(större) anläggning där tillverkning av… + ; som har utförts",
+    "Clue": "Framställd på syntetisk väg",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -95305,7 +95239,7 @@
   },
   {
     "Word": "FALURÖD",
-    "Clue": "Färgton av ett rött färgämne som tillverkas i och omkring Falun som har ungefär denna färg: &nbsp;",
+    "Clue": "Färg på hus som målats med en klassisk svensk slamfärg med pigment från en koppargruva",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -96691,7 +96625,7 @@
   },
   {
     "Word": "FASTARE",
-    "Clue": "Kompakt, solid, hård + storhet, storleken av en yta",
+    "Clue": "Mer kompakt",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -96763,7 +96697,7 @@
   },
   {
     "Word": "FASTGJORD",
-    "Clue": "Kompakt, solid, hård + ; som har utförts",
+    "Clue": "Förtöjd",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -98142,12 +98076,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "FELGJORD",
-    "Clue": "Som inte borde vara så; felaktig + ; som har utförts",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "FELGREPP",
     "Clue": "Som inte borde vara så; felaktig + fasthållande med handen (eller foten)",
     "Category": "Substantiv",
@@ -98989,7 +98917,7 @@
   },
   {
     "Word": "FEMSIFFRIG",
-    "Clue": "Som skrivs med fem siffror (d.v.s. 10&nbsp;000–99&nbsp;999 om inledande nollor inte är tillåtna)",
+    "Clue": "Som skrivs med fem siffror",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -99271,7 +99199,7 @@
   },
   {
     "Word": "FEMTIOTUSEN",
-    "Clue": "Talet 5; mellan fyra och sex + ett tal, 10&nbsp;000",
+    "Clue": "Stort tal och Sting-sång",
     "Category": "Allmänt",
     "Difficulty": "Hard"
   },
@@ -103807,7 +103735,7 @@
   },
   {
     "Word": "FJOLÅRSMÄSTARE",
-    "Clue": "Föregående år, i fjol + person som behärskar något till fullo",
+    "Clue": "Var bäst förra året",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -103855,7 +103783,7 @@
   },
   {
     "Word": "FJORDLAX",
-    "Clue": "En djup och smal havsvik omgiven av bran… + salmo salar; större, avlång",
+    "Clue": "Odlad fisk från Norge",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -105362,12 +105290,6 @@
   {
     "Word": "FLATSTIFTSSÄKRINGSSATS",
     "Clue": "Platt och tunn + nål + den minsta grammatiska enhet som fullstä…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "FLATSTIFTSSÄKRINGSTESTARE",
-    "Clue": "Platt och tunn + nål + person som testar",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -107917,7 +107839,7 @@
   },
   {
     "Word": "FLYTJORD",
-    "Clue": "Det att något flyter + material bestående av en blandning av lö…",
+    "Clue": "\"Terra\" som fått så hög vattenhalt att den förlorat stabiliteten och kommit i rörelse längs en sluttning",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -115969,7 +115891,7 @@
   },
   {
     "Word": "FRONTLASTARE",
-    "Clue": "Linje som utgör gräns mellan stridande p… + lastare",
+    "Clue": "Lyftanordning som kan monteras på traktor",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -117103,7 +117025,7 @@
   },
   {
     "Word": "FRÄLSEJORD",
-    "Clue": "Från skatt fritagen; adlig + material bestående av en blandning av lö…",
+    "Clue": "Mark som var befriad från skatt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -119737,7 +119659,7 @@
   },
   {
     "Word": "FYRMÄSTARE",
-    "Clue": "Benämning av runan ᚠ i den medeltida run… + person som behärskar något till fullo",
+    "Clue": "Agaboss",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -119815,7 +119737,7 @@
   },
   {
     "Word": "FYRSIFFRIG",
-    "Clue": "Som skrivs med fyra siffror (d.v.s. 1&nbsp;000–9&nbsp;999 om inledande nollor inte är tillåtna)",
+    "Clue": "Som skrivs med fyra siffror",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -120139,7 +120061,7 @@
   },
   {
     "Word": "FYRTIOTUSEN",
-    "Clue": "Benämning av runan ᚠ i den medeltida run… + ett tal, 10&nbsp;000",
+    "Clue": "Antalet miljarder kronor som motsvaras av 400 000 euro enligt felräknande riksdagsledamot",
     "Category": "Allmänt",
     "Difficulty": "Hard"
   },
@@ -121267,7 +121189,7 @@
   },
   {
     "Word": "FÄDERNEJORD",
-    "Clue": "Släktskap på faderns sida + material bestående av en blandning av lö…",
+    "Clue": "Hemtrakt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -121837,7 +121759,7 @@
   },
   {
     "Word": "FÄRDIGGJORD",
-    "Clue": "I ett tillstånd där inget saknas eller ä… + ; som har utförts",
+    "Clue": "Är syssla som har utförts till fullo",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -126043,7 +125965,7 @@
   },
   {
     "Word": "FÖRGJORD",
-    "Clue": "Som är fysiskt kapabel att utföra arbete… + ; som har utförts",
+    "Clue": "Utraderad",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -128341,7 +128263,7 @@
   },
   {
     "Word": "FÖRMODLIGEN",
-    "Clue": "Med en sannolikhet större än 50&nbsp;%",
+    "Clue": "Antagligen",
     "Category": "Adverb",
     "Difficulty": "Hard"
   },
@@ -135355,7 +135277,7 @@
   },
   {
     "Word": "GAMMASTRÅLNING",
-    "Clue": "Elektromagnetisk strålning med våglängder under 10−11&nbsp",
+    "Clue": "Elektromagnetisk strålning med mycket kort våglängd",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -139609,7 +139531,7 @@
   },
   {
     "Word": "GIGAHERTZ",
-    "Clue": "Enheten 1&nbsp;000&nbsp;000&nbsp;000&nbsp;hertz",
+    "Clue": "GHz",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -140227,7 +140149,7 @@
   },
   {
     "Word": "GJORD",
-    "Clue": "; som har utförts, förekommit, skett eller ägt rum",
+    "Clue": "Brett starkt band till sadlar och dylikt",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -146899,7 +146821,7 @@
   },
   {
     "Word": "GRÅ",
-    "Clue": "Som är blandning av svart och vit; som har färgen mellan mörkgrå: &nbsp; och ljusgrå: &nbsp;",
+    "Clue": "Askfärgad eller mulen",
     "Category": "Adjektiv",
     "Difficulty": "Easy"
   },
@@ -147397,7 +147319,7 @@
   },
   {
     "Word": "GRÄDDOST",
-    "Clue": "Mild ost med minst 60&nbsp;% fett i torrsubstans",
+    "Clue": "Komjölksprodukt",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -147427,7 +147349,7 @@
   },
   {
     "Word": "GRÄDDVIT",
-    "Clue": "Som har samma färg som grädde; vit med gulaktig nyans: &nbsp;",
+    "Clue": "Krämfärgad",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -149377,7 +149299,7 @@
   },
   {
     "Word": "GULLMARSFJORDEN",
-    "Clue": "Som har färgen gult + lmarsfjorden",
+    "Clue": "Havsvik i mellersta Bohuslän, Sveriges bäst utbildade fjord",
     "Category": "Egennamn",
     "Difficulty": "Hard"
   },
@@ -150517,7 +150439,7 @@
   },
   {
     "Word": "GÅGATA",
-    "Clue": "Gata tillåten endast för gångtrafik och (med vissa restriktioner) fordonstrafik i gånghastighet (högst cirka 7&nbsp",
+    "Clue": "Väg avsedd för fotgängare",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -153031,7 +152953,7 @@
   },
   {
     "Word": "HALV",
-    "Clue": "Till 50&nbsp;%, bestående av en av två lika stora delar (50&nbsp;%) av något",
+    "Clue": "Femtioprocentig",
     "Category": "Adjektiv",
     "Difficulty": "Easy"
   },
@@ -153049,21 +152971,9 @@
   },
   {
     "Word": "HALVAPA",
-    "Clue": "Till 50&nbsp + att apa efter: att härma någon",
+    "Clue": "Är lemur en",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVASIAT",
-    "Clue": "Till 50&nbsp + person från asien",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVASIATISK",
-    "Clue": "Till 50&nbsp + som har att göra med asien",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "HALVAUTOMATISK",
@@ -153072,14 +152982,8 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "HALVBESK",
-    "Clue": "Till 50&nbsp + malörtsbrännvin",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "HALVBILDAD",
-    "Clue": "Till 50&nbsp + – skapad",
+    "Clue": "Som bara har ytlig kunskap",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -153102,12 +153006,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "HALVCELLULOSA",
-    "Clue": "Till 50&nbsp + polysackarid som utgör huvuddelen i växt…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "HALVCIRKEL",
     "Clue": "En halv cirkel (så att ena randen utgöres av det som tidigare hade kallats en diameter)",
     "Category": "Substantiv",
@@ -153122,12 +153020,6 @@
   {
     "Word": "HALVCIRKELFORMIG",
     "Clue": "Variant av halvcirkelformad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HALVCIVILISERAD",
-    "Clue": "Till 50&nbsp + ; som civiliserats",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -153157,13 +153049,13 @@
   },
   {
     "Word": "HALVDÅSA",
-    "Clue": "Till 50&nbsp + sova lätt eller halvsova; lata sig, slöa",
+    "Clue": "Slumra lite smått",
     "Category": "Verb",
     "Difficulty": "Medium"
   },
   {
     "Word": "HALVDÄCKAD",
-    "Clue": "Till 50&nbsp + försedd med däck, täckt;",
+    "Clue": "Delvis täckt båt eller utslagen",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -153175,27 +153067,9 @@
   },
   {
     "Word": "HALVDÖV",
-    "Clue": "Till 50&nbsp + som saknar förmåga att höra",
+    "Clue": "Lomhörd",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVELLIPTISK",
-    "Clue": "Till 50&nbsp + formad som en ellips",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HALVEMPIRISK",
-    "Clue": "Till 50&nbsp + upptäckt genom experiment",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HALVENSKILD",
-    "Clue": "Till 50&nbsp + som relaterar till endast en människa el…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "HALVERA",
@@ -153217,27 +153091,15 @@
   },
   {
     "Word": "HALVFART",
-    "Clue": "Till 50&nbsp + absolutbeloppet av hastigheten",
+    "Clue": "Studietakt",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVFERRITISK",
-    "Clue": "Till 50&nbsp + som har med allotrop av grundämnet järn…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "HALVFET",
     "Clue": "Med omkring 16% fett i hela osten",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "HALVFNOSKIG",
-    "Clue": "Till 50&nbsp + som beter sig som en tok",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "HALVFULL",
@@ -153247,7 +153109,7 @@
   },
   {
     "Word": "HALVFYLLD",
-    "Clue": "Till 50&nbsp + som fyllts av konkret eller abstrakt inn…",
+    "Clue": "Är en behållare enligt optimist?",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -164317,7 +164179,7 @@
   },
   {
     "Word": "HOVSTALLMÄSTARE",
-    "Clue": "Den hornbeklädda delen av foten hos udda… + stallmästare",
+    "Clue": "Leder de kungliga springarna",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -167917,7 +167779,7 @@
   },
   {
     "Word": "HYTTMÄSTARE",
-    "Clue": "Litet rum eller utrymme på fordon eller… + person som behärskar något till fullo",
+    "Clue": "Specialiserad arbetsledare inom ett glasbruk som ansvarar för produktionen",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -179563,7 +179425,7 @@
   },
   {
     "Word": "INKASTARE",
-    "Clue": "Inka + en art (sturnus vulgaris) inom fågelfami…",
+    "Clue": "Lockar förbipasserande",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -213553,7 +213415,7 @@
   },
   {
     "Word": "KONGREGATIONALIST",
-    "Clue": "En 3-dimensionell geometrisk figur som e… + gregationalist",
+    "Clue": "En medlem i en kyrka där varje lokal församling är självstyrande och oberoende",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -226537,7 +226399,7 @@
   },
   {
     "Word": "KVARNMÄSTARE",
-    "Clue": "(mindre) apparat eller maskin avsedd för… + person som behärskar något till fullo",
+    "Clue": "Mjölnare",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -233545,7 +233407,7 @@
   },
   {
     "Word": "LANTMÄSTARE",
-    "Clue": "Att lana refererar till att delta i ett… + tmästare",
+    "Clue": "En expert inom lantbruk, företagande och landsbygdsutveckling",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -234037,7 +233899,7 @@
   },
   {
     "Word": "LASTARE",
-    "Clue": "Det ett fordon transporterar + storhet, storleken av en yta",
+    "Clue": "Kan ses med hjul och front",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -241576,12 +241438,6 @@
     "Clue": "Englands och Storbritanniens huvudstad",
     "Category": "Egennamn",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "LONDONBORGMÄSTARE",
-    "Clue": "Englands och Storbritanniens huvudstad + titel för lokal befattningshavare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "LONDONTRAFIK",
@@ -250495,7 +250351,7 @@
   },
   {
     "Word": "MAGBORSTARE",
-    "Clue": "Ett organ i bukhålan, under mellangärdet + ett grundämne med atomnummer 5 + en art…",
+    "Clue": "Sup",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -277500,12 +277356,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "NEDRUSTARE",
-    "Clue": "Som är belägen längre ned än något annat + en art (sturnus vulgaris) inom fågelfami…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "NEDRUSTNING",
     "Clue": "Minskning av militära resurser (främst vapen)",
     "Category": "Substantiv",
@@ -298699,7 +298549,7 @@
   },
   {
     "Word": "OMKASTARE",
-    "Clue": "Om-/på nytt indisk klass eller socialgru… + storhet, storleken av en yta",
+    "Clue": "Styr om vatten till t.ex. handdusch",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -324205,7 +324055,7 @@
   },
   {
     "Word": "POSTMÄSTARE",
-    "Clue": "Organisation som befordrar brev och pake… + person som behärskar något till fullo",
+    "Clue": "Föreståndare för brevverksamhet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -346693,7 +346543,7 @@
   },
   {
     "Word": "RISTARE",
-    "Clue": "Skapa mönster eller fördjupningar i någo… + storhet, storleken av en yta",
+    "Clue": "Person som gör skåror, t.ex. runor",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -348700,12 +348550,6 @@
     "Clue": "Ett brunrött poröst material bestående a… + direkt anfall eller attack",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ROSTARE",
-    "Clue": "Ett brunrött poröst material bestående a… + storhet, storleken av en yta",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ROSTBESTÄNDIG",
@@ -350881,7 +350725,7 @@
   },
   {
     "Word": "RUSTMÄSTARE",
-    "Clue": "Skaffa krigsmateriel + person som behärskar något till fullo",
+    "Clue": "Ansvarar för ammunition, vapen och vapenvård inom ett kompani",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -353353,7 +353197,7 @@
   },
   {
     "Word": "RÄNTMÄSTARE",
-    "Clue": "Pris på utlånad summa pengar + person som behärskar något till fullo",
+    "Clue": "Ekonomisk förvaltare på myndighet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -376020,12 +375864,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "SKOPLASTARE",
-    "Clue": "Nyhet som en tidning är ensam om + lastare",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "SKOPLÖS",
     "Clue": "(ofta hårdare) fotbeklädnad + mjuk, tungformad del av sko som täcker f…",
     "Category": "Adjektiv",
@@ -376135,7 +375973,7 @@
   },
   {
     "Word": "SKORSTENSFEJARMÄSTARE",
-    "Clue": "Sotare + person som behärskar något till fullo",
+    "Clue": "Person som är ansvarig för ett sotningsdistrikt eller som är arbetsledare vid sotning",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -385855,7 +385693,7 @@
   },
   {
     "Word": "SMEDMÄSTARE",
-    "Clue": "Person som arbetar med smide + person som behärskar något till fullo",
+    "Clue": "Skicklig städman?",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -401599,7 +401437,7 @@
   },
   {
     "Word": "STARE",
-    "Clue": "En art (Sturnus vulgaris) inom fågelfamiljen starar (Sturnidae); individ av arten stare",
+    "Clue": "Sturnus vulgaris",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -407923,7 +407761,7 @@
   },
   {
     "Word": "STRÖMSTARE",
-    "Clue": "En art (Cinclus cinclus) inom fågelfamiljen strömstarar (Cinclidae) vars individer är små mörka fåglar med en stor vit bröstfläck som brukar sitta vid åar och älvar; individ av arten strömstare",
+    "Clue": "Fågel som kan springa på botten",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -438979,7 +438817,7 @@
   },
   {
     "Word": "TREMASTARE",
-    "Clue": "Talet 3 mellan två och fyra + mastare",
+    "Clue": "Kan en en segelbåt kallas",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -446527,7 +446365,7 @@
   },
   {
     "Word": "TVÅMASTARE",
-    "Clue": "Grundtalet 2 mellan ett och tre + mastare",
+    "Clue": "Mindre segelbåt",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -456712,12 +456550,6 @@
     "Clue": "Händelse där en + tätort (oftast med många invånare och me…",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "UPPRUSTARE",
-    "Clue": "Händelse där en + en art (sturnus vulgaris) inom fågelfami…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "UPPRUSTNING",
@@ -473977,7 +473809,7 @@
   },
   {
     "Word": "VERKMÄSTARE",
-    "Clue": "Något som har skapats eller åstadkommits… + person som behärskar något till fullo",
+    "Clue": "Arbetsledare",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -488317,7 +488149,7 @@
   },
   {
     "Word": "YSTARE",
-    "Clue": "Tillverka ost + storhet, storleken av en yta",
+    "Clue": "Osttillverkare",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -498774,12 +498606,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ÖRTAGÅRDSMÄSTARE",
-    "Clue": "Växt med ej förvedade + området runt ett… + person som behärskar något till fullo",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ÖRTARTAD",
     "Clue": "Av växt med ej förvedade art",
     "Category": "Adjektiv",
@@ -499669,7 +499495,7 @@
   },
   {
     "Word": "ÖVERCEREMONIMÄSTARE",
-    "Clue": "Motsvara dam + ceremonimästare",
+    "Clue": "Funktionär, t.ex. vid ett hov, med det högsta ansvaret för att allt går regelmässigt till vid högtidligheter",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
