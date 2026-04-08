@@ -73,7 +73,6 @@ SwedishCrosswords/
 |   |   |-- integritetspolicy.html # Privacy policy
 |   |   |-- sitemap.xml            # SEO sitemap
 |   |   |-- robots.txt             # Crawler directives
-|   |   |-- ads.txt                # Google AdSense verification
 |   |   |-- site.webmanifest       # PWA manifest
 |   |   |-- favicon.ico            # Favicon
 |   |   |-- favicon-16x16.png      # 16×16 favicon
@@ -252,7 +251,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Leaderboard**: Cloudflare Workers backed by Cloudflare KV; top 3 entries shown with medal podium (??????); historical scores stored with 90-day TTL and per-puzzle grouping so multiple puzzles on the same date are displayed separately
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 - **Infrastructure**: Worker source and docs live under `infrastructure/cloudflare-worker/`
-- **Analytics**: Google AdSense (optional)
+<!-- - **Analytics**: Google AdSense (optional) -->
 
 ## License
 
