@@ -1,5 +1,7 @@
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Threading.RateLimiting;
+using Microsoft.AspNetCore.RateLimiting;
 using SwedishCrossword.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,14 +14,47 @@ builder.Services.AddSingleton<CrosswordGenerator>();
 builder.Services.AddSingleton<PrintService>();
 builder.Services.AddSingleton<LeaderboardStore>();
 
-// CORS — allow the frontend origin (tighten in production via appsettings)
+// Health checks
+builder.Services.AddHealthChecks();
+
+// Rate limiting
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+    options.AddFixedWindowLimiter("generate", opt =>
+    {
+        opt.Window = TimeSpan.FromMinutes(1);
+        opt.PermitLimit = 5;
+        opt.QueueLimit = 0;
+    });
+
+    options.AddFixedWindowLimiter("leaderboard-write", opt =>
+    {
+        opt.Window = TimeSpan.FromMinutes(1);
+        opt.PermitLimit = 30;
+        opt.QueueLimit = 0;
+    });
+});
+
+// CORS — configurable via Cors:AllowedOrigins in appsettings (use ["*"] to allow all)
+var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        if (allowedOrigins is { Length: > 0 } && !allowedOrigins.Contains("*"))
+        {
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        }
+        else
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        }
     });
 });
 
@@ -32,6 +67,7 @@ if (string.IsNullOrWhiteSpace(puzzlePath))
 Directory.CreateDirectory(puzzlePath);
 
 app.UseCors();
+app.UseRateLimiter();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
@@ -95,7 +131,7 @@ app.MapPost("/api/puzzle/generate", async (GenerateRequest? request, PrintServic
     var puzzle = await generator.GenerateAsync(options);
     var json = printService.GenerateJsonForWeb(puzzle);
     return Results.Content(json, "application/json");
-});
+}).RequireRateLimiting("generate");
 
 // ---------------------------------------------------------------------------
 // Leaderboard endpoints (replaces Cloudflare Worker)
@@ -123,7 +159,7 @@ app.MapPut("/api/leaderboard", async (HttpRequest request, LeaderboardStore stor
 
     await store.SaveCurrentAsync(root);
     return Results.Ok(new { success = true });
-});
+}).RequireRateLimiting("leaderboard-write");
 
 app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, LeaderboardStore store) =>
 {
@@ -139,7 +175,7 @@ app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, L
 
     await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash));
     return Results.Ok(new { ok = true });
-});
+}).RequireRateLimiting("leaderboard-write");
 
 app.MapGet("/api/leaderboard/history", async (int? days, LeaderboardStore store) =>
 {
@@ -160,6 +196,8 @@ app.MapGet("/api/stats", (SwedishDictionary dictionary) =>
         availableDifficulties = new[] { "easy", "medium", "hard", "small" }
     });
 });
+
+app.MapHealthChecks("/api/health");
 
 app.Run();
 
@@ -289,3 +327,6 @@ sealed class LeaderboardStore
     private string GetHistoryPath(string date) =>
         Path.Combine(_dataDir, "history", $"{date}.json");
 }
+
+// Make Program accessible to WebApplicationFactory in integration tests
+public partial class Program { }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedishCrossword.Core", "Sw
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedishCrossword.Api", "SwedishCrossword.Api\SwedishCrossword.Api.csproj", "{574CB46F-06E5-414A-8576-3235A38CF3D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedishCrossword.Api.Tests", "SwedishCrossword.Api.Tests\SwedishCrossword.Api.Tests.csproj", "{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{574CB46F-06E5-414A-8576-3235A38CF3D6}.Release|x64.Build.0 = Release|Any CPU
 		{574CB46F-06E5-414A-8576-3235A38CF3D6}.Release|x86.ActiveCfg = Release|Any CPU
 		{574CB46F-06E5-414A-8576-3235A38CF3D6}.Release|x86.Build.0 = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x64.Build.0 = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
