@@ -149,7 +149,8 @@ The `infra/main.bicep` template provisions everything needed:
 # 1. Create a resource group
 az group create --name rg-svensktkorsord --location swedencentral
 
-# 2. Deploy infrastructure (includes ACR pull role assignment)
+# 2. Deploy infrastructure (uses a placeholder image — no real image needed yet)
+#    This also creates the ACR pull role assignment (requires Owner / User Access Administrator)
 az deployment group create \
   --resource-group rg-svensktkorsord \
   --template-file infra/main.bicep
@@ -158,9 +159,11 @@ az deployment group create \
 ACR_NAME=$(az deployment group show -g rg-svensktkorsord -n main --query 'properties.outputs.acrName.value' -o tsv)
 az acr build --registry $ACR_NAME --image svensktkorsord:latest .
 
-# 4. Update the container app with the built image
-ACR_LOGIN=$(az deployment group show -g rg-svensktkorsord -n main --query 'properties.outputs.acrLoginServer.value' -o tsv)
-az containerapp update --name svensktkorsord --resource-group rg-svensktkorsord --image $ACR_LOGIN/svensktkorsord:latest
+# 4. Re-deploy infrastructure with the real image tag to wire up ACR registry
+az deployment group create \
+  --resource-group rg-svensktkorsord \
+  --template-file infra/main.bicep \
+  --parameters imageTag=latest
 ```
 
 **CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires three repository secrets:

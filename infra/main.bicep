@@ -19,8 +19,8 @@ param appName string = 'svensktkorsord'
 @description('Azure region for all resources')
 param location string = resourceGroup().location
 
-@description('Container image tag — set by CI/CD, defaults to latest')
-param imageTag string = 'latest'
+@description('Container image tag — set by CI/CD, defaults to empty for first deploy')
+param imageTag string = ''
 
 @description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
 param createRoleAssignment bool = true
@@ -138,9 +138,13 @@ resource envStorage 'Microsoft.App/managedEnvironments/storages@2024-03-01' = {
   }
 }
 
-// ---------------------------------------------------------------------------
-// Container App
-// ---------------------------------------------------------------------------
+// On first deploy imageTag is empty — use a public placeholder so the Container
+// App can be created before anything is pushed to ACR.  CI/CD always provides a
+// real tag, which overrides this.
+var hasImage = imageTag != ''
+var containerImage = hasImage
+  ? '${acr.properties.loginServer}/${appName}:${imageTag}'
+  : 'mcr.microsoft.com/k8se/quickstart:latest'
 resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
   name: appName
   location: location
@@ -159,18 +163,20 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         transport: 'auto'
         allowInsecure: false
       }
-      registries: [
-        {
-          server: acr.properties.loginServer
-          identity: identity.id
-        }
-      ]
+      registries: hasImage
+        ? [
+            {
+              server: acr.properties.loginServer
+              identity: identity.id
+            }
+          ]
+        : []
     }
     template: {
       containers: [
         {
           name: 'api'
-          image: '${acr.properties.loginServer}/${appName}:${imageTag}'
+          image: containerImage
           resources: {
             cpu: json('0.25')
             memory: '0.5Gi'
