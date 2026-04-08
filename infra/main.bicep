@@ -178,12 +178,13 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
           name: 'api'
           image: containerImage
           resources: {
-            cpu: json('0.25')
-            memory: '0.5Gi'
+            cpu: json('0.5')
+            memory: '1Gi'
           }
           env: [
             { name: 'Storage__PuzzlePath', value: '/data/puzzles' }
             { name: 'Storage__LeaderboardPath', value: '/data/leaderboard' }
+            { name: 'SWEDISH_CROSSWORD_CACHE_PATH', value: '/data/cache' }
             { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
           ]
           volumeMounts: [

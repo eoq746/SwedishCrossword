@@ -40,6 +40,7 @@ VOLUME ["/data"]
 ENV ASPNETCORE_URLS=http://+:8080
 ENV Storage__PuzzlePath=/data/puzzles
 ENV Storage__LeaderboardPath=/data/leaderboard
+ENV SWEDISH_CROSSWORD_CACHE_PATH=/data/cache
 
 EXPOSE 8080
 
