@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SwedishCrossword\SwedishCrossword.csproj" />
+    <ProjectReference Include="..\SwedishCrossword.Core\SwedishCrossword.Core.csproj" />
   </ItemGroup>
 
 </Project>
