@@ -44,7 +44,7 @@ jobs:
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
-            --parameters appName=$APP_NAME imageTag=${{ github.sha }} \
+            --parameters appName=$APP_NAME imageTag=${{ github.sha }} createRoleAssignment=false \
             --query 'properties.outputs' \
             --output json)
 

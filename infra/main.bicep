@@ -12,6 +12,7 @@
 // The CI/CD workflow (deploy-azure.yml) handles image build + app updates.
 // ---------------------------------------------------------------------------
 
+@minLength(3)
 @description('Base name used to derive all resource names')
 param appName string = 'svensktkorsord'
 
@@ -20,6 +21,9 @@ param location string = resourceGroup().location
 
 @description('Container image tag — set by CI/CD, defaults to latest')
 param imageTag string = 'latest'
+
+@description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
+param createRoleAssignment bool = true
 
 // Deterministic suffix for globally unique names
 var suffix = uniqueString(resourceGroup().id, appName)
@@ -53,7 +57,7 @@ var acrPullRoleId = subscriptionResourceId(
   '7f951dda-4ed3-4680-a7ca-43fe172d538d'
 )
 
-resource acrPullAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
+resource acrPullAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (createRoleAssignment) {
   name: guid(acr.id, identity.id, acrPullRoleId)
   scope: acr
   properties: {

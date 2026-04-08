@@ -143,13 +143,13 @@ The `infra/main.bicep` template provisions everything needed:
 | Log Analytics Workspace | Container logs and monitoring |
 | User-Assigned Managed Identity | Secure ACR pull (no admin credentials) |
 
-**One-time setup:**
+**One-time setup (run manually with your own Azure CLI identity — creates the role assignment that CI/CD skips):**
 
 ```bash
 # 1. Create a resource group
 az group create --name rg-svensktkorsord --location swedencentral
 
-# 2. Deploy infrastructure
+# 2. Deploy infrastructure (includes ACR pull role assignment)
 az deployment group create \
   --resource-group rg-svensktkorsord \
   --template-file infra/main.bicep
@@ -163,7 +163,7 @@ ACR_LOGIN=$(az deployment group show -g rg-svensktkorsord -n main --query 'prope
 az containerapp update --name svensktkorsord --resource-group rg-svensktkorsord --image $ACR_LOGIN/svensktkorsord:latest
 ```
 
-**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`.
+**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires three repository secrets:
 - `AZURE_CLIENT_ID` — App registration client ID (OIDC)
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
