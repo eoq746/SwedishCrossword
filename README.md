@@ -83,8 +83,11 @@ SwedishCrosswords/
 |-- SwedishCrossword.Tests/         # TUnit test project
 |-- SwedishCrossword.Api.Tests/     # API integration tests
 |-- Dockerfile                      # Container build for the API
+|-- infra/                          # Azure infrastructure (Bicep)
+|   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
 +-- .github/workflows/              # GitHub Actions
-    +-- daily-crossword.yml         # Daily puzzle generation, tests & deployment
+    |-- daily-crossword.yml         # Daily puzzle generation & tests
+    +-- deploy-azure.yml            # Build, push & deploy to Azure Container Apps
 ```
 
 ## Getting Started
@@ -127,6 +130,43 @@ docker run -p 8080:8080 -v crossword-data:/data svensktkorsord-api
 ```
 
 Puzzles and leaderboard data are persisted in the `/data` volume.
+
+### Deploying to Azure Container Apps
+
+The `infra/main.bicep` template provisions everything needed:
+
+| Resource | Purpose |
+|----------|--------|
+| Azure Container Registry | Hosts the Docker image (Basic SKU) |
+| Container Apps Environment | Serverless container host |
+| Storage Account + Azure Files | Persistent `/data` volume for puzzles & leaderboard |
+| Log Analytics Workspace | Container logs and monitoring |
+| User-Assigned Managed Identity | Secure ACR pull (no admin credentials) |
+
+**One-time setup:**
+
+```bash
+# 1. Create a resource group
+az group create --name rg-svensktkorsord --location swedencentral
+
+# 2. Deploy infrastructure
+az deployment group create \
+  --resource-group rg-svensktkorsord \
+  --template-file infra/main.bicep
+
+# 3. Build and push the first image
+ACR_NAME=$(az deployment group show -g rg-svensktkorsord -n main --query 'properties.outputs.acrName.value' -o tsv)
+az acr build --registry $ACR_NAME --image svensktkorsord:latest .
+
+# 4. Update the container app with the built image
+ACR_LOGIN=$(az deployment group show -g rg-svensktkorsord -n main --query 'properties.outputs.acrLoginServer.value' -o tsv)
+az containerapp update --name svensktkorsord --resource-group rg-svensktkorsord --image $ACR_LOGIN/svensktkorsord:latest
+```
+
+**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `main`. It requires three repository secrets:
+- `AZURE_CLIENT_ID` — App registration client ID (OIDC)
+- `AZURE_TENANT_ID` — Entra ID tenant
+- `AZURE_SUBSCRIPTION_ID` — Target subscription
 
 ### Running the CLI Generator
 

@@ -1,0 +1,100 @@
+name: Deploy to Azure Container Apps
+
+# Triggers: push to main or manual dispatch
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '*.md'
+      - '.github/workflows/daily-crossword.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # Required for Azure OIDC login
+  contents: read
+
+env:
+  RESOURCE_GROUP: rg-svensktkorsord
+  LOCATION: swedencentral
+  APP_NAME: svensktkorsord
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Azure Login (OIDC)
+        uses: azure/login@a65d910e8af852a8061c627c456678983e180302 # v2.2.0
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      # ------------------------------------------------------------------
+      # 1. Provision / update infrastructure (idempotent)
+      # ------------------------------------------------------------------
+      - name: Create Resource Group
+        run: az group create --name $RESOURCE_GROUP --location $LOCATION
+
+      - name: Deploy Infrastructure (Bicep)
+        id: infra
+        run: |
+          RESULT=$(az deployment group create \
+            --resource-group $RESOURCE_GROUP \
+            --template-file infra/main.bicep \
+            --parameters appName=$APP_NAME imageTag=${{ github.sha }} \
+            --query 'properties.outputs' \
+            --output json)
+
+          ACR_NAME=$(echo "$RESULT" | jq -r '.acrName.value')
+          ACR_LOGIN=$(echo "$RESULT" | jq -r '.acrLoginServer.value')
+          APP_URL=$(echo "$RESULT" | jq -r '.appUrl.value')
+
+          echo "acr_name=$ACR_NAME" >> "$GITHUB_OUTPUT"
+          echo "acr_login=$ACR_LOGIN" >> "$GITHUB_OUTPUT"
+          echo "app_url=$APP_URL" >> "$GITHUB_OUTPUT"
+
+      # ------------------------------------------------------------------
+      # 2. Build & push container image via ACR Tasks (no local Docker needed)
+      # ------------------------------------------------------------------
+      - name: Build & Push Image
+        run: |
+          az acr build \
+            --registry ${{ steps.infra.outputs.acr_name }} \
+            --image $APP_NAME:${{ github.sha }} \
+            --image $APP_NAME:latest \
+            .
+
+      # ------------------------------------------------------------------
+      # 3. Update the Container App to the new image
+      # ------------------------------------------------------------------
+      - name: Deploy Container App
+        run: |
+          az containerapp update \
+            --name $APP_NAME \
+            --resource-group $RESOURCE_GROUP \
+            --image ${{ steps.infra.outputs.acr_login }}/$APP_NAME:${{ github.sha }}
+
+      # ------------------------------------------------------------------
+      # 4. Verify deployment
+      # ------------------------------------------------------------------
+      - name: Verify Health
+        run: |
+          APP_URL="${{ steps.infra.outputs.app_url }}"
+          echo "🚀 Deployed to: $APP_URL"
+
+          # Wait for the app to start (up to 60s)
+          for i in $(seq 1 12); do
+            STATUS=$(curl -s -o /dev/null -w '%{http_code}' "$APP_URL/api/health" 2>/dev/null || echo "000")
+            if [ "$STATUS" = "200" ]; then
+              echo "✅ Health check passed"
+              exit 0
+            fi
+            echo "  Waiting for health check... (attempt $i, status: $STATUS)"
+            sleep 5
+          done
+
+          echo "⚠️ Health check did not return 200 within 60s (last status: $STATUS)"
+          echo "  The app may still be starting up — check the Azure portal."
