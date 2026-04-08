@@ -1,3 +1,6 @@
+using System.Collections.Concurrent;
+using System.Text.Json;
+using System.Text.RegularExpressions;
 using SwedishCrossword.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,8 +11,9 @@ builder.Services.AddSingleton<GridValidator>();
 builder.Services.AddSingleton<ClueGenerator>();
 builder.Services.AddSingleton<CrosswordGenerator>();
 builder.Services.AddSingleton<PrintService>();
+builder.Services.AddSingleton<LeaderboardStore>();
 
-// CORS — allow the frontend origin (tighten in production)
+// CORS — allow the frontend origin (tighten in production via appsettings)
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -23,17 +27,13 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseCors();
+app.UseDefaultFiles();
 app.UseStaticFiles();
 
 // ---------------------------------------------------------------------------
 // Puzzle endpoints
 // ---------------------------------------------------------------------------
 
-/// <summary>
-/// GET /api/puzzle/today — returns today's puzzle JSON.
-/// If a pre-generated file exists for today it is served directly;
-/// otherwise a new puzzle is generated on the fly.
-/// </summary>
 app.MapGet("/api/puzzle/today", async (PrintService printService, CrosswordGenerator generator) =>
 {
     var todayFile = GetPuzzlePath(DateOnly.FromDateTime(DateTime.UtcNow));
@@ -44,26 +44,19 @@ app.MapGet("/api/puzzle/today", async (PrintService printService, CrosswordGener
         return Results.Content(json, "application/json");
     }
 
-    // Generate on demand
     var puzzle = await generator.GenerateAsync(CrosswordGenerationOptions.Hard);
     var content = printService.GenerateJsonForWeb(puzzle);
 
-    // Persist so subsequent requests are fast
     Directory.CreateDirectory(Path.GetDirectoryName(todayFile)!);
     await File.WriteAllTextAsync(todayFile, content);
 
     return Results.Content(content, "application/json");
 });
 
-/// <summary>
-/// GET /api/puzzle/{date} — returns the puzzle for a specific date (yyyy-MM-dd).
-/// </summary>
 app.MapGet("/api/puzzle/{date}", async (string date, PrintService printService, CrosswordGenerator generator) =>
 {
     if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", out var parsedDate))
-    {
         return Results.BadRequest(new { error = "Invalid date format. Use yyyy-MM-dd." });
-    }
 
     var puzzleFile = GetPuzzlePath(parsedDate);
 
@@ -73,11 +66,8 @@ app.MapGet("/api/puzzle/{date}", async (string date, PrintService printService, 
         return Results.Content(json, "application/json");
     }
 
-    // Only allow generating today or future puzzles on demand
     if (parsedDate < DateOnly.FromDateTime(DateTime.UtcNow))
-    {
         return Results.NotFound(new { error = "No puzzle available for the requested date." });
-    }
 
     var puzzle = await generator.GenerateAsync(CrosswordGenerationOptions.Hard);
     var content = printService.GenerateJsonForWeb(puzzle);
@@ -88,10 +78,6 @@ app.MapGet("/api/puzzle/{date}", async (string date, PrintService printService, 
     return Results.Content(content, "application/json");
 });
 
-/// <summary>
-/// POST /api/puzzle/generate — generates a fresh puzzle with optional difficulty.
-/// Body (optional): { "difficulty": "easy" | "medium" | "hard" | "small" }
-/// </summary>
 app.MapPost("/api/puzzle/generate", async (GenerateRequest? request, PrintService printService, CrosswordGenerator generator) =>
 {
     var options = (request?.Difficulty?.ToLowerInvariant()) switch
@@ -105,12 +91,62 @@ app.MapPost("/api/puzzle/generate", async (GenerateRequest? request, PrintServic
 
     var puzzle = await generator.GenerateAsync(options);
     var json = printService.GenerateJsonForWeb(puzzle);
-
     return Results.Content(json, "application/json");
 });
 
 // ---------------------------------------------------------------------------
-// Dictionary / stats endpoints
+// Leaderboard endpoints (replaces Cloudflare Worker)
+// ---------------------------------------------------------------------------
+
+app.MapGet("/api/leaderboard", async (LeaderboardStore store) =>
+{
+    var data = await store.GetCurrentAsync();
+    return Results.Content(data, "application/json");
+});
+
+app.MapPut("/api/leaderboard", async (HttpRequest request, LeaderboardStore store) =>
+{
+    if (request.ContentLength > 50 * 1024)
+        return Results.StatusCode(413);
+
+    using var doc = await JsonDocument.ParseAsync(request.Body);
+    var root = doc.RootElement;
+
+    if (root.ValueKind != JsonValueKind.Object || !root.TryGetProperty("scores", out var scores) || scores.ValueKind != JsonValueKind.Object)
+        return Results.BadRequest(new { error = "Expected { scores: { ... } }" });
+
+    if (scores.EnumerateObject().Count() > 30)
+        return Results.BadRequest(new { error = "Too many leaderboard date keys" });
+
+    await store.SaveCurrentAsync(root);
+    return Results.Ok(new { success = true });
+});
+
+app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, LeaderboardStore store) =>
+{
+    if (string.IsNullOrWhiteSpace(body.Date) || !LeaderboardStore.DatePattern.IsMatch(body.Date))
+        return Results.BadRequest(new { error = "Invalid date format" });
+
+    if (body.Entry is null || body.Entry.Time < 0 || body.Entry.Time > 86400)
+        return Results.BadRequest(new { error = "Invalid entry" });
+
+    var name = LeaderboardStore.SanitiseName(body.Entry.Name);
+    if (string.IsNullOrWhiteSpace(name))
+        return Results.BadRequest(new { error = "Invalid name" });
+
+    await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash));
+    return Results.Ok(new { ok = true });
+});
+
+app.MapGet("/api/leaderboard/history", async (int? days, LeaderboardStore store) =>
+{
+    var d = Math.Clamp(days ?? 30, 1, 90);
+    var history = await store.GetHistoryAsync(d);
+    return Results.Ok(history);
+});
+
+// ---------------------------------------------------------------------------
+// Stats
 // ---------------------------------------------------------------------------
 
 app.MapGet("/api/stats", (SwedishDictionary dictionary) =>
@@ -139,3 +175,121 @@ static string GetPuzzlePath(DateOnly date)
 // ---------------------------------------------------------------------------
 
 record GenerateRequest(string? Difficulty);
+record LeaderboardHistoryRequest(string Date, LeaderboardEntry Entry);
+record LeaderboardEntry(string Name, double Time, string? Timestamp, string? PuzzleHash);
+record HistoryRecord(string Name, double Time, string? Timestamp, string? PuzzleHash);
+
+// ---------------------------------------------------------------------------
+// Leaderboard file store (replaces Cloudflare KV)
+// ---------------------------------------------------------------------------
+
+sealed class LeaderboardStore
+{
+    public static readonly Regex DatePattern = new(@"^\d{4}-\d{2}-\d{2}$", RegexOptions.Compiled);
+
+    private static readonly JsonSerializerOptions JsonOptions = new()
+    {
+        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+        WriteIndented = false
+    };
+
+    private readonly string _dataDir;
+    private readonly SemaphoreSlim _lock = new(1, 1);
+
+    public LeaderboardStore()
+    {
+        _dataDir = Path.Combine(AppContext.BaseDirectory, "leaderboard");
+        Directory.CreateDirectory(_dataDir);
+    }
+
+    public static string SanitiseName(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name)) return string.Empty;
+        return new string(name.Where(c => !char.IsControl(c)).ToArray()).Trim()[..Math.Min(name.Length, 30)];
+    }
+
+    // GET /leaderboard — return the current leaderboard JSON as-is
+    public async Task<string> GetCurrentAsync()
+    {
+        var path = Path.Combine(_dataDir, "current.json");
+        if (!File.Exists(path)) return "{}";
+        return await File.ReadAllTextAsync(path);
+    }
+
+    // PUT /leaderboard — overwrite the current leaderboard
+    public async Task SaveCurrentAsync(JsonElement data)
+    {
+        await _lock.WaitAsync();
+        try
+        {
+            var path = Path.Combine(_dataDir, "current.json");
+            await File.WriteAllTextAsync(path, data.GetRawText());
+        }
+        finally
+        {
+            _lock.Release();
+        }
+    }
+
+    // POST /leaderboard/history — append a record for a specific date
+    public async Task AppendHistoryAsync(string date, HistoryRecord record)
+    {
+        await _lock.WaitAsync();
+        try
+        {
+            var path = GetHistoryPath(date);
+            Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+
+            var existing = new List<HistoryRecord>();
+            if (File.Exists(path))
+            {
+                var json = await File.ReadAllTextAsync(path);
+                existing = JsonSerializer.Deserialize<List<HistoryRecord>>(json, JsonOptions) ?? [];
+            }
+
+            // Deduplicate
+            var isDuplicate = existing.Any(e =>
+                e.Name == record.Name && Math.Abs(e.Time - record.Time) < 0.001 && e.Timestamp == record.Timestamp);
+
+            if (!isDuplicate)
+            {
+                existing.Add(record);
+
+                // Keep top 10 per puzzle hash
+                var groups = existing.GroupBy(e => e.PuzzleHash ?? "_default");
+                var trimmed = groups.SelectMany(g => g.OrderBy(e => e.Time).Take(10)).ToList();
+
+                await File.WriteAllTextAsync(path, JsonSerializer.Serialize(trimmed, JsonOptions));
+            }
+        }
+        finally
+        {
+            _lock.Release();
+        }
+    }
+
+    // GET /leaderboard/history?days=N — return historical data
+    public async Task<Dictionary<string, List<HistoryRecord>>> GetHistoryAsync(int days)
+    {
+        var result = new Dictionary<string, List<HistoryRecord>>();
+        var today = DateTime.UtcNow.Date;
+
+        for (var i = 0; i < days; i++)
+        {
+            var date = today.AddDays(-i).ToString("yyyy-MM-dd");
+            var path = GetHistoryPath(date);
+            if (File.Exists(path))
+            {
+                var json = await File.ReadAllTextAsync(path);
+                var records = JsonSerializer.Deserialize<List<HistoryRecord>>(json, JsonOptions);
+                if (records is { Count: > 0 })
+                    result[date] = records;
+            }
+        }
+
+        return result;
+    }
+
+    private string GetHistoryPath(string date) =>
+        Path.Combine(_dataDir, "history", $"{date}.json");
+}
