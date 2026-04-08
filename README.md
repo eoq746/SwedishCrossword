@@ -163,7 +163,7 @@ ACR_LOGIN=$(az deployment group show -g rg-svensktkorsord -n main --query 'prope
 az containerapp update --name svensktkorsord --resource-group rg-svensktkorsord --image $ACR_LOGIN/svensktkorsord:latest
 ```
 
-**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `main`. It requires three repository secrets:
+**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`.
 - `AZURE_CLIENT_ID` — App registration client ID (OIDC)
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
