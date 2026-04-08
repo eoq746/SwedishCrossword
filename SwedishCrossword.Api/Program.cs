@@ -1,4 +1,3 @@
-using System.Collections.Concurrent;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using SwedishCrossword.Services;
@@ -26,6 +25,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+// Resolve configurable storage paths (override via env vars: Storage__PuzzlePath, Storage__LeaderboardPath)
+var puzzlePath = app.Configuration["Storage:PuzzlePath"];
+if (string.IsNullOrWhiteSpace(puzzlePath))
+    puzzlePath = Path.Combine(AppContext.BaseDirectory, "puzzles");
+Directory.CreateDirectory(puzzlePath);
+
 app.UseCors();
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -36,7 +41,7 @@ app.UseStaticFiles();
 
 app.MapGet("/api/puzzle/today", async (PrintService printService, CrosswordGenerator generator) =>
 {
-    var todayFile = GetPuzzlePath(DateOnly.FromDateTime(DateTime.UtcNow));
+    var todayFile = Path.Combine(puzzlePath, $"puzzle-{DateOnly.FromDateTime(DateTime.UtcNow):yyyy-MM-dd}.json");
 
     if (File.Exists(todayFile))
     {
@@ -47,7 +52,6 @@ app.MapGet("/api/puzzle/today", async (PrintService printService, CrosswordGener
     var puzzle = await generator.GenerateAsync(CrosswordGenerationOptions.Hard);
     var content = printService.GenerateJsonForWeb(puzzle);
 
-    Directory.CreateDirectory(Path.GetDirectoryName(todayFile)!);
     await File.WriteAllTextAsync(todayFile, content);
 
     return Results.Content(content, "application/json");
@@ -58,7 +62,7 @@ app.MapGet("/api/puzzle/{date}", async (string date, PrintService printService, 
     if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", out var parsedDate))
         return Results.BadRequest(new { error = "Invalid date format. Use yyyy-MM-dd." });
 
-    var puzzleFile = GetPuzzlePath(parsedDate);
+    var puzzleFile = Path.Combine(puzzlePath, $"puzzle-{parsedDate:yyyy-MM-dd}.json");
 
     if (File.Exists(puzzleFile))
     {
@@ -72,7 +76,6 @@ app.MapGet("/api/puzzle/{date}", async (string date, PrintService printService, 
     var puzzle = await generator.GenerateAsync(CrosswordGenerationOptions.Hard);
     var content = printService.GenerateJsonForWeb(puzzle);
 
-    Directory.CreateDirectory(Path.GetDirectoryName(puzzleFile)!);
     await File.WriteAllTextAsync(puzzleFile, content);
 
     return Results.Content(content, "application/json");
@@ -161,16 +164,6 @@ app.MapGet("/api/stats", (SwedishDictionary dictionary) =>
 app.Run();
 
 // ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-static string GetPuzzlePath(DateOnly date)
-{
-    var dataDir = Path.Combine(AppContext.BaseDirectory, "puzzles");
-    return Path.Combine(dataDir, $"puzzle-{date:yyyy-MM-dd}.json");
-}
-
-// ---------------------------------------------------------------------------
 // Request / response models
 // ---------------------------------------------------------------------------
 
@@ -196,9 +189,12 @@ sealed class LeaderboardStore
     private readonly string _dataDir;
     private readonly SemaphoreSlim _lock = new(1, 1);
 
-    public LeaderboardStore()
+    public LeaderboardStore(IConfiguration config)
     {
-        _dataDir = Path.Combine(AppContext.BaseDirectory, "leaderboard");
+        var path = config["Storage:LeaderboardPath"];
+        _dataDir = string.IsNullOrWhiteSpace(path)
+            ? Path.Combine(AppContext.BaseDirectory, "leaderboard")
+            : path;
         Directory.CreateDirectory(_dataDir);
     }
 

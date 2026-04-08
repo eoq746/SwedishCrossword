@@ -11,11 +11,12 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 - **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with high fill percentages (65–75%)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
 - **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
-- **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions, deployed to GitHub Pages; word-analysis results are cached between runs for faster generation
+- **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions
+- **API-First Architecture**: ASP.NET Core Minimal API with puzzle generation, leaderboard, and static file serving — deployable as a Docker container
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
-  - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + KV)
+  - Shared leaderboard with medal podium for top 3
   - Historical leaderboard showing top scores from the past 30 days (entries are grouped by puzzle when multiple puzzles occur on the same date)
   - Mobile-responsive design (portrait and landscape modes)
 - **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via localStorage
@@ -27,82 +28,64 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 
 ```
 SwedishCrosswords/
-|-- SwedishCrossword/              # Main generator application
-|   |-- Data/                      # Dictionary data files
-|   |   |-- lexin-words.json       # Lexin dictionary (imported)
-|   |   |-- synonym-words.json     # Synonym pairs (imported)
-|   |   |-- kelly-words.json       # Kelly word list (imported)
-|   |   |-- kelly-clues.json       # Curated clue overrides for Kelly words
-|   |   |-- dsso-words.json        # DSSO dictionary (imported from source file)
-|   |   |-- custom-words.json      # Custom/hand-curated words loaded at runtime
-|   |   |-- lexin-swe-swe.xml      # Source Lexin XML
-|   |   |-- synpairs.xml           # Source synonym pairs XML
-|   |   |-- kelly.xml              # Kelly frequency word list (source XML)
-|   |   +-- dsso-1.51.txt          # DSSO source file (dsso-1.51)
-|   |-- Models/                    # Domain models
-|   |   |-- Word.cs                # Word with clue, metadata, and segments
-|   |   |-- WordSegment.cs         # Segment of a bent word path
-|   |   |-- CrosswordGrid.cs       # Grid state, placement, and validation
-|   |   |-- GridCell.cs            # Individual cell data
-|   |   +-- AccidentalWord.cs      # Bonus word detection
-|   |-- Services/                  # Core services
-|   |   |-- CrosswordGenerator.cs  # Main generation orchestrator
-|   |   |-- SwedishDictionary.cs   # Word lookup and filtering (loads all 5 sources)
-|   |   |-- GridValidator.cs       # Puzzle validation
-|   |   |-- PrintService.cs        # Output formatting (JSON, text)
-|   |   |-- ClueGenerator.cs       # Clue generation
-|   |   |-- LexinWordImporter.cs   # Lexin XML parser
-|   |   |-- SynonymPairImporter.cs # Synonym XML parser
-|   |   |-- KellyWordImporter.cs   # Kelly word list importer
-|   |   |-- DssoWordImporter.cs    # DSSO source file parser
-|   |   |-- DataDirectory.cs       # Data file path resolution
-|   |   |-- SafeJsonEncoder.cs     # JSON serialization with Swedish character support
-|   |   +-- Generation/            # Generation sub-components
-|   |       |-- WordPlacer.cs      # Anchor selection and adaptive placement
-|   |       |-- WordAnalyzer.cs    # Connectivity scoring with disk cache
-|   |       |-- GapFiller.cs       # Gap and bridge filling strategies
-|   |       |-- VinkelordPlacer.cs # Bent word opportunity detection
-|   |       |-- GenerationHelpers.cs # Shared utility functions
-|   |       +-- GenerationModels.cs  # Internal generation models
-|   |-- wwwroot/                   # Web assets (deployed to GitHub Pages)
-|   |   |-- index.html             # Main crossword player
-|   |   |-- site.js                # Game logic, navigation, and leaderboard
-|   |   |-- site.min.css           # Responsive styles
-|   |   |-- om-oss.html            # About page
-|   |   |-- kontakt.html           # Contact page
-|   |   |-- integritetspolicy.html # Privacy policy
-|   |   |-- sitemap.xml            # SEO sitemap
-|   |   |-- robots.txt             # Crawler directives
-|   |   |-- site.webmanifest       # PWA manifest
-|   |   |-- favicon.ico            # Favicon
-|   |   |-- favicon-16x16.png      # 16×16 favicon
-|   |   |-- favicon-32x32.png      # 32×32 favicon
-|   |   |-- apple-touch-icon.png   # Apple touch icon
-|   |   |-- android-chrome-*.png   # Android PWA icons (192×192, 512×512)
-|   |   +-- CNAME                  # Custom domain config
-|   +-- Program.cs                 # CLI entry point
-|-- ClueHandler/                   # Dictionary management tool
-|   |-- Program.cs                 # CLI: statistics, add words, edit clues, Wiktionary lookup
-|   |-- WiktionaryClueService.cs   # Auto-populate clues from Swedish Wiktionary dump
-|   |-- CompoundClueGenerator.cs   # Generate clues for compound words via DSSO metadata
-|   +-- PatternClueGenerator.cs    # Generate clues using morphological patterns
-|-- SwedishCrossword.Tests/        # TUnit test project
-|   |-- GridCellTests.cs           # Grid cell model tests
-|   |-- WordTests.cs               # Word model tests
-|   |-- CrosswordGridTests.cs      # Grid functionality tests
-|   |-- SwedishDictionaryTests.cs  # Dictionary validation tests
-|   |-- GridValidatorTests.cs      # Puzzle validation tests
-|   |-- AccidentalWordTests.cs     # Bonus word detection tests
-|   |-- VinkelordTests.cs          # Bent word placement tests
-|   |-- VinkelordIntertwiningTests.cs # Intertwined vinkelord edge-case tests
-|   +-- PrintServiceTests.cs       # Output formatting tests
-|-- infrastructure/                # Infrastructure-as-code
-|   +-- cloudflare-worker/         # Cloudflare Worker for leaderboard API
-|       |-- worker.js              # Worker source (leaderboard CRUD, history, rate limiting)
-|       |-- wrangler.toml          # Wrangler configuration (KV bindings, observability)
-|       +-- README.md              # Endpoints, security, KV setup, and deployment guide
-+-- .github/workflows/             # GitHub Actions
-    +-- daily-crossword.yml        # Daily puzzle generation, tests & deployment
+|-- SwedishCrossword.Core/          # Shared domain library (Models + Services)
+|   |-- Models/                     # Domain models
+|   |   |-- Word.cs                 # Word with clue, metadata, and segments
+|   |   |-- WordSegment.cs          # Segment of a bent word path
+|   |   |-- CrosswordGrid.cs        # Grid state, placement, and validation
+|   |   |-- GridCell.cs             # Individual cell data
+|   |   +-- AccidentalWord.cs       # Bonus word detection
+|   +-- Services/                   # Core services
+|       |-- CrosswordGenerator.cs   # Main generation orchestrator
+|       |-- SwedishDictionary.cs    # Word lookup and filtering (loads all 5 sources)
+|       |-- GridValidator.cs        # Puzzle validation
+|       |-- PrintService.cs         # Output formatting (JSON, text)
+|       |-- ClueGenerator.cs        # Clue generation
+|       |-- LexinWordImporter.cs    # Lexin XML parser
+|       |-- SynonymPairImporter.cs  # Synonym XML parser
+|       |-- KellyWordImporter.cs    # Kelly word list importer
+|       |-- DssoWordImporter.cs     # DSSO source file parser
+|       |-- DataDirectory.cs        # Data file path resolution
+|       |-- SafeJsonEncoder.cs      # JSON serialization with Swedish character support
+|       +-- Generation/             # Generation sub-components
+|           |-- WordPlacer.cs       # Anchor selection and adaptive placement
+|           |-- WordAnalyzer.cs     # Connectivity scoring with disk cache
+|           |-- GapFiller.cs        # Gap and bridge filling strategies
+|           |-- VinkelordPlacer.cs  # Bent word opportunity detection
+|           |-- GenerationHelpers.cs # Shared utility functions
+|           +-- GenerationModels.cs # Internal generation models
+|-- SwedishCrossword.Api/           # ASP.NET Core Minimal API
+|   |-- Program.cs                  # API entry point (puzzle + leaderboard endpoints)
+|   |-- wwwroot/                    # Frontend (served by the API)
+|   |   |-- index.html              # Main crossword player
+|   |   |-- site.js                 # Game logic, navigation, and leaderboard
+|   |   |-- site.min.css            # Responsive styles
+|   |   |-- om-oss.html             # About page
+|   |   |-- kontakt.html            # Contact page
+|   |   +-- integritetspolicy.html  # Privacy policy
+|   |-- appsettings.json            # Configuration
+|   +-- Properties/launchSettings.json
+|-- SwedishCrossword/               # CLI generator (also deploys to GitHub Pages)
+|   |-- Data/                       # Dictionary data files
+|   |   |-- lexin-words.json        # Lexin dictionary (imported)
+|   |   |-- synonym-words.json      # Synonym pairs (imported)
+|   |   |-- kelly-words.json        # Kelly word list (imported)
+|   |   |-- kelly-clues.json        # Curated clue overrides for Kelly words
+|   |   |-- dsso-words.json         # DSSO dictionary (imported from source file)
+|   |   +-- custom-words.json       # Custom/hand-curated words loaded at runtime
+|   |-- wwwroot/                    # Web assets (deployed to GitHub Pages)
+|   +-- Program.cs                  # CLI entry point
+|-- ClueHandler/                    # Dictionary management tool
+|   |-- Program.cs                  # CLI: statistics, add words, edit clues, Wiktionary lookup
+|   |-- WiktionaryClueService.cs    # Auto-populate clues from Swedish Wiktionary dump
+|   |-- CompoundClueGenerator.cs    # Generate clues for compound words via DSSO metadata
+|   +-- PatternClueGenerator.cs     # Generate clues using morphological patterns
+|-- SwedishCrossword.Tests/         # TUnit test project
+|-- infrastructure/                 # Infrastructure-as-code
+|   +-- cloudflare-worker/          # Cloudflare Worker for leaderboard (legacy/GH Pages)
+|-- Dockerfile                      # Container build for the API
++-- .github/workflows/              # GitHub Actions
+    +-- daily-crossword.yml         # Daily puzzle generation, tests & deployment
 ```
 
 ## Getting Started
@@ -111,14 +94,44 @@ SwedishCrosswords/
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
 
-### Running the Generator
+### Running the API
 
 ```bash
 # Clone the repository
 git clone https://github.com/eoq746/SwedishCrossword.git
 cd SwedishCrossword
 
-# Run the generator
+# Run the API (serves frontend + REST endpoints)
+dotnet run --project SwedishCrossword.Api
+```
+
+The API starts at `https://localhost:50579` and serves the crossword player at the root URL. Puzzles are generated on demand and cached to disk.
+
+**API Endpoints:**
+
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/api/puzzle/today` | Get today's puzzle (generates if missing) |
+| GET | `/api/puzzle/{yyyy-MM-dd}` | Get puzzle for a specific date |
+| POST | `/api/puzzle/generate` | Generate a new puzzle (`{ "difficulty": "easy\|medium\|hard" }`) |
+| GET | `/api/stats` | Dictionary statistics |
+| GET | `/api/leaderboard` | Current leaderboard |
+| PUT | `/api/leaderboard` | Update leaderboard |
+| POST | `/api/leaderboard/history` | Submit a historical score |
+| GET | `/api/leaderboard/history?days=30` | Get historical scores |
+
+### Running with Docker
+
+```bash
+docker build -t svensktkorsord-api .
+docker run -p 8080:8080 -v crossword-data:/data svensktkorsord-api
+```
+
+Puzzles and leaderboard data are persisted in the `/data` volume.
+
+### Running the CLI Generator
+
+```bash
 dotnet run --project SwedishCrossword
 ```
 
@@ -246,11 +259,23 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 ## Web Architecture
 
-- **Hosting**: GitHub Pages (static files)
+The project supports two deployment modes:
+
+### API-First (recommended)
+- **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
+- **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
+- **Leaderboard**: Built-in file-based store replacing Cloudflare Workers, configurable via `Storage:LeaderboardPath`
+- **Deployment**: Docker container or any ASP.NET Core host
+- **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
+
+### Static (legacy)
+- **Hosting**: GitHub Pages (static files from `SwedishCrossword/wwwroot/`)
+- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); a pre-generated `puzzle.json` is deployed alongside the static assets
+- **Leaderboard**: Cloudflare Workers backed by Cloudflare KV (source in `infrastructure/cloudflare-worker/`)
+
+### Shared
 - **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
-- **Leaderboard**: Cloudflare Workers backed by Cloudflare KV; top 3 entries shown with medal podium (??????); historical scores stored with 90-day TTL and per-puzzle grouping so multiple puzzles on the same date are displayed separately
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
-- **Infrastructure**: Worker source and docs live under `infrastructure/cloudflare-worker/`
 <!-- - **Analytics**: Google AdSense (optional) -->
 
 ## License

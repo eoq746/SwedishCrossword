@@ -1,0 +1,14 @@
+**/.git
+**/.gitignore
+**/.vs
+**/bin
+**/obj
+**/node_modules
+**/.cache
+**/TestResults
+*.md
+!README.md
+Dockerfile
+.dockerignore
+infrastructure/
+.github/
