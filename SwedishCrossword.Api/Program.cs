@@ -2,6 +2,7 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.RateLimiting;
+using SwedishCrossword.Api;
 using SwedishCrossword.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,9 @@ builder.Services.AddSingleton<ClueGenerator>();
 builder.Services.AddSingleton<CrosswordGenerator>();
 builder.Services.AddSingleton<PrintService>();
 builder.Services.AddSingleton<LeaderboardStore>();
+
+// Background service: pre-generates today's puzzle at startup so the first visitor never waits
+builder.Services.AddHostedService<PuzzleWarmupService>();
 
 // Health checks
 builder.Services.AddHealthChecks();

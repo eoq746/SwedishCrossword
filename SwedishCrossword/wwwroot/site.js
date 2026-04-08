@@ -1,20 +1,13 @@
 /*
  * LEADERBOARD CONFIGURATION
  * =========================
- * Uses Cloudflare Worker backed by Cloudflare KV for leaderboard storage.
+ * Leaderboard is disabled in the static/GitHub Pages build.
+ * The API project (SwedishCrossword.Api) has a built-in leaderboard backend.
  */
 
-const PRODUCTION_HOSTNAMES = [
-    'svensktkorsord.se',
-    'www.svensktkorsord.se',
-    'eoq746.github.io'
-];
+// const LEADERBOARD_PROXY_URL = 'https://leaderboard-proxy.joakim-bergstrom.workers.dev';
 
-const LEADERBOARD_PROXY_URL = 'https://leaderboard-proxy.joakim-bergstrom.workers.dev';
-
-const currentHost = window.location.hostname;
-
-const LEADERBOARD_ENABLED = PRODUCTION_HOSTNAMES.includes(currentHost);
+const LEADERBOARD_ENABLED = false;
 
 /*
  * ANTI-CHEAT CONFIGURATION
