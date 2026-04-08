@@ -133,10 +133,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
-
-      - name: Deploy Cloudflare Worker
-        uses: cloudflare/wrangler-action@da0e0e36ad9db1a86b3ef8b8afff40ec90193a8a # v3.14.0
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          wranglerVersion: '4.78.0'
-          workingDirectory: infrastructure/cloudflare-worker

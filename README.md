@@ -81,8 +81,7 @@ SwedishCrosswords/
 |   |-- CompoundClueGenerator.cs    # Generate clues for compound words via DSSO metadata
 |   +-- PatternClueGenerator.cs     # Generate clues using morphological patterns
 |-- SwedishCrossword.Tests/         # TUnit test project
-|-- infrastructure/                 # Infrastructure-as-code
-|   +-- cloudflare-worker/          # Cloudflare Worker for leaderboard (legacy/GH Pages)
+|-- SwedishCrossword.Api.Tests/     # API integration tests
 |-- Dockerfile                      # Container build for the API
 +-- .github/workflows/              # GitHub Actions
     +-- daily-crossword.yml         # Daily puzzle generation, tests & deployment
@@ -259,24 +258,13 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 ## Web Architecture
 
-The project supports two deployment modes:
-
-### API-First (recommended)
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: Built-in file-based store replacing Cloudflare Workers, configurable via `Storage:LeaderboardPath`
+- **Leaderboard**: Built-in file-based store, configurable via `Storage:LeaderboardPath`
 - **Deployment**: Docker container or any ASP.NET Core host
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
-
-### Static (legacy)
-- **Hosting**: GitHub Pages (static files from `SwedishCrossword/wwwroot/`)
-- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); a pre-generated `puzzle.json` is deployed alongside the static assets
-- **Leaderboard**: Cloudflare Workers backed by Cloudflare KV (source in `infrastructure/cloudflare-worker/`)
-
-### Shared
 - **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
-<!-- - **Analytics**: Google AdSense (optional) -->
 
 ## License
 
@@ -300,4 +288,3 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 - [Kelly word list](https://spraakbanken.gu.se/resurser/kelly) for frequency-ranked vocabulary
 - [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/) for comprehensive Swedish word coverage
 - [Swedish Wiktionary](https://sv.wiktionary.org) for supplementary word definitions
-- [Cloudflare Workers](https://workers.cloudflare.com) and [Cloudflare KV](https://developers.cloudflare.com/kv/) for leaderboard API and storage
