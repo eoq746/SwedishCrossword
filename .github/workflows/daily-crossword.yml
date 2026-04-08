@@ -29,12 +29,12 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           ref: gh-pages
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
         with:
           dotnet-version: '10.0.x'
           dotnet-quality: 'preview'
@@ -77,7 +77,7 @@ jobs:
         run: dotnet build SwedishCrossword/SwedishCrossword.csproj --configuration Release --no-restore
 
       - name: Restore word analysis cache
-        uses: actions/cache@v4
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
           path: SwedishCrossword/.cache
           key: word-analysis-${{ runner.os }}-sha-${{ hashFiles('SwedishCrossword/Data/lexin-words.json','SwedishCrossword/Data/synonym-words.json','SwedishCrossword/Data/kelly-words.json','SwedishCrossword/Data/dsso-words.json','SwedishCrossword/Data/custom-words.json') }}
@@ -125,19 +125,19 @@ jobs:
           ls -la _site/
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5.0.0
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202571b3025aec15e3e5e2e29d4a0 # v3.0.1
         with:
           path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
 
       - name: Deploy Cloudflare Worker
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@da0e0e36ad9db1a86b3ef8b8afff40ec90193a8a # v3.14.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           wranglerVersion: '4.78.0'

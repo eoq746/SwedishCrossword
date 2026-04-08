@@ -1,5 +1,4 @@
 using System.Text;
-using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using SwedishCrossword.Services;
@@ -12,11 +11,7 @@ namespace ClueHandler;
 /// </summary>
 public static partial class CompoundClueGenerator
 {
-    private static readonly JsonSerializerOptions JsonOptions = new()
-    {
-        WriteIndented = true,
-        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-    };
+    private static readonly JsonSerializerOptions JsonOptions = SafeJsonEncoder.DefaultOptions;
 
     [GeneratedRegex(@"^\d+r\d+<([^>]+)>(.+)$")]
     private static partial Regex EntryLineRegex();

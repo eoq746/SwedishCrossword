@@ -1,8 +1,7 @@
 /*
  * LEADERBOARD CONFIGURATION
  * =========================
- * Uses Cloudflare Worker proxy to securely access JSONBin.io
- * API keys are stored as environment variables in the worker.
+ * Uses Cloudflare Worker backed by Cloudflare KV for leaderboard storage.
  */
 
 const PRODUCTION_HOSTNAMES = [
@@ -70,7 +69,7 @@ let puzzleStartTime = null;
 let puzzleHash = null;
 let usedShowSolution = false;
 let suspiciousActivity = [];
-let HAS_VIEWED_SOLUTION = false; // Tracked via server-side IP
+let HAS_VIEWED_SOLUTION = false; // Tracked via localStorage
 
 // Re-entrancy guard for handleFocus to prevent focus loops
 let lastFocusedCell = null;
@@ -261,40 +260,24 @@ function trackInput(row, col, value) {
     });
 }
 
-// Track when user views the solution (server-side IP tracking)
-async function trackSolutionView() {
-    if (!LEADERBOARD_ENABLED || !puzzleHash) return;
-    
+// Track when user views the solution (localStorage)
+function trackSolutionView() {
+    if (!puzzleHash) return;
     try {
-        await fetch(`${LEADERBOARD_PROXY_URL}/viewed-solution`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ puzzleHash })
-        });
+        localStorage.setItem(`solution-viewed-${puzzleHash}`, Date.now().toString());
     } catch (e) {
         console.warn('Failed to track solution view:', e);
     }
 }
 
-// Check if current user (by IP) has viewed the solution before
-async function checkIfViewedSolution() {
-    if (!LEADERBOARD_ENABLED || !puzzleHash) return false;
-    
+// Check if user has viewed the solution before (localStorage)
+function checkIfViewedSolution() {
+    if (!puzzleHash) return false;
     try {
-        const response = await fetch(`${LEADERBOARD_PROXY_URL}/check-solution-viewed`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ puzzleHash })
-        });
-        
-        if (response.ok) {
-            const data = await response.json();
-            return data.viewed;
-        }
+        return !!localStorage.getItem(`solution-viewed-${puzzleHash}`);
     } catch (e) {
-        console.warn('Failed to check solution view status:', e);
+        return false;
     }
-    return false;
 }
 
 // Analyze input pattern for suspicious activity
@@ -342,10 +325,9 @@ function analyzeInputPattern() {
         reasons.push('DevTools öppnades under sessionen');
     }
 
-    // Check 7: Previously viewed solution (checked via server-side IP tracking)
-    
+    // Check 7: Previously viewed solution (checked via localStorage)
     if (HAS_VIEWED_SOLUTION) {
-        reasons.push('Lösningen visades tidigare från denna IP');
+        reasons.push('Lösningen visades tidigare');
     }
 
     return {
@@ -613,7 +595,7 @@ async function loadLeaderboard() {
 
 // Add score to leaderboard with anti-cheat validation
 async function addToLeaderboard(username, timeSeconds) {
-    HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
+    HAS_VIEWED_SOLUTION = checkIfViewedSolution();
     const validation = analyzeInputPattern();
     
     if (!validation.valid) {
@@ -708,9 +690,9 @@ function escapeHtml(text) {
 async function showUsernameModal() {
     if (hasSubmittedScore) return;
     
-    HAS_VIEWED_SOLUTION = await checkIfViewedSolution();
+    HAS_VIEWED_SOLUTION = checkIfViewedSolution();
     const validation = analyzeInputPattern();
-    
+
     document.getElementById('modal-time').textContent = formatTime(seconds);
     document.getElementById('username-modal').classList.add('active');
     

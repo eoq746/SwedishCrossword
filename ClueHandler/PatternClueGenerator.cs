@@ -1,5 +1,4 @@
 using System.Text;
-using System.Text.Encodings.Web;
 using System.Text.Json;
 using SwedishCrossword.Services;
 
@@ -12,11 +11,7 @@ namespace ClueHandler;
 /// </summary>
 public static class PatternClueGenerator
 {
-    private static readonly JsonSerializerOptions JsonOptions = new()
-    {
-        WriteIndented = true,
-        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-    };
+    private static readonly JsonSerializerOptions JsonOptions = SafeJsonEncoder.DefaultOptions;
 
     public static async Task GenerateAsync(string jsonPath, CancellationToken ct = default)
     {

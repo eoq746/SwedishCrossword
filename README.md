@@ -15,10 +15,10 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
-  - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + JSONBin.io)
+  - Shared leaderboard with medal podium for top 3 (via Cloudflare Workers + KV)
   - Historical leaderboard showing top scores from the past 30 days (entries are grouped by puzzle when multiple puzzles occur on the same date)
   - Mobile-responsive design (portrait and landscape modes)
-- **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via Cloudflare KV
+- **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 - **SEO Optimized**: Structured data, sitemap, robots.txt for search engine visibility
@@ -56,6 +56,7 @@ SwedishCrosswords/
 |   |   |-- KellyWordImporter.cs   # Kelly word list importer
 |   |   |-- DssoWordImporter.cs    # DSSO source file parser
 |   |   |-- DataDirectory.cs       # Data file path resolution
+|   |   |-- SafeJsonEncoder.cs     # JSON serialization with Swedish character support
 |   |   +-- Generation/            # Generation sub-components
 |   |       |-- WordPlacer.cs      # Anchor selection and adaptive placement
 |   |       |-- WordAnalyzer.cs    # Connectivity scoring with disk cache
@@ -97,9 +98,10 @@ SwedishCrosswords/
 |   |-- VinkelordIntertwiningTests.cs # Intertwined vinkelord edge-case tests
 |   +-- PrintServiceTests.cs       # Output formatting tests
 |-- infrastructure/                # Infrastructure-as-code
-|   +-- cloudflare-worker/         # Cloudflare Worker for leaderboard proxy
-|       |-- worker.js              # Worker source (leaderboard CRUD, history, solution-view tracking)
-|       +-- README.md              # Endpoints, env vars, KV setup, and deployment guide
+|   +-- cloudflare-worker/         # Cloudflare Worker for leaderboard API
+|       |-- worker.js              # Worker source (leaderboard CRUD, history, rate limiting)
+|       |-- wrangler.toml          # Wrangler configuration (KV bindings, observability)
+|       +-- README.md              # Endpoints, security, KV setup, and deployment guide
 +-- .github/workflows/             # GitHub Actions
     +-- daily-crossword.yml        # Daily puzzle generation, tests & deployment
 ```
@@ -247,8 +249,8 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Hosting**: GitHub Pages (static files)
 - **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
-- **Leaderboard**: Cloudflare Workers proxy to JSONBin.io; top 3 entries shown with medal podium (??????); historical scores stored in Cloudflare KV (90-day TTL) with per-puzzle grouping so multiple puzzles on the same date are displayed separately
-- **Solution-View Tracking**: Cloudflare KV records per-IP solution views (7-day TTL) so the anti-cheat system can flag players who viewed the answer before submitting
+- **Leaderboard**: Cloudflare Workers backed by Cloudflare KV; top 3 entries shown with medal podium (??????); historical scores stored with 90-day TTL and per-puzzle grouping so multiple puzzles on the same date are displayed separately
+- **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 - **Infrastructure**: Worker source and docs live under `infrastructure/cloudflare-worker/`
 - **Analytics**: Google AdSense (optional)
 
@@ -274,5 +276,4 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 - [Kelly word list](https://spraakbanken.gu.se/resurser/kelly) for frequency-ranked vocabulary
 - [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/) for comprehensive Swedish word coverage
 - [Swedish Wiktionary](https://sv.wiktionary.org) for supplementary word definitions
-- [JSONBin.io](https://jsonbin.io) for leaderboard storage
-- [Cloudflare Workers](https://workers.cloudflare.com) for API proxy
+- [Cloudflare Workers](https://workers.cloudflare.com) and [Cloudflare KV](https://developers.cloudflare.com/kv/) for leaderboard API and storage

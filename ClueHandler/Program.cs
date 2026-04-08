@@ -1,16 +1,11 @@
 ﻿using System.Text;
-using System.Text.Encodings.Web;
 using System.Text.Json;
 using ClueHandler;
 using SwedishCrossword.Services;
 
 internal class Program
 {
-    private static readonly JsonSerializerOptions JsonOptions = new()
-    {
-        WriteIndented = true,
-        Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-    };
+    private static readonly JsonSerializerOptions JsonOptions = SafeJsonEncoder.DefaultOptions;
 
     static async Task Main(string[] args)
     {

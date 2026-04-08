@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
 using SwedishCrossword.Models;
 using System.Text;
-using System.Text.Encodings.Web;
 
 namespace SwedishCrossword.Services;
 
@@ -110,7 +109,7 @@ public class SwedishDictionary
             var wordData = JsonSerializer.Deserialize<List<WordEntry>>(jsonText, new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
-                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                Encoder = SafeJsonEncoder.Instance
             });
 
             if (wordData != null)

@@ -1,6 +1,5 @@
 using System.Text;
 using System.Text.Json;
-using System.Text.Encodings.Web;
 using System.Xml;
 using SwedishCrossword.Models;
 
@@ -318,13 +317,7 @@ public class LexinWordImporter
             Directory.CreateDirectory(directory);
         }
 
-        var options = new JsonSerializerOptions
-        {
-            WriteIndented = true,
-            Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-        };
-
-        var json = JsonSerializer.Serialize(words, options);
+        var json = JsonSerializer.Serialize(words, SafeJsonEncoder.DefaultOptions);
         await File.WriteAllTextAsync(path, json, Encoding.UTF8);
 
         Console.WriteLine($"Export complete: {path}");
