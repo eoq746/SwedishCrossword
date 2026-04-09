@@ -1,8 +1,6 @@
 # Svenskt Korsord (Swedish Crossword)
 
-[![Daily Crossword Generation](https://github.com/eoq746/SwedishCrossword/actions/workflows/daily-crossword.yml/badge.svg)](https://github.com/eoq746/SwedishCrossword/actions/workflows/daily-crossword.yml)
-
-A Swedish crossword puzzle generator and web player. Generates high-quality crossword puzzles using a Swedish dictionary based on [Lexin (ISOF)](https://spraakbanken.gu.se/resurser/lexin), [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), the [Kelly word list](https://spraakbanken.gu.se/resurser/kelly), and [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/).
+A Swedish crossword puzzle generator
 
 **Play the daily puzzle:** [svensktkorsord.se](https://svensktkorsord.se)
 
@@ -11,8 +9,8 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 - **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with high fill percentages (65–75%)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
 - **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
-- **Daily Puzzles**: Automated daily puzzle generation via GitHub Actions
-- **API-First Architecture**: ASP.NET Core Minimal API with puzzle generation, leaderboard, and static file serving — deployable as a Docker container
+- **Daily Puzzles**: Automatic daily puzzle generation at startup and hourly refresh via background service
+- **API-First Architecture**
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer
@@ -22,7 +20,6 @@ A Swedish crossword puzzle generator and web player. Generates high-quality cros
 - **Anti-cheat System**: Validates puzzle completion times, input patterns, DevTools detection, and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
-- **SEO Optimized**: Structured data, sitemap, robots.txt for search engine visibility
 
 ## Project Structure
 
@@ -65,7 +62,7 @@ SwedishCrosswords/
 |   |   +-- integritetspolicy.html  # Privacy policy
 |   |-- appsettings.json            # Configuration
 |   +-- Properties/launchSettings.json
-|-- SwedishCrossword/               # CLI generator (also deploys to GitHub Pages)
+|-- SwedishCrossword/               # CLI generator
 |   |-- Data/                       # Dictionary data files
 |   |   |-- lexin-words.json        # Lexin dictionary (imported)
 |   |   |-- synonym-words.json      # Synonym pairs (imported)
@@ -73,7 +70,6 @@ SwedishCrosswords/
 |   |   |-- kelly-clues.json        # Curated clue overrides for Kelly words
 |   |   |-- dsso-words.json         # DSSO dictionary (imported from source file)
 |   |   +-- custom-words.json       # Custom/hand-curated words loaded at runtime
-|   |-- wwwroot/                    # Web assets (deployed to GitHub Pages)
 |   +-- Program.cs                  # CLI entry point
 |-- ClueHandler/                    # Dictionary management tool
 |   |-- Program.cs                  # CLI: statistics, add words, edit clues, Wiktionary lookup
@@ -86,7 +82,6 @@ SwedishCrosswords/
 |-- infra/                          # Azure infrastructure (Bicep)
 |   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
 +-- .github/workflows/              # GitHub Actions
-    |-- daily-crossword.yml         # Daily puzzle generation & tests
     +-- deploy-azure.yml            # Build, push & deploy to Azure Container Apps
 ```
 
@@ -188,14 +183,6 @@ dotnet run --project SwedishCrossword
 7. **Import Kelly Words** - Parse the Kelly frequency word list
 8. **Generate for Web** - Creates puzzle.json and starts local server
 9. **Import from DSSO** - Parse Den Stora Svenska Ordlistan source file
-
-### Headless Generation (CI/CD)
-
-```bash
-dotnet run --project SwedishCrossword -- --generate-for-web
-```
-
-This mode is used by GitHub Actions for automated daily generation. The word-analysis cache is stored under `SwedishCrossword/.cache` and is preserved between runs via `actions/cache`.
 
 ## Dictionary Tools
 
@@ -306,7 +293,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Leaderboard**: Built-in file-based store, configurable via `Storage:LeaderboardPath`
 - **Deployment**: Docker container or any ASP.NET Core host
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
-- **Daily Generation**: GitHub Actions (scheduled at midnight UTC); tests run before generation; word-analysis scores are cached between runs using `actions/cache` keyed on the dictionary file hashes
+- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle at startup and refreshes hourly; word-analysis scores are cached to disk for fast subsequent runs
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License
