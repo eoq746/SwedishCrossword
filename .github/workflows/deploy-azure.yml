@@ -71,10 +71,12 @@ jobs:
       # ------------------------------------------------------------------
       - name: Deploy Container App
         run: |
+          IMAGE_URI="${{ steps.infra.outputs.acr_login }}/$APP_NAME:${{ github.sha }}"
+          echo "Deploying image: $IMAGE_URI"
           az containerapp update \
             --name $APP_NAME \
             --resource-group $RESOURCE_GROUP \
-            --image ${{ steps.infra.outputs.acr_login }}/$APP_NAME:${{ github.sha }}
+            --image "$IMAGE_URI"
 
       # ------------------------------------------------------------------
       # 4. Verify deployment
