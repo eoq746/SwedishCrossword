@@ -225,5 +225,14 @@ output acrName string = acr.name
 @description('Container App FQDN')
 output appUrl string = 'https://${containerApp.properties.configuration.ingress.fqdn}'
 
+@description('Container App auto-generated FQDN (for CNAME records)')
+output appFqdn string = containerApp.properties.configuration.ingress.fqdn
+
+@description('Domain verification ID — use as TXT record value for asuid.{subdomain}')
+output customDomainVerificationId string = containerApp.properties.customDomainVerificationId
+
+@description('Container Apps Environment name')
+output environmentName string = containerEnv.name
+
 @description('Resource group name (for CI/CD reference)')
 output resourceGroup string = az.resourceGroup().name

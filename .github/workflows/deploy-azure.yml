@@ -51,9 +51,16 @@ jobs:
           ACR_LOGIN=$(echo "$RESULT" | jq -r '.acrLoginServer.value' | tr -d '\n')
           APP_URL=$(echo "$RESULT" | jq -r '.appUrl.value')
 
+          APP_FQDN=$(echo "$RESULT" | jq -r '.appFqdn.value')
+          DOMAIN_VERIFICATION_ID=$(echo "$RESULT" | jq -r '.customDomainVerificationId.value')
+          ENV_NAME=$(echo "$RESULT" | jq -r '.environmentName.value')
+
           echo "acr_name=$ACR_NAME" >> "$GITHUB_OUTPUT"
           echo "acr_login=$ACR_LOGIN" >> "$GITHUB_OUTPUT"
           echo "app_url=$APP_URL" >> "$GITHUB_OUTPUT"
+          echo "app_fqdn=$APP_FQDN" >> "$GITHUB_OUTPUT"
+          echo "domain_verification_id=$DOMAIN_VERIFICATION_ID" >> "$GITHUB_OUTPUT"
+          echo "env_name=$ENV_NAME" >> "$GITHUB_OUTPUT"
 
       # ------------------------------------------------------------------
       # 2. Build & push container image
@@ -79,7 +86,36 @@ jobs:
             --image "$IMAGE_URI"
 
       # ------------------------------------------------------------------
-      # 4. Verify deployment
+      # 4. Bind custom domain (if CUSTOM_DOMAIN secret is set)
+      # ------------------------------------------------------------------
+      - name: Bind Custom Domain
+        if: env.CUSTOM_DOMAIN != ''
+        run: |
+          DOMAIN="$CUSTOM_DOMAIN"
+          echo "🌐 Binding custom domain: $DOMAIN"
+          echo "   App FQDN: ${{ steps.infra.outputs.app_fqdn }}"
+          echo "   Verification ID: ${{ steps.infra.outputs.domain_verification_id }}"
+
+          # Add hostname (idempotent — skips if already added)
+          az containerapp hostname add \
+            --hostname "$DOMAIN" \
+            --resource-group $RESOURCE_GROUP \
+            --name $APP_NAME 2>/dev/null || true
+
+          # Bind managed certificate (idempotent — skips if already bound)
+          az containerapp hostname bind \
+            --hostname "$DOMAIN" \
+            --resource-group $RESOURCE_GROUP \
+            --name $APP_NAME \
+            --environment ${{ steps.infra.outputs.env_name }} \
+            --validation-method CNAME
+
+          echo "✅ Custom domain bound with managed certificate"
+        env:
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
+
+      # ------------------------------------------------------------------
+      # 5. Verify deployment
       # ------------------------------------------------------------------
       - name: Verify Health
         run: |
