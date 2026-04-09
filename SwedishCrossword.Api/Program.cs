@@ -1,4 +1,5 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.RateLimiting;
@@ -226,8 +227,8 @@ app.Run();
 
 record GenerateRequest(string? Difficulty);
 record LeaderboardHistoryRequest(string Date, LeaderboardEntry Entry);
-record LeaderboardEntry(string Name, double Time, string? Timestamp, string? PuzzleHash);
-record HistoryRecord(string Name, double Time, string? Timestamp, string? PuzzleHash);
+record LeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash);
+record HistoryRecord(string Name, double Time, long? Timestamp, string? PuzzleHash);
 
 // ---------------------------------------------------------------------------
 // Leaderboard file store (replaces Cloudflare KV)
@@ -240,7 +241,8 @@ sealed class LeaderboardStore
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-        WriteIndented = false
+        WriteIndented = false,
+        NumberHandling = JsonNumberHandling.AllowReadingFromString
     };
 
     private readonly string _dataDir;

@@ -128,7 +128,7 @@ public class ApiIntegrationTests
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = "2025-01-15",
-            entry = new { name = "Testare", time = 120.5, timestamp = "2025-01-15T12:00:00Z", puzzleHash = "abc123" }
+            entry = new { name = "Testare", time = 120.5, timestamp = 1705320000000L, puzzleHash = "abc123" }
         });
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
@@ -174,7 +174,7 @@ public class ApiIntegrationTests
         await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
-            entry = new { name = "Anna", time = 95.3, timestamp = "2025-01-15T12:00:00Z", puzzleHash = "hash1" }
+            entry = new { name = "Anna", time = 95.3, timestamp = 1705320000000L, puzzleHash = "hash1" }
         });
 
         var response = await _client.GetAsync("/api/leaderboard/history?days=1");
