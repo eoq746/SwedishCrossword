@@ -1,6 +1,5 @@
 name: Deploy to Azure Container Apps
 
-# Triggers: push to master or manual dispatch
 on:
   push:
     branches: [master]
@@ -10,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write   # Required for Azure OIDC login
+  id-token: write
   contents: read
 
 env:
@@ -23,17 +22,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 
       - name: Azure Login (OIDC)
-        uses: azure/login@a65d910e8af852a8061c627c456678983e180302 # v2.2.0
+        uses: azure/login@a65d910e8af852a8061c627c456678983e180302
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       # ------------------------------------------------------------------
-      # 1. Provision / update infrastructure (idempotent)
+      # 1. Provision infrastructure WITHOUT imageTag (uses placeholder image)
       # ------------------------------------------------------------------
       - name: Create Resource Group
         run: az group create --name $RESOURCE_GROUP --location $LOCATION
@@ -44,7 +43,7 @@ jobs:
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
-            --parameters appName=$APP_NAME imageTag=${{ github.sha }} createRoleAssignment=false \
+            --parameters appName=$APP_NAME createRoleAssignment=false \
             --query 'properties.outputs' \
             --output json)
 
@@ -57,7 +56,7 @@ jobs:
           echo "app_url=$APP_URL" >> "$GITHUB_OUTPUT"
 
       # ------------------------------------------------------------------
-      # 2. Build & push container image via ACR Tasks (no local Docker needed)
+      # 2. Build & push container image
       # ------------------------------------------------------------------
       - name: Build & Push Image
         run: |
@@ -85,7 +84,6 @@ jobs:
           APP_URL="${{ steps.infra.outputs.app_url }}"
           echo "🚀 Deployed to: $APP_URL"
 
-          # Wait for the app to start (up to 60s)
           for i in $(seq 1 12); do
             STATUS=$(curl -s -o /dev/null -w '%{http_code}' "$APP_URL/api/health" 2>/dev/null || echo "000")
             if [ "$STATUS" = "200" ]; then

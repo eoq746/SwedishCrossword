@@ -13,6 +13,7 @@
 // ---------------------------------------------------------------------------
 
 @minLength(3)
+@maxLength(50)
 @description('Base name used to derive all resource names')
 param appName string = 'svensktkorsord'
 
@@ -30,11 +31,15 @@ var suffix = uniqueString(resourceGroup().id, appName)
 var acrName = toLower(replace('${appName}${suffix}', '-', ''))
 var storageAccountName = toLower(take(replace('${appName}st${suffix}', '-', ''), 24))
 
+// Ensure minimum length requirements
+var acrNameFinal = length(acrName) < 5 ? '${acrName}acr' : acrName
+var storageAccountNameFinal = length(storageAccountName) < 3 ? '${storageAccountName}st' : storageAccountName
+
 // ---------------------------------------------------------------------------
 // Azure Container Registry (Basic SKU, no admin user)
 // ---------------------------------------------------------------------------
 resource acr 'Microsoft.ContainerRegistry/registries@2023-11-01-preview' = {
-  name: take(acrName, 50)
+  name: take(acrNameFinal, 50)
   location: location
   sku: { name: 'Basic' }
   properties: {
@@ -83,7 +88,7 @@ resource logAnalytics 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
 // Storage Account + Azure Files share for persistent data (/data volume)
 // ---------------------------------------------------------------------------
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
-  name: storageAccountName
+  name: storageAccountNameFinal
   location: location
   sku: { name: 'Standard_LRS' }
   kind: 'StorageV2'
