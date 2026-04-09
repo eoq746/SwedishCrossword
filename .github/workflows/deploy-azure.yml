@@ -48,7 +48,7 @@ jobs:
             --output json)
 
           ACR_NAME=$(echo "$RESULT" | jq -r '.acrName.value')
-          ACR_LOGIN=$(echo "$RESULT" | jq -r '.acrLoginServer.value')
+          ACR_LOGIN=$(echo "$RESULT" | jq -r '.acrLoginServer.value' | tr -d '\n')
           APP_URL=$(echo "$RESULT" | jq -r '.appUrl.value')
 
           echo "acr_name=$ACR_NAME" >> "$GITHUB_OUTPUT"
