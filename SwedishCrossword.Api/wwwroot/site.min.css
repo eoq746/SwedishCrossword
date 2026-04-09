@@ -1006,3 +1006,69 @@ header p{font-size:.95rem;opacity:.95}
     --cell-size: clamp(48px, calc((100vh - 200px) / var(--rows,11)), 88px);
   }
 }
+
+/* =========================================================================
+   Landing page
+   ========================================================================= */
+.tagline{font-size:1.1rem;opacity:.9;margin-top:4px}
+
+.landing-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:16px}
+.hero-card{background:rgba(255,255,255,.1);border-radius:12px;padding:28px 24px;text-align:center;color:rgba(255,255,255,.95);transition:transform .2s,background .2s}
+.hero-card:hover{background:rgba(255,255,255,.16);transform:translateY(-3px)}
+.hero-icon{font-size:3rem;margin-bottom:12px}
+.hero-card h2{font-size:1.3rem;margin-bottom:8px;color:#fff}
+.hero-card p{font-size:.95rem;line-height:1.6;margin-bottom:16px;opacity:.9}
+.btn-hero{display:inline-block;padding:12px 28px;border-radius:8px;font-size:1rem;font-weight:700;text-decoration:none;background:#fff;color:#764ba2;transition:background .2s,transform .15s}
+.btn-hero:hover{background:#f0e6ff;transform:scale(1.03)}
+.btn-hero-secondary{background:rgba(255,255,255,.18);color:#fff;border:2px solid rgba(255,255,255,.4)}
+.btn-hero-secondary:hover{background:rgba(255,255,255,.28)}
+
+.landing-features{background:rgba(255,255,255,.06);border-radius:8px;padding:14px;color:rgba(255,255,255,.95);margin-bottom:12px}
+
+/* Puzzle page nav (back link + archive link) */
+.puzzle-nav{display:flex;justify-content:space-between;margin-bottom:8px}
+.nav-back,.nav-link{color:rgba(255,255,255,.9);text-decoration:none;font-size:.9rem;padding:4px 8px;border-radius:6px;transition:background .2s}
+.nav-back:hover,.nav-link:hover{background:rgba(255,255,255,.15)}
+
+/* =========================================================================
+   Calendar page
+   ========================================================================= */
+.calendar-section{margin-bottom:16px;padding:24px}
+
+.calendar-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.calendar-header h2{font-size:1.4rem;color:#333;margin:0}
+.calendar-nav-btn{min-width:44px;font-size:1.2rem;padding:8px 14px}
+.calendar-nav-btn:disabled{opacity:.3;cursor:default}
+
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.calendar-day-header{text-align:center;font-weight:700;font-size:.85rem;color:#666;padding:8px 0}
+
+.calendar-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:1rem;color:#666;background:#f9fafb;transition:transform .15s,box-shadow .15s}
+
+.calendar-empty{background:transparent}
+.calendar-future{opacity:.3}
+.calendar-unavailable{color:#bbb}
+
+.calendar-available{background:#e0f2fe;color:#1e40af;font-weight:600;cursor:pointer}
+.calendar-available:hover{transform:scale(1.08);box-shadow:0 2px 8px rgba(37,99,235,.25)}
+
+.calendar-today{outline:3px solid #2563eb;outline-offset:-3px}
+.calendar-today.calendar-available{background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%)}
+
+.calendar-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:inherit;text-decoration:none;font-weight:inherit}
+
+.calendar-legend{display:flex;gap:20px;justify-content:center;margin-top:16px;font-size:.85rem;color:#666}
+.legend-item{display:flex;align-items:center;gap:6px}
+.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.legend-available{background:#e0f2fe;border:1px solid #93c5fd}
+.legend-today{background:#bfdbfe;outline:2px solid #2563eb;outline-offset:-1px}
+
+@media (max-width:600px){
+  .calendar-grid{gap:2px}
+  .calendar-cell{font-size:.85rem;border-radius:6px}
+  .calendar-day-header{font-size:.75rem;padding:4px 0}
+  .calendar-header h2{font-size:1.1rem}
+  .landing-hero{grid-template-columns:1fr}
+  .hero-card{padding:20px 16px}
+  .hero-icon{font-size:2.4rem}
+}

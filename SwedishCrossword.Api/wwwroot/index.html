@@ -55,11 +55,6 @@
             "url": "https://svensktkorsord.se/",
             "description": "Spela gratis svenska korsord online varje dag. Nytt korsord genereras automatiskt dagligen med svenska ord, synonymer och ledtrådar. Sveriges populäraste korsord online.",
             "inLanguage": "sv-SE",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://svensktkorsord.se/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-            },
             "publisher": {
                 "@type": "Organization",
                 "name": "Svenskt Korsord",
@@ -97,7 +92,8 @@
                 "Topplista med snabbaste spelare",
                 "Fungerar på mobil, surfplatta och dator",
                 "Sparar framsteg automatiskt",
-                "Över 100 000 svenska ord"
+                "Över 100 000 svenska ord",
+                "Korsord-arkiv med tidigare pussel"
             ],
             "keywords": "korsord, korsord online, svenska korsord, gratis korsord, synonymer, ordspel"
         }
@@ -114,7 +110,7 @@
                     "name": "Hur ofta uppdateras korsordet?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ett nytt korsord genereras automatiskt varje dag vid midnatt (UTC). Kom tillbaka imorgon för ett helt nytt pussel!"
+                        "text": "Ett nytt korsord genereras automatiskt varje dag. Kom tillbaka imorgon för ett helt nytt pussel!"
                     }
                 },
                 {
@@ -122,7 +118,7 @@
                     "name": "Är Svenskt Korsord gratis?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Ja, Svenskt Korsord är helt gratis att spela. Vi visar annonser för att täcka driftskostnaderna."
+                        "text": "Ja, Svenskt Korsord är helt gratis att spela."
                     }
                 },
                 {
@@ -135,42 +131,42 @@
                 },
                 {
                     "@type": "Question",
-                    "name": "Hur fungerar topplistan?",
+                    "name": "Kan jag spela tidigare korsord?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "När du löser korsordet kan du ange ditt namn för att visas på topplistan. Den visar de 10 snabbaste tiderna för dagens korsord och delas mellan alla spelare."
+                        "text": "Ja! Besök korsord-arkivet för att bläddra bland och spela tidigare dagliga korsord."
                     }
                 }
             ]
         }
     </script>
-
-    <!-- AdSense disabled – not in use yet
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288"
-            crossorigin="anonymous"></script>
-    -->
-    </head>
+</head>
 <body>
     <div class="container">
-        <!-- Screen reader announcements (visually hidden) -->
-        <div id="announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
-        
+
         <header>
             <h1>Svenskt Korsord</h1>
-            <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Tab hoppar till nästa ledtråd</p>
-            <div class="puzzle-info" id="puzzle-info" style="display: none;">
-                <span id="info-size"></span>
-                <span id="info-words"></span>
-                <span id="info-fill"></span>
-            </div>
-            <div class="generation-date" id="generation-date"></div>
+            <p class="tagline">Gratis dagligt korsord online med över 100 000 svenska ord</p>
         </header>
 
-        <section aria-label="Om dagens korsord" class="intro-section" id="intro-section">
-            <h2>Välkommen till Svenskt Korsord – Din Dagliga Hjärnträning</h2>
+        <!-- Hero CTA -->
+        <section class="landing-hero">
+            <div class="hero-card">
+                <div class="hero-icon">🧩</div>
+                <h2>Dagens Korsord</h2>
+                <p>Ett nytt korsord varje dag – lös det, tävla om bästa tid och klättra på topplistan!</p>
+                <a href="/puzzle.html" class="btn-hero">Spela nu →</a>
+            </div>
+            <div class="hero-card">
+                <div class="hero-icon">📅</div>
+                <h2>Korsord-arkiv</h2>
+                <p>Missade du ett pussel? Bläddra bland alla tidigare korsord i kalendern.</p>
+                <a href="/calendar.html" class="btn-hero btn-hero-secondary">Öppna arkivet →</a>
+            </div>
+        </section>
 
-            en omfattande ordlista med över 100 000 ord och uttryck
-
+        <!-- Feature cards -->
+        <section class="landing-features" aria-label="Funktioner">
             <div class="info-cards">
                 <div class="info-card">
                     <div class="info-card-icon">🎮</div>
@@ -179,23 +175,20 @@
                         <li><kbd>Klicka</kbd> på en ruta för att aktivera</li>
                         <li><kbd>Mellanslag</kbd> byter riktning</li>
                         <li><kbd>Piltangenter</kbd> navigerar</li>
-                        <li><kbd>Tab</kbd> nästa ledtråd, <kbd>Shift+Tab</kbd> föregående</li>
+                        <li><kbd>Tab</kbd> nästa ledtråd</li>
                         <li><kbd>Backspace</kbd> raderar och flyttar</li>
                     </ul>
                 </div>
-
                 <div class="info-card">
                     <div class="info-card-icon">🏆</div>
                     <h3>Topplista</h3>
                     <p>Lös korsordet och registrera din tid! Topplistan visar de 10 snabbaste tiderna och nollställs vid midnatt.</p>
                 </div>
-
                 <div class="info-card">
                     <div class="info-card-icon">🧠</div>
                     <h3>Hjärnträning</h3>
                     <p>Förbättra ordförråd, skärp minnet och håll sinnet vaket med daglig korsordslösning.</p>
                 </div>
-
                 <div class="info-card">
                     <div class="info-card-icon">🔒</div>
                     <h3>Din integritet</h3>
@@ -213,89 +206,12 @@
                     <li><strong>Vanliga ändelser</strong> – -tion, -het, -ning, -are, -lig</li>
                 </ul>
             </details>
-
-            <p class="intro-footer">Besök <a href="om-oss.html">Om oss</a> för mer information eller <a href="kontakt.html">Kontakta oss</a> med frågor.</p>
-            <!--<script async="async" data-cfasync="false" src="https://pl28733271.effectivegatecpm.com/11ef644b6318b0925133a9c545368db3/invoke.js"></script>
-            <div id="container-11ef644b6318b0925133a9c545368db3"></div>-->
         </section>
 
-        <div id="loading" class="loading">
-            <div class="loading-spinner"></div>
-            <p>Laddar dagens korsord...</p>
-        </div>
-
-        <div class="top-controls">
-            <button id="clues-toggle" class="clues-toggle" aria-expanded="true" aria-controls="across-clues down-clues">Visa ledtrådar</button>
-            <button id="leaderboard-toggle" class="clues-toggle" aria-expanded="false" aria-controls="leaderboard-list">Visa Topplista</button>
-            <button id="history-toggle" class="clues-toggle" aria-expanded="false" aria-controls="history-section">Visa Historik</button>
-            <button id="intro-toggle" class="clues-toggle" aria-expanded="false" aria-controls="intro-section">Visa info</button>
-        </div>
-
-        <div class="main-layout site-container" id="main-layout" style="display: none;">
-            <div class="grid-section">
-                <div class="grid-header">
-                    <h2>Dagens Korsord</h2>
-                    <div class="timer" id="timer">00:00</div>
-                </div>
-
-                <!-- grid-inner: controls at left, grid-area at right -->
-                <div class="grid-inner">
-                    <div class="controls">
-                        <button class="btn btn-direction" id="direction-toggle" aria-label="Byt riktning">
-                            <span class="direction-icon">→</span>
-                            <span class="direction-text">Vågrätt</span>
-                        </button>
-                        <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
-                        <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
-                        <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
-                        <div class="stats" id="stats"></div>
-                    </div>
-
-                    <div class="grid-area">
-                        <div class="crossword-grid" id="crossword-grid"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="clues-section" id="clues-section">
-                <h2>Ledtrådar</h2>
-                <div class="clues-columns">
-                    <div class="clue-column">
-                        <div class="clue-direction">
-                            <h3 id="across-clues-heading">Vågrätt</h3>
-                            <ul class="clue-list" id="across-clues" role="list" aria-labelledby="across-clues-heading"></ul>
-                        </div>
-                    </div>
-                    <div class="clue-column">
-                        <div class="clue-direction">
-                            <h3 id="down-clues-heading">Lodrätt</h3>
-                            <ul class="clue-list" id="down-clues" role="list" aria-labelledby="down-clues-heading"></ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="leaderboard-section">
-                <h2>Topplista</h2>
-                <ul class="leaderboard-list" id="leaderboard-list">
-                    <!-- Leaderboard entries rendered by site.js -->
-                </ul>
-                <div class="leaderboard-date" id="leaderboard-date"></div>
-            </div>
-
-            <div class="leaderboard-section history-section" id="history-section">
-                <h2>Historisk Topplista</h2>
-                <ul class="leaderboard-list" id="history-list">
-                    <!-- Historical leaderboard entries rendered by site.js -->
-                </ul>
-            </div>
-        </div>
-
-        <!-- Additional content section for SEO and user value -->
+        <!-- SEO content -->
         <section class="content-section" id="additional-content">
             <h2>Korsord Online – Historia, Typer och Fördelar</h2>
-            
+
             <div class="content-intro">
                 <p><strong>Korsord</strong> har fascinerat människor i över hundra år. Det första moderna korsordet publicerades i New York World den 21 december 1913. I Sverige har <strong>korsord online</strong> och traditionella korsord varit populära sedan tidigt 1900-tal, med ledtrådar som är <strong>synonymer</strong> eller beskrivningar – tillgängliga men utmanande för alla åldrar. Idag kan du spela <strong>gratis korsord</strong> direkt i webbläsaren!</p>
             </div>
@@ -306,19 +222,16 @@
                     <h3>Traditionellt korsord</h3>
                     <p>Det klassiska formatet med vita rutor för bokstäver och svarta rutor som avgränsare. Detta är den typ vi erbjuder på Svenskt Korsord.</p>
                 </div>
-
                 <div class="content-card">
                     <div class="content-card-icon">🖼️</div>
                     <h3>Bildkorsord</h3>
                     <p>Ledtrådarna är bilder istället för text, vilket gör pusslet mer visuellt och tillgängligt.</p>
                 </div>
-
                 <div class="content-card">
                     <div class="content-card-icon">🔢</div>
                     <h3>Krypto-korsord</h3>
                     <p>Varje ruta har ett nummer som representerar en bokstav – knäck koden för att lösa pusslet!</p>
                 </div>
-
                 <div class="content-card">
                     <div class="content-card-icon">🎯</div>
                     <h3>Tema-korsord</h3>
@@ -361,41 +274,15 @@
 
         <footer class="site-footer">
             <nav>
+                <a href="/puzzle.html">Spela</a>
+                <a href="/calendar.html">Arkiv</a>
                 <a href="om-oss.html">Om oss</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="integritetspolicy.html">Integritetspolicy</a>
             </nav>
-            © 2025–2026 Svenskt Korsord. Alla rättigheter förbehållna.
+            &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
             <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
         </footer>
-
-        <div class="modal-overlay" id="username-modal">
-            <div class="modal">
-                <h3>Grattis!</h3>
-                <p>Du löste korsordet!</p>
-                <div class="modal-time" id="modal-time">00:00</div>
-                <p>Ange ditt namn för topplistan:</p>
-                <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" 
-                       autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
-                <div class="modal-buttons">
-                    <button class="btn btn-primary" onclick="submitScore()">Spara</button>
-                    <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <script type="module">
-        import devtools from 'https://cdn.jsdelivr.net/npm/devtools-detect@4.0.2/+esm';
-        window.devtoolsDetect = devtools;
-        window.addEventListener('devtoolschange', event => {
-            if (event.detail.isOpen && !window.devToolsOpenedDuringSession) {
-                window.devToolsOpenedDuringSession = true;
-            }
-        });
-        if (devtools.isOpen) window.devToolsOpenedDuringSession = true;
-    </script>
-
-    <script src="/site.js"></script>
 </body>
 </html>

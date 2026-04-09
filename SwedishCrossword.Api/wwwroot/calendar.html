@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korsord-arkiv - Svenskt Korsord | Tidigare Korsord Online</title>
+    <meta name="description" content="Bläddra bland tidigare svenska korsord. Välj ett datum i kalendern för att spela ett korsord från arkivet. Gratis!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://svensktkorsord.se/calendar.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://svensktkorsord.se/calendar.html">
+    <meta property="og:title" content="Korsord-arkiv - Svenskt Korsord">
+    <meta property="og:description" content="Bläddra bland tidigare svenska korsord. Välj ett datum i kalendern för att spela.">
+    <meta property="og:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Svenskt Korsord">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: https:;
+        connect-src 'self';
+        font-src 'self';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/site.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="puzzle-nav">
+                <a href="/" class="nav-back">← Startsida</a>
+                <a href="/puzzle.html" class="nav-link">🧩 Dagens korsord</a>
+            </nav>
+            <h1>Korsord-arkiv</h1>
+            <p>Välj ett datum för att spela ett tidigare korsord</p>
+        </header>
+
+        <section class="calendar-section site-container">
+            <div class="calendar-header">
+                <button class="btn btn-secondary calendar-nav-btn" id="prev-month" aria-label="Föregående månad">←</button>
+                <h2 id="calendar-title"></h2>
+                <button class="btn btn-secondary calendar-nav-btn" id="next-month" aria-label="Nästa månad">→</button>
+            </div>
+            <div class="calendar-grid" id="calendar-grid">
+                <div class="calendar-day-header">Mån</div>
+                <div class="calendar-day-header">Tis</div>
+                <div class="calendar-day-header">Ons</div>
+                <div class="calendar-day-header">Tor</div>
+                <div class="calendar-day-header">Fre</div>
+                <div class="calendar-day-header">Lör</div>
+                <div class="calendar-day-header">Sön</div>
+            </div>
+            <div class="calendar-legend">
+                <span class="legend-item"><span class="legend-dot legend-available"></span> Korsord tillgängligt</span>
+                <span class="legend-item"><span class="legend-dot legend-today"></span> Idag</span>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <nav>
+                <a href="/">Startsida</a>
+                <a href="/puzzle.html">Spela</a>
+                <a href="om-oss.html">Om oss</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="integritetspolicy.html">Integritetspolicy</a>
+            </nav>
+            &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
+        </footer>
+    </div>
+
+    <script>
+    (function() {
+        const MONTHS_SV = ['Januari','Februari','Mars','April','Maj','Juni',
+                           'Juli','Augusti','September','Oktober','November','December'];
+
+        let currentYear, currentMonth;
+        let availableDates = new Set();
+
+        const today = new Date();
+        const todayStr = today.toISOString().split('T')[0];
+        currentYear = today.getFullYear();
+        currentMonth = today.getMonth();
+
+        async function loadDates() {
+            try {
+                const res = await fetch('/api/puzzle/dates');
+                if (res.ok) {
+                    const dates = await res.json();
+                    dates.forEach(d => availableDates.add(d));
+                }
+            } catch (e) {
+                console.error('Failed to load puzzle dates', e);
+            }
+            renderCalendar();
+        }
+
+        function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+        function renderCalendar() {
+            document.getElementById('calendar-title').textContent =
+                `${MONTHS_SV[currentMonth]} ${currentYear}`;
+
+            // Disable next-month button if we're on the current month
+            const nextBtn = document.getElementById('next-month');
+            nextBtn.disabled = (currentYear === today.getFullYear() && currentMonth >= today.getMonth());
+
+            const grid = document.getElementById('calendar-grid');
+            // Remove old day cells (keep the 7 header cells)
+            while (grid.children.length > 7) {
+                grid.removeChild(grid.lastChild);
+            }
+
+            const firstDay = new Date(currentYear, currentMonth, 1);
+            // JS: 0=Sun, we want 0=Mon
+            let startDow = firstDay.getDay() - 1;
+            if (startDow < 0) startDow = 6;
+
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+            // Empty cells before first day
+            for (let i = 0; i < startDow; i++) {
+                const empty = document.createElement('div');
+                empty.className = 'calendar-cell calendar-empty';
+                grid.appendChild(empty);
+            }
+
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${currentYear}-${pad(currentMonth + 1)}-${pad(day)}`;
+                const cell = document.createElement('div');
+                cell.className = 'calendar-cell';
+                cell.textContent = day;
+
+                const isToday = dateStr === todayStr;
+                const hasData = availableDates.has(dateStr);
+                const isFuture = new Date(currentYear, currentMonth, day) > today;
+
+                if (isToday) {
+                    cell.classList.add('calendar-today');
+                }
+
+                if (hasData || isToday) {
+                    cell.classList.add('calendar-available');
+                    const link = document.createElement('a');
+                    link.href = isToday ? '/puzzle.html' : `/puzzle.html?date=${dateStr}`;
+                    link.className = 'calendar-link';
+                    link.textContent = day;
+                    link.setAttribute('aria-label', `Spela korsord för ${dateStr}`);
+                    cell.textContent = '';
+                    cell.appendChild(link);
+                } else if (isFuture) {
+                    cell.classList.add('calendar-future');
+                } else {
+                    cell.classList.add('calendar-unavailable');
+                }
+
+                grid.appendChild(cell);
+            }
+        }
+
+        document.getElementById('prev-month').addEventListener('click', () => {
+            currentMonth--;
+            if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+            renderCalendar();
+        });
+
+        document.getElementById('next-month').addEventListener('click', () => {
+            if (currentYear === today.getFullYear() && currentMonth >= today.getMonth()) return;
+            currentMonth++;
+            if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+            renderCalendar();
+        });
+
+        loadDates();
+    })();
+    </script>
+</body>
+</html>

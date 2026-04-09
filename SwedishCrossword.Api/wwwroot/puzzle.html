@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spela Korsord - Svenskt Korsord | Gratis Korsord Online</title>
+    <meta name="description" content="Spela dagens svenska korsord online. Interaktivt korsord med ledtrådar, topplista och timer. Gratis!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://svensktkorsord.se/puzzle.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://svensktkorsord.se/puzzle.html">
+    <meta property="og:title" content="Spela Korsord - Svenskt Korsord">
+    <meta property="og:description" content="Spela dagens svenska korsord online. Interaktivt korsord med ledtrådar, topplista och timer.">
+    <meta property="og:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Svenskt Korsord">
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+        style-src 'self' 'unsafe-inline';
+        img-src 'self' data: https:;
+        connect-src 'self';
+        font-src 'self';
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self';
+    ">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/site.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Screen reader announcements (visually hidden) -->
+        <div id="announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+        
+        <header>
+            <nav class="puzzle-nav">
+                <a href="/" class="nav-back">← Startsida</a>
+                <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+            </nav>
+            <h1>Svenskt Korsord</h1>
+            <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Tab hoppar till nästa ledtråd</p>
+            <div class="puzzle-info" id="puzzle-info" style="display: none;">
+                <span id="info-size"></span>
+                <span id="info-words"></span>
+                <span id="info-fill"></span>
+            </div>
+            <div class="generation-date" id="generation-date"></div>
+        </header>
+
+        <section aria-label="Spelinstruktioner" class="intro-section" id="intro-section">
+            <h2>Så här spelar du</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-card-icon">🎮</div>
+                    <h3>Kontroller</h3>
+                    <ul>
+                        <li><kbd>Klicka</kbd> på en ruta för att aktivera</li>
+                        <li><kbd>Mellanslag</kbd> byter riktning</li>
+                        <li><kbd>Piltangenter</kbd> navigerar</li>
+                        <li><kbd>Tab</kbd> nästa ledtråd, <kbd>Shift+Tab</kbd> föregående</li>
+                        <li><kbd>Backspace</kbd> raderar och flyttar</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-icon">🏆</div>
+                    <h3>Topplista</h3>
+                    <p>Lös korsordet och registrera din tid! Topplistan visar de 10 snabbaste tiderna och nollställs vid midnatt.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>Laddar korsord...</p>
+        </div>
+
+        <div class="top-controls">
+            <button id="clues-toggle" class="clues-toggle" aria-expanded="true" aria-controls="across-clues down-clues">Visa ledtrådar</button>
+            <button id="leaderboard-toggle" class="clues-toggle" aria-expanded="false" aria-controls="leaderboard-list">Visa Topplista</button>
+            <button id="history-toggle" class="clues-toggle" aria-expanded="false" aria-controls="history-section">Visa Historik</button>
+            <button id="intro-toggle" class="clues-toggle" aria-expanded="false" aria-controls="intro-section">Visa info</button>
+        </div>
+
+        <div class="main-layout site-container" id="main-layout" style="display: none;">
+            <div class="grid-section">
+                <div class="grid-header">
+                    <h2>Dagens Korsord</h2>
+                    <div class="timer" id="timer">00:00</div>
+                </div>
+
+                <!-- grid-inner: controls at left, grid-area at right -->
+                <div class="grid-inner">
+                    <div class="controls">
+                        <button class="btn btn-direction" id="direction-toggle" aria-label="Byt riktning">
+                            <span class="direction-icon">→</span>
+                            <span class="direction-text">Vågrätt</span>
+                        </button>
+                        <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
+                        <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
+                        <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
+                        <div class="stats" id="stats"></div>
+                    </div>
+
+                    <div class="grid-area">
+                        <div class="crossword-grid" id="crossword-grid"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clues-section" id="clues-section">
+                <h2>Ledtrådar</h2>
+                <div class="clues-columns">
+                    <div class="clue-column">
+                        <div class="clue-direction">
+                            <h3 id="across-clues-heading">Vågrätt</h3>
+                            <ul class="clue-list" id="across-clues" role="list" aria-labelledby="across-clues-heading"></ul>
+                        </div>
+                    </div>
+                    <div class="clue-column">
+                        <div class="clue-direction">
+                            <h3 id="down-clues-heading">Lodrätt</h3>
+                            <ul class="clue-list" id="down-clues" role="list" aria-labelledby="down-clues-heading"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaderboard-section">
+                <h2>Topplista</h2>
+                <ul class="leaderboard-list" id="leaderboard-list">
+                    <!-- Leaderboard entries rendered by site.js -->
+                </ul>
+                <div class="leaderboard-date" id="leaderboard-date"></div>
+            </div>
+
+            <div class="leaderboard-section history-section" id="history-section">
+                <h2>Historisk Topplista</h2>
+                <ul class="leaderboard-list" id="history-list">
+                    <!-- Historical leaderboard entries rendered by site.js -->
+                </ul>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <nav>
+                <a href="/">Startsida</a>
+                <a href="/calendar.html">Arkiv</a>
+                <a href="om-oss.html">Om oss</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="integritetspolicy.html">Integritetspolicy</a>
+            </nav>
+            &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
+            <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</p>
+        </footer>
+
+        <div class="modal-overlay" id="username-modal">
+            <div class="modal">
+                <h3>Grattis!</h3>
+                <p>Du löste korsordet!</p>
+                <div class="modal-time" id="modal-time">00:00</div>
+                <p>Ange ditt namn för topplistan:</p>
+                <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" 
+                       autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
+                <div class="modal-buttons">
+                    <button class="btn btn-primary" onclick="submitScore()">Spara</button>
+                    <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import devtools from 'https://cdn.jsdelivr.net/npm/devtools-detect@4.0.2/+esm';
+        window.devtoolsDetect = devtools;
+        window.addEventListener('devtoolschange', event => {
+            if (event.detail.isOpen && !window.devToolsOpenedDuringSession) {
+                window.devToolsOpenedDuringSession = true;
+            }
+        });
+        if (devtools.isOpen) window.devToolsOpenedDuringSession = true;
+    </script>
+
+    <script src="/site.js"></script>
+</body>
+</html>

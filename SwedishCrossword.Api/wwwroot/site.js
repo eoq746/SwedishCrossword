@@ -819,17 +819,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadPuzzle() {
     try {
-        const response = await fetch('/api/puzzle/today');
+        const params = new URLSearchParams(window.location.search);
+        const dateParam = params.get('date');
+        const url = dateParam ? `/api/puzzle/${dateParam}` : '/api/puzzle/today';
+        const response = await fetch(url);
         if (response.ok) {
             puzzleData = await response.json();
             console.log('Loaded puzzle from API');
+        } else if (response.status === 404 && dateParam) {
+            console.log('No puzzle for ' + dateParam);
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('main-layout').style.display = '';
+            const gridHeader = document.querySelector('.grid-header h2');
+            if (gridHeader) gridHeader.textContent = 'Inget korsord tillgängligt för ' + dateParam;
+            return;
         } else {
             console.log('API puzzle endpoint returned ' + response.status + ', using default puzzle');
         }
     } catch (e) { 
         console.log('Error loading puzzle from API, using default puzzle:', e);
     }
-    
+
     try {
         await init();
     } catch (initError) {
@@ -859,7 +869,17 @@ async function init() {
     } else {
         currentPuzzleDate = new Date().toISOString().split('T')[0];
     }
-    
+
+    // Update heading for historical puzzles
+    const params = new URLSearchParams(window.location.search);
+    const dateParam = params.get('date');
+    const todayStr = new Date().toISOString().split('T')[0];
+    const isHistorical = dateParam && dateParam !== todayStr;
+    const gridHeader = document.querySelector('.grid-header h2');
+    if (gridHeader && isHistorical) {
+        gridHeader.textContent = `Korsord ${currentPuzzleDate}`;
+    }
+
     if (puzzleData.wordCount) {
         document.getElementById('puzzle-info').style.display = 'inline-block';
         document.getElementById('info-size').textContent = `${puzzleData.width}x${puzzleData.height}`;

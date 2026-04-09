@@ -189,6 +189,21 @@ app.MapGet("/api/leaderboard/history", async (int? days, LeaderboardStore store)
 });
 
 // ---------------------------------------------------------------------------
+// Puzzle archive
+// ---------------------------------------------------------------------------
+
+app.MapGet("/api/puzzle/dates", () =>
+{
+    var dates = Directory.GetFiles(puzzlePath, "puzzle-*.json")
+        .Select(f => Path.GetFileNameWithoutExtension(f).Replace("puzzle-", ""))
+        .Where(d => DateOnly.TryParseExact(d, "yyyy-MM-dd", out _))
+        .OrderDescending()
+        .ToArray();
+
+    return Results.Ok(dates);
+});
+
+// ---------------------------------------------------------------------------
 // Stats
 // ---------------------------------------------------------------------------
 
