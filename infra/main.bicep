@@ -168,14 +168,12 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         transport: 'auto'
         allowInsecure: false
       }
-      registries: hasImage
-        ? [
-            {
-              server: acr.properties.loginServer
-              identity: identity.id
-            }
-          ]
-        : []
+      registries: [
+        {
+          server: acr.properties.loginServer
+          identity: identity.id
+        }
+      ]
     }
     template: {
       containers: [
