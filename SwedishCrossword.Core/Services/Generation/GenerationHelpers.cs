@@ -36,7 +36,8 @@ internal static class GenerationHelpers
             bool isMatch = true;
             for (int i = 0; i < patternLength; i++)
             {
-                if (pattern[i].HasValue && word.Text[i] != pattern[i].Value)
+                var p = pattern[i];
+                if (p.HasValue && word.Text[i] != p.Value)
                 {
                     isMatch = false;
                     break;

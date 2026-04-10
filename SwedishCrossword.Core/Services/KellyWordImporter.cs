@@ -46,7 +46,7 @@ public class KellyWordImporter
         if (!File.Exists(path))
         {
             Console.WriteLine($"Kelly clue dictionary not found at: {path}");
-            return new Dictionary<string, string>();
+            return [];
         }
 
         try
@@ -74,7 +74,7 @@ public class KellyWordImporter
             Console.WriteLine($"Warning: Failed to load Kelly clue dictionary: {ex.Message}");
         }
 
-        return new Dictionary<string, string>();
+        return [];
     }
 
     /// <summary>

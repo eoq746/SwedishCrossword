@@ -10,7 +10,7 @@ using SwedishCrossword.Models;
 /// </summary>
 internal class WordAnalyzer
 {
-    private readonly object _analysisCacheLock = new();
+    private readonly Lock _analysisCacheLock = new();
     private string? _cachedWordsFingerprint;
     private List<WordAnalysis>? _cachedWordAnalysis;
 
@@ -29,15 +29,15 @@ internal class WordAnalyzer
         {
             if (fingerprint == _cachedWordsFingerprint && _cachedWordAnalysis != null)
             {
-                return new List<WordAnalysis>(_cachedWordAnalysis);
+                return [.._cachedWordAnalysis];
             }
 
             var disk = LoadAnalysisFromDisk(fingerprint, words);
             if (disk != null)
             {
                 _cachedWordsFingerprint = fingerprint;
-                _cachedWordAnalysis = new List<WordAnalysis>(disk);
-                return new List<WordAnalysis>(_cachedWordAnalysis);
+                _cachedWordAnalysis = [..disk];
+                return [.._cachedWordAnalysis];
             }
 
             var letterWordCount = new Dictionary<char, int>();
@@ -67,7 +67,7 @@ internal class WordAnalyzer
             }
 
             _cachedWordsFingerprint = fingerprint;
-            _cachedWordAnalysis = new List<WordAnalysis>(analysis);
+            _cachedWordAnalysis = [..analysis];
 
             SaveAnalysisToDisk(fingerprint, _cachedWordAnalysis);
 
@@ -151,7 +151,7 @@ internal class WordAnalyzer
         {
             try
             {
-                if (env.StartsWith("~"))
+                if (env.StartsWith('~'))
                 {
                     var home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
                     env = Path.Combine(home, env.TrimStart('~').TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));

@@ -1,4 +1,6 @@
 ﻿using System.Text.Json;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using SwedishCrossword.Models;
 using System.Text;
 
@@ -11,20 +13,32 @@ public class SwedishDictionary
 {
     private readonly Dictionary<string, WordEntry> _words;
     private readonly Random _random = new();
+    private readonly ILogger<SwedishDictionary> _logger;
 
     private static bool HasValidClue(WordEntry w) => !string.IsNullOrWhiteSpace(w.Clue) && w.Clue != "___";
 
     public IReadOnlyList<Word> AllWords => _words.Values.Where(HasValidClue).Select(ConvertToWord).ToList().AsReadOnly();
     public int WordCount => _words.Count;
 
+    public SwedishDictionary(ILogger<SwedishDictionary> logger)
+        : this(logger, false)
+    {
+    }
+
     public SwedishDictionary()
-        : this(false)
+        : this(NullLogger<SwedishDictionary>.Instance, false)
     {
     }
 
     public SwedishDictionary(bool empty)
+        : this(NullLogger<SwedishDictionary>.Instance, empty)
     {
-        _words = new Dictionary<string, WordEntry>();
+    }
+
+    public SwedishDictionary(ILogger<SwedishDictionary> logger, bool empty)
+    {
+        _logger = logger;
+        _words = [];
 
         if (!empty)
         {
@@ -33,12 +47,12 @@ public class SwedishDictionary
             if (File.Exists(lexinJsonPath))
             {
                 LoadWordsFromFile(lexinJsonPath);
-                Console.WriteLine($"Loaded Lexin dictionary: {WordCount} words");
+                _logger.LogInformation("Loaded Lexin dictionary: {WordCount} words", WordCount);
             }
             else
             {
-                Console.WriteLine($"Lexin dictionary not found at: {lexinJsonPath}");
-                Console.WriteLine("Run 'Import from Lexin' option to download and import words.");
+                _logger.LogWarning("Lexin dictionary not found at: {Path}", lexinJsonPath);
+                _logger.LogInformation("Run 'Import from Lexin' option to download and import words.");
             }
 
             // Try to load synonym pair words (if they've been imported)
@@ -48,7 +62,7 @@ public class SwedishDictionary
                 var countBefore = WordCount;
                 LoadWordsFromFile(synonymJsonPath);
                 var synonymsAdded = WordCount - countBefore;
-                Console.WriteLine($"Loaded synonym pairs: {synonymsAdded} additional words");
+                _logger.LogInformation("Loaded synonym pairs: {SynonymsAdded} additional words", synonymsAdded);
             }
 
             // Try to load Kelly word list (if it's been imported)
@@ -58,7 +72,7 @@ public class SwedishDictionary
                 var countBefore = WordCount;
                 LoadWordsFromFile(kellyJsonPath);
                 var kellyAdded = WordCount - countBefore;
-                Console.WriteLine($"Loaded Kelly word list: {kellyAdded} additional words");
+                _logger.LogInformation("Loaded Kelly word list: {KellyAdded} additional words", kellyAdded);
             }
 
             // Try to load DSSO words (if they've been imported)
@@ -68,7 +82,7 @@ public class SwedishDictionary
                 var countBefore = WordCount;
                 LoadWordsFromFile(dssoJsonPath);
                 var dssoAdded = WordCount - countBefore;
-                Console.WriteLine($"Loaded DSSO word list: {dssoAdded} additional words");
+                _logger.LogInformation("Loaded DSSO word list: {DssoAdded} additional words", dssoAdded);
             }
 
             var customJsonPath = Path.Combine(DataDirectory.GetPath(), "custom-words.json");
@@ -77,40 +91,34 @@ public class SwedishDictionary
                 var countBefore = WordCount;
                 LoadWordsFromFile(customJsonPath);
                 var customAdded = WordCount - countBefore;
-                Console.WriteLine($"Loaded custom word list: {customAdded} additional words");
+                _logger.LogInformation("Loaded custom word list: {CustomAdded} additional words", customAdded);
             }
 
         }
 
-        Console.WriteLine($"Total words loaded: {WordCount}");
+        _logger.LogInformation("Total words loaded: {WordCount}", WordCount);
     }
 
     private void LoadWordsFromFile(string filePath)
     {
         try
         {
-            Console.WriteLine($"Loading words from: {Path.GetFileName(filePath)}");
-            
+            _logger.LogDebug("Loading words from: {FileName}", Path.GetFileName(filePath));
+
             string jsonText = "";
             Encoding encoding = Encoding.UTF8;
-            
+
             // Try UTF-8 first
             try
             {
                 jsonText = File.ReadAllText(filePath, Encoding.UTF8);
-                //Console.WriteLine("Successfully read file using UTF-8 encoding");
-                //Console.WriteLine($"File loaded using: UTF-8");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"UTF-8 failed: {ex.Message}");
+                _logger.LogWarning(ex, "UTF-8 read failed for {FilePath}", filePath);
             }
 
-            var wordData = JsonSerializer.Deserialize<List<WordEntry>>(jsonText, new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                Encoder = SafeJsonEncoder.Instance
-            });
+            var wordData = JsonSerializer.Deserialize<List<WordEntry>>(jsonText, SafeJsonEncoder.DeserializeOptions);
 
             if (wordData != null)
             {
@@ -128,7 +136,7 @@ public class SwedishDictionary
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error loading words from {filePath}: {ex.Message}");
+            _logger.LogError(ex, "Error loading words from {FilePath}", filePath);
         }
     }
 
@@ -253,9 +261,9 @@ public class SwedishDictionary
             return new DictionaryStats
             {
                 TotalWords = 0,
-                Categories = new Dictionary<string, int>(),
-                LengthDistribution = new Dictionary<int, int>(),
-                DifficultyDistribution = new Dictionary<DifficultyLevel, int>(),
+                Categories = [],
+                LengthDistribution = [],
+                DifficultyDistribution = [],
                 AverageLength = 0,
                 MinLength = 0,
                 MaxLength = 0
@@ -306,7 +314,7 @@ public class SwedishDictionary
     /// <summary>
     /// Creates a new Word instance (helper method for creating test words)
     /// </summary>
-    public Word CreateWord(string text, string clue, string category = "", DifficultyLevel difficulty = DifficultyLevel.Medium)
+    public static Word CreateWord(string text, string clue, string category = "", DifficultyLevel difficulty = DifficultyLevel.Medium)
     {
         return new Word(text, clue, category, difficulty);
     }

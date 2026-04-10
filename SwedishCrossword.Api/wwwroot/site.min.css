@@ -94,7 +94,6 @@ header p{font-size:.95rem;opacity:.95}
 
 .tips-accordion{background:rgba(255,255,255,0.08);border-radius:8px;margin:16px 0;overflow:hidden}
 .tips-accordion summary{padding:12px 16px;cursor:pointer;font-weight:600;font-size:0.95rem;list-style:none;display:flex;align-items:center;gap:8px}
-.tips-accordion summary::-webkit-details-marker{display:none}
 .tips-accordion summary::after{content:'?';margin-left:auto;transition:transform 0.2s}
 .tips-accordion[open] summary::after{transform:rotate(90deg)}
 .tips-accordion ul{padding:0 16px 16px 40px;margin:0}
@@ -131,8 +130,14 @@ header p{font-size:.95rem;opacity:.95}
 
 /* Layout - mobile-first */
 .main-layout{display:flex;flex-direction:column;gap:16px;align-items:stretch}
-.grid-section,.clues-section,.leaderboard-section{background:#fff;border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.08);display: flex; flex-direction: column; min-height: 0;}
-.grid-section h2,.clues-section h2,.leaderboard-section h2{text-align:center;margin-bottom:8px;color:#333;font-size:1.05rem}
+.grid-section,.clues-section,.leaderboard-section,.player-stats-section{background:#fff;border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.08);display: flex; flex-direction: column; min-height: 0;}
+.grid-section h2,.clues-section h2,.leaderboard-section h2,.player-stats-section h2{text-align:center;margin-bottom:8px;color:#333;font-size:1.05rem}
+
+/* Player stats grid */
+.player-stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;text-align:center;padding:8px 0}
+.stat-item{display:flex;flex-direction:column;gap:2px}
+.stat-value{font-size:1.3rem;font-weight:700;color:#2563eb}
+.stat-label{font-size:0.7rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px}
 
 /* Crossword grid - responsive, centered, horizontal scroll inside grid if needed */
 .crossword-grid{
@@ -604,6 +609,30 @@ header p{font-size:.95rem;opacity:.95}
 
   #history-toggle{display:inline-block}
 
+  /* Player stats: always visible on mobile (compact) */
+    .player-stats-section {
+        order: 5;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .player-stats-section h2 {
+        flex: 0 0 auto;
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+    }
+
+    .player-stats-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4px;
+        padding: 4px 0;
+    }
+
+    .stat-value { font-size: 1.1rem; }
+    .stat-label { font-size: 0.65rem; }
+
   /* Reduce footer footprint */
   .site-footer{font-size:.75rem;padding:8px}
 }
@@ -638,8 +667,9 @@ header p{font-size:.95rem;opacity:.95}
   .clue-direction { flex: 1 1 auto; min-height: 0; overflow: hidden; }
   .clue-list { max-height: calc(var(--available-height) - 120px); overflow: auto; -webkit-overflow-scrolling: touch; }
 
-  /* Hide leaderboard panel to keep focus on clues; can be toggled if needed */
+  /* Hide leaderboard and stats panels to keep focus on clues */
   .leaderboard-section { display: none; }
+  .player-stats-section { display: none; }
 
   /* Hide toggle buttons in landscape because panels are visible */
   .clues-toggle, #leaderboard-toggle, #intro-toggle { display: none !important; }
@@ -738,7 +768,7 @@ header p{font-size:.95rem;opacity:.95}
   .main-layout { 
     display: grid; 
     grid-template-columns: minmax(400px, 1fr) 320px 260px; 
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
     gap: 24px; 
     align-items: start; 
     height: auto; 
@@ -882,6 +912,16 @@ header p{font-size:.95rem;opacity:.95}
   }
   .history-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
   .history-section .leaderboard-list { overflow: auto; flex: 1 1 auto; max-height: none; }
+
+  /* Player stats: below history in column 3 */
+  .player-stats-section {
+    order: 5;
+    grid-column: 3;
+    grid-row: 3;
+    align-self: stretch;
+    padding: 16px;
+  }
+  .player-stats-section h2 { font-size: 1.1rem; margin-bottom: 12px; }
 }
 
 /* Large desktop: 1400px+ - more generous spacing */
@@ -914,6 +954,8 @@ header p{font-size:.95rem;opacity:.95}
   .leaderboard-item { padding: 12px 10px; }
 
   .history-section { padding: 20px; }
+
+  .player-stats-section { padding: 20px; }
 }
 
 /* Extra large screens: 1920px+ - maximize the grid experience */
@@ -987,6 +1029,11 @@ header p{font-size:.95rem;opacity:.95}
 
   .history-section { padding: 24px; }
   .history-section h2 { font-size: 1.2rem; }
+
+  .player-stats-section { padding: 24px; }
+  .player-stats-section h2 { font-size: 1.2rem; }
+  .stat-value { font-size: 1.5rem; }
+  .stat-label { font-size: 0.8rem; }
 
   .site-footer { padding: 20px; font-size: 0.9rem; }
 }

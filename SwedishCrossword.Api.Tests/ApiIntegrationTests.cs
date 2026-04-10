@@ -125,9 +125,10 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_ValidEntry_ReturnsOk()
     {
+        var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
-            date = "2025-01-15",
+            date = today,
             entry = new { name = "Testare", time = 120.5, timestamp = 1705320000000L, puzzleHash = "abc123" }
         });
 

@@ -215,15 +215,15 @@ public class CrosswordGrid
                 {
                     Letter = cell.Letter,
                     Number = cell.Number,
-                    WordIds = new HashSet<string>(cell.WordIds),
+                    WordIds = [..cell.WordIds],
                     IsPartOfWord = cell.IsPartOfWord,
                     BendArrowDirection = cell.BendArrowDirection
                 };
             }
         }
-        
+
         // Back up words list
-        backup.WordsList = new List<Word>(_words);
+        backup.WordsList = [.._words];
         
         return backup;
     }
@@ -264,8 +264,8 @@ public class CrosswordGrid
     /// </summary>
     private class GridBackup
     {
-        public Dictionary<(int Row, int Col), CellBackup> CellStates { get; } = new();
-        public List<Word> WordsList { get; set; } = new();
+        public Dictionary<(int Row, int Col), CellBackup> CellStates { get; } = [];
+        public List<Word> WordsList { get; set; } = [];
     }
 
     /// <summary>
@@ -275,7 +275,7 @@ public class CrosswordGrid
     {
         public char Letter { get; set; }
         public int Number { get; set; }
-        public HashSet<string> WordIds { get; set; } = new();
+        public HashSet<string> WordIds { get; set; } = [];
         public bool IsPartOfWord { get; set; }
         public Direction? BendArrowDirection { get; set; }
     }
@@ -307,7 +307,7 @@ public class CrosswordGrid
             {
                 Letter = cell.Letter,
                 Number = cell.Number,
-                WordIds = new HashSet<string>(cell.WordIds),
+                WordIds = [..cell.WordIds],
                 IsPartOfWord = cell.IsPartOfWord,
                 BendArrowDirection = cell.BendArrowDirection
             };
@@ -361,7 +361,7 @@ public class CrosswordGrid
             {
                 Letter = cell.Letter,
                 Number = cell.Number,
-                WordIds = new HashSet<string>(cell.WordIds),
+                WordIds = [..cell.WordIds],
                 IsPartOfWord = cell.IsPartOfWord,
                 BendArrowDirection = cell.BendArrowDirection
             };
@@ -494,7 +494,7 @@ public class CrosswordGrid
     {
         if (_onePastEndCache == null)
         {
-            _onePastEndCache = new HashSet<(int, int)>();
+            _onePastEndCache = [];
             foreach (var w in _words)
             {
                 if (!w.IsPlaced) continue;
@@ -531,7 +531,7 @@ public class CrosswordGrid
     {
         if (_beforeBentStartCache == null)
         {
-            _beforeBentStartCache = new HashSet<(int, int)>();
+            _beforeBentStartCache = [];
             foreach (var w in _words)
             {
                 if (!w.IsPlaced || !w.IsBent || w.Segments.Count == 0) continue;
@@ -1234,8 +1234,8 @@ public class CrosswordGrid
         {
             IsValid = true,
             AccidentalWords = accidentalWords,
-            ValidAccidentalWords = accidentalWords.Where(w => w.IsValidSwedishWord == true).ToList(),
-            InvalidAccidentalWords = accidentalWords.Where(w => w.IsValidSwedishWord == false).ToList()
+            ValidAccidentalWords = [.. accidentalWords.Where(w => w.IsValidSwedishWord == true)],
+            InvalidAccidentalWords = [.. accidentalWords.Where(w => w.IsValidSwedishWord == false)]
         };
 
         // If we have a dictionary and found valid accidental words, renumber to include them
@@ -1543,9 +1543,9 @@ public class CrosswordGrid
             var (row, col) = group.Key;
             
             // Assign number to all words starting at this position
-            foreach (var item in group)
+            foreach (var (Row, Col, Dir, WordRef) in group)
             {
-                switch (item.WordRef)
+                switch (WordRef)
                 {
                     case Word intentionalWord:
                         intentionalWord.Number = currentNumber;
@@ -1735,7 +1735,7 @@ public class CrosswordGrid
         // placed on that 'L' makes it read as KANALUT).
         if (_wordEndCellCache == null)
         {
-            _wordEndCellCache = new HashSet<(int, int)>();
+            _wordEndCellCache = [];
             foreach (var w in _words)
             {
                 if (w.IsPlaced)
@@ -1837,7 +1837,7 @@ public class CrosswordGrid
             word.StartRow = segments[0].StartRow;
             word.StartColumn = segments[0].StartCol;
             word.Direction = segments[0].Direction;
-            word.Segments = new List<WordSegment>(segments);
+            word.Segments = [..segments];
             word.IsPlaced = true;
 
             int ci = 0;

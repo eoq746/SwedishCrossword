@@ -116,10 +116,11 @@ public class ClueGenerator
     /// </summary>
     public IEnumerable<string> GenerateAlternativeClues(Word word, int maxClues = 3)
     {
-        var clues = new List<string>();
-
-        // Always include the original clue
-        clues.Add(word.Clue);
+        var clues = new List<string>
+        {
+            // Always include the original clue
+            word.Clue
+        };
 
         // Try to generate template-based clues
         if (!string.IsNullOrEmpty(word.Category) && _clueTemplates.ContainsKey(word.Category))

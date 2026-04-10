@@ -31,14 +31,26 @@ sealed class PuzzleWarmupService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        // Generate today's puzzle immediately on startup
-        await EnsurePuzzleForDate(DateOnly.FromDateTime(DateTime.UtcNow), stoppingToken);
+        // Generate today's puzzle and the next 7 days immediately on startup
+        await EnsurePuzzlesForRange(DateOnly.FromDateTime(DateTime.UtcNow), DaysAhead, stoppingToken);
 
         // Then check every hour (catches the date rollover at midnight UTC)
         using var timer = new PeriodicTimer(TimeSpan.FromHours(1));
         while (await timer.WaitForNextTickAsync(stoppingToken))
         {
-            await EnsurePuzzleForDate(DateOnly.FromDateTime(DateTime.UtcNow), stoppingToken);
+            await EnsurePuzzlesForRange(DateOnly.FromDateTime(DateTime.UtcNow), DaysAhead, stoppingToken);
+        }
+    }
+
+    /// <summary>Number of days to pre-generate ahead of today.</summary>
+    private const int DaysAhead = 7;
+
+    private async Task EnsurePuzzlesForRange(DateOnly startDate, int daysAhead, CancellationToken ct)
+    {
+        for (var offset = 0; offset <= daysAhead; offset++)
+        {
+            if (ct.IsCancellationRequested) return;
+            await EnsurePuzzleForDate(startDate.AddDays(offset), ct);
         }
     }
 
@@ -57,7 +69,7 @@ sealed class PuzzleWarmupService : BackgroundService
 
             _logger.LogInformation("Pre-generating puzzle for {Date}...", date);
 
-            var puzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Hard);
+            var puzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Hard, ct);
             var json = _printService.GenerateJsonForWeb(puzzle);
 
             await File.WriteAllTextAsync(filePath, json, ct);

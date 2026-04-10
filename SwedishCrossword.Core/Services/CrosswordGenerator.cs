@@ -1,4 +1,6 @@
-﻿using SwedishCrossword.Models;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
+using SwedishCrossword.Models;
 using SwedishCrossword.Services.Generation;
 
 namespace SwedishCrossword.Services;
@@ -16,15 +18,22 @@ public class CrosswordGenerator
     private readonly GapFiller _gapFiller;
     private readonly VinkelordPlacer _vinkelordPlacer;
     private readonly WordPlacer _wordPlacer;
+    private readonly ILogger<CrosswordGenerator> _logger;
 
-    public CrosswordGenerator(SwedishDictionary dictionary, GridValidator validator)
+    public CrosswordGenerator(SwedishDictionary dictionary, GridValidator validator, ILogger<CrosswordGenerator> logger)
     {
         _dictionary = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         _validator = validator ?? throw new ArgumentNullException(nameof(validator));
+        _logger = logger;
         _random = new Random();
         _gapFiller = new GapFiller(dictionary, _random);
         _vinkelordPlacer = new VinkelordPlacer(dictionary, _random);
         _wordPlacer = new WordPlacer(dictionary, _random, _vinkelordPlacer);
+    }
+
+    public CrosswordGenerator(SwedishDictionary dictionary, GridValidator validator)
+        : this(dictionary, validator, NullLogger<CrosswordGenerator>.Instance)
+    {
     }
 
     /// <summary>
@@ -51,9 +60,10 @@ public class CrosswordGenerator
             .ToList();
 
         // Pre-compute connectivity scores once — these never change between attempts
-        var connectivityScores = new Dictionary<string, double>(sortedAnalysis.Count, StringComparer.OrdinalIgnoreCase);
-        foreach (var wa in sortedAnalysis)
-            connectivityScores[wa.Word.Text] = wa.ConnectivityScore;
+        var connectivityScores = sortedAnalysis.ToDictionary(
+            wa => wa.Word.Text,
+            wa => wa.ConnectivityScore,
+            StringComparer.OrdinalIgnoreCase);
 
         var originalRejectDuplicateWords = options.RejectDuplicateWords;
 
@@ -63,7 +73,7 @@ public class CrosswordGenerator
         {
             if (pass == 1)
             {
-                Console.WriteLine("Dubblettrestriktion förhindrar tillräcklig fyllnad, relaxar den...");
+                _logger.LogInformation("Duplicate rejection prevents sufficient fill, relaxing constraint...");
                 options.RejectDuplicateWords = false;
             }
 
@@ -81,14 +91,15 @@ public class CrosswordGenerator
 
                     if (result != null)
                     {
-                        Console.WriteLine($"Korsord genererat efter {attempts} försök ({result.GetStats().FillPercentage:F1}% fyllnad)");
+                        var fillPercentage = result.GetStats().FillPercentage;
+                        _logger.LogInformation("Crossword generated after {Attempts} attempts ({FillPercentage:F1}% fill)", attempts, fillPercentage);
                         if (pass > 0)
                         {
-                            Console.WriteLine("    (dubblettrestriktion relaxad)");
+                            _logger.LogInformation("    (duplicate restriction relaxed)");
                         }
                         if (validationRejections > 0)
                         {
-                            Console.WriteLine($"    {validationRejections} korsord avvisades vid validering under generering");
+                            _logger.LogInformation("{ValidationRejections} crosswords rejected during validation", validationRejections);
                         }
                         options.RejectDuplicateWords = originalRejectDuplicateWords;
                         return new CrosswordPuzzle(result, attempts, _dictionary);
@@ -100,20 +111,13 @@ public class CrosswordGenerator
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($" Försök {attempts} misslyckades: {ex.GetType().Name}: {ex.Message}");
-                    if (ex.InnerException != null)
-                    {
-                        Console.WriteLine($"    Inre fel: {ex.InnerException.Message}");
-                    }
-                    if (ex is not InvalidOperationException)
-                    {
-                        Console.WriteLine($"    Stack: {ex.StackTrace?.Split('\n').FirstOrDefault()?.Trim()}");
-                    }
+                    _logger.LogDebug(ex, "Attempt {Attempt} failed", attempts);
                 }
 
                 if (attempts % 50 == 0 || (attempts > 20 && attempts % 25 == 0 && validationRejections > attempts * 0.8))
                 {
-                    Console.WriteLine($" Försök {attempts}/{maxAttempts}... ({validationRejections} avvisade vid validering, {(double)validationRejections/attempts*100:F0}% avvisningsfrekvens)");
+                    var rejectionRate = (double)validationRejections / attempts * 100;
+                    _logger.LogDebug("Attempt {Attempts}/{MaxAttempts}... ({Rejections} rejected, {Rate:F0}% rejection rate)", attempts, maxAttempts, validationRejections, rejectionRate);
                 }
 
                 await Task.Yield();
@@ -147,7 +151,7 @@ public class CrosswordGenerator
             return null;
         }
         var phase1Stats = grid.GetStats();
-        Console.WriteLine($"Fas 1: {phase1Stats.FillPercentage:F1}% fyllnad");
+        _logger.LogDebug("Phase 1: {FillPercentage:F1}% fill", phase1Stats.FillPercentage);
 
         var placedWords = grid.Words.ToHashSet();
         var adaptiveState = _wordPlacer.CreateAdaptiveState(options, placedWords, grid);
@@ -180,7 +184,8 @@ public class CrosswordGenerator
 
             await _wordPlacer.PlaceWordsAdaptivelyWithValidation(
                 grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, cancellationToken, adaptiveState);
-            Console.WriteLine($"Fas 2 subfas A: {grid.GetStats().FillPercentage:F1}% fyllnad");
+            var phase2AFillPercentage = grid.GetStats().FillPercentage;
+            _logger.LogDebug("Phase 2A: {FillPercentage:F1}% fill", phase2AFillPercentage);
 
             // Sub-phase B: Gap/bridge filling (multi-pass within cycle)
             // Scans rows and columns for patterns with existing letters and empty
@@ -195,7 +200,7 @@ public class CrosswordGenerator
                 if (wordsPlacedThisPass == 0) break;
             }
             var subBStats = grid.GetStats();
-            Console.WriteLine($"Fas 2 subfas B: {subBStats.FillPercentage:F1}% fyllnad");
+            _logger.LogDebug("Phase 2B: {FillPercentage:F1}% fill", subBStats.FillPercentage);
 
             var cycleEnd = subBStats.FilledCells;
             if (cycleEnd == cycleStart) break;
@@ -210,19 +215,19 @@ public class CrosswordGenerator
 
         if (placedWords.Count < minWords)
         {
-            Console.WriteLine($"  Avvisad: för få ord ({placedWords.Count} < {minWords})");
+            _logger.LogDebug("Rejected: too few words ({PlacedCount} < {MinWords})", placedWords.Count, minWords);
             return null;
         }
 
         if (stats.FillPercentage < options.TargetFillPercentage)
         {
-            Console.WriteLine($"  Avvisad: för låg fyllnad ({stats.FillPercentage:F1}% < {options.TargetFillPercentage:F1}%)");
+            _logger.LogDebug("Rejected: fill too low ({FillPercentage:F1}% < {Target:F1}%)", stats.FillPercentage, options.TargetFillPercentage);
             return null;
         }
 
         if (!_validator.IsValidCrossword(grid))
         {
-            Console.WriteLine($"  Avvisad: ogiltig korsordstruktur");
+            _logger.LogDebug("Rejected: invalid crossword structure");
             return null;
         }
 
@@ -230,7 +235,8 @@ public class CrosswordGenerator
 
         if (options.RejectInvalidWords && validation.InvalidAccidentalWords.Count > 0)
         {
-            Console.WriteLine($"  Avvisad: {validation.InvalidAccidentalWords.Count} ogiltiga ord: {string.Join(", ", validation.InvalidAccidentalWords.Select(w => w.Text))}");
+            var invalidWords = string.Join(", ", validation.InvalidAccidentalWords.Select(w => w.Text));
+            _logger.LogDebug("Rejected: {Count} invalid words: {Words}", validation.InvalidAccidentalWords.Count, invalidWords);
             return null;
         }
 
@@ -244,23 +250,22 @@ public class CrosswordGenerator
     {
         if (validation.ValidAccidentalWords.Count > 0)
         {
-            Console.WriteLine($"Bonus: {validation.ValidAccidentalWords.Count} giltiga svenska bonusord hittades");
+            _logger.LogInformation("Bonus: {Count} valid Swedish bonus words found", validation.ValidAccidentalWords.Count);
         }
 
         if (validation.InvalidAccidentalWords.Count > 0)
         {
-            Console.WriteLine($"KRITISKT: {validation.InvalidAccidentalWords.Count} ogiltiga ord hittades");
+            _logger.LogWarning("CRITICAL: {Count} invalid words found", validation.InvalidAccidentalWords.Count);
         }
 
-        Console.WriteLine($"Använda ord: {usedWordCount}");
+        _logger.LogInformation("Words used: {UsedWordCount}", usedWordCount);
 
         var vinkelordCount = grid.Words.Count(w => w.IsBent);
         if (vinkelordCount > 0)
         {
-            Console.WriteLine($"Vinkelord: {vinkelordCount} böjda ord placerade");
+            _logger.LogInformation("Vinkelord: {VinkelordCount} bent words placed", vinkelordCount);
         }
 
-        Console.WriteLine("Fördelning per längd:");
         var groups = placedWordScores
             .GroupBy(kvp => kvp.Key.Length)
             .OrderBy(g => g.Key)
@@ -269,15 +274,8 @@ public class CrosswordGenerator
 
         if (groups.Count > 0)
         {
-            var maxCount = groups.Max(g => g.Count);
-            const int maxBarWidth = 40;
-
-            foreach (var (length, count) in groups)
-            {
-                var barWidth = (int)Math.Ceiling((double)count / maxCount * maxBarWidth);
-                var bar = new string('#', barWidth);
-                Console.WriteLine($"  {length,2} bokstäver: {count,3} ord {bar}");
-            }
+            var distribution = string.Join(", ", groups.Select(g => $"{g.Length} letters: {g.Count}"));
+            _logger.LogDebug("Length distribution: {Distribution}", distribution);
         }
     }
 
@@ -294,7 +292,7 @@ public class CrosswordGenerator
             words = words.Where(w => options.Categories.Contains(w.Category, StringComparer.OrdinalIgnoreCase));
         }
 
-        return words.ToList();
+        return [.. words];
     }
 }
 

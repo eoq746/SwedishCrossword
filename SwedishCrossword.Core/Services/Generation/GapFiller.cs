@@ -96,7 +96,7 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
                             Col = col,
                             StartRow = startRow,
                             Length = length,
-                            Pattern = new List<char?>(pattern),
+                            Pattern = [..pattern],
                             ExistingLetterCount = letterCount,
                             EmptyCellCount = emptyCount,
                             PerpendicularConflicts = perpConflicts
@@ -170,7 +170,7 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
                             Col = startCol,
                             StartRow = row,
                             Length = length,
-                            Pattern = new List<char?>(pattern),
+                            Pattern = [..pattern],
                             ExistingLetterCount = letterCount,
                             EmptyCellCount = emptyCount,
                             IsHorizontal = true,

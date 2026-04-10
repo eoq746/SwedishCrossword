@@ -21,7 +21,7 @@ internal class VerticalBridgeOpportunity
     public int Col { get; set; }
     public int StartRow { get; set; }
     public int Length { get; set; }
-    public List<char?> Pattern { get; set; } = new();
+    public List<char?> Pattern { get; set; } = [];
     public int ExistingLetterCount { get; set; }
     public int EmptyCellCount { get; set; }
     public bool IsHorizontal { get; set; } = false;

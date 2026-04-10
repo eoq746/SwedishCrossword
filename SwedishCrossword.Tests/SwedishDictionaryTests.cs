@@ -280,7 +280,7 @@ public class SwedishDictionaryTests
         dictionary.AddWord("TRE", "Three", "Numbers");
 
         var excludeWord = dictionary.AllWords.First(w => w.Text == "ETT");
-        var words = dictionary.GetRandomWords(3, new[] { excludeWord }).ToList();
+        var words = dictionary.GetRandomWords(3, [excludeWord]).ToList();
 
         await Assert.That(words.All(w => w.Text != "ETT")).IsTrue();
     }
@@ -304,9 +304,7 @@ public class SwedishDictionaryTests
     [Test]
     public async Task CreateWord_ReturnsValidWordInstance()
     {
-        var dictionary = new SwedishDictionary(empty: true);
-
-        var word = dictionary.CreateWord("TEST", "A test", "Category", DifficultyLevel.Hard);
+        var word = SwedishDictionary.CreateWord("TEST", "A test", "Category", DifficultyLevel.Hard);
 
         await Assert.That(word.Text).IsEqualTo("TEST");
         await Assert.That(word.Clue).IsEqualTo("A test");

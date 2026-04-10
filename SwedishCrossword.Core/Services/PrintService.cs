@@ -746,7 +746,7 @@ public class PrintService
         // Get the set of valid accidental words that should be included
         var includedAccidentalWords = puzzle.ValidationResult?.ValidAccidentalWords?
             .Where(w => w.ShouldIncludeInPuzzle && w.PuzzleNumber > 0)
-            .ToList() ?? new List<AccidentalWord>();
+            .ToList() ?? [];
 
         // Add intentional words (filter out any with invalid number and those superseded)
         foreach (var word in puzzle.Grid.Words)

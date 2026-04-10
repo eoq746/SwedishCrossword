@@ -29,4 +29,14 @@ public static class SafeJsonEncoder
         WriteIndented = true,
         Encoder = Instance
     };
+
+    /// <summary>
+    /// Pre-configured <see cref="JsonSerializerOptions"/> for deserialization
+    /// with case-insensitive property matching and the safe encoder.
+    /// </summary>
+    public static JsonSerializerOptions DeserializeOptions { get; } = new()
+    {
+        PropertyNameCaseInsensitive = true,
+        Encoder = Instance
+    };
 }

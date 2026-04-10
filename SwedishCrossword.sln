@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.1.11304.174
@@ -14,10 +14,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedishCrossword.Api", "SwedishCrossword.Api\SwedishCrossword.Api.csproj", "{574CB46F-06E5-414A-8576-3235A38CF3D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedishCrossword.Api.Tests", "SwedishCrossword.Api.Tests\SwedishCrossword.Api.Tests.csproj", "{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{07C2787E-EAC7-C090-1BA3-A61EC2A24D84}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrateCloudflareKV", "tools\MigrateCloudflareKV\MigrateCloudflareKV.csproj", "{02AF295F-63E0-42F8-815E-BB159FD3C7AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,24 +97,9 @@ Global
 		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x64.Build.0 = Release|Any CPU
 		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{AFFAD176-89C4-4F8D-857A-E2C97AA5D1B9}.Release|x86.Build.0 = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|x64.Build.0 = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Debug|x86.Build.0 = Debug|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|x64.ActiveCfg = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|x64.Build.0 = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|x86.ActiveCfg = Release|Any CPU
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{02AF295F-63E0-42F8-815E-BB159FD3C7AE} = {07C2787E-EAC7-C090-1BA3-A61EC2A24D84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7AEBA70F-2F33-43D7-A4DE-39BFFC02734A}

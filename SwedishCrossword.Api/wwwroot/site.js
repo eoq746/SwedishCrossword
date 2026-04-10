@@ -273,6 +273,114 @@ function checkIfViewedSolution() {
     }
 }
 
+// ---------------------------------------------------------------------------
+// Player Stats (localStorage)
+// ---------------------------------------------------------------------------
+const PLAYER_STATS_KEY = 'playerStats';
+
+function loadPlayerStats() {
+    try {
+        const raw = localStorage.getItem(PLAYER_STATS_KEY);
+        if (raw) return JSON.parse(raw);
+    } catch (e) {
+        console.warn('Failed to load player stats:', e);
+    }
+    return { totalSolved: 0, currentStreak: 0, bestStreak: 0, bestTime: null, totalTime: 0, lastSolvedDate: null, solvedDates: [] };
+}
+
+function savePlayerStats(stats) {
+    try {
+        localStorage.setItem(PLAYER_STATS_KEY, JSON.stringify(stats));
+    } catch (e) {
+        console.warn('Failed to save player stats:', e);
+    }
+}
+
+function recordPuzzleSolve(solveTimeSeconds) {
+    const stats = loadPlayerStats();
+    const todayStr = new Date().toISOString().split('T')[0];
+
+    // Avoid double-recording the same date
+    if (stats.solvedDates.includes(todayStr)) return stats;
+
+    stats.totalSolved = (stats.totalSolved || 0) + 1;
+    stats.totalTime = (stats.totalTime || 0) + solveTimeSeconds;
+
+    if (stats.bestTime === null || solveTimeSeconds < stats.bestTime) {
+        stats.bestTime = solveTimeSeconds;
+    }
+
+    // Streak logic: check if yesterday was solved
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+    if (stats.lastSolvedDate === yesterdayStr) {
+        stats.currentStreak = (stats.currentStreak || 0) + 1;
+    } else if (stats.lastSolvedDate === todayStr) {
+        // Already counted today — keep streak as is
+    } else {
+        stats.currentStreak = 1;
+    }
+
+    stats.bestStreak = Math.max(stats.bestStreak || 0, stats.currentStreak);
+    stats.lastSolvedDate = todayStr;
+
+    // Keep last 90 dates for history
+    if (!stats.solvedDates.includes(todayStr)) {
+        stats.solvedDates.push(todayStr);
+    }
+    if (stats.solvedDates.length > 90) {
+        stats.solvedDates = stats.solvedDates.slice(-90);
+    }
+
+    savePlayerStats(stats);
+    return stats;
+}
+
+function renderPlayerStats() {
+    const panel = document.getElementById('player-stats');
+    if (!panel) return;
+
+    const stats = loadPlayerStats();
+
+    // Recompute current streak based on today's date in case it's stale
+    const todayStr = new Date().toISOString().split('T')[0];
+    if (stats.lastSolvedDate && stats.lastSolvedDate !== todayStr) {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        if (stats.lastSolvedDate !== yesterday.toISOString().split('T')[0]) {
+            stats.currentStreak = 0;
+        }
+    }
+
+    const avgTime = stats.totalSolved > 0 ? Math.round(stats.totalTime / stats.totalSolved) : 0;
+
+    panel.innerHTML = `
+        <div class="player-stats-grid">
+            <div class="stat-item">
+                <span class="stat-value">${stats.totalSolved}</span>
+                <span class="stat-label">Lösta</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.currentStreak}</span>
+                <span class="stat-label">Streak</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.bestStreak}</span>
+                <span class="stat-label">Bästa streak</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.bestTime !== null ? formatTime(stats.bestTime) : '--:--'}</span>
+                <span class="stat-label">Bästa tid</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${avgTime > 0 ? formatTime(avgTime) : '--:--'}</span>
+                <span class="stat-label">Snittid</span>
+            </div>
+        </div>`;
+}
+
 // Analyze input pattern for suspicious activity
 function analyzeInputPattern() {
     if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
@@ -899,6 +1007,7 @@ async function init() {
     buildCellClueMap();
     loadProgress();
     await renderLeaderboard();
+    renderPlayerStats();
 
     // Auto-load history data on desktop (no manual toggle needed)
     if (!window.matchMedia('(max-width:1100px)').matches) {
@@ -1574,6 +1683,8 @@ function checkAnswers() {
         puzzleSolved = true; stopTimer();
         clearProgress();
         inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
+        recordPuzzleSolve(seconds);
+        renderPlayerStats();
         announce(`Grattis! Du löste korsordet på ${formatTime(seconds)}`);
         setTimeout(() => showUsernameModal(), 100);
     } else if (filled < total) {

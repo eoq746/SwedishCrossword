@@ -355,7 +355,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         public int PlacementAttempts;
         public int CurrentTargetLength;
         public int ConsecutiveFailures;
-        public HashSet<string> TriedWords = new();
+        public HashSet<string> TriedWords = [];
         public bool RequireIntersections;
         public HashSet<string> PlacedWordTexts;
         public HashSet<string> UsedWordTexts;

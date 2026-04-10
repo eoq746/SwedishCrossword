@@ -14,14 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Data\quick-words.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Data\quick-words.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SwedishCrossword.Core\SwedishCrossword.Core.csproj" />
   </ItemGroup>
 
