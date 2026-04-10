@@ -59,22 +59,36 @@ sealed class PuzzleWarmupService : BackgroundService
         try
         {
             Directory.CreateDirectory(_puzzlePath);
-            var filePath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}.json");
 
-            if (File.Exists(filePath))
+            // Generate the standard (hard) puzzle
+            var filePath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}.json");
+            if (!File.Exists(filePath))
+            {
+                _logger.LogInformation("Pre-generating puzzle for {Date}...", date);
+                var puzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Hard, ct);
+                var json = _printService.GenerateJsonForWeb(puzzle);
+                await File.WriteAllTextAsync(filePath, json, ct);
+                _logger.LogInformation("Puzzle for {Date} generated successfully", date);
+            }
+            else
             {
                 _logger.LogDebug("Puzzle for {Date} already exists", date);
-                return;
             }
 
-            _logger.LogInformation("Pre-generating puzzle for {Date}...", date);
-
-            var puzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Hard, ct);
-            var json = _printService.GenerateJsonForWeb(puzzle);
-
-            await File.WriteAllTextAsync(filePath, json, ct);
-
-            _logger.LogInformation("Puzzle for {Date} generated successfully", date);
+            // Generate the small (mobile) variant
+            var smallPath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}-small.json");
+            if (!File.Exists(smallPath))
+            {
+                _logger.LogInformation("Pre-generating small puzzle for {Date}...", date);
+                var smallPuzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Mobile, ct);
+                var smallJson = _printService.GenerateJsonForWeb(smallPuzzle);
+                await File.WriteAllTextAsync(smallPath, smallJson, ct);
+                _logger.LogInformation("Small puzzle for {Date} generated successfully", date);
+            }
+            else
+            {
+                _logger.LogDebug("Small puzzle for {Date} already exists", date);
+            }
         }
         catch (OperationCanceledException) when (ct.IsCancellationRequested)
         {

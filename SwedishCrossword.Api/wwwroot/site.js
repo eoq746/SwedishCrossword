@@ -929,7 +929,10 @@ async function loadPuzzle() {
     try {
         const params = new URLSearchParams(window.location.search);
         const dateParam = params.get('date');
-        const url = dateParam ? `/api/puzzle/${dateParam}` : '/api/puzzle/today';
+        // On small screens (phones), request the smaller 10x10 puzzle variant
+        const isSmallScreen = window.matchMedia('(max-width:1099px)').matches;
+        const sizeParam = isSmallScreen ? '?size=small' : '';
+        const url = dateParam ? `/api/puzzle/${dateParam}${sizeParam}` : `/api/puzzle/today${sizeParam}`;
         const response = await fetch(url);
         if (response.ok) {
             puzzleData = await response.json();

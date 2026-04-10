@@ -381,6 +381,19 @@ public class CrosswordGenerationOptions
         RejectInvalidWords = true,
         RejectDuplicateWords = true
     };
+
+    public static CrosswordGenerationOptions Mobile => new()
+    {
+        Width = 10,
+        Height = 10,
+        MinWordLength = 1,
+        MaxWordLength = 10,
+        TargetFillPercentage = 45.0,
+        Difficulty = null,
+        MaxAttempts = 50,
+        RejectInvalidWords = true,
+        RejectDuplicateWords = true
+    };
 }
 
 /// <summary>
