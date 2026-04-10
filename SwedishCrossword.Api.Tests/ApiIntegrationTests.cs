@@ -108,6 +108,41 @@ public class ApiIntegrationTests
         await Assert.That(content).IsEqualTo(puzzleJson);
     }
 
+    [Test]
+    public async Task PuzzleByDate_FutureDate_ReturnsNotFound()
+    {
+        var futureDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(3);
+        var puzzleJson = """{"test":true}""";
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), puzzleJson);
+
+        var response = await _client.GetAsync($"/api/puzzle/{futureDate:yyyy-MM-dd}");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
+    }
+
+    [Test]
+    public async Task PuzzleDates_ExcludesFutureDates()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var pastDate = today.AddDays(-2);
+        var futureDate = today.AddDays(3);
+
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), "{}");
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today:yyyy-MM-dd}.json"), "{}");
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), "{}");
+
+        var response = await _client.GetAsync("/api/puzzle/dates");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var dates = await response.Content.ReadFromJsonAsync<string[]>();
+        await Assert.That(dates).IsNotNull();
+        await Assert.That(dates!).Contains($"{today:yyyy-MM-dd}");
+        await Assert.That(dates!).Contains($"{pastDate:yyyy-MM-dd}");
+        await Assert.That(dates!).DoesNotContain($"{futureDate:yyyy-MM-dd}");
+    }
+
     // -----------------------------------------------------------------------
     // Leaderboard
     // -----------------------------------------------------------------------

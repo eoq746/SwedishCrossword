@@ -302,8 +302,21 @@ header p{font-size:.95rem;opacity:.95}
 /* Ensure clue-column allows its children to shrink and not force overflow */
 .clue-column { min-height: 0; }
 
+/* Custom on-screen keyboard (touch devices) */
+.custom-keyboard{display:none}
+.custom-keyboard.kb-visible{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 2px;background:rgba(0,0,0,.06);border-radius:10px;margin-top:6px;width:100%;box-sizing:border-box;-webkit-user-select:none;user-select:none}
+.kb-row{display:flex;gap:3px;justify-content:center;width:100%}
+.kb-key{flex:1 1 0;max-width:42px;min-width:0;height:42px;border:none;border-radius:6px;background:#fff;color:#1e293b;font-size:1rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:background .1s;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.kb-key:active{background:#e0e7ff}
+.kb-backspace{flex:1.6 1 0;max-width:72px;font-size:1.2rem;background:#f1f5f9}
+.kb-backspace:active{background:#fecaca}
+
 /* Consolidated mobile rules */
 @media (max-width:1099px){
+    /* Show custom keyboard on small screens (touch devices enable it via JS) */
+    .custom-keyboard{display:none}
+    .custom-keyboard.kb-visible{display:flex;position:sticky;bottom:0;z-index:50;background:rgba(240,240,245,.97);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid rgba(0,0,0,.08);padding:6px 4px;margin:0 -4px;border-radius:0}
+
     /* Compact header on mobile portrait */
     header {
         margin-bottom: 6px;
@@ -546,25 +559,31 @@ header p{font-size:.95rem;opacity:.95}
     
   #clues-toggle{display:inline-block}
 
-  /* Leaderboard: hidden by default, shown with body.show-leaderboard; scroll internally */
+  /* When leaderboard is shown, hide the grid and keyboard to give full space */
+    body.show-leaderboard .grid-section { display: none; }
+    body.show-leaderboard .custom-keyboard { display: none !important; }
+
+  /* Leaderboard: hidden by default, replaces grid when shown */
     .leaderboard-section {
         order: 3;
         display: none;
         flex-direction: column;
-        padding: 8px;
+        padding: 10px;
         width: 100%;
     }
-    
+
     body.show-leaderboard .leaderboard-section {
         display: flex;
+        flex: 1 1 auto;
+        min-height: 0;
     }
-    
+
     .leaderboard-section h2 {
         flex: 0 0 auto;
         margin-bottom: 8px;
         font-size: 0.95rem;
     }
-    
+
     .leaderboard-list {
         flex: 1 1 auto;
         overflow: auto;
@@ -572,12 +591,12 @@ header p{font-size:.95rem;opacity:.95}
         overscroll-behavior: contain;
         max-height: none;
     }
-    
+
     .leaderboard-item {
         padding: 8px 6px;
         margin-bottom: 4px;
     }
-    
+
     .leaderboard-date {
         flex: 0 0 auto;
         margin-top: 6px;
@@ -585,20 +604,22 @@ header p{font-size:.95rem;opacity:.95}
         text-align: center;
         color: #6b7280;
     }
-    
+
   #leaderboard-toggle{display:inline-block}
 
-  /* History: hidden by default, shown with body.show-history */
+  /* History: shown together with leaderboard on mobile */
     .history-section {
         order: 4;
         display: none;
         flex-direction: column;
-        padding: 8px;
+        padding: 10px;
         width: 100%;
     }
 
-    body.show-history .history-section {
+    body.show-leaderboard .history-section {
         display: flex;
+        flex: 0 0 auto;
+        min-height: 0;
     }
 
     .history-section h2 {
@@ -607,31 +628,42 @@ header p{font-size:.95rem;opacity:.95}
         font-size: 0.95rem;
     }
 
-  #history-toggle{display:inline-block}
+    .history-section .leaderboard-list {
+        max-height: none;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
-  /* Player stats: always visible on mobile (compact) */
+  /* Hide history toggle on mobile - history is bundled with leaderboard */
+  #history-toggle{display:none}
+
+  /* Player stats: hidden by default on mobile, shown together with leaderboard */
     .player-stats-section {
         order: 5;
-        display: flex;
+        display: none;
         flex-direction: column;
-        padding: 8px;
+        padding: 6px 8px;
         width: 100%;
+    }
+
+    body.show-leaderboard .player-stats-section {
+        display: flex;
     }
 
     .player-stats-section h2 {
         flex: 0 0 auto;
-        margin-bottom: 6px;
-        font-size: 0.95rem;
+        margin-bottom: 4px;
+        font-size: 0.85rem;
     }
 
     .player-stats-grid {
         grid-template-columns: repeat(5, 1fr);
         gap: 4px;
-        padding: 4px 0;
+        padding: 2px 0;
     }
 
-    .stat-value { font-size: 1.1rem; }
-    .stat-label { font-size: 0.65rem; }
+    .stat-value { font-size: 1rem; }
+    .stat-label { font-size: 0.6rem; }
 
   /* Reduce footer footprint */
   .site-footer{font-size:.75rem;padding:8px}
@@ -639,6 +671,9 @@ header p{font-size:.95rem;opacity:.95}
 
 /* Landscape support for narrow viewports (e.g., phones rotated) */
 @media (max-width:1099px) and (orientation: landscape) {
+  /* Hide custom keyboard in landscape to maximise game space */
+  .custom-keyboard { display: none !important; }
+
   /* Hide intro and content sections in landscape to maximize game space */
   .intro-section { display: none !important; }
   .content-section { display: none !important; }
@@ -768,7 +803,7 @@ header p{font-size:.95rem;opacity:.95}
   .main-layout { 
     display: grid; 
     grid-template-columns: minmax(400px, 1fr) 320px 260px; 
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
     gap: 24px; 
     align-items: start; 
     height: auto; 
@@ -913,15 +948,15 @@ header p{font-size:.95rem;opacity:.95}
   .history-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
   .history-section .leaderboard-list { overflow: auto; flex: 1 1 auto; max-height: none; }
 
-  /* Player stats: below history in column 3 */
+  /* Player stats: full-width strip below the 3-column layout */
   .player-stats-section {
-    order: 5;
-    grid-column: 3;
-    grid-row: 3;
-    align-self: stretch;
-    padding: 16px;
+    order: 10;
+    grid-column: 1 / -1;
+    align-self: center;
+    padding: 12px 20px;
   }
-  .player-stats-section h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .player-stats-section h2 { font-size: 1rem; margin-bottom: 8px; }
+  .player-stats-grid { grid-template-columns: repeat(5, auto); gap: 24px; justify-content: center; }
 }
 
 /* Large desktop: 1400px+ - more generous spacing */

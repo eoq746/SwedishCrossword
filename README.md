@@ -53,13 +53,19 @@ SwedishCrosswords/
 |           +-- GenerationModels.cs # Internal generation models
 |-- SwedishCrossword.Api/           # ASP.NET Core Minimal API
 |   |-- Program.cs                  # API entry point (puzzle + leaderboard endpoints)
+|   |-- PuzzleWarmupService.cs      # Background service: daily puzzle pre-generation
 |   |-- wwwroot/                    # Frontend (served by the API)
 |   |   |-- index.html              # Main crossword player
+|   |   |-- puzzle.html             # Individual puzzle page
+|   |   |-- calendar.html           # Puzzle archive calendar
 |   |   |-- site.js                 # Game logic, navigation, and leaderboard
 |   |   |-- site.min.css            # Responsive styles
 |   |   |-- om-oss.html             # About page
 |   |   |-- kontakt.html            # Contact page
-|   |   +-- integritetspolicy.html  # Privacy policy
+|   |   |-- integritetspolicy.html  # Privacy policy
+|   |   |-- robots.txt              # Search engine crawl rules
+|   |   |-- sitemap.xml             # Sitemap for search engines
+|   |   +-- site.webmanifest        # PWA manifest
 |   |-- appsettings.json            # Configuration
 |   +-- Properties/launchSettings.json
 |-- SwedishCrossword/               # CLI generator
@@ -110,12 +116,13 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 |--------|------|-------------|
 | GET | `/api/puzzle/today` | Get today's puzzle (generates if missing) |
 | GET | `/api/puzzle/{yyyy-MM-dd}` | Get puzzle for a specific date |
-| POST | `/api/puzzle/generate` | Generate a new puzzle (`{ "difficulty": "easy\|medium\|hard" }`) |
+| GET | `/api/puzzle/dates` | List available puzzle dates |
 | GET | `/api/stats` | Dictionary statistics |
 | GET | `/api/leaderboard` | Current leaderboard |
 | PUT | `/api/leaderboard` | Update leaderboard |
 | POST | `/api/leaderboard/history` | Submit a historical score |
 | GET | `/api/leaderboard/history?days=30` | Get historical scores |
+| GET | `/api/health` | Health check |
 
 ### Running with Docker
 
@@ -210,7 +217,11 @@ dotnet run --project ClueHandler -- --patterns      # Generate clues via morphol
 ## Running Tests
 
 ```bash
+# Run unit tests
 dotnet test SwedishCrossword.Tests
+
+# Run API integration tests
+dotnet test SwedishCrossword.Api.Tests
 ```
 
 The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes:
@@ -222,6 +233,7 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - Vinkelord (bent word) placement tests
 - Vinkelord intertwining edge-case tests (overlapping bends, accidental words)
 - Print service output tests
+- API integration tests (endpoint validation, leaderboard, health checks)
 
 ## Algorithm Highlights
 

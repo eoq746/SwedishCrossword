@@ -172,6 +172,10 @@ app.MapGet("/api/puzzle/{date}", async (string date) =>
     if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", out var parsedDate))
         return Results.BadRequest(new { error = "Invalid date format. Use yyyy-MM-dd." });
 
+    // Only allow access to today's or past puzzles
+    if (parsedDate > DateOnly.FromDateTime(DateTime.UtcNow))
+        return Results.NotFound(new { error = "No puzzle available for the requested date." });
+
     var puzzleFile = Path.Combine(puzzlePath, $"puzzle-{parsedDate:yyyy-MM-dd}.json");
 
     if (File.Exists(puzzleFile))
@@ -246,9 +250,10 @@ app.MapGet("/api/leaderboard/history", async (int? days, LeaderboardStore store)
 
 app.MapGet("/api/puzzle/dates", () =>
 {
+    var today = DateOnly.FromDateTime(DateTime.UtcNow);
     var dates = Directory.GetFiles(puzzlePath, "puzzle-*.json")
         .Select(f => Path.GetFileNameWithoutExtension(f).Replace("puzzle-", ""))
-        .Where(d => DateOnly.TryParseExact(d, "yyyy-MM-dd", out _))
+        .Where(d => DateOnly.TryParseExact(d, "yyyy-MM-dd", out var parsed) && parsed <= today)
         .OrderDescending()
         .ToArray();
 

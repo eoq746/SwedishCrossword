@@ -1003,6 +1003,7 @@ async function init() {
     }
     
     renderGrid();
+    initCustomKeyboard();
     renderClues();
     buildCellClueMap();
     loadProgress();
@@ -1116,8 +1117,9 @@ function renderGrid() {
                 input.autocorrect = 'off';
                 input.autocapitalize = 'characters';  // Force uppercase on each keystroke
                 input.spellcheck = false;
-                input.inputMode = 'text';  // Show standard text keyboard
                 input.enterKeyHint = 'next';  // Show "Next" on mobile keyboard
+                // On touch devices suppress native keyboard; custom keyboard is used instead
+                input.inputMode = isTouchDevice() ? 'none' : 'text';
                 input.setAttribute('aria-label', `Rad ${row + 1}, kolumn ${col + 1}`);
                 
                 input.addEventListener('input', handleInput);
@@ -1135,6 +1137,103 @@ function renderGrid() {
         updateClueFilledStatus();
         syncCluesHeight();
     });
+}
+
+// Detect touch-capable devices (phones / tablets)
+function isTouchDevice() {
+    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+}
+
+// ---- Custom on-screen keyboard (touch devices only) ----
+const KEYBOARD_ROWS = [
+    ['Q','W','E','R','T','Y','U','I','O','P','Å'],
+    ['A','S','D','F','G','H','J','K','L','Ö','Ä'],
+    ['Z','X','C','V','B','N','M','⌫']
+];
+
+function initCustomKeyboard() {
+    const container = document.getElementById('custom-keyboard');
+    if (!container || !isTouchDevice()) return;
+
+    container.innerHTML = '';
+    container.removeAttribute('style'); // allow CSS to control visibility
+
+    KEYBOARD_ROWS.forEach(row => {
+        const rowDiv = document.createElement('div');
+        rowDiv.className = 'kb-row';
+        row.forEach(key => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = key === '⌫' ? 'kb-key kb-backspace' : 'kb-key';
+            btn.textContent = key;
+            btn.setAttribute('aria-label', key === '⌫' ? 'Backsteg' : key);
+            btn.tabIndex = -1; // prevent stealing focus from grid inputs
+
+            // Use touchstart to prevent focus loss from the active input
+            btn.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // prevent focus change
+            }, { passive: false });
+
+            btn.addEventListener('touchend', (e) => {
+                e.preventDefault();
+                handleKeyboardTap(key);
+            }, { passive: false });
+
+            // Fallback for mouse (e.g. testing in devtools with touch simulation)
+            btn.addEventListener('mousedown', (e) => { e.preventDefault(); });
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                handleKeyboardTap(key);
+            });
+
+            rowDiv.appendChild(btn);
+        });
+        container.appendChild(rowDiv);
+    });
+
+    // Show keyboard when a crossword input is focused, hide when focus leaves the grid
+    document.addEventListener('focusin', (e) => {
+        if (e.target.tagName === 'INPUT' && e.target.closest('.crossword-grid')) {
+            container.classList.add('kb-visible');
+        }
+    });
+    document.addEventListener('focusout', (e) => {
+        // Small delay so tapping a keyboard key doesn't trigger hide before touchend fires
+        setTimeout(() => {
+            const active = document.activeElement;
+            if (!active || active.tagName !== 'INPUT' || !active.closest('.crossword-grid')) {
+                container.classList.remove('kb-visible');
+            }
+        }, 80);
+    });
+}
+
+function handleKeyboardTap(key) {
+    const activeInput = document.activeElement;
+    if (!activeInput || activeInput.tagName !== 'INPUT') return;
+    const cell = activeInput.parentElement;
+    if (!cell || !cell.classList.contains('cell')) return;
+
+    if (key === '⌫') {
+        // Mirror the existing Backspace behaviour in handleKeyDown
+        if (activeInput.value) {
+            activeInput.value = '';
+            updateStats();
+            updateClueFilledStatus();
+            saveProgress();
+        }
+        moveBackInDirection(activeInput);
+    } else {
+        activeInput.value = key; // already uppercase
+        activeInput.parentElement.classList.remove('empty-warning');
+        const row = parseInt(cell.dataset.row);
+        const col = parseInt(cell.dataset.col);
+        trackInput(row, col, key);
+        moveInDirection(activeInput);
+        updateStats();
+        updateClueFilledStatus();
+        saveProgress();
+    }
 }
 
 function renderClues() {
@@ -2000,7 +2099,7 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
     if (cluesToggle) cluesToggle.style.display = isSmall ? 'inline-block' : 'none';
     if (leaderboardToggle) leaderboardToggle.style.display = isSmall ? 'inline-block' : 'none';
     if (introToggle) introToggle.style.display = isSmall ? 'inline-block' : 'none';
-    if (historyToggle) historyToggle.style.display = isSmall ? 'inline-block' : 'none';
+    if (historyToggle) historyToggle.style.display = 'none';
 
     // Default: clues visible on mobile unless hide-clues is set
     if (isSmall && !document.body.classList.contains('hide-clues')) {
@@ -2036,12 +2135,14 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
   });
 
   if (leaderboardToggle) leaderboardToggle.addEventListener('click', () => {
-    const nowShown = !document.body.classList.contains('show-leaderboard');
     document.body.classList.toggle('show-leaderboard');
-    // hide clues when leaderboard shown
     if (document.body.classList.contains('show-leaderboard')) {
       document.body.classList.add('hide-clues');
-      document.body.classList.remove('show-history');
+      document.body.classList.remove('show-intro');
+      renderLeaderboardHistory();
+    } else {
+      // Closing leaderboard: restore default view
+      document.body.classList.remove('hide-clues');
     }
     leaderboardToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-leaderboard')));
   });
@@ -2050,9 +2151,11 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
     document.body.classList.toggle('show-history');
     if (document.body.classList.contains('show-history')) {
       document.body.classList.add('hide-clues');
-      document.body.classList.remove('show-leaderboard');
       document.body.classList.remove('show-intro');
       renderLeaderboardHistory();
+    } else {
+      // Closing history: restore default view
+      document.body.classList.remove('hide-clues');
     }
     historyToggle.setAttribute('aria-expanded', String(document.body.classList.contains('show-history')));
   });
@@ -2078,7 +2181,9 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
     originalClose && originalClose();
     if (puzzleSolved && window.matchMedia('(max-width:1100px)').matches){
       document.body.classList.add('show-leaderboard');
+      document.body.classList.add('hide-clues');
       if (leaderboardToggle) leaderboardToggle.setAttribute('aria-expanded','true');
+      renderLeaderboardHistory();
     }
   };
 })();
