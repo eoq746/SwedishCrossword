@@ -315,7 +315,10 @@ header p{font-size:.95rem;opacity:.95}
 @media (max-width:1099px){
     /* Show custom keyboard on small screens (touch devices enable it via JS) */
     .custom-keyboard{display:none}
-    .custom-keyboard.kb-visible{display:flex;position:sticky;bottom:0;z-index:50;background:rgba(240,240,245,.97);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid rgba(0,0,0,.08);padding:6px 4px;margin:0 -4px;border-radius:0}
+    .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(240,240,245,.97);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid rgba(0,0,0,.08);padding:6px 4px env(safe-area-inset-bottom,4px) 4px;margin:0;border-radius:0;width:100%;box-sizing:border-box}
+
+    /* Shrink container when on-screen keyboard is active so content is not hidden behind it */
+    body.kb-active .site-container{max-height:calc(100vh - var(--kb-height,150px) - 10px)}
 
     /* Compact header on mobile portrait */
     header {
@@ -355,6 +358,7 @@ header p{font-size:.95rem;opacity:.95}
         overflow: hidden;
         position: relative;
         padding: 6px;
+        transition: max-height 0.15s ease;
     }
 
   /* Ensure main layout enforces normal document flow so clues cannot appear under the grid */

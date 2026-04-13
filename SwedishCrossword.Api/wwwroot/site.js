@@ -578,7 +578,7 @@ function saveLocalLeaderboard(leaderboard) {
     }
 }
 
-// Fetch leaderboard from Cloudflare Worker proxy
+// Fetch leaderboard from API backend
 async function fetchRemoteLeaderboard() {
     if (!LEADERBOARD_ENABLED) return null;
     
@@ -601,84 +601,6 @@ async function fetchRemoteLeaderboard() {
     }
 }
 
-// Save leaderboard via Cloudflare Worker proxy
-async function saveRemoteLeaderboard(leaderboard, newEntry) {
-    if (!LEADERBOARD_ENABLED) return false;
-
-    try {
-        const getResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
-
-        let allScores = {};
-        if (getResponse.ok) {
-            const data = await getResponse.json();
-            allScores = data.scores || {};
-        }
-
-        const leaderboardKey = `${currentPuzzleDate}-${puzzleHash}`;
-
-        // Merge with existing remote entries to avoid overwriting scores
-        // submitted by other users since we last fetched
-        const existing = (allScores[leaderboardKey] || []).filter(validateScoreEntry);
-        const merged = [...leaderboard];
-        existing.forEach(remote => {
-            const isDuplicate = merged.some(e =>
-                e.name === remote.name && e.time === remote.time && e.timestamp === remote.timestamp
-            );
-            if (!isDuplicate) merged.push(remote);
-        });
-
-        merged.sort((a, b) => {
-            if (a.flagged && !b.flagged) return 1;
-            if (!a.flagged && b.flagged) return -1;
-            return a.time - b.time;
-        });
-
-        const cleanEntries = merged.filter(e => !e.flagged);
-        const flaggedEntries = merged.filter(e => e.flagged);
-        allScores[leaderboardKey] = cleanEntries.length >= 10
-            ? cleanEntries.slice(0, 10)
-            : [...cleanEntries, ...flaggedEntries].slice(0, 10);
-
-        const cutoffDate = new Date();
-        cutoffDate.setDate(cutoffDate.getDate() - 7);
-        const cutoffStr = cutoffDate.toISOString().split('T')[0];
-
-        for (const key of Object.keys(allScores)) {
-            const dateMatch = key.match(/^(\d{4}-\d{2}-\d{2})/);
-            if (dateMatch && dateMatch[1] < cutoffStr) {
-                delete allScores[key];
-            }
-        }
-
-        const putResponse = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ scores: allScores })
-        });
-
-        if (!putResponse.ok) {
-            console.warn('Failed to save remote leaderboard:', putResponse.status);
-            return false;
-        }
-
-        // Archive the new entry to historical leaderboard
-        if (newEntry) {
-            fetch(`${LEADERBOARD_PROXY_URL}/leaderboard/history`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ date: currentPuzzleDate, entry: newEntry })
-            }).catch(e => console.warn('Failed to archive history entry:', e));
-        }
-
-        return true;
-    } catch (e) {
-        console.error('Error saving remote leaderboard:', e);
-        return false;
-    }
-}
-
 // Load leaderboard (remote first, then local fallback)
 async function loadLeaderboard() {
     if (LEADERBOARD_ENABLED && !remoteLeaderboardCache) {
@@ -694,18 +616,48 @@ async function loadLeaderboard() {
     return loadLocalLeaderboard();
 }
 
-// Add score to leaderboard with anti-cheat validation
+// Submit score via server-validated POST /api/scores
 async function addToLeaderboard(username, timeSeconds) {
     HAS_VIEWED_SOLUTION = checkIfViewedSolution();
     const validation = analyzeInputPattern();
-    
+
     if (!validation.valid) {
         console.warn('Anti-cheat validation failed:', validation.reasons);
         suspiciousActivity = validation.reasons;
     }
 
-    let leaderboard = await loadLeaderboard();
+    // Try server-side submission first (requires a valid submission token)
+    if (LEADERBOARD_ENABLED && puzzleData.submissionToken && validation.valid) {
+        try {
+            const response = await fetch(`${LEADERBOARD_PROXY_URL}/scores`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    token: puzzleData.submissionToken,
+                    name: username,
+                    time: timeSeconds,
+                    puzzleHash: puzzleHash,
+                    date: currentPuzzleDate
+                })
+            });
 
+            if (response.ok) {
+                const data = await response.json();
+                if (data.leaderboard) {
+                    remoteLeaderboardCache = data.leaderboard;
+                    saveLocalLeaderboard(data.leaderboard);
+                    return data.leaderboard;
+                }
+            } else {
+                console.warn('Score submission rejected:', response.status);
+            }
+        } catch (e) {
+            console.error('Error submitting score:', e);
+        }
+    }
+
+    // Fallback: save locally only (no token, failed validation, or server error)
+    let leaderboard = await loadLeaderboard();
     const entry = createScoreEntry(username, timeSeconds);
 
     if (!validation.valid) {
@@ -714,31 +666,11 @@ async function addToLeaderboard(username, timeSeconds) {
     }
 
     leaderboard.push(entry);
-
-    leaderboard.sort((a, b) => {
-        if (a.flagged && !b.flagged) return 1;
-        if (!a.flagged && b.flagged) return -1;
-        return a.time - b.time;
-    });
-
-    const cleanEntries = leaderboard.filter(e => !e.flagged);
-    const flaggedEntries = leaderboard.filter(e => e.flagged);
-
-    if (cleanEntries.length >= 10) {
-        leaderboard = cleanEntries.slice(0, 10);
-    } else {
-        leaderboard = [...cleanEntries, ...flaggedEntries].slice(0, 10);
-    }
+    leaderboard.sort((a, b) => a.time - b.time);
+    leaderboard = leaderboard.slice(0, 10);
 
     saveLocalLeaderboard(leaderboard);
     remoteLeaderboardCache = leaderboard;
-
-    if (LEADERBOARD_ENABLED && validation.valid) {
-        saveRemoteLeaderboard(leaderboard, entry).then(success => {
-            if (!success) console.warn('Remote save failed, score saved locally only');
-        });
-    }
-
     return leaderboard;
 }
 
@@ -837,7 +769,7 @@ async function submitScore() {
     await renderLeaderboard();
 }
 
-// Fetch historical leaderboard from Cloudflare Worker
+// Fetch historical leaderboard from API backend
 async function fetchLeaderboardHistory(days = 30) {
     if (!LEADERBOARD_ENABLED) return {};
 
@@ -975,16 +907,21 @@ async function init() {
     
     devToolsDetector.startMonitoring();
     
-    if (puzzleData.createdAt) {
-        currentPuzzleDate = puzzleData.createdAt.split(' ')[0];
-    } else {
-        currentPuzzleDate = new Date().toISOString().split('T')[0];
-    }
-
-    // Update heading for historical puzzles
+    // Use the server-provided puzzle date (the date the puzzle is *for*),
+    // falling back to the URL date parameter or today's date.
     const params = new URLSearchParams(window.location.search);
     const dateParam = params.get('date');
     const todayStr = new Date().toISOString().split('T')[0];
+
+    if (puzzleData.puzzleDate) {
+        currentPuzzleDate = puzzleData.puzzleDate;
+    } else if (dateParam) {
+        currentPuzzleDate = dateParam;
+    } else {
+        currentPuzzleDate = todayStr;
+    }
+
+    // Update heading for historical puzzles
     const isHistorical = dateParam && dateParam !== todayStr;
     const gridHeader = document.querySelector('.grid-header h2');
     if (gridHeader && isHistorical) {
@@ -997,13 +934,8 @@ async function init() {
         document.getElementById('info-words').textContent = `${puzzleData.wordCount} ord`;
         document.getElementById('info-fill').textContent = `${puzzleData.fillPercentage}%`;
     }
-    
-    if (puzzleData.createdAt) {
-        document.getElementById('generation-date').textContent = `Genererat: ${puzzleData.createdAt}`;
-    } else {
-        const today = new Date().toLocaleDateString('sv-SE');
-        document.getElementById('generation-date').textContent = today;
-    }
+
+    document.getElementById('generation-date').textContent = currentPuzzleDate;
     
     renderGrid();
     initCustomKeyboard();
@@ -1198,6 +1130,13 @@ function initCustomKeyboard() {
     document.addEventListener('focusin', (e) => {
         if (e.target.tagName === 'INPUT' && e.target.closest('.crossword-grid')) {
             container.classList.add('kb-visible');
+            // Measure keyboard height and expose as CSS variable for layout adjustment
+            requestAnimationFrame(() => {
+                const kbHeight = container.offsetHeight || 150;
+                document.documentElement.style.setProperty('--kb-height', kbHeight + 'px');
+                document.body.classList.add('kb-active');
+                if (typeof computeCellSize === 'function') computeCellSize();
+            });
         }
     });
     document.addEventListener('focusout', (e) => {
@@ -1206,6 +1145,8 @@ function initCustomKeyboard() {
             const active = document.activeElement;
             if (!active || active.tagName !== 'INPUT' || !active.closest('.crossword-grid')) {
                 container.classList.remove('kb-visible');
+                document.body.classList.remove('kb-active');
+                if (typeof computeCellSize === 'function') computeCellSize();
             }
         }, 80);
     });
@@ -2064,12 +2005,25 @@ function updateTimerPosition() {
     }
 }
 
+// In landscape on touch devices the custom keyboard is hidden via CSS, so we must
+// re-enable the native keyboard by switching inputMode back to 'text'.  In portrait
+// we suppress it again so only the custom keyboard is used.
+function updateInputModeForOrientation() {
+    if (!isTouchDevice()) return;
+    const isLandscape = window.matchMedia('(max-width:1099px) and (orientation: landscape)').matches;
+    const mode = isLandscape ? 'text' : 'none';
+    document.querySelectorAll('.crossword-grid input').forEach(inp => {
+        inp.inputMode = mode;
+    });
+}
+
 // Ensure computeCellSize runs on resize and after rendering (with throttling for performance)
 (function(){
     const onResizeHandler = () => {
         computeCellSize();
         syncCluesHeight();
         updateTimerPosition();
+        updateInputModeForOrientation();
     };
     
     // Throttle resize events to max 10 times per second for better performance
@@ -2080,7 +2034,7 @@ function updateTimerPosition() {
 })();
 
 // Ensure initial compute once DOM is stable
-setTimeout(() => { computeCellSize(); updateTimerPosition(); }, 120);
+setTimeout(() => { computeCellSize(); updateTimerPosition(); updateInputModeForOrientation(); }, 120);
 
 document.addEventListener('DOMContentLoaded', loadPuzzle);
 
