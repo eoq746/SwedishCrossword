@@ -257,7 +257,7 @@ app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenSe
     var leaderboard = await store.AppendScoreAsync(leaderboardKey, entry);
 
     // Also archive to historical leaderboard
-    await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash));
+    await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash, body.PuzzleSize));
 
     return Results.Ok(new { success = true, leaderboard });
 }).RequireRateLimiting("leaderboard-write");
@@ -280,7 +280,7 @@ app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, L
     if (string.IsNullOrWhiteSpace(name))
         return Results.BadRequest(new { error = "Invalid name" });
 
-    await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash));
+    await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash, body.Entry.PuzzleSize));
     return Results.Ok(new { ok = true });
 }).RequireRateLimiting("leaderboard-write");
 
@@ -331,11 +331,11 @@ app.Run();
 // Request / response models
 // ---------------------------------------------------------------------------
 
-record ScoreSubmissionRequest(string Token, string Name, double Time, string PuzzleHash, string Date);
+record ScoreSubmissionRequest(string Token, string Name, double Time, string PuzzleHash, string Date, string? PuzzleSize = null);
 record ScoreRecord(string Name, double Time, long? Timestamp, string? PuzzleHash);
 record LeaderboardHistoryRequest(string Date, LeaderboardEntry Entry);
-record LeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash);
-record HistoryRecord(string Name, double Time, long? Timestamp, string? PuzzleHash);
+record LeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash, string? PuzzleSize = null);
+record HistoryRecord(string Name, double Time, long? Timestamp, string? PuzzleHash, string? PuzzleSize = null);
 
 // ---------------------------------------------------------------------------
 // Leaderboard file store

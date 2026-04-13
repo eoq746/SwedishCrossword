@@ -637,7 +637,8 @@ async function addToLeaderboard(username, timeSeconds) {
                     name: username,
                     time: timeSeconds,
                     puzzleHash: puzzleHash,
-                    date: currentPuzzleDate
+                    date: currentPuzzleDate,
+                    puzzleSize: puzzleData.width && puzzleData.height ? `${puzzleData.width}x${puzzleData.height}` : null
                 })
             });
 
@@ -820,9 +821,14 @@ async function renderLeaderboardHistory() {
         let puzzleIndex = 0;
         for (const [, groupEntries] of puzzleGroups) {
             puzzleIndex++;
-            const puzzleLabel = hasMultiplePuzzles
-                ? `<span class="history-puzzle-label">Pussel ${puzzleIndex}</span>`
-                : '';
+            const size = groupEntries[0]?.puzzleSize;
+            let puzzleLabel = '';
+            if (hasMultiplePuzzles) {
+                const label = size || `Pussel ${puzzleIndex}`;
+                puzzleLabel = `<span class="history-puzzle-label">${label}</span>`;
+            } else if (size) {
+                puzzleLabel = `<span class="history-puzzle-label">${size}</span>`;
+            }
             const rows = groupEntries.map((entry, index) => {
                 const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
                 const rankClass = index < 3 ? `rank-${index + 1}` : '';
