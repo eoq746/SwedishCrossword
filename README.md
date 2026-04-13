@@ -153,27 +153,32 @@ The `infra/main.bicep` template provisions everything needed:
 # 1. Create a resource group
 az group create --name rg-svensktkorsord --location swedencentral
 
-# 2. Deploy infrastructure (uses a placeholder image — no real image needed yet)
+# 2. Generate an HMAC secret for submission token signing
+SECRET=$(openssl rand -base64 64)
+
+# 3. Deploy infrastructure (uses a placeholder image — no real image needed yet)
 #    This also creates the ACR pull role assignment (requires Owner / User Access Administrator)
 az deployment group create \
   --resource-group rg-svensktkorsord \
-  --template-file infra/main.bicep
+  --template-file infra/main.bicep \
+  --parameters submissionTokenSecret="$SECRET"
 
-# 3. Build and push the first image
+# 4. Build and push the first image
 ACR_NAME=$(az deployment group show -g rg-svensktkorsord -n main --query 'properties.outputs.acrName.value' -o tsv)
 az acr build --registry $ACR_NAME --image svensktkorsord:latest .
 
-# 4. Re-deploy infrastructure with the real image tag to wire up ACR registry
+# 5. Re-deploy infrastructure with the real image tag to wire up ACR registry
 az deployment group create \
   --resource-group rg-svensktkorsord \
   --template-file infra/main.bicep \
-  --parameters imageTag=latest
+  --parameters imageTag=latest submissionTokenSecret="$SECRET"
 ```
 
-**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires three repository secrets:
+**CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires the following repository secrets:
 - `AZURE_CLIENT_ID` — App registration client ID (OIDC)
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
+- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
 
 ### Running the CLI Generator
 
@@ -311,7 +316,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Deployment**: Docker container or any ASP.NET Core host
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
 - **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; both standard and small/mobile variants are generated; word-analysis scores are cached to disk for fast subsequent runs
-- **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime
+- **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime. The signing secret is configured via `SubmissionToken:Secret` (env: `SubmissionToken__Secret`); if not set, an ephemeral key is generated at startup (logged as a warning)
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
 - **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes (30 req/min)

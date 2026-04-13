@@ -23,6 +23,10 @@ param location string = resourceGroup().location
 @description('Container image tag — set by CI/CD, defaults to empty for first deploy')
 param imageTag string = ''
 
+@secure()
+@description('HMAC secret for submission token signing. Pass via CI/CD or manual deploy.')
+param submissionTokenSecret string = ''
+
 @description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
 param createRoleAssignment bool = true
 
@@ -168,6 +172,12 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         transport: 'auto'
         allowInsecure: false
       }
+      secrets: submissionTokenSecret != '' ? [
+        {
+          name: 'submissiontoken-secret'
+          value: submissionTokenSecret
+        }
+      ] : []
       registries: [
         {
           server: acr.properties.loginServer
@@ -184,12 +194,17 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
             cpu: json('0.5')
             memory: '1Gi'
           }
-          env: [
-            { name: 'Storage__PuzzlePath', value: '/data/puzzles' }
-            { name: 'Storage__LeaderboardPath', value: '/data/leaderboard' }
-            { name: 'SWEDISH_CROSSWORD_CACHE_PATH', value: '/data/cache' }
-            { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
-          ]
+          env: union(
+            [
+              { name: 'Storage__PuzzlePath', value: '/data/puzzles' }
+              { name: 'Storage__LeaderboardPath', value: '/data/leaderboard' }
+              { name: 'SWEDISH_CROSSWORD_CACHE_PATH', value: '/data/cache' }
+              { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
+            ],
+            submissionTokenSecret != '' ? [
+              { name: 'SubmissionToken__Secret', secretRef: 'submissiontoken-secret' }
+            ] : []
+          )
           volumeMounts: [
             {
               volumeName: 'data'

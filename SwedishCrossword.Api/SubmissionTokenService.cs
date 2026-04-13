@@ -1,6 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json.Nodes;
+using Microsoft.Extensions.Logging;
 
 namespace SwedishCrossword.Api;
 
@@ -15,13 +16,16 @@ sealed class SubmissionTokenService
     private const double MinSecondsPerCell = 0.3;
     private static readonly TimeSpan TokenLifetime = TimeSpan.FromHours(48);
 
-    public SubmissionTokenService(IConfiguration config)
+    public SubmissionTokenService(IConfiguration config, ILogger<SubmissionTokenService> logger)
     {
         var secret = config["SubmissionToken:Secret"];
         if (string.IsNullOrWhiteSpace(secret))
         {
             // Ephemeral key — tokens won't survive app restart.
-            // Configure SubmissionToken:Secret for persistence.
+            logger.LogWarning(
+                "SubmissionToken:Secret is not configured. Using an ephemeral key — " +
+                "tokens will not survive app restarts. Set the SubmissionToken__Secret " +
+                "environment variable in production.");
             _key = RandomNumberGenerator.GetBytes(32);
         }
         else

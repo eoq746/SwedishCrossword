@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using TUnit.Assertions;
 using TUnit.Assertions.Extensions;
 using TUnit.Core;
@@ -160,7 +161,7 @@ public class ApiIntegrationTests
     }
 
     [Test]
-    public async Task LeaderboardHistoryPost_ValidEntry_ReturnsOk()
+    public async Task LeaderboardHistoryPost_MissingToken_ReturnsForbidden()
     {
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
@@ -169,16 +170,43 @@ public class ApiIntegrationTests
             entry = new { name = "Testare", time = 120.5, timestamp = 1705320000000L, puzzleHash = "abc123" }
         });
 
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task LeaderboardHistoryPost_ValidToken_ReturnsOk()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        // Fetch puzzle to obtain a valid submission token
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+        var hash = ComputePuzzleHash(puzzle);
+
+        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        {
+            date = today,
+            token,
+            entry = new { name = "Testare", time = 120.5, timestamp = 1705320000000L, puzzleHash = hash }
+        });
+
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
 
     [Test]
     public async Task LeaderboardHistoryPost_InvalidDate_ReturnsBadRequest()
     {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = "bad-date",
-            entry = new { name = "Test", time = 42.0, timestamp = (string?)null, puzzleHash = (string?)null }
+            token,
+            entry = new { name = "Test", time = 42.0, timestamp = (string?)null, puzzleHash = "abc" }
         });
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
@@ -187,9 +215,14 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_MissingEntry_ReturnsBadRequest()
     {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+        var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
-            date = "2025-01-15",
+            date = today,
+            token,
             entry = (object?)null
         });
 
@@ -207,12 +240,21 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryRoundTrip_PostThenGet()
     {
-        var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        // Fetch puzzle to obtain a valid submission token
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+        var hash = ComputePuzzleHash(puzzle);
 
         await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
-            entry = new { name = "Anna", time = 95.3, timestamp = 1705320000000L, puzzleHash = "hash1" }
+            token,
+            entry = new { name = "Anna", time = 95.3, timestamp = 1705320000000L, puzzleHash = hash }
         });
 
         var response = await _client.GetAsync("/api/leaderboard/history?days=1");
@@ -453,10 +495,14 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_DateTooOld_ReturnsBadRequest()
     {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
         var oldDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-100).ToString("yyyy-MM-dd");
+
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = oldDate,
+            token,
             entry = new { name = "Test", time = 42.0, timestamp = 1705320000000L, puzzleHash = "abc" }
         });
 
@@ -466,10 +512,14 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_NegativeTime_ReturnsBadRequest()
     {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
+            token,
             entry = new { name = "Test", time = -1.0, timestamp = 1705320000000L, puzzleHash = "abc" }
         });
 
@@ -479,10 +529,14 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_EmptyName_ReturnsBadRequest()
     {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
+            token,
             entry = new { name = "   ", time = 42.0, timestamp = 1705320000000L, puzzleHash = "abc" }
         });
 

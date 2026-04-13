@@ -262,8 +262,11 @@ app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenSe
     return Results.Ok(new { success = true, leaderboard });
 }).RequireRateLimiting("leaderboard-write");
 
-app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, LeaderboardStore store) =>
+app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, SubmissionTokenService tokenService, LeaderboardStore store) =>
 {
+    if (string.IsNullOrWhiteSpace(body.Token))
+        return Results.Json(new { error = "Missing submission token" }, statusCode: 403);
+
     if (string.IsNullOrWhiteSpace(body.Date) || !LeaderboardStore.DatePattern.IsMatch(body.Date))
         return Results.BadRequest(new { error = "Invalid date format" });
 
@@ -275,6 +278,13 @@ app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, L
 
     if (body.Entry is null || body.Entry.Time < 0 || body.Entry.Time > 86400)
         return Results.BadRequest(new { error = "Invalid entry" });
+
+    if (string.IsNullOrWhiteSpace(body.Entry.PuzzleHash))
+        return Results.BadRequest(new { error = "Missing puzzle hash" });
+
+    var validation = tokenService.Validate(body.Token, body.Entry.PuzzleHash, body.Entry.Time);
+    if (!validation.IsValid)
+        return Results.Json(new { error = validation.Error }, statusCode: 403);
 
     var name = LeaderboardStore.SanitiseName(body.Entry.Name);
     if (string.IsNullOrWhiteSpace(name))
@@ -333,7 +343,7 @@ app.Run();
 
 record ScoreSubmissionRequest(string Token, string Name, double Time, string PuzzleHash, string Date, string? PuzzleSize = null);
 record ScoreRecord(string Name, double Time, long? Timestamp, string? PuzzleHash);
-record LeaderboardHistoryRequest(string Date, LeaderboardEntry Entry);
+record LeaderboardHistoryRequest(string Date, LeaderboardEntry Entry, string? Token = null);
 record LeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash, string? PuzzleSize = null);
 record HistoryRecord(string Name, double Time, long? Timestamp, string? PuzzleHash, string? PuzzleSize = null);
 

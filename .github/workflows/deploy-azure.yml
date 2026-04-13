@@ -39,11 +39,13 @@ jobs:
 
       - name: Deploy Infrastructure (Bicep)
         id: infra
+        env:
+          SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
         run: |
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
-            --parameters appName=$APP_NAME createRoleAssignment=false \
+            --parameters appName=$APP_NAME createRoleAssignment=false submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
             --query 'properties.outputs' \
             --output json)
 
@@ -83,7 +85,8 @@ jobs:
           az containerapp update \
             --name $APP_NAME \
             --resource-group $RESOURCE_GROUP \
-            --image "$IMAGE_URI"
+            --image "$IMAGE_URI" \
+            --set-env-vars "SubmissionToken__Secret=secretref:submissiontoken-secret"
 
       # ------------------------------------------------------------------
       # 4. Bind custom domain (if CUSTOM_DOMAIN secret is set)
