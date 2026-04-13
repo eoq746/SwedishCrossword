@@ -1,7 +1,31 @@
+// ╔═══════════════════════════════════════════════════════════════════════╗
+// ║  Svenskt Korsord — site.js                                           ║
+// ║                                                                      ║
+// ║  Search for §N to jump to a section.                                 ║
+// ╠═══════════════════════════════════════════════════════════════════════╣
+// ║  §1  Configuration & Constants                                       ║
+// ║  §2  Global State                                                    ║
+// ║  §3  Theme (Dark Mode)                                               ║
+// ║  §4  Cell–Clue Mapping & Utilities                                   ║
+// ║  §5  Anti-Cheat & DevTools Detection                                 ║
+// ║  §6  Player Statistics                                               ║
+// ║  §7  Progress Persistence                                            ║
+// ║  §8  Leaderboard & Score Submission                                  ║
+// ║  §9  Modals & Puzzle Loading                                         ║
+// ║  §10 Grid Rendering & Custom Keyboard                                ║
+// ║  §11 Input Handling & Navigation                                     ║
+// ║  §12 Clue Navigation & Highlighting                                  ║
+// ║  §13 Answer Checking, Hints & Sharing                                ║
+// ║  §14 Timer, Stats & Layout                                           ║
+// ║  §15 Keyboard Shortcuts & Mobile Panels                              ║
+// ╚═══════════════════════════════════════════════════════════════════════╝
+
+// ═══════════════════════════════════════════════════════════════════════
+// §1  Configuration & Constants
+// ═══════════════════════════════════════════════════════════════════════
+
 /*
- * LEADERBOARD CONFIGURATION
- * =========================
- * Uses the API backend for leaderboard storage.
+ * Leaderboard: uses the API backend for storage.
  * Falls back to localStorage when the API is unreachable.
  */
 
@@ -9,11 +33,7 @@ const LEADERBOARD_PROXY_URL = '/api';
 
 const LEADERBOARD_ENABLED = true;
 
-/*
- * ANTI-CHEAT CONFIGURATION
- * ========================
- * These settings help prevent cheating on the leaderboard.
- */
+// Anti-cheat settings
 const ANTI_CHEAT = {
     // Minimum seconds required to complete (based on ~2 letters per seconds for fast typers)
     minTimePerCell: 0.3,
@@ -51,6 +71,10 @@ let puzzleData = {
     }
 };
 
+// ═══════════════════════════════════════════════════════════════════════
+// §2  Global State
+// ═══════════════════════════════════════════════════════════════════════
+
 let timerInterval, seconds = 0, puzzleSolved = false, currentDirection = 'across';
 let currentPuzzleDate = null;
 let hasSubmittedScore = false;
@@ -63,11 +87,75 @@ let puzzleHash = null;
 let usedShowSolution = false;
 let suspiciousActivity = [];
 let HAS_VIEWED_SOLUTION = false; // Tracked via localStorage
+let letterHintsUsed = 0;
+let wordHintsUsed = 0;
+
+const FOCUS_DEBOUNCE_MS = 50;
+
+// Format hint summary text: "2 bokstäver, 1 ord" / "3 bokstäver" / "1 ord"
+function formatHintSummary(letters, words) {
+    const parts = [];
+    if (letters > 0) parts.push(`${letters} bokst${letters > 1 ? 'äver' : 'av'}`);
+    if (words > 0) parts.push(`${words} ord`);
+    return parts.join(', ');
+}
+
+// Format hint badge HTML for leaderboard entries
+function formatHintBadge(letters, words) {
+    const l = letters || 0;
+    const w = words || 0;
+    if (l === 0 && w === 0) return '';
+    const tooltip = formatHintSummary(l, w);
+    return `<span class="hint-badge" title="${tooltip}">💡</span>`;
+}
+
+// Map server-provided difficulty label to CSS class
+function getDifficultyClass(label) {
+    if (!label) return '';
+    const l = label.toLowerCase();
+    if (l === 'svår') return 'difficulty-hard';
+    if (l === 'medel') return 'difficulty-medium';
+    if (l === 'lätt') return 'difficulty-easy';
+    return '';
+}
 
 // Re-entrancy guard for handleFocus to prevent focus loops
 let lastFocusedCell = null;
 let lastFocusTime = 0;
-const FOCUS_DEBOUNCE_MS = 50;
+
+// ═══════════════════════════════════════════════════════════════════════
+// §3  Theme (Dark Mode)
+// ═══════════════════════════════════════════════════════════════════════
+
+function initTheme() {
+    const saved = localStorage.getItem('crossword-theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    applyTheme(theme);
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('crossword-theme')) applyTheme(e.matches ? 'dark' : 'light');
+    });
+}
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme') || 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('crossword-theme', next);
+    applyTheme(next);
+}
+
+// Apply theme immediately (before DOMContentLoaded) to prevent flash
+initTheme();
+
+// ═══════════════════════════════════════════════════════════════════════
+// §4  Cell–Clue Mapping & Utilities
+// ═══════════════════════════════════════════════════════════════════════
 
 // Lookup: maps "row,col" -> array of { number, direction, cells, clueIndex }
 // Built from puzzleData.clues so that bent words are correctly associated
@@ -176,6 +264,10 @@ function throttle(func, limit) {
     };
 }
 
+// ═══════════════════════════════════════════════════════════════════════
+// §5  Anti-Cheat & DevTools Detection
+// ═══════════════════════════════════════════════════════════════════════
+
 // DevTools detection flag (shared with ES module above)
 // Check if the ES module already set the flag before this script ran
 let devToolsOpenedDuringSession = window.devToolsOpenedDuringSession || false;
@@ -273,9 +365,10 @@ function checkIfViewedSolution() {
     }
 }
 
-// ---------------------------------------------------------------------------
-// Player Stats (localStorage)
-// ---------------------------------------------------------------------------
+// ═══════════════════════════════════════════════════════════════════════
+// §6  Player Statistics
+// ═══════════════════════════════════════════════════════════════════════
+
 const PLAYER_STATS_KEY = 'playerStats';
 
 function loadPlayerStats() {
@@ -437,8 +530,9 @@ function analyzeInputPattern() {
     };
 }
 
-// Count fillable cells
+// Count fillable cells (prefer server-provided cellCount)
 function countCells() {
+    if (puzzleData.cellCount) return puzzleData.cellCount;
     let count = 0;
     for (let row = 0; row < puzzleData.height; row++) {
         for (let col = 0; col < puzzleData.width; col++) {
@@ -484,6 +578,10 @@ function validateScoreEntry(entry) {
     }
 }
 
+// ═══════════════════════════════════════════════════════════════════════
+// §7  Progress Persistence
+// ═══════════════════════════════════════════════════════════════════════
+
 // Leaderboard key for localStorage - includes puzzle hash for uniqueness
 function getLeaderboardKey() {
     const hashSuffix = puzzleHash ? `-${puzzleHash}` : '';
@@ -509,6 +607,8 @@ function saveProgress() {
             puzzleHash,
             seconds,
             cells,
+            letterHintsUsed,
+            wordHintsUsed,
             timestamp: Date.now()
         };
         localStorage.setItem(getProgressKey(), JSON.stringify(data));
@@ -541,6 +641,17 @@ function loadProgress() {
             seconds = data.seconds;
             document.getElementById('timer').textContent = formatTime(seconds);
         }
+        // Restore hints
+        if (typeof data.letterHintsUsed === 'number') {
+            letterHintsUsed = data.letterHintsUsed;
+        }
+        if (typeof data.wordHintsUsed === 'number') {
+            wordHintsUsed = data.wordHintsUsed;
+        }
+        // Backward compat: old saves only had hintsUsed
+        if (typeof data.hintsUsed === 'number' && !data.letterHintsUsed && !data.wordHintsUsed) {
+            letterHintsUsed = data.hintsUsed;
+        }
         return true;
     } catch (e) {
         console.warn('Failed to load progress:', e);
@@ -556,6 +667,10 @@ function clearProgress() {
         console.warn('Failed to clear progress:', e);
     }
 }
+
+// ═══════════════════════════════════════════════════════════════════════
+// §8  Leaderboard & Score Submission
+// ═══════════════════════════════════════════════════════════════════════
 
 // Load leaderboard from localStorage (fallback/cache)
 function loadLocalLeaderboard() {
@@ -638,7 +753,9 @@ async function addToLeaderboard(username, timeSeconds) {
                     time: timeSeconds,
                     puzzleHash: puzzleHash,
                     date: currentPuzzleDate,
-                    puzzleSize: puzzleData.width && puzzleData.height ? `${puzzleData.width}x${puzzleData.height}` : null
+                    puzzleSize: puzzleData.width && puzzleData.height ? `${puzzleData.width}x${puzzleData.height}` : null,
+                    hintsUsed: letterHintsUsed,
+                    wordHintsUsed: wordHintsUsed
                 })
             });
 
@@ -705,10 +822,11 @@ async function renderLeaderboard() {
         const flagTooltip = isFlagged && entry.reasons ? entry.reasons.join('\n') : '';
         const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
         const rankClass = index < 3 ? `rank-${index + 1}` : '';
+        const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
         return `
             <li class="leaderboard-item ${rankClass} ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                 <span class="leaderboard-rank">${rankDisplay}</span>
-                <span class="leaderboard-name">${escapeHtml(entry.name)}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
+                <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
                 <span class="leaderboard-time">${formatTime(entry.time)}</span>
             </li>
         `;
@@ -721,15 +839,85 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
+// ═══════════════════════════════════════════════════════════════════════
+// §9  Modals & Puzzle Loading
+// ═══════════════════════════════════════════════════════════════════════
+
+function closeMessageModal() {
+    const overlay = document.getElementById('message-modal');
+    overlay.classList.remove('active');
+    overlay.removeEventListener('click', handleMessageOverlayClick);
+    document.removeEventListener('keydown', handleMessageEscape);
+}
+
+function handleMessageOverlayClick(e) { if (e.target === e.currentTarget) closeMessageModal(); }
+function handleMessageEscape(e) { if (e.key === 'Escape') closeMessageModal(); }
+
+function openMessageModal() {
+    const overlay = document.getElementById('message-modal');
+    overlay.classList.add('active');
+    overlay.addEventListener('click', handleMessageOverlayClick);
+    document.addEventListener('keydown', handleMessageEscape);
+}
+
+function showMessageModal(title, message) {
+    document.getElementById('message-modal-title').textContent = title;
+    document.getElementById('message-modal-body').textContent = message;
+    const buttons = document.getElementById('message-modal-buttons');
+    buttons.innerHTML = '';
+    const ok = document.createElement('button');
+    ok.className = 'btn btn-primary';
+    ok.textContent = 'OK';
+    ok.addEventListener('click', closeMessageModal);
+    buttons.appendChild(ok);
+    openMessageModal();
+    ok.focus();
+}
+
+function showConfirmModal(title, message, onConfirm, confirmLabel = 'Ja', danger = false) {
+    document.getElementById('message-modal-title').textContent = title;
+    document.getElementById('message-modal-body').textContent = message;
+    const buttons = document.getElementById('message-modal-buttons');
+    buttons.innerHTML = '';
+    const confirm = document.createElement('button');
+    confirm.className = danger ? 'btn btn-danger' : 'btn btn-primary';
+    confirm.textContent = confirmLabel;
+    confirm.addEventListener('click', () => { closeMessageModal(); onConfirm(); });
+    const cancel = document.createElement('button');
+    cancel.className = 'btn btn-secondary';
+    cancel.textContent = 'Avbryt';
+    cancel.addEventListener('click', closeMessageModal);
+    buttons.appendChild(confirm);
+    buttons.appendChild(cancel);
+    openMessageModal();
+    confirm.focus();
+}
+
 async function showUsernameModal() {
     if (hasSubmittedScore) return;
-    
+
     HAS_VIEWED_SOLUTION = checkIfViewedSolution();
     const validation = analyzeInputPattern();
 
     document.getElementById('modal-time').textContent = formatTime(seconds);
+
+    // Show hint count in modal
+    let hintEl = document.getElementById('modal-hints');
+    const totalHints = letterHintsUsed + wordHintsUsed;
+    if (totalHints > 0) {
+        if (!hintEl) {
+            hintEl = document.createElement('p');
+            hintEl.id = 'modal-hints';
+            hintEl.style.cssText = 'color: #d97706; font-size: 0.85rem; margin-bottom: 8px;';
+            document.querySelector('.modal-time').insertAdjacentElement('afterend', hintEl);
+        }
+        hintEl.textContent = `💡 ${formatHintSummary(letterHintsUsed, wordHintsUsed)}`;
+    } else if (hintEl) {
+        hintEl.remove();
+    }
+
     document.getElementById('username-modal').classList.add('active');
-    
+
     const modalContent = document.querySelector('.modal');
     let warningEl = document.getElementById('cheat-warning');
     
@@ -832,10 +1020,11 @@ async function renderLeaderboardHistory() {
             const rows = groupEntries.map((entry, index) => {
                 const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
                 const rankClass = index < 3 ? `rank-${index + 1}` : '';
+                const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
                 return `
                     <li class="leaderboard-item history-item ${rankClass}">
                         <span class="leaderboard-rank">${rankDisplay}</span>
-                        <span class="leaderboard-name">${escapeHtml(entry.name)}</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}</span>
                         <span class="leaderboard-time">${formatTime(entry.time)}</span>
                     </li>`;
             }).join('');
@@ -861,7 +1050,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    const themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
 });
+
+function showPuzzleUnavailable() {
+    document.getElementById('loading').style.display = 'none';
+    const layout = document.getElementById('main-layout');
+    layout.style.display = '';
+    layout.innerHTML = `
+        <div class="unavailable-card">
+            <div class="unavailable-icon">🔧</div>
+            <h2>Korsordet genereras...</h2>
+            <p>Dagens korsord håller på att skapas. Det brukar ta någon minut.</p>
+            <p>Försök igen om en stund!</p>
+            <button class="btn btn-primary" onclick="location.reload()">Försök igen</button>
+            <a href="/calendar.html" class="btn btn-secondary" style="text-decoration:none;display:inline-block;margin-left:8px;">Spela äldre korsord</a>
+        </div>`;
+}
 
 async function loadPuzzle() {
     try {
@@ -881,6 +1087,10 @@ async function loadPuzzle() {
             document.getElementById('main-layout').style.display = '';
             const gridHeader = document.querySelector('.grid-header h2');
             if (gridHeader) gridHeader.textContent = 'Inget korsord tillgängligt för ' + dateParam;
+            return;
+        } else if (response.status === 503) {
+            console.log('Puzzle not ready yet (503)');
+            showPuzzleUnavailable();
             return;
         } else {
             console.log('API puzzle endpoint returned ' + response.status + ', using default puzzle');
@@ -905,9 +1115,11 @@ async function init() {
     document.getElementById('main-layout').style.display = '';
     
     puzzleStartTime = Date.now();
-    puzzleHash = generatePuzzleHash();
+    puzzleHash = puzzleData.puzzleHash || generatePuzzleHash();
     inputEvents = [];
     usedShowSolution = false;
+    letterHintsUsed = 0;
+    wordHintsUsed = 0;
     suspiciousActivity = [];
     devToolsOpenedDuringSession = false;
     
@@ -939,6 +1151,11 @@ async function init() {
         document.getElementById('info-size').textContent = `${puzzleData.width}x${puzzleData.height}`;
         document.getElementById('info-words').textContent = `${puzzleData.wordCount} ord`;
         document.getElementById('info-fill').textContent = `${puzzleData.fillPercentage}%`;
+        const diffEl = document.getElementById('info-difficulty');
+        if (diffEl && puzzleData.difficulty) {
+            diffEl.textContent = puzzleData.difficulty;
+            diffEl.className = getDifficultyClass(puzzleData.difficulty);
+        }
     }
 
     document.getElementById('generation-date').textContent = currentPuzzleDate;
@@ -1015,6 +1232,10 @@ function syncCluesHeight() {
 // Call syncCluesHeight on resize also
 window.addEventListener('resize', syncCluesHeight);
 
+// ═══════════════════════════════════════════════════════════════════════
+// §10  Grid Rendering & Custom Keyboard
+// ═══════════════════════════════════════════════════════════════════════
+
 function renderGrid() {
     const grid = document.getElementById('crossword-grid');
     grid.innerHTML = '';
@@ -1051,7 +1272,7 @@ function renderGrid() {
                 const input = document.createElement('input');
                 input.type = 'text';
                 input.maxLength = 1;
-                input.dataset.answer = cellData.letter;
+                if (cellData.letter) input.dataset.answer = cellData.letter;
                 
                 // Mobile-friendly input attributes
                 input.autocomplete = 'off';
@@ -1219,6 +1440,10 @@ function renderClues() {
     });
 }
 
+// ═══════════════════════════════════════════════════════════════════════
+// §11  Input Handling & Navigation
+// ═══════════════════════════════════════════════════════════════════════
+
 function isValidSwedishLetter(value) {
     if (value === "") return true; // tomt är okej
     return /^[A-Za-zåäöÅÄÖ]$/.test(value);
@@ -1318,7 +1543,7 @@ document.addEventListener('DOMContentLoaded', () => {
         directionBtn.addEventListener('touchstart', (e) => {
             e.preventDefault();
         }, { passive: false });
-        
+
         // Handle the actual toggle on click/touchend
         directionBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -1329,6 +1554,18 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleDirectionButton();
         }, { passive: false });
     }
+
+    // Set up hint buttons to prevent focus loss from grid cell inputs
+    function setupFocusPreservingButton(id, action) {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        btn.addEventListener('mousedown', (e) => e.preventDefault());
+        btn.addEventListener('touchstart', (e) => e.preventDefault(), { passive: false });
+        btn.addEventListener('click', (e) => { e.preventDefault(); action(); });
+        btn.addEventListener('touchend', (e) => { e.preventDefault(); action(); }, { passive: false });
+    }
+    setupFocusPreservingButton('hint-letter-btn', revealLetter);
+    setupFocusPreservingButton('hint-word-btn', revealWord);
 });
 
 function handleKeyDown(e) {
@@ -1417,6 +1654,21 @@ function handleFocus(row, col) {
         const input = cell.querySelector('input');
         if (input) { 
             input.dataset.previousValue = input.value; 
+            // Update aria-label with current clue context for screen readers
+            const key2 = `${row},${col}`;
+            const entries = typeof cellClueMap !== 'undefined' ? cellClueMap[key2] : null;
+            let label = `Rad ${row + 1}, kolumn ${col + 1}`;
+            if (entries && entries.length > 0) {
+                const match = findBestEntry(entries, currentDirection, row, col);
+                if (match && match.number > 0) {
+                    const dir = match.direction === 'across' ? 'vågrätt' : 'lodrätt';
+                    const clues = match.direction === 'across' ? puzzleData.clues.across : puzzleData.clues.down;
+                    const clue = clues?.find(c => c.number === match.number);
+                    label += `, ${match.number} ${dir}`;
+                    if (clue) label += `: ${clue.clue}`;
+                }
+            }
+            input.setAttribute('aria-label', label);
             // Use requestAnimationFrame instead of setTimeout to avoid focus race conditions
             requestAnimationFrame(() => {
                 // Only select if this input is still the active element
@@ -1528,6 +1780,10 @@ function moveBackInDirection(input) {
     // Fallback: straight-line movement
     currentDirection === 'across' ? moveTo(row, col - 1) : moveTo(row - 1, col);
 }
+
+// ═══════════════════════════════════════════════════════════════════════
+// §12  Clue Navigation & Highlighting
+// ═══════════════════════════════════════════════════════════════════════
 
 function focusClue(number, direction) {
     currentDirection = direction;
@@ -1715,7 +1971,17 @@ function highlightClue(row, col) {
     }
 }
 
-function checkAnswers() {
+// ═══════════════════════════════════════════════════════════════════════
+// §13  Answer Checking, Hints & Sharing
+// ═══════════════════════════════════════════════════════════════════════
+
+// Helper: derive puzzle size variant for server check/hint requests
+function getPuzzleSize() {
+    return window.matchMedia('(max-width:1099px)').matches ? 'small' : null;
+}
+
+// Helper: check answers locally using data-answer attributes (fallback for offline / old cached puzzles)
+function checkAnswersLocal() {
     const inputs = document.querySelectorAll('.cell:not(.blocked) input');
     let correct = 0, total = inputs.length, filled = 0;
     inputs.forEach(input => {
@@ -1724,57 +1990,376 @@ function checkAnswers() {
         const value = input.value.toUpperCase();
         if (value) {
             filled++;
-            if (value === input.dataset.answer) { correct++; cell.classList.add('correct'); }
+            if (value === input.dataset.answer) { correct++; }
             else { cell.classList.add('incorrect'); }
         } else { cell.classList.add('empty-warning'); }
     });
+    return { correct, total, filled };
+}
+
+// Helper: handle a completed check result (correct/total/filled counts)
+function handleCheckResult(correct, total, filled) {
     if (filled === total && correct === total) {
         puzzleSolved = true; stopTimer();
         clearProgress();
-        inputs.forEach(i => i.parentElement.classList.remove('empty-warning'));
+        document.querySelectorAll('.cell:not(.blocked) input').forEach(i => {
+            i.parentElement.classList.remove('empty-warning');
+            i.parentElement.classList.add('correct');
+        });
         recordPuzzleSolve(seconds);
         renderPlayerStats();
-        announce(`Grattis! Du löste korsordet på ${formatTime(seconds)}`);
+        const hintMsg = (letterHintsUsed + wordHintsUsed) > 0 ? ` med ${formatHintSummary(letterHintsUsed, wordHintsUsed)}` : '';
+        announce(`Grattis! Du löste korsordet på ${formatTime(seconds)}${hintMsg}`);
         setTimeout(() => showUsernameModal(), 100);
     } else if (filled < total) {
         const message = `Du har ${total - filled} tomma rutor kvar. ${correct} av ${filled} ifyllda är korrekta.`;
         announce(message);
-        alert(`Du har ${total - filled} tomma rutor kvar.\n\n${correct} av ${filled} ifyllda är korrekta.`);
+        showMessageModal('Inte klart ännu', `Du har ${total - filled} tomma rutor kvar. ${correct} av ${filled} ifyllda är korrekta.`);
     } else {
         const errorCount = filled - correct;
         announce(`${errorCount} bokstäver är felaktiga`);
-        alert(`${errorCount} bokstäver är felaktiga. Försök igen!`);
+        showMessageModal('Felaktiga bokstäver', `${errorCount} bokstäver är felaktiga. Försök igen!`);
     }
+}
+
+async function checkAnswers() {
+    const inputs = document.querySelectorAll('.cell:not(.blocked) input');
+    const total = inputs.length;
+
+    // Try server-side validation
+    if (puzzleData.submissionToken && currentPuzzleDate) {
+        const cells = {};
+        let filled = 0;
+        inputs.forEach(input => {
+            const cell = input.parentElement;
+            cell.classList.remove('correct', 'incorrect', 'empty-warning');
+            const key = `${cell.dataset.row},${cell.dataset.col}`;
+            const value = input.value.toUpperCase();
+            if (value) { cells[key] = value; filled++; }
+        });
+
+        try {
+            const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/check`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    token: puzzleData.submissionToken,
+                    puzzleDate: currentPuzzleDate,
+                    cells,
+                    size: getPuzzleSize()
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                let correct = 0;
+                inputs.forEach(input => {
+                    const cell = input.parentElement;
+                    const key = `${cell.dataset.row},${cell.dataset.col}`;
+                    const value = input.value.toUpperCase();
+                    if (!value) {
+                        cell.classList.add('empty-warning');
+                    } else if (data.results && data.results[key]) {
+                        correct++;
+                    } else if (value) {
+                        cell.classList.add('incorrect');
+                    }
+                });
+                handleCheckResult(correct, total, filled);
+                return;
+            }
+        } catch (e) {
+            console.warn('Server check failed, falling back to local:', e);
+        }
+    }
+
+    // Fallback: local check using data-answer attributes
+    const { correct, total: t, filled } = checkAnswersLocal();
+    handleCheckResult(correct, t, filled);
 }
 
 function clearGrid() {
-    if (confirm('Vill du rensa alla svar?')) {
+    showConfirmModal('Rensa korsord', 'Vill du rensa alla svar?', () => {
         document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
             input.value = '';
-            input.parentElement.classList.remove('correct', 'incorrect', 'empty-warning');
+            input.parentElement.classList.remove('correct', 'incorrect', 'empty-warning', 'hint-revealed');
         });
         inputEvents = [];
+        letterHintsUsed = 0;
+        wordHintsUsed = 0;
         updateStats();
         updateClueFilledStatus();
         clearProgress();
-    }
+    }, 'Rensa', true);
 }
 
 function showSolution() {
-    if (confirm('Vill du visa lösningen?')) {
-        document.querySelectorAll('.cell:not(.blocked) input').forEach(input => {
-            input.value = input.dataset.answer;
-            input.parentElement.classList.remove('empty-warning', 'incorrect');
-            input.parentElement.classList.add('correct');
-        });
+    showConfirmModal('Visa lösning', 'Vill du visa lösningen? Du kommer inte kunna skicka in ditt resultat.', async () => {
+        const inputs = document.querySelectorAll('.cell:not(.blocked) input');
+        let revealed = false;
+
+        // Try server-side: request all cell answers
+        if (puzzleData.submissionToken && currentPuzzleDate) {
+            const cellCoords = [];
+            inputs.forEach(input => {
+                const cell = input.parentElement;
+                cellCoords.push([parseInt(cell.dataset.row), parseInt(cell.dataset.col)]);
+            });
+
+            try {
+                const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        token: puzzleData.submissionToken,
+                        puzzleDate: currentPuzzleDate,
+                        cells: cellCoords,
+                        size: getPuzzleSize()
+                    })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.letters) {
+                        inputs.forEach(input => {
+                            const cell = input.parentElement;
+                            const key = `${cell.dataset.row},${cell.dataset.col}`;
+                            if (data.letters[key]) {
+                                input.value = data.letters[key];
+                                cell.classList.remove('empty-warning', 'incorrect');
+                                cell.classList.add('correct');
+                            }
+                        });
+                        revealed = true;
+                    }
+                }
+            } catch (e) {
+                console.warn('Server solution failed, falling back to local:', e);
+            }
+        }
+
+        // Fallback: local data-answer attributes
+        if (!revealed) {
+            inputs.forEach(input => {
+                if (input.dataset.answer) {
+                    input.value = input.dataset.answer;
+                    input.parentElement.classList.remove('empty-warning', 'incorrect');
+                    input.parentElement.classList.add('correct');
+                }
+            });
+        }
+
         puzzleSolved = true; stopTimer(); updateStats();
         updateClueFilledStatus();
         usedShowSolution = true;
         hasSubmittedScore = true;
         trackSolutionView();
         clearProgress();
+    }, 'Visa lösning', true);
+}
+
+async function revealLetter() {
+    if (puzzleSolved) return;
+    const activeInput = document.activeElement;
+    if (!activeInput || activeInput.tagName !== 'INPUT') {
+        announce('Välj en ruta först');
+        return;
+    }
+    const cell = activeInput.parentElement;
+    if (!cell || cell.classList.contains('blocked')) return;
+    const row = parseInt(cell.dataset.row);
+    const col = parseInt(cell.dataset.col);
+
+    // Try server-side hint
+    if (puzzleData.submissionToken && currentPuzzleDate) {
+        try {
+            const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    token: puzzleData.submissionToken,
+                    puzzleDate: currentPuzzleDate,
+                    cells: [[row, col]],
+                    size: getPuzzleSize()
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const key = `${row},${col}`;
+                const answer = data.letters && data.letters[key];
+                if (answer) {
+                    if (activeInput.value.toUpperCase() === answer) {
+                        announce('Redan korrekt');
+                        return;
+                    }
+                    activeInput.value = answer;
+                    cell.classList.add('hint-revealed');
+                    cell.classList.remove('incorrect', 'empty-warning');
+                    letterHintsUsed++;
+                    trackInput(row, col, answer);
+                    updateStats();
+                    updateClueFilledStatus();
+                    saveProgress();
+                    announce(`Avslöjade: ${answer}`);
+                    return;
+                }
+            }
+        } catch (e) {
+            console.warn('Server hint failed, falling back to local:', e);
+        }
+    }
+
+    // Fallback: local data-answer
+    const answer = activeInput.dataset.answer;
+    if (!answer) return;
+    if (activeInput.value.toUpperCase() === answer) {
+        announce('Redan korrekt');
+        return;
+    }
+    activeInput.value = answer;
+    cell.classList.add('hint-revealed');
+    cell.classList.remove('incorrect', 'empty-warning');
+    letterHintsUsed++;
+    trackInput(row, col, answer);
+    updateStats();
+    updateClueFilledStatus();
+    saveProgress();
+    announce(`Avslöjade: ${answer}`);
+}
+
+async function revealWord() {
+    if (puzzleSolved) return;
+    const activeInput = document.activeElement;
+    if (!activeInput || activeInput.tagName !== 'INPUT') {
+        announce('Välj en ruta först');
+        return;
+    }
+    const cell = activeInput.parentElement;
+    if (!cell || cell.classList.contains('blocked')) return;
+    const row = parseInt(cell.dataset.row);
+    const col = parseInt(cell.dataset.col);
+
+    // Find the word cells using cellClueMap (handles bent words)
+    let wordCells = null;
+    const key = `${row},${col}`;
+    const entries = cellClueMap[key];
+    if (entries && entries.length > 0) {
+        const match = findBestEntry(entries, currentDirection, row, col);
+        wordCells = match.cells;
+    }
+    if (!wordCells) {
+        // Fallback: straight-line walk
+        wordCells = getWordCellsFallback(0, currentDirection);
+        if (!wordCells) wordCells = [{ row, col }];
+    }
+
+    // Try server-side hint for all word cells
+    let serverLetters = null;
+    if (puzzleData.submissionToken && currentPuzzleDate) {
+        try {
+            const cellCoords = wordCells.map(c => [c.row, c.col]);
+            const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    token: puzzleData.submissionToken,
+                    puzzleDate: currentPuzzleDate,
+                    cells: cellCoords,
+                    size: getPuzzleSize()
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.letters) serverLetters = data.letters;
+            }
+        } catch (e) {
+            console.warn('Server hint failed, falling back to local:', e);
+        }
+    }
+
+    let revealed = 0;
+    wordCells.forEach(c => {
+        const inp = document.querySelector(`.cell[data-row="${c.row}"][data-col="${c.col}"] input`);
+        if (!inp) return;
+        const k = `${c.row},${c.col}`;
+        const answer = serverLetters ? serverLetters[k] : inp.dataset.answer;
+        if (!answer || inp.value.toUpperCase() === answer) return;
+        inp.value = answer;
+        inp.parentElement.classList.add('hint-revealed');
+        inp.parentElement.classList.remove('incorrect', 'empty-warning');
+        trackInput(c.row, c.col, answer);
+        revealed++;
+    });
+    if (revealed > 0) {
+        wordHintsUsed++;
+        updateStats();
+        updateClueFilledStatus();
+        saveProgress();
+        announce(`Avslöjade helt ord (${revealed} bokstäver)`);
     }
 }
+
+function generateShareText() {
+    const size = `${puzzleData.width}×${puzzleData.height}`;
+    const date = currentPuzzleDate || new Date().toISOString().split('T')[0];
+    const time = formatTime(seconds);
+    const hintText = (letterHintsUsed + wordHintsUsed) > 0 ? ` | ${formatHintSummary(letterHintsUsed, wordHintsUsed)}` : '';
+
+    // Build emoji grid: 🟩 correct, 🟨 hint-revealed, ⬛ blocked
+    let emojiGrid = '';
+    for (let r = 0; r < puzzleData.height; r++) {
+        let row = '';
+        for (let c = 0; c < puzzleData.width; c++) {
+            if (puzzleData.cells[r]?.[c] === null) {
+                row += '⬛';
+            } else {
+                const cellEl = document.querySelector(`.cell[data-row="${r}"][data-col="${c}"]`);
+                if (cellEl && cellEl.classList.contains('hint-revealed')) {
+                    row += '🟨';
+                } else {
+                    row += '🟩';
+                }
+            }
+        }
+        emojiGrid += row + '\n';
+    }
+
+    return `Svenskt Korsord ${date} (${size})\n⏱️ ${time}${hintText}\n\n${emojiGrid}\nhttps://svensktkorsord.se`;
+}
+
+async function shareResult() {
+    const text = generateShareText();
+
+    if (navigator.share) {
+        try {
+            await navigator.share({ text });
+            return;
+        } catch (e) {
+            if (e.name === 'AbortError') return;
+        }
+    }
+
+    // Fallback: copy to clipboard
+    try {
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById('share-btn');
+        if (btn) {
+            const original = btn.textContent;
+            btn.textContent = 'Kopierat! ✓';
+            setTimeout(() => { btn.textContent = original; }, 2000);
+        }
+        announce('Resultat kopierat till urklipp');
+    } catch (e) {
+        // Last resort: show in a message modal for manual copy
+        showMessageModal('Dela resultat', 'Kunde inte kopiera automatiskt. Prova att dela via webbläsarmenyn.');
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// §14  Timer, Stats & Layout
+// ═══════════════════════════════════════════════════════════════════════
 
 function startTimer() { timerInterval = setInterval(() => { if (!puzzleSolved) { seconds++; document.getElementById('timer').textContent = formatTime(seconds); if (seconds % 5 === 0) saveProgress(); } }, 1000); }
 function stopTimer() { clearInterval(timerInterval); }
@@ -1814,10 +2399,6 @@ function isWordFilledByClue(clue, direction) {
         const input = document.querySelector(`.cell[data-row="${cell.row}"][data-col="${cell.col}"] input`);
         return input && input.value.trim() !== '';
     });
-}
-
-function isWordFilled(number, direction) {
-    // ...existing code...
 }
 
 function getWordCells(number, direction) {
@@ -2041,6 +2622,47 @@ function updateInputModeForOrientation() {
 
 // Ensure initial compute once DOM is stable
 setTimeout(() => { computeCellSize(); updateTimerPosition(); updateInputModeForOrientation(); }, 120);
+
+// ═══════════════════════════════════════════════════════════════════════
+// §15  Keyboard Shortcuts & Mobile Panels
+// ═══════════════════════════════════════════════════════════════════════
+
+// ── Keyboard shortcuts help dialog ──
+function toggleShortcutsHelp() {
+    const overlay = document.getElementById('shortcuts-overlay');
+    if (!overlay) return;
+    const visible = overlay.style.display !== 'none';
+    overlay.style.display = visible ? 'none' : 'flex';
+    if (!visible) overlay.querySelector('.shortcuts-close')?.focus();
+}
+(function() {
+    document.addEventListener('keydown', (e) => {
+        // "?" opens/closes help (only when not typing in an input or modal username field)
+        if (e.key === '?' && !e.target.closest('input')) {
+            e.preventDefault();
+            toggleShortcutsHelp();
+            return;
+        }
+        // Escape closes the shortcuts dialog if open
+        if (e.key === 'Escape') {
+            const overlay = document.getElementById('shortcuts-overlay');
+            if (overlay && overlay.style.display !== 'none') {
+                overlay.style.display = 'none';
+                e.stopPropagation();
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const helpBtn = document.getElementById('help-toggle');
+        if (helpBtn) helpBtn.addEventListener('click', toggleShortcutsHelp);
+        const closeBtn = document.getElementById('shortcuts-close');
+        if (closeBtn) closeBtn.addEventListener('click', toggleShortcutsHelp);
+        const overlay = document.getElementById('shortcuts-overlay');
+        if (overlay) overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) toggleShortcutsHelp();
+        });
+    });
+})();
 
 document.addEventListener('DOMContentLoaded', loadPuzzle);
 

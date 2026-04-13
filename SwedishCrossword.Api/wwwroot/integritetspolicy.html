@@ -70,180 +70,94 @@
             crossorigin="anonymous"></script>
     -->
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        :root {
+            --page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: #ffffff;
+            --surface-bg: #f9fafb;
+            --text-heading: #1f2937;
+            --text-body: #374151;
+            --text-muted: #6b7280;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border: #e5e7eb;
+            --info-bg: #f0f9ff;
+            --warn-bg: #fef3c7;
+            --warn-border: #f59e0b;
+            --shadow: rgba(0,0,0,0.2);
         }
-
-        html, body {
-            height: 100%;
+        [data-theme="dark"] {
+            --page-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+            --card-bg: #1e293b;
+            --surface-bg: #334155;
+            --text-heading: #f1f5f9;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent: #818cf8;
+            --accent-hover: #6366f1;
+            --border: #475569;
+            --info-bg: rgba(129,140,248,0.1);
+            --warn-bg: rgba(245,158,11,0.12);
+            --warn-border: #d97706;
+            --shadow: rgba(0,0,0,0.5);
         }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--page-bg);
             min-height: 100vh;
             padding: env(safe-area-inset-top,20px) env(safe-area-inset-right,20px) env(safe-area-inset-bottom,20px) env(safe-area-inset-left,20px);
-            line-height: 1.7;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
+            line-height: 1.7; display: flex; align-items: flex-start; justify-content: center;
         }
-
         .container {
-            width: 100%;
-            max-width: 900px;
-            margin: 20px 12px;
-            background: #fff;
-            border-radius: 12px;
-            padding: 32px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            width: 100%; max-width: 900px; margin: 20px 12px;
+            background: var(--card-bg); border-radius: 12px; padding: 32px;
+            box-shadow: 0 10px 40px var(--shadow);
         }
-
-        h1 {
-            color: #1f2937;
-            margin-bottom: 12px;
-            font-size: 1.8rem;
+        .page-nav { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+        .theme-toggle {
+            background: none; border: none; font-size: 1.5rem; cursor: pointer;
+            padding: 4px 8px; border-radius: 8px; transition: transform 0.2s;
         }
-
-        .last-updated {
-            color: #6b7280;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #2563eb;
-            margin-top: 28px;
-            margin-bottom: 14px;
-            font-size: 1.25rem;
-        }
-
-        h3 {
-            color: #374151;
-            margin-top: 18px;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        p {
-            color: #374151;
-            margin-bottom: 14px;
-        }
-
-        ul {
-            color: #374151;
-            margin-left: 24px;
-            margin-bottom: 16px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
+        .theme-toggle:hover { transform: scale(1.15); }
+        h1 { color: var(--text-heading); margin-bottom: 12px; font-size: 1.8rem; }
+        .last-updated { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+        h2 { color: var(--accent); margin-top: 28px; margin-bottom: 14px; font-size: 1.25rem; }
+        h3 { color: var(--text-body); margin-top: 18px; margin-bottom: 10px; font-size: 1.1rem; }
+        p { color: var(--text-body); margin-bottom: 14px; }
+        ul { color: var(--text-body); margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
         .back-link {
-            display: inline-block;
-            margin-top: 24px;
-            padding: 10px 16px;
-            background: #2563eb;
-            color: white;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
+            display: inline-block; margin-top: 24px; padding: 10px 16px;
+            background: var(--accent); color: white; border-radius: 8px;
+            font-weight: 600; text-decoration: none;
         }
-
-            .back-link:hover {
-                background: #1d4ed8;
-            }
-
-        .highlight-box {
-            background: #f0f9ff;
-            padding: 18px;
-            border-radius: 10px;
-            border-left: 4px solid #2563eb;
-            margin: 18px 0;
-        }
-
-        .warning-box {
-            background: #fef3c7;
-            padding: 18px;
-            border-radius: 10px;
-            border-left: 4px solid #f59e0b;
-            margin: 18px 0;
-        }
-
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 16px 0;
-        }
-
-            .data-table th, .data-table td {
-                padding: 12px;
-                text-align: left;
-                border-bottom: 1px solid #e5e7eb;
-            }
-
-            .data-table th {
-                background: #f9fafb;
-                font-weight: 600;
-            }
-
-        footer {
-            text-align: center;
-            margin-top: 32px;
-            padding-top: 20px;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280;
-            font-size: 0.9rem;
-        }
-
-            footer a {
-                color: #6b7280;
-                margin: 0 10px;
-            }
-
+        .back-link:hover { background: var(--accent-hover); }
+        .highlight-box { background: var(--info-bg); padding: 18px; border-radius: 10px; border-left: 4px solid var(--accent); margin: 18px 0; }
+        .warning-box { background: var(--warn-bg); padding: 18px; border-radius: 10px; border-left: 4px solid var(--warn-border); margin: 18px 0; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        .data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); color: var(--text-body); }
+        .data-table th { background: var(--surface-bg); font-weight: 600; }
+        footer { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; }
+        footer a { color: var(--text-muted); margin: 0 10px; }
         @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                margin: 12px 8px;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            h2 {
-                font-size: 1.15rem;
-            }
-
-            p, li {
-                font-size: 0.95rem;
-            }
-
-            .back-link {
-                padding: 10px 14px;
-            }
-
-            .data-table {
-                font-size: 0.9rem;
-            }
+            .container { padding: 20px; margin: 12px 8px; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.15rem; }
+            p, li { font-size: 0.95rem; }
+            .back-link { padding: 10px 14px; }
+            .data-table { font-size: 0.9rem; }
         }
     </style>
     <!-- Removed: suspicious third-party ad script (effectivegatecpm.com) -->
 </head>
 <body>
     <div class="container">
+        <div class="page-nav">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+        </div>
         <h1>Integritetspolicy</h1>
         <p class="last-updated">Senast uppdaterad: Februari 2026</p>
 
@@ -432,5 +346,13 @@
             <p style="margin-top: 6px; font-size: 0.85rem; opacity: 0.8;">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
         </footer>
     </div>
+<script>
+(function(){
+    var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
+    document.documentElement.setAttribute('data-theme',t);
+    var b=document.getElementById('theme-toggle');
+    if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
+})();
+</script>
 </body>
 </html>

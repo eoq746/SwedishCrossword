@@ -184,7 +184,7 @@ public class ApiIntegrationTests
         var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-        var hash = ComputePuzzleHash(puzzle);
+        var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -248,7 +248,7 @@ public class ApiIntegrationTests
         var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-        var hash = ComputePuzzleHash(puzzle);
+        var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -359,7 +359,7 @@ public class ApiIntegrationTests
         var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-        var hash = ComputePuzzleHash(puzzle);
+        var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         var response = await _client.PostAsJsonAsync("/api/scores", new
         {
@@ -416,7 +416,7 @@ public class ApiIntegrationTests
         var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-        var hash = ComputePuzzleHash(puzzle);
+        var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         // Submit with impossibly fast time (0.1s for 5 cells = below 1.5s minimum)
         var response = await _client.PostAsJsonAsync("/api/scores", new
@@ -441,7 +441,7 @@ public class ApiIntegrationTests
         var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-        var hash = ComputePuzzleHash(puzzle);
+        var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         await _client.PostAsJsonAsync("/api/scores", new
         {
@@ -587,6 +587,403 @@ public class ApiIntegrationTests
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         await Assert.That(response.Content.Headers.ContentType?.MediaType).IsEqualTo("application/json");
+    }
+
+    // -----------------------------------------------------------------------
+    // Answer stripping — puzzle served to client must not contain answers
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task PuzzleWithCells_StripsLettersFromCells()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var cells = puzzle.GetProperty("cells");
+
+        // Every non-null cell should NOT have a "letter" property
+        for (int row = 0; row < cells.GetArrayLength(); row++)
+        {
+            var rowArray = cells[row];
+            for (int col = 0; col < rowArray.GetArrayLength(); col++)
+            {
+                var cell = rowArray[col];
+                if (cell.ValueKind == JsonValueKind.Object)
+                    await Assert.That(cell.TryGetProperty("letter", out _)).IsFalse();
+            }
+        }
+    }
+
+    [Test]
+    public async Task PuzzleWithCells_StripsAnswersFromClues()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var clues = puzzle.GetProperty("clues");
+
+        foreach (var direction in new[] { "across", "down" })
+        {
+            foreach (var clue in clues.GetProperty(direction).EnumerateArray())
+            {
+                await Assert.That(clue.TryGetProperty("answer", out _)).IsFalse();
+                // clue text and number should still be present
+                await Assert.That(clue.TryGetProperty("clue", out _)).IsTrue();
+                await Assert.That(clue.TryGetProperty("number", out _)).IsTrue();
+            }
+        }
+    }
+
+    [Test]
+    public async Task PuzzleWithCells_StillIncludesPuzzleHashAndDate()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
+
+        await Assert.That(puzzle.TryGetProperty("puzzleHash", out _)).IsTrue();
+        await Assert.That(puzzle.TryGetProperty("puzzleDate", out var dateEl)).IsTrue();
+        await Assert.That(dateEl.GetString()).IsEqualTo(today);
+    }
+
+    // -----------------------------------------------------------------------
+    // POST /api/puzzle/check — server-side answer validation
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task PuzzleCheck_AllCorrect_ReturnsSolved()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new Dictionary<string, string>
+            {
+                ["0,0"] = "K", ["0,1"] = "A", ["0,2"] = "T",
+                ["2,0"] = "E", ["2,1"] = "N"
+            }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.GetProperty("solved").GetBoolean()).IsTrue();
+    }
+
+    [Test]
+    public async Task PuzzleCheck_PartiallyCorrect_ReturnsNotSolved()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new Dictionary<string, string>
+            {
+                ["0,0"] = "K", ["0,1"] = "A", ["0,2"] = "X",  // wrong
+                ["2,0"] = "E", ["2,1"] = "N"
+            }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.GetProperty("solved").GetBoolean()).IsFalse();
+
+        var results = data.GetProperty("results");
+        await Assert.That(results.GetProperty("0,0").GetBoolean()).IsTrue();
+        await Assert.That(results.GetProperty("0,2").GetBoolean()).IsFalse();
+    }
+
+    [Test]
+    public async Task PuzzleCheck_EmptyCells_ReturnsNotSolved()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        // Submit with no cells filled
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new Dictionary<string, string>()
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.GetProperty("solved").GetBoolean()).IsFalse();
+    }
+
+    [Test]
+    public async Task PuzzleCheck_CaseInsensitive_Matches()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new Dictionary<string, string>
+            {
+                ["0,0"] = "k", ["0,1"] = "a", ["0,2"] = "t",  // lowercase
+                ["2,0"] = "e", ["2,1"] = "n"
+            }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.GetProperty("solved").GetBoolean()).IsTrue();
+    }
+
+    [Test]
+    public async Task PuzzleCheck_MissingToken_Returns403()
+    {
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token = "",
+            puzzleDate = "2025-01-15",
+            cells = new Dictionary<string, string> { ["0,0"] = "K" }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task PuzzleCheck_TamperedToken_Returns403()
+    {
+        var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("fake:0:0:bad"));
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token = fakeToken,
+            puzzleDate = "2025-01-15",
+            cells = new Dictionary<string, string> { ["0,0"] = "K" }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task PuzzleCheck_InvalidDate_ReturnsBadRequest()
+    {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = "not-a-date",
+            cells = new Dictionary<string, string> { ["0,0"] = "K" }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
+    }
+
+    [Test]
+    public async Task PuzzleCheck_MissingPuzzleFile_ReturnsNotFound()
+    {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+        Directory.CreateDirectory(_tempPuzzlePath);
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        {
+            token,
+            puzzleDate = "2020-01-01",
+            cells = new Dictionary<string, string> { ["0,0"] = "K" }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
+    }
+
+    // -----------------------------------------------------------------------
+    // POST /api/puzzle/hint — server-side letter hints
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task PuzzleHint_SingleCell_ReturnsLetter()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new[] { new[] { 0, 0 } }  // row 0, col 0 = "K"
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var letters = data.GetProperty("letters");
+        await Assert.That(letters.GetProperty("0,0").GetString()).IsEqualTo("K");
+    }
+
+    [Test]
+    public async Task PuzzleHint_MultipleCells_ReturnsAllLetters()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 0, 2 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var letters = data.GetProperty("letters");
+        await Assert.That(letters.GetProperty("0,0").GetString()).IsEqualTo("K");
+        await Assert.That(letters.GetProperty("0,1").GetString()).IsEqualTo("A");
+        await Assert.That(letters.GetProperty("0,2").GetString()).IsEqualTo("T");
+    }
+
+    [Test]
+    public async Task PuzzleHint_BlockedCell_SkipsIt()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        Directory.CreateDirectory(_tempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+
+        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var token = puzzle.GetProperty("submissionToken").GetString()!;
+
+        // Cell 1,0 is null (blocked) in the test puzzle
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = today,
+            cells = new[] { new[] { 1, 0 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var letters = data.GetProperty("letters");
+        // Should not contain the blocked cell
+        await Assert.That(letters.TryGetProperty("1,0", out _)).IsFalse();
+    }
+
+    [Test]
+    public async Task PuzzleHint_MissingToken_Returns403()
+    {
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token = "",
+            puzzleDate = "2025-01-15",
+            cells = new[] { new[] { 0, 0 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task PuzzleHint_TamperedToken_Returns403()
+    {
+        var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("fake:0:0:bad"));
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token = fakeToken,
+            puzzleDate = "2025-01-15",
+            cells = new[] { new[] { 0, 0 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task PuzzleHint_InvalidDate_ReturnsBadRequest()
+    {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = "bad-date",
+            cells = new[] { new[] { 0, 0 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
+    }
+
+    [Test]
+    public async Task PuzzleHint_EmptyCells_ReturnsBadRequest()
+    {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = "2025-01-15",
+            cells = Array.Empty<int[]>()
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
+    }
+
+    [Test]
+    public async Task PuzzleHint_MissingPuzzleFile_ReturnsNotFound()
+    {
+        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var token = tokenService.GenerateToken("abc", 10);
+        Directory.CreateDirectory(_tempPuzzlePath);
+
+        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        {
+            token,
+            puzzleDate = "2020-01-01",
+            cells = new[] { new[] { 0, 0 } }
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
     }
 
     // -----------------------------------------------------------------------

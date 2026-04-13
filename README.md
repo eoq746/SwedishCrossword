@@ -14,10 +14,21 @@ A Swedish crossword puzzle generator
 - **API-First Architecture**: Output caching, Brotli + Gzip response compression, per-IP rate limiting, security headers, CORS, and OpenAPI documentation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
-  - Progress tracking and timer
+  - Progress tracking and timer with `localStorage` persistence
+  - Hint system: reveal a single letter or an entire word via server-side validation (tracked and penalized on leaderboard)
+  - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
+  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a CSS custom-property design-token system (75+ design tokens)
+  - Styled modal system (confirm/message pattern) for user interactions
   - Shared leaderboard with medal podium for top 3
   - Historical leaderboard showing top scores from the past 30 days (entries are grouped by puzzle when multiple puzzles occur on the same date)
-  - Mobile-responsive design (portrait and landscape modes)
+  - Player statistics: total solved, current/best streak, best time, average time
+  - Server-computed difficulty rating displayed per puzzle
+  - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
+  - 503 handling: friendly "puzzle generating" page when puzzles aren't ready yet
+- **PWA**: Service worker with shell + puzzle caching for offline play (`sw.js`)
+- **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
+- **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
+- **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
@@ -53,15 +64,18 @@ SwedishCrosswords/
 |           |-- GenerationHelpers.cs # Shared utility functions
 |           +-- GenerationModels.cs # Internal generation models
 |-- SwedishCrossword.Api/           # ASP.NET Core Minimal API
-|   |-- Program.cs                  # API entry point (puzzle, score, leaderboard endpoints)
+|   |-- Program.cs                  # API entry point (puzzle, score, leaderboard, check, hint endpoints)
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
-|   |-- SubmissionTokenService.cs   # HMAC-signed token generation and validation for score submissions
+|   |-- SubmissionTokenService.cs   # HMAC-signed token generation/validation, answer stripping, server-side answer reading
+|   |-- LeaderboardStore.cs         # File-based leaderboard storage with history
+|   |-- Models.cs                   # Request/response records
 |   |-- wwwroot/                    # Frontend (served by the API)
-|   |   |-- index.html              # Main crossword player
-|   |   |-- puzzle.html             # Individual puzzle page
+|   |   |-- index.html              # Landing page with SEO structured data
+|   |   |-- puzzle.html             # Interactive crossword player page
 |   |   |-- calendar.html           # Puzzle archive calendar
-|   |   |-- site.js                 # Game logic, navigation, and leaderboard
-|   |   |-- site.min.css            # Responsive styles
+|   |   |-- site.js                 # Game logic (~2,750 lines, 15 §-numbered sections)
+|   |   |-- site.min.css            # Responsive styles with 75+ CSS design tokens
+|   |   |-- sw.js                   # Service worker (shell + puzzle caching)
 |   |   |-- om-oss.html             # About page
 |   |   |-- kontakt.html            # Contact page
 |   |   |-- integritetspolicy.html  # Privacy policy
@@ -84,8 +98,10 @@ SwedishCrosswords/
 |   |-- WiktionaryClueService.cs    # Auto-populate clues from Swedish Wiktionary dump
 |   |-- CompoundClueGenerator.cs    # Generate clues for compound words via DSSO metadata
 |   +-- PatternClueGenerator.cs     # Generate clues using morphological patterns
-|-- SwedishCrossword.Tests/         # TUnit test project
-|-- SwedishCrossword.Api.Tests/     # API integration tests
+|-- SwedishCrossword.Tests/         # TUnit test project (core domain tests)
+|-- SwedishCrossword.Api.Tests/     # API integration + unit tests
+|   |-- ApiIntegrationTests.cs      # 68 integration tests (endpoints, leaderboard, check/hint)
+|   +-- SubmissionTokenServiceTests.cs # 15 unit tests (token generation, validation, answer stripping)
 |-- Dockerfile                      # Container build for the API
 |-- infra/                          # Azure infrastructure (Bicep)
 |   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
@@ -118,6 +134,8 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 |--------|------|-------------|
 | GET | `/api/puzzle/today` | Get today's puzzle (with `?size=small` for mobile variant) |
 | GET | `/api/puzzle/{yyyy-MM-dd}` | Get puzzle for a specific date (with `?size=small` for mobile variant) |
+| POST | `/api/puzzle/check` | Validate answers against server-stored solutions (token-authenticated) |
+| POST | `/api/puzzle/hint` | Reveal letter(s) from server-stored solutions (token-authenticated) |
 | GET | `/api/puzzle/dates` | List available puzzle dates |
 | GET | `/api/stats` | Dictionary statistics and available difficulties |
 | POST | `/api/scores` | Submit a score (token-validated, rate-limited) |
@@ -231,7 +249,7 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 307 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
@@ -243,7 +261,8 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - SafeJsonEncoder serialization tests
 - CrosswordGenerationOptions preset and computed-property tests
 - GenerationHelpers utility method tests
-- API integration tests (endpoint validation, leaderboard, health checks)
+- API integration tests (endpoint validation, leaderboard, score submission, puzzle check/hint, health checks)
+- SubmissionTokenService unit tests (token generation, validation, access checks, answer stripping, expiry)
 
 ## Algorithm Highlights
 
@@ -312,17 +331,22 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: Built-in file-based store, configurable via `Storage:LeaderboardPath`
-- **Deployment**: Docker container or any ASP.NET Core host
+- **Leaderboard**: Built-in file-based store (`LeaderboardStore.cs`), configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, and historical archival
+- **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
 - **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; both standard and small/mobile variants are generated; word-analysis scores are cached to disk for fast subsequent runs
 - **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime. The signing secret is configured via `SubmissionToken:Secret` (env: `SubmissionToken__Secret`); if not set, an ephemeral key is generated at startup (logged as a warning)
+- **Server-Side Answer Validation**: Puzzle JSON is stripped of answers before serving to clients; `POST /api/puzzle/check` validates submitted cell values and `POST /api/puzzle/hint` reveals requested letters, both authenticated via submission tokens
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
-- **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes (30 req/min)
-- **Security Headers**: X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, and HSTS in production
+- **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes and puzzle interactions (30 req/min each)
+- **Security Headers**: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production; Kestrel `Server` header suppressed; request body size capped at 100 KB
+- **Forwarded Headers**: Configured for Azure App Service reverse proxy (`X-Forwarded-For`, `X-Forwarded-Proto`)
 - **CORS**: Configurable via `Cors:AllowedOrigins` in appsettings
 - **OpenAPI**: Available at `/openapi` in development mode
+- **PWA**: Service worker (`sw.js`) with shell caching (cache-first with background update) and puzzle API caching (network-first with offline fallback)
+- **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
+- **Frontend Organization**: `site.js` (~2,750 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License
@@ -334,11 +358,13 @@ The dictionary data is licensed under [Creative Commons Attribution 2.5 Sweden](
 Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ### Areas for Improvement
-- Archive of previous puzzles
-- Difficulty-based word selection
 - Themed puzzle generation
-- User statistics and progress tracking
-- Mobile app version
+- Mobile app version (native)
+- Analytics / Core Web Vitals tracking
+- Frontend module splitting (ES modules with bundler)
+- Client-side unit tests
+- Static asset fingerprinting / cache-busting
+- CDN / Azure Front Door for edge caching
 
 ## Acknowledgments
 

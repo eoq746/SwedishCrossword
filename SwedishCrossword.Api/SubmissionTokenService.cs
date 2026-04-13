@@ -49,8 +49,11 @@ sealed class SubmissionTokenService
 
             var (puzzleHash, cellCount) = ComputePuzzleMetadata(obj);
             obj["submissionToken"] = GenerateToken(puzzleHash, cellCount);
+            obj["puzzleHash"] = puzzleHash;
             obj["cellCount"] = cellCount;
             obj["puzzleDate"] = puzzleDate.ToString("yyyy-MM-dd");
+
+            StripAnswers(obj);
 
             return obj.ToJsonString();
         }
@@ -121,6 +124,45 @@ sealed class SubmissionTokenService
         }
     }
 
+    /// <summary>
+    /// Validates a submission token for puzzle access (HMAC + expiry only).
+    /// Does not check puzzle hash match or solve time — used for check/hint endpoints.
+    /// </summary>
+    public TokenValidationResult ValidateAccess(string token)
+    {
+        try
+        {
+            var decoded = Encoding.UTF8.GetString(Convert.FromBase64String(token));
+            var parts = decoded.Split(':');
+            if (parts.Length != 4)
+                return TokenValidationResult.Fail("Invalid token format");
+
+            var puzzleHash = parts[0];
+            if (!int.TryParse(parts[1], out var cellCount))
+                return TokenValidationResult.Fail("Invalid cell count in token");
+            if (!long.TryParse(parts[2], out var issuedAt))
+                return TokenValidationResult.Fail("Invalid timestamp in token");
+            var providedHmac = parts[3];
+
+            var payload = $"{puzzleHash}:{cellCount}:{issuedAt}";
+            var expectedHmac = ComputeHmac(payload);
+            if (!CryptographicOperations.FixedTimeEquals(
+                Encoding.UTF8.GetBytes(providedHmac),
+                Encoding.UTF8.GetBytes(expectedHmac)))
+                return TokenValidationResult.Fail("Token signature invalid");
+
+            var age = DateTimeOffset.UtcNow - DateTimeOffset.FromUnixTimeSeconds(issuedAt);
+            if (age < TimeSpan.Zero || age > TokenLifetime)
+                return TokenValidationResult.Fail("Token expired");
+
+            return TokenValidationResult.Ok(puzzleHash, cellCount);
+        }
+        catch
+        {
+            return TokenValidationResult.Fail("Token parsing failed");
+        }
+    }
+
     private string ComputeHmac(string payload)
     {
         var hmac = HMACSHA256.HashData(_key, Encoding.UTF8.GetBytes(payload));
@@ -128,10 +170,80 @@ sealed class SubmissionTokenService
     }
 
     /// <summary>
+    /// Removes answer data from the puzzle JSON so it is not sent to the client.
+    /// Strips <c>letter</c> from every cell and <c>answer</c> from every clue.
+    /// </summary>
+    internal static void StripAnswers(JsonObject obj)
+    {
+        // Strip letters from cells
+        if (obj["cells"] is JsonArray cellRows)
+        {
+            foreach (var row in cellRows)
+            {
+                if (row is not JsonArray rowArray) continue;
+                foreach (var cell in rowArray)
+                {
+                    if (cell is JsonObject cellObj)
+                        cellObj.Remove("letter");
+                }
+            }
+        }
+
+        // Strip answers from clues
+        if (obj["clues"] is JsonObject cluesObj)
+        {
+            foreach (var dir in new[] { "across", "down" })
+            {
+                if (cluesObj[dir] is not JsonArray clueArray) continue;
+                foreach (var clue in clueArray)
+                {
+                    if (clue is JsonObject clueObj)
+                        clueObj.Remove("answer");
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Reads the answer map ("row,col" → letter) from a puzzle JSON file on disk.
+    /// Returns null if the file does not exist or cannot be parsed.
+    /// </summary>
+    internal static Dictionary<string, string>? ReadAnswers(string filePath)
+    {
+        if (!File.Exists(filePath)) return null;
+        try
+        {
+            var json = File.ReadAllText(filePath);
+            var node = JsonNode.Parse(json);
+            if (node is not JsonObject obj || obj["cells"] is not JsonArray cellRows)
+                return null;
+
+            var answers = new Dictionary<string, string>();
+            for (int row = 0; row < cellRows.Count; row++)
+            {
+                if (cellRows[row] is not JsonArray rowArray) continue;
+                for (int col = 0; col < rowArray.Count; col++)
+                {
+                    if (rowArray[col] is JsonObject cellObj &&
+                        cellObj["letter"]?.GetValue<string>() is { Length: > 0 } letter)
+                    {
+                        answers[$"{row},{col}"] = letter;
+                    }
+                }
+            }
+            return answers;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    /// <summary>
     /// Computes puzzle hash and cell count from the parsed puzzle JSON.
     /// The hash algorithm mirrors the client-side <c>generatePuzzleHash()</c>.
     /// </summary>
-    private static (string Hash, int CellCount) ComputePuzzleMetadata(JsonObject obj)
+    internal static (string Hash, int CellCount) ComputePuzzleMetadata(JsonObject obj)
     {
         var cells = obj["cells"]!.AsArray();
         var width = obj["width"]?.GetValue<int>() ?? 0;

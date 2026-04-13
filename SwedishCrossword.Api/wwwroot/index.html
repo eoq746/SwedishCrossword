@@ -145,6 +145,11 @@
     <div class="container">
 
         <header>
+            <nav class="puzzle-nav">
+                <a href="/puzzle.html" class="nav-link">🧩 Spela</a>
+                <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            </nav>
             <h1>Svenskt Korsord</h1>
             <p class="tagline">Gratis dagligt korsord online med över 100 000 svenska ord</p>
         </header>
@@ -284,5 +289,14 @@
             <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
         </footer>
     </div>
+    <script>
+    (function(){
+        var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
+        document.documentElement.setAttribute('data-theme',t);
+        var b=document.getElementById('theme-toggle');
+        if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
+    })();
+    </script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>

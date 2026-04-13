@@ -464,7 +464,8 @@ public class PrintService
         
         var grid = puzzle.Grid;
         var (across, down) = GetAllClues(puzzle);
-        
+        var difficulty = ComputeDifficulty(puzzle, across, down);
+
         var sb = new StringBuilder();
         sb.AppendLine("{");
         sb.AppendLine($"  \"width\": {grid.Width},");
@@ -472,7 +473,8 @@ public class PrintService
         sb.AppendLine($"  \"createdAt\": \"{puzzle.CreatedAt:yyyy-MM-dd HH:mm}\",");
         sb.AppendLine($"  \"wordCount\": {puzzle.Statistics.WordCount},");
         sb.AppendLine($"  \"fillPercentage\": {puzzle.Statistics.FillPercentage.ToString("F1", System.Globalization.CultureInfo.InvariantCulture)},");
-        
+        sb.AppendLine($"  \"difficulty\": \"{difficulty}\",");
+
         // Cells array
         sb.AppendLine("  \"cells\": [");
         for (int row = 0; row < grid.Height; row++)
@@ -573,6 +575,36 @@ public class PrintService
     {
         var json = GenerateJsonForWeb(puzzle);
         await File.WriteAllTextAsync(filePath, json, new UTF8Encoding(false));
+    }
+
+    /// <summary>
+    /// Computes a difficulty label for the puzzle based on grid size, fill percentage,
+    /// average word length and clue count.
+    /// </summary>
+    private static string ComputeDifficulty(CrosswordPuzzle puzzle, List<object> across, List<object> down)
+    {
+        var allClues = across.Concat(down).ToList();
+        if (allClues.Count == 0) return "Medel";
+
+        var stats = puzzle.Statistics;
+        int totalCells = stats.TotalCells;
+        double fill = stats.FillPercentage;
+
+        double avgLen = allClues.Average(c => c switch
+        {
+            Word w => w.Text.Length,
+            AccidentalWord a => a.Text.Length,
+            _ => 0.0
+        });
+
+        // Score components: higher = harder
+        int score = 0;
+        score += avgLen >= 7 ? 3 : avgLen >= 5 ? 2 : 1;               // longer words = harder
+        score += totalCells >= 169 ? 3 : totalCells >= 121 ? 2 : 1;    // larger grid = harder
+        score += fill <= 50 ? 3 : fill <= 65 ? 2 : 1;                  // lower fill = fewer intersections = harder
+        score += allClues.Count >= 30 ? 1 : allClues.Count >= 20 ? 2 : 3; // fewer clues = harder
+
+        return score >= 10 ? "Svår" : score >= 7 ? "Medel" : "Lätt";
     }
 
     private static string CenterText(string text, int width)

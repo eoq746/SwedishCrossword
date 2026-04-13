@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="/site.min.css">
 </head>
 <body>
+    <a href="#crossword-grid" class="skip-link">Hoppa till korsordet</a>
     <div class="container">
         <!-- Screen reader announcements (visually hidden) -->
         <div id="announcements" class="sr-only" aria-live="polite" aria-atomic="true"></div>
@@ -45,6 +46,8 @@
             <nav class="puzzle-nav">
                 <a href="/" class="nav-back">← Startsida</a>
                 <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+                <button class="help-toggle" id="help-toggle" aria-label="Tangentbordsgenvägar" title="Tangentbordsgenvägar (?)">⌨️</button>
             </nav>
             <h1>Svenskt Korsord</h1>
             <p>Klicka på en ruta och skriv bokstäver - Mellanslag byter riktning - Tab hoppar till nästa ledtråd</p>
@@ -52,6 +55,7 @@
                 <span id="info-size"></span>
                 <span id="info-words"></span>
                 <span id="info-fill"></span>
+                <span id="info-difficulty"></span>
             </div>
             <div class="generation-date" id="generation-date"></div>
         </header>
@@ -90,7 +94,7 @@
             <button id="intro-toggle" class="clues-toggle" aria-expanded="false" aria-controls="intro-section">Visa info</button>
         </div>
 
-        <div class="main-layout site-container" id="main-layout" style="display: none;">
+        <div class="main-layout site-container" id="main-layout" role="main" style="display: none;">
             <div class="grid-section">
                 <div class="grid-header">
                     <h2>Dagens Korsord</h2>
@@ -106,12 +110,14 @@
                         </button>
                         <button class="btn btn-primary" onclick="checkAnswers()">Kontrollera</button>
                         <button class="btn btn-secondary" onclick="clearGrid()">Rensa</button>
+                        <button class="btn btn-hint" id="hint-letter-btn" title="Avslöja bokstav">💡 Bokstav</button>
+                        <button class="btn btn-hint" id="hint-word-btn" title="Avslöja ord">💡 Ord</button>
                         <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
                         <div class="stats" id="stats"></div>
                     </div>
 
                     <div class="grid-area">
-                        <div class="crossword-grid" id="crossword-grid"></div>
+                        <div class="crossword-grid" id="crossword-grid" role="grid" aria-label="Korsord"></div>
                     </div>
                 </div>
 
@@ -137,9 +143,9 @@
                 </div>
             </div>
 
-            <div class="leaderboard-section">
+            <div class="leaderboard-section" aria-label="Topplista">
                 <h2>Topplista</h2>
-                <ul class="leaderboard-list" id="leaderboard-list">
+                <ul class="leaderboard-list" id="leaderboard-list" role="list">
                     <!-- Leaderboard entries rendered by site.js -->
                 </ul>
                 <div class="leaderboard-date" id="leaderboard-date"></div>
@@ -160,7 +166,7 @@
             </div>
         </div>
 
-        <footer class="site-footer">
+        <footer class="site-footer" role="contentinfo">
             <nav>
                 <a href="/">Startsida</a>
                 <a href="/calendar.html">Arkiv</a>
@@ -172,7 +178,15 @@
             <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</p>
         </footer>
 
-        <div class="modal-overlay" id="username-modal">
+        <div class="modal-overlay" id="message-modal" role="dialog" aria-modal="true" aria-labelledby="message-modal-title">
+            <div class="modal">
+                <h3 id="message-modal-title"></h3>
+                <p id="message-modal-body"></p>
+                <div class="modal-buttons" id="message-modal-buttons"></div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="username-modal" role="dialog" aria-modal="true" aria-label="Spara resultat">
             <div class="modal">
                 <h3>Grattis!</h3>
                 <p>Du löste korsordet!</p>
@@ -182,10 +196,30 @@
                        autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
                 <div class="modal-buttons">
                     <button class="btn btn-primary" onclick="submitScore()">Spara</button>
+                    <button class="btn btn-share" id="share-btn" onclick="shareResult()">📤 Dela</button>
                     <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
                 </div>
             </div>
         </div>
+        <!-- Keyboard shortcuts dialog -->
+        <div class="shortcuts-overlay" id="shortcuts-overlay" role="dialog" aria-label="Tangentbordsgenvägar" aria-modal="true" style="display:none;">
+            <div class="shortcuts-card">
+                <button class="shortcuts-close" id="shortcuts-close" aria-label="Stäng">&times;</button>
+                <h2>⌨️ Tangentbordsgenvägar</h2>
+                <dl class="shortcuts-list">
+                    <div class="shortcut-row"><dt><kbd>A</kbd>–<kbd>Ö</kbd></dt><dd>Skriv bokstav</dd></div>
+                    <div class="shortcut-row"><dt><kbd>Mellanslag</kbd></dt><dd>Byt riktning (vågrätt ↔ lodrätt)</dd></div>
+                    <div class="shortcut-row"><dt><kbd>Tab</kbd></dt><dd>Nästa ledtråd</dd></div>
+                    <div class="shortcut-row"><dt><kbd>Shift</kbd>+<kbd>Tab</kbd></dt><dd>Föregående ledtråd</dd></div>
+                    <div class="shortcut-row"><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Flytta vågrätt</dd></div>
+                    <div class="shortcut-row"><dt><kbd>↑</kbd> <kbd>↓</kbd></dt><dd>Flytta lodrätt</dd></div>
+                    <div class="shortcut-row"><dt><kbd>Backsteg</kbd></dt><dd>Radera &amp; flytta bakåt</dd></div>
+                    <div class="shortcut-row"><dt><kbd>Delete</kbd></dt><dd>Radera utan att flytta</dd></div>
+                    <div class="shortcut-row"><dt><kbd>?</kbd></dt><dd>Visa/dölj den här hjälpen</dd></div>
+                </dl>
+            </div>
+        </div>
+
     </div>
 
     <script type="module">
@@ -200,5 +234,6 @@
     </script>
 
     <script src="/site.js"></script>
+    <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>

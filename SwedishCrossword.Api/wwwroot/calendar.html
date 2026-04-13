@@ -42,6 +42,7 @@
             <nav class="puzzle-nav">
                 <a href="/" class="nav-back">← Startsida</a>
                 <a href="/puzzle.html" class="nav-link">🧩 Dagens korsord</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
             </nav>
             <h1>Korsord-arkiv</h1>
             <p>Välj ett datum för att spela ett tidigare korsord</p>
@@ -80,6 +81,14 @@
         </footer>
     </div>
 
+    <script>
+    (function(){
+        var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
+        document.documentElement.setAttribute('data-theme',t);
+        var b=document.getElementById('theme-toggle');
+        if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
+    })();
+    </script>
     <script>
     (function() {
         const MONTHS_SV = ['Januari','Februari','Mars','April','Maj','Juni',
@@ -185,5 +194,6 @@
         loadDates();
     })();
     </script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>
