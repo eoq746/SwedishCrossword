@@ -146,7 +146,7 @@
 
         <header>
             <nav class="puzzle-nav">
-                <a href="/puzzle.html" class="nav-link">🧩 Spela</a>
+                <a href="/puzzle.html?size=17x17" class="nav-link">🧩 Spela</a>
                 <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
             </nav>
@@ -154,19 +154,36 @@
             <p class="tagline">Gratis dagligt korsord online med över 100 000 svenska ord</p>
         </header>
 
-        <!-- Hero CTA -->
+        <!-- Hero CTA — Size selection -->
         <section class="landing-hero">
-            <div class="hero-card">
-                <div class="hero-icon">🧩</div>
-                <h2>Dagens Korsord</h2>
-                <p>Ett nytt korsord varje dag – lös det, tävla om bästa tid och klättra på topplistan!</p>
-                <a href="/puzzle.html" class="btn-hero">Spela nu →</a>
-            </div>
-            <div class="hero-card">
-                <div class="hero-icon">📅</div>
-                <h2>Korsord-arkiv</h2>
-                <p>Missade du ett pussel? Bläddra bland alla tidigare korsord i kalendern.</p>
-                <a href="/calendar.html" class="btn-hero btn-hero-secondary">Öppna arkivet →</a>
+            <div class="size-picker">
+                <a href="/puzzle.html?size=10x10" class="hero-card size-card">
+                    <div class="hero-icon">📱</div>
+                    <h3>Liten</h3>
+                    <span class="size-badge">10×10</span>
+                    <p>Snabbt och smidigt — perfekt för mobilen eller en kort paus.</p>
+                    <span class="btn-hero">Spela →</span>
+                </a>
+                <a href="/puzzle.html?size=15x15" class="hero-card size-card">
+                    <div class="hero-icon">🧩</div>
+                    <h3>Mellan</h3>
+                    <span class="size-badge">15×15</span>
+                    <p>Klassisk storlek med lagom utmaning.</p>
+                    <span class="btn-hero">Spela →</span>
+                </a>
+                <a href="/puzzle.html?size=17x17" class="hero-card size-card size-card-featured">
+                    <div class="hero-icon">🏆</div>
+                    <h3>Stor</h3>
+                    <span class="size-badge">17×17</span>
+                    <p>Full storlek med vinkelord — för den som vill ha en riktig utmaning!</p>
+                    <span class="btn-hero">Spela →</span>
+                </a>
+                <a href="/calendar.html" class="hero-card size-card">
+                    <div class="hero-icon">📅</div>
+                    <h3>Korsord-arkiv</h3>
+                    <p>Missade du ett pussel? Bläddra bland alla tidigare korsord i kalendern.</p>
+                    <span class="btn-hero btn-hero-secondary">Öppna arkivet →</span>
+                </a>
             </div>
         </section>
 
@@ -279,7 +296,7 @@
 
         <footer class="site-footer">
             <nav>
-                <a href="/puzzle.html">Spela</a>
+                <a href="/puzzle.html?size=17x17">Spela</a>
                 <a href="/calendar.html">Arkiv</a>
                 <a href="om-oss.html">Om oss</a>
                 <a href="kontakt.html">Kontakt</a>

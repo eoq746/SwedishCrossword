@@ -1349,6 +1349,16 @@ header p{font-size:.95rem;opacity:.95}
 .btn-hero-secondary{background:rgba(255,255,255,.18);color:#fff;border:2px solid rgba(255,255,255,.4)}
 .btn-hero-secondary:hover{background:rgba(255,255,255,.28)}
 
+/* Size picker (landing page) */
+.hero-section-title{color:var(--text-on-brand);font-size:1.3rem;text-align:center;margin-bottom:12px}
+.size-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:16px}
+a.size-card{text-decoration:none;color:rgba(255,255,255,.95);display:flex;flex-direction:column;align-items:center}
+.size-picker .btn-hero{margin-top:auto}
+a.size-card:hover .btn-hero{background:var(--hero-btn-hover);transform:scale(1.03)}
+.size-badge{display:inline-block;font-size:1.1rem;font-weight:700;padding:4px 14px;border-radius:20px;background:rgba(255,255,255,.2);margin-bottom:8px;letter-spacing:.5px}
+.size-card-featured{outline:2px solid rgba(255,255,255,.5);outline-offset:-2px}
+.size-card h3{font-size:1.15rem;margin-bottom:6px;color:var(--text-on-brand)}
+
 .landing-features{background:rgba(255,255,255,.06);border-radius:8px;padding:14px;color:rgba(255,255,255,.95);margin-bottom:12px}
 
 /* Puzzle page nav (back link + archive link) */
@@ -1389,12 +1399,29 @@ header p{font-size:.95rem;opacity:.95}
 .legend-available{background:var(--cal-available-bg);border:1px solid var(--cal-available-border)}
 .legend-today{background:var(--cal-today-to);outline:2px solid var(--cal-today-outline);outline-offset:-1px}
 
+/* Calendar size picker */
+.calendar-size-picker{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:10px;color:rgba(255,255,255,.9);font-size:.9rem}
+.size-btn{padding:6px 14px;border-radius:6px;border:2px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:rgba(255,255,255,.9);cursor:pointer;font-size:.9rem;font-weight:600;transition:background .2s,border-color .2s}
+.size-btn:hover{background:rgba(255,255,255,.18)}
+.size-btn.active{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.7)}
+
+/* Player stats – per-size blocks */
+.stats-size-block{margin-bottom:16px;padding:14px 14px 14px 18px;border-radius:10px;background:rgba(255,255,255,.05);border-left:4px solid var(--text-muted)}
+.stats-size-block + .stats-size-block{margin-top:12px}
+.stats-size-block[data-size="10x10"]{border-left-color:#22c55e}
+.stats-size-block[data-size="15x15"]{border-left-color:#eab308}
+.stats-size-block[data-size="17x17"]{border-left-color:#ef4444}
+.stats-size-current{outline:2px solid var(--accent-color);outline-offset:-2px;background:rgba(255,255,255,.1)}
+.stats-size-heading{font-size:1.1rem;font-weight:700;margin:0 0 10px;color:var(--text-primary)}
+.stats-size-badge{font-size:.7rem;font-weight:600;margin-left:8px;padding:2px 10px;border-radius:10px;background:var(--accent-color);color:#fff;vertical-align:middle;text-transform:uppercase;letter-spacing:.5px}
+
 @media (max-width:600px){
   .calendar-grid{gap:2px}
   .calendar-cell{font-size:.85rem;border-radius:6px}
   .calendar-day-header{font-size:.75rem;padding:4px 0}
   .calendar-header h2{font-size:1.1rem}
   .landing-hero{grid-template-columns:1fr}
+  .size-picker{grid-template-columns:1fr}
   .hero-card{padding:20px 16px}
   .hero-icon{font-size:2.4rem}
 }

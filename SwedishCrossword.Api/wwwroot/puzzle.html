@@ -113,6 +113,7 @@
                         <button class="btn btn-hint" id="hint-letter-btn" title="Avslöja bokstav">💡 Bokstav</button>
                         <button class="btn btn-hint" id="hint-word-btn" title="Avslöja ord">💡 Ord</button>
                         <button class="btn btn-success" onclick="showSolution()">Visa lösning</button>
+                        <button class="btn btn-share" id="share-btn" onclick="shareResult()" style="display:none;">📤 Dela resultat</button>
                         <div class="stats" id="stats"></div>
                     </div>
 
@@ -196,7 +197,6 @@
                        autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
                 <div class="modal-buttons">
                     <button class="btn btn-primary" onclick="submitScore()">Spara</button>
-                    <button class="btn btn-share" id="share-btn" onclick="shareResult()">📤 Dela</button>
                     <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
                 </div>
             </div>

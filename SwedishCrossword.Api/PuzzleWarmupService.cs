@@ -13,6 +13,21 @@ sealed class PuzzleWarmupService : BackgroundService
     private readonly string _puzzlePath;
     private readonly ILogger<PuzzleWarmupService> _logger;
 
+    /// <summary>
+    /// Puzzle sizes to generate for each day. Add new entries here to extend
+    /// the available sizes without changing any other code.
+    /// </summary>
+    internal static readonly (string Key, CrosswordGenerationOptions Options)[] PuzzleSizes =
+    [
+        ("10x10", CrosswordGenerationOptions.Mobile),
+        ("15x15", CrosswordGenerationOptions.Medium),
+        ("17x17", CrosswordGenerationOptions.Hard),
+    ];
+
+    /// <summary>Set of valid size keys for fast lookup.</summary>
+    internal static readonly HashSet<string> ValidSizeKeys =
+        new(PuzzleSizes.Select(s => s.Key), StringComparer.OrdinalIgnoreCase);
+
     public PuzzleWarmupService(
         CrosswordGenerator generator,
         PrintService printService,
@@ -60,34 +75,23 @@ sealed class PuzzleWarmupService : BackgroundService
         {
             Directory.CreateDirectory(_puzzlePath);
 
-            // Generate the standard (hard) puzzle
-            var filePath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}.json");
-            if (!File.Exists(filePath))
+            foreach (var (sizeKey, options) in PuzzleSizes)
             {
-                _logger.LogInformation("Pre-generating puzzle for {Date}...", date);
-                var puzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Hard, ct);
-                var json = _printService.GenerateJsonForWeb(puzzle);
-                await File.WriteAllTextAsync(filePath, json, ct);
-                _logger.LogInformation("Puzzle for {Date} generated successfully", date);
-            }
-            else
-            {
-                _logger.LogDebug("Puzzle for {Date} already exists", date);
-            }
+                if (ct.IsCancellationRequested) return;
 
-            // Generate the small (mobile) variant
-            var smallPath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}-small.json");
-            if (!File.Exists(smallPath))
-            {
-                _logger.LogInformation("Pre-generating small puzzle for {Date}...", date);
-                var smallPuzzle = await _generator.GenerateAsync(CrosswordGenerationOptions.Mobile, ct);
-                var smallJson = _printService.GenerateJsonForWeb(smallPuzzle);
-                await File.WriteAllTextAsync(smallPath, smallJson, ct);
-                _logger.LogInformation("Small puzzle for {Date} generated successfully", date);
-            }
-            else
-            {
-                _logger.LogDebug("Small puzzle for {Date} already exists", date);
+                var filePath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}-{sizeKey}.json");
+                if (!File.Exists(filePath))
+                {
+                    _logger.LogInformation("Pre-generating {Size} puzzle for {Date}...", sizeKey, date);
+                    var puzzle = await _generator.GenerateAsync(options, ct);
+                    var json = _printService.GenerateJsonForWeb(puzzle);
+                    await File.WriteAllTextAsync(filePath, json, ct);
+                    _logger.LogInformation("{Size} puzzle for {Date} generated successfully", sizeKey, date);
+                }
+                else
+                {
+                    _logger.LogDebug("{Size} puzzle for {Date} already exists", sizeKey, date);
+                }
             }
         }
         catch (OperationCanceledException) when (ct.IsCancellationRequested)
@@ -96,7 +100,7 @@ sealed class PuzzleWarmupService : BackgroundService
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Failed to pre-generate puzzle for {Date}", date);
+            _logger.LogError(ex, "Failed to pre-generate puzzles for {Date}", date);
         }
     }
 }

@@ -45,6 +45,19 @@ const ANTI_CHEAT = {
     enabled: true
 };
 
+// Friendly labels for each puzzle size (used in stats, leaderboard, headings)
+const SIZE_LABELS = {
+    '10x10': 'Liten (10×10)',
+    '15x15': 'Mellan (15×15)',
+    '17x17': 'Stor (17×17)'
+};
+const SIZE_ICONS = { '10x10': '🟢', '15x15': '🟡', '17x17': '🔴' };
+function getSizeLabel(sizeKey) { return SIZE_LABELS[sizeKey] || sizeKey; }
+function getSizeIcon(sizeKey) { return SIZE_ICONS[sizeKey] || '⬜'; }
+
+// Stats & leaderboard reset date — data before this date is discarded
+const STATS_RESET_DATE = '2026-04-14';
+
 // Default puzzle data (used if puzzle.json fails to load)
 let puzzleData = {
     width: 11,
@@ -370,15 +383,83 @@ function checkIfViewedSolution() {
 // ═══════════════════════════════════════════════════════════════════════
 
 const PLAYER_STATS_KEY = 'playerStats';
+const LOCAL_STORAGE_RESET_KEY = 'dataResetDate';
+
+// One-time localStorage purge: remove old leaderboard, progress, and solution-
+// viewed entries that predate STATS_RESET_DATE.  Runs once per reset cycle.
+function purgeStaleLocalStorage() {
+    try {
+        if (localStorage.getItem(LOCAL_STORAGE_RESET_KEY) === STATS_RESET_DATE) return;
+
+        const keysToRemove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            // crossword-leaderboard-YYYY-MM-DD-{hash}
+            const lbMatch = key.match(/^crossword-leaderboard-(\d{4}-\d{2}-\d{2})/);
+            if (lbMatch && lbMatch[1] < STATS_RESET_DATE) { keysToRemove.push(key); continue; }
+            // crossword-progress-{hash}  — no date in key, but clear all stale progress
+            if (key.startsWith('crossword-progress-')) { keysToRemove.push(key); continue; }
+            // solution-viewed-{hash}
+            if (key.startsWith('solution-viewed-')) { keysToRemove.push(key); continue; }
+        }
+        keysToRemove.forEach(k => localStorage.removeItem(k));
+        localStorage.setItem(LOCAL_STORAGE_RESET_KEY, STATS_RESET_DATE);
+
+        if (keysToRemove.length > 0) {
+            console.log(`Purged ${keysToRemove.length} stale localStorage entries (reset date: ${STATS_RESET_DATE})`);
+        }
+    } catch (e) {
+        console.warn('Failed to purge stale localStorage:', e);
+    }
+}
+purgeStaleLocalStorage();
+
+function defaultSizeStats() {
+    return { totalSolved: 0, currentStreak: 0, bestStreak: 0, bestTime: null, totalTime: 0, lastSolvedDate: null, solvedDates: [] };
+}
 
 function loadPlayerStats() {
     try {
         const raw = localStorage.getItem(PLAYER_STATS_KEY);
-        if (raw) return JSON.parse(raw);
+        if (raw) {
+            const stats = JSON.parse(raw);
+
+            // Reset stats if they predate the reset date
+            if (!stats.resetDate || stats.resetDate < STATS_RESET_DATE) {
+                const fresh = { sizes: {}, resetDate: STATS_RESET_DATE };
+                savePlayerStats(fresh);
+                return fresh;
+            }
+
+            // Migrate legacy flat format → per-size format
+            if (!stats.sizes) {
+                const legacy = {
+                    totalSolved: stats.totalSolved || 0,
+                    currentStreak: stats.currentStreak || 0,
+                    bestStreak: stats.bestStreak || 0,
+                    bestTime: stats.bestTime ?? null,
+                    totalTime: stats.totalTime || 0,
+                    lastSolvedDate: stats.lastSolvedDate || null,
+                    solvedDates: stats.solvedDates || []
+                };
+                stats.sizes = { '17x17': legacy };
+                delete stats.totalSolved; delete stats.currentStreak;
+                delete stats.bestStreak; delete stats.bestTime;
+                delete stats.totalTime; delete stats.lastSolvedDate;
+                delete stats.solvedDates;
+                savePlayerStats(stats);
+            }
+            return stats;
+        }
     } catch (e) {
         console.warn('Failed to load player stats:', e);
     }
-    return { totalSolved: 0, currentStreak: 0, bestStreak: 0, bestTime: null, totalTime: 0, lastSolvedDate: null, solvedDates: [] };
+    return { sizes: {}, resetDate: STATS_RESET_DATE };
+}
+
+function getStatsForSize(stats, sizeKey) {
+    if (!stats.sizes[sizeKey]) stats.sizes[sizeKey] = defaultSizeStats();
+    return stats.sizes[sizeKey];
 }
 
 function savePlayerStats(stats) {
@@ -391,40 +472,42 @@ function savePlayerStats(stats) {
 
 function recordPuzzleSolve(solveTimeSeconds) {
     const stats = loadPlayerStats();
+    const sizeKey = getPuzzleSize();
+    const s = getStatsForSize(stats, sizeKey);
     const todayStr = new Date().toISOString().split('T')[0];
 
-    // Avoid double-recording the same date
-    if (stats.solvedDates.includes(todayStr)) return stats;
+    // Avoid double-recording the same date for this size
+    if (s.solvedDates.includes(todayStr)) return stats;
 
-    stats.totalSolved = (stats.totalSolved || 0) + 1;
-    stats.totalTime = (stats.totalTime || 0) + solveTimeSeconds;
+    s.totalSolved = (s.totalSolved || 0) + 1;
+    s.totalTime = (s.totalTime || 0) + solveTimeSeconds;
 
-    if (stats.bestTime === null || solveTimeSeconds < stats.bestTime) {
-        stats.bestTime = solveTimeSeconds;
+    if (s.bestTime === null || solveTimeSeconds < s.bestTime) {
+        s.bestTime = solveTimeSeconds;
     }
 
-    // Streak logic: check if yesterday was solved
+    // Streak logic: check if yesterday was solved for THIS size
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const yesterdayStr = yesterday.toISOString().split('T')[0];
 
-    if (stats.lastSolvedDate === yesterdayStr) {
-        stats.currentStreak = (stats.currentStreak || 0) + 1;
-    } else if (stats.lastSolvedDate === todayStr) {
+    if (s.lastSolvedDate === yesterdayStr) {
+        s.currentStreak = (s.currentStreak || 0) + 1;
+    } else if (s.lastSolvedDate === todayStr) {
         // Already counted today — keep streak as is
     } else {
-        stats.currentStreak = 1;
+        s.currentStreak = 1;
     }
 
-    stats.bestStreak = Math.max(stats.bestStreak || 0, stats.currentStreak);
-    stats.lastSolvedDate = todayStr;
+    s.bestStreak = Math.max(s.bestStreak || 0, s.currentStreak);
+    s.lastSolvedDate = todayStr;
 
     // Keep last 90 dates for history
-    if (!stats.solvedDates.includes(todayStr)) {
-        stats.solvedDates.push(todayStr);
+    if (!s.solvedDates.includes(todayStr)) {
+        s.solvedDates.push(todayStr);
     }
-    if (stats.solvedDates.length > 90) {
-        stats.solvedDates = stats.solvedDates.slice(-90);
+    if (s.solvedDates.length > 90) {
+        s.solvedDates = s.solvedDates.slice(-90);
     }
 
     savePlayerStats(stats);
@@ -436,43 +519,65 @@ function renderPlayerStats() {
     if (!panel) return;
 
     const stats = loadPlayerStats();
-
-    // Recompute current streak based on today's date in case it's stale
     const todayStr = new Date().toISOString().split('T')[0];
-    if (stats.lastSolvedDate && stats.lastSolvedDate !== todayStr) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        if (stats.lastSolvedDate !== yesterday.toISOString().split('T')[0]) {
-            stats.currentStreak = 0;
+    const currentSize = getPuzzleSize();
+
+    // Collect all sizes that have any data, plus the current size
+    const allSizes = new Set(Object.keys(stats.sizes));
+    allSizes.add(currentSize);
+    const orderedSizes = [...allSizes].sort();
+
+    let html = '';
+    for (const sizeKey of orderedSizes) {
+        const s = getStatsForSize(stats, sizeKey);
+        const isCurrent = sizeKey === currentSize;
+
+        // Recompute current streak based on today's date in case it's stale
+        if (s.lastSolvedDate && s.lastSolvedDate !== todayStr) {
+            const yesterday = new Date();
+            yesterday.setDate(yesterday.getDate() - 1);
+            if (s.lastSolvedDate !== yesterday.toISOString().split('T')[0]) {
+                s.currentStreak = 0;
+            }
         }
-    }
 
-    const avgTime = stats.totalSolved > 0 ? Math.round(stats.totalTime / stats.totalSolved) : 0;
+        const avgTime = s.totalSolved > 0 ? Math.round(s.totalTime / s.totalSolved) : 0;
 
-    panel.innerHTML = `
-        <div class="player-stats-grid">
-            <div class="stat-item">
-                <span class="stat-value">${stats.totalSolved}</span>
-                <span class="stat-label">Lösta</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${stats.currentStreak}</span>
-                <span class="stat-label">Streak</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${stats.bestStreak}</span>
-                <span class="stat-label">Bästa streak</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${stats.bestTime !== null ? formatTime(stats.bestTime) : '--:--'}</span>
-                <span class="stat-label">Bästa tid</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-value">${avgTime > 0 ? formatTime(avgTime) : '--:--'}</span>
-                <span class="stat-label">Snittid</span>
+        const label = getSizeLabel(sizeKey);
+        const icon = getSizeIcon(sizeKey);
+        const badge = isCurrent ? ' <span class="stats-size-badge">spelar nu</span>' : '';
+
+        html += `
+        <div class="stats-size-block${isCurrent ? ' stats-size-current' : ''}" data-size="${sizeKey}">
+            <h3 class="stats-size-heading">${icon} ${label}${badge}</h3>
+            <div class="player-stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value">${s.totalSolved}</span>
+                    <span class="stat-label">Lösta</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${s.currentStreak}</span>
+                    <span class="stat-label">Streak</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${s.bestStreak}</span>
+                    <span class="stat-label">Bästa streak</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${s.bestTime !== null ? formatTime(s.bestTime) : '--:--'}</span>
+                    <span class="stat-label">Bästa tid</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${avgTime > 0 ? formatTime(avgTime) : '--:--'}</span>
+                    <span class="stat-label">Snittid</span>
+                </div>
             </div>
         </div>`;
+    }
+
+    panel.innerHTML = html;
 }
+
 
 // Analyze input pattern for suspicious activity
 function analyzeInputPattern() {
@@ -807,7 +912,8 @@ async function renderLeaderboard() {
 
     if (currentPuzzleDate) {
         const modeText = LEADERBOARD_ENABLED ? ' (delad)' : ' (lokal)';
-        dateEl.textContent = `Korsord: ${currentPuzzleDate}${modeText}`;
+        const sizeLabel = getSizeLabel(getPuzzleSize());
+        dateEl.textContent = `Korsord: ${currentPuzzleDate} — ${sizeLabel}${modeText}`;
     } else dateEl.textContent = '';
 
     if (!leaderboard || leaderboard.length === 0) {
@@ -823,8 +929,19 @@ async function renderLeaderboard() {
         const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
         const rankClass = index < 3 ? `rank-${index + 1}` : '';
         const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+
+        // Build descriptive tooltip for the entire row
+        const hL = entry.hintsUsed || 0;
+        const hW = entry.wordHintsUsed || 0;
+        let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
+        if (hL > 0 || hW > 0) {
+            rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
+        } else {
+            rowTooltip += '\n🏅 Inga ledtrådar';
+        }
+
         return `
-            <li class="leaderboard-item ${rankClass} ${isCurrentUser ? 'current-user' : ''}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
+            <li class="leaderboard-item ${rankClass} ${isCurrentUser ? 'current-user' : ''}" title="${rowTooltip}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                 <span class="leaderboard-rank">${rankDisplay}</span>
                 <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
                 <span class="leaderboard-time">${formatTime(entry.time)}</span>
@@ -975,7 +1092,7 @@ async function fetchLeaderboardHistory(days = 30) {
     }
 }
 
-// Render historical leaderboard
+// Render historical leaderboard (filtered by current puzzle size)
 async function renderLeaderboardHistory() {
     const container = document.getElementById('history-list');
     if (!container) return;
@@ -984,6 +1101,7 @@ async function renderLeaderboardHistory() {
 
     const history = await fetchLeaderboardHistory();
     const dates = Object.keys(history).sort().reverse();
+    const currentSize = getPuzzleSize();
 
     if (dates.length === 0) {
         container.innerHTML = '<li class="leaderboard-empty">Ingen historik tillgänglig ännu.</li>';
@@ -991,6 +1109,7 @@ async function renderLeaderboardHistory() {
     }
 
     const medals = ['🥇', '🥈', '🥉'];
+    let hasContent = false;
 
     container.innerHTML = dates.map(date => {
         const entries = history[date];
@@ -1003,33 +1122,48 @@ async function renderLeaderboardHistory() {
             puzzleGroups.get(key).push(entry);
         });
 
-        const hasMultiplePuzzles = puzzleGroups.size > 1;
+        // Filter: only show groups matching the current puzzle size
+        let filteredGroups = [];
+        for (const [, groupEntries] of puzzleGroups) {
+            const size = groupEntries[0]?.puzzleSize;
+            if (size && size !== currentSize) continue;
+            filteredGroups.push(groupEntries);
+        }
+        if (filteredGroups.length === 0) return '';
+        hasContent = true;
 
         let groupsHtml = '';
-        let puzzleIndex = 0;
-        for (const [, groupEntries] of puzzleGroups) {
-            puzzleIndex++;
+        const showLabels = filteredGroups.length > 1;
+        filteredGroups.forEach((groupEntries, idx) => {
             const size = groupEntries[0]?.puzzleSize;
             let puzzleLabel = '';
-            if (hasMultiplePuzzles) {
-                const label = size || `Pussel ${puzzleIndex}`;
+            if (showLabels) {
+                const label = size ? getSizeLabel(size) : `Pussel ${idx + 1}`;
                 puzzleLabel = `<span class="history-puzzle-label">${label}</span>`;
             } else if (size) {
-                puzzleLabel = `<span class="history-puzzle-label">${size}</span>`;
+                puzzleLabel = `<span class="history-puzzle-label">${getSizeLabel(size)}</span>`;
             }
             const rows = groupEntries.map((entry, index) => {
                 const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
                 const rankClass = index < 3 ? `rank-${index + 1}` : '';
                 const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+                const hL = entry.hintsUsed || 0;
+                const hW = entry.wordHintsUsed || 0;
+                let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
+                if (hL > 0 || hW > 0) {
+                    rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
+                } else {
+                    rowTooltip += '\n🏅 Inga ledtrådar';
+                }
                 return `
-                    <li class="leaderboard-item history-item ${rankClass}">
+                    <li class="leaderboard-item history-item ${rankClass}" title="${rowTooltip}">
                         <span class="leaderboard-rank">${rankDisplay}</span>
                         <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}</span>
                         <span class="leaderboard-time">${formatTime(entry.time)}</span>
                     </li>`;
             }).join('');
             groupsHtml += `${puzzleLabel}<ul class="history-entries">${rows}</ul>`;
-        }
+        });
 
         return `
             <li class="history-date-group">
@@ -1037,6 +1171,10 @@ async function renderLeaderboardHistory() {
                 ${groupsHtml}
             </li>`;
     }).join('');
+
+    if (!hasContent) {
+        container.innerHTML = '<li class="leaderboard-empty">Ingen historik för denna storlek ännu.</li>';
+    }
 }
 
 // Handle Enter key in username input
@@ -1073,10 +1211,9 @@ async function loadPuzzle() {
     try {
         const params = new URLSearchParams(window.location.search);
         const dateParam = params.get('date');
-        // On small screens (phones), request the smaller 10x10 puzzle variant
-        const isSmallScreen = window.matchMedia('(max-width:1099px)').matches;
-        const sizeParam = isSmallScreen ? '?size=small' : '';
-        const url = dateParam ? `/api/puzzle/${dateParam}${sizeParam}` : `/api/puzzle/today${sizeParam}`;
+        const sizeParam = params.get('size') || '17x17';
+        const sizeQuery = `size=${encodeURIComponent(sizeParam)}`;
+        const url = dateParam ? `/api/puzzle/${dateParam}?${sizeQuery}` : `/api/puzzle/today?${sizeQuery}`;
         const response = await fetch(url);
         if (response.ok) {
             puzzleData = await response.json();
@@ -1139,11 +1276,16 @@ async function init() {
         currentPuzzleDate = todayStr;
     }
 
-    // Update heading for historical puzzles
+    // Update heading for historical puzzles and size
     const isHistorical = dateParam && dateParam !== todayStr;
     const gridHeader = document.querySelector('.grid-header h2');
-    if (gridHeader && isHistorical) {
-        gridHeader.textContent = `Korsord ${currentPuzzleDate}`;
+    const sizeLabel = getSizeLabel(getPuzzleSize());
+    if (gridHeader) {
+        if (isHistorical) {
+            gridHeader.textContent = `Korsord ${currentPuzzleDate} — ${sizeLabel}`;
+        } else {
+            gridHeader.textContent = `Dagens Korsord — ${sizeLabel}`;
+        }
     }
 
     if (puzzleData.wordCount) {
@@ -1977,7 +2119,8 @@ function highlightClue(row, col) {
 
 // Helper: derive puzzle size variant for server check/hint requests
 function getPuzzleSize() {
-    return window.matchMedia('(max-width:1099px)').matches ? 'small' : null;
+    const params = new URLSearchParams(window.location.search);
+    return params.get('size') || '17x17';
 }
 
 // Helper: check answers locally using data-answer attributes (fallback for offline / old cached puzzles)
@@ -2074,6 +2217,12 @@ async function checkAnswers() {
     }
 
     // Fallback: local check using data-answer attributes
+    // If answers were stripped by the server, local check is unavailable.
+    const hasLocalAnswers = Array.from(inputs).some(i => i.dataset.answer);
+    if (!hasLocalAnswers) {
+        showMessageModal('Kunde inte kontrollera', 'Servern svarade inte. Försök igen om en stund.');
+        return;
+    }
     const { correct, total: t, filled } = checkAnswersLocal();
     handleCheckResult(correct, t, filled);
 }
@@ -2145,8 +2294,14 @@ function showSolution() {
                     input.value = input.dataset.answer;
                     input.parentElement.classList.remove('empty-warning', 'incorrect');
                     input.parentElement.classList.add('correct');
+                    revealed = true;
                 }
             });
+        }
+
+        if (!revealed) {
+            showMessageModal('Kunde inte visa lösningen', 'Servern svarade inte. Försök igen om en stund.');
+            return;
         }
 
         puzzleSolved = true; stopTimer(); updateStats();
@@ -2155,6 +2310,11 @@ function showSolution() {
         hasSubmittedScore = true;
         trackSolutionView();
         clearProgress();
+        const shareBtn = document.getElementById('share-btn');
+        if (shareBtn) {
+            shareBtn.textContent = '📤 Dela korsord';
+            shareBtn.style.display = '';
+        }
     }, 'Visa lösning', true);
 }
 
@@ -2304,8 +2464,22 @@ async function revealWord() {
 function generateShareText() {
     const size = `${puzzleData.width}×${puzzleData.height}`;
     const date = currentPuzzleDate || new Date().toISOString().split('T')[0];
+    const difficulty = puzzleData.difficulty || '';
+    const diffLabel = difficulty ? ` • ${difficulty}` : '';
+    const sizeKey = getPuzzleSize();
+    const puzzleUrl = `https://svensktkorsord.se/puzzle.html?date=${date}&size=${sizeKey}`;
+
+    // If show solution was used, only share the puzzle link — no personal result
+    if (usedShowSolution) {
+        let text = `🇸🇪 Svenskt Korsord ${date}\n`;
+        text += `📐 ${size}${diffLabel}\n\n`;
+        text += `Testa dagens korsord! 👇\n`;
+        text += puzzleUrl;
+        return text;
+    }
+
     const time = formatTime(seconds);
-    const hintText = (letterHintsUsed + wordHintsUsed) > 0 ? ` | ${formatHintSummary(letterHintsUsed, wordHintsUsed)}` : '';
+    const totalHints = letterHintsUsed + wordHintsUsed;
 
     // Build emoji grid: 🟩 correct, 🟨 hint-revealed, ⬛ blocked
     let emojiGrid = '';
@@ -2326,24 +2500,63 @@ function generateShareText() {
         emojiGrid += row + '\n';
     }
 
-    return `Svenskt Korsord ${date} (${size})\n⏱️ ${time}${hintText}\n\n${emojiGrid}\nhttps://svensktkorsord.se`;
+    // Header with date, size, and optional difficulty
+    let text = `🇸🇪 Svenskt Korsord ${date}\n`;
+    text += `📐 ${size}${diffLabel}\n`;
+    text += `⏱️ ${time}\n`;
+
+    // Emphasize hints on their own line
+    if (totalHints > 0) {
+        text += `💡 ${formatHintSummary(letterHintsUsed, wordHintsUsed)}\n`;
+    } else {
+        text += `🏅 Inga ledtrådar!\n`;
+    }
+
+    text += `\n${emojiGrid}\n`;
+
+    // Challenge call-to-action
+    text += `Kan du slå min tid? 👇\n`;
+    text += puzzleUrl;
+
+    return text;
 }
 
 async function shareResult() {
     const text = generateShareText();
 
+    // Always copy to clipboard first
+    let copied = false;
+    try {
+        await navigator.clipboard.writeText(text);
+        copied = true;
+    } catch (_) { /* clipboard may be unavailable */ }
+
+    // Then offer native share sheet if supported
     if (navigator.share) {
         try {
             await navigator.share({ text });
+            // If the share sheet was shown, still confirm the clipboard copy
+            if (copied) announce('Resultat kopierat till urklipp');
             return;
         } catch (e) {
-            if (e.name === 'AbortError') return;
+            if (e.name === 'AbortError') {
+                // User dismissed the share sheet — still show clipboard confirmation
+                if (copied) {
+                    const btn = document.getElementById('share-btn');
+                    if (btn) {
+                        const original = btn.textContent;
+                        btn.textContent = 'Kopierat! ✓';
+                        setTimeout(() => { btn.textContent = original; }, 2000);
+                    }
+                    announce('Resultat kopierat till urklipp');
+                }
+                return;
+            }
         }
     }
 
-    // Fallback: copy to clipboard
-    try {
-        await navigator.clipboard.writeText(text);
+    // No native share — show clipboard confirmation or fallback
+    if (copied) {
         const btn = document.getElementById('share-btn');
         if (btn) {
             const original = btn.textContent;
@@ -2351,8 +2564,7 @@ async function shareResult() {
             setTimeout(() => { btn.textContent = original; }, 2000);
         }
         announce('Resultat kopierat till urklipp');
-    } catch (e) {
-        // Last resort: show in a message modal for manual copy
+    } else {
         showMessageModal('Dela resultat', 'Kunde inte kopiera automatiskt. Prova att dela via webbläsarmenyn.');
     }
 }
@@ -2761,14 +2973,19 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
   document.addEventListener('DOMContentLoaded', updateVisibility);
 
   // After puzzle completion and modal close, show leaderboard on small screens
+  // and reveal the share button in the controls area.
   const originalClose = window.closeModal;
   window.closeModal = function(){
     originalClose && originalClose();
-    if (puzzleSolved && window.matchMedia('(max-width:1100px)').matches){
-      document.body.classList.add('show-leaderboard');
-      document.body.classList.add('hide-clues');
-      if (leaderboardToggle) leaderboardToggle.setAttribute('aria-expanded','true');
-      renderLeaderboardHistory();
+    if (puzzleSolved) {
+      const shareBtn = document.getElementById('share-btn');
+      if (shareBtn) shareBtn.style.display = '';
+      if (window.matchMedia('(max-width:1100px)').matches) {
+        document.body.classList.add('show-leaderboard');
+        document.body.classList.add('hide-clues');
+        if (leaderboardToggle) leaderboardToggle.setAttribute('aria-expanded','true');
+        renderLeaderboardHistory();
+      }
     }
   };
 })();

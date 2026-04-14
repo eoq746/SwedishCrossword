@@ -41,11 +41,17 @@
         <header>
             <nav class="puzzle-nav">
                 <a href="/" class="nav-back">← Startsida</a>
-                <a href="/puzzle.html" class="nav-link">🧩 Dagens korsord</a>
+                <a href="/puzzle.html?size=17x17" class="nav-link">🧩 Dagens korsord</a>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
             </nav>
             <h1>Korsord-arkiv</h1>
             <p>Välj ett datum för att spela ett tidigare korsord</p>
+            <div class="calendar-size-picker" id="calendar-size-picker">
+                <label>Storlek:</label>
+                <button class="size-btn" data-size="10x10">10×10</button>
+                <button class="size-btn" data-size="15x15">15×15</button>
+                <button class="size-btn active" data-size="17x17">17×17</button>
+            </div>
         </header>
 
         <section class="calendar-section site-container">
@@ -95,24 +101,37 @@
                            'Juli','Augusti','September','Oktober','November','December'];
 
         let currentYear, currentMonth;
-        let availableDates = new Set();
+        let availableDateSizes = {}; // { "2025-07-10": ["10x10","17x17"], ... }
+        let selectedSize = '17x17';
 
         const today = new Date();
         const todayStr = today.toISOString().split('T')[0];
         currentYear = today.getFullYear();
         currentMonth = today.getMonth();
 
+        // Restore size from URL hash or default
+        const hashSize = window.location.hash.replace('#', '');
+        if (['10x10','15x15','17x17'].includes(hashSize)) selectedSize = hashSize;
+
         async function loadDates() {
             try {
                 const res = await fetch('/api/puzzle/dates');
                 if (res.ok) {
-                    const dates = await res.json();
-                    dates.forEach(d => availableDates.add(d));
+                    const data = await res.json();
+                    data.forEach(item => {
+                        if (typeof item === 'string') {
+                            // Legacy: plain date string
+                            availableDateSizes[item] = ['17x17'];
+                        } else {
+                            availableDateSizes[item.date] = item.sizes || [];
+                        }
+                    });
                 }
             } catch (e) {
                 console.error('Failed to load puzzle dates', e);
             }
             renderCalendar();
+            updateSizeButtons();
         }
 
         function pad(n) { return n < 10 ? '0' + n : '' + n; }
@@ -152,24 +171,31 @@
                 cell.textContent = day;
 
                 const isToday = dateStr === todayStr;
-                const hasData = availableDates.has(dateStr);
+                const sizes = availableDateSizes[dateStr] || [];
+                const hasSelectedSize = sizes.includes(selectedSize) || isToday;
+                const hasAnyData = sizes.length > 0;
                 const isFuture = new Date(currentYear, currentMonth, day) > today;
 
                 if (isToday) {
                     cell.classList.add('calendar-today');
                 }
 
-                if (hasData || isToday) {
+                if (hasSelectedSize || (isToday && hasAnyData) || isToday) {
                     cell.classList.add('calendar-available');
                     const link = document.createElement('a');
-                    link.href = isToday ? '/puzzle.html' : `/puzzle.html?date=${dateStr}`;
+                    link.href = isToday
+                        ? `/puzzle.html?size=${selectedSize}`
+                        : `/puzzle.html?date=${dateStr}&size=${selectedSize}`;
                     link.className = 'calendar-link';
                     link.textContent = day;
-                    link.setAttribute('aria-label', `Spela korsord för ${dateStr}`);
+                    link.setAttribute('aria-label', `Spela ${selectedSize} korsord för ${dateStr}`);
                     cell.textContent = '';
                     cell.appendChild(link);
                 } else if (isFuture) {
                     cell.classList.add('calendar-future');
+                } else if (hasAnyData) {
+                    // Has puzzles but not for the selected size — dim but clickable
+                    cell.classList.add('calendar-unavailable');
                 } else {
                     cell.classList.add('calendar-unavailable');
                 }
@@ -177,6 +203,21 @@
                 grid.appendChild(cell);
             }
         }
+
+        function updateSizeButtons() {
+            document.querySelectorAll('.size-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.size === selectedSize);
+            });
+        }
+
+        document.getElementById('calendar-size-picker').addEventListener('click', (e) => {
+            const btn = e.target.closest('.size-btn');
+            if (!btn) return;
+            selectedSize = btn.dataset.size;
+            window.location.hash = selectedSize;
+            updateSizeButtons();
+            renderCalendar();
+        });
 
         document.getElementById('prev-month').addEventListener('click', () => {
             currentMonth--;

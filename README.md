@@ -9,8 +9,8 @@ A Swedish crossword puzzle generator
 - **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with high fill percentages (65–75%)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
 - **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
-- **Multiple Puzzle Sizes**: Small (9×9), Mobile (10×10), Easy (11×11), Medium (15×15), and Hard (17×17) presets
-- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; both standard and small/mobile variants
+- **Multiple Puzzle Sizes**: Small (9×9), Mobile (10×10), Easy (11×11), Medium (15×15), and Hard (17×17) presets — the web player offers 10×10, 15×15, and 17×17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
+- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10×10, 15×15, 17×17) per day
 - **API-First Architecture**: Output caching, Brotli + Gzip response compression, per-IP rate limiting, security headers, CORS, and OpenAPI documentation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
@@ -19,9 +19,10 @@ A Swedish crossword puzzle generator
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
   - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a CSS custom-property design-token system (75+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
-  - Shared leaderboard with medal podium for top 3
-  - Historical leaderboard showing top scores from the past 30 days (entries are grouped by puzzle when multiple puzzles occur on the same date)
-  - Player statistics: total solved, current/best streak, best time, average time
+  - Shared leaderboard with medal podium for top 3, filtered by the current puzzle size
+  - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
+  - Player statistics per size: total solved, current/best streak, best time, average time — with automatic migration from legacy flat format
+  - Puzzle archive calendar with size-filter toggle buttons
   - Server-computed difficulty rating displayed per puzzle
   - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
   - 503 handling: friendly "puzzle generating" page when puzzles aren't ready yet
@@ -132,12 +133,12 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 
 | Method | Path | Description |
 |--------|------|-------------|
-| GET | `/api/puzzle/today` | Get today's puzzle (with `?size=small` for mobile variant) |
-| GET | `/api/puzzle/{yyyy-MM-dd}` | Get puzzle for a specific date (with `?size=small` for mobile variant) |
+| GET | `/api/puzzle/today` | Get today's puzzle (`?size=10x10\|15x15\|17x17`, default `17x17`) |
+| GET | `/api/puzzle/{yyyy-MM-dd}` | Get puzzle for a specific date (`?size=10x10\|15x15\|17x17`, default `17x17`) |
 | POST | `/api/puzzle/check` | Validate answers against server-stored solutions (token-authenticated) |
 | POST | `/api/puzzle/hint` | Reveal letter(s) from server-stored solutions (token-authenticated) |
-| GET | `/api/puzzle/dates` | List available puzzle dates |
-| GET | `/api/stats` | Dictionary statistics and available difficulties |
+| GET | `/api/puzzle/dates` | List available puzzle dates with per-date size arrays (`[{ date, sizes[] }]`) |
+| GET | `/api/stats` | Dictionary statistics, available difficulties, and `availableSizes` |
 | POST | `/api/scores` | Submit a score (token-validated, rate-limited) |
 | GET | `/api/leaderboard` | Current leaderboard |
 | POST | `/api/leaderboard/history` | Submit a historical score |
@@ -334,7 +335,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Leaderboard**: Built-in file-based store (`LeaderboardStore.cs`), configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, and historical archival
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
-- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; both standard and small/mobile variants are generated; word-analysis scores are cached to disk for fast subsequent runs
+- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
 - **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime. The signing secret is configured via `SubmissionToken:Secret` (env: `SubmissionToken__Secret`); if not set, an ephemeral key is generated at startup (logged as a warning)
 - **Server-Side Answer Validation**: Puzzle JSON is stripped of answers before serving to clients; `POST /api/puzzle/check` validates submitted cell values and `POST /api/puzzle/hint` reveals requested letters, both authenticated via submission tokens
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads

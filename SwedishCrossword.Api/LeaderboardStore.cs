@@ -8,6 +8,11 @@ sealed class LeaderboardStore
 {
     public static readonly Regex DatePattern = new(@"^\d{4}-\d{2}-\d{2}$", RegexOptions.Compiled);
 
+    /// <summary>
+    /// Data before this date is discarded (leaderboard reset).
+    /// </summary>
+    private static readonly DateOnly HistoryCutoffDate = new(2026, 4, 14);
+
     private static readonly JsonSerializerOptions JsonOptions = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
@@ -84,12 +89,14 @@ sealed class LeaderboardStore
                     allScores[leaderboardKey] = list = [.. list.Take(10)];
             }
 
-            // Prune entries older than 7 days
-            var cutoff = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-7).ToString("yyyy-MM-dd");
+            // Prune entries older than 7 days or before the history cutoff date
+            var cutoff = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-7);
+            if (cutoff < HistoryCutoffDate) cutoff = HistoryCutoffDate;
+            var cutoffStr = cutoff.ToString("yyyy-MM-dd");
             foreach (var key in allScores.Keys.ToList())
             {
                 var dateMatch = Regex.Match(key, @"^(\d{4}-\d{2}-\d{2})");
-                if (dateMatch.Success && string.Compare(dateMatch.Groups[1].Value, cutoff, StringComparison.Ordinal) < 0)
+                if (dateMatch.Success && string.Compare(dateMatch.Groups[1].Value, cutoffStr, StringComparison.Ordinal) < 0)
                     allScores.Remove(key);
             }
 
@@ -153,7 +160,10 @@ sealed class LeaderboardStore
 
         for (var i = 0; i < days; i++)
         {
-            var date = today.AddDays(-i).ToString("yyyy-MM-dd");
+            var d = today.AddDays(-i);
+            if (DateOnly.FromDateTime(d) < HistoryCutoffDate) break;
+
+            var date = d.ToString("yyyy-MM-dd");
             var path = GetHistoryPath(date);
             if (File.Exists(path))
             {

@@ -139,11 +139,12 @@ public class ApiIntegrationTests
         var response = await _client.GetAsync("/api/puzzle/dates");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        var dates = await response.Content.ReadFromJsonAsync<string[]>();
-        await Assert.That(dates).IsNotNull();
-        await Assert.That(dates!).Contains($"{today:yyyy-MM-dd}");
-        await Assert.That(dates!).Contains($"{pastDate:yyyy-MM-dd}");
-        await Assert.That(dates!).DoesNotContain($"{futureDate:yyyy-MM-dd}");
+        var items = await response.Content.ReadFromJsonAsync<PuzzleDateEntry[]>();
+        await Assert.That(items).IsNotNull();
+        var dates = items!.Select(i => i.Date).ToArray();
+        await Assert.That(dates).Contains($"{today:yyyy-MM-dd}");
+        await Assert.That(dates).Contains($"{pastDate:yyyy-MM-dd}");
+        await Assert.That(dates).DoesNotContain($"{futureDate:yyyy-MM-dd}");
     }
 
     // -----------------------------------------------------------------------
@@ -1058,3 +1059,5 @@ public class ApiIntegrationTests
         return new string(result, pos, result.Length - pos);
     }
 }
+
+file record PuzzleDateEntry(string Date, string[] Sizes);
