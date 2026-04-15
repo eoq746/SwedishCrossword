@@ -122,15 +122,12 @@ function formatHintBadge(letters, words) {
     return `<span class="hint-badge" title="${tooltip}">💡</span>`;
 }
 
-// Map server-provided difficulty label to CSS class
-function getDifficultyClass(label) {
-    if (!label) return '';
-    const l = label.toLowerCase();
-    if (l === 'svår') return 'difficulty-hard';
-    if (l === 'medel') return 'difficulty-medium';
-    if (l === 'lätt') return 'difficulty-easy';
-    return '';
-}
+// Difficulty key → CSS class
+const DIFFICULTY_CLASSES = { hard: 'difficulty-hard', medium: 'difficulty-medium', easy: 'difficulty-easy' };
+// Difficulty key → display label
+const DIFFICULTY_LABELS = { hard: 'Svår', medium: 'Medel', easy: 'Lätt' };
+function getDifficultyClass(key) { return DIFFICULTY_CLASSES[key] || ''; }
+function getDifficultyLabel(key) { return DIFFICULTY_LABELS[key] || key || ''; }
 
 // Re-entrancy guard for handleFocus to prevent focus loops
 let lastFocusedCell = null;
@@ -1294,10 +1291,11 @@ async function init() {
         document.getElementById('info-words').textContent = `${puzzleData.wordCount} ord`;
         document.getElementById('info-fill').textContent = `${puzzleData.fillPercentage}%`;
         const diffEl = document.getElementById('info-difficulty');
-        if (diffEl && puzzleData.difficulty) {
-            diffEl.textContent = puzzleData.difficulty;
-            diffEl.className = getDifficultyClass(puzzleData.difficulty);
-        }
+        // TODO: re-enable when difficulty display is ready
+        // if (diffEl && puzzleData.difficulty) {
+        //     diffEl.textContent = getDifficultyLabel(puzzleData.difficulty);
+        //     diffEl.className = getDifficultyClass(puzzleData.difficulty);
+        // }
     }
 
     document.getElementById('generation-date').textContent = currentPuzzleDate;

@@ -258,7 +258,7 @@ public class CrosswordGridTests
     public async Task GetWordsByDirection_SeparatesAcrossAndDown()
     {
         var grid = new CrosswordGrid(10, 10);
-        grid.TryPlaceWord(new Word("HEJ", "H�lsning"), 0, 0, Direction.Across);
+        grid.TryPlaceWord(new Word("HEJ", "Hälsning"), 0, 0, Direction.Across);
         grid.TryPlaceWord(new Word("HUND", "Djur"), 0, 0, Direction.Down);
 
         var (across, down) = grid.GetWordsByDirection();

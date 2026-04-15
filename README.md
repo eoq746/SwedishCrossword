@@ -17,7 +17,7 @@ A Swedish crossword puzzle generator
   - Progress tracking and timer with `localStorage` persistence
   - Hint system: reveal a single letter or an entire word via server-side validation (tracked and penalized on leaderboard)
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
-  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a CSS custom-property design-token system (75+ design tokens)
+  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a CSS custom-property design-token system (85+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
   - Shared leaderboard with medal podium for top 3, filtered by the current puzzle size
   - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
@@ -80,8 +80,8 @@ SwedishCrosswords/
 |   |   |-- index.html              # Landing page with SEO structured data
 |   |   |-- puzzle.html             # Interactive crossword player page
 |   |   |-- calendar.html           # Puzzle archive calendar
-|   |   |-- site.js                 # Game logic (~2,670 lines, 15 §-numbered sections)
-|   |   |-- site.min.css            # Responsive styles with 75+ CSS design tokens
+|   |   |-- site.js                 # Game logic (~2,990 lines, 15 §-numbered sections)
+|   |   |-- site.min.css            # Responsive styles with 85+ CSS design tokens
 |   |   |-- sw.js                   # Service worker (shell + puzzle caching)
 |   |   |-- om-oss.html             # About page
 |   |   |-- kontakt.html            # Contact page
@@ -112,7 +112,7 @@ SwedishCrosswords/
 |   +-- LeaderboardStoreTests.cs    # 46 unit tests (SQLite storage, dedup, pruning, analytics queries)
 |-- Dockerfile                      # Container build for the API
 |-- scripts/                        # Operational scripts
-|   +-- reset-data.ps1              # Clear pre-reset leaderboard history from Azure Files share
+|   +-- reset-data.ps1              # Clear stale leaderboard history and legacy puzzle files from Azure Files share
 |-- infra/                          # Azure infrastructure (Bicep)
 |   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
 +-- .github/workflows/              # GitHub Actions
@@ -262,7 +262,7 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 359 tests:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 357 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
@@ -362,7 +362,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
 - **Analytics**: `LeaderboardStore` exposes aggregate queries (summary, daily breakdown, top players) consumed by the analytics endpoints
-- **Frontend Organization**: `site.js` (~2,670 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
+- **Frontend Organization**: `site.js` (~2,990 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License

@@ -302,7 +302,7 @@ public class PrintService
 
         if (across.Count > 0)
         {
-            sb.AppendLine("V≈GRƒTT:");
+            sb.AppendLine("V√ÖGR√ÑTT:");
             foreach (var item in across.OrderBy(x => GetNumber(x)))
             {
                 var number = GetNumber(item);
@@ -321,7 +321,7 @@ public class PrintService
         if (down.Count > 0)
         {
             if (across.Count > 0) sb.AppendLine();
-            sb.AppendLine("LODRƒTT:");
+            sb.AppendLine("LODR√ÑTT:");
             foreach (var item in down.OrderBy(x => GetNumber(x)))
             {
                 var number = GetNumber(item);
@@ -578,13 +578,14 @@ public class PrintService
     }
 
     /// <summary>
-    /// Computes a difficulty label for the puzzle based on grid size, fill percentage,
-    /// average word length and clue count.
+    /// Computes a difficulty key for the puzzle based on grid size, fill percentage,
+    /// average word length and clue count. Returns a locale-agnostic key
+    /// ("hard", "medium", "easy") that the frontend maps to display text.
     /// </summary>
     private static string ComputeDifficulty(CrosswordPuzzle puzzle, List<object> across, List<object> down)
     {
         var allClues = across.Concat(down).ToList();
-        if (allClues.Count == 0) return "Medel";
+        if (allClues.Count == 0) return "medium";
 
         var stats = puzzle.Statistics;
         int totalCells = stats.TotalCells;
@@ -604,7 +605,7 @@ public class PrintService
         score += fill <= 50 ? 3 : fill <= 65 ? 2 : 1;                  // lower fill = fewer intersections = harder
         score += allClues.Count >= 30 ? 1 : allClues.Count >= 20 ? 2 : 3; // fewer clues = harder
 
-        return score >= 10 ? "SvÂr" : score >= 7 ? "Medel" : "L‰tt";
+        return score >= 10 ? "hard" : score >= 7 ? "medium" : "easy";
     }
 
     private static string CenterText(string text, int width)
@@ -730,7 +731,7 @@ public class PrintService
         if (across.Count > 0)
         {
             html.AppendLine("        <div class='clue-section'>");
-            html.AppendLine("            <h3>VÂgr‰tt:</h3>");
+            html.AppendLine("            <h3>V√•gr√§tt:</h3>");
             foreach (var item in across.OrderBy(x => GetNumber(x)))
             {
                 var number = GetNumber(item);
@@ -743,7 +744,7 @@ public class PrintService
         if (down.Count > 0)
         {
             html.AppendLine("        <div class='clue-section'>");
-            html.AppendLine("            <h3>Lodr‰tt:</h3>");
+            html.AppendLine("            <h3>Lodr√§tt:</h3>");
             foreach (var item in down.OrderBy(x => GetNumber(x)))
             {
                 var number = GetNumber(item);
@@ -885,7 +886,7 @@ public class PrintService
                 _clueGenerator.AdjustClueForDifficulty(word, options.TargetDifficulty ?? word.Difficulty) : 
                 word.Clue,
             AccidentalWord accWord => $"{accWord.ClueFromDictionary}", 
-            _ => "Ok‰nd ledtrÂd"
+            _ => "Ok√§nd ledtr√•d"
         };
     }
     
