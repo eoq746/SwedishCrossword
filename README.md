@@ -32,6 +32,7 @@ A Swedish crossword puzzle generator
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
+- **Analytics Dashboard**: Server-side analytics endpoints providing aggregate summary stats, daily breakdowns, and top player rankings from historical leaderboard data
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
 ## Project Structure
@@ -65,16 +66,21 @@ SwedishCrosswords/
 |           |-- GenerationHelpers.cs # Shared utility functions
 |           +-- GenerationModels.cs # Internal generation models
 |-- SwedishCrossword.Api/           # ASP.NET Core Minimal API
-|   |-- Program.cs                  # API entry point (puzzle, score, leaderboard, check, hint endpoints)
+|   |-- Program.cs                  # API entry point (service registration, middleware, endpoint mapping)
+|   |-- Endpoints/                  # Endpoint route definitions
+|   |   |-- PuzzleEndpoints.cs      # Puzzle CRUD, check, hint, and dates endpoints
+|   |   |-- LeaderboardEndpoints.cs # Score submission, leaderboard, and history endpoints
+|   |   |-- StatsEndpoints.cs       # Dictionary statistics endpoint
+|   |   +-- AnalyticsEndpoints.cs   # Analytics summary, daily breakdown, and top players
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
 |   |-- SubmissionTokenService.cs   # HMAC-signed token generation/validation, answer stripping, server-side answer reading
-|   |-- LeaderboardStore.cs         # File-based leaderboard storage with history
-|   |-- Models.cs                   # Request/response records
+|   |-- LeaderboardStore.cs         # SQLite-based leaderboard storage with history and analytics
+|   |-- Models.cs                   # Request/response records (including analytics models)
 |   |-- wwwroot/                    # Frontend (served by the API)
 |   |   |-- index.html              # Landing page with SEO structured data
 |   |   |-- puzzle.html             # Interactive crossword player page
 |   |   |-- calendar.html           # Puzzle archive calendar
-|   |   |-- site.js                 # Game logic (~2,750 lines, 15 §-numbered sections)
+|   |   |-- site.js                 # Game logic (~2,670 lines, 15 §-numbered sections)
 |   |   |-- site.min.css            # Responsive styles with 75+ CSS design tokens
 |   |   |-- sw.js                   # Service worker (shell + puzzle caching)
 |   |   |-- om-oss.html             # About page
@@ -101,9 +107,12 @@ SwedishCrosswords/
 |   +-- PatternClueGenerator.cs     # Generate clues using morphological patterns
 |-- SwedishCrossword.Tests/         # TUnit test project (core domain tests)
 |-- SwedishCrossword.Api.Tests/     # API integration + unit tests
-|   |-- ApiIntegrationTests.cs      # 68 integration tests (endpoints, leaderboard, check/hint)
-|   +-- SubmissionTokenServiceTests.cs # 15 unit tests (token generation, validation, answer stripping)
+|   |-- ApiIntegrationTests.cs      # 58 integration tests (endpoints, leaderboard, analytics, check/hint)
+|   |-- SubmissionTokenServiceTests.cs # 16 unit tests (token generation, validation, answer stripping)
+|   +-- LeaderboardStoreTests.cs    # 46 unit tests (SQLite storage, dedup, pruning, analytics queries)
 |-- Dockerfile                      # Container build for the API
+|-- scripts/                        # Operational scripts
+|   +-- reset-data.ps1              # Clear pre-reset leaderboard history from Azure Files share
 |-- infra/                          # Azure infrastructure (Bicep)
 |   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
 +-- .github/workflows/              # GitHub Actions
@@ -143,6 +152,9 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | GET | `/api/leaderboard` | Current leaderboard |
 | POST | `/api/leaderboard/history` | Submit a historical score |
 | GET | `/api/leaderboard/history?days=30` | Get historical scores (up to 90 days) |
+| GET | `/api/analytics/summary` | Aggregate analytics: total completions, unique players, avg/best time, hint rates |
+| GET | `/api/analytics/daily?days=30` | Per-day analytics breakdown (completions, players, times) for the last N days |
+| GET | `/api/analytics/players?limit=10` | Top players ranked by games played with avg/best time |
 | GET | `/api/health` | Health check |
 
 ### Running with Docker
@@ -250,7 +262,7 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 307 tests:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 359 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
@@ -262,8 +274,9 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - SafeJsonEncoder serialization tests
 - CrosswordGenerationOptions preset and computed-property tests
 - GenerationHelpers utility method tests
-- API integration tests (endpoint validation, leaderboard, score submission, puzzle check/hint, health checks)
+- API integration tests (endpoint validation, leaderboard, analytics, score submission, puzzle check/hint, health checks)
 - SubmissionTokenService unit tests (token generation, validation, access checks, answer stripping, expiry)
+- LeaderboardStore unit tests (SQLite storage, deduplication, pruning, analytics aggregation, JSON migration)
 
 ## Algorithm Highlights
 
@@ -332,7 +345,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: Built-in file-based store (`LeaderboardStore.cs`), configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, and historical archival
+- **Leaderboard**: SQLite-based store (`LeaderboardStore.cs`) using WAL mode, configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, historical archival, and automatic migration from legacy JSON files on startup
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
 - **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
@@ -347,7 +360,9 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **OpenAPI**: Available at `/openapi` in development mode
 - **PWA**: Service worker (`sw.js`) with shell caching (cache-first with background update) and puzzle API caching (network-first with offline fallback)
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
-- **Frontend Organization**: `site.js` (~2,750 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
+- **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
+- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary, daily breakdown, top players) consumed by the analytics endpoints
+- **Frontend Organization**: `site.js` (~2,670 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License
@@ -361,7 +376,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 ### Areas for Improvement
 - Themed puzzle generation
 - Mobile app version (native)
-- Analytics / Core Web Vitals tracking
+- Core Web Vitals tracking
 - Frontend module splitting (ES modules with bundler)
 - Client-side unit tests
 - Static asset fingerprinting / cache-busting

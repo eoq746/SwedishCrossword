@@ -12,6 +12,7 @@ sealed class PuzzleWarmupService : BackgroundService
     private readonly PrintService _printService;
     private readonly string _puzzlePath;
     private readonly ILogger<PuzzleWarmupService> _logger;
+    private readonly TimeProvider _timeProvider;
 
     /// <summary>
     /// Puzzle sizes to generate for each day. Add new entries here to extend
@@ -32,11 +33,13 @@ sealed class PuzzleWarmupService : BackgroundService
         CrosswordGenerator generator,
         PrintService printService,
         IConfiguration config,
-        ILogger<PuzzleWarmupService> logger)
+        ILogger<PuzzleWarmupService> logger,
+        TimeProvider timeProvider)
     {
         _generator = generator;
         _printService = printService;
         _logger = logger;
+        _timeProvider = timeProvider;
 
         var path = config["Storage:PuzzlePath"];
         _puzzlePath = string.IsNullOrWhiteSpace(path)
@@ -47,13 +50,13 @@ sealed class PuzzleWarmupService : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         // Generate today's puzzle and the next 7 days immediately on startup
-        await EnsurePuzzlesForRange(DateOnly.FromDateTime(DateTime.UtcNow), DaysAhead, stoppingToken);
+        await EnsurePuzzlesForRange(DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime), DaysAhead, stoppingToken);
 
         // Then check every hour (catches the date rollover at midnight UTC)
         using var timer = new PeriodicTimer(TimeSpan.FromHours(1));
         while (await timer.WaitForNextTickAsync(stoppingToken))
         {
-            await EnsurePuzzlesForRange(DateOnly.FromDateTime(DateTime.UtcNow), DaysAhead, stoppingToken);
+            await EnsurePuzzlesForRange(DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime), DaysAhead, stoppingToken);
         }
     }
 

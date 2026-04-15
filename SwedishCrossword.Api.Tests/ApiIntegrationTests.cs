@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.DependencyInjection;
 using TUnit.Assertions;
 using TUnit.Assertions.Extensions;
@@ -38,6 +39,7 @@ public class ApiIntegrationTests
     {
         _client?.Dispose();
         _factory?.Dispose();
+        SqliteConnection.ClearAllPools();
 
         if (Directory.Exists(_tempPuzzlePath))
             Directory.Delete(_tempPuzzlePath, true);
@@ -158,7 +160,76 @@ public class ApiIntegrationTests
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
-        await Assert.That(content).IsEqualTo("{}");
+        await Assert.That(content).IsEqualTo("{\"scores\":{}}");
+    }
+
+    [Test]
+    public async Task LegacyJsonFiles_MigratedToSqliteOnStartup()
+    {
+        // Dispose the default factory — we need to seed files BEFORE the app starts
+        _client.Dispose();
+        _factory.Dispose();
+        SqliteConnection.ClearAllPools();
+
+        // Create a fresh leaderboard directory and seed legacy JSON files
+        var lbPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-migrate-" + Guid.NewGuid());
+        Directory.CreateDirectory(lbPath);
+
+        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var leaderboardKey = $"{today}-standard";
+
+        // Seed current.json (scores)
+        var currentJson = """{"scores":{"LEADERBOARD_KEY":[{"name":"Anna","time":45.0,"timestamp":1705320000000,"puzzleHash":"abc","hintsUsed":0,"wordHintsUsed":0}]}}""".Replace("LEADERBOARD_KEY", leaderboardKey);
+        await File.WriteAllTextAsync(Path.Combine(lbPath, "current.json"), currentJson);
+
+        // Seed history/{date}.json
+        var historyDir = Path.Combine(lbPath, "history");
+        Directory.CreateDirectory(historyDir);
+        var historyJson = """[{"name":"Erik","time":90.5,"timestamp":1705320000000,"puzzleHash":"def","puzzleSize":"standard","hintsUsed":1,"wordHintsUsed":0}]""";
+        await File.WriteAllTextAsync(Path.Combine(historyDir, $"{today}.json"), historyJson);
+
+        // Start the app — migration should run automatically
+        _factory = new WebApplicationFactory<Program>()
+            .WithWebHostBuilder(builder =>
+            {
+                builder.UseSetting("Storage:PuzzlePath", _tempPuzzlePath);
+                builder.UseSetting("Storage:LeaderboardPath", lbPath);
+            });
+        _client = _factory.CreateClient();
+
+        // Verify scores migrated
+        var lbResponse = await _client.GetAsync("/api/leaderboard");
+        var lbContent = await lbResponse.Content.ReadAsStringAsync();
+        await Assert.That(lbContent).Contains("Anna");
+        await Assert.That(lbContent).Contains("45");
+
+        // Verify history migrated
+        var histResponse = await _client.GetAsync("/api/leaderboard/history?days=1");
+        var histJson = await histResponse.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(histJson.TryGetProperty(today, out var entries)).IsTrue();
+        await Assert.That(entries.GetArrayLength()).IsEqualTo(1);
+        await Assert.That(entries[0].GetProperty("name").GetString()).IsEqualTo("Erik");
+
+        // Verify old files were renamed
+        await Assert.That(File.Exists(Path.Combine(lbPath, "current.json"))).IsFalse();
+        await Assert.That(File.Exists(Path.Combine(lbPath, "current.json.migrated"))).IsTrue();
+        await Assert.That(Directory.Exists(Path.Combine(lbPath, "history"))).IsFalse();
+        await Assert.That(Directory.Exists(Path.Combine(lbPath, "history.migrated"))).IsTrue();
+
+        // Cleanup the extra directory
+        _client.Dispose();
+        _factory.Dispose();
+        SqliteConnection.ClearAllPools();
+        if (Directory.Exists(lbPath)) Directory.Delete(lbPath, true);
+
+        // Re-create default factory so [After(Test)] cleanup doesn't fail
+        _factory = new WebApplicationFactory<Program>()
+            .WithWebHostBuilder(builder =>
+            {
+                builder.UseSetting("Storage:PuzzlePath", _tempPuzzlePath);
+                builder.UseSetting("Storage:LeaderboardPath", _tempLeaderboardPath);
+            });
+        _client = _factory.CreateClient();
     }
 
     [Test]
@@ -985,6 +1056,62 @@ public class ApiIntegrationTests
         });
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
+    }
+
+    // -----------------------------------------------------------------------
+    // Analytics endpoints
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task AnalyticsSummary_ReturnsOk_WithExpectedShape()
+    {
+        var response = await _client.GetAsync("/api/analytics/summary");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.TryGetProperty("totalCompletions", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("uniquePlayers", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("daysWithData", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("averageTime", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("bestTime", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("hintRate", out _)).IsTrue();
+        await Assert.That(data.TryGetProperty("wordHintRate", out _)).IsTrue();
+    }
+
+    [Test]
+    public async Task AnalyticsDaily_DefaultDays_ReturnsOk()
+    {
+        var response = await _client.GetAsync("/api/analytics/daily");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.ValueKind).IsEqualTo(JsonValueKind.Array);
+    }
+
+    [Test]
+    public async Task AnalyticsDaily_WithDaysParameter_ReturnsOk()
+    {
+        var response = await _client.GetAsync("/api/analytics/daily?days=7");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
+    [Test]
+    public async Task AnalyticsPlayers_DefaultLimit_ReturnsOk()
+    {
+        var response = await _client.GetAsync("/api/analytics/players");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(data.ValueKind).IsEqualTo(JsonValueKind.Array);
+    }
+
+    [Test]
+    public async Task AnalyticsPlayers_WithLimitParameter_ReturnsOk()
+    {
+        var response = await _client.GetAsync("/api/analytics/players?limit=5");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
 
     // -----------------------------------------------------------------------

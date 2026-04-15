@@ -1,7 +1,8 @@
 // Service Worker for Svenskt Korsord
 // Caches the app shell for offline access and puzzle data for offline play.
+// __BUILD_VERSION__ is replaced at Docker build time with the git commit SHA.
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = '__BUILD_VERSION__';
 const SHELL_CACHE = `shell-${CACHE_VERSION}`;
 const PUZZLE_CACHE = `puzzle-${CACHE_VERSION}`;
 

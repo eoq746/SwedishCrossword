@@ -73,6 +73,7 @@ jobs:
             --registry ${{ steps.infra.outputs.acr_name }} \
             --image $APP_NAME:${{ github.sha }} \
             --image $APP_NAME:latest \
+            --build-arg BUILD_VERSION=${{ github.sha }} \
             .
 
       # ------------------------------------------------------------------
