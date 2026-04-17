@@ -1,0 +1,401 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "bicep",
+      "version": "0.42.1.51946",
+      "templateHash": "1129471930399930617"
+    }
+  },
+  "parameters": {
+    "appName": {
+      "type": "string",
+      "defaultValue": "svensktkorsord",
+      "minLength": 3,
+      "maxLength": 50,
+      "metadata": {
+        "description": "Base name used to derive all resource names"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Azure region for all resources"
+      }
+    },
+    "imageTag": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Container image tag — set by CI/CD, defaults to empty for first deploy"
+      }
+    },
+    "submissionTokenSecret": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "HMAC secret for submission token signing. Pass via CI/CD or manual deploy."
+      }
+    },
+    "googleClientId": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Google OAuth client ID for social login."
+      }
+    },
+    "googleClientSecret": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Google OAuth client secret for social login."
+      }
+    },
+    "microsoftClientId": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Microsoft OAuth client ID for social login."
+      }
+    },
+    "microsoftClientSecret": {
+      "type": "securestring",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Microsoft OAuth client secret for social login."
+      }
+    },
+    "deployDatabase": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "Deploy Azure SQL resources. Set to true when SQL is needed."
+      }
+    },
+    "createRoleAssignment": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator)."
+      }
+    }
+  },
+  "variables": {
+    "sqlServerName": "[format('{0}-sql-{1}', parameters('appName'), variables('suffix'))]",
+    "sqlDbName": "[format('{0}-db', parameters('appName'))]",
+    "suffix": "[uniqueString(resourceGroup().id, parameters('appName'))]",
+    "acrName": "[toLower(replace(format('{0}{1}', parameters('appName'), variables('suffix')), '-', ''))]",
+    "storageAccountName": "[toLower(take(replace(format('{0}st{1}', parameters('appName'), variables('suffix')), '-', ''), 24))]",
+    "acrNameFinal": "[if(less(length(variables('acrName')), 5), format('{0}acr', variables('acrName')), variables('acrName'))]",
+    "storageAccountNameFinal": "[if(less(length(variables('storageAccountName')), 3), format('{0}st', variables('storageAccountName')), variables('storageAccountName'))]",
+    "acrPullRoleId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '7f951dda-4ed3-4680-a7ca-43fe172d538d')]",
+    "hasImage": "[not(equals(parameters('imageTag'), ''))]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.ContainerRegistry/registries",
+      "apiVersion": "2023-11-01-preview",
+      "name": "[take(variables('acrNameFinal'), 50)]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "Basic"
+      },
+      "properties": {
+        "adminUserEnabled": false,
+        "anonymousPullEnabled": false
+      }
+    },
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "apiVersion": "2023-01-31",
+      "name": "[format('{0}-identity', parameters('appName'))]",
+      "location": "[parameters('location')]"
+    },
+    {
+      "condition": "[parameters('createRoleAssignment')]",
+      "type": "Microsoft.Authorization/roleAssignments",
+      "apiVersion": "2022-04-01",
+      "scope": "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
+      "name": "[guid(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), variables('acrPullRoleId'))]",
+      "properties": {
+        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').principalId]",
+        "principalType": "ServicePrincipal",
+        "roleDefinitionId": "[variables('acrPullRoleId')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+      ]
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "apiVersion": "2023-09-01",
+      "name": "[format('{0}-logs', parameters('appName'))]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 30
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2023-05-01",
+      "name": "[variables('storageAccountNameFinal')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "StorageV2",
+      "properties": {
+        "minimumTlsVersion": "TLS1_2",
+        "supportsHttpsTrafficOnly": true,
+        "allowBlobPublicAccess": false
+      }
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts/fileServices",
+      "apiVersion": "2023-05-01",
+      "name": "[format('{0}/{1}', variables('storageAccountNameFinal'), 'default')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountNameFinal'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.Storage/storageAccounts/fileServices/shares",
+      "apiVersion": "2023-05-01",
+      "name": "[format('{0}/{1}/{2}', variables('storageAccountNameFinal'), 'default', 'crossword-data')]",
+      "properties": {
+        "shareQuota": 1
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts/fileServices', variables('storageAccountNameFinal'), 'default')]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[take(variables('sqlServerName'), 63)]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "minimalTlsVersion": "1.2",
+        "publicNetworkAccess": "Enabled",
+        "administrators": {
+          "administratorType": "ActiveDirectory",
+          "login": "[format('{0}-identity', parameters('appName'))]",
+          "sid": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').principalId]",
+          "tenantId": "[tenant().tenantId]",
+          "principalType": "Application"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers/azureADOnlyAuthentications",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'Default')]",
+      "properties": {
+        "azureADOnlyAuthentication": true
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers/firewallRules",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'AllowAllAzureIps')]",
+      "properties": {
+        "startIpAddress": "0.0.0.0",
+        "endIpAddress": "0.0.0.0"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers/databases",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), variables('sqlDbName'))]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "GP_S_Gen5_2",
+        "tier": "GeneralPurpose"
+      },
+      "properties": {
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": 34359738368,
+        "autoPauseDelay": 60,
+        "minCapacity": "[json('0.5')]",
+        "useFreeLimit": true,
+        "freeLimitExhaustionBehavior": "AutoPause"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
+      "type": "Microsoft.App/managedEnvironments",
+      "apiVersion": "2024-03-01",
+      "name": "[format('{0}-env', parameters('appName'))]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "appLogsConfiguration": {
+          "destination": "log-analytics",
+          "logAnalyticsConfiguration": {
+            "customerId": "[reference(resourceId('Microsoft.OperationalInsights/workspaces', format('{0}-logs', parameters('appName'))), '2023-09-01').customerId]",
+            "sharedKey": "[listKeys(resourceId('Microsoft.OperationalInsights/workspaces', format('{0}-logs', parameters('appName'))), '2023-09-01').primarySharedKey]"
+          }
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', format('{0}-logs', parameters('appName')))]"
+      ]
+    },
+    {
+      "type": "Microsoft.App/managedEnvironments/storages",
+      "apiVersion": "2024-03-01",
+      "name": "[format('{0}/{1}', format('{0}-env', parameters('appName')), 'crossworddata')]",
+      "properties": {
+        "azureFile": {
+          "accountName": "[variables('storageAccountNameFinal')]",
+          "accountKey": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountNameFinal')), '2023-05-01').keys[0].value]",
+          "shareName": "crossword-data",
+          "accessMode": "ReadWrite"
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]",
+        "[resourceId('Microsoft.Storage/storageAccounts/fileServices/shares', variables('storageAccountNameFinal'), 'default', 'crossword-data')]",
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountNameFinal'))]"
+      ]
+    },
+    {
+      "type": "Microsoft.App/containerApps",
+      "apiVersion": "2024-03-01",
+      "name": "[parameters('appName')]",
+      "location": "[parameters('location')]",
+      "identity": {
+        "type": "UserAssigned",
+        "userAssignedIdentities": {
+          "[format('{0}', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))))]": {}
+        }
+      },
+      "properties": {
+        "managedEnvironmentId": "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]",
+        "configuration": {
+          "ingress": {
+            "external": true,
+            "targetPort": 8080,
+            "transport": "auto",
+            "allowInsecure": false
+          },
+          "secrets": "[union(if(not(equals(parameters('submissionTokenSecret'), '')), createArray(createObject('name', 'submissiontoken-secret', 'value', parameters('submissionTokenSecret'))), createArray()), if(not(equals(parameters('googleClientId'), '')), createArray(createObject('name', 'google-client-id', 'value', parameters('googleClientId')), createObject('name', 'google-client-secret', 'value', parameters('googleClientSecret'))), createArray()), if(not(equals(parameters('microsoftClientId'), '')), createArray(createObject('name', 'microsoft-client-id', 'value', parameters('microsoftClientId')), createObject('name', 'microsoft-client-secret', 'value', parameters('microsoftClientSecret'))), createArray()))]",
+          "registries": [
+            {
+              "server": "[reference(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), '2023-11-01-preview').loginServer]",
+              "identity": "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+            }
+          ]
+        },
+        "template": {
+          "containers": [
+            {
+              "name": "api",
+              "image": "[if(variables('hasImage'), format('{0}/{1}:{2}', reference(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), '2023-11-01-preview').loginServer, parameters('appName'), parameters('imageTag')), 'mcr.microsoft.com/k8se/quickstart:latest')]",
+              "resources": {
+                "cpu": "[json('0.5')]",
+                "memory": "1Gi"
+              },
+              "env": "[union(createArray(createObject('name', 'Storage__PuzzlePath', 'value', '/data/puzzles'), createObject('name', 'Storage__LeaderboardPath', 'value', '/data/leaderboard'), createObject('name', 'SWEDISH_CROSSWORD_CACHE_PATH', 'value', '/data/cache'), createObject('name', 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', 'value', 'true')), if(not(equals(if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').clientId), ''), '')), createArray(createObject('name', 'ConnectionStrings__Leaderboard', 'value', if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').clientId), ''))), createArray()), if(not(equals(parameters('submissionTokenSecret'), '')), createArray(createObject('name', 'SubmissionToken__Secret', 'secretRef', 'submissiontoken-secret')), createArray()), if(not(equals(parameters('googleClientId'), '')), createArray(createObject('name', 'Authentication__Google__ClientId', 'secretRef', 'google-client-id'), createObject('name', 'Authentication__Google__ClientSecret', 'secretRef', 'google-client-secret')), createArray()), if(not(equals(parameters('microsoftClientId'), '')), createArray(createObject('name', 'Authentication__Microsoft__ClientId', 'secretRef', 'microsoft-client-id'), createObject('name', 'Authentication__Microsoft__ClientSecret', 'secretRef', 'microsoft-client-secret')), createArray()))]",
+              "volumeMounts": [
+                {
+                  "volumeName": "data",
+                  "mountPath": "/data"
+                }
+              ]
+            }
+          ],
+          "scale": {
+            "minReplicas": 0,
+            "maxReplicas": 1
+          },
+          "volumes": [
+            {
+              "name": "data",
+              "storageType": "AzureFile",
+              "storageName": "crossworddata"
+            }
+          ]
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
+        "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]",
+        "[resourceId('Microsoft.App/managedEnvironments/storages', format('{0}-env', parameters('appName')), 'crossworddata')]",
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]",
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    }
+  ],
+  "outputs": {
+    "acrLoginServer": {
+      "type": "string",
+      "metadata": {
+        "description": "ACR login server (e.g. myacr.azurecr.io)"
+      },
+      "value": "[reference(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), '2023-11-01-preview').loginServer]"
+    },
+    "acrName": {
+      "type": "string",
+      "metadata": {
+        "description": "ACR resource name"
+      },
+      "value": "[take(variables('acrNameFinal'), 50)]"
+    },
+    "appUrl": {
+      "type": "string",
+      "metadata": {
+        "description": "Container App FQDN"
+      },
+      "value": "[format('https://{0}', reference(resourceId('Microsoft.App/containerApps', parameters('appName')), '2024-03-01').configuration.ingress.fqdn)]"
+    },
+    "appFqdn": {
+      "type": "string",
+      "metadata": {
+        "description": "Container App auto-generated FQDN (for CNAME records)"
+      },
+      "value": "[reference(resourceId('Microsoft.App/containerApps', parameters('appName')), '2024-03-01').configuration.ingress.fqdn]"
+    },
+    "customDomainVerificationId": {
+      "type": "string",
+      "metadata": {
+        "description": "Domain verification ID — use as TXT record value for asuid.{subdomain}"
+      },
+      "value": "[reference(resourceId('Microsoft.App/containerApps', parameters('appName')), '2024-03-01').customDomainVerificationId]"
+    },
+    "environmentName": {
+      "type": "string",
+      "metadata": {
+        "description": "Container Apps Environment name"
+      },
+      "value": "[format('{0}-env', parameters('appName'))]"
+    },
+    "resourceGroup": {
+      "type": "string",
+      "metadata": {
+        "description": "Resource group name (for CI/CD reference)"
+      },
+      "value": "[resourceGroup().name]"
+    }
+  }
+}

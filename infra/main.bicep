@@ -158,9 +158,18 @@ resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDataba
       login: identity.name
       sid: identity.properties.principalId
       tenantId: tenant().tenantId
-      azureADOnlyAuthentication: true
       principalType: 'Application'
     }
+  }
+}
+
+// Enable Entra-only authentication as a separate child resource so that the
+// server and its Entra admin are fully provisioned before this setting is applied.
+resource sqlAadOnlyAuth 'Microsoft.Sql/servers/azureADOnlyAuthentications@2023-08-01-preview' = if (deployDatabase) {
+  parent: sqlServer
+  name: 'Default'
+  properties: {
+    azureADOnlyAuthentication: true
   }
 }
 
@@ -192,7 +201,7 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   }
 }
 
-var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
+var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer!.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
 
 // ---------------------------------------------------------------------------
 // Container Apps Environment
