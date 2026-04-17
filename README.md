@@ -193,8 +193,9 @@ The `infra/main.bicep` template provisions everything needed:
 |----------|--------|
 | Azure Container Registry | Hosts the Docker image (Basic SKU) |
 | Container Apps Environment | Serverless container host |
-| Storage Account + Azure Files | Persistent `/data` volume for puzzles & leaderboard |
+| Storage Account + Azure Files | Persistent `/data` volume for puzzles & leaderboard (SMB mount — SQLite uses DELETE journal mode; WAL is not supported on SMB) |
 | Log Analytics Workspace | Container logs and monitoring |
+| Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull (no admin credentials) |
 
 **One-time setup (run manually with your own Azure CLI identity — creates the role assignment that CI/CD skips):**

@@ -2,8 +2,13 @@
 // Azure Container Apps infrastructure for SwedishCrossword API
 // ---------------------------------------------------------------------------
 // Deploys: ACR, Managed Identity, Log Analytics, Container Apps Environment,
-//          Storage Account + Azure Files share, and the Container App with
-//          a volume mount for persistent puzzle/leaderboard data.
+//          Storage Account + Azure Files share (SMB), and the Container App
+//          with a volume mount for persistent puzzle/leaderboard data.
+//
+// NOTE:   Azure Files SMB does not support mmap, so SQLite WAL mode is not
+//         available. The app falls back to DELETE journal mode automatically.
+//         For WAL support, switch to Azure Files NFS (requires Premium tier
+//         and VNet integration).
 //
 // Usage (first time):
 //   az group create -n rg-svensktkorsord -l swedencentral

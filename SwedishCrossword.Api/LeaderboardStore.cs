@@ -5,6 +5,12 @@ using Microsoft.Data.Sqlite;
 
 namespace SwedishCrossword.Api;
 
+/// <summary>
+/// SQLite-based leaderboard, history, user alias, and friends storage.
+/// On Azure Files SMB the app falls back to DELETE journal mode automatically
+/// because WAL requires mmap support (not available on SMB). For WAL support,
+/// switch to Azure Files NFS (Premium tier + VNet).
+/// </summary>
 sealed class LeaderboardStore : IDisposable
 {
     public static readonly Regex DatePattern = new(@"^\d{4}-\d{2}-\d{2}$", RegexOptions.Compiled);
@@ -671,9 +677,27 @@ sealed class LeaderboardStore : IDisposable
         using var conn = new SqliteConnection(_connectionString);
         conn.Open();
 
+        // Try WAL mode first (better concurrency), fall back to DELETE mode
+        // if it fails — Azure Files SMB doesn't support the shared-memory
+        // file that WAL requires.
+        using (var walPragma = conn.CreateCommand())
+        {
+            walPragma.CommandText = "PRAGMA journal_mode = WAL;";
+            try
+            {
+                walPragma.ExecuteNonQuery();
+            }
+            catch (SqliteException ex)
+            {
+                _logger.LogWarning(ex, "WAL mode not supported on this storage, using DELETE journal mode");
+                using var deletePragma = conn.CreateCommand();
+                deletePragma.CommandText = "PRAGMA journal_mode = DELETE;";
+                deletePragma.ExecuteNonQuery();
+            }
+        }
+
         using var pragma = conn.CreateCommand();
         pragma.CommandText = """
-            PRAGMA journal_mode = WAL;
             PRAGMA busy_timeout = 30000;
             PRAGMA synchronous = NORMAL;
             """;
