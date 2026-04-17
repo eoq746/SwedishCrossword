@@ -1310,6 +1310,7 @@ async function submitScore() {
 
     // If signed-in user typed a different name than their current alias, ask to update
     if (authUser && authUser.alias && username !== authUser.alias) {
+        closeModal(); // Close username modal first so confirm modal is visible
         showConfirmModal(
             'Byt alias?',
             `Vill du ändra ditt alias till "${username}"? Det kommer användas på alla framtida topplistor.`,
@@ -1328,6 +1329,7 @@ async function submitScore() {
 
     // Signed-in user without an alias — offer to save as alias
     if (authUser && !authUser.alias && username !== 'Anonym') {
+        closeModal(); // Close username modal first so confirm modal is visible
         showConfirmModal(
             'Spara alias?',
             `Vill du använda "${username}" som ditt alias? Det visas på topplistor med en ✓.`,
