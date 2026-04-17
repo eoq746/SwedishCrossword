@@ -45,11 +45,17 @@ sealed class LeaderboardStore : IDisposable
         Directory.CreateDirectory(_dataDir);
 
         var dbPath = Path.Combine(_dataDir, "leaderboard.db");
+
+        // Clear any stale connection pool state from a previous container instance
+        // before building the new connection string.
+        SqliteConnection.ClearAllPools();
+
         _connectionString = new SqliteConnectionStringBuilder
         {
             DataSource = dbPath,
             Mode = SqliteOpenMode.ReadWriteCreate,
-            Cache = SqliteCacheMode.Shared
+            Cache = SqliteCacheMode.Private,
+            Pooling = false
         }.ToString();
 
         InitialiseDatabase();
