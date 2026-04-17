@@ -48,8 +48,15 @@ param microsoftClientId string = ''
 @description('Microsoft OAuth client secret for social login.')
 param microsoftClientSecret string = ''
 
+@secure()
+@description('SQL Server admin password. Generate with: openssl rand -base64 32')
+param sqlAdminPassword string = ''
+
 @description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
 param createRoleAssignment bool = true
+
+var sqlServerName = '${appName}-sql-${suffix}'
+var sqlDbName = '${appName}-db'
 
 // Deterministic suffix for globally unique names
 var suffix = uniqueString(resourceGroup().id, appName)
@@ -138,6 +145,50 @@ resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2023-0
 }
 
 // ---------------------------------------------------------------------------
+// Azure SQL Server + Free tier database
+// ---------------------------------------------------------------------------
+resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (sqlAdminPassword != '') {
+  name: take(sqlServerName, 63)
+  location: location
+  properties: {
+    administratorLogin: 'sqladmin'
+    administratorLoginPassword: sqlAdminPassword
+    minimalTlsVersion: '1.2'
+    publicNetworkAccess: 'Enabled'
+  }
+}
+
+// Allow Azure services (Container Apps) to connect
+resource sqlFirewallAllowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (sqlAdminPassword != '') {
+  parent: sqlServer
+  name: 'AllowAllAzureIps'
+  properties: {
+    startIpAddress: '0.0.0.0'
+    endIpAddress: '0.0.0.0'
+  }
+}
+
+resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (sqlAdminPassword != '') {
+  parent: sqlServer
+  name: sqlDbName
+  location: location
+  sku: {
+    name: 'GP_S_Gen5_2'
+    tier: 'GeneralPurpose'
+  }
+  properties: {
+    collation: 'SQL_Latin1_General_CP1_CI_AS'
+    maxSizeBytes: 34359738368 // 32 GB (free tier limit)
+    autoPauseDelay: 60 // auto-pause after 60 min inactivity
+    minCapacity: json('0.5')
+    useFreeLimit: true
+    freeLimitExhaustionBehavior: 'AutoPause'
+  }
+}
+
+var sqlConnectionString = sqlAdminPassword != '' ? 'Server=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};User ID=sqladmin;Password=${sqlAdminPassword};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
+
+// ---------------------------------------------------------------------------
 // Container Apps Environment
 // ---------------------------------------------------------------------------
 resource containerEnv 'Microsoft.App/managedEnvironments@2024-03-01' = {
@@ -194,6 +245,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         allowInsecure: false
       }
       secrets: union(
+        sqlConnectionString != '' ? [
+          { name: 'sql-connection-string', value: sqlConnectionString }
+        ] : [],
         submissionTokenSecret != '' ? [
           {
             name: 'submissiontoken-secret'
@@ -232,6 +286,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               { name: 'SWEDISH_CROSSWORD_CACHE_PATH', value: '/data/cache' }
               { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
             ],
+            sqlConnectionString != '' ? [
+              { name: 'ConnectionStrings__Leaderboard', secretRef: 'sql-connection-string' }
+            ] : [],
             submissionTokenSecret != '' ? [
               { name: 'SubmissionToken__Secret', secretRef: 'submissiontoken-secret' }
             ] : [],

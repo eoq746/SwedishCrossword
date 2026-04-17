@@ -193,7 +193,7 @@ The `infra/main.bicep` template provisions everything needed:
 |----------|--------|
 | Azure Container Registry | Hosts the Docker image (Basic SKU) |
 | Container Apps Environment | Serverless container host |
-| Storage Account + Azure Files | Persistent `/data` volume for puzzles & leaderboard (SMB mount — SQLite uses DELETE journal mode; WAL is not supported on SMB) |
+| Storage Account + Azure Files | Persistent `/data` volume for puzzles and data protection keys (SMB mount) |\n| Azure SQL Database (Free tier) | Leaderboard, history, user aliases, and friends storage (serverless, auto-pauses after 60 min) |
 | Log Analytics Workspace | Container logs and monitoring |
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull (no admin credentials) |
@@ -229,7 +229,7 @@ az deployment group create \
 - `AZURE_CLIENT_ID` — App registration client ID (OIDC)
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
-- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
+- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)\n- `SQL_ADMIN_PASSWORD` — Azure SQL admin password (generate with `openssl rand -base64 32`)
 
 ### Running the CLI Generator
 
