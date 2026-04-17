@@ -648,6 +648,26 @@ sealed class LeaderboardStore : IDisposable
 
     private void InitialiseDatabase()
     {
+        // Retry with back-off — during deployments the previous container revision
+        // may still hold an SMB file lock on Azure Files for several seconds.
+        const int maxRetries = 5;
+        for (var attempt = 1; ; attempt++)
+        {
+            try
+            {
+                InitialiseDatabaseCore();
+                return;
+            }
+            catch (SqliteException ex) when (attempt < maxRetries && ex.SqliteErrorCode == 5 /* SQLITE_BUSY */)
+            {
+                _logger.LogWarning(ex, "Database locked during initialisation (attempt {Attempt}/{Max}), retrying...", attempt, maxRetries);
+                Thread.Sleep(attempt * 2000);
+            }
+        }
+    }
+
+    private void InitialiseDatabaseCore()
+    {
         using var conn = new SqliteConnection(_connectionString);
         conn.Open();
 
