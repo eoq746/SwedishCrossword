@@ -29,6 +29,9 @@ A Swedish crossword puzzle generator
 - **PWA**: Service worker with shell + puzzle caching for offline play (`sw.js`)
 - **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
 - **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
+- **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim — raw provider IDs are never stored
+- **User Profiles**: Signed-in users get a profile page with customisable alias, server-synced solve statistics, and friends management
+- **Friends System**: Send/accept/decline friend requests by alias, view a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
@@ -70,6 +73,8 @@ SwedishCrosswords/
 |   |-- Endpoints/                  # Endpoint route definitions
 |   |   |-- PuzzleEndpoints.cs      # Puzzle CRUD, check, hint, and dates endpoints
 |   |   |-- LeaderboardEndpoints.cs # Score submission, leaderboard, and history endpoints
+|   |   |-- AuthEndpoints.cs        # OAuth login, logout, profile, alias management
+|   |   |-- FriendsEndpoints.cs     # Friend requests, friend list, friends leaderboard
 |   |   |-- StatsEndpoints.cs       # Dictionary statistics endpoint
 |   |   +-- AnalyticsEndpoints.cs   # Analytics summary, daily breakdown, and top players
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
@@ -80,7 +85,8 @@ SwedishCrosswords/
 |   |   |-- index.html              # Landing page with SEO structured data
 |   |   |-- puzzle.html             # Interactive crossword player page
 |   |   |-- calendar.html           # Puzzle archive calendar
-|   |   |-- site.js                 # Game logic (~2,990 lines, 15 §-numbered sections)
+|   |   |-- profile.html            # User profile (alias, stats, friends management)
+|   |   |-- site.js                 # Game logic (~3,300 lines, 15 §-numbered sections)
 |   |   |-- site.min.css            # Responsive styles with 85+ CSS design tokens
 |   |   |-- sw.js                   # Service worker (shell + puzzle caching)
 |   |   |-- om-oss.html             # About page
@@ -109,7 +115,7 @@ SwedishCrosswords/
 |-- SwedishCrossword.Api.Tests/     # API integration + unit tests
 |   |-- ApiIntegrationTests.cs      # 58 integration tests (endpoints, leaderboard, analytics, check/hint)
 |   |-- SubmissionTokenServiceTests.cs # 16 unit tests (token generation, validation, answer stripping)
-|   +-- LeaderboardStoreTests.cs    # 46 unit tests (SQLite storage, dedup, pruning, analytics queries)
+|   +-- LeaderboardStoreTests.cs    # 59 unit tests (SQLite storage, dedup, pruning, analytics, friends)
 |-- Dockerfile                      # Container build for the API
 |-- scripts/                        # Operational scripts
 |   +-- reset-data.ps1              # Clear stale leaderboard history and legacy puzzle files from Azure Files share
@@ -155,6 +161,19 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | GET | `/api/analytics/summary` | Aggregate analytics: total completions, unique players, avg/best time, hint rates |
 | GET | `/api/analytics/daily?days=30` | Per-day analytics breakdown (completions, players, times) for the last N days |
 | GET | `/api/analytics/players?limit=10` | Top players ranked by games played with avg/best time |
+| GET | `/api/auth/login/{provider}` | Initiate OAuth login (google or microsoft) |
+| GET | `/api/auth/me` | Current user profile (name, alias, avatar) |
+| POST | `/api/auth/logout` | Sign out and clear auth cookie |
+| GET | `/api/auth/my-stats` | Server-synced solve statistics for signed-in user |
+| GET | `/api/auth/alias` | Get current alias |
+| PUT | `/api/auth/alias` | Set or update alias (2–20 chars, unique) |
+| GET | `/api/friends` | List accepted friends |
+| GET | `/api/friends/requests` | Pending friend requests (incoming + outgoing) |
+| POST | `/api/friends/request` | Send friend request by alias |
+| POST | `/api/friends/accept/{id}` | Accept a friend request |
+| POST | `/api/friends/decline/{id}` | Decline a friend request |
+| DELETE | `/api/friends/{id}` | Remove a friend |
+| GET | `/api/friends/leaderboard?date=` | Friends leaderboard for a given date |
 | GET | `/api/health` | Health check |
 
 ### Running with Docker
@@ -262,7 +281,7 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 357 tests:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 372 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)
@@ -276,7 +295,7 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - GenerationHelpers utility method tests
 - API integration tests (endpoint validation, leaderboard, analytics, score submission, puzzle check/hint, health checks)
 - SubmissionTokenService unit tests (token generation, validation, access checks, answer stripping, expiry)
-- LeaderboardStore unit tests (SQLite storage, deduplication, pruning, analytics aggregation, JSON migration)
+- LeaderboardStore unit tests (SQLite storage, deduplication, pruning, analytics aggregation, JSON migration, friend requests, friends leaderboard)
 
 ## Algorithm Highlights
 
@@ -345,7 +364,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: SQLite-based store (`LeaderboardStore.cs`) using WAL mode, configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, historical archival, and automatic migration from legacy JSON files on startup
+- **Leaderboard**: SQLite-based store (`LeaderboardStore.cs`) using WAL mode, configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, historical archival, user aliases, friend requests, and automatic migration from legacy JSON files on startup
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
 - **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
@@ -353,16 +372,18 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Server-Side Answer Validation**: Puzzle JSON is stripped of answers before serving to clients; `POST /api/puzzle/check` validates submitted cell values and `POST /api/puzzle/hint` reveals requested letters, both authenticated via submission tokens
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
-- **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes and puzzle interactions (30 req/min each)
+- **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes, puzzle interactions, and friend operations (30 req/min each)
+- **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` — raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
+- **Friends**: Friend requests stored in `friend_requests` SQLite table with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction — no raw user identifiers are exposed to clients.
 - **Security Headers**: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production; Kestrel `Server` header suppressed; request body size capped at 100 KB
 - **Forwarded Headers**: Configured for Azure App Service reverse proxy (`X-Forwarded-For`, `X-Forwarded-Proto`)
 - **CORS**: Configurable via `Cors:AllowedOrigins` in appsettings
 - **OpenAPI**: Available at `/openapi` in development mode
 - **PWA**: Service worker (`sw.js`) with shell caching (cache-first with background update) and puzzle API caching (network-first with offline fallback)
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
-- **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
+- **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
 - **Analytics**: `LeaderboardStore` exposes aggregate queries (summary, daily breakdown, top players) consumed by the analytics endpoints
-- **Frontend Organization**: `site.js` (~2,990 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
+- **Frontend Organization**: `site.js` (~3,300 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License
@@ -376,6 +397,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 ### Areas for Improvement
 - Themed puzzle generation
 - Mobile app version (native)
+- Mini leagues / friend groups
 - Core Web Vitals tracking
 - Frontend module splitting (ES modules with bundler)
 - Client-side unit tests

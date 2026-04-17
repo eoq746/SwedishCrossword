@@ -26,20 +26,7 @@
     <meta name="twitter:description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar.">
     <meta name="twitter:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
 
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https:;
-        connect-src 'self';
-        font-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        form-action 'self';
-    ">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon"
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -148,6 +135,7 @@
             <nav class="puzzle-nav">
                 <a href="/puzzle.html?size=17x17" class="nav-link">🧩 Spela</a>
                 <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+                <span class="auth-btn-container"></span>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
             </nav>
             <h1>Svenskt Korsord</h1>
@@ -298,6 +286,7 @@
             <nav>
                 <a href="/puzzle.html?size=17x17">Spela</a>
                 <a href="/calendar.html">Arkiv</a>
+                <a href="/profile.html">Min profil</a>
                 <a href="om-oss.html">Om oss</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="integritetspolicy.html">Integritetspolicy</a>
@@ -314,6 +303,38 @@
         if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
     })();
     </script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
+    <script>
+    (function(){
+        function initAuth(data){
+            document.querySelectorAll('.auth-btn-container').forEach(function(c){
+                c.innerHTML='';
+                if(data && data.authenticated){
+                    var a=document.createElement('a');
+                    a.href='/profile.html';
+                    a.className='auth-user-name';
+                    a.textContent=data.name||'Inloggad';
+                    a.title='Min profil: '+a.textContent;
+                    var btn=document.createElement('button');
+                    btn.className='auth-btn auth-btn-logout';
+                    btn.textContent='Logga ut';
+                    btn.addEventListener('click',function(){fetch('/api/auth/logout',{method:'POST',credentials:'same-origin'}).then(function(){location.reload()})});
+                    c.appendChild(a);c.appendChild(btn);
+                }else{
+                    var ret=encodeURIComponent(location.pathname+location.search);
+                    var loginBtn=document.createElement('button');
+                    loginBtn.className='auth-btn';
+                    loginBtn.textContent='Logga in';
+                    var menu=document.createElement('div');
+                    menu.className='auth-login-menu';
+                    menu.innerHTML='<a href="/api/auth/login/google?returnUrl='+ret+'">Logga in med Google</a><a href="/api/auth/login/microsoft?returnUrl='+ret+'">Logga in med Microsoft</a>';
+                    loginBtn.addEventListener('click',function(){menu.classList.toggle('auth-menu-open')});
+                    c.appendChild(loginBtn);c.appendChild(menu);
+                }
+            });
+        }
+        fetch('/api/auth/me',{credentials:'same-origin'}).then(function(r){return r.json()}).then(initAuth).catch(function(){initAuth(null)});
+    })();
+    </script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

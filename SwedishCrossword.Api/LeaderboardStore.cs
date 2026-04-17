@@ -62,7 +62,7 @@ sealed class LeaderboardStore : IDisposable
         await using var conn = await OpenConnectionAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
-            SELECT leaderboard_key, name, time, timestamp, puzzle_hash, hints_used, word_hints_used
+            SELECT leaderboard_key, name, time, timestamp, puzzle_hash, hints_used, word_hints_used, user_id
             FROM scores
             ORDER BY leaderboard_key, time
             """;
@@ -72,13 +72,15 @@ sealed class LeaderboardStore : IDisposable
         while (await reader.ReadAsync())
         {
             var key = reader.GetString(0);
+            var hasUserId = !reader.IsDBNull(7);
             var record = new ScoreRecord(
                 Name: reader.GetString(1),
                 Time: reader.GetDouble(2),
                 Timestamp: reader.IsDBNull(3) ? null : reader.GetInt64(3),
                 PuzzleHash: reader.IsDBNull(4) ? null : reader.GetString(4),
                 HintsUsed: reader.GetInt32(5),
-                WordHintsUsed: reader.GetInt32(6)
+                WordHintsUsed: reader.GetInt32(6),
+                UserId: hasUserId ? "verified" : null // Don't expose actual user IDs publicly
             );
 
             if (!allScores.TryGetValue(key, out var list))
@@ -124,8 +126,8 @@ sealed class LeaderboardStore : IDisposable
         await using (var insert = conn.CreateCommand())
         {
             insert.CommandText = """
-                INSERT INTO scores (leaderboard_key, name, time, timestamp, puzzle_hash, hints_used, word_hints_used)
-                VALUES (@key, @name, @time, @timestamp, @hash, @hints, @wordHints)
+                INSERT INTO scores (leaderboard_key, name, time, timestamp, puzzle_hash, hints_used, word_hints_used, user_id)
+                VALUES (@key, @name, @time, @timestamp, @hash, @hints, @wordHints, @userId)
                 """;
             insert.Parameters.AddWithValue("@key", leaderboardKey);
             insert.Parameters.AddWithValue("@name", entry.Name);
@@ -134,6 +136,7 @@ sealed class LeaderboardStore : IDisposable
             insert.Parameters.AddWithValue("@hash", (object?)entry.PuzzleHash ?? DBNull.Value);
             insert.Parameters.AddWithValue("@hints", entry.HintsUsed);
             insert.Parameters.AddWithValue("@wordHints", entry.WordHintsUsed);
+            insert.Parameters.AddWithValue("@userId", (object?)entry.UserId ?? DBNull.Value);
             await insert.ExecuteNonQueryAsync();
         }
 
@@ -202,8 +205,8 @@ sealed class LeaderboardStore : IDisposable
         await using (var insert = conn.CreateCommand())
         {
             insert.CommandText = """
-                INSERT INTO history (date, name, time, timestamp, puzzle_hash, puzzle_size, hints_used, word_hints_used)
-                VALUES (@date, @name, @time, @timestamp, @hash, @size, @hints, @wordHints)
+                INSERT INTO history (date, name, time, timestamp, puzzle_hash, puzzle_size, hints_used, word_hints_used, user_id)
+                VALUES (@date, @name, @time, @timestamp, @hash, @size, @hints, @wordHints, @userId)
                 """;
             insert.Parameters.AddWithValue("@date", date);
             insert.Parameters.AddWithValue("@name", record.Name);
@@ -213,6 +216,7 @@ sealed class LeaderboardStore : IDisposable
             insert.Parameters.AddWithValue("@size", (object?)record.PuzzleSize ?? DBNull.Value);
             insert.Parameters.AddWithValue("@hints", record.HintsUsed);
             insert.Parameters.AddWithValue("@wordHints", record.WordHintsUsed);
+            insert.Parameters.AddWithValue("@userId", (object?)record.UserId ?? DBNull.Value);
             await insert.ExecuteNonQueryAsync();
         }
 
@@ -264,7 +268,7 @@ sealed class LeaderboardStore : IDisposable
         await using var conn = await OpenConnectionAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
-            SELECT date, name, time, timestamp, puzzle_hash, puzzle_size, hints_used, word_hints_used
+            SELECT date, name, time, timestamp, puzzle_hash, puzzle_size, hints_used, word_hints_used, user_id
             FROM history
             WHERE date >= @earliest AND date <= @today
             ORDER BY date DESC, time
@@ -284,7 +288,8 @@ sealed class LeaderboardStore : IDisposable
                 PuzzleHash: reader.IsDBNull(4) ? null : reader.GetString(4),
                 PuzzleSize: reader.IsDBNull(5) ? null : reader.GetString(5),
                 HintsUsed: reader.GetInt32(6),
-                WordHintsUsed: reader.GetInt32(7)
+                WordHintsUsed: reader.GetInt32(7),
+                UserId: reader.IsDBNull(8) ? null : "verified"
             );
 
             if (!result.TryGetValue(date, out var list))
@@ -299,6 +304,123 @@ sealed class LeaderboardStore : IDisposable
     }
 
     public void Dispose() => SqliteConnection.ClearAllPools();
+
+    // ── User Alias Management ──
+
+    public async Task<string?> GetAliasAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT alias FROM user_aliases WHERE user_id = @uid";
+        cmd.Parameters.AddWithValue("@uid", userId);
+        var result = await cmd.ExecuteScalarAsync();
+        return result as string;
+    }
+
+    public async Task<bool> IsAliasAvailableAsync(string alias, string? excludeUserId = null)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        if (excludeUserId is not null)
+        {
+            cmd.CommandText = "SELECT COUNT(1) FROM user_aliases WHERE alias = @alias COLLATE NOCASE AND user_id != @uid";
+            cmd.Parameters.AddWithValue("@uid", excludeUserId);
+        }
+        else
+        {
+            cmd.CommandText = "SELECT COUNT(1) FROM user_aliases WHERE alias = @alias COLLATE NOCASE";
+        }
+        cmd.Parameters.AddWithValue("@alias", alias);
+        var count = (long)(await cmd.ExecuteScalarAsync())!;
+        return count == 0;
+    }
+
+    public async Task SetAliasAsync(string userId, string alias)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            INSERT INTO user_aliases (user_id, alias) VALUES (@uid, @alias)
+            ON CONFLICT(user_id) DO UPDATE SET alias = @alias
+            """;
+        cmd.Parameters.AddWithValue("@uid", userId);
+        cmd.Parameters.AddWithValue("@alias", alias);
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    // Personal stats for an authenticated user
+    public async Task<UserStatsResponse> GetUserStatsAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            SELECT date, time, puzzle_size, hints_used, word_hints_used
+            FROM history
+            WHERE user_id = @uid AND date >= @cutoff
+            ORDER BY date DESC
+            """;
+        cmd.Parameters.AddWithValue("@uid", userId);
+        cmd.Parameters.AddWithValue("@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+
+        var solves = new List<UserSolveRecord>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            solves.Add(new UserSolveRecord(
+                Date: reader.GetString(0),
+                Time: reader.GetDouble(1),
+                PuzzleSize: reader.IsDBNull(2) ? null : reader.GetString(2),
+                HintsUsed: reader.GetInt32(3),
+                WordHintsUsed: reader.GetInt32(4)
+            ));
+        }
+
+        if (solves.Count == 0)
+            return new UserStatsResponse(0, 0, 0, 0, 0, []);
+
+        var totalSolved = solves.Count;
+        var avgTime = Math.Round(solves.Average(s => s.Time), 1);
+        var bestTime = Math.Round(solves.Min(s => s.Time), 1);
+
+        // Compute streak from distinct dates (descending)
+        var dates = solves.Select(s => DateOnly.ParseExact(s.Date, "yyyy-MM-dd"))
+                         .Distinct().OrderDescending().ToList();
+        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+        int currentStreak = 0;
+        var expected = today;
+        // Allow starting from today or yesterday
+        if (dates.Count > 0 && dates[0] < today)
+            expected = today.AddDays(-1);
+
+        foreach (var d in dates)
+        {
+            if (d == expected)
+            {
+                currentStreak++;
+                expected = expected.AddDays(-1);
+            }
+            else if (d < expected)
+            {
+                break;
+            }
+        }
+
+        // Best streak over all time
+        int bestStreak = 0, streak = 0;
+        DateOnly? prev = null;
+        foreach (var d in dates.OrderBy(d => d))
+        {
+            if (prev.HasValue && d == prev.Value.AddDays(1))
+                streak++;
+            else
+                streak = 1;
+            if (streak > bestStreak) bestStreak = streak;
+            prev = d;
+        }
+
+        var recent = solves.Take(30).ToList();
+        return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent);
+    }
 
     // Analytics: overall summary from history table
     public async Task<AnalyticsSummary> GetAnalyticsSummaryAsync()
@@ -541,7 +663,8 @@ sealed class LeaderboardStore : IDisposable
                 timestamp       INTEGER,
                 puzzle_hash     TEXT,
                 hints_used      INTEGER NOT NULL DEFAULT 0,
-                word_hints_used INTEGER NOT NULL DEFAULT 0
+                word_hints_used INTEGER NOT NULL DEFAULT 0,
+                user_id         TEXT
             );
 
             CREATE INDEX IF NOT EXISTS idx_scores_key_time
@@ -555,13 +678,78 @@ sealed class LeaderboardStore : IDisposable
                 puzzle_hash     TEXT,
                 puzzle_size     TEXT,
                 hints_used      INTEGER NOT NULL DEFAULT 0,
-                word_hints_used INTEGER NOT NULL DEFAULT 0
+                word_hints_used INTEGER NOT NULL DEFAULT 0,
+                user_id         TEXT
             );
 
             CREATE INDEX IF NOT EXISTS idx_history_date
             ON history (date);
             """;
         create.ExecuteNonQuery();
+
+        // Add user_id column if missing (migration for existing databases)
+        MigrateAddColumn(conn, "scores", "user_id", "TEXT");
+        MigrateAddColumn(conn, "history", "user_id", "TEXT");
+
+        // Create index on user_id *after* migration ensures the column exists
+        using var createUserIdIndex = conn.CreateCommand();
+        createUserIdIndex.CommandText = "CREATE INDEX IF NOT EXISTS idx_history_user_id ON history (user_id);";
+        createUserIdIndex.ExecuteNonQuery();
+
+        // User aliases table — unique alias per authenticated user
+        using var createAliases = conn.CreateCommand();
+        createAliases.CommandText = """
+            CREATE TABLE IF NOT EXISTS user_aliases (
+                user_id TEXT NOT NULL PRIMARY KEY,
+                alias   TEXT NOT NULL COLLATE NOCASE,
+                UNIQUE(alias)
+            );
+            """;
+        createAliases.ExecuteNonQuery();
+
+        using var createFriends = conn.CreateCommand();
+        createFriends.CommandText = """
+            CREATE TABLE IF NOT EXISTS friend_requests (
+                id              TEXT NOT NULL PRIMARY KEY,
+                from_user_id    TEXT NOT NULL,
+                to_user_id      TEXT NOT NULL,
+                status          TEXT NOT NULL DEFAULT 'pending',
+                created_at      INTEGER NOT NULL,
+                UNIQUE(from_user_id, to_user_id)
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_friend_requests_to
+            ON friend_requests (to_user_id, status);
+
+            CREATE INDEX IF NOT EXISTS idx_friend_requests_from
+            ON friend_requests (from_user_id, status);
+            """;
+        createFriends.ExecuteNonQuery();
+    }
+
+    private static void MigrateAddColumn(SqliteConnection conn, string table, string column, string type)
+    {
+        bool exists = false;
+        using (var check = conn.CreateCommand())
+        {
+            check.CommandText = $"PRAGMA table_info({table})";
+            using var reader = check.ExecuteReader();
+            while (reader.Read())
+            {
+                if (string.Equals(reader.GetString(1), column, StringComparison.OrdinalIgnoreCase))
+                {
+                    exists = true;
+                    break;
+                }
+            }
+        }
+
+        if (!exists)
+        {
+            using var alter = conn.CreateCommand();
+            alter.CommandText = $"ALTER TABLE {table} ADD COLUMN {column} {type}";
+            alter.ExecuteNonQuery();
+        }
     }
 
     private async Task<SqliteConnection> OpenConnectionAsync()
@@ -583,7 +771,7 @@ sealed class LeaderboardStore : IDisposable
     {
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
-            SELECT name, time, timestamp, puzzle_hash, hints_used, word_hints_used
+            SELECT name, time, timestamp, puzzle_hash, hints_used, word_hints_used, user_id
             FROM scores
             WHERE leaderboard_key = @key
             ORDER BY time
@@ -594,16 +782,239 @@ sealed class LeaderboardStore : IDisposable
         await using var reader = await cmd.ExecuteReaderAsync();
         while (await reader.ReadAsync())
         {
+            var hasUserId = !reader.IsDBNull(6);
             list.Add(new ScoreRecord(
                 Name: reader.GetString(0),
                 Time: reader.GetDouble(1),
                 Timestamp: reader.IsDBNull(2) ? null : reader.GetInt64(2),
                 PuzzleHash: reader.IsDBNull(3) ? null : reader.GetString(3),
                 HintsUsed: reader.GetInt32(4),
-                WordHintsUsed: reader.GetInt32(5)
+                WordHintsUsed: reader.GetInt32(5),
+                UserId: hasUserId ? "verified" : null
             ));
         }
 
+        return list;
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends
+    // -----------------------------------------------------------------------
+
+    public async Task<string?> GetUserIdByAliasAsync(string alias)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT user_id FROM user_aliases WHERE alias = @alias COLLATE NOCASE";
+        cmd.Parameters.AddWithValue("@alias", alias);
+        var result = await cmd.ExecuteScalarAsync();
+        return result as string;
+    }
+
+    public async Task<(bool Success, string Error)> SendFriendRequestAsync(string fromUserId, string toUserId)
+    {
+        if (fromUserId == toUserId)
+            return (false, "Du kan inte lägga till dig själv");
+
+        await using var conn = await OpenConnectionAsync();
+
+        // Use a transaction to prevent TOCTOU races
+        await using var tx = await conn.BeginTransactionAsync();
+
+        // Check for existing relationship in either direction
+        await using var check = conn.CreateCommand();
+        check.Transaction = (SqliteTransaction)tx;
+        check.CommandText = """
+            SELECT status FROM friend_requests
+            WHERE (from_user_id = @from AND to_user_id = @to)
+               OR (from_user_id = @to AND to_user_id = @from)
+            """;
+        check.Parameters.AddWithValue("@from", fromUserId);
+        check.Parameters.AddWithValue("@to", toUserId);
+
+        await using var reader = await check.ExecuteReaderAsync();
+        if (await reader.ReadAsync())
+        {
+            var status = reader.GetString(0);
+            await reader.CloseAsync();
+            await tx.RollbackAsync();
+            if (status == "accepted")
+                return (false, "Ni är redan vänner");
+            if (status == "pending")
+                return (false, "En vänförfrågan finns redan");
+            if (status == "declined")
+                return (false, "En vänförfrågan har redan avböjts");
+        }
+        await reader.CloseAsync();
+
+        // Limit pending outgoing requests to 50
+        await using var countCheck = conn.CreateCommand();
+        countCheck.Transaction = (SqliteTransaction)tx;
+        countCheck.CommandText = "SELECT COUNT(*) FROM friend_requests WHERE from_user_id = @from AND status = 'pending'";
+        countCheck.Parameters.AddWithValue("@from", fromUserId);
+        var pendingCount = (long)(await countCheck.ExecuteScalarAsync())!;
+        if (pendingCount >= 50)
+        {
+            await tx.RollbackAsync();
+            return (false, "Du har för många väntande förfrågningar");
+        }
+
+        await using var insert = conn.CreateCommand();
+        insert.Transaction = (SqliteTransaction)tx;
+        insert.CommandText = """
+            INSERT INTO friend_requests (id, from_user_id, to_user_id, status, created_at)
+            VALUES (@id, @from, @to, 'pending', @ts)
+            """;
+        insert.Parameters.AddWithValue("@id", Guid.NewGuid().ToString("N"));
+        insert.Parameters.AddWithValue("@from", fromUserId);
+        insert.Parameters.AddWithValue("@to", toUserId);
+        insert.Parameters.AddWithValue("@ts", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        await insert.ExecuteNonQueryAsync();
+
+        await tx.CommitAsync();
+        return (true, string.Empty);
+    }
+
+    public async Task<bool> AcceptFriendRequestAsync(string requestId, string currentUserId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            UPDATE friend_requests SET status = 'accepted'
+            WHERE id = @id AND to_user_id = @uid AND status = 'pending'
+            """;
+        cmd.Parameters.AddWithValue("@id", requestId);
+        cmd.Parameters.AddWithValue("@uid", currentUserId);
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    public async Task<bool> DeclineFriendRequestAsync(string requestId, string currentUserId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            UPDATE friend_requests SET status = 'declined'
+            WHERE id = @id AND to_user_id = @uid AND status = 'pending'
+            """;
+        cmd.Parameters.AddWithValue("@id", requestId);
+        cmd.Parameters.AddWithValue("@uid", currentUserId);
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    public async Task<bool> RemoveFriendAsync(string currentUserId, string friendshipId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            DELETE FROM friend_requests
+            WHERE id = @id AND status = 'accepted'
+              AND (from_user_id = @me OR to_user_id = @me)
+            """;
+        cmd.Parameters.AddWithValue("@id", friendshipId);
+        cmd.Parameters.AddWithValue("@me", currentUserId);
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    public async Task<List<FriendInfo>> GetFriendsAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            SELECT a.alias, f.id
+            FROM friend_requests f
+            JOIN user_aliases a ON a.user_id = CASE
+                WHEN f.from_user_id = @uid THEN f.to_user_id
+                ELSE f.from_user_id END
+            WHERE f.status = 'accepted'
+              AND (f.from_user_id = @uid OR f.to_user_id = @uid)
+            ORDER BY a.alias COLLATE NOCASE
+            """;
+        cmd.Parameters.AddWithValue("@uid", userId);
+
+        var list = new List<FriendInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+            list.Add(new FriendInfo(reader.GetString(0), reader.GetString(1)));
+        return list;
+    }
+
+    public async Task<List<FriendRequestInfo>> GetPendingRequestsAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            SELECT f.id,
+                   COALESCE(fa.alias, ''),
+                   COALESCE(ta.alias, ''),
+                   CASE WHEN f.to_user_id = @uid THEN 'incoming' ELSE 'outgoing' END,
+                   f.status,
+                   f.created_at
+            FROM friend_requests f
+            LEFT JOIN user_aliases fa ON fa.user_id = f.from_user_id
+            LEFT JOIN user_aliases ta ON ta.user_id = f.to_user_id
+            WHERE f.status = 'pending'
+              AND (f.from_user_id = @uid OR f.to_user_id = @uid)
+            ORDER BY f.created_at DESC
+            """;
+        cmd.Parameters.AddWithValue("@uid", userId);
+
+        var list = new List<FriendRequestInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+            list.Add(new FriendRequestInfo(
+                reader.GetString(0), reader.GetString(1),
+                reader.GetString(2), reader.GetString(3),
+                reader.GetString(4), reader.GetInt64(5)));
+        return list;
+    }
+
+    public async Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date)
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        // Get accepted friend user IDs using the same connection
+        var friendIds = new List<string> { userId };
+        await using (var friendCmd = conn.CreateCommand())
+        {
+            friendCmd.CommandText = """
+                SELECT CASE WHEN from_user_id = @uid THEN to_user_id ELSE from_user_id END
+                FROM friend_requests
+                WHERE status = 'accepted' AND (from_user_id = @uid OR to_user_id = @uid)
+                """;
+            friendCmd.Parameters.AddWithValue("@uid", userId);
+            await using var friendReader = await friendCmd.ExecuteReaderAsync();
+            while (await friendReader.ReadAsync())
+                friendIds.Add(friendReader.GetString(0));
+        }
+
+        await using var cmd = conn.CreateCommand();
+
+        // Build parameterised IN clause
+        var paramNames = new List<string>();
+        for (int i = 0; i < friendIds.Count; i++)
+        {
+            var pn = $"@uid{i}";
+            paramNames.Add(pn);
+            cmd.Parameters.AddWithValue(pn, friendIds[i]);
+        }
+
+        cmd.CommandText = $"""
+            SELECT a.alias, h.time, h.timestamp, h.puzzle_hash, h.hints_used, h.word_hints_used
+            FROM history h
+            JOIN user_aliases a ON a.user_id = h.user_id
+            WHERE h.date = @date AND h.user_id IN ({string.Join(',', paramNames)})
+            ORDER BY h.time
+            """;
+        cmd.Parameters.AddWithValue("@date", date);
+
+        var list = new List<FriendsLeaderboardEntry>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+            list.Add(new FriendsLeaderboardEntry(
+                reader.GetString(0), reader.GetDouble(1),
+                reader.IsDBNull(2) ? null : reader.GetInt64(2),
+                reader.IsDBNull(3) ? null : reader.GetString(3),
+                reader.GetInt32(4), reader.GetInt32(5)));
         return list;
     }
 }

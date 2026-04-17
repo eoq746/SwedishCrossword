@@ -28,11 +28,6 @@ RUN dotnet publish SwedishCrossword.Api/SwedishCrossword.Api.csproj \
 # Copy dictionary data files into the publish output
 RUN cp -r SwedishCrossword/Data /app/publish/Data
 
-# Stamp service worker cache version (defaults to build timestamp for local builds)
-ARG BUILD_VERSION
-RUN VERSION=${BUILD_VERSION:-$(date +%s)} && \
-    sed -i "s/__BUILD_VERSION__/$VERSION/" /app/publish/wwwroot/sw.js
-
 # --- Runtime stage ---------------------------------------------------------
 FROM mcr.microsoft.com/dotnet/aspnet:10.0-preview AS runtime
 WORKDIR /app

@@ -1,3 +1,5 @@
+using System.Security.Claims;
+
 namespace SwedishCrossword.Api;
 
 internal static class LeaderboardEndpoints
@@ -12,9 +14,19 @@ internal static class LeaderboardEndpoints
             return Results.Content(data, "application/json");
         });
 
-        app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider) =>
+        app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider, ClaimsPrincipal user) =>
         {
+            var userId = AuthEndpoints.GetUserId(user);
             var name = LeaderboardStore.SanitiseName(body.Name);
+
+            // Authenticated users must use their alias
+            if (userId is not null)
+            {
+                var alias = await store.GetAliasAsync(userId);
+                if (!string.IsNullOrWhiteSpace(alias))
+                    name = alias;
+            }
+
             if (string.IsNullOrWhiteSpace(name))
                 return Results.BadRequest(new ErrorResponse("Invalid name"));
 
@@ -36,13 +48,13 @@ internal static class LeaderboardEndpoints
 
             var leaderboardKey = $"{body.Date}-{body.PuzzleHash}";
             var timestamp = timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
-            var entry = new ScoreRecord(name, body.Time, timestamp, body.PuzzleHash, body.HintsUsed, body.WordHintsUsed);
+            var entry = new ScoreRecord(name, body.Time, timestamp, body.PuzzleHash, body.HintsUsed, body.WordHintsUsed, userId);
             var leaderboard = await store.AppendScoreAsync(leaderboardKey, entry);
 
             // Also archive to historical leaderboard (best-effort; don't fail the request)
             try
             {
-                await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash, body.PuzzleSize, body.HintsUsed, body.WordHintsUsed));
+                await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash, body.PuzzleSize, body.HintsUsed, body.WordHintsUsed, userId));
             }
             catch (Exception ex)
             {
@@ -52,7 +64,7 @@ internal static class LeaderboardEndpoints
             return Results.Ok(new { success = true, leaderboard });
         }).RequireRateLimiting("leaderboard-write");
 
-        app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider) =>
+        app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider, ClaimsPrincipal user) =>
         {
             if (string.IsNullOrWhiteSpace(body.Token))
                 return Results.Json(new ErrorResponse("Missing submission token"), statusCode: 403);
@@ -77,10 +89,19 @@ internal static class LeaderboardEndpoints
                 return Results.Json(new ErrorResponse(validation.Error), statusCode: 403);
 
             var name = LeaderboardStore.SanitiseName(body.Entry.Name);
+            // Authenticated users must use their alias
+            var historyUserId = AuthEndpoints.GetUserId(user);
+            if (historyUserId is not null)
+            {
+                var alias = await store.GetAliasAsync(historyUserId);
+                if (!string.IsNullOrWhiteSpace(alias))
+                    name = alias;
+            }
+
             if (string.IsNullOrWhiteSpace(name))
                 return Results.BadRequest(new ErrorResponse("Invalid name"));
 
-            await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash, body.Entry.PuzzleSize, body.Entry.HintsUsed, body.Entry.WordHintsUsed));
+            await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash, body.Entry.PuzzleSize, body.Entry.HintsUsed, body.Entry.WordHintsUsed, historyUserId));
             return Results.Ok(new { ok = true });
         }).RequireRateLimiting("leaderboard-write");
 

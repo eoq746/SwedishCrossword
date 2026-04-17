@@ -41,11 +41,20 @@ jobs:
         id: infra
         env:
           SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+          MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
         run: |
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
-            --parameters appName=$APP_NAME createRoleAssignment=false submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
+            --parameters appName=$APP_NAME createRoleAssignment=false \
+              submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
+              googleClientId="$GOOGLE_CLIENT_ID" \
+              googleClientSecret="$GOOGLE_CLIENT_SECRET" \
+              microsoftClientId="$MICROSOFT_CLIENT_ID" \
+              microsoftClientSecret="$MICROSOFT_CLIENT_SECRET" \
             --query 'properties.outputs' \
             --output json)
 
@@ -73,7 +82,6 @@ jobs:
             --registry ${{ steps.infra.outputs.acr_name }} \
             --image $APP_NAME:${{ github.sha }} \
             --image $APP_NAME:latest \
-            --build-arg BUILD_VERSION=${{ github.sha }} \
             .
 
       # ------------------------------------------------------------------
@@ -87,7 +95,12 @@ jobs:
             --name $APP_NAME \
             --resource-group $RESOURCE_GROUP \
             --image "$IMAGE_URI" \
-            --set-env-vars "SubmissionToken__Secret=secretref:submissiontoken-secret"
+            --set-env-vars \
+              "SubmissionToken__Secret=secretref:submissiontoken-secret" \
+              "Authentication__Google__ClientId=secretref:google-client-id" \
+              "Authentication__Google__ClientSecret=secretref:google-client-secret" \
+              "Authentication__Microsoft__ClientId=secretref:microsoft-client-id" \
+              "Authentication__Microsoft__ClientSecret=secretref:microsoft-client-secret"
 
       # ------------------------------------------------------------------
       # 4. Bind custom domain (if CUSTOM_DOMAIN secret is set)

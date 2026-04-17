@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spela Korsord - Svenskt Korsord | Gratis Korsord Online</title>
+    <title>Spela Korsord - Svenskt Korsord</title>
     <meta name="description" content="Spela dagens svenska korsord online. Interaktivt korsord med ledtrådar, topplista och timer. Gratis!">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://svensktkorsord.se/puzzle.html">
@@ -17,20 +17,7 @@
     <meta property="og:locale" content="sv_SE">
     <meta property="og:site_name" content="Svenskt Korsord">
 
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https:;
-        connect-src 'self';
-        font-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        form-action 'self';
-    ">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon"
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -46,6 +33,7 @@
             <nav class="puzzle-nav">
                 <a href="/" class="nav-back">← Startsida</a>
                 <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+                <span class="auth-btn-container"></span>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
                 <button class="help-toggle" id="help-toggle" aria-label="Tangentbordsgenvägar" title="Tangentbordsgenvägar (?)">⌨️</button>
             </nav>
@@ -151,6 +139,10 @@
                     <!-- Leaderboard entries rendered by site.js -->
                 </ul>
                 <div class="leaderboard-date" id="leaderboard-date"></div>
+                <div id="friends-leaderboard-section" style="display:none;margin-top:20px;">
+                    <h3 style="font-size:1.1rem;">👥 Vänners resultat</h3>
+                    <ul class="leaderboard-list" id="friends-leaderboard-list" role="list"></ul>
+                </div>
             </div>
 
             <div class="leaderboard-section history-section" id="history-section">
@@ -165,6 +157,9 @@
                 <div id="player-stats">
                     <!-- Player stats rendered by site.js -->
                 </div>
+                <div id="personal-stats" style="display:none;">
+                    <!-- Server-synced personal stats for signed-in users -->
+                </div>
             </div>
         </div>
 
@@ -172,9 +167,10 @@
             <nav>
                 <a href="/">Startsida</a>
                 <a href="/calendar.html">Arkiv</a>
-                <a href="om-oss.html">Om oss</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="integritetspolicy.html">Integritetspolicy</a>
+                <a href="/profile.html">Min profil</a>
+                <a href="/om-oss.html">Om oss</a>
+                <a href="/kontakt.html">Kontakt</a>
+                <a href="/integritetspolicy.html">Integritetspolicy</a>
             </nav>
             &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
             <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</p>
@@ -196,6 +192,7 @@
                 <p>Ange ditt namn för topplistan:</p>
                 <input type="text" id="username-input" placeholder="Ditt namn" maxlength="20" 
                        autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false">
+                <div id="modal-login-menu" style="display:none; margin-bottom: 8px;"></div>
                 <div class="modal-buttons">
                     <button class="btn btn-primary" onclick="submitScore()">Spara</button>
                     <button class="btn btn-secondary" onclick="closeModal()">Hoppa över</button>
@@ -235,6 +232,6 @@
     </script>
 
     <script src="/site.js"></script>
-    <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
+    <script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

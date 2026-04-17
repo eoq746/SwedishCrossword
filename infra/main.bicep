@@ -27,6 +27,22 @@ param imageTag string = ''
 @description('HMAC secret for submission token signing. Pass via CI/CD or manual deploy.')
 param submissionTokenSecret string = ''
 
+@secure()
+@description('Google OAuth client ID for social login.')
+param googleClientId string = ''
+
+@secure()
+@description('Google OAuth client secret for social login.')
+param googleClientSecret string = ''
+
+@secure()
+@description('Microsoft OAuth client ID for social login.')
+param microsoftClientId string = ''
+
+@secure()
+@description('Microsoft OAuth client secret for social login.')
+param microsoftClientSecret string = ''
+
 @description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
 param createRoleAssignment bool = true
 
@@ -172,12 +188,22 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         transport: 'auto'
         allowInsecure: false
       }
-      secrets: submissionTokenSecret != '' ? [
-        {
-          name: 'submissiontoken-secret'
-          value: submissionTokenSecret
-        }
-      ] : []
+      secrets: union(
+        submissionTokenSecret != '' ? [
+          {
+            name: 'submissiontoken-secret'
+            value: submissionTokenSecret
+          }
+        ] : [],
+        googleClientId != '' ? [
+          { name: 'google-client-id', value: googleClientId }
+          { name: 'google-client-secret', value: googleClientSecret }
+        ] : [],
+        microsoftClientId != '' ? [
+          { name: 'microsoft-client-id', value: microsoftClientId }
+          { name: 'microsoft-client-secret', value: microsoftClientSecret }
+        ] : []
+      )
       registries: [
         {
           server: acr.properties.loginServer
@@ -203,6 +229,14 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
             ],
             submissionTokenSecret != '' ? [
               { name: 'SubmissionToken__Secret', secretRef: 'submissiontoken-secret' }
+            ] : [],
+            googleClientId != '' ? [
+              { name: 'Authentication__Google__ClientId', secretRef: 'google-client-id' }
+              { name: 'Authentication__Google__ClientSecret', secretRef: 'google-client-secret' }
+            ] : [],
+            microsoftClientId != '' ? [
+              { name: 'Authentication__Microsoft__ClientId', secretRef: 'microsoft-client-id' }
+              { name: 'Authentication__Microsoft__ClientSecret', secretRef: 'microsoft-client-secret' }
             ] : []
           )
           volumeMounts: [

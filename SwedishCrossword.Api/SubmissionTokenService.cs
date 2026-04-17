@@ -13,10 +13,11 @@ namespace SwedishCrossword.Api;
 sealed class SubmissionTokenService
 {
     private readonly byte[] _key;
+    private readonly TimeProvider _timeProvider;
     private const double MinSecondsPerCell = 0.3;
     private static readonly TimeSpan TokenLifetime = TimeSpan.FromHours(48);
 
-    public SubmissionTokenService(IConfiguration config, ILogger<SubmissionTokenService> logger)
+    public SubmissionTokenService(IConfiguration config, ILogger<SubmissionTokenService> logger, TimeProvider timeProvider)
     {
         var secret = config["SubmissionToken:Secret"];
         if (string.IsNullOrWhiteSpace(secret))
@@ -32,6 +33,7 @@ sealed class SubmissionTokenService
         {
             _key = SHA256.HashData(Encoding.UTF8.GetBytes(secret));
         }
+        _timeProvider = timeProvider;
     }
 
     /// <summary>
@@ -68,7 +70,7 @@ sealed class SubmissionTokenService
     /// </summary>
     public string GenerateToken(string puzzleHash, int cellCount)
     {
-        var issuedAt = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        var issuedAt = _timeProvider.GetUtcNow().ToUnixTimeSeconds();
         var payload = $"{puzzleHash}:{cellCount}:{issuedAt}";
         var hmac = ComputeHmac(payload);
         return Convert.ToBase64String(Encoding.UTF8.GetBytes($"{payload}:{hmac}"));
@@ -107,7 +109,7 @@ sealed class SubmissionTokenService
 
             // Verify time window
             var issuedAtTime = DateTimeOffset.FromUnixTimeSeconds(issuedAt);
-            var age = DateTimeOffset.UtcNow - issuedAtTime;
+            var age = _timeProvider.GetUtcNow() - issuedAtTime;
             if (age < TimeSpan.Zero || age > TokenLifetime)
                 return TokenValidationResult.Fail("Token expired");
 
@@ -151,7 +153,7 @@ sealed class SubmissionTokenService
                 Encoding.UTF8.GetBytes(expectedHmac)))
                 return TokenValidationResult.Fail("Token signature invalid");
 
-            var age = DateTimeOffset.UtcNow - DateTimeOffset.FromUnixTimeSeconds(issuedAt);
+            var age = _timeProvider.GetUtcNow() - DateTimeOffset.FromUnixTimeSeconds(issuedAt);
             if (age < TimeSpan.Zero || age > TokenLifetime)
                 return TokenValidationResult.Fail("Token expired");
 

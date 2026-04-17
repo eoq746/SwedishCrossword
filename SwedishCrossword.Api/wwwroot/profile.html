@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Profil - Svenskt Korsord</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        :root {
+            --page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: #ffffff;
+            --surface-bg: #f9fafb;
+            --text-heading: #1f2937;
+            --text-body: #374151;
+            --text-muted: #6b7280;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --border: #e5e7eb;
+            --success-bg: #f0fdf4;
+            --success-border: #22c55e;
+            --shadow: rgba(0,0,0,0.2);
+        }
+        [data-theme="dark"] {
+            --page-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
+            --card-bg: #1e293b;
+            --surface-bg: #334155;
+            --text-heading: #f1f5f9;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent: #818cf8;
+            --accent-hover: #6366f1;
+            --border: #475569;
+            --success-bg: rgba(34,197,94,0.1);
+            --success-border: #22c55e;
+            --shadow: rgba(0,0,0,0.5);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--page-bg);
+            min-height: 100vh;
+            padding: env(safe-area-inset-top,20px) env(safe-area-inset-right,20px) env(safe-area-inset-bottom,20px) env(safe-area-inset-left,20px);
+            display: flex; align-items: flex-start; justify-content: center; line-height: 1.7;
+        }
+        .container {
+            width: 100%; max-width: 900px; margin: 20px 12px;
+            background: var(--card-bg); border-radius: 12px; padding: 32px;
+            box-shadow: 0 10px 40px var(--shadow);
+        }
+        .page-nav { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+        .theme-toggle {
+            background: none; border: none; font-size: 1.5rem; cursor: pointer;
+            padding: 4px 8px; border-radius: 8px; transition: transform 0.2s;
+        }
+        .theme-toggle:hover { transform: scale(1.15); }
+        h1 { color: var(--text-heading); margin-bottom: 12px; font-size: 1.8rem }
+        h2 { color: var(--accent); margin-top: 28px; margin-bottom: 14px; font-size: 1.25rem }
+        p { color: var(--text-body); margin-bottom: 14px }
+        a { color: var(--accent) }
+        a:hover { text-decoration: underline }
+        .back-link {
+            display: inline-block; margin-top: 24px; padding: 10px 16px;
+            background: var(--accent); color: #fff; border-radius: 8px;
+            text-decoration: none; font-weight: 600;
+        }
+        .back-link:hover { background: var(--accent-hover) }
+        footer { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem }
+        footer a { color: var(--text-muted); margin: 0 10px }
+
+        /* Profile-specific */
+        .login-prompt { text-align: center; padding: 40px 20px; }
+        .login-prompt p { font-size: 1.1rem; margin-bottom: 20px; }
+        .login-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .login-btn {
+            display: inline-block; padding: 12px 24px; border-radius: 8px;
+            background: var(--accent); color: #fff; text-decoration: none;
+            font-weight: 600; font-size: 1rem; transition: background 0.2s;
+        }
+        .login-btn:hover { background: var(--accent-hover); text-decoration: none; }
+
+        .profile-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+        .profile-avatar {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--surface-bg); border: 2px solid var(--border);
+            display: flex; align-items: center; justify-content: center; font-size: 2rem;
+            overflow: hidden;
+        }
+        .profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .profile-info h2 { margin-top: 0; font-size: 1.4rem; }
+        .profile-provider { color: var(--text-muted); font-size: 0.9rem; }
+
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px; margin: 20px 0;
+        }
+        .stat-card {
+            background: var(--surface-bg); padding: 16px; border-radius: 10px;
+            border: 1px solid var(--border); text-align: center;
+        }
+        .stat-card .value { font-size: 1.6rem; font-weight: 700; color: var(--accent); display: block; }
+        .stat-card .label { font-size: 0.85rem; color: var(--text-muted); }
+
+        .verified-box {
+            background: var(--success-bg); border-left: 4px solid var(--success-border);
+            padding: 12px 16px; border-radius: 8px; margin: 16px 0;
+            color: var(--text-body); font-size: 0.95rem;
+        }
+
+        .recent-list { list-style: none; padding: 0; margin: 16px 0; }
+        .recent-list li {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 12px; border-bottom: 1px solid var(--border);
+            color: var(--text-body); font-size: 0.95rem;
+        }
+        .recent-list li:last-child { border-bottom: none; }
+        .recent-date { font-weight: 600; }
+        .recent-time { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
+        .recent-meta { color: var(--text-muted); font-size: 0.85rem; }
+
+        .logout-section { margin-top: 32px; text-align: center; }
+        .logout-btn {
+            padding: 10px 24px; border-radius: 8px; border: 1px solid var(--border);
+            background: var(--card-bg); color: var(--text-body); cursor: pointer;
+            font-size: 0.95rem; transition: background 0.2s;
+        }
+        .logout-btn:hover { background: var(--surface-bg); }
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); font-style: italic; }
+        .empty-state { color: var(--text-muted); font-style: italic; padding: 20px 0; text-align: center; }
+
+        /* Friends */
+        .friend-search { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+        .friend-search input {
+            padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+            background: var(--surface-bg); color: var(--text-body); font-size: 1rem; width: 200px;
+        }
+        .friend-list { list-style: none; padding: 0; margin: 12px 0; }
+        .friend-list li {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 12px; border-bottom: 1px solid var(--border);
+            color: var(--text-body); font-size: 0.95rem;
+        }
+        .friend-list li:last-child { border-bottom: none; }
+        .friend-actions { display: flex; gap: 6px; }
+        .friend-btn {
+            padding: 4px 12px; border-radius: 6px; border: 1px solid var(--border);
+            background: var(--card-bg); color: var(--text-body); cursor: pointer; font-size: 0.85rem;
+        }
+        .friend-btn:hover { background: var(--surface-bg); }
+        .friend-btn-accept { background: #22c55e; color: #fff; border-color: #22c55e; }
+        .friend-btn-accept:hover { background: #16a34a; }
+        .friend-btn-danger { color: #dc2626; border-color: #dc2626; }
+        .friend-btn-danger:hover { background: #fef2f2; }
+
+        @media(max-width:600px) {
+            .container { padding: 20px; margin: 12px 8px }
+            h1 { font-size: 1.5rem }
+            .profile-header { gap: 12px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;">Hoppa till innehåll</a>
+    <div class="container">
+        <div class="page-nav">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+        </div>
+
+        <main id="content" role="main">
+            <div class="loading">Laddar profil...</div>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="/">Startsida</a>
+                <a href="/puzzle.html?size=17x17">Spela</a>
+                <a href="/calendar.html">Arkiv</a>
+                <a href="/om-oss.html">Om oss</a>
+                <a href="/kontakt.html">Kontakt</a>
+                <a href="/integritetspolicy.html">Integritetspolicy</a>
+            </nav>
+            © 2025–2026 Svenskt Korsord. Alla rättigheter förbehållna.
+        </footer>
+    </div>
+
+<script>
+(function(){
+    var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
+    document.documentElement.setAttribute('data-theme',t);
+    var b=document.getElementById('theme-toggle');
+    if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
+})();
+
+const SIZE_LABELS = {
+    '10x10': 'Liten (10×10)',
+    '15x15': 'Mellan (15×15)',
+    '17x17': 'Stor (17×17)'
+};
+
+function formatTime(s) {
+    if (!s && s !== 0) return '--:--';
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+
+async function loadProfile() {
+    var content = document.getElementById('content');
+    try {
+        var res = await fetch('/api/auth/me', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (!res.ok) { showLogin(content); return; }
+        var user = await res.json();
+        if (!user.authenticated) { showLogin(content); return; }
+        await renderProfile(content, user);
+    } catch (e) {
+        console.error('Profile load failed:', e);
+        content.innerHTML = '<p>Kunde inte ladda profilen. Försök igen senare.</p><a href="/" class="back-link">← Tillbaka till startsidan</a>';
+    }
+}
+
+function showLogin(el) {
+    var returnUrl = encodeURIComponent('/profile.html');
+    el.innerHTML =
+        '<div class="login-prompt">' +
+            '<h1>Min Profil</h1>' +
+            '<p>Logga in för att se din statistik, synkad mellan alla dina enheter.</p>' +
+            '<div class="login-buttons">' +
+                '<a href="/api/auth/login/google?returnUrl=' + returnUrl + '" class="login-btn">Logga in med Google</a>' +
+                '<a href="/api/auth/login/microsoft?returnUrl=' + returnUrl + '" class="login-btn">Logga in med Microsoft</a>' +
+            '</div>' +
+            '<a href="/" class="back-link" style="margin-top:32px;">← Tillbaka till startsidan</a>'
+        '</div>';
+}
+
+async function renderProfile(el, user) {
+    var avatarHtml = user.avatarUrl
+        ? '<img src="' + escapeAttr(user.avatarUrl) + '" alt="Avatar">'
+        : '👤';
+
+    var html =
+        '<h1>Min Profil</h1>' +
+        '<div class="profile-header">' +
+            '<div class="profile-avatar">' + avatarHtml + '</div>' +
+            '<div class="profile-info">' +
+                '<h2>' + escapeHtml(user.name || 'Okänd') + '</h2>' +
+                '<span class="profile-provider">Inloggad via ' + escapeHtml(user.provider || 'okänd') + (user.email ? ' · ' + escapeHtml(user.email) : '') + '</span>' +
+            '</div>' +
+        '</div>' +
+        '<div class="verified-box">✓ <strong>Verifierat konto</strong> — Dina resultat på topplistan markeras med en ✓ så att andra vet att det verkligen är du.</div>' +
+        '<h2>🏷️ Alias</h2>' +
+        '<p>Ditt alias visas på topplistan istället för ditt kontonamn. Det måste vara unikt bland inloggade användare.</p>' +
+        '<div class="alias-section">' +
+            '<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">' +
+                '<input type="text" id="alias-input" placeholder="Välj ett alias" maxlength="20" value="' + escapeAttr(user.alias || '') + '" ' +
+                    'style="padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface-bg);color:var(--text-body);font-size:1rem;width:200px;">' +
+                '<button class="login-btn" onclick="saveAlias()" style="padding:8px 16px;font-size:0.9rem;">Spara alias</button>' +
+            '</div>' +
+            '<p id="alias-status" style="font-size:0.85rem;margin-top:6px;"></p>' +
+        '</div>';
+
+    // Load stats
+    var statsHtml = '';
+    try {
+        var statsRes = await fetch('/api/auth/my-stats', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (statsRes.ok) {
+            var stats = await statsRes.json();
+            if (stats.totalSolved > 0) {
+                statsHtml =
+                    '<h2>📊 Statistik</h2>' +
+                    '<div class="stats-grid">' +
+                        '<div class="stat-card"><span class="value">' + stats.totalSolved + '</span><span class="label">Lösta korsord</span></div>' +
+                        '<div class="stat-card"><span class="value">' + stats.currentStreak + '</span><span class="label">Nuvarande streak</span></div>' +
+                        '<div class="stat-card"><span class="value">' + stats.bestStreak + '</span><span class="label">Bästa streak</span></div>' +
+                        '<div class="stat-card"><span class="value">' + (stats.bestTime > 0 ? formatTime(stats.bestTime) : '--:--') + '</span><span class="label">Bästa tid</span></div>' +
+                        '<div class="stat-card"><span class="value">' + (stats.averageTime > 0 ? formatTime(stats.averageTime) : '--:--') + '</span><span class="label">Snittid</span></div>' +
+                    '</div>';
+
+                if (stats.recentSolves && stats.recentSolves.length > 0) {
+                    statsHtml += '<h2>Senaste resultat</h2><ul class="recent-list">';
+                    stats.recentSolves.forEach(function(s) {
+                        var sizeLabel = s.puzzleSize ? (SIZE_LABELS[s.puzzleSize] || s.puzzleSize) : '';
+                        var hints = (s.hintsUsed || 0) + (s.wordHintsUsed || 0);
+                        var hintText = hints > 0 ? ' · 💡 ' + hints + ' ledtrådar' : '';
+                        statsHtml +=
+                            '<li>' +
+                                '<span><span class="recent-date">' + escapeHtml(s.date) + '</span>' +
+                                    '<span class="recent-meta">' + (sizeLabel ? ' · ' + sizeLabel : '') + hintText + '</span>' +
+                                '</span>' +
+                                '<span class="recent-time">' + formatTime(s.time) + '</span>' +
+                            '</li>';
+                    });
+                    statsHtml += '</ul>';
+                }
+            } else {
+                statsHtml = '<h2>📊 Statistik</h2><p class="empty-state">Du har inga sparade resultat ännu. Lös ett korsord medan du är inloggad!</p>';
+            }
+        }
+    } catch (e) {
+        console.warn('Failed to load stats:', e);
+        statsHtml = '<p class="empty-state">Kunde inte ladda statistik.</p>';
+    }
+
+    html += statsHtml;
+
+    // Friends section
+    html +=
+        '<h2>👥 Vänner</h2>' +
+        '<div class="friend-search">' +
+            '<input type="text" id="friend-alias-input" placeholder="Sök alias..." maxlength="20" aria-label="Sök användare via alias">' +
+            '<button class="login-btn" id="send-friend-btn" style="padding:8px 16px;font-size:0.9rem;" aria-label="Skicka vänförfrågan">Lägg till vän</button>' +
+        '</div>' +
+        '<p id="friend-status" role="status" style="font-size:0.85rem;margin-top:2px;margin-bottom:12px;"></p>' +
+        '<div id="friend-requests-section"></div>' +
+        '<div id="friend-list-section"></div>';
+
+    html +=
+        '<div class="logout-section">' +
+            '<button class="logout-btn" id="logout-btn">Logga ut</button>' +
+        '</div>' +
+        '<a href="/" class="back-link">← Tillbaka till startsidan</a>';
+
+    el.innerHTML = html;
+    var sendBtn = document.getElementById('send-friend-btn');
+    if (sendBtn) sendBtn.addEventListener('click', sendFriendRequest);
+    var logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) logoutBtn.addEventListener('click', doLogout);
+    loadFriendRequests();
+}
+
+async function doLogout() {
+    try { await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin', signal: AbortSignal.timeout(10000) }); } catch(e) {}
+    window.location.href = '/';
+}
+
+function escapeHtml(t) {
+    var d = document.createElement('div');
+    d.textContent = t || '';
+    return d.innerHTML;
+}
+function escapeAttr(t) {
+    return (t || '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+async function saveAlias() {
+    var input = document.getElementById('alias-input');
+    var status = document.getElementById('alias-status');
+    var alias = (input.value || '').trim();
+    if (alias.length < 2 || alias.length > 20) {
+        status.style.color = '#dc2626';
+        status.textContent = 'Alias måste vara 2–20 tecken.';
+        return;
+    }
+    try {
+        var res = await fetch('/api/auth/alias', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin',
+            signal: AbortSignal.timeout(10000),
+            body: JSON.stringify({ alias: alias })
+        });
+        var data = await res.json();
+        if (res.ok) {
+            status.style.color = '#22c55e';
+            status.textContent = '✓ Alias sparat: ' + data.alias;
+        } else {
+            status.style.color = '#dc2626';
+            status.textContent = data.error || 'Kunde inte spara alias.';
+        }
+    } catch (e) {
+        status.style.color = '#dc2626';
+        status.textContent = 'Nätverksfel. Försök igen.';
+    }
+}
+
+loadProfile();
+
+async function sendFriendRequest() {
+    var input = document.getElementById('friend-alias-input');
+    var status = document.getElementById('friend-status');
+    var alias = (input.value || '').trim();
+    if (!alias) { status.style.color = '#dc2626'; status.textContent = 'Ange ett alias.'; return; }
+    try {
+        var res = await fetch('/api/friends/request', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin', signal: AbortSignal.timeout(10000),
+            body: JSON.stringify({ alias: alias })
+        });
+        var data = await res.json();
+        if (res.ok) {
+            status.style.color = '#22c55e';
+            status.textContent = '✓ Vänförfrågan skickad!';
+            input.value = '';
+            loadFriendRequests();
+        } else {
+            status.style.color = '#dc2626';
+            status.textContent = data.error || 'Kunde inte skicka förfrågan.';
+        }
+    } catch (e) { status.style.color = '#dc2626'; status.textContent = 'Nätverksfel.'; }
+}
+
+async function loadFriends() {
+    var el = document.getElementById('friend-list-section');
+    if (!el) return;
+    try {
+        var res = await fetch('/api/friends', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (!res.ok) return;
+        var friends = await res.json();
+        if (friends.length === 0) {
+            el.innerHTML = '<p class="empty-state">Inga vänner ännu. Sök på alias ovan!</p>';
+            return;
+        }
+        var html = '<h3 style="color:var(--text-heading);font-size:1rem;margin-bottom:8px;">Vänlista</h3><ul class="friend-list" role="list">';
+        friends.forEach(function(f) {
+            html += '<li><span>' + escapeHtml(f.alias) + '</span>' +
+                '<div class="friend-actions"><button class="friend-btn friend-btn-danger" data-fid="' + escapeAttr(f.friendId) + '" data-alias="' + escapeAttr(f.alias) + '">Ta bort</button></div></li>';
+        });
+        html += '</ul>';
+        el.innerHTML = html;
+        el.querySelectorAll('.friend-btn-danger').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                removeFriend(this.getAttribute('data-fid'), this.getAttribute('data-alias'));
+            });
+        });
+    } catch (e) { console.warn('Failed to load friends:', e); }
+}
+
+async function loadFriendRequests() {
+    var el = document.getElementById('friend-requests-section');
+    if (!el) return;
+    try {
+        var res = await fetch('/api/friends/requests', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (!res.ok) return;
+        var requests = await res.json();
+        if (requests.length === 0) { el.innerHTML = ''; loadFriends(); return; }
+
+        var html = '<h3 style="color:var(--text-heading);font-size:1rem;margin-bottom:8px;">Väntande förfrågningar</h3><ul class="friend-list" role="list">';
+        requests.forEach(function(r) {
+            if (r.direction === 'incoming') {
+                html += '<li><span>Från: <strong>' + escapeHtml(r.fromAlias || 'Okänd') + '</strong></span>' +
+                    '<div class="friend-actions">' +
+                    '<button class="friend-btn friend-btn-accept" data-rid="' + escapeAttr(r.id) + '" data-action="accept" aria-label="Acceptera vänförfrågan från ' + escapeAttr(r.fromAlias) + '">Acceptera</button>' +
+                    '<button class="friend-btn friend-btn-danger" data-rid="' + escapeAttr(r.id) + '" data-action="decline" aria-label="Avböj vänförfrågan från ' + escapeAttr(r.fromAlias) + '">Avböj</button>' +
+                    '</div></li>';
+            } else {
+                html += '<li><span>Till: <strong>' + escapeHtml(r.toAlias || 'Okänd') + '</strong> (väntar)</span></li>';
+            }
+        });
+        html += '</ul>';
+        el.innerHTML = html;
+        el.querySelectorAll('[data-action="accept"]').forEach(function(btn) {
+            btn.addEventListener('click', function() { acceptRequest(this.getAttribute('data-rid')); });
+        });
+        el.querySelectorAll('[data-action="decline"]').forEach(function(btn) {
+            btn.addEventListener('click', function() { declineRequest(this.getAttribute('data-rid')); });
+        });
+        loadFriends();
+    } catch (e) { console.warn('Failed to load requests:', e); loadFriends(); }
+}
+
+async function acceptRequest(id) {
+    try {
+        await fetch('/api/friends/accept/' + encodeURIComponent(id), { method: 'POST', credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        loadFriendRequests();
+    } catch (e) { console.warn('Accept failed:', e); }
+}
+
+async function declineRequest(id) {
+    try {
+        await fetch('/api/friends/decline/' + encodeURIComponent(id), { method: 'POST', credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        loadFriendRequests();
+    } catch (e) { console.warn('Decline failed:', e); }
+}
+
+async function removeFriend(friendshipId, alias) {
+    if (!confirm('Ta bort ' + alias + ' som vän?')) return;
+    try {
+        await fetch('/api/friends/' + encodeURIComponent(friendshipId), { method: 'DELETE', credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        loadFriends();
+    } catch (e) { console.warn('Remove failed:', e); }
+}
+</script>
+</body>
+</html>

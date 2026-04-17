@@ -1067,15 +1067,8 @@ public class ApiIntegrationTests
     {
         var response = await _client.GetAsync("/api/analytics/summary");
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
-        await Assert.That(data.TryGetProperty("totalCompletions", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("uniquePlayers", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("daysWithData", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("averageTime", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("bestTime", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("hintRate", out _)).IsTrue();
-        await Assert.That(data.TryGetProperty("wordHintRate", out _)).IsTrue();
+        // Analytics endpoints require authentication
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
     }
 
     [Test]
@@ -1083,9 +1076,8 @@ public class ApiIntegrationTests
     {
         var response = await _client.GetAsync("/api/analytics/daily");
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
-        await Assert.That(data.ValueKind).IsEqualTo(JsonValueKind.Array);
+        // Analytics endpoints require authentication
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
     }
 
     [Test]
@@ -1093,7 +1085,8 @@ public class ApiIntegrationTests
     {
         var response = await _client.GetAsync("/api/analytics/daily?days=7");
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        // Analytics endpoints require authentication
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
     }
 
     [Test]
@@ -1101,9 +1094,8 @@ public class ApiIntegrationTests
     {
         var response = await _client.GetAsync("/api/analytics/players");
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
-        await Assert.That(data.ValueKind).IsEqualTo(JsonValueKind.Array);
+        // Analytics endpoints require authentication
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
     }
 
     [Test]
@@ -1111,7 +1103,8 @@ public class ApiIntegrationTests
     {
         var response = await _client.GetAsync("/api/analytics/players?limit=5");
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        // Analytics endpoints require authentication
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
     }
 
     // -----------------------------------------------------------------------

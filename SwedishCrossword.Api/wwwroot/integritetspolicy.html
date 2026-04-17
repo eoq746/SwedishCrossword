@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integritetspolicy - Svenskt Korsord | Gratis Korsord Online GDPR</title>
-    <meta name="description" content="Integritetspolicy för Svenskt Korsord - gratis korsord online. Läs om hur vi hanterar dina uppgifter, cookies och dina GDPR-rättigheter när du spelar våra svenska korsord.">
-    <meta name="keywords" content="integritetspolicy, gdpr, cookies, dataskydd, svenskt korsord, personuppgifter, korsord online, gratis korsord">
+    <title>Integritetspolicy - Svenskt Korsord | Gratis Korsord Online</title>
+    <meta name="description" content="Integritetspolicy för Svenskt Korsord. Läs om hur vi hanterar dina uppgifter, cookies och personlig data.">
+    <meta name="keywords"
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-snippet:-1">
     <link rel="canonical" href="https://svensktkorsord.se/integritetspolicy.html">
@@ -28,19 +28,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https:;
-        connect-src 'self';
-        font-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        form-action 'self';
-    ">
 
     <!-- Structured Data: WebPage with privacy policy -->
     <script type="application/ld+json">
@@ -164,7 +151,7 @@
         <p>Välkommen till Svenskt Korsord. Vi värnar om din integritet och vill vara transparenta med hur vi hanterar information på vår webbplats. Denna integritetspolicy förklarar vilken information vi samlar in, hur vi använder den och vilka rättigheter du har.</p>
 
         <div class="highlight-box">
-            <strong>Sammanfattning:</strong> Vi samlar in minimalt med information. Dina spelframsteg sparas lokalt i din webbläsare. Du kan när som helst radera dina lokala data genom att rensa webbläsarens cache.
+            <strong>Sammanfattning:</strong> Vi samlar in minimalt med information. Dina spelframsteg sparas lokalt i din webbläsare. Om du väljer att logga in med Google eller Microsoft sparas ett anonymiserat användar-ID, ditt valda alias och din vänlista på servern. Du kan när som helst radera dina lokala data genom att rensa webbläsarens cache.
         </div>
 
         <h2>1. Vem är personuppgiftsansvarig?</h2>
@@ -189,6 +176,21 @@
                 <td>Speltid</td>
                 <td>Hur lång tid det tog att lösa korsordet</td>
                 <td>Rankning på topplistan</td>
+            </tr>
+            <tr>
+                <td>Inloggning (valfritt)</td>
+                <td>Vid inloggning med Google eller Microsoft får vi ditt namn och e-post från leverantören. Vi lagrar ett anonymiserat (hashat) användar-ID – aldrig ditt riktiga Google/Microsoft-ID.</td>
+                <td>Profil, statistik och vänfunktion</td>
+            </tr>
+            <tr>
+                <td>Alias (valfritt)</td>
+                <td>Ett självvalt alias (2–20 tecken) som du kan ändra när som helst</td>
+                <td>Visas för vänner på vänners topplista</td>
+            </tr>
+            <tr>
+                <td>Vänförfrågningar</td>
+                <td>Om du lägger till vänner lagras vänrelationen på servern</td>
+                <td>Vänners topplista på pusselsidan</td>
             </tr>
         </table>
 
@@ -220,7 +222,7 @@
         <p>Vi använder tredjepartstjänster som kan samla in ytterligare information:</p>
         <ul>
             <!-- <li><strong>Google AdSense:</strong> Visar annonser och kan samla in information för att anpassa annonser (se avsnitt 4)</li> -->
-            <li><strong>GitHub Pages:</strong> Vår webbplats hostas på GitHub Pages, som kan logga anonymiserade åtkomstdata</li>
+            <li><strong>Azure Container Apps:</strong> Vår webbtjänst körs på Microsoft Azure, som kan logga anonymiserade åtkomstdata</li>
         </ul>
 
         <h2>3. Cookies och lokal lagring</h2>
@@ -234,6 +236,9 @@
             <li>Tidsstämpel för när du började spela</li>
         </ul>
         <p>LocalStorage-data skickas aldrig till våra servrar automatiskt och lagras endast på din enhet.</p>
+
+        <h3>3.2 Autentiseringscookie</h3>
+        <p>Om du loggar in med Google eller Microsoft sätts en krypterad session-cookie (<code>.Crossword.Auth</code>) som håller dig inloggad i upp till 30 dagar. Cookien är HttpOnly och Secure – den kan inte läsas av JavaScript och skickas bara över HTTPS. Du kan logga ut när som helst via din profilsida, vilket raderar cookien.</p>
 
         <!-- AdSense not in use yet
         <h3>3.2 Tredjepartscookies</h3>
@@ -328,7 +333,7 @@
         <p>Om du har frågor om denna integritetspolicy eller vill utöva dina rättigheter, kontakta oss via:</p>
         <ul>
             <li><a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a></li>
-            <li>Vår <a href="kontakt.html">kontaktsida</a></li>
+            Vår <a href="/kontakt.html">kontaktsida</a>
         </ul>
 
         <a href="/" class="back-link">← Startsida</a>
@@ -336,13 +341,14 @@
         <footer>
             <nav>
                 <a href="/">Startsida</a>
-                <a href="/puzzle.html">Spela</a>
+                <a href="/puzzle.html?size=17x17">Spela</a>
                 <a href="/calendar.html">Arkiv</a>
-                <a href="om-oss.html">Om oss</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="integritetspolicy.html">Integritetspolicy</a>
+                <a href="/profile.html">Min profil</a>
+                <a href="/om-oss.html">Om oss</a>
+                <a href="/kontakt.html">Kontakt</a>
+                <a href="/integritetspolicy.html">Integritetspolicy</a>
             </nav>
-            © 2025–2026 Svenskt Korsord. Alla rättigheter förbehållna.
+            © 2025–2026
             <p style="margin-top: 6px; font-size: 0.85rem; opacity: 0.8;">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
         </footer>
     </div>

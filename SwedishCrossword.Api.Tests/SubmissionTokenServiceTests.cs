@@ -18,7 +18,7 @@ public class SubmissionTokenServiceTests
                 ["SubmissionToken:Secret"] = secret
             })
             .Build();
-        return new SubmissionTokenService(config, NullLogger<SubmissionTokenService>.Instance);
+        return new SubmissionTokenService(config, NullLogger<SubmissionTokenService>.Instance, TimeProvider.System);
     }
 
     // -----------------------------------------------------------------------

@@ -1,4 +1,5 @@
 using System.Threading.RateLimiting;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
 using SwedishCrossword.Api;
@@ -6,7 +7,7 @@ using SwedishCrossword.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Limit request body size globally (no endpoint needs more than 50 KB)
+// Limit request body size globally (no endpoint needs more than 100 KB)
 builder.WebHost.ConfigureKestrel(options =>
 {
     options.AddServerHeader = false;
@@ -37,6 +38,47 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 // Health checks
 builder.Services.AddHealthChecks();
 
+// Authentication — cookie-based with Google & Microsoft social login
+var authBuilder = builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.Cookie.SameSite = SameSiteMode.Lax;
+    options.Cookie.Name = ".Crossword.Auth";
+    options.ExpireTimeSpan = TimeSpan.FromDays(30);
+    options.SlidingExpiration = true;
+    // API endpoints: return 401 instead of redirect (ASP.NET Core 10 does this automatically for minimal APIs)
+    options.LoginPath = null;
+});
+
+var googleClientId = builder.Configuration["Authentication:Google:ClientId"];
+var googleClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientSecret))
+{
+    authBuilder.AddGoogle(options =>
+    {
+        options.ClientId = googleClientId;
+        options.ClientSecret = googleClientSecret;
+    });
+}
+
+var microsoftClientId = builder.Configuration["Authentication:Microsoft:ClientId"];
+var microsoftClientSecret = builder.Configuration["Authentication:Microsoft:ClientSecret"];
+if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftClientSecret))
+{
+    authBuilder.AddMicrosoftAccount(options =>
+    {
+        options.ClientId = microsoftClientId;
+        options.ClientSecret = microsoftClientSecret;
+    });
+}
+
+builder.Services.AddAuthorization();
+
 // Output caching — avoids redundant disk reads for puzzle endpoints
 builder.Services.AddOutputCache(options =>
 {
@@ -62,7 +104,9 @@ builder.Services.AddRateLimiter(options =>
     // Global per-IP rate limit for all endpoints
     options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(context =>
         RateLimitPartition.GetFixedWindowLimiter(
-            context.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+            context.Connection.RemoteIpAddress?.ToString()
+                ?? context.Connection.Id
+                ?? "unknown",
             _ => new FixedWindowRateLimiterOptions
             {
                 Window = TimeSpan.FromMinutes(1),
@@ -83,6 +127,13 @@ builder.Services.AddRateLimiter(options =>
         opt.PermitLimit = 30;
         opt.QueueLimit = 0;
     });
+
+    options.AddFixedWindowLimiter("friends", opt =>
+    {
+        opt.Window = TimeSpan.FromMinutes(1);
+        opt.PermitLimit = 30;
+        opt.QueueLimit = 0;
+    });
 });
 
 // CORS — configurable via Cors:AllowedOrigins in appsettings (use ["*"] to allow all)
@@ -91,18 +142,19 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        if (allowedOrigins is { Length: > 0 } && !allowedOrigins.Contains("*"))
-        {
-            policy.WithOrigins(allowedOrigins)
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-        }
-        else
+        if (allowedOrigins is { Length: > 0 } && allowedOrigins.Contains("*"))
         {
             policy.AllowAnyOrigin()
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         }
+        else if (allowedOrigins is { Length: > 0 })
+        {
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        }
+        // else: no origins configured — default policy allows nothing
     });
 });
 
@@ -128,6 +180,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseCors();
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseRateLimiter();
 app.UseResponseCompression();
 app.UseOutputCache();
@@ -157,7 +211,7 @@ app.Use(async (context, next) =>
         "worker-src 'self'; " +
         "object-src 'none'; " +
         "base-uri 'self'; " +
-        "form-action 'self'";
+        "form-action 'self' https://accounts.google.com https://login.microsoftonline.com";
     if (isProduction)
         headers.StrictTransportSecurity = "max-age=31536000; includeSubDomains";
     await next();
@@ -166,10 +220,12 @@ app.Use(async (context, next) =>
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
+app.MapAuthEndpoints();
 app.MapPuzzleEndpoints(puzzlePath);
 app.MapLeaderboardEndpoints();
 app.MapStatsEndpoints();
 app.MapAnalyticsEndpoints();
+app.MapFriendsEndpoints();
 
 app.MapHealthChecks("/api/health");
 

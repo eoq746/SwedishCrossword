@@ -698,4 +698,202 @@ public class LeaderboardStoreTests
             .Build();
         return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System);
     }
+
+    // -----------------------------------------------------------------------
+    // Friends — SendFriendRequestAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task SendFriendRequest_ToSelf_Fails()
+    {
+        var (success, _) = await _store.SendFriendRequestAsync("user1", "user1");
+        await Assert.That(success).IsFalse();
+    }
+
+    [Test]
+    public async Task SendFriendRequest_Success()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        var (success, _) = await _store.SendFriendRequestAsync("user1", "user2");
+        await Assert.That(success).IsTrue();
+    }
+
+    [Test]
+    public async Task SendFriendRequest_Duplicate_Fails()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var (success, _) = await _store.SendFriendRequestAsync("user1", "user2");
+        await Assert.That(success).IsFalse();
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends — AcceptFriendRequestAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task AcceptFriendRequest_Success()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await Assert.That(requests.Count).IsEqualTo(1);
+
+        var accepted = await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+        await Assert.That(accepted).IsTrue();
+
+        var friends = await _store.GetFriendsAsync("user2");
+        await Assert.That(friends.Count).IsEqualTo(1);
+        await Assert.That(friends[0].Alias).IsEqualTo("Alice");
+    }
+
+    [Test]
+    public async Task AcceptFriendRequest_WrongUser_Fails()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        var accepted = await _store.AcceptFriendRequestAsync(requests[0].Id, "user1");
+        await Assert.That(accepted).IsFalse();
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends — DeclineFriendRequestAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task DeclineFriendRequest_SetsDeclinedStatus()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        var declined = await _store.DeclineFriendRequestAsync(requests[0].Id, "user2");
+        await Assert.That(declined).IsTrue();
+
+        var remaining = await _store.GetPendingRequestsAsync("user2");
+        await Assert.That(remaining.Count).IsEqualTo(0);
+
+        // Re-sending should fail because declined row still exists
+        var (success, _) = await _store.SendFriendRequestAsync("user1", "user2");
+        await Assert.That(success).IsFalse();
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends — RemoveFriendAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task RemoveFriend_Success()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var friends = await _store.GetFriendsAsync("user2");
+        await Assert.That(friends.Count).IsEqualTo(1);
+
+        var removed = await _store.RemoveFriendAsync("user2", friends[0].FriendId);
+        await Assert.That(removed).IsTrue();
+
+        var remaining = await _store.GetFriendsAsync("user2");
+        await Assert.That(remaining.Count).IsEqualTo(0);
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends — GetUserIdByAliasAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task GetUserIdByAlias_ReturnsCorrectUserId()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        var result = await _store.GetUserIdByAliasAsync("Alice");
+        await Assert.That(result).IsEqualTo("user1");
+    }
+
+    [Test]
+    public async Task GetUserIdByAlias_CaseInsensitive()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        var result = await _store.GetUserIdByAliasAsync("alice");
+        await Assert.That(result).IsEqualTo("user1");
+    }
+
+    [Test]
+    public async Task GetUserIdByAlias_NotFound_ReturnsNull()
+    {
+        var result = await _store.GetUserIdByAliasAsync("nobody");
+        await Assert.That(result).IsNull();
+    }
+
+    // -----------------------------------------------------------------------
+    // Friends — GetFriendsLeaderboardAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task GetFriendsLeaderboard_IncludesSelfAndFriends()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        // Become friends
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        // Add history entries
+        await _store.AppendHistoryAsync("2026-06-01", new HistoryRecord("Alice", 30.0, 1000L, "h1", "17x17", 0, 0, "user1"));
+        await _store.AppendHistoryAsync("2026-06-01", new HistoryRecord("Bob", 45.0, 1001L, "h1", "17x17", 0, 0, "user2"));
+
+        var lb = await _store.GetFriendsLeaderboardAsync("user1", "2026-06-01");
+        await Assert.That(lb.Count).IsEqualTo(2);
+        await Assert.That(lb[0].Name).IsEqualTo("Alice");
+        await Assert.That(lb[1].Name).IsEqualTo("Bob");
+    }
+
+    [Test]
+    public async Task GetPendingRequests_ReturnsCorrectDirection()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+
+        var forReceiver = await _store.GetPendingRequestsAsync("user2");
+        await Assert.That(forReceiver.Count).IsEqualTo(1);
+        await Assert.That(forReceiver[0].Direction).IsEqualTo("incoming");
+
+        var forSender = await _store.GetPendingRequestsAsync("user1");
+        await Assert.That(forSender.Count).IsEqualTo(1);
+        await Assert.That(forSender[0].Direction).IsEqualTo("outgoing");
+    }
+
+    [Test]
+    public async Task SendFriendRequest_TooManyPending_Fails()
+    {
+        await _store.SetAliasAsync("user1", "Spammer");
+        for (int i = 0; i < 50; i++)
+        {
+            var targetId = $"target{i}";
+            await _store.SetAliasAsync(targetId, $"User{i}");
+            var (s, _) = await _store.SendFriendRequestAsync("user1", targetId);
+            await Assert.That(s).IsTrue();
+        }
+
+        await _store.SetAliasAsync("target50", "User50");
+        var (success, _) = await _store.SendFriendRequestAsync("user1", "target50");
+        await Assert.That(success).IsFalse();
+    }
 }

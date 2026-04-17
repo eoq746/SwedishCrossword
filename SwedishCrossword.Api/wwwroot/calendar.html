@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Korsord-arkiv - Svenskt Korsord | Tidigare Korsord Online</title>
-    <meta name="description" content="Bläddra bland tidigare svenska korsord. Välj ett datum i kalendern för att spela ett korsord från arkivet. Gratis!">
+    <title>Korsord-arkiv - Svenskt Korsord</title>
+    <meta name="description"
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://svensktkorsord.se/calendar.html">
 
@@ -17,20 +17,7 @@
     <meta property="og:locale" content="sv_SE">
     <meta property="og:site_name" content="Svenskt Korsord">
 
-    <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline';
-        style-src 'self' 'unsafe-inline';
-        img-src 'self' data: https:;
-        connect-src 'self';
-        font-src 'self';
-        object-src 'none';
-        base-uri 'self';
-        form-action 'self';
-    ">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon"
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -42,6 +29,7 @@
             <nav class="puzzle-nav">
                 <a href="/" class="nav-back">← Startsida</a>
                 <a href="/puzzle.html?size=17x17" class="nav-link">🧩 Dagens korsord</a>
+                <span class="auth-btn-container"></span>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
             </nav>
             <h1>Korsord-arkiv</h1>
@@ -78,10 +66,12 @@
         <footer class="site-footer">
             <nav>
                 <a href="/">Startsida</a>
-                <a href="/puzzle.html">Spela</a>
-                <a href="om-oss.html">Om oss</a>
-                <a href="kontakt.html">Kontakt</a>
-                <a href="integritetspolicy.html">Integritetspolicy</a>
+                <a href="/puzzle.html?size=17x17">Spela</a>
+                <a href="/calendar.html">Arkiv</a>
+                <a href="/profile.html">Min profil</a>
+                <a href="/om-oss.html">Om oss</a>
+                <a href="/kontakt.html">Kontakt</a>
+                <a href="/integritetspolicy.html">Integritetspolicy</a>
             </nav>
             &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
         </footer>
@@ -115,7 +105,7 @@
 
         async function loadDates() {
             try {
-                const res = await fetch('/api/puzzle/dates');
+                const res = await fetch('/api/puzzle/dates', { signal: AbortSignal.timeout(10000) });
                 if (res.ok) {
                     const data = await res.json();
                     data.forEach(item => {
@@ -235,6 +225,38 @@
         loadDates();
     })();
     </script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('/sw.js');</script>
+    <script>
+    (function(){
+        function initAuth(data){
+            document.querySelectorAll('.auth-btn-container').forEach(function(c){
+                c.innerHTML='';
+                if(data && data.authenticated){
+                    var a=document.createElement('a');
+                    a.href='/profile.html';
+                    a.className='auth-user-name';
+                    a.textContent=data.name||'Inloggad';
+                    a.title='Min profil: '+a.textContent;
+                    var btn=document.createElement('button');
+                    btn.className='auth-btn auth-btn-logout';
+                    btn.textContent='Logga ut';
+                    btn.addEventListener('click',function(){fetch('/api/auth/logout',{method:'POST',credentials:'same-origin'}).then(function(){location.reload()})});
+                    c.appendChild(a);c.appendChild(btn);
+                }else{
+                    var ret=encodeURIComponent(location.pathname+location.search);
+                    var loginBtn=document.createElement('button');
+                    loginBtn.className='auth-btn';
+                    loginBtn.textContent='Logga in';
+                    var menu=document.createElement('div');
+                    menu.className='auth-login-menu';
+                    menu.innerHTML='<a href="/api/auth/login/google?returnUrl='+ret+'">Logga in med Google</a><a href="/api/auth/login/microsoft?returnUrl='+ret+'">Logga in med Microsoft</a>';
+                    loginBtn.addEventListener('click',function(){menu.classList.toggle('auth-menu-open')});
+                    c.appendChild(loginBtn);c.appendChild(menu);
+                }
+            });
+        }
+        fetch('/api/auth/me',{credentials:'same-origin'}).then(function(r){return r.json()}).then(initAuth).catch(function(){initAuth(null)});
+    })();
+    </script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

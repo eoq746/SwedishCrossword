@@ -58,6 +58,60 @@ function getSizeIcon(sizeKey) { return SIZE_ICONS[sizeKey] || '⬜'; }
 // Stats & leaderboard reset date — data before this date is discarded
 const STATS_RESET_DATE = '2026-04-14';
 
+// ── Auth state ──
+let authUser = null;
+async function fetchAuthUser() {
+    try {
+        const res = await fetch('/api/auth/me', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (res.ok) {
+            const data = await res.json();
+            if (data.authenticated) { authUser = data; return; }
+        }
+    } catch (e) { console.warn('Auth check failed:', e); }
+    authUser = null;
+}
+
+function renderAuthButton() {
+    document.querySelectorAll('.auth-btn-container').forEach(container => {
+        container.innerHTML = '';
+        if (authUser) {
+            const displayName = escapeHtml(authUser.name || 'Inloggad');
+            container.innerHTML =
+                `<a href="/profile.html" class="auth-user-name" title="Min profil: ${displayName}">${displayName}</a>` +
+                `<button class="auth-btn auth-btn-logout" onclick="doLogout()">Logga ut</button>`;
+        } else {
+            const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
+            container.innerHTML =
+                `<button class="auth-btn" onclick="showLoginMenu(this)">Logga in</button>` +
+                `<div class="auth-login-menu">` +
+                `<a href="/api/auth/login/google?returnUrl=${returnUrl}">Logga in med Google</a>` +
+                `<a href="/api/auth/login/microsoft?returnUrl=${returnUrl}">Logga in med Microsoft</a></div>`;
+        }
+    });
+}
+
+function showLoginMenu(btn) {
+    const menu = btn.parentElement.querySelector('.auth-login-menu');
+    if (!menu) return;
+    menu.classList.toggle('auth-menu-open');
+    if (menu.classList.contains('auth-menu-open')) {
+        setTimeout(() => {
+            document.addEventListener('click', function close(e) {
+                if (!menu.contains(e.target) && e.target !== btn) {
+                    menu.classList.remove('auth-menu-open');
+                    document.removeEventListener('click', close);
+                }
+            });
+        }, 0);
+    }
+}
+
+async function doLogout() {
+    try { await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' }); } catch {}
+    authUser = null;
+    renderAuthButton();
+}
+
 // Default puzzle data (used if puzzle.json fails to load)
 let puzzleData = {
     width: 11,
@@ -104,6 +158,17 @@ let letterHintsUsed = 0;
 let wordHintsUsed = 0;
 
 const FOCUS_DEBOUNCE_MS = 50;
+let _autoCheckTimer = null;
+
+// Auto-check: trigger checkAnswers() when every cell is filled.
+// Uses a short debounce so the player can correct a mistyped last letter.
+function autoCheckIfComplete() {
+    if (puzzleSolved) return;
+    clearTimeout(_autoCheckTimer);
+    const allInputs = document.querySelectorAll('.cell:not(.blocked) input');
+    if (!Array.from(allInputs).every(i => i.value.trim() !== '')) return;
+    _autoCheckTimer = setTimeout(() => checkAnswers(), 300);
+}
 
 // Format hint summary text: "2 bokstäver, 1 ord" / "3 bokstäver" / "1 ord"
 function formatHintSummary(letters, words) {
@@ -575,6 +640,68 @@ function renderPlayerStats() {
     panel.innerHTML = html;
 }
 
+// Render server-side personal stats for signed-in users (synced across devices)
+async function renderPersonalStats() {
+    const panel = document.getElementById('personal-stats');
+    if (!panel) return;
+    if (!authUser || !authUser.userId) {
+        panel.style.display = 'none';
+        return;
+    }
+    panel.style.display = '';
+    panel.innerHTML = '<p class="stats-loading">Laddar dina sparade resultat...</p>';
+
+    try {
+        const res = await fetch('/api/auth/my-stats', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (!res.ok) { panel.style.display = 'none'; return; }
+        const stats = await res.json();
+        if (!stats || stats.totalSolved === 0) {
+            panel.innerHTML = '<p class="stats-empty">Du har inga sparade resultat ännu. Lös ett korsord medan du är inloggad!</p>';
+            return;
+        }
+
+        let html = `
+        <h3 class="personal-stats-heading">📊 Dina resultat (alla enheter)</h3>
+        <div class="player-stats-grid">
+            <div class="stat-item">
+                <span class="stat-value">${stats.totalSolved}</span>
+                <span class="stat-label">Lösta</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.currentStreak}</span>
+                <span class="stat-label">Streak</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.bestStreak}</span>
+                <span class="stat-label">Bästa streak</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.bestTime > 0 ? formatTime(stats.bestTime) : '--:--'}</span>
+                <span class="stat-label">Bästa tid</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">${stats.averageTime > 0 ? formatTime(stats.averageTime) : '--:--'}</span>
+                <span class="stat-label">Snittid</span>
+            </div>
+        </div>`;
+
+        if (stats.recentSolves && stats.recentSolves.length > 0) {
+            html += '<h4 class="personal-stats-subheading">Senaste resultat</h4><ul class="personal-recent-list">';
+            for (const s of stats.recentSolves.slice(0, 10)) {
+                const sizeLabel = s.puzzleSize ? getSizeLabel(s.puzzleSize) : '';
+                const hintInfo = (s.hintsUsed || s.wordHintsUsed) ? ` 💡${s.hintsUsed + s.wordHintsUsed}` : '';
+                html += `<li>${s.date} — ${formatTime(s.time)}${sizeLabel ? ' — ' + sizeLabel : ''}${hintInfo}</li>`;
+            }
+            html += '</ul>';
+        }
+
+        panel.innerHTML = html;
+    } catch (e) {
+        console.warn('Failed to load personal stats:', e);
+        panel.style.display = 'none';
+    }
+}
+
 
 // Analyze input pattern for suspicious activity
 function analyzeInputPattern() {
@@ -800,8 +927,8 @@ async function fetchRemoteLeaderboard() {
     if (!LEADERBOARD_ENABLED) return null;
     
     try {
-        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`);
-        
+        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard`, { signal: AbortSignal.timeout(10000) });
+
         if (!response.ok) {
             console.warn('Failed to fetch remote leaderboard:', response.status);
             return null;
@@ -849,6 +976,8 @@ async function addToLeaderboard(username, timeSeconds) {
             const response = await fetch(`${LEADERBOARD_PROXY_URL}/scores`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                credentials: 'same-origin',
+                signal: AbortSignal.timeout(10000),
                 body: JSON.stringify({
                     token: puzzleData.submissionToken,
                     name: username,
@@ -926,11 +1055,13 @@ async function renderLeaderboard() {
         const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
         const rankClass = index < 3 ? `rank-${index + 1}` : '';
         const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+        const verifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '';
 
         // Build descriptive tooltip for the entire row
         const hL = entry.hintsUsed || 0;
         const hW = entry.wordHintsUsed || 0;
         let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
+        if (entry.userId) rowTooltip += '\n✓ Verifierat konto';
         if (hL > 0 || hW > 0) {
             rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
         } else {
@@ -940,17 +1071,54 @@ async function renderLeaderboard() {
         return `
             <li class="leaderboard-item ${rankClass} ${isCurrentUser ? 'current-user' : ''}" title="${rowTooltip}" ${isFlagged ? 'style="opacity: 0.6;"' : ''}>
                 <span class="leaderboard-rank">${rankDisplay}</span>
-                <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
+                <span class="leaderboard-name">${escapeHtml(entry.name)}${verifiedBadge}${hintBadge}${isFlagged ? `<span class="flag-icon" title="${escapeHtml(flagTooltip)}">⚠</span>` : ''}</span>
                 <span class="leaderboard-time">${formatTime(entry.time)}</span>
             </li>
         `;
     }).join('');
+
+    await renderFriendsLeaderboard();
 }
 
 function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
+}
+
+// Friends leaderboard
+async function renderFriendsLeaderboard() {
+    const section = document.getElementById('friends-leaderboard-section');
+    const list = document.getElementById('friends-leaderboard-list');
+    if (!section || !list) return;
+
+    if (!currentPuzzleDate) { section.style.display = 'none'; return; }
+
+    try {
+        const res = await fetch(`${LEADERBOARD_PROXY_URL}/friends/leaderboard?date=${encodeURIComponent(currentPuzzleDate)}`, { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (res.status === 401) return; // not logged in
+        if (!res.ok) return;
+
+        const entries = await res.json();
+        if (!entries || entries.length === 0) { section.style.display = 'none'; return; }
+
+        section.style.display = '';
+        const medals = ['🥇', '🥈', '🥉'];
+        list.innerHTML = entries.map((entry, index) => {
+            const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
+            const rankClass = index < 3 ? `rank-${index + 1}` : '';
+            const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+            return `
+                <li class="leaderboard-item ${rankClass}">
+                    <span class="leaderboard-rank">${rankDisplay}</span>
+                    <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}</span>
+                    <span class="leaderboard-time">${formatTime(entry.time)}</span>
+                </li>
+            `;
+        }).join('');
+    } catch (e) {
+        console.warn('Friends leaderboard failed:', e);
+    }
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -1032,9 +1200,9 @@ async function showUsernameModal() {
 
     document.getElementById('username-modal').classList.add('active');
 
-    const modalContent = document.querySelector('.modal');
+    const modalContent = document.querySelector('#username-modal .modal');
     let warningEl = document.getElementById('cheat-warning');
-    
+
     if (!validation.valid) {
         if (!warningEl) {
             warningEl = document.createElement('p');
@@ -1047,10 +1215,86 @@ async function showUsernameModal() {
         warningEl.remove();
     }
 
-    const savedName = localStorage.getItem('crossword-username') || '';
-    document.getElementById('username-input').value = savedName;
-    document.getElementById('username-input').focus();
-    document.getElementById('username-input').select();
+    const savedName = (authUser && authUser.alias) ? authUser.alias : (authUser && authUser.name) ? authUser.name : (localStorage.getItem('crossword-username') || '');
+    const nameInput = document.getElementById('username-input');
+    nameInput.value = savedName;
+    nameInput.readOnly = false;
+    nameInput.title = '';
+    nameInput.style.opacity = '';
+
+    // Show or hide the login prompt in the modal
+    let loginPrompt = document.getElementById('modal-login-prompt');
+    if (!authUser) {
+        if (!loginPrompt) {
+            loginPrompt = document.createElement('p');
+            loginPrompt.id = 'modal-login-prompt';
+            loginPrompt.style.cssText = 'font-size: 0.85rem; margin-bottom: 8px; text-align: center;';
+            const buttonsEl = document.querySelector('#username-modal .modal-buttons');
+            buttonsEl.parentElement.insertBefore(loginPrompt, buttonsEl);
+        }
+        loginPrompt.innerHTML = '🔒 <a href="#" id="modal-login-link" style="color: var(--accent, #2563eb);">Logga in</a> för att få en ✓ vid ditt namn.';
+        document.getElementById('modal-login-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            savePendingScore();
+            // Show provider links inside the modal
+            const menu = document.getElementById('modal-login-menu');
+            if (menu) {
+                const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
+                menu.innerHTML =
+                    '<a href="/api/auth/login/google?returnUrl=' + returnUrl + '" class="btn btn-primary" style="display:block;margin-bottom:6px;text-decoration:none;text-align:center;">Google</a>' +
+                    '<a href="/api/auth/login/microsoft?returnUrl=' + returnUrl + '" class="btn btn-primary" style="display:block;text-decoration:none;text-align:center;">Microsoft</a>';
+                menu.style.display = 'block';
+            }
+        });
+    } else if (loginPrompt) {
+        loginPrompt.remove();
+    }
+    // Hide login provider menu (reset from previous open)
+    const loginMenu = document.getElementById('modal-login-menu');
+    if (loginMenu) loginMenu.style.display = 'none';
+
+    nameInput.focus();
+    nameInput.select();
+}
+
+function savePendingScore() {
+    try {
+        localStorage.setItem('crossword-pending-score', JSON.stringify({
+            puzzleHash: puzzleHash,
+            seconds: seconds,
+            letterHintsUsed: letterHintsUsed,
+            wordHintsUsed: wordHintsUsed,
+            date: currentPuzzleDate,
+            returnUrl: window.location.href,
+            timestamp: Date.now()
+        }));
+    } catch (e) {
+        console.warn('Failed to save pending score:', e);
+    }
+}
+
+function checkPendingScore() {
+    try {
+        const raw = localStorage.getItem('crossword-pending-score');
+        if (!raw) return;
+        const pending = JSON.parse(raw);
+        // Only restore if it's for this puzzle, user is now signed in, and it's recent (< 10 min)
+        if (pending.puzzleHash === puzzleHash && authUser && (Date.now() - pending.timestamp < 600000)) {
+            localStorage.removeItem('crossword-pending-score');
+            // Restore completion state
+            seconds = pending.seconds;
+            letterHintsUsed = pending.letterHintsUsed || 0;
+            wordHintsUsed = pending.wordHintsUsed || 0;
+            document.getElementById('timer').textContent = formatTime(seconds);
+            puzzleSolved = true;
+            stopTimer();
+            setTimeout(() => showUsernameModal(), 300);
+        } else if (Date.now() - pending.timestamp >= 600000) {
+            localStorage.removeItem('crossword-pending-score');
+        }
+    } catch (e) {
+        console.warn('Failed to check pending score:', e);
+    }
 }
 
 function closeModal() {
@@ -1061,7 +1305,69 @@ async function submitScore() {
     const input = document.getElementById('username-input');
     let username = input.value.trim();
 
+    if (!username && authUser && authUser.name) username = authUser.name;
     if (!username) username = 'Anonym';
+
+    // If signed-in user typed a different name than their current alias, ask to update
+    if (authUser && authUser.alias && username !== authUser.alias) {
+        showConfirmModal(
+            'Byt alias?',
+            `Vill du ändra ditt alias till "${username}"? Det kommer användas på alla framtida topplistor.`,
+            async () => { await finishScoreSubmission(username, true); },
+            'Ja, byt alias'
+        );
+        // Also add a "keep old" option — submit with old alias without changing
+        const buttons = document.getElementById('message-modal-buttons');
+        const keepBtn = document.createElement('button');
+        keepBtn.className = 'btn btn-secondary';
+        keepBtn.textContent = 'Nej, behåll "' + authUser.alias + '"';
+        keepBtn.addEventListener('click', async () => { closeMessageModal(); await finishScoreSubmission(authUser.alias, false); });
+        buttons.appendChild(keepBtn);
+        return;
+    }
+
+    // Signed-in user without an alias — offer to save as alias
+    if (authUser && !authUser.alias && username !== 'Anonym') {
+        showConfirmModal(
+            'Spara alias?',
+            `Vill du använda "${username}" som ditt alias? Det visas på topplistor med en ✓.`,
+            async () => { await finishScoreSubmission(username, true); },
+            'Ja, spara'
+        );
+        const buttons = document.getElementById('message-modal-buttons');
+        const skipBtn = document.createElement('button');
+        skipBtn.className = 'btn btn-secondary';
+        skipBtn.textContent = 'Nej tack';
+        skipBtn.addEventListener('click', async () => { closeMessageModal(); await finishScoreSubmission(username, false); });
+        buttons.appendChild(skipBtn);
+        return;
+    }
+
+    await finishScoreSubmission(username, false);
+}
+
+async function finishScoreSubmission(username, updateAlias) {
+    if (updateAlias && authUser) {
+        try {
+            const res = await fetch(`${LEADERBOARD_PROXY_URL}/auth/alias`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                credentials: 'same-origin',
+                signal: AbortSignal.timeout(10000),
+                body: JSON.stringify({ alias: username })
+            });
+            if (res.ok) {
+                authUser.alias = username;
+            } else {
+                const data = await res.json().catch(() => null);
+                const err = data && data.error ? data.error : 'Kunde inte byta alias.';
+                showMessageModal('Alias', err);
+                return;
+            }
+        } catch (e) {
+            console.error('Failed to update alias:', e);
+        }
+    }
 
     localStorage.setItem('crossword-username', username);
 
@@ -1077,7 +1383,7 @@ async function fetchLeaderboardHistory(days = 30) {
     if (!LEADERBOARD_ENABLED) return {};
 
     try {
-        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard/history?days=${days}`);
+        const response = await fetch(`${LEADERBOARD_PROXY_URL}/leaderboard/history?days=${days}`, { signal: AbortSignal.timeout(10000) });
         if (!response.ok) {
             console.warn('Failed to fetch leaderboard history:', response.status);
             return {};
@@ -1144,9 +1450,11 @@ async function renderLeaderboardHistory() {
                 const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
                 const rankClass = index < 3 ? `rank-${index + 1}` : '';
                 const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+                const historyVerifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '';
                 const hL = entry.hintsUsed || 0;
                 const hW = entry.wordHintsUsed || 0;
                 let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
+                if (entry.userId) rowTooltip += '\n✓ Verifierat konto';
                 if (hL > 0 || hW > 0) {
                     rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
                 } else {
@@ -1155,7 +1463,7 @@ async function renderLeaderboardHistory() {
                 return `
                     <li class="leaderboard-item history-item ${rankClass}" title="${rowTooltip}">
                         <span class="leaderboard-rank">${rankDisplay}</span>
-                        <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}</span>
+                        <span class="leaderboard-name">${escapeHtml(entry.name)}${historyVerifiedBadge}${hintBadge}</span>
                         <span class="leaderboard-time">${formatTime(entry.time)}</span>
                     </li>`;
             }).join('');
@@ -1205,13 +1513,15 @@ function showPuzzleUnavailable() {
 }
 
 async function loadPuzzle() {
+    // Fetch auth state in parallel with puzzle load (non-blocking)
+    fetchAuthUser().then(() => { renderAuthButton(); checkPendingScore(); });
     try {
         const params = new URLSearchParams(window.location.search);
         const dateParam = params.get('date');
         const sizeParam = params.get('size') || '17x17';
         const sizeQuery = `size=${encodeURIComponent(sizeParam)}`;
         const url = dateParam ? `/api/puzzle/${dateParam}?${sizeQuery}` : `/api/puzzle/today?${sizeQuery}`;
-        const response = await fetch(url);
+        const response = await fetch(url, { signal: AbortSignal.timeout(15000) });
         if (response.ok) {
             puzzleData = await response.json();
             console.log('Loaded puzzle from API');
@@ -1307,6 +1617,7 @@ async function init() {
     loadProgress();
     await renderLeaderboard();
     renderPlayerStats();
+    renderPersonalStats();
 
     // Auto-load history data on desktop (no manual toggle needed)
     if (!window.matchMedia('(max-width:1100px)').matches) {
@@ -1368,9 +1679,6 @@ function syncCluesHeight() {
         }
     }
 }
-
-// Call syncCluesHeight on resize also
-window.addEventListener('resize', syncCluesHeight);
 
 // ═══════════════════════════════════════════════════════════════════════
 // §10  Grid Rendering & Custom Keyboard
@@ -1544,6 +1852,7 @@ function handleKeyboardTap(key) {
         updateStats();
         updateClueFilledStatus();
         saveProgress();
+        autoCheckIfComplete();
     }
 }
 
@@ -1560,7 +1869,7 @@ function renderClues() {
     validAcrossClues.forEach((clue, idx) => {
         const li = document.createElement('li');
         li.className = 'clue-item';
-        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
+        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${escapeHtml(clue.clue)}`;
         li.dataset.number = clue.number;
         li.dataset.direction = 'across';
         li.dataset.clueIndex = idx;
@@ -1571,7 +1880,7 @@ function renderClues() {
     validDownClues.forEach((clue, idx) => {
         const li = document.createElement('li');
         li.className = 'clue-item';
-        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${clue.clue}`;
+        li.innerHTML = `<span class="clue-number">${clue.number}. </span>${escapeHtml(clue.clue)}`;
         li.dataset.number = clue.number;
         li.dataset.direction = 'down';
         li.dataset.clueIndex = idx;
@@ -1621,6 +1930,8 @@ function handleInput(e) {
     updateStats();
     updateClueFilledStatus();
     saveProgress();
+
+    if (e.target.value) autoCheckIfComplete();
 }
 
 // Toggle direction between across and down
@@ -2164,6 +2475,7 @@ function handleCheckResult(correct, total, filled) {
 }
 
 async function checkAnswers() {
+    if (puzzleSolved) return;
     const inputs = document.querySelectorAll('.cell:not(.blocked) input');
     const total = inputs.length;
 
@@ -2183,6 +2495,7 @@ async function checkAnswers() {
             const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/check`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                signal: AbortSignal.timeout(10000),
                 body: JSON.stringify({
                     token: puzzleData.submissionToken,
                     puzzleDate: currentPuzzleDate,
@@ -2257,6 +2570,7 @@ function showSolution() {
                 const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
+                    signal: AbortSignal.timeout(10000),
                     body: JSON.stringify({
                         token: puzzleData.submissionToken,
                         puzzleDate: currentPuzzleDate,
@@ -2334,6 +2648,7 @@ async function revealLetter() {
             const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                signal: AbortSignal.timeout(10000),
                 body: JSON.stringify({
                     token: puzzleData.submissionToken,
                     puzzleDate: currentPuzzleDate,
@@ -2360,6 +2675,7 @@ async function revealLetter() {
                     updateClueFilledStatus();
                     saveProgress();
                     announce(`Avslöjade: ${answer}`);
+                    autoCheckIfComplete();
                     return;
                 }
             }
@@ -2384,6 +2700,7 @@ async function revealLetter() {
     updateClueFilledStatus();
     saveProgress();
     announce(`Avslöjade: ${answer}`);
+    autoCheckIfComplete();
 }
 
 async function revealWord() {
@@ -2420,6 +2737,7 @@ async function revealWord() {
             const response = await fetch(`${LEADERBOARD_PROXY_URL}/puzzle/hint`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                signal: AbortSignal.timeout(10000),
                 body: JSON.stringify({
                     token: puzzleData.submissionToken,
                     puzzleDate: currentPuzzleDate,
@@ -2456,6 +2774,7 @@ async function revealWord() {
         updateClueFilledStatus();
         saveProgress();
         announce(`Avslöjade helt ord (${revealed} bokstäver)`);
+        autoCheckIfComplete();
     }
 }
 
@@ -2845,8 +3164,19 @@ function toggleShortcutsHelp() {
     overlay.style.display = visible ? 'none' : 'flex';
     if (!visible) overlay.querySelector('.shortcuts-close')?.focus();
 }
+function trapFocusInShortcuts(e) {
+    const overlay = document.getElementById('shortcuts-overlay');
+    if (!overlay || overlay.style.display === 'none') return;
+    if (e.key !== 'Tab') return;
+    const focusable = overlay.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+    if (focusable.length === 0) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey) { if (document.activeElement === first) { e.preventDefault(); last.focus(); } }
+    else { if (document.activeElement === last) { e.preventDefault(); first.focus(); } }
+}
 (function() {
     document.addEventListener('keydown', (e) => {
+        trapFocusInShortcuts(e);
         // "?" opens/closes help (only when not typing in an input or modal username field)
         if (e.key === '?' && !e.target.closest('input')) {
             e.preventDefault();
