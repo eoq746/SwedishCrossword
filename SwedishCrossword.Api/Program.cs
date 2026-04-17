@@ -154,15 +154,20 @@ builder.Services.AddCors(options =>
     {
         if (allowedOrigins is { Length: > 0 } && allowedOrigins.Contains("*"))
         {
-            policy.AllowAnyOrigin()
+            // Wildcard origin cannot be combined with AllowCredentials per spec,
+            // so use SetIsOriginAllowed to allow any origin while still sending
+            // credentials (cookies) for authenticated endpoints.
+            policy.SetIsOriginAllowed(_ => true)
                   .AllowAnyMethod()
-                  .AllowAnyHeader();
+                  .AllowAnyHeader()
+                  .AllowCredentials();
         }
         else if (allowedOrigins is { Length: > 0 })
         {
             policy.WithOrigins(allowedOrigins)
                   .AllowAnyMethod()
-                  .AllowAnyHeader();
+                  .AllowAnyHeader()
+                  .AllowCredentials();
         }
         // else: no origins configured — default policy allows nothing
     });
@@ -198,6 +203,8 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseCors();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseRateLimiter();
@@ -234,9 +241,6 @@ app.Use(async (context, next) =>
         headers.StrictTransportSecurity = "max-age=31536000; includeSubDomains";
     await next();
 });
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
 
 app.MapAuthEndpoints();
 app.MapPuzzleEndpoints(puzzlePath);

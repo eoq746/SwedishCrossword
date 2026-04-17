@@ -79,7 +79,7 @@ SwedishCrosswords/
 |   |   +-- AnalyticsEndpoints.cs   # Analytics summary, daily breakdown, and top players
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
 |   |-- SubmissionTokenService.cs   # HMAC-signed token generation/validation, answer stripping, server-side answer reading
-|   |-- LeaderboardStore.cs         # SQLite-based leaderboard storage with history and analytics
+|   |-- LeaderboardStore.cs         # Dual-database leaderboard storage (Azure SQL in production, SQLite for local dev)
 |   |-- Models.cs                   # Request/response records (including analytics models)
 |   |-- wwwroot/                    # Frontend (served by the API)
 |   |   |-- index.html              # Landing page with SEO structured data
@@ -120,7 +120,7 @@ SwedishCrosswords/
 |-- scripts/                        # Operational scripts
 |   +-- reset-data.ps1              # Clear stale leaderboard history and legacy puzzle files from Azure Files share
 |-- infra/                          # Azure infrastructure (Bicep)
-|   +-- main.bicep                  # Container Apps, ACR, Storage, Log Analytics
+|   +-- main.bicep                  # Container Apps, ACR, Storage, Azure SQL, Log Analytics
 +-- .github/workflows/              # GitHub Actions
     +-- deploy-azure.yml            # Build, push & deploy to Azure Container Apps
 ```
@@ -196,7 +196,7 @@ The `infra/main.bicep` template provisions everything needed:
 | Storage Account + Azure Files | Persistent `/data` volume for puzzles and data protection keys (SMB mount) |\n| Azure SQL Database (Free tier) | Leaderboard, history, user aliases, and friends storage (serverless, auto-pauses after 60 min) |
 | Log Analytics Workspace | Container logs and monitoring |
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
-| User-Assigned Managed Identity | Secure ACR pull (no admin credentials) |
+| User-Assigned Managed Identity | Secure ACR pull and Azure SQL authentication (Entra-only, no passwords) |
 
 **One-time setup (run manually with your own Azure CLI identity — creates the role assignment that CI/CD skips):**
 
@@ -229,7 +229,7 @@ az deployment group create \
 - `AZURE_CLIENT_ID` — App registration client ID (OIDC)
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
-- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)\n- `SQL_ADMIN_PASSWORD` — Azure SQL admin password (generate with `openssl rand -base64 32`)
+- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
 
 ### Running the CLI Generator
 
@@ -365,7 +365,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: SQLite-based store (`LeaderboardStore.cs`) using WAL mode, configurable via `Storage:LeaderboardPath`, with per-puzzle deduplication, 7-day pruning, historical archival, user aliases, friend requests, and automatic migration from legacy JSON files on startup
+- **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) — Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases, friend requests, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
 - **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs

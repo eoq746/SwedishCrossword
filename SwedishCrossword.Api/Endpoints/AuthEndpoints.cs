@@ -124,7 +124,9 @@ internal static class AuthEndpoints
             if (!await store.IsAliasAvailableAsync(alias, excludeUserId: userId))
                 return Results.Conflict(new ErrorResponse("Aliaset är redan taget"));
 
-            await store.SetAliasAsync(userId, alias);
+            var set = await store.SetAliasAsync(userId, alias);
+            if (!set)
+                return Results.Conflict(new ErrorResponse("Aliaset är redan taget"));
             return Results.Ok(new { alias });
         }).RequireAuthorization();
 

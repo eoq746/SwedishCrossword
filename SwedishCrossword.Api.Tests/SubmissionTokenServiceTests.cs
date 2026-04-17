@@ -158,7 +158,7 @@ public class SubmissionTokenServiceTests
                 }
             """);
 
-            var answers = SubmissionTokenService.ReadAnswers(tempFile);
+            var answers = await SubmissionTokenService.ReadAnswersAsync(tempFile);
 
             await Assert.That(answers).IsNotNull();
             await Assert.That(answers!.Count).IsEqualTo(3);
@@ -175,7 +175,7 @@ public class SubmissionTokenServiceTests
     [Test]
     public async Task ReadAnswers_MissingFile_ReturnsNull()
     {
-        var result = SubmissionTokenService.ReadAnswers("/nonexistent/path.json");
+        var result = await SubmissionTokenService.ReadAnswersAsync("/nonexistent/path.json");
 
         await Assert.That(result).IsNull();
     }
@@ -187,7 +187,7 @@ public class SubmissionTokenServiceTests
         try
         {
             await File.WriteAllTextAsync(tempFile, "not json at all");
-            var result = SubmissionTokenService.ReadAnswers(tempFile);
+            var result = await SubmissionTokenService.ReadAnswersAsync(tempFile);
             await Assert.That(result).IsNull();
         }
         finally
@@ -203,7 +203,7 @@ public class SubmissionTokenServiceTests
         try
         {
             await File.WriteAllTextAsync(tempFile, """{"width":3}""");
-            var result = SubmissionTokenService.ReadAnswers(tempFile);
+            var result = await SubmissionTokenService.ReadAnswersAsync(tempFile);
             await Assert.That(result).IsNull();
         }
         finally
@@ -224,7 +224,7 @@ public class SubmissionTokenServiceTests
                 }
             """);
 
-            var answers = SubmissionTokenService.ReadAnswers(tempFile);
+            var answers = await SubmissionTokenService.ReadAnswersAsync(tempFile);
 
             await Assert.That(answers).IsNotNull();
             await Assert.That(answers!.Count).IsEqualTo(1);

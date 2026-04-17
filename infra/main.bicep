@@ -2,13 +2,14 @@
 // Azure Container Apps infrastructure for SwedishCrossword API
 // ---------------------------------------------------------------------------
 // Deploys: ACR, Managed Identity, Log Analytics, Container Apps Environment,
-//          Storage Account + Azure Files share (SMB), and the Container App
-//          with a volume mount for persistent puzzle/leaderboard data.
+//          Storage Account + Azure Files share (SMB), Azure SQL with Entra-only
+//          authentication, and the Container App with a volume mount for
+//          persistent puzzle data.
 //
-// NOTE:   Azure Files SMB does not support mmap, so SQLite WAL mode is not
-//         available. The app falls back to DELETE journal mode automatically.
-//         For WAL support, switch to Azure Files NFS (requires Premium tier
-//         and VNet integration).
+// NOTE:   The app requires Azure SQL in non-Development environments.
+//         SQLite is only available for local development.
+//         The managed identity is set as the Entra ID admin on the SQL Server
+//         — no SQL authentication passwords are used.
 //
 // Usage (first time):
 //   az group create -n rg-svensktkorsord -l swedencentral
@@ -48,9 +49,8 @@ param microsoftClientId string = ''
 @description('Microsoft OAuth client secret for social login.')
 param microsoftClientSecret string = ''
 
-@secure()
-@description('SQL Server admin password. Generate with: openssl rand -base64 32')
-param sqlAdminPassword string = ''
+@description('Deploy Azure SQL resources. Set to true when SQL is needed.')
+param deployDatabase bool = true
 
 @description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
 param createRoleAssignment bool = true
@@ -81,7 +81,7 @@ resource acr 'Microsoft.ContainerRegistry/registries@2023-11-01-preview' = {
 }
 
 // ---------------------------------------------------------------------------
-// User-Assigned Managed Identity (for ACR pull without admin credentials)
+// User-Assigned Managed Identity (for ACR pull and Azure SQL access)
 // ---------------------------------------------------------------------------
 resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-01-31' = {
   name: '${appName}-identity'
@@ -145,21 +145,27 @@ resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2023-0
 }
 
 // ---------------------------------------------------------------------------
-// Azure SQL Server + Free tier database
+// Azure SQL Server + Free tier database (Entra-only authentication)
 // ---------------------------------------------------------------------------
-resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (sqlAdminPassword != '') {
+resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDatabase) {
   name: take(sqlServerName, 63)
   location: location
   properties: {
-    administratorLogin: 'sqladmin'
-    administratorLoginPassword: sqlAdminPassword
     minimalTlsVersion: '1.2'
     publicNetworkAccess: 'Enabled'
+    administrators: {
+      administratorType: 'ActiveDirectory'
+      login: identity.name
+      sid: identity.properties.principalId
+      tenantId: tenant().tenantId
+      azureADOnlyAuthentication: true
+      principalType: 'Application'
+    }
   }
 }
 
 // Allow Azure services (Container Apps) to connect
-resource sqlFirewallAllowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (sqlAdminPassword != '') {
+resource sqlFirewallAllowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (deployDatabase) {
   parent: sqlServer
   name: 'AllowAllAzureIps'
   properties: {
@@ -168,7 +174,7 @@ resource sqlFirewallAllowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-p
   }
 }
 
-resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (sqlAdminPassword != '') {
+resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deployDatabase) {
   parent: sqlServer
   name: sqlDbName
   location: location
@@ -186,7 +192,7 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (sqlAdm
   }
 }
 
-var sqlConnectionString = sqlAdminPassword != '' ? 'Server=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};User ID=sqladmin;Password=${sqlAdminPassword};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
+var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
 
 // ---------------------------------------------------------------------------
 // Container Apps Environment
@@ -245,9 +251,6 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         allowInsecure: false
       }
       secrets: union(
-        sqlConnectionString != '' ? [
-          { name: 'sql-connection-string', value: sqlConnectionString }
-        ] : [],
         submissionTokenSecret != '' ? [
           {
             name: 'submissiontoken-secret'
@@ -287,7 +290,7 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
             ],
             sqlConnectionString != '' ? [
-              { name: 'ConnectionStrings__Leaderboard', secretRef: 'sql-connection-string' }
+              { name: 'ConnectionStrings__Leaderboard', value: sqlConnectionString }
             ] : [],
             submissionTokenSecret != '' ? [
               { name: 'SubmissionToken__Secret', secretRef: 'submissiontoken-secret' }

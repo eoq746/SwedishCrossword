@@ -29,10 +29,9 @@ sealed class LeaderboardStore : IDisposable
     private readonly string _dataDir;
     private readonly ILogger<LeaderboardStore> _logger;
     private readonly TimeProvider _timeProvider;
-    private readonly SemaphoreSlim _writeLock = new(1, 1);
     private readonly bool _useSqlServer;
 
-    public LeaderboardStore(IConfiguration config, ILogger<LeaderboardStore> logger, TimeProvider timeProvider)
+    public LeaderboardStore(IConfiguration config, ILogger<LeaderboardStore> logger, TimeProvider timeProvider, IHostEnvironment environment)
     {
         _logger = logger;
         _timeProvider = timeProvider;
@@ -42,9 +41,20 @@ sealed class LeaderboardStore : IDisposable
 
         if (_useSqlServer)
         {
-            _connectionString = sqlConnStr!;
+            var sqlBuilder = new SqlConnectionStringBuilder(sqlConnStr!);
+            if (sqlBuilder.ConnectRetryCount == 1)
+                sqlBuilder.ConnectRetryCount = 3;
+            if (sqlBuilder.ConnectRetryInterval == 10)
+                sqlBuilder.ConnectRetryInterval = 5;
+            _connectionString = sqlBuilder.ToString();
             _dataDir = string.Empty;
             _logger.LogInformation("Using Azure SQL for leaderboard storage");
+        }
+        else if (!environment.IsDevelopment())
+        {
+            throw new InvalidOperationException(
+                "Azure SQL connection string 'ConnectionStrings:Leaderboard' is required in non-Development environments. " +
+                "SQLite is only supported for local development.");
         }
         else
         {
@@ -121,6 +131,8 @@ sealed class LeaderboardStore : IDisposable
         await using var conn = await OpenConnectionAsync();
         await using var tx = await conn.BeginTransactionAsync();
 
+        try
+        {
         // Deduplicate
         await using (var dedup = conn.CreateCommand())
         {
@@ -212,6 +224,12 @@ sealed class LeaderboardStore : IDisposable
 
         await tx.CommitAsync();
         return await GetScoresForKeyAsync(conn, null, leaderboardKey);
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
     }
 
     // POST /leaderboard/history
@@ -220,6 +238,8 @@ sealed class LeaderboardStore : IDisposable
         await using var conn = await OpenConnectionAsync();
         await using var tx = await conn.BeginTransactionAsync();
 
+        try
+        {
         // Deduplicate
         await using (var dedup = conn.CreateCommand())
         {
@@ -331,6 +351,12 @@ sealed class LeaderboardStore : IDisposable
         }
 
         await tx.CommitAsync();
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
     }
 
     // GET /leaderboard/history?days=N
@@ -380,7 +406,6 @@ sealed class LeaderboardStore : IDisposable
 
     public void Dispose()
     {
-        _writeLock.Dispose();
         if (!_useSqlServer)
             SqliteConnection.ClearAllPools();
     }
@@ -419,7 +444,11 @@ sealed class LeaderboardStore : IDisposable
         return count == 0;
     }
 
-    public async Task SetAliasAsync(string userId, string alias)
+    /// <summary>
+    /// Sets (or updates) the alias for a user. Returns false if the alias is
+    /// already taken by another user (unique constraint violation).
+    /// </summary>
+    public async Task<bool> SetAliasAsync(string userId, string alias)
     {
         await using var conn = await OpenConnectionAsync();
         await using var cmd = conn.CreateCommand();
@@ -437,7 +466,17 @@ sealed class LeaderboardStore : IDisposable
               """;
         AddParam(cmd, "@uid", userId);
         AddParam(cmd, "@alias", alias);
-        await cmd.ExecuteNonQueryAsync();
+
+        try
+        {
+            await cmd.ExecuteNonQueryAsync();
+            return true;
+        }
+        catch (DbException ex) when (IsUniqueConstraintViolation(ex))
+        {
+            _logger.LogWarning(ex, "Alias '{Alias}' uniqueness conflict for user {UserId}", alias, userId);
+            return false;
+        }
     }
 
     public async Task<UserStatsResponse> GetUserStatsAsync(string userId)
@@ -670,9 +709,13 @@ sealed class LeaderboardStore : IDisposable
             var status = reader.GetString(0);
             await reader.CloseAsync();
             await tx.RollbackAsync();
-            if (status == "accepted") return (false, "Ni är redan vänner");
-            if (status == "pending") return (false, "En vänförfrågan finns redan");
-            if (status == "declined") return (false, "En vänförfrågan har redan avböjts");
+            return status switch
+            {
+                "accepted" => (false, "Ni är redan vänner"),
+                "pending" => (false, "En vänförfrågan finns redan"),
+                "declined" => (false, "En vänförfrågan har redan avböjts"),
+                _ => (false, "En vänförfrågan finns redan")
+            };
         }
         await reader.CloseAsync();
 
@@ -887,6 +930,9 @@ sealed class LeaderboardStore : IDisposable
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_scores_key_time')
             CREATE INDEX idx_scores_key_time ON scores (leaderboard_key, time);
 
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_scores_dedup')
+            CREATE INDEX idx_scores_dedup ON scores (leaderboard_key, name, time);
+
             IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'history')
             CREATE TABLE history (
                 id              INT IDENTITY(1,1) PRIMARY KEY,
@@ -903,6 +949,9 @@ sealed class LeaderboardStore : IDisposable
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_history_date')
             CREATE INDEX idx_history_date ON history (date);
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_history_dedup')
+            CREATE INDEX idx_history_dedup ON history (date, name, time);
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_history_user_id')
             CREATE INDEX idx_history_user_id ON history (user_id);
@@ -939,12 +988,29 @@ sealed class LeaderboardStore : IDisposable
         conn.Open();
 
         using var pragma = conn.CreateCommand();
-        pragma.CommandText = """
-            PRAGMA journal_mode = WAL;
-            PRAGMA busy_timeout = 5000;
-            PRAGMA synchronous = NORMAL;
-            """;
+        pragma.CommandText = "PRAGMA busy_timeout = 5000;";
         pragma.ExecuteNonQuery();
+
+        // Attempt WAL mode — preferred but not supported on all file systems
+        // (e.g. Azure Files SMB lacks mmap support required by WAL).
+        using var walCmd = conn.CreateCommand();
+        walCmd.CommandText = "PRAGMA journal_mode = WAL;";
+        var result = walCmd.ExecuteScalar()?.ToString();
+        if (string.Equals(result, "wal", StringComparison.OrdinalIgnoreCase))
+        {
+            _logger.LogInformation("SQLite journal mode set to WAL");
+            using var syncCmd = conn.CreateCommand();
+            syncCmd.CommandText = "PRAGMA synchronous = NORMAL;";
+            syncCmd.ExecuteNonQuery();
+        }
+        else
+        {
+            _logger.LogWarning(
+                "SQLite WAL mode not available (got '{Result}'). " +
+                "Falling back to default journal mode with full synchronous writes. " +
+                "This is expected on Azure Files SMB mounts.",
+                result);
+        }
 
         using var create = conn.CreateCommand();
         create.CommandText = """
@@ -959,6 +1025,7 @@ sealed class LeaderboardStore : IDisposable
                 user_id         TEXT
             );
             CREATE INDEX IF NOT EXISTS idx_scores_key_time ON scores (leaderboard_key, time);
+            CREATE INDEX IF NOT EXISTS idx_scores_dedup ON scores (leaderboard_key, name, time);
 
             CREATE TABLE IF NOT EXISTS history (
                 date            TEXT NOT NULL,
@@ -972,6 +1039,7 @@ sealed class LeaderboardStore : IDisposable
                 user_id         TEXT
             );
             CREATE INDEX IF NOT EXISTS idx_history_date ON history (date);
+            CREATE INDEX IF NOT EXISTS idx_history_dedup ON history (date, name, time);
             CREATE INDEX IF NOT EXISTS idx_history_user_id ON history (user_id);
 
             CREATE TABLE IF NOT EXISTS user_aliases (
@@ -1111,7 +1179,7 @@ sealed class LeaderboardStore : IDisposable
         if (!_useSqlServer)
         {
             await using var pragma = conn.CreateCommand();
-            pragma.CommandText = "PRAGMA busy_timeout = 5000; PRAGMA synchronous = NORMAL;";
+            pragma.CommandText = "PRAGMA busy_timeout = 5000;";
             await pragma.ExecuteNonQueryAsync();
         }
 
@@ -1156,4 +1224,8 @@ sealed class LeaderboardStore : IDisposable
         p.Value = value;
         cmd.Parameters.Add(p);
     }
+
+    private static bool IsUniqueConstraintViolation(DbException ex) =>
+        ex is SqliteException { SqliteErrorCode: 19 } // SQLITE_CONSTRAINT
+        || ex is SqlException { Number: 2601 or 2627 }; // SQL Server unique index / PK violation
 }

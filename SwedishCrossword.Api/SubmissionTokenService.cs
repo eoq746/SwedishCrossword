@@ -210,12 +210,12 @@ sealed class SubmissionTokenService
     /// Reads the answer map ("row,col" → letter) from a puzzle JSON file on disk.
     /// Returns null if the file does not exist or cannot be parsed.
     /// </summary>
-    internal static Dictionary<string, string>? ReadAnswers(string filePath)
+    internal static async Task<Dictionary<string, string>?> ReadAnswersAsync(string filePath)
     {
         if (!File.Exists(filePath)) return null;
         try
         {
-            var json = File.ReadAllText(filePath);
+            var json = await File.ReadAllTextAsync(filePath);
             var node = JsonNode.Parse(json);
             if (node is not JsonObject obj || obj["cells"] is not JsonArray cellRows)
                 return null;

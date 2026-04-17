@@ -43,7 +43,7 @@ internal static class PuzzleEndpoints
             return Results.NotFound(new ErrorResponse("No puzzle available for the requested date"));
         }).CacheOutput("puzzle-archive");
 
-        app.MapPost("/api/puzzle/check", (PuzzleCheckRequest body, SubmissionTokenService tokenService) =>
+        app.MapPost("/api/puzzle/check", async (PuzzleCheckRequest body, SubmissionTokenService tokenService) =>
         {
             if (string.IsNullOrWhiteSpace(body.Token))
                 return Results.Json(new ErrorResponse("Missing token"), statusCode: 403);
@@ -60,7 +60,7 @@ internal static class PuzzleEndpoints
             if (filePath is null)
                 return Results.NotFound(new ErrorResponse("Puzzle not found"));
 
-            var answers = SubmissionTokenService.ReadAnswers(filePath);
+            var answers = await SubmissionTokenService.ReadAnswersAsync(filePath);
             if (answers is null)
                 return Results.Json(new ErrorResponse("Failed to read puzzle data"), statusCode: 500);
 
@@ -87,7 +87,7 @@ internal static class PuzzleEndpoints
             return Results.Ok(new { solved = allCorrect && allFilled, results });
         }).RequireRateLimiting("puzzle-interact");
 
-        app.MapPost("/api/puzzle/hint", (PuzzleHintRequest body, SubmissionTokenService tokenService) =>
+        app.MapPost("/api/puzzle/hint", async (PuzzleHintRequest body, SubmissionTokenService tokenService) =>
         {
             if (string.IsNullOrWhiteSpace(body.Token))
                 return Results.Json(new ErrorResponse("Missing token"), statusCode: 403);
@@ -107,7 +107,7 @@ internal static class PuzzleEndpoints
             if (filePath is null)
                 return Results.NotFound(new ErrorResponse("Puzzle not found"));
 
-            var answers = SubmissionTokenService.ReadAnswers(filePath);
+            var answers = await SubmissionTokenService.ReadAnswersAsync(filePath);
             if (answers is null)
                 return Results.Json(new ErrorResponse("Failed to read puzzle data"), statusCode: 500);
 

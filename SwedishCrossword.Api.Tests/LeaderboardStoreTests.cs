@@ -1,6 +1,8 @@
 using System.Text.Json;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging.Abstractions;
 using TUnit.Assertions;
 using TUnit.Assertions.Extensions;
@@ -696,7 +698,15 @@ public class LeaderboardStoreTests
                 ["Storage:LeaderboardPath"] = dataDir
             })
             .Build();
-        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System);
+        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System, new TestHostEnvironment());
+    }
+
+    private sealed class TestHostEnvironment : IHostEnvironment
+    {
+        public string EnvironmentName { get; set; } = Environments.Development;
+        public string ApplicationName { get; set; } = "Tests";
+        public string ContentRootPath { get; set; } = AppContext.BaseDirectory;
+        public IFileProvider ContentRootFileProvider { get; set; } = new NullFileProvider();
     }
 
     // -----------------------------------------------------------------------
