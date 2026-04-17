@@ -1,5 +1,6 @@
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
 using SwedishCrossword.Api;
@@ -78,6 +79,15 @@ if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftC
 }
 
 builder.Services.AddAuthorization();
+
+// Data Protection — persist keys to the shared data volume so auth cookies
+// survive container restarts and new revisions in Azure Container Apps
+var dataProtectionPath = builder.Configuration["Storage:LeaderboardPath"];
+if (string.IsNullOrWhiteSpace(dataProtectionPath))
+    dataProtectionPath = Path.Combine(AppContext.BaseDirectory, "leaderboard");
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(Path.Combine(dataProtectionPath, "keys")))
+    .SetApplicationName("SwedishCrossword");
 
 // Output caching — avoids redundant disk reads for puzzle endpoints
 builder.Services.AddOutputCache(options =>
@@ -172,6 +182,14 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler(err => err.Run(async ctx =>
     {
+        var exFeature = ctx.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>();
+        if (exFeature?.Error is { } ex)
+        {
+            var logger = ctx.RequestServices.GetRequiredService<ILoggerFactory>()
+                .CreateLogger("UnhandledException");
+            logger.LogError(ex, "Unhandled exception on {Method} {Path}", ctx.Request.Method, ctx.Request.Path);
+        }
+
         ctx.Response.StatusCode = 500;
         ctx.Response.ContentType = "application/json";
         await ctx.Response.WriteAsync("{\"error\":\"An unexpected error occurred\"}");

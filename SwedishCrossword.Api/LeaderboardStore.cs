@@ -25,6 +25,7 @@ sealed class LeaderboardStore : IDisposable
     private readonly string _dataDir;
     private readonly ILogger<LeaderboardStore> _logger;
     private readonly TimeProvider _timeProvider;
+    private readonly SemaphoreSlim _writeLock = new(1, 1);
 
     public LeaderboardStore(IConfiguration config, ILogger<LeaderboardStore> logger, TimeProvider timeProvider)
     {
@@ -303,7 +304,11 @@ sealed class LeaderboardStore : IDisposable
         return result;
     }
 
-    public void Dispose() => SqliteConnection.ClearAllPools();
+    public void Dispose()
+    {
+        _writeLock.Dispose();
+        SqliteConnection.ClearAllPools();
+    }
 
     // ── User Alias Management ──
 
@@ -649,7 +654,7 @@ sealed class LeaderboardStore : IDisposable
         using var pragma = conn.CreateCommand();
         pragma.CommandText = """
             PRAGMA journal_mode = WAL;
-            PRAGMA busy_timeout = 5000;
+            PRAGMA busy_timeout = 30000;
             PRAGMA synchronous = NORMAL;
             """;
         pragma.ExecuteNonQuery();
@@ -759,7 +764,7 @@ sealed class LeaderboardStore : IDisposable
 
         await using var pragma = conn.CreateCommand();
         pragma.CommandText = """
-            PRAGMA busy_timeout = 5000;
+            PRAGMA busy_timeout = 30000;
             PRAGMA synchronous = NORMAL;
             """;
         await pragma.ExecuteNonQueryAsync();
