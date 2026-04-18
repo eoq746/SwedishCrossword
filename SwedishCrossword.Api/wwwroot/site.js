@@ -1302,6 +1302,7 @@ function closeModal() {
 }
 
 async function submitScore() {
+    if (hasSubmittedScore) return;
     const input = document.getElementById('username-input');
     let username = input.value.trim();
 
@@ -1373,8 +1374,8 @@ async function finishScoreSubmission(username, updateAlias) {
 
     localStorage.setItem('crossword-username', username);
 
-    await addToLeaderboard(username, seconds);
     hasSubmittedScore = true;
+    await addToLeaderboard(username, seconds);
 
     closeModal();
     await renderLeaderboard();
