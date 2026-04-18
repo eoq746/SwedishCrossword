@@ -58,7 +58,9 @@ internal static class LeaderboardEndpoints
             }
             catch (Exception ex)
             {
-                logger.LogWarning(ex, "Failed to archive history for {Date}/{Hash}", body.Date, body.PuzzleHash);
+                var safeDateForLog = (body.Date ?? string.Empty).Replace("\r", "").Replace("\n", "");
+                var safePuzzleHashForLog = (body.PuzzleHash ?? string.Empty).Replace("\r", "").Replace("\n", "");
+                logger.LogWarning(ex, "Failed to archive history for {Date}/{Hash}", safeDateForLog, safePuzzleHashForLog);
             }
 
             return Results.Ok(new { success = true, leaderboard });

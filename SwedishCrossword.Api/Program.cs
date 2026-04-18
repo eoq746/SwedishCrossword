@@ -209,7 +209,9 @@ if (!app.Environment.IsDevelopment())
         {
             var logger = ctx.RequestServices.GetRequiredService<ILoggerFactory>()
                 .CreateLogger("UnhandledException");
-            logger.LogError(ex, "Unhandled exception on {Method} {Path}", ctx.Request.Method, ctx.Request.Path);
+            var safeMethod = (ctx.Request.Method ?? string.Empty).Replace("\r", "").Replace("\n", "");
+            var safePath = (ctx.Request.Path.Value ?? string.Empty).Replace("\r", "").Replace("\n", "");
+            logger.LogError(ex, "Unhandled exception on {Method} {Path}", safeMethod, safePath);
         }
 
         ctx.Response.StatusCode = 500;
