@@ -578,10 +578,11 @@ header p{font-size:.95rem;opacity:.95}
 @media (max-width:1099px){
     /* Show custom keyboard on small screens (touch devices enable it via JS) */
     .custom-keyboard{display:none}
-    .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--kb-bg);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--border-light);padding:6px 4px env(safe-area-inset-bottom,4px) 4px;margin:0;border-radius:0;width:100%;box-sizing:border-box}
+    .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;background:var(--kb-bg);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--border-light);padding:6px 4px env(safe-area-inset-bottom,4px) 4px;margin:0;border-radius:0;width:100%;box-sizing:border-box}
 
-    /* Shrink container when on-screen keyboard is active so content is not hidden behind it */
-    body.kb-active .site-container{max-height:calc(100vh - var(--kb-height,150px) - 10px)}
+    /* Add bottom padding when on-screen keyboard is active so grid content can scroll above it */
+    body.kb-active{padding-bottom:var(--kb-height,150px)}
+    body.kb-active .site-container{padding-bottom:var(--kb-height,150px)}
 
     /* Compact header on mobile portrait */
     header {
@@ -938,8 +939,12 @@ header p{font-size:.95rem;opacity:.95}
 
 /* Landscape support for narrow viewports (e.g., phones rotated) */
 @media (max-width:1099px) and (orientation: landscape) {
-  /* Hide custom keyboard in landscape to maximise game space */
-  .custom-keyboard { display: none !important; }
+  /* Compact single-row keyboard in landscape */
+  .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;flex-direction:row;flex-wrap:wrap;gap:2px;padding:3px 2px env(safe-area-inset-bottom,2px) 2px;background:var(--kb-bg);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--border-light);border-radius:0;margin:0;max-height:40vh}
+  .custom-keyboard.kb-visible .kb-row{gap:2px}
+  .custom-keyboard.kb-visible .kb-key{height:32px;font-size:0.8rem;max-width:34px}
+  .custom-keyboard.kb-visible .kb-backspace{max-width:56px}
+  body.kb-active .site-container{padding-bottom:var(--kb-height,100px)}
 
   /* Hide intro and content sections in landscape to maximize game space */
   .intro-section { display: none !important; }

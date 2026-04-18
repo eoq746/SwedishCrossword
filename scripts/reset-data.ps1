@@ -1,15 +1,18 @@
 #!/usr/bin/env pwsh
 # ---------------------------------------------------------------------------
-# reset-data.ps1 — Clear pre-reset leaderboard history and legacy puzzle files
-#                  from the Azure Files share used by the Container App.
+# reset-data.ps1 — Clear pre-cutoff leaderboard scores and history from the
+#                  Azure SQL database used by the Container App.
 #
 # Prerequisites:
 #   - Azure CLI installed and logged in (az login)
 #   - Access to the resource group rg-svensktkorsord
+#   - SqlServer PowerShell module (Install-Module SqlServer)
+#   - Your Entra identity must be a contained database user with db_owner.
+#     Run scripts/setup-sql-user.ps1 once from Azure Cloud Shell to set this up.
 #
 # Usage:
-#   ./scripts/reset-data.ps1                   # Dry-run (shows what would be deleted)
-#   ./scripts/reset-data.ps1 -Confirm          # Actually delete files
+#   ./scripts/reset-data.ps1                   # Dry-run (shows row counts)
+#   ./scripts/reset-data.ps1 -Confirm          # Actually delete rows
 #   ./scripts/reset-data.ps1 -Confirm -Verbose # Delete with detailed output
 # ---------------------------------------------------------------------------
 
@@ -26,129 +29,127 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-# ---------------------------------------------------------------------------
-# 1. Resolve the storage account name from the Bicep deployment outputs
-# ---------------------------------------------------------------------------
-Write-Host "`n=== Resolving storage account ===" -ForegroundColor Cyan
-
-$storageAccountName = az storage account list `
-    --resource-group $ResourceGroup `
-    --query "[?starts_with(name, '$($AppName.Replace('-',''))') || starts_with(name, 'svensktkorsord')].name | [0]" `
-    --output tsv
-
-if (-not $storageAccountName) {
-    Write-Error "Could not find a storage account in resource group '$ResourceGroup'."
+# Ensure the SqlServer module is available
+if (-not (Get-Module -ListAvailable -Name SqlServer)) {
+    Write-Error "The 'SqlServer' PowerShell module is required. Install it with: Install-Module SqlServer -Scope CurrentUser"
     exit 1
 }
-Write-Host "  Storage account: $storageAccountName"
+Import-Module SqlServer -ErrorAction Stop
 
-$shareName = 'crossword-data'
+# ---------------------------------------------------------------------------
+# 1. Resolve the SQL Server and database name
+# ---------------------------------------------------------------------------
+Write-Host "`n=== Resolving Azure SQL server ===" -ForegroundColor Cyan
 
-# Get a storage account key for file share operations
-$accountKey = az storage account keys list `
+$sqlServer = az sql server list `
     --resource-group $ResourceGroup `
-    --account-name $storageAccountName `
-    --query '[0].value' --output tsv
+    --query "[?contains(name, '$AppName')].name | [0]" `
+    --output tsv
 
-$storageArgs = @(
-    '--account-name', $storageAccountName
-    '--account-key',  $accountKey
-    '--share-name',   $shareName
-)
+if (-not $sqlServer) {
+    Write-Error "Could not find a SQL server in resource group '$ResourceGroup'."
+    exit 1
+}
+Write-Host "  SQL server: $sqlServer"
+
+$sqlDb = az sql db list `
+    --resource-group $ResourceGroup `
+    --server $sqlServer `
+    --query "[?name != 'master'].name | [0]" `
+    --output tsv
+
+if (-not $sqlDb) {
+    Write-Error "Could not find a user database on server '$sqlServer'."
+    exit 1
+}
+Write-Host "  Database:   $sqlDb"
+
+$serverFqdn = "$sqlServer.database.windows.net"
 
 # ---------------------------------------------------------------------------
-# 2. Delete leaderboard history files before the cutoff date
+# 2. Add a temporary firewall rule for the caller's public IP
 # ---------------------------------------------------------------------------
-Write-Host "`n=== Leaderboard history cleanup (cutoff: $CutoffDate) ===" -ForegroundColor Cyan
+Write-Host "`n=== Adding temporary firewall rule ===" -ForegroundColor Cyan
+$myIp = (Invoke-RestMethod -Uri 'https://api.ipify.org')
+$firewallRuleName = "reset-data-script-$([guid]::NewGuid().ToString('N').Substring(0,8))"
+az sql server firewall-rule create `
+    --resource-group $ResourceGroup `
+    --server $sqlServer `
+    --name $firewallRuleName `
+    --start-ip-address $myIp `
+    --end-ip-address $myIp `
+    --output none
+Write-Host "  Added rule '$firewallRuleName' for IP $myIp"
+Write-Host "  Waiting for firewall rule to propagate..." -ForegroundColor Yellow
+Start-Sleep -Seconds 10
 
-$historyFiles = az storage file list @storageArgs `
-    --path 'leaderboard/history' `
-    --query '[].name' --output tsv 2>$null
+# Get an Entra access token for Azure SQL
+Write-Host "`n=== Acquiring Entra access token ===" -ForegroundColor Cyan
+$tokenJson = az account get-access-token --resource https://database.windows.net/ --output json | ConvertFrom-Json
+$accessToken = $tokenJson.accessToken
+Write-Host "  Token acquired"
 
-if ($historyFiles) {
-    $toDelete = $historyFiles | Where-Object {
-        # File names are like "2025-12-31.json" — extract the date part
-        $_ -match '^(\d{4}-\d{2}-\d{2})\.json$' -and $Matches[1] -lt $CutoffDate
-    }
-
-    if ($toDelete) {
-        Write-Host "  Found $($toDelete.Count) history file(s) to remove:"
-        foreach ($file in $toDelete) {
-            Write-Host "    - leaderboard/history/$file" -ForegroundColor Yellow
-            if ($Confirm) {
-                az storage file delete @storageArgs --path "leaderboard/history/$file" | Out-Null
-                Write-Verbose "    Deleted leaderboard/history/$file"
-            }
-        }
-    } else {
-        Write-Host "  No history files older than $CutoffDate."
-    }
-} else {
-    Write-Host "  No history directory found (or empty)."
+# Helper: run a SQL query using Invoke-Sqlcmd with Entra token auth
+function Invoke-Sql {
+    param([string]$Query)
+    Invoke-Sqlcmd -ServerInstance $serverFqdn -Database $sqlDb -AccessToken $accessToken -Query $Query
 }
 
-# ---------------------------------------------------------------------------
-# 3. Clear the current leaderboard (current.json) — reset to empty
-# ---------------------------------------------------------------------------
-Write-Host "`n=== Current leaderboard reset ===" -ForegroundColor Cyan
+# Wrap all work in try/finally so the firewall rule is always cleaned up
+try {
+    # Convert cutoff date to a Unix timestamp (end of day, so the cutoff date itself is included)
+    $cutoffUnix = [long]([DateTimeOffset]::Parse("${CutoffDate}T00:00:00Z")).ToUnixTimeSeconds() + 86400
 
-$currentExists = az storage file exists @storageArgs `
-    --path 'leaderboard/current.json' `
-    --query 'exists' --output tsv 2>$null
+    # ---------------------------------------------------------------------------
+    # 3. Delete history rows before the cutoff date
+    # ---------------------------------------------------------------------------
+    Write-Host "`n=== History cleanup (cutoff: $CutoffDate) ===" -ForegroundColor Cyan
 
-if ($currentExists -eq 'true') {
-    Write-Host "  leaderboard/current.json exists — will reset to empty."
-    if ($Confirm) {
-        $emptyJson = '{}' | Out-File -FilePath "$env:TEMP\empty-leaderboard.json" -Encoding utf8 -Force
-        az storage file upload @storageArgs `
-            --source "$env:TEMP\empty-leaderboard.json" `
-            --path 'leaderboard/current.json' | Out-Null
-        Remove-Item "$env:TEMP\empty-leaderboard.json" -Force
-        Write-Host "  Reset leaderboard/current.json to {}" -ForegroundColor Green
+    $historyResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM history WHERE date <= '$CutoffDate'"
+    $historyRows = [int]$historyResult.cnt
+    Write-Host "  Rows to delete from [history]: $historyRows"
+
+    if ($historyRows -gt 0 -and $Confirm) {
+        Invoke-Sql "DELETE FROM history WHERE date <= '$CutoffDate'" | Out-Null
+        Write-Host "  Deleted $historyRows row(s) from [history]" -ForegroundColor Green
     }
-} else {
-    Write-Host "  No current.json found — nothing to reset."
+
+    # ---------------------------------------------------------------------------
+    # 4. Delete scores with timestamps before the cutoff date
+    # ---------------------------------------------------------------------------
+    Write-Host "`n=== Scores cleanup (cutoff timestamp: $cutoffUnix) ===" -ForegroundColor Cyan
+
+    $scoresResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM scores WHERE timestamp < $cutoffUnix"
+    $scoresRows = [int]$scoresResult.cnt
+    Write-Host "  Rows to delete from [scores]: $scoresRows"
+
+    if ($scoresRows -gt 0 -and $Confirm) {
+        Invoke-Sql "DELETE FROM scores WHERE timestamp < $cutoffUnix" | Out-Null
+        Write-Host "  Deleted $scoresRows row(s) from [scores]" -ForegroundColor Green
+    }
+
+    # ---------------------------------------------------------------------------
+    # 5. Summary of remaining data
+    # ---------------------------------------------------------------------------
+    Write-Host "`n=== Current row counts ===" -ForegroundColor Cyan
+
+    $tables = @('scores', 'history', 'user_aliases', 'friend_requests')
+    foreach ($table in $tables) {
+        $row = Invoke-Sql "SELECT COUNT(*) AS cnt FROM $table"
+        Write-Host "  [$table]: $($row.cnt) row(s)"
+    }
 }
-
-# ---------------------------------------------------------------------------
-# 4. Delete legacy puzzle files (old naming conventions)
-#    - puzzle-{date}.json        (legacy 17x17)
-#    - puzzle-{date}-small.json  (legacy 10x10)
-# ---------------------------------------------------------------------------
-Write-Host "`n=== Legacy puzzle file cleanup ===" -ForegroundColor Cyan
-
-$puzzleFiles = az storage file list @storageArgs `
-    --path 'puzzles' `
-    --query '[].name' --output tsv 2>$null
-
-if ($puzzleFiles) {
-    # Legacy files before cutoff: puzzle-YYYY-MM-DD.json (no size suffix) and puzzle-YYYY-MM-DD-small.json
-    $legacyFiles = $puzzleFiles | Where-Object {
-        ($_ -match '^puzzle-(\d{4}-\d{2}-\d{2})\.json$' -or
-         $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-small\.json$') -and $Matches[1] -lt $CutoffDate
-    }
-
-    # Also remove any new-format puzzles from before the cutoff date
-    $oldSizedFiles = $puzzleFiles | Where-Object {
-        $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-\d+x\d+\.json$' -and $Matches[1] -lt $CutoffDate
-    }
-
-    $allLegacy = @($legacyFiles) + @($oldSizedFiles) | Sort-Object -Unique
-
-    if ($allLegacy) {
-        Write-Host "  Found $($allLegacy.Count) legacy/old puzzle file(s) to remove:"
-        foreach ($file in $allLegacy) {
-            Write-Host "    - puzzles/$file" -ForegroundColor Yellow
-            if ($Confirm) {
-                az storage file delete @storageArgs --path "puzzles/$file" | Out-Null
-                Write-Verbose "    Deleted puzzles/$file"
-            }
-        }
-    } else {
-        Write-Host "  No legacy puzzle files found."
-    }
-} else {
-    Write-Host "  No puzzles directory found (or empty)."
+finally {
+    # ---------------------------------------------------------------------------
+    # Always remove the temporary firewall rule
+    # ---------------------------------------------------------------------------
+    Write-Host "`n=== Removing temporary firewall rule ===" -ForegroundColor Cyan
+    az sql server firewall-rule delete `
+        --resource-group $ResourceGroup `
+        --server $sqlServer `
+        --name $firewallRuleName `
+        --output none 2>$null
+    Write-Host "  Removed rule '$firewallRuleName'"
 }
 
 # ---------------------------------------------------------------------------
@@ -156,9 +157,8 @@ if ($puzzleFiles) {
 # ---------------------------------------------------------------------------
 Write-Host ""
 if (-not $Confirm) {
-    Write-Host "DRY RUN — no files were deleted. Re-run with -Confirm to apply." -ForegroundColor Magenta
+    Write-Host "DRY RUN — no rows were deleted. Re-run with -Confirm to apply." -ForegroundColor Magenta
 } else {
     Write-Host "Cleanup complete!" -ForegroundColor Green
-    Write-Host "The Container App will regenerate fresh puzzles on next startup." -ForegroundColor Green
 }
 Write-Host ""

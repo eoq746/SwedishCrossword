@@ -281,6 +281,19 @@ async function renderProfile(el, user) {
                         '<div class="stat-card"><span class="value">' + (stats.averageTime > 0 ? formatTime(stats.averageTime) : '--:--') + '</span><span class="label">Snittid</span></div>' +
                     '</div>';
 
+                if (stats.perSize && Object.keys(stats.perSize).length > 0) {
+                    statsHtml += '<h3>Statistik per storlek</h3><div class="stats-grid">';
+                    Object.entries(stats.perSize).sort(function(a,b){ return a[0].localeCompare(b[0]); }).forEach(function(entry) {
+                        var size = entry[0], s = entry[1];
+                        var label = SIZE_LABELS[size] || size;
+                        statsHtml += '<div class="stat-card"><span class="value">' + formatTime(s.bestTime) + '</span><span class="label">' + escapeHtml(label) + ' bästa</span></div>';
+                        statsHtml += '<div class="stat-card"><span class="value">' + formatTime(s.averageTime) + '</span><span class="label">' + escapeHtml(label) + ' snitt (' + s.count + 'st)</span></div>';
+                        statsHtml += '<div class="stat-card"><span class="value">' + s.currentStreak + '</span><span class="label">' + escapeHtml(label) + ' streak</span></div>';
+                        statsHtml += '<div class="stat-card"><span class="value">' + s.bestStreak + '</span><span class="label">' + escapeHtml(label) + ' bästa streak</span></div>';
+                    });
+                    statsHtml += '</div>';
+                }
+
                 if (stats.recentSolves && stats.recentSolves.length > 0) {
                     statsHtml += '<h2>Senaste resultat</h2><ul class="recent-list">';
                     stats.recentSolves.forEach(function(s) {

@@ -512,15 +512,43 @@ sealed class LeaderboardStore : IDisposable
         var avgTime = Math.Round(solves.Average(s => s.Time), 1);
         var bestTime = Math.Round(solves.Min(s => s.Time), 1);
 
+        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+
+        var perSize = solves
+            .Where(s => !string.IsNullOrEmpty(s.PuzzleSize))
+            .GroupBy(s => s.PuzzleSize!)
+            .ToDictionary(
+                g => g.Key,
+                g =>
+                {
+                    var sizeDates = g.Select(s => DateOnly.ParseExact(s.Date, "yyyy-MM-dd")).Distinct().OrderDescending().ToList();
+                    var (cur, best) = ComputeStreaks(sizeDates, today);
+                    return new SizeStatsEntry(
+                        Count: g.Count(),
+                        AverageTime: Math.Round(g.Average(s => s.Time), 1),
+                        BestTime: Math.Round(g.Min(s => s.Time), 1),
+                        CurrentStreak: cur,
+                        BestStreak: best
+                    );
+                }
+            );
+
         var dates = solves.Select(s => DateOnly.ParseExact(s.Date, "yyyy-MM-dd"))
                          .Distinct().OrderDescending().ToList();
-        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+        var (currentStreak, bestStreak) = ComputeStreaks(dates, today);
+
+        var recent = solves.Take(30).ToList();
+        return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent, perSize.Count > 0 ? perSize : null);
+    }
+
+    private static (int Current, int Best) ComputeStreaks(List<DateOnly> datesDesc, DateOnly today)
+    {
         int currentStreak = 0;
         var expected = today;
-        if (dates.Count > 0 && dates[0] < today)
+        if (datesDesc.Count > 0 && datesDesc[0] < today)
             expected = today.AddDays(-1);
 
-        foreach (var d in dates)
+        foreach (var d in datesDesc)
         {
             if (d == expected)
             {
@@ -533,7 +561,7 @@ sealed class LeaderboardStore : IDisposable
 
         int bestStreak = 0, streak = 0;
         DateOnly? prev = null;
-        foreach (var d in dates.OrderBy(d => d))
+        foreach (var d in datesDesc.OrderBy(d => d))
         {
             if (prev.HasValue && d == prev.Value.AddDays(1))
                 streak++;
@@ -543,8 +571,7 @@ sealed class LeaderboardStore : IDisposable
             prev = d;
         }
 
-        var recent = solves.Take(30).ToList();
-        return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent);
+        return (currentStreak, bestStreak);
     }
 
     // ── Analytics ──
@@ -850,7 +877,7 @@ sealed class LeaderboardStore : IDisposable
         return list;
     }
 
-    public async Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date)
+    public async Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date, string? puzzleHash = null)
     {
         await using var conn = await OpenConnectionAsync();
 
@@ -877,14 +904,17 @@ sealed class LeaderboardStore : IDisposable
             AddParam(cmd, pn, friendIds[i]);
         }
 
+        var hashFilter = string.IsNullOrWhiteSpace(puzzleHash) ? "" : " AND h.puzzle_hash = @hash";
         cmd.CommandText = $"""
             SELECT a.alias, h.time, h.timestamp, h.puzzle_hash, h.hints_used, h.word_hints_used
             FROM history h
             JOIN user_aliases a ON a.user_id = h.user_id
-            WHERE h.date = @date AND h.user_id IN ({string.Join(',', paramNames)})
+            WHERE h.date = @date AND h.user_id IN ({string.Join(',', paramNames)}){hashFilter}
             ORDER BY h.time
             """;
         AddParam(cmd, "@date", date);
+        if (!string.IsNullOrWhiteSpace(puzzleHash))
+            AddParam(cmd, "@hash", puzzleHash);
 
         var list = new List<FriendsLeaderboardEntry>();
         await using var reader = await cmd.ExecuteReaderAsync();

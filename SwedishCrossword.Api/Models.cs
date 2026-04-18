@@ -18,7 +18,8 @@ record DailyAnalytics(string Date, int Completions, int UniquePlayers, double Av
 record TopPlayer(string Name, int GamesPlayed, double AverageTime, double BestTime, double HintRate);
 
 // Personal stats for authenticated users
-record UserStatsResponse(int TotalSolved, double AverageTime, double BestTime, int CurrentStreak, int BestStreak, List<UserSolveRecord> RecentSolves);
+record UserStatsResponse(int TotalSolved, double AverageTime, double BestTime, int CurrentStreak, int BestStreak, List<UserSolveRecord> RecentSolves, Dictionary<string, SizeStatsEntry>? PerSize = null);
+record SizeStatsEntry(int Count, double AverageTime, double BestTime, int CurrentStreak, int BestStreak);
 record UserSolveRecord(string Date, double Time, string? PuzzleSize, int HintsUsed, int WordHintsUsed);
 
 // Puzzle check/hint request models

@@ -96,8 +96,8 @@ internal static class FriendsEndpoints
                 : Results.NotFound(new ErrorResponse("Vänskapen hittades inte"));
         });
 
-        // Friends leaderboard for a specific date
-        group.MapGet("/leaderboard", async (string? date, ClaimsPrincipal user, LeaderboardStore store, TimeProvider timeProvider) =>
+        // Friends leaderboard for a specific date, optionally filtered by puzzle hash
+        group.MapGet("/leaderboard", async (string? date, string? puzzleHash, ClaimsPrincipal user, LeaderboardStore store, TimeProvider timeProvider) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -107,7 +107,7 @@ internal static class FriendsEndpoints
             if (!LeaderboardStore.DatePattern.IsMatch(d))
                 return Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
 
-            var leaderboard = await store.GetFriendsLeaderboardAsync(userId, d);
+            var leaderboard = await store.GetFriendsLeaderboardAsync(userId, d, puzzleHash);
             return Results.Ok(leaderboard);
         });
 

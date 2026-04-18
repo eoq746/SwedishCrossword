@@ -875,6 +875,37 @@ public class LeaderboardStoreTests
     }
 
     [Test]
+    public async Task GetFriendsLeaderboard_FiltersByPuzzleHash()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        // Alice solved both sizes, Bob only the large one
+        await _store.AppendHistoryAsync("2026-06-01", new HistoryRecord("Alice", 20.0, 1000L, "small_hash", "10x10", 0, 0, "user1"));
+        await _store.AppendHistoryAsync("2026-06-01", new HistoryRecord("Alice", 50.0, 1001L, "big_hash", "17x17", 0, 0, "user1"));
+        await _store.AppendHistoryAsync("2026-06-01", new HistoryRecord("Bob", 60.0, 1002L, "big_hash", "17x17", 0, 0, "user2"));
+
+        // Without filter: all 3 entries
+        var all = await _store.GetFriendsLeaderboardAsync("user1", "2026-06-01");
+        await Assert.That(all.Count).IsEqualTo(3);
+
+        // Filter by big_hash: only the 17x17 entries
+        var big = await _store.GetFriendsLeaderboardAsync("user1", "2026-06-01", "big_hash");
+        await Assert.That(big.Count).IsEqualTo(2);
+        await Assert.That(big[0].Name).IsEqualTo("Alice");
+        await Assert.That(big[1].Name).IsEqualTo("Bob");
+
+        // Filter by small_hash: only Alice's 10x10
+        var small = await _store.GetFriendsLeaderboardAsync("user1", "2026-06-01", "small_hash");
+        await Assert.That(small.Count).IsEqualTo(1);
+        await Assert.That(small[0].Name).IsEqualTo("Alice");
+    }
+
+    [Test]
     public async Task GetPendingRequests_ReturnsCorrectDirection()
     {
         await _store.SetAliasAsync("user1", "Alice");
@@ -905,5 +936,55 @@ public class LeaderboardStoreTests
         await _store.SetAliasAsync("target50", "User50");
         var (success, _) = await _store.SendFriendRequestAsync("user1", "target50");
         await Assert.That(success).IsFalse();
+    }
+
+    // -----------------------------------------------------------------------
+    // GetUserStatsAsync — per-size stats
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task GetUserStatsAsync_ReturnsPerSizeStatsWithStreaks()
+    {
+        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var d0 = today.ToString("yyyy-MM-dd");
+        var d1 = today.AddDays(-1).ToString("yyyy-MM-dd");
+        var d2 = today.AddDays(-2).ToString("yyyy-MM-dd");
+
+        // User solves 10x10 on 3 consecutive days and 17x17 only today
+        await _store.AppendHistoryAsync(d0, new HistoryRecord("A", 30.0, 100L, "h1", "10x10", UserId: "u1"));
+        await _store.AppendHistoryAsync(d1, new HistoryRecord("A", 40.0, 101L, "h2", "10x10", UserId: "u1"));
+        await _store.AppendHistoryAsync(d2, new HistoryRecord("A", 50.0, 102L, "h3", "10x10", UserId: "u1"));
+        await _store.AppendHistoryAsync(d0, new HistoryRecord("A", 90.0, 103L, "h4", "17x17", UserId: "u1"));
+
+        var stats = await _store.GetUserStatsAsync("u1");
+
+        await Assert.That(stats.TotalSolved).IsEqualTo(4);
+        // Overall streak = 3 consecutive days
+        await Assert.That(stats.CurrentStreak).IsEqualTo(3);
+
+        await Assert.That(stats.PerSize).IsNotNull();
+        await Assert.That(stats.PerSize!.ContainsKey("10x10")).IsTrue();
+        await Assert.That(stats.PerSize!.ContainsKey("17x17")).IsTrue();
+
+        var small = stats.PerSize["10x10"];
+        await Assert.That(small.Count).IsEqualTo(3);
+        await Assert.That(small.BestTime).IsEqualTo(30.0);
+        await Assert.That(small.AverageTime).IsEqualTo(40.0);
+        await Assert.That(small.CurrentStreak).IsEqualTo(3);
+        await Assert.That(small.BestStreak).IsEqualTo(3);
+
+        var large = stats.PerSize["17x17"];
+        await Assert.That(large.Count).IsEqualTo(1);
+        await Assert.That(large.BestTime).IsEqualTo(90.0);
+        await Assert.That(large.CurrentStreak).IsEqualTo(1);
+        await Assert.That(large.BestStreak).IsEqualTo(1);
+    }
+
+    [Test]
+    public async Task GetUserStatsAsync_EmptyHistory_ReturnsZeros()
+    {
+        var stats = await _store.GetUserStatsAsync("nonexistent");
+        await Assert.That(stats.TotalSolved).IsEqualTo(0);
+        await Assert.That(stats.PerSize).IsNull();
     }
 }

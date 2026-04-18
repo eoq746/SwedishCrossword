@@ -685,6 +685,19 @@ async function renderPersonalStats() {
             </div>
         </div>`;
 
+        if (stats.perSize && Object.keys(stats.perSize).length > 0) {
+            html += '<h4 class="personal-stats-subheading">Statistik per storlek</h4><div class="player-stats-grid">';
+            for (const [size, s] of Object.entries(stats.perSize).sort((a, b) => a[0].localeCompare(b[0]))) {
+                const icon = getSizeIcon(size);
+                const label = getSizeLabel(size);
+                html += `<div class="stat-item"><span class="stat-value">${icon} ${formatTime(s.bestTime)}</span><span class="stat-label">${label} bästa</span></div>`;
+                html += `<div class="stat-item"><span class="stat-value">${formatTime(s.averageTime)}</span><span class="stat-label">${label} snitt (${s.count}st)</span></div>`;
+                html += `<div class="stat-item"><span class="stat-value">${s.currentStreak}</span><span class="stat-label">${label} streak</span></div>`;
+                html += `<div class="stat-item"><span class="stat-value">${s.bestStreak}</span><span class="stat-label">${label} bästa streak</span></div>`;
+            }
+            html += '</div>';
+        }
+
         if (stats.recentSolves && stats.recentSolves.length > 0) {
             html += '<h4 class="personal-stats-subheading">Senaste resultat</h4><ul class="personal-recent-list">';
             for (const s of stats.recentSolves.slice(0, 10)) {
@@ -1095,7 +1108,8 @@ async function renderFriendsLeaderboard() {
     if (!currentPuzzleDate) { section.style.display = 'none'; return; }
 
     try {
-        const res = await fetch(`${LEADERBOARD_PROXY_URL}/friends/leaderboard?date=${encodeURIComponent(currentPuzzleDate)}`, { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        const hashParam = puzzleHash ? `&puzzleHash=${encodeURIComponent(puzzleHash)}` : '';
+        const res = await fetch(`${LEADERBOARD_PROXY_URL}/friends/leaderboard?date=${encodeURIComponent(currentPuzzleDate)}${hashParam}`, { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
         if (res.status === 401) return; // not logged in
         if (!res.ok) return;
 
@@ -1814,6 +1828,14 @@ function initCustomKeyboard() {
                 document.documentElement.style.setProperty('--kb-height', kbHeight + 'px');
                 document.body.classList.add('kb-active');
                 if (typeof computeCellSize === 'function') computeCellSize();
+                // Scroll the focused cell into view above the keyboard
+                setTimeout(() => {
+                    const active = document.activeElement;
+                    if (active && active.closest('.crossword-grid')) {
+                        const cell = active.closest('.cell') || active;
+                        cell.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+                    }
+                }, 100);
             });
         }
     });
@@ -1845,6 +1867,7 @@ function handleKeyboardTap(key) {
             saveProgress();
         }
         moveBackInDirection(activeInput);
+        scrollActiveCellIntoView();
     } else {
         activeInput.value = key; // already uppercase
         activeInput.parentElement.classList.remove('empty-warning');
@@ -1856,7 +1879,19 @@ function handleKeyboardTap(key) {
         updateClueFilledStatus();
         saveProgress();
         autoCheckIfComplete();
+        scrollActiveCellIntoView();
     }
+}
+
+// Scroll the currently focused crossword cell into view (above the on-screen keyboard)
+function scrollActiveCellIntoView() {
+    requestAnimationFrame(() => {
+        const el = document.activeElement;
+        if (el && el.tagName === 'INPUT' && el.closest('.crossword-grid')) {
+            const cell = el.closest('.cell') || el;
+            cell.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+        }
+    });
 }
 
 function renderClues() {
@@ -3059,9 +3094,15 @@ function computeCellSize() {
     // Safety margin: smaller in landscape to maximize grid
     const safety = isLandscape ? 0 : 6;
 
+    // Account for on-screen keyboard in portrait mobile
+    const kbActive = document.body.classList.contains('kb-active');
+    const kbReserve = (!isLandscape && kbActive)
+        ? (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--kb-height')) || 150)
+        : 0;
+
     // Effective outer-space for the grid element inside measureArea
     const maxOuterW = Math.max(40, areaWidth - safety);
-    const maxOuterH = Math.max(40, areaHeight - safety - insideReserved);
+    const maxOuterH = Math.max(40, areaHeight - safety - insideReserved - kbReserve);
 
     // Content area available for cells = outer minus grid chrome
     const contentAvailW = Math.max(20, maxOuterW - extraX);
