@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integritetspolicy - Svenskt Korsord | Gratis Korsord Online</title>
     <meta name="description" content="Integritetspolicy för Svenskt Korsord. Läs om hur vi hanterar dina uppgifter, cookies och personlig data.">
-    <meta name="keywords"
+    <meta name="keywords" content="integritetspolicy, cookies, personuppgifter, GDPR, svenskt korsord, dataskydd">
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-snippet:-1">
     <link rel="canonical" href="https://svensktkorsord.se/integritetspolicy.html">
@@ -151,12 +151,12 @@
         <p>Välkommen till Svenskt Korsord. Vi värnar om din integritet och vill vara transparenta med hur vi hanterar information på vår webbplats. Denna integritetspolicy förklarar vilken information vi samlar in, hur vi använder den och vilka rättigheter du har.</p>
 
         <div class="highlight-box">
-            <strong>Sammanfattning:</strong> Vi samlar in minimalt med information. Dina spelframsteg sparas lokalt i din webbläsare. Om du väljer att logga in med Google eller Microsoft sparas ett anonymiserat användar-ID, ditt valda alias och din vänlista på servern. Du kan när som helst radera dina lokala data genom att rensa webbläsarens cache.
+            <strong>Sammanfattning:</strong> Vi samlar in minimalt med information. Dina spelframsteg sparas lokalt i din webbläsare. Om du väljer att logga in med Google eller Microsoft sparas ett anonymiserat användar-ID, ditt valda alias och din vänlista på servern. Du kan när som helst <a href="/profile.html">exportera dina uppgifter</a> eller <a href="/profile.html">radera ditt konto</a> via din profilsida. Lokala data raderas genom att rensa webbläsarens cache.
         </div>
 
         <h2>1. Vem är personuppgiftsansvarig?</h2>
         <p>Svenskt Korsord drivs som ett hobbyprojekt. Vi har inte en formell företagsstruktur utan är enskilda utvecklare som driver tjänsten. För frågor om integritet kan du kontakta oss via <a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a> eller vår <a href="kontakt.html">kontaktsida</a>.</p>
-
+        <p>Det går även bra att kontakta oss via e-post på <a href="mailto:jockeb14@gmail.com">jockeb14@gmail.com</a></p>
         <h2>2. Information vi samlar in</h2>
         <p>Svenskt Korsord är en gratis tjänst för att spela korsord online. Vi har utformat tjänsten för att minimera insamling av personuppgifter. Här är en översikt över vilken information som kan samlas in:</p>
 
@@ -288,11 +288,12 @@
         <h2>7. Dina rättigheter enligt GDPR</h2>
         <p>Enligt EU:s dataskyddsförordning (GDPR) har du följande rättigheter:</p>
 
-        <h3>7.1 Rätt till tillgång</h3>
-        <p>Du har rätt att begära information om vilka personuppgifter vi behandlar om dig. Eftersom vi lagrar minimalt med information och det mesta sparas lokalt i din webbläsare, kan du själv kontrollera detta genom webbläsarens utvecklarverktyg.</p>
+        <h3>7.1 Rätt till tillgång och dataportabilitet</h3>
+        <p>Du har rätt att begära information om vilka personuppgifter vi behandlar om dig. Om du är inloggad kan du exportera alla dina serverlagrade uppgifter (statistik, poäng, alias, vänlista) i JSON-format via din <a href="/profile.html">profilsida</a>. Lokalt sparade data kan du granska i webbläsarens utvecklarverktyg (localStorage).</p>
 
         <h3>7.2 Rätt till radering</h3>
-        <p>Du kan radera dina lokalt sparade data genom att:</p>
+        <p><strong>Serverlagrade uppgifter:</strong> Om du är inloggad kan du radera hela ditt konto via din <a href="/profile.html">profilsida</a>. Detta anonymiserar dina poäng och historik, tar bort ditt alias och alla vänrelationer, och loggar ut dig. Åtgärden kan inte ångras.</p>
+        <p><strong>Lokalt sparade data:</strong> Du kan radera dina lokalt sparade data genom att:</p>
         <ul>
             <li>Rensa webbläsarens cache och localStorage</li>
             <li>Använda webbläsarens "rensa surfdata"-funktion</li>
@@ -303,22 +304,30 @@
         <p>Du kan:</p>
         <ul>
             <li>Välja att inte ange ett användarnamn på topplistan</li>
-            <li>Använda annonsblockerare för att förhindra annonsrelaterade cookies</li>
-            <li>Välja bort personanpassade annonser via Googles inställningar</li>
+            <li>Välja att inte logga in — alla funktioner utom statistik, alias och vänner fungerar utan konto</li>
         </ul>
 
         <h3>7.4 Rätt att klaga</h3>
         <p>Om du anser att vi behandlar dina personuppgifter på ett felaktigt sätt har du rätt att lämna in ett klagomål till tillsynsmyndigheten. I Sverige är detta <a href="https://www.imy.se/" target="_blank" rel="noopener">Integritetsskyddsmyndigheten (IMY)</a>.</p>
 
-        <h2>8. Datasäkerhet</h2>
+        <h2>8. Datalagring och gallring</h2>
+        <p>Vi tillämpar följande lagringstider:</p>
+        <ul>
+            <li><strong>Topplistan (scores):</strong> Poäng äldre än 7 dagar gallras automatiskt</li>
+            <li><strong>Historik:</strong> Spelhistorik äldre än 365 dagar gallras automatiskt. Vid radering av konto anonymiseras posterna omedelbart</li>
+            <li><strong>Autentiseringscookie:</strong> Utgår automatiskt efter 30 dagar</li>
+            <li><strong>Alias och vänrelationer:</strong> Sparas tills du raderar ditt konto</li>
+        </ul>
+
+        <h2>9. Datasäkerhet</h2>
         <p>Vi vidtar rimliga åtgärder för att skydda information:</p>
         <ul>
             <li>Webbplatsen använder HTTPS för säker kommunikation</li>
-            <li>Känslig information lagras lokalt i din webbläsare, inte på våra servrar</li>
-            <li>Vi samlar inte in lösenord, betalningsinformation eller andra känsliga uppgifter</li>
+            <li>Inloggnings-ID:n hashas med SHA-256 — vi lagrar aldrig ditt riktiga Google/Microsoft-ID</li>
+            <li>Vi samlar inte in lösenord, betalningsinformation, e-postadresser eller andra känsliga uppgifter på servern</li>
         </ul>
 
-        <h2>9. Barns integritet</h2>
+        <h2>10. Barns integritet</h2>
         <p>Vår tjänst riktar sig inte specifikt till barn under 13 år. Vi samlar inte medvetet in personlig information från barn. Om du är förälder eller vårdnadshavare och tror att ditt barn har lämnat personlig information till oss, vänligen kontakta oss så att vi kan vidta lämpliga åtgärder.</p>
 
         <!-- AdSense not in use yet
@@ -333,7 +342,8 @@
         <p>Om du har frågor om denna integritetspolicy eller vill utöva dina rättigheter, kontakta oss via:</p>
         <ul>
             <li><a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a></li>
-            Vår <a href="/kontakt.html">kontaktsida</a>
+            <li>Vår <a href="/kontakt.html">kontaktsida</a></li>
+            <li>E-post: <a href="mailto:jockeb14@gmail.com">jockeb14@gmail.com</a></li>
         </ul>
 
         <a href="/" class="back-link">← Startsida</a>

@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/site.min.css">
 
     <style>
         :root {
@@ -54,7 +55,7 @@
             background: var(--card-bg); border-radius: 12px; padding: 32px;
             box-shadow: 0 10px 40px var(--shadow);
         }
-        .page-nav { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+        .page-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
         .theme-toggle {
             background: none; border: none; font-size: 1.5rem; cursor: pointer;
             padding: 4px 8px; border-radius: 8px; transition: transform 0.2s;
@@ -170,6 +171,7 @@
     <a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;">Hoppa till innehåll</a>
     <div class="container">
         <div class="page-nav">
+            <a href="/" style="color:var(--accent);text-decoration:none;font-weight:500;">← Startsida</a>
             <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
         </div>
 
@@ -333,6 +335,14 @@ async function renderProfile(el, user) {
         '<div id="friend-list-section"></div>';
 
     html +=
+        '<h2>🔒 Dina uppgifter (GDPR)</h2>' +
+        '<p>Du har rätt att exportera eller radera alla dina serverlagrade uppgifter. Läs mer i vår <a href="/integritetspolicy.html">integritetspolicy</a>.</p>' +
+        '<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">' +
+            '<button class="login-btn" id="export-data-btn" style="padding:10px 20px;font-size:0.95rem;">📥 Exportera mina uppgifter</button>' +
+            '<button class="friend-btn friend-btn-danger" id="delete-account-btn" style="padding:10px 20px;font-size:0.95rem;">🗑️ Radera mitt konto</button>' +
+        '</div>' +
+        '<p id="gdpr-status" role="status" style="font-size:0.85rem;"></p>' +
+
         '<div class="logout-section">' +
             '<button class="logout-btn" id="logout-btn">Logga ut</button>' +
         '</div>' +
@@ -343,6 +353,10 @@ async function renderProfile(el, user) {
     if (sendBtn) sendBtn.addEventListener('click', sendFriendRequest);
     var logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) logoutBtn.addEventListener('click', doLogout);
+    var exportBtn = document.getElementById('export-data-btn');
+    if (exportBtn) exportBtn.addEventListener('click', exportMyData);
+    var deleteBtn = document.getElementById('delete-account-btn');
+    if (deleteBtn) deleteBtn.addEventListener('click', deleteMyAccount);
     loadFriendRequests();
 }
 
@@ -496,6 +510,53 @@ async function removeFriend(friendshipId, alias) {
         await fetch('/api/friends/' + encodeURIComponent(friendshipId), { method: 'DELETE', credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
         loadFriends();
     } catch (e) { console.warn('Remove failed:', e); }
+}
+
+async function exportMyData() {
+    var status = document.getElementById('gdpr-status');
+    status.style.color = 'var(--text-muted)';
+    status.textContent = 'Exporterar...';
+    try {
+        var res = await fetch('/api/auth/my-data', { credentials: 'same-origin', signal: AbortSignal.timeout(30000) });
+        if (!res.ok) { status.style.color = '#dc2626'; status.textContent = 'Kunde inte exportera data.'; return; }
+        var data = await res.json();
+        var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'svenskt-korsord-mina-uppgifter.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        status.style.color = '#22c55e';
+        status.textContent = '✓ Export klar — filen har laddats ner.';
+    } catch (e) {
+        status.style.color = '#dc2626';
+        status.textContent = 'Nätverksfel. Försök igen.';
+    }
+}
+
+async function deleteMyAccount() {
+    if (!confirm('Är du säker på att du vill radera ditt konto?\n\nDetta anonymiserar alla dina poäng och historik, tar bort ditt alias och alla vänrelationer, och loggar ut dig.\n\nÅtgärden kan INTE ångras.')) return;
+    if (!confirm('Sista chansen — vill du verkligen radera allt?')) return;
+    var status = document.getElementById('gdpr-status');
+    status.style.color = 'var(--text-muted)';
+    status.textContent = 'Raderar konto...';
+    try {
+        var res = await fetch('/api/auth/account', { method: 'DELETE', credentials: 'same-origin', signal: AbortSignal.timeout(30000) });
+        if (res.ok) {
+            alert('Ditt konto har raderats.');
+            window.location.href = '/';
+        } else {
+            var data = await res.json().catch(function() { return {}; });
+            status.style.color = '#dc2626';
+            status.textContent = data.error || 'Kunde inte radera kontot. Försök igen.';
+        }
+    } catch (e) {
+        status.style.color = '#dc2626';
+        status.textContent = 'Nätverksfel. Försök igen.';
+    }
 }
 </script>
 </body>

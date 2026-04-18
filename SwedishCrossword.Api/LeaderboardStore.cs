@@ -12,9 +12,10 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed class LeaderboardStore : IDisposable
+sealed partial class LeaderboardStore : IDisposable
 {
-    public static readonly Regex DatePattern = new(@"^\d{4}-\d{2}-\d{2}$", RegexOptions.Compiled);
+    [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
+    public static partial Regex DatePattern { get; }
 
     private static readonly DateOnly HistoryCutoffDate = new(2026, 4, 14);
 
@@ -348,6 +349,17 @@ sealed class LeaderboardStore : IDisposable
                   """;
             AddParam(cap, "@date", date);
             await cap.ExecuteNonQueryAsync();
+        }
+
+        // GDPR retention: purge history older than 365 days
+        var historyCutoff = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime).AddDays(-365);
+        if (historyCutoff < HistoryCutoffDate) historyCutoff = HistoryCutoffDate;
+        await using (var purge = conn.CreateCommand())
+        {
+            purge.Transaction = tx;
+            purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
+            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd"));
+            await purge.ExecuteNonQueryAsync();
         }
 
         await tx.CommitAsync();
@@ -1253,6 +1265,104 @@ sealed class LeaderboardStore : IDisposable
         p.ParameterName = name;
         p.Value = value;
         cmd.Parameters.Add(p);
+    }
+
+    // ── GDPR: Data export ──
+
+    public async Task<UserDataExport> ExportUserDataAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        // Alias
+        string? alias = null;
+        await using (var cmd = conn.CreateCommand())
+        {
+            cmd.CommandText = "SELECT alias FROM user_aliases WHERE user_id = @uid";
+            AddParam(cmd, "@uid", userId);
+            alias = (await cmd.ExecuteScalarAsync()) as string;
+        }
+
+        // History
+        var history = new List<UserSolveRecord>();
+        await using (var cmd = conn.CreateCommand())
+        {
+            cmd.CommandText = "SELECT date, time, puzzle_size, hints_used, word_hints_used FROM history WHERE user_id = @uid ORDER BY date DESC";
+            AddParam(cmd, "@uid", userId);
+            await using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+                history.Add(new UserSolveRecord(reader.GetString(0), reader.GetDouble(1), reader.IsDBNull(2) ? null : reader.GetString(2), reader.GetInt32(3), reader.GetInt32(4)));
+        }
+
+        // Scores
+        var scores = new List<UserScoreExport>();
+        await using (var cmd = conn.CreateCommand())
+        {
+            cmd.CommandText = "SELECT leaderboard_key, name, time, timestamp FROM scores WHERE user_id = @uid ORDER BY leaderboard_key";
+            AddParam(cmd, "@uid", userId);
+            await using var reader = await cmd.ExecuteReaderAsync();
+            while (await reader.ReadAsync())
+                scores.Add(new UserScoreExport(reader.GetString(0), reader.GetString(1), reader.GetDouble(2), reader.IsDBNull(3) ? null : reader.GetInt64(3)));
+        }
+
+        // Friends
+        var friends = await GetFriendsAsync(userId);
+
+        return new UserDataExport(userId, alias, history, scores, friends.Select(f => f.Alias).ToList());
+    }
+
+    // ── GDPR: Account deletion ──
+
+    public async Task DeleteUserDataAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var tx = await conn.BeginTransactionAsync();
+
+        try
+        {
+            // Anonymise history records (keep aggregate data, remove identity)
+            await using (var cmd = conn.CreateCommand())
+            {
+                cmd.Transaction = tx;
+                cmd.CommandText = "UPDATE history SET user_id = NULL, name = 'Raderad' WHERE user_id = @uid";
+                AddParam(cmd, "@uid", userId);
+                await cmd.ExecuteNonQueryAsync();
+            }
+
+            // Anonymise score records
+            await using (var cmd = conn.CreateCommand())
+            {
+                cmd.Transaction = tx;
+                cmd.CommandText = "UPDATE scores SET user_id = NULL, name = 'Raderad' WHERE user_id = @uid";
+                AddParam(cmd, "@uid", userId);
+                await cmd.ExecuteNonQueryAsync();
+            }
+
+            // Delete friend requests
+            await using (var cmd = conn.CreateCommand())
+            {
+                cmd.Transaction = tx;
+                cmd.CommandText = "DELETE FROM friend_requests WHERE from_user_id = @uid OR to_user_id = @uid";
+                AddParam(cmd, "@uid", userId);
+                await cmd.ExecuteNonQueryAsync();
+            }
+
+            // Delete alias
+            await using (var cmd = conn.CreateCommand())
+            {
+                cmd.Transaction = tx;
+                cmd.CommandText = "DELETE FROM user_aliases WHERE user_id = @uid";
+                AddParam(cmd, "@uid", userId);
+                await cmd.ExecuteNonQueryAsync();
+            }
+
+            await tx.CommitAsync();
+            _logger.LogInformation("Deleted all data for user {UserId}", userId);
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
     }
 
     private static bool IsUniqueConstraintViolation(DbException ex) =>

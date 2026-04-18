@@ -31,3 +31,7 @@ record FriendRequestDto(string Alias);
 record FriendInfo(string Alias, string FriendId);
 record FriendRequestInfo(string Id, string FromAlias, string ToAlias, string Direction, string Status, long CreatedAt);
 record FriendsLeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash, int HintsUsed = 0, int WordHintsUsed = 0);
+
+// GDPR data export
+record UserDataExport(string UserId, string? Alias, List<UserSolveRecord> History, List<UserScoreExport> Scores, List<string> Friends);
+record UserScoreExport(string LeaderboardKey, string Name, double Time, long? Timestamp);

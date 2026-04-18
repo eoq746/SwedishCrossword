@@ -8,21 +8,21 @@ internal static class AnalyticsEndpoints
         {
             var summary = await store.GetAnalyticsSummaryAsync();
             return Results.Ok(summary);
-        }).RequireAuthorization();
+        }).RequireAuthorization("Admin");
 
         app.MapGet("/api/analytics/daily", async (int? days, LeaderboardStore store) =>
         {
             var d = Math.Clamp(days ?? 30, 1, 90);
             var daily = await store.GetDailyAnalyticsAsync(d);
             return Results.Ok(daily);
-        }).RequireAuthorization();
+        }).RequireAuthorization("Admin");
 
         app.MapGet("/api/analytics/players", async (int? limit, LeaderboardStore store) =>
         {
             var n = Math.Clamp(limit ?? 10, 1, 50);
             var players = await store.GetTopPlayersAsync(n);
             return Results.Ok(players);
-        }).RequireAuthorization();
+        }).RequireAuthorization("Admin");
 
         return app;
     }

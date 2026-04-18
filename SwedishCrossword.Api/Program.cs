@@ -64,6 +64,11 @@ if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientS
     {
         options.ClientId = googleClientId;
         options.ClientSecret = googleClientSecret;
+        // GDPR data minimisation: only request the profile scope (name + picture),
+        // not the email scope which is included by default.
+        options.Scope.Clear();
+        options.Scope.Add("openid");
+        options.Scope.Add("profile");
     });
 }
 
@@ -78,7 +83,16 @@ if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftC
     });
 }
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    var adminIds = builder.Configuration.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
+    options.AddPolicy("Admin", policy =>
+        policy.RequireAssertion(context =>
+        {
+            var userId = AuthEndpoints.GetUserId(context.User);
+            return userId is not null && adminIds.Contains(userId);
+        }));
+});
 
 // Data Protection — persist keys to the shared data volume so auth cookies
 // survive container restarts and new revisions in Azure Container Apps
@@ -154,13 +168,11 @@ builder.Services.AddCors(options =>
     {
         if (allowedOrigins is { Length: > 0 } && allowedOrigins.Contains("*"))
         {
-            // Wildcard origin cannot be combined with AllowCredentials per spec,
-            // so use SetIsOriginAllowed to allow any origin while still sending
-            // credentials (cookies) for authenticated endpoints.
-            policy.SetIsOriginAllowed(_ => true)
+            // Wildcard: allow any origin but WITHOUT credentials for security.
+            // Use explicit origins if you need cookies/auth across origins.
+            policy.AllowAnyOrigin()
                   .AllowAnyMethod()
-                  .AllowAnyHeader()
-                  .AllowCredentials();
+                  .AllowAnyHeader();
         }
         else if (allowedOrigins is { Length: > 0 })
         {

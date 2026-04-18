@@ -66,7 +66,6 @@ internal static class AuthEndpoints
                        ?? user.FindFirstValue("name")
                        ?? "Okänd";
 
-            var email = user.FindFirstValue(ClaimTypes.Email);
             var avatarUrl = user.FindFirstValue("picture")
                            ?? user.FindFirstValue("urn:google:picture");
 
@@ -79,7 +78,6 @@ internal static class AuthEndpoints
                 userId,
                 name,
                 alias,
-                email,
                 avatarUrl,
                 provider = user.Identity.AuthenticationType
             });
@@ -128,6 +126,29 @@ internal static class AuthEndpoints
             if (!set)
                 return Results.Conflict(new ErrorResponse("Aliaset är redan taget"));
             return Results.Ok(new { alias });
+        }).RequireAuthorization();
+
+        // GDPR Art. 20: Data portability — export all personal data
+        app.MapGet("/api/auth/my-data", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        {
+            var userId = GetUserId(user);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            var export = await store.ExportUserDataAsync(userId);
+            return Results.Ok(export);
+        }).RequireAuthorization();
+
+        // GDPR Art. 17: Right to erasure — delete all personal data
+        app.MapDelete("/api/auth/account", async (ClaimsPrincipal user, LeaderboardStore store, HttpContext ctx) =>
+        {
+            var userId = GetUserId(user);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            await store.DeleteUserDataAsync(userId);
+            await ctx.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return Results.Ok(new { deleted = true });
         }).RequireAuthorization();
 
         return app;

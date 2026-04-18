@@ -206,6 +206,16 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 
+/* Focus-visible for all interactive elements */
+button:focus-visible,
+a:focus-visible,
+.clue-item:focus-visible,
+.kb-key:focus-visible{
+  outline:2px solid var(--focus-ring);
+  outline-offset:2px;
+  border-radius:4px;
+}
+
 /* Screen reader only - visually hidden but accessible */
 .sr-only {
   position: absolute;
@@ -557,8 +567,9 @@ header p{font-size:.95rem;opacity:.95}
 /* Top controls container for toggles */
 .top-controls{display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:10px}
 
-/* Ensure clue-direction is a flex column that can constrain the clue-list and allow internal scrolling */
-.clue-direction { display: flex; flex-direction: column; flex: 1 1 auto; overflow: hidden; min-height: 0; }
+.clue-direction{display:flex;flex-direction:column;flex:1 1 auto;overflow:hidden;min-height:0;position:relative}
+.clue-direction::after{content:'';position:absolute;bottom:0;left:0;right:0;height:24px;background:linear-gradient(transparent,var(--bg-card));pointer-events:none;z-index:1;opacity:0;transition:opacity .2s}
+.clue-direction.has-overflow::after{opacity:1}
 
 /* Make clue-list fill available space and be scrollable */
 
@@ -569,7 +580,7 @@ header p{font-size:.95rem;opacity:.95}
 .custom-keyboard{display:none}
 .custom-keyboard.kb-visible{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 2px;background:rgba(0,0,0,.06);border-radius:10px;margin-top:6px;width:100%;box-sizing:border-box;-webkit-user-select:none;user-select:none}
 .kb-row{display:flex;gap:3px;justify-content:center;width:100%}
-.kb-key{flex:1 1 0;max-width:42px;min-width:0;height:42px;border:none;border-radius:6px;background:var(--kb-key-bg);color:var(--kb-key-text);font-size:1rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:background .1s;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.kb-key{flex:1 1 0;max-width:44px;min-width:0;height:44px;border:none;border-radius:6px;background:var(--kb-key-bg);color:var(--kb-key-text);font-size:1rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:background .1s;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .kb-key:active{background:var(--kb-key-active)}
 .kb-backspace{flex:1.6 1 0;max-width:72px;font-size:1.2rem;background:var(--kb-backspace-bg)}
 .kb-backspace:active{background:var(--kb-backspace-active)}
@@ -594,7 +605,12 @@ header p{font-size:.95rem;opacity:.95}
         margin-bottom: 2px;
     }
     header p {
-        display: none; /* Hide instructions on mobile - save space */
+        font-size: 0.75rem;
+        opacity: 0.8;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .puzzle-info {
         padding: 4px 8px;
@@ -610,19 +626,26 @@ header p{font-size:.95rem;opacity:.95}
     .top-controls {
         margin-bottom: 6px;
         gap: 6px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
     }
+    .top-controls::-webkit-scrollbar { display: none; }
     .clues-toggle, #leaderboard-toggle, #intro-toggle {
-        margin: 4px;
-        padding: 6px 10px;
-        font-size: 0.8rem;
+        margin: 4px 2px;
+        padding: 10px 10px;
+        font-size: 0.82rem;
+        min-height: 44px;
+        white-space: nowrap;
+        flex: 0 0 auto;
     }
 
     .site-container {
-        max-height: calc(100vh - 60px);
-        overflow: hidden;
+        max-height: none;
+        overflow: visible;
         position: relative;
         padding: 6px;
-        transition: max-height 0.15s ease;
     }
 
   /* Ensure main layout enforces normal document flow so clues cannot appear under the grid */
@@ -699,8 +722,10 @@ header p{font-size:.95rem;opacity:.95}
         justify-content: center;
     }
     .grid-inner .controls .btn {
-        padding: 6px 10px;
-        font-size: 0.8rem;
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        min-height: 44px;
+        min-width: 44px;
     }
     .grid-inner .controls .stats {
         width: 100%;
@@ -960,7 +985,7 @@ header p{font-size:.95rem;opacity:.95}
   header p{display:none}
 
   /* Layout: place grid and clues side-by-side to use horizontal space; compute available height for grid sizing */
-  .main-layout { display: grid; grid-template-columns: 1fr 320px; gap: 8px; align-items: start; --available-height: calc(100vh - 0px); height: var(--available-height); }
+  .main-layout { display: grid; grid-template-columns: 1fr minmax(200px, 35%); gap: 8px; align-items: start; --available-height: calc(100vh - 0px); height: var(--available-height); }
 
   /* Grid: constrain by available height so entire grid fits without page scrolling */
   .grid-section { order: 1; padding: 8px; min-height: 0; max-height: 100%; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
@@ -968,18 +993,21 @@ header p{font-size:.95rem;opacity:.95}
   .crossword-grid { grid-template-columns: repeat(var(--cols,11), var(--cell-size)); grid-auto-rows: var(--cell-size); margin: 6px auto; max-width: 100%; box-sizing: border-box; }
 
   /* Clues panel visible by default in landscape and scrollable; give fixed width and internal scrolling */
-  .clues-section { order: 2; display: flex; flex-direction: column; max-height: 100%; overflow: hidden; padding: 8px; width: 320px; }
-  .clues-columns { flex-direction: column; gap: 8px; }
-  .clue-column { flex: 1 1 auto; min-width: 0; min-height: 0; }
+  .clues-section { order: 2; display: flex; flex-direction: column; max-height: 100%; overflow: hidden; padding: 8px; width: 100%; }
+  .clues-columns { flex-direction: row; gap: 8px; }
+  .clue-column { flex: 1 1 50%; min-width: 0; min-height: 0; }
   .clue-direction { flex: 1 1 auto; min-height: 0; overflow: hidden; }
   .clue-list { max-height: calc(var(--available-height) - 120px); overflow: auto; -webkit-overflow-scrolling: touch; }
 
-  /* Hide leaderboard and stats panels to keep focus on clues */
+  /* Hide leaderboard and stats by default in landscape; show when toggled */
   .leaderboard-section { display: none; }
   .player-stats-section { display: none; }
+  body.show-leaderboard .leaderboard-section { display: flex; grid-column: 1 / -1; order: 10; max-height: 40vh; overflow: auto; }
+  body.show-leaderboard .player-stats-section { display: flex; grid-column: 1 / -1; order: 11; }
 
-  /* Hide toggle buttons in landscape because panels are visible */
-  .clues-toggle, #leaderboard-toggle, #intro-toggle { display: none !important; }
+  /* Keep clues toggle hidden (clues always visible), but show leaderboard toggle */
+  .clues-toggle, #intro-toggle { display: none !important; }
+  #leaderboard-toggle { display: inline-block !important; min-height: 36px; padding: 6px 12px; font-size: 0.8rem; }
 
   /* Ensure the grid header (title + timer) is compact */
   .grid-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 0; margin: 0; }
@@ -1074,7 +1102,7 @@ header p{font-size:.95rem;opacity:.95}
      Two rows so leaderboard and history each get half of column 3 */
   .main-layout { 
     display: grid; 
-    grid-template-columns: minmax(400px, 1fr) 320px 260px; 
+    grid-template-columns: minmax(360px, 1fr) minmax(280px, 320px) minmax(240px, 280px); 
     grid-template-rows: 1fr 1fr;
     gap: 24px; 
     align-items: start; 
@@ -1176,8 +1204,8 @@ header p{font-size:.95rem;opacity:.95}
     order: 2;
     grid-row: 1 / -1;
     /* Use align-self: stretch within a row that's sized by the grid */
-    align-self: self-start;
-    /* Match the grid section height - will be set by JS */
+    align-self: stretch;
+    /* Match the grid section height via grid row stretch */
     height: auto;
     max-height: none;
   }

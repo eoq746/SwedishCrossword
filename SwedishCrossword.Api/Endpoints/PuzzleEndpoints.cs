@@ -6,7 +6,7 @@ internal static class PuzzleEndpoints
 
     internal static WebApplication MapPuzzleEndpoints(this WebApplication app, string puzzlePath)
     {
-        app.MapGet("/api/puzzle/today", async (string? size, SubmissionTokenService tokenService, TimeProvider timeProvider) =>
+        app.MapGet("/api/puzzle/today", async (string? size, SubmissionTokenService tokenService, TimeProvider timeProvider, CancellationToken ct) =>
         {
             var sizeKey = NormalisePuzzleSize(size);
             var today = DateOnly.FromDateTime(timeProvider.GetUtcNow().UtcDateTime);
@@ -14,7 +14,7 @@ internal static class PuzzleEndpoints
 
             if (todayFile is not null)
             {
-                var json = await File.ReadAllTextAsync(todayFile);
+                var json = await File.ReadAllTextAsync(todayFile, ct);
                 return Results.Content(tokenService.InjectToken(json, today), "application/json; charset=utf-8");
             }
 
@@ -22,7 +22,7 @@ internal static class PuzzleEndpoints
             return Results.Json(new ErrorResponse("Puzzle not ready yet"), statusCode: StatusCodes.Status503ServiceUnavailable);
         }).CacheOutput("puzzle-today");
 
-        app.MapGet("/api/puzzle/{date}", async (string date, string? size, SubmissionTokenService tokenService, TimeProvider timeProvider) =>
+        app.MapGet("/api/puzzle/{date}", async (string date, string? size, SubmissionTokenService tokenService, TimeProvider timeProvider, CancellationToken ct) =>
         {
             if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", out var parsedDate))
                 return Results.BadRequest(new ErrorResponse("Invalid date format. Use yyyy-MM-dd"));
@@ -36,7 +36,7 @@ internal static class PuzzleEndpoints
 
             if (puzzleFile is not null)
             {
-                var json = await File.ReadAllTextAsync(puzzleFile);
+                var json = await File.ReadAllTextAsync(puzzleFile, ct);
                 return Results.Content(tokenService.InjectToken(json, parsedDate), "application/json; charset=utf-8");
             }
 

@@ -1212,7 +1212,7 @@ async function showUsernameModal() {
         hintEl.remove();
     }
 
-    document.getElementById('username-modal').classList.add('active');
+    openUsernameModal();
 
     const modalContent = document.querySelector('#username-modal .modal');
     let warningEl = document.getElementById('cheat-warning');
@@ -1312,7 +1312,20 @@ function checkPendingScore() {
 }
 
 function closeModal() {
-    document.getElementById('username-modal').classList.remove('active');
+    const modal = document.getElementById('username-modal');
+    modal.classList.remove('active');
+    document.removeEventListener('keydown', _usernameModalEscape);
+    modal.removeEventListener('click', _usernameModalBackdrop);
+}
+
+function _usernameModalEscape(e) { if (e.key === 'Escape') closeModal(); }
+function _usernameModalBackdrop(e) { if (e.target === e.currentTarget) closeModal(); }
+
+function openUsernameModal() {
+    const modal = document.getElementById('username-modal');
+    modal.classList.add('active');
+    document.addEventListener('keydown', _usernameModalEscape);
+    modal.addEventListener('click', _usernameModalBackdrop);
 }
 
 async function submitScore() {
@@ -3360,4 +3373,23 @@ document.addEventListener('DOMContentLoaded', loadPuzzle);
       }
     }
   };
+})();
+
+// Detect clue-list overflow and add fade indicator
+(function(){
+  function checkClueOverflow(){
+    document.querySelectorAll('.clue-direction').forEach(dir => {
+      const list = dir.querySelector('.clue-list');
+      if(list) dir.classList.toggle('has-overflow', list.scrollHeight > list.clientHeight + 4);
+    });
+  }
+  window.addEventListener('resize', checkClueOverflow);
+  const obs = new MutationObserver(checkClueOverflow);
+  document.addEventListener('DOMContentLoaded', () => {
+    const cl = document.getElementById('across-clues');
+    if(cl) obs.observe(cl, {childList:true});
+    const dl = document.getElementById('down-clues');
+    if(dl) obs.observe(dl, {childList:true});
+    checkClueOverflow();
+  });
 })();
