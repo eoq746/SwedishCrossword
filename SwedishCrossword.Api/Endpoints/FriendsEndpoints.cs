@@ -103,7 +103,7 @@ internal static class FriendsEndpoints
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
-            var d = date ?? DateOnly.FromDateTime(timeProvider.GetUtcNow().UtcDateTime).ToString("yyyy-MM-dd");
+            var d = date ?? timeProvider.GetSwedishDate().ToString("yyyy-MM-dd");
             if (!LeaderboardStore.DatePattern.IsMatch(d))
                 return Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
 

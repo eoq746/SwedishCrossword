@@ -24,9 +24,14 @@ builder.Services.AddSingleton<CrosswordGenerator>();
 builder.Services.AddSingleton<PrintService>();
 builder.Services.AddSingleton<LeaderboardStore>();
 builder.Services.AddSingleton<SubmissionTokenService>();
+builder.Services.AddSingleton<PuzzleCache>();
+builder.Services.AddSingleton<PuzzleDateIndex>();
 
 // Background service: pre-generates today's puzzle at startup so the first visitor never waits
 builder.Services.AddHostedService<PuzzleWarmupService>();
+
+// Background service: periodically prunes old leaderboard entries (removes work from write path)
+builder.Services.AddHostedService<LeaderboardPruneService>();
 
 // Forwarded headers — required behind Azure App Service reverse proxy for correct client IPs
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
@@ -251,6 +256,28 @@ app.Use(async (context, next) =>
         "form-action 'self' https://accounts.google.com https://login.microsoftonline.com";
     if (isProduction)
         headers.StrictTransportSecurity = "max-age=31536000; includeSubDomains";
+    await next();
+});
+
+// CSRF protection: reject state-changing requests with mismatched Origin header
+app.Use(async (context, next) =>
+{
+    var method = context.Request.Method;
+    if (HttpMethods.IsPost(method) || HttpMethods.IsPut(method) || HttpMethods.IsDelete(method) || HttpMethods.IsPatch(method))
+    {
+        var origin = context.Request.Headers.Origin.FirstOrDefault();
+        if (!string.IsNullOrEmpty(origin) && origin != "null")
+        {
+            var host = context.Request.Host.Value;
+            if (!Uri.TryCreate(origin, UriKind.Absolute, out var originUri) ||
+                !string.Equals(originUri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
+            {
+                context.Response.StatusCode = 403;
+                await context.Response.WriteAsync("{\"error\":\"Origin mismatch\"}");
+                return;
+            }
+        }
+    }
     await next();
 });
 

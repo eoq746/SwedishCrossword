@@ -1,6 +1,8 @@
 using System.Text;
 using System.Text.Json.Nodes;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting.Internal;
 using Microsoft.Extensions.Logging.Abstractions;
 using TUnit.Assertions;
 using TUnit.Assertions.Extensions;
@@ -18,7 +20,7 @@ public class SubmissionTokenServiceTests
                 ["SubmissionToken:Secret"] = secret
             })
             .Build();
-        return new SubmissionTokenService(config, NullLogger<SubmissionTokenService>.Instance, TimeProvider.System);
+        return new SubmissionTokenService(config, NullLogger<SubmissionTokenService>.Instance, TimeProvider.System, new HostingEnvironment { EnvironmentName = Environments.Development });
     }
 
     // -----------------------------------------------------------------------

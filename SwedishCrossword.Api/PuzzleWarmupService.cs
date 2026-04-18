@@ -13,6 +13,7 @@ sealed class PuzzleWarmupService : BackgroundService
     private readonly string _puzzlePath;
     private readonly ILogger<PuzzleWarmupService> _logger;
     private readonly TimeProvider _timeProvider;
+    private readonly PuzzleDateIndex _dateIndex;
 
     /// <summary>
     /// Puzzle sizes to generate for each day. Add new entries here to extend
@@ -34,12 +35,14 @@ sealed class PuzzleWarmupService : BackgroundService
         PrintService printService,
         IConfiguration config,
         ILogger<PuzzleWarmupService> logger,
-        TimeProvider timeProvider)
+        TimeProvider timeProvider,
+        PuzzleDateIndex dateIndex)
     {
         _generator = generator;
         _printService = printService;
         _logger = logger;
         _timeProvider = timeProvider;
+        _dateIndex = dateIndex;
 
         var path = config["Storage:PuzzlePath"];
         _puzzlePath = string.IsNullOrWhiteSpace(path)
@@ -50,13 +53,13 @@ sealed class PuzzleWarmupService : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         // Generate today's puzzle and the next 7 days immediately on startup
-        await EnsurePuzzlesForRange(DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime), DaysAhead, stoppingToken);
+        await EnsurePuzzlesForRange(_timeProvider.GetSwedishDate(), DaysAhead, stoppingToken);
 
-        // Then check every hour (catches the date rollover at midnight UTC)
+        // Then check every hour (catches the date rollover at midnight Swedish time)
         using var timer = new PeriodicTimer(TimeSpan.FromHours(1));
         while (await timer.WaitForNextTickAsync(stoppingToken))
         {
-            await EnsurePuzzlesForRange(DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime), DaysAhead, stoppingToken);
+            await EnsurePuzzlesForRange(_timeProvider.GetSwedishDate(), DaysAhead, stoppingToken);
         }
     }
 
@@ -89,6 +92,7 @@ sealed class PuzzleWarmupService : BackgroundService
                     var puzzle = await _generator.GenerateAsync(options, ct);
                     var json = _printService.GenerateJsonForWeb(puzzle);
                     await File.WriteAllTextAsync(filePath, json, ct);
+                    _dateIndex.Add(date.ToString("yyyy-MM-dd"), sizeKey);
                     _logger.LogInformation("{Size} puzzle for {Date} generated successfully", sizeKey, date);
                 }
                 else

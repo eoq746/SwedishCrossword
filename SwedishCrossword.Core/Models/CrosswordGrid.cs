@@ -189,10 +189,9 @@ public class CrosswordGrid
                 return false;
             }
         }
-        catch (Exception ex)
+        catch
         {
             // On any error, ensure we restore the grid state
-            Console.WriteLine($"    Fel under ordvalidering för '{word.Text}': {ex.Message}");
             RestoreCellsAlongWord(cellBackups, startRow, startCol, direction, wordsCountBefore);
             return false;
         }

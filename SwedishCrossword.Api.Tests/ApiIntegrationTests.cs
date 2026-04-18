@@ -90,7 +90,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_PastDate_NoFile_ReturnsNotFound()
     {
-        var pastDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-10).ToString("yyyy-MM-dd");
+        var pastDate = GetSwedishDate().AddDays(-10).ToString("yyyy-MM-dd");
 
         var response = await _client.GetAsync($"/api/puzzle/{pastDate}");
 
@@ -100,7 +100,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_PreSeededFile_ReturnsContent()
     {
-        var date = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"test":true}""";
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{date}.json"), puzzleJson);
@@ -116,7 +116,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_FutureDate_ReturnsNotFound()
     {
-        var futureDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(3);
+        var futureDate = GetSwedishDate().AddDays(3);
         var puzzleJson = """{"test":true}""";
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), puzzleJson);
@@ -129,7 +129,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleDates_ExcludesFutureDates()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var pastDate = today.AddDays(-2);
         var futureDate = today.AddDays(3);
 
@@ -175,7 +175,7 @@ public class ApiIntegrationTests
         var lbPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-migrate-" + Guid.NewGuid());
         Directory.CreateDirectory(lbPath);
 
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var leaderboardKey = $"{today}-standard";
 
         // Seed current.json (scores)
@@ -248,7 +248,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_ValidToken_ReturnsOk()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -312,7 +312,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryRoundTrip_PostThenGet()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -343,7 +343,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleToday_PreSeededFile_ReturnsContent()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"today":true}""";
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), puzzleJson);
@@ -367,7 +367,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleToday_SmallSize_FallsBackToStandard()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"fallback":true}""";
         Directory.CreateDirectory(_tempPuzzlePath);
         // Only create the standard file, not the small variant
@@ -387,7 +387,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_SmallSize_FallsBackToStandard()
     {
-        var pastDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-1).ToString("yyyy-MM-dd");
+        var pastDate = GetSwedishDate().AddDays(-1).ToString("yyyy-MM-dd");
         var puzzleJson = """{"standard":true}""";
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{pastDate}.json"), puzzleJson);
@@ -423,7 +423,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task ScoresPost_ValidToken_ReturnsOk()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -481,7 +481,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task ScoresPost_TooFast_Returns403()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -506,7 +506,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task ScoresPost_AppearsInLeaderboard()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -548,7 +548,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleWithCells_IncludesSubmissionToken()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -569,7 +569,7 @@ public class ApiIntegrationTests
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10);
-        var oldDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-100).ToString("yyyy-MM-dd");
+        var oldDate = GetSwedishDate().AddDays(-100).ToString("yyyy-MM-dd");
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -651,7 +651,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_ReturnsJsonContentType()
     {
-        var date = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{date}.json"), "{}");
 
@@ -668,7 +668,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleWithCells_StripsLettersFromCells()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -692,7 +692,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleWithCells_StripsAnswersFromClues()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -715,7 +715,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleWithCells_StillIncludesPuzzleHashAndDate()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -734,7 +734,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_AllCorrect_ReturnsSolved()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -761,7 +761,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_PartiallyCorrect_ReturnsNotSolved()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -792,7 +792,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_EmptyCells_ReturnsNotSolved()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -816,7 +816,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_CaseInsensitive_Matches()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -908,7 +908,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_SingleCell_ReturnsLetter()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -932,7 +932,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_MultipleCells_ReturnsAllLetters()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -958,7 +958,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_BlockedCell_SkipsIt()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         Directory.CreateDirectory(_tempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
@@ -1177,6 +1177,12 @@ public class ApiIntegrationTests
         }
         if (negative) result[--pos] = '-';
         return new string(result, pos, result.Length - pos);
+    }
+
+    private static DateOnly GetSwedishDate()
+    {
+        var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
+        return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
     }
 }
 

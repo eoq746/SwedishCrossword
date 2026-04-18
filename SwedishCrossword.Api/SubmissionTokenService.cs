@@ -17,11 +17,16 @@ sealed class SubmissionTokenService
     private const double MinSecondsPerCell = 0.3;
     private static readonly TimeSpan TokenLifetime = TimeSpan.FromHours(48);
 
-    public SubmissionTokenService(IConfiguration config, ILogger<SubmissionTokenService> logger, TimeProvider timeProvider)
+    public SubmissionTokenService(IConfiguration config, ILogger<SubmissionTokenService> logger, TimeProvider timeProvider, IHostEnvironment environment)
     {
         var secret = config["SubmissionToken:Secret"];
         if (string.IsNullOrWhiteSpace(secret))
         {
+            if (environment.IsProduction())
+                throw new InvalidOperationException(
+                    "SubmissionToken:Secret must be configured in production. " +
+                    "Set the SubmissionToken__Secret environment variable.");
+
             // Ephemeral key — tokens won't survive app restart.
             logger.LogWarning(
                 "SubmissionToken:Secret is not configured. Using an ephemeral key — " +

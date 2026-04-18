@@ -241,12 +241,14 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendScoreAsync_PrunesKeysOlderThan7Days()
     {
-        var oldDate = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-10).ToString("yyyy-MM-dd");
-        var todayDate = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var oldDate = GetSwedishDate().AddDays(-10).ToString("yyyy-MM-dd");
+        var todayDate = GetSwedishDate().ToString("yyyy-MM-dd");
 
         await _store.AppendScoreAsync($"{oldDate}-standard", new ScoreRecord("Old", 45.0, 1000L, "h"));
-        // This insert triggers pruning
         await _store.AppendScoreAsync($"{todayDate}-standard", new ScoreRecord("New", 50.0, 2000L, "h"));
+
+        // Pruning is now performed by the background service
+        await _store.PruneOldEntriesAsync();
 
         var json = await _store.GetCurrentAsync();
 
@@ -286,7 +288,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_SingleRecord_AppearsInGetHistory()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var record = new HistoryRecord("Anna", 90.5, 1000L, "hash1", "standard");
 
         await _store.AppendHistoryAsync(today, record);
@@ -304,7 +306,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_DuplicateRecord_NotInserted()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var record = new HistoryRecord("Anna", 90.5, 1000L, "hash1", "standard");
 
         await _store.AppendHistoryAsync(today, record);
@@ -317,7 +319,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_NullTimestamp_DeduplicatesCorrectly()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var record = new HistoryRecord("Anna", 90.5, null, "hash1", "standard");
 
         await _store.AppendHistoryAsync(today, record);
@@ -334,7 +336,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_KeepsTop10PerPuzzleHash()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         for (int i = 1; i <= 12; i++)
             await _store.AppendHistoryAsync(today, new HistoryRecord($"P{i}", i * 10.0, i * 1000L, "sameHash", "standard"));
@@ -348,7 +350,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_DifferentHashes_IndependentTop10()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         // 10 for hash A
         for (int i = 1; i <= 10; i++)
@@ -369,7 +371,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_CapsAt50PerDate()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         // Use different hashes to avoid per-hash trimming (10 per hash × 6 hashes = 60 > 50)
         for (int h = 0; h < 6; h++)
@@ -388,7 +390,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_PreservesAllFields()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var record = new HistoryRecord("Anna", 90.5, 1000L, "hash1", "small", HintsUsed: 2, WordHintsUsed: 1);
 
         await _store.AppendHistoryAsync(today, record);
@@ -407,7 +409,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task AppendHistoryAsync_NullOptionalFields_Handled()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var record = new HistoryRecord("Anna", 90.5, null, null, null);
 
         await _store.AppendHistoryAsync(today, record);
@@ -426,7 +428,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetHistoryAsync_OnlyReturnsDaysInRange()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var todayStr = today.ToString("yyyy-MM-dd");
         var yesterday = today.AddDays(-1).ToString("yyyy-MM-dd");
 
@@ -442,7 +444,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetHistoryAsync_ExcludesDatesOutsideRange()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var fiveDaysAgo = today.AddDays(-5).ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(fiveDaysAgo, new HistoryRecord("Old", 10.0, 1000L, "h", "s"));
@@ -462,7 +464,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetHistoryAsync_ResultsSortedByTimePerDate()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(today, new HistoryRecord("Slow", 90.0, 1000L, "h", "s"));
         await _store.AppendHistoryAsync(today, new HistoryRecord("Fast", 30.0, 2000L, "h", "s"));
@@ -544,8 +546,8 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetAnalyticsSummaryAsync_ReturnsCorrectAggregates()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
-        var yesterday = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-1).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
+        var yesterday = GetSwedishDate().AddDays(-1).ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(today, new HistoryRecord("Anna", 40.0, 1000L, "h1", "17x17"));
         await _store.AppendHistoryAsync(today, new HistoryRecord("Erik", 60.0, 2000L, "h1", "17x17", HintsUsed: 2));
@@ -562,7 +564,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetAnalyticsSummaryAsync_HintRate_ComputedCorrectly()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(today, new HistoryRecord("A", 10.0, 1000L, "h", "s", HintsUsed: 1));
         await _store.AppendHistoryAsync(today, new HistoryRecord("B", 20.0, 2000L, "h", "s", HintsUsed: 0));
@@ -588,7 +590,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetDailyAnalyticsAsync_ReturnsPerDayBreakdown()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var todayStr = today.ToString("yyyy-MM-dd");
         var yesterdayStr = today.AddDays(-1).ToString("yyyy-MM-dd");
 
@@ -613,7 +615,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetDailyAnalyticsAsync_ExcludesOutOfRange()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var fiveDaysAgo = today.AddDays(-5).ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(fiveDaysAgo, new HistoryRecord("Old", 10.0, 1000L, "h", "s"));
@@ -637,8 +639,8 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetTopPlayersAsync_RankedByGamesPlayed()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
-        var yesterday = DateOnly.FromDateTime(DateTime.UtcNow).AddDays(-1).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
+        var yesterday = GetSwedishDate().AddDays(-1).ToString("yyyy-MM-dd");
 
         // Anna plays 3 games, Erik plays 1
         await _store.AppendHistoryAsync(today, new HistoryRecord("Anna", 40.0, 1000L, "h1", "17x17"));
@@ -659,7 +661,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetTopPlayersAsync_RespectsLimit()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         await _store.AppendHistoryAsync(today, new HistoryRecord("A", 10.0, 1000L, "h", "s"));
         await _store.AppendHistoryAsync(today, new HistoryRecord("B", 20.0, 2000L, "h", "s"));
@@ -673,7 +675,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetTopPlayersAsync_TieBreaksByAverageTime()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow).ToString("yyyy-MM-dd");
+        var today = GetSwedishDate().ToString("yyyy-MM-dd");
 
         // Both play 1 game — Fast should rank first due to lower avg time
         await _store.AppendHistoryAsync(today, new HistoryRecord("Fast", 20.0, 1000L, "h", "s"));
@@ -698,6 +700,12 @@ public class LeaderboardStoreTests
             })
             .Build();
         return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System, new TestHostEnvironment());
+    }
+
+    private static DateOnly GetSwedishDate()
+    {
+        var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
+        return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
     }
 
     private sealed class TestHostEnvironment : IHostEnvironment
@@ -944,7 +952,7 @@ public class LeaderboardStoreTests
     [Test]
     public async Task GetUserStatsAsync_ReturnsPerSizeStatsWithStreaks()
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = GetSwedishDate();
         var d0 = today.ToString("yyyy-MM-dd");
         var d1 = today.AddDays(-1).ToString("yyyy-MM-dd");
         var d2 = today.AddDays(-2).ToString("yyyy-MM-dd");

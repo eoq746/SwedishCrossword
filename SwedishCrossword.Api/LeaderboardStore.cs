@@ -84,8 +84,30 @@ sealed partial class LeaderboardStore : IDisposable
     public static string SanitiseName(string? name)
     {
         if (string.IsNullOrWhiteSpace(name)) return string.Empty;
-        var sanitised = new string(name.Where(c => !char.IsControl(c)).ToArray()).Trim();
-        return sanitised[..Math.Min(sanitised.Length, 30)];
+        // Fast path: check if any control characters exist
+        var span = name.AsSpan().Trim();
+        if (span.Length == 0) return string.Empty;
+        var hasControl = false;
+        foreach (var c in span)
+        {
+            if (char.IsControl(c)) { hasControl = true; break; }
+        }
+        if (!hasControl)
+            return span.Length <= 30 ? span.ToString() : span[..30].ToString();
+        // Slow path: filter control characters
+        return string.Create(Math.Min(span.Length, 30), span, static (dest, src) =>
+        {
+            int written = 0;
+            foreach (var c in src)
+            {
+                if (!char.IsControl(c))
+                {
+                    dest[written++] = c;
+                    if (written == dest.Length) break;
+                }
+            }
+            dest[written..].Fill('\0');
+        }).TrimEnd('\0');
     }
 
     // GET /leaderboard
@@ -210,19 +232,6 @@ sealed partial class LeaderboardStore : IDisposable
             await trim.ExecuteNonQueryAsync();
         }
 
-        // Prune entries older than 7 days
-        var cutoff = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime).AddDays(-7);
-        if (cutoff < HistoryCutoffDate) cutoff = HistoryCutoffDate;
-        await using (var prune = conn.CreateCommand())
-        {
-            prune.Transaction = tx;
-            prune.CommandText = _useSqlServer
-                ? "DELETE FROM scores WHERE SUBSTRING(leaderboard_key, 1, 10) < @cutoff"
-                : "DELETE FROM scores WHERE SUBSTR(leaderboard_key, 1, 10) < @cutoff";
-            AddParam(prune, "@cutoff", cutoff.ToString("yyyy-MM-dd"));
-            await prune.ExecuteNonQueryAsync();
-        }
-
         await tx.CommitAsync();
         return await GetScoresForKeyAsync(conn, null, leaderboardKey);
         }
@@ -230,6 +239,37 @@ sealed partial class LeaderboardStore : IDisposable
         {
             await tx.RollbackAsync();
             throw;
+        }
+    }
+
+    /// <summary>
+    /// Prunes old score and history entries. Called periodically by <see cref="LeaderboardPruneService"/>
+    /// instead of on every write, reducing submission latency.
+    /// </summary>
+    public async Task PruneOldEntriesAsync()
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        // Prune scores older than 7 days
+        var scoreCutoff = _timeProvider.GetSwedishDate().AddDays(-7);
+        if (scoreCutoff < HistoryCutoffDate) scoreCutoff = HistoryCutoffDate;
+        await using (var prune = conn.CreateCommand())
+        {
+            prune.CommandText = _useSqlServer
+                ? "DELETE FROM scores WHERE SUBSTRING(leaderboard_key, 1, 10) < @cutoff"
+                : "DELETE FROM scores WHERE SUBSTR(leaderboard_key, 1, 10) < @cutoff";
+            AddParam(prune, "@cutoff", scoreCutoff.ToString("yyyy-MM-dd"));
+            await prune.ExecuteNonQueryAsync();
+        }
+
+        // Prune history older than 365 days
+        var historyCutoff = _timeProvider.GetSwedishDate().AddDays(-365);
+        if (historyCutoff < HistoryCutoffDate) historyCutoff = HistoryCutoffDate;
+        await using (var purge = conn.CreateCommand())
+        {
+            purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
+            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd"));
+            await purge.ExecuteNonQueryAsync();
         }
     }
 
@@ -351,17 +391,6 @@ sealed partial class LeaderboardStore : IDisposable
             await cap.ExecuteNonQueryAsync();
         }
 
-        // GDPR retention: purge history older than 365 days
-        var historyCutoff = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime).AddDays(-365);
-        if (historyCutoff < HistoryCutoffDate) historyCutoff = HistoryCutoffDate;
-        await using (var purge = conn.CreateCommand())
-        {
-            purge.Transaction = tx;
-            purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
-            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd"));
-            await purge.ExecuteNonQueryAsync();
-        }
-
         await tx.CommitAsync();
         }
         catch
@@ -374,7 +403,7 @@ sealed partial class LeaderboardStore : IDisposable
     // GET /leaderboard/history?days=N
     public async Task<Dictionary<string, List<HistoryRecord>>> GetHistoryAsync(int days)
     {
-        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+        var today = _timeProvider.GetSwedishDate();
         var earliest = today.AddDays(-(days - 1));
         if (earliest < HistoryCutoffDate) earliest = HistoryCutoffDate;
 
@@ -524,7 +553,7 @@ sealed partial class LeaderboardStore : IDisposable
         var avgTime = Math.Round(solves.Average(s => s.Time), 1);
         var bestTime = Math.Round(solves.Min(s => s.Time), 1);
 
-        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+        var today = _timeProvider.GetSwedishDate();
 
         var perSize = solves
             .Where(s => !string.IsNullOrEmpty(s.PuzzleSize))
@@ -590,7 +619,7 @@ sealed partial class LeaderboardStore : IDisposable
 
     public async Task<AnalyticsSummary> GetAnalyticsSummaryAsync()
     {
-        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime).ToString("yyyy-MM-dd");
+        var today = _timeProvider.GetSwedishDate().ToString("yyyy-MM-dd");
         await using var conn = await OpenConnectionAsync();
 
         // Main aggregates
@@ -663,7 +692,7 @@ sealed partial class LeaderboardStore : IDisposable
 
     public async Task<List<DailyAnalytics>> GetDailyAnalyticsAsync(int days)
     {
-        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime);
+        var today = _timeProvider.GetSwedishDate();
         var earliest = today.AddDays(-(days - 1));
         if (earliest < HistoryCutoffDate) earliest = HistoryCutoffDate;
 

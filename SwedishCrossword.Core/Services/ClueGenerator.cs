@@ -7,7 +7,7 @@ namespace SwedishCrossword.Services;
 /// </summary>
 public class ClueGenerator
 {
-    private readonly Random _random = new();
+    private readonly Random _random = Random.Shared;
     private readonly Dictionary<string, List<string>> _clueTemplates = [];
 
     public ClueGenerator()

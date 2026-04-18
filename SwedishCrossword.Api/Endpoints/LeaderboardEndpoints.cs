@@ -72,7 +72,7 @@ internal static class LeaderboardEndpoints
             if (string.IsNullOrWhiteSpace(body.Date) || !LeaderboardStore.DatePattern.IsMatch(body.Date))
                 return Results.BadRequest(new ErrorResponse("Invalid date format"));
 
-            var today = DateOnly.FromDateTime(timeProvider.GetUtcNow().UtcDateTime);
+            var today = timeProvider.GetSwedishDate();
             if (!DateOnly.TryParseExact(body.Date, "yyyy-MM-dd", out var historyDate)
                 || historyDate < today.AddDays(-90)
                 || historyDate > today.AddDays(1))

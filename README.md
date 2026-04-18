@@ -80,6 +80,10 @@ SwedishCrosswords/
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
 |   |-- SubmissionTokenService.cs   # HMAC-signed token generation/validation, answer stripping, server-side answer reading
 |   |-- LeaderboardStore.cs         # Dual-database leaderboard storage (Azure SQL in production, SQLite for local dev)
+|   |-- LeaderboardPruneService.cs  # Background service: periodic pruning of old scores and history
+|   |-- PuzzleCache.cs              # In-memory cache for pre-processed puzzle data (avoids repeated disk I/O)
+|   |-- PuzzleDateIndex.cs          # Thread-safe in-memory index of available puzzle dates and sizes
+|   |-- TimeProviderExtensions.cs   # Swedish time zone date helpers
 |   |-- Models.cs                   # Request/response records (including analytics models)
 |   |-- wwwroot/                    # Frontend (served by the API)
 |   |   |-- index.html              # Landing page with SEO structured data
@@ -285,7 +289,7 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 373 tests:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 375 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (Å, Ä, Ö)

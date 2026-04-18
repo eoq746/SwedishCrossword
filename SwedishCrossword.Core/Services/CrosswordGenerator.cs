@@ -13,7 +13,7 @@ public class CrosswordGenerator
 {
     private readonly SwedishDictionary _dictionary;
     private readonly GridValidator _validator;
-    private readonly Random _random;
+    private readonly Random _random = Random.Shared;
     private readonly WordAnalyzer _wordAnalyzer = new();
     private readonly GapFiller _gapFiller;
     private readonly VinkelordPlacer _vinkelordPlacer;
@@ -25,7 +25,6 @@ public class CrosswordGenerator
         _dictionary = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         _logger = logger;
-        _random = new Random();
         _gapFiller = new GapFiller(dictionary, _random);
         _vinkelordPlacer = new VinkelordPlacer(dictionary, _random);
         _wordPlacer = new WordPlacer(dictionary, _random, _vinkelordPlacer);

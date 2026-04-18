@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Runtime.InteropServices;
+using System.Text.Json;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using SwedishCrossword.Models;
@@ -12,12 +13,12 @@ namespace SwedishCrossword.Services;
 public class SwedishDictionary
 {
     private readonly Dictionary<string, WordEntry> _words;
-    private readonly Random _random = new();
     private readonly ILogger<SwedishDictionary> _logger;
+    private IReadOnlyList<Word>? _allWordsCache;
 
     private static bool HasValidClue(WordEntry w) => !string.IsNullOrWhiteSpace(w.Clue) && w.Clue != "___";
 
-    public IReadOnlyList<Word> AllWords => _words.Values.Where(HasValidClue).Select(ConvertToWord).ToList().AsReadOnly();
+    public IReadOnlyList<Word> AllWords => _allWordsCache ??= _words.Values.Where(HasValidClue).Select(ConvertToWord).ToList().AsReadOnly();
     public int WordCount => _words.Count;
 
     public SwedishDictionary(ILogger<SwedishDictionary> logger)
@@ -99,14 +100,22 @@ public class SwedishDictionary
         _logger.LogInformation("Total words loaded: {WordCount}", WordCount);
     }
 
+    private const long MaxWordFileSize = 100 * 1024 * 1024; // 100 MB
+
     private void LoadWordsFromFile(string filePath)
     {
         try
         {
             _logger.LogDebug("Loading words from: {FileName}", Path.GetFileName(filePath));
 
+            var fileInfo = new FileInfo(filePath);
+            if (fileInfo.Length > MaxWordFileSize)
+            {
+                _logger.LogError("Word file {FilePath} exceeds maximum allowed size ({Size} bytes)", filePath, fileInfo.Length);
+                return;
+            }
+
             string jsonText = "";
-            Encoding encoding = Encoding.UTF8;
 
             // Try UTF-8 first
             try
@@ -125,10 +134,10 @@ public class SwedishDictionary
                 int wordsAdded = 0;
                 foreach (var entry in wordData)
                 {
-                    if (!string.IsNullOrWhiteSpace(entry.Word) && !_words.ContainsKey(entry.Word.ToUpperInvariant()))
+                    if (!string.IsNullOrWhiteSpace(entry.Word))
                     {
-                        _words[entry.Word.ToUpperInvariant()] = entry;
-                        wordsAdded++;
+                        if (_words.TryAdd(entry.Word.ToUpperInvariant(), entry))
+                            wordsAdded++;
                     }
                 }
                 //Console.WriteLine($"Loaded {wordsAdded} words successfully");
@@ -213,12 +222,8 @@ public class SwedishDictionary
             return [];
 
         count = Math.Min(count, availableWords.Count);
-        var shuffled = availableWords
-            .OrderBy(x => _random.Next())
-            .Take(count)
-            .Select(ConvertToWord);
-
-        return shuffled;
+        Random.Shared.Shuffle(System.Runtime.InteropServices.CollectionsMarshal.AsSpan(availableWords));
+        return availableWords.Take(count).Select(ConvertToWord);
     }
 
     /// <summary>
