@@ -534,7 +534,9 @@ public class LeaderboardStoreTests
 
         await Assert.That(summary.TotalCompletions).IsEqualTo(0);
         await Assert.That(summary.UniquePlayers).IsEqualTo(0);
-        await Assert.That(summary.DaysWithData).IsEqualTo(0);
+        await Assert.That(summary.RegisteredUsers).IsEqualTo(0);
+        await Assert.That(summary.CompletionsToday).IsEqualTo(0);
+        await Assert.That(summary.ActiveToday).IsEqualTo(0);
         await Assert.That(summary.AverageTime).IsEqualTo(0);
         await Assert.That(summary.BestTime).IsEqualTo(0);
     }
@@ -553,7 +555,6 @@ public class LeaderboardStoreTests
 
         await Assert.That(summary.TotalCompletions).IsEqualTo(3);
         await Assert.That(summary.UniquePlayers).IsEqualTo(2);
-        await Assert.That(summary.DaysWithData).IsEqualTo(2);
         await Assert.That(summary.BestTime).IsEqualTo(40.0);
         await Assert.That(summary.AverageTime).IsEqualTo(50.0);
     }
@@ -569,10 +570,8 @@ public class LeaderboardStoreTests
 
         var summary = await _store.GetAnalyticsSummaryAsync();
 
-        // 1 out of 3 used hints → 0.333
-        await Assert.That(summary.HintRate).IsEqualTo(0.333);
-        // 1 out of 3 used word hints → 0.333
-        await Assert.That(summary.WordHintRate).IsEqualTo(0.333);
+        // 2 out of 3 used any hint (A used hints, C used word hints) → 0.667
+        await Assert.That(summary.HintUsageRate).IsEqualTo(0.667);
     }
 
     // -----------------------------------------------------------------------
@@ -650,10 +649,10 @@ public class LeaderboardStoreTests
         var result = await _store.GetTopPlayersAsync(10);
 
         await Assert.That(result.Count).IsEqualTo(2);
-        await Assert.That(result[0].Name).IsEqualTo("Anna");
+        await Assert.That(result[0].DisplayName).IsEqualTo("Anna");
         await Assert.That(result[0].GamesPlayed).IsEqualTo(3);
         await Assert.That(result[0].BestTime).IsEqualTo(35.0);
-        await Assert.That(result[1].Name).IsEqualTo("Erik");
+        await Assert.That(result[1].DisplayName).IsEqualTo("Erik");
         await Assert.That(result[1].GamesPlayed).IsEqualTo(1);
     }
 
@@ -682,8 +681,8 @@ public class LeaderboardStoreTests
 
         var result = await _store.GetTopPlayersAsync(10);
 
-        await Assert.That(result[0].Name).IsEqualTo("Fast");
-        await Assert.That(result[1].Name).IsEqualTo("Slow");
+        await Assert.That(result[0].DisplayName).IsEqualTo("Fast");
+        await Assert.That(result[1].DisplayName).IsEqualTo("Slow");
     }
 
     // -----------------------------------------------------------------------

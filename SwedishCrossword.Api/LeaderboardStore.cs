@@ -590,33 +590,74 @@ sealed partial class LeaderboardStore : IDisposable
 
     public async Task<AnalyticsSummary> GetAnalyticsSummaryAsync()
     {
+        var today = DateOnly.FromDateTime(_timeProvider.GetUtcNow().UtcDateTime).ToString("yyyy-MM-dd");
         await using var conn = await OpenConnectionAsync();
+
+        // Main aggregates
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
             SELECT
                 COUNT(*)                                          AS total_completions,
                 COUNT(DISTINCT name)                              AS unique_players,
-                COUNT(DISTINCT date)                              AS days_with_data,
                 COALESCE(AVG(time), 0)                            AS avg_time,
                 COALESCE(MIN(time), 0)                            AS best_time,
-                COALESCE(AVG(CASE WHEN hints_used > 0 THEN 1.0 ELSE 0.0 END), 0)      AS hint_rate,
-                COALESCE(AVG(CASE WHEN word_hints_used > 0 THEN 1.0 ELSE 0.0 END), 0) AS word_hint_rate
+                COALESCE(AVG(CASE WHEN hints_used > 0 OR word_hints_used > 0 THEN 1.0 ELSE 0.0 END), 0) AS hint_usage_rate
             FROM history
             WHERE date >= @cutoff
             """;
         AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
-
         await using var reader = await cmd.ExecuteReaderAsync();
         await reader.ReadAsync();
+        var totalCompletions = reader.GetInt32(0);
+        var uniquePlayers = reader.GetInt32(1);
+        var avgTime = Math.Round(reader.GetDouble(2), 1);
+        var bestTime = Math.Round(reader.GetDouble(3), 1);
+        var hintUsageRate = Math.Round(reader.GetDouble(4), 3);
+        await reader.CloseAsync();
+
+        // Registered users (aliases)
+        await using var regCmd = conn.CreateCommand();
+        regCmd.CommandText = "SELECT COUNT(*) FROM user_aliases";
+        var registeredUsers = Convert.ToInt32(await regCmd.ExecuteScalarAsync());
+
+        // Today's activity
+        await using var todayCmd = conn.CreateCommand();
+        todayCmd.CommandText = "SELECT COUNT(*), COUNT(DISTINCT name) FROM history WHERE date = @today";
+        AddParam(todayCmd, "@today", today);
+        await using var todayReader = await todayCmd.ExecuteReaderAsync();
+        await todayReader.ReadAsync();
+        var completionsToday = todayReader.GetInt32(0);
+        var activeToday = todayReader.GetInt32(1);
+        await todayReader.CloseAsync();
+
+        // Per puzzle size
+        await using var sizeCmd = conn.CreateCommand();
+        sizeCmd.CommandText = """
+            SELECT puzzle_size, COUNT(*), COALESCE(AVG(time), 0)
+            FROM history
+            WHERE date >= @cutoff AND puzzle_size IS NOT NULL AND puzzle_size != ''
+            GROUP BY puzzle_size
+            ORDER BY puzzle_size
+            """;
+        AddParam(sizeCmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+        var perSize = new Dictionary<string, SizeCompletions>();
+        await using var sizeReader = await sizeCmd.ExecuteReaderAsync();
+        while (await sizeReader.ReadAsync())
+        {
+            perSize[sizeReader.GetString(0)] = new SizeCompletions(
+                sizeReader.GetInt32(1), Math.Round(sizeReader.GetDouble(2), 1));
+        }
 
         return new AnalyticsSummary(
-            TotalCompletions: reader.GetInt32(0),
-            UniquePlayers: reader.GetInt32(1),
-            DaysWithData: reader.GetInt32(2),
-            AverageTime: Math.Round(reader.GetDouble(3), 1),
-            BestTime: Math.Round(reader.GetDouble(4), 1),
-            HintRate: Math.Round(reader.GetDouble(5), 3),
-            WordHintRate: Math.Round(reader.GetDouble(6), 3)
+            TotalCompletions: totalCompletions,
+            UniquePlayers: uniquePlayers,
+            RegisteredUsers: registeredUsers,
+            CompletionsToday: completionsToday,
+            ActiveToday: activeToday,
+            AverageTime: avgTime,
+            BestTime: bestTime,
+            HintUsageRate: hintUsageRate,
+            PerSize: perSize
         );
     }
 
@@ -634,8 +675,7 @@ sealed partial class LeaderboardStore : IDisposable
                 COUNT(*)             AS completions,
                 COUNT(DISTINCT name) AS unique_players,
                 AVG(time)            AS avg_time,
-                MIN(time)            AS best_time,
-                AVG(CASE WHEN hints_used > 0 THEN 1.0 ELSE 0.0 END) AS hint_rate
+                MIN(time)            AS best_time
             FROM history
             WHERE date >= @earliest AND date <= @today
             GROUP BY date
@@ -653,8 +693,7 @@ sealed partial class LeaderboardStore : IDisposable
                 Completions: reader.GetInt32(1),
                 UniquePlayers: reader.GetInt32(2),
                 AverageTime: Math.Round(reader.GetDouble(3), 1),
-                BestTime: Math.Round(reader.GetDouble(4), 1),
-                HintRate: Math.Round(reader.GetDouble(5), 3)
+                BestTime: Math.Round(reader.GetDouble(4), 1)
             ));
         }
 
@@ -664,30 +703,43 @@ sealed partial class LeaderboardStore : IDisposable
     public async Task<List<TopPlayer>> GetTopPlayersAsync(int limit)
     {
         await using var conn = await OpenConnectionAsync();
+
+        // Load alias lookup
+        var aliases = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        await using (var aliasCmd = conn.CreateCommand())
+        {
+            aliasCmd.CommandText = "SELECT user_id, alias FROM user_aliases";
+            await using var aliasReader = await aliasCmd.ExecuteReaderAsync();
+            while (await aliasReader.ReadAsync())
+                aliases[aliasReader.GetString(0)] = aliasReader.GetString(1);
+        }
+
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = _useSqlServer
             ? """
               SELECT TOP (@limit)
-                  name,
+                  COALESCE(user_id, name) AS player_key,
+                  MAX(name)  AS name,
+                  MAX(user_id) AS user_id,
                   COUNT(*)  AS games_played,
                   AVG(time) AS avg_time,
-                  MIN(time) AS best_time,
-                  AVG(CASE WHEN hints_used > 0 THEN 1.0 ELSE 0.0 END) AS hint_rate
+                  MIN(time) AS best_time
               FROM history
               WHERE date >= @cutoff
-              GROUP BY name
+              GROUP BY COALESCE(user_id, name)
               ORDER BY games_played DESC, avg_time ASC
               """
             : """
               SELECT
-                  name,
+                  COALESCE(user_id, name) AS player_key,
+                  MAX(name)  AS name,
+                  MAX(user_id) AS user_id,
                   COUNT(*)  AS games_played,
                   AVG(time) AS avg_time,
-                  MIN(time) AS best_time,
-                  AVG(CASE WHEN hints_used > 0 THEN 1.0 ELSE 0.0 END) AS hint_rate
+                  MIN(time) AS best_time
               FROM history
               WHERE date >= @cutoff
-              GROUP BY name
+              GROUP BY COALESCE(user_id, name)
               ORDER BY games_played DESC, avg_time ASC
               LIMIT @limit
               """;
@@ -698,12 +750,19 @@ sealed partial class LeaderboardStore : IDisposable
         await using var reader = await cmd.ExecuteReaderAsync();
         while (await reader.ReadAsync())
         {
+            var rawName = reader.GetString(1);
+            var userId = reader.IsDBNull(2) ? null : reader.GetString(2);
+            var verified = userId is not null;
+            string? alias = null;
+            if (userId is not null)
+                aliases.TryGetValue(userId, out alias);
             result.Add(new TopPlayer(
-                Name: reader.GetString(0),
-                GamesPlayed: reader.GetInt32(1),
-                AverageTime: Math.Round(reader.GetDouble(2), 1),
-                BestTime: Math.Round(reader.GetDouble(3), 1),
-                HintRate: Math.Round(reader.GetDouble(4), 3)
+                DisplayName: alias ?? rawName,
+                RawName: rawName,
+                Verified: verified,
+                GamesPlayed: reader.GetInt32(3),
+                AverageTime: Math.Round(reader.GetDouble(4), 1),
+                BestTime: Math.Round(reader.GetDouble(5), 1)
             ));
         }
 

@@ -35,7 +35,7 @@ A Swedish crossword puzzle generator
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
-- **Analytics Dashboard**: Admin-only analytics endpoints providing aggregate summary stats, daily breakdowns, and top player rankings from historical leaderboard data
+- **Analytics Dashboard**: Admin-only analytics endpoints and a dedicated admin page (`admin.html`) with summary cards (completions today, active players, registered users, hint usage rate, per-size breakdown), daily activity bar chart, and top player rankings with alias resolution and verified (?) / guest (??) badges. Players are grouped by user identity so signed-in and guest plays are correctly separated. Admin access is configuration-driven via `Authorization:AdminUserIds`; the admin link appears on the profile page only when the server confirms admin status
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
 ## Project Structure
@@ -86,6 +86,7 @@ SwedishCrosswords/
 |   |   |-- puzzle.html             # Interactive crossword player page
 |   |   |-- calendar.html           # Puzzle archive calendar
 |   |   |-- profile.html            # User profile (alias, stats, friends management)
+|   |   |-- admin.html              # Admin dashboard (analytics summary, daily chart, top players)
 |   |   |-- site.js                 # Game logic (~3,000 lines, 15 §-numbered sections)
 |   |   |-- site.min.css            # Responsive styles with 90+ CSS design tokens
 |   |   |-- om-oss.html             # About page
@@ -158,11 +159,11 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | GET | `/api/leaderboard` | Current leaderboard |
 | POST | `/api/leaderboard/history` | Submit a historical score |
 | GET | `/api/leaderboard/history?days=30` | Get historical scores (up to 90 days) |
-| GET | `/api/analytics/summary` | Aggregate analytics: total completions, unique players, avg/best time, hint rates |
-| GET | `/api/analytics/daily?days=30` | Per-day analytics breakdown (completions, players, times) for the last N days |
-| GET | `/api/analytics/players?limit=10` | Top players ranked by games played with avg/best time |
+| GET | `/api/analytics/summary` | Aggregate analytics: completions (total + today), unique/active/registered players, avg/best time, hint usage rate, per-size breakdown |
+| GET | `/api/analytics/daily?days=30` | Per-day analytics breakdown (completions, unique players, avg/best time) for the last N days |
+| GET | `/api/analytics/players?limit=10` | Top players ranked by games played with avg/best time, alias resolution, and verified/guest badge (groups by user identity so signed-in and guest plays are separated) |
 | GET | `/api/auth/login/{provider}` | Initiate OAuth login (google or microsoft) |
-| GET | `/api/auth/me` | Current user profile (name, alias, avatar) |
+| GET | `/api/auth/me` | Current user profile (name, alias, avatar, isAdmin) |
 | POST | `/api/auth/logout` | Sign out and clear auth cookie |
 | GET | `/api/auth/my-stats` | Server-synced solve statistics for signed-in user |
 | GET | `/api/auth/alias` | Get current alias |
@@ -384,7 +385,7 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **PWA**: Web app manifest (`site.webmanifest`) for installability; no service worker currently implemented
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
-- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary, daily breakdown, top players) consumed by the admin-only analytics endpoints
+- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) — the profile page conditionally renders the admin link only when the server confirms admin access
 - **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 

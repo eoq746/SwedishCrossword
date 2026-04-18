@@ -57,7 +57,7 @@ internal static class AuthEndpoints
             return Results.Challenge(properties, [scheme]);
         });
 
-        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, LeaderboardStore store, IConfiguration config) =>
         {
             if (user.Identity?.IsAuthenticated != true)
                 return Results.Json(new { authenticated = false });
@@ -72,6 +72,9 @@ internal static class AuthEndpoints
             var userId = GetUserId(user);
             var alias = userId is not null ? await store.GetAliasAsync(userId) : null;
 
+            var adminIds = config.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
+            var isAdmin = userId is not null && adminIds.Contains(userId);
+
             return Results.Json(new
             {
                 authenticated = true,
@@ -79,7 +82,8 @@ internal static class AuthEndpoints
                 name,
                 alias,
                 avatarUrl,
-                provider = user.Identity.AuthenticationType
+                provider = user.Identity.AuthenticationType,
+                isAdmin
             });
         });
 

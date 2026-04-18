@@ -356,6 +356,11 @@ async function renderProfile(el, user) {
         '</div>' +
     '</div>' +
 
+        (user.isAdmin ? '<div class="section" style="margin-top:28px;text-align:center;">' +
+            '<h2 style="margin-top:0;">🔧 Administration</h2>' +
+            '<a href="/admin.html" class="login-btn" style="padding:10px 24px;font-size:0.95rem;">Öppna adminpanel</a>' +
+        '</div>' : '') +
+
         '<div class="logout-section">' +
             '<button class="logout-btn" id="logout-btn">Logga ut</button>' +
         '</div>' +

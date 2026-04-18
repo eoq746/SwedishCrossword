@@ -13,9 +13,13 @@ record ErrorResponse(string Error);
 record AliasRequest(string Alias);
 
 // Analytics response models
-record AnalyticsSummary(int TotalCompletions, int UniquePlayers, int DaysWithData, double AverageTime, double BestTime, double HintRate, double WordHintRate);
-record DailyAnalytics(string Date, int Completions, int UniquePlayers, double AverageTime, double BestTime, double HintRate);
-record TopPlayer(string Name, int GamesPlayed, double AverageTime, double BestTime, double HintRate);
+record AnalyticsSummary(
+    int TotalCompletions, int UniquePlayers, int RegisteredUsers, int CompletionsToday, int ActiveToday,
+    double AverageTime, double BestTime, double HintUsageRate,
+    Dictionary<string, SizeCompletions> PerSize);
+record SizeCompletions(int Completions, double AverageTime);
+record DailyAnalytics(string Date, int Completions, int UniquePlayers, double AverageTime, double BestTime);
+record TopPlayer(string DisplayName, string RawName, bool Verified, int GamesPlayed, double AverageTime, double BestTime);
 
 // Personal stats for authenticated users
 record UserStatsResponse(int TotalSolved, double AverageTime, double BestTime, int CurrentStreak, int BestStreak, List<UserSolveRecord> RecentSolves, Dictionary<string, SizeStatsEntry>? PerSize = null);
