@@ -1,7 +1,8 @@
 #!/usr/bin/env pwsh
 # ---------------------------------------------------------------------------
 # reset-data.ps1 — Clear pre-cutoff leaderboard scores and history from the
-#                  Azure SQL database used by the Container App.
+#                  Azure SQL database, and old puzzle files from the Azure Files
+#                  share used by the Container App.
 #
 # Prerequisites:
 #   - Azure CLI installed and logged in (az login)
@@ -97,8 +98,8 @@ function Invoke-Sql {
 
 # Wrap all work in try/finally so the firewall rule is always cleaned up
 try {
-    # Convert cutoff date to a Unix timestamp (end of day, so the cutoff date itself is included)
-    $cutoffUnix = [long]([DateTimeOffset]::Parse("${CutoffDate}T00:00:00Z")).ToUnixTimeSeconds() + 86400
+    # Convert cutoff date to a Unix timestamp in milliseconds (end of day, so the cutoff date itself is included)
+    $cutoffUnix = ([long]([DateTimeOffset]::Parse("${CutoffDate}T00:00:00Z")).ToUnixTimeSeconds() + 86400) * 1000
 
     # ---------------------------------------------------------------------------
     # 3. Delete history rows before the cutoff date
@@ -153,11 +154,75 @@ finally {
 }
 
 # ---------------------------------------------------------------------------
+# 6. Delete old puzzle files from the Azure Files share
+# ---------------------------------------------------------------------------
+Write-Host "`n=== Resolving storage account ===" -ForegroundColor Cyan
+
+$storageAccountName = az storage account list `
+    --resource-group $ResourceGroup `
+    --query "[?starts_with(name, '$($AppName.Replace('-',''))') || starts_with(name, 'svensktkorsord')].name | [0]" `
+    --output tsv
+
+if (-not $storageAccountName) {
+    Write-Warning "Could not find a storage account in resource group '$ResourceGroup'. Skipping puzzle cleanup."
+} else {
+    Write-Host "  Storage account: $storageAccountName"
+
+    $shareName = 'crossword-data'
+    $accountKey = az storage account keys list `
+        --resource-group $ResourceGroup `
+        --account-name $storageAccountName `
+        --query '[0].value' --output tsv
+
+    $storageArgs = @(
+        '--account-name', $storageAccountName
+        '--account-key',  $accountKey
+        '--share-name',   $shareName
+    )
+
+    Write-Host "`n=== Puzzle file cleanup (cutoff: $CutoffDate) ===" -ForegroundColor Cyan
+
+    $puzzleFiles = az storage file list @storageArgs `
+        --path 'puzzles' `
+        --query '[].name' --output tsv 2>$null
+
+    if ($puzzleFiles) {
+        # Legacy files: puzzle-YYYY-MM-DD.json and puzzle-YYYY-MM-DD-small.json
+        $legacyFiles = $puzzleFiles | Where-Object {
+            ($_ -match '^puzzle-(\d{4}-\d{2}-\d{2})\.json$' -or
+             $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-small\.json$') -and $Matches[1] -lt $CutoffDate
+        }
+
+        # New-format puzzles before cutoff: puzzle-YYYY-MM-DD-NxN.json
+        $oldSizedFiles = $puzzleFiles | Where-Object {
+            $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-\d+x\d+\.json$' -and $Matches[1] -lt $CutoffDate
+        }
+
+        $allOld = @($legacyFiles) + @($oldSizedFiles) | Sort-Object -Unique
+
+        if ($allOld) {
+            Write-Host "  Found $($allOld.Count) old puzzle file(s) to remove:"
+            foreach ($file in $allOld) {
+                Write-Host "    - puzzles/$file" -ForegroundColor Yellow
+                if ($Confirm) {
+                    az storage file delete @storageArgs --path "puzzles/$file" | Out-Null
+                    Write-Verbose "    Deleted puzzles/$file"
+                }
+            }
+        } else {
+            Write-Host "  No old puzzle files found."
+        }
+    } else {
+        Write-Host "  No puzzles directory found (or empty)."
+    }
+}
+
+# ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
 Write-Host ""
 if (-not $Confirm) {
-    Write-Host "DRY RUN — no rows were deleted. Re-run with -Confirm to apply." -ForegroundColor Magenta
+    Write-Host "DRY RUN — no data was deleted. Re-run with -Confirm to apply." -ForegroundColor Magenta
 } else {
     Write-Host "Cleanup complete!" -ForegroundColor Green
 }
