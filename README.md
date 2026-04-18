@@ -232,6 +232,7 @@ az deployment group create \
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
 - `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
+- `ADMIN_USER_IDS` — Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
 
 ### Running the CLI Generator
 

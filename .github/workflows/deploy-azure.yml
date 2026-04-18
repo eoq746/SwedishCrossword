@@ -45,6 +45,7 @@ jobs:
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
           MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
+          ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
         run: |
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
@@ -55,6 +56,7 @@ jobs:
               googleClientSecret="$GOOGLE_CLIENT_SECRET" \
               microsoftClientId="$MICROSOFT_CLIENT_ID" \
               microsoftClientSecret="$MICROSOFT_CLIENT_SECRET" \
+              adminUserIds="$ADMIN_USER_IDS" \
             --query 'properties.outputs' \
             --output json)
 

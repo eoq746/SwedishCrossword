@@ -610,9 +610,9 @@ sealed partial class LeaderboardStore : IDisposable
         await reader.ReadAsync();
         var totalCompletions = reader.GetInt32(0);
         var uniquePlayers = reader.GetInt32(1);
-        var avgTime = Math.Round(reader.GetDouble(2), 1);
-        var bestTime = Math.Round(reader.GetDouble(3), 1);
-        var hintUsageRate = Math.Round(reader.GetDouble(4), 3);
+        var avgTime = Math.Round(Convert.ToDouble(reader.GetValue(2)), 1);
+        var bestTime = Math.Round(Convert.ToDouble(reader.GetValue(3)), 1);
+        var hintUsageRate = Math.Round(Convert.ToDouble(reader.GetValue(4)), 3);
         await reader.CloseAsync();
 
         // Registered users (aliases)
@@ -645,7 +645,7 @@ sealed partial class LeaderboardStore : IDisposable
         while (await sizeReader.ReadAsync())
         {
             perSize[sizeReader.GetString(0)] = new SizeCompletions(
-                sizeReader.GetInt32(1), Math.Round(sizeReader.GetDouble(2), 1));
+                sizeReader.GetInt32(1), Math.Round(Convert.ToDouble(sizeReader.GetValue(2)), 1));
         }
 
         return new AnalyticsSummary(

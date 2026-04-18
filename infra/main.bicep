@@ -49,6 +49,9 @@ param microsoftClientId string = ''
 @description('Microsoft OAuth client secret for social login.')
 param microsoftClientSecret string = ''
 
+@description('Comma-separated list of admin user IDs (SHA-256 hashes).')
+param adminUserIds string = ''
+
 @description('Deploy Azure SQL resources. Set to true when SQL is needed.')
 param deployDatabase bool = true
 
@@ -311,7 +314,11 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
             microsoftClientId != '' ? [
               { name: 'Authentication__Microsoft__ClientId', secretRef: 'microsoft-client-id' }
               { name: 'Authentication__Microsoft__ClientSecret', secretRef: 'microsoft-client-secret' }
-            ] : []
+            ] : [],
+            adminUserIds != '' ? [for (id, i) in split(adminUserIds, ','): {
+              name: 'Authorization__AdminUserIds__${i}'
+              value: id
+            }] : []
           )
           volumeMounts: [
             {
