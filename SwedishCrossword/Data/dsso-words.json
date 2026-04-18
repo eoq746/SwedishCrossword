@@ -319,7 +319,7 @@
   },
   {
     "Word": "ABNORMITET",
-    "Clue": "Avvikelse från det normala, missbildning",
+    "Clue": "Avvikelse från det normala",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -8227,7 +8227,7 @@
   },
   {
     "Word": "AMATÖRISK",
-    "Clue": "Som har med person som ägnar sig åt en verksamhet utan att ha… att göra",
+    "Clue": "Oprofessionell",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -8236,12 +8236,6 @@
     "Clue": "Person som ägnar sig åt en verksamhet utan att ha den som yrke (och utan expertkunskaper) + Särskild inriktning inom ett större sammanhang",
     "Category": "Substantiv",
     "Difficulty": "Medium"
-  },
-  {
-    "Word": "AMATÖRISTISK",
-    "Clue": "Som har med person som ägnar sig åt en verksamhet utan att ha… att göra",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
   },
   {
     "Word": "AMATÖRKONSTNÄR",
@@ -8479,7 +8473,7 @@
   },
   {
     "Word": "AMBROSIUS",
-    "Clue": "Vaxliknande ämne som bland annat används… + osius",
+    "Clue": "Ärkebiskop och helgon av Milano",
     "Category": "Egennamn",
     "Difficulty": "Medium"
   },
@@ -8606,12 +8600,6 @@
   {
     "Word": "AMETISTFÄRGAD",
     "Clue": "Med samma färg som en ametist",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "AMETROPISK",
-    "Clue": "Ord som av anhängare av abrahamitiska re… + Som tillhör varma klimat",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -9211,7 +9199,7 @@
   },
   {
     "Word": "AMPUTERING",
-    "Clue": "Avlägsna en extremitet från kroppen geno… + Smycke som bärs kring ett finger",
+    "Clue": "Kirurgiskt ingrepp där en kroppsdel, oftast en arm eller ett ben, avlägsnas",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -9373,7 +9361,7 @@
   },
   {
     "Word": "ANAFORISK",
-    "Clue": "Som har med stilfigur där talaren upprepar ett eller flera ord… att göra",
+    "Clue": "Språkvetenskaplig term, använd om pronomen (t.ex. han, hon, den/det) och adverb (där, dit, då) som syftar tillbaka på något tidigare nämnt",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -9798,12 +9786,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ANCILLÄR",
-    "Clue": "Mot + samling av vetenskapliga fakta kring ett…",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "AND",
     "Clue": "En sjöfågel ur underfamiljen andfåglar (Anatinae)",
     "Category": "Substantiv",
@@ -10226,18 +10208,6 @@
   {
     "Word": "ANDRAKAMMARE",
     "Clue": "Ordningstalet som hör till talet två + rum främst avsett för privat bruk",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ANDRAKAMMARSAL",
-    "Clue": "Ordningstalet som hör till talet två + r… + stort eller mycket stort rum",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ANDRAKAMMARVAL",
-    "Clue": "Ordningstalet som hör till talet två + r… + individ inom däggdjursordningen cetacea",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -12397,7 +12367,7 @@
   },
   {
     "Word": "ANPASSLIG",
-    "Clue": "Som kan beskrivas som förändra något till ett läge som bättre passar för…",
+    "Clue": "Viljesvag",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -13309,7 +13279,7 @@
   },
   {
     "Word": "ANTAGONISTISK",
-    "Clue": "Som har med person i motsats- eller konkurrensförhållande till… att göra",
+    "Clue": "Fientlig",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -13352,12 +13322,6 @@
   {
     "Word": "ANTASTBAR",
     "Clue": "Som kan antastas",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "ANTASTLIG",
-    "Clue": "Som kan beskrivas som vara sexuellt närgången mot någon som inte önskar…",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -13650,12 +13614,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ANTIKOMMERSIELL",
-    "Clue": "Mot som omsätter pengar och vars avsikt är att ge intä…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ANTIKOMMUNIST",
     "Clue": "Person med negativ attityd till kommunism",
     "Category": "Substantiv",
@@ -13694,12 +13652,6 @@
   {
     "Word": "ANTIKRISTLIG",
     "Clue": "Som kan beskrivas som motståndare till kristus",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ANTIKRITISK",
-    "Clue": "Mot som inte helt och fullt omedelbart vill ta till si…",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -14052,20 +14004,14 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ANTIVIRAL",
-    "Clue": "Mot som blir omtalad och snabbt kopieras och sprids av…",
+    "Word": "ANTIVIRALA",
+    "Clue": "Är läkemedel som bromsar eller hämmar virusreplikation vid infektioner",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
   {
-    "Word": "ANTIVIRALER",
-    "Clue": "Antivir + uppmärksam",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ANTIVIRUS",
-    "Clue": "Mot biologisk partikel med dna eller rna som kan infek…",
+    "Clue": "Framför program som skyddar datorer",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -15402,12 +15348,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ARABESKARTAD",
-    "Clue": "Av invecklat ornament av blad och rankor som har sitt… art",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "ARABISERA",
     "Clue": "Ge en arabisk prägel till något, påverka språk, kultur eller karaktär med arabiska influenser",
     "Category": "Verb",
@@ -15618,12 +15558,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "ARBETBAR",
-    "Clue": "Möjlig att utföra en handling genom att använda sina krafter…",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ARBETE",
     "Clue": "En fysikalisk storhet som ofta mäts i SI-enheten joule; förbrukad energi, produkt av kraft och sträcka",
     "Category": "Substantiv",
@@ -15684,18 +15618,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "ARBETSBITRÄDE",
-    "Clue": "Ett ytmått som motsvarar 100 m² + person eller föremål som biträder en ann…",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARBETSBOD",
-    "Clue": "Ett ytmått som motsvarar 100 m² + mindre, ofta ouppvärmd byggnad som bland…",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "ARBETSBORD",
     "Clue": "Bord vid vilket någon form av (teoretiskt eller praktiskt) arbete utförs, eller bord tänkt för sådana aktiviteter",
     "Category": "Substantiv",
@@ -15723,18 +15645,6 @@
     "Word": "ARBETSDUGLIG",
     "Clue": "Som kan arbeta",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARBETSENLIG",
-    "Clue": "Ett ytmått som motsvarar 100 m² + i överensstämmelse med t.ex. en uppfattn…",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARBETSFLIT",
-    "Clue": "Ett ytmått som motsvarar 100 m² + det att ständig vara i verksamhet och ar…",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -15819,12 +15729,6 @@
     "Word": "ARBETSGRUPP",
     "Clue": "Grupp (utskott, kommitté) bildad för att utföra ett visst arbete",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "ARBETSHANDIKAPPAD",
-    "Clue": "Ett ytmått som motsvarar 100 m² + som har ett handikapp/en funktionsnedsät…",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -105324,12 +105228,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "FLERHANDIKAPPAD",
-    "Clue": "Två eller mer; högre än ett eller två + Som har ett handikapp/en funktionsnedsättning",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "FLERLAGIG",
     "Clue": "Kommun i Södermanlands län. + rlagig",
     "Category": "Adjektiv",
@@ -118242,12 +118140,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "FUNKTIONSHINDRAD",
-    "Clue": "Med ett funktionshinder/handikapp",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "FUNKTIONSKRAV",
     "Clue": "En uppgift som en person eller en sak måste utföra; tjänst, post + Bestämmelse om hur något ska vara eller ske (med förväntan om lydnad)",
     "Category": "Substantiv",
@@ -130773,12 +130665,6 @@
     "Word": "FÖRSTÅNDIGHET",
     "Clue": "Det att vara förståndig",
     "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "FÖRSTÅNDSHANDIKAPPAD",
-    "Clue": "Psykiskt utvecklingsstörd, med kognitiv funktionsnedsättning",
-    "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
   {
@@ -150486,12 +150372,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "GÅSTOL",
-    "Clue": "Gånghjälpmedel för sjuka eller handikappade",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "GÅSVINGE",
     "Clue": "Fågel från släktena Anser eller Branta i familjen andfåglar + tunn, skivliknande del av ett objekt",
     "Category": "Substantiv",
@@ -154088,54 +153968,6 @@
   {
     "Word": "HANDHYVLAD",
     "Clue": "Personligt pronomen som syftar på den omtalade i subjektsform om den omtalade har maskulint genus + dhyvlad",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPP",
-    "Clue": "Försvårande villkor som sätts upp för att göra kampen mellan två ojämna spelare mer jämn",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "HANDIKAPPA",
-    "Clue": "Personligt pronomen som syftar på den omtalade i subjektsform om den omtalade har maskulint genus + dikappa",
-    "Category": "Verb",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPAD",
-    "Clue": "Som har ett handikapp/en funktionsnedsättning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPANPASSAD",
-    "Clue": "; anpassad för personer med handikapp",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPAVDELNING",
-    "Clue": "Försvårande villkor som sätts upp för att göra kampen mellan två ojämna spelare mer jämn + gradering",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPFORDON",
-    "Clue": "Försvårande villkor som sätts upp för att göra kampen mellan två ojämna spelare mer jämn + rörlig anordning",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPRÅD",
-    "Clue": "Försvårande villkor som sätts upp för att göra kampen mellan två ojämna spelare mer jämn + tips, instruktion; rekommendation",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "HANDIKAPPVÄNLIG",
-    "Clue": "Försvårande villkor som sätts upp för att göra kampen mellan två ojämna spelare mer jämn + snäll, trevlig",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -174754,12 +174586,6 @@
     "Clue": "Olycksbådande",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "ILLAVULEN",
-    "Clue": "Med ett fult, missbildat eller vanställt utseende; ful på ett osympatiskt eller skrämmande sätt",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
   },
   {
     "Word": "ILLBATTIG",
@@ -222390,12 +222216,6 @@
     "Difficulty": "Medium"
   },
   {
-    "Word": "KRYMPLING",
-    "Clue": "Handikappad person, person med kroppsligt funktionshinder",
-    "Category": "Substantiv",
-    "Difficulty": "Medium"
-  },
-  {
     "Word": "KRYMPMÅN",
     "Clue": "Bli mindre; minska i storlek + hur angelägen man är om något",
     "Category": "Substantiv",
@@ -244081,7 +243901,7 @@
   },
   {
     "Word": "LYTE",
-    "Clue": "Svår kroppsskada, missbildning; karaktärsfel",
+    "Clue": "Vanställande kroppsfel",
     "Category": "Substantiv",
     "Difficulty": "Easy"
   },
@@ -244096,12 +243916,6 @@
     "Clue": "Svår kroppsskada + det som framkallar löje; lustighet",
     "Category": "Substantiv",
     "Difficulty": "Hard"
-  },
-  {
-    "Word": "LYTT",
-    "Clue": "Handikappad, ofärdig, vanför",
-    "Category": "Adjektiv",
-    "Difficulty": "Easy"
   },
   {
     "Word": "LYX",
@@ -262758,18 +262572,6 @@
     "Difficulty": "Hard"
   },
   {
-    "Word": "MISSBILDAD",
-    "Clue": "Utvecklad på ett felaktigt och onormalt vis, särskilt om organ och kroppsdelar hos organismer",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "MISSBILDNING",
-    "Clue": "Något missbildat",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
     "Word": "MISSBRUK",
     "Clue": "(målmedveten) skadlig eller olaglig användning av något (konkret såsom föremål eller maskin",
     "Category": "Substantiv",
@@ -262833,12 +262635,6 @@
     "Word": "MISSFORMAD",
     "Clue": "Det att missa; det att inte träffa rätt + formad",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "MISSFOSTER",
-    "Clue": "Missbildad varelse",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
@@ -265765,7 +265561,7 @@
   },
   {
     "Word": "MONSTRUÖS",
-    "Clue": "Vidunderlig, oformlig, missbildad",
+    "Clue": "Vidunderlig, oformlig",
     "Category": "Adjektiv",
     "Difficulty": "Medium"
   },
@@ -268028,12 +267824,6 @@
   {
     "Word": "MULTIETNISK",
     "Clue": "Med stor etnisk variation",
-    "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "MULTIHANDIKAPPAD",
-    "Clue": "Mång-/fler- som har ett handikapp/en funktionsnedsättning",
     "Category": "Adjektiv",
     "Difficulty": "Hard"
   },
@@ -299593,7 +299383,7 @@
   },
   {
     "Word": "OMSORG",
-    "Clue": "Aktivitet att vårda personer som kan det inte själv t.ex. barn, sjukar, handikappade personer eller att sköta djur",
+    "Clue": "Skötsel",
     "Category": "Substantiv",
     "Difficulty": "Medium"
   },
@@ -330481,7 +330271,7 @@
   },
   {
     "Word": "PUCKELRYGG",
-    "Clue": "Missbildad rygg som kröks efter nacken",
+    "Clue": "Quasimodos kännetecken",
     "Category": "Substantiv",
     "Difficulty": "Hard"
   },
@@ -469659,24 +469449,6 @@
     "Word": "VANSKAPLIG",
     "Clue": "Som har erfarenhet, ibland ofrivilligt + ganska bra; inte alls dålig",
     "Category": "Adjektiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "VANSKAPLIGHET",
-    "Clue": "Missbildning, handikapp",
-    "Category": "Substantiv",
-    "Difficulty": "Hard"
-  },
-  {
-    "Word": "VANSKAPT",
-    "Clue": "Missbildad, som är född med lyte",
-    "Category": "Adjektiv",
-    "Difficulty": "Medium"
-  },
-  {
-    "Word": "VANSKAPTHET",
-    "Clue": "Missbildad, som är född med lyte + mycket varm",
-    "Category": "Substantiv",
     "Difficulty": "Hard"
   },
   {
