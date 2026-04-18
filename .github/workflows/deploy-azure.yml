@@ -34,6 +34,9 @@ jobs:
       # ------------------------------------------------------------------
       # 1. Provision infrastructure WITHOUT imageTag (uses placeholder image)
       # ------------------------------------------------------------------
+      - name: Upgrade Bicep CLI
+        run: az bicep upgrade
+
       - name: Create Resource Group
         run: az group create --name $RESOURCE_GROUP --location $LOCATION
 

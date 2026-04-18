@@ -246,6 +246,7 @@ var containerImage = hasImage
   : 'mcr.microsoft.com/k8se/quickstart:latest'
 
 var adminIdList = adminUserIds != '' ? split(adminUserIds, ',') : []
+
 var adminEnvVars = [for (id, i) in adminIdList: {
   name: 'Authorization__AdminUserIds__${i}'
   value: id
