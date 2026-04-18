@@ -244,6 +244,11 @@ var hasImage = imageTag != ''
 var containerImage = hasImage
   ? '${acr.properties.loginServer}/${appName}:${imageTag}'
   : 'mcr.microsoft.com/k8se/quickstart:latest'
+
+var adminEnvVars = adminUserIds != '' ? [for (id, i) in split(adminUserIds, ','): {
+  name: 'Authorization__AdminUserIds__${i}'
+  value: id
+}] : []
 resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
   name: appName
   location: location
@@ -315,10 +320,7 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               { name: 'Authentication__Microsoft__ClientId', secretRef: 'microsoft-client-id' }
               { name: 'Authentication__Microsoft__ClientSecret', secretRef: 'microsoft-client-secret' }
             ] : [],
-            adminUserIds != '' ? [for (id, i) in split(adminUserIds, ','): {
-              name: 'Authorization__AdminUserIds__${i}'
-              value: id
-            }] : []
+            adminEnvVars
           )
           volumeMounts: [
             {
