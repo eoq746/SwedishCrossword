@@ -245,10 +245,11 @@ var containerImage = hasImage
   ? '${acr.properties.loginServer}/${appName}:${imageTag}'
   : 'mcr.microsoft.com/k8se/quickstart:latest'
 
-var adminEnvVars = adminUserIds != '' ? [for (id, i) in split(adminUserIds, ','): {
+var adminIdList = adminUserIds != '' ? split(adminUserIds, ',') : []
+var adminEnvVars = [for (id, i) in adminIdList: {
   name: 'Authorization__AdminUserIds__${i}'
   value: id
-}] : []
+}]
 resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
   name: appName
   location: location
