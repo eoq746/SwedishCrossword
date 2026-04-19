@@ -79,7 +79,45 @@ jobs:
           echo "env_name=$ENV_NAME" >> "$GITHUB_OUTPUT"
 
       # ------------------------------------------------------------------
-      # 2. Build & push container image
+      # 2. Generate SBOM (EU Cyber Resilience Act compliance)
+      # ------------------------------------------------------------------
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Generate SBOM
+        run: |
+          dotnet publish SwedishCrossword.Api -c Release -o ./publish --nologo
+          curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-linux-x64
+          chmod +x sbom-tool
+          ./sbom-tool generate \
+            -b ./publish \
+            -bc . \
+            -pn SwedishCrossword \
+            -pv "${{ github.sha }}" \
+            -ps SwedishCrossword \
+            -nsb "https://github.com/eoq746/SwedishCrossword" \
+            -m ./sbom-output \
+            -mi "SPDX:2.2"
+          rm -rf ./publish
+
+      - name: Generate human-readable SBOM formats
+        run: |
+          pip install sbom2doc --quiet
+          MANIFEST=$(find ./sbom-output -name "manifest.spdx.json" | head -1)
+          sbom2doc -i "$MANIFEST" -o "${MANIFEST}.md" -f markdown
+          sbom2doc -i "$MANIFEST" -o "${MANIFEST}.html" -f html
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom-spdx
+          path: sbom-output/_manifest/spdx_2.2/
+          retention-days: 90
+
+      # ------------------------------------------------------------------
+      # 3. Build & push container image
       # ------------------------------------------------------------------
       - name: Build & Push Image
         run: |
@@ -90,7 +128,7 @@ jobs:
             .
 
       # ------------------------------------------------------------------
-      # 3. Update the Container App to the new image
+      # 4. Update the Container App to the new image
       # ------------------------------------------------------------------
       - name: Deploy Container App
         run: |
@@ -108,7 +146,7 @@ jobs:
               "Authentication__Microsoft__ClientSecret=secretref:microsoft-client-secret"
 
       # ------------------------------------------------------------------
-      # 4. Bind custom domain (if CUSTOM_DOMAIN secret is set)
+      # 5. Bind custom domain (if CUSTOM_DOMAIN secret is set)
       # ------------------------------------------------------------------
       - name: Bind Custom Domain
         if: env.CUSTOM_DOMAIN != ''
@@ -137,7 +175,7 @@ jobs:
           CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
 
       # ------------------------------------------------------------------
-      # 5. Verify deployment
+      # 6. Verify deployment
       # ------------------------------------------------------------------
       - name: Verify Health
         run: |
