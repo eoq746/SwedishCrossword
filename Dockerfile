@@ -6,7 +6,8 @@
 # ---------------------------------------------------------------------------
 
 # --- Build stage -----------------------------------------------------------
-FROM mcr.microsoft.com/dotnet/sdk:10.0-preview AS build
+ARG DOTNET_VERSION=10.0
+FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
 WORKDIR /src
 
 # Copy project files first for better layer caching on restore
@@ -29,7 +30,8 @@ RUN dotnet publish SwedishCrossword.Api/SwedishCrossword.Api.csproj \
 RUN cp -r SwedishCrossword/Data /app/publish/Data
 
 # --- Runtime stage ---------------------------------------------------------
-FROM mcr.microsoft.com/dotnet/aspnet:10.0-preview AS runtime
+ARG DOTNET_VERSION=10.0
+FROM mcr.microsoft.com/dotnet/aspnet:${DOTNET_VERSION} AS runtime
 WORKDIR /app
 
 COPY --from=build /app/publish .

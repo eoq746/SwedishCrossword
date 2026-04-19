@@ -44,7 +44,7 @@ internal static class LeaderboardEndpoints
 
             var validation = tokenService.Validate(body.Token, body.PuzzleHash, body.Time);
             if (!validation.IsValid)
-                return Results.Json(new ErrorResponse(validation.Error), statusCode: 403);
+                return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 
             var leaderboardKey = $"{body.Date}-{body.PuzzleHash}";
             var timestamp = timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
@@ -88,7 +88,7 @@ internal static class LeaderboardEndpoints
 
             var validation = tokenService.Validate(body.Token, body.Entry.PuzzleHash, body.Entry.Time);
             if (!validation.IsValid)
-                return Results.Json(new ErrorResponse(validation.Error), statusCode: 403);
+                return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 
             var name = LeaderboardStore.SanitiseName(body.Entry.Name);
             // Authenticated users must use their alias

@@ -72,7 +72,7 @@ internal static class PuzzleEndpoints
 
             var validation = tokenService.ValidateAccess(body.Token);
             if (!validation.IsValid)
-                return Results.Json(new ErrorResponse(validation.Error), statusCode: 403);
+                return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 
             var filePath = ResolvePuzzleFile(puzzlePath, body.PuzzleDate, body.Size);
             if (filePath is null)
@@ -119,7 +119,7 @@ internal static class PuzzleEndpoints
 
             var validation = tokenService.ValidateAccess(body.Token);
             if (!validation.IsValid)
-                return Results.Json(new ErrorResponse(validation.Error), statusCode: 403);
+                return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 
             var filePath = ResolvePuzzleFile(puzzlePath, body.PuzzleDate, body.Size);
             if (filePath is null)

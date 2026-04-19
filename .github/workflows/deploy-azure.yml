@@ -82,15 +82,18 @@ jobs:
       # 2. Generate SBOM (EU Cyber Resilience Act compliance)
       # ------------------------------------------------------------------
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@3e891b0cb619bf60e2c25674b222b8940e2c1c25 # v4.1.0
         with:
-          dotnet-version: '10.x'
+          global-json-file: global.json
 
       - name: Generate SBOM
+        env:
+          SBOM_TOOL_VERSION: "3.1.0"
         run: |
           dotnet publish SwedishCrossword.Api -c Release -o ./publish --nologo
-          curl -Lo sbom-tool https://github.com/microsoft/sbom-tool/releases/latest/download/sbom-tool-linux-x64
+          curl -Lo sbom-tool "https://github.com/microsoft/sbom-tool/releases/download/v${SBOM_TOOL_VERSION}/sbom-tool-linux-x64"
           chmod +x sbom-tool
+          mkdir -p ./sbom-output
           ./sbom-tool generate \
             -b ./publish \
             -bc . \
@@ -104,13 +107,13 @@ jobs:
 
       - name: Generate human-readable SBOM formats
         run: |
-          pip install sbom2doc --quiet
+          pip install sbom2doc==0.5.1 --quiet
           MANIFEST=$(find ./sbom-output -name "manifest.spdx.json" | head -1)
           sbom2doc -i "$MANIFEST" -o "${MANIFEST}.md" -f markdown
           sbom2doc -i "$MANIFEST" -o "${MANIFEST}.html" -f html
 
       - name: Upload SBOM
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: sbom-spdx
           path: sbom-output/_manifest/spdx_2.2/

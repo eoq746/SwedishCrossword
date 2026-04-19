@@ -11,6 +11,7 @@ using TUnit.Core;
 
 namespace SwedishCrossword.Api.Tests;
 
+#pragma warning disable AD0001 // Analyzer threw an exception (TUnit.Analyzers.DisposableFieldPropertyAnalyzer bug)
 public class ApiIntegrationTests
 {
     private WebApplicationFactory<Program> _factory = null!;
