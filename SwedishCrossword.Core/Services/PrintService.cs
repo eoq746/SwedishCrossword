@@ -884,7 +884,7 @@ public class PrintService
         {
             Word word => options.AdjustClues ? 
                 _clueGenerator.AdjustClueForDifficulty(word, options.TargetDifficulty ?? word.Difficulty) : 
-                word.Clue,
+                word.GetRandomClue(),
             AccidentalWord accWord => $"{accWord.ClueFromDictionary}", 
             _ => "Okänd ledtråd"
         };

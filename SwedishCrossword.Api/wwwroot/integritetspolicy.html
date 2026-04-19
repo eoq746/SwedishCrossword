@@ -124,7 +124,7 @@
         .back-link:hover { background: var(--accent-hover); }
         .highlight-box { background: var(--info-bg); padding: 18px; border-radius: 10px; border-left: 4px solid var(--accent); margin: 18px 0; }
         .warning-box { background: var(--warn-bg); padding: 18px; border-radius: 10px; border-left: 4px solid var(--warn-border); margin: 18px 0; }
-        .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
         .data-table th, .data-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); color: var(--text-body); }
         .data-table th { background: var(--surface-bg); font-weight: 600; }
         footer { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; }
@@ -133,9 +133,10 @@
             .container { padding: 20px; margin: 12px 8px; }
             h1 { font-size: 1.5rem; }
             h2 { font-size: 1.15rem; }
-            p, li { font-size: 0.95rem; }
+            p, li { font-size: 0.95rem; overflow-wrap: break-word; word-break: break-word; }
             .back-link { padding: 10px 14px; }
             .data-table { font-size: 0.9rem; }
+            footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 10px; }
         }
     </style>
     <!-- Removed: suspicious third-party ad script (effectivegatecpm.com) -->

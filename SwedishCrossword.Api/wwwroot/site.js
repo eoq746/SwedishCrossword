@@ -12,7 +12,7 @@
 // ║  §7  Progress Persistence                                            ║
 // ║  §8  Leaderboard & Score Submission                                  ║
 // ║  §9  Modals & Puzzle Loading                                         ║
-// ║  §10 Grid Rendering & Custom Keyboard                                ║
+// ║  §10 Grid Rendering                                                ║
 // ║  §11 Input Handling & Navigation                                     ║
 // ║  §12 Clue Navigation & Highlighting                                  ║
 // ║  §13 Answer Checking, Hints & Sharing                                ║
@@ -1641,7 +1641,6 @@ async function init() {
     document.getElementById('generation-date').textContent = currentPuzzleDate;
     
     renderGrid();
-    initCustomKeyboard();
     renderClues();
     buildCellClueMap();
     loadProgress();
@@ -1659,7 +1658,46 @@ async function init() {
     updateStats();
     updateClueFilledStatus();
 
+    // Once layout is stable, scroll the grid into view
+    setTimeout(() => {
+        const gridSection = document.querySelector('.grid-section');
+        if (!gridSection) return;
+        const isMobile = window.matchMedia('(max-width:1099px)').matches;
+        if (isMobile) {
+            // On mobile the clues are below — align grid near top of viewport
+            const rect = gridSection.getBoundingClientRect();
+            const targetY = window.scrollY + rect.top - 8;
+            window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+        } else {
+            // On desktop center the grid section vertically
+            const rect = gridSection.getBoundingClientRect();
+            const targetY = window.scrollY + rect.top + rect.height / 2 - window.innerHeight / 2;
+            window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+        }
+    }, 300);
+
     window.addEventListener('resize', syncCluesHeight);
+
+    // Keep the focused cell visible above the on-screen keyboard.
+    // visualViewport.height shrinks when the keyboard opens; we scroll
+    // so the active input stays within the visible area.
+    if (window.visualViewport) {
+        let lastVVHeight = window.visualViewport.height;
+        window.visualViewport.addEventListener('resize', () => {
+            const vv = window.visualViewport;
+            const keyboardOpen = vv.height < lastVVHeight - 50;
+            lastVVHeight = vv.height;
+            if (!keyboardOpen) return;
+            const active = document.activeElement;
+            if (!active || !active.closest('.cell')) return;
+            const rect = active.getBoundingClientRect();
+            const visibleBottom = vv.offsetTop + vv.height;
+            if (rect.bottom > visibleBottom - 20) {
+                const scrollBy = rect.bottom - visibleBottom + 60;
+                window.scrollBy({ top: scrollBy, behavior: 'smooth' });
+            }
+        });
+    }
 }
 
 function syncCluesHeight() {
@@ -1711,7 +1749,7 @@ function syncCluesHeight() {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// §10  Grid Rendering & Custom Keyboard
+// §10  Grid Rendering
 // ═══════════════════════════════════════════════════════════════════════
 
 function renderGrid() {
@@ -1758,8 +1796,7 @@ function renderGrid() {
                 input.autocapitalize = 'characters';  // Force uppercase on each keystroke
                 input.spellcheck = false;
                 input.enterKeyHint = 'next';  // Show "Next" on mobile keyboard
-                // On touch devices suppress native keyboard; custom keyboard is used instead
-                input.inputMode = isTouchDevice() ? 'none' : 'text';
+                input.inputMode = 'text';
                 input.setAttribute('aria-label', `Rad ${row + 1}, kolumn ${col + 1}`);
                 
                 input.addEventListener('input', handleInput);
@@ -1776,134 +1813,6 @@ function renderGrid() {
         updateStats();
         updateClueFilledStatus();
         syncCluesHeight();
-    });
-}
-
-// Detect touch-capable devices (phones / tablets)
-function isTouchDevice() {
-    return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-}
-
-// ---- Custom on-screen keyboard (touch devices only) ----
-const KEYBOARD_ROWS = [
-    ['Q','W','E','R','T','Y','U','I','O','P','Å'],
-    ['A','S','D','F','G','H','J','K','L','Ö','Ä'],
-    ['Z','X','C','V','B','N','M','⌫']
-];
-
-function initCustomKeyboard() {
-    const container = document.getElementById('custom-keyboard');
-    if (!container || !isTouchDevice()) return;
-
-    container.innerHTML = '';
-    container.removeAttribute('style'); // allow CSS to control visibility
-
-    KEYBOARD_ROWS.forEach(row => {
-        const rowDiv = document.createElement('div');
-        rowDiv.className = 'kb-row';
-        row.forEach(key => {
-            const btn = document.createElement('button');
-            btn.type = 'button';
-            btn.className = key === '⌫' ? 'kb-key kb-backspace' : 'kb-key';
-            btn.textContent = key;
-            btn.setAttribute('aria-label', key === '⌫' ? 'Backsteg' : key);
-            btn.tabIndex = -1; // prevent stealing focus from grid inputs
-
-            // Use touchstart to prevent focus loss from the active input
-            btn.addEventListener('touchstart', (e) => {
-                e.preventDefault(); // prevent focus change
-            }, { passive: false });
-
-            btn.addEventListener('touchend', (e) => {
-                e.preventDefault();
-                handleKeyboardTap(key);
-            }, { passive: false });
-
-            // Fallback for mouse (e.g. testing in devtools with touch simulation)
-            btn.addEventListener('mousedown', (e) => { e.preventDefault(); });
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                handleKeyboardTap(key);
-            });
-
-            rowDiv.appendChild(btn);
-        });
-        container.appendChild(rowDiv);
-    });
-
-    // Show keyboard when a crossword input is focused, hide when focus leaves the grid
-    document.addEventListener('focusin', (e) => {
-        if (e.target.tagName === 'INPUT' && e.target.closest('.crossword-grid')) {
-            container.classList.add('kb-visible');
-            // Measure keyboard height and expose as CSS variable for layout adjustment
-            requestAnimationFrame(() => {
-                const kbHeight = container.offsetHeight || 150;
-                document.documentElement.style.setProperty('--kb-height', kbHeight + 'px');
-                document.body.classList.add('kb-active');
-                if (typeof computeCellSize === 'function') computeCellSize();
-                // Scroll the focused cell into view above the keyboard
-                setTimeout(() => {
-                    const active = document.activeElement;
-                    if (active && active.closest('.crossword-grid')) {
-                        const cell = active.closest('.cell') || active;
-                        cell.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
-                    }
-                }, 100);
-            });
-        }
-    });
-    document.addEventListener('focusout', (e) => {
-        // Small delay so tapping a keyboard key doesn't trigger hide before touchend fires
-        setTimeout(() => {
-            const active = document.activeElement;
-            if (!active || active.tagName !== 'INPUT' || !active.closest('.crossword-grid')) {
-                container.classList.remove('kb-visible');
-                document.body.classList.remove('kb-active');
-                if (typeof computeCellSize === 'function') computeCellSize();
-            }
-        }, 80);
-    });
-}
-
-function handleKeyboardTap(key) {
-    const activeInput = document.activeElement;
-    if (!activeInput || activeInput.tagName !== 'INPUT') return;
-    const cell = activeInput.parentElement;
-    if (!cell || !cell.classList.contains('cell')) return;
-
-    if (key === '⌫') {
-        // Mirror the existing Backspace behaviour in handleKeyDown
-        if (activeInput.value) {
-            activeInput.value = '';
-            updateStats();
-            updateClueFilledStatus();
-            saveProgress();
-        }
-        moveBackInDirection(activeInput);
-        scrollActiveCellIntoView();
-    } else {
-        activeInput.value = key; // already uppercase
-        activeInput.parentElement.classList.remove('empty-warning');
-        const row = parseInt(cell.dataset.row);
-        const col = parseInt(cell.dataset.col);
-        trackInput(row, col, key);
-        moveInDirection(activeInput);
-        updateStats();
-        updateClueFilledStatus();
-        saveProgress();
-        autoCheckIfComplete();
-        scrollActiveCellIntoView();
-    }
-}
-
-// Scroll the currently focused crossword cell into view (above the on-screen keyboard)
-function scrollActiveCellIntoView() {
-    requestAnimationFrame(() => {
-        const el = document.activeElement;
-        if (el && el.tagName === 'INPUT' && el.closest('.crossword-grid')) {
-            const cell = el.closest('.cell') || el;
-            cell.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
-        }
     });
 }
 
@@ -1990,73 +1899,11 @@ function toggleDirection(row, col) {
     currentDirection = currentDirection === 'across' ? 'down' : 'across';
     highlightWord(row, col);
     highlightClue(row, col);
-    updateDirectionButton();
     announce(currentDirection === 'across' ? 'Vågrätt' : 'Lodrätt');
 }
 
-// Update the direction toggle button's visual state
-function updateDirectionButton() {
-    const btn = document.getElementById('direction-toggle');
-    if (!btn) return;
-    
-    const icon = btn.querySelector('.direction-icon');
-    const text = btn.querySelector('.direction-text');
-    
-    if (currentDirection === 'down') {
-        btn.classList.add('down');
-        if (text) text.textContent = 'Lodrätt';
-    } else {
-        btn.classList.remove('down');
-        if (text) text.textContent = 'Vågrätt';
-    }
-}
-
-// Handler for the direction toggle button click
-function toggleDirectionButton() {
-    // Find the currently focused cell
-    const activeInput = document.activeElement;
-    if (activeInput && activeInput.tagName === 'INPUT') {
-        const cell = activeInput.parentElement;
-        if (cell && cell.classList.contains('cell')) {
-            const row = parseInt(cell.dataset.row);
-            const col = parseInt(cell.dataset.col);
-            toggleDirection(row, col);
-            return;
-        }
-    }
-    
-    // If no cell is focused, just toggle the direction state
-    currentDirection = currentDirection === 'across' ? 'down' : 'across';
-    updateDirectionButton();
-    announce(currentDirection === 'across' ? 'Vågrätt' : 'Lodrätt');
-}
-
-// Make toggleDirectionButton available globally
-window.toggleDirectionButton = toggleDirectionButton;
-
-// Set up direction toggle button to prevent focus loss
+// Set up hint buttons and other focus-preserving controls
 document.addEventListener('DOMContentLoaded', () => {
-    const directionBtn = document.getElementById('direction-toggle');
-    if (directionBtn) {
-        // Prevent the button from stealing focus on mousedown/touchstart
-        directionBtn.addEventListener('mousedown', (e) => {
-            e.preventDefault();
-        });
-        directionBtn.addEventListener('touchstart', (e) => {
-            e.preventDefault();
-        }, { passive: false });
-
-        // Handle the actual toggle on click/touchend
-        directionBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            toggleDirectionButton();
-        });
-        directionBtn.addEventListener('touchend', (e) => {
-            e.preventDefault();
-            toggleDirectionButton();
-        }, { passive: false });
-    }
-
     // Set up hint buttons to prevent focus loss from grid cell inputs
     function setupFocusPreservingButton(id, action) {
         const btn = document.getElementById(id);
@@ -2182,6 +2029,22 @@ function handleFocus(row, col) {
     }
     highlightWord(row, col);
     highlightClue(row, col);
+
+    // If the on-screen keyboard is open, ensure the focused cell is visible
+    if (window.visualViewport) {
+        requestAnimationFrame(() => {
+            const vv = window.visualViewport;
+            const cell = document.querySelector(`.cell[data-row="${row}"][data-col="${col}"]`);
+            if (!cell) return;
+            const rect = cell.getBoundingClientRect();
+            const visibleBottom = vv.offsetTop + vv.height;
+            if (rect.bottom > visibleBottom - 20) {
+                window.scrollBy({ top: rect.bottom - visibleBottom + 60, behavior: 'smooth' });
+            } else if (rect.top < vv.offsetTop + 10) {
+                window.scrollBy({ top: rect.top - vv.offsetTop - 40, behavior: 'smooth' });
+            }
+        });
+    }
 }
 
 function highlightWord(row, col) {
@@ -3087,7 +2950,7 @@ function computeCellSize() {
     let insideReserved = 0;
     const statsEl = document.querySelector('.stats');
     const gridHeader = document.querySelector('.grid-header');
-    
+
     if (statsEl && measureArea.contains(statsEl)) {
         insideReserved += statsEl.offsetHeight;
     }
@@ -3104,24 +2967,33 @@ function computeCellSize() {
     const extraX = borderX + padX;
     const extraY = borderY + padY;
 
-    // Safety margin: smaller in landscape to maximize grid
-    const safety = isLandscape ? 0 : 6;
+    const gap = 1; // px between cells as used in CSS
 
-    // Account for on-screen keyboard in portrait mobile
-    const kbActive = document.body.classList.contains('kb-active');
-    const kbReserve = (!isLandscape && kbActive)
-        ? (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--kb-height')) || 150)
-        : 0;
+    // Mobile portrait: size cells purely by available width — the page scrolls naturally
+    if (!isLandscape) {
+        const safety = 6;
+        const contentAvailW = Math.max(20, areaWidth - safety - extraX);
+        const cellByWidth = (contentAvailW - (cols - 1) * gap) / cols;
 
-    // Effective outer-space for the grid element inside measureArea
-    const maxOuterW = Math.max(40, areaWidth - safety);
-    const maxOuterH = Math.max(40, areaHeight - safety - insideReserved - kbReserve);
+        const minCell = 12;
+        const maxCell = 64;
+        let chosen = Math.min(cellByWidth, maxCell);
+        if (!isFinite(chosen) || chosen < minCell) chosen = minCell;
+        chosen = Math.max(minCell, chosen);
+
+        grid.style.setProperty('--cell-size', chosen + 'px');
+        grid.style.width = 'auto';
+        grid.style.height = 'auto';
+        return;
+    }
+
+    // Landscape: fit both width and height so the grid fits without scrolling
+    const maxOuterW = Math.max(40, areaWidth);
+    const maxOuterH = Math.max(40, areaHeight - insideReserved);
 
     // Content area available for cells = outer minus grid chrome
     const contentAvailW = Math.max(20, maxOuterW - extraX);
     const contentAvailH = Math.max(20, maxOuterH - extraY);
-
-    const gap = 1; // px between cells as used in CSS
 
     // Candidate cell sizes as floats to allow fine-grained fit
     const cellByWidthFloat = (contentAvailW - (cols - 1) * gap) / cols;
@@ -3178,25 +3050,12 @@ function updateTimerPosition() {
     }
 }
 
-// In landscape on touch devices the custom keyboard is hidden via CSS, so we must
-// re-enable the native keyboard by switching inputMode back to 'text'.  In portrait
-// we suppress it again so only the custom keyboard is used.
-function updateInputModeForOrientation() {
-    if (!isTouchDevice()) return;
-    const isLandscape = window.matchMedia('(max-width:1099px) and (orientation: landscape)').matches;
-    const mode = isLandscape ? 'text' : 'none';
-    document.querySelectorAll('.crossword-grid input').forEach(inp => {
-        inp.inputMode = mode;
-    });
-}
-
 // Ensure computeCellSize runs on resize and after rendering (with throttling for performance)
 (function(){
     const onResizeHandler = () => {
         computeCellSize();
         syncCluesHeight();
         updateTimerPosition();
-        updateInputModeForOrientation();
     };
     
     // Throttle resize events to max 10 times per second for better performance
@@ -3207,7 +3066,7 @@ function updateInputModeForOrientation() {
 })();
 
 // Ensure initial compute once DOM is stable
-setTimeout(() => { computeCellSize(); updateTimerPosition(); updateInputModeForOrientation(); }, 120);
+setTimeout(() => { computeCellSize(); updateTimerPosition(); }, 120);
 
 // ═══════════════════════════════════════════════════════════════════════
 // §15  Keyboard Shortcuts & Mobile Panels

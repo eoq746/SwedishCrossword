@@ -9,6 +9,7 @@ public class Word
     public string Id { get; init; } = Guid.NewGuid().ToString();
     public string Text { get; init; } = string.Empty;
     public string Clue { get; init; } = string.Empty;
+    public List<string> AlternativeClues { get; init; } = [];
     public string Category { get; init; } = string.Empty;
     public DifficultyLevel Difficulty { get; init; } = DifficultyLevel.Medium;
 
@@ -43,12 +44,26 @@ public class Word
         ? Segments[^1].EndCol
         : Direction == Direction.Across ? StartColumn + Length - 1 : StartColumn;
 
-    public Word(string text, string clue, string category = "", DifficultyLevel difficulty = DifficultyLevel.Medium)
+    public Word(string text, string clue, string category = "", DifficultyLevel difficulty = DifficultyLevel.Medium, List<string>? alternativeClues = null)
     {
         Text = text.ToUpper().Trim();
         Clue = clue.Trim();
         Category = category;
         Difficulty = difficulty;
+        AlternativeClues = alternativeClues ?? [];
+    }
+
+    /// <summary>
+    /// Returns a randomly selected clue from the primary clue and any alternatives.
+    /// </summary>
+    public string GetRandomClue()
+    {
+        if (AlternativeClues.Count == 0)
+            return Clue;
+
+        var allClues = new List<string>(AlternativeClues.Count + 1) { Clue };
+        allClues.AddRange(AlternativeClues);
+        return allClues[Random.Shared.Next(allClues.Count)];
     }
 
     /// <summary>

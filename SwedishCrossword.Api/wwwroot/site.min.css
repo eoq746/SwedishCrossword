@@ -65,14 +65,6 @@
   --medal-silver-from:#f1f5f9;--medal-silver-to:#e2e8f0;--medal-silver-border:#94a3b8;--medal-silver-shadow:rgba(148,163,184,.35);
   --medal-bronze-from:#fff7ed;--medal-bronze-to:#fed7aa;--medal-bronze-border:#fb923c;--medal-bronze-shadow:rgba(249,115,22,.25);
 
-  /* Keyboard */
-  --kb-bg:rgba(241,245,249,.97);
-  --kb-key-bg:#ffffff;
-  --kb-key-text:#1e293b;
-  --kb-key-active:#e0e7ff;
-  --kb-backspace-bg:#f1f5f9;
-  --kb-backspace-active:#fee2e2;
-
   /* Modal */
   --modal-bg:#ffffff;
   --modal-title:#0f172a;
@@ -98,10 +90,6 @@
   --hero-btn-bg:#fff;
   --hero-btn-text:#764ba2;
   --hero-btn-hover:#f0e6ff;
-
-  /* Direction button */
-  --btn-direction-from:#6366f1;
-  --btn-direction-to:#8b5cf6;
 
   /* Misc */
   --timer-bg:rgba(255,255,255,0.95);
@@ -162,13 +150,6 @@
   --medal-silver-from:#1e293b;--medal-silver-to:#334155;--medal-silver-border:#64748b;--medal-silver-shadow:rgba(100,116,139,.3);
   --medal-bronze-from:#431407;--medal-bronze-to:#7c2d12;--medal-bronze-border:#c2410c;--medal-bronze-shadow:rgba(194,65,12,.3);
 
-  --kb-bg:rgba(30,30,46,.97);
-  --kb-key-bg:#262637;
-  --kb-key-text:#e2e8f0;
-  --kb-key-active:#312e81;
-  --kb-backspace-bg:#334155;
-  --kb-backspace-active:#450a0a;
-
   --modal-bg:#1e1e2e;
   --modal-title:#e2e8f0;
   --modal-text:#94a3b8;
@@ -192,9 +173,6 @@
   --hero-btn-text:#a5b4fc;
   --hero-btn-hover:#312e81;
 
-  --btn-direction-from:#4338ca;
-  --btn-direction-to:#6366f1;
-
   --timer-bg:rgba(30,30,46,0.95);
   --focus-ring:var(--accent-color);
   --scrollbar-thumb:#475569;
@@ -209,8 +187,7 @@ html,body{height:100%}
 /* Focus-visible for all interactive elements */
 button:focus-visible,
 a:focus-visible,
-.clue-item:focus-visible,
-.kb-key:focus-visible{
+.clue-item:focus-visible{
   outline:2px solid var(--focus-ring);
   outline-offset:2px;
   border-radius:4px;
@@ -441,25 +418,7 @@ header p{font-size:.95rem;opacity:.95}
 .btn-share{background:var(--btn-share);color:#fff}
 .btn-danger{background:var(--btn-danger);color:#fff}
 
-/* Direction toggle button - visible on mobile, hidden on desktop */
-.btn-direction{
-  background: linear-gradient(135deg, var(--btn-direction-from) 0%, var(--btn-direction-to) 100%);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  font-weight: 600;
-  transition: transform 0.15s ease;
-}
-.btn-direction:active{transform: scale(0.95);}
-.btn-direction .direction-icon{
-  font-size: 1.1em;
-  transition: transform 0.2s ease;
-}
-.btn-direction.down .direction-icon{transform: rotate(90deg);}
-
-.timer{font-size:1.1rem;font-weight:700;color:var(--accent-color);text-align:center;margin-bottom:8px}
+.timer
 .stats{text-align:center;margin-top:8px;color:var(--text-muted);font-size:.85rem}
 
 /* Clues and leaderboard - base styles
@@ -576,25 +535,8 @@ header p{font-size:.95rem;opacity:.95}
 /* Ensure clue-column allows its children to shrink and not force overflow */
 .clue-column { min-height: 0; }
 
-/* Custom on-screen keyboard (touch devices) */
-.custom-keyboard{display:none}
-.custom-keyboard.kb-visible{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 2px;background:rgba(0,0,0,.06);border-radius:10px;margin-top:6px;width:100%;box-sizing:border-box;-webkit-user-select:none;user-select:none}
-.kb-row{display:flex;gap:3px;justify-content:center;width:100%}
-.kb-key{flex:1 1 0;max-width:44px;min-width:0;height:44px;border:none;border-radius:6px;background:var(--kb-key-bg);color:var(--kb-key-text);font-size:1rem;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.12);transition:background .1s;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.kb-key:active{background:var(--kb-key-active)}
-.kb-backspace{flex:1.6 1 0;max-width:72px;font-size:1.2rem;background:var(--kb-backspace-bg)}
-.kb-backspace:active{background:var(--kb-backspace-active)}
-
 /* Consolidated mobile rules */
 @media (max-width:1099px){
-    /* Show custom keyboard on small screens (touch devices enable it via JS) */
-    .custom-keyboard{display:none}
-    .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;background:var(--kb-bg);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--border-light);padding:6px 4px env(safe-area-inset-bottom,4px) 4px;margin:0;border-radius:0;width:100%;box-sizing:border-box}
-
-    /* Add bottom padding when on-screen keyboard is active so grid content can scroll above it */
-    body.kb-active{padding-bottom:var(--kb-height,150px)}
-    body.kb-active .site-container{padding-bottom:var(--kb-height,150px)}
-
     /* Compact header on mobile portrait */
     header {
         margin-bottom: 6px;
@@ -646,6 +588,8 @@ header p{font-size:.95rem;opacity:.95}
         overflow: visible;
         position: relative;
         padding: 6px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
   /* Ensure main layout enforces normal document flow so clues cannot appear under the grid */
@@ -655,8 +599,8 @@ header p{font-size:.95rem;opacity:.95}
         align-items: stretch;
         gap: 8px;
         flex: 1 1 auto;
-        overflow: auto;
-        max-height: 100%;
+        overflow: visible;
+        max-height: none;
     }
 
   /* Adjustments to ensure clues appear below the grid and don't get overlapped */
@@ -665,12 +609,12 @@ header p{font-size:.95rem;opacity:.95}
         z-index: 2;
         margin-top: 8px;
         clear: both;
-        flex: 1 1 auto;
+        flex: 0 0 auto;
         order: 2;
         display: flex;
         flex-direction: column;
         min-height: 100px;
-        max-height: 50vh;
+        max-height: min(50vh, 320px);
         overflow: hidden;
         padding: 6px;
         width: 100%; 
@@ -686,13 +630,15 @@ header p{font-size:.95rem;opacity:.95}
         position: relative;
         z-index: 1;
         flex: 0 0 auto;
-        overflow: hidden;
+        overflow: visible;
         order: 1;
-        min-height: auto; /* Remove fixed min-height - let content determine */
+        min-height: auto;
         padding: 4px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     /* Compact grid header on mobile */
@@ -722,10 +668,10 @@ header p{font-size:.95rem;opacity:.95}
         justify-content: center;
     }
     .grid-inner .controls .btn {
-        padding: 10px 12px;
-        font-size: 0.85rem;
+        padding: 8px 10px;
+        font-size: 0.8rem;
         min-height: 44px;
-        min-width: 44px;
+        min-width: 0;
     }
     .grid-inner .controls .stats {
         width: 100%;
@@ -736,8 +682,10 @@ header p{font-size:.95rem;opacity:.95}
     .crossword-grid {
         position: relative;
         z-index: 0;
-        --cell-size: clamp(18px,8vw,44px);
+        /* Account for body padding (16px), grid-section padding (8px), grid border (6px) */
+        --cell-size: clamp(16px, calc((100vw - 30px) / var(--cols, 11)), 44px);
         margin: 4px auto;
+        max-width: 100%;
     }
 
   /* Adjust site-container padding previously set */
@@ -852,9 +800,8 @@ header p{font-size:.95rem;opacity:.95}
     
   #clues-toggle{display:inline-block}
 
-  /* When leaderboard is shown, hide the grid and keyboard to give full space */
+  /* When leaderboard is shown, hide the grid to give full space */
     body.show-leaderboard .grid-section { display: none; }
-    body.show-leaderboard .custom-keyboard { display: none !important; }
 
   /* Leaderboard: hidden by default, replaces grid when shown */
     .leaderboard-section {
@@ -960,16 +907,11 @@ header p{font-size:.95rem;opacity:.95}
 
   /* Reduce footer footprint */
   .site-footer{font-size:.75rem;padding:8px}
+  .site-footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px}
 }
 
 /* Landscape support for narrow viewports (e.g., phones rotated) */
 @media (max-width:1099px) and (orientation: landscape) {
-  /* Compact single-row keyboard in landscape */
-  .custom-keyboard.kb-visible{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;flex-direction:row;flex-wrap:wrap;gap:2px;padding:3px 2px env(safe-area-inset-bottom,2px) 2px;background:var(--kb-bg);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--border-light);border-radius:0;margin:0;max-height:40vh}
-  .custom-keyboard.kb-visible .kb-row{gap:2px}
-  .custom-keyboard.kb-visible .kb-key{height:32px;font-size:0.8rem;max-width:34px}
-  .custom-keyboard.kb-visible .kb-backspace{max-width:56px}
-  body.kb-active .site-container{padding-bottom:var(--kb-height,100px)}
 
   /* Hide intro and content sections in landscape to maximize game space */
   .intro-section { display: none !important; }
@@ -1078,9 +1020,6 @@ header p{font-size:.95rem;opacity:.95}
   /* Header: more prominence on desktop */
   header h1 { font-size: 2.4rem; }
   header p { font-size: 1rem; }
-
-  /* Hide direction toggle button on desktop - spacebar works reliably */
-  .btn-direction { display: none; }
 
   /* Intro section: wider and more readable */
   .intro-section { padding: 18px 24px; margin-bottom: 16px; }
@@ -1492,4 +1431,4 @@ a.size-card:hover .btn-hero{background:var(--hero-btn-hover);transform:scale(1.0
 .cookie-btn:hover{opacity:.85}
 .cookie-btn-accept{background:var(--accent,#2563eb);color:#fff}
 .cookie-btn-reject{background:var(--muted-bg,#e2e8f0);color:var(--text,#1e293b)}
-@media(max-width:600px){.cookie-consent-inner{flex-direction:column;text-align:center}.cookie-consent-buttons{width:100%;justify-content:center}}
+@media(max-width:600px){#cookie-consent-banner{padding:10px 12px;font-size:.82rem}.cookie-consent-inner{flex-direction:row;align-items:center;gap:10px;text-align:left}.cookie-consent-inner p{flex:1 1 0;min-width:0;font-size:.82rem;line-height:1.35}.cookie-consent-buttons{flex-shrink:0;gap:6px}.cookie-btn{padding:8px 12px;font-size:.8rem}}

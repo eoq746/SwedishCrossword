@@ -136,8 +136,30 @@ public class SwedishDictionary
                 {
                     if (!string.IsNullOrWhiteSpace(entry.Word))
                     {
-                        if (_words.TryAdd(entry.Word.ToUpperInvariant(), entry))
+                        var key = entry.Word.ToUpperInvariant();
+                        if (_words.TryAdd(key, entry))
+                        {
                             wordsAdded++;
+                        }
+                        else if (HasValidClue(entry))
+                        {
+                            // Merge clue as an alternative if it's different
+                            var existing = _words[key];
+                            if (!string.Equals(existing.Clue, entry.Clue, StringComparison.Ordinal)
+                                && !existing.AlternativeClues.Contains(entry.Clue))
+                            {
+                                existing.AlternativeClues.Add(entry.Clue);
+                            }
+                            // Also merge any alternative clues from the new entry
+                            foreach (var alt in entry.AlternativeClues)
+                            {
+                                if (!string.Equals(existing.Clue, alt, StringComparison.Ordinal)
+                                    && !existing.AlternativeClues.Contains(alt))
+                                {
+                                    existing.AlternativeClues.Add(alt);
+                                }
+                            }
+                        }
                     }
                 }
                 //Console.WriteLine($"Loaded {wordsAdded} words successfully");
@@ -151,11 +173,12 @@ public class SwedishDictionary
 
     private Word ConvertToWord(WordEntry entry)
     {
+        var altClues = entry.AlternativeClues.Count > 0 ? entry.AlternativeClues : null;
         if (Enum.TryParse<DifficultyLevel>(entry.Difficulty, true, out var difficulty))
         {
-            return new Word(entry.Word, entry.Clue, entry.Category ?? "", difficulty);
+            return new Word(entry.Word, entry.Clue, entry.Category ?? "", difficulty, altClues);
         }
-        return new Word(entry.Word, entry.Clue, entry.Category ?? "", DifficultyLevel.Medium);
+        return new Word(entry.Word, entry.Clue, entry.Category ?? "", DifficultyLevel.Medium, altClues);
     }
 
     /// <summary>
@@ -342,6 +365,22 @@ public class SwedishDictionary
             return entry.Clue;
         return null;
     }
+
+    /// <summary>
+    /// Gets a randomly selected clue for a word from its primary and alternative clues.
+    /// </summary>
+    public string? GetRandomClue(string word)
+    {
+        if (!_words.TryGetValue(word.ToUpperInvariant(), out var entry) || !HasValidClue(entry))
+            return null;
+
+        if (entry.AlternativeClues.Count == 0)
+            return entry.Clue;
+
+        var allClues = new List<string>(entry.AlternativeClues.Count + 1) { entry.Clue };
+        allClues.AddRange(entry.AlternativeClues);
+        return allClues[Random.Shared.Next(allClues.Count)];
+    }
 }
 
 /// <summary>
@@ -351,6 +390,7 @@ public class WordEntry
 {
     public string Word { get; set; } = string.Empty;
     public string Clue { get; set; } = string.Empty;
+    public List<string> AlternativeClues { get; set; } = [];
     public string? Category { get; set; }
     public string? Difficulty { get; set; }
 }
