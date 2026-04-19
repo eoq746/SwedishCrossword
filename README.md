@@ -130,6 +130,26 @@ SwedishCrosswords/
     +-- deploy-azure.yml            # Build, push & deploy to Azure Container Apps
 ```
 
+## Cookie Consent
+
+The site displays a GDPR cookie consent banner (`cookie-consent.js`) on all pages. Users can accept all cookies or only essential ones. Their choice is stored in `localStorage` under the key `cookie_consent` (`'all'` or `'essential'`).
+
+**When adding analytics, tracking, or third-party scripts**, always gate them behind the consent check:
+
+```javascript
+if (window.CookieConsent.allowsAll()) {
+    // Load non-essential scripts here
+}
+```
+
+Available helpers on `window.CookieConsent`:
+| Method | Returns |
+|--------|---------|
+| `allowsAll()` | `true` if user accepted all cookies |
+| `allowsEssentialOnly()` | `true` if user chose essential only |
+| `hasResponded()` | `true` if user made any choice |
+| `reset()` | Clears stored consent (banner reappears on reload) |
+
 ## Getting Started
 
 ### Prerequisites
