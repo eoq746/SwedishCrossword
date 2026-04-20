@@ -333,7 +333,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         }
       ]
       scale: {
-        minReplicas: 0
+        // Keep at least 1 replica running to avoid cold-start latency that
+        // degrades Core Web Vitals (TTFB/LCP) and hurts SEO rankings.
+        minReplicas: 1
         maxReplicas: 1
       }
       volumes: [
