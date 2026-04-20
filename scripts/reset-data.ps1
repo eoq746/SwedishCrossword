@@ -12,9 +12,15 @@
 #     Run scripts/setup-sql-user.ps1 once from Azure Cloud Shell to set this up.
 #
 # Usage:
-#   ./scripts/reset-data.ps1                   # Dry-run (shows row counts)
-#   ./scripts/reset-data.ps1 -Confirm          # Actually delete rows
-#   ./scripts/reset-data.ps1 -Confirm -Verbose # Delete with detailed output
+#   ./scripts/reset-data.ps1                                          # Dry-run (shows row counts)
+#   ./scripts/reset-data.ps1 -Confirm                                 # Actually delete rows
+#   ./scripts/reset-data.ps1 -StartDate 2025-01-01 -EndDate 2025-06-01 # Custom range
+#   ./scripts/reset-data.ps1 -Confirm -Verbose                        # Delete with detailed output
+#
+# Date range:
+#   -StartDate  Inclusive start of the deletion window (rows on this date ARE deleted).
+#   -EndDate    Inclusive end   of the deletion window (rows on this date ARE deleted).
+#   Both dates use the format YYYY-MM-DD.
 # ---------------------------------------------------------------------------
 
 [CmdletBinding()]
@@ -24,8 +30,11 @@ param(
     [string]$ResourceGroup = 'rg-svensktkorsord',
     [string]$AppName       = 'svensktkorsord',
 
-    # Data before this date is considered stale and will be removed.
-    [string]$CutoffDate    = '2026-05-14'
+    # Inclusive start of the deletion window (rows on this date ARE deleted).
+    [string]$StartDate     = '2000-01-01',
+
+    # Inclusive end of the deletion window (rows on this date ARE deleted).
+    [string]$EndDate       = '2026-05-14'
 )
 
 $ErrorActionPreference = 'Stop'
@@ -98,34 +107,36 @@ function Invoke-Sql {
 
 # Wrap all work in try/finally so the firewall rule is always cleaned up
 try {
-    # Convert cutoff date to a Unix timestamp in milliseconds (end of day, so the cutoff date itself is included)
-    $cutoffUnix = ([long]([DateTimeOffset]::Parse("${CutoffDate}T00:00:00Z")).ToUnixTimeSeconds() + 86400) * 1000
+    # Convert date range to Unix timestamps in milliseconds.
+    # StartDate: beginning of that day (inclusive). EndDate: end of that day (inclusive).
+    $startUnix = ([long]([DateTimeOffset]::Parse("${StartDate}T00:00:00Z")).ToUnixTimeSeconds()) * 1000
+    $endUnix   = ([long]([DateTimeOffset]::Parse("${EndDate}T00:00:00Z")).ToUnixTimeSeconds() + 86400) * 1000
 
     # ---------------------------------------------------------------------------
     # 3. Delete history rows before the cutoff date
     # ---------------------------------------------------------------------------
-    Write-Host "`n=== History cleanup (cutoff: $CutoffDate) ===" -ForegroundColor Cyan
+    Write-Host "`n=== History cleanup (inclusive range: $StartDate to $EndDate) ===" -ForegroundColor Cyan
 
-    $historyResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM history WHERE date <= '$CutoffDate'"
+    $historyResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM history WHERE date >= '$StartDate' AND date <= '$EndDate'"
     $historyRows = [int]$historyResult.cnt
     Write-Host "  Rows to delete from [history]: $historyRows"
 
     if ($historyRows -gt 0 -and $Confirm) {
-        Invoke-Sql "DELETE FROM history WHERE date <= '$CutoffDate'" | Out-Null
+        Invoke-Sql "DELETE FROM history WHERE date >= '$StartDate' AND date <= '$EndDate'" | Out-Null
         Write-Host "  Deleted $historyRows row(s) from [history]" -ForegroundColor Green
     }
 
     # ---------------------------------------------------------------------------
     # 4. Delete scores with timestamps before the cutoff date
     # ---------------------------------------------------------------------------
-    Write-Host "`n=== Scores cleanup (cutoff timestamp: $cutoffUnix) ===" -ForegroundColor Cyan
+    Write-Host "`n=== Scores cleanup (inclusive range: $StartDate to $EndDate, timestamps: $startUnix to $endUnix) ===" -ForegroundColor Cyan
 
-    $scoresResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM scores WHERE timestamp < $cutoffUnix"
+    $scoresResult = Invoke-Sql "SELECT COUNT(*) AS cnt FROM scores WHERE timestamp >= $startUnix AND timestamp < $endUnix"
     $scoresRows = [int]$scoresResult.cnt
     Write-Host "  Rows to delete from [scores]: $scoresRows"
 
     if ($scoresRows -gt 0 -and $Confirm) {
-        Invoke-Sql "DELETE FROM scores WHERE timestamp < $cutoffUnix" | Out-Null
+        Invoke-Sql "DELETE FROM scores WHERE timestamp >= $startUnix AND timestamp < $endUnix" | Out-Null
         Write-Host "  Deleted $scoresRows row(s) from [scores]" -ForegroundColor Green
     }
 
@@ -180,7 +191,7 @@ if (-not $storageAccountName) {
         '--share-name',   $shareName
     )
 
-    Write-Host "`n=== Puzzle file cleanup (cutoff: $CutoffDate) ===" -ForegroundColor Cyan
+    Write-Host "`n=== Puzzle file cleanup (inclusive range: $StartDate to $EndDate) ===" -ForegroundColor Cyan
 
     $puzzleFiles = az storage file list @storageArgs `
         --path 'puzzles' `
@@ -188,14 +199,15 @@ if (-not $storageAccountName) {
 
     if ($puzzleFiles) {
         # Legacy files: puzzle-YYYY-MM-DD.json and puzzle-YYYY-MM-DD-small.json
+        # Legacy files: puzzle-YYYY-MM-DD.json and puzzle-YYYY-MM-DD-small.json
         $legacyFiles = $puzzleFiles | Where-Object {
             ($_ -match '^puzzle-(\d{4}-\d{2}-\d{2})\.json$' -or
-             $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-small\.json$') -and $Matches[1] -lt $CutoffDate
+             $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-small\.json$') -and $Matches[1] -ge $StartDate -and $Matches[1] -le $EndDate
         }
 
-        # New-format puzzles before cutoff: puzzle-YYYY-MM-DD-NxN.json
+        # New-format puzzles in range: puzzle-YYYY-MM-DD-NxN.json
         $oldSizedFiles = $puzzleFiles | Where-Object {
-            $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-\d+x\d+\.json$' -and $Matches[1] -lt $CutoffDate
+            $_ -match '^puzzle-(\d{4}-\d{2}-\d{2})-\d+x\d+\.json$' -and $Matches[1] -ge $StartDate -and $Matches[1] -le $EndDate
         }
 
         $allOld = @($legacyFiles) + @($oldSizedFiles) | Sort-Object -Unique

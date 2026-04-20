@@ -223,7 +223,21 @@ if (!app.Environment.IsDevelopment())
 
 app.UseCors();
 app.UseDefaultFiles();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = ctx =>
+    {
+        var path = ctx.File.Name;
+        if (path.EndsWith(".css", StringComparison.OrdinalIgnoreCase) ||
+            path.EndsWith(".js", StringComparison.OrdinalIgnoreCase) ||
+            path.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
+            path.EndsWith(".ico", StringComparison.OrdinalIgnoreCase) ||
+            path.EndsWith(".webmanifest", StringComparison.OrdinalIgnoreCase))
+        {
+            ctx.Context.Response.Headers.CacheControl = "public, max-age=604800, immutable";
+        }
+    }
+});
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseRateLimiter();
@@ -291,6 +305,22 @@ app.MapAnalyticsEndpoints();
 app.MapFriendsEndpoints();
 
 app.MapHealthChecks("/api/health");
+
+// Dynamic sitemap that includes all puzzle dates for better SEO indexing
+app.MapGet("/sitemap-puzzles.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =>
+{
+    var today = timeProvider.GetSwedishDate();
+    var dates = dateIndex.GetDates(today);
+    var sb = new System.Text.StringBuilder();
+    sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
+    sb.AppendLine("""<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">""");
+    foreach (var entry in dates)
+    {
+        sb.AppendLine($"  <url><loc>https://svensktkorsord.se/puzzle.html?date={entry.Date}</loc><changefreq>never</changefreq><priority>0.6</priority></url>");
+    }
+    sb.AppendLine("</urlset>");
+    return Results.Content(sb.ToString(), "application/xml; charset=utf-8");
+}).ExcludeFromDescription();
 
 app.Run();
 

@@ -22,7 +22,35 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/site.min.css">
-</head>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Korsord", "item": "https://svensktkorsord.se/"},
+                {"@type": "ListItem", "position": 2, "name": "Spela Korsord", "item": "https://svensktkorsord.se/puzzle.html"}
+            ]
+        }
+    </script>
+
+    <!-- Structured Data: Game -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Svenskt Korsord - Dagligt Korsord Online",
+            "description": "Spela dagens gratis svenska korsord online. Interaktivt korsord med ledtrådar, synonymer och topplista.",
+            "url": "https://svensktkorsord.se/puzzle.html",
+            "genre": ["Puzzle", "Word Game", "Korsord"],
+            "inLanguage": "sv",
+            "playMode": "SinglePlayer",
+            "applicationCategory": "Game",
+            "operatingSystem": "Any",
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SEK"}
+        }
+    </script>
 <body>
     <a href="#crossword-grid" class="skip-link">Hoppa till korsordet</a>
     <div class="container">

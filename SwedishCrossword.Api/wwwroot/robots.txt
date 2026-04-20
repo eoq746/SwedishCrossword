@@ -7,6 +7,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://svensktkorsord.se/sitemap.xml
+Sitemap: https://svensktkorsord.se/sitemap-puzzles.xml
 
 # Google-specific
 User-agent: Googlebot
