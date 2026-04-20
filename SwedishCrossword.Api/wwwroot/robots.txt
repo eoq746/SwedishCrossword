@@ -1,13 +1,13 @@
 # Robots.txt for Svenskt Korsord
-# https://svensktkorsord.se
+# https://www.svensktkorsord.se
 
 # Allow all crawlers
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://svensktkorsord.se/sitemap.xml
-Sitemap: https://svensktkorsord.se/sitemap-puzzles.xml
+Sitemap: https://www.svensktkorsord.se/sitemap.xml
+Sitemap: https://www.svensktkorsord.se/sitemap-puzzles.xml
 
 # Google-specific
 User-agent: Googlebot

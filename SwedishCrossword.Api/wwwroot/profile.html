@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
 
     <link rel="stylesheet" href="/tokens.css">
@@ -555,7 +556,7 @@ async function deleteMyAccount() {
     }
 }
 </script>
-<script src="/cookie-consent.js"></script>
+<script src="/cookie-consent.js" defer></script>
 <script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>
