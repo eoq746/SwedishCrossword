@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using Microsoft.Data.SqlClient;
 using Microsoft.Data.Sqlite;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace SwedishCrossword.Api;
 
@@ -31,6 +32,8 @@ sealed partial class LeaderboardStore : IDisposable
     private readonly ILogger<LeaderboardStore> _logger;
     private readonly TimeProvider _timeProvider;
     private readonly bool _useSqlServer;
+    private readonly MemoryCache _aliasCache = new(new MemoryCacheOptions { SizeLimit = 1024 });
+    private static readonly TimeSpan AliasCacheDuration = TimeSpan.FromMinutes(5);
 
     public LeaderboardStore(IConfiguration config, ILogger<LeaderboardStore> logger, TimeProvider timeProvider, IHostEnvironment environment)
     {
@@ -447,6 +450,7 @@ sealed partial class LeaderboardStore : IDisposable
 
     public void Dispose()
     {
+        _aliasCache.Dispose();
         if (!_useSqlServer)
             SqliteConnection.ClearAllPools();
     }
@@ -455,12 +459,24 @@ sealed partial class LeaderboardStore : IDisposable
 
     public async Task<string?> GetAliasAsync(string userId)
     {
+        var cacheKey = $"alias:{userId}";
+        if (_aliasCache.TryGetValue(cacheKey, out string? cached))
+            return cached;
+
         await using var conn = await OpenConnectionAsync();
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = "SELECT alias FROM user_aliases WHERE user_id = @uid";
         AddParam(cmd, "@uid", userId);
         var result = await cmd.ExecuteScalarAsync();
-        return result as string;
+        var alias = result as string;
+
+        _aliasCache.Set(cacheKey, alias, new MemoryCacheEntryOptions
+        {
+            AbsoluteExpirationRelativeToNow = AliasCacheDuration,
+            Size = 1
+        });
+
+        return alias;
     }
 
     public async Task<bool> IsAliasAvailableAsync(string alias, string? excludeUserId = null)
@@ -511,6 +527,11 @@ sealed partial class LeaderboardStore : IDisposable
         try
         {
             await cmd.ExecuteNonQueryAsync();
+            _aliasCache.Set($"alias:{userId}", (string?)alias, new MemoryCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = AliasCacheDuration,
+                Size = 1
+            });
             return true;
         }
         catch (DbException ex) when (IsUniqueConstraintViolation(ex))
@@ -823,7 +844,7 @@ sealed partial class LeaderboardStore : IDisposable
         await using var check = conn.CreateCommand();
         check.Transaction = tx;
         check.CommandText = """
-            SELECT status FROM friend_requests
+            SELECT id, status, from_user_id FROM friend_requests
             WHERE (from_user_id = @from AND to_user_id = @to)
                OR (from_user_id = @to AND to_user_id = @from)
             """;
@@ -833,8 +854,23 @@ sealed partial class LeaderboardStore : IDisposable
         await using var reader = await check.ExecuteReaderAsync();
         if (await reader.ReadAsync())
         {
-            var status = reader.GetString(0);
+            var existingId = reader.GetString(0);
+            var status = reader.GetString(1);
+            var existingFrom = reader.GetString(2);
             await reader.CloseAsync();
+
+            // Auto-accept: B sends request to A while A→B is already pending
+            if (status == "pending" && existingFrom == toUserId)
+            {
+                await using var accept = conn.CreateCommand();
+                accept.Transaction = tx;
+                accept.CommandText = "UPDATE friend_requests SET status = 'accepted' WHERE id = @id AND status = 'pending'";
+                AddParam(accept, "@id", existingId);
+                await accept.ExecuteNonQueryAsync();
+                await tx.CommitAsync();
+                return (true, string.Empty);
+            }
+
             await tx.RollbackAsync();
             return status switch
             {

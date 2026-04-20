@@ -12,37 +12,9 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/site.min.css">
 
+    <link rel="stylesheet" href="/tokens.css">
     <style>
-        :root {
-            --page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-bg: #ffffff;
-            --surface-bg: #f9fafb;
-            --text-heading: #1f2937;
-            --text-body: #374151;
-            --text-muted: #6b7280;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --border: #e5e7eb;
-            --success-bg: #f0fdf4;
-            --success-border: #22c55e;
-            --shadow: rgba(0,0,0,0.2);
-        }
-        [data-theme="dark"] {
-            --page-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
-            --card-bg: #1e293b;
-            --surface-bg: #334155;
-            --text-heading: #f1f5f9;
-            --text-body: #cbd5e1;
-            --text-muted: #94a3b8;
-            --accent: #818cf8;
-            --accent-hover: #6366f1;
-            --border: #475569;
-            --success-bg: rgba(34,197,94,0.1);
-            --success-border: #22c55e;
-            --shadow: rgba(0,0,0,0.5);
-        }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { height: 100%; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: var(--page-bg);
@@ -170,7 +142,7 @@
             .size-groups-grid { grid-template-columns: 1fr; }
         }
         @media(max-width:600px) {
-            .container { padding: 20px; margin: 12px 8px }
+            .container { padding: 20px; width: calc(100% - 16px); margin: 12px auto }
             h1 { font-size: 1.5rem }
             .profile-header { gap: 12px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -183,22 +155,26 @@
     <a href="#content" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;">Hoppa till innehåll</a>
     <div class="container">
         <div class="page-nav">
-            <a href="/" style="color:var(--accent);text-decoration:none;font-weight:500;">← Startsida</a>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            <a href="/" class="page-nav-link">← Startsida</a>
+            <span style="display:flex;gap:12px;align-items:center;">
+                <a href="/leaderboard.html" class="page-nav-link">🏆 Topplista</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            </span>
         </div>
 
         <main id="content" role="main">
             <div class="loading">Laddar profil...</div>
         </main>
 
-        <footer>
+        <footer role="contentinfo">
             <nav>
                 <a href="/">Startsida</a>
-                <a href="/puzzle.html?size=17x17">Spela</a>
                 <a href="/calendar.html">Arkiv</a>
-                <a href="/om-oss.html">Om oss</a>
-                <a href="/kontakt.html">Kontakt</a>
-                <a href="/integritetspolicy.html">Integritetspolicy</a>
+                <a href="/leaderboard.html">Topplista</a>
+                <a href="/profile.html">Min profil</a>
+                <a href="/about.html">Om oss</a>
+                <a href="/contact.html">Kontakt</a>
+                <a href="/privacy-policy.html">Integritetspolicy</a>
             </nav>
             © 2025–2026 Svenskt Korsord. Alla rättigheter förbehållna.
         </footer>
@@ -349,7 +325,7 @@ async function renderProfile(el, user) {
         '</div>' +
         '<div>' +
             '<h2>🔒 Dina uppgifter (GDPR)</h2>' +
-            '<p>Du har rätt att exportera eller radera alla dina serverlagrade uppgifter. Läs mer i vår <a href="/integritetspolicy.html">integritetspolicy</a>.</p>' +
+            '<p>Du har rätt att exportera eller radera alla dina serverlagrade uppgifter. Läs mer i vår <a href="/privacy-policy.html">integritetspolicy</a>.</p>' +
             '<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">' +
                 '<button class="login-btn" id="export-data-btn" style="padding:10px 20px;font-size:0.95rem;">📥 Exportera mina uppgifter</button>' +
                 '<button class="friend-btn friend-btn-danger" id="delete-account-btn" style="padding:10px 20px;font-size:0.95rem;">🗑️ Radera mitt konto</button>' +
@@ -580,5 +556,6 @@ async function deleteMyAccount() {
 }
 </script>
 <script src="/cookie-consent.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

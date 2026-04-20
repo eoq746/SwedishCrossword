@@ -148,6 +148,25 @@ internal static class PuzzleEndpoints
             return Results.Ok(result);
         }).CacheOutput("puzzle-dates");
 
+        app.MapGet("/api/puzzle/hashes", async (string? date, TimeProvider timeProvider, PuzzleCache puzzleCache, CancellationToken ct) =>
+        {
+            var target = DateOnly.TryParseExact(date, "yyyy-MM-dd", out var parsed)
+                ? parsed
+                : timeProvider.GetSwedishDate();
+
+            var mapping = new Dictionary<string, string>();
+            foreach (var sizeKey in PuzzleWarmupService.ValidSizeKeys)
+            {
+                var file = ResolvePuzzleFileForSize(puzzlePath, target, sizeKey);
+                if (file is null) continue;
+                var prepared = await puzzleCache.GetPreparedAsync(file, target, ct);
+                if (prepared is not null)
+                    mapping[sizeKey] = prepared.PuzzleHash;
+            }
+
+            return Results.Ok(mapping);
+        }).CacheOutput("puzzle-dates");
+
         return app;
     }
 

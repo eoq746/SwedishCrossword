@@ -8,11 +8,11 @@
     <meta name="keywords" content="integritetspolicy, cookies, personuppgifter, GDPR, svenskt korsord, dataskydd">
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-snippet:-1">
-    <link rel="canonical" href="https://svensktkorsord.se/integritetspolicy.html">
+    <link rel="canonical" href="https://svensktkorsord.se/privacy-policy.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://svensktkorsord.se/integritetspolicy.html">
+    <meta property="og:url" content="https://svensktkorsord.se/privacy-policy.html">
     <meta property="og:title" content="Integritetspolicy - Svenskt Korsord">
     <meta property="og:description" content="Integritetspolicy för Svenskt Korsord. Läs om hur vi hanterar dina uppgifter och cookies.">
     <meta property="og:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
@@ -35,7 +35,7 @@
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Integritetspolicy - Svenskt Korsord | Gratis Korsord Online",
-            "url": "https://svensktkorsord.se/integritetspolicy.html",
+            "url": "https://svensktkorsord.se/privacy-policy.html",
             "description": "Integritetspolicy för Svenskt Korsord som beskriver hur vi samlar in, använder och skyddar dina uppgifter i enlighet med GDPR när du spelar våra gratis korsord online.",
             "isPartOf": {
                 "@type": "WebSite",
@@ -56,39 +56,10 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288"
             crossorigin="anonymous"></script>
     -->
+    <link rel="stylesheet" href="/site.min.css">
+    <link rel="stylesheet" href="/tokens.css">
     <style>
-        :root {
-            --page-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --card-bg: #ffffff;
-            --surface-bg: #f9fafb;
-            --text-heading: #1f2937;
-            --text-body: #374151;
-            --text-muted: #6b7280;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --border: #e5e7eb;
-            --info-bg: #f0f9ff;
-            --warn-bg: #fef3c7;
-            --warn-border: #f59e0b;
-            --shadow: rgba(0,0,0,0.2);
-        }
-        [data-theme="dark"] {
-            --page-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);
-            --card-bg: #1e293b;
-            --surface-bg: #334155;
-            --text-heading: #f1f5f9;
-            --text-body: #cbd5e1;
-            --text-muted: #94a3b8;
-            --accent: #818cf8;
-            --accent-hover: #6366f1;
-            --border: #475569;
-            --info-bg: rgba(129,140,248,0.1);
-            --warn-bg: rgba(245,158,11,0.12);
-            --warn-border: #d97706;
-            --shadow: rgba(0,0,0,0.5);
-        }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { height: 100%; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background: var(--page-bg);
@@ -97,11 +68,13 @@
             line-height: 1.7; display: flex; align-items: flex-start; justify-content: center;
         }
         .container {
-            width: 100%; max-width: 900px; margin: 20px 12px;
+            max-width: 900px; width: calc(100% - 24px); margin: 20px auto;
             background: var(--card-bg); border-radius: 12px; padding: 32px;
             box-shadow: 0 10px 40px var(--shadow);
+            max-height: calc(100vh - 40px - env(safe-area-inset-top,20px) - env(safe-area-inset-bottom,20px)); display: flex; flex-direction: column; overflow: hidden;
         }
-        .page-nav { display: flex; justify-content: flex-end; margin-bottom: 12px; }
+        main { flex: 1 1 auto; overflow-y: auto; min-height: 0; }
+        .page-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
         .theme-toggle {
             background: none; border: none; font-size: 1.5rem; cursor: pointer;
             padding: 4px 8px; border-radius: 8px; transition: transform 0.2s;
@@ -130,7 +103,7 @@
         footer { text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; }
         footer a { color: var(--text-muted); margin: 0 10px; }
         @media (max-width: 600px) {
-            .container { padding: 20px; margin: 12px 8px; }
+            .container { padding: 20px; width: calc(100% - 16px); margin: 12px auto; max-height: calc(100vh - 24px); }
             h1 { font-size: 1.5rem; }
             h2 { font-size: 1.15rem; }
             p, li { font-size: 0.95rem; overflow-wrap: break-word; word-break: break-word; }
@@ -144,8 +117,13 @@
 <body>
     <div class="container">
         <div class="page-nav">
-            <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            <a href="/" class="page-nav-link">← Startsida</a>
+            <span style="display:flex;gap:12px;align-items:center;">
+                <a href="/leaderboard.html" class="page-nav-link">🏆 Topplista</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            </span>
         </div>
+        <main>
         <h1>Integritetspolicy</h1>
         <p class="last-updated">Senast uppdaterad: Februari 2026</p>
 
@@ -156,7 +134,7 @@
         </div>
 
         <h2>1. Vem är personuppgiftsansvarig?</h2>
-        <p>Svenskt Korsord drivs som ett hobbyprojekt. Vi har inte en formell företagsstruktur utan är enskilda utvecklare som driver tjänsten. För frågor om integritet kan du kontakta oss via <a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a> eller vår <a href="kontakt.html">kontaktsida</a>.</p>
+        <p>Svenskt Korsord drivs som ett hobbyprojekt. Vi har inte en formell företagsstruktur utan är enskilda utvecklare som driver tjänsten. För frågor om integritet kan du kontakta oss via <a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a> eller vår <a href="contact.html">kontaktsida</a>.</p>
         <p>Det går även bra att kontakta oss via e-post på <a href="mailto:jockeb14@gmail.com">jockeb14@gmail.com</a></p>
         <h2>2. Information vi samlar in</h2>
         <p>Svenskt Korsord är en gratis tjänst för att spela korsord online. Vi har utformat tjänsten för att minimera insamling av personuppgifter. Här är en översikt över vilken information som kan samlas in:</p>
@@ -343,24 +321,26 @@
         <p>Om du har frågor om denna integritetspolicy eller vill utöva dina rättigheter, kontakta oss via:</p>
         <ul>
             <li><a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a></li>
-            <li>Vår <a href="/kontakt.html">kontaktsida</a></li>
+            <li>Vår <a href="/contact.html">kontaktsida</a></li>
             <li>E-post: <a href="mailto:jockeb14@gmail.com">jockeb14@gmail.com</a></li>
         </ul>
 
         <a href="/" class="back-link">← Startsida</a>
 
-        <footer>
+        </main>
+
+        <footer role="contentinfo">
             <nav>
                 <a href="/">Startsida</a>
-                <a href="/puzzle.html?size=17x17">Spela</a>
                 <a href="/calendar.html">Arkiv</a>
+                <a href="/leaderboard.html">Topplista</a>
                 <a href="/profile.html">Min profil</a>
-                <a href="/om-oss.html">Om oss</a>
-                <a href="/kontakt.html">Kontakt</a>
-                <a href="/integritetspolicy.html">Integritetspolicy</a>
+                <a href="/about.html">Om oss</a>
+                <a href="/contact.html">Kontakt</a>
+                <a href="/privacy-policy.html">Integritetspolicy</a>
             </nav>
             © 2025–2026
-            <p style="margin-top: 6px; font-size: 0.85rem; opacity: 0.8;">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
+            <p style="margin-top: 6px; font-size: 0.85rem;">Ordlistan</p>
         </footer>
     </div>
 <script>
@@ -372,5 +352,6 @@
 })();
 </script>
 <script src="/cookie-consent.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

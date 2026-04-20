@@ -13,19 +13,19 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://svensktkorsord.se/om-oss.html</loc>
+        <loc>https://svensktkorsord.se/about.html</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://svensktkorsord.se/kontakt.html</loc>
+        <loc>https://svensktkorsord.se/contact.html</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://svensktkorsord.se/integritetspolicy.html</loc>
+        <loc>https://svensktkorsord.se/privacy-policy.html</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>

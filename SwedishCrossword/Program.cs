@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
 
@@ -328,9 +328,9 @@ internal class Program
                 "index.html",
                 "site.min.css",
                 "site.js",
-                "om-oss.html",
-                "kontakt.html",
-                "integritetspolicy.html",
+                "about.html",
+                "contact.html",
+                "privacy-policy.html",
                 "sitemap.xml",
                 "robots.txt",
                 "ads.txt",

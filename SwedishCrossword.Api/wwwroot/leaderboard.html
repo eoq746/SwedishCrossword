@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topplista - Svenskt Korsord</title>
+    <meta name="description" content="Se dagens topplista för Svenskt Korsord. Vilka har löst korsordet snabbast?">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://svensktkorsord.se/leaderboard.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://svensktkorsord.se/leaderboard.html">
+    <meta property="og:title" content="Topplista - Svenskt Korsord">
+    <meta property="og:description" content="Se dagens topplista för Svenskt Korsord. Vilka har löst korsordet snabbast?">
+    <meta property="og:image" content="https://svensktkorsord.se/android-chrome-512x512.png">
+    <meta property="og:locale" content="sv_SE">
+    <meta property="og:site_name" content="Svenskt Korsord">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/site.min.css">
+
+    <style>
+        .leaderboard-page { max-width: 700px; margin: 0 auto; }
+        .leaderboard-page .leaderboard-section { margin-bottom: 32px; }
+        .size-tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+        .size-tabs button {
+            padding: 8px 16px; border-radius: 8px; border: 2px solid var(--border-color, #e2e8f0);
+            background: var(--surface-bg, #f9fafb); color: var(--text-secondary, #475569);
+            cursor: pointer; font-weight: 600; font-size: 0.95rem; transition: all 0.2s;
+        }
+        .size-tabs button:hover { border-color: var(--accent-color, #4f46e5); }
+        .size-tabs button.active {
+            background: var(--accent-color, #4f46e5); color: #fff;
+            border-color: var(--accent-color, #4f46e5);
+        }
+        .leaderboard-loading { text-align: center; padding: 24px; color: var(--text-muted, #64748b); }
+        .leaderboard-empty-msg { text-align: center; padding: 24px; color: var(--text-muted, #64748b); font-style: italic; }
+        .history-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        .history-table th, .history-table td {
+            padding: 10px 12px; text-align: left;
+            border-bottom: 1px solid var(--border-color, #e2e8f0);
+            color: var(--text-secondary, #475569);
+        }
+        .history-table th { font-weight: 600; font-size: 0.9rem; }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="puzzle-nav">
+                <a href="/" class="nav-back">← Startsida</a>
+                <a href="/calendar.html" class="nav-link">📅 Arkiv</a>
+                <span class="auth-btn-container"></span>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Byt tema" title="Byt ljust/mörkt tema">🌙</button>
+            </nav>
+            <h1>🏆 Topplista</h1>
+            <p>Se vilka som har löst dagens korsord snabbast</p>
+        </header>
+
+        <main>
+        <div class="leaderboard-page site-container">
+            <div class="size-tabs" id="size-tabs">
+                <button class="size-btn" data-size="10x10">10×10</button>
+                <button class="size-btn" data-size="15x15">15×15</button>
+                <button class="size-btn active" data-size="17x17">17×17</button>
+            </div>
+
+            <section class="leaderboard-section" id="today-section">
+                <h2>Dagens topplista</h2>
+                <div id="today-loading" class="leaderboard-loading">Laddar topplista...</div>
+                <ul class="leaderboard-list" id="today-list" role="list"></ul>
+                <div id="today-date" class="leaderboard-date"></div>
+            </section>
+
+            <section class="leaderboard-section" id="history-section">
+                <h2>Senaste dagarna</h2>
+                <div id="history-loading" class="leaderboard-loading">Laddar historik...</div>
+                <div id="history-content"></div>
+            </section>
+
+            </div>
+
+        </main>
+
+        <footer class="site-footer" role="contentinfo">
+            <nav>
+                <a href="/">Startsida</a>
+                <a href="/calendar.html">Arkiv</a>
+                <a href="/leaderboard.html">Topplista</a>
+                <a href="/profile.html">Min profil</a>
+                <a href="/about.html">Om oss</a>
+                <a href="/contact.html">Kontakt</a>
+                <a href="/privacy-policy.html">Integritetspolicy</a>
+            </nav>
+            &copy; 2025&ndash;2026 Svenskt Korsord. Alla rättigheter förbehållna.
+        </footer>
+    </div>
+
+    <script>
+    (function(){
+        var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
+        document.documentElement.setAttribute('data-theme',t);
+        var b=document.getElementById('theme-toggle');
+        if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
+    })();
+    </script>
+    <script>
+    (function(){
+        function initAuth(data){
+            document.querySelectorAll('.auth-btn-container').forEach(function(c){
+                c.innerHTML='';
+                if(data && data.authenticated){
+                    var a=document.createElement('a');
+                    a.href='/profile.html';
+                    a.className='auth-user-name';
+                    a.textContent=data.name||'Inloggad';
+                    a.title='Min profil: '+a.textContent;
+                    var btn=document.createElement('button');
+                    btn.className='auth-btn auth-btn-logout';
+                    btn.textContent='Logga ut';
+                    btn.addEventListener('click',function(){fetch('/api/auth/logout',{method:'POST',credentials:'same-origin'}).then(function(){location.reload()})});
+                    c.appendChild(a);c.appendChild(btn);
+                }else{
+                    var ret=encodeURIComponent(location.pathname+location.search);
+                    var loginBtn=document.createElement('button');
+                    loginBtn.className='auth-btn';
+                    loginBtn.textContent='Logga in';
+                    var menu=document.createElement('div');
+                    menu.className='auth-login-menu';
+                    menu.innerHTML='<a href="/api/auth/login/google?returnUrl='+ret+'">Logga in med Google</a><a href="/api/auth/login/microsoft?returnUrl='+ret+'">Logga in med Microsoft</a>';
+                    loginBtn.addEventListener('click',function(){menu.classList.toggle('auth-menu-open')});
+                    c.appendChild(loginBtn);c.appendChild(menu);
+                }
+            });
+        }
+        fetch('/api/auth/me',{credentials:'same-origin'}).then(function(r){return r.json()}).then(initAuth).catch(function(){initAuth(null)});
+    })();
+    </script>
+    <script>
+    (function(){
+        var selectedSize = '17x17';
+        var leaderboardData = null;
+        var historyData = null;
+        var sizeToHash = {}; // { "10x10": "abc", "17x17": "def" }
+
+        // Size tab switching
+        document.getElementById('size-tabs').addEventListener('click', function(e) {
+            var btn = e.target.closest('[data-size]');
+            if (!btn) return;
+            selectedSize = btn.dataset.size;
+            document.querySelectorAll('#size-tabs .size-btn').forEach(function(b){ b.classList.remove('active'); });
+            btn.classList.add('active');
+            renderToday();
+            renderHistory();
+        });
+
+        function formatTime(s) {
+            var m = Math.floor(s / 60);
+            var sec = s % 60;
+            return m + ':' + (sec < 10 ? '0' : '') + sec;
+        }
+
+        function escapeHtml(text) {
+            var div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function formatHintBadge(h, w) {
+            h = h || 0; w = w || 0;
+            if (h === 0 && w === 0) return '';
+            var parts = [];
+            if (h > 0) parts.push(h + ' bokstav');
+            if (w > 0) parts.push(w + ' ord');
+            return ' <span class="hint-badge" title="Ledtrådar: ' + parts.join(', ') + '">💡' + (h + w) + '</span>';
+        }
+
+        function renderLeaderboardList(entries, listEl, dateEl, dateText) {
+            if (!entries || entries.length === 0) {
+                listEl.innerHTML = '<li class="leaderboard-empty">Ingen har klarat korsordet än...</li>';
+                if (dateEl) dateEl.textContent = dateText || '';
+                return;
+            }
+            var medals = ['🥇', '🥈', '🥉'];
+            listEl.innerHTML = entries.slice(0, 10).map(function(entry, index) {
+                var rankDisplay = index < 3 ? medals[index] : (index + 1) + '.';
+                var rankClass = index < 3 ? 'rank-' + (index + 1) : '';
+                var hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+                var verifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '<span class="guest-badge" title="Gäst">👤</span>';
+                return '<li class="leaderboard-item ' + rankClass + '">' +
+                    '<span class="leaderboard-rank">' + rankDisplay + '</span>' +
+                    '<span class="leaderboard-name">' + escapeHtml(entry.name) + verifiedBadge + hintBadge + '</span>' +
+                    '<span class="leaderboard-time">' + formatTime(entry.time) + '</span>' +
+                    '</li>';
+            }).join('');
+            if (dateEl) dateEl.textContent = dateText || '';
+        }
+
+        // Render today's leaderboard filtered by selected size using hash mapping
+        function renderToday() {
+            var list = document.getElementById('today-list');
+            var loading = document.getElementById('today-loading');
+            var dateEl = document.getElementById('today-date');
+
+            if (!leaderboardData) { loading.style.display = ''; list.innerHTML = ''; return; }
+            loading.style.display = 'none';
+
+            var scores = leaderboardData.scores || {};
+            var today = new Date().toISOString().split('T')[0];
+            var hash = sizeToHash[selectedSize];
+
+            // If we have a hash for the selected size, show only that board
+            if (hash) {
+                var key = today + '-' + hash;
+                var entries = (scores[key] || []).slice().sort(function(a, b) { return a.time - b.time; });
+                renderLeaderboardList(entries, list, dateEl, 'Korsord: ' + today + ' — ' + selectedSize);
+                return;
+            }
+
+            // Fallback: show all today's entries (no hash mapping available)
+            var allEntries = [];
+            Object.keys(scores).forEach(function(k) {
+                if (k.startsWith(today + '-')) {
+                    (scores[k] || []).forEach(function(e) { allEntries.push(e); });
+                }
+            });
+            allEntries.sort(function(a, b) { return a.time - b.time; });
+            renderLeaderboardList(allEntries, list, dateEl, 'Korsord: ' + today);
+        }
+
+        // Render recent history
+        // API returns { "2025-07-10": [record, ...], "2025-07-09": [...] }
+        function renderHistory() {
+            var container = document.getElementById('history-content');
+            var loading = document.getElementById('history-loading');
+
+            if (!historyData) { loading.style.display = ''; container.innerHTML = ''; return; }
+            loading.style.display = 'none';
+
+            var dates = Object.keys(historyData);
+            if (!dates.length) {
+                container.innerHTML = '<p class="leaderboard-empty-msg">Ingen historik tillgänglig ännu.</p>';
+                return;
+            }
+
+            // Build filtered per-date lists
+            var byDate = {};
+            dates.forEach(function(date) {
+                var entries = (historyData[date] || []).filter(function(e) {
+                    return !e.puzzleSize || e.puzzleSize === selectedSize;
+                });
+                if (entries.length) byDate[date] = entries;
+            });
+
+            var sortedDates = Object.keys(byDate).sort().reverse().slice(0, 7);
+
+            if (!sortedDates.length) {
+                container.innerHTML = '<p class="leaderboard-empty-msg">Ingen historik för denna storlek.</p>';
+                return;
+            }
+
+            var html = '<table class="history-table"><thead><tr><th>Datum</th><th>Namn</th><th>Tid</th></tr></thead><tbody>';
+
+            sortedDates.forEach(function(date) {
+                var entries = byDate[date].sort(function(a, b) { return a.time - b.time; }).slice(0, 3);
+                var medals = ['🥇', '🥈', '🥉'];
+                entries.forEach(function(entry, i) {
+                    var histBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '<span class="guest-badge" title="Gäst">👤</span>';
+                    html += '<tr><td>' + (i === 0 ? escapeHtml(date) : '') + '</td>' +
+                        '<td>' + medals[i] + ' ' + escapeHtml(entry.name) + histBadge + '</td>' +
+                        '<td>' + formatTime(entry.time) + '</td></tr>';
+                });
+            });
+
+            html += '</tbody></table>';
+            container.innerHTML = html;
+        }
+
+        // Load data
+        fetch('/api/puzzle/hashes', { signal: AbortSignal.timeout(10000) })
+            .then(function(r) { return r.json(); })
+            .then(function(data) { sizeToHash = data || {}; renderToday(); })
+            .catch(function() { /* hash mapping unavailable; fallback renders all */ });
+
+        fetch('/api/leaderboard', { signal: AbortSignal.timeout(10000) })
+            .then(function(r) { return r.json(); })
+            .then(function(data) { leaderboardData = data; renderToday(); })
+            .catch(function() { document.getElementById('today-loading').textContent = 'Kunde inte ladda topplistan.'; });
+
+        fetch('/api/leaderboard/history?days=7', { signal: AbortSignal.timeout(10000) })
+            .then(function(r) { return r.json(); })
+            .then(function(data) { historyData = data; renderHistory(); })
+            .catch(function() { document.getElementById('history-loading').textContent = 'Kunde inte ladda historik.'; });
+    })();
+    </script>
+    <script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
+    <script src="/cookie-consent.js"></script>
+</body>
+</html>

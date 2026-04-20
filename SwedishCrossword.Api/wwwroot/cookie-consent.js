@@ -34,7 +34,7 @@
         banner.innerHTML =
             '<div class="cookie-consent-inner">' +
                 '<p>Vi använder cookies för att förbättra din upplevelse. Nödvändiga cookies krävs för att sidan ska fungera. ' +
-                'Läs mer i vår <a href="/integritetspolicy.html">integritetspolicy</a>.</p>' +
+                'Läs mer i vår <a href="/privacy-policy.html">integritetspolicy</a>.</p>' +
                 '<div class="cookie-consent-buttons">' +
                     '<button id="cookie-accept-all" class="cookie-btn cookie-btn-accept">Acceptera alla</button>' +
                     '<button id="cookie-reject" class="cookie-btn cookie-btn-reject">Endast nödvändiga</button>' +

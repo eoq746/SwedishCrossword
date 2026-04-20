@@ -748,6 +748,30 @@ public class LeaderboardStoreTests
         await Assert.That(success).IsFalse();
     }
 
+    [Test]
+    public async Task SendFriendRequest_MutualPending_AutoAccepts()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        // A sends to B
+        var (sent, _) = await _store.SendFriendRequestAsync("user1", "user2");
+        await Assert.That(sent).IsTrue();
+
+        // B sends to A — should auto-accept the existing request
+        var (mutual, _) = await _store.SendFriendRequestAsync("user2", "user1");
+        await Assert.That(mutual).IsTrue();
+
+        // They should now be friends
+        var friends = await _store.GetFriendsAsync("user1");
+        await Assert.That(friends.Count).IsEqualTo(1);
+        await Assert.That(friends[0].Alias).IsEqualTo("Bob");
+
+        // No pending requests remain
+        var pending = await _store.GetPendingRequestsAsync("user1");
+        await Assert.That(pending.Count).IsEqualTo(0);
+    }
+
     // -----------------------------------------------------------------------
     // Friends — AcceptFriendRequestAsync
     // -----------------------------------------------------------------------

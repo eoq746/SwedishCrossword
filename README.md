@@ -6,22 +6,22 @@ A Swedish crossword puzzle generator
 
 ## Features
 
-- **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with configurable fill targets (45% for small grids, 65–70% for medium/hard)
+- **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with configurable fill targets (45% for small grids, 65ï¿½70% for medium/hard)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
 - **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
-- **Multiple Puzzle Sizes**: Small (9×9), Mobile (10×10), Easy (11×11), Medium (15×15), and Hard (17×17) presets — the web player offers 10×10, 15×15, and 17×17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
-- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10×10, 15×15, 17×17) per day
+- **Multiple Puzzle Sizes**: Small (9ï¿½9), Mobile (10ï¿½10), Easy (11ï¿½11), Medium (15ï¿½15), and Hard (17ï¿½17) presets ï¿½ the web player offers 10ï¿½10, 15ï¿½15, and 17ï¿½17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
+- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10ï¿½10, 15ï¿½15, 17ï¿½17) per day
 - **API-First Architecture**: Output caching, Brotli + Gzip response compression, per-IP rate limiting, security headers, CORS, and OpenAPI documentation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer with `localStorage` persistence
   - Hint system: reveal a single letter or an entire word via server-side validation (tracked and penalized on leaderboard)
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
-  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a CSS custom-property design-token system (90+ design tokens)
+  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence ï¿½ consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
-  - Shared leaderboard with medal podium for top 3, filtered by the current puzzle size
+  - Dedicated leaderboard page (`leaderboard.html`) with medal podium for top 3, filtered by the current puzzle size
   - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
-  - Player statistics per size: total solved, current/best streak, best time, average time — with automatic migration from legacy flat format
+  - Player statistics per size: total solved, current/best streak, best time, average time ï¿½ with automatic migration from legacy flat format
   - Puzzle archive calendar with size-filter toggle buttons
   - Server-computed difficulty rating displayed per puzzle
   - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
@@ -29,14 +29,14 @@ A Swedish crossword puzzle generator
 - **PWA**: Web app manifest for installability (`site.webmanifest`)
 - **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
 - **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
-- **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim — raw provider IDs are never stored
+- **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim ï¿½ raw provider IDs are never stored
 - **User Profiles**: Signed-in users get a profile page with customisable alias, server-synced solve statistics, and friends management
-- **Friends System**: Send/accept/decline friend requests by alias, view a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
+- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). View a private friends leaderboard on the puzzle page. All friend data uses opaque IDs ï¿½ no raw user identifiers are exposed to the frontend
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Analytics Dashboard**: Admin-only analytics endpoints and a dedicated admin page (`admin.html`) with summary cards (completions today, active players, registered users, hint usage rate, per-size breakdown), daily activity bar chart, and top player rankings with alias resolution and verified (?) / guest (??) badges. Players are grouped by user identity so signed-in and guest plays are correctly separated. Admin access is configuration-driven via `Authorization:AdminUserIds`; the admin link appears on the profile page only when the server confirms admin status
-- **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
+- **Clue Handler Tool**: Standalone CLI for managing the dictionary ï¿½ view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
 ## Project Structure
 
@@ -91,11 +91,13 @@ SwedishCrosswords/
 |   |   |-- calendar.html           # Puzzle archive calendar
 |   |   |-- profile.html            # User profile (alias, stats, friends management)
 |   |   |-- admin.html              # Admin dashboard (analytics summary, daily chart, top players)
-|   |   |-- site.js                 # Game logic (~3,000 lines, 15 §-numbered sections)
-|   |   |-- site.min.css            # Responsive styles with 90+ CSS design tokens
-|   |   |-- om-oss.html             # About page
-|   |   |-- kontakt.html            # Contact page
-|   |   |-- integritetspolicy.html  # Privacy policy
+|   |   |-- leaderboard.html        # Dedicated leaderboard page
+|   |   |-- site.js                 # Game logic (~3,000 lines, 15 Â§-numbered sections)
+|   |   |-- tokens.css              # CSS custom-property design tokens (90+ tokens)
+|   |   |-- site.min.css            # Responsive styles consuming design tokens
+|   |   |-- about.html             # About page
+|   |   |-- contact.html            # Contact page
+|   |   |-- privacy-policy.html  # Privacy policy
 |   |   |-- robots.txt              # Search engine crawl rules
 |   |   |-- sitemap.xml             # Sitemap for search engines
 |   |   +-- site.webmanifest        # PWA manifest
@@ -178,6 +180,7 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | POST | `/api/puzzle/check` | Validate answers against server-stored solutions (token-authenticated) |
 | POST | `/api/puzzle/hint` | Reveal letter(s) from server-stored solutions (token-authenticated) |
 | GET | `/api/puzzle/dates` | List available puzzle dates with per-date size arrays (`[{ date, sizes[] }]`) |
+| GET | `/api/puzzle/hashes` | Get puzzle content hashes per size for a date (`?date=yyyy-MM-dd`, defaults to today) |
 | GET | `/api/stats` | Dictionary statistics, available difficulties, and `availableSizes` |
 | POST | `/api/scores` | Submit a score (token-validated, rate-limited) |
 | GET | `/api/leaderboard` | Current leaderboard |
@@ -191,7 +194,7 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | POST | `/api/auth/logout` | Sign out and clear auth cookie |
 | GET | `/api/auth/my-stats` | Server-synced solve statistics for signed-in user |
 | GET | `/api/auth/alias` | Get current alias |
-| PUT | `/api/auth/alias` | Set or update alias (2–20 chars, unique) |
+| PUT | `/api/auth/alias` | Set or update alias (2ï¿½20 chars, unique) |
 | GET | `/api/friends` | List accepted friends |
 | GET | `/api/friends/requests` | Pending friend requests (incoming + outgoing) |
 | POST | `/api/friends/request` | Send friend request by alias |
@@ -224,7 +227,7 @@ The `infra/main.bicep` template provisions everything needed:
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull and Azure SQL authentication (Entra-only, no passwords) |
 
-**One-time setup (run manually with your own Azure CLI identity — creates the role assignment that CI/CD skips):**
+**One-time setup (run manually with your own Azure CLI identity ï¿½ creates the role assignment that CI/CD skips):**
 
 ```bash
 # 1. Create a resource group
@@ -233,7 +236,7 @@ az group create --name rg-svensktkorsord --location swedencentral
 # 2. Generate an HMAC secret for submission token signing
 SECRET=$(openssl rand -base64 64)
 
-# 3. Deploy infrastructure (uses a placeholder image — no real image needed yet)
+# 3. Deploy infrastructure (uses a placeholder image ï¿½ no real image needed yet)
 #    This also creates the ACR pull role assignment (requires Owner / User Access Administrator)
 az deployment group create \
   --resource-group rg-svensktkorsord \
@@ -252,11 +255,11 @@ az deployment group create \
 ```
 
 **CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires the following repository secrets:
-- `AZURE_CLIENT_ID` — App registration client ID (OIDC)
-- `AZURE_TENANT_ID` — Entra ID tenant
-- `AZURE_SUBSCRIPTION_ID` — Target subscription
-- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
-- `ADMIN_USER_IDS` — Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
+- `AZURE_CLIENT_ID` ï¿½ App registration client ID (OIDC)
+- `AZURE_TENANT_ID` ï¿½ Entra ID tenant
+- `AZURE_SUBSCRIPTION_ID` ï¿½ Target subscription
+- `SUBMISSION_TOKEN_SECRET` ï¿½ HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
+- `ADMIN_USER_IDS` ï¿½ Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
 
 ### Running the CLI Generator
 
@@ -266,9 +269,9 @@ dotnet run --project SwedishCrossword
 
 ### Menu Options
 
-1. **Generate Easy Crossword (11×11)** - Quick puzzles
-2. **Generate Medium Crossword (15×15)** - Standard puzzles
-3. **Generate Hard Crossword (19×19)** - Challenging puzzles with vinkelord (uses `Hard` preset: 17×17 grid)
+1. **Generate Easy Crossword (11ï¿½11)** - Quick puzzles
+2. **Generate Medium Crossword (15ï¿½15)** - Standard puzzles
+3. **Generate Hard Crossword (19ï¿½19)** - Challenging puzzles with vinkelord (uses `Hard` preset: 17ï¿½17 grid)
 4. **Show Dictionary Statistics** - Word count, categories, lengths
 5. **Import from Lexin** - Download and parse Lexin dictionary
 6. **Import Synonym Pairs** - Parse Folkets synonymlexikon
@@ -286,10 +289,10 @@ dotnet run --project ClueHandler
 
 Interactive menu:
 
-1. **Visa ordlistestatistik** — Word count and category breakdown
-2. **Lägg till nya ord** — Add individual words with custom clues
-3. **Redigera ledtrådar** — Edit clues for existing dictionary entries
-4. **Hämta ledtrådar från Wiktionary** — Auto-populate missing clues from the Swedish Wiktionary dump
+1. **Visa ordlistestatistik** ï¿½ Word count and category breakdown
+2. **Lï¿½gg till nya ord** ï¿½ Add individual words with custom clues
+3. **Redigera ledtrï¿½dar** ï¿½ Edit clues for existing dictionary entries
+4. **Hï¿½mta ledtrï¿½dar frï¿½n Wiktionary** ï¿½ Auto-populate missing clues from the Swedish Wiktionary dump
 
 Headless commands:
 
@@ -312,7 +315,7 @@ dotnet test SwedishCrossword.Api.Tests
 The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 375 tests:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
-- Swedish character handling tests (Å, Ä, Ö)
+- Swedish character handling tests (ï¿½, ï¿½, ï¿½)
 - Dictionary loading and validation tests
 - Puzzle validation and bonus word tests
 - Vinkelord (bent word) placement tests
@@ -330,10 +333,10 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 ### Generation Pipeline
 The generator is split into specialized components orchestrated by `CrosswordGenerator`:
 
-1. **WordAnalyzer** — Pre-computes connectivity scores for candidate words and caches results to disk for fast subsequent runs.
-2. **WordPlacer** — Selects anchor words for the initial scaffold and runs an adaptive placement loop with batched word placement.
-3. **GapFiller** — Scans rows and columns for patterns of existing letters with gaps, then finds dictionary words that match those patterns.
-4. **VinkelordPlacer** — Detects L-shaped opportunities on the grid and matches them against dictionary words to place bent words (vinkelord).
+1. **WordAnalyzer** ï¿½ Pre-computes connectivity scores for candidate words and caches results to disk for fast subsequent runs.
+2. **WordPlacer** ï¿½ Selects anchor words for the initial scaffold and runs an adaptive placement loop with batched word placement.
+3. **GapFiller** ï¿½ Scans rows and columns for patterns of existing letters with gaps, then finds dictionary words that match those patterns.
+4. **VinkelordPlacer** ï¿½ Detects L-shaped opportunities on the grid and matches them against dictionary words to place bent words (vinkelord).
 
 ### Word Selection
 - Prioritizes words with common Swedish letters (A, E, R, S, T, N) and high vowel counts
@@ -354,14 +357,14 @@ The generator is split into specialized components orchestrated by `CrosswordGen
 - Rollback-on-failure: each placement is tested against a targeted cell backup and reverted if it creates invalid words
 
 ### Performance Optimizations
-- **Targeted backup/restore**: Only cells along the placed word's path are saved and restored on rollback, reducing per-attempt cost from O(W×H) to O(word length)
-- **Suppressed renumbering**: Clue renumbering is deferred until after generation completes, eliminating an O(W×H) pass on every placement attempt
+- **Targeted backup/restore**: Only cells along the placed word's path are saved and restored on rollback, reducing per-attempt cost from O(Wï¿½H) to O(word length)
+- **Suppressed renumbering**: Clue renumbering is deferred until after generation completes, eliminating an O(Wï¿½H) pass on every placement attempt
 - **Cached grid statistics**: `GetStats()` results are cached and invalidated only when the grid changes
 - **Cached isolation checks**: Word-endpoint positions are cached in HashSets for O(1) lookup instead of iterating all words per cell
 - **O(1) dictionary clue lookup**: Accidental-word validation uses direct dictionary key lookup instead of materializing and scanning the full word list
 
 ### Quality Metrics
-- Target fill percentage: 45%+ (small grids), 65–70% (medium/hard)
+- Target fill percentage: 45%+ (small grids), 65ï¿½70% (medium/hard)
 - Minimum word count based on grid size
 - Proper word isolation (no unintended adjacencies)
 
@@ -374,7 +377,7 @@ The main dictionary is sourced from [Lexin](https://spraakbanken.gu.se/resurser/
 Additional synonym pairs from [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), providing word-to-synonym clues.
 
 ### Kelly Word List (Frequency)
-Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
+Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1ï¿½C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
 
 ### DSSO (Den Stora Svenska Ordlistan)
 A comprehensive Swedish word list from [DSSO](https://dsso.se/) (version 1.51). The source data file is parsed and exported to `dsso-words.json`. Clues are sourced from DSSO definitions, supplemented by Wiktionary lookups and compound/pattern-based generators. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
@@ -386,23 +389,23 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - ~100,000+ words across all five sources
 - Categories: Substantiv, Verb, Adjektiv, Adverb, etc.
 - Difficulty levels: Easy, Medium, Hard
-- Full support for Swedish characters (Å, Ä, Ö)
+- Full support for Swedish characters (ï¿½, ï¿½, ï¿½)
 
 ## Web Architecture
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) — Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases, friend requests, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
+- **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) ï¿½ Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases (with in-memory cache), friend requests with mutual auto-accept, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
-- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
+- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10ï¿½10, 15ï¿½15, 17ï¿½17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
 - **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime. The signing secret is configured via `SubmissionToken:Secret` (env: `SubmissionToken__Secret`); if not set, an ephemeral key is generated at startup (logged as a warning)
 - **Server-Side Answer Validation**: Puzzle JSON is stripped of answers before serving to clients; `POST /api/puzzle/check` validates submitted cell values and `POST /api/puzzle/hint` reveals requested letters, both authenticated via submission tokens
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
 - **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes, puzzle interactions, and friend operations (30 req/min each)
-- **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` — raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
-- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction — no raw user identifiers are exposed to clients.
+- **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` ï¿½ raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
+- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction ï¿½ no raw user identifiers are exposed to clients.
 - **Security Headers**: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production; Kestrel `Server` header suppressed; request body size capped at 100 KB
 - **Forwarded Headers**: Configured for reverse proxy environments (`X-Forwarded-For`, `X-Forwarded-Proto`)
 - **CORS**: Configurable via `Cors:AllowedOrigins` in appsettings
@@ -410,8 +413,8 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **PWA**: Web app manifest (`site.webmanifest`) for installability; no service worker currently implemented
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
-- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) — the profile page conditionally renders the admin link only when the server confirms admin access
-- **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
+- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) ï¿½ the profile page conditionally renders the admin link only when the server confirms admin access
+- **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `ï¿½`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License

@@ -1,0 +1,115 @@
+/*
+ * Shared design tokens for Svenskt Korsord.
+ * All pages (game and info) should import this file for consistent theming.
+ * Game-specific tokens remain in site.min.css.
+ */
+
+:root {
+  /* Brand */
+  --brand-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --accent-color: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-light: #e0e7ff;
+
+  /* Surfaces */
+  --bg-body: var(--brand-gradient);
+  --bg-card: #ffffff;
+  --bg-card-alt: #f9fafb;
+  --bg-overlay: rgba(0, 0, 0, .45);
+  --shadow: rgba(0, 0, 0, 0.2);
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-on-brand: #ffffff;
+
+  /* Borders */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+
+  /* Feedback */
+  --success-bg: #dcfce7;
+  --success-border: #16a34a;
+  --info-bg: #e0e7ff;
+  --warn-bg: #fef3c7;
+  --warn-border: #f59e0b;
+
+  /* Buttons */
+  --btn-secondary-bg: #e2e8f0;
+  --btn-secondary-text: #334155;
+
+  /* Aliases used by info/standalone pages */
+  --page-bg: var(--brand-gradient);
+  --card-bg: var(--bg-card);
+  --surface-bg: var(--bg-card-alt);
+  --text-heading: var(--text-primary);
+  --text-body: var(--text-secondary);
+  --accent: var(--accent-color);
+  --border: var(--border-light);
+}
+
+[data-theme="dark"] {
+  /* Brand */
+  --brand-gradient: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  --accent-color: #818cf8;
+  --accent-hover: #a5b4fc;
+  --accent-light: #312e81;
+
+  /* Surfaces */
+  --bg-body: var(--brand-gradient);
+  --bg-card: #1e1e2e;
+  --bg-card-alt: #262637;
+  --bg-overlay: rgba(0, 0, 0, .65);
+  --shadow: rgba(0, 0, 0, 0.5);
+
+  /* Text */
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #94a3b8;
+  --text-on-brand: #e2e8f0;
+
+  /* Borders */
+  --border-light: #334155;
+  --border-medium: #475569;
+
+  /* Feedback */
+  --success-bg: rgba(22, 163, 74, 0.1);
+  --success-border: #16a34a;
+  --info-bg: rgba(129, 140, 248, 0.1);
+  --warn-bg: rgba(245, 158, 11, 0.12);
+  --warn-border: #d97706;
+
+  /* Buttons */
+  --btn-secondary-bg: #334155;
+  --btn-secondary-text: #e2e8f0;
+
+  /* Aliases */
+  --page-bg: var(--brand-gradient);
+  --card-bg: var(--bg-card);
+  --surface-bg: var(--bg-card-alt);
+  --text-heading: var(--text-primary);
+  --text-body: var(--text-secondary);
+  --accent: var(--accent-color);
+  --border: var(--border-medium);
+}
+
+/* Info-page nav link */
+.page-nav-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.page-nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

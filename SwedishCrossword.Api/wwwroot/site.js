@@ -1068,13 +1068,14 @@ async function renderLeaderboard() {
         const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
         const rankClass = index < 3 ? `rank-${index + 1}` : '';
         const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
-        const verifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '';
+        const verifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '<span class="guest-badge" title="Gäst">👤</span>';
 
         // Build descriptive tooltip for the entire row
         const hL = entry.hintsUsed || 0;
         const hW = entry.wordHintsUsed || 0;
         let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
         if (entry.userId) rowTooltip += '\n✓ Verifierat konto';
+        else rowTooltip += '\n👤 Gäst';
         if (hL > 0 || hW > 0) {
             rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
         } else {
@@ -1122,10 +1123,11 @@ async function renderFriendsLeaderboard() {
             const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
             const rankClass = index < 3 ? `rank-${index + 1}` : '';
             const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
+            const friendVerifiedBadge = '<span class="verified-badge" title="Verifierat konto">✓</span>';
             return `
                 <li class="leaderboard-item ${rankClass}">
                     <span class="leaderboard-rank">${rankDisplay}</span>
-                    <span class="leaderboard-name">${escapeHtml(entry.name)}${hintBadge}</span>
+                    <span class="leaderboard-name">${escapeHtml(entry.name)}${friendVerifiedBadge}${hintBadge}</span>
                     <span class="leaderboard-time">${formatTime(entry.time)}</span>
                 </li>
             `;
@@ -1480,11 +1482,12 @@ async function renderLeaderboardHistory() {
                 const rankDisplay = index < 3 ? medals[index] : `${index + 1}.`;
                 const rankClass = index < 3 ? `rank-${index + 1}` : '';
                 const hintBadge = formatHintBadge(entry.hintsUsed, entry.wordHintsUsed);
-                const historyVerifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '';
+                const historyVerifiedBadge = entry.userId ? '<span class="verified-badge" title="Verifierat konto">✓</span>' : '<span class="guest-badge" title="Gäst">👤</span>';
                 const hL = entry.hintsUsed || 0;
                 const hW = entry.wordHintsUsed || 0;
                 let rowTooltip = `${escapeHtml(entry.name)} — ${formatTime(entry.time)}`;
                 if (entry.userId) rowTooltip += '\n✓ Verifierat konto';
+                else rowTooltip += '\n👤 Gäst';
                 if (hL > 0 || hW > 0) {
                     rowTooltip += `\n💡 Ledtrådar: ${formatHintSummary(hL, hW)}`;
                 } else {
