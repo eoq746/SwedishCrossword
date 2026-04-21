@@ -108,6 +108,100 @@ resource acrPullAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' 
 }
 
 // ---------------------------------------------------------------------------
+// Key Vault (RBAC mode) for application secrets
+// ---------------------------------------------------------------------------
+// Secrets land here once (per rotation) and the Container App reads them via
+// its managed identity. This removes plaintext values from the Container App
+// revision template and gives us audit, soft-delete, and independent rotation.
+var kvName = take('kv-${appName}-${suffix}', 24)
+
+resource vault 'Microsoft.KeyVault/vaults@2024-04-01-preview' = {
+  name: kvName
+  location: location
+  properties: {
+    tenantId: tenant().tenantId
+    sku: { family: 'A', name: 'standard' }
+    enableRbacAuthorization: true
+    enableSoftDelete: true
+    softDeleteRetentionInDays: 90
+    enablePurgeProtection: true
+    publicNetworkAccess: 'Enabled'
+  }
+}
+
+// Key Vault Secrets User: 4633458b-17de-408a-b874-0445c86b69e6
+var kvSecretsUserRoleId = subscriptionResourceId(
+  'Microsoft.Authorization/roleDefinitions',
+  '4633458b-17de-408a-b874-0445c86b69e6'
+)
+
+resource kvSecretsUserAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = if (createRoleAssignment) {
+  name: guid(vault.id, identity.id, kvSecretsUserRoleId)
+  scope: vault
+  properties: {
+    principalId: identity.properties.principalId
+    principalType: 'ServicePrincipal'
+    roleDefinitionId: kvSecretsUserRoleId
+  }
+}
+
+// Bootstrap / rotate secrets only when a value is supplied this run.
+// Once written, the value persists in KV across deployments; the Container App
+// continues to read the latest version even if no value is passed next run.
+resource kvSubmissionToken 'Microsoft.KeyVault/vaults/secrets@2024-04-01-preview' = if (submissionTokenSecret != '') {
+  parent: vault
+  name: 'submissiontoken-secret'
+  properties: {
+    value: submissionTokenSecret
+  }
+}
+
+resource kvGoogleClientId 'Microsoft.KeyVault/vaults/secrets@2024-04-01-preview' = if (googleClientId != '') {
+  parent: vault
+  name: 'google-client-id'
+  properties: {
+    value: googleClientId
+  }
+}
+
+resource kvGoogleClientSecret 'Microsoft.KeyVault/vaults/secrets@2024-04-01-preview' = if (googleClientSecret != '') {
+  parent: vault
+  name: 'google-client-secret'
+  properties: {
+    value: googleClientSecret
+  }
+}
+
+resource kvMicrosoftClientId 'Microsoft.KeyVault/vaults/secrets@2024-04-01-preview' = if (microsoftClientId != '') {
+  parent: vault
+  name: 'microsoft-client-id'
+  properties: {
+    value: microsoftClientId
+  }
+}
+
+resource kvMicrosoftClientSecret 'Microsoft.KeyVault/vaults/secrets@2024-04-01-preview' = if (microsoftClientSecret != '') {
+  parent: vault
+  name: 'microsoft-client-secret'
+  properties: {
+    value: microsoftClientSecret
+  }
+}
+
+// Whether the corresponding KV secret is expected to exist. On a deploy that
+// doesn't supply a value, we still wire ACA to KV so it picks up the previously
+// stored value. Override these flags only if you ever need to deploy ACA before
+// the KV secret has been bootstrapped.
+@description('Wire submission-token secret reference into the Container App. Default: true if a value is supplied this run.')
+param hasSubmissionTokenSecret bool = submissionTokenSecret != ''
+
+@description('Wire Google OAuth secret references into the Container App.')
+param hasGoogleAuth bool = googleClientId != ''
+
+@description('Wire Microsoft OAuth secret references into the Container App.')
+param hasMicrosoftAuth bool = microsoftClientId != ''
+
+// ---------------------------------------------------------------------------
 // Log Analytics Workspace
 // ---------------------------------------------------------------------------
 resource logAnalytics 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
@@ -274,19 +368,36 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         allowInsecure: false
       }
       secrets: union(
-        submissionTokenSecret != '' ? [
+        hasSubmissionTokenSecret ? [
           {
             name: 'submissiontoken-secret'
-            value: submissionTokenSecret
+            keyVaultUrl: '${vault.properties.vaultUri}secrets/submissiontoken-secret'
+            identity: identity.id
           }
         ] : [],
-        googleClientId != '' ? [
-          { name: 'google-client-id', value: googleClientId }
-          { name: 'google-client-secret', value: googleClientSecret }
+        hasGoogleAuth ? [
+          {
+            name: 'google-client-id'
+            keyVaultUrl: '${vault.properties.vaultUri}secrets/google-client-id'
+            identity: identity.id
+          }
+          {
+            name: 'google-client-secret'
+            keyVaultUrl: '${vault.properties.vaultUri}secrets/google-client-secret'
+            identity: identity.id
+          }
         ] : [],
-        microsoftClientId != '' ? [
-          { name: 'microsoft-client-id', value: microsoftClientId }
-          { name: 'microsoft-client-secret', value: microsoftClientSecret }
+        hasMicrosoftAuth ? [
+          {
+            name: 'microsoft-client-id'
+            keyVaultUrl: '${vault.properties.vaultUri}secrets/microsoft-client-id'
+            identity: identity.id
+          }
+          {
+            name: 'microsoft-client-secret'
+            keyVaultUrl: '${vault.properties.vaultUri}secrets/microsoft-client-secret'
+            identity: identity.id
+          }
         ] : []
       )
       registries: [
@@ -315,14 +426,14 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
             sqlConnectionString != '' ? [
               { name: 'ConnectionStrings__Leaderboard', value: sqlConnectionString }
             ] : [],
-            submissionTokenSecret != '' ? [
+            hasSubmissionTokenSecret ? [
               { name: 'SubmissionToken__Secret', secretRef: 'submissiontoken-secret' }
             ] : [],
-            googleClientId != '' ? [
+            hasGoogleAuth ? [
               { name: 'Authentication__Google__ClientId', secretRef: 'google-client-id' }
               { name: 'Authentication__Google__ClientSecret', secretRef: 'google-client-secret' }
             ] : [],
-            microsoftClientId != '' ? [
+            hasMicrosoftAuth ? [
               { name: 'Authentication__Microsoft__ClientId', secretRef: 'microsoft-client-id' }
               { name: 'Authentication__Microsoft__ClientSecret', secretRef: 'microsoft-client-secret' }
             ] : [],
@@ -416,6 +527,12 @@ output customDomainVerificationId string = containerApp.properties.customDomainV
 
 @description('Container Apps Environment name')
 output environmentName string = containerEnv.name
+
+@description('Key Vault name (where app secrets live)')
+output keyVaultName string = vault.name
+
+@description('Key Vault URI')
+output keyVaultUri string = vault.properties.vaultUri
 
 @description('Resource group name (for CI/CD reference)')
 output resourceGroup string = az.resourceGroup().name
