@@ -9,7 +9,7 @@ internal static class FriendsEndpoints
         var group = app.MapGroup("/api/friends").RequireAuthorization().RequireRateLimiting("friends");
 
         // List accepted friends
-        group.MapGet("/", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapGet("/", async (ClaimsPrincipal user, IFriendStore store) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -20,7 +20,7 @@ internal static class FriendsEndpoints
         });
 
         // List pending friend requests (incoming + outgoing)
-        group.MapGet("/requests", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapGet("/requests", async (ClaimsPrincipal user, IFriendStore store) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -31,7 +31,7 @@ internal static class FriendsEndpoints
         });
 
         // Send friend request by alias
-        group.MapPost("/request", async (FriendRequestDto body, ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapPost("/request", async (FriendRequestDto body, ClaimsPrincipal user, IFriendStore friendStore, IUserProfileStore profileStore) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -42,15 +42,15 @@ internal static class FriendsEndpoints
                 return Results.BadRequest(new ErrorResponse("Ogiltigt alias"));
 
             // Sender must have an alias set
-            var senderAlias = await store.GetAliasAsync(userId);
+            var senderAlias = await profileStore.GetAliasAsync(userId);
             if (string.IsNullOrWhiteSpace(senderAlias))
                 return Results.BadRequest(new ErrorResponse("Du måste sätta ett alias innan du kan lägga till vänner"));
 
-            var targetUserId = await store.GetUserIdByAliasAsync(alias);
+            var targetUserId = await profileStore.GetUserIdByAliasAsync(alias);
             if (targetUserId is null)
                 return Results.NotFound(new ErrorResponse("Ingen användare med det aliaset hittades"));
 
-            var (success, error) = await store.SendFriendRequestAsync(userId, targetUserId);
+            var (success, error) = await friendStore.SendFriendRequestAsync(userId, targetUserId);
             if (!success)
                 return Results.Conflict(new ErrorResponse(error));
 
@@ -58,7 +58,7 @@ internal static class FriendsEndpoints
         });
 
         // Accept a friend request
-        group.MapPost("/accept/{requestId}", async (string requestId, ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapPost("/accept/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -71,7 +71,7 @@ internal static class FriendsEndpoints
         });
 
         // Decline a friend request
-        group.MapPost("/decline/{requestId}", async (string requestId, ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapPost("/decline/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -84,7 +84,7 @@ internal static class FriendsEndpoints
         });
 
         // Remove a friend
-        group.MapDelete("/{friendshipId}", async (string friendshipId, ClaimsPrincipal user, LeaderboardStore store) =>
+        group.MapDelete("/{friendshipId}", async (string friendshipId, ClaimsPrincipal user, IFriendStore store) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)
@@ -97,7 +97,7 @@ internal static class FriendsEndpoints
         });
 
         // Friends leaderboard for a specific date, optionally filtered by puzzle hash
-        group.MapGet("/leaderboard", async (string? date, string? puzzleHash, ClaimsPrincipal user, LeaderboardStore store, TimeProvider timeProvider) =>
+        group.MapGet("/leaderboard", async (string? date, string? puzzleHash, ClaimsPrincipal user, IFriendStore store, TimeProvider timeProvider) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             if (userId is null)

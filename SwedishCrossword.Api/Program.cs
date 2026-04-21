@@ -23,6 +23,14 @@ builder.Services.AddSingleton<ClueGenerator>();
 builder.Services.AddSingleton<CrosswordGenerator>();
 builder.Services.AddSingleton<PrintService>();
 builder.Services.AddSingleton<LeaderboardStore>();
+// Expose LeaderboardStore through narrow interfaces so consumers depend only on the
+// surface area they actually use. Backed by the same singleton instance for now;
+// implementations can be split into separate classes later without touching callers.
+builder.Services.AddSingleton<IScoreStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IHistoryStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IUserProfileStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IFriendStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IAnalyticsStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<SubmissionTokenService>();
 builder.Services.AddSingleton<PuzzleCache>();
 builder.Services.AddSingleton<PuzzleDateIndex>();

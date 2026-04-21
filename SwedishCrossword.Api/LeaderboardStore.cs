@@ -13,7 +13,7 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed partial class LeaderboardStore : IDisposable
+sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IDisposable
 {
     [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
     public static partial Regex DatePattern { get; }

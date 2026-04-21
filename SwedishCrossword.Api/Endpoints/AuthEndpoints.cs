@@ -57,7 +57,7 @@ internal static class AuthEndpoints
             return Results.Challenge(properties, [scheme]);
         });
 
-        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, LeaderboardStore store, IConfiguration config) =>
+        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IConfiguration config) =>
         {
             if (user.Identity?.IsAuthenticated != true)
                 return Results.Json(new { authenticated = false });
@@ -93,7 +93,7 @@ internal static class AuthEndpoints
             return Results.Ok(new { loggedOut = true });
         });
 
-        app.MapGet("/api/auth/my-stats", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        app.MapGet("/api/auth/my-stats", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
             var userId = GetUserId(user);
             if (userId is null)
@@ -103,7 +103,7 @@ internal static class AuthEndpoints
             return Results.Ok(stats);
         }).RequireAuthorization();
 
-        app.MapGet("/api/auth/alias", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        app.MapGet("/api/auth/alias", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
             var userId = GetUserId(user);
             if (userId is null)
@@ -113,7 +113,7 @@ internal static class AuthEndpoints
             return Results.Ok(new { alias });
         }).RequireAuthorization();
 
-        app.MapPut("/api/auth/alias", async (AliasRequest body, ClaimsPrincipal user, LeaderboardStore store) =>
+        app.MapPut("/api/auth/alias", async (AliasRequest body, ClaimsPrincipal user, IUserProfileStore store) =>
         {
             var userId = GetUserId(user);
             if (userId is null)
@@ -133,7 +133,7 @@ internal static class AuthEndpoints
         }).RequireAuthorization();
 
         // GDPR Art. 20: Data portability — export all personal data
-        app.MapGet("/api/auth/my-data", async (ClaimsPrincipal user, LeaderboardStore store) =>
+        app.MapGet("/api/auth/my-data", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
             var userId = GetUserId(user);
             if (userId is null)
@@ -144,7 +144,7 @@ internal static class AuthEndpoints
         }).RequireAuthorization();
 
         // GDPR Art. 17: Right to erasure — delete all personal data
-        app.MapDelete("/api/auth/account", async (ClaimsPrincipal user, LeaderboardStore store, HttpContext ctx) =>
+        app.MapDelete("/api/auth/account", async (ClaimsPrincipal user, IUserProfileStore store, HttpContext ctx) =>
         {
             var userId = GetUserId(user);
             if (userId is null)

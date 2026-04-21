@@ -8,13 +8,13 @@ internal static class LeaderboardEndpoints
     {
         var logger = app.Logger;
 
-        app.MapGet("/api/leaderboard", async (LeaderboardStore store) =>
+        app.MapGet("/api/leaderboard", async (IScoreStore store) =>
         {
             var data = await store.GetCurrentAsync();
             return Results.Content(data, "application/json");
         });
 
-        app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider, ClaimsPrincipal user) =>
+        app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenService tokenService, IScoreStore scoreStore, IHistoryStore historyStore, IUserProfileStore profileStore, TimeProvider timeProvider, ClaimsPrincipal user) =>
         {
             var userId = AuthEndpoints.GetUserId(user);
             var name = LeaderboardStore.SanitiseName(body.Name);
@@ -22,7 +22,7 @@ internal static class LeaderboardEndpoints
             // Authenticated users must use their alias
             if (userId is not null)
             {
-                var alias = await store.GetAliasAsync(userId);
+                var alias = await profileStore.GetAliasAsync(userId);
                 if (!string.IsNullOrWhiteSpace(alias))
                     name = alias;
             }
@@ -49,12 +49,12 @@ internal static class LeaderboardEndpoints
             var leaderboardKey = $"{body.Date}-{body.PuzzleHash}";
             var timestamp = timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
             var entry = new ScoreRecord(name, body.Time, timestamp, body.PuzzleHash, body.HintsUsed, body.WordHintsUsed, userId);
-            var leaderboard = await store.AppendScoreAsync(leaderboardKey, entry);
+            var leaderboard = await scoreStore.AppendScoreAsync(leaderboardKey, entry);
 
             // Also archive to historical leaderboard (best-effort; don't fail the request)
             try
             {
-                await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash, body.PuzzleSize, body.HintsUsed, body.WordHintsUsed, userId));
+                await historyStore.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Time, timestamp, body.PuzzleHash, body.PuzzleSize, body.HintsUsed, body.WordHintsUsed, userId));
             }
             catch (Exception ex)
             {
@@ -66,7 +66,7 @@ internal static class LeaderboardEndpoints
             return Results.Ok(new { success = true, leaderboard });
         }).RequireRateLimiting("leaderboard-write");
 
-        app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, SubmissionTokenService tokenService, LeaderboardStore store, TimeProvider timeProvider, ClaimsPrincipal user) =>
+        app.MapPost("/api/leaderboard/history", async (LeaderboardHistoryRequest body, SubmissionTokenService tokenService, IHistoryStore historyStore, IUserProfileStore profileStore, TimeProvider timeProvider, ClaimsPrincipal user) =>
         {
             if (string.IsNullOrWhiteSpace(body.Token))
                 return Results.Json(new ErrorResponse("Missing submission token"), statusCode: 403);
@@ -95,7 +95,7 @@ internal static class LeaderboardEndpoints
             var historyUserId = AuthEndpoints.GetUserId(user);
             if (historyUserId is not null)
             {
-                var alias = await store.GetAliasAsync(historyUserId);
+                var alias = await profileStore.GetAliasAsync(historyUserId);
                 if (!string.IsNullOrWhiteSpace(alias))
                     name = alias;
             }
@@ -103,11 +103,11 @@ internal static class LeaderboardEndpoints
             if (string.IsNullOrWhiteSpace(name))
                 return Results.BadRequest(new ErrorResponse("Invalid name"));
 
-            await store.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash, body.Entry.PuzzleSize, body.Entry.HintsUsed, body.Entry.WordHintsUsed, historyUserId));
+            await historyStore.AppendHistoryAsync(body.Date, new HistoryRecord(name, body.Entry.Time, body.Entry.Timestamp, body.Entry.PuzzleHash, body.Entry.PuzzleSize, body.Entry.HintsUsed, body.Entry.WordHintsUsed, historyUserId));
             return Results.Ok(new { ok = true });
         }).RequireRateLimiting("leaderboard-write");
 
-        app.MapGet("/api/leaderboard/history", async (int? days, LeaderboardStore store) =>
+        app.MapGet("/api/leaderboard/history", async (int? days, IHistoryStore store) =>
         {
             var d = Math.Clamp(days ?? 30, 1, 90);
             var history = await store.GetHistoryAsync(d);

@@ -6,10 +6,10 @@ namespace SwedishCrossword.Api;
 /// </summary>
 sealed class LeaderboardPruneService : BackgroundService
 {
-    private readonly LeaderboardStore _store;
+    private readonly IScoreStore _store;
     private readonly ILogger<LeaderboardPruneService> _logger;
 
-    public LeaderboardPruneService(LeaderboardStore store, ILogger<LeaderboardPruneService> logger)
+    public LeaderboardPruneService(IScoreStore store, ILogger<LeaderboardPruneService> logger)
     {
         _store = store;
         _logger = logger;
