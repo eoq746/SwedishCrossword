@@ -31,7 +31,7 @@ public class SubmissionTokenServiceTests
     public async Task ValidateAccess_ValidToken_ReturnsValid()
     {
         var service = CreateService();
-        var token = service.GenerateToken("hash123", 42);
+        var token = service.GenerateToken("hash123", 42, "2026-05-20");
 
         var result = service.ValidateAccess(token);
 
@@ -41,7 +41,7 @@ public class SubmissionTokenServiceTests
     [Test]
     public async Task ValidateAccess_TamperedToken_ReturnsInvalid()
     {
-        var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("hash:10:0:badhmac"));
+        var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("hash:10:0:2026-05-20:badhmac"));
 
         var service = CreateService();
         var result = service.ValidateAccess(fakeToken);
@@ -72,7 +72,7 @@ public class SubmissionTokenServiceTests
     public async Task ValidateAccess_DifferentSecret_ReturnsInvalid()
     {
         var service1 = CreateService("secret-a");
-        var token = service1.GenerateToken("hash", 10);
+        var token = service1.GenerateToken("hash", 10, "2026-05-20");
 
         var service2 = CreateService("secret-b");
         var result = service2.ValidateAccess(token);

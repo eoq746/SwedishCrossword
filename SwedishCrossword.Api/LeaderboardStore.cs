@@ -50,6 +50,11 @@ sealed partial class LeaderboardStore : IDisposable
                 sqlBuilder.ConnectRetryCount = 3;
             if (sqlBuilder.ConnectRetryInterval == 10)
                 sqlBuilder.ConnectRetryInterval = 5;
+            // Serverless Azure SQL can take 30–60s to resume from auto-pause.
+            // Ensure the per-connection login timeout is high enough even if the
+            // connection string was supplied without one (default is 15s).
+            if (sqlBuilder.ConnectTimeout < 60)
+                sqlBuilder.ConnectTimeout = 60;
             _connectionString = sqlBuilder.ToString();
             _dataDir = string.Empty;
             _logger.LogInformation("Using Azure SQL for leaderboard storage");
@@ -1076,7 +1081,7 @@ sealed partial class LeaderboardStore : IDisposable
     private void InitialiseSqlServerDatabase()
     {
         using var conn = new SqlConnection(_connectionString);
-        conn.Open();
+        OpenSqlWithRetry(conn);
 
         using var cmd = conn.CreateCommand();
         cmd.CommandText = """
@@ -1336,20 +1341,85 @@ sealed partial class LeaderboardStore : IDisposable
 
     private async Task<DbConnection> OpenConnectionAsync()
     {
-        DbConnection conn = _useSqlServer
-            ? new SqlConnection(_connectionString)
-            : new SqliteConnection(_connectionString);
-
-        await conn.OpenAsync();
-
-        if (!_useSqlServer)
+        if (_useSqlServer)
         {
-            await using var pragma = conn.CreateCommand();
-            pragma.CommandText = "PRAGMA busy_timeout = 5000;";
-            await pragma.ExecuteNonQueryAsync();
+            var sqlConn = new SqlConnection(_connectionString);
+            await OpenSqlWithRetryAsync(sqlConn);
+            return sqlConn;
         }
 
+        var conn = new SqliteConnection(_connectionString);
+        await conn.OpenAsync();
+
+        await using var pragma = conn.CreateCommand();
+        pragma.CommandText = "PRAGMA busy_timeout = 5000;";
+        await pragma.ExecuteNonQueryAsync();
+
         return conn;
+    }
+
+    // Transient SQL error numbers raised while a serverless Azure SQL database
+    // is resuming from auto-pause, plus generic connection/timeout failures.
+    // 40613/42108/42109/49918/49919/49920 = database/login resuming or unavailable.
+    // 40197/40501/10928/10929 = service busy/throttled. 10053/10054/10060 = network drop.
+    // 1205 = deadlock. 4060 = cannot open db (often during resume). 233/64 = pre-login.
+    // -2 = client-side command/login timeout.
+    private static readonly HashSet<int> TransientSqlErrors = new()
+    {
+        -2, 64, 233, 1205, 4060,
+        10053, 10054, 10060, 10928, 10929,
+        40197, 40501, 40613,
+        42108, 42109,
+        49918, 49919, 49920
+    };
+
+    private static bool IsTransient(SqlException ex)
+    {
+        foreach (SqlError err in ex.Errors)
+            if (TransientSqlErrors.Contains(err.Number)) return true;
+        return false;
+    }
+
+    private void OpenSqlWithRetry(SqlConnection conn)
+    {
+        const int maxAttempts = 6;
+        for (var attempt = 1; ; attempt++)
+        {
+            try
+            {
+                conn.Open();
+                return;
+            }
+            catch (SqlException ex) when (attempt < maxAttempts && IsTransient(ex))
+            {
+                var delayMs = Math.Min(15_000, 1000 * (1 << (attempt - 1)));
+                _logger.LogWarning(ex,
+                    "Transient SQL error opening connection (attempt {Attempt}/{Max}, error {Number}). Retrying in {Delay} ms.",
+                    attempt, maxAttempts, ex.Number, delayMs);
+                Thread.Sleep(delayMs);
+            }
+        }
+    }
+
+    private async Task OpenSqlWithRetryAsync(SqlConnection conn)
+    {
+        const int maxAttempts = 6;
+        for (var attempt = 1; ; attempt++)
+        {
+            try
+            {
+                await conn.OpenAsync();
+                return;
+            }
+            catch (SqlException ex) when (attempt < maxAttempts && IsTransient(ex))
+            {
+                var delayMs = Math.Min(15_000, 1000 * (1 << (attempt - 1)));
+                _logger.LogWarning(ex,
+                    "Transient SQL error opening connection (attempt {Attempt}/{Max}, error {Number}). Retrying in {Delay} ms.",
+                    attempt, maxAttempts, ex.Number, delayMs);
+                await Task.Delay(delayMs);
+            }
+        }
     }
 
     private async Task<List<ScoreRecord>> GetScoresForKeyAsync(DbConnection conn, DbTransaction? tx, string leaderboardKey)

@@ -55,10 +55,11 @@ sealed class SubmissionTokenService
                 return puzzleJson;
 
             var (puzzleHash, cellCount) = ComputePuzzleMetadata(obj);
-            obj["submissionToken"] = GenerateToken(puzzleHash, cellCount);
+            var dateString = puzzleDate.ToString("yyyy-MM-dd");
+            obj["submissionToken"] = GenerateToken(puzzleHash, cellCount, dateString);
             obj["puzzleHash"] = puzzleHash;
             obj["cellCount"] = cellCount;
-            obj["puzzleDate"] = puzzleDate.ToString("yyyy-MM-dd");
+            obj["puzzleDate"] = dateString;
 
             StripAnswers(obj);
 
@@ -71,26 +72,29 @@ sealed class SubmissionTokenService
     }
 
     /// <summary>
-    /// Generates an HMAC-signed token embedding the puzzle hash and cell count.
+    /// Generates an HMAC-signed token embedding the puzzle hash, cell count, and
+    /// the puzzle date. Including the date in the signed payload prevents replay
+    /// of a (hash, time) pair against a different daily leaderboard.
     /// </summary>
-    public string GenerateToken(string puzzleHash, int cellCount)
+    public string GenerateToken(string puzzleHash, int cellCount, string puzzleDate)
     {
         var issuedAt = _timeProvider.GetUtcNow().ToUnixTimeSeconds();
-        var payload = $"{puzzleHash}:{cellCount}:{issuedAt}";
+        var payload = $"{puzzleHash}:{cellCount}:{issuedAt}:{puzzleDate}";
         var hmac = ComputeHmac(payload);
         return Convert.ToBase64String(Encoding.UTF8.GetBytes($"{payload}:{hmac}"));
     }
 
     /// <summary>
-    /// Validates a submission token against the expected puzzle hash and solve time.
+    /// Validates a submission token against the expected puzzle hash, expected
+    /// puzzle date, and solve time.
     /// </summary>
-    public TokenValidationResult Validate(string token, string expectedPuzzleHash, double solveTimeSeconds)
+    public TokenValidationResult Validate(string token, string expectedPuzzleHash, string expectedPuzzleDate, double solveTimeSeconds)
     {
         try
         {
             var decoded = Encoding.UTF8.GetString(Convert.FromBase64String(token));
             var parts = decoded.Split(':');
-            if (parts.Length != 4)
+            if (parts.Length != 5)
                 return TokenValidationResult.Fail("Invalid token format");
 
             var puzzleHash = parts[0];
@@ -98,10 +102,11 @@ sealed class SubmissionTokenService
                 return TokenValidationResult.Fail("Invalid cell count in token");
             if (!long.TryParse(parts[2], out var issuedAt))
                 return TokenValidationResult.Fail("Invalid timestamp in token");
-            var providedHmac = parts[3];
+            var puzzleDate = parts[3];
+            var providedHmac = parts[4];
 
             // Verify HMAC
-            var payload = $"{puzzleHash}:{cellCount}:{issuedAt}";
+            var payload = $"{puzzleHash}:{cellCount}:{issuedAt}:{puzzleDate}";
             var expectedHmac = ComputeHmac(payload);
             if (!CryptographicOperations.FixedTimeEquals(
                 Encoding.UTF8.GetBytes(providedHmac),
@@ -111,6 +116,11 @@ sealed class SubmissionTokenService
             // Verify puzzle hash matches
             if (puzzleHash != expectedPuzzleHash)
                 return TokenValidationResult.Fail("Puzzle hash mismatch");
+
+            // Verify puzzle date matches (prevents replaying a token across
+            // different daily leaderboards).
+            if (!string.IsNullOrEmpty(expectedPuzzleDate) && puzzleDate != expectedPuzzleDate)
+                return TokenValidationResult.Fail("Puzzle date mismatch");
 
             // Verify time window
             var issuedAtTime = DateTimeOffset.FromUnixTimeSeconds(issuedAt);
@@ -141,7 +151,7 @@ sealed class SubmissionTokenService
         {
             var decoded = Encoding.UTF8.GetString(Convert.FromBase64String(token));
             var parts = decoded.Split(':');
-            if (parts.Length != 4)
+            if (parts.Length != 5)
                 return TokenValidationResult.Fail("Invalid token format");
 
             var puzzleHash = parts[0];
@@ -149,9 +159,10 @@ sealed class SubmissionTokenService
                 return TokenValidationResult.Fail("Invalid cell count in token");
             if (!long.TryParse(parts[2], out var issuedAt))
                 return TokenValidationResult.Fail("Invalid timestamp in token");
-            var providedHmac = parts[3];
+            var puzzleDate = parts[3];
+            var providedHmac = parts[4];
 
-            var payload = $"{puzzleHash}:{cellCount}:{issuedAt}";
+            var payload = $"{puzzleHash}:{cellCount}:{issuedAt}:{puzzleDate}";
             var expectedHmac = ComputeHmac(payload);
             if (!CryptographicOperations.FixedTimeEquals(
                 Encoding.UTF8.GetBytes(providedHmac),

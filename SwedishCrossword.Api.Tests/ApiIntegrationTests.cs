@@ -273,7 +273,7 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_InvalidDate_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -289,8 +289,8 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_MissingEntry_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+        var token = tokenService.GenerateToken("abc", 10, today);
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -569,8 +569,8 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_DateTooOld_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
         var oldDate = GetSwedishDate().AddDays(-100).ToString("yyyy-MM-dd");
+        var token = tokenService.GenerateToken("abc", 10, oldDate);
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -586,8 +586,8 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_NegativeTime_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+        var token = tokenService.GenerateToken("abc", 10, today);
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -603,8 +603,8 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_EmptyName_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
+        var token = tokenService.GenerateToken("abc", 10, today);
 
         var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
         {
@@ -873,7 +873,7 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_InvalidDate_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
         var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
         {
@@ -889,7 +889,7 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_MissingPuzzleFile_ReturnsNotFound()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2020-01-01");
         Directory.CreateDirectory(_tempPuzzlePath);
 
         var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
@@ -1014,7 +1014,7 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_InvalidDate_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
         var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
         {
@@ -1030,7 +1030,7 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_EmptyCells_ReturnsBadRequest()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
         var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
         {
@@ -1046,7 +1046,7 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_MissingPuzzleFile_ReturnsNotFound()
     {
         var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
-        var token = tokenService.GenerateToken("abc", 10);
+        var token = tokenService.GenerateToken("abc", 10, "2020-01-01");
         Directory.CreateDirectory(_tempPuzzlePath);
 
         var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new

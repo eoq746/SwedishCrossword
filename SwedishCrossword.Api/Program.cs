@@ -221,6 +221,59 @@ if (!app.Environment.IsDevelopment())
     app.UseHttpsRedirection();
 }
 
+var isProduction = !app.Environment.IsDevelopment();
+
+// Security headers — registered BEFORE OutputCache so cached responses include them.
+// On a cache hit, OutputCache short-circuits and skips downstream middleware,
+// so anything that must be present on every response (including cached ones)
+// must run before UseOutputCache().
+app.Use(async (context, next) =>
+{
+    var headers = context.Response.Headers;
+    headers.XContentTypeOptions = "nosniff";
+    headers.XFrameOptions = "DENY";
+    headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
+    headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()";
+    headers["Content-Security-Policy"] =
+        "default-src 'self'; " +
+        "script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://*.google.com https://*.googlesyndication.com https://*.googletagservices.com; " +
+        "style-src 'self' 'unsafe-inline'; " +
+        "img-src 'self' data: https:; " +
+        "connect-src 'self' https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com; " +
+        "font-src 'self' data:; " +
+        "frame-src 'self' https://googleads.g.doubleclick.net https://*.google.com https://*.googlesyndication.com; " +
+        "worker-src 'self'; " +
+        "object-src 'none'; " +
+        "base-uri 'self'; " +
+        "form-action 'self' https://accounts.google.com https://login.microsoftonline.com";
+    if (isProduction)
+        headers.StrictTransportSecurity = "max-age=31536000; includeSubDomains";
+    await next();
+});
+
+// CSRF protection: reject state-changing requests with mismatched Origin header.
+// Registered before OutputCache for the same reason as security headers, even
+// though state-changing requests are never cached in practice.
+app.Use(async (context, next) =>
+{
+    var method = context.Request.Method;
+    if (HttpMethods.IsPost(method) || HttpMethods.IsPut(method) || HttpMethods.IsDelete(method) || HttpMethods.IsPatch(method))
+    {
+        var origin = context.Request.Headers.Origin.FirstOrDefault();
+        if (!string.IsNullOrEmpty(origin) && origin != "null")
+        {
+            if (!Uri.TryCreate(origin, UriKind.Absolute, out var originUri) ||
+                !string.Equals(originUri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
+            {
+                context.Response.StatusCode = 403;
+                await context.Response.WriteAsync("{\"error\":\"Origin mismatch\"}");
+                return;
+            }
+        }
+    }
+    await next();
+});
+
 app.UseCors();
 app.UseDefaultFiles();
 app.UseStaticFiles(new StaticFileOptions
@@ -248,54 +301,6 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-
-var isProduction = !app.Environment.IsDevelopment();
-
-// Security headers
-app.Use(async (context, next) =>
-{
-    var headers = context.Response.Headers;
-    headers.XContentTypeOptions = "nosniff";
-    headers.XFrameOptions = "DENY";
-    headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
-    headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()";
-    headers["Content-Security-Policy"] =
-        "default-src 'self'; " +
-        "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; " +
-        "style-src 'self' 'unsafe-inline'; " +
-        "img-src 'self' data: https:; " +
-        "connect-src 'self'; " +
-        "font-src 'self'; " +
-        "worker-src 'self'; " +
-        "object-src 'none'; " +
-        "base-uri 'self'; " +
-        "form-action 'self' https://accounts.google.com https://login.microsoftonline.com";
-    if (isProduction)
-        headers.StrictTransportSecurity = "max-age=31536000; includeSubDomains";
-    await next();
-});
-
-// CSRF protection: reject state-changing requests with mismatched Origin header
-app.Use(async (context, next) =>
-{
-    var method = context.Request.Method;
-    if (HttpMethods.IsPost(method) || HttpMethods.IsPut(method) || HttpMethods.IsDelete(method) || HttpMethods.IsPatch(method))
-    {
-        var origin = context.Request.Headers.Origin.FirstOrDefault();
-        if (!string.IsNullOrEmpty(origin) && origin != "null")
-        {
-            var host = context.Request.Host.Value;
-            if (!Uri.TryCreate(origin, UriKind.Absolute, out var originUri) ||
-                !string.Equals(originUri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
-            {
-                context.Response.StatusCode = 403;
-                await context.Response.WriteAsync("{\"error\":\"Origin mismatch\"}");
-                return;
-            }
-        }
-    }
-    await next();
-});
 
 app.MapAuthEndpoints();
 app.MapPuzzleEndpoints(puzzlePath);

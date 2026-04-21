@@ -42,7 +42,7 @@ internal static class LeaderboardEndpoints
             if (string.IsNullOrWhiteSpace(body.Date) || !LeaderboardStore.DatePattern.IsMatch(body.Date))
                 return Results.BadRequest(new ErrorResponse("Invalid date format"));
 
-            var validation = tokenService.Validate(body.Token, body.PuzzleHash, body.Time);
+            var validation = tokenService.Validate(body.Token, body.PuzzleHash, body.Date, body.Time);
             if (!validation.IsValid)
                 return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 
@@ -86,7 +86,7 @@ internal static class LeaderboardEndpoints
             if (string.IsNullOrWhiteSpace(body.Entry.PuzzleHash))
                 return Results.BadRequest(new ErrorResponse("Missing puzzle hash"));
 
-            var validation = tokenService.Validate(body.Token, body.Entry.PuzzleHash, body.Entry.Time);
+            var validation = tokenService.Validate(body.Token, body.Entry.PuzzleHash, body.Date, body.Entry.Time);
             if (!validation.IsValid)
                 return Results.Json(new ErrorResponse(validation.Error ?? "Validation failed"), statusCode: 403);
 

@@ -197,14 +197,18 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
     maxSizeBytes: 34359738368 // 32 GB (free tier limit)
-    autoPauseDelay: -1 // no auto-pause — free tier covers idle compute
+    // autoPauseDelay omitted: Free Limit databases with 'AutoPause' exhaustion
+    // behavior require the default auto-pause delay (60 min) and reject custom values.
     minCapacity: json('0.5')
     useFreeLimit: true
     freeLimitExhaustionBehavior: 'AutoPause'
   }
 }
 
-var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer!.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;' : ''
+// Connection Timeout=60 gives the serverless DB time to resume from auto-pause
+// (cold-start typically takes 30–60s). ConnectRetryCount/Interval cover broken
+// connections after login; initial-login retries are handled in code.
+var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer!.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;' : ''
 
 // ---------------------------------------------------------------------------
 // Container Apps Environment
@@ -330,6 +334,49 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               mountPath: '/data'
             }
           ]
+          // Health probes are only attached when a real image is deployed.
+          // The placeholder `quickstart` image used on first-time deploy
+          // listens on port 80 and has no /api/health endpoint, which would
+          // cause the Startup probe to fail and the revision never to become
+          // Ready.
+          probes: hasImage ? [
+            {
+              type: 'Liveness'
+              httpGet: {
+                path: '/api/health'
+                port: 8080
+                scheme: 'HTTP'
+              }
+              initialDelaySeconds: 30
+              periodSeconds: 30
+              timeoutSeconds: 5
+              failureThreshold: 3
+            }
+            {
+              type: 'Readiness'
+              httpGet: {
+                path: '/api/health'
+                port: 8080
+                scheme: 'HTTP'
+              }
+              initialDelaySeconds: 5
+              periodSeconds: 10
+              timeoutSeconds: 5
+              failureThreshold: 3
+            }
+            {
+              type: 'Startup'
+              httpGet: {
+                path: '/api/health'
+                port: 8080
+                scheme: 'HTTP'
+              }
+              initialDelaySeconds: 5
+              periodSeconds: 5
+              timeoutSeconds: 5
+              failureThreshold: 30
+            }
+          ] : []
         }
       ]
       scale: {
