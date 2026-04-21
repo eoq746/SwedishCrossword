@@ -197,7 +197,7 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
     maxSizeBytes: 34359738368 // 32 GB (free tier limit)
-    autoPauseDelay: 60 // auto-pause after 60 min inactivity
+    autoPauseDelay: -1 // no auto-pause — free tier covers idle compute
     minCapacity: json('0.5')
     useFreeLimit: true
     freeLimitExhaustionBehavior: 'AutoPause'
