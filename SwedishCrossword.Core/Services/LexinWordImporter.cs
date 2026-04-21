@@ -1,4 +1,4 @@
-using System.Text;
+ï»¿using System.Text;
 using System.Text.Json;
 using System.Xml;
 using SwedishCrossword.Models;
@@ -262,7 +262,7 @@ public class LexinWordImporter
             "interj." => "Interjektion",
             "prefix" => "Prefix",
             "suffix" => "Suffix",
-            _ => "Allmänt"
+            _ => "AllmÃ¤nt"
         };
     }
 
@@ -280,7 +280,7 @@ public class LexinWordImporter
             return DifficultyLevel.Hard;
 
         // Words with many Swedish-specific characters might be harder
-        var swedishChars = word.Count(c => "åäöÅÄÖ".Contains(c));
+        var swedishChars = word.Count(c => "Ã¥Ã¤Ã¶Ã…Ã„Ã–".Contains(c));
         if (swedishChars >= 2)
             return DifficultyLevel.Medium;
 

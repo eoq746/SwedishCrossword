@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services;
+﻿namespace SwedishCrossword.Services;
 
 /// <summary>
 /// Provides a shared method to locate the SwedishCrossword project's Data directory.

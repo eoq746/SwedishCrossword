@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Api;
+﻿namespace SwedishCrossword.Api;
 
 record ScoreSubmissionRequest(string Token, string Name, double Time, string PuzzleHash, string Date, string? PuzzleSize = null, int HintsUsed = 0, int WordHintsUsed = 0);
 record ScoreRecord(string Name, double Time, long? Timestamp, string? PuzzleHash, int HintsUsed = 0, int WordHintsUsed = 0, string? UserId = null);

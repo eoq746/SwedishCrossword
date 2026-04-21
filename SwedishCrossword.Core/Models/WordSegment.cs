@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Models;
+﻿namespace SwedishCrossword.Models;
 
 /// <summary>
 /// Represents one straight segment of a word's path on the grid.

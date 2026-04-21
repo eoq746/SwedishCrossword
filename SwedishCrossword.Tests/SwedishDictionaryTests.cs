@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+ï»¿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
@@ -235,7 +235,7 @@ public class SwedishDictionaryTests
     {
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("ETT", "One", "Numbers");
-        dictionary.AddWord("TVÅ", "Two", "Numbers");
+        dictionary.AddWord("TVÃ…", "Two", "Numbers");
         dictionary.AddWord("TRE", "Three", "Numbers");
         dictionary.AddWord("FYRA", "Four", "Numbers");
         dictionary.AddWord("FEM", "Five", "Numbers");
@@ -250,7 +250,7 @@ public class SwedishDictionaryTests
     {
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("ETT", "One", "Numbers");
-        dictionary.AddWord("TVÅ", "Two", "Numbers");
+        dictionary.AddWord("TVÃ…", "Two", "Numbers");
         dictionary.AddWord("TRE", "Three", "Numbers");
 
         var words = dictionary.GetRandomWords(3).ToList();
@@ -264,7 +264,7 @@ public class SwedishDictionaryTests
     {
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("ETT", "One", "Numbers");
-        dictionary.AddWord("TVÅ", "Two", "Numbers");
+        dictionary.AddWord("TVÃ…", "Two", "Numbers");
 
         var words = dictionary.GetRandomWords(10).ToList();
 
@@ -276,7 +276,7 @@ public class SwedishDictionaryTests
     {
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("ETT", "One", "Numbers");
-        dictionary.AddWord("TVÅ", "Two", "Numbers");
+        dictionary.AddWord("TVÃ…", "Two", "Numbers");
         dictionary.AddWord("TRE", "Three", "Numbers");
 
         var excludeWord = dictionary.AllWords.First(w => w.Text == "ETT");

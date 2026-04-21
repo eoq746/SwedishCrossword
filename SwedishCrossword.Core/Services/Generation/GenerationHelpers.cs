@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+ï»¿namespace SwedishCrossword.Services.Generation;
 
 using SwedishCrossword.Models;
 
@@ -12,7 +12,7 @@ internal static class GenerationHelpers
         int count = 0;
         foreach (var c in text)
         {
-            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Ã…' or 'Ã„' or 'Ã–')
                 count++;
         }
         return count;

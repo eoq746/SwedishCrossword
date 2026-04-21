@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Api;
+﻿namespace SwedishCrossword.Api;
 
 /// <summary>
 /// Score (per-puzzle leaderboard) read/write operations.

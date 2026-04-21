@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+ï»¿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
@@ -53,7 +53,7 @@ public class PrintServiceTests
 
         var document = _printService.GeneratePrintableDocument(puzzle, PrintOptions.Default);
 
-        await Assert.That(document).Contains("VÅGRÄTT");
+        await Assert.That(document).Contains("VÃ…GRÃ„TT");
     }
 
     [Test]
@@ -267,7 +267,7 @@ public class CrosswordPuzzleTests
     public async Task GetClues_ReturnsAcrossAndDownClues()
     {
         var grid = new CrosswordGrid(10, 10);
-        grid.TryPlaceWord(new Word("HEJ", "Hälsning"), 0, 0, Direction.Across);
+        grid.TryPlaceWord(new Word("HEJ", "HÃ¤lsning"), 0, 0, Direction.Across);
         grid.TryPlaceWord(new Word("HUND", "Djur"), 0, 0, Direction.Down);
 
         var puzzle = new CrosswordPuzzle(grid, 1);

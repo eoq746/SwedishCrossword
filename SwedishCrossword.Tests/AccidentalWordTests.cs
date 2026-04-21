@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+Ôªøusing TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
@@ -106,7 +106,7 @@ public class AccidentalWordTests
 
         var result = word.ToString();
 
-        await Assert.That(result).Contains("vÂgr‰tt");
+        await Assert.That(result).Contains("v√•gr√§tt");
     }
 
     [Test]
@@ -120,7 +120,7 @@ public class AccidentalWordTests
 
         var result = word.ToString();
 
-        await Assert.That(result).Contains("lodr‰tt");
+        await Assert.That(result).Contains("lodr√§tt");
     }
 
     [Test]

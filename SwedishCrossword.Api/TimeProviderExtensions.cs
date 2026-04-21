@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Api;
+﻿namespace SwedishCrossword.Api;
 
 internal static class TimeProviderExtensions
 {

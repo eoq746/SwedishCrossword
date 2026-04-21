@@ -1,4 +1,4 @@
-using System.Text;
+ï»¿using System.Text;
 using System.Text.Json;
 using System.Xml;
 using SwedishCrossword.Models;
@@ -8,14 +8,14 @@ namespace SwedishCrossword.Services;
 /// <summary>
 /// Imports Swedish words from the Kelly word list XML file (kelly.xml).
 /// The Kelly list contains frequency-ranked vocabulary for Swedish language learners,
-/// categorized by CEFR level (A1–C2). Since the Kelly list does not contain definitions,
+/// categorized by CEFR level (A1â€“C2). Since the Kelly list does not contain definitions,
 /// clues are generated from a curated clue dictionary (kelly-clues.json) with POS-based
 /// fallback patterns for words not in the dictionary.
 /// 
 /// Source: Kilgarriff, Adam; Charalabopoulou, Frieda; Gavrilidou, Maria; Johannessen, Janne Bondi;
 /// Khalil, Saussan; Kokkinakis, Sofie Johansson; Lew, Robert; Sharoff, Serge; Vadlapudi, Ravikiran
 /// &amp; Volodina, Elena. 2014. Corpus-based vocabulary lists for language learners for nine languages.
-/// Language Resources and Evaluation, 48:121–163, DOI 10.1007/s10579-013-9251-2.
+/// Language Resources and Evaluation, 48:121â€“163, DOI 10.1007/s10579-013-9251-2.
 /// </summary>
 public class KellyWordImporter
 {
@@ -168,7 +168,7 @@ public class KellyWordImporter
                 return words;
 
             // Some gf values contain parenthetical notes like "vara (vardagl. va)" or
-            // "inte (formellt: icke, ej)" – extract just the main word
+            // "inte (formellt: icke, ej)" â€“ extract just the main word
             var cleanedWord = CleanWordText(rawWord);
             if (string.IsNullOrWhiteSpace(cleanedWord))
                 return words;
@@ -229,26 +229,26 @@ public class KellyWordImporter
             };
 
             if (!string.IsNullOrEmpty(article))
-                return $"___ ({article}-ord, {word.Length} bokstäver)";
+                return $"___ ({article}-ord, {word.Length} bokstÃ¤ver)";
 
-            return $"___ (substantiv, {word.Length} bokstäver)";
+            return $"___ (substantiv, {word.Length} bokstÃ¤ver)";
         }
 
         return posLower switch
         {
-            "verb" => $"Att ___ ({word.Length} bokstäver)",
-            "aux verb" => $"Hjälpverb, att ___",
-            "adjective" => $"___ (adjektiv, {word.Length} bokstäver)",
-            "adverb" => $"___ (adverb, {word.Length} bokstäver)",
+            "verb" => $"Att ___ ({word.Length} bokstÃ¤ver)",
+            "aux verb" => $"HjÃ¤lpverb, att ___",
+            "adjective" => $"___ (adjektiv, {word.Length} bokstÃ¤ver)",
+            "adverb" => $"___ (adverb, {word.Length} bokstÃ¤ver)",
             "prep" => $"___ (preposition)",
             "conj" or "subj" => $"___ (bindeord)",
             "pronoun" => $"___ (pronomen)",
-            "det" => $"___ (bestämningsord)",
-            "numeral" => $"___ (räkneord)",
+            "det" => $"___ (bestÃ¤mningsord)",
+            "numeral" => $"___ (rÃ¤kneord)",
             "interj" => $"___ (utrop)",
             "particle" => $"___ (partikel)",
-            "proper name" => $"Egennamn ({word.Length} bokstäver)",
-            _ => $"Svenskt ord ({word.Length} bokstäver)"
+            "proper name" => $"Egennamn ({word.Length} bokstÃ¤ver)",
+            _ => $"Svenskt ord ({word.Length} bokstÃ¤ver)"
         };
     }
 
@@ -263,7 +263,7 @@ public class KellyWordImporter
         if (parenIdx > 0)
             rawWord = rawWord[..parenIdx].Trim();
 
-        // Remove abbreviation notes like "el. i stället", "förk. bl.a."
+        // Remove abbreviation notes like "el. i stÃ¤llet", "fÃ¶rk. bl.a."
         var elIdx = rawWord.IndexOf(" el. ", StringComparison.OrdinalIgnoreCase);
         if (elIdx > 0)
             rawWord = rawWord[..elIdx].Trim();
@@ -332,7 +332,7 @@ public class KellyWordImporter
             "particle" => "Partikel",
             "proper name" => "Egennamn",
             var p when p.StartsWith("noun") => "Substantiv",
-            _ => "Allmänt"
+            _ => "AllmÃ¤nt"
         };
     }
 

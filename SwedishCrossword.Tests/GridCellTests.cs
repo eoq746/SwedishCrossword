@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+ï»¿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 
@@ -50,9 +50,9 @@ public class GridCellTests
     }
 
     [Test]
-    [Arguments('å', 'Å')]
-    [Arguments('ä', 'Ä')]
-    [Arguments('ö', 'Ö')]
+    [Arguments('Ã¥', 'Ã…')]
+    [Arguments('Ã¤', 'Ã„')]
+    [Arguments('Ã¶', 'Ã–')]
     public async Task SetLetter_HandlesSwedishCharacters(char input, char expected)
     {
         var cell = new GridCell();

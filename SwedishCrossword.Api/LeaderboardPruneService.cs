@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Api;
+﻿namespace SwedishCrossword.Api;
 
 /// <summary>
 /// Background service that periodically prunes old leaderboard scores and history,
