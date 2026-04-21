@@ -4,6 +4,30 @@
 * text=auto
 
 ###############################################################################
+# Pin line endings so `dotnet format whitespace --verify-no-changes` produces
+# identical results on Windows dev machines and Linux CI runners.
+# .editorconfig sets end_of_line = crlf for *.cs, so all .NET source / project
+# files are forced to CRLF here. Shell / YAML / Dockerfile must stay LF because
+# they are executed on Linux.
+###############################################################################
+*.cs           text eol=crlf
+*.csproj       text eol=crlf
+*.sln          text eol=crlf
+*.props        text eol=crlf
+*.targets      text eol=crlf
+*.editorconfig text eol=crlf
+*.json         text eol=crlf
+*.config       text eol=crlf
+*.razor        text eol=crlf
+*.cshtml       text eol=crlf
+*.bicep        text eol=crlf
+
+*.sh           text eol=lf
+*.yml          text eol=lf
+*.yaml         text eol=lf
+Dockerfile     text eol=lf
+
+###############################################################################
 # Set default behavior for command prompt diff.
 #
 # This is need for earlier builds of msysgit that does not have it on by
