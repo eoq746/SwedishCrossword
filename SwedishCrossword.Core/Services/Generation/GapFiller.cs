@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+ï»¿namespace SwedishCrossword.Services.Generation;
 
 using SwedishCrossword.Models;
 using static GenerationHelpers;
@@ -17,12 +17,12 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
     /// Finds bridge opportunities by generating sub-window patterns within each
     /// row and column. The previous implementation only split patterns at blocked
     /// cells or grid edges, which produced patterns spanning the entire dimension
-    /// (e.g. length 17 on a 17×17 grid) — far too long to match any dictionary
+    /// (e.g. length 17 on a 17Ã—17 grid) â€” far too long to match any dictionary
     /// word. This version generates all valid sub-windows of length [minLength,
     /// maxLength] where CheckWordIsolation will pass (no letter immediately
     /// before or after the placed word).
     /// </summary>
-    public List<VerticalBridgeOpportunity> FindVerticalBridgeOpportunities(CrosswordGrid grid, int minLength = 2, int maxLength = 8)
+    public static List<VerticalBridgeOpportunity> FindVerticalBridgeOpportunities(CrosswordGrid grid, int minLength = 2, int maxLength = 8)
     {
         var opportunities = new List<VerticalBridgeOpportunity>();
 
@@ -61,7 +61,7 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
                 {
                     int row = startRow + length - 1;
 
-                    // Blocked cell — can't extend further from this start
+                    // Blocked cell â€” can't extend further from this start
                     if (cellIsBlocked[row])
                         break;
 
@@ -236,7 +236,7 @@ internal class GapFiller(SwedishDictionary dictionary, Random random)
                         if (!opportunity.Pattern[i].HasValue)
                         {
                             var c = w.Text[i];
-                            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+                            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Ã…' or 'Ã„' or 'Ã–')
                                 score += 1.0;
                             else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
                                 score += 0.5;

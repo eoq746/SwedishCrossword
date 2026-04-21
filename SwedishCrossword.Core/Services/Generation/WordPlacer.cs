@@ -178,7 +178,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         HashSet<string> usedWordTexts, CrosswordGenerationOptions options)
     {
         var maxVinkelordLength = Math.Min(options.MaxWordLength, options.MaxVinkelordLength);
-        var opportunities = _vinkelordPlacer!.FindVinkelordOpportunities(
+        var opportunities = VinkelordPlacer.FindVinkelordOpportunities(
             grid, minLength: 3, maxLength: maxVinkelordLength, maxBends: options.MaxBendsPerWord);
 
         if (opportunities.Count == 0) return false;
@@ -285,7 +285,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         return false;
     }
 
-    private double ScoreAnchorWordWithIntersectionPotential(Word word, Dictionary<char, int> letterWordCount)
+    private static double ScoreAnchorWordWithIntersectionPotential(Word word, Dictionary<char, int> letterWordCount)
     {
         double score = 0;
 
@@ -329,7 +329,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         return score;
     }
 
-    private double ScoreAnchorIntersection((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid)
+    private static double ScoreAnchorIntersection((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid)
     {
         var (row, col, direction, _, myIndex, _) = intersection;
 
@@ -376,7 +376,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
     /// <summary>
     /// Creates a new adaptive placement state. Call once before the first batch.
     /// </summary>
-    public AdaptivePlacementState CreateAdaptiveState(CrosswordGenerationOptions options, HashSet<Word> placedWords, CrosswordGrid grid)
+    public static AdaptivePlacementState CreateAdaptiveState(CrosswordGenerationOptions options, HashSet<Word> placedWords, CrosswordGrid grid)
     {
         return new AdaptivePlacementState(options, placedWords, grid);
     }
@@ -390,7 +390,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
     public async Task<int> PlaceWordsAdaptivelyWithValidation(CrosswordGrid grid, List<Word> sortedWords,
         HashSet<Word> placedWords, CrosswordGenerationOptions options, Dictionary<string, double> placedWordScores,
         Dictionary<string, double> connectivityScores,
-        CancellationToken cancellationToken, AdaptivePlacementState state, int maxWordsPerBatch = 0)
+        AdaptivePlacementState state, int maxWordsPerBatch, CancellationToken cancellationToken)
     {
         const int maxConsecutiveFailures = 100;
         const int maxPlacementAttempts = 4000;
@@ -554,7 +554,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
     {
         var maxVinkelordLength = Math.Min(options.MaxWordLength, options.MaxVinkelordLength);
 
-        var opportunities = _vinkelordPlacer!.FindVinkelordOpportunities(
+        var opportunities = VinkelordPlacer.FindVinkelordOpportunities(
             grid, minLength: 3, maxLength: maxVinkelordLength, maxBends: options.MaxBendsPerWord);
         if (opportunities.Count == 0) return false;
 
@@ -674,7 +674,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         return score;
     }
 
-    private double ScoreIntersectionAdaptive((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid, int wordLength)
+    private static double ScoreIntersectionAdaptive((int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection, CrosswordGrid grid, int wordLength)
     {
         var (row, col, direction, intersectingWord, myIndex, theirIndex) = intersection;
 
@@ -695,7 +695,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         return score;
     }
 
-    private double ScoreIntersectionWithDirectionBonus(
+    private static double ScoreIntersectionWithDirectionBonus(
         (int Row, int Column, Direction Direction, Word IntersectingWord, int MyIndex, int TheirIndex) intersection,
         CrosswordGrid grid, int wordLength, Direction preferredDirection)
     {
@@ -735,7 +735,7 @@ internal class WordPlacer(SwedishDictionary dictionary, Random random, Vinkelord
         return positions.OrderByDescending(p => p.Score).Select(p => (p.Row, p.Column, p.Direction));
     }
 
-    private double ScoreFreePosition(CrosswordGrid grid, int row, int col, Direction direction)
+    private static double ScoreFreePosition(CrosswordGrid grid, int row, int col, Direction direction)
     {
         var score = 0.0;
 

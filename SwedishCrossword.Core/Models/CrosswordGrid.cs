@@ -1,3 +1,4 @@
+ï»¿using System.Globalization;
 using System.Text;
 using SwedishCrossword.Services;
 
@@ -176,7 +177,7 @@ public class CrosswordGrid
 
             if (isValid)
             {
-                // Placement is valid — invalidate caches and commit
+                // Placement is valid â€” invalidate caches and commit
                 InvalidateCaches();
                 if (!SuppressRenumbering)
                     RenumberCluesIncludingAccidental(null);
@@ -570,7 +571,7 @@ public class CrosswordGrid
 
         _words.Add(word);
 
-        // Invalidate all caches — grid content changed
+        // Invalidate all caches â€” grid content changed
         InvalidateCaches();
 
         // Renumber all clues after placing a new word
@@ -604,7 +605,7 @@ public class CrosswordGrid
         word.Number = 0;
         _words.Remove(word);
 
-        // Invalidate all caches — grid content changed
+        // Invalidate all caches â€” grid content changed
         InvalidateCaches();
 
         // Renumber all remaining words
@@ -805,7 +806,7 @@ public class CrosswordGrid
                 {
                     if (showNumbers && cell.IsNumbered)
                     {
-                        sb.Append($"{cell.Number}");
+                        sb.Append(CultureInfo.InvariantCulture, $"{cell.Number}");
                     }
                     else
                     {
@@ -814,7 +815,7 @@ public class CrosswordGrid
                 }
                 else if (showNumbers && cell.IsNumbered)
                 {
-                    sb.Append($"{cell.Number}");
+                    sb.Append(CultureInfo.InvariantCulture, $"{cell.Number}");
                 }
                 else if (cell.HasAsterisk)
                 {
@@ -1245,7 +1246,7 @@ public class CrosswordGrid
         }
 
         // Add validation messages
-        if (result.InvalidAccidentalWords.Any())
+        if (result.InvalidAccidentalWords.Count > 0)
         {
             result.IsValid = false;
             result.Errors.Add($"Hittat {result.InvalidAccidentalWords.Count} ogiltiga oavsiktliga ord");
@@ -1253,7 +1254,7 @@ public class CrosswordGrid
 
         if (result.ValidAccidentalWords.Any(w => w.ShouldIncludeInPuzzle))
         {
-            result.Warnings.Add($"Inkluderat {result.ValidAccidentalWords.Count(w => w.ShouldIncludeInPuzzle)} giltiga oavsiktliga ord som ledtrådar");
+            result.Warnings.Add($"Inkluderat {result.ValidAccidentalWords.Count(w => w.ShouldIncludeInPuzzle)} giltiga oavsiktliga ord som ledtrÃ¥dar");
         }
 
         return result;
@@ -1370,7 +1371,7 @@ public class CrosswordGrid
         // For bent words, check if the inner word is a proper sub-word within a
         // single segment (same direction and strictly shorter). This prevents
         // filtering out words like "DIG" that correspond to a full segment of
-        // a vinkelord — those are independent straight words needing their own clues.
+        // a vinkelord â€” those are independent straight words needing their own clues.
         foreach (var segment in outer.Segments)
         {
             if (IsStraightWordContainedIn(

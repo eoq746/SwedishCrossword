@@ -1,4 +1,4 @@
-using SwedishCrossword.Models;
+﻿using SwedishCrossword.Models;
 
 namespace SwedishCrossword.Services;
 
@@ -10,7 +10,7 @@ public class GridValidator
     /// <summary>
     /// Validates that a crossword grid meets basic quality standards
     /// </summary>
-    public bool IsValidCrossword(CrosswordGrid grid)
+    public static bool IsValidCrossword(CrosswordGrid grid)
     {
         if (grid == null || grid.Words.Count == 0)
             return false;
@@ -22,7 +22,7 @@ public class GridValidator
     /// <summary>
     /// Performs comprehensive validation of a crossword grid
     /// </summary>
-    public ValidationResult ValidateGrid(CrosswordGrid grid)
+    public static ValidationResult ValidateGrid(CrosswordGrid grid)
     {
         var result = new ValidationResult();
 
@@ -50,7 +50,7 @@ public class GridValidator
         return result;
     }
 
-    private void ValidateBasicStructure(CrosswordGrid grid, ValidationResult result)
+    private static void ValidateBasicStructure(CrosswordGrid grid, ValidationResult result)
     {
         // Check minimum grid size
         if (grid.Width < 5 || grid.Height < 5)
@@ -75,7 +75,7 @@ public class GridValidator
         }
     }
 
-    private void ValidateWordPlacements(CrosswordGrid grid, ValidationResult result)
+    private static void ValidateWordPlacements(CrosswordGrid grid, ValidationResult result)
     {
         foreach (var word in grid.Words)
         {
@@ -107,13 +107,13 @@ public class GridValidator
         }
     }
 
-    private bool IsWordWithinBounds(CrosswordGrid grid, Word word)
+    private static bool IsWordWithinBounds(CrosswordGrid grid, Word word)
     {
         return word.StartRow >= 0 && word.StartColumn >= 0 &&
                word.EndRow < grid.Height && word.EndColumn < grid.Width;
     }
 
-    private bool ValidateWordLetters(CrosswordGrid grid, Word word)
+    private static bool ValidateWordLetters(CrosswordGrid grid, Word word)
     {
         var positions = word.GetPositions().ToList();
 
@@ -136,7 +136,7 @@ public class GridValidator
         return true;
     }
 
-    private bool IsWordProperlyIsolated(CrosswordGrid grid, Word word)
+    private static bool IsWordProperlyIsolated(CrosswordGrid grid, Word word)
     {
         var positions = word.GetPositions().ToHashSet();
 
@@ -167,7 +167,7 @@ public class GridValidator
         return true;
     }
 
-    private IEnumerable<(int Row, int Column)> GetAdjacentPositions(int row, int col, Direction wordDirection)
+    private static IEnumerable<(int Row, int Column)> GetAdjacentPositions(int row, int col, Direction wordDirection)
     {
         // For across words, check above and below
         // For down words, check left and right
@@ -183,7 +183,7 @@ public class GridValidator
         }
     }
 
-    private bool IsValidIntersection(CrosswordGrid grid, Word word, int row, int col)
+    private static bool IsValidIntersection(CrosswordGrid grid, Word word, int row, int col)
     {
         var cell = grid.GetCell(row, col);
 
@@ -197,7 +197,7 @@ public class GridValidator
         return intersectingWords.Count == 1;
     }
 
-    private void ValidateIntersections(CrosswordGrid grid, ValidationResult result)
+    private static void ValidateIntersections(CrosswordGrid grid, ValidationResult result)
     {
         var intersectionCount = 0;
         var wordPairs = new HashSet<(string, string)>();
@@ -210,7 +210,7 @@ public class GridValidator
                     continue;
 
                 // Avoid duplicate checking
-                var pairKey = string.Compare(word1.Id, word2.Id) < 0
+                var pairKey = string.CompareOrdinal(word1.Id, word2.Id) < 0
                     ? (word1.Id, word2.Id)
                     : (word2.Id, word1.Id);
 
@@ -242,7 +242,7 @@ public class GridValidator
         }
     }
 
-    private void ValidateConnectivity(CrosswordGrid grid, ValidationResult result)
+    private static void ValidateConnectivity(CrosswordGrid grid, ValidationResult result)
     {
         if (grid.Words.Count <= 1)
             return;
@@ -278,7 +278,7 @@ public class GridValidator
         }
     }
 
-    private Dictionary<Word, HashSet<Word>> BuildWordConnectionGraph(CrosswordGrid grid)
+    private static Dictionary<Word, HashSet<Word>> BuildWordConnectionGraph(CrosswordGrid grid)
     {
         var graph = new Dictionary<Word, HashSet<Word>>();
 
@@ -304,7 +304,7 @@ public class GridValidator
         return graph;
     }
 
-    private List<List<Word>> FindConnectedComponents(Dictionary<Word, HashSet<Word>> graph)
+    private static List<List<Word>> FindConnectedComponents(Dictionary<Word, HashSet<Word>> graph)
     {
         var visited = new HashSet<Word>();
         var components = new List<List<Word>>();
@@ -322,7 +322,7 @@ public class GridValidator
         return components;
     }
 
-    private void DepthFirstSearch(Word word, Dictionary<Word, HashSet<Word>> graph, HashSet<Word> visited, List<Word> component)
+    private static void DepthFirstSearch(Word word, Dictionary<Word, HashSet<Word>> graph, HashSet<Word> visited, List<Word> component)
     {
         visited.Add(word);
         component.Add(word);
@@ -336,7 +336,7 @@ public class GridValidator
         }
     }
 
-    private void ValidateQualityMetrics(CrosswordGrid grid, ValidationResult result)
+    private static void ValidateQualityMetrics(CrosswordGrid grid, ValidationResult result)
     {
         var stats = grid.GetStats();
 
@@ -399,7 +399,7 @@ public class GridValidator
     /// <summary>
     /// Quick validation for placement testing with dictionary validation
     /// </summary>
-    public bool CanPlaceWordSafelyWithValidation(CrosswordGrid grid, Word word, int row, int col, Direction direction, SwedishDictionary? dictionary = null, bool rejectInvalidWords = true)
+    public static bool CanPlaceWordSafelyWithValidation(CrosswordGrid grid, Word word, int row, int col, Direction direction, SwedishDictionary? dictionary = null, bool rejectInvalidWords = true)
     {
         // Basic placement check first
         if (!CanPlaceWordSafely(grid, word, row, col, direction))
@@ -417,7 +417,7 @@ public class GridValidator
     /// <summary>
     /// Quick validation for placement testing
     /// </summary>
-    public bool CanPlaceWordSafely(CrosswordGrid grid, Word word, int row, int col, Direction direction)
+    public static bool CanPlaceWordSafely(CrosswordGrid grid, Word word, int row, int col, Direction direction)
     {
         // This is used during generation to quickly check if a placement would be valid
         if (!grid.IsValidPosition(row, col))

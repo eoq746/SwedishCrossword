@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Collections.Concurrent;
 using System.Text.Json.Nodes;
 
@@ -64,7 +65,7 @@ sealed class PuzzleCache
             obj["submissionToken"] = "__TOKEN__";
             obj["puzzleHash"] = puzzleHash;
             obj["cellCount"] = cellCount;
-            obj["puzzleDate"] = puzzleDate.ToString("yyyy-MM-dd");
+            obj["puzzleDate"] = puzzleDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
 
             SubmissionTokenService.StripAnswers(obj);
 

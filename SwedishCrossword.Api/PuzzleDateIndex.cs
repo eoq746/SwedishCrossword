@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Collections.Concurrent;
 
 namespace SwedishCrossword.Api;
@@ -38,7 +39,7 @@ sealed class PuzzleDateIndex
     {
         EnsureInitialScan();
 
-        var cutoff = upToDate.ToString("yyyy-MM-dd");
+        var cutoff = upToDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
         return _dateSizes
             .Where(kv => string.CompareOrdinal(kv.Key, cutoff) <= 0)
             .OrderByDescending(kv => kv.Key)

@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+﻿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
@@ -28,7 +28,7 @@ public class GridValidatorTests
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 3, Direction.Down);
 
-        var isValid = _validator.IsValidCrossword(grid);
+        var isValid = GridValidator.IsValidCrossword(grid);
 
         await Assert.That(isValid).IsTrue();
     }
@@ -38,7 +38,7 @@ public class GridValidatorTests
     {
         var grid = new CrosswordGrid(5, 5);
 
-        var isValid = _validator.IsValidCrossword(grid);
+        var isValid = GridValidator.IsValidCrossword(grid);
 
         await Assert.That(isValid).IsFalse();
     }
@@ -53,7 +53,7 @@ public class GridValidatorTests
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 3, Direction.Down);
 
-        var result = _validator.ValidateGrid(grid);
+        var result = GridValidator.ValidateGrid(grid);
 
         await Assert.That(result.IsValid).IsTrue();
         await Assert.That(result.Errors).IsEmpty();
@@ -64,7 +64,7 @@ public class GridValidatorTests
     {
         var grid = new CrosswordGrid(5, 5);
 
-        var result = _validator.ValidateGrid(grid);
+        var result = GridValidator.ValidateGrid(grid);
 
         await Assert.That(result.IsValid).IsFalse();
         await Assert.That(result.Errors.Count).IsGreaterThan(0);
@@ -76,7 +76,7 @@ public class GridValidatorTests
         var grid = new CrosswordGrid(10, 10);
         var word = new Word("TEST", "A test");
 
-        var canPlace = _validator.CanPlaceWordSafely(grid, word, 0, 0, Direction.Across);
+        var canPlace = GridValidator.CanPlaceWordSafely(grid, word, 0, 0, Direction.Across);
 
         await Assert.That(canPlace).IsTrue();
     }
@@ -87,7 +87,7 @@ public class GridValidatorTests
         var grid = new CrosswordGrid(5, 5);
         var word = new Word("TOOLONG", "Too big");
 
-        var canPlace = _validator.CanPlaceWordSafely(grid, word, 0, 0, Direction.Across);
+        var canPlace = GridValidator.CanPlaceWordSafely(grid, word, 0, 0, Direction.Across);
 
         await Assert.That(canPlace).IsFalse();
     }
@@ -100,7 +100,7 @@ public class GridValidatorTests
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
 
         var word2 = new Word("TRO", "ANA");
-        var canPlace = _validator.CanPlaceWordSafely(grid, word2, 2, 3, Direction.Down);
+        var canPlace = GridValidator.CanPlaceWordSafely(grid, word2, 2, 3, Direction.Down);
 
         await Assert.That(canPlace).IsTrue();
     }
@@ -113,7 +113,7 @@ public class GridValidatorTests
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
 
         var word2 = new Word("DOG", "Pet");
-        var canPlace = _validator.CanPlaceWordSafely(grid, word2, 2, 2, Direction.Across);
+        var canPlace = GridValidator.CanPlaceWordSafely(grid, word2, 2, 2, Direction.Across);
 
         await Assert.That(canPlace).IsFalse();
     }
@@ -130,7 +130,7 @@ public class GridValidatorTests
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
 
         var word2 = new Word("TRO", "ANA");
-        var canPlace = _validator.CanPlaceWordSafelyWithValidation(
+        var canPlace = GridValidator.CanPlaceWordSafelyWithValidation(
             grid, word2, 2, 3, Direction.Down, dictionary, rejectInvalidWords: true);
 
         await Assert.That(canPlace).IsTrue();

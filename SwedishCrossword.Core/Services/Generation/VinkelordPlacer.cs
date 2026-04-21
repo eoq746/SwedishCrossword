@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+ï»¿namespace SwedishCrossword.Services.Generation;
 
 using SwedishCrossword.Models;
 using static GenerationHelpers;
@@ -15,7 +15,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
     /// Finds L-shaped (and multi-bend) opportunities where a word could be placed
     /// by combining a horizontal and vertical run that share a corner cell.
     /// </summary>
-    public List<VinkelordOpportunity> FindVinkelordOpportunities(CrosswordGrid grid, int minLength = 3, int maxLength = 20, int maxBends = 1)
+    public static List<VinkelordOpportunity> FindVinkelordOpportunities(CrosswordGrid grid, int minLength = 3, int maxLength = 20, int maxBends = 1)
     {
         var opportunities = new List<VinkelordOpportunity>();
 
@@ -57,7 +57,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
         {
             double ScoreOpportunity(VinkelordOpportunity opp)
             {
-                // Strong preference for shorter total lengths — these are the ones
+                // Strong preference for shorter total lengths â€” these are the ones
                 // that actually match dictionary words
                 double score = 20.0 - opp.TotalLength;
 
@@ -76,7 +76,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
         return opportunities;
     }
 
-    private void TryBuildLShape(CrosswordGrid grid, int bendRow, int bendCol,
+    private static void TryBuildLShape(CrosswordGrid grid, int bendRow, int bendCol,
         Direction firstDir, Direction secondDir, int minLength, int maxLength,
         List<VinkelordOpportunity> opportunities)
     {
@@ -168,7 +168,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
         }
     }
 
-    private List<int> GetSegmentLengths(CrosswordGrid grid, int bendRow, int bendCol,
+    private static List<int> GetSegmentLengths(CrosswordGrid grid, int bendRow, int bendCol,
         Direction direction, bool backward, int minCells)
     {
         var lengths = new List<int>();
@@ -380,7 +380,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                     double score = opportunity.ExistingLetterCount * 5.0;
                     foreach (var c in w.Text)
                     {
-                        if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+                        if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Ã…' or 'Ã„' or 'Ã–')
                             score += 0.5;
                         else if (c is 'R' or 'N' or 'S' or 'T' or 'L')
                             score += 0.3;
@@ -404,7 +404,7 @@ internal class VinkelordPlacer(SwedishDictionary dictionary, Random random)
                         placedWordScores[word.Text] = connectivityScores.GetValueOrDefault(word.Text);
                         vinkelordPlaced++;
                         placedAny = true;
-                        //Console.WriteLine($"    Vinkelord placerat: {word.Text} ({word.BendCount} böj)");
+                        //Console.WriteLine($"    Vinkelord placerat: {word.Text} ({word.BendCount} bÃ¶j)");
                         break;
                     }
                 }

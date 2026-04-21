@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json.Nodes;
@@ -55,7 +56,7 @@ sealed class SubmissionTokenService
                 return puzzleJson;
 
             var (puzzleHash, cellCount) = ComputePuzzleMetadata(obj);
-            var dateString = puzzleDate.ToString("yyyy-MM-dd");
+            var dateString = puzzleDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             obj["submissionToken"] = GenerateToken(puzzleHash, cellCount, dateString);
             obj["puzzleHash"] = puzzleHash;
             obj["cellCount"] = cellCount;

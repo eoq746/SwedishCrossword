@@ -1,4 +1,4 @@
-using TUnit.Assertions;
+﻿using TUnit.Assertions;
 using TUnit.Core;
 using SwedishCrossword.Models;
 using SwedishCrossword.Services;
@@ -24,7 +24,7 @@ public class AlternativeCluesTests
         var alts = new List<string> { "Mjauande djur", "Mössens fiende" };
         var word = new Word("KATT", "Husdjur", alternativeClues: alts);
 
-        await Assert.That(word.AlternativeClues).HasCount().EqualTo(2);
+        await Assert.That(word.AlternativeClues).Count().IsEqualTo(2);
         await Assert.That(word.AlternativeClues[0]).IsEqualTo("Mjauande djur");
         await Assert.That(word.AlternativeClues[1]).IsEqualTo("Mössens fiende");
     }
@@ -114,7 +114,7 @@ public class AlternativeCluesTests
             new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
         await Assert.That(entries).IsNotNull();
-        await Assert.That(entries![0].AlternativeClues).HasCount().EqualTo(2);
+        await Assert.That(entries![0].AlternativeClues).Count().IsEqualTo(2);
         await Assert.That(entries[0].AlternativeClues[0]).IsEqualTo("Mjauande djur");
     }
 

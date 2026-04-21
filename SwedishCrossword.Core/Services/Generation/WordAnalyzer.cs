@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+ï»¿namespace SwedishCrossword.Services.Generation;
 
 using System.Security.Cryptography;
 using System.Text;
@@ -15,6 +15,8 @@ internal class WordAnalyzer
     private List<WordAnalysis>? _cachedWordAnalysis;
 
     private const string CacheFileName = "wordAnalysisCache.json";
+
+    private static readonly JsonSerializerOptions CacheJsonOptions = new() { WriteIndented = true };
 
     private record WordAnalysisDto(string Text, double ConnectivityScore, int VowelCount, int CommonLetterCount);
     private record CacheFilePayload(string Fingerprint, List<WordAnalysisDto> Entries);
@@ -105,7 +107,7 @@ internal class WordAnalyzer
         {
             letterFreq[c] = letterFreq.GetValueOrDefault(c, 0) + 1;
 
-            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Å' or 'Ä' or 'Ö')
+            if (c is 'A' or 'E' or 'I' or 'O' or 'U' or 'Ã…' or 'Ã„' or 'Ã–')
             {
                 vowelCount++;
                 commonLetterCount++;
@@ -144,7 +146,7 @@ internal class WordAnalyzer
         return (score, vowelCount, commonLetterCount);
     }
 
-    private string GetCacheDirectory()
+    private static string GetCacheDirectory()
     {
         var env = Environment.GetEnvironmentVariable("SWEDISH_CROSSWORD_CACHE_PATH");
         if (!string.IsNullOrWhiteSpace(env))
@@ -167,13 +169,13 @@ internal class WordAnalyzer
         return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "SwedishCrossword");
     }
 
-    private string GetCacheFilePath()
+    private static string GetCacheFilePath()
     {
         var dir = GetCacheDirectory();
         return Path.Combine(dir, CacheFileName);
     }
 
-    private List<WordAnalysis>? LoadAnalysisFromDisk(string fingerprint, List<Word> words)
+    private static List<WordAnalysis>? LoadAnalysisFromDisk(string fingerprint, List<Word> words)
     {
         try
         {
@@ -213,7 +215,7 @@ internal class WordAnalyzer
         }
     }
 
-    private void SaveAnalysisToDisk(string fingerprint, List<WordAnalysis> analysis)
+    private static void SaveAnalysisToDisk(string fingerprint, List<WordAnalysis> analysis)
     {
         try
         {
@@ -223,7 +225,7 @@ internal class WordAnalyzer
 
             var dtos = analysis.ConvertAll(a => new WordAnalysisDto(a.Word.Text, a.ConnectivityScore, a.VowelCount, a.CommonLetterCount));
             var payload = new CacheFilePayload(fingerprint, dtos);
-            var json = JsonSerializer.Serialize(payload, new JsonSerializerOptions { WriteIndented = true });
+            var json = JsonSerializer.Serialize(payload, CacheJsonOptions);
             File.WriteAllText(filePath, json);
         }
         catch

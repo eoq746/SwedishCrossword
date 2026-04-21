@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Services.Generation;
+﻿namespace SwedishCrossword.Services.Generation;
 
 using SwedishCrossword.Models;
 
@@ -24,7 +24,7 @@ internal class VerticalBridgeOpportunity
     public List<char?> Pattern { get; set; } = [];
     public int ExistingLetterCount { get; set; }
     public int EmptyCellCount { get; set; }
-    public bool IsHorizontal { get; set; } = false;
+    public bool IsHorizontal { get; set; }
 
     /// <summary>
     /// Number of empty cells that have perpendicular adjacent letters.

@@ -1,4 +1,5 @@
 using System.Data.Common;
+using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
@@ -114,7 +115,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                     if (written == dest.Length) break;
                 }
             }
-            dest[written..].Fill('\0');
+            dest[written..].Clear();
         }).TrimEnd('\0');
     }
 
@@ -186,7 +187,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 AddParam(dedup, "@time", entry.Time);
                 AddParam(dedup, "@timestamp", (object?)entry.Timestamp ?? DBNull.Value);
 
-                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
+                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
                 if (count > 0)
                 {
                     await tx.CommitAsync();
@@ -266,7 +267,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             prune.CommandText = _useSqlServer
                 ? "DELETE FROM scores WHERE SUBSTRING(leaderboard_key, 1, 10) < @cutoff"
                 : "DELETE FROM scores WHERE SUBSTR(leaderboard_key, 1, 10) < @cutoff";
-            AddParam(prune, "@cutoff", scoreCutoff.ToString("yyyy-MM-dd"));
+            AddParam(prune, "@cutoff", scoreCutoff.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
             await prune.ExecuteNonQueryAsync();
         }
 
@@ -276,7 +277,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         await using (var purge = conn.CreateCommand())
         {
             purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
-            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd"));
+            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
             await purge.ExecuteNonQueryAsync();
         }
     }
@@ -311,7 +312,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 AddParam(dedup, "@time", record.Time);
                 AddParam(dedup, "@timestamp", (object?)record.Timestamp ?? DBNull.Value);
 
-                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
+                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
                 if (count > 0)
                 {
                     await tx.CommitAsync();
@@ -423,8 +424,8 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             WHERE date >= @earliest AND date <= @today
             ORDER BY date DESC, time
             """;
-        AddParam(cmd, "@earliest", earliest.ToString("yyyy-MM-dd"));
-        AddParam(cmd, "@today", today.ToString("yyyy-MM-dd"));
+        AddParam(cmd, "@earliest", earliest.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
+        AddParam(cmd, "@today", today.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
 
         var result = new Dictionary<string, List<HistoryRecord>>();
         await using var reader = await cmd.ExecuteReaderAsync();
@@ -502,7 +503,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 : "SELECT COUNT(1) FROM user_aliases WHERE alias = @alias COLLATE NOCASE";
         }
         AddParam(cmd, "@alias", alias);
-        var count = Convert.ToInt64(await cmd.ExecuteScalarAsync());
+        var count = Convert.ToInt64(await cmd.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
         return count == 0;
     }
 
@@ -557,7 +558,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             ORDER BY date DESC
             """;
         AddParam(cmd, "@uid", userId);
-        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
 
         var solves = new List<UserSolveRecord>();
         await using var reader = await cmd.ExecuteReaderAsync();
@@ -645,7 +646,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
     public async Task<AnalyticsSummary> GetAnalyticsSummaryAsync()
     {
-        var today = _timeProvider.GetSwedishDate().ToString("yyyy-MM-dd");
+        var today = _timeProvider.GetSwedishDate().ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
         await using var conn = await OpenConnectionAsync();
 
         // Main aggregates
@@ -660,20 +661,20 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             FROM history
             WHERE date >= @cutoff
             """;
-        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
         await using var reader = await cmd.ExecuteReaderAsync();
         await reader.ReadAsync();
         var totalCompletions = reader.GetInt32(0);
         var uniquePlayers = reader.GetInt32(1);
-        var avgTime = Math.Round(Convert.ToDouble(reader.GetValue(2)), 1);
-        var bestTime = Math.Round(Convert.ToDouble(reader.GetValue(3)), 1);
-        var hintUsageRate = Math.Round(Convert.ToDouble(reader.GetValue(4)), 3);
+        var avgTime = Math.Round(Convert.ToDouble(reader.GetValue(2), CultureInfo.InvariantCulture), 1);
+        var bestTime = Math.Round(Convert.ToDouble(reader.GetValue(3), CultureInfo.InvariantCulture), 1);
+        var hintUsageRate = Math.Round(Convert.ToDouble(reader.GetValue(4), CultureInfo.InvariantCulture), 3);
         await reader.CloseAsync();
 
         // Registered users (aliases)
         await using var regCmd = conn.CreateCommand();
         regCmd.CommandText = "SELECT COUNT(*) FROM user_aliases";
-        var registeredUsers = Convert.ToInt32(await regCmd.ExecuteScalarAsync());
+        var registeredUsers = Convert.ToInt32(await regCmd.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
 
         // Today's activity
         await using var todayCmd = conn.CreateCommand();
@@ -694,13 +695,13 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             GROUP BY puzzle_size
             ORDER BY puzzle_size
             """;
-        AddParam(sizeCmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+        AddParam(sizeCmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
         var perSize = new Dictionary<string, SizeCompletions>();
         await using var sizeReader = await sizeCmd.ExecuteReaderAsync();
         while (await sizeReader.ReadAsync())
         {
             perSize[sizeReader.GetString(0)] = new SizeCompletions(
-                sizeReader.GetInt32(1), Math.Round(Convert.ToDouble(sizeReader.GetValue(2)), 1));
+                sizeReader.GetInt32(1), Math.Round(Convert.ToDouble(sizeReader.GetValue(2), CultureInfo.InvariantCulture), 1));
         }
 
         return new AnalyticsSummary(
@@ -736,8 +737,8 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             GROUP BY date
             ORDER BY date DESC
             """;
-        AddParam(cmd, "@earliest", earliest.ToString("yyyy-MM-dd"));
-        AddParam(cmd, "@today", today.ToString("yyyy-MM-dd"));
+        AddParam(cmd, "@earliest", earliest.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
+        AddParam(cmd, "@today", today.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
 
         var result = new List<DailyAnalytics>();
         await using var reader = await cmd.ExecuteReaderAsync();
@@ -798,7 +799,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
               ORDER BY games_played DESC, avg_time ASC
               LIMIT @limit
               """;
-        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd"));
+        AddParam(cmd, "@cutoff", HistoryCutoffDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
         AddParam(cmd, "@limit", limit);
 
         var result = new List<TopPlayer>();
@@ -891,7 +892,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         countCheck.Transaction = tx;
         countCheck.CommandText = "SELECT COUNT(*) FROM friend_requests WHERE from_user_id = @from AND status = 'pending'";
         AddParam(countCheck, "@from", fromUserId);
-        var pendingCount = Convert.ToInt64(await countCheck.ExecuteScalarAsync());
+        var pendingCount = Convert.ToInt64(await countCheck.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
         if (pendingCount >= 50)
         {
             await tx.RollbackAsync();
@@ -1422,7 +1423,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         }
     }
 
-    private async Task<List<ScoreRecord>> GetScoresForKeyAsync(DbConnection conn, DbTransaction? tx, string leaderboardKey)
+    private static async Task<List<ScoreRecord>> GetScoresForKeyAsync(DbConnection conn, DbTransaction? tx, string leaderboardKey)
     {
         await using var cmd = conn.CreateCommand();
         cmd.Transaction = tx;

@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Security.Claims;
 
 namespace SwedishCrossword.Api;
@@ -103,7 +104,7 @@ internal static class FriendsEndpoints
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
-            var d = date ?? timeProvider.GetSwedishDate().ToString("yyyy-MM-dd");
+            var d = date ?? timeProvider.GetSwedishDate().ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
             if (!LeaderboardStore.DatePattern.IsMatch(d))
                 return Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
 

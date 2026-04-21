@@ -1,3 +1,4 @@
+ï»¿using System.Globalization;
 using SwedishCrossword.Models;
 
 namespace SwedishCrossword.Services;
@@ -31,83 +32,83 @@ public class ClueGenerator
         _clueTemplates["Natur"] = [
             "Naturens {0}",
             "{0} i naturen",
-            "Växer som {0}",
+            "VÃ¤xer som {0}",
             "Finns i {0}",
             "Del av {0}"
         ];
 
         _clueTemplates["Mat"] = [
-            "Maträtt med {0}",
-            "Ätbar {0}",
+            "MatrÃ¤tt med {0}",
+            "Ã„tbar {0}",
             "Smakrik {0}",
-            "{0} att äta",
-            "Näring från {0}"
+            "{0} att Ã¤ta",
+            "NÃ¤ring frÃ¥n {0}"
         ];
 
-        _clueTemplates["Föremål"] = [
-            "Använder man {0}",
+        _clueTemplates["FÃ¶remÃ¥l"] = [
+            "AnvÃ¤nder man {0}",
             "Praktisk {0}",
-            "Vardagsföremål för {0}",
-            "Redskap för {0}",
-            "Hjälpmedel vid {0}"
+            "VardagsfÃ¶remÃ¥l fÃ¶r {0}",
+            "Redskap fÃ¶r {0}",
+            "HjÃ¤lpmedel vid {0}"
         ];
 
-        _clueTemplates["Färg"] = [
-            "Färg som {0}",
+        _clueTemplates["FÃ¤rg"] = [
+            "FÃ¤rg som {0}",
             "Nyans av {0}",
-            "Kulör likt {0}",
-            "Ton som påminner om {0}"
+            "KulÃ¶r likt {0}",
+            "Ton som pÃ¥minner om {0}"
         ];
 
         _clueTemplates["Geografi"] = [
             "Plats i {0}",
             "Stad i {0}",
             "Land vid {0}",
-            "Ort känd för {0}",
+            "Ort kÃ¤nd fÃ¶r {0}",
             "Region med {0}"
         ];
 
         _clueTemplates["Verb"] = [
             "Att {0}",
             "Handlingen att {0}",
-            "Aktivitet som innebär {0}",
-            "Gör när man {0}"
+            "Aktivitet som innebÃ¤r {0}",
+            "GÃ¶r nÃ¤r man {0}"
         ];
 
         _clueTemplates["Yrken"] = [
             "Person som {0}",
             "Arbetar med {0}",
-            "Yrkesutövare inom {0}",
+            "YrkesutÃ¶vare inom {0}",
             "Jobbar som {0}",
             "Sysslar med {0}"
         ];
 
         _clueTemplates["Sport"] = [
             "Sport med {0}",
-            "Idrottsgren där man {0}",
-            "Tävlingssport med {0}",
-            "Aktivitet som kräver {0}"
+            "Idrottsgren dÃ¤r man {0}",
+            "TÃ¤vlingssport med {0}",
+            "Aktivitet som krÃ¤ver {0}"
         ];
 
-        _clueTemplates["Känslor"] = [
-            "Känsla av {0}",
+        _clueTemplates["KÃ¤nslor"] = [
+            "KÃ¤nsla av {0}",
             "Emotion som {0}",
-            "Sinnesstämning präglad av {0}",
+            "SinnesstÃ¤mning prÃ¤glad av {0}",
             "Upplevelse av {0}"
         ];
 
-        _clueTemplates["Årstid"] = [
-            "Tid på året när {0}",
-            "Period präglad av {0}",
-            "Årstid med {0}",
-            "Månader när {0}"
+        _clueTemplates["Ã…rstid"] = [
+            "Tid pÃ¥ Ã¥ret nÃ¤r {0}",
+            "Period prÃ¤glad av {0}",
+            "Ã…rstid med {0}",
+            "MÃ¥nader nÃ¤r {0}"
         ];
 
         _clueTemplates["Veckodagar"] = [
             "Dag nummer {0} i veckan",
             "Veckodag efter {0}",
-            "Dag när {0}",
-            "Kallas även {0}"
+            "Dag nÃ¤r {0}",
+            "Kallas Ã¤ven {0}"
         ];
     }
 
@@ -123,9 +124,8 @@ public class ClueGenerator
         };
 
         // Try to generate template-based clues
-        if (!string.IsNullOrEmpty(word.Category) && _clueTemplates.ContainsKey(word.Category))
+        if (!string.IsNullOrEmpty(word.Category) && _clueTemplates.TryGetValue(word.Category, out var templates))
         {
-            var templates = _clueTemplates[word.Category];
             var shuffledTemplates = templates.OrderBy(x => _random.Next()).Take(maxClues - 1);
 
             foreach (var template in shuffledTemplates)
@@ -144,13 +144,13 @@ public class ClueGenerator
         return clues.Take(maxClues);
     }
 
-    private string GenerateClueFromTemplate(string template, Word word)
+    private static string GenerateClueFromTemplate(string template, Word word)
     {
         // This is a simplified implementation
         // In a real system, you might have more sophisticated template processing
         try
         {
-            return string.Format(template, GetWordFeatures(word));
+            return string.Format(CultureInfo.InvariantCulture, template, GetWordFeatures(word));
         }
         catch
         {
@@ -158,83 +158,83 @@ public class ClueGenerator
         }
     }
 
-    private object[] GetWordFeatures(Word word)
+    private static object[] GetWordFeatures(Word word)
     {
         // Extract features from the word for template substitution
         var features = new List<object> { word.Text };
 
-        switch (word.Category.ToLower())
+        switch (word.Category.ToLowerInvariant())
         {
             case "djur":
                 features.Add(GetAnimalHabitat(word.Text));
                 features.Add(GetAnimalFeature(word.Text));
                 break;
-            case "färg":
+            case "fÃ¤rg":
                 features.Add(GetColorReference(word.Text));
                 break;
             case "geografi":
                 features.Add(GetGeographicContext(word.Text));
                 break;
             default:
-                features.Add("okänd");
+                features.Add("okÃ¤nd");
                 break;
         }
 
         return features.ToArray();
     }
 
-    private string GetAnimalHabitat(string animal)
+    private static string GetAnimalHabitat(string animal)
     {
-        return animal.ToUpper() switch
+        return animal.ToUpperInvariant() switch
         {
             "KATT" => "hemmet",
             "HUND" => "hemmet",
             "FISK" => "vattnet",
-            "FÅGEL" => "luften",
-            "HÄST" => "stallet",
+            "FÃ…GEL" => "luften",
+            "HÃ„ST" => "stallet",
             _ => "naturen"
         };
     }
 
-    private string GetAnimalFeature(string animal)
+    private static string GetAnimalFeature(string animal)
     {
-        return animal.ToUpper() switch
+        return animal.ToUpperInvariant() switch
         {
             "KATT" => "whiskers",
             "HUND" => "svans",
-            "FISK" => "fjäll",
-            "FÅGEL" => "vingar",
-            "HÄST" => "man",
-            _ => "hår"
+            "FISK" => "fjÃ¤ll",
+            "FÃ…GEL" => "vingar",
+            "HÃ„ST" => "man",
+            _ => "hÃ¥r"
         };
     }
 
-    private string GetColorReference(string color)
+    private static string GetColorReference(string color)
     {
-        return color.ToUpper() switch
+        return color.ToUpperInvariant() switch
         {
-            "RÖD" => "blod",
-            "BLÅ" => "himlen",
-            "GRÖN" => "gräset",
+            "RÃ–D" => "blod",
+            "BLÃ…" => "himlen",
+            "GRÃ–N" => "grÃ¤set",
             "GUL" => "solen",
             "SVART" => "natten",
-            "VIT" => "snön",
-            _ => "något"
+            "VIT" => "snÃ¶n",
+            _ => "nÃ¥got"
         };
     }
 
-    private string GetGeographicContext(string place)
+    private static string GetGeographicContext(string place)
     {
-        return place.ToUpper() switch
+        return place.ToUpperInvariant() switch
         {
             "STOCKHOLM" => "Sverige",
-            "GÖTEBORG" => "Västkusten",
-            "MALMÖ" => "Skåne",
+            "GÃ–TEBORG" => "VÃ¤stkusten",
+            "MALMÃ–" => "SkÃ¥ne",
             "SVERIGE" => "Skandinavien",
             "NORGE" => "Skandinavien",
             "FINLAND" => "Norden",
             "DANMARK" => "Skandinavien",
-            _ => "världen"
+            _ => "vÃ¤rlden"
         };
     }
 
@@ -263,26 +263,26 @@ public class ClueGenerator
         return clues.Take(maxClues);
     }
 
-    private IEnumerable<string> GenerateEasyClues(Word word, int maxClues)
+    private static List<string> GenerateEasyClues(Word word, int maxClues)
     {
         var clues = new List<string>();
 
         // Length-based clue
         if (clues.Count < maxClues)
         {
-            clues.Add($"Ord med {word.Length} bokstäver");
+            clues.Add($"Ord med {word.Length} bokstÃ¤ver");
         }
 
         // First letter clue
         if (clues.Count < maxClues)
         {
-            clues.Add($"Börjar på {word.Text.First()}");
+            clues.Add($"BÃ¶rjar pÃ¥ {word.Text.First()}");
         }
 
         return clues;
     }
 
-    private IEnumerable<string> GenerateMediumClues(Word word, int maxClues)
+    private static List<string> GenerateMediumClues(Word word, int maxClues)
     {
         var clues = new List<string>();
 
@@ -292,7 +292,7 @@ public class ClueGenerator
             var rhymeWord = FindSimpleRhyme(word.Text);
             if (!string.IsNullOrEmpty(rhymeWord))
             {
-                clues.Add($"Rimmar på {rhymeWord}");
+                clues.Add($"Rimmar pÃ¥ {rhymeWord}");
             }
         }
 
@@ -300,13 +300,13 @@ public class ClueGenerator
         if (clues.Count < maxClues && word.Length >= 4)
         {
             var pattern = CreateLetterPattern(word.Text);
-            clues.Add($"Mönster: {pattern}");
+            clues.Add($"MÃ¶nster: {pattern}");
         }
 
         return clues;
     }
 
-    private IEnumerable<string> GenerateHardClues(Word word, int maxClues)
+    private List<string> GenerateHardClues(Word word, int maxClues)
     {
         var clues = new List<string>();
 
@@ -333,22 +333,22 @@ public class ClueGenerator
         return clues;
     }
 
-    private string FindSimpleRhyme(string word)
+    private static string FindSimpleRhyme(string word)
     {
         // Simplified Swedish rhyming - just check common endings
         var ending = word.Length >= 2 ? word[^2..] : word;
 
-        return ending.ToUpper() switch
+        return ending.ToUpperInvariant() switch
         {
             "AT" => "katt",
             "US" => "hus",
             "OL" => "sol",
-            "ÖD" => "röd",
+            "Ã–D" => "rÃ¶d",
             _ => string.Empty
         };
     }
 
-    private string CreateLetterPattern(string word)
+    private static string CreateLetterPattern(string word)
     {
         // Create a pattern like "_ A _ _" for gaps
         var pattern = new List<string>();
@@ -385,9 +385,9 @@ public class ClueGenerator
         // Very simplified cryptic clue generation
         var templates = new[]
         {
-            $"Blandat {CreateSimpleAnagram(word.Text)} blir {word.Category.ToLower()}",
-            $"Utan {word.Text.First()} blir det {word.Category.ToLower()}",
-            $"Del av '{CreateHiddenWord(word.Text)}' är {word.Category.ToLower()}"
+            $"Blandat {CreateSimpleAnagram(word.Text)} blir {word.Category.ToLowerInvariant()}",
+            $"Utan {word.Text.First()} blir det {word.Category.ToLowerInvariant()}",
+            $"Del av '{CreateHiddenWord(word.Text)}' Ã¤r {word.Category.ToLowerInvariant()}"
         };
 
         return templates[_random.Next(templates.Length)];
@@ -396,13 +396,13 @@ public class ClueGenerator
     private string CreateHiddenWord(string word)
     {
         // Create a phrase where the word is hidden
-        var prefixes = new[] { "be", "av", "ut", "in", "på" };
+        var prefixes = new[] { "be", "av", "ut", "in", "pÃ¥" };
         var suffixes = new[] { "ning", "are", "het", "dom", "skap" };
 
         var prefix = prefixes[_random.Next(prefixes.Length)];
         var suffix = suffixes[_random.Next(suffixes.Length)];
 
-        return $"{prefix}{word.ToLower()}{suffix}";
+        return $"{prefix}{word.ToLowerInvariant()}{suffix}";
     }
 
     /// <summary>
@@ -430,7 +430,7 @@ public class ClueGenerator
         return alternativeClues.FirstOrDefault() ?? word.Clue;
     }
 
-    private DifficultyLevel EstimateClueComplexity(string clue)
+    private static DifficultyLevel EstimateClueComplexity(string clue)
     {
         var complexity = 0;
 
@@ -439,17 +439,17 @@ public class ClueGenerator
         complexity += wordCount * 2;
 
         // Certain words indicate higher difficulty
-        var hardWords = new[] { "anagram", "mönster", "rimmar", "blandat", "del av" };
+        var hardWords = new[] { "anagram", "mÃ¶nster", "rimmar", "blandat", "del av" };
         foreach (var hardWord in hardWords)
         {
-            if (clue.ToLower().Contains(hardWord))
+            if (clue.Contains(hardWord, StringComparison.OrdinalIgnoreCase))
             {
                 complexity += 10;
             }
         }
 
         // Numbers and symbols increase complexity
-        if (clue.Any(char.IsDigit) || clue.Contains("_"))
+        if (clue.Any(char.IsDigit) || clue.Contains('_'))
         {
             complexity += 5;
         }
@@ -465,14 +465,14 @@ public class ClueGenerator
     /// <summary>
     /// Validates that a clue is appropriate for its word
     /// </summary>
-    public bool IsValidClue(Word word, string clue)
+    public static bool IsValidClue(Word word, string clue)
     {
         if (string.IsNullOrWhiteSpace(clue))
             return false;
 
         // Clue shouldn't contain the answer
-        var clueWords = clue.ToUpper().Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        if (clueWords.Contains(word.Text.ToUpper()))
+        var clueWords = clue.ToUpperInvariant().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        if (clueWords.Contains(word.Text.ToUpperInvariant()))
             return false;
 
         // Clue shouldn't be too short or too long

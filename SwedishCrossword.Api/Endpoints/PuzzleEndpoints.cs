@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 namespace SwedishCrossword.Api;
 
 internal static class PuzzleEndpoints
@@ -17,7 +18,7 @@ internal static class PuzzleEndpoints
                 var prepared = await puzzleCache.GetPreparedAsync(todayFile, today, ct);
                 if (prepared is not null)
                 {
-                    var token = tokenService.GenerateToken(prepared.PuzzleHash, prepared.CellCount, today.ToString("yyyy-MM-dd"));
+                    var token = tokenService.GenerateToken(prepared.PuzzleHash, prepared.CellCount, today.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
                     var result = prepared.StrippedJsonTemplate.Replace("\"__TOKEN__\"", $"\"{token}\"", StringComparison.Ordinal);
                     return Results.Content(result, "application/json; charset=utf-8");
                 }
@@ -48,7 +49,7 @@ internal static class PuzzleEndpoints
                 var prepared = await puzzleCache.GetPreparedAsync(puzzleFile, parsedDate, ct);
                 if (prepared is not null)
                 {
-                    var token = tokenService.GenerateToken(prepared.PuzzleHash, prepared.CellCount, parsedDate.ToString("yyyy-MM-dd"));
+                    var token = tokenService.GenerateToken(prepared.PuzzleHash, prepared.CellCount, parsedDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
                     var result = prepared.StrippedJsonTemplate.Replace("\"__TOKEN__\"", $"\"{token}\"", StringComparison.Ordinal);
                     return Results.Content(result, "application/json; charset=utf-8");
                 }

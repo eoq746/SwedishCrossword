@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
@@ -329,7 +330,7 @@ app.MapGet("/sitemap-puzzles.xml", (PuzzleDateIndex dateIndex, TimeProvider time
     sb.AppendLine("""<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">""");
     foreach (var entry in dates)
     {
-        sb.AppendLine($"  <url><loc>https://www.svensktkorsord.se/puzzle.html?date={entry.Date}</loc><changefreq>never</changefreq><priority>0.6</priority></url>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"  <url><loc>https://www.svensktkorsord.se/puzzle.html?date={entry.Date}</loc><changefreq>never</changefreq><priority>0.6</priority></url>");
     }
     sb.AppendLine("</urlset>");
     return Results.Content(sb.ToString(), "application/xml; charset=utf-8");

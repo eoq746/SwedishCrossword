@@ -153,7 +153,7 @@ public class CrosswordGenerator
         _logger.LogDebug("Phase 1: {FillPercentage:F1}% fill", phase1Stats.FillPercentage);
 
         var placedWords = grid.Words.ToHashSet();
-        var adaptiveState = _wordPlacer.CreateAdaptiveState(options, placedWords, grid);
+        var adaptiveState = WordPlacer.CreateAdaptiveState(options, placedWords, grid);
 
         // Derive bridge length limit from grid dimensions
         var maxBridgeLength = Math.Max(grid.Width, grid.Height) - 2;
@@ -182,7 +182,7 @@ public class CrosswordGenerator
             adaptiveState.TriedWords.Clear();
 
             await _wordPlacer.PlaceWordsAdaptivelyWithValidation(
-                grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, cancellationToken, adaptiveState);
+                grid, sortedWords, placedWords, options, placedWordScores, connectivityScores, adaptiveState, 0, cancellationToken);
             var phase2AFillPercentage = grid.GetStats().FillPercentage;
             _logger.LogDebug("Phase 2A: {FillPercentage:F1}% fill", phase2AFillPercentage);
 
@@ -224,7 +224,7 @@ public class CrosswordGenerator
             return null;
         }
 
-        if (!_validator.IsValidCrossword(grid))
+        if (!GridValidator.IsValidCrossword(grid))
         {
             _logger.LogDebug("Rejected: invalid crossword structure");
             return null;

@@ -1,0 +1,97 @@
+root = true
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Repo-wide C# defaults
+# ─────────────────────────────────────────────────────────────────────────────
+[*.cs]
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+charset = utf-8-bom
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# ─── Deliberate analyzer policy choices (production code) ───
+# CA1848: Use LoggerMessage delegates.
+#   Source-generated logging is a performance optimisation aimed at very high
+#   logging volumes. This app's logging is sparse and the readability of plain
+#   ILogger calls is more valuable than the perf delta.
+dotnet_diagnostic.CA1848.severity = none
+# CA1873: Avoid potentially expensive logging.
+#   Same rationale as CA1848 — both rules push toward the same source-gen pattern.
+dotnet_diagnostic.CA1873.severity = none
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Test projects — different conventions are intentional
+# ─────────────────────────────────────────────────────────────────────────────
+# 1. Test method names use underscore_separated_words (universal C# test idiom).
+# 2. TUnit test methods must be instance methods (CA1822 cannot apply).
+# 3. Test code does not need explicit culture / StringComparison everywhere —
+#    the inputs are literal ASCII strings under our control.
+[SwedishCrossword.Tests/**.cs]
+dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CA1822.severity = none
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1310.severity = none
+dotnet_diagnostic.CA1311.severity = none
+dotnet_diagnostic.CA1861.severity = none
+dotnet_diagnostic.CA1852.severity = none
+dotnet_diagnostic.CA1869.severity = none
+dotnet_diagnostic.TUnit0018.severity = none
+
+[SwedishCrossword.Api.Tests/**.cs]
+dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CA1822.severity = none
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1310.severity = none
+dotnet_diagnostic.CA1311.severity = none
+dotnet_diagnostic.CA1861.severity = none
+dotnet_diagnostic.CA1852.severity = none
+dotnet_diagnostic.CA1869.severity = none
+dotnet_diagnostic.TUnit0018.severity = none
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Internal CLI tools — not user-facing production code
+# Relax noise from rules that matter for libraries/services but not for ad-hoc
+# import / data-fix utilities.
+# ─────────────────────────────────────────────────────────────────────────────
+[{SwedishCrossword,ClueHandler}/**.cs]
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1310.severity = none
+dotnet_diagnostic.CA1311.severity = none
+dotnet_diagnostic.CA1805.severity = none
+dotnet_diagnostic.CA1806.severity = none
+dotnet_diagnostic.CA1822.severity = none
+dotnet_diagnostic.CA1834.severity = none
+dotnet_diagnostic.CA1852.severity = none
+dotnet_diagnostic.CA1860.severity = none
+dotnet_diagnostic.CA1861.severity = none
+dotnet_diagnostic.CA1869.severity = none
+
+# One-shot data importer utilities (run manually, not in production hot path)
+[**/*Importer.cs]
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1310.severity = none
+dotnet_diagnostic.CA1311.severity = none
+dotnet_diagnostic.CA1805.severity = none
+dotnet_diagnostic.CA1806.severity = none
+dotnet_diagnostic.CA1822.severity = none
+dotnet_diagnostic.CA1834.severity = none
+dotnet_diagnostic.CA1852.severity = none
+dotnet_diagnostic.CA1860.severity = none
+dotnet_diagnostic.CA1861.severity = none
+dotnet_diagnostic.CA1869.severity = none
+
+# PrintService is a large legacy text-output helper; only GenerateJsonForWeb is
+# called from the API. The CLI/text/HTML output paths are not user-facing.
+[**/PrintService.cs]
+dotnet_diagnostic.CA1304.severity = none
+dotnet_diagnostic.CA1305.severity = none
+dotnet_diagnostic.CA1822.severity = none
+dotnet_diagnostic.CA1826.severity = none
+dotnet_diagnostic.CA1834.severity = none
+dotnet_diagnostic.CA1805.severity = none

@@ -1,14 +1,14 @@
-namespace SwedishCrossword.Models;
+﻿namespace SwedishCrossword.Models;
 
 /// <summary>
 /// Represents a single cell in the crossword grid
 /// </summary>
 public class GridCell
 {
-    public char Letter { get; set; } = '\0';
-    public bool IsBlocked { get; set; } = false;
-    public bool IsPartOfWord { get; set; } = false;
-    public int Number { get; set; } = 0; // For numbering clues
+    public char Letter { get; set; }
+    public bool IsBlocked { get; set; }
+    public bool IsPartOfWord { get; set; }
+    public int Number { get; set; } // For numbering clues
     public HashSet<string> WordIds { get; set; } = [];
 
     /// <summary>
@@ -24,7 +24,7 @@ public class GridCell
 
     public void SetLetter(char letter, string wordId)
     {
-        Letter = char.ToUpper(letter);
+        Letter = char.ToUpperInvariant(letter);
         IsPartOfWord = true;
         WordIds.Add(wordId);
     }

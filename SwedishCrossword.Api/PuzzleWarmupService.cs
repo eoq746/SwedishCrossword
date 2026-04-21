@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using SwedishCrossword.Services;
 
 namespace SwedishCrossword.Api;
@@ -92,7 +93,7 @@ sealed class PuzzleWarmupService : BackgroundService
                     var puzzle = await _generator.GenerateAsync(options, ct);
                     var json = _printService.GenerateJsonForWeb(puzzle);
                     await File.WriteAllTextAsync(filePath, json, ct);
-                    _dateIndex.Add(date.ToString("yyyy-MM-dd"), sizeKey);
+                    _dateIndex.Add(date.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture), sizeKey);
                     _logger.LogInformation("{Size} puzzle for {Date} generated successfully", sizeKey, date);
                 }
                 else

@@ -1,3 +1,4 @@
+﻿using System.Globalization;
 using System.Text;
 using SwedishCrossword.Services;
 
@@ -14,8 +15,8 @@ public class AccidentalWord
     public Direction Direction { get; set; }
     public int Length { get; set; }
     public bool? IsValidSwedishWord { get; set; }
-    public bool ShouldIncludeInPuzzle { get; set; } = false; // NEW: Mark if should be included as puzzle clue
-    public int PuzzleNumber { get; set; } = 0; // NEW: Number for the puzzle if included
+    public bool ShouldIncludeInPuzzle { get; set; } // NEW: Mark if should be included as puzzle clue
+    public int PuzzleNumber { get; set; } // NEW: Number for the puzzle if included
     public string ClueFromDictionary { get; set; } = string.Empty; // NEW: Clue from dictionary
 
     public string ValidationStatus =>
@@ -29,10 +30,10 @@ public class AccidentalWord
 
     public override string ToString()
     {
-        var direction = Direction == Direction.Across ? "v�gr�tt" : "lodr�tt";
+        var direction = Direction == Direction.Across ? "vågrätt" : "lodrätt";
         var position = $"({StartRow + 1}, {StartCol + 1})"; // 1-based for display
         var number = ShouldIncludeInPuzzle ? $" #{PuzzleNumber}" : "";
-        return $"{Text}{number} - {direction} fr�n {position} - {ValidationStatus}";
+        return $"{Text}{number} - {direction} från {position} - {ValidationStatus}";
     }
 }
 
@@ -48,13 +49,13 @@ public class CrosswordValidationResult
     public List<string> Errors { get; set; } = [];
     public List<string> Warnings { get; set; } = [];
 
-    public bool HasInvalidWords => InvalidAccidentalWords.Any();
+    public bool HasInvalidWords => InvalidAccidentalWords.Count > 0;
 
     public string GetSummary()
     {
         var parts = new List<string>();
 
-        if (AccidentalWords.Any())
+        if (AccidentalWords.Count > 0)
         {
             parts.Add($"Totalt: {AccidentalWords.Count}");
             parts.Add($"Giltiga svenska ord: {ValidAccidentalWords.Count}");
@@ -72,23 +73,23 @@ public class CrosswordValidationResult
     {
         var sb = new StringBuilder();
 
-        if (ValidAccidentalWords.Any())
+        if (ValidAccidentalWords.Count > 0)
         {
             sb.AppendLine("Giltiga oavsiktliga ord:");
             foreach (var word in ValidAccidentalWords)
             {
-                var direction = word.Direction == Direction.Across ? "v�gr�tt" : "lodr�tt";
-                sb.AppendLine($"  {word.Text} - {direction} fr�n ({word.StartRow + 1}, {word.StartCol + 1})");
+                var direction = word.Direction == Direction.Across ? "vågrätt" : "lodrätt";
+                sb.AppendLine(CultureInfo.InvariantCulture, $"  {word.Text} - {direction} från ({word.StartRow + 1}, {word.StartCol + 1})");
             }
         }
 
-        if (InvalidAccidentalWords.Any())
+        if (InvalidAccidentalWords.Count > 0)
         {
-            sb.AppendLine("Ogiltiga ord som b�r �tg�rdas:");
+            sb.AppendLine("Ogiltiga ord som bör åtgärdas:");
             foreach (var word in InvalidAccidentalWords)
             {
-                var direction = word.Direction == Direction.Across ? "v�gr�tt" : "lodr�tt";
-                sb.AppendLine($"  {word.Text} - {direction} fr�n ({word.StartRow + 1}, {word.StartCol + 1})");
+                var direction = word.Direction == Direction.Across ? "vågrätt" : "lodrätt";
+                sb.AppendLine(CultureInfo.InvariantCulture, $"  {word.Text} - {direction} från ({word.StartRow + 1}, {word.StartCol + 1})");
             }
         }
 

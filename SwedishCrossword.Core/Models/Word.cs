@@ -1,4 +1,4 @@
-namespace SwedishCrossword.Models;
+﻿namespace SwedishCrossword.Models;
 
 /// <summary>
 /// Represents a word in the crossword with its clue and placement information.
@@ -17,8 +17,8 @@ public class Word
     public int StartRow { get; set; } = -1;
     public int StartColumn { get; set; } = -1;
     public Direction Direction { get; set; } = Direction.Across;
-    public int Number { get; set; } = 0;
-    public bool IsPlaced { get; set; } = false;
+    public int Number { get; set; }
+    public bool IsPlaced { get; set; }
 
     /// <summary>
     /// Segments defining the word's path on the grid.
@@ -46,7 +46,7 @@ public class Word
 
     public Word(string text, string clue, string category = "", DifficultyLevel difficulty = DifficultyLevel.Medium, List<string>? alternativeClues = null)
     {
-        Text = text.ToUpper().Trim();
+        Text = text.ToUpperInvariant().Trim();
         Clue = clue.Trim();
         Category = category;
         Difficulty = difficulty;

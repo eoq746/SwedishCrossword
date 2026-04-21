@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Xml;
@@ -298,5 +298,6 @@ public partial class WiktionaryClueService : IDisposable
     public void Dispose()
     {
         _httpClient.Dispose();
+        GC.SuppressFinalize(this);
     }
 }

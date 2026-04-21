@@ -10,6 +10,7 @@ namespace SwedishCrossword.Services;
 /// <summary>
 /// Service for managing Swedish words and their clues
 /// </summary>
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Naming", "CA1711:Identifiers should not have incorrect suffix", Justification = "Domain-specific dictionary of Swedish words; 'Dictionary' reflects the lexicographical meaning, not System.Collections.Generic.Dictionary.")]
 public class SwedishDictionary
 {
     private readonly Dictionary<string, WordEntry> _words;
@@ -217,7 +218,7 @@ public class SwedishDictionary
                 HasValidClue(w) &&
                 position >= 0 &&
                 position < w.Word.Length &&
-                w.Word[position] == char.ToUpper(letter))
+                w.Word[position] == char.ToUpperInvariant(letter))
             .Select(ConvertToWord);
     }
 
@@ -227,7 +228,7 @@ public class SwedishDictionary
     public IEnumerable<Word> GetWordsWithLetter(char letter)
     {
         return _words.Values
-            .Where(w => HasValidClue(w) && w.Word.Contains(char.ToUpper(letter)))
+            .Where(w => HasValidClue(w) && w.Word.Contains(char.ToUpperInvariant(letter)))
             .Select(ConvertToWord);
     }
 
