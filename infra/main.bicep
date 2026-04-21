@@ -55,7 +55,7 @@ param adminUserIds string = ''
 @description('Deploy Azure SQL resources. Set to true when SQL is needed.')
 param deployDatabase bool = true
 
-@description('Create ACR pull role assignment. Set to true for first-time manual deploy, false for CI/CD (requires Owner or User Access Administrator).')
+@description('Create role assignments (AcrPull on ACR + Key Vault Secrets User on the Key Vault) for the managed identity. Set to true for first-time manual deploy AND any time new role-assignment-bearing resources are added (e.g. when Key Vault was introduced). Set to false for CI/CD which typically lacks Owner / User Access Administrator. If CI/CD reports "Unable to get value using Managed identity ... unable to fetch secret", run a manual deploy once with createRoleAssignment=true (or grant the Key Vault Secrets User role to the managed identity manually) and then re-run CI/CD.')
 param createRoleAssignment bool = true
 
 var sqlServerName = '${appName}-sql-${suffix}'
