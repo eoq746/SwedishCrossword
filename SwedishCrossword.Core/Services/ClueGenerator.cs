@@ -244,7 +244,7 @@ public class ClueGenerator
     private IEnumerable<string> GenerateDifficultyBasedClues(Word word, int maxClues)
     {
         var clues = new List<string>();
-        
+
         if (maxClues <= 0) return clues;
 
         switch (word.Difficulty)
@@ -337,11 +337,11 @@ public class ClueGenerator
     {
         // Simplified Swedish rhyming - just check common endings
         var ending = word.Length >= 2 ? word[^2..] : word;
-        
+
         return ending.ToUpper() switch
         {
             "AT" => "katt",
-            "US" => "hus", 
+            "US" => "hus",
             "OL" => "sol",
             "ÖD" => "röd",
             _ => string.Empty
@@ -375,7 +375,7 @@ public class ClueGenerator
             var swapIndex = _random.Next(letters.Length);
             (letters[i], letters[swapIndex]) = (letters[swapIndex], letters[i]);
         }
-        
+
         var anagram = new string(letters);
         return anagram == word ? string.Empty : anagram; // Don't return if it's the same
     }
@@ -398,10 +398,10 @@ public class ClueGenerator
         // Create a phrase where the word is hidden
         var prefixes = new[] { "be", "av", "ut", "in", "på" };
         var suffixes = new[] { "ning", "are", "het", "dom", "skap" };
-        
+
         var prefix = prefixes[_random.Next(prefixes.Length)];
         var suffix = suffixes[_random.Next(suffixes.Length)];
-        
+
         return $"{prefix}{word.ToLower()}{suffix}";
     }
 
@@ -416,7 +416,7 @@ public class ClueGenerator
         }
 
         var alternativeClues = GenerateAlternativeClues(word, 5).ToList();
-        
+
         // Try to find a clue that matches the target difficulty
         foreach (var clue in alternativeClues)
         {

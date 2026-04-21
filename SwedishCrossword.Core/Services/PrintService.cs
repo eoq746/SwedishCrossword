@@ -70,7 +70,7 @@ public class PrintService
     private string CreateTitle(CrosswordPuzzle puzzle, PrintOptions options)
     {
         var title = new StringBuilder();
-        
+
         if (!string.IsNullOrEmpty(options.Title))
         {
             title.AppendLine(CenterText(options.Title, 60));
@@ -81,7 +81,7 @@ public class PrintService
         }
 
         title.AppendLine(CenterText(new string('=', 60), 60));
-        
+
         if (options.IncludeDate)
         {
             title.AppendLine(CenterText($"Skapat: {puzzle.CreatedAt:yyyy-MM-dd HH:mm}", 60));
@@ -94,7 +94,7 @@ public class PrintService
     {
         var stats = puzzle.Statistics;
         var sb = new StringBuilder();
-        
+
         sb.AppendLine($"Storlek: {puzzle.Grid.Width} x {puzzle.Grid.Height}");
         sb.AppendLine($"Antal ord: {stats.WordCount}");
         sb.AppendLine($"Fyllnadsgrad: {stats.FillPercentage:F1}%");
@@ -307,9 +307,9 @@ public class PrintService
             {
                 var number = GetNumber(item);
                 var clue = GetClueText(item, options);
-                
+
                 sb.AppendLine($"{number,2}. {clue}");
-                
+
                 if (options.ShowWordLength)
                 {
                     var length = GetWordLength(item);
@@ -326,9 +326,9 @@ public class PrintService
             {
                 var number = GetNumber(item);
                 var clue = GetClueText(item, options);
-                
+
                 sb.AppendLine($"{number,2}. {clue}");
-                
+
                 if (options.ShowWordLength)
                 {
                     var length = GetWordLength(item);
@@ -381,13 +381,13 @@ public class PrintService
             document.AppendLine("KORSORD:");
             document.AppendLine();
             document.AppendLine(CreateGrid(puzzle.Grid, false, printOptions.GridStyle));
-            
+
             // Page break indicator
             document.AppendLine();
             document.AppendLine(CenterText("--- VAND SIDAN FOR LEDTRADAR ---", 60));
             document.AppendLine(new string('=', 60));
             document.AppendLine();
-            
+
             // Clues on page 2
             document.AppendLine("LEDTRADAR:");
             document.AppendLine();
@@ -405,20 +405,20 @@ public class PrintService
     private string CreateCompactLayout(CrosswordPuzzle puzzle, PrintOptions options)
     {
         var sb = new StringBuilder();
-        
+
         // Grid on the left, clues on the right for small puzzles
         if (puzzle.Grid.Width <= 11 && puzzle.Grid.Height <= 11)
         {
             var gridLines = CreateGrid(puzzle.Grid, false, options.GridStyle).Split('\n');
             var cluesLines = CreateCluesList(puzzle, options).Split('\n');
-            
+
             var maxLines = Math.Max(gridLines.Length, cluesLines.Length);
-            
+
             for (int i = 0; i < maxLines; i++)
             {
                 var gridLine = i < gridLines.Length ? gridLines[i].PadRight(45) : new string(' ', 45);
                 var clueLine = i < cluesLines.Length ? cluesLines[i] : "";
-                
+
                 sb.AppendLine($"{gridLine} {clueLine}");
             }
         }
@@ -461,7 +461,7 @@ public class PrintService
     public string GenerateJsonForWeb(CrosswordPuzzle puzzle)
     {
         ArgumentNullException.ThrowIfNull(puzzle);
-        
+
         var grid = puzzle.Grid;
         var (across, down) = GetAllClues(puzzle);
         var difficulty = ComputeDifficulty(puzzle, across, down);
@@ -483,7 +483,7 @@ public class PrintService
             for (int col = 0; col < grid.Width; col++)
             {
                 var cell = grid.GetCell(row, col);
-                
+
                 if (cell.IsBlocked || cell.HasAsterisk)
                 {
                     sb.Append("null");
@@ -507,7 +507,7 @@ public class PrintService
                 {
                     sb.Append("null");
                 }
-                
+
                 if (col < grid.Width - 1) sb.Append(",");
             }
             sb.Append("]");
@@ -515,10 +515,10 @@ public class PrintService
             sb.AppendLine();
         }
         sb.AppendLine("  ],");
-        
+
         // Clues
         sb.AppendLine("  \"clues\": {");
-        
+
         // Across clues
         sb.AppendLine("    \"across\": [");
         var acrossItems = across.OrderBy(x => GetNumber(x)).ToList();
@@ -534,13 +534,13 @@ public class PrintService
                 _ => ""
             };
             var cellsJson = GetCellsJson(item);
-            
+
             sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\",\"cells\":{cellsJson}}}");
             if (i < acrossItems.Count - 1) sb.Append(",");
             sb.AppendLine();
         }
         sb.AppendLine("    ],");
-        
+
         // Down clues
         sb.AppendLine("    \"down\": [");
         var downItems = down.OrderBy(x => GetNumber(x)).ToList();
@@ -556,7 +556,7 @@ public class PrintService
                 _ => ""
             };
             var cellsJson = GetCellsJson(item);
-            
+
             sb.Append($"      {{\"number\":{number},\"clue\":\"{clue}\",\"answer\":\"{answer}\",\"cells\":{cellsJson}}}");
             if (i < downItems.Count - 1) sb.Append(",");
             sb.AppendLine();
@@ -564,7 +564,7 @@ public class PrintService
         sb.AppendLine("    ]");
         sb.AppendLine("  }");
         sb.AppendLine("}");
-        
+
         return sb.ToString();
     }
 
@@ -623,7 +623,7 @@ public class PrintService
     public string GenerateHtmlOutput(CrosswordPuzzle puzzle, PrintOptions options)
     {
         var html = new StringBuilder();
-        
+
         html.AppendLine("<!DOCTYPE html>");
         html.AppendLine("<html>");
         html.AppendLine("<head>");
@@ -634,26 +634,26 @@ public class PrintService
         html.AppendLine("    </style>");
         html.AppendLine("</head>");
         html.AppendLine("<body>");
-        
+
         // Title
         if (options.IncludeTitle)
         {
             html.AppendLine($"    <h1>{options.Title ?? "Svenskt Korsord"}</h1>");
         }
-        
+
         // Grid
         html.AppendLine("    <div class='crossword-grid'>");
         html.AppendLine(CreateHtmlGrid(puzzle.Grid, false));
         html.AppendLine("    </div>");
-        
+
         // Clues
         html.AppendLine("    <div class='clues'>");
         html.AppendLine(CreateHtmlClues(puzzle, options));
         html.AppendLine("    </div>");
-        
+
         html.AppendLine("</body>");
         html.AppendLine("</html>");
-        
+
         return html.ToString();
     }
 
@@ -686,16 +686,16 @@ public class PrintService
     private string CreateHtmlGrid(CrosswordGrid grid, bool showSolution)
     {
         var html = new StringBuilder();
-        
+
         html.AppendLine("        <table class='grid-table'>");
-        
+
         for (int row = 0; row < grid.Height; row++)
         {
             html.AppendLine("            <tr>");
             for (int col = 0; col < grid.Width; col++)
             {
                 var cell = grid.GetCell(row, col);
-                
+
                 if (cell.IsBlocked)
                 {
                     html.AppendLine("                <td class='blocked'></td>");
@@ -711,15 +711,15 @@ public class PrintService
                     {
                         content = $"<small>{cell.Number}</small>";
                     }
-                    
+
                     html.AppendLine($"                <td>{content}</td>");
                 }
             }
             html.AppendLine("            </tr>");
         }
-        
+
         html.AppendLine("        </table>");
-        
+
         return html.ToString();
     }
 
@@ -727,7 +727,7 @@ public class PrintService
     {
         var (across, down) = GetAllClues(puzzle);
         var html = new StringBuilder();
-        
+
         if (across.Count > 0)
         {
             html.AppendLine("        <div class='clue-section'>");
@@ -753,7 +753,7 @@ public class PrintService
             }
             html.AppendLine("        </div>");
         }
-        
+
         // Add legend if we have bonus words
         var hasAccidentalWords = puzzle.ValidationResult?.ValidAccidentalWords?.Any(w => w.ShouldIncludeInPuzzle) == true;
         if (hasAccidentalWords)
@@ -762,7 +762,7 @@ public class PrintService
             html.AppendLine("            <p><small>? = Bonusord (oavsiktigt giltigt ord)</small></p>");
             html.AppendLine("        </div>");
         }
-        
+
         return html.ToString();
     }
 
@@ -861,7 +861,7 @@ public class PrintService
 
         return (across, down);
     }
-    
+
     /// <summary>
     /// Gets the number for either a Word or AccidentalWord
     /// </summary>
@@ -874,7 +874,7 @@ public class PrintService
             _ => 0
         };
     }
-    
+
     /// <summary>
     /// Gets the clue text for either a Word or AccidentalWord
     /// </summary>
@@ -882,14 +882,14 @@ public class PrintService
     {
         return item switch
         {
-            Word word => options.AdjustClues ? 
-                _clueGenerator.AdjustClueForDifficulty(word, options.TargetDifficulty ?? word.Difficulty) : 
+            Word word => options.AdjustClues ?
+                _clueGenerator.AdjustClueForDifficulty(word, options.TargetDifficulty ?? word.Difficulty) :
                 word.GetRandomClue(),
-            AccidentalWord accWord => $"{accWord.ClueFromDictionary}", 
+            AccidentalWord accWord => $"{accWord.ClueFromDictionary}",
             _ => "Okänd ledtråd"
         };
     }
-    
+
     /// <summary>
     /// Gets the word length for either a Word or AccidentalWord
     /// </summary>
@@ -909,7 +909,7 @@ public class PrintService
     private string GetCellsJson(object item)
     {
         var positions = new List<(int Row, int Col)>();
-        
+
         switch (item)
         {
             case Word w when w.IsPlaced:
@@ -925,7 +925,7 @@ public class PrintService
                 }
                 break;
         }
-        
+
         var cells = positions.Select(p => $"[{p.Row},{p.Col}]");
         return "[" + string.Join(",", cells) + "]";
     }
@@ -948,20 +948,20 @@ public record PrintOptions
     public DifficultyLevel? TargetDifficulty { get; init; }
 
     public static PrintOptions Default => new();
-    
+
     public static PrintOptions PuzzleOnly => new()
     {
         IncludeSolution = false,
         IncludeStatistics = false,
         ShowWordLength = false
     };
-    
+
     public static PrintOptions WithSolution => new()
     {
         IncludeSolution = true,
         IncludeStatistics = true
     };
-    
+
     public static PrintOptions ForPrinter => new()
     {
         GridStyle = GridStyle.ASCII,

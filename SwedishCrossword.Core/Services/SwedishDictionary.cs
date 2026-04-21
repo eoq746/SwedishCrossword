@@ -213,10 +213,10 @@ public class SwedishDictionary
     public IEnumerable<Word> GetWordsWithLetterAt(char letter, int position)
     {
         return _words.Values
-            .Where(w => 
+            .Where(w =>
                 HasValidClue(w) &&
-                position >= 0 && 
-                position < w.Word.Length && 
+                position >= 0 &&
+                position < w.Word.Length &&
                 w.Word[position] == char.ToUpper(letter))
             .Select(ConvertToWord);
     }
@@ -255,9 +255,9 @@ public class SwedishDictionary
     public IEnumerable<Word> FindIntersectingWords(Word word, char sharedLetter)
     {
         return _words.Values
-            .Where(w => 
+            .Where(w =>
                 HasValidClue(w) &&
-                !w.Word.Equals(word.Text, StringComparison.OrdinalIgnoreCase) && 
+                !w.Word.Equals(word.Text, StringComparison.OrdinalIgnoreCase) &&
                 w.Word.Contains(sharedLetter))
             .Select(ConvertToWord)
             .Where(w => !w.IsPlaced);
@@ -270,7 +270,7 @@ public class SwedishDictionary
     {
         // Prefer words with common Swedish letters and vowels
         var commonLetters = new HashSet<char> { 'A', 'E', 'I', 'O', 'U', 'R', 'S', 'T', 'N', 'L' };
-        
+
         return _words.Values
             .Where(HasValidClue)
             .Where(w => w.Word.Length <= maxLength && w.Word.Length >= 3)
@@ -297,7 +297,7 @@ public class SwedishDictionary
                 MaxLength = 0
             };
         }
-        
+
         var stats = new DictionaryStats
         {
             TotalWords = _words.Count,
@@ -325,17 +325,17 @@ public class SwedishDictionary
             throw new ArgumentException("Word and clue cannot be empty");
 
         var word = new Word(text, clue, category, difficulty);
-        
+
         // Check for duplicates
         if (_words.Values.Any(w => w.Word.Equals(word.Text, StringComparison.OrdinalIgnoreCase)))
             throw new InvalidOperationException($"Word '{word.Text}' already exists in dictionary");
 
-        _words[word.Text] = new WordEntry 
-        { 
-            Word = word.Text, 
-            Clue = word.Clue, 
-            Category = word.Category, 
-            Difficulty = word.Difficulty.ToString() 
+        _words[word.Text] = new WordEntry
+        {
+            Word = word.Text,
+            Clue = word.Clue,
+            Category = word.Category,
+            Difficulty = word.Difficulty.ToString()
         };
     }
 

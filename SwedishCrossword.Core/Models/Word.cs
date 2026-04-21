@@ -73,7 +73,7 @@ public class Word
     {
         if (position < 0 || position >= Text.Length)
             throw new ArgumentOutOfRangeException(nameof(position));
-        
+
         return Text[position];
     }
 

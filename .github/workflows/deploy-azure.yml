@@ -25,7 +25,49 @@ env:
   CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
 
 jobs:
+  # ----------------------------------------------------------------------
+  # Preflight quality gate: format, build, test, and vulnerability check.
+  # Deploy is skipped when any of these fail.
+  # ----------------------------------------------------------------------
+  test:
+    name: Build & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@3e891b0cb619bf60e2c25674b222b8940e2c1c25 # v4.1.0
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Verify formatting (whitespace + style)
+        run: |
+          set -euo pipefail
+          dotnet format whitespace --verify-no-changes --no-restore
+          dotnet format style --verify-no-changes --no-restore
+
+      - name: Build (Release)
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test (Release)
+        run: dotnet test --configuration Release --no-build --verbosity minimal
+
+      - name: Check for vulnerable NuGet packages
+        run: |
+          set -euo pipefail
+          OUTPUT=$(dotnet list package --vulnerable --include-transitive 2>&1)
+          echo "$OUTPUT"
+          if echo "$OUTPUT" | grep -q "has the following vulnerable packages"; then
+            echo "::error::Vulnerable packages detected. See output above."
+            exit 1
+          fi
+
   build-and-deploy:
+    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

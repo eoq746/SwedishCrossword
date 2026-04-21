@@ -24,7 +24,7 @@ public class GridValidatorTests
         var grid = new CrosswordGrid(10, 10);
         var word1 = new Word("CAT", "Animal");
         var word2 = new Word("ACE", "Card");
-        
+
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 3, Direction.Down);
 
@@ -49,7 +49,7 @@ public class GridValidatorTests
         var grid = new CrosswordGrid(10, 10);
         var word1 = new Word("CAT", "Animal");
         var word2 = new Word("ACE", "Card");
-        
+
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 3, Direction.Down);
 

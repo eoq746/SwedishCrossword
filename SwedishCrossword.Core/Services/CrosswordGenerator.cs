@@ -165,7 +165,7 @@ public class CrosswordGenerator
         // next cycle, and adaptive placement opens new gap/bridge/vinkelord
         // opportunities in return.
         for (int cycle = 1; cycle <= 1; cycle++) // one cycle for now, can increase if needed
-        {          
+        {
             var cycleStart = grid.GetStats().FilledCells;
 
             // Sub-phase A: Adaptive word placement with integrated vinkelord (bounded batch)

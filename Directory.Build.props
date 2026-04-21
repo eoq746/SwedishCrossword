@@ -1,0 +1,21 @@
+<Project>
+
+  <!--
+    Repo-wide MSBuild defaults. Applied to every project in the solution.
+    Keeps per-project .csproj files focused on what's unique to that project.
+  -->
+  <PropertyGroup>
+    <!-- Run built-in code-style analyzers during build (and therefore in CI),
+         not only inside the IDE. Violations that dotnet format would flag
+         become build warnings so they show up in PR checks. -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+
+    <!-- Use the recommended analyzer set for the latest .NET.
+         'latest-recommended' is stricter than the default 'latest'. -->
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+
+    <!-- Generate documentation XML only when explicitly requested per-project. -->
+    <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>

@@ -296,7 +296,7 @@ public class SwedishDictionaryTests
         var words = dictionary.GetStarterWords(maxLength: 6).ToList();
 
         await Assert.That(words).IsNotEmpty();
-        
+
         var commonLetters = new HashSet<char> { 'A', 'E', 'I', 'O', 'U', 'R', 'S', 'T', 'N', 'L' };
         await Assert.That(words.All(w => w.Text.Any(c => commonLetters.Contains(c)))).IsTrue();
     }

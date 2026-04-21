@@ -275,10 +275,10 @@ public class CrosswordGridTests
         var grid = new CrosswordGrid(10, 10);
         var word1 = new Word("AB", "First");
         var word2 = new Word("CD", "Second");
-        
+
         grid.TryPlaceWord(word1, 0, 0, Direction.Across);
         grid.TryPlaceWord(word2, 2, 0, Direction.Across);
-        
+
         grid.RenumberClues();
 
         await Assert.That(word1.Number).IsEqualTo(1);

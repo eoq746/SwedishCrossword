@@ -29,15 +29,15 @@ internal class WordAnalyzer
         {
             if (fingerprint == _cachedWordsFingerprint && _cachedWordAnalysis != null)
             {
-                return [.._cachedWordAnalysis];
+                return [.. _cachedWordAnalysis];
             }
 
             var disk = LoadAnalysisFromDisk(fingerprint, words);
             if (disk != null)
             {
                 _cachedWordsFingerprint = fingerprint;
-                _cachedWordAnalysis = [..disk];
-                return [.._cachedWordAnalysis];
+                _cachedWordAnalysis = [.. disk];
+                return [.. _cachedWordAnalysis];
             }
 
             var letterWordCount = new Dictionary<char, int>();
@@ -67,7 +67,7 @@ internal class WordAnalyzer
             }
 
             _cachedWordsFingerprint = fingerprint;
-            _cachedWordAnalysis = [..analysis];
+            _cachedWordAnalysis = [.. analysis];
 
             SaveAnalysisToDisk(fingerprint, _cachedWordAnalysis);
 

@@ -53,7 +53,7 @@ public class CrosswordValidationResult
     public string GetSummary()
     {
         var parts = new List<string>();
-        
+
         if (AccidentalWords.Any())
         {
             parts.Add($"Totalt: {AccidentalWords.Count}");

@@ -248,8 +248,8 @@ internal class Program
     }
 
     private static async Task GeneratePuzzle(
-        CrosswordGenerator generator, 
-        PrintService printService, 
+        CrosswordGenerator generator,
+        PrintService printService,
         CrosswordGenerationOptions options,
         string difficulty)
     {
@@ -305,7 +305,7 @@ internal class Program
 
         // Find the bin output wwwroot directory
         var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
-        
+
         if (!Directory.Exists(wwwrootPath))
         {
             Directory.CreateDirectory(wwwrootPath);
@@ -357,7 +357,7 @@ internal class Program
         }
 
         Console.WriteLine();
-        
+
         // Ask if user wants to start a local web server
         Console.Write("Vill du starta en lokal webbserver? (j/n): ");
         if (Console.ReadLine()?.ToLower() == "j")
@@ -417,7 +417,7 @@ internal class Program
         while (dir != null)
         {
             // Skip bin/obj directories
-            if (!dir.FullName.Contains(Path.DirectorySeparatorChar + "bin" + Path.DirectorySeparatorChar) && 
+            if (!dir.FullName.Contains(Path.DirectorySeparatorChar + "bin" + Path.DirectorySeparatorChar) &&
                 !dir.FullName.Contains(Path.DirectorySeparatorChar + "obj" + Path.DirectorySeparatorChar) &&
                 !dir.FullName.EndsWith(Path.DirectorySeparatorChar + "bin") &&
                 !dir.FullName.EndsWith(Path.DirectorySeparatorChar + "obj"))
@@ -478,7 +478,7 @@ internal class Program
     {
         var fullPath = Path.GetFullPath(wwwrootPath);
         const string url = "http://localhost:8080";
-        
+
         Console.WriteLine();
         Console.WriteLine("Startar lokal webbserver...");
         Console.WriteLine($"Mapp: {fullPath}");
@@ -513,7 +513,7 @@ internal class Program
         {
             return;
         }
-        
+
         Console.WriteLine("Kunde inte starta någon webbserver.");
         Console.WriteLine("Installera http-server: npm install -g http-server");
         Console.WriteLine("Eller använd Python: python -m http.server 8080");
@@ -647,14 +647,14 @@ internal class Program
         Console.WriteLine();
 
         var importer = new LexinWordImporter();
-        
+
         try
         {
             var words = await importer.ImportAndExportAsync();
-            
+
             Console.WriteLine();
             LexinWordImporter.PrintStatistics(words);
-            
+
             Console.WriteLine();
             Console.WriteLine("Import klar!");
             Console.WriteLine("   Starta om programmet för att använda de nya orden.");
@@ -662,7 +662,7 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Import misslyckades: {ex.Message}");
-            
+
             if (ex.InnerException != null)
             {
                 Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");
@@ -694,8 +694,8 @@ internal class Program
         Console.Write("Ange minsta konfidensnivå (1.0-5.0, standard 3.0): ");
         var levelInput = Console.ReadLine();
         var minLevel = 3.0;
-        if (!string.IsNullOrWhiteSpace(levelInput) && double.TryParse(levelInput, 
-            System.Globalization.NumberStyles.Float, 
+        if (!string.IsNullOrWhiteSpace(levelInput) && double.TryParse(levelInput,
+            System.Globalization.NumberStyles.Float,
             System.Globalization.CultureInfo.InvariantCulture, out var parsedLevel))
         {
             minLevel = Math.Clamp(parsedLevel, 1.0, 5.0);
@@ -713,14 +713,14 @@ internal class Program
         Console.WriteLine();
 
         var importer = new SynonymPairImporter();
-        
+
         try
         {
             var words = await importer.ImportAndExportAsync(minLevel: minLevel);
-            
+
             Console.WriteLine();
             SynonymPairImporter.PrintStatistics(words);
-            
+
             Console.WriteLine();
             Console.WriteLine("Import klar!");
             Console.WriteLine("   Starta om programmet för att använda de nya orden.");
@@ -728,7 +728,7 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Import misslyckades: {ex.Message}");
-            
+
             if (ex.InnerException != null)
             {
                 Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");
@@ -773,14 +773,14 @@ internal class Program
         Console.WriteLine();
 
         var importer = new KellyWordImporter();
-        
+
         try
         {
             var words = await importer.ImportAndExportAsync();
-            
+
             Console.WriteLine();
             KellyWordImporter.PrintStatistics(words);
-            
+
             Console.WriteLine();
             Console.WriteLine("Import klar!");
             Console.WriteLine("   Starta om programmet för att använda de nya orden.");
@@ -788,7 +788,7 @@ internal class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Import misslyckades: {ex.Message}");
-            
+
             if (ex.InnerException != null)
             {
                 Console.WriteLine($"   Detaljer: {ex.InnerException.Message}");

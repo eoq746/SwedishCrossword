@@ -29,7 +29,7 @@ public class LexinWordImporter
     public async Task<string> EnsureXmlDownloadedAsync(string? customPath = null)
     {
         var xmlPath = customPath ?? GetXmlFilePath();
-        
+
         if (File.Exists(xmlPath))
         {
             Console.WriteLine($"Using existing XML file: {xmlPath}");
@@ -64,7 +64,7 @@ public class LexinWordImporter
     public async Task<List<WordEntry>> ImportFromXmlAsync(string? xmlPath = null)
     {
         var path = xmlPath ?? GetXmlFilePath();
-        
+
         if (!File.Exists(path))
         {
             throw new FileNotFoundException($"Lexin XML file not found at: {path}. Call EnsureXmlDownloadedAsync first.");
@@ -93,7 +93,7 @@ public class LexinWordImporter
             {
                 var articleXml = await reader.ReadOuterXmlAsync();
                 var extractedWords = ParseArticle(articleXml);
-                
+
                 foreach (var word in extractedWords)
                 {
                     // Filter words suitable for crosswords
@@ -199,7 +199,7 @@ public class LexinWordImporter
                         var idiomText = idiom.FirstChild?.Value?.Trim();
                         var idiomDef = idiom.SelectSingleNode("Definition")?.InnerText?.Trim();
 
-                        if (!string.IsNullOrWhiteSpace(idiomText) && 
+                        if (!string.IsNullOrWhiteSpace(idiomText) &&
                             !string.IsNullOrWhiteSpace(idiomDef) &&
                             IsValidCrosswordWord(idiomText))
                         {
@@ -327,12 +327,12 @@ public class LexinWordImporter
     /// Full import pipeline: download, parse, and export to JSON.
     /// </summary>
     public async Task<List<WordEntry>> ImportAndExportAsync(
-        string? xmlPath = null, 
+        string? xmlPath = null,
         string? jsonPath = null,
         bool forceDownload = false)
     {
         var xmlFile = xmlPath ?? GetXmlFilePath();
-        
+
         if (forceDownload && File.Exists(xmlFile))
         {
             File.Delete(xmlFile);
@@ -361,7 +361,7 @@ public class LexinWordImporter
     public static void PrintStatistics(List<WordEntry> words)
     {
         Console.OutputEncoding = Encoding.UTF8;
-        
+
         Console.WriteLine("\n=== Import Statistics ===");
         Console.WriteLine($"Total words: {words.Count}");
 

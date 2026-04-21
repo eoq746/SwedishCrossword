@@ -64,7 +64,7 @@ public class CrosswordGrid
     {
         if (!IsValidPosition(row, column))
             throw new ArgumentOutOfRangeException($"Position ({row}, {column}) is outside grid bounds");
-        
+
         return _cells[row, column];
     }
 
@@ -203,7 +203,7 @@ public class CrosswordGrid
     private GridBackup CreateGridBackup()
     {
         var backup = new GridBackup();
-        
+
         // Back up all cell states
         for (int row = 0; row < Height; row++)
         {
@@ -214,7 +214,7 @@ public class CrosswordGrid
                 {
                     Letter = cell.Letter,
                     Number = cell.Number,
-                    WordIds = [..cell.WordIds],
+                    WordIds = [.. cell.WordIds],
                     IsPartOfWord = cell.IsPartOfWord,
                     BendArrowDirection = cell.BendArrowDirection
                 };
@@ -222,8 +222,8 @@ public class CrosswordGrid
         }
 
         // Back up words list
-        backup.WordsList = [.._words];
-        
+        backup.WordsList = [.. _words];
+
         return backup;
     }
 
@@ -238,7 +238,7 @@ public class CrosswordGrid
             var (row, col) = kvp.Key;
             var cellBackup = kvp.Value;
             var cell = GetCell(row, col);
-            
+
             cell.WordIds.Clear();
             cell.WordIds.UnionWith(cellBackup.WordIds);
             cell.Letter = cellBackup.Letter;
@@ -246,11 +246,11 @@ public class CrosswordGrid
             cell.IsPartOfWord = cellBackup.IsPartOfWord;
             cell.BendArrowDirection = cellBackup.BendArrowDirection;
         }
-        
+
         // Restore words list and reset any word that was being placed
         _words.Clear();
         _words.AddRange(backup.WordsList);
-        
+
         // Reset any word states that might have been modified
         foreach (var word in _words)
         {
@@ -306,7 +306,7 @@ public class CrosswordGrid
             {
                 Letter = cell.Letter,
                 Number = cell.Number,
-                WordIds = [..cell.WordIds],
+                WordIds = [.. cell.WordIds],
                 IsPartOfWord = cell.IsPartOfWord,
                 BendArrowDirection = cell.BendArrowDirection
             };
@@ -360,7 +360,7 @@ public class CrosswordGrid
             {
                 Letter = cell.Letter,
                 Number = cell.Number,
-                WordIds = [..cell.WordIds],
+                WordIds = [.. cell.WordIds],
                 IsPartOfWord = cell.IsPartOfWord,
                 BendArrowDirection = cell.BendArrowDirection
             };
@@ -417,13 +417,13 @@ public class CrosswordGrid
         {
             int row = direction == Direction.Across ? startRow : startRow + i;
             int col = direction == Direction.Across ? startCol + i : startCol;
-            
+
             var cell = GetCell(row, col);
-            
+
             // Cell must be empty or contain the same letter
             if (cell.IsBlocked)
                 return false;
-            
+
             if (cell.HasLetter && cell.Letter != word.GetCharAt(i))
                 return false;
         }
@@ -563,7 +563,7 @@ public class CrosswordGrid
         {
             int row = direction == Direction.Across ? startRow : startRow + i;
             int col = direction == Direction.Across ? startCol + i : startCol;
-            
+
             var cell = GetCell(row, col);
             cell.SetLetter(word.GetCharAt(i), word.Id);
         }
@@ -593,7 +593,7 @@ public class CrosswordGrid
         {
             var cell = GetCell(row, col);
             cell.WordIds.Remove(word.Id);
-            
+
             if (cell.WordIds.Count == 0)
             {
                 cell.Clear();
@@ -632,7 +632,7 @@ public class CrosswordGrid
                         {
                             int row = existingWord.StartRow - myIdx;
                             int col = existingWord.StartColumn + theirIdx;
-                            
+
                             if (row >= 0 && row < Height && col >= 0 && col < Width)
                             {
                                 yield return (row, col, Direction.Down, existingWord, myIdx, theirIdx);
@@ -652,7 +652,7 @@ public class CrosswordGrid
                         {
                             int row = existingWord.StartRow + theirIdx;
                             int col = existingWord.StartColumn - myIdx;
-                            
+
                             if (row >= 0 && row < Height && col >= 0 && col < Width)
                             {
                                 yield return (row, col, Direction.Across, existingWord, myIdx, theirIdx);
@@ -790,13 +790,13 @@ public class CrosswordGrid
     public string ToDisplayString(bool showNumbers = false, bool showSolution = true)
     {
         var sb = new StringBuilder();
-        
+
         for (int row = 0; row < Height; row++)
         {
             for (int col = 0; col < Width; col++)
             {
                 var cell = GetCell(row, col);
-                
+
                 if (cell.IsBlocked)
                 {
                     sb.Append('#');
@@ -828,13 +828,13 @@ public class CrosswordGrid
                 {
                     sb.Append('_');
                 }
-                
+
                 if (col < Width - 1)
                     sb.Append(' ');
             }
             sb.AppendLine();
         }
-        
+
         return sb.ToString();
     }
 
@@ -950,9 +950,9 @@ public class CrosswordGrid
                         accWord.ClueFromDictionary = clue;
 
                         // Check if this accidental word doesn't conflict with intentional words at same position
-                        bool isAlreadyIntentional = Words.Any(w => 
-                            w.StartRow == accWord.StartRow && 
-                            w.StartColumn == accWord.StartCol && 
+                        bool isAlreadyIntentional = Words.Any(w =>
+                            w.StartRow == accWord.StartRow &&
+                            w.StartColumn == accWord.StartCol &&
                             w.Direction == accWord.Direction &&
                             w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
 
@@ -979,23 +979,23 @@ public class CrosswordGrid
     {
         var accidentalWords = new List<AccidentalWord>();
         var detectedWords = new HashSet<string>();
-        
+
         // For each cell the new word occupies, we need to check:
         // 1. The full horizontal word that passes through that cell
         // 2. The full vertical word that passes through that cell
-        
+
         for (int i = 0; i < length; i++)
         {
             int cellRow = direction == Direction.Across ? startRow : startRow + i;
             int cellCol = direction == Direction.Across ? startCol + i : startCol;
-            
+
             // Find the START of any horizontal word that includes this cell
             int horizStartCol = cellCol;
             while (horizStartCol > 0 && GetCell(cellRow, horizStartCol - 1).HasLetter)
             {
                 horizStartCol--;
             }
-            
+
             // Extract and validate the horizontal word starting from its actual start
             var horizontalWord = ExtractHorizontalWord(cellRow, horizStartCol);
             if (horizontalWord != null)
@@ -1012,14 +1012,14 @@ public class CrosswordGrid
                     detectedWords.Add(wordKey);
                 }
             }
-            
+
             // Find the START of any vertical word that includes this cell
             int vertStartRow = cellRow;
             while (vertStartRow > 0 && GetCell(vertStartRow - 1, cellCol).HasLetter)
             {
                 vertStartRow--;
             }
-            
+
             // Extract and validate the vertical word starting from its actual start
             var verticalWord = ExtractVerticalWord(vertStartRow, cellCol);
             if (verticalWord != null)
@@ -1037,7 +1037,7 @@ public class CrosswordGrid
                 }
             }
         }
-        
+
         // Also check cells immediately before and after the word in its direction
         // These could form new words by extending existing sequences
         if (direction == Direction.Across)
@@ -1067,7 +1067,7 @@ public class CrosswordGrid
                     }
                 }
             }
-            
+
             // Check cell after word end
             int endCol = startCol + length;
             if (endCol < Width && GetCell(startRow, endCol).HasLetter)
@@ -1113,7 +1113,7 @@ public class CrosswordGrid
                     }
                 }
             }
-            
+
             // Check cell after word end
             int endRow = startRow + length;
             if (endRow < Height && GetCell(endRow, startCol).HasLetter)
@@ -1157,7 +1157,7 @@ public class CrosswordGrid
         }
 
         string wordText = sb.ToString();
-        
+
         // Any sequence of 2 or more letters is a potential word that needs validation
         if (wordText.Length >= 2)
         {
@@ -1195,7 +1195,7 @@ public class CrosswordGrid
         }
 
         string wordText = sb.ToString();
-        
+
         // Any sequence of 2 or more letters is a potential word that needs validation
         if (wordText.Length >= 2)
         {
@@ -1215,9 +1215,9 @@ public class CrosswordGrid
     private bool IsAccidentalWord(AccidentalWord accWord)
     {
         // Check if this word is already an intentionally placed word
-        return !_words.Any(w => 
-            w.StartRow == accWord.StartRow && 
-            w.StartColumn == accWord.StartCol && 
+        return !_words.Any(w =>
+            w.StartRow == accWord.StartRow &&
+            w.StartColumn == accWord.StartCol &&
             w.Direction == accWord.Direction &&
             w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
     }
@@ -1228,7 +1228,7 @@ public class CrosswordGrid
     public CrosswordValidationResult ValidateCrossword(Services.SwedishDictionary? dictionary = null)
     {
         var accidentalWords = DetectAccidentalWords(dictionary);
-        
+
         var result = new CrosswordValidationResult
         {
             IsValid = true,
@@ -1266,13 +1266,13 @@ public class CrosswordGrid
     {
         var accidentalWords = DetectAccidentalWords(dictionary);
         var validAccidentalWords = accidentalWords.Where(w => w.IsValidSwedishWord == true).ToList();
-        
+
         foreach (var accWord in validAccidentalWords)
         {
             // Only include if it's not already a placed intentional word at the same position
-            bool isAlreadyIntentional = Words.Any(w => 
-                w.StartRow == accWord.StartRow && 
-                w.StartColumn == accWord.StartCol && 
+            bool isAlreadyIntentional = Words.Any(w =>
+                w.StartRow == accWord.StartRow &&
+                w.StartColumn == accWord.StartCol &&
                 w.Direction == accWord.Direction &&
                 w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
 
@@ -1288,11 +1288,11 @@ public class CrosswordGrid
                 }
             }
         }
-        
+
         // Renumber clues including the new accidental words
         RenumberCluesIncludingAccidental(validAccidentalWords);
     }
-    
+
     /// <summary>
     /// Checks whether a straight word's cells are spatially contained within another
     /// straight word's cells (same direction, all cells of the inner word fall within
@@ -1493,9 +1493,9 @@ public class CrosswordGrid
                 // with the exact same text. An accidental word that extends an intentional
                 // word (same position/direction but longer text) must still be numbered so
                 // that GetAllClues can supersede the shorter intentional word.
-                bool isAlreadyIntentional = _words.Any(w => 
-                    w.StartRow == accWord.StartRow && 
-                    w.StartColumn == accWord.StartCol && 
+                bool isAlreadyIntentional = _words.Any(w =>
+                    w.StartRow == accWord.StartRow &&
+                    w.StartColumn == accWord.StartCol &&
                     w.Direction == accWord.Direction &&
                     w.Text.Equals(accWord.Text, StringComparison.OrdinalIgnoreCase));
 
@@ -1527,7 +1527,7 @@ public class CrosswordGrid
                 allWordStarts.Add((accWord.StartRow, accWord.StartCol, accWord.Direction, accWord));
             }
         }
-        
+
         // Group by position and sort by reading order (top to bottom, left to right)
         var groupedByPosition = allWordStarts
             .GroupBy(w => (w.Row, w.Col))
@@ -1536,11 +1536,11 @@ public class CrosswordGrid
             .ToList();
 
         int currentNumber = 1;
-        
+
         foreach (var group in groupedByPosition)
         {
             var (row, col) = group.Key;
-            
+
             // Assign number to all words starting at this position
             foreach (var (Row, Col, Dir, WordRef) in group)
             {
@@ -1554,7 +1554,7 @@ public class CrosswordGrid
                         break;
                 }
             }
-            
+
             // Set grid cell number
             GetCell(row, col).Number = currentNumber;
             currentNumber++;
@@ -1593,16 +1593,16 @@ public class CrosswordGrid
         {
             int row = direction == Direction.Across ? startRow : startRow + i;
             int col = direction == Direction.Across ? startCol + i : startCol;
-            
+
             var cell = GetCell(row, col);
-            
+
             // If the cell already has a letter and the letters match, this creates a connection
             if (cell.HasLetter && cell.Letter == word.GetCharAt(i))
             {
                 return true; // Found at least one intersection
             }
         }
-        
+
         return false; // No intersections found - would be isolated
     }
 
@@ -1613,11 +1613,11 @@ public class CrosswordGrid
     {
         // Temporarily place the word
         var tempGrid = this; // We'll work with current grid
-        
+
         // Check if we can place it first
         if (!CanPlaceWord(word, startRow, startCol, direction))
             return true; // Can't place = invalid
-            
+
         // Use the validation-enabled placement method
         return !TryPlaceWordWithValidation(word, startRow, startCol, direction, dictionary, rejectInvalidWords: true);
     }
@@ -1836,7 +1836,7 @@ public class CrosswordGrid
             word.StartRow = segments[0].StartRow;
             word.StartColumn = segments[0].StartCol;
             word.Direction = segments[0].Direction;
-            word.Segments = [..segments];
+            word.Segments = [.. segments];
             word.IsPlaced = true;
 
             int ci = 0;

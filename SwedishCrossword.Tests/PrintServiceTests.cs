@@ -229,7 +229,7 @@ public class CrosswordPuzzleTests
     public async Task Constructor_SetsGridAndAttempts()
     {
         var grid = new CrosswordGrid(5, 5);
-        
+
         var puzzle = new CrosswordPuzzle(grid, 3);
 
         await Assert.That(puzzle.Grid).IsEqualTo(grid);
@@ -241,9 +241,9 @@ public class CrosswordPuzzleTests
     {
         var beforeCreation = DateTime.Now.AddSeconds(-1);
         var grid = new CrosswordGrid(5, 5);
-        
+
         var puzzle = new CrosswordPuzzle(grid, 1);
-        
+
         var afterCreation = DateTime.Now.AddSeconds(1);
 
         await Assert.That(puzzle.CreatedAt).IsGreaterThan(beforeCreation);
@@ -255,7 +255,7 @@ public class CrosswordPuzzleTests
     {
         var grid = new CrosswordGrid(4, 4);
         grid.TryPlaceWord(new Word("AB", "Test"), 0, 0, Direction.Across);
-        
+
         var puzzle = new CrosswordPuzzle(grid, 1);
 
         await Assert.That(puzzle.Statistics.TotalCells).IsEqualTo(16);

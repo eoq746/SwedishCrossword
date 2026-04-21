@@ -52,9 +52,9 @@ public class AccidentalWordTests
     [Test]
     public async Task ValidationStatus_ReturnsValidAndIncludedForIncludedWord()
     {
-        var word = new AccidentalWord 
-        { 
-            Text = "TEST", 
+        var word = new AccidentalWord
+        {
+            Text = "TEST",
             IsValidSwedishWord = true,
             ShouldIncludeInPuzzle = true
         };
@@ -83,8 +83,8 @@ public class AccidentalWordTests
     [Test]
     public async Task ToString_ContainsPosition()
     {
-        var word = new AccidentalWord 
-        { 
+        var word = new AccidentalWord
+        {
             Text = "TEST",
             StartRow = 1,
             StartCol = 2
@@ -98,8 +98,8 @@ public class AccidentalWordTests
     [Test]
     public async Task ToString_ContainsDirectionForAcross()
     {
-        var word = new AccidentalWord 
-        { 
+        var word = new AccidentalWord
+        {
             Text = "TEST",
             Direction = Direction.Across
         };
@@ -112,8 +112,8 @@ public class AccidentalWordTests
     [Test]
     public async Task ToString_ContainsDirectionForDown()
     {
-        var word = new AccidentalWord 
-        { 
+        var word = new AccidentalWord
+        {
             Text = "TEST",
             Direction = Direction.Down
         };
@@ -126,8 +126,8 @@ public class AccidentalWordTests
     [Test]
     public async Task ToString_ContainsPuzzleNumberWhenIncluded()
     {
-        var word = new AccidentalWord 
-        { 
+        var word = new AccidentalWord
+        {
             Text = "TEST",
             ShouldIncludeInPuzzle = true,
             PuzzleNumber = 5
@@ -162,11 +162,11 @@ public class AccidentalWordDetectionTests
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("SOL", "Sun", "Nature");
         dictionary.AddWord("ORD", "Word", "Language");
-        
+
         var grid = new CrosswordGrid(7, 7);
         var word1 = new Word("SOL", "Sun");
         var word2 = new Word("ORD", "Word");
-        
+
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 3, Direction.Down);
 
@@ -184,7 +184,7 @@ public class AccidentalWordDetectionTests
     {
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("TEST", "Test", "General");
-        
+
         var grid = new CrosswordGrid(10, 10);
         var word = new Word("TEST", "Test word");
         grid.TryPlaceWord(word, 3, 3, Direction.Across);
@@ -200,11 +200,11 @@ public class AccidentalWordDetectionTests
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("NU", "Now", "Time");
         dictionary.AddWord("NY", "New", "Adjectives");
-        
+
         var grid = new CrosswordGrid(7, 7);
         var word1 = new Word("NU", "Now");
         var word2 = new Word("NY", "New");
-        
+
         grid.TryPlaceWord(word1, 2, 2, Direction.Across);
         grid.TryPlaceWord(word2, 1, 2, Direction.Down);
 
@@ -220,7 +220,7 @@ public class AccidentalWordDetectionTests
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("AB", "Letters", "Test");
         dictionary.AddWord("CD", "More letters", "Test");
-        
+
         var grid = new CrosswordGrid(7, 7);
         grid.TryPlaceWord(new Word("AB", "Test"), 2, 2, Direction.Across);
         grid.TryPlaceWord(new Word("CD", "Test"), 1, 2, Direction.Down);
@@ -229,12 +229,12 @@ public class AccidentalWordDetectionTests
 
         await Assert.That(validation.ValidAccidentalWords).IsNotNull();
         await Assert.That(validation.InvalidAccidentalWords).IsNotNull();
-        
+
         foreach (var valid in validation.ValidAccidentalWords)
         {
             await Assert.That(valid.IsValidSwedishWord).IsTrue();
         }
-        
+
         foreach (var invalid in validation.InvalidAccidentalWords)
         {
             await Assert.That(invalid.IsValidSwedishWord).IsFalse();
@@ -248,7 +248,7 @@ public class AccidentalWordDetectionTests
         dictionary.AddWord("SOL", "Sun", "Nature");
         dictionary.AddWord("ORD", "Word", "Language");
         dictionary.AddWord("SO", "So", "Conjunction");
-        
+
         var grid = new CrosswordGrid(7, 7);
         grid.TryPlaceWord(new Word("SOL", "Sun"), 2, 2, Direction.Across);
         grid.TryPlaceWord(new Word("ORD", "Word"), 1, 3, Direction.Down);
@@ -257,7 +257,7 @@ public class AccidentalWordDetectionTests
         var validation = grid.ValidateCrossword(dictionary);
 
         var includedWords = validation.ValidAccidentalWords?.Where(w => w.ShouldIncludeInPuzzle).ToList() ?? [];
-        
+
         foreach (var word in includedWords)
         {
             await Assert.That(word.PuzzleNumber).IsGreaterThan(0);
@@ -271,14 +271,14 @@ public class AccidentalWordDetectionTests
         var dictionary = new SwedishDictionary(empty: true);
         dictionary.AddWord("AB", "First", "Test");
         dictionary.AddWord("CD", "Second", "Test");
-        
+
         var grid = new CrosswordGrid(7, 7);
         var word1 = new Word("AB", "First");
         var word2 = new Word("CD", "Second");
-        
+
         grid.TryPlaceWord(word1, 0, 0, Direction.Across);
         grid.TryPlaceWord(word2, 2, 0, Direction.Across);
-        
+
         grid.IncludeValidAccidentalWords(dictionary);
 
         await Assert.That(word1.Number).IsGreaterThan(0);

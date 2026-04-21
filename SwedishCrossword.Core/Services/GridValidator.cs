@@ -34,16 +34,16 @@ public class GridValidator
 
         // Basic structure validation
         ValidateBasicStructure(grid, result);
-        
+
         // Word placement validation
         ValidateWordPlacements(grid, result);
-        
+
         // Intersection validation
         ValidateIntersections(grid, result);
-        
+
         // Connectivity validation
         ValidateConnectivity(grid, result);
-        
+
         // Quality metrics
         ValidateQualityMetrics(grid, result);
 
@@ -116,12 +116,12 @@ public class GridValidator
     private bool ValidateWordLetters(CrosswordGrid grid, Word word)
     {
         var positions = word.GetPositions().ToList();
-        
+
         for (int i = 0; i < positions.Count; i++)
         {
             var (row, col) = positions[i];
             var cell = grid.GetCell(row, col);
-            
+
             if (cell.Letter != word.GetCharAt(i))
             {
                 return false;
@@ -144,14 +144,14 @@ public class GridValidator
         foreach (var (row, col) in positions)
         {
             var adjacentPositions = GetAdjacentPositions(row, col, word.Direction);
-            
+
             foreach (var (adjRow, adjCol) in adjacentPositions)
             {
                 if (!grid.IsValidPosition(adjRow, adjCol))
                     continue;
 
                 var cell = grid.GetCell(adjRow, adjCol);
-                
+
                 // If there's a letter in an adjacent cell, it should be part of an intersecting word
                 if (cell.HasLetter && !positions.Contains((adjRow, adjCol)))
                 {
@@ -186,10 +186,10 @@ public class GridValidator
     private bool IsValidIntersection(CrosswordGrid grid, Word word, int row, int col)
     {
         var cell = grid.GetCell(row, col);
-        
+
         // The cell should belong to exactly one other word that runs perpendicular
-        var intersectingWords = grid.Words.Where(w => 
-            w != word && 
+        var intersectingWords = grid.Words.Where(w =>
+            w != word &&
             w.Direction != word.Direction &&
             w.GetPositions().Contains((row, col))
         ).ToList();
@@ -210,21 +210,21 @@ public class GridValidator
                     continue;
 
                 // Avoid duplicate checking
-                var pairKey = string.Compare(word1.Id, word2.Id) < 0 
-                    ? (word1.Id, word2.Id) 
+                var pairKey = string.Compare(word1.Id, word2.Id) < 0
+                    ? (word1.Id, word2.Id)
                     : (word2.Id, word1.Id);
-                
+
                 if (wordPairs.Contains(pairKey))
                     continue;
-                
+
                 wordPairs.Add(pairKey);
 
                 var intersections = word1.GetIntersections(word2).ToList();
-                
+
                 foreach (var (row, col, myIdx, otherIdx) in intersections)
                 {
                     intersectionCount++;
-                    
+
                     // Validate that the letters match
                     if (word1.GetCharAt(myIdx) != word2.GetCharAt(otherIdx))
                     {
@@ -249,15 +249,15 @@ public class GridValidator
 
         // Build a graph of word connections
         var wordGraph = BuildWordConnectionGraph(grid);
-        
+
         // Check if all words are connected
         var connectedComponents = FindConnectedComponents(wordGraph);
-        
+
         if (connectedComponents.Count > 1)
         {
             // STRICT ENFORCEMENT: All words must be connected - no isolated words allowed
             result.AddError($"Grid has {connectedComponents.Count} disconnected components. All words must be connected through intersections");
-            
+
             foreach (var (componentIndex, words) in connectedComponents.Select((comp, idx) => (idx, comp)))
             {
                 var wordTexts = words.Select(w => w.Text);
@@ -281,7 +281,7 @@ public class GridValidator
     private Dictionary<Word, HashSet<Word>> BuildWordConnectionGraph(CrosswordGrid grid)
     {
         var graph = new Dictionary<Word, HashSet<Word>>();
-        
+
         // Initialize graph
         foreach (var word in grid.Words)
         {
@@ -434,12 +434,12 @@ public class GridValidator
         {
             var checkRow = direction == Direction.Across ? row : row + i;
             var checkCol = direction == Direction.Across ? col + i : col;
-            
+
             var cell = grid.GetCell(checkRow, checkCol);
-            
+
             if (cell.IsBlocked)
                 return false;
-                
+
             if (cell.HasLetter && cell.Letter != word.GetCharAt(i))
                 return false;
         }
@@ -469,7 +469,7 @@ public class ValidationResult
     public override string ToString()
     {
         var lines = new List<string>();
-        
+
         if (_errors.Count > 0)
         {
             lines.Add("ERRORS:");

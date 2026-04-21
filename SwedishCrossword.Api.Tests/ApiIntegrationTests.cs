@@ -749,8 +749,11 @@ public class ApiIntegrationTests
             puzzleDate = today,
             cells = new Dictionary<string, string>
             {
-                ["0,0"] = "K", ["0,1"] = "A", ["0,2"] = "T",
-                ["2,0"] = "E", ["2,1"] = "N"
+                ["0,0"] = "K",
+                ["0,1"] = "A",
+                ["0,2"] = "T",
+                ["2,0"] = "E",
+                ["2,1"] = "N"
             }
         });
 
@@ -776,8 +779,11 @@ public class ApiIntegrationTests
             puzzleDate = today,
             cells = new Dictionary<string, string>
             {
-                ["0,0"] = "K", ["0,1"] = "A", ["0,2"] = "X",  // wrong
-                ["2,0"] = "E", ["2,1"] = "N"
+                ["0,0"] = "K",
+                ["0,1"] = "A",
+                ["0,2"] = "X",  // wrong
+                ["2,0"] = "E",
+                ["2,1"] = "N"
             }
         });
 
@@ -831,8 +837,11 @@ public class ApiIntegrationTests
             puzzleDate = today,
             cells = new Dictionary<string, string>
             {
-                ["0,0"] = "k", ["0,1"] = "a", ["0,2"] = "t",  // lowercase
-                ["2,0"] = "e", ["2,1"] = "n"
+                ["0,0"] = "k",
+                ["0,1"] = "a",
+                ["0,2"] = "t",  // lowercase
+                ["2,0"] = "e",
+                ["2,1"] = "n"
             }
         });
 

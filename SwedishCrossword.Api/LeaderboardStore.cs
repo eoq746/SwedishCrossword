@@ -164,61 +164,61 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
         try
         {
-        // Deduplicate
-        await using (var dedup = conn.CreateCommand())
-        {
-            dedup.Transaction = tx;
-            dedup.CommandText = _useSqlServer
-                ? """
+            // Deduplicate
+            await using (var dedup = conn.CreateCommand())
+            {
+                dedup.Transaction = tx;
+                dedup.CommandText = _useSqlServer
+                    ? """
                   SELECT COUNT(1) FROM scores
                   WHERE leaderboard_key = @key AND name = @name
                     AND ABS(time - @time) < 0.001
                     AND ((timestamp IS NULL AND @timestamp IS NULL) OR timestamp = @timestamp)
                   """
-                : """
+                    : """
                   SELECT COUNT(1) FROM scores
                   WHERE leaderboard_key = @key AND name = @name
                     AND ABS(time - @time) < 0.001
                     AND timestamp IS @timestamp
                   """;
-            AddParam(dedup, "@key", leaderboardKey);
-            AddParam(dedup, "@name", entry.Name);
-            AddParam(dedup, "@time", entry.Time);
-            AddParam(dedup, "@timestamp", (object?)entry.Timestamp ?? DBNull.Value);
+                AddParam(dedup, "@key", leaderboardKey);
+                AddParam(dedup, "@name", entry.Name);
+                AddParam(dedup, "@time", entry.Time);
+                AddParam(dedup, "@timestamp", (object?)entry.Timestamp ?? DBNull.Value);
 
-            var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
-            if (count > 0)
-            {
-                await tx.CommitAsync();
-                return await GetScoresForKeyAsync(conn, null, leaderboardKey);
+                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
+                if (count > 0)
+                {
+                    await tx.CommitAsync();
+                    return await GetScoresForKeyAsync(conn, null, leaderboardKey);
+                }
             }
-        }
 
-        // Insert
-        await using (var insert = conn.CreateCommand())
-        {
-            insert.Transaction = tx;
-            insert.CommandText = """
+            // Insert
+            await using (var insert = conn.CreateCommand())
+            {
+                insert.Transaction = tx;
+                insert.CommandText = """
                 INSERT INTO scores (leaderboard_key, name, time, timestamp, puzzle_hash, hints_used, word_hints_used, user_id)
                 VALUES (@key, @name, @time, @timestamp, @hash, @hints, @wordHints, @userId)
                 """;
-            AddParam(insert, "@key", leaderboardKey);
-            AddParam(insert, "@name", entry.Name);
-            AddParam(insert, "@time", entry.Time);
-            AddParam(insert, "@timestamp", (object?)entry.Timestamp ?? DBNull.Value);
-            AddParam(insert, "@hash", (object?)entry.PuzzleHash ?? DBNull.Value);
-            AddParam(insert, "@hints", entry.HintsUsed);
-            AddParam(insert, "@wordHints", entry.WordHintsUsed);
-            AddParam(insert, "@userId", (object?)entry.UserId ?? DBNull.Value);
-            await insert.ExecuteNonQueryAsync();
-        }
+                AddParam(insert, "@key", leaderboardKey);
+                AddParam(insert, "@name", entry.Name);
+                AddParam(insert, "@time", entry.Time);
+                AddParam(insert, "@timestamp", (object?)entry.Timestamp ?? DBNull.Value);
+                AddParam(insert, "@hash", (object?)entry.PuzzleHash ?? DBNull.Value);
+                AddParam(insert, "@hints", entry.HintsUsed);
+                AddParam(insert, "@wordHints", entry.WordHintsUsed);
+                AddParam(insert, "@userId", (object?)entry.UserId ?? DBNull.Value);
+                await insert.ExecuteNonQueryAsync();
+            }
 
-        // Keep top 10 per key
-        await using (var trim = conn.CreateCommand())
-        {
-            trim.Transaction = tx;
-            trim.CommandText = _useSqlServer
-                ? """
+            // Keep top 10 per key
+            await using (var trim = conn.CreateCommand())
+            {
+                trim.Transaction = tx;
+                trim.CommandText = _useSqlServer
+                    ? """
                   DELETE FROM scores
                   WHERE leaderboard_key = @key
                     AND id NOT IN (
@@ -227,7 +227,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ORDER BY time
                     )
                   """
-                : """
+                    : """
                   DELETE FROM scores
                   WHERE leaderboard_key = @key
                     AND rowid NOT IN (
@@ -236,12 +236,12 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ORDER BY time LIMIT 10
                     )
                   """;
-            AddParam(trim, "@key", leaderboardKey);
-            await trim.ExecuteNonQueryAsync();
-        }
+                AddParam(trim, "@key", leaderboardKey);
+                await trim.ExecuteNonQueryAsync();
+            }
 
-        await tx.CommitAsync();
-        return await GetScoresForKeyAsync(conn, null, leaderboardKey);
+            await tx.CommitAsync();
+            return await GetScoresForKeyAsync(conn, null, leaderboardKey);
         }
         catch
         {
@@ -289,62 +289,62 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
         try
         {
-        // Deduplicate
-        await using (var dedup = conn.CreateCommand())
-        {
-            dedup.Transaction = tx;
-            dedup.CommandText = _useSqlServer
-                ? """
+            // Deduplicate
+            await using (var dedup = conn.CreateCommand())
+            {
+                dedup.Transaction = tx;
+                dedup.CommandText = _useSqlServer
+                    ? """
                   SELECT COUNT(1) FROM history
                   WHERE date = @date AND name = @name
                     AND ABS(time - @time) < 0.001
                     AND ((timestamp IS NULL AND @timestamp IS NULL) OR timestamp = @timestamp)
                   """
-                : """
+                    : """
                   SELECT COUNT(1) FROM history
                   WHERE date = @date AND name = @name
                     AND ABS(time - @time) < 0.001
                     AND timestamp IS @timestamp
                   """;
-            AddParam(dedup, "@date", date);
-            AddParam(dedup, "@name", record.Name);
-            AddParam(dedup, "@time", record.Time);
-            AddParam(dedup, "@timestamp", (object?)record.Timestamp ?? DBNull.Value);
+                AddParam(dedup, "@date", date);
+                AddParam(dedup, "@name", record.Name);
+                AddParam(dedup, "@time", record.Time);
+                AddParam(dedup, "@timestamp", (object?)record.Timestamp ?? DBNull.Value);
 
-            var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
-            if (count > 0)
-            {
-                await tx.CommitAsync();
-                return;
+                var count = Convert.ToInt64(await dedup.ExecuteScalarAsync());
+                if (count > 0)
+                {
+                    await tx.CommitAsync();
+                    return;
+                }
             }
-        }
 
-        // Insert
-        await using (var insert = conn.CreateCommand())
-        {
-            insert.Transaction = tx;
-            insert.CommandText = """
+            // Insert
+            await using (var insert = conn.CreateCommand())
+            {
+                insert.Transaction = tx;
+                insert.CommandText = """
                 INSERT INTO history (date, name, time, timestamp, puzzle_hash, puzzle_size, hints_used, word_hints_used, user_id)
                 VALUES (@date, @name, @time, @timestamp, @hash, @size, @hints, @wordHints, @userId)
                 """;
-            AddParam(insert, "@date", date);
-            AddParam(insert, "@name", record.Name);
-            AddParam(insert, "@time", record.Time);
-            AddParam(insert, "@timestamp", (object?)record.Timestamp ?? DBNull.Value);
-            AddParam(insert, "@hash", (object?)record.PuzzleHash ?? DBNull.Value);
-            AddParam(insert, "@size", (object?)record.PuzzleSize ?? DBNull.Value);
-            AddParam(insert, "@hints", record.HintsUsed);
-            AddParam(insert, "@wordHints", record.WordHintsUsed);
-            AddParam(insert, "@userId", (object?)record.UserId ?? DBNull.Value);
-            await insert.ExecuteNonQueryAsync();
-        }
+                AddParam(insert, "@date", date);
+                AddParam(insert, "@name", record.Name);
+                AddParam(insert, "@time", record.Time);
+                AddParam(insert, "@timestamp", (object?)record.Timestamp ?? DBNull.Value);
+                AddParam(insert, "@hash", (object?)record.PuzzleHash ?? DBNull.Value);
+                AddParam(insert, "@size", (object?)record.PuzzleSize ?? DBNull.Value);
+                AddParam(insert, "@hints", record.HintsUsed);
+                AddParam(insert, "@wordHints", record.WordHintsUsed);
+                AddParam(insert, "@userId", (object?)record.UserId ?? DBNull.Value);
+                await insert.ExecuteNonQueryAsync();
+            }
 
-        // Keep top 10 per puzzle_hash for this date
-        await using (var trimPerHash = conn.CreateCommand())
-        {
-            trimPerHash.Transaction = tx;
-            trimPerHash.CommandText = _useSqlServer
-                ? """
+            // Keep top 10 per puzzle_hash for this date
+            await using (var trimPerHash = conn.CreateCommand())
+            {
+                trimPerHash.Transaction = tx;
+                trimPerHash.CommandText = _useSqlServer
+                    ? """
                   DELETE FROM history
                   WHERE date = @date AND id NOT IN (
                       SELECT id FROM (
@@ -357,7 +357,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ) sub WHERE rn <= 10
                   )
                   """
-                : """
+                    : """
                   DELETE FROM history
                   WHERE date = @date AND rowid NOT IN (
                       SELECT rowid FROM (
@@ -370,16 +370,16 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ) WHERE rn <= 10
                   )
                   """;
-            AddParam(trimPerHash, "@date", date);
-            await trimPerHash.ExecuteNonQueryAsync();
-        }
+                AddParam(trimPerHash, "@date", date);
+                await trimPerHash.ExecuteNonQueryAsync();
+            }
 
-        // Cap at 50 per date
-        await using (var cap = conn.CreateCommand())
-        {
-            cap.Transaction = tx;
-            cap.CommandText = _useSqlServer
-                ? """
+            // Cap at 50 per date
+            await using (var cap = conn.CreateCommand())
+            {
+                cap.Transaction = tx;
+                cap.CommandText = _useSqlServer
+                    ? """
                   DELETE FROM history
                   WHERE date = @date AND id NOT IN (
                       SELECT TOP 50 id FROM history
@@ -387,7 +387,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ORDER BY time
                   )
                   """
-                : """
+                    : """
                   DELETE FROM history
                   WHERE date = @date AND rowid NOT IN (
                       SELECT rowid FROM history
@@ -395,11 +395,11 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                       ORDER BY time LIMIT 50
                   )
                   """;
-            AddParam(cap, "@date", date);
-            await cap.ExecuteNonQueryAsync();
-        }
+                AddParam(cap, "@date", date);
+                await cap.ExecuteNonQueryAsync();
+            }
 
-        await tx.CommitAsync();
+            await tx.CommitAsync();
         }
         catch
         {

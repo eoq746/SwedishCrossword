@@ -32,7 +32,7 @@ public class SynonymPairImporter
     public async Task<List<WordEntry>> ImportFromXmlAsync(string? xmlPath = null, double minLevel = 3.0)
     {
         var path = xmlPath ?? GetXmlFilePath();
-        
+
         if (!File.Exists(path))
         {
             throw new FileNotFoundException($"Synonym pairs XML file not found at: {path}");
@@ -62,7 +62,7 @@ public class SynonymPairImporter
             if (reader.NodeType == XmlNodeType.Element && reader.Name == "syn")
             {
                 var levelStr = reader.GetAttribute("level");
-                if (!double.TryParse(levelStr, System.Globalization.NumberStyles.Float, 
+                if (!double.TryParse(levelStr, System.Globalization.NumberStyles.Float,
                     System.Globalization.CultureInfo.InvariantCulture, out var level))
                 {
                     level = 0;
@@ -77,7 +77,7 @@ public class SynonymPairImporter
 
                 var synXml = await reader.ReadOuterXmlAsync();
                 var extractedWords = ParseSynonymPair(synXml, level);
-                
+
                 foreach (var word in extractedWords)
                 {
                     if (IsValidCrosswordWord(word.Word))
@@ -255,7 +255,7 @@ public class SynonymPairImporter
     public static void PrintStatistics(List<WordEntry> words)
     {
         Console.OutputEncoding = Encoding.UTF8;
-        
+
         Console.WriteLine("\n=== Synonym Import Statistics ===");
         Console.WriteLine($"Total word entries: {words.Count}");
 
