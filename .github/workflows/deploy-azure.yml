@@ -67,7 +67,7 @@ jobs:
           fi
 
   build-and-deploy:
-    needs: [test]
+    needs: [test, secret-scan]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

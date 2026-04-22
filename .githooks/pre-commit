@@ -1,0 +1,61 @@
+#!/usr/bin/env sh
+# Pre-commit checks:
+#   1. UTF-8 BOM on staged .cs files (charset = utf-8-bom in .editorconfig)
+#   2. dotnet format style on staged .cs files
+#   3. gitleaks scan of staged content (blocks committing real secrets)
+
+set -e
+
+repo_root=$(git rev-parse --show-toplevel)
+
+# ----------------------------------------------------------------------------
+# C# formatting (only when .cs files are staged)
+# ----------------------------------------------------------------------------
+staged_cs=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.cs$' || true)
+
+if [ -n "$staged_cs" ]; then
+    # 1. Add UTF-8 BOM where missing (cross-platform via pwsh).
+    if command -v pwsh >/dev/null 2>&1; then
+        pwsh -NoProfile -File "$repo_root/scripts/fix-bom.ps1" >/dev/null
+    fi
+
+    # 2. Run dotnet format style on staged files only.
+    if command -v dotnet >/dev/null 2>&1; then
+        dotnet format style --no-restore --include $staged_cs >/dev/null || {
+            echo "dotnet format style made changes. Re-stage the files and commit again." >&2
+            echo "$staged_cs" | xargs -r git add
+            exit 1
+        }
+    fi
+
+    # 3. Re-stage anything we modified.
+    echo "$staged_cs" | xargs -r git add
+fi
+
+# ----------------------------------------------------------------------------
+# Secret scan (always runs — catches secrets in any file type)
+# ----------------------------------------------------------------------------
+# Resolve gitleaks: prefer PATH, fall back to the winget install location used
+# on Windows so the hook works in a fresh shell that hasn't picked up PATH yet.
+gitleaks_bin=""
+if command -v gitleaks >/dev/null 2>&1; then
+    gitleaks_bin="gitleaks"
+elif [ -n "${LOCALAPPDATA:-}" ] && [ -x "$LOCALAPPDATA/Microsoft/WinGet/Packages/Gitleaks.Gitleaks_Microsoft.Winget.Source_8wekyb3d8bbwe/gitleaks.exe" ]; then
+    gitleaks_bin="$LOCALAPPDATA/Microsoft/WinGet/Packages/Gitleaks.Gitleaks_Microsoft.Winget.Source_8wekyb3d8bbwe/gitleaks.exe"
+fi
+
+if [ -n "$gitleaks_bin" ]; then
+    "$gitleaks_bin" protect --staged --no-banner --redact \
+        --config "$repo_root/.gitleaks.toml" || {
+        echo "" >&2
+        echo "gitleaks blocked the commit: a potential secret was found in staged changes." >&2
+        echo "Review the finding above. If it is a false positive, add it to .gitleaks.toml" >&2
+        echo "under [allowlist]. To bypass once (use sparingly): git commit --no-verify" >&2
+        exit 1
+    }
+else
+    echo "warning: gitleaks not installed - skipping secret scan." >&2
+    echo "         Install with: winget install Gitleaks.Gitleaks" >&2
+fi
+
+exit 0

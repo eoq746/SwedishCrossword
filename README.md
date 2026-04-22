@@ -6,22 +6,22 @@ A Swedish crossword puzzle generator
 
 ## Features
 
-- **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with configurable fill targets (45% for small grids, 65�70% for medium/hard)
+- **Smart Crossword Generation**: Adaptive algorithm that creates well-connected puzzles with configurable fill targets (45% for small grids, 65–70% for medium/hard)
 - **Vinkelord (Bent Words)**: Supports L-shaped words that change direction at a bend cell, adding variety to the grid layout
 - **Swedish Dictionary**: 100,000+ Swedish words with clues from Lexin, synonym pairs, the Kelly frequency list, DSSO, and a custom word file
-- **Multiple Puzzle Sizes**: Small (9�9), Mobile (10�10), Easy (11�11), Medium (15�15), and Hard (17�17) presets � the web player offers 10�10, 15�15, and 17�17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
-- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10�10, 15�15, 17�17) per day
+- **Multiple Puzzle Sizes**: Small (9×9), Mobile (10×10), Easy (11×11), Medium (15×15), and Hard (17×17) presets — the web player offers 10×10, 15×15, and 17×17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
+- **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10×10, 15×15, 17×17) per day
 - **API-First Architecture**: Output caching, Brotli + Gzip response compression, per-IP rate limiting, security headers, CORS, and OpenAPI documentation
 - **Interactive Web Player**: Browser-based crossword player with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
   - Progress tracking and timer with `localStorage` persistence
   - Hint system: reveal a single letter or an entire word via server-side validation (tracked and penalized on leaderboard)
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
-  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence � consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
+  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
   - Dedicated leaderboard page (`leaderboard.html`) with medal podium for top 3, filtered by the current puzzle size
   - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
-  - Player statistics per size: total solved, current/best streak, best time, average time � with automatic migration from legacy flat format
+  - Player statistics per size: total solved, current/best streak, best time, average time — with automatic migration from legacy flat format
   - Puzzle archive calendar with size-filter toggle buttons
   - Server-computed difficulty rating displayed per puzzle
   - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
@@ -29,14 +29,17 @@ A Swedish crossword puzzle generator
 - **PWA**: Web app manifest for installability (`site.webmanifest`)
 - **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
 - **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
-- **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim � raw provider IDs are never stored
+- **Resilient Database Access**: Transient Azure SQL errors (auto-pause/resume, throttling, deadlocks, network drops, Free-tier monthly quota pause) are detected via a shared `TransientSqlErrorClassifier`, retried inside `LeaderboardStore`, and surfaced to clients as HTTP 503 with `Retry-After: 30` (instead of 500) so the frontend can degrade gracefully
+- **Software Bill of Materials**: `scripts/generate-sbom.ps1` produces an SPDX 2.2 SBOM for the published API using the Microsoft SBOM Tool (aligned with the EU Cyber Resilience Act)
+- **Ads & Consent-Gated Loading**: Google AdSense is loaded via `cookie-consent.js`, which combines auth state (cached from `/api/auth/me`) and the GDPR banner choice into a three-way policy — signed-in users see no ads, signed-out users with `'all'` consent see personalized ads, and signed-out users with `'essential'`-only consent get non-personalized (NPA) ads. Third-party scripts are declared as `<script type="text/plain" data-consent-src="...">` placeholders that the script activates once consent is given
+- **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim — raw provider IDs are never stored
 - **User Profiles**: Signed-in users get a profile page with customisable alias, server-synced solve statistics, and friends management
-- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). View a private friends leaderboard on the puzzle page. All friend data uses opaque IDs � no raw user identifiers are exposed to the frontend
+- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). View a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
 - **Analytics Dashboard**: Admin-only analytics endpoints and a dedicated admin page (`admin.html`) with summary cards (completions today, active players, registered users, hint usage rate, per-size breakdown), daily activity bar chart, and top player rankings with alias resolution and verified (?) / guest (??) badges. Players are grouped by user identity so signed-in and guest plays are correctly separated. Admin access is configuration-driven via `Authorization:AdminUserIds`; the admin link appears on the profile page only when the server confirms admin status
-- **Clue Handler Tool**: Standalone CLI for managing the dictionary � view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
+- **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
 ## Project Structure
 
@@ -84,6 +87,9 @@ SwedishCrosswords/
 |   |-- PuzzleCache.cs              # In-memory cache for pre-processed puzzle data (avoids repeated disk I/O)
 |   |-- PuzzleDateIndex.cs          # Thread-safe in-memory index of available puzzle dates and sizes
 |   |-- TimeProviderExtensions.cs   # Swedish time zone date helpers
+|   |-- TransientDbExceptionHandler.cs  # Translates transient Azure SQL errors into HTTP 503 (with Retry-After) instead of 500
+|   |-- TransientSqlErrorClassifier.cs  # Single source of truth for transient SQL error numbers (auto-pause, throttling, network drops, deadlocks)
+|   |-- IStores.cs                  # Storage interfaces (IScoreStore, IHistoryStore, IUserProfileStore, etc.) consumed by LeaderboardStore
 |   |-- Models.cs                   # Request/response records (including analytics models)
 |   |-- wwwroot/                    # Frontend (served by the API)
 |   |   |-- index.html              # Landing page with SEO structured data
@@ -93,6 +99,7 @@ SwedishCrosswords/
 |   |   |-- admin.html              # Admin dashboard (analytics summary, daily chart, top players)
 |   |   |-- leaderboard.html        # Dedicated leaderboard page
 |   |   |-- site.js                 # Game logic (~3,000 lines, 15 §-numbered sections)
+|   |   |-- cookie-consent.js       # GDPR banner + AdSense loader (auth-aware policy: skip / personalized / NPA)
 |   |   |-- tokens.css              # CSS custom-property design tokens (90+ tokens)
 |   |   |-- site.min.css            # Responsive styles consuming design tokens
 |   |   |-- about.html             # About page
@@ -119,24 +126,72 @@ SwedishCrosswords/
 |   +-- PatternClueGenerator.cs     # Generate clues using morphological patterns
 |-- SwedishCrossword.Tests/         # TUnit test project (core domain tests)
 |-- SwedishCrossword.Api.Tests/     # API integration + unit tests
-|   |-- ApiIntegrationTests.cs      # 58 integration tests (endpoints, leaderboard, analytics, check/hint)
-|   |-- SubmissionTokenServiceTests.cs # 16 unit tests (token generation, validation, answer stripping)
-|   +-- LeaderboardStoreTests.cs    # 59 unit tests (SQLite storage, dedup, pruning, analytics, friends)
+|   |-- ApiIntegrationTests.cs      # Integration tests (endpoints, leaderboard, analytics, check/hint)
+|   |-- SubmissionTokenServiceTests.cs # Unit tests (token generation, validation, answer stripping)
+|   |-- LeaderboardStoreTests.cs    # Unit tests (SQLite storage, dedup, pruning, analytics, friends)
+|   +-- TransientSqlErrorClassifierTests.cs # Parameterized tests covering every Azure SQL transient error number plus negative cases
 |-- Dockerfile                      # Container build for the API
+|-- .githooks/                      # Repo-local Git hooks (auto-wired by Directory.Build.props)
+|   +-- pre-commit                  # Adds UTF-8 BOM to staged *.cs files and runs `dotnet format style`
 |-- scripts/                        # Operational scripts
 |   |-- reset-data.ps1              # Clear stale leaderboard history and legacy puzzle files from Azure Files share
-|   +-- setup-sql-user.ps1          # Create Azure SQL managed identity user and grant permissions
+|   |-- setup-sql-user.ps1          # Create Azure SQL managed identity user and grant permissions
+|   |-- fix-bom.ps1                 # Idempotent UTF-8 BOM fixer for all *.cs files (matches `.editorconfig`)
+|   +-- generate-sbom.ps1           # Generate SPDX 2.2 Software Bill of Materials for the published API (CRA-aligned)
 |-- infra/                          # Azure infrastructure (Bicep)
-|   +-- main.bicep                  # Container Apps, ACR, Storage, Azure SQL, Log Analytics
+|   |-- main.bicep                  # Container Apps, ACR, Storage, Azure SQL, Log Analytics
+|   +-- main.json                   # ARM template compiled from main.bicep
 +-- .github/workflows/              # GitHub Actions
     +-- deploy-azure.yml            # Build, push & deploy to Azure Container Apps
 ```
 
-## Cookie Consent
+## Ads & Cookie Consent
 
-The site displays a GDPR cookie consent banner (`cookie-consent.js`) on all pages. Users can accept all cookies or only essential ones. Their choice is stored in `localStorage` under the key `cookie_consent` (`'all'` or `'essential'`).
+Both the GDPR cookie banner and Google AdSense loading are handled by a single script: `wwwroot/cookie-consent.js`. The user's choice is stored in `localStorage` under `cookie_consent` (`'all'` or `'essential'`); their last-known auth state is cached in `sessionStorage` under `auth_signed_in` and refreshed asynchronously via `/api/auth/me` on every page load.
 
-**When adding analytics, tracking, or third-party scripts**, always gate them behind the consent check:
+### Ad-loading policy
+
+The script picks one of three modes, combining auth state and consent:
+
+| Auth state | Consent | Mode | Behaviour |
+|---|---|---|---|
+| Signed in | _any_ | `skip` | No ads at all (sign-in perk) |
+| Signed out | `'all'` | `personalized` | AdSense loads normally |
+| Signed out | `'essential'` | `npa` | AdSense loads in non-personalized mode (`adsbygoogle.requestNonPersonalizedAds = 1`) |
+| Signed out | _no answer yet_ | `skip` | Wait until the user clicks a banner button |
+
+This is *Option A — NPA fallback*. A future *Option B* (Google Consent Mode v2) is documented in the script header for full EEA/UK monetization under the DMA.
+
+For a defensive belt-and-braces guarantee, the script also injects CSS that hides `.adsbygoogle`, `[data-ad-client]`, and `.ad-slot` whenever `<html>` has the `user-signed-in` class.
+
+### Adding a third-party script
+
+Don't add `<script src="…">` tags directly to HTML. Instead, add a placeholder so `cookie-consent.js` can activate it once the user has consented:
+
+```html
+<!-- AdSense (or any other third-party script) -->
+<script type="text/plain"
+        data-consent-category="ads"
+        data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        data-consent-async="true"
+        data-consent-crossorigin="anonymous"></script>
+```
+
+Recognised attributes:
+
+| Attribute | Purpose |
+|---|---|
+| `type="text/plain"` | Prevents the browser from executing the script before consent |
+| `data-consent-src` | Real script URL — copied to `src` once activated |
+| `data-consent-category="ads"` | Subjects the script to the auth+consent policy above. Omit for non-ad scripts (analytics, etc.) — those load whenever `cookie-consent.js` runs |
+| `data-consent-async="true"` | Sets `async` on the activated `<script>` |
+| `data-consent-crossorigin="anonymous"` | Sets `crossOrigin` on the activated `<script>` |
+
+The current AdSense placeholder (publisher `ca-pub-4967624066496288`) is included on `puzzle.html`, `profile.html`, and `privacy-policy.html`.
+
+### Programmatic API
+
+For inline JavaScript that needs to gate behaviour on consent (analytics, tracking pixels, etc.), use the `window.CookieConsent` helpers — these only check the cookie banner choice, not auth state:
 
 ```javascript
 if (window.CookieConsent.allowsAll()) {
@@ -144,12 +199,11 @@ if (window.CookieConsent.allowsAll()) {
 }
 ```
 
-Available helpers on `window.CookieConsent`:
 | Method | Returns |
 |--------|---------|
-| `allowsAll()` | `true` if user accepted all cookies |
-| `allowsEssentialOnly()` | `true` if user chose essential only |
-| `hasResponded()` | `true` if user made any choice |
+| `allowsAll()` | `true` if the user accepted all cookies |
+| `allowsEssentialOnly()` | `true` if the user chose essential only |
+| `hasResponded()` | `true` if the user made any choice |
 | `reset()` | Clears stored consent (banner reappears on reload) |
 
 ## Getting Started
@@ -194,7 +248,7 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | POST | `/api/auth/logout` | Sign out and clear auth cookie |
 | GET | `/api/auth/my-stats` | Server-synced solve statistics for signed-in user |
 | GET | `/api/auth/alias` | Get current alias |
-| PUT | `/api/auth/alias` | Set or update alias (2�20 chars, unique) |
+| PUT | `/api/auth/alias` | Set or update alias (2–20 chars, unique) |
 | GET | `/api/friends` | List accepted friends |
 | GET | `/api/friends/requests` | Pending friend requests (incoming + outgoing) |
 | POST | `/api/friends/request` | Send friend request by alias |
@@ -227,7 +281,7 @@ The `infra/main.bicep` template provisions everything needed:
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull and Azure SQL authentication (Entra-only, no passwords) |
 
-**One-time setup (run manually with your own Azure CLI identity � creates the role assignment that CI/CD skips):**
+**One-time setup (run manually with your own Azure CLI identity — creates the role assignment that CI/CD skips):**
 
 ```bash
 # 1. Create a resource group
@@ -236,7 +290,7 @@ az group create --name rg-svensktkorsord --location swedencentral
 # 2. Generate an HMAC secret for submission token signing
 SECRET=$(openssl rand -base64 64)
 
-# 3. Deploy infrastructure (uses a placeholder image � no real image needed yet)
+# 3. Deploy infrastructure (uses a placeholder image — no real image needed yet)
 #    This also creates the ACR pull role assignment (requires Owner / User Access Administrator)
 az deployment group create \
   --resource-group rg-svensktkorsord \
@@ -255,11 +309,11 @@ az deployment group create \
 ```
 
 **CI/CD:** The `deploy-azure.yml` workflow automatically builds and deploys on every push to `master`. It passes `createRoleAssignment=false` to skip the role assignment (already created during one-time setup). It requires the following repository secrets:
-- `AZURE_CLIENT_ID` � App registration client ID (OIDC)
-- `AZURE_TENANT_ID` � Entra ID tenant
-- `AZURE_SUBSCRIPTION_ID` � Target subscription
-- `SUBMISSION_TOKEN_SECRET` � HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
-- `ADMIN_USER_IDS` � Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
+- `AZURE_CLIENT_ID` — App registration client ID (OIDC)
+- `AZURE_TENANT_ID` — Entra ID tenant
+- `AZURE_SUBSCRIPTION_ID` — Target subscription
+- `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
+- `ADMIN_USER_IDS` — Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
 
 ### Running the CLI Generator
 
@@ -269,9 +323,9 @@ dotnet run --project SwedishCrossword
 
 ### Menu Options
 
-1. **Generate Easy Crossword (11�11)** - Quick puzzles
-2. **Generate Medium Crossword (15�15)** - Standard puzzles
-3. **Generate Hard Crossword (19�19)** - Challenging puzzles with vinkelord (uses `Hard` preset: 17�17 grid)
+1. **Generate Easy Crossword (11×11)** - Quick puzzles
+2. **Generate Medium Crossword (15×15)** - Standard puzzles
+3. **Generate Hard Crossword (19×19)** - Challenging puzzles with vinkelord (uses `Hard` preset: 17×17 grid)
 4. **Show Dictionary Statistics** - Word count, categories, lengths
 5. **Import from Lexin** - Download and parse Lexin dictionary
 6. **Import Synonym Pairs** - Parse Folkets synonymlexikon
@@ -289,10 +343,10 @@ dotnet run --project ClueHandler
 
 Interactive menu:
 
-1. **Visa ordlistestatistik** � Word count and category breakdown
-2. **L�gg till nya ord** � Add individual words with custom clues
-3. **Redigera ledtr�dar** � Edit clues for existing dictionary entries
-4. **H�mta ledtr�dar fr�n Wiktionary** � Auto-populate missing clues from the Swedish Wiktionary dump
+1. **Visa ordlistestatistik** — Word count and category breakdown
+2. **Lägg till nya ord** — Add individual words with custom clues
+3. **Redigera ledtrådar** — Edit clues for existing dictionary entries
+4. **Hämta ledtrådar från Wiktionary** — Auto-populate missing clues from the Swedish Wiktionary dump
 
 Headless commands:
 
@@ -312,10 +366,10 @@ dotnet test SwedishCrossword.Tests
 dotnet test SwedishCrossword.Api.Tests
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes 375 tests:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
-- Swedish character handling tests (�, �, �)
+- Swedish character handling tests (å, ä, ö)
 - Dictionary loading and validation tests
 - Puzzle validation and bonus word tests
 - Vinkelord (bent word) placement tests
@@ -327,16 +381,17 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - API integration tests (endpoint validation, leaderboard, analytics, score submission, puzzle check/hint, health checks)
 - SubmissionTokenService unit tests (token generation, validation, access checks, answer stripping, expiry)
 - LeaderboardStore unit tests (SQLite storage, deduplication, pruning, analytics aggregation, JSON migration, friend requests, friends leaderboard)
+- TransientSqlErrorClassifier parameterized tests covering every documented Azure SQL transient error number (40613, 42108/9, 42119 Free-tier quota pause, 49918–49920, 40197, 40501, 10928/9, 10053/4/60, 1205, 4060, 233, 64, -2) plus negative cases for non-transient errors
 
 ## Algorithm Highlights
 
 ### Generation Pipeline
 The generator is split into specialized components orchestrated by `CrosswordGenerator`:
 
-1. **WordAnalyzer** � Pre-computes connectivity scores for candidate words and caches results to disk for fast subsequent runs.
-2. **WordPlacer** � Selects anchor words for the initial scaffold and runs an adaptive placement loop with batched word placement.
-3. **GapFiller** � Scans rows and columns for patterns of existing letters with gaps, then finds dictionary words that match those patterns.
-4. **VinkelordPlacer** � Detects L-shaped opportunities on the grid and matches them against dictionary words to place bent words (vinkelord).
+1. **WordAnalyzer** — Pre-computes connectivity scores for candidate words and caches results to disk for fast subsequent runs.
+2. **WordPlacer** — Selects anchor words for the initial scaffold and runs an adaptive placement loop with batched word placement.
+3. **GapFiller** — Scans rows and columns for patterns of existing letters with gaps, then finds dictionary words that match those patterns.
+4. **VinkelordPlacer** — Detects L-shaped opportunities on the grid and matches them against dictionary words to place bent words (vinkelord).
 
 ### Word Selection
 - Prioritizes words with common Swedish letters (A, E, R, S, T, N) and high vowel counts
@@ -357,14 +412,14 @@ The generator is split into specialized components orchestrated by `CrosswordGen
 - Rollback-on-failure: each placement is tested against a targeted cell backup and reverted if it creates invalid words
 
 ### Performance Optimizations
-- **Targeted backup/restore**: Only cells along the placed word's path are saved and restored on rollback, reducing per-attempt cost from O(W�H) to O(word length)
-- **Suppressed renumbering**: Clue renumbering is deferred until after generation completes, eliminating an O(W�H) pass on every placement attempt
+- **Targeted backup/restore**: Only cells along the placed word's path are saved and restored on rollback, reducing per-attempt cost from O(W×H) to O(word length)
+- **Suppressed renumbering**: Clue renumbering is deferred until after generation completes, eliminating an O(W×H) pass on every placement attempt
 - **Cached grid statistics**: `GetStats()` results are cached and invalidated only when the grid changes
 - **Cached isolation checks**: Word-endpoint positions are cached in HashSets for O(1) lookup instead of iterating all words per cell
 - **O(1) dictionary clue lookup**: Accidental-word validation uses direct dictionary key lookup instead of materializing and scanning the full word list
 
 ### Quality Metrics
-- Target fill percentage: 45%+ (small grids), 65�70% (medium/hard)
+- Target fill percentage: 45%+ (small grids), 65–70% (medium/hard)
 - Minimum word count based on grid size
 - Proper word isolation (no unintended adjacencies)
 
@@ -377,7 +432,7 @@ The main dictionary is sourced from [Lexin](https://spraakbanken.gu.se/resurser/
 Additional synonym pairs from [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html), providing word-to-synonym clues.
 
 ### Kelly Word List (Frequency)
-Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1�C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
+Frequency-ranked vocabulary from the [Kelly project](https://spraakbanken.gu.se/resurser/kelly), categorized by CEFR level (A1–C2). Clues are generated from a curated clue dictionary (`kelly-clues.json`) with POS-based fallback patterns.
 
 ### DSSO (Den Stora Svenska Ordlistan)
 A comprehensive Swedish word list from [DSSO](https://dsso.se/) (version 1.51). The source data file is parsed and exported to `dsso-words.json`. Clues are sourced from DSSO definitions, supplemented by Wiktionary lookups and compound/pattern-based generators. Licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
@@ -389,23 +444,23 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - ~100,000+ words across all five sources
 - Categories: Substantiv, Verb, Adjektiv, Adverb, etc.
 - Difficulty levels: Easy, Medium, Hard
-- Full support for Swedish characters (�, �, �)
+- Full support for Swedish characters (å, ä, ö)
 
 ## Web Architecture
 
 - **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
-- **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) � Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases (with in-memory cache), friend requests with mutual auto-accept, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
+- **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) — Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases (with in-memory cache), friend requests with mutual auto-accept, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
 - **Shared Library**: `SwedishCrossword.Core` contains all domain models and services, referenced by both the API and CLI
-- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10�10, 15�15, 17�17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
+- **Daily Generation**: `PuzzleWarmupService` pre-generates today's puzzle plus 7 days ahead at startup and refreshes hourly; all configured sizes (10×10, 15×15, 17×17) are generated per day via an extensible `PuzzleSizes` array; word-analysis scores are cached to disk for fast subsequent runs
 - **Submission Tokens**: `SubmissionTokenService` generates HMAC-signed tokens when puzzles are fetched and validates them on score submission, enforcing minimum solve time per cell and a 48-hour token lifetime. The signing secret is configured via `SubmissionToken:Secret` (env: `SubmissionToken__Secret`); if not set, an ephemeral key is generated at startup (logged as a warning)
 - **Server-Side Answer Validation**: Puzzle JSON is stripped of answers before serving to clients; `POST /api/puzzle/check` validates submitted cell values and `POST /api/puzzle/hint` reveals requested letters, both authenticated via submission tokens
 - **Output Caching**: Puzzle responses are cached (5 min for today, 1 hour for archive, 10 min for dates) to reduce disk reads
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
 - **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes, puzzle interactions, and friend operations (30 req/min each)
-- **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` � raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
-- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction � no raw user identifiers are exposed to clients.
+- **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` — raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
+- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction — no raw user identifiers are exposed to clients.
 - **Security Headers**: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production; Kestrel `Server` header suppressed; request body size capped at 100 KB
 - **Forwarded Headers**: Configured for reverse proxy environments (`X-Forwarded-For`, `X-Forwarded-Proto`)
 - **CORS**: Configurable via `Cors:AllowedOrigins` in appsettings
@@ -413,8 +468,10 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **PWA**: Web app manifest (`site.webmanifest`) for installability; no service worker currently implemented
 - **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
-- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) � the profile page conditionally renders the admin link only when the server confirms admin access
-- **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `�`-numbered section headers for navigability
+- **Storage Abstraction**: `IStores.cs` defines focused storage interfaces (`IScoreStore`, `IHistoryStore`, `IUserProfileStore`, etc.) implemented by `LeaderboardStore`, keeping endpoints decoupled from the dual-database (Azure SQL / SQLite) implementation
+- **Transient Error Handling**: `TransientDbExceptionHandler` (registered as an `IExceptionHandler`) inspects unhandled `SqlException`s via `TransientSqlErrorClassifier`, logs them as warnings (not errors) so they don't pollute Application Insights failure rates, and returns a `503 Service Unavailable` with `Retry-After: 30`. Non-transient SQL errors fall through to the standard 500 handler
+- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) — the profile page conditionally renders the admin link only when the server confirms admin access
+- **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
 - **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
 
 ## License
@@ -424,6 +481,38 @@ The dictionary data is licensed under [Creative Commons Attribution 2.5 Sweden](
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues or pull requests.
+
+### One-time setup
+
+The repo ships a Git pre-commit hook that:
+
+1. Adds a UTF-8 BOM to any staged `*.cs` file missing one (matches `.editorconfig`'s `charset = utf-8-bom` rule that CI enforces via `dotnet format style --verify-no-changes`).
+2. Runs `dotnet format style` on staged C# files and re-stages anything it changes.
+3. Runs `gitleaks protect --staged` against `.gitleaks.toml` so accidental secrets are blocked locally before they reach CI.
+
+The hook is wired up automatically the first time you run `dotnet build` (via a target in `Directory.Build.props`). To enable it manually:
+
+```pwsh
+git config core.hooksPath .githooks
+winget install Gitleaks.Gitleaks   # required for step 3
+```
+
+To repair encoding across the whole repo on demand:
+
+```pwsh
+pwsh ./scripts/fix-bom.ps1
+```
+
+### Automated security tooling
+
+| Tool | Where | Purpose |
+|---|---|---|
+| **gitleaks** (`.gitleaks.toml`) | Pre-commit hook + `secret-scan` job in `deploy-azure.yml` | Blocks committed/pushed secrets; allowlists public Azure RBAC role GUIDs and `.vs/` |
+| **CodeQL** (`.github/workflows/codeql.yml`) | PRs, pushes to `master`, weekly cron | `security-and-quality` static analysis for both C# and JavaScript (frontend `site.js`) |
+| **Dependabot** (`.github/dependabot.yml`) | Weekly schedule | NuGet, GitHub Actions, and Docker base-image updates (Microsoft.* and test packages grouped to reduce PR noise) |
+| **`dotnet list package --vulnerable`** | `test` job in `deploy-azure.yml` | Fails the build if any direct or transitive NuGet has a known CVE |
+| **SBOM** (`scripts/generate-sbom.ps1`) | `build-and-deploy` job, archived as artifact for 90 days | SPDX 2.2 SBOM for the published API (EU CRA-aligned) |
+
 
 ### Areas for Improvement
 - Themed puzzle generation
