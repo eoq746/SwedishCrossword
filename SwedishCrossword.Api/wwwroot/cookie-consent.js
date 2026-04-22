@@ -94,26 +94,17 @@
      *   - 'skip'                 : don't load ads at all.
      * Non-ads placeholders are always loaded.
      */
-    // Allowlist of origins that may host scripts activated via the
-    // data-consent-src placeholder mechanism. Validating the URL here prevents
-    // a tampered placeholder from injecting a script from an arbitrary origin
-    // (and silences CodeQL's "DOM text reinterpreted as HTML" warning, which
-    // treats DOM attribute values as untrusted input).
-    var ALLOWED_SCRIPT_ORIGINS = [
-        'https://pagead2.googlesyndication.com'
-    ];
-
-    function isAllowedScriptUrl(rawUrl) {
-        if (!rawUrl) { return false; }
-        try {
-            var parsed = new URL(rawUrl, document.baseURI);
-            if (parsed.protocol !== 'https:') { return false; }
-            for (var i = 0; i < ALLOWED_SCRIPT_ORIGINS.length; i++) {
-                if (parsed.origin === ALLOWED_SCRIPT_ORIGINS[i]) { return true; }
-            }
-        } catch (e) { /* fallthrough */ }
-        return false;
-    }
+    // Hard-coded allowlist of script URLs that may be activated via the
+    // data-consent-src placeholder mechanism. The placeholder's
+    // data-consent-src attribute is used only as a *key* into this map; the
+    // actual URL assigned to <script>.src is always one of these literal
+    // constants. This breaks the DOM-text -> script.src taint flow that
+    // CodeQL flags as "DOM text reinterpreted as HTML" and also prevents a
+    // tampered placeholder from injecting a script from an arbitrary origin.
+    var ALLOWED_SCRIPT_URLS = Object.freeze({
+        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288':
+            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288'
+    });
 
     function loadConsentedScripts(mode) {
         mode = mode || 'personalized';
@@ -127,10 +118,13 @@
 
             if (isAds && mode === 'skip') { continue; }
 
-            var src = oldScript.getAttribute('data-consent-src');
-            if (!isAllowedScriptUrl(src)) {
-                // Refuse to activate placeholders that point at an
-                // unexpected origin. Mark as loaded so we don't retry.
+            // Look up the literal URL constant by key. If the placeholder
+            // points at anything not in the allowlist, refuse to load it.
+            var requestedSrc = oldScript.getAttribute('data-consent-src');
+            var safeSrc = Object.prototype.hasOwnProperty.call(ALLOWED_SCRIPT_URLS, requestedSrc)
+                ? ALLOWED_SCRIPT_URLS[requestedSrc]
+                : null;
+            if (!safeSrc) {
                 oldScript.setAttribute('data-consent-loaded', 'true');
                 oldScript.setAttribute('data-consent-mode', 'blocked');
                 continue;
@@ -148,7 +142,7 @@
             }
 
             var newScript = document.createElement('script');
-            newScript.src = src;
+            newScript.src = safeSrc;
             if (oldScript.getAttribute('data-consent-async') === 'true') {
                 newScript.async = true;
             }
