@@ -274,12 +274,10 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         // Prune history older than 365 days
         var historyCutoff = _timeProvider.GetSwedishDate().AddDays(-365);
         if (historyCutoff < HistoryCutoffDate) historyCutoff = HistoryCutoffDate;
-        await using (var purge = conn.CreateCommand())
-        {
-            purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
-            AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
-            await purge.ExecuteNonQueryAsync();
-        }
+        await using var purge = conn.CreateCommand();
+        purge.CommandText = "DELETE FROM history WHERE date < @cutoff";
+        AddParam(purge, "@cutoff", historyCutoff.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
+        await purge.ExecuteNonQueryAsync();
     }
 
     // POST /leaderboard/history
@@ -1359,31 +1357,19 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return conn;
     }
 
-    // Transient SQL error numbers raised while a serverless Azure SQL database
-    // is resuming from auto-pause, plus generic connection/timeout failures.
-    // 40613/42108/42109/49918/49919/49920 = database/login resuming or unavailable.
-    // 40197/40501/10928/10929 = service busy/throttled. 10053/10054/10060 = network drop.
-    // 1205 = deadlock. 4060 = cannot open db (often during resume). 233/64 = pre-login.
-    // -2 = client-side command/login timeout.
-    private static readonly HashSet<int> TransientSqlErrors = new()
-    {
-        -2, 64, 233, 1205, 4060,
-        10053, 10054, 10060, 10928, 10929,
-        40197, 40501, 40613,
-        42108, 42109,
-        49918, 49919, 49920
-    };
+    // Transient SQL error classification lives in TransientSqlErrorClassifier
+    // so the same set is shared with TransientDbExceptionHandler (which maps
+    // unhandled transient SqlExceptions to HTTP 503 problem+json).
+    private static bool IsTransient(SqlException ex) => TransientSqlErrorClassifier.IsTransient(ex);
 
-    private static bool IsTransient(SqlException ex)
-    {
-        foreach (SqlError err in ex.Errors)
-            if (TransientSqlErrors.Contains(err.Number)) return true;
-        return false;
-    }
+    // 8 attempts with exponential backoff capped at 15s totals ~60s of waiting
+    // (1+2+4+8+15+15+15s) — enough to cover an Azure SQL serverless cold-start
+    // resume from auto-pause (typically 30–60s).
+    private const int OpenSqlMaxAttempts = 8;
 
     private void OpenSqlWithRetry(SqlConnection conn)
     {
-        const int maxAttempts = 6;
+        const int maxAttempts = OpenSqlMaxAttempts;
         for (var attempt = 1; ; attempt++)
         {
             try
@@ -1404,7 +1390,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
     private async Task OpenSqlWithRetryAsync(SqlConnection conn)
     {
-        const int maxAttempts = 6;
+        const int maxAttempts = OpenSqlMaxAttempts;
         for (var attempt = 1; ; attempt++)
         {
             try
@@ -1502,7 +1488,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         // Friends
         var friends = await GetFriendsAsync(userId);
 
-        return new UserDataExport(userId, alias, history, scores, friends.Select(f => f.Alias).ToList());
+        return new UserDataExport(userId, alias, history, scores, [.. friends.Select(f => f.Alias)]);
     }
 
     // ── GDPR: Account deletion ──

@@ -57,7 +57,7 @@ internal static class AuthEndpoints
             return Results.Challenge(properties, [scheme]);
         });
 
-        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IConfiguration config) =>
+        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IConfiguration config, ILoggerFactory loggerFactory) =>
         {
             if (user.Identity?.IsAuthenticated != true)
                 return Results.Json(new { authenticated = false });
@@ -70,7 +70,25 @@ internal static class AuthEndpoints
                            ?? user.FindFirstValue("urn:google:picture");
 
             var userId = GetUserId(user);
-            var alias = userId is not null ? await store.GetAliasAsync(userId) : null;
+
+            // Authentication state lives in the cookie, not the DB. Don't fail
+            // the whole endpoint if the alias lookup throws (e.g. SQL paused
+            // or temporarily unavailable) — the user is still logged in.
+            string? alias = null;
+            var aliasUnavailable = false;
+            if (userId is not null)
+            {
+                try
+                {
+                    alias = await store.GetAliasAsync(userId);
+                }
+                catch (Exception ex)
+                {
+                    aliasUnavailable = true;
+                    loggerFactory.CreateLogger("AuthEndpoints")
+                        .LogWarning(ex, "Alias lookup failed for user {UserId} — returning authenticated state without alias", userId);
+                }
+            }
 
             var adminIds = config.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
             var isAdmin = userId is not null && adminIds.Contains(userId);
@@ -81,6 +99,7 @@ internal static class AuthEndpoints
                 userId,
                 name,
                 alias,
+                aliasUnavailable,
                 avatarUrl,
                 provider = user.Identity.AuthenticationType,
                 isAdmin

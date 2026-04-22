@@ -74,7 +74,9 @@ Write-Host "Generating SBOM (SPDX 2.2)..." -ForegroundColor Cyan
     -ps "SwedishCrossword" `
     -nsb "https://github.com/eoq746/SwedishCrossword" `
     -m $OutputPath `
-    -mi "SPDX:2.2"
+    -mi "SPDX:2.2" `
+    -li $true `
+    -pm $true
 
 $manifestFile = Get-ChildItem -Path $OutputPath -Recurse -Filter "manifest.spdx.json" | Select-Object -First 1
 if (-not $manifestFile) {

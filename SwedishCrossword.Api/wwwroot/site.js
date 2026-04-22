@@ -33,6 +33,67 @@ const LEADERBOARD_PROXY_URL = '/api';
 
 const LEADERBOARD_ENABLED = true;
 
+// ── Global fetch interceptor: graceful "DB unavailable" handling ──
+// Backend returns HTTP 503 with body {"code":"db_unavailable", ...} when
+// Azure SQL is paused/resuming/quota-exhausted. Show a single dismissible
+// banner so users know that puzzle play still works while leaderboard,
+// stats, friends etc. are temporarily disabled. Done globally so every
+// fetch call site benefits without code churn.
+(function installDbUnavailableInterceptor() {
+    if (window.__dbBannerInstalled) return;
+    window.__dbBannerInstalled = true;
+    const originalFetch = window.fetch.bind(window);
+
+    function showBanner() {
+        if (document.getElementById('db-unavailable-banner')) return;
+        // Lazy CSS injection — avoids touching shared stylesheets.
+        if (!document.getElementById('db-unavailable-style')) {
+            const style = document.createElement('style');
+            style.id = 'db-unavailable-style';
+            style.textContent =
+                '#db-unavailable-banner{position:fixed;top:0;left:0;right:0;z-index:9999;' +
+                'background:#fff3cd;color:#664d03;border-bottom:1px solid #ffe69c;' +
+                'padding:.6rem 1rem;font:14px/1.4 system-ui,sans-serif;' +
+                'display:flex;gap:1rem;align-items:center;justify-content:center;' +
+                'box-shadow:0 1px 4px rgba(0,0,0,.08)}' +
+                '#db-unavailable-banner button{background:transparent;border:0;' +
+                'color:#664d03;font-size:1.1rem;cursor:pointer;padding:0 .25rem;line-height:1}' +
+                '@media (prefers-color-scheme: dark){' +
+                '#db-unavailable-banner{background:#3a2f00;color:#ffe69c;border-bottom-color:#665200}' +
+                '#db-unavailable-banner button{color:#ffe69c}}';
+            document.head.appendChild(style);
+        }
+        const banner = document.createElement('div');
+        banner.id = 'db-unavailable-banner';
+        banner.setAttribute('role', 'status');
+        banner.setAttribute('aria-live', 'polite');
+        banner.innerHTML =
+            '<span>⚠️ Resultatlistor och statistik är tillfälligt otillgängliga – pussel fungerar som vanligt.</span>' +
+            '<button type="button" aria-label="Stäng">×</button>';
+        banner.querySelector('button').addEventListener('click', () => banner.remove());
+        (document.body || document.documentElement).appendChild(banner);
+    }
+
+    window.fetch = async function patchedFetch(...args) {
+        const response = await originalFetch(...args);
+        if (response.status === 503) {
+            // Clone so callers can still consume the body.
+            try {
+                const peek = response.clone();
+                const ct = peek.headers.get('content-type') || '';
+                if (ct.includes('json')) {
+                    const body = await peek.json();
+                    if (body && body.code === 'db_unavailable') {
+                        window.dbUnavailable = true;
+                        showBanner();
+                    }
+                }
+            } catch (_) { /* ignore body-parse errors — never break the fetch */ }
+        }
+        return response;
+    };
+})();
+
 // Anti-cheat settings
 const ANTI_CHEAT = {
     // Minimum seconds required to complete (based on ~2 letters per seconds for fast typers)

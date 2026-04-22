@@ -53,6 +53,12 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 // Health checks
 builder.Services.AddHealthChecks();
 
+// Translate transient/unavailable Azure SQL errors (incl. Free Offer 42119
+// quota-pause) into HTTP 503 problem+json instead of 500. Lets the front-end
+// distinguish "DB temporarily down" from real server errors.
+builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<TransientDbExceptionHandler>();
+
 // Authentication — cookie-based with Google & Microsoft social login
 var authBuilder = builder.Services.AddAuthentication(options =>
 {
@@ -211,6 +217,9 @@ app.UseForwardedHeaders();
 
 if (!app.Environment.IsDevelopment())
 {
+    // UseExceptionHandler invokes registered IExceptionHandler instances first
+    // (here: TransientDbExceptionHandler returns 503 for transient SQL errors).
+    // If none handle the exception, the fallback delegate below logs + returns 500.
     app.UseExceptionHandler(err => err.Run(async ctx =>
     {
         var exFeature = ctx.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerFeature>();

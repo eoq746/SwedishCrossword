@@ -68,12 +68,18 @@ var storageAccountName = toLower(take(replace('${appName}st${suffix}', '-', ''),
 
 // Ensure minimum length requirements
 var acrNameFinal = length(acrName) < 5 ? '${acrName}acr' : acrName
-var storageAccountNameFinal = length(storageAccountName) < 3 ? '${storageAccountName}st' : storageAccountName
+// take(..., 24) re-clamps after the optional 'st' suffix so the padded value
+// never exceeds the storage account 24-char limit (fixes BCP335).
+var storageAccountNameFinal = take(length(storageAccountName) < 3 ? '${storageAccountName}st' : storageAccountName, 24)
 
 // ---------------------------------------------------------------------------
 // Azure Container Registry (Basic SKU, no admin user)
 // ---------------------------------------------------------------------------
 resource acr 'Microsoft.ContainerRegistry/registries@2023-11-01-preview' = {
+  // uniqueString() always returns 13 chars, so '${appName}${suffix}' is
+  // always >= 13 chars after replace('-', '') — the take(..., 50) only
+  // shortens, never empties. Linter can't infer this lower bound.
+  #disable-next-line BCP334
   name: take(acrNameFinal, 50)
   location: location
   sku: { name: 'Basic' }
@@ -192,13 +198,18 @@ resource kvMicrosoftClientSecret 'Microsoft.KeyVault/vaults/secrets@2024-04-01-p
 // doesn't supply a value, we still wire ACA to KV so it picks up the previously
 // stored value. Override these flags only if you ever need to deploy ACA before
 // the KV secret has been bootstrapped.
+// These are plain booleans — the linter's secret-name heuristic false-positives
+// on words like 'Token', 'Secret', 'Auth', 'Client'. Suppressed with rationale.
 @description('Wire submission-token secret reference into the Container App. Default: true if a value is supplied this run.')
+#disable-next-line secure-secrets-in-params
 param hasSubmissionTokenSecret bool = submissionTokenSecret != ''
 
 @description('Wire Google OAuth secret references into the Container App.')
+#disable-next-line secure-secrets-in-params
 param hasGoogleAuth bool = googleClientId != ''
 
 @description('Wire Microsoft OAuth secret references into the Container App.')
+#disable-next-line secure-secrets-in-params
 param hasMicrosoftAuth bool = microsoftClientId != ''
 
 // ---------------------------------------------------------------------------
@@ -217,6 +228,10 @@ resource logAnalytics 'Microsoft.OperationalInsights/workspaces@2023-09-01' = {
 // Storage Account + Azure Files share for persistent data (/data volume)
 // ---------------------------------------------------------------------------
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
+  // uniqueString() always returns 13 chars, so the input to take(..., 24) is
+  // always >= 13 chars — the take() only shortens, never empties. Linter can't
+  // infer this lower bound.
+  #disable-next-line BCP334
   name: storageAccountNameFinal
   location: location
   sku: { name: 'Standard_LRS' }
@@ -291,11 +306,15 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
     maxSizeBytes: 34359738368 // 32 GB (free tier limit)
-    // autoPauseDelay omitted: Free Limit databases with 'AutoPause' exhaustion
-    // behavior require the default auto-pause delay (60 min) and reject custom values.
+    // autoPauseDelay omitted: Free Limit databases require the default
+    // auto-pause delay (60 min) and reject custom values.
     minCapacity: json('0.5')
     useFreeLimit: true
-    freeLimitExhaustionBehavior: 'AutoPause'
+    // BillOverUsage keeps the database online once the monthly free
+    // vCore-second quota (~100k s) is exhausted, billing per-second over the
+    // free allowance instead of pausing the DB until the next month. The
+    // 60-min idle auto-pause still applies, so cost stays near zero when idle.
+    freeLimitExhaustionBehavior: 'BillOverUsage'
   }
 }
 
