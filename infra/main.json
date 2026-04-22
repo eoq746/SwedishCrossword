@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "4749877708959361997"
+      "templateHash": "7334638629172616923"
     }
   },
   "parameters": {
@@ -113,7 +113,7 @@
       "type": "bool",
       "defaultValue": true,
       "metadata": {
-        "description": "Apply a CanNotDelete lock on the resource group. Disable only for intentional teardown."
+        "description": "Apply a CanNotDelete lock on the resource group via this template. Requires Owner or User Access Administrator. Set to false in CI; apply the lock once manually with `az lock create` instead."
       }
     }
   },

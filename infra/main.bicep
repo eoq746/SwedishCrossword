@@ -566,9 +566,20 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
 // CanNotDelete prevents accidental teardown of the entire resource group
 // (the most common cause of total outage in single-RG apps). Reads and
 // updates remain unrestricted, so CI/CD continues to function normally.
+//
+// Locks require Microsoft.Authorization/locks/write permission, which the
+// CI service principal (Contributor) does NOT have. Same pattern as
+// createRoleAssignment: apply once manually with the command below, then
+// pass enableResourceGroupLock=false in CI so the deployment skips this
+// resource on subsequent runs.
+//
+//   az lock create --name protect-rg --resource-group rg-svensktkorsord \
+//                  --lock-type CanNotDelete \
+//                  --notes "Production resource group..."
+//
 // To remove the lock for an intentional teardown:
-//   az lock delete -n protect-rg -g rg-svensktkorsord --resource-group
-@description('Apply a CanNotDelete lock on the resource group. Disable only for intentional teardown.')
+//   az lock delete --name protect-rg --resource-group rg-svensktkorsord
+@description('Apply a CanNotDelete lock on the resource group via this template. Requires Owner or User Access Administrator. Set to false in CI; apply the lock once manually with `az lock create` instead.')
 param enableResourceGroupLock bool = true
 
 resource rgLock 'Microsoft.Authorization/locks@2020-05-01' = if (enableResourceGroupLock) {
