@@ -94,6 +94,27 @@
      *   - 'skip'                 : don't load ads at all.
      * Non-ads placeholders are always loaded.
      */
+    // Allowlist of origins that may host scripts activated via the
+    // data-consent-src placeholder mechanism. Validating the URL here prevents
+    // a tampered placeholder from injecting a script from an arbitrary origin
+    // (and silences CodeQL's "DOM text reinterpreted as HTML" warning, which
+    // treats DOM attribute values as untrusted input).
+    var ALLOWED_SCRIPT_ORIGINS = [
+        'https://pagead2.googlesyndication.com'
+    ];
+
+    function isAllowedScriptUrl(rawUrl) {
+        if (!rawUrl) { return false; }
+        try {
+            var parsed = new URL(rawUrl, document.baseURI);
+            if (parsed.protocol !== 'https:') { return false; }
+            for (var i = 0; i < ALLOWED_SCRIPT_ORIGINS.length; i++) {
+                if (parsed.origin === ALLOWED_SCRIPT_ORIGINS[i]) { return true; }
+            }
+        } catch (e) { /* fallthrough */ }
+        return false;
+    }
+
     function loadConsentedScripts(mode) {
         mode = mode || 'personalized';
         var placeholders = document.querySelectorAll(
@@ -105,6 +126,15 @@
             var isAds = oldScript.getAttribute('data-consent-category') === ADS_CATEGORY;
 
             if (isAds && mode === 'skip') { continue; }
+
+            var src = oldScript.getAttribute('data-consent-src');
+            if (!isAllowedScriptUrl(src)) {
+                // Refuse to activate placeholders that point at an
+                // unexpected origin. Mark as loaded so we don't retry.
+                oldScript.setAttribute('data-consent-loaded', 'true');
+                oldScript.setAttribute('data-consent-mode', 'blocked');
+                continue;
+            }
 
             if (isAds && mode === 'npa' && !npaPushed) {
                 // Tell AdSense to serve non-personalized ads. Must be queued
@@ -118,7 +148,7 @@
             }
 
             var newScript = document.createElement('script');
-            newScript.src = oldScript.getAttribute('data-consent-src');
+            newScript.src = src;
             if (oldScript.getAttribute('data-consent-async') === 'true') {
                 newScript.async = true;
             }
