@@ -1,4 +1,4 @@
-using SwedishCrossword.Models;
+ï»¿using SwedishCrossword.Models;
 using SwedishCrossword.Services;
 
 // Demo: Validation during word placement
@@ -12,7 +12,7 @@ Console.WriteLine($"Dictionary loaded with {dictionary.WordCount} words\n");
 
 // Create some test words
 var word1 = new Word("KATT", "Fluffig husdjur som jamar");
-var word2 = new Word("HUND", "Människans bästa vän");  
+var word2 = new Word("HUND", "Mï¿½nniskans bï¿½sta vï¿½n");  
 var word3 = new Word("XYZ", "Invalid test word"); // This doesn't exist in dictionary
 
 Console.WriteLine("=== Testing Standard Placement ===");

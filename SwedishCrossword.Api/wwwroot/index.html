@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288"
-         crossorigin="anonymous"></script>
+    <!-- Google AdSense: loading is gated by cookie-consent.js. Signed-in users see no ads; signed-out users see personalized ads after "Acceptera alla" or non-personalized (NPA) ads after "Endast nödvändiga". -->
+    <script type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-4967624066496288">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,47 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
+    <style>
+        /* Sign-in incentive section (homepage only) */
+        .landing-signin-cta { margin: 28px 0; }
+        .signin-cta-card {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover, var(--accent)) 100%);
+            color: #fff; border-radius: 16px; padding: 28px 24px;
+            box-shadow: 0 10px 30px var(--shadow, rgba(0,0,0,0.15));
+        }
+        .signin-cta-header { text-align: center; margin-bottom: 18px; }
+        .signin-cta-header h2 { color: #fff; margin: 4px 0 8px; font-size: 1.5rem; }
+        .signin-cta-icon { font-size: 2rem; display: inline-block; }
+        .signin-cta-sub { color: rgba(255,255,255,0.92); margin: 0; font-size: 1rem; }
+        .signin-benefits {
+            list-style: none; padding: 0; margin: 18px 0;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px,100%), 1fr)); gap: 12px;
+        }
+        .signin-benefits li {
+            display: flex; align-items: flex-start; gap: 10px;
+            background: rgba(255,255,255,0.12); padding: 12px 14px; border-radius: 10px;
+        }
+        .signin-benefits li .benefit-icon { font-size: 1.25rem; line-height: 1.4; flex: 0 0 auto; }
+        .signin-benefits li strong { display: block; color: #fff; font-size: 0.98rem; margin-bottom: 2px; }
+        .signin-benefits li span { color: rgba(255,255,255,0.9); font-size: 0.88rem; line-height: 1.35; display: block; }
+        .signin-cta-actions {
+            display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 8px;
+        }
+        .signin-cta-btn {
+            background: #fff; color: var(--accent); border: 2px solid #fff;
+            padding: 10px 20px; border-radius: 8px; font-weight: 700; text-decoration: none;
+            transition: transform .15s ease, background .15s ease;
+        }
+        .signin-cta-btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.92); }
+        .signin-cta-btn-alt { background: transparent; color: #fff; }
+        .signin-cta-btn-alt:hover { background: rgba(255,255,255,0.15); }
+        .signin-cta-foot { text-align: center; color: rgba(255,255,255,0.85); font-size: 0.82rem; margin: 14px 0 0; }
+        .signin-cta-foot a { color: #fff; text-decoration: underline; }
+        @media (max-width: 600px) {
+            .signin-cta-card { padding: 22px 16px; }
+            .signin-cta-header h2 { font-size: 1.25rem; }
+        }
+    </style>
 
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
@@ -194,6 +235,31 @@
             </div>
         </section>
 
+        <!-- Sign-in incentive (only visible when not authenticated) -->
+        <section class="landing-signin-cta" id="signin-cta" aria-label="Fördelar med att logga in" hidden>
+            <div class="signin-cta-card">
+                <div class="signin-cta-header">
+                    <span class="signin-cta-icon" aria-hidden="true">✨</span>
+                    <h2>Logga in &ndash; gratis och få mer ut av spelet</h2>
+                    <p class="signin-cta-sub">Logga in med Google eller Microsoft p&aring; n&aring;gra sekunder. Inget l&ouml;senord. Inga reklamutskick.</p>
+                </div>
+                <ul class="signin-benefits">
+                    <li><span class="benefit-icon" aria-hidden="true">🚫</span><div><strong>Helt utan reklam</strong><span>Inloggade spelare slipper alla annonser &mdash; sn&auml;ppare sidor och f&auml;rre distraktioner.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">✓</span><div><strong>Verifierad p&aring; topplistan</strong><span>Ditt resultat markeras med en ✓ s&aring; alla ser att tiden &auml;r &auml;kta.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">📊</span><div><strong>Personlig statistik</strong><span>Bästa tid, snittid och antal l&ouml;sta &mdash; per pusselstorlek.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">🔥</span><div><strong>Streaks</strong><span>R&auml;kna dina dagar i rad och sl&aring; ditt eget rekord.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">☁️</span><div><strong>Synkat mellan enheter</strong><span>Spela vidare p&aring; mobilen, datorn eller surfplattan.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">👥</span><div><strong>L&auml;gg till v&auml;nner</strong><span>J&auml;mf&ouml;r tider och utmana dina v&auml;nner.</span></div></li>
+                    <li><span class="benefit-icon" aria-hidden="true">🏷️</span><div><strong>V&auml;lj eget alias</strong><span>Visa ditt eget namn p&aring; topplistan i st&auml;llet f&ouml;r ett slumpat.</span></div></li>
+                </ul>
+                <div class="signin-cta-actions">
+                    <a href="/api/auth/login/google?returnUrl=%2F" class="btn-hero signin-cta-btn">Logga in med Google</a>
+                    <a href="/api/auth/login/microsoft?returnUrl=%2F" class="btn-hero signin-cta-btn signin-cta-btn-alt">Logga in med Microsoft</a>
+                </div>
+                <p class="signin-cta-foot">Du kan n&auml;r som helst exportera eller radera dina uppgifter. L&auml;s mer i v&aring;r <a href="/privacy-policy.html">integritetspolicy</a>.</p>
+            </div>
+        </section>
+
         <!-- Feature cards -->
         <section class="landing-features" aria-label="Funktioner">
             <div class="info-cards">
@@ -328,6 +394,8 @@
     <script>
     (function(){
         function initAuth(data){
+            var cta = document.getElementById('signin-cta');
+            if (cta) cta.hidden = !!(data && data.authenticated);
             document.querySelectorAll('.auth-btn-container').forEach(function(c){
                 c.innerHTML='';
                 if(data && data.authenticated){
