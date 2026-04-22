@@ -17,12 +17,6 @@ permissions:
   id-token: write
   contents: read
 
-# Serialize deployments so two pushes in quick succession don't race on the
-# same resource group / Container App revision.
-concurrency:
-  group: deploy-azure
-  cancel-in-progress: false
-
 env:
   RESOURCE_GROUP: rg-svensktkorsord
   LOCATION: swedencentral
@@ -97,6 +91,13 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: [test, secret-scan]
     runs-on: ubuntu-latest
+    # Serialize deployments so two pushes in quick succession don't race on
+    # the same resource group / Container App revision. Scoped to this job
+    # only so PR runs of `test` and `secret-scan` are never blocked by an
+    # in-progress deploy on master.
+    concurrency:
+      group: deploy-azure-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
