@@ -182,7 +182,43 @@ jobs:
             .
 
       # ------------------------------------------------------------------
-      # 4. Re-deploy Bicep with imageTag so the Container App points at the
+      # 4. Wait for SQL DB to settle. The first Bicep deploy returns as soon
+      #    as the ARM deployment finishes, but the underlying serverless
+      #    Free-tier DB may still be provisioning. Re-issuing a PATCH against
+      #    a DB whose previous operation hasn't completed yields
+      #    `ConflictingDatabaseOperation`. Poll until status == Online.
+      # ------------------------------------------------------------------
+      - name: Wait for SQL DB Online
+        run: |
+          set -euo pipefail
+          SQL_SERVER=$(az sql server list \
+            --resource-group $RESOURCE_GROUP \
+            --query "[?starts_with(name, '$APP_NAME-sql-')].name | [0]" \
+            -o tsv)
+          if [ -z "$SQL_SERVER" ]; then
+            echo "No SQL server found — skipping wait."
+            exit 0
+          fi
+          DB_NAME="$APP_NAME-db"
+          echo "Waiting for $SQL_SERVER/$DB_NAME to reach Online..."
+          for i in $(seq 1 60); do
+            STATUS=$(az sql db show \
+              --resource-group $RESOURCE_GROUP \
+              --server "$SQL_SERVER" \
+              --name "$DB_NAME" \
+              --query "status" -o tsv 2>/dev/null || echo "Unknown")
+            echo "  attempt $i: status=$STATUS"
+            if [ "$STATUS" = "Online" ] || [ "$STATUS" = "AutoClosed" ] || [ "$STATUS" = "Paused" ]; then
+              echo "✅ SQL DB ready (status=$STATUS)"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::SQL DB did not reach Online within 10 minutes (last status: $STATUS)"
+          exit 1
+
+      # ------------------------------------------------------------------
+      # 5. Re-deploy Bicep with imageTag so the Container App points at the
       #    newly-pushed image and the health probes get attached (probes are
       #    skipped in the placeholder-image deploy above).
       # ------------------------------------------------------------------
@@ -211,7 +247,7 @@ jobs:
             --output none
 
       # ------------------------------------------------------------------
-      # 5. Bind custom domain (if CUSTOM_DOMAIN secret is set)
+      # 6. Bind custom domain (if CUSTOM_DOMAIN secret is set)
       # ------------------------------------------------------------------
       - name: Bind Custom Domain
         if: env.CUSTOM_DOMAIN != ''
@@ -239,7 +275,7 @@ jobs:
           echo "✅ Custom domain bound with managed certificate"
 
       # ------------------------------------------------------------------
-      # 6. Verify deployment
+      # 7. Verify deployment
       # ------------------------------------------------------------------
       - name: Verify Health
         run: |
