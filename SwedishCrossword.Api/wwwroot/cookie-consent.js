@@ -94,6 +94,18 @@
      *   - 'skip'                 : don't load ads at all.
      * Non-ads placeholders are always loaded.
      */
+    // Hard-coded allowlist of script URLs that may be activated via the
+    // data-consent-src placeholder mechanism. The placeholder's
+    // data-consent-src attribute is used only as a *key* into this map; the
+    // actual URL assigned to <script>.src is always one of these literal
+    // constants. This breaks the DOM-text -> script.src taint flow that
+    // CodeQL flags as "DOM text reinterpreted as HTML" and also prevents a
+    // tampered placeholder from injecting a script from an arbitrary origin.
+    var ALLOWED_SCRIPT_URLS = Object.freeze({
+        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288':
+            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288'
+    });
+
     function loadConsentedScripts(mode) {
         mode = mode || 'personalized';
         var placeholders = document.querySelectorAll(
@@ -105,6 +117,18 @@
             var isAds = oldScript.getAttribute('data-consent-category') === ADS_CATEGORY;
 
             if (isAds && mode === 'skip') { continue; }
+
+            // Look up the literal URL constant by key. If the placeholder
+            // points at anything not in the allowlist, refuse to load it.
+            var requestedSrc = oldScript.getAttribute('data-consent-src');
+            var safeSrc = Object.prototype.hasOwnProperty.call(ALLOWED_SCRIPT_URLS, requestedSrc)
+                ? ALLOWED_SCRIPT_URLS[requestedSrc]
+                : null;
+            if (!safeSrc) {
+                oldScript.setAttribute('data-consent-loaded', 'true');
+                oldScript.setAttribute('data-consent-mode', 'blocked');
+                continue;
+            }
 
             if (isAds && mode === 'npa' && !npaPushed) {
                 // Tell AdSense to serve non-personalized ads. Must be queued
@@ -118,7 +142,7 @@
             }
 
             var newScript = document.createElement('script');
-            newScript.src = oldScript.getAttribute('data-consent-src');
+            newScript.src = safeSrc;
             if (oldScript.getAttribute('data-consent-async') === 'true') {
                 newScript.async = true;
             }
