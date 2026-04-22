@@ -1,0 +1,41 @@
+# Gitleaks configuration for SwedishCrossword.
+# Extends the default ruleset and adds project-specific allowlisting so the
+# `dotnet format` / pre-commit hook and CI scans don't keep flagging known
+# false positives.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Project-wide allowlist (paths, well-known public identifiers)"
+
+# Never scan dev-machine state. .vs/ is gitignored anyway, but the working-tree
+# scan picks it up. SwedishCrossword.* (bin/obj/publish), TestResults, the SBOM
+# output and packed NuGet tools are also pure build/IDE artefacts.
+paths = [
+    '''(^|/)\.vs/''',
+    '''(^|/)bin/''',
+    '''(^|/)obj/''',
+    '''(^|/)publish/''',
+    '''(^|/)TestResults/''',
+    '''(^|/)sbom-output/''',
+    '''(^|/)\.tools/''',
+    '''(^|/)node_modules/''',
+]
+
+# Public Azure RBAC built-in role definition IDs. These GUIDs are documented by
+# Microsoft and are the same in every Azure tenant; they identify the role,
+# not any principal or credential.
+# https://learn.microsoft.com/azure/role-based-access-control/built-in-roles
+regexes = [
+    # Key Vault Secrets User
+    '''4633458b-17de-408a-b874-0445c86b69e6''',
+    # Key Vault Secrets Officer
+    '''b86a8fe4-44ce-4948-aee5-eccb2c155cd7''',
+    # Key Vault Crypto User
+    '''12338af0-0e69-4776-bea7-57ae8d297424''',
+    # AcrPull (used by the Container App to pull from ACR)
+    '''7f951dda-4ed3-4680-a7ca-43fe172d538d''',
+    # Storage File Data SMB Share Contributor (Azure Files mount)
+    '''0c867c2a-1d8c-454a-a3db-ab2ea1bdc8bb''',
+]
