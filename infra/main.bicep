@@ -246,6 +246,15 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
 resource fileService 'Microsoft.Storage/storageAccounts/fileServices@2023-05-01' = {
   parent: storageAccount
   name: 'default'
+  properties: {
+    // Soft-delete recovers accidentally deleted shares within the retention
+    // window. 30 days strikes a balance between recoverability and storage
+    // cost (deleted shares continue to incur storage charges until purged).
+    shareDeleteRetentionPolicy: {
+      enabled: true
+      days: 30
+    }
+  }
 }
 
 resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2023-05-01' = {
@@ -315,6 +324,31 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
     // free allowance instead of pausing the DB until the next month. The
     // 60-min idle auto-pause still applies, so cost stays near zero when idle.
     freeLimitExhaustionBehavior: 'BillOverUsage'
+  }
+}
+
+// Point-in-time restore window: 35 days (the maximum, free of charge for the
+// underlying differential backups; only outbound restore costs apply).
+resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
+  parent: sqlDb
+  name: 'default'
+  properties: {
+    retentionDays: 35
+    diffBackupIntervalInHours: 24
+  }
+}
+
+// Long-term retention: 4 weekly + 12 monthly + 7 yearly backups in archive
+// storage. Yearly snapshot is taken from the week-1 weekly backup. Cost is
+// roughly $0.05/GB/month — pennies for a sub-2 GB OLTP database.
+resource sqlLtrPolicy 'Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
+  parent: sqlDb
+  name: 'default'
+  properties: {
+    weeklyRetention: 'P4W'
+    monthlyRetention: 'P12M'
+    yearlyRetention: 'P7Y'
+    weekOfYear: 1
   }
 }
 
@@ -523,6 +557,25 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
         }
       ]
     }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Resource group lock
+// ---------------------------------------------------------------------------
+// CanNotDelete prevents accidental teardown of the entire resource group
+// (the most common cause of total outage in single-RG apps). Reads and
+// updates remain unrestricted, so CI/CD continues to function normally.
+// To remove the lock for an intentional teardown:
+//   az lock delete -n protect-rg -g rg-svensktkorsord --resource-group
+@description('Apply a CanNotDelete lock on the resource group. Disable only for intentional teardown.')
+param enableResourceGroupLock bool = true
+
+resource rgLock 'Microsoft.Authorization/locks@2020-05-01' = if (enableResourceGroupLock) {
+  name: 'protect-rg'
+  properties: {
+    level: 'CanNotDelete'
+    notes: 'Production resource group. Remove this lock only for intentional teardown.'
   }
 }
 
