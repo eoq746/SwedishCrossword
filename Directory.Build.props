@@ -26,7 +26,12 @@
   -->
   <Target Name="ConfigureGitHooksPath"
           BeforeTargets="BeforeBuild"
-          Condition="Exists('$(MSBuildThisFileDirectory).git') And !Exists('$(MSBuildThisFileDirectory).git\.hookspath-configured')">
+          Condition="
+            '$(CI)' != 'true' And
+            '$(TF_BUILD)' != 'True' And
+            '$(GITHUB_ACTIONS)' != 'true' And
+            Exists('$(MSBuildThisFileDirectory).git') And
+            !Exists('$(MSBuildThisFileDirectory).git\.hookspath-configured')">
     <Exec Command="git config core.hooksPath .githooks"
           WorkingDirectory="$(MSBuildThisFileDirectory)"
           ContinueOnError="true"
