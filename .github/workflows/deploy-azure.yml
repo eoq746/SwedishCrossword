@@ -133,7 +133,7 @@ jobs:
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
-            --parameters appName=$APP_NAME createRoleAssignment=false \
+            --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
               submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
               googleClientId="$GOOGLE_CLIENT_ID" \
               googleClientSecret="$GOOGLE_CLIENT_SECRET" \
@@ -265,7 +265,7 @@ jobs:
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
-            --parameters appName=$APP_NAME createRoleAssignment=false \
+            --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
               imageTag="${{ github.sha }}" \
               submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
               googleClientId="$GOOGLE_CLIENT_ID" \
