@@ -1,0 +1,15 @@
+# Code owners for the SwedishCrossword repository.
+# Pull requests touching these paths automatically request review from the listed owners.
+# Syntax: https://docs.github.com/en/repositories/managing-your-repositories-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything not matched below.
+*                               @eoq746
+
+# Security-sensitive areas: workflows, infra, hooks, scanners.
+/.github/                       @eoq746
+/.githooks/                     @eoq746
+/.gitleaks.toml                 @eoq746
+/SECURITY.md                    @eoq746
+/infra/                         @eoq746
+/scripts/                       @eoq746
+/Directory.Build.props          @eoq746
