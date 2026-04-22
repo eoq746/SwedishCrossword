@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "1646870974263080861"
+      "templateHash": "4749877708959361997"
     }
   },
   "parameters": {
@@ -107,6 +107,13 @@
       "defaultValue": "[not(equals(parameters('microsoftClientId'), ''))]",
       "metadata": {
         "description": "Wire Microsoft OAuth secret references into the Container App."
+      }
+    },
+    "enableResourceGroupLock": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "Apply a CanNotDelete lock on the resource group. Disable only for intentional teardown."
       }
     }
   },
@@ -295,6 +302,12 @@
       "type": "Microsoft.Storage/storageAccounts/fileServices",
       "apiVersion": "2023-05-01",
       "name": "[format('{0}/{1}', variables('storageAccountNameFinal'), 'default')]",
+      "properties": {
+        "shareDeleteRetentionPolicy": {
+          "enabled": true,
+          "days": 30
+        }
+      },
       "dependsOn": [
         "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountNameFinal'))]"
       ]
@@ -375,6 +388,34 @@
       },
       "dependsOn": [
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}/{2}', take(variables('sqlServerName'), 63), variables('sqlDbName'), 'default')]",
+      "properties": {
+        "retentionDays": 35,
+        "diffBackupIntervalInHours": 24
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers/databases', take(variables('sqlServerName'), 63), variables('sqlDbName'))]"
+      ]
+    },
+    {
+      "condition": "[parameters('deployDatabase')]",
+      "type": "Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}/{2}', take(variables('sqlServerName'), 63), variables('sqlDbName'), 'default')]",
+      "properties": {
+        "weeklyRetention": "P4W",
+        "monthlyRetention": "P12M",
+        "yearlyRetention": "P7Y",
+        "weekOfYear": 1
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers/databases', take(variables('sqlServerName'), 63), variables('sqlDbName'))]"
       ]
     },
     {
@@ -481,6 +522,16 @@
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]",
         "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]"
       ]
+    },
+    {
+      "condition": "[parameters('enableResourceGroupLock')]",
+      "type": "Microsoft.Authorization/locks",
+      "apiVersion": "2020-05-01",
+      "name": "protect-rg",
+      "properties": {
+        "level": "CanNotDelete",
+        "notes": "Production resource group. Remove this lock only for intentional teardown."
+      }
     }
   ],
   "outputs": {
