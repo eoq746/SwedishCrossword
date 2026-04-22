@@ -18,4 +18,23 @@
     <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">false</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <!--
+    Auto-configure the repo-local Git hooks path on first build so every
+    contributor gets the pre-commit hook that enforces UTF-8 BOM on .cs files
+    and runs `dotnet format style` on staged changes. Runs at most once per
+    clone (guarded by a marker file under obj/).
+  -->
+  <Target Name="ConfigureGitHooksPath"
+          BeforeTargets="BeforeBuild"
+          Condition="Exists('$(MSBuildThisFileDirectory).git') And !Exists('$(MSBuildThisFileDirectory).git\.hookspath-configured')">
+    <Exec Command="git config core.hooksPath .githooks"
+          WorkingDirectory="$(MSBuildThisFileDirectory)"
+          ContinueOnError="true"
+          IgnoreExitCode="true" />
+    <WriteLinesToFile File="$(MSBuildThisFileDirectory).git\.hookspath-configured"
+                      Lines="configured"
+                      Overwrite="true"
+                      Condition="Exists('$(MSBuildThisFileDirectory).git')" />
+  </Target>
+
 </Project>
