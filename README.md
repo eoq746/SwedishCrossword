@@ -508,7 +508,7 @@ pwsh ./scripts/fix-bom.ps1
 | Tool | Where | Purpose |
 |---|---|---|
 | **gitleaks** (`.gitleaks.toml`) | Pre-commit hook + `secret-scan` job in `deploy-azure.yml` | Blocks committed/pushed secrets; allowlists public Azure RBAC role GUIDs and `.vs/` |
-| **CodeQL** (`.github/workflows/codeql.yml`) | PRs, pushes to `master`, weekly cron | `security-and-quality` static analysis for both C# and JavaScript (frontend `site.js`) |
+| **CodeQL default setup** | GitHub *Settings → Code security → CodeQL analysis* | `security-and-quality` static analysis for C#, JavaScript/TypeScript, and GitHub Actions workflows; runs on every push, PR, and weekly. Managed by GitHub — no workflow file to maintain |
 | **Dependabot** (`.github/dependabot.yml`) | Weekly schedule | NuGet, GitHub Actions, and Docker base-image updates (Microsoft.* and test packages grouped to reduce PR noise) |
 | **`dotnet list package --vulnerable`** | `test` job in `deploy-azure.yml` | Fails the build if any direct or transitive NuGet has a known CVE |
 | **SBOM** (`scripts/generate-sbom.ps1`) | `build-and-deploy` job, archived as artifact for 90 days | SPDX 2.2 SBOM for the published API (EU CRA-aligned) |
