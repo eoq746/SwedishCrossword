@@ -6,6 +6,11 @@ on:
     paths-ignore:
       - '**/*.md'
       - '.github/workflows/daily-crossword.yml'
+  pull_request:
+    branches: [master]
+    paths-ignore:
+      - '**/*.md'
+      - '.github/workflows/daily-crossword.yml'
   workflow_dispatch:
 
 permissions:
@@ -87,6 +92,9 @@ jobs:
           GITLEAKS_ENABLE_SUMMARY: true
 
   build-and-deploy:
+    # Only deploy on direct pushes to master (i.e. after PR squash-merge).
+    # PR runs of this workflow stop after test + secret-scan.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: [test, secret-scan]
     runs-on: ubuntu-latest
     steps:
