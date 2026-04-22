@@ -338,19 +338,22 @@ resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetention
   }
 }
 
-// Long-term retention: 4 weekly + 12 monthly + 7 yearly backups in archive
-// storage. Yearly snapshot is taken from the week-1 weekly backup. Cost is
-// roughly $0.05/GB/month — pennies for a sub-2 GB OLTP database.
-resource sqlLtrPolicy 'Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
-  parent: sqlDb
-  name: 'default'
-  properties: {
-    weeklyRetention: 'P4W'
-    monthlyRetention: 'P12M'
-    yearlyRetention: 'P7Y'
-    weekOfYear: 1
-  }
-}
+// Long-term retention is intentionally NOT configured here.
+// Azure rejects LTR on serverless databases with auto-pause enabled
+// (LtrConfigPolicyUnsupportedIfAutoPauseEnabled), and the Free tier forces
+// auto-pause on. Re-enable LTR if/when this DB is migrated to a paid tier
+// without auto-pause:
+//
+//   resource sqlLtrPolicy 'Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
+//     parent: sqlDb
+//     name: 'default'
+//     properties: {
+//       weeklyRetention: 'P4W'
+//       monthlyRetention: 'P12M'
+//       yearlyRetention: 'P7Y'
+//       weekOfYear: 1
+//     }
+//   }
 
 // Connection Timeout=60 gives the serverless DB time to resume from auto-pause
 // (cold-start typically takes 30–60s). ConnectRetryCount/Interval cover broken
