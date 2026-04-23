@@ -1,0 +1,40 @@
+name: Test Azure OIDC login
+
+on:
+  pull_request:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  oidc-test:
+    name: Azure OIDC login (test)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+
+      - name: Azure login with OIDC
+        uses: azure/login@a65d910e8af852a8061c627c456678983e180302
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Select subscription (if provided)
+        run: |
+          if [ -n "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
+            az account set --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          else
+            echo "AZURE_SUBSCRIPTION_ID not set; listing subscriptions available to the identity"
+            az account list -o table
+          fi
+
+      - name: Confirm identity and account
+        run: |
+          az account show
+          az ad signed-in-user show || true
+
+      - name: Smoke test - list resource groups
+        run: az group list -o table || true
