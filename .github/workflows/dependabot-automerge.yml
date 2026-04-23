@@ -17,10 +17,47 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Auto-merge patch and minor bumps. Major version bumps stay manual
-      # because they're the most likely to introduce breaking changes.
+      # Infrastructure-critical packages: a bad bump here takes the whole site
+      # down (e.g. Microsoft.Data.SqlClient 6→7 split out the AAD auth providers
+      # into Microsoft.Data.SqlClient.Extensions.Azure, breaking startup —
+      # see PR #10). These always require a human review, regardless of the
+      # semver bump kind, because Microsoft packages occasionally ship breaking
+      # changes in minor/patch releases too.
+      - name: Check for high-risk dependencies
+        id: risk
+        env:
+          DEP_NAMES: ${{ steps.meta.outputs.dependency-names }}
+        run: |
+          high_risk='false'
+          # Comma-separated list of dependency names in this PR (grouped or single).
+          IFS=',' read -ra deps <<< "$DEP_NAMES"
+          for dep in "${deps[@]}"; do
+            d="$(echo "$dep" | xargs)"  # trim
+            case "$d" in
+              Microsoft.Data.SqlClient|Microsoft.Data.SqlClient.*|\
+              Microsoft.AspNetCore.Authentication.*|\
+              Microsoft.AspNetCore.DataProtection.*|\
+              Microsoft.AspNetCore.App.Runtime.*|\
+              Microsoft.NET.Sdk.*|\
+              Azure.Identity)
+                echo "::notice::Skipping auto-merge — '$d' is on the high-risk list and requires human review."
+                high_risk='true'
+                ;;
+            esac
+          done
+          echo "high-risk=$high_risk" >> "$GITHUB_OUTPUT"
+
+      # Auto-merge only safe patch/minor bumps that contain no high-risk packages.
+      # Major version bumps stay manual because they're the most likely to
+      # introduce breaking changes. For grouped PRs, fetch-metadata reports the
+      # highest semver change in the group, so a single major in a group of
+      # minors will (correctly) block the whole group.
       - name: Enable auto-merge for patch/minor updates
-        if: ${{ steps.meta.outputs.update-type == 'version-update:semver-patch' || steps.meta.outputs.update-type == 'version-update:semver-minor' }}
+        if: |
+          steps.risk.outputs.high-risk == 'false' &&
+          steps.meta.outputs.update-type != 'version-update:semver-major' &&
+          (steps.meta.outputs.update-type == 'version-update:semver-patch' ||
+           steps.meta.outputs.update-type == 'version-update:semver-minor')
         run: gh pr merge --auto --squash "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
