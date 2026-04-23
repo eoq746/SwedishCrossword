@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "14887267863255158524"
+      "templateHash": "6275412043056884271"
     }
   },
   "parameters": {
@@ -79,6 +79,20 @@
       "defaultValue": true,
       "metadata": {
         "description": "Deploy Azure SQL resources. Set to true when SQL is needed."
+      }
+    },
+    "containerAppOutboundIp": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Container Apps environment static outbound IP. Pin the SQL firewall to this single address. Get with: az containerapp env show -g <rg> -n <env> --query properties.staticIp -o tsv. Leave empty to skip the firewall rule (e.g. on a brand-new deploy where the env does not yet exist)."
+      }
+    },
+    "developerWorkstationIp": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Optional developer workstation IP for ad-hoc DB access (migrations, hot-fixes, debugging). Get with: (Invoke-RestMethod ifconfig.me/ip).Trim(). Leave empty in CI."
       }
     },
     "createRoleAssignment": {
@@ -357,13 +371,26 @@
       ]
     },
     {
-      "condition": "[parameters('deployDatabase')]",
+      "condition": "[and(parameters('deployDatabase'), not(equals(parameters('containerAppOutboundIp'), '')))]",
       "type": "Microsoft.Sql/servers/firewallRules",
       "apiVersion": "2023-08-01-preview",
-      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'AllowAllAzureIps')]",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'AllowContainerAppEnv')]",
       "properties": {
-        "startIpAddress": "0.0.0.0",
-        "endIpAddress": "0.0.0.0"
+        "startIpAddress": "[parameters('containerAppOutboundIp')]",
+        "endIpAddress": "[parameters('containerAppOutboundIp')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
+      "condition": "[and(parameters('deployDatabase'), not(equals(parameters('developerWorkstationIp'), '')))]",
+      "type": "Microsoft.Sql/servers/firewallRules",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'AllowDeveloperWorkstation')]",
+      "properties": {
+        "startIpAddress": "[parameters('developerWorkstationIp')]",
+        "endIpAddress": "[parameters('developerWorkstationIp')]"
       },
       "dependsOn": [
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"

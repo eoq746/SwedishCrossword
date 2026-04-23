@@ -55,6 +55,12 @@ param adminUserIds string = ''
 @description('Deploy Azure SQL resources. Set to true when SQL is needed.')
 param deployDatabase bool = true
 
+@description('Container Apps environment static outbound IP. Pin the SQL firewall to this single address. Get with: az containerapp env show -g <rg> -n <env> --query properties.staticIp -o tsv. Leave empty to skip the firewall rule (e.g. on a brand-new deploy where the env does not yet exist).')
+param containerAppOutboundIp string = ''
+
+@description('Optional developer workstation IP for ad-hoc DB access (migrations, hot-fixes, debugging). Get with: (Invoke-RestMethod ifconfig.me/ip).Trim(). Leave empty in CI.')
+param developerWorkstationIp string = ''
+
 @description('Create role assignments (AcrPull on ACR + Key Vault Secrets User on the Key Vault) for the managed identity. Set to true for first-time manual deploy AND any time new role-assignment-bearing resources are added (e.g. when Key Vault was introduced). Set to false for CI/CD which typically lacks Owner / User Access Administrator. If CI/CD reports "Unable to get value using Managed identity ... unable to fetch secret", run a manual deploy once with createRoleAssignment=true (or grant the Key Vault Secrets User role to the managed identity manually) and then re-run CI/CD.')
 param createRoleAssignment bool = true
 
@@ -294,13 +300,31 @@ resource sqlAadOnlyAuth 'Microsoft.Sql/servers/azureADOnlyAuthentications@2023-0
   }
 }
 
-// Allow Azure services (Container Apps) to connect
-resource sqlFirewallAllowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (deployDatabase) {
+// Firewall: narrow allowlist instead of the magic 0.0.0.0 rule. The previous
+// 'AllowAllAzureIps' rule permitted connection attempts from every Azure
+// customer's outbound IP space. We now restrict to:
+//   1) The Container Apps environment's static outbound IP (the one client
+//      that actually needs to reach the DB).
+//   2) Optional developer workstation IP for ad-hoc admin access.
+//
+// Auth is still Entra-only (no SQL passwords), so even if the firewall is
+// bypassed via subnet spoofing the attacker still needs a valid managed
+// identity token. This is defense-in-depth.
+resource sqlFirewallContainerApp 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (deployDatabase && containerAppOutboundIp != '') {
   parent: sqlServer
-  name: 'AllowAllAzureIps'
+  name: 'AllowContainerAppEnv'
   properties: {
-    startIpAddress: '0.0.0.0'
-    endIpAddress: '0.0.0.0'
+    startIpAddress: containerAppOutboundIp
+    endIpAddress: containerAppOutboundIp
+  }
+}
+
+resource sqlFirewallDev 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (deployDatabase && developerWorkstationIp != '') {
+  parent: sqlServer
+  name: 'AllowDeveloperWorkstation'
+  properties: {
+    startIpAddress: developerWorkstationIp
+    endIpAddress: developerWorkstationIp
   }
 }
 
