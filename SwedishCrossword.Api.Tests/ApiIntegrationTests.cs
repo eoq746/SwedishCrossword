@@ -46,6 +46,7 @@ public class ApiIntegrationTests
             Directory.Delete(_tempPuzzlePath, true);
         if (Directory.Exists(_tempLeaderboardPath))
             Directory.Delete(_tempLeaderboardPath, true);
+        // Cleanup any migrated directories from the migration test
     }
 
     // -----------------------------------------------------------------------
