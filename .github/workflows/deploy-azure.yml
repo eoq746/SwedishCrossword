@@ -129,11 +129,23 @@ jobs:
           ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
         run: |
           set -euo pipefail
+          # Discover the Container Apps environment static outbound IP if the
+          # environment already exists. On a brand-new deploy this returns
+          # empty, which Bicep handles by skipping the firewall rule on the
+          # first pass; the second deploy run will pin it.
+          ENV_IP=$(az containerapp env show \
+            --resource-group $RESOURCE_GROUP \
+            --name ${APP_NAME}-env \
+            --query properties.staticIp \
+            --output tsv 2>/dev/null || echo '')
+          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
+
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
             --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
+              containerAppOutboundIp="$ENV_IP" \
               submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
               googleClientId="$GOOGLE_CLIENT_ID" \
               googleClientSecret="$GOOGLE_CLIENT_SECRET" \
@@ -261,11 +273,19 @@ jobs:
           ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
         run: |
           set -euo pipefail
+          ENV_IP=$(az containerapp env show \
+            --resource-group $RESOURCE_GROUP \
+            --name ${APP_NAME}-env \
+            --query properties.staticIp \
+            --output tsv 2>/dev/null || echo '')
+          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
+
           az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
             --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
+              containerAppOutboundIp="$ENV_IP" \
               imageTag="${{ github.sha }}" \
               submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
               googleClientId="$GOOGLE_CLIENT_ID" \
