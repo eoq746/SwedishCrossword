@@ -98,8 +98,10 @@ resource acr 'Microsoft.ContainerRegistry/registries@2023-11-01-preview' = {
 // ---------------------------------------------------------------------------
 // User-Assigned Managed Identity (for ACR pull and Azure SQL access)
 // ---------------------------------------------------------------------------
+// Make the user-assigned identity name deterministic but unique per
+// subscription to avoid cross-tenant name collisions after directory moves.
 resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-01-31' = {
-  name: '${appName}-identity'
+  name: '${appName}-identity-${uniqueString(subscription().id)}'
   location: location
 }
 
