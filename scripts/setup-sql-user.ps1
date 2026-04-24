@@ -83,7 +83,7 @@ $currentUser = az ad signed-in-user show `
 if (-not $UserEmail) { $UserEmail = $currentUser.upn }
 Write-Host "  User to add: $UserEmail"
 
-$identityName = "$AppName-identity"
+$identityName = "$AppName-identity-eac35eg3j6fyw"
 $miJson = az identity show `
     --resource-group $ResourceGroup `
     --name $identityName `
