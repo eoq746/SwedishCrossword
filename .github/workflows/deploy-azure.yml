@@ -102,13 +102,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
-      - name: Azure Login (OIDC)
-        uses: azure/login@532459ea530d8321f2fb9bb10d1e0bcf23869a43
+      - name: Azure login with OIDC
+        uses: azure/login@a65d910e8af852a8061c627c456678983e180302
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          allow-no-subscriptions: true
 
+      - name: Select subscription (if provided)
+        run: |
+          if [ -n "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
+            az account set --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          else
+            echo "AZURE_SUBSCRIPTION_ID not set; listing subscriptions available to the identity"
+            az account list -o table
+          fi
       # ------------------------------------------------------------------
       # 1. Provision infrastructure WITHOUT imageTag (uses placeholder image)
       # ------------------------------------------------------------------
