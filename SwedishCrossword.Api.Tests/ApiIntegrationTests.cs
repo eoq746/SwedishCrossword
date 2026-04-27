@@ -12,42 +12,35 @@ using TUnit.Core;
 namespace SwedishCrossword.Api.Tests;
 
 #pragma warning disable AD0001 // Analyzer threw an exception (TUnit.Analyzers.DisposableFieldPropertyAnalyzer bug)
-public class ApiIntegrationTests
+public class ApiIntegrationTests : IAsyncDisposable
 {
-    private WebApplicationFactory<Program> _factory = null!;
-    private HttpClient _client = null!;
-    private string _tempPuzzlePath = null!;
-    private string _tempLeaderboardPath = null!;
+    private ApiTestFixture _fixture = null!;
 
     [Before(Test)]
     public void Setup()
     {
-        _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
-        _tempLeaderboardPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-" + Guid.NewGuid());
-
-        _factory = new WebApplicationFactory<Program>()
-            .WithWebHostBuilder(builder =>
-            {
-                builder.UseSetting("Storage:PuzzlePath", _tempPuzzlePath);
-                builder.UseSetting("Storage:LeaderboardPath", _tempLeaderboardPath);
-            });
-
-        _client = _factory.CreateClient();
+        _fixture = new ApiTestFixture();
     }
 
     [After(Test)]
-    public void Cleanup()
+    public async Task Cleanup()
     {
-        _client?.Dispose();
-        _factory?.Dispose();
-        SqliteConnection.ClearAllPools();
-
-        if (Directory.Exists(_tempPuzzlePath))
-            Directory.Delete(_tempPuzzlePath, true);
-        if (Directory.Exists(_tempLeaderboardPath))
-            Directory.Delete(_tempLeaderboardPath, true);
-        // Cleanup any migrated directories from the migration test
+        if (_fixture != null)
+        {
+            await _fixture.DisposeAsync();
+        }
     }
+
+    public async ValueTask DisposeAsync()
+    {
+        await Cleanup();
+        GC.SuppressFinalize(this);
+    }
+
+    private WebApplicationFactory<Program> Factory => _fixture.Factory;
+    private HttpClient Client => _fixture.Client;
+    private string TempPuzzlePath => _fixture.TempPuzzlePath;
+    private string TempLeaderboardPath => _fixture.TempLeaderboardPath;
 
     // -----------------------------------------------------------------------
     // Health check
@@ -56,7 +49,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task HealthEndpoint_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/health");
+        var response = await Client.GetAsync("/api/health");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
@@ -68,7 +61,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task StatsEndpoint_ReturnsExpectedShape()
     {
-        var response = await _client.GetAsync("/api/stats");
+        var response = await Client.GetAsync("/api/stats");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
 
@@ -84,7 +77,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleByDate_InvalidDate_ReturnsBadRequest()
     {
-        var response = await _client.GetAsync("/api/puzzle/not-a-date");
+        var response = await Client.GetAsync("/api/puzzle/not-a-date");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
     }
@@ -94,7 +87,7 @@ public class ApiIntegrationTests
     {
         var pastDate = GetSwedishDate().AddDays(-10).ToString("yyyy-MM-dd");
 
-        var response = await _client.GetAsync($"/api/puzzle/{pastDate}");
+        var response = await Client.GetAsync($"/api/puzzle/{pastDate}");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
     }
@@ -104,10 +97,10 @@ public class ApiIntegrationTests
     {
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"test":true}""";
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{date}.json"), puzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{date}.json"), puzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{date}");
+        var response = await Client.GetAsync($"/api/puzzle/{date}");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
@@ -120,10 +113,10 @@ public class ApiIntegrationTests
     {
         var futureDate = GetSwedishDate().AddDays(3);
         var puzzleJson = """{"test":true}""";
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), puzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), puzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{futureDate:yyyy-MM-dd}");
+        var response = await Client.GetAsync($"/api/puzzle/{futureDate:yyyy-MM-dd}");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
     }
@@ -135,12 +128,12 @@ public class ApiIntegrationTests
         var pastDate = today.AddDays(-2);
         var futureDate = today.AddDays(3);
 
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), "{}");
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today:yyyy-MM-dd}.json"), "{}");
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), "{}");
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), "{}");
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today:yyyy-MM-dd}.json"), "{}");
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), "{}");
 
-        var response = await _client.GetAsync("/api/puzzle/dates");
+        var response = await Client.GetAsync("/api/puzzle/dates");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var items = await response.Content.ReadFromJsonAsync<PuzzleDateEntry[]>();
@@ -158,7 +151,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardGet_ReturnsEmptyObjectByDefault()
     {
-        var response = await _client.GetAsync("/api/leaderboard");
+        var response = await Client.GetAsync("/api/leaderboard");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
@@ -169,9 +162,7 @@ public class ApiIntegrationTests
     public async Task LegacyJsonFiles_MigratedToSqliteOnStartup()
     {
         // Dispose the default factory — we need to seed files BEFORE the app starts
-        _client.Dispose();
-        _factory.Dispose();
-        SqliteConnection.ClearAllPools();
+        await _fixture.DisposeAsync();
 
         // Create a fresh leaderboard directory and seed legacy JSON files
         var lbPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-migrate-" + Guid.NewGuid());
@@ -191,22 +182,16 @@ public class ApiIntegrationTests
         await File.WriteAllTextAsync(Path.Combine(historyDir, $"{today}.json"), historyJson);
 
         // Start the app — migration should run automatically
-        _factory = new WebApplicationFactory<Program>()
-            .WithWebHostBuilder(builder =>
-            {
-                builder.UseSetting("Storage:PuzzlePath", _tempPuzzlePath);
-                builder.UseSetting("Storage:LeaderboardPath", lbPath);
-            });
-        _client = _factory.CreateClient();
+        _fixture = new ApiTestFixture(lbPath);
 
         // Verify scores migrated
-        var lbResponse = await _client.GetAsync("/api/leaderboard");
+        var lbResponse = await Client.GetAsync("/api/leaderboard");
         var lbContent = await lbResponse.Content.ReadAsStringAsync();
         await Assert.That(lbContent).Contains("Anna");
         await Assert.That(lbContent).Contains("45");
 
         // Verify history migrated
-        var histResponse = await _client.GetAsync("/api/leaderboard/history?days=1");
+        var histResponse = await Client.GetAsync("/api/leaderboard/history?days=1");
         var histJson = await histResponse.Content.ReadFromJsonAsync<JsonElement>();
         await Assert.That(histJson.TryGetProperty(today, out var entries)).IsTrue();
         await Assert.That(entries.GetArrayLength()).IsEqualTo(1);
@@ -219,26 +204,18 @@ public class ApiIntegrationTests
         await Assert.That(Directory.Exists(Path.Combine(lbPath, "history.migrated"))).IsTrue();
 
         // Cleanup the extra directory
-        _client.Dispose();
-        _factory.Dispose();
-        SqliteConnection.ClearAllPools();
+        await _fixture.DisposeAsync();
         if (Directory.Exists(lbPath)) Directory.Delete(lbPath, true);
 
-        // Re-create default factory so [After(Test)] cleanup doesn't fail
-        _factory = new WebApplicationFactory<Program>()
-            .WithWebHostBuilder(builder =>
-            {
-                builder.UseSetting("Storage:PuzzlePath", _tempPuzzlePath);
-                builder.UseSetting("Storage:LeaderboardPath", _tempLeaderboardPath);
-            });
-        _client = _factory.CreateClient();
+        // Re-create default fixture so [After(Test)] cleanup doesn't fail
+        _fixture = new ApiTestFixture();
     }
 
     [Test]
     public async Task LeaderboardHistoryPost_MissingToken_ReturnsForbidden()
     {
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             entry = new { name = "Testare", time = 120.5, timestamp = 1705320000000L, puzzleHash = "abc123" }
@@ -251,16 +228,16 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryPost_ValidToken_ReturnsOk()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
         // Fetch puzzle to obtain a valid submission token
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
         var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             token,
@@ -273,10 +250,10 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_InvalidDate_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = "bad-date",
             token,
@@ -289,11 +266,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_MissingEntry_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
         var token = tokenService.GenerateToken("abc", 10, today);
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             token,
@@ -306,7 +283,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryGet_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/leaderboard/history?days=7");
+        var response = await Client.GetAsync("/api/leaderboard/history?days=7");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
@@ -315,23 +292,23 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryRoundTrip_PostThenGet()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
         // Fetch puzzle to obtain a valid submission token
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
         var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
-        await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             token,
             entry = new { name = "Anna", time = 95.3, timestamp = 1705320000000L, puzzleHash = hash }
         });
 
-        var response = await _client.GetAsync("/api/leaderboard/history?days=1");
+        var response = await Client.GetAsync("/api/leaderboard/history?days=1");
         var json = await response.Content.ReadFromJsonAsync<JsonElement>();
 
         await Assert.That(json.TryGetProperty(today, out var entries)).IsTrue();
@@ -347,10 +324,10 @@ public class ApiIntegrationTests
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"today":true}""";
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), puzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), puzzleJson);
 
-        var response = await _client.GetAsync("/api/puzzle/today");
+        var response = await Client.GetAsync("/api/puzzle/today");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
@@ -361,7 +338,7 @@ public class ApiIntegrationTests
     public async Task PuzzleToday_NoFile_Returns503()
     {
         // No puzzle file seeded — warmup service hasn't run
-        var response = await _client.GetAsync("/api/puzzle/today");
+        var response = await Client.GetAsync("/api/puzzle/today");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.ServiceUnavailable);
     }
@@ -371,11 +348,11 @@ public class ApiIntegrationTests
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
         var puzzleJson = """{"fallback":true}""";
-        Directory.CreateDirectory(_tempPuzzlePath);
+        Directory.CreateDirectory(TempPuzzlePath);
         // Only create the standard file, not the small variant
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), puzzleJson);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), puzzleJson);
 
-        var response = await _client.GetAsync("/api/puzzle/today?size=small");
+        var response = await Client.GetAsync("/api/puzzle/today?size=small");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
@@ -391,10 +368,10 @@ public class ApiIntegrationTests
     {
         var pastDate = GetSwedishDate().AddDays(-1).ToString("yyyy-MM-dd");
         var puzzleJson = """{"standard":true}""";
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{pastDate}.json"), puzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{pastDate}.json"), puzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{pastDate}?size=small");
+        var response = await Client.GetAsync($"/api/puzzle/{pastDate}?size=small");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var content = await response.Content.ReadAsStringAsync();
@@ -408,9 +385,9 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleDates_EmptyDirectory_ReturnsEmptyArray()
     {
-        Directory.CreateDirectory(_tempPuzzlePath);
+        Directory.CreateDirectory(TempPuzzlePath);
 
-        var response = await _client.GetAsync("/api/puzzle/dates");
+        var response = await Client.GetAsync("/api/puzzle/dates");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         var dates = await response.Content.ReadFromJsonAsync<string[]>();
@@ -426,16 +403,16 @@ public class ApiIntegrationTests
     public async Task ScoresPost_ValidToken_ReturnsOk()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
         // Fetch puzzle to get submission token
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
         var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/scores", new
+        var response = await Client.PostAsJsonAsync("/api/scores", new
         {
             token,
             name = "Testare",
@@ -452,7 +429,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task ScoresPost_MissingToken_Returns403()
     {
-        var response = await _client.PostAsJsonAsync("/api/scores", new
+        var response = await Client.PostAsJsonAsync("/api/scores", new
         {
             token = "",
             name = "Testare",
@@ -468,7 +445,7 @@ public class ApiIntegrationTests
     public async Task ScoresPost_TamperedToken_Returns403()
     {
         var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("fake:0:0:bad"));
-        var response = await _client.PostAsJsonAsync("/api/scores", new
+        var response = await Client.PostAsJsonAsync("/api/scores", new
         {
             token = fakeToken,
             name = "Testare",
@@ -484,16 +461,16 @@ public class ApiIntegrationTests
     public async Task ScoresPost_TooFast_Returns403()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
         var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
         // Submit with impossibly fast time (0.1s for 5 cells = below 1.5s minimum)
-        var response = await _client.PostAsJsonAsync("/api/scores", new
+        var response = await Client.PostAsJsonAsync("/api/scores", new
         {
             token,
             name = "Cheater",
@@ -509,15 +486,15 @@ public class ApiIntegrationTests
     public async Task ScoresPost_AppearsInLeaderboard()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
         var hash = puzzle.GetProperty("puzzleHash").GetString()!;
 
-        await _client.PostAsJsonAsync("/api/scores", new
+        await Client.PostAsJsonAsync("/api/scores", new
         {
             token,
             name = "Anna",
@@ -527,7 +504,7 @@ public class ApiIntegrationTests
         });
 
         // Verify score appears in GET /api/leaderboard
-        var lbResponse = await _client.GetAsync("/api/leaderboard");
+        var lbResponse = await Client.GetAsync("/api/leaderboard");
         var lb = await lbResponse.Content.ReadAsStringAsync();
         await Assert.That(lb).Contains("Anna");
     }
@@ -535,7 +512,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task ScoresPost_EmptyName_ReturnsBadRequest()
     {
-        var response = await _client.PostAsJsonAsync("/api/scores", new
+        var response = await Client.PostAsJsonAsync("/api/scores", new
         {
             token = "x",
             name = "   ",
@@ -551,10 +528,10 @@ public class ApiIntegrationTests
     public async Task PuzzleWithCells_IncludesSubmissionToken()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var response = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
 
         await Assert.That(puzzle.TryGetProperty("submissionToken", out _)).IsTrue();
@@ -569,11 +546,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_DateTooOld_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var oldDate = GetSwedishDate().AddDays(-100).ToString("yyyy-MM-dd");
         var token = tokenService.GenerateToken("abc", 10, oldDate);
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = oldDate,
             token,
@@ -586,11 +563,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_NegativeTime_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
         var token = tokenService.GenerateToken("abc", 10, today);
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             token,
@@ -603,11 +580,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryPost_EmptyName_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
         var token = tokenService.GenerateToken("abc", 10, today);
 
-        var response = await _client.PostAsJsonAsync("/api/leaderboard/history", new
+        var response = await Client.PostAsJsonAsync("/api/leaderboard/history", new
         {
             date = today,
             token,
@@ -621,7 +598,7 @@ public class ApiIntegrationTests
     public async Task LeaderboardHistoryGet_DefaultDays_ReturnsOk()
     {
         // No days parameter — should default to 30
-        var response = await _client.GetAsync("/api/leaderboard/history");
+        var response = await Client.GetAsync("/api/leaderboard/history");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
@@ -629,7 +606,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task LeaderboardHistoryGet_ClampsDaysToMax90()
     {
-        var response = await _client.GetAsync("/api/leaderboard/history?days=200");
+        var response = await Client.GetAsync("/api/leaderboard/history?days=200");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
@@ -641,7 +618,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task StatsEndpoint_ReturnsJsonContentType()
     {
-        var response = await _client.GetAsync("/api/stats");
+        var response = await Client.GetAsync("/api/stats");
 
         await Assert.That(response.Content.Headers.ContentType?.MediaType).IsEqualTo("application/json");
     }
@@ -654,10 +631,10 @@ public class ApiIntegrationTests
     public async Task PuzzleByDate_ReturnsJsonContentType()
     {
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{date}.json"), "{}");
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{date}.json"), "{}");
 
-        var response = await _client.GetAsync($"/api/puzzle/{date}");
+        var response = await Client.GetAsync($"/api/puzzle/{date}");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
         await Assert.That(response.Content.Headers.ContentType?.MediaType).IsEqualTo("application/json");
@@ -671,10 +648,10 @@ public class ApiIntegrationTests
     public async Task PuzzleWithCells_StripsLettersFromCells()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var response = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
         var cells = puzzle.GetProperty("cells");
 
@@ -695,10 +672,10 @@ public class ApiIntegrationTests
     public async Task PuzzleWithCells_StripsAnswersFromClues()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var response = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
         var clues = puzzle.GetProperty("clues");
 
@@ -718,10 +695,10 @@ public class ApiIntegrationTests
     public async Task PuzzleWithCells_StillIncludesPuzzleHashAndDate()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var response = await _client.GetAsync($"/api/puzzle/{today}");
+        var response = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
 
         await Assert.That(puzzle.TryGetProperty("puzzleHash", out _)).IsTrue();
@@ -737,14 +714,14 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_AllCorrect_ReturnsSolved()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = today,
@@ -767,14 +744,14 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_PartiallyCorrect_ReturnsNotSolved()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = today,
@@ -801,15 +778,15 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_EmptyCells_ReturnsNotSolved()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
         // Submit with no cells filled
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = today,
@@ -825,14 +802,14 @@ public class ApiIntegrationTests
     public async Task PuzzleCheck_CaseInsensitive_Matches()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = today,
@@ -854,7 +831,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_MissingToken_Returns403()
     {
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token = "",
             puzzleDate = "2025-01-15",
@@ -869,7 +846,7 @@ public class ApiIntegrationTests
     {
         var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("fake:0:0:bad"));
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token = fakeToken,
             puzzleDate = "2025-01-15",
@@ -882,10 +859,10 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_InvalidDate_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = "not-a-date",
@@ -898,11 +875,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleCheck_MissingPuzzleFile_ReturnsNotFound()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2020-01-01");
-        Directory.CreateDirectory(_tempPuzzlePath);
+        Directory.CreateDirectory(TempPuzzlePath);
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/check", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = "2020-01-01",
@@ -920,14 +897,14 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_SingleCell_ReturnsLetter()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = today,
@@ -944,18 +921,18 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_MultipleCells_ReturnsAllLetters()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
-
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        int[][] cells = [[0, 0], [0, 1], [0, 2]];
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = today,
-            cells = new[] { new[] { 0, 0 }, new[] { 0, 1 }, new[] { 0, 2 } }
+            cells
         });
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
@@ -970,15 +947,15 @@ public class ApiIntegrationTests
     public async Task PuzzleHint_BlockedCell_SkipsIt()
     {
         var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(_tempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(_tempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await _client.GetAsync($"/api/puzzle/{today}");
+        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
         var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
         // Cell 1,0 is null (blocked) in the test puzzle
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = today,
@@ -995,7 +972,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_MissingToken_Returns403()
     {
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token = "",
             puzzleDate = "2025-01-15",
@@ -1010,7 +987,7 @@ public class ApiIntegrationTests
     {
         var fakeToken = Convert.ToBase64String(Encoding.UTF8.GetBytes("fake:0:0:bad"));
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token = fakeToken,
             puzzleDate = "2025-01-15",
@@ -1023,10 +1000,10 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_InvalidDate_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = "bad-date",
@@ -1039,10 +1016,10 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_EmptyCells_ReturnsBadRequest()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2025-01-15");
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = "2025-01-15",
@@ -1055,11 +1032,11 @@ public class ApiIntegrationTests
     [Test]
     public async Task PuzzleHint_MissingPuzzleFile_ReturnsNotFound()
     {
-        var tokenService = _factory.Services.GetRequiredService<SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var token = tokenService.GenerateToken("abc", 10, "2020-01-01");
-        Directory.CreateDirectory(_tempPuzzlePath);
+        Directory.CreateDirectory(TempPuzzlePath);
 
-        var response = await _client.PostAsJsonAsync("/api/puzzle/hint", new
+        var response = await Client.PostAsJsonAsync("/api/puzzle/hint", new
         {
             token,
             puzzleDate = "2020-01-01",
@@ -1076,7 +1053,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task AnalyticsSummary_ReturnsOk_WithExpectedShape()
     {
-        var response = await _client.GetAsync("/api/analytics/summary");
+        var response = await Client.GetAsync("/api/analytics/summary");
 
         // Analytics endpoints require authentication
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
@@ -1085,7 +1062,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task AnalyticsDaily_DefaultDays_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/analytics/daily");
+        var response = await Client.GetAsync("/api/analytics/daily");
 
         // Analytics endpoints require authentication
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
@@ -1094,7 +1071,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task AnalyticsDaily_WithDaysParameter_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/analytics/daily?days=7");
+        var response = await Client.GetAsync("/api/analytics/daily?days=7");
 
         // Analytics endpoints require authentication
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
@@ -1103,7 +1080,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task AnalyticsPlayers_DefaultLimit_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/analytics/players");
+        var response = await Client.GetAsync("/api/analytics/players");
 
         // Analytics endpoints require authentication
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
@@ -1112,7 +1089,7 @@ public class ApiIntegrationTests
     [Test]
     public async Task AnalyticsPlayers_WithLimitParameter_ReturnsOk()
     {
-        var response = await _client.GetAsync("/api/analytics/players?limit=5");
+        var response = await Client.GetAsync("/api/analytics/players?limit=5");
 
         // Analytics endpoints require authentication
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
