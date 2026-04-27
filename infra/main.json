@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "6275412043056884271"
+      "templateHash": "402480203261687648"
     }
   },
   "parameters": {
@@ -172,7 +172,7 @@
     {
       "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
       "apiVersion": "2023-01-31",
-      "name": "[format('{0}-identity', parameters('appName'))]",
+      "name": "[format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))]",
       "location": "[parameters('location')]"
     },
     {
@@ -180,15 +180,15 @@
       "type": "Microsoft.Authorization/roleAssignments",
       "apiVersion": "2022-04-01",
       "scope": "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
-      "name": "[guid(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), variables('acrPullRoleId'))]",
+      "name": "[guid(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), variables('acrPullRoleId'))]",
       "properties": {
-        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').principalId]",
+        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').principalId]",
         "principalType": "ServicePrincipal",
         "roleDefinitionId": "[variables('acrPullRoleId')]"
       },
       "dependsOn": [
         "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
-        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]"
       ]
     },
     {
@@ -214,14 +214,14 @@
       "type": "Microsoft.Authorization/roleAssignments",
       "apiVersion": "2022-04-01",
       "scope": "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]",
-      "name": "[guid(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), variables('kvSecretsUserRoleId'))]",
+      "name": "[guid(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), variables('kvSecretsUserRoleId'))]",
       "properties": {
-        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').principalId]",
+        "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').principalId]",
         "principalType": "ServicePrincipal",
         "roleDefinitionId": "[variables('kvSecretsUserRoleId')]"
       },
       "dependsOn": [
-        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]",
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]",
         "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]"
       ]
     },
@@ -348,14 +348,14 @@
         "publicNetworkAccess": "Enabled",
         "administrators": {
           "administratorType": "ActiveDirectory",
-          "login": "[format('{0}-identity', parameters('appName'))]",
-          "sid": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').principalId]",
+          "login": "[format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))]",
+          "sid": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').principalId]",
           "tenantId": "[tenant().tenantId]",
           "principalType": "Application"
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]"
       ]
     },
     {
@@ -403,15 +403,12 @@
       "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), variables('sqlDbName'))]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "GP_S_Gen5_2",
-        "tier": "GeneralPurpose"
+        "name": "S0",
+        "tier": "Standard"
       },
       "properties": {
         "collation": "SQL_Latin1_General_CP1_CI_AS",
-        "maxSizeBytes": 34359738368,
-        "minCapacity": "[json('0.5')]",
-        "useFreeLimit": true,
-        "freeLimitExhaustionBehavior": "BillOverUsage"
+        "maxSizeBytes": 268435456000
       },
       "dependsOn": [
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
@@ -474,7 +471,7 @@
       "identity": {
         "type": "UserAssigned",
         "userAssignedIdentities": {
-          "[format('{0}', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))))]": {}
+          "[format('{0}', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))]": {}
         }
       },
       "properties": {
@@ -486,11 +483,11 @@
             "transport": "auto",
             "allowInsecure": false
           },
-          "secrets": "[union(if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'submissiontoken-secret', 'keyVaultUrl', format('{0}secrets/submissiontoken-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))))), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'google-client-id', 'keyVaultUrl', format('{0}secrets/google-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))), createObject('name', 'google-client-secret', 'keyVaultUrl', format('{0}secrets/google-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))))), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'microsoft-client-id', 'keyVaultUrl', format('{0}secrets/microsoft-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))), createObject('name', 'microsoft-client-secret', 'keyVaultUrl', format('{0}secrets/microsoft-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))))), createArray()))]",
+          "secrets": "[union(if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'submissiontoken-secret', 'keyVaultUrl', format('{0}secrets/submissiontoken-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'google-client-id', 'keyVaultUrl', format('{0}secrets/google-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))), createObject('name', 'google-client-secret', 'keyVaultUrl', format('{0}secrets/google-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'microsoft-client-id', 'keyVaultUrl', format('{0}secrets/microsoft-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))), createObject('name', 'microsoft-client-secret', 'keyVaultUrl', format('{0}secrets/microsoft-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()))]",
           "registries": [
             {
               "server": "[reference(resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50)), '2023-11-01-preview').loginServer]",
-              "identity": "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]"
+              "identity": "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]"
             }
           ]
         },
@@ -503,7 +500,7 @@
                 "cpu": "[json('0.5')]",
                 "memory": "1Gi"
               },
-              "env": "[union(createArray(createObject('name', 'Storage__PuzzlePath', 'value', '/data/puzzles'), createObject('name', 'Storage__LeaderboardPath', 'value', '/data/leaderboard'), createObject('name', 'SWEDISH_CROSSWORD_CACHE_PATH', 'value', '/data/cache'), createObject('name', 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', 'value', 'true')), if(not(equals(if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').clientId), ''), '')), createArray(createObject('name', 'ConnectionStrings__Leaderboard', 'value', if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName'))), '2023-01-31').clientId), ''))), createArray()), if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'SubmissionToken__Secret', 'secretRef', 'submissiontoken-secret')), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'Authentication__Google__ClientId', 'secretRef', 'google-client-id'), createObject('name', 'Authentication__Google__ClientSecret', 'secretRef', 'google-client-secret')), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'Authentication__Microsoft__ClientId', 'secretRef', 'microsoft-client-id'), createObject('name', 'Authentication__Microsoft__ClientSecret', 'secretRef', 'microsoft-client-secret')), createArray()), variables('adminEnvVars'))]",
+              "env": "[union(createArray(createObject('name', 'Storage__PuzzlePath', 'value', '/data/puzzles'), createObject('name', 'Storage__LeaderboardPath', 'value', '/data/leaderboard'), createObject('name', 'SWEDISH_CROSSWORD_CACHE_PATH', 'value', '/data/cache'), createObject('name', 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', 'value', 'true')), if(not(equals(if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''), '')), createArray(createObject('name', 'ConnectionStrings__Leaderboard', 'value', if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''))), createArray()), if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'SubmissionToken__Secret', 'secretRef', 'submissiontoken-secret')), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'Authentication__Google__ClientId', 'secretRef', 'google-client-id'), createObject('name', 'Authentication__Google__ClientSecret', 'secretRef', 'google-client-secret')), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'Authentication__Microsoft__ClientId', 'secretRef', 'microsoft-client-id'), createObject('name', 'Authentication__Microsoft__ClientSecret', 'secretRef', 'microsoft-client-secret')), createArray()), variables('adminEnvVars'))]",
               "volumeMounts": [
                 {
                   "volumeName": "data",
@@ -530,7 +527,7 @@
         "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
         "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]",
         "[resourceId('Microsoft.App/managedEnvironments/storages', format('{0}-env', parameters('appName')), 'crossworddata')]",
-        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity', parameters('appName')))]",
+        "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]",
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]",
         "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]"
       ]

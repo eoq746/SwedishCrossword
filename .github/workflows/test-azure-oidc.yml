@@ -16,7 +16,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
+      - name: Check Azure OIDC secrets
+        id: secret-check
+        shell: bash
+        run: |
+          if [ -n "${{ secrets.AZURE_CLIENT_ID }}" ] && \
+             [ -n "${{ secrets.AZURE_TENANT_ID }}" ] && \
+             [ -n "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip OIDC login test when Azure secrets are unavailable
+        if: steps.secret-check.outputs.available != 'true'
+        run: |
+          echo "::notice::Skipping Azure OIDC login test. Required secrets are unavailable for this event actor."
+
       - name: Azure Login (OIDC)
+        if: steps.secret-check.outputs.available == 'true'
         uses: azure/login@v3
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -24,6 +42,7 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Select subscription (if provided)
+        if: steps.secret-check.outputs.available == 'true'
         run: |
           if [ -n "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
             az account set --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
@@ -33,9 +52,12 @@ jobs:
           fi
 
       - name: Confirm identity and account
+        if: steps.secret-check.outputs.available == 'true'
         run: |
           az account show
           az ad signed-in-user show || true
 
       - name: Smoke test - list resource groups
+        if: steps.secret-check.outputs.available == 'true'
         run: az group list -o table || true
+

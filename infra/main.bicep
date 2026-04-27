@@ -274,7 +274,7 @@ resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2023-0
 }
 
 // ---------------------------------------------------------------------------
-// Azure SQL Server + Free tier database (Entra-only authentication)
+// Azure SQL Server + DTU Standard S0 database (Entra-only authentication)
 // ---------------------------------------------------------------------------
 resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDatabase) {
   name: take(sqlServerName, 63)
@@ -335,26 +335,18 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   name: sqlDbName
   location: location
   sku: {
-    name: 'GP_S_Gen5_2'
-    tier: 'GeneralPurpose'
+    name: 'S0'
+    tier: 'Standard'
   }
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
-    maxSizeBytes: 34359738368 // 32 GB (free tier limit)
-    // autoPauseDelay omitted: Free Limit databases require the default
-    // auto-pause delay (60 min) and reject custom values.
-    minCapacity: json('0.5')
-    useFreeLimit: true
-    // BillOverUsage keeps the database online once the monthly free
-    // vCore-second quota (~100k s) is exhausted, billing per-second over the
-    // free allowance instead of pausing the DB until the next month. The
-    // 60-min idle auto-pause still applies, so cost stays near zero when idle.
-    freeLimitExhaustionBehavior: 'BillOverUsage'
+    maxSizeBytes: 268435456000 // 250 GB included with Standard S0
   }
 }
 
-// Point-in-time restore window: 35 days (the maximum, free of charge for the
-// underlying differential backups; only outbound restore costs apply).
+// Point-in-time restore window: 35 days (the maximum supported for this app's
+// short-term recovery needs). Existing backups remain local redundant unless you
+// later choose a different redundancy option.
 resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
   parent: sqlDb
   name: 'default'
@@ -364,11 +356,9 @@ resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetention
   }
 }
 
-// Long-term retention is intentionally NOT configured here.
-// Azure rejects LTR on serverless databases with auto-pause enabled
-// (LtrConfigPolicyUnsupportedIfAutoPauseEnabled), and the Free tier forces
-// auto-pause on. Re-enable LTR if/when this DB is migrated to a paid tier
-// without auto-pause:
+// Long-term retention is intentionally not configured here to keep backup
+// costs and retention sprawl low for this app. Re-enable it later only if you
+// need compliance-style archival restores.
 //
 //   resource sqlLtrPolicy 'Microsoft.Sql/servers/databases/backupLongTermRetentionPolicies@2023-08-01-preview' = if (deployDatabase) {
 //     parent: sqlDb
@@ -381,9 +371,9 @@ resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetention
 //     }
 //   }
 
-// Connection Timeout=60 gives the serverless DB time to resume from auto-pause
-// (cold-start typically takes 30–60s). ConnectRetryCount/Interval cover broken
-// connections after login; initial-login retries are handled in code.
+// Connection Timeout=60 and SqlClient connect retries provide extra headroom
+// for transient network events and scale operations even though this DTU tier
+// no longer relies on serverless auto-pause/resume.
 var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer!.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;' : ''
 
 // ---------------------------------------------------------------------------
