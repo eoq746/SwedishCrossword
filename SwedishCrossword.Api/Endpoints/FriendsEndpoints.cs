@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Security.Claims;
 
-namespace SwedishCrossword.Api;
+namespace SwedishCrossword.Api.Endpoints;
 
 internal static class FriendsEndpoints
 {
@@ -29,6 +29,57 @@ internal static class FriendsEndpoints
 
             var requests = await store.GetPendingRequestsAsync(userId);
             return Results.Ok(requests);
+        });
+
+        // List friend challenges
+        group.MapGet("/challenges", async (ClaimsPrincipal user, IFriendStore store) =>
+        {
+            var userId = AuthEndpoints.GetUserId(user);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            var challenges = await store.GetChallengesAsync(userId);
+            return Results.Ok(challenges);
+        });
+
+        // Create challenge for an accepted friendship
+        group.MapPost("/challenges", async (FriendChallengeCreateRequest body, ClaimsPrincipal user, IFriendStore store, TimeProvider timeProvider) =>
+        {
+            var userId = AuthEndpoints.GetUserId(user);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            if (string.IsNullOrWhiteSpace(body.FriendId))
+                return Results.BadRequest(new ErrorResponse("Vänskap saknas"));
+
+            if (!LeaderboardStore.DatePattern.IsMatch(body.Date) ||
+                !DateOnly.TryParseExact(body.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var challengeDate))
+                return Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
+
+            var today = timeProvider.GetSwedishDate();
+            var minDate = today.AddDays(-365);
+            var maxDate = today.AddDays(30);
+            if (challengeDate < minDate || challengeDate > maxDate)
+                return Results.BadRequest(new ErrorResponse("Datumet för utmaningen ligger utanför tillåtet intervall"));
+
+            var (success, error) = await store.CreateChallengeAsync(userId, body.FriendId, body.Date);
+            if (!success)
+                return Results.Conflict(new ErrorResponse(error));
+
+            return Results.Ok(new { ok = true });
+        });
+
+        // Respond to challenge (incoming only)
+        group.MapPost("/challenges/{challengeId}/respond", async (string challengeId, FriendChallengeRespondRequest body, ClaimsPrincipal user, IFriendStore store) =>
+        {
+            var userId = AuthEndpoints.GetUserId(user);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            var changed = await store.RespondToChallengeAsync(challengeId, userId, body.Accepted);
+            return changed
+                ? Results.Ok(new { ok = true })
+                : Results.NotFound(new ErrorResponse("Utmaningen hittades inte"));
         });
 
         // Send friend request by alias

@@ -14,7 +14,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write
   contents: read
 
 env:
@@ -36,7 +35,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3ced7 # v5.2.0
         with:
           global-json-file: global.json
 
@@ -93,6 +92,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: [test, secret-scan]
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     # Serialize deployments so two pushes in quick succession don't race on
     # the same resource group / Container App revision. Scoped to this job
     # only so PR runs of `test` and `secret-scan` are never blocked by an

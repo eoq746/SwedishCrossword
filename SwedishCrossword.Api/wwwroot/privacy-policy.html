@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
     <!-- Google AdSense: loading is gated by cookie-consent.js. Signed-in users see no ads; signed-out users see personalized ads after "Acceptera alla" or non-personalized (NPA) ads after "Endast nödvändiga". -->
-    <script type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
+    <script nonce="__CSP_NONCE__" type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-4967624066496288">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Structured Data: WebPage with privacy policy -->
-    <script type="application/ld+json">
+    <script nonce="__CSP_NONCE__" type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebPage",
@@ -50,7 +50,7 @@
                 "@type": "Thing",
                 "name": "Dataskydd och integritet"
             },
-            "dateModified": "2026-02-12",
+            "dateModified": "2026-03-01",
             "inLanguage": "sv-SE"
         }
     </script>
@@ -58,7 +58,7 @@
     <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
     <link rel="stylesheet" href="/tokens.css">
-    <style>
+    <style nonce="__CSP_NONCE__">
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -125,7 +125,7 @@
         </div>
         <main>
         <h1>Integritetspolicy</h1>
-        <p class="last-updated">Senast uppdaterad: Februari 2026</p>
+        <p class="last-updated">Senast uppdaterad: Mars 2026</p>
 
         <p>Välkommen till Svenskt Korsord. Vi värnar om din integritet och vill vara transparenta med hur vi hanterar information på vår webbplats. Denna integritetspolicy förklarar vilken information vi samlar in, hur vi använder den och vilka rättigheter du har.</p>
 
@@ -200,7 +200,7 @@
         <h3>2.3 Information via tredjepartstjänster</h3>
         <p>Vi använder tredjepartstjänster som kan samla in ytterligare information:</p>
         <ul>
-            <!-- <li><strong>Google AdSense:</strong> Visar annonser och kan samla in information för att anpassa annonser (se avsnitt 4)</li> -->
+            <li><strong>Google AdSense:</strong> Visar annonser till utloggade användare efter cookie-val. Vid "Acceptera alla" kan personanpassade annonser visas. Vid "Endast nödvändiga" används icke-personanpassade annonser (NPA).</li>
             <li><strong>Azure Container Apps:</strong> Vår webbtjänst körs på Microsoft Azure, som kan logga anonymiserade åtkomstdata</li>
         </ul>
 
@@ -219,22 +219,19 @@
         <h3>3.2 Autentiseringscookie</h3>
         <p>Om du loggar in med Google eller Microsoft sätts en krypterad session-cookie (<code>.Crossword.Auth</code>) som håller dig inloggad i upp till 30 dagar. Cookien är HttpOnly och Secure – den kan inte läsas av JavaScript och skickas bara över HTTPS. Du kan logga ut när som helst via din profilsida, vilket raderar cookien.</p>
 
-        <!-- AdSense not in use yet
-        <h3>3.2 Tredjepartscookies</h3>
-        <p>Genom Google AdSense kan tredjepartscookies placeras i din webbläsare för att:</p>
+        <h3>3.3 Samtyckeshantering för annonser</h3>
+        <p>När du besöker sidan första gången måste du välja mellan <strong>"Acceptera alla"</strong> och <strong>"Endast nödvändiga"</strong> innan du kan använda tjänsten. Innan valet görs laddas inga annonsskript.</p>
         <ul>
-            <li>Visa relevanta annonser baserat på dina intressen</li>
-            <li>Begränsa antalet gånger du ser samma annons</li>
-            <li>Mäta annonsernas effektivitet</li>
+            <li><strong>Acceptera alla:</strong> Annonsskript kan laddas för personanpassade annonser.</li>
+            <li><strong>Endast nödvändiga:</strong> Annonser visas i icke-personanpassat läge (NPA).</li>
+            <li><strong>Inloggad användare:</strong> Vi visar inga annonser alls som en funktionell fördel med inloggning.</li>
         </ul>
-        -->
 
-        <!-- AdSense not in use yet
         <h2>4. Google AdSense och tredjepartsannonser</h2>
-        <p>Vi använder Google AdSense för att visa annonser på vår webbplats. Tredjepartsleverantörer, inklusive Google, använder cookies för att visa annonser baserade på dina tidigare besök på vår och andra webbplatser.</p>
+        <p>Vi använder Google AdSense för att finansiera tjänsten. Google kan behandla teknisk information (t.ex. IP-adress, enhets- och webbläsaruppgifter) när annonser levereras.</p>
 
         <div class="warning-box">
-            <strong>Viktigt om annonser:</strong> Google och dess partners använder cookies för att visa annonser baserade på ditt surfbeteende. Du har rätt att välja bort personanpassade annonser.
+            <strong>Viktigt om annonser:</strong> Vid valet "Endast nödvändiga" använder vi icke-personanpassade annonser (NPA). NPA innebär mindre profilering, men kan fortfarande innebära begränsad användning av cookies eller andra identifierare för t.ex. frekvensbegränsning och bedrägeriskydd.
         </div>
 
         <p>Läs mer om hur Google använder uppgifter när du besöker vår webbplats: <a href="https://www.google.com/policies/privacy/partners/" target="_blank" rel="noopener">Hur Google använder uppgifter när du använder våra partners webbplatser eller appar</a>.</p>
@@ -245,7 +242,6 @@
             <li><a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">Digital Advertising Alliance (DAA)</a></li>
             <li><a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">Your Online Choices (EU)</a></li>
         </ul>
-        -->
 
         <h2>5. Hur vi använder informationen</h2>
         <p>Vi använder insamlad information för följande ändamål:</p>
@@ -253,14 +249,14 @@
             <li><strong>Visa topplistan:</strong> Ditt valda användarnamn och speltid visas på den gemensamma topplistan</li>
             <li><strong>Spara framsteg:</strong> Dina ifyllda svar sparas lokalt så att du kan fortsätta spela senare</li>
             <li><strong>Förhindra fusk:</strong> Anonymiserad data används för att upptäcka misstänkt aktivitet på topplistan</li>
-            <!-- <li><strong>Visa annonser:</strong> Google AdSense visar annonser för att finansiera tjänsten</li> -->
+            <li><strong>Visa annonser:</strong> Google AdSense visar annonser för utloggade användare baserat på valt samtyckesläge</li>
         </ul>
 
         <h2>6. Delning av information</h2>
         <p>Vi delar inte din personliga information med tredje parter, förutom:</p>
         <ul>
             <li><strong>Topplistan:</strong> Användarnamn och speltider visas publikt på topplistan för alla besökare</li>
-            <!-- <li><strong>Annonspartners:</strong> Anonymiserad data delas med Google AdSense för annonssyften</li> -->
+            <li><strong>Annonspartners:</strong> Begränsad annonsrelaterad data kan behandlas av Google AdSense när annonser visas</li>
             <li><strong>Rättsliga krav:</strong> Om vi skulle vara skyldiga att lämna ut information enligt lag</li>
         </ul>
 
@@ -284,6 +280,7 @@
         <ul>
             <li>Välja att inte ange ett användarnamn på topplistan</li>
             <li>Välja att inte logga in — alla funktioner utom statistik, alias och vänner fungerar utan konto</li>
+            <li>Välja samtyckesläge för annonser via cookiebannern</li>
         </ul>
 
         <h3>7.4 Rätt att klaga</h3>
@@ -309,15 +306,13 @@
         <h2>10. Barns integritet</h2>
         <p>Vår tjänst riktar sig inte specifikt till barn under 13 år. Vi samlar inte medvetet in personlig information från barn. Om du är förälder eller vårdnadshavare och tror att ditt barn har lämnat personlig information till oss, vänligen kontakta oss så att vi kan vidta lämpliga åtgärder.</p>
 
-        <!-- AdSense not in use yet
-        <h2>10. Internationella dataöverföringar</h2>
-        <p>Eftersom vi använder Google AdSense kan viss information överföras till servrar utanför EU/EES. Google har åtagit sig att följa EU:s dataskyddsprinciper och använder godkända överföringsmekanismer som standardavtalsklausuler.</p>
-        -->
+        <h2>11. Internationella dataöverföringar</h2>
+        <p>Eftersom vi använder Google AdSense kan viss information överföras till servrar utanför EU/EES. Google använder standardavtalsklausuler och andra överföringsmekanismer enligt sina villkor.</p>
 
-        <h2>11. Ändringar i denna policy</h2>
+        <h2>12. Ändringar i denna policy</h2>
         <p>Vi kan uppdatera denna integritetspolicy från tid till annan. Eventuella ändringar kommer att publiceras på denna sida med ett uppdaterat datum. Vi rekommenderar att du regelbundet kontrollerar denna sida för eventuella ändringar.</p>
 
-        <h2>12. Kontakt</h2>
+        <h2>13. Kontakt</h2>
         <p>Om du har frågor om denna integritetspolicy eller vill utöva dina rättigheter, kontakta oss via:</p>
         <ul>
             <li><a href="https://github.com/eoq746/SwedishCrossword/discussions" target="_blank" rel="noopener">GitHub Discussions</a></li>
@@ -343,7 +338,7 @@
             <p style="margin-top: 6px; font-size: 0.85rem;">Ordlistan</p>
         </footer>
     </div>
-<script>
+<script nonce="__CSP_NONCE__">
 (function(){
     var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
     document.documentElement.setAttribute('data-theme',t);
@@ -351,7 +346,7 @@
     if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
 })();
 </script>
-<script src="/cookie-consent.js" defer></script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
+<script nonce="__CSP_NONCE__" src="/cookie-consent.js" defer></script>
+<script nonce="__CSP_NONCE__">if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

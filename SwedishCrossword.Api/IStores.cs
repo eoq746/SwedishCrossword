@@ -45,6 +45,9 @@ internal interface IFriendStore
     Task<List<FriendInfo>> GetFriendsAsync(string userId);
     Task<List<FriendRequestInfo>> GetPendingRequestsAsync(string userId);
     Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date, string? puzzleHash = null);
+    Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date);
+    Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId);
+    Task<bool> RespondToChallengeAsync(string challengeId, string userId, bool accepted);
 }
 
 /// <summary>

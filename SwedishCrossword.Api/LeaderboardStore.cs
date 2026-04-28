@@ -572,7 +572,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         }
 
         if (solves.Count == 0)
-            return new UserStatsResponse(0, 0, 0, 0, 0, []);
+            return new UserStatsResponse(0, 0, 0, 0, 0, [], Badges: CreateBadges(0, 0, 0, []));
 
         var totalSolved = solves.Count;
         var avgTime = Math.Round(solves.Average(s => s.Time), 1);
@@ -604,7 +604,28 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         var (currentStreak, bestStreak) = ComputeStreaks(dates, today);
 
         var recent = solves.Take(30).ToList();
-        return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent, perSize.Count > 0 ? perSize : null);
+        var badges = CreateBadges(totalSolved, bestTime, bestStreak, solves);
+        return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent, perSize.Count > 0 ? perSize : null, badges);
+    }
+
+    private static List<AchievementBadge> CreateBadges(int totalSolved, double bestTime, int bestStreak, List<UserSolveRecord> solves)
+    {
+        var hasNoHintSolve = solves.Any(s => s.HintsUsed == 0 && s.WordHintsUsed == 0);
+        var solvedSizes = solves
+            .Where(s => !string.IsNullOrWhiteSpace(s.PuzzleSize))
+            .Select(s => s.PuzzleSize!)
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+        var hasAllSizes = solvedSizes.Contains("10x10") && solvedSizes.Contains("15x15") && solvedSizes.Contains("17x17");
+
+        return
+        [
+            new AchievementBadge("first-solve", "Första klar", "Lös ditt första korsord.", "🎉", totalSolved >= 1),
+            new AchievementBadge("clean-solve", "Utan ledtrådar", "Lös ett korsord utan att använda några ledtrådar.", "🧠", hasNoHintSolve),
+            new AchievementBadge("speed-run", "Snabb lösare", "Lös ett korsord på under 5 minuter.", "⚡", totalSolved > 0 && bestTime < 300),
+            new AchievementBadge("streak-3", "3 dagar i rad", "Nå en streak på minst 3 dagar.", "🔥", bestStreak >= 3),
+            new AchievementBadge("streak-7", "Veckostreak", "Nå en streak på minst 7 dagar.", "🏅", bestStreak >= 7),
+            new AchievementBadge("size-explorer", "Storleksutforskare", "Lös minst ett 10×10-, 15×15- och 17×17-korsord.", "🧩", hasAllSizes)
+        ];
     }
 
     private static (int Current, int Best) ComputeStreaks(List<DateOnly> datesDesc, DateOnly today)
@@ -1067,6 +1088,144 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return list;
     }
 
+    public async Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date)
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        string? toUserId = null;
+        await using (var friendshipCmd = conn.CreateCommand())
+        {
+            friendshipCmd.CommandText = """
+                SELECT from_user_id, to_user_id
+                FROM friend_requests
+                WHERE id = @id AND status = 'accepted'
+                  AND (from_user_id = @me OR to_user_id = @me)
+                """;
+            AddParam(friendshipCmd, "@id", friendRequestId);
+            AddParam(friendshipCmd, "@me", fromUserId);
+
+            await using var reader = await friendshipCmd.ExecuteReaderAsync();
+            if (!await reader.ReadAsync())
+                return (false, "Vänskapen hittades inte");
+
+            var first = reader.GetString(0);
+            var second = reader.GetString(1);
+            toUserId = string.Equals(first, fromUserId, StringComparison.Ordinal) ? second : first;
+        }
+
+        if (string.IsNullOrWhiteSpace(toUserId))
+            return (false, "Kunde inte skapa utmaning");
+
+        await using (var dedup = conn.CreateCommand())
+        {
+            dedup.CommandText = """
+                SELECT COUNT(1)
+                FROM friend_challenges
+                WHERE friendship_id = @fid
+                  AND from_user_id = @from
+                  AND to_user_id = @to
+                  AND challenge_date = @date
+                  AND status = 'pending'
+                """;
+            AddParam(dedup, "@fid", friendRequestId);
+            AddParam(dedup, "@from", fromUserId);
+            AddParam(dedup, "@to", toUserId);
+            AddParam(dedup, "@date", date);
+
+            var exists = Convert.ToInt64(await dedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture) > 0;
+            if (exists)
+                return (false, "Du har redan en väntande utmaning till den här vännen för datumet");
+        }
+
+        await using var insert = conn.CreateCommand();
+        insert.CommandText = """
+            INSERT INTO friend_challenges (id, friendship_id, from_user_id, to_user_id, challenge_date, status, created_at, responded_at)
+            VALUES (@id, @fid, @from, @to, @date, 'pending', @created, NULL)
+            """;
+        AddParam(insert, "@id", Guid.NewGuid().ToString("N"));
+        AddParam(insert, "@fid", friendRequestId);
+        AddParam(insert, "@from", fromUserId);
+        AddParam(insert, "@to", toUserId);
+        AddParam(insert, "@date", date);
+        AddParam(insert, "@created", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+
+        await insert.ExecuteNonQueryAsync();
+        return (true, string.Empty);
+    }
+
+    public async Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              SELECT c.id,
+                     CASE WHEN c.from_user_id = @uid THEN toAlias.alias ELSE fromAlias.alias END AS friend_alias,
+                     c.challenge_date,
+                     c.status,
+                     CASE WHEN c.to_user_id = @uid THEN 'incoming' ELSE 'outgoing' END AS direction,
+                     c.created_at,
+                     c.responded_at
+              FROM friend_challenges c
+              LEFT JOIN user_aliases fromAlias ON fromAlias.user_id = c.from_user_id
+              LEFT JOIN user_aliases toAlias ON toAlias.user_id = c.to_user_id
+              WHERE c.from_user_id = @uid OR c.to_user_id = @uid
+              ORDER BY c.created_at DESC
+              """
+            : """
+              SELECT c.id,
+                     CASE WHEN c.from_user_id = @uid THEN toAlias.alias ELSE fromAlias.alias END AS friend_alias,
+                     c.challenge_date,
+                     c.status,
+                     CASE WHEN c.to_user_id = @uid THEN 'incoming' ELSE 'outgoing' END AS direction,
+                     c.created_at,
+                     c.responded_at
+              FROM friend_challenges c
+              LEFT JOIN user_aliases fromAlias ON fromAlias.user_id = c.from_user_id
+              LEFT JOIN user_aliases toAlias ON toAlias.user_id = c.to_user_id
+              WHERE c.from_user_id = @uid OR c.to_user_id = @uid
+              ORDER BY c.created_at DESC
+              """;
+        AddParam(cmd, "@uid", userId);
+
+        var list = new List<FriendChallengeInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            list.Add(new FriendChallengeInfo(
+                Id: reader.GetString(0),
+                FriendAlias: reader.IsDBNull(1) ? "Okänd" : reader.GetString(1),
+                Date: reader.GetString(2),
+                Status: reader.GetString(3),
+                Direction: reader.GetString(4),
+                CreatedAt: reader.GetInt64(5),
+                RespondedAt: reader.IsDBNull(6) ? null : reader.GetInt64(6)
+            ));
+        }
+
+        return list;
+    }
+
+    public async Task<bool> RespondToChallengeAsync(string challengeId, string userId, bool accepted)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            UPDATE friend_challenges
+            SET status = @status,
+                responded_at = @respondedAt
+            WHERE id = @id
+              AND to_user_id = @uid
+              AND status = 'pending'
+            """;
+        AddParam(cmd, "@status", accepted ? "accepted" : "declined");
+        AddParam(cmd, "@respondedAt", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        AddParam(cmd, "@id", challengeId);
+        AddParam(cmd, "@uid", userId);
+
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
     // ── Database initialisation ──
 
     private void InitialiseDatabase()
@@ -1147,6 +1306,24 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_requests_from')
             CREATE INDEX idx_friend_requests_from ON friend_requests (from_user_id, status);
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'friend_challenges')
+            CREATE TABLE friend_challenges (
+                id              NVARCHAR(50) NOT NULL PRIMARY KEY,
+                friendship_id   NVARCHAR(50) NOT NULL,
+                from_user_id    NVARCHAR(200) NOT NULL,
+                to_user_id      NVARCHAR(200) NOT NULL,
+                challenge_date  NVARCHAR(10) NOT NULL,
+                status          NVARCHAR(20) NOT NULL DEFAULT 'pending',
+                created_at      BIGINT NOT NULL,
+                responded_at    BIGINT NULL
+            );
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_challenges_to_status')
+            CREATE INDEX idx_friend_challenges_to_status ON friend_challenges (to_user_id, status);
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_challenges_from_date')
+            CREATE INDEX idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
             """;
         cmd.ExecuteNonQuery();
         _logger.LogInformation("Azure SQL database initialised");
@@ -1228,6 +1405,19 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             );
             CREATE INDEX IF NOT EXISTS idx_friend_requests_to ON friend_requests (to_user_id, status);
             CREATE INDEX IF NOT EXISTS idx_friend_requests_from ON friend_requests (from_user_id, status);
+
+            CREATE TABLE IF NOT EXISTS friend_challenges (
+                id              TEXT NOT NULL PRIMARY KEY,
+                friendship_id    TEXT NOT NULL,
+                from_user_id    TEXT NOT NULL,
+                to_user_id      TEXT NOT NULL,
+                challenge_date  TEXT NOT NULL,
+                status          TEXT NOT NULL DEFAULT 'pending',
+                created_at      INTEGER NOT NULL,
+                responded_at    INTEGER
+            );
+            CREATE INDEX IF NOT EXISTS idx_friend_challenges_to_status ON friend_challenges (to_user_id, status);
+            CREATE INDEX IF NOT EXISTS idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
             """;
         create.ExecuteNonQuery();
     }

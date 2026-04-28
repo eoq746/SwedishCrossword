@@ -13,14 +13,7 @@
     <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
 
-    <link rel="stylesheet" href="/tokens.css">
-    <style>
-        :root {
-            --danger: #dc2626;
-        }
-        [data-theme="dark"] {
-            --danger: #f87171;
-        }
+    <style nonce="__CSP_NONCE__">
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -124,7 +117,7 @@
         </footer>
     </div>
 
-<script>
+<script nonce="__CSP_NONCE__">
 (function(){
     var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
     document.documentElement.setAttribute('data-theme',t);
@@ -246,7 +239,7 @@ function renderDashboard(el, summary, daily, players) {
 document.getElementById('refresh-btn').addEventListener('click', function() { loadAdmin(); });
 loadAdmin();
 </script>
-<script src="/cookie-consent.js" defer></script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
+<script nonce="__CSP_NONCE__" src="/cookie-consent.js" defer></script>
+<script nonce="__CSP_NONCE__">if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

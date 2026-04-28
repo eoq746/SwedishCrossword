@@ -24,7 +24,7 @@ public class SubmissionTokenServiceTests
     }
 
     // -----------------------------------------------------------------------
-    // ValidateAccess — HMAC + expiry only
+    // ValidateAccess — HMAC + expiry (+ optional puzzle binding)
     // -----------------------------------------------------------------------
 
     [Test]
@@ -36,6 +36,28 @@ public class SubmissionTokenServiceTests
         var result = service.ValidateAccess(token);
 
         await Assert.That(result.IsValid).IsTrue();
+    }
+
+    [Test]
+    public async Task ValidateAccess_WrongExpectedPuzzleHash_ReturnsInvalid()
+    {
+        var service = CreateService();
+        var token = service.GenerateToken("hash123", 42, "2026-05-20");
+
+        var result = service.ValidateAccess(token, expectedPuzzleHash: "different-hash");
+
+        await Assert.That(result.IsValid).IsFalse();
+    }
+
+    [Test]
+    public async Task ValidateAccess_WrongExpectedPuzzleDate_ReturnsInvalid()
+    {
+        var service = CreateService();
+        var token = service.GenerateToken("hash123", 42, "2026-05-20");
+
+        var result = service.ValidateAccess(token, expectedPuzzleDate: "2026-05-21");
+
+        await Assert.That(result.IsValid).IsFalse();
     }
 
     [Test]

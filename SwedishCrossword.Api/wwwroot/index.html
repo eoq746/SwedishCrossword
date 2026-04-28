@@ -2,13 +2,13 @@
 <html lang="sv">
 <head>
     <!-- Google AdSense: loading is gated by cookie-consent.js. Signed-in users see no ads; signed-out users see personalized ads after "Acceptera alla" or non-personalized (NPA) ads after "Endast nödvändiga". -->
-    <script type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
+    <script nonce="__CSP_NONCE__" type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-4967624066496288">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svenskt Korsord - Gratis Dagligt Korsord Online | Korsord på Svenska</title>
     <meta name="description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar. Tävla på topplistan, träna hjärnan och förbättra ditt ordförråd! Sveriges bästa korsord online.">
-    <meta name="keywords" content="korsord, svenska korsord, gratis korsord, dagligt korsord, korsord online, ordspel, hjärnträning, svenska ordlekar, ordpussel, synonymer, korsord på nätet, spela korsord, korsord gratis, swedish crossword, crosswords online">
+    <meta name="keywords" content="korsord, svenska korsord,gratis korsord, dagligt korsord, korsord online, ordspel, hjärnträning, svenska ordlekar, ordpussel, synonymer, korsord på nätet, spela korsord, korsord gratis, swedish crossword, crosswords online">
     <meta name="author" content="Svenskt Korsord">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://www.svensktkorsord.se/">
@@ -35,7 +35,60 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
-    <style>
+    <style nonce="__CSP_NONCE__">
+        .landing-hero {
+            margin: 1.5rem 0 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+        .hero-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.15s ease;
+        }
+        .hero-card:hover {
+            transform: translateY(-2px);
+        }
+        .hero-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .size-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 10px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+        }
+        .btn-hero {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            transition: background 0.15s ease;
+        }
+        .btn-hero-secondary {
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+        .btn-hero:hover {
+            background: var(--accent-hover);
+        }
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
         /* Sign-in incentive section (homepage only) */
         .landing-signin-cta { margin: 28px 0; }
         .signin-cta-card {
@@ -78,7 +131,7 @@
     </style>
 
     <!-- Structured Data: WebSite -->
-    <script type="application/ld+json">
+    <script nonce="__CSP_NONCE__" type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -100,7 +153,7 @@
     </script>
 
     <!-- Structured Data: WebApplication (Game) -->
-    <script type="application/ld+json">
+    <script nonce="__CSP_NONCE__" type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebApplication",
@@ -132,7 +185,7 @@
     </script>
 
     <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
+    <script nonce="__CSP_NONCE__" type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -173,7 +226,7 @@
         }
     </script>
     <!-- Structured Data: BreadcrumbList -->
-    <script type="application/ld+json">
+    <script nonce="__CSP_NONCE__" type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
@@ -383,7 +436,7 @@
             <p class="license">Ordlistan är licensierad under <a href="https://creativecommons.org/licenses/by/2.5/se/" target="_blank" rel="noopener">Creative Commons Erkännande 2.5 Sverige</a>. DSSO-ord under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Ordvalidering använder även Kelly-listan (Kilgarriff et al., 2014, DOI <a href="https://doi.org/10.1007/s10579-013-9251-2" target="_blank" rel="noopener">10.1007/s10579-013-9251-2</a>).</p>
         </footer>
     </div>
-    <script>
+    <script nonce="__CSP_NONCE__">
     (function(){
         var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
         document.documentElement.setAttribute('data-theme',t);
@@ -391,7 +444,7 @@
         if(b){b.textContent=t==='dark'?'\u2600\ufe0f':'\ud83c\udf19';b.addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';localStorage.setItem('crossword-theme',c);document.documentElement.setAttribute('data-theme',c);b.textContent=c==='dark'?'\u2600\ufe0f':'\ud83c\udf19';});}
     })();
     </script>
-    <script>
+    <script nonce="__CSP_NONCE__">
     (function(){
         function initAuth(data){
             var cta = document.getElementById('signin-cta');
@@ -425,7 +478,7 @@
         fetch('/api/auth/me',{credentials:'same-origin'}).then(function(r){return r.json()}).then(initAuth).catch(function(){initAuth(null)});
     })();
     </script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
-<script src="/cookie-consent.js" defer></script>
+<script nonce="__CSP_NONCE__">if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
+<script nonce="__CSP_NONCE__" src="/cookie-consent.js" defer></script>
 </body>
 </html>
