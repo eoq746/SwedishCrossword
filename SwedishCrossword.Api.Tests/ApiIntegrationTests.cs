@@ -587,7 +587,7 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task LeaderboardHistoryPost_NegativeTime_ReturnsBadRequest()
     {
-        var tokenService = _fixture.Factory.Services.GetRequiredService< SubmissionTokenService>();
+        var tokenService = _fixture.Factory.Services.GetRequiredService<SubmissionTokenService>();
         var today = DateTime.UtcNow.Date.ToString("yyyy-MM-dd");
         var token = tokenService.GenerateToken("abc", 10, today);
 
