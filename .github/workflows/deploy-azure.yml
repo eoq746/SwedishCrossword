@@ -14,7 +14,6 @@ on:
   workflow_dispatch:
 
 permissions:
-  id-token: write
   contents: read
 
 env:
@@ -93,6 +92,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: [test, secret-scan]
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     # Serialize deployments so two pushes in quick succession don't race on
     # the same resource group / Container App revision. Scoped to this job
     # only so PR runs of `test` and `secret-scan` are never blocked by an

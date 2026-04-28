@@ -1,12 +1,12 @@
 /*
  * Cookie consent + ad loading.
  *
- * Current strategy (Option A — NPA fallback):
+ * Current strategy (Option A):
  *   - Signed in                      => no ads at all (sign-in incentive).
  *   - Not signed in + 'all'          => load AdSense with personalized ads.
  *   - Not signed in + 'essential'    => load AdSense in non-personalized mode
  *                                       (NPA: no profiling, contextual only).
- *   - Not signed in + no answer yet  => no ads until the user picks an option.
+ *   - Not signed in + no answer yet  => no ads + user must choose before using site.
  *
  * Note: NPA still sets a small number of cookies/identifiers (frequency capping,
  * fraud prevention). Most EU DPAs treat these as requiring consent, so this is
@@ -27,6 +27,7 @@
     var CONSENT_KEY = 'cookie_consent';
     var AUTH_CACHE_KEY = 'auth_signed_in';
     var ADS_CATEGORY = 'ads';
+    var consentGateEnabled = false;
 
     function getConsent() {
         try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
@@ -50,26 +51,40 @@
     }
 
     function refreshAuthState() {
-        // Fire-and-forget; updates the cache for future page loads.
         try {
-            fetch('/api/auth/me', { credentials: 'same-origin' })
+            return fetch('/api/auth/me', { credentials: 'same-origin' })
                 .then(function (r) { return r.ok ? r.json() : null; })
                 .then(function (data) {
                     var authed = !!(data && data.authenticated);
-                    var was = isAuthenticatedCached();
                     setAuthenticatedCached(authed);
-                    // If the user just signed out in this tab, allow ads to load now.
-                    if (was && !authed) {
-                        applyAdPolicy();
+                    if (authed) {
+                        document.documentElement.classList.add('user-signed-in');
+                    } else {
+                        document.documentElement.classList.remove('user-signed-in');
                     }
                 })
                 .catch(function () { /* offline / ignore */ });
-        } catch (e) { /* ignore */ }
+        } catch (e) {
+            return Promise.resolve();
+        }
     }
 
     function removeBanner() {
         var el = document.getElementById('cookie-consent-banner');
         if (el) el.remove();
+        setConsentGate(false);
+    }
+
+    function setConsentGate(enabled) {
+        if (consentGateEnabled === enabled) { return; }
+        consentGateEnabled = enabled;
+        try {
+            if (enabled) {
+                document.documentElement.classList.add('consent-gated');
+            } else {
+                document.documentElement.classList.remove('consent-gated');
+            }
+        } catch (e) { /* ignore */ }
     }
 
     function onAccept() {
@@ -173,7 +188,7 @@
         } else if (consent === 'essential') {
             mode = 'npa';                   // Non-personalized fallback.
         } else {
-            mode = 'skip';                  // No answer yet — wait for banner.
+            mode = 'skip';                  // No consent yet => no ads.
         }
 
         var run = function () { loadConsentedScripts(mode); };
@@ -185,9 +200,15 @@
     }
 
     function showBanner() {
+        if (document.getElementById('cookie-consent-banner')) {
+            setConsentGate(true);
+            return;
+        }
+
         var banner = document.createElement('div');
         banner.id = 'cookie-consent-banner';
         banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-modal', 'true');
         banner.setAttribute('aria-label', 'Cookie-samtycke');
         banner.innerHTML =
             '<div class="cookie-consent-inner">' +
@@ -199,21 +220,20 @@
                 '</div>' +
             '</div>';
         document.body.appendChild(banner);
+        setConsentGate(true);
 
         document.getElementById('cookie-accept-all').addEventListener('click', onAccept);
         document.getElementById('cookie-reject').addEventListener('click', onRejectNonEssential);
     }
 
     if (!getConsent()) {
+        setConsentGate(true);
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', showBanner);
         } else {
             showBanner();
         }
     }
-    // Always run the ad policy on load — it picks the right mode (personalized,
-    // NPA, or skip) based on consent + auth state.
-    applyAdPolicy();
 
     // Hide any rendered ad slots for signed-in users (defensive — currently no
     // live <ins class="adsbygoogle"> slots, but this future-proofs the perk).
@@ -223,7 +243,11 @@
             style.textContent =
                 'html.user-signed-in .adsbygoogle,' +
                 'html.user-signed-in [data-ad-client],' +
-                'html.user-signed-in .ad-slot { display: none !important; }';
+                'html.user-signed-in .ad-slot { display: none !important; }' +
+                'html.consent-gated body > *:not(#cookie-consent-banner) { pointer-events: none !important; user-select: none !important; }' +
+                'html.consent-gated body { overflow: hidden !important; }' +
+                '#cookie-consent-banner { position: fixed; inset: 0; z-index: 2147483647; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.56); padding: 16px; }' +
+                '#cookie-consent-banner .cookie-consent-inner { max-width: 640px; width: 100%; }';
             (document.head || document.documentElement).appendChild(style);
             if (isAuthenticatedCached()) {
                 document.documentElement.classList.add('user-signed-in');
@@ -231,9 +255,12 @@
         } catch (e) { /* ignore */ }
     })();
 
-    // Refresh auth state in the background so future page loads have an
-    // up-to-date cached value when deciding whether to load ads.
-    refreshAuthState();
+    // Refresh auth state, then apply ad policy with the freshest possible
+    // signed-in/signed-out signal.
+    refreshAuthState().finally(function () {
+        // Picks personalized, NPA, or skip based on consent + auth state.
+        applyAdPolicy();
+    });
 
     /**
      * Returns true if the user has accepted non-essential cookies.

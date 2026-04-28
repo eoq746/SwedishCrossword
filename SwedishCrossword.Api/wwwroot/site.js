@@ -35,10 +35,11 @@ const LEADERBOARD_ENABLED = true;
 
 // ── Global fetch interceptor: graceful "DB unavailable" handling ──
 // Backend returns HTTP 503 with body {"code":"db_unavailable", ...} when
-// Azure SQL is paused/resuming/quota-exhausted. Show a single dismissible
-// banner so users know that puzzle play still works while leaderboard,
-// stats, friends etc. are temporarily disabled. Done globally so every
-// fetch call site benefits without code churn.
+// Azure SQL is temporarily unavailable (for example during transient faults,
+// failover, or short service disruptions). Show a single dismissible banner so
+// users know that puzzle play still works while leaderboard, stats, friends
+// etc. are temporarily disabled. Done globally so every fetch call site
+// benefits without code churn.
 (function installDbUnavailableInterceptor() {
     if (window.__dbBannerInstalled) return;
     window.__dbBannerInstalled = true;
@@ -769,6 +770,15 @@ async function renderPersonalStats() {
             html += '</ul>';
         }
 
+        if (stats.badges && stats.badges.length > 0) {
+            html += '<h4 class="personal-stats-subheading">🏅 Prestationer</h4><ul class="personal-recent-list">';
+            for (const badge of stats.badges) {
+                const state = badge.unlocked ? 'upplåst' : 'låst';
+                html += `<li>${badge.icon || '🏅'} ${badge.name} — ${state}</li>`;
+            }
+            html += '</ul>';
+        }
+
         panel.innerHTML = html;
     } catch (e) {
         console.warn('Failed to load personal stats:', e);
@@ -777,13 +787,6 @@ async function renderPersonalStats() {
 }
 
 
-// Analyze input pattern for suspicious activity
-function analyzeInputPattern() {
-    if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
-    
-    const reasons = [];
-    const cellCount = countCells();
-    
     // Check 1: Minimum time threshold
     const minTime = cellCount * ANTI_CHEAT.minTimePerCell;
     if (seconds < minTime) {
@@ -1759,6 +1762,8 @@ async function init() {
             if (rect.bottom > visibleBottom - 20) {
                 const scrollBy = rect.bottom - visibleBottom + 60;
                 window.scrollBy({ top: scrollBy, behavior: 'smooth' });
+            } else if (rect.top < vv.offsetTop + 10) {
+                window.scrollBy({ top: rect.top - vv.offsetTop - 40, behavior: 'smooth' });
             }
         });
     }
@@ -2114,29 +2119,38 @@ function handleFocus(row, col) {
 function highlightWord(row, col) {
     document.querySelectorAll('.cell.word-highlight').forEach(c => c.classList.remove('word-highlight'));
 
-    // Use cellClueMap to find the correct cells for this word (handles bent words)
+    // Use cellClueMap to find the correct clue for this cell + direction
     const key = `${row},${col}`;
     const entries = cellClueMap[key];
+    let clueNumber = 0;
+    let clueDirection = currentDirection;
     if (entries && entries.length > 0) {
         const match = findBestEntry(entries, currentDirection, row, col);
-        match.cells.forEach(c => {
-            document.querySelector(`.cell[data-row="${c.row}"][data-col="${c.col}"]`)?.classList.add('word-highlight');
-        });
-        return;
+        clueNumber = match.number;
+        clueDirection = match.direction;
     }
 
-    // Fallback: straight-line walk (for cells not covered by any clue)
-    if (currentDirection === 'across') {
-        let startCol = col;
-        while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
-        for (let c = startCol; c < puzzleData.width && puzzleData.cells[row]?.[c] !== null; c++) {
-            document.querySelector(`.cell[data-row="${row}"][data-col="${c}"]`)?.classList.add('word-highlight');
+    if (clueNumber <= 0) {
+        // Fallback: straight-line walk to find start cell
+        let startRow = row, startCol = col;
+        if (currentDirection === 'across') {
+            while (startCol > 0 && puzzleData.cells[row]?.[startCol - 1] !== null) startCol--;
+        } else {
+            while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
         }
-    } else {
-        let startRow = row;
-        while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
-        for (let r = startRow; r < puzzleData.height && puzzleData.cells[r]?.[col] !== null; r++) {
-            document.querySelector(`.cell[data-row="${r}"][data-col="${col}"]`)?.classList.add('word-highlight');
+        const startCellData = puzzleData.cells[startRow]?.[startCol];
+        clueNumber = startCellData?.num || 0;
+    }
+
+    if (clueNumber > 0) {
+        const clueItem = document.querySelector(`.clue-item[data-number="${clueNumber}"][data-direction="${clueDirection}"]`);
+        if (clueItem) {
+            clueItem.classList.add('active');
+            const listContainer = clueItem.closest('.clue-list');
+            if (listContainer) {
+                const target = clueItem.offsetTop - listContainer.offsetTop - 8;
+                listContainer.scrollTo({ top: target, behavior: 'smooth' });
+            }
         }
     }
 }
@@ -2355,8 +2369,6 @@ function findCurrentClueNumber(row, col) {
     } else {
         while (startRow > 0 && puzzleData.cells[startRow - 1]?.[col] !== null) startRow--;
     }
-    
-    // Get the clue number from the start cell
     const startCellData = puzzleData.cells[startRow]?.[startCol];
     return startCellData?.num || 0;
 }
@@ -2505,13 +2517,7 @@ async function checkAnswers() {
         }
     }
 
-    // Fallback: local check using data-answer attributes
-    // If answers were stripped by the server, local check is unavailable.
-    const hasLocalAnswers = Array.from(inputs).some(i => i.dataset.answer);
-    if (!hasLocalAnswers) {
-        showMessageModal('Kunde inte kontrollera', 'Servern svarade inte. Försök igen om en stund.');
-        return;
-    }
+    // Fallback: check answers locally using data-answer attributes
     const { correct, total: t, filled } = checkAnswersLocal();
     handleCheckResult(correct, t, filled);
 }

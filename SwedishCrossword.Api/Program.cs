@@ -1,10 +1,13 @@
 ﻿using System.Globalization;
+using System.Net;
+using System.Security.Cryptography;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
 using SwedishCrossword.Api;
+using SwedishCrossword.Api.Endpoints;
 using SwedishCrossword.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,12 +45,56 @@ builder.Services.AddHostedService<PuzzleWarmupService>();
 // Background service: periodically prunes old leaderboard entries (removes work from write path)
 builder.Services.AddHostedService<LeaderboardPruneService>();
 
-// Forwarded headers — required behind Azure App Service reverse proxy for correct client IPs
+var trustedProxyValues = builder.Configuration.GetSection("ForwardedHeaders:TrustedProxies").Get<string[]>() ?? [];
+var trustedNetworkValues = builder.Configuration.GetSection("ForwardedHeaders:TrustedNetworks").Get<string[]>() ?? [];
+
+var trustedProxies = new List<IPAddress>(trustedProxyValues.Length);
+foreach (var value in trustedProxyValues)
+{
+    if (string.IsNullOrWhiteSpace(value))
+        continue;
+    if (!IPAddress.TryParse(value, out var ip))
+        throw new ArgumentException($"Invalid ForwardedHeaders:TrustedProxies entry '{value}'");
+    trustedProxies.Add(ip);
+}
+
+static System.Net.IPNetwork ParseTrustedNetwork(string value)
+{
+    if (!System.Net.IPNetwork.TryParse(value, out var network))
+        throw new ArgumentException($"Invalid ForwardedHeaders:TrustedNetworks entry '{value}'", nameof(value));
+
+    return network;
+}
+
+var trustedNetworks = new List<System.Net.IPNetwork>(trustedNetworkValues.Length);
+foreach (var value in trustedNetworkValues)
+{
+    if (string.IsNullOrWhiteSpace(value))
+        continue;
+    trustedNetworks.Add(ParseTrustedNetwork(value));
+}
+
+if (!builder.Environment.IsDevelopment() && trustedProxies.Count == 0 && trustedNetworks.Count == 0)
+{
+    throw new InvalidOperationException(
+        "Forwarded headers trust is not configured. Set ForwardedHeaders:TrustedProxies and/or " +
+        "ForwardedHeaders:TrustedNetworks in non-Development environments.");
+}
+
+// Forwarded headers — trust only configured proxies/networks
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
     options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    options.ForwardLimit = 1;
+    options.RequireHeaderSymmetry = true;
     options.KnownIPNetworks.Clear();
     options.KnownProxies.Clear();
+
+    foreach (var proxy in trustedProxies)
+        options.KnownProxies.Add(proxy);
+
+    foreach (var network in trustedNetworks)
+        options.KnownIPNetworks.Add(network);  // Changed from KnownNetworks to KnownIPNetworks
 });
 
 // Health checks
@@ -239,6 +286,31 @@ if (!app.Environment.IsDevelopment())
     app.UseHttpsRedirection();
 }
 
+static string GenerateCspNonce() => Convert.ToBase64String(RandomNumberGenerator.GetBytes(16));
+
+static string GetCspNonce(HttpContext context)
+{
+    if (context.Items.TryGetValue("CspNonce", out var value) && value is string nonce && !string.IsNullOrEmpty(nonce))
+        return nonce;
+    throw new InvalidOperationException("Missing CSP nonce in request context.");
+}
+
+static string? TryResolveHtmlFilePath(string webRootPath, PathString path)
+{
+    var relative = path.Value switch
+    {
+        "/" or "" => "index.html",
+        var p when p is not null && p.EndsWith(".html", StringComparison.OrdinalIgnoreCase) => p.TrimStart('/'),
+        _ => null
+    };
+
+    if (string.IsNullOrEmpty(relative) || relative.Contains("..", StringComparison.Ordinal))
+        return null;
+
+    var candidate = Path.Combine(webRootPath, relative.Replace('/', Path.DirectorySeparatorChar));
+    return File.Exists(candidate) ? candidate : null;
+}
+
 var isProduction = !app.Environment.IsDevelopment();
 
 // Security headers — registered BEFORE OutputCache so cached responses include them.
@@ -247,15 +319,20 @@ var isProduction = !app.Environment.IsDevelopment();
 // must run before UseOutputCache().
 app.Use(async (context, next) =>
 {
+    var cspNonce = GenerateCspNonce();
+    context.Items["CspNonce"] = cspNonce;
+
     var headers = context.Response.Headers;
     headers.XContentTypeOptions = "nosniff";
     headers.XFrameOptions = "DENY";
     headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
     headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()";
-    headers["Content-Security-Policy"] =
+    headers.ContentSecurityPolicy =
         "default-src 'self'; " +
-        "script-src 'self' 'unsafe-inline' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://*.google.com https://*.googlesyndication.com https://*.googletagservices.com; " +
-        "style-src 'self' 'unsafe-inline'; " +
+        $"script-src 'self' 'nonce-{cspNonce}' https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://*.google.com https://*.googlesyndication.com https://*.googletagservices.com https://cdn.jsdelivr.net; " +
+        $"style-src 'self' 'unsafe-inline'; " +
+        $"style-src-elem 'self' 'nonce-{cspNonce}'; " +
+        "style-src-attr 'unsafe-inline'; " +
         "img-src 'self' data: https:; " +
         "connect-src 'self' https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com; " +
         "font-src 'self' data:; " +
@@ -269,22 +346,48 @@ app.Use(async (context, next) =>
     await next();
 });
 
-// CSRF protection: reject state-changing requests with mismatched Origin header.
-// Registered before OutputCache for the same reason as security headers, even
-// though state-changing requests are never cached in practice.
+static bool IsSameOriginHeader(string? headerValue, HttpContext context)
+{
+    if (string.IsNullOrWhiteSpace(headerValue) || string.Equals(headerValue, "null", StringComparison.OrdinalIgnoreCase))
+        return false;
+
+    if (!Uri.TryCreate(headerValue, UriKind.Absolute, out var uri))
+        return false;
+
+    var requestScheme = context.Request.Scheme;
+    if (!string.Equals(uri.Scheme, requestScheme, StringComparison.OrdinalIgnoreCase))
+        return false;
+
+    if (!string.Equals(uri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
+        return false;
+
+    var expectedPort = context.Request.Host.Port
+        ?? (string.Equals(requestScheme, "https", StringComparison.OrdinalIgnoreCase) ? 443 : 80);
+    var sourcePort = uri.IsDefaultPort
+        ? (string.Equals(uri.Scheme, "https", StringComparison.OrdinalIgnoreCase) ? 443 : 80)
+        : uri.Port;
+
+    return sourcePort == expectedPort;
+}
+
+// CSRF protection: require same-origin Origin/Referer on state-changing requests
+// that carry the auth cookie.
 app.Use(async (context, next) =>
 {
     var method = context.Request.Method;
     if (HttpMethods.IsPost(method) || HttpMethods.IsPut(method) || HttpMethods.IsDelete(method) || HttpMethods.IsPatch(method))
     {
-        var origin = context.Request.Headers.Origin.FirstOrDefault();
-        if (!string.IsNullOrEmpty(origin) && origin != "null")
+        // CSRF is only relevant when browser credentials are auto-sent.
+        // For this app that means the auth cookie flow.
+        if (context.Request.Cookies.ContainsKey(".Crossword.Auth"))
         {
-            if (!Uri.TryCreate(origin, UriKind.Absolute, out var originUri) ||
-                !string.Equals(originUri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
+            var origin = context.Request.Headers.Origin.FirstOrDefault();
+            var referer = context.Request.Headers.Referer.FirstOrDefault();
+            var valid = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+            if (!valid)
             {
                 context.Response.StatusCode = 403;
-                await context.Response.WriteAsync("{\"error\":\"Origin mismatch\"}");
+                await context.Response.WriteAsync("{\"error\":\"CSRF validation failed\"}");
                 return;
             }
         }
@@ -293,6 +396,29 @@ app.Use(async (context, next) =>
 });
 
 app.UseCors();
+
+var webRootPath = app.Environment.WebRootPath ?? Path.Combine(AppContext.BaseDirectory, "wwwroot");
+app.Use(async (context, next) =>
+{
+    if (!HttpMethods.IsGet(context.Request.Method) && !HttpMethods.IsHead(context.Request.Method))
+    {
+        await next();
+        return;
+    }
+
+    var filePath = TryResolveHtmlFilePath(webRootPath, context.Request.Path);
+    if (filePath is null)
+    {
+        await next();
+        return;
+    }
+
+    var html = await File.ReadAllTextAsync(filePath, context.RequestAborted);
+    var content = html.Replace("__CSP_NONCE__", GetCspNonce(context), StringComparison.Ordinal);
+    context.Response.ContentType = "text/html; charset=utf-8";
+    await context.Response.WriteAsync(content, context.RequestAborted);
+});
+
 app.UseDefaultFiles();
 app.UseStaticFiles(new StaticFileOptions
 {

@@ -1,7 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.Testing;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using System.Security.Claims;
+using System.Text.Encodings.Web;
 
 namespace SwedishCrossword.Api.Tests;
 
@@ -28,7 +33,18 @@ internal class ApiTestFixture : IAsyncDisposable
     {
         _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
         _tempLeaderboardPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-" + Guid.NewGuid());
-        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath);
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false);
+        _client = _factory.CreateClient();
+    }
+
+    /// <summary>
+    /// Creates a fixture with auto-generated temp paths and optional test auth.
+    /// </summary>
+    public ApiTestFixture(bool enableTestAuth)
+    {
+        _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
+        _tempLeaderboardPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-" + Guid.NewGuid());
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth);
         _client = _factory.CreateClient();
     }
 
@@ -40,11 +56,11 @@ internal class ApiTestFixture : IAsyncDisposable
     {
         _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
         _tempLeaderboardPath = customLeaderboardPath;
-        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath);
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false);
         _client = _factory.CreateClient();
     }
 
-    private static WebApplicationFactory<Program> CreateFactory(string puzzlePath, string leaderboardPath)
+    private static WebApplicationFactory<Program> CreateFactory(string puzzlePath, string leaderboardPath, bool enableTestAuth)
     {
         return new WebApplicationFactory<Program>()
             .WithWebHostBuilder(builder =>
@@ -61,6 +77,18 @@ internal class ApiTestFixture : IAsyncDisposable
                     foreach (var registration in warmupRegistrations)
                     {
                         services.Remove(registration);
+                    }
+
+                    if (enableTestAuth)
+                    {
+                        services.AddAuthentication(options =>
+                        {
+                            options.DefaultAuthenticateScheme = TestAuthHandler.SchemeName;
+                            options.DefaultChallengeScheme = TestAuthHandler.SchemeName;
+                            options.DefaultScheme = TestAuthHandler.SchemeName;
+                        }).AddScheme<AuthenticationSchemeOptions, TestAuthHandler>(
+                            TestAuthHandler.SchemeName,
+                            _ => { });
                     }
                 });
             });
@@ -90,5 +118,26 @@ internal class ApiTestFixture : IAsyncDisposable
     public void Dispose()
     {
         DisposeAsync().AsTask().GetAwaiter().GetResult();
+    }
+
+    private sealed class TestAuthHandler(
+        IOptionsMonitor<AuthenticationSchemeOptions> options,
+        ILoggerFactory logger,
+        UrlEncoder encoder) : AuthenticationHandler<AuthenticationSchemeOptions>(options, logger, encoder)
+    {
+        public const string SchemeName = "Test";
+
+        protected override Task<AuthenticateResult> HandleAuthenticateAsync()
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, "test-user-1"),
+                new Claim(ClaimTypes.Name, "Test User")
+            };
+            var identity = new ClaimsIdentity(claims, SchemeName);
+            var principal = new ClaimsPrincipal(identity);
+            var ticket = new AuthenticationTicket(principal, SchemeName);
+            return Task.FromResult(AuthenticateResult.Success(ticket));
+        }
     }
 }

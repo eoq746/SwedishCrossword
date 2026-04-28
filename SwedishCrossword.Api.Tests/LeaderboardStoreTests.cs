@@ -688,35 +688,6 @@ public class LeaderboardStoreTests
     }
 
     // -----------------------------------------------------------------------
-    // Helpers
-    // -----------------------------------------------------------------------
-
-    private static LeaderboardStore CreateStore(string dataDir)
-    {
-        var config = new ConfigurationBuilder()
-            .AddInMemoryCollection(new Dictionary<string, string?>
-            {
-                ["Storage:LeaderboardPath"] = dataDir
-            })
-            .Build();
-        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System, new TestHostEnvironment());
-    }
-
-    private static DateOnly GetSwedishDate()
-    {
-        var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
-        return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
-    }
-
-    private sealed class TestHostEnvironment : IHostEnvironment
-    {
-        public string EnvironmentName { get; set; } = Environments.Development;
-        public string ApplicationName { get; set; } = "Tests";
-        public string ContentRootPath { get; set; } = AppContext.BaseDirectory;
-        public IFileProvider ContentRootFileProvider { get; set; } = new NullFileProvider();
-    }
-
-    // -----------------------------------------------------------------------
     // Friends — SendFriendRequestAsync
     // -----------------------------------------------------------------------
 
@@ -970,6 +941,84 @@ public class LeaderboardStoreTests
     }
 
     // -----------------------------------------------------------------------
+    // Challenges — CreateChallengeAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task CreateChallengeAsync_WithAcceptedFriendship_Succeeds()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var friends = await _store.GetFriendsAsync("user1");
+        var friendshipId = friends[0].FriendId;
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+
+        var (success, error) = await _store.CreateChallengeAsync("user1", friendshipId, date);
+
+        await Assert.That(success).IsTrue();
+        await Assert.That(error).IsEqualTo(string.Empty);
+
+        var forUser2 = await _store.GetChallengesAsync("user2");
+        await Assert.That(forUser2.Count).IsEqualTo(1);
+        await Assert.That(forUser2[0].Direction).IsEqualTo("incoming");
+        await Assert.That(forUser2[0].Status).IsEqualTo("pending");
+    }
+
+    [Test]
+    public async Task CreateChallengeAsync_DuplicatePendingSameDate_Fails()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+
+        await _store.CreateChallengeAsync("user1", friendshipId, date);
+        var (success, _) = await _store.CreateChallengeAsync("user1", friendshipId, date);
+
+        await Assert.That(success).IsFalse();
+    }
+
+    // -----------------------------------------------------------------------
+    // Challenges — RespondToChallengeAsync
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task RespondToChallengeAsync_OnlyRecipientCanRespond()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        await _store.CreateChallengeAsync("user1", friendshipId, date);
+
+        var challenge = (await _store.GetChallengesAsync("user2")).Single();
+
+        var wrongUser = await _store.RespondToChallengeAsync(challenge.Id, "user1", accepted: true);
+        await Assert.That(wrongUser).IsFalse();
+
+        var recipient = await _store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
+        await Assert.That(recipient).IsTrue();
+
+        var updated = (await _store.GetChallengesAsync("user2")).Single();
+        await Assert.That(updated.Status).IsEqualTo("accepted");
+    }
+
+    // -----------------------------------------------------------------------
     // GetUserStatsAsync — per-size stats
     // -----------------------------------------------------------------------
 
@@ -1012,10 +1061,71 @@ public class LeaderboardStoreTests
     }
 
     [Test]
+    public async Task GetUserStatsAsync_ReturnsAchievementBadgesWithExpectedUnlockStates()
+    {
+        var today = GetSwedishDate();
+        var d0 = today.ToString("yyyy-MM-dd");
+        var d1 = today.AddDays(-1).ToString("yyyy-MM-dd");
+        var d2 = today.AddDays(-2).ToString("yyyy-MM-dd");
+
+        await _store.AppendHistoryAsync(d0, new HistoryRecord("A", 240.0, 100L, "h1", "10x10", 0, 0, "u1"));
+        await _store.AppendHistoryAsync(d1, new HistoryRecord("A", 360.0, 101L, "h2", "15x15", 1, 0, "u1"));
+        await _store.AppendHistoryAsync(d2, new HistoryRecord("A", 420.0, 102L, "h3", "17x17", 2, 1, "u1"));
+
+        var stats = await _store.GetUserStatsAsync("u1");
+
+        await Assert.That(stats.Badges).IsNotNull();
+        await Assert.That(stats.Badges!.Count).IsEqualTo(6);
+
+        var byId = stats.Badges.ToDictionary(b => b.Id, b => b.Unlocked);
+        await Assert.That(byId["first-solve"]).IsTrue();
+        await Assert.That(byId["clean-solve"]).IsTrue();
+        await Assert.That(byId["speed-run"]).IsTrue();
+        await Assert.That(byId["streak-3"]).IsTrue();
+        await Assert.That(byId["size-explorer"]).IsTrue();
+        await Assert.That(byId["streak-7"]).IsFalse();
+    }
+
+    [Test]
+    public async Task GetUserStatsAsync_EmptyHistory_ReturnsLockedAchievementBadges()
+    {
+        var stats = await _store.GetUserStatsAsync("nonexistent");
+
+        await Assert.That(stats.Badges).IsNotNull();
+        await Assert.That(stats.Badges!.Count).IsEqualTo(6);
+        await Assert.That(stats.Badges.Any(b => b.Unlocked)).IsFalse();
+    }
+
+    [Test]
     public async Task GetUserStatsAsync_EmptyHistory_ReturnsZeros()
     {
         var stats = await _store.GetUserStatsAsync("nonexistent");
         await Assert.That(stats.TotalSolved).IsEqualTo(0);
         await Assert.That(stats.PerSize).IsNull();
+    }
+
+    private static LeaderboardStore CreateStore(string dataDir)
+    {
+        var config = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["Storage:LeaderboardPath"] = dataDir
+            })
+            .Build();
+        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System, new TestHostEnvironment());
+    }
+
+    private static DateOnly GetSwedishDate()
+    {
+        var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
+        return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
+    }
+
+    private sealed class TestHostEnvironment : IHostEnvironment
+    {
+        public string EnvironmentName { get; set; } = Environments.Development;
+        public string ApplicationName { get; set; } = "Tests";
+        public string ContentRootPath { get; set; } = AppContext.BaseDirectory;
+        public IFileProvider ContentRootFileProvider { get; set; } = new NullFileProvider();
     }
 }

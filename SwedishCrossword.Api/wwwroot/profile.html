@@ -2,7 +2,7 @@
 <html lang="sv">
 <head>
     <!-- Google AdSense: loading is gated by cookie-consent.js. Signed-in users see no ads; signed-out users see personalized ads after "Acceptera alla" or non-personalized (NPA) ads after "Endast nödvändiga". -->
-    <script type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
+    <script nonce="__CSP_NONCE__" type="text/plain" data-consent-category="ads" data-consent-src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4967624066496288" data-consent-async="true" data-consent-crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-4967624066496288">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/site.min.css">
 
     <link rel="stylesheet" href="/tokens.css">
-    <style>
+    <style nonce="__CSP_NONCE__">
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -100,6 +100,20 @@
         .recent-date { font-weight: 600; }
         .recent-time { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
         .recent-meta { color: var(--text-muted); font-size: 0.85rem; }
+
+        .achievement-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px,100%), 1fr));
+            gap: 12px; margin: 16px 0;
+        }
+        .achievement-card {
+            background: var(--surface-bg); border: 1px solid var(--border); border-radius: 10px;
+            padding: 12px; display: flex; gap: 10px; align-items: flex-start;
+        }
+        .achievement-card.locked { opacity: 0.65; }
+        .achievement-icon { font-size: 1.35rem; line-height: 1.2; }
+        .achievement-title { color: var(--text-heading); font-size: 0.95rem; font-weight: 700; margin-bottom: 2px; }
+        .achievement-desc { color: var(--text-muted); font-size: 0.85rem; line-height: 1.35; }
+        .achievement-state { color: var(--accent); font-size: 0.8rem; margin-top: 4px; display: block; }
 
         .size-group { background: var(--surface-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; min-width: 0; }
         .size-group h3 { color: var(--text-heading); font-size: 1.1rem; margin-bottom: 12px; }
@@ -184,7 +198,7 @@
         </footer>
     </div>
 
-<script>
+<script nonce="__CSP_NONCE__">
 (function(){
     var s=localStorage.getItem('crossword-theme'),p=window.matchMedia('(prefers-color-scheme:dark)').matches,t=s||(p?'dark':'light');
     document.documentElement.setAttribute('data-theme',t);
@@ -304,6 +318,23 @@ async function renderProfile(el, user) {
                     });
                     statsHtml += '</ul>';
                 }
+
+                if (stats.badges && stats.badges.length > 0) {
+                    statsHtml += '<h2>🏅 Prestationer</h2><div class="achievement-grid">';
+                    stats.badges.forEach(function(badge) {
+                        var unlocked = !!badge.unlocked;
+                        statsHtml +=
+                            '<div class="achievement-card' + (unlocked ? '' : ' locked') + '">' +
+                                '<span class="achievement-icon" aria-hidden="true">' + escapeHtml(badge.icon || '🏅') + '</span>' +
+                                '<div>' +
+                                    '<div class="achievement-title">' + escapeHtml(badge.name || 'Prestation') + '</div>' +
+                                    '<div class="achievement-desc">' + escapeHtml(badge.description || '') + '</div>' +
+                                    '<span class="achievement-state">' + (unlocked ? 'Upplåst' : 'Låst') + '</span>' +
+                                '</div>' +
+                            '</div>';
+                    });
+                    statsHtml += '</div>';
+                }
             } else {
                 statsHtml = '<h2>📊 Statistik</h2><p class="empty-state">Du har inga sparade resultat ännu. Lös ett korsord medan du är inloggad!</p>';
             }
@@ -326,6 +357,9 @@ async function renderProfile(el, user) {
             '<p id="friend-status" role="status" style="font-size:0.85rem;margin-top:2px;margin-bottom:12px;"></p>' +
             '<div id="friend-requests-section"></div>' +
             '<div id="friend-list-section"></div>' +
+            '<h3 style="color:var(--text-heading);font-size:1rem;margin-top:20px;margin-bottom:8px;">⚔️ Vänutmaningar</h3>' +
+            '<p id="challenge-status" role="status" style="font-size:0.85rem;margin-top:2px;margin-bottom:10px;color:var(--text-muted);"></p>' +
+            '<div id="challenge-list-section"></div>' +
         '</div>' +
         '<div>' +
             '<h2>🔒 Dina uppgifter (GDPR)</h2>' +
@@ -440,20 +474,30 @@ async function loadFriends() {
         var friends = await res.json();
         if (friends.length === 0) {
             el.innerHTML = '<p class="empty-state">Inga vänner ännu. Sök på alias ovan!</p>';
+            loadChallenges();
             return;
         }
         var html = '<h3 style="color:var(--text-heading);font-size:1rem;margin-bottom:8px;">Vänlista</h3><ul class="friend-list" role="list">';
         friends.forEach(function(f) {
             html += '<li><span>' + escapeHtml(f.alias) + '</span>' +
-                '<div class="friend-actions"><button class="friend-btn friend-btn-danger" data-fid="' + escapeAttr(f.friendId) + '" data-alias="' + escapeAttr(f.alias) + '">Ta bort</button></div></li>';
+                '<div class="friend-actions">' +
+                '<button class="friend-btn" data-action="challenge" data-fid="' + escapeAttr(f.friendId) + '" data-alias="' + escapeAttr(f.alias) + '">Utmana</button>' +
+                '<button class="friend-btn friend-btn-danger" data-action="remove" data-fid="' + escapeAttr(f.friendId) + '" data-alias="' + escapeAttr(f.alias) + '">Ta bort</button>' +
+                '</div></li>';
         });
         html += '</ul>';
         el.innerHTML = html;
-        el.querySelectorAll('.friend-btn-danger').forEach(function(btn) {
+        el.querySelectorAll('[data-action="remove"]').forEach(function(btn) {
             btn.addEventListener('click', function() {
                 removeFriend(this.getAttribute('data-fid'), this.getAttribute('data-alias'));
             });
         });
+        el.querySelectorAll('[data-action="challenge"]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                sendChallenge(this.getAttribute('data-fid'), this.getAttribute('data-alias'));
+            });
+        });
+        loadChallenges();
     } catch (e) { console.warn('Failed to load friends:', e); }
 }
 
@@ -488,6 +532,121 @@ async function loadFriendRequests() {
         });
         loadFriends();
     } catch (e) { console.warn('Failed to load requests:', e); loadFriends(); }
+}
+
+function getTodayIsoDate() {
+    var now = new Date();
+    var y = now.getFullYear();
+    var m = String(now.getMonth() + 1).padStart(2, '0');
+    var d = String(now.getDate()).padStart(2, '0');
+    return y + '-' + m + '-' + d;
+}
+
+async function sendChallenge(friendshipId, alias) {
+    var status = document.getElementById('challenge-status');
+    if (!status) return;
+    status.style.color = 'var(--text-muted)';
+    status.textContent = 'Skickar utmaning till ' + alias + '...';
+    try {
+        var res = await fetch('/api/friends/challenges', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin',
+            signal: AbortSignal.timeout(10000),
+            body: JSON.stringify({ friendId: friendshipId, date: getTodayIsoDate() })
+        });
+        var data = await res.json().catch(function() { return {}; });
+        if (res.ok) {
+            status.style.color = '#22c55e';
+            status.textContent = '✓ Utmaning skickad till ' + alias + '!';
+            loadChallenges();
+        } else {
+            status.style.color = '#dc2626';
+            status.textContent = data.error || 'Kunde inte skicka utmaning.';
+        }
+    } catch (e) {
+        status.style.color = '#dc2626';
+        status.textContent = 'Nätverksfel. Försök igen.';
+    }
+}
+
+async function loadChallenges() {
+    var el = document.getElementById('challenge-list-section');
+    if (!el) return;
+
+    try {
+        var res = await fetch('/api/friends/challenges', { credentials: 'same-origin', signal: AbortSignal.timeout(10000) });
+        if (!res.ok) { el.innerHTML = '<p class="empty-state">Kunde inte ladda utmaningar.</p>'; return; }
+
+        var challenges = await res.json();
+        if (!Array.isArray(challenges) || challenges.length === 0) {
+            el.innerHTML = '<p class="empty-state">Inga vänutmaningar ännu.</p>';
+            return;
+        }
+
+        var html = '<ul class="friend-list" role="list">';
+        challenges.forEach(function(c) {
+            var dirText = c.direction === 'incoming' ? 'Från' : 'Till';
+            var statusLabel = c.status === 'pending' ? 'Väntar' : (c.status === 'accepted' ? 'Accepterad' : 'Avböjd');
+            html += '<li><span>' + dirText + ': <strong>' + escapeHtml(c.friendAlias || 'Okänd') + '</strong> · ' + escapeHtml(c.date || '') + ' · ' + statusLabel + '</span>';
+            if (c.direction === 'incoming' && c.status === 'pending') {
+                html += '<div class="friend-actions">' +
+                    '<button class="friend-btn friend-btn-accept" data-action="challenge-accept" data-id="' + escapeAttr(c.id) + '">Acceptera</button>' +
+                    '<button class="friend-btn friend-btn-danger" data-action="challenge-decline" data-id="' + escapeAttr(c.id) + '">Avböj</button>' +
+                    '</div>';
+            }
+            html += '</li>';
+        });
+        html += '</ul>';
+        el.innerHTML = html;
+
+        el.querySelectorAll('[data-action="challenge-accept"]').forEach(function(btn) {
+            btn.addEventListener('click', function() { respondChallenge(this.getAttribute('data-id'), true); });
+        });
+        el.querySelectorAll('[data-action="challenge-decline"]').forEach(function(btn) {
+            btn.addEventListener('click', function() { respondChallenge(this.getAttribute('data-id'), false); });
+        });
+    } catch (e) {
+        console.warn('Failed to load challenges:', e);
+        el.innerHTML = '<p class="empty-state">Kunde inte ladda utmaningar.</p>';
+    }
+}
+
+async function respondChallenge(challengeId, accepted) {
+    var status = document.getElementById('challenge-status');
+    if (status) {
+        status.style.color = 'var(--text-muted)';
+        status.textContent = accepted ? 'Acceptera utmaning...' : 'Avböjer utmaning...';
+    }
+
+    try {
+        var res = await fetch('/api/friends/challenges/' + encodeURIComponent(challengeId) + '/respond', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'same-origin',
+            signal: AbortSignal.timeout(10000),
+            body: JSON.stringify({ accepted: accepted })
+        });
+
+        if (res.ok) {
+            if (status) {
+                status.style.color = '#22c55e';
+                status.textContent = accepted ? '✓ Utmaning accepterad!' : '✓ Utmaning avböjd.';
+            }
+            loadChallenges();
+        } else {
+            var data = await res.json().catch(function() { return {}; });
+            if (status) {
+                status.style.color = '#dc2626';
+                status.textContent = data.error || 'Kunde inte svara på utmaning.';
+            }
+        }
+    } catch (e) {
+        if (status) {
+            status.style.color = '#dc2626';
+            status.textContent = 'Nätverksfel. Försök igen.';
+        }
+    }
 }
 
 async function acceptRequest(id) {
@@ -538,7 +697,7 @@ async function exportMyData() {
 }
 
 async function deleteMyAccount() {
-    if (!confirm('Är du säker på att du vill radera ditt konto?\n\nDetta anonymiserar alla dina poäng och historik, tar bort ditt alias och alla vänrelationer, och loggar ut dig.\n\nÅtgärden kan INTE ångras.')) return;
+    if (!confirm('ÄR DU SÄKER PÅ ATT DU VILL RADERA DITT KONTO?\n\nDetta anonymiserar alla dina poäng och historik, tar bort ditt alias och alla vänrelationer, och loggar ut dig.\n\nÅtgärden kan INTE ångras.')) return;
     if (!confirm('Sista chansen — vill du verkligen radera allt?')) return;
     var status = document.getElementById('gdpr-status');
     status.style.color = 'var(--text-muted)';
@@ -559,7 +718,7 @@ async function deleteMyAccount() {
     }
 }
 </script>
-<script src="/cookie-consent.js" defer></script>
-<script>if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
+<script nonce="__CSP_NONCE__" src="/cookie-consent.js" defer></script>
+<script nonce="__CSP_NONCE__">if('serviceWorker' in navigator)navigator.serviceWorker.getRegistrations().then(function(regs){regs.forEach(function(r){r.unregister()})});caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})});</script>
 </body>
 </html>

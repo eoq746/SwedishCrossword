@@ -143,10 +143,10 @@ sealed class SubmissionTokenService
     }
 
     /// <summary>
-    /// Validates a submission token for puzzle access (HMAC + expiry only).
-    /// Does not check puzzle hash match or solve time — used for check/hint endpoints.
+    /// Validates a submission token for puzzle access (HMAC + expiry).
+    /// Optionally verifies expected puzzle hash/date to prevent cross-puzzle replay.
     /// </summary>
-    public TokenValidationResult ValidateAccess(string token)
+    public TokenValidationResult ValidateAccess(string token, string? expectedPuzzleHash = null, string? expectedPuzzleDate = null)
     {
         try
         {
@@ -169,6 +169,12 @@ sealed class SubmissionTokenService
                 Encoding.UTF8.GetBytes(providedHmac),
                 Encoding.UTF8.GetBytes(expectedHmac)))
                 return TokenValidationResult.Fail("Token signature invalid");
+
+            if (!string.IsNullOrEmpty(expectedPuzzleHash) && puzzleHash != expectedPuzzleHash)
+                return TokenValidationResult.Fail("Puzzle hash mismatch");
+
+            if (!string.IsNullOrEmpty(expectedPuzzleDate) && puzzleDate != expectedPuzzleDate)
+                return TokenValidationResult.Fail("Puzzle date mismatch");
 
             var age = _timeProvider.GetUtcNow() - DateTimeOffset.FromUnixTimeSeconds(issuedAt);
             if (age < TimeSpan.Zero || age > TokenLifetime)
