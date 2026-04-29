@@ -16,12 +16,19 @@
   --bg-card: #ffffff;
   --bg-card-alt: #f9fafb;
   --bg-overlay: rgba(0, 0, 0, .45);
-  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow: rgba(0, 0, 0, 0.12);
+  --shadow-md: rgba(0, 0, 0, 0.16);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.18);
 
-  /* Text */
+  /* Text — light mode
+     Contrast on #ffffff / #f9fafb:
+       text-primary  #0f172a  → 18.1:1 / 17.4:1  ✓ AAA
+       text-secondary #334155 → 10.7:1 / 10.3:1  ✓ AAA
+       text-muted    #566578  →  6.3:1 /  6.1:1  ✓ AA (safe at 0.7rem+)
+  */
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-secondary: #334155;
+  --text-muted: #566578;
   --text-on-brand: #ffffff;
 
   /* Borders */
@@ -31,18 +38,40 @@
   /* Feedback */
   --success-bg: #dcfce7;
   --success-border: #16a34a;
+  --success-text: #15803d;
+  --error-bg: #fee2e2;
+  --error-border: #dc2626;
+  --error-text: #b91c1c;
   --info-bg: #e0e7ff;
   --warn-bg: #fef3c7;
-  --warn-border: #f59e0b;
+  --warn-border: #d97706;
+  --warn-text: #b45309;
 
   /* Buttons */
   --btn-secondary-bg: #e2e8f0;
   --btn-secondary-text: #334155;
 
+  /* Radius scale */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-base: 0.18s ease;
+  --transition-fast: 0.12s ease;
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(79, 70, 229, 0.35);
+  --focus-ring-offset: 2px;
+
   /* Aliases used by info/standalone pages */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
+  --surface-hover: #f1f5f9;
+  --surface-raised: #ffffff;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);
@@ -61,12 +90,19 @@
   --bg-card: #1e1e2e;
   --bg-card-alt: #262637;
   --bg-overlay: rgba(0, 0, 0, .65);
-  --shadow: rgba(0, 0, 0, 0.5);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --shadow-md: rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
 
-  /* Text */
+  /* Text — dark mode
+     Contrast on #1e1e2e / #262637:
+       text-primary  #e2e8f0  → 12.5:1 / 11.8:1  ✓ AAA
+       text-secondary #b0bcd4 →  8.0:1 /  7.6:1  ✓ AAA
+       text-muted    #7a93ae  →  5.1:1 /  4.9:1  ✓ AA  — visibly different from secondary
+  */
   --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --text-muted: #94a3b8;
+  --text-secondary: #b0bcd4;
+  --text-muted: #7a93ae;
   --text-on-brand: #e2e8f0;
 
   /* Borders */
@@ -74,20 +110,30 @@
   --border-medium: #475569;
 
   /* Feedback */
-  --success-bg: rgba(22, 163, 74, 0.1);
-  --success-border: #16a34a;
-  --info-bg: rgba(129, 140, 248, 0.1);
+  --success-bg: rgba(22, 163, 74, 0.12);
+  --success-border: #22c55e;
+  --success-text: #4ade80;
+  --error-bg: rgba(220, 38, 38, 0.12);
+  --error-border: #ef4444;
+  --error-text: #f87171;
+  --info-bg: rgba(129, 140, 248, 0.12);
   --warn-bg: rgba(245, 158, 11, 0.12);
-  --warn-border: #d97706;
+  --warn-border: #f59e0b;
+  --warn-text: #fbbf24;
 
   /* Buttons */
   --btn-secondary-bg: #334155;
   --btn-secondary-text: #e2e8f0;
 
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(129, 140, 248, 0.4);
+
   /* Aliases */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
+  --surface-hover: #2d2d42;
+  --surface-raised: #2a2a3d;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);

@@ -1,0 +1,42 @@
+/*
+ * React app-specific global styles.
+ * Legacy shared styles (tokens.css, site.min.css) are linked in index.html
+ * and served as static files from wwwroot so PostCSS doesn't attempt to
+ * resolve them at build time.
+ */
+
+/* Ensure the React root fills the viewport the same way the legacy pages do */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ * Main content card.
+ * The body has the brand gradient as background. The nav and footer float on
+ * that gradient (white text). The <main> element gets a card background so
+ * every page's headings, paragraphs, and sections render on a proper surface
+ * with sufficient contrast for dark text — matching the game page's
+ * .site-container treatment for the React context.
+ *
+ * Scope with #root so this never affects the legacy game page (puzzle.html
+ * does not mount inside #root).
+ */
+#root main {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg, 16px);
+  padding: 28px 24px 32px;
+  box-shadow: 0 4px 32px var(--shadow-md, rgba(0, 0, 0, 0.3));
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  flex: 1;
+  /* Sit slightly below the gradient nav */
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  #root main {
+    padding: 18px 14px 24px;
+    border-radius: var(--radius-md, 10px);
+  }
+}

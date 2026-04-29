@@ -40,10 +40,14 @@
   --hint-bg:#fef3c7;
   --hint-text:#92400e;
 
-  /* Text */
+  /* Text — light mode
+       text-primary  #0f172a  ? 18:1 on white  ? AAA
+       text-secondary #475569 ?  7.2:1          ? AA
+       text-muted    #566578  ?  6.1:1 on #f9fafb ? AA (safe at 0.7rem+)
+  */
   --text-primary:#0f172a;
   --text-secondary:#475569;
-  --text-muted:#64748b;
+  --text-muted:#566578;
   --text-on-brand:#ffffff;
 
   /* Borders & dividers */
@@ -129,9 +133,16 @@
   --hint-bg:#422006;
   --hint-text:#fde68a;
 
+  /* Text — dark mode
+       text-primary  #e2e8f0  ? 12.5:1 on #1e1e2e  ? AAA
+       text-secondary #b0bcd4 ?  8.0:1              ? AAA — clear body text
+       text-muted    #7a93ae  ?  5.1:1              ? AA  — visibly subordinate
+     Both values are now distinct, restoring visual hierarchy
+     (was: both #94a3b8, no differentiation).
+  */
   --text-primary:#e2e8f0;
-  --text-secondary:#94a3b8;
-  --text-muted:#94a3b8;
+  --text-secondary:#b0bcd4;
+  --text-muted:#7a93ae;
   --text-on-brand:#e2e8f0;
 
   --border-light:#334155;
@@ -152,7 +163,7 @@
 
   --modal-bg:#1e1e2e;
   --modal-title:#e2e8f0;
-  --modal-text:#94a3b8;
+  --modal-text:#b0bcd4;
   --modal-input-border:#475569;
   --modal-shadow:rgba(0,0,0,.5);
 
@@ -183,6 +194,42 @@
 /* Reset */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
+
+/* Base list typography – applies to all prose content in both legacy and React pages */
+.container main ul,
+.container main ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+.container main li { margin-bottom: 0.5rem; line-height: 1.6; color: var(--text-body); }
+
+/* Base prose headings – shared between legacy HTML pages and the React SPA */
+.container main h1 {
+  color: var(--text-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.container main h2 {
+  color: var(--text-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent-color);
+}
+.container main h3 {
+  color: var(--accent-color);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  border-left: 3px solid var(--border-medium);
+}
+@media (max-width: 600px) {
+  .container main h1 { font-size: 1.5rem; }
+  .container main h2 { font-size: 1.1rem; margin-top: 28px; }
+  .container main h3 { font-size: 0.98rem; }
+}
 
 /* Focus-visible for all interactive elements */
 button:focus-visible,
@@ -513,7 +560,7 @@ header p{font-size:.95rem}
 .puzzle-nav a:hover{opacity:1;text-decoration:underline}
 
 /* Auth buttons */
-.auth-btn-container{display:flex;align-items:center;gap:6px;position:relative}
+.auth-btn-container{display:flex;align-items:center;gap=6px;position:relative}
 .auth-btn{background:rgba(0,0,0,.2);color:var(--text-on-brand);border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:500;white-space:nowrap;transition:background .15s,transform .1s}
 .auth-btn:hover{background:rgba(255,255,255,.28)}
 .auth-btn:active{transform:scale(.97)}
@@ -910,7 +957,6 @@ header p{font-size:.95rem}
 
   /* Reduce footer footprint */
   .site-footer{font-size:.75rem;padding:8px}
-  .site-footer nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px}
 }
 
 /* Landscape support for narrow viewports (e.g., phones rotated) */
@@ -941,7 +987,7 @@ header p{font-size:.95rem}
   .clues-section { order: 2; display: flex; flex-direction: column; max-height: 100%; overflow: hidden; padding: 8px; width: 100%; }
   .clues-columns { flex-direction: row; gap: 8px; }
   .clue-column { flex: 1 1 50%; min-width: 0; min-height: 0; }
-  .clue-direction { flex: 1 1 auto; min-height: 0; overflow: hidden; }
+  .clue-direction { min-height: 0; flex: 1 1 auto; display: flex; flex-direction: column; overflow: hidden; }
   .clue-list { max-height: calc(var(--available-height) - 120px); overflow: auto; -webkit-overflow-scrolling: touch; }
 
   /* Hide leaderboard and stats by default in landscape; show when toggled */

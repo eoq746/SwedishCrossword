@@ -27,4 +27,8 @@
     <ProjectReference Include="..\SwedishCrossword.Core\SwedishCrossword.Core.csproj" />
   </ItemGroup>
 
+  <Target Name="BuildFrontend" BeforeTargets="Build">
+    <Exec Command="npm run build" WorkingDirectory="$(MSBuildProjectDirectory)\..\frontend" />
+  </Target>
+
 </Project>

@@ -1,0 +1,182 @@
+import { useEffect, useRef, useState } from 'react';
+import { fetchPuzzleDates, type DateSizeMap } from '../api/calendar';
+import { usePageTitle } from '../hooks/usePageTitle';
+import '../styles/static-pages.css';
+
+const MONTHS_SV = [
+  'Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni',
+  'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December',
+];
+const SIZES = ['10x10', '15x15', '17x17'] as const;
+type PuzzleSize = typeof SIZES[number];
+
+function pad(n: number) {
+  return n < 10 ? `0${n}` : `${n}`;
+}
+
+function toDateStr(year: number, month: number, day: number) {
+  return `${year}-${pad(month + 1)}-${pad(day)}`;
+}
+
+function getSizeFromHash(): PuzzleSize {
+  const h = window.location.hash.replace('#', '');
+  return (SIZES as readonly string[]).includes(h) ? (h as PuzzleSize) : '17x17';
+}
+
+export default function CalendarPage() {
+  usePageTitle('Korsord-arkiv – Svenskt Korsord');
+
+  const today = useRef(new Date());
+  const todayStr = today.current.toISOString().split('T')[0];
+
+  const [year, setYear] = useState(today.current.getFullYear());
+  const [month, setMonth] = useState(today.current.getMonth());
+  const [selectedSize, setSelectedSize] = useState<PuzzleSize>(getSizeFromHash);
+  const [dateSizeMap, setDateSizeMap] = useState<DateSizeMap>({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetchPuzzleDates()
+      .then(setDateSizeMap)
+      .catch(() => setError('Kunde inte ladda tillgängliga datum.'))
+      .finally(() => setLoading(false));
+  }, []);
+
+  function selectSize(size: PuzzleSize) {
+    setSelectedSize(size);
+    window.location.hash = size;
+  }
+
+  function prevMonth() {
+    if (month === 0) { setYear(y => y - 1); setMonth(11); }
+    else setMonth(m => m - 1);
+  }
+
+  function nextMonth() {
+    const t = today.current;
+    if (year === t.getFullYear() && month >= t.getMonth()) return;
+    if (month === 11) { setYear(y => y + 1); setMonth(0); }
+    else setMonth(m => m + 1);
+  }
+
+  const isCurrentMonth =
+    year === today.current.getFullYear() && month >= today.current.getMonth();
+
+  // Build the grid cells
+  const cells: React.ReactNode[] = [];
+  const firstDow = new Date(year, month, 1).getDay();
+  // Monday-first: JS Sunday=0 → index 6, Mon=1 → index 0
+  const startOffset = (firstDow + 6) % 7;
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  for (let i = 0; i < startOffset; i++) {
+    cells.push(<div key={`e${i}`} className="calendar-cell calendar-empty" />);
+  }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = toDateStr(year, month, day);
+    const isToday = dateStr === todayStr;
+    const sizes = dateSizeMap[dateStr] ?? [];
+    const hasSelectedSize = sizes.includes(selectedSize);
+    const hasAnySize = sizes.length > 0;
+    const isFuture = new Date(year, month, day) > today.current;
+
+    let cellClass = 'calendar-cell';
+    if (isToday) cellClass += ' calendar-today';
+
+    if (isToday || hasSelectedSize) {
+      cellClass += ' calendar-available';
+      const href = isToday
+        ? `/puzzle.html?size=${selectedSize}`
+        : `/puzzle.html?date=${dateStr}&size=${selectedSize}`;
+      cells.push(
+        <div key={dateStr} className={cellClass}>
+          <a
+            href={href}
+            className="calendar-link"
+            aria-label={`Spela ${selectedSize} korsord för ${dateStr}`}
+          >
+            {day}
+          </a>
+        </div>
+      );
+    } else if (isFuture) {
+      cells.push(
+        <div key={dateStr} className={cellClass + ' calendar-future'}>{day}</div>
+      );
+    } else if (hasAnySize) {
+      // Has puzzles but not for the selected size — dim, not linked
+      cells.push(
+        <div key={dateStr} className={cellClass + ' calendar-other-size'} title={`Tillgänglig i: ${sizes.join(', ')}`}>{day}</div>
+      );
+    } else {
+      cells.push(
+        <div key={dateStr} className={cellClass + ' calendar-unavailable'}>{day}</div>
+      );
+    }
+  }
+
+  return (
+    <div className="page-content">
+      <h1>Korsord-arkiv</h1>
+      <p className="tagline">Välj ett datum för att spela ett tidigare korsord</p>
+
+      <div className="size-tabs" role="group" aria-label="Välj storlek">
+        {SIZES.map(s => (
+          <button
+            key={s}
+            className={`size-tab${selectedSize === s ? ' active' : ''}`}
+            onClick={() => selectSize(s)}
+            aria-pressed={selectedSize === s}
+          >
+            {s.replace('x', '×')}
+          </button>
+        ))}
+      </div>
+
+      {error && <div className="leaderboard-error">{error}</div>}
+
+      <section className="calendar-section">
+        <div className="calendar-header">
+          <button
+            className="calendar-nav-btn"
+            onClick={prevMonth}
+            aria-label="Föregående månad"
+          >
+            ←
+          </button>
+          <h2 className="calendar-title">{MONTHS_SV[month]} {year}</h2>
+          <button
+            className="calendar-nav-btn"
+            onClick={nextMonth}
+            disabled={isCurrentMonth}
+            aria-label="Nästa månad"
+          >
+            →
+          </button>
+        </div>
+
+        {loading ? (
+          <div className="leaderboard-loading">Laddar kalender…</div>
+        ) : (
+          <div className="calendar-grid">
+            {['Mån', 'Tis', 'Ons', 'Tor', 'Fre', 'Lör', 'Sön'].map(d => (
+              <div key={d} className="calendar-day-header">{d}</div>
+            ))}
+            {cells}
+          </div>
+        )}
+
+        <div className="calendar-legend">
+          <span className="legend-item">
+            <span className="legend-dot legend-available" /> Korsord tillgängligt
+          </span>
+          <span className="legend-item">
+            <span className="legend-dot legend-today" /> Idag
+          </span>
+        </div>
+      </section>
+    </div>
+  );
+}

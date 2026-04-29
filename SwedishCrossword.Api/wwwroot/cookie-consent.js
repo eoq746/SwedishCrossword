@@ -240,6 +240,12 @@
     (function injectAdHidingStyles() {
         try {
             var style = document.createElement('style');
+            // Stamp the per-request CSP nonce so style-src-elem allows this element.
+            // window.__cspNonce__ is injected by the server into every HTML response.
+            var cspNonce = (typeof window.__cspNonce__ === 'string') ? window.__cspNonce__ : '';
+            if (cspNonce) {
+                style.setAttribute('nonce', cspNonce);
+            }
             style.textContent =
                 'html.user-signed-in .adsbygoogle,' +
                 'html.user-signed-in [data-ad-client],' +
