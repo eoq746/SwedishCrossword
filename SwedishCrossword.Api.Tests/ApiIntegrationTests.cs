@@ -132,6 +132,11 @@ public class ApiIntegrationTests : IAsyncDisposable
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
         await Assert.That(puzzle.TryGetProperty("submissionToken", out _)).IsTrue();
         await Assert.That(puzzle.TryGetProperty("puzzleHash", out _)).IsTrue();
+        await Assert.That(puzzle.TryGetProperty("cells", out var cells)).IsTrue();
+        await Assert.That(cells[0][0].TryGetProperty("letter", out _)).IsFalse();
+        await Assert.That(puzzle.TryGetProperty("clues", out var clues)).IsTrue();
+        await Assert.That(clues.GetProperty("across")[0].TryGetProperty("answer", out _)).IsFalse();
+        await Assert.That(clues.GetProperty("down")[0].TryGetProperty("answer", out _)).IsFalse();
     }
 
     [Test]

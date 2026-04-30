@@ -18,7 +18,19 @@ export default function Layout({ children }: LayoutProps) {
   const [loginOpen, setLoginOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const loginRef = useRef<HTMLDivElement>(null);
-  const returnUrl = encodeURIComponent(typeof window !== 'undefined' ? window.location.pathname : '/');
+  const rawReturnUrl = typeof window !== 'undefined'
+    ? `${window.location.pathname}${window.location.search}${window.location.hash}`
+    : '/app/';
+  const returnUrl = encodeURIComponent(rawReturnUrl.startsWith('/app') ? rawReturnUrl : '/app/');
+
+  async function handleLogout() {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' });
+    } catch {
+      // ignore and still return to the app shell
+    }
+    window.location.href = '/app/';
+  }
 
   // Close login dropdown on outside click
   useEffect(() => {
@@ -78,7 +90,7 @@ export default function Layout({ children }: LayoutProps) {
           {/* Right actions */}
           <div className="nav-actions">
             {user ? (
-              <a href="/api/auth/logout">Logga ut</a>
+              <button type="button" className="auth-btn" onClick={() => void handleLogout()}>Logga ut</button>
             ) : (
               <div className="login-dropdown-wrap" ref={loginRef}>
                 <button

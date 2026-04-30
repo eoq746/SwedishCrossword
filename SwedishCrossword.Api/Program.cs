@@ -327,6 +327,23 @@ static string? TryResolveHtmlFilePath(string webRootPath, PathString path)
     return File.Exists(candidate) ? candidate : null;
 }
 
+static string? TryGetReactAppRedirectTarget(PathString path)
+{
+    return path.Value switch
+    {
+        "/" or "/index.html" => "/app/",
+        "/puzzle.html" => "/app/puzzle",
+        "/leaderboard.html" => "/app/leaderboard",
+        "/calendar.html" => "/app/calendar",
+        "/profile.html" => "/app/profile",
+        "/admin.html" => "/app/admin",
+        "/about.html" => "/app/about",
+        "/contact.html" => "/app/contact",
+        "/privacy-policy.html" => "/app/privacy-policy",
+        _ => null
+    };
+}
+
 var isProduction = !app.Environment.IsDevelopment();
 
 // Security headers — registered BEFORE OutputCache so cached responses include them.
@@ -419,6 +436,13 @@ app.Use(async (context, next) =>
     if (!HttpMethods.IsGet(context.Request.Method) && !HttpMethods.IsHead(context.Request.Method))
     {
         await next();
+        return;
+    }
+
+    var reactRedirectTarget = TryGetReactAppRedirectTarget(context.Request.Path);
+    if (reactRedirectTarget is not null)
+    {
+        context.Response.Redirect($"{reactRedirectTarget}{context.Request.QueryString}", permanent: false);
         return;
     }
 

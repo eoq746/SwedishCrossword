@@ -1,3 +1,5 @@
+@import url('/tokens.css');
+
 /* Cleaned mobile-first stylesheet for SwedishCrossword
    - Single consolidated @media (max-width:1100px) block for mobile rules
    - No duplicate selector definitions or conflicting body paddings
@@ -5,190 +7,117 @@
    - Grid is centered and scrolls internally if wider than container
 */
 
-/* ?? Design tokens ?? */
+/* Puzzle-specific tokens derived from the shared design system */
 :root{
-  /* Brand */
-  --brand-gradient:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);
-  --accent-color:#4f46e5;
-  --accent-hover:#4338ca;
-  --accent-light:#e0e7ff;
-
-  /* Surfaces */
-  --bg-body:var(--brand-gradient);
-  --bg-card:#ffffff;
-  --bg-card-alt:#f9fafb;
-  --bg-section:rgba(0,0,0,0.12);
-  --bg-overlay:rgba(0,0,0,.45);
+  --bg-section:rgba(15,23,42,.12);
 
   /* Grid */
-  --border-color:#334155;
+  --border-color:#000;
   --blocked-color:#1e293b;
-  --cell-bg:#ffffff;
-  --cell-border:#e2e8f0;
-  --number-color:#475569;
-  --letter-color:#0f172a;
-  --highlight-color:#fef9c3;
-  --word-highlight:#e0e7ff;
+  --cell-bg:var(--card-bg);
+  --cell-border:#000;
+  --number-color:var(--text-muted);
+  --letter-color:var(--text-heading);
+  --highlight-color:color-mix(in srgb,var(--warn-bg) 72%,var(--card-bg));
+  --word-highlight:var(--puzzle-word-highlight);
 
   /* Feedback */
-  --correct-bg:#dcfce7;
-  --correct-text:#166534;
-  --incorrect-bg:#fee2e2;
-  --incorrect-text:#991b1b;
-  --warning-bg:#fef08a;
-  --warning-pulse:#fde047;
-  --hint-bg:#fef3c7;
-  --hint-text:#92400e;
-
-  /* Text — light mode
-       text-primary  #0f172a  ? 18:1 on white  ? AAA
-       text-secondary #475569 ?  7.2:1          ? AA
-       text-muted    #566578  ?  6.1:1 on #f9fafb ? AA (safe at 0.7rem+)
-  */
-  --text-primary:#0f172a;
-  --text-secondary:#475569;
-  --text-muted:#566578;
-  --text-on-brand:#ffffff;
-
-  /* Borders & dividers */
-  --border-light:#e2e8f0;
-  --border-medium:#cbd5e1;
+  --correct-bg:var(--success-bg);
+  --correct-text:var(--success-text);
+  --incorrect-bg:var(--error-bg);
+  --incorrect-text:var(--error-text);
+  --warning-bg:var(--warn-bg);
+  --warning-pulse:color-mix(in srgb,var(--warn-border) 60%,#fff59d);
+  --hint-bg:var(--warn-bg);
+  --hint-text:var(--warn-text);
 
   /* Buttons */
-  --btn-secondary-bg:#e2e8f0;
-  --btn-secondary-text:#334155;
   --btn-success:#16a34a;
   --btn-danger:#ef4444;
-  --btn-share:#6366f1;
-  --btn-hint-bg:#fef3c7;
-  --btn-hint-text:#92400e;
-  --btn-hint-border:#f59e0b;
-
-  /* Leaderboard medals */
-  --medal-gold-from:#fef9c3;--medal-gold-to:#fde68a;--medal-gold-border:#fbbf24;--medal-gold-shadow:rgba(251,191,36,.35);
-  --medal-silver-from:#f1f5f9;--medal-silver-to:#e2e8f0;--medal-silver-border:#94a3b8;--medal-silver-shadow:rgba(148,163,184,.35);
-  --medal-bronze-from:#fff7ed;--medal-bronze-to:#fed7aa;--medal-bronze-border:#fb923c;--medal-bronze-shadow:rgba(249,115,22,.25);
+  --btn-share:var(--brand-primary);
+  --btn-hint-bg:var(--warn-bg);
+  --btn-hint-text:var(--warn-text);
+  --btn-hint-border:var(--warn-border);
 
   /* Modal */
-  --modal-bg:#ffffff;
-  --modal-title:#0f172a;
-  --modal-text:#475569;
-  --modal-input-border:#e2e8f0;
-  --modal-shadow:rgba(0,0,0,.25);
+  --modal-bg:var(--card-bg);
+  --modal-title:var(--text-heading);
+  --modal-text:var(--text-body);
+  --modal-input-border:var(--border);
+  --modal-shadow:rgba(15,23,42,.28);
 
   /* Calendar */
-  --cal-heading:var(--text-primary);
-  --cal-day-text:var(--text-secondary);
-  --cal-cell-bg:#f9fafb;
-  --cal-cell-text:var(--text-secondary);
+  --cal-heading:var(--text-heading);
+  --cal-day-text:var(--text-body);
+  --cal-cell-bg:var(--surface-bg);
+  --cal-cell-text:var(--text-body);
   --cal-unavailable:#94a3b8;
-  --cal-available-bg:#e0f2fe;
-  --cal-available-text:#1e40af;
-  --cal-available-border:#93c5fd;
-  --cal-available-hover-shadow:rgba(37,99,235,.25);
-  --cal-today-outline:#2563eb;
-  --cal-today-from:#dbeafe;
-  --cal-today-to:#bfdbfe;
+
+  /* Calendar layout and sizing (compact defaults to avoid oversized calendar) */
+  .calendar-section{max-width:820px;margin:0 auto;padding:12px;box-sizing:border-box}
+  .calendar-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+  #calendar-title{font-size:1.05rem;font-weight:700;color:var(--cal-heading);margin:0;text-align:center;flex:1}
+  .calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:start;max-width:100%;margin:0 auto}
+  .calendar-day-header{font-weight:700;text-align:center;padding:6px 4px;color:var(--cal-day-text);font-size:0.82rem}
+  .calendar-cell{background:var(--cal-cell-bg);color:var(--cal-cell-text);border-radius:8px;min-height:40px;display:flex;align-items:center;justify-content:center;padding:6px;font-size:0.95rem}
+  .calendar-cell.calendar-empty{background:transparent}
+  .calendar-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;text-decoration:none;color:inherit;padding:6px;border-radius:6px}
+  .calendar-available{border:1px solid color-mix(in srgb,var(--accent-color) 40%,transparent);background:color-mix(in srgb,var(--accent-color) 8%,var(--cal-cell-bg))}
+  .calendar-today{border:2px solid var(--accent-color);box-shadow:0 2px 6px color-mix(in srgb,var(--accent-color) 10%,transparent)}
+  .calendar-unavailable{opacity:0.6}
+  .calendar-future{opacity:0.4}
+  .calendar-legend{display:flex;justify-content:center;gap:12px;margin-top:10px;flex-wrap:wrap;font-size:0.9rem}
+  .legend-item{display:inline-flex;align-items:center;gap:6px}
+  .legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .legend-available{background:var(--accent-color)}
+  .legend-today{background:var(--timer-bg);border:1px solid var(--accent-color)}
+
+  @media (max-width: 600px){
+    .calendar-section{padding:8px}
+    .calendar-grid{gap:6px}
+    .calendar-cell{min-height:34px;font-size:0.85rem;padding:4px}
+    .calendar-day-header{font-size:0.78rem;padding:4px}
+    #calendar-title{font-size:1rem}
+  }
 
   /* Hero */
-  --hero-btn-bg:#fff;
-  --hero-btn-text:var(--accent-color);
-  --hero-btn-hover:#e0e7ff;
+  --hero-btn-bg:var(--card-bg);
+  --hero-btn-text:var(--brand-primary);
+  --hero-btn-hover:color-mix(in srgb,var(--brand-primary) 10%,var(--card-bg));
 
   /* Misc */
-  --timer-bg:rgba(255,255,255,0.95);
-  --focus-ring:var(--accent-color);
-  --scrollbar-thumb:#cbd5e1;
+  --timer-bg:color-mix(in srgb,var(--card-bg) 94%,transparent);
+  --focus-ring-color:var(--accent-color);
+  --focus-ring:0 0 0 3px var(--focus-ring-color);
+  --scrollbar-thumb:color-mix(in srgb,var(--brand-primary) 22%,var(--border));
   --scrollbar-track:transparent;
 }
 
-/* ?? Dark theme ?? */
 [data-theme="dark"]{
-  --brand-gradient:linear-gradient(135deg,#1e1b4b 0%,#312e81 100%);
-  --accent-color:#818cf8;
-  --accent-hover:#a5b4fc;
-  --accent-light:#312e81;
+  --bg-section:rgba(2,8,23,.24);
+  --blocked-color:#223045;
+  --cell-bg:var(--card-bg);
+  --cell-border:#000;
+  --number-color:var(--text-muted);
+  --letter-color:var(--text-heading);
+  --highlight-color:color-mix(in srgb,var(--warn-bg) 70%,var(--card-bg));
+  --word-highlight:var(--puzzle-word-highlight);
 
-  --bg-body:var(--brand-gradient);
-  --bg-card:#1e1e2e;
-  --bg-card-alt:#262637;
-  --bg-section:rgba(0,0,0,0.12);
-  --bg-overlay:rgba(0,0,0,.65);
-
-  --border-color:#475569;
-  --blocked-color:#334155;
-  --cell-bg:#1e1e2e;
-  --cell-border:#334155;
-  --number-color:#94a3b8;
-  --letter-color:#e2e8f0;
-  --highlight-color:#422006;
-  --word-highlight:#312e81;
-
-  --correct-bg:#14532d;
-  --correct-text:#86efac;
-  --incorrect-bg:#450a0a;
-  --incorrect-text:#fca5a5;
-  --warning-bg:#422006;
-  --warning-pulse:#854d0e;
-  --hint-bg:#422006;
-  --hint-text:#fde68a;
-
-  /* Text — dark mode
-       text-primary  #e2e8f0  ? 12.5:1 on #1e1e2e  ? AAA
-       text-secondary #b0bcd4 ?  8.0:1              ? AAA — clear body text
-       text-muted    #7a93ae  ?  5.1:1              ? AA  — visibly subordinate
-     Both values are now distinct, restoring visual hierarchy
-     (was: both #94a3b8, no differentiation).
-  */
-  --text-primary:#e2e8f0;
-  --text-secondary:#b0bcd4;
-  --text-muted:#7a93ae;
-  --text-on-brand:#e2e8f0;
-
-  --border-light:#334155;
-  --border-medium:#475569;
-
-  --btn-secondary-bg:#334155;
-  --btn-secondary-text:#e2e8f0;
-  --btn-success:#16a34a;
+  --warning-pulse:color-mix(in srgb,var(--warn-border) 65%,#facc15);
   --btn-danger:#dc2626;
-  --btn-share:#818cf8;
-  --btn-hint-bg:#422006;
-  --btn-hint-text:#fde68a;
-  --btn-hint-border:#b45309;
+  --btn-share:var(--brand-primary);
 
-  --medal-gold-from:#422006;--medal-gold-to:#78350f;--medal-gold-border:#b45309;--medal-gold-shadow:rgba(180,83,9,.3);
-  --medal-silver-from:#1e293b;--medal-silver-to:#334155;--medal-silver-border:#64748b;--medal-silver-shadow:rgba(100,116,139,.3);
-  --medal-bronze-from:#431407;--medal-bronze-to:#7c2d12;--medal-bronze-border:#c2410c;--medal-bronze-shadow:rgba(194,65,12,.3);
+  --modal-shadow:rgba(2,8,23,.55);
+  --cal-unavailable:#64748b;
 
-  --modal-bg:#1e1e2e;
-  --modal-title:#e2e8f0;
-  --modal-text:#b0bcd4;
-  --modal-input-border:#475569;
-  --modal-shadow:rgba(0,0,0,.5);
+  --hero-btn-bg:var(--surface-raised);
+  --hero-btn-text:var(--brand-primary);
+  --hero-btn-hover:color-mix(in srgb,var(--brand-primary) 12%,var(--surface-raised));
 
-  --cal-heading:var(--text-primary);
-  --cal-day-text:var(--text-secondary);
-  --cal-cell-bg:#262637;
-  --cal-cell-text:var(--text-secondary);
-  --cal-unavailable:#475569;
-  --cal-available-bg:#312e81;
-  --cal-available-text:#a5b4fc;
-  --cal-available-border:#6366f1;
-  --cal-available-hover-shadow:rgba(129,140,248,.3);
-  --cal-today-outline:#818cf8;
-  --cal-today-from:#312e81;
-  --cal-today-to:#4338ca;
-
-  --hero-btn-bg:#1e1e2e;
-  --hero-btn-text:#a5b4fc;
-  --hero-btn-hover:#312e81;
-
-  --timer-bg:rgba(30,30,46,0.95);
-  --focus-ring:var(--accent-color);
-  --scrollbar-thumb:#475569;
-  --scrollbar-track:transparent;
-  --bg-surface:#262637;
+  --timer-bg:color-mix(in srgb,var(--card-bg) 88%,transparent);
+  --focus-ring-color:var(--accent-color);
+  --focus-ring:0 0 0 3px var(--focus-ring-color);
+  --scrollbar-thumb:color-mix(in srgb,var(--brand-primary) 30%,var(--border));
 }
 
 /* Reset */
@@ -235,7 +164,7 @@ html,body{height:100%}
 button:focus-visible,
 a:focus-visible,
 .clue-item:focus-visible{
-  outline:2px solid var(--focus-ring);
+  outline:2px solid var(--focus-ring-color);
   outline-offset:2px;
   border-radius:4px;
 }
@@ -254,7 +183,7 @@ a:focus-visible,
 }
 
 /* Skip-to-content link (visible on focus for keyboard users) */
-.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--brand-primary,#4f46e5);color:#fff;padding:8px 20px;border-radius:0 0 8px 8px;font-weight:600;z-index:9999;text-decoration:none;transition:top .2s}
+.skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--action-primary-bg,var(--brand-primary));color:#fff;padding:8px 20px;border-radius:0 0 8px 8px;font-weight:600;z-index:9999;text-decoration:none;transition:top .2s}
 .skip-link:focus{top:0}
 
 /* Page base (desktop-friendly) */
@@ -276,12 +205,52 @@ body{
 header{text-align:center;color:var(--text-on-brand);margin-bottom:12px}
 header h1{font-size:2rem;margin-bottom:6px;text-shadow:2px 2px 4px rgba(0,0,0,.3)}
 header p{font-size:.95rem}
-.puzzle-info{background:rgba(0,0,0,.12);padding:6px 12px;border-radius:8px;margin-top:8px;display:inline-flex;gap:8px;align-items:center;font-size:.85rem}
-.puzzle-info span:not(:last-child)::after{content:'·';margin-left:8px;opacity:.5}
+.puzzle-size-selector,
+.puzzle-meta,
+.top-controls{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:fit-content;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px 14px;
+  border-radius:20px;
+  border:1px solid color-mix(in srgb,var(--border) 72%,transparent);
+  background:color-mix(in srgb,var(--surface-raised) 84%,transparent);
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  backdrop-filter:blur(8px);
+}
+.puzzle-size-selector{margin-bottom:10px}
+.puzzle-meta{margin-top:10px;margin-bottom:8px;justify-content:center;margin-left:auto;margin-right:auto}
+.top-controls{
+  margin-bottom:10px;
+  background:color-mix(in srgb,var(--bg-card) 92%,transparent);
+  border-color:color-mix(in srgb,var(--border) 60%,transparent);
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+.puzzle-info,.generation-date,.timer{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:36px;
+  padding:8px 14px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb,var(--border) 78%,transparent);
+  background:color-mix(in srgb,var(--surface-raised) 88%,transparent);
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  backdrop-filter:blur(6px);
+}
+.puzzle-info{gap:0;font-size:.85rem;color:var(--text-body);font-weight:600}
+.puzzle-info span:not(:last-child)::after{content:'·';margin:0 10px;opacity:.45}
 .difficulty-easy{color:#22c55e;font-weight:600}
 .difficulty-medium{color:#f59e0b;font-weight:600}
 .difficulty-hard{color:#ef4444;font-weight:600}
-.generation-date{font-size:.9rem;margin-top:8px}
+.generation-date{font-size:.9rem;color:var(--text-heading);font-weight:600}
+.timer{font-size:1rem;color:var(--text-heading);font-weight:700;letter-spacing:.02em;font-variant-numeric:tabular-nums;background:color-mix(in srgb,var(--surface-raised) 92%,transparent)}
 
 /* Help toggle button */
 .help-toggle{background:none;border:none;font-size:1.3rem;cursor:pointer;padding:4px 8px;border-radius:8px;transition:background .2s}
@@ -291,9 +260,9 @@ header p{font-size:.95rem}
 .shortcuts-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
 .shortcuts-card{background:var(--bg-card);border-radius:16px;padding:32px;max-width:420px;width:90%;position:relative;box-shadow:0 12px 40px rgba(0,0,0,.15)}
 .shortcuts-card h2{margin:0 0 20px;font-size:1.3rem;color:var(--text-primary)}
-.shortcuts-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-secondary);line-height:1;padding:4px}
+ shortcuts-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-secondary);line-height:1;padding:4px}
 .shortcuts-close:hover{color:var(--text-primary)}
-.shortcuts-list{margin:0;padding:0}
+ shortcuts-list{margin:0;padding:0}
 .shortcut-row{display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--border-light,rgba(0,0,0,.06))}
 .shortcut-row:last-child{border-bottom:none}
 .shortcut-row dt{flex:0 0 160px;text-align:left;font-weight:400}
@@ -327,26 +296,26 @@ header p{font-size:.95rem}
 }
 
 /* Intro */
-.intro-section{background:var(--bg-section);padding:14px;border-radius:8px;color:var(--text-on-brand);margin-bottom:12px}
-.intro-section h2{color:var(--text-on-brand);font-size:1.05rem;margin-bottom:6px}
-.intro-section h3{color:var(--text-on-brand);font-size:0.95rem;margin-top:12px;margin-bottom:6px}
-.intro-section p{color:var(--text-on-brand);margin-bottom:6px;line-height:1.6}
+.intro-section{background:transparent;padding:14px 0;border-radius:0;color:var(--text-body);margin-bottom:12px}
+.intro-section h2{font-size:1rem;margin:0 0 8px;color:var(--text-heading)}
+.intro-section h3{color:var(--text-heading)}
+.intro-section p{font-size:.85rem;line-height:1.5;margin-bottom:8px}
 .intro-section ul{color:var(--text-on-brand);margin-left:20px;margin-bottom:10px}
 .intro-section li{margin-bottom:4px}
 .intro-section a{color:var(--text-on-brand);text-decoration:underline}
-.intro-section kbd{background:rgba(255,255,255,0.25);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:0.9em}
+.intro-section kbd{background:var(--surface-bg);border:1px solid var(--border);padding:2px 6px;border-radius:4px;font-family:monospace;font-size:0.9em;color:var(--text-heading)}
 
 /* Intro section - enhanced visuals */
 .intro-lead{font-size:1rem;line-height:1.7;margin-bottom:16px;opacity:0.95}
 .info-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0}
-.info-card{background:rgba(0,0,0,0.2);border-radius:10px;padding:14px;transition:transform 0.2s,background 0.2s}
-.info-card:hover{background:rgba(0,0,0,0.28);transform:translateY(-2px)}
+.info-card{background:var(--surface-raised);border:1px solid var(--border);border-radius:10px;padding:14px;transition:transform 0.2s,box-shadow 0.2s}
+.info-card:hover{box-shadow:0 4px 14px var(--shadow);transform:translateY(-2px)}
 .info-card-icon{font-size:1.8rem;margin-bottom:8px}
-.info-card h3{font-size:0.95rem;margin-bottom:8px;color:var(--text-on-brand)}
-.info-card p{font-size:0.85rem;line-height:1.5;margin:0}
-.info-card ul{list-style:none;margin:0;padding:0;font-size:0.85rem}
+.info-card h3{font-size:0.95rem;margin-bottom:8px;color:var(--text-heading)}
+.info-card p{font-size:0.85rem;line-height:1.5;margin:0;color:var(--text-body)}
+.info-card ul{list-style:none;margin:0;padding:0;font-size:0.85rem;color:var(--text-body)}
 .info-card li{margin-bottom:4px;padding-left:0}
-.info-card kbd{background:rgba(255,255,255,0.25);padding:1px 5px;border-radius:3px;font-size:0.8em}
+.info-card kbd{background:var(--surface-bg);border:1px solid var(--border);padding:1px 5px;border-radius:3px;font-size:0.8em;color:var(--text-heading)}
 
 .tips-accordion{background:rgba(0,0,0,0.15);border-radius:8px;margin:16px 0;overflow:hidden}
 .tips-accordion summary{padding:12px 16px;cursor:pointer;font-weight:600;font-size:0.95rem;list-style:none;display:flex;align-items:center;gap:8px}
@@ -358,7 +327,7 @@ header p{font-size:.95rem}
 .intro-footer{font-size:0.9rem;opacity:0.85;margin-top:16px;text-align:center}
 
 /* Content section (styled like intro) */
-.content-section{background:var(--bg-section);padding:14px;border-radius:8px;color:var(--text-on-brand);margin-top:12px}
+.content-section{background:transparent;padding:14px 0;border-radius:0;color:var(--text-body);margin-top:12px}
 .content-section h2{color:var(--text-on-brand);font-size:1.05rem;margin-bottom:6px}
 .content-section h3{color:var(--text-on-brand);font-size:0.95rem;margin-top:12px;margin-bottom:6px}
 .content-section p{color:var(--text-on-brand);margin-bottom:6px;line-height:1.6}
@@ -370,8 +339,8 @@ header p{font-size:.95rem}
 .content-intro{margin-bottom:16px}
 .content-intro p{font-size:1rem;line-height:1.7;opacity:0.95}
 .content-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
-.content-card{background:rgba(0,0,0,0.2);border-radius:10px;padding:14px;transition:transform 0.2s,background 0.2s}
-.content-card:hover{background:rgba(0,0,0,0.28);transform:translateY(-2px)}
+.content-card{background:var(--surface-raised);border:1px solid var(--border);border-radius:10px;padding:14px;transition:transform 0.2s,box-shadow 0.2s}
+.content-card:hover{box-shadow:0 4px 14px var(--shadow);transform:translateY(-2px)}
 .content-card-icon{font-size:1.6rem;margin-bottom:8px}
 .content-card h3{font-size:0.9rem;margin-bottom:6px;color:var(--text-on-brand)}
 .content-card p{font-size:0.85rem;line-height:1.5;margin:0}
@@ -386,8 +355,20 @@ header p{font-size:.95rem}
 
 /* Layout - mobile-first */
 .main-layout{display:flex;flex-direction:column;gap:16px;align-items:stretch}
-.grid-section,.clues-section,.leaderboard-section,.player-stats-section{background:var(--bg-card);border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.08);display: flex; flex-direction: column; min-height: 0;}
+.puzzle-page-shell{display:flex;flex-direction:column;gap:20px}
+.grid-section,.clues-section,.leaderboard-section,.player-stats-section{background:var(--bg-card);border-radius:12px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.08);display:flex;flex-direction:column;min-height:0}
 .grid-section h2,.clues-section h2,.leaderboard-section h2,.player-stats-section h2{text-align:center;margin-bottom:8px;color:var(--text-primary);font-size:1.05rem}
+.grid-header{display:flex;flex-direction:column;gap:10px;width:100%;margin-bottom:10px}
+.grid-heading{display:flex;flex-direction:column;gap:4px;min-width:0}
+.grid-subtitle{margin:0;color:var(--text-muted);font-size:.88rem;line-height:1.45;text-align:left}
+.grid-status-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
+.controls .grid-status-bar{width:100%;justify-content:center}
+.grid-status-bar .timer{margin:0}
+.grid-status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 12px;border-radius:999px;background:var(--surface-bg);border:1px solid var(--border-light);color:var(--text-body);font-size:.82rem;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.grid-status-pill-muted{background:var(--hint-badge-bg);border-color:var(--hint-badge-border);color:var(--hint-badge-text)}
+.grid-inner{display:flex;flex-direction:column;gap:12px;flex:1 1 auto;min-height:0;width:100%}
+.grid-area{display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-height:0;overflow:visible;padding:4px 0}
+.puzzle-side-panels{display:flex;flex-direction:column;gap:16px;min-height:0}
 
 /* Player stats grid */
 .player-stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;text-align:center;padding:8px 0}
@@ -396,17 +377,18 @@ header p{font-size:.95rem}
 .stat-label{font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.5px}
 
 /* Crossword grid - responsive, centered, horizontal scroll inside grid if needed */
-.crossword-grid{
+  .crossword-grid{
   display:inline-grid;
   gap:1px;
   background:var(--border-color);
-  border:3px solid var(--border-color);
-  --cell-size:clamp(20px,9vw,48px);
+  border:4px solid var(--border-color);
+  /* Make cell size scale with available viewport and column count so larger grids get reasonable cell sizes */
+  --cell-size: clamp(24px, calc((100vw - 220px) / var(--cols, 11)), 64px);
   grid-template-columns:repeat(var(--cols,11),var(--cell-size));
   grid-auto-rows:var(--cell-size);
   box-sizing:border-box;
   max-width:100%;
-  overflow: visible; /* no internal scrolling */
+  overflow:visible;
   margin:0 auto;
 }
 
@@ -414,20 +396,49 @@ header p{font-size:.95rem}
 .cell:hover:not(.blocked){background:var(--highlight-color)}
 .cell.blocked{background:var(--blocked-color);cursor:default}
 .cell.word-highlight{background:var(--word-highlight)}
+.cell.active{
+  background:var(--puzzle-active-cell-bg);
+  box-shadow:inset 0 0 0 2px var(--puzzle-active-cell-outline),0 0 0 2px var(--puzzle-active-cell-ring);
+  z-index:3;
+}
+.cell.active:hover{background:var(--puzzle-active-cell-bg)}
+
 /* Visual feedback for answer checking */
 .cell.correct{background:var(--correct-bg)}
-.cell.correct input{color:var(--correct-text)}
+.cell.correct input,
+.cell.correct .react-puzzle-cell-value{color:var(--correct-text)}
 .cell.correct::after{content:'\2713';position:absolute;bottom:1px;right:2px;font-size:calc(var(--cell-size)*0.22);color:var(--correct-text);pointer-events:none;z-index:2;line-height:1}
 .cell.incorrect{background:var(--incorrect-bg)}
-.cell.incorrect input{color:var(--incorrect-text)}
+.cell.incorrect input,
+.cell.incorrect .react-puzzle-cell-value{color:var(--incorrect-text)}
 .cell.incorrect::after{content:'\2717';position:absolute;bottom:1px;right:2px;font-size:calc(var(--cell-size)*0.22);color:var(--incorrect-text);pointer-events:none;z-index:2;line-height:1}
 .cell.empty-warning{background:var(--warning-bg);animation:pulse-warning 0.6s ease-in-out}
 .cell.hint-revealed{background:var(--hint-bg)}
-.cell.hint-revealed input{color:var(--hint-text)}
+.cell.hint-revealed input,
+.cell.hint-revealed .react-puzzle-cell-value{color:var(--hint-text)}
 @keyframes pulse-warning{0%,100%{background:var(--warning-bg)}50%{background:var(--warning-pulse)}}
 .cell .number{position:absolute;top:2px;left:4px;font-size:calc(var(--cell-size)*0.22);font-weight:400;color:var(--number-color);z-index:2;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;pointer-events:none;}
 .cell .bend-arrow{position:absolute;bottom:0;right:1px;font-size:calc(var(--cell-size)*0.38);font-weight:700;color:var(--number-color);z-index:2;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;pointer-events:none;line-height:1}
+.react-puzzle-grid-shell{position:relative;display:flex;align-items:center;justify-content:center;max-width:100%;max-height:100%;margin:0 auto}
+.react-puzzle-input-proxy{
+  position:absolute;
+  top:0;
+  left:0;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:0;
+  border:0;
+  opacity:0;
+  background:transparent;
+  color:transparent;
+  caret-color:transparent;
+  pointer-events:none;
+}
+.react-puzzle-cell-button,
 .cell input{
+  position:absolute;
+  inset:0;
   width:100%;
   height:100%;
   border:none;
@@ -439,28 +450,47 @@ header p{font-size:.95rem}
   outline:none;
   line-height:1;
   padding:0;
-  caret-color:var(--focus-ring);
   z-index:1;
   -webkit-text-size-adjust:100%;
   -moz-text-size-adjust:100%;
   text-size-adjust:100%;
 }
+.cell input{
+  caret-color:var(--focus-ring-color);
+}
+.react-puzzle-cell-button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--letter-color);
+  cursor:pointer;
+  appearance:none;
+  -webkit-appearance:none;
+  border-radius:0;
+}
+.react-puzzle-cell-button:focus-visible,
 .cell input:focus{
-  outline:2px solid var(--focus-ring);
+  outline:2px solid var(--focus-ring-color);
   outline-offset:-2px;
   border-radius:2px;
+}
+.react-puzzle-cell-value{
+  display:block;
+  color:inherit;
+  line-height:1;
 }
 .cell, .cell * { box-sizing: border-box; }
 /* Make cell a positioning context and ensure number sits above input */
 .cell{position:relative}
 .cell .number{z-index:2}
-.cell input{z-index:1}
+.cell input,
+.react-puzzle-cell-button{z-index:1}
 
-.controls{display:flex;gap:8px;margin-top:10px;justify-content:center;flex-wrap:wrap}
+.controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 .btn{padding:8px 12px;border:none;border-radius:6px;font-size:.9rem;font-weight:600;cursor:pointer;transition:background .15s ease,transform .1s ease}
 .btn:active{transform:scale(.97)}
-.btn-primary{background:var(--accent-color);color:#fff}
-.btn-primary:hover{background:var(--accent-hover)}
+.btn-primary{background:var(--action-primary-bg);color:#fff;box-shadow:0 2px 10px var(--action-primary-shadow)}
+.btn-primary:hover{background:var(--action-primary-hover)}
 .btn-secondary{background:var(--btn-secondary-bg);color:var(--btn-secondary-text)}
 .btn-success{background:var(--btn-success);color:#fff}
 .btn-hint{background:var(--btn-hint-bg);color:var(--btn-hint-text);border:1px solid var(--btn-hint-border)}
@@ -472,21 +502,22 @@ header p{font-size:.95rem}
 
 /* Clues and leaderboard - base styles
    Clue and leaderboard lists will be made scrollable on mobile via the consolidated media block */
-.clues-columns{display:flex;gap:12px; flex: 1 1 auto; min-height: 0; overflow: hidden;}
-.clue-column{flex: 1 1 50%; min-width: 0; display: flex; flex-direction: column; min-height: 0;}
+.clues-columns{display:flex;flex-direction:column;gap:14px;flex:1 1 auto;min-height:0;overflow:hidden}
+.clue-column{flex:1 1 0;min-width:0;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.clue-column + .clue-column{padding-top:14px;border-top:1px solid var(--border-light)}
 .clue-list{
   list-style:none;
   margin:0;
-  flex: 1 1 auto;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  max-height: 100%;
-  padding-right: 6px;
-  overscroll-behavior: contain;
+  flex:1 1 auto;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+  max-height:100%;
+  padding-right:6px;
+  overscroll-behavior:contain;
 }
 .clue-item{padding:8px;border-radius:4px;cursor:pointer;font-size:.9rem;line-height:1.3;color:var(--text-primary)}
 .clue-item:hover{background:var(--bg-card-alt)}
-.clue-item.active{background:var(--word-highlight);border-left:3px solid var(--accent-color)}
+.clue-item.active{background:var(--clue-active-bg);border-left:3px solid var(--clue-active-border)}
 .clue-item.filled{color:var(--text-muted);text-decoration:line-through}
 
 .leaderboard-list{
@@ -494,6 +525,9 @@ header p{font-size:.95rem}
   padding-right:6px;
   margin:0;
   overscroll-behavior: contain;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
 }
 
 /* Leaderboard item base styles */
@@ -502,10 +536,9 @@ header p{font-size:.95rem}
 .leaderboard-rank{font-weight:700;font-size:1.2rem;min-width:32px;text-align:center;line-height:1;flex-shrink:0}
 .leaderboard-name{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)}
 .leaderboard-time{font-weight:700;color:var(--accent-color);font-variant-numeric:tabular-nums;white-space:nowrap;flex-shrink:0}
-.leaderboard-empty{padding:20px 8px;text-align:center;color:var(--text-muted);font-style:italic;list-style:none}
+.leaderboard-empty{padding:20px 8px;text-align:center;color:var(--text-muted);font-style:italic;list-style:none;display:flex;align-items:center;justify-content:center;flex:1 1 auto}
 .flag-icon{margin-left:4px;font-size:0.8em;cursor:help;vertical-align:middle}
-.verified-badge{display:inline-block;margin-left:4px;font-size:0.75em;color:var(--accent-color);font-weight:700;vertical-align:middle;cursor:help}
-[data-theme="dark"] .verified-badge{color:var(--accent-color)}
+.verified-badge{display:inline-block;margin-left:4px;padding:1px 7px;border-radius:999px;font-size:0.7em;background:var(--verified-badge-bg);border:1px solid var(--verified-badge-border);color:var(--verified-badge-text);font-weight:700;vertical-align:middle;cursor:help}
 .guest-badge{display:inline-block;margin-left:4px;font-size:0.75em;color:var(--text-muted,#64748b);font-weight:600;vertical-align:middle;cursor:help}
 
 /* Personal stats (synced across devices for signed-in users) */
@@ -560,7 +593,7 @@ header p{font-size:.95rem}
 .puzzle-nav a:hover{opacity:1;text-decoration:underline}
 
 /* Auth buttons */
-.auth-btn-container{display:flex;align-items:center;gap=6px;position:relative}
+.auth-btn-container{display:flex;align-items:center;gap:6px;position:relative}
 .auth-btn{background:rgba(0,0,0,.2);color:var(--text-on-brand);border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:500;white-space:nowrap;transition:background .15s,transform .1s}
 .auth-btn:hover{background:rgba(255,255,255,.28)}
 .auth-btn:active{transform:scale(.97)}
@@ -574,8 +607,9 @@ header p{font-size:.95rem}
 .auth-login-menu a:hover{background:rgba(0,0,0,.06)}
 
 /* Top controls container for toggles */
-.top-controls{display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:10px}
+.top-controls{margin-bottom:10px}
 
+/* Clue direction enhancement */
 .clue-direction{display:flex;flex-direction:column;flex:1 1 auto;overflow:hidden;min-height:0;position:relative}
 .clue-direction::after{content:'';position:absolute;bottom:0;left:0;right:0;height:24px;background:linear-gradient(transparent,var(--bg-card));pointer-events:none;z-index:1;opacity:0;transition:opacity .2s}
 .clue-direction.has-overflow::after{opacity:1}
@@ -604,15 +638,32 @@ header p{font-size:.95rem}
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .puzzle-size-selector,
+    .puzzle-meta,
+    .top-controls {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 10px;
+        border-radius: 16px;
+    }
+    .puzzle-meta {
+        gap: 6px;
+        margin: 6px auto 4px;
+    }
+    .puzzle-info,
+    .generation-date,
+    .timer {
+        min-height: 30px;
+        padding: 5px 10px;
+        font-size: 0.75rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
     .puzzle-info {
-        padding: 4px 8px;
-        margin-top: 4px;
-        font-size: 0.75rem;
+        max-width: 100%;
+        margin-top: 0;
     }
-    .generation-date {
-        font-size: 0.75rem;
-        margin-top: 4px;
-    }
+    .puzzle-info span:not(:last-child)::after { margin: 0 6px; }
+    .generation-date { margin-top: 0; }
 
     /* Hide top toggles container padding */
     .top-controls {
@@ -642,7 +693,6 @@ header p{font-size:.95rem}
         box-sizing: border-box;
     }
 
-  /* Ensure main layout enforces normal document flow so clues cannot appear under the grid */
     .main-layout {
         display: flex;
         flex-direction: column;
@@ -653,7 +703,7 @@ header p{font-size:.95rem}
         max-height: none;
     }
 
-  /* Adjustments to ensure clues appear below the grid and don't get overlapped */
+    /* Adjustments to ensure clues appear below the grid and don't get overlapped */
     .clues-section {
         position: relative;
         z-index: 2;
@@ -683,7 +733,7 @@ header p{font-size:.95rem}
         overflow: visible;
         order: 1;
         min-height: auto;
-        padding: 4px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -691,30 +741,47 @@ header p{font-size:.95rem}
         box-sizing: border-box;
     }
     
-    /* Compact grid header on mobile */
     .grid-header {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         padding: 0;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
+        gap: 8px;
+    }
+    .grid-heading {
+        min-width: 0;
+        gap: 0;
     }
     .grid-header h2 {
-        display: none; /* Hide "Dagens Korsord" on mobile */
+        display: none;
     }
-    .grid-header .timer {
-        font-size: 1rem;
+    .grid-subtitle {
+        display: none;
+    }
+    .grid-status-bar {
+        width: 100%;
+        justify-content: center;
+        gap: 6px;
+    }
+    .grid-status-pill {
+        min-height: 30px;
+        padding: 5px 10px;
+        font-size: 0.74rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+    .grid-header .timer { 
+        font-size: 0.85rem;
         margin: 0;
     }
     
-    /* Compact controls on mobile - single row */
     .grid-inner .controls {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 4px;
-        margin-top: 6px;
+        margin-top: 0;
         justify-content: center;
     }
     .grid-inner .controls .btn {
@@ -723,23 +790,18 @@ header p{font-size:.95rem}
         min-height: 44px;
         min-width: 0;
     }
-    .grid-inner .controls .stats {
+    .grid-inner .controls .grid-status-bar {
         width: 100%;
-        font-size: 0.75rem;
-        margin-top: 4px;
+        justify-content: center;
     }
 
     .crossword-grid {
         position: relative;
         z-index: 0;
-        /* Account for body padding (16px), grid-section padding (8px), grid border (6px) */
         --cell-size: clamp(16px, calc((100vw - 30px) / var(--cols, 11)), 44px);
         margin: 4px auto;
         max-width: 100%;
     }
-
-  /* Adjust site-container padding previously set */
-  body{padding:env(safe-area-inset-top,8px) 8px env(safe-area-inset-bottom,8px) 8px}
 
   /* Hide intro and content sections by default on mobile; reveal with body classes */
   .intro-section{display:none;padding:10px;font-size:0.9rem;max-height:50vh;overflow:auto}
@@ -794,58 +856,30 @@ header p{font-size:.95rem}
         flex: 1 1 auto;
         min-height: 0;
         overflow: hidden;
-        flex-direction: row;
-        gap: 8px;
+        flex-direction: column;
+        gap: 10px;
     }
     
     .clue-column {
-        flex: 1 1 50%;
+        flex: 1 1 0;
         min-width: 0;
         min-height: 0;
         display: flex;
         flex-direction: column;
         overflow: hidden;
     }
+
+    .clue-column + .clue-column {
+        padding-top: 10px;
+        border-top: 1px solid var(--border-light);
+    }
     
-    /* Make clue-direction a proper flex container with sticky header */
     .clue-direction {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
         min-height: 0;
         overflow: hidden;
-    }
-    
-    /* Sticky headers for clue directions on mobile */
-    .clue-direction h3 {
-        flex: 0 0 auto;
-        position: sticky;
-        top: 0;
-        background: var(--bg-card);
-        padding: 4px 0 6px 0;
-        margin: 0 0 4px 0;
-        font-size: 0.85rem;
-        color: var(--text-secondary);
-        z-index: 1;
-        border-bottom: 1px solid var(--border-light);
-    }
-
-    /* Clue list - flexible height based on available space */
-    .clue-list {
-        flex: 1 1 auto;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-        overscroll-behavior: contain;
-        padding-right: 4px;
-        margin: 0;
-        /* Remove fixed max-height, let flex handle sizing */
-        max-height: none;
-    }
-    
-    .clue-item {
-        padding: 6px 8px;
-        font-size: 0.85rem;
-        line-height: 1.35;
     }
     
   #clues-toggle{display:inline-block}
@@ -947,7 +981,7 @@ header p{font-size:.95rem}
     }
 
     .player-stats-grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, auto);
         gap: 4px;
         padding: 2px 0;
     }
@@ -955,555 +989,266 @@ header p{font-size:.95rem}
     .stat-value { font-size: 1rem; }
     .stat-label { font-size: 0.6rem; }
 
-  /* Reduce footer footprint */
-  .site-footer{font-size:.75rem;padding:8px}
+    .site-footer{font-size:.75rem;padding:8px}
 }
 
-/* Landscape support for narrow viewports (e.g., phones rotated) */
-@media (max-width:1099px) and (orientation: landscape) {
-
-  /* Hide intro and content sections in landscape to maximize game space */
-  .intro-section { display: none !important; }
-  .content-section { display: none !important; }
-
-  /* Top controls container for toggles */
-  .top-controls { display: flex; gap: 8px; justify-content: center; align-items: center; margin-bottom: 0 }
-
-  /* Compact header: arrange title and meta inline */
-  header{margin:0 0 0 0;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:8px;padding:4px 6px;min-height:36px}
-  header h1{font-size:1rem;margin:0;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  header .puzzle-info, header .generation-date{font-size:0.8rem;white-space:nowrap;margin:0px}
-  header p{display:none}
-
-  /* Layout: place grid and clues side-by-side to use horizontal space; compute available height for grid sizing */
-  .main-layout { display: grid; grid-template-columns: 1fr minmax(200px, 35%); gap: 8px; align-items: start; --available-height: calc(100vh - 0px); height: var(--available-height); }
-
-  /* Grid: constrain by available height so entire grid fits without page scrolling */
-  .grid-section { order: 1; padding: 8px; min-height: 0; max-height: 100%; display: flex; flex-direction: column; align-items: center; overflow: hidden; }
-  /* Compute cell size from both width and available height divided by rows to ensure fit */
-  .crossword-grid { grid-template-columns: repeat(var(--cols,11), var(--cell-size)); grid-auto-rows: var(--cell-size); margin: 6px auto; max-width: 100%; box-sizing: border-box; }
-
-  /* Clues panel visible by default in landscape and scrollable; give fixed width and internal scrolling */
-  .clues-section { order: 2; display: flex; flex-direction: column; max-height: 100%; overflow: hidden; padding: 8px; width: 100%; }
-  .clues-columns { flex-direction: row; gap: 8px; }
-  .clue-column { flex: 1 1 50%; min-width: 0; min-height: 0; }
-  .clue-direction { min-height: 0; flex: 1 1 auto; display: flex; flex-direction: column; overflow: hidden; }
-  .clue-list { max-height: calc(var(--available-height) - 120px); overflow: auto; -webkit-overflow-scrolling: touch; }
-
-  /* Hide leaderboard and stats by default in landscape; show when toggled */
-  .leaderboard-section { display: none; }
-  .player-stats-section { display: none; }
-  body.show-leaderboard .leaderboard-section { display: flex; grid-column: 1 / -1; order: 10; max-height: 40vh; overflow: auto; }
-  body.show-leaderboard .player-stats-section { display: flex; grid-column: 1 / -1; order: 11; }
-
-  /* Keep clues toggle hidden (clues always visible), but show leaderboard toggle */
-  .clues-toggle, #intro-toggle { display: none !important; }
-  #leaderboard-toggle { display: inline-block !important; min-height: 36px; padding: 6px 12px; font-size: 0.8rem; }
-
-  /* Ensure the grid header (title + timer) is compact */
-  .grid-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%; padding: 0; margin: 0; }
-  .grid-header h2 { display: none !important; }
-  .grid-header .timer { position: absolute; right: 8px; top: 8px; z-index: 5; background: var(--timer-bg); padding: 6px 8px; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
-
-  /* Position grid-section to fill available height */
-  .grid-section { position: relative; height: 100%; max-height: 100%; min-height: 0; }
-
-  /* Grid inner layout: controls left column, grid area right */
-  .grid-inner { display: flex; flex-direction: row; gap: 8px; align-items: stretch; width: 100%; flex: 1 1 auto; min-height: 0; height: 100%; }
-  .grid-inner .controls { flex: 0 0 72px; display: flex; flex-direction: column; gap: 8px; align-items: stretch; justify-content: space-between; margin: 0; height: 100%; padding: 4px 0; }
-  .grid-inner .controls .btn { width: 100%; padding: 8px 6px; font-size: 0.85rem; }
-
-  .grid-inner .grid-area { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; align-items: center; overflow: hidden; min-height: 0; height: 100%; }
-
-  /* Ensure crossword grid fills the grid-area: compute cell size from width and height so it grows to available space */
-    .grid-inner .grid-area .crossword-grid {
-        /* Leave width/height to JS so both width and height constraints are honored. */
-        box-sizing: border-box;
-        /* Use --cell-size (set by JS) to define grid cells */
-        width: 100%;
-        height: 100%;
-        grid-template-columns: repeat(var(--cols,11), var(--cell-size));
-        grid-auto-rows: var(--cell-size);
-        gap: 1px;
-        margin: 0 auto;
-        overflow: auto;
-        --cell-size-width: calc((100% - (var(--cols,11) - 1) * 1px) / var(--cols,11));
-        --cell-size-height: calc((100% - (var(--rows,11) - 1) * 1px) / var(--rows,11));
-        --cell-size: min(var(--cell-size-width), var(--cell-size-height), 56px);
-    }
-
-  /* Make cells scale with computed size (override fixed width/height) */
-  .grid-inner .grid-area .crossword-grid .cell { width: var(--cell-size); height: var(--cell-size); }
-
-  /* Ensure grid-section can shrink inside container and not force overflow */
-  .grid-section { min-height: 0; display: flex; flex-direction: column; }
-  .site-container { min-height: 0; padding: 6px; }
-
-  /* Compact footer: single-line layout and hide license to save space */
-  .site-footer { font-size: 0.75rem; padding: 6px 8px; margin: 0; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 12px; min-height: 0; }
-  .site-footer nav { display: flex; gap: 8px; align-items: center; flex-wrap: nowrap }
-  .site-footer nav a { font-size: 0.75rem; padding: 0 6px }
-  .site-footer .copyright { margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
-  .site-footer .license { display: none !important }
-  .grid-inner .controls #timer, .grid-inner .controls .timer {
-    position: static !important;
-    background: var(--timer-bg);
-    color: var(--accent-color);
-    padding: 6px 8px;
-    border-radius: 8px;
-    font-weight:700;
-    text-align:center;
-    box-shadow:0 6px 18px rgba(0,0,0,0.07);
-    margin-bottom:6px;
-  }
-  .grid-inner .controls .timer.timer-in-controls { display:block }
-}
-
-/* Larger-screen enhancements: styles that apply only when viewport is at least 1100px wide.
-   These rules do not affect the existing small-screen (mobile/landscape) styles. */
-@media (min-width:1100px) {
-  /* Wider container and breathing room */
-  .container { max-width: 1400px; }
-  .site-container { max-width: 1400px; padding: 28px; }
-
-  /* Header: more prominence on desktop */
-  header h1 { font-size: 2.4rem; }
-  header p { font-size: 1rem; }
-
-  /* Intro section: wider and more readable */
-  .intro-section { padding: 18px 24px; margin-bottom: 16px; }
-  .intro-section h2 { font-size: 1.15rem; }
-  .intro-section h3 { font-size: 1rem; margin-top: 14px; }
-  .intro-section p { font-size: 0.95rem; line-height: 1.6; }
-  .intro-section ul { font-size: 0.95rem; }
-  .intro-section li { margin-bottom: 5px; }
-
-  /* Content section: wider and more readable on desktop */
-  .content-section { padding: 18px 24px; margin-top: 16px; }
-  .content-section h2 { font-size: 1.15rem; }
-  .content-section h3 { font-size: 1rem; margin-top: 14px; }
-  .content-section p { font-size: 0.95rem; line-height: 1.6; }
-  .content-section ul { font-size: 0.95rem; }
-  .content-section li { margin-bottom: 5px; }
-
-  /* Use a three-column layout: grid | clues | leaderboard+history 
-     Two rows so leaderboard and history each get half of column 3 */
-  .main-layout { 
-    display: grid; 
-    grid-template-columns: minmax(360px, 1fr) minmax(280px, 320px) minmax(240px, 280px); 
-    grid-template-rows: 1fr 1fr;
-    gap: 24px; 
-    align-items: start; 
-    height: auto; 
+@media (min-width:1200px) {
+  body.show-leaderboard .grid-section,
+  body.show-leaderboard .leaderboard-section,
+  body.show-history .history-section {
+    display: flex;
   }
 
-  /* Grid section: sized by its content, spans both rows */
-  .grid-section { 
-    padding: 20px; 
-    display: flex; 
-    flex-direction: column; 
+  .top-controls {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  #clues-toggle,
+  #leaderboard-toggle,
+  #history-toggle {
+    display: none !important;
+  }
+
+  #intro-toggle,
+  #help-toggle {
+    display: inline-flex;
     align-items: center;
-    order: 1;
-    grid-row: 1 / -1;
-    min-height: 0;
-    height: fit-content;
+    justify-content: center;
   }
 
-  /* Grid header: show the h2 on desktop and place timer inline */
-  .grid-header { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    width: 100%; 
-    margin-bottom: 12px; 
-  }
-  .grid-header h2 { display: block; margin: 0; font-size: 1.2rem; }
-  .grid-header .timer { 
-    position: static; 
-    margin-left: 12px; 
-    background: transparent; 
-    box-shadow: none; 
-    padding: 0; 
-    font-size: 1.3rem;
+  .intro-section {
+    display: none;
+    margin-bottom: 16px;
   }
 
-  /* Calculate cell size based on viewport height - use more of the available space */
-  .crossword-grid {
-    --cell-size: clamp(36px, calc((100vh - 280px) / var(--rows,11)), 64px);
-    grid-template-columns: repeat(var(--cols,11), var(--cell-size));
-    grid-auto-rows: var(--cell-size);
-    gap: 1px;
-    margin: 8px auto;
-    max-width: 100%;
-    overflow: visible;
+  body.show-intro .intro-section {
+    display: block;
   }
 
-  /* Cell enhancements for desktop */
-  .cell { 
-    font-size: calc(var(--cell-size) * 0.5); 
-  }
-  .cell .number { 
-    font-size: calc(var(--cell-size) * 0.24); 
-  }
-  .cell input { 
-    font-size: calc(var(--cell-size) * 0.5); 
+  .container {
+    max-width: 1680px;
   }
 
-  /* Controls: arrange horizontally above the grid for desktop */
-  .grid-inner { display: block; width: 100%; }
-  .grid-inner .controls { 
-    display: flex; 
-    flex-direction: row; 
-    gap: 12px; 
-    justify-content: flex-start; 
-    align-items: center; 
-    margin-bottom: 16px; 
-    margin-top: 8px;
-    width: auto; 
+  .site-container {
+    max-width: 1680px;
+    padding: 24px;
   }
-  .grid-inner .controls .btn { 
-    padding: 10px 16px; 
-    font-size: 0.95rem; 
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(24rem, 30rem) minmax(18rem, 22rem);
+    grid-template-areas:
+      'grid clues support';
+    gap: 20px;
+    align-items: start;
   }
-  .grid-inner .controls .stats {
-    margin-left: auto;
+
+  .grid-section {
+    grid-area: grid;
+    padding: 18px;
+    overflow: hidden;
+  }
+
+  .clues-section {
+    grid-area: clues;
     margin-top: 0;
+    padding: 18px;
+    overflow: hidden;
   }
 
-  /* Make the grid-area a simple block that centers the crossword */
-  .grid-inner .grid-area { 
-    display: flex; 
-    justify-content: center; 
+  .grid-header {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .grid-section h2,
+  .clues-section h2,
+  .leaderboard-section h2,
+  .player-stats-section h2 {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .grid-heading {
+    flex: 1 1 auto;
+  }
+
+  .grid-subtitle {
+    max-width: 42rem;
+  }
+
+  .grid-status-bar {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    max-width: 30rem;
+    margin-left: auto;
+  }
+
+  .grid-inner {
+    flex: 1 1 auto;
+    min-height: 0;
+    justify-content: flex-start;
+  }
+
+  .controls {
+    justify-content: flex-start;
     align-items: center;
-    width: 100%; 
-  }
-  .grid-inner .grid-area .crossword-grid { 
-    width: auto; 
-    height: auto; 
-    margin: 0 auto;
+    margin-top: 0;
+    flex-wrap: wrap;
+    row-gap: 10px;
   }
 
-  /* Clues section: match grid section height, internal scrolling */
-  .clues-section { 
-    display: flex; 
-    flex-direction: column; 
-    padding: 16px; 
+  .controls .btn {
+    padding: 10px 14px;
+  }
+
+  .controls .grid-status-bar {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .grid-area {
     overflow: hidden;
-    order: 2;
-    grid-row: 1 / -1;
-    /* Use align-self: stretch within a row that's sized by the grid */
-    align-self: stretch;
-    /* Match the grid section height via grid row stretch */
+    flex: 1 1 auto;
+  }
+
+  .grid-area .crossword-grid {
+    width: auto;
     height: auto;
+    margin: 0 auto;
+    overflow: visible;
+    max-width: none;
     max-height: none;
+    box-shadow: 0 16px 36px rgba(15,23,42,.14);
   }
-  .clues-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
-  .clues-columns { flex-direction: column; gap: 16px; flex: 1 1 auto; overflow: hidden; min-height: 0; }
-  .clue-column { flex: 1 1 50%; min-height: 0; }
-  .clue-direction { min-height: 0; flex: 1 1 auto; display: flex; flex-direction: column; overflow: hidden; }
-  .clue-direction h3 { font-size: 0.95rem; margin-bottom: 8px; color: var(--text-secondary); flex: 0 0 auto; }
-  .clue-list { max-height: none; overflow: auto; flex: 1 1 auto; }
-  .clue-item { font-size: 0.9rem; padding: 10px 8px; }
 
-  /* Leaderboard section: top half of column 3 */
-  .leaderboard-section { 
-    display: flex; 
-    flex-direction: column; 
-    padding: 16px; 
-    overflow: hidden;
-    order: 3;
-    grid-column: 3;
-    grid-row: 1;
-    align-self: stretch;
+  .grid-area .crossword-grid .cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+  }
+
+  .clues-columns {
+    gap: 14px;
+    flex: 1 1 auto;
     min-height: 0;
   }
-  .leaderboard-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
-  .leaderboard-list { overflow: auto; flex: 1 1 auto; }
-  .leaderboard-item { padding: 10px 8px; }
 
-  /* Historical leaderboard: bottom half of column 3 */
-  .history-section {
+  .clue-direction h3 {
+    position: sticky;
+    top: 0;
+    background: var(--bg-card);
+    margin: 0 0 8px;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--border-light);
+    z-index: 1;
+  }
+
+  .clue-list {
+    flex: 1 1 auto;
+    max-height: none;
+    overflow: auto;
+  }
+
+  .clue-select {
+    padding: 10px 8px;
+    border-radius: 4px;
+  }
+
+  .puzzle-side-panels {
+    grid-area: support;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .puzzle-side-panels > .leaderboard-section,
+  .puzzle-side-panels > .history-section {
+    min-height: 0;
+    max-height: none;
     padding: 16px;
-    overflow: hidden;
-    order: 4;
-    grid-column: 3;
-    grid-row: 2;
-    align-self: stretch;
-    min-height: 0;
+    flex: 1 1 0;
   }
-  .history-section h2 { font-size: 1.1rem; margin-bottom: 12px; flex: 0 0 auto; }
-  .history-section .leaderboard-list { overflow: auto; flex: 1 1 auto; max-height: none; }
 
-  /* Player stats: full-width strip below the 3-column layout */
+  .puzzle-side-panels .leaderboard-list,
+  .history-section .leaderboard-list {
+    overflow: auto;
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+  }
+
   .player-stats-section {
-    order: 10;
-    grid-column: 1 / -1;
-    align-self: center;
-    padding: 12px 20px;
-  }
-  .player-stats-section h2 { font-size: 1rem; margin-bottom: 8px; }
-  .player-stats-grid { grid-template-columns: repeat(5, auto); gap: 24px; justify-content: center; }
-}
-
-/* Large desktop: 1400px+ - more generous spacing */
-@media (min-width:1400px) {
-  .container { max-width: 1600px; }
-  .site-container { max-width: 1600px; padding: 32px; }
-
-  header h1 { font-size: 2.6rem; }
-
-  /* Wider clues and leaderboard columns */
-  .main-layout { 
-    grid-template-columns: minmax(500px, 1fr) 380px 300px; 
-    gap: 32px; 
-  }
-
-  .grid-section { padding: 24px; }
-
-  /* Larger cells for big screens - reduced reserved height for more space */
-  .crossword-grid {
-    --cell-size: clamp(40px, calc((100vh - 240px) / var(--rows,11)), 72px);
-  }
-
-  .grid-inner .controls { gap: 16px; }
-  .grid-inner .controls .btn { padding: 12px 20px; font-size: 1rem; }
-
-  .clues-section { padding: 20px; }
-  .clue-item { font-size: 0.95rem; padding: 12px 10px; }
-
-  .leaderboard-section { padding: 20px; }
-  .leaderboard-item { padding: 12px 10px; }
-
-  .history-section { padding: 20px; }
-
-  .player-stats-section { padding: 20px; }
-}
-
-/* Extra large screens: 1920px+ - maximize the grid experience */
-@media (min-width:1920px) {
-  .container { max-width: 1800px; }
-  .site-container { max-width: 1800px; padding: 36px; }
-
-  header h1 { font-size: 2.8rem; }
-  header p { font-size: 1.1rem; }
-
-  .intro-section { padding: 20px 28px; }
-  .intro-section h2 { font-size: 1.25rem; }
-  .intro-section h3 { font-size: 1.1rem; }
-  .intro-section p { font-size: 1rem; }
-
-  /* Content section: larger text on big screens */
-  .content-section { padding: 20px 28px; }
-  .content-section h2 { font-size: 1.25rem; }
-  .content-section h3 { font-size: 1.1rem; }
-  .content-section p { font-size: 1rem; }
-
-  /* Even wider layout with more space for the grid */
-  .main-layout { 
-    grid-template-columns: minmax(600px, 1fr) 420px 340px; 
-    gap: 40px; 
-  }
-
-  /* Grid section: more padding and allow it to grow vertically */
-  .grid-section { 
-    padding: 28px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    order: 1;
-    min-height: 0;
-  }
-
-  /* Grid header: show the h2 on desktop and place timer inline */
-  .grid-header { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    width: 100%; 
-    margin-bottom: 16px; 
-  }
-  .grid-header h2 { font-size: 1.3rem; }
-  .grid-header .timer { 
-    font-size: 1.5rem; 
-  }
-
-  /* Maximize cell size on large screens - less reserved height */
-  .crossword-grid {
-    --cell-size: clamp(44px, calc((100vh - 220px) / var(--rows,11)), 80px);
-  }
-
-  .cell { font-size: calc(var(--cell-size) * 0.52); }
-  .cell .number { font-size: calc(var(--cell-size) * 0.26); }
-
-  .grid-inner .controls .btn { padding: 14px 24px; font-size: 1.05rem; border-radius: 8px; }
-
-  .clues-section { padding: 24px; }
-  .clues-section h2 { font-size: 1.2rem; }
-  .clue-direction h3 { font-size: 1rem; }
-  .clue-item { font-size: 1rem; padding: 14px 12px; }
-
-  .leaderboard-section { padding: 24px; }
-  .leaderboard-section h2 { font-size: 1.2rem; }
-  .leaderboard-item { padding: 14px 12px; font-size: 0.95rem; }
-  .leaderboard-rank { width: 32px; font-size: 1rem; }
-  .leaderboard-time { font-size: 1rem; }
-
-  .history-section { padding: 24px; }
-  .history-section h2 { font-size: 1.2rem; }
-
-  .player-stats-section { padding: 24px; }
-  .player-stats-section h2 { font-size: 1.2rem; }
-  .stat-value { font-size: 1.5rem; }
-  .stat-label { font-size: 0.8rem; }
-
-  .site-footer { padding: 20px; font-size: 0.9rem; }
-}
-
-/* Ultra-wide screens: 2560px+ - prevent excessive stretching */
-@media (min-width:2560px) {
-  .container { max-width: 2200px; }
-  .site-container { max-width: 2200px; }
-
-  .main-layout { 
-    grid-template-columns: minmax(700px, 1fr) 480px 380px; 
-    gap: 48px; 
-  }
-
-  /* Cap the cell size to prevent overly large cells - less reserved height */
-  .crossword-grid {
-    --cell-size: clamp(48px, calc((100vh - 200px) / var(--rows,11)), 88px);
+    margin-top: 0;
   }
 }
 
-/* =========================================================================
-   Landing page
-   ========================================================================= */
-.tagline{font-size:1.1rem;margin-top:4px}
-
-.landing-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:16px}
-.hero-card{background:rgba(0,0,0,.2);border-radius:12px;padding:28px 24px;text-align:center;color:#fff;transition:transform .2s,background .2s}
-.hero-card:hover{background:rgba(0,0,0,.28);transform:translateY(-3px)}
-.hero-icon{font-size:3rem;margin-bottom:12px}
-.hero-card h2{font-size:1.3rem;margin-bottom:8px;color:var(--text-on-brand)}
-.hero-card p{font-size:.95rem;line-height:1.6;margin-bottom:16px}
-.btn-hero{display:inline-block;padding:12px 28px;border-radius:8px;font-size:1rem;font-weight:700;text-decoration:none;background:var(--hero-btn-bg);color:var(--hero-btn-text);transition:background .2s,transform .15s}
-.btn-hero:hover{background:var(--hero-btn-hover);transform:scale(1.03)}
-.btn-hero-secondary{background:rgba(0,0,0,.25);color:#fff;border:2px solid rgba(255,255,255,.6)}
-.btn-hero-secondary:hover{background:rgba(0,0,0,.35)}
-
-/* Size picker (landing page) */
-.hero-section-title{color:var(--text-on-brand);font-size:1.3rem;text-align:center;margin-bottom:12px}
-.size-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:16px}
-a.size-card{text-decoration:none;color:#fff;display:flex;flex-direction:column;align-items:center}
-.size-picker .btn-hero{margin-top:auto}
-a.size-card:hover .btn-hero{background:var(--hero-btn-hover);transform:scale(1.03)}
-.size-badge{display:inline-block;font-size:1.1rem;font-weight:700;padding:4px 14px;border-radius:20px;background:rgba(0,0,0,.25);margin-bottom:8px;letter-spacing:.5px}
-.size-card-featured{outline:2px solid rgba(255,255,255,.8);outline-offset:-2px}
-.size-card h3{font-size:1.15rem;margin-bottom:6px;color:var(--text-on-brand)}
-
-.landing-features{background:rgba(0,0,0,.12);border-radius:8px;padding:14px;color:#fff;margin-bottom:12px}
-
-/* Puzzle page nav (back link + archive link) */
-.puzzle-nav{display:flex;justify-content:space-between;margin-bottom:8px}
-.nav-back,.nav-link{color:#fff;text-decoration:none;font-size:.9rem;padding:4px 8px;border-radius:6px;transition:background .2s}
-.nav-back:hover,.nav-link:hover{background:rgba(255,255,255,.15)}
-.nav-back:focus-visible,.nav-link:focus-visible,.puzzle-nav a:focus-visible{outline:2px solid #fff;outline-offset:2px;border-radius:6px}
-
-/* =========================================================================
-   Calendar page
-   ========================================================================= */
-.calendar-section{margin-bottom:16px;padding:24px;max-width:600px;margin-left:auto;margin-right:auto}
-
-.calendar-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
-.calendar-header h2{font-size:1.4rem;color:var(--cal-heading);margin:0}
-.calendar-nav-btn{min-width:44px;font-size:1.2rem;padding:8px 14px}
-.calendar-nav-btn:disabled{opacity:.3;cursor:default}
-
-.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.calendar-day-header{text-align:center;font-weight:700;font-size:.85rem;color:var(--cal-day-text);padding:8px 0}
-
-.calendar-cell{padding:10px 0;display:flex;align-items:center;justify-content:center;border-radius:8px;font-size:1rem;color:var(--cal-cell-text);background:var(--cal-cell-bg);transition:transform .15s,box-shadow .15s}
-
-.calendar-empty{background:transparent}
-.calendar-future{opacity:.3}
-.calendar-unavailable{color:var(--cal-unavailable)}
-
-.calendar-available{background:var(--cal-available-bg);color:var(--cal-available-text);font-weight:600;cursor:pointer}
-.calendar-available:hover{transform:scale(1.08);box-shadow:0 2px 8px var(--cal-available-hover-shadow)}
-
-.calendar-today{outline:3px solid var(--cal-today-outline);outline-offset:-3px}
-.calendar-today.calendar-available{background:linear-gradient(135deg,var(--cal-today-from) 0%,var(--cal-today-to) 100%)}
-
-.calendar-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:inherit;text-decoration:none;font-weight:inherit}
-
-.calendar-legend{display:flex;gap:20px;justify-content:center;margin-top:16px;font-size:.85rem;color:var(--cal-day-text)}
-.legend-item{display:flex;align-items:center;gap:6px}
-.legend-dot{width:12px;height:12px;border-radius:50%;display:inline-block}
-.legend-available{background:var(--cal-available-bg);border:1px solid var(--cal-available-border)}
-.legend-today{background:var(--cal-today-to);outline:2px solid var(--cal-today-outline);outline-offset:-1px}
-
-/* Calendar size picker */
-.calendar-size-picker{display:flex;align-items:center;gap:8px;justify-content:center;margin-top:10px;color:rgba(255,255,255,.9);font-size:.9rem}
-.size-btn{padding:6px 14px;border-radius:6px;border:2px solid rgba(255,255,255,.4);background:rgba(0,0,0,.15);color:#fff;cursor:pointer;font-size:.9rem;font-weight:600;transition:background .2s,border-color .2s}
-.size-btn:hover{background:rgba(0,0,0,.25)}
-.size-btn.active{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.7)}
-
-/* Player stats – per-size blocks */
-.stats-size-block{margin-bottom:16px;padding:14px 14px 14px 18px;border-radius:10px;background:rgba(0,0,0,.1);border-left:4px solid var(--text-muted)}
-.stats-size-block + .stats-size-block{margin-top:12px}
-.stats-size-block[data-size="10x10"]{border-left-color:#22c55e}
-.stats-size-block[data-size="15x15"]{border-left-color:#eab308}
-.stats-size-block[data-size="17x17"]{border-left-color:#ef4444}
-.stats-size-current{outline:2px solid var(--accent-color);outline-offset:-2px;background:rgba(0,0,0,.15)}
-.stats-size-heading{font-size:1.1rem;font-weight:700;margin:0 0 10px;color:var(--text-primary)}
-.stats-size-badge{font-size:.7rem;font-weight:600;margin-left:8px;padding:2px 10px;border-radius:10px;background:var(--accent-color);color:#fff;vertical-align:middle;text-transform:uppercase;letter-spacing:.5px}
-
+/* Cookie consent overlay */
+#cookie-consent-banner{
+  position:fixed;
+  inset:0;
+  z-index:2147483647;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  background:rgba(6,16,33,.56);
+}
+#cookie-consent-banner .cookie-consent-inner{
+  width:min(100%,40rem);
+  background:var(--card-bg,#fff);
+  color:var(--text-primary,#0f172a);
+  border:1px solid var(--border,#d9e3ef);
+  border-radius:16px;
+  box-shadow:0 20px 60px rgba(15,23,42,.28);
+  padding:20px 22px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+#cookie-consent-banner .cookie-consent-inner p{
+  margin:0;
+  color:var(--text-body,#334155);
+  line-height:1.6;
+}
+#cookie-consent-banner .cookie-consent-inner a{
+  color:var(--accent-color,#355cff);
+  text-decoration:underline;
+}
+#cookie-consent-banner .cookie-consent-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:flex-end;
+}
+#cookie-consent-banner .cookie-btn{
+  min-height:44px;
+  padding:10px 16px;
+  border-radius:10px;
+  font-size:.95rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform .1s ease,background .15s ease,box-shadow .15s ease;
+}
+#cookie-consent-banner .cookie-btn:hover{transform:translateY(-1px)}
+#cookie-consent-banner .cookie-btn-accept{
+  background:var(--action-primary-bg,var(--brand-primary));
+  color:#fff;
+  box-shadow:0 6px 18px var(--action-primary-shadow,rgba(53,92,255,.24));
+}
+#cookie-consent-banner .cookie-btn-accept:hover{background:var(--action-primary-hover,var(--brand-primary))}
+#cookie-consent-banner .cookie-btn-reject{
+  background:var(--btn-secondary-bg,#e7eef6);
+  color:var(--btn-secondary-text,#334155);
+  border:1px solid var(--border,#d9e3ef);
+}
 @media (max-width:600px){
-  .calendar-grid{gap:2px}
-  .calendar-cell{font-size:.85rem;border-radius:6px;padding:8px 0}
-  .calendar-day-header{font-size:.75rem;padding:4px 0}
-  .calendar-header h2{font-size:1.1rem}
-  .landing-hero{grid-template-columns:1fr}
-  .size-picker{grid-template-columns:1fr}
-  .hero-card{padding:20px 16px}
-  .hero-icon{font-size:2.4rem}
-}
-
-/* Cookie Consent Banner */
-#cookie-consent-banner{position:fixed;bottom:0;left:0;right:0;z-index:10000;background:var(--bg-card,#fff);border-top:2px solid var(--accent-color,#4f46e5);box-shadow:0 -2px 16px rgba(0,0,0,.15);padding:16px 24px;font-size:.95rem}
-.cookie-consent-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.cookie-consent-inner p{margin:0;flex:1 1 300px;color:var(--text-primary,#0f172a)}
-.cookie-consent-inner a{color:var(--accent-color,#4f46e5);text-decoration:underline}
-.cookie-consent-buttons{display:flex;gap:10px;flex-shrink:0}
-.cookie-btn{border:none;border-radius:6px;padding:10px 18px;font-size:.9rem;font-weight:600;cursor:pointer;transition:opacity .2s}
-.cookie-btn:hover{opacity:.85}
-.cookie-btn-accept{background:var(--accent-color,#4f46e5);color:#fff}
-.cookie-btn-reject{background:var(--btn-secondary-bg,#e2e8f0);color:var(--text-primary,#0f172a)}
-@media(max-width:600px){#cookie-consent-banner{padding:10px 12px;font-size:.82rem}.cookie-consent-inner{flex-direction:row;align-items:center;gap:10px;text-align:left}.cookie-consent-inner p{flex:1 1 0;min-width:0;font-size:.82rem;line-height:1.35}.cookie-consent-buttons{flex-shrink:0;gap:6px}.cookie-btn{padding:8px 12px;font-size:.8rem}}
-
-/* Reduced motion */
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
-}
-
-/* High contrast mode */
-@media(prefers-contrast:more){
-  :root{
-    --text-muted:#475569;
-    --number-color:#334155;
-    --cell-border:#94a3b8;
-    --border-light:#94a3b8;
-  }
-  [data-theme="dark"]{
-    --text-muted:#cbd5e1;
-    --number-color:#cbd5e1;
-    --cell-border:#94a3b8;
-    --border-light:#64748b;
-  }
-  .hero-card,.info-card,.content-card{background:rgba(0,0,0,.4)}
-  .size-badge{background:rgba(0,0,0,.35)}
-  .btn-hero-secondary{background:rgba(0,0,0,.4);border-color:rgba(255,255,255,.8)}
-  .btn{border:1px solid currentColor}
+  #cookie-consent-banner{padding:12px}
+  #cookie-consent-banner .cookie-consent-inner{padding:16px}
+  #cookie-consent-banner .cookie-consent-buttons{flex-direction:column}
+  #cookie-consent-banner .cookie-btn{width:100%}
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
@@ -183,8 +184,14 @@ export default function AdminPage() {
   }
 
   useEffect(() => {
-    if (!authLoading) void load();
-  }, [authLoading]);
+    if (authLoading) return;
+    if (!user || !user.isAdmin) {
+      setLoading(false);
+      return;
+    }
+
+    void load();
+  }, [authLoading, user]);
 
   if (authLoading || loading) {
     return (
@@ -194,11 +201,11 @@ export default function AdminPage() {
     );
   }
 
-  if (error === 'denied' || (user && !user.isAdmin)) {
+  if (error === 'denied' || (user && !user.isAdmin) || !user) {
     return (
       <div className="page-content">
         <div className="leaderboard-error">⛔ Åtkomst nekad. Du måste vara inloggad som admin.</div>
-        <a href="/app/profile" className="back-link" style={{ marginTop: 16 }}>Gå till profil</a>
+        <Link to="/profile" className="back-link" style={{ marginTop: 16 }}>Gå till profil</Link>
       </div>
     );
   }
@@ -228,7 +235,7 @@ export default function AdminPage() {
       <DailySection daily={data.daily} />
       <PlayersSection players={data.players} />
 
-      <a href="/app/profile" className="back-link">← Tillbaka till profil</a>
+      <Link to="/profile" className="back-link">← Tillbaka till profil</Link>
     </div>
   );
 }

@@ -6,34 +6,34 @@
 
 :root {
   /* Brand */
-  --brand-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  --accent-color: #4f46e5;
-  --accent-hover: #4338ca;
-  --accent-light: #e0e7ff;
+  --brand-primary: #355cff;
+  --brand-secondary: #6d28d9;
+  --interactive-accent: #14b8a6;
+  --interactive-accent-hover: #0f9f96;
+  --interactive-accent-soft: #ccfbf1;
+  --brand-gradient: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  --accent-color: var(--interactive-accent);
+  --accent-hover: var(--interactive-accent-hover);
+  --accent-light: var(--interactive-accent-soft);
 
   /* Surfaces */
   --bg-body: var(--brand-gradient);
   --bg-card: #ffffff;
-  --bg-card-alt: #f9fafb;
-  --bg-overlay: rgba(0, 0, 0, .45);
-  --shadow: rgba(0, 0, 0, 0.12);
-  --shadow-md: rgba(0, 0, 0, 0.16);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.18);
+  --bg-card-alt: #f5f8fc;
+  --bg-overlay: rgba(6, 16, 33, 0.45);
+  --shadow: rgba(15, 23, 42, 0.12);
+  --shadow-md: rgba(15, 23, 42, 0.18);
+  --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.2);
 
-  /* Text — light mode
-     Contrast on #ffffff / #f9fafb:
-       text-primary  #0f172a  → 18.1:1 / 17.4:1  ✓ AAA
-       text-secondary #334155 → 10.7:1 / 10.3:1  ✓ AAA
-       text-muted    #566578  →  6.3:1 /  6.1:1  ✓ AA (safe at 0.7rem+)
-  */
+  /* Text */
   --text-primary: #0f172a;
   --text-secondary: #334155;
-  --text-muted: #566578;
-  --text-on-brand: #ffffff;
+  --text-muted: #5b6b82;
+  --text-on-brand: #f8fbff;
 
   /* Borders */
-  --border-light: #e2e8f0;
-  --border-medium: #cbd5e1;
+  --border-light: #d9e3ef;
+  --border-medium: #bccbdb;
 
   /* Feedback */
   --success-bg: #dcfce7;
@@ -42,14 +42,50 @@
   --error-bg: #fee2e2;
   --error-border: #dc2626;
   --error-text: #b91c1c;
-  --info-bg: #e0e7ff;
-  --warn-bg: #fef3c7;
+  --info-bg: #dbeafe;
+  --warn-bg: #fff4cc;
   --warn-border: #d97706;
   --warn-text: #b45309;
 
   /* Buttons */
-  --btn-secondary-bg: #e2e8f0;
+  --btn-secondary-bg: #e7eef6;
   --btn-secondary-text: #334155;
+  --action-primary-bg: var(--brand-primary);
+  --action-primary-hover: color-mix(in srgb, var(--brand-primary) 82%, var(--brand-secondary));
+  --action-primary-shadow: rgba(53, 92, 255, 0.24);
+
+  /* Puzzle interaction */
+  --puzzle-word-highlight: color-mix(in srgb, var(--brand-primary) 10%, var(--accent-light) 70%);
+  --puzzle-active-cell-bg: color-mix(in srgb, var(--accent-color) 20%, var(--surface-bg));
+  --puzzle-active-cell-outline: var(--accent-color);
+  --puzzle-active-cell-ring: rgba(255, 255, 255, 0.92);
+  --clue-active-bg: color-mix(in srgb, var(--puzzle-word-highlight) 86%, var(--surface-raised));
+  --clue-active-border: var(--accent-color);
+  --verified-badge-bg: color-mix(in srgb, var(--interactive-accent) 14%, var(--surface-raised));
+  --verified-badge-border: color-mix(in srgb, var(--interactive-accent) 45%, var(--border-light));
+  --verified-badge-text: #0f766e;
+  --hint-badge-bg: var(--warn-bg);
+  --hint-badge-border: var(--warn-border);
+  --hint-badge-text: var(--warn-text);
+  --medal-gold-from: #fff7cc;
+  --medal-gold-to: #fde68a;
+  --medal-gold-border: #fbbf24;
+  --medal-gold-shadow: rgba(251, 191, 36, 0.35);
+  --medal-silver-from: #f3f7fb;
+  --medal-silver-to: #dde7f1;
+  --medal-silver-border: #9aaec3;
+  --medal-silver-shadow: rgba(148, 163, 184, 0.35);
+  --medal-bronze-from: #fff3e8;
+  --medal-bronze-to: #fed7aa;
+  --medal-bronze-border: #fb923c;
+  --medal-bronze-shadow: rgba(249, 115, 22, 0.25);
+  --calendar-available-bg: color-mix(in srgb, var(--brand-primary) 10%, var(--card-bg));
+  --calendar-available-text: var(--brand-primary);
+  --calendar-available-border: color-mix(in srgb, var(--brand-primary) 28%, var(--border));
+  --calendar-available-hover-shadow: rgba(53, 92, 255, 0.22);
+  --calendar-today-outline: var(--accent-color);
+  --calendar-today-from: color-mix(in srgb, var(--accent-color) 14%, var(--card-bg));
+  --calendar-today-to: color-mix(in srgb, var(--brand-primary) 16%, var(--card-bg));
 
   /* Radius scale */
   --radius-sm: 6px;
@@ -63,14 +99,15 @@
   --transition-fast: 0.12s ease;
 
   /* Focus */
-  --focus-ring: 0 0 0 3px rgba(79, 70, 229, 0.35);
+  --focus-ring-color: rgba(20, 184, 166, 0.35);
+  --focus-ring: 0 0 0 3px var(--focus-ring-color);
   --focus-ring-offset: 2px;
 
   /* Aliases used by info/standalone pages */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
-  --surface-hover: #f1f5f9;
+  --surface-hover: #ecf4fb;
   --surface-raised: #ffffff;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
@@ -80,60 +117,97 @@
 
 [data-theme="dark"] {
   /* Brand */
-  --brand-gradient: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-  --accent-color: #818cf8;
-  --accent-hover: #a5b4fc;
-  --accent-light: #312e81;
+  --brand-primary: #7c93ff;
+  --brand-secondary: #a78bfa;
+  --interactive-accent: #2dd4bf;
+  --interactive-accent-hover: #5eead4;
+  --interactive-accent-soft: rgba(45, 212, 191, 0.16);
+  --brand-gradient: linear-gradient(135deg, #111c4d 0%, #31205f 100%);
+  --accent-color: var(--interactive-accent);
+  --accent-hover: var(--interactive-accent-hover);
+  --accent-light: var(--interactive-accent-soft);
 
   /* Surfaces */
   --bg-body: var(--brand-gradient);
-  --bg-card: #1e1e2e;
-  --bg-card-alt: #262637;
-  --bg-overlay: rgba(0, 0, 0, .65);
-  --shadow: rgba(0, 0, 0, 0.4);
-  --shadow-md: rgba(0, 0, 0, 0.55);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --bg-card: #111827;
+  --bg-card-alt: #182235;
+  --bg-overlay: rgba(2, 8, 23, 0.7);
+  --shadow: rgba(2, 8, 23, 0.42);
+  --shadow-md: rgba(2, 8, 23, 0.56);
+  --shadow-lg: 0 12px 36px rgba(2, 8, 23, 0.58);
 
-  /* Text — dark mode
-     Contrast on #1e1e2e / #262637:
-       text-primary  #e2e8f0  → 12.5:1 / 11.8:1  ✓ AAA
-       text-secondary #b0bcd4 →  8.0:1 /  7.6:1  ✓ AAA
-       text-muted    #7a93ae  →  5.1:1 /  4.9:1  ✓ AA  — visibly different from secondary
-  */
-  --text-primary: #e2e8f0;
-  --text-secondary: #b0bcd4;
-  --text-muted: #7a93ae;
-  --text-on-brand: #e2e8f0;
+  /* Text */
+  --text-primary: #e6eef8;
+  --text-secondary: #b6c7dc;
+  --text-muted: #88a1bf;
+  --text-on-brand: #eff6ff;
 
   /* Borders */
-  --border-light: #334155;
-  --border-medium: #475569;
+  --border-light: #2c3b53;
+  --border-medium: #3a4e6b;
 
   /* Feedback */
-  --success-bg: rgba(22, 163, 74, 0.12);
+  --success-bg: rgba(22, 163, 74, 0.16);
   --success-border: #22c55e;
   --success-text: #4ade80;
-  --error-bg: rgba(220, 38, 38, 0.12);
+  --error-bg: rgba(220, 38, 38, 0.16);
   --error-border: #ef4444;
   --error-text: #f87171;
-  --info-bg: rgba(129, 140, 248, 0.12);
-  --warn-bg: rgba(245, 158, 11, 0.12);
+  --info-bg: rgba(53, 92, 255, 0.18);
+  --warn-bg: rgba(245, 158, 11, 0.16);
   --warn-border: #f59e0b;
   --warn-text: #fbbf24;
 
   /* Buttons */
-  --btn-secondary-bg: #334155;
-  --btn-secondary-text: #e2e8f0;
+  --btn-secondary-bg: #243247;
+  --btn-secondary-text: #e6eef8;
+  --action-primary-bg: var(--brand-primary);
+  --action-primary-hover: color-mix(in srgb, var(--brand-primary) 78%, var(--brand-secondary));
+  --action-primary-shadow: rgba(124, 147, 255, 0.22);
+
+  /* Puzzle interaction */
+  --puzzle-word-highlight: color-mix(in srgb, var(--brand-primary) 22%, var(--surface-bg));
+  --puzzle-active-cell-bg: color-mix(in srgb, var(--accent-color) 22%, var(--surface-bg));
+  --puzzle-active-cell-outline: var(--accent-color);
+  --puzzle-active-cell-ring: rgba(230, 238, 248, 0.12);
+  --clue-active-bg: color-mix(in srgb, var(--puzzle-word-highlight) 78%, var(--surface-raised));
+  --clue-active-border: var(--accent-color);
+  --verified-badge-bg: color-mix(in srgb, var(--interactive-accent) 18%, var(--surface-raised));
+  --verified-badge-border: color-mix(in srgb, var(--interactive-accent) 42%, var(--border-medium));
+  --verified-badge-text: #7ff4e6;
+  --hint-badge-bg: var(--warn-bg);
+  --hint-badge-border: var(--warn-border);
+  --hint-badge-text: var(--warn-text);
+  --medal-gold-from: #4a3410;
+  --medal-gold-to: #7c5416;
+  --medal-gold-border: #d6a32f;
+  --medal-gold-shadow: rgba(214, 163, 47, 0.3);
+  --medal-silver-from: #233247;
+  --medal-silver-to: #32445d;
+  --medal-silver-border: #8ca3bf;
+  --medal-silver-shadow: rgba(140, 163, 191, 0.25);
+  --medal-bronze-from: #4b2e1f;
+  --medal-bronze-to: #6a402b;
+  --medal-bronze-border: #d18658;
+  --medal-bronze-shadow: rgba(209, 134, 88, 0.24);
+  --calendar-available-bg: color-mix(in srgb, var(--brand-primary) 16%, var(--card-bg));
+  --calendar-available-text: var(--brand-primary);
+  --calendar-available-border: color-mix(in srgb, var(--brand-primary) 36%, var(--border));
+  --calendar-available-hover-shadow: rgba(124, 147, 255, 0.24);
+  --calendar-today-outline: var(--accent-color);
+  --calendar-today-from: color-mix(in srgb, var(--accent-color) 12%, var(--card-bg));
+  --calendar-today-to: color-mix(in srgb, var(--brand-primary) 20%, var(--bg-card-alt));
 
   /* Focus */
-  --focus-ring: 0 0 0 3px rgba(129, 140, 248, 0.4);
+  --focus-ring-color: rgba(45, 212, 191, 0.4);
+  --focus-ring: 0 0 0 3px var(--focus-ring-color);
 
   /* Aliases */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
-  --surface-hover: #2d2d42;
-  --surface-raised: #2a2a3d;
+  --surface-hover: #202e45;
+  --surface-raised: #1d2940;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);

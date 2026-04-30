@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 import { useAuth, type AuthUser } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
@@ -31,7 +32,7 @@ function LoginPrompt() {
           🟦 Logga in med Microsoft
         </a>
       </div>
-      <a href="/" className="back-link" style={{ marginTop: 24 }}>← Tillbaka till startsidan</a>
+      <Link to="/" className="back-link" style={{ marginTop: 24 }}>← Tillbaka till startsidan</Link>
     </div>
   );
 }
@@ -395,7 +396,7 @@ function GdprSection() {
     )) return;
     try {
       await deleteMyAccount();
-      window.location.href = '/';
+      window.location.href = '/app/';
     } catch {
       setStatus({ msg: 'Kunde inte radera kontot. Försök igen.', ok: false });
     }
@@ -406,7 +407,7 @@ function GdprSection() {
       <h2>🔒 Dina uppgifter (GDPR)</h2>
       <p style={{ fontSize: '0.9rem', color: 'var(--text-body)', lineHeight: 1.55, marginBottom: '16px' }}>
         Du har rätt att exportera eller radera alla dina serverlagrade uppgifter.
-        Läs mer i vår <a href="/app/privacy-policy" style={{ color: 'var(--accent)' }}>integritetspolicy</a>.
+        Läs mer i vår <Link to="/privacy-policy" style={{ color: 'var(--accent)' }}>integritetspolicy</Link>.
       </p>
       <div className="profile-gdpr-buttons">
         <button className="profile-login-btn" onClick={() => void handleExport()}>
@@ -442,7 +443,7 @@ function ProfileContent({ user }: { user: AuthUser }) {
     try {
       await fetch('/api/auth/logout', { method: 'POST', credentials: 'same-origin' });
     } catch { /* ignore */ }
-    window.location.href = '/';
+    window.location.href = '/app/';
   }
 
   return (
@@ -478,9 +479,9 @@ function ProfileContent({ user }: { user: AuthUser }) {
       {user.isAdmin && (
         <section className="profile-section" style={{ textAlign: 'center' }}>
           <h2>🔧 Administration</h2>
-          <a href="/app/admin" className="profile-login-btn" style={{ padding: '11px 28px' }}>
+          <Link to="/admin" className="profile-login-btn" style={{ padding: '11px 28px' }}>
             Öppna adminpanel
-          </a>
+          </Link>
         </section>
       )}
 
@@ -490,7 +491,7 @@ function ProfileContent({ user }: { user: AuthUser }) {
         </button>
       </div>
 
-      <a href="/" className="back-link">← Tillbaka till startsidan</a>
+      <Link to="/" className="back-link">← Tillbaka till startsidan</Link>
     </div>
   );
 }

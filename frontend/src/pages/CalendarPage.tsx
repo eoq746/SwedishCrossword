@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { fetchPuzzleDates, type DateSizeMap } from '../api/calendar';
 import { usePageTitle } from '../hooks/usePageTitle';
 import '../styles/static-pages.css';
@@ -88,19 +89,19 @@ export default function CalendarPage() {
     if (isToday || hasSelectedSize) {
       cellClass += ' calendar-available';
       const href = isToday
-        ? `/puzzle.html?size=${selectedSize}`
-        : `/puzzle.html?date=${dateStr}&size=${selectedSize}`;
+        ? `/puzzle?size=${selectedSize}`
+        : `/puzzle?date=${dateStr}&size=${selectedSize}`;
       cells.push(
         <div key={dateStr} className={cellClass}>
-          <a
-            href={href}
-            className="calendar-link"
-            aria-label={`Spela ${selectedSize} korsord för ${dateStr}`}
-          >
-            {day}
-          </a>
-        </div>
-      );
+          <Link
+            to={href}
+             className="calendar-link"
+             aria-label={`Spela ${selectedSize} korsord för ${dateStr}`}
+           >
+             {day}
+          </Link>
+         </div>
+       );
     } else if (isFuture) {
       cells.push(
         <div key={dateStr} className={cellClass + ' calendar-future'}>{day}</div>

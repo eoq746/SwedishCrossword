@@ -12,6 +12,7 @@ import {
   type SizeHashMap,
 } from '../api/leaderboard';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { getTodayIso, resolveTodayEntriesForSize } from './leaderboardUtils';
 import '../styles/static-pages.css';
 
 const SIZES = ['10x10', '15x15', '17x17'] as const;
@@ -24,10 +25,6 @@ const SIZE_LABELS: Record<string, string> = {
   '15x15': '15×15 — Medel',
   '17x17': '17×17 — Stor',
 };
-
-function getTodayIso(): string {
-  return new Date().toISOString().split('T')[0];
-}
 
 function HintBadge({ hintsUsed, wordHintsUsed }: { hintsUsed: number; wordHintsUsed: number }) {
   const total = (hintsUsed ?? 0) + (wordHintsUsed ?? 0);
@@ -139,10 +136,11 @@ export default function LeaderboardPage() {
 
   const [leaderboard, setLeaderboard] = useState<LeaderboardResponse | null>(null);
   const [history, setHistory] = useState<HistoryResponse | null>(null);
-  const [sizeHashes, setSizeHashes] = useState<SizeHashMap>({});
+  const [sizeHashes, setSizeHashes] = useState<SizeHashMap | null>(null);
 
   const [leaderboardError, setLeaderboardError] = useState(false);
   const [historyError, setHistoryError] = useState(false);
+  const [sizeHashesError, setSizeHashesError] = useState(false);
 
   // Prevent state updates after unmount
   const mounted = useRef(true);
@@ -154,7 +152,12 @@ export default function LeaderboardPage() {
   useEffect(() => {
     fetchSizeHashes()
       .then(data => { if (mounted.current) setSizeHashes(data); })
-      .catch(() => {/* hash mapping unavailable; fallback renders all today entries */});
+      .catch(() => {
+        if (mounted.current) {
+          setSizeHashesError(true);
+          setSizeHashes({});
+        }
+      });
 
     fetchLeaderboard()
       .then(data => { if (mounted.current) setLeaderboard(data); })
@@ -165,22 +168,10 @@ export default function LeaderboardPage() {
       .catch(() => { if (mounted.current) setHistoryError(true); });
   }, []);
 
-  // Compute today's entries for the selected size
-  const todayEntries: ScoreEntry[] = (() => {
-    if (!leaderboard) return [];
-    const today = getTodayIso();
-    const hash = sizeHashes[selectedSize];
-    const scores = leaderboard.scores ?? {};
-
-    if (hash) {
-      return [...(scores[`${today}-${hash}`] ?? [])].sort((a, b) => a.time - b.time);
-    }
-    // Fallback: merge all today's keys
-    return Object.entries(scores)
-      .filter(([key]) => key.startsWith(`${today}-`))
-      .flatMap(([, entries]) => entries)
-      .sort((a, b) => a.time - b.time);
-  })();
+  const todayEntries: ScoreEntry[] = resolveTodayEntriesForSize(leaderboard, selectedSize, sizeHashes ?? {});
+  const todayLeaderboardLoading = !leaderboard && !leaderboardError;
+  const todaySizeLoading = sizeHashes === null && !sizeHashesError;
+  const todayLeaderboardUnavailable = leaderboardError || sizeHashesError;
 
   return (
     <>
@@ -209,14 +200,16 @@ export default function LeaderboardPage() {
           <h2 id="today-heading">
             <span aria-hidden="true">📅</span> Dagens topplista
           </h2>
-          {!leaderboard && !leaderboardError && (
+          {(todayLeaderboardLoading || todaySizeLoading) && (
             <p className="leaderboard-loading">Laddar topplista…</p>
           )}
-          {leaderboardError && (
-            <p className="leaderboard-error" role="alert">⚠️ Kunde inte ladda topplistan.</p>
+          {todayLeaderboardUnavailable && (
+            <p className="leaderboard-error" role="alert">⚠️ Kunde inte ladda topplistan för vald storlek.</p>
           )}
-          {leaderboard && <TodayList entries={todayEntries} />}
-          {leaderboard && (
+          {!todayLeaderboardLoading && !todaySizeLoading && !todayLeaderboardUnavailable && (
+            <TodayList entries={todayEntries} />
+          )}
+          {!todayLeaderboardLoading && !todaySizeLoading && !todayLeaderboardUnavailable && leaderboard && (
             <p className="leaderboard-date">
               Korsord: {getTodayIso()} — {selectedSize.replace('x', '×')}
             </p>

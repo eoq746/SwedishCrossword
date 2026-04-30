@@ -1,7 +1,51 @@
-/*
- * Styles shared across app pages.
- * Uses CSS custom properties from tokens.css.
- */
+/* ─────────────────────────────────────────────
+   Styles shared across app pages.
+   Uses CSS custom properties from tokens.css.
+───────────────────────────────────────────── */
+
+/* ── Reset some styles used across the app ── */
+html {
+  color-scheme: var(--color-scheme, normal);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--page-bg, var(--bg-body, var(--brand-gradient)));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 1.2em;
+  margin: 0;
+  list-style-position: inside;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--accent-hover, var(--accent)); }
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
 
 /* ─────────────────────────────────────────────
    Shared / global
@@ -9,6 +53,23 @@
 .page-content {
   width: 100%;
   animation: fadeIn 0.25s ease;
+}
+
+.clue-select {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+.clue-select:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-sm);
 }
 
 @keyframes fadeIn {
@@ -38,19 +99,19 @@
   gap: 6px;
   margin-top: 24px;
   padding: 10px 20px;
-  background: var(--accent);
+  background: var(--action-primary-bg, var(--brand-primary));
   color: #fff;
   border-radius: var(--radius-md);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
   transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+  box-shadow: 0 2px 8px var(--action-primary-shadow, rgba(53, 92, 255, 0.24));
 }
 .back-link:hover {
-  background: var(--accent-hover);
+  background: var(--action-primary-hover, var(--brand-primary));
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 4px 14px var(--action-primary-shadow, rgba(53, 92, 255, 0.24));
 }
 .back-link:focus-visible {
   outline: none;
@@ -452,16 +513,19 @@
 .leaderboard-item:nth-child(n+4) { animation-delay: 0.15s; }
 
 .leaderboard-item.rank-1 {
-  border-color: #f59e0b;
-  background: color-mix(in srgb, #f59e0b 8%, var(--surface-bg));
+  border-color: var(--medal-gold-border);
+  background: linear-gradient(135deg, var(--medal-gold-from) 0%, var(--medal-gold-to) 100%);
+  box-shadow: 0 3px 14px var(--medal-gold-shadow);
 }
 .leaderboard-item.rank-2 {
-  border-color: #94a3b8;
-  background: color-mix(in srgb, #94a3b8 8%, var(--surface-bg));
+  border-color: var(--medal-silver-border);
+  background: linear-gradient(135deg, var(--medal-silver-from) 0%, var(--medal-silver-to) 100%);
+  box-shadow: 0 3px 14px var(--medal-silver-shadow);
 }
 .leaderboard-item.rank-3 {
-  border-color: #cd7f32;
-  background: color-mix(in srgb, #cd7f32 8%, var(--surface-bg));
+  border-color: var(--medal-bronze-border);
+  background: linear-gradient(135deg, var(--medal-bronze-from) 0%, var(--medal-bronze-to) 100%);
+  box-shadow: 0 3px 14px var(--medal-bronze-shadow);
 }
 
 .leaderboard-rank {
@@ -542,9 +606,9 @@
   border-radius: var(--radius-full);
   font-size: 0.7rem;
   font-weight: 700;
-  background: var(--success-bg);
-  color: var(--success-text);
-  border: 1px solid var(--success-border);
+  background: var(--verified-badge-bg);
+  color: var(--verified-badge-text);
+  border: 1px solid var(--verified-badge-border);
   letter-spacing: 0.02em;
 }
 .guest-badge {
@@ -560,9 +624,9 @@
   border-radius: var(--radius-full);
   font-size: 0.7rem;
   font-weight: 600;
-  background: var(--warn-bg);
-  color: var(--warn-text, var(--warn-border));
-  border: 1px solid var(--warn-border);
+  background: var(--hint-badge-bg);
+  color: var(--hint-badge-text);
+  border: 1px solid var(--hint-badge-border);
 }
 
 .badge {
@@ -701,12 +765,13 @@
 .calendar-other-size { opacity: 0.4; cursor: default; }
 .calendar-future { opacity: 0.15; }
 .calendar-available {
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  background: var(--calendar-available-bg);
   font-weight: 600;
-  color: var(--text-body);
+  color: var(--calendar-available-text);
+  border: 1px solid var(--calendar-available-border);
 }
 .calendar-today {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--calendar-today-outline);
   outline-offset: -2px;
 }
 .calendar-link {
@@ -721,7 +786,7 @@
   font-weight: 700;
   transition: background var(--transition-fast);
 }
-.calendar-link:hover { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.calendar-link:hover { box-shadow: 0 2px 10px var(--calendar-available-hover-shadow); background: color-mix(in srgb, var(--calendar-available-bg) 74%, var(--surface-raised)); }
 .calendar-link:focus-visible { outline: none; box-shadow: var(--focus-ring); }
 
 .calendar-legend {
@@ -740,8 +805,8 @@
   display: inline-block;
   flex-shrink: 0;
 }
-.legend-available { background: color-mix(in srgb, var(--accent) 50%, transparent); }
-.legend-today { outline: 2px solid var(--accent); outline-offset: 1px; background: transparent; }
+.legend-available { background: var(--calendar-available-bg); border: 1px solid var(--calendar-available-border); }
+.legend-today { outline: 2px solid var(--calendar-today-outline); outline-offset: 1px; background: transparent; }
 
 /* ─────────────────────────────────────────────
    Profile page
@@ -771,7 +836,7 @@
   justify-content: center;
   gap: 8px;
   padding: 11px 22px;
-  background: var(--accent);
+  background: var(--action-primary-bg, var(--brand-primary));
   color: #fff;
   border: none;
   border-radius: var(--radius-md);
@@ -780,12 +845,12 @@
   text-decoration: none;
   cursor: pointer;
   transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
+  box-shadow: 0 2px 8px var(--action-primary-shadow, rgba(53, 92, 255, 0.24));
 }
 .profile-login-btn:hover:not(:disabled) {
-  background: var(--accent-hover);
+  background: var(--action-primary-hover, var(--brand-primary));
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 14px var(--action-primary-shadow, rgba(53, 92, 255, 0.24));
 }
 .profile-login-btn:disabled {
   opacity: 0.6;
@@ -854,7 +919,7 @@
 .profile-section {
   background: var(--surface-bg);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   padding: 22px;
   margin-bottom: 20px;
   box-shadow: 0 1px 4px var(--shadow);
@@ -1369,5 +1434,132 @@
   font-size: 0.78rem;
   opacity: 0.75;
   font-weight: 400;
+}
+
+/* ─────────────────────────────────────────────
+   Puzzle page fixes
+───────────────────────────────────────────── */
+.puzzle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 6px;
+}
+
+.puzzle-info span:not(:last-child)::after {
+  content: '•';
+}
+
+/* ─────────────────────────────────────────────
+   React puzzle desktop layout
+───────────────────────────────────────────── */
+@media (min-width: 1100px) and (max-width: 1439px) {
+  .react-puzzle-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(19rem, 23rem);
+    grid-template-areas:
+      'grid grid'
+      'clues side'
+      'stats stats';
+    align-items: start;
+    gap: 24px;
+  }
+
+  .react-puzzle-layout > .grid-section {
+    grid-area: grid;
+    min-height: 0;
+    align-self: start;
+    height: auto;
+  }
+
+  .react-puzzle-layout > .clues-section {
+    grid-area: clues;
+    min-height: min(48vh, 34rem);
+    align-self: stretch;
+    height: auto !important;
+    max-height: none;
+  }
+
+  .react-puzzle-layout > .puzzle-side-panels {
+    grid-area: side;
+    min-height: min(48vh, 34rem);
+    align-self: stretch;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    height: auto !important;
+  }
+
+  .react-puzzle-layout > .puzzle-side-panels > .leaderboard-section,
+  .react-puzzle-layout > .puzzle-side-panels > .history-section {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 0;
+    height: auto !important;
+    max-height: none;
+    align-self: stretch;
+  }
+
+  .react-puzzle-layout > .player-stats-section {
+    grid-area: stats;
+  }
+
+  .react-puzzle-layout .crossword-grid.react-puzzle-grid {
+    width: min(100%, clamp(30rem, 78vw, 56rem));
+  }
+}
+
+@media (min-width: 1440px) {
+  .react-puzzle-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem) minmax(16rem, 20rem);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'grid clues side'
+      'stats stats stats';
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .react-puzzle-layout > .grid-section {
+    grid-area: grid;
+    min-height: 0;
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .react-puzzle-layout > .clues-section {
+    grid-area: clues;
+    min-height: 0;
+    align-self: stretch;
+    height: 100%;
+    max-height: none;
+  }
+
+  .react-puzzle-layout > .puzzle-side-panels {
+    grid-area: side;
+    min-height: 0;
+    align-self: stretch;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    height: 100%;
+  }
+
+  .react-puzzle-layout > .puzzle-side-panels > .leaderboard-section,
+  .react-puzzle-layout > .puzzle-side-panels > .history-section {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: 0;
+    height: 100%;
+    max-height: none;
+    align-self: stretch;
+  }
+
+  .react-puzzle-layout > .player-stats-section {
+    grid-area: stats;
+  }
 }
 
