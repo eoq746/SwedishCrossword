@@ -53,33 +53,6 @@
   --cal-cell-text:var(--text-body);
   --cal-unavailable:#94a3b8;
 
-  /* Calendar layout and sizing (compact defaults to avoid oversized calendar) */
-  .calendar-section{max-width:820px;margin:0 auto;padding:12px;box-sizing:border-box}
-  .calendar-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
-  #calendar-title{font-size:1.05rem;font-weight:700;color:var(--cal-heading);margin:0;text-align:center;flex:1}
-  .calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:start;max-width:100%;margin:0 auto}
-  .calendar-day-header{font-weight:700;text-align:center;padding:6px 4px;color:var(--cal-day-text);font-size:0.82rem}
-  .calendar-cell{background:var(--cal-cell-bg);color:var(--cal-cell-text);border-radius:8px;min-height:40px;display:flex;align-items:center;justify-content:center;padding:6px;font-size:0.95rem}
-  .calendar-cell.calendar-empty{background:transparent}
-  .calendar-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;text-decoration:none;color:inherit;padding:6px;border-radius:6px}
-  .calendar-available{border:1px solid color-mix(in srgb,var(--accent-color) 40%,transparent);background:color-mix(in srgb,var(--accent-color) 8%,var(--cal-cell-bg))}
-  .calendar-today{border:2px solid var(--accent-color);box-shadow:0 2px 6px color-mix(in srgb,var(--accent-color) 10%,transparent)}
-  .calendar-unavailable{opacity:0.6}
-  .calendar-future{opacity:0.4}
-  .calendar-legend{display:flex;justify-content:center;gap:12px;margin-top:10px;flex-wrap:wrap;font-size:0.9rem}
-  .legend-item{display:inline-flex;align-items:center;gap:6px}
-  .legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-  .legend-available{background:var(--accent-color)}
-  .legend-today{background:var(--timer-bg);border:1px solid var(--accent-color)}
-
-  @media (max-width: 600px){
-    .calendar-section{padding:8px}
-    .calendar-grid{gap:6px}
-    .calendar-cell{min-height:34px;font-size:0.85rem;padding:4px}
-    .calendar-day-header{font-size:0.78rem;padding:4px}
-    #calendar-title{font-size:1rem}
-  }
-
   /* Hero */
   --hero-btn-bg:var(--card-bg);
   --hero-btn-text:var(--brand-primary);
@@ -120,16 +93,43 @@
   --scrollbar-thumb:color-mix(in srgb,var(--brand-primary) 30%,var(--border));
 }
 
+/* Calendar layout and sizing (compact defaults to avoid oversized calendar) */
+.calendar-section{max-width:820px;margin:0 auto;padding:12px;box-sizing:border-box}
+.calendar-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+#calendar-title{font-size:1.05rem;font-weight:700;color:var(--cal-heading);margin:0;text-align:center;flex:1}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:start;max-width:100%;margin:0 auto}
+.calendar-day-header{font-weight:700;text-align:center;padding:6px 4px;color:var(--cal-day-text);font-size:0.82rem}
+.calendar-cell{background:var(--cal-cell-bg);color:var(--cal-cell-text);border-radius:8px;min-height:40px;display:flex;align-items:center;justify-content:center;padding:6px;font-size:0.95rem}
+.calendar-cell.calendar-empty{background:transparent}
+.calendar-link{display:flex;align-items:center;justify-content:center;width:100%;height:100%;text-decoration:none;color:inherit;padding:6px;border-radius:6px}
+.calendar-available{border:1px solid color-mix(in srgb,var(--accent-color) 40%,transparent);background:color-mix(in srgb,var(--accent-color) 8%,var(--cal-cell-bg))}
+.calendar-today{border:2px solid var(--accent-color);box-shadow:0 2px 6px color-mix(in srgb,var(--accent-color) 10%,transparent)}
+.calendar-unavailable{opacity:0.6}
+.calendar-future{opacity:0.4}
+.calendar-legend{display:flex;justify-content:center;gap:12px;margin-top:10px;flex-wrap:wrap;font-size:0.9rem}
+.legend-item{display:inline-flex;align-items:center;gap:6px}
+.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.legend-available{background:var(--accent-color)}
+.legend-today{background:var(--timer-bg);border:1px solid var(--accent-color)}
+
+@media (max-width: 600px){
+  .calendar-section{padding:8px}
+  .calendar-grid{gap:6px}
+  .calendar-cell{min-height:34px;font-size:0.85rem;padding:4px}
+  .calendar-day-header{font-size:0.78rem;padding:4px}
+  #calendar-title{font-size:1rem}
+}
+
 /* Reset */
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 
-/* Base list typography – applies to all prose content in both legacy and React pages */
+/* Base list typography â€“ applies to all prose content in both legacy and React pages */
 .container main ul,
 .container main ol { padding-left: 1.5rem; margin-bottom: 1rem; }
 .container main li { margin-bottom: 0.5rem; line-height: 1.6; color: var(--text-body); }
 
-/* Base prose headings – shared between legacy HTML pages and the React SPA */
+/* Base prose headings â€“ shared between legacy HTML pages and the React SPA */
 .container main h1 {
   color: var(--text-heading);
   font-size: 1.8rem;
@@ -140,7 +140,7 @@ html,body{height:100%}
   color: var(--text-heading);
   font-size: 1.25rem;
   font-weight: 700;
-  margin-top: 36px;
+  margin-top: 20px;
   margin-bottom: 12px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--accent-color);
@@ -156,7 +156,7 @@ html,body{height:100%}
 }
 @media (max-width: 600px) {
   .container main h1 { font-size: 1.5rem; }
-  .container main h2 { font-size: 1.1rem; margin-top: 28px; }
+  .container main h2 { font-size: 1.1rem; margin-top: 20px; }
   .container main h3 { font-size: 0.98rem; }
 }
 
@@ -206,8 +206,7 @@ header{text-align:center;color:var(--text-on-brand);margin-bottom:12px}
 header h1{font-size:2rem;margin-bottom:6px;text-shadow:2px 2px 4px rgba(0,0,0,.3)}
 header p{font-size:.95rem}
 .puzzle-size-selector,
-.puzzle-meta,
-.top-controls{
+.puzzle-meta{
   display:flex;
   flex-wrap:wrap;
   align-items:center;
@@ -223,14 +222,24 @@ header p{font-size:.95rem}
   background:color-mix(in srgb,var(--surface-raised) 84%,transparent);
   box-shadow:0 10px 24px rgba(0,0,0,.08);
   backdrop-filter:blur(8px);
+  align-self:center;
 }
 .puzzle-size-selector{margin-bottom:10px}
-.puzzle-meta{margin-top:10px;margin-bottom:8px;justify-content:center;margin-left:auto;margin-right:auto}
+.puzzle-meta{margin-top:10px;margin-bottom:8px;width:auto}
 .top-controls{
-  margin-bottom:10px;
-  background:color-mix(in srgb,var(--bg-card) 92%,transparent);
-  border-color:color-mix(in srgb,var(--border) 60%,transparent);
-  box-shadow:0 8px 20px rgba(0,0,0,.06);
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:fit-content;
+  max-width:100%;
+  margin:0 auto 10px;
+  padding:0;
+  background:transparent;
+  border:none;
+  box-shadow:none;
+  backdrop-filter:none;
 }
 .puzzle-info,.generation-date,.timer{
   display:inline-flex;
@@ -245,7 +254,7 @@ header p{font-size:.95rem}
   backdrop-filter:blur(6px);
 }
 .puzzle-info{gap:0;font-size:.85rem;color:var(--text-body);font-weight:600}
-.puzzle-info span:not(:last-child)::after{content:'·';margin:0 10px;opacity:.45}
+.puzzle-info span:not(:last-child)::after{content:'Â·';margin:0 10px;opacity:.45}
 .difficulty-easy{color:#22c55e;font-weight:600}
 .difficulty-medium{color:#f59e0b;font-weight:600}
 .difficulty-hard{color:#ef4444;font-weight:600}
@@ -253,16 +262,16 @@ header p{font-size:.95rem}
 .timer{font-size:1rem;color:var(--text-heading);font-weight:700;letter-spacing:.02em;font-variant-numeric:tabular-nums;background:color-mix(in srgb,var(--surface-raised) 92%,transparent)}
 
 /* Help toggle button */
-.help-toggle{background:none;border:none;font-size:1.3rem;cursor:pointer;padding:4px 8px;border-radius:8px;transition:background .2s}
-.help-toggle:hover{background:rgba(255,255,255,.15)}
+.help-toggle{display:inline-flex;align-items:center;justify-content:center;background:var(--surface-raised);border:1.5px solid var(--border);color:var(--text-body);font-size:1.05rem;cursor:pointer;padding:8px 10px;border-radius:999px;line-height:1;transition:background .2s,border-color .2s,color .2s,box-shadow .2s,transform .12s}
+.help-toggle:hover{background:var(--surface-hover);border-color:color-mix(in srgb,var(--accent-color) 45%,var(--border));color:var(--text-heading);transform:translateY(-1px)}
 
 /* Keyboard shortcuts dialog */
 .shortcuts-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
 .shortcuts-card{background:var(--bg-card);border-radius:16px;padding:32px;max-width:420px;width:90%;position:relative;box-shadow:0 12px 40px rgba(0,0,0,.15)}
 .shortcuts-card h2{margin:0 0 20px;font-size:1.3rem;color:var(--text-primary)}
- shortcuts-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-secondary);line-height:1;padding:4px}
+.shortcuts-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-secondary);line-height:1;padding:4px}
 .shortcuts-close:hover{color:var(--text-primary)}
- shortcuts-list{margin:0;padding:0}
+.shortcuts-list{margin:0;padding:0}
 .shortcut-row{display:flex;align-items:center;padding:8px 0;border-bottom:1px solid var(--border-light,rgba(0,0,0,.06))}
 .shortcut-row:last-child{border-bottom:none}
 .shortcut-row dt{flex:0 0 160px;text-align:left;font-weight:400}
@@ -362,7 +371,7 @@ header p{font-size:.95rem}
 .grid-heading{display:flex;flex-direction:column;gap:4px;min-width:0}
 .grid-subtitle{margin:0;color:var(--text-muted);font-size:.88rem;line-height:1.45;text-align:left}
 .grid-status-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center}
-.controls .grid-status-bar{width:100%;justify-content:center}
+.controls .grid-status-bar{width:auto;justify-content:flex-start;flex:0 0 auto}
 .grid-status-bar .timer{margin:0}
 .grid-status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 12px;border-radius:999px;background:var(--surface-bg);border:1px solid var(--border-light);color:var(--text-body);font-size:.82rem;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.06)}
 .grid-status-pill-muted{background:var(--hint-badge-bg);border-color:var(--hint-badge-border);color:var(--hint-badge-text)}
@@ -486,7 +495,7 @@ header p{font-size:.95rem}
 .cell input,
 .react-puzzle-cell-button{z-index:1}
 
-.controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;align-items:center}
 .btn{padding:8px 12px;border:none;border-radius:6px;font-size:.9rem;font-weight:600;cursor:pointer;transition:background .15s ease,transform .1s ease}
 .btn:active{transform:scale(.97)}
 .btn-primary{background:var(--action-primary-bg);color:#fff;box-shadow:0 2px 10px var(--action-primary-shadow)}
@@ -576,16 +585,18 @@ header p{font-size:.95rem}
 .modal input[type=text]{width:100%;padding:10px 12px;border:2px solid var(--modal-input-border);border-radius:8px;background:var(--bg-card);color:var(--text-primary)}
 
 /* Toggles */
-.clues-toggle,#leaderboard-toggle,#intro-toggle{display:none;margin:8px;padding:8px 12px;border-radius:8px;border:2px solid rgba(255,255,255,.2);background:rgba(0,0,0,.12);color:var(--text-on-brand);font-weight:600}
+.clues-toggle,#leaderboard-toggle,#intro-toggle,#history-toggle,#help-toggle{display:none;margin:8px;padding:8px 12px;border-radius:999px;border:1.5px solid var(--border);background:var(--surface-raised);color:var(--text-body);font-weight:600;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:background .15s,border-color .15s,color .15s,box-shadow .15s}
+.clues-toggle:hover,#leaderboard-toggle:hover,#intro-toggle:hover,#history-toggle:hover,#help-toggle:hover{background:var(--surface-hover);border-color:color-mix(in srgb,var(--accent-color) 45%,var(--border));color:var(--text-heading)}
+.clues-toggle[aria-expanded='true'],#leaderboard-toggle[aria-expanded='true'],#intro-toggle[aria-expanded='true'],#history-toggle[aria-expanded='true']{background:var(--accent-color);border-color:var(--accent-color);color:var(--text-on-brand);box-shadow:0 4px 14px color-mix(in srgb,var(--accent-color) 35%,transparent)}
 
 /* Footer */
 .site-footer{margin-top:12px;text-align:center;color:var(--text-on-brand)}
 .site-footer a{color:var(--text-on-brand)}
 
 /* Theme toggle */
-.theme-toggle{background:none;border:none;cursor:pointer;font-size:1.3rem;padding:4px 8px;border-radius:8px;line-height:1;transition:transform .2s ease;color:var(--text-on-brand)}
-.theme-toggle:hover{transform:scale(1.15)}
-.theme-toggle:active{transform:scale(.95)}
+.puzzle-nav .theme-toggle{background:none;border:none;cursor:pointer;font-size:1.3rem;padding:4px 8px;border-radius:8px;line-height:1;transition:transform .2s ease;color:var(--text-on-brand)}
+.puzzle-nav .theme-toggle:hover{transform:scale(1.15)}
+.puzzle-nav .theme-toggle:active{transform:scale(.95)}
 
 /* Puzzle nav */
 .puzzle-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px}
@@ -593,21 +604,18 @@ header p{font-size:.95rem}
 .puzzle-nav a:hover{opacity:1;text-decoration:underline}
 
 /* Auth buttons */
-.auth-btn-container{display:flex;align-items:center;gap:6px;position:relative}
-.auth-btn{background:rgba(0,0,0,.2);color:var(--text-on-brand);border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:500;white-space:nowrap;transition:background .15s,transform .1s}
-.auth-btn:hover{background:rgba(255,255,255,.28)}
-.auth-btn:active{transform:scale(.97)}
-.auth-btn-logout{background:rgba(0,0,0,.15);font-size:.8rem;padding:3px 10px}
-.auth-btn-logout:hover{background:rgba(220,50,50,.25)}
-.auth-user-name{color:var(--text-on-brand);font-size:.85rem;font-weight:500;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration:none}
-.auth-user-name:hover{text-decoration:underline}
-.auth-login-menu{display:none;position:absolute;top:100%;right:0;margin-top:6px;background:var(--card-bg,#fff);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18);padding:6px 0;z-index:1000;min-width:200px}
-.auth-login-menu.auth-menu-open{display:flex;flex-direction:column}
-.auth-login-menu a{display:block;padding:10px 16px;color:var(--text-primary,#1f2937);text-decoration:none;font-size:.9rem;font-weight:500;transition:background .1s}
-.auth-login-menu a:hover{background:rgba(0,0,0,.06)}
-
-/* Top controls container for toggles */
-.top-controls{margin-bottom:10px}
+.puzzle-nav .auth-btn-container{display:flex;align-items:center;gap:6px;position:relative}
+.puzzle-nav .auth-btn{background:rgba(0,0,0,.2);color:var(--text-on-brand);border:1px solid rgba(255,255,255,.4);padding:4px 12px;border-radius:8px;cursor:pointer;font-size:.85rem;font-weight:500;white-space:nowrap;transition:background .15s,transform .1s}
+.puzzle-nav .auth-btn:hover{background:rgba(255,255,255,.28)}
+.puzzle-nav .auth-btn:active{transform:scale(.97)}
+.puzzle-nav .auth-btn-logout{background:rgba(0,0,0,.15);font-size:.8rem;padding:3px 10px}
+.puzzle-nav .auth-btn-logout:hover{background:rgba(220,50,50,.25)}
+.puzzle-nav .auth-user-name{color:var(--text-on-brand);font-size:.85rem;font-weight:500;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-decoration:none}
+.puzzle-nav .auth-user-name:hover{text-decoration:underline}
+.puzzle-nav .auth-login-menu{display:none;position:absolute;top:100%;right:0;margin-top:6px;background:var(--card-bg,#fff);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18);padding:6px 0;z-index:1000;min-width:200px}
+.puzzle-nav .auth-login-menu.auth-menu-open{display:flex;flex-direction:column}
+.puzzle-nav .auth-login-menu a{display:block;padding:10px 16px;color:var(--text-primary,#1f2937);text-decoration:none;font-size:.9rem;font-weight:500;transition:background .1s}
+.puzzle-nav .auth-login-menu a:hover{background:rgba(0,0,0,.06)}
 
 /* Clue direction enhancement */
 .clue-direction{display:flex;flex-direction:column;flex:1 1 auto;overflow:hidden;min-height:0;position:relative}
@@ -639,31 +647,39 @@ header p{font-size:.95rem}
         text-overflow: ellipsis;
     }
     .puzzle-size-selector,
-    .puzzle-meta,
-    .top-controls {
-        width: 100%;
+    .puzzle-meta {
+        width: fit-content;
+        max-width: 100%;
         justify-content: center;
         padding: 8px 10px;
         border-radius: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .top-controls {
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        border-radius: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
     .puzzle-meta {
         gap: 6px;
         margin: 6px auto 4px;
     }
-    .puzzle-info,
-    .generation-date,
-    .timer {
-        min-height: 30px;
-        padding: 5px 10px;
-        font-size: 0.75rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,.08);
-    }
-    .puzzle-info {
-        max-width: 100%;
-        margin-top: 0;
-    }
-    .puzzle-info span:not(:last-child)::after { margin: 0 6px; }
-    .generation-date { margin-top: 0; }
+    .puzzle-info,.generation-date,.timer{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:36px;
+  padding:8px 14px;
+  border-radius:999px;
+  border:1px solid color-mix(in srgb,var(--border) 78%,transparent);
+  background:color-mix(in srgb,var(--surface-raised) 88%,transparent);
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  backdrop-filter:blur(6px);
+}
 
     /* Hide top toggles container padding */
     .top-controls {
@@ -675,7 +691,7 @@ header p{font-size:.95rem}
         scrollbar-width: none;
     }
     .top-controls::-webkit-scrollbar { display: none; }
-    .clues-toggle, #leaderboard-toggle, #intro-toggle {
+    .clues-toggle, #leaderboard-toggle, #intro-toggle, #history-toggle, #help-toggle {
         margin: 4px 2px;
         padding: 10px 10px;
         font-size: 0.82rem;
@@ -723,7 +739,7 @@ header p{font-size:.95rem}
     
     /* Clues section header - compact or hidden */
     .clues-section h2 {
-        display: none; /* Hide "Ledtrådar" header on mobile to save space */
+        display: none; /* Hide "LedtrÃ¥dar" header on mobile to save space */
     }
 
     .grid-section {
@@ -791,8 +807,9 @@ header p{font-size:.95rem}
         min-width: 0;
     }
     .grid-inner .controls .grid-status-bar {
-        width: 100%;
+        width: auto;
         justify-content: center;
+        flex: 0 0 auto;
     }
 
     .crossword-grid {

@@ -113,6 +113,29 @@
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);
   --border: var(--border-light);
+
+  /* On-brand UI (nav/footer over gradient) */
+  --on-brand-surface: rgba(255, 255, 255, 0.1);
+  --on-brand-surface-hover: rgba(255, 255, 255, 0.13);
+  --on-brand-surface-active: rgba(255, 255, 255, 0.22);
+  --on-brand-border: rgba(255, 255, 255, 0.16);
+  --on-brand-border-strong: rgba(255, 255, 255, 0.4);
+  --on-brand-border-subtle: rgba(255, 255, 255, 0.15);
+  --on-brand-text: #ffffff;
+  --on-brand-text-muted: rgba(255, 255, 255, 0.8);
+  --on-brand-text-subtle: rgba(255, 255, 255, 0.62);
+  --on-brand-text-faint: rgba(255, 255, 255, 0.55);
+  --on-brand-separator: rgba(255, 255, 255, 0.28);
+  --on-brand-focus-ring: rgba(255, 255, 255, 0.5);
+
+  /* Notices */
+  --notice-warning-bg: var(--warn-bg);
+  --notice-warning-border: color-mix(in srgb, var(--warn-border) 35%, transparent);
+  --notice-warning-text: var(--warn-text);
+  --notice-warning-shadow: 0 1px 6px var(--shadow);
+
+  /* Browser form control theme */
+  --color-scheme: light;
 }
 
 [data-theme="dark"] {
@@ -212,6 +235,29 @@
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);
   --border: var(--border-medium);
+
+  /* On-brand UI (nav/footer over gradient) */
+  --on-brand-surface: rgba(255, 255, 255, 0.12);
+  --on-brand-surface-hover: rgba(255, 255, 255, 0.2);
+  --on-brand-surface-active: rgba(255, 255, 255, 0.26);
+  --on-brand-border: rgba(255, 255, 255, 0.22);
+  --on-brand-border-strong: rgba(255, 255, 255, 0.42);
+  --on-brand-border-subtle: rgba(255, 255, 255, 0.2);
+  --on-brand-text: #f8fbff;
+  --on-brand-text-muted: rgba(248, 251, 255, 0.88);
+  --on-brand-text-subtle: rgba(248, 251, 255, 0.72);
+  --on-brand-text-faint: rgba(248, 251, 255, 0.64);
+  --on-brand-separator: rgba(248, 251, 255, 0.4);
+  --on-brand-focus-ring: rgba(248, 251, 255, 0.6);
+
+  /* Notices */
+  --notice-warning-bg: color-mix(in srgb, var(--warn-bg) 88%, var(--surface-raised));
+  --notice-warning-border: color-mix(in srgb, var(--warn-border) 60%, var(--border));
+  --notice-warning-text: color-mix(in srgb, var(--warn-text) 80%, var(--text-primary));
+  --notice-warning-shadow: 0 1px 8px rgba(2, 8, 23, 0.38);
+
+  /* Browser form control theme */
+  --color-scheme: dark;
 }
 
 /* Info-page nav link */
