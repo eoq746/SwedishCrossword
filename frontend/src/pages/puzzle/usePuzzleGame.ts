@@ -125,9 +125,12 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const historyRows = useMemo<HistoryRow[]>(() => {
     const keys = Object.keys(history).sort((a, b) => b.localeCompare(a)).slice(0, 30);
     const rows: HistoryRow[] = [];
-    for (const key of keys) rows.push([key, history[key]]);
+    for (const key of keys) {
+      const filtered = history[key].filter(e => !e.puzzleSize || e.puzzleSize === size);
+      if (filtered.length > 0) rows.push([key, filtered]);
+    }
     return rows;
-  }, [history]);
+  }, [history, size]);
 
   const saveProgress = useCallback(
     (nextValues: Record<string, string>, nextSeconds: number, nextLetterHints: number, nextWordHints: number) => {

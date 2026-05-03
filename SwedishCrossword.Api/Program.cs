@@ -35,12 +35,15 @@ builder.Services.AddSingleton<IHistoryStore>(sp => sp.GetRequiredService<Leaderb
 builder.Services.AddSingleton<IUserProfileStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IFriendStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IAnalyticsStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IAdminStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<SubmissionTokenService>();
 builder.Services.AddSingleton<PuzzleCache>();
 builder.Services.AddSingleton<PuzzleDateIndex>();
 
 // Background service: pre-generates today's puzzle at startup so the first visitor never waits
-builder.Services.AddHostedService<PuzzleWarmupService>();
+// Registered as a singleton so it can also be injected into admin endpoints.
+builder.Services.AddSingleton<PuzzleWarmupService>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<PuzzleWarmupService>());
 
 // Background service: periodically prunes old leaderboard entries (removes work from write path)
 builder.Services.AddHostedService<LeaderboardPruneService>();
@@ -154,10 +157,14 @@ builder.Services.AddAuthorization(options =>
 {
     var adminIds = builder.Configuration.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
     options.AddPolicy("Admin", policy =>
-        policy.RequireAssertion(context =>
+        policy.RequireAssertion(async context =>
         {
             var userId = AuthEndpoints.GetUserId(context.User);
-            return userId is not null && adminIds.Contains(userId);
+            if (userId is null) return false;
+            if (adminIds.Contains(userId)) return true;
+            // Fall back to DB-granted admins
+            var store = (context.Resource as HttpContext)?.RequestServices.GetService<IAdminStore>();
+            return store is not null && await store.IsAdminAsync(userId);
         }));
 });
 

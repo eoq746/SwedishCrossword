@@ -83,6 +83,7 @@ export interface ScoreEntry {
   hintsUsed: number;
   wordHintsUsed: number;
   userId: string | null;
+  puzzleSize?: string | null;
 }
 
 export type HistoryResponse = Record<string, ScoreEntry[]>;

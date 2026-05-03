@@ -4,8 +4,10 @@ import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
 import {
   fetchAnalyticsSummary, fetchDailyAnalytics, fetchTopPlayers,
+  triggerRegenerateFuturePuzzles,
+  searchUserByAlias, fetchAdminGrants, grantAdmin, revokeAdmin,
   AccessDeniedError,
-  type AnalyticsSummary, type DailyAnalytics, type TopPlayer,
+  type AnalyticsSummary, type DailyAnalytics, type TopPlayer, type AdminGrant,
 } from '../api/admin';
 import '../styles/static-pages.css';
 
@@ -151,6 +153,189 @@ function PlayersSection({ players }: { players: TopPlayer[] }) {
   );
 }
 
+// ── Admin user management ─────────────────────────────────────────────────────
+
+function AdminUsersSection() {
+  const [searchAlias, setSearchAlias] = useState('');
+  const [searchResult, setSearchResult] = useState<{ userId: string; alias: string } | null>(null);
+  const [searchError, setSearchError] = useState<string | null>(null);
+  const [searching, setSearching] = useState(false);
+
+  const [grants, setGrants] = useState<AdminGrant[]>([]);
+  const [grantsLoading, setGrantsLoading] = useState(true);
+  const [actionError, setActionError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetchAdminGrants()
+      .then(setGrants)
+      .catch(() => setGrants([]))
+      .finally(() => setGrantsLoading(false));
+  }, []);
+
+  const handleSearch = async () => {
+    const alias = searchAlias.trim();
+    if (!alias) return;
+    setSearching(true);
+    setSearchResult(null);
+    setSearchError(null);
+    try {
+      const result = await searchUserByAlias(alias);
+      setSearchResult(result);
+    } catch (e) {
+      setSearchError(e instanceof Error && e.message.includes('404') ? 'Ingen användare hittades med det aliaseet.' : 'Sökning misslyckades.');
+    } finally {
+      setSearching(false);
+    }
+  };
+
+  const handleGrant = async (userId: string) => {
+    setActionError(null);
+    try {
+      await grantAdmin(userId);
+      const updated = await fetchAdminGrants();
+      setGrants(updated);
+      setSearchResult(null);
+      setSearchAlias('');
+    } catch {
+      setActionError('Kunde inte ge adminrättigheter. Försök igen.');
+    }
+  };
+
+  const handleRevoke = async (userId: string) => {
+    setActionError(null);
+    try {
+      await revokeAdmin(userId);
+      setGrants(prev => prev.filter(g => g.userId !== userId));
+    } catch {
+      setActionError('Kunde inte ta bort adminrättigheter. Försök igen.');
+    }
+  };
+
+  const isAlreadyGranted = (userId: string) => grants.some(g => g.userId === userId);
+
+  return (
+    <div className="admin-section">
+      <h2>👤 Adminrättigheter</h2>
+
+      {/* Search */}
+      <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
+        <input
+          className="alias-input"
+          type="text"
+          placeholder="Sök på alias…"
+          value={searchAlias}
+          onChange={e => setSearchAlias(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') void handleSearch(); }}
+          style={{ flex: '1 1 180px', minWidth: 0 }}
+        />
+        <button className="admin-refresh-btn" onClick={() => void handleSearch()} disabled={searching}>
+          {searching ? '⏳' : '🔍 Sök'}
+        </button>
+      </div>
+
+      {searchError && <p className="leaderboard-error" style={{ marginBottom: 8 }}>{searchError}</p>}
+
+      {searchResult && (
+        <div className="admin-table-wrap" style={{ marginBottom: 12 }}>
+          <table className="leaderboard-table">
+            <thead>
+              <tr><th>Alias</th><th>User-ID</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{searchResult.alias}</td>
+                <td><code style={{ fontSize: '0.75em' }}>{searchResult.userId.slice(0, 12)}…</code></td>
+                <td>
+                  {isAlreadyGranted(searchResult.userId)
+                    ? <span className="badge badge-verified">✓ Admin</span>
+                    : (
+                      <button className="admin-refresh-btn" onClick={() => void handleGrant(searchResult.userId)}>
+                        ＋ Ge admin
+                      </button>
+                    )
+                  }
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Granted admins list */}
+      <h3 style={{ marginBottom: 8, fontSize: '0.95rem' }}>Tilldelade admins</h3>
+      {grantsLoading && <p className="leaderboard-loading">Laddar…</p>}
+      {!grantsLoading && grants.length === 0 && (
+        <p className="profile-empty">Inga adminrättigheter tilldelade ännu.</p>
+      )}
+      {!grantsLoading && grants.length > 0 && (
+        <div className="admin-table-wrap">
+          <table className="leaderboard-table">
+            <thead>
+              <tr><th>Alias</th><th>Tilldelad av</th><th>Datum</th><th></th></tr>
+            </thead>
+            <tbody>
+              {grants.map(g => (
+                <tr key={g.userId}>
+                  <td>{g.alias ?? <em>Okänt alias</em>}</td>
+                  <td>{g.grantedByAlias ?? '–'}</td>
+                  <td>{new Date(g.grantedAt * 1000).toLocaleDateString('sv-SE')}</td>
+                  <td>
+                    <button className="admin-refresh-btn" style={{ color: 'var(--color-error, #c00)' }} onClick={() => void handleRevoke(g.userId)}>
+                      Ta bort
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {actionError && <p className="leaderboard-error" style={{ marginTop: 8 }}>{actionError}</p>}
+    </div>
+  );
+}
+
+// ── Puzzle regeneration ───────────────────────────────────────────────────────
+
+function RegeneratePuzzlesSection() {
+  const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
+
+  const handleRegenerate = async () => {
+    if (status === 'running') return;
+    setStatus('running');
+    try {
+      await triggerRegenerateFuturePuzzles();
+      setStatus('done');
+    } catch {
+      setStatus('error');
+    }
+  };
+
+  return (
+    <div className="admin-section">
+      <h2>🔄 Framtida pussel</h2>
+      <p className="profile-empty" style={{ marginBottom: 12 }}>
+        Tar bort och regenererar alla förberäknade pussel från och med imorgon.
+        Dagens pussel berörs inte.
+      </p>
+      <button
+        className="admin-refresh-btn"
+        onClick={() => void handleRegenerate()}
+        disabled={status === 'running'}
+      >
+        {status === 'running' ? '⏳ Regenererar…' : '🔄 Regenerera framtida pussel'}
+      </button>
+      {status === 'done' && (
+        <p className="badge badge-verified" style={{ marginTop: 8 }}>✅ Klart! Framtida pussel har genererats om.</p>
+      )}
+      {status === 'error' && (
+        <p className="leaderboard-error" style={{ marginTop: 8 }}>⚠️ Något gick fel. Försök igen.</p>
+      )}
+    </div>
+  );
+}
+
 // ── Main page ─────────────────────────────────────────────────────────────────
 
 interface DashboardData {
@@ -234,6 +419,8 @@ export default function AdminPage() {
 
       <DailySection daily={data.daily} />
       <PlayersSection players={data.players} />
+      <AdminUsersSection />
+      <RegeneratePuzzlesSection />
 
       <Link to="/profile" className="back-link">← Tillbaka till profil</Link>
     </div>

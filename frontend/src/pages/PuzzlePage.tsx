@@ -83,7 +83,12 @@ export default function PuzzlePage() {
     controlsRef,
     columns: puzzle?.width ?? 0,
     rows: puzzle?.height ?? 0,
-    layoutKey: showIntro ? 'intro-open' : 'intro-closed',
+    layoutKey: [
+      showIntro ? 'intro' : '',
+      showClues ? 'clues' : '',
+      showLeaderboardPanel ? 'lb' : '',
+      showHistoryPanel ? 'hist' : '',
+    ].join('-'),
   });
 
   useEffect(() => {

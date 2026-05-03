@@ -1762,6 +1762,21 @@ public class CrosswordGrid
                 return false;
         }
 
+        // A bend arrow must not be placed in a fully open white intersection.
+        // If the bend cell has white cells on both sides horizontally and vertically,
+        // the arrow is visually ambiguous and should not be used for vinkelord.
+        for (int s = 0; s < segments.Count - 1; s++)
+        {
+            int bendRow = segments[s].EndRow;
+            int bendCol = segments[s].EndCol;
+
+            bool acrossBothWhite = IsWhiteCell(bendRow, bendCol - 1) && IsWhiteCell(bendRow, bendCol + 1);
+            bool downBothWhite = IsWhiteCell(bendRow - 1, bendCol) && IsWhiteCell(bendRow + 1, bendCol);
+
+            if (acrossBothWhite && downBothWhite)
+                return false;
+        }
+
         // The start cell must not already carry a BendArrowDirection. If it does, the
         // new word would visually appear as a continuation of the existing bend,
         // creating the illusion of a single word with two bends.
@@ -1775,6 +1790,11 @@ public class CrosswordGrid
             return false;
 
         return true;
+    }
+
+    private bool IsWhiteCell(int row, int col)
+    {
+        return IsValidPosition(row, col) && !GetCell(row, col).IsBlocked;
     }
 
     /// <summary>

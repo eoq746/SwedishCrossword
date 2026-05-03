@@ -531,6 +531,10 @@ public class CrosswordGridTests
         grid.TryPlaceBentWordWithValidation(abcd, segsAbcd);
         // ABCD Across tail: D at (2,1)
 
+        // Break the fully-open-white intersection rule at XYZW's bend cell (2,3)
+        // so this test continues to verify only the bent-tail adjacency behavior.
+        grid.GetCell(2, 2).Block();
+
         // "XYZW" is completely to the right; W(2,4) follows Z(2,3), which is not any tail
         var xyzw = new Word("XYZW", "Test");
         var segsXyzw = new List<WordSegment>
@@ -539,5 +543,38 @@ public class CrosswordGridTests
             new WordSegment { StartRow = 2, StartCol = 3, Direction = Direction.Across, Length = 2 }, // Z W  (Z shared)
         };
         await Assert.That(grid.CanPlaceBentWord(xyzw, segsXyzw)).IsTrue();
+    }
+
+    [Test]
+    public async Task CanPlaceBentWord_ReturnsFalse_WhenBendCellHasWhiteCellsOnBothSidesAcrossAndDown()
+    {
+        var grid = new CrosswordGrid(7, 7);
+
+        var word = new Word("ABCDE", "Test");
+        var segments = new List<WordSegment>
+        {
+            new WordSegment { StartRow = 3, StartCol = 2, Direction = Direction.Across, Length = 3 },
+            new WordSegment { StartRow = 3, StartCol = 4, Direction = Direction.Down,   Length = 3 },
+        };
+
+        await Assert.That(grid.CanPlaceBentWord(word, segments)).IsFalse();
+    }
+
+    [Test]
+    public async Task CanPlaceBentWord_ReturnsTrue_WhenBendCellIsNotOpenWhiteOnBothAxes()
+    {
+        var grid = new CrosswordGrid(7, 7);
+
+        // Break the fully-open-white intersection around the bend cell.
+        grid.GetCell(3, 5).Block();
+
+        var word = new Word("ABCDE", "Test");
+        var segments = new List<WordSegment>
+        {
+            new WordSegment { StartRow = 3, StartCol = 2, Direction = Direction.Across, Length = 3 },
+            new WordSegment { StartRow = 3, StartCol = 4, Direction = Direction.Down,   Length = 3 },
+        };
+
+        await Assert.That(grid.CanPlaceBentWord(word, segments)).IsTrue();
     }
 }

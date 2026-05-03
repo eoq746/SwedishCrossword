@@ -59,3 +59,14 @@ internal interface IAnalyticsStore
     Task<List<DailyAnalytics>> GetDailyAnalyticsAsync(int days);
     Task<List<TopPlayer>> GetTopPlayersAsync(int limit);
 }
+
+/// <summary>
+/// Dynamic admin grant operations. Config-based admins are checked separately.
+/// </summary>
+internal interface IAdminStore
+{
+    Task<bool> IsAdminAsync(string userId);
+    Task GrantAdminAsync(string userId, string grantedByUserId);
+    Task RevokeAdminAsync(string userId);
+    Task<List<AdminGrantInfo>> ListGrantedAdminsAsync();
+}

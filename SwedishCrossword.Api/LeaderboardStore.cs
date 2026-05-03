@@ -14,7 +14,7 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IDisposable
+sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IDisposable
 {
     [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
     public static partial Regex DatePattern { get; }
@@ -1226,6 +1226,75 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return await cmd.ExecuteNonQueryAsync() > 0;
     }
 
+    // ── Admin grants ──
+
+    public async Task<bool> IsAdminAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT COUNT(1) FROM admin_grants WHERE user_id = @userId";
+        AddParam(cmd, "@userId", userId);
+        var result = await cmd.ExecuteScalarAsync();
+        return Convert.ToInt32(result, System.Globalization.CultureInfo.InvariantCulture) > 0;
+    }
+
+    public async Task GrantAdminAsync(string userId, string grantedByUserId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              IF NOT EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @userId)
+                  INSERT INTO admin_grants (user_id, granted_by, granted_at) VALUES (@userId, @grantedBy, @now)
+              """
+            : "INSERT OR IGNORE INTO admin_grants (user_id, granted_by, granted_at) VALUES (@userId, @grantedBy, @now)";
+        AddParam(cmd, "@userId", userId);
+        AddParam(cmd, "@grantedBy", grantedByUserId);
+        AddParam(cmd, "@now", DateTimeOffset.UtcNow.ToUnixTimeSeconds());
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    public async Task RevokeAdminAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "DELETE FROM admin_grants WHERE user_id = @userId";
+        AddParam(cmd, "@userId", userId);
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    public async Task<List<AdminGrantInfo>> ListGrantedAdminsAsync()
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        // Load alias lookup in one pass
+        var aliases = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        await using (var aliasCmd = conn.CreateCommand())
+        {
+            aliasCmd.CommandText = "SELECT user_id, alias FROM user_aliases";
+            await using var aliasReader = await aliasCmd.ExecuteReaderAsync();
+            while (await aliasReader.ReadAsync())
+                aliases[aliasReader.GetString(0)] = aliasReader.GetString(1);
+        }
+
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT user_id, granted_by, granted_at FROM admin_grants ORDER BY granted_at DESC";
+
+        var result = new List<AdminGrantInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            var uid = reader.GetString(0);
+            var grantedBy = reader.IsDBNull(1) ? null : reader.GetString(1);
+            var grantedAt = reader.GetInt64(2);
+            aliases.TryGetValue(uid, out var alias);
+            string? grantedByAlias = null;
+            if (grantedBy is not null) aliases.TryGetValue(grantedBy, out grantedByAlias);
+            result.Add(new AdminGrantInfo(uid, alias, grantedAt, grantedByAlias));
+        }
+        return result;
+    }
+
     // ── Database initialisation ──
 
     private void InitialiseDatabase()
@@ -1324,6 +1393,13 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_challenges_from_date')
             CREATE INDEX idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'admin_grants')
+            CREATE TABLE admin_grants (
+                user_id     NVARCHAR(200) NOT NULL PRIMARY KEY,
+                granted_by  NVARCHAR(200) NULL,
+                granted_at  BIGINT NOT NULL
+            );
             """;
         cmd.ExecuteNonQuery();
         _logger.LogInformation("Azure SQL database initialised");
@@ -1418,6 +1494,12 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             );
             CREATE INDEX IF NOT EXISTS idx_friend_challenges_to_status ON friend_challenges (to_user_id, status);
             CREATE INDEX IF NOT EXISTS idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
+
+            CREATE TABLE IF NOT EXISTS admin_grants (
+                user_id     TEXT NOT NULL PRIMARY KEY,
+                granted_by  TEXT,
+                granted_at  INTEGER NOT NULL
+            );
             """;
         create.ExecuteNonQuery();
     }

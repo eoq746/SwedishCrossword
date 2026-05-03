@@ -57,7 +57,7 @@ internal static class AuthEndpoints
             return Results.Challenge(properties, [scheme]);
         });
 
-        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IConfiguration config, ILoggerFactory loggerFactory) =>
+        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IAdminStore adminStore, IConfiguration config, ILoggerFactory loggerFactory) =>
         {
             if (user.Identity?.IsAuthenticated != true)
                 return Results.Json(new { authenticated = false });
@@ -91,7 +91,8 @@ internal static class AuthEndpoints
             }
 
             var adminIds = config.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
-            var isAdmin = userId is not null && adminIds.Contains(userId);
+            var isAdmin = userId is not null &&
+                          (adminIds.Contains(userId) || await adminStore.IsAdminAsync(userId));
 
             return Results.Json(new
             {

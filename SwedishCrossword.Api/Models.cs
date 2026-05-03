@@ -51,3 +51,7 @@ record FriendChallengeInfo(string Id, string FriendAlias, string Date, string St
 // GDPR data export
 record UserDataExport(string UserId, string? Alias, List<UserSolveRecord> History, List<UserScoreExport> Scores, List<string> Friends);
 record UserScoreExport(string LeaderboardKey, string Name, double Time, long? Timestamp);
+
+// Admin grant management
+record GrantAdminRequest(string UserId);
+record AdminGrantInfo(string UserId, string? Alias, long GrantedAt, string? GrantedByAlias);

@@ -47,13 +47,6 @@ export function usePuzzleLayout({
         return;
       }
 
-      const top = Math.floor(gridSection.getBoundingClientRect().top);
-      const viewportHeight = window.innerHeight;
-      const maxBoardHeight = viewportHeight - top - 16;
-      if (maxBoardHeight <= 0) return;
-
-      const panelHeight = Math.min(maxBoardHeight, 1120);
-
       const gridSectionStyle = window.getComputedStyle(gridSection);
       const verticalPadding =
         (parseFloat(gridSectionStyle.paddingTop || '0') || 0) +
@@ -69,7 +62,6 @@ export function usePuzzleLayout({
       const gridInnerGap = 12;
 
       const chromeHeight = verticalPadding + headerHeight + headerMarginBottom + controlsHeight + controlsMarginBottom + gridInnerGap;
-      const availableGridHeight = Math.max(320, panelHeight - chromeHeight);
       const availableGridWidth = Math.max(320, Math.floor(gridSection.clientWidth - horizontalPadding));
 
       const borderAllowance = 8;
@@ -78,22 +70,20 @@ export function usePuzzleLayout({
       const maxCellSize = rows <= 10 ? 78 : rows <= 15 ? 64 : 54;
       const gridCellSize = Math.max(
         28,
-        Math.floor(
-          Math.min(
-            (availableGridWidth - borderAllowance - columnGapAllowance) / columns,
-            (availableGridHeight - borderAllowance - rowGapAllowance) / rows,
-            maxCellSize,
-          ),
+        Math.min(
+          Math.floor((availableGridWidth - borderAllowance - columnGapAllowance) / columns),
+          maxCellSize,
         ),
       );
 
       const gridWidth = borderAllowance + columnGapAllowance + gridCellSize * columns;
       const gridHeight = borderAllowance + rowGapAllowance + gridCellSize * rows;
-      const supportPanelHeight = Math.max(260, Math.floor((panelHeight - 20) / 2));
+      const boardHeight = chromeHeight + gridHeight;
+      const supportPanelHeight = Math.max(260, Math.floor((boardHeight - 20) / 2));
 
       setLayout({
-        boardHeight: panelHeight,
-        gridAreaHeight: availableGridHeight,
+        boardHeight,
+        gridAreaHeight: gridHeight,
         gridCellSize,
         gridWidth,
         gridHeight,
