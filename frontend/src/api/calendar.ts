@@ -1,3 +1,5 @@
+import { fetchWithTimeout } from './http';
+
 /** One entry from GET /api/puzzle/dates */
 export interface PuzzleDateEntry {
   date: string;   // "yyyy-MM-dd"
@@ -9,8 +11,9 @@ export type DateSizeMap = Record<string, string[]>;
 
 /** Fetch available puzzle dates and return as a DateSizeMap. */
 export async function fetchPuzzleDates(): Promise<DateSizeMap> {
-  const res = await fetch('/api/puzzle/dates', {
-    signal: AbortSignal.timeout(10_000),
+  const res = await fetchWithTimeout('/api/puzzle/dates', {
+    timeoutMs: 20_000,
+    retries: 1,
   });
   if (!res.ok) throw new Error(`Failed to load puzzle dates: ${res.status}`);
   const data: (PuzzleDateEntry | string)[] = await res.json();

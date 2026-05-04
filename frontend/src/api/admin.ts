@@ -1,3 +1,5 @@
+import { fetchWithTimeout } from './http';
+
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface SizeCompletions {
@@ -44,6 +46,7 @@ export interface AdminGrant {
 export interface UserSearchResult {
   userId: string;
   alias: string;
+  exactMatch?: boolean;
 }
 
 export interface ClueFlag {
@@ -60,6 +63,7 @@ export interface ClueFlag {
   puzzleSize: string | null;
   puzzleHash: string | null;
   adminNote: string | null;
+  reportCount: number;
 }
 
 export interface BlobSyncConflictDetail {
@@ -92,12 +96,30 @@ export interface BlobSyncResult {
 
 // ── Fetch helpers ─────────────────────────────────────────────────────────────
 
-const OPT: RequestInit = { credentials: 'same-origin', signal: AbortSignal.timeout(10_000) };
+const BASE_TIMEOUT_MS = 20_000;
+const OPT: RequestInit = { credentials: 'same-origin' };
+
+async function readApiError(res: Response): Promise<string> {
+  try {
+    const body = await res.json() as { error?: string; Error?: string; title?: string };
+    if (typeof body?.error === 'string' && body.error) return body.error;
+    if (typeof body?.Error === 'string' && body.Error) return body.Error;
+    if (typeof body?.title === 'string' && body.title) return body.title;
+  } catch {
+    // ignore parse errors and fall back to status-based message
+  }
+
+  return `HTTP ${res.status}`;
+}
 
 async function apiFetch<T>(url: string): Promise<T> {
-  const res = await fetch(url, OPT);
+  const res = await fetchWithTimeout(url, {
+    ...OPT,
+    timeoutMs: BASE_TIMEOUT_MS,
+    retries: 1,
+  });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
   return res.json() as Promise<T>;
 }
 
@@ -120,17 +142,18 @@ export function fetchTopPlayers(limit = 20): Promise<TopPlayer[]> {
 }
 
 export async function triggerRegenerateFuturePuzzles(): Promise<void> {
-  const res = await fetch('/api/admin/puzzle/regenerate-future', {
+  const res = await fetchWithTimeout('/api/admin/puzzle/regenerate-future', {
     method: 'POST',
     credentials: 'same-origin',
-    signal: AbortSignal.timeout(120_000),
+    timeoutMs: 120_000,
+    retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
 }
 
-export function searchUserByAlias(alias: string): Promise<UserSearchResult> {
-  return apiFetch(`/api/admin/users/search?q=${encodeURIComponent(alias)}`);
+export function searchUserByAlias(alias: string, limit = 10): Promise<UserSearchResult[]> {
+  return apiFetch(`/api/admin/users/search?q=${encodeURIComponent(alias)}&limit=${limit}`);
 }
 
 export function fetchAdminGrants(): Promise<AdminGrant[]> {
@@ -138,25 +161,27 @@ export function fetchAdminGrants(): Promise<AdminGrant[]> {
 }
 
 export async function grantAdmin(userId: string): Promise<void> {
-  const res = await fetch('/api/admin/grants', {
+  const res = await fetchWithTimeout('/api/admin/grants', {
     method: 'POST',
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId }),
-    signal: AbortSignal.timeout(10_000),
+    timeoutMs: BASE_TIMEOUT_MS,
+    retries: 1,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
 }
 
 export async function revokeAdmin(userId: string): Promise<void> {
-  const res = await fetch(`/api/admin/grants/${encodeURIComponent(userId)}`, {
+  const res = await fetchWithTimeout(`/api/admin/grants/${encodeURIComponent(userId)}`, {
     method: 'DELETE',
     credentials: 'same-origin',
-    signal: AbortSignal.timeout(10_000),
+    timeoutMs: BASE_TIMEOUT_MS,
+    retries: 1,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
 }
 
 export function fetchPendingClueFlags(limit = 100): Promise<ClueFlag[]> {
@@ -171,39 +196,42 @@ export async function resolveClueFlag(
   expectedWordListVersion?: string,
   removeClue = false,
 ): Promise<{ wordListVersion?: string }> {
-  const res = await fetch(`/api/admin/clues/flags/${encodeURIComponent(id)}/resolve`, {
+  const res = await fetchWithTimeout(`/api/admin/clues/flags/${encodeURIComponent(id)}/resolve`, {
     method: 'POST',
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status, updatedClue, adminNote, expectedWordListVersion, removeClue }),
-    signal: AbortSignal.timeout(180_000),
+    timeoutMs: 180_000,
+    retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
   return res.json() as Promise<{ wordListVersion?: string }>;
 }
 
 export async function createCustomClue(word: string, clue: string, category?: string, difficulty?: string): Promise<void> {
-  const res = await fetch('/api/admin/clues/custom', {
+  const res = await fetchWithTimeout('/api/admin/clues/custom', {
     method: 'POST',
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ word, clue, category, difficulty }),
-    signal: AbortSignal.timeout(180_000),
+    timeoutMs: 180_000,
+    retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
 }
 
 export async function syncWordListsDevToProd(dryRun: boolean): Promise<BlobSyncResult> {
-  const res = await fetch('/api/admin/wordlists/sync-dev-to-prod', {
+  const res = await fetchWithTimeout('/api/admin/wordlists/sync-dev-to-prod', {
     method: 'POST',
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ dryRun }),
-    signal: AbortSignal.timeout(240_000),
+    timeoutMs: 240_000,
+    retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
   return res.json() as Promise<BlobSyncResult>;
 }

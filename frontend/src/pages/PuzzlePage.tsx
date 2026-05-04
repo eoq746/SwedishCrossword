@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { createClueFlag } from '../api/clues';
 import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { PuzzleClues } from './puzzle/PuzzleClues';
 import { PuzzleGrid } from './puzzle/PuzzleGrid';
 import { PuzzleHistorySection } from './puzzle/PuzzleHistorySection';
 import { PuzzleLeaderboardSection } from './puzzle/PuzzleLeaderboardSection';
-import type { PuzzleSize } from './puzzle/types';
+import type { ClueEntry, PuzzleSize } from './puzzle/types';
 import { formatLeaderboardTime, usePuzzleGame } from './puzzle/usePuzzleGame';
 import { usePuzzleLayout } from './puzzle/usePuzzleLayout';
 import '../styles/static-pages.css';
@@ -16,6 +17,16 @@ const SIZES: Array<{ key: PuzzleSize; label: string; sub: string }> = [
   { key: '15x15', label: '🟡 Mellan', sub: '15×15' },
   { key: '17x17', label: '🔴 Stor', sub: '17×17' },
 ];
+
+const CLUE_REPORTS_PREFIX = 'crossword-reported-clues:';
+
+function getReportStorageKey(puzzleHash: string, puzzleDate: string): string {
+  return `${CLUE_REPORTS_PREFIX}${puzzleHash || puzzleDate}`;
+}
+
+function getClueReportKey(entry: ClueEntry): string {
+  return `${entry.id}:${entry.clue}`;
+}
 
 export default function PuzzlePage() {
   const [searchParams] = useSearchParams();
@@ -33,6 +44,12 @@ export default function PuzzlePage() {
   const [showLeaderboardPanel, setShowLeaderboardPanel] = useState(false);
   const [showIntro, setShowIntro] = useState(false);
   const [showHistoryPanel, setShowHistoryPanel] = useState(false);
+  const [reportingClue, setReportingClue] = useState<ClueEntry | null>(null);
+  const [reportWord, setReportWord] = useState('');
+  const [reportSuggestedClue, setReportSuggestedClue] = useState('');
+  const [reportReason, setReportReason] = useState('');
+  const [reportSubmitting, setReportSubmitting] = useState(false);
+  const [reportedClueKeys, setReportedClueKeys] = useState<Record<string, boolean>>({});
 
   const {
     loading,
@@ -102,6 +119,7 @@ export default function PuzzlePage() {
         setUsernameModalOpen(false);
         setMessageModal(null);
         setConfirmModal(null);
+        setReportingClue(null);
       }
     };
 
@@ -142,7 +160,7 @@ export default function PuzzlePage() {
 
     setMessageModal({
       title: 'Felaktiga bokstäver',
-      body: `${result.incorrectCount} bokstäver är felaktiga. Försök igen!`,
+      body: `${result.incorrectCount} bokstäver är felaktiga. Försök igen!` ,
     });
   };
 
@@ -217,6 +235,92 @@ export default function PuzzlePage() {
   };
 
   useEffect(() => {
+    const storageKey = getReportStorageKey(puzzle?.puzzleHash ?? '', puzzleDate);
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (!raw) {
+        setReportedClueKeys({});
+        return;
+      }
+      const parsed = JSON.parse(raw) as Record<string, boolean>;
+      setReportedClueKeys(parsed ?? {});
+    } catch {
+      setReportedClueKeys({});
+    }
+  }, [puzzle?.puzzleHash, puzzleDate]);
+
+  const isClueAlreadyReported = (entry: ClueEntry) => Boolean(reportedClueKeys[getClueReportKey(entry)]);
+
+  const buildWordPrefill = (entry: ClueEntry): string =>
+    entry.cells
+      .map(cell => (values[`${cell.row},${cell.col}`] ?? '').trim().toUpperCase())
+      .join('')
+      .replace(/[^A-ZÅÄÖ]/gi, '');
+
+  const handleOpenClueReport = (entry: ClueEntry) => {
+    if (isClueAlreadyReported(entry)) {
+      setMessageModal({ title: 'Redan rapporterad', body: 'Du har redan rapporterat denna ledtråd för det här pusslet.' });
+      return;
+    }
+
+    setReportingClue(entry);
+    setReportWord(buildWordPrefill(entry));
+    setReportSuggestedClue(entry.clue);
+    setReportReason('');
+  };
+
+  const handleSubmitClueReport = async () => {
+    if (!reportingClue || reportSubmitting) return;
+
+    const word = reportWord.trim().toUpperCase();
+    if (!word) {
+      setMessageModal({
+        title: 'Svarsord saknas',
+        body: 'Ange svarsordet så att admin kan koppla rapporten till rätt ordpost.',
+      });
+      return;
+    }
+
+    setReportSubmitting(true);
+    try {
+      await createClueFlag({
+        word,
+        currentClue: reportingClue.clue,
+        suggestedClue: reportSuggestedClue.trim() || undefined,
+        reason: reportReason.trim() || undefined,
+        puzzleDate,
+        puzzleSize: size,
+        puzzleHash: puzzle?.puzzleHash,
+      });
+
+      const clueKey = getClueReportKey(reportingClue);
+      const storageKey = getReportStorageKey(puzzle?.puzzleHash ?? '', puzzleDate);
+      setReportedClueKeys(prev => {
+        const next = { ...prev, [clueKey]: true };
+        try {
+          localStorage.setItem(storageKey, JSON.stringify(next));
+        } catch {
+          // ignore storage quota/privacy failures
+        }
+        return next;
+      });
+
+      setReportingClue(null);
+      setMessageModal({
+        title: 'Tack!',
+        body: 'Ledtråden har rapporterats till admin för granskning.',
+      });
+    } catch {
+      setMessageModal({
+        title: 'Rapportering misslyckades',
+        body: 'Kunde inte skicka rapporten just nu. Försök igen om en stund.',
+      });
+    } finally {
+      setReportSubmitting(false);
+    }
+  };
+
+  useEffect(() => {
     autoScrollKeyRef.current = null;
   }, [puzzle?.puzzleHash, size, dateParam]);
 
@@ -247,12 +351,12 @@ export default function PuzzlePage() {
         {SIZES.map(s => (
           <Link
             key={s.key}
-            to={`/puzzle${dateParam ? `?size=${s.key}&date=${dateParam}` : `?size=${s.key}`}`}
+            to={`/puzzle${dateParam ? `?size=${s.key}&date=${dateParam}` : `?size=${s.key}`}` }
             className={`size-tab${size === s.key ? ' active' : ''}`}
           >
             {s.label} <span className="size-sub">{s.sub}</span>
           </Link>
-        ))}
+        )) }
       </div>
 
       {puzzle ? (
@@ -378,6 +482,7 @@ export default function PuzzlePage() {
         </div>
       )}
 
+
       {puzzleNotFound && !loading && (
         <div className="unavailable-card">
           <div className="unavailable-icon">📅</div>
@@ -452,6 +557,8 @@ export default function PuzzlePage() {
                 const first = entry.cells[0];
                 if (first) activateCell(first.row, first.col, entry.direction);
               }}
+              onReport={handleOpenClueReport}
+              isReported={isClueAlreadyReported}
               height={layout.boardHeight}
             />
 
@@ -507,6 +614,58 @@ export default function PuzzlePage() {
           <div className="modal-buttons">
             <button className="btn btn-primary" onClick={() => confirmModal?.onConfirm()}>Ja</button>
             <button className="btn btn-secondary" onClick={() => setConfirmModal(null)}>Avbryt</button>
+          </div>
+        </div>
+      </div>
+
+      <div className={`modal-overlay${reportingClue ? ' active' : ''}`} role="dialog" aria-modal="true" aria-labelledby="clue-report-title">
+        <div className="modal">
+          <h3 id="clue-report-title">Rapportera ledtråd</h3>
+          <p>
+            {reportingClue
+              ? `Ledtråd ${reportingClue.number} (${reportingClue.direction === 'across' ? 'vågrätt' : 'lodrätt'}): ${reportingClue.clue}`
+              : '' }
+          </p>
+
+          <label htmlFor="report-word-input">Svarsord</label>
+          <input
+            id="report-word-input"
+            type="text"
+            value={reportWord}
+            onChange={e => setReportWord(e.target.value)}
+            maxLength={64}
+            autoComplete="off"
+            placeholder="Exempel: KATT"
+            disabled={reportSubmitting}
+          />
+
+          <label htmlFor="report-suggested-clue-input" style={{ marginTop: 8 }}>Föreslagen bättre ledtråd</label>
+          <input
+            id="report-suggested-clue-input"
+            type="text"
+            value={reportSuggestedClue}
+            onChange={e => setReportSuggestedClue(e.target.value)}
+            maxLength={500}
+            autoComplete="off"
+            disabled={reportSubmitting}
+          />
+
+          <label htmlFor="report-reason-input" style={{ marginTop: 8 }}>Orsak (valfritt)</label>
+          <textarea
+            id="report-reason-input"
+            value={reportReason}
+            onChange={e => setReportReason(e.target.value)}
+            rows={3}
+            maxLength={1000}
+            placeholder="Varför är ledtråden dålig eller missvisande?"
+            disabled={reportSubmitting}
+          />
+
+          <div className="modal-buttons">
+            <button className="btn btn-primary" onClick={() => void handleSubmitClueReport()} disabled={reportSubmitting}>
+              {reportSubmitting ? 'Skickar…' : 'Skicka rapport'}
+            </button>
+            <button className="btn btn-secondary" onClick={() => setReportingClue(null)} disabled={reportSubmitting}>Avbryt</button>
           </div>
         </div>
       </div>

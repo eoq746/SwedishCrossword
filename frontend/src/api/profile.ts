@@ -1,3 +1,5 @@
+import { fetchWithTimeout } from './http';
+
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface SizeStatsEntry {
@@ -61,10 +63,16 @@ export interface FriendChallengeInfo {
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
-const OPT: RequestInit = { credentials: 'same-origin', signal: AbortSignal.timeout(10_000) };
+const DEFAULT_TIMEOUT_MS = 20_000;
+const OPT: RequestInit = { credentials: 'same-origin' };
 
 async function apiFetch<T>(input: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(input, { ...OPT, ...init });
+  const res = await fetchWithTimeout(input, {
+    ...OPT,
+    ...init,
+    timeoutMs: DEFAULT_TIMEOUT_MS,
+    retries: 1,
+  });
   if (!res.ok) {
     const body = await res.json().catch(() => ({})) as Record<string, unknown>;
     throw new Error((body['error'] as string | undefined) ?? `HTTP ${res.status}`);
@@ -143,9 +151,10 @@ export function respondChallenge(challengeId: string, accepted: boolean): Promis
 // ── GDPR ──────────────────────────────────────────────────────────────────────
 
 export async function exportMyData(): Promise<void> {
-  const res = await fetch('/api/auth/my-data', {
+  const res = await fetchWithTimeout('/api/auth/my-data', {
     credentials: 'same-origin',
-    signal: AbortSignal.timeout(30_000),
+    timeoutMs: 45_000,
+    retries: 1,
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data: unknown = await res.json();

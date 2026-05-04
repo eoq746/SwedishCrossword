@@ -19,13 +19,14 @@ A Swedish crossword puzzle generator
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
   - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
-  - Dedicated leaderboard page (`leaderboard.html`) with medal podium for top 3, filtered by the current puzzle size
+  - Dedicated leaderboard route (`/leaderboard`) with medal podium for top 3, filtered by puzzle size
   - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
   - Player statistics per size: total solved, current/best streak, best time, average time — with automatic migration from legacy flat format
   - Puzzle archive calendar with size-filter toggle buttons
   - Server-computed difficulty rating displayed per puzzle
   - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
   - 503 handling: friendly "puzzle generating" page when puzzles aren't ready yet
+  - In-game clue reporting (players can flag bad clues directly from the clues panel)
 - **PWA**: Web app manifest for installability (`site.webmanifest`)
 - **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
 - **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
@@ -34,11 +35,11 @@ A Swedish crossword puzzle generator
 - **Ads & Consent-Gated Loading**: Google AdSense is loaded via `cookie-consent.js`, which combines auth state (cached from `/api/auth/me`) and the GDPR banner choice into a three-way policy — signed-in users see no ads, signed-out users with `'all'` consent see personalized ads, and signed-out users with `'essential'`-only consent get non-personalized (NPA) ads. Third-party scripts are declared as `<script type="text/plain" data-consent-src="...">` placeholders that the script activates once consent is given
 - **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim — raw provider IDs are never stored
 - **User Profiles**: Signed-in users get a profile page with customisable alias, server-synced solve statistics, and friends management
-- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). View a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
+- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). Send dated friend challenges (accept/decline tracking) and view a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
-- **Analytics Dashboard**: Admin-only analytics endpoints and a dedicated admin page (`admin.html`) with summary cards (completions today, active players, registered users, hint usage rate, per-size breakdown), daily activity bar chart, and top player rankings with alias resolution and verified (?) / guest (??) badges. Players are grouped by user identity so signed-in and guest plays are correctly separated. Admin access is configuration-driven via `Authorization:AdminUserIds`; the admin link appears on the profile page only when the server confirms admin status
+- **Analytics & Admin Dashboard**: Admin-only analytics and operations via the React `/admin` page, including summary cards, daily activity, top players, dynamic admin grants/revokes, clue-flag review/approve/reject/remove, custom clue creation, and future-puzzle regeneration
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
 ## Project Structure
@@ -77,12 +78,14 @@ SwedishCrosswords/
 |   |   |-- PuzzleEndpoints.cs      # Puzzle CRUD, check, hint, and dates endpoints
 |   |   |-- LeaderboardEndpoints.cs # Score submission, leaderboard, and history endpoints
 |   |   |-- AuthEndpoints.cs        # OAuth login, logout, profile, alias management
-|   |   |-- FriendsEndpoints.cs     # Friend requests, friend list, friends leaderboard
+|   |   |-- FriendsEndpoints.cs     # Friend requests, challenges, friend list, friends leaderboard
 |   |   |-- StatsEndpoints.cs       # Dictionary statistics endpoint
-|   |   +-- AnalyticsEndpoints.cs   # Analytics summary, daily breakdown, and top players
+|   |   +-- AnalyticsEndpoints.cs   # Analytics + admin operations (clue flags, custom clues, admin grants)
 |   |-- PuzzleWarmupService.cs      # Background service: pre-generates puzzles 7 days ahead
 |   |-- SubmissionTokenService.cs   # HMAC-signed token generation/validation, answer stripping, server-side answer reading
-|   |-- LeaderboardStore.cs         # Dual-database leaderboard storage (Azure SQL in production, SQLite for local dev)
+|   |-- LeaderboardStore.cs         # Dual-database storage (Azure SQL in production, SQLite for local dev)
+|   |-- WordListAdminService.cs     # Updates clue entries in their original source files
+|   |-- BlobWordListSyncService.cs  # Optional dev→prod word-list blob synchronization
 |   |-- LeaderboardPruneService.cs  # Background service: periodic pruning of old scores and history
 |   |-- PuzzleCache.cs              # In-memory cache for pre-processed puzzle data (avoids repeated disk I/O)
 |   |-- PuzzleDateIndex.cs          # Thread-safe in-memory index of available puzzle dates and sizes
@@ -90,26 +93,18 @@ SwedishCrosswords/
 |   |-- TransientDbExceptionHandler.cs  # Translates transient Azure SQL errors into HTTP 503 (with Retry-After) instead of 500
 |   |-- TransientSqlErrorClassifier.cs  # Single source of truth for transient SQL error numbers (auto-pause, throttling, network drops, deadlocks)
 |   |-- IStores.cs                  # Storage interfaces (IScoreStore, IHistoryStore, IUserProfileStore, etc.) consumed by LeaderboardStore
-|   |-- Models.cs                   # Request/response records (including analytics models)
-|   |-- wwwroot/                    # Frontend (served by the API)
-|   |   |-- index.html              # Landing page with SEO structured data
-|   |   |-- puzzle.html             # Interactive crossword player page
-|   |   |-- calendar.html           # Puzzle archive calendar
-|   |   |-- profile.html            # User profile (alias, stats, friends management)
-|   |   |-- admin.html              # Admin dashboard (analytics summary, daily chart, top players)
-|   |   |-- leaderboard.html        # Dedicated leaderboard page
-|   |   |-- site.js                 # Game logic (~3,000 lines, 15 §-numbered sections)
+|   |-- Models.cs                   # Request/response records (including analytics/admin models)
+|   |-- wwwroot/                    # Static assets + React build output
+|   |   |-- app/                    # Vite React build (deployed frontend bundle)
 |   |   |-- cookie-consent.js       # GDPR banner + AdSense loader (auth-aware policy: skip / personalized / NPA)
 |   |   |-- tokens.css              # CSS custom-property design tokens (90+ tokens)
-|   |   |-- site.min.css            # Responsive styles consuming design tokens
-|   |   |-- about.html             # About page
-|   |   |-- contact.html            # Contact page
-|   |   |-- privacy-policy.html  # Privacy policy
-|   |   |-- robots.txt              # Search engine crawl rules
-|   |   |-- sitemap.xml             # Sitemap for search engines
 |   |   +-- site.webmanifest        # PWA manifest
 |   |-- appsettings.json            # Configuration
 |   +-- Properties/launchSettings.json
+|-- frontend/                       # React frontend source (Vite + TypeScript)
+|   |-- src/                        # React app routes, pages, hooks, API clients
+|   |-- package.json                # Frontend scripts and dependencies
+|   +-- tsconfig.json               # TypeScript config
 |-- SwedishCrossword/               # CLI generator
 |   |-- Data/                       # Dictionary data files
 |   |   |-- lexin-words.json        # Lexin dictionary (imported)
@@ -183,11 +178,11 @@ Recognised attributes:
 |---|---|
 | `type="text/plain"` | Prevents the browser from executing the script before consent |
 | `data-consent-src` | Real script URL — copied to `src` once activated |
-| `data-consent-category="ads"` | Subjects the script to the auth+consent policy above. Omit for non-ad scripts (analytics, etc.) — those load whenever `cookie-consent.js` runs |
+| `data-consent-category="ads"` | Subjects the script to the auth+consent policy above. Omit for non-ad scripts (analytics, tracking pixels, etc.) — those load whenever `cookie-consent.js` runs |
 | `data-consent-async="true"` | Sets `async` on the activated `<script>` |
 | `data-consent-crossorigin="anonymous"` | Sets `crossOrigin` on the activated `<script>` |
 
-The current AdSense placeholder (publisher `ca-pub-4967624066496288`) is included on `puzzle.html`, `profile.html`, and `privacy-policy.html`.
+The current AdSense placeholder (publisher `ca-pub-4967624066496288`) is declared in the shared app shell and therefore applies across the React routes (including `/puzzle`, `/profile`, and `/privacy-policy`).
 
 ### Programmatic API
 
@@ -249,13 +244,28 @@ The API starts at `https://localhost:50579` and serves the crossword player at t
 | GET | `/api/auth/my-stats` | Server-synced solve statistics for signed-in user |
 | GET | `/api/auth/alias` | Get current alias |
 | PUT | `/api/auth/alias` | Set or update alias (2–20 chars, unique) |
+| GET | `/api/auth/my-data` | Export authenticated user's stored data (GDPR) |
+| DELETE | `/api/auth/account` | Delete/anonymize authenticated user's account data |
 | GET | `/api/friends` | List accepted friends |
 | GET | `/api/friends/requests` | Pending friend requests (incoming + outgoing) |
 | POST | `/api/friends/request` | Send friend request by alias |
 | POST | `/api/friends/accept/{id}` | Accept a friend request |
 | POST | `/api/friends/decline/{id}` | Decline a friend request |
 | DELETE | `/api/friends/{id}` | Remove a friend |
-| GET | `/api/friends/leaderboard?date=` | Friends leaderboard for a given date |
+| GET | `/api/friends/challenges` | List friend challenges (incoming + outgoing) |
+| POST | `/api/friends/challenges` | Create dated friend challenge |
+| POST | `/api/friends/challenges/{id}/respond` | Accept/decline challenge |
+| GET | `/api/friends/leaderboard?date=&puzzleHash=` | Friends leaderboard for a given date (optional puzzle hash filter) |
+| POST | `/api/clues/flags` | Player clue-quality report/flag submission |
+| GET | `/api/admin/clues/flags?limit=100` | List pending clue flags (admin) |
+| POST | `/api/admin/clues/flags/{id}/resolve` | Approve/reject/remove clue flag and optionally update source clue (admin) |
+| POST | `/api/admin/clues/custom` | Add a custom clue entry and regenerate future puzzles (admin) |
+| POST | `/api/admin/puzzle/regenerate-future` | Regenerate future precomputed puzzles (admin) |
+| GET | `/api/admin/users/search?q=&limit=` | Search users by alias for admin grants (admin) |
+| GET | `/api/admin/grants` | List DB-granted admins |
+| POST | `/api/admin/grants` | Grant admin rights to a user (admin) |
+| DELETE | `/api/admin/grants/{userId}` | Revoke DB-granted admin rights (admin) |
+| POST | `/api/admin/wordlists/sync-dev-to-prod` | Run dev→prod word-list blob sync (admin) |
 | GET | `/api/health` | Health check |
 
 ### Running with Docker
@@ -313,7 +323,7 @@ az deployment group create \
 - `AZURE_TENANT_ID` — Entra ID tenant
 - `AZURE_SUBSCRIPTION_ID` — Target subscription
 - `SUBMISSION_TOKEN_SECRET` — HMAC secret for anti-cheat submission token signing (generate with `openssl rand -base64 64`)
-- `ADMIN_USER_IDS` — Comma-separated list of admin user ID hashes (SHA-256 of `provider:subject`). Find your ID via `GET /api/auth/me` after signing in
+- `ADMIN_USER_IDS` — Optional comma-separated bootstrap admin IDs (SHA-256 of `provider:subject` or canonicalized ID). You can also grant/revoke admins dynamically from `/admin` after initial access.
 
 ### Running the CLI Generator
 
@@ -470,9 +480,18 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
 - **Storage Abstraction**: `IStores.cs` defines focused storage interfaces (`IScoreStore`, `IHistoryStore`, `IUserProfileStore`, etc.) implemented by `LeaderboardStore`, keeping endpoints decoupled from the dual-database (Azure SQL / SQLite) implementation
 - **Transient Error Handling**: `TransientDbExceptionHandler` (registered as an `IExceptionHandler`) inspects unhandled `SqlException`s via `TransientSqlErrorClassifier`, logs them as warnings (not errors) so they don't pollute Application Insights failure rates, and returns a `503 Service Unavailable` with `Retry-After: 30`. The classifier covers transient Azure SQL conditions such as throttling, deadlocks, failover/reconfiguration events, and temporary network/connectivity failures. Non-transient SQL errors fall through to the standard 500 handler
-- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by the admin-only analytics endpoints and rendered in `admin.html`. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via `Authorization:AdminUserIds` configuration and exposed through `/api/auth/me` (`isAdmin` field) — the profile page conditionally renders the admin link only when the server confirms admin access
-- **Frontend Organization**: `site.js` (~3,000 lines) uses a table of contents with 15 `§`-numbered section headers for navigability
-- **Solution-View Tracking**: Client-side via localStorage so the anti-cheat system can flag players who viewed the answer before submitting
+- **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by admin-only analytics endpoints and rendered in the React `/admin` page. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via policy/config + DB grants and exposed through `/api/auth/me` (`isAdmin`) so the profile page can conditionally render the admin link
+- **Frontend Organization**: React source lives under `frontend/src` (pages/components/hooks/api split) and is bundled into `wwwroot/app` for hosting by the API.
+
+### Areas for Improvement
+- Themed puzzle generation
+- Mobile app version (native)
+- Mini leagues / friend groups
+- Core Web Vitals tracking
+- Frontend module splitting (ES modules with bundler)
+- Client-side unit tests
+- Static asset fingerprinting / cache-busting
+- CDN / Azure Front Door for edge caching
 
 ## License
 
@@ -512,22 +531,3 @@ pwsh ./scripts/fix-bom.ps1
 | **Dependabot** (`.github/dependabot.yml`) | Weekly schedule | NuGet, GitHub Actions, and Docker base-image updates (Microsoft.* and test packages grouped to reduce PR noise) |
 | **`dotnet list package --vulnerable`** | `test` job in `deploy-azure.yml` | Fails the build if any direct or transitive NuGet has a known CVE |
 | **SBOM** (`scripts/generate-sbom.ps1`) | `build-and-deploy` job, archived as artifact for 90 days | SPDX 2.2 SBOM for the published API (EU CRA-aligned) |
-
-
-### Areas for Improvement
-- Themed puzzle generation
-- Mobile app version (native)
-- Mini leagues / friend groups
-- Core Web Vitals tracking
-- Frontend module splitting (ES modules with bundler)
-- Client-side unit tests
-- Static asset fingerprinting / cache-busting
-- CDN / Azure Front Door for edge caching
-
-## Acknowledgments
-
-- [Lexin/ISOF](https://spraakbanken.gu.se/resurser/lexin) for the Swedish dictionary
-- [Folkets synonymlexikon](http://lexikon.nada.kth.se/synlex.html) for synonym pairs
-- [Kelly word list](https://spraakbanken.gu.se/resurser/kelly) for frequency-ranked vocabulary
-- [DSSO (Den Stora Svenska Ordlistan)](https://dsso.se/) for comprehensive Swedish word coverage
-- [Swedish Wiktionary](https://sv.wiktionary.org) for supplementary word definitions

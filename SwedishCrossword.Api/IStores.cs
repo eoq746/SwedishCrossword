@@ -32,6 +32,7 @@ internal interface IUserProfileStore
     Task<bool> IsAliasAvailableAsync(string alias, string? excludeUserId = null);
     Task<bool> SetAliasAsync(string userId, string alias);
     Task<string?> GetUserIdByAliasAsync(string alias);
+    Task<List<AdminUserSearchResult>> SearchUsersByAliasAsync(string query, int limit = 10);
     Task<UserStatsResponse> GetUserStatsAsync(string userId);
     Task<UserDataExport> ExportUserDataAsync(string userId);
     Task DeleteUserDataAsync(string userId);

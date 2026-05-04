@@ -997,6 +997,63 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return result as string;
     }
 
+    public async Task<List<AdminUserSearchResult>> SearchUsersByAliasAsync(string query, int limit = 10)
+    {
+        var trimmed = query?.Trim();
+        if (string.IsNullOrWhiteSpace(trimmed)) return [];
+
+        var clamped = Math.Clamp(limit, 1, 50);
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              SELECT TOP (@limit)
+                  user_id,
+                  alias,
+                  CASE
+                      WHEN alias = @exact THEN 0
+                      WHEN alias LIKE @starts THEN 1
+                      ELSE 2
+                  END AS rank_order
+              FROM user_aliases
+              WHERE alias LIKE @contains
+              ORDER BY rank_order ASC, LEN(alias) ASC, alias ASC
+              """
+            : """
+              SELECT
+                  user_id,
+                  alias,
+                  CASE
+                      WHEN alias = @exact THEN 0
+                      WHEN alias LIKE @starts THEN 1
+                      ELSE 2
+                  END AS rank_order
+              FROM user_aliases
+              WHERE alias LIKE @contains COLLATE NOCASE
+              ORDER BY rank_order ASC, LENGTH(alias) ASC, alias COLLATE NOCASE ASC
+              LIMIT @limit
+              """;
+
+        AddParam(cmd, "@limit", clamped);
+        AddParam(cmd, "@exact", trimmed);
+        AddParam(cmd, "@starts", $"{trimmed}%");
+        AddParam(cmd, "@contains", $"%{trimmed}%");
+
+        var result = new List<AdminUserSearchResult>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            var alias = reader.GetString(1);
+            result.Add(new AdminUserSearchResult(
+                UserId: reader.GetString(0),
+                Alias: alias,
+                ExactMatch: string.Equals(alias, trimmed, StringComparison.OrdinalIgnoreCase)));
+        }
+
+        return result;
+    }
+
     public async Task<(bool Success, string Error)> SendFriendRequestAsync(string fromUserId, string toUserId)
     {
         if (fromUserId == toUserId)
@@ -1479,21 +1536,35 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         cmd.CommandText = _useSqlServer
             ? """
               SELECT TOP (@limit)
-                  id, word, current_clue, suggested_clue, reason, status,
-                  created_at, reviewed_at, updated_clue,
-                  puzzle_date, puzzle_size, puzzle_hash, admin_note
-              FROM clue_flags
-              WHERE status = 'pending'
-              ORDER BY created_at DESC
+                  f.id, f.word, f.current_clue, f.suggested_clue, f.reason, f.status,
+                  f.created_at, f.reviewed_at, f.updated_clue,
+                  f.puzzle_date, f.puzzle_size, f.puzzle_hash, f.admin_note,
+                  (
+                    SELECT COUNT(1)
+                    FROM clue_flags x
+                    WHERE x.status = 'pending'
+                      AND x.word = f.word
+                      AND x.current_clue = f.current_clue
+                  ) AS report_count
+              FROM clue_flags f
+              WHERE f.status = 'pending'
+              ORDER BY report_count DESC, f.created_at DESC
               """
             : """
               SELECT
-                  id, word, current_clue, suggested_clue, reason, status,
-                  created_at, reviewed_at, updated_clue,
-                  puzzle_date, puzzle_size, puzzle_hash, admin_note
-              FROM clue_flags
-              WHERE status = 'pending'
-              ORDER BY created_at DESC
+                  f.id, f.word, f.current_clue, f.suggested_clue, f.reason, f.status,
+                  f.created_at, f.reviewed_at, f.updated_clue,
+                  f.puzzle_date, f.puzzle_size, f.puzzle_hash, f.admin_note,
+                  (
+                    SELECT COUNT(1)
+                    FROM clue_flags x
+                    WHERE x.status = 'pending'
+                      AND x.word = f.word
+                      AND x.current_clue = f.current_clue
+                  ) AS report_count
+              FROM clue_flags f
+              WHERE f.status = 'pending'
+              ORDER BY report_count DESC, f.created_at DESC
               LIMIT @limit
               """;
         AddParam(cmd, "@limit", clamped);
@@ -1507,11 +1578,18 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = """
             SELECT
-                id, word, current_clue, suggested_clue, reason, status,
-                created_at, reviewed_at, updated_clue,
-                puzzle_date, puzzle_size, puzzle_hash, admin_note
-            FROM clue_flags
-            WHERE id = @id
+                f.id, f.word, f.current_clue, f.suggested_clue, f.reason, f.status,
+                f.created_at, f.reviewed_at, f.updated_clue,
+                f.puzzle_date, f.puzzle_size, f.puzzle_hash, f.admin_note,
+                (
+                  SELECT COUNT(1)
+                  FROM clue_flags x
+                  WHERE x.status = 'pending'
+                    AND x.word = f.word
+                    AND x.current_clue = f.current_clue
+                ) AS report_count
+            FROM clue_flags f
+            WHERE f.id = @id
             """;
         AddParam(cmd, "@id", id);
 
@@ -1566,7 +1644,8 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 PuzzleDate: reader.IsDBNull(9) ? null : reader.GetString(9),
                 PuzzleSize: reader.IsDBNull(10) ? null : reader.GetString(10),
                 PuzzleHash: reader.IsDBNull(11) ? null : reader.GetString(11),
-                AdminNote: reader.IsDBNull(12) ? null : reader.GetString(12)
+                AdminNote: reader.IsDBNull(12) ? null : reader.GetString(12),
+                ReportCount: reader.IsDBNull(13) ? 1 : reader.GetInt32(13)
             ));
         }
 
@@ -1956,6 +2035,14 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
     // unhandled transient SqlExceptions to HTTP 503 problem+json).
     private static bool IsTransient(SqlException ex) => TransientSqlErrorClassifier.IsTransient(ex);
 
+    private static bool IsUniqueConstraintViolation(DbException ex) =>
+        ex switch
+        {
+            SqlException { Number: 2601 or 2627 } => true,
+            SqliteException { SqliteErrorCode: 19 } => true,
+            _ => false
+        };
+
     // 8 attempts with exponential backoff capped at 15s totals ~60s of waiting
     // (1+2+4+8+15+15+15s) — enough to cover an Azure SQL serverless cold-start
     // resume from auto-pause (typically 30–60s).
@@ -2147,8 +2234,4 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             throw;
         }
     }
-
-    private static bool IsUniqueConstraintViolation(DbException ex) =>
-        ex is SqliteException { SqliteErrorCode: 19 } // SQLITE_CONSTRAINT
-        || ex is SqlException { Number: 2601 or 2627 }; // SQL Server unique index / PK violation
 }
