@@ -14,7 +14,7 @@ function cspNoncePlaceholderPlugin(): Plugin {
     transformIndexHtml(html) {
       return html
         // <script ...> — add nonce before the closing >
-        .replace(/(<script\b[^>]*)(>)/g, '$1 nonce="__CSP_NONCE__"$2')
+        .replace(/(<script\b[^>]*)(>)/gi, '$1 nonce="__CSP_NONCE__"$2')
         // <link rel="stylesheet" ...> — add nonce before /? >
         .replace(/(<link\b[^>]*\brel=["']stylesheet["'][^>]*?)(\/?>)/g, '$1 nonce="__CSP_NONCE__"$2');
     },
