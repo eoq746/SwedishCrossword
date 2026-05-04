@@ -465,7 +465,13 @@ app.Use(async (context, next) =>
                 || string.Equals(secFetchSite, "same-site", StringComparison.OrdinalIgnoreCase)
                 || string.Equals(secFetchSite, "none", StringComparison.OrdinalIgnoreCase);
 
-            var valid = fetchMetadataSafe && (sameOriginSignals || !hasOriginSignals);
+            // CSRF protection requires:
+            // 1. Origin/Referer header must be present (hasOriginSignals)
+            // 2. Origin/Referer must match same-origin (sameOriginSignals)
+            // 3. Fetch metadata must be safe (fetchMetadataSafe)
+            // This prevents CSRF attacks where a malicious site sends a request with the
+            // user's auth cookie but no/wrong origin headers.
+            var valid = hasOriginSignals && sameOriginSignals && fetchMetadataSafe;
             if (!valid)
             {
                 context.Response.StatusCode = 403;
