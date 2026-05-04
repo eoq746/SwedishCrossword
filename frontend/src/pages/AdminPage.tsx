@@ -158,13 +158,14 @@ function PlayersSection({ players }: { players: TopPlayer[] }) {
 
 function AdminUsersSection() {
   const [searchAlias, setSearchAlias] = useState('');
-  const [searchResult, setSearchResult] = useState<{ userId: string; alias: string } | null>(null);
+  const [searchResults, setSearchResults] = useState<Array<{ userId: string; alias: string; exactMatch?: boolean }>>([]);
   const [searchError, setSearchError] = useState<string | null>(null);
   const [searching, setSearching] = useState(false);
 
   const [grants, setGrants] = useState<AdminGrant[]>([]);
   const [grantsLoading, setGrantsLoading] = useState(true);
   const [actionError, setActionError] = useState<string | null>(null);
+  const [adminAction, setAdminAction] = useState<{ type: 'grant' | 'revoke'; userId: string } | null>(null);
 
   useEffect(() => {
     fetchAdminGrants()
@@ -174,41 +175,62 @@ function AdminUsersSection() {
   }, []);
 
   const handleSearch = async () => {
+    if (searching) return;
     const alias = searchAlias.trim();
-    if (!alias) return;
+    if (!alias) {
+      setSearchResults([]);
+      setSearchError(null);
+      return;
+    }
+
     setSearching(true);
-    setSearchResult(null);
     setSearchError(null);
     try {
-      const result = await searchUserByAlias(alias);
-      setSearchResult(result);
+      const results = await searchUserByAlias(alias, 10);
+      setSearchResults(results);
+      if (results.length === 0) {
+        setSearchError('Ingen användare hittades för sökningen.');
+      }
     } catch (e) {
-      setSearchError(e instanceof Error && e.message.includes('404') ? 'Ingen användare hittades med det aliaseet.' : 'Sökning misslyckades.');
+      const message = e instanceof Error ? e.message : 'Sökning misslyckades.';
+      setSearchError(message);
+      setSearchResults([]);
     } finally {
       setSearching(false);
     }
   };
 
   const handleGrant = async (userId: string) => {
+    if (adminAction) return;
+    setAdminAction({ type: 'grant', userId });
     setActionError(null);
     try {
       await grantAdmin(userId);
+      setGrantsLoading(true);
       const updated = await fetchAdminGrants();
       setGrants(updated);
-      setSearchResult(null);
-      setSearchAlias('');
-    } catch {
-      setActionError('Kunde inte ge adminrättigheter. Försök igen.');
+      setSearchResults(prev => prev.filter(r => r.userId !== userId));
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kunde inte ge adminrättigheter. Försök igen.';
+      setActionError(message);
+    } finally {
+      setGrantsLoading(false);
+      setAdminAction(null);
     }
   };
 
   const handleRevoke = async (userId: string) => {
+    if (adminAction) return;
+    setAdminAction({ type: 'revoke', userId });
     setActionError(null);
     try {
       await revokeAdmin(userId);
       setGrants(prev => prev.filter(g => g.userId !== userId));
-    } catch {
-      setActionError('Kunde inte ta bort adminrättigheter. Försök igen.');
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kunde inte ta bort adminrättigheter. Försök igen.';
+      setActionError(message);
+    } finally {
+      setAdminAction(null);
     }
   };
 
@@ -218,7 +240,6 @@ function AdminUsersSection() {
     <div className="admin-section">
       <h2>👤 Adminrättigheter</h2>
 
-      {/* Search */}
       <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
         <input
           className="alias-input"
@@ -228,41 +249,52 @@ function AdminUsersSection() {
           onChange={e => setSearchAlias(e.target.value)}
           onKeyDown={e => { if (e.key === 'Enter') void handleSearch(); }}
           style={{ flex: '1 1 180px', minWidth: 0 }}
+          disabled={searching}
         />
         <button className="admin-refresh-btn" onClick={() => void handleSearch()} disabled={searching}>
-          {searching ? '⏳' : '🔍 Sök'}
+          {searching ? '⏳ Söker…' : '🔍 Sök'}
         </button>
       </div>
 
       {searchError && <p className="leaderboard-error" style={{ marginBottom: 8 }}>{searchError}</p>}
+      {adminAction && (
+        <p className="leaderboard-loading" style={{ marginBottom: 8 }}>
+          {adminAction.type === 'grant' ? 'Ger adminrättighet…' : 'Tar bort adminrättighet…'}
+        </p>
+      )}
 
-      {searchResult && (
+      {searchResults.length > 0 && (
         <div className="admin-table-wrap" style={{ marginBottom: 12 }}>
           <table className="leaderboard-table">
             <thead>
-              <tr><th>Alias</th><th>User-ID</th><th></th></tr>
+              <tr><th>Alias</th><th>Match</th><th>User-ID</th><th></th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>{searchResult.alias}</td>
-                <td><code style={{ fontSize: '0.75em' }}>{searchResult.userId.slice(0, 12)}…</code></td>
-                <td>
-                  {isAlreadyGranted(searchResult.userId)
-                    ? <span className="badge badge-verified">✓ Admin</span>
-                    : (
-                      <button className="admin-refresh-btn" onClick={() => void handleGrant(searchResult.userId)}>
-                        ＋ Ge admin
-                      </button>
-                    )
-                  }
-                </td>
-              </tr>
+              {searchResults.map(result => (
+                <tr key={result.userId}>
+                  <td>{result.alias}</td>
+                  <td>{result.exactMatch ? 'Exakt' : 'Liknande'}</td>
+                  <td><code style={{ fontSize: '0.75em' }}>{result.userId.slice(0, 12)}…</code></td>
+                  <td>
+                    {isAlreadyGranted(result.userId)
+                      ? <span className="badge badge-verified">✓ Admin</span>
+                      : (
+                        <button
+                          className="admin-refresh-btn"
+                          onClick={() => void handleGrant(result.userId)}
+                          disabled={Boolean(adminAction)}
+                        >
+                          {adminAction?.type === 'grant' && adminAction.userId === result.userId ? '⏳ Ger admin…' : '＋ Ge admin'}
+                        </button>
+                      )}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       )}
 
-      {/* Granted admins list */}
       <h3 style={{ marginBottom: 8, fontSize: '0.95rem' }}>Tilldelade admins</h3>
       {grantsLoading && <p className="leaderboard-loading">Laddar…</p>}
       {!grantsLoading && grants.length === 0 && (
@@ -281,8 +313,13 @@ function AdminUsersSection() {
                   <td>{g.grantedByAlias ?? '–'}</td>
                   <td>{new Date(g.grantedAt * 1000).toLocaleDateString('sv-SE')}</td>
                   <td>
-                    <button className="admin-refresh-btn" style={{ color: 'var(--color-error, #c00)' }} onClick={() => void handleRevoke(g.userId)}>
-                      Ta bort
+                    <button
+                      className="admin-refresh-btn"
+                      style={{ color: 'var(--color-error, #c00)' }}
+                      onClick={() => void handleRevoke(g.userId)}
+                      disabled={Boolean(adminAction)}
+                    >
+                      {adminAction?.type === 'revoke' && adminAction.userId === g.userId ? '⏳ Tar bort…' : 'Ta bort'}
                     </button>
                   </td>
                 </tr>
@@ -344,9 +381,11 @@ function ClueFlagsSection() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [savingId, setSavingId] = useState<string | null>(null);
+  const [savingAction, setSavingAction] = useState<'approve' | 'reject' | 'remove' | null>(null);
   const [editedClues, setEditedClues] = useState<Record<string, string>>({});
 
   const loadFlags = async () => {
+    if (savingId) return;
     setLoading(true);
     setError(null);
     try {
@@ -373,6 +412,7 @@ function ClueFlagsSection() {
   }, []);
 
   const handleApprove = async (flag: ClueFlag) => {
+    if (savingId) return;
     const clue = editedClues[flag.id]?.trim() ?? '';
     if (!clue) {
       setError('En ny ledtråd krävs för att godkänna.');
@@ -380,40 +420,51 @@ function ClueFlagsSection() {
     }
 
     setSavingId(flag.id);
+    setSavingAction('approve');
     setError(null);
     try {
       await resolveClueFlag(flag.id, 'approved', clue);
       setFlags(prev => prev.filter(f => f.id !== flag.id));
-    } catch {
-      setError('Kunde inte godkänna ändringen. Försök igen.');
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kunde inte godkänna ändringen. Försök igen.';
+      setError(`Kunde inte godkänna ändringen: ${message}`);
     } finally {
       setSavingId(null);
+      setSavingAction(null);
     }
   };
 
   const handleReject = async (flag: ClueFlag) => {
+    if (savingId) return;
     setSavingId(flag.id);
+    setSavingAction('reject');
     setError(null);
     try {
       await resolveClueFlag(flag.id, 'rejected');
       setFlags(prev => prev.filter(f => f.id !== flag.id));
-    } catch {
-      setError('Kunde inte avvisa ändringen. Försök igen.');
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kunde inte avvisa ändringen. Försök igen.';
+      setError(`Kunde inte avvisa ändringen: ${message}`);
     } finally {
       setSavingId(null);
+      setSavingAction(null);
     }
   };
 
   const handleRemoveClue = async (flag: ClueFlag) => {
+    if (savingId) return;
     setSavingId(flag.id);
+    setSavingAction('remove');
     setError(null);
     try {
       await resolveClueFlag(flag.id, 'approved', undefined, undefined, undefined, true);
       setFlags(prev => prev.filter(f => f.id !== flag.id));
-    } catch {
-      setError('Kunde inte ta bort ledtråden. Försök igen.');
+    } catch (e) {
+      const message = e instanceof Error ? e.message : 'Kunde inte ta bort ledtråden. Försök igen.';
+      setError(`Kunde inte ta bort ledtråden: ${message}`);
     } finally {
       setSavingId(null);
+      setSavingAction(null);
     }
   };
 
@@ -424,9 +475,17 @@ function ClueFlagsSection() {
         Granska rapporterade ledtrådar. Vid godkännande uppdateras ordlistan, analyscachen räknas om,
         och framtida pussel regenereras.
       </p>
-      <button className="admin-refresh-btn" onClick={() => void loadFlags()} disabled={loading} style={{ marginBottom: 12 }}>
+      <button className="admin-refresh-btn" onClick={() => void loadFlags()} disabled={loading || Boolean(savingId)} style={{ marginBottom: 12 }}>
         {loading ? '⏳ Laddar…' : '🔄 Uppdatera lista'}
       </button>
+
+      {savingId && (
+        <p className="leaderboard-loading" style={{ marginBottom: 8 }}>
+          {savingAction === 'approve' && 'Bearbetar godkännande…'}
+          {savingAction === 'reject' && 'Bearbetar avvisning…'}
+          {savingAction === 'remove' && 'Tar bort ledtråd…'}
+        </p>
+      )}
 
       {error && <p className="leaderboard-error" style={{ marginBottom: 8 }}>{error}</p>}
       {!loading && flags.length === 0 && <p className="profile-empty">Inga väntande flaggar.</p>}
@@ -436,6 +495,7 @@ function ClueFlagsSection() {
           <table className="leaderboard-table">
             <thead>
               <tr>
+                <th>Rapporter</th>
                 <th>Ord</th>
                 <th>Nuvarande</th>
                 <th>Förslag</th>
@@ -449,6 +509,7 @@ function ClueFlagsSection() {
                 const busy = savingId === flag.id;
                 return (
                   <tr key={flag.id}>
+                    <td>{flag.reportCount}</td>
                     <td>{flag.word}</td>
                     <td>{flag.currentClue}</td>
                     <td>{flag.suggestedClue ?? '–'}</td>
@@ -462,14 +523,14 @@ function ClueFlagsSection() {
                       />
                     </td>
                     <td style={{ display: 'flex', gap: 8 }}>
-                      <button className="admin-refresh-btn" onClick={() => void handleApprove(flag)} disabled={busy}>
-                        ✅ Godkänn
+                      <button className="admin-refresh-btn" onClick={() => void handleApprove(flag)} disabled={Boolean(savingId)}>
+                        {busy && savingAction === 'approve' ? '⏳ Godkänner…' : '✅ Godkänn'}
                       </button>
-                      <button className="admin-refresh-btn" onClick={() => void handleReject(flag)} disabled={busy}>
-                        ❌ Avvisa
+                      <button className="admin-refresh-btn" onClick={() => void handleReject(flag)} disabled={Boolean(savingId)}>
+                        {busy && savingAction === 'reject' ? '⏳ Avvisar…' : '❌ Avvisa'}
                       </button>
-                      <button className="admin-refresh-btn" onClick={() => void handleRemoveClue(flag)} disabled={busy}>
-                        🗑️ Ta bort
+                      <button className="admin-refresh-btn" onClick={() => void handleRemoveClue(flag)} disabled={Boolean(savingId)}>
+                        {busy && savingAction === 'remove' ? '⏳ Tar bort…' : '🗑️ Ta bort'}
                       </button>
                     </td>
                   </tr>
@@ -491,6 +552,7 @@ function CustomClueCreateSection() {
   const [status, setStatus] = useState<'idle' | 'saving' | 'done' | 'error'>('idle');
 
   const handleCreate = async () => {
+    if (status === 'saving') return;
     const w = word.trim().toUpperCase();
     const c = clue.trim();
     if (!w || !c) {
@@ -522,6 +584,7 @@ function CustomClueCreateSection() {
           onChange={e => setWord(e.target.value)}
           placeholder="Ord (t.ex. KATT)"
           maxLength={64}
+          disabled={status === 'saving'}
         />
         <input
           className="alias-input"
@@ -529,11 +592,13 @@ function CustomClueCreateSection() {
           onChange={e => setClue(e.target.value)}
           placeholder="Ledtråd"
           maxLength={500}
+          disabled={status === 'saving'}
         />
       </div>
       <button className="admin-refresh-btn" style={{ marginTop: 10 }} onClick={() => void handleCreate()} disabled={status === 'saving'}>
-        {status === 'saving' ? '⏳ Sparar…' : '💾 Lägg till i custom-words'}
+        {status === 'saving' ? '⏳ Sparar och regenererar…' : '💾 Lägg till i custom-words'}
       </button>
+      {status === 'saving' && <p className="leaderboard-loading" style={{ marginTop: 8 }}>Vänta… framtida pussel uppdateras i bakgrunden.</p>}
       {status === 'done' && <p className="badge badge-verified" style={{ marginTop: 8 }}>✅ Sparat i custom-words.json</p>}
       {status === 'error' && <p className="leaderboard-error" style={{ marginTop: 8 }}>⚠️ Kunde inte spara. Kontrollera ord och ledtråd.</p>}
     </div>
@@ -548,6 +613,7 @@ function BlobSyncSection() {
   const [result, setResult] = useState<BlobSyncResult | null>(null);
 
   const runSync = async (dryRun: boolean) => {
+    if (running !== 'none') return;
     setRunning(dryRun ? 'dryRun' : 'apply');
     setError(null);
     try {

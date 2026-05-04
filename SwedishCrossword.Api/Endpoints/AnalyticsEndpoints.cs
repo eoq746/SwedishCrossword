@@ -179,16 +179,15 @@ internal static class AnalyticsEndpoints
 
         // ── Admin user management ──
 
-        /// <summary>Look up a registered user by their alias.</summary>
-        app.MapGet("/api/admin/users/search", async (string q, IUserProfileStore profileStore) =>
+        /// <summary>Search registered users by alias (exact, prefix and contains matches).</summary>
+        app.MapGet("/api/admin/users/search", async (string q, int? limit, IUserProfileStore profileStore) =>
         {
             var trimmed = q.Trim();
             if (string.IsNullOrEmpty(trimmed))
                 return Results.BadRequest(new ErrorResponse("Query is required"));
-            var userId = await profileStore.GetUserIdByAliasAsync(trimmed);
-            if (userId is null)
-                return Results.NotFound(new ErrorResponse("No user found with that alias"));
-            return Results.Ok(new { userId, alias = trimmed });
+
+            var matches = await profileStore.SearchUsersByAliasAsync(trimmed, Math.Clamp(limit ?? 10, 1, 25));
+            return Results.Ok(matches);
         }).RequireAuthorization("Admin");
 
         /// <summary>List all DB-granted admins with their aliases.</summary>

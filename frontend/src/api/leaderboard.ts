@@ -1,3 +1,5 @@
+import { fetchWithTimeout } from './http';
+
 export interface ScoreEntry {
   name: string;
   time: number;
@@ -23,26 +25,34 @@ export type HistoryResponse = Record<string, HistoryEntry[]>;
 /** Response from GET /api/puzzle/hashes — maps puzzle size to today's puzzle hash */
 export type SizeHashMap = Record<string, string>;
 
-const TIMEOUT_MS = 10_000;
-
-function signal(): AbortSignal {
-  return AbortSignal.timeout(TIMEOUT_MS);
-}
+const TIMEOUT_MS = 20_000;
 
 export async function fetchLeaderboard(): Promise<LeaderboardResponse> {
-  const res = await fetch('/api/leaderboard', { credentials: 'same-origin', signal: signal() });
+  const res = await fetchWithTimeout('/api/leaderboard', {
+    credentials: 'same-origin',
+    timeoutMs: TIMEOUT_MS,
+    retries: 1,
+  });
   if (!res.ok) throw new Error(`Leaderboard fetch failed: ${res.status}`);
   return res.json() as Promise<LeaderboardResponse>;
 }
 
 export async function fetchHistory(days = 7): Promise<HistoryResponse> {
-  const res = await fetch(`/api/leaderboard/history?days=${days}`, { credentials: 'same-origin', signal: signal() });
+  const res = await fetchWithTimeout(`/api/leaderboard/history?days=${days}`, {
+    credentials: 'same-origin',
+    timeoutMs: TIMEOUT_MS,
+    retries: 1,
+  });
   if (!res.ok) throw new Error(`History fetch failed: ${res.status}`);
   return res.json() as Promise<HistoryResponse>;
 }
 
 export async function fetchSizeHashes(): Promise<SizeHashMap> {
-  const res = await fetch('/api/puzzle/hashes', { credentials: 'same-origin', signal: signal() });
+  const res = await fetchWithTimeout('/api/puzzle/hashes', {
+    credentials: 'same-origin',
+    timeoutMs: TIMEOUT_MS,
+    retries: 1,
+  });
   if (!res.ok) throw new Error(`Hash fetch failed: ${res.status}`);
   return res.json() as Promise<SizeHashMap>;
 }

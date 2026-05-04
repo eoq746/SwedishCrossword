@@ -86,7 +86,8 @@ record ClueFlagInfo(
     string? PuzzleDate,
     string? PuzzleSize,
     string? PuzzleHash,
-    string? AdminNote);
+    string? AdminNote,
+    int ReportCount = 1);
 
 record CreateCustomClueRequest(
     string Word,
@@ -114,3 +115,6 @@ record BlobWordListSyncResponse(
     int TotalRemoved,
     int TotalConflicts,
     List<BlobWordListSyncFileResult> Files);
+
+// Admin user search
+record AdminUserSearchResult(string UserId, string Alias, bool ExactMatch = false);
