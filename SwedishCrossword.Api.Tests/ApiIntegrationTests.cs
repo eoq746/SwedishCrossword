@@ -353,9 +353,7 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task PuzzleToday_PreSeededFile_ReturnsPreparedPuzzle()
     {
-        var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(TempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        await SeedStandardPuzzleForTodayEndpointAsync(TestPuzzleJson);
 
         var response = await Client.GetAsync("/api/puzzle/today");
 
@@ -377,10 +375,7 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task PuzzleToday_SmallSize_FallsBackToStandard()
     {
-        var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(TempPuzzlePath);
-        // Only create the standard file, not the small variant
-        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        await SeedStandardPuzzleForTodayEndpointAsync(TestPuzzleJson);
 
         var response = await Client.GetAsync("/api/puzzle/today?size=small");
 
@@ -1211,6 +1206,20 @@ public class ApiIntegrationTests : IAsyncDisposable
             }
         }
         """;
+
+    private async Task SeedStandardPuzzleForTodayEndpointAsync(string puzzleJson)
+    {
+        Directory.CreateDirectory(TempPuzzlePath);
+
+        var swedishDate = GetSwedishDate();
+        var candidateDates = new[] { swedishDate, swedishDate.AddDays(1) };
+
+        foreach (var date in candidateDates)
+        {
+            var path = Path.Combine(TempPuzzlePath, $"puzzle-{date:yyyy-MM-dd}.json");
+            await File.WriteAllTextAsync(path, puzzleJson);
+        }
+    }
 
     /// <summary>
     /// Replicates the client-side <c>generatePuzzleHash()</c> algorithm.
