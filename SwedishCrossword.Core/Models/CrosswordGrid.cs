@@ -736,7 +736,9 @@ public class CrosswordGrid
     {
         if (_accidentalWordTextsCache == null)
         {
-            _accidentalWordTextsCache = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+#pragma warning disable IDE0028
+            _accidentalWordTextsCache = new(StringComparer.OrdinalIgnoreCase);
+#pragma warning restore IDE0028
             var accidentals = DetectAccidentalWords(dictionary);
             foreach (var acc in accidentals)
             {
@@ -1612,9 +1614,6 @@ public class CrosswordGrid
     /// </summary>
     public bool WouldCreateInvalidWords(Word word, int startRow, int startCol, Direction direction, Services.SwedishDictionary dictionary)
     {
-        // Temporarily place the word
-        var tempGrid = this; // We'll work with current grid
-
         // Check if we can place it first
         if (!CanPlaceWord(word, startRow, startCol, direction))
             return true; // Can't place = invalid

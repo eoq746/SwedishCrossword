@@ -1089,6 +1089,56 @@ public class ApiIntegrationTests : IAsyncDisposable
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
     }
 
+    [Test]
+    public async Task ClueFlags_PostValidFlag_ReturnsOk()
+    {
+        var response = await Client.PostAsJsonAsync("/api/clues/flags", new
+        {
+            word = "KATT",
+            currentClue = "Djur",
+            suggestedClue = "Husdjur",
+            reason = "Kan vara tydligare",
+            puzzleDate = "2026-05-01",
+            puzzleSize = "17x17"
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var json = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(json.TryGetProperty("id", out _)).IsTrue();
+    }
+
+    [Test]
+    public async Task ClueFlags_AdminList_RequiresAuth()
+    {
+        var response = await Client.GetAsync("/api/admin/clues/flags");
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task CustomClueCreate_RequiresAuth()
+    {
+        var response = await Client.PostAsJsonAsync("/api/admin/clues/custom", new
+        {
+            word = "NYORD",
+            clue = "Ny ledtråd"
+        });
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task BlobWordListSync_RequiresAuth()
+    {
+        var response = await Client.PostAsJsonAsync("/api/admin/wordlists/sync-dev-to-prod", new
+        {
+            dryRun = true
+        });
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
     // -----------------------------------------------------------------------
     // Analytics endpoints
     // -----------------------------------------------------------------------

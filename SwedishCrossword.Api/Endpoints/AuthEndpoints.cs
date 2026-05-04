@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
-namespace SwedishCrossword.Api;
+namespace SwedishCrossword.Api.Endpoints;
 
 internal static class AuthEndpoints
 {

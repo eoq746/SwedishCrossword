@@ -36,6 +36,9 @@ builder.Services.AddSingleton<IUserProfileStore>(sp => sp.GetRequiredService<Lea
 builder.Services.AddSingleton<IFriendStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IAnalyticsStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IAdminStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IClueFlagStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<WordListAdminService>();
+builder.Services.AddSingleton<BlobWordListSyncService>();
 builder.Services.AddSingleton<SubmissionTokenService>();
 builder.Services.AddSingleton<PuzzleCache>();
 builder.Services.AddSingleton<PuzzleDateIndex>();

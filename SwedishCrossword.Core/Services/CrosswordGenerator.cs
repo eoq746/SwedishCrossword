@@ -36,6 +36,15 @@ public class CrosswordGenerator
     }
 
     /// <summary>
+    /// Rebuilds the persisted word analysis cache from the current dictionary contents.
+    /// </summary>
+    public void RebuildWordAnalysisCache()
+    {
+        _wordAnalyzer.InvalidateCache();
+        _wordAnalyzer.AnalyzeWordConnectivity([.. _dictionary.AllWords]);
+    }
+
+    /// <summary>
     /// Generates a crossword puzzle with the specified parameters
     /// </summary>
     public async Task<CrosswordPuzzle> GenerateAsync(CrosswordGenerationOptions options, CancellationToken cancellationToken = default)

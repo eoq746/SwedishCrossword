@@ -6,8 +6,9 @@ import {
   fetchAnalyticsSummary, fetchDailyAnalytics, fetchTopPlayers,
   triggerRegenerateFuturePuzzles,
   searchUserByAlias, fetchAdminGrants, grantAdmin, revokeAdmin,
+  fetchPendingClueFlags, resolveClueFlag, createCustomClue, syncWordListsDevToProd,
   AccessDeniedError,
-  type AnalyticsSummary, type DailyAnalytics, type TopPlayer, type AdminGrant,
+  type AnalyticsSummary, type DailyAnalytics, type TopPlayer, type AdminGrant, type ClueFlag, type BlobSyncResult,
 } from '../api/admin';
 import '../styles/static-pages.css';
 
@@ -336,6 +337,296 @@ function RegeneratePuzzlesSection() {
   );
 }
 
+// ── Flagged clues review ───────────────────────────────────────────────────────
+
+function ClueFlagsSection() {
+  const [flags, setFlags] = useState<ClueFlag[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [savingId, setSavingId] = useState<string | null>(null);
+  const [editedClues, setEditedClues] = useState<Record<string, string>>({});
+
+  const loadFlags = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const items = await fetchPendingClueFlags(100);
+      setFlags(items);
+      setEditedClues(prev => {
+        const next = { ...prev };
+        for (const item of items) {
+          if (!next[item.id]) {
+            next[item.id] = item.suggestedClue ?? item.currentClue;
+          }
+        }
+        return next;
+      });
+    } catch {
+      setError('Kunde inte ladda flaggade ledtrådar.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    void loadFlags();
+  }, []);
+
+  const handleApprove = async (flag: ClueFlag) => {
+    const clue = editedClues[flag.id]?.trim() ?? '';
+    if (!clue) {
+      setError('En ny ledtråd krävs för att godkänna.');
+      return;
+    }
+
+    setSavingId(flag.id);
+    setError(null);
+    try {
+      await resolveClueFlag(flag.id, 'approved', clue);
+      setFlags(prev => prev.filter(f => f.id !== flag.id));
+    } catch {
+      setError('Kunde inte godkänna ändringen. Försök igen.');
+    } finally {
+      setSavingId(null);
+    }
+  };
+
+  const handleReject = async (flag: ClueFlag) => {
+    setSavingId(flag.id);
+    setError(null);
+    try {
+      await resolveClueFlag(flag.id, 'rejected');
+      setFlags(prev => prev.filter(f => f.id !== flag.id));
+    } catch {
+      setError('Kunde inte avvisa ändringen. Försök igen.');
+    } finally {
+      setSavingId(null);
+    }
+  };
+
+  const handleRemoveClue = async (flag: ClueFlag) => {
+    setSavingId(flag.id);
+    setError(null);
+    try {
+      await resolveClueFlag(flag.id, 'approved', undefined, undefined, undefined, true);
+      setFlags(prev => prev.filter(f => f.id !== flag.id));
+    } catch {
+      setError('Kunde inte ta bort ledtråden. Försök igen.');
+    } finally {
+      setSavingId(null);
+    }
+  };
+
+  return (
+    <div className="admin-section">
+      <h2>📝 Flaggar för ledtrådar</h2>
+      <p className="profile-empty" style={{ marginBottom: 12 }}>
+        Granska rapporterade ledtrådar. Vid godkännande uppdateras ordlistan, analyscachen räknas om,
+        och framtida pussel regenereras.
+      </p>
+      <button className="admin-refresh-btn" onClick={() => void loadFlags()} disabled={loading} style={{ marginBottom: 12 }}>
+        {loading ? '⏳ Laddar…' : '🔄 Uppdatera lista'}
+      </button>
+
+      {error && <p className="leaderboard-error" style={{ marginBottom: 8 }}>{error}</p>}
+      {!loading && flags.length === 0 && <p className="profile-empty">Inga väntande flaggar.</p>}
+
+      {flags.length > 0 && (
+        <div className="admin-table-wrap">
+          <table className="leaderboard-table">
+            <thead>
+              <tr>
+                <th>Ord</th>
+                <th>Nuvarande</th>
+                <th>Förslag</th>
+                <th>Anledning</th>
+                <th>Ny ledtråd</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {flags.map(flag => {
+                const busy = savingId === flag.id;
+                return (
+                  <tr key={flag.id}>
+                    <td>{flag.word}</td>
+                    <td>{flag.currentClue}</td>
+                    <td>{flag.suggestedClue ?? '–'}</td>
+                    <td>{flag.reason ?? '–'}</td>
+                    <td>
+                      <input
+                        className="alias-input"
+                        value={editedClues[flag.id] ?? ''}
+                        onChange={e => setEditedClues(prev => ({ ...prev, [flag.id]: e.target.value }))}
+                        disabled={busy}
+                      />
+                    </td>
+                    <td style={{ display: 'flex', gap: 8 }}>
+                      <button className="admin-refresh-btn" onClick={() => void handleApprove(flag)} disabled={busy}>
+                        ✅ Godkänn
+                      </button>
+                      <button className="admin-refresh-btn" onClick={() => void handleReject(flag)} disabled={busy}>
+                        ❌ Avvisa
+                      </button>
+                      <button className="admin-refresh-btn" onClick={() => void handleRemoveClue(flag)} disabled={busy}>
+                        🗑️ Ta bort
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── Custom clue creation ───────────────────────────────────────────────────────
+
+function CustomClueCreateSection() {
+  const [word, setWord] = useState('');
+  const [clue, setClue] = useState('');
+  const [status, setStatus] = useState<'idle' | 'saving' | 'done' | 'error'>('idle');
+
+  const handleCreate = async () => {
+    const w = word.trim().toUpperCase();
+    const c = clue.trim();
+    if (!w || !c) {
+      setStatus('error');
+      return;
+    }
+
+    setStatus('saving');
+    try {
+      await createCustomClue(w, c, 'Custom', 'Medium');
+      setWord('');
+      setClue('');
+      setStatus('done');
+    } catch {
+      setStatus('error');
+    }
+  };
+
+  return (
+    <div className="admin-section">
+      <h2>➕ Ny egen ledtråd</h2>
+      <p className="profile-empty" style={{ marginBottom: 12 }}>
+        Skapar en ny post i <code>custom-words.json</code>. Denna funktion skriver aldrig till Lexin, Synonymer, Kelly eller DSSO.
+      </p>
+      <div style={{ display: 'grid', gap: 8 }}>
+        <input
+          className="alias-input"
+          value={word}
+          onChange={e => setWord(e.target.value)}
+          placeholder="Ord (t.ex. KATT)"
+          maxLength={64}
+        />
+        <input
+          className="alias-input"
+          value={clue}
+          onChange={e => setClue(e.target.value)}
+          placeholder="Ledtråd"
+          maxLength={500}
+        />
+      </div>
+      <button className="admin-refresh-btn" style={{ marginTop: 10 }} onClick={() => void handleCreate()} disabled={status === 'saving'}>
+        {status === 'saving' ? '⏳ Sparar…' : '💾 Lägg till i custom-words'}
+      </button>
+      {status === 'done' && <p className="badge badge-verified" style={{ marginTop: 8 }}>✅ Sparat i custom-words.json</p>}
+      {status === 'error' && <p className="leaderboard-error" style={{ marginTop: 8 }}>⚠️ Kunde inte spara. Kontrollera ord och ledtråd.</p>}
+    </div>
+  );
+}
+
+// ── Dev → Prod ordlistesynk (Blob) ─────────────────────────────────────────────
+
+function BlobSyncSection() {
+  const [running, setRunning] = useState<'none' | 'dryRun' | 'apply'>('none');
+  const [error, setError] = useState<string | null>(null);
+  const [result, setResult] = useState<BlobSyncResult | null>(null);
+
+  const runSync = async (dryRun: boolean) => {
+    setRunning(dryRun ? 'dryRun' : 'apply');
+    setError(null);
+    try {
+      const syncResult = await syncWordListsDevToProd(dryRun);
+      setResult(syncResult);
+    } catch {
+      setError('Kunde inte köra blob-synk. Kontrollera konfiguration och försök igen.');
+    } finally {
+      setRunning('none');
+    }
+  };
+
+  return (
+    <div className="admin-section">
+      <h2>☁️ Dev → Prod ordlistesynk (Blob)</h2>
+      <p className="profile-empty" style={{ marginBottom: 12 }}>
+        Kör konfliktmedveten 3-vägsmerge mellan blob-containrarna för dev och prod.
+      </p>
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <button className="admin-refresh-btn" onClick={() => void runSync(true)} disabled={running !== 'none'}>
+          {running === 'dryRun' ? '⏳ Kör torrkörning…' : '🧪 Torrkörning'}
+        </button>
+        <button className="admin-refresh-btn" onClick={() => void runSync(false)} disabled={running !== 'none'}>
+          {running === 'apply' ? '⏳ Synkar…' : '🚀 Synka till prod'}
+        </button>
+      </div>
+
+      {error && <p className="leaderboard-error" style={{ marginTop: 8 }}>{error}</p>}
+
+      {result && (
+        <div style={{ marginTop: 12 }}>
+          <p className="profile-empty">
+            {result.dryRun ? 'Torrkörning' : 'Synk'}: {result.filesChanged}/{result.filesProcessed} filer ändras ·
+            +{result.totalAdded} / ~{result.totalUpdated} / -{result.totalRemoved} · konflikter: {result.totalConflicts}
+          </p>
+
+          {result.files.some(f => (f.conflicts ?? 0) > 0 || !!f.error) && (
+            <div className="admin-table-wrap" style={{ marginTop: 8 }}>
+              <table className="leaderboard-table">
+                <thead>
+                  <tr>
+                    <th>Fil</th>
+                    <th>+ / ~ / -</th>
+                    <th>Konflikter</th>
+                    <th>Detaljer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {result.files
+                    .filter(f => (f.conflicts ?? 0) > 0 || !!f.error)
+                    .map(f => (
+                      <tr key={f.fileName}>
+                        <td>{f.fileName}</td>
+                        <td>{f.added} / {f.updated} / {f.removed}</td>
+                        <td>{f.conflicts}</td>
+                        <td>
+                          {f.error && <div className="leaderboard-error">{f.error}</div>}
+                          {!!f.conflictDetails?.length && (
+                            <ul style={{ margin: 0, paddingLeft: 18 }}>
+                              {f.conflictDetails.slice(0, 10).map((c, i) => (
+                                <li key={`${f.fileName}-${c.word}-${i}`}>
+                                  <code>{c.word}</code>: {c.reason} ({c.resolution})
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Main page ─────────────────────────────────────────────────────────────────
 
 interface DashboardData {
@@ -420,6 +711,9 @@ export default function AdminPage() {
       <DailySection daily={data.daily} />
       <PlayersSection players={data.players} />
       <AdminUsersSection />
+      <BlobSyncSection />
+      <CustomClueCreateSection />
+      <ClueFlagsSection />
       <RegeneratePuzzlesSection />
 
       <Link to="/profile" className="back-link">← Tillbaka till profil</Link>

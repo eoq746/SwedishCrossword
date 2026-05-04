@@ -70,3 +70,14 @@ internal interface IAdminStore
     Task RevokeAdminAsync(string userId);
     Task<List<AdminGrantInfo>> ListGrantedAdminsAsync();
 }
+
+/// <summary>
+/// Clue quality flag queue operations.
+/// </summary>
+internal interface IClueFlagStore
+{
+    Task<string> CreateClueFlagAsync(ClueFlagCreateRequest request, string? createdByUserId);
+    Task<List<ClueFlagInfo>> ListPendingClueFlagsAsync(int limit);
+    Task<ClueFlagInfo?> GetClueFlagAsync(string id);
+    Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId);
+}

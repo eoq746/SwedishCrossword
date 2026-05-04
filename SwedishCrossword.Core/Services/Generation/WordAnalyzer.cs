@@ -77,6 +77,29 @@ internal class WordAnalyzer
         }
     }
 
+    /// <summary>
+    /// Clears in-memory and persisted word analysis cache.
+    /// </summary>
+    public void InvalidateCache()
+    {
+        lock (_analysisCacheLock)
+        {
+            _cachedWordsFingerprint = null;
+            _cachedWordAnalysis = null;
+
+            try
+            {
+                var filePath = GetCacheFilePath();
+                if (File.Exists(filePath))
+                    File.Delete(filePath);
+            }
+            catch
+            {
+                // Ignore disk errors - cache invalidation should be best-effort
+            }
+        }
+    }
+
     private static string ComputeWordsFingerprint(List<Word> words)
     {
         using var sha256 = IncrementalHash.CreateHash(HashAlgorithmName.SHA256);

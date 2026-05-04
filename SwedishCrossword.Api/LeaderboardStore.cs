@@ -14,7 +14,7 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IDisposable
+sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IClueFlagStore, IDisposable
 {
     [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
     public static partial Regex DatePattern { get; }
@@ -1295,6 +1295,145 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return result;
     }
 
+    // ── Clue flags ──
+
+    public async Task<string> CreateClueFlagAsync(ClueFlagCreateRequest request, string? createdByUserId)
+    {
+        ArgumentNullException.ThrowIfNull(request);
+
+        var id = Guid.NewGuid().ToString("N", CultureInfo.InvariantCulture);
+        var now = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            INSERT INTO clue_flags (
+                id, word, current_clue, suggested_clue, reason, status,
+                created_at, created_by, reviewed_at, reviewed_by,
+                updated_clue, puzzle_date, puzzle_size, puzzle_hash, admin_note)
+            VALUES (
+                @id, @word, @currentClue, @suggestedClue, @reason, 'pending',
+                @createdAt, @createdBy, NULL, NULL,
+                NULL, @puzzleDate, @puzzleSize, @puzzleHash, NULL)
+            """;
+        AddParam(cmd, "@id", id);
+        AddParam(cmd, "@word", request.Word);
+        AddParam(cmd, "@currentClue", request.CurrentClue);
+        AddParam(cmd, "@suggestedClue", (object?)request.SuggestedClue ?? DBNull.Value);
+        AddParam(cmd, "@reason", (object?)request.Reason ?? DBNull.Value);
+        AddParam(cmd, "@createdAt", now);
+        AddParam(cmd, "@createdBy", (object?)createdByUserId ?? DBNull.Value);
+        AddParam(cmd, "@puzzleDate", (object?)request.PuzzleDate ?? DBNull.Value);
+        AddParam(cmd, "@puzzleSize", (object?)request.PuzzleSize ?? DBNull.Value);
+        AddParam(cmd, "@puzzleHash", (object?)request.PuzzleHash ?? DBNull.Value);
+        await cmd.ExecuteNonQueryAsync();
+
+        return id;
+    }
+
+    public async Task<List<ClueFlagInfo>> ListPendingClueFlagsAsync(int limit)
+    {
+        var clamped = Math.Clamp(limit, 1, 200);
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              SELECT TOP (@limit)
+                  id, word, current_clue, suggested_clue, reason, status,
+                  created_at, reviewed_at, updated_clue,
+                  puzzle_date, puzzle_size, puzzle_hash, admin_note
+              FROM clue_flags
+              WHERE status = 'pending'
+              ORDER BY created_at DESC
+              """
+            : """
+              SELECT
+                  id, word, current_clue, suggested_clue, reason, status,
+                  created_at, reviewed_at, updated_clue,
+                  puzzle_date, puzzle_size, puzzle_hash, admin_note
+              FROM clue_flags
+              WHERE status = 'pending'
+              ORDER BY created_at DESC
+              LIMIT @limit
+              """;
+        AddParam(cmd, "@limit", clamped);
+
+        return await ReadClueFlagsAsync(cmd);
+    }
+
+    public async Task<ClueFlagInfo?> GetClueFlagAsync(string id)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            SELECT
+                id, word, current_clue, suggested_clue, reason, status,
+                created_at, reviewed_at, updated_clue,
+                puzzle_date, puzzle_size, puzzle_hash, admin_note
+            FROM clue_flags
+            WHERE id = @id
+            """;
+        AddParam(cmd, "@id", id);
+
+        var items = await ReadClueFlagsAsync(cmd);
+        return items.FirstOrDefault();
+    }
+
+    public async Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId)
+    {
+        var normalizedStatus = status.Trim().ToLowerInvariant();
+        if (normalizedStatus is not ("approved" or "rejected"))
+            throw new ArgumentException("Invalid clue flag status", nameof(status));
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            UPDATE clue_flags
+            SET status = @status,
+                reviewed_at = @reviewedAt,
+                reviewed_by = @reviewedBy,
+                updated_clue = @updatedClue,
+                admin_note = @adminNote
+            WHERE id = @id
+              AND status = 'pending'
+            """;
+        AddParam(cmd, "@status", normalizedStatus);
+        AddParam(cmd, "@reviewedAt", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        AddParam(cmd, "@reviewedBy", resolvedByUserId);
+        AddParam(cmd, "@updatedClue", (object?)updatedClue ?? DBNull.Value);
+        AddParam(cmd, "@adminNote", (object?)adminNote ?? DBNull.Value);
+        AddParam(cmd, "@id", id);
+
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    private static async Task<List<ClueFlagInfo>> ReadClueFlagsAsync(DbCommand cmd)
+    {
+        var result = new List<ClueFlagInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            result.Add(new ClueFlagInfo(
+                Id: reader.GetString(0),
+                Word: reader.GetString(1),
+                CurrentClue: reader.GetString(2),
+                SuggestedClue: reader.IsDBNull(3) ? null : reader.GetString(3),
+                Reason: reader.IsDBNull(4) ? null : reader.GetString(4),
+                Status: reader.GetString(5),
+                CreatedAt: reader.GetInt64(6),
+                ReviewedAt: reader.IsDBNull(7) ? null : reader.GetInt64(7),
+                UpdatedClue: reader.IsDBNull(8) ? null : reader.GetString(8),
+                PuzzleDate: reader.IsDBNull(9) ? null : reader.GetString(9),
+                PuzzleSize: reader.IsDBNull(10) ? null : reader.GetString(10),
+                PuzzleHash: reader.IsDBNull(11) ? null : reader.GetString(11),
+                AdminNote: reader.IsDBNull(12) ? null : reader.GetString(12)
+            ));
+        }
+
+        return result;
+    }
+
     // ── Database initialisation ──
 
     private void InitialiseDatabase()
@@ -1400,6 +1539,30 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 granted_by  NVARCHAR(200) NULL,
                 granted_at  BIGINT NOT NULL
             );
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'clue_flags')
+            CREATE TABLE clue_flags (
+                id              NVARCHAR(50) NOT NULL PRIMARY KEY,
+                word            NVARCHAR(64) NOT NULL,
+                current_clue    NVARCHAR(500) NOT NULL,
+                suggested_clue  NVARCHAR(500) NULL,
+                reason          NVARCHAR(1000) NULL,
+                status          NVARCHAR(20) NOT NULL,
+                created_at      BIGINT NOT NULL,
+                created_by      NVARCHAR(200) NULL,
+                reviewed_at     BIGINT NULL,
+                reviewed_by     NVARCHAR(200) NULL,
+                updated_clue    NVARCHAR(500) NULL,
+                puzzle_date     NVARCHAR(10) NULL,
+                puzzle_size     NVARCHAR(20) NULL,
+                puzzle_hash     NVARCHAR(100) NULL,
+                admin_note      NVARCHAR(1000) NULL
+            );
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_clue_flags_status_created')
+            CREATE INDEX idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_clue_flags_created_by')
+            CREATE INDEX idx_clue_flags_created_by ON clue_flags (created_by);
             """;
         cmd.ExecuteNonQuery();
         _logger.LogInformation("Azure SQL database initialised");
@@ -1500,6 +1663,26 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 granted_by  TEXT,
                 granted_at  INTEGER NOT NULL
             );
+
+            CREATE TABLE IF NOT EXISTS clue_flags (
+                id              TEXT NOT NULL PRIMARY KEY,
+                word            TEXT NOT NULL,
+                current_clue    TEXT NOT NULL,
+                suggested_clue  TEXT,
+                reason          TEXT,
+                status          TEXT NOT NULL DEFAULT 'pending',
+                created_at      INTEGER NOT NULL,
+                created_by      TEXT,
+                reviewed_at     INTEGER,
+                reviewed_by     TEXT,
+                updated_clue    TEXT,
+                puzzle_date     TEXT,
+                puzzle_size     TEXT,
+                puzzle_hash     TEXT,
+                admin_note      TEXT
+            );
+            CREATE INDEX IF NOT EXISTS idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
+            CREATE INDEX IF NOT EXISTS idx_clue_flags_created_by ON clue_flags (created_by);
             """;
         create.ExecuteNonQuery();
     }
@@ -1710,6 +1893,14 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         }
 
         return list;
+    }
+
+    private static void AddParam(DbCommand cmd, int index, object value)
+    {
+        var p = cmd.CreateParameter();
+        p.ParameterName = $"@p{index}";
+        p.Value = value;
+        cmd.Parameters.Add(p);
     }
 
     private static void AddParam(DbCommand cmd, string name, object value)

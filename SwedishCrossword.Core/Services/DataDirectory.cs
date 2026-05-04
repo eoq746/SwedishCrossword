@@ -6,12 +6,22 @@
 /// </summary>
 public static class DataDirectory
 {
+    private const string WordListPathEnvironmentVariable = "SWEDISH_CROSSWORD_WORDLIST_PATH";
+
     /// <summary>
     /// Gets the path to the Data directory, working from either the output directory or project directory.
     /// This ensures all applications (main, tests, tools) use the same Data folder.
     /// </summary>
     public static string GetPath()
     {
+        var overridePath = Environment.GetEnvironmentVariable(WordListPathEnvironmentVariable);
+        if (!string.IsNullOrWhiteSpace(overridePath))
+        {
+            var fullOverridePath = Path.GetFullPath(overridePath);
+            Directory.CreateDirectory(fullOverridePath);
+            return fullOverridePath;
+        }
+
         // Walk up the directory tree looking for the SwedishCrossword project's Data folder
         var currentDir = AppContext.BaseDirectory;
 
