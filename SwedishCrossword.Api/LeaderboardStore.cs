@@ -562,7 +562,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 await friendsDedup.ExecuteNonQueryAsync();
             }
 
-            foreach (var (table, column) in new []
+            foreach (var (table, column) in new[]
             {
                 ("scores", "user_id"),
                 ("history", "user_id"),
