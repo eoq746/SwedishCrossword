@@ -368,3 +368,7 @@ FodyWeavers.xsd
 sbom-output/
 .tools/
 publish/
+
+# Frontend build artifacts
+frontend/node_modules/
+SwedishCrossword.Api/wwwroot/app/

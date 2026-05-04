@@ -51,3 +51,66 @@ record FriendChallengeInfo(string Id, string FriendAlias, string Date, string St
 // GDPR data export
 record UserDataExport(string UserId, string? Alias, List<UserSolveRecord> History, List<UserScoreExport> Scores, List<string> Friends);
 record UserScoreExport(string LeaderboardKey, string Name, double Time, long? Timestamp);
+
+// Admin grant management
+record GrantAdminRequest(string UserId);
+record AdminGrantInfo(string UserId, string? Alias, long GrantedAt, string? GrantedByAlias);
+
+// Clue quality flags
+record ClueFlagCreateRequest(
+    string Word,
+    string CurrentClue,
+    string? SuggestedClue,
+    string? Reason,
+    string? PuzzleDate,
+    string? PuzzleSize,
+    string? PuzzleHash);
+
+record ClueFlagResolveRequest(
+    string Status,
+    string? UpdatedClue,
+    string? AdminNote,
+    string? ExpectedWordListVersion = null,
+    bool RemoveClue = false);
+
+record ClueFlagInfo(
+    string Id,
+    string Word,
+    string CurrentClue,
+    string? SuggestedClue,
+    string? Reason,
+    string Status,
+    long CreatedAt,
+    long? ReviewedAt,
+    string? UpdatedClue,
+    string? PuzzleDate,
+    string? PuzzleSize,
+    string? PuzzleHash,
+    string? AdminNote);
+
+record CreateCustomClueRequest(
+    string Word,
+    string Clue,
+    string? Category = null,
+    string? Difficulty = null);
+
+record BlobWordListSyncRequest(bool DryRun = false);
+record BlobWordListSyncConflictDetail(string Word, string Reason, string Resolution);
+record BlobWordListSyncFileResult(
+    string FileName,
+    int Added,
+    int Updated,
+    int Removed,
+    int Conflicts,
+    bool Changed,
+    List<BlobWordListSyncConflictDetail>? ConflictDetails = null,
+    string? Error = null);
+record BlobWordListSyncResponse(
+    bool DryRun,
+    int FilesProcessed,
+    int FilesChanged,
+    int TotalAdded,
+    int TotalUpdated,
+    int TotalRemoved,
+    int TotalConflicts,
+    List<BlobWordListSyncFileResult> Files);

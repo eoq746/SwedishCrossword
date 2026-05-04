@@ -6,92 +6,258 @@
 
 :root {
   /* Brand */
-  --brand-gradient: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  --accent-color: #4f46e5;
-  --accent-hover: #4338ca;
-  --accent-light: #e0e7ff;
+  --brand-primary: #355cff;
+  --brand-secondary: #6d28d9;
+  --interactive-accent: #14b8a6;
+  --interactive-accent-hover: #0f9f96;
+  --interactive-accent-soft: #ccfbf1;
+  --brand-gradient: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+  --accent-color: var(--interactive-accent);
+  --accent-hover: var(--interactive-accent-hover);
+  --accent-light: var(--interactive-accent-soft);
 
   /* Surfaces */
   --bg-body: var(--brand-gradient);
   --bg-card: #ffffff;
-  --bg-card-alt: #f9fafb;
-  --bg-overlay: rgba(0, 0, 0, .45);
-  --shadow: rgba(0, 0, 0, 0.2);
+  --bg-card-alt: #f5f8fc;
+  --bg-overlay: rgba(6, 16, 33, 0.45);
+  --shadow: rgba(15, 23, 42, 0.12);
+  --shadow-md: rgba(15, 23, 42, 0.18);
+  --shadow-lg: 0 12px 36px rgba(15, 23, 42, 0.2);
 
   /* Text */
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-  --text-on-brand: #ffffff;
+  --text-secondary: #334155;
+  --text-muted: #5b6b82;
+  --text-on-brand: #f8fbff;
 
   /* Borders */
-  --border-light: #e2e8f0;
-  --border-medium: #cbd5e1;
+  --border-light: #d9e3ef;
+  --border-medium: #bccbdb;
 
   /* Feedback */
   --success-bg: #dcfce7;
   --success-border: #16a34a;
-  --info-bg: #e0e7ff;
-  --warn-bg: #fef3c7;
-  --warn-border: #f59e0b;
+  --success-text: #15803d;
+  --error-bg: #fee2e2;
+  --error-border: #dc2626;
+  --error-text: #b91c1c;
+  --info-bg: #dbeafe;
+  --warn-bg: #fff4cc;
+  --warn-border: #d97706;
+  --warn-text: #b45309;
 
   /* Buttons */
-  --btn-secondary-bg: #e2e8f0;
+  --btn-secondary-bg: #e7eef6;
   --btn-secondary-text: #334155;
+  --action-primary-bg: var(--brand-primary);
+  --action-primary-hover: color-mix(in srgb, var(--brand-primary) 82%, var(--brand-secondary));
+  --action-primary-shadow: rgba(53, 92, 255, 0.24);
+
+  /* Puzzle interaction */
+  --puzzle-word-highlight: color-mix(in srgb, var(--brand-primary) 10%, var(--accent-light) 70%);
+  --puzzle-active-cell-bg: color-mix(in srgb, var(--accent-color) 20%, var(--surface-bg));
+  --puzzle-active-cell-outline: var(--accent-color);
+  --puzzle-active-cell-ring: rgba(255, 255, 255, 0.92);
+  --clue-active-bg: color-mix(in srgb, var(--puzzle-word-highlight) 86%, var(--surface-raised));
+  --clue-active-border: var(--accent-color);
+  --verified-badge-bg: color-mix(in srgb, var(--interactive-accent) 14%, var(--surface-raised));
+  --verified-badge-border: color-mix(in srgb, var(--interactive-accent) 45%, var(--border-light));
+  --verified-badge-text: #0f766e;
+  --hint-badge-bg: var(--warn-bg);
+  --hint-badge-border: var(--warn-border);
+  --hint-badge-text: var(--warn-text);
+  --medal-gold-from: #fff7cc;
+  --medal-gold-to: #fde68a;
+  --medal-gold-border: #fbbf24;
+  --medal-gold-shadow: rgba(251, 191, 36, 0.35);
+  --medal-silver-from: #f3f7fb;
+  --medal-silver-to: #dde7f1;
+  --medal-silver-border: #9aaec3;
+  --medal-silver-shadow: rgba(148, 163, 184, 0.35);
+  --medal-bronze-from: #fff3e8;
+  --medal-bronze-to: #fed7aa;
+  --medal-bronze-border: #fb923c;
+  --medal-bronze-shadow: rgba(249, 115, 22, 0.25);
+  --calendar-available-bg: color-mix(in srgb, var(--brand-primary) 10%, var(--card-bg));
+  --calendar-available-text: var(--brand-primary);
+  --calendar-available-border: color-mix(in srgb, var(--brand-primary) 28%, var(--border));
+  --calendar-available-hover-shadow: rgba(53, 92, 255, 0.22);
+  --calendar-today-outline: var(--accent-color);
+  --calendar-today-from: color-mix(in srgb, var(--accent-color) 14%, var(--card-bg));
+  --calendar-today-to: color-mix(in srgb, var(--brand-primary) 16%, var(--card-bg));
+
+  /* Radius scale */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-base: 0.18s ease;
+  --transition-fast: 0.12s ease;
+
+  /* Focus */
+  --focus-ring-color: rgba(20, 184, 166, 0.35);
+  --focus-ring: 0 0 0 3px var(--focus-ring-color);
+  --focus-ring-offset: 2px;
 
   /* Aliases used by info/standalone pages */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
+  --surface-hover: #ecf4fb;
+  --surface-raised: #ffffff;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);
   --border: var(--border-light);
+
+  /* On-brand UI (nav/footer over gradient) */
+  --on-brand-surface: rgba(255, 255, 255, 0.1);
+  --on-brand-surface-hover: rgba(255, 255, 255, 0.13);
+  --on-brand-surface-active: rgba(255, 255, 255, 0.22);
+  --on-brand-border: rgba(255, 255, 255, 0.16);
+  --on-brand-border-strong: rgba(255, 255, 255, 0.4);
+  --on-brand-border-subtle: rgba(255, 255, 255, 0.15);
+  --on-brand-text: #ffffff;
+  --on-brand-text-muted: rgba(255, 255, 255, 0.8);
+  --on-brand-text-subtle: rgba(255, 255, 255, 0.62);
+  --on-brand-text-faint: rgba(255, 255, 255, 0.55);
+  --on-brand-separator: rgba(255, 255, 255, 0.28);
+  --on-brand-focus-ring: rgba(255, 255, 255, 0.5);
+
+  /* Notices */
+  --notice-warning-bg: var(--warn-bg);
+  --notice-warning-border: color-mix(in srgb, var(--warn-border) 35%, transparent);
+  --notice-warning-text: var(--warn-text);
+  --notice-warning-shadow: 0 1px 6px var(--shadow);
+
+  /* Browser form control theme */
+  --color-scheme: light;
 }
 
 [data-theme="dark"] {
   /* Brand */
-  --brand-gradient: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-  --accent-color: #818cf8;
-  --accent-hover: #a5b4fc;
-  --accent-light: #312e81;
+  --brand-primary: #7c93ff;
+  --brand-secondary: #a78bfa;
+  --interactive-accent: #2dd4bf;
+  --interactive-accent-hover: #5eead4;
+  --interactive-accent-soft: rgba(45, 212, 191, 0.16);
+  --brand-gradient: linear-gradient(135deg, #111c4d 0%, #31205f 100%);
+  --accent-color: var(--interactive-accent);
+  --accent-hover: var(--interactive-accent-hover);
+  --accent-light: var(--interactive-accent-soft);
 
   /* Surfaces */
   --bg-body: var(--brand-gradient);
-  --bg-card: #1e1e2e;
-  --bg-card-alt: #262637;
-  --bg-overlay: rgba(0, 0, 0, .65);
-  --shadow: rgba(0, 0, 0, 0.5);
+  --bg-card: #111827;
+  --bg-card-alt: #182235;
+  --bg-overlay: rgba(2, 8, 23, 0.7);
+  --shadow: rgba(2, 8, 23, 0.42);
+  --shadow-md: rgba(2, 8, 23, 0.56);
+  --shadow-lg: 0 12px 36px rgba(2, 8, 23, 0.58);
 
   /* Text */
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --text-muted: #94a3b8;
-  --text-on-brand: #e2e8f0;
+  --text-primary: #e6eef8;
+  --text-secondary: #b6c7dc;
+  --text-muted: #88a1bf;
+  --text-on-brand: #eff6ff;
 
   /* Borders */
-  --border-light: #334155;
-  --border-medium: #475569;
+  --border-light: #2c3b53;
+  --border-medium: #3a4e6b;
 
   /* Feedback */
-  --success-bg: rgba(22, 163, 74, 0.1);
-  --success-border: #16a34a;
-  --info-bg: rgba(129, 140, 248, 0.1);
-  --warn-bg: rgba(245, 158, 11, 0.12);
-  --warn-border: #d97706;
+  --success-bg: rgba(22, 163, 74, 0.16);
+  --success-border: #22c55e;
+  --success-text: #4ade80;
+  --error-bg: rgba(220, 38, 38, 0.16);
+  --error-border: #ef4444;
+  --error-text: #f87171;
+  --info-bg: rgba(53, 92, 255, 0.18);
+  --warn-bg: rgba(245, 158, 11, 0.16);
+  --warn-border: #f59e0b;
+  --warn-text: #fbbf24;
 
   /* Buttons */
-  --btn-secondary-bg: #334155;
-  --btn-secondary-text: #e2e8f0;
+  --btn-secondary-bg: #243247;
+  --btn-secondary-text: #e6eef8;
+  --action-primary-bg: var(--brand-primary);
+  --action-primary-hover: color-mix(in srgb, var(--brand-primary) 78%, var(--brand-secondary));
+  --action-primary-shadow: rgba(124, 147, 255, 0.22);
+
+  /* Puzzle interaction */
+  --puzzle-word-highlight: color-mix(in srgb, var(--brand-primary) 22%, var(--surface-bg));
+  --puzzle-active-cell-bg: color-mix(in srgb, var(--accent-color) 22%, var(--surface-bg));
+  --puzzle-active-cell-outline: var(--accent-color);
+  --puzzle-active-cell-ring: rgba(230, 238, 248, 0.12);
+  --clue-active-bg: color-mix(in srgb, var(--puzzle-word-highlight) 78%, var(--surface-raised));
+  --clue-active-border: var(--accent-color);
+  --verified-badge-bg: color-mix(in srgb, var(--interactive-accent) 18%, var(--surface-raised));
+  --verified-badge-border: color-mix(in srgb, var(--interactive-accent) 42%, var(--border-medium));
+  --verified-badge-text: #7ff4e6;
+  --hint-badge-bg: var(--warn-bg);
+  --hint-badge-border: var(--warn-border);
+  --hint-badge-text: var(--warn-text);
+  --medal-gold-from: #4a3410;
+  --medal-gold-to: #7c5416;
+  --medal-gold-border: #d6a32f;
+  --medal-gold-shadow: rgba(214, 163, 47, 0.3);
+  --medal-silver-from: #233247;
+  --medal-silver-to: #32445d;
+  --medal-silver-border: #8ca3bf;
+  --medal-silver-shadow: rgba(140, 163, 191, 0.25);
+  --medal-bronze-from: #4b2e1f;
+  --medal-bronze-to: #6a402b;
+  --medal-bronze-border: #d18658;
+  --medal-bronze-shadow: rgba(209, 134, 88, 0.24);
+  --calendar-available-bg: color-mix(in srgb, var(--brand-primary) 16%, var(--card-bg));
+  --calendar-available-text: var(--brand-primary);
+  --calendar-available-border: color-mix(in srgb, var(--brand-primary) 36%, var(--border));
+  --calendar-available-hover-shadow: rgba(124, 147, 255, 0.24);
+  --calendar-today-outline: var(--accent-color);
+  --calendar-today-from: color-mix(in srgb, var(--accent-color) 12%, var(--card-bg));
+  --calendar-today-to: color-mix(in srgb, var(--brand-primary) 20%, var(--bg-card-alt));
+
+  /* Focus */
+  --focus-ring-color: rgba(45, 212, 191, 0.4);
+  --focus-ring: 0 0 0 3px var(--focus-ring-color);
 
   /* Aliases */
   --page-bg: var(--brand-gradient);
   --card-bg: var(--bg-card);
   --surface-bg: var(--bg-card-alt);
+  --surface-hover: #202e45;
+  --surface-raised: #1d2940;
   --text-heading: var(--text-primary);
   --text-body: var(--text-secondary);
   --accent: var(--accent-color);
   --border: var(--border-medium);
+
+  /* On-brand UI (nav/footer over gradient) */
+  --on-brand-surface: rgba(255, 255, 255, 0.12);
+  --on-brand-surface-hover: rgba(255, 255, 255, 0.2);
+  --on-brand-surface-active: rgba(255, 255, 255, 0.26);
+  --on-brand-border: rgba(255, 255, 255, 0.22);
+  --on-brand-border-strong: rgba(255, 255, 255, 0.42);
+  --on-brand-border-subtle: rgba(255, 255, 255, 0.2);
+  --on-brand-text: #f8fbff;
+  --on-brand-text-muted: rgba(248, 251, 255, 0.88);
+  --on-brand-text-subtle: rgba(248, 251, 255, 0.72);
+  --on-brand-text-faint: rgba(248, 251, 255, 0.64);
+  --on-brand-separator: rgba(248, 251, 255, 0.4);
+  --on-brand-focus-ring: rgba(248, 251, 255, 0.6);
+
+  /* Notices */
+  --notice-warning-bg: color-mix(in srgb, var(--warn-bg) 88%, var(--surface-raised));
+  --notice-warning-border: color-mix(in srgb, var(--warn-border) 60%, var(--border));
+  --notice-warning-text: color-mix(in srgb, var(--warn-text) 80%, var(--text-primary));
+  --notice-warning-shadow: 0 1px 8px rgba(2, 8, 23, 0.38);
+
+  /* Browser form control theme */
+  --color-scheme: dark;
 }
 
 /* Info-page nav link */

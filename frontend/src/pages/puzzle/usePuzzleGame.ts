@@ -1,0 +1,661 @@
+import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import type { AuthUser } from '../../hooks/useAuth';
+import type {
+  CellKey,
+  CheckResult,
+  ClueEntry,
+  HistoryResponse,
+  HistoryRow,
+  HintActionResult,
+  LeaderboardResponse,
+  PuzzleData,
+  PuzzleSize,
+  RevealSolutionResult,
+  ScoreEntry,
+} from './types';
+import { buildClueEntries } from './gridModel';
+import { findBestEntry, findFirstFillableCell, navReducer } from './navigation';
+import { usePuzzleGridInput } from './usePuzzleGridInput';
+import {
+  formatTime,
+  getProgressKey,
+  getTodayIso,
+  loadLocalLeaderboard,
+  saveLocalLeaderboard,
+} from './utils';
+
+interface UsePuzzleGameOptions {
+  size: PuzzleSize;
+  dateParam: string;
+  user: AuthUser | null;
+}
+
+function readLocalStorage(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeLocalStorage(key: string, value: string): void {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // ignore storage failures and continue the in-memory game session
+  }
+}
+
+function removeLocalStorage(key: string): void {
+  try {
+    localStorage.removeItem(key);
+  } catch {
+    // ignore storage failures and continue the in-memory game session
+  }
+}
+
+export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
+  const [loading, setLoading] = useState(true);
+  const [puzzleUnavailable, setPuzzleUnavailable] = useState(false);
+  const [puzzleNotFound, setPuzzleNotFound] = useState(false);
+  const [puzzle, setPuzzle] = useState<PuzzleData | null>(null);
+  const [seconds, setSeconds] = useState(0);
+  const [puzzleSolved, setPuzzleSolved] = useState(false);
+  const [hasSubmittedScore, setHasSubmittedScore] = useState(false);
+  const [letterHintsUsed, setLetterHintsUsed] = useState(0);
+  const [wordHintsUsed, setWordHintsUsed] = useState(0);
+  const [values, setValues] = useState<Record<string, string>>({});
+  const [incorrectCells, setIncorrectCells] = useState<Record<string, true>>({});
+  const [emptyWarningCells, setEmptyWarningCells] = useState<Record<string, true>>({});
+  const [hintRevealedCells, setHintRevealedCells] = useState<Record<string, true>>({});
+  const [leaderboard, setLeaderboard] = useState<ScoreEntry[]>([]);
+  const [history, setHistory] = useState<HistoryResponse>({});
+  const [usernameModalOpen, setUsernameModalOpen] = useState(false);
+  const [username, setUsername] = useState('');
+
+  const [nav, dispatchNav] = useReducer(navReducer, {
+    active: null,
+    direction: 'across',
+  });
+
+  const puzzleDate = useMemo(() => {
+    if (puzzle?.puzzleDate) return puzzle.puzzleDate;
+    if (dateParam) return dateParam;
+    return getTodayIso();
+  }, [dateParam, puzzle?.puzzleDate]);
+
+  const puzzleHash = puzzle?.puzzleHash ?? '';
+
+  const fillableCells = useMemo(() => {
+    if (!puzzle) return [] as Array<{ row: number; col: number }>;
+    const result: Array<{ row: number; col: number }> = [];
+    for (let row = 0; row < puzzle.height; row++) {
+      for (let col = 0; col < puzzle.width; col++) {
+        if (puzzle.cells[row]?.[col] !== null) result.push({ row, col });
+      }
+    }
+    return result;
+  }, [puzzle]);
+
+  const clueEntries = useMemo(
+    () => (puzzle ? buildClueEntries(puzzle) : { across: [], down: [], byCell: {} }),
+    [puzzle],
+  );
+
+  const activeEntry = useMemo(() => {
+    if (!nav.active) return null;
+    const key: CellKey = `${nav.active.row},${nav.active.col}`;
+    return findBestEntry(clueEntries.byCell[key], nav.direction, nav.active.row, nav.active.col);
+  }, [clueEntries.byCell, nav.active, nav.direction]);
+
+  const filledCount = useMemo(
+    () => fillableCells.filter(cell => Boolean(values[`${cell.row},${cell.col}`])).length,
+    [fillableCells, values],
+  );
+
+  const progressPercent = fillableCells.length > 0 ? Math.round((filledCount / fillableCells.length) * 100) : 0;
+
+  const currentHintSummary =
+    letterHintsUsed + wordHintsUsed > 0
+      ? `💡 ${letterHintsUsed > 0 ? `${letterHintsUsed} bokstav` : ''}${
+          letterHintsUsed > 0 && wordHintsUsed > 0 ? ', ' : ''
+        }${wordHintsUsed > 0 ? `${wordHintsUsed} ord` : ''}`
+      : '';
+
+  const historyRows = useMemo<HistoryRow[]>(() => {
+    const keys = Object.keys(history).sort((a, b) => b.localeCompare(a)).slice(0, 30);
+    const rows: HistoryRow[] = [];
+    for (const key of keys) {
+      const filtered = history[key].filter(e => !e.puzzleSize || e.puzzleSize === size);
+      if (filtered.length > 0) rows.push([key, filtered]);
+    }
+    return rows;
+  }, [history, size]);
+
+  const saveProgress = useCallback(
+    (nextValues: Record<string, string>, nextSeconds: number, nextLetterHints: number, nextWordHints: number) => {
+      if (!puzzleHash || puzzleSolved) return;
+      const data = {
+        puzzleHash,
+        seconds: nextSeconds,
+        cells: nextValues,
+        letterHintsUsed: nextLetterHints,
+        wordHintsUsed: nextWordHints,
+        timestamp: Date.now(),
+      };
+      writeLocalStorage(getProgressKey(puzzleHash), JSON.stringify(data));
+    },
+    [puzzleHash, puzzleSolved],
+  );
+
+  const clearProgress = useCallback(() => {
+    if (!puzzleHash) return;
+    removeLocalStorage(getProgressKey(puzzleHash));
+  }, [puzzleHash]);
+
+  const activateCell = useCallback(
+    (row: number, col: number, direction?: ClueEntry['direction']) => {
+      if (!puzzle) return;
+      if (row < 0 || row >= puzzle.height || col < 0 || col >= puzzle.width) return;
+      if (puzzle.cells[row]?.[col] === null) return;
+      dispatchNav({ type: 'set-active', cell: { row, col }, direction });
+    },
+    [puzzle],
+  );
+
+  const finishSolvedPuzzle = useCallback(() => {
+    setPuzzleSolved(true);
+    clearProgress();
+    setUsernameModalOpen(true);
+    setUsername(user?.alias ?? user?.name ?? readLocalStorage('crossword-username') ?? '');
+  }, [clearProgress, user?.alias, user?.name]);
+
+  const fetchLeaderboard = useCallback(async () => {
+    if (!puzzleHash || !puzzleDate) return;
+    try {
+      const res = await fetch('/api/leaderboard', { credentials: 'same-origin' });
+      if (!res.ok) throw new Error('Leaderboard unavailable');
+      const data = (await res.json()) as LeaderboardResponse;
+      const key = `${puzzleDate}-${puzzleHash}`;
+      const entries = [...(data.scores[key] ?? [])].sort((a, b) => a.time - b.time).slice(0, 10);
+      setLeaderboard(entries);
+      saveLocalLeaderboard(puzzleDate, puzzleHash, entries);
+    } catch {
+      setLeaderboard(loadLocalLeaderboard(puzzleDate, puzzleHash));
+    }
+  }, [puzzleDate, puzzleHash]);
+
+  const fetchHistory = useCallback(async () => {
+    try {
+      const res = await fetch('/api/leaderboard/history?days=30', { credentials: 'same-origin' });
+      if (!res.ok) return;
+      const data = (await res.json()) as HistoryResponse;
+      setHistory(data);
+    } catch {
+      setHistory({});
+    }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadPuzzle = async () => {
+      setLoading(true);
+      setPuzzleUnavailable(false);
+      setPuzzleNotFound(false);
+
+      const query = `size=${encodeURIComponent(size)}`;
+      const url = dateParam ? `/api/puzzle/${dateParam}?${query}` : `/api/puzzle/today?${query}`;
+
+      try {
+        const res = await fetch(url, { credentials: 'same-origin' });
+        if (cancelled) return;
+
+        if (res.status === 503) {
+          setPuzzleUnavailable(true);
+          setPuzzle(null);
+          setLoading(false);
+          return;
+        }
+
+        if (res.status === 404 && dateParam) {
+          setPuzzleNotFound(true);
+          setPuzzle(null);
+          setLoading(false);
+          return;
+        }
+
+        if (!res.ok) {
+          setPuzzleUnavailable(true);
+          setPuzzle(null);
+          setLoading(false);
+          return;
+        }
+
+        const data = (await res.json()) as PuzzleData;
+        setPuzzle(data);
+        setSeconds(0);
+        setPuzzleSolved(false);
+        setHasSubmittedScore(false);
+        setLetterHintsUsed(0);
+        setWordHintsUsed(0);
+        setValues({});
+        setIncorrectCells({});
+        setEmptyWarningCells({});
+        setHintRevealedCells({});
+        setUsernameModalOpen(false);
+
+        const first = findFirstFillableCell(data);
+        if (first) dispatchNav({ type: 'set-active', cell: first, direction: 'across' });
+
+        setLoading(false);
+      } catch {
+        if (cancelled) return;
+        setPuzzleUnavailable(true);
+        setPuzzle(null);
+        setLoading(false);
+      }
+    };
+
+    loadPuzzle();
+    return () => {
+      cancelled = true;
+    };
+  }, [dateParam, size]);
+
+  useEffect(() => {
+    if (!puzzleHash) return;
+    try {
+      const raw = readLocalStorage(getProgressKey(puzzleHash));
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as {
+        puzzleHash: string;
+        seconds?: number;
+        cells?: Record<string, string>;
+        letterHintsUsed?: number;
+        wordHintsUsed?: number;
+      };
+      if (parsed.puzzleHash !== puzzleHash) return;
+      setValues(parsed.cells ?? {});
+      setSeconds(parsed.seconds ?? 0);
+      setLetterHintsUsed(parsed.letterHintsUsed ?? 0);
+      setWordHintsUsed(parsed.wordHintsUsed ?? 0);
+    } catch {
+      // ignore invalid cache
+    }
+  }, [puzzleHash]);
+
+  useEffect(() => {
+    if (!puzzle || puzzleSolved) return;
+    const id = window.setInterval(() => {
+      setSeconds(prev => {
+        const next = prev + 1;
+        if (next % 5 === 0) saveProgress(values, next, letterHintsUsed, wordHintsUsed);
+        return next;
+      });
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [letterHintsUsed, puzzle, puzzleSolved, saveProgress, values, wordHintsUsed]);
+
+  useEffect(() => {
+    if (!puzzleHash || !puzzleDate) return;
+    fetchLeaderboard();
+    fetchHistory();
+  }, [fetchHistory, fetchLeaderboard, puzzleDate, puzzleHash]);
+
+  const { handleCellChange, handleCellKeyDown } = usePuzzleGridInput({
+    puzzle,
+    puzzleSolved,
+    nav,
+    clueEntries,
+    activeEntry,
+    seconds,
+    letterHintsUsed,
+    wordHintsUsed,
+    activateCell,
+    dispatchNav,
+    saveProgress,
+    setValues,
+    setIncorrectCells,
+    setEmptyWarningCells,
+  });
+
+  const checkAnswers = useCallback(async (): Promise<CheckResult> => {
+    if (!puzzle || puzzleSolved) return { status: 'incorrect', emptyCount: 0, incorrectCount: 0 };
+
+    const cells: Record<string, string> = {};
+    const empty: Record<string, true> = {};
+    for (const c of fillableCells) {
+      const key: CellKey = `${c.row},${c.col}`;
+      const value = values[key]?.toUpperCase() ?? '';
+      if (value) cells[key] = value;
+      else empty[key] = true;
+    }
+
+    if (Object.keys(empty).length > 0) {
+      setIncorrectCells({});
+      setEmptyWarningCells(empty);
+      return { status: 'incomplete', emptyCount: Object.keys(empty).length, incorrectCount: 0 };
+    }
+
+    if (!puzzle.submissionToken || !puzzleDate) {
+      setIncorrectCells({});
+      setEmptyWarningCells({});
+      return { status: 'error', emptyCount: 0, incorrectCount: 0 };
+    }
+
+    try {
+      const res = await fetch('/api/puzzle/check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({ token: puzzle.submissionToken, puzzleDate, size, cells }),
+      });
+
+      if (!res.ok) {
+        setIncorrectCells({});
+        setEmptyWarningCells({});
+        return { status: 'error', emptyCount: 0, incorrectCount: 0 };
+      }
+
+      const data = (await res.json()) as { solved: boolean; results: Record<string, boolean> };
+      const incorrect: Record<string, true> = {};
+      for (const c of fillableCells) {
+        const key: CellKey = `${c.row},${c.col}`;
+        if (!data.results[key]) incorrect[key] = true;
+      }
+
+      setIncorrectCells(incorrect);
+      setEmptyWarningCells({});
+
+      if (data.solved) {
+        finishSolvedPuzzle();
+        return { status: 'solved', emptyCount: 0, incorrectCount: 0 };
+      }
+
+      return {
+        status: 'incorrect',
+        emptyCount: 0,
+        incorrectCount: Object.keys(incorrect).length,
+      };
+    } catch {
+      setIncorrectCells({});
+      setEmptyWarningCells({});
+      return { status: 'error', emptyCount: 0, incorrectCount: 0 };
+    }
+  }, [fillableCells, finishSolvedPuzzle, puzzle, puzzleDate, puzzleSolved, size, values]);
+
+  const clearGrid = useCallback(() => {
+    setValues({});
+    setIncorrectCells({});
+    setEmptyWarningCells({});
+    setHintRevealedCells({});
+    setLetterHintsUsed(0);
+    setWordHintsUsed(0);
+    clearProgress();
+  }, [clearProgress]);
+
+  const revealSolution = useCallback(async (): Promise<RevealSolutionResult> => {
+    if (!puzzle || puzzleSolved || !puzzle.submissionToken || !puzzleDate) return 'unavailable';
+
+    const allCoords = fillableCells;
+    let letters: Record<string, string> = {};
+
+    try {
+      const res = await fetch('/api/puzzle/hint', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({
+          token: puzzle.submissionToken,
+          puzzleDate,
+          size,
+          cells: allCoords.map(c => [c.row, c.col]),
+        }),
+      });
+      if (!res.ok) return 'unavailable';
+      const data = (await res.json()) as { letters: Record<string, string> };
+      letters = data.letters;
+    } catch {
+      return 'unavailable';
+    }
+
+    const nextValues: Record<string, string> = {};
+    const nextHints: Record<string, true> = {};
+    for (const c of allCoords) {
+      const key: CellKey = `${c.row},${c.col}`;
+      const letter = letters[key]?.toUpperCase() ?? '';
+      if (!letter) return 'unavailable';
+      nextValues[key] = letter;
+      nextHints[key] = true;
+    }
+
+    setValues(nextValues);
+    setHintRevealedCells(nextHints);
+    setIncorrectCells({});
+    setEmptyWarningCells({});
+    setPuzzleSolved(true);
+    setHasSubmittedScore(true);
+    clearProgress();
+    return 'ok';
+  }, [clearProgress, fillableCells, puzzle, puzzleDate, puzzleSolved, size]);
+
+  const revealLetter = useCallback(async (): Promise<HintActionResult> => {
+    if (!puzzle || puzzleSolved || !nav.active) return 'no-active-cell';
+    if (!puzzle.submissionToken || !puzzleDate) return 'unavailable';
+
+    const { row, col } = nav.active;
+    const key: CellKey = `${row},${col}`;
+    let revealed = '';
+
+    try {
+      const res = await fetch('/api/puzzle/hint', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({ token: puzzle.submissionToken, puzzleDate, size, cells: [[row, col]] }),
+      });
+      if (!res.ok) return 'unavailable';
+      const data = (await res.json()) as { letters: Record<string, string> };
+      revealed = data.letters[key] ?? '';
+    } catch {
+      return 'unavailable';
+    }
+
+    if (!revealed) return 'unavailable';
+
+    setValues(prev => {
+      const next = { ...prev, [key]: revealed };
+      saveProgress(next, seconds, letterHintsUsed + 1, wordHintsUsed);
+      return next;
+    });
+    setHintRevealedCells(prev => ({ ...prev, [key]: true }));
+    setIncorrectCells(prev => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+    setEmptyWarningCells(prev => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
+    setLetterHintsUsed(v => v + 1);
+
+    return 'ok';
+  }, [letterHintsUsed, nav.active, puzzle, puzzleDate, puzzleSolved, saveProgress, seconds, size, wordHintsUsed]);
+
+  const revealWord = useCallback(async (): Promise<HintActionResult> => {
+    if (!puzzle || puzzleSolved || !nav.active || !activeEntry) return 'no-active-cell';
+    if (!puzzle.submissionToken || !puzzleDate) return 'unavailable';
+
+    const targets = activeEntry.cells;
+    let letters: Record<string, string> = {};
+
+    try {
+      const res = await fetch('/api/puzzle/hint', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({
+          token: puzzle.submissionToken,
+          puzzleDate,
+          size,
+          cells: targets.map(c => [c.row, c.col]),
+        }),
+      });
+      if (!res.ok) return 'unavailable';
+      const data = (await res.json()) as { letters: Record<string, string> };
+      letters = data.letters;
+    } catch {
+      return 'unavailable';
+    }
+
+    const nextHints = wordHintsUsed + 1;
+    const resolvedLetters = targets.map(c => ({
+      key: `${c.row},${c.col}` as CellKey,
+      letter: letters[`${c.row},${c.col}`]?.toUpperCase() ?? '',
+    }));
+
+    if (resolvedLetters.some(entry => !entry.letter)) return 'unavailable';
+
+    setValues(prev => {
+      const next = { ...prev };
+      for (const entry of resolvedLetters) {
+        next[entry.key] = entry.letter;
+      }
+      saveProgress(next, seconds, letterHintsUsed, nextHints);
+      return next;
+    });
+
+    setHintRevealedCells(prev => {
+      const next = { ...prev };
+      for (const entry of resolvedLetters) next[entry.key] = true;
+      return next;
+    });
+    setWordHintsUsed(nextHints);
+
+    return 'ok';
+  }, [activeEntry, letterHintsUsed, nav.active, puzzle, puzzleDate, puzzleSolved, saveProgress, seconds, size, wordHintsUsed]);
+
+  const submitScore = useCallback(async () => {
+    if (!puzzle || !puzzleHash || !puzzleDate || hasSubmittedScore) return;
+
+    const trimmed = username.trim();
+    const name = (trimmed || user?.alias || user?.name || 'Anonym').slice(0, 20);
+    writeLocalStorage('crossword-username', name);
+
+    const payload = {
+      token: puzzle.submissionToken,
+      name,
+      time: seconds,
+      puzzleHash,
+      date: puzzleDate,
+      puzzleSize: `${puzzle.width}x${puzzle.height}`,
+      hintsUsed: letterHintsUsed,
+      wordHintsUsed,
+    };
+
+    let submitted = false;
+    try {
+      const res = await fetch('/api/scores', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        submitted = true;
+        const data = (await res.json()) as { leaderboard?: ScoreEntry[] };
+        if (data.leaderboard) {
+          const entries = [...data.leaderboard].sort((a, b) => a.time - b.time).slice(0, 10);
+          setLeaderboard(entries);
+          saveLocalLeaderboard(puzzleDate, puzzleHash, entries);
+        }
+      }
+    } catch {
+      submitted = false;
+    }
+
+    if (!submitted) {
+      const localEntry: ScoreEntry = {
+        name,
+        time: seconds,
+        timestamp: Date.now(),
+        puzzleHash,
+        hintsUsed: letterHintsUsed,
+        wordHintsUsed,
+        userId: user?.userId ?? null,
+      };
+      const local = [...loadLocalLeaderboard(puzzleDate, puzzleHash), localEntry]
+        .sort((a, b) => a.time - b.time)
+        .slice(0, 10);
+      setLeaderboard(local);
+      saveLocalLeaderboard(puzzleDate, puzzleHash, local);
+    }
+
+    setHasSubmittedScore(true);
+    setUsernameModalOpen(false);
+  }, [
+    hasSubmittedScore,
+    letterHintsUsed,
+    puzzle,
+    puzzleDate,
+    puzzleHash,
+    seconds,
+    user?.alias,
+    user?.name,
+    user?.userId,
+    username,
+    wordHintsUsed,
+  ]);
+
+  const isClueFilled = useCallback(
+    (entry: ClueEntry) => entry.cells.every(cell => Boolean(values[`${cell.row},${cell.col}`])),
+    [values],
+  );
+
+  return {
+    loading,
+    puzzleUnavailable,
+    puzzleNotFound,
+    puzzle,
+    puzzleDate,
+    seconds,
+    puzzleSolved,
+    hasSubmittedScore,
+    letterHintsUsed,
+    wordHintsUsed,
+    values,
+    incorrectCells,
+    emptyWarningCells,
+    hintRevealedCells,
+    leaderboard,
+    historyRows,
+    usernameModalOpen,
+    setUsernameModalOpen,
+    username,
+    setUsername,
+    nav,
+    clueEntries,
+    activeEntry,
+    filledCount,
+    totalFillableCount: fillableCells.length,
+    progressPercent,
+    currentHintSummary,
+    activateCell,
+    handleCellChange,
+    handleCellKeyDown,
+    checkAnswers,
+    clearGrid,
+    revealSolution,
+    revealLetter,
+    revealWord,
+    submitScore,
+    isClueFilled,
+  };
+}
+
+export function formatLeaderboardTime(seconds: number): string {
+  return formatTime(seconds);
+}

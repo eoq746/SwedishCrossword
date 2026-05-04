@@ -132,6 +132,11 @@ public class ApiIntegrationTests : IAsyncDisposable
         var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
         await Assert.That(puzzle.TryGetProperty("submissionToken", out _)).IsTrue();
         await Assert.That(puzzle.TryGetProperty("puzzleHash", out _)).IsTrue();
+        await Assert.That(puzzle.TryGetProperty("cells", out var cells)).IsTrue();
+        await Assert.That(cells[0][0].TryGetProperty("letter", out _)).IsFalse();
+        await Assert.That(puzzle.TryGetProperty("clues", out var clues)).IsTrue();
+        await Assert.That(clues.GetProperty("across")[0].TryGetProperty("answer", out _)).IsFalse();
+        await Assert.That(clues.GetProperty("down")[0].TryGetProperty("answer", out _)).IsFalse();
     }
 
     [Test]
@@ -348,9 +353,7 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task PuzzleToday_PreSeededFile_ReturnsPreparedPuzzle()
     {
-        var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(TempPuzzlePath);
-        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        await SeedStandardPuzzleForTodayEndpointAsync(TestPuzzleJson);
 
         var response = await Client.GetAsync("/api/puzzle/today");
 
@@ -372,10 +375,7 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task PuzzleToday_SmallSize_FallsBackToStandard()
     {
-        var today = GetSwedishDate().ToString("yyyy-MM-dd");
-        Directory.CreateDirectory(TempPuzzlePath);
-        // Only create the standard file, not the small variant
-        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
+        await SeedStandardPuzzleForTodayEndpointAsync(TestPuzzleJson);
 
         var response = await Client.GetAsync("/api/puzzle/today?size=small");
 
@@ -1084,6 +1084,56 @@ public class ApiIntegrationTests : IAsyncDisposable
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
     }
 
+    [Test]
+    public async Task ClueFlags_PostValidFlag_ReturnsOk()
+    {
+        var response = await Client.PostAsJsonAsync("/api/clues/flags", new
+        {
+            word = "KATT",
+            currentClue = "Djur",
+            suggestedClue = "Husdjur",
+            reason = "Kan vara tydligare",
+            puzzleDate = "2026-05-01",
+            puzzleSize = "17x17"
+        });
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var json = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(json.TryGetProperty("id", out _)).IsTrue();
+    }
+
+    [Test]
+    public async Task ClueFlags_AdminList_RequiresAuth()
+    {
+        var response = await Client.GetAsync("/api/admin/clues/flags");
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task CustomClueCreate_RequiresAuth()
+    {
+        var response = await Client.PostAsJsonAsync("/api/admin/clues/custom", new
+        {
+            word = "NYORD",
+            clue = "Ny ledtråd"
+        });
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task BlobWordListSync_RequiresAuth()
+    {
+        var response = await Client.PostAsJsonAsync("/api/admin/wordlists/sync-dev-to-prod", new
+        {
+            dryRun = true
+        });
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
     // -----------------------------------------------------------------------
     // Analytics endpoints
     // -----------------------------------------------------------------------
@@ -1156,6 +1206,20 @@ public class ApiIntegrationTests : IAsyncDisposable
             }
         }
         """;
+
+    private async Task SeedStandardPuzzleForTodayEndpointAsync(string puzzleJson)
+    {
+        Directory.CreateDirectory(TempPuzzlePath);
+
+        var swedishDate = GetSwedishDate();
+        var candidateDates = new[] { swedishDate, swedishDate.AddDays(1) };
+
+        foreach (var date in candidateDates)
+        {
+            var path = Path.Combine(TempPuzzlePath, $"puzzle-{date:yyyy-MM-dd}.json");
+            await File.WriteAllTextAsync(path, puzzleJson);
+        }
+    }
 
     /// <summary>
     /// Replicates the client-side <c>generatePuzzleHash()</c> algorithm.

@@ -1,0 +1,129 @@
+name: Apply Dependabot format patch
+
+on:
+  workflow_run:
+    workflows: ["Auto-format PR"]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  apply-dependabot-format:
+    name: Apply Dependabot format patch
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Download artifact from triggering run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          mkdir -p .download
+
+          ARTIFACT_ID=$(gh api \
+            repos/$REPO/actions/runs/$RUN_ID/artifacts \
+            --jq '.artifacts[] | select(.name | startswith("dependabot-format-")) | .id' | head -1)
+
+          if [ -z "${ARTIFACT_ID:-}" ]; then
+            echo "No Dependabot format artifact found. Nothing to apply."
+            exit 0
+          fi
+
+          gh api \
+            repos/$REPO/actions/artifacts/$ARTIFACT_ID/zip \
+            > .download/format-artifact.zip
+
+          unzip -o .download/format-artifact.zip -d .download
+
+      - name: Validate run and artifact metadata
+        id: meta
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+          RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+        run: |
+          set -euo pipefail
+
+          RUN_ACTOR=$(gh api repos/$REPO/actions/runs/$RUN_ID --jq '.actor.login')
+          ARTIFACT_HEAD_SHA=$(cat .download/head_sha)
+          ARTIFACT_HEAD_REPO=$(cat .download/head_repo)
+          HAS_CHANGES=$(cat .download/has_changes)
+
+          if [ "$RUN_ACTOR" != "dependabot[bot]" ]; then
+            echo "Run actor is not Dependabot. Skipping."
+            exit 0
+          fi
+
+          if [ "$ARTIFACT_HEAD_REPO" != "$REPO" ]; then
+            echo "Artifact repo mismatch. Skipping."
+            exit 0
+          fi
+
+          if [[ "$RUN_HEAD_BRANCH" != dependabot/* ]]; then
+            echo "Run branch is not a Dependabot branch. Skipping."
+            exit 0
+          fi
+
+          if [ "$ARTIFACT_HEAD_SHA" != "$RUN_HEAD_SHA" ]; then
+            echo "Artifact sha mismatch. Skipping to avoid stale apply."
+            exit 0
+          fi
+
+          if [ "$HAS_CHANGES" != "true" ]; then
+            echo "No formatting changes in artifact."
+            exit 0
+          fi
+
+          echo "head_ref=$RUN_HEAD_BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Apply formatted files via GitHub API
+        if: steps.meta.outputs.head_ref != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_REF: ${{ steps.meta.outputs.head_ref }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          COMMIT_MESSAGE="style: auto-format code with dotnet format"
+          APPLIED_COUNT=0
+
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+
+            SOURCE_FILE=".download/files/$file"
+            if [ ! -f "$SOURCE_FILE" ]; then
+              echo "Missing artifact file for: $file"
+              exit 1
+            fi
+
+            FILE_SHA=$(gh api "repos/$REPO/contents/$file?ref=$HEAD_REF" --jq '.sha')
+            FILE_CONTENT=$(base64 -w 0 "$SOURCE_FILE")
+
+            jq -n \
+              --arg message "$COMMIT_MESSAGE" \
+              --arg content "$FILE_CONTENT" \
+              --arg branch "$HEAD_REF" \
+              --arg sha "$FILE_SHA" \
+              '{message:$message,content:$content,branch:$branch,sha:$sha}' \
+              > .download/payload.json
+
+            gh api \
+              --method PUT \
+              "repos/$REPO/contents/$file" \
+              --input .download/payload.json \
+              > /dev/null
+
+            APPLIED_COUNT=$((APPLIED_COUNT + 1))
+          done < .download/changed_files.txt
+
+          echo "Applied formatting updates to $APPLIED_COUNT file(s)."

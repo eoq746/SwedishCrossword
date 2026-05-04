@@ -35,12 +35,18 @@ builder.Services.AddSingleton<IHistoryStore>(sp => sp.GetRequiredService<Leaderb
 builder.Services.AddSingleton<IUserProfileStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IFriendStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IAnalyticsStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IAdminStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<IClueFlagStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<WordListAdminService>();
+builder.Services.AddSingleton<BlobWordListSyncService>();
 builder.Services.AddSingleton<SubmissionTokenService>();
 builder.Services.AddSingleton<PuzzleCache>();
 builder.Services.AddSingleton<PuzzleDateIndex>();
 
 // Background service: pre-generates today's puzzle at startup so the first visitor never waits
-builder.Services.AddHostedService<PuzzleWarmupService>();
+// Registered as a singleton so it can also be injected into admin endpoints.
+builder.Services.AddSingleton<PuzzleWarmupService>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<PuzzleWarmupService>());
 
 // Background service: periodically prunes old leaderboard entries (removes work from write path)
 builder.Services.AddHostedService<LeaderboardPruneService>();
@@ -154,10 +160,27 @@ builder.Services.AddAuthorization(options =>
 {
     var adminIds = builder.Configuration.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
     options.AddPolicy("Admin", policy =>
-        policy.RequireAssertion(context =>
+        policy.RequireAssertion(async context =>
         {
-            var userId = AuthEndpoints.GetUserId(context.User);
-            return userId is not null && adminIds.Contains(userId);
+            var identity = AuthEndpoints.GetUserIdentity(context.User);
+            if (identity is null)
+                return false;
+
+            if (adminIds.Contains(identity.Value.UserId)
+                || (identity.Value.LegacyUserId is not null && adminIds.Contains(identity.Value.LegacyUserId)))
+                return true;
+
+            var httpContext = context.Resource as HttpContext;
+            var adminStore = httpContext?.RequestServices.GetService<IAdminStore>();
+            var profileStore = httpContext?.RequestServices.GetService<IUserProfileStore>();
+            if (adminStore is null || profileStore is null)
+                return false;
+
+            var canonicalUserId = await profileStore.ResolveCanonicalUserIdAsync(identity.Value.UserId, identity.Value.LegacyUserId);
+            if (await adminStore.IsAdminAsync(canonicalUserId))
+                return true;
+
+            return identity.Value.LegacyUserId is not null && await adminStore.IsAdminAsync(identity.Value.LegacyUserId);
         }));
 });
 
@@ -297,7 +320,23 @@ static string GetCspNonce(HttpContext context)
 
 static string? TryResolveHtmlFilePath(string webRootPath, PathString path)
 {
-    var relative = path.Value switch
+    var pathValue = path.Value;
+
+    // SPA fallback: any path under /app/ with no file extension → serve the React shell.
+    // Paths with an extension (e.g. /app/assets/main.js) are static assets that must be
+    // served by UseStaticFiles; return null so they fall through.
+    if (pathValue is not null && pathValue.StartsWith("/app", StringComparison.OrdinalIgnoreCase))
+    {
+        var lastDot = pathValue.AsSpan().LastIndexOf('.');
+        var lastSlash = pathValue.AsSpan().LastIndexOf('/');
+        if (lastDot > lastSlash)
+            return null; // has an extension → static asset
+
+        var spaIndex = Path.Combine(webRootPath, "app", "index.html");
+        return File.Exists(spaIndex) ? spaIndex : null;
+    }
+
+    var relative = pathValue switch
     {
         "/" or "" => "index.html",
         var p when p is not null && p.EndsWith(".html", StringComparison.OrdinalIgnoreCase) => p.TrimStart('/'),
@@ -309,6 +348,40 @@ static string? TryResolveHtmlFilePath(string webRootPath, PathString path)
 
     var candidate = Path.Combine(webRootPath, relative.Replace('/', Path.DirectorySeparatorChar));
     return File.Exists(candidate) ? candidate : null;
+}
+
+static string? TryGetReactAppRedirectTarget(PathString path)
+{
+    return path.Value switch
+    {
+        "/" or "/index.html" => "/app/",
+        "/puzzle.html" => "/app/puzzle",
+        "/leaderboard.html" => "/app/leaderboard",
+        "/calendar.html" => "/app/calendar",
+        "/profile.html" => "/app/profile",
+        "/admin.html" => "/app/admin",
+        "/about.html" => "/app/about",
+        "/contact.html" => "/app/contact",
+        "/privacy-policy.html" => "/app/privacy-policy",
+        _ => null
+    };
+}
+
+static string BuildReactRedirectLocation(PathString requestPath, string reactRedirectTarget, IQueryCollection query)
+{
+    // Preserve only validated query values required by known routes.
+    if (!string.Equals(requestPath.Value, "/puzzle.html", StringComparison.OrdinalIgnoreCase))
+        return reactRedirectTarget;
+
+    if (!query.TryGetValue("date", out var values))
+        return reactRedirectTarget;
+
+    var date = values.FirstOrDefault();
+    if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var parsedDate))
+        return reactRedirectTarget;
+
+    var safeDate = parsedDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+    return $"{reactRedirectTarget}?date={safeDate}";
 }
 
 var isProduction = !app.Environment.IsDevelopment();
@@ -334,7 +407,7 @@ app.Use(async (context, next) =>
         $"style-src-elem 'self' 'nonce-{cspNonce}'; " +
         "style-src-attr 'unsafe-inline'; " +
         "img-src 'self' data: https:; " +
-        "connect-src 'self' https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com; " +
+        "connect-src 'self' https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com https://*.adtrafficquality.google; " +
         "font-src 'self' data:; " +
         "frame-src 'self' https://googleads.g.doubleclick.net https://*.google.com https://*.googlesyndication.com; " +
         "worker-src 'self'; " +
@@ -370,8 +443,8 @@ static bool IsSameOriginHeader(string? headerValue, HttpContext context)
     return sourcePort == expectedPort;
 }
 
-// CSRF protection: require same-origin Origin/Referer on state-changing requests
-// that carry the auth cookie.
+// CSRF protection: require same-origin Origin/Referer (or safe Fetch Metadata)
+// on state-changing requests that carry the auth cookie.
 app.Use(async (context, next) =>
 {
     var method = context.Request.Method;
@@ -383,7 +456,22 @@ app.Use(async (context, next) =>
         {
             var origin = context.Request.Headers.Origin.FirstOrDefault();
             var referer = context.Request.Headers.Referer.FirstOrDefault();
-            var valid = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+            var hasOriginSignals = !string.IsNullOrWhiteSpace(origin) || !string.IsNullOrWhiteSpace(referer);
+            var sameOriginSignals = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+
+            var secFetchSite = context.Request.Headers["Sec-Fetch-Site"].FirstOrDefault();
+            var fetchMetadataSafe = string.IsNullOrWhiteSpace(secFetchSite)
+                || string.Equals(secFetchSite, "same-origin", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(secFetchSite, "same-site", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(secFetchSite, "none", StringComparison.OrdinalIgnoreCase);
+
+            // CSRF protection requires:
+            // 1. Origin/Referer header must be present (hasOriginSignals)
+            // 2. Origin/Referer must match same-origin (sameOriginSignals)
+            // 3. Fetch metadata must be safe (fetchMetadataSafe)
+            // This prevents CSRF attacks where a malicious site sends a request with the
+            // user's auth cookie but no/wrong origin headers.
+            var valid = hasOriginSignals && sameOriginSignals && fetchMetadataSafe;
             if (!valid)
             {
                 context.Response.StatusCode = 403;
@@ -406,6 +494,14 @@ app.Use(async (context, next) =>
         return;
     }
 
+    var reactRedirectTarget = TryGetReactAppRedirectTarget(context.Request.Path);
+    if (reactRedirectTarget is not null)
+    {
+        var safeRedirectLocation = BuildReactRedirectLocation(context.Request.Path, reactRedirectTarget, context.Request.Query);
+        context.Response.Redirect(safeRedirectLocation, permanent: false);
+        return;
+    }
+
     var filePath = TryResolveHtmlFilePath(webRootPath, context.Request.Path);
     if (filePath is null)
     {
@@ -414,7 +510,14 @@ app.Use(async (context, next) =>
     }
 
     var html = await File.ReadAllTextAsync(filePath, context.RequestAborted);
-    var content = html.Replace("__CSP_NONCE__", GetCspNonce(context), StringComparison.Ordinal);
+    var nonce = GetCspNonce(context);
+    // Expose the nonce to JavaScript so scripts that create <style> elements
+    // at runtime (e.g. cookie-consent.js) can stamp it and satisfy style-src-elem.
+    // Injected as the very first child of <head> so it runs before any other script.
+    var nonceScript = $"<script nonce=\"{nonce}\">window.__cspNonce__='{nonce}';</script>";
+    var content = html
+        .Replace("__CSP_NONCE__", nonce, StringComparison.Ordinal)
+        .Replace("<head>", $"<head>{nonceScript}", StringComparison.OrdinalIgnoreCase);
     context.Response.ContentType = "text/html; charset=utf-8";
     await context.Response.WriteAsync(content, context.RequestAborted);
 });
@@ -424,18 +527,30 @@ app.UseStaticFiles(new StaticFileOptions
 {
     OnPrepareResponse = ctx =>
     {
-        var path = ctx.File.Name;
-        if (path.EndsWith(".css", StringComparison.OrdinalIgnoreCase) ||
-            path.EndsWith(".js", StringComparison.OrdinalIgnoreCase) ||
-            path.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
-            path.EndsWith(".ico", StringComparison.OrdinalIgnoreCase) ||
-            path.EndsWith(".webmanifest", StringComparison.OrdinalIgnoreCase))
+        var requestPath = ctx.Context.Request.Path.Value ?? string.Empty;
+        var ext = Path.GetExtension(ctx.File.Name).ToLowerInvariant();
+
+        if (ext is ".css" or ".js" or ".png" or ".ico" or ".webmanifest")
         {
-            ctx.Context.Response.Headers.CacheControl = "public, max-age=604800, immutable";
+            // Vite-built assets under /app/assets/ embed a content hash in their filename
+            // (e.g. index-Cv6bXOb_.css). The hash changes whenever the content changes,
+            // so immutable caching is safe — there is zero stale-cache risk.
+            //
+            // All other static files (tokens.css, site.min.css, images, manifest, …) are
+            // NOT content-hashed. Caching them as immutable means edits never reach
+            // returning visitors until their 7-day cache entry expires. Use no-cache so
+            // the browser validates with the server on every navigation; a 304 Not Modified
+            // response still avoids re-downloading unchanged bytes.
+            var isVersionedAsset = requestPath.StartsWith("/app/assets/", StringComparison.OrdinalIgnoreCase);
+            ctx.Context.Response.Headers.CacheControl = isVersionedAsset
+                ? "public, max-age=604800, immutable"
+                : "no-cache";
         }
     }
 });
+
 app.UseAuthentication();
+
 app.UseAuthorization();
 app.UseRateLimiter();
 app.UseResponseCompression();

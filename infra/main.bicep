@@ -64,6 +64,19 @@ param developerWorkstationIp string = ''
 @description('Create role assignments (AcrPull on ACR + Key Vault Secrets User on the Key Vault) for the managed identity. Set to true for first-time manual deploy AND any time new role-assignment-bearing resources are added (e.g. when Key Vault was introduced). Set to false for CI/CD which typically lacks Owner / User Access Administrator. If CI/CD reports "Unable to get value using Managed identity ... unable to fetch secret", run a manual deploy once with createRoleAssignment=true (or grant the Key Vault Secrets User role to the managed identity manually) and then re-run CI/CD.')
 param createRoleAssignment bool = true
 
+@description('Restrict Key Vault data-plane access to explicit IP allowlist (Container Apps outbound IP and optional developer workstation IP). When no IPs are provided, defaults to Allow to avoid first-deploy lockout; once IPs are available, default action becomes Deny.')
+param restrictKeyVaultByIp bool = true
+
+@description('Explicit proxy IPs trusted for X-Forwarded-* headers (ForwardedHeaders:TrustedProxies). Set only real ingress proxy source IPs.')
+param forwardedHeadersTrustedProxies array = []
+
+@description('Explicit CIDR networks trusted for X-Forwarded-* headers (ForwardedHeaders:TrustedNetworks). Defaults are a bootstrap allowlist for common private ingress ranges in managed Azure paths; tighten after first deploy when exact ranges are known.')
+param forwardedHeadersTrustedNetworks array = [
+  '10.0.0.0/8'
+  '172.16.0.0/12'
+  '192.168.0.0/16'
+]
+
 var sqlServerName = '${appName}-sql-${suffix}'
 var sqlDbName = '${appName}-db'
 
@@ -127,6 +140,21 @@ resource acrPullAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' 
 // Secrets land here once (per rotation) and the Container App reads them via
 // its managed identity. This removes plaintext values from the Container App
 // revision template and gives us audit, soft-delete, and independent rotation.
+var kvAllowedIpRules = concat(
+  containerAppOutboundIp != '' ? [
+    {
+      value: containerAppOutboundIp
+    }
+  ] : [],
+  developerWorkstationIp != '' ? [
+    {
+      value: developerWorkstationIp
+    }
+  ] : []
+)
+
+var kvDefaultAction = length(kvAllowedIpRules) > 0 ? 'Deny' : 'Allow'
+
 var kvName = take('kv-${appName}-${suffix}', 24)
 
 resource vault 'Microsoft.KeyVault/vaults@2024-04-01-preview' = {
@@ -140,6 +168,15 @@ resource vault 'Microsoft.KeyVault/vaults@2024-04-01-preview' = {
     softDeleteRetentionInDays: 90
     enablePurgeProtection: true
     publicNetworkAccess: 'Enabled'
+    networkAcls: restrictKeyVaultByIp ? {
+      bypass: 'None'
+      defaultAction: kvDefaultAction
+      ipRules: kvAllowedIpRules
+    } : {
+      bypass: 'AzureServices'
+      defaultAction: 'Allow'
+      ipRules: []
+    }
   }
 }
 
@@ -421,6 +458,17 @@ var adminEnvVars = [for (id, i) in adminIdList: {
   name: 'Authorization__AdminUserIds__${i}'
   value: id
 }]
+
+var forwardedProxyEnvVars = [for (ip, i) in forwardedHeadersTrustedProxies: {
+  name: 'ForwardedHeaders__TrustedProxies__${i}'
+  value: ip
+}]
+
+var forwardedNetworkEnvVars = [for (cidr, i) in forwardedHeadersTrustedNetworks: {
+  name: 'ForwardedHeaders__TrustedNetworks__${i}'
+  value: cidr
+}]
+
 resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
   name: appName
   location: location
@@ -509,7 +557,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               { name: 'Authentication__Microsoft__ClientId', secretRef: 'microsoft-client-id' }
               { name: 'Authentication__Microsoft__ClientSecret', secretRef: 'microsoft-client-secret' }
             ] : [],
-            adminEnvVars
+            adminEnvVars,
+            forwardedProxyEnvVars,
+            forwardedNetworkEnvVars
           )
           volumeMounts: [
             {

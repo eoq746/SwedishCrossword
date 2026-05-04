@@ -1,0 +1,110 @@
+name: Auto-format PR
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths-ignore:
+      - '**/*.md'
+      - '.github/workflows/daily-crossword.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  format-pr:
+    name: Format PR branch
+    if: github.event.pull_request.head.repo.fork == false && github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Apply formatting
+        run: |
+          set -euo pipefail
+          dotnet format whitespace --no-restore
+          dotnet format style --no-restore
+
+      - name: Commit formatting changes
+        run: |
+          set -euo pipefail
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "style: auto-format code with dotnet format"
+            git push
+          else
+            echo "No formatting changes needed"
+          fi
+
+  prepare-dependabot-format-patch:
+    name: Prepare Dependabot format patch
+    if: github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7 # v5.2.0
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Apply formatting
+        run: |
+          set -euo pipefail
+          dotnet format whitespace --no-restore
+          dotnet format style --no-restore
+
+      - name: Create patch artifact
+        run: |
+          set -euo pipefail
+          mkdir -p .format-artifact/files
+          echo "${{ github.event.pull_request.number }}" > .format-artifact/pr_number
+          echo "${{ github.event.pull_request.head.ref }}" > .format-artifact/head_ref
+          echo "${{ github.event.pull_request.head.sha }}" > .format-artifact/head_sha
+          echo "${{ github.event.pull_request.head.repo.full_name }}" > .format-artifact/head_repo
+          echo "${{ github.actor }}" > .format-artifact/actor
+
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "true" > .format-artifact/has_changes
+            git diff --name-only > .format-artifact/changed_files.txt
+
+            while IFS= read -r file; do
+              [ -z "$file" ] && continue
+              mkdir -p ".format-artifact/files/$(dirname "$file")"
+              cp -- "$file" ".format-artifact/files/$file"
+            done < .format-artifact/changed_files.txt
+          else
+            echo "false" > .format-artifact/has_changes
+            : > .format-artifact/changed_files.txt
+          fi
+
+      - name: Upload format artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: dependabot-format-${{ github.event.pull_request.number }}
+          path: .format-artifact/
+          retention-days: 3

@@ -13,6 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.18.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="10.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="10.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
@@ -26,5 +28,9 @@
   <ItemGroup>
     <ProjectReference Include="..\SwedishCrossword.Core\SwedishCrossword.Core.csproj" />
   </ItemGroup>
+
+  <Target Name="BuildFrontend" BeforeTargets="Build">
+    <Exec Command="npm run build" WorkingDirectory="$(MSBuildProjectDirectory)\..\frontend" />
+  </Target>
 
 </Project>

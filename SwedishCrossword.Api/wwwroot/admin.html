@@ -236,7 +236,23 @@ function renderDashboard(el, summary, daily, players) {
     el.innerHTML = html;
 }
 
-document.getElementById('refresh-btn').addEventListener('click', function() { loadAdmin(); });
+// Bind refresh handlers for different possible button ids/classes and be defensive if element isn't present
+(function bindRefresh() {
+    try {
+        var primary = document.getElementById('refresh-btn') || document.getElementById('admin-refresh-btn');
+        if (primary) {
+            primary.addEventListener('click', function (e) { e.preventDefault(); loadAdmin(); });
+            return;
+        }
+        var list = document.querySelectorAll('.refresh-btn');
+        if (list && list.length) {
+            list.forEach(function (b) { b.addEventListener('click', function (e) { e.preventDefault(); loadAdmin(); }); });
+        }
+    } catch (ex) {
+        console.error('Failed to bind refresh button', ex);
+    }
+})();
+
 loadAdmin();
 </script>
 <script nonce="__CSP_NONCE__" src="/cookie-consent.js" defer></script>

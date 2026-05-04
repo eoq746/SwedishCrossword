@@ -24,6 +24,10 @@ internal interface IHistoryStore
 /// </summary>
 internal interface IUserProfileStore
 {
+    /// <summary>
+    /// Resolves the caller to a canonical user ID and migrates any legacy rows.
+    /// </summary>
+    Task<string> ResolveCanonicalUserIdAsync(string canonicalUserId, string? legacyUserId);
     Task<string?> GetAliasAsync(string userId);
     Task<bool> IsAliasAvailableAsync(string alias, string? excludeUserId = null);
     Task<bool> SetAliasAsync(string userId, string alias);
@@ -58,4 +62,26 @@ internal interface IAnalyticsStore
     Task<AnalyticsSummary> GetAnalyticsSummaryAsync();
     Task<List<DailyAnalytics>> GetDailyAnalyticsAsync(int days);
     Task<List<TopPlayer>> GetTopPlayersAsync(int limit);
+}
+
+/// <summary>
+/// Dynamic admin grant operations. Config-based admins are checked separately.
+/// </summary>
+internal interface IAdminStore
+{
+    Task<bool> IsAdminAsync(string userId);
+    Task GrantAdminAsync(string userId, string grantedByUserId);
+    Task RevokeAdminAsync(string userId);
+    Task<List<AdminGrantInfo>> ListGrantedAdminsAsync();
+}
+
+/// <summary>
+/// Clue quality flag queue operations.
+/// </summary>
+internal interface IClueFlagStore
+{
+    Task<string> CreateClueFlagAsync(ClueFlagCreateRequest request, string? createdByUserId);
+    Task<List<ClueFlagInfo>> ListPendingClueFlagsAsync(int limit);
+    Task<ClueFlagInfo?> GetClueFlagAsync(string id);
+    Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId);
 }

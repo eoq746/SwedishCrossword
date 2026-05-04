@@ -4,30 +4,86 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
-namespace SwedishCrossword.Api;
+namespace SwedishCrossword.Api.Endpoints;
 
 internal static class AuthEndpoints
 {
+    internal readonly record struct UserIdentity(string UserId, string? LegacyUserId);
+
+    private static string HashUserId(string provider, string subject)
+    {
+        var raw = Encoding.UTF8.GetBytes($"{provider}:{subject}");
+        var hash = SHA256.HashData(raw);
+        return Convert.ToHexStringLower(hash);
+    }
+
+    private static bool IsLocalIssuer(string issuer)
+    {
+        return string.Equals(issuer, "LOCAL AUTHORITY", StringComparison.OrdinalIgnoreCase)
+            || string.Equals(issuer, "LOCAL_AUTHORITY", StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static string? GetCanonicalProvider(ClaimsPrincipal user)
+    {
+        var identityProvider = user.FindFirstValue("iss")
+                            ?? user.FindFirstValue("idp")
+                            ?? user.FindFirstValue(ClaimTypes.AuthenticationMethod);
+        if (!string.IsNullOrWhiteSpace(identityProvider))
+            return identityProvider.Trim().ToLowerInvariant();
+
+        var subClaim = user.FindFirst(ClaimTypes.NameIdentifier) ?? user.FindFirst("sub");
+        if (!string.IsNullOrWhiteSpace(subClaim?.Issuer) && !IsLocalIssuer(subClaim.Issuer))
+            return subClaim.Issuer.Trim().ToLowerInvariant();
+
+        var authType = user.Identity?.AuthenticationType;
+        return string.IsNullOrWhiteSpace(authType) ? null : authType.Trim().ToLowerInvariant();
+    }
+
     /// <summary>
-    /// Derives a stable, opaque user identifier from the authentication provider
-    /// and the provider's unique subject/nameidentifier claim.
-    /// Returns null when the user is not authenticated.
+    /// Derives canonical and legacy opaque user identifiers from provider + subject claims.
+    /// Canonical ID prefers issuer-based provider identity to avoid cross-provider collisions.
     /// </summary>
-    internal static string? GetUserId(ClaimsPrincipal user)
+    internal static UserIdentity? GetUserIdentity(ClaimsPrincipal user)
     {
         if (user.Identity?.IsAuthenticated != true)
             return null;
 
-        var provider = user.Identity.AuthenticationType ?? "unknown";
-        var sub = user.FindFirstValue(ClaimTypes.NameIdentifier)
-                  ?? user.FindFirstValue("sub");
-        if (string.IsNullOrEmpty(sub))
+        var subject = user.FindFirstValue(ClaimTypes.NameIdentifier)
+                   ?? user.FindFirstValue("sub");
+        if (string.IsNullOrWhiteSpace(subject))
             return null;
 
-        // SHA256 so we never store raw provider IDs
-        var raw = Encoding.UTF8.GetBytes($"{provider}:{sub}");
-        var hash = SHA256.HashData(raw);
-        return Convert.ToHexStringLower(hash);
+        var canonicalProvider = GetCanonicalProvider(user) ?? "unknown";
+        var canonicalUserId = HashUserId(canonicalProvider, subject);
+
+        var legacyProvider = user.Identity.AuthenticationType ?? "unknown";
+        var legacyUserId = HashUserId(legacyProvider, subject);
+
+        return string.Equals(canonicalUserId, legacyUserId, StringComparison.Ordinal)
+            ? new UserIdentity(canonicalUserId, null)
+            : new UserIdentity(canonicalUserId, legacyUserId);
+    }
+
+    /// <summary>
+    /// Returns the canonical opaque user identifier for the authenticated user.
+    /// </summary>
+    internal static string? GetUserId(ClaimsPrincipal user) => GetUserIdentity(user)?.UserId;
+
+    /// <summary>
+    /// Returns the legacy opaque user identifier when it differs from canonical derivation.
+    /// </summary>
+    internal static string? GetLegacyUserId(ClaimsPrincipal user) => GetUserIdentity(user)?.LegacyUserId;
+
+    /// <summary>
+    /// Resolves the authenticated user to canonical ID and migrates legacy rows when needed.
+    /// </summary>
+    internal static async Task<string?> ResolveUserIdAsync(ClaimsPrincipal user, IUserProfileStore store)
+    {
+        var identity = GetUserIdentity(user);
+        if (identity is null)
+            return null;
+
+        return await store.ResolveCanonicalUserIdAsync(identity.Value.UserId, identity.Value.LegacyUserId);
     }
 
     internal static WebApplication MapAuthEndpoints(this WebApplication app)
@@ -57,7 +113,7 @@ internal static class AuthEndpoints
             return Results.Challenge(properties, [scheme]);
         });
 
-        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IConfiguration config, ILoggerFactory loggerFactory) =>
+        app.MapGet("/api/auth/me", async (ClaimsPrincipal user, IUserProfileStore store, IAdminStore adminStore, IConfiguration config, ILoggerFactory loggerFactory) =>
         {
             if (user.Identity?.IsAuthenticated != true)
                 return Results.Json(new { authenticated = false });
@@ -69,7 +125,8 @@ internal static class AuthEndpoints
             var avatarUrl = user.FindFirstValue("picture")
                            ?? user.FindFirstValue("urn:google:picture");
 
-            var userId = GetUserId(user);
+            var userIdentity = GetUserIdentity(user);
+            var userId = userIdentity?.UserId;
 
             // Authentication state lives in the cookie, not the DB. Don't fail
             // the whole endpoint if the alias lookup throws (e.g. SQL paused
@@ -80,6 +137,7 @@ internal static class AuthEndpoints
             {
                 try
                 {
+                    userId = await store.ResolveCanonicalUserIdAsync(userId, userIdentity?.LegacyUserId);
                     alias = await store.GetAliasAsync(userId);
                 }
                 catch (Exception ex)
@@ -91,7 +149,10 @@ internal static class AuthEndpoints
             }
 
             var adminIds = config.GetSection("Authorization:AdminUserIds").Get<string[]>() ?? [];
-            var isAdmin = userId is not null && adminIds.Contains(userId);
+            var isAdmin = userId is not null &&
+                          (adminIds.Contains(userId)
+                           || (userIdentity?.LegacyUserId is not null && adminIds.Contains(userIdentity.Value.LegacyUserId))
+                           || await adminStore.IsAdminAsync(userId));
 
             return Results.Json(new
             {
@@ -114,30 +175,33 @@ internal static class AuthEndpoints
 
         app.MapGet("/api/auth/my-stats", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
-            var userId = GetUserId(user);
-            if (userId is null)
+            var userIdentity = GetUserIdentity(user);
+            if (userIdentity is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
+            var userId = await store.ResolveCanonicalUserIdAsync(userIdentity.Value.UserId, userIdentity.Value.LegacyUserId);
             var stats = await store.GetUserStatsAsync(userId);
             return Results.Ok(stats);
         }).RequireAuthorization();
 
         app.MapGet("/api/auth/alias", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
-            var userId = GetUserId(user);
-            if (userId is null)
+            var userIdentity = GetUserIdentity(user);
+            if (userIdentity is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
+            var userId = await store.ResolveCanonicalUserIdAsync(userIdentity.Value.UserId, userIdentity.Value.LegacyUserId);
             var alias = await store.GetAliasAsync(userId);
             return Results.Ok(new { alias });
         }).RequireAuthorization();
 
         app.MapPut("/api/auth/alias", async (AliasRequest body, ClaimsPrincipal user, IUserProfileStore store) =>
         {
-            var userId = GetUserId(user);
-            if (userId is null)
+            var userIdentity = GetUserIdentity(user);
+            if (userIdentity is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
+            var userId = await store.ResolveCanonicalUserIdAsync(userIdentity.Value.UserId, userIdentity.Value.LegacyUserId);
             var alias = LeaderboardStore.SanitiseName(body.Alias);
             if (string.IsNullOrWhiteSpace(alias) || alias.Length < 2 || alias.Length > 20)
                 return Results.BadRequest(new ErrorResponse("Alias måste vara 2–20 tecken"));
@@ -154,10 +218,11 @@ internal static class AuthEndpoints
         // GDPR Art. 20: Data portability — export all personal data
         app.MapGet("/api/auth/my-data", async (ClaimsPrincipal user, IUserProfileStore store) =>
         {
-            var userId = GetUserId(user);
-            if (userId is null)
+            var userIdentity = GetUserIdentity(user);
+            if (userIdentity is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
+            var userId = await store.ResolveCanonicalUserIdAsync(userIdentity.Value.UserId, userIdentity.Value.LegacyUserId);
             var export = await store.ExportUserDataAsync(userId);
             return Results.Ok(export);
         }).RequireAuthorization();
@@ -165,10 +230,11 @@ internal static class AuthEndpoints
         // GDPR Art. 17: Right to erasure — delete all personal data
         app.MapDelete("/api/auth/account", async (ClaimsPrincipal user, IUserProfileStore store, HttpContext ctx) =>
         {
-            var userId = GetUserId(user);
-            if (userId is null)
+            var userIdentity = GetUserIdentity(user);
+            if (userIdentity is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
+            var userId = await store.ResolveCanonicalUserIdAsync(userIdentity.Value.UserId, userIdentity.Value.LegacyUserId);
             await store.DeleteUserDataAsync(userId);
             await ctx.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return Results.Ok(new { deleted = true });

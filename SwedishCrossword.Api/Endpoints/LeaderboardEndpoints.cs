@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using SwedishCrossword.Api.Endpoints;
+using System.Security.Claims;
 
 namespace SwedishCrossword.Api;
 
@@ -16,7 +17,7 @@ internal static class LeaderboardEndpoints
 
         app.MapPost("/api/scores", async (ScoreSubmissionRequest body, SubmissionTokenService tokenService, IScoreStore scoreStore, IHistoryStore historyStore, IUserProfileStore profileStore, TimeProvider timeProvider, ClaimsPrincipal user) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             var name = LeaderboardStore.SanitiseName(body.Name);
 
             // Authenticated users must use their alias
@@ -92,7 +93,7 @@ internal static class LeaderboardEndpoints
 
             var name = LeaderboardStore.SanitiseName(body.Entry.Name);
             // Authenticated users must use their alias
-            var historyUserId = AuthEndpoints.GetUserId(user);
+            var historyUserId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (historyUserId is not null)
             {
                 var alias = await profileStore.GetAliasAsync(historyUserId);

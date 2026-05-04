@@ -51,10 +51,22 @@ sealed class PuzzleWarmupService : BackgroundService
             : path;
     }
 
+    /// <summary>
+    /// Deletes all future pre-generated puzzle files and regenerates them.
+    /// Called on startup and can be triggered manually via the admin panel.
+    /// </summary>
+    public async Task RegenerateFutureAsync(CancellationToken ct)
+    {
+        var today = _timeProvider.GetSwedishDate();
+        DeleteFuturePuzzles(today);
+        await EnsurePuzzlesForRange(today, DaysAhead, ct);
+    }
+
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        // Generate today's puzzle and the next 7 days immediately on startup
-        await EnsurePuzzlesForRange(_timeProvider.GetSwedishDate(), DaysAhead, stoppingToken);
+        // On every startup regenerate future puzzles so they are rebuilt with the
+        // latest generator code after each deployment.
+        await RegenerateFutureAsync(stoppingToken);
 
         // Then check every hour (catches the date rollover at midnight Swedish time)
         using var timer = new PeriodicTimer(TimeSpan.FromHours(1));
@@ -109,6 +121,30 @@ sealed class PuzzleWarmupService : BackgroundService
         catch (Exception ex)
         {
             _logger.LogError(ex, "Failed to pre-generate puzzles for {Date}", date);
+        }
+    }
+
+    private void DeleteFuturePuzzles(DateOnly today)
+    {
+        for (var offset = 1; offset <= DaysAhead; offset++)
+        {
+            var date = today.AddDays(offset);
+            foreach (var (sizeKey, _) in PuzzleSizes)
+            {
+                var filePath = Path.Combine(_puzzlePath, $"puzzle-{date:yyyy-MM-dd}-{sizeKey}.json");
+                try
+                {
+                    if (File.Exists(filePath))
+                    {
+                        File.Delete(filePath);
+                        _logger.LogInformation("Deleted future puzzle {Size} for {Date} — will regenerate with latest code", sizeKey, date);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "Failed to delete future puzzle file {Path}", filePath);
+                }
+            }
         }
     }
 }

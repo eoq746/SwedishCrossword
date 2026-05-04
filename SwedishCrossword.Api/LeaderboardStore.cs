@@ -14,7 +14,7 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IDisposable
+sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IClueFlagStore, IDisposable
 {
     [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
     public static partial Regex DatePattern { get; }
@@ -460,6 +460,146 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
     }
 
     // ── User Alias Management ──
+
+    /// <summary>
+    /// Resolves canonical user ID and lazily migrates legacy references.
+    /// </summary>
+    public async Task<string> ResolveCanonicalUserIdAsync(string canonicalUserId, string? legacyUserId)
+    {
+        if (string.IsNullOrWhiteSpace(canonicalUserId))
+            throw new ArgumentException("Canonical user ID is required", nameof(canonicalUserId));
+
+        if (string.IsNullOrWhiteSpace(legacyUserId)
+            || string.Equals(canonicalUserId, legacyUserId, StringComparison.Ordinal))
+            return canonicalUserId;
+
+        await using var conn = await OpenConnectionAsync();
+        await using var tx = await conn.BeginTransactionAsync();
+
+        try
+        {
+            await using (var aliasCmd = conn.CreateCommand())
+            {
+                aliasCmd.Transaction = tx;
+                aliasCmd.CommandText = _useSqlServer
+                    ? """
+                      IF EXISTS (SELECT 1 FROM user_aliases WHERE user_id = @legacy)
+                      BEGIN
+                          IF EXISTS (SELECT 1 FROM user_aliases WHERE user_id = @canonical)
+                              DELETE FROM user_aliases WHERE user_id = @legacy;
+                          ELSE
+                              UPDATE user_aliases SET user_id = @canonical WHERE user_id = @legacy;
+                      END
+                      """
+                    : """
+                      INSERT OR IGNORE INTO user_aliases (user_id, alias)
+                      SELECT @canonical, alias FROM user_aliases WHERE user_id = @legacy;
+                      DELETE FROM user_aliases WHERE user_id = @legacy;
+                      """;
+                AddParam(aliasCmd, "@canonical", canonicalUserId);
+                AddParam(aliasCmd, "@legacy", legacyUserId);
+                await aliasCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var adminCmd = conn.CreateCommand())
+            {
+                adminCmd.Transaction = tx;
+                adminCmd.CommandText = _useSqlServer
+                    ? """
+                      IF EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @legacy)
+                      BEGIN
+                          IF EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @canonical)
+                              DELETE FROM admin_grants WHERE user_id = @legacy;
+                          ELSE
+                              UPDATE admin_grants SET user_id = @canonical WHERE user_id = @legacy;
+                      END
+                      UPDATE admin_grants SET granted_by = @canonical WHERE granted_by = @legacy;
+                      """
+                    : """
+                      INSERT OR IGNORE INTO admin_grants (user_id, granted_by, granted_at)
+                      SELECT @canonical, granted_by, granted_at FROM admin_grants WHERE user_id = @legacy;
+                      DELETE FROM admin_grants WHERE user_id = @legacy;
+                      UPDATE admin_grants SET granted_by = @canonical WHERE granted_by = @legacy;
+                      """;
+                AddParam(adminCmd, "@canonical", canonicalUserId);
+                AddParam(adminCmd, "@legacy", legacyUserId);
+                await adminCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var friendsDedup = conn.CreateCommand())
+            {
+                friendsDedup.Transaction = tx;
+                friendsDedup.CommandText = _useSqlServer
+                    ? """
+                      DELETE fr
+                      FROM friend_requests fr
+                      WHERE (fr.from_user_id = @legacy OR fr.to_user_id = @legacy)
+                        AND EXISTS (
+                            SELECT 1
+                            FROM friend_requests other
+                            WHERE other.id <> fr.id
+                              AND other.from_user_id = CASE WHEN fr.from_user_id = @legacy THEN @canonical ELSE fr.from_user_id END
+                              AND other.to_user_id = CASE WHEN fr.to_user_id = @legacy THEN @canonical ELSE fr.to_user_id END
+                        );
+                      """
+                    : """
+                      DELETE FROM friend_requests
+                      WHERE rowid IN (
+                          SELECT fr.rowid
+                          FROM friend_requests fr
+                          WHERE (fr.from_user_id = @legacy OR fr.to_user_id = @legacy)
+                            AND EXISTS (
+                                SELECT 1
+                                FROM friend_requests other
+                                WHERE other.rowid <> fr.rowid
+                                  AND other.from_user_id = CASE WHEN fr.from_user_id = @legacy THEN @canonical ELSE fr.from_user_id END
+                                  AND other.to_user_id = CASE WHEN fr.to_user_id = @legacy THEN @canonical ELSE fr.to_user_id END
+                            )
+                      );
+                      """;
+                AddParam(friendsDedup, "@canonical", canonicalUserId);
+                AddParam(friendsDedup, "@legacy", legacyUserId);
+                await friendsDedup.ExecuteNonQueryAsync();
+            }
+
+            foreach (var (table, column) in new[]
+            {
+                ("scores", "user_id"),
+                ("history", "user_id"),
+                ("friend_requests", "from_user_id"),
+                ("friend_requests", "to_user_id"),
+                ("friend_challenges", "from_user_id"),
+                ("friend_challenges", "to_user_id"),
+                ("clue_flags", "created_by"),
+                ("clue_flags", "reviewed_by")
+            })
+            {
+                await using var updateCmd = conn.CreateCommand();
+                updateCmd.Transaction = tx;
+                updateCmd.CommandText = $"UPDATE {table} SET {column} = @canonical WHERE {column} = @legacy";
+                AddParam(updateCmd, "@canonical", canonicalUserId);
+                AddParam(updateCmd, "@legacy", legacyUserId);
+                await updateCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var selfFriendCleanup = conn.CreateCommand())
+            {
+                selfFriendCleanup.Transaction = tx;
+                selfFriendCleanup.CommandText = "DELETE FROM friend_requests WHERE from_user_id = to_user_id";
+                await selfFriendCleanup.ExecuteNonQueryAsync();
+            }
+
+            await tx.CommitAsync();
+            _aliasCache.Remove($"alias:{legacyUserId}");
+            _aliasCache.Remove($"alias:{canonicalUserId}");
+            return canonicalUserId;
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
+    }
 
     public async Task<string?> GetAliasAsync(string userId)
     {
@@ -1226,6 +1366,214 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return await cmd.ExecuteNonQueryAsync() > 0;
     }
 
+    // ── Admin grants ──
+
+    public async Task<bool> IsAdminAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT COUNT(1) FROM admin_grants WHERE user_id = @userId";
+        AddParam(cmd, "@userId", userId);
+        var result = await cmd.ExecuteScalarAsync();
+        return Convert.ToInt32(result, System.Globalization.CultureInfo.InvariantCulture) > 0;
+    }
+
+    public async Task GrantAdminAsync(string userId, string grantedByUserId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              IF NOT EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @userId)
+                  INSERT INTO admin_grants (user_id, granted_by, granted_at) VALUES (@userId, @grantedBy, @now)
+              """
+            : "INSERT OR IGNORE INTO admin_grants (user_id, granted_by, granted_at) VALUES (@userId, @grantedBy, @now)";
+        AddParam(cmd, "@userId", userId);
+        AddParam(cmd, "@grantedBy", grantedByUserId);
+        AddParam(cmd, "@now", DateTimeOffset.UtcNow.ToUnixTimeSeconds());
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    public async Task RevokeAdminAsync(string userId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "DELETE FROM admin_grants WHERE user_id = @userId";
+        AddParam(cmd, "@userId", userId);
+        await cmd.ExecuteNonQueryAsync();
+    }
+
+    public async Task<List<AdminGrantInfo>> ListGrantedAdminsAsync()
+    {
+        await using var conn = await OpenConnectionAsync();
+
+        // Load alias lookup in one pass
+        var aliases = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        await using (var aliasCmd = conn.CreateCommand())
+        {
+            aliasCmd.CommandText = "SELECT user_id, alias FROM user_aliases";
+            await using var aliasReader = await aliasCmd.ExecuteReaderAsync();
+            while (await aliasReader.ReadAsync())
+                aliases[aliasReader.GetString(0)] = aliasReader.GetString(1);
+        }
+
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = "SELECT user_id, granted_by, granted_at FROM admin_grants ORDER BY granted_at DESC";
+
+        var result = new List<AdminGrantInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            var uid = reader.GetString(0);
+            var grantedBy = reader.IsDBNull(1) ? null : reader.GetString(1);
+            var grantedAt = reader.GetInt64(2);
+            aliases.TryGetValue(uid, out var alias);
+            string? grantedByAlias = null;
+            if (grantedBy is not null) aliases.TryGetValue(grantedBy, out grantedByAlias);
+            result.Add(new AdminGrantInfo(uid, alias, grantedAt, grantedByAlias));
+        }
+        return result;
+    }
+
+    // ── Clue flags ──
+
+    public async Task<string> CreateClueFlagAsync(ClueFlagCreateRequest request, string? createdByUserId)
+    {
+        ArgumentNullException.ThrowIfNull(request);
+
+        var id = Guid.NewGuid().ToString("N", CultureInfo.InvariantCulture);
+        var now = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            INSERT INTO clue_flags (
+                id, word, current_clue, suggested_clue, reason, status,
+                created_at, created_by, reviewed_at, reviewed_by,
+                updated_clue, puzzle_date, puzzle_size, puzzle_hash, admin_note)
+            VALUES (
+                @id, @word, @currentClue, @suggestedClue, @reason, 'pending',
+                @createdAt, @createdBy, NULL, NULL,
+                NULL, @puzzleDate, @puzzleSize, @puzzleHash, NULL)
+            """;
+        AddParam(cmd, "@id", id);
+        AddParam(cmd, "@word", request.Word);
+        AddParam(cmd, "@currentClue", request.CurrentClue);
+        AddParam(cmd, "@suggestedClue", (object?)request.SuggestedClue ?? DBNull.Value);
+        AddParam(cmd, "@reason", (object?)request.Reason ?? DBNull.Value);
+        AddParam(cmd, "@createdAt", now);
+        AddParam(cmd, "@createdBy", (object?)createdByUserId ?? DBNull.Value);
+        AddParam(cmd, "@puzzleDate", (object?)request.PuzzleDate ?? DBNull.Value);
+        AddParam(cmd, "@puzzleSize", (object?)request.PuzzleSize ?? DBNull.Value);
+        AddParam(cmd, "@puzzleHash", (object?)request.PuzzleHash ?? DBNull.Value);
+        await cmd.ExecuteNonQueryAsync();
+
+        return id;
+    }
+
+    public async Task<List<ClueFlagInfo>> ListPendingClueFlagsAsync(int limit)
+    {
+        var clamped = Math.Clamp(limit, 1, 200);
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              SELECT TOP (@limit)
+                  id, word, current_clue, suggested_clue, reason, status,
+                  created_at, reviewed_at, updated_clue,
+                  puzzle_date, puzzle_size, puzzle_hash, admin_note
+              FROM clue_flags
+              WHERE status = 'pending'
+              ORDER BY created_at DESC
+              """
+            : """
+              SELECT
+                  id, word, current_clue, suggested_clue, reason, status,
+                  created_at, reviewed_at, updated_clue,
+                  puzzle_date, puzzle_size, puzzle_hash, admin_note
+              FROM clue_flags
+              WHERE status = 'pending'
+              ORDER BY created_at DESC
+              LIMIT @limit
+              """;
+        AddParam(cmd, "@limit", clamped);
+
+        return await ReadClueFlagsAsync(cmd);
+    }
+
+    public async Task<ClueFlagInfo?> GetClueFlagAsync(string id)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            SELECT
+                id, word, current_clue, suggested_clue, reason, status,
+                created_at, reviewed_at, updated_clue,
+                puzzle_date, puzzle_size, puzzle_hash, admin_note
+            FROM clue_flags
+            WHERE id = @id
+            """;
+        AddParam(cmd, "@id", id);
+
+        var items = await ReadClueFlagsAsync(cmd);
+        return items.FirstOrDefault();
+    }
+
+    public async Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId)
+    {
+        var normalizedStatus = status.Trim().ToLowerInvariant();
+        if (normalizedStatus is not ("approved" or "rejected"))
+            throw new ArgumentException("Invalid clue flag status", nameof(status));
+
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = """
+            UPDATE clue_flags
+            SET status = @status,
+                reviewed_at = @reviewedAt,
+                reviewed_by = @reviewedBy,
+                updated_clue = @updatedClue,
+                admin_note = @adminNote
+            WHERE id = @id
+              AND status = 'pending'
+            """;
+        AddParam(cmd, "@status", normalizedStatus);
+        AddParam(cmd, "@reviewedAt", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        AddParam(cmd, "@reviewedBy", resolvedByUserId);
+        AddParam(cmd, "@updatedClue", (object?)updatedClue ?? DBNull.Value);
+        AddParam(cmd, "@adminNote", (object?)adminNote ?? DBNull.Value);
+        AddParam(cmd, "@id", id);
+
+        return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    private static async Task<List<ClueFlagInfo>> ReadClueFlagsAsync(DbCommand cmd)
+    {
+        var result = new List<ClueFlagInfo>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            result.Add(new ClueFlagInfo(
+                Id: reader.GetString(0),
+                Word: reader.GetString(1),
+                CurrentClue: reader.GetString(2),
+                SuggestedClue: reader.IsDBNull(3) ? null : reader.GetString(3),
+                Reason: reader.IsDBNull(4) ? null : reader.GetString(4),
+                Status: reader.GetString(5),
+                CreatedAt: reader.GetInt64(6),
+                ReviewedAt: reader.IsDBNull(7) ? null : reader.GetInt64(7),
+                UpdatedClue: reader.IsDBNull(8) ? null : reader.GetString(8),
+                PuzzleDate: reader.IsDBNull(9) ? null : reader.GetString(9),
+                PuzzleSize: reader.IsDBNull(10) ? null : reader.GetString(10),
+                PuzzleHash: reader.IsDBNull(11) ? null : reader.GetString(11),
+                AdminNote: reader.IsDBNull(12) ? null : reader.GetString(12)
+            ));
+        }
+
+        return result;
+    }
+
     // ── Database initialisation ──
 
     private void InitialiseDatabase()
@@ -1324,6 +1672,37 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_challenges_from_date')
             CREATE INDEX idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'admin_grants')
+            CREATE TABLE admin_grants (
+                user_id     NVARCHAR(200) NOT NULL PRIMARY KEY,
+                granted_by  NVARCHAR(200) NULL,
+                granted_at  BIGINT NOT NULL
+            );
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'clue_flags')
+            CREATE TABLE clue_flags (
+                id              NVARCHAR(50) NOT NULL PRIMARY KEY,
+                word            NVARCHAR(64) NOT NULL,
+                current_clue    NVARCHAR(500) NOT NULL,
+                suggested_clue  NVARCHAR(500) NULL,
+                reason          NVARCHAR(1000) NULL,
+                status          NVARCHAR(20) NOT NULL,
+                created_at      BIGINT NOT NULL,
+                created_by      NVARCHAR(200) NULL,
+                reviewed_at     BIGINT NULL,
+                reviewed_by     NVARCHAR(200) NULL,
+                updated_clue    NVARCHAR(500) NULL,
+                puzzle_date     NVARCHAR(10) NULL,
+                puzzle_size     NVARCHAR(20) NULL,
+                puzzle_hash     NVARCHAR(100) NULL,
+                admin_note      NVARCHAR(1000) NULL
+            );
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_clue_flags_status_created')
+            CREATE INDEX idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_clue_flags_created_by')
+            CREATE INDEX idx_clue_flags_created_by ON clue_flags (created_by);
             """;
         cmd.ExecuteNonQuery();
         _logger.LogInformation("Azure SQL database initialised");
@@ -1418,6 +1797,32 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             );
             CREATE INDEX IF NOT EXISTS idx_friend_challenges_to_status ON friend_challenges (to_user_id, status);
             CREATE INDEX IF NOT EXISTS idx_friend_challenges_from_date ON friend_challenges (from_user_id, challenge_date);
+
+            CREATE TABLE IF NOT EXISTS admin_grants (
+                user_id     TEXT NOT NULL PRIMARY KEY,
+                granted_by  TEXT,
+                granted_at  INTEGER NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS clue_flags (
+                id              TEXT NOT NULL PRIMARY KEY,
+                word            TEXT NOT NULL,
+                current_clue    TEXT NOT NULL,
+                suggested_clue  TEXT,
+                reason          TEXT,
+                status          TEXT NOT NULL DEFAULT 'pending',
+                created_at      INTEGER NOT NULL,
+                created_by      TEXT,
+                reviewed_at     INTEGER,
+                reviewed_by     TEXT,
+                updated_clue    TEXT,
+                puzzle_date     TEXT,
+                puzzle_size     TEXT,
+                puzzle_hash     TEXT,
+                admin_note      TEXT
+            );
+            CREATE INDEX IF NOT EXISTS idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
+            CREATE INDEX IF NOT EXISTS idx_clue_flags_created_by ON clue_flags (created_by);
             """;
         create.ExecuteNonQuery();
     }
@@ -1628,6 +2033,14 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         }
 
         return list;
+    }
+
+    private static void AddParam(DbCommand cmd, int index, object value)
+    {
+        var p = cmd.CreateParameter();
+        p.ParameterName = $"@p{index}";
+        p.Value = value;
+        cmd.Parameters.Add(p);
     }
 
     private static void AddParam(DbCommand cmd, string name, object value)

@@ -736,7 +736,9 @@ public class CrosswordGrid
     {
         if (_accidentalWordTextsCache == null)
         {
-            _accidentalWordTextsCache = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+#pragma warning disable IDE0028
+            _accidentalWordTextsCache = new(StringComparer.OrdinalIgnoreCase);
+#pragma warning restore IDE0028
             var accidentals = DetectAccidentalWords(dictionary);
             foreach (var acc in accidentals)
             {
@@ -1612,9 +1614,6 @@ public class CrosswordGrid
     /// </summary>
     public bool WouldCreateInvalidWords(Word word, int startRow, int startCol, Direction direction, Services.SwedishDictionary dictionary)
     {
-        // Temporarily place the word
-        var tempGrid = this; // We'll work with current grid
-
         // Check if we can place it first
         if (!CanPlaceWord(word, startRow, startCol, direction))
             return true; // Can't place = invalid
@@ -1762,6 +1761,21 @@ public class CrosswordGrid
                 return false;
         }
 
+        // A bend arrow must not be placed in a fully open white intersection.
+        // If the bend cell has white cells on both sides horizontally and vertically,
+        // the arrow is visually ambiguous and should not be used for vinkelord.
+        for (int s = 0; s < segments.Count - 1; s++)
+        {
+            int bendRow = segments[s].EndRow;
+            int bendCol = segments[s].EndCol;
+
+            bool acrossBothWhite = IsWhiteCell(bendRow, bendCol - 1) && IsWhiteCell(bendRow, bendCol + 1);
+            bool downBothWhite = IsWhiteCell(bendRow - 1, bendCol) && IsWhiteCell(bendRow + 1, bendCol);
+
+            if (acrossBothWhite && downBothWhite)
+                return false;
+        }
+
         // The start cell must not already carry a BendArrowDirection. If it does, the
         // new word would visually appear as a continuation of the existing bend,
         // creating the illusion of a single word with two bends.
@@ -1775,6 +1789,11 @@ public class CrosswordGrid
             return false;
 
         return true;
+    }
+
+    private bool IsWhiteCell(int row, int col)
+    {
+        return IsValidPosition(row, col) && !GetCell(row, col).IsBlocked;
     }
 
     /// <summary>

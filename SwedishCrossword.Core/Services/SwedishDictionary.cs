@@ -44,61 +44,76 @@ public class SwedishDictionary
 
         if (!empty)
         {
-            // Try to load Lexin words (if they've been imported)
-            var lexinJsonPath = LexinWordImporter.GetJsonFilePath();
-            if (File.Exists(lexinJsonPath))
-            {
-                LoadWordsFromFile(lexinJsonPath);
-                _logger.LogInformation("Loaded Lexin dictionary: {WordCount} words", WordCount);
-            }
-            else
-            {
-                _logger.LogWarning("Lexin dictionary not found at: {Path}", lexinJsonPath);
-                _logger.LogInformation("Run 'Import from Lexin' option to download and import words.");
-            }
-
-            // Try to load synonym pair words (if they've been imported)
-            var synonymJsonPath = SynonymPairImporter.GetJsonFilePath();
-            if (File.Exists(synonymJsonPath))
-            {
-                var countBefore = WordCount;
-                LoadWordsFromFile(synonymJsonPath);
-                var synonymsAdded = WordCount - countBefore;
-                _logger.LogInformation("Loaded synonym pairs: {SynonymsAdded} additional words", synonymsAdded);
-            }
-
-            // Try to load Kelly word list (if it's been imported)
-            var kellyJsonPath = KellyWordImporter.GetJsonFilePath();
-            if (File.Exists(kellyJsonPath))
-            {
-                var countBefore = WordCount;
-                LoadWordsFromFile(kellyJsonPath);
-                var kellyAdded = WordCount - countBefore;
-                _logger.LogInformation("Loaded Kelly word list: {KellyAdded} additional words", kellyAdded);
-            }
-
-            // Try to load DSSO words (if they've been imported)
-            var dssoJsonPath = DssoWordImporter.GetJsonFilePath();
-            if (File.Exists(dssoJsonPath))
-            {
-                var countBefore = WordCount;
-                LoadWordsFromFile(dssoJsonPath);
-                var dssoAdded = WordCount - countBefore;
-                _logger.LogInformation("Loaded DSSO word list: {DssoAdded} additional words", dssoAdded);
-            }
-
-            var customJsonPath = Path.Combine(DataDirectory.GetPath(), "custom-words.json");
-            if (File.Exists(customJsonPath))
-            {
-                var countBefore = WordCount;
-                LoadWordsFromFile(customJsonPath);
-                var customAdded = WordCount - countBefore;
-                _logger.LogInformation("Loaded custom word list: {CustomAdded} additional words", customAdded);
-            }
-
+            LoadDefaultWordSources();
         }
 
         _logger.LogInformation("Total words loaded: {WordCount}", WordCount);
+    }
+
+    /// <summary>
+    /// Reloads all configured word sources into memory.
+    /// </summary>
+    public void Reload()
+    {
+        _words.Clear();
+        _allWordsCache = null;
+        LoadDefaultWordSources();
+        _logger.LogInformation("Dictionary reloaded. Total words loaded: {WordCount}", WordCount);
+    }
+
+    private void LoadDefaultWordSources()
+    {
+        // Try to load Lexin words (if they've been imported)
+        var lexinJsonPath = LexinWordImporter.GetJsonFilePath();
+        if (File.Exists(lexinJsonPath))
+        {
+            LoadWordsFromFile(lexinJsonPath);
+            _logger.LogInformation("Loaded Lexin dictionary: {WordCount} words", WordCount);
+        }
+        else
+        {
+            _logger.LogWarning("Lexin dictionary not found at: {Path}", lexinJsonPath);
+            _logger.LogInformation("Run 'Import from Lexin' option to download and import words.");
+        }
+
+        // Try to load synonym pair words (if they've been imported)
+        var synonymJsonPath = SynonymPairImporter.GetJsonFilePath();
+        if (File.Exists(synonymJsonPath))
+        {
+            var countBefore = WordCount;
+            LoadWordsFromFile(synonymJsonPath);
+            var synonymsAdded = WordCount - countBefore;
+            _logger.LogInformation("Loaded synonym pairs: {SynonymsAdded} additional words", synonymsAdded);
+        }
+
+        // Try to load Kelly word list (if it's been imported)
+        var kellyJsonPath = KellyWordImporter.GetJsonFilePath();
+        if (File.Exists(kellyJsonPath))
+        {
+            var countBefore = WordCount;
+            LoadWordsFromFile(kellyJsonPath);
+            var kellyAdded = WordCount - countBefore;
+            _logger.LogInformation("Loaded Kelly word list: {KellyAdded} additional words", kellyAdded);
+        }
+
+        // Try to load DSSO words (if they've been imported)
+        var dssoJsonPath = DssoWordImporter.GetJsonFilePath();
+        if (File.Exists(dssoJsonPath))
+        {
+            var countBefore = WordCount;
+            LoadWordsFromFile(dssoJsonPath);
+            var dssoAdded = WordCount - countBefore;
+            _logger.LogInformation("Loaded DSSO word list: {DssoAdded} additional words", dssoAdded);
+        }
+
+        var customJsonPath = Path.Combine(DataDirectory.GetPath(), "custom-words.json");
+        if (File.Exists(customJsonPath))
+        {
+            var countBefore = WordCount;
+            LoadWordsFromFile(customJsonPath);
+            var customAdded = WordCount - countBefore;
+            _logger.LogInformation("Loaded custom word list: {CustomAdded} additional words", customAdded);
+        }
     }
 
     private const long MaxWordFileSize = 100 * 1024 * 1024; // 100 MB
