@@ -354,6 +354,23 @@ static string? TryGetReactAppRedirectTarget(PathString path)
     };
 }
 
+static string BuildReactRedirectLocation(PathString requestPath, string reactRedirectTarget, IQueryCollection query)
+{
+    // Preserve only validated query values required by known routes.
+    if (!string.Equals(requestPath.Value, "/puzzle.html", StringComparison.OrdinalIgnoreCase))
+        return reactRedirectTarget;
+
+    if (!query.TryGetValue("date", out var values))
+        return reactRedirectTarget;
+
+    var date = values.FirstOrDefault();
+    if (!DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var parsedDate))
+        return reactRedirectTarget;
+
+    var safeDate = parsedDate.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+    return $"{reactRedirectTarget}?date={safeDate}";
+}
+
 var isProduction = !app.Environment.IsDevelopment();
 
 // Security headers — registered BEFORE OutputCache so cached responses include them.
@@ -452,7 +469,8 @@ app.Use(async (context, next) =>
     var reactRedirectTarget = TryGetReactAppRedirectTarget(context.Request.Path);
     if (reactRedirectTarget is not null)
     {
-        context.Response.Redirect($"{reactRedirectTarget}{context.Request.QueryString}", permanent: false);
+        var safeRedirectLocation = BuildReactRedirectLocation(context.Request.Path, reactRedirectTarget, context.Request.Query);
+        context.Response.Redirect(safeRedirectLocation, permanent: false);
         return;
     }
 
