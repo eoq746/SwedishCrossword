@@ -53,7 +53,28 @@ jobs:
       - name: Restore
         run: dotnet restore
 
-      - name: Verify formatting (whitespace + style)
+      - name: Format code (whitespace + style)
+        run: |
+          set -euo pipefail
+          dotnet format whitespace --no-restore
+          dotnet format style --no-restore
+
+      - name: Commit formatting changes
+        run: |
+          set -euo pipefail
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "📝 Formatting changes detected, committing..."
+            git add -A
+            git commit -m "style: auto-format code with dotnet format"
+            git push
+          else
+            echo "✅ No formatting changes needed"
+          fi
+
+      - name: Verify formatting (final check)
         run: |
           set -euo pipefail
           dotnet format whitespace --verify-no-changes --no-restore
