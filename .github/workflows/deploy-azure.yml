@@ -40,7 +40,7 @@ jobs:
           git config --local user.name "GitHub Action"
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24'
           cache: 'npm'
@@ -144,7 +144,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
 
       - name: Azure login with OIDC
-        uses: azure/login@v3
+        uses: azure/login@532459ea530d8321f2fb9bb10d1e0bcf23869a43 # v3
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
@@ -176,6 +176,8 @@ jobs:
           MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
           MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
           ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
+          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
+          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
         run: |
           set -euo pipefail
           # Discover the Container Apps environment static outbound IP if the
@@ -189,18 +191,34 @@ jobs:
             --output tsv 2>/dev/null || echo '')
           echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
 
+          PARAMS=(
+            appName=$APP_NAME
+            createRoleAssignment=false
+            enableResourceGroupLock=false
+            containerAppOutboundIp="$ENV_IP"
+            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
+            googleClientId="$GOOGLE_CLIENT_ID"
+            googleClientSecret="$GOOGLE_CLIENT_SECRET"
+            microsoftClientId="$MICROSOFT_CLIENT_ID"
+            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
+            adminUserIds="$ADMIN_USER_IDS"
+          )
+
+          # Optional explicit forwarded-header trust lists.
+          # Expected secret format: JSON array, e.g. ["203.0.113.10"]
+          # and ["10.20.0.0/24"].
+          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
+          fi
+          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
+          fi
+
           RESULT=$(az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
-            --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
-              containerAppOutboundIp="$ENV_IP" \
-              submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
-              googleClientId="$GOOGLE_CLIENT_ID" \
-              googleClientSecret="$GOOGLE_CLIENT_SECRET" \
-              microsoftClientId="$MICROSOFT_CLIENT_ID" \
-              microsoftClientSecret="$MICROSOFT_CLIENT_SECRET" \
-              adminUserIds="$ADMIN_USER_IDS" \
+            --parameters "${PARAMS[@]}" \
             --query 'properties.outputs' \
             --output json)
 
@@ -223,7 +241,7 @@ jobs:
       # 2. Generate SBOM (EU Cyber Resilience Act compliance)
       # ------------------------------------------------------------------
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '24'
           cache: 'npm'
@@ -331,6 +349,8 @@ jobs:
           MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
           MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
           ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
+          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
+          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
         run: |
           set -euo pipefail
           ENV_IP=$(az containerapp env show \
@@ -340,19 +360,32 @@ jobs:
             --output tsv 2>/dev/null || echo '')
           echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
 
+          PARAMS=(
+            appName=$APP_NAME
+            createRoleAssignment=false
+            enableResourceGroupLock=false
+            containerAppOutboundIp="$ENV_IP"
+            imageTag="${{ github.sha }}"
+            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
+            googleClientId="$GOOGLE_CLIENT_ID"
+            googleClientSecret="$GOOGLE_CLIENT_SECRET"
+            microsoftClientId="$MICROSOFT_CLIENT_ID"
+            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
+            adminUserIds="$ADMIN_USER_IDS"
+          )
+
+          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
+          fi
+          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
+          fi
+
           az deployment group create \
             --resource-group $RESOURCE_GROUP \
             --template-file infra/main.bicep \
             --only-show-errors \
-            --parameters appName=$APP_NAME createRoleAssignment=false enableResourceGroupLock=false \
-              containerAppOutboundIp="$ENV_IP" \
-              imageTag="${{ github.sha }}" \
-              submissionTokenSecret="$SUBMISSION_TOKEN_SECRET" \
-              googleClientId="$GOOGLE_CLIENT_ID" \
-              googleClientSecret="$GOOGLE_CLIENT_SECRET" \
-              microsoftClientId="$MICROSOFT_CLIENT_ID" \
-              microsoftClientSecret="$MICROSOFT_CLIENT_SECRET" \
-              adminUserIds="$ADMIN_USER_IDS" \
+            --parameters "${PARAMS[@]}" \
             --output none
 
       # ------------------------------------------------------------------

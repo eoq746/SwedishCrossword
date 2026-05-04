@@ -10,9 +10,9 @@ internal static class FriendsEndpoints
         var group = app.MapGroup("/api/friends").RequireAuthorization().RequireRateLimiting("friends");
 
         // List accepted friends
-        group.MapGet("/", async (ClaimsPrincipal user, IFriendStore store) =>
+        group.MapGet("/", async (ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -21,9 +21,9 @@ internal static class FriendsEndpoints
         });
 
         // List pending friend requests (incoming + outgoing)
-        group.MapGet("/requests", async (ClaimsPrincipal user, IFriendStore store) =>
+        group.MapGet("/requests", async (ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -32,9 +32,9 @@ internal static class FriendsEndpoints
         });
 
         // List friend challenges
-        group.MapGet("/challenges", async (ClaimsPrincipal user, IFriendStore store) =>
+        group.MapGet("/challenges", async (ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -43,9 +43,9 @@ internal static class FriendsEndpoints
         });
 
         // Create challenge for an accepted friendship
-        group.MapPost("/challenges", async (FriendChallengeCreateRequest body, ClaimsPrincipal user, IFriendStore store, TimeProvider timeProvider) =>
+        group.MapPost("/challenges", async (FriendChallengeCreateRequest body, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore, TimeProvider timeProvider) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -70,9 +70,9 @@ internal static class FriendsEndpoints
         });
 
         // Respond to challenge (incoming only)
-        group.MapPost("/challenges/{challengeId}/respond", async (string challengeId, FriendChallengeRespondRequest body, ClaimsPrincipal user, IFriendStore store) =>
+        group.MapPost("/challenges/{challengeId}/respond", async (string challengeId, FriendChallengeRespondRequest body, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -85,7 +85,7 @@ internal static class FriendsEndpoints
         // Send friend request by alias
         group.MapPost("/request", async (FriendRequestDto body, ClaimsPrincipal user, IFriendStore friendStore, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -110,9 +110,9 @@ internal static class FriendsEndpoints
         });
 
         // Accept a friend request
-        group.MapPost("/accept/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store) =>
+        group.MapPost("/accept/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -123,9 +123,9 @@ internal static class FriendsEndpoints
         });
 
         // Decline a friend request
-        group.MapPost("/decline/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store) =>
+        group.MapPost("/decline/{requestId}", async (string requestId, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -136,9 +136,9 @@ internal static class FriendsEndpoints
         });
 
         // Remove a friend
-        group.MapDelete("/{friendshipId}", async (string friendshipId, ClaimsPrincipal user, IFriendStore store) =>
+        group.MapDelete("/{friendshipId}", async (string friendshipId, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -149,9 +149,9 @@ internal static class FriendsEndpoints
         });
 
         // Friends leaderboard for a specific date, optionally filtered by puzzle hash
-        group.MapGet("/leaderboard", async (string? date, string? puzzleHash, ClaimsPrincipal user, IFriendStore store, TimeProvider timeProvider) =>
+        group.MapGet("/leaderboard", async (string? date, string? puzzleHash, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore, TimeProvider timeProvider) =>
         {
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 

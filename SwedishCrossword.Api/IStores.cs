@@ -24,6 +24,10 @@ internal interface IHistoryStore
 /// </summary>
 internal interface IUserProfileStore
 {
+    /// <summary>
+    /// Resolves the caller to a canonical user ID and migrates any legacy rows.
+    /// </summary>
+    Task<string> ResolveCanonicalUserIdAsync(string canonicalUserId, string? legacyUserId);
     Task<string?> GetAliasAsync(string userId);
     Task<bool> IsAliasAvailableAsync(string alias, string? excludeUserId = null);
     Task<bool> SetAliasAsync(string userId, string alias);

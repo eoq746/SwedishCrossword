@@ -23,6 +23,32 @@ updates:
           - "Microsoft.NET.Test.*"
           - "coverlet.*"
 
+  # Frontend npm dependencies
+  - package-ecosystem: npm
+    directory: "/frontend"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: "Europe/Stockholm"
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - npm
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-router*"
+      vite-tooling:
+        patterns:
+          - "vite*"
+          - "@vitejs/*"
+          - "vitest*"
+          - "typescript"
+          - "@types/*"
+
   # GitHub Actions used in workflows (keeps the SHA-pinned actions current)
   - package-ecosystem: github-actions
     directory: "/"

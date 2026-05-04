@@ -461,6 +461,146 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
     // ── User Alias Management ──
 
+    /// <summary>
+    /// Resolves canonical user ID and lazily migrates legacy references.
+    /// </summary>
+    public async Task<string> ResolveCanonicalUserIdAsync(string canonicalUserId, string? legacyUserId)
+    {
+        if (string.IsNullOrWhiteSpace(canonicalUserId))
+            throw new ArgumentException("Canonical user ID is required", nameof(canonicalUserId));
+
+        if (string.IsNullOrWhiteSpace(legacyUserId)
+            || string.Equals(canonicalUserId, legacyUserId, StringComparison.Ordinal))
+            return canonicalUserId;
+
+        await using var conn = await OpenConnectionAsync();
+        await using var tx = await conn.BeginTransactionAsync();
+
+        try
+        {
+            await using (var aliasCmd = conn.CreateCommand())
+            {
+                aliasCmd.Transaction = tx;
+                aliasCmd.CommandText = _useSqlServer
+                    ? """
+                      IF EXISTS (SELECT 1 FROM user_aliases WHERE user_id = @legacy)
+                      BEGIN
+                          IF EXISTS (SELECT 1 FROM user_aliases WHERE user_id = @canonical)
+                              DELETE FROM user_aliases WHERE user_id = @legacy;
+                          ELSE
+                              UPDATE user_aliases SET user_id = @canonical WHERE user_id = @legacy;
+                      END
+                      """
+                    : """
+                      INSERT OR IGNORE INTO user_aliases (user_id, alias)
+                      SELECT @canonical, alias FROM user_aliases WHERE user_id = @legacy;
+                      DELETE FROM user_aliases WHERE user_id = @legacy;
+                      """;
+                AddParam(aliasCmd, "@canonical", canonicalUserId);
+                AddParam(aliasCmd, "@legacy", legacyUserId);
+                await aliasCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var adminCmd = conn.CreateCommand())
+            {
+                adminCmd.Transaction = tx;
+                adminCmd.CommandText = _useSqlServer
+                    ? """
+                      IF EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @legacy)
+                      BEGIN
+                          IF EXISTS (SELECT 1 FROM admin_grants WHERE user_id = @canonical)
+                              DELETE FROM admin_grants WHERE user_id = @legacy;
+                          ELSE
+                              UPDATE admin_grants SET user_id = @canonical WHERE user_id = @legacy;
+                      END
+                      UPDATE admin_grants SET granted_by = @canonical WHERE granted_by = @legacy;
+                      """
+                    : """
+                      INSERT OR IGNORE INTO admin_grants (user_id, granted_by, granted_at)
+                      SELECT @canonical, granted_by, granted_at FROM admin_grants WHERE user_id = @legacy;
+                      DELETE FROM admin_grants WHERE user_id = @legacy;
+                      UPDATE admin_grants SET granted_by = @canonical WHERE granted_by = @legacy;
+                      """;
+                AddParam(adminCmd, "@canonical", canonicalUserId);
+                AddParam(adminCmd, "@legacy", legacyUserId);
+                await adminCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var friendsDedup = conn.CreateCommand())
+            {
+                friendsDedup.Transaction = tx;
+                friendsDedup.CommandText = _useSqlServer
+                    ? """
+                      DELETE fr
+                      FROM friend_requests fr
+                      WHERE (fr.from_user_id = @legacy OR fr.to_user_id = @legacy)
+                        AND EXISTS (
+                            SELECT 1
+                            FROM friend_requests other
+                            WHERE other.id <> fr.id
+                              AND other.from_user_id = CASE WHEN fr.from_user_id = @legacy THEN @canonical ELSE fr.from_user_id END
+                              AND other.to_user_id = CASE WHEN fr.to_user_id = @legacy THEN @canonical ELSE fr.to_user_id END
+                        );
+                      """
+                    : """
+                      DELETE FROM friend_requests
+                      WHERE rowid IN (
+                          SELECT fr.rowid
+                          FROM friend_requests fr
+                          WHERE (fr.from_user_id = @legacy OR fr.to_user_id = @legacy)
+                            AND EXISTS (
+                                SELECT 1
+                                FROM friend_requests other
+                                WHERE other.rowid <> fr.rowid
+                                  AND other.from_user_id = CASE WHEN fr.from_user_id = @legacy THEN @canonical ELSE fr.from_user_id END
+                                  AND other.to_user_id = CASE WHEN fr.to_user_id = @legacy THEN @canonical ELSE fr.to_user_id END
+                            )
+                      );
+                      """;
+                AddParam(friendsDedup, "@canonical", canonicalUserId);
+                AddParam(friendsDedup, "@legacy", legacyUserId);
+                await friendsDedup.ExecuteNonQueryAsync();
+            }
+
+            foreach (var (table, column) in new []
+            {
+                ("scores", "user_id"),
+                ("history", "user_id"),
+                ("friend_requests", "from_user_id"),
+                ("friend_requests", "to_user_id"),
+                ("friend_challenges", "from_user_id"),
+                ("friend_challenges", "to_user_id"),
+                ("clue_flags", "created_by"),
+                ("clue_flags", "reviewed_by")
+            })
+            {
+                await using var updateCmd = conn.CreateCommand();
+                updateCmd.Transaction = tx;
+                updateCmd.CommandText = $"UPDATE {table} SET {column} = @canonical WHERE {column} = @legacy";
+                AddParam(updateCmd, "@canonical", canonicalUserId);
+                AddParam(updateCmd, "@legacy", legacyUserId);
+                await updateCmd.ExecuteNonQueryAsync();
+            }
+
+            await using (var selfFriendCleanup = conn.CreateCommand())
+            {
+                selfFriendCleanup.Transaction = tx;
+                selfFriendCleanup.CommandText = "DELETE FROM friend_requests WHERE from_user_id = to_user_id";
+                await selfFriendCleanup.ExecuteNonQueryAsync();
+            }
+
+            await tx.CommitAsync();
+            _aliasCache.Remove($"alias:{legacyUserId}");
+            _aliasCache.Remove($"alias:{canonicalUserId}");
+            return canonicalUserId;
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
+    }
+
     public async Task<string?> GetAliasAsync(string userId)
     {
         var cacheKey = $"alias:{userId}";

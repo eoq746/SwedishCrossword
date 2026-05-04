@@ -160,8 +160,8 @@ export async function exportMyData(): Promise<void> {
   URL.revokeObjectURL(url);
 }
 
-export function deleteMyAccount(): Promise<{ ok: boolean }> {
-  return apiFetch('/api/auth/delete-account', { method: 'POST' });
+export function deleteMyAccount(): Promise<{ deleted: boolean }> {
+  return apiFetch('/api/auth/account', { method: 'DELETE' });
 }
 
 // ── Formatting ────────────────────────────────────────────────────────────────

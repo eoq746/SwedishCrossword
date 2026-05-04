@@ -38,7 +38,7 @@ internal static class AnalyticsEndpoints
             return Results.Ok(new { ok = true });
         }).RequireAuthorization("Admin");
 
-        app.MapPost("/api/clues/flags", async (ClueFlagCreateRequest body, ClaimsPrincipal user, IClueFlagStore store) =>
+        app.MapPost("/api/clues/flags", async (ClueFlagCreateRequest body, ClaimsPrincipal user, IClueFlagStore store, IUserProfileStore profileStore) =>
         {
             if (string.IsNullOrWhiteSpace(body.Word))
                 return Results.BadRequest(new ErrorResponse("Word is required"));
@@ -54,7 +54,7 @@ internal static class AnalyticsEndpoints
                 PuzzleSize: body.PuzzleSize,
                 PuzzleHash: body.PuzzleHash);
 
-            var userId = AuthEndpoints.GetUserId(user);
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             var id = await store.CreateClueFlagAsync(request, userId);
             return Results.Ok(new { id });
         });
@@ -112,13 +112,14 @@ internal static class AnalyticsEndpoints
             ClueFlagResolveRequest body,
             ClaimsPrincipal user,
             IClueFlagStore clueFlagStore,
+            IUserProfileStore profileStore,
             WordListAdminService wordListService,
             SwedishDictionary dictionary,
             CrosswordGenerator generator,
             PuzzleWarmupService warmup,
             CancellationToken ct) =>
         {
-            var adminUserId = AuthEndpoints.GetUserId(user);
+            var adminUserId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (adminUserId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
@@ -198,11 +199,13 @@ internal static class AnalyticsEndpoints
         }).RequireAuthorization("Admin");
 
         /// <summary>Grant admin rights to a user.</summary>
-        app.MapPost("/api/admin/grants", async (GrantAdminRequest body, ClaimsPrincipal user, IAdminStore adminStore) =>
+        app.MapPost("/api/admin/grants", async (GrantAdminRequest body, ClaimsPrincipal user, IAdminStore adminStore, IUserProfileStore profileStore) =>
         {
             if (string.IsNullOrWhiteSpace(body.UserId))
                 return Results.BadRequest(new ErrorResponse("Missing userId"));
-            var grantedBy = AuthEndpoints.GetUserId(user)!;
+            var grantedBy = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
+            if (grantedBy is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
             await adminStore.GrantAdminAsync(body.UserId, grantedBy);
             return Results.Ok(new { ok = true });
         }).RequireAuthorization("Admin");

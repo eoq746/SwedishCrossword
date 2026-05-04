@@ -11,6 +11,57 @@ namespace SwedishCrossword.Tests;
 /// </summary>
 public class VinkelordIntertwiningTests
 {
+    private static void AnchorBendCells(CrosswordGrid grid, List<WordSegment> segments)
+    {
+        var segmentCells = segments
+            .SelectMany(segment => segment.GetPositions())
+            .ToHashSet();
+
+        for (var index = 0; index < segments.Count - 1; index++)
+        {
+            var bendRow = segments[index].EndRow;
+            var bendCol = segments[index].EndCol;
+
+            bool acrossBothWhite = IsWhiteCell(grid, bendRow, bendCol - 1) && IsWhiteCell(grid, bendRow, bendCol + 1);
+            bool downBothWhite = IsWhiteCell(grid, bendRow - 1, bendCol) && IsWhiteCell(grid, bendRow + 1, bendCol);
+
+            if (!acrossBothWhite || !downBothWhite)
+            {
+                continue;
+            }
+
+            var neighbors = new[]
+            {
+                (bendRow - 1, bendCol),
+                (bendRow + 1, bendCol),
+                (bendRow, bendCol - 1),
+                (bendRow, bendCol + 1)
+            };
+
+            foreach (var (row, col) in neighbors)
+            {
+                if (!grid.IsValidPosition(row, col) || segmentCells.Contains((row, col)))
+                {
+                    continue;
+                }
+
+                var neighborCell = grid.GetCell(row, col);
+                if (neighborCell.HasLetter)
+                {
+                    continue;
+                }
+
+                neighborCell.Block();
+                break;
+            }
+        }
+    }
+
+    private static bool IsWhiteCell(CrosswordGrid grid, int row, int col)
+    {
+        return grid.IsValidPosition(row, col) && !grid.GetCell(row, col).IsBlocked;
+    }
+
     #region Issue 2 — CanPlaceBentWord rejects overlapping bend arrows
 
     /// <summary>
@@ -35,6 +86,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 }, // A B C
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }  // C D E
         };
+        AnchorBendCells(grid, segsA);
         var placedA = grid.TryPlaceBentWordWithValidation(wordA, segsA);
         await Assert.That(placedA).IsTrue();
         await Assert.That(grid.GetCell(3, 5).BendArrowDirection).IsEqualTo(Direction.Down);
@@ -47,6 +99,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 }, // X Y C
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }  // C D E
         };
+        AnchorBendCells(grid, segsB);
         var canPlaceB = grid.CanPlaceBentWord(wordB, segsB);
 
         await Assert.That(canPlaceB).IsFalse();
@@ -74,6 +127,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsA);
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordA, segsA)).IsTrue();
 
         // Try vinkelord B starting at (3,5) — cell already carries an arrow.
@@ -84,6 +138,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }, // C D E (start = bend cell of A)
             new() { StartRow = 5, StartCol = 5, Direction = Direction.Across, Length = 3 }  // E F G
         };
+        AnchorBendCells(grid, segsB);
         var canPlaceB = grid.CanPlaceBentWord(wordB, segsB);
 
         await Assert.That(canPlaceB).IsFalse();
@@ -105,6 +160,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 1, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 1, StartCol = 3, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsA);
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordA, segsA)).IsTrue();
 
         // Vinkelord B well away: Across (6,1)→(6,3), Down (6,3)→(8,3)
@@ -114,6 +170,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 6, StartCol = 1, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 6, StartCol = 3, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsB);
         var canPlaceB = grid.CanPlaceBentWord(wordB, segsB);
 
         await Assert.That(canPlaceB).IsTrue();
@@ -134,6 +191,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsA);
         grid.TryPlaceBentWordWithValidation(wordA, segsA);
 
         var wordB = new Word("XYCDE", "Second");
@@ -142,6 +200,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }
         };
+        AnchorBendCells(grid, segsB);
         var placed = grid.TryPlaceBentWordWithValidation(wordB, segsB);
 
         await Assert.That(placed).IsFalse();
@@ -163,6 +222,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsA);
         grid.TryPlaceBentWordWithValidation(wordA, segsA);
 
         var wordB = new Word("XYCDE", "Second");
@@ -171,6 +231,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }
         };
+        AnchorBendCells(grid, segsB);
         grid.TryPlaceBentWordWithValidation(wordB, segsB);
 
         // Arrow at the bend cell must still point Down (from word A)
@@ -201,7 +262,9 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }
         };
-        grid.TryPlaceBentWordWithValidation(bent, segs);
+        AnchorBendCells(grid, segs);
+        var placed = grid.TryPlaceBentWordWithValidation(bent, segs);
+        await Assert.That(placed).IsTrue();
 
         var accidentalWords = grid.DetectAccidentalWords();
 
@@ -235,7 +298,9 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }
         };
-        grid.TryPlaceBentWordWithValidation(bent, segs);
+        AnchorBendCells(grid, segs);
+        var placed = grid.TryPlaceBentWordWithValidation(bent, segs);
+        await Assert.That(placed).IsTrue();
 
         // Directly place a letter at (3,4), adjacent to bend cell, to make it mid-word
         grid.GetCell(3, 4).SetLetter('X', "simulated");
@@ -276,7 +341,9 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 1, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Down,   Length = 3 }
         };
-        grid.TryPlaceBentWordWithValidation(bent, segs);
+        AnchorBendCells(grid, segs);
+        var placed = grid.TryPlaceBentWordWithValidation(bent, segs);
+        await Assert.That(placed).IsTrue();
 
         // Directly place a letter above bend cell to make it mid-word
         grid.GetCell(2, 3).SetLetter('Y', "simulated");
@@ -315,6 +382,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Down,   Length = 3 }
         };
+        AnchorBendCells(grid, segsA);
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordA, segsA)).IsTrue();
 
         // Vinkelord B: Down→Across, would bend at (3,5) — rejected
@@ -324,6 +392,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 5, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 5, Direction = Direction.Across, Length = 3 }
         };
+        AnchorBendCells(grid, segsB);
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordB, segsB)).IsFalse();
 
         // Only one word on the grid
@@ -357,6 +426,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 2, StartCol = 1, Direction = Direction.Across, Length = 3 },
             new() { StartRow = 2, StartCol = 3, Direction = Direction.Down,   Length = 3 }
         };
+        grid.GetCell(2, 4).Block();
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordA, segsA)).IsTrue();
 
         // Vinkelord B: Down (1,3)→(3,3), Across (3,3)→(3,5) — bend at (3,3)
@@ -367,6 +437,7 @@ public class VinkelordIntertwiningTests
             new() { StartRow = 1, StartCol = 3, Direction = Direction.Down,   Length = 3 },
             new() { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 }
         };
+        grid.GetCell(3, 2).Block();
         await Assert.That(grid.TryPlaceBentWordWithValidation(wordB, segsB)).IsTrue();
 
         await Assert.That(grid.Words.Count).IsEqualTo(2);

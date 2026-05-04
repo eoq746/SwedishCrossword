@@ -162,12 +162,25 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Admin", policy =>
         policy.RequireAssertion(async context =>
         {
-            var userId = AuthEndpoints.GetUserId(context.User);
-            if (userId is null) return false;
-            if (adminIds.Contains(userId)) return true;
-            // Fall back to DB-granted admins
-            var store = (context.Resource as HttpContext)?.RequestServices.GetService<IAdminStore>();
-            return store is not null && await store.IsAdminAsync(userId);
+            var identity = AuthEndpoints.GetUserIdentity(context.User);
+            if (identity is null)
+                return false;
+
+            if (adminIds.Contains(identity.Value.UserId)
+                || (identity.Value.LegacyUserId is not null && adminIds.Contains(identity.Value.LegacyUserId)))
+                return true;
+
+            var httpContext = context.Resource as HttpContext;
+            var adminStore = httpContext?.RequestServices.GetService<IAdminStore>();
+            var profileStore = httpContext?.RequestServices.GetService<IUserProfileStore>();
+            if (adminStore is null || profileStore is null)
+                return false;
+
+            var canonicalUserId = await profileStore.ResolveCanonicalUserIdAsync(identity.Value.UserId, identity.Value.LegacyUserId);
+            if (await adminStore.IsAdminAsync(canonicalUserId))
+                return true;
+
+            return identity.Value.LegacyUserId is not null && await adminStore.IsAdminAsync(identity.Value.LegacyUserId);
         }));
 });
 
@@ -430,8 +443,8 @@ static bool IsSameOriginHeader(string? headerValue, HttpContext context)
     return sourcePort == expectedPort;
 }
 
-// CSRF protection: require same-origin Origin/Referer on state-changing requests
-// that carry the auth cookie.
+// CSRF protection: require same-origin Origin/Referer (or safe Fetch Metadata)
+// on state-changing requests that carry the auth cookie.
 app.Use(async (context, next) =>
 {
     var method = context.Request.Method;
@@ -443,7 +456,16 @@ app.Use(async (context, next) =>
         {
             var origin = context.Request.Headers.Origin.FirstOrDefault();
             var referer = context.Request.Headers.Referer.FirstOrDefault();
-            var valid = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+            var hasOriginSignals = !string.IsNullOrWhiteSpace(origin) || !string.IsNullOrWhiteSpace(referer);
+            var sameOriginSignals = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+
+            var secFetchSite = context.Request.Headers["Sec-Fetch-Site"].FirstOrDefault();
+            var fetchMetadataSafe = string.IsNullOrWhiteSpace(secFetchSite)
+                || string.Equals(secFetchSite, "same-origin", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(secFetchSite, "same-site", StringComparison.OrdinalIgnoreCase)
+                || string.Equals(secFetchSite, "none", StringComparison.OrdinalIgnoreCase);
+
+            var valid = fetchMetadataSafe && (sameOriginSignals || !hasOriginSignals);
             if (!valid)
             {
                 context.Response.StatusCode = 403;
