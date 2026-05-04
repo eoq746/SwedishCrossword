@@ -83,26 +83,32 @@ jobs:
 
           echo "head_ref=$HEAD_REF" >> "$GITHUB_OUTPUT"
 
-      - name: Checkout Dependabot branch
-        if: steps.meta.outputs.head_ref != ''
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-        with:
-          ref: ${{ steps.meta.outputs.head_ref }}
-          fetch-depth: 0
-
       - name: Apply patch and push
         if: steps.meta.outputs.head_ref != ''
+        env:
+          HEAD_REF: ${{ steps.meta.outputs.head_ref }}
+          REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
-          git apply --index .download/format.patch
+          mkdir -p .repo
+          cd .repo
+
+          git init
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
+
+          git fetch --no-tags --depth=1 origin "$HEAD_REF"
+          git checkout --detach FETCH_HEAD
+
+          git apply --index ../.download/format.patch
 
           if git diff --cached --quiet; then
             echo "Patch produced no staged changes."
             exit 0
           fi
 
-          git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
           git commit -m "style: auto-format code with dotnet format"
-          git push
+          git push origin HEAD:"$HEAD_REF"
