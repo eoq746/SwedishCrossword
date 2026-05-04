@@ -93,16 +93,18 @@ public class VinkelordTests
         // Shared cell: (2,8) = 'S'
         // Total unique positions: 4 + 4 - 1 = 7
 
-        var word = new Word("KORSORD", "Puzzle");
-        word.StartRow = 2;
-        word.StartColumn = 5;
-        word.Direction = Direction.Across;
-        word.IsPlaced = true;
-        word.Segments =
-        [
-            new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Across, Length = 4 },
-            new WordSegment { StartRow = 2, StartCol = 8, Direction = Direction.Down, Length = 4 }
-        ];
+        var word = new Word("KORSORD", "Puzzle")
+        {
+            StartRow = 2,
+            StartColumn = 5,
+            Direction = Direction.Across,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Across, Length = 4 },
+                new WordSegment { StartRow = 2, StartCol = 8, Direction = Direction.Down, Length = 4 }
+            ]
+        };
 
         var positions = word.GetPositions().ToList();
 
@@ -127,16 +129,18 @@ public class VinkelordTests
         // Shared cell: (3,3) = 'C'
         // Total unique: 3 + 3 - 1 = 5
 
-        var word = new Word("ABCDE", "Test");
-        word.StartRow = 1;
-        word.StartColumn = 3;
-        word.Direction = Direction.Down;
-        word.IsPlaced = true;
-        word.Segments =
-        [
-            new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Down, Length = 3 },
-            new WordSegment { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 }
-        ];
+        var word = new Word("ABCDE", "Test")
+        {
+            StartRow = 1,
+            StartColumn = 3,
+            Direction = Direction.Down,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Down, Length = 3 },
+                new WordSegment { StartRow = 3, StartCol = 3, Direction = Direction.Across, Length = 3 }
+            ]
+        };
 
         var positions = word.GetPositions().ToList();
 
@@ -151,16 +155,18 @@ public class VinkelordTests
     [Test]
     public async Task Word_OneBend_EndRowEndColumn()
     {
-        var word = new Word("KORSORD", "Puzzle");
-        word.StartRow = 2;
-        word.StartColumn = 5;
-        word.Direction = Direction.Across;
-        word.IsPlaced = true;
-        word.Segments =
-        [
-            new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Across, Length = 4 },
-            new WordSegment { StartRow = 2, StartCol = 8, Direction = Direction.Down, Length = 4 }
-        ];
+        var word = new Word("KORSORD", "Puzzle")
+        {
+            StartRow = 2,
+            StartColumn = 5,
+            Direction = Direction.Across,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Across, Length = 4 },
+                new WordSegment { StartRow = 2, StartCol = 8, Direction = Direction.Down, Length = 4 }
+            ]
+        };
 
         await Assert.That(word.EndRow).IsEqualTo(5);
         await Assert.That(word.EndColumn).IsEqualTo(8);
@@ -169,12 +175,14 @@ public class VinkelordTests
     [Test]
     public async Task Word_OneBend_IsBent()
     {
-        var word = new Word("ABCDE", "Test");
-        word.Segments =
-        [
-            new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Across, Length = 3 },
-            new WordSegment { StartRow = 0, StartCol = 2, Direction = Direction.Down, Length = 3 }
-        ];
+        var word = new Word("ABCDE", "Test")
+        {
+            Segments =
+            [
+                new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Across, Length = 3 },
+                new WordSegment { StartRow = 0, StartCol = 2, Direction = Direction.Down, Length = 3 }
+            ]
+        };
 
         await Assert.That(word.IsBent).IsTrue();
         await Assert.That(word.BendCount).IsEqualTo(1);
@@ -193,17 +201,19 @@ public class VinkelordTests
         // Across: (3,6)H (3,7)O (3,8)L (3,9)M  [4 cells]
         // Total: 4 + 3 + 4 - 2 = 9
 
-        var word = new Word("STOCKHOLM", "Capital");
-        word.StartRow = 1;
-        word.StartColumn = 3;
-        word.Direction = Direction.Across;
-        word.IsPlaced = true;
-        word.Segments =
-        [
-            new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
-            new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
-            new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
-        ];
+        var word = new Word("STOCKHOLM", "Capital")
+        {
+            StartRow = 1,
+            StartColumn = 3,
+            Direction = Direction.Across,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
+                new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
+                new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
+            ]
+        };
 
         var positions = word.GetPositions().ToList();
 
@@ -225,13 +235,15 @@ public class VinkelordTests
     [Test]
     public async Task Word_TwoBends_BendCount()
     {
-        var word = new Word("STOCKHOLM", "Capital");
-        word.Segments =
-        [
-            new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
-            new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
-            new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
-        ];
+        var word = new Word("STOCKHOLM", "Capital")
+        {
+            Segments =
+            [
+                new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
+                new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
+                new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
+            ]
+        };
 
         await Assert.That(word.IsBent).IsTrue();
         await Assert.That(word.BendCount).IsEqualTo(2);
@@ -240,13 +252,15 @@ public class VinkelordTests
     [Test]
     public async Task Word_TwoBends_EndRowEndColumn()
     {
-        var word = new Word("STOCKHOLM", "Capital");
-        word.Segments =
-        [
-            new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
-            new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
-            new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
-        ];
+        var word = new Word("STOCKHOLM", "Capital")
+        {
+            Segments =
+            [
+                new WordSegment { StartRow = 1, StartCol = 3, Direction = Direction.Across, Length = 4 },
+                new WordSegment { StartRow = 1, StartCol = 6, Direction = Direction.Down, Length = 3 },
+                new WordSegment { StartRow = 3, StartCol = 6, Direction = Direction.Across, Length = 4 }
+            ]
+        };
 
         await Assert.That(word.EndRow).IsEqualTo(3);
         await Assert.That(word.EndColumn).IsEqualTo(9);
@@ -269,11 +283,13 @@ public class VinkelordTests
     [Test]
     public async Task Word_NoSegments_GetPositionsUnchanged()
     {
-        var word = new Word("CAT", "Animal");
-        word.StartRow = 2;
-        word.StartColumn = 3;
-        word.Direction = Direction.Across;
-        word.IsPlaced = true;
+        var word = new Word("CAT", "Animal")
+        {
+            StartRow = 2,
+            StartColumn = 3,
+            Direction = Direction.Across,
+            IsPlaced = true
+        };
 
         var positions = word.GetPositions().ToList();
 
@@ -286,11 +302,13 @@ public class VinkelordTests
     [Test]
     public async Task Word_NoSegments_EndRowEndColumnUnchanged()
     {
-        var word = new Word("HELLO", "Greeting");
-        word.StartRow = 3;
-        word.StartColumn = 2;
-        word.Direction = Direction.Across;
-        word.IsPlaced = true;
+        var word = new Word("HELLO", "Greeting")
+        {
+            StartRow = 3,
+            StartColumn = 2,
+            Direction = Direction.Across,
+            IsPlaced = true
+        };
 
         await Assert.That(word.EndRow).IsEqualTo(3);
         await Assert.That(word.EndColumn).IsEqualTo(6);
@@ -303,8 +321,10 @@ public class VinkelordTests
     [Test]
     public async Task Word_GetDirectionAtIndex_StraightWord()
     {
-        var word = new Word("TEST", "Clue");
-        word.Direction = Direction.Across;
+        var word = new Word("TEST", "Clue")
+        {
+            Direction = Direction.Across
+        };
 
         await Assert.That(word.GetDirectionAtIndex(0)).IsEqualTo(Direction.Across);
         await Assert.That(word.GetDirectionAtIndex(3)).IsEqualTo(Direction.Across);
@@ -314,13 +334,15 @@ public class VinkelordTests
     public async Task Word_GetDirectionAtIndex_BentWord()
     {
         // "ABCDE" (5 letters): Across 3 + Down 3, shared at index 2
-        var word = new Word("ABCDE", "Test");
-        word.Direction = Direction.Across;
-        word.Segments =
-        [
-            new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Across, Length = 3 },
-            new WordSegment { StartRow = 0, StartCol = 2, Direction = Direction.Down, Length = 3 }
-        ];
+        var word = new Word("ABCDE", "Test")
+        {
+            Direction = Direction.Across,
+            Segments =
+            [
+                new WordSegment { StartRow = 0, StartCol = 0, Direction = Direction.Across, Length = 3 },
+                new WordSegment { StartRow = 0, StartCol = 2, Direction = Direction.Down, Length = 3 }
+            ]
+        };
 
         // First segment covers indices 0,1,2 (length 3)
         await Assert.That(word.GetDirectionAtIndex(0)).IsEqualTo(Direction.Across);
@@ -339,24 +361,28 @@ public class VinkelordTests
     public async Task Word_BentWord_IntersectsWithStraightWord()
     {
         // Bent word goes Across then Down
-        var bent = new Word("ABCDE", "Bent");
-        bent.StartRow = 2;
-        bent.StartColumn = 3;
-        bent.Direction = Direction.Across;
-        bent.IsPlaced = true;
-        bent.Segments =
-        [
-            new WordSegment { StartRow = 2, StartCol = 3, Direction = Direction.Across, Length = 3 },
-            new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
-        ];
+        var bent = new Word("ABCDE", "Bent")
+        {
+            StartRow = 2,
+            StartColumn = 3,
+            Direction = Direction.Across,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 2, StartCol = 3, Direction = Direction.Across, Length = 3 },
+                new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
+            ]
+        };
         // Positions: (2,3) (2,4) (2,5) (3,5) (4,5)
 
         // Straight word goes Across at row 3
-        var straight = new Word("XYZ", "Straight");
-        straight.StartRow = 3;
-        straight.StartColumn = 4;
-        straight.Direction = Direction.Across;
-        straight.IsPlaced = true;
+        var straight = new Word("XYZ", "Straight")
+        {
+            StartRow = 3,
+            StartColumn = 4,
+            Direction = Direction.Across,
+            IsPlaced = true
+        };
         // Positions: (3,4) (3,5) (3,6)
 
         // They share (3,5)
@@ -366,22 +392,26 @@ public class VinkelordTests
     [Test]
     public async Task Word_BentWord_GetIntersectionsWithStraightWord()
     {
-        var bent = new Word("ABCDE", "Bent");
-        bent.StartRow = 2;
-        bent.StartColumn = 3;
-        bent.Direction = Direction.Across;
-        bent.IsPlaced = true;
-        bent.Segments =
-        [
-            new WordSegment { StartRow = 2, StartCol = 3, Direction = Direction.Across, Length = 3 },
-            new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
-        ];
+        var bent = new Word("ABCDE", "Bent")
+        {
+            StartRow = 2,
+            StartColumn = 3,
+            Direction = Direction.Across,
+            IsPlaced = true,
+            Segments =
+            [
+                new WordSegment { StartRow = 2, StartCol = 3, Direction = Direction.Across, Length = 3 },
+                new WordSegment { StartRow = 2, StartCol = 5, Direction = Direction.Down, Length = 3 }
+            ]
+        };
 
-        var straight = new Word("XDZ", "Straight");
-        straight.StartRow = 3;
-        straight.StartColumn = 4;
-        straight.Direction = Direction.Across;
-        straight.IsPlaced = true;
+        var straight = new Word("XDZ", "Straight")
+        {
+            StartRow = 3,
+            StartColumn = 4,
+            Direction = Direction.Across,
+            IsPlaced = true
+        };
 
         var intersections = bent.GetIntersections(straight).ToList();
 
@@ -407,8 +437,10 @@ public class VinkelordTests
     [Test]
     public async Task GridCell_Clear_ResetsBendArrowDirection()
     {
-        var cell = new GridCell();
-        cell.BendArrowDirection = Direction.Down;
+        var cell = new GridCell
+        {
+            BendArrowDirection = Direction.Down
+        };
 
         cell.Clear();
 

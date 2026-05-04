@@ -79,7 +79,8 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             {
                 DataSource = dbPath,
                 Mode = SqliteOpenMode.ReadWriteCreate,
-                Cache = SqliteCacheMode.Private
+                Cache = SqliteCacheMode.Private,
+                Pooling = false
             }.ToString();
             _logger.LogInformation("Using SQLite for leaderboard storage at {Path}", dbPath);
         }
@@ -455,8 +456,6 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
     public void Dispose()
     {
         _aliasCache.Dispose();
-        if (!_useSqlServer)
-            SqliteConnection.ClearAllPools();
     }
 
     // ── User Alias Management ──
