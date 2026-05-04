@@ -1,0 +1,108 @@
+name: Apply Dependabot format patch
+
+on:
+  workflow_run:
+    workflows: ["Auto-format PR"]
+    types: [completed]
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  apply-dependabot-format:
+    name: Apply Dependabot format patch
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Download artifact from triggering run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          mkdir -p .download
+
+          ARTIFACT_ID=$(gh api \
+            repos/$REPO/actions/runs/$RUN_ID/artifacts \
+            --jq '.artifacts[] | select(.name | startswith("dependabot-format-")) | .id' | head -1)
+
+          if [ -z "${ARTIFACT_ID:-}" ]; then
+            echo "No Dependabot format artifact found. Nothing to apply."
+            exit 0
+          fi
+
+          gh api \
+            repos/$REPO/actions/artifacts/$ARTIFACT_ID/zip \
+            > .download/format-artifact.zip
+
+          unzip -o .download/format-artifact.zip -d .download
+
+      - name: Validate artifact metadata
+        id: meta
+        env:
+          REPO: ${{ github.repository }}
+          RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+
+          ACTOR=$(cat .download/actor)
+          HEAD_REPO=$(cat .download/head_repo)
+          HEAD_REF=$(cat .download/head_ref)
+          HEAD_SHA=$(cat .download/head_sha)
+          HAS_CHANGES=$(cat .download/has_changes)
+
+          if [ "$ACTOR" != "dependabot[bot]" ]; then
+            echo "Artifact is not from Dependabot. Skipping."
+            exit 0
+          fi
+
+          if [ "$HEAD_REPO" != "$REPO" ]; then
+            echo "Artifact repo mismatch. Skipping."
+            exit 0
+          fi
+
+          if [[ "$HEAD_REF" != dependabot/* ]]; then
+            echo "Artifact branch is not a Dependabot branch. Skipping."
+            exit 0
+          fi
+
+          if [ "$HEAD_SHA" != "$RUN_HEAD_SHA" ]; then
+            echo "Artifact sha mismatch. Skipping to avoid stale patch apply."
+            exit 0
+          fi
+
+          if [ "$HAS_CHANGES" != "true" ]; then
+            echo "No formatting changes in artifact."
+            exit 0
+          fi
+
+          echo "head_ref=$HEAD_REF" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Dependabot branch
+        if: steps.meta.outputs.head_ref != ''
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ steps.meta.outputs.head_ref }}
+          fetch-depth: 0
+
+      - name: Apply patch and push
+        if: steps.meta.outputs.head_ref != ''
+        run: |
+          set -euo pipefail
+
+          git apply --index .download/format.patch
+
+          if git diff --cached --quiet; then
+            echo "Patch produced no staged changes."
+            exit 0
+          fi
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git commit -m "style: auto-format code with dotnet format"
+          git push

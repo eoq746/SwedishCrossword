@@ -7,12 +7,6 @@ on:
     paths-ignore:
       - '**/*.md'
       - '.github/workflows/daily-crossword.yml'
-  pull_request_target:
-    branches: [master]
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths-ignore:
-      - '**/*.md'
-      - '.github/workflows/daily-crossword.yml'
 
 permissions:
   contents: read
@@ -20,7 +14,7 @@ permissions:
 jobs:
   format-pr:
     name: Format PR branch
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false && github.actor != 'dependabot[bot]'
+    if: github.event.pull_request.head.repo.fork == false && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -58,17 +52,16 @@ jobs:
             echo "No formatting changes needed"
           fi
 
-  format-pr-dependabot:
-    name: Format Dependabot PR branch
-    if: github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+  prepare-dependabot-format-patch:
+    name: Prepare Dependabot format patch
+    if: github.actor == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
-      - name: Checkout Dependabot PR branch
+      - name: Checkout PR branch
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.event.pull_request.head.ref }}
 
       - name: Setup .NET
@@ -85,16 +78,27 @@ jobs:
           dotnet format whitespace --no-restore
           dotnet format style --no-restore
 
-      - name: Commit formatting changes
+      - name: Create patch artifact
         run: |
           set -euo pipefail
-          git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
+          mkdir -p .format-artifact
+          echo "${{ github.event.pull_request.number }}" > .format-artifact/pr_number
+          echo "${{ github.event.pull_request.head.ref }}" > .format-artifact/head_ref
+          echo "${{ github.event.pull_request.head.sha }}" > .format-artifact/head_sha
+          echo "${{ github.event.pull_request.head.repo.full_name }}" > .format-artifact/head_repo
+          echo "${{ github.actor }}" > .format-artifact/actor
 
           if [ -n "$(git status --porcelain)" ]; then
-            git add -A
-            git commit -m "style: auto-format code with dotnet format"
-            git push
+            echo "true" > .format-artifact/has_changes
+            git diff --binary > .format-artifact/format.patch
           else
-            echo "No formatting changes needed"
+            echo "false" > .format-artifact/has_changes
+            : > .format-artifact/format.patch
           fi
+
+      - name: Upload format artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: dependabot-format-${{ github.event.pull_request.number }}
+          path: .format-artifact/
+          retention-days: 3
