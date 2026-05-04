@@ -42,37 +42,39 @@ jobs:
 
           unzip -o .download/format-artifact.zip -d .download
 
-      - name: Validate artifact metadata
+      - name: Validate run and artifact metadata
         id: meta
         env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
         run: |
           set -euo pipefail
 
-          ACTOR=$(cat .download/actor)
-          HEAD_REPO=$(cat .download/head_repo)
-          HEAD_REF=$(cat .download/head_ref)
-          HEAD_SHA=$(cat .download/head_sha)
+          RUN_ACTOR=$(gh api repos/$REPO/actions/runs/$RUN_ID --jq '.actor.login')
+          ARTIFACT_HEAD_SHA=$(cat .download/head_sha)
+          ARTIFACT_HEAD_REPO=$(cat .download/head_repo)
           HAS_CHANGES=$(cat .download/has_changes)
 
-          if [ "$ACTOR" != "dependabot[bot]" ]; then
-            echo "Artifact is not from Dependabot. Skipping."
+          if [ "$RUN_ACTOR" != "dependabot[bot]" ]; then
+            echo "Run actor is not Dependabot. Skipping."
             exit 0
           fi
 
-          if [ "$HEAD_REPO" != "$REPO" ]; then
+          if [ "$ARTIFACT_HEAD_REPO" != "$REPO" ]; then
             echo "Artifact repo mismatch. Skipping."
             exit 0
           fi
 
-          if [[ "$HEAD_REF" != dependabot/* ]]; then
-            echo "Artifact branch is not a Dependabot branch. Skipping."
+          if [[ "$RUN_HEAD_BRANCH" != dependabot/* ]]; then
+            echo "Run branch is not a Dependabot branch. Skipping."
             exit 0
           fi
 
-          if [ "$HEAD_SHA" != "$RUN_HEAD_SHA" ]; then
-            echo "Artifact sha mismatch. Skipping to avoid stale patch apply."
+          if [ "$ARTIFACT_HEAD_SHA" != "$RUN_HEAD_SHA" ]; then
+            echo "Artifact sha mismatch. Skipping to avoid stale apply."
             exit 0
           fi
 
@@ -81,34 +83,47 @@ jobs:
             exit 0
           fi
 
-          echo "head_ref=$HEAD_REF" >> "$GITHUB_OUTPUT"
+          echo "head_ref=$RUN_HEAD_BRANCH" >> "$GITHUB_OUTPUT"
 
-      - name: Apply patch and push
+      - name: Apply formatted files via GitHub API
         if: steps.meta.outputs.head_ref != ''
         env:
+          GH_TOKEN: ${{ github.token }}
           HEAD_REF: ${{ steps.meta.outputs.head_ref }}
           REPO: ${{ github.repository }}
-          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
-          mkdir -p .repo
-          cd .repo
+          COMMIT_MESSAGE="style: auto-format code with dotnet format"
+          APPLIED_COUNT=0
 
-          git init
-          git config --local user.email "action@github.com"
-          git config --local user.name "github-actions"
-          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
 
-          git fetch --no-tags --depth=1 origin "$HEAD_REF"
-          git checkout --detach FETCH_HEAD
+            SOURCE_FILE=".download/files/$file"
+            if [ ! -f "$SOURCE_FILE" ]; then
+              echo "Missing artifact file for: $file"
+              exit 1
+            fi
 
-          git apply --index ../.download/format.patch
+            FILE_SHA=$(gh api "repos/$REPO/contents/$file?ref=$HEAD_REF" --jq '.sha')
+            FILE_CONTENT=$(base64 -w 0 "$SOURCE_FILE")
 
-          if git diff --cached --quiet; then
-            echo "Patch produced no staged changes."
-            exit 0
-          fi
+            jq -n \
+              --arg message "$COMMIT_MESSAGE" \
+              --arg content "$FILE_CONTENT" \
+              --arg branch "$HEAD_REF" \
+              --arg sha "$FILE_SHA" \
+              '{message:$message,content:$content,branch:$branch,sha:$sha}' \
+              > .download/payload.json
 
-          git commit -m "style: auto-format code with dotnet format"
-          git push origin HEAD:"$HEAD_REF"
+            gh api \
+              --method PUT \
+              "repos/$REPO/contents/$file" \
+              --input .download/payload.json \
+              > /dev/null
+
+            APPLIED_COUNT=$((APPLIED_COUNT + 1))
+          done < .download/changed_files.txt
+
+          echo "Applied formatting updates to $APPLIED_COUNT file(s)."

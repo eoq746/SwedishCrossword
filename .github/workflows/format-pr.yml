@@ -81,7 +81,7 @@ jobs:
       - name: Create patch artifact
         run: |
           set -euo pipefail
-          mkdir -p .format-artifact
+          mkdir -p .format-artifact/files
           echo "${{ github.event.pull_request.number }}" > .format-artifact/pr_number
           echo "${{ github.event.pull_request.head.ref }}" > .format-artifact/head_ref
           echo "${{ github.event.pull_request.head.sha }}" > .format-artifact/head_sha
@@ -90,10 +90,16 @@ jobs:
 
           if [ -n "$(git status --porcelain)" ]; then
             echo "true" > .format-artifact/has_changes
-            git diff --binary > .format-artifact/format.patch
+            git diff --name-only > .format-artifact/changed_files.txt
+
+            while IFS= read -r file; do
+              [ -z "$file" ] && continue
+              mkdir -p ".format-artifact/files/$(dirname "$file")"
+              cp -- "$file" ".format-artifact/files/$file"
+            done < .format-artifact/changed_files.txt
           else
             echo "false" > .format-artifact/has_changes
-            : > .format-artifact/format.patch
+            : > .format-artifact/changed_files.txt
           fi
 
       - name: Upload format artifact
