@@ -26,7 +26,6 @@ public class LeaderboardStoreTests
     public void Cleanup()
     {
         _store?.Dispose();
-        SqliteConnection.ClearAllPools();
 
         if (Directory.Exists(_tempDir))
             Directory.Delete(_tempDir, true);
