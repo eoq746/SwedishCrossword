@@ -202,6 +202,71 @@ Additional meta tags in the HTML head for AI crawler guidance:
 ✨ **Breadcrumb Navigation** — Users see page hierarchy in search results  
 ✨ **Social Media Sharing** — Open Graph and Twitter cards create rich previews on social platforms  
 
+## Health Checks & Observability
+
+The API includes comprehensive health check endpoints for Kubernetes and container orchestration platforms:
+
+### Health Check Endpoints
+
+| Endpoint | Purpose | Tags | Use Case |
+|----------|---------|------|----------|
+| `/api/health/live` | Liveness probe | none | Container is running (returns 200 even if unhealthy) |
+| `/api/health/ready` | Readiness probe | `ready` | Pod ready to receive traffic (checks storage + database) |
+| `/api/health` | General health | `ready` | Same as `/api/health/ready` |
+
+### Health Checks Performed
+
+#### Storage Paths Health Check (`StoragePathsHealthCheck`)
+- Verifies puzzle storage path is writable (`Storage:PuzzlePath`)
+- Verifies leaderboard storage path is writable (`Storage:LeaderboardPath`)
+- Tests by creating temporary file, writing, and deleting
+- Reports `Unhealthy` if access denied or I/O errors occur
+
+#### Leaderboard Database Health Check (`LeaderboardDatabaseHealthCheck`)
+- **Production:** Tests connection to Azure SQL Database via `ConnectionStrings:Leaderboard`
+- **Development:** Creates and tests SQLite database at `Storage:LeaderboardPath/leaderboard.db`
+- Validates database connectivity without executing queries
+- Returns appropriate status for container restart decisions
+
+### Configuration
+
+Health checks use the standard .NET Diagnostics API:
+
+```csharp
+builder.Services.AddHealthChecks()
+    .AddCheck<StoragePathsHealthCheck>("storage-paths", tags: ["ready"])
+    .AddCheck<LeaderboardDatabaseHealthCheck>("leaderboard-db", tags: ["ready"]);
+```
+
+### Integration with Azure Container Apps / Kubernetes
+
+In `infra/main.bicep`, health probes are configured:
+
+```bicep
+livenessprobe: {
+  httpGet: {
+    path: '/api/health/live'
+    port: 8080
+  }
+  initialDelaySeconds: 10
+  periodSeconds: 10
+}
+
+readinessprobe: {
+  httpGet: {
+    path: '/api/health/ready'
+    port: 8080
+  }
+  initialDelaySeconds: 5
+  periodSeconds: 5
+}
+```
+
+These probes allow the platform to:
+- **Restart unhealthy containers** (liveness)
+- **Route traffic only to ready pods** (readiness)
+- **Gracefully handle storage failures** without cascading restarts
+
 ## Project Structure
 
 ```
