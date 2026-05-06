@@ -19,3 +19,6 @@
 
 ## Security and Scanning
 - User already runs CodeQL scanning in GitHub and does not need additional setup guidance for CodeQL.
+
+## Code Formatting
+- User prefers local formatting enforcement in pre-commit hooks instead of a separate pre-push hook.
