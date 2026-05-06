@@ -627,14 +627,14 @@ app.MapGet("/feed.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =
         sb.AppendLine($"<title>Korsord för {entry.Date}</title>");
         sb.AppendLine($"<link>https://www.svensktkorsord.se/puzzle?date={entry.Date}</link>");
         sb.AppendLine($"<guid>https://www.svensktkorsord.se/puzzle?date={entry.Date}</guid>");
-        
+
         // Parse date string to DateTime for RSS pubDate format
         if (DateOnly.TryParseExact(entry.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateOnly))
         {
             var dateTime = dateOnly.ToDateTime(System.TimeOnly.MinValue);
             sb.AppendLine($"<pubDate>{dateTime:R}</pubDate>");
         }
-        
+
         sb.AppendLine($"<description>Spela dagens korsord för {entry.Date}. Testa ditt ordförråd och se hur du placerar dig på topplistan.</description>");
         sb.AppendLine("</item>");
     }
