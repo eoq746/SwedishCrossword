@@ -1,9 +1,23 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import '../styles/static-pages.css';
 
 export default function AboutPage() {
   usePageTitle('Om Oss - Gratis Korsord Online');
+  
+  useSEO({
+    title: 'Om Oss',
+    description: 'Läs om Svenskt Korsord - en plats för dagliga svenska korsord online. Lär dig hur vi skapar unika, utmanande pussel med en algoritm skriven i C# och .NET.',
+    canonical: 'https://www.svensktkorsord.se/about',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Om Oss', url: 'https://www.svensktkorsord.se/about' }
+    ])
+  });
 
   return (
     <>

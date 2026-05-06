@@ -1,8 +1,8 @@
 import { fetchWithTimeout } from './http';
 
 export interface CreateClueFlagRequest {
-  word: string;
   currentClue: string;
+  clueCells: number[][];
   suggestedClue?: string;
   reason?: string;
   puzzleDate?: string;

@@ -401,7 +401,7 @@ jobs:
 
           STATUS="000"
           for i in $(seq 1 24); do
-            STATUS=$(curl -s -o /dev/null -w '%{http_code}' "$APP_URL/api/health" 2>/dev/null || echo "000")
+            STATUS=$(curl -s -o /dev/null -w '%{http_code}' "$APP_URL/api/health/ready" 2>/dev/null || echo "000")
             if [ "$STATUS" = "200" ]; then
               echo "✅ Health check passed (after $((i*5))s)"
               exit 0

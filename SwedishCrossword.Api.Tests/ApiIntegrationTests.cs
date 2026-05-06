@@ -54,6 +54,22 @@ public class ApiIntegrationTests : IAsyncDisposable
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
 
+    [Test]
+    public async Task HealthLivenessEndpoint_ReturnsOk()
+    {
+        var response = await Client.GetAsync("/api/health/live");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
+    [Test]
+    public async Task HealthReadinessEndpoint_ReturnsOk()
+    {
+        var response = await Client.GetAsync("/api/health/ready");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
     // -----------------------------------------------------------------------
     // CSRF middleware
     // -----------------------------------------------------------------------
@@ -1087,13 +1103,21 @@ public class ApiIntegrationTests : IAsyncDisposable
     [Test]
     public async Task ClueFlags_PostValidFlag_ReturnsOk()
     {
+        await SeedStandardPuzzleForTodayEndpointAsync(TestPuzzleJson);
+        var puzzleDate = GetSwedishDate().ToString("yyyy-MM-dd");
+
         var response = await Client.PostAsJsonAsync("/api/clues/flags", new
         {
-            word = "KATT",
             currentClue = "Djur",
+            clueCells = new[]
+            {
+                new[] { 0, 0 },
+                new[] { 0, 1 },
+                new[] { 0, 2 }
+            },
             suggestedClue = "Husdjur",
             reason = "Kan vara tydligare",
-            puzzleDate = "2026-05-01",
+            puzzleDate,
             puzzleSize = "17x17"
         });
 
@@ -1132,6 +1156,34 @@ public class ApiIntegrationTests : IAsyncDisposable
         });
 
         await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task PuzzleRegenerationStatus_RequiresAuth()
+    {
+        var response = await Client.GetAsync("/api/admin/puzzle/regeneration-status");
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task PuzzleRegenerationStatus_WithAuthenticatedUser_ReturnsForbidden()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+
+        var response = await authFixture.Client.GetAsync("/api/admin/puzzle/regeneration-status");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
+    }
+
+    [Test]
+    public async Task PuzzleRegenerationTrigger_WithAuthenticatedUser_ReturnsForbidden()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+
+        var response = await authFixture.Client.PostAsync("/api/admin/puzzle/regenerate-future", content: null);
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Forbidden);
     }
 
     // -----------------------------------------------------------------------

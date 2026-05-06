@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import '../styles/static-pages.css';
 
 const FAQ_ITEMS: { q: string; a: React.ReactNode }[] = [
@@ -39,6 +41,18 @@ const FAQ_ITEMS: { q: string; a: React.ReactNode }[] = [
 
 export default function ContactPage() {
   usePageTitle('Kontakt');
+  
+  useSEO({
+    title: 'Kontakt',
+    description: 'Kontakta Svenskt Korsord med frågor, förslag eller feedback. Rapportera buggar, diskutera idéer eller bidra med nya ord till vår ordlista.',
+    canonical: 'https://www.svensktkorsord.se/contact',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Kontakt', url: 'https://www.svensktkorsord.se/contact' }
+    ])
+  });
 
   return (
     <>

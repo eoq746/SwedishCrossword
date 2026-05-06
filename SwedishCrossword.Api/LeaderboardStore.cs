@@ -1496,6 +1496,8 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
     public async Task<string> CreateClueFlagAsync(ClueFlagCreateRequest request, string? createdByUserId)
     {
         ArgumentNullException.ThrowIfNull(request);
+        if (string.IsNullOrWhiteSpace(request.Word))
+            throw new ArgumentException("Word is required", nameof(request));
 
         var id = Guid.NewGuid().ToString("N", CultureInfo.InvariantCulture);
         var now = _timeProvider.GetUtcNow().ToUnixTimeMilliseconds();
@@ -1513,7 +1515,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 NULL, @puzzleDate, @puzzleSize, @puzzleHash, NULL)
             """;
         AddParam(cmd, "@id", id);
-        AddParam(cmd, "@word", request.Word);
+        AddParam(cmd, "@word", request.Word.Trim().ToUpperInvariant());
         AddParam(cmd, "@currentClue", request.CurrentClue);
         AddParam(cmd, "@suggestedClue", (object?)request.SuggestedClue ?? DBNull.Value);
         AddParam(cmd, "@reason", (object?)request.Reason ?? DBNull.Value);

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import '../styles/static-pages.css';
 
 const CARDS = [
@@ -8,7 +10,7 @@ const CARDS = [
     title: 'Spela',
     desc: 'Lös dagens korsord och testa ditt ordförråd.',
     cta: 'Spela nu',
-    to: '/puzzle',
+    to: '/play',
   },
   {
     emoji: '🏆',
@@ -28,6 +30,16 @@ const CARDS = [
 
 export default function IndexPage() {
   usePageTitle();
+  
+  useSEO({
+    description: 'Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar. Tävla på topplistan, träna hjärnan och förbättra ditt ordförråd!',
+    canonical: 'https://www.svensktkorsord.se/',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' }
+    ])
+  });
 
   return (
     <>

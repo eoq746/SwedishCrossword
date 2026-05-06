@@ -80,7 +80,7 @@ export default function Layout({ children }: LayoutProps) {
             className={`nav-links${mobileOpen ? ' open' : ''}`}
           >
             <NavLink to="/" end onClick={closeMobile}>Hem</NavLink>
-            <NavLink to="/puzzle" onClick={closeMobile}>Spela</NavLink>
+            <NavLink to="/play" onClick={closeMobile}>Spela</NavLink>
             <NavLink to="/leaderboard" onClick={closeMobile}>Topplista</NavLink>
             <NavLink to="/calendar" onClick={closeMobile}>Kalender</NavLink>
             {user && <NavLink to="/profile" onClick={closeMobile}>Profil</NavLink>}

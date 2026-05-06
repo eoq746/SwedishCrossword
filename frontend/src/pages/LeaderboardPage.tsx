@@ -12,6 +12,8 @@ import {
   type SizeHashMap,
 } from '../api/leaderboard';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import { getTodayIso, resolveTodayEntriesForSize } from './leaderboardUtils';
 import '../styles/static-pages.css';
 
@@ -131,6 +133,18 @@ function HistoryTable({
 
 export default function LeaderboardPage() {
   usePageTitle('Topplista');
+  
+  useSEO({
+    title: 'Topplista',
+    description: 'Se dagens topplista över snabbaste lösare av svenska korsord. Tävla mot andra spelare och se hur du placerar dig.',
+    canonical: 'https://www.svensktkorsord.se/leaderboard',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Topplista', url: 'https://www.svensktkorsord.se/leaderboard' }
+    ])
+  });
 
   const [selectedSize, setSelectedSize] = useState<PuzzleSize>('17x17');
 

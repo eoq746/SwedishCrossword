@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchPuzzleDates, type DateSizeMap } from '../api/calendar';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import '../styles/static-pages.css';
 
 const MONTHS_SV = [
@@ -26,6 +28,18 @@ function getSizeFromHash(): PuzzleSize {
 
 export default function CalendarPage() {
   usePageTitle('Korsord-arkiv – Svenskt Korsord');
+  
+  useSEO({
+    title: 'Arkiv',
+    description: 'Bläddra i arkivet med svenska korsord från tidigare datum. Spela gamla pussel i olika storlekar (10×10, 15×15 och 17×17). Gratis korsord på svenska.',
+    canonical: 'https://www.svensktkorsord.se/calendar',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Arkiv', url: 'https://www.svensktkorsord.se/calendar' }
+    ])
+  });
 
   const today = useRef(new Date());
   const todayStr = today.current.toISOString().split('T')[0];

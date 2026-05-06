@@ -9,6 +9,7 @@ import CalendarPage from './pages/CalendarPage';
 import ProfilePage from './pages/ProfilePage';
 import AdminPage from './pages/AdminPage';
 import PuzzlePage from './pages/PuzzlePage';
+import PlayLandingPage from './pages/PlayLandingPage';
 
 /** Forces a full remount of PuzzlePage when size or date changes, giving site.js a clean slate. */
 function PuzzleRoute() {
@@ -23,6 +24,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<IndexPage />} />
+        <Route path="/play" element={<PlayLandingPage />} />
         <Route path="/puzzle" element={<PuzzleRoute />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/calendar" element={<CalendarPage />} />

@@ -5,34 +5,69 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://www.svensktkorsord.se/sitemap.xml
 Sitemap: https://www.svensktkorsord.se/sitemap-puzzles.xml
+Sitemap: https://www.svensktkorsord.se/sitemap-static.xml
 
 # Google-specific
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 # Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
-# Allow AI crawlers for search features
+# AI Crawlers for LLM Training and Search Features
+# GPT / ChatGPT
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Google AI
 User-agent: Google-Extended
 Allow: /
 
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
+# Anthropic
 User-agent: Anthropic-AI
 Allow: /
 
-# Crawl delay to be respectful (optional)
+# Claude
+User-agent: Claude-Web
+Allow: /
+
+# Brave AI
+User-agent: Bravado
+Allow: /
+
+# Apple Intelligence
+User-agent: AppleBot
+Allow: /
+User-agent: AppleBot-Extended
+Allow: /
+
+# Microsoft / Copilot
+User-agent: Copilot
+Allow: /
+
+# OpenAI Web Crawler
+User-agent: OpenAI-User
+Allow: /
+
+# Generic crawlers (e.g., Googlebot, bots following robots.txt)
 User-agent: *
 Crawl-delay: 1
+Request-rate: 5/1s
+
+# Disallow sections
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/

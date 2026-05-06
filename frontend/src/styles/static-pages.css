@@ -1499,3 +1499,39 @@ button {
   max-width: 100%;
 }
 
+/* Clue report modal */
+.clue-report-reason {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-bg);
+  color: var(--text-body);
+  font: inherit;
+  line-height: 1.45;
+  resize: vertical;
+  min-height: 92px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+}
+
+.clue-report-reason::placeholder {
+  color: var(--text-muted);
+}
+
+.clue-report-reason:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+}
+
+.clue-report-reason:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+.clue-report-reason:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
