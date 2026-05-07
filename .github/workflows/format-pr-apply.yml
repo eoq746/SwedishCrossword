@@ -19,6 +19,7 @@ jobs:
       contents: write
     steps:
       - name: Download artifact from triggering run
+        id: download
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_ID: ${{ github.event.workflow_run.id }}
@@ -42,6 +43,15 @@ jobs:
 
           unzip -o .download/format-artifact.zip -d .download
 
+          ARTIFACT_ROOT=$(find .download -type f -name head_sha -exec dirname {} \; | head -1)
+          if [ -z "${ARTIFACT_ROOT:-}" ]; then
+            echo "Downloaded artifact is missing expected metadata files."
+            find .download -maxdepth 3 -type f | sort
+            exit 1
+          fi
+
+          echo "artifact_root=$ARTIFACT_ROOT" >> "$GITHUB_OUTPUT"
+
       - name: Validate run and artifact metadata
         id: meta
         env:
@@ -50,13 +60,14 @@ jobs:
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+          ARTIFACT_ROOT: ${{ steps.download.outputs.artifact_root }}
         run: |
           set -euo pipefail
 
           RUN_ACTOR=$(gh api repos/$REPO/actions/runs/$RUN_ID --jq '.actor.login')
-          ARTIFACT_HEAD_SHA=$(cat .download/head_sha)
-          ARTIFACT_HEAD_REPO=$(cat .download/head_repo)
-          HAS_CHANGES=$(cat .download/has_changes)
+          ARTIFACT_HEAD_SHA=$(cat "$ARTIFACT_ROOT/head_sha")
+          ARTIFACT_HEAD_REPO=$(cat "$ARTIFACT_ROOT/head_repo")
+          HAS_CHANGES=$(cat "$ARTIFACT_ROOT/has_changes")
 
           if [ "$RUN_ACTOR" != "dependabot[bot]" ]; then
             echo "Run actor is not Dependabot. Skipping."
@@ -91,6 +102,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           HEAD_REF: ${{ steps.meta.outputs.head_ref }}
           REPO: ${{ github.repository }}
+          ARTIFACT_ROOT: ${{ steps.download.outputs.artifact_root }}
         run: |
           set -euo pipefail
 
@@ -100,7 +112,7 @@ jobs:
           while IFS= read -r file; do
             [ -z "$file" ] && continue
 
-            SOURCE_FILE=".download/files/$file"
+            SOURCE_FILE="$ARTIFACT_ROOT/files/$file"
             if [ ! -f "$SOURCE_FILE" ]; then
               echo "Missing artifact file for: $file"
               exit 1
@@ -124,6 +136,6 @@ jobs:
               > /dev/null
 
             APPLIED_COUNT=$((APPLIED_COUNT + 1))
-          done < .download/changed_files.txt
+          done < "$ARTIFACT_ROOT/changed_files.txt"
 
           echo "Applied formatting updates to $APPLIED_COUNT file(s)."
