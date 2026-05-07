@@ -324,7 +324,7 @@ resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDataba
     publicNetworkAccess: 'Enabled'
     administrators: {
       administratorType: 'ActiveDirectory'
-      login: identity.name
+      login: identity.properties.principalId
       sid: identity.properties.principalId
       tenantId: tenant().tenantId
       principalType: 'Application'
@@ -592,9 +592,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
                 port: 8080
                 scheme: 'HTTP'
               }
-              initialDelaySeconds: 30
+              initialDelaySeconds: 60
               periodSeconds: 30
-              timeoutSeconds: 5
+              timeoutSeconds: 10
               failureThreshold: 3
             }
             {
@@ -604,9 +604,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
                 port: 8080
                 scheme: 'HTTP'
               }
-              initialDelaySeconds: 5
+              initialDelaySeconds: 30
               periodSeconds: 10
-              timeoutSeconds: 5
+              timeoutSeconds: 10
               failureThreshold: 3
             }
             {
@@ -616,9 +616,9 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
                 port: 8080
                 scheme: 'HTTP'
               }
-              initialDelaySeconds: 5
-              periodSeconds: 5
-              timeoutSeconds: 5
+              initialDelaySeconds: 30
+              periodSeconds: 10
+              timeoutSeconds: 10
               failureThreshold: 30
             }
           ] : []

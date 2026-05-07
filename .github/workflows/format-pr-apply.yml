@@ -54,6 +54,7 @@ jobs:
 
       - name: Validate run and artifact metadata
         id: meta
+        if: steps.download.outputs.artifact_root != ''
         env:
           GH_TOKEN: ${{ github.token }}
           RUN_ID: ${{ github.event.workflow_run.id }}
