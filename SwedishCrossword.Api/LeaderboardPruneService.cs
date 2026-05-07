@@ -6,12 +6,12 @@
 /// </summary>
 sealed class LeaderboardPruneService : BackgroundService
 {
-    private readonly IScoreStore _store;
+    private readonly IServiceScopeFactory _scopeFactory;
     private readonly ILogger<LeaderboardPruneService> _logger;
 
-    public LeaderboardPruneService(IScoreStore store, ILogger<LeaderboardPruneService> logger)
+    public LeaderboardPruneService(IServiceScopeFactory scopeFactory, ILogger<LeaderboardPruneService> logger)
     {
-        _store = store;
+        _scopeFactory = scopeFactory;
         _logger = logger;
     }
 
@@ -25,7 +25,9 @@ sealed class LeaderboardPruneService : BackgroundService
         {
             try
             {
-                await _store.PruneOldEntriesAsync();
+                using var scope = _scopeFactory.CreateScope();
+                var store = scope.ServiceProvider.GetRequiredService<IScoreStore>();
+                await store.PruneOldEntriesAsync();
                 _logger.LogDebug("Leaderboard prune completed");
             }
             catch (Exception ex) when (ex is not OperationCanceledException)
