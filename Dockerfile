@@ -5,11 +5,12 @@
 # Run:     docker run -p 8080:8080 -v crossword-data:/data svensktkorsord-api
 # ---------------------------------------------------------------------------
 
+ARG DOTNET_VERSION=10.0
+
 # --- Node toolchain stage ---------------------------------------------------
 FROM node:24-bookworm-slim AS node
 
 # --- Build stage -----------------------------------------------------------
-ARG DOTNET_VERSION=10.0
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
 WORKDIR /src
 
@@ -37,7 +38,6 @@ RUN dotnet publish SwedishCrossword.Api/SwedishCrossword.Api.csproj \
 RUN cp -r SwedishCrossword/Data /app/publish/Data
 
 # --- Runtime stage ---------------------------------------------------------
-ARG DOTNET_VERSION=10.0
 FROM mcr.microsoft.com/dotnet/aspnet:${DOTNET_VERSION} AS runtime
 WORKDIR /app
 
