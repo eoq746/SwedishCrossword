@@ -394,21 +394,79 @@ jobs:
       # 7. Verify deployment
       # ------------------------------------------------------------------
       - name: Verify Health
+        timeout-minutes: 3
         run: |
-          set -uo pipefail
+          set -euo pipefail
           APP_URL="${{ steps.infra.outputs.app_url }}"
+          if [ -z "${APP_URL:-}" ]; then
+            echo "::error::App URL output is empty; cannot run health verification."
+            exit 1
+          fi
+
           echo "🚀 Deployed to: $APP_URL"
 
-          STATUS="000"
-          for i in $(seq 1 24); do
-            STATUS=$(curl -s -o /dev/null -w '%{http_code}' "$APP_URL/api/health/ready" 2>/dev/null || echo "000")
-            if [ "$STATUS" = "200" ]; then
-              echo "✅ Health check passed (after $((i*5))s)"
+          MAX_ATTEMPTS=24
+          SLEEP_SECONDS=5
+          MAX_TOTAL_SECONDS=120
+          START_TS=$(date +%s)
+          READY_STATUS="000"
+          LIVE_STATUS="000"
+
+          for i in $(seq 1 "$MAX_ATTEMPTS"); do
+            LIVE_STATUS=$(timeout 8s curl \
+              --silent \
+              --output /dev/null \
+              --write-out '%{http_code}' \
+              --connect-timeout 3 \
+              --max-time 5 \
+              "$APP_URL/api/health/live" || true)
+
+            READY_STATUS=$(timeout 8s curl \
+              --silent \
+              --output /dev/null \
+              --write-out '%{http_code}' \
+              --connect-timeout 3 \
+              --max-time 5 \
+              "$APP_URL/api/health/ready" || true)
+
+            if [ -z "$LIVE_STATUS" ]; then LIVE_STATUS="000"; fi
+            if [ -z "$READY_STATUS" ]; then READY_STATUS="000"; fi
+
+            if [ "$READY_STATUS" = "200" ]; then
+              ELAPSED=$(( $(date +%s) - START_TS ))
+              echo "✅ Health check passed (after ${ELAPSED}s)"
               exit 0
             fi
-            echo "  Waiting for health check... (attempt $i, status: $STATUS)"
-            sleep 5
+
+            ELAPSED=$(( $(date +%s) - START_TS ))
+            echo "  Waiting for health check... (attempt $i/$MAX_ATTEMPTS, live: $LIVE_STATUS, ready: $READY_STATUS, elapsed: ${ELAPSED}s)"
+
+            az containerapp revision list \
+              --resource-group "$RESOURCE_GROUP" \
+              --name "$APP_NAME" \
+              --query "[].{name:name,active:properties.active,health:properties.healthState,running:properties.runningState,replicas:properties.replicas}" \
+              --output table || true
+
+            if [ "$ELAPSED" -ge "$MAX_TOTAL_SECONDS" ]; then
+              break
+            fi
+
+            sleep "$SLEEP_SECONDS"
           done
 
-          echo "::error::Health check did not return 200 within 120s (last status: $STATUS)"
+          echo "::error::Health check did not return 200 within ${MAX_TOTAL_SECONDS}s (last live: $LIVE_STATUS, ready: $READY_STATUS)"
+          echo "--- Recent system logs ---"
+          az containerapp logs show \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$APP_NAME" \
+            --type system \
+            --tail 200 || true
+
+          echo "--- Recent app logs ---"
+          az containerapp logs show \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$APP_NAME" \
+            --type console \
+            --tail 200 || true
+
           exit 1
