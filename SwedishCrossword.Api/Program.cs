@@ -134,6 +134,38 @@ var authBuilder = builder.Services.AddAuthentication(options =>
 
 var googleClientId = builder.Configuration["Authentication:Google:ClientId"];
 var googleClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+var authenticationPublicOrigin = builder.Configuration["Authentication:PublicOrigin"];
+
+static string? BuildExternalRedirectUri(string? publicOrigin, PathString callbackPath)
+{
+    if (string.IsNullOrWhiteSpace(publicOrigin)
+        || !Uri.TryCreate(publicOrigin, UriKind.Absolute, out var origin)
+        || !string.Equals(origin.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+        return null;
+
+    return new Uri(origin, callbackPath.Value ?? string.Empty).AbsoluteUri;
+}
+
+static string RewriteRedirectUri(string redirectUri, string? publicOrigin, PathString callbackPath)
+{
+    var externalRedirectUri = BuildExternalRedirectUri(publicOrigin, callbackPath);
+    if (externalRedirectUri is null)
+        return redirectUri;
+
+    var marker = "redirect_uri=";
+    var index = redirectUri.IndexOf(marker, StringComparison.Ordinal);
+    if (index < 0)
+        return redirectUri;
+
+    var valueStart = index + marker.Length;
+    var valueEnd = redirectUri.IndexOf('&', valueStart);
+    var encodedRedirectUri = Uri.EscapeDataString(externalRedirectUri);
+
+    return valueEnd >= 0
+        ? $"{redirectUri[..valueStart]}{encodedRedirectUri}{redirectUri[valueEnd..]}"
+        : $"{redirectUri[..valueStart]}{encodedRedirectUri}";
+}
+
 if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientSecret))
 {
     authBuilder.AddGoogle(options =>
@@ -145,6 +177,11 @@ if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientS
         options.Scope.Clear();
         options.Scope.Add("openid");
         options.Scope.Add("profile");
+        options.Events.OnRedirectToAuthorizationEndpoint = context =>
+        {
+            context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
+            return Task.CompletedTask;
+        };
     });
 }
 
@@ -156,6 +193,11 @@ if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftC
     {
         options.ClientId = microsoftClientId;
         options.ClientSecret = microsoftClientSecret;
+        options.Events.OnRedirectToAuthorizationEndpoint = context =>
+        {
+            context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
+            return Task.CompletedTask;
+        };
     });
 }
 
@@ -544,8 +586,8 @@ app.UseStaticFiles(new StaticFileOptions
             // the browser validates with the server on every navigation; a 304 Not Modified
             // response still avoids re-downloading unchanged bytes.
             var isVersionedAsset = requestPath.StartsWith("/app/assets/", StringComparison.OrdinalIgnoreCase);
-            ctx.Context.Response.Headers.CacheControl = isVersionedAsset
-                ? "public, max-age=604800, immutable"
+            ctx.Context.Response.Headers.CacheControl = isVersionedAsset ?
+                "public, max-age=604800, immutable"
                 : "no-cache";
         }
     }
@@ -613,7 +655,7 @@ app.MapGet("/feed.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =
     sb.AppendLine("<description>Gratis dagliga svenska korsord online. Nytt pussel varje dag.</description>");
     sb.AppendLine("<language>sv</language>");
     sb.AppendLine("<atom:link href=\"https://www.svensktkorsord.se/feed.xml\" rel=\"self\" type=\"application/rss+xml\" />");
-    sb.AppendLine($"<lastBuildDate>{DateTime.UtcNow:R}</lastBuildDate>");
+    sb.AppendLine(CultureInfo.InvariantCulture, $"<lastBuildDate>{DateTime.UtcNow:R}</lastBuildDate>");
     sb.AppendLine("<image>");
     sb.AppendLine("<url>https://www.svensktkorsord.se/android-chrome-512x512.png</url>");
     sb.AppendLine("<title>Svenskt Korsord</title>");
@@ -623,18 +665,18 @@ app.MapGet("/feed.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =
     foreach (var entry in dates)
     {
         sb.AppendLine("<item>");
-        sb.AppendLine($"<title>Korsord för {entry.Date}</title>");
-        sb.AppendLine($"<link>https://www.svensktkorsord.se/puzzle?date={entry.Date}</link>");
-        sb.AppendLine($"<guid>https://www.svensktkorsord.se/puzzle?date={entry.Date}</guid>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"<title>Korsord för {entry.Date}</title>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"<link>https://www.svensktkorsord.se/puzzle?date={entry.Date}</link>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"<guid>https://www.svensktkorsord.se/puzzle?date={entry.Date}</guid>");
 
         // Parse date string to DateTime for RSS pubDate format
         if (DateOnly.TryParseExact(entry.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateOnly))
         {
             var dateTime = dateOnly.ToDateTime(System.TimeOnly.MinValue);
-            sb.AppendLine($"<pubDate>{dateTime:R}</pubDate>");
+            sb.AppendLine(CultureInfo.InvariantCulture, $"<pubDate>{dateTime:R}</pubDate>");
         }
 
-        sb.AppendLine($"<description>Spela dagens korsord för {entry.Date}. Testa ditt ordförråd och se hur du placerar dig på topplistan.</description>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"<description>Spela dagens korsord för {entry.Date}. Testa ditt ordförråd och se hur du placerar dig på topplistan.</description>");
         sb.AppendLine("</item>");
     }
 
