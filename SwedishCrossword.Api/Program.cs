@@ -93,7 +93,7 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
     options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
     options.ForwardLimit = 1;
-    options.RequireHeaderSymmetry = true;
+    options.RequireHeaderSymmetry = false;
     options.KnownIPNetworks.Clear();
     options.KnownProxies.Clear();
 
@@ -309,7 +309,6 @@ if (!app.Environment.IsDevelopment())
         ctx.Response.ContentType = "application/json";
         await ctx.Response.WriteAsync("{\"error\":\"An unexpected error occurred\"}");
     }));
-    app.UseHttpsRedirection();
 }
 
 static string GenerateCspNonce() => Convert.ToBase64String(RandomNumberGenerator.GetBytes(16));

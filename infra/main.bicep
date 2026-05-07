@@ -324,7 +324,7 @@ resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDataba
     publicNetworkAccess: 'Enabled'
     administrators: {
       administratorType: 'ActiveDirectory'
-      login: identity.properties.principalId
+      login: identity.name
       sid: identity.properties.principalId
       tenantId: tenant().tenantId
       principalType: 'Application'
@@ -553,7 +553,6 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
               { name: 'Storage__PuzzlePath', value: '/data/puzzles' }
               { name: 'Storage__LeaderboardPath', value: '/data/leaderboard' }
               { name: 'SWEDISH_CROSSWORD_CACHE_PATH', value: '/data/cache' }
-              { name: 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', value: 'true' }
             ],
             sqlConnectionString != '' ? [
               { name: 'ConnectionStrings__Leaderboard', value: sqlConnectionString }
