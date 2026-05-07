@@ -4,16 +4,10 @@
 /// Background service that periodically prunes old leaderboard scores and history,
 /// removing this work from the hot path of score submissions.
 /// </summary>
-sealed class LeaderboardPruneService : BackgroundService
+sealed class LeaderboardPruneService(IServiceScopeFactory scopeFactory, ILogger<LeaderboardPruneService> logger) : BackgroundService
 {
-    private readonly IServiceScopeFactory _scopeFactory;
-    private readonly ILogger<LeaderboardPruneService> _logger;
-
-    public LeaderboardPruneService(IServiceScopeFactory scopeFactory, ILogger<LeaderboardPruneService> logger)
-    {
-        _scopeFactory = scopeFactory;
-        _logger = logger;
-    }
+    private readonly IServiceScopeFactory _scopeFactory = scopeFactory;
+    private readonly ILogger<LeaderboardPruneService> _logger = logger;
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {

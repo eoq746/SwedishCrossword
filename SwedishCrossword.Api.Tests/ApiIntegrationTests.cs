@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.DependencyInjection;
 using TUnit.Assertions;
@@ -1111,8 +1112,8 @@ public class ApiIntegrationTests : IAsyncDisposable
             currentClue = "Djur",
             clueCells = new[]
             {
-                new[] { 0, 0 },
-                new[] { 0, 1 },
+                [0, 0],
+                [0, 1],
                 new[] { 0, 2 }
             },
             suggestedClue = "Husdjur",
