@@ -141,6 +141,30 @@ var googleClientSecret = builder.Configuration["Authentication:Google:ClientSecr
 var authenticationPublicOrigin = builder.Configuration["Authentication:PublicOrigin"];
 var authenticationCookieDomain = builder.Configuration["Authentication:CookieDomain"];
 
+static bool IsExternalAuthenticationPath(PathString path)
+{
+    return path.Value switch
+    {
+        "/signin-google" or "/signin-microsoft" => true,
+        "/api/auth/login/google" or "/api/auth/login/microsoft" => true,
+        _ => false
+    };
+}
+
+static bool TryApplyAuthenticationPublicOrigin(HttpContext context, string? publicOrigin)
+{
+    if (string.IsNullOrWhiteSpace(publicOrigin)
+        || !Uri.TryCreate(publicOrigin, UriKind.Absolute, out var origin)
+        || !string.Equals(origin.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+        return false;
+
+    context.Request.Scheme = origin.Scheme;
+    context.Request.Host = origin.IsDefaultPort
+        ? new HostString(origin.Host)
+        : new HostString(origin.Host, origin.Port);
+    return true;
+}
+
 static string? BuildExternalRedirectUri(string? publicOrigin, PathString callbackPath)
 {
     if (string.IsNullOrWhiteSpace(publicOrigin)
@@ -541,6 +565,14 @@ app.Use(async (context, next) =>
 });
 
 app.UseCors();
+
+app.Use(async (context, next) =>
+{
+    if (IsExternalAuthenticationPath(context.Request.Path))
+        TryApplyAuthenticationPublicOrigin(context, authenticationPublicOrigin);
+
+    await next();
+});
 
 var webRootPath = app.Environment.WebRootPath ?? Path.Combine(AppContext.BaseDirectory, "wwwroot");
 app.Use(async (context, next) =>
