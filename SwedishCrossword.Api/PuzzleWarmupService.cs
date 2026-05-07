@@ -150,6 +150,10 @@ sealed class PuzzleWarmupService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        // Yield once so host startup and health signaling are not delayed by
+        // the initial future-puzzle warmup run.
+        await Task.Yield();
+
         // On every startup regenerate future puzzles so they are rebuilt with the
         // latest generator code after each deployment.
         try
