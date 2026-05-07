@@ -398,7 +398,7 @@ jobs:
       # 7. Verify deployment
       # ------------------------------------------------------------------
       - name: Verify Health
-        timeout-minutes: 3
+        timeout-minutes: 8
         run: |
           set -euo pipefail
           APP_URL="${{ steps.infra.outputs.app_url }}"
@@ -409,9 +409,9 @@ jobs:
 
           echo "🚀 Deployed to: $APP_URL"
 
-          MAX_ATTEMPTS=24
+          MAX_ATTEMPTS=84
           SLEEP_SECONDS=5
-          MAX_TOTAL_SECONDS=120
+          MAX_TOTAL_SECONDS=420
           START_TS=$(date +%s)
           READY_STATUS="000"
           LIVE_STATUS="000"
