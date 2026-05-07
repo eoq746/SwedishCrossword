@@ -6,15 +6,21 @@
 # ---------------------------------------------------------------------------
 
 ARG DOTNET_VERSION=10.0
-
-# --- Node toolchain stage ---------------------------------------------------
-FROM node:24-bookworm-slim AS node
+ARG NODE_MAJOR=24
 
 # --- Build stage -----------------------------------------------------------
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
 WORKDIR /src
 
-COPY --from=node /usr/local/ /usr/local/
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates curl gnupg \
+    && mkdir -p /etc/apt/keyrings \
+    && curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg \
+    && echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_${NODE_MAJOR}.x nodistro main" > /etc/apt/sources.list.d/nodesource.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends nodejs \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Copy project files first for better layer caching on restore
 COPY SwedishCrossword.sln ./
