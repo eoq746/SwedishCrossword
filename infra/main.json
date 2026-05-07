@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "402480203261687648"
+      "templateHash": "1777251109508682900"
     }
   },
   "parameters": {
@@ -88,6 +88,13 @@
         "description": "Container Apps environment static outbound IP. Pin the SQL firewall to this single address. Get with: az containerapp env show -g <rg> -n <env> --query properties.staticIp -o tsv. Leave empty to skip the firewall rule (e.g. on a brand-new deploy where the env does not yet exist)."
       }
     },
+    "allowAzureServicesSqlFirewall": {
+      "type": "bool",
+      "defaultValue": false,
+      "metadata": {
+        "description": "Allow Azure services to reach Azure SQL (0.0.0.0 firewall rule). Enable in CI to avoid startup failures when Container Apps egress IPs differ from static environment IP."
+      }
+    },
     "developerWorkstationIp": {
       "type": "string",
       "defaultValue": "",
@@ -100,6 +107,31 @@
       "defaultValue": true,
       "metadata": {
         "description": "Create role assignments (AcrPull on ACR + Key Vault Secrets User on the Key Vault) for the managed identity. Set to true for first-time manual deploy AND any time new role-assignment-bearing resources are added (e.g. when Key Vault was introduced). Set to false for CI/CD which typically lacks Owner / User Access Administrator. If CI/CD reports \"Unable to get value using Managed identity ... unable to fetch secret\", run a manual deploy once with createRoleAssignment=true (or grant the Key Vault Secrets User role to the managed identity manually) and then re-run CI/CD."
+      }
+    },
+    "restrictKeyVaultByIp": {
+      "type": "bool",
+      "defaultValue": true,
+      "metadata": {
+        "description": "Restrict Key Vault data-plane access to explicit IP allowlist (Container Apps outbound IP and optional developer workstation IP). When no IPs are provided, defaults to Allow to avoid first-deploy lockout; once IPs are available, default action becomes Deny."
+      }
+    },
+    "forwardedHeadersTrustedProxies": {
+      "type": "array",
+      "defaultValue": [],
+      "metadata": {
+        "description": "Explicit proxy IPs trusted for X-Forwarded-* headers (ForwardedHeaders:TrustedProxies). Set only real ingress proxy source IPs."
+      }
+    },
+    "forwardedHeadersTrustedNetworks": {
+      "type": "array",
+      "defaultValue": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16"
+      ],
+      "metadata": {
+        "description": "Explicit CIDR networks trusted for X-Forwarded-* headers (ForwardedHeaders:TrustedNetworks). Defaults are a bootstrap allowlist for common private ingress ranges in managed Azure paths; tighten after first deploy when exact ranges are known."
       }
     },
     "hasSubmissionTokenSecret": {
@@ -140,6 +172,22 @@
           "name": "[format('Authorization__AdminUserIds__{0}', copyIndex('adminEnvVars'))]",
           "value": "[variables('adminIdList')[copyIndex('adminEnvVars')]]"
         }
+      },
+      {
+        "name": "forwardedProxyEnvVars",
+        "count": "[length(parameters('forwardedHeadersTrustedProxies'))]",
+        "input": {
+          "name": "[format('ForwardedHeaders__TrustedProxies__{0}', copyIndex('forwardedProxyEnvVars'))]",
+          "value": "[parameters('forwardedHeadersTrustedProxies')[copyIndex('forwardedProxyEnvVars')]]"
+        }
+      },
+      {
+        "name": "forwardedNetworkEnvVars",
+        "count": "[length(parameters('forwardedHeadersTrustedNetworks'))]",
+        "input": {
+          "name": "[format('ForwardedHeaders__TrustedNetworks__{0}', copyIndex('forwardedNetworkEnvVars'))]",
+          "value": "[parameters('forwardedHeadersTrustedNetworks')[copyIndex('forwardedNetworkEnvVars')]]"
+        }
       }
     ],
     "sqlServerName": "[format('{0}-sql-{1}', parameters('appName'), variables('suffix'))]",
@@ -150,6 +198,8 @@
     "acrNameFinal": "[if(less(length(variables('acrName')), 5), format('{0}acr', variables('acrName')), variables('acrName'))]",
     "storageAccountNameFinal": "[take(if(less(length(variables('storageAccountName')), 3), format('{0}st', variables('storageAccountName')), variables('storageAccountName')), 24)]",
     "acrPullRoleId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '7f951dda-4ed3-4680-a7ca-43fe172d538d')]",
+    "kvAllowedIpRules": "[concat(if(not(equals(parameters('containerAppOutboundIp'), '')), createArray(createObject('value', parameters('containerAppOutboundIp'))), createArray()), if(not(equals(parameters('developerWorkstationIp'), '')), createArray(createObject('value', parameters('developerWorkstationIp'))), createArray()))]",
+    "kvDefaultAction": "[if(greater(length(variables('kvAllowedIpRules')), 0), 'Deny', 'Allow')]",
     "kvName": "[take(format('kv-{0}-{1}', parameters('appName'), variables('suffix')), 24)]",
     "kvSecretsUserRoleId": "[subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '4633458b-17de-408a-b874-0445c86b69e6')]",
     "hasImage": "[not(equals(parameters('imageTag'), ''))]",
@@ -206,7 +256,8 @@
         "enableSoftDelete": true,
         "softDeleteRetentionInDays": 90,
         "enablePurgeProtection": true,
-        "publicNetworkAccess": "Enabled"
+        "publicNetworkAccess": "Enabled",
+        "networkAcls": "[if(parameters('restrictKeyVaultByIp'), createObject('bypass', 'None', 'defaultAction', variables('kvDefaultAction'), 'ipRules', variables('kvAllowedIpRules')), createObject('bypass', 'AzureServices', 'defaultAction', 'Allow', 'ipRules', createArray()))]"
       }
     },
     {
@@ -384,6 +435,19 @@
       ]
     },
     {
+      "condition": "[and(parameters('deployDatabase'), parameters('allowAzureServicesSqlFirewall'))]",
+      "type": "Microsoft.Sql/servers/firewallRules",
+      "apiVersion": "2023-08-01-preview",
+      "name": "[format('{0}/{1}', take(variables('sqlServerName'), 63), 'AllowAzureServices')]",
+      "properties": {
+        "startIpAddress": "0.0.0.0",
+        "endIpAddress": "0.0.0.0"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]"
+      ]
+    },
+    {
       "condition": "[and(parameters('deployDatabase'), not(equals(parameters('developerWorkstationIp'), '')))]",
       "type": "Microsoft.Sql/servers/firewallRules",
       "apiVersion": "2023-08-01-preview",
@@ -500,14 +564,14 @@
                 "cpu": "[json('0.5')]",
                 "memory": "1Gi"
               },
-              "env": "[union(createArray(createObject('name', 'Storage__PuzzlePath', 'value', '/data/puzzles'), createObject('name', 'Storage__LeaderboardPath', 'value', '/data/leaderboard'), createObject('name', 'SWEDISH_CROSSWORD_CACHE_PATH', 'value', '/data/cache'), createObject('name', 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', 'value', 'true')), if(not(equals(if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''), '')), createArray(createObject('name', 'ConnectionStrings__Leaderboard', 'value', if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''))), createArray()), if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'SubmissionToken__Secret', 'secretRef', 'submissiontoken-secret')), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'Authentication__Google__ClientId', 'secretRef', 'google-client-id'), createObject('name', 'Authentication__Google__ClientSecret', 'secretRef', 'google-client-secret')), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'Authentication__Microsoft__ClientId', 'secretRef', 'microsoft-client-id'), createObject('name', 'Authentication__Microsoft__ClientSecret', 'secretRef', 'microsoft-client-secret')), createArray()), variables('adminEnvVars'))]",
+              "env": "[union(createArray(createObject('name', 'Storage__PuzzlePath', 'value', '/data/puzzles'), createObject('name', 'Storage__LeaderboardPath', 'value', '/data/leaderboard'), createObject('name', 'SWEDISH_CROSSWORD_CACHE_PATH', 'value', '/data/cache'), createObject('name', 'ASPNETCORE_FORWARDEDHEADERS_ENABLED', 'value', 'true')), if(not(equals(if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''), '')), createArray(createObject('name', 'ConnectionStrings__Leaderboard', 'value', if(parameters('deployDatabase'), format('Server=tcp:{0},1433;Database={1};Authentication=Active Directory Managed Identity;User Id={2};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;', reference(resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63)), '2023-08-01-preview').fullyQualifiedDomainName, variables('sqlDbName'), reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))), '2023-01-31').clientId), ''))), createArray()), if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'SubmissionToken__Secret', 'secretRef', 'submissiontoken-secret')), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'Authentication__Google__ClientId', 'secretRef', 'google-client-id'), createObject('name', 'Authentication__Google__ClientSecret', 'secretRef', 'google-client-secret')), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'Authentication__Microsoft__ClientId', 'secretRef', 'microsoft-client-id'), createObject('name', 'Authentication__Microsoft__ClientSecret', 'secretRef', 'microsoft-client-secret')), createArray()), variables('adminEnvVars'), variables('forwardedProxyEnvVars'), variables('forwardedNetworkEnvVars'))]",
               "volumeMounts": [
                 {
                   "volumeName": "data",
                   "mountPath": "/data"
                 }
               ],
-              "probes": "[if(variables('hasImage'), createArray(createObject('type', 'Liveness', 'httpGet', createObject('path', '/api/health', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 30, 'periodSeconds', 30, 'timeoutSeconds', 5, 'failureThreshold', 3), createObject('type', 'Readiness', 'httpGet', createObject('path', '/api/health', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 5, 'periodSeconds', 10, 'timeoutSeconds', 5, 'failureThreshold', 3), createObject('type', 'Startup', 'httpGet', createObject('path', '/api/health', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 5, 'periodSeconds', 5, 'timeoutSeconds', 5, 'failureThreshold', 30)), createArray())]"
+              "probes": "[if(variables('hasImage'), createArray(createObject('type', 'Liveness', 'httpGet', createObject('path', '/api/health/live', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 30, 'periodSeconds', 30, 'timeoutSeconds', 5, 'failureThreshold', 3), createObject('type', 'Readiness', 'httpGet', createObject('path', '/api/health/ready', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 5, 'periodSeconds', 10, 'timeoutSeconds', 5, 'failureThreshold', 3), createObject('type', 'Startup', 'httpGet', createObject('path', '/api/health/ready', 'port', 8080, 'scheme', 'HTTP'), 'initialDelaySeconds', 5, 'periodSeconds', 5, 'timeoutSeconds', 5, 'failureThreshold', 30)), createArray())]"
             }
           ],
           "scale": {

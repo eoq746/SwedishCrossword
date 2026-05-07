@@ -58,6 +58,9 @@ param deployDatabase bool = true
 @description('Container Apps environment static outbound IP. Pin the SQL firewall to this single address. Get with: az containerapp env show -g <rg> -n <env> --query properties.staticIp -o tsv. Leave empty to skip the firewall rule (e.g. on a brand-new deploy where the env does not yet exist).')
 param containerAppOutboundIp string = ''
 
+@description('Allow Azure services to reach Azure SQL (0.0.0.0 firewall rule). Enable in CI to avoid startup failures when Container Apps egress IPs differ from static environment IP.')
+param allowAzureServicesSqlFirewall bool = false
+
 @description('Optional developer workstation IP for ad-hoc DB access (migrations, hot-fixes, debugging). Get with: (Invoke-RestMethod ifconfig.me/ip).Trim(). Leave empty in CI.')
 param developerWorkstationIp string = ''
 
@@ -355,6 +358,15 @@ resource sqlFirewallContainerApp 'Microsoft.Sql/servers/firewallRules@2023-08-01
   properties: {
     startIpAddress: containerAppOutboundIp
     endIpAddress: containerAppOutboundIp
+  }
+}
+
+resource sqlFirewallAzureServices 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = if (deployDatabase && allowAzureServicesSqlFirewall) {
+  parent: sqlServer
+  name: 'AllowAzureServices'
+  properties: {
+    startIpAddress: '0.0.0.0'
+    endIpAddress: '0.0.0.0'
   }
 }
 
