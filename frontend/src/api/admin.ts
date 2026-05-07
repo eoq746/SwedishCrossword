@@ -94,6 +94,16 @@ export interface BlobSyncResult {
   files: BlobSyncFileResult[];
 }
 
+export interface PuzzleRegenerationStatus {
+  state: 'idle' | 'queued' | 'running' | 'failed' | string;
+  pendingChangeCount: number;
+  notBeforeAt: number | null;
+  lastQueuedAt: number | null;
+  lastStartedAt: number | null;
+  lastCompletedAt: number | null;
+  lastError: string | null;
+}
+
 // ── Fetch helpers ─────────────────────────────────────────────────────────────
 
 const BASE_TIMEOUT_MS = 20_000;
@@ -141,15 +151,20 @@ export function fetchTopPlayers(limit = 20): Promise<TopPlayer[]> {
   return apiFetch(`/api/analytics/players?limit=${limit}`);
 }
 
-export async function triggerRegenerateFuturePuzzles(): Promise<void> {
+export async function triggerRegenerateFuturePuzzles(): Promise<PuzzleRegenerationStatus> {
   const res = await fetchWithTimeout('/api/admin/puzzle/regenerate-future', {
     method: 'POST',
     credentials: 'same-origin',
-    timeoutMs: 120_000,
+    timeoutMs: BASE_TIMEOUT_MS,
     retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error(await readApiError(res));
+  return res.json() as Promise<PuzzleRegenerationStatus>;
+}
+
+export function fetchPuzzleRegenerationStatus(): Promise<PuzzleRegenerationStatus> {
+  return apiFetch('/api/admin/puzzle/regeneration-status');
 }
 
 export function searchUserByAlias(alias: string, limit = 10): Promise<UserSearchResult[]> {
@@ -201,7 +216,7 @@ export async function resolveClueFlag(
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ status, updatedClue, adminNote, expectedWordListVersion, removeClue }),
-    timeoutMs: 180_000,
+    timeoutMs: BASE_TIMEOUT_MS,
     retries: 0,
   });
   if (res.status === 401 || res.status === 403) throw new AccessDeniedError();

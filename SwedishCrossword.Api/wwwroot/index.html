@@ -29,12 +29,113 @@
     <meta name="twitter:description" content="Spela gratis svenska korsord online varje dag. Nytt korsord dagligen med svenska ord, synonymer och ledtrådar.">
     <meta name="twitter:image" content="https://www.svensktkorsord.se/android-chrome-512x512.png">
 
+    <!-- AI-friendly robots meta -->
+    <meta name="AI-Generated-By" content="Human">
+    <meta name="AI-Content-Source" content="https://www.svensktkorsord.se/">
+
+    <!-- RSS Feed Discovery -->
+    <link rel="alternate" type="application/rss+xml" title="Svenskt Korsord - Dagliga Svenska Korsord" href="https://www.svensktkorsord.se/feed.xml">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preload" href="/site.min.css" as="style">
     <link rel="stylesheet" href="/site.min.css">
+
+    <!-- JSON-LD Structured Data for Organization and Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "WebSite"],
+      "name": "Svenskt Korsord",
+      "url": "https://www.svensktkorsord.se",
+      "logo": "https://www.svensktkorsord.se/android-chrome-512x512.png",
+      "description": "Gratis dagliga svenska korsord online. Nytt pussel varje dag med svenska ord, synonymer och ledtrådar.",
+      "sameAs": [
+        "https://www.facebook.com/svensktkorsord",
+        "https://twitter.com/svensktkorsord",
+        "https://www.instagram.com/svensktkorsord"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "contact@svensktkorsord.se"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.svensktkorsord.se/calendar?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for Game -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "Svenskt Korsord",
+      "description": "Gratis dagliga svenska korsord online. Testa ditt ordförråd och tävla på topplistan.",
+      "url": "https://www.svensktkorsord.se",
+      "applicationCategory": "Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "SEK"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Svenskt Korsord"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data for FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vad är Svenskt Korsord?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Svenskt Korsord är en gratis webbplats för att spela svenska korsord online. Nytt pussel publiceras varje dag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kostar Svenskt Korsord något?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nej, Svenskt Korsord är helt gratis att spela. Vi finansieras genom diskreta annonser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag spela tidigare korsord?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, du kan se alla tidigare korsord i arkivet. Gå till Arkiv-sidan för att bläddra genom tidigare pussel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan jag tävla på topplistan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, när du löser ett korsord kan du se hur du placerar dig mot andra spelare idag på topplistan."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style nonce="__CSP_NONCE__">
         .landing-hero {
             margin: 1.5rem 0 0.5rem;

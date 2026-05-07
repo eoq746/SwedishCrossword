@@ -1,37 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <!-- Homepage - highest priority, updated daily with content -->
     <url>
         <loc>https://www.svensktkorsord.se/</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- Play Page - entry point for playing -->
     <url>
-        <loc>https://www.svensktkorsord.se/puzzle.html</loc>
+        <loc>https://www.svensktkorsord.se/play</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- Puzzle Page - dynamic daily puzzle -->
+    <url>
+        <loc>https://www.svensktkorsord.se/puzzle</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <!-- Leaderboard - updated frequently -->
     <url>
-        <loc>https://www.svensktkorsord.se/calendar.html</loc>
-        <changefreq>daily</changefreq>
+        <loc>https://www.svensktkorsord.se/leaderboard</loc>
+        <lastmod>2025-01-13</lastmod>
+        <changefreq>hourly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- Calendar / Archive - updated daily -->
     <url>
-        <loc>https://www.svensktkorsord.se/leaderboard.html</loc>
+        <loc>https://www.svensktkorsord.se/calendar</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>daily</changefreq>
-        <priority>0.7</priority>
+        <priority>0.85</priority>
     </url>
+
+    <!-- Static Info Pages -->
     <url>
-        <loc>https://www.svensktkorsord.se/about.html</loc>
+        <loc>https://www.svensktkorsord.se/about</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
     <url>
-        <loc>https://www.svensktkorsord.se/contact.html</loc>
+        <loc>https://www.svensktkorsord.se/contact</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+
     <url>
-        <loc>https://www.svensktkorsord.se/privacy-policy.html</loc>
+        <loc>https://www.svensktkorsord.se/privacy-policy</loc>
+        <lastmod>2025-01-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>

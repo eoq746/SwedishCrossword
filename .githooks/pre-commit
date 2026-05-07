@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 # Pre-commit checks:
 #   1. UTF-8 BOM on staged .cs files (charset = utf-8-bom in .editorconfig)
-#   2. dotnet format style on staged .cs files
-#   3. gitleaks scan of staged content (blocks committing real secrets)
+#   2. dotnet format whitespace on staged .cs files
+#   3. dotnet format style on staged .cs files
+#   4. gitleaks scan of staged content (blocks committing real secrets)
 
 set -e
 
@@ -19,7 +20,16 @@ if [ -n "$staged_cs" ]; then
         pwsh -NoProfile -File "$repo_root/scripts/fix-bom.ps1" >/dev/null
     fi
 
-    # 2. Run dotnet format style on staged files only.
+    # 2. Run dotnet format whitespace on staged files only.
+    if command -v dotnet >/dev/null 2>&1; then
+        dotnet format whitespace --no-restore --include $staged_cs >/dev/null || {
+            echo "dotnet format whitespace made changes. Re-stage the files and commit again." >&2
+            echo "$staged_cs" | xargs -r git add
+            exit 1
+        }
+    fi
+
+    # 3. Run dotnet format style on staged files only.
     if command -v dotnet >/dev/null 2>&1; then
         dotnet format style --no-restore --include $staged_cs >/dev/null || {
             echo "dotnet format style made changes. Re-stage the files and commit again." >&2
@@ -28,7 +38,7 @@ if [ -n "$staged_cs" ]; then
         }
     fi
 
-    # 3. Re-stage anything we modified.
+    # 4. Re-stage anything we modified.
     echo "$staged_cs" | xargs -r git add
 fi
 

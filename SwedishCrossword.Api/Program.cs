@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Threading.RateLimiting;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.RateLimiting;
 using SwedishCrossword.Api;
@@ -104,7 +105,9 @@ builder.Services.Configure<ForwardedHeadersOptions>(options =>
 });
 
 // Health checks
-builder.Services.AddHealthChecks();
+builder.Services.AddHealthChecks()
+    .AddCheck<StoragePathsHealthCheck>("storage-paths", tags: ["ready"])
+    .AddCheck<LeaderboardDatabaseHealthCheck>("leaderboard-db", tags: ["ready"]);
 
 // Translate transient/unavailable Azure SQL errors (incl. Free Offer 42119
 // quota-pause) into HTTP 503 problem+json instead of 500. Lets the front-end
@@ -565,10 +568,21 @@ app.MapAuthEndpoints();
 app.MapPuzzleEndpoints(puzzlePath);
 app.MapLeaderboardEndpoints();
 app.MapStatsEndpoints();
-app.MapAnalyticsEndpoints();
+app.MapAnalyticsEndpoints(puzzlePath);
 app.MapFriendsEndpoints();
 
-app.MapHealthChecks("/api/health");
+app.MapHealthChecks("/api/health/live", new HealthCheckOptions
+{
+    Predicate = _ => false
+});
+app.MapHealthChecks("/api/health/ready", new HealthCheckOptions
+{
+    Predicate = registration => registration.Tags.Contains("ready")
+});
+app.MapHealthChecks("/api/health", new HealthCheckOptions
+{
+    Predicate = registration => registration.Tags.Contains("ready")
+});
 
 // Dynamic sitemap that includes all puzzle dates for better SEO indexing
 app.MapGet("/sitemap-puzzles.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =>
@@ -580,11 +594,55 @@ app.MapGet("/sitemap-puzzles.xml", (PuzzleDateIndex dateIndex, TimeProvider time
     sb.AppendLine("""<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">""");
     foreach (var entry in dates)
     {
-        sb.AppendLine(CultureInfo.InvariantCulture, $"  <url><loc>https://www.svensktkorsord.se/puzzle.html?date={entry.Date}</loc><changefreq>never</changefreq><priority>0.6</priority></url>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"  <url><loc>https://www.svensktkorsord.se/puzzle?date={entry.Date}</loc><changefreq>never</changefreq><priority>0.6</priority></url>");
     }
     sb.AppendLine("</urlset>");
     return Results.Content(sb.ToString(), "application/xml; charset=utf-8");
-}).ExcludeFromDescription();
+}).ExcludeFromDescription().CacheOutput("puzzle-dates");
+
+// RSS feed for AI discovery and feed readers
+app.MapGet("/feed.xml", (PuzzleDateIndex dateIndex, TimeProvider timeProvider) =>
+{
+    var today = timeProvider.GetSwedishDate();
+    var dates = dateIndex.GetDates(today).Take(20); // Last 20 puzzles
+    var sb = new System.Text.StringBuilder();
+    sb.AppendLine("""<?xml version="1.0" encoding="UTF-8"?>""");
+    sb.AppendLine("""<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">""");
+    sb.AppendLine("<channel>");
+    sb.AppendLine("<title>Svenskt Korsord - Dagliga Svenska Korsord</title>");
+    sb.AppendLine("<link>https://www.svensktkorsord.se/</link>");
+    sb.AppendLine("<description>Gratis dagliga svenska korsord online. Nytt pussel varje dag.</description>");
+    sb.AppendLine("<language>sv</language>");
+    sb.AppendLine("<atom:link href=\"https://www.svensktkorsord.se/feed.xml\" rel=\"self\" type=\"application/rss+xml\" />");
+    sb.AppendLine($"<lastBuildDate>{DateTime.UtcNow:R}</lastBuildDate>");
+    sb.AppendLine("<image>");
+    sb.AppendLine("<url>https://www.svensktkorsord.se/android-chrome-512x512.png</url>");
+    sb.AppendLine("<title>Svenskt Korsord</title>");
+    sb.AppendLine("<link>https://www.svensktkorsord.se/</link>");
+    sb.AppendLine("</image>");
+
+    foreach (var entry in dates)
+    {
+        sb.AppendLine("<item>");
+        sb.AppendLine($"<title>Korsord för {entry.Date}</title>");
+        sb.AppendLine($"<link>https://www.svensktkorsord.se/puzzle?date={entry.Date}</link>");
+        sb.AppendLine($"<guid>https://www.svensktkorsord.se/puzzle?date={entry.Date}</guid>");
+
+        // Parse date string to DateTime for RSS pubDate format
+        if (DateOnly.TryParseExact(entry.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var dateOnly))
+        {
+            var dateTime = dateOnly.ToDateTime(System.TimeOnly.MinValue);
+            sb.AppendLine($"<pubDate>{dateTime:R}</pubDate>");
+        }
+
+        sb.AppendLine($"<description>Spela dagens korsord för {entry.Date}. Testa ditt ordförråd och se hur du placerar dig på topplistan.</description>");
+        sb.AppendLine("</item>");
+    }
+
+    sb.AppendLine("</channel>");
+    sb.AppendLine("</rss>");
+    return Results.Content(sb.ToString(), "application/rss+xml; charset=utf-8");
+}).ExcludeFromDescription().CacheOutput("puzzle-dates");
 
 app.Run();
 

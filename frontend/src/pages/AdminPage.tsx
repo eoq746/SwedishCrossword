@@ -4,11 +4,11 @@ import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
 import {
   fetchAnalyticsSummary, fetchDailyAnalytics, fetchTopPlayers,
-  triggerRegenerateFuturePuzzles,
+  triggerRegenerateFuturePuzzles, fetchPuzzleRegenerationStatus,
   searchUserByAlias, fetchAdminGrants, grantAdmin, revokeAdmin,
   fetchPendingClueFlags, resolveClueFlag, createCustomClue, syncWordListsDevToProd,
   AccessDeniedError,
-  type AnalyticsSummary, type DailyAnalytics, type TopPlayer, type AdminGrant, type ClueFlag, type BlobSyncResult,
+  type AnalyticsSummary, type DailyAnalytics, type TopPlayer, type AdminGrant, type ClueFlag, type BlobSyncResult, type PuzzleRegenerationStatus,
 } from '../api/admin';
 import '../styles/static-pages.css';
 
@@ -23,6 +23,11 @@ function formatTime(seconds: number | null | undefined): string {
   const m = Math.floor(seconds / 60);
   const s = Math.floor(seconds % 60);
   return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+function formatDateTime(unixMs: number | null | undefined): string {
+  if (!unixMs) return '–';
+  return new Date(unixMs).toLocaleString('sv-SE');
 }
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -337,38 +342,90 @@ function AdminUsersSection() {
 // ── Puzzle regeneration ───────────────────────────────────────────────────────
 
 function RegeneratePuzzlesSection() {
-  const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle');
+  const [status, setStatus] = useState<PuzzleRegenerationStatus | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [triggering, setTriggering] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleRegenerate = async () => {
-    if (status === 'running') return;
-    setStatus('running');
+  const loadStatus = async () => {
     try {
-      await triggerRegenerateFuturePuzzles();
-      setStatus('done');
+      const data = await fetchPuzzleRegenerationStatus();
+      setStatus(data);
+      setError(null);
     } catch {
-      setStatus('error');
+      setError('Kunde inte läsa regenereringsstatus.');
+    } finally {
+      setLoading(false);
     }
   };
+
+  useEffect(() => {
+    void loadStatus();
+    const id = window.setInterval(() => {
+      void loadStatus();
+    }, 10_000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  const handleRegenerate = async () => {
+    if (triggering) return;
+    setTriggering(true);
+    setError(null);
+    try {
+      const queued = await triggerRegenerateFuturePuzzles();
+      setStatus(queued);
+    } catch {
+      setError('Kunde inte köa regenerering. Försök igen.');
+    } finally {
+      setTriggering(false);
+      void loadStatus();
+    }
+  };
+
+  const stateLabel = status?.state === 'running'
+    ? 'Körs nu'
+    : status?.state === 'queued'
+      ? 'Köad'
+      : status?.state === 'failed'
+        ? 'Senaste körning misslyckades'
+        : 'Vilande';
 
   return (
     <div className="admin-section">
       <h2>🔄 Framtida pussel</h2>
       <p className="profile-empty" style={{ marginBottom: 12 }}>
-        Tar bort och regenererar alla förberäknade pussel från och med imorgon.
-        Dagens pussel berörs inte.
+        Ledtrådsändringar batchas. Regenerering startar automatiskt efter kort inaktivitet,
+        eller manuellt via knappen nedan.
       </p>
-      <button
-        className="admin-refresh-btn"
-        onClick={() => void handleRegenerate()}
-        disabled={status === 'running'}
-      >
-        {status === 'running' ? '⏳ Regenererar…' : '🔄 Regenerera framtida pussel'}
-      </button>
-      {status === 'done' && (
-        <p className="badge badge-verified" style={{ marginTop: 8 }}>✅ Klart! Framtida pussel har genererats om.</p>
+
+      {loading ? (
+        <p className="leaderboard-loading" style={{ marginBottom: 10 }}>Laddar status…</p>
+      ) : (
+        <div style={{ display: 'grid', gap: 6, marginBottom: 12 }}>
+          <p className="profile-empty">Status: <strong>{stateLabel}</strong></p>
+          <p className="profile-empty">Väntande ledtrådsändringar: <strong>{status?.pendingChangeCount ?? 0}</strong></p>
+          <p className="profile-empty">Köad tidigast: <strong>{formatDateTime(status?.notBeforeAt ?? null)}</strong></p>
+          <p className="profile-empty">Senaste start: <strong>{formatDateTime(status?.lastStartedAt ?? null)}</strong></p>
+          <p className="profile-empty">Senaste klar: <strong>{formatDateTime(status?.lastCompletedAt ?? null)}</strong></p>
+          {status?.lastError ? <p className="leaderboard-error">Senaste fel: {status.lastError}</p> : null}
+        </div>
       )}
-      {status === 'error' && (
-        <p className="leaderboard-error" style={{ marginTop: 8 }}>⚠️ Något gick fel. Försök igen.</p>
+
+      <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+        <button
+          className="admin-refresh-btn"
+          onClick={() => void handleRegenerate()}
+          disabled={triggering || status?.state === 'running'}
+        >
+          {triggering ? '⏳ Köar…' : '🚀 Regenerera nu'}
+        </button>
+        <button className="admin-refresh-btn" onClick={() => void loadStatus()} disabled={triggering}>
+          🔄 Uppdatera status
+        </button>
+      </div>
+
+      {error && (
+        <p className="leaderboard-error" style={{ marginTop: 8 }}>⚠️ {error}</p>
       )}
     </div>
   );
@@ -473,7 +530,7 @@ function ClueFlagsSection() {
       <h2>📝 Flaggar för ledtrådar</h2>
       <p className="profile-empty" style={{ marginBottom: 12 }}>
         Granska rapporterade ledtrådar. Vid godkännande uppdateras ordlistan, analyscachen räknas om,
-        och framtida pussel regenereras.
+        och framtida pussel köas för regenerering i bakgrunden.
       </p>
       <button className="admin-refresh-btn" onClick={() => void loadFlags()} disabled={loading || Boolean(savingId)} style={{ marginBottom: 12 }}>
         {loading ? '⏳ Laddar…' : '🔄 Uppdatera lista'}

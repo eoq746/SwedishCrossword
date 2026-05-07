@@ -42,6 +42,231 @@ A Swedish crossword puzzle generator
 - **Analytics & Admin Dashboard**: Admin-only analytics and operations via the React `/admin` page, including summary cards, daily activity, top players, dynamic admin grants/revokes, clue-flag review/approve/reject/remove, custom clue creation, and future-puzzle regeneration
 - **Clue Handler Tool**: Standalone CLI for managing the dictionary — view statistics, add words, edit clues, auto-populate clues from Wiktionary, and generate compound/pattern-based clues
 
+## SEO & AI Discovery
+
+The application includes comprehensive Search Engine Optimization (SEO) and AI-friendly metadata to ensure high visibility in search results and AI summary generation platforms (ChatGPT, Perplexity, Claude, etc.).
+
+### Frontend SEO
+
+#### Dynamic Meta Tags Hook (`frontend/src/hooks/useSEO.ts`)
+
+A React hook for managing page-level SEO metadata dynamically:
+
+```typescript
+import { useSEO } from '../hooks/useSEO';
+
+useSEO({
+  title: 'Page Title',
+  description: 'Meta description for search engines and social media',
+  canonical: 'https://example.com/page',
+  ogType: 'website',
+  ogImage: 'https://example.com/image.png',
+  structuredData: { /* JSON-LD schema */ }
+});
+```
+
+**Managed metadata:**
+- Page title with site name suffix
+- Meta description (OG and Twitter)
+- Canonical URL for duplicate prevention
+- Open Graph tags for social media (Facebook, LinkedIn)
+- Twitter Card tags (X/Twitter sharing)
+- JSON-LD structured data
+
+#### Schema Utilities (`frontend/src/utils/seoSchemas.ts`)
+
+Pre-built JSON-LD schema generators for enhanced search engine understanding:
+
+- **Organization Schema** — Site ownership and contact information
+- **Website Schema** — Site-wide search action integration
+- **Game Schema** — Puzzle metadata for search engines
+- **FAQ Schema** — Common questions and answers
+- **Breadcrumb Schema** — Navigation hierarchy for better UX
+- **Puzzle Schema** — Individual puzzle metadata
+- **Leaderboard Schema** — Competitive ranking data
+
+#### Updated Pages
+
+All major pages include SEO metadata:
+
+| Page | SEO Enhancements |
+|------|------------------|
+| `IndexPage` | Breadcrumb schema, canonical URL, OG tags |
+| `PlayLandingPage` | Size selection metadata, breadcrumb hierarchy |
+| `PuzzlePage` | Dynamic puzzle-specific descriptions, date-based canonical |
+| `CalendarPage` | Archive discovery, breadcrumb trail |
+| `LeaderboardPage` | Competitive metadata, breadcrumb schema |
+| `AboutPage` | Organization description, technical process documentation |
+| `ContactPage` | Contact information, FAQ schema |
+| `PrivacyPolicyPage` | Legal document (marked with `noindex`) |
+
+### Backend SEO
+
+#### Enhanced robots.txt (`wwwroot/robots.txt`)
+
+Comprehensive crawler support with allowances for:
+
+- **Search Engines:** Google (Googlebot), Bing (Bingbot)
+- **AI Crawlers:** 
+  - GPTBot (OpenAI)
+  - ChatGPT-User
+  - Google-Extended
+  - PerplexityBot
+  - Anthropic-AI / Claude-Web
+  - AppleBot (Apple Intelligence)
+  - Copilot (Microsoft)
+- **Respectful crawl delays:** 1 second default, 0 for Googlebot
+
+```
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+```
+
+#### Structured Data in index.html
+
+The main HTML shell includes embedded JSON-LD schemas:
+
+- **Organization + WebSite** — Site identity and search integration
+- **Game** — Application category and free offering
+- **FAQ** — Commonly asked questions with answers
+
+Example:
+```json
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "WebSite"],
+  "name": "Svenskt Korsord",
+  "url": "https://www.svensktkorsord.se",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.svensktkorsord.se/calendar?search={search_term_string}"
+  }
+}
+```
+
+#### Sitemaps
+
+Three sitemap files for comprehensive coverage:
+
+| Sitemap | Purpose | Content |
+|---------|---------|---------|
+| `sitemap.xml` | Main static pages | Homepage, play, puzzle, leaderboard, calendar, about, contact, privacy |
+| `sitemap-static.xml` | Legal/static pages | About, contact, privacy policy |
+| `sitemap-puzzles.xml` | Dynamic puzzle URLs | Generated endpoint (`/sitemap-puzzles.xml`) lists all available puzzle dates |
+
+All entries include proper change frequencies and priorities for optimal crawling.
+
+#### RSS Feed (`/feed.xml`)
+
+An RSS 2.0 feed endpoint for feed reader and AI crawler discovery:
+
+- **Latest 20 puzzles** with publication dates
+- **RSS 2.0 standard** with Atom self-link for discovery
+- **Cached** for performance (10 minutes)
+- **Discoverable** via `<link rel="alternate" type="application/rss+xml" ... >`
+
+URL: `https://www.svensktkorsord.se/feed.xml`
+
+**Example feed item:**
+```xml
+<item>
+  <title>Korsord för 2025-01-13</title>
+  <link>https://www.svensktkorsord.se/puzzle?date=2025-01-13</link>
+  <guid>https://www.svensktkorsord.se/puzzle?date=2025-01-13</guid>
+  <pubDate>Mon, 13 Jan 2025 00:00:00 GMT</pubDate>
+  <description>Spela dagens korsord för 2025-01-13...</description>
+</item>
+```
+
+#### AI-Friendly Meta Tags
+
+Additional meta tags in the HTML head for AI crawler guidance:
+
+```html
+<meta name="AI-Generated-By" content="Human">
+<meta name="AI-Content-Source" content="https://www.svensktkorsord.se/">
+```
+
+### Benefits
+
+✨ **Better Search Visibility** — Structured data helps Google and Bing understand content depth and context  
+✨ **AI Summary Inclusion** — AI crawlers can now find and summarize your puzzles in ChatGPT, Perplexity, Claude, etc.  
+✨ **Feed Reader Support** — Users can subscribe to new puzzles via RSS readers or Feedly  
+✨ **Rich Snippets** — Search results display enhanced previews with ratings, FAQ, etc.  
+✨ **Breadcrumb Navigation** — Users see page hierarchy in search results  
+✨ **Social Media Sharing** — Open Graph and Twitter cards create rich previews on social platforms  
+
+## Health Checks & Observability
+
+The API includes comprehensive health check endpoints for Kubernetes and container orchestration platforms:
+
+### Health Check Endpoints
+
+| Endpoint | Purpose | Tags | Use Case |
+|----------|---------|------|----------|
+| `/api/health/live` | Liveness probe | none | Container is running (returns 200 even if unhealthy) |
+| `/api/health/ready` | Readiness probe | `ready` | Pod ready to receive traffic (checks storage + database) |
+| `/api/health` | General health | `ready` | Same as `/api/health/ready` |
+
+### Health Checks Performed
+
+#### Storage Paths Health Check (`StoragePathsHealthCheck`)
+- Verifies puzzle storage path is writable (`Storage:PuzzlePath`)
+- Verifies leaderboard storage path is writable (`Storage:LeaderboardPath`)
+- Tests by creating temporary file, writing, and deleting
+- Reports `Unhealthy` if access denied or I/O errors occur
+
+#### Leaderboard Database Health Check (`LeaderboardDatabaseHealthCheck`)
+- **Production:** Tests connection to Azure SQL Database via `ConnectionStrings:Leaderboard`
+- **Development:** Creates and tests SQLite database at `Storage:LeaderboardPath/leaderboard.db`
+- Validates database connectivity without executing queries
+- Returns appropriate status for container restart decisions
+
+### Configuration
+
+Health checks use the standard .NET Diagnostics API:
+
+```csharp
+builder.Services.AddHealthChecks()
+    .AddCheck<StoragePathsHealthCheck>("storage-paths", tags: ["ready"])
+    .AddCheck<LeaderboardDatabaseHealthCheck>("leaderboard-db", tags: ["ready"]);
+```
+
+### Integration with Azure Container Apps / Kubernetes
+
+In `infra/main.bicep`, health probes are configured:
+
+```bicep
+livenessprobe: {
+  httpGet: {
+    path: '/api/health/live'
+    port: 8080
+  }
+  initialDelaySeconds: 10
+  periodSeconds: 10
+}
+
+readinessprobe: {
+  httpGet: {
+    path: '/api/health/ready'
+    port: 8080
+  }
+  initialDelaySeconds: 5
+  periodSeconds: 5
+}
+```
+
+These probes allow the platform to:
+- **Restart unhealthy containers** (liveness)
+- **Route traffic only to ready pods** (readiness)
+- **Gracefully handle storage failures** without cascading restarts
+
 ## Project Structure
 
 ```

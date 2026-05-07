@@ -58,8 +58,9 @@ record AdminGrantInfo(string UserId, string? Alias, long GrantedAt, string? Gran
 
 // Clue quality flags
 record ClueFlagCreateRequest(
-    string Word,
+    string? Word,
     string CurrentClue,
+    int[][]? ClueCells,
     string? SuggestedClue,
     string? Reason,
     string? PuzzleDate,
@@ -118,3 +119,13 @@ record BlobWordListSyncResponse(
 
 // Admin user search
 record AdminUserSearchResult(string UserId, string Alias, bool ExactMatch = false);
+
+// Admin puzzle regeneration scheduler
+record PuzzleRegenerationStatusResponse(
+    string State,
+    int PendingChangeCount,
+    long? NotBeforeAt,
+    long? LastQueuedAt,
+    long? LastStartedAt,
+    long? LastCompletedAt,
+    string? LastError);

@@ -15,6 +15,10 @@
 - Implement the cookie consent UI as a floating banner overlaying the page rather than inline text in the document flow.
 - For the puzzle page, the user prefers the clues panel as a single column split vertically into separate horizontal and vertical clue sections, with each section scrolling internally.
 - When editing or removing a clue, updates must be applied to the clue’s original source JSON file (dsso, kelly, lexin, synonyms, or custom), not always custom-words.json.
+- In the clue report dialog, the suggested clue field should start empty instead of being pre-filled with the current clue text.
 
 ## Security and Scanning
 - User already runs CodeQL scanning in GitHub and does not need additional setup guidance for CodeQL.
+
+## Code Formatting
+- User prefers local formatting enforcement in pre-commit hooks instead of a separate pre-push hook.

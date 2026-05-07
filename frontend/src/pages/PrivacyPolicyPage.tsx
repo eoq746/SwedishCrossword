@@ -1,9 +1,24 @@
 import { Link } from 'react-router-dom';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import '../styles/static-pages.css';
 
 export default function PrivacyPolicyPage() {
   usePageTitle('Integritetspolicy');
+  
+  useSEO({
+    title: 'Integritetspolicy',
+    description: 'Läs Svenskt Korsords integritetspolicy. Lär dig hur vi skyddar din integritet och hanterar dina personuppgifter.',
+    canonical: 'https://www.svensktkorsord.se/privacy-policy',
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    robots: 'noindex, follow',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Integritetspolicy', url: 'https://www.svensktkorsord.se/privacy-policy' }
+    ])
+  });
 
   return (
     <>

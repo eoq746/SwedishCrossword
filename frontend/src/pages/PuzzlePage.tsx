@@ -3,6 +3,8 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { createClueFlag } from '../api/clues';
 import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
+import { useSEO } from '../hooks/useSEO';
+import { generateBreadcrumbSchema } from '../utils/seoSchemas';
 import { PuzzleClues } from './puzzle/PuzzleClues';
 import { PuzzleGrid } from './puzzle/PuzzleGrid';
 import { PuzzleHistorySection } from './puzzle/PuzzleHistorySection';
@@ -35,7 +37,23 @@ export default function PuzzlePage() {
   const size = (searchParams.get('size') as PuzzleSize) || '17x17';
   const dateParam = searchParams.get('date') ?? '';
 
+  const seoTitle = dateParam ? `Korsord ${dateParam}` : 'Spela Korsord';
   usePageTitle(dateParam ? `Korsord ${dateParam}` : 'Spela Korsord');
+  
+  useSEO({
+    title: seoTitle,
+    description: dateParam 
+      ? `Spela korsord från ${dateParam}. Svenska korsord med ord, synonymer och ledtrådar. Testa ditt ordförråd och tävla på topplistan.`
+      : `Spela dagens svenska korsord online. Lösa ord pussel med ledtrådar, träna hjärnan och förbättra ditt ordförråd.`,
+    canonical: `https://www.svensktkorsord.se/puzzle${dateParam ? `?date=${dateParam}` : ''}`,
+    ogType: 'website',
+    ogImage: 'https://www.svensktkorsord.se/android-chrome-512x512.png',
+    structuredData: generateBreadcrumbSchema([
+      { name: 'Hem', url: 'https://www.svensktkorsord.se/' },
+      { name: 'Spela', url: 'https://www.svensktkorsord.se/play' },
+      { name: seoTitle, url: `https://www.svensktkorsord.se/puzzle${dateParam ? `?date=${dateParam}` : ''}` }
+    ])
+  });
 
   const [messageModal, setMessageModal] = useState<{ title: string; body: string } | null>(null);
   const [confirmModal, setConfirmModal] = useState<{ title: string; body: string; onConfirm: () => void } | null>(null);
@@ -45,7 +63,6 @@ export default function PuzzlePage() {
   const [showIntro, setShowIntro] = useState(false);
   const [showHistoryPanel, setShowHistoryPanel] = useState(false);
   const [reportingClue, setReportingClue] = useState<ClueEntry | null>(null);
-  const [reportWord, setReportWord] = useState('');
   const [reportSuggestedClue, setReportSuggestedClue] = useState('');
   const [reportReason, setReportReason] = useState('');
   const [reportSubmitting, setReportSubmitting] = useState(false);
@@ -251,12 +268,6 @@ export default function PuzzlePage() {
 
   const isClueAlreadyReported = (entry: ClueEntry) => Boolean(reportedClueKeys[getClueReportKey(entry)]);
 
-  const buildWordPrefill = (entry: ClueEntry): string =>
-    entry.cells
-      .map(cell => (values[`${cell.row},${cell.col}`] ?? '').trim().toUpperCase())
-      .join('')
-      .replace(/[^A-ZÅÄÖ]/gi, '');
-
   const handleOpenClueReport = (entry: ClueEntry) => {
     if (isClueAlreadyReported(entry)) {
       setMessageModal({ title: 'Redan rapporterad', body: 'Du har redan rapporterat denna ledtråd för det här pusslet.' });
@@ -264,28 +275,18 @@ export default function PuzzlePage() {
     }
 
     setReportingClue(entry);
-    setReportWord(buildWordPrefill(entry));
-    setReportSuggestedClue(entry.clue);
+    setReportSuggestedClue('');
     setReportReason('');
   };
 
   const handleSubmitClueReport = async () => {
     if (!reportingClue || reportSubmitting) return;
 
-    const word = reportWord.trim().toUpperCase();
-    if (!word) {
-      setMessageModal({
-        title: 'Svarsord saknas',
-        body: 'Ange svarsordet så att admin kan koppla rapporten till rätt ordpost.',
-      });
-      return;
-    }
-
     setReportSubmitting(true);
     try {
       await createClueFlag({
-        word,
         currentClue: reportingClue.clue,
+        clueCells: reportingClue.cells.map(cell => [cell.row, cell.col]),
         suggestedClue: reportSuggestedClue.trim() || undefined,
         reason: reportReason.trim() || undefined,
         puzzleDate,
@@ -627,32 +628,22 @@ export default function PuzzlePage() {
               : '' }
           </p>
 
-          <label htmlFor="report-word-input">Svarsord</label>
-          <input
-            id="report-word-input"
-            type="text"
-            value={reportWord}
-            onChange={e => setReportWord(e.target.value)}
-            maxLength={64}
-            autoComplete="off"
-            placeholder="Exempel: KATT"
-            disabled={reportSubmitting}
-          />
-
-          <label htmlFor="report-suggested-clue-input" style={{ marginTop: 8 }}>Föreslagen bättre ledtråd</label>
+          <label htmlFor="report-suggested-clue-input">Föreslagen ledtråd</label>
           <input
             id="report-suggested-clue-input"
             type="text"
             value={reportSuggestedClue}
             onChange={e => setReportSuggestedClue(e.target.value)}
-            maxLength={500}
+            maxLength={256}
             autoComplete="off"
+            placeholder="Ny ledtråd (valfritt)"
             disabled={reportSubmitting}
           />
 
           <label htmlFor="report-reason-input" style={{ marginTop: 8 }}>Orsak (valfritt)</label>
           <textarea
             id="report-reason-input"
+            className="clue-report-reason"
             value={reportReason}
             onChange={e => setReportReason(e.target.value)}
             rows={3}

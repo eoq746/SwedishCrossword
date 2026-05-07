@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using System.Globalization;
+using System.Security.Claims;
 using SwedishCrossword.Api.Endpoints;
 using SwedishCrossword.Services;
 
@@ -6,7 +7,7 @@ namespace SwedishCrossword.Api.Endpoints;
 
 internal static class AnalyticsEndpoints
 {
-    internal static WebApplication MapAnalyticsEndpoints(this WebApplication app)
+    internal static WebApplication MapAnalyticsEndpoints(this WebApplication app, string puzzlePath)
     {
         app.MapGet("/api/analytics/summary", async (IAnalyticsStore store) =>
         {
@@ -29,25 +30,62 @@ internal static class AnalyticsEndpoints
         }).RequireAuthorization("Admin");
 
         /// <summary>
-        /// Deletes all pre-generated future puzzles and immediately regenerates them
-        /// using the latest generator code. Today's puzzle is preserved.
+        /// Queues immediate future puzzle regeneration. The work runs in the background scheduler.
         /// </summary>
-        app.MapPost("/api/admin/puzzle/regenerate-future", async (PuzzleWarmupService warmup, CancellationToken ct) =>
+        app.MapPost("/api/admin/puzzle/regenerate-future", (PuzzleWarmupService warmup) =>
         {
-            await warmup.RegenerateFutureAsync(ct);
-            return Results.Ok(new { ok = true });
+            warmup.QueueFutureRegenerationNow();
+            var status = warmup.GetFutureRegenerationStatus();
+            return Results.Accepted(value: status);
         }).RequireAuthorization("Admin");
 
-        app.MapPost("/api/clues/flags", async (ClueFlagCreateRequest body, ClaimsPrincipal user, IClueFlagStore store, IUserProfileStore profileStore) =>
+        app.MapGet("/api/admin/puzzle/regeneration-status", (PuzzleWarmupService warmup) =>
         {
-            if (string.IsNullOrWhiteSpace(body.Word))
-                return Results.BadRequest(new ErrorResponse("Word is required"));
+            var status = warmup.GetFutureRegenerationStatus();
+            return Results.Ok(status);
+        }).RequireAuthorization("Admin");
+
+        app.MapPost("/api/clues/flags", async (ClueFlagCreateRequest body, ClaimsPrincipal user, IClueFlagStore store, IUserProfileStore profileStore, PuzzleCache puzzleCache) =>
+        {
             if (string.IsNullOrWhiteSpace(body.CurrentClue))
                 return Results.BadRequest(new ErrorResponse("Current clue is required"));
+            if (body.ClueCells is not { Length: > 0 })
+                return Results.BadRequest(new ErrorResponse("Clue cells are required"));
+            if (string.IsNullOrWhiteSpace(body.PuzzleDate) ||
+                !DateOnly.TryParseExact(body.PuzzleDate, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
+            {
+                return Results.BadRequest(new ErrorResponse("Puzzle date is required"));
+            }
+
+            var puzzleFile = PuzzleEndpoints.ResolvePuzzleFile(puzzlePath, body.PuzzleDate, body.PuzzleSize);
+            if (puzzleFile is null)
+                return Results.NotFound(new ErrorResponse("Puzzle not found"));
+
+            var answers = await puzzleCache.GetAnswersAsync(puzzleFile);
+            if (answers is null)
+                return Results.Json(new ErrorResponse("Failed to read puzzle data"), statusCode: 500);
+
+            var letters = new List<string>(body.ClueCells.Length);
+            foreach (var cell in body.ClueCells)
+            {
+                if (cell is not { Length: 2 })
+                    return Results.BadRequest(new ErrorResponse("Invalid clue cell coordinates"));
+
+                var key = $"{cell[0]},{cell[1]}";
+                if (!answers.TryGetValue(key, out var letter) || string.IsNullOrWhiteSpace(letter))
+                    return Results.BadRequest(new ErrorResponse("Clue cells do not map to the puzzle grid"));
+
+                letters.Add(letter.Trim());
+            }
+
+            var resolvedWord = string.Concat(letters).Trim().ToUpperInvariant();
+            if (string.IsNullOrWhiteSpace(resolvedWord))
+                return Results.BadRequest(new ErrorResponse("Could not resolve word from clue cells"));
 
             var request = new ClueFlagCreateRequest(
-                Word: body.Word.Trim().ToUpperInvariant(),
+                Word: resolvedWord,
                 CurrentClue: body.CurrentClue.Trim(),
+                ClueCells: body.ClueCells,
                 SuggestedClue: string.IsNullOrWhiteSpace(body.SuggestedClue) ? null : body.SuggestedClue.Trim(),
                 Reason: string.IsNullOrWhiteSpace(body.Reason) ? null : body.Reason.Trim(),
                 PuzzleDate: body.PuzzleDate,
@@ -70,8 +108,7 @@ internal static class AnalyticsEndpoints
             WordListAdminService wordListService,
             SwedishDictionary dictionary,
             CrosswordGenerator generator,
-            PuzzleWarmupService warmup,
-            CancellationToken ct) =>
+            PuzzleWarmupService warmup) =>
         {
             if (string.IsNullOrWhiteSpace(body.Word))
                 return Results.BadRequest(new ErrorResponse("Word is required"));
@@ -90,7 +127,7 @@ internal static class AnalyticsEndpoints
 
             dictionary.Reload();
             generator.RebuildWordAnalysisCache();
-            await warmup.RegenerateFutureAsync(ct);
+            warmup.QueueFutureRegenerationFromClueChange();
 
             return Results.Ok(new { ok = true, source = "custom", wordListVersion = created.CurrentVersion });
         }).RequireAuthorization("Admin");
@@ -116,8 +153,7 @@ internal static class AnalyticsEndpoints
             WordListAdminService wordListService,
             SwedishDictionary dictionary,
             CrosswordGenerator generator,
-            PuzzleWarmupService warmup,
-            CancellationToken ct) =>
+            PuzzleWarmupService warmup) =>
         {
             var adminUserId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (adminUserId is null)
@@ -167,7 +203,7 @@ internal static class AnalyticsEndpoints
 
                 dictionary.Reload();
                 generator.RebuildWordAnalysisCache();
-                await warmup.RegenerateFutureAsync(ct);
+                warmup.QueueFutureRegenerationFromClueChange();
             }
 
             var resolved = await clueFlagStore.ResolveClueFlagAsync(id, status, resolvedClue, body.AdminNote, adminUserId);

@@ -224,7 +224,7 @@ internal static class PuzzleEndpoints
         return null;
     }
 
-    private static string? ResolvePuzzleFile(string puzzlePath, string puzzleDate, string? size)
+    internal static string? ResolvePuzzleFile(string puzzlePath, string puzzleDate, string? size)
     {
         if (!DateOnly.TryParseExact(puzzleDate, "yyyy-MM-dd", out var parsed))
             return null;

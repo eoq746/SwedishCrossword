@@ -23,6 +23,7 @@
 *.bicep        text eol=crlf
 
 *.sh           text eol=lf
+.githooks/*    text eol=lf
 *.yml          text eol=lf
 *.yaml         text eol=lf
 Dockerfile     text eol=lf
