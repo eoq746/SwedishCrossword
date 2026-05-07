@@ -1328,6 +1328,88 @@ public class ApiIntegrationTests : IAsyncDisposable
         var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
         return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
     }
+
+    // -----------------------------------------------------------------------
+    // External authentication (Google)
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task GoogleLogin_UsesConfiguredPublicOriginInRedirectUri()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Authentication:Google:ClientId", "test-google-client-id");
+            builder.UseSetting("Authentication:Google:ClientSecret", "test-google-client-secret");
+            builder.UseSetting("Authentication:PublicOrigin", "https://www.svensktkorsord.se");
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
+
+        var response = await client.GetAsync("/api/auth/login/google?returnUrl=%2Fapp%2Fprofile");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+        var redirectUri = new Uri(response.Headers.Location!.ToString(), UriKind.Absolute);
+        var query = QueryHelpers.ParseQuery(redirectUri.Query);
+        var callback = Uri.UnescapeDataString(query["redirect_uri"].ToString());
+        await Assert.That(callback).IsEqualTo("https://www.svensktkorsord.se/signin-google");
+    }
+
+    [Test]
+    public async Task GoogleLogin_WithCookieDomain_SetsCorrelationCookieDomain()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Authentication:Google:ClientId", "test-google-client-id");
+            builder.UseSetting("Authentication:Google:ClientSecret", "test-google-client-secret");
+            builder.UseSetting("Authentication:CookieDomain", ".example.test");
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions
+        {
+            AllowAutoRedirect = false,
+            BaseAddress = new Uri("https://www.example.test")
+        });
+
+        var response = await client.GetAsync("/api/auth/login/google?returnUrl=%2Fapp%2Fprofile");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+        var setCookie = response.Headers.GetValues("Set-Cookie").First(x => x.Contains(".AspNetCore.Correlation.", StringComparison.Ordinal));
+        await Assert.That(setCookie.Contains("domain=.example.test", StringComparison.OrdinalIgnoreCase)).IsTrue();
+    }
+
+    [Test]
+    public async Task GoogleLogin_WithoutPublicOrigin_UsesRequestOriginInRedirectUri()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Authentication:Google:ClientId", "test-google-client-id");
+            builder.UseSetting("Authentication:Google:ClientSecret", "test-google-client-secret");
+            builder.UseSetting("Authentication:PublicOrigin", string.Empty);
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions
+        {
+            AllowAutoRedirect = false,
+            BaseAddress = new Uri("http://localhost")
+        });
+
+        var response = await client.GetAsync("/api/auth/login/google?returnUrl=%2Fapp%2Fprofile");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+        var redirectUri = new Uri(response.Headers.Location!.ToString(), UriKind.Absolute);
+        var query = QueryHelpers.ParseQuery(redirectUri.Query);
+        var callback = Uri.UnescapeDataString(query["redirect_uri"].ToString());
+        await Assert.That(callback).IsEqualTo("http://localhost/signin-google");
+    }
+
+    // -----------------------------------------------------------------------
+    // Internal error handling
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task UnknownRoute_ReturnsNotFound()
+    {
+        var response = await Client.GetAsync("/api/404");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
+    }
 }
 
 file record PuzzleDateEntry(string Date, string[] Sizes);

@@ -130,11 +130,16 @@ var authBuilder = builder.Services.AddAuthentication(options =>
     options.SlidingExpiration = true;
     // API endpoints: return 401 instead of redirect (ASP.NET Core 10 does this automatically for minimal APIs)
     options.LoginPath = null;
+
+    var authenticationCookieDomain = builder.Configuration["Authentication:CookieDomain"];
+    if (!string.IsNullOrWhiteSpace(authenticationCookieDomain))
+        options.Cookie.Domain = authenticationCookieDomain;
 });
 
 var googleClientId = builder.Configuration["Authentication:Google:ClientId"];
 var googleClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
 var authenticationPublicOrigin = builder.Configuration["Authentication:PublicOrigin"];
+var authenticationCookieDomain = builder.Configuration["Authentication:CookieDomain"];
 
 static string? BuildExternalRedirectUri(string? publicOrigin, PathString callbackPath)
 {
@@ -177,6 +182,10 @@ if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientS
         options.Scope.Clear();
         options.Scope.Add("openid");
         options.Scope.Add("profile");
+        options.CorrelationCookie.SameSite = SameSiteMode.None;
+        options.CorrelationCookie.SecurePolicy = CookieSecurePolicy.Always;
+        if (!string.IsNullOrWhiteSpace(authenticationCookieDomain))
+            options.CorrelationCookie.Domain = authenticationCookieDomain;
         options.Events.OnRedirectToAuthorizationEndpoint = context =>
         {
             context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
@@ -193,6 +202,10 @@ if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftC
     {
         options.ClientId = microsoftClientId;
         options.ClientSecret = microsoftClientSecret;
+        options.CorrelationCookie.SameSite = SameSiteMode.None;
+        options.CorrelationCookie.SecurePolicy = CookieSecurePolicy.Always;
+        if (!string.IsNullOrWhiteSpace(authenticationCookieDomain))
+            options.CorrelationCookie.Domain = authenticationCookieDomain;
         options.Events.OnRedirectToAuthorizationEndpoint = context =>
         {
             context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
