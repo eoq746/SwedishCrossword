@@ -5,10 +5,15 @@
 # Run:     docker run -p 8080:8080 -v crossword-data:/data svensktkorsord-api
 # ---------------------------------------------------------------------------
 
+# --- Node toolchain stage ---------------------------------------------------
+FROM node:24-bookworm-slim AS node
+
 # --- Build stage -----------------------------------------------------------
 ARG DOTNET_VERSION=10.0
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
 WORKDIR /src
+
+COPY --from=node /usr/local/ /usr/local/
 
 # Copy project files first for better layer caching on restore
 COPY SwedishCrossword.sln ./
@@ -17,7 +22,9 @@ COPY SwedishCrossword.Api/SwedishCrossword.Api.csproj SwedishCrossword.Api/
 COPY SwedishCrossword/SwedishCrossword.csproj SwedishCrossword/
 COPY ClueHandler/ClueHandler.csproj ClueHandler/
 COPY SwedishCrossword.Tests/SwedishCrossword.Tests.csproj SwedishCrossword.Tests/
+COPY frontend/package.json frontend/package-lock.json frontend/
 RUN dotnet restore SwedishCrossword.Api/SwedishCrossword.Api.csproj
+RUN npm ci --prefix frontend
 
 # Copy everything and publish
 COPY . .
