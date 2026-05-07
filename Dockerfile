@@ -10,6 +10,7 @@ ARG NODE_MAJOR=24
 
 # --- Build stage -----------------------------------------------------------
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
+ARG NODE_MAJOR
 WORKDIR /src
 
 RUN apt-get update \
