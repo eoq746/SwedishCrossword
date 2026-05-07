@@ -152,7 +152,18 @@ sealed class PuzzleWarmupService : BackgroundService
     {
         // On every startup regenerate future puzzles so they are rebuilt with the
         // latest generator code after each deployment.
-        await RegenerateFutureAsync(stoppingToken);
+        try
+        {
+            await RegenerateFutureAsync(stoppingToken);
+        }
+        catch (OperationCanceledException) when (stoppingToken.IsCancellationRequested)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Failed to regenerate puzzles at startup, continuing with partial puzzle set");
+        }
 
         var nextEnsureRunAt = _timeProvider.GetUtcNow().AddHours(1);
 

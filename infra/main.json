@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.42.1.51946",
-      "templateHash": "5770932861655682256"
+      "templateHash": "1707236948376655668"
     }
   },
   "parameters": {
@@ -132,6 +132,20 @@
       ],
       "metadata": {
         "description": "Explicit CIDR networks trusted for X-Forwarded-* headers (ForwardedHeaders:TrustedNetworks). Defaults are a bootstrap allowlist for common private ingress ranges in managed Azure paths; tighten after first deploy when exact ranges are known."
+      }
+    },
+    "customDomainName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Custom domain name for the Container App (e.g., svensktkorsord.se). Leave empty to skip custom domain setup."
+      }
+    },
+    "wwwDomainName": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "WWW subdomain for the Container App (e.g., www.svensktkorsord.se). Leave empty to skip."
       }
     },
     "hasSubmissionTokenSecret": {
@@ -528,6 +542,34 @@
       ]
     },
     {
+      "condition": "[not(equals(parameters('customDomainName'), ''))]",
+      "type": "Microsoft.App/managedEnvironments/managedCertificates",
+      "apiVersion": "2024-03-01",
+      "name": "[format('{0}/{1}', format('{0}-env', parameters('appName')), format('mc-{0}-apex-{1}', parameters('appName'), uniqueString(parameters('customDomainName'))))]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "domainControlValidation": "HTTP",
+        "subjectName": "[parameters('customDomainName')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]"
+      ]
+    },
+    {
+      "condition": "[not(equals(parameters('wwwDomainName'), ''))]",
+      "type": "Microsoft.App/managedEnvironments/managedCertificates",
+      "apiVersion": "2024-03-01",
+      "name": "[format('{0}/{1}', format('{0}-env', parameters('appName')), 'mc-svensktkorsord-www-svensktkorso-5437')]",
+      "location": "[parameters('location')]",
+      "properties": {
+        "domainControlValidation": "CNAME",
+        "subjectName": "[parameters('wwwDomainName')]"
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]"
+      ]
+    },
+    {
       "type": "Microsoft.App/containerApps",
       "apiVersion": "2024-03-01",
       "name": "[parameters('appName')]",
@@ -545,7 +587,8 @@
             "external": true,
             "targetPort": 8080,
             "transport": "auto",
-            "allowInsecure": false
+            "allowInsecure": false,
+            "customDomains": "[concat(if(not(equals(parameters('wwwDomainName'), '')), createArray(createObject('name', parameters('wwwDomainName'), 'bindingType', 'SniEnabled', 'certificateId', resourceId('Microsoft.App/managedEnvironments/managedCertificates', format('{0}-env', parameters('appName')), 'mc-svensktkorsord-www-svensktkorso-5437'))), createArray()), if(not(equals(parameters('customDomainName'), '')), createArray(createObject('name', parameters('customDomainName'), 'bindingType', 'SniEnabled', 'certificateId', resourceId('Microsoft.App/managedEnvironments/managedCertificates', format('{0}-env', parameters('appName')), format('mc-{0}-apex-{1}', parameters('appName'), uniqueString(parameters('customDomainName')))))), createArray()))]"
           },
           "secrets": "[union(if(parameters('hasSubmissionTokenSecret'), createArray(createObject('name', 'submissiontoken-secret', 'keyVaultUrl', format('{0}secrets/submissiontoken-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()), if(parameters('hasGoogleAuth'), createArray(createObject('name', 'google-client-id', 'keyVaultUrl', format('{0}secrets/google-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))), createObject('name', 'google-client-secret', 'keyVaultUrl', format('{0}secrets/google-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()), if(parameters('hasMicrosoftAuth'), createArray(createObject('name', 'microsoft-client-id', 'keyVaultUrl', format('{0}secrets/microsoft-client-id', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))), createObject('name', 'microsoft-client-secret', 'keyVaultUrl', format('{0}secrets/microsoft-client-secret', reference(resourceId('Microsoft.KeyVault/vaults', variables('kvName')), '2024-04-01-preview').vaultUri), 'identity', resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id))))), createArray()))]",
           "registries": [
@@ -589,11 +632,13 @@
       },
       "dependsOn": [
         "[resourceId('Microsoft.ContainerRegistry/registries', take(variables('acrNameFinal'), 50))]",
+        "[resourceId('Microsoft.App/managedEnvironments/managedCertificates', format('{0}-env', parameters('appName')), format('mc-{0}-apex-{1}', parameters('appName'), uniqueString(parameters('customDomainName'))))]",
         "[resourceId('Microsoft.App/managedEnvironments', format('{0}-env', parameters('appName')))]",
         "[resourceId('Microsoft.App/managedEnvironments/storages', format('{0}-env', parameters('appName')), 'crossworddata')]",
         "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', format('{0}-identity-{1}', parameters('appName'), uniqueString(subscription().id)))]",
         "[resourceId('Microsoft.Sql/servers', take(variables('sqlServerName'), 63))]",
-        "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]"
+        "[resourceId('Microsoft.KeyVault/vaults', variables('kvName'))]",
+        "[resourceId('Microsoft.App/managedEnvironments/managedCertificates', format('{0}-env', parameters('appName')), 'mc-svensktkorsord-www-svensktkorso-5437')]"
       ]
     },
     {
