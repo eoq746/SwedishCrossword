@@ -69,12 +69,11 @@ internal class ApiTestFixture : IAsyncDisposable
                 builder.UseSetting("Storage:LeaderboardPath", leaderboardPath);
                 builder.ConfigureServices(services =>
                 {
-                    var warmupRegistrations = services
-                        .Where(d => d.ServiceType == typeof(IHostedService)
-                            && d.ImplementationType == typeof(PuzzleWarmupService))
+                    var hostedServiceRegistrations = services
+                        .Where(d => d.ServiceType == typeof(IHostedService))
                         .ToList();
 
-                    foreach (var registration in warmupRegistrations)
+                    foreach (var registration in hostedServiceRegistrations)
                     {
                         services.Remove(registration);
                     }
