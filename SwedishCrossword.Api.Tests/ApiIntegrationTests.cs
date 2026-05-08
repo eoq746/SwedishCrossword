@@ -98,6 +98,27 @@ public class ApiIntegrationTests : IAsyncDisposable
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
     }
 
+    [Test]
+    public async Task Csrf_PostWithAuthCookieAndConfiguredAllowedOrigin_ReturnsOk()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Cors:AllowedOrigins:0", "https://www.svensktkorsord.se");
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions
+        {
+            BaseAddress = new Uri("http://localhost")
+        });
+
+        using var request = new HttpRequestMessage(HttpMethod.Post, "/api/auth/logout");
+        request.Headers.Add("Cookie", ".Crossword.Auth=test-cookie");
+        request.Headers.TryAddWithoutValidation("Origin", "https://www.svensktkorsord.se");
+
+        var response = await client.SendAsync(request);
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
     // -----------------------------------------------------------------------
     // Stats
     // -----------------------------------------------------------------------
