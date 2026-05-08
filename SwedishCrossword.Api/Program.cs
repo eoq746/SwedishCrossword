@@ -334,6 +334,35 @@ builder.Services.AddRateLimiter(options =>
 
 // CORS — configurable via Cors:AllowedOrigins in appsettings (use ["*"] to allow all)
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+
+static string BuildOriginKey(string scheme, string host, int port)
+{
+    var isDefaultPort = (string.Equals(scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase) && port == 443)
+        || (string.Equals(scheme, Uri.UriSchemeHttp, StringComparison.OrdinalIgnoreCase) && port == 80);
+    return isDefaultPort ? $"{scheme}://{host}" : $"{scheme}://{host}:{port}";
+}
+
+static string? TryBuildOriginKey(string? origin)
+{
+    if (string.IsNullOrWhiteSpace(origin) || !Uri.TryCreate(origin, UriKind.Absolute, out var uri))
+        return null;
+
+    var port = uri.IsDefaultPort
+        ? (string.Equals(uri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase) ? 443 : 80)
+        : uri.Port;
+    return BuildOriginKey(uri.Scheme, uri.Host, port);
+}
+
+var trustedCsrfOrigins = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+if (allowedOrigins is { Length: > 0 })
+{
+    foreach (var allowedOrigin in allowedOrigins)
+    {
+        var originKey = TryBuildOriginKey(allowedOrigin);
+        if (originKey is not null)
+            trustedCsrfOrigins.Add(originKey);
+    }
+}
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -500,7 +529,7 @@ app.Use(async (context, next) =>
     await next();
 });
 
-static bool IsSameOriginHeader(string? headerValue, HttpContext context)
+static bool IsSameOriginHeader(string? headerValue, HttpContext context, IReadOnlySet<string> trustedOrigins)
 {
     if (string.IsNullOrWhiteSpace(headerValue) || string.Equals(headerValue, "null", StringComparison.OrdinalIgnoreCase))
         return false;
@@ -510,10 +539,16 @@ static bool IsSameOriginHeader(string? headerValue, HttpContext context)
 
     var requestScheme = context.Request.Scheme;
     if (!string.Equals(uri.Scheme, requestScheme, StringComparison.OrdinalIgnoreCase))
-        return false;
+    {
+        var headerOriginKey = TryBuildOriginKey(headerValue);
+        return headerOriginKey is not null && trustedOrigins.Contains(headerOriginKey);
+    }
 
     if (!string.Equals(uri.Host, context.Request.Host.Host, StringComparison.OrdinalIgnoreCase))
-        return false;
+    {
+        var headerOriginKey = TryBuildOriginKey(headerValue);
+        return headerOriginKey is not null && trustedOrigins.Contains(headerOriginKey);
+    }
 
     var expectedPort = context.Request.Host.Port
         ?? (string.Equals(requestScheme, "https", StringComparison.OrdinalIgnoreCase) ? 443 : 80);
@@ -521,7 +556,11 @@ static bool IsSameOriginHeader(string? headerValue, HttpContext context)
         ? (string.Equals(uri.Scheme, "https", StringComparison.OrdinalIgnoreCase) ? 443 : 80)
         : uri.Port;
 
-    return sourcePort == expectedPort;
+    if (sourcePort == expectedPort)
+        return true;
+
+    var originKey = TryBuildOriginKey(headerValue);
+    return originKey is not null && trustedOrigins.Contains(originKey);
 }
 
 // CSRF protection: require same-origin Origin/Referer (or safe Fetch Metadata)
@@ -538,7 +577,8 @@ app.Use(async (context, next) =>
             var origin = context.Request.Headers.Origin.FirstOrDefault();
             var referer = context.Request.Headers.Referer.FirstOrDefault();
             var hasOriginSignals = !string.IsNullOrWhiteSpace(origin) || !string.IsNullOrWhiteSpace(referer);
-            var sameOriginSignals = IsSameOriginHeader(origin, context) || IsSameOriginHeader(referer, context);
+            var sameOriginSignals = IsSameOriginHeader(origin, context, trustedCsrfOrigins)
+                || IsSameOriginHeader(referer, context, trustedCsrfOrigins);
 
             var secFetchSite = context.Request.Headers["Sec-Fetch-Site"].FirstOrDefault();
             var fetchMetadataSafe = string.IsNullOrWhiteSpace(secFetchSite)
