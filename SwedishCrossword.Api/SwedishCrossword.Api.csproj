@@ -15,10 +15,10 @@
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.21.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.27.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="10.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="10.0.7" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="10.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="10.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.8" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.8" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
     <!-- Provides the Active Directory authentication providers (Managed Identity, Default, etc.)
          that were removed from the core Microsoft.Data.SqlClient package in 6.0+. -->
