@@ -148,7 +148,7 @@ public class ApiIntegrationTests : IAsyncDisposable
         // Verify basic XML structure
         await Assert.That(content).StartsWith("""<?xml version="1.0" encoding="UTF-8"?>""");
         await Assert.That(content).Contains("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">");
-        await Assert.That(content).EndsWith("</urlset>\r\n");
+        await Assert.That(content.TrimEnd()).EndsWith("</urlset>");
 
         // Should not throw when parsed
         using var reader = new StringReader(content);
