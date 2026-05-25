@@ -540,6 +540,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
 
   const submitScore = useCallback(async () => {
     if (!puzzle || !puzzleHash || !puzzleDate || hasSubmittedScore) return;
+    setHasSubmittedScore(true);
 
     const trimmed = username.trim();
     const name = (trimmed || user?.alias || user?.name || 'Anonym').slice(0, 20);
@@ -594,7 +595,6 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       saveLocalLeaderboard(puzzleDate, puzzleHash, local);
     }
 
-    setHasSubmittedScore(true);
     setUsernameModalOpen(false);
   }, [
     hasSubmittedScore,
