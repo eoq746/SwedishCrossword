@@ -1466,23 +1466,28 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         AddParam(cmd, "@uid", userId);
 
         var pending = new List<(string Id, string FriendAlias, string Date, string PuzzleSize, string Status, string Direction, long CreatedAt, long? RespondedAt, string FromUserId, string ToUserId, string CurrentUserAlias, string FriendUserAlias)>();
-        await using var reader = await cmd.ExecuteReaderAsync();
-        while (await reader.ReadAsync())
+        await using (var reader = await cmd.ExecuteReaderAsync())
         {
-            pending.Add((
-                Id: reader.GetString(0),
-                FriendAlias: reader.IsDBNull(1) ? "Okänd" : reader.GetString(1),
-                Date: reader.GetString(2),
-                PuzzleSize: reader.IsDBNull(3) ? string.Empty : reader.GetString(3),
-                Status: reader.GetString(4),
-                Direction: reader.GetString(5),
-                CreatedAt: reader.GetInt64(6),
-                RespondedAt: reader.IsDBNull(7) ? null : reader.GetInt64(7),
-                FromUserId: reader.GetString(8),
-                ToUserId: reader.GetString(9),
-                CurrentUserAlias: reader.GetString(reader.GetString(5) == "incoming" ? 11 : 10),
-                FriendUserAlias: reader.GetString(reader.GetString(5) == "incoming" ? 10 : 11)
-            ));
+            while (await reader.ReadAsync())
+            {
+                var direction = reader.GetString(5);
+                var fromAlias = reader.IsDBNull(10) ? "Okänd" : reader.GetString(10);
+                var toAlias = reader.IsDBNull(11) ? "Okänd" : reader.GetString(11);
+                pending.Add((
+                    Id: reader.GetString(0),
+                    FriendAlias: reader.IsDBNull(1) ? "Okänd" : reader.GetString(1),
+                    Date: reader.GetString(2),
+                    PuzzleSize: reader.IsDBNull(3) ? string.Empty : reader.GetString(3),
+                    Status: reader.GetString(4),
+                    Direction: direction,
+                    CreatedAt: reader.GetInt64(6),
+                    RespondedAt: reader.IsDBNull(7) ? null : reader.GetInt64(7),
+                    FromUserId: reader.GetString(8),
+                    ToUserId: reader.GetString(9),
+                    CurrentUserAlias: direction == "incoming" ? toAlias : fromAlias,
+                    FriendUserAlias: direction == "incoming" ? fromAlias : toAlias
+                ));
+            }
         }
 
         var solveMap = await LoadChallengeSolveMapAsync(conn, userId, pending);

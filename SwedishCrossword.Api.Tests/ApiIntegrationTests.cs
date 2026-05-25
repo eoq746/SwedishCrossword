@@ -1236,6 +1236,41 @@ public class ApiIntegrationTests : IAsyncDisposable
     }
 
     [Test]
+    public async Task FriendsChallenges_List_WithChallengeData_ReturnsOk()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        var profileStore = authFixture.Factory.Services.GetRequiredService<IUserProfileStore>();
+        var friendStore = authFixture.Factory.Services.GetRequiredService<IFriendStore>();
+        var historyStore = authFixture.Factory.Services.GetRequiredService<IHistoryStore>();
+
+        var me = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/auth/me");
+        var senderUser = me.GetProperty("userId").GetString()!;
+        var friendUser = await profileStore.ResolveCanonicalUserIdAsync("friend-user-2", null);
+        await profileStore.SetAliasAsync(senderUser, "JockeB");
+        await profileStore.SetAliasAsync(friendUser, "Bob");
+
+        var (sent, _) = await friendStore.SendFriendRequestAsync(senderUser, friendUser);
+        await Assert.That(sent).IsTrue();
+        var requests = await friendStore.GetPendingRequestsAsync(friendUser);
+        await friendStore.AcceptFriendRequestAsync(requests[0].Id, friendUser);
+
+        var friendshipId = (await friendStore.GetFriendsAsync(senderUser))[0].FriendId;
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        var (created, _) = await friendStore.CreateChallengeAsync(senderUser, friendshipId, date, "17x17");
+        await Assert.That(created).IsTrue();
+
+        await historyStore.AppendHistoryAsync(date, new HistoryRecord("JockeB", 240.0, 1000L, "h1", "17x17", 0, 0, senderUser));
+        await historyStore.AppendHistoryAsync(date, new HistoryRecord("Bob", 300.0, 1001L, "h1", "17x17", 1, 0, friendUser));
+
+        var response = await authFixture.Client.GetAsync("/api/friends/challenges");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(payload.ValueKind).IsEqualTo(JsonValueKind.Array);
+        await Assert.That(payload.GetArrayLength()).IsEqualTo(1);
+    }
+
+    [Test]
     public async Task FriendsChallenges_Create_Unauthenticated_ReturnsUnauthorized()
     {
         var response = await Client.PostAsJsonAsync("/api/friends/challenges", new
