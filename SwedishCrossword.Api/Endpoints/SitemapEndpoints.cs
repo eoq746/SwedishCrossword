@@ -18,8 +18,7 @@ internal static class SitemapEndpoints
             return Results.Content(xml, "application/xml; charset=utf-8");
         })
         .CacheOutput("sitemap")
-        .WithName("GetSitemap")
-        .WithOpenApi();
+        .WithName("GetSitemap");
 
         return app;
     }
@@ -64,11 +63,11 @@ internal static class SitemapEndpoints
 
     private static void AddUrlEntry(StringBuilder sb, string path, string lastmod, string changefreq, double priority)
     {
-        sb.AppendLine("  <url>");
-        sb.AppendLine($"    <loc>https://www.svensktkorsord.se{path}</loc>");
-        sb.AppendLine($"    <lastmod>{lastmod}</lastmod>");
-        sb.AppendLine($"    <changefreq>{changefreq}</changefreq>");
-        sb.AppendLine($"    <priority>{priority.ToString("F1", CultureInfo.InvariantCulture)}</priority>");
-        sb.AppendLine("  </url>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"  <url>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"    <loc>https://www.svensktkorsord.se{path}</loc>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"    <lastmod>{lastmod}</lastmod>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"    <changefreq>{changefreq}</changefreq>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"    <priority>{priority.ToString("F1", CultureInfo.InvariantCulture)}</priority>");
+        sb.AppendLine(CultureInfo.InvariantCulture, $"  </url>");
     }
 }

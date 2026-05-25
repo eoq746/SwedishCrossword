@@ -152,15 +152,18 @@ Example:
 
 #### Sitemaps
 
-Three sitemap files for comprehensive coverage:
+A single comprehensive sitemap for coverage:
 
 | Sitemap | Purpose | Content |
 |---------|---------|---------|
-| `sitemap.xml` | Main static pages | Homepage, play, puzzle, leaderboard, calendar, about, contact, privacy |
-| `sitemap-static.xml` | Legal/static pages | About, contact, privacy policy |
-| `sitemap-puzzles.xml` | Dynamic puzzle URLs | Generated endpoint (`/sitemap-puzzles.xml`) lists all available puzzle dates |
+| `sitemap.xml` | All public pages | Homepage, play, puzzle, leaderboard, calendar, about, contact, privacy |
 
-All entries include proper change frequencies and priorities for optimal crawling.
+The sitemap includes proper change frequencies and priorities for optimal crawling:
+- **Daily**: Homepage, Puzzle, Calendar (high traffic, frequently updated)
+- **Hourly**: Leaderboard (scores update constantly)
+- **Weekly**: Play page (stable entry point)
+- **Monthly**: Static info (about, contact)
+- **Yearly**: Privacy policy (legal, rarely changes)
 
 #### RSS Feed (`/feed.xml`)
 
