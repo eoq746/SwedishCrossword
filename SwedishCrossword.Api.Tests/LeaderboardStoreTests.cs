@@ -957,7 +957,7 @@ public class LeaderboardStoreTests
         var friendshipId = friends[0].FriendId;
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
 
-        var (success, error) = await _store.CreateChallengeAsync("user1", friendshipId, date);
+        var (success, error) = await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
 
         await Assert.That(success).IsTrue();
         await Assert.That(error).IsEqualTo(string.Empty);
@@ -966,10 +966,11 @@ public class LeaderboardStoreTests
         await Assert.That(forUser2.Count).IsEqualTo(1);
         await Assert.That(forUser2[0].Direction).IsEqualTo("incoming");
         await Assert.That(forUser2[0].Status).IsEqualTo("pending");
+        await Assert.That(forUser2[0].PuzzleSize).IsEqualTo("15x15");
     }
 
     [Test]
-    public async Task CreateChallengeAsync_DuplicatePendingSameDate_Fails()
+    public async Task CreateChallengeAsync_DuplicatePendingSameDateAndSize_Fails()
     {
         await _store.SetAliasAsync("user1", "Alice");
         await _store.SetAliasAsync("user2", "Bob");
@@ -981,10 +982,57 @@ public class LeaderboardStoreTests
         var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
 
-        await _store.CreateChallengeAsync("user1", friendshipId, date);
-        var (success, _) = await _store.CreateChallengeAsync("user1", friendshipId, date);
+        await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
+        var (success, _) = await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
 
         await Assert.That(success).IsFalse();
+    }
+
+    [Test]
+    public async Task CreateChallengeAsync_SameDateDifferentSize_Succeeds()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+
+        var first = await _store.CreateChallengeAsync("user1", friendshipId, date, "10x10");
+        var second = await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
+
+        await Assert.That(first.Success).IsTrue();
+        await Assert.That(second.Success).IsTrue();
+    }
+
+    [Test]
+    public async Task CreateChallengesAsync_AllowsBulkCreateAndSkipsDuplicates()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SetAliasAsync("user3", "Cara");
+
+        await _store.SendFriendRequestAsync("user1", "user2");
+        await _store.SendFriendRequestAsync("user1", "user3");
+
+        var requests2 = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests2[0].Id, "user2");
+        var requests3 = await _store.GetPendingRequestsAsync("user3");
+        await _store.AcceptFriendRequestAsync(requests3[0].Id, "user3");
+
+        var friendships = await _store.GetFriendsAsync("user1");
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+
+        var first = await _store.CreateChallengesAsync("user1", [.. friendships.Select(f => f.FriendId).Distinct(StringComparer.Ordinal)], date, "17x17");
+        var second = await _store.CreateChallengesAsync("user1", [.. friendships.Select(f => f.FriendId).Distinct(StringComparer.Ordinal)], date, "17x17");
+
+        await Assert.That(first.Sent).IsEqualTo(2);
+        await Assert.That(first.Skipped).IsEqualTo(0);
+        await Assert.That(second.Sent).IsEqualTo(0);
+        await Assert.That(second.Skipped).IsEqualTo(2);
     }
 
     // -----------------------------------------------------------------------
@@ -1003,7 +1051,7 @@ public class LeaderboardStoreTests
 
         var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
-        await _store.CreateChallengeAsync("user1", friendshipId, date);
+        await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
 
         var challenge = (await _store.GetChallengesAsync("user2")).Single();
 
@@ -1015,6 +1063,114 @@ public class LeaderboardStoreTests
 
         var updated = (await _store.GetChallengesAsync("user2")).Single();
         await Assert.That(updated.Status).IsEqualTo("accepted");
+    }
+
+    // -----------------------------------------------------------------------
+    // Challenges — computed results
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task GetChallengesAsync_NoHintSolve_BeatsFasterHintedSolve()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
+        var challenge = (await _store.GetChallengesAsync("user2")).Single();
+        await _store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
+
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Alice", 300, 1L, "h1", "15x15", 0, 0, "user1"));
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Bob", 120, 2L, "h2", "15x15", 1, 0, "user2"));
+
+        var updated = (await _store.GetChallengesAsync("user1")).Single();
+        await Assert.That(updated.ResultStatus).IsEqualTo("completed");
+        await Assert.That(updated.WinnerAlias).IsEqualTo("Alice");
+        await Assert.That(updated.ResultReason).IsEqualTo("Färre bokstavsledtrådar");
+    }
+
+    [Test]
+    public async Task GetChallengesAsync_FewerWordHints_BeatsLetterHintsOnlyComparison()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        await _store.CreateChallengeAsync("user1", friendshipId, date, "10x10");
+        var challenge = (await _store.GetChallengesAsync("user2")).Single();
+        await _store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
+
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Alice", 400, 1L, "h1", "10x10", 3, 0, "user1"));
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Bob", 100, 2L, "h2", "10x10", 0, 1, "user2"));
+
+        var updated = (await _store.GetChallengesAsync("user1")).Single();
+        await Assert.That(updated.WinnerAlias).IsEqualTo("Alice");
+        await Assert.That(updated.ResultReason).IsEqualTo("Färre ordledtrådar");
+    }
+
+    [Test]
+    public async Task GetChallengesAsync_FasterTime_BreaksTieWhenHintsMatch()
+    {
+        await _store.SetAliasAsync("user1", "Alice");
+        await _store.SetAliasAsync("user2", "Bob");
+        await _store.SendFriendRequestAsync("user1", "user2");
+        var requests = await _store.GetPendingRequestsAsync("user2");
+        await _store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+        var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
+        await _store.CreateChallengeAsync("user1", friendshipId, date, "17x17");
+        var challenge = (await _store.GetChallengesAsync("user2")).Single();
+        await _store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
+
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Alice", 240, 1L, "h1", "17x17", 1, 0, "user1"));
+        await _store.AppendHistoryAsync(date, new HistoryRecord("Bob", 180, 2L, "h2", "17x17", 1, 0, "user2"));
+
+        var updated = (await _store.GetChallengesAsync("user1")).Single();
+        await Assert.That(updated.WinnerAlias).IsEqualTo("Bob");
+        await Assert.That(updated.ResultReason).IsEqualTo("Snabbare tid");
+    }
+
+    [Test]
+    public async Task GetChallengesAsync_ExpiredWithoutBothSolves_MarksExpired()
+    {
+        var frozen = new FakeTimeProvider();
+        frozen.SetUtcNow(new DateTimeOffset(2025, 1, 20, 12, 0, 0, TimeSpan.Zero));
+        var tempDir = Path.Combine(Path.GetTempPath(), "sc-test-store-expired-" + Guid.NewGuid());
+        Directory.CreateDirectory(tempDir);
+        using var store = CreateStore(tempDir, frozen);
+
+        try
+        {
+            await store.SetAliasAsync("user1", "Alice");
+            await store.SetAliasAsync("user2", "Bob");
+            await store.SendFriendRequestAsync("user1", "user2");
+            var requests = await store.GetPendingRequestsAsync("user2");
+            await store.AcceptFriendRequestAsync(requests[0].Id, "user2");
+
+            var friendshipId = (await store.GetFriendsAsync("user1"))[0].FriendId;
+            await store.CreateChallengeAsync("user1", friendshipId, "2025-01-18", "15x15");
+            var challenge = (await store.GetChallengesAsync("user2")).Single();
+            await store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
+            await store.AppendHistoryAsync("2025-01-18", new HistoryRecord("Alice", 200, 1L, "h1", "15x15", 0, 0, "user1"));
+
+            var updated = (await store.GetChallengesAsync("user1")).Single();
+            await Assert.That(updated.ResultStatus).IsEqualTo("expired");
+            await Assert.That(updated.WinnerAlias).IsNull();
+        }
+        finally
+        {
+            if (Directory.Exists(tempDir))
+                Directory.Delete(tempDir, true);
+        }
     }
 
     // -----------------------------------------------------------------------
@@ -1103,7 +1259,7 @@ public class LeaderboardStoreTests
         await Assert.That(stats.PerSize).IsNull();
     }
 
-    private static LeaderboardStore CreateStore(string dataDir)
+    private static LeaderboardStore CreateStore(string dataDir, TimeProvider? timeProvider = null)
     {
         var config = new ConfigurationBuilder()
             .AddInMemoryCollection(new Dictionary<string, string?>
@@ -1111,13 +1267,22 @@ public class LeaderboardStoreTests
                 ["Storage:LeaderboardPath"] = dataDir
             })
             .Build();
-        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, TimeProvider.System, new TestHostEnvironment());
+        return new LeaderboardStore(config, NullLogger<LeaderboardStore>.Instance, timeProvider ?? TimeProvider.System, new TestHostEnvironment());
     }
 
     private static DateOnly GetSwedishDate()
     {
         var tz = TimeZoneInfo.FindSystemTimeZoneById("Europe/Stockholm");
         return DateOnly.FromDateTime(TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, tz));
+    }
+
+    private sealed class FakeTimeProvider : TimeProvider
+    {
+        private DateTimeOffset _utcNow = DateTimeOffset.UtcNow;
+
+        public void SetUtcNow(DateTimeOffset utcNow) => _utcNow = utcNow;
+
+        public override DateTimeOffset GetUtcNow() => _utcNow;
     }
 
     private sealed class TestHostEnvironment : IHostEnvironment

@@ -44,9 +44,25 @@ record FriendRequestDto(string Alias);
 record FriendInfo(string Alias, string FriendId);
 record FriendRequestInfo(string Id, string FromAlias, string ToAlias, string Direction, string Status, long CreatedAt);
 record FriendsLeaderboardEntry(string Name, double Time, long? Timestamp, string? PuzzleHash, int HintsUsed = 0, int WordHintsUsed = 0);
-record FriendChallengeCreateRequest(string FriendId, string Date);
+record FriendChallengeCreateRequest(string FriendId, string Date, string PuzzleSize);
+record FriendChallengesCreateRequest(string Date, string PuzzleSize, string[]? FriendIds = null, bool AllFriends = false);
+record FriendChallengesCreateResponse(int Sent, int Skipped);
 record FriendChallengeRespondRequest(bool Accepted);
-record FriendChallengeInfo(string Id, string FriendAlias, string Date, string Status, string Direction, long CreatedAt, long? RespondedAt);
+record FriendChallengeSolveSummary(string PlayerAlias, double Time, int HintsUsed, int WordHintsUsed);
+record FriendChallengeInfo(
+    string Id,
+    string FriendAlias,
+    string Date,
+    string PuzzleSize,
+    string Status,
+    string Direction,
+    long CreatedAt,
+    long? RespondedAt,
+    string? ResultStatus = null,
+    string? WinnerAlias = null,
+    string? ResultReason = null,
+    FriendChallengeSolveSummary? CurrentUserSolve = null,
+    FriendChallengeSolveSummary? FriendSolve = null);
 
 // GDPR data export
 record UserDataExport(string UserId, string? Alias, List<UserSolveRecord> History, List<UserScoreExport> Scores, List<string> Friends);

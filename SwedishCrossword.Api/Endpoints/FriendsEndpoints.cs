@@ -42,6 +42,34 @@ internal static class FriendsEndpoints
             return Results.Ok(challenges);
         });
 
+        static bool TryValidateChallengeContext(string date, string puzzleSize, TimeProvider timeProvider, out IResult? error)
+        {
+            error = null;
+            if (!LeaderboardStore.DatePattern.IsMatch(date) ||
+                !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var challengeDate))
+            {
+                error = Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
+                return false;
+            }
+
+            if (string.IsNullOrWhiteSpace(puzzleSize))
+            {
+                error = Results.BadRequest(new ErrorResponse("Storlek saknas"));
+                return false;
+            }
+
+            var today = timeProvider.GetSwedishDate();
+            var minDate = today.AddDays(-365);
+            var maxDate = today.AddDays(30);
+            if (challengeDate < minDate || challengeDate > maxDate)
+            {
+                error = Results.BadRequest(new ErrorResponse("Datumet för utmaningen ligger utanför tillåtet intervall"));
+                return false;
+            }
+
+            return true;
+        }
+
         // Create challenge for an accepted friendship
         group.MapPost("/challenges", async (FriendChallengeCreateRequest body, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore, TimeProvider timeProvider) =>
         {
@@ -52,21 +80,36 @@ internal static class FriendsEndpoints
             if (string.IsNullOrWhiteSpace(body.FriendId))
                 return Results.BadRequest(new ErrorResponse("Vänskap saknas"));
 
-            if (!LeaderboardStore.DatePattern.IsMatch(body.Date) ||
-                !DateOnly.TryParseExact(body.Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var challengeDate))
-                return Results.BadRequest(new ErrorResponse("Ogiltigt datumformat"));
+            if (!TryValidateChallengeContext(body.Date, body.PuzzleSize, timeProvider, out var errorResult))
+                return errorResult!;
 
-            var today = timeProvider.GetSwedishDate();
-            var minDate = today.AddDays(-365);
-            var maxDate = today.AddDays(30);
-            if (challengeDate < minDate || challengeDate > maxDate)
-                return Results.BadRequest(new ErrorResponse("Datumet för utmaningen ligger utanför tillåtet intervall"));
-
-            var (success, error) = await store.CreateChallengeAsync(userId, body.FriendId, body.Date);
+            var (success, error) = await store.CreateChallengeAsync(userId, body.FriendId, body.Date, body.PuzzleSize);
             if (!success)
                 return Results.Conflict(new ErrorResponse(error));
 
             return Results.Ok(new { ok = true });
+        });
+
+        // Create challenges for selected friends or all friends
+        group.MapPost("/challenges/bulk", async (FriendChallengesCreateRequest body, ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore, TimeProvider timeProvider) =>
+        {
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            if (!TryValidateChallengeContext(body.Date, body.PuzzleSize, timeProvider, out var errorResult))
+                return errorResult!;
+
+            var friends = await store.GetFriendsAsync(userId);
+            var targetFriendIds = body.AllFriends
+                ? [.. friends.Select(f => f.FriendId).Distinct(StringComparer.Ordinal)]
+                : (body.FriendIds ?? []).Where(id => !string.IsNullOrWhiteSpace(id)).Distinct(StringComparer.Ordinal).ToArray();
+
+            if (targetFriendIds.Length == 0)
+                return Results.BadRequest(new ErrorResponse("Inga vänner valda"));
+
+            var result = await store.CreateChallengesAsync(userId, targetFriendIds, body.Date, body.PuzzleSize);
+            return Results.Ok(result);
         });
 
         // Respond to challenge (incoming only)

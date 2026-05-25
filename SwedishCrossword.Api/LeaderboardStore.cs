@@ -1325,69 +1325,99 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return list;
     }
 
-    public async Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date)
+    public async Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date, string puzzleSize)
     {
+        var result = await CreateChallengesAsync(fromUserId, [friendRequestId], date, puzzleSize);
+        return result.Sent > 0
+            ? (true, string.Empty)
+            : (false, result.Skipped > 0 ? "Du har redan en väntande utmaning till den här vännen för datumet och storleken" : "Kunde inte skapa utmaning");
+    }
+
+    public async Task<FriendChallengesCreateResponse> CreateChallengesAsync(string fromUserId, IReadOnlyCollection<string> friendRequestIds, string date, string puzzleSize)
+    {
+        if (friendRequestIds.Count == 0)
+            return new FriendChallengesCreateResponse(0, 0);
+
         await using var conn = await OpenConnectionAsync();
+        var sent = 0;
+        var skipped = 0;
 
-        string? toUserId = null;
-        await using (var friendshipCmd = conn.CreateCommand())
+        foreach (var friendRequestId in friendRequestIds)
         {
-            friendshipCmd.CommandText = """
-                SELECT from_user_id, to_user_id
-                FROM friend_requests
-                WHERE id = @id AND status = 'accepted'
-                  AND (from_user_id = @me OR to_user_id = @me)
+            string? toUserId = null;
+            await using (var friendshipCmd = conn.CreateCommand())
+            {
+                friendshipCmd.CommandText = """
+                    SELECT from_user_id, to_user_id
+                    FROM friend_requests
+                    WHERE id = @id AND status = 'accepted'
+                      AND (from_user_id = @me OR to_user_id = @me)
+                    """;
+                AddParam(friendshipCmd, "@id", friendRequestId);
+                AddParam(friendshipCmd, "@me", fromUserId);
+
+                await using var reader = await friendshipCmd.ExecuteReaderAsync();
+                if (!await reader.ReadAsync())
+                {
+                    skipped++;
+                    continue;
+                }
+
+                var first = reader.GetString(0);
+                var second = reader.GetString(1);
+                toUserId = string.Equals(first, fromUserId, StringComparison.Ordinal) ? second : first;
+            }
+
+            if (string.IsNullOrWhiteSpace(toUserId))
+            {
+                skipped++;
+                continue;
+            }
+
+            await using (var dedup = conn.CreateCommand())
+            {
+                dedup.CommandText = """
+                    SELECT COUNT(1)
+                    FROM friend_challenges
+                    WHERE friendship_id = @fid
+                      AND from_user_id = @from
+                      AND to_user_id = @to
+                      AND challenge_date = @date
+                      AND puzzle_size = @puzzleSize
+                      AND status = 'pending'
+                    """;
+                AddParam(dedup, "@fid", friendRequestId);
+                AddParam(dedup, "@from", fromUserId);
+                AddParam(dedup, "@to", toUserId);
+                AddParam(dedup, "@date", date);
+                AddParam(dedup, "@puzzleSize", puzzleSize);
+
+                var exists = Convert.ToInt64(await dedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture) > 0;
+                if (exists)
+                {
+                    skipped++;
+                    continue;
+                }
+            }
+
+            await using var insert = conn.CreateCommand();
+            insert.CommandText = """
+                INSERT INTO friend_challenges (id, friendship_id, from_user_id, to_user_id, challenge_date, puzzle_size, status, created_at, responded_at)
+                VALUES (@id, @fid, @from, @to, @date, @puzzleSize, 'pending', @created, NULL)
                 """;
-            AddParam(friendshipCmd, "@id", friendRequestId);
-            AddParam(friendshipCmd, "@me", fromUserId);
+            AddParam(insert, "@id", Guid.NewGuid().ToString("N"));
+            AddParam(insert, "@fid", friendRequestId);
+            AddParam(insert, "@from", fromUserId);
+            AddParam(insert, "@to", toUserId);
+            AddParam(insert, "@date", date);
+            AddParam(insert, "@puzzleSize", puzzleSize);
+            AddParam(insert, "@created", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
 
-            await using var reader = await friendshipCmd.ExecuteReaderAsync();
-            if (!await reader.ReadAsync())
-                return (false, "Vänskapen hittades inte");
-
-            var first = reader.GetString(0);
-            var second = reader.GetString(1);
-            toUserId = string.Equals(first, fromUserId, StringComparison.Ordinal) ? second : first;
+            await insert.ExecuteNonQueryAsync();
+            sent++;
         }
 
-        if (string.IsNullOrWhiteSpace(toUserId))
-            return (false, "Kunde inte skapa utmaning");
-
-        await using (var dedup = conn.CreateCommand())
-        {
-            dedup.CommandText = """
-                SELECT COUNT(1)
-                FROM friend_challenges
-                WHERE friendship_id = @fid
-                  AND from_user_id = @from
-                  AND to_user_id = @to
-                  AND challenge_date = @date
-                  AND status = 'pending'
-                """;
-            AddParam(dedup, "@fid", friendRequestId);
-            AddParam(dedup, "@from", fromUserId);
-            AddParam(dedup, "@to", toUserId);
-            AddParam(dedup, "@date", date);
-
-            var exists = Convert.ToInt64(await dedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture) > 0;
-            if (exists)
-                return (false, "Du har redan en väntande utmaning till den här vännen för datumet");
-        }
-
-        await using var insert = conn.CreateCommand();
-        insert.CommandText = """
-            INSERT INTO friend_challenges (id, friendship_id, from_user_id, to_user_id, challenge_date, status, created_at, responded_at)
-            VALUES (@id, @fid, @from, @to, @date, 'pending', @created, NULL)
-            """;
-        AddParam(insert, "@id", Guid.NewGuid().ToString("N"));
-        AddParam(insert, "@fid", friendRequestId);
-        AddParam(insert, "@from", fromUserId);
-        AddParam(insert, "@to", toUserId);
-        AddParam(insert, "@date", date);
-        AddParam(insert, "@created", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
-
-        await insert.ExecuteNonQueryAsync();
-        return (true, string.Empty);
+        return new FriendChallengesCreateResponse(sent, skipped);
     }
 
     public async Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId)
@@ -1399,10 +1429,15 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
               SELECT c.id,
                      CASE WHEN c.from_user_id = @uid THEN toAlias.alias ELSE fromAlias.alias END AS friend_alias,
                      c.challenge_date,
+                     c.puzzle_size,
                      c.status,
                      CASE WHEN c.to_user_id = @uid THEN 'incoming' ELSE 'outgoing' END AS direction,
                      c.created_at,
-                     c.responded_at
+                     c.responded_at,
+                     c.from_user_id,
+                     c.to_user_id,
+                     fromAlias.alias,
+                     toAlias.alias
               FROM friend_challenges c
               LEFT JOIN user_aliases fromAlias ON fromAlias.user_id = c.from_user_id
               LEFT JOIN user_aliases toAlias ON toAlias.user_id = c.to_user_id
@@ -1413,10 +1448,15 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
               SELECT c.id,
                      CASE WHEN c.from_user_id = @uid THEN toAlias.alias ELSE fromAlias.alias END AS friend_alias,
                      c.challenge_date,
+                     c.puzzle_size,
                      c.status,
                      CASE WHEN c.to_user_id = @uid THEN 'incoming' ELSE 'outgoing' END AS direction,
                      c.created_at,
-                     c.responded_at
+                     c.responded_at,
+                     c.from_user_id,
+                     c.to_user_id,
+                     fromAlias.alias,
+                     toAlias.alias
               FROM friend_challenges c
               LEFT JOIN user_aliases fromAlias ON fromAlias.user_id = c.from_user_id
               LEFT JOIN user_aliases toAlias ON toAlias.user_id = c.to_user_id
@@ -1425,18 +1465,58 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
               """;
         AddParam(cmd, "@uid", userId);
 
-        var list = new List<FriendChallengeInfo>();
+        var pending = new List<(string Id, string FriendAlias, string Date, string PuzzleSize, string Status, string Direction, long CreatedAt, long? RespondedAt, string FromUserId, string ToUserId, string CurrentUserAlias, string FriendUserAlias)>();
         await using var reader = await cmd.ExecuteReaderAsync();
         while (await reader.ReadAsync())
         {
-            list.Add(new FriendChallengeInfo(
+            pending.Add((
                 Id: reader.GetString(0),
                 FriendAlias: reader.IsDBNull(1) ? "Okänd" : reader.GetString(1),
                 Date: reader.GetString(2),
-                Status: reader.GetString(3),
-                Direction: reader.GetString(4),
-                CreatedAt: reader.GetInt64(5),
-                RespondedAt: reader.IsDBNull(6) ? null : reader.GetInt64(6)
+                PuzzleSize: reader.IsDBNull(3) ? string.Empty : reader.GetString(3),
+                Status: reader.GetString(4),
+                Direction: reader.GetString(5),
+                CreatedAt: reader.GetInt64(6),
+                RespondedAt: reader.IsDBNull(7) ? null : reader.GetInt64(7),
+                FromUserId: reader.GetString(8),
+                ToUserId: reader.GetString(9),
+                CurrentUserAlias: reader.GetString(reader.GetString(5) == "incoming" ? 11 : 10),
+                FriendUserAlias: reader.GetString(reader.GetString(5) == "incoming" ? 10 : 11)
+            ));
+        }
+
+        var solveMap = await LoadChallengeSolveMapAsync(conn, userId, pending);
+        var today = _timeProvider.GetSwedishDate();
+        var list = new List<FriendChallengeInfo>(pending.Count);
+        foreach (var challenge in pending)
+        {
+            solveMap.TryGetValue((challenge.Date, challenge.PuzzleSize, userId), out var currentSolve);
+            var friendUserId = challenge.Direction == "incoming" ? challenge.FromUserId : challenge.ToUserId;
+            solveMap.TryGetValue((challenge.Date, challenge.PuzzleSize, friendUserId), out var friendSolve);
+
+            var (resultStatus, winnerAlias, resultReason) = ComputeChallengeResult(
+                challenge.Status,
+                challenge.Date,
+                today,
+                challenge.CurrentUserAlias,
+                challenge.FriendUserAlias,
+                currentSolve,
+                friendSolve);
+
+            list.Add(new FriendChallengeInfo(
+                Id: challenge.Id,
+                FriendAlias: challenge.FriendAlias,
+                Date: challenge.Date,
+                PuzzleSize: challenge.PuzzleSize,
+                Status: challenge.Status,
+                Direction: challenge.Direction,
+                CreatedAt: challenge.CreatedAt,
+                RespondedAt: challenge.RespondedAt,
+                ResultStatus: resultStatus,
+                WinnerAlias: winnerAlias,
+                ResultReason: resultReason,
+                CurrentUserSolve: currentSolve is null ? null : new FriendChallengeSolveSummary(challenge.CurrentUserAlias, currentSolve.Time, currentSolve.HintsUsed, currentSolve.WordHintsUsed),
+                FriendSolve: friendSolve is null ? null : new FriendChallengeSolveSummary(challenge.FriendUserAlias, friendSolve.Time, friendSolve.HintsUsed, friendSolve.WordHintsUsed)
             ));
         }
 
@@ -1461,6 +1541,111 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         AddParam(cmd, "@uid", userId);
 
         return await cmd.ExecuteNonQueryAsync() > 0;
+    }
+
+    private sealed record ChallengeSolveRecord(double Time, int HintsUsed, int WordHintsUsed);
+
+    private static async Task<Dictionary<(string Date, string PuzzleSize, string UserId), ChallengeSolveRecord>> LoadChallengeSolveMapAsync(
+        DbConnection conn,
+        string currentUserId,
+        List<(string Id, string FriendAlias, string Date, string PuzzleSize, string Status, string Direction, long CreatedAt, long? RespondedAt, string FromUserId, string ToUserId, string CurrentUserAlias, string FriendUserAlias)> challenges)
+    {
+        var userIds = challenges
+            .SelectMany(c => new[] { c.FromUserId, c.ToUserId })
+            .Append(currentUserId)
+            .Distinct(StringComparer.Ordinal)
+            .ToArray();
+        var dates = challenges.Select(c => c.Date).Distinct(StringComparer.Ordinal).ToArray();
+        var sizes = challenges.Select(c => c.PuzzleSize).Distinct(StringComparer.Ordinal).ToArray();
+
+        if (userIds.Length == 0 || dates.Length == 0 || sizes.Length == 0)
+            return [];
+
+        await using var cmd = conn.CreateCommand();
+        var userParams = AddInClauseParameters(cmd, "uid", userIds);
+        var dateParams = AddInClauseParameters(cmd, "date", dates);
+        var sizeParams = AddInClauseParameters(cmd, "size", sizes);
+        cmd.CommandText = $"""
+            SELECT date, puzzle_size, user_id, time, hints_used, word_hints_used
+            FROM history
+            WHERE user_id IN ({string.Join(", ", userParams)})
+              AND date IN ({string.Join(", ", dateParams)})
+              AND COALESCE(puzzle_size, '') IN ({string.Join(", ", sizeParams)})
+            """;
+
+        var result = new Dictionary<(string Date, string PuzzleSize, string UserId), ChallengeSolveRecord>();
+        await using var reader = await cmd.ExecuteReaderAsync();
+        while (await reader.ReadAsync())
+        {
+            var key = (reader.GetString(0), reader.IsDBNull(1) ? string.Empty : reader.GetString(1), reader.IsDBNull(2) ? string.Empty : reader.GetString(2));
+            var candidate = new ChallengeSolveRecord(reader.GetDouble(3), reader.GetInt32(4), reader.GetInt32(5));
+            if (!result.TryGetValue(key, out var current) || CompareSolves(candidate, current) < 0)
+                result[key] = candidate;
+        }
+
+        return result;
+    }
+
+    private static int CompareSolves(ChallengeSolveRecord left, ChallengeSolveRecord right)
+    {
+        var wordHints = left.WordHintsUsed.CompareTo(right.WordHintsUsed);
+        if (wordHints != 0) return wordHints;
+        var letterHints = left.HintsUsed.CompareTo(right.HintsUsed);
+        if (letterHints != 0) return letterHints;
+        return left.Time.CompareTo(right.Time);
+    }
+
+    private static (string? ResultStatus, string? WinnerAlias, string? ResultReason) ComputeChallengeResult(
+        string status,
+        string date,
+        DateOnly today,
+        string currentUserAlias,
+        string friendAlias,
+        ChallengeSolveRecord? currentSolve,
+        ChallengeSolveRecord? friendSolve)
+    {
+        if (string.Equals(status, "declined", StringComparison.Ordinal))
+            return ("declined", null, null);
+
+        if ((string.Equals(status, "pending", StringComparison.Ordinal) || string.Equals(status, "accepted", StringComparison.Ordinal))
+            && DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var challengeDate)
+            && challengeDate < today
+            && (currentSolve is null || friendSolve is null))
+        {
+            return ("expired", null, null);
+        }
+
+        if (currentSolve is null || friendSolve is null)
+            return (status, null, null);
+
+        var comparison = CompareSolves(currentSolve, friendSolve);
+        if (comparison == 0)
+            return ("completed", null, "Oavgjort");
+
+        var winnerAlias = comparison < 0 ? currentUserAlias : friendAlias;
+        var loserSolve = comparison < 0 ? friendSolve : currentSolve;
+        var winnerSolve = comparison < 0 ? currentSolve : friendSolve;
+        var reason = winnerSolve.WordHintsUsed != loserSolve.WordHintsUsed
+            ? "Färre ordledtrådar"
+            : winnerSolve.HintsUsed != loserSolve.HintsUsed
+                ? "Färre bokstavsledtrådar"
+                : "Snabbare tid";
+        return ("completed", winnerAlias, reason);
+    }
+
+    private static string[] AddInClauseParameters(DbCommand cmd, string prefix, string[] values)
+    {
+        var names = new string[values.Length];
+        for (var i = 0; i < values.Length; i++)
+        {
+            var name = $"@{prefix}{i}";
+            names[i] = name;
+            var parameter = cmd.CreateParameter();
+            parameter.ParameterName = name;
+            parameter.Value = values[i];
+            cmd.Parameters.Add(parameter);
+        }
+        return names;
     }
 
     // ── Admin grants ──
@@ -1783,10 +1968,14 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 from_user_id    NVARCHAR(200) NOT NULL,
                 to_user_id      NVARCHAR(200) NOT NULL,
                 challenge_date  NVARCHAR(10) NOT NULL,
+                puzzle_size     NVARCHAR(20) NOT NULL DEFAULT '',
                 status          NVARCHAR(20) NOT NULL DEFAULT 'pending',
                 created_at      BIGINT NOT NULL,
                 responded_at    BIGINT NULL
             );
+
+            IF COL_LENGTH('friend_challenges', 'puzzle_size') IS NULL
+                ALTER TABLE friend_challenges ADD puzzle_size NVARCHAR(20) NOT NULL CONSTRAINT DF_friend_challenges_puzzle_size DEFAULT '';
 
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_friend_challenges_to_status')
             CREATE INDEX idx_friend_challenges_to_status ON friend_challenges (to_user_id, status);
@@ -1912,6 +2101,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 from_user_id    TEXT NOT NULL,
                 to_user_id      TEXT NOT NULL,
                 challenge_date  TEXT NOT NULL,
+                puzzle_size     TEXT NOT NULL DEFAULT '',
                 status          TEXT NOT NULL DEFAULT 'pending',
                 created_at      INTEGER NOT NULL,
                 responded_at    INTEGER
@@ -1946,6 +2136,17 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             CREATE INDEX IF NOT EXISTS idx_clue_flags_created_by ON clue_flags (created_by);
             """;
         create.ExecuteNonQuery();
+
+        using var migrate = conn.CreateCommand();
+        migrate.CommandText = "ALTER TABLE friend_challenges ADD COLUMN puzzle_size TEXT NOT NULL DEFAULT '';";
+        try
+        {
+            migrate.ExecuteNonQuery();
+        }
+        catch (SqliteException ex) when (ex.SqliteErrorCode == 1 && ex.Message.Contains("duplicate column name", StringComparison.OrdinalIgnoreCase))
+        {
+            // Column already exists.
+        }
     }
 
     // ── JSON migration (SQLite only) ──

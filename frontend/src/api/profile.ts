@@ -51,14 +51,27 @@ export interface FriendRequestInfo {
   createdAt: number;
 }
 
+export interface FriendChallengeSolveSummary {
+  playerAlias: string;
+  time: number;
+  hintsUsed: number;
+  wordHintsUsed: number;
+}
+
 export interface FriendChallengeInfo {
   id: string;
   friendAlias: string;
   date: string;
+  puzzleSize: string;
   status: 'pending' | 'accepted' | 'declined';
   direction: 'incoming' | 'outgoing';
   createdAt: number;
   respondedAt: number | null;
+  resultStatus: 'pending' | 'accepted' | 'declined' | 'completed' | 'expired' | null;
+  winnerAlias: string | null;
+  resultReason: string | null;
+  currentUserSolve: FriendChallengeSolveSummary | null;
+  friendSolve: FriendChallengeSolveSummary | null;
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -132,11 +145,47 @@ export function fetchChallenges(): Promise<FriendChallengeInfo[]> {
   return apiFetch('/api/friends/challenges');
 }
 
-export function sendChallenge(friendId: string, date: string): Promise<{ ok: boolean }> {
+export interface FriendsLeaderboardEntry {
+  name: string;
+  time: number;
+  timestamp: number | null;
+  puzzleHash: string | null;
+  hintsUsed: number;
+  wordHintsUsed: number;
+}
+
+export function fetchFriendsLeaderboard(date: string, puzzleHash?: string): Promise<FriendsLeaderboardEntry[]> {
+  const params = new URLSearchParams({ date });
+  if (puzzleHash) params.set('puzzleHash', puzzleHash);
+  return apiFetch(`/api/friends/leaderboard?${params.toString()}`);
+}
+
+export interface FriendChallengesCreateResponse {
+  sent: number;
+  skipped: number;
+}
+
+export function sendChallenge(friendId: string, date: string, puzzleSize: string): Promise<{ ok: boolean }> {
   return apiFetch('/api/friends/challenges', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ friendId, date }),
+    body: JSON.stringify({ friendId, date, puzzleSize }),
+  });
+}
+
+export function sendChallenges(date: string, puzzleSize: string, friendIds: string[]): Promise<FriendChallengesCreateResponse> {
+  return apiFetch('/api/friends/challenges/bulk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ date, puzzleSize, friendIds }),
+  });
+}
+
+export function sendChallengesToAll(date: string, puzzleSize: string): Promise<FriendChallengesCreateResponse> {
+  return apiFetch('/api/friends/challenges/bulk', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ date, puzzleSize, allFriends: true }),
   });
 }
 
