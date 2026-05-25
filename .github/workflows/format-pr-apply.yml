@@ -48,6 +48,8 @@ jobs:
         id: meta
         if: steps.locate.outputs.artifact_root != ''
         env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
@@ -55,9 +57,15 @@ jobs:
         run: |
           set -euo pipefail
 
+          RUN_ACTOR=$(gh api repos/$REPO/actions/runs/$RUN_ID --jq '.actor.login')
           ARTIFACT_HEAD_SHA=$(cat "$ARTIFACT_ROOT/head_sha")
           ARTIFACT_HEAD_REPO=$(cat "$ARTIFACT_ROOT/head_repo")
           HAS_CHANGES=$(cat "$ARTIFACT_ROOT/has_changes")
+
+          if [ "$RUN_ACTOR" != "dependabot[bot]" ]; then
+            echo "Run actor is not Dependabot. Skipping."
+            exit 0
+          fi
 
           if [ "$ARTIFACT_HEAD_REPO" != "$REPO" ]; then
             echo "Artifact repo mismatch. Skipping."
