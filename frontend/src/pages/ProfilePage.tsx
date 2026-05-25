@@ -251,7 +251,7 @@ function FriendsSection() {
   async function handleChallenge(friendId: string, name: string) {
     setChallengeStatus({ msg: `Skickar utmaning till ${name}…`, ok: true });
     try {
-      await sendChallenge(friendId, todayIso());
+      await sendChallenge(friendId, todayIso(), '17x17');
       setChallengeStatus({ msg: `✓ Utmaning skickad till ${name}!`, ok: true });
       void reload();
     } catch (e) {
@@ -352,12 +352,48 @@ function FriendsSection() {
       ) : (
         <ul className="friend-list" role="list">
           {challenges.map(c => {
-            const label = c.status === 'pending' ? 'Väntar' : c.status === 'accepted' ? 'Accepterad' : 'Avböjd';
+            const label = c.resultStatus === 'completed'
+              ? 'Avgjord'
+              : c.resultStatus === 'expired'
+                ? 'Utgången'
+                : c.status === 'pending'
+                  ? 'Väntar'
+                  : c.status === 'accepted'
+                    ? 'Accepterad'
+                    : 'Avböjd';
             return (
               <li key={c.id}>
-                <span>
-                  {c.direction === 'incoming' ? 'Från' : 'Till'}: <strong>{c.friendAlias}</strong> · {c.date} · {label}
-                </span>
+                <div>
+                  <span>
+                    {c.direction === 'incoming' ? 'Från' : 'Till'}: <strong>{c.friendAlias}</strong> · {c.date}
+                    {c.puzzleSize && <span className="recent-meta"> · {SIZE_LABELS[c.puzzleSize] ?? c.puzzleSize}</span>} · {label}
+                  </span>
+                  {c.resultStatus === 'completed' && (
+                    <div className="challenge-result-summary">
+                      <strong>{c.winnerAlias ? `${c.winnerAlias} vann` : 'Oavgjort'}</strong>
+                      {c.resultReason ? <span className="recent-meta"> · {c.resultReason}</span> : null}
+                      <div className="challenge-result-rows">
+                        {c.currentUserSolve && (
+                          <div className="challenge-result-row">
+                            <span>{c.currentUserSolve.playerAlias}</span>
+                            <span>{formatTime(c.currentUserSolve.time)} · 💡{c.currentUserSolve.hintsUsed} · 🧩{c.currentUserSolve.wordHintsUsed}</span>
+                          </div>
+                        )}
+                        {c.friendSolve && (
+                          <div className="challenge-result-row">
+                            <span>{c.friendSolve.playerAlias}</span>
+                            <span>{formatTime(c.friendSolve.time)} · 💡{c.friendSolve.hintsUsed} · 🧩{c.friendSolve.wordHintsUsed}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  )}
+                  {c.resultStatus === 'expired' && (
+                    <div className="challenge-result-summary">
+                      <strong>Utmaningen gick ut utan vinnare.</strong>
+                    </div>
+                  )}
+                </div>
                 {c.direction === 'incoming' && c.status === 'pending' && (
                   <div className="friend-actions">
                     <button className="friend-btn friend-btn-accept" onClick={() => void handleRespondChallenge(c.id, true)}>Acceptera</button>

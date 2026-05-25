@@ -1,4 +1,6 @@
 import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import { fetchChallenges, fetchFriends, fetchFriendsLeaderboard } from '../../api/profile';
+import type { FriendChallengeInfo, FriendsLeaderboardEntry } from '../../api/profile';
 import type { AuthUser } from '../../hooks/useAuth';
 import type {
   CellKey,
@@ -54,6 +56,10 @@ function removeLocalStorage(key: string): void {
   }
 }
 
+const LEADERBOARD_TAB_KEY = 'crossword-leaderboard-tab';
+
+type LeaderboardTab = 'global' | 'friends';
+
 export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [loading, setLoading] = useState(true);
   const [puzzleUnavailable, setPuzzleUnavailable] = useState(false);
@@ -69,6 +75,13 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [emptyWarningCells, setEmptyWarningCells] = useState<Record<string, true>>({});
   const [hintRevealedCells, setHintRevealedCells] = useState<Record<string, true>>({});
   const [leaderboard, setLeaderboard] = useState<ScoreEntry[]>([]);
+  const [friendsLeaderboard, setFriendsLeaderboard] = useState<FriendsLeaderboardEntry[]>([]);
+  const [puzzleChallenges, setPuzzleChallenges] = useState<FriendChallengeInfo[]>([]);
+  const [hasFriends, setHasFriends] = useState(false);
+  const [activeLeaderboardTab, setActiveLeaderboardTab] = useState<LeaderboardTab>(() => {
+    const saved = readLocalStorage(LEADERBOARD_TAB_KEY);
+    return saved === 'friends' ? 'friends' : 'global';
+  });
   const [history, setHistory] = useState<HistoryResponse>({});
   const [usernameModalOpen, setUsernameModalOpen] = useState(false);
   const [username, setUsername] = useState('');
@@ -85,6 +98,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   }, [dateParam, puzzle?.puzzleDate]);
 
   const puzzleHash = puzzle?.puzzleHash ?? '';
+  const currentPuzzleSize = puzzle ? `${puzzle.width}x${puzzle.height}` : size;
 
   const fillableCells = useMemo(() => {
     if (!puzzle) return [] as Array<{ row: number; col: number }>;
@@ -131,6 +145,11 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     }
     return rows;
   }, [history, size]);
+
+  const activePuzzleChallenges = useMemo(
+    () => puzzleChallenges.filter(c => c.date === puzzleDate && c.puzzleSize === currentPuzzleSize),
+    [currentPuzzleSize, puzzleChallenges, puzzleDate],
+  );
 
   const saveProgress = useCallback(
     (nextValues: Record<string, string>, nextSeconds: number, nextLetterHints: number, nextWordHints: number) => {
@@ -195,6 +214,38 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       setHistory({});
     }
   }, []);
+
+  const fetchFriendsLeaderboardData = useCallback(async () => {
+    if (!user || !puzzleDate) {
+      setFriendsLeaderboard([]);
+      setHasFriends(false);
+      return;
+    }
+
+    try {
+      const friends = await fetchFriends();
+      setHasFriends(friends.length > 0);
+      const entries = await fetchFriendsLeaderboard(puzzleDate, puzzleHash || undefined);
+      setFriendsLeaderboard(entries);
+    } catch {
+      setFriendsLeaderboard([]);
+      setHasFriends(false);
+    }
+  }, [puzzleDate, puzzleHash, user]);
+
+  const fetchPuzzleChallenges = useCallback(async () => {
+    if (!user) {
+      setPuzzleChallenges([]);
+      return;
+    }
+
+    try {
+      const challenges = await fetchChallenges();
+      setPuzzleChallenges(challenges);
+    } catch {
+      setPuzzleChallenges([]);
+    }
+  }, [user]);
 
   useEffect(() => {
     let cancelled = false;
@@ -301,7 +352,18 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     if (!puzzleHash || !puzzleDate) return;
     fetchLeaderboard();
     fetchHistory();
-  }, [fetchHistory, fetchLeaderboard, puzzleDate, puzzleHash]);
+    void fetchFriendsLeaderboardData();
+    void fetchPuzzleChallenges();
+  }, [fetchFriendsLeaderboardData, fetchHistory, fetchLeaderboard, fetchPuzzleChallenges, puzzleDate, puzzleHash]);
+
+  useEffect(() => {
+    if (!user && activeLeaderboardTab === 'friends')
+      setActiveLeaderboardTab('global');
+  }, [activeLeaderboardTab, user]);
+
+  useEffect(() => {
+    writeLocalStorage(LEADERBOARD_TAB_KEY, activeLeaderboardTab);
+  }, [activeLeaderboardTab]);
 
   const { handleCellChange, handleCellKeyDown } = usePuzzleGridInput({
     puzzle,
@@ -539,7 +601,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   }, [activeEntry, letterHintsUsed, nav.active, puzzle, puzzleDate, puzzleSolved, saveProgress, seconds, size, wordHintsUsed]);
 
   const submitScore = useCallback(async () => {
-    if (!puzzle || !puzzleHash || !puzzleDate || hasSubmittedScore) return;
+    if (!puzzle || !puzzleHash || !puzzleDate || hasSubmittedScore) return false;
     setHasSubmittedScore(true);
 
     const trimmed = username.trim();
@@ -595,8 +657,13 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       saveLocalLeaderboard(puzzleDate, puzzleHash, local);
     }
 
+    if (submitted)
+      void fetchFriendsLeaderboardData();
+
     setUsernameModalOpen(false);
+    return true;
   }, [
+    fetchFriendsLeaderboardData,
     hasSubmittedScore,
     letterHintsUsed,
     puzzle,
@@ -631,6 +698,12 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     emptyWarningCells,
     hintRevealedCells,
     leaderboard,
+    friendsLeaderboard,
+    activePuzzleChallenges,
+    fetchPuzzleChallenges,
+    hasFriends,
+    activeLeaderboardTab,
+    setActiveLeaderboardTab,
     historyRows,
     usernameModalOpen,
     setUsernameModalOpen,

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import { fetchFriends, respondChallenge, sendChallenges, sendChallengesToAll, type FriendInfo } from '../api/profile';
 import { createClueFlag } from '../api/clues';
 import { useAuth } from '../hooks/useAuth';
 import { usePageTitle } from '../hooks/usePageTitle';
@@ -67,6 +68,12 @@ export default function PuzzlePage() {
   const [reportReason, setReportReason] = useState('');
   const [reportSubmitting, setReportSubmitting] = useState(false);
   const [reportedClueKeys, setReportedClueKeys] = useState<Record<string, boolean>>({});
+  const [postSubmitChallengeOpen, setPostSubmitChallengeOpen] = useState(false);
+  const [challengeableFriends, setChallengeableFriends] = useState<FriendInfo[]>([]);
+  const [selectedChallengeFriendIds, setSelectedChallengeFriendIds] = useState<string[]>([]);
+  const [challengeSubmissionStatus, setChallengeSubmissionStatus] = useState<{ msg: string; ok: boolean } | null>(null);
+  const [challengeSubmitting, setChallengeSubmitting] = useState(false);
+  const [challengeRespondingId, setChallengeRespondingId] = useState<string | null>(null);
 
   const {
     loading,
@@ -80,6 +87,12 @@ export default function PuzzlePage() {
     emptyWarningCells,
     hintRevealedCells,
     leaderboard,
+    friendsLeaderboard,
+    activePuzzleChallenges,
+    fetchPuzzleChallenges,
+    hasFriends,
+    activeLeaderboardTab,
+    setActiveLeaderboardTab,
     historyRows,
     usernameModalOpen,
     setUsernameModalOpen,
@@ -241,13 +254,109 @@ export default function PuzzlePage() {
     });
   };
 
-  const handleSubmitScore = async () => {
-    await submitScore();
+  const finishScoreSubmissionUi = () => {
     if (window.matchMedia('(max-width:1100px)').matches) {
       setShowLeaderboardPanel(true);
       setShowClues(false);
       setShowIntro(false);
       setShowHistoryPanel(false);
+    }
+  };
+
+  const handleSubmitScore = async () => {
+    const completed = await submitScore();
+    if (!completed) return;
+
+    if (!user || !puzzle) {
+      finishScoreSubmissionUi();
+      return;
+    }
+
+    try {
+      const friends = await fetchFriends();
+      if (friends.length === 0) {
+        finishScoreSubmissionUi();
+        return;
+      }
+
+      setChallengeableFriends(friends);
+      setSelectedChallengeFriendIds(friends.map(friend => friend.friendId));
+      setChallengeSubmissionStatus(null);
+      setPostSubmitChallengeOpen(true);
+      return;
+    } catch {
+      finishScoreSubmissionUi();
+      return;
+    }
+  };
+
+  const solvedPuzzleSize = puzzle ? `${puzzle.width}x${puzzle.height}` : size;
+
+  const handleToggleChallengeFriend = (friendId: string) => {
+    setSelectedChallengeFriendIds(current => current.includes(friendId)
+      ? current.filter(id => id !== friendId)
+      : [...current, friendId]);
+  };
+
+  const closePostSubmitChallengeModal = () => {
+    setPostSubmitChallengeOpen(false);
+    setChallengeSubmissionStatus(null);
+    finishScoreSubmissionUi();
+  };
+
+  const handleChallengeSelectedFriends = async () => {
+    if (selectedChallengeFriendIds.length === 0) {
+      setChallengeSubmissionStatus({ msg: 'Välj minst en vän att utmana.', ok: false });
+      return;
+    }
+
+    setChallengeSubmitting(true);
+    setChallengeSubmissionStatus(null);
+    try {
+      const result = await sendChallenges(puzzleDate, solvedPuzzleSize, selectedChallengeFriendIds);
+      setChallengeSubmissionStatus({
+        msg: result.skipped > 0
+          ? `✓ Skickade ${result.sent} utmaningar. ${result.skipped} hoppades över eftersom de redan fanns.`
+          : `✓ Skickade ${result.sent} utmaningar!`,
+        ok: true,
+      });
+    } catch (error) {
+      setChallengeSubmissionStatus({ msg: error instanceof Error ? error.message : 'Kunde inte skicka utmaningar.', ok: false });
+    } finally {
+      setChallengeSubmitting(false);
+    }
+  };
+
+  const handleChallengeAllFriends = async () => {
+    setChallengeSubmitting(true);
+    setChallengeSubmissionStatus(null);
+    try {
+      const result = await sendChallengesToAll(puzzleDate, solvedPuzzleSize);
+      setChallengeSubmissionStatus({
+        msg: result.skipped > 0
+          ? `✓ Skickade ${result.sent} utmaningar till alla vänner. ${result.skipped} hoppades över eftersom de redan fanns.`
+          : `✓ Skickade ${result.sent} utmaningar till alla vänner!`,
+        ok: true,
+      });
+    } catch (error) {
+      setChallengeSubmissionStatus({ msg: error instanceof Error ? error.message : 'Kunde inte skicka utmaningar till alla vänner.', ok: false });
+    } finally {
+      setChallengeSubmitting(false);
+    }
+  };
+
+  const handleRespondPuzzleChallenge = async (challengeId: string, accepted: boolean) => {
+    setChallengeRespondingId(challengeId);
+    try {
+      await respondChallenge(challengeId, accepted);
+      await fetchPuzzleChallenges();
+    } catch (error) {
+      setMessageModal({
+        title: accepted ? 'Kunde inte acceptera utmaning' : 'Kunde inte avböja utmaning',
+        body: error instanceof Error ? error.message : 'Försök igen om en stund.',
+      });
+    } finally {
+      setChallengeRespondingId(null);
     }
   };
 
@@ -570,7 +679,74 @@ export default function PuzzlePage() {
                 maxHeight: layout.boardHeight ? `${layout.boardHeight}px` : undefined,
               }}
             >
-              <PuzzleLeaderboardSection puzzleDate={puzzleDate} leaderboard={leaderboard} height={layout.supportPanelHeight} />
+              {user && activePuzzleChallenges.length > 0 && (
+                <section className="puzzle-challenges-panel" aria-label="Aktiva vänutmaningar">
+                  <h2>⚔️ Aktiva vänutmaningar</h2>
+                  <ul className="puzzle-challenges-list" role="list">
+                    {activePuzzleChallenges.map(challenge => {
+                      const statusLabel = challenge.resultStatus === 'completed'
+                        ? 'Avgjord'
+                        : challenge.resultStatus === 'expired'
+                          ? 'Utgången'
+                          : challenge.status === 'pending'
+                            ? 'Väntar på svar'
+                            : challenge.status === 'accepted'
+                              ? 'Accepterad'
+                              : 'Avböjd';
+                      return (
+                        <li key={challenge.id} className={`puzzle-challenge-item${challenge.status === 'accepted' ? ' accepted' : ''}`}>
+                          <div>
+                            <strong>{challenge.friendAlias}</strong>
+                            <div className="puzzle-challenge-meta">
+                              {challenge.direction === 'incoming' ? 'Utmanade dig' : 'Du utmanade'} · {statusLabel}
+                            </div>
+                            {challenge.resultStatus === 'completed' && (
+                              <div className="puzzle-challenge-result">
+                                <strong>{challenge.winnerAlias ? `${challenge.winnerAlias} vann` : 'Oavgjort'}</strong>
+                                {challenge.resultReason ? <span className="recent-meta"> · {challenge.resultReason}</span> : null}
+                              </div>
+                            )}
+                            {challenge.resultStatus === 'expired' && (
+                              <div className="puzzle-challenge-result">
+                                <strong>Utmaningen gick ut utan vinnare.</strong>
+                              </div>
+                            )}
+                          </div>
+                          {challenge.direction === 'incoming' && challenge.status === 'pending' && (
+                            <div className="friend-actions puzzle-challenge-actions">
+                              <button
+                                className="friend-btn friend-btn-accept"
+                                onClick={() => void handleRespondPuzzleChallenge(challenge.id, true)}
+                                disabled={challengeRespondingId === challenge.id}
+                              >
+                                Acceptera
+                              </button>
+                              <button
+                                className="friend-btn friend-btn-danger"
+                                onClick={() => void handleRespondPuzzleChallenge(challenge.id, false)}
+                                disabled={challengeRespondingId === challenge.id}
+                              >
+                                Avböj
+                              </button>
+                            </div>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </section>
+              )}
+              <PuzzleLeaderboardSection
+                puzzleDate={puzzleDate}
+                leaderboard={leaderboard}
+                friendsLeaderboard={friendsLeaderboard}
+                currentUserDisplayName={user?.alias ?? user?.name ?? null}
+                activeTab={activeLeaderboardTab}
+                onTabChange={setActiveLeaderboardTab}
+                showFriendsTab={!!user}
+                hasFriends={hasFriends}
+                height={layout.supportPanelHeight}
+              />
               <PuzzleHistorySection historyRows={historyRows} height={layout.supportPanelHeight} />
             </div>
           </div>
@@ -688,6 +864,38 @@ export default function PuzzlePage() {
           <div className="modal-buttons">
             <button className="btn btn-primary" onClick={() => void handleSubmitScore()}>Spara</button>
             <button className="btn btn-secondary" onClick={() => setUsernameModalOpen(false)}>Hoppa över</button>
+          </div>
+        </div>
+      </div>
+
+      <div className={`modal-overlay${postSubmitChallengeOpen ? ' active' : ''}`} role="dialog" aria-modal="true" aria-label="Utmana vänner">
+        <div className="modal">
+          <h3>⚔️ Utmana vänner</h3>
+          <p>Du löste korsordet för {puzzleDate} · {solvedPuzzleSize}. Vem vill du utmana?</p>
+          {challengeSubmissionStatus && (
+            <p className={challengeSubmissionStatus.ok ? 'profile-status-ok' : 'profile-status-err'}>{challengeSubmissionStatus.msg}</p>
+          )}
+          <div className="challenge-selection-list" role="list" aria-label="Välj vänner att utmana">
+            {challengeableFriends.map(friend => (
+              <label key={friend.friendId} className="challenge-selection-item">
+                <input
+                  type="checkbox"
+                  checked={selectedChallengeFriendIds.includes(friend.friendId)}
+                  onChange={() => handleToggleChallengeFriend(friend.friendId)}
+                  disabled={challengeSubmitting}
+                />
+                <span>{friend.alias}</span>
+              </label>
+            ))}
+          </div>
+          <div className="modal-buttons challenge-modal-buttons">
+            <button className="btn btn-primary" onClick={() => void handleChallengeSelectedFriends()} disabled={challengeSubmitting}>
+              {challengeSubmitting ? 'Skickar…' : 'Utmana valda'}
+            </button>
+            <button className="btn btn-primary" onClick={() => void handleChallengeAllFriends()} disabled={challengeSubmitting}>
+              Utmana alla
+            </button>
+            <button className="btn btn-secondary" onClick={closePostSubmitChallengeModal} disabled={challengeSubmitting}>Klar</button>
           </div>
         </div>
       </div>
