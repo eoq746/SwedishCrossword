@@ -2,6 +2,7 @@
 using System.Net;
 using System.Security.Cryptography;
 using System.Threading.RateLimiting;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -199,6 +200,29 @@ static string RewriteRedirectUri(string redirectUri, string? publicOrigin, PathS
         : $"{redirectUri[..valueStart]}{encodedRedirectUri}";
 }
 
+static string AppendQueryParameter(string path, string name, string value)
+{
+    var separator = path.Contains('?', StringComparison.Ordinal) ? '&' : '?';
+    return $"{path}{separator}{Uri.EscapeDataString(name)}={Uri.EscapeDataString(value)}";
+}
+
+static Task HandleRemoteAuthenticationFailure(RemoteFailureContext context)
+{
+    var redirect = Uri.IsWellFormedUriString(context.Properties?.RedirectUri, UriKind.Relative)
+        && !string.IsNullOrWhiteSpace(context.Properties?.RedirectUri)
+        ? context.Properties.RedirectUri!
+        : "/";
+
+    var authError = string.Equals(context.Request.Query["error"], "access_denied", StringComparison.OrdinalIgnoreCase)
+        || context.Failure?.Message.Contains("Access was denied", StringComparison.OrdinalIgnoreCase) == true
+        ? "cancelled"
+        : "failed";
+
+    context.HandleResponse();
+    context.Response.Redirect(AppendQueryParameter(redirect, "authError", authError));
+    return Task.CompletedTask;
+}
+
 if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientSecret))
 {
     authBuilder.AddGoogle(options =>
@@ -219,6 +243,7 @@ if (!string.IsNullOrEmpty(googleClientId) && !string.IsNullOrEmpty(googleClientS
             context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
             return Task.CompletedTask;
         };
+        options.Events.OnRemoteFailure = HandleRemoteAuthenticationFailure;
     });
 }
 
@@ -239,6 +264,7 @@ if (!string.IsNullOrEmpty(microsoftClientId) && !string.IsNullOrEmpty(microsoftC
             context.Response.Redirect(RewriteRedirectUri(context.RedirectUri, authenticationPublicOrigin, options.CallbackPath));
             return Task.CompletedTask;
         };
+        options.Events.OnRemoteFailure = HandleRemoteAuthenticationFailure;
     });
 }
 
@@ -285,6 +311,7 @@ builder.Services.AddOutputCache(options =>
     options.AddPolicy("puzzle-today", p => p.Expire(TimeSpan.FromMinutes(5)));
     options.AddPolicy("puzzle-archive", p => p.Expire(TimeSpan.FromHours(1)));
     options.AddPolicy("puzzle-dates", p => p.Expire(TimeSpan.FromMinutes(10)));
+    options.AddPolicy("sitemap", p => p.Expire(TimeSpan.FromHours(24)));
 });
 
 // Response compression — Brotli + Gzip for JSON and static assets
@@ -695,6 +722,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapAuthEndpoints();
+app.MapSitemapEndpoints();
 app.MapPuzzleEndpoints(puzzlePath);
 app.MapLeaderboardEndpoints();
 app.MapStatsEndpoints();

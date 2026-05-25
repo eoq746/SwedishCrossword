@@ -72,6 +72,171 @@ public class ApiIntegrationTests : IAsyncDisposable
     }
 
     // -----------------------------------------------------------------------
+    // Sitemap
+    // -----------------------------------------------------------------------
+
+    [Test]
+    public async Task Sitemap_ReturnsOk()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
+    [Test]
+    public async Task Sitemap_ReturnsXmlContentType()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+
+        await Assert.That(response.Content.Headers.ContentType?.MediaType).IsEqualTo("application/xml");
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesStaticPages()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        // Verify all static pages are included
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/play");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/puzzle");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/leaderboard");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/calendar");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/about");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/contact");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/privacy-policy");
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesPuzzleArchiveDates()
+    {
+        var today = GetSwedishDate();
+        var pastDate = today.AddDays(-5);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), TestPuzzleJson);
+
+        // Force PuzzleDateIndex rescan by accessing dates endpoint first
+        await Client.GetAsync("/api/puzzle/dates");
+
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        await Assert.That(content).Contains($"https://www.svensktkorsord.se/puzzle/{pastDate:yyyy-MM-dd}");
+    }
+
+    [Test]
+    public async Task Sitemap_ExcludesFuturePuzzleDates()
+    {
+        var today = GetSwedishDate();
+        var futureDate = today.AddDays(5);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{futureDate:yyyy-MM-dd}.json"), TestPuzzleJson);
+
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        await Assert.That(content).DoesNotContain($"https://www.svensktkorsord.se/puzzle/{futureDate:yyyy-MM-dd}");
+    }
+
+    [Test]
+    public async Task Sitemap_ContainsValidXml()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        // Verify basic XML structure
+        await Assert.That(content).StartsWith("""<?xml version="1.0" encoding="UTF-8"?>""");
+        await Assert.That(content).Contains("<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">");
+        await Assert.That(content).EndsWith("</urlset>\r\n");
+
+        // Should not throw when parsed
+        using var reader = new StringReader(content);
+        var doc = System.Xml.Linq.XDocument.Load(reader);
+        await Assert.That(doc).IsNotNull();
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesValidChangeFreqValues()
+    {
+        // Seed a past puzzle date so "never" changefreq is included
+        var today = GetSwedishDate();
+        var pastDate = today.AddDays(-1);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), TestPuzzleJson);
+
+        // Force rescan
+        await Client.GetAsync("/api/puzzle/dates");
+
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        // Check that all implemented values are present
+        var implementedValues = new[] { "hourly", "daily", "weekly", "monthly", "yearly", "never" };
+        foreach (var value in implementedValues)
+        {
+            await Assert.That(content).Contains($"<changefreq>{value}</changefreq>");
+        }
+    }
+
+    [Test]
+    public async Task Sitemap_SetsCacheControlHeaders()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+
+        // Check for Cache-Control header (set explicitly in the endpoint)
+        var hasCacheControl = response.Headers.TryGetValues("Cache-Control", out var cacheControlValues);
+        await Assert.That(hasCacheControl).IsTrue();
+
+        var cacheControlHeader = cacheControlValues?.FirstOrDefault();
+        await Assert.That(cacheControlHeader).IsNotNull();
+        await Assert.That(cacheControlHeader).Contains("public");
+        await Assert.That(cacheControlHeader).Contains("max-age=86400");
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesTodayPuzzleDate()
+    {
+        var today = GetSwedishDate();
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today:yyyy-MM-dd}.json"), TestPuzzleJson);
+
+        // Force rescan
+        await Client.GetAsync("/api/puzzle/dates");
+
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        await Assert.That(content).Contains($"https://www.svensktkorsord.se/puzzle/{today:yyyy-MM-dd}");
+    }
+
+    [Test]
+    public async Task Sitemap_PuzzleArchiveHasNeverChangeFreq()
+    {
+        var today = GetSwedishDate();
+        var pastDate = today.AddDays(-1);
+        Directory.CreateDirectory(TempPuzzlePath);
+        await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{pastDate:yyyy-MM-dd}.json"), TestPuzzleJson);
+
+        await Client.GetAsync("/api/puzzle/dates");
+
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        // Parse XML to verify puzzle entry has "never" changefreq
+        using var reader = new StringReader(content);
+        var doc = System.Xml.Linq.XDocument.Load(reader);
+        var ns = System.Xml.Linq.XNamespace.Get("http://www.sitemaps.org/schemas/sitemap/0.9");
+        var puzzleUrl = doc.Descendants(ns + "url")
+            .FirstOrDefault(u => u.Descendants(ns + "loc")
+                .Any(l => l.Value.Contains($"/puzzle/{pastDate:yyyy-MM-dd}")));
+
+        await Assert.That(puzzleUrl).IsNotNull();
+        var changefreq = puzzleUrl!.Descendants(ns + "changefreq").FirstOrDefault();
+        await Assert.That(changefreq?.Value).IsEqualTo("never");
+    }
+
+    // -----------------------------------------------------------------------
     // CSRF middleware
     // -----------------------------------------------------------------------
 
@@ -1418,6 +1583,60 @@ public class ApiIntegrationTests : IAsyncDisposable
         var query = QueryHelpers.ParseQuery(redirectUri.Query);
         var callback = Uri.UnescapeDataString(query["redirect_uri"].ToString());
         await Assert.That(callback).IsEqualTo("http://localhost/signin-google");
+    }
+
+    [Test]
+    public async Task GoogleLogin_CancelledByUser_RedirectsBackToReturnUrl()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Authentication:Google:ClientId", "test-google-client-id");
+            builder.UseSetting("Authentication:Google:ClientSecret", "test-google-client-secret");
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions
+        {
+            AllowAutoRedirect = false,
+            BaseAddress = new Uri("http://localhost")
+        });
+
+        var challenge = await client.GetAsync("/api/auth/login/google?returnUrl=%2Fapp%2Fprofile");
+        await Assert.That(challenge.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+
+        var providerRedirect = challenge.Headers.Location!;
+        var providerQuery = QueryHelpers.ParseQuery(providerRedirect.Query);
+        var state = providerQuery["state"].ToString();
+
+        var callback = await client.GetAsync($"/signin-google?error=access_denied&state={Uri.EscapeDataString(state)}");
+
+        await Assert.That(callback.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+        await Assert.That(callback.Headers.Location?.ToString()).IsEqualTo("/app/profile?authError=cancelled");
+    }
+
+    [Test]
+    public async Task MicrosoftLogin_CancelledByUser_RedirectsBackToReturnUrl()
+    {
+        using var factory = Factory.WithWebHostBuilder(builder =>
+        {
+            builder.UseSetting("Authentication:Microsoft:ClientId", "test-microsoft-client-id");
+            builder.UseSetting("Authentication:Microsoft:ClientSecret", "test-microsoft-client-secret");
+        });
+        using var client = factory.CreateClient(new WebApplicationFactoryClientOptions
+        {
+            AllowAutoRedirect = false,
+            BaseAddress = new Uri("http://localhost")
+        });
+
+        var challenge = await client.GetAsync("/api/auth/login/microsoft?returnUrl=%2Fapp%2Fprofile");
+        await Assert.That(challenge.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+
+        var providerRedirect = challenge.Headers.Location!;
+        var providerQuery = QueryHelpers.ParseQuery(providerRedirect.Query);
+        var state = providerQuery["state"].ToString();
+
+        var callback = await client.GetAsync($"/signin-microsoft?error=access_denied&state={Uri.EscapeDataString(state)}");
+
+        await Assert.That(callback.StatusCode).IsEqualTo(HttpStatusCode.Redirect);
+        await Assert.That(callback.Headers.Location?.ToString()).IsEqualTo("/app/profile?authError=cancelled");
     }
 
     // -----------------------------------------------------------------------
