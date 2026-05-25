@@ -12,7 +12,10 @@ permissions:
 jobs:
   apply-dependabot-format:
     name: Apply Dependabot format patch
-    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
+    if: >-
+      github.event.workflow_run.event == 'pull_request'
+      && github.event.workflow_run.conclusion == 'success'
+      && github.event.workflow_run.actor.login == 'dependabot[bot]'
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -20,60 +23,41 @@ jobs:
     steps:
       - name: Download artifact from triggering run
         id: download
-        env:
-          GH_TOKEN: ${{ github.token }}
-          RUN_ID: ${{ github.event.workflow_run.id }}
-          REPO: ${{ github.repository }}
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
+          pattern: dependabot-format-*
+          path: .download
+          github-token: ${{ github.token }}
+        continue-on-error: true
+
+      - name: Locate artifact root
+        id: locate
+        if: steps.download.outcome == 'success'
         run: |
           set -euo pipefail
-          mkdir -p .download
-
-          ARTIFACT_ID=$(gh api \
-            repos/$REPO/actions/runs/$RUN_ID/artifacts \
-            --jq '.artifacts[] | select(.name | startswith("dependabot-format-")) | .id' | head -1)
-
-          if [ -z "${ARTIFACT_ID:-}" ]; then
-            echo "No Dependabot format artifact found. Nothing to apply."
-            exit 0
-          fi
-
-          gh api \
-            repos/$REPO/actions/artifacts/$ARTIFACT_ID/zip \
-            > .download/format-artifact.zip
-
-          unzip -o .download/format-artifact.zip -d .download
-
           ARTIFACT_ROOT=$(find .download -type f -name head_sha -exec dirname {} \; | head -1)
           if [ -z "${ARTIFACT_ROOT:-}" ]; then
             echo "Downloaded artifact is missing expected metadata files."
             find .download -maxdepth 3 -type f | sort
             exit 1
           fi
-
           echo "artifact_root=$ARTIFACT_ROOT" >> "$GITHUB_OUTPUT"
 
       - name: Validate run and artifact metadata
         id: meta
-        if: steps.download.outputs.artifact_root != ''
+        if: steps.locate.outputs.artifact_root != ''
         env:
-          GH_TOKEN: ${{ github.token }}
-          RUN_ID: ${{ github.event.workflow_run.id }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
           RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
-          ARTIFACT_ROOT: ${{ steps.download.outputs.artifact_root }}
+          ARTIFACT_ROOT: ${{ steps.locate.outputs.artifact_root }}
         run: |
           set -euo pipefail
 
-          RUN_ACTOR=$(gh api repos/$REPO/actions/runs/$RUN_ID --jq '.actor.login')
           ARTIFACT_HEAD_SHA=$(cat "$ARTIFACT_ROOT/head_sha")
           ARTIFACT_HEAD_REPO=$(cat "$ARTIFACT_ROOT/head_repo")
           HAS_CHANGES=$(cat "$ARTIFACT_ROOT/has_changes")
-
-          if [ "$RUN_ACTOR" != "dependabot[bot]" ]; then
-            echo "Run actor is not Dependabot. Skipping."
-            exit 0
-          fi
 
           if [ "$ARTIFACT_HEAD_REPO" != "$REPO" ]; then
             echo "Artifact repo mismatch. Skipping."
@@ -97,19 +81,21 @@ jobs:
 
           echo "head_ref=$RUN_HEAD_BRANCH" >> "$GITHUB_OUTPUT"
 
-      - name: Apply formatted files via GitHub API
+      - name: Checkout Dependabot branch
+        if: steps.meta.outputs.head_ref != ''
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          ref: ${{ steps.meta.outputs.head_ref }}
+          token: ${{ github.token }}
+
+      - name: Apply formatted files and push
         if: steps.meta.outputs.head_ref != ''
         env:
-          GH_TOKEN: ${{ github.token }}
-          HEAD_REF: ${{ steps.meta.outputs.head_ref }}
-          REPO: ${{ github.repository }}
-          ARTIFACT_ROOT: ${{ steps.download.outputs.artifact_root }}
+          ARTIFACT_ROOT: ${{ steps.locate.outputs.artifact_root }}
         run: |
           set -euo pipefail
 
-          COMMIT_MESSAGE="style: auto-format code with dotnet format"
           APPLIED_COUNT=0
-
           while IFS= read -r file; do
             [ -z "$file" ] && continue
 
@@ -119,24 +105,20 @@ jobs:
               exit 1
             fi
 
-            FILE_SHA=$(gh api "repos/$REPO/contents/$file?ref=$HEAD_REF" --jq '.sha')
-            FILE_CONTENT=$(base64 -w 0 "$SOURCE_FILE")
-
-            jq -n \
-              --arg message "$COMMIT_MESSAGE" \
-              --arg content "$FILE_CONTENT" \
-              --arg branch "$HEAD_REF" \
-              --arg sha "$FILE_SHA" \
-              '{message:$message,content:$content,branch:$branch,sha:$sha}' \
-              > .download/payload.json
-
-            gh api \
-              --method PUT \
-              "repos/$REPO/contents/$file" \
-              --input .download/payload.json \
-              > /dev/null
-
+            mkdir -p "$(dirname "$file")"
+            cp -- "$SOURCE_FILE" "$file"
             APPLIED_COUNT=$((APPLIED_COUNT + 1))
           done < "$ARTIFACT_ROOT/changed_files.txt"
 
-          echo "Applied formatting updates to $APPLIED_COUNT file(s)."
+          if [ "$APPLIED_COUNT" -eq 0 ]; then
+            echo "No files to apply."
+            exit 0
+          fi
+
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+          git add -A
+          git commit -m "style: auto-format code with dotnet format"
+          git push
+
+          echo "Applied and pushed formatting updates to $APPLIED_COUNT file(s)."
