@@ -783,7 +783,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                          .Distinct().OrderDescending().ToList();
         var (currentStreak, bestStreak) = ComputeStreaks(dates, today);
 
-        var recent = solves.Take(30).ToList();
+        var recent = solves.Take(6).ToList();
         var badges = CreateBadges(totalSolved, bestTime, bestStreak, solves);
         return new UserStatsResponse(totalSolved, avgTime, bestTime, currentStreak, bestStreak, recent, perSize.Count > 0 ? perSize : null, badges);
     }
