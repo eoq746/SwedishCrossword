@@ -166,7 +166,27 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
         try
         {
-            // Deduplicate
+            // Deduplicate by user_id — one score per authenticated user per puzzle
+            if (entry.UserId is not null)
+            {
+                await using var userDedup = conn.CreateCommand();
+                userDedup.Transaction = tx;
+                userDedup.CommandText = """
+                    SELECT COUNT(1) FROM scores
+                    WHERE leaderboard_key = @key AND user_id = @userId
+                    """;
+                AddParam(userDedup, "@key", leaderboardKey);
+                AddParam(userDedup, "@userId", entry.UserId);
+
+                var userCount = Convert.ToInt64(await userDedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
+                if (userCount > 0)
+                {
+                    await tx.CommitAsync();
+                    return await GetScoresForKeyAsync(conn, null, leaderboardKey);
+                }
+            }
+
+            // Deduplicate by name+time+timestamp (fallback for anonymous users)
             await using (var dedup = conn.CreateCommand())
             {
                 dedup.Transaction = tx;
@@ -289,7 +309,28 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
 
         try
         {
-            // Deduplicate
+            // Deduplicate by user_id — one history entry per authenticated user per date+hash
+            if (record.UserId is not null)
+            {
+                await using var userDedup = conn.CreateCommand();
+                userDedup.Transaction = tx;
+                userDedup.CommandText = record.PuzzleHash is not null
+                    ? "SELECT COUNT(1) FROM history WHERE date = @date AND user_id = @userId AND puzzle_hash = @hash"
+                    : "SELECT COUNT(1) FROM history WHERE date = @date AND user_id = @userId AND puzzle_hash IS NULL";
+                AddParam(userDedup, "@date", date);
+                AddParam(userDedup, "@userId", record.UserId);
+                if (record.PuzzleHash is not null)
+                    AddParam(userDedup, "@hash", record.PuzzleHash);
+
+                var userCount = Convert.ToInt64(await userDedup.ExecuteScalarAsync(), CultureInfo.InvariantCulture);
+                if (userCount > 0)
+                {
+                    await tx.CommitAsync();
+                    return;
+                }
+            }
+
+            // Deduplicate by name+time+timestamp (fallback for anonymous users)
             await using (var dedup = conn.CreateCommand())
             {
                 dedup.Transaction = tx;

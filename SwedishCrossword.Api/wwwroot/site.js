@@ -1443,6 +1443,9 @@ async function submitScore() {
 }
 
 async function finishScoreSubmission(username, updateAlias) {
+    if (hasSubmittedScore) return;
+    hasSubmittedScore = true;
+
     if (updateAlias && authUser) {
         try {
             const res = await fetch(`${LEADERBOARD_PROXY_URL}/auth/alias`, {
@@ -1467,7 +1470,6 @@ async function finishScoreSubmission(username, updateAlias) {
 
     localStorage.setItem('crossword-username', username);
 
-    hasSubmittedScore = true;
     await addToLeaderboard(username, seconds);
 
     closeModal();
