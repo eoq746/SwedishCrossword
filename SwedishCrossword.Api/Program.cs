@@ -20,6 +20,10 @@ builder.WebHost.ConfigureKestrel(options =>
     options.Limits.MaxRequestBodySize = 100 * 1024;
 });
 
+// Seed persistent word list directory from baked-in data on first boot.
+// Admin clue edits write to the persistent volume so they survive restarts/deploys.
+WordListSeeder.SeedIfNeeded();
+
 // Register domain services
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddSingleton<SwedishDictionary>();

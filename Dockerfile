@@ -57,6 +57,8 @@ ENV ASPNETCORE_URLS=http://+:8080
 ENV Storage__PuzzlePath=/data/puzzles
 ENV Storage__LeaderboardPath=/data/leaderboard
 ENV SWEDISH_CROSSWORD_CACHE_PATH=/data/cache
+ENV SWEDISH_CROSSWORD_WORDLIST_PATH=/data/wordlists
+ENV SWEDISH_CROSSWORD_SEED_DATA_PATH=/app/Data
 
 # Run as non-root. The official aspnet image ships a pre-created `app`
 # user (uid 1654). Ensure mounted /data is writable by this user.
