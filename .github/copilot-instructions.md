@@ -26,7 +26,7 @@
 
 ## Code Formatting
 - Enforce local formatting in pre-commit hooks instead of a separate pre-push hook.
-- Use CRLF line endings for package.json to maintain repository formatting consistency.
+- Use CRLF line endings for all files under frontend/ to maintain repository formatting consistency, including package.json.
 
 ## Version Control
 - Before committing work, create and use a feature branch rather than committing directly from the current branch.
