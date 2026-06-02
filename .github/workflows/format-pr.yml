@@ -51,7 +51,10 @@ jobs:
         run: |
           set -euo pipefail
           if [ -d frontend ]; then
-            find frontend -type f -print0 | xargs -0 sed -i 's/$/\r/'
+            git ls-files -z frontend | while IFS= read -r -d '' file; do
+              sed -i 's/\r$//' "$file"
+              sed -i 's/$/\r/' "$file"
+            done
           fi
 
       - name: Commit formatting changes
@@ -107,7 +110,10 @@ jobs:
         run: |
           set -euo pipefail
           if [ -d frontend ]; then
-            find frontend -type f -print0 | xargs -0 sed -i 's/$/\r/'
+            git ls-files -z frontend | while IFS= read -r -d '' file; do
+              sed -i 's/\r$//' "$file"
+              sed -i 's/$/\r/' "$file"
+            done
           fi
 
       - name: Create patch artifact
