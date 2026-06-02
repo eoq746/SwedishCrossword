@@ -8,9 +8,7 @@ on:
       - '.github/workflows/daily-crossword.yml'
   pull_request:
     branches: [master]
-    paths-ignore:
-      - '**/*.md'
-      - '.github/workflows/daily-crossword.yml'
+    
   workflow_dispatch:
 
 permissions:
