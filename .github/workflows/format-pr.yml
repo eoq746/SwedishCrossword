@@ -38,6 +38,13 @@ jobs:
           dotnet format whitespace --no-restore
           dotnet format style --no-restore
 
+      - name: Enforce CRLF for frontend files
+        run: |
+          set -euo pipefail
+          if [ -d frontend ]; then
+            find frontend -type f -print0 | xargs -0 sed -i 's/$/\r/'
+          fi
+
       - name: Commit formatting changes
         run: |
           set -euo pipefail
@@ -77,6 +84,13 @@ jobs:
           set -euo pipefail
           dotnet format whitespace --no-restore
           dotnet format style --no-restore
+
+      - name: Enforce CRLF for frontend files
+        run: |
+          set -euo pipefail
+          if [ -d frontend ]; then
+            find frontend -type f -print0 | xargs -0 sed -i 's/$/\r/'
+          fi
 
       - name: Create patch artifact
         run: |
