@@ -43,12 +43,21 @@ jobs:
         if: steps.download.outcome == 'success'
         run: |
           set -euo pipefail
+
+          if [ ! -d .download ]; then
+            echo "No downloaded artifact directory found. Skipping apply workflow."
+            echo "artifact_root=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           ARTIFACT_ROOT=$(find .download -type f -name head_sha -exec dirname {} \; | head -1)
           if [ -z "${ARTIFACT_ROOT:-}" ]; then
-            echo "Downloaded artifact is missing expected metadata files."
-            find .download -maxdepth 3 -type f | sort
-            exit 1
+            echo "No matching Dependabot format artifact metadata found. Skipping apply workflow."
+            find .download -maxdepth 3 -type f | sort || true
+            echo "artifact_root=" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+
           echo "artifact_root=$ARTIFACT_ROOT" >> "$GITHUB_OUTPUT"
 
       - name: Validate run and artifact metadata
