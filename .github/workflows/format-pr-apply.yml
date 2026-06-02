@@ -35,7 +35,7 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           pattern: dependabot-format-*
           path: .download
-          github-token: ${{ steps.app-token.outputs.token }}
+          github-token: ${{ github.token }}
         continue-on-error: true
 
       - name: Locate artifact root
@@ -55,7 +55,7 @@ jobs:
         id: meta
         if: steps.locate.outputs.artifact_root != ''
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ github.token }}
           RUN_ID: ${{ github.event.workflow_run.id }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
