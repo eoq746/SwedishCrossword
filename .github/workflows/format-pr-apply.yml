@@ -21,6 +21,13 @@ jobs:
       actions: read
       contents: write
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
       - name: Download artifact from triggering run
         id: download
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
@@ -28,7 +35,7 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           pattern: dependabot-format-*
           path: .download
-          github-token: ${{ github.token }}
+          github-token: ${{ steps.app-token.outputs.token }}
         continue-on-error: true
 
       - name: Locate artifact root
@@ -48,7 +55,7 @@ jobs:
         id: meta
         if: steps.locate.outputs.artifact_root != ''
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           RUN_ID: ${{ github.event.workflow_run.id }}
           REPO: ${{ github.repository }}
           RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
@@ -94,7 +101,8 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: ${{ steps.meta.outputs.head_ref }}
-          token: ${{ github.token }}
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
       - name: Apply formatted files and push
         if: steps.meta.outputs.head_ref != ''
@@ -127,6 +135,6 @@ jobs:
           git config --local user.name "github-actions"
           git add -A
           git commit -m "style: auto-format code with dotnet format"
-          git push
+          git push "https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/${{ github.repository }}.git" "HEAD:${{ steps.meta.outputs.head_ref }}"
 
           echo "Applied and pushed formatting updates to $APPLIED_COUNT file(s)."
