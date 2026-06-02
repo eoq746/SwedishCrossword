@@ -21,6 +21,13 @@ jobs:
       actions: read
       contents: write
     steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+
       - name: Download artifact from triggering run
         id: download
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
@@ -36,12 +43,21 @@ jobs:
         if: steps.download.outcome == 'success'
         run: |
           set -euo pipefail
+
+          if [ ! -d .download ]; then
+            echo "No downloaded artifact directory found. Skipping apply workflow."
+            echo "artifact_root=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
           ARTIFACT_ROOT=$(find .download -type f -name head_sha -exec dirname {} \; | head -1)
           if [ -z "${ARTIFACT_ROOT:-}" ]; then
-            echo "Downloaded artifact is missing expected metadata files."
-            find .download -maxdepth 3 -type f | sort
-            exit 1
+            echo "No matching Dependabot format artifact metadata found. Skipping apply workflow."
+            find .download -maxdepth 3 -type f | sort || true
+            echo "artifact_root=" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+
           echo "artifact_root=$ARTIFACT_ROOT" >> "$GITHUB_OUTPUT"
 
       - name: Validate run and artifact metadata
@@ -94,12 +110,16 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
           ref: ${{ steps.meta.outputs.head_ref }}
-          token: ${{ github.token }}
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: false
 
       - name: Apply formatted files and push
         if: steps.meta.outputs.head_ref != ''
         env:
           ARTIFACT_ROOT: ${{ steps.locate.outputs.artifact_root }}
+          HEAD_REF: ${{ steps.meta.outputs.head_ref }}
+          REPO: ${{ github.repository }}
+          APP_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           set -euo pipefail
 
@@ -123,10 +143,26 @@ jobs:
             exit 0
           fi
 
+          case "$HEAD_REF" in
+            ""|*..*|*~*|*^*|*:*|*\\*|*@\{*|*.lock|/*|*/ )
+              echo "Unsafe or invalid head ref: $HEAD_REF"
+              exit 1
+              ;;
+          esac
+          if ! printf '%s' "$HEAD_REF" | grep -Eq '^[A-Za-z0-9._/-]+$'; then
+            echo "Unsafe characters in head ref: $HEAD_REF"
+            exit 1
+          fi
+
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions"
           git add -A
+          if git diff --cached --quiet; then
+            echo "No commit needed after staging."
+            exit 0
+          fi
+
           git commit -m "style: auto-format code with dotnet format"
-          git push
+          git push "https://x-access-token:${APP_TOKEN}@github.com/$REPO.git" "HEAD:$HEAD_REF"
 
           echo "Applied and pushed formatting updates to $APPLIED_COUNT file(s)."
