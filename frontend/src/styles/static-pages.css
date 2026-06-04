@@ -1671,3 +1671,108 @@ button {
   cursor: not-allowed;
 }
 
+/* ─────────────────────────────────────────────
+   Hero CTA — forward navigation button-link used
+   inside hero cards (replaces .back-link there).
+───────────────────────────────────────────── */
+.hero-cta {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 8px 18px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  text-decoration: none;
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+}
+.hero-cta:hover {
+  background: color-mix(in srgb, var(--accent) 85%, #000);
+  box-shadow: 0 2px 8px var(--shadow-md, rgba(0, 0, 0, 0.25));
+}
+.hero-cta:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* ─────────────────────────────────────────────
+   Page intro — reusable explanatory block used
+   below the hero area on content-light pages.
+───────────────────────────────────────────── */
+.page-intro {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.page-intro h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 6px;
+}
+.page-intro p {
+  color: var(--text-body);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.page-intro ul {
+  color: var(--text-body);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  padding-left: 1.4em;
+  list-style: disc;
+  list-style-position: outside;
+  margin: 6px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.page-intro section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ─────────────────────────────────────────────
+   About blurb — short descriptive section on
+   the index page below the hero cards.
+───────────────────────────────────────────── */
+.about-blurb {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+}
+.about-blurb h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+.about-blurb p {
+  color: var(--text-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* ─────────────────────────────────────────────
+   Ad slot — structural container for ad units.
+   Empty by default; AdSense <ins> tag goes inside.
+   Sits between <main> and <footer> in Layout.
+───────────────────────────────────────────── */
+.ad-slot {
+  width: 100%;
+  min-height: 0; /* collapses when empty, expands when ad loads */
+  text-align: center;
+}
+.ad-slot--below-content {
+  margin: 8px 0 0;
+  padding: 0 4px;
+}
+
