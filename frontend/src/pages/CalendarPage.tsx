@@ -192,6 +192,24 @@ export default function CalendarPage() {
           </span>
         </div>
       </section>
+
+      <div className="page-intro">
+        <section>
+          <h2>Om arkivet</h2>
+          <p>
+            Arkivet innehåller alla korsord som publicerats sedan sajten lanserades. Varje datum har
+            tre versioner — <strong>Liten (10×10)</strong>, <strong>Mellan (15×15)</strong> och{' '}
+            <strong>Stor (17×17)</strong> — och du väljer storlek med knapparna ovanför kalendern.
+          </p>
+        </section>
+        <section>
+          <h2>Spela i din egen takt</h2>
+          <p>
+            Arkivkorsord räknas inte in på den dagliga topplistan, så du kan ta din tid och lösa dem
+            utan press. Dina genomförda arkivpussel sparas i din spelhistorik om du är inloggad.
+          </p>
+        </section>
+      </div>
     </div>
   );
 }

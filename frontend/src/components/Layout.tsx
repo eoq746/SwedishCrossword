@@ -107,13 +107,13 @@ export default function Layout({ children }: LayoutProps) {
                       href={`/api/auth/login/google?returnUrl=${returnUrl}`}
                       onClick={() => setLoginOpen(false)}
                     >
-                      🔵 Logga in med Google
+                      <span aria-hidden="true">🔵</span> Logga in med Google
                     </a>
                     <a
                       href={`/api/auth/login/microsoft?returnUrl=${returnUrl}`}
                       onClick={() => setLoginOpen(false)}
                     >
-                      🟦 Logga in med Microsoft
+                      <span aria-hidden="true">🟦</span> Logga in med Microsoft
                     </a>
                   </div>
                 )}
@@ -131,6 +131,9 @@ export default function Layout({ children }: LayoutProps) {
         </nav>
 
         <main>{children}</main>
+
+        {/* Ad slot — insert AdSense <ins> tag here when configuring ads */}
+        <div className="ad-slot ad-slot--below-content" aria-label="Annons" role="complementary" />
 
         <footer className="site-footer" role="contentinfo">
           <nav aria-label="Sidfot">

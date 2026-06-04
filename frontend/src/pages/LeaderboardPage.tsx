@@ -245,6 +245,34 @@ export default function LeaderboardPage() {
         </section>
 
         <Link to="/puzzle" className="back-link">🎯 Spela dagens korsord</Link>
+
+        <div className="page-intro">
+          <section>
+            <h2>Hur fungerar topplistan?</h2>
+            <p>
+              Topplistan visar de tio snabbaste tiderna för dagens korsord i vald storlek. Den
+              nollställs automatiskt varje natt vid midnatt UTC, så varje dag börjar med en
+              helt ny tävling.
+            </p>
+          </section>
+          <section>
+            <h2>Hur hamnar jag på listan?</h2>
+            <ul>
+              <li>Lös dagens korsord — tid mäts från att du gör din första knapptryckning.</li>
+              <li>När du är klar visas en ruta där du kan ange ett valfritt alias.</li>
+              <li>Ingen inloggning krävs för att delta på topplistan.</li>
+              <li>Loggar du in med Google eller Microsoft sparas din statistik och du kan utmana vänner.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Vad innebär märkena?</h2>
+            <ul>
+              <li><strong>✓ Verifierat konto</strong> — spelaren är inloggad och verifierad.</li>
+              <li><strong>👤 Gäst</strong> — spelaren deltog utan att logga in.</li>
+              <li><strong>💡 Ledtrådar</strong> — antal ledtrådshjälpmedel som användes under lösningen.</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </>
   );

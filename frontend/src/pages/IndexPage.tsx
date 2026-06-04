@@ -56,12 +56,25 @@ export default function IndexPage() {
             </span>
             <h2>{card.title}</h2>
             <p>{card.desc}</p>
-            <Link to={card.to} className="back-link">
+            <Link to={card.to} className="hero-cta">
               {card.cta}
             </Link>
           </div>
         ))}
       </div>
+
+      <section className="about-blurb">
+        <h2>Vad är Svenskt Korsord?</h2>
+        <p>
+          Varje dag publicerar vi ett nytt gratis korsord på svenska — utan krav på registrering.
+          Välj bland tre storlekar (10×10, 15×15 eller 17×17) och börja spela direkt i webbläsaren.
+        </p>
+        <p>
+          Vill du tävla med andra? Ange ett valfritt alias och klättra på den dagliga topplistan.
+          Logga in med Google eller Microsoft för att spara statistik och utmana vänner — helt
+          frivilligt.
+        </p>
+      </section>
     </>
   );
 }
