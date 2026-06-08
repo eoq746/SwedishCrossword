@@ -786,6 +786,10 @@ async function renderPersonalStats() {
     }
 }
 
+function analyzeInputPattern() {
+    if (!ANTI_CHEAT.enabled) return { valid: true, reasons: [] };
+    const reasons = [];
+    const cellCount = countCells();
 
     // Check 1: Minimum time threshold
     const minTime = cellCount * ANTI_CHEAT.minTimePerCell;

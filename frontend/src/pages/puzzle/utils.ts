@@ -38,3 +38,43 @@ export function loadLocalLeaderboard(date: string, puzzleHash: string): ScoreEnt
 export function saveLocalLeaderboard(date: string, puzzleHash: string, entries: ScoreEntry[]): void {
   localStorage.setItem(getLeaderboardStorageKey(date, puzzleHash), JSON.stringify(entries.slice(0, 10)));
 }
+
+// ── ARIA live-region announcements ──
+let _announceTimer: ReturnType<typeof setTimeout> | null = null;
+export function announce(message: string): void {
+  const el = document.getElementById('announcements');
+  if (!el) return;
+  el.textContent = message;
+  if (_announceTimer !== null) clearTimeout(_announceTimer);
+  _announceTimer = setTimeout(() => {
+    el.textContent = '';
+    _announceTimer = null;
+  }, 1000);
+}
+
+// ── One-time stale localStorage purge (matches §6 purgeStaleLocalStorage in site.js) ──
+const STATS_RESET_DATE = '2026-04-14';
+const LOCAL_STORAGE_RESET_KEY = 'dataResetDate';
+
+export function purgeStaleLocalStorage(): void {
+  try {
+    if (localStorage.getItem(LOCAL_STORAGE_RESET_KEY) === STATS_RESET_DATE) return;
+
+    const keysToRemove: string[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key) continue;
+      const lbMatch = key.match(/^crossword-leaderboard-(\d{4}-\d{2}-\d{2})/);
+      if (lbMatch && lbMatch[1] < STATS_RESET_DATE) { keysToRemove.push(key); continue; }
+      if (key.startsWith('crossword-progress-')) { keysToRemove.push(key); continue; }
+      if (key.startsWith('solution-viewed-')) { keysToRemove.push(key); continue; }
+    }
+    keysToRemove.forEach(k => localStorage.removeItem(k));
+    localStorage.setItem(LOCAL_STORAGE_RESET_KEY, STATS_RESET_DATE);
+    if (keysToRemove.length > 0) {
+      console.log(`Purged ${keysToRemove.length} stale localStorage entries (reset date: ${STATS_RESET_DATE})`);
+    }
+  } catch (e) {
+    console.warn('Failed to purge stale localStorage:', e);
+  }
+}
