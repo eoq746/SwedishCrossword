@@ -314,7 +314,7 @@ resource fileShare 'Microsoft.Storage/storageAccounts/fileServices/shares@2023-0
 }
 
 // ---------------------------------------------------------------------------
-// Azure SQL Server + DTU Standard S0 database (Entra-only authentication)
+// Azure SQL Server + DTU Basic database (Entra-only authentication)
 // ---------------------------------------------------------------------------
 resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = if (deployDatabase) {
   name: take(sqlServerName, 63)
@@ -384,12 +384,12 @@ resource sqlDb 'Microsoft.Sql/servers/databases@2023-08-01-preview' = if (deploy
   name: sqlDbName
   location: location
   sku: {
-    name: 'S0'
-    tier: 'Standard'
+    name: 'Basic'
+    tier: 'Basic'
   }
   properties: {
     collation: 'SQL_Latin1_General_CP1_CI_AS'
-    maxSizeBytes: 268435456000 // 250 GB included with Standard S0
+    maxSizeBytes: 2147483648 // 2 GB max on Basic, still far above current usage
   }
 }
 
@@ -421,8 +421,8 @@ resource sqlPitrPolicy 'Microsoft.Sql/servers/databases/backupShortTermRetention
 //   }
 
 // Connection Timeout=60 and SqlClient connect retries provide extra headroom
-// for transient network events and scale operations even though this DTU tier
-// no longer relies on serverless auto-pause/resume.
+// for transient network events and scale operations on the lower-cost always-on
+// DTU tier.
 var sqlConnectionString = deployDatabase ? 'Server=tcp:${sqlServer!.properties.fullyQualifiedDomainName},1433;Database=${sqlDbName};Authentication=Active Directory Managed Identity;User Id=${identity.properties.clientId};Encrypt=True;TrustServerCertificate=False;Connection Timeout=60;ConnectRetryCount=10;ConnectRetryInterval=10;' : ''
 
 // ---------------------------------------------------------------------------
@@ -545,8 +545,8 @@ resource containerApp 'Microsoft.App/containerApps@2024-03-01' = {
           name: 'api'
           image: containerImage
           resources: {
-            cpu: json('0.5')
-            memory: '1Gi'
+            cpu: json('0.25')
+            memory: '0.5Gi'
           }
           env: union(
             [

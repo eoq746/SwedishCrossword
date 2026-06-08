@@ -559,7 +559,7 @@ The `infra/main.bicep` template provisions everything needed:
 | Azure Container Registry | Hosts the Docker image (Basic SKU) |
 | Container Apps Environment | Serverless container host |
 | Storage Account + Azure Files | Persistent `/data` volume for puzzles and data protection keys (SMB mount) |
-| Azure SQL Database (Standard S0) | Leaderboard, history, user aliases, and friends storage (always-on, no auto-pause) |
+| Azure SQL Database (Basic) | Leaderboard, history, user aliases, and friends storage on the lowest DTU tier (always-on, no auto-pause) |
 | Log Analytics Workspace | Container logs and monitoring |
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull and Azure SQL authentication (Entra-only, no passwords) |
