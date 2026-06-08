@@ -479,7 +479,6 @@ static string? TryResolveHtmlFilePath(string webRootPath, PathString path)
 
     var relative = pathValue switch
     {
-        "/" or "" => "index.html",
         var p when p is not null && p.EndsWith(".html", StringComparison.OrdinalIgnoreCase) => p.TrimStart('/'),
         _ => null
     };
