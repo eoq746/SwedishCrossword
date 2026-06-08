@@ -5,6 +5,12 @@ type Theme = 'light' | 'dark';
 function resolveInitialTheme(): Theme {
   const stored = localStorage.getItem('theme');
   if (stored === 'light' || stored === 'dark') return stored;
+  // Migrate the legacy key used by site.js so existing users keep their preference.
+  const legacy = localStorage.getItem('crossword-theme');
+  if (legacy === 'light' || legacy === 'dark') {
+    try { localStorage.removeItem('crossword-theme'); } catch { /* ignore */ }
+    return legacy;
+  }
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 

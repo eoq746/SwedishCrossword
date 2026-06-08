@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { fetchChallenges, fetchFriends, fetchFriendsLeaderboard } from '../../api/profile';
 import type { FriendChallengeInfo, FriendsLeaderboardEntry } from '../../api/profile';
 import type { AuthUser } from '../../hooks/useAuth';
@@ -16,9 +16,11 @@ import type {
   ScoreEntry,
 } from './types';
 import { buildClueEntries } from './gridModel';
+import { recordPuzzleSolve } from '../../hooks/usePlayerStats';
 import { findBestEntry, findFirstFillableCell, navReducer } from './navigation';
 import { usePuzzleGridInput } from './usePuzzleGridInput';
 import {
+  announce,
   formatTime,
   getProgressKey,
   getTodayIso,
@@ -57,8 +59,14 @@ function removeLocalStorage(key: string): void {
 }
 
 const LEADERBOARD_TAB_KEY = 'crossword-leaderboard-tab';
+const PENDING_SCORE_KEY = 'crossword-pending-score';
 
 type LeaderboardTab = 'global' | 'friends';
+
+type AutoCheckFeedback = {
+  tone: 'info' | 'error';
+  text: string;
+};
 
 export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [loading, setLoading] = useState(true);
@@ -68,6 +76,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [seconds, setSeconds] = useState(0);
   const [puzzleSolved, setPuzzleSolved] = useState(false);
   const [hasSubmittedScore, setHasSubmittedScore] = useState(false);
+  const [revealedSolution, setRevealedSolution] = useState(false);
   const [letterHintsUsed, setLetterHintsUsed] = useState(0);
   const [wordHintsUsed, setWordHintsUsed] = useState(0);
   const [values, setValues] = useState<Record<string, string>>({});
@@ -85,6 +94,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [history, setHistory] = useState<HistoryResponse>({});
   const [usernameModalOpen, setUsernameModalOpen] = useState(false);
   const [username, setUsername] = useState('');
+  const [autoCheckFeedback, setAutoCheckFeedback] = useState<AutoCheckFeedback | null>(null);
+
+  const autoCheckTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const runAutoCheckRef = useRef<(() => Promise<CheckResult>) | null>(null);
 
   const [nav, dispatchNav] = useReducer(navReducer, {
     active: null,
@@ -182,12 +195,22 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     [puzzle],
   );
 
-  const finishSolvedPuzzle = useCallback(() => {
+  const finishSolvedPuzzle = useCallback((solveSeconds: number, lHints: number, wHints: number) => {
     setPuzzleSolved(true);
     clearProgress();
     setUsernameModalOpen(true);
     setUsername(user?.alias ?? user?.name ?? readLocalStorage('crossword-username') ?? '');
-  }, [clearProgress, user?.alias, user?.name]);
+
+    // Record in local per-device stats
+    recordPuzzleSolve(size, solveSeconds);
+
+    // Announce to screen readers
+    const hintParts: string[] = [];
+    if (lHints > 0) hintParts.push(`${lHints} bokst${lHints > 1 ? 'äver' : 'av'}`);
+    if (wHints > 0) hintParts.push(`${wHints} ord`);
+    const hintMsg = hintParts.length > 0 ? ` med ${hintParts.join(', ')}` : '';
+    announce(`Grattis! Du löste korsordet på ${formatTime(solveSeconds)}${hintMsg}`);
+  }, [clearProgress, size, user?.alias, user?.name]);
 
   const fetchLeaderboard = useCallback(async () => {
     if (!puzzleHash || !puzzleDate) return;
@@ -288,12 +311,14 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
         setSeconds(0);
         setPuzzleSolved(false);
         setHasSubmittedScore(false);
+        setRevealedSolution(false);
         setLetterHintsUsed(0);
         setWordHintsUsed(0);
         setValues({});
         setIncorrectCells({});
         setEmptyWarningCells({});
         setHintRevealedCells({});
+        setAutoCheckFeedback(null);
         setUsernameModalOpen(false);
 
         const first = findFirstFillableCell(data);
@@ -365,6 +390,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     writeLocalStorage(LEADERBOARD_TAB_KEY, activeLeaderboardTab);
   }, [activeLeaderboardTab]);
 
+  const clearAutoCheckFeedback = useCallback(() => {
+    setAutoCheckFeedback(null);
+  }, []);
+
   const { handleCellChange, handleCellKeyDown } = usePuzzleGridInput({
     puzzle,
     puzzleSolved,
@@ -380,9 +409,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setValues,
     setIncorrectCells,
     setEmptyWarningCells,
+    clearAutoCheckFeedback,
   });
 
-  const checkAnswers = useCallback(async (): Promise<CheckResult> => {
+  const validateAnswers = useCallback(async (): Promise<CheckResult> => {
     if (!puzzle || puzzleSolved) return { status: 'incorrect', emptyCount: 0, incorrectCount: 0 };
 
     const cells: Record<string, string> = {};
@@ -431,7 +461,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       setEmptyWarningCells({});
 
       if (data.solved) {
-        finishSolvedPuzzle();
+        finishSolvedPuzzle(seconds, letterHintsUsed, wordHintsUsed);
         return { status: 'solved', emptyCount: 0, incorrectCount: 0 };
       }
 
@@ -447,6 +477,55 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     }
   }, [fillableCells, finishSolvedPuzzle, puzzle, puzzleDate, puzzleSolved, size, values]);
 
+  const checkAnswers = useCallback(async (): Promise<CheckResult> => {
+    clearAutoCheckFeedback();
+    return await validateAnswers();
+  }, [clearAutoCheckFeedback, validateAnswers]);
+
+  const runAutoCheck = useCallback(async (): Promise<CheckResult> => {
+    const result = await validateAnswers();
+
+    if (result.status === 'incomplete') {
+      setAutoCheckFeedback({
+        tone: 'info',
+        text: `${result.emptyCount} rutor saknas fortfarande.`,
+      });
+      return result;
+    }
+
+    if (result.status === 'incorrect') {
+      setAutoCheckFeedback({
+        tone: 'error',
+        text: `${result.incorrectCount} bokstäver är felaktiga.`,
+      });
+      return result;
+    }
+
+    setAutoCheckFeedback(null);
+    return result;
+  }, [validateAnswers]);
+
+  // Keep a stable ref to the auto-check runner so the timer always calls the latest version.
+  runAutoCheckRef.current = runAutoCheck;
+
+  // Auto-check: when every fillable cell is filled, trigger a passive validation after a short debounce.
+  // Uses runAutoCheckRef so the callback is never stale even across re-renders.
+  useEffect(() => {
+    if (puzzleSolved || fillableCells.length === 0) return;
+    const allFilled = fillableCells.every(c => Boolean(values[`${c.row},${c.col}`]));
+    if (!allFilled) return;
+
+    if (autoCheckTimerRef.current !== null) clearTimeout(autoCheckTimerRef.current);
+    autoCheckTimerRef.current = setTimeout(() => {
+      autoCheckTimerRef.current = null;
+      void runAutoCheckRef.current?.();
+    }, 300);
+
+    return () => {
+      if (autoCheckTimerRef.current !== null) clearTimeout(autoCheckTimerRef.current);
+    };
+  }, [values, fillableCells, puzzleSolved]);
+
   const clearGrid = useCallback(() => {
     setValues({});
     setIncorrectCells({});
@@ -454,8 +533,9 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setHintRevealedCells({});
     setLetterHintsUsed(0);
     setWordHintsUsed(0);
+    clearAutoCheckFeedback();
     clearProgress();
-  }, [clearProgress]);
+  }, [clearAutoCheckFeedback, clearProgress]);
 
   const revealSolution = useCallback(async (): Promise<RevealSolutionResult> => {
     if (!puzzle || puzzleSolved || !puzzle.submissionToken || !puzzleDate) return 'unavailable';
@@ -496,8 +576,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setHintRevealedCells(nextHints);
     setIncorrectCells({});
     setEmptyWarningCells({});
+    clearAutoCheckFeedback();
     setPuzzleSolved(true);
     setHasSubmittedScore(true);
+    setRevealedSolution(true);
     clearProgress();
     return 'ok';
   }, [clearProgress, fillableCells, puzzle, puzzleDate, puzzleSolved, size]);
@@ -531,6 +613,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       saveProgress(next, seconds, letterHintsUsed + 1, wordHintsUsed);
       return next;
     });
+    clearAutoCheckFeedback();
     setHintRevealedCells(prev => ({ ...prev, [key]: true }));
     setIncorrectCells(prev => {
       const next = { ...prev };
@@ -543,7 +626,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       return next;
     });
     setLetterHintsUsed(v => v + 1);
-
+    announce(`Avslöjade: ${revealed}`);
     return 'ok';
   }, [letterHintsUsed, nav.active, puzzle, puzzleDate, puzzleSolved, saveProgress, seconds, size, wordHintsUsed]);
 
@@ -581,6 +664,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
 
     if (resolvedLetters.some(entry => !entry.letter)) return 'unavailable';
 
+    clearAutoCheckFeedback();
     setValues(prev => {
       const next = { ...prev };
       for (const entry of resolvedLetters) {
@@ -596,9 +680,104 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       return next;
     });
     setWordHintsUsed(nextHints);
-
+    announce(`Avslöjade helt ord (${resolvedLetters.length} bokstäver)`);
     return 'ok';
   }, [activeEntry, letterHintsUsed, nav.active, puzzle, puzzleDate, puzzleSolved, saveProgress, seconds, size, wordHintsUsed]);
+
+  const generateShareText = useCallback((revealedSolution: boolean): string => {
+    const w = puzzle?.width ?? 0;
+    const h = puzzle?.height ?? 0;
+    const sizeKey = size;
+    const date = puzzleDate;
+    const puzzleUrl = `https://svensktkorsord.se/app/puzzle?date=${date}&size=${sizeKey}`;
+
+    if (revealedSolution) {
+      return `🇸🇪 Svenskt Korsord ${date}\n📐 ${w}×${h}\n\nTesta dagens korsord! 👇\n${puzzleUrl}`;
+    }
+
+    const time = formatTime(seconds);
+    const lH = letterHintsUsed;
+    const wH = wordHintsUsed;
+    const hintParts: string[] = [];
+    if (lH > 0) hintParts.push(`${lH} bokst${lH > 1 ? 'äver' : 'av'}`);
+    if (wH > 0) hintParts.push(`${wH} ord`);
+
+    // Build emoji grid
+    let emojiGrid = '';
+    if (puzzle) {
+      for (let r = 0; r < puzzle.height; r++) {
+        let row = '';
+        for (let c = 0; c < puzzle.width; c++) {
+          if (puzzle.cells[r]?.[c] === null) {
+            row += '⬛';
+          } else {
+            const key: CellKey = `${r},${c}`;
+            row += hintRevealedCells[key] ? '🟨' : '🟩';
+          }
+        }
+        emojiGrid += row + '\n';
+      }
+    }
+
+    let text = `🇸🇪 Svenskt Korsord ${date}\n📐 ${w}×${h}\n⏱️ ${time}\n`;
+    text += hintParts.length > 0 ? `💡 ${hintParts.join(', ')}\n` : `🏅 Inga ledtrådar!\n`;
+    text += `\n${emojiGrid}\nKan du slå min tid? 👇\n${puzzleUrl}`;
+    return text;
+  }, [hintRevealedCells, letterHintsUsed, puzzle, puzzleDate, seconds, size, wordHintsUsed]);
+
+  /** Save a pending score to localStorage so it can be restored after login. */
+  const savePendingScore = useCallback(() => {
+    if (!puzzleHash) return;
+    try {
+      writeLocalStorage(PENDING_SCORE_KEY, JSON.stringify({
+        puzzleHash,
+        seconds,
+        letterHintsUsed,
+        wordHintsUsed,
+        date: puzzleDate,
+        timestamp: Date.now(),
+      }));
+    } catch (e) {
+      console.warn('Failed to save pending score:', e);
+    }
+  }, [letterHintsUsed, puzzleDate, puzzleHash, seconds, wordHintsUsed]);
+
+  /** Restore a pending score after the user logs in, if it matches the current puzzle. */
+  const checkAndRestorePendingScore = useCallback(() => {
+    if (!user || !puzzleHash || hasSubmittedScore) return;
+    try {
+      const raw = readLocalStorage(PENDING_SCORE_KEY);
+      if (!raw) return;
+      const pending = JSON.parse(raw) as {
+        puzzleHash: string;
+        seconds: number;
+        letterHintsUsed?: number;
+        wordHintsUsed?: number;
+        timestamp: number;
+      };
+      const TEN_MIN = 10 * 60 * 1000;
+      if (pending.puzzleHash !== puzzleHash || Date.now() - pending.timestamp >= TEN_MIN) {
+        removeLocalStorage(PENDING_SCORE_KEY);
+        return;
+      }
+      removeLocalStorage(PENDING_SCORE_KEY);
+      setSeconds(pending.seconds);
+      setLetterHintsUsed(pending.letterHintsUsed ?? 0);
+      setWordHintsUsed(pending.wordHintsUsed ?? 0);
+      // Record local stats for the restored solve (size comes from the hook's size prop)
+      recordPuzzleSolve(size, pending.seconds);
+      setPuzzleSolved(true);
+      setUsernameModalOpen(true);
+      setUsername(user.alias ?? user.name ?? readLocalStorage('crossword-username') ?? '');
+    } catch (e) {
+      console.warn('Failed to restore pending score:', e);
+    }
+  }, [hasSubmittedScore, puzzleHash, user]);
+
+  // When the user logs in while a pending score exists, restore it.
+  useEffect(() => {
+    checkAndRestorePendingScore();
+  }, [checkAndRestorePendingScore]);
 
   const submitScore = useCallback(async () => {
     if (!puzzle || !puzzleHash || !puzzleDate || hasSubmittedScore) return false;
@@ -691,6 +870,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     seconds,
     puzzleSolved,
     hasSubmittedScore,
+    revealedSolution,
     letterHintsUsed,
     wordHintsUsed,
     values,
@@ -709,6 +889,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setUsernameModalOpen,
     username,
     setUsername,
+    savePendingScore,
     nav,
     clueEntries,
     activeEntry,
@@ -716,6 +897,8 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     totalFillableCount: fillableCells.length,
     progressPercent,
     currentHintSummary,
+    autoCheckFeedback,
+    clearAutoCheckFeedback,
     activateCell,
     handleCellChange,
     handleCellKeyDown,
@@ -726,6 +909,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     revealWord,
     submitScore,
     isClueFilled,
+    generateShareText,
   };
 }
 

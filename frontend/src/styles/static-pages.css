@@ -1173,6 +1173,20 @@ button {
   align-items: center;
   gap: 4px;
 }
+.grid-status-pill-notice {
+  border-width: 1px;
+  font-weight: 700;
+}
+.grid-status-pill-notice-info {
+  color: var(--text-body);
+  background: var(--surface-bg);
+  border-color: var(--border);
+}
+.grid-status-pill-notice-error {
+  color: var(--error-text, var(--warn-text, var(--warn-border)));
+  background: var(--error-bg, var(--warn-bg));
+  border-color: var(--error-border, var(--warn-border));
+}
 .profile-empty {
   color: var(--text-muted);
   font-style: italic;

@@ -12,30 +12,32 @@ A Swedish crossword puzzle generator
 - **Multiple Puzzle Sizes**: Small (9×9), Mobile (10×10), Easy (11×11), Medium (15×15), and Hard (17×17) presets — the web player offers 10×10, 15×15, and 17×17 via a unified landing-page card grid (size picker + archive link, extensible by adding entries to `PuzzleWarmupService.PuzzleSizes`)
 - **Daily Puzzles**: Pre-generates today's puzzle plus 7 days ahead at startup, with hourly refresh; generates all configured sizes (10×10, 15×15, 17×17) per day
 - **API-First Architecture**: Output caching, Brotli + Gzip response compression, per-IP rate limiting, security headers, CORS, and OpenAPI documentation
-- **Interactive Web Player**: Browser-based crossword player with:
+- **Interactive Web Player**: React SPA (Vite + TypeScript, served at `/app`) with:
   - Keyboard navigation (arrow keys, space to toggle direction, Tab/Shift+Tab between clues)
-  - Progress tracking and timer with `localStorage` persistence
+  - Progress tracking and timer with `localStorage` persistence; auto-check triggers after 3 seconds of idle input
   - Hint system: reveal a single letter or an entire word via server-side validation (tracked and penalized on leaderboard)
   - Social sharing: Wordle-style emoji grid with solve time, shareable via Web Share API or clipboard
-  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence — consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
+  - Dark mode with system theme detection (`prefers-color-scheme`), manual toggle, and `localStorage` persistence (`useTheme` hook) — migrates the legacy `crossword-theme` key from the old site.js so existing users keep their preference; consistent across all pages via a dedicated CSS custom-property design-token file (`tokens.css`, 90+ design tokens)
   - Styled modal system (confirm/message pattern) for user interactions
   - Dedicated leaderboard route (`/leaderboard`) with medal podium for top 3, filtered by puzzle size
-  - Historical leaderboard showing top scores from the past 30 days, filtered by puzzle size (entries are grouped by puzzle when multiple puzzles occur on the same date)
-  - Player statistics per size: total solved, current/best streak, best time, average time — with automatic migration from legacy flat format
+  - Historical leaderboard showing top scores from the past 7 days on the leaderboard page, up to 30 days on the puzzle page, filtered by puzzle size
+  - Player statistics per size (`usePlayerStats` hook): total solved, current/best streak, best time, average time — stored in `localStorage` with per-size keys, automatic migration from legacy flat format, and reset-date–driven purge (`purgeStaleLocalStorage` at startup)
+  - Friends leaderboard on the puzzle page — tab switch between global and friends lists; last selected tab persisted via `localStorage`; empty states for no friends and no solves yet
   - Puzzle archive calendar with size-filter toggle buttons
   - Server-computed difficulty rating displayed per puzzle
-  - Mobile-responsive design (portrait and landscape modes) with collapsible panels and custom on-screen keyboard
-  - 503 handling: friendly "puzzle generating" page when puzzles aren't ready yet
+  - Mobile-responsive design (portrait and landscape modes) with collapsible panels, responsive layout calculations (`usePuzzleLayout`), and custom on-screen keyboard
+  - 503 handling: friendly "puzzle generating" page when puzzles aren't ready yet; DB unavailable banner (`DbUnavailableBanner`) for transient leaderboard/stats failures
   - In-game clue reporting (players can flag bad clues directly from the clues panel)
+  - GDPR cookie consent implemented as a floating React banner (`CookieBanner`) overlaying the page; choice stored as a timestamped JSON value (1-year expiry) with Google Consent Mode v2 signal dispatch on update
 - **PWA**: Web app manifest for installability (`site.webmanifest`)
 - **Accessibility**: ARIA labels and roles on all interactive elements, skip link, screen reader announcements via `aria-live` region, keyboard shortcuts dialog (`?` to toggle)
 - **Security**: HMAC-signed submission tokens, Content Security Policy (CSP) headers, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production, Kestrel server header suppressed
 - **Resilient Database Access**: Transient Azure SQL errors (throttling, deadlocks, failovers, and network drops) are detected via a shared `TransientSqlErrorClassifier`, retried inside `LeaderboardStore`, and surfaced to clients as HTTP 503 with `Retry-After: 30` (instead of 500) so the frontend can degrade gracefully
 - **Software Bill of Materials**: `scripts/generate-sbom.ps1` produces an SPDX 2.2 SBOM for the published API using the Microsoft SBOM Tool (aligned with the EU Cyber Resilience Act)
-- **Ads & Consent-Gated Loading**: Google AdSense is loaded via `cookie-consent.js`, which combines auth state (cached from `/api/auth/me`) and the GDPR banner choice into a three-way policy — signed-in users see no ads, signed-out users with `'all'` consent see personalized ads, and signed-out users with `'essential'`-only consent get non-personalized (NPA) ads. Third-party scripts are declared as `<script type="text/plain" data-consent-src="...">` placeholders that the script activates once consent is given
+- **Ads & Consent-Gated Loading**: Google AdSense is loaded via `cookie-consent.js`, which combines auth state (cached from `/api/auth/me`) and the GDPR banner choice into a three-way policy — signed-in users see no ads, signed-out users with `'all'` consent see personalized ads, and signed-out users with `'essential'`-only consent get non-personalized (NPA) ads. Third-party scripts are declared as `<script type="text/plain" data-consent-src="...">` placeholders that the script activates once consent is given. The React `CookieBanner` component provides a floating overlay UI and dispatches Google Consent Mode v2 `gtag` signals on update
 - **Authentication**: Optional sign-in via Google or Microsoft OAuth (cookie-based, 30-day sliding expiration). Opaque user identity derived from SHA256 hash of provider + subject claim — raw provider IDs are never stored
 - **User Profiles**: Signed-in users get a profile page with customisable alias, server-synced solve statistics, and friends management
-- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). Send dated friend challenges (accept/decline tracking) and view a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
+- **Friends System**: Send/accept/decline friend requests by alias, with mutual auto-accept (if both users send requests to each other). Send dated friend challenges (accept/decline tracking, per-puzzle results ranked by hints then time, expiry at end of challenge day in Swedish local time) and view a private friends leaderboard on the puzzle page. All friend data uses opaque IDs — no raw user identifiers are exposed to the frontend
 - **Server-Side Answer Validation**: Answers stripped from client JSON; `POST /api/puzzle/check` and `POST /api/puzzle/hint` endpoints validate against server-stored answers with token authentication
 - **Anti-cheat System**: HMAC-signed submission tokens (issued when a puzzle is fetched, required when submitting a score) with minimum solve-time enforcement, plus client-side DevTools detection and solution-view tracking via localStorage
 - **Bonus Words**: Detects valid accidental words formed during generation and includes them as extra clues
@@ -330,7 +332,50 @@ SwedishCrosswords/
 |   |-- appsettings.json            # Configuration
 |   +-- Properties/launchSettings.json
 |-- frontend/                       # React frontend source (Vite + TypeScript)
-|   |-- src/                        # React app routes, pages, hooks, API clients
+|   |-- src/
+|   |   |-- api/                    # Typed API client modules (leaderboard, profile, admin, clues, calendar, http)
+|   |   |-- components/             # Shared UI components
+|   |   |   |-- CookieBanner.tsx    # Floating GDPR consent banner with Google Consent Mode v2 signals
+|   |   |   |-- DbUnavailableBanner.tsx  # Dismissible banner shown when leaderboard DB is unavailable
+|   |   |   +-- Layout.tsx          # App shell: nav, theme toggle, login dropdown, mobile hamburger
+|   |   |-- hooks/
+|   |   |   |-- useAuth.ts          # Current authenticated user (fetched from /api/auth/me)
+|   |   |   |-- useDbStatus.ts      # Polls for DB unavailability to drive DbUnavailableBanner
+|   |   |   |-- usePageTitle.ts     # Sets document.title with site-name suffix
+|   |   |   |-- usePlayerStats.ts   # Local per-device puzzle stats (per size, streak, best time) with reset-date purge
+|   |   |   |-- useSEO.ts           # Dynamic meta tags, canonical URL, Open Graph, JSON-LD injection
+|   |   |   +-- useTheme.ts         # Dark/light mode with system detection and legacy key migration
+|   |   |-- pages/
+|   |   |   |-- puzzle/             # Puzzle page sub-modules (separated grid, clues, hooks)
+|   |   |   |   |-- gridModel.ts    # Data-driven cell model builder from PuzzleData
+|   |   |   |   |-- navigation.ts   # Reducer-based cell/direction navigation + bend-aware helpers
+|   |   |   |   |-- PuzzleClues.tsx # Clues panel: single column split into vågrätt/lodrätt with internal scroll
+|   |   |   |   |-- PuzzleGrid.tsx  # Grid wrapper (builds model, delegates rendering to PuzzleGridView)
+|   |   |   |   |-- PuzzleGridCell.tsx   # Individual cell renderer
+|   |   |   |   |-- PuzzleGridView.tsx   # Full grid renderer (aria, keyboard, focus)
+|   |   |   |   |-- PuzzleHistorySection.tsx    # Recent-days history panel
+|   |   |   |   |-- PuzzleLeaderboardSection.tsx # Global/friends tab leaderboard panel
+|   |   |   |   |-- types.ts        # Shared type definitions (PuzzleData, ClueEntry, ScoreEntry, …)
+|   |   |   |   |-- usePuzzleGame.ts # Central game state machine (timer, hints, auto-check, share, stats, pending-score restore)
+|   |   |   |   |-- usePuzzleGridInput.ts # Keyboard and input handling hook
+|   |   |   |   |-- usePuzzleLayout.ts    # Responsive layout size calculations
+|   |   |   |   +-- utils.ts        # Shared helpers: formatTime, announce, purgeStaleLocalStorage, localStorage wrappers
+|   |   |   |-- leaderboardUtils.ts      # resolveTodayEntriesForSize (hash-based lookup)
+|   |   |   |-- leaderboardUtils.test.ts # Vitest unit tests for leaderboard utils
+|   |   |   |-- AboutPage.tsx
+|   |   |   |-- AdminPage.tsx       # Admin dashboard: analytics, clue flags, custom clues, admin grants
+|   |   |   |-- CalendarPage.tsx    # Puzzle archive calendar with size filter
+|   |   |   |-- ContactPage.tsx
+|   |   |   |-- IndexPage.tsx
+|   |   |   |-- LeaderboardPage.tsx # Standalone leaderboard route (/leaderboard)
+|   |   |   |-- PlayLandingPage.tsx # Size/date picker landing page (/play)
+|   |   |   |-- PrivacyPolicyPage.tsx
+|   |   |   |-- ProfilePage.tsx     # Alias, server-synced stats, friends, challenges
+|   |   |   +-- PuzzlePage.tsx      # Puzzle UI shell (grid, clues, modals, stats panel, share, challenges)
+|   |   |-- utils/
+|   |   |   +-- seoSchemas.ts       # JSON-LD schema generators (breadcrumb, game, FAQ, leaderboard, …)
+|   |   |-- App.tsx                 # React Router routes (includes PuzzleRoute key-based remount on size/date change)
+|   |   +-- main.tsx                # Entry point: mounts React app, runs purgeStaleLocalStorage at startup
 |   |-- package.json                # Frontend scripts and dependencies
 |   +-- tsconfig.json               # TypeScript config
 |-- SwedishCrossword/               # CLI generator
@@ -514,7 +559,7 @@ The `infra/main.bicep` template provisions everything needed:
 | Azure Container Registry | Hosts the Docker image (Basic SKU) |
 | Container Apps Environment | Serverless container host |
 | Storage Account + Azure Files | Persistent `/data` volume for puzzles and data protection keys (SMB mount) |
-| Azure SQL Database (Standard S0) | Leaderboard, history, user aliases, and friends storage (always-on, no auto-pause) |
+| Azure SQL Database (Basic) | Leaderboard, history, user aliases, and friends storage on the lowest DTU tier (always-on, no auto-pause) |
 | Log Analytics Workspace | Container logs and monitoring |
 | Data Protection Keys | Persisted to Azure Files (`/data/leaderboard/keys/`) so auth cookies survive container restarts |
 | User-Assigned Managed Identity | Secure ACR pull and Azure SQL authentication (Entra-only, no passwords) |
@@ -597,14 +642,18 @@ dotnet run --project ClueHandler -- --patterns      # Generate clues via morphol
 ## Running Tests
 
 ```bash
-# Run unit tests
+# Run .NET unit tests
 dotnet test SwedishCrossword.Tests
 
-# Run API integration tests
+# Run .NET API integration tests
 dotnet test SwedishCrossword.Api.Tests
+
+# Run frontend unit tests (Vitest)
+cd frontend
+npx vitest run
 ```
 
-The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and includes:
+The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) for .NET and **[Vitest](https://vitest.dev/)** for the React frontend, and includes:
 - Grid cell and word model tests
 - Grid placement and connectivity tests
 - Swedish character handling tests (å, ä, ö)
@@ -620,6 +669,7 @@ The test suite uses **[TUnit](https://github.com/thomhurst/TUnit)** (v0.4.1) and
 - SubmissionTokenService unit tests (token generation, validation, access checks, answer stripping, expiry)
 - LeaderboardStore unit tests (SQLite storage, deduplication, pruning, analytics aggregation, JSON migration, friend requests, friends leaderboard)
 - TransientSqlErrorClassifier parameterized tests covering every documented Azure SQL transient error number (40613, 42108/9, 42119 Free-tier quota pause, 49918–49920, 40197, 40501, 10928/9, 10053/4/60, 1205, 4060, 233, 64, -2) plus negative cases for non-transient errors
+- Frontend Vitest tests for `leaderboardUtils` (`resolveTodayEntriesForSize` — hash-based size filtering, missing hash handling)
 
 ## Algorithm Highlights
 
@@ -641,7 +691,7 @@ The generator is split into specialized components orchestrated by `CrosswordGen
 - Words that change direction at a bend cell, forming an L-shape on the grid
 - The bend cell is shared between two segments and rendered with a directional arrow
 - Configurable maximum bends per word and maximum vinkelord count per puzzle
-- The web player correctly navigates and highlights bent words using a cell-to-clue lookup that considers local direction at each cell
+- The React web player correctly navigates and highlights bent words using a cell-to-clue lookup (`localDirectionAtCell` in `navigation.ts`) that considers local direction at each cell
 
 ### Validation
 - Ensures all words are connected (no isolated words)
@@ -686,7 +736,8 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 
 ## Web Architecture
 
-- **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the frontend and REST endpoints
+- **Runtime**: ASP.NET Core Minimal API (`SwedishCrossword.Api`) serving both the React SPA and REST endpoints
+- **Frontend**: Vite + React + TypeScript SPA (`frontend/`) bundled into `wwwroot/app` and served by the API. Entry point (`main.tsx`) runs `purgeStaleLocalStorage()` once at startup to evict stale `localStorage` entries before any component reads storage
 - **Puzzle Storage**: File-based, configurable via `Storage:PuzzlePath` (env: `Storage__PuzzlePath`)
 - **Leaderboard**: Dual-database store (`LeaderboardStore.cs`) — Azure SQL with Managed Identity authentication in production, SQLite with WAL mode for local development. Features per-puzzle deduplication, 7-day pruning, historical archival, user aliases (with in-memory cache), friend requests with mutual auto-accept, and automatic migration from legacy JSON files on startup. Non-Development environments require a configured Azure SQL connection string.
 - **Deployment**: Docker container on Azure Container Apps (or any ASP.NET Core host)
@@ -698,28 +749,32 @@ A hand-curated `custom-words.json` file for words not covered by the main source
 - **Response Compression**: Brotli + Gzip enabled for JSON and static assets
 - **Rate Limiting**: Global per-IP limit (200 req/min) plus stricter limits on leaderboard writes, puzzle interactions, and friend operations (30 req/min each)
 - **Authentication**: Cookie-based with Google and Microsoft OAuth providers (configured via `Authentication:Google:ClientId`/`ClientSecret` and `Authentication:Microsoft:ClientId`/`ClientSecret`). 30-day sliding expiration. User identity is a SHA256 hash of `provider:subject` — raw provider IDs are never stored. Providers are conditionally registered only when credentials are configured.
-- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). All API responses use opaque friendship IDs and server-computed direction — no raw user identifiers are exposed to clients.
+- **Friends**: Friend requests stored in a `friend_requests` table (Azure SQL in production, SQLite locally) with statuses (pending/accepted/declined). Challenge results ranked by (word hints, letter hints, time). All API responses use opaque friendship IDs and server-computed direction — no raw user identifiers are exposed to clients.
 - **Security Headers**: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, HSTS in production; Kestrel `Server` header suppressed; request body size capped at 100 KB
 - **Forwarded Headers**: Configured for reverse proxy environments (`X-Forwarded-For`, `X-Forwarded-Proto`)
 - **CORS**: Configurable via `Cors:AllowedOrigins` in appsettings
 - **OpenAPI**: Available at `/openapi/v1.json` in development mode
 - **PWA**: Web app manifest (`site.webmanifest`) for installability; no service worker currently implemented
-- **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements; keyboard shortcuts dialog
+- **Accessibility**: Skip link, ARIA labels/roles on grid, clue lists, dialogs, and buttons; `aria-live` region for screen reader announcements (`announce()` in `utils.ts`); keyboard shortcuts dialog
+- **Theme**: `useTheme` hook detects `prefers-color-scheme`, persists choice under the `theme` key, and migrates the legacy `crossword-theme` key from site.js so returning users keep their preference
+- **Local Stats**: `usePlayerStats` hook persists per-size stats (total solved, streak, best/avg time, 90-day solved-date history) under `playerStats` in `localStorage`; automatically migrates legacy flat-format stats to the per-size shape; reset by `STATS_RESET_DATE` guard
+- **DB Unavailable UX**: `useDbStatus` polls for 503 responses; `DbUnavailableBanner` shows a dismissible overlay so players know leaderboards are down without blocking puzzle play
 - **Endpoint Organization**: API routes are split into dedicated static classes under `Endpoints/` (`PuzzleEndpoints`, `LeaderboardEndpoints`, `AuthEndpoints`, `FriendsEndpoints`, `StatsEndpoints`, `AnalyticsEndpoints`), each registered as an extension method on `WebApplication`
 - **Storage Abstraction**: `IStores.cs` defines focused storage interfaces (`IScoreStore`, `IHistoryStore`, `IUserProfileStore`, etc.) implemented by `LeaderboardStore`, keeping endpoints decoupled from the dual-database (Azure SQL / SQLite) implementation
 - **Transient Error Handling**: `TransientDbExceptionHandler` (registered as an `IExceptionHandler`) inspects unhandled `SqlException`s via `TransientSqlErrorClassifier`, logs them as warnings (not errors) so they don't pollute Application Insights failure rates, and returns a `503 Service Unavailable` with `Retry-After: 30`. The classifier covers transient Azure SQL conditions such as throttling, deadlocks, failover/reconfiguration events, and temporary network/connectivity failures. Non-transient SQL errors fall through to the standard 500 handler
 - **Analytics**: `LeaderboardStore` exposes aggregate queries (summary with per-size breakdown, daily activity, top players with alias resolution and verified/guest distinction) consumed by admin-only analytics endpoints and rendered in the React `/admin` page. Top players are grouped by `COALESCE(user_id, name)` so signed-in users are tracked separately from guests even if they share a display name. Admin status is determined server-side via policy/config + DB grants and exposed through `/api/auth/me` (`isAdmin`) so the profile page can conditionally render the admin link
-- **Frontend Organization**: React source lives under `frontend/src` (pages/components/hooks/api split) and is bundled into `wwwroot/app` for hosting by the API.
+- **Frontend Testing**: Vitest unit tests for pure utility logic (e.g., `leaderboardUtils.test.ts`); TypeScript type-check (`tsc --noEmit`) enforced as a pre-build gate
 
 ### Areas for Improvement
 - Themed puzzle generation
 - Mobile app version (native)
 - Mini leagues / friend groups
 - Core Web Vitals tracking
-- Frontend module splitting (ES modules with bundler)
-- Client-side unit tests
+- Frontend module splitting (dynamic import / code splitting)
+- Client-side unit test coverage (component-level tests beyond utility logic)
 - Static asset fingerprinting / cache-busting
 - CDN / Azure Front Door for edge caching
+- Service worker / offline PWA support
 
 ## License
 

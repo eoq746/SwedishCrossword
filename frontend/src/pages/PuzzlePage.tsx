@@ -12,6 +12,7 @@ import { PuzzleHistorySection } from './puzzle/PuzzleHistorySection';
 import { PuzzleLeaderboardSection } from './puzzle/PuzzleLeaderboardSection';
 import type { ClueEntry, PuzzleSize } from './puzzle/types';
 import { formatLeaderboardTime, usePuzzleGame } from './puzzle/usePuzzleGame';
+import { readPlayerStats } from '../hooks/usePlayerStats';
 import { usePuzzleLayout } from './puzzle/usePuzzleLayout';
 import '../styles/static-pages.css';
 
@@ -75,6 +76,27 @@ export default function PuzzlePage() {
   const [challengeSubmitting, setChallengeSubmitting] = useState(false);
   const [challengeRespondingId, setChallengeRespondingId] = useState<string | null>(null);
 
+  const handleShare = async () => {
+    const text = generateShareText(revealedSolution);
+    let copied = false;
+    try { await navigator.clipboard.writeText(text); copied = true; } catch { /* ignore */ }
+    if (navigator.share) {
+      try {
+        await navigator.share({ text });
+        if (copied) { setMessageModal({ title: 'Delat!', body: 'Resultatet är också kopierat till urklipp.' }); }
+        return;
+      } catch (e) {
+        if (e instanceof Error && e.name === 'AbortError') {
+          if (copied) setMessageModal({ title: 'Kopierat!', body: 'Resultatet har kopierats till urklipp.' });
+          return;
+        }
+      }
+    }
+    setMessageModal(copied
+      ? { title: 'Kopierat!', body: 'Resultatet har kopierats till urklipp.' }
+      : { title: 'Dela resultat', body: 'Kunde inte kopiera automatiskt. Dela via webbläsarmenyn.' });
+  };
+
   const {
     loading,
     puzzleUnavailable,
@@ -82,6 +104,10 @@ export default function PuzzlePage() {
     puzzle,
     puzzleDate,
     seconds,
+    puzzleSolved,
+    revealedSolution,
+    letterHintsUsed,
+    wordHintsUsed,
     values,
     incorrectCells,
     emptyWarningCells,
@@ -115,6 +141,10 @@ export default function PuzzlePage() {
     revealWord,
     submitScore,
     isClueFilled,
+    generateShareText,
+    savePendingScore,
+    autoCheckFeedback,
+    clearAutoCheckFeedback,
   } = usePuzzleGame({ size, dateParam, user });
 
   const gridSectionRef = useRef<HTMLDivElement | null>(null);
@@ -140,6 +170,26 @@ export default function PuzzlePage() {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
+      // Focus trap for shortcuts overlay
+      if (shortcutsOpen && e.key === 'Tab') {
+        const overlay = document.getElementById('shortcuts-overlay');
+        if (overlay) {
+          const focusable = Array.from(
+            overlay.querySelectorAll<HTMLElement>('button, [href], [tabindex]:not([tabindex="-1"])')
+          );
+          if (focusable.length > 0) {
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (e.shiftKey) {
+              if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+            } else {
+              if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+            }
+          }
+        }
+        return;
+      }
+
       if (e.key === '?' && !(e.target instanceof HTMLInputElement)) {
         e.preventDefault();
         setShortcutsOpen(v => !v);
@@ -148,6 +198,7 @@ export default function PuzzlePage() {
         setShortcutsOpen(false);
         setUsernameModalOpen(false);
         setMessageModal(null);
+        clearAutoCheckFeedback();
         setConfirmModal(null);
         setReportingClue(null);
       }
@@ -155,7 +206,7 @@ export default function PuzzlePage() {
 
     document.addEventListener('keydown', onKeyDown);
     return () => document.removeEventListener('keydown', onKeyDown);
-  }, [setUsernameModalOpen]);
+  }, [setUsernameModalOpen, shortcutsOpen]);
 
   useEffect(() => {
     document.body.classList.toggle('hide-clues', !showClues);
@@ -169,6 +220,7 @@ export default function PuzzlePage() {
   }, [showClues, showHistoryPanel, showIntro, showLeaderboardPanel]);
 
   const handleCheck = async () => {
+    clearAutoCheckFeedback();
     const result = await checkAnswers();
     if (result.status === 'solved') return;
 
@@ -193,6 +245,13 @@ export default function PuzzlePage() {
       body: `${result.incorrectCount} bokstäver är felaktiga. Försök igen!` ,
     });
   };
+
+  useEffect(() => {
+    if (!autoCheckFeedback) return;
+
+    const timeoutId = window.setTimeout(() => clearAutoCheckFeedback(), 3500);
+    return () => window.clearTimeout(timeoutId);
+  }, [autoCheckFeedback, clearAutoCheckFeedback]);
 
   const handleRevealLetter = async () => {
     const result = await revealLetter();
@@ -626,10 +685,28 @@ export default function PuzzlePage() {
                   <button className="btn btn-hint" id="hint-letter-btn" title="Avslöja bokstav" onMouseDown={e => e.preventDefault()} onClick={handleRevealLetter}>💡 Bokstav</button>
                   <button className="btn btn-hint" id="hint-word-btn" title="Avslöja ord" onMouseDown={e => e.preventDefault()} onClick={handleRevealWord}>💡 Ord</button>
                   <button className="btn btn-success" onClick={handleRevealSolution}>Visa lösning</button>
+                  {puzzleSolved && (
+                    <button
+                      id="share-btn"
+                      className="btn btn-primary"
+                      onClick={() => void handleShare()}
+                    >
+                      📤 Dela resultat
+                    </button>
+                  )}
                   <div className="grid-status-bar">
                     <div className="timer" id="timer">{formatLeaderboardTime(seconds)}</div>
                     <div className="grid-status-pill" id="stats">{filledCount}/{totalFillableCount} rutor · {progressPercent}%</div>
                     {currentHintSummary ? <div className="grid-status-pill grid-status-pill-muted">{currentHintSummary}</div> : null}
+                    {autoCheckFeedback ? (
+                      <div
+                        className={`grid-status-pill grid-status-pill-notice grid-status-pill-notice-${autoCheckFeedback.tone}`}
+                        role="status"
+                        aria-live="polite"
+                      >
+                        {autoCheckFeedback.text}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
                 <div
@@ -754,20 +831,38 @@ export default function PuzzlePage() {
           <div className="player-stats-section" id="player-stats-section">
             <h2>Din Statistik</h2>
             <div id="player-stats">
-              <div className="player-stats-grid">
-                <div className="stat-item">
-                  <span className="stat-value">{formatLeaderboardTime(seconds)}</span>
-                  <span className="stat-label">Tid</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">{filledCount}</span>
-                  <span className="stat-label">Ifyllda</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">{progressPercent}%</span>
-                  <span className="stat-label">Progress</span>
-                </div>
-              </div>
+              {(() => {
+                const ps = readPlayerStats();
+                const todayStr = new Date().toISOString().split('T')[0];
+                const sizeLabels: Record<string, string> = { '10x10': '🟢 Liten (10×10)', '15x15': '🟡 Mellan (15×15)', '17x17': '🔴 Stor (17×17)' };
+                const allSizes = [...new Set([...Object.keys(ps.sizes), size])].sort() as string[];
+                const hasAnyStats = allSizes.some(sk => ps.sizes[sk as keyof typeof ps.sizes]);
+                if (!hasAnyStats) {
+                  return <p className="stats-empty">Lös ett korsord för att se din statistik här!</p>;
+                }
+                return allSizes.map(sk => {
+                  const s = ps.sizes[sk as keyof typeof ps.sizes];
+                  if (!s) return null;
+                  const isCurrent = sk === size;
+                  // Correct stale streak
+                  const yesterday = new Date(); yesterday.setDate(yesterday.getDate() - 1);
+                  const yesterdayStr = yesterday.toISOString().split('T')[0];
+                  const streak = (s.lastSolvedDate === todayStr || s.lastSolvedDate === yesterdayStr) ? s.currentStreak : 0;
+                  const avg = s.totalSolved > 0 ? Math.round(s.totalTime / s.totalSolved) : 0;
+                  return (
+                    <div key={sk} className={`stats-size-block${isCurrent ? ' stats-size-current' : ''}`}>
+                      <h3 className="stats-size-heading">{sizeLabels[sk] ?? sk}{isCurrent && <span className="stats-size-badge"> spelar nu</span>}</h3>
+                      <div className="player-stats-grid">
+                        <div className="stat-item"><span className="stat-value">{s.totalSolved}</span><span className="stat-label">Lösta</span></div>
+                        <div className="stat-item"><span className="stat-value">{streak}</span><span className="stat-label">Streak</span></div>
+                        <div className="stat-item"><span className="stat-value">{s.bestStreak}</span><span className="stat-label">Bästa streak</span></div>
+                        <div className="stat-item"><span className="stat-value">{s.bestTime !== null ? formatLeaderboardTime(s.bestTime) : '--:--'}</span><span className="stat-label">Bästa tid</span></div>
+                        <div className="stat-item"><span className="stat-value">{avg > 0 ? formatLeaderboardTime(avg) : '--:--'}</span><span className="stat-label">Snittid</span></div>
+                      </div>
+                    </div>
+                  );
+                });
+              })()}
             </div>
             <div id="personal-stats" style={{ display: 'none' }} />
           </div>
@@ -842,6 +937,11 @@ export default function PuzzlePage() {
           <h3>Grattis!</h3>
           <p>Du löste korsordet!</p>
           <div className="modal-time" id="modal-time">{formatLeaderboardTime(seconds)}</div>
+          {(letterHintsUsed + wordHintsUsed) > 0 && (
+            <p style={{ color: '#d97706', fontSize: '0.85rem', marginBottom: 8 }}>
+              {currentHintSummary}
+            </p>
+          )}
           <p>Ange ditt namn för topplistan:</p>
           <input
             type="text"
@@ -861,6 +961,24 @@ export default function PuzzlePage() {
               }
             }}
           />
+          {!user && (
+            <p style={{ fontSize: '0.85rem', marginBottom: 8, textAlign: 'center' }}>
+              🔒{' '}
+              <a
+                href="#"
+                style={{ color: 'var(--accent, #2563eb)' }}
+                onClick={e => {
+                  e.preventDefault();
+                  savePendingScore();
+                  const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
+                  window.location.href = `/api/auth/login/google?returnUrl=${returnUrl}`;
+                }}
+              >
+                Logga in
+              </a>
+              {' '}för att få ett ✓ vid ditt namn
+            </p>
+          )}
           <div className="modal-buttons">
             <button className="btn btn-primary" onClick={() => void handleSubmitScore()}>Spara</button>
             <button className="btn btn-secondary" onClick={() => setUsernameModalOpen(false)}>Hoppa över</button>

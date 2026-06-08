@@ -30,16 +30,25 @@ export function PuzzleHistorySection({ historyRows, height }: PuzzleHistorySecti
               <li key={date} className="history-date-group">
                 <h4 className="history-date-heading">{date}</h4>
                 <ul className="history-entries">
-                  {top3.map((entry, idx) => (
+                  {top3.map((entry, idx) => {
+                    const hL = entry.hintsUsed || 0;
+                    const hW = entry.wordHintsUsed || 0;
+                    const hintParts: string[] = [];
+                    if (hL > 0) hintParts.push(`${hL} bokst${hL > 1 ? 'äver' : 'av'}`);
+                    if (hW > 0) hintParts.push(`${hW} ord`);
+                    const hintTooltip = hintParts.join(', ');
+                    return (
                     <li key={`${date}-${entry.name}-${idx}`} className={`leaderboard-item history-item${idx < 3 ? ` rank-${idx + 1}` : ''}`}>
                       <span className="leaderboard-rank">{idx < 3 ? MEDALS[idx] : `${idx + 1}.`}</span>
                       <span className="leaderboard-name">
                         {entry.name}
                         {entry.userId ? <span className="verified-badge" title="Verifierat konto">✓</span> : <span className="guest-badge" title="Gäst">👤</span>}
+                        {(hL > 0 || hW > 0) && <span className="hint-badge" title={hintTooltip}>💡</span>}
                       </span>
                       <span className="leaderboard-time">{formatLeaderboardTime(entry.time)}</span>
                     </li>
-                  ))}
+                    );
+                  })}
                 </ul>
               </li>
             );

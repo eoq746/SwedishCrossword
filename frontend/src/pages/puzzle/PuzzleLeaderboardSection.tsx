@@ -91,12 +91,31 @@ export function PuzzleLeaderboardSection({
           renderEmptyState(activeTab, hasFriends)
         ) : (
           entries.map((entry, index) => {
-            const hintTotal = (entry.hintsUsed ?? 0) + (entry.wordHintsUsed ?? 0);
+            const hL = entry.hintsUsed ?? 0;
+            const hW = entry.wordHintsUsed ?? 0;
+            const hintTotal = hL + hW;
+            const hintParts: string[] = [];
+            if (hL > 0) hintParts.push(`${hL} bokst${hL > 1 ? 'äver' : 'av'}`);
+            if (hW > 0) hintParts.push(`${hW} ord`);
+
             const isCurrentUser = entry.kind === 'friends'
               && !!currentUserDisplayName
               && entry.name.localeCompare(currentUserDisplayName, 'sv', { sensitivity: 'accent' }) === 0;
+
+            const verifiedLine = entry.kind === 'global'
+              ? (entry.userId ? '\n✓ Verifierat konto' : '\n👤 Gäst')
+              : (isCurrentUser ? '\nDu' : '');
+            const hintLine = hintParts.length > 0
+              ? `\n💡 Ledtrådar: ${hintParts.join(', ')}`
+              : '\n🏅 Inga ledtrådar';
+            const rowTooltip = `${entry.name} — ${formatLeaderboardTime(entry.time)}${verifiedLine}${hintLine}`;
+
             return (
-              <li key={`${entry.kind}-${entry.name}-${entry.time}-${index}`} className={`leaderboard-item${index < 3 ? ` rank-${index + 1}` : ''}${isCurrentUser ? ' current-user' : ''}`}>
+              <li
+                key={`${entry.kind}-${entry.name}-${entry.time}-${index}`}
+                className={`leaderboard-item${index < 3 ? ` rank-${index + 1}` : ''}${isCurrentUser ? ' current-user' : ''}`}
+                title={rowTooltip}
+              >
                 <span className="leaderboard-rank">{index < 3 ? MEDALS[index] : `${index + 1}.`}</span>
                 <span className="leaderboard-name">
                   {entry.name}
@@ -104,7 +123,7 @@ export function PuzzleLeaderboardSection({
                     ? (entry.userId ? <span className="verified-badge" title="Verifierat konto">✓</span> : <span className="guest-badge" title="Gäst">👤</span>)
                     : (isCurrentUser ? <span className="verified-badge" title="Du">Du</span> : null)}
                   {hintTotal > 0 ? (
-                    <span className="hint-badge" title={`Ledtrådar: ${entry.hintsUsed ?? 0} bokstav, ${entry.wordHintsUsed ?? 0} ord`}>
+                    <span className="hint-badge" title={`Ledtrådar: ${hintParts.join(', ')}`}>
                       💡{hintTotal}
                     </span>
                   ) : null}
