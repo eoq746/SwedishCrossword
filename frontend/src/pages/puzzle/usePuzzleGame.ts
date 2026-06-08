@@ -63,6 +63,11 @@ const PENDING_SCORE_KEY = 'crossword-pending-score';
 
 type LeaderboardTab = 'global' | 'friends';
 
+type AutoCheckFeedback = {
+  tone: 'info' | 'error';
+  text: string;
+};
+
 export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [loading, setLoading] = useState(true);
   const [puzzleUnavailable, setPuzzleUnavailable] = useState(false);
@@ -89,9 +94,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
   const [history, setHistory] = useState<HistoryResponse>({});
   const [usernameModalOpen, setUsernameModalOpen] = useState(false);
   const [username, setUsername] = useState('');
+  const [autoCheckFeedback, setAutoCheckFeedback] = useState<AutoCheckFeedback | null>(null);
 
   const autoCheckTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const checkAnswersRef = useRef<(() => Promise<CheckResult>) | null>(null);
+  const runAutoCheckRef = useRef<(() => Promise<CheckResult>) | null>(null);
 
   const [nav, dispatchNav] = useReducer(navReducer, {
     active: null,
@@ -312,6 +318,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
         setIncorrectCells({});
         setEmptyWarningCells({});
         setHintRevealedCells({});
+        setAutoCheckFeedback(null);
         setUsernameModalOpen(false);
 
         const first = findFirstFillableCell(data);
@@ -383,6 +390,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     writeLocalStorage(LEADERBOARD_TAB_KEY, activeLeaderboardTab);
   }, [activeLeaderboardTab]);
 
+  const clearAutoCheckFeedback = useCallback(() => {
+    setAutoCheckFeedback(null);
+  }, []);
+
   const { handleCellChange, handleCellKeyDown } = usePuzzleGridInput({
     puzzle,
     puzzleSolved,
@@ -398,9 +409,10 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setValues,
     setIncorrectCells,
     setEmptyWarningCells,
+    clearAutoCheckFeedback,
   });
 
-  const checkAnswers = useCallback(async (): Promise<CheckResult> => {
+  const validateAnswers = useCallback(async (): Promise<CheckResult> => {
     if (!puzzle || puzzleSolved) return { status: 'incorrect', emptyCount: 0, incorrectCount: 0 };
 
     const cells: Record<string, string> = {};
@@ -465,11 +477,39 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     }
   }, [fillableCells, finishSolvedPuzzle, puzzle, puzzleDate, puzzleSolved, size, values]);
 
-  // Keep a stable ref to checkAnswers so the auto-check timer always calls the latest version.
-  checkAnswersRef.current = checkAnswers;
+  const checkAnswers = useCallback(async (): Promise<CheckResult> => {
+    clearAutoCheckFeedback();
+    return await validateAnswers();
+  }, [clearAutoCheckFeedback, validateAnswers]);
 
-  // Auto-check: when every fillable cell is filled, trigger checkAnswers() after a short debounce.
-  // Uses checkAnswersRef so the callback is never stale even across re-renders.
+  const runAutoCheck = useCallback(async (): Promise<CheckResult> => {
+    const result = await validateAnswers();
+
+    if (result.status === 'incomplete') {
+      setAutoCheckFeedback({
+        tone: 'info',
+        text: `${result.emptyCount} rutor saknas fortfarande.`,
+      });
+      return result;
+    }
+
+    if (result.status === 'incorrect') {
+      setAutoCheckFeedback({
+        tone: 'error',
+        text: `${result.incorrectCount} bokstäver är felaktiga.`,
+      });
+      return result;
+    }
+
+    setAutoCheckFeedback(null);
+    return result;
+  }, [validateAnswers]);
+
+  // Keep a stable ref to the auto-check runner so the timer always calls the latest version.
+  runAutoCheckRef.current = runAutoCheck;
+
+  // Auto-check: when every fillable cell is filled, trigger a passive validation after a short debounce.
+  // Uses runAutoCheckRef so the callback is never stale even across re-renders.
   useEffect(() => {
     if (puzzleSolved || fillableCells.length === 0) return;
     const allFilled = fillableCells.every(c => Boolean(values[`${c.row},${c.col}`]));
@@ -478,7 +518,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     if (autoCheckTimerRef.current !== null) clearTimeout(autoCheckTimerRef.current);
     autoCheckTimerRef.current = setTimeout(() => {
       autoCheckTimerRef.current = null;
-      void checkAnswersRef.current?.();
+      void runAutoCheckRef.current?.();
     }, 300);
 
     return () => {
@@ -493,8 +533,9 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setHintRevealedCells({});
     setLetterHintsUsed(0);
     setWordHintsUsed(0);
+    clearAutoCheckFeedback();
     clearProgress();
-  }, [clearProgress]);
+  }, [clearAutoCheckFeedback, clearProgress]);
 
   const revealSolution = useCallback(async (): Promise<RevealSolutionResult> => {
     if (!puzzle || puzzleSolved || !puzzle.submissionToken || !puzzleDate) return 'unavailable';
@@ -535,6 +576,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     setHintRevealedCells(nextHints);
     setIncorrectCells({});
     setEmptyWarningCells({});
+    clearAutoCheckFeedback();
     setPuzzleSolved(true);
     setHasSubmittedScore(true);
     setRevealedSolution(true);
@@ -571,6 +613,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
       saveProgress(next, seconds, letterHintsUsed + 1, wordHintsUsed);
       return next;
     });
+    clearAutoCheckFeedback();
     setHintRevealedCells(prev => ({ ...prev, [key]: true }));
     setIncorrectCells(prev => {
       const next = { ...prev };
@@ -621,6 +664,7 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
 
     if (resolvedLetters.some(entry => !entry.letter)) return 'unavailable';
 
+    clearAutoCheckFeedback();
     setValues(prev => {
       const next = { ...prev };
       for (const entry of resolvedLetters) {
@@ -853,6 +897,8 @@ export function usePuzzleGame({ size, dateParam, user }: UsePuzzleGameOptions) {
     totalFillableCount: fillableCells.length,
     progressPercent,
     currentHintSummary,
+    autoCheckFeedback,
+    clearAutoCheckFeedback,
     activateCell,
     handleCellChange,
     handleCellKeyDown,

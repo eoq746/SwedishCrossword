@@ -143,6 +143,8 @@ export default function PuzzlePage() {
     isClueFilled,
     generateShareText,
     savePendingScore,
+    autoCheckFeedback,
+    clearAutoCheckFeedback,
   } = usePuzzleGame({ size, dateParam, user });
 
   const gridSectionRef = useRef<HTMLDivElement | null>(null);
@@ -196,6 +198,7 @@ export default function PuzzlePage() {
         setShortcutsOpen(false);
         setUsernameModalOpen(false);
         setMessageModal(null);
+        clearAutoCheckFeedback();
         setConfirmModal(null);
         setReportingClue(null);
       }
@@ -217,6 +220,7 @@ export default function PuzzlePage() {
   }, [showClues, showHistoryPanel, showIntro, showLeaderboardPanel]);
 
   const handleCheck = async () => {
+    clearAutoCheckFeedback();
     const result = await checkAnswers();
     if (result.status === 'solved') return;
 
@@ -241,6 +245,13 @@ export default function PuzzlePage() {
       body: `${result.incorrectCount} bokstäver är felaktiga. Försök igen!` ,
     });
   };
+
+  useEffect(() => {
+    if (!autoCheckFeedback) return;
+
+    const timeoutId = window.setTimeout(() => clearAutoCheckFeedback(), 3500);
+    return () => window.clearTimeout(timeoutId);
+  }, [autoCheckFeedback, clearAutoCheckFeedback]);
 
   const handleRevealLetter = async () => {
     const result = await revealLetter();
@@ -687,6 +698,15 @@ export default function PuzzlePage() {
                     <div className="timer" id="timer">{formatLeaderboardTime(seconds)}</div>
                     <div className="grid-status-pill" id="stats">{filledCount}/{totalFillableCount} rutor · {progressPercent}%</div>
                     {currentHintSummary ? <div className="grid-status-pill grid-status-pill-muted">{currentHintSummary}</div> : null}
+                    {autoCheckFeedback ? (
+                      <div
+                        className={`grid-status-pill grid-status-pill-notice grid-status-pill-notice-${autoCheckFeedback.tone}`}
+                        role="status"
+                        aria-live="polite"
+                      >
+                        {autoCheckFeedback.text}
+                      </div>
+                    ) : null}
                   </div>
                 </div>
                 <div

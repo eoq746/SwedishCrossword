@@ -19,6 +19,7 @@ interface UsePuzzleGridInputOptions {
   setValues: Dispatch<SetStateAction<Record<string, string>>>;
   setIncorrectCells: Dispatch<SetStateAction<Record<string, true>>>;
   setEmptyWarningCells: Dispatch<SetStateAction<Record<string, true>>>;
+  clearAutoCheckFeedback: () => void;
 }
 
 function sanitizeLetters(raw: string): string[] {
@@ -40,6 +41,7 @@ export function usePuzzleGridInput({
   setValues,
   setIncorrectCells,
   setEmptyWarningCells,
+  clearAutoCheckFeedback,
 }: UsePuzzleGridInputOptions) {
   const clearValidationState = useCallback((key: CellKey) => {
     setIncorrectCells(prev => {
@@ -99,6 +101,7 @@ export function usePuzzleGridInput({
     const cellsToFill = targetCells.slice(startIndex, startIndex + letters.length);
     if (cellsToFill.length === 0) return;
 
+    clearAutoCheckFeedback();
     setValues(prev => {
       const next = { ...prev };
       cellsToFill.forEach((cell, index) => {
@@ -120,7 +123,7 @@ export function usePuzzleGridInput({
 
     const lastCell = cellsToFill[cellsToFill.length - 1];
     activateCell(lastCell.row, lastCell.col);
-  }, [activateCell, clearValidationState, clueEntries.byCell, letterHintsUsed, nav.direction, puzzle, saveProgress, seconds, setValues, wordHintsUsed]);
+  }, [activateCell, clearAutoCheckFeedback, clearValidationState, clueEntries.byCell, letterHintsUsed, nav.direction, puzzle, saveProgress, seconds, setValues, wordHintsUsed]);
 
   const handleCellChange = useCallback((row: number, col: number, raw: string) => {
     if (!puzzle || puzzleSolved) return;
@@ -134,6 +137,7 @@ export function usePuzzleGridInput({
     const key: CellKey = `${row},${col}`;
 
     if (letters.length === 0) {
+      clearAutoCheckFeedback();
       setValues(prev => {
         const next = { ...prev };
         delete next[key];
@@ -145,7 +149,7 @@ export function usePuzzleGridInput({
     }
 
     applyLetters({ row, col }, letters);
-  }, [applyLetters, clearValidationState, dispatchNav, letterHintsUsed, puzzle, puzzleSolved, saveProgress, seconds, setValues, wordHintsUsed]);
+  }, [applyLetters, clearAutoCheckFeedback, clearValidationState, dispatchNav, letterHintsUsed, puzzle, puzzleSolved, saveProgress, seconds, setValues, wordHintsUsed]);
 
   const handleCellKeyDown = useCallback((e: KeyboardEvent<HTMLElement>, row: number, col: number) => {
     if (!puzzle || puzzleSolved) return;
@@ -163,6 +167,7 @@ export function usePuzzleGridInput({
         return;
       case 'Backspace':
         e.preventDefault();
+        clearAutoCheckFeedback();
         setValues(prev => {
           const next = { ...prev };
           delete next[key];
@@ -174,6 +179,7 @@ export function usePuzzleGridInput({
         return;
       case 'Delete':
         e.preventDefault();
+        clearAutoCheckFeedback();
         setValues(prev => {
           const next = { ...prev };
           delete next[key];
@@ -210,7 +216,7 @@ export function usePuzzleGridInput({
       default:
         if (e.key.length === 1 && !isSwedishLetter(e.key)) e.preventDefault();
     }
-  }, [activateCell, clearValidationState, dispatchNav, letterHintsUsed, moveClue, moveToNeighbor, puzzle, puzzleSolved, saveProgress, seconds, setValues, wordHintsUsed]);
+  }, [activateCell, clearAutoCheckFeedback, clearValidationState, dispatchNav, letterHintsUsed, moveClue, moveToNeighbor, puzzle, puzzleSolved, saveProgress, seconds, setValues, wordHintsUsed]);
 
   return {
     handleCellChange,
