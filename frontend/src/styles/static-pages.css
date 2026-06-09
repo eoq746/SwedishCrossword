@@ -1130,6 +1130,10 @@ button {
   flex-wrap: wrap;
 }
 
+.challenge-toggle-btn {
+  margin-top: 10px;
+}
+
 /* Alias row */
 .profile-alias-row {
   display: flex;

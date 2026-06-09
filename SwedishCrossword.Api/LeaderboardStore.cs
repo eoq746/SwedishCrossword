@@ -1420,7 +1420,7 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         return new FriendChallengesCreateResponse(sent, skipped);
     }
 
-    public async Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId)
+    public async Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId, bool expiredOnly = false)
     {
         await using var conn = await OpenConnectionAsync();
         await using var cmd = conn.CreateCommand();
@@ -1507,6 +1507,12 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 challenge.FriendUserAlias,
                 currentSolve,
                 friendSolve);
+
+            if (expiredOnly && !string.Equals(resultStatus, "expired", StringComparison.Ordinal))
+                continue;
+
+            if (!expiredOnly && string.Equals(resultStatus, "expired", StringComparison.Ordinal))
+                continue;
 
             list.Add(new FriendChallengeInfo(
                 Id: challenge.Id,

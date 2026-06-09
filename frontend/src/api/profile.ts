@@ -145,6 +145,10 @@ export function fetchChallenges(): Promise<FriendChallengeInfo[]> {
   return apiFetch('/api/friends/challenges');
 }
 
+export function fetchExpiredChallenges(): Promise<FriendChallengeInfo[]> {
+  return apiFetch('/api/friends/challenges/expired');
+}
+
 export interface FriendsLeaderboardEntry {
   name: string;
   time: number;

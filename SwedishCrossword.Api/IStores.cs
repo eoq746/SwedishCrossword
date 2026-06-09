@@ -52,7 +52,7 @@ internal interface IFriendStore
     Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date, string? puzzleHash = null);
     Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date, string puzzleSize);
     Task<FriendChallengesCreateResponse> CreateChallengesAsync(string fromUserId, IReadOnlyCollection<string> friendRequestIds, string date, string puzzleSize);
-    Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId);
+    Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId, bool expiredOnly = false);
     Task<bool> RespondToChallengeAsync(string challengeId, string userId, bool accepted);
 }
 

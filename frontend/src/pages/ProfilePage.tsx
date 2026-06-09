@@ -5,7 +5,7 @@ import { usePageTitle } from '../hooks/usePageTitle';
 import {
   fetchMyStats, saveAlias, fetchFriends, fetchFriendRequests,
   sendFriendRequest, acceptFriendRequest, declineFriendRequest,
-  removeFriend, fetchChallenges, sendChallenge, respondChallenge,
+  removeFriend, fetchChallenges, fetchExpiredChallenges, sendChallenge, respondChallenge,
   exportMyData, deleteMyAccount,
   formatTime, todayIso, SIZE_LABELS,
   type UserStatsResponse, type FriendInfo,
@@ -199,10 +199,13 @@ function FriendsSection() {
   const [friends, setFriends] = useState<FriendInfo[]>([]);
   const [requests, setRequests] = useState<FriendRequestInfo[]>([]);
   const [challenges, setChallenges] = useState<FriendChallengeInfo[]>([]);
+  const [expiredChallenges, setExpiredChallenges] = useState<FriendChallengeInfo[]>([]);
+  const [expiredChallengesLoaded, setExpiredChallengesLoaded] = useState(false);
   const [searchAlias, setSearchAlias] = useState('');
   const [friendStatus, setFriendStatus] = useState<{ msg: string; ok: boolean } | null>(null);
   const [challengeStatus, setChallengeStatus] = useState<{ msg: string; ok: boolean } | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showAllExpiredChallenges, setShowAllExpiredChallenges] = useState(false);
 
   async function reload() {
     try {
@@ -210,6 +213,9 @@ function FriendsSection() {
       setFriends(f);
       setRequests(r);
       setChallenges(c);
+      setExpiredChallenges([]);
+      setExpiredChallengesLoaded(false);
+      setShowAllExpiredChallenges(false);
     } catch {
       // non-fatal
     } finally {
@@ -270,10 +276,36 @@ function FriendsSection() {
     }
   }
 
+  async function handleToggleExpiredChallenges() {
+    if (showAllExpiredChallenges) {
+      setShowAllExpiredChallenges(false);
+      return;
+    }
+
+    if (!expiredChallengesLoaded) {
+      setChallengeStatus({ msg: 'Laddar utgångna utmaningar…', ok: true });
+      try {
+        const expired = await fetchExpiredChallenges();
+        setExpiredChallenges(expired);
+        setExpiredChallengesLoaded(true);
+        setChallengeStatus(null);
+      } catch (e) {
+        setChallengeStatus({ msg: e instanceof Error ? e.message : 'Kunde inte ladda utgångna utmaningar.', ok: false });
+        return;
+      }
+    }
+
+    setShowAllExpiredChallenges(true);
+  }
+
   if (loading) return <div className="leaderboard-loading">Laddar vänner…</div>;
 
   const incoming = requests.filter(r => r.direction === 'incoming');
   const outgoing = requests.filter(r => r.direction === 'outgoing');
+
+  const visibleExpiredChallenges = showAllExpiredChallenges ? expiredChallenges : [];
+  const hiddenExpiredCount = expiredChallenges.length;
+  const visibleChallenges = [...challenges, ...visibleExpiredChallenges];
 
   return (
     <section className="profile-section">
@@ -350,60 +382,75 @@ function FriendsSection() {
       {challenges.length === 0 ? (
         <p className="profile-empty">Inga vänutmaningar ännu.</p>
       ) : (
-        <ul className="friend-list" role="list">
-          {challenges.map(c => {
-            const label = c.resultStatus === 'completed'
-              ? 'Avgjord'
-              : c.resultStatus === 'expired'
-                ? 'Utgången'
-                : c.status === 'pending'
-                  ? 'Väntar'
-                  : c.status === 'accepted'
-                    ? 'Accepterad'
-                    : 'Avböjd';
-            return (
-              <li key={c.id}>
-                <div>
-                  <span>
-                    {c.direction === 'incoming' ? 'Från' : 'Till'}: <strong>{c.friendAlias}</strong> · {c.date}
-                    {c.puzzleSize && <span className="recent-meta"> · {SIZE_LABELS[c.puzzleSize] ?? c.puzzleSize}</span>} · {label}
-                  </span>
-                  {c.resultStatus === 'completed' && (
-                    <div className="challenge-result-summary">
-                      <strong>{c.winnerAlias ? `${c.winnerAlias} vann` : 'Oavgjort'}</strong>
-                      {c.resultReason ? <span className="recent-meta"> · {c.resultReason}</span> : null}
-                      <div className="challenge-result-rows">
-                        {c.currentUserSolve && (
-                          <div className="challenge-result-row">
-                            <span>{c.currentUserSolve.playerAlias}</span>
-                            <span>{formatTime(c.currentUserSolve.time)} · 💡{c.currentUserSolve.hintsUsed} · 🧩{c.currentUserSolve.wordHintsUsed}</span>
-                          </div>
-                        )}
-                        {c.friendSolve && (
-                          <div className="challenge-result-row">
-                            <span>{c.friendSolve.playerAlias}</span>
-                            <span>{formatTime(c.friendSolve.time)} · 💡{c.friendSolve.hintsUsed} · 🧩{c.friendSolve.wordHintsUsed}</span>
-                          </div>
-                        )}
+        <>
+          <ul className="friend-list" role="list">
+            {visibleChallenges.map(c => {
+              const label = c.resultStatus === 'completed'
+                ? 'Avgjord'
+                : c.resultStatus === 'expired'
+                  ? 'Utgången'
+                  : c.status === 'pending'
+                    ? 'Väntar'
+                    : c.status === 'accepted'
+                      ? 'Accepterad'
+                      : 'Avböjd';
+              return (
+                <li key={c.id}>
+                  <div>
+                    <span>
+                      {c.direction === 'incoming' ? 'Från' : 'Till'}: <strong>{c.friendAlias}</strong> · {c.date}
+                      {c.puzzleSize && <span className="recent-meta"> · {SIZE_LABELS[c.puzzleSize] ?? c.puzzleSize}</span>} · {label}
+                    </span>
+                    {c.resultStatus === 'completed' && (
+                      <div className="challenge-result-summary">
+                        <strong>{c.winnerAlias ? `${c.winnerAlias} vann` : 'Oavgjort'}</strong>
+                        {c.resultReason ? <span className="recent-meta"> · {c.resultReason}</span> : null}
+                        <div className="challenge-result-rows">
+                          {c.currentUserSolve && (
+                            <div className="challenge-result-row">
+                              <span>{c.currentUserSolve.playerAlias}</span>
+                              <span>{formatTime(c.currentUserSolve.time)} · 💡{c.currentUserSolve.hintsUsed} · 🧩{c.currentUserSolve.wordHintsUsed}</span>
+                            </div>
+                          )}
+                          {c.friendSolve && (
+                            <div className="challenge-result-row">
+                              <span>{c.friendSolve.playerAlias}</span>
+                              <span>{formatTime(c.friendSolve.time)} · 💡{c.friendSolve.hintsUsed} · 🧩{c.friendSolve.wordHintsUsed}</span>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  )}
-                  {c.resultStatus === 'expired' && (
-                    <div className="challenge-result-summary">
-                      <strong>Utmaningen gick ut utan vinnare.</strong>
-                    </div>
-                  )}
-                </div>
-                {c.direction === 'incoming' && c.status === 'pending' && (
-                  <div className="friend-actions">
-                    <button className="friend-btn friend-btn-accept" onClick={() => void handleRespondChallenge(c.id, true)}>Acceptera</button>
-                    <button className="friend-btn friend-btn-danger" onClick={() => void handleRespondChallenge(c.id, false)}>Avböj</button>
+                    )}
+                    {c.resultStatus === 'expired' && (
+                      <div className="challenge-result-summary">
+                        <strong>Utmaningen gick ut utan vinnare.</strong>
+                      </div>
+                    )}
                   </div>
-                )}
-              </li>
-            );
-          })}
-        </ul>
+                  {c.direction === 'incoming' && c.status === 'pending' && (
+                    <div className="friend-actions">
+                      <button className="friend-btn friend-btn-accept" onClick={() => void handleRespondChallenge(c.id, true)}>Acceptera</button>
+                      <button className="friend-btn friend-btn-danger" onClick={() => void handleRespondChallenge(c.id, false)}>Avböj</button>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+          {(expiredChallengesLoaded ? expiredChallenges.length > 0 : true) && (
+            <button
+              type="button"
+              className="friend-btn challenge-toggle-btn"
+              onClick={() => void handleToggleExpiredChallenges()}
+            >
+              {showAllExpiredChallenges
+                ? 'Dölj utgångna'
+                : expiredChallengesLoaded
+                  ? `Visa utgångna (${hiddenExpiredCount})`
+                  : 'Visa utgångna'}
+            </button>
+          )}
+        </>
       )}
     </section>
   );

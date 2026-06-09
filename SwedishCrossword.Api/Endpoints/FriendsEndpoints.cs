@@ -31,14 +31,25 @@ internal static class FriendsEndpoints
             return Results.Ok(requests);
         });
 
-        // List friend challenges
+        // List active friend challenges
         group.MapGet("/challenges", async (ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
         {
             var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
             if (userId is null)
                 return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
 
-            var challenges = await store.GetChallengesAsync(userId);
+            var challenges = await store.GetChallengesAsync(userId, expiredOnly: false);
+            return Results.Ok(challenges);
+        });
+
+        // List expired friend challenges
+        group.MapGet("/challenges/expired", async (ClaimsPrincipal user, IFriendStore store, IUserProfileStore profileStore) =>
+        {
+            var userId = await AuthEndpoints.ResolveUserIdAsync(user, profileStore);
+            if (userId is null)
+                return Results.Json(new ErrorResponse("Not authenticated"), statusCode: 401);
+
+            var challenges = await store.GetChallengesAsync(userId, expiredOnly: true);
             return Results.Ok(challenges);
         });
 
