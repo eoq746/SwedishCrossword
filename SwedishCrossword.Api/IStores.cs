@@ -87,3 +87,13 @@ internal interface IClueFlagStore
     Task<ClueFlagInfo?> GetClueFlagAsync(string id);
     Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId);
 }
+
+/// <summary>
+/// Per-user unread notifications operations.
+/// </summary>
+internal interface INotificationStore
+{
+    Task<List<AppNotification>> GetUnreadNotificationsAsync(string userId);
+    Task<bool> MarkNotificationReadAsync(string userId, string notificationId);
+    Task<int> MarkNotificationsReadAsync(string userId, IReadOnlyCollection<string> notificationIds);
+}

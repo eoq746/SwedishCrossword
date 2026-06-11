@@ -43,6 +43,7 @@ builder.Services.AddSingleton<IFriendStore>(sp => sp.GetRequiredService<Leaderbo
 builder.Services.AddSingleton<IAnalyticsStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IAdminStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<IClueFlagStore>(sp => sp.GetRequiredService<LeaderboardStore>());
+builder.Services.AddSingleton<INotificationStore>(sp => sp.GetRequiredService<LeaderboardStore>());
 builder.Services.AddSingleton<WordListAdminService>();
 builder.Services.AddSingleton<BlobWordListSyncService>();
 builder.Services.AddSingleton<SubmissionTokenService>();
@@ -727,6 +728,7 @@ app.MapLeaderboardEndpoints();
 app.MapStatsEndpoints();
 app.MapAnalyticsEndpoints(puzzlePath);
 app.MapFriendsEndpoints();
+app.MapNotificationsEndpoints();
 
 app.MapHealthChecks("/api/health/live", new HealthCheckOptions
 {

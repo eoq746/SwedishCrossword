@@ -14,7 +14,7 @@ namespace SwedishCrossword.Api;
 /// Uses Azure SQL in production (when ConnectionStrings:Leaderboard is set)
 /// and falls back to SQLite for local development and testing.
 /// </summary>
-sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IClueFlagStore, IDisposable
+sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfileStore, IFriendStore, IAnalyticsStore, IAdminStore, IClueFlagStore, INotificationStore, IDisposable
 {
     [GeneratedRegex(@"^\d{4}-\d{2}-\d{2}$")]
     public static partial Regex DatePattern { get; }
@@ -2024,6 +2024,17 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             CREATE INDEX idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
             IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_clue_flags_created_by')
             CREATE INDEX idx_clue_flags_created_by ON clue_flags (created_by);
+
+            IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'notification_reads')
+            CREATE TABLE notification_reads (
+                user_id         NVARCHAR(200) NOT NULL,
+                notification_id NVARCHAR(200) NOT NULL,
+                created_at      BIGINT NOT NULL,
+                CONSTRAINT PK_notification_reads PRIMARY KEY (user_id, notification_id)
+            );
+
+            IF NOT EXISTS (SELECT * FROM sys.indexes WHERE name = 'idx_notification_reads_user_created')
+            CREATE INDEX idx_notification_reads_user_created ON notification_reads (user_id, created_at DESC);
             """;
         cmd.ExecuteNonQuery();
         _logger.LogInformation("Azure SQL database initialised");
@@ -2145,6 +2156,14 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             );
             CREATE INDEX IF NOT EXISTS idx_clue_flags_status_created ON clue_flags (status, created_at DESC);
             CREATE INDEX IF NOT EXISTS idx_clue_flags_created_by ON clue_flags (created_by);
+
+            CREATE TABLE IF NOT EXISTS notification_reads (
+                user_id         TEXT NOT NULL,
+                notification_id TEXT NOT NULL,
+                created_at      INTEGER NOT NULL,
+                PRIMARY KEY (user_id, notification_id)
+            );
+            CREATE INDEX IF NOT EXISTS idx_notification_reads_user_created ON notification_reads (user_id, created_at DESC);
             """;
         create.ExecuteNonQuery();
 
@@ -2390,6 +2409,186 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         p.ParameterName = name;
         p.Value = value;
         cmd.Parameters.Add(p);
+    }
+
+    public async Task<List<AppNotification>> GetUnreadNotificationsAsync(string userId)
+    {
+        var now = _timeProvider.GetUtcNow();
+        var nowMs = now.ToUnixTimeMilliseconds();
+
+        var notifications = new List<AppNotification>();
+
+        var requests = await GetPendingRequestsAsync(userId);
+        foreach (var request in requests)
+        {
+            if (!string.Equals(request.Direction, "incoming", StringComparison.Ordinal))
+                continue;
+
+            notifications.Add(new AppNotification(
+                Id: $"friend-request:{request.Id}",
+                Type: "friend-request",
+                Title: "Ny vänförfrågan",
+                Description: $"{request.FromAlias} vill bli din vän.",
+                Href: "/profile",
+                CreatedAt: request.CreatedAt));
+        }
+
+        var activeChallenges = await GetChallengesAsync(userId, expiredOnly: false);
+        foreach (var challenge in activeChallenges)
+        {
+            if (string.Equals(challenge.Direction, "incoming", StringComparison.Ordinal)
+                && string.Equals(challenge.Status, "pending", StringComparison.Ordinal))
+            {
+                var puzzleSizePart = string.IsNullOrWhiteSpace(challenge.PuzzleSize)
+                    ? string.Empty
+                    : $"&size={Uri.EscapeDataString(challenge.PuzzleSize)}";
+                notifications.Add(new AppNotification(
+                    Id: $"challenge-invite:{challenge.Id}",
+                    Type: "challenge-invite",
+                    Title: "Ny vänutmaning",
+                    Description: $"{challenge.FriendAlias} utmanar dig ({challenge.Date}{(string.IsNullOrWhiteSpace(challenge.PuzzleSize) ? string.Empty : $" · {challenge.PuzzleSize}")}).",
+                    Href: $"/puzzle?date={Uri.EscapeDataString(challenge.Date)}{puzzleSizePart}",
+                    CreatedAt: challenge.CreatedAt));
+            }
+
+            if (string.Equals(challenge.Direction, "outgoing", StringComparison.Ordinal)
+                && (string.Equals(challenge.Status, "accepted", StringComparison.Ordinal)
+                    || string.Equals(challenge.Status, "declined", StringComparison.Ordinal)))
+            {
+                var accepted = string.Equals(challenge.Status, "accepted", StringComparison.Ordinal);
+                notifications.Add(new AppNotification(
+                    Id: $"challenge-response:{challenge.Id}:{challenge.Status}",
+                    Type: "challenge-response",
+                    Title: accepted ? "Utmaning accepterad" : "Utmaning avböjd",
+                    Description: $"{challenge.FriendAlias} har {(accepted ? "accepterat" : "avböjt")} din utmaning.",
+                    Href: "/profile",
+                    CreatedAt: challenge.RespondedAt ?? challenge.CreatedAt));
+            }
+        }
+
+        var expiredChallenges = await GetChallengesAsync(userId, expiredOnly: true);
+        foreach (var challenge in expiredChallenges)
+        {
+            notifications.Add(new AppNotification(
+                Id: $"challenge-result:{challenge.Id}:{challenge.ResultStatus}",
+                Type: "challenge-result",
+                Title: string.Equals(challenge.ResultStatus, "completed", StringComparison.Ordinal)
+                    ? "Utmaning avgjord"
+                    : "Utmaning utgången",
+                Description: string.Equals(challenge.ResultStatus, "completed", StringComparison.Ordinal)
+                    ? $"{(string.IsNullOrWhiteSpace(challenge.WinnerAlias) ? "Oavgjort" : $"{challenge.WinnerAlias} vann")} mot {challenge.FriendAlias}."
+                    : $"Utmaningen mot {challenge.FriendAlias} gick ut utan vinnare.",
+                Href: "/profile",
+                CreatedAt: challenge.RespondedAt ?? challenge.CreatedAt));
+        }
+
+        var stats = await GetUserStatsAsync(userId);
+        foreach (var badge in stats.Badges ?? [])
+        {
+            if (!badge.Unlocked)
+                continue;
+
+            notifications.Add(new AppNotification(
+                Id: $"achievement:{badge.Id}",
+                Type: "achievement",
+                Title: "Ny prestation",
+                Description: badge.Name,
+                Href: "/profile",
+                CreatedAt: nowMs));
+        }
+
+        if (notifications.Count == 0)
+            return notifications;
+
+        await using var conn = await OpenConnectionAsync();
+        await using var readCmd = conn.CreateCommand();
+        readCmd.CommandText = "SELECT notification_id FROM notification_reads WHERE user_id = @uid";
+        AddParam(readCmd, "@uid", userId);
+
+        var readIds = new HashSet<string>(StringComparer.Ordinal);
+        await using (var reader = await readCmd.ExecuteReaderAsync())
+        {
+            while (await reader.ReadAsync())
+            {
+                readIds.Add(reader.GetString(0));
+            }
+        }
+
+        return notifications
+            .Where(notification => !readIds.Contains(notification.Id))
+            .OrderByDescending(notification => notification.CreatedAt)
+            .ToList();
+    }
+
+    public async Task<bool> MarkNotificationReadAsync(string userId, string notificationId)
+    {
+        await using var conn = await OpenConnectionAsync();
+        await using var cmd = conn.CreateCommand();
+        cmd.CommandText = _useSqlServer
+            ? """
+              MERGE notification_reads AS target
+              USING (SELECT @uid AS user_id, @notificationId AS notification_id, @createdAt AS created_at) AS source
+              ON target.user_id = source.user_id AND target.notification_id = source.notification_id
+              WHEN NOT MATCHED THEN
+                  INSERT (user_id, notification_id, created_at)
+                  VALUES (source.user_id, source.notification_id, source.created_at);
+              """
+            : """
+              INSERT OR IGNORE INTO notification_reads (user_id, notification_id, created_at)
+              VALUES (@uid, @notificationId, @createdAt);
+              """;
+        AddParam(cmd, "@uid", userId);
+        AddParam(cmd, "@notificationId", notificationId);
+        AddParam(cmd, "@createdAt", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+        await cmd.ExecuteNonQueryAsync();
+        return true;
+    }
+
+    public async Task<int> MarkNotificationsReadAsync(string userId, IReadOnlyCollection<string> notificationIds)
+    {
+        if (notificationIds.Count == 0)
+            return 0;
+
+        await using var conn = await OpenConnectionAsync();
+        await using var tx = await conn.BeginTransactionAsync();
+
+        try
+        {
+            var changed = 0;
+            foreach (var notificationId in notificationIds)
+            {
+                if (string.IsNullOrWhiteSpace(notificationId))
+                    continue;
+
+                await using var cmd = conn.CreateCommand();
+                cmd.Transaction = tx;
+                cmd.CommandText = _useSqlServer
+                    ? """
+                      MERGE notification_reads AS target
+                      USING (SELECT @uid AS user_id, @notificationId AS notification_id, @createdAt AS created_at) AS source
+                      ON target.user_id = source.user_id AND target.notification_id = source.notification_id
+                      WHEN NOT MATCHED THEN
+                          INSERT (user_id, notification_id, created_at)
+                          VALUES (source.user_id, source.notification_id, source.created_at);
+                      """
+                    : """
+                      INSERT OR IGNORE INTO notification_reads (user_id, notification_id, created_at)
+                      VALUES (@uid, @notificationId, @createdAt);
+                      """;
+                AddParam(cmd, "@uid", userId);
+                AddParam(cmd, "@notificationId", notificationId);
+                AddParam(cmd, "@createdAt", _timeProvider.GetUtcNow().ToUnixTimeMilliseconds());
+                changed += await cmd.ExecuteNonQueryAsync();
+            }
+
+            await tx.CommitAsync();
+            return changed;
+        }
+        catch
+        {
+            await tx.RollbackAsync();
+            throw;
+        }
     }
 
     // ── GDPR: Data export ──
