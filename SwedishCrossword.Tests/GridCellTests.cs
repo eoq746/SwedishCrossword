@@ -4,6 +4,7 @@ using SwedishCrossword.Models;
 
 namespace SwedishCrossword.Tests;
 
+[Category("Unit")]
 /// <summary>
 /// Unit tests for the GridCell class
 /// </summary>
@@ -49,10 +50,10 @@ public class GridCellTests
         await Assert.That(cell.Letter).IsEqualTo('A');
     }
 
-    [Test]
-    [Arguments('å', 'Å')]
-    [Arguments('ä', 'Ä')]
-    [Arguments('ö', 'Ö')]
+    [Test, Category("Unit"), Category("Validation")]
+    [Arguments('å', 'Å', DisplayName = "Swedish char å uppercases to Å")]
+    [Arguments('ä', 'Ä', DisplayName = "Swedish char ä uppercases to Ä")]
+    [Arguments('ö', 'Ö', DisplayName = "Swedish char ö uppercases to Ö")]
     public async Task SetLetter_HandlesSwedishCharacters(char input, char expected)
     {
         var cell = new GridCell();

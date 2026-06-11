@@ -13,7 +13,8 @@ using TUnit.Core;
 namespace SwedishCrossword.Api.Tests;
 
 #pragma warning disable AD0001 // Analyzer threw an exception (TUnit.Analyzers.DisposableFieldPropertyAnalyzer bug)
-public class ApiIntegrationTests : IAsyncDisposable
+[Category("Integration")]
+public class ApiIntegrationTests
 {
     private ApiTestFixture _fixture = null!;
 
@@ -29,13 +30,8 @@ public class ApiIntegrationTests : IAsyncDisposable
         if (_fixture != null)
         {
             await _fixture.DisposeAsync();
+            _fixture = null!;
         }
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        await Cleanup();
-        GC.SuppressFinalize(this);
     }
 
     private WebApplicationFactory<Program> Factory => _fixture.Factory;

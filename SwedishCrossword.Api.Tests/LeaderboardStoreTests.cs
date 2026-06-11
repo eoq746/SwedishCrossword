@@ -10,6 +10,8 @@ using TUnit.Core;
 
 namespace SwedishCrossword.Api.Tests;
 
+[Category("Integration")]
+[Category("Store")]
 public class LeaderboardStoreTests
 {
     private string _tempDir = null!;
@@ -1143,7 +1145,7 @@ public class LeaderboardStoreTests
     public async Task GetChallengesAsync_ExpiredWithoutBothSolves_MarksExpired()
     {
         var frozen = new FakeTimeProvider();
-        frozen.SetUtcNow(new DateTimeOffset(2025, 1, 20, 12, 0, 0, TimeSpan.Zero));
+        frozen.SetUtcNow(new DateTimeOffset(2025, 1, 18, 12, 0, 0, TimeSpan.Zero));
         var tempDir = Path.Combine(Path.GetTempPath(), "sc-test-store-expired-" + Guid.NewGuid());
         Directory.CreateDirectory(tempDir);
         using var store = CreateStore(tempDir, frozen);
@@ -1162,7 +1164,9 @@ public class LeaderboardStoreTests
             await store.RespondToChallengeAsync(challenge.Id, "user2", accepted: true);
             await store.AppendHistoryAsync("2025-01-18", new HistoryRecord("Alice", 200, 1L, "h1", "15x15", 0, 0, "user1"));
 
-            var updated = (await store.GetChallengesAsync("user1")).Single();
+            frozen.SetUtcNow(new DateTimeOffset(2025, 1, 20, 12, 0, 0, TimeSpan.Zero));
+
+            var updated = (await store.GetChallengesAsync("user1", expiredOnly: true)).Single();
             await Assert.That(updated.ResultStatus).IsEqualTo("expired");
             await Assert.That(updated.WinnerAlias).IsNull();
         }

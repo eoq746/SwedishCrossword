@@ -10,6 +10,7 @@ using TUnit.Core;
 
 namespace SwedishCrossword.Api.Tests;
 
+[Category("Unit")]
 public class SubmissionTokenServiceTests
 {
     private SubmissionTokenService CreateService(string secret = "test-secret")
