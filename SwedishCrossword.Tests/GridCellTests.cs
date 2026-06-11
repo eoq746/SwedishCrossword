@@ -150,8 +150,10 @@ public class GridCellTests
     [Test]
     public async Task ToString_ReturnsAsteriskForAsteriskCell()
     {
-        var cell = new GridCell();
-        cell.Letter = '*';
+        var cell = new GridCell
+        {
+            Letter = '*'
+        };
 
         await Assert.That(cell.ToString()).IsEqualTo("*");
         await Assert.That(cell.HasAsterisk).IsTrue();

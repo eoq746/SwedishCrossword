@@ -59,7 +59,7 @@ public class GenerationHelpersTests
         var pattern = new List<char?> { null, 'A', 'T' };
 
         var matches = GenerationHelpers.FindWordsMatchingPattern(
-            words, pattern, new HashSet<string> { "CAT" }, []);
+            words, pattern, ["CAT"], []);
 
         await Assert.That(matches.Count).IsEqualTo(1);
         await Assert.That(matches[0].Text).IsEqualTo("BAT");
@@ -76,7 +76,7 @@ public class GenerationHelpersTests
         var pattern = new List<char?> { null, 'A', 'T' };
 
         var matches = GenerationHelpers.FindWordsMatchingPattern(
-            words, pattern, [], new HashSet<string> { "BAT" });
+            words, pattern, [], ["BAT"]);
 
         await Assert.That(matches.Count).IsEqualTo(1);
         await Assert.That(matches[0].Text).IsEqualTo("CAT");

@@ -14,7 +14,7 @@ namespace SwedishCrossword.Api.Tests;
 
 #pragma warning disable AD0001 // Analyzer threw an exception (TUnit.Analyzers.DisposableFieldPropertyAnalyzer bug)
 [Category("Integration")]
-public class ApiIntegrationTests
+public class ApiIntegrationTests : IDisposable
 {
     private ApiTestFixture _fixture = null!;
 
@@ -1004,20 +1004,20 @@ public class ApiIntegrationTests
         Directory.CreateDirectory(TempPuzzlePath);
         await File.WriteAllTextAsync(Path.Combine(TempPuzzlePath, $"puzzle-{today}.json"), TestPuzzleJson);
 
-        var puzzleResponse = await Client.GetAsync($"/api/puzzle/{today}");
-        var puzzle = await puzzleResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var response = await Client.GetAsync($"/api/puzzle/{today}");
+        var puzzle = await response.Content.ReadFromJsonAsync<JsonElement>();
         var token = puzzle.GetProperty("submissionToken").GetString()!;
 
         // Submit with no cells filled
-        var response = await Client.PostAsJsonAsync("/api/puzzle/check", new
+        var checkResponse = await Client.PostAsJsonAsync("/api/puzzle/check", new
         {
             token,
             puzzleDate = today,
             cells = new Dictionary<string, string>()
         });
 
-        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
-        var data = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(checkResponse.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var data = await checkResponse.Content.ReadFromJsonAsync<JsonElement>();
         await Assert.That(data.GetProperty("solved").GetBoolean()).IsFalse();
     }
 
@@ -1819,6 +1819,12 @@ public class ApiIntegrationTests
         var response = await Client.GetAsync("/api/404");
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.NotFound);
+    }
+
+    public void Dispose()
+    {
+        _fixture?.Dispose();
+        GC.SuppressFinalize(this);
     }
 }
 

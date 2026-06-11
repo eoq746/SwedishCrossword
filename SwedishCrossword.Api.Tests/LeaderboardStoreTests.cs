@@ -1002,12 +1002,11 @@ public class LeaderboardStoreTests
 
         var friendshipId = (await _store.GetFriendsAsync("user1"))[0].FriendId;
         var date = GetSwedishDate().ToString("yyyy-MM-dd");
+        var (Success, _) = await _store.CreateChallengeAsync("user1", friendshipId, date, "10x10");
+        var (SecondSuccess, _) = await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
 
-        var first = await _store.CreateChallengeAsync("user1", friendshipId, date, "10x10");
-        var second = await _store.CreateChallengeAsync("user1", friendshipId, date, "15x15");
-
-        await Assert.That(first.Success).IsTrue();
-        await Assert.That(second.Success).IsTrue();
+        await Assert.That(Success).IsTrue();
+        await Assert.That(SecondSuccess).IsTrue();
     }
 
     [Test]
