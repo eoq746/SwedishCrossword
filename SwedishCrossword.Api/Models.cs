@@ -145,3 +145,14 @@ record PuzzleRegenerationStatusResponse(
     long? LastStartedAt,
     long? LastCompletedAt,
     string? LastError);
+
+// Notifications
+record AppNotification(
+    string Id,
+    string Type,
+    string Title,
+    string Description,
+    string Href,
+    long CreatedAt);
+
+record NotificationsMarkReadRequest(string[] NotificationIds);

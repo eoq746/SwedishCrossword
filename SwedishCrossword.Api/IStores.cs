@@ -52,7 +52,7 @@ internal interface IFriendStore
     Task<List<FriendsLeaderboardEntry>> GetFriendsLeaderboardAsync(string userId, string date, string? puzzleHash = null);
     Task<(bool Success, string Error)> CreateChallengeAsync(string fromUserId, string friendRequestId, string date, string puzzleSize);
     Task<FriendChallengesCreateResponse> CreateChallengesAsync(string fromUserId, IReadOnlyCollection<string> friendRequestIds, string date, string puzzleSize);
-    Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId);
+    Task<List<FriendChallengeInfo>> GetChallengesAsync(string userId, bool expiredOnly = false);
     Task<bool> RespondToChallengeAsync(string challengeId, string userId, bool accepted);
 }
 
@@ -86,4 +86,14 @@ internal interface IClueFlagStore
     Task<List<ClueFlagInfo>> ListPendingClueFlagsAsync(int limit);
     Task<ClueFlagInfo?> GetClueFlagAsync(string id);
     Task<bool> ResolveClueFlagAsync(string id, string status, string? updatedClue, string? adminNote, string resolvedByUserId);
+}
+
+/// <summary>
+/// Per-user unread notifications operations.
+/// </summary>
+internal interface INotificationStore
+{
+    Task<List<AppNotification>> GetUnreadNotificationsAsync(string userId);
+    Task<bool> MarkNotificationReadAsync(string userId, string notificationId);
+    Task<int> MarkNotificationsReadAsync(string userId, IReadOnlyCollection<string> notificationIds);
 }

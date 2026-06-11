@@ -5,11 +5,20 @@ using SwedishCrossword.Services;
 
 namespace SwedishCrossword.Tests;
 
+[Category("Unit")]
 /// <summary>
 /// Unit tests for the SwedishDictionary class
 /// </summary>
 public class SwedishDictionaryTests
 {
+    public static IEnumerable<(string Word, string Clue, string DisplayName)> InvalidAddWordCases()
+    {
+        yield return ("", "Valid clue", "Reject empty word");
+        yield return ("   ", "Valid clue", "Reject whitespace-only word");
+        yield return ("WORD", "", "Reject empty clue");
+        yield return ("WORD", "   ", "Reject whitespace-only clue");
+    }
+
     [Test]
     public async Task Constructor_CreatesEmptyDictionaryWhenRequested()
     {
@@ -39,40 +48,15 @@ public class SwedishDictionaryTests
         await Assert.That(dictionary.IsValidWord("TESTORD")).IsTrue();
     }
 
-    [Test]
-    public async Task AddWord_ThrowsForEmptyWord()
+    [Test, Category("Unit"), Category("Validation")]
+    [MethodDataSource(nameof(InvalidAddWordCases))]
+    public async Task AddWord_ThrowsForInvalidTextInputs(string word, string clue, string displayName)
     {
         var dictionary = new SwedishDictionary(empty: true);
 
-        await Assert.That(() => dictionary.AddWord("", "Valid clue", "Test"))
-            .Throws<ArgumentException>();
-    }
-
-    [Test]
-    public async Task AddWord_ThrowsForWhitespaceWord()
-    {
-        var dictionary = new SwedishDictionary(empty: true);
-
-        await Assert.That(() => dictionary.AddWord("   ", "Valid clue", "Test"))
-            .Throws<ArgumentException>();
-    }
-
-    [Test]
-    public async Task AddWord_ThrowsForEmptyClue()
-    {
-        var dictionary = new SwedishDictionary(empty: true);
-
-        await Assert.That(() => dictionary.AddWord("WORD", "", "Test"))
-            .Throws<ArgumentException>();
-    }
-
-    [Test]
-    public async Task AddWord_ThrowsForWhitespaceClue()
-    {
-        var dictionary = new SwedishDictionary(empty: true);
-
-        await Assert.That(() => dictionary.AddWord("WORD", "   ", "Test"))
-            .Throws<ArgumentException>();
+        await Assert.That(() => dictionary.AddWord(word, clue, "Test"))
+            .Throws<ArgumentException>()
+            .Because(displayName);
     }
 
     [Test]

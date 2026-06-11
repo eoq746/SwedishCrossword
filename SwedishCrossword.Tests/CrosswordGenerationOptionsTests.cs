@@ -5,6 +5,7 @@ using SwedishCrossword.Services;
 
 namespace SwedishCrossword.Tests;
 
+[Category("Unit")]
 /// <summary>
 /// Tests for <see cref="CrosswordGenerationOptions"/> preset configurations and computed properties.
 /// </summary>
@@ -14,49 +15,26 @@ public class CrosswordGenerationOptionsTests
     // Preset configurations
     // -----------------------------------------------------------------------
 
-    [Test]
-    public async Task Easy_HasExpectedDimensions()
+    [Test, Category("Unit"), Category("Validation")]
+    [Arguments("Easy", 11, 11, DisplayName = "Preset Easy dimensions")]
+    [Arguments("Medium", 15, 15, DisplayName = "Preset Medium dimensions")]
+    [Arguments("Hard", 17, 17, DisplayName = "Preset Hard dimensions")]
+    [Arguments("Small", 9, 9, DisplayName = "Preset Small dimensions")]
+    [Arguments("Mobile", 10, 10, DisplayName = "Preset Mobile dimensions")]
+    public async Task Preset_HasExpectedDimensions(string presetName, int expectedWidth, int expectedHeight)
     {
-        var opts = CrosswordGenerationOptions.Easy;
+        var opts = presetName switch
+        {
+            "Easy" => CrosswordGenerationOptions.Easy,
+            "Medium" => CrosswordGenerationOptions.Medium,
+            "Hard" => CrosswordGenerationOptions.Hard,
+            "Small" => CrosswordGenerationOptions.Small,
+            "Mobile" => CrosswordGenerationOptions.Mobile,
+            _ => throw new ArgumentOutOfRangeException(nameof(presetName), presetName, null)
+        };
 
-        await Assert.That(opts.Width).IsEqualTo(11);
-        await Assert.That(opts.Height).IsEqualTo(11);
-    }
-
-    [Test]
-    public async Task Medium_HasExpectedDimensions()
-    {
-        var opts = CrosswordGenerationOptions.Medium;
-
-        await Assert.That(opts.Width).IsEqualTo(15);
-        await Assert.That(opts.Height).IsEqualTo(15);
-    }
-
-    [Test]
-    public async Task Hard_HasExpectedDimensions()
-    {
-        var opts = CrosswordGenerationOptions.Hard;
-
-        await Assert.That(opts.Width).IsEqualTo(17);
-        await Assert.That(opts.Height).IsEqualTo(17);
-    }
-
-    [Test]
-    public async Task Small_HasExpectedDimensions()
-    {
-        var opts = CrosswordGenerationOptions.Small;
-
-        await Assert.That(opts.Width).IsEqualTo(9);
-        await Assert.That(opts.Height).IsEqualTo(9);
-    }
-
-    [Test]
-    public async Task Mobile_HasExpectedDimensions()
-    {
-        var opts = CrosswordGenerationOptions.Mobile;
-
-        await Assert.That(opts.Width).IsEqualTo(10);
-        await Assert.That(opts.Height).IsEqualTo(10);
+        await Assert.That(opts.Width).IsEqualTo(expectedWidth);
+        await Assert.That(opts.Height).IsEqualTo(expectedHeight);
     }
 
     [Test]

@@ -5,6 +5,7 @@ using SwedishCrossword.Services.Generation;
 
 namespace SwedishCrossword.Tests;
 
+[Category("Unit")]
 /// <summary>
 /// Tests for the internal <see cref="GenerationHelpers"/> utility methods.
 /// Requires InternalsVisibleTo from SwedishCrossword.Core.
@@ -15,40 +16,16 @@ public class GenerationHelpersTests
     // CountVowels
     // -----------------------------------------------------------------------
 
-    [Test]
-    public async Task CountVowels_AllVowels()
+    [Test, Category("Unit"), Category("Validation")]
+    [Arguments("AEIOU", 5, DisplayName = "CountVowels counts latin vowels")]
+    [Arguments("ÅÄÖ", 3, DisplayName = "CountVowels counts Swedish vowels")]
+    [Arguments("STÖRTLOPP", 2, DisplayName = "CountVowels counts mixed text vowels")]
+    [Arguments("BCDG", 0, DisplayName = "CountVowels returns zero for consonants only")]
+    [Arguments("", 0, DisplayName = "CountVowels returns zero for empty string")]
+    public async Task CountVowels_ReturnsExpectedCount(string text, int expectedCount)
     {
-        var count = GenerationHelpers.CountVowels("AEIOU");
-        await Assert.That(count).IsEqualTo(5);
-    }
-
-    [Test]
-    public async Task CountVowels_SwedishVowels()
-    {
-        var count = GenerationHelpers.CountVowels("ÅÄÖ");
-        await Assert.That(count).IsEqualTo(3);
-    }
-
-    [Test]
-    public async Task CountVowels_MixedText()
-    {
-        var count = GenerationHelpers.CountVowels("STÖRTLOPP");
-        // Ö is a vowel, O is a vowel => 2 vowels
-        await Assert.That(count).IsEqualTo(2);
-    }
-
-    [Test]
-    public async Task CountVowels_NoVowels()
-    {
-        var count = GenerationHelpers.CountVowels("BCDG");
-        await Assert.That(count).IsEqualTo(0);
-    }
-
-    [Test]
-    public async Task CountVowels_EmptyString()
-    {
-        var count = GenerationHelpers.CountVowels("");
-        await Assert.That(count).IsEqualTo(0);
+        var count = GenerationHelpers.CountVowels(text);
+        await Assert.That(count).IsEqualTo(expectedCount);
     }
 
     // -----------------------------------------------------------------------

@@ -13,7 +13,8 @@ using TUnit.Core;
 namespace SwedishCrossword.Api.Tests;
 
 #pragma warning disable AD0001 // Analyzer threw an exception (TUnit.Analyzers.DisposableFieldPropertyAnalyzer bug)
-public class ApiIntegrationTests : IAsyncDisposable
+[Category("Integration")]
+public class ApiIntegrationTests
 {
     private ApiTestFixture _fixture = null!;
 
@@ -29,13 +30,8 @@ public class ApiIntegrationTests : IAsyncDisposable
         if (_fixture != null)
         {
             await _fixture.DisposeAsync();
+            _fixture = null!;
         }
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        await Cleanup();
-        GC.SuppressFinalize(this);
     }
 
     private WebApplicationFactory<Program> Factory => _fixture.Factory;
@@ -1236,6 +1232,16 @@ public class ApiIntegrationTests : IAsyncDisposable
     }
 
     [Test]
+    public async Task FriendsChallengesExpired_List_Authenticated_ReturnsOk()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+
+        var response = await authFixture.Client.GetAsync("/api/friends/challenges/expired");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+    }
+
+    [Test]
     public async Task FriendsChallenges_List_WithChallengeData_ReturnsOk()
     {
         await using var authFixture = new ApiTestFixture(enableTestAuth: true);
@@ -1268,6 +1274,39 @@ public class ApiIntegrationTests : IAsyncDisposable
         var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
         await Assert.That(payload.ValueKind).IsEqualTo(JsonValueKind.Array);
         await Assert.That(payload.GetArrayLength()).IsEqualTo(1);
+    }
+
+    [Test]
+    public async Task FriendsChallenges_ExpiredList_WithChallengeData_ReturnsOnlyExpired()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        var profileStore = authFixture.Factory.Services.GetRequiredService<IUserProfileStore>();
+        var friendStore = authFixture.Factory.Services.GetRequiredService<IFriendStore>();
+
+        var me = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/auth/me");
+        var senderUser = me.GetProperty("userId").GetString()!;
+        var friendUser = await profileStore.ResolveCanonicalUserIdAsync("friend-user-expired", null);
+        await profileStore.SetAliasAsync(senderUser, "JockeB");
+        await profileStore.SetAliasAsync(friendUser, "Bob");
+
+        var (sent, _) = await friendStore.SendFriendRequestAsync(senderUser, friendUser);
+        await Assert.That(sent).IsTrue();
+        var requests = await friendStore.GetPendingRequestsAsync(friendUser);
+        await friendStore.AcceptFriendRequestAsync(requests[0].Id, friendUser);
+
+        var friendshipId = (await friendStore.GetFriendsAsync(senderUser))[0].FriendId;
+        var oldDate = GetSwedishDate().AddDays(-3).ToString("yyyy-MM-dd");
+        var (created, _) = await friendStore.CreateChallengeAsync(senderUser, friendshipId, oldDate, "17x17");
+        await Assert.That(created).IsTrue();
+
+        var response = await authFixture.Client.GetAsync("/api/friends/challenges/expired");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(payload.ValueKind).IsEqualTo(JsonValueKind.Array);
+        await Assert.That(payload.GetArrayLength()).IsEqualTo(1);
+        var first = payload[0];
+        await Assert.That(first.GetProperty("resultStatus").GetString()).IsEqualTo("expired");
     }
 
     [Test]
@@ -1320,6 +1359,102 @@ public class ApiIntegrationTests : IAsyncDisposable
         });
 
         await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.BadRequest);
+    }
+
+    [Test]
+    public async Task Notifications_GetUnread_WithAuthenticatedUser_ReturnsUnreadEntries()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        var profileStore = authFixture.Factory.Services.GetRequiredService<IUserProfileStore>();
+        var friendStore = authFixture.Factory.Services.GetRequiredService<IFriendStore>();
+
+        var me = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/auth/me");
+        var currentUserId = me.GetProperty("userId").GetString()!;
+        var senderUserId = await profileStore.ResolveCanonicalUserIdAsync("notifications-sender", null);
+        await profileStore.SetAliasAsync(senderUserId, "NotifSender");
+        await profileStore.SetAliasAsync(currentUserId, "NotifReceiver");
+
+        var (sent, _) = await friendStore.SendFriendRequestAsync(senderUserId, currentUserId);
+        await Assert.That(sent).IsTrue();
+
+        var response = await authFixture.Client.GetAsync("/api/notifications/");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(payload.ValueKind).IsEqualTo(JsonValueKind.Array);
+        await Assert.That(payload.GetArrayLength()).IsGreaterThan(0);
+
+        var notification = payload.EnumerateArray()
+            .FirstOrDefault(n => n.GetProperty("type").GetString() == "friend-request");
+
+        await Assert.That(notification.ValueKind).IsNotEqualTo(JsonValueKind.Undefined);
+        await Assert.That(notification.GetProperty("id").GetString()).StartsWith("friend-request:");
+    }
+
+    [Test]
+    public async Task Notifications_MarkSingleRead_WithAuthenticatedUser_RemovesNotificationFromUnread()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        var profileStore = authFixture.Factory.Services.GetRequiredService<IUserProfileStore>();
+        var friendStore = authFixture.Factory.Services.GetRequiredService<IFriendStore>();
+
+        var me = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/auth/me");
+        var currentUserId = me.GetProperty("userId").GetString()!;
+        var senderUserId = await profileStore.ResolveCanonicalUserIdAsync("notifications-mark-single", null);
+        await profileStore.SetAliasAsync(senderUserId, "NotifSenderSingle");
+        await profileStore.SetAliasAsync(currentUserId, "NotifReceiverSingle");
+
+        var (sent, _) = await friendStore.SendFriendRequestAsync(senderUserId, currentUserId);
+        await Assert.That(sent).IsTrue();
+
+        var unreadBefore = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/notifications/");
+        var notificationId = unreadBefore.EnumerateArray()
+            .First(n => n.GetProperty("type").GetString() == "friend-request")
+            .GetProperty("id")
+            .GetString()!;
+
+        var markResponse = await authFixture.Client.PostAsync($"/api/notifications/{Uri.EscapeDataString(notificationId)}/read", content: null);
+        await Assert.That(markResponse.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var unreadAfter = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/notifications/");
+        var stillPresent = unreadAfter.EnumerateArray().Any(n => n.GetProperty("id").GetString() == notificationId);
+        await Assert.That(stillPresent).IsFalse();
+    }
+
+    [Test]
+    public async Task Notifications_MarkBulkRead_WithAuthenticatedUser_ReturnsChangedAndRemovesNotification()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        var profileStore = authFixture.Factory.Services.GetRequiredService<IUserProfileStore>();
+        var friendStore = authFixture.Factory.Services.GetRequiredService<IFriendStore>();
+
+        var me = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/auth/me");
+        var currentUserId = me.GetProperty("userId").GetString()!;
+        var senderUserId = await profileStore.ResolveCanonicalUserIdAsync("notifications-mark-bulk", null);
+        await profileStore.SetAliasAsync(senderUserId, "NotifSenderBulk");
+        await profileStore.SetAliasAsync(currentUserId, "NotifReceiverBulk");
+
+        var (sent, _) = await friendStore.SendFriendRequestAsync(senderUserId, currentUserId);
+        await Assert.That(sent).IsTrue();
+
+        var unreadBefore = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/notifications/");
+        var notificationId = unreadBefore.EnumerateArray()
+            .First(n => n.GetProperty("type").GetString() == "friend-request")
+            .GetProperty("id")
+            .GetString()!;
+
+        var markResponse = await authFixture.Client.PostAsJsonAsync("/api/notifications/read", new
+        {
+            notificationIds = new[] { notificationId }
+        });
+        await Assert.That(markResponse.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var markPayload = await markResponse.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(markPayload.GetProperty("changed").GetInt32()).IsGreaterThan(0);
+
+        var unreadAfter = await authFixture.Client.GetFromJsonAsync<JsonElement>("/api/notifications/");
+        var stillPresent = unreadAfter.EnumerateArray().Any(n => n.GetProperty("id").GetString() == notificationId);
+        await Assert.That(stillPresent).IsFalse();
     }
 
     [Test]

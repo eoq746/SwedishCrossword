@@ -363,6 +363,106 @@ button {
   color: var(--accent);
 }
 
+.notifications-wrap {
+  position: relative;
+}
+
+.notifications-toggle {
+  position: relative;
+}
+
+.notifications-badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--error-bg, #c62828);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+
+.notifications-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 210;
+  width: min(360px, calc(100vw - 24px));
+  max-height: 420px;
+  overflow: auto;
+  background: var(--surface-raised, var(--card-bg));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.notifications-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.notifications-mark-all {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.notifications-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notifications-item {
+  border-bottom: 1px solid var(--border-soft, var(--border));
+}
+
+.notifications-item:last-child {
+  border-bottom: 0;
+}
+
+.notifications-item a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 11px 12px;
+  text-decoration: none;
+  color: var(--text-body);
+}
+
+.notifications-item a:hover {
+  background: var(--surface-hover);
+}
+
+.notifications-item-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.notifications-item-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.notifications-empty {
+  padding: 12px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 /* ─────────────────────────────────────────────
    About / info pages
 ───────────────────────────────────────────── */
@@ -1128,6 +1228,10 @@ button {
   gap: 12px;
   color: var(--text-muted);
   flex-wrap: wrap;
+}
+
+.challenge-toggle-btn {
+  margin-top: 10px;
 }
 
 /* Alias row */
