@@ -144,6 +144,19 @@ internal static class AnalyticsEndpoints
             return Results.Ok(result);
         }).RequireAuthorization("Admin");
 
+        app.MapGet("/api/admin/wordlists/tombstones", (bool? includeWords, WordListAdminService wordListService) =>
+        {
+            var snapshots = wordListService.GetTombstoneSnapshots(includeWords ?? false);
+            var response = new WordListTombstoneDiagnosticsResponse(
+                snapshots.Select(snapshot => new WordListTombstoneDiagnosticsItem(
+                    snapshot.SourceKey,
+                    snapshot.FileName,
+                    snapshot.Count,
+                    snapshot.Version,
+                    snapshot.Words)).ToList());
+            return Results.Ok(response);
+        }).RequireAuthorization("Admin");
+
         app.MapPost("/api/admin/clues/flags/{id}/resolve", async (
             string id,
             ClueFlagResolveRequest body,

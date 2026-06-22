@@ -87,10 +87,12 @@ internal sealed class BlobWordListSyncService
                 var devBlob = dev.GetBlobClient(file);
                 var prodBlob = prod.GetBlobClient(file);
                 var baseBlob = baseline.GetBlobClient($"{_baselinePrefix!}/{file}");
+                var tombstoneBlob = baseline.GetBlobClient(GetTombstoneBlobPath(file));
 
                 var devContent = await TryDownloadAsync(devBlob, ct);
                 var prodContent = await TryDownloadAsync(prodBlob, ct);
                 var baseContent = await TryDownloadAsync(baseBlob, ct);
+                var tombstoneContent = await TryDownloadAsync(tombstoneBlob, ct);
 
                 if (devContent is null && prodContent is null)
                 {
@@ -98,15 +100,25 @@ internal sealed class BlobWordListSyncService
                     continue;
                 }
 
+                var tombstones = WordListMerger.LoadTombstonesFromJson(tombstoneContent?.Content);
                 var baseJson = baseContent?.Content ?? prodContent?.Content;
                 var merge = MergeThreeWay(baseJson, devContent?.Content, prodContent?.Content, file);
+                var mergedJson = WordListMerger.ApplyTombstones(merge.MergedJson, tombstones, file);
 
-                var changed = !JsonEquals(merge.MergedJson, prodContent?.Content);
+                var changed = !JsonEquals(mergedJson, prodContent?.Content);
 
                 if (!dryRun && changed)
                 {
-                    await UploadMergedAsync(prodBlob, merge.MergedJson, prodContent?.ETag, ct);
-                    await UploadMergedAsync(baseBlob, merge.MergedJson, baseContent?.ETag, ct);
+                    await UploadMergedAsync(prodBlob, mergedJson, prodContent?.ETag, ct);
+                    await UploadMergedAsync(baseBlob, mergedJson, baseContent?.ETag, ct);
+                }
+
+                if (!dryRun)
+                {
+                    var tombstoneJson = WordListMerger.SerializeTombstones(tombstones);
+                    var tombstoneChanged = !JsonEquals(tombstoneJson, tombstoneContent?.Content);
+                    if (tombstoneChanged)
+                        await UploadMergedAsync(tombstoneBlob, tombstoneJson, tombstoneContent?.ETag, ct);
                 }
 
                 fileResults.Add(new BlobWordListSyncFileResult(
@@ -174,6 +186,12 @@ internal sealed class BlobWordListSyncService
 
     private static bool JsonEquals(string? left, string? right)
         => string.Equals(left ?? string.Empty, right ?? string.Empty, StringComparison.Ordinal);
+
+    private string GetTombstoneBlobPath(string wordListFile)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(wordListFile);
+        return $"{_baselinePrefix!}/meta/tombstones/{WordListMerger.GetTombstoneFileName(wordListFile)}";
+    }
 
     private sealed record BlobContent(string Content, ETag ETag);
     private sealed record MergeResult(string MergedJson, int Added, int Updated, int Removed, int Conflicts, List<BlobWordListSyncConflictDetail> ConflictDetails);

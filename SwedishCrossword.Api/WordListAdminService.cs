@@ -13,6 +13,7 @@ internal enum WordListUpdateResult
 }
 
 internal sealed record WordListUpdateResponse(WordListUpdateResult Result, string CurrentVersion, string? SourceKey = null);
+internal sealed record WordListTombstoneSnapshot(string SourceKey, string FileName, int Count, string Version, List<string>? Words = null);
 
 internal sealed class WordListAdminService
 {
@@ -62,6 +63,9 @@ internal sealed class WordListAdminService
                 return new WordListUpdateResponse(WordListUpdateResult.NotFound, currentVersion, sourceKey);
 
             var entry = entries[entryIndex];
+            var normalizedWord = WordListMerger.NormalizeWord(entry.Word);
+            var tombstonePath = ResolveTombstonePath(filePath);
+            var tombstones = LoadTombstones(tombstonePath);
 
             if (removeClue)
             {
@@ -70,6 +74,7 @@ internal sealed class WordListAdminService
                 if (string.IsNullOrWhiteSpace(entry.Clue))
                 {
                     entries.RemoveAt(entryIndex);
+                    tombstones.Add(normalizedWord);
                 }
             }
             else
@@ -90,6 +95,7 @@ internal sealed class WordListAdminService
             }
 
             WriteWordEntries(filePath, entries);
+            WriteTombstones(tombstonePath, tombstones);
             return new WordListUpdateResponse(WordListUpdateResult.Updated, GetFileVersion(filePath), sourceKey);
         }
     }
@@ -116,7 +122,7 @@ internal sealed class WordListAdminService
             }
 
             var entries = LoadWordEntries(customPath);
-            var normalizedWord = word.Trim().ToUpperInvariant();
+            var normalizedWord = WordListMerger.NormalizeWord(word);
             var normalizedClue = clue.Trim();
             var existing = entries.FirstOrDefault(e => e.Word.Equals(normalizedWord, StringComparison.OrdinalIgnoreCase));
             if (existing is not null)
@@ -141,7 +147,42 @@ internal sealed class WordListAdminService
             }
 
             WriteWordEntries(customPath, entries);
+
+            var tombstonePath = ResolveTombstonePath(customPath);
+            var tombstones = LoadTombstones(tombstonePath);
+            if (tombstones.Remove(normalizedWord))
+                WriteTombstones(tombstonePath, tombstones);
+
             return new WordListUpdateResponse(WordListUpdateResult.Updated, GetFileVersion(customPath), "custom");
+        }
+    }
+
+    /// <summary>
+    /// Returns persisted tombstone diagnostics per source word list file.
+    /// </summary>
+    public List<WordListTombstoneSnapshot> GetTombstoneSnapshots(bool includeWords)
+    {
+        lock (_writeLock)
+        {
+            var snapshots = new List<WordListTombstoneSnapshot>(SourceFiles.Length);
+            foreach (var (sourceKey, resolvePath) in SourceFiles)
+            {
+                var sourcePath = resolvePath();
+                var tombstonePath = ResolveTombstonePath(sourcePath);
+                var tombstones = LoadTombstones(tombstonePath);
+                var words = includeWords
+                    ? tombstones.OrderBy(w => w, StringComparer.OrdinalIgnoreCase).ToList()
+                    : null;
+
+                snapshots.Add(new WordListTombstoneSnapshot(
+                    sourceKey,
+                    Path.GetFileName(sourcePath),
+                    tombstones.Count,
+                    GetFileVersion(tombstonePath),
+                    words));
+            }
+
+            return snapshots;
         }
     }
 
@@ -214,4 +255,20 @@ internal sealed class WordListAdminService
         File.WriteAllText(tempPath, json, Encoding.UTF8);
         File.Move(tempPath, filePath, overwrite: true);
     }
+
+    private static string ResolveTombstonePath(string sourceFilePath)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(sourceFilePath);
+
+        var dataPath = DataDirectory.GetPath();
+        var tombstoneDirectory = Path.Combine(dataPath, ".meta", "tombstones");
+        var tombstoneFileName = WordListMerger.GetTombstoneFileName(Path.GetFileName(sourceFilePath));
+        return Path.Combine(tombstoneDirectory, tombstoneFileName);
+    }
+
+    private static HashSet<string> LoadTombstones(string tombstonePath)
+        => WordListMerger.LoadTombstonesFromFile(tombstonePath);
+
+    private static void WriteTombstones(string tombstonePath, HashSet<string> tombstones)
+        => WordListMerger.WriteTombstonesToFile(tombstonePath, tombstones);
 }

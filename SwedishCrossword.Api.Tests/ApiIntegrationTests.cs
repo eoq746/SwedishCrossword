@@ -1516,6 +1516,50 @@ public class ApiIntegrationTests : IDisposable
     }
 
     [Test]
+    public async Task WordListTombstones_RequiresAuth()
+    {
+        var response = await Client.GetAsync("/api/admin/wordlists/tombstones");
+
+        await Assert.That(response.IsSuccessStatusCode).IsFalse();
+    }
+
+    [Test]
+    public async Task WordListTombstones_WithAdminAuth_ReturnsPerSourceDiagnostics()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true, grantAdmin: true);
+
+        var response = await authFixture.Client.GetAsync("/api/admin/wordlists/tombstones");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
+        await Assert.That(payload.TryGetProperty("files", out var files)).IsTrue();
+        await Assert.That(files.ValueKind).IsEqualTo(JsonValueKind.Array);
+        await Assert.That(files.GetArrayLength()).IsEqualTo(5);
+
+        var first = files[0];
+        await Assert.That(first.TryGetProperty("source", out _)).IsTrue();
+        await Assert.That(first.TryGetProperty("fileName", out _)).IsTrue();
+        await Assert.That(first.TryGetProperty("count", out _)).IsTrue();
+        await Assert.That(first.TryGetProperty("version", out _)).IsTrue();
+    }
+
+    [Test]
+    public async Task WordListTombstones_IncludeWords_ReturnsWordArray()
+    {
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true, grantAdmin: true);
+
+        var response = await authFixture.Client.GetAsync("/api/admin/wordlists/tombstones?includeWords=true");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+
+        var payload = await response.Content.ReadFromJsonAsync<JsonElement>();
+        var files = payload.GetProperty("files");
+        var hasWordsProperty = files.EnumerateArray().All(item => item.TryGetProperty("words", out _));
+        await Assert.That(hasWordsProperty).IsTrue();
+    }
+
+    [Test]
     public async Task PuzzleRegenerationStatus_RequiresAuth()
     {
         var response = await Client.GetAsync("/api/admin/puzzle/regeneration-status");

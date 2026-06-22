@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Text;
+using System.Text.Json;
 using SwedishCrossword.Services;
 
 namespace SwedishCrossword.Api;
@@ -241,5 +242,101 @@ internal static class WordListMerger
             .Select(c => c.Trim())
             .Distinct(StringComparer.Ordinal)];
         return entry;
+    }
+
+    public static string GetTombstoneFileName(string wordListFileName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(wordListFileName);
+        return $"{Path.GetFileNameWithoutExtension(wordListFileName)}-tombstones.json";
+    }
+
+    public static HashSet<string> LoadTombstonesFromJson(string? json)
+    {
+        if (string.IsNullOrWhiteSpace(json))
+            return new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        try
+        {
+            var words = JsonSerializer.Deserialize<List<string>>(json, SafeJsonEncoder.DeserializeOptions) ?? [];
+            return new HashSet<string>(words
+                .Where(w => !string.IsNullOrWhiteSpace(w))
+                .Select(NormalizeWord), StringComparer.OrdinalIgnoreCase);
+        }
+        catch (JsonException ex)
+        {
+            throw new InvalidOperationException($"Invalid tombstone JSON: {ex.Message}", ex);
+        }
+    }
+
+    public static string SerializeTombstones(HashSet<string> tombstones)
+    {
+        ArgumentNullException.ThrowIfNull(tombstones);
+
+        var ordered = tombstones
+            .Where(w => !string.IsNullOrWhiteSpace(w))
+            .Select(NormalizeWord)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(w => w, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        return JsonSerializer.Serialize(ordered, JsonOptions);
+    }
+
+    public static string ApplyTombstones(string mergedJson, IReadOnlySet<string> tombstones, string fileName)
+    {
+        ArgumentNullException.ThrowIfNull(mergedJson);
+        ArgumentNullException.ThrowIfNull(tombstones);
+
+        if (tombstones.Count == 0)
+            return mergedJson;
+
+        var map = ParseWordMap(mergedJson, fileName);
+        foreach (var tombstone in tombstones)
+        {
+            if (string.IsNullOrWhiteSpace(tombstone))
+                continue;
+
+            map.Remove(NormalizeWord(tombstone));
+        }
+
+        var ordered = map.Values
+            .OrderBy(e => e.Word, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        return JsonSerializer.Serialize(ordered, JsonOptions);
+    }
+
+    public static HashSet<string> LoadTombstonesFromFile(string tombstoneFilePath)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(tombstoneFilePath);
+
+        if (!File.Exists(tombstoneFilePath))
+            return new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+        var json = File.ReadAllText(tombstoneFilePath, Encoding.UTF8);
+        return LoadTombstonesFromJson(json);
+    }
+
+    public static void WriteTombstonesToFile(string tombstoneFilePath, HashSet<string> tombstones)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(tombstoneFilePath);
+        ArgumentNullException.ThrowIfNull(tombstones);
+
+        var directory = Path.GetDirectoryName(tombstoneFilePath);
+        if (string.IsNullOrWhiteSpace(directory))
+            throw new InvalidOperationException("Tombstone file path must include a directory.");
+
+        Directory.CreateDirectory(directory);
+
+        var json = SerializeTombstones(tombstones);
+        var tempPath = Path.Combine(directory, $"{Path.GetFileName(tombstoneFilePath)}.{Guid.NewGuid():N}.tmp");
+        File.WriteAllText(tempPath, json, Encoding.UTF8);
+        File.Move(tempPath, tombstoneFilePath, overwrite: true);
+    }
+
+    public static string NormalizeWord(string word)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(word);
+        return word.Trim().ToUpperInvariant();
     }
 }
