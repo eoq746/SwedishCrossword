@@ -1493,18 +1493,18 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
         var solveMap = await LoadChallengeSolveMapAsync(conn, userId, pending);
         var today = _timeProvider.GetSwedishDate();
         var list = new List<FriendChallengeInfo>(pending.Count);
-        foreach (var challenge in pending)
+        foreach (var (Id, FriendAlias, Date, PuzzleSize, Status, Direction, CreatedAt, RespondedAt, FromUserId, ToUserId, CurrentUserAlias, FriendUserAlias) in pending)
         {
-            solveMap.TryGetValue((challenge.Date, challenge.PuzzleSize, userId), out var currentSolve);
-            var friendUserId = challenge.Direction == "incoming" ? challenge.FromUserId : challenge.ToUserId;
-            solveMap.TryGetValue((challenge.Date, challenge.PuzzleSize, friendUserId), out var friendSolve);
+            solveMap.TryGetValue((Date, PuzzleSize, userId), out var currentSolve);
+            var friendUserId = Direction == "incoming" ? FromUserId : ToUserId;
+            solveMap.TryGetValue((Date, PuzzleSize, friendUserId), out var friendSolve);
 
             var (resultStatus, winnerAlias, resultReason) = ComputeChallengeResult(
-                challenge.Status,
-                challenge.Date,
+                Status,
+                Date,
                 today,
-                challenge.CurrentUserAlias,
-                challenge.FriendUserAlias,
+                CurrentUserAlias,
+                FriendUserAlias,
                 currentSolve,
                 friendSolve);
 
@@ -1515,19 +1515,19 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
                 continue;
 
             list.Add(new FriendChallengeInfo(
-                Id: challenge.Id,
-                FriendAlias: challenge.FriendAlias,
-                Date: challenge.Date,
-                PuzzleSize: challenge.PuzzleSize,
-                Status: challenge.Status,
-                Direction: challenge.Direction,
-                CreatedAt: challenge.CreatedAt,
-                RespondedAt: challenge.RespondedAt,
+                Id: Id,
+                FriendAlias: FriendAlias,
+                Date: Date,
+                PuzzleSize: PuzzleSize,
+                Status: Status,
+                Direction: Direction,
+                CreatedAt: CreatedAt,
+                RespondedAt: RespondedAt,
                 ResultStatus: resultStatus,
                 WinnerAlias: winnerAlias,
                 ResultReason: resultReason,
-                CurrentUserSolve: currentSolve is null ? null : new FriendChallengeSolveSummary(challenge.CurrentUserAlias, currentSolve.Time, currentSolve.HintsUsed, currentSolve.WordHintsUsed),
-                FriendSolve: friendSolve is null ? null : new FriendChallengeSolveSummary(challenge.FriendUserAlias, friendSolve.Time, friendSolve.HintsUsed, friendSolve.WordHintsUsed)
+                CurrentUserSolve: currentSolve is null ? null : new FriendChallengeSolveSummary(CurrentUserAlias, currentSolve.Time, currentSolve.HintsUsed, currentSolve.WordHintsUsed),
+                FriendSolve: friendSolve is null ? null : new FriendChallengeSolveSummary(FriendUserAlias, friendSolve.Time, friendSolve.HintsUsed, friendSolve.WordHintsUsed)
             ));
         }
 
@@ -2514,10 +2514,9 @@ sealed partial class LeaderboardStore : IScoreStore, IHistoryStore, IUserProfile
             }
         }
 
-        return notifications
+        return [.. notifications
             .Where(notification => !readIds.Contains(notification.Id))
-            .OrderByDescending(notification => notification.CreatedAt)
-            .ToList();
+            .OrderByDescending(notification => notification.CreatedAt)];
     }
 
     public async Task<bool> MarkNotificationReadAsync(string userId, string notificationId)
