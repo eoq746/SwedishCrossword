@@ -6,6 +6,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.Encodings.Web;
 
 namespace SwedishCrossword.Api.Tests;
@@ -67,6 +69,9 @@ internal class ApiTestFixture : IAsyncDisposable
             {
                 builder.UseSetting("Storage:PuzzlePath", puzzlePath);
                 builder.UseSetting("Storage:LeaderboardPath", leaderboardPath);
+                if (enableTestAuth)
+                    builder.UseSetting("Authorization:AdminUserIds:0", ComputeTestAdminUserId());
+
                 builder.ConfigureServices(services =>
                 {
                     var hostedServiceRegistrations = services
@@ -119,6 +124,13 @@ internal class ApiTestFixture : IAsyncDisposable
         DisposeAsync().AsTask().GetAwaiter().GetResult();
     }
 
+    private static string ComputeTestAdminUserId()
+    {
+        var raw = Encoding.UTF8.GetBytes($"{TestAuthHandler.SchemeName.ToLowerInvariant()}:test-user-1");
+        var hash = SHA256.HashData(raw);
+        return Convert.ToHexStringLower(hash);
+    }
+
     private sealed class TestAuthHandler(
         IOptionsMonitor<AuthenticationSchemeOptions> options,
         ILoggerFactory logger,
@@ -126,7 +138,7 @@ internal class ApiTestFixture : IAsyncDisposable
     {
         public const string SchemeName = "Test";
 
-        protected override Task<AuthenticateResult> HandleAuthenticateAsync()
+        public static ClaimsPrincipal CreatePrincipal()
         {
             var claims = new[]
             {
@@ -134,7 +146,12 @@ internal class ApiTestFixture : IAsyncDisposable
                 new Claim(ClaimTypes.Name, "Test User")
             };
             var identity = new ClaimsIdentity(claims, SchemeName);
-            var principal = new ClaimsPrincipal(identity);
+            return new ClaimsPrincipal(identity);
+        }
+
+        protected override Task<AuthenticateResult> HandleAuthenticateAsync()
+        {
+            var principal = CreatePrincipal();
             var ticket = new AuthenticationTicket(principal, SchemeName);
             return Task.FromResult(AuthenticateResult.Success(ticket));
         }

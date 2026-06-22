@@ -113,6 +113,8 @@ record CreateCustomClueRequest(
     string? Difficulty = null);
 
 record BlobWordListSyncRequest(bool DryRun = false);
+record WordListTombstoneDiagnosticsResponse(List<WordListTombstoneDiagnosticsItem> Files);
+record WordListTombstoneDiagnosticsItem(string Source, string FileName, int Count, string Version, List<string>? Words = null);
 record BlobWordListSyncConflictDetail(string Word, string Reason, string Resolution);
 record BlobWordListSyncFileResult(
     string FileName,

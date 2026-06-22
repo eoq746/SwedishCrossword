@@ -60,31 +60,60 @@ internal static class WordListSeeder
             if (!File.Exists(seedFile))
                 continue;
 
+            var tombstonePath = ResolveTombstonePath(targetPath, file);
+            var tombstones = WordListMerger.LoadTombstonesFromFile(tombstonePath);
             var devJson = File.ReadAllText(seedFile, Encoding.UTF8);
             var baseJson = File.Exists(baseFile) ? File.ReadAllText(baseFile, Encoding.UTF8) : null;
             var prodJson = File.Exists(prodFile) ? File.ReadAllText(prodFile, Encoding.UTF8) : null;
 
+            if (prodJson is not null && baseJson is null)
+                baseJson = prodJson;
+
             // First boot: no prod file exists, just copy seed
             if (prodJson is null)
             {
-                File.Copy(seedFile, prodFile, overwrite: false);
+                var seededJson = WordListMerger.ApplyTombstones(devJson, tombstones, file);
+                WriteJsonAtomic(prodFile, seededJson);
             }
             else
             {
                 // Three-way merge: base (previous deploy) vs dev (new deploy) vs prod (admin edits)
                 var result = WordListMerger.MergeThreeWay(baseJson, devJson, prodJson, file);
+                var mergedJson = WordListMerger.ApplyTombstones(result.MergedJson, tombstones, file);
 
                 // Only write if the merge actually changed something
-                if (!string.Equals(result.MergedJson, prodJson, StringComparison.Ordinal))
-                {
-                    var tempFile = prodFile + ".tmp";
-                    File.WriteAllText(tempFile, result.MergedJson, Encoding.UTF8);
-                    File.Move(tempFile, prodFile, overwrite: true);
-                }
+                if (!string.Equals(mergedJson, prodJson, StringComparison.Ordinal))
+                    WriteJsonAtomic(prodFile, mergedJson);
             }
 
             // Update baseline to current baked-in version
-            File.Copy(seedFile, baseFile, overwrite: true);
+            WriteJsonAtomic(baseFile, devJson);
         }
+    }
+
+    private static string ResolveTombstonePath(string targetPath, string wordListFile)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(targetPath);
+        ArgumentException.ThrowIfNullOrWhiteSpace(wordListFile);
+
+        var tombstoneDirectory = Path.Combine(targetPath, ".meta", "tombstones");
+        var tombstoneFile = WordListMerger.GetTombstoneFileName(wordListFile);
+        return Path.Combine(tombstoneDirectory, tombstoneFile);
+    }
+
+    private static void WriteJsonAtomic(string path, string json)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(path);
+        ArgumentNullException.ThrowIfNull(json);
+
+        var directory = Path.GetDirectoryName(path);
+        if (string.IsNullOrWhiteSpace(directory))
+            throw new InvalidOperationException("Target path must include a directory.");
+
+        Directory.CreateDirectory(directory);
+
+        var tempPath = Path.Combine(directory, $"{Path.GetFileName(path)}.{Guid.NewGuid():N}.tmp");
+        File.WriteAllText(tempPath, json, Encoding.UTF8);
+        File.Move(tempPath, path, overwrite: true);
     }
 }
