@@ -1526,7 +1526,7 @@ public class ApiIntegrationTests : IDisposable
     [Test]
     public async Task WordListTombstones_WithAdminAuth_ReturnsPerSourceDiagnostics()
     {
-        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true, grantAdmin: true);
 
         var response = await authFixture.Client.GetAsync("/api/admin/wordlists/tombstones");
 
@@ -1547,7 +1547,7 @@ public class ApiIntegrationTests : IDisposable
     [Test]
     public async Task WordListTombstones_IncludeWords_ReturnsWordArray()
     {
-        await using var authFixture = new ApiTestFixture(enableTestAuth: true);
+        await using var authFixture = new ApiTestFixture(enableTestAuth: true, grantAdmin: true);
 
         var response = await authFixture.Client.GetAsync("/api/admin/wordlists/tombstones?includeWords=true");
 

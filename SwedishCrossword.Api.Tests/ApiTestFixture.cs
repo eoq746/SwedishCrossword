@@ -35,18 +35,18 @@ internal class ApiTestFixture : IAsyncDisposable
     {
         _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
         _tempLeaderboardPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-" + Guid.NewGuid());
-        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false);
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false, grantAdmin: false);
         _client = _factory.CreateClient();
     }
 
     /// <summary>
     /// Creates a fixture with auto-generated temp paths and optional test auth.
     /// </summary>
-    public ApiTestFixture(bool enableTestAuth)
+    public ApiTestFixture(bool enableTestAuth, bool grantAdmin = false)
     {
         _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
         _tempLeaderboardPath = Path.Combine(Path.GetTempPath(), "sc-test-lb-" + Guid.NewGuid());
-        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth);
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth, grantAdmin);
         _client = _factory.CreateClient();
     }
 
@@ -58,18 +58,18 @@ internal class ApiTestFixture : IAsyncDisposable
     {
         _tempPuzzlePath = Path.Combine(Path.GetTempPath(), "sc-test-puzzles-" + Guid.NewGuid());
         _tempLeaderboardPath = customLeaderboardPath;
-        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false);
+        _factory = CreateFactory(_tempPuzzlePath, _tempLeaderboardPath, enableTestAuth: false, grantAdmin: false);
         _client = _factory.CreateClient();
     }
 
-    private static WebApplicationFactory<Program> CreateFactory(string puzzlePath, string leaderboardPath, bool enableTestAuth)
+    private static WebApplicationFactory<Program> CreateFactory(string puzzlePath, string leaderboardPath, bool enableTestAuth, bool grantAdmin)
     {
         return new WebApplicationFactory<Program>()
             .WithWebHostBuilder(builder =>
             {
                 builder.UseSetting("Storage:PuzzlePath", puzzlePath);
                 builder.UseSetting("Storage:LeaderboardPath", leaderboardPath);
-                if (enableTestAuth)
+                if (enableTestAuth && grantAdmin)
                     builder.UseSetting("Authorization:AdminUserIds:0", ComputeTestAdminUserId());
 
                 builder.ConfigureServices(services =>
