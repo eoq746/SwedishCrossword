@@ -1880,6 +1880,145 @@ button {
 }
 
 /* ─────────────────────────────────────────────
+   Guides and markdown content pages
+───────────────────────────────────────────── */
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.guide-card {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide-card .guide-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.guide-card p {
+  color: var(--text-body);
+}
+
+.markdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.markdown-content h1 {
+  font-size: 1.6rem;
+  color: var(--text-heading);
+  margin-top: 2px;
+}
+
+.markdown-content h2 {
+  font-size: 1.25rem;
+  color: var(--text-heading);
+  margin-top: 10px;
+}
+
+.markdown-content h3 {
+  font-size: 1.05rem;
+  color: var(--text-heading);
+  margin-top: 6px;
+}
+
+.markdown-content p,
+.markdown-content li {
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 1.4em;
+  list-style-position: outside;
+}
+
+.markdown-content code {
+  background: color-mix(in srgb, var(--surface-2) 70%, var(--accent) 12%);
+  color: var(--text-primary);
+  padding: 0 4px;
+  border-radius: var(--radius-sm);
+  font-size: 0.92em;
+}
+
+/* ─────────────────────────────────────────────
+   Lexicon pages
+───────────────────────────────────────────── */
+.lexicon-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.lexicon-search-label {
+  color: var(--text-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.lexicon-search {
+  max-width: 480px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-body);
+  font: inherit;
+}
+
+.lexicon-search:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus-ring);
+}
+
+.lexicon-count {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.lexicon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.lexicon-card {
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lexicon-card h2 {
+  color: var(--text-heading);
+  font-size: 1.05rem;
+}
+
+.lexicon-card p {
+  color: var(--text-body);
+}
+
+/* ─────────────────────────────────────────────
    Ad slot — structural container for ad units.
    Empty by default; AdSense <ins> tag goes inside.
    Sits between <main> and <footer> in Layout.

@@ -10,7 +10,10 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
     "test": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lexicon:preview": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -Preview -TotalCount 20000 -CoreCount 3000 -MaxWordLength 12",
+    "lexicon:generate": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -TotalCount 20000 -CoreCount 3000 -MaxWordLength 12 -ShardSize 500 -Clean",
+    "lexicon:generate:mass": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -TotalCount 100000 -CoreCount 5000 -MaxWordLength 14 -ShardSize 750 -Clean"
   },
   "dependencies": {
     "react": "^19.2.7",
