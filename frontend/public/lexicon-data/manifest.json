@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-07-11T01:39:44.5766875+02:00",
+  "totalEntries": 50,
+  "coreEntries": 10,
+  "tailEntries": 40,
+  "shardCount": 1,
+  "shardSize": 500,
+  "missingSeedWords": null
+}

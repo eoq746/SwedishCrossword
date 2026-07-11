@@ -1,0 +1,404 @@
+{
+  "entries": [
+    {
+      "word": "ESS",
+      "slug": "lexikon-ess",
+      "title": "ESS – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ESS.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "ARA",
+      "slug": "lexikon-ara",
+      "title": "ARA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARA.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "EKA",
+      "slug": "lexikon-eka",
+      "title": "EKA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet EKA.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "ALN",
+      "slug": "lexikon-aln",
+      "title": "ALN – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ALN.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "ÖRA",
+      "slug": "lexikon-ora",
+      "title": "ÖRA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ÖRA.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "Å",
+      "slug": "lexikon-a",
+      "title": "Å – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet Å.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "LO",
+      "slug": "lexikon-lo",
+      "title": "LO – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet LO.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "NORR",
+      "slug": "lexikon-norr",
+      "title": "NORR – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet NORR.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "OST",
+      "slug": "lexikon-ost",
+      "title": "OST – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet OST.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "ABSOLUT",
+      "slug": "lexikon-absolut",
+      "title": "ABSOLUT – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ABSOLUT.",
+      "isCore": true,
+      "shard": null
+    },
+    {
+      "word": "ACCENT",
+      "slug": "lexikon-accent",
+      "title": "ACCENT – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ACCENT.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AFFÄR",
+      "slug": "lexikon-affar",
+      "title": "AFFÄR – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AFFÄR.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AFTON",
+      "slug": "lexikon-afton",
+      "title": "AFTON – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AFTON.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AGENT",
+      "slug": "lexikon-agent",
+      "title": "AGENT – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AGENT.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AKTIE",
+      "slug": "lexikon-aktie",
+      "title": "AKTIE – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AKTIE.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AKTION",
+      "slug": "lexikon-aktion",
+      "title": "AKTION – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AKTION.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AKTIV",
+      "slug": "lexikon-aktiv",
+      "title": "AKTIV – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AKTIV.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AL",
+      "slug": "lexikon-al",
+      "title": "AL – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AL.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ANALYS",
+      "slug": "lexikon-analys",
+      "title": "ANALYS – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ANALYS.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ANDAS",
+      "slug": "lexikon-andas",
+      "title": "ANDAS – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ANDAS.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARBETARE",
+      "slug": "lexikon-arbetare",
+      "title": "ARBETARE – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARBETARE.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARBETSAM",
+      "slug": "lexikon-arbetsam",
+      "title": "ARBETSAM – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARBETSAM.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AREA",
+      "slug": "lexikon-area",
+      "title": "AREA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AREA.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARENA",
+      "slug": "lexikon-arena",
+      "title": "ARENA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARENA.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARK",
+      "slug": "lexikon-ark",
+      "title": "ARK – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARK.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARM",
+      "slug": "lexikon-arm",
+      "title": "ARM – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARM.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "ARTIST",
+      "slug": "lexikon-artist",
+      "title": "ARTIST – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet ARTIST.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AUTONOM",
+      "slug": "lexikon-autonom",
+      "title": "AUTONOM – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AUTONOM.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AV",
+      "slug": "lexikon-av",
+      "title": "AV – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AV.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "AVENY",
+      "slug": "lexikon-aveny",
+      "title": "AVENY – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet AVENY.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BAR",
+      "slug": "lexikon-bar",
+      "title": "BAR – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BAR.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BARA",
+      "slug": "lexikon-bara",
+      "title": "BARA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BARA.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BARNSLIG",
+      "slug": "lexikon-barnslig",
+      "title": "BARNSLIG – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BARNSLIG.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BELOPP",
+      "slug": "lexikon-belopp",
+      "title": "BELOPP – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BELOPP.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BERUSAD",
+      "slug": "lexikon-berusad",
+      "title": "BERUSAD – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BERUSAD.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BERÖM",
+      "slug": "lexikon-berom",
+      "title": "BERÖM – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BERÖM.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BESVÄR",
+      "slug": "lexikon-besvar",
+      "title": "BESVÄR – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BESVÄR.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BESÖKARE",
+      "slug": "lexikon-besokare",
+      "title": "BESÖKARE – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BESÖKARE.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BETE",
+      "slug": "lexikon-bete",
+      "title": "BETE – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BETE.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BETYDLIG",
+      "slug": "lexikon-betydlig",
+      "title": "BETYDLIG – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BETYDLIG.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BIOGRAF",
+      "slug": "lexikon-biograf",
+      "title": "BIOGRAF – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BIOGRAF.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BISARR",
+      "slug": "lexikon-bisarr",
+      "title": "BISARR – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BISARR.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BIT",
+      "slug": "lexikon-bit",
+      "title": "BIT – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BIT.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BLANKETT",
+      "slug": "lexikon-blankett",
+      "title": "BLANKETT – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BLANKETT.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BLICK",
+      "slug": "lexikon-blick",
+      "title": "BLICK – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BLICK.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BLOMMA",
+      "slug": "lexikon-blomma",
+      "title": "BLOMMA – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BLOMMA.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BLYGSAM",
+      "slug": "lexikon-blygsam",
+      "title": "BLYGSAM – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BLYGSAM.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BLÅ",
+      "slug": "lexikon-bla",
+      "title": "BLÅ – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BLÅ.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BOMB",
+      "slug": "lexikon-bomb",
+      "title": "BOMB – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BOMB.",
+      "isCore": false,
+      "shard": "shard-0001"
+    },
+    {
+      "word": "BRAND",
+      "slug": "lexikon-brand",
+      "title": "BRAND – korsordslexikon",
+      "description": "Betydelse, vanliga ledtrådar och exempel för korsordsordet BRAND.",
+      "isCore": false,
+      "shard": "shard-0001"
+    }
+  ]
+}

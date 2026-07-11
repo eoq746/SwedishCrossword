@@ -105,6 +105,8 @@ export default function Layout({ children }: LayoutProps) {
             <NavLink to="/play" onClick={closeMobile}>Spela</NavLink>
             <NavLink to="/leaderboard" onClick={closeMobile}>Topplista</NavLink>
             <NavLink to="/calendar" onClick={closeMobile}>Kalender</NavLink>
+            <NavLink to="/guides" onClick={closeMobile}>Guider</NavLink>
+            <NavLink to="/lexicon" onClick={closeMobile}>Lexikon</NavLink>
             {user && <NavLink to="/profile" onClick={closeMobile}>Profil</NavLink>}
             {user?.isAdmin && <NavLink to="/admin" onClick={closeMobile}>Admin</NavLink>}
           </div>

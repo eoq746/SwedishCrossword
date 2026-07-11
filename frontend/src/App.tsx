@@ -10,6 +10,10 @@ import ProfilePage from './pages/ProfilePage';
 import AdminPage from './pages/AdminPage';
 import PuzzlePage from './pages/PuzzlePage';
 import PlayLandingPage from './pages/PlayLandingPage';
+import GuidesPage from './pages/GuidesPage';
+import GuideArticlePage from './pages/GuideArticlePage';
+import LexiconPage from './pages/LexiconPage';
+import LexiconEntryPage from './pages/LexiconEntryPage';
 
 /** Forces a full remount of PuzzlePage when size or date changes, giving site.js a clean slate. */
 function PuzzleRoute() {
@@ -28,6 +32,10 @@ export default function App() {
         <Route path="/puzzle" element={<PuzzleRoute />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/calendar" element={<CalendarPage />} />
+        <Route path="/guides" element={<GuidesPage />} />
+        <Route path="/guides/:slug" element={<GuideArticlePage />} />
+        <Route path="/lexicon" element={<LexiconPage />} />
+        <Route path="/lexicon/:slug" element={<LexiconEntryPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/about" element={<AboutPage />} />
