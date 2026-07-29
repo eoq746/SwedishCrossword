@@ -99,9 +99,29 @@ public class ApiIntegrationTests : IDisposable
         await Assert.That(content).Contains("https://www.svensktkorsord.se/puzzle");
         await Assert.That(content).Contains("https://www.svensktkorsord.se/leaderboard");
         await Assert.That(content).Contains("https://www.svensktkorsord.se/calendar");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/guides");
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/lexicon");
         await Assert.That(content).Contains("https://www.svensktkorsord.se/about");
         await Assert.That(content).Contains("https://www.svensktkorsord.se/contact");
         await Assert.That(content).Contains("https://www.svensktkorsord.se/privacy-policy");
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesGuideArticlePages()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/guides/guide-losa-svenska-korsord");
+    }
+
+    [Test]
+    public async Task Sitemap_IncludesLexiconArticlePages()
+    {
+        var response = await Client.GetAsync("/sitemap.xml");
+        var content = await response.Content.ReadAsStringAsync();
+
+        await Assert.That(content).Contains("https://www.svensktkorsord.se/lexicon/lexikon-ess");
     }
 
     [Test]

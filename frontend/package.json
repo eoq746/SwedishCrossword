@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
+    "build": "node ../scripts/generate-guides-index.mjs && tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
     "test": "vitest run",
     "preview": "vite preview",
     "lexicon:preview": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -Preview -TotalCount 20000 -CoreCount 3000 -MaxWordLength 12",
