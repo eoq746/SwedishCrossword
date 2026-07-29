@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
+    "build": "node ../scripts/generate-guides-index.mjs && tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
     "test": "vitest run",
     "preview": "vite preview",
     "lexicon:preview": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -Preview -TotalCount 20000 -CoreCount 3000 -MaxWordLength 12",
@@ -16,14 +16,14 @@
     "lexicon:generate:mass": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -TotalCount 100000 -CoreCount 5000 -MaxWordLength 14 -ShardSize 750 -Clean"
   },
   "dependencies": {
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-router-dom": "^7.18.1"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^6.0.3",
+    "@vitejs/plugin-react": "^6.0.4",
     "typescript": "~7.0.2",
     "vite": "^8.1.5",
     "vitest": "^4.1.10"
