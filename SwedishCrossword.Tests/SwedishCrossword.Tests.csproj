@@ -13,10 +13,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TUnit" Version="1.67.0" />
-    <PackageReference Include="TUnit.Assertions" Version="1.67.0" />
-    <PackageReference Include="TUnit.Engine" Version="1.67.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.0" />
+    <PackageReference Include="TUnit" Version="1.68.17" />
+    <PackageReference Include="TUnit.Assertions" Version="1.68.17" />
+    <PackageReference Include="TUnit.Engine" Version="1.68.17" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
   </ItemGroup>
 
   <ItemGroup>
