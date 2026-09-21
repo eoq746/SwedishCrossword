@@ -1,4 +1,4 @@
-name: Deploy to Azure Container Apps
+name: Deploy application to Azure Container Apps
 
 on:
   push:
@@ -6,9 +6,12 @@ on:
     paths-ignore:
       - '**/*.md'
       - '.github/workflows/daily-crossword.yml'
+      - '.github/workflows/deploy-azure-infra.yml'
   pull_request:
     branches: [master]
-    
+    paths-ignore:
+      - '.github/workflows/daily-crossword.yml'
+      - '.github/workflows/deploy-azure-infra.yml'
   workflow_dispatch:
 
 permissions:
@@ -16,98 +19,70 @@ permissions:
 
 env:
   RESOURCE_GROUP: rg-svensktkorsord
-  LOCATION: swedencentral
   APP_NAME: svensktkorsord
-  CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
 
 jobs:
-  # ----------------------------------------------------------------------
-  # Preflight quality gate: format, build, test, and vulnerability check.
-  # Deploy is skipped when any of these fail.
-  # ----------------------------------------------------------------------
-  test:
-    name: Build & Test
+  detect-changes:
+    name: Detect App Deployment Scope
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-
-      - name: Setup Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: '24'
-          cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
-
-      - name: Build frontend
-        run: npm ci && npm run build
-        working-directory: frontend
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
-        with:
-          global-json-file: global.json
-
-      - name: Restore
-        run: dotnet restore
-
-      - name: Verify formatting (whitespace + style)
-        run: |
-          set -euo pipefail
-          dotnet format whitespace --verify-no-changes --no-restore
-          dotnet format style --verify-no-changes --no-restore
-
-      - name: Build (Release)
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Test (Release)
-        run: dotnet test --configuration Release --no-build --verbosity minimal
-
-      - name: Check for vulnerable NuGet packages
-        run: |
-          set -euo pipefail
-          OUTPUT=$(dotnet list package --vulnerable --include-transitive 2>&1)
-          echo "$OUTPUT"
-          if echo "$OUTPUT" | grep -q "has the following vulnerable packages"; then
-            echo "::error::Vulnerable packages detected. See output above."
-            exit 1
-          fi
-
-  # ----------------------------------------------------------------------
-  # Secret scan: gitleaks across full history on every push/PR.
-  # ----------------------------------------------------------------------
-  secret-scan:
-    name: Secret Scan (gitleaks)
-    runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    outputs:
+      run_app: ${{ steps.changes.outputs.run_app }}
+      reason: ${{ steps.changes.outputs.reason }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
 
-      - name: Run gitleaks
-        uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_CONFIG: .gitleaks.toml
-          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true
-          GITLEAKS_ENABLE_SUMMARY: true
+      - name: Detect app deployment changes
+        id: changes
+        run: |
+          set -euo pipefail
+          RUN_APP=false
+          REASON='no deployable app changes detected'
+          INFRA_REGEX='^(infra/|\.github/workflows/deploy-azure-infra\.yml$|\.github/workflows/azure-quality-gates\.yml$)'
+          APP_REGEX='^(frontend/|SwedishCrossword/|SwedishCrossword\.Api/|SwedishCrossword\.Core/|SwedishCrossword\.Api\.Tests/|SwedishCrossword\.Tests/|ClueHandler/|scripts/|Dockerfile$|\.dockerignore$|Directory\.Build\.props$|global\.json$|SwedishCrossword\.sln$|\.github/workflows/deploy-azure-app\.yml$)'
 
-  build-and-deploy:
-    # Only deploy on direct pushes to master (i.e. after PR squash-merge).
-    # PR runs of this workflow stop after test + secret-scan.
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: [test, secret-scan]
+          if [ "${{ github.event_name }}" = 'workflow_dispatch' ]; then
+            RUN_APP=true
+            REASON='manual application deployment'
+          else
+            if [ "${{ github.event_name }}" = 'pull_request' ]; then
+              BASE_SHA='${{ github.event.pull_request.base.sha }}'
+              HEAD_SHA='${{ github.event.pull_request.head.sha }}'
+            else
+              BASE_SHA='${{ github.event.before }}'
+              HEAD_SHA='${{ github.sha }}'
+            fi
+
+            CHANGED_FILES=$(git diff --name-only "$BASE_SHA" "$HEAD_SHA")
+            echo 'Changed files considered for application deployment:'
+            echo "$CHANGED_FILES"
+
+            if echo "$CHANGED_FILES" | grep -Eq "$INFRA_REGEX"; then
+              REASON='infrastructure-related changes are handled by the infrastructure workflow'
+            elif echo "$CHANGED_FILES" | grep -Eq "$APP_REGEX"; then
+              RUN_APP=true
+              REASON='application/runtime files changed'
+            fi
+          fi
+
+          echo "run_app=$RUN_APP" >> "$GITHUB_OUTPUT"
+          echo "reason=$REASON" >> "$GITHUB_OUTPUT"
+          echo "Application deployment decision: $REASON"
+
+  checks:
+    uses: ./.github/workflows/azure-quality-gates.yml
+    secrets: inherit
+
+  deploy-application:
+    name: Deploy Application
+    if: needs.detect-changes.outputs.run_app == 'true' && ((github.event_name == 'push' && github.ref == 'refs/heads/master') || github.event_name == 'workflow_dispatch')
+    needs: [detect-changes, checks]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
       contents: read
-    # Serialize deployments so two pushes in quick succession don't race on
-    # the same resource group / Container App revision. Scoped to this job
-    # only so PR runs of `test` and `secret-scan` are never blocked by an
-    # in-progress deploy on master.
     concurrency:
       group: deploy-azure-${{ github.ref }}
       cancel-in-progress: false
@@ -130,90 +105,22 @@ jobs:
             echo "AZURE_SUBSCRIPTION_ID not set; listing subscriptions available to the identity"
             az account list -o table
           fi
-      # ------------------------------------------------------------------
-      # 1. Provision infrastructure WITHOUT imageTag (uses placeholder image)
-      # ------------------------------------------------------------------
-      - name: Upgrade Bicep CLI
-        run: az bicep upgrade
 
-      - name: Create Resource Group
-        run: az group create --name $RESOURCE_GROUP --location $LOCATION
-
-      - name: Deploy Infrastructure (Bicep)
-        id: infra
-        env:
-          SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
-          MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
-          ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
-          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
-          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
+      - name: Inspect existing deployment resources
+        id: existing
         run: |
           set -euo pipefail
-          # Discover the Container Apps environment static outbound IP if the
-          # environment already exists. On a brand-new deploy this returns
-          # empty, which Bicep handles by skipping the firewall rule on the
-          # first pass; the second deploy run will pin it.
-          ENV_IP=$(az containerapp env show \
-            --resource-group $RESOURCE_GROUP \
-            --name ${APP_NAME}-env \
-            --query properties.staticIp \
-            --output tsv 2>/dev/null || echo '')
-          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
+          ACR_NAME=$(az acr list --resource-group "$RESOURCE_GROUP" --query '[0].name' -o tsv 2>/dev/null || true)
+          APP_FQDN=$(az containerapp show --resource-group "$RESOURCE_GROUP" --name "$APP_NAME" --query 'properties.configuration.ingress.fqdn' -o tsv 2>/dev/null || true)
 
-          PARAMS=(
-            appName=$APP_NAME
-            createRoleAssignment=false
-            enableResourceGroupLock=false
-            containerAppOutboundIp="$ENV_IP"
-            allowAzureServicesSqlFirewall=true
-            restrictKeyVaultByIp=false
-            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
-            googleClientId="$GOOGLE_CLIENT_ID"
-            googleClientSecret="$GOOGLE_CLIENT_SECRET"
-            microsoftClientId="$MICROSOFT_CLIENT_ID"
-            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
-            adminUserIds="$ADMIN_USER_IDS"
-          )
-
-          # Optional explicit forwarded-header trust lists.
-          # Expected secret format: JSON array, e.g. ["203.0.113.10"]
-          # and ["10.20.0.0/24"].
-          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
-            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
+          if [ -z "$ACR_NAME" ] || [ -z "$APP_FQDN" ]; then
+            echo '::error::Azure Container App or ACR not found. Run the Deploy Azure infrastructure workflow first.'
+            exit 1
           fi
-          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
-            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
-          fi
-
-          RESULT=$(az deployment group create \
-            --resource-group $RESOURCE_GROUP \
-            --template-file infra/main.bicep \
-            --only-show-errors \
-            --parameters "${PARAMS[@]}" \
-            --query 'properties.outputs' \
-            --output json)
-
-          ACR_NAME=$(echo "$RESULT" | jq -r '.acrName.value')
-          ACR_LOGIN=$(echo "$RESULT" | jq -r '.acrLoginServer.value' | tr -d '\n')
-          APP_URL=$(echo "$RESULT" | jq -r '.appUrl.value')
-
-          APP_FQDN=$(echo "$RESULT" | jq -r '.appFqdn.value')
-          DOMAIN_VERIFICATION_ID=$(echo "$RESULT" | jq -r '.customDomainVerificationId.value')
-          ENV_NAME=$(echo "$RESULT" | jq -r '.environmentName.value')
 
           echo "acr_name=$ACR_NAME" >> "$GITHUB_OUTPUT"
-          echo "acr_login=$ACR_LOGIN" >> "$GITHUB_OUTPUT"
-          echo "app_url=$APP_URL" >> "$GITHUB_OUTPUT"
-          echo "app_fqdn=$APP_FQDN" >> "$GITHUB_OUTPUT"
-          echo "domain_verification_id=$DOMAIN_VERIFICATION_ID" >> "$GITHUB_OUTPUT"
-          echo "env_name=$ENV_NAME" >> "$GITHUB_OUTPUT"
+          echo "app_url=https://$APP_FQDN" >> "$GITHUB_OUTPUT"
 
-      # ------------------------------------------------------------------
-      # 2. Generate SBOM (EU Cyber Resilience Act compliance)
-      # ------------------------------------------------------------------
       - name: Setup Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -232,7 +139,7 @@ jobs:
 
       - name: Generate SBOM
         env:
-          SBOM_TOOL_VERSION: "3.1.0"
+          SBOM_TOOL_VERSION: '3.1.0'
         run: |
           dotnet publish SwedishCrossword.Api -c Release -o ./publish --nologo
           curl -Lo sbom-tool "https://github.com/microsoft/sbom-tool/releases/download/v${SBOM_TOOL_VERSION}/sbom-tool-linux-x64"
@@ -263,143 +170,32 @@ jobs:
           path: sbom-output/_manifest/spdx_2.2/
           retention-days: 90
 
-      # ------------------------------------------------------------------
-      # 3. Build & push container image
-      # ------------------------------------------------------------------
       - name: Build & Push Image
         run: |
           az acr build \
-            --registry ${{ steps.infra.outputs.acr_name }} \
+            --registry ${{ steps.existing.outputs.acr_name }} \
             --image $APP_NAME:${{ github.sha }} \
             --image $APP_NAME:latest \
             .
 
-      # ------------------------------------------------------------------
-      # 4. Wait for SQL DB to settle. The first Bicep deploy returns as soon
-      #    as the ARM deployment finishes, but the underlying serverless
-      #    Free-tier DB may still be provisioning. Re-issuing a PATCH against
-      #    a DB whose previous operation hasn't completed yields
-      #    `ConflictingDatabaseOperation`. Poll until status == Online.
-      # ------------------------------------------------------------------
-      - name: Wait for SQL DB Online
+      - name: Update Container App Image
         run: |
           set -euo pipefail
-          SQL_SERVER=$(az sql server list \
-            --resource-group $RESOURCE_GROUP \
-            --query "[?starts_with(name, '$APP_NAME-sql-')].name | [0]" \
-            -o tsv)
-          if [ -z "$SQL_SERVER" ]; then
-            echo "No SQL server found — skipping wait."
-            exit 0
-          fi
-          DB_NAME="$APP_NAME-db"
-          echo "Waiting for $SQL_SERVER/$DB_NAME to reach Online..."
-          for i in $(seq 1 60); do
-            STATUS=$(az sql db show \
-              --resource-group $RESOURCE_GROUP \
-              --server "$SQL_SERVER" \
-              --name "$DB_NAME" \
-              --query "status" -o tsv 2>/dev/null || echo "Unknown")
-            echo "  attempt $i: status=$STATUS"
-            if [ "$STATUS" = "Online" ] || [ "$STATUS" = "AutoClosed" ] || [ "$STATUS" = "Paused" ]; then
-              echo "✅ SQL DB ready (status=$STATUS)"
-              exit 0
-            fi
-            sleep 10
-          done
-          echo "::error::SQL DB did not reach Online within 10 minutes (last status: $STATUS)"
-          exit 1
-
-      # ------------------------------------------------------------------
-      # 5. Re-deploy Bicep with imageTag so the Container App points at the
-      #    newly-pushed image and the health probes get attached (probes are
-      #    skipped in the placeholder-image deploy above).
-      # ------------------------------------------------------------------
-      - name: Deploy Container App (Bicep, real image)
-        env:
-          SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
-          MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
-          ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
-          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
-          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
-        run: |
-          set -euo pipefail
-          ENV_IP=$(az containerapp env show \
-            --resource-group $RESOURCE_GROUP \
-            --name ${APP_NAME}-env \
-            --query properties.staticIp \
-            --output tsv 2>/dev/null || echo '')
-          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
-
-          PARAMS=(
-            appName=$APP_NAME
-            createRoleAssignment=false
-            enableResourceGroupLock=false
-            containerAppOutboundIp="$ENV_IP"
-            allowAzureServicesSqlFirewall=true
-            restrictKeyVaultByIp=false
-            imageTag="${{ github.sha }}"
-            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
-            googleClientId="$GOOGLE_CLIENT_ID"
-            googleClientSecret="$GOOGLE_CLIENT_SECRET"
-            microsoftClientId="$MICROSOFT_CLIENT_ID"
-            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
-            adminUserIds="$ADMIN_USER_IDS"
-          )
-
-          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
-            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
-          fi
-          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
-            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
-          fi
-
-          az deployment group create \
-            --resource-group $RESOURCE_GROUP \
-            --template-file infra/main.bicep \
-            --only-show-errors \
-            --parameters "${PARAMS[@]}" \
+          ACR_LOGIN=$(az acr show --name "${{ steps.existing.outputs.acr_name }}" --query loginServer -o tsv)
+          IMAGE="$ACR_LOGIN/$APP_NAME:${{ github.sha }}"
+          echo "Updating Container App image to $IMAGE"
+          az containerapp update \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$APP_NAME" \
+            --image "$IMAGE" \
             --output none
 
-      # ------------------------------------------------------------------
-      # 6. Bind custom domain (if CUSTOM_DOMAIN secret is set)
-      # ------------------------------------------------------------------
-      - name: Bind Custom Domain
-        if: env.CUSTOM_DOMAIN != ''
-        run: |
-          set -euo pipefail
-          DOMAIN="$CUSTOM_DOMAIN"
-          echo "🌐 Binding custom domain: $DOMAIN"
-          echo "   App FQDN: ${{ steps.infra.outputs.app_fqdn }}"
-          echo "   Verification ID: ${{ steps.infra.outputs.domain_verification_id }}"
-
-          # Add hostname (idempotent — skips if already added)
-          az containerapp hostname add \
-            --hostname "$DOMAIN" \
-            --resource-group $RESOURCE_GROUP \
-            --name $APP_NAME 2>/dev/null || true
-
-          # Bind managed certificate (idempotent — skips if already bound)
-          az containerapp hostname bind \
-            --hostname "$DOMAIN" \
-            --resource-group $RESOURCE_GROUP \
-            --name $APP_NAME \
-            --environment ${{ steps.infra.outputs.env_name }} \
-            --validation-method CNAME
-
-          echo "✅ Custom domain bound with managed certificate"
-
-      # ------------------------------------------------------------------
-      # 7. Verify deployment
-      # ------------------------------------------------------------------
       - name: Verify Health
         timeout-minutes: 8
+        env:
+          APP_URL: ${{ steps.existing.outputs.app_url }}
         run: |
           set -euo pipefail
-          APP_URL="${{ steps.infra.outputs.app_url }}"
           if [ -z "${APP_URL:-}" ]; then
             echo "::error::App URL output is empty; cannot run health verification."
             exit 1
@@ -411,8 +207,8 @@ jobs:
           SLEEP_SECONDS=5
           MAX_TOTAL_SECONDS=420
           START_TS=$(date +%s)
-          READY_STATUS="000"
-          LIVE_STATUS="000"
+          READY_STATUS='000'
+          LIVE_STATUS='000'
 
           for i in $(seq 1 "$MAX_ATTEMPTS"); do
             LIVE_STATUS=$(timeout 8s curl \
@@ -431,10 +227,10 @@ jobs:
               --max-time 5 \
               "$APP_URL/api/health/ready" || true)
 
-            if [ -z "$LIVE_STATUS" ]; then LIVE_STATUS="000"; fi
-            if [ -z "$READY_STATUS" ]; then READY_STATUS="000"; fi
+            if [ -z "$LIVE_STATUS" ]; then LIVE_STATUS='000'; fi
+            if [ -z "$READY_STATUS" ]; then READY_STATUS='000'; fi
 
-            if [ "$READY_STATUS" = "200" ]; then
+            if [ "$READY_STATUS" = '200' ]; then
               ELAPSED=$(( $(date +%s) - START_TS ))
               echo "✅ Health check passed (after ${ELAPSED}s)"
               exit 0
@@ -457,14 +253,14 @@ jobs:
           done
 
           echo "::error::Health check did not return 200 within ${MAX_TOTAL_SECONDS}s (last live: $LIVE_STATUS, ready: $READY_STATUS)"
-          echo "--- Recent system logs ---"
+          echo '--- Recent system logs ---'
           az containerapp logs show \
             --resource-group "$RESOURCE_GROUP" \
             --name "$APP_NAME" \
             --type system \
             --tail 200 || true
 
-          echo "--- Recent app logs ---"
+          echo '--- Recent app logs ---'
           az containerapp logs show \
             --resource-group "$RESOURCE_GROUP" \
             --name "$APP_NAME" \
