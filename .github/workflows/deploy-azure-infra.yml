@@ -1,0 +1,366 @@
+name: Deploy Azure infrastructure
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'infra/**'
+      - '.github/workflows/deploy-azure-infra.yml'
+      - '.github/workflows/azure-quality-gates.yml'
+  pull_request:
+    branches: [master]
+    paths:
+      - 'infra/**'
+      - '.github/workflows/deploy-azure-infra.yml'
+      - '.github/workflows/azure-quality-gates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  RESOURCE_GROUP: rg-svensktkorsord
+  LOCATION: swedencentral
+  APP_NAME: svensktkorsord
+  CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
+
+jobs:
+  checks:
+    uses: ./.github/workflows/azure-quality-gates.yml
+    secrets: inherit
+
+  deploy-infrastructure:
+    name: Deploy Infrastructure
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/master') || github.event_name == 'workflow_dispatch'
+    needs: checks
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    concurrency:
+      group: deploy-azure-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Azure login with OIDC
+        uses: azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Select subscription (if provided)
+        run: |
+          if [ -n "${{ secrets.AZURE_SUBSCRIPTION_ID }}" ]; then
+            az account set --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          else
+            echo "AZURE_SUBSCRIPTION_ID not set; listing subscriptions available to the identity"
+            az account list -o table
+          fi
+
+      - name: Upgrade Bicep CLI
+        run: az bicep upgrade
+
+      - name: Create Resource Group
+        run: az group create --name $RESOURCE_GROUP --location $LOCATION
+
+      - name: Deploy Infrastructure (Bicep)
+        id: infra
+        env:
+          SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+          MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
+          ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
+          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
+          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
+        run: |
+          set -euo pipefail
+          ENV_IP=$(az containerapp env show \
+            --resource-group $RESOURCE_GROUP \
+            --name ${APP_NAME}-env \
+            --query properties.staticIp \
+            --output tsv 2>/dev/null || echo '')
+          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
+
+          PARAMS=(
+            appName=$APP_NAME
+            createRoleAssignment=false
+            enableResourceGroupLock=false
+            containerAppOutboundIp="$ENV_IP"
+            allowAzureServicesSqlFirewall=true
+            restrictKeyVaultByIp=false
+            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
+            googleClientId="$GOOGLE_CLIENT_ID"
+            googleClientSecret="$GOOGLE_CLIENT_SECRET"
+            microsoftClientId="$MICROSOFT_CLIENT_ID"
+            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
+            adminUserIds="$ADMIN_USER_IDS"
+          )
+
+          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
+          fi
+          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
+          fi
+
+          RESULT=$(az deployment group create \
+            --resource-group $RESOURCE_GROUP \
+            --template-file infra/main.bicep \
+            --only-show-errors \
+            --parameters "${PARAMS[@]}" \
+            --query 'properties.outputs' \
+            --output json)
+
+          ACR_NAME=$(echo "$RESULT" | jq -r '.acrName.value')
+          APP_URL=$(echo "$RESULT" | jq -r '.appUrl.value')
+          APP_FQDN=$(echo "$RESULT" | jq -r '.appFqdn.value')
+          DOMAIN_VERIFICATION_ID=$(echo "$RESULT" | jq -r '.customDomainVerificationId.value')
+          ENV_NAME=$(echo "$RESULT" | jq -r '.environmentName.value')
+
+          echo "acr_name=$ACR_NAME" >> "$GITHUB_OUTPUT"
+          echo "app_url=$APP_URL" >> "$GITHUB_OUTPUT"
+          echo "app_fqdn=$APP_FQDN" >> "$GITHUB_OUTPUT"
+          echo "domain_verification_id=$DOMAIN_VERIFICATION_ID" >> "$GITHUB_OUTPUT"
+          echo "env_name=$ENV_NAME" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Build frontend
+        run: npm ci && npm run build
+        working-directory: frontend
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          global-json-file: global.json
+
+      - name: Generate SBOM
+        env:
+          SBOM_TOOL_VERSION: '3.1.0'
+        run: |
+          dotnet publish SwedishCrossword.Api -c Release -o ./publish --nologo
+          curl -Lo sbom-tool "https://github.com/microsoft/sbom-tool/releases/download/v${SBOM_TOOL_VERSION}/sbom-tool-linux-x64"
+          chmod +x sbom-tool
+          mkdir -p ./sbom-output
+          ./sbom-tool generate \
+            -b ./publish \
+            -bc . \
+            -pn SwedishCrossword \
+            -pv "${{ github.sha }}" \
+            -ps SwedishCrossword \
+            -nsb "https://github.com/eoq746/SwedishCrossword" \
+            -m ./sbom-output \
+            -mi "SPDX:2.2"
+          rm -rf ./publish
+
+      - name: Generate human-readable SBOM formats
+        run: |
+          pip install sbom2doc==0.5.1 --quiet
+          MANIFEST=$(find ./sbom-output -name "manifest.spdx.json" | head -1)
+          sbom2doc -i "$MANIFEST" -o "${MANIFEST}.md" -f markdown
+          sbom2doc -i "$MANIFEST" -o "${MANIFEST}.html" -f html
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: sbom-spdx
+          path: sbom-output/_manifest/spdx_2.2/
+          retention-days: 90
+
+      - name: Build & Push Image
+        run: |
+          az acr build \
+            --registry ${{ steps.infra.outputs.acr_name }} \
+            --image $APP_NAME:${{ github.sha }} \
+            --image $APP_NAME:latest \
+            .
+
+      - name: Wait for SQL DB Online
+        run: |
+          set -euo pipefail
+          SQL_SERVER=$(az sql server list \
+            --resource-group $RESOURCE_GROUP \
+            --query "[?starts_with(name, '$APP_NAME-sql-')].name | [0]" \
+            -o tsv)
+          if [ -z "$SQL_SERVER" ]; then
+            echo "No SQL server found — skipping wait."
+            exit 0
+          fi
+          DB_NAME="$APP_NAME-db"
+          echo "Waiting for $SQL_SERVER/$DB_NAME to reach Online..."
+          for i in $(seq 1 60); do
+            STATUS=$(az sql db show \
+              --resource-group $RESOURCE_GROUP \
+              --server "$SQL_SERVER" \
+              --name "$DB_NAME" \
+              --query "status" -o tsv 2>/dev/null || echo "Unknown")
+            echo "  attempt $i: status=$STATUS"
+            if [ "$STATUS" = "Online" ] || [ "$STATUS" = "AutoClosed" ] || [ "$STATUS" = "Paused" ]; then
+              echo "✅ SQL DB ready (status=$STATUS)"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::error::SQL DB did not reach Online within 10 minutes (last status: $STATUS)"
+          exit 1
+
+      - name: Deploy Container App (Bicep, real image)
+        env:
+          SUBMISSION_TOKEN_SECRET: ${{ secrets.SUBMISSION_TOKEN_SECRET }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          MICROSOFT_CLIENT_ID: ${{ secrets.MICROSOFT_CLIENT_ID }}
+          MICROSOFT_CLIENT_SECRET: ${{ secrets.MICROSOFT_CLIENT_SECRET }}
+          ADMIN_USER_IDS: ${{ secrets.ADMIN_USER_IDS }}
+          FORWARDED_TRUSTED_PROXIES_JSON: ${{ secrets.FORWARDED_TRUSTED_PROXIES_JSON }}
+          FORWARDED_TRUSTED_NETWORKS_JSON: ${{ secrets.FORWARDED_TRUSTED_NETWORKS_JSON }}
+        run: |
+          set -euo pipefail
+          ENV_IP=$(az containerapp env show \
+            --resource-group $RESOURCE_GROUP \
+            --name ${APP_NAME}-env \
+            --query properties.staticIp \
+            --output tsv 2>/dev/null || echo '')
+          echo "Container App env outbound IP: ${ENV_IP:-<not yet provisioned>}"
+
+          PARAMS=(
+            appName=$APP_NAME
+            createRoleAssignment=false
+            enableResourceGroupLock=false
+            containerAppOutboundIp="$ENV_IP"
+            allowAzureServicesSqlFirewall=true
+            restrictKeyVaultByIp=false
+            imageTag="${{ github.sha }}"
+            submissionTokenSecret="$SUBMISSION_TOKEN_SECRET"
+            googleClientId="$GOOGLE_CLIENT_ID"
+            googleClientSecret="$GOOGLE_CLIENT_SECRET"
+            microsoftClientId="$MICROSOFT_CLIENT_ID"
+            microsoftClientSecret="$MICROSOFT_CLIENT_SECRET"
+            adminUserIds="$ADMIN_USER_IDS"
+          )
+
+          if [ -n "${FORWARDED_TRUSTED_PROXIES_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedProxies="$FORWARDED_TRUSTED_PROXIES_JSON")
+          fi
+          if [ -n "${FORWARDED_TRUSTED_NETWORKS_JSON:-}" ]; then
+            PARAMS+=(forwardedHeadersTrustedNetworks="$FORWARDED_TRUSTED_NETWORKS_JSON")
+          fi
+
+          az deployment group create \
+            --resource-group $RESOURCE_GROUP \
+            --template-file infra/main.bicep \
+            --only-show-errors \
+            --parameters "${PARAMS[@]}" \
+            --output none
+
+      - name: Bind Custom Domain
+        if: env.CUSTOM_DOMAIN != ''
+        run: |
+          set -euo pipefail
+          DOMAIN="$CUSTOM_DOMAIN"
+          echo "🌐 Binding custom domain: $DOMAIN"
+          echo "   App FQDN: ${{ steps.infra.outputs.app_fqdn }}"
+          echo "   Verification ID: ${{ steps.infra.outputs.domain_verification_id }}"
+
+          az containerapp hostname add \
+            --hostname "$DOMAIN" \
+            --resource-group $RESOURCE_GROUP \
+            --name $APP_NAME 2>/dev/null || true
+
+          az containerapp hostname bind \
+            --hostname "$DOMAIN" \
+            --resource-group $RESOURCE_GROUP \
+            --name $APP_NAME \
+            --environment ${{ steps.infra.outputs.env_name }} \
+            --validation-method CNAME
+
+          echo "✅ Custom domain bound with managed certificate"
+
+      - name: Verify Health
+        timeout-minutes: 8
+        env:
+          APP_URL: ${{ steps.infra.outputs.app_url }}
+        run: |
+          set -euo pipefail
+          if [ -z "${APP_URL:-}" ]; then
+            echo "::error::App URL output is empty; cannot run health verification."
+            exit 1
+          fi
+
+          echo "🚀 Deployed to: $APP_URL"
+
+          MAX_ATTEMPTS=84
+          SLEEP_SECONDS=5
+          MAX_TOTAL_SECONDS=420
+          START_TS=$(date +%s)
+          READY_STATUS='000'
+          LIVE_STATUS='000'
+
+          for i in $(seq 1 "$MAX_ATTEMPTS"); do
+            LIVE_STATUS=$(timeout 8s curl \
+              --silent \
+              --output /dev/null \
+              --write-out '%{http_code}' \
+              --connect-timeout 3 \
+              --max-time 5 \
+              "$APP_URL/api/health/live" || true)
+
+            READY_STATUS=$(timeout 8s curl \
+              --silent \
+              --output /dev/null \
+              --write-out '%{http_code}' \
+              --connect-timeout 3 \
+              --max-time 5 \
+              "$APP_URL/api/health/ready" || true)
+
+            if [ -z "$LIVE_STATUS" ]; then LIVE_STATUS='000'; fi
+            if [ -z "$READY_STATUS" ]; then READY_STATUS='000'; fi
+
+            if [ "$READY_STATUS" = '200' ]; then
+              ELAPSED=$(( $(date +%s) - START_TS ))
+              echo "✅ Health check passed (after ${ELAPSED}s)"
+              exit 0
+            fi
+
+            ELAPSED=$(( $(date +%s) - START_TS ))
+            echo "  Waiting for health check... (attempt $i/$MAX_ATTEMPTS, live: $LIVE_STATUS, ready: $READY_STATUS, elapsed: ${ELAPSED}s)"
+
+            az containerapp revision list \
+              --resource-group "$RESOURCE_GROUP" \
+              --name "$APP_NAME" \
+              --query "[].{name:name,active:properties.active,health:properties.healthState,running:properties.runningState,replicas:properties.replicas}" \
+              --output table || true
+
+            if [ "$ELAPSED" -ge "$MAX_TOTAL_SECONDS" ]; then
+              break
+            fi
+
+            sleep "$SLEEP_SECONDS"
+          done
+
+          echo "::error::Health check did not return 200 within ${MAX_TOTAL_SECONDS}s (last live: $LIVE_STATUS, ready: $READY_STATUS)"
+          echo '--- Recent system logs ---'
+          az containerapp logs show \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$APP_NAME" \
+            --type system \
+            --tail 200 || true
+
+          echo '--- Recent app logs ---'
+          az containerapp logs show \
+            --resource-group "$RESOURCE_GROUP" \
+            --name "$APP_NAME" \
+            --type console \
+            --tail 200 || true
+
+          exit 1

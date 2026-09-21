@@ -12,6 +12,13 @@ updates:
     labels:
       - dependencies
       - nuget
+    # Keep Microsoft.OpenApi pinned at 2.11.0. Dependabot will not propose
+    # versions above that, and NuGet updates that require a newer Microsoft.OpenApi
+    # will remain unresolvable and therefore won't be raised as update PRs.
+    ignore:
+      - dependency-name: "Microsoft.OpenApi"
+        versions:
+          - "> 2.11.0"
     groups:
       microsoft:
         patterns:
