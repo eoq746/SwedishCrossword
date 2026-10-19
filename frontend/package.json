@@ -16,8 +16,8 @@
     "lexicon:generate:mass": "pwsh -NoProfile -File ../scripts/generate-lexicon-content.ps1 -TotalCount 100000 -CoreCount 5000 -MaxWordLength 14 -ShardSize 750 -Clean"
   },
   "dependencies": {
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
