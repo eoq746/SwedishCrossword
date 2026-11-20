@@ -12,13 +12,12 @@ updates:
     labels:
       - dependencies
       - nuget
-    # Keep Microsoft.OpenApi pinned at 2.11.0. Dependabot will not propose
-    # versions above that, and NuGet updates that require a newer Microsoft.OpenApi
-    # will remain unresolvable and therefore won't be raised as update PRs.
+    # Microsoft.AspNetCore.OpenApi 10's source generator is incompatible with
+    # Microsoft.OpenApi 3.x; allow updates within the 2.x major version.
     ignore:
       - dependency-name: "Microsoft.OpenApi"
-        versions:
-          - "> 2.11.0"
+        update-types:
+          - "version-update:semver-major"
     groups:
       microsoft:
         patterns:
