@@ -39,6 +39,17 @@ public class ApiIntegrationTests : IDisposable
     private string TempPuzzlePath => _fixture.TempPuzzlePath;
     private string TempLeaderboardPath => _fixture.TempLeaderboardPath;
 
+    [Test]
+    public async Task OpenApiEndpoint_ReturnsDocument()
+    {
+        var response = await Client.GetAsync("/openapi/v1.json");
+
+        await Assert.That(response.StatusCode).IsEqualTo(HttpStatusCode.OK);
+        using var document = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+        await Assert.That(document.RootElement.GetProperty("openapi").GetString()).StartsWith("3.");
+        await Assert.That(document.RootElement.GetProperty("paths").TryGetProperty("/api/leaderboard", out _)).IsTrue();
+    }
+
     // -----------------------------------------------------------------------
     // Health check
     // -----------------------------------------------------------------------
